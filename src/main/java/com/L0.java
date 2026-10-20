@@ -1,0 +1,12 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com;
+
+import com.nw_2;
+
+public interface L0
+extends nw_2 {
+    public void h();
+}
+

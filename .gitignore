@@ -1,1 +1,4 @@
-test
+target/
+*.class
+.idea/
+*.iml

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  项目级 Maven 配置：绕过全局的 aliyun 镜像，直连 Maven Central。
+  原因：aliyun 的 public 组缺少部分构件，且失败结果会被负缓存；
+  本机直连 repo1.maven.org 是通的。
+-->
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0">
+  <mirrors>
+    <mirror>
+      <id>central-direct</id>
+      <mirrorOf>central</mirrorOf>
+      <url>https://repo1.maven.org/maven2</url>
+    </mirror>
+  </mirrors>
+</settings>

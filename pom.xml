@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.finalshell</groupId>
+  <artifactId>finalshell</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <name>FinalShell (readable rebuild)</name>
+  <description>
+    从 finalshell.jar 反编译重建的可读工程。第三方库按原包字节打包进 lib/bundled-libs.jar，
+    与自研代码编译时依赖的 API 完全一致；每个库的上游坐标见 docs/DEPS.md。
+  </description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <bundled.libs.version>3.6</bundled.libs.version>
+  </properties>
+
+  <dependencies>
+    <!-- 第三方库：从原 jar 切出，与编译期 API 完全一致（离线可用） -->
+    <dependency>
+      <groupId>com.finalshell</groupId>
+      <artifactId>bundled-libs</artifactId>
+      <version>${bundled.libs.version}</version>
+    </dependency>
+
+    <!-- BouncyCastle：原包通过 Class-Path: lib-run/bcprov.jar 外置加载 -->
+    <dependency>
+      <groupId>com.finalshell</groupId>
+      <artifactId>bcprov</artifactId>
+      <version>1.78</version>
+    </dependency>
+
+    <!-- Lombok：仅编译期使用（源码已由原构建 delombok 处理过，留作后续改写用） -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.30</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>finalshell</finalName>
+    <plugins>
+      <!-- 把 lib/*.jar 安装进本地仓库，让上面的 dependency 生效 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>3.1.1</version>
+        <executions>
+          <execution>
+            <id>install-bundled-libs</id>
+            <phase>validate</phase>
+            <goals><goal>install-file</goal></goals>
+            <configuration>
+              <file>${project.basedir}/lib/bundled-libs.jar</file>
+              <groupId>com.finalshell</groupId>
+              <artifactId>bundled-libs</artifactId>
+              <version>${bundled.libs.version}</version>
+              <packaging>jar</packaging>
+            </configuration>
+          </execution>
+          <execution>
+            <id>install-bcprov</id>
+            <phase>validate</phase>
+            <goals><goal>install-file</goal></goals>
+            <configuration>
+              <file>${project.basedir}/lib/bcprov.jar</file>
+              <groupId>com.finalshell</groupId>
+              <artifactId>bcprov</artifactId>
+              <version>1.78</version>
+              <packaging>jar</packaging>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <compilerArgs>
+            <!-- 反编译产物里混着 'var'、'_' 这类新版关键字用法 -->
+            <arg>-Xlint:none</arg>
+            <arg>-nowarn</arg>
+          </compilerArgs>
+          <showWarnings>false</showWarnings>
+          <failOnWarning>false</failOnWarning>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.3.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>st</mainClass>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <!-- 一键打成可执行 jar -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.6.0</version>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+          <archive>
+            <manifest>
+              <mainClass>st</mainClass>
+            </manifest>
+          </archive>
+          <appendAssemblyId>false</appendAssemblyId>
+          <finalName>finalshell</finalName>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals><goal>single</goal></goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

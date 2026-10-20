@@ -1,0 +1,12 @@
+metric	value
+filesTotal	5387
+filesChanged	1372
+filesBalanceFailed	0
+methodCalls	10418
+staticCalls	2107
+instanceCalls	8311
+fieldReads	12815
+fieldWrites	4571
+castsAdded	0
+unresolvedSites	50
+residualTotal	50
