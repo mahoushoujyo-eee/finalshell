@@ -22,7 +22,9 @@ public class FixTree {
 
     static final Map<String, List<Err>> byFile = new LinkedHashMap<>();
     static int statReturn = 0, statBool = 0, statOverride = 0, statIface = 0,
-               statVar = 0, statEnum = 0, statOther = 0, statSneaky = 0, statDeadCatch = 0;
+               statVar = 0, statEnum = 0, statOther = 0, statSneaky = 0, statDeadCatch = 0,
+               statResugar = 0, statDupDecl = 0, statIncompat = 0, statNewNoParens = 0, statNewArray = 0, statForEach = 0, statUnknown = 0, statNewReturn = 0,
+               statPrimType = 0, statPromote = 0;
     static final Set<String> touched = new TreeSet<>();
     static final List<String> unresolved = new ArrayList<>();
     /** 需要降级的假枚举：被 new 出来的枚举 */
@@ -56,6 +58,13 @@ public class FixTree {
         System.out.println("  undeclared variable         = " + statVar);
         System.out.println("  sneaky throw               = " + statSneaky);
         System.out.println("  dead catch removed         = " + statDeadCatch);
+        System.out.println("  dup declaration removed    = " + statDupDecl);
+        System.out.println("  incompatible types fixed   = " + statIncompat);
+        System.out.println("  prim type mismatch fixed   = " + statPrimType);
+        System.out.println("  var type promoted          = " + statPromote);
+        System.out.println("  new T; fixed             = " + statNewNoParens);
+        System.out.println("  new prim(...) fixed       = " + statNewArray);
+        System.out.println("  for-each renamed          = " + statForEach);
         System.out.println("  fake enum candidates        = " + statEnum + " (" + fakeEnums.size() + " distinct)");
         System.out.println("  other                       = " + statOther);
         if (!fakeEnums.isEmpty()) {
@@ -101,17 +110,73 @@ public class FixTree {
 
     static String apply(Err er, String src) {
         try {
-            if (er.msg.contains("return outside method")) return fixReturn(er, src);
-            if (er.msg.contains("cannot be converted to boolean")) return fixBooleanCast(er, src);
-            if (er.msg.contains("does not override or implement")) return fixOverride(er, src);
-            if (er.msg.contains("interface expected here")) return fixIface(er, src);
-            if (er.msg.contains("enum types may not be instantiated")) return noteFakeEnum(er, src);
-            if (er.msg.contains("unreported exception") && er.msg.contains("Throwable"))
-                return fixSneakyThrow(er, src);
-            if (er.msg.contains("is never thrown in body of corresponding try statement"))
-                return fixDeadCatch(er, src);
-            if (er.msg.startsWith("cannot find symbol") && "variable".equals(er.symKind))
-                return fixUndeclaredVar(er, src);
+            // 【重要】下面每条规则都写成"非 null 才 return"。
+            // 写成 `return fixXxx(er, src)` 时，规则一旦判定"这个错误我修不了"
+            // 就返回 null，而 null 会被当成"处理完了"直接 return 掉 ——
+            // 后面所有规则都没机会跑。实测这一条就吃掉了上千个
+            // "incompatible types" 的修复机会。
+            if (er.msg.contains("return outside method")) {
+                String r = fixReturn(er, src); if (r != null) return r;
+            }
+            if (er.msg.contains("cannot be converted to boolean")) {
+                String r = fixBooleanCast(er, src); if (r != null) return r;
+            }
+            if (er.msg.contains("does not override or implement")) {
+                String r = fixOverride(er, src); if (r != null) return r;
+            }
+            if (er.msg.contains("interface expected here")) {
+                String r = fixIface(er, src); if (r != null) return r;
+            }
+            if (er.msg.contains("enum types may not be instantiated")) {
+                String r = noteFakeEnum(er, src); if (r != null) return r;
+            }
+            if (er.msg.contains("unreported exception") && er.msg.contains("Throwable")) {
+                String r = fixSneakyThrow(er, src); if (r != null) return r;
+            }
+            if (er.msg.contains("is already defined in method")) {
+                String r = fixDupDecl(er, src); if (r != null) return r;
+            }
+            if (er.msg.contains("bad initializer for for-loop")) {
+                String r = fixForEach(er, src); if (r != null) return r;
+            }
+            if (er.msg.contains("illegal start of expression")) {
+                String r = fixUnknown(er, src); if (r != null) return r;
+            }
+            if (er.msg.contains("not a statement") || er.msg.contains("';' expected")
+                || er.msg.contains("'(' or '[' expected") || er.msg.contains("'[' expected")
+                || er.msg.contains("']' expected") || er.msg.contains("')' expected")
+                || er.msg.contains("<identifier> expected")) {
+                String r = fixResugarCtor(er, src);
+                if (r != null) return r;
+                r = fixNewNoParens(er, src);
+                if (r != null) return r;
+                r = fixNewReturn(er, src);
+                if (r != null) return r;
+                r = fixNewArray(er, src);
+                if (r != null) return r;
+            }
+            if (er.msg.startsWith("incompatible types: ")) {
+                // 局部变量类型提升（改声明 + 给初值加强转）
+                String pr = fixVarTypePromote(er, src);
+                if (pr != null) return pr;
+                // primitive 错配走保守规则（只转表达式 / 整行 return）
+                String prim = fixPrimTypeMismatch(er, src);
+                if (prim != null) return prim;
+                // 注意：这个修补会在表达式里插强转，一旦插错位置就把文件改坏
+                // （实测一轮下来 2 万多个语法错误）。默认关闭，需要时再开。
+                if (System.getenv("FIXTREE_FIX_INCOMPAT") != null) {
+                    String inc = fixIncompatible(er, src);
+                    if (inc != null) return inc;
+                }
+                statOther++;
+                return null;
+            }
+            if (er.msg.contains("is never thrown in body of corresponding try statement")) {
+                String r = fixDeadCatch(er, src); if (r != null) return r;
+            }
+            if (er.msg.startsWith("cannot find symbol") && "variable".equals(er.symKind)) {
+                String r = fixUndeclaredVar(er, src); if (r != null) return r;
+            }
         } catch (Exception ex) {
             unresolved.add(er.file + ":" + er.line + "  " + er.msg + "  (" + ex + ")");
             return null;
@@ -196,10 +261,12 @@ public class FixTree {
         for (int i = 0; i < lines.length; i++) {
             String t = lines[i];
             if (!t.matches("^(\\s*)static\\s*\\{\\s*$")) continue;
-            // 找配对的右花括号
+            // 找配对的右花括号（必须跳过字符串/字符字面量与注释，
+            // 否则字面量里的一个 "}" 就会让配对错位，把后面的类体代码甩到块外）
+            int[] delta = braceDelta(lines);
             int depth = 0, end = -1;
             for (int j = i; j < lines.length; j++) {
-                depth += count(lines[j], '{') - count(lines[j], '}');
+                depth += delta[j];
                 if (depth == 0 && j > i) { end = j; break; }
             }
             if (end < 0) continue;
@@ -357,6 +424,424 @@ public class FixTree {
         return null;
     }
 
+    // ---------- 9. Vineflower 的 "Unable to resugar constructor" ----------
+    // 形如：  var11./* $VF: Unable to resugar constructor */<init>(var10002);
+    // 这是非法 Java（"<identifier> expected"）。真实语义是 "new T(args)"。
+    // 类型从同一方法里相同实参的 "new T(args)" 语句反推。
+    static String fixResugarCtor(Err er, String src) {
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        // 实参可能跨多行：一直找到配对的 ");" 为止
+        int endLine = idx;
+        StringBuilder joined = new StringBuilder();
+        for (int k = idx; k < lines.length && k < idx + 40; k++) {
+            if (k > idx) joined.append(' ');
+            joined.append(lines[k].trim());
+            String t = joined.toString();
+            if (t.matches(".*\\);\\s*$")) { endLine = k; break; }
+        }
+        if (endLine == idx && !joined.toString().matches(".*\\);\\s*$")) return null;
+        String whole = joined.toString();
+        Matcher pm = Pattern.compile("^\\s*.*?\\.\\/\\* \\$VF: Unable to resugar constructor \\*\\/"
+                + "<init>\\((.*)\\);\\s*$").matcher(whole);
+        if (!pm.matches()) return null;
+        String args = pm.group(1).trim();
+        // 实参个数
+        int n = 1, depth = 0;
+        for (int i = 0; i < args.length(); i++) {
+            char c = args.charAt(i);
+            if (c == '(' || c == '[') depth++;
+            else if (c == ')' || c == ']') depth--;
+            else if (c == ',' && depth == 0) n++;
+        }
+        // 在同文件里找实参个数相同的 "new T(" —— 通常是 Vineflower 复制出来的那一段
+        String type = null;
+        for (String l : lines) {
+            Matcher nm = Pattern.compile("\\bnew\\s+([A-Za-z_$][\\w$.]*)\\s*\\(").matcher(l);
+            while (nm.find()) {
+                int open = l.indexOf('(', nm.start());
+                int close = matchParen(l, open) - 1;
+                if (close < 0) continue;
+                String inner = l.substring(open + 1, close);
+                int c2 = 1, d2 = 0;
+                for (int i = 0; i < inner.length(); i++) {
+                    char c = inner.charAt(i);
+                    if (c == '(' || c == '[') d2++;
+                    else if (c == ')' || c == ']') d2--;
+                    else if (c == ',' && d2 == 0) c2++;
+                }
+                if (c2 == n) { type = nm.group(1); break; }
+            }
+            if (type != null) break;
+        }
+        if (type == null) {
+            // 退路：这类"无法 resugar 的构造器"多半是本类的构造器（this(...) 委托）
+            Matcher cm = Pattern.compile("^(?:public\\s+|final\\s+|abstract\\s+)*(?:class|enum)\\s+(\\w+)",
+                    Pattern.MULTILINE).matcher(src);
+            if (cm.find()) type = cm.group(1);
+        }
+        if (type == null) return null;
+        String repl = "new " + type + "(" + args + ");";
+        for (int k = idx; k <= endLine && k < lines.length; k++) lines[k] = "";
+        lines[idx] = repl;
+        statResugar++;
+        return String.join("\n", lines);
+    }
+
+    // ---------- 12. "new T;" —— Vineflower 丢掉了构造器实参 ----------
+    // 形如 "new JCheckBox;" 是非法 Java（缺括号）。
+    // 这行其实是 Vineflower 拆表达式时留下的悬空分配（真正的对象由后面的反射调用产生），
+    // 所以直接删掉这一行 —— 数组初始化式 "new T[0];" 也不行，数组创建不能当语句。
+    static String fixNewNoParens(Err er, String src) {
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        if (!lines[idx].trim().matches("^new\\s+[\\w.$]+\\s*(\\[\\d*\\])?\\s*;$")) return null;
+        String[] out = new String[lines.length - 1];
+        System.arraycopy(lines, 0, out, 0, idx);
+        System.arraycopy(lines, idx + 1, out, idx, lines.length - idx - 1);
+        statNewNoParens++;
+        return String.join("\n", out);
+    }
+
+    // ---------- 13. "new int(a, b, c)" —— 数组初始化被渲染成了构造器调用 ----------
+    // 基本类型 + 多个实参 = 数组初始化；单个实参 = 数组长度。
+    static String fixNewArray(Err er, String src) {
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        String line = lines[idx];
+        Matcher m = Pattern.compile("\\bnew\\s+(int|long|boolean|byte|char|short|float|double)\\s*\\(")
+                .matcher(line);
+        if (!m.find()) return null;
+        // 找到对应的右括号，数实参个数
+        int open = line.indexOf('(', m.start());
+        int close = matchParen(line, open) - 1;
+        if (close < 0) return null;
+        String inner = line.substring(open + 1, close);
+        int n = 1, depth = 0;
+        for (int i = 0; i < inner.length(); i++) {
+            char c = inner.charAt(i);
+            if (c == '(') depth++;
+            else if (c == ')') depth--;
+            else if (c == ',' && depth == 0) n++;
+        }
+        String type = m.group(1);
+        String repl = n > 1 ? ("new " + type + "[]{" + inner + "}") : ("new " + type + "[" + inner + "]");
+        lines[idx] = line.substring(0, m.start()) + repl + line.substring(close + 1);
+        statNewArray++;
+        return String.join("\n", lines);
+    }
+
+    // ---------- 14. for-each 的循环变量与外层同名 ----------
+    // "for (var15 : xs)" 但 var15 在外层已声明 —— Java 不允许。
+    // 办法：给循环变量换个新名字，并同步改写循环体里的引用。
+    // （已废弃：现在统一由下面第 17 条按"补元素类型"处理）
+    static String fixForEachRenamed(Err er, String src) {
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        Matcher m = Pattern.compile("^(\\s*)for\\s*\\(\\s*(\\w+)\\s*:").matcher(lines[idx]);
+        if (!m.matches()) return null;
+        String var = m.group(2);
+        // 外层是否已声明同名变量
+        boolean declared = false;
+        for (int i = 0; i < idx; i++) {
+            if (lines[i].matches("^\\s*[\\w$.<>\\[\\]]+\\s+" + Pattern.quote(var) + "\\s*[;=].*")) { declared = true; break; }
+        }
+        if (!declared) return null;
+        String nv = var + "_2";
+        lines[idx] = lines[idx].replaceFirst(Pattern.quote(var), Matcher.quoteReplacement(nv));
+        // 循环体：从 for 行开始按花括号配对找结尾，把体里的 var 换掉
+        int[] delta = braceDelta(lines);
+        int depth = 0, end = idx;
+        for (int j = idx; j < lines.length; j++) {
+            depth += delta[j];
+            if (depth <= 0 && j > idx) { end = j; break; }
+            if (depth <= 0 && j == idx && delta[j] == 0) { end = j; break; }
+        }
+        for (int j = idx + 1; j <= end && j < lines.length; j++) {
+            lines[j] = lines[j].replaceAll("\\b" + Pattern.quote(var) + "\\b", nv);
+        }
+        statForEach++;
+        return String.join("\n", lines);
+    }
+
+    // ---------- 15. "<unknown> varN;" —— Vineflower 的占位符 ----------
+    static String fixUnknown(Err er, String src) {
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        if (!lines[idx].contains("<unknown>")) return null;
+        lines[idx] = lines[idx].replace("<unknown> ", "");
+        statUnknown++;
+        return String.join("\n", lines);
+    }
+
+    // ---------- 16. "new return(args)" ----------
+    // Vineflower 在无法 resugar 构造器时会直接把字节码里的 return 助记符吐出来。
+    // 类型从赋值目标的声明里反查。
+    static String fixNewReturn(Err er, String src) {
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        Matcher m = Pattern.compile("^\\s*(\\w+)\\s*=\\s*new\\s+return\\s*\\(").matcher(lines[idx]);
+        if (!m.matches()) return null;
+        String target = m.group(1);
+        String type = null;
+        for (String l : lines) {
+            Matcher dm = Pattern.compile("^\\s*([\\w$.<>\\[\\]]+)\\s+" + Pattern.quote(target) + "\\s*[;=]")
+                    .matcher(l);
+            if (dm.find()) { type = dm.group(1); break; }
+        }
+        if (type == null) {
+            Matcher cm = Pattern.compile("^(?:public\\s+|final\\s+|abstract\\s+)*(?:class|enum)\\s+(\\w+)",
+                    Pattern.MULTILINE).matcher(src);
+            if (cm.find()) type = cm.group(1);
+        }
+        if (type == null) return null;
+        lines[idx] = lines[idx].replaceFirst("\\bnew\\s+return\\s*\\(", "new " + type + "(");
+        statNewReturn++;
+        return String.join("\n", lines);
+    }
+
+    // ---------- 17. for (varN : xs) —— 缺类型 ----------
+    // Java 的 for-each 必须带元素类型。类型从循环体里 "Type v = varN;" 反查。
+    static String fixForEach(Err er, String src) {
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        Matcher m = Pattern.compile("^(\\s*)for\\s*\\(\\s*(\\w+)\\s*:").matcher(lines[idx]);
+        if (!m.matches()) return null;
+        String var = m.group(2);
+        // 循环体范围
+        int[] delta = braceDelta(lines);
+        int depth = 0, end = idx;
+        for (int j = idx; j < lines.length; j++) {
+            depth += delta[j];
+            if (depth < 0) { end = j; break; }
+            if (depth == 0 && j > idx) { end = j; break; }
+        }
+        // 找 "Type v = varN;" 得到元素类型
+        String type = null;
+        for (int j = idx + 1; j <= end && j < lines.length; j++) {
+            Matcher tm = Pattern.compile("^\\s*([\\w$.<>\\[\\]]+)\\s+\\w+\\s*=\\s*" + Pattern.quote(var) + "\\s*;")
+                    .matcher(lines[j]);
+            if (tm.find()) { type = tm.group(1); break; }
+        }
+        if (type == null) type = "Object";
+        lines[idx] = lines[idx].replaceFirst(Pattern.quote(var),
+                Matcher.quoteReplacement(type + " " + var));
+        statForEach++;
+        return String.join("\n", lines);
+    }
+
+    // ---------- 10. 重复声明：删掉后面那一条 ----------
+    // 混淆器的字节码里同一个局部变量槽被复用，反编译器有时会给出两条同样的声明。
+    static String fixDupDecl(Err er, String src) {
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        String l = lines[idx];
+        // 只删"看起来是声明"的那一行
+        if (!l.trim().matches("^[\\w$.<>\\[\\]]+\\s+\\w+\\s*;$")) return null;
+        System.arraycopy(lines, idx + 1, lines, idx, lines.length - idx - 1);
+        statDupDecl++;
+        return String.join("\n", lines);
+    }
+
+    // ---------- 11b. primitive 类型错配（boolean <-> int 等）：保守修法 ----------
+    // 混淆器故意把 boolean 当 int 用（字节码层面合法，源码层面不行）。
+    // 这里**不插表达式转换**，只做两种最小改写：
+    //   1) 声明处类型词写错了：<Type> varN = <expr>;  把 <Type> 改成实际类型
+    //   2) return (T)varN;  改成 return varN != 0;  /  return varN ? 1 : 0;
+    // 比通用 fixIncompatible 安全得多 —— 不会动复杂表达式的结构。
+    static String fixPrimTypeMismatch(Err er, String src) {
+        Matcher mm = Pattern.compile("^incompatible types: (\\S+) cannot be converted to (\\S+)$")
+                .matcher(er.msg);
+        if (!mm.matches()) return null;
+        String from = mm.group(1), to = mm.group(2);
+        boolean f2b = to.equals("boolean")
+                && (from.equals("int") || from.equals("short") || from.equals("byte")
+                    || from.equals("char") || from.equals("long"));
+        boolean b2f = from.equals("boolean")
+                && (to.equals("int") || to.equals("long") || to.equals("short")
+                    || to.equals("byte") || to.equals("char"));
+        if (!f2b && !b2f) return null;
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        String line = lines[idx];
+        // 情况 1：return (T)varN;
+        Matcher rm = Pattern.compile(
+                "^(\\s*)return \\((?:int|long|short|byte|char|boolean)\\)\\s*(\\w+)\\s*;\\s*$").matcher(line);
+        if (rm.matches()) {
+            String var = rm.group(2);
+            String repl = f2b ? ("return " + var + " != 0;") : ("return " + var + " ? 1 : 0;");
+            lines[idx] = rm.group(1) + repl;
+            statPrimType++;
+            return String.join("\n", lines);
+        }
+        // 情况 2：<Type> varN = <expr>;
+        //
+        // 【重要教训】曾经试过"把声明处的类型词改成实际类型"（int var13 -> boolean var13），
+        // 结果**错误数反而涨了 1,159 个**：声明改了，但后面所有把 var13 当 int 用的地方
+        // 全都变成新错误（incompatible types: int cannot be converted to boolean +602、
+        // incomparable types: boolean and int +557）。
+        //
+        // 正确做法：**声明类型不动，只在赋值的那一处转换表达式**，
+        // 错误只消一处，不会波及后续使用。
+        //   boolean -> int :  (expr) ? 1 : 0
+        //   int -> boolean:  (expr) != 0
+        Matcher dm = Pattern.compile(
+                "^(\\s*)([A-Za-z_$][\\w$.<>\\[\\]]*)\\s+(\\w+)\\s*=\\s*(.+?);?\\s*$").matcher(line);
+        if (dm.matches() && dm.group(2).equals(to)) {
+            String expr = dm.group(4).trim();
+            if (expr.isEmpty()) return null;
+            // 表达式外面加括号：expr 里可能含三元运算符，
+            // 不加括号的话 "a ? b : c ? 1 : 0" 的结合方向会变，语义就错了
+            String conv = f2b ? ("(" + expr + ") != 0") : ("(" + expr + ") ? 1 : 0");
+            lines[idx] = dm.group(1) + dm.group(2) + " " + dm.group(3) + " = " + conv + ";";
+            statPrimType++;
+            return String.join("\n", lines);
+        }
+        // 情况 2b：varN = <expr>;   —— 纯赋值（变量已在别处声明）。
+        // javac 报的 to 就是这个变量的声明类型，所以只转右边表达式即可。
+        Matcher am = Pattern.compile("^(\\s*)(\\w+)\\s*=\\s*(.+?);?\\s*$").matcher(line);
+        if (am.matches()) {
+            String expr = am.group(3).trim();
+            if (expr.isEmpty()) return null;
+            if (expr.contains("->")) return null;     // lambda 跳过
+            String conv = f2b ? ("(" + expr + ") != 0") : ("(" + expr + ") ? 1 : 0");
+            lines[idx] = am.group(1) + am.group(2) + " = " + conv + ";";
+            statPrimType++;
+            return String.join("\n", lines);
+        }
+        return null;
+    }
+
+    // ---------- 11c. 局部变量类型提升 ----------
+    // Vineflower 会把变量的类型"抖动"：先按初始值声明成 Object[]，
+    // 后面又用 (DY3)varN 强转赋值，说明它实际是 DY3：
+    //     Object[] var10001 = Registry.emptyArgs();
+    //     ...
+    //     var10001 = (DY3)var10001;          <-- javac: Object[] cannot be converted to DY3
+    //
+    // 修法：把**声明**改成目标类型，并给**初始值**加同样的强转。
+    //   Object[] var10001 = Registry.emptyArgs();
+    //   ->
+    //   DY3 var10001 = (DY3)(Registry.emptyArgs());
+    // 这样只影响这一个变量，后续对该变量的使用全部自动变合法。
+    //
+    // 【与 11b 的区别】11b 只改声明不给初值加强转 —— 那会把一处错误变成 N 处错误。
+    // 这里**必须**同时加强转，否则初始值本身就编译不过。
+    static String fixVarTypePromote(Err er, String src) {
+        Matcher mm = Pattern.compile("^incompatible types: (Object|Object\\[\\]) cannot be converted to (\\S+)$")
+                .matcher(er.msg);
+        if (!mm.matches()) return null;
+        String target = mm.group(2);
+        if (!target.matches("[A-Za-z_$][\\w$.<>\\[\\]]*")) return null;
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        // 错误行：varN = (Target)varN;   —— 取出变量名
+        Matcher um = Pattern.compile("^\\s*(\\w+)\\s*=\\s*\\(\\s*" + Pattern.quote(target) + "\\s*\\)\\s*(\\w+)\\s*;\\s*$")
+                .matcher(lines[idx]);
+        if (!um.matches()) return null;
+        String var = um.group(1);
+        if (!var.equals(um.group(2))) return null;    // 必须是自赋值形式
+        // 找声明行：<Type> var = <init>;
+        // 【坑】同名变量常在同文件的**另一个方法**里也出现（混淆后到处是 var10002）。
+        // 只在「上一个 } 之后」的范围里找，也就是同一个方法体内，
+        // 否则会因为"多处候选"而整个放弃修复。
+        int lowerBound = 0;
+        for (int i = idx - 1; i >= 0; i--) {
+            if (lines[i].trim().equals("}")) { lowerBound = i + 1; break; }
+        }
+        Pattern decl = Pattern.compile(
+                "^(\\s*)([A-Za-z_$][\\w$.<>\\[\\]]*)\\s+" + Pattern.quote(var) + "\\s*=\\s*(.+?);?\\s*$");
+        int found = -1;
+        for (int i = lowerBound; i < idx; i++) {
+            Matcher dm = decl.matcher(lines[i]);
+            if (dm.matches() && !dm.group(2).equals(target)) {
+                if (found >= 0) return null;          // 同名声明多处，不敢改
+                found = i;
+            }
+        }
+        if (found < 0) return null;
+        Matcher dm = decl.matcher(lines[found]);
+        if (!dm.matches()) return null;
+        String init = dm.group(3).trim();
+        if (init.isEmpty()) return null;
+        // 初值已经是目标类型的强转就别重复加
+        if (init.startsWith("(" + target + ")")) return null;
+        lines[found] = dm.group(1) + target + " " + var + " = (" + target + ")(" + init + ");";
+        statPromote++;
+        return String.join("\n", lines);
+    }
+
+    // ---------- 11. incompatible types：按 javac 给的列号做显式转换 ----------
+    // javac 比 JVM 严格：字节码里 int 可以当 boolean 用（校验器不区分），
+    // 源码里不行。这里按错误信息做最小改写：
+    //   int    -> boolean   (x != 0)
+    //   boolean-> int       (x ? 1 : 0)
+    //   其它               显式强转 (T)(x)
+    static String fixIncompatible(Err er, String src) {
+        Matcher mm = Pattern.compile("^incompatible types: (\\S+) cannot be converted to (\\S+)$")
+                .matcher(er.msg);
+        if (!mm.matches()) return null;
+        String from = mm.group(1), to = mm.group(2);
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        String line = lines[idx];
+        // lambda（->）和泛型尖括号里插强转很容易插错位置，先跳过
+        if (line.contains("->")) return null;
+        int c = er.col - 1;
+        if (c < 0 || c >= line.length()) return null;
+        // 只在标识符或左括号处插强转
+        char ch = line.charAt(c);
+        if (!Character.isJavaIdentifierStart(ch) && ch != '(') return null;
+
+        // 定位待转换的表达式：
+        //  - 若光标正好在一个 "(类型)" 强转型上，就替换整个强转型
+        //  - 否则替换光标处的那个表达式
+        int start = c, end = -1;
+        String inner;
+        String castType = null;
+        if (c < line.length() && line.charAt(c) == '(') {
+            int close = line.indexOf(')', c);
+            if (close > c) {
+                String t = line.substring(c + 1, close).trim();
+                if (t.matches("[\\w$.<>\\[\\]]+")) castType = t;
+            }
+        }
+        if (castType != null) {
+            end = scanPrimary(line, c + castType.length() + 2);
+            if (end <= c) return null;
+            inner = line.substring(c + castType.length() + 2, end);
+        } else {
+            end = scanPrimary(line, c);
+            if (end <= c) return null;
+            inner = line.substring(c, end);
+        }
+        String expr = inner;
+        String repl;
+        if (to.equals("boolean") && (from.equals("int") || from.equals("short") || from.equals("byte")
+                || from.equals("char"))) {
+            repl = "(" + expr + " != 0)";
+        } else if (from.equals("boolean") && (to.equals("int") || to.equals("long")
+                || to.equals("short") || to.equals("byte"))) {
+            repl = "(" + expr + " ? 1 : 0)";
+        } else {
+            repl = "(" + to + ")(" + expr + ")";
+        }
+        lines[idx] = line.substring(0, start) + repl + line.substring(end);
+        statIncompat++;
+        return String.join("\n", lines);
+    }
+
     // ---------- 6. 未声明的局部变量 -> 在方法开头补声明 ----------
     static String fixUndeclaredVar(Err er, String src) {
         String[] lines = src.split("\n", -1);
@@ -367,8 +852,30 @@ public class FixTree {
         String line = lines[idx];
         Matcher m = Pattern.compile("^\\s*" + Pattern.quote(var) + "\\s*=\\s*\\(([\\w$.<>\\[\\]]+)\\)\\s*")
                 .matcher(line);
-        if (!m.matches()) return null;
-        String type = m.group(1);
+        String type = null;
+        if (m.matches()) {
+            type = m.group(1);
+        } else {
+            // varN = varM;  —— 从 varM 的声明反推类型
+            Matcher m2 = Pattern.compile("^\\s*" + Pattern.quote(var) + "\\s*=\\s*(var\\d+)\\s*;")
+                    .matcher(line);
+            if (m2.matches()) {
+                String other = m2.group(1);
+                for (int i = 0; i < lines.length; i++) {
+                    Matcher dm = Pattern.compile("^\\s*([\\w$.<>\\[\\]]+)\\s+" + Pattern.quote(other) + "\\s*[;=]")
+                            .matcher(lines[i]);
+                    if (dm.find()) { type = dm.group(1); break; }
+                }
+                // 同一方法里 "varM = new T(...)" 也能反推
+                if (type == null) {
+                    for (int i = 0; i < lines.length; i++) {
+                        Matcher nm = Pattern.compile("=\\s*new\\s+([A-Za-z_$][\\w$.]*)\\s*\\(").matcher(lines[i]);
+                        if (nm.find() && lines[i].contains(other)) { type = nm.group(1); break; }
+                    }
+                }
+            }
+        }
+        if (type == null) return null;
         int insert = findMethodStart(lines, idx);
         for (int i = insert; i < idx; i++) {
             if (lines[i].matches("^\\s*[\\w$.<>\\[\\]]+\\s+" + Pattern.quote(var) + "\\s*[;=].*")) return null;
@@ -390,5 +897,42 @@ public class FixTree {
         int n = 0;
         for (int i = 0; i < s.length(); i++) if (s.charAt(i) == ch) n++;
         return n;
+    }
+
+    /**
+     * 逐行计算花括号净增减，**忽略字符串/字符字面量与注释**。
+     * 直接数括号会被字面量里的 "}" 带偏。
+     */
+    static int[] braceDelta(String[] lines) {
+        int[] out = new int[lines.length];
+        boolean inBlockComment = false;
+        for (int i = 0; i < lines.length; i++) {
+            String s = lines[i];
+            int d = 0;
+            int n = s.length();
+            for (int k = 0; k < n; k++) {
+                char c = s.charAt(k);
+                if (inBlockComment) {
+                    if (c == '*' && k + 1 < n && s.charAt(k + 1) == '/') { inBlockComment = false; k++; }
+                    continue;
+                }
+                if (c == '/' && k + 1 < n && s.charAt(k + 1) == '/') break;
+                if (c == '/' && k + 1 < n && s.charAt(k + 1) == '*') { inBlockComment = true; k++; continue; }
+                if (c == '"' || c == '\'') {
+                    char q = c;
+                    k++;
+                    while (k < n) {
+                        if (s.charAt(k) == '\\') { k += 2; continue; }
+                        if (s.charAt(k) == q) break;
+                        k++;
+                    }
+                    continue;
+                }
+                if (c == '{') d++;
+                else if (c == '}') d--;
+            }
+            out[i] = d;
+        }
+        return out;
     }
 }

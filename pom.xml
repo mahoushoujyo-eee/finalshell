@@ -37,6 +37,19 @@
       <version>1.78</version>
     </dependency>
 
+    <!-- javax.mail：原 jar 里没有这两个类（该 build 的邮件功能运行时本就是坏的），
+         补上才能编译 u2_2.java / zU.java 这两个用到邮件的源文件 -->
+    <dependency>
+      <groupId>com.sun.mail</groupId>
+      <artifactId>javax.mail</artifactId>
+      <version>1.6.2</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.activation</groupId>
+      <artifactId>javax.activation-api</artifactId>
+      <version>1.2.0</version>
+    </dependency>
+
     <!-- Lombok：仅编译期使用（源码已由原构建 delombok 处理过，留作后续改写用） -->
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -79,6 +92,30 @@
               <packaging>jar</packaging>
             </configuration>
           </execution>
+          <execution>
+            <id>install-javax-mail</id>
+            <phase>validate</phase>
+            <goals><goal>install-file</goal></goals>
+            <configuration>
+              <file>${project.basedir}/lib/javax.mail-1.6.2.jar</file>
+              <groupId>com.sun.mail</groupId>
+              <artifactId>javax.mail</artifactId>
+              <version>1.6.2</version>
+              <packaging>jar</packaging>
+            </configuration>
+          </execution>
+          <execution>
+            <id>install-javax-activation</id>
+            <phase>validate</phase>
+            <goals><goal>install-file</goal></goals>
+            <configuration>
+              <file>${project.basedir}/lib/javax.activation-api-1.2.0.jar</file>
+              <groupId>javax.activation</groupId>
+              <artifactId>javax.activation-api</artifactId>
+              <version>1.2.0</version>
+              <packaging>jar</packaging>
+            </configuration>
+          </execution>
         </executions>
       </plugin>
 
@@ -91,6 +128,9 @@
             <!-- 反编译产物里混着 'var'、'_' 这类新版关键字用法 -->
             <arg>-Xlint:none</arg>
             <arg>-nowarn</arg>
+            <!-- javac 默认只报前 100 个错误，会把真实剩余量严重低估 -->
+            <arg>-Xmaxerrs</arg>
+            <arg>100000</arg>
           </compilerArgs>
           <showWarnings>false</showWarnings>
           <failOnWarning>false</failOnWarning>
@@ -104,7 +144,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>st</mainClass>
+              <mainClass>com.finalshell.core.St_2</mainClass>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
             </manifest>
@@ -123,7 +163,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>st</mainClass>
+              <mainClass>com.finalshell.core.St_2</mainClass>
             </manifest>
           </archive>
           <appendAssemblyId>false</appendAssemblyId>

@@ -1,7 +1,7 @@
 package com.apple.eawt;
 
 public interface PreferencesHandler {
-   void handlePreferences(AppEvent.PreferencesEvent var1);
+   void handlePreferences(PreferencesEvent var1);
 }
 
 

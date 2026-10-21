@@ -4,8 +4,8 @@ import java.awt.Component;
 import java.awt.Window;
 import javax.swing.JComponent;
 
-final class GestureHandler {
-   private static final String CLIENT_PROPERTY = "com.apple.eawt.event.internalGestureHandler";
+public final class GestureHandler {
+   public static final String CLIENT_PROPERTY = "com.apple.eawt.event.internalGestureHandler";
    static final int PHASE = 1;
    static final int ROTATE = 2;
    static final int MAGNIFY = 3;
@@ -21,6 +21,9 @@ final class GestureHandler {
    static void handleGestureFromNative(Window window, int type, double x, double y, double a, double b) {
    }
 
+   GestureHandler() {
+   }
+
    void addListener(GestureListener listener) {
    }
 
@@ -31,11 +34,8 @@ final class GestureHandler {
       return null;
    }
 
-   static GestureHandler.PerComponentNotifier getNextNotifierForComponent(Component c) {
+   static PerComponentNotifier getNextNotifierForComponent(Component c) {
       return null;
-   }
-
-   static class PerComponentNotifier {
    }
 }
 

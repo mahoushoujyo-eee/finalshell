@@ -1,7 +1,7 @@
 package com.apple.eawt;
 
 public class QuitResponse {
-   QuitResponse(_AppEventHandler handler) {
+   QuitResponse(AppEventHandler handler) {
    }
 
    public void performQuit() {

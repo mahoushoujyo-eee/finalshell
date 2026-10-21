@@ -37,16 +37,37 @@ public class FixBytecode {
     /** 包改名表：包名 -> 新包名（解决仅大小写不同的包在 Windows 上的覆盖问题）。 */
     static final Map<String, String> PKG_RENAME = new HashMap<>();
 
+    /**
+     * 枚举降级的作用域文件：每行一个内部名（改名前的）。
+     *
+     * <p>为什么需要作用域：降级后的类不再是 java.lang.Enum 的子类。
+     * 进了源码树（会被重新编译）的类，降级是**必须的** —— 源码里不允许
+     * {@code class X extends java.lang.Enum}。
+     * 而第三方类（Guava / FlatLaf / Swing 那些）会原样打进 bundled-libs.jar，
+     * 它们**不会被重新编译**，降级对编译没有任何好处，却会让它们丢掉
+     * {@code name()} / {@code ordinal()} / {@code Enum.valueOf} 的运行时行为。
+     * 所以默认只降级作用域内的类。
+     */
+    static String enumScopeFile = null;
+
     public static void main(String[] args) throws Exception {
         String in = args[0], out = args[1];
-        boolean doDup = false, doEnum = false;
+        boolean doDup = false, doEnum = false, publicize = false, doClinit = false;
+        int clinitCount = 0;
+        int ifaceBumped = 0;
+        int enumSuperFixed = 0, enumCtorFixed = 0, enumCtorSkipped = 0;
         for (int i = 2; i < args.length; i++) {
             if (args[i].equals("--dup")) doDup = true;
             if (args[i].equals("--enum")) doEnum = true;
+            if (args[i].equals("--publicize")) publicize = true;
+            if (args[i].equals("--clinit")) doClinit = true;
             if (args[i].startsWith("--rename=")) {
                 String[] kv = args[i].substring("--rename=".length()).split("=", 2);
                 RENAME_CLASS.put(kv[0], kv[1]);
                 System.out.println("class rename: " + kv[0] + " -> " + kv[1]);
+            }
+            if (args[i].startsWith("--enum-scope=")) {
+                enumScopeFile = args[i].substring("--enum-scope=".length());
             }
             if (args[i].startsWith("--method=")) {
                 String[] kv = args[i].substring("--method=".length()).split("=", 2);
@@ -97,6 +118,21 @@ public class FixBytecode {
             System.out.println("package collision: " + gs + " -> keep " + gs.get(0));
         }
         System.out.println("packages renamed = " + pkgFixed);
+
+        // ---------- pass 0b: 非法 Java 标识符的类名 ----------
+        // jar 里有 package-info 这类类名（含连字符），反编译成源码后 javac 报
+        // "<identifier> expected"。在字节码层改成合法标识符。
+        int badNames = 0;
+        for (List<ClassNode> l : db.values()) {
+            for (ClassNode cn : l) {
+                int i = cn.name.lastIndexOf('/');
+                String simple = i >= 0 ? cn.name.substring(i + 1) : cn.name;
+                if (isJavaIdentifier(simple)) continue;
+                RENAME_CLASS.put(cn.name, (i >= 0 ? cn.name.substring(0, i + 1) : "") + toJavaIdentifier(simple));
+                badNames++;
+            }
+        }
+        System.out.println("illegal-identifier classes renamed = " + badNames);
 
         // 写反向别名表（新内部名 -> 原内部名），供后续的语义改名表对表用
         try (PrintWriter w = new PrintWriter(new OutputStreamWriter(
@@ -252,6 +288,76 @@ public class FixBytecode {
         }
         System.out.println("fake enums = " + fakeEnums.size()
                 + "  (self-instantiated " + selfInstantiated.size() + ", has-subclass " + hasSub.size() + ")");
+
+        // ---------- pass 2b: 枚举标志清理 + 父类还原 ----------
+        //
+        // 诊断结论（见 tools/ProbeEnum.java，对 finalshell-fixed.jar 全量扫描）：
+        //   jar 里带 ACC_ENUM 的类共 629 个，分两类：
+        //     (a) 489 个 super_class == java/lang/Enum，且同时有 values()/valueOf()/$VALUES 数组，
+        //         构造器里 invokespecial java/lang/Enum.<init>(String,int)，
+        //         <clinit> 里 new 自己 —— 这些是**被 ZKM 改写过的真枚举**；
+        //     (b) 140 个 super_class 是别的类（枚举常量专属子类，javac 本来就给它们打 ACC_ENUM）。
+        //   **一个"假枚举"都没有**。
+        //
+        // 之前 --enum 的判据里"自身被 new 出来"这一条是错的：
+        // 真枚举的 <clinit> 就是 new 自己建枚举常量，所以每个真枚举都会被误判成假枚举，
+        // 于是 ACC_ENUM 被清掉，而父类仍然是 java/lang/Enum，
+        // Vineflower 渲染成 `class X extends Enum` —— javac 直接报
+        //   "classes cannot directly extend java.lang.Enum"
+        //   "constructor Enum in class Enum<E> cannot be applied to given types"
+        //   "compareTo(Enum) in X cannot override compareTo(E) in Enum / overridden method is final"
+        //
+        // 修法（字节码层）：
+        //   1) ACC_ENUM 一律清掉（让反编译器按普通类渲染）；
+        //   2) super_class 从 java/lang/Enum 改成 java/lang/Object
+        //      （Java 源码不允许 class 直接 extends java.lang.Enum）；
+        //   3) 构造器里 invokespecial java/lang/Enum.<init>(Ljava/lang/String;I)V
+        //      改成 invokespecial java/lang/Object.<init>()V，
+        //      并删掉压在它上面的两条参数压栈指令（String 名字 / int ordinal）。
+        //
+        // 构造器的**签名不动**：(String,int,...) 保留 —— 枚举常量是靠 new X("NAME", 0, ...)
+        // 创建的，改签名会把所有调用点一起弄坏；而 (String,int) 里的 name/ordinal
+        // 变成没人用的形参，javac 只是不报错而已。
+        //
+        // (b) 类（枚举常量专属子类）父类不是 java/lang/Enum，super_name 不用动：
+        // 它调的是父枚举的 <init>(String,int)，父枚举的构造器签名没变，调用点依然匹配。
+        Set<String> enumFlagged = new TreeSet<>();
+        Set<String> scope = null;
+        if (enumScopeFile != null) {
+            scope = new TreeSet<>();
+            try (java.io.BufferedReader br = new java.io.BufferedReader(new java.io.InputStreamReader(
+                    new java.io.FileInputStream(enumScopeFile), StandardCharsets.UTF_8))) {
+                String l;
+                while ((l = br.readLine()) != null) {
+                    l = l.trim();
+                    if (!l.isEmpty() && !l.startsWith("#")) scope.add(l);
+                }
+            }
+            System.out.println("enum scope = " + scope.size() + " classes (from " + enumScopeFile + ")");
+        }
+        for (List<ClassNode> l : db.values()) {
+            for (ClassNode cn : l) {
+                if ((cn.access & Opcodes.ACC_ENUM) == 0) continue;
+                if (scope != null && !scope.contains(cn.name)) continue;
+                enumFlagged.add(cn.name);
+            }
+        }
+        // 干跑一遍，只为统计（真正的改动在写 jar 的循环里做 —— 那里的 ClassNode
+        // 是从 zip 重新读出来的，前面分析阶段改的字段不会留下来）
+        int enumSuperCount = 0, enumCtorCount = 0;
+        for (List<ClassNode> l : db.values()) {
+            for (ClassNode cn : l) {
+                if (!enumFlagged.contains(cn.name)) continue;
+                if (!"java/lang/Enum".equals(cn.superName)) continue;
+                enumSuperCount++;
+                for (MethodNode m : cn.methods) {
+                    if (m.name.equals("<init>") && m.instructions != null) enumCtorCount++;
+                }
+            }
+        }
+        System.out.println("enum flags cleared = " + enumFlagged.size()
+                + "  super->Object = " + enumSuperCount
+                + "  ctors to fix = " + enumCtorCount);
         try (PrintWriter w = new PrintWriter(new OutputStreamWriter(
                 new FileOutputStream("fake-enums-bytecode.tsv"), StandardCharsets.UTF_8))) {
             w.println("internal\treason");
@@ -320,25 +426,157 @@ public class FixBytecode {
                 if (name.endsWith(".class") || name.endsWith(".SCL.lombok")) {
                     // 改名前的内部名，用来决定 zip 条目名
                     String oldInternal = Jar.internalName(data);
-                    ClassReader cr = new ClassReader(data);
-                    ClassWriter cw = new ClassWriter(0);
-                    ClassVisitor cv = cw;
-                    if (doDup || !RENAME_CLASS.isEmpty()) cv = new ClassRemapper(cv, remap);
-                    cr.accept(cv, 0);
-                    if (doEnum) {
-                        // 清掉假枚举的 ACC_ENUM：需要重新读一遍节点
-                        ClassNode cn = new ClassNode();
-                        new ClassReader(data).accept(cn, 0);
-                        if (fakeEnums.contains(cn.name)) {
-                            cn.access &= ~Opcodes.ACC_ENUM;
-                            ClassWriter cw2 = new ClassWriter(0);
-                            cn.accept(cw2);
-                            data = cw2.toByteArray();
+                    ClassNode node = new ClassNode();
+                    new ClassReader(data).accept(node, 0);
+                    if (doEnum && enumFlagged.contains(node.name)) {
+                        // 清掉伪造/继承来的 ACC_ENUM，让反编译器按普通类渲染。
+                        node.access &= ~Opcodes.ACC_ENUM;
+                        if ("java/lang/Enum".equals(node.superName)) {
+                            // Java 源码不允许 class 直接 extends java.lang.Enum，
+                            // 而只清 ACC_ENUM 不够 —— 父类还指着 java.lang.Enum，
+                            // Vineflower 会渲染成 `class X extends Enum`，javac 直接报错。
+                            node.superName = "java/lang/Object";
+                            // 泛型签名里若还指着 java.lang.Enum，一并换掉
+                            if (node.signature != null && node.signature.contains("java/lang/Enum")) {
+                                node.signature = node.signature.replace("java/lang/Enum", "java/lang/Object");
+                            }
+                            // 构造器里 super(name, ordinal) -> super()
+                            for (MethodNode m : node.methods) {
+                                if (m.name.equals("<init>") && m.instructions != null) {
+                                    if (fixEnumSuperCall(m)) enumCtorFixed++;
+                                    else enumCtorSkipped++;
+                                }
+                            }
+                            enumSuperFixed++;
                         }
                     }
+                    if (publicize) {
+                        // 把成员开放成 public：混淆后的封装本来就没意义；而"按功能类别重新归包"
+                        // 会把原来同包互访的包级私有成员变成跨包访问，
+                        // 在字节码层统一放开，比在源码层逐个改声明可靠得多。
+                        // 类本身也要放开：javac 报的
+                        // "X is not public in Y; cannot be accessed from outside package"
+                        // 说的是**包级私有的类**本身（不是它的成员）。
+                        //
+                        // 【2026-10-21 扩充】原来只放开 ACC_PRIVATE，包级私有（无修饰符）和
+                        // protected 的成员没动。但改包名之后，原来的"同包互访"变成了跨包访问，
+                        // javac 报 "method X in class Y cannot be applied to given types;
+                        // reason: X(..) is not public in Y; cannot be accessed from outside package" ——
+                        // 实测 397 个这类错误里 374 个是这个原因。
+                        // 所以这里把**所有**非 public 成员都放开。
+                        for (MethodNode m : node.methods) {
+                            if ((m.access & (Opcodes.ACC_PUBLIC | Opcodes.ACC_PRIVATE
+                                    | Opcodes.ACC_PROTECTED)) != Opcodes.ACC_PUBLIC) {
+                                m.access = (m.access & ~(Opcodes.ACC_PRIVATE | Opcodes.ACC_PROTECTED))
+                                        | Opcodes.ACC_PUBLIC;
+                            }
+                        }
+                        for (FieldNode f : node.fields) {
+                            if ((f.access & (Opcodes.ACC_PUBLIC | Opcodes.ACC_PRIVATE
+                                    | Opcodes.ACC_PROTECTED)) != Opcodes.ACC_PUBLIC) {
+                                f.access = (f.access & ~(Opcodes.ACC_PRIVATE | Opcodes.ACC_PROTECTED))
+                                        | Opcodes.ACC_PUBLIC;
+                            }
+                        }
+                        if ((node.access & Opcodes.ACC_PUBLIC) == 0) {
+                            node.access |= Opcodes.ACC_PUBLIC;
+                        }
+                    }
+                    if (doClinit) {
+                        // 把 <clinit> 的方法体搬到一个人工合成的静态方法里，
+                        // <clinit> 只留一次调用。
+                        // 为什么：Vineflower 面对不可约控制流时会把 <clinit> 渲染成
+                        //     static { ... return; ... }
+                        // 而 return; 在静态初始化块里是非法 Java（"return outside method"）。
+                        // 搬进方法后 return; 就合法了，而且**不用在源码层做任何文本手术** ——
+                        // 文本层的 do-while 包一层很容易把文件改坏。
+                        MethodNode clinit = null;
+                        for (MethodNode m : node.methods) {
+                            if (m.name.equals("<clinit>")) { clinit = m; break; }
+                        }
+                        if (clinit != null && clinit.instructions != null && clinit.instructions.size() > 0) {
+                            // 记下 <clinit> 里被赋值的静态字段：搬到方法后 final 就不能赋值了
+                            Set<String> assigned = new HashSet<>();
+                            for (AbstractInsnNode ins = clinit.instructions.getFirst(); ins != null; ins = ins.getNext()) {
+                                if (ins instanceof FieldInsnNode && ins.getOpcode() == Opcodes.PUTSTATIC) {
+                                    FieldInsnNode fi = (FieldInsnNode) ins;
+                                    assigned.add(fi.owner + "." + fi.name);
+                                }
+                            }
+                            if (!assigned.isEmpty()) {
+                                for (FieldNode f : node.fields) {
+                                    if ((f.access & Opcodes.ACC_STATIC) != 0
+                                            && (f.access & Opcodes.ACC_FINAL) != 0
+                                            && assigned.contains(node.name + "." + f.name)) {
+                                        f.access &= ~Opcodes.ACC_FINAL;
+                                    }
+                                }
+                            }
+                            // 注意：不能加 ACC_SYNTHETIC —— 反编译器默认跳过 synthetic 方法，
+                            // 那样静态初始化代码会整个丢失（编译能过，运行行为就变了）。
+                            MethodNode helper = new MethodNode(
+                                    Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC,
+                                    "__vfClinit__", "()V", null, null);
+                            helper.access = Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC;
+                            helper.maxStack = clinit.maxStack;
+                            helper.maxLocals = clinit.maxLocals;
+                            // 搬运指令与 try-catch
+                            InsnList body = new InsnList();
+                            AbstractInsnNode first = clinit.instructions.getFirst();
+                            while (first != null) {
+                                AbstractInsnNode next = first.getNext();
+                                body.add(first);
+                                first = next;
+                            }
+                            // 结尾补一条 return（原来靠 athrow/goto 结束）。
+                            // 但 <clinit> 原本就以 RETURN 收尾时不能再补 ——
+                            // 反编译器会渲染成 "return; return;"，
+                            // javac 报 "unreachable statement"（是错误，不是警告）。
+                            boolean needReturn = true;
+                            AbstractInsnNode last = body.getLast();
+                            if (last != null) {
+                                int op = last.getOpcode();
+                                if (op == Opcodes.RETURN || op == Opcodes.ATHROW
+                                        || op == Opcodes.IRETURN || op == Opcodes.LRETURN
+                                        || op == Opcodes.FRETURN || op == Opcodes.DRETURN
+                                        || op == Opcodes.ARETURN) {
+                                    needReturn = false;
+                                }
+                            }
+                            if (needReturn) body.add(new InsnNode(Opcodes.RETURN));
+                            helper.instructions = body;
+                            for (TryCatchBlockNode tcb : clinit.tryCatchBlocks) {
+                                helper.tryCatchBlocks.add(tcb);
+                            }
+                            clinit.tryCatchBlocks.clear();
+                            clinit.instructions = new InsnList();
+                            clinit.instructions.add(new MethodInsnNode(Opcodes.INVOKESTATIC,
+                                    node.name, "__vfClinit__", "()V", false));
+                            clinit.instructions.add(new InsnNode(Opcodes.RETURN));
+                            clinit.maxStack = 1;
+                            clinit.maxLocals = 0;
+                            node.methods.add(helper);
+                            clinitCount++;
+                            // 接口的 static 方法是 Java 8 (class file 52) 才引入的。
+                            // 混淆后的 jar 里很多接口还是 version 50 (Java 6)，
+                            // 给它们加 static 方法后 javac 会报
+                            //   "bad class file: static method found in version 50.0 classfile"
+                            // 所以给被提取过的接口把版本提到 52。
+                            if ((node.access & Opcodes.ACC_INTERFACE) != 0 && node.version < 52) {
+                                node.version = 52;
+                                ifaceBumped++;
+                            }
+                        }
+                    }
+                    ClassWriter cw = new ClassWriter(0);
+                    ClassVisitor cv = cw;
+                    if (doDup || !RENAME_CLASS.isEmpty() || !PKG_RENAME.isEmpty()) {
+                        cv = new ClassRemapper(cv, remap);
+                    }
+                    node.accept(cv);
                     data = cw.toByteArray();
                     // zip 条目名必须与类名一致，否则 JVM 拒绝加载
-                    if (oldInternal != null && !RENAME_CLASS.isEmpty()) {
+                    if (oldInternal != null) {
                         String nn = remap.map(oldInternal);
                         if (nn != null && !nn.equals(oldInternal)) {
                             String ext = name.endsWith(".class") ? ".class" : ".SCL.lombok";
@@ -354,11 +592,143 @@ public class FixBytecode {
             }
         }
         System.out.println("wrote " + out + "  size=" + Files.size(Paths.get(out)));
+        System.out.println("clinit extracted to __vfClinit__ = " + clinitCount
+                + "  (interfaces bumped to v52 = " + ifaceBumped + ")");
+        System.out.println("enum fix: super->Object = " + enumSuperFixed
+                + "  ctor super() = " + enumCtorFixed
+                + "  ctor skipped = " + enumCtorSkipped);
     }
 
     static String paramDesc(String desc) {
         int close = desc.indexOf(')');
         return desc.substring(1, close);
+    }
+
+    /**
+     * 把构造器里的 {@code super(name, ordinal)} 换成 {@code super()}。
+     *
+     * <p>字节码形态（javac 生成的枚举构造器，ZKM 改写后仍是这个形状）：
+     * <pre>
+     *   aload_0
+     *   aload_1     // String name
+     *   iload_2     // int ordinal
+     *   invokespecial java/lang/Enum.<init>(Ljava/lang/String;I)V
+     * </pre>
+     * 父类换成 java/lang/Object 之后 Object 没有 (String,int) 构造器，
+     * 所以这条调用必须改成 {@code invokespecial java/lang/Object.<init>()V}，
+     * 并且把它压栈的两个参数（name / ordinal）一并从 InsnList 里删掉。
+     *
+     * <p>注意：构造器的**描述符不变**。枚举常量是靠 {@code new X("NAME", 0, ...)}
+     * 创建的，改描述符会让所有调用点一起坏掉；name/ordinal 变成没人用的形参，
+     * javac 不报错。
+     *
+     * @return true 表示确实改到了
+     */
+    static boolean fixEnumSuperCall(MethodNode m) {
+        InsnList ins = m.instructions;
+        boolean changed = false;
+        for (AbstractInsnNode n = ins.getFirst(); n != null; ) {
+            AbstractInsnNode next = n.getNext();
+            if (n instanceof MethodInsnNode) {
+                MethodInsnNode mi = (MethodInsnNode) n;
+                if (mi.owner.equals("java/lang/Enum") && mi.name.equals("<init>")
+                        && mi.desc.equals("(Ljava/lang/String;I)V")) {
+                    AbstractInsnNode intInsn = n.getPrevious();     // 压 int ordinal
+                    AbstractInsnNode refInsn = intInsn == null ? null : intInsn.getPrevious(); // 压 String name
+                    if (intInsn != null && refInsn != null
+                            && isIntPush(intInsn) && isRefPush(refInsn)) {
+                        ins.remove(intInsn);
+                        ins.remove(refInsn);
+                        mi.owner = "java/lang/Object";
+                        mi.desc = "()V";
+                        mi.itf = false;
+                        changed = true;
+                    } else {
+                        System.out.println("  WARN: 找不到 Enum.<init> 的两个参数压栈指令: "
+                                + m.name + m.desc);
+                    }
+                }
+            }
+            n = next;
+        }
+        return changed;
+    }
+
+    /**
+     * 该指令是否压入一个 int 值。
+     *
+     * <p>注意两点：
+     * <ul>
+     *   <li>JVM 的紧凑形式常量是 ILOAD_0..ILOAD_3 = 22..25、ALOAD_0..ALOAD_3 = 26..29
+     *       （ILOAD=21、ALOAD=25）；本仓库这版 ASM 没有 ILOAD_0..3 / ALOAD_0..3 常量，
+     *       而且它读字节码时**统一归一化成基形式 + 显式 var 索引**
+     *       （即 aload_1 读出来是 opcode=ALOAD(25), var=1），所以要按基形式判。
+     *   <li>ICONST_M1..ICONST_5 = 2..8，BIPUSH=16，SIPUSH=17，LDC=18。
+     * </ul>
+     */
+    static boolean isIntPush(AbstractInsnNode n) {
+        int op = n.getOpcode();
+        if (op == Opcodes.ILOAD) return true;               // 21
+        if (op >= 22 && op <= 25) return true;               // ILOAD_0..ILOAD_3
+        if (op >= 2 && op <= 8) return true;                 // ICONST_M1..ICONST_5
+        if (op == 16 || op == 17) return true;               // BIPUSH, SIPUSH
+        if (op == 18 && n instanceof LdcInsnNode) {          // LDC
+            Object c = ((LdcInsnNode) n).cst;
+            return c instanceof Integer || c instanceof Short || c instanceof Byte
+                    || c instanceof Character;
+        }
+        return false;
+    }
+
+    /** 该指令是否压入一个引用（这里是 String 名字）。 */
+    static boolean isRefPush(AbstractInsnNode n) {
+        int op = n.getOpcode();
+        if (op == Opcodes.ALOAD) return true;                // 25
+        if (op >= 26 && op <= 29) return true;               // ALOAD_0..ALOAD_3
+        if (op == 18 && n instanceof LdcInsnNode) {          // LDC
+            Object c = ((LdcInsnNode) n).cst;
+            return c instanceof String;
+        }
+        return false;
+    }
+
+    /** 简单类名是否是合法的 Java 标识符（且不是关键字）。 */
+    static final Set<String> JAVA_KEYWORDS = new HashSet<>(Arrays.asList(
+            "abstract", "assert", "boolean", "break", "byte", "case", "catch", "char", "class",
+            "const", "continue", "default", "do", "double", "else", "enum", "extends", "final",
+            "finally", "float", "for", "goto", "if", "implements", "import", "instanceof", "int",
+            "interface", "long", "native", "new", "package", "private", "protected", "public",
+            "return", "short", "static", "strictfp", "super", "switch", "synchronized", "this",
+            "throw", "throws", "transient", "try", "void", "volatile", "while",
+            "true", "false", "null", "var", "record", "yield", "sealed", "permits", "non-sealed"));
+
+    static boolean isJavaIdentifier(String s) {
+        if (s.isEmpty()) return false;
+        if (!Character.isJavaIdentifierStart(s.charAt(0))) return false;
+        for (int i = 1; i < s.length(); i++) {
+            if (!Character.isJavaIdentifierPart(s.charAt(i))) return false;
+        }
+        return !JAVA_KEYWORDS.contains(s);
+    }
+
+    /** package-info -> PackageInfo，package-info_2 -> PackageInfo2 */
+    static String toJavaIdentifier(String s) {
+        StringBuilder sb = new StringBuilder();
+        boolean up = true;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '-' || c == '_' || c == '$' || c == '.' || !Character.isJavaIdentifierPart(c)) {
+                if (c == '_' || c == '$' || c == '.') { sb.append(c); up = false; }
+                else up = true;
+                continue;
+            }
+            sb.append(up ? Character.toUpperCase(c) : c);
+            up = false;
+        }
+        String r = sb.toString();
+        if (r.isEmpty()) r = "Renamed";
+        if (!Character.isJavaIdentifierStart(r.charAt(0))) r = "X" + r;
+        return r;
     }
 
     static String retOf(String desc) {

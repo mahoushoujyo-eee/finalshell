@@ -1,7 +1,7 @@
 package com.apple.eawt;
 
 public interface AppReOpenedListener extends AppEventListener {
-   void appReOpened(AppEvent.AppReOpenedEvent var1);
+   void appReOpened(AppReOpenedEvent var1);
 }
 
 

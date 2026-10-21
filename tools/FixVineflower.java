@@ -21,7 +21,7 @@ import java.util.regex.*;
  */
 public class FixVineflower {
     static int statEnum = 0, statCtor = 0, statUndec = 0, statCast = 0;
-    static int statEnumCtor = 0, statFakeEnum = 0, statFakeSub = 0, statIface = 0;
+    static int statEnumCtor = 0, statFakeEnum = 0, statFakeSub = 0, statIface = 0, defaultFixed = 0, fixFailed = 0;
 
     /** internalName -> [super, kind, ctors] */
     static final Map<String, String[]> INFO = new HashMap<>();
@@ -76,12 +76,33 @@ public class FixVineflower {
         Map<Path, String> fixed = new LinkedHashMap<>();
         Map<Path, String> internals = new LinkedHashMap<>();
         Map<Path, String> originals = new LinkedHashMap<>();
+        // 预扫描：先收集全工程所有 interface 的名字。
+        // 降级 interface 时需要知道它 extends 的那些是不是也是 interface
+        // （Java 的 interface 只能 extends interface，所以理论上都是，
+        //  但混进来的第三方接口可能已经不存在了，所以查一下更稳）。
+        for (Path f : files) {
+            String src = new String(Files.readAllBytes(f), StandardCharsets.UTF_8);
+            for (String l : src.split("\n", -1)) {
+                Matcher im = RE_IFACE_HEAD.matcher(l);
+                if (im.matches()) ALL_INTERFACES.add(lastSeg(im.group(2)));
+            }
+        }
         for (Path f : files) {
             String src = new String(Files.readAllBytes(f), StandardCharsets.UTF_8);
             String internal = internalNameOf(src, f);
             internals.put(f, internal);
             originals.put(f, src);
-            fixed.put(f, fix(src, internal));
+            // 单个文件处理失败不能拖垮整轮 —— 之前一次 IndexOutOfBounds
+            // 让 5,386 个文件一个都没写出去，整轮白跑。
+            String fixedSrc;
+            try {
+                fixedSrc = fix(src, internal);
+            } catch (Throwable t) {
+                fixFailed++;
+                System.out.println("  fix() failed on " + f.getFileName() + " : " + t);
+                fixedSrc = src;
+            }
+            fixed.put(f, fixedSrc);
         }
         // 改名沿继承链传播后，再统一套用一遍
         // propagateRenames();  // 传播会引入新的冲突，暂不启用
@@ -101,19 +122,39 @@ public class FixVineflower {
                 changed++;
             }
         }
-        // 实现者：implements X -> extends X
+        // 实现者：被降级的接口不能留在 implements 列表里
+        //（Java 的类只能有一个 extends，所以已有 extends 时只能把降级接口丢掉；
+        //  它原来的方法实现者自己类体里已经写了）
         if (!IFACE_TO_CLASS.isEmpty()) {
             System.out.println("interfaces downgraded to class: " + IFACE_TO_CLASS);
+            // 降级接口的全限定名（实现者可能在别的包里，需要 import）
+            Map<String, String> ifaceFqcn = new LinkedHashMap<>();
             for (Path f : files) {
                 String src = new String(Files.readAllBytes(f), StandardCharsets.UTF_8);
-                String out = src;
-                for (String ifc : IFACE_TO_CLASS) {
-                    // 必须带词边界：接口名 "L" 不能把 "implements List" 也改掉
-                    out = out.replaceAll("\bimplements\s+" + java.util.regex.Pattern.quote(ifc) + "\b",
-                                         "extends " + ifc);
+                Matcher pm = RE_PKG.matcher(src);
+                if (!pm.find()) continue;
+                String pkg = pm.group(1);
+                for (String n : IFACE_TO_CLASS) {
+                    if (f.getFileName().toString().equals(n + ".java")) {
+                        ifaceFqcn.put(n, pkg + "." + n);
+                    }
                 }
+            }
+            int qualifyFiles = 0, qualifyHits = 0;
+            for (Path f : files) {
+                String src = new String(Files.readAllBytes(f), StandardCharsets.UTF_8);
+                Map<String, String> qualify = new LinkedHashMap<>();
+                String out = rewriteIfaceExtends(src, qualify);
+                if (!qualify.isEmpty()) {
+                    qualifyFiles++;
+                    qualifyHits += qualify.size();
+                    out = qualifyStaticFields(out, qualify);
+                    out = ensureImports(out, ifaceFqcn, qualify.values());
+                }
+                out = stripIfaceMethodQualifier(out);
                 if (!out.equals(src)) Files.write(f, out.getBytes(StandardCharsets.UTF_8));
             }
+            System.out.println("iface fields qualified: files=" + qualifyFiles + " fields=" + qualifyHits);
         }
         try (PrintWriter w = new PrintWriter(new OutputStreamWriter(
                 new FileOutputStream(args.length > 2 ? args[2] : "dup-renames.tsv"), StandardCharsets.UTF_8))) {
@@ -121,7 +162,8 @@ public class FixVineflower {
             for (String[] r : DUP_RENAMES) w.println(String.join("	", r));
         }
         System.out.println("files=" + files.size() + " changed=" + changed
-                           + " dupMethodRenames=" + DUP_RENAMES.size());
+                           + " dupMethodRenames=" + DUP_RENAMES.size()
+                           + " fixFailed=" + fixFailed + " defaultFixed=" + defaultFixed);
         System.out.println("enumConstList=" + statEnum + " fakeEnumToClass=" + statFakeEnum
                            + " fakeEnumSubToClass=" + statFakeSub + " enumCtorFixed=" + statEnumCtor
                            + " ctorFixed=" + statCtor + " undecodableFixed=" + statUndec
@@ -315,8 +357,12 @@ public class FixVineflower {
 
     static String fix(String src, String internal) {
         src = fixIfaceBlankFinals(src);
-        src = fixFakeEnum(src, internal);
-        src = fixEnumConstList(src);
+        src = fixEnumStaticBlock(src);
+        if (internal != null && internal.endsWith("reflect/Registry")) {
+            src = fixRegistryGenerics(src);
+        }
+        src = fixRedundantCasts(src);
+        src = fixFakeEnum(src, internal);        src = fixEnumConstList(src);
         src = fixEnumCtor(src, internal);
         src = fixCtor(src, typeOverrideFor(internal));
         src = fixUndecodable(src);
@@ -326,32 +372,129 @@ public class FixVineflower {
     }
 
     /**
+     * 把类声明里的 implements 列表按"被降级成类的接口"重新整理：
+     *   implements A, I   ->   extends I implements A      （没有别的 extends 时）
+     *   extends B implements A, I -> extends B implements A （Java 不允许多继承，I 只能丢）
+     *
+     * <p>第二种情况下 I 被丢掉，但它携带的静态字段在实现者里可能被**裸访问**
+     * （原来靠 implements 继承接口的静态字段作用域）。丢掉 implements 后裸访问
+     * 就编译不过，所以要把这些裸访问改成显式限定 {@code I.字段}。
+     * {@code qualifyOut} 收集 字段名 -> 接口名 的映射，供调用方做限定改写。
+     */
+    static String rewriteIfaceExtends(String src, Map<String, String> qualifyOut) {
+        String[] lines = src.split("\n", -1);
+        for (int i = 0; i < lines.length; i++) {
+            String l = lines[i];
+            int idx = l.indexOf(" implements ");
+            if (idx < 0) continue;
+            int brace = l.indexOf('{', idx);
+            if (brace < 0) continue;
+            String head = l.substring(0, brace);
+            String tail = l.substring(brace);
+            // 顺序很重要：先切 implements，再在剩下的部分里切 extends。
+            // 反过来切会把 "extends B implements A" 整段当成 ext，
+            // 于是 before 里找不到 " implements " 直接 continue —— 改写静默失效。
+            int ii = head.indexOf(" implements ");
+            if (ii < 0) continue;
+            String base = head.substring(0, ii);
+            String implList = head.substring(ii + " implements ".length());
+            int ei = base.indexOf(" extends ");
+            String namePart = base, ext = "";
+            if (ei >= 0) { namePart = base.substring(0, ei); ext = base.substring(ei); }
+            List<String> keep = new ArrayList<>(), promoted = new ArrayList<>();
+            for (String e : implList.split(",")) {
+                String t = e.trim();
+                if (t.isEmpty()) continue;
+                // 可能是带包名的写法（com.finalshell.core.Nd4），按简单名比对
+                String simple = t.substring(t.lastIndexOf('.') + 1);
+                if (IFACE_TO_CLASS.contains(t) || IFACE_TO_CLASS.contains(simple)) promoted.add(simple);
+                else keep.add(t);
+            }
+            if (promoted.isEmpty()) continue;
+            StringBuilder nb = new StringBuilder(namePart);
+            if (ext.isEmpty()) {
+                // 没有别的父类：降级接口直接顶上去当父类
+                nb.append(" extends ").append(String.join(", ", promoted));
+            } else {
+                // 已有父类：Java 不允许多继承，降级接口只能从 implements 里丢掉，
+                // 但它携带的静态字段还要能被访问 -> 记下来做显式限定
+                nb.append(ext);
+                for (String p : promoted) {
+                    for (Map.Entry<String, String> fe : IFACE_FIELDS.entrySet()) {
+                        if (fe.getValue().equals(p)) qualifyOut.put(fe.getKey(), p);
+                    }
+                }
+            }
+            if (!keep.isEmpty()) nb.append(" implements ").append(String.join(", ", keep));
+            nb.append(tail);
+            lines[i] = nb.toString();
+        }
+        return String.join("\n", lines);
+    }
+
+    /**
+     * 把裸访问的静态字段改成显式限定：{@code q} -> {@code Nd4.q}。
+     * 只在该文件确实 implements 过被降级接口时才会传进来非空映射。
+     */
+    static String qualifyStaticFields(String src, Map<String, String> fields) {
+        if (fields.isEmpty()) return src;
+        String out = src;
+        for (Map.Entry<String, String> e : fields.entrySet()) {
+            String f = e.getKey(), iface = e.getValue();
+            // 前面不是 . / 标识符字符，才算"裸访问"
+            java.util.regex.Pattern p = java.util.regex.Pattern.compile(
+                    "(?<![\\w.$])" + java.util.regex.Pattern.quote(f) + "\\b");
+            out = p.matcher(out).replaceAll(iface + "." + f);
+        }
+        return out;
+    }
+
+    /**
      * 接口里的字段隐式是 public static final，不允许"空 final"再在静态块里赋值，
      * javac 会报"需要="。这些接口实际上是带静态表的抽象契约，
      * 降级成 "public abstract class X" + "public static Type f;"，
      * 再把实现者的 implements X 改成 extends X。
      */
     static final Set<String> IFACE_TO_CLASS = new LinkedHashSet<>();
+    /** 降级接口携带的静态字段名 -> 接口名（用于把实现者里的裸访问改成显式限定） */
+    static final Map<String, String> IFACE_FIELDS = new LinkedHashMap<>();
+    /** 全工程里所有 interface 的名字（判断降级后 extends 列表该怎么拆） */
+    static final Set<String> ALL_INTERFACES = new LinkedHashSet<>();
+    // interface 头：允许带 extends 子句
+    //   public interface C_5 extends E22, P_2_4 {
+    //   public interface E22 {
     static final Pattern RE_IFACE_HEAD =
-            Pattern.compile("^(\\s*)(?:public\\s+|abstract\\s+)*interface\\s+([\\w$.]+)\\s*\\{\\s*$");
+            Pattern.compile("^(\\s*)(?:public\\s+|abstract\\s+)*interface\\s+([\\w$.]+)"
+                    + "((?:\\s+extends\\s+[^{]+?)?)\\s*\\{\\s*$");
     static final Pattern RE_BLANK_FINAL =
             Pattern.compile("^\\s*([A-Za-z_$][\\w$.]*(?:\\s*<[^>]*>)?(?:\\[\\])?)\\s+([A-Za-z_$][\\w$]*)\\s*;\\s*$");
+    static final Pattern RE_STATIC_BLOCK =
+            Pattern.compile("^\\s*static\\s*\\{\\s*$");
 
     static String fixIfaceBlankFinals(String src) {
         String[] lines = src.split("\n", -1);
         int headIdx = -1;
         String ifaceName = null;
+        String extendsClause = "";
         for (int i = 0; i < Math.min(lines.length, 12); i++) {
             Matcher m = RE_IFACE_HEAD.matcher(lines[i]);
-            if (m.matches()) { headIdx = i; ifaceName = m.group(2); break; }
+            if (m.matches()) {
+                headIdx = i; ifaceName = m.group(2);
+                extendsClause = m.group(3) == null ? "" : m.group(3).trim();
+                break;
+            }
         }
         if (headIdx < 0) return src;
         boolean hasBlank = false;
-        for (int i = headIdx + 1; i < Math.min(lines.length, headIdx + 12); i++) {
+        boolean hasStaticBlock = false;
+        for (int i = headIdx + 1; i < Math.min(lines.length, headIdx + 14); i++) {
             if (RE_BLANK_FINAL.matcher(lines[i]).matches()) { hasBlank = true; break; }
+            if (RE_STATIC_BLOCK.matcher(lines[i]).matches()) { hasStaticBlock = true; break; }
             if (lines[i].trim().endsWith(";")) break;
         }
-        if (!hasBlank) return src;
+        // 接口在 Java 源码里既不能有 static 块，也不能有没初值的 final 字段。
+        // 这两种情况都必须降级成 class。
+        if (!hasBlank && !hasStaticBlock) return src;
         // 只处理类头之后、第一个方法/静态块之前的字段区，
         // 否则会误伤方法体里的局部变量声明（"char[] var10002;" 之类）
         int fieldEnd = headIdx + 1;
@@ -368,19 +511,238 @@ public class FixVineflower {
                 Matcher hm = RE_IFACE_HEAD.matcher(l);
                 hm.matches();
                 sb.append(hm.group(1)).append("public abstract class ")
-                  .append(ifaceName).append(" {\n");
+                  .append(ifaceName).append(splitExtends(extendsClause)).append(" {\n");
                 IFACE_TO_CLASS.add(ifaceName);
                 continue;
             }
             Matcher bm = RE_BLANK_FINAL.matcher(l);
             if (i > headIdx && i < fieldEnd && bm.matches() && !bm.group(2).equals(ifaceName)) {
                 sb.append("   public static ").append(bm.group(1)).append(' ').append(bm.group(2)).append(";\n");
+                IFACE_FIELDS.put(bm.group(2), ifaceName);
                 statIface++;
                 continue;
+            }
+            // 接口的 default 方法降级成 class 之后，"default" 修饰符不再合法
+            //（javac: modifier default not allowed here）
+            if (hasStaticBlock || hasBlank) {
+                String d = l.replaceFirst("(?m)^(\\s*)default\\s+", "$1");
+                if (!d.equals(l)) { sb.append(d).append('\n'); defaultFixed++; continue; }
             }
             sb.append(l).append('\n');
         }
         return sb.toString();
+    }
+
+    /**
+     * enum 不允许 static 初始化块（JLS 8.9.2），但反编译器会把 {@code <clinit>}
+     * 渲染成 {@code static { ... }}。这里把块内容搬进一个 static 方法，
+     * 再用"静态字段的初始化表达式"触发它 —— 字段初始化发生在 {@code <clinit>} 里，
+     * 位置和原来的静态块一致（块通常在常量之后），语义等价。
+     */
+    static String fixEnumStaticBlock(String src) {
+        String[] lines = src.split("\n", -1);
+        boolean isEnum = false;
+        for (String l : lines) {
+            if (RE_ENUM_HEAD.matcher(l).matches()) { isEnum = true; break; }
+        }
+        if (!isEnum) return src;
+        int enumHead = -1;
+        for (int k = 0; k < lines.length; k++) {
+            if (RE_ENUM_HEAD.matcher(lines[k]).matches()) { enumHead = k; break; }
+        }
+        for (int i = 0; i < lines.length; i++) {
+            if (!RE_STATIC_BLOCK.matcher(lines[i]).matches()) continue;
+            String indent = lines[i].substring(0, lines[i].length() - lines[i].trim().length());
+            // 找块结束：同缩进的 "}"
+            int end = -1;
+            for (int j = i + 1; j < lines.length; j++) {
+                if (lines[j].trim().equals("}") && lines[j].startsWith(indent)) { end = j; break; }
+            }
+            if (end < 0) continue;
+            StringBuilder body = new StringBuilder();
+            for (int j = i + 1; j < end; j++) body.append(lines[j]).append('\n');
+            StringBuilder out = new StringBuilder();
+            for (int j = 0; j < lines.length; j++) {
+                if (j < i) { out.append(lines[j]).append('\n'); continue; }
+                if (j == i) {
+                    // enum 体的第一个成员必须是枚举常量。空 enum（原本就没有常量）
+                    // 直接放字段会被 javac 拒（"enum constant expected here"），
+                    // 所以补一个 ";" 表示常量列表结束。
+                    boolean hasConst = false;
+                    for (int k = enumHead + 1; k < i; k++) {
+                        String t = lines[k].trim();
+                        if (t.isEmpty() || t.startsWith("//") || t.startsWith("*") || t.startsWith("/*")) continue;
+                        hasConst = true;
+                        break;
+                    }
+                    if (!hasConst) out.append(indent).append(";\n");
+                    out.append(indent).append("private static final Object __vfClinitTrigger = __vfClinitTrigger();\n");
+                    out.append(indent).append("private static Object __vfClinitTrigger() {\n");
+                    out.append(body);
+                    out.append(indent).append("   return null;\n");
+                    out.append(indent).append("}\n");
+                    j = end;
+                    continue;
+                }
+                out.append(lines[j]).append('\n');
+            }
+            return out.toString();
+        }
+        return src;
+    }
+
+    /**
+     * 被降级的接口，其方法在实现者里被 Vineflower 写成带接口限定前缀的形式：
+     *     public EnumSet C_5.G() { ... }
+     * 接口降级成 class 之后这个前缀必须去掉，否则 javac 报
+     * "invalid method declaration; return type required"。
+     * 只处理成员方法声明行（行首是修饰符关键字），避免误伤表达式里的静态调用。
+     */
+    static String stripIfaceMethodQualifier(String src) {
+        if (IFACE_TO_CLASS.isEmpty()) return src;
+        String[] lines = src.split("\n", -1);
+        for (int i = 0; i < lines.length; i++) {
+            String t = lines[i].trim();
+            if (t.isEmpty() || !t.contains("(")) continue;
+            if (!RE_MODIFIER_START.matcher(t).find()) continue;
+            for (String n : IFACE_TO_CLASS) {
+                String q = java.util.regex.Pattern.quote(n);
+                lines[i] = java.util.regex.Pattern.compile(
+                        "(\\b" + q + ")\\.(\\w+)\\s*\\(").matcher(lines[i]).replaceAll("$2(");
+            }
+        }
+        return String.join("\n", lines);
+    }
+
+    static final Pattern RE_MODIFIER_START =
+            Pattern.compile("^(?:public|protected|private|static|final|abstract|synchronized|native|default|strictfp)\\b");
+
+    /**
+     * 接口的 extends 列表（全是接口）降级成 class 后要拆开：
+     *   extends A, B   ->   extends A implements B
+     * 因为 Java 的类只能 extends 一个父类。
+     * 若只有一个父接口，直接 extends 它。
+     */
+    static String splitExtends(String ext) {
+        if (ext == null || ext.isEmpty()) return "";
+        String body = ext.trim();
+        if (body.toLowerCase(Locale.ROOT).startsWith("extends ")) {
+            body = body.substring("extends ".length()).trim();
+        }
+        List<String> parts = new ArrayList<>();
+        for (String p : body.split(",")) {
+            String t = p.trim();
+            if (!t.isEmpty()) parts.add(t);
+        }
+        if (parts.isEmpty()) return "";
+        if (parts.size() == 1) return " extends " + parts.get(0);
+        return " extends " + parts.get(0) + " implements " + String.join(", ", parts.subList(1, parts.size()));
+    }
+
+    /**
+     * 确保降级接口的全限定名被 import（实现者可能在别的包里）。
+     */
+    static String ensureImports(String src, Map<String, String> ifaceFqcn, Collection<String> simpleNames) {
+        Set<String> need = new LinkedHashSet<>();
+        String pkg = null;
+        Matcher pm = RE_PKG.matcher(src);
+        if (pm.find()) pkg = pm.group(1);
+        for (String s : simpleNames) {
+            String fq = ifaceFqcn.get(s);
+            if (fq == null) continue;
+            int dot = fq.lastIndexOf('.');
+            if (dot > 0 && fq.substring(0, dot).equals(pkg)) continue;   // 同包
+            if (src.contains("import " + fq + ";")) continue;
+            need.add(fq);
+        }
+        if (need.isEmpty()) return src;
+        String[] lines = src.split("\n", -1);
+        int lastImport = -1;
+        for (int i = 0; i < lines.length; i++) {
+            if (lines[i].trim().startsWith("import ")) lastImport = i;
+        }
+        StringBuilder sb = new StringBuilder();
+        if (lastImport >= 0) {
+            for (int i = 0; i <= lastImport; i++) sb.append(lines[i]).append('\n');
+            for (String s : need) sb.append("import ").append(s).append(";\n");
+            for (int i = lastImport + 1; i < lines.length; i++) sb.append(lines[i]).append('\n');
+        } else {
+            int pkgLine = -1;
+            for (int i = 0; i < lines.length; i++) {
+                if (lines[i].trim().startsWith("package ")) { pkgLine = i; break; }
+            }
+            for (int i = 0; i < lines.length; i++) {
+                sb.append(lines[i]).append('\n');
+                if (i == pkgLine) {
+                    sb.append('\n');
+                    for (String s : need) sb.append("import ").append(s).append(";\n");
+                }
+            }
+        }
+        return sb.toString();
+    }
+
+    /**
+     * Registry（混淆器的常量/方法注册表）的辅助方法泛型化。
+     *
+     * <p>这些方法原本返回 {@code Object} 或 {@code Object[]}，但调用点把它们赋给
+     * 各种具体类型（DY3 / String / int / boolean …），javac 报
+     * "incompatible types: Object[] cannot be converted to X"（实测 3,411 处）。
+     *
+     * <p>把签名改成 {@code <T> T} 后，类型实参由赋值目标推断，调用点无需改动；
+     * 运行时行为完全不变（泛型只影响编译期，擦除后仍是 Object）。
+     */
+    static String fixRegistryGenerics(String src) {
+        String[] lines = src.split("\n", -1);
+        int genericized = 0, casts = 0;
+        for (int i = 0; i < lines.length; i++) {
+            Matcher m = RE_REGISTRY_RET.matcher(lines[i]);
+            if (!m.matches()) continue;
+            // 改声明：public static Object[] foo(  ->  public static <T> T foo(
+            lines[i] = RE_REGISTRY_RET.matcher(lines[i])
+                    .replaceFirst(Matcher.quoteReplacement(m.group(1) + "public static <T> T " + m.group(2) + m.group(3)));
+            genericized++;
+            String indent = m.group(1);
+            int end = -1;
+            for (int j = i + 1; j < lines.length; j++) {
+                if (lines[j].trim().equals("}") && lines[j].startsWith(indent)) { end = j; break; }
+            }
+            if (end < 0) continue;
+            for (int j = i + 1; j < end; j++) {
+                if (RE_RETURN.matcher(lines[j]).matches()) {
+                    // return expr;  ->  return (T) expr;
+                    lines[j] = lines[j].replaceFirst("return ", "return (T) ");
+                    casts++;
+                }
+            }
+            i = end;
+        }
+        if (genericized == 0) return src;
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < lines.length; i++) sb.append(lines[i]).append('\n');
+        System.out.println("registry generics: methods=" + genericized + " casts=" + casts);
+        return sb.toString();
+    }
+
+    static final Pattern RE_REGISTRY_RET =
+            Pattern.compile("^(\\s*)public static (?:Object|Object\\[\\]) (\\w+)(\\(.*)$");    static final Pattern RE_RETURN =
+            Pattern.compile("^\\s*return \\S.*;\\s*$");
+
+    /**
+     * 删掉辅助方法调用前多余的 (Object[]) / (Object) 强转。
+     *
+     * <p>反编译器不知道 Ref.h / Registry.packArgs 返回的到底是什么类型，
+     * 一律按 Object[] 处理，于是给每个调用点加了 {@code (Object[])} 强转。
+     * 但这些方法现在都是泛型 {@code <T> T}，类型实参由赋值目标推断，
+     * 强转反而把 T 钉死成 Object[]，导致
+     * "incompatible types: Object[] cannot be converted to DY3"（实测 3,178 处）。
+     *
+     * <p>运行时返回的是注册表里方法的**真实**返回类型，删掉强转才是对的。
+     */
+    static String fixRedundantCasts(String src) {
+        // 只针对我们自己的辅助方法，别的地方的 (Object[]) 强转是有意义的
+        return src.replaceAll("\\(Object\\[\\]\\)\\s*(Ref\\.h2?\\(|Registry\\.(emptyArgs|packArgs)\\()", "$1")
+                  .replaceAll("\\(Object\\)\\s*(Ref\\.h2?\\(|Registry\\.(emptyArgs|packArgs)\\()", "$1");
     }
 
     static String lastSeg(String s) {

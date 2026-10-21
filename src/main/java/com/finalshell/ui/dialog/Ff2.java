@@ -1,0 +1,384 @@
+package com.finalshell.ui.dialog;
+
+import com.finalshell.core.CK;
+import com.finalshell.core.Dv2;
+import com.finalshell.core.Dx4_2;
+import com.finalshell.core.L1;
+import com.finalshell.reflect.Ref;
+import com.finalshell.reflect.Registry;
+import com.finalshell.task.D02;
+import com.finalshell.ui.panel.SetBackgroundImagePanel;
+import java.awt.Color;
+import java.awt.event.KeyEvent;
+import java.lang.reflect.InvocationTargetException;
+import javax.swing.JButton;
+
+public class Ff2 extends ClearListDialog {
+   SetBackgroundImagePanel xu;
+   public static long[] cb;
+   public static Integer[] db;
+
+   public Ff2(SetBackgroundImagePanel var1, Dv2 var2) {
+      super(var2, true, true);
+      Object var3 = 376708942717725433L;
+      Object[] var10002 = Registry.packArgs(Ref.g(376708942717725433L, var3));
+      long var6 = 404783571443964257L;
+      Object[] var5 = var10002;
+      Ref.h(404783571443964257L, var5, var6);
+
+      try {
+         ;
+      } catch (InvocationTargetException var29) {
+         throw var29.getTargetException();
+      }
+
+      Object var7 = 282658375549611139L;
+      Object[] var10004 = Registry.packArgs(Ref.g(282658375549611139L, var7));
+      long var10 = 404783571443964257L;
+      Object[] var9 = var10004;
+      Ref.h(404783571443964257L, var9, var10);
+
+      try {
+         ;
+      } catch (InvocationTargetException var28) {
+         throw var28.getTargetException();
+      }
+
+      Object[] var10005 = Registry.packArgs(b(9336, 5327246559209332194L), b(1969, 2397974912023248426L));
+      long var12 = 620992058944098515L;
+      Object[] var11 = var10005;
+      Ref.h(620992058944098515L, var11, var12);
+
+      try {
+         ;
+      } catch (InvocationTargetException var27) {
+         throw var27.getTargetException();
+      }
+
+      long var14 = 486034766712698701L;
+      Ref.s(486034766712698701L, var1, var14);
+      Object[] var10007 = Registry.packArgs(false);
+      long var16 = 482653304504628027L;
+      Object[] var15 = var10007;
+      Ref.h(482653304504628027L, var15, var16);
+
+      try {
+         ;
+      } catch (InvocationTargetException var26) {
+         throw var26.getTargetException();
+      }
+
+      Object[] var10008 = Registry.emptyArgs();
+      long var18 = 220872586276736931L;
+      Object[] var17 = var10008;
+      Ref.h(220872586276736931L, var17, var18);
+
+      try {
+         ;
+      } catch (InvocationTargetException var25) {
+         throw var25.getTargetException();
+      }
+
+      Object var19 = 334241381080505095L;
+      ((Dv2)Ref.g(334241381080505095L, var19)).setForeground(Color.white);
+      Object var21 = 334241381080505095L;
+      ((Dv2)Ref.g(334241381080505095L, var21)).j().n(false);
+      Object var23 = 334241381080505095L;
+      ((Dv2)Ref.g(334241381080505095L, var23)).j().w(new Color(b(6055, 986013398667079230L), b(27209, 6445919796311446481L), b(27209, 6445919796311446481L)));
+   }
+
+   @Override
+   public void D() {
+      super.D();
+      Object[] var10001 = Registry.emptyArgs();
+      long var2 = 601414556089179464L;
+      Object[] var1 = var10001;
+      Ref.h(601414556089179464L, var1, var2);
+
+      try {
+         ;
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
+   }
+
+   protected void h(JButton var1) {
+   }
+
+   @Override
+   protected void i(L1 var1, int var2) {
+      Object[] var10001 = Registry.emptyArgs();
+      long var4 = 197395297555400075L;
+      Object[] var3 = var10001;
+      Ref.h(197395297555400075L, var3, var4);
+      Object[] var10002 = Registry.packArgs(var1);
+      long var6 = 190233821466993016L;
+      Object[] var5 = var10002;
+      Ref.h(190233821466993016L, var5, var6);
+
+      try {
+         ;
+      } catch (InvocationTargetException var12) {
+         throw var12.getTargetException();
+      }
+
+      Registry.emptyArgs();
+      long var7 = 270389152141252877L;
+      Ref.h2(270389152141252877L, var7);
+      Object[] var10004 = Registry.emptyArgs();
+      long var10 = 578864097947885485L;
+      Object[] var9 = var10004;
+      Ref.h(578864097947885485L, var9, var10);
+
+      try {
+         ;
+      } catch (InvocationTargetException var11) {
+         throw var11.getTargetException();
+      }
+   }
+
+   @Override
+   protected void L(String var1) {
+   }
+
+   @Override
+   protected void k(L1 var1) {
+      String[] var2 = Backspace.F();
+      if (var2 != null) {
+         if (!Registry.lookupField(461146548297071424L).getBoolean(this) && !CK.Ur) {
+            return;
+         }
+
+         Object var3 = 334241381080505095L;
+         Dv2 var10001 = (Dv2)Ref.g(334241381080505095L, var3);
+         String var10003 = (String)(Registry.emptyArgs());
+         long var6 = 542058094445767607L;
+         Object[] var5 = var10003;
+         var10003 = Ref.h(542058094445767607L, var5, var6);
+
+         try {
+            var10003 = (String)var10003;
+         } catch (InvocationTargetException var9) {
+            throw var9.getTargetException();
+         }
+
+         var1.setText(var10003);
+      }
+
+      Object var7 = 334241381080505095L;
+      ((Dv2)Ref.g(334241381080505095L, var7)).requestFocus();
+   }
+
+   @Override
+   protected Dx4_2 n() {
+      return new Dx4_2();
+   }
+
+   @Override
+   protected Dx4_2 k$dx_4() {
+      Registry.emptyArgs();
+      long var2 = 270389152141252877L;
+      Ref.h2(270389152141252877L, var2);
+      Object[] var10002 = Registry.emptyArgs();
+      long var5 = 306266403902896148L;
+      Object[] var4 = var10002;
+      Ref.h(306266403902896148L, var4, var5);
+      Dx4_2 var10003 = Registry.emptyArgs();
+      long var7 = 568950058787001160L;
+      Object[] var6 = var10003;
+      var10003 = Ref.h(568950058787001160L, var6, var7);
+
+      try {
+         var10003 = (Dx4_2)var10003;
+      } catch (InvocationTargetException var8) {
+         throw var8.getTargetException();
+      }
+
+      return var10003;
+   }
+
+   void u(L1 var1) {
+      Object[] var10001 = Registry.emptyArgs();
+      long var4 = 197395297555400075L;
+      Object[] var3 = var10001;
+      Ref.h(197395297555400075L, var3, var4);
+
+      try {
+         ;
+      } catch (InvocationTargetException var22) {
+         throw var22.getTargetException();
+      }
+
+      Object[] var10002 = Registry.packArgs(var1);
+      long var6 = 331594575686452212L;
+      Object[] var5 = var10002;
+      Ref.h(331594575686452212L, var5, var6);
+
+      try {
+         ;
+      } catch (InvocationTargetException var21) {
+         throw var21.getTargetException();
+      }
+
+      Registry.emptyArgs();
+      long var7 = 270389152141252877L;
+      Ref.h2(270389152141252877L, var7);
+      Object[] var10004 = Registry.emptyArgs();
+      long var10 = 578864097947885485L;
+      Object[] var9 = var10004;
+      Ref.h(578864097947885485L, var9, var10);
+
+      try {
+         ;
+      } catch (InvocationTargetException var20) {
+         throw var20.getTargetException();
+      }
+
+      Object var11 = 486034766712698701L;
+      SetBackgroundImagePanel var10005 = (SetBackgroundImagePanel)Ref.g(486034766712698701L, var11);
+      String var10007 = (String)(Registry.emptyArgs());
+      long var14 = 542058094445767607L;
+      Object[] var13 = var10007;
+      var10007 = Ref.h(542058094445767607L, var13, var14);
+
+      try {
+         var10007 = (String)var10007;
+      } catch (InvocationTargetException var19) {
+         throw var19.getTargetException();
+      }
+
+      var1.x(var10007, true);
+      Object var15 = 334241381080505095L;
+      ((Dv2)Ref.g(334241381080505095L, var15)).setText("");
+      Object var17 = 486034766712698701L;
+      ((SetBackgroundImagePanel)Ref.g(486034766712698701L, var17)).requestFocus();
+   }
+
+   @Override
+   public boolean p(L1 var1) {
+      return true;
+   }
+
+   @Override
+   protected void u(KeyEvent var1) {
+   }
+
+   @Override
+   protected String c() {
+      Object var1 = 265132846717086219L;
+      return ((Dv2)Ref.g(265132846717086219L, var1)).getText().trim();
+   }
+
+   @Override
+   public void Q(L1 var1, int var2) {
+      Object[] var10001 = Registry.packArgs(var1);
+      long var4 = 364598167251173458L;
+      Object[] var3 = var10001;
+      Ref.h(364598167251173458L, var3, var4);
+
+      try {
+         ;
+      } catch (InvocationTargetException var5) {
+         throw var5.getTargetException();
+      }
+   }
+
+   @Override
+   public void h() {
+      long var2 = 486034766712698701L;
+      Object var1 = null;
+      Ref.s(486034766712698701L, var1, var2);
+   }
+
+   @Override
+   public void K$void() {
+      Registry.lookupField(388376917454860932L).get(null);
+      Object[] var10001 = Registry.packArgs(new D02(this), Registry.lookupField(222883478649268280L).getInt(null));
+      long var2 = 266288712085965362L;
+      Object[] var1 = var10001;
+      Ref.h(266288712085965362L, var1, var2);
+   }
+
+   static {
+      __vfClinit__();
+   }
+
+   public static int b(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 14744;
+      if (db[var3] == null) {
+         db[var3] = (int)(cb[var3] ^ var1);
+      }
+
+      return db[var3];
+   }
+
+   public static void __vfClinit__() {
+      long var0 = 1214873543476543772L;
+      long[] var6 = new long[4];
+      int var3 = 0;
+      String var4 = "¥î°d\b=Ò\u0005\u0095}\u007fÕV£/ê";
+      int var5 = "¥î°d\b=Ò\u0005\u0095}\u007fÕV£/ê".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     cb = var6;
+                     db = new Integer[4];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "\u0012WÍ¤]h\u009d\nö7Ï\u000e.\u0081>¦";
+                  var5 = "\u0012WÍ¤]h\u009d\nö7Ï\u000e.\u0081>¦".length();
+                  var2 = 0;
+            }
+
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+}
+
+
+
+
+

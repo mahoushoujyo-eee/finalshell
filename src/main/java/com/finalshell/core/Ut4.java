@@ -1,0 +1,10 @@
+package com.finalshell.core;
+
+// $VF: synthetic class
+public class Ut4 {
+}
+
+
+
+
+

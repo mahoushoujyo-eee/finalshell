@@ -1,0 +1,22 @@
+package com.finalshell.ui.listener;
+
+import com.finalshell.ui.dialog.ApplyToFileAndDirDialog;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class L7_2 implements ActionListener {
+   final ApplyToFileAndDirDialog q;
+
+   L7_2(ApplyToFileAndDirDialog var1) {
+      this.q = var1;
+   }
+
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+   }
+}
+
+
+
+
+

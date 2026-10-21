@@ -1,7 +1,7 @@
 package com.apple.eawt;
 
 public interface OpenURIHandler {
-   void openURI(AppEvent.OpenURIEvent var1);
+   void openURI(OpenURIEvent var1);
 }
 
 

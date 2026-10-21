@@ -2,19 +2,19 @@ package com.apple.eawt;
 
 public abstract class FullScreenAdapter implements FullScreenListener {
    @Override
-   public void windowEnteringFullScreen(AppEvent.FullScreenEvent event) {
+   public void windowEnteringFullScreen(FullScreenEvent event) {
    }
 
    @Override
-   public void windowEnteredFullScreen(AppEvent.FullScreenEvent event) {
+   public void windowEnteredFullScreen(FullScreenEvent event) {
    }
 
    @Override
-   public void windowExitingFullScreen(AppEvent.FullScreenEvent event) {
+   public void windowExitingFullScreen(FullScreenEvent event) {
    }
 
    @Override
-   public void windowExitedFullScreen(AppEvent.FullScreenEvent event) {
+   public void windowExitedFullScreen(FullScreenEvent event) {
    }
 }
 

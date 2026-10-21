@@ -1,0 +1,24 @@
+package com.finalshell.ui.panel;
+
+import com.finalshell.core.R_2_2;
+import java.awt.Dimension;
+import javax.swing.JComponent;
+
+public class J2 extends JComponent {
+   final R_2_2 U;
+
+   J2(R_2_2 var1) {
+      this.U = var1;
+      this.setOpaque(false);
+   }
+
+   @Override
+   public Dimension getPreferredSize() {
+      return new Dimension(4 + this.U.X, 0);
+   }
+}
+
+
+
+
+

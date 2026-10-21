@@ -31,6 +31,26 @@ public class ClassInfo {
             }
         }
 
+        // 哪些类被自己 new 出来过 —— 真枚举不可能被实例化，所以这是"假枚举"的硬判据。
+        // 注意：字节码层已经把假枚举的 ACC_ENUM 清掉了，只看 ACC_ENUM 会把它们误判成
+        // 普通类，于是源码里仍然渲染成 enum，javac 报 "enum types may not be instantiated"。
+        Set<String> selfInst = new HashSet<>();
+        for (List<ClassNode> l : db.values()) {
+            for (ClassNode cn : l) {
+                for (org.objectweb.asm.tree.MethodNode m : cn.methods) {
+                    if (m.instructions == null) continue;
+                    for (org.objectweb.asm.tree.AbstractInsnNode in = m.instructions.getFirst();
+                         in != null; in = in.getNext()) {
+                        if (in instanceof org.objectweb.asm.tree.TypeInsnNode
+                                && in.getOpcode() == Opcodes.NEW
+                                && ((org.objectweb.asm.tree.TypeInsnNode) in).desc.equals(cn.name)) {
+                            selfInst.add(cn.name);
+                        }
+                    }
+                }
+            }
+        }
+
         try (PrintWriter w = new PrintWriter(new OutputStreamWriter(
                 new FileOutputStream(args[1]), StandardCharsets.UTF_8))) {
             w.println("internal\tsuper\tkind\tctors");
@@ -39,8 +59,15 @@ public class ClassInfo {
                     boolean enumFlag = (cn.access & Opcodes.ACC_ENUM) != 0;
                     boolean hasSubs = !subs.getOrDefault(cn.name, Collections.emptyList()).isEmpty();
                     boolean enumSuper = "java/lang/Enum".equals(cn.superName);
-                    String kind = (!enumFlag) ? "plain"
-                            : (enumSuper && !hasSubs) ? "real" : "fake";
+                    boolean self = selfInst.contains(cn.name);
+                    String kind;
+                    if (enumFlag) {
+                        kind = (enumSuper && !hasSubs && !self) ? "real" : "fake";
+                    } else if (enumSuper && (hasSubs || self)) {
+                        kind = "fake";     // ACC_ENUM 已在字节码层清掉，但仍要按假枚举降级
+                    } else {
+                        kind = "plain";
+                    }
                     List<String> ctors = new ArrayList<>();
                     for (org.objectweb.asm.tree.MethodNode m : cn.methods) {
                         if (m.name.equals("<init>")) ctors.add(m.desc);

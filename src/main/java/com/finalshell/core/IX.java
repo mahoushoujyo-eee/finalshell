@@ -1,0 +1,15 @@
+package com.finalshell.core;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+
+public interface IX extends Runnable {
+   void A(DS3 var1, InputStream var2, OutputStream var3);
+
+   void K(Object[] var1);
+}
+
+
+
+
+

@@ -1,8 +1,8 @@
 package com.apple.eawt.event;
 
 public class PressureEvent extends GestureEvent {
-   private double pressure;
-   private double stage;
+   public double pressure;
+   public double stage;
 
    public double getPressure() {
       return this.pressure;

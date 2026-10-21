@@ -4,8 +4,8 @@ import java.util.EventObject;
 
 @Deprecated
 public class ApplicationEvent extends EventObject {
-   private String fFilename;
-   private boolean fHandled;
+   public String fFilename;
+   public boolean fHandled;
 
    ApplicationEvent(Object o) {
       super(o);
