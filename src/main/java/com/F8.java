@@ -1,26 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.DA;
-import com.FY;
-import com.SW;
 import javax.swing.event.AncestorEvent;
 
-class F8
-extends FY {
-    final SW X;
-    final DA z;
+class F8 extends com.FY {
+   final SW X;
+   final com.DA z;
 
-    F8(DA dA, SW sW) {
-        this.z = dA;
-        this.X = sW;
-    }
+   F8(com.DA var1, SW var2) {
+      this.z = var1;
+      this.X = var2;
+   }
 
-    @Override
-    public void ancestorAdded(AncestorEvent ancestorEvent) {
-        DA.l(this.z).requestFocusInWindow();
-    }
+   @Override
+   public void ancestorAdded(AncestorEvent var1) {
+      com.DA.l(this.z).requestFocusInWindow();
+   }
 }
+
+
+
+
 

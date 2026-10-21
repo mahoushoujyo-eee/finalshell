@@ -1,34 +1,32 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.kf_1;
-import com.kz_2;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class RU
-implements ActionListener {
-    final kf_1 L;
+class RU implements ActionListener {
+   final com.kF_3 L;
 
-    RU(kf_1 kf_12) {
-        this.L = kf_12;
-    }
+   RU(com.kF_3 var1) {
+      this.L = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block3: {
-            kf_1 kf_12;
-            block2: {
-                String string = kz_2.M();
-                kf_12 = this.L;
-                if (string == null) break block2;
-                if (kf_12.D == null) break block3;
-                kf_12 = this.L;
-            }
-            kf_12.V(this.L.D.getParentFile(), true, true);
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      String var2 = com.kz_4.M();
+      com.kF_3 var10000 = this.L;
+      if (var2 != null) {
+         if (this.L.D == null) {
+            return;
+         }
+
+         var10000 = this.L;
+      }
+
+      var10000.V(this.L.D.getParentFile(), true, true);
+   }
 }
+
+
+
+
 

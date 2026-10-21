@@ -1,30 +1,27 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.t;
 
-import com.t.n_0;
-import com.t.u_0;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-class N
-implements ChangeListener {
-    final u_0 S;
+class N implements ChangeListener {
+   final com.t.u_2 S;
 
-    N(u_0 u_02) {
-        this.S = u_02;
-    }
+   N(com.t.u_2 var1) {
+      this.S = var1;
+   }
 
-    @Override
-    public void stateChanged(ChangeEvent changeEvent) {
-        int n10 = n_0.W();
-        boolean bl = u_0.x(this.S);
-        if (n10 != 0 && !bl) {
-            u_0.N(this.S, true);
-            u_0.k(this.S).setSelectedColor(u_0.c(this.S).T());
-            bl = u_0.N(this.S, false);
-        }
-    }
+   @Override
+   public void stateChanged(ChangeEvent var1) {
+      int var2 = com.t.n_2.W();
+      if (var2 != 0 && !com.t.u_2.x(this.S)) {
+         com.t.u_2.N(this.S, true);
+         com.t.u_2.k(this.S).setSelectedColor(com.t.u_2.c(this.S).T());
+         com.t.u_2.N(this.S, false);
+      }
+   }
 }
+
+
+
+
 

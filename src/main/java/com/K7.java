@@ -1,53 +1,49 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ac_0;
-import com.ic_1;
-import com.ky_2;
-import com.wd_0;
 import javax.swing.event.AncestorEvent;
 import javax.swing.event.AncestorListener;
 
-class K7
-implements AncestorListener {
-    final wd_0 u;
+class K7 implements AncestorListener {
+   final com.Wd_2 u;
 
-    K7(wd_0 wd_02) {
-        this.u = wd_02;
-    }
+   K7(com.Wd_2 var1) {
+      this.u = var1;
+   }
 
-    @Override
-    public void ancestorAdded(AncestorEvent ancestorEvent) {
-        wd_0.L(this.u);
-        this.u.N();
-        this.u.t();
-        wd_0.F(this.u, 0.0f);
-        wd_0.D(this.u, ic_1.fadeIn);
-        wd_0.N(this.u).u();
-        wd_0.A(this.u);
-    }
+   @Override
+   public void ancestorAdded(AncestorEvent var1) {
+      com.Wd_2.L(this.u);
+      this.u.N();
+      this.u.t();
+      com.Wd_2.F(this.u, 0.0F);
+      com.Wd_2.D(this.u, iC_3.fadeIn);
+      com.Wd_2.N(this.u).u();
+      com.Wd_2.A(this.u);
+   }
 
-    @Override
-    public void ancestorRemoved(AncestorEvent ancestorEvent) {
-        block3: {
-            wd_0 wd_02;
-            block2: {
-                ky_2[] ky_2Array = ac_0.n();
-                wd_02 = this.u;
-                if (ky_2Array != null) break block2;
-                if (wd_02.getParent() != null) break block3;
-                wd_02 = this.u;
-            }
-            wd_0.I(wd_02);
-        }
-    }
+   @Override
+   public void ancestorRemoved(AncestorEvent var1) {
+      com.ky_4[] var2 = com.ac_2.n();
+      com.Wd_2 var10000 = this.u;
+      if (var2 == null) {
+         if (this.u.getParent() != null) {
+            return;
+         }
 
-    @Override
-    public void ancestorMoved(AncestorEvent ancestorEvent) {
-        this.u.N();
-        this.u.t();
-    }
+         var10000 = this.u;
+      }
+
+      com.Wd_2.I(var10000);
+   }
+
+   @Override
+   public void ancestorMoved(AncestorEvent var1) {
+      this.u.N();
+      this.u.t();
+   }
 }
+
+
+
+
 

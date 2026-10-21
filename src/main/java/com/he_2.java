@@ -1,327 +1,942 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.W5;
-import com.hl_2;
-import com.hv_2;
-import com.zZ;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.image.BufferedImage;
+import java.security.MessageDigest;
 
-/*
- * Renamed from com.he
- */
-public class he_2
-extends W5 {
-    private float x = 1.0f;
-    private float N = 2.0f;
-    private boolean c = true;
-    private boolean S;
-    private static final String a;
-    private static final long[] b;
-    private static final Integer[] d;
+public class He_2 implements com.Y {
+   MessageDigest p;
+   private static final String[] a;
+   private static final String[] b;
+   private static final long c;
 
-    public void H(float f10) {
-        this.x = f10;
-    }
+   @Override
+   public int e() {
+      return (int)c;
+   }
 
-    public float M() {
-        return this.x;
-    }
+   @Override
+   public void t() throws Exception {
+      this.p = MessageDigest.getInstance(a(27138, 28455));
+   }
 
-    public void U(float f10) {
-        this.N = f10;
-    }
+   @Override
+   public void p(byte[] var1, int var2, int var3) throws Exception {
+      this.p.update(var1, var2, var3);
+   }
 
-    public float Y() {
-        return this.N;
-    }
+   @Override
+   public byte[] O() throws Exception {
+      return this.p.digest();
+   }
 
-    public void U(boolean bl) {
-        this.c = bl;
-    }
+   @Override
+   public String D() {
+      return a(27139, -9822);
+   }
 
-    public boolean C() {
-        return this.c;
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var7 = new String[2];
+      int var5 = 0;
+      String var4 = "úZå¯\u001f=v\u0006õ´\u0004l(\u0094";
+      int var6 = "úZå¯\u001f=v\u0006õ´\u0004l(\u0094".length();
+      char var3 = 7;
+      int var2 = -1;
 
-    public void c(boolean bl) {
-        this.S = bl;
-    }
+      while (true) {
+         char[] var10002;
+         label38: {
+            char[] var10003 = var4.substring(++var2, var2 + var3).toCharArray();
+            int var10004 = var10003.length;
+            int var8 = 0;
+            byte var17 = 81;
+            var10002 = var10003;
+            int var10 = var10004;
+            byte var20;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var20 = 81;
+               var10006 = var8;
+            } else {
+               var17 = 81;
+               var10 = var10004;
+               if (var10004 <= var8) {
+                  break label38;
+               }
 
-    public boolean t() {
-        return this.S;
-    }
-
-    @Override
-    public BufferedImage filter(BufferedImage bufferedImage, BufferedImage bufferedImage2) {
-        boolean bl;
-        BufferedImage bufferedImage3;
-        block15: {
-            block17: {
-                int n10;
-                int n11;
-                int n12;
-                int n13;
-                int n14;
-                int n15;
-                int n16;
-                int[] nArray;
-                String[] stringArray;
-                int n17;
-                int n18;
-                block14: {
-                    int n19;
-                    n18 = bufferedImage.getWidth();
-                    n17 = bufferedImage.getHeight();
-                    BufferedImage bufferedImage4 = new hv_2(this.x, this.x, 3).filter(bufferedImage, null);
-                    bufferedImage3 = new hv_2(this.N, this.N, 3).filter(bufferedImage, null);
-                    stringArray = W5.q();
-                    Graphics2D graphics2D = bufferedImage3.createGraphics();
-                    graphics2D.setComposite(new zZ(1.0f));
-                    graphics2D.drawImage((Image)bufferedImage4, 0, 0, null);
-                    graphics2D.dispose();
-                    bl = this.c;
-                    if (stringArray == null) break block15;
-                    if (!bl) break block17;
-                    float f10 = this.x - this.N;
-                    bl = f10 == 0.0f ? 0 : (f10 > 0.0f ? 1 : -1);
-                    if (stringArray == null) break block15;
-                    if (!bl) break block17;
-                    nArray = null;
-                    n16 = 0;
-                    n15 = 0;
-                    block0: while (true) {
-                        int n21 = n15;
-                        n21 = n17;
-                        block1: while (n20 < n21) {
-                            nArray = this.l(bufferedImage3, 0, n15, n18, 1, nArray);
-                            n19 = 0;
-                            if (stringArray == null) break block14;
-                            for (n14 = v8066331; n14 < n18; ++n14) {
-                                int n22;
-                                block19: {
-                                    int n23;
-                                    block18: {
-                                        n13 = nArray[n14];
-                                        n12 = n13 >> he_2.a(25863, 4883882624508762582L) & he_2.a(19957, 8833851932250779936L);
-                                        n11 = n13 >> he_2.a(17226, 6882561002739351452L) & he_2.a(26900, 148677007791789508L);
-                                        n10 = n13 & he_2.a(26900, 148677007791789508L);
-                                        int n21 = n12;
-                                        n21 = n16;
-                                        if (stringArray == null) continue block1;
-                                        if (stringArray != null) {
-                                            if (n20 > n21) {
-                                                n16 = n12;
-                                            }
-                                            int n23 = n11;
-                                            n23 = n16;
-                                        }
-                                        if (stringArray == null) break block18;
-                                        if (n22 > n23) {
-                                            n16 = n11;
-                                        }
-                                        n22 = n10;
-                                        if (stringArray == null) break block19;
-                                        n23 = n16;
-                                    }
-                                    if (n22 <= n23) continue;
-                                    n22 = n10;
-                                }
-                                n16 = n22;
-                                if (stringArray != null) continue;
-                            }
-                            ++n15;
-                            if (stringArray != null) continue block0;
-                        }
-                        break;
-                    }
-                    n19 = n15 = 0;
-                }
-                while (n15 < n17) {
-                    block16: {
-                        nArray = this.l(bufferedImage3, 0, n15, n18, 1, nArray);
-                        bl = false;
-                        if (stringArray == null) break block15;
-                        for (n14 = (int)((v8066425) ? 1 : 0); n14 < n18; ++n14) {
-                            n13 = nArray[n14];
-                            n12 = n13 >> he_2.a(29190, 7271435517217607381L) & he_2.a(26900, 148677007791789508L);
-                            n11 = n13 >> he_2.a(29584, 7649389514892480327L) & he_2.a(26900, 148677007791789508L);
-                            n10 = n13 & he_2.a(26900, 148677007791789508L);
-                            n12 = n12 * he_2.a(26900, 148677007791789508L) / n16;
-                            n11 = n11 * he_2.a(26900, 148677007791789508L) / n16;
-                            n10 = n10 * he_2.a(26900, 148677007791789508L) / n16;
-                            nArray[n14] = n13 & he_2.a(28078, 5042850219683320186L) | n12 << he_2.a(29190, 7271435517217607381L) | n11 << he_2.a(29584, 7649389514892480327L) | n10;
-                            if (stringArray != null) {
-                                if (stringArray != null) continue;
-                            }
-                            break block16;
-                        }
-                        this.E(bufferedImage3, 0, n15, n18, 1, nArray);
-                        ++n15;
-                    }
-                    if (stringArray != null) continue;
-                }
+               var10005 = var10003;
+               var20 = 81;
+               var10006 = var8;
             }
-            bl = this.S;
-        }
-        if (bl) {
-            bufferedImage3 = new hl_2().filter(bufferedImage3, bufferedImage3);
-        }
-        return bufferedImage3;
-    }
 
-    public String toString() {
-        return a;
-    }
+            while (true) {
+               char var32 = var10005[var10006];
+               byte var33;
+               switch (var8 % 7) {
+                  case 0:
+                     var33 = 54;
+                     break;
+                  case 1:
+                     var33 = 85;
+                     break;
+                  case 2:
+                     var33 = 127;
+                     break;
+                  case 3:
+                     var33 = 89;
+                     break;
+                  case 4:
+                     var33 = 109;
+                     break;
+                  case 5:
+                     var33 = 40;
+                     break;
+                  default:
+                     var33 = 34;
+               }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block19: {
-            block18: {
-                block20: {
-                    break block20;
-lbl1:
-                    // 1 sources
+               var10005[var10006] = (char)(var32 ^ var20 ^ var33);
+               var8++;
+               if (var17 == 0) {
+                  var10006 = var17;
+                  var10005 = var10002;
+                  var20 = var17;
+               } else {
+                  if (var10 <= var8) {
+                     break;
+                  }
 
-                    while (true) {
-                        continue;
-                        break;
-                    }
-                }
-                v0 = "+q]\u0018Lvk\u0007s\\\u0018M<A\rp\u001a\u0012Yyh\u000f`I\u000eV8A\u001d;\u0014S".toCharArray();
-                v1 = v0.length;
-                var8 = 0;
-                v2 = 111;
-                v3 = v0;
-                v4 = v1;
-                if (v1 > 1) ** GOTO lbl54
-                do {
-                    v5 = v2;
-                    v3 = v3;
-                    v6 = v3;
-                    v7 = v2;
-                    v8 = var8;
-                    while (true) {
-                        switch (var8 % 7) {
-                            case 0: {
-                                v9 = 1;
-                                break;
-                            }
-                            case 1: {
-                                v9 = 122;
-                                break;
-                            }
-                            case 2: {
-                                v9 = 85;
-                                break;
-                            }
-                            case 3: {
-                                v9 = 18;
-                                break;
-                            }
-                            case 4: {
-                                v9 = 80;
-                                break;
-                            }
-                            case 5: {
-                                v9 = 54;
-                                break;
-                            }
-                            default: {
-                                v9 = 64;
-                            }
-                        }
-                        v6[v8] = (char)(v6[v8] ^ (v7 ^ v9));
-                        ++var8;
-                        v2 = v5;
-                        if (v5 != 0) break;
-                        v5 = v2;
-                        v3 = v3;
-                        v8 = v2;
-                        v6 = v3;
-                        v7 = v2;
-                    }
-lbl54:
-                    // 2 sources
-
-                    v10 = v3;
-                    v4 = v4;
-                } while (v4 > var8);
-                ** while (true)
-                he_2.a = new String(v10).intern();
-                var0_1 = 1059035424258658681L;
-                var6_2 = new long[7];
-                var3_3 = 0;
-                var4_4 = "\u00c3\u00dc\u00e67/J\u00a0\u00a6\u00eb\u00cf\u00d4\u00c7\u00fb\u00c7\u0080\u0003\u00cb5\u00f8#4\u00bd\u009e6\u00a0a\u0016K:B.\u00ed=\u00b2\u00f0\n\u0085\u00f2\b\u00bf";
-                var5_5 = "\u00c3\u00dc\u00e67/J\u00a0\u00a6\u00eb\u00cf\u00d4\u00c7\u00fb\u00c7\u0080\u0003\u00cb5\u00f8#4\u00bd\u009e6\u00a0a\u0016K:B.\u00ed=\u00b2\u00f0\n\u0085\u00f2\b\u00bf".length();
-                var2_6 = 0;
-                while (true) {
-                    var7_7 = var4_4.substring(var2_6, var2_6 += 8).getBytes("ISO-8859-1");
-                    v11 = var6_2;
-                    v12 = var3_3++;
-                    v13 = ((long)var7_7[0] & 255L) << 56 | ((long)var7_7[1] & 255L) << 48 | ((long)var7_7[2] & 255L) << 40 | ((long)var7_7[3] & 255L) << 32 | ((long)var7_7[4] & 255L) << 24 | ((long)var7_7[5] & 255L) << 16 | ((long)var7_7[6] & 255L) << 8 | (long)var7_7[7] & 255L;
-                    v14 = -1;
-                    break block18;
-                    break;
-                }
-lbl75:
-                // 1 sources
-
-                while (true) {
-                    v11[v12] = v15;
-                    if (var2_6 < var5_5) ** continue;
-                    var4_4 = "\u0019\u00c2\u009f\u00e6\u0010\u00cc\u0084Bh\u00deC\u00a5\u00b9\u0094\u001f\u00bc";
-                    var5_5 = "\u0019\u00c2\u009f\u00e6\u0010\u00cc\u0084Bh\u00deC\u00a5\u00b9\u0094\u001f\u00bc".length();
-                    var2_6 = 0;
-                    while (true) {
-                        var7_7 = var4_4.substring(var2_6, var2_6 += 8).getBytes("ISO-8859-1");
-                        v11 = var6_2;
-                        v12 = var3_3++;
-                        v13 = ((long)var7_7[0] & 255L) << 56 | ((long)var7_7[1] & 255L) << 48 | ((long)var7_7[2] & 255L) << 40 | ((long)var7_7[3] & 255L) << 32 | ((long)var7_7[4] & 255L) << 24 | ((long)var7_7[5] & 255L) << 16 | ((long)var7_7[6] & 255L) << 8 | (long)var7_7[7] & 255L;
-                        v14 = 0;
-                        break block18;
-                        break;
-                    }
-                    break;
-                }
-lbl88:
-                // 1 sources
-
-                while (true) {
-                    v11[v12] = v15;
-                    if (var2_6 < var5_5) ** continue;
-                    break block19;
-                    break;
-                }
+                  var10005 = var10002;
+                  var20 = var17;
+                  var10006 = var8;
+               }
             }
-            v15 = v13 ^ var0_1;
-            switch (v14) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl99:
-                // 1 sources
+         }
 
-                ** continue;
+         String var19 = new String(var10002).intern();
+         byte var12 = -1;
+         var7[var5++] = var19;
+         if ((var2 += var3) >= var6) {
+            a = var7;
+            b = new String[2];
+            long var0 = 772573829067742319L;
+            long var16 = -3086200376511652769L ^ var0;
+            var12 = -1;
+            c = var16;
+            return;
+         }
+
+         var3 = var4.charAt(var2);
+      }
+   }
+
+   private static String a(int var0, int var1) {
+      int var2 = (var0 ^ 27138) & 65535;
+      if (b[var2] == null) {
+         char[] var3 = a[var2].toCharArray();
+         short var10000;
+         switch (var3[0] & 0xFF) {
+            case 0:
+               var10000 = 193;
+               break;
+            case 1:
+               var10000 = 223;
+               break;
+            case 2:
+               var10000 = 21;
+               break;
+            case 3:
+               var10000 = 93;
+               break;
+            case 4:
+               var10000 = 200;
+               break;
+            case 5:
+               var10000 = 218;
+               break;
+            case 6:
+               var10000 = 88;
+               break;
+            case 7:
+               var10000 = 17;
+               break;
+            case 8:
+               var10000 = 165;
+               break;
+            case 9:
+               var10000 = 205;
+               break;
+            case 10:
+               var10000 = 217;
+               break;
+            case 11:
+               var10000 = 204;
+               break;
+            case 12:
+               var10000 = 158;
+               break;
+            case 13:
+               var10000 = 196;
+               break;
+            case 14:
+               var10000 = 10;
+               break;
+            case 15:
+               var10000 = 206;
+               break;
+            case 16:
+               var10000 = 244;
+               break;
+            case 17:
+               var10000 = 107;
+               break;
+            case 18:
+               var10000 = 27;
+               break;
+            case 19:
+               var10000 = 222;
+               break;
+            case 20:
+               var10000 = 180;
+               break;
+            case 21:
+               var10000 = 234;
+               break;
+            case 22:
+               var10000 = 120;
+               break;
+            case 23:
+               var10000 = 83;
+               break;
+            case 24:
+               var10000 = 212;
+               break;
+            case 25:
+               var10000 = 70;
+               break;
+            case 26:
+               var10000 = 188;
+               break;
+            case 27:
+               var10000 = 157;
+               break;
+            case 28:
+               var10000 = 152;
+               break;
+            case 29:
+               var10000 = 171;
+               break;
+            case 30:
+               var10000 = 174;
+               break;
+            case 31:
+               var10000 = 72;
+               break;
+            case 32:
+               var10000 = 116;
+               break;
+            case 33:
+               var10000 = 19;
+               break;
+            case 34:
+               var10000 = 77;
+               break;
+            case 35:
+               var10000 = 117;
+               break;
+            case 36:
+               var10000 = 110;
+               break;
+            case 37:
+               var10000 = 12;
+               break;
+            case 38:
+               var10000 = 245;
+               break;
+            case 39:
+               var10000 = 14;
+               break;
+            case 40:
+               var10000 = 0;
+               break;
+            case 41:
+               var10000 = 62;
+               break;
+            case 42:
+               var10000 = 162;
+               break;
+            case 43:
+               var10000 = 113;
+               break;
+            case 44:
+               var10000 = 254;
+               break;
+            case 45:
+               var10000 = 100;
+               break;
+            case 46:
+               var10000 = 124;
+               break;
+            case 47:
+               var10000 = 209;
+               break;
+            case 48:
+               var10000 = 127;
+               break;
+            case 49:
+               var10000 = 239;
+               break;
+            case 50:
+               var10000 = 240;
+               break;
+            case 51:
+               var10000 = 13;
+               break;
+            case 52:
+               var10000 = 23;
+               break;
+            case 53:
+               var10000 = 16;
+               break;
+            case 54:
+               var10000 = 106;
+               break;
+            case 55:
+               var10000 = 153;
+               break;
+            case 56:
+               var10000 = 182;
+               break;
+            case 57:
+               var10000 = 20;
+               break;
+            case 58:
+               var10000 = 92;
+               break;
+            case 59:
+               var10000 = 8;
+               break;
+            case 60:
+               var10000 = 115;
+               break;
+            case 61:
+               var10000 = 37;
+               break;
+            case 62:
+               var10000 = 150;
+               break;
+            case 63:
+               var10000 = 227;
+               break;
+            case 64:
+               var10000 = 233;
+               break;
+            case 65:
+               var10000 = 224;
+               break;
+            case 66:
+               var10000 = 66;
+               break;
+            case 67:
+               var10000 = 87;
+               break;
+            case 68:
+               var10000 = 163;
+               break;
+            case 69:
+               var10000 = 38;
+               break;
+            case 70:
+               var10000 = 229;
+               break;
+            case 71:
+               var10000 = 78;
+               break;
+            case 72:
+               var10000 = 112;
+               break;
+            case 73:
+               var10000 = 253;
+               break;
+            case 74:
+               var10000 = 41;
+               break;
+            case 75:
+               var10000 = 247;
+               break;
+            case 76:
+               var10000 = 80;
+               break;
+            case 77:
+               var10000 = 176;
+               break;
+            case 78:
+               var10000 = 35;
+               break;
+            case 79:
+               var10000 = 132;
+               break;
+            case 80:
+               var10000 = 6;
+               break;
+            case 81:
+               var10000 = 149;
+               break;
+            case 82:
+               var10000 = 172;
+               break;
+            case 83:
+               var10000 = 5;
+               break;
+            case 84:
+               var10000 = 251;
+               break;
+            case 85:
+               var10000 = 138;
+               break;
+            case 86:
+               var10000 = 177;
+               break;
+            case 87:
+               var10000 = 126;
+               break;
+            case 88:
+               var10000 = 175;
+               break;
+            case 89:
+               var10000 = 232;
+               break;
+            case 90:
+               var10000 = 202;
+               break;
+            case 91:
+               var10000 = 241;
+               break;
+            case 92:
+               var10000 = 235;
+               break;
+            case 93:
+               var10000 = 221;
+               break;
+            case 94:
+               var10000 = 156;
+               break;
+            case 95:
+               var10000 = 34;
+               break;
+            case 96:
+               var10000 = 68;
+               break;
+            case 97:
+               var10000 = 86;
+               break;
+            case 98:
+               var10000 = 249;
+               break;
+            case 99:
+               var10000 = 54;
+               break;
+            case 100:
+               var10000 = 95;
+               break;
+            case 101:
+               var10000 = 94;
+               break;
+            case 102:
+               var10000 = 99;
+               break;
+            case 103:
+               var10000 = 130;
+               break;
+            case 104:
+               var10000 = 252;
+               break;
+            case 105:
+               var10000 = 2;
+               break;
+            case 106:
+               var10000 = 97;
+               break;
+            case 107:
+               var10000 = 25;
+               break;
+            case 108:
+               var10000 = 125;
+               break;
+            case 109:
+               var10000 = 198;
+               break;
+            case 110:
+               var10000 = 36;
+               break;
+            case 111:
+               var10000 = 4;
+               break;
+            case 112:
+               var10000 = 31;
+               break;
+            case 113:
+               var10000 = 147;
+               break;
+            case 114:
+               var10000 = 144;
+               break;
+            case 115:
+               var10000 = 146;
+               break;
+            case 116:
+               var10000 = 210;
+               break;
+            case 117:
+               var10000 = 168;
+               break;
+            case 118:
+               var10000 = 151;
+               break;
+            case 119:
+               var10000 = 142;
+               break;
+            case 120:
+               var10000 = 154;
+               break;
+            case 121:
+               var10000 = 140;
+               break;
+            case 122:
+               var10000 = 211;
+               break;
+            case 123:
+               var10000 = 161;
+               break;
+            case 124:
+               var10000 = 73;
+               break;
+            case 125:
+               var10000 = 135;
+               break;
+            case 126:
+               var10000 = 159;
+               break;
+            case 127:
+               var10000 = 181;
+               break;
+            case 128:
+               var10000 = 207;
+               break;
+            case 129:
+               var10000 = 248;
+               break;
+            case 130:
+               var10000 = 82;
+               break;
+            case 131:
+               var10000 = 101;
+               break;
+            case 132:
+               var10000 = 52;
+               break;
+            case 133:
+               var10000 = 32;
+               break;
+            case 134:
+               var10000 = 96;
+               break;
+            case 135:
+               var10000 = 118;
+               break;
+            case 136:
+               var10000 = 131;
+               break;
+            case 137:
+               var10000 = 53;
+               break;
+            case 138:
+               var10000 = 123;
+               break;
+            case 139:
+               var10000 = 109;
+               break;
+            case 140:
+               var10000 = 103;
+               break;
+            case 141:
+               var10000 = 195;
+               break;
+            case 142:
+               var10000 = 231;
+               break;
+            case 143:
+               var10000 = 111;
+               break;
+            case 144:
+               var10000 = 242;
+               break;
+            case 145:
+               var10000 = 60;
+               break;
+            case 146:
+               var10000 = 225;
+               break;
+            case 147:
+               var10000 = 164;
+               break;
+            case 148:
+               var10000 = 63;
+               break;
+            case 149:
+               var10000 = 40;
+               break;
+            case 150:
+               var10000 = 15;
+               break;
+            case 151:
+               var10000 = 57;
+               break;
+            case 152:
+               var10000 = 11;
+               break;
+            case 153:
+               var10000 = 203;
+               break;
+            case 154:
+               var10000 = 220;
+               break;
+            case 155:
+               var10000 = 213;
+               break;
+            case 156:
+               var10000 = 61;
+               break;
+            case 157:
+               var10000 = 89;
+               break;
+            case 158:
+               var10000 = 237;
+               break;
+            case 159:
+               var10000 = 76;
+               break;
+            case 160:
+               var10000 = 133;
+               break;
+            case 161:
+               var10000 = 197;
+               break;
+            case 162:
+               var10000 = 167;
+               break;
+            case 163:
+               var10000 = 69;
+               break;
+            case 164:
+               var10000 = 141;
+               break;
+            case 165:
+               var10000 = 189;
+               break;
+            case 166:
+               var10000 = 1;
+               break;
+            case 167:
+               var10000 = 230;
+               break;
+            case 168:
+               var10000 = 114;
+               break;
+            case 169:
+               var10000 = 145;
+               break;
+            case 170:
+               var10000 = 236;
+               break;
+            case 171:
+               var10000 = 58;
+               break;
+            case 172:
+               var10000 = 208;
+               break;
+            case 173:
+               var10000 = 228;
+               break;
+            case 174:
+               var10000 = 42;
+               break;
+            case 175:
+               var10000 = 75;
+               break;
+            case 176:
+               var10000 = 178;
+               break;
+            case 177:
+               var10000 = 49;
+               break;
+            case 178:
+               var10000 = 219;
+               break;
+            case 179:
+               var10000 = 85;
+               break;
+            case 180:
+               var10000 = 215;
+               break;
+            case 181:
+               var10000 = 3;
+               break;
+            case 182:
+               var10000 = 255;
+               break;
+            case 183:
+               var10000 = 50;
+               break;
+            case 184:
+               var10000 = 246;
+               break;
+            case 185:
+               var10000 = 185;
+               break;
+            case 186:
+               var10000 = 33;
+               break;
+            case 187:
+               var10000 = 136;
+               break;
+            case 188:
+               var10000 = 139;
+               break;
+            case 189:
+               var10000 = 250;
+               break;
+            case 190:
+               var10000 = 201;
+               break;
+            case 191:
+               var10000 = 129;
+               break;
+            case 192:
+               var10000 = 26;
+               break;
+            case 193:
+               var10000 = 128;
+               break;
+            case 194:
+               var10000 = 121;
+               break;
+            case 195:
+               var10000 = 18;
+               break;
+            case 196:
+               var10000 = 243;
+               break;
+            case 197:
+               var10000 = 22;
+               break;
+            case 198:
+               var10000 = 47;
+               break;
+            case 199:
+               var10000 = 81;
+               break;
+            case 200:
+               var10000 = 30;
+               break;
+            case 201:
+               var10000 = 56;
+               break;
+            case 202:
+               var10000 = 98;
+               break;
+            case 203:
+               var10000 = 216;
+               break;
+            case 204:
+               var10000 = 108;
+               break;
+            case 205:
+               var10000 = 226;
+               break;
+            case 206:
+               var10000 = 199;
+               break;
+            case 207:
+               var10000 = 79;
+               break;
+            case 208:
+               var10000 = 191;
+               break;
+            case 209:
+               var10000 = 7;
+               break;
+            case 210:
+               var10000 = 44;
+               break;
+            case 211:
+               var10000 = 43;
+               break;
+            case 212:
+               var10000 = 55;
+               break;
+            case 213:
+               var10000 = 65;
+               break;
+            case 214:
+               var10000 = 134;
+               break;
+            case 215:
+               var10000 = 214;
+               break;
+            case 216:
+               var10000 = 194;
+               break;
+            case 217:
+               var10000 = 143;
+               break;
+            case 218:
+               var10000 = 59;
+               break;
+            case 219:
+               var10000 = 48;
+               break;
+            case 220:
+               var10000 = 91;
+               break;
+            case 221:
+               var10000 = 169;
+               break;
+            case 222:
+               var10000 = 238;
+               break;
+            case 223:
+               var10000 = 9;
+               break;
+            case 224:
+               var10000 = 183;
+               break;
+            case 225:
+               var10000 = 184;
+               break;
+            case 226:
+               var10000 = 102;
+               break;
+            case 227:
+               var10000 = 46;
+               break;
+            case 228:
+               var10000 = 71;
+               break;
+            case 229:
+               var10000 = 29;
+               break;
+            case 230:
+               var10000 = 45;
+               break;
+            case 231:
+               var10000 = 186;
+               break;
+            case 232:
+               var10000 = 187;
+               break;
+            case 233:
+               var10000 = 51;
+               break;
+            case 234:
+               var10000 = 104;
+               break;
+            case 235:
+               var10000 = 155;
+               break;
+            case 236:
+               var10000 = 105;
+               break;
+            case 237:
+               var10000 = 122;
+               break;
+            case 238:
+               var10000 = 67;
+               break;
+            case 239:
+               var10000 = 137;
+               break;
+            case 240:
+               var10000 = 166;
+               break;
+            case 241:
+               var10000 = 24;
+               break;
+            case 242:
+               var10000 = 28;
+               break;
+            case 243:
+               var10000 = 173;
+               break;
+            case 244:
+               var10000 = 192;
+               break;
+            case 245:
+               var10000 = 148;
+               break;
+            case 246:
+               var10000 = 190;
+               break;
+            case 247:
+               var10000 = 74;
+               break;
+            case 248:
+               var10000 = 119;
+               break;
+            case 249:
+               var10000 = 179;
+               break;
+            case 250:
+               var10000 = 160;
+               break;
+            case 251:
+               var10000 = 170;
+               break;
+            case 252:
+               var10000 = 64;
+               break;
+            case 253:
+               var10000 = 90;
+               break;
+            case 254:
+               var10000 = 39;
+               break;
+            default:
+               var10000 = 84;
+         }
+
+         short var4 = var10000;
+         int var5 = (var1 & 0xFF) - var4;
+         if (var5 < 0) {
+            var5 += 256;
+         }
+
+         int var6 = ((var1 & 65535) >>> 8) - var4;
+         if (var6 < 0) {
+            var6 += 256;
+         }
+
+         for (int var7 = 0; var7 < var3.length; var7++) {
+            int var8 = var7 % 2;
+            char var10002 = var3[var7];
+            if (var8 == 0) {
+               var3[var7] = (char)(var10002 ^ var5);
+               var5 = ((var5 >>> 3 | var5 << 5) ^ var3[var7]) & 0xFF;
+            } else {
+               var3[var7] = (char)(var10002 ^ var6);
+               var6 = ((var6 >>> 3 | var6 << 5) ^ var3[var7]) & 0xFF;
             }
-        }
-        he_2.b = var6_2;
-        he_2.d = new Integer[7];
-    }
+         }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x7CD5;
-        if (d[n11] == null) {
-            he_2.d[n11] = (int)(b[n11] ^ l2);
-        }
-        return d[n11];
-    }
+         b[var2] = new String(var3).intern();
+      }
+
+      return b[var2];
+   }
 }
+
+
+
+
 

@@ -1,511 +1,449 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ON;
-import com.c.y_0;
-import com.cw_2;
-import com.ky_2;
-import com.p6_0;
-import com.pf_1;
-import com.yp_0;
 import java.awt.Graphics2D;
 import java.awt.Insets;
 import java.awt.Rectangle;
 import javax.swing.JComponent;
 import javax.swing.JScrollBar;
 
-public class YG
-extends y_0 {
-    protected pf_1 y = null;
-    protected pf_1 T = null;
-    protected pf_1 E = null;
-    protected pf_1 f = null;
-    protected pf_1 w;
-    protected pf_1 s;
-    protected pf_1 S;
-    protected pf_1 A;
-    protected pf_1 X;
-    protected pf_1 r;
-    protected pf_1 g;
-    protected pf_1 I;
-    protected pf_1 M;
-    protected pf_1 u;
-    protected p6_0 N;
-    protected boolean P;
+public class YG extends com.C.y_2 {
+   protected pF_3 y = null;
+   protected pF_3 T = null;
+   protected pF_3 E = null;
+   protected pF_3 f;
+   protected pF_3 w;
+   protected pF_3 s;
+   protected pF_3 S;
+   protected pF_3 A;
+   protected pF_3 X;
+   protected pF_3 r;
+   protected pF_3 g;
+   protected pF_3 I;
+   protected pF_3 M;
+   protected pF_3 u;
+   protected p6_2 N;
+   protected boolean P;
 
-    public YG() {
-        int n10 = yp_0.f();
-        this.w = null;
-        this.s = null;
-        this.S = null;
-        this.A = null;
-        this.X = null;
-        this.r = null;
-        this.g = null;
-        this.I = null;
-        this.M = null;
-        this.u = null;
-        this.P = false;
-        if (ky_2.F() != null) {
-            yp_0.u(++n10);
-        }
-    }
+   public YG() {
+      int var10000 = com.Yp_2.f();
+      this.f = null;
+      int var1 = var10000;
+      this.w = null;
+      this.s = null;
+      this.S = null;
+      this.A = null;
+      this.X = null;
+      this.r = null;
+      this.g = null;
+      this.I = null;
+      this.M = null;
+      this.u = null;
+      this.P = false;
+      if (com.ky_4.F() != null) {
+         com.Yp_2.u(++var1);
+      }
+   }
 
-    @Override
-    public void T(JScrollBar jScrollBar) {
-        super.T(jScrollBar);
-        this.Y = false;
-        this.N = new cw_2(this);
-        ON.b(jScrollBar, this.N);
-    }
+   @Override
+   public void T(JScrollBar var1) {
+      super.T(var1);
+      this.Y = false;
+      this.N = new com.cw_4(this);
+      com.ON.b(var1, this.N);
+   }
 
-    @Override
-    public void C(JScrollBar jScrollBar) {
-        ON.i(this.N);
-        this.N = null;
-        super.C(jScrollBar);
-    }
+   @Override
+   public void C(JScrollBar var1) {
+      com.ON.i(this.N);
+      this.N = null;
+      super.C(var1);
+   }
 
-    public pf_1 M() {
-        return this.y;
-    }
+   public pF_3 M() {
+      return this.y;
+   }
 
-    public void B(pf_1 pf_12) {
-        this.y = pf_12;
-    }
+   public void B(pF_3 var1) {
+      this.y = var1;
+   }
 
-    public pf_1 q() {
-        return this.T;
-    }
+   public pF_3 q() {
+      return this.T;
+   }
 
-    public void D(pf_1 pf_12) {
-        this.T = pf_12;
-    }
+   public void D(pF_3 var1) {
+      this.T = var1;
+   }
 
-    public pf_1 f() {
-        return this.E;
-    }
+   public pF_3 f() {
+      return this.E;
+   }
 
-    public void P(pf_1 pf_12) {
-        this.E = pf_12;
-    }
+   public void P(pF_3 var1) {
+      this.E = var1;
+   }
 
-    public pf_1 g() {
-        return this.f;
-    }
+   public pF_3 g() {
+      return this.f;
+   }
 
-    public void X(pf_1 pf_12) {
-        this.f = pf_12;
-    }
+   public void X(pF_3 var1) {
+      this.f = var1;
+   }
 
-    public pf_1 J() {
-        return this.w;
-    }
+   public pF_3 J() {
+      return this.w;
+   }
 
-    public void t(pf_1 pf_12) {
-        this.w = pf_12;
-    }
+   public void t(pF_3 var1) {
+      this.w = var1;
+   }
 
-    public pf_1 y() {
-        return this.s;
-    }
+   public pF_3 y() {
+      return this.s;
+   }
 
-    public void C(pf_1 pf_12) {
-        this.s = pf_12;
-    }
+   public void C(pF_3 var1) {
+      this.s = var1;
+   }
 
-    public pf_1 Q() {
-        return this.S;
-    }
+   public pF_3 Q() {
+      return this.S;
+   }
 
-    public void N(pf_1 pf_12) {
-        this.S = pf_12;
-    }
+   public void N(pF_3 var1) {
+      this.S = var1;
+   }
 
-    public pf_1 i() {
-        return this.A;
-    }
+   public pF_3 i() {
+      return this.A;
+   }
 
-    public void J(pf_1 pf_12) {
-        this.A = pf_12;
-    }
+   public void J(pF_3 var1) {
+      this.A = var1;
+   }
 
-    public pf_1 R() {
-        return this.X;
-    }
+   public pF_3 R() {
+      return this.X;
+   }
 
-    public void U(pf_1 pf_12) {
-        this.X = pf_12;
-    }
+   public void U(pF_3 var1) {
+      this.X = var1;
+   }
 
-    public pf_1 d() {
-        return this.r;
-    }
+   public pF_3 d() {
+      return this.r;
+   }
 
-    public void Z(pf_1 pf_12) {
-        this.r = pf_12;
-    }
+   public void Z(pF_3 var1) {
+      this.r = var1;
+   }
 
-    public pf_1 C() {
-        return this.g;
-    }
+   public pF_3 C() {
+      return this.g;
+   }
 
-    public void I(pf_1 pf_12) {
-        this.g = pf_12;
-    }
+   public void I(pF_3 var1) {
+      this.g = var1;
+   }
 
-    public pf_1 a() {
-        return this.I;
-    }
+   public pF_3 a() {
+      return this.I;
+   }
 
-    public void L(pf_1 pf_12) {
-        this.I = pf_12;
-    }
+   public void L(pF_3 var1) {
+      this.I = var1;
+   }
 
-    public pf_1 H() {
-        return this.M;
-    }
+   public pF_3 H() {
+      return this.M;
+   }
 
-    public void k(pf_1 pf_12) {
-        this.M = pf_12;
-    }
+   public void k(pF_3 var1) {
+      this.M = var1;
+   }
 
-    public pf_1 I() {
-        return this.u;
-    }
+   public pF_3 I() {
+      return this.u;
+   }
 
-    public void h(pf_1 pf_12) {
-        this.u = pf_12;
-    }
+   public void h(pF_3 var1) {
+      this.u = var1;
+   }
 
-    @Override
-    protected void O(Graphics2D graphics2D, JScrollBar jScrollBar, Rectangle rectangle) {
-        block3: {
-            pf_1 pf_12;
-            block4: {
-                pf_1 pf_13;
-                YG yG;
-                int n10;
-                block2: {
-                    n10 = yp_0.T();
-                    yG = this;
-                    if (n10 == 0) break block2;
-                    if (!yG.q) break block3;
-                    yG = this;
-                }
-                pf_12 = pf_13 = yG.H(jScrollBar);
-                if (n10 == 0) break block4;
-                if (pf_12 == null) break block3;
-                pf_12 = pf_13;
+   @Override
+   protected void O(Graphics2D var1, JScrollBar var2, Rectangle var3) {
+      int var4 = com.Yp_2.T();
+      com.YG var10000 = this;
+      if (var4 != 0) {
+         if (!this.q) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      pF_3 var5 = var10000.H(var2);
+      pF_3 var6 = var5;
+      if (var4 != 0) {
+         if (var5 == null) {
+            return;
+         }
+
+         var6 = var5;
+      }
+
+      var6.n(var1, var3);
+   }
+
+   protected pF_3 H(JScrollBar var1) {
+      int var2 = com.Yp_2.f();
+      int var10000 = var1.getOrientation();
+      if (var2 == 0) {
+         if (var10000 == 0) {
+            com.YG var5 = this;
+            if (var2 == 0) {
+               if (this.P) {
+                  if (var2 != 0) {
+                     return this.y;
+                  }
+
+                  if (this.T != null) {
+                     return this.T;
+                  }
+               }
+
+               var5 = this;
             }
-            pf_12.n(graphics2D, rectangle);
-        }
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    protected pf_1 H(JScrollBar var1_1) {
-        block6: {
-            block7: {
-                var2_2 = yp_0.f();
-                v0 = var1_1.getOrientation();
-                if (var2_2 != 0) break block6;
-                if (v0 != 0) break block7;
-                v1 = this;
-                if (var2_2 != 0) ** GOTO lbl15
-                if (!v1.P) ** GOTO lbl-1000
-                v1 = this;
-                if (var2_2 == 0) {
-                    ** if (v1.T == null) goto lbl-1000
-lbl-1000:
-                    // 1 sources
+            return var5.y;
+         }
 
-                    {
-                        v2 = this.T;
-                        ** GOTO lbl16
-                    }
-                }
-                ** GOTO lbl15
-lbl-1000:
-                // 2 sources
+         if (var2 != 0) {
+            return this.A;
+         }
 
-                {
-                    v1 = this;
-lbl15:
-                    // 3 sources
+         var10000 = this.P;
+      }
 
-                    v2 = v1.y;
-                }
-lbl16:
-                // 2 sources
+      if (var10000 != 0) {
+         if (var2 != 0) {
+            return this.A;
+         }
 
-                return v2;
+         if (this.X != null) {
+            return this.X;
+         }
+      }
+
+      return this.A;
+   }
+
+   @Override
+   protected void Z(Graphics2D var1, JScrollBar var2, Rectangle var3) {
+      int var4 = com.Yp_2.T();
+      com.YG var10000 = this;
+      if (var4 != 0) {
+         if (!this.q) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      pF_3 var5 = var10000.x(var2);
+      pF_3 var6 = var5;
+      if (var4 != 0) {
+         if (var5 == null) {
+            return;
+         }
+
+         var6 = var5;
+      }
+
+      var6.n(var1, var3);
+   }
+
+   protected pF_3 x(JScrollBar var1) {
+      int var2 = com.Yp_2.T();
+      int var10000 = var1.getOrientation();
+      if (var2 != 0) {
+         if (var10000 == 0) {
+            com.YG var5 = this;
+            if (var2 != 0) {
+               if (this.P) {
+                  if (var2 == 0) {
+                     return this.E;
+                  }
+
+                  if (this.f != null) {
+                     return this.f;
+                  }
+               }
+
+               var5 = this;
             }
-            v3 = this;
-            if (var2_2 != 0) ** GOTO lbl30
-            v0 = (int)v3.P;
-        }
-        if (v0 == 0) ** GOTO lbl-1000
-        v3 = this;
-        if (var2_2 == 0) {
-            ** if (v3.X == null) goto lbl-1000
-lbl-1000:
-            // 1 sources
 
-            {
-                v4 = this.X;
-                ** GOTO lbl31
-            }
-        }
-        ** GOTO lbl30
-lbl-1000:
-        // 2 sources
+            return var5.E;
+         }
 
-        {
-            v3 = this;
-lbl30:
-            // 3 sources
+         if (var2 == 0) {
+            return this.r;
+         }
 
-            v4 = v3.A;
-        }
-lbl31:
-        // 2 sources
+         var10000 = this.P;
+      }
 
-        return v4;
-    }
+      if (var10000 != 0) {
+         if (var2 == 0) {
+            return this.r;
+         }
 
-    @Override
-    protected void Z(Graphics2D graphics2D, JScrollBar jScrollBar, Rectangle rectangle) {
-        block3: {
-            pf_1 pf_12;
-            block4: {
-                pf_1 pf_13;
-                YG yG;
-                int n10;
-                block2: {
-                    n10 = yp_0.T();
-                    yG = this;
-                    if (n10 == 0) break block2;
-                    if (!yG.q) break block3;
-                    yG = this;
-                }
-                pf_12 = pf_13 = yG.x(jScrollBar);
-                if (n10 == 0) break block4;
-                if (pf_12 == null) break block3;
-                pf_12 = pf_13;
-            }
-            pf_12.n(graphics2D, rectangle);
-        }
-    }
+         if (this.g != null) {
+            return this.g;
+         }
+      }
 
-    /*
-     * Unable to fully structure code
-     */
-    protected pf_1 x(JScrollBar var1_1) {
-        block6: {
-            block7: {
-                var2_2 = yp_0.T();
-                v0 = var1_1.getOrientation();
-                if (var2_2 == 0) break block6;
-                if (v0 != 0) break block7;
-                v1 = this;
-                if (var2_2 == 0) ** GOTO lbl15
-                if (!v1.P) ** GOTO lbl-1000
-                v1 = this;
-                if (var2_2 != 0) {
-                    ** if (v1.f == null) goto lbl-1000
-lbl-1000:
-                    // 1 sources
+      return this.r;
+   }
 
-                    {
-                        v2 = this.f;
-                        ** GOTO lbl16
-                    }
-                }
-                ** GOTO lbl15
-lbl-1000:
-                // 2 sources
+   @Override
+   protected void E(Graphics2D var1, JScrollBar var2, Rectangle var3) {
+      pF_3 var4 = this.Q(var2);
+      if (var4 != null) {
+         Insets var5 = this.v(var2);
+         var4.l(var1, var3.x + var5.left, var3.y + var5.top, var3.width - var5.left - var5.right, var3.height - var5.top - var5.bottom);
+      }
+   }
 
-                {
-                    v1 = this;
-lbl15:
-                    // 3 sources
+   protected pF_3 Q(JScrollBar var1) {
+      int var2;
+      int var4;
+      label106: {
+         label100: {
+            label107: {
+               label108: {
+                  var2 = com.Yp_2.f();
+                  var4 = var1.getOrientation();
+                  if (var2 == 0) {
+                     if (var4 == 0) {
+                        label111: {
+                           label66: {
+                              label112: {
+                                 var6 = this;
+                                 if (var2 == 0) {
+                                    if (!this.p) {
+                                       var7 = this.L;
+                                       if (var2 != 0) {
+                                          break label111;
+                                       }
 
-                    v2 = v1.E;
-                }
-lbl16:
-                // 2 sources
-
-                return v2;
-            }
-            v3 = this;
-            if (var2_2 == 0) ** GOTO lbl30
-            v0 = (int)v3.P;
-        }
-        if (v0 == 0) ** GOTO lbl-1000
-        v3 = this;
-        if (var2_2 != 0) {
-            ** if (v3.g == null) goto lbl-1000
-lbl-1000:
-            // 1 sources
-
-            {
-                v4 = this.g;
-                ** GOTO lbl31
-            }
-        }
-        ** GOTO lbl30
-lbl-1000:
-        // 2 sources
-
-        {
-            v3 = this;
-lbl30:
-            // 3 sources
-
-            v4 = v3.r;
-        }
-lbl31:
-        // 2 sources
-
-        return v4;
-    }
-
-    @Override
-    protected void E(Graphics2D graphics2D, JScrollBar jScrollBar, Rectangle rectangle) {
-        pf_1 pf_12 = this.Q(jScrollBar);
-        if (pf_12 != null) {
-            Insets insets = this.v(jScrollBar);
-            pf_12.l(graphics2D, rectangle.x + insets.left, rectangle.y + insets.top, rectangle.width - insets.left - insets.right, rectangle.height - insets.top - insets.bottom);
-        }
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    protected pf_1 Q(JScrollBar var1_1) {
-        block19: {
-            block16: {
-                block18: {
-                    block17: {
-                        block14: {
-                            block15: {
-                                block6: {
-                                    block7: {
-                                        block13: {
-                                            block10: {
-                                                block12: {
-                                                    block11: {
-                                                        block8: {
-                                                            block9: {
-                                                                var2_2 = yp_0.f();
-                                                                v0 = var1_1.getOrientation();
-                                                                if (var2_2 != 0) break block6;
-                                                                if (v0 != 0) break block7;
-                                                                v1 = this;
-                                                                if (var2_2 != 0) break block8;
-                                                                if (v1.p) break block9;
-                                                                v2 = this.L;
-                                                                if (var2_2 != 0) break block10;
-                                                                if (!v2) break block11;
-                                                            }
-                                                            v1 = this;
-                                                        }
-                                                        if (var2_2 != 0) break block12;
-                                                        if (v1.S == null) break block11;
-                                                        v3 = this.S;
-                                                        break block13;
-                                                    }
-                                                    v1 = this;
-                                                }
-                                                if (var2_2 != 0) ** GOTO lbl32
-                                                v2 = v1.P;
-                                            }
-                                            if (!v2) ** GOTO lbl-1000
-                                            v1 = this;
-                                            if (var2_2 == 0) {
-                                                ** if (v1.T == null) goto lbl-1000
-lbl-1000:
-                                                // 1 sources
-
-                                                {
-                                                    v3 = this.s;
-                                                    ** GOTO lbl33
-                                                }
-                                            }
-                                            ** GOTO lbl32
-lbl-1000:
-                                            // 2 sources
-
-                                            {
-                                                v1 = this;
-lbl32:
-                                                // 3 sources
-
-                                                v3 = v1.w;
-                                            }
-                                        }
-                                        return v3;
+                                       if (!this.L) {
+                                          break label112;
+                                       }
                                     }
-                                    v4 = this;
-                                    if (var2_2 != 0) break block14;
-                                    v0 = (int)v4.p;
-                                }
-                                if (v0 != 0) break block15;
-                                v5 = this.L;
-                                if (var2_2 != 0) break block16;
-                                if (!v5) break block17;
-                            }
-                            v4 = this;
+
+                                    var6 = this;
+                                 }
+
+                                 if (var2 != 0) {
+                                    break label66;
+                                 }
+
+                                 if (var6.S != null) {
+                                    return this.S;
+                                 }
+                              }
+
+                              var6 = this;
+                           }
+
+                           if (var2 != 0) {
+                              return var6.w;
+                           }
+
+                           var7 = var6.P;
                         }
-                        if (var2_2 != 0) break block18;
-                        if (v4.u == null) break block17;
-                        v6 = this.u;
-                        break block19;
-                    }
-                    v4 = this;
-                }
-                if (var2_2 != 0) ** GOTO lbl65
-                v5 = v4.P;
+
+                        if (var7) {
+                           if (var2 != 0) {
+                              return this.w;
+                           }
+
+                           if (this.T != null) {
+                              return this.s;
+                           }
+                        }
+
+                        return this.w;
+                     }
+
+                     var3 = this;
+                     if (var2 != 0) {
+                        break label108;
+                     }
+
+                     var4 = this.p;
+                  }
+
+                  if (var4 == 0) {
+                     var4 = this.L;
+                     if (var2 != 0) {
+                        break label106;
+                     }
+
+                     if (!this.L) {
+                        break label107;
+                     }
+                  }
+
+                  var3 = this;
+               }
+
+               if (var2 != 0) {
+                  break label100;
+               }
+
+               if (var3.u != null) {
+                  return this.u;
+               }
             }
-            if (!v5) ** GOTO lbl-1000
-            v4 = this;
-            if (var2_2 == 0) {
-                ** if (v4.X == null) goto lbl-1000
-lbl-1000:
-                // 1 sources
 
-                {
-                    v6 = this.M;
-                    ** GOTO lbl66
-                }
-            }
-            ** GOTO lbl65
-lbl-1000:
-            // 2 sources
+            var3 = this;
+         }
 
-            {
-                v4 = this;
-lbl65:
-                // 3 sources
+         if (var2 != 0) {
+            return var3.I;
+         }
 
-                v6 = v4.I;
-            }
-        }
-        return v6;
-    }
+         var4 = var3.P;
+      }
 
-    @Override
-    public void X(JComponent jComponent) {
-        this.C((JScrollBar)jComponent);
-    }
+      if (var4) {
+         if (var2 != 0) {
+            return this.I;
+         }
 
-    @Override
-    public void A(JComponent jComponent) {
-        this.T((JScrollBar)jComponent);
-    }
+         if (this.X != null) {
+            return this.M;
+         }
+      }
+
+      return this.I;
+   }
+
+   @Override
+   public void X(JComponent var1) {
+      this.C((JScrollBar)var1);
+   }
+
+   @Override
+   public void A(JComponent var1) {
+      this.T((JScrollBar)var1);
+   }
 }
+
+
+
+
 

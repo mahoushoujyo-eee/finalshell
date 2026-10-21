@@ -1,148 +1,174 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.PQ;
-import com.ax_0;
-import com.xs_0;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class u1
-extends MouseAdapter {
-    final xs_0 t;
+class u1 extends MouseAdapter {
+   final Xs_2 t;
 
-    u1(xs_0 xs_02) {
-        this.t = xs_02;
-    }
+   u1(Xs_2 var1) {
+      this.t = var1;
+   }
 
-    @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
-        this.q(mouseEvent);
-    }
+   @Override
+   public void mouseMoved(MouseEvent var1) {
+      this.q(var1);
+   }
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-        this.q(mouseEvent);
-    }
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      this.q(var1);
+   }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-        this.Q();
-    }
+   @Override
+   public void mouseExited(MouseEvent var1) {
+      this.Q();
+   }
 
-    private void q(MouseEvent mouseEvent) {
-        block6: {
-            block3: {
-                u1 u12;
-                Point point;
-                boolean bl;
-                block5: {
-                    int n10;
-                    block4: {
-                        int n11;
-                        block2: {
-                            Point point2 = mouseEvent.getPoint();
-                            bl = PQ.G();
-                            point = new Point(xs_0.M(this.t).columnAtPoint(point2), xs_0.F(this.t).rowAtPoint(point2));
-                            n10 = point.x;
-                            n11 = -1;
-                            if (!bl) break block2;
-                            if (n10 == n11) break block3;
-                            n10 = point.y;
-                            if (!bl) break block4;
-                            n11 = -1;
-                        }
-                        if (n10 == n11) break block3;
-                        u12 = this;
-                        if (!bl) break block5;
-                        n10 = ax_0.Z(u12.t.V, new Object[]{point}) ? 1 : 0;
-                    }
-                    if (n10 != 0) break block6;
-                    u12 = this;
-                }
-                u12.R(this.t.V, point);
-                if (bl) break block6;
+   private void q(MouseEvent var1) {
+      label34: {
+         boolean var2;
+         Point var4;
+         u1 var6;
+         label37: {
+            label38: {
+               boolean var10000 = PQ.G();
+               Point var3 = var1.getPoint();
+               var2 = var10000;
+               var4 = new Point(Xs_2.M(this.t).columnAtPoint(var3), Xs_2.F(this.t).rowAtPoint(var3));
+               var5 = var4.x;
+               byte var10001 = -1;
+               if (var2) {
+                  if (var4.x == -1) {
+                     break label34;
+                  }
+
+                  var5 = var4.y;
+                  if (!var2) {
+                     break label38;
+                  }
+
+                  var10001 = -1;
+               }
+
+               if (var5 == var10001) {
+                  break label34;
+               }
+
+               var6 = this;
+               if (!var2) {
+                  break label37;
+               }
+
+               var5 = com.ax_2.Z(this.t.V, new Object[]{var4});
             }
-            this.Q();
-        }
-    }
 
-    private void Q() {
-        block3: {
-            u1 u12;
-            block2: {
-                boolean bl = PQ.G();
-                u12 = this;
-                if (!bl) break block2;
-                if (u12.t.V == null) break block3;
-                u12 = this;
+            if (var5 != 0) {
+               return;
             }
-            u12.R(this.t.V, null);
-        }
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    private void R(Point var1_1, Point var2_2) {
-        block8: {
-            this.t.V = var2_2;
-            var3_3 = PQ.G();
-            var4_4 = this.t.Q();
-            if (var4_4 == null) break block8;
-            v0 = var1_1;
-            if (!var3_3) ** GOTO lbl9
-            if (v0 != null) {
-                v0 = var1_1;
-lbl9:
-                // 2 sources
+            var6 = this;
+         }
 
-                v1 = v0.y;
-            } else {
-                v1 = -1;
+         var6.R(this.t.V, var4);
+         if (var2) {
+            return;
+         }
+      }
+
+      this.Q();
+   }
+
+   private void Q() {
+      boolean var1 = PQ.G();
+      u1 var10000 = this;
+      if (var1) {
+         if (this.t.V == null) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.R(this.t.V, null);
+   }
+
+   private void R(Point var1, Point var2) {
+      int var10000 = PQ.G();
+      this.t.V = var2;
+      boolean var3 = (boolean)var10000;
+      Rq_2 var4 = this.t.Q();
+      if (var4 != null) {
+         label49: {
+            Point var9 = var1;
+            if (var3) {
+               if (var1 == null) {
+                  var10000 = -1;
+                  break label49;
+               }
+
+               var9 = var1;
             }
-            var5_5 = v1;
-            v2 = var1_1;
-            if (!var3_3) ** GOTO lbl17
-            if (v2 != null) {
-                v2 = var1_1;
-lbl17:
-                // 2 sources
 
-                v3 = v2.x;
-            } else {
-                v3 = -1;
-            }
-            var6_6 = v3;
-            v4 = var2_2;
-            if (!var3_3) ** GOTO lbl25
-            if (v4 != null) {
-                v4 = var2_2;
-lbl25:
-                // 2 sources
+            var10000 = var9.y;
+         }
 
-                v5 = v4.y;
-            } else {
-                v5 = -1;
-            }
-            var7_7 = v5;
-            v6 = var2_2;
-            if (!var3_3) ** GOTO lbl33
-            if (v6 != null) {
-                v6 = var2_2;
-lbl33:
-                // 2 sources
+         int var5;
+         label43: {
+            var5 = var10000;
+            Point var11 = var1;
+            if (var3) {
+               if (var1 == null) {
+                  var10000 = -1;
+                  break label43;
+               }
 
-                v7 = v6.x;
-            } else {
-                v7 = -1;
+               var11 = var1;
             }
-            var8_8 = v7;
-            var4_4.M(xs_0.w(this.t), var5_5, var6_6, var7_7, var8_8);
-        }
-    }
+
+            var10000 = var11.x;
+         }
+
+         int var6;
+         label37: {
+            var6 = var10000;
+            Point var13 = var2;
+            if (var3) {
+               if (var2 == null) {
+                  var10000 = -1;
+                  break label37;
+               }
+
+               var13 = var2;
+            }
+
+            var10000 = var13.y;
+         }
+
+         int var7;
+         label31: {
+            var7 = var10000;
+            Point var15 = var2;
+            if (var3) {
+               if (var2 == null) {
+                  var10000 = -1;
+                  break label31;
+               }
+
+               var15 = var2;
+            }
+
+            var10000 = var15.x;
+         }
+
+         int var8 = var10000;
+         var4.M(Xs_2.w(this.t), var5, var6, var7, var8);
+      }
+   }
 }
+
+
+
+
 

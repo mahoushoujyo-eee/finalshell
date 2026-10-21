@@ -1,45 +1,46 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.kf_2;
-import com.tk_0;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class S4
-extends MouseAdapter {
-    final kf_2 d;
+class S4 extends MouseAdapter {
+   final com.kf_4 d;
 
-    S4(kf_2 kf_22) {
-        this.d = kf_22;
-    }
+   S4(com.kf_4 var1) {
+      this.d = var1;
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        block5: {
-            boolean bl;
-            block6: {
-                boolean bl2;
-                block4: {
-                    bl = tk_0.B();
-                    bl2 = FN.B(mouseEvent);
-                    if (bl) break block4;
-                    if (!bl2) break block5;
-                    bl2 = this.d.isEnabled();
-                }
-                if (bl) break block6;
-                if (!bl2) break block5;
-                bl2 = this.d.requestFocusInWindow();
-            }
-            boolean bl3 = this.d.D();
-            if (!bl) {
-                bl3 = !bl3;
-            }
-            this.d.c(bl3);
-        }
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      boolean var2 = com.Tk_2.B();
+      boolean var10000 = com.FN.B(var1);
+      if (!var2) {
+         if (!var10000) {
+            return;
+         }
+
+         var10000 = this.d.isEnabled();
+      }
+
+      if (!var2) {
+         if (!var10000) {
+            return;
+         }
+
+         this.d.requestFocusInWindow();
+      }
+
+      com.kf_4 var3 = this.d;
+      boolean var10001 = this.d.D();
+      if (!var2) {
+         var10001 = !var10001;
+      }
+
+      var3.c(var10001);
+   }
 }
+
+
+
+
 

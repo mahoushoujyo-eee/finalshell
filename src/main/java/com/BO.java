@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ir_0;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-class BO
-implements ChangeListener {
-    final ir_0 i;
+class BO implements ChangeListener {
+   final Ir_2 i;
 
-    BO(ir_0 ir_02) {
-        this.i = ir_02;
-    }
+   BO(Ir_2 var1) {
+      this.i = var1;
+   }
 
-    @Override
-    public void stateChanged(ChangeEvent changeEvent) {
-        this.i.M();
-    }
+   @Override
+   public void stateChanged(ChangeEvent var1) {
+      this.i.M();
+   }
 }
+
+
+
+
 

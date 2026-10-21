@@ -1,142 +1,138 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.b;
 
-import com.b.V;
-import com.b.a;
-import com.ky_2;
 import java.io.File;
 import java.io.FileFilter;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 import javax.swing.ImageIcon;
 
-public class f
-extends V {
-    protected a O;
-    protected V t;
-    protected List k;
+public class f extends V {
+   protected a O;
+   protected V t;
+   protected List k;
 
-    public f(FileFilter[] fileFilterArray) {
-        this(a.AND, fileFilterArray);
-    }
+   public f(FileFilter[] var1) {
+      this(a.AND, var1);
+   }
 
-    public f(a a10, FileFilter[] fileFilterArray) {
-        this(fileFilterArray != null && fileFilterArray.length > 0 && fileFilterArray[0] instanceof V ? (V)fileFilterArray[0] : null, a10, fileFilterArray);
-    }
+   public f(a var1, FileFilter[] var2) {
+      this(var2 != null && var2.length > 0 && var2[0] instanceof V ? (V)var2[0] : null, var1, var2);
+   }
 
-    public f(V v2, a a10, FileFilter[] fileFilterArray) {
-        this.O = a10;
-        this.t = v2;
-        this.k = new ArrayList();
-        if (fileFilterArray != null) {
-            Collections.addAll(this.k, fileFilterArray);
-        }
-    }
+   public f(V var1, a var2, FileFilter[] var3) {
+      this.O = var2;
+      this.t = var1;
+      this.k = new ArrayList();
+      if (var3 != null) {
+         Collections.addAll(this.k, var3);
+      }
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    public ImageIcon b() {
-        ky_2[] ky_2Array = V.L();
-        V v2 = this.t;
-        if (ky_2Array != null) {
-            if (v2 == null) return null;
-            v2 = this.t;
-        }
-        ImageIcon imageIcon = v2.b();
-        return imageIcon;
-    }
+   @Override
+   public ImageIcon b() {
+      com.ky_4[] var1 = V.L();
+      V var10000 = this.t;
+      if (var1 != null) {
+         if (this.t == null) {
+            return null;
+         }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    public String getDescription() {
-        ky_2[] ky_2Array = V.L();
-        V v2 = this.t;
-        if (ky_2Array != null) {
-            if (v2 == null) return null;
-            v2 = this.t;
-        }
-        String string = v2.getDescription();
-        return string;
-    }
+         var10000 = this.t;
+      }
 
-    @Override
-    public boolean accept(File file) {
-        f f10;
-        ky_2[] ky_2Array;
-        block6: {
-            block7: {
-                ky_2Array = V.L();
-                f10 = this;
-                if (ky_2Array == null) break block6;
-                if (!f10.O.equals((Object)a.AND)) break block7;
-                Iterator iterator = this.k.iterator();
-                while (iterator.hasNext()) {
-                    block9: {
-                        boolean bl;
-                        block10: {
-                            FileFilter fileFilter;
-                            block8: {
-                                FileFilter fileFilter2;
-                                fileFilter = fileFilter2 = (FileFilter)iterator.next();
-                                if (ky_2Array == null) break block8;
-                                if (fileFilter == null) break block9;
-                                fileFilter = fileFilter2;
-                            }
-                            bl = fileFilter.accept(file);
-                            if (ky_2Array == null) break block10;
-                            if (bl) break block9;
-                            bl = false;
-                        }
-                        return bl;
-                    }
-                    if (ky_2Array != null) continue;
-                    ky_2.K(new String[5]);
-                    break;
-                }
-                return true;
+      return var10000.b();
+   }
+
+   @Override
+   public String getDescription() {
+      com.ky_4[] var1 = V.L();
+      V var10000 = this.t;
+      if (var1 != null) {
+         if (this.t == null) {
+            return null;
+         }
+
+         var10000 = this.t;
+      }
+
+      return var10000.getDescription();
+   }
+
+   @Override
+   public boolean accept(File var1) {
+      com.ky_4[] var2 = V.L();
+      com.b.f var10000 = this;
+      if (var2 != null) {
+         if (this.O.equals(a.AND)) {
+            for (FileFilter var6 : this.k) {
+               label78: {
+                  FileFilter var9 = var6;
+                  if (var2 != null) {
+                     if (var6 == null) {
+                        break label78;
+                     }
+
+                     var9 = var6;
+                  }
+
+                  boolean var10 = var9.accept(var1);
+                  if (var2 == null) {
+                     return var10;
+                  }
+
+                  if (!var10) {
+                     return false;
+                  }
+               }
+
+               if (var2 == null) {
+                  com.ky_4.K(new String[5]);
+                  break;
+               }
             }
-            f10 = this;
-        }
-        Iterator iterator = f10.k.iterator();
-        while (iterator.hasNext()) {
-            block14: {
-                boolean bl;
-                block13: {
-                    block12: {
-                        FileFilter fileFilter;
-                        block11: {
-                            FileFilter fileFilter3;
-                            fileFilter = fileFilter3 = (FileFilter)iterator.next();
-                            if (ky_2Array == null) break block11;
-                            if (fileFilter == null) break block12;
-                            fileFilter = fileFilter3;
-                        }
-                        bl = fileFilter.accept(file);
-                        if (ky_2Array == null) break block13;
-                        if (!bl) break block14;
-                    }
-                    bl = true;
-                }
-                return bl;
-            }
-            if (ky_2Array != null) continue;
-        }
-        return false;
-    }
 
-    @Override
-    public boolean n(Object object) {
-        return this.accept((File)object);
-    }
+            return true;
+         }
+
+         var10000 = this;
+      }
+
+      for (FileFilter var4 : var10000.k) {
+         FileFilter var7 = var4;
+         if (var2 != null) {
+            if (var4 == null) {
+               return true;
+            }
+
+            var7 = var4;
+         }
+
+         boolean var8 = var7.accept(var1);
+         if (var2 == null) {
+            return var8;
+         }
+
+         if (!var8) {
+            if (var2 != null) {
+               continue;
+            }
+            break;
+         }
+
+         return true;
+      }
+
+      return false;
+   }
+
+   @Override
+   public boolean n(Object var1) {
+      return this.accept((File)var1);
+   }
 }
+
+
+
+
 

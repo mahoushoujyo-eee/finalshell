@@ -1,50 +1,54 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.Z.T;
-import com.b.R;
 import java.io.File;
 import javax.swing.ImageIcon;
 
-public class I
-extends R {
-    final T G;
+public class I extends com.b.R {
+   final com.Z.T G;
 
-    protected I(T t2) {
-        this.G = t2;
-    }
+   protected I(com.Z.T var1) {
+      this.G = var1;
+   }
 
-    @Override
-    public ImageIcon b() {
-        return null;
-    }
+   @Override
+   public ImageIcon b() {
+      return null;
+   }
 
-    @Override
-    public String getDescription() {
-        return null;
-    }
+   @Override
+   public String getDescription() {
+      return null;
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    public boolean accept(File file) {
-        String string = T.v();
-        boolean bl = this.G.v;
-        if (string != null) return bl;
-        if (bl) return true;
-        bl = file.isHidden();
-        if (string != null) return bl;
-        if (bl) return false;
-        return true;
-    }
+   @Override
+   public boolean accept(File var1) {
+      String var2 = com.Z.T.v();
+      boolean var10000 = this.G.v;
+      if (var2 == null) {
+         if (!this.G.v) {
+            var10000 = var1.isHidden();
+            if (var2 != null) {
+               return var10000;
+            }
 
-    @Override
-    public boolean n(Object object) {
-        return this.accept((File)object);
-    }
+            if (var10000) {
+               return false;
+            }
+         }
+
+         var10000 = true;
+      }
+
+      return var10000;
+   }
+
+   @Override
+   public boolean n(Object var1) {
+      return this.accept((File)var1);
+   }
 }
+
+
+
+
 

@@ -1,1445 +1,1296 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Random;
 
-class nW
-implements fw_1 {
-    byte[] N;
-    int a;
-    int g;
-    int A;
-    Random S;
-    final InputStream T;
-    final OutputStream J;
-    private static final String[] b;
-    private static final String[] c;
-    private static final long[] d;
-    private static final Integer[] e;
+class nW implements fW_3 {
+   byte[] N;
+   int a;
+   int g;
+   int A;
+   Random S;
+   final InputStream T;
+   final OutputStream J;
+   private static final String[] b;
+   private static final String[] c;
+   private static final long[] d;
+   private static final Integer[] e;
 
-    nW(InputStream inputStream, OutputStream outputStream) {
-        this.T = inputStream;
-        this.J = outputStream;
-        this.N = new byte[nW.a(6085, 1987690668988592585L)];
-        this.a = 0;
-        this.g = 0;
-        this.A = 0;
-        this.S = new Random();
-    }
+   nW(InputStream var1, OutputStream var2) {
+      this.T = var1;
+      this.J = var2;
+      this.N = new byte[a(6085, 1987690668988592585L)];
+      this.a = 0;
+      this.g = 0;
+      this.A = 0;
+      this.S = new Random();
+   }
 
-    /*
-     * Loose catch block
-     */
-    @Override
-    public void w(TX tX) {
-        block31: {
-            int n10 = bn_1.Z();
-            try {
-                byte[] byArray;
-                block32: {
-                    int n11;
-                    int n12;
-                    int n13;
-                    int n14;
-                    int n15;
-                    int n16;
-                    block30: {
-                        block25: {
-                            block26: {
-                                try {
-                                    n16 = tX.C();
-                                    n15 = 1;
-                                    if (n10 == 0) break block25;
-                                    if (n16 != n15) break block26;
-                                }
-                                catch (Exception exception) {
-                                    throw nW.a(exception);
-                                }
-                                n14 = this.T.available();
-                                byArray = new byte[n14];
-                                n14 = this.T.read(byArray, 0, n14);
-                                n13 = 0;
-                                while (n13 < n14) {
-                                    block27: {
-                                        block28: {
-                                            block34: {
-                                                block29: {
-                                                    int n17;
-                                                    n12 = byArray[n13];
-                                                    this.N[this.a++] = n12;
-                                                    if (n10 == 0) break block27;
-                                                    try {
-                                                        block33: {
-                                                            n16 = n12;
-                                                            n15 = nW.a(17401, 9007811334643918326L);
-                                                            if (n10 == 0) break block25;
-                                                            break block33;
-                                                            catch (Exception exception) {
-                                                                throw nW.a(exception);
-                                                            }
-                                                        }
-                                                        if (n16 != n15) break block28;
-                                                    }
-                                                    catch (Exception exception) {
-                                                        throw nW.a(exception);
-                                                    }
-                                                    n11 = 0;
-                                                    for (n17 = 0; n17 < this.a - 2; ++n17) {
-                                                        n11 += this.N[n17];
-                                                        try {
-                                                            if (n10 != 0) {
-                                                                if (n10 != 0) continue;
-                                                                break;
-                                                            }
-                                                            break block27;
-                                                        }
-                                                        catch (Exception exception) {
-                                                            throw nW.a(exception);
-                                                        }
-                                                    }
-                                                    byte by = (byte)(nW.a(778, 3526486518425183495L) + (n11 & nW.a(29255, 5492244047842186318L)));
-                                                    ++this.g;
-                                                    if (n10 == 0) break block34;
-                                                    try {
-                                                        block35: {
-                                                            if (by == this.N[n17]) break block29;
-                                                            break block35;
-                                                            catch (Exception exception) {
-                                                                throw nW.a(exception);
-                                                            }
-                                                        }
-                                                        System.out.println("check sum failure");
-                                                        ++this.A;
-                                                    }
-                                                    catch (Exception exception) {
-                                                        throw nW.a(exception);
-                                                    }
-                                                }
-                                                System.out.println("msg " + this.a + " ok " + this.g + " err " + this.A);
-                                            }
-                                            this.a = 0;
-                                        }
-                                        ++n13;
-                                    }
-                                    if (n10 != 0) continue;
-                                }
-                            }
-                            n16 = tX.C();
-                            n15 = 2;
-                        }
-                        if (n10 == 0) break block30;
-                        try {
-                            block36: {
-                                if (n16 != n15) break block31;
-                                break block36;
-                                catch (Exception exception) {
-                                    throw nW.a(exception);
-                                }
-                            }
-                            n16 = 4;
-                            n15 = this.S.nextInt() & nW.a(9670, 1457789888118539213L);
-                        }
-                        catch (Exception exception) {
-                            throw nW.a(exception);
-                        }
-                    }
-                    n14 = n16 + n15;
-                    byArray = new byte[n14 + 2];
-                    n13 = 0;
-                    for (n12 = 0; n12 < n14; ++n12) {
-                        byArray[n12] = n11 = (int)(nW.a(30001, 540465686706230075L) + (this.S.nextInt() & nW.a(9670, 1457789888118539213L)));
-                        n13 += n11;
-                        try {
-                            if (n10 != 0) {
-                                if (n10 != 0) continue;
-                                break;
-                            }
-                            break block32;
-                        }
-                        catch (Exception exception) {
-                            throw nW.a(exception);
-                        }
-                    }
-                    byArray[n12++] = (byte)(nW.a(30001, 540465686706230075L) + (n13 & nW.a(9670, 1457789888118539213L)));
-                    byArray[n12++] = nW.a(9836, 828087793160667234L);
-                }
-                this.J.write(byArray, 0, byArray.length);
-            }
-            catch (Exception exception) {
-                exception.printStackTrace();
-            }
-        }
-    }
+   @Override
+   public void w(TX param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic bN_3.Z ()I
+      // 003: istore 2
+      // 004: aload 1
+      // 005: invokevirtual TX.C ()I
+      // 008: bipush 1
+      // 009: iload 2
+      // 00a: ifeq 159
+      // 00d: if_icmpne 154
+      // 010: goto 017
+      // 013: invokestatic nW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 016: athrow
+      // 017: aload 0
+      // 018: getfield nW.T Ljava/io/InputStream;
+      // 01b: invokevirtual java/io/InputStream.available ()I
+      // 01e: istore 3
+      // 01f: iload 3
+      // 020: newarray 8
+      // 022: astore 4
+      // 024: aload 0
+      // 025: getfield nW.T Ljava/io/InputStream;
+      // 028: aload 4
+      // 02a: bipush 0
+      // 02b: iload 3
+      // 02c: invokevirtual java/io/InputStream.read ([BII)I
+      // 02f: istore 3
+      // 030: bipush 0
+      // 031: istore 5
+      // 033: iload 5
+      // 035: iload 3
+      // 036: if_icmpge 154
+      // 039: aload 4
+      // 03b: iload 5
+      // 03d: baload
+      // 03e: istore 6
+      // 040: aload 0
+      // 041: getfield nW.N [B
+      // 044: aload 0
+      // 045: dup
+      // 046: getfield nW.a I
+      // 049: dup_x1
+      // 04a: bipush 1
+      // 04b: iadd
+      // 04c: putfield nW.a I
+      // 04f: iload 6
+      // 051: bastore
+      // 052: iload 2
+      // 053: ifeq 150
+      // 056: iload 6
+      // 058: sipush 17401
+      // 05b: ldc2_w 9007811334643918326
+      // 05e: invokestatic nW.a (IJ)I
+      // 061: iload 2
+      // 062: ifeq 159
+      // 065: goto 06c
+      // 068: invokestatic nW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 06b: athrow
+      // 06c: if_icmpne 14d
+      // 06f: goto 076
+      // 072: invokestatic nW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 075: athrow
+      // 076: bipush 0
+      // 077: istore 7
+      // 079: bipush 0
+      // 07a: istore 8
+      // 07c: iload 8
+      // 07e: aload 0
+      // 07f: getfield nW.a I
+      // 082: bipush 2
+      // 083: isub
+      // 084: if_icmpge 0a5
+      // 087: iload 7
+      // 089: aload 0
+      // 08a: getfield nW.N [B
+      // 08d: iload 8
+      // 08f: baload
+      // 090: iadd
+      // 091: istore 7
+      // 093: iinc 8 1
+      // 096: iload 2
+      // 097: ifeq 150
+      // 09a: iload 2
+      // 09b: ifne 07c
+      // 09e: goto 0a5
+      // 0a1: invokestatic nW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0a4: athrow
+      // 0a5: sipush 778
+      // 0a8: ldc2_w 3526486518425183495
+      // 0ab: invokestatic nW.a (IJ)I
+      // 0ae: iload 7
+      // 0b0: sipush 29255
+      // 0b3: ldc2_w 5492244047842186318
+      // 0b6: invokestatic nW.a (IJ)I
+      // 0b9: iand
+      // 0ba: iadd
+      // 0bb: i2b
+      // 0bc: istore 9
+      // 0be: aload 0
+      // 0bf: dup
+      // 0c0: getfield nW.g I
+      // 0c3: bipush 1
+      // 0c4: iadd
+      // 0c5: putfield nW.g I
+      // 0c8: iload 2
+      // 0c9: ifeq 148
+      // 0cc: iload 9
+      // 0ce: aload 0
+      // 0cf: getfield nW.N [B
+      // 0d2: iload 8
+      // 0d4: baload
+      // 0d5: if_icmpeq 0ff
+      // 0d8: goto 0df
+      // 0db: invokestatic nW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0de: athrow
+      // 0df: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 0e2: sipush 12005
+      // 0e5: sipush -22650
+      // 0e8: invokestatic nW.a (II)Ljava/lang/String;
+      // 0eb: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 0ee: aload 0
+      // 0ef: dup
+      // 0f0: getfield nW.A I
+      // 0f3: bipush 1
+      // 0f4: iadd
+      // 0f5: putfield nW.A I
+      // 0f8: goto 0ff
+      // 0fb: invokestatic nW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0fe: athrow
+      // 0ff: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 102: new java/lang/StringBuilder
+      // 105: dup
+      // 106: invokespecial java/lang/StringBuilder.<init> ()V
+      // 109: sipush 12004
+      // 10c: sipush 644
+      // 10f: invokestatic nW.a (II)Ljava/lang/String;
+      // 112: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 115: aload 0
+      // 116: getfield nW.a I
+      // 119: invokevirtual java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+      // 11c: sipush 12007
+      // 11f: sipush -564
+      // 122: invokestatic nW.a (II)Ljava/lang/String;
+      // 125: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 128: aload 0
+      // 129: getfield nW.g I
+      // 12c: invokevirtual java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+      // 12f: sipush 12006
+      // 132: sipush 16240
+      // 135: invokestatic nW.a (II)Ljava/lang/String;
+      // 138: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 13b: aload 0
+      // 13c: getfield nW.A I
+      // 13f: invokevirtual java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+      // 142: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // 145: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 148: aload 0
+      // 149: bipush 0
+      // 14a: putfield nW.a I
+      // 14d: iinc 5 1
+      // 150: iload 2
+      // 151: ifne 033
+      // 154: aload 1
+      // 155: invokevirtual TX.C ()I
+      // 158: bipush 2
+      // 159: iload 2
+      // 15a: ifeq 180
+      // 15d: if_icmpne 210
+      // 160: goto 167
+      // 163: invokestatic nW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 166: athrow
+      // 167: bipush 4
+      // 168: aload 0
+      // 169: getfield nW.S Ljava/util/Random;
+      // 16c: invokevirtual java/util/Random.nextInt ()I
+      // 16f: sipush 9670
+      // 172: ldc2_w 1457789888118539213
+      // 175: invokestatic nW.a (IJ)I
+      // 178: iand
+      // 179: goto 180
+      // 17c: invokestatic nW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 17f: athrow
+      // 180: iadd
+      // 181: istore 3
+      // 182: iload 3
+      // 183: bipush 2
+      // 184: iadd
+      // 185: newarray 8
+      // 187: astore 4
+      // 189: bipush 0
+      // 18a: istore 5
+      // 18c: bipush 0
+      // 18d: istore 6
+      // 18f: iload 6
+      // 191: iload 3
+      // 192: if_icmpge 1d3
+      // 195: sipush 30001
+      // 198: ldc2_w 540465686706230075
+      // 19b: invokestatic nW.a (IJ)I
+      // 19e: aload 0
+      // 19f: getfield nW.S Ljava/util/Random;
+      // 1a2: invokevirtual java/util/Random.nextInt ()I
+      // 1a5: sipush 9670
+      // 1a8: ldc2_w 1457789888118539213
+      // 1ab: invokestatic nW.a (IJ)I
+      // 1ae: iand
+      // 1af: iadd
+      // 1b0: i2b
+      // 1b1: istore 7
+      // 1b3: aload 4
+      // 1b5: iload 6
+      // 1b7: iload 7
+      // 1b9: bastore
+      // 1ba: iload 5
+      // 1bc: iload 7
+      // 1be: iadd
+      // 1bf: istore 5
+      // 1c1: iinc 6 1
+      // 1c4: iload 2
+      // 1c5: ifeq 203
+      // 1c8: iload 2
+      // 1c9: ifne 18f
+      // 1cc: goto 1d3
+      // 1cf: invokestatic nW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1d2: athrow
+      // 1d3: aload 4
+      // 1d5: iload 6
+      // 1d7: iinc 6 1
+      // 1da: sipush 30001
+      // 1dd: ldc2_w 540465686706230075
+      // 1e0: invokestatic nW.a (IJ)I
+      // 1e3: iload 5
+      // 1e5: sipush 9670
+      // 1e8: ldc2_w 1457789888118539213
+      // 1eb: invokestatic nW.a (IJ)I
+      // 1ee: iand
+      // 1ef: iadd
+      // 1f0: i2b
+      // 1f1: bastore
+      // 1f2: aload 4
+      // 1f4: iload 6
+      // 1f6: iinc 6 1
+      // 1f9: sipush 9836
+      // 1fc: ldc2_w 828087793160667234
+      // 1ff: invokestatic nW.a (IJ)I
+      // 202: bastore
+      // 203: aload 0
+      // 204: getfield nW.J Ljava/io/OutputStream;
+      // 207: aload 4
+      // 209: bipush 0
+      // 20a: aload 4
+      // 20c: arraylength
+      // 20d: invokevirtual java/io/OutputStream.write ([BII)V
+      // 210: goto 218
+      // 213: astore 3
+      // 214: aload 3
+      // 215: invokevirtual java/lang/Exception.printStackTrace ()V
+      // 218: return
+   }
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+   private static Exception a(Exception var0) {
+      return var0;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block29: {
-            block28: {
-                block27: {
-                    block26: {
-                        var13 = new String[4];
-                        var11_1 = 0;
-                        var10_2 = " \u00c9\u00863X\u0004#h\u00ff\u001e";
-                        var12_3 = " \u00c9\u00863X\u0004#h\u00ff\u001e".length();
-                        var9_4 = 5;
-                        var8_5 = -1;
-lbl7:
-                        // 2 sources
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var13 = new String[4];
+      int var11 = 0;
+      String var10 = " É\u00863X\u0004#hÿ\u001e";
+      int var12 = " É\u00863X\u0004#hÿ\u001e".length();
+      char var9 = 5;
+      int var17 = -1;
 
-                        while (true) {
-                            v0 = 108;
-                            v1 = ++var8_5;
-                            v2 = var10_2.substring(v1, v1 + var9_4);
-                            v3 = -1;
-                            break block26;
-                            break;
-                        }
-lbl13:
-                        // 1 sources
+      label70:
+      while (true) {
+         byte var10000 = 108;
+         String var10001 = var10.substring(++var17, var17 + var9);
+         byte var10002 = -1;
 
-                        while (true) {
-                            var13[var11_1++] = v4.intern();
-                            if ((var8_5 += var9_4) < var12_3) {
-                                var9_4 = var10_2.charAt(var8_5);
-                                ** continue;
-                            }
-                            var10_2 = "D\u008fm\u00eb\u0011\u007f\u000e\u00c7\u00e0X\u00d2N\u0006\u00cdy8h%\u001c\u0098d\u00ef";
-                            var12_3 = "D\u008fm\u00eb\u0011\u007f\u000e\u00c7\u00e0X\u00d2N\u0006\u00cdy8h%\u001c\u0098d\u00ef".length();
-                            var9_4 = 4;
-                            var8_5 = -1;
-lbl22:
-                            // 2 sources
+         while (true) {
+            label65: {
+               char[] var39 = var10001.toCharArray();
+               int var10004 = var39.length;
+               int var14 = 0;
+               byte var42 = var10000;
+               var33 = var39;
+               int var24 = var10004;
+               byte var49;
+               char[] var55;
+               int var10006;
+               if (var10004 <= 1) {
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               } else {
+                  var42 = var10000;
+                  var24 = var10004;
+                  if (var10004 <= var14) {
+                     break label65;
+                  }
 
-                            while (true) {
-                                v0 = 120;
-                                v5 = ++var8_5;
-                                v2 = var10_2.substring(v5, v5 + var9_4);
-                                v3 = 0;
-                                break block26;
-                                break;
-                            }
-                            break;
-                        }
-lbl28:
-                        // 1 sources
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               }
 
-                        while (true) {
-                            var13[var11_1++] = v4.intern();
-                            if ((var8_5 += var9_4) < var12_3) {
-                                var9_4 = var10_2.charAt(var8_5);
-                                ** continue;
-                            }
-                            break block27;
-                            break;
-                        }
-                    }
-                    v6 = v2.toCharArray();
-                    v7 = v6.length;
-                    var14_6 = 0;
-                    v8 = v0;
-                    v9 = v6;
-                    v10 = v7;
-                    if (v7 > 1) ** GOTO lbl85
-                    do {
-                        v11 = v8;
-                        v9 = v9;
-                        v12 = v9;
-                        v13 = v8;
-                        v14 = var14_6;
-                        while (true) {
-                            switch (var14_6 % 7) {
-                                case 0: {
-                                    v15 = 120;
-                                    break;
-                                }
-                                case 1: {
-                                    v15 = 35;
-                                    break;
-                                }
-                                case 2: {
-                                    v15 = 58;
-                                    break;
-                                }
-                                case 3: {
-                                    v15 = 52;
-                                    break;
-                                }
-                                case 4: {
-                                    v15 = 50;
-                                    break;
-                                }
-                                case 5: {
-                                    v15 = 16;
-                                    break;
-                                }
-                                default: {
-                                    v15 = 1;
-                                }
-                            }
-                            v12[v14] = (char)(v12[v14] ^ (v13 ^ v15));
-                            ++var14_6;
-                            v8 = v11;
-                            if (v11 != 0) break;
-                            v11 = v8;
-                            v9 = v9;
-                            v14 = v8;
-                            v12 = v9;
-                            v13 = v8;
-                        }
-lbl85:
-                        // 2 sources
-
-                        v16 = v9;
-                        v10 = v10;
-                    } while (v10 > var14_6);
-                    v4 = new String(v16);
-                    switch (v3) {
-                        default: {
-                            ** continue;
-                        }
-                        ** case 0:
-lbl95:
-                        // 1 sources
-
-                        ** continue;
-                    }
-                }
-                nW.b = var13;
-                nW.c = new String[4];
-                var0_7 = 5026911593148297007L;
-                var6_8 = new long[7];
-                var3_9 = 0;
-                var4_10 = "\u00fb\u0090\u0010&'\u00d5\u008a\u00d3\u0003\u00959\u001d0\u00c8oG\u00fe\u009a\u00a8}9\nJ\bJ\u00fe.\u00d6\n\u0089\u00f9\u00f6\u00ad\u00e7d\u00b8$\u0093\u00ec\u00dd";
-                var5_11 = "\u00fb\u0090\u0010&'\u00d5\u008a\u00d3\u0003\u00959\u001d0\u00c8oG\u00fe\u009a\u00a8}9\nJ\bJ\u00fe.\u00d6\n\u0089\u00f9\u00f6\u00ad\u00e7d\u00b8$\u0093\u00ec\u00dd".length();
-                var2_12 = 0;
-                while (true) {
-                    var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                    v17 = var6_8;
-                    v18 = var3_9++;
-                    v19 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                    v20 = -1;
-                    break block28;
-                    break;
-                }
-lbl112:
-                // 1 sources
-
-                while (true) {
-                    v17[v18] = v21;
-                    if (var2_12 < var5_11) ** continue;
-                    var4_10 = "\u0002\u00cb\u00b4\u00f6g\u008c<4\u0096\u00ed\u00c9w\u0011\u0086\u00bb^";
-                    var5_11 = "\u0002\u00cb\u00b4\u00f6g\u008c<4\u0096\u00ed\u00c9w\u0011\u0086\u00bb^".length();
-                    var2_12 = 0;
-                    while (true) {
-                        var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                        v17 = var6_8;
-                        v18 = var3_9++;
-                        v19 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                        v20 = 0;
-                        break block28;
+               while (true) {
+                  char var64 = var55[var10006];
+                  byte var65;
+                  switch (var14 % 7) {
+                     case 0:
+                        var65 = 120;
                         break;
-                    }
-                    break;
-                }
-lbl125:
-                // 1 sources
+                     case 1:
+                        var65 = 35;
+                        break;
+                     case 2:
+                        var65 = 58;
+                        break;
+                     case 3:
+                        var65 = 52;
+                        break;
+                     case 4:
+                        var65 = 50;
+                        break;
+                     case 5:
+                        var65 = 16;
+                        break;
+                     default:
+                        var65 = 1;
+                  }
 
-                while (true) {
-                    v17[v18] = v21;
-                    if (var2_12 < var5_11) ** continue;
-                    break block29;
-                    break;
-                }
-            }
-            v21 = v19 ^ var0_7;
-            switch (v20) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl136:
-                // 1 sources
+                  var55[var10006] = (char)(var64 ^ var49 ^ var65);
+                  var14++;
+                  if (var42 == 0) {
+                     var10006 = var42;
+                     var55 = var33;
+                     var49 = var42;
+                  } else {
+                     if (var24 <= var14) {
+                        break;
+                     }
 
-                ** continue;
+                     var55 = var33;
+                     var49 = var42;
+                     var10006 = var14;
+                  }
+               }
             }
-        }
-        nW.d = var6_8;
-        nW.e = new Integer[7];
-    }
 
-    private static String a(int n10, int n11) {
-        int n12 = (n10 ^ 0x2EE6) & 0xFFFF;
-        if (c[n12] == null) {
-            int n13;
-            int n14;
-            char[] cArray = b[n12].toCharArray();
-            switch (cArray[0] & 0xFF) {
-                case 0: {
-                    n14 = 34;
-                    break;
-                }
-                case 1: {
-                    n14 = 70;
-                    break;
-                }
-                case 2: {
-                    n14 = 50;
-                    break;
-                }
-                case 3: {
-                    n14 = 157;
-                    break;
-                }
-                case 4: {
-                    n14 = 22;
-                    break;
-                }
-                case 5: {
-                    n14 = 250;
-                    break;
-                }
-                case 6: {
-                    n14 = 78;
-                    break;
-                }
-                case 7: {
-                    n14 = 251;
-                    break;
-                }
-                case 8: {
-                    n14 = 200;
-                    break;
-                }
-                case 9: {
-                    n14 = 231;
-                    break;
-                }
-                case 10: {
-                    n14 = 84;
-                    break;
-                }
-                case 11: {
-                    n14 = 47;
-                    break;
-                }
-                case 12: {
-                    n14 = 18;
-                    break;
-                }
-                case 13: {
-                    n14 = 80;
-                    break;
-                }
-                case 14: {
-                    n14 = 238;
-                    break;
-                }
-                case 15: {
-                    n14 = 68;
-                    break;
-                }
-                case 16: {
-                    n14 = 108;
-                    break;
-                }
-                case 17: {
-                    n14 = 99;
-                    break;
-                }
-                case 18: {
-                    n14 = 48;
-                    break;
-                }
-                case 19: {
-                    n14 = 66;
-                    break;
-                }
-                case 20: {
-                    n14 = 90;
-                    break;
-                }
-                case 21: {
-                    n14 = 208;
-                    break;
-                }
-                case 22: {
-                    n14 = 11;
-                    break;
-                }
-                case 23: {
-                    n14 = 150;
-                    break;
-                }
-                case 24: {
-                    n14 = 131;
-                    break;
-                }
-                case 25: {
-                    n14 = 97;
-                    break;
-                }
-                case 26: {
-                    n14 = 212;
-                    break;
-                }
-                case 27: {
-                    n14 = 160;
-                    break;
-                }
-                case 28: {
-                    n14 = 8;
-                    break;
-                }
-                case 29: {
-                    n14 = 223;
-                    break;
-                }
-                case 30: {
-                    n14 = 169;
-                    break;
-                }
-                case 31: {
-                    n14 = 207;
-                    break;
-                }
-                case 32: {
-                    n14 = 240;
-                    break;
-                }
-                case 33: {
-                    n14 = 219;
-                    break;
-                }
-                case 34: {
-                    n14 = 57;
-                    break;
-                }
-                case 35: {
-                    n14 = 114;
-                    break;
-                }
-                case 36: {
-                    n14 = 36;
-                    break;
-                }
-                case 37: {
-                    n14 = 202;
-                    break;
-                }
-                case 38: {
-                    n14 = 218;
-                    break;
-                }
-                case 39: {
-                    n14 = 96;
-                    break;
-                }
-                case 40: {
-                    n14 = 44;
-                    break;
-                }
-                case 41: {
-                    n14 = 38;
-                    break;
-                }
-                case 42: {
-                    n14 = 25;
-                    break;
-                }
-                case 43: {
-                    n14 = 19;
-                    break;
-                }
-                case 44: {
-                    n14 = 185;
-                    break;
-                }
-                case 45: {
-                    n14 = 214;
-                    break;
-                }
-                case 46: {
-                    n14 = 28;
-                    break;
-                }
-                case 47: {
-                    n14 = 158;
-                    break;
-                }
-                case 48: {
-                    n14 = 134;
-                    break;
-                }
-                case 49: {
-                    n14 = 37;
-                    break;
-                }
-                case 50: {
-                    n14 = 41;
-                    break;
-                }
-                case 51: {
-                    n14 = 88;
-                    break;
-                }
-                case 52: {
-                    n14 = 92;
-                    break;
-                }
-                case 53: {
-                    n14 = 226;
-                    break;
-                }
-                case 54: {
-                    n14 = 46;
-                    break;
-                }
-                case 55: {
-                    n14 = 181;
-                    break;
-                }
-                case 56: {
-                    n14 = 32;
-                    break;
-                }
-                case 57: {
-                    n14 = 104;
-                    break;
-                }
-                case 58: {
-                    n14 = 201;
-                    break;
-                }
-                case 59: {
-                    n14 = 197;
-                    break;
-                }
-                case 60: {
-                    n14 = 152;
-                    break;
-                }
-                case 61: {
-                    n14 = 237;
-                    break;
-                }
-                case 62: {
-                    n14 = 112;
-                    break;
-                }
-                case 63: {
-                    n14 = 3;
-                    break;
-                }
-                case 64: {
-                    n14 = 165;
-                    break;
-                }
-                case 65: {
-                    n14 = 209;
-                    break;
-                }
-                case 66: {
-                    n14 = 125;
-                    break;
-                }
-                case 67: {
-                    n14 = 193;
-                    break;
-                }
-                case 68: {
-                    n14 = 91;
-                    break;
-                }
-                case 69: {
-                    n14 = 126;
-                    break;
-                }
-                case 70: {
-                    n14 = 62;
-                    break;
-                }
-                case 71: {
-                    n14 = 253;
-                    break;
-                }
-                case 72: {
-                    n14 = 109;
-                    break;
-                }
-                case 73: {
-                    n14 = 224;
-                    break;
-                }
-                case 74: {
-                    n14 = 10;
-                    break;
-                }
-                case 75: {
-                    n14 = 82;
-                    break;
-                }
-                case 76: {
-                    n14 = 172;
-                    break;
-                }
-                case 77: {
-                    n14 = 33;
-                    break;
-                }
-                case 78: {
-                    n14 = 161;
-                    break;
-                }
-                case 79: {
-                    n14 = 221;
-                    break;
-                }
-                case 80: {
-                    n14 = 0;
-                    break;
-                }
-                case 81: {
-                    n14 = 35;
-                    break;
-                }
-                case 82: {
-                    n14 = 148;
-                    break;
-                }
-                case 83: {
-                    n14 = 230;
-                    break;
-                }
-                case 84: {
-                    n14 = 116;
-                    break;
-                }
-                case 85: {
-                    n14 = 29;
-                    break;
-                }
-                case 86: {
-                    n14 = 164;
-                    break;
-                }
-                case 87: {
-                    n14 = 103;
-                    break;
-                }
-                case 88: {
-                    n14 = 95;
-                    break;
-                }
-                case 89: {
-                    n14 = 153;
-                    break;
-                }
-                case 90: {
-                    n14 = 199;
-                    break;
-                }
-                case 91: {
-                    n14 = 186;
-                    break;
-                }
-                case 92: {
-                    n14 = 198;
-                    break;
-                }
-                case 93: {
-                    n14 = 249;
-                    break;
-                }
-                case 94: {
-                    n14 = 21;
-                    break;
-                }
-                case 95: {
-                    n14 = 194;
-                    break;
-                }
-                case 96: {
-                    n14 = 156;
-                    break;
-                }
-                case 97: {
-                    n14 = 100;
-                    break;
-                }
-                case 98: {
-                    n14 = 204;
-                    break;
-                }
-                case 99: {
-                    n14 = 77;
-                    break;
-                }
-                case 100: {
-                    n14 = 187;
-                    break;
-                }
-                case 101: {
-                    n14 = 132;
-                    break;
-                }
-                case 102: {
-                    n14 = 247;
-                    break;
-                }
-                case 103: {
-                    n14 = 211;
-                    break;
-                }
-                case 104: {
-                    n14 = 118;
-                    break;
-                }
-                case 105: {
-                    n14 = 120;
-                    break;
-                }
-                case 106: {
-                    n14 = 30;
-                    break;
-                }
-                case 107: {
-                    n14 = 17;
-                    break;
-                }
-                case 108: {
-                    n14 = 130;
-                    break;
-                }
-                case 109: {
-                    n14 = 123;
-                    break;
-                }
-                case 110: {
-                    n14 = 61;
-                    break;
-                }
-                case 111: {
-                    n14 = 60;
-                    break;
-                }
-                case 112: {
-                    n14 = 245;
-                    break;
-                }
-                case 113: {
-                    n14 = 128;
-                    break;
-                }
-                case 114: {
-                    n14 = 94;
-                    break;
-                }
-                case 115: {
-                    n14 = 206;
-                    break;
-                }
-                case 116: {
-                    n14 = 23;
-                    break;
-                }
-                case 117: {
-                    n14 = 15;
-                    break;
-                }
-                case 118: {
-                    n14 = 121;
-                    break;
-                }
-                case 119: {
-                    n14 = 87;
-                    break;
-                }
-                case 120: {
-                    n14 = 159;
-                    break;
-                }
-                case 121: {
-                    n14 = 179;
-                    break;
-                }
-                case 122: {
-                    n14 = 63;
-                    break;
-                }
-                case 123: {
-                    n14 = 149;
-                    break;
-                }
-                case 124: {
-                    n14 = 182;
-                    break;
-                }
-                case 125: {
-                    n14 = 101;
-                    break;
-                }
-                case 126: {
-                    n14 = 191;
-                    break;
-                }
-                case 127: {
-                    n14 = 106;
-                    break;
-                }
-                case 128: {
-                    n14 = 178;
-                    break;
-                }
-                case 129: {
-                    n14 = 39;
-                    break;
-                }
-                case 130: {
-                    n14 = 171;
-                    break;
-                }
-                case 131: {
-                    n14 = 105;
-                    break;
-                }
-                case 132: {
-                    n14 = 86;
-                    break;
-                }
-                case 133: {
-                    n14 = 246;
-                    break;
-                }
-                case 134: {
-                    n14 = 145;
-                    break;
-                }
-                case 135: {
-                    n14 = 83;
-                    break;
-                }
-                case 136: {
-                    n14 = 129;
-                    break;
-                }
-                case 137: {
-                    n14 = 241;
-                    break;
-                }
-                case 138: {
-                    n14 = 98;
-                    break;
-                }
-                case 139: {
-                    n14 = 170;
-                    break;
-                }
-                case 140: {
-                    n14 = 141;
-                    break;
-                }
-                case 141: {
-                    n14 = 196;
-                    break;
-                }
-                case 142: {
-                    n14 = 133;
-                    break;
-                }
-                case 143: {
-                    n14 = 13;
-                    break;
-                }
-                case 144: {
-                    n14 = 140;
-                    break;
-                }
-                case 145: {
-                    n14 = 111;
-                    break;
-                }
-                case 146: {
-                    n14 = 72;
-                    break;
-                }
-                case 147: {
-                    n14 = 5;
-                    break;
-                }
-                case 148: {
-                    n14 = 195;
-                    break;
-                }
-                case 149: {
-                    n14 = 93;
-                    break;
-                }
-                case 150: {
-                    n14 = 143;
-                    break;
-                }
-                case 151: {
-                    n14 = 234;
-                    break;
-                }
-                case 152: {
-                    n14 = 27;
-                    break;
-                }
-                case 153: {
-                    n14 = 151;
-                    break;
-                }
-                case 154: {
-                    n14 = 110;
-                    break;
-                }
-                case 155: {
-                    n14 = 252;
-                    break;
-                }
-                case 156: {
-                    n14 = 81;
-                    break;
-                }
-                case 157: {
-                    n14 = 124;
-                    break;
-                }
-                case 158: {
-                    n14 = 175;
-                    break;
-                }
-                case 159: {
-                    n14 = 174;
-                    break;
-                }
-                case 160: {
-                    n14 = 64;
-                    break;
-                }
-                case 161: {
-                    n14 = 138;
-                    break;
-                }
-                case 162: {
-                    n14 = 9;
-                    break;
-                }
-                case 163: {
-                    n14 = 24;
-                    break;
-                }
-                case 164: {
-                    n14 = 56;
-                    break;
-                }
-                case 165: {
-                    n14 = 213;
-                    break;
-                }
-                case 166: {
-                    n14 = 59;
-                    break;
-                }
-                case 167: {
-                    n14 = 40;
-                    break;
-                }
-                case 168: {
-                    n14 = 53;
-                    break;
-                }
-                case 169: {
-                    n14 = 210;
-                    break;
-                }
-                case 170: {
-                    n14 = 176;
-                    break;
-                }
-                case 171: {
-                    n14 = 115;
-                    break;
-                }
-                case 172: {
-                    n14 = 236;
-                    break;
-                }
-                case 173: {
-                    n14 = 242;
-                    break;
-                }
-                case 174: {
-                    n14 = 69;
-                    break;
-                }
-                case 175: {
-                    n14 = 217;
-                    break;
-                }
-                case 176: {
-                    n14 = 6;
-                    break;
-                }
-                case 177: {
-                    n14 = 146;
-                    break;
-                }
-                case 178: {
-                    n14 = 220;
-                    break;
-                }
-                case 179: {
-                    n14 = 14;
-                    break;
-                }
-                case 180: {
-                    n14 = 43;
-                    break;
-                }
-                case 181: {
-                    n14 = 163;
-                    break;
-                }
-                case 182: {
-                    n14 = 244;
-                    break;
-                }
-                case 183: {
-                    n14 = 142;
-                    break;
-                }
-                case 184: {
-                    n14 = 233;
-                    break;
-                }
-                case 185: {
-                    n14 = 74;
-                    break;
-                }
-                case 186: {
-                    n14 = 222;
-                    break;
-                }
-                case 187: {
-                    n14 = 55;
-                    break;
-                }
-                case 188: {
-                    n14 = 26;
-                    break;
-                }
-                case 189: {
-                    n14 = 102;
-                    break;
-                }
-                case 190: {
-                    n14 = 4;
-                    break;
-                }
-                case 191: {
-                    n14 = 177;
-                    break;
-                }
-                case 192: {
-                    n14 = 167;
-                    break;
-                }
-                case 193: {
-                    n14 = 127;
-                    break;
-                }
-                case 194: {
-                    n14 = 254;
-                    break;
-                }
-                case 195: {
-                    n14 = 45;
-                    break;
-                }
-                case 196: {
-                    n14 = 52;
-                    break;
-                }
-                case 197: {
-                    n14 = 154;
-                    break;
-                }
-                case 198: {
-                    n14 = 136;
-                    break;
-                }
-                case 199: {
-                    n14 = 147;
-                    break;
-                }
-                case 200: {
-                    n14 = 1;
-                    break;
-                }
-                case 201: {
-                    n14 = 183;
-                    break;
-                }
-                case 202: {
-                    n14 = 7;
-                    break;
-                }
-                case 203: {
-                    n14 = 139;
-                    break;
-                }
-                case 204: {
-                    n14 = 173;
-                    break;
-                }
-                case 205: {
-                    n14 = 188;
-                    break;
-                }
-                case 206: {
-                    n14 = 216;
-                    break;
-                }
-                case 207: {
-                    n14 = 228;
-                    break;
-                }
-                case 208: {
-                    n14 = 229;
-                    break;
-                }
-                case 209: {
-                    n14 = 137;
-                    break;
-                }
-                case 210: {
-                    n14 = 89;
-                    break;
-                }
-                case 211: {
-                    n14 = 12;
-                    break;
-                }
-                case 212: {
-                    n14 = 232;
-                    break;
-                }
-                case 213: {
-                    n14 = 255;
-                    break;
-                }
-                case 214: {
-                    n14 = 205;
-                    break;
-                }
-                case 215: {
-                    n14 = 248;
-                    break;
-                }
-                case 216: {
-                    n14 = 155;
-                    break;
-                }
-                case 217: {
-                    n14 = 203;
-                    break;
-                }
-                case 218: {
-                    n14 = 227;
-                    break;
-                }
-                case 219: {
-                    n14 = 190;
-                    break;
-                }
-                case 220: {
-                    n14 = 73;
-                    break;
-                }
-                case 221: {
-                    n14 = 76;
-                    break;
-                }
-                case 222: {
-                    n14 = 42;
-                    break;
-                }
-                case 223: {
-                    n14 = 75;
-                    break;
-                }
-                case 224: {
-                    n14 = 135;
-                    break;
-                }
-                case 225: {
-                    n14 = 180;
-                    break;
-                }
-                case 226: {
-                    n14 = 119;
-                    break;
-                }
-                case 227: {
-                    n14 = 117;
-                    break;
-                }
-                case 228: {
-                    n14 = 162;
-                    break;
-                }
-                case 229: {
-                    n14 = 144;
-                    break;
-                }
-                case 230: {
-                    n14 = 215;
-                    break;
-                }
-                case 231: {
-                    n14 = 113;
-                    break;
-                }
-                case 232: {
-                    n14 = 122;
-                    break;
-                }
-                case 233: {
-                    n14 = 225;
-                    break;
-                }
-                case 234: {
-                    n14 = 54;
-                    break;
-                }
-                case 235: {
-                    n14 = 58;
-                    break;
-                }
-                case 236: {
-                    n14 = 65;
-                    break;
-                }
-                case 237: {
-                    n14 = 168;
-                    break;
-                }
-                case 238: {
-                    n14 = 67;
-                    break;
-                }
-                case 239: {
-                    n14 = 51;
-                    break;
-                }
-                case 240: {
-                    n14 = 2;
-                    break;
-                }
-                case 241: {
-                    n14 = 239;
-                    break;
-                }
-                case 242: {
-                    n14 = 107;
-                    break;
-                }
-                case 243: {
-                    n14 = 243;
-                    break;
-                }
-                case 244: {
-                    n14 = 189;
-                    break;
-                }
-                case 245: {
-                    n14 = 184;
-                    break;
-                }
-                case 246: {
-                    n14 = 31;
-                    break;
-                }
-                case 247: {
-                    n14 = 235;
-                    break;
-                }
-                case 248: {
-                    n14 = 166;
-                    break;
-                }
-                case 249: {
-                    n14 = 71;
-                    break;
-                }
-                case 250: {
-                    n14 = 16;
-                    break;
-                }
-                case 251: {
-                    n14 = 79;
-                    break;
-                }
-                case 252: {
-                    n14 = 192;
-                    break;
-                }
-                case 253: {
-                    n14 = 49;
-                    break;
-                }
-                case 254: {
-                    n14 = 20;
-                    break;
-                }
-                default: {
-                    n14 = 85;
-                }
-            }
-            int n15 = n14;
-            int n16 = (n11 & 0xFF) - n15;
-            if (n16 < 0) {
-                n16 += 256;
-            }
-            if ((n13 = ((n11 & 0xFFFF) >>> 8) - n15) < 0) {
-                n13 += 256;
-            }
-            int n17 = 0;
-            while (n17 < cArray.length) {
-                int n18 = n17 % 2;
-                int n19 = n17;
-                char[] cArray2 = cArray;
-                char c2 = cArray[n19];
-                if (n18 == 0) {
-                    cArray2[n19] = (char)(c2 ^ n16);
-                    n16 = ((n16 >>> 3 | n16 << 5) ^ cArray[n17]) & 0xFF;
-                } else {
-                    cArray2[n19] = (char)(c2 ^ n13);
-                    n13 = ((n13 >>> 3 | n13 << 5) ^ cArray[n17]) & 0xFF;
-                }
-                ++n17;
-            }
-            nW.c[n12] = new String(cArray).intern();
-        }
-        return c[n12];
-    }
+            String var44 = new String(var33).intern();
+            switch (var10002) {
+               case 0:
+                  var13[var11++] = var44;
+                  if ((var17 += var9) >= var12) {
+                     b = var13;
+                     c = new String[4];
+                     long var0 = 5026911593148297007L;
+                     long[] var6 = new long[7];
+                     int var3 = 0;
+                     String var4 = "û\u0090\u0010&'Õ\u008aÓ\u0003\u00959\u001d0ÈoGþ\u009a¨}9\nJ\bJþ.Ö\n\u0089ùö\u00adçd¸$\u0093ìÝ";
+                     int var5 = "û\u0090\u0010&'Õ\u008aÓ\u0003\u00959\u001d0ÈoGþ\u009a¨}9\nJ\bJþ.Ö\n\u0089ùö\u00adçd¸$\u0093ìÝ".length();
+                     byte var2 = 0;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x660F;
-        if (e[n11] == null) {
-            nW.e[n11] = (int)(d[n11] ^ l2);
-        }
-        return e[n11];
-    }
+                     label44:
+                     while (true) {
+                        byte var26 = var2;
+                        var2 += 8;
+                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        long[] var19 = var6;
+                        int var27 = var3++;
+                        long var37 = ((long)var7[0] & 255L) << 56
+                           | ((long)var7[1] & 255L) << 48
+                           | ((long)var7[2] & 255L) << 40
+                           | ((long)var7[3] & 255L) << 32
+                           | ((long)var7[4] & 255L) << 24
+                           | ((long)var7[5] & 255L) << 16
+                           | ((long)var7[6] & 255L) << 8
+                           | (long)var7[7] & 255L;
+                        byte var45 = -1;
+
+                        while (true) {
+                           long var54 = var37 ^ var0;
+                           switch (var45) {
+                              case 0:
+                                 var19[var27] = var54;
+                                 if (var2 >= var5) {
+                                    d = var6;
+                                    e = new Integer[7];
+                                    return;
+                                 }
+                                 break;
+                              default:
+                                 var19[var27] = var54;
+                                 if (var2 < var5) {
+                                    continue label44;
+                                 }
+
+                                 var4 = "\u0002Ë´ög\u008c<4\u0096íÉw\u0011\u0086»^";
+                                 var5 = "\u0002Ë´ög\u008c<4\u0096íÉw\u0011\u0086»^".length();
+                                 var2 = 0;
+                           }
+
+                           byte var28 = var2;
+                           var2 += 8;
+                           var7 = var4.substring(var28, var2).getBytes("ISO-8859-1");
+                           var19 = var6;
+                           var27 = var3++;
+                           var37 = ((long)var7[0] & 255L) << 56
+                              | ((long)var7[1] & 255L) << 48
+                              | ((long)var7[2] & 255L) << 40
+                              | ((long)var7[3] & 255L) << 32
+                              | ((long)var7[4] & 255L) << 24
+                              | ((long)var7[5] & 255L) << 16
+                              | ((long)var7[6] & 255L) << 8
+                              | (long)var7[7] & 255L;
+                           var45 = 0;
+                        }
+                     }
+                  }
+
+                  var9 = var10.charAt(var17);
+                  break;
+               default:
+                  var13[var11++] = var44;
+                  if ((var17 += var9) < var12) {
+                     var9 = var10.charAt(var17);
+                     continue label70;
+                  }
+
+                  var10 = "D\u008fmë\u0011\u007f\u000eÇàXÒN\u0006Íy8h%\u001c\u0098dï";
+                  var12 = "D\u008fmë\u0011\u007f\u000eÇàXÒN\u0006Íy8h%\u001c\u0098dï".length();
+                  var9 = 4;
+                  var17 = -1;
+            }
+
+            var10000 = 120;
+            var10001 = var10.substring(++var17, var17 + var9);
+            var10002 = 0;
+         }
+      }
+   }
+
+   private static String a(int var0, int var1) {
+      int var2 = (var0 ^ 12006) & 65535;
+      if (c[var2] == null) {
+         char[] var3 = b[var2].toCharArray();
+         short var10000;
+         switch (var3[0] & 0xFF) {
+            case 0:
+               var10000 = 34;
+               break;
+            case 1:
+               var10000 = 70;
+               break;
+            case 2:
+               var10000 = 50;
+               break;
+            case 3:
+               var10000 = 157;
+               break;
+            case 4:
+               var10000 = 22;
+               break;
+            case 5:
+               var10000 = 250;
+               break;
+            case 6:
+               var10000 = 78;
+               break;
+            case 7:
+               var10000 = 251;
+               break;
+            case 8:
+               var10000 = 200;
+               break;
+            case 9:
+               var10000 = 231;
+               break;
+            case 10:
+               var10000 = 84;
+               break;
+            case 11:
+               var10000 = 47;
+               break;
+            case 12:
+               var10000 = 18;
+               break;
+            case 13:
+               var10000 = 80;
+               break;
+            case 14:
+               var10000 = 238;
+               break;
+            case 15:
+               var10000 = 68;
+               break;
+            case 16:
+               var10000 = 108;
+               break;
+            case 17:
+               var10000 = 99;
+               break;
+            case 18:
+               var10000 = 48;
+               break;
+            case 19:
+               var10000 = 66;
+               break;
+            case 20:
+               var10000 = 90;
+               break;
+            case 21:
+               var10000 = 208;
+               break;
+            case 22:
+               var10000 = 11;
+               break;
+            case 23:
+               var10000 = 150;
+               break;
+            case 24:
+               var10000 = 131;
+               break;
+            case 25:
+               var10000 = 97;
+               break;
+            case 26:
+               var10000 = 212;
+               break;
+            case 27:
+               var10000 = 160;
+               break;
+            case 28:
+               var10000 = 8;
+               break;
+            case 29:
+               var10000 = 223;
+               break;
+            case 30:
+               var10000 = 169;
+               break;
+            case 31:
+               var10000 = 207;
+               break;
+            case 32:
+               var10000 = 240;
+               break;
+            case 33:
+               var10000 = 219;
+               break;
+            case 34:
+               var10000 = 57;
+               break;
+            case 35:
+               var10000 = 114;
+               break;
+            case 36:
+               var10000 = 36;
+               break;
+            case 37:
+               var10000 = 202;
+               break;
+            case 38:
+               var10000 = 218;
+               break;
+            case 39:
+               var10000 = 96;
+               break;
+            case 40:
+               var10000 = 44;
+               break;
+            case 41:
+               var10000 = 38;
+               break;
+            case 42:
+               var10000 = 25;
+               break;
+            case 43:
+               var10000 = 19;
+               break;
+            case 44:
+               var10000 = 185;
+               break;
+            case 45:
+               var10000 = 214;
+               break;
+            case 46:
+               var10000 = 28;
+               break;
+            case 47:
+               var10000 = 158;
+               break;
+            case 48:
+               var10000 = 134;
+               break;
+            case 49:
+               var10000 = 37;
+               break;
+            case 50:
+               var10000 = 41;
+               break;
+            case 51:
+               var10000 = 88;
+               break;
+            case 52:
+               var10000 = 92;
+               break;
+            case 53:
+               var10000 = 226;
+               break;
+            case 54:
+               var10000 = 46;
+               break;
+            case 55:
+               var10000 = 181;
+               break;
+            case 56:
+               var10000 = 32;
+               break;
+            case 57:
+               var10000 = 104;
+               break;
+            case 58:
+               var10000 = 201;
+               break;
+            case 59:
+               var10000 = 197;
+               break;
+            case 60:
+               var10000 = 152;
+               break;
+            case 61:
+               var10000 = 237;
+               break;
+            case 62:
+               var10000 = 112;
+               break;
+            case 63:
+               var10000 = 3;
+               break;
+            case 64:
+               var10000 = 165;
+               break;
+            case 65:
+               var10000 = 209;
+               break;
+            case 66:
+               var10000 = 125;
+               break;
+            case 67:
+               var10000 = 193;
+               break;
+            case 68:
+               var10000 = 91;
+               break;
+            case 69:
+               var10000 = 126;
+               break;
+            case 70:
+               var10000 = 62;
+               break;
+            case 71:
+               var10000 = 253;
+               break;
+            case 72:
+               var10000 = 109;
+               break;
+            case 73:
+               var10000 = 224;
+               break;
+            case 74:
+               var10000 = 10;
+               break;
+            case 75:
+               var10000 = 82;
+               break;
+            case 76:
+               var10000 = 172;
+               break;
+            case 77:
+               var10000 = 33;
+               break;
+            case 78:
+               var10000 = 161;
+               break;
+            case 79:
+               var10000 = 221;
+               break;
+            case 80:
+               var10000 = 0;
+               break;
+            case 81:
+               var10000 = 35;
+               break;
+            case 82:
+               var10000 = 148;
+               break;
+            case 83:
+               var10000 = 230;
+               break;
+            case 84:
+               var10000 = 116;
+               break;
+            case 85:
+               var10000 = 29;
+               break;
+            case 86:
+               var10000 = 164;
+               break;
+            case 87:
+               var10000 = 103;
+               break;
+            case 88:
+               var10000 = 95;
+               break;
+            case 89:
+               var10000 = 153;
+               break;
+            case 90:
+               var10000 = 199;
+               break;
+            case 91:
+               var10000 = 186;
+               break;
+            case 92:
+               var10000 = 198;
+               break;
+            case 93:
+               var10000 = 249;
+               break;
+            case 94:
+               var10000 = 21;
+               break;
+            case 95:
+               var10000 = 194;
+               break;
+            case 96:
+               var10000 = 156;
+               break;
+            case 97:
+               var10000 = 100;
+               break;
+            case 98:
+               var10000 = 204;
+               break;
+            case 99:
+               var10000 = 77;
+               break;
+            case 100:
+               var10000 = 187;
+               break;
+            case 101:
+               var10000 = 132;
+               break;
+            case 102:
+               var10000 = 247;
+               break;
+            case 103:
+               var10000 = 211;
+               break;
+            case 104:
+               var10000 = 118;
+               break;
+            case 105:
+               var10000 = 120;
+               break;
+            case 106:
+               var10000 = 30;
+               break;
+            case 107:
+               var10000 = 17;
+               break;
+            case 108:
+               var10000 = 130;
+               break;
+            case 109:
+               var10000 = 123;
+               break;
+            case 110:
+               var10000 = 61;
+               break;
+            case 111:
+               var10000 = 60;
+               break;
+            case 112:
+               var10000 = 245;
+               break;
+            case 113:
+               var10000 = 128;
+               break;
+            case 114:
+               var10000 = 94;
+               break;
+            case 115:
+               var10000 = 206;
+               break;
+            case 116:
+               var10000 = 23;
+               break;
+            case 117:
+               var10000 = 15;
+               break;
+            case 118:
+               var10000 = 121;
+               break;
+            case 119:
+               var10000 = 87;
+               break;
+            case 120:
+               var10000 = 159;
+               break;
+            case 121:
+               var10000 = 179;
+               break;
+            case 122:
+               var10000 = 63;
+               break;
+            case 123:
+               var10000 = 149;
+               break;
+            case 124:
+               var10000 = 182;
+               break;
+            case 125:
+               var10000 = 101;
+               break;
+            case 126:
+               var10000 = 191;
+               break;
+            case 127:
+               var10000 = 106;
+               break;
+            case 128:
+               var10000 = 178;
+               break;
+            case 129:
+               var10000 = 39;
+               break;
+            case 130:
+               var10000 = 171;
+               break;
+            case 131:
+               var10000 = 105;
+               break;
+            case 132:
+               var10000 = 86;
+               break;
+            case 133:
+               var10000 = 246;
+               break;
+            case 134:
+               var10000 = 145;
+               break;
+            case 135:
+               var10000 = 83;
+               break;
+            case 136:
+               var10000 = 129;
+               break;
+            case 137:
+               var10000 = 241;
+               break;
+            case 138:
+               var10000 = 98;
+               break;
+            case 139:
+               var10000 = 170;
+               break;
+            case 140:
+               var10000 = 141;
+               break;
+            case 141:
+               var10000 = 196;
+               break;
+            case 142:
+               var10000 = 133;
+               break;
+            case 143:
+               var10000 = 13;
+               break;
+            case 144:
+               var10000 = 140;
+               break;
+            case 145:
+               var10000 = 111;
+               break;
+            case 146:
+               var10000 = 72;
+               break;
+            case 147:
+               var10000 = 5;
+               break;
+            case 148:
+               var10000 = 195;
+               break;
+            case 149:
+               var10000 = 93;
+               break;
+            case 150:
+               var10000 = 143;
+               break;
+            case 151:
+               var10000 = 234;
+               break;
+            case 152:
+               var10000 = 27;
+               break;
+            case 153:
+               var10000 = 151;
+               break;
+            case 154:
+               var10000 = 110;
+               break;
+            case 155:
+               var10000 = 252;
+               break;
+            case 156:
+               var10000 = 81;
+               break;
+            case 157:
+               var10000 = 124;
+               break;
+            case 158:
+               var10000 = 175;
+               break;
+            case 159:
+               var10000 = 174;
+               break;
+            case 160:
+               var10000 = 64;
+               break;
+            case 161:
+               var10000 = 138;
+               break;
+            case 162:
+               var10000 = 9;
+               break;
+            case 163:
+               var10000 = 24;
+               break;
+            case 164:
+               var10000 = 56;
+               break;
+            case 165:
+               var10000 = 213;
+               break;
+            case 166:
+               var10000 = 59;
+               break;
+            case 167:
+               var10000 = 40;
+               break;
+            case 168:
+               var10000 = 53;
+               break;
+            case 169:
+               var10000 = 210;
+               break;
+            case 170:
+               var10000 = 176;
+               break;
+            case 171:
+               var10000 = 115;
+               break;
+            case 172:
+               var10000 = 236;
+               break;
+            case 173:
+               var10000 = 242;
+               break;
+            case 174:
+               var10000 = 69;
+               break;
+            case 175:
+               var10000 = 217;
+               break;
+            case 176:
+               var10000 = 6;
+               break;
+            case 177:
+               var10000 = 146;
+               break;
+            case 178:
+               var10000 = 220;
+               break;
+            case 179:
+               var10000 = 14;
+               break;
+            case 180:
+               var10000 = 43;
+               break;
+            case 181:
+               var10000 = 163;
+               break;
+            case 182:
+               var10000 = 244;
+               break;
+            case 183:
+               var10000 = 142;
+               break;
+            case 184:
+               var10000 = 233;
+               break;
+            case 185:
+               var10000 = 74;
+               break;
+            case 186:
+               var10000 = 222;
+               break;
+            case 187:
+               var10000 = 55;
+               break;
+            case 188:
+               var10000 = 26;
+               break;
+            case 189:
+               var10000 = 102;
+               break;
+            case 190:
+               var10000 = 4;
+               break;
+            case 191:
+               var10000 = 177;
+               break;
+            case 192:
+               var10000 = 167;
+               break;
+            case 193:
+               var10000 = 127;
+               break;
+            case 194:
+               var10000 = 254;
+               break;
+            case 195:
+               var10000 = 45;
+               break;
+            case 196:
+               var10000 = 52;
+               break;
+            case 197:
+               var10000 = 154;
+               break;
+            case 198:
+               var10000 = 136;
+               break;
+            case 199:
+               var10000 = 147;
+               break;
+            case 200:
+               var10000 = 1;
+               break;
+            case 201:
+               var10000 = 183;
+               break;
+            case 202:
+               var10000 = 7;
+               break;
+            case 203:
+               var10000 = 139;
+               break;
+            case 204:
+               var10000 = 173;
+               break;
+            case 205:
+               var10000 = 188;
+               break;
+            case 206:
+               var10000 = 216;
+               break;
+            case 207:
+               var10000 = 228;
+               break;
+            case 208:
+               var10000 = 229;
+               break;
+            case 209:
+               var10000 = 137;
+               break;
+            case 210:
+               var10000 = 89;
+               break;
+            case 211:
+               var10000 = 12;
+               break;
+            case 212:
+               var10000 = 232;
+               break;
+            case 213:
+               var10000 = 255;
+               break;
+            case 214:
+               var10000 = 205;
+               break;
+            case 215:
+               var10000 = 248;
+               break;
+            case 216:
+               var10000 = 155;
+               break;
+            case 217:
+               var10000 = 203;
+               break;
+            case 218:
+               var10000 = 227;
+               break;
+            case 219:
+               var10000 = 190;
+               break;
+            case 220:
+               var10000 = 73;
+               break;
+            case 221:
+               var10000 = 76;
+               break;
+            case 222:
+               var10000 = 42;
+               break;
+            case 223:
+               var10000 = 75;
+               break;
+            case 224:
+               var10000 = 135;
+               break;
+            case 225:
+               var10000 = 180;
+               break;
+            case 226:
+               var10000 = 119;
+               break;
+            case 227:
+               var10000 = 117;
+               break;
+            case 228:
+               var10000 = 162;
+               break;
+            case 229:
+               var10000 = 144;
+               break;
+            case 230:
+               var10000 = 215;
+               break;
+            case 231:
+               var10000 = 113;
+               break;
+            case 232:
+               var10000 = 122;
+               break;
+            case 233:
+               var10000 = 225;
+               break;
+            case 234:
+               var10000 = 54;
+               break;
+            case 235:
+               var10000 = 58;
+               break;
+            case 236:
+               var10000 = 65;
+               break;
+            case 237:
+               var10000 = 168;
+               break;
+            case 238:
+               var10000 = 67;
+               break;
+            case 239:
+               var10000 = 51;
+               break;
+            case 240:
+               var10000 = 2;
+               break;
+            case 241:
+               var10000 = 239;
+               break;
+            case 242:
+               var10000 = 107;
+               break;
+            case 243:
+               var10000 = 243;
+               break;
+            case 244:
+               var10000 = 189;
+               break;
+            case 245:
+               var10000 = 184;
+               break;
+            case 246:
+               var10000 = 31;
+               break;
+            case 247:
+               var10000 = 235;
+               break;
+            case 248:
+               var10000 = 166;
+               break;
+            case 249:
+               var10000 = 71;
+               break;
+            case 250:
+               var10000 = 16;
+               break;
+            case 251:
+               var10000 = 79;
+               break;
+            case 252:
+               var10000 = 192;
+               break;
+            case 253:
+               var10000 = 49;
+               break;
+            case 254:
+               var10000 = 20;
+               break;
+            default:
+               var10000 = 85;
+         }
+
+         short var4 = var10000;
+         int var5 = (var1 & 0xFF) - var4;
+         if (var5 < 0) {
+            var5 += 256;
+         }
+
+         int var6 = ((var1 & 65535) >>> 8) - var4;
+         if (var6 < 0) {
+            var6 += 256;
+         }
+
+         for (int var7 = 0; var7 < var3.length; var7++) {
+            int var8 = var7 % 2;
+            char var10002 = var3[var7];
+            if (var8 == 0) {
+               var3[var7] = (char)(var10002 ^ var5);
+               var5 = ((var5 >>> 3 | var5 << 5) ^ var3[var7]) & 0xFF;
+            } else {
+               var3[var7] = (char)(var10002 ^ var6);
+               var6 = ((var6 >>> 3 | var6 << 5) ^ var3[var7]) & 0xFF;
+            }
+         }
+
+         c[var2] = new String(var3).intern();
+      }
+
+      return c[var2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 26127;
+      if (e[var3] == null) {
+         e[var3] = (int)(d[var3] ^ var1);
+      }
+
+      return e[var3];
+   }
 }
+
+
+
+
 

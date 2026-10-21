@@ -1,28 +1,25 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.IG;
-import com.yn_2;
-
 @Deprecated
-public class P_
-extends yn_2 {
-    public P_(String string) {
-        this(string, IG.G());
-    }
+public class P_ extends com.yn_4 {
+   public P_(String var1) {
+      this(var1, IG.G());
+   }
 
-    public P_(String string, IG iG) {
-        super(string, iG);
-    }
+   public P_(String var1, IG var2) {
+      super(var1, var2);
+   }
 
-    public P_(String string, IG iG, int n10) {
-        super(string, iG, n10);
-    }
+   public P_(String var1, IG var2, int var3) {
+      super(var1, var2, var3);
+   }
 
-    public P_(char[] cArray, int n10, IG iG, int n11) {
-        super(cArray, n10, iG, n11);
-    }
+   public P_(char[] var1, int var2, IG var3, int var4) {
+      super(var1, var2, var3, var4);
+   }
 }
+
+
+
+
 

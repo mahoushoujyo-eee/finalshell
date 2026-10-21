@@ -1,61 +1,60 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-
 public abstract class W2 {
-    public String F;
-    KV p;
-    String T;
-    tl_0 P;
-    private static String y;
+   public String F;
+   KV p;
+   String T;
+   Tl_2 P;
+   private static String y;
 
-    public abstract void O();
+   public abstract void O();
 
-    public String w() {
-        return (String)this.F;
-    }
+   public String w() {
+      return (String)com.c.c(372236004790213499L).get(this);
+   }
 
-    public void J(String string) {
-        this.F = string;
-    }
+   public void J(String var1) {
+      com.c.c(372236004790213499L).set(this, var1);
+   }
 
-    public KV X() {
-        return (KV)this.p;
-    }
+   public KV X() {
+      return (KV)com.c.c(254384586786323749L).get(this);
+   }
 
-    public void M(KV kV) {
-        this.p = kV;
-    }
+   public void M(KV var1) {
+      com.c.c(254384586786323749L).set(this, var1);
+   }
 
-    public String j() {
-        return (String)this.T;
-    }
+   public String j() {
+      return (String)com.c.c(612663620646477309L).get(this);
+   }
 
-    public void G(String string) {
-        this.T = string;
-    }
+   public void G(String var1) {
+      com.c.c(612663620646477309L).set(this, var1);
+   }
 
-    public tl_0 z() {
-        return (tl_0)this.P;
-    }
+   public Tl_2 z() {
+      return (Tl_2)com.c.c(340409795235645728L).get(this);
+   }
 
-    public void s(tl_0 tl_02) {
-        this.P = tl_02;
-    }
+   public void s(Tl_2 var1) {
+      com.c.c(340409795235645728L).set(this, var1);
+   }
 
-    public static void d(String string) {
-        y = string;
-    }
+   public static void d(String var0) {
+      y = var0;
+   }
 
-    public static String F() {
-        return y;
-    }
+   public static String F() {
+      return y;
+   }
 
-    static {
-        if (W2.F() == null) {
-            W2.d("fFBz5b");
-        }
-    }
+   static {
+      if (F() == null) {
+         d("fFBz5b");
+      }
+   }
 }
+
+
+
+
 

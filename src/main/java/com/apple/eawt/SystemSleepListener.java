@@ -1,15 +1,12 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.apple.eawt;
 
-import com.apple.eawt.AppEvent;
-import com.apple.eawt.AppEventListener;
+public interface SystemSleepListener extends AppEventListener {
+   void systemAboutToSleep(AppEvent.SystemSleepEvent var1);
 
-public interface SystemSleepListener
-extends AppEventListener {
-    public void systemAboutToSleep(AppEvent.SystemSleepEvent var1);
-
-    public void systemAwoke(AppEvent.SystemSleepEvent var1);
+   void systemAwoke(AppEvent.SystemSleepEvent var1);
 }
+
+
+
+
 

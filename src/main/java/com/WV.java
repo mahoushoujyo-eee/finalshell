@@ -1,26 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.QX;
-import com.ie_2;
-import com.wc_0;
 import java.awt.event.KeyEvent;
 
-class WV
-implements wc_0 {
-    final QX F;
-    final ie_2 X;
+class WV implements com.Wc_2 {
+   final com.QX F;
+   final ie_4 X;
 
-    WV(ie_2 ie_22, QX qX) {
-        this.X = ie_22;
-        this.F = qX;
-    }
+   WV(ie_4 var1, com.QX var2) {
+      this.X = var1;
+      this.F = var2;
+   }
 
-    @Override
-    public void j(KeyEvent keyEvent) {
-        this.F.V();
-    }
+   @Override
+   public void j(KeyEvent var1) {
+      this.F.V();
+   }
 }
+
+
+
+
 

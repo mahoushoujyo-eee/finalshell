@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.s;
 
 import java.io.IOException;
@@ -9,74 +6,78 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.Arrays;
-import org.s.P;
-import org.s.Q;
-import org.s.k_0;
-import org.s.k_1;
-import org.t.n_0;
 
 public final class W {
-    public static final Reader c;
-    private static String w;
-    private static final long a;
+   public static final Reader c;
+   private static String w;
+   private static final long a;
 
-    private W() {
-    }
+   private W() {
+   }
 
-    public static Reader v(Reader reader, Runnable runnable) {
-        return new P(reader, runnable);
-    }
+   public static Reader v(Reader var0, Runnable var1) {
+      return new org.s.P(var0, var1);
+   }
 
-    public static Reader Q(Reader reader, n_0 n_02) {
-        return new k_1(reader, n_02);
-    }
+   public static Reader Q(Reader var0, org.T.n_2 var1) {
+      return new k_3(var0, var1);
+   }
 
-    public static Reader u(Reader[] readerArray) {
-        return W.H(Arrays.asList(readerArray));
-    }
+   public static Reader u(Reader[] var0) {
+      return H(Arrays.asList(var0));
+   }
 
-    public static Reader H(Iterable iterable) {
-        return new k_0(iterable);
-    }
+   public static Reader H(Iterable var0) {
+      return new K_2(var0);
+   }
 
-    public static Reader e(Reader reader, Writer writer, boolean bl) {
-        return new Q(reader, writer, bl);
-    }
+   public static Reader e(Reader var0, Writer var1, boolean var2) {
+      return new org.s.Q(var0, var1, var2);
+   }
 
-    public static String s(Reader reader) throws IOException {
-        StringWriter stringWriter = new StringWriter();
-        W.S(reader, stringWriter);
-        return stringWriter.toString();
-    }
+   public static String s(Reader var0) throws IOException {
+      StringWriter var1 = new StringWriter();
+      S(var0, var1);
+      return var1.toString();
+   }
 
-    public static void S(Reader reader, Writer writer) throws IOException {
-        int n10;
-        char[] cArray = new char[(int)a];
-        String string = W.v();
-        while ((n10 = reader.read(cArray)) != -1) {
-            writer.write(cArray, 0, n10);
-            if (string != null) continue;
-        }
-    }
+   public static void S(Reader var0, Writer var1) throws IOException {
+      String var10000 = v();
+      char[] var3 = new char[(int)a];
+      String var2 = var10000;
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        if (W.v() == null) {
-            W.i("WMZKm");
-        }
-        long l2 = 1203860507337268925L;
-        a = 0x6F093254CAF5BEBDL ^ l2;
-        c = new StringReader("");
-    }
+      do {
+         int var4 = var0.read(var3);
+         if (var4 == -1) {
+            break;
+         }
 
-    public static void i(String string) {
-        w = string;
-    }
+         var1.write(var3, 0, var4);
+      } while (var2 != null);
+   }
 
-    public static String v() {
-        return w;
-    }
+   static {
+      if (v() == null) {
+         i("WMZKm");
+      }
+
+      long var0 = 1203860507337268925L;
+      long var10002 = 8000981552764141245L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+      c = new StringReader("");
+   }
+
+   public static void i(String var0) {
+      w = var0;
+   }
+
+   public static String v() {
+      return w;
+   }
 }
+
+
+
+
 

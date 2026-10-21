@@ -1,47 +1,49 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.k2_0;
-import com.k3_0;
 import java.awt.event.ContainerAdapter;
 import java.awt.event.ContainerEvent;
 
-class Y0
-extends ContainerAdapter {
-    final boolean w;
-    final k2_0 O;
+class Y0 extends ContainerAdapter {
+   final boolean w;
+   final com.k2_2 O;
 
-    Y0(k2_0 k2_02, boolean bl) {
-        this.O = k2_02;
-        this.w = bl;
-    }
+   Y0(com.k2_2 var1, boolean var2) {
+      this.O = var1;
+      this.w = var2;
+   }
 
-    @Override
-    public void componentAdded(ContainerEvent containerEvent) {
-        int[] nArray = k3_0.L();
-        Y0 y0 = this;
-        if (nArray != null) {
-            if (y0.w) {
-                this.O.L(containerEvent.getComponent());
-            }
-            y0 = this;
-        }
-        y0.O.Y();
-    }
+   @Override
+   public void componentAdded(ContainerEvent var1) {
+      int[] var2 = com.k3_2.L();
+      com.Y0 var10000 = this;
+      if (var2 != null) {
+         if (this.w) {
+            this.O.L(var1.getComponent());
+         }
 
-    @Override
-    public void componentRemoved(ContainerEvent containerEvent) {
-        int[] nArray = k3_0.L();
-        Y0 y0 = this;
-        if (nArray != null) {
-            if (y0.w) {
-                this.O.q(containerEvent.getComponent());
-            }
-            y0 = this;
-        }
-        y0.O.Y();
-    }
+         var10000 = this;
+      }
+
+      var10000.O.Y();
+   }
+
+   @Override
+   public void componentRemoved(ContainerEvent var1) {
+      int[] var2 = com.k3_2.L();
+      com.Y0 var10000 = this;
+      if (var2 != null) {
+         if (this.w) {
+            this.O.q(var1.getComponent());
+         }
+
+         var10000 = this;
+      }
+
+      var10000.O.Y();
+   }
 }
+
+
+
+
 

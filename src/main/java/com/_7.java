@@ -1,14 +1,14 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import java.util.EventListener;
 
-public interface _7
-extends EventListener {
-    public void X();
+public interface _7 extends EventListener {
+   void X();
 
-    public void L();
+   void L();
 }
+
+
+
+
 

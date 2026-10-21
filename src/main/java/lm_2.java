@@ -1,75 +1,17 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import com.ky_2;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.lang.reflect.InvocationTargetException;
+class Lm_2 implements Runnable {
+   final yT_3 i;
 
-/*
- * Renamed from lm
- */
-class lm_2
-implements MouseListener {
-    final boolean T;
-    final ka_1 t;
+   Lm_2(yT_3 var1) {
+      this.i = var1;
+   }
 
-    lm_2(ka_1 ka_12, boolean bl) {
-        this.t = ka_12;
-        this.T = bl;
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-        block7: {
-            int n10;
-            block6: {
-                ky_2[] ky_2Array = ka_1.y();
-                n10 = mouseEvent.getButton();
-                if (ky_2Array != null) break block6;
-                if (n10 != 1) break block7;
-                n10 = this.T ? 1 : 0;
-            }
-            if (n10 == 0) {
-                try {
-                    yt_1.F.J(new DM(this));
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-            }
-        }
-    }
-
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-    }
-
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-        this.t.M = false;
-        try {
-            this.t.k();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-        this.t.M = true;
-        try {
-            this.t.k();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
-
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void run() {
+      com.c.c(536860665853675406L).set(com.c.c(575858067667810643L).get(this), new f7_2());
+   }
 }
+
+
+
+
 

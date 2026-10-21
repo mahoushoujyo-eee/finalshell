@@ -1,45 +1,52 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class LP
-implements MouseListener {
-    final ox_2 A;
+class LP implements MouseListener {
+   final ox_4 A;
 
-    LP(ox_2 ox_22) {
-        this.A = ox_22;
-    }
+   LP(ox_4 var1) {
+      this.A = var1;
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        Object object;
-        try {
-            object = this.A.B.o(mouseEvent.getPoint());
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        this.A.M = object;
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      Object var10000 = com.c.c(255878012033833740L).get(this);
+      Method var10001 = (Method)com.c.c(577313982458780365L).get(com.c.c(255878012033833740L).get(this));
+      Object[] var10002 = com.c.a(var1.getPoint());
+      Method var10004 = com.c.d(520457556467656899L);
+      Object[] var10003 = var10002;
+      var10002 = var10001;
+      var10001 = var10004;
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-    }
+      try {
+         var10001 = (Method)var10001.invoke(var10002, var10003);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-    }
+      com.c.c(448185761952082693L).set(var10000, var10001);
+   }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseExited(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+   }
 }
+
+
+
+
 

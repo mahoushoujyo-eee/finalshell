@@ -1,188 +1,175 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.NZ;
-import com.OT;
-import com.YP;
-import com.YT;
-import com.on_2;
-import com.ov_2;
-import com.pd_1;
-import com.rh_0;
-import com.rp_1;
-import com.wf_1;
-import com.xf_1;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
 public interface QT {
-    public void m(@NotNull OT var1, @NotNull wf_1 var2);
+   void m(@NotNull com.OT var1, @NotNull wF_3 var2);
 
-    public void z(@NotNull OT var1, @NotNull wf_1 var2, @NotNull CompletableFuture var3);
+   void z(@NotNull com.OT var1, @NotNull wF_3 var2, @NotNull CompletableFuture var3);
 
-    public void Y();
+   void Y();
 
-    public void Q();
+   void Q();
 
-    public void N();
+   void N();
 
-    public void D();
+   void D();
 
-    public void M();
+   void M();
 
-    public void R(int var1);
+   void R(int var1);
 
-    public void Q(int var1);
+   void Q(int var1);
 
-    public void K(int var1, char var2);
+   void K(int var1, char var2);
 
-    public void l(int var1);
+   void l(int var1);
 
-    public void v(char[] var1) throws UnsupportedEncodingException;
+   void v(char[] var1) throws UnsupportedEncodingException;
 
-    public void k(String var1);
+   void k(String var1);
 
-    public int w();
+   int w();
 
-    public void e();
+   void e();
 
-    public void o();
+   void o();
 
-    public void K();
+   void K();
 
-    public void w(char var1);
+   void w(char var1);
 
-    public void h();
+   void h();
 
-    public void t();
+   void t();
 
-    public void V();
+   void V();
 
-    public void c(YP var1);
+   void c(com.YP var1);
 
-    public void x(int var1, int var2);
+   void x(int var1, int var2);
 
-    public void N(int var1);
+   void N(int var1);
 
-    public void g(int var1);
+   void g(int var1);
 
-    public void j();
+   void j();
 
-    public void A(int var1);
+   void A(int var1);
 
-    public void n(int var1);
+   void n(int var1);
 
-    public void i(int var1, int var2);
+   void i(int var1, int var2);
 
-    public void E(int var1);
+   void E(int var1);
 
-    public void T(int var1);
+   void T(int var1);
 
-    public void Z(int var1);
+   void Z(int var1);
 
-    public void p(int var1);
+   void p(int var1);
 
-    public void R(rp_1 var1);
+   void R(rP_3 var1);
 
-    public void b(int var1);
+   void b(int var1);
 
-    public void J(int var1);
+   void J(int var1);
 
-    public int R();
+   int R();
 
-    public int b();
+   int b();
 
-    public void d(int var1);
+   void d(int var1);
 
-    public void o(NZ var1, boolean var2);
+   void o(NZ var1, boolean var2);
 
-    public void x();
+   void x();
 
-    public int z();
+   int z();
 
-    public int A();
+   int A();
 
-    public void X(int var1);
+   void X(int var1);
 
-    public void X(String var1);
+   void X(String var1);
 
-    public void v();
+   void v();
 
-    public void C();
+   void C();
 
-    public void w();
+   void w();
 
-    public void X(boolean var1);
+   void X(boolean var1);
 
-    public void W(boolean var1);
+   void W(boolean var1);
 
-    public byte[] r(int var1, int var2);
+   byte[] r(int var1, int var2);
 
-    public void V(boolean var1);
+   void V(boolean var1);
 
-    public void x(boolean var1);
+   void x(boolean var1);
 
-    public void P(boolean var1);
+   void P(boolean var1);
 
-    public ov_2 I();
+   com.ov_4 I();
 
-    public void M(int var1);
+   void M(int var1);
 
-    public void x(int var1);
+   void x(int var1);
 
-    public void i(boolean var1);
+   void i(boolean var1);
 
-    public void e(int var1);
+   void e(int var1);
 
-    public void u(int var1);
+   void u(int var1);
 
-    public void P();
+   void P();
 
-    public void B();
+   void B();
 
-    public void n();
+   void n();
 
-    public void a(String var1);
+   void a(String var1);
 
-    public void e(@Nullable pd_1 var1);
+   void e(@Nullable pD_3 var1);
 
-    public void d(@NotNull YT var1);
+   void d(@NotNull com.YT var1);
 
-    public void L(on_2 var1);
+   void L(com.on_4 var1);
 
-    public void h(boolean var1);
+   void h(boolean var1);
 
-    public void I(String var1);
+   void I(String var1);
 
-    public void R(byte[] var1);
+   void R(byte[] var1);
 
-    public void T(@NotNull String var1);
+   void T(@NotNull String var1);
 
-    public void s();
+   void s();
 
-    public void v(boolean var1);
+   void v(boolean var1);
 
-    @Nullable
-    public xf_1 D();
+   @Nullable
+   xF_3 D();
 
-    @Nullable
-    public xf_1 r();
+   @Nullable
+   xF_3 r();
 
-    default public void X(@NotNull rh_0 rh_02) {
-    }
+   default void X(@NotNull Rh_2 var1) {
+   }
 
-    default public void J(@NotNull rh_0 rh_02) {
-    }
+   default void J(@NotNull Rh_2 var1) {
+   }
 
-    default public void c(@NotNull List list) {
-    }
+   default void c(@NotNull List var1) {
+   }
 }
+
+
+
+
 

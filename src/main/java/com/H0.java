@@ -1,26 +1,25 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.nw_2;
 import java.awt.Component;
 import java.awt.ComponentOrientation;
 
-public interface H0
-extends nw_2 {
-    public Component d();
+public interface H0 extends nw_4 {
+   Component d();
 
-    public boolean R();
+   boolean R();
 
-    public Component P();
+   Component P();
 
-    public boolean U();
+   boolean U();
 
-    public Component b(boolean var1);
+   Component b(boolean var1);
 
-    public ComponentOrientation S();
+   ComponentOrientation S();
 
-    public Component l(ComponentOrientation var1);
+   Component l(ComponentOrientation var1);
 }
+
+
+
+
 

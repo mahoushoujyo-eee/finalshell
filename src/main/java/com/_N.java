@@ -1,66 +1,83 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.kf_2;
-import com.tk_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class _N
-implements ActionListener {
-    final kf_2 G;
+class _N implements ActionListener {
+   final com.kf_4 G;
 
-    _N(kf_2 kf_22) {
-        this.G = kf_22;
-    }
+   _N(com.kf_4 var1) {
+      this.G = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block8: {
-            kf_2 kf_22;
-            block6: {
-                block7: {
-                    tk_0 tk_02;
-                    boolean bl;
-                    block4: {
-                        tk_0 tk_03;
-                        block5: {
-                            boolean bl2;
-                            block2: {
-                                block3: {
-                                    tk_03 = this.G.N();
-                                    bl = tk_0.B();
-                                    tk_03.C(tk_03.w() + (kf_2.I(this.G) ? 0.1f : -0.1f));
-                                    bl2 = kf_2.I(this.G);
-                                    if (bl) break block2;
-                                    if (!bl2) break block3;
-                                    tk_02 = tk_03;
-                                    if (bl) break block4;
-                                    if (tk_02.w() >= 1.0f) break block5;
-                                }
-                                kf_22 = this.G;
-                                if (bl) break block6;
-                                bl2 = kf_2.I(kf_22);
-                            }
-                            if (bl2) break block7;
-                            tk_02 = tk_03;
-                            if (bl) break block4;
-                            if (!(tk_02.w() <= 0.0f)) break block7;
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      com.kf_4 var6;
+      label49: {
+         label54: {
+            boolean var2;
+            label47: {
+               com.Tk_2 var3;
+               label55: {
+                  boolean var10000 = com.Tk_2.B();
+                  var3 = this.G.N();
+                  var2 = var10000;
+                  var3.C(var3.w() + (com.kf_4.I(this.G) ? 0.1F : -0.1F));
+                  boolean var4 = com.kf_4.I(this.G);
+                  if (!var2) {
+                     if (var4) {
+                        var5 = var3;
+                        if (var2) {
+                           break label47;
                         }
-                        tk_02 = tk_03;
-                    }
-                    tk_02.C(kf_2.I(this.G) ? 1.0f : 0.0f);
-                    this.G.revalidate();
-                    kf_2.R(this.G, false);
-                    kf_2.f(this.G).Y();
-                    if (!bl) break block8;
-                }
-                kf_22 = this.G;
+
+                        if (var3.w() >= 1.0F) {
+                           break label55;
+                        }
+                     }
+
+                     var6 = this.G;
+                     if (var2) {
+                        break label49;
+                     }
+
+                     var4 = com.kf_4.I(this.G);
+                  }
+
+                  if (var4) {
+                     break label54;
+                  }
+
+                  var5 = var3;
+                  if (var2) {
+                     break label47;
+                  }
+
+                  if (!(var3.w() <= 0.0F)) {
+                     break label54;
+                  }
+               }
+
+               var5 = var3;
             }
-            kf_22.revalidate();
-        }
-    }
+
+            var5.C(com.kf_4.I(this.G) ? 1.0F : 0.0F);
+            this.G.revalidate();
+            com.kf_4.R(this.G, false);
+            com.kf_4.f(this.G).Y();
+            if (!var2) {
+               return;
+            }
+         }
+
+         var6 = this.G;
+      }
+
+      var6.revalidate();
+   }
 }
+
+
+
+
 

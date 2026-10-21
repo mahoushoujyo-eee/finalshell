@@ -1,177 +1,183 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import java.net.DatagramPacket;
 import java.util.ArrayList;
 
-public class WA
-extends WC {
-    ArrayList b;
-    byte[] X;
-    int L;
-    private static final long[] a;
-    private static final Integer[] c;
+public class WA extends WC {
+   ArrayList b;
+   byte[] X = null;
+   int L;
+   private static final long[] a;
+   private static final Integer[] c;
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    public WA(long var1_1, ArrayList var3_2, int var4_3, int var5_4, int var6_5) {
-        super();
-        this.X = null;
-        this.H = var6_5;
-        this.l = var5_4;
-        this.b = var3_2;
-        this.L = var4_3;
-        var8_6 = WA.a(2768, 7697344727123381129L) + 4 * var3_2.size();
-        this.X = new byte[var8_6 + WA.a(10661, 8587183764665133306L) + WA.a(15896, 1958708777042018115L)];
-        var7_7 = WC.U();
-        this.T = D6.T;
-        B8.P(this.W, this.X, 0);
-        B8.P(this.T, this.X, 2);
-        lh_1.u(var5_4, this.X, 4);
-        lh_1.u(var6_5, this.X, WA.a(11899, 8979632000787214115L));
-        lh_1.u(var4_3, this.X, WA.a(4822, 8761377893570499457L));
-        B8.P((short)var3_2.size(), this.X, WA.a(25415, 214352039759487515L));
-        var9_8 = 0;
-        if (var7_7 != null) ** GOTO lbl28
-        block0: while (true) {
-            v0 /* !! */  = var3_2.get(var9_8);
-            do {
-                var10_9 = (Integer)v0 /* !! */ ;
-                lh_1.u(var10_9, this.X, WA.a(9321, 3173362992766739775L) + 4 * var9_8 + WA.a(32120, 1094003818736106530L));
-                ++var9_8;
-lbl28:
-                // 2 sources
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   public WA(long var1, ArrayList var3, int var4, int var5, int var6) {
+      this.H = var6;
+      this.l = var5;
+      this.b = var3;
+      com.ky_4[] var10000 = WC.U();
+      this.L = var4;
+      int var8 = a(2768, 7697344727123381129L) + 4 * var3.size();
+      this.X = new byte[var8 + a(10661, 8587183764665133306L) + a(15896, 1958708777042018115L)];
+      com.ky_4[] var7 = var10000;
+      this.T = D6.T;
+      B8.P(this.W, this.X, 0);
+      B8.P(this.T, this.X, 2);
+      lH_3.u(var5, this.X, 4);
+      lH_3.u(var6, this.X, a(11899, 8979632000787214115L));
+      lH_3.u(var4, this.X, a(4822, 8761377893570499457L));
+      B8.P((short)var3.size(), this.X, a(25415, 214352039759487515L));
+      int var9 = 0;
+      if (var7 == null) {
+         int var10 = (Integer)var3.get(var9);
+         lH_3.u(var10, this.X, a(9321, 3173362992766739775L) + 4 * var9 + a(32120, 1094003818736106530L));
+         var9++;
+      }
 
-                if (var9_8 < var3_2.size()) continue block0;
-                v0 /* !! */  = this;
-            } while (var7_7 == null);
-            break;
-        }
-        v0 /* !! */ .g = new DatagramPacket(this.X, this.X.length);
-        if (ky_2.F() != null) {
-            WC.X(new ky_2[5]);
-        }
-    }
+      while (true) {
+         if (var9 >= var3.size()) {
+            var10000 = this;
+            if (var7 != null) {
+               this.g = new DatagramPacket(this.X, this.X.length);
+               if (com.ky_4.F() != null) {
+                  WC.X(new com.ky_4[5]);
+               }
 
-    public ArrayList Z() {
-        return this.b;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public WA(DatagramPacket var1_1) {
-        v0 = WC.U();
-        super();
-        this.X = null;
-        var2_2 = v0;
-        this.g = var1_1;
-        this.X = var1_1.getData();
-        this.W = B8.M(this.X, 0);
-        this.T = B8.M(this.X, 2);
-        this.l = lh_1.z(this.X, 4);
-        this.H = lh_1.z(this.X, WA.a(32120, 1094003818736106530L));
-        this.L = lh_1.z(this.X, WA.a(17350, 441876042515579544L));
-        var3_3 = B8.M(this.X, WA.a(28578, 1403793593207860983L));
-        this.b = new ArrayList<E>();
-        var4_4 = 0;
-        var5_5 = 0;
-        if (var2_2 != null) ** GOTO lbl24
-        block0: while (true) {
-            var4_4 = WA.a(11636, 3747009992210410537L) + 4 * var5_5;
-            do {
-                var6_6 = lh_1.z(this.X, var4_4 + WA.a(32120, 1094003818736106530L));
-                this.b.add(var6_6);
-                ++var5_5;
-lbl24:
-                // 2 sources
-
-                if (var5_5 < var3_3) continue block0;
-            } while (var2_2 == null);
-            break;
-        }
-    }
-
-    public int U() {
-        return this.L;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 8482846483527871467L;
-                var6_1 = new long[11];
-                var3_2 = 0;
-                var4_3 = "\u0002\u00f2:\u0014\u00df\u0004C\to\u0081\u00e1f\u00a2<)\u007fB\u00f4\u00b0[\u0085S\u00c7\u00c8\u00ba\u00af\u001f\u00c4\u00a4g\t\u00e0\u00e2\u0098\u00e9\u00f9\u008c\u00de\u00d4\u00a1\u00e3\u00f8\u00ab2\u0080v\u0017\u00c1\u0093\u00f6X\u00e4\u00fb3\u00e0p\r\u00a9\u00d4\u009bB\u007fD\u00c07l\u0084K\u0087\u00e3xf";
-                var5_4 = "\u0002\u00f2:\u0014\u00df\u0004C\to\u0081\u00e1f\u00a2<)\u007fB\u00f4\u00b0[\u0085S\u00c7\u00c8\u00ba\u00af\u001f\u00c4\u00a4g\t\u00e0\u00e2\u0098\u00e9\u00f9\u008c\u00de\u00d4\u00a1\u00e3\u00f8\u00ab2\u0080v\u0017\u00c1\u0093\u00f6X\u00e4\u00fb3\u00e0p\r\u00a9\u00d4\u009bB\u007fD\u00c07l\u0084K\u0087\u00e3xf".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "\u0000\u00ae\u00dd\u009b\u00e1\u00e2\u00ce\u00de\u00c5\u00d2\u001f\u00fb\u001b\u00c6\u0005\f";
-                    var5_4 = "\u0000\u00ae\u00dd\u009b\u00e1\u00e2\u00ce\u00de\u00c5\u00d2\u001f\u00fb\u001b\u00c6\u0005\f".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+               return;
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
+         } else {
+            var10000 = (com.ky_4[])var3.get(var9);
+         }
 
-                ** continue;
+         int var11 = (Integer)var10000;
+         lH_3.u(var11, this.X, a(9321, 3173362992766739775L) + 4 * var9 + a(32120, 1094003818736106530L));
+         var9++;
+      }
+   }
+
+   public ArrayList Z() {
+      return this.b;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   public WA(DatagramPacket var1) {
+      com.ky_4[] var10000 = WC.U();
+      super();
+      this.X = null;
+      com.ky_4[] var2 = var10000;
+      this.g = var1;
+      this.X = var1.getData();
+      this.W = B8.M(this.X, 0);
+      this.T = B8.M(this.X, 2);
+      this.l = lH_3.z(this.X, 4);
+      this.H = lH_3.z(this.X, a(32120, 1094003818736106530L));
+      this.L = lH_3.z(this.X, a(17350, 441876042515579544L));
+      short var3 = B8.M(this.X, a(28578, 1403793593207860983L));
+      this.b = new ArrayList();
+      int var4 = 0;
+      int var5 = 0;
+      if (var2 == null) {
+         var4 = a(11636, 3747009992210410537L) + 4 * var5;
+      } else if (var5 >= var3) {
+         if (var2 != null) {
+            return;
+         }
+      } else {
+         var4 = a(11636, 3747009992210410537L) + 4 * var5;
+      }
+
+      while (true) {
+         int var6 = lH_3.z(this.X, var4 + a(32120, 1094003818736106530L));
+         this.b.add(var6);
+         if (++var5 >= var3) {
+            if (var2 != null) {
+               return;
             }
-        }
-        WA.a = var6_1;
-        WA.c = new Integer[11];
-    }
+         } else {
+            var4 = a(11636, 3747009992210410537L) + 4 * var5;
+         }
+      }
+   }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x415F;
-        if (c[n11] == null) {
-            WA.c[n11] = (int)(a[n11] ^ l2);
-        }
-        return c[n11];
-    }
+   public int U() {
+      return this.L;
+   }
+
+   static {
+      long var0 = 8482846483527871467L;
+      long[] var6 = new long[11];
+      int var3 = 0;
+      String var4 = "\u0002ò:\u0014ß\u0004C\to\u0081áf¢<)\u007fBô°[\u0085SÇÈº¯\u001fÄ¤g\tàâ\u0098éù\u008cÞÔ¡ãø«2\u0080v\u0017Á\u0093öXäû3àp\r©Ô\u009bB\u007fDÀ7l\u0084K\u0087ãxf";
+      int var5 = "\u0002ò:\u0014ß\u0004C\to\u0081áf¢<)\u007fBô°[\u0085SÇÈº¯\u001fÄ¤g\tàâ\u0098éù\u008cÞÔ¡ãø«2\u0080v\u0017Á\u0093öXäû3àp\r©Ô\u009bB\u007fDÀ7l\u0084K\u0087ãxf"
+         .length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     c = new Integer[11];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "\u0000®Ý\u009báâÎÞÅÒ\u001fû\u001bÆ\u0005\f";
+                  var5 = "\u0000®Ý\u009báâÎÞÅÒ\u001fû\u001bÆ\u0005\f".length();
+                  var2 = 0;
+            }
+
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 16735;
+      if (c[var3] == null) {
+         c[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return c[var3];
+   }
 }
+
+
+
+
 

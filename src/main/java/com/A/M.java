@@ -1,47 +1,45 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.A;
 
-import com.A.C;
-import com.a.y_0;
-import com.c4_0;
+class M extends com.c4_2 {
+   final C Y;
 
-class M
-extends c4_0 {
-    final C Y;
+   M(C var1, boolean var2) {
+      super(var2);
+      this.Y = var1;
+   }
 
-    M(C c2, boolean bl) {
-        this.Y = c2;
-        super(bl);
-    }
+   @Override
+   public boolean z() {
+      return this.Y.N;
+   }
 
-    @Override
-    public boolean z() {
-        return this.Y.N;
-    }
+   @Override
+   public void f(boolean var1) {
+      int[] var2 = com.A.y_2.M();
+      boolean var10000 = this.Y.N;
+      if (var2 != null) {
+         if (!this.Y.N) {
+            return;
+         }
 
-    @Override
-    public void f(boolean bl) {
-        block5: {
-            boolean bl2;
-            block6: {
-                int[] nArray;
-                block4: {
-                    nArray = y_0.M();
-                    bl2 = this.Y.N;
-                    if (nArray == null) break block4;
-                    if (!bl2) break block5;
-                    bl2 = this.Y.isShowing();
-                }
-                if (nArray == null) break block6;
-                if (!bl2) break block5;
-                bl2 = bl;
-            }
-            if (!bl2) {
-                this.Y.setVisible(false);
-            }
-        }
-    }
+         var10000 = this.Y.isShowing();
+      }
+
+      if (var2 != null) {
+         if (!var10000) {
+            return;
+         }
+
+         var10000 = var1;
+      }
+
+      if (!var10000) {
+         this.Y.setVisible(false);
+      }
+   }
 }
+
+
+
+
 

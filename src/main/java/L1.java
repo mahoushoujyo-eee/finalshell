@@ -1,124 +1,125 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import javax.swing.Icon;
 
 public class L1 {
-    String A;
-    String I;
-    int J;
-    bq_0 o;
-    int M;
-    String p;
-    bo_2 l;
-    Icon O;
-    boolean N;
-    long e;
-    int G;
+   String A;
+   String I;
+   int J;
+   Bq_2 o;
+   int M;
+   String p;
+   bo_4 l;
+   Icon O;
+   boolean N;
+   long e;
+   int G;
 
-    public L1(String string, String string2) {
-        this.p = "";
-        this.G = -1;
-        this.I = string;
-        this.A = string2;
-    }
+   public L1(String var1, String var2) {
+      com.c.c(222693280651791850L).set(this, "");
+      com.c.c(632481476882544080L).setInt(this, -1);
+      com.c.c(165083449235825885L).set(this, var1);
+      com.c.c(626654266711921444L).set(this, var2);
+   }
 
-    public L1() {
-        this.p = "";
-        this.G = -1;
-    }
+   public L1() {
+      com.c.c(222693280651791850L).set(this, "");
+      com.c.c(632481476882544080L).setInt(this, -1);
+   }
 
-    public String A() {
-        return (String)this.A;
-    }
+   public String A() {
+      return (String)com.c.c(626654266711921444L).get(this);
+   }
 
-    public void i(String string) {
-        this.A = string;
-    }
+   public void i(String var1) {
+      com.c.c(626654266711921444L).set(this, var1);
+   }
 
-    public String toString() {
-        return (String)this.A;
-    }
+   @Override
+   public String toString() {
+      return (String)com.c.c(626654266711921444L).get(this);
+   }
 
-    public String R() {
-        return (String)this.I;
-    }
+   public String R() {
+      return (String)com.c.c(165083449235825885L).get(this);
+   }
 
-    public void A(String string) {
-        this.I = string;
-    }
+   public void A(String var1) {
+      com.c.c(165083449235825885L).set(this, var1);
+   }
 
-    public int K() {
-        return this.J;
-    }
+   public int K() {
+      return com.c.c(312118427121744795L).getInt(this);
+   }
 
-    public void m(int n10) {
-        this.J = n10;
-    }
+   public void m(int var1) {
+      com.c.c(312118427121744795L).setInt(this, var1);
+   }
 
-    public bq_0 S() {
-        return (bq_0)this.o;
-    }
+   public Bq_2 S() {
+      return (Bq_2)com.c.c(445251821580993086L).get(this);
+   }
 
-    public void X(bq_0 bq_02) {
-        this.o = bq_02;
-    }
+   public void X(Bq_2 var1) {
+      com.c.c(445251821580993086L).set(this, var1);
+   }
 
-    public int w() {
-        return this.M;
-    }
+   public int w() {
+      return com.c.c(203192436358409896L).getInt(this);
+   }
 
-    public void x(int n10) {
-        this.M = n10;
-    }
+   public void x(int var1) {
+      com.c.c(203192436358409896L).setInt(this, var1);
+   }
 
-    public String y() {
-        return (String)this.p;
-    }
+   public String y() {
+      return (String)com.c.c(222693280651791850L).get(this);
+   }
 
-    public void n(String string) {
-        this.p = string;
-    }
+   public void n(String var1) {
+      com.c.c(222693280651791850L).set(this, var1);
+   }
 
-    public bo_2 g() {
-        return (bo_2)this.l;
-    }
+   public bo_4 g() {
+      return (bo_4)com.c.c(201606324329507508L).get(this);
+   }
 
-    public void Q(bo_2 bo_22) {
-        this.l = bo_22;
-    }
+   public void Q(bo_4 var1) {
+      com.c.c(201606324329507508L).set(this, var1);
+   }
 
-    public Icon b() {
-        return (Icon)this.O;
-    }
+   public Icon b() {
+      return (Icon)com.c.c(577255105373617227L).get(this);
+   }
 
-    public void v(Icon icon) {
-        this.O = icon;
-    }
+   public void v(Icon var1) {
+      com.c.c(577255105373617227L).set(this, var1);
+   }
 
-    public boolean G() {
-        return this.N;
-    }
+   public boolean G() {
+      return com.c.c(534071618107243252L).getBoolean(this);
+   }
 
-    public void r(boolean bl) {
-        this.N = bl;
-    }
+   public void r(boolean var1) {
+      com.c.c(534071618107243252L).setBoolean(this, var1);
+   }
 
-    public long O() {
-        return this.e;
-    }
+   public long O() {
+      return com.c.c(421498330407332360L).getLong(this);
+   }
 
-    public void V(long l2) {
-        this.e = l2;
-    }
+   public void V(long var1) {
+      com.c.c(421498330407332360L).setLong(this, var1);
+   }
 
-    public int z() {
-        return this.G;
-    }
+   public int z() {
+      return com.c.c(632481476882544080L).getInt(this);
+   }
 
-    public void k(int n10) {
-        this.G = n10;
-    }
+   public void k(int var1) {
+      com.c.c(632481476882544080L).setInt(this, var1);
+   }
 }
+
+
+
+
 

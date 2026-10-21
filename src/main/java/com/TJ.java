@@ -1,120 +1,214 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.T4;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Insets;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public class TJ
-extends T4 {
-    protected int d;
-    protected boolean r;
+public class TJ extends com.T4 {
+   protected int d;
+   protected boolean r;
 
-    public TJ() {
-        this(2);
-    }
+   public TJ() {
+      this(2);
+   }
 
-    public TJ(int n10) {
-        this(n10, false);
-    }
+   public TJ(int var1) {
+      this(var1, false);
+   }
 
-    public TJ(int n10, boolean bl) {
-        this.d = n10;
-        this.r = bl;
-    }
+   public TJ(int var1, boolean var2) {
+      this.d = var1;
+      this.r = var2;
+   }
 
-    public int d() {
-        return this.d;
-    }
+   public int d() {
+      return this.d;
+   }
 
-    public void c(int n10) {
-        this.d = n10;
-    }
+   public void c(int var1) {
+      this.d = var1;
+   }
 
-    public boolean d() {
-        return this.r;
-    }
+   public boolean d$boolean() {
+      return this.r;
+   }
 
-    public void X(boolean bl) {
-        this.r = bl;
-    }
+   public void X(boolean var1) {
+      this.r = var1;
+   }
 
-    @Override
-    public Dimension preferredLayoutSize(Container container) {
-        return this.Q(container, false);
-    }
+   @Override
+   public Dimension preferredLayoutSize(Container var1) {
+      return this.Q(var1, false);
+   }
 
-    @Override
-    public Dimension minimumLayoutSize(Container container) {
-        return this.Q(container, true);
-    }
+   @Override
+   public Dimension minimumLayoutSize(Container var1) {
+      return this.Q(var1, true);
+   }
 
-    /*
-     * Exception decompiling
-     */
-    @Override
-    public void layoutContainer(Container var1_1) {
-        /*
-         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
-         * 
-         * org.benf.cfr.reader.util.ConfusedCFRException: Statement already marked as first in another block
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.markFirstStatementInBlock(Op03SimpleStatement.java:461)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.Misc.markWholeBlock(Misc.java:251)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.considerAsSimpleIf(ConditionalRewriter.java:673)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.identifyNonjumpingConditionals(ConditionalRewriter.java:56)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:722)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
-         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
-         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
-         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
-         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
-         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
-         *     at org.benf.cfr.reader.Main.main(Main.java:54)
-         */
-        throw new IllegalStateException("Decompilation failed");
-    }
+   @Override
+   public void layoutContainer(Container var1) {
+      int var10000 = com.T4.b();
+      Dimension var3 = this.preferredLayoutSize(var1);
+      int var2 = var10000;
+      Dimension var4 = new Dimension(var3.width, var1.getSize().height);
+      byte var5 = var1.getComponentOrientation().isLeftToRight();
+      Insets var6 = var1.getInsets();
+      var10000 = var5;
+      if (var2 != 0) {
+         var10000 = var5 != 0 ? var6.left : var6.right;
+      }
 
-    protected Dimension Q(Container container, boolean bl) {
-        Container container2;
-        Dimension dimension;
-        block4: {
-            int n10 = container.getComponentCount();
-            int n11 = T4.O();
-            dimension = new Dimension(0, 0);
-            int n12 = 0;
-            while (n12 < n10) {
-                container2 = container;
-                if (n11 == 0) {
-                    Component component = container2.getComponent(n12);
-                    Dimension dimension2 = bl ? component.getMinimumSize() : component.getPreferredSize();
-                    dimension.height = Math.max(dimension2.height, dimension.height);
-                    dimension.width += dimension2.width;
-                    if (n11 == 0) {
-                        if (n12 != 0) {
-                            dimension.width += this.d();
+      int var7 = var10000;
+      var10000 = var5;
+      if (var2 != 0) {
+         var10000 = var5 != 0 ? var6.right : var6.left;
+      }
+
+      int var8 = var10000;
+      var10000 = var3.width;
+      if (var2 != 0) {
+         var10000 = var3.width < var4.width ? 1 : 0;
+      }
+
+      int var9 = var10000;
+      int var10 = var7;
+      int var11 = var6.top;
+      int var12 = Math.max(var4.height, var3.height) - var6.top - var6.bottom;
+      int var13 = var4.width - var3.width;
+      int var14 = var1.getComponentCount();
+      int var15 = 0;
+
+      while (var15 < var14) {
+         Component var16 = var1.getComponent(var15);
+         if (var2 != 0) {
+            if (var16.isVisible()) {
+               var10000 = var9;
+               if (var2 != 0) {
+                  var10000 = var9 != 0 ? var16.getMinimumSize().width : var16.getPreferredSize().width;
+               }
+
+               int var17 = var10000;
+               var10000 = var13;
+               if (var2 != 0) {
+                  if (var13 > 0) {
+                     var17 += var17 * var13 / var3.width;
+                  }
+
+                  var10000 = this.r;
+               }
+
+               label93: {
+                  label109: {
+                     if (var2 != 0) {
+                        if (var10000 == 0) {
+                           break label109;
                         }
-                        ++n12;
-                    }
-                    if (n11 == 0) continue;
-                }
-                break block4;
+
+                        var10000 = var15;
+                     }
+
+                     int var10001 = var14 - 1;
+                     if (var2 != 0) {
+                        if (var10000 != var10001) {
+                           break label109;
+                        }
+
+                        var10000 = var1.getWidth() - var10;
+                        var10001 = var8;
+                     }
+
+                     var10000 -= var10001;
+                     if (var2 == 0) {
+                        break label93;
+                     }
+
+                     if (var10000 > 0) {
+                        var10000 = var1.getWidth() - var10 - var8;
+                        break label93;
+                     }
+                  }
+
+                  var10000 = var17;
+               }
+
+               label77: {
+                  int var18;
+                  label76: {
+                     var18 = var10000;
+                     if (var2 != 0) {
+                        if (var5 == 0) {
+                           break label76;
+                        }
+
+                        var16.setBounds(var10, var11, var18, var12);
+                     }
+
+                     if (var2 != 0) {
+                        break label77;
+                     }
+                  }
+
+                  var16.setBounds(var1.getWidth() - var10 - var18, var11, var18, var12);
+               }
+
+               var10 += var17 + this.d();
             }
-            container2 = container;
-        }
-        Insets insets = container2.getInsets();
-        dimension.width += insets.left + insets.right;
-        dimension.height += insets.top + insets.bottom;
-        return dimension;
-    }
+
+            var15++;
+         }
+
+         if (var2 == 0) {
+            break;
+         }
+      }
+   }
+
+   protected Dimension Q(Container var1, boolean var2) {
+      int var10000 = com.T4.O();
+      int var4 = var1.getComponentCount();
+      int var3 = var10000;
+      Dimension var5 = new Dimension(0, 0);
+      int var6 = 0;
+
+      while (true) {
+         if (var6 < var4) {
+            var10 = var1;
+            if (var3 != 0) {
+               break;
+            }
+
+            Component var7 = var1.getComponent(var6);
+            Dimension var8 = var2 ? var7.getMinimumSize() : var7.getPreferredSize();
+            var5.height = Math.max(var8.height, var5.height);
+            var5.width = var5.width + var8.width;
+            if (var3 == 0) {
+               if (var6 != 0) {
+                  var5.width = var5.width + this.d();
+               }
+
+               var6++;
+            }
+
+            if (var3 == 0) {
+               continue;
+            }
+         }
+
+         var10 = var1;
+         break;
+      }
+
+      Insets var9 = var10.getInsets();
+      var5.width = var5.width + var9.left + var9.right;
+      var5.height = var5.height + var9.top + var9.bottom;
+      return var5;
+   }
 }
+
+
+
+
 

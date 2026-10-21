@@ -1,181 +1,205 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.QT;
-import com._y_0;
-import com.aW;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-@Deprecated(forRemoval=true)
-final class PN
-implements aW,
-KeyListener {
-    private final Object K = new Object();
-    private final QT b;
-    private StringBuffer L;
-    private boolean A;
-    private static final long a;
+@Deprecated(
+   forRemoval = true
+)
+final class PN implements com.aW, KeyListener {
+   private final Object K = new Object();
+   private final com.QT b;
+   private StringBuffer L;
+   private boolean A;
+   private static final long a;
 
-    public PN(QT qT) {
-        this.b = qT;
-        this.A = true;
-    }
+   public PN(com.QT var1) {
+      this.b = var1;
+      this.A = true;
+   }
 
-    @Override
-    public String k(String string) {
-        this.A = false;
-        String string2 = this.S(string, null);
-        this.A = true;
-        return string2;
-    }
+   @Override
+   public String k(String var1) {
+      this.A = false;
+      String var2 = this.S(var1, null);
+      this.A = true;
+      return var2;
+   }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     * Unable to fully structure code
-     */
-    @Override
-    public String S(String var1_1, String var2_2) {
-        var4_3 = this.K;
-        synchronized (var4_3) {
-            block9: {
-                var3_4 = _y_0.y();
-                this.b.a(var1_1);
-                this.L = new StringBuffer();
-                v0 = var2_2;
-                if (var3_4 != 0) ** GOTO lbl25
-                try {
-                    block10: {
-                        if (v0 == null) break block9;
-                        break block10;
-                        catch (InterruptedException v1) {
-                            throw PN.a(v1);
-                        }
-                    }
-                    this.L.append(var2_2);
-                    this.b.a(var2_2);
-                }
-                catch (InterruptedException v2) {
-                    throw PN.a(v2);
-                }
-            }
-            try {
-                v0 = this.K;
-lbl25:
-                // 2 sources
+   @Override
+   public String S(String param1, String param2) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/_y_2.y ()I
+      // 03: aload 0
+      // 04: getfield com/PN.K Ljava/lang/Object;
+      // 07: dup
+      // 08: astore 4
+      // 0a: monitorenter
+      // 0b: istore 3
+      // 0c: aload 0
+      // 0d: getfield com/PN.b Lcom/QT;
+      // 10: aload 1
+      // 11: invokeinterface com/QT.a (Ljava/lang/String;)V 2
+      // 16: aload 0
+      // 17: new java/lang/StringBuffer
+      // 1a: dup
+      // 1b: invokespecial java/lang/StringBuffer.<init> ()V
+      // 1e: putfield com/PN.L Ljava/lang/StringBuffer;
+      // 21: aload 2
+      // 22: iload 3
+      // 23: ifne 4e
+      // 26: ifnull 4a
+      // 29: goto 30
+      // 2c: invokestatic com/PN.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 2f: athrow
+      // 30: aload 0
+      // 31: getfield com/PN.L Ljava/lang/StringBuffer;
+      // 34: aload 2
+      // 35: invokevirtual java/lang/StringBuffer.append (Ljava/lang/String;)Ljava/lang/StringBuffer;
+      // 38: pop
+      // 39: aload 0
+      // 3a: getfield com/PN.b Lcom/QT;
+      // 3d: aload 2
+      // 3e: invokeinterface com/QT.a (Ljava/lang/String;)V 2
+      // 43: goto 4a
+      // 46: invokestatic com/PN.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 49: athrow
+      // 4a: aload 0
+      // 4b: getfield com/PN.K Ljava/lang/Object;
+      // 4e: invokevirtual java/lang/Object.wait ()V
+      // 51: goto 5b
+      // 54: astore 5
+      // 56: aload 5
+      // 58: invokevirtual java/lang/InterruptedException.printStackTrace ()V
+      // 5b: aload 0
+      // 5c: getfield com/PN.L Ljava/lang/StringBuffer;
+      // 5f: invokevirtual java/lang/StringBuffer.toString ()Ljava/lang/String;
+      // 62: astore 5
+      // 64: aload 0
+      // 65: aconst_null
+      // 66: putfield com/PN.L Ljava/lang/StringBuffer;
+      // 69: aload 5
+      // 6b: aload 4
+      // 6d: monitorexit
+      // 6e: areturn
+      // 6f: astore 6
+      // 71: aload 4
+      // 73: monitorexit
+      // 74: aload 6
+      // 76: athrow
+   }
 
-                v0.wait();
-            }
-            catch (InterruptedException var5_5) {
-                var5_5.printStackTrace();
-            }
-            var5_6 = this.L.toString();
-            this.L = null;
-            return var5_6;
-        }
-    }
+   @Override
+   public void U(String var1) {
+      this.b.a(var1);
+      this.b.K();
+   }
 
-    @Override
-    public void U(String string) {
-        this.b.a(string);
-        this.b.K();
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     * Enabled aggressive block sorting
-     * Enabled unnecessary exception pruning
-     * Enabled aggressive exception aggregation
-     */
-    @Override
-    public void keyPressed(KeyEvent keyEvent) {
-        int n10 = _y_0.M();
-        Object object = this.L;
-        if (n10 != 0) {
-            if (object == null) {
-                return;
-            }
-            object = this.K;
-        }
-        StringBuffer stringBuffer = object;
-        synchronized (object) {
-            int n11;
-            block10: {
-                int n12 = 0;
-                n11 = keyEvent.getKeyCode();
-                if (n10 != 0) {
-                    switch (n11) {
-                        case 8: {
-                            n11 = this.L.length();
-                            if (n10 != 0) {
-                                if (n11 <= 0) break;
-                                this.b.Q();
-                                this.b.b(0);
-                                this.L.deleteCharAt(this.L.length() - 1);
-                                if (n10 != 0) break;
-                            }
-                            break block10;
-                        }
-                        case 10: {
-                            this.b.K();
-                            n12 = 1;
-                        }
-                    }
-                    n11 = n12;
-                }
-            }
-            if (n11 == 0) return;
-            this.K.notifyAll();
-            // ** MonitorExit[var3_3] (shouldn't be in output)
+   @Override
+   public void keyPressed(KeyEvent var1) {
+      int var2 = _y_2.M();
+      Object var10000 = this.L;
+      if (var2 != 0) {
+         if (this.L == null) {
             return;
-        }
-    }
+         }
 
-    @Override
-    public void keyReleased(KeyEvent keyEvent) {
-    }
+         var10000 = this.K;
+      }
 
-    @Override
-    public void keyTyped(KeyEvent keyEvent) {
-        block6: {
-            PN pN;
-            char c2;
-            block7: {
-                int n10;
-                block5: {
-                    int n11 = _y_0.y();
-                    if (this.L == null) {
-                        return;
-                    }
-                    c2 = keyEvent.getKeyChar();
-                    n10 = Character.getType(c2);
-                    if (n11 != 0) break block5;
-                    if (n10 == (int)a) break block6;
-                    pN = this;
-                    if (n11 != 0) break block7;
-                    n10 = pN.A ? 1 : 0;
-                }
-                if (n10 != 0) {
-                    this.b.k(Character.toString(c2));
-                }
-                pN = this;
+      synchronized (var10000) {
+         byte var4 = 0;
+         var7 = var1.getKeyCode();
+         label39:
+         if (var2 != 0) {
+            switch (var7) {
+               case 8:
+                  var7 = this.L.length();
+                  if (var2 == 0) {
+                     break label39;
+                  }
+
+                  if (var7 <= 0) {
+                     break;
+                  }
+
+                  this.b.Q();
+                  this.b.b(0);
+                  this.L.deleteCharAt(this.L.length() - 1);
+                  if (var2 != 0) {
+                     break;
+                  }
+               case 10:
+                  this.b.K();
+                  var4 = 1;
             }
-            pN.L.append(c2);
-        }
-    }
 
-    private static InterruptedException a(InterruptedException interruptedException) {
-        return interruptedException;
-    }
+            var7 = var4;
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 8889063918216737247L;
-        a = 0xFFADF098F0CF1D0L ^ l2;
-    }
+         if (var7 != 0) {
+            this.K.notifyAll();
+         }
+      }
+   }
+
+   @Override
+   public void keyReleased(KeyEvent var1) {
+   }
+
+   @Override
+   public void keyTyped(KeyEvent var1) {
+      int var2 = _y_2.y();
+      if (this.L != null) {
+         char var3;
+         PN var4;
+         label30: {
+            var3 = var1.getKeyChar();
+            int var10000 = Character.getType(var3);
+            if (var2 == 0) {
+               if (var10000 == (int)a) {
+                  return;
+               }
+
+               var4 = this;
+               if (var2 != 0) {
+                  break label30;
+               }
+
+               var10000 = this.A;
+            }
+
+            if (var10000 != 0) {
+               this.b.k(Character.toString(var3));
+            }
+
+            var4 = this;
+         }
+
+         var4.L.append(var3);
+      }
+   }
+
+   private static InterruptedException a(InterruptedException var0) {
+      return var0;
+   }
+
+   static {
+      long var0 = 8889063918216737247L;
+      long var10002 = 1151477886894272976L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

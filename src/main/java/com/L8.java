@@ -1,63 +1,68 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FJ;
-import com.FN;
-import com.pb_2;
-import com.xk_0;
-import java.awt.Container;
 import java.awt.Window;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-class L8
-implements PropertyChangeListener {
-    final FJ L;
+class L8 implements PropertyChangeListener {
+   final com.FJ L;
 
-    L8(FJ fJ2) {
-        this.L = fJ2;
-    }
+   L8(com.FJ var1) {
+      this.L = var1;
+   }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent propertyChangeEvent) {
-        block2: {
-            Window window;
-            block6: {
-                boolean bl;
-                Window window2;
-                block5: {
-                    Window window3;
-                    Window window4;
-                    int[] nArray;
-                    block4: {
-                        Container container;
-                        block3: {
-                            nArray = pb_2.g();
-                            if (propertyChangeEvent.getNewValue() != Boolean.TRUE) break block2;
-                            container = window2 = FN.L(FJ.V(this.L));
-                            if (nArray == null) break block3;
-                            if (!FN.u(container)) break block2;
-                            container = window2.getParent();
-                        }
-                        window3 = window4 = container;
-                        if (nArray == null) break block4;
-                        if (window3 == null) break block2;
-                        window3 = window4;
-                    }
-                    bl = window3 instanceof Window;
-                    if (nArray == null) break block5;
-                    if (!bl) break block2;
-                    window = window4;
-                    if (nArray == null) break block6;
-                    bl = xk_0.X(window);
-                }
-                if (bl) break block2;
-                window = window2;
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      int[] var2 = pb_4.g();
+      if (var1.getNewValue() == Boolean.TRUE) {
+         Window var3 = com.FN.L(com.FJ.V(this.L));
+         Object var10000 = var3;
+         if (var2 != null) {
+            if (!com.FN.u(var3)) {
+               return;
             }
-            xk_0.Z(window, false);
-        }
-    }
+
+            var10000 = var3.getParent();
+         }
+
+         Object var4 = var10000;
+         var10000 = var4;
+         if (var2 != null) {
+            if (var4 == null) {
+               return;
+            }
+
+            var10000 = var4;
+         }
+
+         label43: {
+            boolean var6 = var10000 instanceof Window;
+            if (var2 != null) {
+               if (!var6) {
+                  return;
+               }
+
+               var10000 = (Window)var4;
+               if (var2 == null) {
+                  break label43;
+               }
+
+               var6 = Xk_2.X((Window)var10000);
+            }
+
+            if (var6) {
+               return;
+            }
+
+            var10000 = var3;
+         }
+
+         Xk_2.Z((Window)var10000, false);
+      }
+   }
 }
+
+
+
+
 

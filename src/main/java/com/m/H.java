@@ -1,28 +1,27 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.m;
 
-import com.m.K;
 import javax.swing.event.TreeExpansionEvent;
 import javax.swing.event.TreeExpansionListener;
 
-class H
-implements TreeExpansionListener {
-    final K l;
+class H implements TreeExpansionListener {
+   final com.m.K l;
 
-    H(K k2) {
-        this.l = k2;
-    }
+   H(com.m.K var1) {
+      this.l = var1;
+   }
 
-    @Override
-    public void treeExpanded(TreeExpansionEvent treeExpansionEvent) {
-        this.l.F();
-    }
+   @Override
+   public void treeExpanded(TreeExpansionEvent var1) {
+      this.l.F();
+   }
 
-    @Override
-    public void treeCollapsed(TreeExpansionEvent treeExpansionEvent) {
-        this.l.F();
-    }
+   @Override
+   public void treeCollapsed(TreeExpansionEvent var1) {
+      this.l.F();
+   }
 }
+
+
+
+
 

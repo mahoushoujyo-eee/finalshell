@@ -1,29 +1,43 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.c;
 
 import java.awt.Color;
 
 public final class H {
-    public static Color e;
+   public static Color e;
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 2336384871572679195L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = ">\u00fb\u00a2\u00ecx\u00af\u00aaA(qs\u00c7x\u00af\u00aaA\u0085~^0x\u00af\u00aa\u00c7";
-        int n11 = ">\u00fb\u00a2\u00ecx\u00af\u00aaA(qs\u00c7x\u00af\u00aaA\u0085~^0x\u00af\u00aa\u00c7".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        e = new Color((int)lArray[1], (int)lArray[0], (int)lArray[0], (int)lArray[2]);
-    }
+   static {
+      long var1 = 2336384871572679195L;
+      long[] var0 = new long[3];
+      int var4 = 0;
+      String var5 = ">û¢ìx¯ªA(qsÇx¯ªA\u0085~^0x¯ªÇ";
+      int var6 = ">û¢ìx¯ªA(qsÇx¯ªA\u0085~^0x¯ªÇ".length();
+      byte var3 = 0;
+
+      do {
+         int var10001 = var3;
+         var3 += 8;
+         byte[] var7 = var5.substring(var10001, var3).getBytes("ISO-8859-1");
+         var10001 = var4++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var1;
+         byte var10003 = -1;
+         var0[var10001] = var10004;
+      } while (var3 < var6);
+
+      e = new Color((int)var0[1], (int)var0[0], (int)var0[0], (int)var0[2]);
+   }
 }
+
+
+
+
 

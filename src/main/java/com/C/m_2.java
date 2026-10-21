@@ -1,26 +1,24 @@
-/*
- * Decompiled with CFR 0.152.
- */
-package com.c;
+package com.C;
 
-import com.c.r_0;
-import com.c4_0;
+import com.GO;
+import java.awt.Color;
+import java.awt.Stroke;
 
-/*
- * Renamed from com.c.m
- */
-class m_2
-extends c4_0 {
-    final r_0 h;
-
-    m_2(r_0 r_02) {
-        this.h = r_02;
-    }
-
-    @Override
-    public void f(boolean bl) {
-        this.h.Q = bl;
-        r_0.D(this.h).repaint();
-    }
+public final class m_2 {
+   public static boolean i = false;
+   public static boolean F = false;
+   public static int G = GO.Fx;
+   public static int s = GO.FG;
+   public static float u = 0.75F;
+   public static Stroke J = null;
+   public static Color v = GO.Ff;
+   public static Color T = GO.FX;
+   public static boolean k = true;
+   public static boolean d = true;
+   public static Color t = GO.R;
 }
+
+
+
+
 

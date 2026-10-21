@@ -1,11 +1,6 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.t;
 
 import com.P9;
-import com.t.e_0;
-import com.t.n_0;
 import java.awt.Color;
 import java.awt.Paint;
 import java.awt.PaintContext;
@@ -15,236 +10,249 @@ import java.awt.geom.AffineTransform;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.ColorModel;
 
-public class Q
-implements Paint {
-    private Color g = Color.RED;
-    private boolean D = false;
-    private ColorModel C = ColorModel.getRGBdefault();
-    private int S;
-    private int z;
-    private int I;
-    private int N;
-    private static final long[] a;
-    private static final Integer[] b;
+public class Q implements Paint {
+   private Color g = Color.RED;
+   private boolean D = false;
+   private ColorModel C = ColorModel.getRGBdefault();
+   private int S;
+   private int z;
+   private int I;
+   private int N;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public Q(int n10, int n11, int n12, int n13, Color color) {
-        this.S = n10;
-        this.z = n11;
-        this.I = n12;
-        this.N = n13;
-        this.g = color;
-    }
+   public Q(int var1, int var2, int var3, int var4, Color var5) {
+      this.S = var1;
+      this.z = var2;
+      this.I = var3;
+      this.N = var4;
+      this.g = var5;
+   }
 
-    @Override
-    public PaintContext createContext(ColorModel colorModel, Rectangle rectangle, Rectangle2D rectangle2D, AffineTransform affineTransform, RenderingHints renderingHints) {
-        return new e_0(this, affineTransform);
-    }
+   @Override
+   public PaintContext createContext(ColorModel var1, Rectangle var2, Rectangle2D var3, AffineTransform var4, RenderingHints var5) {
+      return new E_2(this, var4);
+   }
 
-    public Color X(int n10, int n11) {
-        block13: {
-            int n12;
-            int n13;
-            block14: {
-                int n14;
-                block11: {
-                    block12: {
-                        block10: {
-                            block9: {
-                                block7: {
-                                    block8: {
-                                        n14 = n_0.W();
-                                        n13 = n10;
-                                        n12 = this.S;
-                                        if (n14 == 0) break block7;
-                                        if (n13 >= n12) break block8;
-                                        n10 = this.S;
-                                        if (n14 != 0) break block9;
-                                    }
-                                    n13 = n10;
-                                    n12 = this.S + Q.a(6751, 1642532646966100142L);
-                                }
-                                if (n14 == 0) break block10;
-                                if (n13 > n12) {
-                                    n10 = this.S + Q.a(29747, 3321551848957079233L);
-                                }
-                            }
-                            n13 = n11;
-                            n12 = this.z;
-                        }
-                        if (n14 == 0) break block11;
-                        if (n13 >= n12) break block12;
-                        n11 = this.z;
-                        if (n14 != 0) break block13;
-                    }
-                    n13 = n11;
-                    n12 = this.z + Q.a(29747, 3321551848957079233L);
-                }
-                if (n14 == 0) break block14;
-                if (n13 <= n12) break block13;
-                n13 = this.z;
-                n12 = Q.a(29747, 3321551848957079233L);
+   public Color X(int var1, int var2) {
+      int var3;
+      int var10000;
+      int var10001;
+      label43: {
+         label46: {
+            var3 = com.t.n_2.W();
+            var10000 = var1;
+            var10001 = this.S;
+            if (var3 != 0) {
+               if (var1 < this.S) {
+                  var1 = this.S;
+                  if (var3 != 0) {
+                     break label46;
+                  }
+               }
+
+               var10000 = var1;
+               var10001 = this.S + a(6751, 1642532646966100142L);
             }
-            n11 = n13 + n12;
-        }
-        return new Color(this.v(n10, n11), this.G(n10, n11), this.f(n10, n11));
-    }
 
-    private int v(int n10, int n11) {
-        int n12 = Q.a(11882, 5026002081987179674L) - (Q.a(11882, 5026002081987179674L) - this.g.getRed()) * (n10 - this.S) / this.I;
-        n12 -= n12 * (n11 - this.z) / this.N;
-        return this.q(n12);
-    }
-
-    private int G(int n10, int n11) {
-        int n12 = Q.a(11882, 5026002081987179674L) - (Q.a(11882, 5026002081987179674L) - this.g.getGreen()) * (n10 - this.S) / this.I;
-        n12 -= n12 * (n11 - this.z) / this.N;
-        return this.q(n12);
-    }
-
-    private int f(int n10, int n11) {
-        int n12 = Q.a(11882, 5026002081987179674L) - (Q.a(11882, 5026002081987179674L) - this.g.getBlue()) * (n10 - this.S) / this.I;
-        n12 -= n12 * (n11 - this.z) / this.N;
-        return this.q(n12);
-    }
-
-    private int q(int n10) {
-        int n11;
-        block9: {
-            block8: {
-                int n12;
-                block6: {
-                    block7: {
-                        n12 = n_0.W();
-                        n11 = this.D;
-                        if (n12 != 0) {
-                            if (n11 != 0) {
-                                n10 = P9.d(n10);
-                            }
-                            n11 = n10;
-                        }
-                        if (n12 == 0) break block6;
-                        if (n11 >= 0) break block7;
-                        n10 = 0;
-                        if (n12 != 0) break block8;
-                    }
-                    n11 = n10;
-                }
-                if (n12 == 0) break block9;
-                if (n11 > Q.a(10922, 1162464156354719833L)) {
-                    n10 = Q.a(11882, 5026002081987179674L);
-                }
+            if (var3 == 0) {
+               break label43;
             }
-            n11 = n10;
-        }
-        return n11;
-    }
 
-    @Override
-    public int getTransparency() {
-        return 1;
-    }
-
-    public Color L() {
-        return this.g;
-    }
-
-    public boolean S() {
-        return this.D;
-    }
-
-    public void c(boolean bl) {
-        this.D = bl;
-    }
-
-    static ColorModel m(Q q2) {
-        return q2.C;
-    }
-
-    static int N(Q q2, int n10, int n11) {
-        return q2.v(n10, n11);
-    }
-
-    static int n(Q q2, int n10, int n11) {
-        return q2.G(n10, n11);
-    }
-
-    static int F(Q q2, int n10, int n11) {
-        return q2.f(n10, n11);
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 2216463484755511855L;
-                var6_1 = new long[4];
-                var3_2 = 0;
-                var4_3 = "\u00e4D\u00e8\u0091&Z\u00e5\u00ee#\u0004Y+u\u00df\u00ba\u0089";
-                var5_4 = "\u00e4D\u00e8\u0091&Z\u00e5\u00ee#\u0004Y+u\u00df\u00ba\u0089".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "4\u00ce\u00d9\u0015\u000bB>Jt\u001d\u00f5\u00dd\u00a0\u001f\u008b\u0081";
-                    var5_4 = "4\u00ce\u00d9\u0015\u000bB>Jt\u001d\u00f5\u00dd\u00a0\u001f\u008b\u0081".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+            if (var10000 > var10001) {
+               var1 = this.S + a(29747, 3321551848957079233L);
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
+         }
 
-                ** continue;
+         var10000 = var2;
+         var10001 = this.z;
+      }
+
+      if (var3 != 0) {
+         if (var10000 < var10001) {
+            var2 = this.z;
+            if (var3 != 0) {
+               return new Color(this.v(var1, var2), this.G(var1, var2), this.f(var1, var2));
             }
-        }
-        Q.a = var6_1;
-        Q.b = new Integer[4];
-    }
+         }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x1AF2;
-        if (b[n11] == null) {
-            Q.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+         var10000 = var2;
+         var10001 = this.z + a(29747, 3321551848957079233L);
+      }
+
+      if (var3 != 0) {
+         if (var10000 <= var10001) {
+            return new Color(this.v(var1, var2), this.G(var1, var2), this.f(var1, var2));
+         }
+
+         var10000 = this.z;
+         var10001 = a(29747, 3321551848957079233L);
+      }
+
+      var2 = var10000 + var10001;
+      return new Color(this.v(var1, var2), this.G(var1, var2), this.f(var1, var2));
+   }
+
+   private int v(int var1, int var2) {
+      int var3 = a(11882, 5026002081987179674L) - (a(11882, 5026002081987179674L) - this.g.getRed()) * (var1 - this.S) / this.I;
+      var3 -= var3 * (var2 - this.z) / this.N;
+      return this.q(var3);
+   }
+
+   private int G(int var1, int var2) {
+      int var3 = a(11882, 5026002081987179674L) - (a(11882, 5026002081987179674L) - this.g.getGreen()) * (var1 - this.S) / this.I;
+      var3 -= var3 * (var2 - this.z) / this.N;
+      return this.q(var3);
+   }
+
+   private int f(int var1, int var2) {
+      int var3 = a(11882, 5026002081987179674L) - (a(11882, 5026002081987179674L) - this.g.getBlue()) * (var1 - this.S) / this.I;
+      var3 -= var3 * (var2 - this.z) / this.N;
+      return this.q(var3);
+   }
+
+   private int q(int var1) {
+      int var2 = com.t.n_2.W();
+      int var10000 = this.D;
+      if (var2 != 0) {
+         if (this.D) {
+            var1 = P9.d(var1);
+         }
+
+         var10000 = var1;
+      }
+
+      if (var2 != 0) {
+         if (var10000 < 0) {
+            var1 = 0;
+            if (var2 != 0) {
+               return var1;
+            }
+         }
+
+         var10000 = var1;
+      }
+
+      if (var2 == 0) {
+         return var10000;
+      } else {
+         if (var10000 > a(10922, 1162464156354719833L)) {
+            var1 = a(11882, 5026002081987179674L);
+         }
+
+         return var1;
+      }
+   }
+
+   @Override
+   public int getTransparency() {
+      return 1;
+   }
+
+   public Color L() {
+      return this.g;
+   }
+
+   public boolean S() {
+      return this.D;
+   }
+
+   public void c(boolean var1) {
+      this.D = var1;
+   }
+
+   static ColorModel m(com.t.Q var0) {
+      return var0.C;
+   }
+
+   static int N(com.t.Q var0, int var1, int var2) {
+      return var0.v(var1, var2);
+   }
+
+   static int n(com.t.Q var0, int var1, int var2) {
+      return var0.G(var1, var2);
+   }
+
+   static int F(com.t.Q var0, int var1, int var2) {
+      return var0.f(var1, var2);
+   }
+
+   static {
+      long var0 = 2216463484755511855L;
+      long[] var6 = new long[4];
+      int var3 = 0;
+      String var4 = "äDè\u0091&Zåî#\u0004Y+ußº\u0089";
+      int var5 = "äDè\u0091&Zåî#\u0004Y+ußº\u0089".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     b = new Integer[4];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "4ÎÙ\u0015\u000bB>Jt\u001dõÝ \u001f\u008b\u0081";
+                  var5 = "4ÎÙ\u0015\u000bB>Jt\u001dõÝ \u001f\u008b\u0081".length();
+                  var2 = 0;
+            }
+
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 6898;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

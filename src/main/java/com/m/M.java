@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.m;
 
-import com.m.K;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-class M
-implements PropertyChangeListener {
-    final K L;
+class M implements PropertyChangeListener {
+   final com.m.K L;
 
-    M(K k2) {
-        this.L = k2;
-    }
+   M(com.m.K var1) {
+      this.L = var1;
+   }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent propertyChangeEvent) {
-        this.L.k = K.l(this.L).getComponentOrientation().isLeftToRight();
-    }
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      this.L.k = com.m.K.l(this.L).getComponentOrientation().isLeftToRight();
+   }
 }
+
+
+
+
 

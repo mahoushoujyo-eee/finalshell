@@ -1,59 +1,55 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.A;
 
-import com.A.E;
-import com.a.y_0;
-import com.c4_0;
+class f extends com.c4_2 {
+   final com.A.E J;
 
-class f
-extends c4_0 {
-    final E J;
+   f(com.A.E var1, boolean var2) {
+      super(var2);
+      this.J = var1;
+   }
 
-    f(E e2, boolean bl) {
-        this.J = e2;
-        super(bl);
-    }
+   @Override
+   public boolean z() {
+      int[] var1 = com.A.y_2.M();
+      boolean var10000 = this.J.isShowing();
+      if (var1 != null) {
+         if (!var10000) {
+            return false;
+         }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    public boolean z() {
-        int[] nArray = y_0.M();
-        boolean bl = this.J.isShowing();
-        if (nArray != null) {
-            if (!bl) return false;
-            bl = this.J.U;
-        }
-        if (nArray == null) return bl;
-        if (!bl) return false;
-        return true;
-    }
+         var10000 = this.J.U;
+      }
 
-    @Override
-    public void f(boolean bl) {
-        block5: {
-            boolean bl2;
-            block6: {
-                int[] nArray;
-                block4: {
-                    nArray = y_0.M();
-                    bl2 = this.J.U;
-                    if (nArray == null) break block4;
-                    if (!bl2) break block5;
-                    bl2 = this.J.isShowing();
-                }
-                if (nArray == null) break block6;
-                if (!bl2) break block5;
-                bl2 = bl;
-            }
-            if (!bl2) {
-                this.J.dispose();
-            }
-        }
-    }
+      return var1 == null ? var10000 : var10000;
+   }
+
+   @Override
+   public void f(boolean var1) {
+      int[] var2 = com.A.y_2.M();
+      boolean var10000 = this.J.U;
+      if (var2 != null) {
+         if (!this.J.U) {
+            return;
+         }
+
+         var10000 = this.J.isShowing();
+      }
+
+      if (var2 != null) {
+         if (!var10000) {
+            return;
+         }
+
+         var10000 = var1;
+      }
+
+      if (!var10000) {
+         this.J.dispose();
+      }
+   }
 }
+
+
+
+
 

@@ -1,29 +1,28 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 
-class DG
-implements PopupMenuListener {
-    final y1_0 W;
+class DG implements PopupMenuListener {
+   final y1_2 W;
 
-    DG(y1_0 y1_02) {
-        this.W = y1_02;
-    }
+   DG(y1_2 var1) {
+      this.W = var1;
+   }
 
-    @Override
-    public void popupMenuWillBecomeVisible(PopupMenuEvent popupMenuEvent) {
-    }
+   @Override
+   public void popupMenuWillBecomeVisible(PopupMenuEvent var1) {
+   }
 
-    @Override
-    public void popupMenuWillBecomeInvisible(PopupMenuEvent popupMenuEvent) {
-        this.W.f = System.currentTimeMillis();
-    }
+   @Override
+   public void popupMenuWillBecomeInvisible(PopupMenuEvent var1) {
+      com.c.c(126803268638211778L).setLong(com.c.c(214973477385371850L).get(this), System.currentTimeMillis());
+   }
 
-    @Override
-    public void popupMenuCanceled(PopupMenuEvent popupMenuEvent) {
-    }
+   @Override
+   public void popupMenuCanceled(PopupMenuEvent var1) {
+   }
 }
+
+
+
+
 

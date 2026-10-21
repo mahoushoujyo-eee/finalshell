@@ -1,1659 +1,816 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.DI;
-import com.E8;
-import com.Q8;
-import com.QV;
-import com.YU;
-import com.cs_2;
-import com.dm_2;
-import com.qc_0;
-import com.qf_0;
-import com.qi_0;
-import com.qk_0;
-import com.uJ;
-import java.util.Enumeration;
-import java.util.Hashtable;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.GradientPaint;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.Shape;
+import java.awt.geom.RoundRectangle2D.Double;
+import java.awt.image.BufferedImage;
+import javax.swing.ImageIcon;
+import javax.swing.JComponent;
+import javax.swing.SwingConstants;
 
-/*
- * Renamed from com.dq
- */
-class dq_2
-extends dm_2 {
-    private static byte[] P;
-    protected boolean h = false;
-    protected boolean L = false;
-    protected Hashtable F = null;
-    protected boolean A = false;
-    protected String l = "\u0000ERR:ArrayIndexOutOfBoundsException:Index 13695 out of bounds for length 2";
-    protected int J = dq_2.b(2166, 5128603885367188867L);
-    protected int u = dq_2.b(16308, 7364915286531238477L);
-    protected int R = dq_2.b(26919, 54329701606341853L);
-    protected int M = dq_2.b(29423, 7628090627876595472L);
-    protected byte[] D = null;
-    private static final String[] cb;
-    private static final String[] db;
-    private static final long[] jb;
-    private static final Integer[] kb;
+public class Dq_2 extends JComponent implements SwingConstants, com.W2 {
+   private ImageIcon A;
+   private ImageIcon p;
+   private int o = _5.h;
+   private int e = _5.Z;
+   private boolean s = _5.k;
+   private Color R = _5.g;
+   private boolean B = _5.b;
+   private int P = _5.d;
+   private int b = _5.s;
+   private float U = _5.x;
+   private float y;
+   private boolean r;
+   private boolean X;
+   private float c;
+   private boolean I;
+   private float L;
+   private boolean h;
+   private float H;
+   private static final long[] a;
+   private static final Integer[] d;
 
-    dq_2() {
-        this.Y = P;
-        this.o = new cs_2();
-    }
+   public Dq_2() {
+      this((ImageIcon)null);
+   }
 
-    public void y(boolean bl) {
-        this.h = bl;
-    }
+   public Dq_2(String var1) {
+      this(Xg_2.L(var1));
+   }
 
-    @Override
-    public void R(boolean bl) {
-        this.L = bl;
-    }
+   public Dq_2(Class var1, String var2) {
+      this(Xg_2.Z(var1, var2));
+   }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    @Deprecated
-    public void F(Hashtable hashtable) {
-        dq_2 dq_22 = this;
-        synchronized (dq_22) {
-            this.F = hashtable;
-        }
-    }
+   public Dq_2(Image var1) {
+      this.y = _5.y;
+      this.r = _5.J;
+      this.X = _5.N;
+      this.c = _5.r;
+      this.I = _5.t;
+      this.L = _5.B;
+      this.h = _5.L;
+      this.H = _5.V;
+      com.FN.Y(this);
+      this.f(var1);
+   }
 
-    public void o(String string, String string2) {
-        this.C(E8.J(string), E8.J(string2));
-    }
+   public Dq_2(ImageIcon var1) {
+      this.y = _5.y;
+      this.r = _5.J;
+      this.X = _5.N;
+      this.c = _5.r;
+      this.I = _5.t;
+      this.L = _5.B;
+      this.h = _5.L;
+      this.H = _5.V;
+      com.FN.Y(this);
+      this.V(var1);
+   }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void C(byte[] byArray, byte[] byArray2) {
-        dq_2 dq_22 = this;
-        synchronized (dq_22) {
-            this.A().put(byArray, byArray2);
-        }
-    }
+   public ImageIcon A() {
+      return this.p;
+   }
 
-    private Hashtable A() {
-        boolean bl = dm_2.J();
-        Hashtable hashtable = this.F;
-        if (!bl) {
-            if (hashtable == null) {
-                this.F = new Hashtable();
-            }
-            hashtable = this.F;
-        }
-        return hashtable;
-    }
+   public ImageIcon n() {
+      return this.A;
+   }
 
-    public void u(boolean bl) {
-        this.A = bl;
-    }
+   public void f(Image var1) {
+      this.t(var1, true);
+   }
 
-    public void P(byte[] byArray) {
-        this.D = byArray;
-    }
+   public void t(Image var1, boolean var2) {
+      this.q(new ImageIcon(var1), var2);
+   }
 
-    /*
-     * Loose catch block
-     */
-    public void F(int n10, int n11, int n12, int n13) {
-        block11: {
-            block9: {
-                boolean bl;
-                block8: {
-                    boolean bl2 = dm_2.F();
-                    this.d(this.l, n10, n11, n12, n13);
-                    boolean bl3 = bl2;
-                    bl = this.A;
-                    if (!bl3) break block8;
-                    try {
-                        block10: {
-                            if (!bl) break block9;
-                            break block10;
-                            catch (Exception exception) {
-                                throw dq_2.c(exception);
-                            }
-                        }
-                        bl = this.L();
-                    }
-                    catch (Exception exception) {
-                        throw dq_2.c(exception);
-                    }
-                }
-                if (bl) break block11;
-            }
+   public void V(ImageIcon var1) {
+      this.q(var1, true);
+   }
+
+   public void q(ImageIcon var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.A = var1;
+         if (!var2) {
             return;
-        }
-        try {
-            qk_0 qk_02 = new qk_0();
-            qk_02.u(n10, n11, n12, n13);
-            qk_02.Q(this.T(), this);
-        }
-        catch (Exception exception) {
-            // empty catch block
-        }
-    }
+         }
 
-    public void b(String string) {
-        this.d(string, dq_2.b(24738, 2517825788331832671L), dq_2.b(11171, 4193680352028589663L), dq_2.b(21466, 1763833717891991084L), dq_2.b(15206, 3162426995749383832L));
-    }
+         var10000 = this;
+      }
 
-    public void d(String string, int n10, int n11, int n12, int n13) {
-        this.l = string;
-        this.J = n10;
-        this.u = n11;
-        this.R = n12;
-        this.M = n13;
-    }
+      var10000.A();
+   }
 
-    protected void T() throws Exception {
-        block24: {
-            Hashtable hashtable;
-            qi_0 qi_02;
-            boolean bl;
-            DI dI;
-            block23: {
-                dq_2 dq_22;
-                block20: {
-                    boolean bl2;
-                    block18: {
-                        block19: {
-                            block16: {
-                                block17: {
-                                    dI = this.T();
-                                    bl = dm_2.J();
-                                    try {
-                                        bl2 = this.h;
-                                        if (bl) break block16;
-                                        if (!bl2) break block17;
-                                    }
-                                    catch (Exception exception) {
-                                        throw dq_2.c(exception);
-                                    }
-                                    qi_02 = new qf_0();
-                                    qi_02.Q(dI, this);
-                                }
-                                bl2 = this.L;
-                            }
-                            try {
-                                if (bl) break block18;
-                                if (!bl2) break block19;
-                            }
-                            catch (Exception exception) {
-                                throw dq_2.c(exception);
-                            }
-                            qi_02 = new qc_0();
-                            qi_02.Q(dI, this);
-                        }
-                        try {
-                            dq_22 = this;
-                            if (bl) break block20;
-                            bl2 = dq_22.A;
-                        }
-                        catch (Exception exception) {
-                            throw dq_2.c(exception);
-                        }
-                    }
-                    if (bl2) {
-                        qi_0 qi_03;
-                        block21: {
-                            block22: {
-                                qi_02 = new QV();
-                                try {
-                                    try {
-                                        ((QV)qi_02).A(this.l);
-                                        qi_03 = (QV)qi_02;
-                                        if (bl) break block21;
-                                        qi_03.K(this.J, this.u, this.R, this.M);
-                                        if (this.D == null) break block22;
-                                    }
-                                    catch (Exception exception) {
-                                        throw dq_2.c(exception);
-                                    }
-                                    ((QV)qi_02).b(this.D);
-                                }
-                                catch (Exception exception) {
-                                    throw dq_2.c(exception);
-                                }
-                            }
-                            qi_03 = qi_02;
-                        }
-                        ((qi_0)qi_03).Q(dI, this);
-                    }
-                    dq_22 = this;
-                }
-                try {
-                    try {
-                        hashtable = dq_22.F;
-                        if (bl) break block23;
-                        if (hashtable == null) break block24;
-                    }
-                    catch (Exception exception) {
-                        throw dq_2.c(exception);
-                    }
-                    hashtable = this.F;
-                }
-                catch (Exception exception) {
-                    throw dq_2.c(exception);
-                }
+   public int V() {
+      return this.o;
+   }
+
+   public void i(int var1) {
+      this.o = var1;
+      this.repaint();
+   }
+
+   public int p() {
+      return this.e;
+   }
+
+   public void y(int var1) {
+      this.e = var1;
+      this.repaint();
+   }
+
+   public boolean W() {
+      return this.s;
+   }
+
+   public void H(boolean var1) {
+      this.g(var1, true);
+   }
+
+   public void g(boolean var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.s = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public Color t() {
+      return this.R;
+   }
+
+   public void V(Color var1) {
+      this.p(var1, true);
+   }
+
+   public void p(Color var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.R = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public boolean s() {
+      return this.B;
+   }
+
+   public void a(boolean var1) {
+      this.N(var1, true);
+   }
+
+   public void N(boolean var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.B = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public int Z() {
+      return this.P;
+   }
+
+   public void t(int var1) {
+      this.g(var1, true);
+   }
+
+   public void g(int var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.P = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public int S() {
+      return this.b;
+   }
+
+   public void K(int var1) {
+      this.Q(var1, true);
+   }
+
+   public void Q(int var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.b = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public boolean f() {
+      return this.r;
+   }
+
+   public void P(boolean var1) {
+      this.a(var1, true);
+   }
+
+   public void a(boolean var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.r = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public boolean y() {
+      return this.X;
+   }
+
+   public void y(boolean var1) {
+      this.n(var1, true);
+   }
+
+   public void n(boolean var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.X = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public float u() {
+      return this.c;
+   }
+
+   public void t(float var1) {
+      this.N(var1, true);
+   }
+
+   public void N(float var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.c = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public boolean p$boolean() {
+      return this.I;
+   }
+
+   public void i(boolean var1) {
+      this.T(var1, true);
+   }
+
+   public void T(boolean var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.I = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public float i() {
+      return this.L;
+   }
+
+   public void k(float var1) {
+      this.W(var1, true);
+   }
+
+   public void W(float var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.L = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public boolean c() {
+      return this.h;
+   }
+
+   public void K(boolean var1) {
+      this.H(var1, true);
+   }
+
+   public void H(boolean var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.h = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public float d() {
+      return this.H;
+   }
+
+   public void a(float var1) {
+      this.d(var1, true);
+   }
+
+   public void d(float var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.H = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public float x() {
+      return this.U;
+   }
+
+   public void c(float var1) {
+      this.n(var1, true);
+   }
+
+   public void n(float var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.U = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public float j() {
+      return this.y;
+   }
+
+   public void i(float var1) {
+      this.F(var1, true);
+   }
+
+   public void F(float var1, boolean var2) {
+      String var3 = com.Wb_2.m();
+      com.Dq_2 var10000 = this;
+      if (var3 != null) {
+         this.y = var1;
+         if (!var2) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.A();
+   }
+
+   public void A$void() {
+      String var1 = com.Wb_2.m();
+      ImageIcon var10000 = this.A;
+      if (var1 != null) {
+         if (this.A == null) {
+            this.p = null;
+            this.repaint();
+            return;
+         }
+
+         var10000 = this.A;
+      }
+
+      BufferedImage var2 = Xg_2.m(var10000.getImage());
+      int var7 = this.r;
+      if (var1 != null) {
+         if (this.r) {
+            com.oa_4.P(var2, var2);
+         }
+
+         var7 = this.X;
+      }
+
+      if (var1 != null) {
+         if (var7 != 0) {
+            com.oa_4.u(var2, var2, this.c);
+         }
+
+         var7 = this.I;
+      }
+
+      label105: {
+         label112: {
+            label103:
+            if (var1 != null) {
+               if (var7 != 0) {
+                  var7 = this.h;
+                  if (var1 == null) {
+                     break label103;
+                  }
+
+                  if (this.h) {
+                     com.oa_4.p(var2, var2, 0.0F, 0.0F, this.H, this.L, this.U, this.y);
+                     if (var1 != null) {
+                        break label112;
+                     }
+                  }
+               }
+
+               var7 = this.I;
             }
-            Enumeration enumeration = hashtable.keys();
-            while (enumeration.hasMoreElements()) {
-                byte[] byArray = (byte[])enumeration.nextElement();
-                byte[] byArray2 = (byte[])this.F.get(byArray);
-                qi_02 = new Q8();
-                ((Q8)qi_02).r(this.P((Object)byArray), this.P((Object)byArray2));
-                qi_02.Q(dI, this);
-                if (!bl) continue;
+
+            if (var1 != null) {
+               if (var7 != 0) {
+                  com.oa_4.V((Image)var2, (Image)var2, this.L, this.U, this.y);
+                  if (var1 != null) {
+                     break label112;
+                  }
+               }
+
+               var7 = this.h;
             }
-        }
-    }
 
-    private byte[] P(Object object) {
-        boolean bl = dm_2.F();
-        Object object2 = object;
-        if (bl) {
-            if (object2 instanceof String) {
-                return E8.J((String)object);
+            if (var1 == null) {
+               break label105;
             }
-            object2 = object;
-        }
-        return (byte[])object2;
-    }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     * Unable to fully structure code
-     */
-    @Override
-    void S() {
-        block42: {
-            block43: {
-                block35: {
-                    block36: {
-                        var2_1 = new uJ(this.c);
-                        var3_2 = new YU(var2_1);
-                        var4_3 = -1;
-                        var1_4 = dm_2.J();
-                        try {
-                            var5_5 = this.T();
-                            while (this.L()) {
-                                block41: {
-                                    block48: {
-                                        block39: {
-                                            block40: {
-                                                block38: {
-                                                    block37: {
-                                                        block34: {
-                                                            v0 = this;
-                                                            if (var1_4) break block34;
-                                                            try {
-                                                                block44: {
-                                                                    v1 = v0.Z;
-                                                                    if (var1_4) break block35;
-                                                                    break block44;
-                                                                    catch (Exception v2) {
-                                                                        throw dq_2.c(v2);
-                                                                    }
-                                                                }
-                                                                if (v1 == null) break block36;
-                                                            }
-                                                            catch (Exception v3) {
-                                                                throw dq_2.c(v3);
-                                                            }
-                                                            v0 = this;
-                                                        }
-                                                        v4 = v0.o;
-                                                        if (var1_4) break block37;
-                                                        try {
-                                                            block45: {
-                                                                if (v4 == null) break block36;
-                                                                break block45;
-                                                                catch (Exception v5) {
-                                                                    throw dq_2.c(v5);
-                                                                }
-                                                            }
-                                                            v4 = this.o;
-                                                        }
-                                                        catch (Exception v6) {
-                                                            throw dq_2.c(v6);
-                                                        }
-                                                    }
-                                                    v7 = v4.I;
-                                                    if (var1_4) break block38;
-                                                    try {
-                                                        block46: {
-                                                            if (v7 == null) break block36;
-                                                            break block46;
-                                                            catch (Exception v8) {
-                                                                throw dq_2.c(v8);
-                                                            }
-                                                        }
-                                                        v7 = this.o.I;
-                                                    }
-                                                    catch (Exception v9) {
-                                                        throw dq_2.c(v9);
-                                                    }
-                                                }
-                                                var4_3 = v7.read(var2_1.g, dq_2.b(19024, 8528815768338931624L), var2_1.g.length - dq_2.b(15867, 5830483908657309696L) - var5_5.D());
-                                                v10 = var4_3;
-                                                if (var1_4) break block39;
-                                                try {
-                                                    block47: {
-                                                        if (v10 != 0) break block40;
-                                                        break block47;
-                                                        catch (Exception v11) {
-                                                            throw dq_2.c(v11);
-                                                        }
-                                                    }
-                                                    if (!var1_4) continue;
-                                                }
-                                                catch (Exception v12) {
-                                                    throw dq_2.c(v12);
-                                                }
-                                            }
-                                            v10 = var4_3;
-                                        }
-                                        if (var1_4) break block41;
-                                        if (v10 != -1) ** GOTO lbl83
-                                        break block48;
-                                        catch (Exception v13) {
-                                            throw dq_2.c(v13);
-                                        }
-                                    }
-                                    try {
-                                        block49: {
-                                            this.F();
-                                            if (!var1_4) break block36;
-                                            break block49;
-                                            catch (Exception v14) {
-                                                throw dq_2.c(v14);
-                                            }
-                                        }
-                                        v10 = (int)this.S;
-                                    }
-                                    catch (Exception v15) {
-                                        throw dq_2.c(v15);
-                                    }
-                                }
-                                if (v10 == 0) ** GOTO lbl96
-                                try {
-                                    block50: {
-                                        if (!var1_4) break block36;
-                                        break block50;
-                                        catch (Exception v16) {
-                                            throw dq_2.c(v16);
-                                        }
-                                    }
-                                    var3_2.M();
-                                    var2_1.V((byte)dq_2.b(5850, 3399367321310544685L));
-                                    var2_1.u(this.V);
-                                    var2_1.u(var4_3);
-                                    var2_1.S(var4_3);
-                                    var5_5.O(var3_2, this, var4_3);
-                                    if (!var1_4) continue;
-                                    break;
-                                }
-                                catch (Exception v17) {
-                                    throw dq_2.c(v17);
-                                }
-                            }
-                        }
-                        catch (Exception var5_6) {
-                            // empty catch block
-                        }
-                    }
-                    v1 = this.Z;
-                }
-                var5_5 = v1;
-                try {
-                    if (var1_4) break block42;
-                    if (var5_5 == null) break block43;
-                }
-                catch (Exception v18) {
-                    throw dq_2.c(v18);
-                }
-                var6_7 = var5_5;
-                synchronized (var6_7) {
-                    var5_5.notifyAll();
-                }
+            if (var7 != 0) {
+               com.oa_4.n(var2, var2, this.H, this.U, this.y);
             }
-            this.Z = null;
-        }
-    }
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block22: {
-            block21: {
-                block20: {
-                    var13 = new String[2];
-                    var11_1 = 0;
-                    var10_2 = "\u00f6L\u0002\u0005\u00db\u0007\u009c\u001a\u00a8\u00bf\u00dd\u00dd\u001b";
-                    var12_3 = "\u00f6L\u0002\u0005\u00db\u0007\u009c\u001a\u00a8\u00bf\u00dd\u00dd\u001b".length();
-                    var9_4 = 5;
-                    var8_5 = -1;
-lbl7:
-                    // 2 sources
+         var7 = this.b;
+      }
 
-                    while (true) {
-                        continue;
-                        break;
-                    }
-lbl9:
-                    // 1 sources
+      label84: {
+         label113: {
+            label114: {
+               if (var1 != null) {
+                  if (var7 > 0) {
+                     var2 = Xg_2.A(
+                        new Double(0.0, 0.0, (double)this.A.getIconWidth(), (double)this.A.getIconHeight(), (double)(this.b * 2), (double)(this.b * 2)), var2
+                     );
+                  }
 
-                    while (true) {
-                        var13[var11_1++] = new String(v0).intern();
-                        if ((var8_5 += var9_4) < var12_3) {
-                            var9_4 = var10_2.charAt(var8_5);
-                            ** continue;
-                        }
-                        break block20;
-                        break;
-                    }
-                    v1 = ++var8_5;
-                    v2 = var10_2.substring(v1, v1 + var9_4).toCharArray();
-                    v3 = v2.length;
-                    var14_6 = 0;
-                    v4 = 121;
-                    v5 = v2;
-                    v6 = v3;
-                    if (v3 > 1) ** GOTO lbl67
-                    do {
-                        v7 = v4;
-                        v5 = v5;
-                        v8 = v5;
-                        v9 = v4;
-                        v10 = var14_6;
-                        while (true) {
-                            switch (var14_6 % 7) {
-                                case 0: {
-                                    v11 = 105;
-                                    break;
-                                }
-                                case 1: {
-                                    v11 = 9;
-                                    break;
-                                }
-                                case 2: {
-                                    v11 = 46;
-                                    break;
-                                }
-                                case 3: {
-                                    v11 = 49;
-                                    break;
-                                }
-                                case 4: {
-                                    v11 = 47;
-                                    break;
-                                }
-                                case 5: {
-                                    v11 = 40;
-                                    break;
-                                }
-                                default: {
-                                    v11 = 57;
-                                }
-                            }
-                            v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                            ++var14_6;
-                            v4 = v7;
-                            if (v7 != 0) break;
-                            v7 = v4;
-                            v5 = v5;
-                            v10 = v4;
-                            v8 = v5;
-                            v9 = v4;
-                        }
-lbl67:
-                        // 2 sources
+                  var8 = this;
+                  if (var1 == null) {
+                     break label114;
+                  }
 
-                        v0 = v5;
-                        v6 = v6;
-                    } while (v6 > var14_6);
-                    ** while (true)
-                }
-                dq_2.cb = var13;
-                dq_2.db = new String[2];
-                var0_7 = 4067822146182896824L;
-                var6_8 = new long[11];
-                var3_9 = 0;
-                var4_10 = "EYF\u00ac-\u00a0\u00faH\u00b9\u009c\u0084\u0015}\r\u00b3\u00c0\u0006\u00a9\u00bb\u00b6wd\u00e9\u00b7\u00cd\u00ab\u008c^4\u0080\"\u00ff\u001d\u00a1\"!\u00d4\u0094\u00b4\u00b6\u00d4jw\u00f8\u00f4Mb\u00e5\u00f7B\u00be\u0083\u000e;6\u00ed\u00d7z\u009c\u00b2b%C\u001e\u00fc\b\u0096B\u00ff{\u009f\u00cb";
-                var5_11 = "EYF\u00ac-\u00a0\u00faH\u00b9\u009c\u0084\u0015}\r\u00b3\u00c0\u0006\u00a9\u00bb\u00b6wd\u00e9\u00b7\u00cd\u00ab\u008c^4\u0080\"\u00ff\u001d\u00a1\"!\u00d4\u0094\u00b4\u00b6\u00d4jw\u00f8\u00f4Mb\u00e5\u00f7B\u00be\u0083\u000e;6\u00ed\u00d7z\u009c\u00b2b%C\u001e\u00fc\b\u0096B\u00ff{\u009f\u00cb".length();
-                var2_12 = 0;
-                while (true) {
-                    var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                    v12 = var6_8;
-                    v13 = var3_9++;
-                    v14 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                    v15 = -1;
-                    break block21;
-                    break;
-                }
-lbl90:
-                // 1 sources
+                  var7 = this.P;
+               }
 
-                while (true) {
-                    v12[v13] = v16;
-                    if (var2_12 < var5_11) ** continue;
-                    var4_10 = "\u00fbm\u0088wE}\u00d8\u0014aC6\u00ac<M\u0001k";
-                    var5_11 = "\u00fbm\u0088wE}\u00d8\u0014aC6\u00ac<M\u0001k".length();
-                    var2_12 = 0;
-                    while (true) {
-                        var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                        v12 = var6_8;
-                        v13 = var3_9++;
-                        v14 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                        v15 = 0;
-                        break block21;
-                        break;
-                    }
-                    break;
-                }
-lbl103:
-                // 1 sources
+               if (var7 <= 0) {
+                  var8 = this;
+                  if (var1 == null) {
+                     break label114;
+                  }
 
-                while (true) {
-                    v12[v13] = v16;
-                    if (var2_12 < var5_11) ** continue;
-                    break block22;
-                    break;
-                }
+                  if (!this.B) {
+                     var9 = this;
+                     if (var1 == null) {
+                        break label84;
+                     }
+
+                     if (!this.s) {
+                        break label113;
+                     }
+                  }
+               }
+
+               var8 = this;
             }
-            v16 = v14 ^ var0_7;
-            switch (v15) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl114:
-                // 1 sources
 
-                ** continue;
-            }
-        }
-        dq_2.jb = var6_8;
-        dq_2.kb = new Integer[11];
-        dq_2.P = E8.J("\u0000ERR:ArrayIndexOutOfBoundsException:Index 13694 out of bounds for length 2");
-    }
+            Dimension var3 = var8.getPreferredSize();
+            BufferedImage var4 = Xg_2.g(var3.width, var3.height, 3);
+            Graphics2D var5 = var4.createGraphics();
+            RV.X(var5);
+            Shape var6 = this.N();
+            RV.y(var5, var6, _5.R, new Color(a(2748, 1861594135011962130L), a(5993, 734356782593650882L), a(5993, 734356782593650882L)), this.P);
+            var5.drawImage(var2, this.P, this.P, null);
+            boolean var10 = this.B;
+            if (var1 != null) {
+               if (this.B) {
+                  var5.setPaint(
+                     new GradientPaint(
+                        0.0F,
+                        (float)this.P,
+                        new Color(a(2240, 4825450199560105833L), a(18030, 988576894238286276L), a(18030, 988576894238286276L), a(22105, 7321094231105171958L)),
+                        0.0F,
+                        (float)(this.P + (var3.height - this.P * 2) / 2),
+                        new Color(a(18030, 988576894238286276L), a(18030, 988576894238286276L), a(18030, 988576894238286276L), a(19645, 1130331558466775829L))
+                     )
+                  );
+                  var5.fill(this.R());
+               }
 
-    private static Exception c(Exception exception) {
-        return exception;
-    }
+               var10 = this.s;
+            }
 
-    private static String b(int n10, int n11) {
-        int n12 = (n10 ^ 0xFFFF935A) & 0xFFFF;
-        if (db[n12] == null) {
-            int n13;
-            int n14;
-            char[] cArray = cb[n12].toCharArray();
-            switch (cArray[0] & 0xFF) {
-                case 0: {
-                    n14 = 157;
-                    break;
-                }
-                case 1: {
-                    n14 = 194;
-                    break;
-                }
-                case 2: {
-                    n14 = 148;
-                    break;
-                }
-                case 3: {
-                    n14 = 209;
-                    break;
-                }
-                case 4: {
-                    n14 = 87;
-                    break;
-                }
-                case 5: {
-                    n14 = 214;
-                    break;
-                }
-                case 6: {
-                    n14 = 248;
-                    break;
-                }
-                case 7: {
-                    n14 = 205;
-                    break;
-                }
-                case 8: {
-                    n14 = 113;
-                    break;
-                }
-                case 9: {
-                    n14 = 27;
-                    break;
-                }
-                case 10: {
-                    n14 = 48;
-                    break;
-                }
-                case 11: {
-                    n14 = 17;
-                    break;
-                }
-                case 12: {
-                    n14 = 128;
-                    break;
-                }
-                case 13: {
-                    n14 = 167;
-                    break;
-                }
-                case 14: {
-                    n14 = 51;
-                    break;
-                }
-                case 15: {
-                    n14 = 212;
-                    break;
-                }
-                case 16: {
-                    n14 = 219;
-                    break;
-                }
-                case 17: {
-                    n14 = 208;
-                    break;
-                }
-                case 18: {
-                    n14 = 139;
-                    break;
-                }
-                case 19: {
-                    n14 = 202;
-                    break;
-                }
-                case 20: {
-                    n14 = 6;
-                    break;
-                }
-                case 21: {
-                    n14 = 195;
-                    break;
-                }
-                case 22: {
-                    n14 = 95;
-                    break;
-                }
-                case 23: {
-                    n14 = 88;
-                    break;
-                }
-                case 24: {
-                    n14 = 160;
-                    break;
-                }
-                case 25: {
-                    n14 = 100;
-                    break;
-                }
-                case 26: {
-                    n14 = 233;
-                    break;
-                }
-                case 27: {
-                    n14 = 55;
-                    break;
-                }
-                case 28: {
-                    n14 = 107;
-                    break;
-                }
-                case 29: {
-                    n14 = 150;
-                    break;
-                }
-                case 30: {
-                    n14 = 193;
-                    break;
-                }
-                case 31: {
-                    n14 = 81;
-                    break;
-                }
-                case 32: {
-                    n14 = 177;
-                    break;
-                }
-                case 33: {
-                    n14 = 59;
-                    break;
-                }
-                case 34: {
-                    n14 = 110;
-                    break;
-                }
-                case 35: {
-                    n14 = 4;
-                    break;
-                }
-                case 36: {
-                    n14 = 101;
-                    break;
-                }
-                case 37: {
-                    n14 = 229;
-                    break;
-                }
-                case 38: {
-                    n14 = 94;
-                    break;
-                }
-                case 39: {
-                    n14 = 34;
-                    break;
-                }
-                case 40: {
-                    n14 = 211;
-                    break;
-                }
-                case 41: {
-                    n14 = 21;
-                    break;
-                }
-                case 42: {
-                    n14 = 142;
-                    break;
-                }
-                case 43: {
-                    n14 = 24;
-                    break;
-                }
-                case 44: {
-                    n14 = 234;
-                    break;
-                }
-                case 45: {
-                    n14 = 123;
-                    break;
-                }
-                case 46: {
-                    n14 = 178;
-                    break;
-                }
-                case 47: {
-                    n14 = 92;
-                    break;
-                }
-                case 48: {
-                    n14 = 56;
-                    break;
-                }
-                case 49: {
-                    n14 = 161;
-                    break;
-                }
-                case 50: {
-                    n14 = 221;
-                    break;
-                }
-                case 51: {
-                    n14 = 116;
-                    break;
-                }
-                case 52: {
-                    n14 = 11;
-                    break;
-                }
-                case 53: {
-                    n14 = 179;
-                    break;
-                }
-                case 54: {
-                    n14 = 185;
-                    break;
-                }
-                case 55: {
-                    n14 = 63;
-                    break;
-                }
-                case 56: {
-                    n14 = 18;
-                    break;
-                }
-                case 57: {
-                    n14 = 119;
-                    break;
-                }
-                case 58: {
-                    n14 = 199;
-                    break;
-                }
-                case 59: {
-                    n14 = 54;
-                    break;
-                }
-                case 60: {
-                    n14 = 151;
-                    break;
-                }
-                case 61: {
-                    n14 = 238;
-                    break;
-                }
-                case 62: {
-                    n14 = 181;
-                    break;
-                }
-                case 63: {
-                    n14 = 78;
-                    break;
-                }
-                case 64: {
-                    n14 = 114;
-                    break;
-                }
-                case 65: {
-                    n14 = 111;
-                    break;
-                }
-                case 66: {
-                    n14 = 77;
-                    break;
-                }
-                case 67: {
-                    n14 = 232;
-                    break;
-                }
-                case 68: {
-                    n14 = 90;
-                    break;
-                }
-                case 69: {
-                    n14 = 130;
-                    break;
-                }
-                case 70: {
-                    n14 = 206;
-                    break;
-                }
-                case 71: {
-                    n14 = 250;
-                    break;
-                }
-                case 72: {
-                    n14 = 35;
-                    break;
-                }
-                case 73: {
-                    n14 = 210;
-                    break;
-                }
-                case 74: {
-                    n14 = 239;
-                    break;
-                }
-                case 75: {
-                    n14 = 41;
-                    break;
-                }
-                case 76: {
-                    n14 = 235;
-                    break;
-                }
-                case 77: {
-                    n14 = 198;
-                    break;
-                }
-                case 78: {
-                    n14 = 117;
-                    break;
-                }
-                case 79: {
-                    n14 = 216;
-                    break;
-                }
-                case 80: {
-                    n14 = 152;
-                    break;
-                }
-                case 81: {
-                    n14 = 132;
-                    break;
-                }
-                case 82: {
-                    n14 = 175;
-                    break;
-                }
-                case 83: {
-                    n14 = 9;
-                    break;
-                }
-                case 84: {
-                    n14 = 121;
-                    break;
-                }
-                case 85: {
-                    n14 = 224;
-                    break;
-                }
-                case 86: {
-                    n14 = 222;
-                    break;
-                }
-                case 87: {
-                    n14 = 231;
-                    break;
-                }
-                case 88: {
-                    n14 = 37;
-                    break;
-                }
-                case 89: {
-                    n14 = 144;
-                    break;
-                }
-                case 90: {
-                    n14 = 102;
-                    break;
-                }
-                case 91: {
-                    n14 = 64;
-                    break;
-                }
-                case 92: {
-                    n14 = 133;
-                    break;
-                }
-                case 93: {
-                    n14 = 140;
-                    break;
-                }
-                case 94: {
-                    n14 = 126;
-                    break;
-                }
-                case 95: {
-                    n14 = 66;
-                    break;
-                }
-                case 96: {
-                    n14 = 134;
-                    break;
-                }
-                case 97: {
-                    n14 = 165;
-                    break;
-                }
-                case 98: {
-                    n14 = 186;
-                    break;
-                }
-                case 99: {
-                    n14 = 191;
-                    break;
-                }
-                case 100: {
-                    n14 = 80;
-                    break;
-                }
-                case 101: {
-                    n14 = 225;
-                    break;
-                }
-                case 102: {
-                    n14 = 70;
-                    break;
-                }
-                case 103: {
-                    n14 = 213;
-                    break;
-                }
-                case 104: {
-                    n14 = 183;
-                    break;
-                }
-                case 105: {
-                    n14 = 73;
-                    break;
-                }
-                case 106: {
-                    n14 = 62;
-                    break;
-                }
-                case 107: {
-                    n14 = 36;
-                    break;
-                }
-                case 108: {
-                    n14 = 252;
-                    break;
-                }
-                case 109: {
-                    n14 = 244;
-                    break;
-                }
-                case 110: {
-                    n14 = 20;
-                    break;
-                }
-                case 111: {
-                    n14 = 40;
-                    break;
-                }
-                case 112: {
-                    n14 = 136;
-                    break;
-                }
-                case 113: {
-                    n14 = 39;
-                    break;
-                }
-                case 114: {
-                    n14 = 129;
-                    break;
-                }
-                case 115: {
-                    n14 = 158;
-                    break;
-                }
-                case 116: {
-                    n14 = 52;
-                    break;
-                }
-                case 117: {
-                    n14 = 189;
-                    break;
-                }
-                case 118: {
-                    n14 = 190;
-                    break;
-                }
-                case 119: {
-                    n14 = 91;
-                    break;
-                }
-                case 120: {
-                    n14 = 22;
-                    break;
-                }
-                case 121: {
-                    n14 = 86;
-                    break;
-                }
-                case 122: {
-                    n14 = 7;
-                    break;
-                }
-                case 123: {
-                    n14 = 168;
-                    break;
-                }
-                case 124: {
-                    n14 = 108;
-                    break;
-                }
-                case 125: {
-                    n14 = 230;
-                    break;
-                }
-                case 126: {
-                    n14 = 138;
-                    break;
-                }
-                case 127: {
-                    n14 = 57;
-                    break;
-                }
-                case 128: {
-                    n14 = 187;
-                    break;
-                }
-                case 129: {
-                    n14 = 243;
-                    break;
-                }
-                case 130: {
-                    n14 = 69;
-                    break;
-                }
-                case 131: {
-                    n14 = 31;
-                    break;
-                }
-                case 132: {
-                    n14 = 12;
-                    break;
-                }
-                case 133: {
-                    n14 = 104;
-                    break;
-                }
-                case 134: {
-                    n14 = 240;
-                    break;
-                }
-                case 135: {
-                    n14 = 16;
-                    break;
-                }
-                case 136: {
-                    n14 = 153;
-                    break;
-                }
-                case 137: {
-                    n14 = 141;
-                    break;
-                }
-                case 138: {
-                    n14 = 247;
-                    break;
-                }
-                case 139: {
-                    n14 = 96;
-                    break;
-                }
-                case 140: {
-                    n14 = 29;
-                    break;
-                }
-                case 141: {
-                    n14 = 255;
-                    break;
-                }
-                case 142: {
-                    n14 = 207;
-                    break;
-                }
-                case 143: {
-                    n14 = 50;
-                    break;
-                }
-                case 144: {
-                    n14 = 3;
-                    break;
-                }
-                case 145: {
-                    n14 = 171;
-                    break;
-                }
-                case 146: {
-                    n14 = 254;
-                    break;
-                }
-                case 147: {
-                    n14 = 71;
-                    break;
-                }
-                case 148: {
-                    n14 = 218;
-                    break;
-                }
-                case 149: {
-                    n14 = 149;
-                    break;
-                }
-                case 150: {
-                    n14 = 30;
-                    break;
-                }
-                case 151: {
-                    n14 = 76;
-                    break;
-                }
-                case 152: {
-                    n14 = 89;
-                    break;
-                }
-                case 153: {
-                    n14 = 43;
-                    break;
-                }
-                case 154: {
-                    n14 = 98;
-                    break;
-                }
-                case 155: {
-                    n14 = 47;
-                    break;
-                }
-                case 156: {
-                    n14 = 228;
-                    break;
-                }
-                case 157: {
-                    n14 = 112;
-                    break;
-                }
-                case 158: {
-                    n14 = 226;
-                    break;
-                }
-                case 159: {
-                    n14 = 170;
-                    break;
-                }
-                case 160: {
-                    n14 = 246;
-                    break;
-                }
-                case 161: {
-                    n14 = 203;
-                    break;
-                }
-                case 162: {
-                    n14 = 154;
-                    break;
-                }
-                case 163: {
-                    n14 = 42;
-                    break;
-                }
-                case 164: {
-                    n14 = 146;
-                    break;
-                }
-                case 165: {
-                    n14 = 26;
-                    break;
-                }
-                case 166: {
-                    n14 = 143;
-                    break;
-                }
-                case 167: {
-                    n14 = 125;
-                    break;
-                }
-                case 168: {
-                    n14 = 109;
-                    break;
-                }
-                case 169: {
-                    n14 = 135;
-                    break;
-                }
-                case 170: {
-                    n14 = 192;
-                    break;
-                }
-                case 171: {
-                    n14 = 0;
-                    break;
-                }
-                case 172: {
-                    n14 = 65;
-                    break;
-                }
-                case 173: {
-                    n14 = 251;
-                    break;
-                }
-                case 174: {
-                    n14 = 68;
-                    break;
-                }
-                case 175: {
-                    n14 = 120;
-                    break;
-                }
-                case 176: {
-                    n14 = 223;
-                    break;
-                }
-                case 177: {
-                    n14 = 201;
-                    break;
-                }
-                case 178: {
-                    n14 = 8;
-                    break;
-                }
-                case 179: {
-                    n14 = 74;
-                    break;
-                }
-                case 180: {
-                    n14 = 197;
-                    break;
-                }
-                case 181: {
-                    n14 = 58;
-                    break;
-                }
-                case 182: {
-                    n14 = 53;
-                    break;
-                }
-                case 183: {
-                    n14 = 245;
-                    break;
-                }
-                case 184: {
-                    n14 = 85;
-                    break;
-                }
-                case 185: {
-                    n14 = 15;
-                    break;
-                }
-                case 186: {
-                    n14 = 23;
-                    break;
-                }
-                case 187: {
-                    n14 = 169;
-                    break;
-                }
-                case 188: {
-                    n14 = 124;
-                    break;
-                }
-                case 189: {
-                    n14 = 97;
-                    break;
-                }
-                case 190: {
-                    n14 = 159;
-                    break;
-                }
-                case 191: {
-                    n14 = 249;
-                    break;
-                }
-                case 192: {
-                    n14 = 180;
-                    break;
-                }
-                case 193: {
-                    n14 = 93;
-                    break;
-                }
-                case 194: {
-                    n14 = 45;
-                    break;
-                }
-                case 195: {
-                    n14 = 127;
-                    break;
-                }
-                case 196: {
-                    n14 = 14;
-                    break;
-                }
-                case 197: {
-                    n14 = 61;
-                    break;
-                }
-                case 198: {
-                    n14 = 10;
-                    break;
-                }
-                case 199: {
-                    n14 = 115;
-                    break;
-                }
-                case 200: {
-                    n14 = 237;
-                    break;
-                }
-                case 201: {
-                    n14 = 163;
-                    break;
-                }
-                case 202: {
-                    n14 = 25;
-                    break;
-                }
-                case 203: {
-                    n14 = 217;
-                    break;
-                }
-                case 204: {
-                    n14 = 75;
-                    break;
-                }
-                case 205: {
-                    n14 = 33;
-                    break;
-                }
-                case 206: {
-                    n14 = 176;
-                    break;
-                }
-                case 207: {
-                    n14 = 173;
-                    break;
-                }
-                case 208: {
-                    n14 = 72;
-                    break;
-                }
-                case 209: {
-                    n14 = 13;
-                    break;
-                }
-                case 210: {
-                    n14 = 156;
-                    break;
-                }
-                case 211: {
-                    n14 = 188;
-                    break;
-                }
-                case 212: {
-                    n14 = 215;
-                    break;
-                }
-                case 213: {
-                    n14 = 253;
-                    break;
-                }
-                case 214: {
-                    n14 = 46;
-                    break;
-                }
-                case 215: {
-                    n14 = 44;
-                    break;
-                }
-                case 216: {
-                    n14 = 32;
-                    break;
-                }
-                case 217: {
-                    n14 = 1;
-                    break;
-                }
-                case 218: {
-                    n14 = 38;
-                    break;
-                }
-                case 219: {
-                    n14 = 184;
-                    break;
-                }
-                case 220: {
-                    n14 = 2;
-                    break;
-                }
-                case 221: {
-                    n14 = 131;
-                    break;
-                }
-                case 222: {
-                    n14 = 204;
-                    break;
-                }
-                case 223: {
-                    n14 = 105;
-                    break;
-                }
-                case 224: {
-                    n14 = 174;
-                    break;
-                }
-                case 225: {
-                    n14 = 196;
-                    break;
-                }
-                case 226: {
-                    n14 = 227;
-                    break;
-                }
-                case 227: {
-                    n14 = 84;
-                    break;
-                }
-                case 228: {
-                    n14 = 166;
-                    break;
-                }
-                case 229: {
-                    n14 = 241;
-                    break;
-                }
-                case 230: {
-                    n14 = 49;
-                    break;
-                }
-                case 231: {
-                    n14 = 164;
-                    break;
-                }
-                case 232: {
-                    n14 = 5;
-                    break;
-                }
-                case 233: {
-                    n14 = 145;
-                    break;
-                }
-                case 234: {
-                    n14 = 28;
-                    break;
-                }
-                case 235: {
-                    n14 = 155;
-                    break;
-                }
-                case 236: {
-                    n14 = 67;
-                    break;
-                }
-                case 237: {
-                    n14 = 79;
-                    break;
-                }
-                case 238: {
-                    n14 = 172;
-                    break;
-                }
-                case 239: {
-                    n14 = 118;
-                    break;
-                }
-                case 240: {
-                    n14 = 242;
-                    break;
-                }
-                case 241: {
-                    n14 = 236;
-                    break;
-                }
-                case 242: {
-                    n14 = 200;
-                    break;
-                }
-                case 243: {
-                    n14 = 106;
-                    break;
-                }
-                case 244: {
-                    n14 = 122;
-                    break;
-                }
-                case 245: {
-                    n14 = 182;
-                    break;
-                }
-                case 246: {
-                    n14 = 147;
-                    break;
-                }
-                case 247: {
-                    n14 = 82;
-                    break;
-                }
-                case 248: {
-                    n14 = 220;
-                    break;
-                }
-                case 249: {
-                    n14 = 137;
-                    break;
-                }
-                case 250: {
-                    n14 = 60;
-                    break;
-                }
-                case 251: {
-                    n14 = 162;
-                    break;
-                }
-                case 252: {
-                    n14 = 99;
-                    break;
-                }
-                case 253: {
-                    n14 = 83;
-                    break;
-                }
-                case 254: {
-                    n14 = 103;
-                    break;
-                }
-                default: {
-                    n14 = 19;
-                }
+            if (var10) {
+               var5.setPaint(this.R);
+               var5.draw(var6);
             }
-            int n15 = n14;
-            int n16 = (n11 & 0xFF) - n15;
-            if (n16 < 0) {
-                n16 += 256;
-            }
-            if ((n13 = ((n11 & 0xFFFF) >>> 8) - n15) < 0) {
-                n13 += 256;
-            }
-            int n17 = 0;
-            while (n17 < cArray.length) {
-                int n18 = n17 % 2;
-                int n19 = n17;
-                char[] cArray2 = cArray;
-                char c2 = cArray[n19];
-                if (n18 == 0) {
-                    cArray2[n19] = (char)(c2 ^ n16);
-                    n16 = ((n16 >>> 3 | n16 << 5) ^ cArray[n17]) & 0xFF;
-                } else {
-                    cArray2[n19] = (char)(c2 ^ n13);
-                    n13 = ((n13 >>> 3 | n13 << 5) ^ cArray[n17]) & 0xFF;
-                }
-                ++n17;
-            }
-            dq_2.db[n12] = new String(cArray).intern();
-        }
-        return db[n12];
-    }
 
-    private static int b(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x55FF;
-        if (kb[n11] == null) {
-            dq_2.kb[n11] = (int)(jb[n11] ^ l2);
-        }
-        return kb[n11];
-    }
+            var5.dispose();
+            var2 = var4;
+         }
+
+         this.p = new ImageIcon(var2);
+         var9 = this;
+      }
+
+      var9.repaint();
+   }
+
+   private Shape R() {
+      Dimension var1 = this.getPreferredSize();
+      return (Shape)(this.b > 0
+         ? new Double(
+            (double)this.P,
+            (double)this.P,
+            (double)(var1.width - this.P * 2),
+            (double)((var1.height - this.P * 2) / 2),
+            (double)(this.b * 2),
+            (double)(this.b * 2)
+         )
+         : new Rectangle(this.P, this.P, var1.width - this.P * 2, (var1.height - this.P * 2) / 2));
+   }
+
+   private Shape N() {
+      return this.H(0, 0);
+   }
+
+   private Shape H(int var1, int var2) {
+      Dimension var3 = this.getPreferredSize();
+      return (Shape)(this.b > 0
+         ? new Double(
+            (double)(var1 + this.P),
+            (double)(var2 + this.P),
+            (double)(var3.width - this.P * 2 - 1),
+            (double)(var3.height - this.P * 2 - 1),
+            (double)(this.b * 2),
+            (double)(this.b * 2)
+         )
+         : new Rectangle(var1 + this.P, var2 + this.P, var3.width - this.P * 2 - 1, var3.height - this.P * 2 - 1));
+   }
+
+   @Override
+   protected void paintComponent(Graphics var1) {
+      String var10000 = com.Wb_2.m();
+      super.paintComponent(var1);
+      String var2 = var10000;
+      com.Dq_2 var4 = this;
+      if (var2 != null) {
+         if (this.p == null) {
+            return;
+         }
+
+         var4 = this;
+      }
+
+      Point var3 = var4.j();
+      var1.drawImage(this.p.getImage(), var3.x, var3.y, null);
+   }
+
+   private Point j$Point() {
+      String var1;
+      int var3;
+      int var4;
+      label50: {
+         int var2 = this.p.getIconWidth();
+         String var10000 = com.Wb_2.m();
+         var3 = this.p.getIconHeight();
+         var1 = var10000;
+         int var6 = this.o;
+         int var10001 = 2;
+         if (var1 != null) {
+            if (this.o == 2) {
+               var4 = 0;
+               if (var1 != null) {
+                  break label50;
+               }
+            }
+
+            var6 = this.o;
+            var10001 = 4;
+         }
+
+         if (var1 != null) {
+            if (var6 == var10001) {
+               var4 = this.getWidth() - var2;
+               if (var1 != null) {
+                  break label50;
+               }
+            }
+
+            var6 = this.getWidth() / 2;
+            var10001 = var2 / 2;
+         }
+
+         var4 = var6 - var10001;
+      }
+
+      int var7 = this.e;
+      int var8 = 1;
+      if (var1 != null) {
+         if (this.e == 1) {
+            byte var5 = 0;
+            if (var1 != null) {
+               return new Point(var4, var5);
+            }
+         }
+
+         var7 = this.e;
+         var8 = 3;
+      }
+
+      if (var1 != null) {
+         if (var7 == var8) {
+            int var9 = this.getHeight() - var3;
+            if (var1 != null) {
+               return new Point(var4, var9);
+            }
+         }
+
+         var7 = this.getHeight() / 2;
+         var8 = var3 / 2;
+      }
+
+      int var10 = var7 - var8;
+      return new Point(var4, var10);
+   }
+
+   @Override
+   public Dimension getPreferredSize() {
+      return this.A != null ? new Dimension(this.P * 2 + this.A.getIconWidth(), this.P * 2 + this.A.getIconHeight()) : new Dimension(0, 0);
+   }
+
+   @Override
+   public Shape B() {
+      Point var1 = this.j();
+      return this.H(var1.x, var1.y);
+   }
+
+   static {
+      long var0 = 2794543755217359759L;
+      long[] var6 = new long[6];
+      int var3 = 0;
+      String var4 = "=üÑócàã\u0017ãî\u0089P©?2´ÐÒº\u0098Ý\u001a|\u0019\u0014ôH¶s×8º";
+      int var5 = "=üÑócàã\u0017ãî\u0089P©?2´ÐÒº\u0098Ý\u001a|\u0019\u0014ôH¶s×8º".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     d = new Integer[6];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "õL|Ê++\"Ù\u0080n\u009e4\u0092RþÇ";
+                  var5 = "õL|Ê++\"Ù\u0080n\u009e4\u0092RþÇ".length();
+                  var2 = 0;
+            }
+
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 10155;
+      if (d[var3] == null) {
+         d[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return d[var3];
+   }
 }
+
+
+
+
 

@@ -1,11 +1,12 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 public interface D7 {
-    public String A();
+   String A();
 
-    public void S(String var1);
+   void S(String var1);
 }
+
+
+
+
 

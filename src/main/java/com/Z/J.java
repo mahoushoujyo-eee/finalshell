@@ -1,24 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.Z.T;
-import com.kn_0;
-import com.z.d_0;
 import java.io.File;
 
-class J
-implements kn_0 {
-    final T u;
+class J implements com.Kn_2 {
+   final com.Z.T u;
 
-    J(T t2) {
-        this.u = t2;
-    }
+   J(com.Z.T var1) {
+      this.u = var1;
+   }
 
-    @Override
-    public void r(File file) {
-        this.u.M(file, d_0.path);
-    }
+   @Override
+   public void r(File var1) {
+      this.u.M(var1, d_2.path);
+   }
 }
+
+
+
+
 

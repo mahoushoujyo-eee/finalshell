@@ -1,60 +1,68 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.t;
 
 import com.P9;
-import com.t.a_0;
-import com.t.n_0;
 import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
 import javax.swing.event.ChangeListener;
 
-class h
-implements CaretListener {
-    final ChangeListener N;
-    final n_0 m;
+class h implements CaretListener {
+   final ChangeListener N;
+   final com.t.n_2 m;
 
-    h(n_0 n_02, ChangeListener changeListener) {
-        this.m = n_02;
-        this.N = changeListener;
-    }
+   h(com.t.n_2 var1, ChangeListener var2) {
+      this.m = var1;
+      this.N = var2;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void caretUpdate(CaretEvent var1_1) {
-        block5: {
-            var2_2 = n_0.g();
+   // $VF: Handled exception range with multiple entry points by splitting it
+   // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
+   @Override
+   public void caretUpdate(CaretEvent var1) {
+      int var2 = com.t.n_2.g();
+
+      label34: {
+         com.t.n_2 var10000;
+         label40: {
             try {
-                v0 = this.m;
-                if (var2_2 == 0) {
-                    if (n_0.N(v0)) break block5;
-                }
-                ** GOTO lbl15
+               var10000 = this.m;
+               if (var2 != 0) {
+                  break label40;
+               }
+
+               if (com.t.n_2.N(this.m)) {
+                  return;
+               }
+            } catch (Throwable var6) {
+               throw a(var6);
             }
-            catch (Throwable v1) {
-                throw h.a(v1);
-            }
-            n_0.r(this.m).K(this.N);
+
+            com.t.n_2.r(this.m).K(this.N);
+
             try {
-                n_0.y(this.m, P9.C(n_0.E(this.m).getText()));
-                v0 = this.m;
-lbl15:
-                // 2 sources
-
-                n_0.a(v0, n_0.c(this.m), a_0.hexField);
+               com.t.n_2.y(this.m, P9.C(com.t.n_2.E(this.m).getText()));
+               var10000 = this.m;
+            } catch (Throwable var5) {
+               boolean var10001 = false;
+               break label34;
             }
-            catch (Throwable var3_3) {
-                // empty catch block
-            }
-            n_0.r(this.m).N(this.N);
-        }
-    }
+         }
 
-    private static Throwable a(Throwable throwable) {
-        return throwable;
-    }
+         try {
+            com.t.n_2.a(var10000, com.t.n_2.c(this.m), com.t.a_2.hexField);
+         } catch (Throwable var4) {
+            boolean var7 = false;
+         }
+      }
+
+      com.t.n_2.r(this.m).N(this.N);
+   }
+
+   private static Throwable a(Throwable var0) {
+      return var0;
+   }
 }
+
+
+
+
 

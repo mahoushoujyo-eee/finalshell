@@ -1,113 +1,126 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import java.util.Hashtable;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.Random;
 
-/*
- * Renamed from ou
- */
-public class ou_2 {
-    private static final String a;
+public class Ou_2 {
+   private InetAddress C;
+   private int y;
+   private boolean G = false;
+   private Thread v;
+   private Random j = new Random();
+   private int H;
+   private InetAddress K;
+   private int V;
+   private QI B;
+   private boolean c = false;
+   private boolean F = false;
+   private boolean p = false;
+   public long P = 0L;
+   long N;
+   boolean A = false;
+   public int U = 0;
+   boolean D = false;
+   boolean u = false;
 
-    /*
-     * Unable to fully structure code
-     */
-    public static String f(Hashtable var0) {
-        var2_1 = new StringBuffer();
-        var1_2 = D6.k();
-        var3_3 = var0.keys();
-        if (var1_2 == null) ** GOTO lbl11
-        block0: while (true) {
-            v0 = (String)var3_3.nextElement();
-            do {
-                var4_4 = v0;
-                var2_1.append(var0.get(var4_4) + ou_2.a + var4_4 + "\n");
-lbl11:
-                // 2 sources
+   public Ou_2() {
+      this.H = this.j.nextInt();
+      this.P = System.currentTimeMillis();
+   }
 
-                if (var3_3.hasMoreElements()) continue block0;
-                v0 = var2_1.toString();
-            } while (var1_2 != null);
-            break;
-        }
-        return v0;
-    }
+   public boolean i() {
+      return this.u;
+   }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u001c\b\t".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 45;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 17;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 31;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 4;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 13;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 46;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 37;
-                            break;
-                        }
-                        default: {
-                            n17 = 17;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+   public void o(boolean var1) {
+      this.u = var1;
+   }
+
+   public boolean V() {
+      return this.D;
+   }
+
+   public void X(boolean var1) {
+      this.D = var1;
+   }
+
+   public long M() {
+      return this.P;
+   }
+
+   public void q(long var1) {
+      this.P = var1;
+   }
+
+   public boolean w() {
+      String[] var1 = QI.N();
+      int var10000 = this.y();
+      if (var1 != null) {
+         var10000 = var10000 != 0 ? 0 : 1;
+      }
+
+      int var10001 = this.p;
+      if (var1 != null) {
+         var10001 = this.p ? 0 : 1;
+      }
+
+      var10000 &= var10001;
+      long var5;
+      var10001 = (var5 = System.currentTimeMillis() - this.N - (long)Yh_2.U) == 0L ? 0 : (var5 < 0L ? -1 : 1);
+      if (var1 != null) {
+         var10001 = var10001 > 0 ? 1 : 0;
+      }
+
+      return (boolean)(var10000 & var10001);
+   }
+
+   public void m() {
+      this.p = false;
+   }
+
+   public boolean b() {
+      return this.p;
+   }
+
+   public void D(String var1, int var2) {
+      try {
+         this.C = InetAddress.getByName(var1);
+      } catch (UnknownHostException var4) {
+         var4.printStackTrace();
+      }
+
+      this.y = var2;
+   }
+
+   public void u(String var1, int var2) {
+      try {
+         this.K = InetAddress.getByName(var1);
+      } catch (UnknownHostException var4) {
+         var4.printStackTrace();
+      }
+
+      this.V = var2;
+   }
+
+   public void A(InetAddress var1, int var2) {
+      this.K = var1;
+      this.V = var2;
+   }
+
+   public boolean y() {
+      return this.c;
+   }
+
+   public void A(QI var1) {
+      this.B = var1;
+   }
+
+   void x() {
+      this.G = false;
+      this.v.interrupt();
+   }
 }
+
+
+
+
 

@@ -1,26 +1,133 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.D2;
+enum Kq_2 {
+   shade, background, backgroundPainter, border;
+   private static final com.Kq_2[] R;
 
-/*
- * Renamed from com.kq
- */
-class kq_2
-implements Runnable {
-    final int V;
-    final D2 u;
+   private static com.Kq_2[] s() {
+      return new com.Kq_2[]{shade, background, backgroundPainter, border};
+   }
 
-    kq_2(D2 d2, int n10) {
-        this.u = d2;
-        this.V = n10;
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var0 = new String[4];
+      int var4 = 0;
+      String var3 = "b'W\u000e3K\u0019u(P\u0005s.U\u00011";
+      int var5 = "b'W\u000e3K\u0019u(P\u0005s.U\u00011".length();
+      char var2 = '\n';
+      int var8 = -1;
 
-    @Override
-    public void run() {
-        D2.G(this.u).setValue(this.V);
-    }
+      label53:
+      while (true) {
+         byte var10000 = 122;
+         String var10001 = var3.substring(++var8, var8 + var2);
+         byte var10002 = -1;
+
+         while (true) {
+            label48: {
+               char[] var24 = var10001.toCharArray();
+               int var10004 = var24.length;
+               int var6 = 0;
+               byte var27 = var10000;
+               var20 = var24;
+               int var14 = var10004;
+               byte var32;
+               char[] var36;
+               int var10006;
+               if (var10004 <= 1) {
+                  var36 = var24;
+                  var32 = var10000;
+                  var10006 = var6;
+               } else {
+                  var27 = var10000;
+                  var14 = var10004;
+                  if (var10004 <= var6) {
+                     break label48;
+                  }
+
+                  var36 = var24;
+                  var32 = var10000;
+                  var10006 = var6;
+               }
+
+               while (true) {
+                  char var45 = var36[var10006];
+                  byte var46;
+                  switch (var6 % 7) {
+                     case 0:
+                        var46 = 122;
+                        break;
+                     case 1:
+                        var46 = 60;
+                        break;
+                     case 2:
+                        var46 = 78;
+                        break;
+                     case 3:
+                        var46 = 31;
+                        break;
+                     case 4:
+                        var46 = 46;
+                        break;
+                     case 5:
+                        var46 = 67;
+                        break;
+                     default:
+                        var46 = 12;
+                  }
+
+                  var36[var10006] = (char)(var45 ^ var32 ^ var46);
+                  var6++;
+                  if (var27 == 0) {
+                     var10006 = var27;
+                     var36 = var20;
+                     var32 = var27;
+                  } else {
+                     if (var14 <= var6) {
+                        break;
+                     }
+
+                     var36 = var20;
+                     var32 = var27;
+                     var10006 = var6;
+                  }
+               }
+            }
+
+            String var29 = new String(var20).intern();
+            switch (var10002) {
+               case 0:
+                  var0[var4++] = var29;
+                  if ((var8 += var2) >= var5) {
+                     R = s();
+                     return;
+                  }
+
+                  var2 = var3.charAt(var8);
+                  break;
+               default:
+                  var0[var4++] = var29;
+                  if ((var8 += var2) < var5) {
+                     var2 = var3.charAt(var8);
+                     continue label53;
+                  }
+
+                  var3 = "_\u001aj3\u000ev$H\u0015m\b\bm%I\u001e{\u0006_\u0014{<\fv";
+                  var5 = "_\u001aj3\u000ev$H\u0015m\b\bm%I\u001e{\u0006_\u0014{<\fv".length();
+                  var2 = 17;
+                  var8 = -1;
+            }
+
+            var10000 = 71;
+            var10001 = var3.substring(++var8, var8 + var2);
+            var10002 = 0;
+         }
+      }
+   }
 }
+
+
+
+
+
 

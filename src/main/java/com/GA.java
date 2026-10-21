@@ -1,41 +1,7 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.D7;
-import com.F2;
-import com.FN;
-import com.FV;
-import com.GO;
-import com.KS;
-import com.L0;
-import com.LB;
-import com.LP;
-import com.O_;
-import com.P9;
-import com.PM;
-import com.RV;
-import com.W2;
-import com.WQ;
-import com.c;
-import com.eh_1;
-import com.hq_0;
-import com.kp_0;
-import com.ky_2;
-import com.lo_0;
-import com.ne_1;
-import com.ne_2;
-import com.og_2;
-import com.pf_1;
-import com.pp_2;
-import com.rv_2;
-import com.xm_0;
-import java.awt.AlphaComposite;
-import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.Composite;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.FontMetrics;
@@ -53,10 +19,8 @@ import java.awt.font.FontRenderContext;
 import java.awt.font.GlyphVector;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Area;
-import java.awt.geom.Ellipse2D;
 import java.awt.geom.GeneralPath;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.RoundRectangle2D;
+import java.awt.geom.RoundRectangle2D.Double;
 import java.awt.image.BufferedImage;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
@@ -64,4454 +28,4982 @@ import java.util.Map;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.UIManager;
 import javax.swing.border.Border;
 import javax.swing.plaf.ComponentUI;
-import javax.swing.plaf.ScrollBarUI;
 import javax.swing.plaf.basic.BasicButtonUI;
 
 public final class GA {
-    public static final AffineTransform e;
-    public static final AffineTransform N;
-    public static final AffineTransform d;
-    public static final AffineTransform P;
-    private static final Map i;
-    public static int a;
-    public static int o;
-    public static int u;
-    public static int U;
-    private static final pf_1 g;
-    private static final pf_1 M;
-    private static final pf_1 l;
-    private static final pf_1 V;
-    private static final pf_1 z;
-    private static final pf_1 j;
-    private static final pf_1 F;
-    private static final pf_1 C;
-    private static final pf_1 B;
-    private static final ImageIcon x;
-    private static final Map q;
-    private static final String[] b;
-    private static final String[] c;
-    private static final long[] f;
-    private static final Integer[] h;
+   public static final AffineTransform e;
+   public static final AffineTransform N;
+   public static final AffineTransform d;
+   public static final AffineTransform P;
+   private static final Map i;
+   public static int a;
+   public static int o;
+   public static int u;
+   public static int U;
+   private static final pF_3 g;
+   private static final pF_3 M;
+   private static final pF_3 l;
+   private static final pF_3 V;
+   private static final pF_3 z;
+   private static final pF_3 j;
+   private static final pF_3 F;
+   private static final pF_3 C;
+   private static final pF_3 B;
+   private static final ImageIcon x;
+   private static final Map q;
+   private static final String[] b;
+   private static final String[] c;
+   private static final long[] f;
+   private static final Integer[] h;
 
-    public static Border y(Insets insets) {
-        return new KS(insets.top, insets.left, insets.bottom, insets.right);
-    }
+   public static Border y(Insets var0) {
+      return new com.KS(var0.top, var0.left, var0.bottom, var0.right);
+   }
 
-    public static Border C(int n10, int n11, int n12, int n13) {
-        return new KS(n10, n11, n12, n13);
-    }
+   public static Border C(int var0, int var1, int var2, int var3) {
+      return new com.KS(var0, var1, var2, var3);
+   }
 
-    public static Border V(int n10) {
-        return new KS(n10, n10, n10, n10);
-    }
+   public static Border V(int var0) {
+      return new com.KS(var0, var0, var0, var0);
+   }
 
-    public static og_2 u(og_2 og_22, Class clazz, Class clazz2) {
-        og_2 og_23;
-        block7: {
-            Object object;
-            block8: {
-                block9: {
-                    String string;
-                    block6: {
-                        string = FV.D();
-                        try {
-                            if (og_22 != null) break block6;
-                            og_23 = null;
-                            break block7;
-                        }
-                        catch (RuntimeException runtimeException) {
-                            throw GA.a(runtimeException);
-                        }
-                    }
-                    try {
-                        try {
-                            object = clazz;
-                            if (string != null) break block8;
-                            if (!kp_0.d((Class)object, og_22.getClass())) break block9;
-                        }
-                        catch (RuntimeException runtimeException) {
-                            throw GA.a(runtimeException);
-                        }
-                        og_23 = og_22;
-                        break block7;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                }
-                object = kp_0.U(clazz2, new Object[]{og_22});
+   public static com.og_4 u(com.og_4 param0, Class param1, Class param2) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 3
+      // 04: aload 0
+      // 05: ifnonnull 10
+      // 08: aconst_null
+      // 09: goto 3d
+      // 0c: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0f: athrow
+      // 10: aload 1
+      // 11: aload 3
+      // 12: ifnonnull 3a
+      // 15: aload 0
+      // 16: invokevirtual java/lang/Object.getClass ()Ljava/lang/Class;
+      // 19: invokestatic com/Kp_2.d (Ljava/lang/Class;Ljava/lang/Class;)Z
+      // 1c: ifeq 2e
+      // 1f: goto 26
+      // 22: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 25: athrow
+      // 26: aload 0
+      // 27: goto 3d
+      // 2a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 2d: athrow
+      // 2e: aload 2
+      // 2f: bipush 1
+      // 30: anewarray 4
+      // 33: dup
+      // 34: bipush 0
+      // 35: aload 0
+      // 36: aastore
+      // 37: invokestatic com/Kp_2.U (Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 3a: checkcast com/og_4
+      // 3d: areturn
+   }
+
+   public static com.og_4 m(com.og_4 param0) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnonnull 14
+      // 09: ifnull 36
+      // 0c: goto 13
+      // 0f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 12: athrow
+      // 13: aload 0
+      // 14: aload 1
+      // 15: ifnonnull 33
+      // 18: instanceof com/LP
+      // 1b: ifeq 36
+      // 1e: goto 25
+      // 21: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 24: athrow
+      // 25: aload 0
+      // 26: checkcast com/LP
+      // 29: invokevirtual com/LP.J ()Lcom/og_4;
+      // 2c: goto 33
+      // 2f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 32: athrow
+      // 33: goto 37
+      // 36: aload 0
+      // 37: areturn
+   }
+
+   public static void q(JComponent var0, com.og_4 var1, com.og_4 var2) {
+      try {
+         com.Kp_2.j(var0, a(-31936, -19648), new Object[]{a(-31913, 20788), var1, var2});
+      } catch (NoSuchMethodException var4) {
+         nE_3.g(GA.class, var4);
+      } catch (InvocationTargetException var5) {
+         nE_3.g(GA.class, var5);
+      } catch (IllegalAccessException var6) {
+         nE_3.g(GA.class, var6);
+      }
+   }
+
+   public static void B(JScrollPane param0, String param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: aload 0
+      // 04: invokevirtual javax/swing/JScrollPane.getVerticalScrollBar ()Ljavax/swing/JScrollBar;
+      // 07: astore 3
+      // 08: astore 2
+      // 09: aload 3
+      // 0a: aload 2
+      // 0b: ifnonnull 42
+      // 0e: ifnull 3e
+      // 11: goto 18
+      // 14: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 17: athrow
+      // 18: aload 3
+      // 19: aload 2
+      // 1a: ifnonnull 42
+      // 1d: goto 24
+      // 20: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 23: athrow
+      // 24: invokevirtual javax/swing/JScrollBar.getUI ()Ljavax/swing/plaf/ScrollBarUI;
+      // 27: astore 4
+      // 29: aload 4
+      // 2b: instanceof com/Xm_2
+      // 2e: ifeq 3e
+      // 31: aload 4
+      // 33: checkcast com/Xm_2
+      // 36: astore 5
+      // 38: aload 5
+      // 3a: aload 1
+      // 3b: invokevirtual com/Xm_2.S (Ljava/lang/String;)V
+      // 3e: aload 0
+      // 3f: invokevirtual javax/swing/JScrollPane.getHorizontalScrollBar ()Ljavax/swing/JScrollBar;
+      // 42: astore 4
+      // 44: aload 4
+      // 46: aload 2
+      // 47: ifnonnull 56
+      // 4a: ifnull 82
+      // 4d: goto 54
+      // 50: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 53: athrow
+      // 54: aload 4
+      // 56: invokevirtual javax/swing/JScrollBar.getUI ()Ljavax/swing/plaf/ScrollBarUI;
+      // 59: astore 5
+      // 5b: aload 5
+      // 5d: aload 2
+      // 5e: ifnonnull 77
+      // 61: instanceof com/Xm_2
+      // 64: ifeq 82
+      // 67: goto 6e
+      // 6a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 6d: athrow
+      // 6e: aload 5
+      // 70: goto 77
+      // 73: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 76: athrow
+      // 77: checkcast com/Xm_2
+      // 7a: astore 6
+      // 7c: aload 6
+      // 7e: aload 1
+      // 7f: invokevirtual com/Xm_2.S (Ljava/lang/String;)V
+      // 82: return
+   }
+
+   public static ComponentUI Z(Component var0) {
+      return (ComponentUI)com.Kp_2.I(var0, a(-31909, 25504), new Object[0]);
+   }
+
+   public static void Z(JComponent param0, Insets param1, com.og_4 param2) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/FV.D ()Ljava/lang/String;
+      // 003: astore 3
+      // 004: aload 0
+      // 005: aload 3
+      // 006: ifnonnull 014
+      // 009: ifnull 16c
+      // 00c: goto 013
+      // 00f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 012: athrow
+      // 013: aload 0
+      // 014: invokestatic com/FN.l (Ljavax/swing/JComponent;)Z
+      // 017: aload 3
+      // 018: ifnonnull 02d
+      // 01b: ifeq 026
+      // 01e: goto 025
+      // 021: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 024: athrow
+      // 025: return
+      // 026: aload 0
+      // 027: invokevirtual javax/swing/JComponent.getComponentOrientation ()Ljava/awt/ComponentOrientation;
+      // 02a: invokevirtual java/awt/ComponentOrientation.isLeftToRight ()Z
+      // 02d: istore 4
+      // 02f: new java/awt/Insets
+      // 032: dup
+      // 033: bipush 0
+      // 034: bipush 0
+      // 035: bipush 0
+      // 036: bipush 0
+      // 037: invokespecial java/awt/Insets.<init> (IIII)V
+      // 03a: astore 5
+      // 03c: aload 1
+      // 03d: aload 3
+      // 03e: ifnonnull 06d
+      // 041: ifnull 0c0
+      // 044: goto 04b
+      // 047: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 04a: athrow
+      // 04b: aload 5
+      // 04d: dup
+      // 04e: getfield java/awt/Insets.top I
+      // 051: aload 1
+      // 052: aload 3
+      // 053: ifnonnull 082
+      // 056: goto 05d
+      // 059: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 05c: athrow
+      // 05d: getfield java/awt/Insets.top I
+      // 060: iadd
+      // 061: putfield java/awt/Insets.top I
+      // 064: aload 5
+      // 066: goto 06d
+      // 069: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 06c: athrow
+      // 06d: dup
+      // 06e: getfield java/awt/Insets.left I
+      // 071: iload 4
+      // 073: ifeq 081
+      // 076: aload 1
+      // 077: getfield java/awt/Insets.left I
+      // 07a: goto 085
+      // 07d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 080: athrow
+      // 081: aload 1
+      // 082: getfield java/awt/Insets.right I
+      // 085: iadd
+      // 086: putfield java/awt/Insets.left I
+      // 089: aload 5
+      // 08b: dup
+      // 08c: getfield java/awt/Insets.bottom I
+      // 08f: aload 1
+      // 090: aload 3
+      // 091: ifnonnull 0b9
+      // 094: getfield java/awt/Insets.bottom I
+      // 097: iadd
+      // 098: putfield java/awt/Insets.bottom I
+      // 09b: aload 5
+      // 09d: dup
+      // 09e: getfield java/awt/Insets.right I
+      // 0a1: iload 4
+      // 0a3: ifeq 0b8
+      // 0a6: goto 0ad
+      // 0a9: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0ac: athrow
+      // 0ad: aload 1
+      // 0ae: getfield java/awt/Insets.right I
+      // 0b1: goto 0bc
+      // 0b4: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0b7: athrow
+      // 0b8: aload 1
+      // 0b9: getfield java/awt/Insets.left I
+      // 0bc: iadd
+      // 0bd: putfield java/awt/Insets.right I
+      // 0c0: aload 2
+      // 0c1: aload 3
+      // 0c2: ifnonnull 0d0
+      // 0c5: ifnull 163
+      // 0c8: goto 0cf
+      // 0cb: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0ce: athrow
+      // 0cf: aload 2
+      // 0d0: aload 0
+      // 0d1: invokeinterface com/og_4.B (Ljavax/swing/JComponent;)Ljava/awt/Insets; 2
+      // 0d6: astore 6
+      // 0d8: aload 6
+      // 0da: aload 3
+      // 0db: ifnonnull 10b
+      // 0de: ifnull 163
+      // 0e1: goto 0e8
+      // 0e4: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0e7: athrow
+      // 0e8: aload 5
+      // 0ea: dup
+      // 0eb: getfield java/awt/Insets.top I
+      // 0ee: aload 6
+      // 0f0: aload 3
+      // 0f1: ifnonnull 122
+      // 0f4: goto 0fb
+      // 0f7: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0fa: athrow
+      // 0fb: getfield java/awt/Insets.top I
+      // 0fe: iadd
+      // 0ff: putfield java/awt/Insets.top I
+      // 102: aload 5
+      // 104: goto 10b
+      // 107: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 10a: athrow
+      // 10b: dup
+      // 10c: getfield java/awt/Insets.left I
+      // 10f: iload 4
+      // 111: ifeq 120
+      // 114: aload 6
+      // 116: getfield java/awt/Insets.left I
+      // 119: goto 125
+      // 11c: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 11f: athrow
+      // 120: aload 6
+      // 122: getfield java/awt/Insets.right I
+      // 125: iadd
+      // 126: putfield java/awt/Insets.left I
+      // 129: aload 5
+      // 12b: dup
+      // 12c: getfield java/awt/Insets.bottom I
+      // 12f: aload 6
+      // 131: aload 3
+      // 132: ifnonnull 15c
+      // 135: getfield java/awt/Insets.bottom I
+      // 138: iadd
+      // 139: putfield java/awt/Insets.bottom I
+      // 13c: aload 5
+      // 13e: dup
+      // 13f: getfield java/awt/Insets.right I
+      // 142: iload 4
+      // 144: ifeq 15a
+      // 147: goto 14e
+      // 14a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 14d: athrow
+      // 14e: aload 6
+      // 150: getfield java/awt/Insets.right I
+      // 153: goto 15f
+      // 156: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 159: athrow
+      // 15a: aload 6
+      // 15c: getfield java/awt/Insets.left I
+      // 15f: iadd
+      // 160: putfield java/awt/Insets.right I
+      // 163: aload 0
+      // 164: aload 5
+      // 166: invokestatic com/GA.y (Ljava/awt/Insets;)Ljavax/swing/border/Border;
+      // 169: invokevirtual javax/swing/JComponent.setBorder (Ljavax/swing/border/Border;)V
+      // 16c: return
+   }
+
+   public static Dimension a(JComponent var0, com.og_4 var1) {
+      String var2 = com.FV.D();
+
+      Dimension var6;
+      label28: {
+         label27: {
+            label26: {
+               try {
+                  var10000 = var1;
+                  if (var2 != null) {
+                     break label27;
+                  }
+
+                  if (var1 == null) {
+                     break label26;
+                  }
+               } catch (RuntimeException var5) {
+                  throw a(var5);
+               }
+
+               var10000 = var1;
+               break label27;
             }
-            og_23 = (og_2)object;
-        }
-        return og_23;
-    }
 
-    public static og_2 m(og_2 og_22) {
-        og_2 og_23;
-        block8: {
-            block7: {
-                String string;
-                block6: {
-                    string = FV.D();
-                    try {
-                        og_23 = og_22;
-                        if (string != null) break block6;
-                        if (og_23 == null) break block7;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    og_23 = og_22;
-                }
-                try {
-                    try {
-                        if (string != null) break block8;
-                        if (!(og_23 instanceof LP)) break block7;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    og_23 = ((LP)og_22).J();
-                    break block8;
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
+            var6 = new Dimension(0, 0);
+            break label28;
+         }
+
+         var6 = var10000.d(var0);
+      }
+
+      Dimension var3 = var6;
+      LayoutManager var4 = var0.getLayout();
+      if (var4 != null) {
+         var3 = com.FN.h(var3, var4.preferredLayoutSize(var0));
+      }
+
+      return var3;
+   }
+
+   public static void A(Graphics param0, JComponent param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 2
+      // 04: aload 2
+      // 05: ifnonnull 25
+      // 08: aload 1
+      // 09: invokevirtual javax/swing/JComponent.isOpaque ()Z
+      // 0c: ifeq 2a
+      // 0f: goto 16
+      // 12: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 15: athrow
+      // 16: aload 0
+      // 17: aload 1
+      // 18: invokevirtual javax/swing/JComponent.getBackground ()Ljava/awt/Color;
+      // 1b: invokevirtual java/awt/Graphics.setColor (Ljava/awt/Color;)V
+      // 1e: goto 25
+      // 21: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 24: athrow
+      // 25: aload 0
+      // 26: aload 1
+      // 27: invokestatic com/GA.L (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
+      // 2a: return
+   }
+
+   public static void L(Graphics var0, JComponent var1) {
+      String var10000 = com.FV.D();
+      Shape var3 = var0.getClip();
+      String var2 = var10000;
+
+      label24: {
+         label23: {
+            label22: {
+               try {
+                  var6 = var3;
+                  if (var2 != null) {
+                     break label23;
+                  }
+
+                  if (var3 == null) {
+                     break label22;
+                  }
+               } catch (RuntimeException var5) {
+                  throw a(var5);
+               }
+
+               var6 = var3;
+               break label23;
             }
-            og_23 = og_22;
-        }
-        return og_23;
-    }
 
-    public static void q(JComponent jComponent, og_2 og_22, og_2 og_23) {
-        try {
-            kp_0.j(jComponent, GA.a(-31936, -19648), new Object[]{GA.a(-31913, 20788), og_22, og_23});
-        }
-        catch (NoSuchMethodException noSuchMethodException) {
-            ne_1.g(GA.class, noSuchMethodException);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            ne_1.g(GA.class, invocationTargetException);
-        }
-        catch (IllegalAccessException illegalAccessException) {
-            ne_1.g(GA.class, illegalAccessException);
-        }
-    }
+            var7 = var1.getVisibleRect();
+            break label24;
+         }
 
-    public static void B(JScrollPane jScrollPane, String string) {
-        block14: {
-            ScrollBarUI scrollBarUI;
-            block15: {
-                Object object;
-                ScrollBarUI scrollBarUI2;
-                String string2;
-                block13: {
-                    Object object2;
-                    JScrollBar jScrollBar;
-                    block11: {
-                        block12: {
-                            JScrollBar jScrollBar2 = jScrollPane.getVerticalScrollBar();
-                            string2 = FV.D();
-                            try {
-                                try {
-                                    jScrollBar = jScrollBar2;
-                                    if (string2 != null) break block11;
-                                    if (jScrollBar == null) break block12;
-                                }
-                                catch (RuntimeException runtimeException) {
-                                    throw GA.a(runtimeException);
-                                }
-                                jScrollBar = jScrollBar2;
-                                if (string2 != null) break block11;
-                            }
-                            catch (RuntimeException runtimeException) {
-                                throw GA.a(runtimeException);
-                            }
-                            object2 = jScrollBar.getUI();
-                            if (object2 instanceof xm_0) {
-                                scrollBarUI2 = (xm_0)object2;
-                                ((xm_0)scrollBarUI2).S(string);
-                            }
-                        }
-                        jScrollBar = jScrollPane.getHorizontalScrollBar();
-                    }
-                    object2 = jScrollBar;
-                    try {
-                        object = object2;
-                        if (string2 != null) break block13;
-                        if (object == null) break block14;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    object = object2;
-                }
-                scrollBarUI2 = ((JScrollBar)object).getUI();
-                try {
-                    try {
-                        scrollBarUI = scrollBarUI2;
-                        if (string2 != null) break block15;
-                        if (!(scrollBarUI instanceof xm_0)) break block14;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    scrollBarUI = scrollBarUI2;
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
+         var7 = var6.getBounds();
+      }
+
+      Rectangle var4 = var7;
+      var0.fillRect(var4.x, var4.y, var4.width, var4.height);
+   }
+
+   public static void G(JButton var0) {
+      var0.setUI(new BasicButtonUI());
+      var0.setMargin(new Insets(0, 0, 0, 0));
+      var0.setBorder(null);
+      var0.setBorderPainted(false);
+      var0.setContentAreaFilled(false);
+      var0.setFocusable(false);
+      var0.setOpaque(false);
+   }
+
+   public static Shape K(int param0, int[] param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 2
+      // 04: aload 1
+      // 05: aload 2
+      // 06: ifnonnull 14
+      // 09: ifnull 25
+      // 0c: goto 13
+      // 0f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 12: athrow
+      // 13: aload 1
+      // 14: arraylength
+      // 15: bipush 2
+      // 16: irem
+      // 17: aload 2
+      // 18: ifnonnull 3e
+      // 1b: ifeq 3a
+      // 1e: goto 25
+      // 21: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 24: athrow
+      // 25: new java/lang/RuntimeException
+      // 28: dup
+      // 29: sipush -31907
+      // 2c: sipush 10790
+      // 2f: invokestatic com/GA.a (II)Ljava/lang/String;
+      // 32: invokespecial java/lang/RuntimeException.<init> (Ljava/lang/String;)V
+      // 35: athrow
+      // 36: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 39: athrow
+      // 3a: aload 1
+      // 3b: arraylength
+      // 3c: bipush 2
+      // 3d: idiv
+      // 3e: anewarray 283
+      // 41: astore 3
+      // 42: bipush 0
+      // 43: istore 4
+      // 45: iload 4
+      // 47: aload 1
+      // 48: arraylength
+      // 49: if_icmpge 6a
+      // 4c: aload 3
+      // 4d: iload 4
+      // 4f: bipush 2
+      // 50: idiv
+      // 51: new java/awt/Point
+      // 54: dup
+      // 55: aload 1
+      // 56: iload 4
+      // 58: iaload
+      // 59: aload 1
+      // 5a: iload 4
+      // 5c: bipush 1
+      // 5d: iadd
+      // 5e: iaload
+      // 5f: invokespecial java/awt/Point.<init> (II)V
+      // 62: aastore
+      // 63: iinc 4 2
+      // 66: aload 2
+      // 67: ifnull 45
+      // 6a: iload 0
+      // 6b: aload 3
+      // 6c: invokestatic com/GA.a (I[Ljava/awt/Point;)Ljava/awt/Shape;
+      // 6f: areturn
+   }
+
+   public static Shape a(int var0, Point[] var1) {
+      return m(var0, var1, null);
+   }
+
+   public static Shape m(int param0, Point[] param1, boolean[] param2) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/FV.D ()Ljava/lang/String;
+      // 003: astore 3
+      // 004: aload 1
+      // 005: aload 3
+      // 006: ifnonnull 014
+      // 009: ifnull 019
+      // 00c: goto 013
+      // 00f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 012: athrow
+      // 013: aload 1
+      // 014: arraylength
+      // 015: bipush 3
+      // 016: if_icmpge 02e
+      // 019: new java/lang/RuntimeException
+      // 01c: dup
+      // 01d: sipush -31934
+      // 020: sipush -12111
+      // 023: invokestatic com/GA.a (II)Ljava/lang/String;
+      // 026: invokespecial java/lang/RuntimeException.<init> (Ljava/lang/String;)V
+      // 029: athrow
+      // 02a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 02d: athrow
+      // 02e: aload 2
+      // 02f: aload 3
+      // 030: ifnonnull 03e
+      // 033: ifnull 059
+      // 036: goto 03d
+      // 039: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 03c: athrow
+      // 03d: aload 2
+      // 03e: arraylength
+      // 03f: aload 1
+      // 040: arraylength
+      // 041: if_icmpeq 059
+      // 044: new java/lang/RuntimeException
+      // 047: dup
+      // 048: sipush -31918
+      // 04b: sipush 17304
+      // 04e: invokestatic com/GA.a (II)Ljava/lang/String;
+      // 051: invokespecial java/lang/RuntimeException.<init> (Ljava/lang/String;)V
+      // 054: athrow
+      // 055: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 058: athrow
+      // 059: new java/awt/geom/GeneralPath
+      // 05c: dup
+      // 05d: bipush 0
+      // 05e: invokespecial java/awt/geom/GeneralPath.<init> (I)V
+      // 061: astore 4
+      // 063: bipush 0
+      // 064: istore 5
+      // 066: iload 5
+      // 068: aload 1
+      // 069: arraylength
+      // 06a: if_icmpge 261
+      // 06d: aload 1
+      // 06e: iload 5
+      // 070: aaload
+      // 071: astore 6
+      // 073: iload 5
+      // 075: aload 3
+      // 076: ifnonnull 1a3
+      // 079: ifne 19b
+      // 07c: goto 083
+      // 07f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 082: athrow
+      // 083: aload 1
+      // 084: aload 1
+      // 085: arraylength
+      // 086: bipush 1
+      // 087: isub
+      // 088: aaload
+      // 089: astore 7
+      // 08b: aload 3
+      // 08c: ifnonnull 0dc
+      // 08f: iload 0
+      // 090: ifeq 0c4
+      // 093: goto 09a
+      // 096: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 099: athrow
+      // 09a: aload 2
+      // 09b: aload 3
+      // 09c: ifnonnull 0b1
+      // 09f: goto 0a6
+      // 0a2: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0a5: athrow
+      // 0a6: ifnull 0e0
+      // 0a9: goto 0b0
+      // 0ac: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0af: athrow
+      // 0b0: aload 2
+      // 0b1: aload 1
+      // 0b2: arraylength
+      // 0b3: bipush 1
+      // 0b4: isub
+      // 0b5: baload
+      // 0b6: aload 3
+      // 0b7: ifnonnull 0e8
+      // 0ba: ifne 0e0
+      // 0bd: goto 0c4
+      // 0c0: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0c3: athrow
+      // 0c4: aload 4
+      // 0c6: aload 7
+      // 0c8: getfield java/awt/Point.x I
+      // 0cb: i2f
+      // 0cc: aload 7
+      // 0ce: getfield java/awt/Point.y I
+      // 0d1: i2f
+      // 0d2: invokevirtual java/awt/geom/GeneralPath.moveTo (FF)V
+      // 0d5: goto 0dc
+      // 0d8: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0db: athrow
+      // 0dc: aload 3
+      // 0dd: ifnull 102
+      // 0e0: iload 0
+      // 0e1: goto 0e8
+      // 0e4: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0e7: athrow
+      // 0e8: aload 7
+      // 0ea: aload 6
+      // 0ec: invokestatic com/GA.U (ILjava/awt/Point;Ljava/awt/Point;)Ljava/awt/Point;
+      // 0ef: astore 8
+      // 0f1: aload 4
+      // 0f3: aload 8
+      // 0f5: getfield java/awt/Point.x I
+      // 0f8: i2f
+      // 0f9: aload 8
+      // 0fb: getfield java/awt/Point.y I
+      // 0fe: i2f
+      // 0ff: invokevirtual java/awt/geom/GeneralPath.moveTo (FF)V
+      // 102: iload 0
+      // 103: ifeq 12e
+      // 106: aload 2
+      // 107: aload 3
+      // 108: ifnonnull 11d
+      // 10b: goto 112
+      // 10e: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 111: athrow
+      // 112: ifnull 14a
+      // 115: goto 11c
+      // 118: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 11b: athrow
+      // 11c: aload 2
+      // 11d: iload 5
+      // 11f: baload
+      // 120: aload 3
+      // 121: ifnonnull 152
+      // 124: ifne 14a
+      // 127: goto 12e
+      // 12a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 12d: athrow
+      // 12e: aload 4
+      // 130: aload 6
+      // 132: getfield java/awt/Point.x I
+      // 135: i2f
+      // 136: aload 6
+      // 138: getfield java/awt/Point.y I
+      // 13b: i2f
+      // 13c: invokevirtual java/awt/geom/GeneralPath.lineTo (FF)V
+      // 13f: aload 3
+      // 140: ifnull 197
+      // 143: goto 14a
+      // 146: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 149: athrow
+      // 14a: iload 0
+      // 14b: goto 152
+      // 14e: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 151: athrow
+      // 152: aload 6
+      // 154: aload 7
+      // 156: invokestatic com/GA.U (ILjava/awt/Point;Ljava/awt/Point;)Ljava/awt/Point;
+      // 159: astore 8
+      // 15b: iload 0
+      // 15c: aload 6
+      // 15e: aload 1
+      // 15f: iload 5
+      // 161: bipush 1
+      // 162: iadd
+      // 163: aaload
+      // 164: invokestatic com/GA.U (ILjava/awt/Point;Ljava/awt/Point;)Ljava/awt/Point;
+      // 167: astore 9
+      // 169: aload 4
+      // 16b: aload 8
+      // 16d: getfield java/awt/Point.x I
+      // 170: i2f
+      // 171: aload 8
+      // 173: getfield java/awt/Point.y I
+      // 176: i2f
+      // 177: invokevirtual java/awt/geom/GeneralPath.lineTo (FF)V
+      // 17a: aload 4
+      // 17c: aload 6
+      // 17e: getfield java/awt/Point.x I
+      // 181: i2f
+      // 182: aload 6
+      // 184: getfield java/awt/Point.y I
+      // 187: i2f
+      // 188: aload 9
+      // 18a: getfield java/awt/Point.x I
+      // 18d: i2f
+      // 18e: aload 9
+      // 190: getfield java/awt/Point.y I
+      // 193: i2f
+      // 194: invokevirtual java/awt/geom/GeneralPath.quadTo (FFFF)V
+      // 197: aload 3
+      // 198: ifnull 25a
+      // 19b: iload 0
+      // 19c: goto 1a3
+      // 19f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1a2: athrow
+      // 1a3: ifeq 1ce
+      // 1a6: aload 2
+      // 1a7: aload 3
+      // 1a8: ifnonnull 1bd
+      // 1ab: goto 1b2
+      // 1ae: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1b1: athrow
+      // 1b2: ifnull 1ea
+      // 1b5: goto 1bc
+      // 1b8: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1bb: athrow
+      // 1bc: aload 2
+      // 1bd: iload 5
+      // 1bf: baload
+      // 1c0: aload 3
+      // 1c1: ifnonnull 1f2
+      // 1c4: ifne 1ea
+      // 1c7: goto 1ce
+      // 1ca: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1cd: athrow
+      // 1ce: aload 4
+      // 1d0: aload 6
+      // 1d2: getfield java/awt/Point.x I
+      // 1d5: i2f
+      // 1d6: aload 6
+      // 1d8: getfield java/awt/Point.y I
+      // 1db: i2f
+      // 1dc: invokevirtual java/awt/geom/GeneralPath.lineTo (FF)V
+      // 1df: aload 3
+      // 1e0: ifnull 25a
+      // 1e3: goto 1ea
+      // 1e6: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1e9: athrow
+      // 1ea: iload 0
+      // 1eb: goto 1f2
+      // 1ee: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1f1: athrow
+      // 1f2: aload 6
+      // 1f4: aload 1
+      // 1f5: iload 5
+      // 1f7: bipush 1
+      // 1f8: isub
+      // 1f9: aaload
+      // 1fa: invokestatic com/GA.U (ILjava/awt/Point;Ljava/awt/Point;)Ljava/awt/Point;
+      // 1fd: astore 7
+      // 1ff: iload 0
+      // 200: aload 6
+      // 202: aload 1
+      // 203: iload 5
+      // 205: aload 1
+      // 206: arraylength
+      // 207: bipush 1
+      // 208: isub
+      // 209: aload 3
+      // 20a: ifnonnull 221
+      // 20d: if_icmpge 225
+      // 210: goto 217
+      // 213: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 216: athrow
+      // 217: iload 5
+      // 219: bipush 1
+      // 21a: goto 221
+      // 21d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 220: athrow
+      // 221: iadd
+      // 222: goto 226
+      // 225: bipush 0
+      // 226: aaload
+      // 227: invokestatic com/GA.U (ILjava/awt/Point;Ljava/awt/Point;)Ljava/awt/Point;
+      // 22a: astore 8
+      // 22c: aload 4
+      // 22e: aload 7
+      // 230: getfield java/awt/Point.x I
+      // 233: i2f
+      // 234: aload 7
+      // 236: getfield java/awt/Point.y I
+      // 239: i2f
+      // 23a: invokevirtual java/awt/geom/GeneralPath.lineTo (FF)V
+      // 23d: aload 4
+      // 23f: aload 6
+      // 241: getfield java/awt/Point.x I
+      // 244: i2f
+      // 245: aload 6
+      // 247: getfield java/awt/Point.y I
+      // 24a: i2f
+      // 24b: aload 8
+      // 24d: getfield java/awt/Point.x I
+      // 250: i2f
+      // 251: aload 8
+      // 253: getfield java/awt/Point.y I
+      // 256: i2f
+      // 257: invokevirtual java/awt/geom/GeneralPath.quadTo (FFFF)V
+      // 25a: iinc 5 1
+      // 25d: aload 3
+      // 25e: ifnull 066
+      // 261: aload 4
+      // 263: areturn
+   }
+
+   private static Point U(int param0, Point param1, Point param2) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 3
+      // 04: aload 1
+      // 05: getfield java/awt/Point.y I
+      // 08: aload 2
+      // 09: getfield java/awt/Point.y I
+      // 0c: aload 3
+      // 0d: ifnonnull 83
+      // 10: if_icmpne 7b
+      // 13: goto 1a
+      // 16: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 19: athrow
+      // 1a: aload 1
+      // 1b: aload 3
+      // 1c: ifnonnull 7a
+      // 1f: goto 26
+      // 22: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 25: athrow
+      // 26: getfield java/awt/Point.x I
+      // 29: aload 2
+      // 2a: getfield java/awt/Point.x I
+      // 2d: if_icmpge 5b
+      // 30: goto 37
+      // 33: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 36: athrow
+      // 37: new java/awt/Point
+      // 3a: dup
+      // 3b: aload 1
+      // 3c: getfield java/awt/Point.x I
+      // 3f: iload 0
+      // 40: aload 2
+      // 41: getfield java/awt/Point.x I
+      // 44: aload 1
+      // 45: getfield java/awt/Point.x I
+      // 48: isub
+      // 49: bipush 2
+      // 4a: idiv
+      // 4b: invokestatic java/lang/Math.min (II)I
+      // 4e: iadd
+      // 4f: aload 1
+      // 50: getfield java/awt/Point.y I
+      // 53: invokespecial java/awt/Point.<init> (II)V
+      // 56: areturn
+      // 57: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 5a: athrow
+      // 5b: new java/awt/Point
+      // 5e: dup
+      // 5f: aload 1
+      // 60: getfield java/awt/Point.x I
+      // 63: iload 0
+      // 64: aload 1
+      // 65: getfield java/awt/Point.x I
+      // 68: aload 2
+      // 69: getfield java/awt/Point.x I
+      // 6c: isub
+      // 6d: bipush 2
+      // 6e: idiv
+      // 6f: invokestatic java/lang/Math.min (II)I
+      // 72: isub
+      // 73: aload 1
+      // 74: getfield java/awt/Point.y I
+      // 77: invokespecial java/awt/Point.<init> (II)V
+      // 7a: areturn
+      // 7b: aload 1
+      // 7c: getfield java/awt/Point.x I
+      // 7f: aload 2
+      // 80: getfield java/awt/Point.x I
+      // 83: aload 3
+      // 84: ifnonnull ab
+      // 87: if_icmpne f2
+      // 8a: goto 91
+      // 8d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 90: athrow
+      // 91: aload 1
+      // 92: aload 3
+      // 93: ifnonnull f1
+      // 96: goto 9d
+      // 99: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 9c: athrow
+      // 9d: getfield java/awt/Point.y I
+      // a0: aload 2
+      // a1: getfield java/awt/Point.y I
+      // a4: goto ab
+      // a7: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // aa: athrow
+      // ab: if_icmpge d2
+      // ae: new java/awt/Point
+      // b1: dup
+      // b2: aload 1
+      // b3: getfield java/awt/Point.x I
+      // b6: aload 1
+      // b7: getfield java/awt/Point.y I
+      // ba: iload 0
+      // bb: aload 2
+      // bc: getfield java/awt/Point.y I
+      // bf: aload 1
+      // c0: getfield java/awt/Point.y I
+      // c3: isub
+      // c4: bipush 2
+      // c5: idiv
+      // c6: invokestatic java/lang/Math.min (II)I
+      // c9: iadd
+      // ca: invokespecial java/awt/Point.<init> (II)V
+      // cd: areturn
+      // ce: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // d1: athrow
+      // d2: new java/awt/Point
+      // d5: dup
+      // d6: aload 1
+      // d7: getfield java/awt/Point.x I
+      // da: aload 1
+      // db: getfield java/awt/Point.y I
+      // de: iload 0
+      // df: aload 1
+      // e0: getfield java/awt/Point.y I
+      // e3: aload 2
+      // e4: getfield java/awt/Point.y I
+      // e7: isub
+      // e8: bipush 2
+      // e9: idiv
+      // ea: invokestatic java/lang/Math.min (II)I
+      // ed: isub
+      // ee: invokespecial java/awt/Point.<init> (II)V
+      // f1: areturn
+      // f2: aconst_null
+      // f3: areturn
+   }
+
+   public static void r(Graphics2D var0, Rectangle var1) {
+      o(var0, var1.x, var1.y, var1.width, var1.height);
+   }
+
+   public static void o(Graphics2D var0, int var1, int var2, int var3, int var4) {
+      r(var0, var1, var2, var3, var4, GO.FD);
+   }
+
+   public static void e(Graphics2D var0, Rectangle var1, int var2) {
+      r(var0, var1.x, var1.y, var1.width, var1.height, var2);
+   }
+
+   public static void r(Graphics2D var0, int var1, int var2, int var3, int var4, int var5) {
+      h(var0, var1, var2, var3, var4, var5, GO.v, GO.i);
+   }
+
+   public static void F(Graphics2D var0, Rectangle var1, int var2, Color var3, Color var4) {
+      h(var0, var1.x, var1.y, var1.width, var1.height, var2, var3, var4);
+   }
+
+   public static void h(Graphics2D param0, int param1, int param2, int param3, int param4, int param5, Color param6, Color param7) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: iload 3
+      // 001: iload 5
+      // 003: idiv
+      // 004: bipush 1
+      // 005: iadd
+      // 006: istore 9
+      // 008: invokestatic com/FV.D ()Ljava/lang/String;
+      // 00b: iload 4
+      // 00d: iload 5
+      // 00f: idiv
+      // 010: bipush 1
+      // 011: iadd
+      // 012: istore 10
+      // 014: bipush 0
+      // 015: istore 12
+      // 017: astore 8
+      // 019: iload 12
+      // 01b: iload 9
+      // 01d: if_icmpge 106
+      // 020: bipush 0
+      // 021: istore 13
+      // 023: iload 13
+      // 025: iload 10
+      // 027: if_icmpge 0fe
+      // 02a: iload 12
+      // 02c: iload 13
+      // 02e: iadd
+      // 02f: bipush 2
+      // 030: irem
+      // 031: aload 8
+      // 033: ifnonnull 01b
+      // 036: aload 8
+      // 038: ifnonnull 046
+      // 03b: ifne 049
+      // 03e: goto 045
+      // 041: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 044: athrow
+      // 045: bipush 1
+      // 046: goto 04a
+      // 049: bipush 0
+      // 04a: istore 11
+      // 04c: iload 11
+      // 04e: ifeq 05a
+      // 051: aload 6
+      // 053: goto 05c
+      // 056: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 059: athrow
+      // 05a: aload 7
+      // 05c: astore 14
+      // 05e: aload 8
+      // 060: ifnonnull 0f9
+      // 063: aload 14
+      // 065: ifnull 0f6
+      // 068: goto 06f
+      // 06b: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 06e: athrow
+      // 06f: aload 0
+      // 070: aload 14
+      // 072: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // 075: iload 1
+      // 076: iload 12
+      // 078: iload 5
+      // 07a: imul
+      // 07b: iadd
+      // 07c: iload 5
+      // 07e: iadd
+      // 07f: iload 1
+      // 080: iload 3
+      // 081: iadd
+      // 082: aload 8
+      // 084: ifnonnull 0a5
+      // 087: goto 08e
+      // 08a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 08d: athrow
+      // 08e: if_icmple 0a9
+      // 091: goto 098
+      // 094: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 097: athrow
+      // 098: iload 3
+      // 099: iload 12
+      // 09b: iload 5
+      // 09d: imul
+      // 09e: goto 0a5
+      // 0a1: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0a4: athrow
+      // 0a5: isub
+      // 0a6: goto 0ab
+      // 0a9: iload 5
+      // 0ab: istore 15
+      // 0ad: iload 2
+      // 0ae: iload 13
+      // 0b0: iload 5
+      // 0b2: imul
+      // 0b3: iadd
+      // 0b4: iload 5
+      // 0b6: iadd
+      // 0b7: iload 2
+      // 0b8: iload 4
+      // 0ba: iadd
+      // 0bb: aload 8
+      // 0bd: ifnonnull 0d8
+      // 0c0: if_icmple 0dc
+      // 0c3: goto 0ca
+      // 0c6: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0c9: athrow
+      // 0ca: iload 4
+      // 0cc: iload 13
+      // 0ce: iload 5
+      // 0d0: imul
+      // 0d1: goto 0d8
+      // 0d4: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0d7: athrow
+      // 0d8: isub
+      // 0d9: goto 0de
+      // 0dc: iload 5
+      // 0de: istore 16
+      // 0e0: aload 0
+      // 0e1: iload 1
+      // 0e2: iload 12
+      // 0e4: iload 5
+      // 0e6: imul
+      // 0e7: iadd
+      // 0e8: iload 2
+      // 0e9: iload 13
+      // 0eb: iload 5
+      // 0ed: imul
+      // 0ee: iadd
+      // 0ef: iload 15
+      // 0f1: iload 16
+      // 0f3: invokevirtual java/awt/Graphics2D.fillRect (IIII)V
+      // 0f6: iinc 13 1
+      // 0f9: aload 8
+      // 0fb: ifnull 023
+      // 0fe: iinc 12 1
+      // 101: aload 8
+      // 103: ifnull 019
+      // 106: return
+   }
+
+   public static Rectangle M(String var0, Graphics var1, Font var2) {
+      return h(var0, (Graphics2D)var1, var2);
+   }
+
+   public static Rectangle h(String var0, Graphics2D var1, Font var2) {
+      FontRenderContext var3 = var1.getFontRenderContext();
+      GlyphVector var4 = var2.createGlyphVector(var3, var0);
+      return var4.getVisualBounds().getBounds();
+   }
+
+   public static Shape z(Graphics2D var0, JComponent var1) {
+      return x(var0, var1, GO.r, GO.FG, GO.Fx);
+   }
+
+   public static Shape x(Graphics2D var0, JComponent var1, Color var2, int var3, int var4) {
+      return i(var0, var1, var2, var3, var4, true);
+   }
+
+   public static Shape i(Graphics2D var0, JComponent var1, Color var2, int var3, int var4, boolean var5) {
+      return r(var0, var1, var2, var3, var4, var5, false);
+   }
+
+   public static Shape r(Graphics2D var0, JComponent var1, Color var2, int var3, int var4, boolean var5, boolean var6) {
+      return m(var0, var1, var2, var3, var4, var5, var6, GO.Ff, GO.FX);
+   }
+
+   public static Shape O(Graphics2D var0, JComponent var1, Color var2, int var3, int var4, boolean var5, boolean var6, float var7) {
+      return Y(var0, var1, var2, var3, var4, var5, var6, GO.Ff, GO.FX, var7);
+   }
+
+   public static Shape R(Graphics2D var0, JComponent var1, Color var2, int var3, int var4, boolean var5, boolean var6, Color var7) {
+      return m(var0, var1, var2, var3, var4, var5, var6, var7, var7);
+   }
+
+   public static Shape m(Graphics2D var0, JComponent var1, Color var2, int var3, int var4, boolean var5, boolean var6, Color var7, Color var8) {
+      return Y(var0, var1, var2, var3, var4, var5, var6, var7, var8, 1.0F);
+   }
+
+   public static Shape Y(Graphics2D var0, JComponent var1, Color var2, int var3, int var4, boolean var5, boolean var6, Color var7, Color var8, float var9) {
+      return Z(var0, var1, var2, var3, var4, var5, var6, var7, var8, var1.getBackground(), var9);
+   }
+
+   public static Shape Z(
+      Graphics2D param0,
+      JComponent param1,
+      Color param2,
+      int param3,
+      int param4,
+      boolean param5,
+      boolean param6,
+      Color param7,
+      Color param8,
+      Color param9,
+      float param10
+   ) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/FV.D ()Ljava/lang/String;
+      // 003: astore 11
+      // 005: fload 10
+      // 007: fconst_0
+      // 008: fcmpg
+      // 009: aload 11
+      // 00b: ifnonnull 023
+      // 00e: ifle 026
+      // 011: goto 018
+      // 014: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 017: athrow
+      // 018: fload 10
+      // 01a: fconst_1
+      // 01b: fcmpl
+      // 01c: goto 023
+      // 01f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 022: athrow
+      // 023: ifle 02c
+      // 026: aconst_null
+      // 027: areturn
+      // 028: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 02b: athrow
+      // 02c: aload 0
+      // 02d: invokestatic com/RV.X (Ljava/awt/Graphics2D;)Ljava/lang/Object;
+      // 030: astore 12
+      // 032: aload 0
+      // 033: fload 10
+      // 035: invokestatic java/lang/Float.valueOf (F)Ljava/lang/Float;
+      // 038: fload 10
+      // 03a: fconst_1
+      // 03b: fcmpg
+      // 03c: aload 11
+      // 03e: ifnonnull 04c
+      // 041: ifge 04f
+      // 044: goto 04b
+      // 047: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 04a: athrow
+      // 04b: bipush 1
+      // 04c: goto 050
+      // 04f: bipush 0
+      // 050: invokestatic com/RV.a (Ljava/awt/Graphics2D;Ljava/lang/Float;Z)Ljava/awt/Composite;
+      // 053: astore 13
+      // 055: aload 1
+      // 056: iload 3
+      // 057: iload 4
+      // 059: invokestatic com/GA.X (Ljavax/swing/JComponent;II)Ljava/awt/Shape;
+      // 05c: astore 14
+      // 05e: aload 1
+      // 05f: invokevirtual javax/swing/JComponent.isEnabled ()Z
+      // 062: aload 11
+      // 064: ifnonnull 08d
+      // 067: ifeq 08b
+      // 06a: goto 071
+      // 06d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 070: athrow
+      // 071: aload 2
+      // 072: ifnull 08b
+      // 075: goto 07c
+      // 078: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 07b: athrow
+      // 07c: aload 0
+      // 07d: aload 14
+      // 07f: aload 2
+      // 080: iload 3
+      // 081: invokestatic com/RV.Y (Ljava/awt/Graphics2D;Ljava/awt/Shape;Ljava/awt/Color;I)V
+      // 084: goto 08b
+      // 087: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 08a: athrow
+      // 08b: iload 5
+      // 08d: ifeq 119
+      // 090: aload 0
+      // 091: iload 6
+      // 093: aload 11
+      // 095: ifnonnull 0aa
+      // 098: goto 09f
+      // 09b: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 09e: athrow
+      // 09f: ifeq 0b8
+      // 0a2: goto 0a9
+      // 0a5: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0a8: athrow
+      // 0a9: bipush 0
+      // 0aa: iload 3
+      // 0ab: bipush 0
+      // 0ac: aload 1
+      // 0ad: invokevirtual javax/swing/JComponent.getHeight ()I
+      // 0b0: iload 3
+      // 0b1: isub
+      // 0b2: invokestatic com/GA.m (IIII)Ljava/awt/GradientPaint;
+      // 0b5: goto 0ba
+      // 0b8: aload 9
+      // 0ba: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // 0bd: aload 11
+      // 0bf: ifnonnull 0f7
+      // 0c2: iload 4
+      // 0c4: ifle 0fc
+      // 0c7: goto 0ce
+      // 0ca: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0cd: athrow
+      // 0ce: aload 0
+      // 0cf: iload 3
+      // 0d0: iload 3
+      // 0d1: aload 1
+      // 0d2: invokevirtual javax/swing/JComponent.getWidth ()I
+      // 0d5: iload 3
+      // 0d6: bipush 2
+      // 0d7: imul
+      // 0d8: isub
+      // 0d9: aload 1
+      // 0da: invokevirtual javax/swing/JComponent.getHeight ()I
+      // 0dd: iload 3
+      // 0de: bipush 2
+      // 0df: imul
+      // 0e0: isub
+      // 0e1: iload 4
+      // 0e3: bipush 2
+      // 0e4: imul
+      // 0e5: bipush 2
+      // 0e6: iadd
+      // 0e7: iload 4
+      // 0e9: bipush 2
+      // 0ea: imul
+      // 0eb: bipush 2
+      // 0ec: iadd
+      // 0ed: invokevirtual java/awt/Graphics2D.fillRoundRect (IIIIII)V
+      // 0f0: goto 0f7
+      // 0f3: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0f6: athrow
+      // 0f7: aload 11
+      // 0f9: ifnull 119
+      // 0fc: aload 0
+      // 0fd: iload 3
+      // 0fe: iload 3
+      // 0ff: aload 1
+      // 100: invokevirtual javax/swing/JComponent.getWidth ()I
+      // 103: iload 3
+      // 104: bipush 2
+      // 105: imul
+      // 106: isub
+      // 107: aload 1
+      // 108: invokevirtual javax/swing/JComponent.getHeight ()I
+      // 10b: iload 3
+      // 10c: bipush 2
+      // 10d: imul
+      // 10e: isub
+      // 10f: invokevirtual java/awt/Graphics2D.fillRect (IIII)V
+      // 112: goto 119
+      // 115: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 118: athrow
+      // 119: aload 7
+      // 11b: ifnull 141
+      // 11e: aload 0
+      // 11f: aload 1
+      // 120: invokevirtual javax/swing/JComponent.isEnabled ()Z
+      // 123: ifeq 136
+      // 126: goto 12d
+      // 129: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 12c: athrow
+      // 12d: aload 7
+      // 12f: goto 138
+      // 132: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 135: athrow
+      // 136: aload 8
+      // 138: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // 13b: aload 0
+      // 13c: aload 14
+      // 13e: invokevirtual java/awt/Graphics2D.draw (Ljava/awt/Shape;)V
+      // 141: aload 0
+      // 142: aload 13
+      // 144: fload 10
+      // 146: fconst_1
+      // 147: fcmpg
+      // 148: aload 11
+      // 14a: ifnonnull 158
+      // 14d: ifge 15b
+      // 150: goto 157
+      // 153: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 156: athrow
+      // 157: bipush 1
+      // 158: goto 15c
+      // 15b: bipush 0
+      // 15c: invokestatic com/RV.E (Ljava/awt/Graphics2D;Ljava/awt/Composite;Z)V
+      // 15f: aload 0
+      // 160: aload 12
+      // 162: invokestatic com/RV.X (Ljava/awt/Graphics2D;Ljava/lang/Object;)V
+      // 165: aload 14
+      // 167: areturn
+   }
+
+   public static GradientPaint w(Rectangle var0) {
+      return m(var0.x, var0.y, var0.x, var0.y + var0.height);
+   }
+
+   public static GradientPaint m(int param0, int param1, int param2, int param3) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: new java/lang/StringBuilder
+      // 06: dup
+      // 07: invokespecial java/lang/StringBuilder.<init> ()V
+      // 0a: iload 0
+      // 0b: invokevirtual java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+      // 0e: ldc_w ";"
+      // 11: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 14: iload 1
+      // 15: invokevirtual java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+      // 18: ldc_w ";"
+      // 1b: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 1e: iload 2
+      // 1f: invokevirtual java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+      // 22: ldc_w ";"
+      // 25: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 28: iload 3
+      // 29: invokevirtual java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+      // 2c: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // 2f: astore 5
+      // 31: astore 4
+      // 33: getstatic com/GA.i Ljava/util/Map;
+      // 36: aload 5
+      // 38: aload 4
+      // 3a: ifnonnull 58
+      // 3d: invokeinterface java/util/Map.containsKey (Ljava/lang/Object;)Z 2
+      // 42: ifeq 61
+      // 45: goto 4c
+      // 48: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 4b: athrow
+      // 4c: getstatic com/GA.i Ljava/util/Map;
+      // 4f: aload 5
+      // 51: goto 58
+      // 54: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 57: athrow
+      // 58: invokeinterface java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object; 2
+      // 5d: checkcast java/awt/GradientPaint
+      // 60: areturn
+      // 61: new java/awt/GradientPaint
+      // 64: dup
+      // 65: iload 0
+      // 66: i2f
+      // 67: iload 1
+      // 68: i2f
+      // 69: getstatic com/GO.FR Ljava/awt/Color;
+      // 6c: iload 2
+      // 6d: i2f
+      // 6e: iload 3
+      // 6f: i2f
+      // 70: getstatic com/GO.Q Ljava/awt/Color;
+      // 73: invokespecial java/awt/GradientPaint.<init> (FFLjava/awt/Color;FFLjava/awt/Color;)V
+      // 76: astore 6
+      // 78: getstatic com/GA.i Ljava/util/Map;
+      // 7b: aload 5
+      // 7d: aload 6
+      // 7f: invokeinterface java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+      // 84: pop
+      // 85: aload 6
+      // 87: areturn
+   }
+
+   public static Shape X(JComponent var0, int var1, int var2) {
+      try {
+         if (var2 > 0) {
+            return new Double(
+               (double)var1,
+               (double)var1,
+               (double)(var0.getWidth() - var1 * 2 - 1),
+               (double)(var0.getHeight() - var1 * 2 - 1),
+               (double)(var2 * 2),
+               (double)(var2 * 2)
+            );
+         }
+      } catch (RuntimeException var3) {
+         throw a(var3);
+      }
+
+      return new java.awt.geom.Rectangle2D.Double(
+         (double)var1, (double)var1, (double)(var0.getWidth() - var1 * 2 - 1), (double)(var0.getHeight() - var1 * 2 - 1)
+      );
+   }
+
+   public static void i(Graphics2D var0, JComponent var1, Shape var2, Color var3, int var4, boolean var5, boolean var6) {
+      e(var0, var1, var2, var3, var4, var5, var6, (Color)com.c.c(571142938009582455L).get(null), Color.LIGHT_GRAY);
+   }
+
+   public static void e(Graphics2D var0, JComponent var1, Shape var2, Color var3, int var4, boolean var5, boolean var6, Color var7, Color var8) {
+      R(var0, var1, var2, var3, var4, var5, var6, var7, var8, var1.getBackground());
+   }
+
+   public static void R(
+      Graphics2D param0, JComponent param1, Shape param2, Color param3, int param4, boolean param5, boolean param6, Color param7, Color param8, Color param9
+   ) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: aload 0
+      // 04: invokestatic com/RV.X (Ljava/awt/Graphics2D;)Ljava/lang/Object;
+      // 07: astore 11
+      // 09: astore 10
+      // 0b: aload 1
+      // 0c: invokevirtual javax/swing/JComponent.isEnabled ()Z
+      // 0f: aload 10
+      // 11: ifnonnull 2f
+      // 14: ifeq 2d
+      // 17: goto 1e
+      // 1a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1d: athrow
+      // 1e: aload 0
+      // 1f: aload 2
+      // 20: aload 3
+      // 21: iload 4
+      // 23: invokestatic com/RV.Y (Ljava/awt/Graphics2D;Ljava/awt/Shape;Ljava/awt/Color;I)V
+      // 26: goto 2d
+      // 29: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 2c: athrow
+      // 2d: iload 5
+      // 2f: aload 10
+      // 31: ifnonnull 40
+      // 34: ifeq 8c
+      // 37: goto 3e
+      // 3a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 3d: athrow
+      // 3e: iload 6
+      // 40: ifeq 7a
+      // 43: aload 2
+      // 44: invokeinterface java/awt/Shape.getBounds ()Ljava/awt/Rectangle; 1
+      // 49: astore 12
+      // 4b: aload 0
+      // 4c: new java/awt/GradientPaint
+      // 4f: dup
+      // 50: fconst_0
+      // 51: aload 12
+      // 53: getfield java/awt/Rectangle.y I
+      // 56: i2f
+      // 57: getstatic com/GO.FR Ljava/awt/Color;
+      // 5a: fconst_0
+      // 5b: aload 12
+      // 5d: getfield java/awt/Rectangle.y I
+      // 60: aload 12
+      // 62: getfield java/awt/Rectangle.height I
+      // 65: iadd
+      // 66: i2f
+      // 67: getstatic com/GO.Q Ljava/awt/Color;
+      // 6a: invokespecial java/awt/GradientPaint.<init> (FFLjava/awt/Color;FFLjava/awt/Color;)V
+      // 6d: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // 70: aload 0
+      // 71: aload 2
+      // 72: invokevirtual java/awt/Graphics2D.fill (Ljava/awt/Shape;)V
+      // 75: aload 10
+      // 77: ifnull 8c
+      // 7a: aload 0
+      // 7b: aload 9
+      // 7d: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // 80: aload 0
+      // 81: aload 2
+      // 82: invokevirtual java/awt/Graphics2D.fill (Ljava/awt/Shape;)V
+      // 85: goto 8c
+      // 88: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 8b: athrow
+      // 8c: aload 7
+      // 8e: ifnull b3
+      // 91: aload 0
+      // 92: aload 1
+      // 93: invokevirtual javax/swing/JComponent.isEnabled ()Z
+      // 96: ifeq a9
+      // 99: goto a0
+      // 9c: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 9f: athrow
+      // a0: aload 7
+      // a2: goto ab
+      // a5: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // a8: athrow
+      // a9: aload 8
+      // ab: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // ae: aload 0
+      // af: aload 2
+      // b0: invokevirtual java/awt/Graphics2D.draw (Ljava/awt/Shape;)V
+      // b3: aload 0
+      // b4: aload 11
+      // b6: invokestatic com/RV.X (Ljava/awt/Graphics2D;Ljava/lang/Object;)V
+      // b9: return
+   }
+
+   public static boolean w(Graphics2D var0, JComponent var1, Hq_2 var2, int var3, int var4) {
+      return m(var0, var1, var2, var3, var4, null);
+   }
+
+   public static boolean m(Graphics2D var0, JComponent var1, Hq_2 var2, int var3, int var4, Boolean var5) {
+      return b(var0, var1, var2, var3, var4, var5, null);
+   }
+
+   public static boolean b(Graphics2D var0, JComponent var1, Hq_2 var2, int var3, int var4, Boolean var5, Boolean var6) {
+      Graphics2D var10000;
+      JComponent var10001;
+      Hq_2 var10002;
+      int var10003;
+      int var10004;
+      Boolean var10005;
+      Boolean var10006;
+      try {
+         var10000 = var0;
+         var10001 = var1;
+         var10002 = var2;
+         var10003 = var3;
+         var10004 = var4;
+         var10005 = var5;
+         var10006 = var6;
+         if (var2.equals(Hq_2.componentFocus)) {
+            return W(var0, var1, var2, var3, var4, var5, var6, GO.x);
+         }
+      } catch (RuntimeException var7) {
+         throw a(var7);
+      }
+
+      return W(var10000, var10001, var10002, var10003, var10004, var10005, var10006, GO.c);
+   }
+
+   public static boolean W(Graphics2D var0, JComponent var1, Hq_2 var2, int var3, int var4, Boolean var5, Boolean var6, Color var7) {
+      Graphics2D var10000;
+      JComponent var10001;
+      Hq_2 var10002;
+      int var10003;
+      int var10004;
+      Boolean var10005;
+      Boolean var10006;
+      Color var10007;
+      try {
+         var10000 = var0;
+         var10001 = var1;
+         var10002 = var2;
+         var10003 = var3;
+         var10004 = var4;
+         var10005 = var5;
+         var10006 = var6;
+         var10007 = var7;
+         if (var2.equals(Hq_2.componentFocus)) {
+            return j(var0, var1, var2, var3, var4, var5, var6, var7, GO.B);
+         }
+      } catch (RuntimeException var8) {
+         throw a(var8);
+      }
+
+      return j(var10000, var10001, var10002, var10003, var10004, var10005, var10006, var10007, GO.FE);
+   }
+
+   public static boolean j(
+      Graphics2D param0, JComponent param1, Hq_2 param2, int param3, int param4, Boolean param5, Boolean param6, Color param7, Stroke param8
+   ) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/FV.D ()Ljava/lang/String;
+      // 003: astore 9
+      // 005: aload 6
+      // 007: aload 9
+      // 009: ifnonnull 018
+      // 00c: ifnull 01e
+      // 00f: goto 016
+      // 012: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 015: athrow
+      // 016: aload 6
+      // 018: invokevirtual java/lang/Boolean.booleanValue ()Z
+      // 01b: goto 050
+      // 01e: aload 1
+      // 01f: invokevirtual javax/swing/JComponent.hasFocus ()Z
+      // 022: aload 9
+      // 024: ifnonnull 03c
+      // 027: ifeq 04f
+      // 02a: goto 031
+      // 02d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 030: athrow
+      // 031: aload 1
+      // 032: invokevirtual javax/swing/JComponent.isEnabled ()Z
+      // 035: goto 03c
+      // 038: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 03b: athrow
+      // 03c: aload 9
+      // 03e: ifnonnull 04c
+      // 041: ifeq 04f
+      // 044: goto 04b
+      // 047: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 04a: athrow
+      // 04b: bipush 1
+      // 04c: goto 050
+      // 04f: bipush 0
+      // 050: invokestatic java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;
+      // 053: astore 6
+      // 055: aload 6
+      // 057: invokevirtual java/lang/Boolean.booleanValue ()Z
+      // 05a: aload 9
+      // 05c: ifnonnull 0bb
+      // 05f: ifeq 0b4
+      // 062: goto 069
+      // 065: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 068: athrow
+      // 069: aload 2
+      // 06a: getstatic com/Hq_2.componentFocus Lcom/Hq_2;
+      // 06d: invokevirtual com/Hq_2.equals (Ljava/lang/Object;)Z
+      // 070: aload 9
+      // 072: ifnonnull 0bb
+      // 075: goto 07c
+      // 078: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 07b: athrow
+      // 07c: ifeq 0b4
+      // 07f: goto 086
+      // 082: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 085: athrow
+      // 086: aload 0
+      // 087: invokestatic com/RV.X (Ljava/awt/Graphics2D;)Ljava/lang/Object;
+      // 08a: astore 10
+      // 08c: aload 0
+      // 08d: aload 8
+      // 08f: invokestatic com/RV.M (Ljava/awt/Graphics2D;Ljava/awt/Stroke;)Ljava/awt/Stroke;
+      // 092: astore 11
+      // 094: aload 0
+      // 095: aload 7
+      // 097: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // 09a: aload 0
+      // 09b: aload 1
+      // 09c: aload 2
+      // 09d: iload 3
+      // 09e: iload 4
+      // 0a0: invokestatic com/GA.n (Ljavax/swing/JComponent;Lcom/Hq_2;II)Ljava/awt/Shape;
+      // 0a3: invokevirtual java/awt/Graphics2D.draw (Ljava/awt/Shape;)V
+      // 0a6: aload 0
+      // 0a7: aload 11
+      // 0a9: invokestatic com/RV.p (Ljava/awt/Graphics2D;Ljava/awt/Stroke;)V
+      // 0ac: aload 0
+      // 0ad: aload 10
+      // 0af: invokestatic com/RV.X (Ljava/awt/Graphics2D;Ljava/lang/Object;)V
+      // 0b2: bipush 1
+      // 0b3: ireturn
+      // 0b4: aload 2
+      // 0b5: getstatic com/Hq_2.fieldFocus Lcom/Hq_2;
+      // 0b8: invokevirtual com/Hq_2.equals (Ljava/lang/Object;)Z
+      // 0bb: aload 9
+      // 0bd: ifnonnull 147
+      // 0c0: ifeq 146
+      // 0c3: goto 0ca
+      // 0c6: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0c9: athrow
+      // 0ca: aload 6
+      // 0cc: aload 9
+      // 0ce: ifnonnull 11c
+      // 0d1: goto 0d8
+      // 0d4: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0d7: athrow
+      // 0d8: invokevirtual java/lang/Boolean.booleanValue ()Z
+      // 0db: ifne 111
+      // 0de: goto 0e5
+      // 0e1: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0e4: athrow
+      // 0e5: aload 5
+      // 0e7: aload 9
+      // 0e9: ifnonnull 0ff
+      // 0ec: goto 0f3
+      // 0ef: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0f2: athrow
+      // 0f3: ifnull 146
+      // 0f6: goto 0fd
+      // 0f9: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0fc: athrow
+      // 0fd: aload 5
+      // 0ff: invokevirtual java/lang/Boolean.booleanValue ()Z
+      // 102: aload 9
+      // 104: ifnonnull 147
+      // 107: ifeq 146
+      // 10a: goto 111
+      // 10d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 110: athrow
+      // 111: aload 0
+      // 112: invokestatic com/RV.X (Ljava/awt/Graphics2D;)Ljava/lang/Object;
+      // 115: goto 11c
+      // 118: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 11b: athrow
+      // 11c: astore 10
+      // 11e: aload 0
+      // 11f: aload 8
+      // 121: invokestatic com/RV.M (Ljava/awt/Graphics2D;Ljava/awt/Stroke;)Ljava/awt/Stroke;
+      // 124: astore 11
+      // 126: aload 0
+      // 127: aload 7
+      // 129: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // 12c: aload 0
+      // 12d: aload 1
+      // 12e: aload 2
+      // 12f: iload 3
+      // 130: iload 4
+      // 132: invokestatic com/GA.n (Ljavax/swing/JComponent;Lcom/Hq_2;II)Ljava/awt/Shape;
+      // 135: invokevirtual java/awt/Graphics2D.draw (Ljava/awt/Shape;)V
+      // 138: aload 0
+      // 139: aload 11
+      // 13b: invokestatic com/RV.p (Ljava/awt/Graphics2D;Ljava/awt/Stroke;)V
+      // 13e: aload 0
+      // 13f: aload 10
+      // 141: invokestatic com/RV.X (Ljava/awt/Graphics2D;Ljava/lang/Object;)V
+      // 144: bipush 1
+      // 145: ireturn
+      // 146: bipush 0
+      // 147: ireturn
+   }
+
+   public static Shape n(JComponent param0, Hq_2 param1, int param2, int param3) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 4
+      // 05: aload 1
+      // 06: getstatic com/Hq_2.componentFocus Lcom/Hq_2;
+      // 09: invokevirtual com/Hq_2.equals (Ljava/lang/Object;)Z
+      // 0c: aload 4
+      // 0e: ifnonnull 1c
+      // 11: ifeq 1f
+      // 14: goto 1b
+      // 17: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1a: athrow
+      // 1b: bipush 2
+      // 1c: goto 20
+      // 1f: bipush 0
+      // 20: istore 5
+      // 22: aload 1
+      // 23: getstatic com/Hq_2.componentFocus Lcom/Hq_2;
+      // 26: invokevirtual com/Hq_2.equals (Ljava/lang/Object;)Z
+      // 29: aload 4
+      // 2b: ifnonnull 46
+      // 2e: ifeq 49
+      // 31: goto 38
+      // 34: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 37: athrow
+      // 38: bipush 0
+      // 39: iload 3
+      // 3a: bipush 2
+      // 3b: isub
+      // 3c: invokestatic java/lang/Math.max (II)I
+      // 3f: goto 46
+      // 42: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 45: athrow
+      // 46: goto 4a
+      // 49: iload 3
+      // 4a: istore 3
+      // 4b: iload 3
+      // 4c: ifle 8d
+      // 4f: new java/awt/geom/RoundRectangle2D$Double
+      // 52: dup
+      // 53: iload 2
+      // 54: iload 5
+      // 56: iadd
+      // 57: i2d
+      // 58: iload 2
+      // 59: iload 5
+      // 5b: iadd
+      // 5c: i2d
+      // 5d: aload 0
+      // 5e: invokevirtual javax/swing/JComponent.getWidth ()I
+      // 61: iload 2
+      // 62: bipush 2
+      // 63: imul
+      // 64: isub
+      // 65: iload 5
+      // 67: bipush 2
+      // 68: imul
+      // 69: isub
+      // 6a: bipush 1
+      // 6b: isub
+      // 6c: i2d
+      // 6d: aload 0
+      // 6e: invokevirtual javax/swing/JComponent.getHeight ()I
+      // 71: iload 2
+      // 72: bipush 2
+      // 73: imul
+      // 74: isub
+      // 75: iload 5
+      // 77: bipush 2
+      // 78: imul
+      // 79: isub
+      // 7a: bipush 1
+      // 7b: isub
+      // 7c: i2d
+      // 7d: iload 3
+      // 7e: bipush 2
+      // 7f: imul
+      // 80: i2d
+      // 81: iload 3
+      // 82: bipush 2
+      // 83: imul
+      // 84: i2d
+      // 85: invokespecial java/awt/geom/RoundRectangle2D$Double.<init> (DDDDDD)V
+      // 88: areturn
+      // 89: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 8c: athrow
+      // 8d: new java/awt/geom/Rectangle2D$Double
+      // 90: dup
+      // 91: iload 2
+      // 92: iload 5
+      // 94: iadd
+      // 95: i2d
+      // 96: iload 2
+      // 97: iload 5
+      // 99: iadd
+      // 9a: i2d
+      // 9b: aload 0
+      // 9c: invokevirtual javax/swing/JComponent.getWidth ()I
+      // 9f: iload 2
+      // a0: bipush 2
+      // a1: imul
+      // a2: isub
+      // a3: iload 5
+      // a5: bipush 2
+      // a6: imul
+      // a7: isub
+      // a8: bipush 1
+      // a9: isub
+      // aa: i2d
+      // ab: aload 0
+      // ac: invokevirtual javax/swing/JComponent.getHeight ()I
+      // af: iload 2
+      // b0: bipush 2
+      // b1: imul
+      // b2: isub
+      // b3: iload 5
+      // b5: bipush 2
+      // b6: imul
+      // b7: isub
+      // b8: bipush 1
+      // b9: isub
+      // ba: i2d
+      // bb: invokespecial java/awt/geom/Rectangle2D$Double.<init> (DDDD)V
+      // be: areturn
+   }
+
+   public static void i(Graphics2D var0, JComponent var1, Hq_2 var2, Shape var3) {
+      U(var0, var1, var2, var3, null);
+   }
+
+   public static void U(Graphics2D var0, JComponent var1, Hq_2 var2, Shape var3, Boolean var4) {
+      l(var0, var1, var2, var3, var4, null);
+   }
+
+   public static void l(Graphics2D param0, JComponent param1, Hq_2 param2, Shape param3, Boolean param4, Boolean param5) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/FV.D ()Ljava/lang/String;
+      // 003: astore 6
+      // 005: aload 5
+      // 007: aload 6
+      // 009: ifnonnull 018
+      // 00c: ifnull 01e
+      // 00f: goto 016
+      // 012: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 015: athrow
+      // 016: aload 5
+      // 018: invokevirtual java/lang/Boolean.booleanValue ()Z
+      // 01b: goto 050
+      // 01e: aload 1
+      // 01f: invokevirtual javax/swing/JComponent.hasFocus ()Z
+      // 022: aload 6
+      // 024: ifnonnull 03c
+      // 027: ifeq 04f
+      // 02a: goto 031
+      // 02d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 030: athrow
+      // 031: aload 1
+      // 032: invokevirtual javax/swing/JComponent.isEnabled ()Z
+      // 035: goto 03c
+      // 038: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 03b: athrow
+      // 03c: aload 6
+      // 03e: ifnonnull 04c
+      // 041: ifeq 04f
+      // 044: goto 04b
+      // 047: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 04a: athrow
+      // 04b: bipush 1
+      // 04c: goto 050
+      // 04f: bipush 0
+      // 050: invokestatic java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;
+      // 053: astore 5
+      // 055: aload 5
+      // 057: invokevirtual java/lang/Boolean.booleanValue ()Z
+      // 05a: aload 6
+      // 05c: ifnonnull 0c0
+      // 05f: ifeq 0b2
+      // 062: goto 069
+      // 065: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 068: athrow
+      // 069: aload 2
+      // 06a: getstatic com/Hq_2.componentFocus Lcom/Hq_2;
+      // 06d: invokevirtual com/Hq_2.equals (Ljava/lang/Object;)Z
+      // 070: aload 6
+      // 072: ifnonnull 0c0
+      // 075: goto 07c
+      // 078: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 07b: athrow
+      // 07c: ifeq 0b2
+      // 07f: goto 086
+      // 082: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 085: athrow
+      // 086: aload 0
+      // 087: invokestatic com/RV.X (Ljava/awt/Graphics2D;)Ljava/lang/Object;
+      // 08a: astore 7
+      // 08c: aload 0
+      // 08d: getstatic com/GO.B Ljava/awt/Stroke;
+      // 090: invokestatic com/RV.M (Ljava/awt/Graphics2D;Ljava/awt/Stroke;)Ljava/awt/Stroke;
+      // 093: astore 8
+      // 095: aload 0
+      // 096: getstatic com/GO.x Ljava/awt/Color;
+      // 099: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // 09c: aload 0
+      // 09d: aload 3
+      // 09e: invokevirtual java/awt/Graphics2D.draw (Ljava/awt/Shape;)V
+      // 0a1: aload 0
+      // 0a2: aload 8
+      // 0a4: invokestatic com/RV.p (Ljava/awt/Graphics2D;Ljava/awt/Stroke;)V
+      // 0a7: aload 0
+      // 0a8: aload 7
+      // 0aa: invokestatic com/RV.X (Ljava/awt/Graphics2D;Ljava/lang/Object;)V
+      // 0ad: aload 6
+      // 0af: ifnull 156
+      // 0b2: aload 2
+      // 0b3: getstatic com/Hq_2.fieldFocus Lcom/Hq_2;
+      // 0b6: invokevirtual com/Hq_2.equals (Ljava/lang/Object;)Z
+      // 0b9: goto 0c0
+      // 0bc: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0bf: athrow
+      // 0c0: aload 6
+      // 0c2: ifnonnull 0e7
+      // 0c5: ifeq 156
+      // 0c8: goto 0cf
+      // 0cb: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0ce: athrow
+      // 0cf: aload 5
+      // 0d1: aload 6
+      // 0d3: ifnonnull 121
+      // 0d6: goto 0dd
+      // 0d9: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0dc: athrow
+      // 0dd: invokevirtual java/lang/Boolean.booleanValue ()Z
+      // 0e0: goto 0e7
+      // 0e3: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0e6: athrow
+      // 0e7: ifne 116
+      // 0ea: aload 4
+      // 0ec: aload 6
+      // 0ee: ifnonnull 104
+      // 0f1: goto 0f8
+      // 0f4: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0f7: athrow
+      // 0f8: ifnull 156
+      // 0fb: goto 102
+      // 0fe: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 101: athrow
+      // 102: aload 4
+      // 104: aload 6
+      // 106: ifnonnull 121
+      // 109: invokevirtual java/lang/Boolean.booleanValue ()Z
+      // 10c: ifeq 156
+      // 10f: goto 116
+      // 112: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 115: athrow
+      // 116: aload 0
+      // 117: invokestatic com/RV.X (Ljava/awt/Graphics2D;)Ljava/lang/Object;
+      // 11a: goto 121
+      // 11d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 120: athrow
+      // 121: astore 7
+      // 123: aload 0
+      // 124: getstatic com/GO.FE Ljava/awt/Stroke;
+      // 127: invokestatic com/RV.M (Ljava/awt/Graphics2D;Ljava/awt/Stroke;)Ljava/awt/Stroke;
+      // 12a: astore 8
+      // 12c: aload 0
+      // 12d: aload 5
+      // 12f: invokevirtual java/lang/Boolean.booleanValue ()Z
+      // 132: ifeq 13f
+      // 135: getstatic com/GO.c Ljava/awt/Color;
+      // 138: goto 142
+      // 13b: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 13e: athrow
+      // 13f: getstatic com/GO.n Ljava/awt/Color;
+      // 142: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // 145: aload 0
+      // 146: aload 3
+      // 147: invokevirtual java/awt/Graphics2D.draw (Ljava/awt/Shape;)V
+      // 14a: aload 0
+      // 14b: aload 8
+      // 14d: invokestatic com/RV.p (Ljava/awt/Graphics2D;Ljava/awt/Stroke;)V
+      // 150: aload 0
+      // 151: aload 7
+      // 153: invokestatic com/RV.X (Ljava/awt/Graphics2D;Ljava/lang/Object;)V
+      // 156: return
+   }
+
+   public static void H(Graphics2D var0, Color var1, int var2, int var3, int var4, int var5, boolean var6, boolean var7, boolean var8) {
+      t(var0, var1, new Rectangle(var2, var3, var4, var5), var6, var7, var8);
+   }
+
+   public static void S(Graphics2D var0, Color var1, int var2, int var3, int var4, int var5, boolean var6, boolean var7, boolean var8, boolean var9) {
+      P(var0, var1, new Rectangle(var2, var3, var4, var5), var6, var7, var8, var9);
+   }
+
+   public static void t(Graphics2D var0, Color var1, Rectangle var2, boolean var3, boolean var4, boolean var5) {
+      P(var0, var1, var2, var3, var4, var5, true);
+   }
+
+   public static void P(Graphics2D param0, Color param1, Rectangle param2, boolean param3, boolean param4, boolean param5, boolean param6) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/FV.D ()Ljava/lang/String;
+      // 003: aload 2
+      // 004: invokestatic com/rv_4.q (Ljava/awt/Rectangle;)Ljava/awt/Rectangle;
+      // 007: astore 2
+      // 008: aload 0
+      // 009: invokestatic com/RV.X (Ljava/awt/Graphics2D;)Ljava/lang/Object;
+      // 00c: astore 8
+      // 00e: astore 7
+      // 010: new java/awt/geom/Area
+      // 013: dup
+      // 014: invokespecial java/awt/geom/Area.<init> ()V
+      // 017: astore 9
+      // 019: iload 4
+      // 01b: aload 7
+      // 01d: ifnonnull 100
+      // 020: ifeq 0ff
+      // 023: goto 02a
+      // 026: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 029: athrow
+      // 02a: iload 3
+      // 02b: aload 7
+      // 02d: ifnonnull 0b1
+      // 030: goto 037
+      // 033: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 036: athrow
+      // 037: ifeq 0af
+      // 03a: goto 041
+      // 03d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 040: athrow
+      // 041: aload 9
+      // 043: new java/awt/geom/Area
+      // 046: dup
+      // 047: new java/awt/geom/Ellipse2D$Double
+      // 04a: dup
+      // 04b: aload 2
+      // 04c: getfield java/awt/Rectangle.x I
+      // 04f: getstatic com/GA.a I
+      // 052: isub
+      // 053: i2d
+      // 054: aload 2
+      // 055: getfield java/awt/Rectangle.y I
+      // 058: getstatic com/GA.a I
+      // 05b: isub
+      // 05c: i2d
+      // 05d: getstatic com/GA.a I
+      // 060: bipush 2
+      // 061: imul
+      // 062: i2d
+      // 063: getstatic com/GA.a I
+      // 066: bipush 2
+      // 067: imul
+      // 068: i2d
+      // 069: invokespecial java/awt/geom/Ellipse2D$Double.<init> (DDDD)V
+      // 06c: invokespecial java/awt/geom/Area.<init> (Ljava/awt/Shape;)V
+      // 06f: invokevirtual java/awt/geom/Area.add (Ljava/awt/geom/Area;)V
+      // 072: aload 9
+      // 074: new java/awt/geom/Area
+      // 077: dup
+      // 078: new java/awt/geom/Ellipse2D$Double
+      // 07b: dup
+      // 07c: aload 2
+      // 07d: getfield java/awt/Rectangle.x I
+      // 080: aload 2
+      // 081: getfield java/awt/Rectangle.width I
+      // 084: iadd
+      // 085: getstatic com/GA.a I
+      // 088: isub
+      // 089: i2d
+      // 08a: aload 2
+      // 08b: getfield java/awt/Rectangle.y I
+      // 08e: getstatic com/GA.a I
+      // 091: isub
+      // 092: i2d
+      // 093: getstatic com/GA.a I
+      // 096: bipush 2
+      // 097: imul
+      // 098: i2d
+      // 099: getstatic com/GA.a I
+      // 09c: bipush 2
+      // 09d: imul
+      // 09e: i2d
+      // 09f: invokespecial java/awt/geom/Ellipse2D$Double.<init> (DDDD)V
+      // 0a2: invokespecial java/awt/geom/Area.<init> (Ljava/awt/Shape;)V
+      // 0a5: invokevirtual java/awt/geom/Area.add (Ljava/awt/geom/Area;)V
+      // 0a8: goto 0af
+      // 0ab: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0ae: athrow
+      // 0af: iload 6
+      // 0b1: aload 7
+      // 0b3: ifnonnull 100
+      // 0b6: ifeq 0ff
+      // 0b9: goto 0c0
+      // 0bc: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0bf: athrow
+      // 0c0: aload 9
+      // 0c2: new java/awt/geom/Area
+      // 0c5: dup
+      // 0c6: new java/awt/geom/Ellipse2D$Double
+      // 0c9: dup
+      // 0ca: aload 2
+      // 0cb: getfield java/awt/Rectangle.x I
+      // 0ce: aload 2
+      // 0cf: getfield java/awt/Rectangle.width I
+      // 0d2: bipush 2
+      // 0d3: idiv
+      // 0d4: iadd
+      // 0d5: getstatic com/GA.a I
+      // 0d8: isub
+      // 0d9: i2d
+      // 0da: aload 2
+      // 0db: getfield java/awt/Rectangle.y I
+      // 0de: getstatic com/GA.a I
+      // 0e1: isub
+      // 0e2: i2d
+      // 0e3: getstatic com/GA.a I
+      // 0e6: bipush 2
+      // 0e7: imul
+      // 0e8: i2d
+      // 0e9: getstatic com/GA.a I
+      // 0ec: bipush 2
+      // 0ed: imul
+      // 0ee: i2d
+      // 0ef: invokespecial java/awt/geom/Ellipse2D$Double.<init> (DDDD)V
+      // 0f2: invokespecial java/awt/geom/Area.<init> (Ljava/awt/Shape;)V
+      // 0f5: invokevirtual java/awt/geom/Area.add (Ljava/awt/geom/Area;)V
+      // 0f8: goto 0ff
+      // 0fb: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0fe: athrow
+      // 0ff: iload 3
+      // 100: aload 7
+      // 102: ifnonnull 1a5
+      // 105: ifeq 1a3
+      // 108: goto 10f
+      // 10b: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 10e: athrow
+      // 10f: iload 6
+      // 111: aload 7
+      // 113: ifnonnull 1a5
+      // 116: goto 11d
+      // 119: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 11c: athrow
+      // 11d: ifeq 1a3
+      // 120: goto 127
+      // 123: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 126: athrow
+      // 127: aload 9
+      // 129: new java/awt/geom/Area
+      // 12c: dup
+      // 12d: new java/awt/geom/Ellipse2D$Double
+      // 130: dup
+      // 131: aload 2
+      // 132: getfield java/awt/Rectangle.x I
+      // 135: getstatic com/GA.a I
+      // 138: isub
+      // 139: i2d
+      // 13a: aload 2
+      // 13b: getfield java/awt/Rectangle.y I
+      // 13e: aload 2
+      // 13f: getfield java/awt/Rectangle.height I
+      // 142: bipush 2
+      // 143: idiv
+      // 144: iadd
+      // 145: getstatic com/GA.a I
+      // 148: isub
+      // 149: i2d
+      // 14a: getstatic com/GA.a I
+      // 14d: bipush 2
+      // 14e: imul
+      // 14f: i2d
+      // 150: getstatic com/GA.a I
+      // 153: bipush 2
+      // 154: imul
+      // 155: i2d
+      // 156: invokespecial java/awt/geom/Ellipse2D$Double.<init> (DDDD)V
+      // 159: invokespecial java/awt/geom/Area.<init> (Ljava/awt/Shape;)V
+      // 15c: invokevirtual java/awt/geom/Area.add (Ljava/awt/geom/Area;)V
+      // 15f: aload 9
+      // 161: new java/awt/geom/Area
+      // 164: dup
+      // 165: new java/awt/geom/Ellipse2D$Double
+      // 168: dup
+      // 169: aload 2
+      // 16a: getfield java/awt/Rectangle.x I
+      // 16d: aload 2
+      // 16e: getfield java/awt/Rectangle.width I
+      // 171: iadd
+      // 172: getstatic com/GA.a I
+      // 175: isub
+      // 176: i2d
+      // 177: aload 2
+      // 178: getfield java/awt/Rectangle.y I
+      // 17b: aload 2
+      // 17c: getfield java/awt/Rectangle.height I
+      // 17f: bipush 2
+      // 180: idiv
+      // 181: iadd
+      // 182: getstatic com/GA.a I
+      // 185: isub
+      // 186: i2d
+      // 187: getstatic com/GA.a I
+      // 18a: bipush 2
+      // 18b: imul
+      // 18c: i2d
+      // 18d: getstatic com/GA.a I
+      // 190: bipush 2
+      // 191: imul
+      // 192: i2d
+      // 193: invokespecial java/awt/geom/Ellipse2D$Double.<init> (DDDD)V
+      // 196: invokespecial java/awt/geom/Area.<init> (Ljava/awt/Shape;)V
+      // 199: invokevirtual java/awt/geom/Area.add (Ljava/awt/geom/Area;)V
+      // 19c: goto 1a3
+      // 19f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1a2: athrow
+      // 1a3: iload 4
+      // 1a5: aload 7
+      // 1a7: ifnonnull 29a
+      // 1aa: ifeq 298
+      // 1ad: goto 1b4
+      // 1b0: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1b3: athrow
+      // 1b4: iload 3
+      // 1b5: aload 7
+      // 1b7: ifnonnull 245
+      // 1ba: goto 1c1
+      // 1bd: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1c0: athrow
+      // 1c1: ifeq 243
+      // 1c4: goto 1cb
+      // 1c7: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1ca: athrow
+      // 1cb: aload 9
+      // 1cd: new java/awt/geom/Area
+      // 1d0: dup
+      // 1d1: new java/awt/geom/Ellipse2D$Double
+      // 1d4: dup
+      // 1d5: aload 2
+      // 1d6: getfield java/awt/Rectangle.x I
+      // 1d9: getstatic com/GA.a I
+      // 1dc: isub
+      // 1dd: i2d
+      // 1de: aload 2
+      // 1df: getfield java/awt/Rectangle.y I
+      // 1e2: aload 2
+      // 1e3: getfield java/awt/Rectangle.height I
+      // 1e6: iadd
+      // 1e7: getstatic com/GA.a I
+      // 1ea: isub
+      // 1eb: i2d
+      // 1ec: getstatic com/GA.a I
+      // 1ef: bipush 2
+      // 1f0: imul
+      // 1f1: i2d
+      // 1f2: getstatic com/GA.a I
+      // 1f5: bipush 2
+      // 1f6: imul
+      // 1f7: i2d
+      // 1f8: invokespecial java/awt/geom/Ellipse2D$Double.<init> (DDDD)V
+      // 1fb: invokespecial java/awt/geom/Area.<init> (Ljava/awt/Shape;)V
+      // 1fe: invokevirtual java/awt/geom/Area.add (Ljava/awt/geom/Area;)V
+      // 201: aload 9
+      // 203: new java/awt/geom/Area
+      // 206: dup
+      // 207: new java/awt/geom/Ellipse2D$Double
+      // 20a: dup
+      // 20b: aload 2
+      // 20c: getfield java/awt/Rectangle.x I
+      // 20f: aload 2
+      // 210: getfield java/awt/Rectangle.width I
+      // 213: iadd
+      // 214: getstatic com/GA.a I
+      // 217: isub
+      // 218: i2d
+      // 219: aload 2
+      // 21a: getfield java/awt/Rectangle.y I
+      // 21d: aload 2
+      // 21e: getfield java/awt/Rectangle.height I
+      // 221: iadd
+      // 222: getstatic com/GA.a I
+      // 225: isub
+      // 226: i2d
+      // 227: getstatic com/GA.a I
+      // 22a: bipush 2
+      // 22b: imul
+      // 22c: i2d
+      // 22d: getstatic com/GA.a I
+      // 230: bipush 2
+      // 231: imul
+      // 232: i2d
+      // 233: invokespecial java/awt/geom/Ellipse2D$Double.<init> (DDDD)V
+      // 236: invokespecial java/awt/geom/Area.<init> (Ljava/awt/Shape;)V
+      // 239: invokevirtual java/awt/geom/Area.add (Ljava/awt/geom/Area;)V
+      // 23c: goto 243
+      // 23f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 242: athrow
+      // 243: iload 6
+      // 245: aload 7
+      // 247: ifnonnull 29a
+      // 24a: ifeq 298
+      // 24d: goto 254
+      // 250: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 253: athrow
+      // 254: aload 9
+      // 256: new java/awt/geom/Area
+      // 259: dup
+      // 25a: new java/awt/geom/Ellipse2D$Double
+      // 25d: dup
+      // 25e: aload 2
+      // 25f: getfield java/awt/Rectangle.x I
+      // 262: aload 2
+      // 263: getfield java/awt/Rectangle.width I
+      // 266: bipush 2
+      // 267: idiv
+      // 268: iadd
+      // 269: getstatic com/GA.a I
+      // 26c: isub
+      // 26d: i2d
+      // 26e: aload 2
+      // 26f: getfield java/awt/Rectangle.y I
+      // 272: aload 2
+      // 273: getfield java/awt/Rectangle.height I
+      // 276: iadd
+      // 277: getstatic com/GA.a I
+      // 27a: isub
+      // 27b: i2d
+      // 27c: getstatic com/GA.a I
+      // 27f: bipush 2
+      // 280: imul
+      // 281: i2d
+      // 282: getstatic com/GA.a I
+      // 285: bipush 2
+      // 286: imul
+      // 287: i2d
+      // 288: invokespecial java/awt/geom/Ellipse2D$Double.<init> (DDDD)V
+      // 28b: invokespecial java/awt/geom/Area.<init> (Ljava/awt/Shape;)V
+      // 28e: invokevirtual java/awt/geom/Area.add (Ljava/awt/geom/Area;)V
+      // 291: goto 298
+      // 294: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 297: athrow
+      // 298: iload 5
+      // 29a: ifeq 323
+      // 29d: new java/awt/geom/Area
+      // 2a0: dup
+      // 2a1: new java/awt/geom/RoundRectangle2D$Double
+      // 2a4: dup
+      // 2a5: aload 2
+      // 2a6: getfield java/awt/Rectangle.x I
+      // 2a9: getstatic com/GA.u I
+      // 2ac: isub
+      // 2ad: i2d
+      // 2ae: aload 2
+      // 2af: getfield java/awt/Rectangle.y I
+      // 2b2: getstatic com/GA.u I
+      // 2b5: isub
+      // 2b6: i2d
+      // 2b7: aload 2
+      // 2b8: getfield java/awt/Rectangle.width I
+      // 2bb: getstatic com/GA.u I
+      // 2be: bipush 2
+      // 2bf: imul
+      // 2c0: iadd
+      // 2c1: i2d
+      // 2c2: aload 2
+      // 2c3: getfield java/awt/Rectangle.height I
+      // 2c6: getstatic com/GA.u I
+      // 2c9: bipush 2
+      // 2ca: imul
+      // 2cb: iadd
+      // 2cc: i2d
+      // 2cd: ldc2_w 5.0
+      // 2d0: ldc2_w 5.0
+      // 2d3: invokespecial java/awt/geom/RoundRectangle2D$Double.<init> (DDDDDD)V
+      // 2d6: invokespecial java/awt/geom/Area.<init> (Ljava/awt/Shape;)V
+      // 2d9: astore 10
+      // 2db: aload 10
+      // 2dd: new java/awt/geom/Area
+      // 2e0: dup
+      // 2e1: new java/awt/geom/RoundRectangle2D$Double
+      // 2e4: dup
+      // 2e5: aload 2
+      // 2e6: getfield java/awt/Rectangle.x I
+      // 2e9: getstatic com/GA.u I
+      // 2ec: iadd
+      // 2ed: i2d
+      // 2ee: aload 2
+      // 2ef: getfield java/awt/Rectangle.y I
+      // 2f2: getstatic com/GA.u I
+      // 2f5: iadd
+      // 2f6: i2d
+      // 2f7: aload 2
+      // 2f8: getfield java/awt/Rectangle.width I
+      // 2fb: getstatic com/GA.u I
+      // 2fe: bipush 2
+      // 2ff: imul
+      // 300: isub
+      // 301: i2d
+      // 302: aload 2
+      // 303: getfield java/awt/Rectangle.height I
+      // 306: getstatic com/GA.u I
+      // 309: bipush 2
+      // 30a: imul
+      // 30b: isub
+      // 30c: i2d
+      // 30d: ldc2_w 3.0
+      // 310: ldc2_w 3.0
+      // 313: invokespecial java/awt/geom/RoundRectangle2D$Double.<init> (DDDDDD)V
+      // 316: invokespecial java/awt/geom/Area.<init> (Ljava/awt/Shape;)V
+      // 319: invokevirtual java/awt/geom/Area.subtract (Ljava/awt/geom/Area;)V
+      // 31c: aload 9
+      // 31e: aload 10
+      // 320: invokevirtual java/awt/geom/Area.add (Ljava/awt/geom/Area;)V
+      // 323: aload 0
+      // 324: aload 9
+      // 326: getstatic java/awt/Color.GRAY Ljava/awt/Color;
+      // 329: getstatic com/GA.U I
+      // 32c: invokestatic com/RV.Y (Ljava/awt/Graphics2D;Ljava/awt/Shape;Ljava/awt/Color;I)V
+      // 32f: aload 0
+      // 330: getstatic java/awt/Color.GRAY Ljava/awt/Color;
+      // 333: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // 336: aload 0
+      // 337: aload 9
+      // 339: invokevirtual java/awt/Graphics2D.draw (Ljava/awt/Shape;)V
+      // 33c: aload 0
+      // 33d: aload 1
+      // 33e: invokevirtual java/awt/Graphics2D.setPaint (Ljava/awt/Paint;)V
+      // 341: aload 0
+      // 342: aload 9
+      // 344: invokevirtual java/awt/Graphics2D.fill (Ljava/awt/Shape;)V
+      // 347: aload 0
+      // 348: aload 8
+      // 34a: invokestatic com/RV.X (Ljava/awt/Graphics2D;Ljava/lang/Object;)V
+      // 34d: return
+   }
+
+   // $VF: Handled exception range with multiple entry points by splitting it
+   // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
+   public static void S(Graphics2D var0, Color var1, Rectangle var2, int var3) {
+      String var10000 = com.FV.D();
+      var2 = rv_4.q(var2);
+      Object var5 = RV.X(var0);
+      String var4 = var10000;
+
+      java.awt.geom.Ellipse2D.Double var6;
+      label221: {
+         int var10001;
+         label243: {
+            label222: {
+               try {
+                  var29 = var3;
+                  var10001 = a(14906, 1280795380835452763L);
+                  if (var4 != null) {
+                     break label243;
+                  }
+
+                  if (var3 != var10001) {
+                     break label222;
+                  }
+               } catch (RuntimeException var27) {
+                  throw a(var27);
+               }
+
+               var6 = new java.awt.geom.Ellipse2D.Double((double)(var2.x - o), (double)(var2.y - o), (double)(o * 2), (double)(o * 2));
+
+               try {
+                  if (var4 == null) {
+                     break label221;
+                  }
+               } catch (RuntimeException var26) {
+                  boolean var37 = false;
+                  throw a(var26);
+               }
             }
-            xm_0 xm_02 = (xm_0)scrollBarUI;
-            xm_02.S(string);
-        }
-    }
 
-    public static ComponentUI Z(Component component) {
-        return (ComponentUI)kp_0.I(component, GA.a(-31909, 25504), new Object[0]);
-    }
-
-    public static void Z(JComponent jComponent, Insets insets, og_2 og_22) {
-        block31: {
-            Insets insets2;
-            block43: {
-                int n10;
-                int n11;
-                block50: {
-                    Insets insets3;
-                    block48: {
-                        Insets insets4;
-                        block49: {
-                            int n12;
-                            int n13;
-                            boolean bl;
-                            String string;
-                            block47: {
-                                Insets insets5;
-                                block45: {
-                                    block46: {
-                                        Insets insets6;
-                                        Insets insets7;
-                                        block44: {
-                                            og_2 og_23;
-                                            block42: {
-                                                block35: {
-                                                    int n14;
-                                                    int n15;
-                                                    block41: {
-                                                        Insets insets8;
-                                                        block39: {
-                                                            block40: {
-                                                                int n16;
-                                                                int n17;
-                                                                block38: {
-                                                                    Insets insets9;
-                                                                    block36: {
-                                                                        block37: {
-                                                                            Insets insets10;
-                                                                            Insets insets11;
-                                                                            block34: {
-                                                                                boolean bl2;
-                                                                                block32: {
-                                                                                    block33: {
-                                                                                        JComponent jComponent2;
-                                                                                        block30: {
-                                                                                            string = FV.D();
-                                                                                            try {
-                                                                                                jComponent2 = jComponent;
-                                                                                                if (string != null) break block30;
-                                                                                                if (jComponent2 == null) break block31;
-                                                                                            }
-                                                                                            catch (RuntimeException runtimeException) {
-                                                                                                throw GA.a(runtimeException);
-                                                                                            }
-                                                                                            jComponent2 = jComponent;
-                                                                                        }
-                                                                                        try {
-                                                                                            bl2 = FN.l(jComponent2);
-                                                                                            if (string != null) break block32;
-                                                                                            if (!bl2) break block33;
-                                                                                        }
-                                                                                        catch (RuntimeException runtimeException) {
-                                                                                            throw GA.a(runtimeException);
-                                                                                        }
-                                                                                        return;
-                                                                                    }
-                                                                                    bl2 = jComponent.getComponentOrientation().isLeftToRight();
-                                                                                }
-                                                                                bl = bl2;
-                                                                                insets2 = new Insets(0, 0, 0, 0);
-                                                                                try {
-                                                                                    try {
-                                                                                        try {
-                                                                                            insets11 = insets;
-                                                                                            if (string != null) break block34;
-                                                                                            if (insets11 == null) break block35;
-                                                                                        }
-                                                                                        catch (RuntimeException runtimeException) {
-                                                                                            throw GA.a(runtimeException);
-                                                                                        }
-                                                                                        Insets insets12 = insets2;
-                                                                                        insets10 = insets12;
-                                                                                        n17 = insets12.top;
-                                                                                        insets9 = insets;
-                                                                                        if (string != null) break block36;
-                                                                                    }
-                                                                                    catch (RuntimeException runtimeException) {
-                                                                                        throw GA.a(runtimeException);
-                                                                                    }
-                                                                                    insets10.top = n17 + insets9.top;
-                                                                                    insets11 = insets2;
-                                                                                }
-                                                                                catch (RuntimeException runtimeException) {
-                                                                                    throw GA.a(runtimeException);
-                                                                                }
-                                                                            }
-                                                                            try {
-                                                                                insets10 = insets11;
-                                                                                n17 = insets11.left;
-                                                                                if (!bl) break block37;
-                                                                                n16 = insets.left;
-                                                                                break block38;
-                                                                            }
-                                                                            catch (RuntimeException runtimeException) {
-                                                                                throw GA.a(runtimeException);
-                                                                            }
-                                                                        }
-                                                                        insets9 = insets;
-                                                                    }
-                                                                    n16 = insets9.right;
-                                                                }
-                                                                try {
-                                                                    try {
-                                                                        insets10.left = n17 + n16;
-                                                                        Insets insets13 = insets2;
-                                                                        Insets insets14 = insets13;
-                                                                        n15 = insets13.bottom;
-                                                                        insets8 = insets;
-                                                                        if (string != null) break block39;
-                                                                        insets14.bottom = n15 + insets8.bottom;
-                                                                        Insets insets15 = insets2;
-                                                                        insets14 = insets15;
-                                                                        n15 = insets15.right;
-                                                                        if (!bl) break block40;
-                                                                    }
-                                                                    catch (RuntimeException runtimeException) {
-                                                                        throw GA.a(runtimeException);
-                                                                    }
-                                                                    n14 = insets.right;
-                                                                    break block41;
-                                                                }
-                                                                catch (RuntimeException runtimeException) {
-                                                                    throw GA.a(runtimeException);
-                                                                }
-                                                            }
-                                                            insets8 = insets;
-                                                        }
-                                                        n14 = insets8.left;
-                                                    }
-                                                    insets14.right = n15 + n14;
-                                                }
-                                                try {
-                                                    og_23 = og_22;
-                                                    if (string != null) break block42;
-                                                    if (og_23 == null) break block43;
-                                                }
-                                                catch (RuntimeException runtimeException) {
-                                                    throw GA.a(runtimeException);
-                                                }
-                                                og_23 = og_22;
-                                            }
-                                            insets4 = og_23.B(jComponent);
-                                            try {
-                                                try {
-                                                    try {
-                                                        insets7 = insets4;
-                                                        if (string != null) break block44;
-                                                        if (insets7 == null) break block43;
-                                                    }
-                                                    catch (RuntimeException runtimeException) {
-                                                        throw GA.a(runtimeException);
-                                                    }
-                                                    Insets insets16 = insets2;
-                                                    insets6 = insets16;
-                                                    n13 = insets16.top;
-                                                    insets5 = insets4;
-                                                    if (string != null) break block45;
-                                                }
-                                                catch (RuntimeException runtimeException) {
-                                                    throw GA.a(runtimeException);
-                                                }
-                                                insets6.top = n13 + insets5.top;
-                                                insets7 = insets2;
-                                            }
-                                            catch (RuntimeException runtimeException) {
-                                                throw GA.a(runtimeException);
-                                            }
-                                        }
-                                        try {
-                                            insets6 = insets7;
-                                            n13 = insets7.left;
-                                            if (!bl) break block46;
-                                            n12 = insets4.left;
-                                            break block47;
-                                        }
-                                        catch (RuntimeException runtimeException) {
-                                            throw GA.a(runtimeException);
-                                        }
-                                    }
-                                    insets5 = insets4;
-                                }
-                                n12 = insets5.right;
-                            }
-                            try {
-                                try {
-                                    insets6.left = n13 + n12;
-                                    Insets insets17 = insets2;
-                                    Insets insets18 = insets17;
-                                    n11 = insets17.bottom;
-                                    insets3 = insets4;
-                                    if (string != null) break block48;
-                                    insets18.bottom = n11 + insets3.bottom;
-                                    Insets insets19 = insets2;
-                                    insets18 = insets19;
-                                    n11 = insets19.right;
-                                    if (!bl) break block49;
-                                }
-                                catch (RuntimeException runtimeException) {
-                                    throw GA.a(runtimeException);
-                                }
-                                n10 = insets4.right;
-                                break block50;
-                            }
-                            catch (RuntimeException runtimeException) {
-                                throw GA.a(runtimeException);
-                            }
-                        }
-                        insets3 = insets4;
-                    }
-                    n10 = insets3.left;
-                }
-                insets18.right = n11 + n10;
-            }
-            jComponent.setBorder(GA.y(insets2));
-        }
-    }
-
-    public static Dimension a(JComponent jComponent, og_2 og_22) {
-        Dimension dimension;
-        block5: {
-            block4: {
-                og_2 og_23;
-                block3: {
-                    String string = FV.D();
-                    try {
-                        og_23 = og_22;
-                        if (string != null) break block3;
-                        if (og_23 == null) break block4;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    og_23 = og_22;
-                }
-                dimension = og_23.d(jComponent);
-                break block5;
-            }
-            dimension = new Dimension(0, 0);
-        }
-        Dimension dimension2 = dimension;
-        LayoutManager layoutManager = jComponent.getLayout();
-        if (layoutManager != null) {
-            dimension2 = FN.h(dimension2, layoutManager.preferredLayoutSize(jComponent));
-        }
-        return dimension2;
-    }
-
-    public static void A(Graphics graphics, JComponent jComponent) {
-        block5: {
-            block4: {
-                String string = FV.D();
-                try {
-                    try {
-                        if (string != null) break block4;
-                        if (!jComponent.isOpaque()) break block5;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    graphics.setColor(jComponent.getBackground());
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
-            }
-            GA.L(graphics, jComponent);
-        }
-    }
-
-    public static void L(Graphics graphics, JComponent jComponent) {
-        Rectangle rectangle;
-        block4: {
-            block3: {
-                Shape shape;
-                block2: {
-                    Shape shape2 = graphics.getClip();
-                    String string = FV.D();
-                    try {
-                        shape = shape2;
-                        if (string != null) break block2;
-                        if (shape == null) break block3;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    shape = shape2;
-                }
-                rectangle = shape.getBounds();
-                break block4;
-            }
-            rectangle = jComponent.getVisibleRect();
-        }
-        Rectangle rectangle2 = rectangle;
-        graphics.fillRect(rectangle2.x, rectangle2.y, rectangle2.width, rectangle2.height);
-    }
-
-    public static void G(JButton jButton) {
-        jButton.setUI(new BasicButtonUI());
-        jButton.setMargin(new Insets(0, 0, 0, 0));
-        jButton.setBorder(null);
-        jButton.setBorderPainted(false);
-        jButton.setContentAreaFilled(false);
-        jButton.setFocusable(false);
-        jButton.setOpaque(false);
-    }
-
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public static Shape K(int n10, int[] nArray) {
-        int n11;
-        String string;
-        block8: {
-            block9: {
-                int[] nArray2;
-                block7: {
-                    string = FV.D();
-                    try {
-                        nArray2 = nArray;
-                        if (string != null) break block7;
-                        if (nArray2 == null) throw new RuntimeException(GA.a(-31907, 10790));
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    nArray2 = nArray;
-                }
-                try {
-                    try {
-                        n11 = nArray2.length % 2;
-                        if (string != null) break block8;
-                        if (n11 == 0) break block9;
-                        throw new RuntimeException(GA.a(-31907, 10790));
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
-            }
-            n11 = nArray.length / 2;
-        }
-        Point[] pointArray = new Point[n11];
-        for (int i2 = 0; i2 < nArray.length; i2 += 2) {
-            pointArray[i2 / 2] = new Point(nArray[i2], nArray[i2 + 1]);
-            if (string == null) continue;
-        }
-        return GA.a(n10, pointArray);
-    }
-
-    public static Shape a(int n10, Point[] pointArray) {
-        return GA.m(n10, pointArray, null);
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public static Shape m(int var0, Point[] var1_1, boolean[] var2_2) {
-        block64: {
-            block63: {
-                block62: {
-                    block61: {
-                        var3_3 = FV.D();
-                        try {
-                            v0 = var1_1;
-                            if (var3_3 != null) break block61;
-                            if (v0 != null) {
-                            }
-                            ** GOTO lbl14
-                        }
-                        catch (RuntimeException v1) {
-                            throw GA.a(v1);
-                        }
-                        v0 = var1_1;
-                    }
-                    try {
-                        if (v0.length >= 3) break block62;
-lbl14:
-                        // 2 sources
-
-                        throw new RuntimeException(GA.a(-31934, -12111));
-                    }
-                    catch (RuntimeException v2) {
-                        throw GA.a(v2);
-                    }
-                }
-                try {
-                    v3 = var2_2;
-                    if (var3_3 != null) break block63;
-                    if (v3 == null) break block64;
-                }
-                catch (RuntimeException v4) {
-                    throw GA.a(v4);
-                }
-                v3 = var2_2;
-            }
             try {
-                if (v3.length != var1_1.length) {
-                    throw new RuntimeException(GA.a(-31918, 17304));
-                }
+               var29 = var3;
+               var10001 = 1;
+            } catch (RuntimeException var25) {
+               boolean var38 = false;
+               throw a(var25);
             }
-            catch (RuntimeException v5) {
-                throw GA.a(v5);
+         }
+
+         label244: {
+            label223: {
+               try {
+                  if (var4 != null) {
+                     break label244;
+                  }
+
+                  if (var29 != var10001) {
+                     break label223;
+                  }
+               } catch (RuntimeException var24) {
+                  throw a(var24);
+               }
+
+               var6 = new java.awt.geom.Ellipse2D.Double((double)(var2.x + var2.width / 2 - o), (double)(var2.y - o), (double)(o * 2), (double)(o * 2));
+
+               try {
+                  if (var4 == null) {
+                     break label221;
+                  }
+               } catch (RuntimeException var23) {
+                  boolean var39 = false;
+                  throw a(var23);
+               }
             }
-        }
-        var4_4 = new GeneralPath(0);
-        for (var5_5 = 0; var5_5 < var1_1.length; ++var5_5) {
-            block79: {
-                block78: {
-                    block77: {
-                        block75: {
-                            block74: {
-                                block65: {
-                                    block73: {
-                                        block71: {
-                                            block70: {
-                                                block69: {
-                                                    block68: {
-                                                        block66: {
-                                                            block67: {
-                                                                var6_6 = var1_1[var5_5];
-                                                                try {
-                                                                    v6 = var5_5;
-                                                                    if (var3_3 != null) break block65;
-                                                                    if (v6 == 0) {
-                                                                    }
-                                                                    ** GOTO lbl134
-                                                                }
-                                                                catch (RuntimeException v7) {
-                                                                    throw GA.a(v7);
-                                                                }
-                                                                var7_7 = var1_1[var1_1.length - 1];
-                                                                try {
-                                                                    try {
-                                                                        try {
-                                                                            if (var3_3 != null) break block66;
-                                                                            if (var0 != 0) {
-                                                                            }
-                                                                            ** GOTO lbl76
-                                                                        }
-                                                                        catch (RuntimeException v8) {
-                                                                            throw GA.a(v8);
-                                                                        }
-                                                                        v9 = var2_2;
-                                                                        if (var3_3 != null) break block67;
-                                                                    }
-                                                                    catch (RuntimeException v10) {
-                                                                        throw GA.a(v10);
-                                                                    }
-                                                                    if (v9 != null) {
-                                                                    }
-                                                                    ** GOTO lbl83
-                                                                }
-                                                                catch (RuntimeException v11) {
-                                                                    throw GA.a(v11);
-                                                                }
-                                                                v9 = var2_2;
-                                                            }
-                                                            try {
-                                                                try {
-                                                                    v12 = v9[var1_1.length - 1];
-                                                                    if (var3_3 != null) break block68;
-                                                                    if (v12 == 0) {
-                                                                    }
-                                                                    ** GOTO lbl83
-                                                                }
-                                                                catch (RuntimeException v13) {
-                                                                    throw GA.a(v13);
-                                                                }
-lbl76:
-                                                                // 2 sources
 
-                                                                var4_4.moveTo(var7_7.x, var7_7.y);
-                                                            }
-                                                            catch (RuntimeException v14) {
-                                                                throw GA.a(v14);
-                                                            }
-                                                        }
-                                                        try {
-                                                            if (var3_3 == null) break block69;
-lbl83:
-                                                            // 3 sources
-
-                                                            v12 = var0;
-                                                        }
-                                                        catch (RuntimeException v15) {
-                                                            throw GA.a(v15);
-                                                        }
-                                                    }
-                                                    var8_8 = GA.U(v12, var7_7, var6_6);
-                                                    var4_4.moveTo(var8_8.x, var8_8.y);
-                                                }
-                                                try {
-                                                    try {
-                                                        if (var0 != 0) {
-                                                            v16 = var2_2;
-                                                            if (var3_3 != null) break block70;
-                                                        }
-                                                        ** GOTO lbl116
-                                                    }
-                                                    catch (RuntimeException v17) {
-                                                        throw GA.a(v17);
-                                                    }
-                                                    if (v16 != null) {
-                                                    }
-                                                    ** GOTO lbl121
-                                                }
-                                                catch (RuntimeException v18) {
-                                                    throw GA.a(v18);
-                                                }
-                                                v16 = var2_2;
-                                            }
-                                            try {
-                                                block72: {
-                                                    try {
-                                                        try {
-                                                            v19 = v16[var5_5];
-                                                            if (var3_3 != null) break block71;
-                                                            if (v19 != 0) break block72;
-                                                        }
-                                                        catch (RuntimeException v20) {
-                                                            throw GA.a(v20);
-                                                        }
-lbl116:
-                                                        // 2 sources
-
-                                                        var4_4.lineTo(var6_6.x, var6_6.y);
-                                                        if (var3_3 == null) break block73;
-                                                    }
-                                                    catch (RuntimeException v21) {
-                                                        throw GA.a(v21);
-                                                    }
-                                                }
-                                                v19 = var0;
-                                            }
-                                            catch (RuntimeException v22) {
-                                                throw GA.a(v22);
-                                            }
-                                        }
-                                        var8_8 = GA.U(v19, var6_6, var7_7);
-                                        var9_9 = GA.U(var0, var6_6, var1_1[var5_5 + 1]);
-                                        var4_4.lineTo(var8_8.x, var8_8.y);
-                                        var4_4.quadTo(var6_6.x, var6_6.y, var9_9.x, var9_9.y);
-                                    }
-                                    try {
-                                        if (var3_3 == null) continue;
-lbl134:
-                                        // 2 sources
-
-                                        v6 = var0;
-                                    }
-                                    catch (RuntimeException v23) {
-                                        throw GA.a(v23);
-                                    }
-                                }
-                                try {
-                                    try {
-                                        if (v6 != 0) {
-                                            v24 = var2_2;
-                                            if (var3_3 != null) break block74;
-                                        }
-                                        ** GOTO lbl164
-                                    }
-                                    catch (RuntimeException v25) {
-                                        throw GA.a(v25);
-                                    }
-                                    if (v24 != null) {
-                                    }
-                                    ** GOTO lbl169
-                                }
-                                catch (RuntimeException v26) {
-                                    throw GA.a(v26);
-                                }
-                                v24 = var2_2;
-                            }
-                            try {
-                                block76: {
-                                    try {
-                                        try {
-                                            v27 = v24[var5_5];
-                                            if (var3_3 != null) break block75;
-                                            if (v27 != 0) break block76;
-                                        }
-                                        catch (RuntimeException v28) {
-                                            throw GA.a(v28);
-                                        }
-lbl164:
-                                        // 2 sources
-
-                                        var4_4.lineTo(var6_6.x, var6_6.y);
-                                        if (var3_3 == null) continue;
-                                    }
-                                    catch (RuntimeException v29) {
-                                        throw GA.a(v29);
-                                    }
-                                }
-                                v27 = var0;
-                            }
-                            catch (RuntimeException v30) {
-                                throw GA.a(v30);
-                            }
-                        }
-                        var7_7 = GA.U(v27, var6_6, var1_1[var5_5 - 1]);
-                        try {
-                            try {
-                                v31 = var0;
-                                v32 = var6_6;
-                                v33 = var1_1;
-                                v34 = var5_5;
-                                v35 = var1_1.length - 1;
-                                if (var3_3 != null) break block77;
-                                if (v34 >= v35) break block78;
-                            }
-                            catch (RuntimeException v36) {
-                                throw GA.a(v36);
-                            }
-                            v34 = var5_5;
-                            v35 = 1;
-                        }
-                        catch (RuntimeException v37) {
-                            throw GA.a(v37);
-                        }
-                    }
-                    v38 = v34 + v35;
-                    break block79;
-                }
-                v38 = 0;
-            }
-            var8_8 = GA.U(v31, v32, v33[v38]);
-            var4_4.lineTo(var7_7.x, var7_7.y);
-            var4_4.quadTo(var6_6.x, var6_6.y, var8_8.x, var8_8.y);
-            if (var3_3 == null) continue;
-        }
-        return var4_4;
-    }
-
-    private static Point U(int n10, Point point, Point point2) {
-        block22: {
-            Point point3;
-            block23: {
-                int n11;
-                int n12;
-                block21: {
-                    String string;
-                    block17: {
-                        block18: {
-                            Point point4;
-                            block19: {
-                                block20: {
-                                    string = FV.D();
-                                    try {
-                                        try {
-                                            try {
-                                                try {
-                                                    n12 = point.y;
-                                                    n11 = point2.y;
-                                                    if (string != null) break block17;
-                                                    if (n12 != n11) break block18;
-                                                }
-                                                catch (RuntimeException runtimeException) {
-                                                    throw GA.a(runtimeException);
-                                                }
-                                                point4 = point;
-                                                if (string != null) break block19;
-                                            }
-                                            catch (RuntimeException runtimeException) {
-                                                throw GA.a(runtimeException);
-                                            }
-                                            if (point4.x >= point2.x) break block20;
-                                        }
-                                        catch (RuntimeException runtimeException) {
-                                            throw GA.a(runtimeException);
-                                        }
-                                        return new Point(point.x + Math.min(n10, (point2.x - point.x) / 2), point.y);
-                                    }
-                                    catch (RuntimeException runtimeException) {
-                                        throw GA.a(runtimeException);
-                                    }
-                                }
-                                point4 = new Point(point.x - Math.min(n10, (point.x - point2.x) / 2), point.y);
-                            }
-                            return point4;
-                        }
-                        n12 = point.x;
-                        n11 = point2.x;
-                    }
-                    try {
-                        try {
-                            try {
-                                if (string != null) break block21;
-                                if (n12 != n11) break block22;
-                            }
-                            catch (RuntimeException runtimeException) {
-                                throw GA.a(runtimeException);
-                            }
-                            point3 = point;
-                            if (string != null) break block23;
-                        }
-                        catch (RuntimeException runtimeException) {
-                            throw GA.a(runtimeException);
-                        }
-                        n12 = point3.y;
-                        n11 = point2.y;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                }
-                try {
-                    if (n12 < n11) {
-                        return new Point(point.x, point.y + Math.min(n10, (point2.y - point.y) / 2));
-                    }
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
-                point3 = new Point(point.x, point.y - Math.min(n10, (point.y - point2.y) / 2));
-            }
-            return point3;
-        }
-        return null;
-    }
-
-    public static void r(Graphics2D graphics2D, Rectangle rectangle) {
-        GA.o(graphics2D, rectangle.x, rectangle.y, rectangle.width, rectangle.height);
-    }
-
-    public static void o(Graphics2D graphics2D, int n10, int n11, int n12, int n13) {
-        GA.r(graphics2D, n10, n11, n12, n13, GO.FD);
-    }
-
-    public static void e(Graphics2D graphics2D, Rectangle rectangle, int n10) {
-        GA.r(graphics2D, rectangle.x, rectangle.y, rectangle.width, rectangle.height, n10);
-    }
-
-    public static void r(Graphics2D graphics2D, int n10, int n11, int n12, int n13, int n14) {
-        GA.h(graphics2D, n10, n11, n12, n13, n14, GO.v, GO.i);
-    }
-
-    public static void F(Graphics2D graphics2D, Rectangle rectangle, int n10, Color color, Color color2) {
-        GA.h(graphics2D, rectangle.x, rectangle.y, rectangle.width, rectangle.height, n10, color, color2);
-    }
-
-    public static void h(Graphics2D graphics2D, int n10, int n11, int n12, int n13, int n14, Color color, Color color2) {
-        int n15 = n12 / n14 + 1;
-        int n16 = n13 / n14 + 1;
-        int n17 = 0;
-        String string = FV.D();
-        block16: while (true) {
-            int n18 = n17;
-            block17: while (n18 < n15) {
-                int n19 = 0;
-                while (n19 < n16) {
-                    block21: {
-                        block22: {
-                            int n20;
-                            int n21;
-                            block28: {
-                                block26: {
-                                    int n22;
-                                    int n23;
-                                    block25: {
-                                        int n24;
-                                        block27: {
-                                            block24: {
-                                                int n25;
-                                                int n26;
-                                                block23: {
-                                                    Color color3;
-                                                    boolean bl;
-                                                    block19: {
-                                                        block20: {
-                                                            n18 = (n17 + n19) % 2;
-                                                            if (string != null) continue block17;
-                                                            try {
-                                                                if (string != null) break block19;
-                                                                if (n18 != 0) break block20;
-                                                            }
-                                                            catch (RuntimeException runtimeException) {
-                                                                throw GA.a(runtimeException);
-                                                            }
-                                                            bl = true;
-                                                            break block19;
-                                                        }
-                                                        bl = false;
-                                                    }
-                                                    boolean bl2 = bl;
-                                                    try {
-                                                        color3 = bl2 ? color : color2;
-                                                    }
-                                                    catch (RuntimeException runtimeException) {
-                                                        throw GA.a(runtimeException);
-                                                    }
-                                                    Color color4 = color3;
-                                                    try {
-                                                        try {
-                                                            try {
-                                                                try {
-                                                                    if (string != null) break block21;
-                                                                    if (color4 == null) break block22;
-                                                                }
-                                                                catch (RuntimeException runtimeException) {
-                                                                    throw GA.a(runtimeException);
-                                                                }
-                                                                graphics2D.setPaint(color4);
-                                                                n26 = n10 + n17 * n14 + n14;
-                                                                n25 = n10 + n12;
-                                                                if (string != null) break block23;
-                                                            }
-                                                            catch (RuntimeException runtimeException) {
-                                                                throw GA.a(runtimeException);
-                                                            }
-                                                            if (n26 <= n25) break block24;
-                                                        }
-                                                        catch (RuntimeException runtimeException) {
-                                                            throw GA.a(runtimeException);
-                                                        }
-                                                        n26 = n12;
-                                                        n25 = n17 * n14;
-                                                    }
-                                                    catch (RuntimeException runtimeException) {
-                                                        throw GA.a(runtimeException);
-                                                    }
-                                                }
-                                                n24 = n26 - n25;
-                                                break block27;
-                                            }
-                                            n24 = n14;
-                                        }
-                                        n21 = n24;
-                                        try {
-                                            try {
-                                                n23 = n11 + n19 * n14 + n14;
-                                                n22 = n11 + n13;
-                                                if (string != null) break block25;
-                                                if (n23 <= n22) break block26;
-                                            }
-                                            catch (RuntimeException runtimeException) {
-                                                throw GA.a(runtimeException);
-                                            }
-                                            n23 = n13;
-                                            n22 = n19 * n14;
-                                        }
-                                        catch (RuntimeException runtimeException) {
-                                            throw GA.a(runtimeException);
-                                        }
-                                    }
-                                    n20 = n23 - n22;
-                                    break block28;
-                                }
-                                n20 = n14;
-                            }
-                            int n27 = n20;
-                            graphics2D.fillRect(n10 + n17 * n14, n11 + n19 * n14, n21, n27);
-                        }
-                        ++n19;
-                    }
-                    if (string == null) continue;
-                }
-                ++n17;
-                if (string == null) continue block16;
-            }
-            break;
-        }
-    }
-
-    public static Rectangle M(String string, Graphics graphics, Font font) {
-        return GA.h(string, (Graphics2D)graphics, font);
-    }
-
-    public static Rectangle h(String string, Graphics2D graphics2D, Font font) {
-        FontRenderContext fontRenderContext = graphics2D.getFontRenderContext();
-        GlyphVector glyphVector = font.createGlyphVector(fontRenderContext, string);
-        return glyphVector.getVisualBounds().getBounds();
-    }
-
-    public static Shape z(Graphics2D graphics2D, JComponent jComponent) {
-        return GA.x(graphics2D, jComponent, GO.r, GO.FG, GO.Fx);
-    }
-
-    public static Shape x(Graphics2D graphics2D, JComponent jComponent, Color color, int n10, int n11) {
-        return GA.i(graphics2D, jComponent, color, n10, n11, true);
-    }
-
-    public static Shape i(Graphics2D graphics2D, JComponent jComponent, Color color, int n10, int n11, boolean bl) {
-        return GA.r(graphics2D, jComponent, color, n10, n11, bl, false);
-    }
-
-    public static Shape r(Graphics2D graphics2D, JComponent jComponent, Color color, int n10, int n11, boolean bl, boolean bl2) {
-        return GA.m(graphics2D, jComponent, color, n10, n11, bl, bl2, GO.Ff, GO.FX);
-    }
-
-    public static Shape O(Graphics2D graphics2D, JComponent jComponent, Color color, int n10, int n11, boolean bl, boolean bl2, float f10) {
-        return GA.Y(graphics2D, jComponent, color, n10, n11, bl, bl2, GO.Ff, GO.FX, f10);
-    }
-
-    public static Shape R(Graphics2D graphics2D, JComponent jComponent, Color color, int n10, int n11, boolean bl, boolean bl2, Color color2) {
-        return GA.m(graphics2D, jComponent, color, n10, n11, bl, bl2, color2, color2);
-    }
-
-    public static Shape m(Graphics2D graphics2D, JComponent jComponent, Color color, int n10, int n11, boolean bl, boolean bl2, Color color2, Color color3) {
-        return GA.Y(graphics2D, jComponent, color, n10, n11, bl, bl2, color2, color3, 1.0f);
-    }
-
-    public static Shape Y(Graphics2D graphics2D, JComponent jComponent, Color color, int n10, int n11, boolean bl, boolean bl2, Color color2, Color color3, float f10) {
-        return GA.Z(graphics2D, jComponent, color, n10, n11, bl, bl2, color2, color3, jComponent.getBackground(), f10);
-    }
-
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    public static Shape Z(Graphics2D var0, JComponent var1_1, Color var2_2, int var3_3, int var4_4, boolean var5_5, boolean var6_6, Color var7_7, Color var8_8, Color var9_9, float var10_10) {
-        block47: {
-            block48: {
-                block44: {
-                    block46: {
-                        block45: {
-                            block40: {
-                                block43: {
-                                    block49: {
-                                        block42: {
-                                            block41: {
-                                                block38: {
-                                                    block39: {
-                                                        block36: {
-                                                            block37: {
-                                                                block35: {
-                                                                    block34: {
-                                                                        var11_11 = FV.D();
-                                                                        try {
-                                                                            try {
-                                                                                cfr_temp_0 = var10_10 - 0.0f;
-                                                                                v0 = cfr_temp_0 == 0.0f ? 0 : (cfr_temp_0 < 0.0f ? -1 : 1);
-                                                                                if (var11_11 != null) break block34;
-                                                                                if (v0 > 0) {
-                                                                                }
-                                                                                ** GOTO lbl20
-                                                                            }
-                                                                            catch (RuntimeException v1) {
-                                                                                throw GA.a(v1);
-                                                                            }
-                                                                            cfr_temp_1 = var10_10 - 1.0f;
-                                                                            v0 = cfr_temp_1 == 0.0f ? 0 : (cfr_temp_1 > 0.0f ? 1 : -1);
-                                                                        }
-                                                                        catch (RuntimeException v2) {
-                                                                            throw GA.a(v2);
-                                                                        }
-                                                                    }
-                                                                    try {
-                                                                        if (v0 <= 0) break block35;
-lbl20:
-                                                                        // 2 sources
-
-                                                                        return null;
-                                                                    }
-                                                                    catch (RuntimeException v3) {
-                                                                        throw GA.a(v3);
-                                                                    }
-                                                                }
-                                                                var12_12 = RV.X(var0);
-                                                                try {
-                                                                    v4 = var0;
-                                                                    v5 = Float.valueOf(var10_10);
-                                                                    cfr_temp_2 = var10_10 - 1.0f;
-                                                                    v6 = cfr_temp_2 == 0.0f ? 0 : (cfr_temp_2 < 0.0f ? -1 : 1);
-                                                                    if (var11_11 != null) break block36;
-                                                                    if (v6 >= 0) break block37;
-                                                                }
-                                                                catch (RuntimeException v7) {
-                                                                    throw GA.a(v7);
-                                                                }
-                                                                v6 = (float)true;
-                                                                break block36;
-                                                            }
-                                                            v6 = (float)false;
-                                                        }
-                                                        var13_13 = RV.a(v4, v5, (boolean)v6);
-                                                        var14_14 = GA.X(var1_1, var3_3, var4_4);
-                                                        try {
-                                                            try {
-                                                                try {
-                                                                    v8 = var1_1.isEnabled();
-                                                                    if (var11_11 != null) break block38;
-                                                                    if (!v8) break block39;
-                                                                }
-                                                                catch (RuntimeException v9) {
-                                                                    throw GA.a(v9);
-                                                                }
-                                                                if (var2_2 == null) break block39;
-                                                            }
-                                                            catch (RuntimeException v10) {
-                                                                throw GA.a(v10);
-                                                            }
-                                                            RV.Y(var0, var14_14, var2_2, var3_3);
-                                                        }
-                                                        catch (RuntimeException v11) {
-                                                            throw GA.a(v11);
-                                                        }
-                                                    }
-                                                    v8 = var5_5;
-                                                }
-                                                try {
-                                                    try {
-                                                        if (!v8) break block40;
-                                                        v12 = var0;
-                                                        v13 = var6_6;
-                                                        if (var11_11 != null) break block41;
-                                                    }
-                                                    catch (RuntimeException v14) {
-                                                        throw GA.a(v14);
-                                                    }
-                                                    if (v13 == 0) break block42;
-                                                }
-                                                catch (RuntimeException v15) {
-                                                    throw GA.a(v15);
-                                                }
-                                                v13 = 0;
-                                            }
-                                            v16 /* !! */  = GA.m(v13, var3_3, 0, var1_1.getHeight() - var3_3);
-                                            break block49;
-                                        }
-                                        v16 /* !! */  = var9_9;
-                                    }
-                                    try {
-                                        try {
-                                            v12.setPaint(v16 /* !! */ );
-                                            if (var11_11 != null) break block43;
-                                            if (var4_4 > 0) {
-                                            }
-                                            ** GOTO lbl98
-                                        }
-                                        catch (RuntimeException v17) {
-                                            throw GA.a(v17);
-                                        }
-                                        var0.fillRoundRect(var3_3, var3_3, var1_1.getWidth() - var3_3 * 2, var1_1.getHeight() - var3_3 * 2, var4_4 * 2 + 2, var4_4 * 2 + 2);
-                                    }
-                                    catch (RuntimeException v18) {
-                                        throw GA.a(v18);
-                                    }
-                                }
-                                try {
-                                    if (var11_11 == null) break block40;
-lbl98:
-                                    // 2 sources
-
-                                    var0.fillRect(var3_3, var3_3, var1_1.getWidth() - var3_3 * 2, var1_1.getHeight() - var3_3 * 2);
-                                }
-                                catch (RuntimeException v19) {
-                                    throw GA.a(v19);
-                                }
-                            }
-                            try {
-                                try {
-                                    if (var7_7 == null) break block44;
-                                    v20 = var0;
-                                    if (!var1_1.isEnabled()) break block45;
-                                }
-                                catch (RuntimeException v21) {
-                                    throw GA.a(v21);
-                                }
-                                v22 = var7_7;
-                                break block46;
-                            }
-                            catch (RuntimeException v23) {
-                                throw GA.a(v23);
-                            }
-                        }
-                        v22 = var8_8;
-                    }
-                    v20.setPaint(v22);
-                    var0.draw(var14_14);
-                }
-                try {
-                    v24 = var0;
-                    v25 = var13_13;
-                    cfr_temp_3 = var10_10 - 1.0f;
-                    v26 = cfr_temp_3 == 0.0f ? 0 : (cfr_temp_3 < 0.0f ? -1 : 1);
-                    if (var11_11 != null) break block47;
-                    if (v26 >= 0) break block48;
-                }
-                catch (RuntimeException v27) {
-                    throw GA.a(v27);
-                }
-                v26 = (float)true;
-                break block47;
-            }
-            v26 = (float)false;
-        }
-        RV.E(v24, v25, (boolean)v26);
-        RV.X(var0, var12_12);
-        return var14_14;
-    }
-
-    public static GradientPaint w(Rectangle rectangle) {
-        return GA.m(rectangle.x, rectangle.y, rectangle.x, rectangle.y + rectangle.height);
-    }
-
-    public static GradientPaint m(int n10, int n11, int n12, int n13) {
-        String string;
-        block5: {
-            String string2;
-            Map map;
-            block4: {
-                string = n10 + ";" + n11 + ";" + n12 + ";" + n13;
-                String string3 = FV.D();
-                try {
-                    try {
-                        map = i;
-                        string2 = string;
-                        if (string3 != null) break block4;
-                        if (!map.containsKey(string2)) break block5;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    map = i;
-                    string2 = string;
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
-            }
-            return (GradientPaint)map.get(string2);
-        }
-        GradientPaint gradientPaint = new GradientPaint(n10, n11, GO.FR, n12, n13, GO.Q);
-        i.put(string, gradientPaint);
-        return gradientPaint;
-    }
-
-    public static Shape X(JComponent jComponent, int n10, int n11) {
-        try {
-            if (n11 > 0) {
-                return new RoundRectangle2D.Double(n10, n10, jComponent.getWidth() - n10 * 2 - 1, jComponent.getHeight() - n10 * 2 - 1, n11 * 2, n11 * 2);
-            }
-        }
-        catch (RuntimeException runtimeException) {
-            throw GA.a(runtimeException);
-        }
-        return new Rectangle2D.Double(n10, n10, jComponent.getWidth() - n10 * 2 - 1, jComponent.getHeight() - n10 * 2 - 1);
-    }
-
-    public static void i(Graphics2D graphics2D, JComponent jComponent, Shape shape, Color color, int n10, boolean bl, boolean bl2) {
-        GA.e(graphics2D, jComponent, shape, color, n10, bl, bl2, (Color)cy_1.F, Color.LIGHT_GRAY);
-    }
-
-    public static void e(Graphics2D graphics2D, JComponent jComponent, Shape shape, Color color, int n10, boolean bl, boolean bl2, Color color2, Color color3) {
-        GA.R(graphics2D, jComponent, shape, color, n10, bl, bl2, color2, color3, jComponent.getBackground());
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public static void R(Graphics2D var0, JComponent var1_1, Shape var2_2, Color var3_3, int var4_4, boolean var5_5, boolean var6_6, Color var7_7, Color var8_8, Color var9_9) {
-        block17: {
-            block19: {
-                block18: {
-                    block16: {
-                        block15: {
-                            block13: {
-                                block14: {
-                                    var11_10 = RV.X(var0);
-                                    var10_11 = FV.D();
-                                    try {
-                                        try {
-                                            v0 = var1_1.isEnabled();
-                                            if (var10_11 != null) break block13;
-                                            if (!v0) break block14;
-                                        }
-                                        catch (RuntimeException v1) {
-                                            throw GA.a(v1);
-                                        }
-                                        RV.Y(var0, var2_2, var3_3, var4_4);
-                                    }
-                                    catch (RuntimeException v2) {
-                                        throw GA.a(v2);
-                                    }
-                                }
-                                v0 = var5_5;
-                            }
-                            try {
-                                if (var10_11 != null) break block15;
-                                if (!v0) break block16;
-                            }
-                            catch (RuntimeException v3) {
-                                throw GA.a(v3);
-                            }
-                            v0 = var6_6;
-                        }
-                        if (!v0) ** GOTO lbl32
-                        var12_12 = var2_2.getBounds();
-                        try {
-                            var0.setPaint(new GradientPaint(0.0f, var12_12.y, GO.FR, 0.0f, var12_12.y + var12_12.height, GO.Q));
-                            var0.fill(var2_2);
-                            if (var10_11 == null) break block16;
-lbl32:
-                            // 2 sources
-
-                            var0.setPaint(var9_9);
-                            var0.fill(var2_2);
-                        }
-                        catch (RuntimeException v4) {
-                            throw GA.a(v4);
-                        }
-                    }
-                    try {
-                        try {
-                            if (var7_7 == null) break block17;
-                            v5 = var0;
-                            if (!var1_1.isEnabled()) break block18;
-                        }
-                        catch (RuntimeException v6) {
-                            throw GA.a(v6);
-                        }
-                        v7 = var7_7;
-                        break block19;
-                    }
-                    catch (RuntimeException v8) {
-                        throw GA.a(v8);
-                    }
-                }
-                v7 = var8_8;
-            }
-            v5.setPaint(v7);
-            var0.draw(var2_2);
-        }
-        RV.X(var0, var11_10);
-    }
-
-    public static boolean w(Graphics2D graphics2D, JComponent jComponent, hq_0 hq_02, int n10, int n11) {
-        return GA.m(graphics2D, jComponent, hq_02, n10, n11, null);
-    }
-
-    public static boolean m(Graphics2D graphics2D, JComponent jComponent, hq_0 hq_02, int n10, int n11, Boolean bl) {
-        return GA.b(graphics2D, jComponent, hq_02, n10, n11, bl, null);
-    }
-
-    public static boolean b(Graphics2D graphics2D, JComponent jComponent, hq_0 hq_02, int n10, int n11, Boolean bl, Boolean bl2) {
-        Color color;
-        Boolean bl3;
-        Boolean bl4;
-        int n12;
-        int n13;
-        hq_0 hq_03;
-        JComponent jComponent2;
-        Graphics2D graphics2D2;
-        try {
-            graphics2D2 = graphics2D;
-            jComponent2 = jComponent;
-            hq_03 = hq_02;
-            n13 = n10;
-            n12 = n11;
-            bl4 = bl;
-            bl3 = bl2;
-            color = hq_02.equals((Object)hq_0.componentFocus) ? GO.x : GO.c;
-        }
-        catch (RuntimeException runtimeException) {
-            throw GA.a(runtimeException);
-        }
-        return GA.W(graphics2D2, jComponent2, hq_03, n13, n12, bl4, bl3, color);
-    }
-
-    public static boolean W(Graphics2D graphics2D, JComponent jComponent, hq_0 hq_02, int n10, int n11, Boolean bl, Boolean bl2, Color color) {
-        Stroke stroke;
-        Color color2;
-        Boolean bl3;
-        Boolean bl4;
-        int n12;
-        int n13;
-        hq_0 hq_03;
-        JComponent jComponent2;
-        Graphics2D graphics2D2;
-        try {
-            graphics2D2 = graphics2D;
-            jComponent2 = jComponent;
-            hq_03 = hq_02;
-            n13 = n10;
-            n12 = n11;
-            bl4 = bl;
-            bl3 = bl2;
-            color2 = color;
-            stroke = hq_02.equals((Object)hq_0.componentFocus) ? GO.B : GO.FE;
-        }
-        catch (RuntimeException runtimeException) {
-            throw GA.a(runtimeException);
-        }
-        return GA.j(graphics2D2, jComponent2, hq_03, n13, n12, bl4, bl3, color2, stroke);
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public static boolean j(Graphics2D var0, JComponent var1_1, hq_0 var2_2, int var3_3, int var4_4, Boolean var5_5, Boolean var6_6, Color var7_7, Stroke var8_8) {
-        block36: {
-            block37: {
-                block38: {
-                    block39: {
-                        block34: {
-                            block35: {
-                                block33: {
-                                    block32: {
-                                        block31: {
-                                            block30: {
-                                                block29: {
-                                                    var9_9 = FV.D();
-                                                    try {
-                                                        v0 = var6_6;
-                                                        if (var9_9 != null) break block29;
-                                                        if (v0 == null) break block30;
-                                                    }
-                                                    catch (RuntimeException v1) {
-                                                        throw GA.a(v1);
-                                                    }
-                                                    v0 = var6_6;
-                                                }
-                                                v2 = v0;
-                                                break block33;
-                                            }
-                                            try {
-                                                try {
-                                                    v2 = var1_1.hasFocus();
-                                                    if (var9_9 != null) break block31;
-                                                    if (!v2) break block32;
-                                                }
-                                                catch (RuntimeException v3) {
-                                                    throw GA.a(v3);
-                                                }
-                                                v2 = var1_1.isEnabled();
-                                            }
-                                            catch (RuntimeException v4) {
-                                                throw GA.a(v4);
-                                            }
-                                        }
-                                        try {
-                                            if (var9_9 != null) break block33;
-                                            if (!v2) break block32;
-                                        }
-                                        catch (RuntimeException v5) {
-                                            throw GA.a(v5);
-                                        }
-                                        v2 = true;
-                                        break block33;
-                                    }
-                                    v2 = false;
-                                }
-                                var6_6 = v2;
-                                try {
-                                    try {
-                                        try {
-                                            v6 = var6_6;
-                                            if (var9_9 != null) break block34;
-                                            if (!v6) break block35;
-                                        }
-                                        catch (RuntimeException v7) {
-                                            throw GA.a(v7);
-                                        }
-                                        v6 = var2_2.equals((Object)hq_0.componentFocus);
-                                        if (var9_9 != null) break block34;
-                                    }
-                                    catch (RuntimeException v8) {
-                                        throw GA.a(v8);
-                                    }
-                                    if (!v6) break block35;
-                                }
-                                catch (RuntimeException v9) {
-                                    throw GA.a(v9);
-                                }
-                                var10_10 = RV.X(var0);
-                                var11_12 = RV.M(var0, var8_8);
-                                var0.setPaint(var7_7);
-                                var0.draw(GA.n(var1_1, var2_2, var3_3, var4_4));
-                                RV.p(var0, var11_12);
-                                RV.X(var0, var10_10);
-                                return true;
-                            }
-                            v6 = var2_2.equals((Object)hq_0.fieldFocus);
-                        }
-                        try {
-                            try {
-                                try {
-                                    try {
-                                        try {
-                                            if (var9_9 != null) break block36;
-                                            if (!v6) break block37;
-                                        }
-                                        catch (RuntimeException v10) {
-                                            throw GA.a(v10);
-                                        }
-                                        v11 = var6_6;
-                                        if (var9_9 != null) break block38;
-                                    }
-                                    catch (RuntimeException v12) {
-                                        throw GA.a(v12);
-                                    }
-                                    if (!v11.booleanValue()) {
-                                    }
-                                    ** GOTO lbl106
-                                }
-                                catch (RuntimeException v13) {
-                                    throw GA.a(v13);
-                                }
-                                v14 = var5_5;
-                                if (var9_9 != null) break block39;
-                            }
-                            catch (RuntimeException v15) {
-                                throw GA.a(v15);
-                            }
-                            if (v14 == null) break block37;
-                        }
-                        catch (RuntimeException v16) {
-                            throw GA.a(v16);
-                        }
-                        v14 = var5_5;
-                    }
-                    try {
-                        try {
-                            v6 = v14;
-                            if (var9_9 != null) break block36;
-                            if (!v6) break block37;
-                        }
-                        catch (RuntimeException v17) {
-                            throw GA.a(v17);
-                        }
-lbl106:
-                        // 2 sources
-
-                        v11 = RV.X(var0);
-                    }
-                    catch (RuntimeException v18) {
-                        throw GA.a(v18);
-                    }
-                }
-                var10_11 = v11;
-                var11_13 = RV.M(var0, var8_8);
-                var0.setPaint(var7_7);
-                var0.draw(GA.n(var1_1, var2_2, var3_3, var4_4));
-                RV.p(var0, var11_13);
-                RV.X(var0, var10_11);
-                return true;
-            }
-            v6 = false;
-        }
-        return v6;
-    }
-
-    public static Shape n(JComponent jComponent, hq_0 hq_02, int n10, int n11) {
-        int n12;
-        int n13;
-        block11: {
-            block12: {
-                int n14;
-                String string;
-                block9: {
-                    block10: {
-                        string = FV.D();
-                        try {
-                            n14 = hq_02.equals((Object)hq_0.componentFocus);
-                            if (string != null) break block9;
-                            if (n14 == 0) break block10;
-                        }
-                        catch (RuntimeException runtimeException) {
-                            throw GA.a(runtimeException);
-                        }
-                        n14 = 2;
-                        break block9;
-                    }
-                    n14 = 0;
-                }
-                n13 = n14;
-                try {
-                    try {
-                        n12 = hq_02.equals((Object)hq_0.componentFocus);
-                        if (string != null) break block11;
-                        if (n12 == 0) break block12;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    n12 = Math.max(0, n11 - 2);
-                    break block11;
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
-            }
-            n12 = n11;
-        }
-        n11 = n12;
-        try {
-            if (n11 > 0) {
-                return new RoundRectangle2D.Double(n10 + n13, n10 + n13, jComponent.getWidth() - n10 * 2 - n13 * 2 - 1, jComponent.getHeight() - n10 * 2 - n13 * 2 - 1, n11 * 2, n11 * 2);
-            }
-        }
-        catch (RuntimeException runtimeException) {
-            throw GA.a(runtimeException);
-        }
-        return new Rectangle2D.Double(n10 + n13, n10 + n13, jComponent.getWidth() - n10 * 2 - n13 * 2 - 1, jComponent.getHeight() - n10 * 2 - n13 * 2 - 1);
-    }
-
-    public static void i(Graphics2D graphics2D, JComponent jComponent, hq_0 hq_02, Shape shape) {
-        GA.U(graphics2D, jComponent, hq_02, shape, null);
-    }
-
-    public static void U(Graphics2D graphics2D, JComponent jComponent, hq_0 hq_02, Shape shape, Boolean bl) {
-        GA.l(graphics2D, jComponent, hq_02, shape, bl, null);
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public static void l(Graphics2D var0, JComponent var1_1, hq_0 var2_2, Shape var3_3, Boolean var4_4, Boolean var5_5) {
-        block41: {
-            block43: {
-                block44: {
-                    block42: {
-                        block40: {
-                            block39: {
-                                block38: {
-                                    block37: {
-                                        block36: {
-                                            block35: {
-                                                var6_6 = FV.D();
-                                                try {
-                                                    v0 = var5_5;
-                                                    if (var6_6 != null) break block35;
-                                                    if (v0 == null) break block36;
-                                                }
-                                                catch (RuntimeException v1) {
-                                                    throw GA.a(v1);
-                                                }
-                                                v0 = var5_5;
-                                            }
-                                            v2 = v0;
-                                            break block39;
-                                        }
-                                        try {
-                                            try {
-                                                v2 = var1_1.hasFocus();
-                                                if (var6_6 != null) break block37;
-                                                if (!v2) break block38;
-                                            }
-                                            catch (RuntimeException v3) {
-                                                throw GA.a(v3);
-                                            }
-                                            v2 = var1_1.isEnabled();
-                                        }
-                                        catch (RuntimeException v4) {
-                                            throw GA.a(v4);
-                                        }
-                                    }
-                                    try {
-                                        if (var6_6 != null) break block39;
-                                        if (!v2) break block38;
-                                    }
-                                    catch (RuntimeException v5) {
-                                        throw GA.a(v5);
-                                    }
-                                    v2 = true;
-                                    break block39;
-                                }
-                                v2 = false;
-                            }
-                            var5_5 = v2;
-                            try {
-                                try {
-                                    try {
-                                        v6 = var5_5;
-                                        if (var6_6 != null) break block40;
-                                        if (v6) {
-                                        }
-                                        ** GOTO lbl67
-                                    }
-                                    catch (RuntimeException v7) {
-                                        throw GA.a(v7);
-                                    }
-                                    v6 = var2_2.equals((Object)hq_0.componentFocus);
-                                    if (var6_6 != null) break block40;
-                                }
-                                catch (RuntimeException v8) {
-                                    throw GA.a(v8);
-                                }
-                                if (v6) {
-                                }
-                                ** GOTO lbl67
-                            }
-                            catch (RuntimeException v9) {
-                                throw GA.a(v9);
-                            }
-                            var7_7 = RV.X(var0);
-                            var8_8 = RV.M(var0, GO.B);
-                            try {
-                                var0.setPaint(GO.x);
-                                var0.draw(var3_3);
-                                RV.p(var0, var8_8);
-                                RV.X(var0, var7_7);
-                                if (var6_6 == null) break block41;
-lbl67:
-                                // 3 sources
-
-                                v6 = var2_2.equals((Object)hq_0.fieldFocus);
-                            }
-                            catch (RuntimeException v10) {
-                                throw GA.a(v10);
-                            }
-                        }
-                        try {
-                            try {
-                                try {
-                                    if (var6_6 != null) break block42;
-                                    if (!v6) break block41;
-                                }
-                                catch (RuntimeException v11) {
-                                    throw GA.a(v11);
-                                }
-                                v12 = var5_5;
-                                if (var6_6 != null) break block43;
-                            }
-                            catch (RuntimeException v13) {
-                                throw GA.a(v13);
-                            }
-                            v6 = v12.booleanValue();
-                        }
-                        catch (RuntimeException v14) {
-                            throw GA.a(v14);
-                        }
-                    }
-                    try {
-                        try {
-                            if (!v6) {
-                                v12 = var4_4;
-                                if (var6_6 != null) break block44;
-                            }
-                            ** GOTO lbl112
-                        }
-                        catch (RuntimeException v15) {
-                            throw GA.a(v15);
-                        }
-                        if (v12 == null) break block41;
-                    }
-                    catch (RuntimeException v16) {
-                        throw GA.a(v16);
-                    }
-                    v12 = var4_4;
-                }
-                try {
-                    try {
-                        if (var6_6 != null) break block43;
-                        if (!v12.booleanValue()) break block41;
-                    }
-                    catch (RuntimeException v17) {
-                        throw GA.a(v17);
-                    }
-lbl112:
-                    // 2 sources
-
-                    v12 = RV.X(var0);
-                }
-                catch (RuntimeException v18) {
-                    throw GA.a(v18);
-                }
-            }
-            var7_7 = v12;
-            var8_8 = RV.M(var0, GO.FE);
             try {
-                v19 = var0;
-                v20 = var5_5 != false ? GO.c : GO.n;
+               var29 = var3;
+               var10001 = 2;
+            } catch (RuntimeException var22) {
+               boolean var40 = false;
+               throw a(var22);
             }
-            catch (RuntimeException v21) {
-                throw GA.a(v21);
+         }
+
+         label245: {
+            label224: {
+               try {
+                  if (var4 != null) {
+                     break label245;
+                  }
+
+                  if (var29 != var10001) {
+                     break label224;
+                  }
+               } catch (RuntimeException var21) {
+                  throw a(var21);
+               }
+
+               var6 = new java.awt.geom.Ellipse2D.Double((double)(var2.x + var2.width - o), (double)(var2.y - o), (double)(o * 2), (double)(o * 2));
+
+               try {
+                  if (var4 == null) {
+                     break label221;
+                  }
+               } catch (RuntimeException var20) {
+                  boolean var41 = false;
+                  throw a(var20);
+               }
             }
-            v19.setPaint(v20);
-            var0.draw(var3_3);
-            RV.p(var0, var8_8);
-            RV.X(var0, var7_7);
-        }
-    }
 
-    public static void H(Graphics2D graphics2D, Color color, int n10, int n11, int n12, int n13, boolean bl, boolean bl2, boolean bl3) {
-        GA.t(graphics2D, color, new Rectangle(n10, n11, n12, n13), bl, bl2, bl3);
-    }
-
-    public static void S(Graphics2D graphics2D, Color color, int n10, int n11, int n12, int n13, boolean bl, boolean bl2, boolean bl3, boolean bl4) {
-        GA.P(graphics2D, color, new Rectangle(n10, n11, n12, n13), bl, bl2, bl3, bl4);
-    }
-
-    public static void t(Graphics2D graphics2D, Color color, Rectangle rectangle, boolean bl, boolean bl2, boolean bl3) {
-        GA.P(graphics2D, color, rectangle, bl, bl2, bl3, true);
-    }
-
-    public static void P(Graphics2D graphics2D, Color color, Rectangle rectangle, boolean bl, boolean bl2, boolean bl3, boolean bl4) {
-        boolean bl5;
-        Area area;
-        Object object;
-        block39: {
-            block40: {
-                String string;
-                block41: {
-                    block42: {
-                        block37: {
-                            block38: {
-                                block33: {
-                                    block34: {
-                                        block35: {
-                                            block36: {
-                                                rectangle = rv_2.q(rectangle);
-                                                object = RV.X(graphics2D);
-                                                string = FV.D();
-                                                area = new Area();
-                                                try {
-                                                    try {
-                                                        try {
-                                                            try {
-                                                                bl5 = bl2;
-                                                                if (string != null) break block33;
-                                                                if (!bl5) break block34;
-                                                            }
-                                                            catch (RuntimeException runtimeException) {
-                                                                throw GA.a(runtimeException);
-                                                            }
-                                                            bl5 = bl;
-                                                            if (string != null) break block35;
-                                                        }
-                                                        catch (RuntimeException runtimeException) {
-                                                            throw GA.a(runtimeException);
-                                                        }
-                                                        if (!bl5) break block36;
-                                                    }
-                                                    catch (RuntimeException runtimeException) {
-                                                        throw GA.a(runtimeException);
-                                                    }
-                                                    area.add(new Area(new Ellipse2D.Double(rectangle.x - a, rectangle.y - a, a * 2, a * 2)));
-                                                    area.add(new Area(new Ellipse2D.Double(rectangle.x + rectangle.width - a, rectangle.y - a, a * 2, a * 2)));
-                                                }
-                                                catch (RuntimeException runtimeException) {
-                                                    throw GA.a(runtimeException);
-                                                }
-                                            }
-                                            bl5 = bl4;
-                                        }
-                                        try {
-                                            try {
-                                                if (string != null) break block33;
-                                                if (!bl5) break block34;
-                                            }
-                                            catch (RuntimeException runtimeException) {
-                                                throw GA.a(runtimeException);
-                                            }
-                                            area.add(new Area(new Ellipse2D.Double(rectangle.x + rectangle.width / 2 - a, rectangle.y - a, a * 2, a * 2)));
-                                        }
-                                        catch (RuntimeException runtimeException) {
-                                            throw GA.a(runtimeException);
-                                        }
-                                    }
-                                    bl5 = bl;
-                                }
-                                try {
-                                    try {
-                                        try {
-                                            try {
-                                                if (string != null) break block37;
-                                                if (!bl5) break block38;
-                                            }
-                                            catch (RuntimeException runtimeException) {
-                                                throw GA.a(runtimeException);
-                                            }
-                                            bl5 = bl4;
-                                            if (string != null) break block37;
-                                        }
-                                        catch (RuntimeException runtimeException) {
-                                            throw GA.a(runtimeException);
-                                        }
-                                        if (!bl5) break block38;
-                                    }
-                                    catch (RuntimeException runtimeException) {
-                                        throw GA.a(runtimeException);
-                                    }
-                                    area.add(new Area(new Ellipse2D.Double(rectangle.x - a, rectangle.y + rectangle.height / 2 - a, a * 2, a * 2)));
-                                    area.add(new Area(new Ellipse2D.Double(rectangle.x + rectangle.width - a, rectangle.y + rectangle.height / 2 - a, a * 2, a * 2)));
-                                }
-                                catch (RuntimeException runtimeException) {
-                                    throw GA.a(runtimeException);
-                                }
-                            }
-                            bl5 = bl2;
-                        }
-                        try {
-                            try {
-                                try {
-                                    try {
-                                        if (string != null) break block39;
-                                        if (!bl5) break block40;
-                                    }
-                                    catch (RuntimeException runtimeException) {
-                                        throw GA.a(runtimeException);
-                                    }
-                                    bl5 = bl;
-                                    if (string != null) break block41;
-                                }
-                                catch (RuntimeException runtimeException) {
-                                    throw GA.a(runtimeException);
-                                }
-                                if (!bl5) break block42;
-                            }
-                            catch (RuntimeException runtimeException) {
-                                throw GA.a(runtimeException);
-                            }
-                            area.add(new Area(new Ellipse2D.Double(rectangle.x - a, rectangle.y + rectangle.height - a, a * 2, a * 2)));
-                            area.add(new Area(new Ellipse2D.Double(rectangle.x + rectangle.width - a, rectangle.y + rectangle.height - a, a * 2, a * 2)));
-                        }
-                        catch (RuntimeException runtimeException) {
-                            throw GA.a(runtimeException);
-                        }
-                    }
-                    bl5 = bl4;
-                }
-                try {
-                    try {
-                        if (string != null) break block39;
-                        if (!bl5) break block40;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    area.add(new Area(new Ellipse2D.Double(rectangle.x + rectangle.width / 2 - a, rectangle.y + rectangle.height - a, a * 2, a * 2)));
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
-            }
-            bl5 = bl3;
-        }
-        if (bl5) {
-            Area area2 = new Area(new RoundRectangle2D.Double(rectangle.x - u, rectangle.y - u, rectangle.width + u * 2, rectangle.height + u * 2, 5.0, 5.0));
-            area2.subtract(new Area(new RoundRectangle2D.Double(rectangle.x + u, rectangle.y + u, rectangle.width - u * 2, rectangle.height - u * 2, 3.0, 3.0)));
-            area.add(area2);
-        }
-        RV.Y(graphics2D, area, Color.GRAY, U);
-        graphics2D.setPaint(Color.GRAY);
-        graphics2D.draw(area);
-        graphics2D.setPaint(color);
-        graphics2D.fill(area);
-        RV.X(graphics2D, object);
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public static void S(Graphics2D var0, Color var1_1, Rectangle var2_2, int var3_3) {
-        block40: {
-            block47: {
-                block46: {
-                    block45: {
-                        block44: {
-                            block43: {
-                                block42: {
-                                    block41: {
-                                        block39: {
-                                            var2_2 = rv_2.q(var2_2);
-                                            var5_4 = RV.X(var0);
-                                            var4_5 = FV.D();
-                                            try {
-                                                v0 = var3_3;
-                                                v1 = GA.a(14906, 1280795380835452763L);
-                                                if (var4_5 != null) break block39;
-                                                if (v0 == v1) {
-                                                }
-                                                ** GOTO lbl16
-                                            }
-                                            catch (RuntimeException v2) {
-                                                throw GA.a(v2);
-                                            }
-                                            var6_6 = new Ellipse2D.Double(var2_2.x - GA.o, var2_2.y - GA.o, GA.o * 2, GA.o * 2);
-                                            try {
-                                                if (var4_5 == null) break block40;
-lbl16:
-                                                // 2 sources
-
-                                                v0 = var3_3;
-                                                v1 = 1;
-                                            }
-                                            catch (RuntimeException v3) {
-                                                throw GA.a(v3);
-                                            }
-                                        }
-                                        try {
-                                            if (var4_5 != null) break block41;
-                                            if (v0 == v1) {
-                                            }
-                                            ** GOTO lbl32
-                                        }
-                                        catch (RuntimeException v4) {
-                                            throw GA.a(v4);
-                                        }
-                                        var6_6 = new Ellipse2D.Double(var2_2.x + var2_2.width / 2 - GA.o, var2_2.y - GA.o, GA.o * 2, GA.o * 2);
-                                        try {
-                                            if (var4_5 == null) break block40;
-lbl32:
-                                            // 2 sources
-
-                                            v0 = var3_3;
-                                            v1 = 2;
-                                        }
-                                        catch (RuntimeException v5) {
-                                            throw GA.a(v5);
-                                        }
-                                    }
-                                    try {
-                                        if (var4_5 != null) break block42;
-                                        if (v0 == v1) {
-                                        }
-                                        ** GOTO lbl48
-                                    }
-                                    catch (RuntimeException v6) {
-                                        throw GA.a(v6);
-                                    }
-                                    var6_6 = new Ellipse2D.Double(var2_2.x + var2_2.width - GA.o, var2_2.y - GA.o, GA.o * 2, GA.o * 2);
-                                    try {
-                                        if (var4_5 == null) break block40;
-lbl48:
-                                        // 2 sources
-
-                                        v0 = var3_3;
-                                        v1 = GA.a(29499, 4558395549346877016L);
-                                    }
-                                    catch (RuntimeException v7) {
-                                        throw GA.a(v7);
-                                    }
-                                }
-                                try {
-                                    if (var4_5 != null) break block43;
-                                    if (v0 == v1) {
-                                    }
-                                    ** GOTO lbl64
-                                }
-                                catch (RuntimeException v8) {
-                                    throw GA.a(v8);
-                                }
-                                var6_6 = new Ellipse2D.Double(var2_2.x - GA.o, var2_2.y + var2_2.height / 2 - GA.o, GA.o * 2, GA.o * 2);
-                                try {
-                                    if (var4_5 == null) break block40;
-lbl64:
-                                    // 2 sources
-
-                                    v0 = var3_3;
-                                    v1 = 3;
-                                }
-                                catch (RuntimeException v9) {
-                                    throw GA.a(v9);
-                                }
-                            }
-                            try {
-                                if (var4_5 != null) break block44;
-                                if (v0 == v1) {
-                                }
-                                ** GOTO lbl80
-                            }
-                            catch (RuntimeException v10) {
-                                throw GA.a(v10);
-                            }
-                            var6_6 = new Ellipse2D.Double(var2_2.x + var2_2.width - GA.o, var2_2.y + var2_2.height / 2 - GA.o, GA.o * 2, GA.o * 2);
-                            try {
-                                if (var4_5 == null) break block40;
-lbl80:
-                                // 2 sources
-
-                                v0 = var3_3;
-                                v1 = GA.a(2919, 3558482257251874307L);
-                            }
-                            catch (RuntimeException v11) {
-                                throw GA.a(v11);
-                            }
-                        }
-                        try {
-                            if (var4_5 != null) break block45;
-                            if (v0 == v1) {
-                            }
-                            ** GOTO lbl96
-                        }
-                        catch (RuntimeException v12) {
-                            throw GA.a(v12);
-                        }
-                        var6_6 = new Ellipse2D.Double(var2_2.x - GA.o, var2_2.y + var2_2.height - GA.o, GA.o * 2, GA.o * 2);
-                        try {
-                            if (var4_5 == null) break block40;
-lbl96:
-                            // 2 sources
-
-                            v0 = var3_3;
-                            v1 = 5;
-                        }
-                        catch (RuntimeException v13) {
-                            throw GA.a(v13);
-                        }
-                    }
-                    try {
-                        if (var4_5 != null) break block46;
-                        if (v0 == v1) {
-                        }
-                        ** GOTO lbl112
-                    }
-                    catch (RuntimeException v14) {
-                        throw GA.a(v14);
-                    }
-                    var6_6 = new Ellipse2D.Double(var2_2.x + var2_2.width / 2 - GA.o, var2_2.y + var2_2.height - GA.o, GA.o * 2, GA.o * 2);
-                    try {
-                        if (var4_5 == null) break block40;
-lbl112:
-                        // 2 sources
-
-                        v0 = var3_3;
-                        v1 = 4;
-                    }
-                    catch (RuntimeException v15) {
-                        throw GA.a(v15);
-                    }
-                }
-                if (v0 != v1) break block47;
-                var6_6 = new Ellipse2D.Double(var2_2.x + var2_2.width - GA.o, var2_2.y + var2_2.height - GA.o, GA.o * 2, GA.o * 2);
-                if (var4_5 == null) break block40;
-            }
-            var6_6 = null;
-        }
-        var0.setPaint(var1_1);
-        var0.fill(var6_6);
-        RV.X(var0, var5_4);
-    }
-
-    public static void z(Graphics2D graphics2D, Rectangle rectangle, boolean bl, boolean bl2, boolean bl3) {
-        GA.C(graphics2D, rectangle, bl, bl2, bl3, true);
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public static void C(Graphics2D var0, Rectangle var1_1, boolean var2_2, boolean var3_3, boolean var4_4, boolean var5_5) {
-        block92: {
-            block105: {
-                block104: {
-                    block102: {
-                        block100: {
-                            block89: {
-                                block98: {
-                                    block97: {
-                                        block95: {
-                                            block93: {
-                                                block90: {
-                                                    var1_1 = rv_2.q(var1_1);
-                                                    var7_6 = GA.Y(var1_1);
-                                                    var6_7 = FV.D();
-                                                    try {
-                                                        block91: {
-                                                            try {
-                                                                try {
-                                                                    try {
-                                                                        try {
-                                                                            try {
-                                                                                try {
-                                                                                    v0 = var4_4;
-                                                                                    if (var6_7 != null) break block89;
-                                                                                    if (v0) {
-                                                                                    }
-                                                                                    ** GOTO lbl160
-                                                                                }
-                                                                                catch (RuntimeException v1) {
-                                                                                    throw GA.a(v1);
-                                                                                }
-                                                                                v2 = var2_2;
-                                                                                if (var6_7 != null) break block90;
-                                                                            }
-                                                                            catch (RuntimeException v3) {
-                                                                                throw GA.a(v3);
-                                                                            }
-                                                                            if (v2) break block91;
-                                                                        }
-                                                                        catch (RuntimeException v4) {
-                                                                            throw GA.a(v4);
-                                                                        }
-                                                                        v2 = var3_3;
-                                                                        if (var6_7 != null) break block90;
-                                                                    }
-                                                                    catch (RuntimeException v5) {
-                                                                        throw GA.a(v5);
-                                                                    }
-                                                                    if (v2) break block91;
-                                                                }
-                                                                catch (RuntimeException v6) {
-                                                                    throw GA.a(v6);
-                                                                }
-                                                                GA.g.n(var0, var7_6);
-                                                                if (var6_7 == null) break block92;
-                                                            }
-                                                            catch (RuntimeException v7) {
-                                                                throw GA.a(v7);
-                                                            }
-                                                        }
-                                                        v2 = var2_2;
-                                                    }
-                                                    catch (RuntimeException v8) {
-                                                        throw GA.a(v8);
-                                                    }
-                                                }
-                                                try {
-                                                    block94: {
-                                                        try {
-                                                            try {
-                                                                try {
-                                                                    try {
-                                                                        try {
-                                                                            try {
-                                                                                if (var6_7 != null) break block93;
-                                                                                if (!v2) break block94;
-                                                                            }
-                                                                            catch (RuntimeException v9) {
-                                                                                throw GA.a(v9);
-                                                                            }
-                                                                            v2 = var3_3;
-                                                                            if (var6_7 != null) break block93;
-                                                                        }
-                                                                        catch (RuntimeException v10) {
-                                                                            throw GA.a(v10);
-                                                                        }
-                                                                        if (v2) break block94;
-                                                                    }
-                                                                    catch (RuntimeException v11) {
-                                                                        throw GA.a(v11);
-                                                                    }
-                                                                    v2 = var5_5;
-                                                                    if (var6_7 != null) break block93;
-                                                                }
-                                                                catch (RuntimeException v12) {
-                                                                    throw GA.a(v12);
-                                                                }
-                                                                if (!v2) break block94;
-                                                            }
-                                                            catch (RuntimeException v13) {
-                                                                throw GA.a(v13);
-                                                            }
-                                                            GA.M.n(var0, var7_6);
-                                                            if (var6_7 == null) break block92;
-                                                        }
-                                                        catch (RuntimeException v14) {
-                                                            throw GA.a(v14);
-                                                        }
-                                                    }
-                                                    v2 = var2_2;
-                                                }
-                                                catch (RuntimeException v15) {
-                                                    throw GA.a(v15);
-                                                }
-                                            }
-                                            try {
-                                                block96: {
-                                                    try {
-                                                        try {
-                                                            try {
-                                                                try {
-                                                                    try {
-                                                                        try {
-                                                                            if (var6_7 != null) break block95;
-                                                                            if (v2) break block96;
-                                                                        }
-                                                                        catch (RuntimeException v16) {
-                                                                            throw GA.a(v16);
-                                                                        }
-                                                                        v2 = var3_3;
-                                                                        if (var6_7 != null) break block95;
-                                                                    }
-                                                                    catch (RuntimeException v17) {
-                                                                        throw GA.a(v17);
-                                                                    }
-                                                                    if (!v2) break block96;
-                                                                }
-                                                                catch (RuntimeException v18) {
-                                                                    throw GA.a(v18);
-                                                                }
-                                                                v2 = var5_5;
-                                                                if (var6_7 != null) break block95;
-                                                            }
-                                                            catch (RuntimeException v19) {
-                                                                throw GA.a(v19);
-                                                            }
-                                                            if (!v2) break block96;
-                                                        }
-                                                        catch (RuntimeException v20) {
-                                                            throw GA.a(v20);
-                                                        }
-                                                        GA.l.n(var0, var7_6);
-                                                        if (var6_7 == null) break block92;
-                                                    }
-                                                    catch (RuntimeException v21) {
-                                                        throw GA.a(v21);
-                                                    }
-                                                }
-                                                v2 = var2_2;
-                                            }
-                                            catch (RuntimeException v22) {
-                                                throw GA.a(v22);
-                                            }
-                                        }
-                                        try {
-                                            if (var6_7 != null) break block97;
-                                            if (!v2) break block92;
-                                        }
-                                        catch (RuntimeException v23) {
-                                            throw GA.a(v23);
-                                        }
-                                        v2 = var3_3;
-                                    }
-                                    try {
-                                        if (var6_7 != null) break block98;
-                                        if (!v2) break block92;
-                                    }
-                                    catch (RuntimeException v24) {
-                                        throw GA.a(v24);
-                                    }
-                                    v2 = var5_5;
-                                }
-                                try {
-                                    try {
-                                        block99: {
-                                            try {
-                                                if (!v2) break block99;
-                                                GA.z.n(var0, var7_6);
-                                                if (var6_7 == null) break block92;
-                                            }
-                                            catch (RuntimeException v25) {
-                                                throw GA.a(v25);
-                                            }
-                                        }
-                                        GA.V.n(var0, var7_6);
-                                        if (var6_7 == null) break block92;
-                                    }
-                                    catch (RuntimeException v26) {
-                                        throw GA.a(v26);
-                                    }
-lbl160:
-                                    // 2 sources
-
-                                    v0 = var2_2;
-                                }
-                                catch (RuntimeException v27) {
-                                    throw GA.a(v27);
-                                }
-                            }
-                            try {
-                                block101: {
-                                    try {
-                                        try {
-                                            try {
-                                                try {
-                                                    try {
-                                                        try {
-                                                            if (var6_7 != null) break block100;
-                                                            if (!v0) break block101;
-                                                        }
-                                                        catch (RuntimeException v28) {
-                                                            throw GA.a(v28);
-                                                        }
-                                                        v0 = var3_3;
-                                                        if (var6_7 != null) break block100;
-                                                    }
-                                                    catch (RuntimeException v29) {
-                                                        throw GA.a(v29);
-                                                    }
-                                                    if (v0) break block101;
-                                                }
-                                                catch (RuntimeException v30) {
-                                                    throw GA.a(v30);
-                                                }
-                                                v0 = var5_5;
-                                                if (var6_7 != null) break block100;
-                                            }
-                                            catch (RuntimeException v31) {
-                                                throw GA.a(v31);
-                                            }
-                                            if (!v0) break block101;
-                                        }
-                                        catch (RuntimeException v32) {
-                                            throw GA.a(v32);
-                                        }
-                                        GA.j.n(var0, var7_6);
-                                        if (var6_7 == null) break block92;
-                                    }
-                                    catch (RuntimeException v33) {
-                                        throw GA.a(v33);
-                                    }
-                                }
-                                v0 = var2_2;
-                            }
-                            catch (RuntimeException v34) {
-                                throw GA.a(v34);
-                            }
-                        }
-                        try {
-                            block103: {
-                                try {
-                                    try {
-                                        try {
-                                            try {
-                                                try {
-                                                    try {
-                                                        if (var6_7 != null) break block102;
-                                                        if (v0) break block103;
-                                                    }
-                                                    catch (RuntimeException v35) {
-                                                        throw GA.a(v35);
-                                                    }
-                                                    v0 = var3_3;
-                                                    if (var6_7 != null) break block102;
-                                                }
-                                                catch (RuntimeException v36) {
-                                                    throw GA.a(v36);
-                                                }
-                                                if (!v0) break block103;
-                                            }
-                                            catch (RuntimeException v37) {
-                                                throw GA.a(v37);
-                                            }
-                                            v0 = var5_5;
-                                            if (var6_7 != null) break block102;
-                                        }
-                                        catch (RuntimeException v38) {
-                                            throw GA.a(v38);
-                                        }
-                                        if (!v0) break block103;
-                                    }
-                                    catch (RuntimeException v39) {
-                                        throw GA.a(v39);
-                                    }
-                                    GA.F.n(var0, var7_6);
-                                    if (var6_7 == null) break block92;
-                                }
-                                catch (RuntimeException v40) {
-                                    throw GA.a(v40);
-                                }
-                            }
-                            v0 = var2_2;
-                        }
-                        catch (RuntimeException v41) {
-                            throw GA.a(v41);
-                        }
-                    }
-                    try {
-                        if (var6_7 != null) break block104;
-                        if (!v0) break block92;
-                    }
-                    catch (RuntimeException v42) {
-                        throw GA.a(v42);
-                    }
-                    v0 = var3_3;
-                }
-                try {
-                    if (var6_7 != null) break block105;
-                    if (!v0) break block92;
-                }
-                catch (RuntimeException v43) {
-                    throw GA.a(v43);
-                }
-                v0 = var5_5;
-            }
             try {
-                block106: {
-                    try {
-                        if (!v0) break block106;
-                        GA.B.n(var0, var7_6);
-                        if (var6_7 == null) break block92;
-                    }
-                    catch (RuntimeException v44) {
-                        throw GA.a(v44);
-                    }
-                }
-                GA.C.n(var0, var7_6);
+               var29 = var3;
+               var10001 = a(29499, 4558395549346877016L);
+            } catch (RuntimeException var19) {
+               boolean var42 = false;
+               throw a(var19);
             }
-            catch (RuntimeException v45) {
-                throw GA.a(v45);
+         }
+
+         label246: {
+            label225: {
+               try {
+                  if (var4 != null) {
+                     break label246;
+                  }
+
+                  if (var29 != var10001) {
+                     break label225;
+                  }
+               } catch (RuntimeException var18) {
+                  throw a(var18);
+               }
+
+               var6 = new java.awt.geom.Ellipse2D.Double((double)(var2.x - o), (double)(var2.y + var2.height / 2 - o), (double)(o * 2), (double)(o * 2));
+
+               try {
+                  if (var4 == null) {
+                     break label221;
+                  }
+               } catch (RuntimeException var17) {
+                  boolean var43 = false;
+                  throw a(var17);
+               }
             }
-        }
-    }
 
-    public static void f(Graphics2D graphics2D, Rectangle rectangle, int n10) {
-        rectangle = rv_2.q(rectangle);
-        Rectangle rectangle2 = GA.Y(rectangle);
-        GA.r(n10).n(graphics2D, rectangle2);
-    }
-
-    public static void k(Graphics2D graphics2D, Point point) {
-        GA.j(graphics2D, point.x, point.y);
-    }
-
-    public static void j(Graphics2D graphics2D, int n10, int n11) {
-        graphics2D.drawImage(x.getImage(), n10 - x.getIconWidth() / 2, n11 - x.getIconHeight() / 2, null);
-    }
-
-    private static Rectangle Y(Rectangle rectangle) {
-        return new Rectangle(rectangle.x - a - U, rectangle.y - a - U, rectangle.width + a * 2 + U * 2, rectangle.height + a * 2 + U * 2);
-    }
-
-    private static pf_1 r(int n10) {
-        block5: {
-            Integer n11;
-            Map map;
-            block4: {
-                String string = FV.D();
-                try {
-                    try {
-                        map = q;
-                        n11 = n10;
-                        if (string != null) break block4;
-                        if (!map.containsKey(n11)) break block5;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    map = q;
-                    n11 = n10;
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
+            try {
+               var29 = var3;
+               var10001 = 3;
+            } catch (RuntimeException var16) {
+               boolean var44 = false;
+               throw a(var16);
             }
-            return (pf_1)map.get(n11);
-        }
-        pf_1 pf_12 = new pf_1(GA.class.getResource(GA.a(-31920, 24707) + n10 + GA.a(-31917, -13296)));
-        q.put(n10, pf_12);
-        return pf_12;
-    }
+         }
 
-    public static void h(Graphics2D graphics2D, BufferedImage bufferedImage, BufferedImage bufferedImage2, Shape shape, Shape shape2) {
-        Object object = RV.X(graphics2D);
-        Rectangle rectangle = shape.getBounds();
-        graphics2D.setPaint(new TexturePaint(bufferedImage, new Rectangle(rectangle.getLocation(), new Dimension(bufferedImage.getWidth(), bufferedImage.getHeight()))));
-        graphics2D.fill(shape);
-        Shape shape3 = graphics2D.getClip();
-        Area area = new Area(shape3);
-        area.intersect(new Area(shape2));
-        graphics2D.setClip(area);
-        graphics2D.setPaint(new TexturePaint(bufferedImage2, new Rectangle(rectangle.getLocation(), new Dimension(bufferedImage2.getWidth(), bufferedImage2.getHeight()))));
-        graphics2D.fill(shape2);
-        RV.Y(graphics2D, shape2, Color.BLACK, 4);
-        graphics2D.setClip(shape3);
-        graphics2D.setPaint(Color.DARK_GRAY);
-        graphics2D.draw(shape2);
-        RV.X(graphics2D, object);
-    }
+         label247: {
+            label226: {
+               try {
+                  if (var4 != null) {
+                     break label247;
+                  }
 
-    public static void g(Graphics2D graphics2D, String string) {
-        GA.v(graphics2D, string, Color.LIGHT_GRAY);
-    }
+                  if (var29 != var10001) {
+                     break label226;
+                  }
+               } catch (RuntimeException var15) {
+                  throw a(var15);
+               }
 
-    public static void v(Graphics2D graphics2D, String string, Color color) {
-        GA.M(graphics2D, string, P9.M(color), 2, -2.0, -1.0, true);
-    }
+               var6 = new java.awt.geom.Ellipse2D.Double(
+                  (double)(var2.x + var2.width - o), (double)(var2.y + var2.height / 2 - o), (double)(o * 2), (double)(o * 2)
+               );
 
-    public static void X(Graphics2D graphics2D, String string, Color color) {
-        GA.M(graphics2D, string, P9.M(color), 2, -2.0, -2.0, false);
-    }
-
-    public static void M(Graphics2D graphics2D, String string, Color color, int n10, double d2, double d3, boolean bl) {
-        block22: {
-            int n11;
-            float f10;
-            Color color2;
-            Composite composite;
-            String string2;
-            block20: {
-                block21: {
-                    block18: {
-                        block19: {
-                            float f11 = 0.8f;
-                            string2 = FV.D();
-                            composite = graphics2D.getComposite();
-                            color2 = graphics2D.getColor();
-                            f10 = 0.4f;
-                            try {
-                                try {
-                                    try {
-                                        n11 = composite instanceof AlphaComposite;
-                                        if (string2 != null) break block18;
-                                        if (n11 == 0) break block19;
-                                    }
-                                    catch (RuntimeException runtimeException) {
-                                        throw GA.a(runtimeException);
-                                    }
-                                    n11 = ((AlphaComposite)composite).getRule();
-                                    if (string2 != null) break block18;
-                                }
-                                catch (RuntimeException runtimeException) {
-                                    throw GA.a(runtimeException);
-                                }
-                                if (n11 != 3) break block19;
-                            }
-                            catch (RuntimeException runtimeException) {
-                                throw GA.a(runtimeException);
-                            }
-                            f10 = Math.min(((AlphaComposite)composite).getAlpha(), f10);
-                        }
-                        graphics2D.setColor(color);
-                        graphics2D.translate(d2, d3);
-                        n11 = bl ? 1 : 0;
-                    }
-                    try {
-                        try {
-                            if (string2 != null) break block20;
-                            if (n11 == 0) break block21;
-                        }
-                        catch (RuntimeException runtimeException) {
-                            throw GA.a(runtimeException);
-                        }
-                        n11 = n10 - 1;
-                        break block20;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                }
-                n11 = n10;
+               try {
+                  if (var4 == null) {
+                     break label221;
+                  }
+               } catch (RuntimeException var14) {
+                  boolean var45 = false;
+                  throw a(var14);
+               }
             }
-            int n12 = n11;
-            int n13 = -n10;
-            block14: while (true) {
-                int n14 = n13;
-                block15: while (n14 <= n12) {
-                    if (string2 != null) break block22;
-                    int n15 = -n10;
-                    while (n15 <= n12) {
-                        block25: {
-                            float f12;
-                            float f13;
-                            block23: {
-                                block24: {
-                                    double d4 = n13 * n13 + n15 * n15;
-                                    f13 = 0.8f;
-                                    double d5 = d4 - 0.0;
-                                    n14 = d5 == 0.0 ? 0 : (d5 > 0.0 ? 1 : -1);
-                                    if (string2 != null) continue block15;
-                                    try {
-                                        if (string2 != null) break block23;
-                                        if (n14 <= 0) break block24;
-                                    }
-                                    catch (RuntimeException runtimeException) {
-                                        throw GA.a(runtimeException);
-                                    }
-                                    f13 = (float)(1.0 / (d4 * (double)n10 * (double)0.8f));
-                                }
-                                f13 *= f10;
-                                try {
-                                    if (string2 != null) break block25;
-                                    float f14 = f13 - 1.0f;
-                                    f12 = f14 == 0.0f ? 0 : (f14 > 0.0f ? 1 : -1);
-                                }
-                                catch (RuntimeException runtimeException) {
-                                    throw GA.a(runtimeException);
-                                }
-                            }
-                            if (f12 > 0) {
-                                f13 = 1.0f;
-                            }
-                            graphics2D.setComposite(AlphaComposite.getInstance(3, f13));
-                            graphics2D.drawString(string, n13 + n10, n15 + n10);
-                            ++n15;
-                        }
-                        if (string2 == null) continue;
-                    }
-                    ++n13;
-                    if (string2 == null) continue block14;
-                }
-                break;
+
+            try {
+               var29 = var3;
+               var10001 = a(2919, 3558482257251874307L);
+            } catch (RuntimeException var13) {
+               boolean var46 = false;
+               throw a(var13);
             }
-            graphics2D.translate(-d2, -d3);
-            graphics2D.setComposite(composite);
-            graphics2D.setColor(color2);
-            graphics2D.drawString(string, 0, 0);
-        }
-    }
+         }
 
-    public static void i(Graphics2D graphics2D, int n10, int n11, int n12, int n13, int n14, int n15) {
-        GA.W(graphics2D, n10, n11, n12, n13, n14, n15, 0.0f);
-    }
+         label248: {
+            label227: {
+               try {
+                  if (var4 != null) {
+                     break label248;
+                  }
 
-    public static void W(Graphics2D graphics2D, int n10, int n11, int n12, int n13, int n14, int n15, float f10) {
-        int n16;
-        block10: {
-            block11: {
-                block9: {
-                    int n17;
-                    block8: {
-                        String string = FV.D();
-                        try {
-                            try {
-                                try {
-                                    n16 = n12;
-                                    n17 = n10;
-                                    if (string != null) break block8;
-                                    if (n16 < n17) break block9;
-                                }
-                                catch (RuntimeException runtimeException) {
-                                    throw GA.a(runtimeException);
-                                }
-                                n16 = n13;
-                                if (string != null) break block10;
-                            }
-                            catch (RuntimeException runtimeException) {
-                                throw GA.a(runtimeException);
-                            }
-                            n17 = n11;
-                        }
-                        catch (RuntimeException runtimeException) {
-                            throw GA.a(runtimeException);
-                        }
-                    }
-                    if (n16 >= n17) break block11;
-                }
-                return;
+                  if (var29 != var10001) {
+                     break label227;
+                  }
+               } catch (RuntimeException var12) {
+                  throw a(var12);
+               }
+
+               var6 = new java.awt.geom.Ellipse2D.Double((double)(var2.x - o), (double)(var2.y + var2.height - o), (double)(o * 2), (double)(o * 2));
+
+               try {
+                  if (var4 == null) {
+                     break label221;
+                  }
+               } catch (RuntimeException var11) {
+                  boolean var47 = false;
+                  throw a(var11);
+               }
             }
-            n16 = 2;
-        }
-        float[] fArray = new float[n16];
-        fArray[0] = n14;
-        fArray[1] = n15;
-        float[] fArray2 = fArray;
-        BasicStroke basicStroke = new BasicStroke(1.0f, 1, 1, 10.0f, fArray2, f10);
-        Stroke stroke = RV.M(graphics2D, basicStroke);
-        graphics2D.drawRect(n10, n11, n12 - n10, n13 - n11);
-        RV.p(graphics2D, stroke);
-    }
 
-    public static GeneralPath f(int n10, int n11, int n12, int n13, int n14, int n15) {
-        GeneralPath generalPath = new GeneralPath(0);
-        generalPath.moveTo(n10, n11 + n15);
-        generalPath.quadTo(n10, n11, n10 + n14, n11);
-        generalPath.lineTo(n10 + n12 - n14, n11);
-        generalPath.quadTo(n10 + n12, n11, n10 + n12, n11 + n15);
-        generalPath.lineTo(n10 + n12, n11 + n13 - n15);
-        generalPath.quadTo(n10 + n12, n11 + n13, n10 + n12 - n14, n11 + n13);
-        generalPath.lineTo(n10 + n14, n11 + n13);
-        generalPath.quadTo(n10, n11 + n13, n10, n11 + n13 - n15);
-        generalPath.closePath();
-        return generalPath;
-    }
-
-    public static Point A(FontMetrics fontMetrics, String string) {
-        return new Point(GA.C(fontMetrics, string), GA.d(fontMetrics));
-    }
-
-    public static int C(FontMetrics fontMetrics, String string) {
-        return -fontMetrics.stringWidth(string) / 2;
-    }
-
-    public static int d(FontMetrics fontMetrics) {
-        return (fontMetrics.getAscent() - fontMetrics.getLeading() - fontMetrics.getDescent()) / 2;
-    }
-
-    public static boolean i(Component component) {
-        block3: {
-            L0 l0;
-            block2: {
-                L0 l02 = GA.J(component);
-                String string = FV.D();
-                try {
-                    l0 = l02;
-                    if (string != null) break block2;
-                    if (l0 == null) break block3;
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
-                l0 = l02;
+            try {
+               var29 = var3;
+               var10001 = 5;
+            } catch (RuntimeException var10) {
+               boolean var48 = false;
+               throw a(var10);
             }
-            l0.h();
-            return true;
-        }
-        return false;
-    }
+         }
 
-    public static L0 J(Component component) {
-        block13: {
-            ComponentUI componentUI;
-            block14: {
-                ComponentUI componentUI2;
-                String string;
-                block12: {
-                    Component component2;
-                    block10: {
-                        block11: {
-                            string = FV.D();
-                            try {
-                                try {
-                                    component2 = component;
-                                    if (string != null) break block10;
-                                    if (!(component2 instanceof L0)) break block11;
-                                }
-                                catch (RuntimeException runtimeException) {
-                                    throw GA.a(runtimeException);
-                                }
-                                return (L0)((Object)component);
-                            }
-                            catch (RuntimeException runtimeException) {
-                                throw GA.a(runtimeException);
-                            }
-                        }
-                        component2 = component;
-                    }
-                    componentUI2 = GA.Z(component2);
-                    try {
-                        componentUI = componentUI2;
-                        if (string != null) break block12;
-                        if (componentUI == null) break block13;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    componentUI = componentUI2;
-                }
-                try {
-                    try {
-                        if (string != null) break block14;
-                        if (!(componentUI instanceof L0)) break block13;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    componentUI = componentUI2;
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
+         label249: {
+            label228: {
+               try {
+                  if (var4 != null) {
+                     break label249;
+                  }
+
+                  if (var29 != var10001) {
+                     break label228;
+                  }
+               } catch (RuntimeException var9) {
+                  throw a(var9);
+               }
+
+               var6 = new java.awt.geom.Ellipse2D.Double(
+                  (double)(var2.x + var2.width / 2 - o), (double)(var2.y + var2.height - o), (double)(o * 2), (double)(o * 2)
+               );
+
+               try {
+                  if (var4 == null) {
+                     break label221;
+                  }
+               } catch (RuntimeException var8) {
+                  boolean var49 = false;
+                  throw a(var8);
+               }
             }
-            return (L0)((Object)componentUI);
-        }
-        return null;
-    }
 
-    public static W2 e(Component component) {
-        block13: {
-            ComponentUI componentUI;
-            block14: {
-                ComponentUI componentUI2;
-                String string;
-                block12: {
-                    Component component2;
-                    block10: {
-                        block11: {
-                            string = FV.D();
-                            try {
-                                try {
-                                    component2 = component;
-                                    if (string != null) break block10;
-                                    if (!(component2 instanceof W2)) break block11;
-                                }
-                                catch (RuntimeException runtimeException) {
-                                    throw GA.a(runtimeException);
-                                }
-                                return (W2)((Object)component);
-                            }
-                            catch (RuntimeException runtimeException) {
-                                throw GA.a(runtimeException);
-                            }
-                        }
-                        component2 = component;
-                    }
-                    componentUI2 = GA.Z(component2);
-                    try {
-                        componentUI = componentUI2;
-                        if (string != null) break block12;
-                        if (componentUI == null) break block13;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    componentUI = componentUI2;
-                }
-                try {
-                    try {
-                        if (string != null) break block14;
-                        if (!(componentUI instanceof W2)) break block13;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    componentUI = componentUI2;
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
+            try {
+               var29 = var3;
+               var10001 = 4;
+            } catch (RuntimeException var7) {
+               boolean var50 = false;
+               throw a(var7);
             }
-            return (W2)((Object)componentUI);
-        }
-        return null;
-    }
+         }
 
-    public static D7 y(Component component) {
-        block13: {
-            ComponentUI componentUI;
-            block14: {
-                ComponentUI componentUI2;
-                String string;
-                block12: {
-                    Component component2;
-                    block10: {
-                        block11: {
-                            string = FV.D();
-                            try {
-                                try {
-                                    component2 = component;
-                                    if (string != null) break block10;
-                                    if (!(component2 instanceof D7)) break block11;
-                                }
-                                catch (RuntimeException runtimeException) {
-                                    throw GA.a(runtimeException);
-                                }
-                                return (D7)((Object)component);
-                            }
-                            catch (RuntimeException runtimeException) {
-                                throw GA.a(runtimeException);
-                            }
-                        }
-                        component2 = component;
-                    }
-                    componentUI2 = GA.Z(component2);
-                    try {
-                        componentUI = componentUI2;
-                        if (string != null) break block12;
-                        if (componentUI == null) break block13;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    componentUI = componentUI2;
-                }
-                try {
-                    try {
-                        if (string != null) break block14;
-                        if (!(componentUI instanceof D7)) break block13;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                    componentUI = componentUI2;
-                }
-                catch (RuntimeException runtimeException) {
-                    throw GA.a(runtimeException);
-                }
+         if (var29 == var10001) {
+            var6 = new java.awt.geom.Ellipse2D.Double((double)(var2.x + var2.width - o), (double)(var2.y + var2.height - o), (double)(o * 2), (double)(o * 2));
+            if (var4 == null) {
+               break label221;
             }
-            return (D7)((Object)componentUI);
-        }
-        return null;
-    }
+         }
 
-    public static Rectangle p(O_ o_, ne_2 ne_22) {
-        int n10;
-        int n11;
-        ne_2 ne_23;
-        block6: {
-            block5: {
-                O_ o_2;
-                block4: {
-                    String string = FV.D();
-                    try {
-                        try {
-                            ne_23 = ne_22;
-                            n11 = 0;
-                            o_2 = o_;
-                            if (string != null) break block4;
-                            if (o_2.getIcon() == null) break block5;
-                        }
-                        catch (RuntimeException runtimeException) {
-                            throw GA.a(runtimeException);
-                        }
-                        o_2 = o_;
-                    }
-                    catch (RuntimeException runtimeException) {
-                        throw GA.a(runtimeException);
-                    }
-                }
-                n10 = o_2.getIconTextGap();
-                break block6;
+         var6 = null;
+      }
+
+      var0.setPaint(var1);
+      var0.fill(var6);
+      RV.X(var0, var5);
+   }
+
+   public static void z(Graphics2D var0, Rectangle var1, boolean var2, boolean var3, boolean var4) {
+      C(var0, var1, var2, var3, var4, true);
+   }
+
+   public static void C(Graphics2D param0, Rectangle param1, boolean param2, boolean param3, boolean param4, boolean param5) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: aload 1
+      // 001: invokestatic com/rv_4.q (Ljava/awt/Rectangle;)Ljava/awt/Rectangle;
+      // 004: astore 1
+      // 005: invokestatic com/FV.D ()Ljava/lang/String;
+      // 008: aload 1
+      // 009: invokestatic com/GA.Y (Ljava/awt/Rectangle;)Ljava/awt/Rectangle;
+      // 00c: astore 7
+      // 00e: astore 6
+      // 010: iload 4
+      // 012: aload 6
+      // 014: ifnonnull 178
+      // 017: ifeq 170
+      // 01a: goto 021
+      // 01d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 020: athrow
+      // 021: iload 2
+      // 022: aload 6
+      // 024: ifnonnull 06c
+      // 027: goto 02e
+      // 02a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 02d: athrow
+      // 02e: ifne 064
+      // 031: goto 038
+      // 034: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 037: athrow
+      // 038: iload 3
+      // 039: aload 6
+      // 03b: ifnonnull 06c
+      // 03e: goto 045
+      // 041: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 044: athrow
+      // 045: ifne 064
+      // 048: goto 04f
+      // 04b: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 04e: athrow
+      // 04f: getstatic com/GA.g Lcom/pF_3;
+      // 052: aload 0
+      // 053: aload 7
+      // 055: invokevirtual com/pF_3.n (Ljava/awt/Graphics2D;Ljava/awt/Rectangle;)V
+      // 058: aload 6
+      // 05a: ifnull 277
+      // 05d: goto 064
+      // 060: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 063: athrow
+      // 064: iload 2
+      // 065: goto 06c
+      // 068: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 06b: athrow
+      // 06c: aload 6
+      // 06e: ifnonnull 0c7
+      // 071: ifeq 0bf
+      // 074: goto 07b
+      // 077: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 07a: athrow
+      // 07b: iload 3
+      // 07c: aload 6
+      // 07e: ifnonnull 0c7
+      // 081: goto 088
+      // 084: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 087: athrow
+      // 088: ifne 0bf
+      // 08b: goto 092
+      // 08e: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 091: athrow
+      // 092: iload 5
+      // 094: aload 6
+      // 096: ifnonnull 0c7
+      // 099: goto 0a0
+      // 09c: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 09f: athrow
+      // 0a0: ifeq 0bf
+      // 0a3: goto 0aa
+      // 0a6: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0a9: athrow
+      // 0aa: getstatic com/GA.M Lcom/pF_3;
+      // 0ad: aload 0
+      // 0ae: aload 7
+      // 0b0: invokevirtual com/pF_3.n (Ljava/awt/Graphics2D;Ljava/awt/Rectangle;)V
+      // 0b3: aload 6
+      // 0b5: ifnull 277
+      // 0b8: goto 0bf
+      // 0bb: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0be: athrow
+      // 0bf: iload 2
+      // 0c0: goto 0c7
+      // 0c3: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0c6: athrow
+      // 0c7: aload 6
+      // 0c9: ifnonnull 122
+      // 0cc: ifne 11a
+      // 0cf: goto 0d6
+      // 0d2: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0d5: athrow
+      // 0d6: iload 3
+      // 0d7: aload 6
+      // 0d9: ifnonnull 122
+      // 0dc: goto 0e3
+      // 0df: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0e2: athrow
+      // 0e3: ifeq 11a
+      // 0e6: goto 0ed
+      // 0e9: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0ec: athrow
+      // 0ed: iload 5
+      // 0ef: aload 6
+      // 0f1: ifnonnull 122
+      // 0f4: goto 0fb
+      // 0f7: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0fa: athrow
+      // 0fb: ifeq 11a
+      // 0fe: goto 105
+      // 101: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 104: athrow
+      // 105: getstatic com/GA.l Lcom/pF_3;
+      // 108: aload 0
+      // 109: aload 7
+      // 10b: invokevirtual com/pF_3.n (Ljava/awt/Graphics2D;Ljava/awt/Rectangle;)V
+      // 10e: aload 6
+      // 110: ifnull 277
+      // 113: goto 11a
+      // 116: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 119: athrow
+      // 11a: iload 2
+      // 11b: goto 122
+      // 11e: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 121: athrow
+      // 122: aload 6
+      // 124: ifnonnull 132
+      // 127: ifeq 277
+      // 12a: goto 131
+      // 12d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 130: athrow
+      // 131: iload 3
+      // 132: aload 6
+      // 134: ifnonnull 143
+      // 137: ifeq 277
+      // 13a: goto 141
+      // 13d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 140: athrow
+      // 141: iload 5
+      // 143: ifeq 15b
+      // 146: getstatic com/GA.z Lcom/pF_3;
+      // 149: aload 0
+      // 14a: aload 7
+      // 14c: invokevirtual com/pF_3.n (Ljava/awt/Graphics2D;Ljava/awt/Rectangle;)V
+      // 14f: aload 6
+      // 151: ifnull 277
+      // 154: goto 15b
+      // 157: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 15a: athrow
+      // 15b: getstatic com/GA.V Lcom/pF_3;
+      // 15e: aload 0
+      // 15f: aload 7
+      // 161: invokevirtual com/pF_3.n (Ljava/awt/Graphics2D;Ljava/awt/Rectangle;)V
+      // 164: aload 6
+      // 166: ifnull 277
+      // 169: goto 170
+      // 16c: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 16f: athrow
+      // 170: iload 2
+      // 171: goto 178
+      // 174: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 177: athrow
+      // 178: aload 6
+      // 17a: ifnonnull 1d3
+      // 17d: ifeq 1cb
+      // 180: goto 187
+      // 183: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 186: athrow
+      // 187: iload 3
+      // 188: aload 6
+      // 18a: ifnonnull 1d3
+      // 18d: goto 194
+      // 190: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 193: athrow
+      // 194: ifne 1cb
+      // 197: goto 19e
+      // 19a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 19d: athrow
+      // 19e: iload 5
+      // 1a0: aload 6
+      // 1a2: ifnonnull 1d3
+      // 1a5: goto 1ac
+      // 1a8: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1ab: athrow
+      // 1ac: ifeq 1cb
+      // 1af: goto 1b6
+      // 1b2: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1b5: athrow
+      // 1b6: getstatic com/GA.j Lcom/pF_3;
+      // 1b9: aload 0
+      // 1ba: aload 7
+      // 1bc: invokevirtual com/pF_3.n (Ljava/awt/Graphics2D;Ljava/awt/Rectangle;)V
+      // 1bf: aload 6
+      // 1c1: ifnull 277
+      // 1c4: goto 1cb
+      // 1c7: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1ca: athrow
+      // 1cb: iload 2
+      // 1cc: goto 1d3
+      // 1cf: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1d2: athrow
+      // 1d3: aload 6
+      // 1d5: ifnonnull 22e
+      // 1d8: ifne 226
+      // 1db: goto 1e2
+      // 1de: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1e1: athrow
+      // 1e2: iload 3
+      // 1e3: aload 6
+      // 1e5: ifnonnull 22e
+      // 1e8: goto 1ef
+      // 1eb: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1ee: athrow
+      // 1ef: ifeq 226
+      // 1f2: goto 1f9
+      // 1f5: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1f8: athrow
+      // 1f9: iload 5
+      // 1fb: aload 6
+      // 1fd: ifnonnull 22e
+      // 200: goto 207
+      // 203: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 206: athrow
+      // 207: ifeq 226
+      // 20a: goto 211
+      // 20d: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 210: athrow
+      // 211: getstatic com/GA.F Lcom/pF_3;
+      // 214: aload 0
+      // 215: aload 7
+      // 217: invokevirtual com/pF_3.n (Ljava/awt/Graphics2D;Ljava/awt/Rectangle;)V
+      // 21a: aload 6
+      // 21c: ifnull 277
+      // 21f: goto 226
+      // 222: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 225: athrow
+      // 226: iload 2
+      // 227: goto 22e
+      // 22a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 22d: athrow
+      // 22e: aload 6
+      // 230: ifnonnull 23e
+      // 233: ifeq 277
+      // 236: goto 23d
+      // 239: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 23c: athrow
+      // 23d: iload 3
+      // 23e: aload 6
+      // 240: ifnonnull 24f
+      // 243: ifeq 277
+      // 246: goto 24d
+      // 249: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 24c: athrow
+      // 24d: iload 5
+      // 24f: ifeq 267
+      // 252: getstatic com/GA.B Lcom/pF_3;
+      // 255: aload 0
+      // 256: aload 7
+      // 258: invokevirtual com/pF_3.n (Ljava/awt/Graphics2D;Ljava/awt/Rectangle;)V
+      // 25b: aload 6
+      // 25d: ifnull 277
+      // 260: goto 267
+      // 263: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 266: athrow
+      // 267: getstatic com/GA.C Lcom/pF_3;
+      // 26a: aload 0
+      // 26b: aload 7
+      // 26d: invokevirtual com/pF_3.n (Ljava/awt/Graphics2D;Ljava/awt/Rectangle;)V
+      // 270: goto 277
+      // 273: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 276: athrow
+      // 277: return
+   }
+
+   public static void f(Graphics2D var0, Rectangle var1, int var2) {
+      var1 = rv_4.q(var1);
+      Rectangle var3 = Y(var1);
+      r(var2).n(var0, var3);
+   }
+
+   public static void k(Graphics2D var0, Point var1) {
+      j(var0, var1.x, var1.y);
+   }
+
+   public static void j(Graphics2D var0, int var1, int var2) {
+      var0.drawImage(x.getImage(), var1 - x.getIconWidth() / 2, var2 - x.getIconHeight() / 2, null);
+   }
+
+   private static Rectangle Y(Rectangle var0) {
+      return new Rectangle(var0.x - a - U, var0.y - a - U, var0.width + a * 2 + U * 2, var0.height + a * 2 + U * 2);
+   }
+
+   private static pF_3 r(int param0) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 1
+      // 04: getstatic com/GA.q Ljava/util/Map;
+      // 07: iload 0
+      // 08: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 0b: aload 1
+      // 0c: ifnonnull 2c
+      // 0f: invokeinterface java/util/Map.containsKey (Ljava/lang/Object;)Z 2
+      // 14: ifeq 35
+      // 17: goto 1e
+      // 1a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1d: athrow
+      // 1e: getstatic com/GA.q Ljava/util/Map;
+      // 21: iload 0
+      // 22: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 25: goto 2c
+      // 28: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 2b: athrow
+      // 2c: invokeinterface java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object; 2
+      // 31: checkcast com/pF_3
+      // 34: areturn
+      // 35: new com/pF_3
+      // 38: dup
+      // 39: ldc com/GA
+      // 3b: new java/lang/StringBuilder
+      // 3e: dup
+      // 3f: invokespecial java/lang/StringBuilder.<init> ()V
+      // 42: sipush -31920
+      // 45: sipush 24707
+      // 48: invokestatic com/GA.a (II)Ljava/lang/String;
+      // 4b: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 4e: iload 0
+      // 4f: invokevirtual java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+      // 52: sipush -31917
+      // 55: sipush -13296
+      // 58: invokestatic com/GA.a (II)Ljava/lang/String;
+      // 5b: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 5e: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // 61: invokevirtual java/lang/Class.getResource (Ljava/lang/String;)Ljava/net/URL;
+      // 64: invokespecial com/pF_3.<init> (Ljava/net/URL;)V
+      // 67: astore 2
+      // 68: getstatic com/GA.q Ljava/util/Map;
+      // 6b: iload 0
+      // 6c: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 6f: aload 2
+      // 70: invokeinterface java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+      // 75: pop
+      // 76: aload 2
+      // 77: areturn
+   }
+
+   public static void h(Graphics2D var0, BufferedImage var1, BufferedImage var2, Shape var3, Shape var4) {
+      Object var5 = RV.X(var0);
+      Rectangle var6 = var3.getBounds();
+      var0.setPaint(new TexturePaint(var1, new Rectangle(var6.getLocation(), new Dimension(var1.getWidth(), var1.getHeight()))));
+      var0.fill(var3);
+      Shape var7 = var0.getClip();
+      Area var8 = new Area(var7);
+      var8.intersect(new Area(var4));
+      var0.setClip(var8);
+      var0.setPaint(new TexturePaint(var2, new Rectangle(var6.getLocation(), new Dimension(var2.getWidth(), var2.getHeight()))));
+      var0.fill(var4);
+      RV.Y(var0, var4, Color.BLACK, 4);
+      var0.setClip(var7);
+      var0.setPaint(Color.DARK_GRAY);
+      var0.draw(var4);
+      RV.X(var0, var5);
+   }
+
+   public static void g(Graphics2D var0, String var1) {
+      v(var0, var1, Color.LIGHT_GRAY);
+   }
+
+   public static void v(Graphics2D var0, String var1, Color var2) {
+      M(var0, var1, P9.M(var2), 2, -2.0, -1.0, true);
+   }
+
+   public static void X(Graphics2D var0, String var1, Color var2) {
+      M(var0, var1, P9.M(var2), 2, -2.0, -2.0, false);
+   }
+
+   public static void M(Graphics2D param0, String param1, Color param2, int param3, double param4, double param6, boolean param8) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/FV.D ()Ljava/lang/String;
+      // 003: ldc_w 0.8
+      // 006: fstore 10
+      // 008: astore 9
+      // 00a: aload 0
+      // 00b: invokevirtual java/awt/Graphics2D.getComposite ()Ljava/awt/Composite;
+      // 00e: astore 11
+      // 010: aload 0
+      // 011: invokevirtual java/awt/Graphics2D.getColor ()Ljava/awt/Color;
+      // 014: astore 12
+      // 016: ldc_w 0.4
+      // 019: fstore 13
+      // 01b: aload 11
+      // 01d: instanceof java/awt/AlphaComposite
+      // 020: aload 9
+      // 022: ifnonnull 06c
+      // 025: ifeq 05d
+      // 028: goto 02f
+      // 02b: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 02e: athrow
+      // 02f: aload 11
+      // 031: checkcast java/awt/AlphaComposite
+      // 034: invokevirtual java/awt/AlphaComposite.getRule ()I
+      // 037: aload 9
+      // 039: ifnonnull 06c
+      // 03c: goto 043
+      // 03f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 042: athrow
+      // 043: bipush 3
+      // 044: if_icmpne 05d
+      // 047: goto 04e
+      // 04a: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 04d: athrow
+      // 04e: aload 11
+      // 050: checkcast java/awt/AlphaComposite
+      // 053: invokevirtual java/awt/AlphaComposite.getAlpha ()F
+      // 056: fload 13
+      // 058: invokestatic java/lang/Math.min (FF)F
+      // 05b: fstore 13
+      // 05d: aload 0
+      // 05e: aload 2
+      // 05f: invokevirtual java/awt/Graphics2D.setColor (Ljava/awt/Color;)V
+      // 062: aload 0
+      // 063: dload 4
+      // 065: dload 6
+      // 067: invokevirtual java/awt/Graphics2D.translate (DD)V
+      // 06a: iload 8
+      // 06c: aload 9
+      // 06e: ifnonnull 085
+      // 071: ifeq 088
+      // 074: goto 07b
+      // 077: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 07a: athrow
+      // 07b: iload 3
+      // 07c: bipush 1
+      // 07d: isub
+      // 07e: goto 085
+      // 081: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 084: athrow
+      // 085: goto 089
+      // 088: iload 3
+      // 089: istore 14
+      // 08b: iload 3
+      // 08c: ineg
+      // 08d: istore 15
+      // 08f: iload 15
+      // 091: iload 14
+      // 093: if_icmpgt 123
+      // 096: aload 9
+      // 098: ifnonnull 140
+      // 09b: iload 3
+      // 09c: ineg
+      // 09d: istore 16
+      // 09f: iload 16
+      // 0a1: iload 14
+      // 0a3: if_icmpgt 11b
+      // 0a6: iload 15
+      // 0a8: iload 15
+      // 0aa: imul
+      // 0ab: iload 16
+      // 0ad: iload 16
+      // 0af: imul
+      // 0b0: iadd
+      // 0b1: i2d
+      // 0b2: dstore 17
+      // 0b4: ldc_w 0.8
+      // 0b7: fstore 19
+      // 0b9: dload 17
+      // 0bb: dconst_0
+      // 0bc: dcmpl
+      // 0bd: aload 9
+      // 0bf: ifnonnull 091
+      // 0c2: aload 9
+      // 0c4: ifnonnull 0f6
+      // 0c7: ifle 0df
+      // 0ca: goto 0d1
+      // 0cd: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0d0: athrow
+      // 0d1: dconst_1
+      // 0d2: dload 17
+      // 0d4: iload 3
+      // 0d5: i2d
+      // 0d6: dmul
+      // 0d7: ldc2_w 0.800000011920929
+      // 0da: dmul
+      // 0db: ddiv
+      // 0dc: d2f
+      // 0dd: fstore 19
+      // 0df: fload 19
+      // 0e1: fload 13
+      // 0e3: fmul
+      // 0e4: fstore 19
+      // 0e6: aload 9
+      // 0e8: ifnonnull 116
+      // 0eb: fload 19
+      // 0ed: fconst_1
+      // 0ee: fcmpl
+      // 0ef: goto 0f6
+      // 0f2: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 0f5: athrow
+      // 0f6: ifle 0fc
+      // 0f9: fconst_1
+      // 0fa: fstore 19
+      // 0fc: aload 0
+      // 0fd: bipush 3
+      // 0fe: fload 19
+      // 100: invokestatic java/awt/AlphaComposite.getInstance (IF)Ljava/awt/AlphaComposite;
+      // 103: invokevirtual java/awt/Graphics2D.setComposite (Ljava/awt/Composite;)V
+      // 106: aload 0
+      // 107: aload 1
+      // 108: iload 15
+      // 10a: iload 3
+      // 10b: iadd
+      // 10c: iload 16
+      // 10e: iload 3
+      // 10f: iadd
+      // 110: invokevirtual java/awt/Graphics2D.drawString (Ljava/lang/String;II)V
+      // 113: iinc 16 1
+      // 116: aload 9
+      // 118: ifnull 09f
+      // 11b: iinc 15 1
+      // 11e: aload 9
+      // 120: ifnull 08f
+      // 123: aload 0
+      // 124: dload 4
+      // 126: dneg
+      // 127: dload 6
+      // 129: dneg
+      // 12a: invokevirtual java/awt/Graphics2D.translate (DD)V
+      // 12d: aload 0
+      // 12e: aload 11
+      // 130: invokevirtual java/awt/Graphics2D.setComposite (Ljava/awt/Composite;)V
+      // 133: aload 0
+      // 134: aload 12
+      // 136: invokevirtual java/awt/Graphics2D.setColor (Ljava/awt/Color;)V
+      // 139: aload 0
+      // 13a: aload 1
+      // 13b: bipush 0
+      // 13c: bipush 0
+      // 13d: invokevirtual java/awt/Graphics2D.drawString (Ljava/lang/String;II)V
+      // 140: return
+   }
+
+   public static void i(Graphics2D var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+      W(var0, var1, var2, var3, var4, var5, var6, 0.0F);
+   }
+
+   public static void W(Graphics2D param0, int param1, int param2, int param3, int param4, int param5, int param6, float param7) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 8
+      // 05: iload 3
+      // 06: iload 1
+      // 07: aload 8
+      // 09: ifnonnull 2c
+      // 0c: if_icmplt 2f
+      // 0f: goto 16
+      // 12: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 15: athrow
+      // 16: iload 4
+      // 18: aload 8
+      // 1a: ifnonnull 31
+      // 1d: goto 24
+      // 20: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 23: athrow
+      // 24: iload 2
+      // 25: goto 2c
+      // 28: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 2b: athrow
+      // 2c: if_icmpge 30
+      // 2f: return
+      // 30: bipush 2
+      // 31: newarray 6
+      // 33: dup
+      // 34: bipush 0
+      // 35: iload 5
+      // 37: i2f
+      // 38: fastore
+      // 39: dup
+      // 3a: bipush 1
+      // 3b: iload 6
+      // 3d: i2f
+      // 3e: fastore
+      // 3f: astore 9
+      // 41: new java/awt/BasicStroke
+      // 44: dup
+      // 45: fconst_1
+      // 46: bipush 1
+      // 47: bipush 1
+      // 48: ldc_w 10.0
+      // 4b: aload 9
+      // 4d: fload 7
+      // 4f: invokespecial java/awt/BasicStroke.<init> (FIIF[FF)V
+      // 52: astore 10
+      // 54: aload 0
+      // 55: aload 10
+      // 57: invokestatic com/RV.M (Ljava/awt/Graphics2D;Ljava/awt/Stroke;)Ljava/awt/Stroke;
+      // 5a: astore 11
+      // 5c: aload 0
+      // 5d: iload 1
+      // 5e: iload 2
+      // 5f: iload 3
+      // 60: iload 1
+      // 61: isub
+      // 62: iload 4
+      // 64: iload 2
+      // 65: isub
+      // 66: invokevirtual java/awt/Graphics2D.drawRect (IIII)V
+      // 69: aload 0
+      // 6a: aload 11
+      // 6c: invokestatic com/RV.p (Ljava/awt/Graphics2D;Ljava/awt/Stroke;)V
+      // 6f: return
+   }
+
+   public static GeneralPath f(int var0, int var1, int var2, int var3, int var4, int var5) {
+      GeneralPath var6 = new GeneralPath(0);
+      var6.moveTo((float)var0, (float)(var1 + var5));
+      var6.quadTo((float)var0, (float)var1, (float)(var0 + var4), (float)var1);
+      var6.lineTo((float)(var0 + var2 - var4), (float)var1);
+      var6.quadTo((float)(var0 + var2), (float)var1, (float)(var0 + var2), (float)(var1 + var5));
+      var6.lineTo((float)(var0 + var2), (float)(var1 + var3 - var5));
+      var6.quadTo((float)(var0 + var2), (float)(var1 + var3), (float)(var0 + var2 - var4), (float)(var1 + var3));
+      var6.lineTo((float)(var0 + var4), (float)(var1 + var3));
+      var6.quadTo((float)var0, (float)(var1 + var3), (float)var0, (float)(var1 + var3 - var5));
+      var6.closePath();
+      return var6;
+   }
+
+   public static Point A(FontMetrics var0, String var1) {
+      return new Point(C(var0, var1), d(var0));
+   }
+
+   public static int C(FontMetrics var0, String var1) {
+      return -var0.stringWidth(var1) / 2;
+   }
+
+   public static int d(FontMetrics var0) {
+      return (var0.getAscent() - var0.getLeading() - var0.getDescent()) / 2;
+   }
+
+   public static boolean i(Component var0) {
+      String var10000 = com.FV.D();
+      com.L0 var2 = J(var0);
+      String var1 = var10000;
+
+      label22: {
+         try {
+            var4 = var2;
+            if (var1 != null) {
+               break label22;
             }
-            n10 = 0;
-        }
-        ne_23.d(n11, n10, 0, 0);
-        Rectangle rectangle = new Rectangle(0, 0, o_.getWidth(), o_.getHeight());
-        Insets insets = o_.getInsets();
-        rectangle.x += insets.left;
-        rectangle.y += insets.top;
-        rectangle.width -= insets.left + insets.right;
-        rectangle.height -= insets.top + insets.bottom;
-        Insets insets2 = ne_22.getMargin();
-        int n12 = 1 + ne_22.L();
-        rectangle.x -= insets2.left + n12;
-        rectangle.y -= insets2.top + n12;
-        rectangle.width += insets2.left + insets2.right + n12 * 2;
-        rectangle.height += insets2.top + insets2.bottom + n12 * 2;
-        ++rectangle.width;
-        return rectangle;
-    }
 
-    public static Rectangle T(O_ o_, ky_2 ky_22) {
-        Rectangle rectangle = new Rectangle(0, 0, o_.getWidth(), o_.getHeight());
-        Insets insets = o_.getInsets();
-        rectangle.x += insets.left;
-        rectangle.y += insets.top;
-        rectangle.width -= insets.left + insets.right;
-        rectangle.height -= insets.top + insets.bottom;
-        Insets insets2 = ky_22.O();
-        int n10 = 2 + ky_22.E();
-        rectangle.x -= insets2.left + n10;
-        rectangle.y -= insets2.top + n10;
-        rectangle.width += insets2.left + insets2.right + n10 * 2;
-        rectangle.height += insets2.top + insets2.bottom + n10 * 2;
-        ++rectangle.width;
-        return rectangle;
-    }
+            if (var2 == null) {
+               return false;
+            }
+         } catch (RuntimeException var3) {
+            throw a(var3);
+         }
 
-    public static lo_0 p(Object object) {
-        return GA.R(PM.P(object));
-    }
+         var4 = var2;
+      }
 
-    public static lo_0 R(F2 f22) {
-        return new lo_0(PM.j(f22));
-    }
+      var4.h();
+      return true;
+   }
 
-    public static boolean I(Class clazz) {
-        return GA.t(clazz.getCanonicalName());
-    }
+   public static com.L0 J(Component param0) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnonnull 20
+      // 09: instanceof com/L0
+      // 0c: ifeq 1f
+      // 0f: goto 16
+      // 12: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 15: athrow
+      // 16: aload 0
+      // 17: checkcast com/L0
+      // 1a: areturn
+      // 1b: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1e: athrow
+      // 1f: aload 0
+      // 20: invokestatic com/GA.Z (Ljava/awt/Component;)Ljavax/swing/plaf/ComponentUI;
+      // 23: astore 2
+      // 24: aload 2
+      // 25: aload 1
+      // 26: ifnonnull 34
+      // 29: ifnull 51
+      // 2c: goto 33
+      // 2f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 32: athrow
+      // 33: aload 2
+      // 34: aload 1
+      // 35: ifnonnull 4d
+      // 38: instanceof com/L0
+      // 3b: ifeq 51
+      // 3e: goto 45
+      // 41: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 44: athrow
+      // 45: aload 2
+      // 46: goto 4d
+      // 49: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 4c: athrow
+      // 4d: checkcast com/L0
+      // 50: areturn
+      // 51: aconst_null
+      // 52: areturn
+   }
 
-    public static boolean t(String string) {
-        try {
-            UIManager.setLookAndFeel(string);
-            return true;
-        }
-        catch (Throwable throwable) {
-            ne_1.g().error(GA.a(-31908, -1560) + string, throwable);
-            return false;
-        }
-    }
+   public static com.W2 e(Component param0) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnonnull 20
+      // 09: instanceof com/W2
+      // 0c: ifeq 1f
+      // 0f: goto 16
+      // 12: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 15: athrow
+      // 16: aload 0
+      // 17: checkcast com/W2
+      // 1a: areturn
+      // 1b: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1e: athrow
+      // 1f: aload 0
+      // 20: invokestatic com/GA.Z (Ljava/awt/Component;)Ljavax/swing/plaf/ComponentUI;
+      // 23: astore 2
+      // 24: aload 2
+      // 25: aload 1
+      // 26: ifnonnull 34
+      // 29: ifnull 51
+      // 2c: goto 33
+      // 2f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 32: athrow
+      // 33: aload 2
+      // 34: aload 1
+      // 35: ifnonnull 4d
+      // 38: instanceof com/W2
+      // 3b: ifeq 51
+      // 3e: goto 45
+      // 41: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 44: athrow
+      // 45: aload 2
+      // 46: goto 4d
+      // 49: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 4c: athrow
+      // 4d: checkcast com/W2
+      // 50: areturn
+      // 51: aconst_null
+      // 52: areturn
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block29: {
-            block28: {
-                block27: {
-                    block26: {
-                        var13 = new String[19];
-                        var11_1 = 0;
-                        var10_2 = "xUo\u0091\u00dc0\u00daI\u008f\u00ce)\u00a4\u00cd.s\u00cd\u00f5L\u000f\u00abL(L\u00c6\u001aY\u001bKXX\tJn\u009d*k8\u0085\u00bdz\u00bf\u00c4\b9c\u0085\u0016\u00d0\u00e7\u00c5%4\u00e0\u008a:\u00e79\u00b5\u00e1\u00d3\u00dc\u0083\u00e7\u00ffT\u00ac<\u000f\u0091\u00fe\u009ft\u0091\t\u00b6\u007f6c:SIp\u00a3\u00da\u00f9\u000bt\u000b`=\u00baW\t\u001f\u00bd\u0010\u00c3\u0005\u00fdC\u00b5\u00c5t\u00d2\u0006\u0088\u00d3\u009fN\u00b6^\u001d\u00a7\u0010\u00949\u00a3%5\u00ebr\u009a\u0096.:\u007f\u008d\u00e7,\b\u00c1\u0004\u00cc\u0001\u00d0\u00e6\u00da\u00d9\u00bb\u0091\u008e\u001f\u0015\u00a8\u00c2.i\u00c7l\u00b7Y\u0011\u00f3_\u0096Q\u0018\"\u008d\u00a1\u00b7\rg\u00c3\u0092R\u00e4\u0007\u0088\n\u009fa\u00a1\u0018!9D\u001c\u00b9\u0081v\u007f\u001a\b\u009b|\u009b5\u00b9\u00ae\u00b37ym\u00c5#\u00986\u0007\u00c3\u00f9$Ft\u0080)\"\u00f0s~U\u00fe\u00a8\u009eZ\u0007\u00ac8\u00e8\u00ef\u00a77\u00fcm`\u0010nt\u00fc\u0091\u00b7\u0016\u00ed-~\u00c8\u00f0\u0097*\u00b7\u00d2\u001d\u00b5s\u00d6U\u00eb\u00a8<ZS\u00ac\u00b2\u00e8\u00be\u00a7\u001d\u00fc'}\u009a~\u00a7N\u00bd\u000fw\u00e4\u000e68\u0018K~\t\u00f4\u0010\u009cC\u00dc\u00bc|O\u00f2\u0001\u00e4\u00ea\u0094\u00c0f-\u0093O\u00fc\u00c9\u00cd\u0005\u0097^F\r\u00bb)\u00a6\u00a2\u0001\u00cf\u00c1<\u00d6\u00da4\u00ca7\u00d3E\u0082en\u00cf\u00b3\u00a2\u00d9n^j\u0003\u00d5H\u007f\u00fe\u00ad%\u00b6\u0090\u0084\u00a2\u0082\u00c7\u00b0}d\u0095\u00eb!Uv\u00e2X\u00e1uJ\u0011QF\u00f2\u0000\u00de\u00a6\u000e:\u00e8\u00fdtq\u0084\u0019\u0011\u00fdR\u008eG\u0082A\u00d7\u00d6L\u00b5\u001b\u0011EB\u0093ypnA\u0019\u00cf\u00fb\u0084\u0097*8M\u0088K3\u00ab}\u008e\u0006}\u00d6\u00eaM\u001aX\u00fbkD\\\u008a\u00ca\u001e\u008d$i\u00f9\u00c5\u0085r\u00b8\u00c0\u00f2\u001eg#\u00d4\u0004\u00bf_.\u0012\u00d8@\u0088s\u00bd[\u00ad\u00c7\u00f7\u00bf\u0019r\u0014_(Ed4";
-                        var12_3 = "xUo\u0091\u00dc0\u00daI\u008f\u00ce)\u00a4\u00cd.s\u00cd\u00f5L\u000f\u00abL(L\u00c6\u001aY\u001bKXX\tJn\u009d*k8\u0085\u00bdz\u00bf\u00c4\b9c\u0085\u0016\u00d0\u00e7\u00c5%4\u00e0\u008a:\u00e79\u00b5\u00e1\u00d3\u00dc\u0083\u00e7\u00ffT\u00ac<\u000f\u0091\u00fe\u009ft\u0091\t\u00b6\u007f6c:SIp\u00a3\u00da\u00f9\u000bt\u000b`=\u00baW\t\u001f\u00bd\u0010\u00c3\u0005\u00fdC\u00b5\u00c5t\u00d2\u0006\u0088\u00d3\u009fN\u00b6^\u001d\u00a7\u0010\u00949\u00a3%5\u00ebr\u009a\u0096.:\u007f\u008d\u00e7,\b\u00c1\u0004\u00cc\u0001\u00d0\u00e6\u00da\u00d9\u00bb\u0091\u008e\u001f\u0015\u00a8\u00c2.i\u00c7l\u00b7Y\u0011\u00f3_\u0096Q\u0018\"\u008d\u00a1\u00b7\rg\u00c3\u0092R\u00e4\u0007\u0088\n\u009fa\u00a1\u0018!9D\u001c\u00b9\u0081v\u007f\u001a\b\u009b|\u009b5\u00b9\u00ae\u00b37ym\u00c5#\u00986\u0007\u00c3\u00f9$Ft\u0080)\"\u00f0s~U\u00fe\u00a8\u009eZ\u0007\u00ac8\u00e8\u00ef\u00a77\u00fcm`\u0010nt\u00fc\u0091\u00b7\u0016\u00ed-~\u00c8\u00f0\u0097*\u00b7\u00d2\u001d\u00b5s\u00d6U\u00eb\u00a8<ZS\u00ac\u00b2\u00e8\u00be\u00a7\u001d\u00fc'}\u009a~\u00a7N\u00bd\u000fw\u00e4\u000e68\u0018K~\t\u00f4\u0010\u009cC\u00dc\u00bc|O\u00f2\u0001\u00e4\u00ea\u0094\u00c0f-\u0093O\u00fc\u00c9\u00cd\u0005\u0097^F\r\u00bb)\u00a6\u00a2\u0001\u00cf\u00c1<\u00d6\u00da4\u00ca7\u00d3E\u0082en\u00cf\u00b3\u00a2\u00d9n^j\u0003\u00d5H\u007f\u00fe\u00ad%\u00b6\u0090\u0084\u00a2\u0082\u00c7\u00b0}d\u0095\u00eb!Uv\u00e2X\u00e1uJ\u0011QF\u00f2\u0000\u00de\u00a6\u000e:\u00e8\u00fdtq\u0084\u0019\u0011\u00fdR\u008eG\u0082A\u00d7\u00d6L\u00b5\u001b\u0011EB\u0093ypnA\u0019\u00cf\u00fb\u0084\u0097*8M\u0088K3\u00ab}\u008e\u0006}\u00d6\u00eaM\u001aX\u00fbkD\\\u008a\u00ca\u001e\u008d$i\u00f9\u00c5\u0085r\u00b8\u00c0\u00f2\u001eg#\u00d4\u0004\u00bf_.\u0012\u00d8@\u0088s\u00bd[\u00ad\u00c7\u00f7\u00bf\u0019r\u0014_(Ed4".length();
-                        var9_4 = 24;
-                        var8_5 = -1;
-lbl7:
-                        // 2 sources
+   public static com.D7 y(Component param0) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnonnull 20
+      // 09: instanceof com/D7
+      // 0c: ifeq 1f
+      // 0f: goto 16
+      // 12: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 15: athrow
+      // 16: aload 0
+      // 17: checkcast com/D7
+      // 1a: areturn
+      // 1b: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1e: athrow
+      // 1f: aload 0
+      // 20: invokestatic com/GA.Z (Ljava/awt/Component;)Ljavax/swing/plaf/ComponentUI;
+      // 23: astore 2
+      // 24: aload 2
+      // 25: aload 1
+      // 26: ifnonnull 34
+      // 29: ifnull 51
+      // 2c: goto 33
+      // 2f: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 32: athrow
+      // 33: aload 2
+      // 34: aload 1
+      // 35: ifnonnull 4d
+      // 38: instanceof com/D7
+      // 3b: ifeq 51
+      // 3e: goto 45
+      // 41: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 44: athrow
+      // 45: aload 2
+      // 46: goto 4d
+      // 49: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 4c: athrow
+      // 4d: checkcast com/D7
+      // 50: areturn
+      // 51: aconst_null
+      // 52: areturn
+   }
 
-                        while (true) {
-                            v0 = 33;
-                            v1 = ++var8_5;
-                            v2 = var10_2.substring(v1, v1 + var9_4);
-                            v3 = -1;
-                            break block26;
-                            break;
-                        }
-lbl13:
-                        // 1 sources
+   public static Rectangle p(com.O_ param0, ne_4 param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 2
+      // 04: aload 1
+      // 05: bipush 0
+      // 06: aload 0
+      // 07: aload 2
+      // 08: ifnonnull 20
+      // 0b: invokevirtual com/O_.getIcon ()Ljavax/swing/Icon;
+      // 0e: ifnull 26
+      // 11: goto 18
+      // 14: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 17: athrow
+      // 18: aload 0
+      // 19: goto 20
+      // 1c: invokestatic com/GA.a (Ljava/lang/RuntimeException;)Ljava/lang/RuntimeException;
+      // 1f: athrow
+      // 20: invokevirtual com/O_.getIconTextGap ()I
+      // 23: goto 27
+      // 26: bipush 0
+      // 27: bipush 0
+      // 28: bipush 0
+      // 29: invokevirtual com/ne_4.d (IIII)V
+      // 2c: new java/awt/Rectangle
+      // 2f: dup
+      // 30: bipush 0
+      // 31: bipush 0
+      // 32: aload 0
+      // 33: invokevirtual com/O_.getWidth ()I
+      // 36: aload 0
+      // 37: invokevirtual com/O_.getHeight ()I
+      // 3a: invokespecial java/awt/Rectangle.<init> (IIII)V
+      // 3d: astore 3
+      // 3e: aload 0
+      // 3f: invokevirtual com/O_.getInsets ()Ljava/awt/Insets;
+      // 42: astore 4
+      // 44: aload 3
+      // 45: dup
+      // 46: getfield java/awt/Rectangle.x I
+      // 49: aload 4
+      // 4b: getfield java/awt/Insets.left I
+      // 4e: iadd
+      // 4f: putfield java/awt/Rectangle.x I
+      // 52: aload 3
+      // 53: dup
+      // 54: getfield java/awt/Rectangle.y I
+      // 57: aload 4
+      // 59: getfield java/awt/Insets.top I
+      // 5c: iadd
+      // 5d: putfield java/awt/Rectangle.y I
+      // 60: aload 3
+      // 61: dup
+      // 62: getfield java/awt/Rectangle.width I
+      // 65: aload 4
+      // 67: getfield java/awt/Insets.left I
+      // 6a: aload 4
+      // 6c: getfield java/awt/Insets.right I
+      // 6f: iadd
+      // 70: isub
+      // 71: putfield java/awt/Rectangle.width I
+      // 74: aload 3
+      // 75: dup
+      // 76: getfield java/awt/Rectangle.height I
+      // 79: aload 4
+      // 7b: getfield java/awt/Insets.top I
+      // 7e: aload 4
+      // 80: getfield java/awt/Insets.bottom I
+      // 83: iadd
+      // 84: isub
+      // 85: putfield java/awt/Rectangle.height I
+      // 88: aload 1
+      // 89: invokevirtual com/ne_4.getMargin ()Ljava/awt/Insets;
+      // 8c: astore 5
+      // 8e: bipush 1
+      // 8f: aload 1
+      // 90: invokevirtual com/ne_4.L ()I
+      // 93: iadd
+      // 94: istore 6
+      // 96: aload 3
+      // 97: dup
+      // 98: getfield java/awt/Rectangle.x I
+      // 9b: aload 5
+      // 9d: getfield java/awt/Insets.left I
+      // a0: iload 6
+      // a2: iadd
+      // a3: isub
+      // a4: putfield java/awt/Rectangle.x I
+      // a7: aload 3
+      // a8: dup
+      // a9: getfield java/awt/Rectangle.y I
+      // ac: aload 5
+      // ae: getfield java/awt/Insets.top I
+      // b1: iload 6
+      // b3: iadd
+      // b4: isub
+      // b5: putfield java/awt/Rectangle.y I
+      // b8: aload 3
+      // b9: dup
+      // ba: getfield java/awt/Rectangle.width I
+      // bd: aload 5
+      // bf: getfield java/awt/Insets.left I
+      // c2: aload 5
+      // c4: getfield java/awt/Insets.right I
+      // c7: iadd
+      // c8: iload 6
+      // ca: bipush 2
+      // cb: imul
+      // cc: iadd
+      // cd: iadd
+      // ce: putfield java/awt/Rectangle.width I
+      // d1: aload 3
+      // d2: dup
+      // d3: getfield java/awt/Rectangle.height I
+      // d6: aload 5
+      // d8: getfield java/awt/Insets.top I
+      // db: aload 5
+      // dd: getfield java/awt/Insets.bottom I
+      // e0: iadd
+      // e1: iload 6
+      // e3: bipush 2
+      // e4: imul
+      // e5: iadd
+      // e6: iadd
+      // e7: putfield java/awt/Rectangle.height I
+      // ea: aload 3
+      // eb: dup
+      // ec: getfield java/awt/Rectangle.width I
+      // ef: bipush 1
+      // f0: iadd
+      // f1: putfield java/awt/Rectangle.width I
+      // f4: aload 3
+      // f5: areturn
+   }
 
-                        while (true) {
-                            var13[var11_1++] = v4.intern();
-                            if ((var8_5 += var9_4) < var12_3) {
-                                var9_4 = var10_2.charAt(var8_5);
-                                ** continue;
-                            }
-                            var10_2 = "<\u00fcG\u0004y\"\u00ce\u00ab\u00ad2\u00cd\u009b\u00f1iT\u0085\u00a1\u00ef)?\u00f3v\u00c17\u00e6C\u009cb\u00ca.e\u00b0\u00fc\u00fbSM_\u00a5\u009cO\u00876\u001f\u00c3\u00e2s\u001f\u00c4\u00a2)[\u00dfW-\u009e\u0089u\u00be\u00b7;\u00a4\u00d6\u00e3\u0018\u00c3\u0093\u00a7\u00f4X\u00e5j\u009f~K\u00e2\r";
-                            var12_3 = "<\u00fcG\u0004y\"\u00ce\u00ab\u00ad2\u00cd\u009b\u00f1iT\u0085\u00a1\u00ef)?\u00f3v\u00c17\u00e6C\u009cb\u00ca.e\u00b0\u00fc\u00fbSM_\u00a5\u009cO\u00876\u001f\u00c3\u00e2s\u001f\u00c4\u00a2)[\u00dfW-\u009e\u0089u\u00be\u00b7;\u00a4\u00d6\u00e3\u0018\u00c3\u0093\u00a7\u00f4X\u00e5j\u009f~K\u00e2\r".length();
-                            var9_4 = 29;
-                            var8_5 = -1;
-lbl22:
-                            // 2 sources
+   public static Rectangle T(com.O_ var0, com.ky_4 var1) {
+      Rectangle var2 = new Rectangle(0, 0, var0.getWidth(), var0.getHeight());
+      Insets var3 = var0.getInsets();
+      var2.x = var2.x + var3.left;
+      var2.y = var2.y + var3.top;
+      var2.width = var2.width - (var3.left + var3.right);
+      var2.height = var2.height - (var3.top + var3.bottom);
+      Insets var4 = var1.O();
+      int var5 = 2 + var1.E();
+      var2.x = var2.x - (var4.left + var5);
+      var2.y = var2.y - (var4.top + var5);
+      var2.width = var2.width + var4.left + var4.right + var5 * 2;
+      var2.height = var2.height + var4.top + var4.bottom + var5 * 2;
+      var2.width++;
+      return var2;
+   }
 
-                            while (true) {
-                                v0 = 5;
-                                v5 = ++var8_5;
-                                v2 = var10_2.substring(v5, v5 + var9_4);
-                                v3 = 0;
-                                break block26;
-                                break;
-                            }
-                            break;
-                        }
-lbl28:
-                        // 1 sources
+   public static com.Lo_2 p(Object var0) {
+      return R(PM.P(var0));
+   }
 
-                        while (true) {
-                            var13[var11_1++] = v4.intern();
-                            if ((var8_5 += var9_4) < var12_3) {
-                                var9_4 = var10_2.charAt(var8_5);
-                                ** continue;
-                            }
-                            break block27;
-                            break;
-                        }
-                    }
-                    v6 = v2.toCharArray();
-                    v7 = v6.length;
-                    var14_6 = 0;
-                    v8 = v0;
-                    v9 = v6;
-                    v10 = v7;
-                    if (v7 > 1) ** GOTO lbl85
-                    do {
-                        v11 = v8;
-                        v9 = v9;
-                        v12 = v9;
-                        v13 = v8;
-                        v14 = var14_6;
-                        while (true) {
-                            switch (var14_6 % 7) {
-                                case 0: {
-                                    v15 = 73;
-                                    break;
-                                }
-                                case 1: {
-                                    v15 = 65;
-                                    break;
-                                }
-                                case 2: {
-                                    v15 = 103;
-                                    break;
-                                }
-                                case 3: {
-                                    v15 = 119;
-                                    break;
-                                }
-                                case 4: {
-                                    v15 = 41;
-                                    break;
-                                }
-                                case 5: {
-                                    v15 = 101;
-                                    break;
-                                }
-                                default: {
-                                    v15 = 15;
-                                }
-                            }
-                            v12[v14] = (char)(v12[v14] ^ (v13 ^ v15));
-                            ++var14_6;
-                            v8 = v11;
-                            if (v11 != 0) break;
-                            v11 = v8;
-                            v9 = v9;
-                            v14 = v8;
-                            v12 = v9;
-                            v13 = v8;
-                        }
-lbl85:
-                        // 2 sources
+   public static com.Lo_2 R(com.F2 var0) {
+      return new com.Lo_2(PM.j(var0));
+   }
 
-                        v16 = v9;
-                        v10 = v10;
-                    } while (v10 > var14_6);
-                    v4 = new String(v16);
-                    switch (v3) {
-                        default: {
-                            ** continue;
-                        }
-                        ** case 0:
-lbl95:
-                        // 1 sources
+   public static boolean I(Class var0) {
+      return t(var0.getCanonicalName());
+   }
 
-                        ** continue;
-                    }
-                }
-                GA.b = var13;
-                GA.c = new String[19];
-                var0_7 = 5972639322288249823L;
-                var6_8 = new long[6];
-                var3_9 = 0;
-                var4_10 = "\u000e04\u00e1P-\u00dc\u008c\u0082\u008c\u00b6\u009b\u00d8B\u00df\u00b9OwV\u00dbp\u000f\u0095\u0080\u0088\u0093|\u0080)N6\u00a2";
-                var5_11 = "\u000e04\u00e1P-\u00dc\u008c\u0082\u008c\u00b6\u009b\u00d8B\u00df\u00b9OwV\u00dbp\u000f\u0095\u0080\u0088\u0093|\u0080)N6\u00a2".length();
-                var2_12 = 0;
-                while (true) {
-                    var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                    v17 = var6_8;
-                    v18 = var3_9++;
-                    v19 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                    v20 = -1;
-                    break block28;
-                    break;
-                }
-lbl112:
-                // 1 sources
+   public static boolean t(String var0) {
+      try {
+         UIManager.setLookAndFeel(var0);
+         return true;
+      } catch (Throwable var2) {
+         nE_3.g().error(a(-31908, -1560) + var0, var2);
+         return false;
+      }
+   }
 
-                while (true) {
-                    v17[v18] = v21;
-                    if (var2_12 < var5_11) ** continue;
-                    var4_10 = ")\u0082X\u00ec\u00d6\u00f0\u00f0\u00a2\u00a1\u0088\u00fb\u00c4\u00db\u0082m\u00da";
-                    var5_11 = ")\u0082X\u00ec\u00d6\u00f0\u00f0\u00a2\u00a1\u0088\u00fb\u00c4\u00db\u0082m\u00da".length();
-                    var2_12 = 0;
-                    while (true) {
-                        var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                        v17 = var6_8;
-                        v18 = var3_9++;
-                        v19 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                        v20 = 0;
-                        break block28;
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var13 = new String[19];
+      int var11 = 0;
+      String var10 = "xUo\u0091Ü0ÚI\u008fÎ)¤Í.sÍõL\u000f«L(LÆ\u001aY\u001bKXX\tJn\u009d*k8\u0085½z¿Ä\b9c\u0085\u0016ÐçÅ%4à\u008a:ç9µáÓÜ\u0083çÿT¬<\u000f\u0091þ\u009ft\u0091\t¶\u007f6c:SIp£Úù\u000bt\u000b`=ºW\t\u001f½\u0010Ã\u0005ýCµÅtÒ\u0006\u0088Ó\u009fN¶^\u001d§\u0010\u00949£%5ër\u009a\u0096.:\u007f\u008dç,\bÁ\u0004Ì\u0001ÐæÚÙ»\u0091\u008e\u001f\u0015¨Â.iÇl·Y\u0011ó_\u0096Q\u0018\"\u008d¡·\rgÃ\u0092Rä\u0007\u0088\n\u009fa¡\u0018!9D\u001c¹\u0081v\u007f\u001a\b\u009b|\u009b5¹®³7ymÅ#\u00986\u0007Ãù$Ft\u0080)\"ðs~Uþ¨\u009eZ\u0007¬8èï§7üm`\u0010ntü\u0091·\u0016í-~Èð\u0097*·Ò\u001dµsÖUë¨<ZS¬²è¾§\u001dü'}\u009a~§N½\u000fwä\u000e68\u0018K~\tô\u0010\u009cCÜ¼|Oò\u0001äê\u0094Àf-\u0093OüÉÍ\u0005\u0097^F\r»)¦¢\u0001ÏÁ<ÖÚ4Ê7ÓE\u0082enÏ³¢Ùn^j\u0003ÕH\u007fþ\u00ad%¶\u0090\u0084¢\u0082Ç°}d\u0095ë!UvâXáuJ\u0011QFò\u0000Þ¦\u000e:èýtq\u0084\u0019\u0011ýR\u008eG\u0082A×ÖLµ\u001b\u0011EB\u0093ypnA\u0019Ïû\u0084\u0097*8M\u0088K3«}\u008e\u0006}ÖêM\u001aXûkD\\\u008aÊ\u001e\u008d$iùÅ\u0085r¸Àò\u001eg#Ô\u0004¿_.\u0012Ø@\u0088s½[\u00adÇ÷¿\u0019r\u0014_(Ed4";
+      int var12 = "xUo\u0091Ü0ÚI\u008fÎ)¤Í.sÍõL\u000f«L(LÆ\u001aY\u001bKXX\tJn\u009d*k8\u0085½z¿Ä\b9c\u0085\u0016ÐçÅ%4à\u008a:ç9µáÓÜ\u0083çÿT¬<\u000f\u0091þ\u009ft\u0091\t¶\u007f6c:SIp£Úù\u000bt\u000b`=ºW\t\u001f½\u0010Ã\u0005ýCµÅtÒ\u0006\u0088Ó\u009fN¶^\u001d§\u0010\u00949£%5ër\u009a\u0096.:\u007f\u008dç,\bÁ\u0004Ì\u0001ÐæÚÙ»\u0091\u008e\u001f\u0015¨Â.iÇl·Y\u0011ó_\u0096Q\u0018\"\u008d¡·\rgÃ\u0092Rä\u0007\u0088\n\u009fa¡\u0018!9D\u001c¹\u0081v\u007f\u001a\b\u009b|\u009b5¹®³7ymÅ#\u00986\u0007Ãù$Ft\u0080)\"ðs~Uþ¨\u009eZ\u0007¬8èï§7üm`\u0010ntü\u0091·\u0016í-~Èð\u0097*·Ò\u001dµsÖUë¨<ZS¬²è¾§\u001dü'}\u009a~§N½\u000fwä\u000e68\u0018K~\tô\u0010\u009cCÜ¼|Oò\u0001äê\u0094Àf-\u0093OüÉÍ\u0005\u0097^F\r»)¦¢\u0001ÏÁ<ÖÚ4Ê7ÓE\u0082enÏ³¢Ùn^j\u0003ÕH\u007fþ\u00ad%¶\u0090\u0084¢\u0082Ç°}d\u0095ë!UvâXáuJ\u0011QFò\u0000Þ¦\u000e:èýtq\u0084\u0019\u0011ýR\u008eG\u0082A×ÖLµ\u001b\u0011EB\u0093ypnA\u0019Ïû\u0084\u0097*8M\u0088K3«}\u008e\u0006}ÖêM\u001aXûkD\\\u008aÊ\u001e\u008d$iùÅ\u0085r¸Àò\u001eg#Ô\u0004¿_.\u0012Ø@\u0088s½[\u00adÇ÷¿\u0019r\u0014_(Ed4"
+         .length();
+      char var9 = 24;
+      int var17 = -1;
+
+      label70:
+      while (true) {
+         byte var10000 = 33;
+         String var10001 = var10.substring(++var17, var17 + var9);
+         byte var10002 = -1;
+
+         while (true) {
+            label65: {
+               char[] var39 = var10001.toCharArray();
+               int var10004 = var39.length;
+               int var14 = 0;
+               byte var42 = var10000;
+               var33 = var39;
+               int var24 = var10004;
+               byte var49;
+               char[] var55;
+               int var10006;
+               if (var10004 <= 1) {
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               } else {
+                  var42 = var10000;
+                  var24 = var10004;
+                  if (var10004 <= var14) {
+                     break label65;
+                  }
+
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               }
+
+               while (true) {
+                  char var64 = var55[var10006];
+                  byte var65;
+                  switch (var14 % 7) {
+                     case 0:
+                        var65 = 73;
                         break;
-                    }
-                    break;
-                }
-lbl125:
-                // 1 sources
+                     case 1:
+                        var65 = 65;
+                        break;
+                     case 2:
+                        var65 = 103;
+                        break;
+                     case 3:
+                        var65 = 119;
+                        break;
+                     case 4:
+                        var65 = 41;
+                        break;
+                     case 5:
+                        var65 = 101;
+                        break;
+                     default:
+                        var65 = 15;
+                  }
 
-                while (true) {
-                    v17[v18] = v21;
-                    if (var2_12 < var5_11) ** continue;
-                    break block29;
-                    break;
-                }
-            }
-            v21 = v19 ^ var0_7;
-            switch (v20) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl136:
-                // 1 sources
+                  var55[var10006] = (char)(var64 ^ var49 ^ var65);
+                  var14++;
+                  if (var42 == 0) {
+                     var10006 = var42;
+                     var55 = var33;
+                     var49 = var42;
+                  } else {
+                     if (var24 <= var14) {
+                        break;
+                     }
 
-                ** continue;
+                     var55 = var33;
+                     var49 = var42;
+                     var10006 = var14;
+                  }
+               }
             }
-        }
-        GA.f = var6_8;
-        GA.h = new Integer[6];
-        GA.e = new eh_1();
-        GA.N = new pp_2();
-        GA.d = new WQ();
-        GA.P = new LB();
-        GA.i = new HashMap<K, V>();
-        GA.a = GA.a(20507, 1036857957273005433L);
-        GA.o = GA.a(14596, 2721872801761297508L);
-        GA.u = 1;
-        GA.U = GA.a(5658, 7393847499690453887L);
-        GA.g = new pf_1(GA.class.getResource(GA.a(-31919, -22810)));
-        GA.M = new pf_1(GA.class.getResource(GA.a(-31911, 22427)));
-        GA.l = new pf_1(GA.class.getResource(GA.a(-31916, 12997)));
-        GA.V = new pf_1(GA.class.getResource(GA.a(-31912, 24544)));
-        GA.z = new pf_1(GA.class.getResource(GA.a(-31915, 24520)));
-        GA.j = new pf_1(GA.class.getResource(GA.a(-31914, -26755)));
-        GA.F = new pf_1(GA.class.getResource(GA.a(-31910, 4831)));
-        GA.C = new pf_1(GA.class.getResource(GA.a(-31935, 25762)));
-        GA.B = new pf_1(GA.class.getResource(GA.a(-31905, 31965)));
-        GA.x = new ImageIcon(GA.class.getResource(GA.a(-31906, -21643)));
-        GA.q = new HashMap<K, V>();
-    }
 
-    private static RuntimeException a(RuntimeException runtimeException) {
-        return runtimeException;
-    }
+            String var44 = new String(var33).intern();
+            switch (var10002) {
+               case 0:
+                  var13[var11++] = var44;
+                  if ((var17 += var9) >= var12) {
+                     b = var13;
+                     c = new String[19];
+                     long var0 = 5972639322288249823L;
+                     long[] var6 = new long[6];
+                     int var3 = 0;
+                     String var4 = "\u000e04áP-Ü\u008c\u0082\u008c¶\u009bØBß¹OwVÛp\u000f\u0095\u0080\u0088\u0093|\u0080)N6¢";
+                     int var5 = "\u000e04áP-Ü\u008c\u0082\u008c¶\u009bØBß¹OwVÛp\u000f\u0095\u0080\u0088\u0093|\u0080)N6¢".length();
+                     byte var2 = 0;
 
-    private static String a(int n10, int n11) {
-        int n12 = (n10 ^ 0xFFFF8350) & 0xFFFF;
-        if (c[n12] == null) {
-            int n13;
-            int n14;
-            char[] cArray = b[n12].toCharArray();
-            switch (cArray[0] & 0xFF) {
-                case 0: {
-                    n14 = 59;
-                    break;
-                }
-                case 1: {
-                    n14 = 129;
-                    break;
-                }
-                case 2: {
-                    n14 = 97;
-                    break;
-                }
-                case 3: {
-                    n14 = 189;
-                    break;
-                }
-                case 4: {
-                    n14 = 107;
-                    break;
-                }
-                case 5: {
-                    n14 = 70;
-                    break;
-                }
-                case 6: {
-                    n14 = 228;
-                    break;
-                }
-                case 7: {
-                    n14 = 114;
-                    break;
-                }
-                case 8: {
-                    n14 = 229;
-                    break;
-                }
-                case 9: {
-                    n14 = 187;
-                    break;
-                }
-                case 10: {
-                    n14 = 57;
-                    break;
-                }
-                case 11: {
-                    n14 = 207;
-                    break;
-                }
-                case 12: {
-                    n14 = 200;
-                    break;
-                }
-                case 13: {
-                    n14 = 140;
-                    break;
-                }
-                case 14: {
-                    n14 = 40;
-                    break;
-                }
-                case 15: {
-                    n14 = 188;
-                    break;
-                }
-                case 16: {
-                    n14 = 10;
-                    break;
-                }
-                case 17: {
-                    n14 = 60;
-                    break;
-                }
-                case 18: {
-                    n14 = 64;
-                    break;
-                }
-                case 19: {
-                    n14 = 51;
-                    break;
-                }
-                case 20: {
-                    n14 = 212;
-                    break;
-                }
-                case 21: {
-                    n14 = 170;
-                    break;
-                }
-                case 22: {
-                    n14 = 68;
-                    break;
-                }
-                case 23: {
-                    n14 = 223;
-                    break;
-                }
-                case 24: {
-                    n14 = 135;
-                    break;
-                }
-                case 25: {
-                    n14 = 196;
-                    break;
-                }
-                case 26: {
-                    n14 = 143;
-                    break;
-                }
-                case 27: {
-                    n14 = 21;
-                    break;
-                }
-                case 28: {
-                    n14 = 24;
-                    break;
-                }
-                case 29: {
-                    n14 = 32;
-                    break;
-                }
-                case 30: {
-                    n14 = 254;
-                    break;
-                }
-                case 31: {
-                    n14 = 109;
-                    break;
-                }
-                case 32: {
-                    n14 = 100;
-                    break;
-                }
-                case 33: {
-                    n14 = 42;
-                    break;
-                }
-                case 34: {
-                    n14 = 205;
-                    break;
-                }
-                case 35: {
-                    n14 = 149;
-                    break;
-                }
-                case 36: {
-                    n14 = 29;
-                    break;
-                }
-                case 37: {
-                    n14 = 157;
-                    break;
-                }
-                case 38: {
-                    n14 = 215;
-                    break;
-                }
-                case 39: {
-                    n14 = 155;
-                    break;
-                }
-                case 40: {
-                    n14 = 0;
-                    break;
-                }
-                case 41: {
-                    n14 = 52;
-                    break;
-                }
-                case 42: {
-                    n14 = 236;
-                    break;
-                }
-                case 43: {
-                    n14 = 92;
-                    break;
-                }
-                case 44: {
-                    n14 = 145;
-                    break;
-                }
-                case 45: {
-                    n14 = 63;
-                    break;
-                }
-                case 46: {
-                    n14 = 124;
-                    break;
-                }
-                case 47: {
-                    n14 = 185;
-                    break;
-                }
-                case 48: {
-                    n14 = 132;
-                    break;
-                }
-                case 49: {
-                    n14 = 142;
-                    break;
-                }
-                case 50: {
-                    n14 = 217;
-                    break;
-                }
-                case 51: {
-                    n14 = 103;
-                    break;
-                }
-                case 52: {
-                    n14 = 14;
-                    break;
-                }
-                case 53: {
-                    n14 = 54;
-                    break;
-                }
-                case 54: {
-                    n14 = 84;
-                    break;
-                }
-                case 55: {
-                    n14 = 95;
-                    break;
-                }
-                case 56: {
-                    n14 = 199;
-                    break;
-                }
-                case 57: {
-                    n14 = 110;
-                    break;
-                }
-                case 58: {
-                    n14 = 139;
-                    break;
-                }
-                case 59: {
-                    n14 = 22;
-                    break;
-                }
-                case 60: {
-                    n14 = 154;
-                    break;
-                }
-                case 61: {
-                    n14 = 178;
-                    break;
-                }
-                case 62: {
-                    n14 = 13;
-                    break;
-                }
-                case 63: {
-                    n14 = 220;
-                    break;
-                }
-                case 64: {
-                    n14 = 153;
-                    break;
-                }
-                case 65: {
-                    n14 = 35;
-                    break;
-                }
-                case 66: {
-                    n14 = 214;
-                    break;
-                }
-                case 67: {
-                    n14 = 233;
-                    break;
-                }
-                case 68: {
-                    n14 = 82;
-                    break;
-                }
-                case 69: {
-                    n14 = 46;
-                    break;
-                }
-                case 70: {
-                    n14 = 39;
-                    break;
-                }
-                case 71: {
-                    n14 = 136;
-                    break;
-                }
-                case 72: {
-                    n14 = 56;
-                    break;
-                }
-                case 73: {
-                    n14 = 93;
-                    break;
-                }
-                case 74: {
-                    n14 = 163;
-                    break;
-                }
-                case 75: {
-                    n14 = 2;
-                    break;
-                }
-                case 76: {
-                    n14 = 11;
-                    break;
-                }
-                case 77: {
-                    n14 = 27;
-                    break;
-                }
-                case 78: {
-                    n14 = 244;
-                    break;
-                }
-                case 79: {
-                    n14 = 255;
-                    break;
-                }
-                case 80: {
-                    n14 = 174;
-                    break;
-                }
-                case 81: {
-                    n14 = 53;
-                    break;
-                }
-                case 82: {
-                    n14 = 221;
-                    break;
-                }
-                case 83: {
-                    n14 = 65;
-                    break;
-                }
-                case 84: {
-                    n14 = 181;
-                    break;
-                }
-                case 85: {
-                    n14 = 17;
-                    break;
-                }
-                case 86: {
-                    n14 = 6;
-                    break;
-                }
-                case 87: {
-                    n14 = 165;
-                    break;
-                }
-                case 88: {
-                    n14 = 76;
-                    break;
-                }
-                case 89: {
-                    n14 = 208;
-                    break;
-                }
-                case 90: {
-                    n14 = 186;
-                    break;
-                }
-                case 91: {
-                    n14 = 116;
-                    break;
-                }
-                case 92: {
-                    n14 = 9;
-                    break;
-                }
-                case 93: {
-                    n14 = 73;
-                    break;
-                }
-                case 94: {
-                    n14 = 131;
-                    break;
-                }
-                case 95: {
-                    n14 = 224;
-                    break;
-                }
-                case 96: {
-                    n14 = 173;
-                    break;
-                }
-                case 97: {
-                    n14 = 203;
-                    break;
-                }
-                case 98: {
-                    n14 = 90;
-                    break;
-                }
-                case 99: {
-                    n14 = 1;
-                    break;
-                }
-                case 100: {
-                    n14 = 12;
-                    break;
-                }
-                case 101: {
-                    n14 = 43;
-                    break;
-                }
-                case 102: {
-                    n14 = 113;
-                    break;
-                }
-                case 103: {
-                    n14 = 197;
-                    break;
-                }
-                case 104: {
-                    n14 = 61;
-                    break;
-                }
-                case 105: {
-                    n14 = 118;
-                    break;
-                }
-                case 106: {
-                    n14 = 192;
-                    break;
-                }
-                case 107: {
-                    n14 = 176;
-                    break;
-                }
-                case 108: {
-                    n14 = 99;
-                    break;
-                }
-                case 109: {
-                    n14 = 209;
-                    break;
-                }
-                case 110: {
-                    n14 = 45;
-                    break;
-                }
-                case 111: {
-                    n14 = 37;
-                    break;
-                }
-                case 112: {
-                    n14 = 137;
-                    break;
-                }
-                case 113: {
-                    n14 = 230;
-                    break;
-                }
-                case 114: {
-                    n14 = 69;
-                    break;
-                }
-                case 115: {
-                    n14 = 81;
-                    break;
-                }
-                case 116: {
-                    n14 = 16;
-                    break;
-                }
-                case 117: {
-                    n14 = 20;
-                    break;
-                }
-                case 118: {
-                    n14 = 33;
-                    break;
-                }
-                case 119: {
-                    n14 = 183;
-                    break;
-                }
-                case 120: {
-                    n14 = 193;
-                    break;
-                }
-                case 121: {
-                    n14 = 101;
-                    break;
-                }
-                case 122: {
-                    n14 = 120;
-                    break;
-                }
-                case 123: {
-                    n14 = 235;
-                    break;
-                }
-                case 124: {
-                    n14 = 47;
-                    break;
-                }
-                case 125: {
-                    n14 = 180;
-                    break;
-                }
-                case 126: {
-                    n14 = 15;
-                    break;
-                }
-                case 127: {
-                    n14 = 127;
-                    break;
-                }
-                case 128: {
-                    n14 = 162;
-                    break;
-                }
-                case 129: {
-                    n14 = 211;
-                    break;
-                }
-                case 130: {
-                    n14 = 177;
-                    break;
-                }
-                case 131: {
-                    n14 = 144;
-                    break;
-                }
-                case 132: {
-                    n14 = 245;
-                    break;
-                }
-                case 133: {
-                    n14 = 108;
-                    break;
-                }
-                case 134: {
-                    n14 = 238;
-                    break;
-                }
-                case 135: {
-                    n14 = 34;
-                    break;
-                }
-                case 136: {
-                    n14 = 190;
-                    break;
-                }
-                case 137: {
-                    n14 = 168;
-                    break;
-                }
-                case 138: {
-                    n14 = 182;
-                    break;
-                }
-                case 139: {
-                    n14 = 226;
-                    break;
-                }
-                case 140: {
-                    n14 = 249;
-                    break;
-                }
-                case 141: {
-                    n14 = 128;
-                    break;
-                }
-                case 142: {
-                    n14 = 121;
-                    break;
-                }
-                case 143: {
-                    n14 = 213;
-                    break;
-                }
-                case 144: {
-                    n14 = 248;
-                    break;
-                }
-                case 145: {
-                    n14 = 41;
-                    break;
-                }
-                case 146: {
-                    n14 = 86;
-                    break;
-                }
-                case 147: {
-                    n14 = 125;
-                    break;
-                }
-                case 148: {
-                    n14 = 117;
-                    break;
-                }
-                case 149: {
-                    n14 = 219;
-                    break;
-                }
-                case 150: {
-                    n14 = 74;
-                    break;
-                }
-                case 151: {
-                    n14 = 148;
-                    break;
-                }
-                case 152: {
-                    n14 = 239;
-                    break;
-                }
-                case 153: {
-                    n14 = 166;
-                    break;
-                }
-                case 154: {
-                    n14 = 62;
-                    break;
-                }
-                case 155: {
-                    n14 = 172;
-                    break;
-                }
-                case 156: {
-                    n14 = 36;
-                    break;
-                }
-                case 157: {
-                    n14 = 210;
-                    break;
-                }
-                case 158: {
-                    n14 = 94;
-                    break;
-                }
-                case 159: {
-                    n14 = 198;
-                    break;
-                }
-                case 160: {
-                    n14 = 151;
-                    break;
-                }
-                case 161: {
-                    n14 = 234;
-                    break;
-                }
-                case 162: {
-                    n14 = 161;
-                    break;
-                }
-                case 163: {
-                    n14 = 19;
-                    break;
-                }
-                case 164: {
-                    n14 = 243;
-                    break;
-                }
-                case 165: {
-                    n14 = 138;
-                    break;
-                }
-                case 166: {
-                    n14 = 25;
-                    break;
-                }
-                case 167: {
-                    n14 = 179;
-                    break;
-                }
-                case 168: {
-                    n14 = 164;
-                    break;
-                }
-                case 169: {
-                    n14 = 49;
-                    break;
-                }
-                case 170: {
-                    n14 = 159;
-                    break;
-                }
-                case 171: {
-                    n14 = 89;
-                    break;
-                }
-                case 172: {
-                    n14 = 105;
-                    break;
-                }
-                case 173: {
-                    n14 = 122;
-                    break;
-                }
-                case 174: {
-                    n14 = 58;
-                    break;
-                }
-                case 175: {
-                    n14 = 4;
-                    break;
-                }
-                case 176: {
-                    n14 = 106;
-                    break;
-                }
-                case 177: {
-                    n14 = 133;
-                    break;
-                }
-                case 178: {
-                    n14 = 104;
-                    break;
-                }
-                case 179: {
-                    n14 = 247;
-                    break;
-                }
-                case 180: {
-                    n14 = 75;
-                    break;
-                }
-                case 181: {
-                    n14 = 194;
-                    break;
-                }
-                case 182: {
-                    n14 = 134;
-                    break;
-                }
-                case 183: {
-                    n14 = 156;
-                    break;
-                }
-                case 184: {
-                    n14 = 246;
-                    break;
-                }
-                case 185: {
-                    n14 = 38;
-                    break;
-                }
-                case 186: {
-                    n14 = 87;
-                    break;
-                }
-                case 187: {
-                    n14 = 146;
-                    break;
-                }
-                case 188: {
-                    n14 = 152;
-                    break;
-                }
-                case 189: {
-                    n14 = 71;
-                    break;
-                }
-                case 190: {
-                    n14 = 204;
-                    break;
-                }
-                case 191: {
-                    n14 = 30;
-                    break;
-                }
-                case 192: {
-                    n14 = 158;
-                    break;
-                }
-                case 193: {
-                    n14 = 102;
-                    break;
-                }
-                case 194: {
-                    n14 = 50;
-                    break;
-                }
-                case 195: {
-                    n14 = 112;
-                    break;
-                }
-                case 196: {
-                    n14 = 23;
-                    break;
-                }
-                case 197: {
-                    n14 = 227;
-                    break;
-                }
-                case 198: {
-                    n14 = 126;
-                    break;
-                }
-                case 199: {
-                    n14 = 242;
-                    break;
-                }
-                case 200: {
-                    n14 = 80;
-                    break;
-                }
-                case 201: {
-                    n14 = 83;
-                    break;
-                }
-                case 202: {
-                    n14 = 26;
-                    break;
-                }
-                case 203: {
-                    n14 = 5;
-                    break;
-                }
-                case 204: {
-                    n14 = 7;
-                    break;
-                }
-                case 205: {
-                    n14 = 96;
-                    break;
-                }
-                case 206: {
-                    n14 = 77;
-                    break;
-                }
-                case 207: {
-                    n14 = 31;
-                    break;
-                }
-                case 208: {
-                    n14 = 91;
-                    break;
-                }
-                case 209: {
-                    n14 = 147;
-                    break;
-                }
-                case 210: {
-                    n14 = 201;
-                    break;
-                }
-                case 211: {
-                    n14 = 28;
-                    break;
-                }
-                case 212: {
-                    n14 = 85;
-                    break;
-                }
-                case 213: {
-                    n14 = 191;
-                    break;
-                }
-                case 214: {
-                    n14 = 250;
-                    break;
-                }
-                case 215: {
-                    n14 = 251;
-                    break;
-                }
-                case 216: {
-                    n14 = 253;
-                    break;
-                }
-                case 217: {
-                    n14 = 79;
-                    break;
-                }
-                case 218: {
-                    n14 = 72;
-                    break;
-                }
-                case 219: {
-                    n14 = 123;
-                    break;
-                }
-                case 220: {
-                    n14 = 175;
-                    break;
-                }
-                case 221: {
-                    n14 = 231;
-                    break;
-                }
-                case 222: {
-                    n14 = 167;
-                    break;
-                }
-                case 223: {
-                    n14 = 237;
-                    break;
-                }
-                case 224: {
-                    n14 = 66;
-                    break;
-                }
-                case 225: {
-                    n14 = 78;
-                    break;
-                }
-                case 226: {
-                    n14 = 252;
-                    break;
-                }
-                case 227: {
-                    n14 = 171;
-                    break;
-                }
-                case 228: {
-                    n14 = 169;
-                    break;
-                }
-                case 229: {
-                    n14 = 55;
-                    break;
-                }
-                case 230: {
-                    n14 = 150;
-                    break;
-                }
-                case 231: {
-                    n14 = 88;
-                    break;
-                }
-                case 232: {
-                    n14 = 18;
-                    break;
-                }
-                case 233: {
-                    n14 = 3;
-                    break;
-                }
-                case 234: {
-                    n14 = 98;
-                    break;
-                }
-                case 235: {
-                    n14 = 184;
-                    break;
-                }
-                case 236: {
-                    n14 = 206;
-                    break;
-                }
-                case 237: {
-                    n14 = 218;
-                    break;
-                }
-                case 238: {
-                    n14 = 195;
-                    break;
-                }
-                case 239: {
-                    n14 = 115;
-                    break;
-                }
-                case 240: {
-                    n14 = 222;
-                    break;
-                }
-                case 241: {
-                    n14 = 240;
-                    break;
-                }
-                case 242: {
-                    n14 = 67;
-                    break;
-                }
-                case 243: {
-                    n14 = 141;
-                    break;
-                }
-                case 244: {
-                    n14 = 130;
-                    break;
-                }
-                case 245: {
-                    n14 = 225;
-                    break;
-                }
-                case 246: {
-                    n14 = 232;
-                    break;
-                }
-                case 247: {
-                    n14 = 216;
-                    break;
-                }
-                case 248: {
-                    n14 = 160;
-                    break;
-                }
-                case 249: {
-                    n14 = 202;
-                    break;
-                }
-                case 250: {
-                    n14 = 111;
-                    break;
-                }
-                case 251: {
-                    n14 = 44;
-                    break;
-                }
-                case 252: {
-                    n14 = 48;
-                    break;
-                }
-                case 253: {
-                    n14 = 119;
-                    break;
-                }
-                case 254: {
-                    n14 = 241;
-                    break;
-                }
-                default: {
-                    n14 = 8;
-                }
-            }
-            int n15 = n14;
-            int n16 = (n11 & 0xFF) - n15;
-            if (n16 < 0) {
-                n16 += 256;
-            }
-            if ((n13 = ((n11 & 0xFFFF) >>> 8) - n15) < 0) {
-                n13 += 256;
-            }
-            int n17 = 0;
-            while (n17 < cArray.length) {
-                int n18 = n17 % 2;
-                int n19 = n17;
-                char[] cArray2 = cArray;
-                char c2 = cArray[n19];
-                if (n18 == 0) {
-                    cArray2[n19] = (char)(c2 ^ n16);
-                    n16 = ((n16 >>> 3 | n16 << 5) ^ cArray[n17]) & 0xFF;
-                } else {
-                    cArray2[n19] = (char)(c2 ^ n13);
-                    n13 = ((n13 >>> 3 | n13 << 5) ^ cArray[n17]) & 0xFF;
-                }
-                ++n17;
-            }
-            GA.c[n12] = new String(cArray).intern();
-        }
-        return c[n12];
-    }
+                     label44:
+                     while (true) {
+                        byte var26 = var2;
+                        var2 += 8;
+                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        long[] var19 = var6;
+                        int var27 = var3++;
+                        long var37 = ((long)var7[0] & 255L) << 56
+                           | ((long)var7[1] & 255L) << 48
+                           | ((long)var7[2] & 255L) << 40
+                           | ((long)var7[3] & 255L) << 32
+                           | ((long)var7[4] & 255L) << 24
+                           | ((long)var7[5] & 255L) << 16
+                           | ((long)var7[6] & 255L) << 8
+                           | (long)var7[7] & 255L;
+                        byte var45 = -1;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x3D61;
-        if (h[n11] == null) {
-            GA.h[n11] = (int)(f[n11] ^ l2);
-        }
-        return h[n11];
-    }
+                        while (true) {
+                           long var54 = var37 ^ var0;
+                           switch (var45) {
+                              case 0:
+                                 var19[var27] = var54;
+                                 if (var2 >= var5) {
+                                    f = var6;
+                                    h = new Integer[6];
+                                    e = new eH_3();
+                                    N = new pp_4();
+                                    d = new com.WQ();
+                                    P = new com.LB();
+                                    i = new HashMap();
+                                    a = a(20507, 1036857957273005433L);
+                                    o = a(14596, 2721872801761297508L);
+                                    u = 1;
+                                    U = a(5658, 7393847499690453887L);
+                                    g = new pF_3(GA.class.getResource(a(-31919, -22810)));
+                                    M = new pF_3(GA.class.getResource(a(-31911, 22427)));
+                                    l = new pF_3(GA.class.getResource(a(-31916, 12997)));
+                                    V = new pF_3(GA.class.getResource(a(-31912, 24544)));
+                                    z = new pF_3(GA.class.getResource(a(-31915, 24520)));
+                                    j = new pF_3(GA.class.getResource(a(-31914, -26755)));
+                                    F = new pF_3(GA.class.getResource(a(-31910, 4831)));
+                                    C = new pF_3(GA.class.getResource(a(-31935, 25762)));
+                                    B = new pF_3(GA.class.getResource(a(-31905, 31965)));
+                                    x = new ImageIcon(GA.class.getResource(a(-31906, -21643)));
+                                    q = new HashMap();
+                                    return;
+                                 }
+                                 break;
+                              default:
+                                 var19[var27] = var54;
+                                 if (var2 < var5) {
+                                    continue label44;
+                                 }
+
+                                 var4 = ")\u0082XìÖðð¢¡\u0088ûÄÛ\u0082mÚ";
+                                 var5 = ")\u0082XìÖðð¢¡\u0088ûÄÛ\u0082mÚ".length();
+                                 var2 = 0;
+                           }
+
+                           byte var28 = var2;
+                           var2 += 8;
+                           var7 = var4.substring(var28, var2).getBytes("ISO-8859-1");
+                           var19 = var6;
+                           var27 = var3++;
+                           var37 = ((long)var7[0] & 255L) << 56
+                              | ((long)var7[1] & 255L) << 48
+                              | ((long)var7[2] & 255L) << 40
+                              | ((long)var7[3] & 255L) << 32
+                              | ((long)var7[4] & 255L) << 24
+                              | ((long)var7[5] & 255L) << 16
+                              | ((long)var7[6] & 255L) << 8
+                              | (long)var7[7] & 255L;
+                           var45 = 0;
+                        }
+                     }
+                  }
+
+                  var9 = var10.charAt(var17);
+                  break;
+               default:
+                  var13[var11++] = var44;
+                  if ((var17 += var9) < var12) {
+                     var9 = var10.charAt(var17);
+                     continue label70;
+                  }
+
+                  var10 = "<üG\u0004y\"Î«\u00ad2Í\u009bñiT\u0085¡ï)?óvÁ7æC\u009cbÊ.e°üûSM_¥\u009cO\u00876\u001fÃâs\u001fÄ¢)[ßW-\u009e\u0089u¾·;¤Öã\u0018Ã\u0093§ôXåj\u009f~Kâ\r";
+                  var12 = "<üG\u0004y\"Î«\u00ad2Í\u009bñiT\u0085¡ï)?óvÁ7æC\u009cbÊ.e°üûSM_¥\u009cO\u00876\u001fÃâs\u001fÄ¢)[ßW-\u009e\u0089u¾·;¤Öã\u0018Ã\u0093§ôXåj\u009f~Kâ\r"
+                     .length();
+                  var9 = 29;
+                  var17 = -1;
+            }
+
+            var10000 = 5;
+            var10001 = var10.substring(++var17, var17 + var9);
+            var10002 = 0;
+         }
+      }
+   }
+
+   private static RuntimeException a(RuntimeException var0) {
+      return var0;
+   }
+
+   private static String a(int var0, int var1) {
+      int var2 = (var0 ^ -31920) & 65535;
+      if (c[var2] == null) {
+         char[] var3 = b[var2].toCharArray();
+         short var10000;
+         switch (var3[0] & 0xFF) {
+            case 0:
+               var10000 = 59;
+               break;
+            case 1:
+               var10000 = 129;
+               break;
+            case 2:
+               var10000 = 97;
+               break;
+            case 3:
+               var10000 = 189;
+               break;
+            case 4:
+               var10000 = 107;
+               break;
+            case 5:
+               var10000 = 70;
+               break;
+            case 6:
+               var10000 = 228;
+               break;
+            case 7:
+               var10000 = 114;
+               break;
+            case 8:
+               var10000 = 229;
+               break;
+            case 9:
+               var10000 = 187;
+               break;
+            case 10:
+               var10000 = 57;
+               break;
+            case 11:
+               var10000 = 207;
+               break;
+            case 12:
+               var10000 = 200;
+               break;
+            case 13:
+               var10000 = 140;
+               break;
+            case 14:
+               var10000 = 40;
+               break;
+            case 15:
+               var10000 = 188;
+               break;
+            case 16:
+               var10000 = 10;
+               break;
+            case 17:
+               var10000 = 60;
+               break;
+            case 18:
+               var10000 = 64;
+               break;
+            case 19:
+               var10000 = 51;
+               break;
+            case 20:
+               var10000 = 212;
+               break;
+            case 21:
+               var10000 = 170;
+               break;
+            case 22:
+               var10000 = 68;
+               break;
+            case 23:
+               var10000 = 223;
+               break;
+            case 24:
+               var10000 = 135;
+               break;
+            case 25:
+               var10000 = 196;
+               break;
+            case 26:
+               var10000 = 143;
+               break;
+            case 27:
+               var10000 = 21;
+               break;
+            case 28:
+               var10000 = 24;
+               break;
+            case 29:
+               var10000 = 32;
+               break;
+            case 30:
+               var10000 = 254;
+               break;
+            case 31:
+               var10000 = 109;
+               break;
+            case 32:
+               var10000 = 100;
+               break;
+            case 33:
+               var10000 = 42;
+               break;
+            case 34:
+               var10000 = 205;
+               break;
+            case 35:
+               var10000 = 149;
+               break;
+            case 36:
+               var10000 = 29;
+               break;
+            case 37:
+               var10000 = 157;
+               break;
+            case 38:
+               var10000 = 215;
+               break;
+            case 39:
+               var10000 = 155;
+               break;
+            case 40:
+               var10000 = 0;
+               break;
+            case 41:
+               var10000 = 52;
+               break;
+            case 42:
+               var10000 = 236;
+               break;
+            case 43:
+               var10000 = 92;
+               break;
+            case 44:
+               var10000 = 145;
+               break;
+            case 45:
+               var10000 = 63;
+               break;
+            case 46:
+               var10000 = 124;
+               break;
+            case 47:
+               var10000 = 185;
+               break;
+            case 48:
+               var10000 = 132;
+               break;
+            case 49:
+               var10000 = 142;
+               break;
+            case 50:
+               var10000 = 217;
+               break;
+            case 51:
+               var10000 = 103;
+               break;
+            case 52:
+               var10000 = 14;
+               break;
+            case 53:
+               var10000 = 54;
+               break;
+            case 54:
+               var10000 = 84;
+               break;
+            case 55:
+               var10000 = 95;
+               break;
+            case 56:
+               var10000 = 199;
+               break;
+            case 57:
+               var10000 = 110;
+               break;
+            case 58:
+               var10000 = 139;
+               break;
+            case 59:
+               var10000 = 22;
+               break;
+            case 60:
+               var10000 = 154;
+               break;
+            case 61:
+               var10000 = 178;
+               break;
+            case 62:
+               var10000 = 13;
+               break;
+            case 63:
+               var10000 = 220;
+               break;
+            case 64:
+               var10000 = 153;
+               break;
+            case 65:
+               var10000 = 35;
+               break;
+            case 66:
+               var10000 = 214;
+               break;
+            case 67:
+               var10000 = 233;
+               break;
+            case 68:
+               var10000 = 82;
+               break;
+            case 69:
+               var10000 = 46;
+               break;
+            case 70:
+               var10000 = 39;
+               break;
+            case 71:
+               var10000 = 136;
+               break;
+            case 72:
+               var10000 = 56;
+               break;
+            case 73:
+               var10000 = 93;
+               break;
+            case 74:
+               var10000 = 163;
+               break;
+            case 75:
+               var10000 = 2;
+               break;
+            case 76:
+               var10000 = 11;
+               break;
+            case 77:
+               var10000 = 27;
+               break;
+            case 78:
+               var10000 = 244;
+               break;
+            case 79:
+               var10000 = 255;
+               break;
+            case 80:
+               var10000 = 174;
+               break;
+            case 81:
+               var10000 = 53;
+               break;
+            case 82:
+               var10000 = 221;
+               break;
+            case 83:
+               var10000 = 65;
+               break;
+            case 84:
+               var10000 = 181;
+               break;
+            case 85:
+               var10000 = 17;
+               break;
+            case 86:
+               var10000 = 6;
+               break;
+            case 87:
+               var10000 = 165;
+               break;
+            case 88:
+               var10000 = 76;
+               break;
+            case 89:
+               var10000 = 208;
+               break;
+            case 90:
+               var10000 = 186;
+               break;
+            case 91:
+               var10000 = 116;
+               break;
+            case 92:
+               var10000 = 9;
+               break;
+            case 93:
+               var10000 = 73;
+               break;
+            case 94:
+               var10000 = 131;
+               break;
+            case 95:
+               var10000 = 224;
+               break;
+            case 96:
+               var10000 = 173;
+               break;
+            case 97:
+               var10000 = 203;
+               break;
+            case 98:
+               var10000 = 90;
+               break;
+            case 99:
+               var10000 = 1;
+               break;
+            case 100:
+               var10000 = 12;
+               break;
+            case 101:
+               var10000 = 43;
+               break;
+            case 102:
+               var10000 = 113;
+               break;
+            case 103:
+               var10000 = 197;
+               break;
+            case 104:
+               var10000 = 61;
+               break;
+            case 105:
+               var10000 = 118;
+               break;
+            case 106:
+               var10000 = 192;
+               break;
+            case 107:
+               var10000 = 176;
+               break;
+            case 108:
+               var10000 = 99;
+               break;
+            case 109:
+               var10000 = 209;
+               break;
+            case 110:
+               var10000 = 45;
+               break;
+            case 111:
+               var10000 = 37;
+               break;
+            case 112:
+               var10000 = 137;
+               break;
+            case 113:
+               var10000 = 230;
+               break;
+            case 114:
+               var10000 = 69;
+               break;
+            case 115:
+               var10000 = 81;
+               break;
+            case 116:
+               var10000 = 16;
+               break;
+            case 117:
+               var10000 = 20;
+               break;
+            case 118:
+               var10000 = 33;
+               break;
+            case 119:
+               var10000 = 183;
+               break;
+            case 120:
+               var10000 = 193;
+               break;
+            case 121:
+               var10000 = 101;
+               break;
+            case 122:
+               var10000 = 120;
+               break;
+            case 123:
+               var10000 = 235;
+               break;
+            case 124:
+               var10000 = 47;
+               break;
+            case 125:
+               var10000 = 180;
+               break;
+            case 126:
+               var10000 = 15;
+               break;
+            case 127:
+               var10000 = 127;
+               break;
+            case 128:
+               var10000 = 162;
+               break;
+            case 129:
+               var10000 = 211;
+               break;
+            case 130:
+               var10000 = 177;
+               break;
+            case 131:
+               var10000 = 144;
+               break;
+            case 132:
+               var10000 = 245;
+               break;
+            case 133:
+               var10000 = 108;
+               break;
+            case 134:
+               var10000 = 238;
+               break;
+            case 135:
+               var10000 = 34;
+               break;
+            case 136:
+               var10000 = 190;
+               break;
+            case 137:
+               var10000 = 168;
+               break;
+            case 138:
+               var10000 = 182;
+               break;
+            case 139:
+               var10000 = 226;
+               break;
+            case 140:
+               var10000 = 249;
+               break;
+            case 141:
+               var10000 = 128;
+               break;
+            case 142:
+               var10000 = 121;
+               break;
+            case 143:
+               var10000 = 213;
+               break;
+            case 144:
+               var10000 = 248;
+               break;
+            case 145:
+               var10000 = 41;
+               break;
+            case 146:
+               var10000 = 86;
+               break;
+            case 147:
+               var10000 = 125;
+               break;
+            case 148:
+               var10000 = 117;
+               break;
+            case 149:
+               var10000 = 219;
+               break;
+            case 150:
+               var10000 = 74;
+               break;
+            case 151:
+               var10000 = 148;
+               break;
+            case 152:
+               var10000 = 239;
+               break;
+            case 153:
+               var10000 = 166;
+               break;
+            case 154:
+               var10000 = 62;
+               break;
+            case 155:
+               var10000 = 172;
+               break;
+            case 156:
+               var10000 = 36;
+               break;
+            case 157:
+               var10000 = 210;
+               break;
+            case 158:
+               var10000 = 94;
+               break;
+            case 159:
+               var10000 = 198;
+               break;
+            case 160:
+               var10000 = 151;
+               break;
+            case 161:
+               var10000 = 234;
+               break;
+            case 162:
+               var10000 = 161;
+               break;
+            case 163:
+               var10000 = 19;
+               break;
+            case 164:
+               var10000 = 243;
+               break;
+            case 165:
+               var10000 = 138;
+               break;
+            case 166:
+               var10000 = 25;
+               break;
+            case 167:
+               var10000 = 179;
+               break;
+            case 168:
+               var10000 = 164;
+               break;
+            case 169:
+               var10000 = 49;
+               break;
+            case 170:
+               var10000 = 159;
+               break;
+            case 171:
+               var10000 = 89;
+               break;
+            case 172:
+               var10000 = 105;
+               break;
+            case 173:
+               var10000 = 122;
+               break;
+            case 174:
+               var10000 = 58;
+               break;
+            case 175:
+               var10000 = 4;
+               break;
+            case 176:
+               var10000 = 106;
+               break;
+            case 177:
+               var10000 = 133;
+               break;
+            case 178:
+               var10000 = 104;
+               break;
+            case 179:
+               var10000 = 247;
+               break;
+            case 180:
+               var10000 = 75;
+               break;
+            case 181:
+               var10000 = 194;
+               break;
+            case 182:
+               var10000 = 134;
+               break;
+            case 183:
+               var10000 = 156;
+               break;
+            case 184:
+               var10000 = 246;
+               break;
+            case 185:
+               var10000 = 38;
+               break;
+            case 186:
+               var10000 = 87;
+               break;
+            case 187:
+               var10000 = 146;
+               break;
+            case 188:
+               var10000 = 152;
+               break;
+            case 189:
+               var10000 = 71;
+               break;
+            case 190:
+               var10000 = 204;
+               break;
+            case 191:
+               var10000 = 30;
+               break;
+            case 192:
+               var10000 = 158;
+               break;
+            case 193:
+               var10000 = 102;
+               break;
+            case 194:
+               var10000 = 50;
+               break;
+            case 195:
+               var10000 = 112;
+               break;
+            case 196:
+               var10000 = 23;
+               break;
+            case 197:
+               var10000 = 227;
+               break;
+            case 198:
+               var10000 = 126;
+               break;
+            case 199:
+               var10000 = 242;
+               break;
+            case 200:
+               var10000 = 80;
+               break;
+            case 201:
+               var10000 = 83;
+               break;
+            case 202:
+               var10000 = 26;
+               break;
+            case 203:
+               var10000 = 5;
+               break;
+            case 204:
+               var10000 = 7;
+               break;
+            case 205:
+               var10000 = 96;
+               break;
+            case 206:
+               var10000 = 77;
+               break;
+            case 207:
+               var10000 = 31;
+               break;
+            case 208:
+               var10000 = 91;
+               break;
+            case 209:
+               var10000 = 147;
+               break;
+            case 210:
+               var10000 = 201;
+               break;
+            case 211:
+               var10000 = 28;
+               break;
+            case 212:
+               var10000 = 85;
+               break;
+            case 213:
+               var10000 = 191;
+               break;
+            case 214:
+               var10000 = 250;
+               break;
+            case 215:
+               var10000 = 251;
+               break;
+            case 216:
+               var10000 = 253;
+               break;
+            case 217:
+               var10000 = 79;
+               break;
+            case 218:
+               var10000 = 72;
+               break;
+            case 219:
+               var10000 = 123;
+               break;
+            case 220:
+               var10000 = 175;
+               break;
+            case 221:
+               var10000 = 231;
+               break;
+            case 222:
+               var10000 = 167;
+               break;
+            case 223:
+               var10000 = 237;
+               break;
+            case 224:
+               var10000 = 66;
+               break;
+            case 225:
+               var10000 = 78;
+               break;
+            case 226:
+               var10000 = 252;
+               break;
+            case 227:
+               var10000 = 171;
+               break;
+            case 228:
+               var10000 = 169;
+               break;
+            case 229:
+               var10000 = 55;
+               break;
+            case 230:
+               var10000 = 150;
+               break;
+            case 231:
+               var10000 = 88;
+               break;
+            case 232:
+               var10000 = 18;
+               break;
+            case 233:
+               var10000 = 3;
+               break;
+            case 234:
+               var10000 = 98;
+               break;
+            case 235:
+               var10000 = 184;
+               break;
+            case 236:
+               var10000 = 206;
+               break;
+            case 237:
+               var10000 = 218;
+               break;
+            case 238:
+               var10000 = 195;
+               break;
+            case 239:
+               var10000 = 115;
+               break;
+            case 240:
+               var10000 = 222;
+               break;
+            case 241:
+               var10000 = 240;
+               break;
+            case 242:
+               var10000 = 67;
+               break;
+            case 243:
+               var10000 = 141;
+               break;
+            case 244:
+               var10000 = 130;
+               break;
+            case 245:
+               var10000 = 225;
+               break;
+            case 246:
+               var10000 = 232;
+               break;
+            case 247:
+               var10000 = 216;
+               break;
+            case 248:
+               var10000 = 160;
+               break;
+            case 249:
+               var10000 = 202;
+               break;
+            case 250:
+               var10000 = 111;
+               break;
+            case 251:
+               var10000 = 44;
+               break;
+            case 252:
+               var10000 = 48;
+               break;
+            case 253:
+               var10000 = 119;
+               break;
+            case 254:
+               var10000 = 241;
+               break;
+            default:
+               var10000 = 8;
+         }
+
+         short var4 = var10000;
+         int var5 = (var1 & 0xFF) - var4;
+         if (var5 < 0) {
+            var5 += 256;
+         }
+
+         int var6 = ((var1 & 65535) >>> 8) - var4;
+         if (var6 < 0) {
+            var6 += 256;
+         }
+
+         for (int var7 = 0; var7 < var3.length; var7++) {
+            int var8 = var7 % 2;
+            char var10002 = var3[var7];
+            if (var8 == 0) {
+               var3[var7] = (char)(var10002 ^ var5);
+               var5 = ((var5 >>> 3 | var5 << 5) ^ var3[var7]) & 0xFF;
+            } else {
+               var3[var7] = (char)(var10002 ^ var6);
+               var6 = ((var6 >>> 3 | var6 << 5) ^ var3[var7]) & 0xFF;
+            }
+         }
+
+         c[var2] = new String(var3).intern();
+      }
+
+      return c[var2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 15713;
+      if (h[var3] == null) {
+         h[var3] = (int)(f[var3] ^ var1);
+      }
+
+      return h[var3];
+   }
 }
+
+
+
+
 

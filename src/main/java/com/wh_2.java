@@ -1,26 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FV;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+public final class Wh_2 {
+   public final int Q;
+   public final Object k;
+   public Object g;
+   public final com.Wh_2 n;
 
-/*
- * Renamed from com.wh
- */
-class wh_2
-implements ActionListener {
-    final Runnable y;
-
-    wh_2(Runnable runnable) {
-        this.y = runnable;
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        FV.p(this.y);
-    }
+   public Wh_2(Object var1, Object var2, int var3, com.Wh_2 var4) {
+      this.k = var1;
+      this.g = var2;
+      this.n = var4;
+      this.Q = var3;
+   }
 }
+
+
+
+
 

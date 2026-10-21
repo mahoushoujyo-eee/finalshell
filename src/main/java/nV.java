@@ -1,16 +1,16 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class nV
-implements Runnable {
-    final ym_1 z;
+class nV implements Runnable {
+   final yM_3 z;
 
-    nV(ym_1 ym_12) {
-        this.z = ym_12;
-    }
+   nV(yM_3 var1) {
+      this.z = var1;
+   }
 
-    @Override
-    public void run() {
-    }
+   @Override
+   public void run() {
+   }
 }
+
+
+
+
 

@@ -1,22 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.os_2;
+public abstract class DB implements com.os_4 {
+   @Override
+   public void r(int var1) {
+   }
 
-public abstract class DB
-implements os_2 {
-    @Override
-    public void r(int n10) {
-    }
+   @Override
+   public void u(int var1, Object var2, Object var3) {
+   }
 
-    @Override
-    public void u(int n10, Object object, Object object2) {
-    }
-
-    @Override
-    public void V(int n10) {
-    }
+   @Override
+   public void V(int var1) {
+   }
 }
+
+
+
+
 

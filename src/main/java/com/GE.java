@@ -1,10 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.FV;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Rectangle;
@@ -15,285 +10,324 @@ import java.util.HashMap;
 import java.util.Map;
 
 class GE {
-    private final FontMetrics T;
-    private final Font g;
-    private final FontRenderContext l;
-    private final Map a;
-    private static final char[] H;
-    static final boolean S;
-    private static final long[] b;
-    private static final Integer[] c;
+   private final FontMetrics T;
+   private final Font g;
+   private final FontRenderContext l;
+   private final Map a;
+   private static final char[] H;
+   static final boolean S;
+   private static final long[] b;
+   private static final Integer[] c;
 
-    public GE(FontMetrics fontMetrics) {
-        block3: {
-            block5: {
-                GE gE2;
-                block4: {
-                    String string;
-                    block2: {
-                        String string2 = FV.D();
-                        this.T = fontMetrics;
-                        this.g = fontMetrics.getFont();
-                        this.l = fontMetrics.getFontRenderContext();
-                        string = string2;
-                        gE2 = this;
-                        if (string != null) break block2;
-                        gE2.a = new HashMap();
-                        if (S) break block3;
-                        gE2 = this;
-                    }
-                    if (string != null) break block4;
-                    if (gE2.g == null) break block5;
-                    gE2 = this;
-                }
-                if (gE2.l != null) break block3;
-            }
+   public GE(FontMetrics var1) {
+      String var10000 = com.FV.D();
+      super();
+      this.T = var1;
+      this.g = var1.getFont();
+      this.l = var1.getFontRenderContext();
+      String var2 = var10000;
+      GE var3 = this;
+      if (var2 == null) {
+         this.a = new HashMap();
+         if (S) {
+            return;
+         }
+
+         var3 = this;
+      }
+
+      if (var2 == null) {
+         if (var3.g == null) {
             throw new AssertionError();
-        }
-    }
+         }
 
-    public int G(char c2) {
-        Short s2 = (Short)this.a.get(Character.valueOf(c2));
-        String string = FV.D();
-        Short s3 = s2;
-        if (string == null && s3 == null) {
-            s2 = this.k(c2);
-            s3 = this.a.put(Character.valueOf(c2), s2);
-        }
-        return ((GE.a(17385, 6578449476650503238L) & s2) >>> GE.a(15720, 8802378366684230344L)) - GE.a(17425, 241585815428041651L);
-    }
+         var3 = this;
+      }
 
-    public int g(char c2) {
-        Short s2 = (Short)this.a.get(Character.valueOf(c2));
-        String string = FV.D();
-        Short s3 = s2;
-        if (string == null && s3 == null) {
-            s2 = this.k(c2);
-            s3 = this.a.put(Character.valueOf(c2), s2);
-        }
-        return (GE.a(9003, 4505525811107097735L) & s2) - GE.a(17425, 241585815428041651L);
-    }
+      if (var3.l == null) {
+         throw new AssertionError();
+      }
+   }
 
-    private short k(char c2) {
-        int n10;
-        int n11;
-        block22: {
-            int n12;
-            int n13;
-            block23: {
-                int n14;
-                block20: {
-                    block21: {
-                        int n15;
-                        String string;
-                        block18: {
-                            block19: {
-                                int n16;
-                                block16: {
-                                    block17: {
-                                        block12: {
-                                            block13: {
-                                                block15: {
-                                                    Object object;
-                                                    Object object2;
-                                                    block14: {
-                                                        Object object3;
-                                                        block8: {
-                                                            block9: {
-                                                                block11: {
-                                                                    Object object4;
-                                                                    Object object5;
-                                                                    block10: {
-                                                                        GE.H[0] = c2;
-                                                                        GlyphVector glyphVector = this.g.createGlyphVector(this.l, H);
-                                                                        Rectangle rectangle = glyphVector.getGlyphPixelBounds(0, this.l, 0.0f, 0.0f);
-                                                                        string = FV.D();
-                                                                        n13 = rectangle.x;
-                                                                        n12 = rectangle.width - this.T.charWidth(c2);
-                                                                        n16 = n13;
-                                                                        if (string != null) break block8;
-                                                                        if (n16 >= 0) break block9;
-                                                                        object5 = object3 = this.l.getAntiAliasingHint();
-                                                                        object4 = RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HRGB;
-                                                                        if (string != null) break block10;
-                                                                        if (object5 == object4) break block11;
-                                                                        object5 = object3;
-                                                                        object4 = RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HBGR;
-                                                                    }
-                                                                    if (object5 != object4) break block9;
-                                                                }
-                                                                ++n13;
-                                                            }
-                                                            n16 = n12;
-                                                        }
-                                                        if (string != null) break block12;
-                                                        if (n16 <= 0) break block13;
-                                                        object2 = object3 = this.l.getAntiAliasingHint();
-                                                        object = RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HRGB;
-                                                        if (string != null) break block14;
-                                                        if (object2 == object) break block15;
-                                                        object2 = object3;
-                                                        object = RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HBGR;
-                                                    }
-                                                    if (object2 != object) break block13;
-                                                }
-                                                --n12;
-                                            }
-                                            n16 = n13;
-                                        }
-                                        if (string != null) break block16;
-                                        if (n16 < GE.a(21427, 2140305497940499472L)) break block17;
-                                        n14 = n13;
-                                        n15 = GE.a(16803, 4006517586498784777L);
-                                        if (string != null) break block18;
-                                        if (n14 <= n15) break block19;
-                                    }
-                                    n16 = 0;
-                                }
-                                n13 = n16;
-                            }
-                            n14 = n12;
-                            if (string != null) break block20;
-                            n15 = GE.a(15892, 6166191262402474431L);
+   public int G(char var1) {
+      String var10000 = com.FV.D();
+      Short var3 = (Short)this.a.get(var1);
+      String var2 = var10000;
+      if (var2 == null && var3 == null) {
+         var3 = this.k(var1);
+         this.a.put(var1, var3);
+      }
+
+      return ((a(17385, 6578449476650503238L) & var3) >>> a(15720, 8802378366684230344L)) - a(17425, 241585815428041651L);
+   }
+
+   public int g(char var1) {
+      String var10000 = com.FV.D();
+      Short var3 = (Short)this.a.get(var1);
+      String var2 = var10000;
+      if (var2 == null && var3 == null) {
+         var3 = this.k(var1);
+         this.a.put(var1, var3);
+      }
+
+      return (a(9003, 4505525811107097735L) & var3) - a(17425, 241585815428041651L);
+   }
+
+   private short k(char var1) {
+      H[0] = var1;
+      GlyphVector var3 = this.g.createGlyphVector(this.l, H);
+      String var10000 = com.FV.D();
+      Rectangle var4 = var3.getGlyphPixelBounds(0, this.l, 0.0F, 0.0F);
+      String var2 = var10000;
+      int var5 = var4.x;
+      int var6 = var4.width - this.T.charWidth(var1);
+      int var10 = var5;
+      if (var2 == null) {
+         label74:
+         if (var5 < 0) {
+            label79: {
+               Object var7 = this.l.getAntiAliasingHint();
+               var10000 = (String)var7;
+               Object var10001 = RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HRGB;
+               if (var2 == null) {
+                  if (var7 == RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HRGB) {
+                     break label79;
+                  }
+
+                  var10000 = (String)var7;
+                  var10001 = RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HBGR;
+               }
+
+               if (var10000 != var10001) {
+                  break label74;
+               }
+            }
+
+            var5++;
+         }
+
+         var10 = var6;
+      }
+
+      if (var2 == null) {
+         label61:
+         if (var10 > 0) {
+            label66: {
+               Object var8 = this.l.getAntiAliasingHint();
+               var10000 = (String)var8;
+               Object var15 = RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HRGB;
+               if (var2 == null) {
+                  if (var8 == RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HRGB) {
+                     break label66;
+                  }
+
+                  var10000 = (String)var8;
+                  var15 = RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HBGR;
+               }
+
+               if (var10000 != var15) {
+                  break label61;
+               }
+            }
+
+            var6--;
+         }
+
+         var10 = var5;
+      }
+
+      int var17;
+      label57: {
+         label56: {
+            label88: {
+               label89: {
+                  label53: {
+                     if (var2 == null) {
+                        if (var10 >= a(21427, 2140305497940499472L)) {
+                           var13 = var5;
+                           var17 = a(16803, 4006517586498784777L);
+                           if (var2 != null) {
+                              break label89;
+                           }
+
+                           if (var5 <= var17) {
+                              break label53;
+                           }
                         }
-                        if (n14 < n15) break block21;
-                        n11 = n12;
-                        n10 = GE.a(17425, 241585815428041651L);
-                        if (string != null) break block22;
-                        if (n11 <= n10) break block23;
-                    }
-                    n14 = 0;
-                }
-                n12 = n14;
+
+                        var10 = 0;
+                     }
+
+                     var5 = var10;
+                  }
+
+                  var13 = var6;
+                  if (var2 != null) {
+                     break label88;
+                  }
+
+                  var17 = a(15892, 6166191262402474431L);
+               }
+
+               if (var13 >= var17) {
+                  var14 = var6;
+                  var17 = a(17425, 241585815428041651L);
+                  if (var2 != null) {
+                     break label57;
+                  }
+
+                  if (var6 <= var17) {
+                     break label56;
+                  }
+               }
+
+               var13 = 0;
             }
-            n11 = (n13 + GE.a(17425, 241585815428041651L) << GE.a(25715, 6341177783699778525L)) + n12;
-            n10 = GE.a(17425, 241585815428041651L);
-        }
-        int n17 = n11 + n10;
-        return (short)n17;
-    }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public boolean equals(Object object) {
-        String string = FV.D();
-        Object object2 = object;
-        if (string == null) {
-            if (object2 == this) {
-                return true;
+            var6 = var13;
+         }
+
+         var14 = (var5 + a(17425, 241585815428041651L) << a(25715, 6341177783699778525L)) + var6;
+         var17 = a(17425, 241585815428041651L);
+      }
+
+      int var9 = var14 + var17;
+      return (short)var9;
+   }
+
+   @Override
+   public boolean equals(Object var1) {
+      String var2 = com.FV.D();
+      Object var10000 = var1;
+      if (var2 == null) {
+         if (var1 == this) {
+            return true;
+         }
+
+         var10000 = var1;
+      }
+
+      if (var2 == null) {
+         if (!(var10000 instanceof GE)) {
+            return false;
+         }
+
+         var10000 = var1;
+      }
+
+      GE var3 = (GE)var10000;
+      boolean var4 = this.g.equals(var3.g);
+      if (var2 == null) {
+         if (!var4) {
+            return false;
+         }
+
+         var4 = this.l.equals(var3.l);
+      }
+
+      return var2 != null ? var4 : var4;
+   }
+
+   @Override
+   public int hashCode() {
+      String var10000 = com.FV.D();
+      int var2 = a(25276, 5389899735197953297L);
+      String var1 = var10000;
+      GE var3 = this;
+      if (var1 == null) {
+         if (this.g != null) {
+            var2 = a(1779, 1943290617856051546L) * var2 + this.g.hashCode();
+         }
+
+         var3 = this;
+      }
+
+      if (var3.l != null) {
+         var2 = a(32345, 8202851128078021105L) * var2 + this.l.hashCode();
+      }
+
+      return var2;
+   }
+
+   static {
+      long var0 = 1713784925716413036L;
+      long[] var6 = new long[11];
+      int var3 = 0;
+      String var4 = "©U\u0011\u008d/#t\u001aËý\u0091`-ÜôRÜM;<¤>K¸j\u008b\u00930\n\u00163\u0013²\u001c¦_±¸Ñ¹l3÷§²%\u0089*\u0099Zª\u0084ÏÚ\u0096\u0014*.+ëÅÌ×llk\u0081Í±âq ";
+      int var5 = "©U\u0011\u008d/#t\u001aËý\u0091`-ÜôRÜM;<¤>K¸j\u008b\u00930\n\u00163\u0013²\u001c¦_±¸Ñ¹l3÷§²%\u0089*\u0099Zª\u0084ÏÚ\u0096\u0014*.+ëÅÌ×llk\u0081Í±âq "
+         .length();
+      byte var2 = 0;
+
+      label26:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     b = var6;
+                     c = new Integer[11];
+                     S = !com.FN.class.desiredAssertionStatus();
+                     H = new char[1];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label26;
+                  }
+
+                  var4 = "À\u0011¬D\u001aÎ\u0019ýæ$mÍ\u009au\b¬";
+                  var5 = "À\u0011¬D\u001aÎ\u0019ýæ$mÍ\u009au\b¬".length();
+                  var2 = 0;
             }
-            object2 = object;
-        }
-        if (string == null) {
-            if (!(object2 instanceof GE)) {
-                return false;
-            }
-            object2 = object;
-        }
-        GE gE2 = (GE)object2;
-        boolean bl = this.g.equals(gE2.g);
-        if (string == null) {
-            if (!bl) return false;
-            bl = this.l.equals(gE2.l);
-        }
-        if (string != null) return bl;
-        if (!bl) return false;
-        return true;
-    }
 
-    public int hashCode() {
-        int n10 = GE.a(25276, 5389899735197953297L);
-        String string = FV.D();
-        GE gE2 = this;
-        if (string == null) {
-            if (gE2.g != null) {
-                n10 = GE.a(1779, 1943290617856051546L) * n10 + this.g.hashCode();
-            }
-            gE2 = this;
-        }
-        if (gE2.l != null) {
-            n10 = GE.a(32345, 8202851128078021105L) * n10 + this.l.hashCode();
-        }
-        return n10;
-    }
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 1713784925716413036L;
-                var6_1 = new long[11];
-                var3_2 = 0;
-                var4_3 = "\u00a9U\u0011\u008d/#t\u001a\u00cb\u00fd\u0091`-\u00dc\u00f4R\u00dcM;<\u00a4>K\u00b8j\u008b\u00930\n\u00163\u0013\u00b2\u001c\u00a6_\u00b1\u00b8\u00d1\u00b9l3\u00f7\u00a7\u00b2%\u0089*\u0099Z\u00aa\u0084\u00cf\u00da\u0096\u0014*.+\u00eb\u00c5\u00cc\u00d7llk\u0081\u00cd\u00b1\u00e2q\u00a0";
-                var5_4 = "\u00a9U\u0011\u008d/#t\u001a\u00cb\u00fd\u0091`-\u00dc\u00f4R\u00dcM;<\u00a4>K\u00b8j\u008b\u00930\n\u00163\u0013\u00b2\u001c\u00a6_\u00b1\u00b8\u00d1\u00b9l3\u00f7\u00a7\u00b2%\u0089*\u0099Z\u00aa\u0084\u00cf\u00da\u0096\u0014*.+\u00eb\u00c5\u00cc\u00d7llk\u0081\u00cd\u00b1\u00e2q\u00a0".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 20394;
+      if (c[var3] == null) {
+         c[var3] = (int)(b[var3] ^ var1);
+      }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "\u00c0\u0011\u00acD\u001a\u00ce\u0019\u00fd\u00e6$m\u00cd\u009au\b\u00ac";
-                    var5_4 = "\u00c0\u0011\u00acD\u001a\u00ce\u0019\u00fd\u00e6$m\u00cd\u009au\b\u00ac".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
-            }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
-
-                ** continue;
-            }
-        }
-        GE.b = var6_1;
-        GE.c = new Integer[11];
-        GE.S = FN.class.desiredAssertionStatus() == false;
-        GE.H = new char[1];
-    }
-
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x4FAA;
-        if (c[n11] == null) {
-            GE.c[n11] = (int)(b[n11] ^ l2);
-        }
-        return c[n11];
-    }
+      return c[var3];
+   }
 }
+
+
+
+
 

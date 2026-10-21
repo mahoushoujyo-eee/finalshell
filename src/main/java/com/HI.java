@@ -1,270 +1,345 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.B8;
-import com.HC;
-import com.HK;
-import com.hi_0;
-import com.ky_2;
-import java.lang.reflect.GenericArrayType;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 public class HI {
-    static ConcurrentMap U;
-    protected final Type I;
-    public static final Type L;
+   static ConcurrentMap U;
+   protected final Type I;
+   public static final Type L = new HC().O();
 
-    protected HI() {
-        Type type = this.getClass().getGenericSuperclass();
-        Type type2 = ((ParameterizedType)type).getActualTypeArguments()[0];
-        Type type3 = (Type)U.get(type2);
-        if (type3 == null) {
-            U.putIfAbsent(type2, type2);
-            type3 = (Type)U.get(type2);
-        }
-        this.I = type3;
-    }
+   protected HI() {
+      Type var1 = this.getClass().getGenericSuperclass();
+      Type var2 = ((ParameterizedType)var1).getActualTypeArguments()[0];
+      Type var3 = (Type)U.get(var2);
+      if (var3 == null) {
+         U.putIfAbsent(var2, var2);
+         var3 = (Type)U.get(var2);
+      }
 
-    protected HI(Type[] typeArray) {
-        block27: {
-            Type type;
-            block28: {
-                String string = hi_0.C();
-                String string2 = string;
-                Class<?> clazz = this.getClass();
-                Type type2 = clazz.getGenericSuperclass();
-                ParameterizedType parameterizedType = (ParameterizedType)((ParameterizedType)type2).getActualTypeArguments()[0];
-                Type type3 = parameterizedType.getRawType();
-                Type[] typeArray2 = parameterizedType.getActualTypeArguments();
-                int n10 = 0;
-                for (int i2 = 0; i2 < typeArray2.length; ++i2) {
-                    block26: {
-                        int n11;
-                        Type[] typeArray3;
-                        int n12;
-                        block24: {
-                            block25: {
-                                block22: {
-                                    block23: {
-                                        try {
-                                            try {
-                                                try {
-                                                    try {
-                                                        n12 = typeArray2[i2] instanceof TypeVariable;
-                                                        if (string2 != null) break block22;
-                                                        if (n12 == 0) break block23;
-                                                    }
-                                                    catch (hi_0 hi_02) {
-                                                        throw HI.a(hi_02);
-                                                    }
-                                                    n12 = n10;
-                                                    if (string2 != null) break block22;
-                                                }
-                                                catch (hi_0 hi_03) {
-                                                    throw HI.a(hi_03);
-                                                }
-                                                if (n12 >= typeArray.length) break block23;
-                                            }
-                                            catch (hi_0 hi_04) {
-                                                throw HI.a(hi_04);
-                                            }
-                                            typeArray2[i2] = typeArray[n10++];
-                                        }
-                                        catch (hi_0 hi_05) {
-                                            throw HI.a(hi_05);
-                                        }
-                                    }
-                                    n12 = typeArray2[i2] instanceof GenericArrayType;
-                                }
-                                try {
-                                    try {
-                                        if (string2 != null) break block24;
-                                        if (n12 == 0) break block25;
-                                    }
-                                    catch (hi_0 hi_06) {
-                                        throw HI.a(hi_06);
-                                    }
-                                    typeArray2[i2] = B8.A((GenericArrayType)typeArray2[i2]);
-                                }
-                                catch (hi_0 hi_07) {
-                                    throw HI.a(hi_07);
-                                }
-                            }
-                            try {
-                                typeArray3 = typeArray2;
-                                n11 = i2;
-                                if (string2 != null) break block26;
-                                n12 = typeArray3[n11] instanceof ParameterizedType;
-                            }
-                            catch (hi_0 hi_08) {
-                                throw HI.a(hi_08);
-                            }
-                        }
-                        try {
-                            if (n12 == 0) continue;
-                            typeArray3 = typeArray2;
-                            n11 = i2;
-                        }
-                        catch (hi_0 hi_09) {
-                            throw HI.a(hi_09);
-                        }
-                    }
-                    typeArray3[n11] = this.s((ParameterizedType)typeArray2[i2], typeArray, n10);
-                    if (string2 == null) continue;
-                }
-                HK hK = new HK(typeArray2, clazz, type3);
-                type = (Type)U.get(hK);
-                try {
-                    if (string2 != null) break block27;
-                    if (type != null) break block28;
-                }
-                catch (hi_0 hi_010) {
-                    throw HI.a(hi_010);
-                }
-                U.putIfAbsent(hK, hK);
-                type = (Type)U.get(hK);
-            }
-            this.I = type;
-        }
-        try {
-            if (ky_2.F() != null) {
-                hi_0.F("YwuUi");
-            }
-        }
-        catch (hi_0 hi_011) {
-            throw HI.a(hi_011);
-        }
-    }
+      this.I = var3;
+   }
 
-    public static Type V(HK hK) {
-        Type type;
-        block2: {
-            Type type2;
-            block3: {
-                type2 = (Type)U.get(hK);
-                String string = hi_0.C();
-                try {
-                    type = type2;
-                    if (string != null) break block2;
-                    if (type != null) break block3;
-                }
-                catch (hi_0 hi_02) {
-                    throw HI.a(hi_02);
-                }
-                U.putIfAbsent(hK, hK);
-                type2 = (Type)U.get(hK);
-            }
-            type = type2;
-        }
-        return type;
-    }
+   protected HI(Type[] param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/Hi_2.C ()Ljava/lang/String;
+      // 003: aload 0
+      // 004: invokespecial java/lang/Object.<init> ()V
+      // 007: astore 2
+      // 008: aload 0
+      // 009: invokevirtual java/lang/Object.getClass ()Ljava/lang/Class;
+      // 00c: astore 3
+      // 00d: aload 3
+      // 00e: invokevirtual java/lang/Class.getGenericSuperclass ()Ljava/lang/reflect/Type;
+      // 011: astore 4
+      // 013: aload 4
+      // 015: checkcast java/lang/reflect/ParameterizedType
+      // 018: invokeinterface java/lang/reflect/ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type; 1
+      // 01d: bipush 0
+      // 01e: aaload
+      // 01f: checkcast java/lang/reflect/ParameterizedType
+      // 022: astore 5
+      // 024: aload 5
+      // 026: invokeinterface java/lang/reflect/ParameterizedType.getRawType ()Ljava/lang/reflect/Type; 1
+      // 02b: astore 6
+      // 02d: aload 5
+      // 02f: invokeinterface java/lang/reflect/ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type; 1
+      // 034: astore 7
+      // 036: bipush 0
+      // 037: istore 8
+      // 039: bipush 0
+      // 03a: istore 9
+      // 03c: iload 9
+      // 03e: aload 7
+      // 040: arraylength
+      // 041: if_icmpge 0eb
+      // 044: aload 7
+      // 046: iload 9
+      // 048: aaload
+      // 049: instanceof java/lang/reflect/TypeVariable
+      // 04c: aload 2
+      // 04d: ifnonnull 08e
+      // 050: ifeq 086
+      // 053: goto 05a
+      // 056: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 059: athrow
+      // 05a: iload 8
+      // 05c: aload 2
+      // 05d: ifnonnull 08e
+      // 060: goto 067
+      // 063: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 066: athrow
+      // 067: aload 1
+      // 068: arraylength
+      // 069: if_icmpge 086
+      // 06c: goto 073
+      // 06f: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 072: athrow
+      // 073: aload 7
+      // 075: iload 9
+      // 077: aload 1
+      // 078: iload 8
+      // 07a: iinc 8 1
+      // 07d: aaload
+      // 07e: aastore
+      // 07f: goto 086
+      // 082: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 085: athrow
+      // 086: aload 7
+      // 088: iload 9
+      // 08a: aaload
+      // 08b: instanceof java/lang/reflect/GenericArrayType
+      // 08e: aload 2
+      // 08f: ifnonnull 0c6
+      // 092: ifeq 0b3
+      // 095: goto 09c
+      // 098: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 09b: athrow
+      // 09c: aload 7
+      // 09e: iload 9
+      // 0a0: aload 7
+      // 0a2: iload 9
+      // 0a4: aaload
+      // 0a5: checkcast java/lang/reflect/GenericArrayType
+      // 0a8: invokestatic com/B8.A (Ljava/lang/reflect/GenericArrayType;)Ljava/lang/reflect/Type;
+      // 0ab: aastore
+      // 0ac: goto 0b3
+      // 0af: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0b2: athrow
+      // 0b3: aload 7
+      // 0b5: iload 9
+      // 0b7: aload 2
+      // 0b8: ifnonnull 0d4
+      // 0bb: aaload
+      // 0bc: instanceof java/lang/reflect/ParameterizedType
+      // 0bf: goto 0c6
+      // 0c2: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0c5: athrow
+      // 0c6: ifeq 0e4
+      // 0c9: aload 7
+      // 0cb: iload 9
+      // 0cd: goto 0d4
+      // 0d0: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0d3: athrow
+      // 0d4: aload 0
+      // 0d5: aload 7
+      // 0d7: iload 9
+      // 0d9: aaload
+      // 0da: checkcast java/lang/reflect/ParameterizedType
+      // 0dd: aload 1
+      // 0de: iload 8
+      // 0e0: invokespecial com/HI.s (Ljava/lang/reflect/ParameterizedType;[Ljava/lang/reflect/Type;I)Ljava/lang/reflect/Type;
+      // 0e3: aastore
+      // 0e4: iinc 9 1
+      // 0e7: aload 2
+      // 0e8: ifnull 03c
+      // 0eb: new com/HK
+      // 0ee: dup
+      // 0ef: aload 7
+      // 0f1: aload 3
+      // 0f2: aload 6
+      // 0f4: invokespecial com/HK.<init> ([Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V
+      // 0f7: astore 9
+      // 0f9: getstatic com/HI.U Ljava/util/concurrent/ConcurrentMap;
+      // 0fc: aload 9
+      // 0fe: invokeinterface java/util/concurrent/ConcurrentMap.get (Ljava/lang/Object;)Ljava/lang/Object; 2
+      // 103: checkcast java/lang/reflect/Type
+      // 106: astore 10
+      // 108: aload 2
+      // 109: ifnonnull 13a
+      // 10c: aload 10
+      // 10e: ifnonnull 134
+      // 111: goto 118
+      // 114: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 117: athrow
+      // 118: getstatic com/HI.U Ljava/util/concurrent/ConcurrentMap;
+      // 11b: aload 9
+      // 11d: aload 9
+      // 11f: invokeinterface java/util/concurrent/ConcurrentMap.putIfAbsent (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+      // 124: pop
+      // 125: getstatic com/HI.U Ljava/util/concurrent/ConcurrentMap;
+      // 128: aload 9
+      // 12a: invokeinterface java/util/concurrent/ConcurrentMap.get (Ljava/lang/Object;)Ljava/lang/Object; 2
+      // 12f: checkcast java/lang/reflect/Type
+      // 132: astore 10
+      // 134: aload 0
+      // 135: aload 10
+      // 137: putfield com/HI.I Ljava/lang/reflect/Type;
+      // 13a: invokestatic com/ky_4.F ()[Ljava/lang/String;
+      // 13d: ifnull 14c
+      // 140: ldc "YwuUi"
+      // 142: invokestatic com/Hi_2.F (Ljava/lang/String;)V
+      // 145: goto 14c
+      // 148: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 14b: athrow
+      // 14c: return
+   }
 
-    private Type s(ParameterizedType parameterizedType, Type[] typeArray, int n10) {
-        Class<?> clazz = this.getClass();
-        Type type = parameterizedType.getRawType();
-        Type[] typeArray2 = parameterizedType.getActualTypeArguments();
-        String string = hi_0.C();
-        for (int i2 = 0; i2 < typeArray2.length; ++i2) {
-            block21: {
-                int n11;
-                Type[] typeArray3;
-                int n12;
-                block19: {
-                    block20: {
-                        block17: {
-                            block18: {
-                                try {
-                                    try {
-                                        try {
-                                            try {
-                                                n12 = typeArray2[i2] instanceof TypeVariable;
-                                                if (string != null) break block17;
-                                                if (n12 == 0) break block18;
-                                            }
-                                            catch (hi_0 hi_02) {
-                                                throw HI.a(hi_02);
-                                            }
-                                            n12 = n10;
-                                            if (string != null) break block17;
-                                        }
-                                        catch (hi_0 hi_03) {
-                                            throw HI.a(hi_03);
-                                        }
-                                        if (n12 >= typeArray.length) break block18;
-                                    }
-                                    catch (hi_0 hi_04) {
-                                        throw HI.a(hi_04);
-                                    }
-                                    typeArray2[i2] = typeArray[n10++];
-                                }
-                                catch (hi_0 hi_05) {
-                                    throw HI.a(hi_05);
-                                }
-                            }
-                            n12 = typeArray2[i2] instanceof GenericArrayType;
-                        }
-                        try {
-                            try {
-                                if (string != null) break block19;
-                                if (n12 == 0) break block20;
-                            }
-                            catch (hi_0 hi_06) {
-                                throw HI.a(hi_06);
-                            }
-                            typeArray2[i2] = B8.A((GenericArrayType)typeArray2[i2]);
-                        }
-                        catch (hi_0 hi_07) {
-                            throw HI.a(hi_07);
-                        }
-                    }
-                    try {
-                        typeArray3 = typeArray2;
-                        n11 = i2;
-                        if (string != null) break block21;
-                        n12 = typeArray3[n11] instanceof ParameterizedType;
-                    }
-                    catch (hi_0 hi_08) {
-                        throw HI.a(hi_08);
-                    }
-                }
-                try {
-                    if (n12 == 0) continue;
-                    typeArray3 = typeArray2;
-                    n11 = i2;
-                }
-                catch (hi_0 hi_09) {
-                    throw HI.a(hi_09);
-                }
-            }
-            typeArray3[n11] = this.s((ParameterizedType)typeArray2[i2], typeArray, n10);
-            if (string == null) continue;
-        }
-        HK hK = new HK(typeArray2, clazz, type);
-        return hK;
-    }
+   public static Type V(HK var0) {
+      String var10000 = Hi_2.C();
+      Type var2 = (Type)U.get(var0);
+      String var1 = var10000;
 
-    public Type O() {
-        return this.I;
-    }
+      try {
+         if (var1 != null) {
+            return var2;
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 390808525397096305L;
-        long l3 = 0x9DABD071837CF761L ^ l2;
-        U = new ConcurrentHashMap((int)l3, 0.75f, 1);
-        L = new HC().O();
-    }
+         if (var2 != null) {
+            return var2;
+         }
+      } catch (Hi_2 var3) {
+         throw a(var3);
+      }
 
-    private static hi_0 a(hi_0 hi_02) {
-        return hi_02;
-    }
+      U.putIfAbsent(var0, var0);
+      return (Type)U.get(var0);
+   }
+
+   private Type s(ParameterizedType param1, Type[] param2, int param3) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Hi_2.C ()Ljava/lang/String;
+      // 03: aload 0
+      // 04: invokevirtual java/lang/Object.getClass ()Ljava/lang/Class;
+      // 07: astore 5
+      // 09: aload 1
+      // 0a: invokeinterface java/lang/reflect/ParameterizedType.getRawType ()Ljava/lang/reflect/Type; 1
+      // 0f: astore 6
+      // 11: aload 1
+      // 12: invokeinterface java/lang/reflect/ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type; 1
+      // 17: astore 7
+      // 19: bipush 0
+      // 1a: istore 8
+      // 1c: astore 4
+      // 1e: iload 8
+      // 20: aload 7
+      // 22: arraylength
+      // 23: if_icmpge cf
+      // 26: aload 7
+      // 28: iload 8
+      // 2a: aaload
+      // 2b: instanceof java/lang/reflect/TypeVariable
+      // 2e: aload 4
+      // 30: ifnonnull 70
+      // 33: ifeq 68
+      // 36: goto 3d
+      // 39: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 3c: athrow
+      // 3d: iload 3
+      // 3e: aload 4
+      // 40: ifnonnull 70
+      // 43: goto 4a
+      // 46: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 49: athrow
+      // 4a: aload 2
+      // 4b: arraylength
+      // 4c: if_icmpge 68
+      // 4f: goto 56
+      // 52: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 55: athrow
+      // 56: aload 7
+      // 58: iload 8
+      // 5a: aload 2
+      // 5b: iload 3
+      // 5c: iinc 3 1
+      // 5f: aaload
+      // 60: aastore
+      // 61: goto 68
+      // 64: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 67: athrow
+      // 68: aload 7
+      // 6a: iload 8
+      // 6c: aaload
+      // 6d: instanceof java/lang/reflect/GenericArrayType
+      // 70: aload 4
+      // 72: ifnonnull aa
+      // 75: ifeq 96
+      // 78: goto 7f
+      // 7b: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 7e: athrow
+      // 7f: aload 7
+      // 81: iload 8
+      // 83: aload 7
+      // 85: iload 8
+      // 87: aaload
+      // 88: checkcast java/lang/reflect/GenericArrayType
+      // 8b: invokestatic com/B8.A (Ljava/lang/reflect/GenericArrayType;)Ljava/lang/reflect/Type;
+      // 8e: aastore
+      // 8f: goto 96
+      // 92: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 95: athrow
+      // 96: aload 7
+      // 98: iload 8
+      // 9a: aload 4
+      // 9c: ifnonnull b8
+      // 9f: aaload
+      // a0: instanceof java/lang/reflect/ParameterizedType
+      // a3: goto aa
+      // a6: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // a9: athrow
+      // aa: ifeq c7
+      // ad: aload 7
+      // af: iload 8
+      // b1: goto b8
+      // b4: invokestatic com/HI.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // b7: athrow
+      // b8: aload 0
+      // b9: aload 7
+      // bb: iload 8
+      // bd: aaload
+      // be: checkcast java/lang/reflect/ParameterizedType
+      // c1: aload 2
+      // c2: iload 3
+      // c3: invokespecial com/HI.s (Ljava/lang/reflect/ParameterizedType;[Ljava/lang/reflect/Type;I)Ljava/lang/reflect/Type;
+      // c6: aastore
+      // c7: iinc 8 1
+      // ca: aload 4
+      // cc: ifnull 1e
+      // cf: new com/HK
+      // d2: dup
+      // d3: aload 7
+      // d5: aload 5
+      // d7: aload 6
+      // d9: invokespecial com/HK.<init> ([Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V
+      // dc: astore 8
+      // de: aload 8
+      // e0: areturn
+   }
+
+   public Type O() {
+      return this.I;
+   }
+
+   static {
+      long var2 = 390808525397096305L;
+      long var10002 = -7085340402781456543L ^ var2;
+      byte var10001 = -1;
+      long var0 = var10002;
+      U = new ConcurrentHashMap((int)var0, 0.75F, 1);
+   }
+
+   private static Hi_2 a(Hi_2 var0) {
+      return var0;
+   }
 }
+
+
+
+
 

@@ -1,45 +1,45 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.YP;
-import com.et_0;
 import java.util.concurrent.TimeUnit;
 
 public final class XI {
-    public static final XI x;
-    private final boolean J;
-    private final long c;
-    private final YP H;
+   public static final XI x;
+   private final boolean J;
+   private final long c;
+   private final com.YP H;
 
-    public XI(boolean bl, long l2, YP yP) {
-        this.J = bl;
-        this.c = l2;
-        this.H = yP;
-    }
+   public XI(boolean var1, long var2, com.YP var4) {
+      this.J = var1;
+      this.c = var2;
+      this.H = var4;
+   }
 
-    public boolean d() {
-        return this.J;
-    }
+   public boolean d() {
+      return this.J;
+   }
 
-    public long h() {
-        return this.c;
-    }
+   public long h() {
+      return this.c;
+   }
 
-    public YP H() {
-        return this.H;
-    }
+   public com.YP H() {
+      return this.H;
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5895333650169459010L;
-        long l3 = 0xA5DCCF8D52C1F14AL ^ l2;
-        long l4 = 8923010751736803847L;
-        long l5 = 0x7BD4E700A8437263L ^ l4;
-        x = new XI(true, TimeUnit.MILLISECONDS.toNanos(l5), new YP(new et_0((int)l3), null));
-    }
+   static {
+      long var6 = 5895333650169459010L;
+      long var10002 = -6495088356689317558L ^ var6;
+      byte var10001 = -1;
+      long var4 = var10002;
+      long var2 = 8923010751736803847L;
+      var10002 = 8923010751736803939L ^ var2;
+      var10001 = -1;
+      long var0 = var10002;
+      x = new XI(true, TimeUnit.MILLISECONDS.toNanos(var0), new com.YP(new Et_2((int)var4), null));
+   }
 }
+
+
+
+
 

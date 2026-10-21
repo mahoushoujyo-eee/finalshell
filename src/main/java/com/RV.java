@@ -1,11 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FV;
-import com.GO;
-import com.pi_1;
 import java.awt.AlphaComposite;
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -22,492 +16,617 @@ import java.util.HashMap;
 import java.util.Map;
 
 public final class RV {
-    private static boolean m;
-    private static Map H;
-    private static final Map g;
-    private static final String a;
+   private static boolean m;
+   private static Map H;
+   private static final Map g;
+   private static final String a;
 
-    public static Object O(Graphics graphics) {
-        return RV.f((Graphics2D)graphics, RenderingHints.VALUE_ANTIALIAS_ON);
-    }
+   public static Object O(Graphics var0) {
+      return f((Graphics2D)var0, RenderingHints.VALUE_ANTIALIAS_ON);
+   }
 
-    public static Object X(Graphics2D graphics2D) {
-        return RV.f(graphics2D, RenderingHints.VALUE_ANTIALIAS_ON);
-    }
+   public static Object X(Graphics2D var0) {
+      return f(var0, RenderingHints.VALUE_ANTIALIAS_ON);
+   }
 
-    public static Object h(Graphics graphics) {
-        return RV.f((Graphics2D)graphics, RenderingHints.VALUE_ANTIALIAS_OFF);
-    }
+   public static Object h(Graphics var0) {
+      return f((Graphics2D)var0, RenderingHints.VALUE_ANTIALIAS_OFF);
+   }
 
-    public static Object j(Graphics2D graphics2D) {
-        return RV.f(graphics2D, RenderingHints.VALUE_ANTIALIAS_OFF);
-    }
+   public static Object j(Graphics2D var0) {
+      return f(var0, RenderingHints.VALUE_ANTIALIAS_OFF);
+   }
 
-    private static Object f(Graphics2D graphics2D, Object object) {
-        Object object2 = graphics2D.getRenderingHint(RenderingHints.KEY_ANTIALIASING);
-        graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, object);
-        return object2;
-    }
+   private static Object f(Graphics2D var0, Object var1) {
+      Object var2 = var0.getRenderingHint(RenderingHints.KEY_ANTIALIASING);
+      var0.setRenderingHint(RenderingHints.KEY_ANTIALIASING, var1);
+      return var2;
+   }
 
-    public static void s(Graphics graphics, Object object) {
-        RV.X((Graphics2D)graphics, object);
-    }
+   public static void s(Graphics var0, Object var1) {
+      X((Graphics2D)var0, var1);
+   }
 
-    public static void X(Graphics2D graphics2D, Object object) {
-        graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, object);
-    }
+   public static void X(Graphics2D var0, Object var1) {
+      var0.setRenderingHint(RenderingHints.KEY_ANTIALIASING, var1);
+   }
 
-    public static Map A() {
-        block3: {
-            boolean bl;
-            block2: {
-                String string = FV.D();
-                bl = m;
-                if (string != null) break block2;
-                if (bl) break block3;
-                H = (Map)Toolkit.getDefaultToolkit().getDesktopProperty(a);
-                bl = true;
+   public static Map A() {
+      String var0 = com.FV.D();
+      boolean var10000 = m;
+      if (var0 == null) {
+         if (m) {
+            return H;
+         }
+
+         H = (Map)Toolkit.getDefaultToolkit().getDesktopProperty(a);
+         var10000 = true;
+      }
+
+      m = var10000;
+      return H;
+   }
+
+   public static void K(Graphics var0) {
+      L((Graphics2D)var0);
+   }
+
+   public static void L(Graphics2D var0) {
+      Map var1 = A();
+      if (var1 != null) {
+         var0.addRenderingHints(var1);
+      }
+   }
+
+   public static Composite p(Graphics2D var0, Float var1) {
+      return a(var0, var1, true);
+   }
+
+   public static Composite a(Graphics2D var0, Float var1, boolean var2) {
+      return a(var0, var0.getComposite(), var1, var2);
+   }
+
+   public static Composite U(Graphics2D var0, Composite var1, Float var2) {
+      return a(var0, var1, var2, true);
+   }
+
+   public static Composite a(Graphics2D var0, Composite var1, Float var2, boolean var3) {
+      Composite var4 = var0.getComposite();
+      if (var3 && var2 != null) {
+         float var5 = 1.0F;
+         if (var1 != null && var1 instanceof AlphaComposite) {
+            var5 = ((AlphaComposite)var1).getAlpha();
+         }
+
+         AlphaComposite var6 = AlphaComposite.getInstance(3, var5 * var2);
+         var0.setComposite(var6);
+         return var4;
+      } else {
+         return var4;
+      }
+   }
+
+   public static void c(Graphics2D var0, Composite var1) {
+      var0.setComposite(var1);
+   }
+
+   public static void E(Graphics2D var0, Composite var1, boolean var2) {
+      if (var2) {
+         var0.setComposite(var1);
+      }
+   }
+
+   public static Stroke M(Graphics2D var0, Stroke var1) {
+      return d(var0, var1, true);
+   }
+
+   public static Stroke d(Graphics2D var0, Stroke var1, boolean var2) {
+      Stroke var10000;
+      label15: {
+         String var3 = com.FV.D();
+         if (var2) {
+            var10000 = var1;
+            if (var3 != null) {
+               break label15;
             }
-            m = bl;
-        }
-        return H;
-    }
 
-    public static void K(Graphics graphics) {
-        RV.L((Graphics2D)graphics);
-    }
-
-    public static void L(Graphics2D graphics2D) {
-        Map map = RV.A();
-        if (map != null) {
-            graphics2D.addRenderingHints(map);
-        }
-    }
-
-    public static Composite p(Graphics2D graphics2D, Float f10) {
-        return RV.a(graphics2D, f10, true);
-    }
-
-    public static Composite a(Graphics2D graphics2D, Float f10, boolean bl) {
-        return RV.a(graphics2D, graphics2D.getComposite(), f10, bl);
-    }
-
-    public static Composite U(Graphics2D graphics2D, Composite composite, Float f10) {
-        return RV.a(graphics2D, composite, f10, true);
-    }
-
-    public static Composite a(Graphics2D graphics2D, Composite composite, Float f10, boolean bl) {
-        Composite composite2 = graphics2D.getComposite();
-        if (!bl || f10 == null) {
-            return composite2;
-        }
-        float f11 = 1.0f;
-        if (composite != null && composite instanceof AlphaComposite) {
-            f11 = ((AlphaComposite)composite).getAlpha();
-        }
-        AlphaComposite alphaComposite = AlphaComposite.getInstance(3, f11 * f10.floatValue());
-        graphics2D.setComposite(alphaComposite);
-        return composite2;
-    }
-
-    public static void c(Graphics2D graphics2D, Composite composite) {
-        graphics2D.setComposite(composite);
-    }
-
-    public static void E(Graphics2D graphics2D, Composite composite, boolean bl) {
-        if (bl) {
-            graphics2D.setComposite(composite);
-        }
-    }
-
-    public static Stroke M(Graphics2D graphics2D, Stroke stroke) {
-        return RV.d(graphics2D, stroke, true);
-    }
-
-    public static Stroke d(Graphics2D graphics2D, Stroke stroke, boolean bl) {
-        block2: {
-            Stroke stroke2;
-            block3: {
-                String string = FV.D();
-                if (!bl) break block2;
-                stroke2 = stroke;
-                if (string != null) break block3;
-                if (stroke2 == null) break block2;
-                stroke2 = graphics2D.getStroke();
+            if (var1 != null) {
+               var10000 = var0.getStroke();
+               break label15;
             }
-            Stroke stroke3 = stroke2;
-            graphics2D.setStroke(stroke);
-            return stroke3;
-        }
-        return null;
-    }
+         }
 
-    public static void p(Graphics2D graphics2D, Stroke stroke) {
-        RV.t(graphics2D, stroke, true);
-    }
+         return null;
+      }
 
-    public static void t(Graphics2D graphics2D, Stroke stroke, boolean bl) {
-        if (bl && stroke != null) {
-            graphics2D.setStroke(stroke);
-        }
-    }
+      Stroke var4 = var10000;
+      var0.setStroke(var1);
+      return var4;
+   }
 
-    public static Shape e(Graphics2D graphics2D, Shape shape) {
-        return RV.A(graphics2D, shape, true);
-    }
+   public static void p(Graphics2D var0, Stroke var1) {
+      t(var0, var1, true);
+   }
 
-    public static Shape A(Graphics2D graphics2D, Shape shape, boolean bl) {
-        block2: {
-            Shape shape2;
-            block3: {
-                String string = FV.D();
-                if (!bl) break block2;
-                shape2 = shape;
-                if (string != null) break block3;
-                if (shape2 == null) break block2;
-                shape2 = graphics2D.getClip();
+   public static void t(Graphics2D var0, Stroke var1, boolean var2) {
+      if (var2 && var1 != null) {
+         var0.setStroke(var1);
+      }
+   }
+
+   public static Shape e(Graphics2D var0, Shape var1) {
+      return A(var0, var1, true);
+   }
+
+   public static Shape A(Graphics2D var0, Shape var1, boolean var2) {
+      Shape var10000;
+      label15: {
+         String var3 = com.FV.D();
+         if (var2) {
+            var10000 = var1;
+            if (var3 != null) {
+               break label15;
             }
-            Shape shape3 = shape2;
-            graphics2D.setClip(shape);
-            return shape3;
-        }
-        return null;
-    }
 
-    public static Shape d(Graphics2D graphics2D, int n10, int n11, int n12, int n13) {
-        return RV.K(graphics2D, n10, n11, n12, n13, true);
-    }
-
-    public static Shape K(Graphics2D graphics2D, int n10, int n11, int n12, int n13, boolean bl) {
-        if (bl) {
-            Shape shape = graphics2D.getClip();
-            graphics2D.setClip(n10, n11, n12, n13);
-            return shape;
-        }
-        return null;
-    }
-
-    public static void w(Graphics2D graphics2D, Shape shape) {
-        RV.n(graphics2D, shape, true);
-    }
-
-    public static void n(Graphics2D graphics2D, Shape shape, boolean bl) {
-        if (bl && shape != null) {
-            graphics2D.setClip(shape);
-        }
-    }
-
-    public static Object I(Graphics graphics) {
-        return RV.O((Graphics2D)graphics);
-    }
-
-    public static Object O(Graphics2D graphics2D) {
-        Object object = graphics2D.getRenderingHint(RenderingHints.KEY_INTERPOLATION);
-        graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-        return object;
-    }
-
-    public static void S(Graphics graphics, Object object) {
-        RV.N((Graphics2D)graphics, object);
-    }
-
-    public static void N(Graphics2D graphics2D, Object object) {
-        String string = FV.D();
-        Object object2 = object;
-        if (string == null) {
-            object2 = object2 != null ? object : RenderingHints.VALUE_INTERPOLATION_BILINEAR;
-        }
-        graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, object2);
-    }
-
-    public static Font b(Graphics graphics, Font font) {
-        block3: {
-            Font font2;
-            block2: {
-                String string = FV.D();
-                font2 = font;
-                if (string != null) break block2;
-                if (font2 == null) break block3;
-                font2 = graphics.getFont();
+            if (var1 != null) {
+               var10000 = var0.getClip();
+               break label15;
             }
-            Font font3 = font2;
-            graphics.setFont(font);
-            return font3;
-        }
-        return null;
-    }
+         }
 
-    public static void j(Graphics graphics, Font font) {
-        if (font != null) {
-            graphics.setFont(font);
-        }
-    }
+         return null;
+      }
 
-    public static Shape n(Graphics2D graphics2D, Shape shape) {
-        return RV.I(graphics2D, shape, true);
-    }
+      Shape var4 = var10000;
+      var0.setClip(var1);
+      return var4;
+   }
 
-    public static Shape I(Graphics2D graphics2D, Shape shape, boolean bl) {
-        block2: {
-            Shape shape2;
-            block3: {
-                String string = FV.D();
-                if (!bl) break block2;
-                shape2 = shape;
-                if (string != null) break block3;
-                if (shape2 == null) break block2;
-                shape2 = graphics2D.getClip();
+   public static Shape d(Graphics2D var0, int var1, int var2, int var3, int var4) {
+      return K(var0, var1, var2, var3, var4, true);
+   }
+
+   public static Shape K(Graphics2D var0, int var1, int var2, int var3, int var4, boolean var5) {
+      if (var5) {
+         Shape var6 = var0.getClip();
+         var0.setClip(var1, var2, var3, var4);
+         return var6;
+      } else {
+         return null;
+      }
+   }
+
+   public static void w(Graphics2D var0, Shape var1) {
+      n(var0, var1, true);
+   }
+
+   public static void n(Graphics2D var0, Shape var1, boolean var2) {
+      if (var2 && var1 != null) {
+         var0.setClip(var1);
+      }
+   }
+
+   public static Object I(Graphics var0) {
+      return O((Graphics2D)var0);
+   }
+
+   public static Object O(Graphics2D var0) {
+      Object var1 = var0.getRenderingHint(RenderingHints.KEY_INTERPOLATION);
+      var0.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+      return var1;
+   }
+
+   public static void S(Graphics var0, Object var1) {
+      N((Graphics2D)var0, var1);
+   }
+
+   public static void N(Graphics2D var0, Object var1) {
+      String var2 = com.FV.D();
+      Object var10002 = var1;
+      if (var2 == null) {
+         var10002 = var1 != null ? var1 : RenderingHints.VALUE_INTERPOLATION_BILINEAR;
+      }
+
+      var0.setRenderingHint(RenderingHints.KEY_INTERPOLATION, var10002);
+   }
+
+   public static Font b(Graphics var0, Font var1) {
+      String var2 = com.FV.D();
+      Font var10000 = var1;
+      if (var2 == null) {
+         if (var1 == null) {
+            return null;
+         }
+
+         var10000 = var0.getFont();
+      }
+
+      Font var3 = var10000;
+      var0.setFont(var1);
+      return var3;
+   }
+
+   public static void j(Graphics var0, Font var1) {
+      if (var1 != null) {
+         var0.setFont(var1);
+      }
+   }
+
+   public static Shape n(Graphics2D var0, Shape var1) {
+      return I(var0, var1, true);
+   }
+
+   public static Shape I(Graphics2D var0, Shape var1, boolean var2) {
+      Shape var10000;
+      label15: {
+         String var3 = com.FV.D();
+         if (var2) {
+            var10000 = var1;
+            if (var3 != null) {
+               break label15;
             }
-            Shape shape3 = shape2;
-            graphics2D.clip(shape);
-            return shape3;
-        }
-        return null;
-    }
 
-    public static Shape k(Graphics graphics, Shape shape) {
-        return RV.t(graphics, shape, true);
-    }
-
-    public static Shape t(Graphics graphics, Shape shape, boolean bl) {
-        block5: {
-            Shape shape2;
-            Shape shape3;
-            String string;
-            block6: {
-                string = FV.D();
-                if (!bl) break block5;
-                shape3 = shape;
-                if (string != null) break block6;
-                if (shape3 == null) break block5;
-                shape3 = graphics.getClip();
+            if (var1 != null) {
+               var10000 = var0.getClip();
+               break label15;
             }
-            Shape shape4 = shape2 = shape3;
-            if (string == null) {
-                if (shape4 != null) {
-                    Area area = new Area(shape2);
-                    area.subtract(new Area(shape));
-                    graphics.setClip(area);
-                }
-                shape4 = shape2;
+         }
+
+         return null;
+      }
+
+      Shape var4 = var10000;
+      var0.clip(var1);
+      return var4;
+   }
+
+   public static Shape k(Graphics var0, Shape var1) {
+      return t(var0, var1, true);
+   }
+
+   public static Shape t(Graphics var0, Shape var1, boolean var2) {
+      String var3 = com.FV.D();
+      if (var2) {
+         Shape var10000 = var1;
+         if (var3 == null) {
+            if (var1 == null) {
+               return null;
             }
-            return shape4;
-        }
-        return null;
-    }
 
-    public static void t(Graphics graphics, Shape shape) {
-        RV.j(graphics, shape, true);
-    }
+            var10000 = var0.getClip();
+         }
 
-    public static void j(Graphics graphics, Shape shape, boolean bl) {
-        if (bl && shape != null) {
-            graphics.setClip(shape);
-        }
-    }
-
-    public static Stroke y(int n10) {
-        return RV.Z(n10, 1, 1);
-    }
-
-    public static Stroke c(int n10, int n11) {
-        return RV.Z(n10, n11, 1);
-    }
-
-    public static Stroke Z(int n10, int n11, int n12) {
-        String string = n10 + "," + n11 + "," + n12;
-        Stroke stroke = (Stroke)g.get(string);
-        String string2 = FV.D();
-        Stroke stroke2 = stroke;
-        if (string2 == null) {
-            if (stroke2 == null) {
-                stroke = new BasicStroke(n10, n11, n12);
-                g.put(string, stroke);
+         Shape var4 = var10000;
+         var10000 = var4;
+         if (var3 == null) {
+            if (var4 != null) {
+               Area var5 = new Area(var4);
+               var5.subtract(new Area(var1));
+               var0.setClip(var5);
             }
-            stroke2 = stroke;
-        }
-        return stroke2;
-    }
 
-    public static void Y(Graphics2D graphics2D, Shape shape, Color color, int n10) {
-        RV.y(graphics2D, shape, GO.m, color, n10);
-    }
+            var10000 = var4;
+         }
 
-    public static void y(Graphics2D graphics2D, Shape shape, pi_1 pi_12, Color color, int n10) {
-        RV.n(graphics2D, shape, pi_12, color, n10, null, true);
-    }
+         return var10000;
+      } else {
+         return null;
+      }
+   }
 
-    public static void D(Graphics2D graphics2D, Shape shape, Color color, int n10, Shape shape2) {
-        RV.n(graphics2D, shape, GO.m, color, n10, shape2, true);
-    }
+   public static void t(Graphics var0, Shape var1) {
+      j(var0, var1, true);
+   }
 
-    public static void m(Graphics2D graphics2D, Shape shape, pi_1 pi_12, Color color, int n10, Shape shape2) {
-        RV.n(graphics2D, shape, pi_12, color, n10, shape2, true);
-    }
+   public static void j(Graphics var0, Shape var1, boolean var2) {
+      if (var2 && var1 != null) {
+         var0.setClip(var1);
+      }
+   }
 
-    public static void Z(Graphics2D graphics2D, Shape shape, Color color, int n10, boolean bl) {
-        RV.n(graphics2D, shape, GO.m, color, n10, null, bl);
-    }
+   public static Stroke y(int var0) {
+      return Z(var0, 1, 1);
+   }
 
-    public static void y(Graphics2D graphics2D, Shape shape, pi_1 pi_12, Color color, int n10, boolean bl) {
-        RV.n(graphics2D, shape, pi_12, color, n10, null, bl);
-    }
+   public static Stroke c(int var0, int var1) {
+      return Z(var0, var1, 1);
+   }
 
-    public static void n(Graphics2D graphics2D, Shape shape, Color color, int n10, Shape shape2, boolean bl) {
-        RV.n(graphics2D, shape, GO.m, color, n10, shape2, bl);
-    }
+   public static Stroke Z(int var0, int var1, int var2) {
+      String var4 = var0 + "," + var1 + "," + var2;
+      String var10000 = com.FV.D();
+      Object var5 = (Stroke)g.get(var4);
+      String var3 = var10000;
+      Object var6 = var5;
+      if (var3 == null) {
+         if (var5 == null) {
+            var5 = new BasicStroke((float)var0, var1, var2);
+            g.put(var4, var5);
+         }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    public static void n(Graphics2D var0, Shape var1_1, pi_1 var2_2, Color var3_3, int var4_4, Shape var5_5, boolean var6_6) {
-        block15: {
-            block14: {
-                var7_7 = FV.D();
-                if (var4_4 <= 1) {
-                    return;
-                }
-                v0 = var5_5;
-                if (var7_7 == null) {
-                    v0 = v0 != null ? RV.n(var0, var5_5) : RV.k(var0, var1_1);
-                }
-                var8_8 = v0;
-                var9_9 = var0.getComposite();
-                var10_10 = 1.0f;
-                v1 = var9_9;
-                if (var7_7 != null) break block14;
-                if (!(v1 instanceof AlphaComposite)) break block15;
-                v1 = var9_9;
+         var6 = var5;
+      }
+
+      return (Stroke)var6;
+   }
+
+   public static void Y(Graphics2D var0, Shape var1, Color var2, int var3) {
+      y(var0, var1, GO.m, var2, var3);
+   }
+
+   public static void y(Graphics2D var0, Shape var1, pI_3 var2, Color var3, int var4) {
+      n(var0, var1, var2, var3, var4, null, true);
+   }
+
+   public static void D(Graphics2D var0, Shape var1, Color var2, int var3, Shape var4) {
+      n(var0, var1, GO.m, var2, var3, var4, true);
+   }
+
+   public static void m(Graphics2D var0, Shape var1, pI_3 var2, Color var3, int var4, Shape var5) {
+      n(var0, var1, var2, var3, var4, var5, true);
+   }
+
+   public static void Z(Graphics2D var0, Shape var1, Color var2, int var3, boolean var4) {
+      n(var0, var1, GO.m, var2, var3, null, var4);
+   }
+
+   public static void y(Graphics2D var0, Shape var1, pI_3 var2, Color var3, int var4, boolean var5) {
+      n(var0, var1, var2, var3, var4, null, var5);
+   }
+
+   public static void n(Graphics2D var0, Shape var1, Color var2, int var3, Shape var4, boolean var5) {
+      n(var0, var1, GO.m, var2, var3, var4, var5);
+   }
+
+   public static void n(Graphics2D var0, Shape var1, pI_3 var2, Color var3, int var4, Shape var5, boolean var6) {
+      String var7 = com.FV.D();
+      if (var4 > 1) {
+         Shape var10000 = var5;
+         if (var7 == null) {
+            var10000 = var5 != null ? n(var0, var5) : k(var0, var1);
+         }
+
+         Shape var8;
+         Composite var9;
+         float var10;
+         label72: {
+            var8 = var10000;
+            var9 = var0.getComposite();
+            var10 = 1.0F;
+            Composite var14 = var9;
+            if (var7 == null) {
+               if (!(var9 instanceof AlphaComposite)) {
+                  break label72;
+               }
+
+               var14 = var9;
             }
-            var10_10 = ((AlphaComposite)v1).getAlpha();
-        }
-        var11_11 = var0.getStroke();
-        if (var3_3 != null) {
-            var0.setPaint(var3_3);
-        }
-        v2 = var2_2.equals((Object)pi_1.simple);
-        if (var7_7 != null) ** GOTO lbl32
-        if (v2 == 0) ** GOTO lbl-1000
-        if (GO.p < 1.0f) {
-            var0.setComposite(AlphaComposite.getInstance(3, GO.p * var10_10));
-        }
-        v3 = var6_6;
-        if (var7_7 == null) {
-            v3 = v3 != 0 ? 1 : 0;
-        }
-        var0.setStroke(RV.c(var4_4 * 2, v3));
-        var0.draw(var1_1);
-        if (var7_7 != null) lbl-1000:
-        // 2 sources
 
-        {
-            v2 = var12_12 = (var4_4 *= 2);
-lbl32:
-            // 3 sources
+            var10 = ((AlphaComposite)var14).getAlpha();
+         }
 
-            while (var12_12 >= 2) {
-                var13_13 = (float)(var4_4 - var12_12) / (float)(var4_4 - 1);
-                var0.setComposite(AlphaComposite.getInstance(3, var13_13 * var10_10));
-                v4 = var0;
-                if (var7_7 == null) {
-                    v5 = var6_6;
-                    if (var7_7 == null) {
-                        v5 = v5 != 0 ? 1 : 0;
-                    }
-                    v4.setStroke(RV.c(var12_12, v5));
-                    var0.draw(var1_1);
-                    var12_12 -= 2;
-                    if (var7_7 == null) continue;
-                }
-                break;
+         Stroke var11 = var0.getStroke();
+         if (var3 != null) {
+            var0.setPaint(var3);
+         }
+
+         label65: {
+            label78: {
+               int var15 = var2.equals(pI_3.simple);
+               if (var7 == null) {
+                  if (var15 != 0) {
+                     if (GO.p < 1.0F) {
+                        var0.setComposite(AlphaComposite.getInstance(3, GO.p * var10));
+                     }
+
+                     int var10001 = var4 * 2;
+                     int var10002 = var6;
+                     if (var7 == null) {
+                        var10002 = var6 != 0 ? 1 : 0;
+                     }
+
+                     var0.setStroke(c(var10001, var10002));
+                     var0.draw(var1);
+                     if (var7 == null) {
+                        break label78;
+                     }
+                  }
+
+                  var4 *= 2;
+                  var15 = var4;
+               }
+
+               int var12 = var15;
+
+               while (var12 >= 2) {
+                  float var13 = (float)(var4 - var12) / (float)(var4 - 1);
+                  var0.setComposite(AlphaComposite.getInstance(3, var13 * var10));
+                  var16 = var0;
+                  if (var7 != null) {
+                     break label65;
+                  }
+
+                  int var17 = var6;
+                  if (var7 == null) {
+                     var17 = var6 != 0 ? 1 : 0;
+                  }
+
+                  var0.setStroke(c(var12, var17));
+                  var0.draw(var1);
+                  var12 -= 2;
+                  if (var7 != null) {
+                     break;
+                  }
+               }
             }
-        } else {
-            RV.p(var0, var11_11);
-            RV.c(var0, var9_9);
-            v4 = var0;
-        }
-        RV.w(v4, var8_8);
-    }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "-?\u0003i+L\r8f\u0013\">H\u0017#8\u001f.#W\u0010".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 62;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+            p(var0, var11);
+            c(var0, var9);
+            var16 = var0;
+         }
+
+         w(var16, var8);
+      }
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "-?\u0003i+L\r8f\u0013\">H\u0017#8\u001f.#W\u0010".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 62;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      char[] var10;
+      byte var14;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var10 = var10003;
+         var10005 = var0;
+         char var10008 = var10003[var0];
+         var10007 = 62;
+         var10006 = var10008;
+         switch (var0 % 7) {
+            case 0:
+               var14 = 114;
+               break;
+            case 1:
+               var14 = 118;
+               break;
+            case 2:
+               var14 = 73;
+               break;
+            case 3:
+               var14 = 121;
+               break;
+            case 4:
+               var14 = 115;
+               break;
+            case 5:
+               var14 = 29;
+               break;
+            default:
+               var14 = 93;
+         }
+      } else {
+         var6 = 62;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            m = false;
+            H = null;
+            g = new HashMap();
+            return;
+         }
+
+         var10 = var10003;
+         var10005 = var0;
+         char var15 = var10003[var0];
+         var10007 = 62;
+         var10006 = var15;
+         switch (var0 % 7) {
+            case 0:
+               var14 = 114;
+               break;
+            case 1:
+               var14 = 118;
+               break;
+            case 2:
+               var14 = 73;
+               break;
+            case 3:
+               var14 = 121;
+               break;
+            case 4:
+               var14 = 115;
+               break;
+            case 5:
+               var14 = 29;
+               break;
+            default:
+               var14 = 93;
+         }
+      }
+
+      while (true) {
+         var10[var10005] = (char)(var10006 ^ var10007 ^ var14);
+         var0++;
+         if (var6 == 0) {
+            var10 = var10002;
+            var10005 = var6;
+            char var17 = var10002[var6];
+            var10007 = var6;
+            var10006 = var17;
+            switch (var0 % 7) {
+               case 0:
+                  var14 = 114;
+                  break;
+               case 1:
+                  var14 = 118;
+                  break;
+               case 2:
+                  var14 = 73;
+                  break;
+               case 3:
+                  var14 = 121;
+                  break;
+               case 4:
+                  var14 = 115;
+                  break;
+               case 5:
+                  var14 = 29;
+                  break;
+               default:
+                  var14 = 93;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 114;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 118;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 73;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 121;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 115;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 29;
-                            break;
-                        }
-                        default: {
-                            n17 = 93;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        m = false;
-        H = null;
-        g = new HashMap();
-    }
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               m = false;
+               H = null;
+               g = new HashMap();
+               return;
+            }
+
+            var10 = var10002;
+            var10005 = var0;
+            char var16 = var10002[var0];
+            var10007 = var6;
+            var10006 = var16;
+            switch (var0 % 7) {
+               case 0:
+                  var14 = 114;
+                  break;
+               case 1:
+                  var14 = 118;
+                  break;
+               case 2:
+                  var14 = 73;
+                  break;
+               case 3:
+                  var14 = 121;
+                  break;
+               case 4:
+                  var14 = 115;
+                  break;
+               case 5:
+                  var14 = 29;
+                  break;
+               default:
+                  var14 = 93;
+            }
+         }
+      }
+   }
 }
+
+
+
+
 

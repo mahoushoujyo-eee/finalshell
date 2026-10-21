@@ -1,76 +1,85 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.EW;
-import com.XE;
-import com._y_0;
-import com.iy_1;
-import com.pa_1;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
-class SB
-extends MouseMotionAdapter {
-    final iy_1 F;
-    final pa_1 d;
+class SB extends MouseMotionAdapter {
+   final iY_3 F;
+   final pA_3 d;
 
-    SB(pa_1 pa_12, iy_1 iy_12) {
-        this.d = pa_12;
-        this.F = iy_12;
-    }
+   SB(pA_3 var1, iY_3 var2) {
+      this.d = var1;
+      this.F = var2;
+   }
 
-    @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
-        block3: {
-            MouseEvent mouseEvent2;
-            pa_1 pa_12;
-            block4: {
-                boolean bl;
-                block2: {
-                    int n10 = _y_0.M();
-                    bl = pa_1.S(this.d).t();
-                    if (n10 == 0) break block2;
-                    if (!bl) break block3;
-                    pa_12 = this.d;
-                    mouseEvent2 = mouseEvent;
-                    if (n10 == 0) break block4;
-                    bl = pa_12.b(mouseEvent2);
-                }
-                if (!bl) break block3;
-                pa_12 = this.d;
-                mouseEvent2 = mouseEvent;
+   @Override
+   public void mouseMoved(MouseEvent var1) {
+      pA_3 var4;
+      MouseEvent var10001;
+      label24: {
+         int var2 = _y_2.M();
+         boolean var10000 = pA_3.S(this.d).t();
+         if (var2 != 0) {
+            if (!var10000) {
+               return;
             }
-            XE xE2 = pa_1.x(pa_12, mouseEvent2.getPoint());
-            this.F.R(xE2.q, xE2.r, new EW(mouseEvent));
-        }
-    }
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-        block3: {
-            MouseEvent mouseEvent2;
-            pa_1 pa_12;
-            block4: {
-                boolean bl;
-                block2: {
-                    int n10 = _y_0.y();
-                    bl = pa_1.S(this.d).t();
-                    if (n10 != 0) break block2;
-                    if (!bl) break block3;
-                    pa_12 = this.d;
-                    mouseEvent2 = mouseEvent;
-                    if (n10 != 0) break block4;
-                    bl = pa_12.b(mouseEvent2);
-                }
-                if (!bl) break block3;
-                pa_12 = this.d;
-                mouseEvent2 = mouseEvent;
+            var4 = this.d;
+            var10001 = var1;
+            if (var2 == 0) {
+               break label24;
             }
-            XE xE2 = pa_1.x(pa_12, mouseEvent2.getPoint());
-            this.F.G(xE2.q, xE2.r, new EW(mouseEvent));
-        }
-    }
+
+            var10000 = this.d.b(var1);
+         }
+
+         if (!var10000) {
+            return;
+         }
+
+         var4 = this.d;
+         var10001 = var1;
+      }
+
+      XE var3 = pA_3.x(var4, var10001.getPoint());
+      this.F.R(var3.q, var3.r, new EW(var1));
+   }
+
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      pA_3 var4;
+      MouseEvent var10001;
+      label24: {
+         int var2 = _y_2.y();
+         boolean var10000 = pA_3.S(this.d).t();
+         if (var2 == 0) {
+            if (!var10000) {
+               return;
+            }
+
+            var4 = this.d;
+            var10001 = var1;
+            if (var2 != 0) {
+               break label24;
+            }
+
+            var10000 = this.d.b(var1);
+         }
+
+         if (!var10000) {
+            return;
+         }
+
+         var4 = this.d;
+         var10001 = var1;
+      }
+
+      XE var3 = pA_3.x(var4, var10001.getPoint());
+      this.F.G(var3.q, var3.r, new EW(var1));
+   }
 }
+
+
+
+
 

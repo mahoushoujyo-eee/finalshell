@@ -1,35 +1,31 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com._y_0;
-import com.dv_1;
-import com.fv_0;
-import com.uR;
-import com.xn_2;
 import java.awt.Dimension;
 import javax.swing.JComponent;
 
 public interface FM {
-    public _y_0 f(fv_0 var1);
+   _y_2 f(com.Fv_2 var1);
 
-    public JComponent M();
+   JComponent M();
 
-    default public JComponent h() {
-        return this.M();
-    }
+   default JComponent h() {
+      return this.M();
+   }
 
-    public boolean v();
+   boolean v();
 
-    public void W(xn_2 var1);
+   void W(xn_4 var1);
 
-    public Dimension getPreferredSize();
+   Dimension getPreferredSize();
 
-    public dv_1 g();
+   com.dV_3 g();
 
-    public void r(uR var1);
+   void r(uR var1);
 
-    public void T(uR var1);
+   void T(uR var1);
 }
+
+
+
+
 

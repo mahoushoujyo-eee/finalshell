@@ -1,53 +1,50 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.CN;
-import com.ak_0;
-import com.nl_1;
-import com.nv_2;
-import java.io.IOException;
-import java.lang.reflect.Type;
+import java.io.File;
+import java.util.List;
 
-/*
- * Renamed from com.kx
- */
-public class kx_2
-implements ak_0 {
-    public static kx_2 b = new kx_2();
+public abstract class Kx_2 implements com.oQ_3 {
+   private final List w;
 
-    @Override
-    public void u(nl_1 nl_12, Object object, Object object2, Type type, int n10) throws IOException {
-        CN cN;
-        block4: {
-            CN cN2;
-            block5: {
-                cN2 = (CN)object;
-                String string = nv_2.o();
-                try {
-                    try {
-                        cN = cN2;
-                        if (string == null) break block4;
-                        if (cN != null) break block5;
-                    }
-                    catch (IOException iOException) {
-                        throw kx_2.a(iOException);
-                    }
-                    nl_12.e();
-                    return;
-                }
-                catch (IOException iOException) {
-                    throw kx_2.a(iOException);
-                }
-            }
-            cN = cN2;
-        }
-        cN.G(nl_12, object2, type, n10);
-    }
+   public Kx_2() {
+      this((List)null);
+   }
 
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
+   public Kx_2(String[] var1) {
+      this(com.aL.F(var1));
+   }
+
+   public Kx_2(List var1) {
+      this.w = var1;
+   }
+
+   public List u() {
+      return this.w;
+   }
+
+   @Override
+   public boolean accept(File var1) {
+      int var2 = com.Yt_2.C();
+      List var10000 = this.w;
+      if (var2 != 0) {
+         if (this.w == null) {
+            return true;
+         }
+
+         var10000 = this.w;
+      }
+
+      boolean var3 = var10000.contains(com.Cz_2.G(var1.getName(), false));
+      return var2 == 0 ? var3 : var3;
+   }
+
+   @Override
+   public boolean n(Object var1) {
+      return this.accept((File)var1);
+   }
 }
+
+
+
+
 

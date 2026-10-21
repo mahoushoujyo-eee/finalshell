@@ -1,65 +1,69 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.G9;
-import com.GX;
-import com.en_2;
-import com.i2_0;
-import com.wp_0;
 import java.awt.Component;
 import java.util.List;
 import javax.swing.JComponent;
 
-public class KC
-implements en_2 {
-    @Override
-    public void Q(Component component, G9 g92) {
-        block5: {
-            List list;
-            JComponent jComponent;
-            boolean bl;
-            boolean bl2;
-            block8: {
-                block7: {
-                    G9 g93;
-                    block6: {
-                        bl2 = component instanceof JComponent;
-                        bl = i2_0.K();
-                        if (!bl2) break block5;
-                        jComponent = (JComponent)component;
-                        jComponent.setToolTipText(null);
-                        g93 = g92;
-                        if (!bl) break block6;
-                        if (g93 == null) break block5;
-                        g93 = g92;
-                    }
-                    list = g93.e();
-                    if (!bl) break block7;
-                    if (list == null) break block5;
-                    list = g92.e();
-                }
-                if (!bl) break block8;
-                if (list.size() <= 0) break block5;
-                list = g92.e();
+public class KC implements en_4 {
+   @Override
+   public void Q(Component var1, G9 var2) {
+      boolean var10000 = i2_2.K();
+      boolean var4 = var1 instanceof JComponent;
+      boolean var3 = var10000;
+      if (var4) {
+         JComponent var5 = (JComponent)var1;
+         var5.setToolTipText(null);
+         G9 var8 = var2;
+         if (var3) {
+            if (var2 == null) {
+               return;
             }
-            for (wp_0 wp_02 : list) {
-                block10: {
-                    boolean bl3;
-                    block9: {
-                        bl3 = wp_02.w().equals((Object)GX.swing);
-                        if (!bl) break block9;
-                        if (!bl3) break block10;
-                        bl3 = bl2;
-                    }
-                    if (bl3) {
-                        jComponent.setToolTipText(wp_02.A());
-                    }
-                }
-                if (bl) continue;
+
+            var8 = var2;
+         }
+
+         List var9 = var8.e();
+         if (var3) {
+            if (var9 == null) {
+               return;
             }
-        }
-    }
+
+            var9 = var2.e();
+         }
+
+         if (var3) {
+            if (var9.size() <= 0) {
+               return;
+            }
+
+            var9 = var2.e();
+         }
+
+         for (com.Wp_2 var7 : var9) {
+            label32: {
+               var10000 = var7.w().equals(GX.swing);
+               if (var3) {
+                  if (!var10000) {
+                     break label32;
+                  }
+
+                  var10000 = var4;
+               }
+
+               if (var10000) {
+                  var5.setToolTipText(var7.A());
+               }
+            }
+
+            if (!var3) {
+               break;
+            }
+         }
+      }
+   }
 }
+
+
+
+
 

@@ -1,260 +1,316 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.NM;
-import com.W5;
-
 public class HY {
-    public float[] I;
-    public float[] E;
-    private static final long[] a;
-    private static final Integer[] b;
+   public float[] I;
+   public float[] E;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public HY() {
-        this.I = new float[]{0.0f, 1.0f};
-        this.E = new float[]{0.0f, 1.0f};
-    }
+   public HY() {
+      this.I = new float[]{0.0F, 1.0F};
+      this.E = new float[]{0.0F, 1.0F};
+   }
 
-    public HY(HY hY2) {
-        this.I = (float[])hY2.I.clone();
-        this.E = (float[])hY2.E.clone();
-    }
+   public HY(HY var1) {
+      this.I = (float[])var1.I.clone();
+      this.E = (float[])var1.E.clone();
+   }
 
-    public int y(float f10, float f11) {
-        int n10;
-        block13: {
-            int n11;
-            int n12;
-            float[] fArray;
-            float[] fArray2;
-            int n13;
-            block9: {
-                n13 = -1;
-                int n14 = this.I.length;
-                fArray2 = new float[n14 + 1];
-                fArray = new float[n14 + 1];
-                String[] stringArray = W5.q();
-                n12 = 0;
-                for (int i2 = 0; i2 < n14; ++i2) {
-                    block12: {
-                        int n15;
-                        float[] fArray3;
-                        block11: {
-                            int n16;
-                            block10: {
-                                n16 = n13;
-                                if (stringArray == null) break block10;
-                                n11 = -1;
-                                if (stringArray == null) break block9;
-                                if (n16 != n11) break block11;
-                                fArray3 = this.I;
-                                n15 = i2;
-                                if (stringArray == null) break block12;
-                                float f12 = fArray3[n15] - f10;
-                                n16 = f12 == 0.0f ? 0 : (f12 > 0.0f ? 1 : -1);
-                            }
-                            if (n16 > 0) {
-                                n13 = n12;
-                                fArray2[n12] = f10;
-                                fArray[n12] = f11;
-                                ++n12;
-                            }
-                        }
-                        fArray2[n12] = this.I[i2];
-                        fArray3 = fArray;
-                        n15 = n12;
-                    }
-                    fArray3[n15] = this.E[i2];
-                    ++n12;
-                    if (stringArray != null) continue;
-                }
-                n10 = n13;
-                if (stringArray == null) break block13;
-                n11 = -1;
-            }
-            if (n10 == n11) {
-                n13 = n12;
-                fArray2[n12] = f10;
-                fArray[n12] = f11;
-            }
-            this.I = fArray2;
-            this.E = fArray;
-            n10 = n13;
-        }
-        return n10;
-    }
+   public int y(float var1, float var2) {
+      int var4 = -1;
+      int var5 = this.I.length;
+      float[] var6 = new float[var5 + 1];
+      String[] var10000 = com.W5.q();
+      float[] var7 = new float[var5 + 1];
+      String[] var3 = var10000;
+      int var8 = 0;
+      int var9 = 0;
 
-    public void i(int n10) {
-        block5: {
-            int n11 = this.I.length;
-            String[] stringArray = W5.q();
-            int n12 = n11;
-            int n13 = 2;
-            if (stringArray != null) {
-                if (n12 <= n13) {
-                    return;
-                }
-                n12 = n11;
-                n13 = 1;
-            }
-            float[] fArray = new float[n12 - n13];
-            float[] fArray2 = new float[n11 - 1];
-            int n14 = 0;
-            for (int i2 = 0; i2 < n11 - 1; ++i2) {
-                if (stringArray != null) {
-                    if (i2 == n10) {
-                        ++n14;
-                    }
-                    fArray[i2] = this.I[n14];
-                    fArray2[i2] = this.E[n14];
-                    ++n14;
-                    if (stringArray != null) continue;
-                }
-                break block5;
-            }
-            this.I = fArray;
-            this.E = fArray2;
-        }
-    }
-
-    private void W() {
-        int n10 = this.I.length;
-        String[] stringArray = W5.q();
-        int n11 = 1;
-        block0: while (true) {
-            int n12 = n11;
-            block1: while (n12 < n10 - 1) {
-                for (int i2 = 1; i2 < n11; ++i2) {
-                    float f10 = this.I[n11];
-                    if (stringArray != null) {
-                        float f11 = f10 - this.I[i2];
-                        n12 = f11 == 0.0f ? 0 : (f11 < 0.0f ? -1 : 1);
-                        if (stringArray == null) continue block1;
-                        if (n12 >= 0) continue;
-                        f10 = this.I[n11];
-                    }
-                    float f12 = f10;
-                    this.I[n11] = this.I[i2];
-                    this.I[i2] = f12;
-                    f12 = this.E[n11];
-                    this.E[n11] = this.E[i2];
-                    this.E[i2] = f12;
-                    if (stringArray != null) continue;
-                }
-                ++n11;
-                if (stringArray != null) continue block0;
-            }
-            break;
-        }
-    }
-
-    protected int[] b() {
-        int[] nArray;
-        block2: {
-            int n10 = this.I.length;
-            float[] fArray = new float[n10 + 2];
-            float[] fArray2 = new float[n10 + 2];
-            System.arraycopy(this.I, 0, fArray, 1, n10);
-            System.arraycopy(this.E, 0, fArray2, 1, n10);
-            fArray[0] = fArray[1];
-            fArray2[0] = fArray2[1];
-            fArray[n10 + 1] = fArray[n10];
-            fArray2[n10 + 1] = fArray2[n10];
-            int[] nArray2 = new int[HY.a(32695, 1370387733027432989L)];
-            String[] stringArray = W5.q();
-            for (int i2 = 0; i2 < HY.a(14337, 711105571554651560L); ++i2) {
-                float f10 = (float)i2 / 1024.0f;
-                int n11 = (int)(255.0f * NM.s(f10, fArray.length, fArray) + 0.5f);
-                int n12 = (int)(255.0f * NM.s(f10, fArray.length, fArray2) + 0.5f);
-                n11 = NM.L(n11, 0, HY.a(15925, 7243672810898123677L));
-                n12 = NM.L(n12, 0, HY.a(24392, 5156954390393916131L));
-                nArray = nArray2;
-                if (stringArray != null) {
-                    nArray[n11] = n12;
-                    if (stringArray != null) continue;
-                }
-                break block2;
-            }
-            nArray = nArray2;
-        }
-        return nArray;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 2823338731377797656L;
-                var6_1 = new long[4];
-                var3_2 = 0;
-                var4_3 = "\u0089\u00a7\u00bc\u0007\u00fa0\u00c3\u00b0\u008c\u0015\u00b4\u00ec\u00ee\u00dc\u00c1z";
-                var5_4 = "\u0089\u00a7\u00bc\u0007\u00fa0\u00c3\u00b0\u008c\u0015\u00b4\u00ec\u00ee\u00dc\u00c1z".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "\u001a\u00abj\u00dd\u00162 \u0004F*N \u00fb\u00c7\u0001\u0005";
-                    var5_4 = "\u001a\u00abj\u00dd\u00162 \u0004F*N \u00fb\u00c7\u0001\u0005".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
+      int var10001;
+      while (true) {
+         if (var9 < var5) {
+            label39: {
+               label38: {
+                  var10 = var4;
+                  if (var3 != null) {
+                     var10001 = -1;
+                     if (var3 == null) {
                         break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
+                     }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+                     if (var4 != -1) {
+                        break label38;
+                     }
+
+                     var11 = this.I;
+                     var10001 = var9;
+                     if (var3 == null) {
+                        break label39;
+                     }
+
+                     float var13;
+                     var10 = (var13 = this.I[var9] - var1) == 0.0F ? 0 : (var13 < 0.0F ? -1 : 1);
+                  }
+
+                  if (var10 > 0) {
+                     var4 = var8;
+                     var6[var8] = var1;
+                     var7[var8] = var2;
+                     var8++;
+                  }
+               }
+
+               var6[var8] = this.I[var9];
+               var11 = var7;
+               var10001 = var8;
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
 
-                ** continue;
+            var11[var10001] = this.E[var9];
+            var8++;
+            var9++;
+            if (var3 != null) {
+               continue;
             }
-        }
-        HY.a = var6_1;
-        HY.b = new Integer[4];
-    }
+         }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x55A9;
-        if (b[n11] == null) {
-            HY.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+         var10 = var4;
+         if (var3 == null) {
+            return var4;
+         }
+
+         var10001 = -1;
+         break;
+      }
+
+      if (var10 == var10001) {
+         var4 = var8;
+         var6[var8] = var1;
+         var7[var8] = var2;
+      }
+
+      this.I = var6;
+      this.E = var7;
+      return var4;
+   }
+
+   public void i(int var1) {
+      String[] var10000 = com.W5.q();
+      int var3 = this.I.length;
+      String[] var2 = var10000;
+      int var8 = var3;
+      byte var10001 = 2;
+      if (var2 != null) {
+         if (var3 <= 2) {
+            return;
+         }
+
+         var8 = var3;
+         var10001 = 1;
+      }
+
+      float[] var4 = new float[var8 - var10001];
+      float[] var5 = new float[var3 - 1];
+      int var6 = 0;
+      int var7 = 0;
+
+      while (true) {
+         if (var7 < var3 - 1) {
+            if (var2 == null) {
+               break;
+            }
+
+            if (var7 == var1) {
+               var6++;
+            }
+
+            var4[var7] = this.I[var6];
+            var5[var7] = this.E[var6];
+            var6++;
+            var7++;
+            if (var2 != null) {
+               continue;
+            }
+         }
+
+         this.I = var4;
+         this.E = var5;
+         break;
+      }
+   }
+
+   private void W() {
+      String[] var10000 = com.W5.q();
+      int var2 = this.I.length;
+      String[] var1 = var10000;
+      int var3 = 1;
+
+      label39:
+      while (true) {
+         int var7 = var3;
+
+         label37:
+         while (var7 < var2 - 1) {
+            int var4 = 1;
+
+            while (var4 < var3) {
+               label31: {
+                  float var8 = this.I[var3];
+                  if (var1 != null) {
+                     float var9;
+                     var7 = (var9 = var8 - this.I[var4]) == 0.0F ? 0 : (var9 < 0.0F ? -1 : 1);
+                     if (var1 == null) {
+                        continue label37;
+                     }
+
+                     if (var7 >= 0) {
+                        break label31;
+                     }
+
+                     var8 = this.I[var3];
+                  }
+
+                  float var5 = var8;
+                  this.I[var3] = this.I[var4];
+                  this.I[var4] = var5;
+                  var5 = this.E[var3];
+                  this.E[var3] = this.E[var4];
+                  this.E[var4] = var5;
+               }
+
+               var4++;
+               if (var1 == null) {
+                  break;
+               }
+            }
+
+            var3++;
+            if (var1 == null) {
+               return;
+            }
+            continue label39;
+         }
+
+         return;
+      }
+   }
+
+   protected int[] b() {
+      int var2 = this.I.length;
+      float[] var3 = new float[var2 + 2];
+      float[] var4 = new float[var2 + 2];
+      System.arraycopy(this.I, 0, var3, 1, var2);
+      System.arraycopy(this.E, 0, var4, 1, var2);
+      String[] var10000 = com.W5.q();
+      var3[0] = var3[1];
+      var4[0] = var4[1];
+      var3[var2 + 1] = var3[var2];
+      var4[var2 + 1] = var4[var2];
+      int[] var5 = new int[a(32695, 1370387733027432989L)];
+      int var6 = 0;
+      String[] var1 = var10000;
+
+      while (true) {
+         if (var6 < a(14337, 711105571554651560L)) {
+            float var7 = (float)var6 / 1024.0F;
+            int var8 = (int)(255.0F * NM.s(var7, var3.length, var3) + 0.5F);
+            int var9 = (int)(255.0F * NM.s(var7, var3.length, var4) + 0.5F);
+            var8 = NM.L(var8, 0, a(15925, 7243672810898123677L));
+            var9 = NM.L(var9, 0, a(24392, 5156954390393916131L));
+            var12 = var5;
+            if (var1 == null) {
+               break;
+            }
+
+            var5[var8] = var9;
+            var6++;
+            if (var1 != null) {
+               continue;
+            }
+         }
+
+         var12 = var5;
+         break;
+      }
+
+      return var12;
+   }
+
+   static {
+      long var0 = 2823338731377797656L;
+      long[] var6 = new long[4];
+      int var3 = 0;
+      String var4 = "\u0089§¼\u0007ú0Ã°\u008c\u0015´ìîÜÁz";
+      int var5 = "\u0089§¼\u0007ú0Ã°\u008c\u0015´ìîÜÁz".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     b = new Integer[4];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "\u001a«jÝ\u00162 \u0004F*N ûÇ\u0001\u0005";
+                  var5 = "\u001a«jÝ\u00162 \u0004F*N ûÇ\u0001\u0005".length();
+                  var2 = 0;
+            }
+
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 21929;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

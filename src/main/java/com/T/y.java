@@ -1,24 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.t;
 
-import com.t.n_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class y
-implements ActionListener {
-    final n_0 L;
+class y implements ActionListener {
+   final com.t.n_2 L;
 
-    y(n_0 n_02) {
-        this.L = n_02;
-    }
+   y(com.t.n_2 var1) {
+      this.L = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.L.x(this.L.t());
-        n_0.D(this.L, actionEvent);
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.L.x(this.L.t());
+      com.t.n_2.D(this.L, var1);
+   }
 }
+
+
+
+
 

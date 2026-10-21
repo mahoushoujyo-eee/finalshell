@@ -1,7 +1,8 @@
-/*
- * Decompiled with CFR 0.152.
- */
 public interface YA {
-    public boolean w(Object var1);
+   boolean w(Object var1);
 }
+
+
+
+
 

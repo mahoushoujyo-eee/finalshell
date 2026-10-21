@@ -1,46 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
-import org.v.NJ;
-import org.v.NV;
-import org.v._4;
-import org.v._w_0;
-import org.v.fc_0;
-import org.v.fo_0;
-import org.v.h_1;
-import org.v.hl_0;
+class hJ implements fo_2 {
+   final _4 O = new fc_2(this);
+   final _w_2 M = new hl_2(this);
 
-class hJ
-implements fo_0 {
-    final _4 O = new fc_0(this);
-    final _w_0 M = new hl_0(this);
+   @org.F.c
+   public Boolean d(NV var1) {
+      return (Boolean)var1.i(this.M);
+   }
 
-    hJ() {
-    }
+   @org.F.c
+   public Boolean f(NJ var1) {
+      return H_3.v(var1.n);
+   }
 
-    @c
-    public Boolean d(NV nV2) {
-        return (Boolean)nV2.i(this.M);
-    }
+   @org.F.c
+   @Override
+   public Object q(NV var1) throws Throwable {
+      return this.d(var1);
+   }
 
-    @c
-    public Boolean f(NJ nJ2) {
-        return h_1.v(nJ2.n);
-    }
-
-    @Override
-    @c
-    public Object q(NV nV2) throws Throwable {
-        return this.d(nV2);
-    }
-
-    @Override
-    @c
-    public Object u(NJ nJ2) throws Throwable {
-        return this.f(nJ2);
-    }
+   @org.F.c
+   @Override
+   public Object u(NJ var1) throws Throwable {
+      return this.f(var1);
+   }
 }
+
+
+
+
 

@@ -1,16 +1,16 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.i;
 
-public class y
-extends Exception {
-    public y(String string) {
-        super(string);
-    }
+public class y extends Exception {
+   public y(String var1) {
+      super(var1);
+   }
 
-    public y(String string, Throwable throwable) {
-        super(string, throwable);
-    }
+   public y(String var1, Throwable var2) {
+      super(var1, var2);
+   }
 }
+
+
+
+
 

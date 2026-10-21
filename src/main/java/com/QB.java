@@ -1,25 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.GO;
-import com.ON;
-import com.SN;
-import com.WC;
-import com.W_;
-import com._U;
-import com.aL;
-import com.cg_2;
-import com.dv_2;
-import com.ie_1;
-import com.ka_0;
-import com.ky_2;
-import com.oc_2;
-import com.og_2;
-import com.rt_0;
-import com.xk_0;
 import java.awt.Component;
 import java.awt.LayoutManager;
 import java.awt.Point;
@@ -29,840 +9,1074 @@ import java.awt.Window;
 import java.awt.event.AWTEventListener;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 import javax.swing.JWindow;
 import javax.swing.Popup;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public class QB
-extends ky_2
-implements W_ {
-    protected List a = new ArrayList(2);
-    protected boolean V = true;
-    protected boolean F = true;
-    protected boolean e = false;
-    protected boolean Y = false;
-    protected float P = 1.0f;
-    protected boolean n = true;
-    protected float A = 0.05f;
-    protected float y = 0.0f;
-    protected final Object c = new Object();
-    protected boolean r = false;
-    protected boolean U = false;
-    protected WC l = null;
-    protected WC S = null;
-    protected final List t;
-    protected final List K;
-    protected final Object i;
-    protected Popup E;
-    protected JWindow w;
-    protected Component b;
-    protected Window z;
-    protected AWTEventListener N;
-    protected ka_0 f;
-    protected rt_0 W;
-    private static final long p;
+public class QB extends com.ky_4 implements com.W_ {
+   protected List a = new ArrayList(2);
+   protected boolean V = true;
+   protected boolean F = true;
+   protected boolean e = false;
+   protected boolean Y = false;
+   protected float P = 1.0F;
+   protected boolean n = true;
+   protected float A = 0.05F;
+   protected float y;
+   protected final Object c;
+   protected boolean r;
+   protected boolean U;
+   protected com.WC l;
+   protected com.WC S;
+   protected final List t;
+   protected final List K;
+   protected final Object i;
+   protected Popup E;
+   protected JWindow w;
+   protected Component b;
+   protected Window z;
+   protected AWTEventListener N;
+   protected com.Ka_2 f;
+   protected Rt_2 W;
+   private static final long p;
 
-    public QB() {
-        this.t = new ArrayList();
-        this.K = new ArrayList();
-        this.i = new Object();
-    }
+   public QB() {
+      this.y = 0.0F;
+      this.c = new Object();
+      this.r = false;
+      this.U = false;
+      this.l = null;
+      this.S = null;
+      this.t = new ArrayList();
+      this.K = new ArrayList();
+      this.i = new Object();
+   }
 
-    public QB(Component component) {
-        super(component);
-        this.t = new ArrayList();
-        this.K = new ArrayList();
-        this.i = new Object();
-    }
+   public QB(Component var1) {
+      super(var1);
+      this.y = 0.0F;
+      this.c = new Object();
+      this.r = false;
+      this.U = false;
+      this.l = null;
+      this.S = null;
+      this.t = new ArrayList();
+      this.K = new ArrayList();
+      this.i = new Object();
+   }
 
-    public QB(og_2 og_22) {
-        super(og_22);
-        this.t = new ArrayList();
-        this.K = new ArrayList();
-        this.i = new Object();
-    }
+   public QB(com.og_4 var1) {
+      super(var1);
+      this.y = 0.0F;
+      this.c = new Object();
+      this.r = false;
+      this.U = false;
+      this.l = null;
+      this.S = null;
+      this.t = new ArrayList();
+      this.K = new ArrayList();
+      this.i = new Object();
+   }
 
-    public QB(LayoutManager layoutManager, og_2 og_22) {
-        super(layoutManager, og_22);
-        this.t = new ArrayList();
-        this.K = new ArrayList();
-        this.i = new Object();
-    }
+   public QB(LayoutManager var1, com.og_4 var2) {
+      super(var1, var2);
+      this.y = 0.0F;
+      this.c = new Object();
+      this.r = false;
+      this.U = false;
+      this.l = null;
+      this.S = null;
+      this.t = new ArrayList();
+      this.K = new ArrayList();
+      this.i = new Object();
+   }
 
-    public QB(og_2 og_22, Component component) {
-        super(og_22, component);
-        this.t = new ArrayList();
-        this.K = new ArrayList();
-        this.i = new Object();
-    }
+   public QB(com.og_4 var1, Component var2) {
+      super(var1, var2);
+      this.y = 0.0F;
+      this.c = new Object();
+      this.r = false;
+      this.U = false;
+      this.l = null;
+      this.S = null;
+      this.t = new ArrayList();
+      this.K = new ArrayList();
+      this.i = new Object();
+   }
 
-    public QB(LayoutManager layoutManager, og_2 og_22, Component[] componentArray) {
-        super(layoutManager, og_22, componentArray);
-        int[] nArray = WC.V();
-        this.t = new ArrayList();
-        this.K = new ArrayList();
-        this.i = new Object();
-        if (ky_2.F() != null) {
-            WC.I(new int[4]);
-        }
-    }
+   public QB(LayoutManager var1, com.og_4 var2, Component[] var3) {
+      super(var1, var2, var3);
+      com.WC.V();
+      this.y = 0.0F;
+      this.c = new Object();
+      this.r = false;
+      this.U = false;
+      this.l = null;
+      this.S = null;
+      this.t = new ArrayList();
+      this.K = new ArrayList();
+      this.i = new Object();
+      if (com.ky_4.F() != null) {
+         com.WC.I(new int[4]);
+      }
+   }
 
-    public QB(LayoutManager layoutManager) {
-        super(layoutManager);
-        this.t = new ArrayList();
-        this.K = new ArrayList();
-        this.i = new Object();
-    }
+   public QB(LayoutManager var1) {
+      super(var1);
+      this.y = 0.0F;
+      this.c = new Object();
+      this.r = false;
+      this.U = false;
+      this.l = null;
+      this.S = null;
+      this.t = new ArrayList();
+      this.K = new ArrayList();
+      this.i = new Object();
+   }
 
-    public QB(LayoutManager layoutManager, Component[] componentArray) {
-        super(layoutManager, componentArray);
-        this.t = new ArrayList();
-        this.K = new ArrayList();
-        this.i = new Object();
-    }
+   public QB(LayoutManager var1, Component[] var2) {
+      super(var1, var2);
+      this.y = 0.0F;
+      this.c = new Object();
+      this.r = false;
+      this.U = false;
+      this.l = null;
+      this.S = null;
+      this.t = new ArrayList();
+      this.K = new ArrayList();
+      this.i = new Object();
+   }
 
-    public QB(String string) {
-        super(string);
-        this.t = new ArrayList();
-        this.K = new ArrayList();
-        this.i = new Object();
-    }
+   public QB(String var1) {
+      super(var1);
+      this.y = 0.0F;
+      this.c = new Object();
+      this.r = false;
+      this.U = false;
+      this.l = null;
+      this.S = null;
+      this.t = new ArrayList();
+      this.K = new ArrayList();
+      this.i = new Object();
+   }
 
-    public QB(String string, LayoutManager layoutManager) {
-        super(string, layoutManager);
-        this.t = new ArrayList();
-        this.K = new ArrayList();
-        this.i = new Object();
-    }
+   public QB(String var1, LayoutManager var2) {
+      super(var1, var2);
+      this.y = 0.0F;
+      this.c = new Object();
+      this.r = false;
+      this.U = false;
+      this.l = null;
+      this.S = null;
+      this.t = new ArrayList();
+      this.K = new ArrayList();
+      this.i = new Object();
+   }
 
-    public QB(String string, Component component) {
-        super(string, component);
-        this.t = new ArrayList();
-        this.K = new ArrayList();
-        this.i = new Object();
-    }
+   public QB(String var1, Component var2) {
+      super(var1, var2);
+      this.y = 0.0F;
+      this.c = new Object();
+      this.r = false;
+      this.U = false;
+      this.l = null;
+      this.S = null;
+      this.t = new ArrayList();
+      this.K = new ArrayList();
+      this.i = new Object();
+   }
 
-    public boolean l() {
-        return this.V;
-    }
+   public boolean l() {
+      return this.V;
+   }
 
-    public void a(boolean bl) {
-        this.V = bl;
-    }
+   public void a(boolean var1) {
+      this.V = var1;
+   }
 
-    public Popup F() {
-        return this.E;
-    }
+   public Popup F() {
+      return this.E;
+   }
 
-    public JWindow W() {
-        return this.w;
-    }
+   public JWindow W() {
+      return this.w;
+   }
 
-    public Component F() {
-        return this.b;
-    }
+   public Component F$Component() {
+      return this.b;
+   }
 
-    public Window w() {
-        return this.z;
-    }
+   public Window w() {
+      return this.z;
+   }
 
-    public float u() {
-        return this.y;
-    }
+   public float u() {
+      return this.y;
+   }
 
-    public boolean q() {
-        return this.r;
-    }
+   public boolean q() {
+      return this.r;
+   }
 
-    public boolean k() {
-        return this.U;
-    }
+   public boolean k() {
+      return this.U;
+   }
 
-    public JWindow C(boolean bl) {
-        this.F = bl;
-        return this.E();
-    }
+   public JWindow C(boolean var1) {
+      this.F = var1;
+      return this.E();
+   }
 
-    protected JWindow E() {
-        int[] nArray = WC.V();
-        JWindow jWindow = this.w;
-        if (nArray == null) {
-            if (jWindow != null) {
-                SN.N(this.w, this.F);
+   protected JWindow E() {
+      int[] var1 = com.WC.V();
+      JWindow var10000 = this.w;
+      if (var1 == null) {
+         if (this.w != null) {
+            SN.N(this.w, this.F);
+         }
+
+         var10000 = this.w;
+      }
+
+      return var10000;
+   }
+
+   @Override
+   public boolean N() {
+      return this.F;
+   }
+
+   public JWindow t(float var1) {
+      this.P = var1;
+      return this.B();
+   }
+
+   protected JWindow B() {
+      int[] var1 = com.WC.V();
+      JWindow var10000 = this.w;
+      if (var1 == null) {
+         if (this.w != null) {
+            SN.s(this.w, this.P * this.y);
+         }
+
+         var10000 = this.w;
+      }
+
+      return var10000;
+   }
+
+   @Override
+   public float B$float() {
+      return this.P;
+   }
+
+   public boolean Z() {
+      return this.e;
+   }
+
+   public void t(boolean var1) {
+      int[] var2 = com.WC.V();
+      com.QB var10000 = this;
+      if (var2 == null) {
+         this.e = var1;
+         if (var1) {
+            var10000 = this;
+            if (var2 == null) {
+               if (this.w == null) {
+                  return;
+               }
+
+               var10000 = this;
             }
-            jWindow = this.w;
-        }
-        return jWindow;
-    }
 
-    @Override
-    public boolean N() {
-        return this.F;
-    }
+            if (var2 == null) {
+               if (var10000.W != null) {
+                  return;
+               }
 
-    public JWindow t(float f10) {
-        this.P = f10;
-        return this.B();
-    }
-
-    protected JWindow B() {
-        int[] nArray = WC.V();
-        JWindow jWindow = this.w;
-        if (nArray == null) {
-            if (jWindow != null) {
-                SN.s(this.w, this.P * this.y);
+               var10000 = this;
             }
-            jWindow = this.w;
-        }
-        return jWindow;
-    }
 
-    @Override
-    public float B() {
-        return this.P;
-    }
+            if (var2 == null) {
+               if (var10000.z == null) {
+                  return;
+               }
 
-    public boolean Z() {
-        return this.e;
-    }
+               var10000 = this;
+            }
 
-    public void t(boolean bl) {
-        block5: {
-            QB qB;
-            block10: {
-                int[] nArray;
-                block9: {
-                    block8: {
-                        block2: {
-                            block3: {
-                                QB qB2;
-                                block7: {
-                                    block6: {
-                                        block4: {
-                                            nArray = WC.V();
-                                            qB = this;
-                                            if (nArray != null) break block2;
-                                            qB.e = bl;
-                                            if (!bl) break block3;
-                                            qB2 = this;
-                                            if (nArray != null) break block4;
-                                            if (qB2.w == null) break block5;
-                                            qB2 = this;
-                                        }
-                                        if (nArray != null) break block6;
-                                        if (qB2.W != null) break block5;
-                                        qB2 = this;
-                                    }
-                                    if (nArray != null) break block7;
-                                    if (qB2.z == null) break block5;
-                                    qB2 = this;
-                                }
-                                qB2.h();
-                                if (nArray == null) break block5;
-                            }
-                            qB = this;
+            var10000.h();
+            if (var2 == null) {
+               return;
+            }
+         }
+
+         var10000 = this;
+      }
+
+      if (var2 == null) {
+         if (var10000.w == null) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      if (var2 == null) {
+         if (var10000.W == null) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      if (var2 == null) {
+         if (var10000.z == null) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.Y();
+   }
+
+   protected void h() {
+      this.W = Rt_2.q(this.w, this.z);
+   }
+
+   protected void Y() {
+      Rt_2.f(this.z, this.W);
+      this.W = null;
+   }
+
+   public boolean G() {
+      return this.Y;
+   }
+
+   public void J(boolean var1) {
+      int[] var10000 = com.WC.V();
+      this.Y = var1;
+      int[] var2 = var10000;
+      JWindow var3 = this.w;
+      if (var2 == null) {
+         if (this.w == null) {
+            return;
+         }
+
+         var3 = this.w;
+      }
+
+      var3.setAlwaysOnTop(var1);
+   }
+
+   public boolean o() {
+      return this.n;
+   }
+
+   public void Y(boolean var1) {
+      this.n = var1;
+   }
+
+   public float J() {
+      return this.A;
+   }
+
+   public void c(float var1) {
+      this.A = var1;
+   }
+
+   public com.QB F(Component var1, Point var2) {
+      return this.M(var1, var2.x, var2.y);
+   }
+
+   public com.QB M(Component var1, int var2, int var3) {
+      this.T(var1, var2, var3);
+      return this;
+   }
+
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   protected void T(Component var1, int var2, int var3) {
+      int[] var10000 = com.WC.V();
+      Object var5 = this.c;
+      synchronized (this.c){} // $VF: monitorenter 
+      int[] var4 = var10000;
+
+      try {
+         var10000 = (int[])this;
+         if (var4 == null) {
+            label175:
+            if (!this.r) {
+               label196: {
+                  boolean var11 = this.U;
+                  if (var4 == null) {
+                     label183: {
+                        if (!this.U) {
+                           var12 = this;
+                           if (var4 != null) {
+                              break label183;
+                           }
+
+                           if (this.w != null) {
+                              break label175;
+                           }
                         }
-                        if (nArray != null) break block8;
-                        if (qB.w == null) break block5;
-                        qB = this;
-                    }
-                    if (nArray != null) break block9;
-                    if (qB.W == null) break block5;
-                    qB = this;
-                }
-                if (nArray != null) break block10;
-                if (qB.z == null) break block5;
-                qB = this;
-            }
-            qB.Y();
-        }
-    }
 
-    protected void h() {
-        this.W = rt_0.q(this.w, this.z);
-    }
+                        this.r = true;
+                        var12 = this;
+                     }
 
-    protected void Y() {
-        rt_0.f(this.z, this.W);
-        this.W = null;
-    }
+                     if (var4 != null) {
+                        break label196;
+                     }
 
-    public boolean G() {
-        return this.Y;
-    }
+                     var11 = var12.U;
+                  }
 
-    public void J(boolean bl) {
-        block3: {
-            JWindow jWindow;
-            block2: {
-                this.Y = bl;
-                int[] nArray = WC.V();
-                jWindow = this.w;
-                if (nArray != null) break block2;
-                if (jWindow == null) break block3;
-                jWindow = this.w;
-            }
-            jWindow.setAlwaysOnTop(bl);
-        }
-    }
-
-    public boolean o() {
-        return this.n;
-    }
-
-    public void Y(boolean bl) {
-        this.n = bl;
-    }
-
-    public float J() {
-        return this.A;
-    }
-
-    public void c(float f10) {
-        this.A = f10;
-    }
-
-    public QB F(Component component, Point point) {
-        return this.M(component, point.x, point.y);
-    }
-
-    public QB M(Component component, int n10, int n11) {
-        this.T(component, n10, n11);
-        return this;
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    protected void T(Component component, int n10, int n11) {
-        Object object = this.c;
-        synchronized (object) {
-            block39: {
-                Object object2;
-                boolean bl;
-                block38: {
-                    int[] nArray;
-                    block35: {
-                        QB qB;
-                        block37: {
-                            block36: {
-                                block34: {
-                                    block32: {
-                                        QB qB2;
-                                        block33: {
-                                            block31: {
-                                                QB qB3;
-                                                boolean bl2;
-                                                block28: {
-                                                    block30: {
-                                                        block29: {
-                                                            block26: {
-                                                                Object object3;
-                                                                block27: {
-                                                                    nArray = WC.V();
-                                                                    object3 = this;
-                                                                    if (nArray != null) break block26;
-                                                                    if (((QB)object3).r) break block27;
-                                                                    bl2 = this.U;
-                                                                    if (nArray != null) break block28;
-                                                                    if (bl2) break block29;
-                                                                    qB3 = this;
-                                                                    if (nArray != null) break block30;
-                                                                    if (qB3.w == null) break block29;
-                                                                }
-                                                                object3 = object;
-                                                            }
-                                                            // ** MonitorExit[v0] (shouldn't be in output)
-                                                            return;
-                                                        }
-                                                        this.r = true;
-                                                        qB3 = this;
-                                                    }
-                                                    if (nArray != null) break block31;
-                                                    bl2 = qB3.U;
-                                                }
-                                                if (bl2) {
-                                                    QB qB4 = this;
-                                                    if (nArray == null) {
-                                                        if (qB4.S != null) {
-                                                            this.S.Y();
-                                                        }
-                                                        qB4 = this;
-                                                    }
-                                                    qB4.U = false;
-                                                }
-                                                this.b = component;
-                                                this.z = FN.L(component);
-                                                qB3 = this;
-                                            }
-                                            qB3.y = this.n ? 0.0f : 1.0f;
-                                            qB2 = this;
-                                            if (nArray != null) break block32;
-                                            if (qB2.z == null) break block33;
-                                            Rectangle rectangle = FN.f(component);
-                                            this.E = xk_0.L(component, this, rectangle.x + n10, rectangle.y + n11);
-                                            if (nArray == null) break block34;
-                                        }
-                                        qB2 = this;
-                                    }
-                                    qB2.E = xk_0.L(component, this, n10, n11);
-                                }
-                                this.w = (JWindow)FN.L(this);
-                                this.w.setAlwaysOnTop(this.Y);
-                                this.E();
-                                this.B();
-                                this.z();
-                                this.N = new oc_2(this);
-                                Toolkit.getDefaultToolkit().addAWTEventListener(this.N, p);
-                                this.f = new ie_1(this);
-                                ON.F(this.f);
-                                this.E.show();
-                                bl = this.n;
-                                if (nArray == null) {
-                                    if (bl) {
-                                        this.l = WC.E(GO.L, 0L, new dv_2(this));
-                                    }
-                                    bl = this.e;
-                                }
-                                if (nArray != null) break block35;
-                                if (!bl) break block36;
-                                qB = this;
-                                if (nArray != null) break block37;
-                                if (qB.z != null) {
-                                    this.h();
-                                }
-                            }
-                            qB = this;
+                  if (var11) {
+                     com.QB var13 = this;
+                     if (var4 == null) {
+                        if (this.S != null) {
+                           this.S.Y();
                         }
-                        bl = qB.n;
-                    }
-                    if (nArray != null) break block38;
-                    if (!bl) {
+
+                        var13 = this;
+                     }
+
+                     var13.U = false;
+                  }
+
+                  this.b = var1;
+                  this.z = com.FN.L(var1);
+                  var12 = this;
+               }
+
+               label166: {
+                  var12.y = this.n ? 0.0F : 1.0F;
+                  com.QB var14 = this;
+                  if (var4 == null) {
+                     if (this.z != null) {
+                        Rectangle var6 = com.FN.f(var1);
+                        this.E = Xk_2.L(var1, this, var6.x + var2, var6.y + var3);
+                        if (var4 == null) {
+                           break label166;
+                        }
+                     }
+
+                     var14 = this;
+                  }
+
+                  var14.E = Xk_2.L(var1, this, var2, var3);
+               }
+
+               this.w = (JWindow)com.FN.L(this);
+               this.w.setAlwaysOnTop(this.Y);
+               this.E();
+               this.B();
+               this.z();
+               this.N = new com.oc_4(this);
+               Toolkit.getDefaultToolkit().addAWTEventListener(this.N, p);
+               this.f = new iE_3(this);
+               com.ON.F(this.f);
+               this.E.show();
+               boolean var15 = this.n;
+               if (var4 == null) {
+                  if (this.n) {
+                     this.l = com.WC.E(GO.L, 0L, new com.dv_4(this));
+                  }
+
+                  var15 = this.e;
+               }
+
+               if (var4 == null) {
+                  label156: {
+                     if (var15) {
+                        var16 = this;
+                        if (var4 != null) {
+                           break label156;
+                        }
+
+                        if (this.z != null) {
+                           this.h();
+                        }
+                     }
+
+                     var16 = this;
+                  }
+
+                  var15 = var16.n;
+               }
+
+               label198: {
+                  if (var4 == null) {
+                     if (!var15) {
                         this.r = false;
-                    }
-                    this.t();
-                    object2 = this;
-                    if (nArray != null) break block39;
-                    bl = ((QB)object2).n;
-                }
-                if (!bl) {
-                    this.T();
-                }
-                object2 = object;
+                     }
+
+                     this.t();
+                     var10000 = (int[])this;
+                     if (var4 != null) {
+                        break label198;
+                     }
+
+                     var15 = this.n;
+                  }
+
+                  if (!var15) {
+                     this.T();
+                  }
+
+                  var10000 = (int[])var5;
+               }
+
+               // $VF: monitorexit
+               return;
             }
-            // ** MonitorExit[v7] (shouldn't be in output)
-            return;
-        }
-    }
 
-    public QB l() {
-        this.W();
-        return this;
-    }
+            var10000 = (int[])var5;
+         }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    protected void W() {
-        block23: {
-            Object object = this.c;
-            synchronized (object) {
-                QB qB;
-                block21: {
-                    block22: {
-                        int[] nArray;
-                        block20: {
-                            boolean bl;
-                            QB qB2;
-                            block19: {
-                                block17: {
-                                    block18: {
-                                        block15: {
-                                            Object object2;
-                                            block16: {
-                                                nArray = WC.V();
-                                                object2 = this;
-                                                if (nArray != null) break block15;
-                                                if (((QB)object2).U) break block16;
-                                                object2 = this.w;
-                                                if (nArray != null) break block15;
-                                                if (object2 == null) break block16;
-                                                qB2 = this;
-                                                if (nArray != null) break block17;
-                                                if (qB2.w == null) break block18;
-                                                bl = this.w.isShowing();
-                                                if (nArray != null) break block19;
-                                                if (bl) break block18;
-                                            }
-                                            object2 = object;
-                                        }
-                                        // ** MonitorExit[v0] (shouldn't be in output)
-                                        return;
-                                    }
-                                    this.U = true;
-                                    qB2 = this;
-                                }
-                                if (nArray != null) break block20;
-                                bl = qB2.r;
-                            }
-                            if (bl) {
-                                QB qB3 = this;
-                                if (nArray == null) {
-                                    if (qB3.l != null) {
-                                        this.l.Y();
-                                    }
-                                    qB3 = this;
-                                }
-                                qB3.r = false;
-                            }
-                            qB2 = this;
+         // $VF: monitorexit
+      } finally {
+         // $VF: monitorexit
+      }
+   }
+
+   public com.QB l$comQB() {
+      this.W();
+      return this;
+   }
+
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   protected void W$void() {
+      int[] var10000 = com.WC.V();
+      Object var2 = this.c;
+      synchronized (this.c){} // $VF: monitorenter 
+      int[] var1 = var10000;
+
+      try {
+         var10000 = (int[])this;
+         label111:
+         if (var1 == null) {
+            if (!this.U) {
+               var10000 = (int[])this.w;
+               if (var1 != null) {
+                  break label111;
+               }
+
+               label115:
+               if (this.w != null) {
+                  label139: {
+                     label140: {
+                        var7 = this;
+                        if (var1 == null) {
+                           if (this.w != null) {
+                              var8 = this.w.isShowing();
+                              if (var1 != null) {
+                                 break label140;
+                              }
+
+                              if (!var8) {
+                                 break label115;
+                              }
+                           }
+
+                           this.U = true;
+                           var7 = this;
                         }
-                        qB2.y = this.n ? 1.0f : 0.0f;
-                        qB = this;
-                        if (nArray != null) break block21;
-                        if (!qB.n) break block22;
-                        this.S = WC.E(GO.L, 0L, new _U(this));
-                        if (nArray == null) break block23;
-                    }
-                    qB = this;
-                }
-                qB.D();
-            }
-        }
-    }
 
-    protected void D() {
-        QB qB;
-        block4: {
-            block5: {
-                int[] nArray = WC.V();
-                this.g();
-                int[] nArray2 = nArray;
-                qB = this;
-                if (nArray2 != null) break block4;
-                if (!qB.e) break block5;
-                qB = this;
-                if (nArray2 != null) break block4;
-                if (qB.z != null) {
-                    this.Y();
-                }
-            }
-            Toolkit.getDefaultToolkit().removeAWTEventListener(this.N);
-            this.N = null;
-            ON.x(this.f);
-            this.f = null;
-            this.z = null;
-            this.b = null;
-            this.E.hide();
-            this.E = null;
-            this.w = null;
-            this.S();
-            qB = this;
-        }
-        qB.q();
-    }
-
-    protected void i() {
-    }
-
-    protected void f() {
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void p(Runnable runnable) {
-        Object object = this.i;
-        synchronized (object) {
-            block12: {
-                Object object2;
-                block11: {
-                    boolean bl;
-                    int[] nArray;
-                    block9: {
-                        block10: {
-                            block7: {
-                                boolean bl2;
-                                block8: {
-                                    nArray = WC.V();
-                                    bl2 = this.isShowing();
-                                    if (nArray != null) break block7;
-                                    if (!bl2) break block8;
-                                    bl = this.q();
-                                    if (nArray != null) break block9;
-                                    if (!bl) break block10;
-                                }
-                                bl2 = this.t.add(runnable);
-                            }
-                            if (nArray == null) break block11;
+                        if (var1 != null) {
+                           break label139;
                         }
-                        object2 = this;
-                        if (nArray != null) break block12;
-                        bl = ((Component)object2).isShowing();
-                    }
-                    if (!bl) break block11;
-                    object2 = this;
-                    if (nArray != null) break block12;
-                    if (!((QB)object2).k()) {
-                        runnable.run();
-                    }
-                }
-                object2 = object;
+
+                        var8 = var7.r;
+                     }
+
+                     if (var8) {
+                        com.QB var9 = this;
+                        if (var1 == null) {
+                           if (this.l != null) {
+                              this.l.Y();
+                           }
+
+                           var9 = this;
+                        }
+
+                        var9.r = false;
+                     }
+
+                     var7 = this;
+                  }
+
+                  label105: {
+                     var7.y = this.n ? 1.0F : 0.0F;
+                     com.QB var10 = this;
+                     if (var1 == null) {
+                        if (this.n) {
+                           this.S = com.WC.E(GO.L, 0L, new _U(this));
+                           if (var1 == null) {
+                              break label105;
+                           }
+                        }
+
+                        var10 = this;
+                     }
+
+                     var10.D();
+                  }
+
+                  // $VF: monitorexit
+                  return;
+               }
             }
-            // ** MonitorExit[v2] (shouldn't be in output)
-            return;
-        }
-    }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void T() {
-        Object object = this.i;
-        synchronized (object) {
-            block5: {
-                int[] nArray = WC.V();
-                for (Runnable runnable : this.t) {
-                    runnable.run();
-                    if (nArray == null) {
-                        if (nArray == null) continue;
-                    }
-                    break block5;
-                }
-                this.t.clear();
+            var10000 = (int[])var2;
+         }
+
+         // $VF: monitorexit
+      } finally {
+         // $VF: monitorexit
+      }
+   }
+
+   protected void D() {
+      com.QB var2;
+      int[] var10000 = com.WC.V();
+      this.g();
+      int[] var1 = var10000;
+      var2 = this;
+      label17:
+      if (var1 == null) {
+         if (this.e) {
+            var2 = this;
+            if (var1 != null) {
+               break label17;
             }
-            return;
-        }
-    }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void b(Runnable runnable) {
-        block7: {
-            Object object = this.i;
-            synchronized (object) {
-                block6: {
-                    int[] nArray;
-                    block5: {
-                        nArray = WC.V();
-                        boolean bl = this.isShowing();
-                        if (nArray != null) break block5;
-                        if (!bl) break block6;
-                        bl = this.K.add(runnable);
-                    }
-                    if (nArray == null) break block7;
-                }
-                runnable.run();
+            if (this.z != null) {
+               this.Y();
             }
-        }
-    }
+         }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void q() {
-        Object object = this.i;
-        synchronized (object) {
-            block5: {
-                int[] nArray = WC.V();
-                for (Runnable runnable : this.K) {
-                    runnable.run();
-                    if (nArray == null) {
-                        if (nArray == null) continue;
-                    }
-                    break block5;
-                }
-                this.K.clear();
+         Toolkit.getDefaultToolkit().removeAWTEventListener(this.N);
+         this.N = null;
+         com.ON.x(this.f);
+         this.f = null;
+         this.z = null;
+         this.b = null;
+         this.E.hide();
+         this.E = null;
+         this.w = null;
+         this.S();
+         var2 = this;
+      }
+
+      var2.q();
+   }
+
+   protected void i() {
+   }
+
+   protected void f() {
+   }
+
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   public void p(Runnable var1) {
+      int[] var10000 = com.WC.V();
+      Object var3 = this.i;
+      synchronized (this.i){} // $VF: monitorenter 
+      int[] var2 = var10000;
+
+      try {
+         label73: {
+            label72: {
+               label77: {
+                  label70: {
+                     boolean var7 = this.isShowing();
+                     if (var2 == null) {
+                        if (var7) {
+                           var8 = this.q();
+                           if (var2 != null) {
+                              break label77;
+                           }
+
+                           if (!var8) {
+                              break label70;
+                           }
+                        }
+
+                        this.t.add(var1);
+                     }
+
+                     if (var2 == null) {
+                        break label72;
+                     }
+                  }
+
+                  var10000 = (int[])this;
+                  if (var2 != null) {
+                     break label73;
+                  }
+
+                  var8 = this.isShowing();
+               }
+
+               if (var8) {
+                  var10000 = (int[])this;
+                  if (var2 != null) {
+                     break label73;
+                  }
+
+                  if (!this.k()) {
+                     var1.run();
+                  }
+               }
             }
-            return;
-        }
-    }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void e(cg_2 cg_22) {
-        Object object = this.i;
-        synchronized (object) {
-            this.a.add(cg_22);
-        }
-    }
+            var10000 = (int[])var3;
+         }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void j(cg_2 cg_22) {
-        Object object = this.i;
-        synchronized (object) {
-            this.a.remove(cg_22);
-        }
-    }
+         // $VF: monitorexit
+      } finally {
+         // $VF: monitorexit
+      }
+   }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void z() {
-        Object object = this.i;
-        synchronized (object) {
-            int[] nArray = WC.V();
-            for (cg_2 cg_22 : aL.J((Collection)this.a)) {
-                cg_22.Y();
-                if (nArray == null) {
-                    if (nArray == null) continue;
-                }
-                break;
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   public void T() {
+      int[] var10000 = com.WC.V();
+      Object var2 = this.i;
+      synchronized (this.i){} // $VF: monitorenter 
+      int[] var1 = var10000;
+
+      try {
+         Iterator var3 = this.t.iterator();
+
+         while (true) {
+            if (var3.hasNext()) {
+               Runnable var4 = (Runnable)var3.next();
+               var4.run();
+               if (var1 != null) {
+                  break;
+               }
+
+               if (var1 == null) {
+                  continue;
+               }
             }
-            return;
-        }
-    }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void t() {
-        Object object = this.i;
-        synchronized (object) {
-            int[] nArray = WC.V();
-            for (cg_2 cg_22 : aL.J((Collection)this.a)) {
-                cg_22.h();
-                if (nArray == null) {
-                    if (nArray == null) continue;
-                }
-                break;
+            this.t.clear();
+            // $VF: monitorexit
+            break;
+         }
+      } finally {
+         // $VF: monitorexit
+      }
+   }
+
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   public void b(Runnable var1) {
+      int[] var10000 = com.WC.V();
+      Object var3 = this.i;
+      synchronized (this.i){} // $VF: monitorenter 
+      int[] var2 = var10000;
+
+      try {
+         label38: {
+            label37: {
+               boolean var7 = this.isShowing();
+               if (var2 == null) {
+                  if (!var7) {
+                     break label37;
+                  }
+
+                  this.K.add(var1);
+               }
+
+               if (var2 == null) {
+                  break label38;
+               }
             }
-            return;
-        }
-    }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void g() {
-        Object object = this.i;
-        synchronized (object) {
-            int[] nArray = WC.V();
-            for (cg_2 cg_22 : aL.J((Collection)this.a)) {
-                cg_22.T();
-                if (nArray == null) {
-                    if (nArray == null) continue;
-                }
-                break;
+            var1.run();
+         }
+
+         // $VF: monitorexit
+      } finally {
+         // $VF: monitorexit
+      }
+   }
+
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   public void q$void() {
+      int[] var10000 = com.WC.V();
+      Object var2 = this.i;
+      synchronized (this.i){} // $VF: monitorenter 
+      int[] var1 = var10000;
+
+      try {
+         Iterator var3 = this.K.iterator();
+
+         while (true) {
+            if (var3.hasNext()) {
+               Runnable var4 = (Runnable)var3.next();
+               var4.run();
+               if (var1 != null) {
+                  break;
+               }
+
+               if (var1 == null) {
+                  continue;
+               }
             }
-            return;
-        }
-    }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void S() {
-        Object object = this.i;
-        synchronized (object) {
-            int[] nArray = WC.V();
-            for (cg_2 cg_22 : aL.J((Collection)this.a)) {
-                cg_22.H();
-                if (nArray == null) {
-                    if (nArray == null) continue;
-                }
-                break;
+            this.K.clear();
+            // $VF: monitorexit
+            break;
+         }
+      } finally {
+         // $VF: monitorexit
+      }
+   }
+
+   public void e(com.cg_4 var1) {
+      synchronized (this.i) {
+         this.a.add(var1);
+      }
+   }
+
+   public void j(com.cg_4 var1) {
+      synchronized (this.i) {
+         this.a.remove(var1);
+      }
+   }
+
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   public void z() {
+      int[] var10000 = com.WC.V();
+      Object var2 = this.i;
+      synchronized (this.i){} // $VF: monitorenter 
+      int[] var1 = var10000;
+
+      try {
+         Iterator var3 = com.aL.J((Collection)this.a).iterator();
+
+         while (true) {
+            if (var3.hasNext()) {
+               com.cg_4 var4 = (com.cg_4)var3.next();
+               var4.Y();
+               if (var1 != null) {
+                  break;
+               }
+
+               if (var1 == null) {
+                  continue;
+               }
             }
-            return;
-        }
-    }
 
-    public JWindow G() {
-        return (JWindow)SN.v(this.w);
-    }
+            // $VF: monitorexit
+            break;
+         }
+      } finally {
+         // $VF: monitorexit
+      }
+   }
 
-    public JWindow E(Component component) {
-        return (JWindow)SN.u(this.w, component);
-    }
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   public void t() {
+      int[] var10000 = com.WC.V();
+      Object var2 = this.i;
+      synchronized (this.i){} // $VF: monitorenter 
+      int[] var1 = var10000;
 
-    public JWindow C(int n10, int n11) {
-        return (JWindow)SN.H(this.w, n10, n11);
-    }
+      try {
+         Iterator var3 = com.aL.J((Collection)this.a).iterator();
 
-    public JWindow i(Component component, int n10, int n11) {
-        return (JWindow)SN.Q(this.w, component, n10, n11);
-    }
+         while (true) {
+            if (var3.hasNext()) {
+               com.cg_4 var4 = (com.cg_4)var3.next();
+               var4.h();
+               if (var1 != null) {
+                  break;
+               }
 
-    public JWindow h(int n10) {
-        return (JWindow)SN.W(this.w, n10);
-    }
+               if (var1 == null) {
+                  continue;
+               }
+            }
 
-    @Override
-    public JWindow x(int n10) {
-        return (JWindow)SN.G(this.w, n10);
-    }
+            // $VF: monitorexit
+            break;
+         }
+      } finally {
+         // $VF: monitorexit
+      }
+   }
 
-    public JWindow z() {
-        return (JWindow)SN.D(this.w);
-    }
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   public void g() {
+      int[] var10000 = com.WC.V();
+      Object var2 = this.i;
+      synchronized (this.i){} // $VF: monitorenter 
+      int[] var1 = var10000;
 
-    public JWindow r(boolean bl) {
-        return (JWindow)SN.g(this.w, bl);
-    }
+      try {
+         Iterator var3 = com.aL.J((Collection)this.a).iterator();
 
-    @Override
-    public Window S(boolean bl) {
-        return this.r(bl);
-    }
+         while (true) {
+            if (var3.hasNext()) {
+               com.cg_4 var4 = (com.cg_4)var3.next();
+               var4.T();
+               if (var1 != null) {
+                  break;
+               }
 
-    @Override
-    public Window X() {
-        return this.z();
-    }
+               if (var1 == null) {
+                  continue;
+               }
+            }
 
-    @Override
-    public Window o(int n10) {
-        return this.x(n10);
-    }
+            // $VF: monitorexit
+            break;
+         }
+      } finally {
+         // $VF: monitorexit
+      }
+   }
 
-    @Override
-    public Window U(int n10) {
-        return this.h(n10);
-    }
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   public void S() {
+      int[] var10000 = com.WC.V();
+      Object var2 = this.i;
+      synchronized (this.i){} // $VF: monitorenter 
+      int[] var1 = var10000;
 
-    @Override
-    public Window A(Component component, int n10, int n11) {
-        return this.i(component, n10, n11);
-    }
+      try {
+         Iterator var3 = com.aL.J((Collection)this.a).iterator();
 
-    @Override
-    public Window q(int n10, int n11) {
-        return this.C(n10, n11);
-    }
+         while (true) {
+            if (var3.hasNext()) {
+               com.cg_4 var4 = (com.cg_4)var3.next();
+               var4.H();
+               if (var1 != null) {
+                  break;
+               }
 
-    @Override
-    public Window I(Component component) {
-        return this.E(component);
-    }
+               if (var1 == null) {
+                  continue;
+               }
+            }
 
-    @Override
-    public Window F() {
-        return this.G();
-    }
+            // $VF: monitorexit
+            break;
+         }
+      } finally {
+         // $VF: monitorexit
+      }
+   }
 
-    @Override
-    public Window D(float f10) {
-        return this.t(f10);
-    }
+   public JWindow G$JWindow() {
+      return (JWindow)SN.v(this.w);
+   }
 
-    @Override
-    public Window h(boolean bl) {
-        return this.C(bl);
-    }
+   public JWindow E(Component var1) {
+      return (JWindow)SN.u(this.w, var1);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 212897127728810365L;
-        p = 0x2F45CCF47FA096DL ^ l2;
-    }
+   public JWindow C(int var1, int var2) {
+      return (JWindow)SN.H(this.w, var1, var2);
+   }
+
+   public JWindow i(Component var1, int var2, int var3) {
+      return (JWindow)SN.Q(this.w, var1, var2, var3);
+   }
+
+   public JWindow h(int var1) {
+      return (JWindow)SN.W(this.w, var1);
+   }
+
+   public JWindow x(int var1) {
+      return (JWindow)SN.G(this.w, var1);
+   }
+
+   public JWindow z$JWindow() {
+      return (JWindow)SN.D(this.w);
+   }
+
+   public JWindow r(boolean var1) {
+      return (JWindow)SN.g(this.w, var1);
+   }
+
+   @Override
+   public Window S(boolean var1) {
+      return this.r(var1);
+   }
+
+   @Override
+   public Window X() {
+      return this.z();
+   }
+
+   @Override
+   public Window o(int var1) {
+      return this.x(var1);
+   }
+
+   @Override
+   public Window U(int var1) {
+      return this.h(var1);
+   }
+
+   @Override
+   public Window A(Component var1, int var2, int var3) {
+      return this.i(var1, var2, var3);
+   }
+
+   @Override
+   public Window q(int var1, int var2) {
+      return this.C(var1, var2);
+   }
+
+   @Override
+   public Window I(Component var1) {
+      return this.E(var1);
+   }
+
+   @Override
+   public Window F$Window() {
+      return this.G();
+   }
+
+   @Override
+   public Window D(float var1) {
+      return this.t(var1);
+   }
+
+   @Override
+   public Window h(boolean var1) {
+      return this.C(var1);
+   }
+
+   static {
+      long var0 = 212897127728810365L;
+      long var10002 = 212897127728810349L ^ var0;
+      byte var10001 = -1;
+      p = var10002;
+   }
 }
+
+
+
+
 

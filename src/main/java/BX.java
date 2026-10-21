@@ -1,45 +1,48 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.IOException;
 import java.io.OutputStream;
 
-class BX
-extends Thread {
-    final n6 J;
-    private final OutputStream y;
-    private static final long a;
+class BX extends Thread {
+   final n6 J;
+   private final OutputStream y;
+   private static final long a;
 
-    BX(n6 n62, OutputStream outputStream) {
-        this.J = n62;
-        this.y = outputStream;
-    }
+   BX(n6 var1, OutputStream var2) {
+      this.J = var1;
+      this.y = var2;
+   }
 
-    @Override
-    public void run() {
-        int n10 = 0;
-        String[] stringArray = QI.N();
-        block2: while (true) {
-            try {
-                this.y.write(new byte[(int)a]);
+   @Override
+   public void run() {
+      String[] var10000 = QI.N();
+      int var2 = 0;
+      String[] var1 = var10000;
+
+      while (true) {
+         try {
+            this.y.write(new byte[(int)a]);
+         } catch (IOException var4) {
+            var4.printStackTrace();
+         }
+
+         var2++;
+
+         while (var2 > 1) {
+            if (var1 != null) {
+               return;
             }
-            catch (IOException iOException) {
-                iOException.printStackTrace();
-            }
-            ++n10;
-            do {
-                if (n10 <= 1) continue block2;
-            } while (stringArray == null);
-            break;
-        }
-    }
+         }
+      }
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 2178795676662593198L;
-        a = 0x4C640A74C9A1482EL ^ l2;
-    }
+   static {
+      long var0 = 2178795676662593198L;
+      long var10002 = 5504536141268863022L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

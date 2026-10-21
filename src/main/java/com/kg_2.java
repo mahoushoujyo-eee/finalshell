@@ -1,33 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.EE;
-import com.HJ;
-import com.SW;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
-/*
- * Renamed from com.kg
- */
-public class kg_2 {
-    protected static boolean K = false;
+class Kg_2 implements PropertyChangeListener {
+   final pk_4 v;
 
-    public static synchronized void j() {
-        block3: {
-            boolean bl;
-            block2: {
-                int[] nArray = SW.P();
-                bl = K;
-                if (nArray == null) break block2;
-                if (bl) break block3;
-                bl = true;
-            }
-            K = bl;
-            EE.m(new SW());
-            EE.H(new HJ());
-            EE.A();
-        }
-    }
+   Kg_2(pk_4 var1) {
+      this.v = var1;
+   }
+
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      this.v.h();
+      pk_4.I(this.v, pk_4.K(this.v), false);
+   }
 }
+
+
+
+
 

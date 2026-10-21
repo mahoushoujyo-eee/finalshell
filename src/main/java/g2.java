@@ -1,351 +1,493 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com._y_0;
-import com.c;
+import com._y_2;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class g2
-implements ActionListener {
-    final aj_0 F;
-    private static final String a;
+class g2 implements ActionListener {
+   final aj_2 F;
+   private static final String a;
 
-    g2(aj_0 aj_02) {
-        this.F = aj_02;
-    }
+   g2(aj_2 var1) {
+      this.F = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block60: {
-            Object object;
-            F8 f82;
-            _y_0 _y_02;
-            lv_2 lv_22;
-            String string;
-            _y_0 _y_03;
-            U u10;
-            block63: {
-                block64: {
-                    _y_0 _y_04;
-                    F8 f83;
-                    block68: {
-                        boolean bl;
-                        block66: {
-                            String[] stringArray;
-                            block67: {
-                                _y_0 _y_05;
-                                F8 f84;
-                                block65: {
-                                    F8 f85;
-                                    Object object2;
-                                    aM aM2;
-                                    block62: {
-                                        block61: {
-                                            t3_0 t3_02;
-                                            aM aM3;
-                                            lv_2 lv_23;
-                                            Object object3;
-                                            Object object4;
-                                            _y_0 _y_06;
-                                            U u11;
-                                            Object object5;
-                                            Object object6;
-                                            Object object7;
-                                            yt_1 yt_12;
-                                            stringArray = KV.b();
-                                            try {
-                                                yt_12 = (yt_1)yt_1.i();
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            if (stringArray == null) {
-                                                boolean bl2;
-                                                Object object8;
-                                                try {
-                                                    object8 = yt_12.P();
-                                                }
-                                                catch (InvocationTargetException invocationTargetException) {
-                                                    throw invocationTargetException.getTargetException();
-                                                }
-                                                try {
-                                                    bl2 = (Boolean)object8.v();
-                                                }
-                                                catch (InvocationTargetException invocationTargetException) {
-                                                    throw invocationTargetException.getTargetException();
-                                                }
-                                                if (!bl2) {
-                                                    try {
-                                                        yt_12 = (yt_1)yt_1.i();
-                                                    }
-                                                    catch (InvocationTargetException invocationTargetException) {
-                                                        throw invocationTargetException.getTargetException();
-                                                    }
-                                                }
-                                            } else {
-                                                try {
-                                                    yt_12.g();
-                                                }
-                                                catch (InvocationTargetException invocationTargetException) {
-                                                    throw invocationTargetException.getTargetException();
-                                                }
-                                                return;
-                                            }
-                                            if ((KV)this.F.k == null) break block60;
-                                            try {
-                                                object7 = yt_1.i();
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            try {
-                                                object6 = object7.O();
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            try {
-                                                object5 = object6.G();
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            try {
-                                                u11 = (U)object5.D();
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            u10 = u11;
-                                            try {
-                                                _y_06 = (_y_0)u10.n();
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            _y_03 = _y_06;
-                                            if (u10 == null || (string = (String)this.F.l) == null) break block60;
-                                            try {
-                                                object4 = yt_1.i();
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            try {
-                                                object3 = object4.g();
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            try {
-                                                lv_23 = (lv_2)object3.S(string);
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            lv_22 = lv_23;
-                                            if (lv_22 == null) break block60;
-                                            try {
-                                                aM3 = (aM)u10.o();
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            aM2 = aM3;
-                                            try {
-                                                t3_02 = (t3_0)aM2.q(string);
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            t3_0 t3_03 = t3_02;
-                                            if (stringArray != null) break block61;
-                                            if (t3_03 != null) {
-                                                try {
-                                                    aM2.X(t3_03);
-                                                }
-                                                catch (InvocationTargetException invocationTargetException) {
-                                                    throw invocationTargetException.getTargetException();
-                                                }
-                                            }
-                                            break block62;
-                                        }
-                                        if (stringArray == null) break block60;
-                                    }
-                                    _y_02 = _y_03;
-                                    if (stringArray != null) break block63;
-                                    if (_y_02 != null) break block64;
-                                    try {
-                                        object2 = aM2.Q();
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    try {
-                                        f85 = (F8)object2.P();
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    f84 = f82 = f85;
-                                    if (stringArray != null) break block65;
-                                    if (f84 == null) break block64;
-                                    f84 = f82;
-                                }
-                                bl = f84.getClass().equals(CT.class);
-                                if (stringArray != null) break block66;
-                                if (!bl) break block67;
-                                object = (CT)f82;
-                                try {
-                                    _y_05 = (_y_0)object.t();
-                                }
-                                catch (InvocationTargetException invocationTargetException) {
-                                    throw invocationTargetException.getTargetException();
-                                }
-                                _y_03 = _y_05;
-                                if (stringArray == null) break block64;
-                            }
-                            f83 = f82;
-                            if (stringArray != null) break block68;
-                            bl = f83.getClass().equals(CE.class);
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      String[] var2 = KV.b();
+      Object[] var10000 = com.c.f();
+      Method var40 = com.c.d(270389152141252877L);
+      Object[] var142 = var10000;
+      Object var92 = null;
+
+      try {
+         var10000 = (yT_3)var40.invoke(var92, var142);
+      } catch (InvocationTargetException var36) {
+         throw var36.getTargetException();
+      }
+
+      if (var2 == null) {
+         var92 = com.c.f();
+         Method var10003 = com.c.d(163462326892114024L);
+         var142 = (Object[])var92;
+         var92 = var10000;
+         Method var42 = var10003;
+
+         try {
+            var10000 = (Object[])var42.invoke(var92, var142);
+         } catch (InvocationTargetException var35) {
+            throw var35.getTargetException();
+         }
+
+         var92 = com.c.f();
+         var10003 = com.c.d(633712494917113170L);
+         var142 = (Object[])var92;
+         var92 = var10000;
+         Method var44 = var10003;
+
+         try {
+            var45 = (Boolean)var44.invoke(var92, var142);
+         } catch (InvocationTargetException var34) {
+            throw var34.getTargetException();
+         }
+
+         if (var45) {
+            if ((KV)com.c.c(377738841635939563L).get(com.c.c(241844933974704638L).get(this)) != null) {
+               var10000 = com.c.f();
+               Method var50 = com.c.d(270389152141252877L);
+               var142 = var10000;
+               var92 = null;
+
+               try {
+                  var10000 = (Object[])var50.invoke(var92, var142);
+               } catch (InvocationTargetException var31) {
+                  throw var31.getTargetException();
+               }
+
+               var92 = com.c.f();
+               var10003 = com.c.d(634817973682994708L);
+               var142 = (Object[])var92;
+               var92 = var10000;
+               Method var52 = var10003;
+
+               try {
+                  var10000 = (Object[])var52.invoke(var92, var142);
+               } catch (InvocationTargetException var30) {
+                  throw var30.getTargetException();
+               }
+
+               var92 = com.c.f();
+               var10003 = com.c.d(240567170779145617L);
+               var142 = (Object[])var92;
+               var92 = var10000;
+               Method var54 = var10003;
+
+               try {
+                  var10000 = (Object[])var54.invoke(var92, var142);
+               } catch (InvocationTargetException var29) {
+                  throw var29.getTargetException();
+               }
+
+               var92 = com.c.f();
+               var10003 = com.c.d(226341449505323490L);
+               var142 = (Object[])var92;
+               var92 = var10000;
+               Method var56 = var10003;
+
+               try {
+                  var10000 = (U)var56.invoke(var92, var142);
+               } catch (InvocationTargetException var28) {
+                  throw var28.getTargetException();
+               }
+
+               U var3 = var10000;
+               var92 = com.c.f();
+               var10003 = com.c.d(179934491990092343L);
+               var142 = (Object[])var92;
+               var92 = var3;
+               Method var58 = var10003;
+
+               try {
+                  var10000 = (_y_2)var58.invoke(var92, var142);
+               } catch (InvocationTargetException var27) {
+                  throw var27.getTargetException();
+               }
+
+               _y_2 var4 = var10000;
+               if (var3 != null) {
+                  String var5 = (String)com.c.c(392877460517837452L).get(com.c.c(241844933974704638L).get(this));
+                  if (var5 != null) {
+                     var10000 = com.c.f();
+                     Method var61 = com.c.d(270389152141252877L);
+                     var142 = var10000;
+                     var92 = null;
+
+                     try {
+                        var10000 = (Object[])var61.invoke(var92, var142);
+                     } catch (InvocationTargetException var26) {
+                        throw var26.getTargetException();
+                     }
+
+                     var92 = com.c.f();
+                     var10003 = com.c.d(410905379772103887L);
+                     var142 = (Object[])var92;
+                     var92 = var10000;
+                     Method var63 = var10003;
+
+                     try {
+                        var10000 = (Object[])var63.invoke(var92, var142);
+                     } catch (InvocationTargetException var25) {
+                        throw var25.getTargetException();
+                     }
+
+                     var92 = com.c.a(var5);
+                     var10003 = com.c.d(343419559142469673L);
+                     var142 = (Object[])var92;
+                     var92 = var10000;
+                     Method var65 = var10003;
+
+                     try {
+                        var10000 = (lv_4)var65.invoke(var92, var142);
+                     } catch (InvocationTargetException var24) {
+                        throw var24.getTargetException();
+                     }
+
+                     lv_4 var6 = var10000;
+                     if (var6 != null) {
+                        var92 = com.c.f();
+                        var10003 = com.c.d(303756590022481369L);
+                        var142 = (Object[])var92;
+                        var92 = var3;
+                        Method var67 = var10003;
+
+                        try {
+                           var10000 = (aM)var67.invoke(var92, var142);
+                        } catch (InvocationTargetException var23) {
+                           throw var23.getTargetException();
                         }
-                        if (!bl) break block64;
-                        f83 = f82;
-                    }
-                    object = (CE)f83;
-                    try {
-                        _y_04 = (_y_0)object.t();
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    _y_03 = _y_04;
-                }
-                _y_02 = _y_03;
+
+                        aM var7 = var10000;
+                        var92 = com.c.a(var5);
+                        var10003 = com.c.d(536963842591527722L);
+                        var142 = (Object[])var92;
+                        var92 = var7;
+                        Method var69 = var10003;
+
+                        try {
+                           var10000 = (t3_2)var69.invoke(var92, var142);
+                        } catch (InvocationTargetException var22) {
+                           throw var22.getTargetException();
+                        }
+
+                        label260: {
+                           t3_2 var8 = var10000;
+                           if (var2 == null) {
+                              if (var8 == null) {
+                                 break label260;
+                              }
+
+                              var92 = com.c.a(var8);
+                              var10003 = com.c.d(176011466134249595L);
+                              var142 = (Object[])var92;
+                              var92 = var7;
+                              Method var71 = var10003;
+
+                              try {
+                                 var71.invoke(var92, var142);
+                              } catch (InvocationTargetException var21) {
+                                 throw var21.getTargetException();
+                              }
+                           }
+
+                           if (var2 == null) {
+                              return;
+                           }
+                        }
+
+                        _y_2 var72 = var4;
+                        if (var2 == null) {
+                           label250:
+                           if (var4 == null) {
+                              var92 = com.c.f();
+                              var10003 = com.c.d(194560825135347400L);
+                              var142 = (Object[])var92;
+                              var92 = var7;
+                              Method var73 = var10003;
+
+                              try {
+                                 var10000 = (Object[])var73.invoke(var92, var142);
+                              } catch (InvocationTargetException var20) {
+                                 throw var20.getTargetException();
+                              }
+
+                              var92 = com.c.f();
+                              var10003 = com.c.d(424156930953488367L);
+                              var142 = (Object[])var92;
+                              var92 = var10000;
+                              Method var75 = var10003;
+
+                              try {
+                                 var10000 = (F8)var75.invoke(var92, var142);
+                              } catch (InvocationTargetException var19) {
+                                 throw var19.getTargetException();
+                              }
+
+                              F8 var9 = var10000;
+                              F8 var77 = var9;
+                              if (var2 == null) {
+                                 if (var9 == null) {
+                                    break label250;
+                                 }
+
+                                 var77 = var9;
+                              }
+
+                              label284: {
+                                 boolean var78 = var77.getClass().equals(CT.class);
+                                 if (var2 == null) {
+                                    if (var78) {
+                                       CT var10 = (CT)var9;
+                                       var92 = com.c.f();
+                                       var10003 = com.c.d(398891882190620836L);
+                                       var142 = (Object[])var92;
+                                       var92 = var10;
+                                       Method var79 = var10003;
+
+                                       try {
+                                          var10000 = (_y_2)var79.invoke(var92, var142);
+                                       } catch (InvocationTargetException var18) {
+                                          throw var18.getTargetException();
+                                       }
+
+                                       var4 = var10000;
+                                       if (var2 == null) {
+                                          break label250;
+                                       }
+                                    }
+
+                                    var10000 = var9;
+                                    if (var2 != null) {
+                                       break label284;
+                                    }
+
+                                    var78 = var9.getClass().equals(CE.class);
+                                 }
+
+                                 if (!var78) {
+                                    break label250;
+                                 }
+
+                                 var10000 = var9;
+                              }
+
+                              CE var38 = (CE)var10000;
+                              var92 = com.c.f();
+                              var10003 = com.c.d(595556246051364370L);
+                              var142 = (Object[])var92;
+                              var92 = var38;
+                              Method var82 = var10003;
+
+                              try {
+                                 var10000 = (_y_2)var82.invoke(var92, var142);
+                              } catch (InvocationTargetException var17) {
+                                 throw var17.getTargetException();
+                              }
+
+                              var4 = var10000;
+                           }
+
+                           var72 = var4;
+                        }
+
+                        if (var72 != null) {
+                           var92 = com.c.a(var5, var4);
+                           var10003 = com.c.d(505125595265089083L);
+                           var142 = (Object[])var92;
+                           var92 = var3;
+                           Method var84 = var10003;
+
+                           try {
+                              var10000 = (CE)var84.invoke(var92, var142);
+                           } catch (InvocationTargetException var16) {
+                              throw var16.getTargetException();
+                           }
+
+                           CE var37 = var10000;
+                           var92 = com.c.f();
+                           var10003 = com.c.d(327243143062390986L);
+                           var142 = (Object[])var92;
+                           var92 = var37;
+                           Method var86 = var10003;
+
+                           try {
+                              var10000 = (t3_2)var86.invoke(var92, var142);
+                           } catch (InvocationTargetException var15) {
+                              throw var15.getTargetException();
+                           }
+
+                           t3_2 var39 = var10000;
+                           var92 = new StringBuilder().append(a);
+                           Object[] var189 = com.c.f();
+                           Method var10005 = com.c.d(286931176286176762L);
+                           Object[] var10004 = var189;
+                           lv_4 var190 = var6;
+                           Method var167 = var10005;
+
+                           try {
+                              var142 = (String)var167.invoke(var190, var10004);
+                           } catch (InvocationTargetException var14) {
+                              throw var14.getTargetException();
+                           }
+
+                           var92 = com.c.a(var92.append((String)var142).toString());
+                           var10003 = com.c.d(519460332647460288L);
+                           var142 = (Object[])var92;
+                           var92 = var39;
+                           Method var88 = var10003;
+
+                           try {
+                              var88.invoke(var92, var142);
+                           } catch (InvocationTargetException var13) {
+                              throw var13.getTargetException();
+                           }
+
+                           var92 = com.c.f();
+                           var10003 = com.c.d(176235325809488947L);
+                           var142 = (Object[])var92;
+                           var92 = var39;
+                           Method var89 = var10003;
+
+                           try {
+                              var89.invoke(var92, var142);
+                           } catch (InvocationTargetException var12) {
+                              throw var12.getTargetException();
+                           }
+
+                           Ty_2 var90 = var4.M();
+                           var92 = com.c.a(true);
+                           var10003 = com.c.d(307806728445309055L);
+                           var142 = (Object[])var92;
+                           var92 = var90;
+                           Method var91 = var10003;
+
+                           try {
+                              var91.invoke(var92, var142);
+                           } catch (InvocationTargetException var11) {
+                              throw var11.getTargetException();
+                           }
+                        }
+                     }
+                  }
+               }
             }
-            if (_y_02 != null) {
-                String string2;
-                t3_0 t3_04;
-                CE cE;
-                try {
-                    cE = (CE)u10.q((Object)string, (Object)_y_03);
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                f82 = cE;
-                try {
-                    t3_04 = (t3_0)f82.X();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                object = t3_04;
-                try {
-                    string2 = (String)lv_22.F();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                try {
-                    object.I(a + string2);
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                try {
-                    object.e();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                try {
-                    _y_03.M().d(true);
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-            }
-        }
-    }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u7f74\u7e8bP".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 42;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+            return;
+         }
+
+         var10000 = com.c.f();
+         Method var47 = com.c.d(270389152141252877L);
+         var142 = var10000;
+         var92 = null;
+
+         try {
+            var10000 = (yT_3)var47.invoke(var92, var142);
+         } catch (InvocationTargetException var33) {
+            throw var33.getTargetException();
+         }
+      }
+
+      var92 = com.c.f();
+      Method var173 = com.c.d(248890456776257543L);
+      var142 = (Object[])var92;
+      var92 = var10000;
+      Method var48 = var173;
+
+      try {
+         var48.invoke(var92, var142);
+      } catch (InvocationTargetException var32) {
+         throw var32.getTargetException();
+      }
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "罴纋P".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 42;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 42;
+         var10006 = var0;
+      } else {
+         var6 = 42;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 42;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 15;
+               break;
+            case 1:
+               var23 = 125;
+               break;
+            case 2:
+               var23 = 87;
+               break;
+            case 3:
+               var23 = 71;
+               break;
+            case 4:
+               var23 = 55;
+               break;
+            case 5:
+               var23 = 69;
+               break;
+            default:
+               var23 = 89;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 15;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 125;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 87;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 71;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 55;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 69;
-                            break;
-                        }
-                        default: {
-                            n17 = 89;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

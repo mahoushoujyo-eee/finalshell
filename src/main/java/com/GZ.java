@@ -1,59 +1,48 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.D6;
-
+// $VF: synthetic class
 class GZ {
-    static final int[] T;
+   static final int[] T = new int[com.D6.values().length];
 
-    /*
-     * Enabled aggressive block sorting
-     * Enabled unnecessary exception pruning
-     * Enabled aggressive exception aggregation
-     */
-    static {
-        long l2 = 3430826351735201960L;
-        long l3 = 0x3EC94C69BD39E0AEL ^ l2;
-        T = new int[D6.values().length];
-        try {
-            GZ.T[D6.add.ordinal()] = 1;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            GZ.T[D6.replace.ordinal()] = 2;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            GZ.T[D6.remove.ordinal()] = 3;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            GZ.T[D6.copy.ordinal()] = 4;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            GZ.T[D6.move.ordinal()] = 5;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            GZ.T[D6.test.ordinal()] = (int)l3;
-            return;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-    }
+   static {
+      long var2 = 3430826351735201960L;
+      long var10002 = 4524231317700337838L ^ var2;
+      byte var10001 = -1;
+      long var0 = var10002;
+
+      try {
+         T[com.D6.add.ordinal()] = 1;
+      } catch (NoSuchFieldError var10) {
+      }
+
+      try {
+         T[com.D6.replace.ordinal()] = 2;
+      } catch (NoSuchFieldError var9) {
+      }
+
+      try {
+         T[com.D6.remove.ordinal()] = 3;
+      } catch (NoSuchFieldError var8) {
+      }
+
+      try {
+         T[com.D6.copy.ordinal()] = 4;
+      } catch (NoSuchFieldError var7) {
+      }
+
+      try {
+         T[com.D6.move.ordinal()] = 5;
+      } catch (NoSuchFieldError var6) {
+      }
+
+      try {
+         T[com.D6.test.ordinal()] = (int)var0;
+      } catch (NoSuchFieldError var5) {
+      }
+   }
 }
+
+
+
+
 

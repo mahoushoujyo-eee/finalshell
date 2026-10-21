@@ -1,25 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.lk_2;
-import com.pu_2;
 import java.util.Date;
 
-class v_
-implements pu_2 {
-    final lk_2 U;
+class v_ implements pu_4 {
+   final com.lk_4 U;
 
-    v_(lk_2 lk_22) {
-        this.U = lk_22;
-    }
+   v_(com.lk_4 var1) {
+      this.U = var1;
+   }
 
-    @Override
-    public void i(Date date) {
-        this.U.C();
-        this.U.f(true);
-        this.U.requestFocusInWindow();
-    }
+   @Override
+   public void i(Date var1) {
+      this.U.C();
+      this.U.f(true);
+      this.U.requestFocusInWindow();
+   }
 }
+
+
+
+
 

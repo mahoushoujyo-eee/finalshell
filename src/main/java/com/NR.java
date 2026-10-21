@@ -1,23 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.y1_0;
-
 class NR {
-    NR() {
-    }
+   static void C(byte[] var0) {
+      boolean var1 = com.y1_2.D();
+      if (var0 != null) {
+         int var2 = 0;
 
-    static void C(byte[] byArray) {
-        boolean bl = y1_0.D();
-        if (byArray == null) {
-            return;
-        }
-        for (int i2 = 0; i2 < byArray.length; ++i2) {
-            byArray[i2] = 0;
-            if (!bl) continue;
-        }
-    }
+         while (var2 < var0.length) {
+            var0[var2] = 0;
+            var2++;
+            if (var1) {
+               break;
+            }
+         }
+      }
+   }
 }
+
+
+
+
 

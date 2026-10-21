@@ -1,36 +1,35 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.nw_2;
 import java.awt.Component;
 import java.awt.Window;
 
-public interface W_
-extends nw_2 {
-    public Window h(boolean var1);
+public interface W_ extends nw_4 {
+   Window h(boolean var1);
 
-    public boolean N();
+   boolean N();
 
-    public Window D(float var1);
+   Window D(float var1);
 
-    public float B();
+   float B();
 
-    public Window F();
+   Window F();
 
-    public Window I(Component var1);
+   Window I(Component var1);
 
-    public Window q(int var1, int var2);
+   Window q(int var1, int var2);
 
-    public Window A(Component var1, int var2, int var3);
+   Window A(Component var1, int var2, int var3);
 
-    public Window U(int var1);
+   Window U(int var1);
 
-    public Window o(int var1);
+   Window o(int var1);
 
-    public Window X();
+   Window X();
 
-    public Window S(boolean var1);
+   Window S(boolean var1);
 }
+
+
+
+
 

@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.y;
 
 import com.GO;
@@ -10,30 +7,36 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-import org.y.C;
-import org.y.S;
 import org.z.D;
 
-class P
-implements S {
-    final Set N;
+class P implements S {
+   final Set N;
 
-    P(Set set) {
-        this.N = set;
-    }
+   P(Set var1) {
+      this.N = var1;
+   }
 
-    @Override
-    public Map T(String string, boolean bl, boolean bl2) throws IOException {
-        HashMap hashMap = new HashMap();
-        Iterator iterator = this.N.iterator();
-        boolean bl3 = GO.s();
-        while (iterator.hasNext()) {
-            D d2 = (D)iterator.next();
-            URI uRI = (URI)d2.H().l();
-            d2.G().Y().V(new C(this, string, bl2, uRI, hashMap));
-            if (bl3) continue;
-        }
-        return hashMap;
-    }
+   @Override
+   public Map T(String var1, boolean var2, boolean var3) throws IOException {
+      HashMap var5 = new HashMap();
+      boolean var10000 = GO.s();
+      Iterator var6 = this.N.iterator();
+      boolean var4 = var10000;
+
+      while (var6.hasNext()) {
+         D var7 = (D)var6.next();
+         URI var8 = (URI)var7.H().l();
+         var7.G().Y().V(new C(this, var1, var3, var8, var5));
+         if (!var4) {
+            break;
+         }
+      }
+
+      return var5;
+   }
 }
+
+
+
+
 

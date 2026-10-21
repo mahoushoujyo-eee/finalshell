@@ -1,191 +1,327 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org;
 
-import com.ky_2;
 import java.io.IOException;
 import java.io.OutputStream;
-import org.M;
-import org.V.H;
-import org.d_0;
-import org.g;
 
-class E
-implements H {
-    static final boolean T;
-    final H I;
-    final M k;
-    private static final String a;
-    private static final long[] b;
-    private static final Integer[] c;
+class E implements org.V.H {
+   static final boolean T;
+   final org.V.H I;
+   final org.M k;
+   private static final String a;
+   private static final long[] b;
+   private static final Integer[] c;
 
-    E(M m10, H h10) {
-        this.k = m10;
-        this.I = h10;
-    }
+   E(org.M var1, org.V.H var2) {
+      this.k = var1;
+      this.I = var2;
+   }
 
-    @Override
-    public OutputStream X(String string) throws IOException {
-        String string2;
-        OutputStream outputStream;
-        block14: {
-            block13: {
-                boolean bl;
-                block12: {
-                    outputStream = this.I.X(string);
-                    ky_2[] ky_2Array = d_0.b();
-                    try {
-                        try {
-                            try {
-                                bl = T;
-                                if (ky_2Array == null) break block12;
-                                if (bl) break block13;
-                            }
-                            catch (IOException iOException) {
-                                throw E.a(iOException);
-                            }
-                            string2 = string;
-                            if (ky_2Array == null) break block14;
-                        }
-                        catch (IOException iOException) {
-                            throw E.a(iOException);
-                        }
-                        bl = string2.endsWith(a);
-                    }
-                    catch (IOException iOException) {
-                        throw E.a(iOException);
-                    }
-                }
-                try {
-                    if (!bl) {
-                        throw new AssertionError();
-                    }
-                }
-                catch (IOException iOException) {
-                    throw E.a(iOException);
-                }
-            }
-            string2 = string.substring(0, string.length() - E.a(2576, 3401687132664766364L)).replace((char)E.a(24309, 2128834021764975483L), (char)E.a(3386, 6058176889694951607L));
-        }
-        String string3 = string2;
-        try {
-            if (M.m().matcher(string3).matches()) {
-                return new g(this, outputStream);
-            }
-        }
-        catch (IOException iOException) {
-            throw E.a(iOException);
-        }
-        return outputStream;
-    }
+   @Override
+   public OutputStream X(String param1) throws IOException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/d_2.b ()[Lcom/ky_4;
+      // 03: aload 0
+      // 04: getfield org/E.I Lorg/V/H;
+      // 07: aload 1
+      // 08: invokeinterface org/V/H.X (Ljava/lang/String;)Ljava/io/OutputStream; 2
+      // 0d: astore 3
+      // 0e: astore 2
+      // 0f: getstatic org/E.T Z
+      // 12: aload 2
+      // 13: ifnull 39
+      // 16: ifne 48
+      // 19: goto 20
+      // 1c: invokestatic org/E.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 1f: athrow
+      // 20: aload 1
+      // 21: aload 2
+      // 22: ifnull 70
+      // 25: goto 2c
+      // 28: invokestatic org/E.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 2b: athrow
+      // 2c: getstatic org/E.a Ljava/lang/String;
+      // 2f: invokevirtual java/lang/String.endsWith (Ljava/lang/String;)Z
+      // 32: goto 39
+      // 35: invokestatic org/E.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 38: athrow
+      // 39: ifne 48
+      // 3c: new java/lang/AssertionError
+      // 3f: dup
+      // 40: invokespecial java/lang/AssertionError.<init> ()V
+      // 43: athrow
+      // 44: invokestatic org/E.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 47: athrow
+      // 48: aload 1
+      // 49: bipush 0
+      // 4a: aload 1
+      // 4b: invokevirtual java/lang/String.length ()I
+      // 4e: sipush 2576
+      // 51: ldc2_w 3401687132664766364
+      // 54: invokestatic org/E.a (IJ)I
+      // 57: isub
+      // 58: invokevirtual java/lang/String.substring (II)Ljava/lang/String;
+      // 5b: sipush 24309
+      // 5e: ldc2_w 2128834021764975483
+      // 61: invokestatic org/E.a (IJ)I
+      // 64: sipush 3386
+      // 67: ldc2_w 6058176889694951607
+      // 6a: invokestatic org/E.a (IJ)I
+      // 6d: invokevirtual java/lang/String.replace (CC)Ljava/lang/String;
+      // 70: astore 4
+      // 72: invokestatic org/M.m ()Ljava/util/regex/Pattern;
+      // 75: aload 4
+      // 77: invokevirtual java/util/regex/Pattern.matcher (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      // 7a: invokevirtual java/util/regex/Matcher.matches ()Z
+      // 7d: ifeq 8e
+      // 80: new org/g
+      // 83: dup
+      // 84: aload 0
+      // 85: aload 3
+      // 86: invokespecial org/g.<init> (Lorg/E;Ljava/io/OutputStream;)V
+      // 89: areturn
+      // 8a: invokestatic org/E.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 8d: athrow
+      // 8e: aload 3
+      // 8f: areturn
+   }
 
-    @Override
-    public boolean A(String string) {
-        return this.I.A(string);
-    }
+   @Override
+   public boolean A(String var1) {
+      return this.I.A(var1);
+   }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block13: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block12: {
-                char[] cArray3 = "H\r\u0015Z\u001c\u007f".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 58;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block12;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block13;
-            }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "H\r\u0015Z\u001c\u007f".toCharArray();
+      int var10004 = var10003.length;
+      int var8 = 0;
+      byte var25 = 58;
+      char[] var10002 = var10003;
+      int var16 = var10004;
+      char[] var31;
+      byte var37;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var31 = var10003;
+         var10005 = var8;
+         char var10008 = var10003[var8];
+         var10007 = 58;
+         var10006 = var10008;
+         switch (var8 % 7) {
+            case 0:
+               var37 = 92;
+               break;
+            case 1:
+               var37 = 84;
+               break;
+            case 2:
+               var37 = 67;
+               break;
+            case 3:
+               var37 = 1;
+               break;
+            case 4:
+               var37 = 85;
+               break;
+            case 5:
+               var37 = 54;
+               break;
+            default:
+               var37 = 28;
+         }
+      } else {
+         var25 = 58;
+         var16 = var10004;
+         if (var10004 <= var8) {
+            String var29 = new String(var10003).intern();
+            int var21 = -1;
+            a = var29;
+            long var9 = 8815217580317574880L;
+            long[] var14 = new long[3];
+            int var11 = 0;
+            String var12 = "gÏen·\u001b\u0099zJó®Ý´$\u001ey@fí¤©\u008aÍ´";
+            int var13 = "gÏen·\u001b\u0099zJó®Ý´$\u001ey@fí¤©\u008aÍ´".length();
+            byte var10 = 0;
+
             do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 92;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 84;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 67;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 1;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 85;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 54;
-                            break;
-                        }
-                        default: {
-                            n17 = 28;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        long l2 = 8815217580317574880L;
-        long[] lArray = new long[3];
-        int n18 = 0;
-        String string = "g\u00cfen\u00b7\u001b\u0099zJ\u00f3\u00ae\u00dd\u00b4$\u001ey@f\u00ed\u00a4\u00a9\u008a\u00cd\u00b4";
-        int n19 = "g\u00cfen\u00b7\u001b\u0099zJ\u00f3\u00ae\u00dd\u00b4$\u001ey@f\u00ed\u00a4\u00a9\u008a\u00cd\u00b4".length();
-        int n20 = 0;
-        do {
-            byte[] byArray = string.substring(n20, n20 += 8).getBytes("ISO-8859-1");
-            int n21 = n18++;
-            lArray[n21] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n20 < n19);
-        b = lArray;
-        c = new Integer[3];
-        T = !M.class.desiredAssertionStatus();
-    }
+               var21 = var10;
+               var10 += 8;
+               byte[] var15 = var12.substring(var21, var10).getBytes("ISO-8859-1");
+               var21 = var11++;
+               long var35 = (
+                     ((long)var15[0] & 255L) << 56
+                        | ((long)var15[1] & 255L) << 48
+                        | ((long)var15[2] & 255L) << 40
+                        | ((long)var15[3] & 255L) << 32
+                        | ((long)var15[4] & 255L) << 24
+                        | ((long)var15[5] & 255L) << 16
+                        | ((long)var15[6] & 255L) << 8
+                        | (long)var15[7] & 255L
+                  )
+                  ^ var9;
+               byte var30 = -1;
+               var14[var21] = var35;
+            } while (var10 < var13);
 
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
+            b = var14;
+            c = new Integer[3];
+            T = !org.M.class.desiredAssertionStatus();
+            return;
+         }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x158C;
-        if (c[n11] == null) {
-            E.c[n11] = (int)(b[n11] ^ l2);
-        }
-        return c[n11];
-    }
+         var31 = var10003;
+         var10005 = var8;
+         char var38 = var10003[var8];
+         var10007 = 58;
+         var10006 = var38;
+         switch (var8 % 7) {
+            case 0:
+               var37 = 92;
+               break;
+            case 1:
+               var37 = 84;
+               break;
+            case 2:
+               var37 = 67;
+               break;
+            case 3:
+               var37 = 1;
+               break;
+            case 4:
+               var37 = 85;
+               break;
+            case 5:
+               var37 = 54;
+               break;
+            default:
+               var37 = 28;
+         }
+      }
+
+      while (true) {
+         var31[var10005] = (char)(var10006 ^ var10007 ^ var37);
+         var8++;
+         if (var25 == 0) {
+            var31 = var10002;
+            var10005 = var25;
+            char var40 = var10002[var25];
+            var10007 = var25;
+            var10006 = var40;
+            switch (var8 % 7) {
+               case 0:
+                  var37 = 92;
+                  break;
+               case 1:
+                  var37 = 84;
+                  break;
+               case 2:
+                  var37 = 67;
+                  break;
+               case 3:
+                  var37 = 1;
+                  break;
+               case 4:
+                  var37 = 85;
+                  break;
+               case 5:
+                  var37 = 54;
+                  break;
+               default:
+                  var37 = 28;
+            }
+         } else {
+            if (var16 <= var8) {
+               String var27 = new String(var10002).intern();
+               int var18 = -1;
+               a = var27;
+               long var0 = 8815217580317574880L;
+               long[] var6 = new long[3];
+               int var3 = 0;
+               String var4 = "gÏen·\u001b\u0099zJó®Ý´$\u001ey@fí¤©\u008aÍ´";
+               int var5 = "gÏen·\u001b\u0099zJó®Ý´$\u001ey@fí¤©\u008aÍ´".length();
+               byte var2 = 0;
+
+               do {
+                  var18 = var2;
+                  var2 += 8;
+                  byte[] var7 = var4.substring(var18, var2).getBytes("ISO-8859-1");
+                  var18 = var3++;
+                  long var34 = (
+                        ((long)var7[0] & 255L) << 56
+                           | ((long)var7[1] & 255L) << 48
+                           | ((long)var7[2] & 255L) << 40
+                           | ((long)var7[3] & 255L) << 32
+                           | ((long)var7[4] & 255L) << 24
+                           | ((long)var7[5] & 255L) << 16
+                           | ((long)var7[6] & 255L) << 8
+                           | (long)var7[7] & 255L
+                     )
+                     ^ var0;
+                  byte var28 = -1;
+                  var6[var18] = var34;
+               } while (var2 < var5);
+
+               b = var6;
+               c = new Integer[3];
+               T = !org.M.class.desiredAssertionStatus();
+               return;
+            }
+
+            var31 = var10002;
+            var10005 = var8;
+            char var39 = var10002[var8];
+            var10007 = var25;
+            var10006 = var39;
+            switch (var8 % 7) {
+               case 0:
+                  var37 = 92;
+                  break;
+               case 1:
+                  var37 = 84;
+                  break;
+               case 2:
+                  var37 = 67;
+                  break;
+               case 3:
+                  var37 = 1;
+                  break;
+               case 4:
+                  var37 = 85;
+                  break;
+               case 5:
+                  var37 = 54;
+                  break;
+               default:
+                  var37 = 28;
+            }
+         }
+      }
+   }
+
+   private static IOException a(IOException var0) {
+      return var0;
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 5516;
+      if (c[var3] == null) {
+         c[var3] = (int)(b[var3] ^ var1);
+      }
+
+      return c[var3];
+   }
 }
+
+
+
+
 

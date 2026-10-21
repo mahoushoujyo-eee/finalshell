@@ -1,54 +1,69 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.kz_2;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import java.io.File;
 
-class R_
-extends FocusAdapter {
-    final kz_2 d;
+class R_ extends FocusAdapter {
+   final com.kz_4 d;
 
-    R_(kz_2 kz_22) {
-        this.d = kz_22;
-    }
+   R_(com.kz_4 var1) {
+      this.d = var1;
+   }
 
-    @Override
-    public void focusLost(FocusEvent focusEvent) {
-        block7: {
-            kz_2 kz_22;
-            block4: {
-                block5: {
-                    String string;
-                    block6: {
-                        File file;
-                        block2: {
-                            block3: {
-                                string = kz_2.M();
-                                file = this.d.b;
-                                if (string == null) break block2;
-                                if (file != null) break block3;
-                                kz_22 = this.d;
-                                if (string == null) break block4;
-                                if (kz_22.Z.getText().trim().equals("")) break block5;
-                            }
-                            kz_22 = this.d;
-                            if (string == null) break block6;
-                            file = kz_22.b;
-                        }
-                        if (file == null) break block7;
-                        kz_22 = this.d;
-                    }
-                    if (string == null) break block4;
-                    if (!kz_22.y().equals(this.d.Z.getText())) break block7;
-                }
-                kz_22 = this.d;
+   @Override
+   public void focusLost(FocusEvent var1) {
+      com.kz_4 var3;
+      label36: {
+         label39: {
+            String var2;
+            label40: {
+               var2 = com.kz_4.M();
+               File var10000 = this.d.b;
+               if (var2 != null) {
+                  if (this.d.b == null) {
+                     var3 = this.d;
+                     if (var2 == null) {
+                        break label36;
+                     }
+
+                     if (this.d.Z.getText().trim().equals("")) {
+                        break label39;
+                     }
+                  }
+
+                  var3 = this.d;
+                  if (var2 == null) {
+                     break label40;
+                  }
+
+                  var10000 = this.d.b;
+               }
+
+               if (var10000 == null) {
+                  return;
+               }
+
+               var3 = this.d;
             }
-            kz_22.P();
-        }
-    }
+
+            if (var2 == null) {
+               break label36;
+            }
+
+            if (!var3.y().equals(this.d.Z.getText())) {
+               return;
+            }
+         }
+
+         var3 = this.d;
+      }
+
+      var3.P();
+   }
 }
+
+
+
+
 

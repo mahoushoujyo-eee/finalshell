@@ -1,77 +1,67 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
 import java.util.Objects;
-import org.b_0;
-import org.v._S;
-import org.v.h4;
-import org.v.hP;
-import org.v.h_1;
-import org.v.hd_0;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-class hR
-extends hP {
-    final hP N;
-    final hd_0[] U;
-    final h_1 m;
+class hR extends hP {
+   final hP N;
+   final hd_2[] U;
+   final H_3 m;
 
-    hR(h_1 h_12, hd_0 hd_02, hP hP2, hd_0[] hd_0Array) {
-        this.m = h_12;
-        this.N = hP2;
-        this.U = hd_0Array;
-        hd_0 hd_03 = hd_02;
-        Objects.requireNonNull(hd_03);
-        super(hd_03);
-    }
+   hR(H_3 var1, hd_2 var2, hP var3, hd_2[] var4) {
+      this.m = var1;
+      this.N = var3;
+      this.U = var4;
+      Objects.requireNonNull(var2);
+      super(var2);
+   }
 
-    @Override
-    public h4[] f() {
-        return this.N.f();
-    }
+   @Override
+   public h4[] f() {
+      return this.N.f();
+   }
 
-    @Override
-    public _S p() {
-        return this.N.p();
-    }
+   @Override
+   public _S p() {
+      return this.N.p();
+   }
 
-    @Override
-    public boolean F() {
-        return true;
-    }
+   @Override
+   public boolean F() {
+      return true;
+   }
 
-    @Override
-    public boolean u() {
-        return this.N.u();
-    }
+   @Override
+   public boolean u() {
+      return this.N.u();
+   }
 
-    @Override
-    public hd_0 p() throws b_0 {
-        return this.N.p();
-    }
+   @Override
+   public hd_2 p$hd_2() throws org.b_2 {
+      return this.N.p();
+   }
 
-    @Override
-    public String K() {
-        return this.N.K();
-    }
+   @Override
+   public String K() {
+      return this.N.K();
+   }
 
-    @Override
-    public hd_0[] d() throws b_0 {
-        return this.N.p();
-    }
+   @Override
+   public hd_2[] d() throws org.b_2 {
+      return this.N.p();
+   }
 
-    @Override
-    public boolean c() {
-        return this.N.c();
-    }
+   @Override
+   public boolean c() {
+      return this.N.c();
+   }
 
-    @Override
-    public hd_0[] S() {
-        return this.U;
-    }
+   @Override
+   public hd_2[] S() {
+      return this.U;
+   }
 }
+
+
+
+
 

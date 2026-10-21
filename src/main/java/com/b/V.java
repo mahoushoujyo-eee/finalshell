@@ -1,45 +1,41 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.b;
 
-import com.ky_2;
-import com.on_0;
 import java.io.File;
-import java.io.FileFilter;
 import javax.swing.ImageIcon;
+import javax.swing.filechooser.FileFilter;
 
-public abstract class V
-extends javax.swing.filechooser.FileFilter
-implements FileFilter,
-on_0 {
-    private static ky_2[] W;
+public abstract class V extends FileFilter implements java.io.FileFilter, com.On_2 {
+   private static com.ky_4[] W;
 
-    public abstract ImageIcon b();
+   public abstract ImageIcon b();
 
-    @Override
-    public abstract String getDescription();
+   @Override
+   public abstract String getDescription();
 
-    @Override
-    public abstract boolean accept(File var1);
+   @Override
+   public abstract boolean accept(File var1);
 
-    @Override
-    public boolean n(Object object) {
-        return this.accept((File)object);
-    }
+   @Override
+   public boolean n(Object var1) {
+      return this.accept((File)var1);
+   }
 
-    public static void Q(ky_2[] ky_2Array) {
-        W = ky_2Array;
-    }
+   public static void Q(com.ky_4[] var0) {
+      W = var0;
+   }
 
-    public static ky_2[] L() {
-        return W;
-    }
+   public static com.ky_4[] L() {
+      return W;
+   }
 
-    static {
-        if (V.L() == null) {
-            V.Q(new ky_2[1]);
-        }
-    }
+   static {
+      if (L() == null) {
+         Q(new com.ky_4[1]);
+      }
+   }
 }
+
+
+
+
 

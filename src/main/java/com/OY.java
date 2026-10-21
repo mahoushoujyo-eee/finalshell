@@ -1,30 +1,27 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.cz_0;
-import com.ic_0;
-import com.oq_0;
 import java.awt.Component;
 import java.io.File;
 import javax.swing.JLabel;
 import javax.swing.JList;
 
-class OY
-extends oq_0 {
-    final ic_0 a;
+class OY extends com.Oq_2 {
+   final Ic_2 a;
 
-    OY(ic_0 ic_02) {
-        this.a = ic_02;
-    }
+   OY(Ic_2 var1) {
+      this.a = var1;
+   }
 
-    @Override
-    public Component getListCellRendererComponent(JList jList, Object object, int n10, boolean bl, boolean bl2) {
-        JLabel jLabel = (JLabel)super.getListCellRendererComponent(jList, object, n10, bl, bl2);
-        jLabel.setIcon(cz_0.B((File)object));
-        jLabel.setText(cz_0.X((File)object));
-        return jLabel;
-    }
+   @Override
+   public Component getListCellRendererComponent(JList var1, Object var2, int var3, boolean var4, boolean var5) {
+      JLabel var6 = (JLabel)super.getListCellRendererComponent(var1, var2, var3, var4, var5);
+      var6.setIcon(com.Cz_2.B((File)var2));
+      var6.setText(com.Cz_2.X((File)var2));
+      return var6;
+   }
 }
+
+
+
+
 

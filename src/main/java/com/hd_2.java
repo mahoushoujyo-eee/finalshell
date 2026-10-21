@@ -1,347 +1,603 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.W5;
-import java.awt.image.BufferedImage;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Insets;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.Shape;
+import javax.swing.JTabbedPane;
 
-/*
- * Renamed from com.hd
- */
-public class hd_2
-extends W5 {
-    private static final String a;
-    private static final long[] b;
-    private static final Integer[] c;
+public class Hd_2 extends JTabbedPane implements com.W2, com.au_2, Eh_2, com.yb_4, com.cX_3 {
+   private static String x;
 
-    private void t(int[] nArray) {
-        String[] stringArray = W5.q();
-        for (int i2 = 0; i2 < nArray.length; ++i2) {
-            int n10 = nArray[i2];
-            int n11 = n10 >> hd_2.a(8140, 813035958678453247L) & hd_2.a(3217, 8095873878671976611L);
-            int n12 = n10 >> hd_2.a(5638, 557475173309182520L) & hd_2.a(1928, 4667281847533200305L);
-            int n13 = n10 & hd_2.a(1928, 4667281847533200305L);
-            nArray[i2] = (n11 + n12 + n13) / 3;
-            if (stringArray != null) continue;
-        }
-    }
+   public Hd_2() {
+      this.setFocusable(false);
+      this.setBackground((Color)com.c.c(430348892393272046L).get(null));
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public BufferedImage filter(BufferedImage var1_1, BufferedImage var2_2) {
-        block18: {
-            block17: {
-                var4_3 = var1_1.getWidth();
-                var3_4 = W5.q();
-                var5_5 = var1_1.getHeight();
-                v0 = var2_2;
-                if (var3_4 == null) break block17;
-                if (v0 != null) break block18;
-                v0 = this.createCompatibleDestImage(var1_1, null);
-            }
-            var2_2 = v0;
-        }
-        var6_6 = null;
-        var7_7 = null;
-        var8_8 = null;
-        var9_9 = new int[var4_3];
-        var6_6 = this.l(var1_1, 0, 0, var4_3, 1, var6_6);
-        var7_7 = this.l(var1_1, 0, 0, var4_3, 1, var7_7);
-        this.t(var6_6);
-        this.t(var7_7);
-        var10_10 = 0;
-        block0: while (true) {
-            v1 = var10_10;
-            block1: while (v1 < var5_5) {
-                block19: {
-                    v2 = var10_10;
-                    if (var3_4 == null) break block19;
-                    v3 = var5_5 - 1;
-                    if (var3_4 == null) ** GOTO lbl68
-                    if (v2 < v3) {
-                        var8_8 = this.l(var1_1, 0, var10_10 + 1, var4_3, 1, var8_8);
-                        this.t(var8_8);
-                    }
-                    v4 = hd_2.a(23328, 1567409644925894426L);
-                    var9_9[var4_3 - 1] = v4;
-                    var9_9[0] = v4;
-                    v2 = var11_12 = 1;
-                }
-                while (var11_12 < var4_3 - 1) {
-                    var12_15 = var7_7[var11_12 - 1];
-                    var13_16 = var6_6[var11_12];
-                    var14_17 = var8_8[var11_12];
-                    var15_18 = var7_7[var11_12 + 1];
-                    var16_19 = var7_7[var11_12];
-                    var17_20 = Math.max(Math.max(var12_15, var13_16), Math.max(var14_17, var15_18));
-                    var18_21 = Math.min(Math.min(var12_15, var13_16), Math.min(var14_17, var15_18));
-                    var19_22 = (int)(0.5f * (float)Math.max(var17_20 - var16_19, var16_19 - var18_21));
-                    v1 = var6_6[var11_12 - 1] + var6_6[var11_12] + var6_6[var11_12 + 1] + var7_7[var11_12 - 1] - hd_2.a(4866, 7223194307816322879L) * var7_7[var11_12] + var7_7[var11_12 + 1] + var8_8[var11_12 - 1] + var8_8[var11_12] + var8_8[var11_12 + 1];
-                    if (var3_4 == null) continue block1;
-                    if (var3_4 == null) ** GOTO lbl51
-                    if (v1 > 0) {
-                        v5 = var19_22;
-                    } else {
-                        v6 = hd_2.a(8485, 7888476860802745630L);
-lbl51:
-                        // 2 sources
+   public Hd_2(int var1) {
+      super(var1);
+      this.setFocusable(false);
+      this.setBackground((Color)com.c.c(430348892393272046L).get(null));
+   }
 
-                        v5 = v6 + var19_22;
-                    }
-                    var9_9[var11_12] = var20_23 = v5;
-                    ++var11_12;
-                    if (var3_4 != null) continue;
-                }
-                this.E(var2_2, 0, var10_10, var4_3, 1, var9_9);
-                var11_11 = var6_6;
-                var6_6 = var7_7;
-                var7_7 = var8_8;
-                var8_8 = var11_11;
-                ++var10_10;
-                if (var3_4 != null) continue block0;
-            }
-            break;
-        }
-        var6_6 = this.l(var2_2, 0, 0, var4_3, 1, var6_6);
-        var7_7 = this.l(var2_2, 0, 0, var4_3, 1, var7_7);
-        var10_10 = 0;
-        block3: while (true) {
-            v7 = var10_10;
-            v3 = var5_5;
-            block4: while (v7 < v3) {
-                v8 = var10_10;
-                if (var3_4 != null) {
-                    if (v8 < var5_5 - 1) {
-                        var8_8 = this.l(var2_2, 0, var10_10 + 1, var4_3, 1, var8_8);
-                    }
-                    v9 = hd_2.a(18295, 1158868333767467848L);
-                    var9_9[var4_3 - 1] = v9;
-                    var9_9[0] = v9;
-                    v8 = var11_13 = 1;
-                }
-                while (var11_13 < var4_3 - 1) {
-                    block24: {
-                        block21: {
-                            block22: {
-                                block23: {
-                                    block20: {
-                                        v7 = var12_15 = var7_7[var11_13];
-                                        v3 = hd_2.a(28710, 2225998683964904478L);
-                                        if (var3_4 == null) continue block4;
-                                        if (var3_4 == null) break block20;
-                                        if (v7 > v3) break block21;
-                                        v10 = var6_6[var11_13 - 1];
-                                        v11 = hd_2.a(28710, 2225998683964904478L);
-                                    }
-                                    if (var3_4 == null) break block22;
-                                    if (v10 > v11) break block23;
-                                    v10 = var6_6[var11_13];
-                                    v11 = hd_2.a(28710, 2225998683964904478L);
-                                    if (var3_4 == null) break block22;
-                                    if (v10 > v11) break block23;
-                                    v10 = var6_6[var11_13 + 1];
-                                    v11 = hd_2.a(28710, 2225998683964904478L);
-                                    if (var3_4 == null) break block22;
-                                    if (v10 > v11) break block23;
-                                    v10 = var7_7[var11_13 - 1];
-                                    v11 = hd_2.a(28710, 2225998683964904478L);
-                                    if (var3_4 == null) break block22;
-                                    if (v10 > v11) break block23;
-                                    v10 = var7_7[var11_13 + 1];
-                                    v11 = hd_2.a(28710, 2225998683964904478L);
-                                    if (var3_4 == null) break block22;
-                                    if (v10 > v11) break block23;
-                                    v10 = var8_8[var11_13 - 1];
-                                    v11 = hd_2.a(28710, 2225998683964904478L);
-                                    if (var3_4 == null) break block22;
-                                    if (v10 > v11) break block23;
-                                    v10 = var8_8[var11_13];
-                                    v11 = hd_2.a(28710, 2225998683964904478L);
-                                    if (var3_4 == null) break block22;
-                                    if (v10 > v11) break block23;
-                                    v10 = var8_8[var11_13 + 1];
-                                    v11 = hd_2.a(28710, 2225998683964904478L);
-                                    if (var3_4 == null) break block22;
-                                    if (v10 <= v11) break block21;
-                                }
-                                v10 = var12_15;
-                                if (var3_4 == null) break block24;
-                                v11 = hd_2.a(28710, 2225998683964904478L);
-                            }
-                            v10 = v10 >= v11 ? var12_15 - hd_2.a(28710, 2225998683964904478L) : var12_15;
-                            break block24;
-                        }
-                        v10 = 0;
-                    }
-                    var12_15 = v10;
-                    var9_9[var11_13] = hd_2.a(18295, 1158868333767467848L) | var12_15 << hd_2.a(7697, 2670627301543934509L) | var12_15 << hd_2.a(4866, 7223194307816322879L) | var12_15;
-                    ++var11_13;
-                    if (var3_4 != null) continue;
-                }
-                this.E(var2_2, 0, var10_10, var4_3, 1, var9_9);
-                var11_14 = var6_6;
-                var6_6 = var7_7;
-                var7_7 = var8_8;
-                var8_8 = var11_14;
-                ++var10_10;
-                if (var3_4 != null) continue block3;
-            }
-            break;
-        }
-        return var2_2;
-    }
+   public Hd_2(int var1, int var2) {
+      super(var1, var2);
+      this.setFocusable(false);
+      this.setBackground((Color)com.c.c(430348892393272046L).get(null));
+   }
 
-    public String toString() {
-        return a;
-    }
+   public Hd_2(ij_4 var1) {
+      this.setFocusable(false);
+      this.setBackground((Color)com.c.c(430348892393272046L).get(null));
+      this.U(var1);
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block19: {
-            block18: {
-                block20: {
-                    break block20;
-lbl1:
-                    // 1 sources
+   public Hd_2(int var1, ij_4 var2) {
+      super(var1);
+      this.setFocusable(false);
+      this.setBackground((Color)com.c.c(430348892393272046L).get(null));
+      this.U(var2);
+   }
 
-                    while (true) {
-                        continue;
-                        break;
-                    }
-                }
-                v0 = "n(\u0004=M`bJ<\u000f9]*\u0000\u0005b".toCharArray();
-                v1 = v0.length;
-                var8 = 0;
-                v2 = 15;
-                v3 = v0;
-                v4 = v1;
-                if (v1 > 1) ** GOTO lbl54
-                do {
-                    v5 = v2;
-                    v3 = v3;
-                    v6 = v3;
-                    v7 = v2;
-                    v8 = var8;
-                    while (true) {
-                        switch (var8 % 7) {
-                            case 0: {
-                                v9 = 36;
-                                break;
-                            }
-                            case 1: {
-                                v9 = 67;
-                                break;
-                            }
-                            case 2: {
-                                v9 = 108;
-                                break;
-                            }
-                            case 3: {
-                                v9 = 87;
-                                break;
-                            }
-                            case 4: {
-                                v9 = 49;
-                                break;
-                            }
-                            case 5: {
-                                v9 = 64;
-                                break;
-                            }
-                            default: {
-                                v9 = 33;
-                            }
-                        }
-                        v6[v8] = (char)(v6[v8] ^ (v7 ^ v9));
-                        ++var8;
-                        v2 = v5;
-                        if (v5 != 0) break;
-                        v5 = v2;
-                        v3 = v3;
-                        v8 = v2;
-                        v6 = v3;
-                        v7 = v2;
-                    }
-lbl54:
-                    // 2 sources
+   public Hd_2(int var1, int var2, ij_4 var3) {
+      super(var1, var2);
+      this.setFocusable(false);
+      this.setBackground((Color)com.c.c(430348892393272046L).get(null));
+      this.U(var3);
+   }
 
-                    v10 = v3;
-                    v4 = v4;
-                } while (v4 > var8);
-                ** while (true)
-                hd_2.a = new String(v10).intern();
-                var0_1 = 404225145815324443L;
-                var6_2 = new long[10];
-                var3_3 = 0;
-                var4_4 = "is\u00f4 a\u00ceh\u0001\u0011 \u00a3>\u0012\u0093\u0012\u0085\u00dcR\u00ca%\u00bd\u00adC\u0085t\u0084\u00ab\u00d3MB4U*\u00dd\u00b9\u009b\u008d\u00ab%+*\u0092\u00b1\u00b8\u00112\u00f4SK\u0095)\u0000rf-&\u001b\u009d\u0098a\f\u0099\u00a0,";
-                var5_5 = "is\u00f4 a\u00ceh\u0001\u0011 \u00a3>\u0012\u0093\u0012\u0085\u00dcR\u00ca%\u00bd\u00adC\u0085t\u0084\u00ab\u00d3MB4U*\u00dd\u00b9\u009b\u008d\u00ab%+*\u0092\u00b1\u00b8\u00112\u00f4SK\u0095)\u0000rf-&\u001b\u009d\u0098a\f\u0099\u00a0,".length();
-                var2_6 = 0;
-                while (true) {
-                    var7_7 = var4_4.substring(var2_6, var2_6 += 8).getBytes("ISO-8859-1");
-                    v11 = var6_2;
-                    v12 = var3_3++;
-                    v13 = ((long)var7_7[0] & 255L) << 56 | ((long)var7_7[1] & 255L) << 48 | ((long)var7_7[2] & 255L) << 40 | ((long)var7_7[3] & 255L) << 32 | ((long)var7_7[4] & 255L) << 24 | ((long)var7_7[5] & 255L) << 16 | ((long)var7_7[6] & 255L) << 8 | (long)var7_7[7] & 255L;
-                    v14 = -1;
-                    break block18;
-                    break;
-                }
-lbl75:
-                // 1 sources
+   public int N(Point var1) {
+      return this.p(var1.x, var1.y);
+   }
 
-                while (true) {
-                    v11[v12] = v15;
-                    if (var2_6 < var5_5) ** continue;
-                    var4_4 = "\u00caI3B\u00fd\u0001?G\u00a5m]4s?\u00ac\u00f4";
-                    var5_5 = "\u00caI3B\u00fd\u0001?G\u00a5m]4s?\u00ac\u00f4".length();
-                    var2_6 = 0;
-                    while (true) {
-                        var7_7 = var4_4.substring(var2_6, var2_6 += 8).getBytes("ISO-8859-1");
-                        v11 = var6_2;
-                        v12 = var3_3++;
-                        v13 = ((long)var7_7[0] & 255L) << 56 | ((long)var7_7[1] & 255L) << 48 | ((long)var7_7[2] & 255L) << 40 | ((long)var7_7[3] & 255L) << 32 | ((long)var7_7[4] & 255L) << 24 | ((long)var7_7[5] & 255L) << 16 | ((long)var7_7[6] & 255L) << 8 | (long)var7_7[7] & 255L;
-                        v14 = 0;
-                        break block18;
-                        break;
-                    }
-                    break;
-                }
-lbl88:
-                // 1 sources
+   public int p(int var1, int var2) {
+      return this.indexAtLocation(var1, var2);
+   }
 
-                while (true) {
-                    v11[v12] = v15;
-                    if (var2_6 < var5_5) ** continue;
-                    break block19;
-                    break;
-                }
-            }
-            v15 = v13 ^ var0_1;
-            switch (v14) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl99:
-                // 1 sources
+   public Rectangle s(Point var1) {
+      return this.y(var1.x, var1.y);
+   }
 
-                ** continue;
-            }
-        }
-        hd_2.b = var6_2;
-        hd_2.c = new Integer[10];
-    }
+   public Rectangle y(int var1, int var2) {
+      int var3 = this.p(var1, var2);
+      return var3 != -1 ? this.getBoundsAt(var3) : null;
+   }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x643A;
-        if (c[n11] == null) {
-            hd_2.c[n11] = (int)(b[n11] ^ l2);
-        }
-        return c[n11];
-    }
+   public int u() {
+      return this.P().e();
+   }
+
+   public void i(int var1) {
+      this.P().l(var1);
+   }
+
+   public int O() {
+      return this.P().N();
+   }
+
+   public void o(int var1) {
+      this.P().M(var1);
+   }
+
+   public boolean y() {
+      return this.P().S();
+   }
+
+   public void s(boolean var1) {
+      this.P().J(var1);
+   }
+
+   public Insets H() {
+      return this.P().h();
+   }
+
+   public void f(Insets var1) {
+      this.P().Z(var1);
+   }
+
+   public Insets o() {
+      return this.P().r();
+   }
+
+   public void N(Insets var1) {
+      this.P().S(var1);
+   }
+
+   public Color Z() {
+      return this.P().O();
+   }
+
+   public void P(Color var1) {
+      this.P().R(var1);
+   }
+
+   public Color G() {
+      return this.P().n();
+   }
+
+   public void M(Color var1) {
+      this.P().t(var1);
+   }
+
+   public Color g() {
+      return this.P().T();
+   }
+
+   public void r(Color var1) {
+      this.P().T(var1);
+   }
+
+   public Color M() {
+      return this.P().z();
+   }
+
+   public void y(Color var1) {
+      this.P().u(var1);
+   }
+
+   public void M(int var1, Color var2) {
+      this.P().x(var1, var2);
+   }
+
+   public Color s(int var1) {
+      return this.P().m(var1);
+   }
+
+   public void Y(int var1, com.og_4 var2) {
+      this.P().v(var1, var2);
+   }
+
+   public com.og_4 N(int var1) {
+      return this.P().k(var1);
+   }
+
+   public ij_4 q() {
+      return this.P().t();
+   }
+
+   public void U(ij_4 var1) {
+      this.P().e(var1);
+   }
+
+   public com.og_4 V() {
+      return this.P().Q();
+   }
+
+   public void v(com.og_4 var1) {
+      this.P().G(var1);
+   }
+
+   public int F() {
+      return this.P().s();
+   }
+
+   public void q(int var1) {
+      this.P().g(var1);
+   }
+
+   public int G$int() {
+      return this.P().c();
+   }
+
+   public void R(int var1) {
+      this.P().j(var1);
+   }
+
+   public So_2 w() {
+      return this.P().d();
+   }
+
+   public void O(So_2 var1) {
+      this.P().x(var1);
+   }
+
+   public Color U() {
+      return this.P().r();
+   }
+
+   public void U(Color var1) {
+      this.P().P(var1);
+   }
+
+   public Color h() {
+      return this.P().k();
+   }
+
+   public void j(Color var1) {
+      this.P().k(var1);
+   }
+
+   public boolean g$boolean() {
+      return this.P().U();
+   }
+
+   public void A(boolean var1) {
+      this.P().I(var1);
+   }
+
+   public boolean Z$boolean() {
+      return this.P().h();
+   }
+
+   public void b(boolean var1) {
+      this.P().m(var1);
+   }
+
+   public Color L() {
+      return this.P().D();
+   }
+
+   public void k(Color var1) {
+      this.P().H(var1);
+   }
+
+   public boolean O$boolean() {
+      return this.P().f();
+   }
+
+   public void j(boolean var1) {
+      this.P().R(var1);
+   }
+
+   @Override
+   public Shape B() {
+      return this.P().B();
+   }
+
+   public com.KV P() {
+      return (com.KV)this.getUI();
+   }
+
+   @Override
+   public void updateUI() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Hd_2.X ()Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnull 33
+      // 09: invokevirtual com/Hd_2.getUI ()Ljavax/swing/plaf/TabbedPaneUI;
+      // 0c: ifnull 32
+      // 0f: goto 16
+      // 12: invokestatic com/Hd_2.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 15: athrow
+      // 16: aload 0
+      // 17: aload 1
+      // 18: ifnull 63
+      // 1b: goto 22
+      // 1e: invokestatic com/Hd_2.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 21: athrow
+      // 22: invokevirtual com/Hd_2.getUI ()Ljavax/swing/plaf/TabbedPaneUI;
+      // 25: instanceof com/KV
+      // 28: ifne 5b
+      // 2b: goto 32
+      // 2e: invokestatic com/Hd_2.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 31: athrow
+      // 32: aload 0
+      // 33: getstatic com/a9.z9 Ljava/lang/String;
+      // 36: bipush 0
+      // 37: anewarray 257
+      // 3a: invokestatic com/Kp_2.w (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 3d: checkcast com/KV
+      // 40: invokevirtual com/Hd_2.setUI (Ljavax/swing/plaf/TabbedPaneUI;)V
+      // 43: goto 6a
+      // 46: astore 2
+      // 47: aload 0
+      // 48: aload 2
+      // 49: invokestatic com/nE_3.g (Ljava/lang/Object;Ljava/lang/Throwable;)V
+      // 4c: aload 0
+      // 4d: new com/KV
+      // 50: dup
+      // 51: invokespecial com/KV.<init> ()V
+      // 54: invokevirtual com/Hd_2.setUI (Ljavax/swing/plaf/TabbedPaneUI;)V
+      // 57: aload 1
+      // 58: ifnonnull 6a
+      // 5b: aload 0
+      // 5c: goto 63
+      // 5f: invokestatic com/Hd_2.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 62: athrow
+      // 63: aload 0
+      // 64: invokevirtual com/Hd_2.getUI ()Ljavax/swing/plaf/TabbedPaneUI;
+      // 67: invokevirtual com/Hd_2.setUI (Ljavax/swing/plaf/TabbedPaneUI;)V
+      // 6a: return
+   }
+
+   @Override
+   public void u(String var1, Object[] var2) {
+      i2_2.n(this, var1, var2);
+   }
+
+   @Override
+   public void F(Object[] var1) {
+      i2_2.U(this, var1);
+   }
+
+   @Override
+   public void N(String var1, Object[] var2) {
+      i2_2.q(this, var1, var2);
+   }
+
+   @Override
+   public void M$void() {
+      i2_2.L(this);
+   }
+
+   @Override
+   public boolean k() {
+      return i2_2.Z(this);
+   }
+
+   @Override
+   public void M(com.ld_4 var1) {
+      i2_2.g(this, var1);
+   }
+
+   @Override
+   public void i() {
+      i2_2.o(this);
+   }
+
+   @Override
+   public void p(String var1) {
+      com.cl_4.c(this, var1);
+   }
+
+   @Override
+   public void a(String var1, Class var2) {
+      com.cl_4.x(this, var1, var2);
+   }
+
+   @Override
+   public void E(String var1, Object var2) {
+      com.cl_4.e(this, var1, var2);
+   }
+
+   @Override
+   public void n(String var1, String var2) {
+      com.cl_4.B(this, var1, var2);
+   }
+
+   @Override
+   public void I(String var1, String var2, Class var3) {
+      com.cl_4.t(this, var1, var2, var3);
+   }
+
+   @Override
+   public void H(String var1, String var2, Object var3) {
+      com.cl_4.a(this, var1, var2, var3);
+   }
+
+   @Override
+   public void S(String var1, boolean var2, boolean var3) {
+      com.cl_4.l(this, var1, var2, var3);
+   }
+
+   @Override
+   public void O(String var1, Class var2, boolean var3, boolean var4) {
+      com.cl_4.X(this, var1, var2, var3, var4);
+   }
+
+   @Override
+   public void h(String var1, Object var2, boolean var3, boolean var4) {
+      com.cl_4.A(this, var1, var2, var3, var4);
+   }
+
+   @Override
+   public void e(String var1, String var2, Class var3, boolean var4, boolean var5) {
+      com.cl_4.L(this, var1, var2, var3, var4, var5);
+   }
+
+   @Override
+   public void D(String var1, String var2, Object var3, boolean var4, boolean var5) {
+      com.cl_4.y(this, var1, var2, var3, var4, var5);
+   }
+
+   @Override
+   public void z(IB var1) {
+      com.cl_4.a(this, var1);
+   }
+
+   @Override
+   public void w$void() {
+      com.cl_4.O(this);
+   }
+
+   @Override
+   public void m() {
+      com.cl_4.G(this);
+   }
+
+   @Override
+   public void e() {
+      com.cl_4.H(this);
+   }
+
+   public Hd_2 m$Hd_2() {
+      return (Hd_2)com.FN.A(this);
+   }
+
+   public Hd_2 s$Hd_2(boolean var1) {
+      return (Hd_2)com.FN.O(this, var1);
+   }
+
+   @Override
+   public boolean h$boolean() {
+      return com.FN.k(this);
+   }
+
+   public Hd_2 R() {
+      return (Hd_2)com.FN.u(this);
+   }
+
+   public Hd_2 z(boolean var1) {
+      return (Hd_2)com.FN.D(this, var1);
+   }
+
+   @Override
+   public boolean K() {
+      return com.FN.U(this);
+   }
+
+   public Hd_2 N() {
+      return (Hd_2)com.FN.C(this);
+   }
+
+   public Hd_2 i(boolean var1) {
+      return (Hd_2)com.FN.q(this, var1);
+   }
+
+   @Override
+   public boolean l() {
+      return com.FN.G(this);
+   }
+
+   public Hd_2 l(boolean var1, boolean var2) {
+      return (Hd_2)com.FN.K(this, var1, var2);
+   }
+
+   public Hd_2 w(int var1) {
+      return (Hd_2)com.FN.p(this, var1);
+   }
+
+   public Hd_2 z(int var1) {
+      return (Hd_2)com.FN.O(this, var1);
+   }
+
+   public Hd_2 K(int var1) {
+      return (Hd_2)com.FN.K(this, var1);
+   }
+
+   @Override
+   public int Y() {
+      return com.FN.r(this);
+   }
+
+   public Hd_2 M(int var1, boolean var2, boolean var3) {
+      return (Hd_2)com.FN.d(this, var1, var2, var3);
+   }
+
+   public Hd_2 M(int var1, int var2) {
+      return (Hd_2)com.FN.m(this, var1, var2);
+   }
+
+   public Hd_2 u(String var1) {
+      return (Hd_2)com.FN.s(this, var1);
+   }
+
+   @Override
+   public String D() {
+      return com.FN.b(this);
+   }
+
+   @Override
+   public void o(String var1) {
+      i2_2.f(this, var1);
+   }
+
+   @Override
+   public void I() {
+      i2_2.p(this);
+   }
+
+   @Override
+   public String q$String() {
+      return i2_2.O(this);
+   }
+
+   @Override
+   public Component N(String var1) {
+      return this.u(var1);
+   }
+
+   @Override
+   public Component e(int var1, int var2) {
+      return this.M(var1, var2);
+   }
+
+   @Override
+   public Component t(int var1, boolean var2, boolean var3) {
+      return this.M(var1, var2, var3);
+   }
+
+   @Override
+   public Component G(int var1) {
+      return this.K(var1);
+   }
+
+   @Override
+   public Component o$Component(int var1) {
+      return this.z(var1);
+   }
+
+   @Override
+   public Component i$Component(int var1) {
+      return this.w(var1);
+   }
+
+   @Override
+   public Component D(boolean var1, boolean var2) {
+      return this.l(var1, var2);
+   }
+
+   @Override
+   public Component N(boolean var1) {
+      return this.i(var1);
+   }
+
+   @Override
+   public Component Q() {
+      return this.N();
+   }
+
+   @Override
+   public Component u(boolean var1) {
+      return this.z(var1);
+   }
+
+   @Override
+   public Component R$Component() {
+      return this.R();
+   }
+
+   @Override
+   public Component c(boolean var1) {
+      return this.s(var1);
+   }
+
+   @Override
+   public Component a() {
+      return this.m();
+   }
+
+   public static void E(String var0) {
+      x = var0;
+   }
+
+   public static String X() {
+      return x;
+   }
+
+   private static Throwable a(Throwable var0) {
+      return var0;
+   }
+
+   static {
+      if (X() == null) {
+         E("ka6m1");
+      }
+   }
 }
+
+
+
+
 

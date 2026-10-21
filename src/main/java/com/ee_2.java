@@ -1,74 +1,161 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.GO;
-import com.og_2;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Insets;
+import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.io.File;
+import javax.swing.TransferHandler.TransferSupport;
 
-/*
- * Renamed from com.ee
- */
-public final class ee_2 {
-    public static boolean n;
-    public static boolean X;
-    public static int J;
-    public static boolean k;
-    public static int x;
-    public static boolean u;
-    public static boolean N;
-    public static Color q;
-    public static Color G;
-    public static Color i;
-    public static Color p;
-    public static og_2 l;
-    public static int O;
-    public static Insets Q;
-    public static Insets W;
-    public static String h;
-    public static Font K;
-    public static Color j;
-    public static int E;
-    public static boolean S;
+class Ee_2 extends EY {
+   final File u;
+   final com.k0_2 X;
+   private static final String a;
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 6320491227543759679L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "\u00e5$\u00f9\u0010\u00b7\u00b7\u00eb\u009f=&\u00bcz\u00b7\u00b7\u00eb\u009f?\u0011\u0083\u001b\u00b7\u00b7\u00eb5";
-        int n11 = "\u00e5$\u00f9\u0010\u00b7\u00b7\u00eb\u009f=&\u00bcz\u00b7\u00b7\u00eb\u009f?\u0011\u0083\u001b\u00b7\u00b7\u00eb5".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        n = GO.d;
-        X = GO.X;
-        J = 0;
-        k = GO.Fe;
-        x = GO.FG;
-        u = true;
-        N = false;
-        q = Color.WHITE;
-        G = Color.BLACK;
-        i = Color.BLACK;
-        p = Color.GRAY;
-        l = null;
-        O = GO.FJ;
-        Q = new Insets(0, 0, 0, 0);
-        W = new Insets(2, 2, 2, 2);
-        h = null;
-        K = null;
-        j = new Color((int)lArray[1], (int)lArray[0], (int)lArray[0]);
-        E = (int)lArray[2];
-        S = true;
-    }
+   Ee_2(com.k0_2 var1, boolean var2, boolean var3, File var4) {
+      super(var2, var3);
+      this.X = var1;
+      this.u = var4;
+   }
+
+   @Override
+   public boolean d() {
+      String var10000 = com.kz_4.M();
+      Container var2 = this.X.getParent();
+      String var1 = var10000;
+      boolean var3 = var2 instanceof com.kc_4;
+      if (var1 != null) {
+         if (var3) {
+            return ((com.kc_4)var2).y();
+         }
+
+         var3 = this.X.N();
+      }
+
+      return var3;
+   }
+
+   @Override
+   public int E() {
+      String var10000 = com.kz_4.M();
+      Container var2 = this.X.getParent();
+      String var1 = var10000;
+      int var3 = var2 instanceof com.kc_4;
+      if (var1 != null) {
+         if (var3 != 0) {
+            return ((com.kc_4)var2).X();
+         }
+
+         var3 = this.X.U();
+      }
+
+      return var3;
+   }
+
+   @Override
+   public File P() {
+      String var1 = com.kz_4.M();
+      Ee_2 var10000 = this;
+      if (var1 != null) {
+         if (this.E() == 2) {
+            if (var1 == null) {
+               return this.u;
+            }
+
+            Container var2 = this.X.getParent();
+            if (var2 instanceof com.kc_4) {
+               this.X.K(new ActionEvent(this.X, 0, a), false);
+            }
+         }
+
+         var10000 = this;
+      }
+
+      return var10000.u;
+   }
+
+   @Override
+   public boolean importData(TransferSupport var1) {
+      return PG.N(this.X, var1);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "1<\u0015R\u000eAW\u00010\u001d\u0017LU\u0018\u0013'\u0018P".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 116;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 116;
+         var10006 = var0;
+      } else {
+         var6 = 116;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 116;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 3;
+               break;
+            case 1:
+               var23 = 33;
+               break;
+            case 2:
+               var23 = 13;
+               break;
+            case 3:
+               var23 = 67;
+               break;
+            case 4:
+               var23 = 90;
+               break;
+            case 5:
+               var23 = 88;
+               break;
+            default:
+               var23 = 76;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
+            }
+
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

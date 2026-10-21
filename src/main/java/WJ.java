@@ -1,60 +1,74 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.net.DatagramPacket;
 
-public class WJ
-extends WC {
-    public short o = D6.X;
-    byte[] e;
-    private static final long[] a;
-    private static final Integer[] b;
+public class WJ extends WC {
+   public short o = D6.X;
+   byte[] e;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public WJ(int n10, int n11) {
-        byte[] byArray = new byte[WJ.a(22789, 1154950531792643365L)];
-        this.H = n11;
-        this.l = n10;
-        B8.P(this.W, byArray, 0);
-        B8.P(this.o, byArray, 2);
-        lh_1.u(n10, byArray, 4);
-        lh_1.u(n11, byArray, WJ.a(26079, 5579751648188340732L));
-        this.g = new DatagramPacket(byArray, byArray.length);
-    }
+   public WJ(int var1, int var2) {
+      byte[] var3 = new byte[a(22789, 1154950531792643365L)];
+      this.H = var2;
+      this.l = var1;
+      B8.P(this.W, var3, 0);
+      B8.P(this.o, var3, 2);
+      lH_3.u(var1, var3, 4);
+      lH_3.u(var2, var3, a(26079, 5579751648188340732L));
+      this.g = new DatagramPacket(var3, var3.length);
+   }
 
-    public WJ(DatagramPacket datagramPacket) {
-        this.g = datagramPacket;
-        this.e = datagramPacket.getData();
-        this.W = B8.M(this.e, 0);
-        this.o = B8.M(this.e, 2);
-        this.l = lh_1.z(this.e, 4);
-        this.H = lh_1.z(this.e, WJ.a(3445, 3865969664778727764L));
-    }
+   public WJ(DatagramPacket var1) {
+      this.g = var1;
+      this.e = var1.getData();
+      this.W = B8.M(this.e, 0);
+      this.o = B8.M(this.e, 2);
+      this.l = lH_3.z(this.e, 4);
+      this.H = lH_3.z(this.e, a(3445, 3865969664778727764L));
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5705416763788016438L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "\u00bb\u00ebP#\b\u00b6\u00cajpr\u007f7\u00d9\u0082\u009e\u001f>h\u00de{\u00c0\u000e\"\u00c2";
-        int n11 = "\u00bb\u00ebP#\b\u00b6\u00cajpr\u007f7\u00d9\u0082\u009e\u001f>h\u00de{\u00c0\u000e\"\u00c2".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[3];
-    }
+   static {
+      long var0 = 5705416763788016438L;
+      long[] var6 = new long[3];
+      int var3 = 0;
+      String var4 = "»ëP#\b¶Êjpr\u007f7Ù\u0082\u009e\u001f>hÞ{À\u000e\"Â";
+      int var5 = "»ëP#\b¶Êjpr\u007f7Ù\u0082\u009e\u001f>hÞ{À\u000e\"Â".length();
+      byte var2 = 0;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x7C21;
-        if (b[n11] == null) {
-            WJ.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[3];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 31777;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

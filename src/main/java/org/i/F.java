@@ -1,29 +1,24 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.i;
 
-import org.i.D;
-import org.i.q;
-import org.i.z_0;
+public class F implements q, z_2 {
+   public String G;
 
-public class F
-implements q,
-z_0 {
-    public String G;
+   public F(String var1) {
+      this.G = var1;
+   }
 
-    public F(String string) {
-        this.G = string;
-    }
+   @Override
+   public Object P(D var1) throws Throwable {
+      return var1.F(this);
+   }
 
-    @Override
-    public Object P(D d2) throws Throwable {
-        return d2.F(this);
-    }
-
-    @Override
-    public String toString() {
-        return this.G;
-    }
+   @Override
+   public String toString() {
+      return this.G;
+   }
 }
+
+
+
+
 

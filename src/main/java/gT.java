@@ -1,12 +1,10 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.KD;
-
-public class gT
-extends KD {
-    public gT(String string) {
-        super(string);
-    }
+public class gT extends com.KD {
+   public gT(String var1) {
+      super(var1);
+   }
 }
+
+
+
+
 

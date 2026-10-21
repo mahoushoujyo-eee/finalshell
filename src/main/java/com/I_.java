@@ -1,104 +1,123 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com._y_0;
-import com.pa_1;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.KeyStroke;
 
-public class I_
-implements KeyListener {
-    boolean t;
-    int Z;
-    final pa_1 W;
-    private static final long[] a;
-    private static final Integer[] b;
+public class I_ implements KeyListener {
+   boolean t;
+   int Z;
+   final pA_3 W;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public I_(pa_1 pa_12) {
-        this.W = pa_12;
-        this.t = false;
-        this.Z = I_.a(29189, 8162893525179881102L);
-    }
+   public I_(pA_3 var1) {
+      this.W = var1;
+      this.t = false;
+      this.Z = a(29189, 8162893525179881102L);
+   }
 
-    @Override
-    public void keyPressed(KeyEvent keyEvent) {
-        int n10;
-        int n11;
-        int n12;
-        block6: {
-            block7: {
-                int n13 = keyEvent.getKeyCode();
-                n12 = _y_0.y();
-                KeyStroke keyStroke = KeyStroke.getKeyStrokeForEvent(keyEvent);
-                n11 = n13;
-                if (n12 != 0) break block6;
-                if (n11 == I_.a(26846, 5300456774903974999L)) break block7;
-                n11 = keyStroke.getModifiers() & I_.a(24728, 3534710944705954832L);
-                if (n12 != 0) break block6;
-                if (n11 != 0) {
-                    this.t = true;
-                }
+   @Override
+   public void keyPressed(KeyEvent var1) {
+      int var2;
+      int var6;
+      var6 = _y_2.y();
+      int var3 = var1.getKeyCode();
+      var2 = var6;
+      KeyStroke var4 = KeyStroke.getKeyStrokeForEvent(var1);
+      var6 = var3;
+      label25:
+      if (var2 == 0) {
+         if (var3 != a(26846, 5300456774903974999L)) {
+            var6 = var4.getModifiers() & a(24728, 3534710944705954832L);
+            if (var2 != 0) {
+               break label25;
             }
-            this.W.ce = System.currentTimeMillis();
-            this.W.cQ = true;
-            this.W.cw = keyEvent.getKeyCode();
-            n11 = this.W.Z(keyEvent) ? 1 : 0;
-        }
-        int n14 = n10 = n11;
-        if (n12 == 0) {
-            if (n14 == 0) {
-                return;
+
+            if (var6 != 0) {
+               this.t = true;
             }
-            n14 = pa_1.Z(this.W, keyEvent) ? 1 : 0;
-        }
-    }
+         }
 
-    @Override
-    public void keyTyped(KeyEvent keyEvent) {
-        pa_1.Y(this.W, keyEvent);
-    }
+         this.W.ce = System.currentTimeMillis();
+         this.W.cQ = true;
+         this.W.cw = var1.getKeyCode();
+         var6 = this.W.Z(var1);
+      }
 
-    @Override
-    public void keyReleased(KeyEvent keyEvent) {
-        KeyStroke keyStroke = KeyStroke.getKeyStrokeForEvent(keyEvent);
-        int n10 = _y_0.M();
-        boolean bl = this.W.u();
-        if (n10 != 0) {
-            if (!bl) {
-                return;
-            }
-            bl = this.W.i(keyEvent);
-        }
-    }
+      int var5 = var6;
+      if (var2 == 0) {
+         if (var5 == 0) {
+            return;
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 1562565732610996436L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "\u00e6\u0018\u00adZ\u00c9\u000f4\u0092\u008b\u00ee\u00cc\u00de$\u009b\u00bcD\u00c6\u00dc%_\u00cd\u00d7-\u00bd";
-        int n11 = "\u00e6\u0018\u00adZ\u00c9\u000f4\u0092\u008b\u00ee\u00cc\u00de$\u009b\u00bcD\u00c6\u00dc%_\u00cd\u00d7-\u00bd".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[3];
-    }
+         pA_3.Z(this.W, var1);
+      }
+   }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x2489;
-        if (b[n11] == null) {
-            I_.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+   @Override
+   public void keyTyped(KeyEvent var1) {
+      pA_3.Y(this.W, var1);
+   }
+
+   @Override
+   public void keyReleased(KeyEvent var1) {
+      int var10000 = _y_2.M();
+      KeyStroke var3 = KeyStroke.getKeyStrokeForEvent(var1);
+      int var2 = var10000;
+      boolean var4 = this.W.u();
+      if (var2 != 0) {
+         if (!var4) {
+            return;
+         }
+
+         this.W.i(var1);
+      }
+   }
+
+   static {
+      long var0 = 1562565732610996436L;
+      long[] var6 = new long[3];
+      int var3 = 0;
+      String var4 = "æ\u0018\u00adZÉ\u000f4\u0092\u008bîÌÞ$\u009b¼DÆÜ%_Í×-½";
+      int var5 = "æ\u0018\u00adZÉ\u000f4\u0092\u008bîÌÞ$\u009b¼DÆÜ%_Í×-½".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[3];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 9353;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

@@ -1,159 +1,156 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.z;
 
-import com.ky_2;
 import java.io.IOException;
 import java.lang.reflect.Method;
-import org.h.x_1;
-import org.w.d;
-import org.w.j;
-import org.z.a;
+import org.h.x_3;
 
 public class D {
-    private static final Class f;
-    private static final Method R;
-    private static final Method Z;
-    private final Object F;
-    private static String[] X;
+   private static final Class f;
+   private static final Method R;
+   private static final Method Z;
+   private final Object F;
+   private static String[] X;
 
-    public D(Object object) {
-        this.F = object;
-    }
+   public D(Object var1) {
+      this.F = var1;
+   }
 
-    public x_1 H() {
-        String[] stringArray = D.b();
-        x_1 x_12 = new x_1(j.o(R, this.F, new Object[0]));
-        if (ky_2.F() != null) {
-            D.T(new String[4]);
-        }
-        return x_12;
-    }
+   public x_3 H() {
+      String[] var1 = b();
+      x_3 var10000 = new x_3(org.w.j.o(R, this.F, new Object[0]));
+      if (com.ky_4.F() != null) {
+         T(new String[4]);
+      }
 
-    public a G() throws IOException {
-        a a10;
-        String[] stringArray = D.b();
-        try {
-            a10 = new a(j.o(Z, this.F, new Object[0]));
-            if (stringArray == null) {
-                ky_2.K(new String[2]);
+      return var10000;
+   }
+
+   public a G() throws IOException {
+      String[] var1 = b();
+
+      try {
+         a var10000 = new a(org.w.j.o(Z, this.F, new Object[0]));
+         if (var1 == null) {
+            com.ky_4.K(new String[2]);
+         }
+
+         return var10000;
+      } catch (IOException var2) {
+         throw a(var2);
+      }
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var0 = new String[3];
+      int var4 = 0;
+      String var3 = "0S+aD-\f2 6]>a\u001e(\u00022[fm_ \u00160YfM_ \u00160Y\u001aeV!\u00119R+e\u00043L-n";
+      int var5 = "0S+aD-\f2 6]>a\u001e(\u00022[fm_ \u00160YfM_ \u00160Y\u001aeV!\u00119R+e\u00043L-n".length();
+      String[] var10000 = new String[5];
+      char var2 = '\b';
+      T(var10000);
+      int var1 = -1;
+
+      while (true) {
+         char[] var10002;
+         label39: {
+            char[] var10003 = var3.substring(++var1, var1 + var2).toCharArray();
+            int var10004 = var10003.length;
+            int var6 = 0;
+            byte var13 = 96;
+            var10002 = var10003;
+            int var8 = var10004;
+            byte var16;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var16 = 96;
+               var10006 = var6;
+            } else {
+               var13 = 96;
+               var8 = var10004;
+               if (var10004 <= var6) {
+                  break label39;
+               }
+
+               var10005 = var10003;
+               var16 = 96;
+               var10006 = var6;
             }
-        }
-        catch (IOException iOException) {
-            throw D.a(iOException);
-        }
-        return a10;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block13: {
-            var0 = new String[3];
-            var4_1 = 0;
-            var3_2 = "0S+aD-\f2 6]>a\u001e(\u00022[fm_ \u00160YfM_ \u00160Y\u001aeV!\u00119R+e\u00043L-n";
-            var5_3 = "0S+aD-\f2 6]>a\u001e(\u00022[fm_ \u00160YfM_ \u00160Y\u001aeV!\u00119R+e\u00043L-n".length();
-            var2_4 = 8;
-            D.T(new String[5]);
-            var1_5 = -1;
-lbl8:
-            // 2 sources
 
             while (true) {
-                continue;
-                break;
+               char var28 = var10005[var10006];
+               byte var29;
+               switch (var6 % 7) {
+                  case 0:
+                     var29 = 60;
+                     break;
+                  case 1:
+                     var29 = 92;
+                     break;
+                  case 2:
+                     var29 = 40;
+                     break;
+                  case 3:
+                     var29 = 96;
+                     break;
+                  case 4:
+                     var29 = 80;
+                     break;
+                  case 5:
+                     var29 = 36;
+                     break;
+                  default:
+                     var29 = 3;
+               }
+
+               var10005[var10006] = (char)(var28 ^ var16 ^ var29);
+               var6++;
+               if (var13 == 0) {
+                  var10006 = var13;
+                  var10005 = var10002;
+                  var16 = var13;
+               } else {
+                  if (var8 <= var6) {
+                     break;
+                  }
+
+                  var10005 = var10002;
+                  var16 = var13;
+                  var10006 = var6;
+               }
             }
-lbl10:
-            // 1 sources
+         }
 
-            while (true) {
-                var0[var4_1++] = new String(v0).intern();
-                if ((var1_5 += var2_4) < var5_3) {
-                    var2_4 = var3_2.charAt(var1_5);
-                    ** continue;
-                }
-                break block13;
-                break;
-            }
-            v1 = ++var1_5;
-            v2 = var3_2.substring(v1, v1 + var2_4).toCharArray();
-            v3 = v2.length;
-            var6_6 = 0;
-            v4 = 96;
-            v5 = v2;
-            v6 = v3;
-            if (v3 > 1) ** GOTO lbl68
-            do {
-                v7 = v4;
-                v5 = v5;
-                v8 = v5;
-                v9 = v4;
-                v10 = var6_6;
-                while (true) {
-                    switch (var6_6 % 7) {
-                        case 0: {
-                            v11 = 60;
-                            break;
-                        }
-                        case 1: {
-                            v11 = 92;
-                            break;
-                        }
-                        case 2: {
-                            v11 = 40;
-                            break;
-                        }
-                        case 3: {
-                            v11 = 96;
-                            break;
-                        }
-                        case 4: {
-                            v11 = 80;
-                            break;
-                        }
-                        case 5: {
-                            v11 = 36;
-                            break;
-                        }
-                        default: {
-                            v11 = 3;
-                        }
-                    }
-                    v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                    ++var6_6;
-                    v4 = v7;
-                    if (v7 != 0) break;
-                    v7 = v4;
-                    v5 = v5;
-                    v10 = v4;
-                    v8 = v5;
-                    v9 = v4;
-                }
-lbl68:
-                // 2 sources
+         String var15 = new String(var10002).intern();
+         byte var10 = -1;
+         var0[var4++] = var15;
+         if ((var1 += var2) >= var5) {
+            f = org.w.d.Z(var0[1]);
+            R = org.w.d.z(f, var0[0], new Class[0]);
+            Z = org.w.d.z(f, var0[2], new Class[0]);
+            return;
+         }
 
-                v0 = v5;
-                v6 = v6;
-            } while (v6 > var6_6);
-            ** while (true)
-        }
-        D.f = d.Z(var0[1]);
-        D.R = d.z(D.f, var0[0], new Class[0]);
-        D.Z = d.z(D.f, var0[2], new Class[0]);
-    }
+         var2 = var3.charAt(var1);
+      }
+   }
 
-    public static void T(String[] stringArray) {
-        X = stringArray;
-    }
+   public static void T(String[] var0) {
+      X = var0;
+   }
 
-    public static String[] b() {
-        return X;
-    }
+   public static String[] b() {
+      return X;
+   }
 
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
+   private static IOException a(IOException var0) {
+      return var0;
+   }
 }
+
+
+
+
 

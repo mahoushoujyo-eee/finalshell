@@ -1,178 +1,221 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.WC;
 import java.awt.Component;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class M
-implements FocusListener,
-MouseListener {
-    private Boolean k;
-    private Boolean m;
-    private Component p;
-    private boolean W = false;
-    private boolean o = false;
+public class M implements FocusListener, MouseListener {
+   private Boolean k;
+   private Boolean m;
+   private Component p;
+   private boolean W = false;
+   private boolean o = false;
 
-    public static void I(Component component, Component component2, Boolean bl, Boolean bl2) {
-        M m10 = new M(component2, bl, bl2);
-        int[] nArray = WC.V();
-        Boolean bl3 = bl;
-        if (nArray == null) {
-            if (bl3 != null) {
-                component.addFocusListener(m10);
+   public static void I(Component var0, Component var1, Boolean var2, Boolean var3) {
+      int[] var10000 = com.WC.V();
+      com.M var5 = new com.M(var1, var2, var3);
+      int[] var4 = var10000;
+      Boolean var6 = var2;
+      if (var4 == null) {
+         if (var2 != null) {
+            var0.addFocusListener(var5);
+         }
+
+         var6 = var3;
+      }
+
+      if (var6 != null) {
+         var0.addMouseListener(var5);
+      }
+   }
+
+   public M(Component var1) {
+      this(var1, null, null);
+   }
+
+   public M(Component var1, Boolean var2, Boolean var3) {
+      this.W(var1);
+      this.C(var2);
+      this.q(var3);
+   }
+
+   public Boolean P() {
+      return this.k;
+   }
+
+   public void C(Boolean var1) {
+      this.k = var1;
+   }
+
+   public Boolean W() {
+      return this.m;
+   }
+
+   public void q(Boolean var1) {
+      this.m = var1;
+   }
+
+   public Component Y() {
+      return this.p;
+   }
+
+   public void W(Component var1) {
+      this.p = var1;
+   }
+
+   @Override
+   public void focusGained(FocusEvent var1) {
+      int[] var2 = com.WC.V();
+      com.M var10000 = this;
+      if (var2 == null) {
+         if (this.k == null) {
+            return;
+         }
+
+         this.W = true;
+         var10000 = this;
+      }
+
+      var10000.n();
+   }
+
+   @Override
+   public void focusLost(FocusEvent var1) {
+      int[] var2 = com.WC.V();
+      com.M var10000 = this;
+      if (var2 == null) {
+         if (this.k == null) {
+            return;
+         }
+
+         this.W = false;
+         var10000 = this;
+      }
+
+      var10000.n();
+   }
+
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+   }
+
+   @Override
+   public void mousePressed(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+      int[] var2 = com.WC.V();
+      com.M var10000 = this;
+      if (var2 == null) {
+         if (this.m == null) {
+            return;
+         }
+
+         this.o = true;
+         var10000 = this;
+      }
+
+      var10000.n();
+   }
+
+   @Override
+   public void mouseExited(MouseEvent var1) {
+      int[] var2 = com.WC.V();
+      com.M var10000 = this;
+      if (var2 == null) {
+         if (this.m == null) {
+            return;
+         }
+
+         this.o = false;
+         var10000 = this;
+      }
+
+      var10000.n();
+   }
+
+   public void n() {
+      this.p.setVisible(this.g());
+   }
+
+   public boolean g() {
+      int[] var1;
+      boolean var4;
+      label60: {
+         label63: {
+            var1 = com.WC.V();
+            Boolean var10000 = this.k;
+            if (var1 == null) {
+               if (this.k == null) {
+                  break label63;
+               }
+
+               var10000 = this.k;
             }
-            bl3 = bl2;
-        }
-        if (bl3 != null) {
-            component.addMouseListener(m10);
-        }
-    }
 
-    public M(Component component) {
-        this(component, null, null);
-    }
-
-    public M(Component component, Boolean bl, Boolean bl2) {
-        this.W(component);
-        this.C(bl);
-        this.q(bl2);
-    }
-
-    public Boolean P() {
-        return this.k;
-    }
-
-    public void C(Boolean bl) {
-        this.k = bl;
-    }
-
-    public Boolean W() {
-        return this.m;
-    }
-
-    public void q(Boolean bl) {
-        this.m = bl;
-    }
-
-    public Component Y() {
-        return this.p;
-    }
-
-    public void W(Component component) {
-        this.p = component;
-    }
-
-    @Override
-    public void focusGained(FocusEvent focusEvent) {
-        block3: {
-            M m10;
-            block2: {
-                int[] nArray = WC.V();
-                m10 = this;
-                if (nArray != null) break block2;
-                if (m10.k == null) break block3;
-                this.W = true;
-                m10 = this;
+            var4 = var10000;
+            if (var1 != null) {
+               break label60;
             }
-            m10.n();
-        }
-    }
 
-    @Override
-    public void focusLost(FocusEvent focusEvent) {
-        block3: {
-            M m10;
-            block2: {
-                int[] nArray = WC.V();
-                m10 = this;
-                if (nArray != null) break block2;
-                if (m10.k == null) break block3;
-                this.W = false;
-                m10 = this;
+            if (var4 != this.W) {
+               var4 = false;
+               break label60;
             }
-            m10.n();
-        }
-    }
+         }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+         var4 = true;
+      }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-    }
+      boolean var2;
+      label49: {
+         label64: {
+            var2 = var4;
+            Boolean var5 = this.m;
+            if (var1 == null) {
+               if (this.m == null) {
+                  break label64;
+               }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-        block3: {
-            M m10;
-            block2: {
-                int[] nArray = WC.V();
-                m10 = this;
-                if (nArray != null) break block2;
-                if (m10.m == null) break block3;
-                this.o = true;
-                m10 = this;
+               var5 = this.m;
             }
-            m10.n();
-        }
-    }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-        block3: {
-            M m10;
-            block2: {
-                int[] nArray = WC.V();
-                m10 = this;
-                if (nArray != null) break block2;
-                if (m10.m == null) break block3;
-                this.o = false;
-                m10 = this;
+            var4 = var5;
+            if (var1 != null) {
+               break label49;
             }
-            m10.n();
-        }
-    }
 
-    public void n() {
-        this.p.setVisible(this.g());
-    }
+            if (var4 != this.o) {
+               var4 = false;
+               break label49;
+            }
+         }
 
-    /*
-     * Exception decompiling
-     */
-    public boolean g() {
-        /*
-         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
-         * 
-         * org.benf.cfr.reader.util.ConfusedCFRException: Statement already marked as first in another block
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.markFirstStatementInBlock(Op03SimpleStatement.java:461)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.Misc.markWholeBlock(Misc.java:251)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.considerAsSimpleIf(ConditionalRewriter.java:673)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.identifyNonjumpingConditionals(ConditionalRewriter.java:56)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:722)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
-         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
-         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
-         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
-         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
-         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
-         *     at org.benf.cfr.reader.Main.main(Main.java:54)
-         */
-        throw new IllegalStateException("Decompilation failed");
-    }
+         var4 = true;
+      }
+
+      boolean var3 = var4;
+      var4 = var2;
+      if (var1 == null) {
+         if (!var2) {
+            return false;
+         }
+
+         var4 = var3;
+      }
+
+      return var1 != null ? var4 : var4;
+   }
 }
+
+
+
+
 

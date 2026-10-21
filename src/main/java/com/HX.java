@@ -1,23 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.om_2;
-
 class HX {
-    public final String H;
-    public final int M;
-    final om_2 P;
+   public final String H;
+   public final int M;
+   final com.om_4 P;
 
-    public HX(om_2 om_22, String string, int n10) {
-        this.P = om_22;
-        this.H = string;
-        this.M = n10;
-    }
+   public HX(com.om_4 var1, String var2, int var3) {
+      this.P = var1;
+      this.H = var2;
+      this.M = var3;
+   }
 
-    public String toString() {
-        return this.H;
-    }
+   @Override
+   public String toString() {
+      return this.H;
+   }
 }
+
+
+
+
 

@@ -1,17 +1,17 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class UE
-implements Runnable {
-    final mo_0 B;
+class UE implements Runnable {
+   final mo_2 B;
 
-    UE(mo_0 mo_02) {
-        this.B = mo_02;
-    }
+   UE(mo_2 var1) {
+      this.B = var1;
+   }
 
-    @Override
-    public void run() {
-        this.B.o();
-    }
+   @Override
+   public void run() {
+      this.B.o();
+   }
 }
+
+
+
+
 

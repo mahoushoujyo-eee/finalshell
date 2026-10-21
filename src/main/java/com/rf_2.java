@@ -1,26 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.OG;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+class Rf_2 extends R7 {
+   final com.C0 v;
 
-/*
- * Renamed from com.rf
- */
-class rf_2
-implements ActionListener {
-    final OG V;
+   Rf_2(com.C0 var1) {
+      this.v = var1;
+   }
 
-    rf_2(OG oG) {
-        this.V = oG;
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.V.B();
-    }
+   @Override
+   public void f(com.Ds_2 var1) {
+      this.v.N(var1);
+   }
 }
+
+
+
+
 

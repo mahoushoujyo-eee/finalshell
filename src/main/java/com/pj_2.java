@@ -1,26 +1,14 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.BD;
+import java.awt.event.WindowAdapter;
 
-/*
- * Renamed from com.pj
- */
-class pj_2 {
-    public final String B;
-    public final int J;
-    final BD a;
+public interface Pj_2 extends nw_4 {
+   WindowAdapter H(E_ var1);
 
-    public pj_2(BD bD, String string, int n10) {
-        this.a = bD;
-        this.B = string;
-        this.J = n10;
-    }
-
-    public String toString() {
-        return this.B;
-    }
+   com.aJ K(e__2 var1);
 }
+
+
+
+
 

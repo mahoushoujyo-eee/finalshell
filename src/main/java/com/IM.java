@@ -1,25 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.DI;
-import com.YU;
-import com.gq_0;
-import com.uJ;
-
 public abstract class IM {
-    protected gq_0 J;
-    protected YU g;
-    protected uJ s;
-    protected String a;
+   protected Gq_2 J;
+   protected com.YU g;
+   protected uJ s;
+   protected String a;
 
-    public boolean D(DI dI) throws Exception {
-        this.J = dI.N();
-        this.g = dI.D;
-        this.s = this.g.I();
-        this.a = dI.t();
-        return true;
-    }
+   public boolean D(com.DI var1) throws Exception {
+      this.J = var1.N();
+      this.g = var1.D;
+      this.s = this.g.I();
+      this.a = var1.t();
+      return true;
+   }
 }
+
+
+
+
 

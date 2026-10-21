@@ -1,22 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.T;
 
-import org.T.D;
-import org.T.G;
+class Y implements org.T.G {
+   final D d;
 
-class Y
-implements G {
-    final D d;
+   Y(D var1) {
+      this.d = var1;
+   }
 
-    Y(D d2) {
-        this.d = d2;
-    }
-
-    @Override
-    public void q(String string) {
-        System.out.println(string);
-    }
+   @Override
+   public void q(String var1) {
+      System.out.println(var1);
+   }
 }
+
+
+
+
 

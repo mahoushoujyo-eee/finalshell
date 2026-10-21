@@ -1,111 +1,118 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ax_0;
-import com.ky_2;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
-import com.zo_0;
 import java.io.Serializable;
 
-@XStreamAlias(value="ResourceFile")
-public class F2
-implements Serializable {
-    @XStreamAsAttribute
-    private zo_0 B;
-    @XStreamAsAttribute
-    private String u;
-    @XStreamAsAttribute
-    private String h;
-    private static int[] I;
+@XStreamAlias("ResourceFile")
+public class F2 implements Serializable {
+   @XStreamAsAttribute
+   private com.zo_2 B;
+   @XStreamAsAttribute
+   private String u;
+   @XStreamAsAttribute
+   private String h;
+   private static int[] I;
 
-    public F2(zo_0 zo_02, String string) {
-        this(zo_02, string, (String)null);
-    }
+   public F2(com.zo_2 var1, String var2) {
+      this(var1, var2, (String)null);
+   }
 
-    public F2(zo_0 zo_02, String string, Class clazz) {
-        this(zo_02, string, clazz.getCanonicalName());
-    }
+   public F2(com.zo_2 var1, String var2, Class var3) {
+      this(var1, var2, var3.getCanonicalName());
+   }
 
-    public F2(zo_0 zo_02, String string, String string2) {
-        int[] nArray = F2.T();
-        this.u(zo_02);
-        int[] nArray2 = nArray;
-        this.f(string);
-        this.G(string2);
-        if (ky_2.F() != null) {
-            F2.Q(new int[3]);
-        }
-    }
+   public F2(com.zo_2 var1, String var2, String var3) {
+      T();
+      this.u(var1);
+      this.f(var2);
+      this.G(var3);
+      if (com.ky_4.F() != null) {
+         Q(new int[3]);
+      }
+   }
 
-    public zo_0 G() {
-        return this.B;
-    }
+   public com.zo_2 G() {
+      return this.B;
+   }
 
-    public void u(zo_0 zo_02) {
-        this.B = zo_02;
-    }
+   public void u(com.zo_2 var1) {
+      this.B = var1;
+   }
 
-    public String b() {
-        return this.u;
-    }
+   public String b() {
+      return this.u;
+   }
 
-    public void f(String string) {
-        this.u = string;
-    }
+   public void f(String var1) {
+      this.u = var1;
+   }
 
-    public String D() {
-        return this.h;
-    }
+   public String D() {
+      return this.h;
+   }
 
-    public void G(String string) {
-        this.h = string;
-    }
+   public void G(String var1) {
+      this.h = var1;
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public boolean equals(Object object) {
-        F2 f22;
-        int[] nArray = F2.T();
-        Object object2 = object;
-        if (nArray != null) {
-            if (object2 == null) return false;
-            object2 = object;
-        }
-        boolean bl = object2 instanceof F2;
-        if (nArray == null) return bl;
-        if (!bl) return false;
-        F2 f23 = f22 = (F2)object;
-        if (nArray != null) {
-            if (f23.B != this.B) return false;
-            f23 = f22;
-        }
-        boolean bl2 = ax_0.Z(f23.u, new Object[]{this.u});
-        if (nArray != null) {
-            if (!bl2) return false;
-            bl2 = ax_0.Z(f22.h, new Object[]{this.h});
-        }
-        if (nArray == null) return bl2;
-        if (!bl2) return false;
-        return true;
-    }
+   @Override
+   public boolean equals(Object var1) {
+      int[] var2 = T();
+      Object var10000 = var1;
+      if (var2 != null) {
+         if (var1 == null) {
+            return false;
+         }
 
-    public static void Q(int[] nArray) {
-        I = nArray;
-    }
+         var10000 = var1;
+      }
 
-    public static int[] T() {
-        return I;
-    }
+      boolean var4 = var10000 instanceof com.F2;
+      if (var2 == null) {
+         return var4;
+      } else if (var4) {
+         com.F2 var3 = (com.F2)var1;
+         var10000 = var3;
+         if (var2 != null) {
+            if (var3.B != this.B) {
+               return false;
+            }
 
-    static {
-        if (F2.T() == null) {
-            F2.Q(new int[4]);
-        }
-    }
+            var10000 = var3;
+         }
+
+         boolean var6 = com.ax_2.Z(((com.F2)var10000).u, new Object[]{this.u});
+         if (var2 != null) {
+            if (!var6) {
+               return false;
+            }
+
+            var6 = com.ax_2.Z(var3.h, new Object[]{this.h});
+         }
+
+         return var2 == null ? var6 : var6;
+      } else {
+         return false;
+      }
+   }
+
+   public static void Q(int[] var0) {
+      I = var0;
+   }
+
+   public static int[] T() {
+      return I;
+   }
+
+   static {
+      if (T() == null) {
+         Q(new int[4]);
+      }
+   }
 }
+
+
+
+
 

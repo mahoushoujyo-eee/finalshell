@@ -1,22 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class TY
-implements ActionListener {
-    final xw_0 a;
+class TY implements ActionListener {
+   final xw_2 a;
 
-    TY(xw_0 xw_02) {
-        this.a = xw_02;
-    }
+   TY(xw_2 var1) {
+      this.a = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.a.S = xw_0.C;
-        ((xw_0)this.a).setVisible(false);
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      com.c.c(619905985051257260L).setInt(com.c.c(240860614129562710L).get(this), com.c.c(265275935393846693L).getInt(null));
+      ((xw_2)com.c.c(240860614129562710L).get(this)).setVisible(false);
+   }
 }
+
+
+
+
 

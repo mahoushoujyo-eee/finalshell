@@ -1,24 +1,12 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.A;
 
-import com.A.f;
 import com.E_;
-import com.FN;
+import com.Eh_2;
 import com.IB;
-import com.ON;
+import com.Pj_2;
 import com.SN;
-import com.W_;
-import com.aJ;
-import com.c4_0;
-import com.cl_2;
-import com.cx_1;
-import com.e__0;
-import com.eh_0;
-import com.fs_0;
-import com.i2_0;
-import com.pj_0;
+import com.e__2;
+import com.i2_2;
 import java.awt.Component;
 import java.awt.Frame;
 import java.awt.GraphicsConfiguration;
@@ -27,269 +15,268 @@ import java.awt.event.WindowAdapter;
 import java.util.List;
 import javax.swing.JWindow;
 
-public class E
-extends JWindow
-implements pj_0,
-cx_1,
-eh_0,
-W_ {
-    protected boolean U = false;
-    protected c4_0 B;
+public class E extends JWindow implements Pj_2, com.cX_3, Eh_2, com.W_ {
+   protected boolean U = false;
+   protected com.c4_2 B;
 
-    public E() {
-        this.b();
-    }
+   public E() {
+      this.b();
+   }
 
-    public E(GraphicsConfiguration graphicsConfiguration) {
-        super(graphicsConfiguration);
-        this.b();
-    }
+   public E(GraphicsConfiguration var1) {
+      super(var1);
+      this.b();
+   }
 
-    public E(Frame frame) {
-        super(frame);
-        this.b();
-    }
+   public E(Frame var1) {
+      super(var1);
+      this.b();
+   }
 
-    public E(Component component) {
-        super(FN.L(component));
-        this.b();
-    }
+   public E(Component var1) {
+      super(com.FN.L(var1));
+      this.b();
+   }
 
-    public E(Window window) {
-        super(window);
-        this.b();
-    }
+   public E(Window var1) {
+      super(var1);
+      this.b();
+   }
 
-    public E(Window window, GraphicsConfiguration graphicsConfiguration) {
-        super(window, graphicsConfiguration);
-        this.b();
-    }
+   public E(Window var1, GraphicsConfiguration var2) {
+      super(var1, var2);
+      this.b();
+   }
 
-    protected void b() {
-        this.setFocusable(true);
-        FN.Y(this);
-        this.B = new f(this, true);
-        ON.b(this, this.B);
-    }
+   protected void b() {
+      this.setFocusable(true);
+      com.FN.Y(this);
+      this.B = new com.A.f(this, true);
+      com.ON.b(this, this.B);
+   }
 
-    public boolean g() {
-        return this.U;
-    }
+   public boolean g() {
+      return this.U;
+   }
 
-    public void W(boolean bl) {
-        this.U = bl;
-    }
+   public void W(boolean var1) {
+      this.U = var1;
+   }
 
-    public List P() {
-        return this.B.t();
-    }
+   public List P() {
+      return this.B.t();
+   }
 
-    public void b(Component component) {
-        this.B.p(component);
-    }
+   public void b(Component var1) {
+      this.B.p(var1);
+   }
 
-    public void u(Component component) {
-        this.B.C(component);
-    }
+   public void u(Component var1) {
+      this.B.C(var1);
+   }
 
-    @Override
-    public WindowAdapter H(E_ e_) {
-        return fs_0.G(this, e_);
-    }
+   @Override
+   public WindowAdapter H(E_ var1) {
+      return com.Fs_2.G(this, var1);
+   }
 
-    @Override
-    public aJ K(e__0 e__02) {
-        return fs_0.c(this, e__02);
-    }
+   @Override
+   public com.aJ K(e__2 var1) {
+      return com.Fs_2.c(this, var1);
+   }
 
-    @Override
-    public void o(String string) {
-        i2_0.f(this, string);
-    }
+   @Override
+   public void o(String var1) {
+      i2_2.f(this, var1);
+   }
 
-    @Override
-    public void I() {
-        i2_0.p(this);
-    }
+   @Override
+   public void I() {
+      i2_2.p(this);
+   }
 
-    @Override
-    public String q() {
-        return i2_0.O(this);
-    }
+   @Override
+   public String q() {
+      return i2_2.O(this);
+   }
 
-    @Override
-    public void p(String string) {
-        cl_2.c(this.getRootPane(), string);
-    }
+   @Override
+   public void p(String var1) {
+      com.cl_4.c(this.getRootPane(), var1);
+   }
 
-    @Override
-    public void a(String string, Class clazz) {
-        cl_2.x(this.getRootPane(), string, clazz);
-    }
+   @Override
+   public void a(String var1, Class var2) {
+      com.cl_4.x(this.getRootPane(), var1, var2);
+   }
 
-    @Override
-    public void E(String string, Object object) {
-        cl_2.e(this.getRootPane(), string, object);
-    }
+   @Override
+   public void E(String var1, Object var2) {
+      com.cl_4.e(this.getRootPane(), var1, var2);
+   }
 
-    @Override
-    public void n(String string, String string2) {
-        cl_2.B(this.getRootPane(), string, string2);
-    }
+   @Override
+   public void n(String var1, String var2) {
+      com.cl_4.B(this.getRootPane(), var1, var2);
+   }
 
-    @Override
-    public void I(String string, String string2, Class clazz) {
-        cl_2.t(this.getRootPane(), string, string2, clazz);
-    }
+   @Override
+   public void I(String var1, String var2, Class var3) {
+      com.cl_4.t(this.getRootPane(), var1, var2, var3);
+   }
 
-    @Override
-    public void H(String string, String string2, Object object) {
-        cl_2.a(this.getRootPane(), string, string2, object);
-    }
+   @Override
+   public void H(String var1, String var2, Object var3) {
+      com.cl_4.a(this.getRootPane(), var1, var2, var3);
+   }
 
-    @Override
-    public void S(String string, boolean bl, boolean bl2) {
-        cl_2.l(this.getRootPane(), string, bl, bl2);
-    }
+   @Override
+   public void S(String var1, boolean var2, boolean var3) {
+      com.cl_4.l(this.getRootPane(), var1, var2, var3);
+   }
 
-    @Override
-    public void O(String string, Class clazz, boolean bl, boolean bl2) {
-        cl_2.X(this.getRootPane(), string, clazz, bl, bl2);
-    }
+   @Override
+   public void O(String var1, Class var2, boolean var3, boolean var4) {
+      com.cl_4.X(this.getRootPane(), var1, var2, var3, var4);
+   }
 
-    @Override
-    public void h(String string, Object object, boolean bl, boolean bl2) {
-        cl_2.A(this.getRootPane(), string, object, bl, bl2);
-    }
+   @Override
+   public void h(String var1, Object var2, boolean var3, boolean var4) {
+      com.cl_4.A(this.getRootPane(), var1, var2, var3, var4);
+   }
 
-    @Override
-    public void e(String string, String string2, Class clazz, boolean bl, boolean bl2) {
-        cl_2.L(this.getRootPane(), string, string2, clazz, bl, bl2);
-    }
+   @Override
+   public void e(String var1, String var2, Class var3, boolean var4, boolean var5) {
+      com.cl_4.L(this.getRootPane(), var1, var2, var3, var4, var5);
+   }
 
-    @Override
-    public void D(String string, String string2, Object object, boolean bl, boolean bl2) {
-        cl_2.y(this.getRootPane(), string, string2, object, bl, bl2);
-    }
+   @Override
+   public void D(String var1, String var2, Object var3, boolean var4, boolean var5) {
+      com.cl_4.y(this.getRootPane(), var1, var2, var3, var4, var5);
+   }
 
-    @Override
-    public void z(IB iB) {
-        cl_2.a(this.getRootPane(), iB);
-    }
+   @Override
+   public void z(IB var1) {
+      com.cl_4.a(this.getRootPane(), var1);
+   }
 
-    @Override
-    public void w() {
-        cl_2.O(this.getRootPane());
-    }
+   @Override
+   public void w() {
+      com.cl_4.O(this.getRootPane());
+   }
 
-    @Override
-    public void m() {
-        cl_2.G(this.getRootPane());
-    }
+   @Override
+   public void m() {
+      com.cl_4.G(this.getRootPane());
+   }
 
-    @Override
-    public void e() {
-        cl_2.H(this.getRootPane());
-    }
+   @Override
+   public void e() {
+      com.cl_4.H(this.getRootPane());
+   }
 
-    public E p(boolean bl) {
-        return (E)SN.N(this, bl);
-    }
+   public com.A.E p(boolean var1) {
+      return (com.A.E)SN.N(this, var1);
+   }
 
-    @Override
-    public boolean N() {
-        return SN.B(this);
-    }
+   @Override
+   public boolean N() {
+      return SN.B(this);
+   }
 
-    public E s(float f10) {
-        return (E)SN.s(this, f10);
-    }
+   public com.A.E s(float var1) {
+      return (com.A.E)SN.s(this, var1);
+   }
 
-    @Override
-    public float B() {
-        return SN.A(this);
-    }
+   @Override
+   public float B() {
+      return SN.A(this);
+   }
 
-    public E S() {
-        return (E)SN.v(this);
-    }
+   public com.A.E S() {
+      return (com.A.E)SN.v(this);
+   }
 
-    public E z(Component component) {
-        return (E)SN.u(this, component);
-    }
+   public com.A.E z(Component var1) {
+      return (com.A.E)SN.u(this, var1);
+   }
 
-    public E O(int n10, int n11) {
-        return (E)SN.H(this, n10, n11);
-    }
+   public com.A.E O(int var1, int var2) {
+      return (com.A.E)SN.H(this, var1, var2);
+   }
 
-    public E j(Component component, int n10, int n11) {
-        return (E)SN.Q(this, component, n10, n11);
-    }
+   public com.A.E j(Component var1, int var2, int var3) {
+      return (com.A.E)SN.Q(this, var1, var2, var3);
+   }
 
-    public E B(int n10) {
-        return (E)SN.W(this, n10);
-    }
+   public com.A.E B(int var1) {
+      return (com.A.E)SN.W(this, var1);
+   }
 
-    public E L(int n10) {
-        return (E)SN.G(this, n10);
-    }
+   public com.A.E L(int var1) {
+      return (com.A.E)SN.G(this, var1);
+   }
 
-    public E n() {
-        return (E)SN.D(this);
-    }
+   public com.A.E n() {
+      return (com.A.E)SN.D(this);
+   }
 
-    public E j(boolean bl) {
-        return (E)SN.g(this, bl);
-    }
+   public com.A.E j(boolean var1) {
+      return (com.A.E)SN.g(this, var1);
+   }
 
-    @Override
-    public Window S(boolean bl) {
-        return this.j(bl);
-    }
+   @Override
+   public Window S(boolean var1) {
+      return this.j(var1);
+   }
 
-    @Override
-    public Window X() {
-        return this.n();
-    }
+   @Override
+   public Window X() {
+      return this.n();
+   }
 
-    @Override
-    public Window o(int n10) {
-        return this.L(n10);
-    }
+   @Override
+   public Window o(int var1) {
+      return this.L(var1);
+   }
 
-    @Override
-    public Window U(int n10) {
-        return this.B(n10);
-    }
+   @Override
+   public Window U(int var1) {
+      return this.B(var1);
+   }
 
-    @Override
-    public Window A(Component component, int n10, int n11) {
-        return this.j(component, n10, n11);
-    }
+   @Override
+   public Window A(Component var1, int var2, int var3) {
+      return this.j(var1, var2, var3);
+   }
 
-    @Override
-    public Window q(int n10, int n11) {
-        return this.O(n10, n11);
-    }
+   @Override
+   public Window q(int var1, int var2) {
+      return this.O(var1, var2);
+   }
 
-    @Override
-    public Window I(Component component) {
-        return this.z(component);
-    }
+   @Override
+   public Window I(Component var1) {
+      return this.z(var1);
+   }
 
-    @Override
-    public Window F() {
-        return this.S();
-    }
+   @Override
+   public Window F() {
+      return this.S();
+   }
 
-    @Override
-    public Window D(float f10) {
-        return this.s(f10);
-    }
+   @Override
+   public Window D(float var1) {
+      return this.s(var1);
+   }
 
-    @Override
-    public Window h(boolean bl) {
-        return this.p(bl);
-    }
+   @Override
+   public Window h(boolean var1) {
+      return this.p(var1);
+   }
 }
+
+
+
+
 

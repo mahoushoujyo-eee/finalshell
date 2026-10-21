@@ -1,16 +1,15 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.fc_0;
-import java.lang.reflect.Type;
+class Ni_2 extends Nd_2 {
+   public final int o;
 
-/*
- * Renamed from com.ni
- */
-public interface ni_2
-extends fc_0 {
-    public Type m(Object var1, String var2);
+   public Ni_2(Xo_2 var1, int var2, boolean var3) {
+      super(var1, var3, null);
+      this.o = var2;
+   }
 }
+
+
+
+
 

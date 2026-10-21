@@ -1,16 +1,16 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-public class _Y
-extends Exception {
-    public _Y(String string) {
-        super(string);
-    }
+public class _Y extends Exception {
+   public _Y(String var1) {
+      super(var1);
+   }
 
-    public _Y(String string, Throwable throwable) {
-        super(string, throwable);
-    }
+   public _Y(String var1, Throwable var2) {
+      super(var1, var2);
+   }
 }
+
+
+
+
 

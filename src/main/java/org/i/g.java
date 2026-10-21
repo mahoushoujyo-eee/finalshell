@@ -1,26 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.i;
 
-import org.i.M;
-import org.i.i_0;
+class g implements i_2 {
+   final String r;
+   final String y;
+   final org.i.M c;
 
-class g
-implements i_0 {
-    final String r;
-    final String y;
-    final M c;
+   g(org.i.M var1, String var2, String var3) {
+      this.c = var1;
+      this.r = var2;
+      this.y = var3;
+   }
 
-    g(M m10, String string, String string2) {
-        this.c = m10;
-        this.r = string;
-        this.y = string2;
-    }
-
-    @Override
-    public String toString() {
-        return M.Q(this.c).B(this.r) + this.y;
-    }
+   @Override
+   public String toString() {
+      return org.i.M.Q(this.c).B(this.r) + this.y;
+   }
 }
+
+
+
+
 

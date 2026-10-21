@@ -1,143 +1,80 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.XP;
-import com.pg_1;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.SwingUtilities;
 
-/*
- * Renamed from com.pq
- */
-final class pq_2
-extends pg_1 {
-    private static final long[] c;
-    private static final Integer[] d;
+class Pq_2 extends MouseAdapter {
+   private boolean f;
+   final com.k4_2 h;
+   final com.O_ b;
+   final String W;
+   final String E;
+   final com.kk_4 z;
 
-    pq_2(int[] nArray) {
-    }
+   Pq_2(com.kk_4 var1, com.k4_2 var2, com.O_ var3, String var4, String var5) {
+      this.z = var1;
+      this.h = var2;
+      this.b = var3;
+      this.W = var4;
+      this.E = var5;
+      this.f = com.k4_2.K(this.z.E);
+   }
 
-    @Override
-    public int Q(int n10) {
-        int[] nArray = XP.j();
-        int n11 = n10;
-        if (nArray == null) {
-            switch (n11) {
-                case 3: {
-                    return pq_2.b(19376, 4435609268750268143L);
-                }
-                case 32: {
-                    return pq_2.b(15666, 7887783927718625380L);
-                }
-                case 59: {
-                    return pq_2.b(22765, 3676874647023527349L);
-                }
-                case 60: {
-                    return pq_2.b(16136, 1571257213642228319L);
-                }
-                case 61: {
-                    return pq_2.b(10756, 8656336647490623312L);
-                }
-                case 62: {
-                    return pq_2.b(28624, 8423946668774658697L);
-                }
-                case 63: {
-                    return pq_2.b(19379, 2786405475314513640L);
-                }
-                case 64: {
-                    return pq_2.b(3281, 1412997684481651083L);
-                }
-                case 91: {
-                    return pq_2.b(20302, 6510346966320919058L);
-                }
-                case 92: {
-                    return pq_2.b(5082, 7413038728197009039L);
-                }
-                case 93: {
-                    return pq_2.b(10381, 1038557458687415760L);
-                }
-                case 94: {
-                    return pq_2.b(18099, 3829272397685767149L);
-                }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      String var10000 = com.kz_4.M();
+      this.z.requestFocusInWindow();
+      String var2 = var10000;
+      if (var2 != null) {
+         label35:
+         if (SwingUtilities.isRightMouseButton(var1)) {
+            com.k4_2 var3 = this.z.E;
+            if (var2 != null) {
+               if (this.z.E.I) {
+                  boolean var10001 = this.f;
+                  if (var2 != null) {
+                     var10001 = !this.f;
+                  }
+
+                  label43: {
+                     this.f = var10001;
+                     Pq_2 var4 = this;
+                     if (var2 != null) {
+                        if (this.f) {
+                           var5 = this.W;
+                           break label43;
+                        }
+
+                        var4 = this;
+                     }
+
+                     var5 = var4.E;
+                  }
+
+                  this.b.setText(var5);
+                  if (var2 != null) {
+                     break label35;
+                  }
+               }
+
+               var3 = this.z.E;
             }
-            n11 = -1;
-        }
-        return n11;
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 3420720960302243833L;
-                var6_1 = new long[12];
-                var3_2 = 0;
-                var4_3 = "'F\u00f7\u00f0\u00f8\u00c6i\u00ef\u008a\u00fd\u00f39\u00e6\u00c8\u00e4\u00ef\u00e1\u00efy\u00eaai\n\u00d5\u00f0\u00e5\u008c[f\u0095\u00ed\u000f\u0084s9\u00d2\u00be\u00dfi\u00f9\u0011H7H\u00a9v.\u0086\u00ac\u00e4i*\r\u00aaM\u009e\u00c2\u008ar\u0015A\u00f6z\u00a5\u0095\u00bf\u00a8\u00c7\u0097f\u001dA\u00f07\u0086\u009e\u00168\u001f}";
-                var5_4 = "'F\u00f7\u00f0\u00f8\u00c6i\u00ef\u008a\u00fd\u00f39\u00e6\u00c8\u00e4\u00ef\u00e1\u00efy\u00eaai\n\u00d5\u00f0\u00e5\u008c[f\u0095\u00ed\u000f\u0084s9\u00d2\u00be\u00dfi\u00f9\u0011H7H\u00a9v.\u0086\u00ac\u00e4i*\r\u00aaM\u009e\u00c2\u008ar\u0015A\u00f6z\u00a5\u0095\u00bf\u00a8\u00c7\u0097f\u001dA\u00f07\u0086\u009e\u00168\u001f}".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = " H}\u00b4v\u00e91\u0080\u00a4\u00eap\u000f\u00a3S\u0088C";
-                    var5_4 = " H}\u00b4v\u00e91\u0080\u00a4\u00eap\u000f\u00a3S\u0088C".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+            boolean var6 = this.z.E.o();
+            if (var2 != null) {
+               var6 = !var6;
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
 
-                ** continue;
-            }
-        }
-        pq_2.c = var6_1;
-        pq_2.d = new Integer[12];
-    }
+            var3.N(var6);
+         }
 
-    private static int b(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x7D5F;
-        if (d[n11] == null) {
-            pq_2.d[n11] = (int)(c[n11] ^ l2);
-        }
-        return d[n11];
-    }
+         com.kk_4.L(this.z);
+      }
+   }
 }
+
+
+
+
 

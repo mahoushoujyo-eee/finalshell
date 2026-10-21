@@ -1,99 +1,116 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.util.ArrayList;
+import java.util.Iterator;
 import javax.swing.table.AbstractTableModel;
 
-public class xG
-extends AbstractTableModel {
-    private ArrayList Z;
-    String[] w;
-    Class[] E;
+public class xG extends AbstractTableModel {
+   private ArrayList Z;
+   String[] w;
+   Class[] E;
 
-    xG() {
-        this.Z = new ArrayList();
-        this.E = new Class[]{Object.class};
-        this.w = new String[]{""};
-    }
+   xG() {
+      com.c.c(410487397827032565L).set(this, new ArrayList());
+      com.c.c(186695375521450227L).set(this, new Class[]{Object.class});
+      com.c.c(338876892181440577L).set(this, new String[]{""});
+   }
 
-    @Override
-    public synchronized Object getValueAt(int n10, int n11) {
-        String string = null;
-        if (n10 < ((ArrayList)this.Z).size()) {
-            string = (String)((ArrayList)this.Z).get(n10);
-        }
-        return string;
-    }
+   @Override
+   public synchronized Object getValueAt(int var1, int var2) {
+      String var3 = null;
+      if (var1 < ((ArrayList)com.c.c(410487397827032565L).get(this)).size()) {
+         var3 = (String)((ArrayList)com.c.c(410487397827032565L).get(this)).get(var1);
+      }
 
-    public int L(String string) {
-        int n10 = 0;
-        int[] nArray = zn_0.g();
-        for (String string2 : (ArrayList)this.Z) {
-            block3: {
-                block4: {
-                    int n11;
-                    block5: {
-                        if (nArray != null) break block3;
-                        if (string == null) break block4;
-                        n11 = string.equals(string2);
-                        if (nArray != null) break block5;
-                        if (n11 == 0) break block4;
-                        n11 = n10;
-                    }
-                    return n11;
-                }
-                ++n10;
+      return var3;
+   }
+
+   public int L(String var1) {
+      int[] var10000 = zn_2.g();
+      int var3 = 0;
+      int[] var2 = var10000;
+      Iterator var4 = ((ArrayList)com.c.c(410487397827032565L).get(this)).iterator();
+
+      while (true) {
+         if (var4.hasNext()) {
+            String var5 = (String)var4.next();
+            if (var2 == null) {
+               if (var1 != null) {
+                  var6 = var1.equals(var5);
+                  if (var2 != null) {
+                     break;
+                  }
+
+                  if (var6 != 0) {
+                     var6 = var3;
+                     break;
+                  }
+               }
+
+               var3++;
             }
-            if (nArray == null) continue;
-        }
-        return -1;
-    }
 
-    @Override
-    public void setValueAt(Object object, int n10, int n11) {
-        this.fireTableCellUpdated(n10, n11);
-    }
-
-    @Override
-    public synchronized int getRowCount() {
-        return ((ArrayList)this.Z).size();
-    }
-
-    @Override
-    public int getColumnCount() {
-        return ((String[])this.w).length;
-    }
-
-    @Override
-    public String getColumnName(int n10) {
-        return ((String[])this.w)[n10];
-    }
-
-    public Class getColumnClass(int n10) {
-        return ((Class[])this.E)[n10];
-    }
-
-    @Override
-    public boolean isCellEditable(int n10, int n11) {
-        boolean bl = false;
-        int[] nArray = zn_0.g();
-        boolean bl2 = n11;
-        if (nArray == null) {
-            if (!bl2) {
-                bl = true;
+            if (var2 == null) {
+               continue;
             }
-            bl2 = false;
-        }
-        return bl2;
-    }
+         }
 
-    public ArrayList j() {
-        return (ArrayList)this.Z;
-    }
+         return -1;
+      }
 
-    public void g(ArrayList arrayList) {
-        this.Z = arrayList;
-    }
+      return var6;
+   }
+
+   @Override
+   public void setValueAt(Object var1, int var2, int var3) {
+      this.fireTableCellUpdated(var2, var3);
+   }
+
+   @Override
+   public synchronized int getRowCount() {
+      return ((ArrayList)com.c.c(410487397827032565L).get(this)).size();
+   }
+
+   @Override
+   public int getColumnCount() {
+      return ((String[])com.c.c(338876892181440577L).get(this)).length;
+   }
+
+   @Override
+   public String getColumnName(int var1) {
+      return ((String[])com.c.c(338876892181440577L).get(this))[var1];
+   }
+
+   @Override
+   public Class getColumnClass(int var1) {
+      return ((Class[])com.c.c(186695375521450227L).get(this))[var1];
+   }
+
+   @Override
+   public boolean isCellEditable(int var1, int var2) {
+      int[] var10000 = zn_2.g();
+      boolean var4 = false;
+      int[] var3 = var10000;
+      int var6 = var2;
+      if (var3 == null) {
+         if (var2 == 0) {
+            var4 = true;
+         }
+
+         var6 = 0;
+      }
+
+      return (boolean)var6;
+   }
+
+   public ArrayList j() {
+      return (ArrayList)com.c.c(410487397827032565L).get(this);
+   }
+
+   public void g(ArrayList var1) {
+      com.c.c(410487397827032565L).set(this, var1);
+   }
 }
+
+
+
+
 

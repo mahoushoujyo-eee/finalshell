@@ -1,65 +1,63 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.E4;
-import com.i2_0;
-import com.oj_2;
-import com.yw_1;
 import java.util.List;
 
-class XK
-implements yw_1 {
-    XK() {
-    }
+class XK implements com.yW_3 {
+   @Override
+   public void Z(String var1, String var2) {
+      this.I();
+   }
 
-    @Override
-    public void Z(String string, String string2) {
-        this.I();
-    }
+   @Override
+   public void G(com.oj_4 var1) {
+      this.i(var1);
+   }
 
-    @Override
-    public void G(oj_2 oj_22) {
-        this.i(oj_22);
-    }
+   @Override
+   public void t(com.oj_4 var1) {
+      this.i(var1);
+   }
 
-    @Override
-    public void t(oj_2 oj_22) {
-        this.i(oj_22);
-    }
+   @Override
+   public void U() {
+      this.I();
+   }
 
-    @Override
-    public void U() {
-        this.I();
-    }
+   private void I() {
+      boolean var1 = i2_2.K();
+      if (var1) {
+         if (i2_2.c.size() > 0) {
+            i2_2.R();
+         }
 
-    private void I() {
-        boolean bl = i2_0.K();
-        if (bl) {
-            if (i2_0.c.size() > 0) {
-                i2_0.R();
+         i2_2.G();
+      }
+   }
+
+   private void i(com.oj_4 var1) {
+      boolean var10000 = i2_2.K();
+      List var3 = E4.j(var1);
+      boolean var2 = var10000;
+      if (var2) {
+         if (i2_2.c.size() > 0) {
+            for (String var5 : var3) {
+               i2_2.A(var5);
+               if (!var2) {
+                  return;
+               }
+
+               if (!var2) {
+                  break;
+               }
             }
-            i2_0.G();
-        }
-    }
+         }
 
-    private void i(oj_2 oj_22) {
-        List list = E4.j(oj_22);
-        boolean bl = i2_0.K();
-        if (bl) {
-            if (i2_0.c.size() > 0) {
-                for (String string : list) {
-                    i2_0.A(string);
-                    if (bl) {
-                        if (bl) continue;
-                    }
-                    break;
-                }
-            } else {
-                i2_0.t(list);
-            }
-        }
-    }
+         i2_2.t(var3);
+      }
+   }
 }
+
+
+
+
 

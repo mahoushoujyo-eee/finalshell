@@ -1,135 +1,82 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-/*
- * Renamed from com.oz
- */
-public final class oz_2
-extends Enum {
-    public static final oz_2 SHOWING;
-    public static final oz_2 HIDDEN;
-    public static final oz_2 NO_FOCUS;
-    private static final oz_2[] h;
+import javax.swing.JComponent;
+import javax.swing.TransferHandler;
+import javax.swing.TransferHandler.TransferSupport;
 
-    public static oz_2[] values() {
-        return (oz_2[])h.clone();
-    }
+public class Oz_2 extends TransferHandler {
+   private JComponent X;
 
-    public static oz_2 valueOf(String string) {
-        return Enum.valueOf(oz_2.class, string);
-    }
+   public Oz_2() {
+      this.X = null;
+   }
 
-    /*
-     * WARNING - Possible parameter corruption
-     * WARNING - void declaration
-     */
-    private oz_2() {
-        void var2_-1;
-        void var1_-1;
-    }
+   public Oz_2(JComponent var1) {
+      this.X = var1;
+   }
 
-    private static oz_2[] x() {
-        return new oz_2[]{SHOWING, HIDDEN, NO_FOCUS};
-    }
+   public JComponent Z() {
+      return this.X;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block13: {
-            var0 = new String[3];
-            var4_1 = 0;
-            var3_2 = "WWxrf\u0013{J\u0007JPhc`\u001ei\u0006QQcpl\u001e";
-            var5_3 = "WWxrf\u0013{J\u0007JPhc`\u001ei\u0006QQcpl\u001e".length();
-            var2_4 = 8;
-            var1_5 = -1;
-lbl7:
-            // 2 sources
+   public void Z(JComponent var1) {
+      this.X = var1;
+   }
 
-            while (true) {
-                continue;
-                break;
-            }
-lbl9:
-            // 1 sources
+   @Override
+   public boolean canImport(TransferSupport var1) {
+      int var2 = EY.P();
+      JComponent var10000 = this.X;
+      if (var2 == 0) {
+         if (this.X == null) {
+            return PG.q(var1);
+         }
 
-            while (true) {
-                var0[var4_1++] = new String(v0).intern();
-                if ((var1_5 += var2_4) < var5_3) {
-                    var2_4 = var3_2.charAt(var1_5);
-                    ** continue;
-                }
-                break block13;
-                break;
-            }
-            v1 = ++var1_5;
-            v2 = var3_2.substring(v1, v1 + var2_4).toCharArray();
-            v3 = v2.length;
-            var6_6 = 0;
-            v4 = 57;
-            v5 = v2;
-            v6 = v3;
-            if (v3 > 1) ** GOTO lbl67
-            do {
-                v7 = v4;
-                v5 = v5;
-                v8 = v5;
-                v9 = v4;
-                v10 = var6_6;
-                while (true) {
-                    switch (var6_6 % 7) {
-                        case 0: {
-                            v11 = 32;
-                            break;
-                        }
-                        case 1: {
-                            v11 = 33;
-                            break;
-                        }
-                        case 2: {
-                            v11 = 30;
-                            break;
-                        }
-                        case 3: {
-                            v11 = 13;
-                            break;
-                        }
-                        case 4: {
-                            v11 = 16;
-                            break;
-                        }
-                        case 5: {
-                            v11 = 105;
-                            break;
-                        }
-                        default: {
-                            v11 = 23;
-                        }
-                    }
-                    v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                    ++var6_6;
-                    v4 = v7;
-                    if (v7 != 0) break;
-                    v7 = v4;
-                    v5 = v5;
-                    v10 = v4;
-                    v8 = v5;
-                    v9 = v4;
-                }
-lbl67:
-                // 2 sources
+         var10000 = this.X;
+      }
 
-                v0 = v5;
-                v6 = v6;
-            } while (v6 > var6_6);
-            ** while (true)
-        }
-        oz_2.SHOWING = new oz_2(var0[1], 0);
-        oz_2.HIDDEN = new oz_2(var0[2], 1);
-        oz_2.NO_FOCUS = new oz_2(var0[0], 2);
-        oz_2.h = oz_2.x();
-    }
+      TransferHandler var3 = var10000.getTransferHandler();
+      TransferHandler var4 = var3;
+      if (var2 == 0) {
+         if (var3 == null) {
+            return false;
+         }
+
+         var4 = var3;
+      }
+
+      boolean var5 = var4.canImport(var1);
+      return var2 != 0 ? var5 : var5;
+   }
+
+   @Override
+   public boolean importData(TransferSupport var1) {
+      int var2 = EY.G();
+      JComponent var10000 = this.X;
+      if (var2 != 0) {
+         if (this.X == null) {
+            return PG.u(var1);
+         }
+
+         var10000 = this.X;
+      }
+
+      TransferHandler var3 = var10000.getTransferHandler();
+      TransferHandler var4 = var3;
+      if (var2 != 0) {
+         if (var3 == null) {
+            return false;
+         }
+
+         var4 = var3;
+      }
+
+      boolean var5 = var4.importData(var1);
+      return var2 == 0 ? var5 : var5;
+   }
 }
+
+
+
+
 

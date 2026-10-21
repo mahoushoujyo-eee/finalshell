@@ -1,25 +1,29 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class C1
-implements Runnable {
-    final yt_1 Q;
+class C1 implements Runnable {
+   final yT_3 Q;
 
-    C1(yt_1 yt_12) {
-        this.Q = yt_12;
-    }
+   C1(yT_3 var1) {
+      this.Q = var1;
+   }
 
-    @Override
-    public void run() {
-        try {
-            lk_0.R();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void run() {
+      Object[] var10000 = com.c.f();
+      Method var2 = com.c.d(547966988844307959L);
+      Object[] var4 = var10000;
+      Object var3 = null;
+
+      try {
+         var2.invoke(var3, var4);
+      } catch (InvocationTargetException var1) {
+         throw var1.getTargetException();
+      }
+   }
 }
+
+
+
+
 

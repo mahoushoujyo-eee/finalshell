@@ -1,22 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import javax.swing.SwingUtilities;
 
-class T9
-implements Runnable {
-    final yk_0 O;
+class T9 implements Runnable {
+   final Yk_2 O;
 
-    T9(yk_0 yk_02) {
-        this.O = yk_02;
-    }
+   T9(Yk_2 var1) {
+      this.O = var1;
+   }
 
-    @Override
-    public void run() {
-        if (((DU)this.O.Z.d).isVisible()) {
-            SwingUtilities.invokeLater(new aQ(this));
-        }
-    }
+   @Override
+   public void run() {
+      if (((DU)com.c.c(477342503026871908L).get(com.c.c(427592903543022635L).get(com.c.c(443102958901146195L).get(this)))).isVisible()) {
+         SwingUtilities.invokeLater(new aQ(this));
+      }
+   }
 }
+
+
+
+
 

@@ -1,277 +1,312 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import javax.swing.JLabel;
 
-public class J0
-extends JLabel {
-    boolean E;
-    boolean P;
-    boolean y;
-    boolean d;
-    kw_2 e;
-    Color z;
-    Color f;
-    private static final long[] a;
-    private static final Integer[] b;
+public class J0 extends JLabel {
+   boolean E;
+   boolean P;
+   boolean y;
+   boolean d;
+   kw_4 e;
+   Color z;
+   Color f;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public J0() {
-        this.E = false;
-        this.P = false;
-        this.y = false;
-        this.z = new Color(J0.a(2008, 6877392405139075383L), J0.a(13640, 9048047858366645156L), J0.a(3963, 336304932294834579L), J0.a(29973, 1412147024354034683L));
-        this.f = new Color(J0.a(10576, 6483732662636257211L), J0.a(24366, 419031080208296388L), J0.a(3963, 336304932294834579L), J0.a(4545, 414216209378060076L));
-    }
+   public J0() {
+      com.c.c(274420627917076678L).setBoolean(this, false);
+      com.c.c(195928408362155202L).setBoolean(this, false);
+      com.c.c(419480247857166371L).setBoolean(this, false);
+      com.c.c(273368680465522015L)
+         .set(this, new Color(a(2008, 6877392405139075383L), a(13640, 9048047858366645156L), a(3963, 336304932294834579L), a(29973, 1412147024354034683L)));
+      com.c.c(243729176705171314L)
+         .set(this, new Color(a(10576, 6483732662636257211L), a(24366, 419031080208296388L), a(3963, 336304932294834579L), a(4545, 414216209378060076L)));
+   }
 
-    @Override
-    public void paint(Graphics graphics) {
-        J0 j0;
-        block29: {
-            block21: {
-                int n10;
-                int n11;
-                int n12;
-                Graphics2D graphics2D;
-                block32: {
-                    int n13;
-                    int[] nArray;
-                    block30: {
-                        double d2;
-                        double d3;
-                        block31: {
-                            float f10;
-                            int n14;
-                            int n15;
-                            boolean bl;
-                            block22: {
-                                block23: {
-                                    block28: {
-                                        int n16;
-                                        block26: {
-                                            block27: {
-                                                float f11;
-                                                float f12;
-                                                block24: {
-                                                    block25: {
-                                                        float f13;
-                                                        block20: {
-                                                            graphics2D = (Graphics2D)graphics;
-                                                            nArray = CE.S();
-                                                            bl = this.E;
-                                                            if (nArray == null) break block20;
-                                                            if (bl) break block21;
-                                                            bl = this.P;
-                                                        }
-                                                        if (nArray == null) break block22;
-                                                        if (!bl) break block23;
-                                                        graphics2D.setColor((Color)this.f);
-                                                        try {
-                                                            f13 = ((Float)this.e.E()).floatValue();
-                                                        }
-                                                        catch (InvocationTargetException invocationTargetException) {
-                                                            throw invocationTargetException.getTargetException();
-                                                        }
-                                                        f12 = f13 * 0.01f;
-                                                        n16 = 3;
-                                                        n12 = 0;
-                                                        n15 = 5;
-                                                        n14 = (int)(((float)this.getWidth() - (float)n15) * f12) + n12;
-                                                        float f14 = f12 - 0.0f;
-                                                        f11 = f14 == 0.0f ? 0 : (f14 > 0.0f ? 1 : -1);
-                                                        if (nArray == null) break block24;
-                                                        if (f11 <= 0) break block25;
-                                                        f11 = n14;
-                                                        if (nArray == null) break block24;
-                                                        if (f11 == false) {
-                                                            n14 = 1;
-                                                        }
-                                                    }
-                                                    f11 = n16;
-                                                }
-                                                n11 = (int)f11;
-                                                if (nArray == null) break block26;
-                                                if (!(f12 > 0.0f)) break block27;
-                                                graphics2D.fillRect(this.getWidth() - n14, n11, n14, this.getHeight() - 2 * n16);
-                                                if (nArray != null) break block28;
-                                            }
-                                            graphics2D.setColor((Color)this.f);
-                                        }
-                                        graphics2D.fillRect(this.getWidth() - n14, n11, n14, this.getHeight() - 2 * n16);
-                                    }
-                                    if (nArray != null) break block21;
-                                }
-                                j0 = this;
-                                if (nArray == null) break block29;
-                                bl = j0.y;
-                            }
-                            if (!bl) break block21;
-                            graphics2D.setColor((Color)this.z);
-                            try {
-                                f10 = ((Float)this.e.v()).floatValue();
-                            }
-                            catch (InvocationTargetException invocationTargetException) {
-                                throw invocationTargetException.getTargetException();
-                            }
-                            d3 = f10 * 0.01f;
-                            n12 = 3;
-                            n15 = 0;
-                            n14 = 5;
-                            n11 = (int)((double)((float)this.getWidth() - (float)n14) * d3) + n15;
-                            n10 = n12;
-                            try {
-                                n13 = (Integer)this.e.X();
-                            }
-                            catch (InvocationTargetException invocationTargetException) {
-                                throw invocationTargetException.getTargetException();
-                            }
-                            if (nArray == null) break block30;
-                            if (n13 <= 0) break block31;
-                            n13 = n11;
-                            if (nArray == null) break block30;
-                            if (n13 == 0) {
-                                n11 = 1;
-                            }
+   @Override
+   public void paint(Graphics var1) {
+      J0 var24;
+      label106: {
+         label108: {
+            int[] var10000 = CE.S();
+            Graphics2D var3 = (Graphics2D)var1;
+            int[] var2 = var10000;
+            boolean var19 = com.c.c(274420627917076678L).getBoolean(this);
+            if (var2 != null) {
+               if (var19) {
+                  break label108;
+               }
+
+               var19 = com.c.c(195928408362155202L).getBoolean(this);
+            }
+
+            if (var2 != null) {
+               if (var19) {
+                  var3.setColor((Color)com.c.c(243729176705171314L).get(this));
+                  Object var20 = com.c.c(134558931194879927L).get(this);
+                  Object[] var10001 = com.c.f();
+                  Method var10003 = com.c.d(316174812741990735L);
+                  Object[] var10002 = var10001;
+                  var10001 = (Object[])var20;
+                  var20 = var10003;
+
+                  try {
+                     var22 = (Float)var20.invoke(var10001, var10002);
+                  } catch (InvocationTargetException var13) {
+                     throw var13.getTargetException();
+                  }
+
+                  float var4;
+                  byte var5;
+                  int var8;
+                  var4 = var22 * 0.01F;
+                  var5 = 3;
+                  byte var6 = 0;
+                  byte var7 = 5;
+                  var8 = (int)(((float)this.getWidth() - (float)var7) * var4) + var6;
+                  float var40;
+                  var23 = (var40 = var4 - 0.0F) == 0.0F ? 0 : (var40 < 0.0F ? -1 : 1);
+                  label95:
+                  if (var2 != null) {
+                     if (var23 > 0) {
+                        var23 = var8;
+                        if (var2 == null) {
+                           break label95;
                         }
-                        n13 = (d2 = d3 - 0.0) == 0.0 ? 0 : (d2 > 0.0 ? 1 : -1);
-                    }
-                    if (n13 <= 0) break block32;
-                    graphics2D.fillRect(this.getWidth() - n11, n10, n11, this.getHeight() - 2 * n12);
-                    if (nArray != null) break block21;
-                }
-                graphics2D.setColor((Color)this.z);
-                graphics2D.fillRect(this.getWidth() - n11, n10, n11, this.getHeight() - 2 * n12);
+
+                        if (var8 == 0) {
+                           var8 = 1;
+                        }
+                     }
+
+                     var23 = var5;
+                  }
+
+                  label88: {
+                     int var9 = var23;
+                     if (var2 != null) {
+                        if (var4 > 0.0F) {
+                           var3.fillRect(this.getWidth() - var8, var9, var8, this.getHeight() - 2 * var5);
+                           if (var2 != null) {
+                              break label88;
+                           }
+                        }
+
+                        var3.setColor((Color)com.c.c(243729176705171314L).get(this));
+                     }
+
+                     var3.fillRect(this.getWidth() - var8, var9, var8, this.getHeight() - 2 * var5);
+                  }
+
+                  if (var2 != null) {
+                     break label108;
+                  }
+               }
+
+               var24 = this;
+               if (var2 == null) {
+                  break label106;
+               }
+
+               var19 = com.c.c(419480247857166371L).getBoolean(this);
             }
-            j0 = this;
-        }
-        super.paint(graphics);
-    }
 
-    public boolean Q() {
-        return this.d;
-    }
+            label77:
+            if (var19) {
+               var3.setColor((Color)com.c.c(273368680465522015L).get(this));
+               Object var25 = com.c.c(134558931194879927L).get(this);
+               Object[] var32 = com.c.f();
+               Method var38 = com.c.d(491932081530754249L);
+               Object[] var36 = var32;
+               var32 = (Object[])var25;
+               var25 = var38;
 
-    public void C(boolean bl) {
-        this.d = bl;
-    }
+               try {
+                  var27 = (Float)var25.invoke(var32, var36);
+               } catch (InvocationTargetException var12) {
+                  throw var12.getTargetException();
+               }
 
-    public boolean C() {
-        return this.E;
-    }
+               double var14 = (double)(var27 * 0.01F);
+               byte var15 = 3;
+               byte var16 = 0;
+               byte var17 = 5;
+               int var18 = (int)((double)((float)this.getWidth() - (float)var17) * var14) + var16;
+               var25 = com.c.c(134558931194879927L).get(this);
+               var32 = com.c.f();
+               var38 = com.c.d(204432614484767489L);
+               var36 = var32;
+               var32 = (Object[])var25;
+               var25 = var38;
 
-    public void V(boolean bl) {
-        this.E = bl;
-    }
+               try {
+                  var30 = (Integer)var25.invoke(var32, var36);
+               } catch (InvocationTargetException var11) {
+                  throw var11.getTargetException();
+               }
 
-    public kw_2 R() {
-        return (kw_2)this.e;
-    }
+               label73:
+               if (var2 != null) {
+                  if (var30 > 0) {
+                     var30 = var18;
+                     if (var2 == null) {
+                        break label73;
+                     }
 
-    public void k(kw_2 kw_22) {
-        this.e = kw_22;
-    }
+                     if (var18 == 0) {
+                        var18 = 1;
+                     }
+                  }
 
-    public boolean D() {
-        return this.P;
-    }
+                  double var41;
+                  var30 = (var41 = var14 - 0.0) == 0.0 ? 0 : (var41 < 0.0 ? -1 : 1);
+               }
 
-    public void i(boolean bl) {
-        this.P = bl;
-    }
+               if (var30 > 0) {
+                  var3.fillRect(this.getWidth() - var18, var15, var18, this.getHeight() - 2 * var15);
+                  if (var2 != null) {
+                     break label77;
+                  }
+               }
 
-    public boolean P() {
-        return this.y;
-    }
-
-    public void D(boolean bl) {
-        this.y = bl;
-    }
-
-    public kw_2 s() {
-        return (kw_2)this.e;
-    }
-
-    public void s(kw_2 kw_22) {
-        this.e = kw_22;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 8414051312702908116L;
-                var6_1 = new long[7];
-                var3_2 = 0;
-                var4_3 = "t!RkB\u00af\u00a5Whd3l\u0086\u00d8W\u00d1X\u00f1\u0092\u009es=e\u00dan\u0093d\u00e8{\u00a0\u00c1R\u00cb\u00d6\u0092\u00b2\u00c29\u000f@";
-                var5_4 = "t!RkB\u00af\u00a5Whd3l\u0086\u00d8W\u00d1X\u00f1\u0092\u009es=e\u00dan\u0093d\u00e8{\u00a0\u00c1R\u00cb\u00d6\u0092\u00b2\u00c29\u000f@".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "0\u00ee\u009eS\u00c0\u0098\u00f9\u0090\u0096\u00d8m\u00c2\u00065\u00dfu";
-                    var5_4 = "0\u00ee\u009eS\u00c0\u0098\u00f9\u0090\u0096\u00d8m\u00c2\u00065\u00dfu".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+               var3.setColor((Color)com.c.c(273368680465522015L).get(this));
+               var3.fillRect(this.getWidth() - var18, var15, var18, this.getHeight() - 2 * var15);
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
+         }
 
-                ** continue;
+         var24 = this;
+      }
+
+      var24.paint(var1);
+   }
+
+   public boolean Q() {
+      return com.c.c(275155431310545120L).getBoolean(this);
+   }
+
+   public void C(boolean var1) {
+      com.c.c(275155431310545120L).setBoolean(this, var1);
+   }
+
+   public boolean C() {
+      return com.c.c(274420627917076678L).getBoolean(this);
+   }
+
+   public void V(boolean var1) {
+      com.c.c(274420627917076678L).setBoolean(this, var1);
+   }
+
+   public kw_4 R() {
+      return (kw_4)com.c.c(134558931194879927L).get(this);
+   }
+
+   public void k(kw_4 var1) {
+      com.c.c(134558931194879927L).set(this, var1);
+   }
+
+   public boolean D() {
+      return com.c.c(195928408362155202L).getBoolean(this);
+   }
+
+   public void i(boolean var1) {
+      com.c.c(195928408362155202L).setBoolean(this, var1);
+   }
+
+   public boolean P() {
+      return com.c.c(419480247857166371L).getBoolean(this);
+   }
+
+   public void D(boolean var1) {
+      com.c.c(419480247857166371L).setBoolean(this, var1);
+   }
+
+   public kw_4 s() {
+      return (kw_4)com.c.c(134558931194879927L).get(this);
+   }
+
+   public void s(kw_4 var1) {
+      com.c.c(134558931194879927L).set(this, var1);
+   }
+
+   static {
+      long var0 = 8414051312702908116L;
+      long[] var6 = new long[7];
+      int var3 = 0;
+      String var4 = "t!RkB¯¥Whd3l\u0086ØWÑXñ\u0092\u009es=eÚn\u0093dè{ ÁRËÖ\u0092²Â9\u000f@";
+      int var5 = "t!RkB¯¥Whd3l\u0086ØWÑXñ\u0092\u009es=eÚn\u0093dè{ ÁRËÖ\u0092²Â9\u000f@".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     b = new Integer[7];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "0î\u009eSÀ\u0098ù\u0090\u0096ØmÂ\u00065ßu";
+                  var5 = "0î\u009eSÀ\u0098ù\u0090\u0096ØmÂ\u00065ßu".length();
+                  var2 = 0;
             }
-        }
-        J0.a = var6_1;
-        J0.b = new Integer[7];
-    }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x36EE;
-        if (b[n11] == null) {
-            J0.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 14062;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

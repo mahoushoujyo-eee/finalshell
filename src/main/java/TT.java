@@ -1,40 +1,38 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-class TT
-implements MouseListener {
-    final uo_0 H;
+class TT implements MouseListener {
+   final Uo_2 H;
 
-    TT(uo_0 uo_02) {
-        this.H = uo_02;
-    }
+   TT(Uo_2 var1) {
+      this.H = var1;
+   }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-        int n10 = ((uo_0)this.H).rowAtPoint(mouseEvent.getPoint());
-        if (mouseEvent.getButton() == 3) {
-            // empty if block
-        }
-    }
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+      int var2 = ((Uo_2)com.c.c(206763814706490892L).get(this)).rowAtPoint(var1.getPoint());
+      if (var1.getButton() == 3) {
+      }
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+   }
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+   }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseExited(MouseEvent var1) {
+   }
 }
+
+
+
+
 

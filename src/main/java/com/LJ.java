@@ -1,21 +1,16 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.LP;
-import com.lj_1;
-import com.og_2;
+public class LJ extends com.LP implements com.lJ_3 {
+   public LJ(com.og_4 var1) {
+      super(var1);
+   }
 
-public class LJ
-extends LP
-implements lj_1 {
-    public LJ(og_2 og_22) {
-        super(og_22);
-    }
-
-    @Override
-    public void l(boolean bl) {
-    }
+   @Override
+   public void l(boolean var1) {
+   }
 }
+
+
+
+
 

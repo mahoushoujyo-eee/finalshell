@@ -1,232 +1,151 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.net.Socket;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Random;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import javax.swing.AbstractListModel;
 
-/*
- * Renamed from du
- */
-public class du_2
-implements fs_0 {
-    Socket R;
-    Socket N;
-    public DataInputStream r;
-    public DataOutputStream x;
-    public DataInputStream d;
-    public DataOutputStream z;
-    Object C = new Object();
-    Object Y = new Object();
-    Object q = new Object();
-    Object G = new Object();
-    ArrayList m = new ArrayList();
-    ArrayList w = new ArrayList();
-    byte[] D = new byte[0];
-    int c = 1;
-    int E = 1;
-    boolean t = false;
-    boolean p = false;
-    boolean j = false;
-    boolean s = false;
-    boolean o = false;
-    boolean h = false;
-    boolean L = false;
-    String H = a;
-    String e = "";
-    static int K;
-    Random F = new Random();
-    long U;
-    static int Z;
-    boolean B = false;
-    long i = System.currentTimeMillis();
-    static ExecutorService k;
-    Socket O;
-    Socket J;
-    int W = -1;
-    String M = null;
-    private static final String a;
+public class Du_2 extends AbstractListModel {
+   private ArrayList x;
+   String[] a;
+   Class[] W;
+   private static final String b;
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u0012QY;p6>\u0012QY;".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 52;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+   public Du_2() {
+      com.c.c(587586177856690794L).set(this, new ArrayList());
+      com.c.c(437066352942724981L).set(this, new String[]{b});
+      com.c.c(566899324430396131L).set(this, new Class[]{Object.class});
+   }
+
+   public String z(int var1) {
+      return ((String[])com.c.c(437066352942724981L).get(this))[var1];
+   }
+
+   public void b() {
+      ((ArrayList)com.c.c(587586177856690794L).get(this)).clear();
+   }
+
+   public Class U(int var1) {
+      return ((Class[])com.c.c(566899324430396131L).get(this))[var1];
+   }
+
+   public void r(int var1) {
+      ((ArrayList)com.c.c(587586177856690794L).get(this)).remove(var1);
+   }
+
+   public synchronized void k(L1 var1) {
+      ((ArrayList)com.c.c(587586177856690794L).get(this)).add(var1);
+   }
+
+   void R() {
+      this.fireContentsChanged(this, 0, ((ArrayList)com.c.c(587586177856690794L).get(this)).size() - 1);
+   }
+
+   public synchronized void x(L1 var1) {
+      ((ArrayList)com.c.c(587586177856690794L).get(this)).add(0, var1);
+   }
+
+   @Override
+   public int getSize() {
+      return ((ArrayList)com.c.c(587586177856690794L).get(this)).size();
+   }
+
+   public L1 Z(int var1) {
+      return (L1)((ArrayList)com.c.c(587586177856690794L).get(this)).get(var1);
+   }
+
+   @Override
+   public Object getElementAt(int var1) {
+      Object[] var10001 = com.c.a(var1);
+      Method var10003 = com.c.d(430610060651646114L);
+      Object[] var10002 = var10001;
+      Du_2 var3 = this;
+      Method var10000 = var10003;
+
+      try {
+         return (L1)var10000.invoke(var3, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "\\IO".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 82;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 82;
+         var10006 = var0;
+      } else {
+         var6 = 82;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            b = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 82;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 109;
+               break;
+            case 1:
+               var23 = 118;
+               break;
+            case 2:
+               var23 = 121;
+               break;
+            case 3:
+               var23 = 104;
+               break;
+            case 4:
+               var23 = 73;
+               break;
+            case 5:
+               var23 = 21;
+               break;
+            default:
+               var23 = 85;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               b = var8;
+               return;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ (switch (n12 % 7) {
-                        case 0 -> 6;
-                        case 1 -> 69;
-                        case 2 -> 77;
-                        case 3 -> 47;
-                        case 4 -> 100;
-                        case 5 -> 34;
-                        default -> 42;
-                    })));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        K = 0;
-        Z = 0;
-        k = Executors.newCachedThreadPool();
-    }
 
-    public void E(Socket socket) {
-        this.N = socket;
-    }
-
-    public void c(long l2) {
-        this.U = l2;
-    }
-
-    public boolean K() {
-        return this.B;
-    }
-
-    public long n() {
-        return this.i;
-    }
-
-    void I() {
-        this.i = System.currentTimeMillis();
-    }
-
-    public long i() {
-        return this.U;
-    }
-
-    public void y() {
-        this.v(true);
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public void v(boolean var1_1) {
-        block8: {
-            var2_2 = qm_0.J();
-            try {
-                v0 = this;
-                if (var2_2 != null) {
-                    if (v0.B) break block8;
-                }
-                ** GOTO lbl13
-            }
-            catch (IOException v1) {
-                throw du_2.a(v1);
-            }
-            this.B = true;
-            try {
-                v0 = this;
-lbl13:
-                // 2 sources
-
-                v0.R.close();
-            }
-            catch (IOException var3_3) {
-                var3_3.printStackTrace();
-            }
-            if (var1_1) {
-                try {
-                    this.N.close();
-                }
-                catch (IOException var3_4) {
-                    var3_4.printStackTrace();
-                }
-            }
-        }
-    }
-
-    void e() {
-        this.y();
-    }
-
-    public void R() {
-        lq_2 lq_22 = new lq_2(this);
-        k.execute(lq_22);
-    }
-
-    @Override
-    public void x() {
-    }
-
-    public Socket m() {
-        return this.O;
-    }
-
-    public void d(Socket socket) {
-        this.O = socket;
-    }
-
-    public Socket z() {
-        return this.J;
-    }
-
-    public void w(Socket socket) {
-        this.J = socket;
-    }
-
-    public int U() {
-        return this.W;
-    }
-
-    public void n(int n10) {
-        this.W = n10;
-    }
-
-    public String p() {
-        return this.M;
-    }
-
-    public void Y(String string) {
-        this.M = string;
-    }
-
-    @Override
-    public void V(String string) {
-    }
-
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

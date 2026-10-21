@@ -1,105 +1,117 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.S0;
-import com.fv_0;
-import com.ky_2;
-import java.util.function.Predicate;
+class N2 implements Runnable {
+   final com.Fv_2 K;
+   final S0 e;
 
-class N2
-implements Runnable {
-    final fv_0 K;
-    final S0 e;
+   N2(S0 var1, com.Fv_2 var2) {
+      this.e = var1;
+      this.K = var2;
+   }
 
-    N2(S0 s0, fv_0 fv_02) {
-        this.e = s0;
-        this.K = fv_02;
-    }
+   @Override
+   public void run() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/S0.p ()[Lcom/ky_4;
+      // 03: bipush 0
+      // 04: istore 2
+      // 05: astore 1
+      // 06: aload 0
+      // 07: getfield com/N2.K Lcom/Fv_2;
+      // 0a: invokeinterface com/Fv_2.f ()I 1
+      // 0f: istore 2
+      // 10: goto 23
+      // 13: astore 3
+      // 14: invokestatic com/S0.g ()Lorg/slf4j/Logger;
+      // 17: ldc ""
+      // 19: aload 3
+      // 1a: invokeinterface org/slf4j/Logger.debug (Ljava/lang/String;Ljava/lang/Throwable;)V 3
+      // 1f: aload 1
+      // 20: ifnull 06
+      // 23: aload 0
+      // 24: getfield com/N2.e Lcom/S0;
+      // 27: invokestatic com/S0.P (Lcom/S0;)Ljava/util/concurrent/Future;
+      // 2a: invokeinterface java/util/concurrent/Future.isCancelled ()Z 1
+      // 2f: aload 1
+      // 30: ifnonnull 5c
+      // 33: ifne 5d
+      // 36: goto 3d
+      // 39: invokestatic com/N2.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 3c: athrow
+      // 3d: aload 0
+      // 3e: getfield com/N2.e Lcom/S0;
+      // 41: invokestatic com/S0.a (Lcom/S0;)Ljava/util/concurrent/BlockingQueue;
+      // 44: invokeinterface java/util/concurrent/BlockingQueue.take ()Ljava/lang/Object; 1
+      // 49: checkcast java/util/function/Predicate
+      // 4c: iload 2
+      // 4d: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 50: invokeinterface java/util/function/Predicate.test (Ljava/lang/Object;)Z 2
+      // 55: goto 5c
+      // 58: invokestatic com/N2.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 5b: athrow
+      // 5c: pop
+      // 5d: goto bf
+      // 60: astore 3
+      // 61: invokestatic com/S0.g ()Lorg/slf4j/Logger;
+      // 64: ldc ""
+      // 66: aload 3
+      // 67: invokeinterface org/slf4j/Logger.info (Ljava/lang/String;Ljava/lang/Throwable;)V 3
+      // 6c: goto bf
+      // 6f: astore 4
+      // 71: aload 0
+      // 72: getfield com/N2.e Lcom/S0;
+      // 75: invokestatic com/S0.P (Lcom/S0;)Ljava/util/concurrent/Future;
+      // 78: invokeinterface java/util/concurrent/Future.isCancelled ()Z 1
+      // 7d: aload 1
+      // 7e: ifnonnull aa
+      // 81: ifne ab
+      // 84: goto 8b
+      // 87: invokestatic com/N2.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 8a: athrow
+      // 8b: aload 0
+      // 8c: getfield com/N2.e Lcom/S0;
+      // 8f: invokestatic com/S0.a (Lcom/S0;)Ljava/util/concurrent/BlockingQueue;
+      // 92: invokeinterface java/util/concurrent/BlockingQueue.take ()Ljava/lang/Object; 1
+      // 97: checkcast java/util/function/Predicate
+      // 9a: iload 2
+      // 9b: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 9e: invokeinterface java/util/function/Predicate.test (Ljava/lang/Object;)Z 2
+      // a3: goto aa
+      // a6: invokestatic com/N2.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // a9: athrow
+      // aa: pop
+      // ab: goto bc
+      // ae: astore 5
+      // b0: invokestatic com/S0.g ()Lorg/slf4j/Logger;
+      // b3: ldc ""
+      // b5: aload 5
+      // b7: invokeinterface org/slf4j/Logger.info (Ljava/lang/String;Ljava/lang/Throwable;)V 3
+      // bc: aload 4
+      // be: athrow
+      // bf: invokestatic com/ky_4.F ()[Ljava/lang/String;
+      // c2: ifnull d3
+      // c5: bipush 2
+      // c6: anewarray 91
+      // c9: invokestatic com/S0.q ([Lcom/ky_4;)V
+      // cc: goto d3
+      // cf: invokestatic com/N2.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // d2: athrow
+      // d3: return
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void run() {
-        block20: {
-            var2_1 = 0;
-            var1_2 = S0.p();
-            try {
-                while (true) {
-                    try {
-                        var2_1 = this.K.f();
-                        ** break;
-                    }
-                    catch (InterruptedException var3_3) {
-                        S0.g().debug("", var3_3);
-                        if (var1_2 == null) continue;
-                    }
-                    break;
-                }
-            }
-            catch (Throwable var4_5) {
-                block21: {
-                    try {
-                        v0 = S0.P(this.e).isCancelled();
-                        if (var1_2 != null) break block21;
-                        try {
-                            block22: {
-                                if (v0) break block21;
-                                break block22;
-                                catch (InterruptedException v1) {
-                                    throw N2.a(v1);
-                                }
-                            }
-                            v0 = ((Predicate)S0.a(this.e).take()).test(var2_1);
-                        }
-                        catch (InterruptedException v2) {
-                            throw N2.a(v2);
-                        }
-                    }
-                    catch (InterruptedException var5_6) {
-                        S0.g().info("", var5_6);
-                    }
-                }
-                throw var4_5;
-            }
-lbl30:
-            // 2 sources
-
-            try {
-                v3 = S0.P(this.e).isCancelled();
-                if (var1_2 != null) break block20;
-                try {
-                    block23: {
-                        if (v3) break block20;
-                        break block23;
-                        catch (InterruptedException v4) {
-                            throw N2.a(v4);
-                        }
-                    }
-                    v3 = ((Predicate)S0.a(this.e).take()).test(var2_1);
-                }
-                catch (InterruptedException v5) {
-                    throw N2.a(v5);
-                }
-            }
-            catch (InterruptedException var3_4) {
-                S0.g().info("", var3_4);
-            }
-        }
-        try {
-            if (ky_2.F() != null) {
-                S0.q(new ky_2[2]);
-            }
-        }
-        catch (InterruptedException v6) {
-            throw N2.a(v6);
-        }
-    }
-
-    private static InterruptedException a(InterruptedException interruptedException) {
-        return interruptedException;
-    }
+   private static InterruptedException a(InterruptedException var0) {
+      return var0;
+   }
 }
+
+
+
+
 

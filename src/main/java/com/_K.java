@@ -1,32 +1,30 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com._b_0;
-import com.oi_2;
-import com.xy_2;
-import java.util.Map;
+import java.util.Map.Entry;
 
-final class _K
-extends _b_0 {
-    final xy_2 f;
+final class _K extends _b_2 {
+   final xy_4 f;
 
-    private _K(xy_2 xy_22) {
-        this.f = xy_22;
-        super(xy_22);
-    }
+   private _K(xy_4 var1) {
+      super(var1);
+      this.f = var1;
+   }
 
-    public Map.Entry S() {
-        return this.L();
-    }
+   public Entry S() {
+      return this.L();
+   }
 
-    public Object next() {
-        return this.S();
-    }
+   @Override
+   public Object next() {
+      return this.S();
+   }
 
-    _K(xy_2 xy_22, oi_2 oi_22) {
-        this(xy_22);
-    }
+   _K(xy_4 var1, com.oi_4 var2) {
+      this(var1);
+   }
 }
+
+
+
+
 

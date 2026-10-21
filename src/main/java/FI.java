@@ -1,35 +1,45 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
+class FI implements Runnable {
+   final cm_4 f;
+   private final o9_2 j;
+   private final a6 h;
 
-class FI
-implements Runnable {
-    final cm_2 f;
-    private final o9_0 j;
-    private final a6 h;
+   FI(cm_4 var1, o9_2 var2, a6 var3) {
+      this.f = var1;
+      this.j = var2;
+      this.h = var3;
+   }
 
-    FI(cm_2 cm_22, o9_0 o9_02, a6 a62) {
-        this.f = cm_22;
-        this.j = o9_02;
-        this.h = a62;
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   @Override
+   public void run() {
+      com.ky_4[] var10000 = a6.P();
+      b2_2 var2 = null;
+      com.ky_4[] var1 = var10000;
+      int var3 = 0;
 
-    @Override
-    public void run() {
-        b2_0 b2_02 = null;
-        ky_2[] ky_2Array = a6.P();
-        int n10 = 0;
-        block0: while (n10 < this.f.I) {
-            b2_02 = this.j.W(this.f.S, this.f.Y, 1);
-            do {
-                if (b2_02.g == 0.0f || ky_2Array == null) {
-                    ++n10;
-                    continue block0;
-                }
-                this.h.g = b2_02;
-            } while (ky_2Array == null);
-        }
-    }
+      while (true) {
+         if (var3 >= this.f.I) {
+            this.h.g = var2;
+            if (var1 != null) {
+               return;
+            }
+         } else {
+            var2 = this.j.W(this.f.S, this.f.Y, 1);
+         }
+
+         while (var2.g != 0.0F && var1 != null) {
+            this.h.g = var2;
+            if (var1 != null) {
+               return;
+            }
+         }
+
+         var3++;
+      }
+   }
 }
+
+
+
+
 

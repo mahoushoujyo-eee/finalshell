@@ -1,36 +1,41 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ky_2;
-import java.awt.image.BufferedImage;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.TransferHandler;
 
-/*
- * Renamed from com.kj
- */
-public class kj_2 {
-    public BufferedImage W;
-    public int p;
-    private static ky_2[] P;
+class Kj_2 extends MouseAdapter {
+   public boolean Q;
+   final com.k0_2 Y;
 
-    public kj_2(BufferedImage bufferedImage, int n10) {
-        this.W = bufferedImage;
-        this.p = n10;
-    }
+   Kj_2(com.k0_2 var1) {
+      this.Y = var1;
+   }
 
-    public static void C(ky_2[] ky_2Array) {
-        P = ky_2Array;
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      this.Q = true;
+   }
 
-    public static ky_2[] d() {
-        return P;
-    }
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      String var2 = com.kz_4.M();
+      com.Kj_2 var10000 = this;
+      if (var2 != null) {
+         if (!this.Q) {
+            return;
+         }
 
-    static {
-        if (kj_2.d() == null) {
-            kj_2.C(new ky_2[4]);
-        }
-    }
+         var10000 = this;
+      }
+
+      TransferHandler var3 = var10000.Y.getTransferHandler();
+      var3.exportAsDrag(this.Y, var1, var3.getSourceActions(this.Y));
+      this.Q = false;
+   }
 }
+
+
+
+
 

@@ -1,70 +1,63 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
 import java.util.List;
-import org.F.c;
-import org.v.fA;
-import org.v.fH;
-import org.v.fb_0;
-import org.v.fg_0;
-import org.v.h2;
-import org.v.h_1;
 
-class f5
-implements h2 {
-    final List i;
-    final h_1 Q;
+class f5 implements h2 {
+   final List i;
+   final H_3 Q;
 
-    f5(h_1 h_12, List list) {
-        this.Q = h_12;
-        this.i = list;
-    }
+   f5(H_3 var1, List var2) {
+      this.Q = var1;
+      this.i = var2;
+   }
 
-    @c
-    public Void N(fg_0 fg_02) {
-        this.i.add(fg_02);
-        return null;
-    }
+   @org.F.c
+   public Void N(fg_2 var1) {
+      this.i.add(var1);
+      return null;
+   }
 
-    @c
-    public Void B(fb_0 fb_02) {
-        return null;
-    }
+   @org.F.c
+   public Void B(fb_2 var1) {
+      return null;
+   }
 
-    @c
-    public Void a(fA fA2) {
-        return null;
-    }
+   @org.F.c
+   public Void a(fA var1) {
+      return null;
+   }
 
-    @c
-    public Void H(fH fH2) {
-        return null;
-    }
+   @org.F.c
+   public Void H(fH var1) {
+      return null;
+   }
 
-    @Override
-    @c
-    public Object w(fH fH2) throws Throwable {
-        return this.H(fH2);
-    }
+   @org.F.c
+   @Override
+   public Object w(fH var1) throws Throwable {
+      return this.H(var1);
+   }
 
-    @Override
-    @c
-    public Object r(fA fA2) throws Throwable {
-        return this.a(fA2);
-    }
+   @org.F.c
+   @Override
+   public Object r(fA var1) throws Throwable {
+      return this.a(var1);
+   }
 
-    @Override
-    @c
-    public Object U(fb_0 fb_02) throws Throwable {
-        return this.B(fb_02);
-    }
+   @org.F.c
+   @Override
+   public Object U(fb_2 var1) throws Throwable {
+      return this.B(var1);
+   }
 
-    @Override
-    @c
-    public Object f(fg_0 fg_02) throws Throwable {
-        return this.N(fg_02);
-    }
+   @org.F.c
+   @Override
+   public Object f(fg_2 var1) throws Throwable {
+      return this.N(var1);
+   }
 }
+
+
+
+
 

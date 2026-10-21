@@ -1,57 +1,64 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.II;
-import com.SZ;
 import java.awt.Component;
 import java.awt.Dimension;
+import javax.swing.JScrollBar;
 
-class SS
-extends SZ {
-    final II r;
-    private static final long a;
+class SS extends SZ {
+   final II r;
+   private static final long a;
 
-    SS(II iI, Component component, boolean bl) {
-        this.r = iI;
-        super(component, bl);
-    }
+   SS(II var1, Component var2, boolean var3) {
+      super(var2, var3);
+      this.r = var1;
+   }
 
-    /*
-     * Exception decompiling
-     */
-    @Override
-    public Dimension getPreferredSize() {
-        /*
-         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
-         * 
-         * org.benf.cfr.reader.util.ConfusedCFRException: Statement already marked as first in another block
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.markFirstStatementInBlock(Op03SimpleStatement.java:461)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.Misc.markWholeBlock(Misc.java:251)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.considerAsSimpleIf(ConditionalRewriter.java:673)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.identifyNonjumpingConditionals(ConditionalRewriter.java:56)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:722)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
-         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
-         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
-         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
-         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
-         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
-         *     at org.benf.cfr.reader.Main.main(Main.java:54)
-         */
-        throw new IllegalStateException("Decompilation failed");
-    }
+   @Override
+   public Dimension getPreferredSize() {
+      int var2;
+      int var6;
+      label22: {
+         label24: {
+            var2 = Math.min(II.d(this.r).size(), II.a(this.r));
+            String var10000 = com.Wb_2.m();
+            JScrollBar var3 = this.getHorizontalScrollBar();
+            String var1 = var10000;
+            JScrollBar var5 = var3;
+            if (var1 != null) {
+               if (var3 == null) {
+                  break label24;
+               }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 8121665905467150390L;
-        a = 0x1121EBD44FC55022L ^ l2;
-    }
+               var5 = var3;
+            }
+
+            var6 = var5.isShowing();
+            if (var1 == null) {
+               break label22;
+            }
+
+            if (var6 != 0) {
+               var6 = var3.getPreferredSize().height;
+               break label22;
+            }
+         }
+
+         var6 = 0;
+      }
+
+      int var4 = var6;
+      return new Dimension((int)a * (var2 + 1) + var2 * II.i(this.r), this.r.getPreferredSize().height + var4);
+   }
+
+   static {
+      long var0 = 8121665905467150390L;
+      long var10002 = 1234527069980151842L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

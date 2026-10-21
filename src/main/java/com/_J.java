@@ -1,40 +1,38 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.k3_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class _J
-implements ActionListener {
-    final k3_0 Q;
+class _J implements ActionListener {
+   final com.k3_2 Q;
 
-    _J(k3_0 k3_02) {
-        this.Q = k3_02;
-    }
+   _J(com.k3_2 var1) {
+      this.Q = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block4: {
-            k3_0 k3_02;
-            block2: {
-                block3: {
-                    int[] nArray = k3_0.L();
-                    k3_02 = this.Q;
-                    if (nArray == null) break block2;
-                    if (!(k3_02.k > 0.0f)) break block3;
-                    this.Q.k = Math.max(0.0f, this.Q.k - this.Q.H);
-                    this.Q.revalidate();
-                    if (nArray != null) break block4;
-                }
-                this.Q.k = 0.0f;
-                this.Q.u();
-                k3_02 = this.Q;
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      int[] var2 = com.k3_2.L();
+      com.k3_2 var10000 = this.Q;
+      if (var2 != null) {
+         if (this.Q.k > 0.0F) {
+            this.Q.k = Math.max(0.0F, this.Q.k - this.Q.H);
+            this.Q.revalidate();
+            if (var2 != null) {
+               return;
             }
-            k3_02.p.Y();
-        }
-    }
+         }
+
+         this.Q.k = 0.0F;
+         this.Q.u();
+         var10000 = this.Q;
+      }
+
+      var10000.p.Y();
+   }
 }
+
+
+
+
 

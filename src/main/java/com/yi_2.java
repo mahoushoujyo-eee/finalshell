@@ -1,97 +1,100 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.yd_2;
+import javax.swing.JComponent;
 
-/*
- * Renamed from com.yi
- */
-public class yi_2
-extends yd_2 {
-    private static final String e;
+public abstract class Yi_2 implements Rq_2 {
+   private com.Wd_2 l;
+   private com.WC A;
 
-    public yi_2() {
-        this.N = e;
-        this.v = true;
-    }
+   @Override
+   public long T() {
+      return (long)com.ac_2.S();
+   }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u0012\bZA\u001fwT\u001bW\u0016\u0010\u00072\u0011\u001f\u0011Vb]tY\u0014\u0016HJ\u001cgS\u0017".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 56;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+   @Override
+   public com.Wd_2 y(JComponent var1, Object var2, int var3, int var4, boolean var5) {
+      String var6 = this.D(var1, var2, var3, var4, var5);
+      com.WF var7 = this.h(var1, var2, var3, var4, var5);
+      return new com.Wd_2(var1, var6, var7);
+   }
+
+   public com.WF h(JComponent var1, Object var2, int var3, int var4, boolean var5) {
+      return com.WF.trailing;
+   }
+
+   public abstract String D(JComponent var1, Object var2, int var3, int var4, boolean var5);
+
+   @Override
+   public void M(JComponent var1, int var2, int var3, int var4, int var5) {
+      com.ky_4[] var6 = com.ac_2.n();
+      com.Yi_2 var10000 = this;
+      if (var6 == null) {
+         if (this.A != null) {
+            this.A.Y();
+         }
+
+         var10000 = this;
+      }
+
+      label44: {
+         com.Wd_2 var9 = var10000.l;
+         if (var6 == null) {
+            if (var10000.l == null) {
+               break label44;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 66;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 93;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 3;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 26;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 10;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 60;
-                            break;
-                        }
-                        default: {
-                            n17 = 4;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        e = new String(cArray).intern();
-    }
+
+            var9 = this.l;
+         }
+
+         var9.j();
+      }
+
+      int var10 = var4;
+      byte var10001 = -1;
+      if (var6 == null) {
+         if (var4 == -1) {
+            return;
+         }
+
+         var10 = var5;
+         var10001 = -1;
+      }
+
+      if (var10 != var10001) {
+         long var7;
+         label31: {
+            var7 = this.T();
+            if (var6 == null) {
+               if (var7 > 0L) {
+                  break label31;
+               }
+
+               this.z(var1, var4, var5);
+            }
+
+            if (var6 == null) {
+               return;
+            }
+         }
+
+         this.A = com.WC.A(var7, new wz_4(this, var1, var4, var5));
+      }
+   }
+
+   protected void z(JComponent var1, int var2, int var3) {
+      Object var4 = this.c(var1, var2, var3);
+      boolean var5 = this.M(var1, var2, var3);
+      this.l = this.y(var1, var4, var2, var3, var5);
+      this.l.Q(this.E(var1, var4, var2, var3, var5));
+      com.ac_2.i(this.l);
+   }
+
+   protected abstract Object c(JComponent var1, int var2, int var3);
+
+   protected abstract boolean M(JComponent var1, int var2, int var3);
 }
+
+
+
+
 

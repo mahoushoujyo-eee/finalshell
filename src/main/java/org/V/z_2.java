@@ -1,68 +1,74 @@
-/*
- * Decompiled with CFR 0.152.
- */
-package org.v;
+package org.V;
 
-import org.h.c_0;
-import org.v._S;
-import org.v.f7;
-import org.v.h4;
-import org.v.hd_0;
-import org.v.ht_0;
-import org.v.u_1;
+class z_2 implements org.T.a {
+   static final boolean m = !org.V.X.class.desiredAssertionStatus();
+   final String C;
+   final boolean B;
+   final org.V.X M;
+   private static final long a;
 
-/*
- * Renamed from org.v.z
- */
-class z_2
-extends u_1 {
-    final Object E;
-    final String h;
-    final hd_0 c;
-    final c_0 l;
-    final _S v;
-    final h4[] z;
-    final ht_0 r;
+   z_2(org.V.X var1, String var2, boolean var3) {
+      this.M = var1;
+      this.C = var2;
+      this.B = var3;
+   }
 
-    z_2(ht_0 ht_02, Object object, String string, hd_0 hd_02, c_0 c_02, _S _S2, h4[] h4Array) {
-        this.r = ht_02;
-        this.E = object;
-        this.h = string;
-        this.c = hd_02;
-        this.l = c_02;
-        this.v = _S2;
-        this.z = h4Array;
-        super(ht_02);
-    }
+   @Override
+   public boolean k(@org.F.c Object var1) {
+      int[] var2;
+      org.V.N var6;
+      label42: {
+         int[] var10000 = org.V.f.h();
+         org.V.N var3 = (org.V.N)var1;
+         var2 = var10000;
+         if (!m) {
+            var6 = var3;
+            if (var2 != null) {
+               break label42;
+            }
 
-    @Override
-    public Object J() {
-        return this.E;
-    }
+            if (var3 == null) {
+               throw new AssertionError();
+            }
+         }
 
-    @Override
-    public String h() {
-        return this.h;
-    }
+         var6 = var3;
+      }
 
-    @Override
-    public hd_0 P() {
-        return this.c;
-    }
+      String var4 = var6.o();
+      int var5 = this.C.length();
+      byte var7 = var4.startsWith(this.C);
+      if (var2 == null) {
+         if (var7 == 0) {
+            return (boolean)0;
+         }
 
-    @Override
-    public boolean b() {
-        return f7.G(this.l.w());
-    }
+         var7 = this.B;
+      }
 
-    @Override
-    public _S p() {
-        return this.v;
-    }
+      if (var2 != null) {
+         return (boolean)var7;
+      } else if (var7 != 0) {
+         return (boolean)1;
+      } else {
+         int var8 = var4.indexOf((int)a, var5);
+         if (var2 != null) {
+            return (boolean)var8;
+         } else {
+            return (boolean)(var8 == -1 ? 1 : 0);
+         }
+      }
+   }
 
-    @Override
-    public h4[] f() {
-        return this.z;
-    }
+   static {
+      long var0 = 3631307813545587705L;
+      long var10002 = -732812909801098282L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

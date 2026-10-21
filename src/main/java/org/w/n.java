@@ -1,108 +1,119 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.w;
 
-import com.ky_2;
-import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Arrays;
-import org.w.c;
-import org.w.d;
 
 public final class n {
-    static final boolean y = !n.class.desiredAssertionStatus();
+   static final boolean y = !n.class.desiredAssertionStatus();
 
-    private n() {
-    }
+   private n() {
+   }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    public static Object A(Object var0, Method[] var1_1) {
-        block22: {
-            var3_2 = var1_1[0].getDeclaringClass();
-            var2_3 = d.q();
-            v0 = n.y;
-            if (var2_3 == null) {
-                if (v0 == 0) {
-                    v0 = var3_2.isInterface();
-                    if (var2_3 == null) {
-                        if (v0 == 0) {
-                            throw new AssertionError();
-                        } else {
-                            ** GOTO lbl-1000
-                        }
-                    }
-                } else lbl-1000:
-                // 3 sources
-
-                {
-                    v0 = var4_4 = 0;
-                }
+   public static Object A(Object var0, Method[] var1) {
+      int[] var2;
+      Class var3;
+      byte var8;
+      int[] var10000 = org.w.d.q();
+      var3 = var1[0].getDeclaringClass();
+      var2 = var10000;
+      var8 = y;
+      label77:
+      if (var2 == null) {
+         if (!y) {
+            var8 = var3.isInterface();
+            if (var2 != null) {
+               break label77;
             }
-            while (var4_4 < var1_1.length) {
-                block24: {
-                    block23: {
-                        var5_6 = var1_1[var4_4];
-                        v1 = var1_1[var4_4 + 1];
-                        if (var2_3 != null) break block22;
-                        var6_7 = v1;
-                        v2 = n.y;
-                        if (var2_3 == null) {
-                            if (!v2) {
-                                v2 = var5_6.getDeclaringClass().equals(var3_2);
-                                if (var2_3 == null) {
-                                    if (!v2) {
-                                        throw new AssertionError();
-                                    } else {
-                                        ** GOTO lbl-1000
-                                    }
-                                }
-                            } else lbl-1000:
-                            // 3 sources
 
-                            {
-                                var6_7.setAccessible(true);
-                                v2 = n.y;
-                            }
-                        }
-                        if (var2_3 == null) {
-                            if (!v2) {
-                                v2 = var5_6.getReturnType().equals(var6_7.getReturnType());
-                                if (var2_3 == null) {
-                                    if (!v2) {
-                                        throw new AssertionError();
-                                    } else {
-                                        ** GOTO lbl-1000
-                                    }
-                                }
-                            } else lbl-1000:
-                            // 3 sources
-
-                            {
-                                v2 = n.y;
-                            }
-                        }
-                        if (var2_3 != null) break block23;
-                        if (v2) break block24;
-                        v2 = Arrays.equals(var5_6.getParameterTypes(), var6_7.getParameterTypes());
-                    }
-                    if (!v2) {
-                        throw new AssertionError();
-                    }
-                }
-                var4_4 += 2;
-                if (var2_3 == null) continue;
+            if (var8 == 0) {
+               throw new AssertionError();
             }
-            v1 = var4_5 = Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(), new Class[]{var3_2}, (InvocationHandler)new c(var1_1, var0));
-        }
-        if (ky_2.F() != null) {
-            d.P(new int[3]);
-        }
-        return var4_5;
-    }
+         }
+
+         var8 = 0;
+      }
+
+      byte var4 = var8;
+
+      while (true) {
+         if (var4 < var1.length) {
+            Method var5 = var1[var4];
+            var9 = var1[var4 + 1];
+            if (var2 != null) {
+               break;
+            }
+
+            Object var6;
+            var6 = var9;
+            var10 = y;
+            label63:
+            if (var2 == null) {
+               if (!y) {
+                  var10 = var5.getDeclaringClass().equals(var3);
+                  if (var2 != null) {
+                     break label63;
+                  }
+
+                  if (!var10) {
+                     throw new AssertionError();
+                  }
+               }
+
+               var6.setAccessible(true);
+               var10 = y;
+            }
+
+            label55:
+            if (var2 == null) {
+               if (!var10) {
+                  var10 = var5.getReturnType().equals(var6.getReturnType());
+                  if (var2 != null) {
+                     break label55;
+                  }
+
+                  if (!var10) {
+                     throw new AssertionError();
+                  }
+               }
+
+               var10 = y;
+            }
+
+            label48: {
+               if (var2 == null) {
+                  if (var10) {
+                     break label48;
+                  }
+
+                  var10 = Arrays.equals((Object[])var5.getParameterTypes(), (Object[])var6.getParameterTypes());
+               }
+
+               if (!var10) {
+                  throw new AssertionError();
+               }
+            }
+
+            var4 += 2;
+            if (var2 == null) {
+               continue;
+            }
+         }
+
+         var9 = Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(), new Class[]{var3}, new org.w.c(var1, var0));
+         break;
+      }
+
+      Object var7 = var9;
+      if (com.ky_4.F() != null) {
+         org.w.d.P(new int[3]);
+      }
+
+      return var7;
+   }
 }
+
+
+
+
 

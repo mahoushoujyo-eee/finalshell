@@ -1,26 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.fm_0;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
-/*
- * Renamed from com.dk
- */
-class dk_2
-implements ItemListener {
-    final fm_0 y;
+class Dk_2 implements PropertyChangeListener {
+   final com.o5_2 h;
 
-    dk_2(fm_0 fm_02) {
-        this.y = fm_02;
-    }
+   Dk_2(com.o5_2 var1) {
+      this.h = var1;
+   }
 
-    @Override
-    public void itemStateChanged(ItemEvent itemEvent) {
-        this.y.A();
-    }
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      this.h.h();
+   }
 }
+
+
+
+
 

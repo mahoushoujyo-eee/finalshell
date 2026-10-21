@@ -1,88 +1,86 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.SY;
-import com.YP;
-import com.et_0;
 import java.util.EnumSet;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class aG {
-    private et_0 m;
-    private et_0 L;
-    private EnumSet j;
-    boolean Q = false;
-    boolean J = false;
-    boolean t;
-    YP v;
+   private Et_2 m;
+   private Et_2 L;
+   private EnumSet j;
+   boolean Q = false;
+   boolean J = false;
+   boolean t;
+   com.YP v;
 
-    public boolean C() {
-        return this.Q;
-    }
+   public boolean C() {
+      return this.Q;
+   }
 
-    public void H(boolean bl) {
-        this.Q = bl;
-    }
+   public void H(boolean var1) {
+      this.Q = var1;
+   }
 
-    public boolean o() {
-        return this.J;
-    }
+   public boolean o() {
+      return this.J;
+   }
 
-    public void v(boolean bl) {
-        this.J = bl;
-    }
+   public void v(boolean var1) {
+      this.J = var1;
+   }
 
-    public boolean b() {
-        return this.t;
-    }
+   public boolean b() {
+      return this.t;
+   }
 
-    public void R(boolean bl) {
-        this.t = bl;
-    }
+   public void R(boolean var1) {
+      this.t = var1;
+   }
 
-    public aG(@NotNull YP yP) {
-        this.J = yP.m;
-        this.Q = yP.W;
-        this.v = yP;
-        this.m = YP.i(yP);
-        this.L = YP.r(yP);
-        this.j = YP.h(yP).clone();
-    }
+   public aG(@NotNull com.YP var1) {
+      this.J = var1.m;
+      this.Q = var1.W;
+      this.v = var1;
+      this.m = com.YP.i(var1);
+      this.L = com.YP.r(var1);
+      this.j = com.YP.h(var1).clone();
+   }
 
-    public aG() {
-        this.m = null;
-        this.L = null;
-        this.j = EnumSet.noneOf(SY.class);
-    }
+   public aG() {
+      this.m = null;
+      this.L = null;
+      this.j = EnumSet.noneOf(SY.class);
+   }
 
-    @NotNull
-    public aG c(@Nullable et_0 et_02) {
-        this.m = et_02;
-        return this;
-    }
+   @NotNull
+   public com.aG c(@Nullable Et_2 var1) {
+      this.m = var1;
+      return this;
+   }
 
-    @NotNull
-    public aG j(@Nullable et_0 et_02) {
-        this.L = et_02;
-        return this;
-    }
+   @NotNull
+   public com.aG j(@Nullable Et_2 var1) {
+      this.L = var1;
+      return this;
+   }
 
-    @NotNull
-    public aG c(@NotNull SY sY, boolean bl) {
-        SY.L(sY, this.j, bl);
-        return this;
-    }
+   @NotNull
+   public com.aG c(@NotNull SY var1, boolean var2) {
+      SY.L(var1, this.j, var2);
+      return this;
+   }
 
-    @NotNull
-    public YP y() {
-        YP yP = new YP(this.m, this.L, this.j);
-        yP.e(this.J);
-        yP.C(this.Q);
-        yP.t(this.t);
-        return yP;
-    }
+   @NotNull
+   public com.YP y() {
+      com.YP var1 = new com.YP(this.m, this.L, this.j);
+      var1.e(this.J);
+      var1.C(this.Q);
+      var1.t(this.t);
+      return var1;
+   }
 }
+
+
+
+
 

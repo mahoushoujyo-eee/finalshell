@@ -1,7393 +1,3112 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.B8;
-import com.DX;
-import com.H5;
-import com.IG;
-import com.KE;
-import com.LQ;
-import com.O0;
-import com.S9;
-import com.W3;
-import com.X4;
-import com._o_0;
-import com.a0;
-import com.ad_0;
-import com.ak_0;
-import com.en_0;
-import com.ep_2;
-import com.fn_0;
-import com.hf_0;
-import com.hi_0;
-import com.il_0;
-import com.ks_0;
-import com.nj_2;
-import com.nz_2;
-import com.oc_0;
-import com.ok_0;
-import com.uT;
-import com.xd_2;
-import com.yn_2;
-import com.zC;
-import java.lang.reflect.Array;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Member;
+import java.lang.reflect.Method;
 import java.lang.reflect.Type;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.util.Calendar;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.IdentityHashMap;
-import java.util.Iterator;
-import java.util.List;
+import java.lang.reflect.TypeVariable;
 import java.util.Map;
-import java.util.Set;
-import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
 
-/*
- * Renamed from com.ph
- */
-public class ph_2
-implements xd_2 {
-    private static ConcurrentMap s;
-    private final String V;
-    private a0[] K;
-    private boolean i;
-    private en_0 F;
-    private IG w;
-    private boolean T;
-    private static final String[] a;
-    private static final String[] b;
-    private static final long[] c;
-    private static final Integer[] d;
-    private static final long[] e;
-    private static final Long[] f;
+public class Ph_2 implements Comparable {
+   public final String I;
+   public final Method Y;
+   public final Field w;
+   private int p;
+   public final Class O;
+   public final Type a;
+   public final Class Q;
+   public final boolean j;
+   public final int c;
+   public final int h;
+   public final String N;
+   private final E6 F;
+   private final E6 A;
+   public final boolean b;
+   public final boolean Z;
+   public final char[] L;
+   public final boolean X;
+   public final boolean s;
+   public final boolean D;
+   public final String J;
+   public final String[] E;
+   public final long x;
+   private static int z;
+   private static final String[] d;
+   private static final String[] e;
+   private static final long[] f;
+   private static final Integer[] g;
 
-    public ph_2(String string) {
-        this(string, en_0.p(), IG.G(), true);
-    }
+   public Ph_2(String param1, Class param2, Class param3, Type param4, Field param5, int param6, int param7, int param8) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/Ph_2.w ()I
+      // 003: aload 0
+      // 004: invokespecial java/lang/Object.<init> ()V
+      // 007: istore 9
+      // 009: aload 0
+      // 00a: bipush 0
+      // 00b: putfield com/Ph_2.p I
+      // 00e: iload 9
+      // 010: ifeq 05c
+      // 013: iload 6
+      // 015: ifge 022
+      // 018: goto 01f
+      // 01b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 01e: athrow
+      // 01f: bipush 0
+      // 020: istore 6
+      // 022: aload 0
+      // 023: aload 1
+      // 024: putfield com/Ph_2.I Ljava/lang/String;
+      // 027: aload 0
+      // 028: aload 2
+      // 029: putfield com/Ph_2.Q Ljava/lang/Class;
+      // 02c: aload 0
+      // 02d: aload 3
+      // 02e: putfield com/Ph_2.O Ljava/lang/Class;
+      // 031: aload 0
+      // 032: aload 4
+      // 034: putfield com/Ph_2.a Ljava/lang/reflect/Type;
+      // 037: aload 0
+      // 038: aconst_null
+      // 039: putfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 03c: aload 0
+      // 03d: aload 5
+      // 03f: putfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 042: aload 0
+      // 043: iload 6
+      // 045: putfield com/Ph_2.p I
+      // 048: aload 0
+      // 049: iload 7
+      // 04b: putfield com/Ph_2.c I
+      // 04e: aload 0
+      // 04f: iload 8
+      // 051: putfield com/Ph_2.h I
+      // 054: aload 0
+      // 055: aload 3
+      // 056: invokevirtual java/lang/Class.isEnum ()Z
+      // 059: putfield com/Ph_2.X Z
+      // 05c: iload 9
+      // 05e: ifeq 0bf
+      // 061: aload 5
+      // 063: ifnull 0b3
+      // 066: goto 06d
+      // 069: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 06c: athrow
+      // 06d: aload 5
+      // 06f: invokevirtual java/lang/reflect/Field.getModifiers ()I
+      // 072: istore 10
+      // 074: aload 0
+      // 075: iload 10
+      // 077: bipush 1
+      // 078: iand
+      // 079: iload 9
+      // 07b: ifeq 09e
+      // 07e: ifne 096
+      // 081: goto 088
+      // 084: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 087: athrow
+      // 088: aload 0
+      // 089: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 08c: ifnonnull 0a1
+      // 08f: goto 096
+      // 092: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 095: athrow
+      // 096: bipush 1
+      // 097: goto 09e
+      // 09a: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 09d: athrow
+      // 09e: goto 0a2
+      // 0a1: bipush 0
+      // 0a2: putfield com/Ph_2.b Z
+      // 0a5: aload 0
+      // 0a6: iload 10
+      // 0a8: invokestatic java/lang/reflect/Modifier.isTransient (I)Z
+      // 0ab: putfield com/Ph_2.Z Z
+      // 0ae: iload 9
+      // 0b0: ifne 0c4
+      // 0b3: aload 0
+      // 0b4: bipush 0
+      // 0b5: putfield com/Ph_2.Z Z
+      // 0b8: goto 0bf
+      // 0bb: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0be: athrow
+      // 0bf: aload 0
+      // 0c0: bipush 0
+      // 0c1: putfield com/Ph_2.b Z
+      // 0c4: aload 0
+      // 0c5: aload 0
+      // 0c6: invokevirtual com/Ph_2.l ()[C
+      // 0c9: putfield com/Ph_2.L [C
+      // 0cc: iload 9
+      // 0ce: ifeq 0ef
+      // 0d1: aload 5
+      // 0d3: ifnull 0e9
+      // 0d6: goto 0dd
+      // 0d9: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0dc: athrow
+      // 0dd: aload 5
+      // 0df: invokestatic com/B8.P (Ljava/lang/reflect/AccessibleObject;)V
+      // 0e2: goto 0e9
+      // 0e5: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0e8: athrow
+      // 0e9: aload 0
+      // 0ea: ldc ""
+      // 0ec: putfield com/Ph_2.N Ljava/lang/String;
+      // 0ef: aload 0
+      // 0f0: aload 5
+      // 0f2: iload 9
+      // 0f4: ifeq 10b
+      // 0f7: ifnonnull 109
+      // 0fa: goto 101
+      // 0fd: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 100: athrow
+      // 101: aconst_null
+      // 102: goto 113
+      // 105: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 108: athrow
+      // 109: aload 5
+      // 10b: ldc com/E6
+      // 10d: invokestatic com/B8.f (Ljava/lang/reflect/Field;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+      // 110: checkcast com/E6
+      // 113: putfield com/Ph_2.F Lcom/E6;
+      // 116: aload 0
+      // 117: aconst_null
+      // 118: putfield com/Ph_2.A Lcom/E6;
+      // 11b: aload 0
+      // 11c: bipush 0
+      // 11d: putfield com/Ph_2.j Z
+      // 120: aload 0
+      // 121: bipush 0
+      // 122: putfield com/Ph_2.s Z
+      // 125: aload 0
+      // 126: bipush 0
+      // 127: putfield com/Ph_2.D Z
+      // 12a: aload 0
+      // 12b: aconst_null
+      // 12c: putfield com/Ph_2.J Ljava/lang/String;
+      // 12f: aload 0
+      // 130: bipush 0
+      // 131: anewarray 58
+      // 134: putfield com/Ph_2.E [Ljava/lang/String;
+      // 137: aload 0
+      // 138: aload 0
+      // 139: aload 1
+      // 13a: aload 0
+      // 13b: getfield com/Ph_2.F Lcom/E6;
+      // 13e: invokespecial com/Ph_2.v (Ljava/lang/String;Lcom/E6;)J
+      // 141: putfield com/Ph_2.x J
+      // 144: invokestatic com/ky_4.F ()[Ljava/lang/String;
+      // 147: ifnull 159
+      // 14a: iinc 9 1
+      // 14d: iload 9
+      // 14f: invokestatic com/Ph_2.S (I)V
+      // 152: goto 159
+      // 155: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 158: athrow
+      // 159: return
+   }
 
-    public ph_2(String string, boolean bl) {
-        this(string, en_0.p(), IG.G(), bl);
-    }
+   public Ph_2(String var1, Method var2, Field var3, Class var4, Type var5, int var6, int var7, int var8, E6 var9, E6 var10, String var11) {
+      this(var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, null);
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public ph_2(String string, en_0 en_02, IG iG, boolean bl) {
-        String string2;
-        block5: {
-            String string3 = hi_0.C();
-            String string4 = string3;
-            try {
-                string2 = string;
-                if (string4 != null) break block5;
-                if (string2 == null) throw new hf_0(ph_2.a(2743, -17262));
+   public Ph_2(
+      String param1,
+      Method param2,
+      Field param3,
+      Class param4,
+      Type param5,
+      int param6,
+      int param7,
+      int param8,
+      E6 param9,
+      E6 param10,
+      String param11,
+      Map param12
+   ) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: aload 0
+      // 001: invokespecial java/lang/Object.<init> ()V
+      // 004: invokestatic com/Ph_2.w ()I
+      // 007: aload 0
+      // 008: bipush 0
+      // 009: putfield com/Ph_2.p I
+      // 00c: istore 13
+      // 00e: aload 3
+      // 00f: iload 13
+      // 011: ifeq 01f
+      // 014: ifnull 03c
+      // 017: goto 01e
+      // 01a: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 01d: athrow
+      // 01e: aload 3
+      // 01f: invokevirtual java/lang/reflect/Field.getName ()Ljava/lang/String;
+      // 022: astore 14
+      // 024: aload 14
+      // 026: aload 1
+      // 027: invokevirtual java/lang/String.equals (Ljava/lang/Object;)Z
+      // 02a: iload 13
+      // 02c: ifeq 03e
+      // 02f: ifeq 03c
+      // 032: goto 039
+      // 035: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 038: athrow
+      // 039: aload 14
+      // 03b: astore 1
+      // 03c: iload 6
+      // 03e: iload 13
+      // 040: ifeq 04e
+      // 043: ifge 050
+      // 046: goto 04d
+      // 049: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 04c: athrow
+      // 04d: bipush 0
+      // 04e: istore 6
+      // 050: aload 0
+      // 051: aload 1
+      // 052: putfield com/Ph_2.I Ljava/lang/String;
+      // 055: aload 0
+      // 056: aload 2
+      // 057: putfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 05a: aload 0
+      // 05b: aload 3
+      // 05c: putfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 05f: aload 0
+      // 060: iload 6
+      // 062: putfield com/Ph_2.p I
+      // 065: aload 0
+      // 066: iload 7
+      // 068: putfield com/Ph_2.c I
+      // 06b: aload 0
+      // 06c: iload 8
+      // 06e: putfield com/Ph_2.h I
+      // 071: aload 0
+      // 072: aload 9
+      // 074: putfield com/Ph_2.F Lcom/E6;
+      // 077: aload 0
+      // 078: aload 10
+      // 07a: putfield com/Ph_2.A Lcom/E6;
+      // 07d: iload 13
+      // 07f: ifeq 110
+      // 082: aload 3
+      // 083: ifnull 10b
+      // 086: goto 08d
+      // 089: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 08c: athrow
+      // 08d: aload 3
+      // 08e: invokevirtual java/lang/reflect/Field.getModifiers ()I
+      // 091: istore 14
+      // 093: aload 0
+      // 094: iload 14
+      // 096: bipush 1
+      // 097: iand
+      // 098: iload 13
+      // 09a: ifeq 0ba
+      // 09d: ifne 0b2
+      // 0a0: goto 0a7
+      // 0a3: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0a6: athrow
+      // 0a7: aload 2
+      // 0a8: ifnonnull 0bd
+      // 0ab: goto 0b2
+      // 0ae: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0b1: athrow
+      // 0b2: bipush 1
+      // 0b3: goto 0ba
+      // 0b6: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0b9: athrow
+      // 0ba: goto 0be
+      // 0bd: bipush 0
+      // 0be: putfield com/Ph_2.b Z
+      // 0c1: aload 0
+      // 0c2: iload 14
+      // 0c4: invokestatic java/lang/reflect/Modifier.isTransient (I)Z
+      // 0c7: iload 13
+      // 0c9: ifeq 0f1
+      // 0cc: ifne 0f0
+      // 0cf: goto 0d6
+      // 0d2: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0d5: athrow
+      // 0d6: aload 2
+      // 0d7: invokestatic com/B8.w (Ljava/lang/reflect/Method;)Z
+      // 0da: iload 13
+      // 0dc: ifeq 0f1
+      // 0df: goto 0e6
+      // 0e2: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0e5: athrow
+      // 0e6: ifeq 0f4
+      // 0e9: goto 0f0
+      // 0ec: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0ef: athrow
+      // 0f0: bipush 1
+      // 0f1: goto 0f5
+      // 0f4: bipush 0
+      // 0f5: putfield com/Ph_2.Z Z
+      // 0f8: iload 13
+      // 0fa: ifne 118
+      // 0fd: bipush 4
+      // 0fe: anewarray 58
+      // 101: invokestatic com/ky_4.K ([Ljava/lang/String;)V
+      // 104: goto 10b
+      // 107: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 10a: athrow
+      // 10b: aload 0
+      // 10c: bipush 0
+      // 10d: putfield com/Ph_2.b Z
+      // 110: aload 0
+      // 111: aload 2
+      // 112: invokestatic com/B8.w (Ljava/lang/reflect/Method;)Z
+      // 115: putfield com/Ph_2.Z Z
+      // 118: aload 11
+      // 11a: iload 13
+      // 11c: ifeq 12b
+      // 11f: ifnull 143
+      // 122: goto 129
+      // 125: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 128: athrow
+      // 129: aload 11
+      // 12b: invokevirtual java/lang/String.length ()I
+      // 12e: ifle 143
+      // 131: aload 0
+      // 132: aload 11
+      // 134: putfield com/Ph_2.N Ljava/lang/String;
+      // 137: iload 13
+      // 139: ifne 150
+      // 13c: goto 143
+      // 13f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 142: athrow
+      // 143: aload 0
+      // 144: ldc ""
+      // 146: putfield com/Ph_2.N Ljava/lang/String;
+      // 149: goto 150
+      // 14c: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 14f: athrow
+      // 150: aconst_null
+      // 151: astore 14
+      // 153: aload 0
+      // 154: invokevirtual com/Ph_2.Z ()Lcom/E6;
+      // 157: astore 15
+      // 159: aload 0
+      // 15a: aload 0
+      // 15b: aload 1
+      // 15c: aload 15
+      // 15e: invokespecial com/Ph_2.v (Ljava/lang/String;Lcom/E6;)J
+      // 161: putfield com/Ph_2.x J
+      // 164: bipush 0
+      // 165: istore 16
+      // 167: iload 13
+      // 169: ifeq 1c5
+      // 16c: aload 15
+      // 16e: ifnull 1bd
+      // 171: goto 178
+      // 174: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 177: athrow
+      // 178: aload 15
+      // 17a: invokeinterface com/E6.q ()Ljava/lang/String; 1
+      // 17f: astore 14
+      // 181: aload 14
+      // 183: invokevirtual java/lang/String.trim ()Ljava/lang/String;
+      // 186: invokevirtual java/lang/String.length ()I
+      // 189: iload 13
+      // 18b: ifeq 1a2
+      // 18e: ifne 19b
+      // 191: goto 198
+      // 194: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 197: athrow
+      // 198: aconst_null
+      // 199: astore 14
+      // 19b: aload 15
+      // 19d: invokeinterface com/E6.i ()Z 1
+      // 1a2: istore 16
+      // 1a4: aload 0
+      // 1a5: aload 15
+      // 1a7: invokeinterface com/E6.t ()Z 1
+      // 1ac: putfield com/Ph_2.D Z
+      // 1af: aload 0
+      // 1b0: aload 15
+      // 1b2: invokeinterface com/E6.X ()[Ljava/lang/String; 1
+      // 1b7: putfield com/Ph_2.E [Ljava/lang/String;
+      // 1ba: goto 1cd
+      // 1bd: bipush 0
+      // 1be: istore 16
+      // 1c0: aload 0
+      // 1c1: bipush 0
+      // 1c2: putfield com/Ph_2.D Z
+      // 1c5: aload 0
+      // 1c6: bipush 0
+      // 1c7: anewarray 58
+      // 1ca: putfield com/Ph_2.E [Ljava/lang/String;
+      // 1cd: aload 0
+      // 1ce: aload 14
+      // 1d0: putfield com/Ph_2.J Ljava/lang/String;
+      // 1d3: aload 0
+      // 1d4: aload 0
+      // 1d5: invokevirtual com/Ph_2.l ()[C
+      // 1d8: putfield com/Ph_2.L [C
+      // 1db: aload 2
+      // 1dc: iload 13
+      // 1de: ifeq 1ec
+      // 1e1: ifnull 1ef
+      // 1e4: goto 1eb
+      // 1e7: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1ea: athrow
+      // 1eb: aload 2
+      // 1ec: invokestatic com/B8.P (Ljava/lang/reflect/AccessibleObject;)V
+      // 1ef: aload 3
+      // 1f0: iload 13
+      // 1f2: ifeq 200
+      // 1f5: ifnull 203
+      // 1f8: goto 1ff
+      // 1fb: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1fe: athrow
+      // 1ff: aload 3
+      // 200: invokestatic com/B8.P (Ljava/lang/reflect/AccessibleObject;)V
+      // 203: bipush 0
+      // 204: istore 17
+      // 206: aload 2
+      // 207: iload 13
+      // 209: ifeq 217
+      // 20c: ifnull 2bd
+      // 20f: goto 216
+      // 212: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 215: athrow
+      // 216: aload 2
+      // 217: invokevirtual java/lang/reflect/Method.getParameterTypes ()[Ljava/lang/Class;
+      // 21a: dup
+      // 21b: astore 20
+      // 21d: arraylength
+      // 21e: bipush 1
+      // 21f: iload 13
+      // 221: ifeq 258
+      // 224: if_icmpne 241
+      // 227: goto 22e
+      // 22a: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 22d: athrow
+      // 22e: aload 20
+      // 230: bipush 0
+      // 231: aaload
+      // 232: astore 19
+      // 234: aload 2
+      // 235: invokevirtual java/lang/reflect/Method.getGenericParameterTypes ()[Ljava/lang/reflect/Type;
+      // 238: bipush 0
+      // 239: aaload
+      // 23a: astore 18
+      // 23c: iload 13
+      // 23e: ifne 2b0
+      // 241: aload 20
+      // 243: iload 13
+      // 245: ifeq 25d
+      // 248: goto 24f
+      // 24b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 24e: athrow
+      // 24f: arraylength
+      // 250: bipush 2
+      // 251: goto 258
+      // 254: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 257: athrow
+      // 258: if_icmpne 29a
+      // 25b: aload 20
+      // 25d: bipush 0
+      // 25e: aaload
+      // 25f: iload 13
+      // 261: ifeq 2a5
+      // 264: ldc java/lang/String
+      // 266: if_acmpne 29a
+      // 269: goto 270
+      // 26c: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 26f: athrow
+      // 270: aload 20
+      // 272: bipush 1
+      // 273: aaload
+      // 274: iload 13
+      // 276: ifeq 2a5
+      // 279: goto 280
+      // 27c: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 27f: athrow
+      // 280: ldc java/lang/Object
+      // 282: if_acmpne 29a
+      // 285: goto 28c
+      // 288: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 28b: athrow
+      // 28c: aload 20
+      // 28e: bipush 0
+      // 28f: aaload
+      // 290: dup
+      // 291: astore 19
+      // 293: astore 18
+      // 295: iload 13
+      // 297: ifne 2b0
+      // 29a: aload 2
+      // 29b: invokevirtual java/lang/reflect/Method.getReturnType ()Ljava/lang/Class;
+      // 29e: goto 2a5
+      // 2a1: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2a4: athrow
+      // 2a5: astore 19
+      // 2a7: aload 2
+      // 2a8: invokevirtual java/lang/reflect/Method.getGenericReturnType ()Ljava/lang/reflect/Type;
+      // 2ab: astore 18
+      // 2ad: bipush 1
+      // 2ae: istore 17
+      // 2b0: aload 0
+      // 2b1: aload 2
+      // 2b2: invokevirtual java/lang/reflect/Method.getDeclaringClass ()Ljava/lang/Class;
+      // 2b5: putfield com/Ph_2.Q Ljava/lang/Class;
+      // 2b8: iload 13
+      // 2ba: ifne 2da
+      // 2bd: aload 3
+      // 2be: invokevirtual java/lang/reflect/Field.getType ()Ljava/lang/Class;
+      // 2c1: astore 19
+      // 2c3: aload 3
+      // 2c4: invokevirtual java/lang/reflect/Field.getGenericType ()Ljava/lang/reflect/Type;
+      // 2c7: astore 18
+      // 2c9: aload 0
+      // 2ca: aload 3
+      // 2cb: invokevirtual java/lang/reflect/Field.getDeclaringClass ()Ljava/lang/Class;
+      // 2ce: putfield com/Ph_2.Q Ljava/lang/Class;
+      // 2d1: aload 3
+      // 2d2: invokevirtual java/lang/reflect/Field.getModifiers ()I
+      // 2d5: invokestatic java/lang/reflect/Modifier.isFinal (I)Z
+      // 2d8: istore 17
+      // 2da: aload 0
+      // 2db: iload 17
+      // 2dd: putfield com/Ph_2.j Z
+      // 2e0: aload 0
+      // 2e1: iload 16
+      // 2e3: ifeq 2fc
+      // 2e6: aload 19
+      // 2e8: ldc java/lang/String
+      // 2ea: if_acmpne 2fc
+      // 2ed: goto 2f4
+      // 2f0: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2f3: athrow
+      // 2f4: bipush 1
+      // 2f5: goto 2fd
+      // 2f8: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2fb: athrow
+      // 2fc: bipush 0
+      // 2fd: putfield com/Ph_2.s Z
+      // 300: aload 4
+      // 302: iload 13
+      // 304: ifeq 388
+      // 307: ifnull 386
+      // 30a: goto 311
+      // 30d: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 310: athrow
+      // 311: aload 19
+      // 313: iload 13
+      // 315: ifeq 388
+      // 318: goto 31f
+      // 31b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 31e: athrow
+      // 31f: ldc java/lang/Object
+      // 321: if_acmpne 386
+      // 324: goto 32b
+      // 327: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 32a: athrow
+      // 32b: aload 18
+      // 32d: iload 13
+      // 32f: ifeq 388
+      // 332: goto 339
+      // 335: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 338: athrow
+      // 339: instanceof java/lang/reflect/TypeVariable
+      // 33c: ifeq 386
+      // 33f: goto 346
+      // 342: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 345: athrow
+      // 346: aload 18
+      // 348: checkcast java/lang/reflect/TypeVariable
+      // 34b: astore 20
+      // 34d: aload 4
+      // 34f: aload 5
+      // 351: aload 20
+      // 353: invokestatic com/Ph_2.e (Ljava/lang/Class;Ljava/lang/reflect/Type;Ljava/lang/reflect/TypeVariable;)Ljava/lang/reflect/Type;
+      // 356: astore 21
+      // 358: aload 21
+      // 35a: iload 13
+      // 35c: ifeq 398
+      // 35f: ifnull 386
+      // 362: goto 369
+      // 365: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 368: athrow
+      // 369: aload 0
+      // 36a: aload 21
+      // 36c: invokestatic com/B8.x (Ljava/lang/reflect/Type;)Ljava/lang/Class;
+      // 36f: putfield com/Ph_2.O Ljava/lang/Class;
+      // 372: aload 0
+      // 373: aload 21
+      // 375: putfield com/Ph_2.a Ljava/lang/reflect/Type;
+      // 378: aload 0
+      // 379: aload 19
+      // 37b: invokevirtual java/lang/Class.isEnum ()Z
+      // 37e: putfield com/Ph_2.X Z
+      // 381: return
+      // 382: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 385: athrow
+      // 386: aload 18
+      // 388: astore 20
+      // 38a: iload 13
+      // 38c: ifeq 439
+      // 38f: aload 18
+      // 391: goto 398
+      // 394: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 397: athrow
+      // 398: instanceof java/lang/Class
+      // 39b: ifne 424
+      // 39e: aload 4
+      // 3a0: aload 5
+      // 3a2: iload 13
+      // 3a4: ifeq 3ba
+      // 3a7: goto 3ae
+      // 3aa: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3ad: athrow
+      // 3ae: ifnull 3bd
+      // 3b1: goto 3b8
+      // 3b4: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3b7: athrow
+      // 3b8: aload 5
+      // 3ba: goto 3bf
+      // 3bd: aload 4
+      // 3bf: aload 18
+      // 3c1: aload 12
+      // 3c3: invokestatic com/Ph_2.I (Ljava/lang/Class;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Ljava/util/Map;)Ljava/lang/reflect/Type;
+      // 3c6: astore 20
+      // 3c8: iload 13
+      // 3ca: ifeq 439
+      // 3cd: aload 20
+      // 3cf: aload 18
+      // 3d1: if_acmpeq 424
+      // 3d4: goto 3db
+      // 3d7: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3da: athrow
+      // 3db: aload 20
+      // 3dd: instanceof java/lang/reflect/ParameterizedType
+      // 3e0: iload 13
+      // 3e2: ifeq 41a
+      // 3e5: goto 3ec
+      // 3e8: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3eb: athrow
+      // 3ec: ifeq 402
+      // 3ef: goto 3f6
+      // 3f2: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3f5: athrow
+      // 3f6: aload 20
+      // 3f8: invokestatic com/B8.x (Ljava/lang/reflect/Type;)Ljava/lang/Class;
+      // 3fb: astore 19
+      // 3fd: iload 13
+      // 3ff: ifne 424
+      // 402: aload 20
+      // 404: iload 13
+      // 406: ifeq 41f
+      // 409: goto 410
+      // 40c: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 40f: athrow
+      // 410: instanceof java/lang/Class
+      // 413: goto 41a
+      // 416: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 419: athrow
+      // 41a: ifeq 424
+      // 41d: aload 20
+      // 41f: invokestatic com/B8.x (Ljava/lang/reflect/Type;)Ljava/lang/Class;
+      // 422: astore 19
+      // 424: aload 0
+      // 425: aload 20
+      // 427: putfield com/Ph_2.a Ljava/lang/reflect/Type;
+      // 42a: aload 0
+      // 42b: aload 19
+      // 42d: putfield com/Ph_2.O Ljava/lang/Class;
+      // 430: aload 0
+      // 431: aload 19
+      // 433: invokevirtual java/lang/Class.isEnum ()Z
+      // 436: putfield com/Ph_2.X Z
+      // 439: return
+   }
+
+   private long v(String param1, E6 param2) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Ph_2.w ()I
+      // 03: istore 3
+      // 04: aload 2
+      // 05: iload 3
+      // 06: ifeq 14
+      // 09: ifnull 33
+      // 0c: goto 13
+      // 0f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 12: athrow
+      // 13: aload 2
+      // 14: invokeinterface com/E6.W ()Ljava/lang/String; 1
+      // 19: iload 3
+      // 1a: ifeq 34
+      // 1d: invokevirtual java/lang/String.length ()I
+      // 20: ifeq 33
+      // 23: goto 2a
+      // 26: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 29: athrow
+      // 2a: aload 1
+      // 2b: invokestatic com/B8.o (Ljava/lang/String;)J
+      // 2e: lreturn
+      // 2f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 32: athrow
+      // 33: aload 1
+      // 34: invokestatic com/B8.A (Ljava/lang/String;)J
+      // 37: lreturn
+   }
+
+   protected char[] l() {
+      int var1 = this.I.length();
+      char[] var2 = new char[var1 + 3];
+      this.I.getChars(0, this.I.length(), var2, 1);
+      var2[0] = (char)a(6529, 1377286997616063244L);
+      var2[var1 + 1] = (char)a(19880, 2702823453134104358L);
+      var2[var1 + 2] = (char)a(17537, 5716825889897000462L);
+      return var2;
+   }
+
+   public Annotation m(Class param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Ph_2.u ()I
+      // 03: istore 2
+      // 04: aload 1
+      // 05: ldc com/E6
+      // 07: if_acmpne 13
+      // 0a: aload 0
+      // 0b: invokevirtual com/Ph_2.Z ()Lcom/E6;
+      // 0e: areturn
+      // 0f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 12: athrow
+      // 13: aconst_null
+      // 14: astore 3
+      // 15: aload 0
+      // 16: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 19: iload 2
+      // 1a: ifne 32
+      // 1d: ifnull 37
+      // 20: goto 27
+      // 23: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 26: athrow
+      // 27: aload 0
+      // 28: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 2b: goto 32
+      // 2e: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 31: athrow
+      // 32: aload 1
+      // 33: invokestatic com/B8.J (Ljava/lang/reflect/Method;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+      // 36: astore 3
+      // 37: aload 3
+      // 38: iload 2
+      // 39: ifne 70
+      // 3c: ifnonnull 6f
+      // 3f: goto 46
+      // 42: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 45: athrow
+      // 46: aload 0
+      // 47: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 4a: iload 2
+      // 4b: ifne 6a
+      // 4e: goto 55
+      // 51: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 54: athrow
+      // 55: ifnull 6f
+      // 58: goto 5f
+      // 5b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 5e: athrow
+      // 5f: aload 0
+      // 60: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 63: goto 6a
+      // 66: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 69: athrow
+      // 6a: aload 1
+      // 6b: invokestatic com/B8.f (Ljava/lang/reflect/Field;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+      // 6e: astore 3
+      // 6f: aload 3
+      // 70: areturn
+   }
+
+   public static Type O(Class var0, Type var1, Type var2) {
+      return I(var0, var1, var2, null);
+   }
+
+   public static Type I(Class param0, Type param1, Type param2, Map param3) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/Ph_2.w ()I
+      // 003: istore 4
+      // 005: aload 0
+      // 006: iload 4
+      // 008: ifeq 02d
+      // 00b: ifnull 02c
+      // 00e: goto 015
+      // 011: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 014: athrow
+      // 015: aload 1
+      // 016: iload 4
+      // 018: ifeq 02f
+      // 01b: goto 022
+      // 01e: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 021: athrow
+      // 022: ifnonnull 02e
+      // 025: goto 02c
+      // 028: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 02b: athrow
+      // 02c: aload 2
+      // 02d: areturn
+      // 02e: aload 2
+      // 02f: instanceof java/lang/reflect/GenericArrayType
+      // 032: iload 4
+      // 034: ifeq 084
+      // 037: ifeq 080
+      // 03a: goto 041
+      // 03d: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 040: athrow
+      // 041: aload 2
+      // 042: checkcast java/lang/reflect/GenericArrayType
+      // 045: astore 5
+      // 047: aload 5
+      // 049: invokeinterface java/lang/reflect/GenericArrayType.getGenericComponentType ()Ljava/lang/reflect/Type; 1
+      // 04e: astore 6
+      // 050: aload 0
+      // 051: aload 1
+      // 052: aload 6
+      // 054: aload 3
+      // 055: invokestatic com/Ph_2.I (Ljava/lang/Class;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Ljava/util/Map;)Ljava/lang/reflect/Type;
+      // 058: astore 7
+      // 05a: aload 6
+      // 05c: iload 4
+      // 05e: ifeq 07f
+      // 061: aload 7
+      // 063: if_acmpeq 07e
+      // 066: goto 06d
+      // 069: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 06c: athrow
+      // 06d: aload 7
+      // 06f: invokestatic com/B8.x (Ljava/lang/reflect/Type;)Ljava/lang/Class;
+      // 072: bipush 0
+      // 073: invokestatic java/lang/reflect/Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+      // 076: invokevirtual java/lang/Object.getClass ()Ljava/lang/Class;
+      // 079: astore 8
+      // 07b: aload 8
+      // 07d: areturn
+      // 07e: aload 2
+      // 07f: areturn
+      // 080: aload 1
+      // 081: invokestatic com/B8.A (Ljava/lang/reflect/Type;)Z
+      // 084: iload 4
+      // 086: ifeq 09d
+      // 089: ifne 099
+      // 08c: goto 093
+      // 08f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 092: athrow
+      // 093: aload 2
+      // 094: areturn
+      // 095: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 098: athrow
+      // 099: aload 2
+      // 09a: instanceof java/lang/reflect/TypeVariable
+      // 09d: iload 4
+      // 09f: ifeq 128
+      // 0a2: ifeq 118
+      // 0a5: goto 0ac
+      // 0a8: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0ab: athrow
+      // 0ac: aload 1
+      // 0ad: invokestatic com/B8.U (Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+      // 0b0: checkcast java/lang/reflect/ParameterizedType
+      // 0b3: astore 5
+      // 0b5: aload 5
+      // 0b7: invokestatic com/B8.x (Ljava/lang/reflect/Type;)Ljava/lang/Class;
+      // 0ba: astore 6
+      // 0bc: aload 2
+      // 0bd: checkcast java/lang/reflect/TypeVariable
+      // 0c0: astore 7
+      // 0c2: aload 6
+      // 0c4: invokevirtual java/lang/Class.getTypeParameters ()[Ljava/lang/reflect/TypeVariable;
+      // 0c7: astore 8
+      // 0c9: bipush 0
+      // 0ca: istore 9
+      // 0cc: iload 9
+      // 0ce: aload 8
+      // 0d0: arraylength
+      // 0d1: if_icmpge 118
+      // 0d4: aload 8
+      // 0d6: iload 9
+      // 0d8: aaload
+      // 0d9: iload 4
+      // 0db: ifeq 10f
+      // 0de: invokeinterface java/lang/reflect/TypeVariable.getName ()Ljava/lang/String; 1
+      // 0e3: aload 7
+      // 0e5: invokeinterface java/lang/reflect/TypeVariable.getName ()Ljava/lang/String; 1
+      // 0ea: invokevirtual java/lang/String.equals (Ljava/lang/Object;)Z
+      // 0ed: iload 4
+      // 0ef: ifeq 128
+      // 0f2: goto 0f9
+      // 0f5: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0f8: athrow
+      // 0f9: ifeq 110
+      // 0fc: goto 103
+      // 0ff: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 102: athrow
+      // 103: aload 5
+      // 105: invokeinterface java/lang/reflect/ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type; 1
+      // 10a: iload 9
+      // 10c: aaload
+      // 10d: astore 2
+      // 10e: aload 2
+      // 10f: areturn
+      // 110: iinc 9 1
+      // 113: iload 4
+      // 115: ifne 0cc
+      // 118: aload 2
+      // 119: iload 4
+      // 11b: ifeq 1f9
+      // 11e: instanceof java/lang/reflect/ParameterizedType
+      // 121: goto 128
+      // 124: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 127: athrow
+      // 128: ifeq 1f8
+      // 12b: aload 2
+      // 12c: checkcast java/lang/reflect/ParameterizedType
+      // 12f: astore 5
+      // 131: aload 5
+      // 133: invokeinterface java/lang/reflect/ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type; 1
+      // 138: astore 6
+      // 13a: aload 6
+      // 13c: aload 3
+      // 13d: invokestatic com/Ph_2.Z ([Ljava/lang/reflect/Type;Ljava/util/Map;)Z
+      // 140: istore 9
+      // 142: iload 9
+      // 144: iload 4
+      // 146: ifeq 1d8
+      // 149: ifne 1d6
+      // 14c: goto 153
+      // 14f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 152: athrow
+      // 153: aload 1
+      // 154: instanceof java/lang/reflect/ParameterizedType
+      // 157: iload 4
+      // 159: ifeq 198
+      // 15c: goto 163
+      // 15f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 162: athrow
+      // 163: ifeq 17e
+      // 166: goto 16d
+      // 169: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 16c: athrow
+      // 16d: aload 1
+      // 16e: checkcast java/lang/reflect/ParameterizedType
+      // 171: astore 8
+      // 173: aload 0
+      // 174: invokevirtual java/lang/Class.getTypeParameters ()[Ljava/lang/reflect/TypeVariable;
+      // 177: astore 7
+      // 179: iload 4
+      // 17b: ifne 1c6
+      // 17e: aload 0
+      // 17f: invokevirtual java/lang/Class.getGenericSuperclass ()Ljava/lang/reflect/Type;
+      // 182: iload 4
+      // 184: ifeq 1a6
+      // 187: goto 18e
+      // 18a: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 18d: athrow
+      // 18e: instanceof java/lang/reflect/ParameterizedType
+      // 191: goto 198
+      // 194: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 197: athrow
+      // 198: ifeq 1b9
+      // 19b: aload 0
+      // 19c: invokevirtual java/lang/Class.getGenericSuperclass ()Ljava/lang/reflect/Type;
+      // 19f: goto 1a6
+      // 1a2: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1a5: athrow
+      // 1a6: checkcast java/lang/reflect/ParameterizedType
+      // 1a9: astore 8
+      // 1ab: aload 0
+      // 1ac: invokevirtual java/lang/Class.getSuperclass ()Ljava/lang/Class;
+      // 1af: invokevirtual java/lang/Class.getTypeParameters ()[Ljava/lang/reflect/TypeVariable;
+      // 1b2: astore 7
+      // 1b4: iload 4
+      // 1b6: ifne 1c6
+      // 1b9: aload 5
+      // 1bb: astore 8
+      // 1bd: aload 1
+      // 1be: invokevirtual java/lang/Object.getClass ()Ljava/lang/Class;
+      // 1c1: invokevirtual java/lang/Class.getTypeParameters ()[Ljava/lang/reflect/TypeVariable;
+      // 1c4: astore 7
+      // 1c6: aload 6
+      // 1c8: aload 7
+      // 1ca: aload 8
+      // 1cc: invokeinterface java/lang/reflect/ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type; 1
+      // 1d1: invokestatic com/Ph_2.y ([Ljava/lang/reflect/Type;[Ljava/lang/reflect/TypeVariable;[Ljava/lang/reflect/Type;)Z
+      // 1d4: istore 9
+      // 1d6: iload 9
+      // 1d8: ifeq 1f8
+      // 1db: new com/HK
+      // 1de: dup
+      // 1df: aload 6
+      // 1e1: aload 5
+      // 1e3: invokeinterface java/lang/reflect/ParameterizedType.getOwnerType ()Ljava/lang/reflect/Type; 1
+      // 1e8: aload 5
+      // 1ea: invokeinterface java/lang/reflect/ParameterizedType.getRawType ()Ljava/lang/reflect/Type; 1
+      // 1ef: invokespecial com/HK.<init> ([Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V
+      // 1f2: invokestatic com/HI.V (Lcom/HK;)Ljava/lang/reflect/Type;
+      // 1f5: astore 2
+      // 1f6: aload 2
+      // 1f7: areturn
+      // 1f8: aload 2
+      // 1f9: areturn
+   }
+
+   private static boolean Z(Type[] param0, Map param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/Ph_2.w ()I
+      // 003: istore 2
+      // 004: aload 1
+      // 005: iload 2
+      // 006: ifeq 014
+      // 009: ifnull 027
+      // 00c: goto 013
+      // 00f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 012: athrow
+      // 013: aload 1
+      // 014: invokeinterface java/util/Map.size ()I 1
+      // 019: iload 2
+      // 01a: ifeq 02e
+      // 01d: ifne 02d
+      // 020: goto 027
+      // 023: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 026: athrow
+      // 027: bipush 0
+      // 028: ireturn
+      // 029: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 02c: athrow
+      // 02d: bipush 0
+      // 02e: istore 3
+      // 02f: bipush 0
+      // 030: istore 4
+      // 032: iload 4
+      // 034: aload 0
+      // 035: arraylength
+      // 036: if_icmpge 106
+      // 039: aload 0
+      // 03a: iload 4
+      // 03c: aaload
+      // 03d: astore 5
+      // 03f: aload 5
+      // 041: instanceof java/lang/reflect/ParameterizedType
+      // 044: iload 2
+      // 045: ifeq 107
+      // 048: iload 2
+      // 049: ifeq 0bc
+      // 04c: goto 053
+      // 04f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 052: athrow
+      // 053: ifeq 0b0
+      // 056: goto 05d
+      // 059: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 05c: athrow
+      // 05d: aload 5
+      // 05f: checkcast java/lang/reflect/ParameterizedType
+      // 062: astore 6
+      // 064: aload 6
+      // 066: invokeinterface java/lang/reflect/ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type; 1
+      // 06b: astore 7
+      // 06d: aload 7
+      // 06f: aload 1
+      // 070: invokestatic com/Ph_2.Z ([Ljava/lang/reflect/Type;Ljava/util/Map;)Z
+      // 073: istore 8
+      // 075: iload 8
+      // 077: iload 2
+      // 078: ifeq 0ab
+      // 07b: ifeq 0ac
+      // 07e: goto 085
+      // 081: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 084: athrow
+      // 085: aload 0
+      // 086: iload 4
+      // 088: new com/HK
+      // 08b: dup
+      // 08c: aload 7
+      // 08e: aload 6
+      // 090: invokeinterface java/lang/reflect/ParameterizedType.getOwnerType ()Ljava/lang/reflect/Type; 1
+      // 095: aload 6
+      // 097: invokeinterface java/lang/reflect/ParameterizedType.getRawType ()Ljava/lang/reflect/Type; 1
+      // 09c: invokespecial com/HK.<init> ([Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V
+      // 09f: invokestatic com/HI.V (Lcom/HK;)Ljava/lang/reflect/Type;
+      // 0a2: aastore
+      // 0a3: bipush 1
+      // 0a4: goto 0ab
+      // 0a7: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0aa: athrow
+      // 0ab: istore 3
+      // 0ac: iload 2
+      // 0ad: ifne 0ff
+      // 0b0: aload 5
+      // 0b2: instanceof java/lang/reflect/TypeVariable
+      // 0b5: goto 0bc
+      // 0b8: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0bb: athrow
+      // 0bc: iload 2
+      // 0bd: ifeq 0d9
+      // 0c0: ifeq 0ff
+      // 0c3: goto 0ca
+      // 0c6: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0c9: athrow
+      // 0ca: aload 1
+      // 0cb: aload 5
+      // 0cd: invokeinterface java/util/Map.containsKey (Ljava/lang/Object;)Z 2
+      // 0d2: goto 0d9
+      // 0d5: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0d8: athrow
+      // 0d9: iload 2
+      // 0da: ifeq 0fe
+      // 0dd: ifeq 0ff
+      // 0e0: goto 0e7
+      // 0e3: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0e6: athrow
+      // 0e7: aload 0
+      // 0e8: iload 4
+      // 0ea: aload 1
+      // 0eb: aload 5
+      // 0ed: invokeinterface java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object; 2
+      // 0f2: checkcast java/lang/reflect/Type
+      // 0f5: aastore
+      // 0f6: bipush 1
+      // 0f7: goto 0fe
+      // 0fa: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0fd: athrow
+      // 0fe: istore 3
+      // 0ff: iinc 4 1
+      // 102: iload 2
+      // 103: ifne 032
+      // 106: iload 3
+      // 107: ireturn
+   }
+
+   private static boolean y(Type[] param0, TypeVariable[] param1, Type[] param2) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/Ph_2.w ()I
+      // 003: istore 3
+      // 004: aload 2
+      // 005: ifnull 01f
+      // 008: aload 1
+      // 009: arraylength
+      // 00a: iload 3
+      // 00b: ifeq 026
+      // 00e: goto 015
+      // 011: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 014: athrow
+      // 015: ifne 025
+      // 018: goto 01f
+      // 01b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 01e: athrow
+      // 01f: bipush 0
+      // 020: ireturn
+      // 021: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 024: athrow
+      // 025: bipush 0
+      // 026: istore 4
+      // 028: bipush 0
+      // 029: istore 5
+      // 02b: iload 5
+      // 02d: aload 0
+      // 02e: arraylength
+      // 02f: if_icmpge 10a
+      // 032: aload 0
+      // 033: iload 5
+      // 035: aaload
+      // 036: astore 6
+      // 038: aload 6
+      // 03a: instanceof java/lang/reflect/ParameterizedType
+      // 03d: iload 3
+      // 03e: ifeq 10c
+      // 041: iload 3
+      // 042: ifeq 0b7
+      // 045: goto 04c
+      // 048: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 04b: athrow
+      // 04c: ifeq 0ab
+      // 04f: goto 056
+      // 052: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 055: athrow
+      // 056: aload 6
+      // 058: checkcast java/lang/reflect/ParameterizedType
+      // 05b: astore 7
+      // 05d: aload 7
+      // 05f: invokeinterface java/lang/reflect/ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type; 1
+      // 064: astore 8
+      // 066: aload 8
+      // 068: aload 1
+      // 069: aload 2
+      // 06a: invokestatic com/Ph_2.y ([Ljava/lang/reflect/Type;[Ljava/lang/reflect/TypeVariable;[Ljava/lang/reflect/Type;)Z
+      // 06d: istore 9
+      // 06f: iload 9
+      // 071: iload 3
+      // 072: ifeq 0a5
+      // 075: ifeq 0a7
+      // 078: goto 07f
+      // 07b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 07e: athrow
+      // 07f: aload 0
+      // 080: iload 5
+      // 082: new com/HK
+      // 085: dup
+      // 086: aload 8
+      // 088: aload 7
+      // 08a: invokeinterface java/lang/reflect/ParameterizedType.getOwnerType ()Ljava/lang/reflect/Type; 1
+      // 08f: aload 7
+      // 091: invokeinterface java/lang/reflect/ParameterizedType.getRawType ()Ljava/lang/reflect/Type; 1
+      // 096: invokespecial com/HK.<init> ([Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V
+      // 099: invokestatic com/HI.V (Lcom/HK;)Ljava/lang/reflect/Type;
+      // 09c: aastore
+      // 09d: bipush 1
+      // 09e: goto 0a5
+      // 0a1: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0a4: athrow
+      // 0a5: istore 4
+      // 0a7: iload 3
+      // 0a8: ifne 103
+      // 0ab: aload 6
+      // 0ad: instanceof java/lang/reflect/TypeVariable
+      // 0b0: goto 0b7
+      // 0b3: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0b6: athrow
+      // 0b7: iload 3
+      // 0b8: ifeq 0c6
+      // 0bb: ifeq 103
+      // 0be: goto 0c5
+      // 0c1: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0c4: athrow
+      // 0c5: bipush 0
+      // 0c6: istore 7
+      // 0c8: iload 7
+      // 0ca: aload 1
+      // 0cb: arraylength
+      // 0cc: if_icmpge 103
+      // 0cf: aload 6
+      // 0d1: aload 1
+      // 0d2: iload 7
+      // 0d4: aaload
+      // 0d5: invokevirtual java/lang/Object.equals (Ljava/lang/Object;)Z
+      // 0d8: iload 3
+      // 0d9: ifeq 02d
+      // 0dc: iload 3
+      // 0dd: ifeq 0fa
+      // 0e0: ifeq 0fc
+      // 0e3: goto 0ea
+      // 0e6: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0e9: athrow
+      // 0ea: aload 0
+      // 0eb: iload 5
+      // 0ed: aload 2
+      // 0ee: iload 7
+      // 0f0: aaload
+      // 0f1: aastore
+      // 0f2: bipush 1
+      // 0f3: goto 0fa
+      // 0f6: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0f9: athrow
+      // 0fa: istore 4
+      // 0fc: iinc 7 1
+      // 0ff: iload 3
+      // 100: ifne 0c8
+      // 103: iinc 5 1
+      // 106: iload 3
+      // 107: ifne 02b
+      // 10a: iload 4
+      // 10c: ireturn
+   }
+
+   private static Type e(Class param0, Type param1, TypeVariable param2) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: aload 2
+      // 001: invokeinterface java/lang/reflect/TypeVariable.getGenericDeclaration ()Ljava/lang/reflect/GenericDeclaration; 1
+      // 006: astore 4
+      // 008: invokestatic com/Ph_2.w ()I
+      // 00b: aconst_null
+      // 00c: astore 5
+      // 00e: istore 3
+      // 00f: aload 4
+      // 011: iload 3
+      // 012: ifeq 02f
+      // 015: instanceof java/lang/Class
+      // 018: ifeq 034
+      // 01b: goto 022
+      // 01e: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 021: athrow
+      // 022: aload 2
+      // 023: invokeinterface java/lang/reflect/TypeVariable.getGenericDeclaration ()Ljava/lang/reflect/GenericDeclaration; 1
+      // 028: goto 02f
+      // 02b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 02e: athrow
+      // 02f: checkcast java/lang/Class
+      // 032: astore 5
+      // 034: aconst_null
+      // 035: astore 6
+      // 037: aload 5
+      // 039: iload 3
+      // 03a: ifeq 07b
+      // 03d: aload 0
+      // 03e: if_acmpne 07a
+      // 041: goto 048
+      // 044: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 047: athrow
+      // 048: aload 1
+      // 049: iload 3
+      // 04a: ifeq 069
+      // 04d: goto 054
+      // 050: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 053: athrow
+      // 054: instanceof java/lang/reflect/ParameterizedType
+      // 057: ifeq 105
+      // 05a: goto 061
+      // 05d: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 060: athrow
+      // 061: aload 1
+      // 062: goto 069
+      // 065: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 068: athrow
+      // 069: checkcast java/lang/reflect/ParameterizedType
+      // 06c: astore 7
+      // 06e: aload 7
+      // 070: invokeinterface java/lang/reflect/ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type; 1
+      // 075: astore 6
+      // 077: goto 105
+      // 07a: aload 0
+      // 07b: astore 7
+      // 07d: aload 7
+      // 07f: ifnull 105
+      // 082: aload 7
+      // 084: iload 3
+      // 085: ifeq 113
+      // 088: ldc java/lang/Object
+      // 08a: iload 3
+      // 08b: ifeq 0b5
+      // 08e: goto 095
+      // 091: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 094: athrow
+      // 095: if_acmpeq 105
+      // 098: goto 09f
+      // 09b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 09e: athrow
+      // 09f: aload 7
+      // 0a1: iload 3
+      // 0a2: ifeq 0c4
+      // 0a5: goto 0ac
+      // 0a8: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0ab: athrow
+      // 0ac: aload 5
+      // 0ae: goto 0b5
+      // 0b1: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0b4: athrow
+      // 0b5: if_acmpeq 105
+      // 0b8: aload 7
+      // 0ba: invokevirtual java/lang/Class.getGenericSuperclass ()Ljava/lang/reflect/Type;
+      // 0bd: goto 0c4
+      // 0c0: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0c3: athrow
+      // 0c4: astore 8
+      // 0c6: iload 3
+      // 0c7: ifeq 101
+      // 0ca: aload 8
+      // 0cc: instanceof java/lang/reflect/ParameterizedType
+      // 0cf: ifeq 0fa
+      // 0d2: goto 0d9
+      // 0d5: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0d8: athrow
+      // 0d9: aload 8
+      // 0db: checkcast java/lang/reflect/ParameterizedType
+      // 0de: astore 9
+      // 0e0: aload 9
+      // 0e2: invokeinterface java/lang/reflect/ParameterizedType.getActualTypeArguments ()[Ljava/lang/reflect/Type; 1
+      // 0e7: astore 10
+      // 0e9: aload 10
+      // 0eb: aload 7
+      // 0ed: invokevirtual java/lang/Class.getTypeParameters ()[Ljava/lang/reflect/TypeVariable;
+      // 0f0: aload 6
+      // 0f2: invokestatic com/Ph_2.y ([Ljava/lang/reflect/Type;[Ljava/lang/reflect/TypeVariable;[Ljava/lang/reflect/Type;)Z
+      // 0f5: pop
+      // 0f6: aload 10
+      // 0f8: astore 6
+      // 0fa: aload 7
+      // 0fc: invokevirtual java/lang/Class.getSuperclass ()Ljava/lang/Class;
+      // 0ff: astore 7
+      // 101: iload 3
+      // 102: ifne 07d
+      // 105: aload 6
+      // 107: ifnull 116
+      // 10a: aload 5
+      // 10c: goto 113
+      // 10f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 112: athrow
+      // 113: ifnonnull 11c
+      // 116: aconst_null
+      // 117: areturn
+      // 118: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 11b: athrow
+      // 11c: aconst_null
+      // 11d: astore 7
+      // 11f: aload 5
+      // 121: invokevirtual java/lang/Class.getTypeParameters ()[Ljava/lang/reflect/TypeVariable;
+      // 124: astore 8
+      // 126: bipush 0
+      // 127: istore 9
+      // 129: iload 9
+      // 12b: aload 8
+      // 12d: arraylength
+      // 12e: if_icmpge 166
+      // 131: aload 2
+      // 132: iload 3
+      // 133: ifeq 15b
+      // 136: goto 13d
+      // 139: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 13c: athrow
+      // 13d: aload 8
+      // 13f: iload 9
+      // 141: aaload
+      // 142: invokevirtual java/lang/Object.equals (Ljava/lang/Object;)Z
+      // 145: ifeq 160
+      // 148: goto 14f
+      // 14b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 14e: athrow
+      // 14f: aload 6
+      // 151: iload 9
+      // 153: aaload
+      // 154: goto 15b
+      // 157: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15a: athrow
+      // 15b: astore 7
+      // 15d: goto 166
+      // 160: iinc 9 1
+      // 163: goto 129
+      // 166: aload 7
+      // 168: areturn
+   }
+
+   @Override
+   public String toString() {
+      return this.I;
+   }
+
+   public Member r() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Ph_2.w ()I
+      // 03: istore 1
+      // 04: aload 0
+      // 05: iload 1
+      // 06: ifeq 20
+      // 09: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 0c: ifnull 1f
+      // 0f: goto 16
+      // 12: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15: athrow
+      // 16: aload 0
+      // 17: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 1a: areturn
+      // 1b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1e: athrow
+      // 1f: aload 0
+      // 20: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 23: areturn
+   }
+
+   protected Class W() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Ph_2.w ()I
+      // 03: istore 1
+      // 04: aload 0
+      // 05: iload 1
+      // 06: ifeq 23
+      // 09: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 0c: ifnull 22
+      // 0f: goto 16
+      // 12: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15: athrow
+      // 16: aload 0
+      // 17: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 1a: invokevirtual java/lang/reflect/Method.getDeclaringClass ()Ljava/lang/Class;
+      // 1d: areturn
+      // 1e: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 21: athrow
+      // 22: aload 0
+      // 23: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 26: iload 1
+      // 27: ifeq 3f
+      // 2a: ifnull 43
+      // 2d: goto 34
+      // 30: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 33: athrow
+      // 34: aload 0
+      // 35: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 38: goto 3f
+      // 3b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3e: athrow
+      // 3f: invokevirtual java/lang/reflect/Field.getDeclaringClass ()Ljava/lang/Class;
+      // 42: areturn
+      // 43: aconst_null
+      // 44: areturn
+   }
+
+   public int M(Ph_2 param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/Ph_2.u ()I
+      // 003: istore 2
+      // 004: aload 1
+      // 005: iload 2
+      // 006: ifne 094
+      // 009: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 00c: ifnull 093
+      // 00f: goto 016
+      // 012: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 015: athrow
+      // 016: aload 0
+      // 017: iload 2
+      // 018: ifne 094
+      // 01b: goto 022
+      // 01e: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 021: athrow
+      // 022: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 025: ifnull 093
+      // 028: goto 02f
+      // 02b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 02e: athrow
+      // 02f: aload 1
+      // 030: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 033: invokevirtual java/lang/reflect/Method.isBridge ()Z
+      // 036: iload 2
+      // 037: ifne 097
+      // 03a: goto 041
+      // 03d: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 040: athrow
+      // 041: ifeq 093
+      // 044: goto 04b
+      // 047: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 04a: athrow
+      // 04b: aload 0
+      // 04c: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 04f: invokevirtual java/lang/reflect/Method.isBridge ()Z
+      // 052: iload 2
+      // 053: ifne 097
+      // 056: goto 05d
+      // 059: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 05c: athrow
+      // 05d: ifne 093
+      // 060: goto 067
+      // 063: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 066: athrow
+      // 067: aload 1
+      // 068: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 06b: invokevirtual java/lang/reflect/Method.getName ()Ljava/lang/String;
+      // 06e: aload 0
+      // 06f: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 072: invokevirtual java/lang/reflect/Method.getName ()Ljava/lang/String;
+      // 075: invokevirtual java/lang/String.equals (Ljava/lang/Object;)Z
+      // 078: iload 2
+      // 079: ifne 097
+      // 07c: goto 083
+      // 07f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 082: athrow
+      // 083: ifeq 093
+      // 086: goto 08d
+      // 089: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 08c: athrow
+      // 08d: bipush 1
+      // 08e: ireturn
+      // 08f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 092: athrow
+      // 093: aload 0
+      // 094: getfield com/Ph_2.p I
+      // 097: aload 1
+      // 098: getfield com/Ph_2.p I
+      // 09b: iload 2
+      // 09c: ifne 0c2
+      // 09f: if_icmpge 0af
+      // 0a2: goto 0a9
+      // 0a5: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0a8: athrow
+      // 0a9: bipush -1
+      // 0aa: ireturn
+      // 0ab: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0ae: athrow
+      // 0af: aload 0
+      // 0b0: getfield com/Ph_2.p I
+      // 0b3: iload 2
+      // 0b4: ifne 0d6
+      // 0b7: aload 1
+      // 0b8: getfield com/Ph_2.p I
+      // 0bb: goto 0c2
+      // 0be: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0c1: athrow
+      // 0c2: if_icmple 0cb
+      // 0c5: bipush 1
+      // 0c6: ireturn
+      // 0c7: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0ca: athrow
+      // 0cb: aload 0
+      // 0cc: getfield com/Ph_2.I Ljava/lang/String;
+      // 0cf: aload 1
+      // 0d0: getfield com/Ph_2.I Ljava/lang/String;
+      // 0d3: invokevirtual java/lang/String.compareTo (Ljava/lang/String;)I
+      // 0d6: istore 3
+      // 0d7: iload 3
+      // 0d8: iload 2
+      // 0d9: ifne 0e7
+      // 0dc: ifeq 0e8
+      // 0df: goto 0e6
+      // 0e2: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0e5: athrow
+      // 0e6: iload 3
+      // 0e7: ireturn
+      // 0e8: aload 0
+      // 0e9: invokevirtual com/Ph_2.W ()Ljava/lang/Class;
+      // 0ec: astore 4
+      // 0ee: aload 1
+      // 0ef: invokevirtual com/Ph_2.W ()Ljava/lang/Class;
+      // 0f2: astore 5
+      // 0f4: aload 4
+      // 0f6: iload 2
+      // 0f7: ifne 106
+      // 0fa: ifnull 15f
+      // 0fd: goto 104
+      // 100: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 103: athrow
+      // 104: aload 5
+      // 106: iload 2
+      // 107: ifne 116
+      // 10a: ifnull 15f
+      // 10d: goto 114
+      // 110: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 113: athrow
+      // 114: aload 4
+      // 116: aload 5
+      // 118: iload 2
+      // 119: ifne 131
+      // 11c: if_acmpeq 15f
+      // 11f: goto 126
+      // 122: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 125: athrow
+      // 126: aload 4
+      // 128: aload 5
+      // 12a: goto 131
+      // 12d: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 130: athrow
+      // 131: invokevirtual java/lang/Class.isAssignableFrom (Ljava/lang/Class;)Z
+      // 134: iload 2
+      // 135: ifne 14f
+      // 138: ifeq 148
+      // 13b: goto 142
+      // 13e: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 141: athrow
+      // 142: bipush -1
+      // 143: ireturn
+      // 144: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 147: athrow
+      // 148: aload 5
+      // 14a: aload 4
+      // 14c: invokevirtual java/lang/Class.isAssignableFrom (Ljava/lang/Class;)Z
+      // 14f: iload 2
+      // 150: ifne 15e
+      // 153: ifeq 15f
+      // 156: goto 15d
+      // 159: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15c: athrow
+      // 15d: bipush 1
+      // 15e: ireturn
+      // 15f: aload 0
+      // 160: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 163: iload 2
+      // 164: ifne 17c
+      // 167: ifnull 18e
+      // 16a: goto 171
+      // 16d: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 170: athrow
+      // 171: aload 0
+      // 172: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 175: goto 17c
+      // 178: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 17b: athrow
+      // 17c: invokevirtual java/lang/reflect/Field.getType ()Ljava/lang/Class;
+      // 17f: aload 0
+      // 180: getfield com/Ph_2.O Ljava/lang/Class;
+      // 183: if_acmpne 18e
+      // 186: bipush 1
+      // 187: goto 18f
+      // 18a: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 18d: athrow
+      // 18e: bipush 0
+      // 18f: istore 6
+      // 191: aload 1
+      // 192: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 195: iload 2
+      // 196: ifne 1ae
+      // 199: ifnull 1c0
+      // 19c: goto 1a3
+      // 19f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1a2: athrow
+      // 1a3: aload 1
+      // 1a4: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 1a7: goto 1ae
+      // 1aa: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1ad: athrow
+      // 1ae: invokevirtual java/lang/reflect/Field.getType ()Ljava/lang/Class;
+      // 1b1: aload 1
+      // 1b2: getfield com/Ph_2.O Ljava/lang/Class;
+      // 1b5: if_acmpne 1c0
+      // 1b8: bipush 1
+      // 1b9: goto 1c1
+      // 1bc: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1bf: athrow
+      // 1c0: bipush 0
+      // 1c1: istore 7
+      // 1c3: iload 6
+      // 1c5: iload 2
+      // 1c6: ifne 1f2
+      // 1c9: ifeq 1f0
+      // 1cc: goto 1d3
+      // 1cf: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1d2: athrow
+      // 1d3: iload 7
+      // 1d5: iload 2
+      // 1d6: ifne 1f2
+      // 1d9: goto 1e0
+      // 1dc: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1df: athrow
+      // 1e0: ifne 1f0
+      // 1e3: goto 1ea
+      // 1e6: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1e9: athrow
+      // 1ea: bipush 1
+      // 1eb: ireturn
+      // 1ec: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1ef: athrow
+      // 1f0: iload 7
+      // 1f2: iload 2
+      // 1f3: ifne 224
+      // 1f6: ifeq 21d
+      // 1f9: goto 200
+      // 1fc: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1ff: athrow
+      // 200: iload 6
+      // 202: iload 2
+      // 203: ifne 224
+      // 206: goto 20d
+      // 209: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 20c: athrow
+      // 20d: ifne 21d
+      // 210: goto 217
+      // 213: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 216: athrow
+      // 217: bipush -1
+      // 218: ireturn
+      // 219: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 21c: athrow
+      // 21d: aload 1
+      // 21e: getfield com/Ph_2.O Ljava/lang/Class;
+      // 221: invokevirtual java/lang/Class.isPrimitive ()Z
+      // 224: iload 2
+      // 225: ifne 25b
+      // 228: ifeq 254
+      // 22b: goto 232
+      // 22e: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 231: athrow
+      // 232: aload 0
+      // 233: getfield com/Ph_2.O Ljava/lang/Class;
+      // 236: invokevirtual java/lang/Class.isPrimitive ()Z
+      // 239: iload 2
+      // 23a: ifne 25b
+      // 23d: goto 244
+      // 240: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 243: athrow
+      // 244: ifne 254
+      // 247: goto 24e
+      // 24a: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 24d: athrow
+      // 24e: bipush 1
+      // 24f: ireturn
+      // 250: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 253: athrow
+      // 254: aload 0
+      // 255: getfield com/Ph_2.O Ljava/lang/Class;
+      // 258: invokevirtual java/lang/Class.isPrimitive ()Z
+      // 25b: iload 2
+      // 25c: ifne 29e
+      // 25f: ifeq 28b
+      // 262: goto 269
+      // 265: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 268: athrow
+      // 269: aload 1
+      // 26a: getfield com/Ph_2.O Ljava/lang/Class;
+      // 26d: invokevirtual java/lang/Class.isPrimitive ()Z
+      // 270: iload 2
+      // 271: ifne 29e
+      // 274: goto 27b
+      // 277: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 27a: athrow
+      // 27b: ifne 28b
+      // 27e: goto 285
+      // 281: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 284: athrow
+      // 285: bipush -1
+      // 286: ireturn
+      // 287: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 28a: athrow
+      // 28b: aload 1
+      // 28c: getfield com/Ph_2.O Ljava/lang/Class;
+      // 28f: invokevirtual java/lang/Class.getName ()Ljava/lang/String;
+      // 292: sipush -12314
+      // 295: sipush 4452
+      // 298: invokestatic com/Ph_2.a (II)Ljava/lang/String;
+      // 29b: invokevirtual java/lang/String.startsWith (Ljava/lang/String;)Z
+      // 29e: iload 2
+      // 29f: ifne 2ed
+      // 2a2: ifeq 2da
+      // 2a5: goto 2ac
+      // 2a8: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2ab: athrow
+      // 2ac: aload 0
+      // 2ad: getfield com/Ph_2.O Ljava/lang/Class;
+      // 2b0: invokevirtual java/lang/Class.getName ()Ljava/lang/String;
+      // 2b3: sipush -12313
+      // 2b6: sipush 2000
+      // 2b9: invokestatic com/Ph_2.a (II)Ljava/lang/String;
+      // 2bc: invokevirtual java/lang/String.startsWith (Ljava/lang/String;)Z
+      // 2bf: iload 2
+      // 2c0: ifne 2ed
+      // 2c3: goto 2ca
+      // 2c6: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2c9: athrow
+      // 2ca: ifne 2da
+      // 2cd: goto 2d4
+      // 2d0: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2d3: athrow
+      // 2d4: bipush 1
+      // 2d5: ireturn
+      // 2d6: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2d9: athrow
+      // 2da: aload 0
+      // 2db: getfield com/Ph_2.O Ljava/lang/Class;
+      // 2de: invokevirtual java/lang/Class.getName ()Ljava/lang/String;
+      // 2e1: sipush -12313
+      // 2e4: sipush 2000
+      // 2e7: invokestatic com/Ph_2.a (II)Ljava/lang/String;
+      // 2ea: invokevirtual java/lang/String.startsWith (Ljava/lang/String;)Z
+      // 2ed: iload 2
+      // 2ee: ifne 33a
+      // 2f1: ifeq 329
+      // 2f4: goto 2fb
+      // 2f7: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2fa: athrow
+      // 2fb: aload 1
+      // 2fc: getfield com/Ph_2.O Ljava/lang/Class;
+      // 2ff: invokevirtual java/lang/Class.getName ()Ljava/lang/String;
+      // 302: sipush -12313
+      // 305: sipush 2000
+      // 308: invokestatic com/Ph_2.a (II)Ljava/lang/String;
+      // 30b: invokevirtual java/lang/String.startsWith (Ljava/lang/String;)Z
+      // 30e: iload 2
+      // 30f: ifne 33a
+      // 312: goto 319
+      // 315: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 318: athrow
+      // 319: ifne 329
+      // 31c: goto 323
+      // 31f: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 322: athrow
+      // 323: bipush -1
+      // 324: ireturn
+      // 325: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 328: athrow
+      // 329: aload 0
+      // 32a: getfield com/Ph_2.O Ljava/lang/Class;
+      // 32d: invokevirtual java/lang/Class.getName ()Ljava/lang/String;
+      // 330: aload 1
+      // 331: getfield com/Ph_2.O Ljava/lang/Class;
+      // 334: invokevirtual java/lang/Class.getName ()Ljava/lang/String;
+      // 337: invokevirtual java/lang/String.compareTo (Ljava/lang/String;)I
+      // 33a: ireturn
+   }
+
+   public E6 Z() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Ph_2.w ()I
+      // 03: istore 1
+      // 04: aload 0
+      // 05: getfield com/Ph_2.F Lcom/E6;
+      // 08: iload 1
+      // 09: ifeq 23
+      // 0c: ifnull 1f
+      // 0f: goto 16
+      // 12: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15: athrow
+      // 16: aload 0
+      // 17: getfield com/Ph_2.F Lcom/E6;
+      // 1a: areturn
+      // 1b: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1e: athrow
+      // 1f: aload 0
+      // 20: getfield com/Ph_2.A Lcom/E6;
+      // 23: areturn
+   }
+
+   public String G() {
+      return this.J;
+   }
+
+   public Object e(Object param1) throws IllegalAccessException, InvocationTargetException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Ph_2.w ()I
+      // 03: istore 2
+      // 04: aload 0
+      // 05: iload 2
+      // 06: ifeq 2a
+      // 09: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 0c: ifnull 29
+      // 0f: goto 16
+      // 12: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15: athrow
+      // 16: aload 0
+      // 17: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 1a: aload 1
+      // 1b: bipush 0
+      // 1c: anewarray 4
+      // 1f: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 22: goto 31
+      // 25: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 28: athrow
+      // 29: aload 0
+      // 2a: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 2d: aload 1
+      // 2e: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 31: areturn
+   }
+
+   public void K(Object param1, Object param2) throws IllegalAccessException, InvocationTargetException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Ph_2.w ()I
+      // 03: istore 3
+      // 04: aload 0
+      // 05: iload 3
+      // 06: ifeq 2d
+      // 09: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 0c: ifnull 2c
+      // 0f: goto 16
+      // 12: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15: athrow
+      // 16: aload 0
+      // 17: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 1a: aload 1
+      // 1b: bipush 1
+      // 1c: anewarray 4
+      // 1f: dup
+      // 20: bipush 0
+      // 21: aload 2
+      // 22: aastore
+      // 23: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 26: pop
+      // 27: return
+      // 28: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2b: athrow
+      // 2c: aload 0
+      // 2d: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 30: aload 1
+      // 31: aload 2
+      // 32: invokevirtual java/lang/reflect/Field.set (Ljava/lang/Object;Ljava/lang/Object;)V
+      // 35: return
+   }
+
+   public void L() throws SecurityException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Ph_2.w ()I
+      // 03: istore 1
+      // 04: aload 0
+      // 05: iload 1
+      // 06: ifeq 23
+      // 09: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 0c: ifnull 22
+      // 0f: goto 16
+      // 12: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15: athrow
+      // 16: aload 0
+      // 17: getfield com/Ph_2.Y Ljava/lang/reflect/Method;
+      // 1a: invokestatic com/B8.P (Ljava/lang/reflect/AccessibleObject;)V
+      // 1d: return
+      // 1e: invokestatic com/Ph_2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 21: athrow
+      // 22: aload 0
+      // 23: getfield com/Ph_2.w Ljava/lang/reflect/Field;
+      // 26: invokestatic com/B8.P (Ljava/lang/reflect/AccessibleObject;)V
+      // 29: return
+   }
+
+   @Override
+   public int compareTo(Object var1) {
+      return this.M((Ph_2)var1);
+   }
+
+   public static void S(int var0) {
+      z = var0;
+   }
+
+   public static int w() {
+      return z;
+   }
+
+   public static int u() {
+      int var0 = w();
+
+      try {
+         return var0 == 0 ? 50 : 0;
+      } catch (SecurityException var1) {
+         throw a(var1);
+      }
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var13 = new String[2];
+      int var11 = 0;
+      S(90);
+      String var10 = "Ü©¬\u0097ô\u0005¼7 Du";
+      int var12 = "Ü©¬\u0097ô\u0005¼7 Du".length();
+      char var9 = 5;
+      int var8 = -1;
+
+      while (true) {
+         char[] var10002;
+         label47: {
+            char[] var10003 = var10.substring(++var8, var8 + var9).toCharArray();
+            int var10004 = var10003.length;
+            int var14 = 0;
+            byte var23 = 49;
+            var10002 = var10003;
+            int var16 = var10004;
+            byte var27;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var27 = 49;
+               var10006 = var14;
+            } else {
+               var23 = 49;
+               var16 = var10004;
+               if (var10004 <= var14) {
+                  break label47;
+               }
+
+               var10005 = var10003;
+               var27 = 49;
+               var10006 = var14;
             }
-            catch (hf_0 hf_02) {
-                throw ph_2.a(hf_02);
+
+            while (true) {
+               char var40 = var10005[var10006];
+               byte var41;
+               switch (var14 % 7) {
+                  case 0:
+                     var41 = 42;
+                     break;
+                  case 1:
+                     var41 = 29;
+                     break;
+                  case 2:
+                     var41 = 52;
+                     break;
+                  case 3:
+                     var41 = 58;
+                     break;
+                  case 4:
+                     var41 = 102;
+                     break;
+                  case 5:
+                     var41 = 32;
+                     break;
+                  default:
+                     var41 = 116;
+               }
+
+               var10005[var10006] = (char)(var40 ^ var27 ^ var41);
+               var14++;
+               if (var23 == 0) {
+                  var10006 = var23;
+                  var10005 = var10002;
+                  var27 = var23;
+               } else {
+                  if (var16 <= var14) {
+                     break;
+                  }
+
+                  var10005 = var10002;
+                  var27 = var23;
+                  var10006 = var14;
+               }
             }
-            string2 = string;
-        }
-        try {
-            if (string2.length() == 0) {
-                throw new hf_0(ph_2.a(2743, -17262));
-            }
-        }
-        catch (hf_0 hf_03) {
-            throw ph_2.a(hf_03);
-        }
-        this.V = string;
-        this.F = en_02;
-        this.w = iG;
-        this.T = bl;
-    }
+         }
 
-    protected void x() {
-        block6: {
-            block5: {
-                String string = hi_0.C();
-                try {
-                    if (this.K != null) {
-                        return;
-                    }
-                }
-                catch (hf_0 hf_02) {
-                    throw ph_2.a(hf_02);
-                }
-                try {
-                    if (!"*".equals(this.V)) break block5;
-                    this.K = new a0[]{_o_0.O};
-                    if (string == null) break block6;
-                }
-                catch (hf_0 hf_03) {
-                    throw ph_2.a(hf_03);
-                }
-            }
-            S9 s9 = new S9(this.V);
-            this.K = s9.S();
-            this.i = S9.Y(s9);
-        }
-    }
+         String var25 = new String(var10002).intern();
+         int var18 = -1;
+         var13[var11++] = var25;
+         if ((var8 += var9) >= var12) {
+            d = var13;
+            e = new String[2];
+            long var0 = 6093904486419795693L;
+            long[] var6 = new long[3];
+            int var3 = 0;
+            String var4 = "\u0083Õ®Ñj' Ùâ¡úë¶\u0091)ér&\u000eìÖ\u009d}Ã";
+            int var5 = "\u0083Õ®Ñj' Ùâ¡úë¶\u0091)ér&\u000eìÖ\u009d}Ã".length();
+            byte var2 = 0;
 
-    /*
-     * Loose catch block
-     */
-    public boolean X() {
-        String string = hi_0.C();
-        try {
-            this.x();
-            int n10 = 0;
-            while (n10 < this.K.length) {
-                block11: {
-                    block10: {
-                        block9: {
-                            Class<?> clazz;
-                            block12: {
-                                a0 a02 = this.K[n10];
-                                clazz = a02.getClass();
-                                if (string != null) break block11;
-                                if (clazz == DX.class) break block10;
-                                break block12;
-                                catch (hf_0 hf_02) {
-                                    throw ph_2.a(hf_02);
-                                }
-                            }
-                            try {
-                                block13: {
-                                    if (clazz != W3.class) break block9;
-                                    break block13;
-                                    catch (hf_0 hf_03) {
-                                        throw ph_2.a(hf_03);
-                                    }
-                                }
-                                if (string == null) break block10;
-                            }
-                            catch (hf_0 hf_04) {
-                                throw ph_2.a(hf_04);
-                            }
-                        }
-                        return false;
-                    }
-                    ++n10;
-                }
-                if (string == null) continue;
-            }
-            return true;
-        }
-        catch (hf_0 hf_05) {
-            return false;
-        }
-    }
+            do {
+               var18 = var2;
+               var2 += 8;
+               byte[] var7 = var4.substring(var18, var2).getBytes("ISO-8859-1");
+               var18 = var3++;
+               long var31 = (
+                     ((long)var7[0] & 255L) << 56
+                        | ((long)var7[1] & 255L) << 48
+                        | ((long)var7[2] & 255L) << 40
+                        | ((long)var7[3] & 255L) << 32
+                        | ((long)var7[4] & 255L) << 24
+                        | ((long)var7[5] & 255L) << 16
+                        | ((long)var7[6] & 255L) << 8
+                        | (long)var7[7] & 255L
+                  )
+                  ^ var0;
+               byte var26 = -1;
+               var6[var18] = var31;
+            } while (var2 < var5);
 
-    public Object S(Object object) {
-        Object object2;
-        block8: {
-            Object object3;
-            String string;
-            block6: {
-                block7: {
-                    string = hi_0.C();
-                    try {
-                        try {
-                            object3 = object;
-                            if (string != null) break block6;
-                            if (object3 != null) break block7;
-                        }
-                        catch (hf_0 hf_02) {
-                            throw ph_2.a(hf_02);
-                        }
-                        return null;
-                    }
-                    catch (hf_0 hf_03) {
-                        throw ph_2.a(hf_03);
-                    }
-                }
-                this.x();
-                object3 = object;
-            }
-            Object object4 = object3;
-            for (int i2 = 0; i2 < this.K.length; ++i2) {
-                a0 a02 = this.K[i2];
-                object2 = a02.Y(this, object, object4);
-                if (string == null) {
-                    object4 = object2;
-                    if (string == null) continue;
-                }
-                break block8;
-            }
-            object2 = object4;
-        }
-        return object2;
-    }
-
-    public Object L(Object object, Type type, IG iG) {
-        Object object2 = this.S(object);
-        return B8.I(object2, type, iG);
-    }
-
-    public Object F(Object object, Type type) {
-        return this.L(object, type, IG.G());
-    }
-
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    public Object e(yn_2 var1_1) {
-        block110: {
-            block109: {
-                block107: {
-                    block106: {
-                        block104: {
-                            block105: {
-                                block102: {
-                                    block103: {
-                                        var2_2 = hi_0.C();
-                                        try {
-                                            try {
-                                                if (var2_2 != null) break block102;
-                                                if (var1_1 != null) break block103;
-                                            }
-                                            catch (hf_0 v0) {
-                                                throw ph_2.a(v0);
-                                            }
-                                            return null;
-                                        }
-                                        catch (hf_0 v1) {
-                                            throw ph_2.a(v1);
-                                        }
-                                    }
-                                    this.x();
-                                }
-                                try {
-                                    v2 = this.i;
-                                    if (var2_2 != null) break block104;
-                                    if (v2 == 0) break block105;
-                                }
-                                catch (hf_0 v3) {
-                                    throw ph_2.a(v3);
-                                }
-                                var3_3 = var1_1.M();
-                                return this.S(var3_3);
-                            }
-                            try {
-                                v4 = this.K;
-                                if (var2_2 != null) break block106;
-                                v2 = v4.length;
-                            }
-                            catch (hf_0 v5) {
-                                throw ph_2.a(v5);
-                            }
-                        }
-                        try {
-                            if (v2 == 0) {
-                                return var1_1.M();
-                            }
-                        }
-                        catch (hf_0 v6) {
-                            throw ph_2.a(v6);
-                        }
-                        v4 = this.K;
-                    }
-                    var3_4 = v4[this.K.length - 1];
-                    try {
-                        block108: {
-                            try {
-                                try {
-                                    try {
-                                        try {
-                                            try {
-                                                v7 = var3_4;
-                                                if (var2_2 != null) break block107;
-                                                if (v7 instanceof fn_0) break block108;
-                                            }
-                                            catch (hf_0 v8) {
-                                                throw ph_2.a(v8);
-                                            }
-                                            v7 = var3_4;
-                                            if (var2_2 != null) break block107;
-                                        }
-                                        catch (hf_0 v9) {
-                                            throw ph_2.a(v9);
-                                        }
-                                        if (v7 instanceof zC) break block108;
-                                    }
-                                    catch (hf_0 v10) {
-                                        throw ph_2.a(v10);
-                                    }
-                                    v7 = var3_4;
-                                    if (var2_2 != null) break block107;
-                                }
-                                catch (hf_0 v11) {
-                                    throw ph_2.a(v11);
-                                }
-                                if (!(v7 instanceof ad_0)) break block109;
-                            }
-                            catch (hf_0 v12) {
-                                throw ph_2.a(v12);
-                            }
-                        }
-                        v7 = this.S(var1_1.M());
-                    }
-                    catch (hf_0 v13) {
-                        throw ph_2.a(v13);
-                    }
-                }
-                return v7;
-            }
-            var4_5 = null;
-            for (var5_6 = 0; var5_6 < this.K.length; ++var5_6) {
-                block124: {
-                    block115: {
-                        block119: {
-                            block123: {
-                                block122: {
-                                    block121: {
-                                        block120: {
-                                            block116: {
-                                                block117: {
-                                                    block118: {
-                                                        block114: {
-                                                            block113: {
-                                                                block111: {
-                                                                    block112: {
-                                                                        v14 = this.K[var5_6];
-                                                                        if (var2_2 != null) break block110;
-                                                                        var6_7 = v14;
-                                                                        try {
-                                                                            try {
-                                                                                v15 = var5_6;
-                                                                                if (var2_2 != null) break block111;
-                                                                                if (v15 != this.K.length - 1) break block112;
-                                                                            }
-                                                                            catch (hf_0 v16) {
-                                                                                throw ph_2.a(v16);
-                                                                            }
-                                                                            v15 = 1;
-                                                                            break block111;
-                                                                        }
-                                                                        catch (hf_0 v17) {
-                                                                            throw ph_2.a(v17);
-                                                                        }
-                                                                    }
-                                                                    v15 = 0;
-                                                                }
-                                                                var7_8 = v15;
-                                                                try {
-                                                                    try {
-                                                                        try {
-                                                                            v18 = var4_5;
-                                                                            if (var2_2 != null) break block113;
-                                                                            if (v18 != null) {
-                                                                            }
-                                                                            ** GOTO lbl128
-                                                                        }
-                                                                        catch (hf_0 v19) {
-                                                                            throw ph_2.a(v19);
-                                                                        }
-                                                                        v20 = var4_5;
-                                                                        if (var2_2 != null) break block114;
-                                                                    }
-                                                                    catch (hf_0 v21) {
-                                                                        throw ph_2.a(v21);
-                                                                    }
-                                                                    v18 = v20.t;
-                                                                }
-                                                                catch (hf_0 v22) {
-                                                                    throw ph_2.a(v22);
-                                                                }
-                                                            }
-                                                            if (v18 == null) ** GOTO lbl128
-                                                            v20 = var4_5;
-                                                        }
-                                                        try {
-                                                            try {
-                                                                v20.t = var6_7.Y(this, null, var4_5.t);
-                                                                if (var2_2 == null) continue;
-lbl128:
-                                                                // 3 sources
-
-                                                                v23 = var7_8;
-                                                                if (var2_2 != null) break block115;
-                                                            }
-                                                            catch (hf_0 v24) {
-                                                                throw ph_2.a(v24);
-                                                            }
-                                                            if (v23 == 0) {
-                                                            }
-                                                            ** GOTO lbl313
-                                                        }
-                                                        catch (hf_0 v25) {
-                                                            throw ph_2.a(v25);
-                                                        }
-                                                        var9_10 = this.K[var5_6 + 1];
-                                                        try {
-                                                            try {
-                                                                try {
-                                                                    try {
-                                                                        try {
-                                                                            try {
-                                                                                try {
-                                                                                    try {
-                                                                                        try {
-                                                                                            try {
-                                                                                                try {
-                                                                                                    try {
-                                                                                                        try {
-                                                                                                            try {
-                                                                                                                try {
-                                                                                                                    v26 = var6_7 instanceof W3;
-                                                                                                                    if (var2_2 != null) break block116;
-                                                                                                                    if (v26 != 0) {
-                                                                                                                    }
-                                                                                                                    ** GOTO lbl232
-                                                                                                                }
-                                                                                                                catch (hf_0 v27) {
-                                                                                                                    throw ph_2.a(v27);
-                                                                                                                }
-                                                                                                                v26 = W3.Z((W3)var6_7);
-                                                                                                                if (var2_2 != null) break block116;
-                                                                                                            }
-                                                                                                            catch (hf_0 v28) {
-                                                                                                                throw ph_2.a(v28);
-                                                                                                            }
-                                                                                                            if (v26 != 0) {
-                                                                                                            }
-                                                                                                            ** GOTO lbl232
-                                                                                                        }
-                                                                                                        catch (hf_0 v29) {
-                                                                                                            throw ph_2.a(v29);
-                                                                                                        }
-                                                                                                        v30 = var9_10 instanceof DX;
-                                                                                                        if (var2_2 != null) break block117;
-                                                                                                    }
-                                                                                                    catch (hf_0 v31) {
-                                                                                                        throw ph_2.a(v31);
-                                                                                                    }
-                                                                                                    if (v30 != 0) break block118;
-                                                                                                }
-                                                                                                catch (hf_0 v32) {
-                                                                                                    throw ph_2.a(v32);
-                                                                                                }
-                                                                                                v30 = var9_10 instanceof ad_0;
-                                                                                                if (var2_2 != null) break block117;
-                                                                                            }
-                                                                                            catch (hf_0 v33) {
-                                                                                                throw ph_2.a(v33);
-                                                                                            }
-                                                                                            if (v30 != 0) break block118;
-                                                                                        }
-                                                                                        catch (hf_0 v34) {
-                                                                                            throw ph_2.a(v34);
-                                                                                        }
-                                                                                        v30 = var9_10 instanceof nz_2;
-                                                                                        if (var2_2 != null) break block117;
-                                                                                    }
-                                                                                    catch (hf_0 v35) {
-                                                                                        throw ph_2.a(v35);
-                                                                                    }
-                                                                                    if (v30 != 0) break block118;
-                                                                                }
-                                                                                catch (hf_0 v36) {
-                                                                                    throw ph_2.a(v36);
-                                                                                }
-                                                                                v30 = var9_10 instanceof H5;
-                                                                                if (var2_2 != null) break block117;
-                                                                            }
-                                                                            catch (hf_0 v37) {
-                                                                                throw ph_2.a(v37);
-                                                                            }
-                                                                            if (v30 != 0) break block118;
-                                                                        }
-                                                                        catch (hf_0 v38) {
-                                                                            throw ph_2.a(v38);
-                                                                        }
-                                                                        v30 = var9_10 instanceof W3;
-                                                                        if (var2_2 != null) break block117;
-                                                                    }
-                                                                    catch (hf_0 v39) {
-                                                                        throw ph_2.a(v39);
-                                                                    }
-                                                                    if (v30 != 0) break block118;
-                                                                }
-                                                                catch (hf_0 v40) {
-                                                                    throw ph_2.a(v40);
-                                                                }
-                                                                v26 = var9_10 instanceof LQ;
-                                                                if (var2_2 != null) break block116;
-                                                            }
-                                                            catch (hf_0 v41) {
-                                                                throw ph_2.a(v41);
-                                                            }
-                                                            if (v26 != 0) {
-                                                            }
-                                                            ** GOTO lbl232
-                                                        }
-                                                        catch (hf_0 v42) {
-                                                            throw ph_2.a(v42);
-                                                        }
-                                                    }
-                                                    v30 = 1;
-                                                }
-                                                var8_9 = v30;
-                                                try {
-                                                    if (var2_2 == null) break block119;
-lbl232:
-                                                    // 4 sources
-
-                                                    v26 = var9_10 instanceof DX;
-                                                }
-                                                catch (hf_0 v43) {
-                                                    throw ph_2.a(v43);
-                                                }
-                                            }
-                                            try {
-                                                try {
-                                                    try {
-                                                        if (var2_2 != null) break block120;
-                                                        if (v26 != 0) {
-                                                        }
-                                                        ** GOTO lbl259
-                                                    }
-                                                    catch (hf_0 v44) {
-                                                        throw ph_2.a(v44);
-                                                    }
-                                                    v26 = DX.n((DX)var9_10);
-                                                    if (var2_2 != null) break block120;
-                                                }
-                                                catch (hf_0 v45) {
-                                                    throw ph_2.a(v45);
-                                                }
-                                                if (v26 < 0) {
-                                                }
-                                                ** GOTO lbl259
-                                            }
-                                            catch (hf_0 v46) {
-                                                throw ph_2.a(v46);
-                                            }
-                                            var8_9 = 1;
-                                            try {
-                                                if (var2_2 == null) break block119;
-lbl259:
-                                                // 3 sources
-
-                                                v26 = var9_10 instanceof LQ;
-                                            }
-                                            catch (hf_0 v47) {
-                                                throw ph_2.a(v47);
-                                            }
-                                        }
-                                        try {
-                                            if (var2_2 != null) break block121;
-                                            if (v26 != 0) {
-                                            }
-                                            ** GOTO lbl274
-                                        }
-                                        catch (hf_0 v48) {
-                                            throw ph_2.a(v48);
-                                        }
-                                        var8_9 = 1;
-                                        try {
-                                            if (var2_2 == null) break block119;
-lbl274:
-                                            // 2 sources
-
-                                            v26 = var6_7 instanceof _o_0;
-                                        }
-                                        catch (hf_0 v49) {
-                                            throw ph_2.a(v49);
-                                        }
-                                    }
-                                    try {
-                                        if (var2_2 != null) break block122;
-                                        if (v26 != 0) {
-                                        }
-                                        ** GOTO lbl289
-                                    }
-                                    catch (hf_0 v50) {
-                                        throw ph_2.a(v50);
-                                    }
-                                    var8_9 = 1;
-                                    try {
-                                        if (var2_2 == null) break block119;
-lbl289:
-                                        // 2 sources
-
-                                        v26 = var6_7 instanceof ad_0;
-                                    }
-                                    catch (hf_0 v51) {
-                                        throw ph_2.a(v51);
-                                    }
-                                }
-                                try {
-                                    if (var2_2 != null) break block123;
-                                    if (v26 != 0) {
-                                    }
-                                    ** GOTO lbl304
-                                }
-                                catch (hf_0 v52) {
-                                    throw ph_2.a(v52);
-                                }
-                                var8_9 = 1;
-                                try {
-                                    if (var2_2 == null) break block119;
-lbl304:
-                                    // 2 sources
-
-                                    v26 = 0;
-                                }
-                                catch (hf_0 v53) {
-                                    throw ph_2.a(v53);
-                                }
-                            }
-                            var8_9 = v26;
-                        }
-                        try {
-                            if (var2_2 == null) break block124;
-lbl313:
-                            // 2 sources
-
-                            v23 = 1;
-                        }
-                        catch (hf_0 v54) {
-                            throw ph_2.a(v54);
-                        }
-                    }
-                    var8_9 = v23;
-                }
-                var4_5 = new KE((KE)var4_5, (boolean)var8_9);
-                var6_7.Z(this, var1_1, (KE)var4_5);
-                if (var2_2 == null) continue;
-            }
-            v14 = var4_5.t;
-        }
-        return v14;
-    }
-
-    public boolean V(Object object) {
-        Object object2;
-        String string;
-        block17: {
-            block18: {
-                string = hi_0.C();
-                try {
-                    try {
-                        object2 = object;
-                        if (string != null) break block17;
-                        if (object2 != null) break block18;
-                    }
-                    catch (hf_0 hf_02) {
-                        throw ph_2.a(hf_02);
-                    }
-                    return false;
-                }
-                catch (hf_0 hf_03) {
-                    throw ph_2.a(hf_03);
-                }
-            }
-            this.x();
-            object2 = object;
-        }
-        Object object3 = object2;
-        for (int i2 = 0; i2 < this.K.length; ++i2) {
-            boolean bl;
-            block22: {
-                Object object4;
-                Object object5;
-                block21: {
-                    block19: {
-                        block20: {
-                            object5 = object3;
-                            object3 = this.K[i2].Y(this, object, object3);
-                            try {
-                                try {
-                                    object4 = object3;
-                                    if (string != null) break block19;
-                                    if (object4 != null) break block20;
-                                }
-                                catch (hf_0 hf_04) {
-                                    throw ph_2.a(hf_04);
-                                }
-                                return false;
-                            }
-                            catch (hf_0 hf_05) {
-                                throw ph_2.a(hf_05);
-                            }
-                        }
-                        object4 = object3;
-                    }
-                    try {
-                        try {
-                            if (string != null) break block21;
-                            if (object4 != Collections.EMPTY_LIST) continue;
-                        }
-                        catch (hf_0 hf_06) {
-                            throw ph_2.a(hf_06);
-                        }
-                        object4 = object5;
-                    }
-                    catch (hf_0 hf_07) {
-                        throw ph_2.a(hf_07);
-                    }
-                }
-                try {
-                    try {
-                        bl = object4 instanceof List;
-                        if (string != null) break block22;
-                        if (!bl) continue;
-                    }
-                    catch (hf_0 hf_08) {
-                        throw ph_2.a(hf_08);
-                    }
-                    bl = ((List)object5).contains(object3);
-                }
-                catch (hf_0 hf_09) {
-                    throw ph_2.a(hf_09);
-                }
-            }
-            return bl;
-        }
-        return true;
-    }
-
-    public boolean D(Object object, Object object2) {
-        boolean bl;
-        block19: {
-            Object object3;
-            block20: {
-                boolean bl2;
-                block21: {
-                    Object object4;
-                    String string;
-                    block17: {
-                        block18: {
-                            block15: {
-                                block16: {
-                                    object3 = this.S(object);
-                                    string = hi_0.C();
-                                    try {
-                                        try {
-                                            object4 = object3;
-                                            if (string != null) break block15;
-                                            if (object4 != object2) break block16;
-                                        }
-                                        catch (hf_0 hf_02) {
-                                            throw ph_2.a(hf_02);
-                                        }
-                                        return true;
-                                    }
-                                    catch (hf_0 hf_03) {
-                                        throw ph_2.a(hf_03);
-                                    }
-                                }
-                                object4 = object3;
-                            }
-                            try {
-                                try {
-                                    if (string != null) break block17;
-                                    if (object4 != null) break block18;
-                                }
-                                catch (hf_0 hf_04) {
-                                    throw ph_2.a(hf_04);
-                                }
-                                return false;
-                            }
-                            catch (hf_0 hf_05) {
-                                throw ph_2.a(hf_05);
-                            }
-                        }
-                        object4 = object3;
-                    }
-                    try {
-                        bl = object4 instanceof Iterable;
-                        if (string != null) break block19;
-                        if (!bl) break block20;
-                    }
-                    catch (hf_0 hf_06) {
-                        throw ph_2.a(hf_06);
-                    }
-                    for (Object t2 : (Iterable)object3) {
-                        block23: {
-                            boolean bl3;
-                            block22: {
-                                try {
-                                    try {
-                                        bl2 = ph_2.m(t2, object2);
-                                        if (string != null) break block21;
-                                        if (string != null) break block22;
-                                    }
-                                    catch (hf_0 hf_07) {
-                                        throw ph_2.a(hf_07);
-                                    }
-                                    if (!bl2) break block23;
-                                }
-                                catch (hf_0 hf_08) {
-                                    throw ph_2.a(hf_08);
-                                }
-                                bl3 = true;
-                            }
-                            return bl3;
-                        }
-                        if (string == null) continue;
-                    }
-                    bl2 = false;
-                }
-                return bl2;
-            }
-            bl = ph_2.m(object3, object2);
-        }
-        return bl;
-    }
-
-    public int j(Object object) {
-        ph_2 ph_22;
-        Object object2;
-        block8: {
-            Object object3;
-            String string;
-            block6: {
-                block7: {
-                    string = hi_0.C();
-                    try {
-                        try {
-                            object3 = object;
-                            if (string != null) break block6;
-                            if (object3 != null) break block7;
-                        }
-                        catch (hf_0 hf_02) {
-                            throw ph_2.a(hf_02);
-                        }
-                        return -1;
-                    }
-                    catch (hf_0 hf_03) {
-                        throw ph_2.a(hf_03);
-                    }
-                }
-                this.x();
-                object3 = object;
-            }
-            object2 = object3;
-            for (int i2 = 0; i2 < this.K.length; ++i2) {
-                ph_22 = this;
-                if (string == null) {
-                    object2 = ph_22.K[i2].Y(this, object, object2);
-                    if (string == null) continue;
-                }
-                break block8;
-            }
-            ph_22 = this;
-        }
-        return ph_22.T(object2);
-    }
-
-    public Set u(Object object) {
-        ph_2 ph_22;
-        Object object2;
-        block8: {
-            Object object3;
-            String string;
-            block6: {
-                block7: {
-                    string = hi_0.C();
-                    try {
-                        try {
-                            object3 = object;
-                            if (string != null) break block6;
-                            if (object3 != null) break block7;
-                        }
-                        catch (hf_0 hf_02) {
-                            throw ph_2.a(hf_02);
-                        }
-                        return null;
-                    }
-                    catch (hf_0 hf_03) {
-                        throw ph_2.a(hf_03);
-                    }
-                }
-                this.x();
-                object3 = object;
-            }
-            object2 = object3;
-            for (int i2 = 0; i2 < this.K.length; ++i2) {
-                ph_22 = this;
-                if (string == null) {
-                    object2 = ph_22.K[i2].Y(this, object, object2);
-                    if (string == null) continue;
-                }
-                break block8;
-            }
-            ph_22 = this;
-        }
-        return ph_22.K(object2);
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public void H(Object var1_1, Object var2_2, boolean var3_3) {
-        block62: {
-            block61: {
-                block59: {
-                    block60: {
-                        block58: {
-                            block54: {
-                                block56: {
-                                    block57: {
-                                        block55: {
-                                            block53: {
-                                                block52: {
-                                                    block51: {
-                                                        block48: {
-                                                            block45: {
-                                                                block46: {
-                                                                    var4_4 = hi_0.C();
-                                                                    try {
-                                                                        v0 = var1_1;
-                                                                        if (var4_4 != null) break block45;
-                                                                        if (v0 != null) break block46;
-                                                                    }
-                                                                    catch (hf_0 v1) {
-                                                                        throw ph_2.a(v1);
-                                                                    }
-                                                                    return;
-                                                                }
-                                                                this.x();
-                                                                v0 = var1_1;
-                                                            }
-                                                            var5_5 = v0;
-                                                            var6_6 = null;
-                                                            var7_7 = 0;
-                                                            while (var7_7 < this.K.length) {
-                                                                block47: {
-                                                                    block49: {
-                                                                        block50: {
-                                                                            var6_6 = var5_5;
-                                                                            var8_9 = this.K[var7_7];
-                                                                            var5_5 = var8_9.Y(this, var1_1, var5_5);
-                                                                            try {
-                                                                                try {
-                                                                                    try {
-                                                                                        try {
-                                                                                            try {
-                                                                                                if (var4_4 != null) break block47;
-                                                                                                v2 = var5_5;
-                                                                                                if (var4_4 != null) break block48;
-                                                                                            }
-                                                                                            catch (hf_0 v3) {
-                                                                                                throw ph_2.a(v3);
-                                                                                            }
-                                                                                            if (v2 != null) break block49;
-                                                                                        }
-                                                                                        catch (hf_0 v4) {
-                                                                                            throw ph_2.a(v4);
-                                                                                        }
-                                                                                        v5 = var7_7;
-                                                                                        if (var4_4 != null) break block50;
-                                                                                    }
-                                                                                    catch (hf_0 v6) {
-                                                                                        throw ph_2.a(v6);
-                                                                                    }
-                                                                                    if (v5 == this.K.length - 1) break block49;
-                                                                                }
-                                                                                catch (hf_0 v7) {
-                                                                                    throw ph_2.a(v7);
-                                                                                }
-                                                                                v5 = var8_9 instanceof W3;
-                                                                            }
-                                                                            catch (hf_0 v8) {
-                                                                                throw ph_2.a(v8);
-                                                                            }
-                                                                        }
-                                                                        if (v5 != 0) {
-                                                                            var5_5 = new O0();
-                                                                            ((W3)var8_9).M(this, var6_6, var5_5);
-                                                                        }
-                                                                    }
-                                                                    ++var7_7;
-                                                                }
-                                                                if (var4_4 == null) continue;
-                                                            }
-                                                            v2 = var5_5;
-                                                        }
-                                                        var7_8 = v2;
-                                                        try {
-                                                            try {
-                                                                try {
-                                                                    v9 = var3_3;
-                                                                    if (var4_4 != null) break block51;
-                                                                    if (v9) break block52;
-                                                                }
-                                                                catch (hf_0 v10) {
-                                                                    throw ph_2.a(v10);
-                                                                }
-                                                                v11 = var7_8;
-                                                                if (var4_4 != null) break block53;
-                                                            }
-                                                            catch (hf_0 v12) {
-                                                                throw ph_2.a(v12);
-                                                            }
-                                                            v9 = v11 instanceof Collection;
-                                                        }
-                                                        catch (hf_0 v13) {
-                                                            throw ph_2.a(v13);
-                                                        }
-                                                    }
-                                                    if (v9) {
-                                                        var8_9 = (Collection)var7_8;
-                                                        var8_9.add(var2_2);
-                                                        return;
-                                                    }
-                                                }
-                                                v11 = var7_8;
-                                            }
-                                            try {
-                                                try {
-                                                    if (var4_4 != null) break block54;
-                                                    if (v11 != null) {
-                                                    }
-                                                    ** GOTO lbl139
-                                                }
-                                                catch (hf_0 v14) {
-                                                    throw ph_2.a(v14);
-                                                }
-                                                if (!var3_3) {
-                                                }
-                                                ** GOTO lbl139
-                                            }
-                                            catch (hf_0 v15) {
-                                                throw ph_2.a(v15);
-                                            }
-                                            var9_10 = var7_8.getClass();
-                                            try {
-                                                v16 = var9_10.isArray();
-                                                if (var4_4 != null) break block55;
-                                                if (v16) {
-                                                }
-                                                ** GOTO lbl117
-                                            }
-                                            catch (hf_0 v17) {
-                                                throw ph_2.a(v17);
-                                            }
-                                            var10_11 = Array.getLength(var7_8);
-                                            var11_13 = Array.newInstance(var9_10.getComponentType(), var10_11 + 1);
-                                            System.arraycopy(var7_8, 0, var11_13, 0, var10_11);
-                                            Array.set(var11_13, var10_11, var2_2);
-                                            var8_9 = var11_13;
-                                            try {
-                                                try {
-                                                    if (var4_4 == null) break block56;
-lbl117:
-                                                    // 2 sources
-
-                                                    v18 = Map.class;
-                                                    if (var4_4 != null) break block57;
-                                                }
-                                                catch (hf_0 v19) {
-                                                    throw ph_2.a(v19);
-                                                }
-                                                v16 = v18.isAssignableFrom((Class<?>)var9_10);
-                                            }
-                                            catch (hf_0 v20) {
-                                                throw ph_2.a(v20);
-                                            }
-                                        }
-                                        if (!v16) ** GOTO lbl133
-                                        v18 = var2_2;
-                                    }
-                                    var8_9 = v18;
-                                    try {
-                                        if (var4_4 == null) break block56;
-lbl133:
-                                        // 2 sources
-
-                                        throw new hi_0(ph_2.a(2750, 11111) + var9_10);
-                                    }
-                                    catch (hf_0 v21) {
-                                        throw ph_2.a(v21);
-                                    }
-                                }
-                                try {
-                                    if (var4_4 == null) break block58;
-lbl139:
-                                    // 3 sources
-
-                                    v11 = var2_2;
-                                }
-                                catch (hf_0 v22) {
-                                    throw ph_2.a(v22);
-                                }
-                            }
-                            var8_9 = v11;
-                        }
-                        var9_10 = this.K[this.K.length - 1];
-                        try {
-                            v23 = var9_10 instanceof W3;
-                            if (var4_4 != null) break block59;
-                            if (!v23) break block60;
-                        }
-                        catch (hf_0 v24) {
-                            throw ph_2.a(v24);
-                        }
-                        var10_12 = (W3)var9_10;
-                        var10_12.M(this, var6_6, var8_9);
-                        return;
-                    }
-                    v23 = var9_10 instanceof DX;
-                }
-                try {
-                    try {
-                        if (var4_4 != null) break block61;
-                        if (!v23) break block62;
-                    }
-                    catch (hf_0 v25) {
-                        throw ph_2.a(v25);
-                    }
-                    v23 = ((DX)var9_10).a(this, var6_6, var8_9);
-                }
-                catch (hf_0 v26) {
-                    throw ph_2.a(v26);
-                }
-            }
+            f = var6;
+            g = new Integer[3];
             return;
-        }
-        throw new UnsupportedOperationException();
-    }
+         }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public void v(Object object, Object[] objectArray) {
-        boolean bl;
-        a0 a02;
-        Object object2;
-        Object object3;
-        String string;
-        block45: {
-            block46: {
-                Object object4;
-                Object object5;
-                Class<?> clazz;
-                block44: {
-                    int n10;
-                    Object object6;
-                    block43: {
-                        Object object7;
-                        block41: {
-                            block42: {
-                                block39: {
-                                    block40: {
-                                        Object object8;
-                                        block37: {
-                                            block38: {
-                                                block35: {
-                                                    block36: {
-                                                        block34: {
-                                                            string = hi_0.C();
-                                                            try {
-                                                                object8 = objectArray;
-                                                                if (string != null) break block34;
-                                                                if (object8 == null) return;
-                                                            }
-                                                            catch (hf_0 hf_02) {
-                                                                throw ph_2.a(hf_02);
-                                                            }
-                                                            object8 = objectArray;
-                                                        }
-                                                        try {
-                                                            try {
-                                                                if (string != null) break block35;
-                                                                if (((Object[])object8).length != 0) break block36;
-                                                                return;
-                                                            }
-                                                            catch (hf_0 hf_03) {
-                                                                throw ph_2.a(hf_03);
-                                                            }
-                                                        }
-                                                        catch (hf_0 hf_04) {
-                                                            throw ph_2.a(hf_04);
-                                                        }
-                                                    }
-                                                    object8 = object;
-                                                }
-                                                try {
-                                                    if (string != null) break block37;
-                                                    if (object8 != null) break block38;
-                                                    return;
-                                                }
-                                                catch (hf_0 hf_05) {
-                                                    throw ph_2.a(hf_05);
-                                                }
-                                            }
-                                            this.x();
-                                            object8 = object;
-                                        }
-                                        Object object9 = object8;
-                                        object3 = null;
-                                        for (int i2 = 0; i2 < this.K.length; ++i2) {
-                                            if (i2 == this.K.length - 1) {
-                                                object3 = object9;
-                                            }
-                                            object9 = this.K[i2].Y(this, object, object9);
-                                            if (string == null) continue;
-                                        }
-                                        object6 = object9;
-                                        try {
-                                            try {
-                                                object7 = object6;
-                                                if (string != null) break block39;
-                                                if (object7 != null) break block40;
-                                                throw new hf_0(ph_2.a(2746, -9506) + this.V);
-                                            }
-                                            catch (hf_0 hf_06) {
-                                                throw ph_2.a(hf_06);
-                                            }
-                                        }
-                                        catch (hf_0 hf_07) {
-                                            throw ph_2.a(hf_07);
-                                        }
-                                    }
-                                    object7 = object6;
-                                }
-                                try {
-                                    if (string != null) break block41;
-                                    if (!(object7 instanceof Collection)) break block42;
-                                }
-                                catch (hf_0 hf_08) {
-                                    throw ph_2.a(hf_08);
-                                }
-                                Collection collection = (Collection)object6;
-                                for (Object object10 : objectArray) {
-                                    collection.add(object10);
-                                    if (string == null) continue;
-                                }
-                                return;
-                            }
-                            object7 = object6;
-                        }
-                        clazz = object7.getClass();
-                        try {
-                            try {
-                                n10 = clazz.isArray();
-                                if (string != null) break block43;
-                                if (n10 == 0) throw new hi_0(ph_2.a(2742, 22558) + clazz);
-                            }
-                            catch (hf_0 hf_09) {
-                                throw ph_2.a(hf_09);
-                            }
-                            n10 = Array.getLength(object6);
-                        }
-                        catch (hf_0 hf_010) {
-                            throw ph_2.a(hf_010);
-                        }
-                    }
-                    int n11 = n10;
-                    object5 = Array.newInstance(clazz.getComponentType(), n11 + objectArray.length);
-                    System.arraycopy(object6, 0, object5, 0, n11);
-                    for (int i3 = 0; i3 < objectArray.length; ++i3) {
-                        try {
-                            object4 = object5;
-                            if (string == null) {
-                                Array.set(object4, n11 + i3, objectArray[i3]);
-                                if (string == null) continue;
-                                break;
-                            }
-                            break block44;
-                        }
-                        catch (hf_0 hf_011) {
-                            throw ph_2.a(hf_011);
-                        }
-                    }
-                    object4 = object5;
-                }
-                object2 = object4;
-                try {
-                    if (string != null) {
-                        throw new hi_0(ph_2.a(2742, 22558) + clazz);
-                    }
-                }
-                catch (hf_0 hf_012) {
-                    throw ph_2.a(hf_012);
-                }
-                a02 = this.K[this.K.length - 1];
-                try {
-                    bl = a02 instanceof W3;
-                    if (string != null) break block45;
-                    if (!bl) break block46;
-                }
-                catch (hf_0 hf_013) {
-                    throw ph_2.a(hf_013);
-                }
-                object5 = (W3)a02;
-                ((W3)object5).M(this, object3, object2);
-                return;
+         var9 = var10.charAt(var8);
+      }
+   }
+
+   private static String a(int var0, int var1) {
+      int var2 = (var0 ^ -12313) & 65535;
+      if (e[var2] == null) {
+         char[] var3 = d[var2].toCharArray();
+         short var10000;
+         switch (var3[0] & 0xFF) {
+            case 0:
+               var10000 = 171;
+               break;
+            case 1:
+               var10000 = 6;
+               break;
+            case 2:
+               var10000 = 52;
+               break;
+            case 3:
+               var10000 = 29;
+               break;
+            case 4:
+               var10000 = 137;
+               break;
+            case 5:
+               var10000 = 118;
+               break;
+            case 6:
+               var10000 = 56;
+               break;
+            case 7:
+               var10000 = 108;
+               break;
+            case 8:
+               var10000 = 30;
+               break;
+            case 9:
+               var10000 = 103;
+               break;
+            case 10:
+               var10000 = 53;
+               break;
+            case 11:
+               var10000 = 61;
+               break;
+            case 12:
+               var10000 = 222;
+               break;
+            case 13:
+               var10000 = 126;
+               break;
+            case 14:
+               var10000 = 185;
+               break;
+            case 15:
+               var10000 = 225;
+               break;
+            case 16:
+               var10000 = 109;
+               break;
+            case 17:
+               var10000 = 42;
+               break;
+            case 18:
+               var10000 = 183;
+               break;
+            case 19:
+               var10000 = 116;
+               break;
+            case 20:
+               var10000 = 1;
+               break;
+            case 21:
+               var10000 = 48;
+               break;
+            case 22:
+               var10000 = 73;
+               break;
+            case 23:
+               var10000 = 235;
+               break;
+            case 24:
+               var10000 = 86;
+               break;
+            case 25:
+               var10000 = 43;
+               break;
+            case 26:
+               var10000 = 184;
+               break;
+            case 27:
+               var10000 = 33;
+               break;
+            case 28:
+               var10000 = 20;
+               break;
+            case 29:
+               var10000 = 251;
+               break;
+            case 30:
+               var10000 = 106;
+               break;
+            case 31:
+               var10000 = 101;
+               break;
+            case 32:
+               var10000 = 217;
+               break;
+            case 33:
+               var10000 = 75;
+               break;
+            case 34:
+               var10000 = 121;
+               break;
+            case 35:
+               var10000 = 228;
+               break;
+            case 36:
+               var10000 = 194;
+               break;
+            case 37:
+               var10000 = 91;
+               break;
+            case 38:
+               var10000 = 148;
+               break;
+            case 39:
+               var10000 = 66;
+               break;
+            case 40:
+               var10000 = 67;
+               break;
+            case 41:
+               var10000 = 32;
+               break;
+            case 42:
+               var10000 = 119;
+               break;
+            case 43:
+               var10000 = 247;
+               break;
+            case 44:
+               var10000 = 104;
+               break;
+            case 45:
+               var10000 = 78;
+               break;
+            case 46:
+               var10000 = 47;
+               break;
+            case 47:
+               var10000 = 158;
+               break;
+            case 48:
+               var10000 = 170;
+               break;
+            case 49:
+               var10000 = 69;
+               break;
+            case 50:
+               var10000 = 37;
+               break;
+            case 51:
+               var10000 = 23;
+               break;
+            case 52:
+               var10000 = 68;
+               break;
+            case 53:
+               var10000 = 41;
+               break;
+            case 54:
+               var10000 = 163;
+               break;
+            case 55:
+               var10000 = 135;
+               break;
+            case 56:
+               var10000 = 242;
+               break;
+            case 57:
+               var10000 = 85;
+               break;
+            case 58:
+               var10000 = 127;
+               break;
+            case 59:
+               var10000 = 150;
+               break;
+            case 60:
+               var10000 = 200;
+               break;
+            case 61:
+               var10000 = 208;
+               break;
+            case 62:
+               var10000 = 4;
+               break;
+            case 63:
+               var10000 = 236;
+               break;
+            case 64:
+               var10000 = 179;
+               break;
+            case 65:
+               var10000 = 18;
+               break;
+            case 66:
+               var10000 = 63;
+               break;
+            case 67:
+               var10000 = 97;
+               break;
+            case 68:
+               var10000 = 79;
+               break;
+            case 69:
+               var10000 = 7;
+               break;
+            case 70:
+               var10000 = 141;
+               break;
+            case 71:
+               var10000 = 17;
+               break;
+            case 72:
+               var10000 = 156;
+               break;
+            case 73:
+               var10000 = 3;
+               break;
+            case 74:
+               var10000 = 12;
+               break;
+            case 75:
+               var10000 = 96;
+               break;
+            case 76:
+               var10000 = 113;
+               break;
+            case 77:
+               var10000 = 216;
+               break;
+            case 78:
+               var10000 = 16;
+               break;
+            case 79:
+               var10000 = 173;
+               break;
+            case 80:
+               var10000 = 55;
+               break;
+            case 81:
+               var10000 = 248;
+               break;
+            case 82:
+               var10000 = 253;
+               break;
+            case 83:
+               var10000 = 9;
+               break;
+            case 84:
+               var10000 = 136;
+               break;
+            case 85:
+               var10000 = 72;
+               break;
+            case 86:
+               var10000 = 39;
+               break;
+            case 87:
+               var10000 = 252;
+               break;
+            case 88:
+               var10000 = 123;
+               break;
+            case 89:
+               var10000 = 159;
+               break;
+            case 90:
+               var10000 = 223;
+               break;
+            case 91:
+               var10000 = 152;
+               break;
+            case 92:
+               var10000 = 74;
+               break;
+            case 93:
+               var10000 = 186;
+               break;
+            case 94:
+               var10000 = 220;
+               break;
+            case 95:
+               var10000 = 209;
+               break;
+            case 96:
+               var10000 = 224;
+               break;
+            case 97:
+               var10000 = 99;
+               break;
+            case 98:
+               var10000 = 227;
+               break;
+            case 99:
+               var10000 = 146;
+               break;
+            case 100:
+               var10000 = 40;
+               break;
+            case 101:
+               var10000 = 21;
+               break;
+            case 102:
+               var10000 = 196;
+               break;
+            case 103:
+               var10000 = 174;
+               break;
+            case 104:
+               var10000 = 168;
+               break;
+            case 105:
+               var10000 = 245;
+               break;
+            case 106:
+               var10000 = 139;
+               break;
+            case 107:
+               var10000 = 160;
+               break;
+            case 108:
+               var10000 = 206;
+               break;
+            case 109:
+               var10000 = 192;
+               break;
+            case 110:
+               var10000 = 77;
+               break;
+            case 111:
+               var10000 = 221;
+               break;
+            case 112:
+               var10000 = 5;
+               break;
+            case 113:
+               var10000 = 234;
+               break;
+            case 114:
+               var10000 = 144;
+               break;
+            case 115:
+               var10000 = 201;
+               break;
+            case 116:
+               var10000 = 213;
+               break;
+            case 117:
+               var10000 = 100;
+               break;
+            case 118:
+               var10000 = 131;
+               break;
+            case 119:
+               var10000 = 166;
+               break;
+            case 120:
+               var10000 = 254;
+               break;
+            case 121:
+               var10000 = 107;
+               break;
+            case 122:
+               var10000 = 105;
+               break;
+            case 123:
+               var10000 = 243;
+               break;
+            case 124:
+               var10000 = 14;
+               break;
+            case 125:
+               var10000 = 34;
+               break;
+            case 126:
+               var10000 = 207;
+               break;
+            case 127:
+               var10000 = 22;
+               break;
+            case 128:
+               var10000 = 129;
+               break;
+            case 129:
+               var10000 = 212;
+               break;
+            case 130:
+               var10000 = 147;
+               break;
+            case 131:
+               var10000 = 197;
+               break;
+            case 132:
+               var10000 = 162;
+               break;
+            case 133:
+               var10000 = 177;
+               break;
+            case 134:
+               var10000 = 246;
+               break;
+            case 135:
+               var10000 = 180;
+               break;
+            case 136:
+               var10000 = 44;
+               break;
+            case 137:
+               var10000 = 157;
+               break;
+            case 138:
+               var10000 = 102;
+               break;
+            case 139:
+               var10000 = 15;
+               break;
+            case 140:
+               var10000 = 255;
+               break;
+            case 141:
+               var10000 = 154;
+               break;
+            case 142:
+               var10000 = 142;
+               break;
+            case 143:
+               var10000 = 124;
+               break;
+            case 144:
+               var10000 = 70;
+               break;
+            case 145:
+               var10000 = 19;
+               break;
+            case 146:
+               var10000 = 229;
+               break;
+            case 147:
+               var10000 = 239;
+               break;
+            case 148:
+               var10000 = 155;
+               break;
+            case 149:
+               var10000 = 145;
+               break;
+            case 150:
+               var10000 = 153;
+               break;
+            case 151:
+               var10000 = 64;
+               break;
+            case 152:
+               var10000 = 214;
+               break;
+            case 153:
+               var10000 = 202;
+               break;
+            case 154:
+               var10000 = 59;
+               break;
+            case 155:
+               var10000 = 172;
+               break;
+            case 156:
+               var10000 = 50;
+               break;
+            case 157:
+               var10000 = 233;
+               break;
+            case 158:
+               var10000 = 80;
+               break;
+            case 159:
+               var10000 = 65;
+               break;
+            case 160:
+               var10000 = 112;
+               break;
+            case 161:
+               var10000 = 46;
+               break;
+            case 162:
+               var10000 = 195;
+               break;
+            case 163:
+               var10000 = 49;
+               break;
+            case 164:
+               var10000 = 231;
+               break;
+            case 165:
+               var10000 = 81;
+               break;
+            case 166:
+               var10000 = 218;
+               break;
+            case 167:
+               var10000 = 151;
+               break;
+            case 168:
+               var10000 = 134;
+               break;
+            case 169:
+               var10000 = 188;
+               break;
+            case 170:
+               var10000 = 26;
+               break;
+            case 171:
+               var10000 = 187;
+               break;
+            case 172:
+               var10000 = 98;
+               break;
+            case 173:
+               var10000 = 27;
+               break;
+            case 174:
+               var10000 = 143;
+               break;
+            case 175:
+               var10000 = 165;
+               break;
+            case 176:
+               var10000 = 190;
+               break;
+            case 177:
+               var10000 = 110;
+               break;
+            case 178:
+               var10000 = 149;
+               break;
+            case 179:
+               var10000 = 250;
+               break;
+            case 180:
+               var10000 = 132;
+               break;
+            case 181:
+               var10000 = 83;
+               break;
+            case 182:
+               var10000 = 133;
+               break;
+            case 183:
+               var10000 = 175;
+               break;
+            case 184:
+               var10000 = 232;
+               break;
+            case 185:
+               var10000 = 87;
+               break;
+            case 186:
+               var10000 = 219;
+               break;
+            case 187:
+               var10000 = 93;
+               break;
+            case 188:
+               var10000 = 205;
+               break;
+            case 189:
+               var10000 = 138;
+               break;
+            case 190:
+               var10000 = 211;
+               break;
+            case 191:
+               var10000 = 31;
+               break;
+            case 192:
+               var10000 = 115;
+               break;
+            case 193:
+               var10000 = 38;
+               break;
+            case 194:
+               var10000 = 117;
+               break;
+            case 195:
+               var10000 = 51;
+               break;
+            case 196:
+               var10000 = 210;
+               break;
+            case 197:
+               var10000 = 204;
+               break;
+            case 198:
+               var10000 = 95;
+               break;
+            case 199:
+               var10000 = 35;
+               break;
+            case 200:
+               var10000 = 114;
+               break;
+            case 201:
+               var10000 = 88;
+               break;
+            case 202:
+               var10000 = 241;
+               break;
+            case 203:
+               var10000 = 10;
+               break;
+            case 204:
+               var10000 = 120;
+               break;
+            case 205:
+               var10000 = 57;
+               break;
+            case 206:
+               var10000 = 2;
+               break;
+            case 207:
+               var10000 = 249;
+               break;
+            case 208:
+               var10000 = 0;
+               break;
+            case 209:
+               var10000 = 167;
+               break;
+            case 210:
+               var10000 = 181;
+               break;
+            case 211:
+               var10000 = 125;
+               break;
+            case 212:
+               var10000 = 54;
+               break;
+            case 213:
+               var10000 = 244;
+               break;
+            case 214:
+               var10000 = 178;
+               break;
+            case 215:
+               var10000 = 161;
+               break;
+            case 216:
+               var10000 = 94;
+               break;
+            case 217:
+               var10000 = 13;
+               break;
+            case 218:
+               var10000 = 169;
+               break;
+            case 219:
+               var10000 = 203;
+               break;
+            case 220:
+               var10000 = 45;
+               break;
+            case 221:
+               var10000 = 128;
+               break;
+            case 222:
+               var10000 = 199;
+               break;
+            case 223:
+               var10000 = 90;
+               break;
+            case 224:
+               var10000 = 111;
+               break;
+            case 225:
+               var10000 = 76;
+               break;
+            case 226:
+               var10000 = 193;
+               break;
+            case 227:
+               var10000 = 182;
+               break;
+            case 228:
+               var10000 = 84;
+               break;
+            case 229:
+               var10000 = 25;
+               break;
+            case 230:
+               var10000 = 237;
+               break;
+            case 231:
+               var10000 = 191;
+               break;
+            case 232:
+               var10000 = 82;
+               break;
+            case 233:
+               var10000 = 226;
+               break;
+            case 234:
+               var10000 = 62;
+               break;
+            case 235:
+               var10000 = 140;
+               break;
+            case 236:
+               var10000 = 215;
+               break;
+            case 237:
+               var10000 = 122;
+               break;
+            case 238:
+               var10000 = 11;
+               break;
+            case 239:
+               var10000 = 60;
+               break;
+            case 240:
+               var10000 = 28;
+               break;
+            case 241:
+               var10000 = 198;
+               break;
+            case 242:
+               var10000 = 58;
+               break;
+            case 243:
+               var10000 = 71;
+               break;
+            case 244:
+               var10000 = 238;
+               break;
+            case 245:
+               var10000 = 164;
+               break;
+            case 246:
+               var10000 = 189;
+               break;
+            case 247:
+               var10000 = 230;
+               break;
+            case 248:
+               var10000 = 92;
+               break;
+            case 249:
+               var10000 = 8;
+               break;
+            case 250:
+               var10000 = 24;
+               break;
+            case 251:
+               var10000 = 36;
+               break;
+            case 252:
+               var10000 = 176;
+               break;
+            case 253:
+               var10000 = 89;
+               break;
+            case 254:
+               var10000 = 240;
+               break;
+            default:
+               var10000 = 130;
+         }
+
+         short var4 = var10000;
+         int var5 = (var1 & 0xFF) - var4;
+         if (var5 < 0) {
+            var5 += 256;
+         }
+
+         int var6 = ((var1 & 65535) >>> 8) - var4;
+         if (var6 < 0) {
+            var6 += 256;
+         }
+
+         for (int var7 = 0; var7 < var3.length; var7++) {
+            int var8 = var7 % 2;
+            char var10002 = var3[var7];
+            if (var8 == 0) {
+               var3[var7] = (char)(var10002 ^ var5);
+               var5 = ((var5 >>> 3 | var5 << 5) ^ var3[var7]) & 0xFF;
+            } else {
+               var3[var7] = (char)(var10002 ^ var6);
+               var6 = ((var6 >>> 3 | var6 << 5) ^ var3[var7]) & 0xFF;
             }
-            bl = a02 instanceof DX;
-        }
-        try {
-            try {
-                if (string != null) return;
-                if (!bl) throw new UnsupportedOperationException();
-            }
-            catch (hf_0 hf_014) {
-                throw ph_2.a(hf_014);
-            }
-            bl = ((DX)a02).a(this, object3, object2);
-            return;
-        }
-        catch (hf_0 hf_015) {
-            throw ph_2.a(hf_015);
-        }
-    }
+         }
 
-    public boolean n(Object object) {
-        block115: {
-            a0 a02;
-            Object object2;
-            block114: {
-                boolean bl;
-                a0 a03;
-                block112: {
-                    String string;
-                    block113: {
-                        block104: {
-                            block105: {
-                                int n10;
-                                block106: {
-                                    W3 w3;
-                                    block107: {
-                                        boolean bl2;
-                                        block110: {
-                                            Object object3;
-                                            Object object4;
-                                            Object object5;
-                                            block108: {
-                                                block109: {
-                                                    a0 a04;
-                                                    Object object6;
-                                                    block89: {
-                                                        block90: {
-                                                            string = hi_0.C();
-                                                            try {
-                                                                try {
-                                                                    object6 = object;
-                                                                    if (string != null) break block89;
-                                                                    if (object6 != null) break block90;
-                                                                }
-                                                                catch (hf_0 hf_02) {
-                                                                    throw ph_2.a(hf_02);
-                                                                }
-                                                                return false;
-                                                            }
-                                                            catch (hf_0 hf_03) {
-                                                                throw ph_2.a(hf_03);
-                                                            }
-                                                        }
-                                                        this.x();
-                                                        object6 = object;
-                                                    }
-                                                    Object object7 = object6;
-                                                    object2 = null;
-                                                    a03 = this.K[this.K.length - 1];
-                                                    int n11 = 0;
-                                                    while (true) {
-                                                        Object object8;
-                                                        block94: {
-                                                            block92: {
-                                                                block93: {
-                                                                    W3 w32;
-                                                                    boolean bl3;
-                                                                    block95: {
-                                                                        block96: {
-                                                                            boolean bl4;
-                                                                            block97: {
-                                                                                block91: {
-                                                                                    try {
-                                                                                        if (n11 >= this.K.length) break;
-                                                                                        if (n11 != this.K.length - 1) break block91;
-                                                                                    }
-                                                                                    catch (hf_0 hf_04) {
-                                                                                        throw ph_2.a(hf_04);
-                                                                                    }
-                                                                                    object2 = object7;
-                                                                                    break;
-                                                                                }
-                                                                                a04 = this.K[n11];
-                                                                                try {
-                                                                                    try {
-                                                                                        try {
-                                                                                            try {
-                                                                                                try {
-                                                                                                    if (string != null) break block92;
-                                                                                                    if (n11 != this.K.length - 2) break block93;
-                                                                                                }
-                                                                                                catch (hf_0 hf_05) {
-                                                                                                    throw ph_2.a(hf_05);
-                                                                                                }
-                                                                                                object8 = a03;
-                                                                                                if (string != null) break block94;
-                                                                                            }
-                                                                                            catch (hf_0 hf_06) {
-                                                                                                throw ph_2.a(hf_06);
-                                                                                            }
-                                                                                            if (!(object8 instanceof LQ)) break block93;
-                                                                                        }
-                                                                                        catch (hf_0 hf_07) {
-                                                                                            throw ph_2.a(hf_07);
-                                                                                        }
-                                                                                        object8 = a04;
-                                                                                        if (string != null) break block94;
-                                                                                    }
-                                                                                    catch (hf_0 hf_08) {
-                                                                                        throw ph_2.a(hf_08);
-                                                                                    }
-                                                                                    if (!(object8 instanceof W3)) break block93;
-                                                                                }
-                                                                                catch (hf_0 hf_09) {
-                                                                                    throw ph_2.a(hf_09);
-                                                                                }
-                                                                                object5 = (LQ)a03;
-                                                                                try {
-                                                                                    bl3 = object7 instanceof List;
-                                                                                    if (string != null) break block95;
-                                                                                    if (!bl3) break block96;
-                                                                                }
-                                                                                catch (hf_0 hf_010) {
-                                                                                    throw ph_2.a(hf_010);
-                                                                                }
-                                                                                w32 = (W3)a04;
-                                                                                object4 = (List)object7;
-                                                                                Iterator iterator = object4.iterator();
-                                                                                while (iterator.hasNext()) {
-                                                                                    block100: {
-                                                                                        boolean bl5;
-                                                                                        block101: {
-                                                                                            Object object9;
-                                                                                            block98: {
-                                                                                                Object e2 = iterator.next();
-                                                                                                object9 = w32.Y(this, object, e2);
-                                                                                                try {
-                                                                                                    block99: {
-                                                                                                        try {
-                                                                                                            try {
-                                                                                                                try {
-                                                                                                                    bl4 = object9 instanceof Iterable;
-                                                                                                                    if (string != null) break block97;
-                                                                                                                    if (string != null) break block98;
-                                                                                                                }
-                                                                                                                catch (hf_0 hf_011) {
-                                                                                                                    throw ph_2.a(hf_011);
-                                                                                                                }
-                                                                                                                if (!bl4) break block99;
-                                                                                                            }
-                                                                                                            catch (hf_0 hf_012) {
-                                                                                                                throw ph_2.a(hf_012);
-                                                                                                            }
-                                                                                                            ((LQ)object5).Q(this, object, object9);
-                                                                                                            if (string == null) break block100;
-                                                                                                        }
-                                                                                                        catch (hf_0 hf_013) {
-                                                                                                            throw ph_2.a(hf_013);
-                                                                                                        }
-                                                                                                    }
-                                                                                                    bl5 = object9 instanceof Map;
-                                                                                                }
-                                                                                                catch (hf_0 hf_014) {
-                                                                                                    throw ph_2.a(hf_014);
-                                                                                                }
-                                                                                            }
-                                                                                            try {
-                                                                                                try {
-                                                                                                    if (string != null) break block101;
-                                                                                                    if (!bl5) break block100;
-                                                                                                }
-                                                                                                catch (hf_0 hf_015) {
-                                                                                                    throw ph_2.a(hf_015);
-                                                                                                }
-                                                                                                bl5 = LQ.w((LQ)object5).x(this, object, object7, object9);
-                                                                                            }
-                                                                                            catch (hf_0 hf_016) {
-                                                                                                throw ph_2.a(hf_016);
-                                                                                            }
-                                                                                        }
-                                                                                        try {
-                                                                                            if (bl5) {
-                                                                                                iterator.remove();
-                                                                                            }
-                                                                                        }
-                                                                                        catch (hf_0 hf_017) {
-                                                                                            throw ph_2.a(hf_017);
-                                                                                        }
-                                                                                    }
-                                                                                    if (string == null) continue;
-                                                                                }
-                                                                                bl4 = true;
-                                                                            }
-                                                                            return bl4;
-                                                                        }
-                                                                        try {
-                                                                            object8 = object7;
-                                                                            if (string != null) break block94;
-                                                                            bl3 = object8 instanceof Map;
-                                                                        }
-                                                                        catch (hf_0 hf_018) {
-                                                                            throw ph_2.a(hf_018);
-                                                                        }
-                                                                    }
-                                                                    if (bl3) {
-                                                                        block102: {
-                                                                            block103: {
-                                                                                w32 = (W3)a04;
-                                                                                object4 = w32.Y(this, object, object7);
-                                                                                try {
-                                                                                    try {
-                                                                                        object8 = object4;
-                                                                                        if (string != null) break block102;
-                                                                                        if (object8 != null) break block103;
-                                                                                    }
-                                                                                    catch (hf_0 hf_019) {
-                                                                                        throw ph_2.a(hf_019);
-                                                                                    }
-                                                                                    return false;
-                                                                                }
-                                                                                catch (hf_0 hf_020) {
-                                                                                    throw ph_2.a(hf_020);
-                                                                                }
-                                                                            }
-                                                                            object8 = object4;
-                                                                        }
-                                                                        try {
-                                                                            try {
-                                                                                try {
-                                                                                    try {
-                                                                                        if (string != null) break block94;
-                                                                                        if (!(object8 instanceof Map)) break block93;
-                                                                                    }
-                                                                                    catch (hf_0 hf_021) {
-                                                                                        throw ph_2.a(hf_021);
-                                                                                    }
-                                                                                    object8 = LQ.w((LQ)object5);
-                                                                                    if (string != null) break block94;
-                                                                                }
-                                                                                catch (hf_0 hf_022) {
-                                                                                    throw ph_2.a(hf_022);
-                                                                                }
-                                                                                if (!object8.x(this, object, object7, object4)) break block93;
-                                                                            }
-                                                                            catch (hf_0 hf_023) {
-                                                                                throw ph_2.a(hf_023);
-                                                                            }
-                                                                            w32.m(this, object7);
-                                                                            return true;
-                                                                        }
-                                                                        catch (hf_0 hf_024) {
-                                                                            throw ph_2.a(hf_024);
-                                                                        }
-                                                                    }
-                                                                }
-                                                                object7 = a04.Y(this, object, object7);
-                                                            }
-                                                            try {
-                                                                if (string != null) continue;
-                                                                object8 = object7;
-                                                            }
-                                                            catch (hf_0 hf_025) {
-                                                                throw ph_2.a(hf_025);
-                                                            }
-                                                        }
-                                                        try {
-                                                            try {
-                                                                if (object8 == null && string == null) break;
-                                                            }
-                                                            catch (hf_0 hf_026) {
-                                                                throw ph_2.a(hf_026);
-                                                            }
-                                                            ++n11;
-                                                        }
-                                                        catch (hf_0 hf_027) {
-                                                            throw ph_2.a(hf_027);
-                                                        }
-                                                    }
-                                                    try {
-                                                        if (object2 == null) {
-                                                            return false;
-                                                        }
-                                                    }
-                                                    catch (hf_0 hf_028) {
-                                                        throw ph_2.a(hf_028);
-                                                    }
-                                                    try {
-                                                        bl = a03 instanceof W3;
-                                                        if (string != null) break block104;
-                                                        if (!bl) break block105;
-                                                    }
-                                                    catch (hf_0 hf_029) {
-                                                        throw ph_2.a(hf_029);
-                                                    }
-                                                    w3 = (W3)a03;
-                                                    try {
-                                                        try {
-                                                            try {
-                                                                n10 = object2 instanceof Collection;
-                                                                if (string != null) break block106;
-                                                                if (n10 == 0) break block107;
-                                                            }
-                                                            catch (hf_0 hf_030) {
-                                                                throw ph_2.a(hf_030);
-                                                            }
-                                                            n10 = this.K.length;
-                                                            if (string != null) break block106;
-                                                        }
-                                                        catch (hf_0 hf_031) {
-                                                            throw ph_2.a(hf_031);
-                                                        }
-                                                        if (n10 <= 1) break block107;
-                                                    }
-                                                    catch (hf_0 hf_032) {
-                                                        throw ph_2.a(hf_032);
-                                                    }
-                                                    a04 = this.K[this.K.length - 2];
-                                                    try {
-                                                        try {
-                                                            try {
-                                                                object3 = a04;
-                                                                if (string != null) break block108;
-                                                                if (object3 instanceof il_0) break block109;
-                                                            }
-                                                            catch (hf_0 hf_033) {
-                                                                throw ph_2.a(hf_033);
-                                                            }
-                                                            n10 = a04 instanceof ad_0;
-                                                            if (string != null) break block106;
-                                                        }
-                                                        catch (hf_0 hf_034) {
-                                                            throw ph_2.a(hf_034);
-                                                        }
-                                                        if (n10 == 0) break block107;
-                                                    }
-                                                    catch (hf_0 hf_035) {
-                                                        throw ph_2.a(hf_035);
-                                                    }
-                                                }
-                                                object3 = object2;
-                                            }
-                                            object5 = (Collection)object3;
-                                            boolean bl6 = false;
-                                            object4 = object5.iterator();
-                                            while (object4.hasNext()) {
-                                                block111: {
-                                                    Object e3 = object4.next();
-                                                    boolean bl7 = w3.m(this, e3);
-                                                    try {
-                                                        try {
-                                                            bl2 = bl7;
-                                                            if (string != null) break block110;
-                                                            if (string != null) break block111;
-                                                        }
-                                                        catch (hf_0 hf_036) {
-                                                            throw ph_2.a(hf_036);
-                                                        }
-                                                        if (!bl2) break block111;
-                                                    }
-                                                    catch (hf_0 hf_037) {
-                                                        throw ph_2.a(hf_037);
-                                                    }
-                                                    boolean bl8 = bl6 = true;
-                                                }
-                                                if (string == null) continue;
-                                            }
-                                            bl2 = bl6;
-                                        }
-                                        return bl2;
-                                    }
-                                    n10 = w3.m(this, object2) ? 1 : 0;
-                                }
-                                return n10 != 0;
-                            }
-                            bl = a03 instanceof DX;
-                        }
-                        try {
-                            try {
-                                if (string != null) break block112;
-                                if (!bl) break block113;
-                            }
-                            catch (hf_0 hf_038) {
-                                throw ph_2.a(hf_038);
-                            }
-                            return ((DX)a03).s(this, object2);
-                        }
-                        catch (hf_0 hf_039) {
-                            throw ph_2.a(hf_039);
-                        }
-                    }
-                    try {
-                        a02 = a03;
-                        if (string != null) break block114;
-                        bl = a02 instanceof LQ;
-                    }
-                    catch (hf_0 hf_040) {
-                        throw ph_2.a(hf_040);
-                    }
-                }
-                if (!bl) break block115;
-                a02 = a03;
-            }
-            LQ lQ = (LQ)a02;
-            return lQ.Q(this, object, object2);
-        }
-        throw new UnsupportedOperationException();
-    }
+         e[var2] = new String(var3).intern();
+      }
 
-    public boolean G(Object object, Object object2) {
-        return this.G(object, object2, true);
-    }
+      return e[var2];
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    public boolean G(Object var1_1, Object var2_2, boolean var3_3) {
-        block63: {
-            block62: {
-                block60: {
-                    block61: {
-                        block48: {
-                            block45: {
-                                block46: {
-                                    var4_4 = hi_0.C();
-                                    try {
-                                        try {
-                                            v0 = var1_1;
-                                            if (var4_4 != null) break block45;
-                                            if (v0 != null) break block46;
-                                        }
-                                        catch (hf_0 v1) {
-                                            throw ph_2.a(v1);
-                                        }
-                                        return false;
-                                    }
-                                    catch (hf_0 v2) {
-                                        throw ph_2.a(v2);
-                                    }
-                                }
-                                this.x();
-                                v0 = var1_1;
-                            }
-                            var5_5 = v0;
-                            var6_6 = null;
-                            var7_7 = 0;
-                            while (var7_7 < this.K.length) {
-                                block47: {
-                                    block49: {
-                                        block59: {
-                                            block64: {
-                                                block50: {
-                                                    block51: {
-                                                        block56: {
-                                                            block58: {
-                                                                block57: {
-                                                                    block55: {
-                                                                        block53: {
-                                                                            block54: {
-                                                                                block52: {
-                                                                                    var6_6 = var5_5;
-                                                                                    var8_9 = this.K[var7_7];
-                                                                                    var5_5 = var8_9.Y(this, var1_1, var5_5);
-                                                                                    try {
-                                                                                        try {
-                                                                                            if (var4_4 != null) break block47;
-                                                                                            v3 = var5_5;
-                                                                                            if (var4_4 != null) break block48;
-                                                                                        }
-                                                                                        catch (hf_0 v4) {
-                                                                                            throw ph_2.a(v4);
-                                                                                        }
-                                                                                        if (v3 != null) break block49;
-                                                                                    }
-                                                                                    catch (hf_0 v5) {
-                                                                                        throw ph_2.a(v5);
-                                                                                    }
-                                                                                    var9_10 = null;
-                                                                                    if (var7_7 < this.K.length - 1) {
-                                                                                        var9_10 = this.K[var7_7 + 1];
-                                                                                    }
-                                                                                    var10_11 = null;
-                                                                                    try {
-                                                                                        v6 = var9_10 instanceof W3;
-                                                                                        if (var4_4 != null) break block50;
-                                                                                        if (!v6) break block51;
-                                                                                    }
-                                                                                    catch (hf_0 v7) {
-                                                                                        throw ph_2.a(v7);
-                                                                                    }
-                                                                                    var11_12 = null;
-                                                                                    var12_13 = null;
-                                                                                    try {
-                                                                                        try {
-                                                                                            v8 = var8_9;
-                                                                                            if (var4_4 != null) break block52;
-                                                                                            if (!(v8 instanceof W3)) break block53;
-                                                                                        }
-                                                                                        catch (hf_0 v9) {
-                                                                                            throw ph_2.a(v9);
-                                                                                        }
-                                                                                        v8 = var8_9;
-                                                                                    }
-                                                                                    catch (hf_0 v10) {
-                                                                                        throw ph_2.a(v10);
-                                                                                    }
-                                                                                }
-                                                                                var13_14 = W3.h((W3)v8);
-                                                                                var14_15 = var6_6.getClass();
-                                                                                var15_16 = this.Z(var14_15);
-                                                                                try {
-                                                                                    v11 = var15_16;
-                                                                                    if (var4_4 != null) break block54;
-                                                                                    if (v11 == null) break block53;
-                                                                                }
-                                                                                catch (hf_0 v12) {
-                                                                                    throw ph_2.a(v12);
-                                                                                }
-                                                                                v11 = var15_16;
-                                                                            }
-                                                                            var16_17 = v11.a(var13_14);
-                                                                            var12_13 = var16_17.p.O;
-                                                                            var11_12 = this.Z(var12_13);
-                                                                        }
-                                                                        try {
-                                                                            v13 = var11_12;
-                                                                            if (var4_4 != null) break block55;
-                                                                            if (v13 == null) break block56;
-                                                                        }
-                                                                        catch (hf_0 v14) {
-                                                                            throw ph_2.a(v14);
-                                                                        }
-                                                                        v13 = var11_12;
-                                                                    }
-                                                                    try {
-                                                                        try {
-                                                                            v15 = v13.T.t;
-                                                                            if (var4_4 != null) break block57;
-                                                                            if (v15 == null) break block58;
-                                                                        }
-                                                                        catch (hf_0 v16) {
-                                                                            throw ph_2.a(v16);
-                                                                        }
-                                                                        v15 = var11_12.O(null, var12_13);
-                                                                    }
-                                                                    catch (hf_0 v17) {
-                                                                        throw ph_2.a(v17);
-                                                                    }
-                                                                }
-                                                                var10_11 = v15;
-                                                                break block64;
-                                                            }
-                                                            return false;
-                                                        }
-                                                        var10_11 = new O0();
-                                                        break block64;
-                                                    }
-                                                    v6 = var9_10 instanceof DX;
-                                                }
-                                                if (v6) {
-                                                    var10_11 = new oc_0();
-                                                }
-                                            }
-                                            try {
-                                                try {
-                                                    try {
-                                                        v3 = var10_11;
-                                                        if (var4_4 != null) break block48;
-                                                        if (v3 == null) break;
-                                                    }
-                                                    catch (hf_0 v18) {
-                                                        throw ph_2.a(v18);
-                                                    }
-                                                    v19 = var8_9 instanceof W3;
-                                                    if (var4_4 != null) break block59;
-                                                }
-                                                catch (hf_0 v20) {
-                                                    throw ph_2.a(v20);
-                                                }
-                                                if (v19) {
-                                                }
-                                                ** GOTO lbl138
-                                            }
-                                            catch (hf_0 v21) {
-                                                throw ph_2.a(v21);
-                                            }
-                                            var11_12 = (W3)var8_9;
-                                            var11_12.M(this, var6_6, var10_11);
-                                            var5_5 = var10_11;
-                                            try {
-                                                try {
-                                                    if (var4_4 == null) break block49;
-lbl138:
-                                                    // 2 sources
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 27279;
+      if (g[var3] == null) {
+         g[var3] = (int)(f[var3] ^ var1);
+      }
 
-                                                    v3 = var8_9;
-                                                    if (var4_4 != null) break block48;
-                                                }
-                                                catch (hf_0 v22) {
-                                                    throw ph_2.a(v22);
-                                                }
-                                                v19 = v3 instanceof DX;
-                                            }
-                                            catch (hf_0 v23) {
-                                                throw ph_2.a(v23);
-                                            }
-                                        }
-                                        if (!v19) break;
-                                        var11_12 = (DX)var8_9;
-                                        var11_12.a(this, var6_6, var10_11);
-                                        var5_5 = var10_11;
-                                    }
-                                    ++var7_7;
-                                }
-                                if (var4_4 == null) continue;
-                            }
-                            v3 = var6_6;
-                        }
-                        try {
-                            if (v3 == null) {
-                                return false;
-                            }
-                        }
-                        catch (hf_0 v24) {
-                            throw ph_2.a(v24);
-                        }
-                        var7_8 = this.K[this.K.length - 1];
-                        try {
-                            v25 = var7_8 instanceof W3;
-                            if (var4_4 != null) break block60;
-                            if (!v25) break block61;
-                        }
-                        catch (hf_0 v26) {
-                            throw ph_2.a(v26);
-                        }
-                        var8_9 = (W3)var7_8;
-                        var8_9.M(this, var6_6, var2_2);
-                        return true;
-                    }
-                    v25 = var7_8 instanceof DX;
-                }
-                try {
-                    try {
-                        if (var4_4 != null) break block62;
-                        if (!v25) break block63;
-                    }
-                    catch (hf_0 v27) {
-                        throw ph_2.a(v27);
-                    }
-                    v25 = ((DX)var7_8).a(this, var6_6, var2_2);
-                }
-                catch (hf_0 v28) {
-                    throw ph_2.a(v28);
-                }
-            }
-            return v25;
-        }
-        throw new UnsupportedOperationException();
-    }
-
-    public static Object V(Object object, String string) {
-        ph_2 ph_22 = ph_2.B(string);
-        return ph_22.S(object);
-    }
-
-    public static Object D(Object object, String string, boolean bl) {
-        ph_2 ph_22 = ph_2.Q(string, bl);
-        return ph_22.S(object);
-    }
-
-    public static int n(Object object, String string) {
-        ph_2 ph_22 = ph_2.B(string);
-        Object object2 = ph_22.S(object);
-        return ph_22.T(object2);
-    }
-
-    public static Set Z(Object object, String string) {
-        ph_2 ph_22 = ph_2.B(string);
-        Object object2 = ph_22.S(object);
-        return ph_22.K(object2);
-    }
-
-    public static boolean H(Object object, String string) {
-        try {
-            if (object == null) {
-                return false;
-            }
-        }
-        catch (hf_0 hf_02) {
-            throw ph_2.a(hf_02);
-        }
-        ph_2 ph_22 = ph_2.B(string);
-        return ph_22.V(object);
-    }
-
-    public static boolean I(Object object, String string, Object object2) {
-        ph_2 ph_22 = ph_2.B(string);
-        return ph_22.D(object, object2);
-    }
-
-    public static void L(Object object, String string, Object[] objectArray) {
-        ph_2 ph_22 = ph_2.B(string);
-        ph_22.v(object, objectArray);
-    }
-
-    public static boolean P(Object object, String string, Object object2) {
-        ph_2 ph_22 = ph_2.B(string);
-        return ph_22.G(object, object2);
-    }
-
-    public static boolean E(Object object, String string) {
-        ph_2 ph_22 = ph_2.B(string);
-        return ph_22.n(object);
-    }
-
-    public static ph_2 B(String string) {
-        ph_2 ph_22;
-        block11: {
-            ph_2 ph_23;
-            block12: {
-                String string2;
-                String string3;
-                block9: {
-                    block10: {
-                        string3 = hi_0.C();
-                        try {
-                            try {
-                                string2 = string;
-                                if (string3 != null) break block9;
-                                if (string2 != null) break block10;
-                            }
-                            catch (hf_0 hf_02) {
-                                throw ph_2.a(hf_02);
-                            }
-                            throw new hf_0(ph_2.a(2739, -15717));
-                        }
-                        catch (hf_0 hf_03) {
-                            throw ph_2.a(hf_03);
-                        }
-                    }
-                    string2 = s.get(string);
-                }
-                ph_23 = (ph_2)((Object)string2);
-                try {
-                    try {
-                        ph_22 = ph_23;
-                        if (string3 != null) break block11;
-                        if (ph_22 != null) break block12;
-                    }
-                    catch (hf_0 hf_04) {
-                        throw ph_2.a(hf_04);
-                    }
-                    ph_22 = new ph_2(string);
-                    if (string3 != null) break block11;
-                }
-                catch (hf_0 hf_05) {
-                    throw ph_2.a(hf_05);
-                }
-                ph_23 = ph_22;
-                if (s.size() < ph_2.a(2580, 6628368933578315098L)) {
-                    s.putIfAbsent(string, ph_23);
-                    ph_23 = (ph_2)s.get(string);
-                }
-            }
-            ph_22 = ph_23;
-        }
-        return ph_22;
-    }
-
-    public static ph_2 Q(String string, boolean bl) {
-        ph_2 ph_22;
-        block11: {
-            ph_2 ph_23;
-            block12: {
-                String string2;
-                String string3;
-                block9: {
-                    block10: {
-                        string3 = hi_0.C();
-                        try {
-                            try {
-                                string2 = string;
-                                if (string3 != null) break block9;
-                                if (string2 != null) break block10;
-                            }
-                            catch (hf_0 hf_02) {
-                                throw ph_2.a(hf_02);
-                            }
-                            throw new hf_0(ph_2.a(2751, -32407));
-                        }
-                        catch (hf_0 hf_03) {
-                            throw ph_2.a(hf_03);
-                        }
-                    }
-                    string2 = s.get(string);
-                }
-                ph_23 = (ph_2)((Object)string2);
-                try {
-                    try {
-                        ph_22 = ph_23;
-                        if (string3 != null) break block11;
-                        if (ph_22 != null) break block12;
-                    }
-                    catch (hf_0 hf_04) {
-                        throw ph_2.a(hf_04);
-                    }
-                    ph_22 = new ph_2(string, bl);
-                    if (string3 != null) break block11;
-                }
-                catch (hf_0 hf_05) {
-                    throw ph_2.a(hf_05);
-                }
-                ph_23 = ph_22;
-                if (s.size() < ph_2.a(11539, 5581129419713032794L)) {
-                    s.putIfAbsent(string, ph_23);
-                    ph_23 = (ph_2)s.get(string);
-                }
-            }
-            ph_22 = ph_23;
-        }
-        return ph_22;
-    }
-
-    public static Object r(String string, String string2) {
-        return ph_2.B(string2).S(ok_0.X(string));
-    }
-
-    public static Object d(String string, String string2, Type type, IG iG) {
-        return ph_2.B(string2).L(ok_0.X(string), type, iG);
-    }
-
-    public static Object S(String string, String string2, Type type) {
-        return ph_2.d(string, string2, type, null);
-    }
-
-    public static Object f(String string, String string2, IG iG, int n10, ks_0[] ks_0Array) {
-        yn_2 yn_22 = new yn_2(string, iG, n10 |= ks_0.OrderedField.mask);
-        ph_2 ph_22 = ph_2.B(string2);
-        Object object = ph_22.e(yn_22);
-        yn_22.N.close();
-        return object;
-    }
-
-    public static Object U(String string, String string2) {
-        return ph_2.f(string, string2, IG.D, ok_0.h, new ks_0[0]);
-    }
-
-    public static Map h(Object object) {
-        return ph_2.T(object, en_0.a);
-    }
-
-    public static Map T(Object object, en_0 en_02) {
-        IdentityHashMap identityHashMap = new IdentityHashMap();
-        HashMap hashMap = new HashMap();
-        ph_2.f(identityHashMap, hashMap, "/", object, en_02);
-        return hashMap;
-    }
-
-    /*
-     * Loose catch block
-     */
-    private static void f(Map map, Map map2, String string, Object object, en_0 en_02) {
-        block105: {
-            block106: {
-                ak_0 ak_02;
-                String string2;
-                block104: {
-                    Object object2;
-                    block124: {
-                        block103: {
-                            boolean bl;
-                            block102: {
-                                block98: {
-                                    block99: {
-                                        Object object3;
-                                        int n10;
-                                        block95: {
-                                            block120: {
-                                                int n11;
-                                                block90: {
-                                                    block91: {
-                                                        block89: {
-                                                            Object object4;
-                                                            block80: {
-                                                                block81: {
-                                                                    int n12;
-                                                                    block87: {
-                                                                        block88: {
-                                                                            block83: {
-                                                                                block116: {
-                                                                                    block115: {
-                                                                                        block114: {
-                                                                                            Object object5;
-                                                                                            block86: {
-                                                                                                Class clazz;
-                                                                                                block85: {
-                                                                                                    block112: {
-                                                                                                        block84: {
-                                                                                                            block82: {
-                                                                                                                Object object6;
-                                                                                                                block78: {
-                                                                                                                    block79: {
-                                                                                                                        string2 = hi_0.C();
-                                                                                                                        try {
-                                                                                                                            object6 = object;
-                                                                                                                            if (string2 != null) break block78;
-                                                                                                                            if (object6 != null) break block79;
-                                                                                                                        }
-                                                                                                                        catch (Exception exception) {
-                                                                                                                            throw ph_2.a(exception);
-                                                                                                                        }
-                                                                                                                        return;
-                                                                                                                    }
-                                                                                                                    object6 = map.put(object, string);
-                                                                                                                }
-                                                                                                                String string3 = (String)object6;
-                                                                                                                try {
-                                                                                                                    object4 = string3;
-                                                                                                                    if (string2 != null) break block80;
-                                                                                                                    if (object4 == null) break block81;
-                                                                                                                }
-                                                                                                                catch (Exception exception) {
-                                                                                                                    throw ph_2.a(exception);
-                                                                                                                }
-                                                                                                                object2 = object.getClass();
-                                                                                                                object5 = object2;
-                                                                                                                clazz = String.class;
-                                                                                                                if (string2 != null) break block82;
-                                                                                                                try {
-                                                                                                                    block110: {
-                                                                                                                        if (object5 == clazz) break block83;
-                                                                                                                        break block110;
-                                                                                                                        catch (Exception exception) {
-                                                                                                                            throw ph_2.a(exception);
-                                                                                                                        }
-                                                                                                                    }
-                                                                                                                    object5 = object2;
-                                                                                                                    clazz = Boolean.class;
-                                                                                                                }
-                                                                                                                catch (Exception exception) {
-                                                                                                                    throw ph_2.a(exception);
-                                                                                                                }
-                                                                                                            }
-                                                                                                            if (string2 != null) break block84;
-                                                                                                            try {
-                                                                                                                block111: {
-                                                                                                                    if (object5 == clazz) break block83;
-                                                                                                                    break block111;
-                                                                                                                    catch (Exception exception) {
-                                                                                                                        throw ph_2.a(exception);
-                                                                                                                    }
-                                                                                                                }
-                                                                                                                object5 = object2;
-                                                                                                                clazz = Character.class;
-                                                                                                            }
-                                                                                                            catch (Exception exception) {
-                                                                                                                throw ph_2.a(exception);
-                                                                                                            }
-                                                                                                        }
-                                                                                                        if (string2 != null) break block85;
-                                                                                                        if (object5 == clazz) break block83;
-                                                                                                        break block112;
-                                                                                                        catch (Exception exception) {
-                                                                                                            throw ph_2.a(exception);
-                                                                                                        }
-                                                                                                    }
-                                                                                                    try {
-                                                                                                        block113: {
-                                                                                                            object5 = object2;
-                                                                                                            if (string2 != null) break block86;
-                                                                                                            break block113;
-                                                                                                            catch (Exception exception) {
-                                                                                                                throw ph_2.a(exception);
-                                                                                                            }
-                                                                                                        }
-                                                                                                        clazz = UUID.class;
-                                                                                                    }
-                                                                                                    catch (Exception exception) {
-                                                                                                        throw ph_2.a(exception);
-                                                                                                    }
-                                                                                                }
-                                                                                                if (object5 == clazz) break block83;
-                                                                                                object5 = object2;
-                                                                                            }
-                                                                                            n12 = ((Class)object5).isEnum() ? 1 : 0;
-                                                                                            if (string2 != null) break block87;
-                                                                                            if (n12 != 0) break block83;
-                                                                                            break block114;
-                                                                                            catch (Exception exception) {
-                                                                                                throw ph_2.a(exception);
-                                                                                            }
-                                                                                        }
-                                                                                        n12 = object instanceof Number;
-                                                                                        if (string2 != null) break block87;
-                                                                                        break block115;
-                                                                                        catch (Exception exception) {
-                                                                                            throw ph_2.a(exception);
-                                                                                        }
-                                                                                    }
-                                                                                    if (n12 != 0) break block83;
-                                                                                    break block116;
-                                                                                    catch (Exception exception) {
-                                                                                        throw ph_2.a(exception);
-                                                                                    }
-                                                                                }
-                                                                                try {
-                                                                                    block117: {
-                                                                                        n12 = object instanceof Date;
-                                                                                        if (string2 != null) break block87;
-                                                                                        break block117;
-                                                                                        catch (Exception exception) {
-                                                                                            throw ph_2.a(exception);
-                                                                                        }
-                                                                                    }
-                                                                                    if (n12 == 0) break block88;
-                                                                                }
-                                                                                catch (Exception exception) {
-                                                                                    throw ph_2.a(exception);
-                                                                                }
-                                                                            }
-                                                                            n12 = 1;
-                                                                            break block87;
-                                                                        }
-                                                                        n12 = 0;
-                                                                    }
-                                                                    n10 = n12;
-                                                                    try {
-                                                                        n11 = n10;
-                                                                        if (string2 != null) break block89;
-                                                                        if (n11 != 0) break block81;
-                                                                    }
-                                                                    catch (Exception exception) {
-                                                                        throw ph_2.a(exception);
-                                                                    }
-                                                                    return;
-                                                                }
-                                                                map2.put(string, object);
-                                                                object4 = object;
-                                                            }
-                                                            n11 = object4 instanceof Map;
-                                                        }
-                                                        try {
-                                                            if (string2 != null) break block90;
-                                                            if (n11 == 0) break block91;
-                                                        }
-                                                        catch (Exception exception) {
-                                                            throw ph_2.a(exception);
-                                                        }
-                                                        object2 = (Map)object;
-                                                        Iterator iterator = object2.entrySet().iterator();
-                                                        while (iterator.hasNext()) {
-                                                            block93: {
-                                                                String string4;
-                                                                Map.Entry entry;
-                                                                block94: {
-                                                                    boolean bl2;
-                                                                    Object k2;
-                                                                    block92: {
-                                                                        block118: {
-                                                                            Map.Entry entry2;
-                                                                            entry = entry2 = iterator.next();
-                                                                            k2 = entry.getKey();
-                                                                            bl2 = k2 instanceof String;
-                                                                            if (string2 != null) break block92;
-                                                                            if (!bl2) break block93;
-                                                                            break block118;
-                                                                            catch (Exception exception) {
-                                                                                throw ph_2.a(exception);
-                                                                            }
-                                                                        }
-                                                                        try {
-                                                                            block119: {
-                                                                                string4 = string;
-                                                                                if (string2 != null) break block94;
-                                                                                break block119;
-                                                                                catch (Exception exception) {
-                                                                                    throw ph_2.a(exception);
-                                                                                }
-                                                                            }
-                                                                            bl2 = string4.equals("/");
-                                                                        }
-                                                                        catch (Exception exception) {
-                                                                            throw ph_2.a(exception);
-                                                                        }
-                                                                    }
-                                                                    try {
-                                                                        string4 = bl2 ? "/" + k2 : string + "/" + k2;
-                                                                    }
-                                                                    catch (Exception exception) {
-                                                                        throw ph_2.a(exception);
-                                                                    }
-                                                                }
-                                                                String string5 = string4;
-                                                                ph_2.f(map, map2, string5, entry.getValue(), en_02);
-                                                            }
-                                                            if (string2 == null) continue;
-                                                        }
-                                                        return;
-                                                    }
-                                                    try {
-                                                        object3 = object;
-                                                        if (string2 != null) break block95;
-                                                        n11 = object3 instanceof Collection;
-                                                    }
-                                                    catch (Exception exception) {
-                                                        throw ph_2.a(exception);
-                                                    }
-                                                }
-                                                if (n11 == 0) break block120;
-                                                object2 = (Collection)object;
-                                                n10 = 0;
-                                                Iterator iterator = object2.iterator();
-                                                while (iterator.hasNext()) {
-                                                    String string6;
-                                                    Object e2;
-                                                    block96: {
-                                                        block97: {
-                                                            e2 = iterator.next();
-                                                            string6 = string;
-                                                            if (string2 != null) break block96;
-                                                            try {
-                                                                block121: {
-                                                                    if (!string6.equals("/")) break block97;
-                                                                    break block121;
-                                                                    catch (Exception exception) {
-                                                                        throw ph_2.a(exception);
-                                                                    }
-                                                                }
-                                                                string6 = "/" + n10;
-                                                                break block96;
-                                                            }
-                                                            catch (Exception exception) {
-                                                                throw ph_2.a(exception);
-                                                            }
-                                                        }
-                                                        string6 = string + "/" + n10;
-                                                    }
-                                                    String string7 = string6;
-                                                    ph_2.f(map, map2, string7, e2, en_02);
-                                                    ++n10;
-                                                    if (string2 == null) continue;
-                                                }
-                                                return;
-                                            }
-                                            object3 = object;
-                                        }
-                                        object2 = object3.getClass();
-                                        try {
-                                            bl = ((Class)object2).isArray();
-                                            if (string2 != null) break block98;
-                                            if (!bl) break block99;
-                                        }
-                                        catch (Exception exception) {
-                                            throw ph_2.a(exception);
-                                        }
-                                        n10 = Array.getLength(object);
-                                        for (int i2 = 0; i2 < n10; ++i2) {
-                                            String string8;
-                                            Object object7;
-                                            block100: {
-                                                block101: {
-                                                    object7 = Array.get(object, i2);
-                                                    string8 = string;
-                                                    if (string2 != null) break block100;
-                                                    try {
-                                                        block122: {
-                                                            if (!string8.equals("/")) break block101;
-                                                            break block122;
-                                                            catch (Exception exception) {
-                                                                throw ph_2.a(exception);
-                                                            }
-                                                        }
-                                                        string8 = "/" + i2;
-                                                        break block100;
-                                                    }
-                                                    catch (Exception exception) {
-                                                        throw ph_2.a(exception);
-                                                    }
-                                                }
-                                                string8 = string + "/" + i2;
-                                            }
-                                            String string9 = string8;
-                                            ph_2.f(map, map2, string9, object7, en_02);
-                                            if (string2 == null) continue;
-                                        }
-                                        return;
-                                    }
-                                    bl = IG.C((Class)object2);
-                                }
-                                if (string2 != null) break block102;
-                                try {
-                                    block123: {
-                                        if (bl) break block103;
-                                        break block123;
-                                        catch (Exception exception) {
-                                            throw ph_2.a(exception);
-                                        }
-                                    }
-                                    bl = ((Class)object2).isEnum();
-                                }
-                                catch (Exception exception) {
-                                    throw ph_2.a(exception);
-                                }
-                            }
-                            if (!bl) break block124;
-                        }
-                        return;
-                    }
-                    ak_0 ak_03 = en_02.O((Class)object2);
-                    ak_02 = ak_03;
-                    if (string2 != null) break block104;
-                    try {
-                        block125: {
-                            if (!(ak_02 instanceof nj_2)) break block105;
-                            break block125;
-                            catch (Exception exception) {
-                                throw ph_2.a(exception);
-                            }
-                        }
-                        ak_02 = ak_03;
-                    }
-                    catch (Exception exception) {
-                        throw ph_2.a(exception);
-                    }
-                }
-                nj_2 nj_22 = (nj_2)ak_02;
-                try {
-                    Map map3 = nj_22.k(object);
-                    for (Map.Entry entry : map3.entrySet()) {
-                        block108: {
-                            String string10;
-                            block109: {
-                                boolean bl;
-                                String string11;
-                                block107: {
-                                    block127: {
-                                        block126: {
-                                            string11 = (String)entry.getKey();
-                                            if (string2 != null) break block106;
-                                            bl = string11 instanceof String;
-                                            if (string2 != null) break block107;
-                                            break block126;
-                                            catch (Exception exception) {
-                                                throw ph_2.a(exception);
-                                            }
-                                        }
-                                        if (!bl) break block108;
-                                        break block127;
-                                        catch (Exception exception) {
-                                            throw ph_2.a(exception);
-                                        }
-                                    }
-                                    try {
-                                        block128: {
-                                            string10 = string;
-                                            if (string2 != null) break block109;
-                                            break block128;
-                                            catch (Exception exception) {
-                                                throw ph_2.a(exception);
-                                            }
-                                        }
-                                        bl = string10.equals("/");
-                                    }
-                                    catch (Exception exception) {
-                                        throw ph_2.a(exception);
-                                    }
-                                }
-                                try {
-                                    string10 = bl ? "/" + string11 : string + "/" + string11;
-                                }
-                                catch (Exception exception) {
-                                    throw ph_2.a(exception);
-                                }
-                            }
-                            String string12 = string10;
-                            ph_2.f(map, map2, string12, entry.getValue(), en_02);
-                        }
-                        if (string2 == null) continue;
-                        break;
-                    }
-                }
-                catch (Exception exception) {
-                    throw new hi_0(ph_2.a(2744, 12069), exception);
-                }
-            }
-            return;
-        }
-    }
-
-    public String F() {
-        return this.V;
-    }
-
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    static int x(Object var0, Object var1_1) {
-        block119: {
-            block116: {
-                block132: {
-                    block131: {
-                        block128: {
-                            block130: {
-                                block129: {
-                                    block124: {
-                                        block127: {
-                                            block126: {
-                                                block125: {
-                                                    block120: {
-                                                        block123: {
-                                                            block122: {
-                                                                block121: {
-                                                                    block114: {
-                                                                        block118: {
-                                                                            block117: {
-                                                                                block115: {
-                                                                                    block112: {
-                                                                                        block113: {
-                                                                                            var2_2 = hi_0.C();
-                                                                                            try {
-                                                                                                try {
-                                                                                                    v0 = var0.getClass();
-                                                                                                    if (var2_2 != null) break block112;
-                                                                                                    if (v0 != var1_1.getClass()) break block113;
-                                                                                                }
-                                                                                                catch (hf_0 v1) {
-                                                                                                    throw ph_2.a(v1);
-                                                                                                }
-                                                                                                return ((Comparable)var0).compareTo(var1_1);
-                                                                                            }
-                                                                                            catch (hf_0 v2) {
-                                                                                                throw ph_2.a(v2);
-                                                                                            }
-                                                                                        }
-                                                                                        v0 = var0.getClass();
-                                                                                    }
-                                                                                    var3_3 = v0;
-                                                                                    var4_4 = var1_1.getClass();
-                                                                                    try {
-                                                                                        try {
-                                                                                            try {
-                                                                                                v3 = var3_3;
-                                                                                                v4 /* !! */  = BigDecimal.class;
-                                                                                                if (var2_2 != null) break block114;
-                                                                                                if (v3 == v4 /* !! */ ) {
-                                                                                                }
-                                                                                                ** GOTO lbl90
-                                                                                            }
-                                                                                            catch (hf_0 v5) {
-                                                                                                throw ph_2.a(v5);
-                                                                                            }
-                                                                                            v3 = var4_4;
-                                                                                            v6 /* !! */  = Integer.class;
-                                                                                            if (var2_2 != null) break block115;
-                                                                                        }
-                                                                                        catch (hf_0 v7) {
-                                                                                            throw ph_2.a(v7);
-                                                                                        }
-                                                                                        if (v3 == v6 /* !! */ ) {
-                                                                                        }
-                                                                                        ** GOTO lbl43
-                                                                                    }
-                                                                                    catch (hf_0 v8) {
-                                                                                        throw ph_2.a(v8);
-                                                                                    }
-                                                                                    var1_1 = new BigDecimal((Integer)var1_1);
-                                                                                    try {
-                                                                                        if (var2_2 == null) break block116;
-lbl43:
-                                                                                        // 2 sources
-
-                                                                                        v3 = var4_4;
-                                                                                        v6 /* !! */  = Long.class;
-                                                                                    }
-                                                                                    catch (hf_0 v9) {
-                                                                                        throw ph_2.a(v9);
-                                                                                    }
-                                                                                }
-                                                                                try {
-                                                                                    if (var2_2 != null) break block117;
-                                                                                    if (v3 == v6 /* !! */ ) {
-                                                                                    }
-                                                                                    ** GOTO lbl59
-                                                                                }
-                                                                                catch (hf_0 v10) {
-                                                                                    throw ph_2.a(v10);
-                                                                                }
-                                                                                var1_1 = new BigDecimal((Long)var1_1);
-                                                                                try {
-                                                                                    if (var2_2 == null) break block116;
-lbl59:
-                                                                                    // 2 sources
-
-                                                                                    v3 = var4_4;
-                                                                                    v6 /* !! */  = Float.class;
-                                                                                }
-                                                                                catch (hf_0 v11) {
-                                                                                    throw ph_2.a(v11);
-                                                                                }
-                                                                            }
-                                                                            try {
-                                                                                if (var2_2 != null) break block118;
-                                                                                if (v3 == v6 /* !! */ ) {
-                                                                                }
-                                                                                ** GOTO lbl76
-                                                                            }
-                                                                            catch (hf_0 v12) {
-                                                                                throw ph_2.a(v12);
-                                                                            }
-                                                                            var1_1 = new BigDecimal(((Float)var1_1).floatValue());
-                                                                            try {
-                                                                                try {
-                                                                                    if (var2_2 == null) break block116;
-lbl76:
-                                                                                    // 2 sources
-
-                                                                                    v3 = var4_4;
-                                                                                    if (var2_2 != null) break block119;
-                                                                                }
-                                                                                catch (hf_0 v13) {
-                                                                                    throw ph_2.a(v13);
-                                                                                }
-                                                                                v6 /* !! */  = Double.class;
-                                                                            }
-                                                                            catch (hf_0 v14) {
-                                                                                throw ph_2.a(v14);
-                                                                            }
-                                                                        }
-                                                                        if (v3 != v6 /* !! */ ) break block116;
-                                                                        var1_1 = new BigDecimal((Double)var1_1);
-                                                                        try {
-                                                                            if (var2_2 == null) break block116;
-lbl90:
-                                                                            // 2 sources
-
-                                                                            v3 = var3_3;
-                                                                            v4 /* !! */  = Long.class;
-                                                                        }
-                                                                        catch (hf_0 v15) {
-                                                                            throw ph_2.a(v15);
-                                                                        }
-                                                                    }
-                                                                    try {
-                                                                        try {
-                                                                            try {
-                                                                                if (var2_2 != null) break block120;
-                                                                                if (v3 == v4 /* !! */ ) {
-                                                                                }
-                                                                                ** GOTO lbl166
-                                                                            }
-                                                                            catch (hf_0 v16) {
-                                                                                throw ph_2.a(v16);
-                                                                            }
-                                                                            v3 = var4_4;
-                                                                            v17 /* !! */  = Integer.class;
-                                                                            if (var2_2 != null) break block121;
-                                                                        }
-                                                                        catch (hf_0 v18) {
-                                                                            throw ph_2.a(v18);
-                                                                        }
-                                                                        if (v3 == v17 /* !! */ ) {
-                                                                        }
-                                                                        ** GOTO lbl119
-                                                                    }
-                                                                    catch (hf_0 v19) {
-                                                                        throw ph_2.a(v19);
-                                                                    }
-                                                                    var1_1 = new Long(((Integer)var1_1).intValue());
-                                                                    try {
-                                                                        if (var2_2 == null) break block116;
-lbl119:
-                                                                        // 2 sources
-
-                                                                        v3 = var4_4;
-                                                                        v17 /* !! */  = BigDecimal.class;
-                                                                    }
-                                                                    catch (hf_0 v20) {
-                                                                        throw ph_2.a(v20);
-                                                                    }
-                                                                }
-                                                                try {
-                                                                    if (var2_2 != null) break block122;
-                                                                    if (v3 == v17 /* !! */ ) {
-                                                                    }
-                                                                    ** GOTO lbl135
-                                                                }
-                                                                catch (hf_0 v21) {
-                                                                    throw ph_2.a(v21);
-                                                                }
-                                                                var0 = new BigDecimal((Long)var0);
-                                                                try {
-                                                                    if (var2_2 == null) break block116;
-lbl135:
-                                                                    // 2 sources
-
-                                                                    v3 = var4_4;
-                                                                    v17 /* !! */  = Float.class;
-                                                                }
-                                                                catch (hf_0 v22) {
-                                                                    throw ph_2.a(v22);
-                                                                }
-                                                            }
-                                                            try {
-                                                                if (var2_2 != null) break block123;
-                                                                if (v3 == v17 /* !! */ ) {
-                                                                }
-                                                                ** GOTO lbl152
-                                                            }
-                                                            catch (hf_0 v23) {
-                                                                throw ph_2.a(v23);
-                                                            }
-                                                            var0 = new Float(((Long)var0).longValue());
-                                                            try {
-                                                                try {
-                                                                    if (var2_2 == null) break block116;
-lbl152:
-                                                                    // 2 sources
-
-                                                                    v3 = var4_4;
-                                                                    if (var2_2 != null) break block119;
-                                                                }
-                                                                catch (hf_0 v24) {
-                                                                    throw ph_2.a(v24);
-                                                                }
-                                                                v17 /* !! */  = Double.class;
-                                                            }
-                                                            catch (hf_0 v25) {
-                                                                throw ph_2.a(v25);
-                                                            }
-                                                        }
-                                                        if (v3 != v17 /* !! */ ) break block116;
-                                                        var0 = new Double(((Long)var0).longValue());
-                                                        try {
-                                                            if (var2_2 == null) break block116;
-lbl166:
-                                                            // 2 sources
-
-                                                            v3 = var3_3;
-                                                            v4 /* !! */  = Integer.class;
-                                                        }
-                                                        catch (hf_0 v26) {
-                                                            throw ph_2.a(v26);
-                                                        }
-                                                    }
-                                                    try {
-                                                        try {
-                                                            try {
-                                                                if (var2_2 != null) break block124;
-                                                                if (v3 == v4 /* !! */ ) {
-                                                                }
-                                                                ** GOTO lbl242
-                                                            }
-                                                            catch (hf_0 v27) {
-                                                                throw ph_2.a(v27);
-                                                            }
-                                                            v3 = var4_4;
-                                                            v28 /* !! */  = Long.class;
-                                                            if (var2_2 != null) break block125;
-                                                        }
-                                                        catch (hf_0 v29) {
-                                                            throw ph_2.a(v29);
-                                                        }
-                                                        if (v3 == v28 /* !! */ ) {
-                                                        }
-                                                        ** GOTO lbl195
-                                                    }
-                                                    catch (hf_0 v30) {
-                                                        throw ph_2.a(v30);
-                                                    }
-                                                    var0 = new Long(((Integer)var0).intValue());
-                                                    try {
-                                                        if (var2_2 == null) break block116;
-lbl195:
-                                                        // 2 sources
-
-                                                        v3 = var4_4;
-                                                        v28 /* !! */  = BigDecimal.class;
-                                                    }
-                                                    catch (hf_0 v31) {
-                                                        throw ph_2.a(v31);
-                                                    }
-                                                }
-                                                try {
-                                                    if (var2_2 != null) break block126;
-                                                    if (v3 == v28 /* !! */ ) {
-                                                    }
-                                                    ** GOTO lbl211
-                                                }
-                                                catch (hf_0 v32) {
-                                                    throw ph_2.a(v32);
-                                                }
-                                                var0 = new BigDecimal((Integer)var0);
-                                                try {
-                                                    if (var2_2 == null) break block116;
-lbl211:
-                                                    // 2 sources
-
-                                                    v3 = var4_4;
-                                                    v28 /* !! */  = Float.class;
-                                                }
-                                                catch (hf_0 v33) {
-                                                    throw ph_2.a(v33);
-                                                }
-                                            }
-                                            try {
-                                                if (var2_2 != null) break block127;
-                                                if (v3 == v28 /* !! */ ) {
-                                                }
-                                                ** GOTO lbl228
-                                            }
-                                            catch (hf_0 v34) {
-                                                throw ph_2.a(v34);
-                                            }
-                                            var0 = new Float(((Integer)var0).intValue());
-                                            try {
-                                                try {
-                                                    if (var2_2 == null) break block116;
-lbl228:
-                                                    // 2 sources
-
-                                                    v3 = var4_4;
-                                                    if (var2_2 != null) break block119;
-                                                }
-                                                catch (hf_0 v35) {
-                                                    throw ph_2.a(v35);
-                                                }
-                                                v28 /* !! */  = Double.class;
-                                            }
-                                            catch (hf_0 v36) {
-                                                throw ph_2.a(v36);
-                                            }
-                                        }
-                                        if (v3 != v28 /* !! */ ) break block116;
-                                        var0 = new Double(((Integer)var0).intValue());
-                                        try {
-                                            if (var2_2 == null) break block116;
-lbl242:
-                                            // 2 sources
-
-                                            v3 = var3_3;
-                                            v4 /* !! */  = Double.class;
-                                        }
-                                        catch (hf_0 v37) {
-                                            throw ph_2.a(v37);
-                                        }
-                                    }
-                                    try {
-                                        try {
-                                            try {
-                                                if (var2_2 != null) break block128;
-                                                if (v3 == v4 /* !! */ ) {
-                                                }
-                                                ** GOTO lbl303
-                                            }
-                                            catch (hf_0 v38) {
-                                                throw ph_2.a(v38);
-                                            }
-                                            v3 = var4_4;
-                                            v39 /* !! */  = Integer.class;
-                                            if (var2_2 != null) break block129;
-                                        }
-                                        catch (hf_0 v40) {
-                                            throw ph_2.a(v40);
-                                        }
-                                        if (v3 == v39 /* !! */ ) {
-                                        }
-                                        ** GOTO lbl271
-                                    }
-                                    catch (hf_0 v41) {
-                                        throw ph_2.a(v41);
-                                    }
-                                    var1_1 = new Double(((Integer)var1_1).intValue());
-                                    try {
-                                        if (var2_2 == null) break block116;
-lbl271:
-                                        // 2 sources
-
-                                        v3 = var4_4;
-                                        v39 /* !! */  = Long.class;
-                                    }
-                                    catch (hf_0 v42) {
-                                        throw ph_2.a(v42);
-                                    }
-                                }
-                                try {
-                                    if (var2_2 != null) break block130;
-                                    if (v3 == v39 /* !! */ ) {
-                                    }
-                                    ** GOTO lbl288
-                                }
-                                catch (hf_0 v43) {
-                                    throw ph_2.a(v43);
-                                }
-                                var1_1 = new Double(((Long)var1_1).longValue());
-                                try {
-                                    try {
-                                        if (var2_2 == null) break block116;
-lbl288:
-                                        // 2 sources
-
-                                        v3 = var4_4;
-                                        if (var2_2 != null) break block119;
-                                    }
-                                    catch (hf_0 v44) {
-                                        throw ph_2.a(v44);
-                                    }
-                                    v39 /* !! */  = Float.class;
-                                }
-                                catch (hf_0 v45) {
-                                    throw ph_2.a(v45);
-                                }
-                            }
-                            if (v3 != v39 /* !! */ ) break block116;
-                            var1_1 = new Double(((Float)var1_1).floatValue());
-                            try {
-                                try {
-                                    if (var2_2 == null) break block116;
-lbl303:
-                                    // 2 sources
-
-                                    v3 = var3_3;
-                                    if (var2_2 != null) break block119;
-                                }
-                                catch (hf_0 v46) {
-                                    throw ph_2.a(v46);
-                                }
-                                v4 /* !! */  = Float.class;
-                            }
-                            catch (hf_0 v47) {
-                                throw ph_2.a(v47);
-                            }
-                        }
-                        try {
-                            try {
-                                if (v3 != v4 /* !! */ ) break block116;
-                                v3 = var4_4;
-                                v48 /* !! */  = Integer.class;
-                                if (var2_2 != null) break block131;
-                            }
-                            catch (hf_0 v49) {
-                                throw ph_2.a(v49);
-                            }
-                            if (v3 == v48 /* !! */ ) {
-                            }
-                            ** GOTO lbl330
-                        }
-                        catch (hf_0 v50) {
-                            throw ph_2.a(v50);
-                        }
-                        var1_1 = new Float(((Integer)var1_1).intValue());
-                        try {
-                            if (var2_2 == null) break block116;
-lbl330:
-                            // 2 sources
-
-                            v3 = var4_4;
-                            v48 /* !! */  = Long.class;
-                        }
-                        catch (hf_0 v51) {
-                            throw ph_2.a(v51);
-                        }
-                    }
-                    try {
-                        if (var2_2 != null) break block132;
-                        if (v3 == v48 /* !! */ ) {
-                        }
-                        ** GOTO lbl347
-                    }
-                    catch (hf_0 v52) {
-                        throw ph_2.a(v52);
-                    }
-                    var1_1 = new Float(((Long)var1_1).longValue());
-                    try {
-                        try {
-                            if (var2_2 == null) break block116;
-lbl347:
-                            // 2 sources
-
-                            v3 = var4_4;
-                            if (var2_2 != null) break block119;
-                        }
-                        catch (hf_0 v53) {
-                            throw ph_2.a(v53);
-                        }
-                        v48 /* !! */  = Double.class;
-                    }
-                    catch (hf_0 v54) {
-                        throw ph_2.a(v54);
-                    }
-                }
-                if (v3 == v48 /* !! */ ) {
-                    var0 = new Double(((Float)var0).floatValue());
-                }
-            }
-            v3 = var0;
-        }
-        return ((Comparable)v3).compareTo(var1_1);
-    }
-
-    protected Object n(Object object, int n10) {
-        int n11;
-        block56: {
-            block57: {
-                String string;
-                block52: {
-                    block53: {
-                        Object v2;
-                        block54: {
-                            Object v3;
-                            block55: {
-                                block47: {
-                                    block48: {
-                                        int n12;
-                                        int n13;
-                                        block49: {
-                                            block50: {
-                                                block51: {
-                                                    block42: {
-                                                        block43: {
-                                                            int n14;
-                                                            List list;
-                                                            block44: {
-                                                                block45: {
-                                                                    block46: {
-                                                                        Object object2;
-                                                                        block40: {
-                                                                            block41: {
-                                                                                string = hi_0.C();
-                                                                                try {
-                                                                                    try {
-                                                                                        object2 = object;
-                                                                                        if (string != null) break block40;
-                                                                                        if (object2 != null) break block41;
-                                                                                    }
-                                                                                    catch (hf_0 hf_02) {
-                                                                                        throw ph_2.a(hf_02);
-                                                                                    }
-                                                                                    return null;
-                                                                                }
-                                                                                catch (hf_0 hf_03) {
-                                                                                    throw ph_2.a(hf_03);
-                                                                                }
-                                                                            }
-                                                                            object2 = object;
-                                                                        }
-                                                                        try {
-                                                                            n11 = object2 instanceof List;
-                                                                            if (string != null) break block42;
-                                                                            if (n11 == 0) break block43;
-                                                                        }
-                                                                        catch (hf_0 hf_04) {
-                                                                            throw ph_2.a(hf_04);
-                                                                        }
-                                                                        list = (List)object;
-                                                                        try {
-                                                                            try {
-                                                                                try {
-                                                                                    n14 = n10;
-                                                                                    if (string != null) break block44;
-                                                                                    if (n14 < 0) break block45;
-                                                                                }
-                                                                                catch (hf_0 hf_05) {
-                                                                                    throw ph_2.a(hf_05);
-                                                                                }
-                                                                                if (n10 >= list.size()) break block46;
-                                                                            }
-                                                                            catch (hf_0 hf_06) {
-                                                                                throw ph_2.a(hf_06);
-                                                                            }
-                                                                            return list.get(n10);
-                                                                        }
-                                                                        catch (hf_0 hf_07) {
-                                                                            throw ph_2.a(hf_07);
-                                                                        }
-                                                                    }
-                                                                    return null;
-                                                                }
-                                                                n14 = Math.abs(n10);
-                                                            }
-                                                            try {
-                                                                if (n14 <= list.size()) {
-                                                                    return list.get(list.size() + n10);
-                                                                }
-                                                            }
-                                                            catch (hf_0 hf_08) {
-                                                                throw ph_2.a(hf_08);
-                                                            }
-                                                            return null;
-                                                        }
-                                                        n11 = object.getClass().isArray();
-                                                    }
-                                                    try {
-                                                        if (string != null) break block47;
-                                                        if (n11 == 0) break block48;
-                                                    }
-                                                    catch (hf_0 hf_09) {
-                                                        throw ph_2.a(hf_09);
-                                                    }
-                                                    n13 = Array.getLength(object);
-                                                    try {
-                                                        try {
-                                                            try {
-                                                                n12 = n10;
-                                                                if (string != null) break block49;
-                                                                if (n12 < 0) break block50;
-                                                            }
-                                                            catch (hf_0 hf_010) {
-                                                                throw ph_2.a(hf_010);
-                                                            }
-                                                            if (n10 >= n13) break block51;
-                                                        }
-                                                        catch (hf_0 hf_011) {
-                                                            throw ph_2.a(hf_011);
-                                                        }
-                                                        return Array.get(object, n10);
-                                                    }
-                                                    catch (hf_0 hf_012) {
-                                                        throw ph_2.a(hf_012);
-                                                    }
-                                                }
-                                                return null;
-                                            }
-                                            n12 = Math.abs(n10);
-                                        }
-                                        try {
-                                            if (n12 <= n13) {
-                                                return Array.get(object, n13 + n10);
-                                            }
-                                        }
-                                        catch (hf_0 hf_013) {
-                                            throw ph_2.a(hf_013);
-                                        }
-                                        return null;
-                                    }
-                                    n11 = object instanceof Map;
-                                }
-                                try {
-                                    if (string != null) break block52;
-                                    if (n11 == 0) break block53;
-                                }
-                                catch (hf_0 hf_014) {
-                                    throw ph_2.a(hf_014);
-                                }
-                                Map map = (Map)object;
-                                v3 = map.get(n10);
-                                try {
-                                    v2 = v3;
-                                    if (string != null) break block54;
-                                    if (v2 != null) break block55;
-                                }
-                                catch (hf_0 hf_015) {
-                                    throw ph_2.a(hf_015);
-                                }
-                                v3 = map.get(Integer.toString(n10));
-                            }
-                            v2 = v3;
-                        }
-                        return v2;
-                    }
-                    n11 = object instanceof Collection;
-                }
-                try {
-                    if (string != null) break block56;
-                    if (n11 == 0) break block57;
-                }
-                catch (hf_0 hf_016) {
-                    throw ph_2.a(hf_016);
-                }
-                Collection collection = (Collection)object;
-                int n15 = 0;
-                for (Object e2 : collection) {
-                    block58: {
-                        block59: {
-                            try {
-                                try {
-                                    if (string != null) break block58;
-                                    if (n15 != n10) break block59;
-                                }
-                                catch (hf_0 hf_017) {
-                                    throw ph_2.a(hf_017);
-                                }
-                                return e2;
-                            }
-                            catch (hf_0 hf_018) {
-                                throw ph_2.a(hf_018);
-                            }
-                        }
-                        ++n15;
-                    }
-                    if (string == null) continue;
-                }
-                return null;
-            }
-            n11 = n10;
-        }
-        try {
-            if (n11 == 0) {
-                return object;
-            }
-        }
-        catch (hf_0 hf_019) {
-            throw ph_2.a(hf_019);
-        }
-        throw new UnsupportedOperationException();
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public boolean I(ph_2 var1_1, Object var2_2, int var3_3, Object var4_4) {
-        block33: {
-            block36: {
-                block37: {
-                    block34: {
-                        block32: {
-                            block28: {
-                                block29: {
-                                    block31: {
-                                        block30: {
-                                            var5_5 = hi_0.C();
-                                            try {
-                                                v0 = var2_2;
-                                                if (var5_5 != null) break block28;
-                                                if (!(v0 instanceof List)) break block29;
-                                            }
-                                            catch (hf_0 v1) {
-                                                throw ph_2.a(v1);
-                                            }
-                                            var6_6 = (List)var2_2;
-                                            try {
-                                                try {
-                                                    if (var5_5 != null) break block30;
-                                                    if (var3_3 >= 0) {
-                                                    }
-                                                    ** GOTO lbl26
-                                                }
-                                                catch (hf_0 v2) {
-                                                    throw ph_2.a(v2);
-                                                }
-                                                var6_6.set(var3_3, var4_4);
-                                            }
-                                            catch (hf_0 v3) {
-                                                throw ph_2.a(v3);
-                                            }
-                                        }
-                                        try {
-                                            if (var5_5 == null) break block31;
-lbl26:
-                                            // 2 sources
-
-                                            var6_6.set(var6_6.size() + var3_3, var4_4);
-                                        }
-                                        catch (hf_0 v4) {
-                                            throw ph_2.a(v4);
-                                        }
-                                    }
-                                    return true;
-                                }
-                                v0 = var2_2;
-                            }
-                            var6_7 = v0.getClass();
-                            try {
-                                try {
-                                    v5 = var6_7.isArray();
-                                    if (var5_5 != null) break block32;
-                                    if (v5 == 0) break block33;
-                                }
-                                catch (hf_0 v6) {
-                                    throw ph_2.a(v6);
-                                }
-                                v5 = Array.getLength(var2_2);
-                            }
-                            catch (hf_0 v7) {
-                                throw ph_2.a(v7);
-                            }
-                        }
-                        var7_8 = v5;
-                        try {
-                            block35: {
-                                try {
-                                    try {
-                                        try {
-                                            try {
-                                                v8 = var3_3;
-                                                if (var5_5 != null) break block34;
-                                                if (v8 < 0) break block35;
-                                            }
-                                            catch (hf_0 v9) {
-                                                throw ph_2.a(v9);
-                                            }
-                                            v8 = var3_3;
-                                            if (var5_5 != null) break block36;
-                                        }
-                                        catch (hf_0 v10) {
-                                            throw ph_2.a(v10);
-                                        }
-                                        if (v8 >= var7_8) break block37;
-                                    }
-                                    catch (hf_0 v11) {
-                                        throw ph_2.a(v11);
-                                    }
-                                    Array.set(var2_2, var3_3, var4_4);
-                                    if (var5_5 == null) break block37;
-                                }
-                                catch (hf_0 v12) {
-                                    throw ph_2.a(v12);
-                                }
-                            }
-                            v8 = Math.abs(var3_3);
-                        }
-                        catch (hf_0 v13) {
-                            throw ph_2.a(v13);
-                        }
-                    }
-                    try {
-                        try {
-                            if (var5_5 != null) break block36;
-                            if (v8 > var7_8) break block37;
-                        }
-                        catch (hf_0 v14) {
-                            throw ph_2.a(v14);
-                        }
-                        Array.set(var2_2, var7_8 + var3_3, var4_4);
-                    }
-                    catch (hf_0 v15) {
-                        throw ph_2.a(v15);
-                    }
-                }
-                v8 = 1;
-            }
-            return (boolean)v8;
-        }
-        throw new hf_0(ph_2.a(2741, -16292) + var6_7);
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public boolean B(ph_2 var1_1, Object var2_2, int var3_3) {
-        block15: {
-            block16: {
-                block20: {
-                    block22: {
-                        block21: {
-                            block17: {
-                                block19: {
-                                    block18: {
-                                        var4_4 = hi_0.C();
-                                        try {
-                                            v0 = var2_2;
-                                            if (var4_4 != null) break block15;
-                                            if (!(v0 instanceof List)) break block16;
-                                        }
-                                        catch (hf_0 v1) {
-                                            throw ph_2.a(v1);
-                                        }
-                                        var5_5 = (List)var2_2;
-                                        try {
-                                            try {
-                                                try {
-                                                    try {
-                                                        v2 = var3_3;
-                                                        if (var4_4 != null) break block17;
-                                                        if (v2 >= 0) {
-                                                        }
-                                                        ** GOTO lbl41
-                                                    }
-                                                    catch (hf_0 v3) {
-                                                        throw ph_2.a(v3);
-                                                    }
-                                                    v4 = var3_3;
-                                                    if (var4_4 != null) break block18;
-                                                }
-                                                catch (hf_0 v5) {
-                                                    throw ph_2.a(v5);
-                                                }
-                                                if (v4 < var5_5.size()) break block19;
-                                            }
-                                            catch (hf_0 v6) {
-                                                throw ph_2.a(v6);
-                                            }
-                                            v4 = 0;
-                                        }
-                                        catch (hf_0 v7) {
-                                            throw ph_2.a(v7);
-                                        }
-                                    }
-                                    return (boolean)v4;
-                                }
-                                try {
-                                    var5_5.remove(var3_3);
-                                    if (var4_4 == null) break block20;
-lbl41:
-                                    // 2 sources
-
-                                    v2 = var5_5.size() + var3_3;
-                                }
-                                catch (hf_0 v8) {
-                                    throw ph_2.a(v8);
-                                }
-                            }
-                            var6_7 = v2;
-                            try {
-                                v9 = var6_7;
-                                if (var4_4 != null) break block21;
-                                if (v9 >= 0) break block22;
-                            }
-                            catch (hf_0 v10) {
-                                throw ph_2.a(v10);
-                            }
-                            v9 = 0;
-                        }
-                        return (boolean)v9;
-                    }
-                    var5_5.remove(var6_7);
-                }
-                return true;
-            }
-            v0 = var2_2;
-        }
-        var5_6 = v0.getClass();
-        throw new hf_0(ph_2.a(2737, 24511) + var5_6);
-    }
-
-    /*
-     * Loose catch block
-     */
-    protected Collection G(Object object) {
-        block22: {
-            Object object2;
-            block19: {
-                boolean bl;
-                block17: {
-                    String string;
-                    block18: {
-                        Object object3;
-                        block15: {
-                            block16: {
-                                Object object4;
-                                block20: {
-                                    block14: {
-                                        string = hi_0.C();
-                                        object4 = object;
-                                        if (string != null) break block20;
-                                        try {
-                                            block21: {
-                                                if (object4 != null) break block14;
-                                                break block21;
-                                                catch (Exception exception) {
-                                                    throw ph_2.a(exception);
-                                                }
-                                            }
-                                            return null;
-                                        }
-                                        catch (Exception exception) {
-                                            throw ph_2.a(exception);
-                                        }
-                                    }
-                                    object4 = object;
-                                }
-                                Class<?> clazz = object4.getClass();
-                                nj_2 nj_22 = this.e(clazz);
-                                try {
-                                    object3 = nj_22;
-                                    if (string != null) break block15;
-                                    if (object3 == null) break block16;
-                                }
-                                catch (Exception exception) {
-                                    throw ph_2.a(exception);
-                                }
-                                try {
-                                    return nj_22.Y(object);
-                                }
-                                catch (Exception exception) {
-                                    throw new hf_0(ph_2.a(2745, -31157) + this.V, exception);
-                                }
-                            }
-                            object3 = object;
-                        }
-                        try {
-                            bl = object3 instanceof Map;
-                            if (string != null) break block17;
-                            if (!bl) break block18;
-                        }
-                        catch (Exception exception) {
-                            throw ph_2.a(exception);
-                        }
-                        Map map = (Map)object;
-                        return map.values();
-                    }
-                    try {
-                        object2 = object;
-                        if (string != null) break block19;
-                        bl = object2 instanceof Collection;
-                    }
-                    catch (Exception exception) {
-                        throw ph_2.a(exception);
-                    }
-                }
-                if (!bl) break block22;
-                object2 = object;
-            }
-            return (Collection)object2;
-        }
-        throw new UnsupportedOperationException();
-    }
-
-    protected void X(Object object, List list) {
-        Class<?> clazz;
-        block23: {
-            List list2;
-            String string;
-            block22: {
-                Collection<Object> collection;
-                block27: {
-                    Object object2;
-                    block21: {
-                        boolean bl;
-                        block19: {
-                            block20: {
-                                Object object3;
-                                block17: {
-                                    block18: {
-                                        clazz = object.getClass();
-                                        nj_2 nj_22 = this.e(clazz);
-                                        string = hi_0.C();
-                                        collection = null;
-                                        try {
-                                            object3 = nj_22;
-                                            if (string != null) break block17;
-                                            if (object3 == null) break block18;
-                                        }
-                                        catch (Exception exception) {
-                                            throw ph_2.a(exception);
-                                        }
-                                        try {
-                                            collection = nj_22.Y(object);
-                                            list.add(object);
-                                        }
-                                        catch (Exception exception) {
-                                            throw new hf_0(ph_2.a(2745, -31157) + this.V, exception);
-                                        }
-                                    }
-                                    object3 = object;
-                                }
-                                try {
-                                    bl = object3 instanceof Map;
-                                    if (string != null) break block19;
-                                    if (!bl) break block20;
-                                }
-                                catch (Exception exception) {
-                                    throw ph_2.a(exception);
-                                }
-                                list.add(object);
-                                Map map = (Map)object;
-                                collection = map.values();
-                                break block27;
-                            }
-                            try {
-                                object2 = object;
-                                if (string != null) break block21;
-                                bl = object2 instanceof Collection;
-                            }
-                            catch (Exception exception) {
-                                throw ph_2.a(exception);
-                            }
-                        }
-                        if (!bl) break block27;
-                        object2 = object;
-                    }
-                    collection = (Collection)object2;
-                }
-                try {
-                    list2 = collection;
-                    if (string != null) break block22;
-                    if (list2 == null) break block23;
-                }
-                catch (Exception exception) {
-                    throw ph_2.a(exception);
-                }
-                list2 = collection;
-            }
-            for (Object e2 : list2) {
-                block25: {
-                    block26: {
-                        Object e3;
-                        block24: {
-                            try {
-                                e3 = e2;
-                                if (string != null) break block24;
-                                if (e3 == null) break block25;
-                            }
-                            catch (Exception exception) {
-                                throw ph_2.a(exception);
-                            }
-                            e3 = e2;
-                        }
-                        try {
-                            if (!IG.C(e3.getClass())) break block26;
-                            break block25;
-                        }
-                        catch (Exception exception) {
-                            throw ph_2.a(exception);
-                        }
-                    }
-                    this.X(e2, list);
-                }
-                if (string == null) continue;
-            }
-            return;
-        }
-        throw new UnsupportedOperationException(clazz.getName());
-    }
-
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    protected void u(Object var1_1, List var2_2) {
-        block34: {
-            block33: {
-                block38: {
-                    block32: {
-                        block30: {
-                            block31: {
-                                block28: {
-                                    block29: {
-                                        var4_3 = var1_1.getClass();
-                                        var3_4 = hi_0.C();
-                                        var5_5 = this.e(var4_3);
-                                        var6_6 /* !! */  = null;
-                                        try {
-                                            v0 = var5_5;
-                                            if (var3_4 != null) break block28;
-                                            if (v0 == null) break block29;
-                                        }
-                                        catch (Exception v1) {
-                                            throw ph_2.a(v1);
-                                        }
-                                        try {
-                                            var6_6 /* !! */  = var5_5.Y(var1_1);
-                                        }
-                                        catch (Exception var7_7) {
-                                            throw new hf_0(ph_2.a(2745, -31157) + this.V, var7_7);
-                                        }
-                                    }
-                                    v0 = var1_1;
-                                }
-                                try {
-                                    v2 = v0 instanceof Map;
-                                    if (var3_4 != null) break block30;
-                                    if (!v2) break block31;
-                                }
-                                catch (Exception v3) {
-                                    throw ph_2.a(v3);
-                                }
-                                var7_8 = (Map)var1_1;
-                                var6_6 /* !! */  = var7_8.values();
-                                break block38;
-                            }
-                            try {
-                                v4 = var1_1;
-                                if (var3_4 != null) break block32;
-                                v2 = v4 instanceof Collection;
-                            }
-                            catch (Exception v5) {
-                                throw ph_2.a(v5);
-                            }
-                        }
-                        if (!v2) break block38;
-                        v4 = var1_1;
-                    }
-                    var6_6 /* !! */  = (Collection)v4;
-                }
-                try {
-                    v6 = var6_6 /* !! */ ;
-                    if (var3_4 != null) break block33;
-                    if (v6 == null) break block34;
-                }
-                catch (Exception v7) {
-                    throw ph_2.a(v7);
-                }
-                v6 = var6_6 /* !! */ ;
-            }
-            for (E var8_9 : v6) {
-                block37: {
-                    block35: {
-                        try {
-                            block36: {
-                                try {
-                                    try {
-                                        try {
-                                            if (var3_4 != null) break block35;
-                                            if (var8_9 == null) break block36;
-                                        }
-                                        catch (Exception v8) {
-                                            throw ph_2.a(v8);
-                                        }
-                                        v9 = IG.C(var8_9.getClass());
-                                        if (var3_4 != null) break block35;
-                                    }
-                                    catch (Exception v10) {
-                                        throw ph_2.a(v10);
-                                    }
-                                    if (v9) {
-                                    }
-                                    ** GOTO lbl81
-                                }
-                                catch (Exception v11) {
-                                    throw ph_2.a(v11);
-                                }
-                            }
-                            v9 = var2_2.add(var8_9);
-                        }
-                        catch (Exception v12) {
-                            throw ph_2.a(v12);
-                        }
-                    }
-                    try {
-                        if (var3_4 == null) break block37;
-lbl81:
-                        // 2 sources
-
-                        this.u(var8_9, var2_2);
-                    }
-                    catch (Exception v13) {
-                        throw ph_2.a(v13);
-                    }
-                }
-                if (var3_4 == null) continue;
-            }
-            return;
-        }
-        throw new UnsupportedOperationException(var4_3.getName());
-    }
-
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    static boolean m(Object object, Object object2) {
-        boolean bl;
-        block29: {
-            Object object3;
-            String string;
-            block27: {
-                block28: {
-                    Object object4;
-                    block25: {
-                        block26: {
-                            block24: {
-                                block22: {
-                                    block23: {
-                                        string = hi_0.C();
-                                        try {
-                                            try {
-                                                object4 = object;
-                                                if (string != null) break block22;
-                                                if (object4 != object2) break block23;
-                                                return true;
-                                            }
-                                            catch (hf_0 hf_02) {
-                                                throw ph_2.a(hf_02);
-                                            }
-                                        }
-                                        catch (hf_0 hf_03) {
-                                            throw ph_2.a(hf_03);
-                                        }
-                                    }
-                                    object4 = object;
-                                }
-                                try {
-                                    if (string != null) break block24;
-                                    if (object4 == null) return false;
-                                }
-                                catch (hf_0 hf_04) {
-                                    throw ph_2.a(hf_04);
-                                }
-                                object4 = object2;
-                            }
-                            try {
-                                try {
-                                    if (string != null) break block25;
-                                    if (object4 != null) break block26;
-                                    return false;
-                                }
-                                catch (hf_0 hf_05) {
-                                    throw ph_2.a(hf_05);
-                                }
-                            }
-                            catch (hf_0 hf_06) {
-                                throw ph_2.a(hf_06);
-                            }
-                        }
-                        object4 = object;
-                    }
-                    try {
-                        try {
-                            object3 = object4.getClass();
-                            if (string != null) break block27;
-                            if (object3 != object2.getClass()) break block28;
-                            return object.equals(object2);
-                        }
-                        catch (hf_0 hf_07) {
-                            throw ph_2.a(hf_07);
-                        }
-                    }
-                    catch (hf_0 hf_08) {
-                        throw ph_2.a(hf_08);
-                    }
-                }
-                object3 = object;
-            }
-            try {
-                try {
-                    boolean bl2;
-                    try {
-                        try {
-                            bl = object3 instanceof Number;
-                            if (string != null) return bl;
-                            if (!bl) break block29;
-                        }
-                        catch (hf_0 hf_09) {
-                            throw ph_2.a(hf_09);
-                        }
-                        bl2 = object2 instanceof Number;
-                        if (string != null) return bl2;
-                    }
-                    catch (hf_0 hf_010) {
-                        throw ph_2.a(hf_010);
-                    }
-                    if (!bl2) return false;
-                    return ph_2.A((Number)object, (Number)object2);
-                }
-                catch (hf_0 hf_011) {
-                    throw ph_2.a(hf_011);
-                }
-            }
-            catch (hf_0 hf_012) {
-                throw ph_2.a(hf_012);
-            }
-        }
-        bl = object.equals(object2);
-        return bl;
-    }
-
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    static boolean A(Number var0, Number var1_1) {
-        block63: {
-            block64: {
-                block65: {
-                    block66: {
-                        block60: {
-                            block61: {
-                                block62: {
-                                    block58: {
-                                        block59: {
-                                            block56: {
-                                                block57: {
-                                                    block50: {
-                                                        block51: {
-                                                            block52: {
-                                                                block53: {
-                                                                    block54: {
-                                                                        block55: {
-                                                                            block48: {
-                                                                                block49: {
-                                                                                    var3_2 = var0.getClass();
-                                                                                    var2_3 = hi_0.C();
-                                                                                    var4_4 = ph_2.O(var3_2);
-                                                                                    var5_5 = var1_1.getClass();
-                                                                                    var6_6 = ph_2.O(var5_5);
-                                                                                    try {
-                                                                                        v0 = var0 instanceof BigDecimal;
-                                                                                        if (var2_3 != null) break block48;
-                                                                                        if (!v0) break block49;
-                                                                                    }
-                                                                                    catch (hf_0 v1) {
-                                                                                        throw ph_2.a(v1);
-                                                                                    }
-                                                                                    var7_7 = (BigDecimal)var0;
-                                                                                    try {
-                                                                                        try {
-                                                                                            v0 = var6_6;
-                                                                                            if (var2_3 != null) break block48;
-                                                                                            if (!v0) break block49;
-                                                                                        }
-                                                                                        catch (hf_0 v2) {
-                                                                                            throw ph_2.a(v2);
-                                                                                        }
-                                                                                        return var7_7.equals(BigDecimal.valueOf(B8.e(var1_1)));
-                                                                                    }
-                                                                                    catch (hf_0 v3) {
-                                                                                        throw ph_2.a(v3);
-                                                                                    }
-                                                                                }
-                                                                                v0 = var4_4;
-                                                                            }
-                                                                            try {
-                                                                                try {
-                                                                                    try {
-                                                                                        try {
-                                                                                            try {
-                                                                                                if (var2_3 != null) break block50;
-                                                                                                if (!v0) break block51;
-                                                                                            }
-                                                                                            catch (hf_0 v4) {
-                                                                                                throw ph_2.a(v4);
-                                                                                            }
-                                                                                            v0 = var6_6;
-                                                                                            if (var2_3 != null) break block52;
-                                                                                        }
-                                                                                        catch (hf_0 v5) {
-                                                                                            throw ph_2.a(v5);
-                                                                                        }
-                                                                                        if (!v0) break block53;
-                                                                                    }
-                                                                                    catch (hf_0 v6) {
-                                                                                        throw ph_2.a(v6);
-                                                                                    }
-                                                                                    cfr_temp_0 = var0.longValue() - var1_1.longValue();
-                                                                                    v7 = cfr_temp_0 == 0L ? 0 : (cfr_temp_0 < 0L ? -1 : 1);
-                                                                                    if (var2_3 != null) break block54;
-                                                                                }
-                                                                                catch (hf_0 v8) {
-                                                                                    throw ph_2.a(v8);
-                                                                                }
-                                                                                if (v7 != false) break block55;
-                                                                            }
-                                                                            catch (hf_0 v9) {
-                                                                                throw ph_2.a(v9);
-                                                                            }
-                                                                            v7 = 1;
-                                                                            break block54;
-                                                                        }
-                                                                        v7 = 0;
-                                                                    }
-                                                                    return (boolean)v7;
-                                                                }
-                                                                v0 = var1_1 instanceof BigInteger;
-                                                            }
-                                                            try {
-                                                                if (var2_3 != null) break block50;
-                                                                if (!v0) break block51;
-                                                            }
-                                                            catch (hf_0 v10) {
-                                                                throw ph_2.a(v10);
-                                                            }
-                                                            var7_7 = (BigInteger)var0;
-                                                            var8_9 = BigInteger.valueOf(var0.longValue());
-                                                            return var8_9.equals(var7_7);
-                                                        }
-                                                        v0 = var6_6;
-                                                    }
-                                                    try {
-                                                        try {
-                                                            try {
-                                                                if (var2_3 != null) break block56;
-                                                                if (!v0) break block57;
-                                                            }
-                                                            catch (hf_0 v11) {
-                                                                throw ph_2.a(v11);
-                                                            }
-                                                            v0 = var0 instanceof BigInteger;
-                                                            if (var2_3 != null) break block56;
-                                                        }
-                                                        catch (hf_0 v12) {
-                                                            throw ph_2.a(v12);
-                                                        }
-                                                        if (!v0) break block57;
-                                                    }
-                                                    catch (hf_0 v13) {
-                                                        throw ph_2.a(v13);
-                                                    }
-                                                    var7_7 = (BigInteger)var0;
-                                                    var8_10 = BigInteger.valueOf(B8.e(var1_1));
-                                                    return var7_7.equals(var8_10);
-                                                }
-                                                v0 = ph_2.o(var3_2);
-                                            }
-                                            var7_8 = v0;
-                                            var8_11 = ph_2.o(var5_5);
-                                            try {
-                                                try {
-                                                    try {
-                                                        v14 = var7_8;
-                                                        if (var2_3 != null) break block58;
-                                                        if (!v14) break block59;
-                                                    }
-                                                    catch (hf_0 v15) {
-                                                        throw ph_2.a(v15);
-                                                    }
-                                                    v16 = var8_11;
-                                                    if (var2_3 != null) break block60;
-                                                }
-                                                catch (hf_0 v17) {
-                                                    throw ph_2.a(v17);
-                                                }
-                                                if (!v16) {
-                                                }
-                                                ** GOTO lbl164
-                                            }
-                                            catch (hf_0 v18) {
-                                                throw ph_2.a(v18);
-                                            }
-                                        }
-                                        v14 = var7_8;
-                                    }
-                                    try {
-                                        try {
-                                            try {
-                                                if (var2_3 != null) break block61;
-                                                if (!v14) break block62;
-                                            }
-                                            catch (hf_0 v19) {
-                                                throw ph_2.a(v19);
-                                            }
-                                            v16 = var6_6;
-                                            if (var2_3 != null) break block60;
-                                        }
-                                        catch (hf_0 v20) {
-                                            throw ph_2.a(v20);
-                                        }
-                                        if (!v16) {
-                                        }
-                                        ** GOTO lbl164
-                                    }
-                                    catch (hf_0 v21) {
-                                        throw ph_2.a(v21);
-                                    }
-                                }
-                                v14 = var8_11;
-                            }
-                            try {
-                                try {
-                                    try {
-                                        try {
-                                            if (var2_3 != null) break block63;
-                                            if (!v14) break block64;
-                                        }
-                                        catch (hf_0 v22) {
-                                            throw ph_2.a(v22);
-                                        }
-                                        v14 = var4_4;
-                                        if (var2_3 != null) break block63;
-                                    }
-                                    catch (hf_0 v23) {
-                                        throw ph_2.a(v23);
-                                    }
-                                    if (!v14) break block64;
-                                }
-                                catch (hf_0 v24) {
-                                    throw ph_2.a(v24);
-                                }
-lbl164:
-                                // 3 sources
-
-                                v16 = (cfr_temp_1 = var0.doubleValue() - var1_1.doubleValue()) == 0.0 ? 0 : (cfr_temp_1 > 0.0 ? 1 : -1);
-                            }
-                            catch (hf_0 v25) {
-                                throw ph_2.a(v25);
-                            }
-                        }
-                        try {
-                            if (var2_3 != null) break block65;
-                            if (v16) break block66;
-                        }
-                        catch (hf_0 v26) {
-                            throw ph_2.a(v26);
-                        }
-                        v16 = true;
-                        break block65;
-                    }
-                    v16 = false;
-                }
-                return v16;
-            }
-            v14 = false;
-        }
-        return v14;
-    }
-
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    protected static boolean o(Class clazz) {
-        Class clazz2;
-        Class clazz3;
-        block6: {
-            String string = hi_0.C();
-            try {
-                try {
-                    Class clazz2 = clazz;
-                    clazz2 = Float.class;
-                    if (string != null) break block6;
-                    if (clazz3 == clazz2) return true;
-                }
-                catch (hf_0 hf_02) {
-                    throw ph_2.a(hf_02);
-                }
-                Class clazz2 = clazz;
-                clazz2 = Double.class;
-            }
-            catch (hf_0 hf_03) {
-                throw ph_2.a(hf_03);
-            }
-        }
-        try {
-            if (clazz3 != clazz2) return false;
-            return true;
-        }
-        catch (hf_0 hf_04) {
-            throw ph_2.a(hf_04);
-        }
-    }
-
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    protected static boolean O(Class clazz) {
-        Class clazz2;
-        Class clazz3;
-        block16: {
-            String string;
-            block15: {
-                block14: {
-                    string = hi_0.C();
-                    try {
-                        try {
-                            Class clazz2 = clazz;
-                            clazz2 = Byte.class;
-                            if (string != null) break block14;
-                            if (clazz3 == clazz2) return true;
-                        }
-                        catch (hf_0 hf_02) {
-                            throw ph_2.a(hf_02);
-                        }
-                        Class clazz2 = clazz;
-                        clazz2 = Short.class;
-                    }
-                    catch (hf_0 hf_03) {
-                        throw ph_2.a(hf_03);
-                    }
-                }
-                try {
-                    try {
-                        if (string != null) break block15;
-                        if (clazz3 == clazz2) return true;
-                    }
-                    catch (hf_0 hf_04) {
-                        throw ph_2.a(hf_04);
-                    }
-                    Class clazz2 = clazz;
-                    clazz2 = Integer.class;
-                }
-                catch (hf_0 hf_05) {
-                    throw ph_2.a(hf_05);
-                }
-            }
-            try {
-                try {
-                    if (string != null) break block16;
-                    if (clazz3 == clazz2) return true;
-                }
-                catch (hf_0 hf_06) {
-                    throw ph_2.a(hf_06);
-                }
-                Class clazz2 = clazz;
-                clazz2 = Long.class;
-            }
-            catch (hf_0 hf_07) {
-                throw ph_2.a(hf_07);
-            }
-        }
-        try {
-            if (clazz3 != clazz2) return false;
-            return true;
-        }
-        catch (hf_0 hf_08) {
-            throw ph_2.a(hf_08);
-        }
-    }
-
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    protected Object S(Object var1_1, String var2_2, long var3_3) {
-        block175: {
-            block160: {
-                block161: {
-                    block162: {
-                        block163: {
-                            block151: {
-                                block152: {
-                                    block155: {
-                                        block153: {
-                                            block136: {
-                                                block137: {
-                                                    block150: {
-                                                        block141: {
-                                                            block140: {
-                                                                block138: {
-                                                                    block134: {
-                                                                        block135: {
-                                                                            block130: {
-                                                                                block177: {
-                                                                                    block131: {
-                                                                                        block132: {
-                                                                                            block133: {
-                                                                                                block181: {
-                                                                                                    block180: {
-                                                                                                        block179: {
-                                                                                                            block178: {
-                                                                                                                block128: {
-                                                                                                                    block129: {
-                                                                                                                        block126: {
-                                                                                                                            block127: {
-                                                                                                                                var5_4 = hi_0.C();
-                                                                                                                                v0 = var1_1;
-                                                                                                                                if (var5_4 != null) break block126;
-                                                                                                                                try {
-                                                                                                                                    block176: {
-                                                                                                                                        if (v0 != null) break block127;
-                                                                                                                                        break block176;
-                                                                                                                                        catch (Exception v1) {
-                                                                                                                                            throw ph_2.a(v1);
-                                                                                                                                        }
-                                                                                                                                    }
-                                                                                                                                    return null;
-                                                                                                                                }
-                                                                                                                                catch (Exception v2) {
-                                                                                                                                    throw ph_2.a(v2);
-                                                                                                                                }
-                                                                                                                            }
-                                                                                                                            v0 = var1_1;
-                                                                                                                        }
-                                                                                                                        try {
-                                                                                                                            v3 = v0 instanceof String;
-                                                                                                                            if (var5_4 != null) break block128;
-                                                                                                                            if (!v3) break block129;
-                                                                                                                        }
-                                                                                                                        catch (Exception v4) {
-                                                                                                                            throw ph_2.a(v4);
-                                                                                                                        }
-                                                                                                                        try {
-                                                                                                                            var1_1 = var6_5 = (O0)ok_0.q((String)var1_1, this.w);
-                                                                                                                        }
-                                                                                                                        catch (Exception var6_6) {
-                                                                                                                            // empty catch block
-                                                                                                                        }
-                                                                                                                    }
-                                                                                                                    try {
-                                                                                                                        v5 = var1_1;
-                                                                                                                        if (var5_4 != null) break block130;
-                                                                                                                        v3 = v5 instanceof Map;
-                                                                                                                    }
-                                                                                                                    catch (Exception v6) {
-                                                                                                                        throw ph_2.a(v6);
-                                                                                                                    }
-                                                                                                                }
-                                                                                                                if (!v3) break block177;
-                                                                                                                var6_5 = (Map)var1_1;
-                                                                                                                var7_7 /* !! */  = var6_5.get(var2_2);
-                                                                                                                v7 = var7_7 /* !! */ ;
-                                                                                                                if (var5_4 != null) break block131;
-                                                                                                                if (v7 != null) break block132;
-                                                                                                                break block178;
-                                                                                                                catch (Exception v8) {
-                                                                                                                    throw ph_2.a(v8);
-                                                                                                                }
-                                                                                                            }
-                                                                                                            cfr_temp_0 = ph_2.b(25101, 5373610143680010505L) - var3_3;
-                                                                                                            v9 = cfr_temp_0 == 0L ? 0 : (cfr_temp_0 < 0L ? -1 : 1);
-                                                                                                            if (var5_4 != null) break block133;
-                                                                                                            break block179;
-                                                                                                            catch (Exception v10) {
-                                                                                                                throw ph_2.a(v10);
-                                                                                                            }
-                                                                                                        }
-                                                                                                        if (v9 == false) ** GOTO lbl77
-                                                                                                        break block180;
-                                                                                                        catch (Exception v11) {
-                                                                                                            throw ph_2.a(v11);
-                                                                                                        }
-                                                                                                    }
-                                                                                                    cfr_temp_1 = ph_2.b(13474, 4151343535624310697L) - var3_3;
-                                                                                                    v9 = cfr_temp_1 == 0L ? 0 : (cfr_temp_1 < 0L ? -1 : 1);
-                                                                                                    if (var5_4 != null) break block133;
-                                                                                                    break block181;
-                                                                                                    catch (Exception v12) {
-                                                                                                        throw ph_2.a(v12);
-                                                                                                    }
-                                                                                                }
-                                                                                                try {
-                                                                                                    block182: {
-                                                                                                        if (v9 != false) break block132;
-                                                                                                        break block182;
-                                                                                                        catch (Exception v13) {
-                                                                                                            throw ph_2.a(v13);
-                                                                                                        }
-                                                                                                    }
-                                                                                                    v9 = var6_5.size();
-                                                                                                }
-                                                                                                catch (Exception v14) {
-                                                                                                    throw ph_2.a(v14);
-                                                                                                }
-                                                                                            }
-                                                                                            var7_7 /* !! */  = (int)v9;
-                                                                                        }
-                                                                                        v7 = var7_7 /* !! */ ;
-                                                                                    }
-                                                                                    return v7;
-                                                                                }
-                                                                                v5 = var1_1;
-                                                                            }
-                                                                            var6_5 = v5.getClass();
-                                                                            var7_8 = this.e((Class)var6_5);
-                                                                            try {
-                                                                                v15 = var7_8;
-                                                                                if (var5_4 != null) break block134;
-                                                                                if (v15 == null) break block135;
-                                                                            }
-                                                                            catch (Exception v16) {
-                                                                                throw ph_2.a(v16);
-                                                                            }
-                                                                            try {
-                                                                                return var7_8.R(var1_1, var2_2, var3_3, false);
-                                                                            }
-                                                                            catch (Exception var8_9) {
-                                                                                throw new hf_0(ph_2.a(2745, -31157) + this.V + ph_2.a(2740, 24767) + var2_2, var8_9);
-                                                                            }
-                                                                        }
-                                                                        v15 = var1_1;
-                                                                    }
-                                                                    try {
-                                                                        v17 = v15 instanceof List;
-                                                                        if (var5_4 != null) break block136;
-                                                                        if (!v17) break block137;
-                                                                    }
-                                                                    catch (Exception v18) {
-                                                                        throw ph_2.a(v18);
-                                                                    }
-                                                                    var8_10 = (List)var1_1;
-                                                                    try {
-                                                                        block139: {
-                                                                            try {
-                                                                                try {
-                                                                                    try {
-                                                                                        cfr_temp_2 = ph_2.b(13541, 4460833452907581416L) - var3_3;
-                                                                                        v19 = cfr_temp_2 == 0L ? 0 : (cfr_temp_2 < 0L ? -1 : 1);
-                                                                                        if (var5_4 != null) break block138;
-                                                                                        if (v19 == false) break block139;
-                                                                                    }
-                                                                                    catch (Exception v20) {
-                                                                                        throw ph_2.a(v20);
-                                                                                    }
-                                                                                    cfr_temp_3 = ph_2.b(5266, 5429430684185816989L) - var3_3;
-                                                                                    v19 = cfr_temp_3 == 0L ? 0 : (cfr_temp_3 < 0L ? -1 : 1);
-                                                                                    if (var5_4 != null) break block138;
-                                                                                }
-                                                                                catch (Exception v21) {
-                                                                                    throw ph_2.a(v21);
-                                                                                }
-                                                                                if (v19 != false) break block140;
-                                                                            }
-                                                                            catch (Exception v22) {
-                                                                                throw ph_2.a(v22);
-                                                                            }
-                                                                        }
-                                                                        v19 = var8_10.size();
-                                                                    }
-                                                                    catch (Exception v23) {
-                                                                        throw ph_2.a(v23);
-                                                                    }
-                                                                }
-                                                                return (int)v19;
-                                                            }
-                                                            var9_13 = null;
-                                                            for (var10_15 = 0; var10_15 < var8_10.size(); ++var10_15) {
-                                                                block148: {
-                                                                    block149: {
-                                                                        block145: {
-                                                                            block146: {
-                                                                                block147: {
-                                                                                    block142: {
-                                                                                        block143: {
-                                                                                            block144: {
-                                                                                                var11_18 = var8_10.get(var10_15);
-                                                                                                try {
-                                                                                                    try {
-                                                                                                        try {
-                                                                                                            try {
-                                                                                                                if (var5_4 != null) break block141;
-                                                                                                                v24 /* !! */  = var11_18;
-                                                                                                                if (var5_4 != null) break block142;
-                                                                                                            }
-                                                                                                            catch (Exception v25) {
-                                                                                                                throw ph_2.a(v25);
-                                                                                                            }
-                                                                                                            if (v24 /* !! */  == var8_10) {
-                                                                                                            }
-                                                                                                            ** GOTO lbl179
-                                                                                                        }
-                                                                                                        catch (Exception v26) {
-                                                                                                            throw ph_2.a(v26);
-                                                                                                        }
-                                                                                                        v27 = var9_13;
-                                                                                                        if (var5_4 != null) break block143;
-                                                                                                    }
-                                                                                                    catch (Exception v28) {
-                                                                                                        throw ph_2.a(v28);
-                                                                                                    }
-                                                                                                    if (v27 != null) break block144;
-                                                                                                }
-                                                                                                catch (Exception v29) {
-                                                                                                    throw ph_2.a(v29);
-                                                                                                }
-                                                                                                var9_13 = new oc_0(var8_10.size());
-                                                                                            }
-                                                                                            v27 = var9_13;
-                                                                                        }
-                                                                                        try {
-                                                                                            v27.add(var11_18);
-                                                                                            if (var5_4 == null) continue;
-lbl179:
-                                                                                            // 2 sources
-
-                                                                                            v24 /* !! */  = this.S(var11_18, var2_2, var3_3);
-                                                                                        }
-                                                                                        catch (Exception v30) {
-                                                                                            throw ph_2.a(v30);
-                                                                                        }
-                                                                                    }
-                                                                                    var12_20 = v24 /* !! */ ;
-                                                                                    try {
-                                                                                        v31 = var12_20;
-                                                                                        if (var5_4 != null) break block145;
-                                                                                        if (v31 instanceof Collection) {
-                                                                                        }
-                                                                                        ** GOTO lbl209
-                                                                                    }
-                                                                                    catch (Exception v32) {
-                                                                                        throw ph_2.a(v32);
-                                                                                    }
-                                                                                    var13_24 = (Collection)var12_20;
-                                                                                    try {
-                                                                                        v33 = var9_13;
-                                                                                        if (var5_4 != null) break block146;
-                                                                                        if (v33 != null) break block147;
-                                                                                    }
-                                                                                    catch (Exception v34) {
-                                                                                        throw ph_2.a(v34);
-                                                                                    }
-                                                                                    var9_13 = new oc_0(var8_10.size());
-                                                                                }
-                                                                                v33 = var9_13;
-                                                                            }
-                                                                            try {
-                                                                                v33.addAll(var13_24);
-                                                                                if (var5_4 == null) continue;
-lbl209:
-                                                                                // 2 sources
-
-                                                                                v31 = var12_20;
-                                                                            }
-                                                                            catch (Exception v35) {
-                                                                                throw ph_2.a(v35);
-                                                                            }
-                                                                        }
-                                                                        try {
-                                                                            try {
-                                                                                try {
-                                                                                    if (v31 == null && this.T) continue;
-                                                                                }
-                                                                                catch (Exception v36) {
-                                                                                    throw ph_2.a(v36);
-                                                                                }
-                                                                                v37 = var9_13;
-                                                                                if (var5_4 != null) break block148;
-                                                                            }
-                                                                            catch (Exception v38) {
-                                                                                throw ph_2.a(v38);
-                                                                            }
-                                                                            if (v37 != null) break block149;
-                                                                        }
-                                                                        catch (Exception v39) {
-                                                                            throw ph_2.a(v39);
-                                                                        }
-                                                                        var9_13 = new oc_0(var8_10.size());
-                                                                    }
-                                                                    v37 = var9_13;
-                                                                }
-                                                                v37.add(var12_20);
-                                                                if (var5_4 == null) continue;
-                                                            }
-                                                            try {
-                                                                v40 = var9_13;
-                                                                if (var5_4 != null) break block150;
-                                                                if (v40 != null) break block141;
-                                                            }
-                                                            catch (Exception v41) {
-                                                                throw ph_2.a(v41);
-                                                            }
-                                                            var9_13 = Collections.emptyList();
-                                                        }
-                                                        v40 = var9_13;
-                                                    }
-                                                    return v40;
-                                                }
-                                                v17 = var1_1 instanceof Object[];
-                                            }
-                                            try {
-                                                if (var5_4 != null) break block151;
-                                                if (!v17) break block152;
-                                            }
-                                            catch (Exception v42) {
-                                                throw ph_2.a(v42);
-                                            }
-                                            var8_11 = (Object[])var1_1;
-                                            try {
-                                                block154: {
-                                                    try {
-                                                        try {
-                                                            try {
-                                                                cfr_temp_4 = ph_2.b(13541, 4460833452907581416L) - var3_3;
-                                                                v43 = cfr_temp_4 == 0L ? 0 : (cfr_temp_4 < 0L ? -1 : 1);
-                                                                if (var5_4 != null) break block153;
-                                                                if (v43 == false) break block154;
-                                                            }
-                                                            catch (Exception v44) {
-                                                                throw ph_2.a(v44);
-                                                            }
-                                                            cfr_temp_5 = ph_2.b(5266, 5429430684185816989L) - var3_3;
-                                                            v43 = cfr_temp_5 == 0L ? 0 : (cfr_temp_5 < 0L ? -1 : 1);
-                                                            if (var5_4 != null) break block153;
-                                                        }
-                                                        catch (Exception v45) {
-                                                            throw ph_2.a(v45);
-                                                        }
-                                                        if (v43 != false) break block155;
-                                                    }
-                                                    catch (Exception v46) {
-                                                        throw ph_2.a(v46);
-                                                    }
-                                                }
-                                                v43 = var8_11.length;
-                                            }
-                                            catch (Exception v47) {
-                                                throw ph_2.a(v47);
-                                            }
-                                        }
-                                        return (int)v43;
-                                    }
-                                    var9_14 = new oc_0(var8_11.length);
-                                    for (var10_16 = 0; var10_16 < var8_11.length; ++var10_16) {
-                                        block158: {
-                                            block156: {
-                                                var11_19 = var8_11[var10_16];
-                                                try {
-                                                    block157: {
-                                                        try {
-                                                            try {
-                                                                v48 = var11_19;
-                                                                if (var5_4 != null) break block156;
-                                                                if (v48 != var8_11) break block157;
-                                                            }
-                                                            catch (Exception v49) {
-                                                                throw ph_2.a(v49);
-                                                            }
-                                                            var9_14.add(var11_19);
-                                                            if (var5_4 == null) continue;
-                                                        }
-                                                        catch (Exception v50) {
-                                                            throw ph_2.a(v50);
-                                                        }
-                                                    }
-                                                    v48 = this.S(var11_19, var2_2, var3_3);
-                                                }
-                                                catch (Exception v51) {
-                                                    throw ph_2.a(v51);
-                                                }
-                                            }
-                                            var12_21 = v48;
-                                            try {
-                                                v52 = var12_21;
-                                                if (var5_4 != null) break block158;
-                                                if (v52 instanceof Collection) {
-                                                }
-                                                ** GOTO lbl326
-                                            }
-                                            catch (Exception v53) {
-                                                throw ph_2.a(v53);
-                                            }
-                                            var13_25 = (Collection)var12_21;
-                                            try {
-                                                var9_14.addAll(var13_25);
-                                                if (var5_4 == null) continue;
-lbl326:
-                                                // 2 sources
-
-                                                v52 = var12_21;
-                                            }
-                                            catch (Exception v54) {
-                                                throw ph_2.a(v54);
-                                            }
-                                        }
-                                        try {
-                                            block159: {
-                                                try {
-                                                    try {
-                                                        if (v52 != null) break block159;
-                                                        v55 = this.T;
-                                                        if (var5_4 != null) continue;
-                                                    }
-                                                    catch (Exception v56) {
-                                                        throw ph_2.a(v56);
-                                                    }
-                                                    if (v55) continue;
-                                                }
-                                                catch (Exception v57) {
-                                                    throw ph_2.a(v57);
-                                                }
-                                            }
-                                            v55 = var9_14.add(var12_21);
-                                            continue;
-                                        }
-                                        catch (Exception v58) {
-                                            throw ph_2.a(v58);
-                                        }
-                                    }
-                                    return var9_14;
-                                }
-                                v17 = var1_1 instanceof Enum;
-                            }
-                            try {
-                                if (var5_4 != null) break block160;
-                                if (!v17) break block161;
-                            }
-                            catch (Exception v59) {
-                                throw ph_2.a(v59);
-                            }
-                            var8_12 = ph_2.b(24888, 4613454632877529636L);
-                            var10_17 = ph_2.b(3158, 4834138499094902620L);
-                            var12_22 = (Enum)var1_1;
-                            try {
-                                try {
-                                    cfr_temp_6 = ph_2.b(31798, 4207313242258310970L) - var3_3;
-                                    v17 = cfr_temp_6 == 0L ? 0 : (cfr_temp_6 < 0L ? -1 : 1);
-                                    if (var5_4 != null) break block162;
-                                    if (v17) break block163;
-                                }
-                                catch (Exception v60) {
-                                    throw ph_2.a(v60);
-                                }
-                                return var12_22.name();
-                            }
-                            catch (Exception v61) {
-                                throw ph_2.a(v61);
-                            }
-                        }
-                        cfr_temp_7 = ph_2.b(27073, 7537955708887077596L) - var3_3;
-                        v17 = cfr_temp_7 == 0L ? 0 : (cfr_temp_7 < 0L ? -1 : 1);
-                    }
-                    try {
-                        try {
-                            if (var5_4 != null) break block160;
-                            if (v17) break block161;
-                        }
-                        catch (Exception v62) {
-                            throw ph_2.a(v62);
-                        }
-                        return var12_22.ordinal();
-                    }
-                    catch (Exception v63) {
-                        throw ph_2.a(v63);
-                    }
-                }
-                v17 = var1_1 instanceof Calendar;
-            }
-            if (v17) {
-                block174: {
-                    block172: {
-                        block173: {
-                            block170: {
-                                block171: {
-                                    block168: {
-                                        block169: {
-                                            block166: {
-                                                block167: {
-                                                    block164: {
-                                                        block165: {
-                                                            var8_12 = ph_2.b(15373, 4510529984305973004L);
-                                                            var10_17 = ph_2.b(25031, 559826626649299653L);
-                                                            var12_23 = ph_2.b(22532, 4726992648096850690L);
-                                                            var14_26 = ph_2.b(26669, 4419094668829561640L);
-                                                            var16_27 = ph_2.b(28343, 1332627107792131519L);
-                                                            var18_28 = ph_2.b(14976, 8855573924842095007L);
-                                                            var20_29 = (Calendar)var1_1;
-                                                            try {
-                                                                try {
-                                                                    cfr_temp_8 = ph_2.b(4741, 160794128543508875L) - var3_3;
-                                                                    v64 = cfr_temp_8 == 0L ? 0 : (cfr_temp_8 < 0L ? -1 : 1);
-                                                                    if (var5_4 != null) break block164;
-                                                                    if (v64 != false) break block165;
-                                                                }
-                                                                catch (Exception v65) {
-                                                                    throw ph_2.a(v65);
-                                                                }
-                                                                return var20_29.get(1);
-                                                            }
-                                                            catch (Exception v66) {
-                                                                throw ph_2.a(v66);
-                                                            }
-                                                        }
-                                                        cfr_temp_9 = ph_2.b(31504, 3058217878099886096L) - var3_3;
-                                                        v64 = cfr_temp_9 == 0L ? 0 : (cfr_temp_9 < 0L ? -1 : 1);
-                                                    }
-                                                    try {
-                                                        try {
-                                                            if (var5_4 != null) break block166;
-                                                            if (v64 != false) break block167;
-                                                        }
-                                                        catch (Exception v67) {
-                                                            throw ph_2.a(v67);
-                                                        }
-                                                        return var20_29.get(2);
-                                                    }
-                                                    catch (Exception v68) {
-                                                        throw ph_2.a(v68);
-                                                    }
-                                                }
-                                                cfr_temp_10 = ph_2.b(4624, 3327246407184673038L) - var3_3;
-                                                v64 = cfr_temp_10 == 0L ? 0 : (cfr_temp_10 < 0L ? -1 : 1);
-                                            }
-                                            try {
-                                                try {
-                                                    if (var5_4 != null) break block168;
-                                                    if (v64 != false) break block169;
-                                                }
-                                                catch (Exception v69) {
-                                                    throw ph_2.a(v69);
-                                                }
-                                                return var20_29.get(5);
-                                            }
-                                            catch (Exception v70) {
-                                                throw ph_2.a(v70);
-                                            }
-                                        }
-                                        cfr_temp_11 = ph_2.b(5705, 8719773549315124544L) - var3_3;
-                                        v64 = cfr_temp_11 == 0L ? 0 : (cfr_temp_11 < 0L ? -1 : 1);
-                                    }
-                                    try {
-                                        try {
-                                            if (var5_4 != null) break block170;
-                                            if (v64 != false) break block171;
-                                        }
-                                        catch (Exception v71) {
-                                            throw ph_2.a(v71);
-                                        }
-                                        return var20_29.get(ph_2.a(350, 4928691428755676694L));
-                                    }
-                                    catch (Exception v72) {
-                                        throw ph_2.a(v72);
-                                    }
-                                }
-                                cfr_temp_12 = ph_2.b(3718, 553241040576607621L) - var3_3;
-                                v64 = cfr_temp_12 == 0L ? 0 : (cfr_temp_12 < 0L ? -1 : 1);
-                            }
-                            try {
-                                try {
-                                    if (var5_4 != null) break block172;
-                                    if (v64 != false) break block173;
-                                }
-                                catch (Exception v73) {
-                                    throw ph_2.a(v73);
-                                }
-                                return var20_29.get(ph_2.a(18485, 3339895755361081210L));
-                            }
-                            catch (Exception v74) {
-                                throw ph_2.a(v74);
-                            }
-                        }
-                        cfr_temp_13 = ph_2.b(10755, 3222351445514703108L) - var3_3;
-                        v64 = cfr_temp_13 == 0L ? 0 : (cfr_temp_13 < 0L ? -1 : 1);
-                    }
-                    try {
-                        try {
-                            if (var5_4 != null) break block174;
-                            if (v64 != false) break block175;
-                        }
-                        catch (Exception v75) {
-                            throw ph_2.a(v75);
-                        }
-                        v64 = var20_29.get(ph_2.a(10608, 7735060080889968188L));
-                    }
-                    catch (Exception v76) {
-                        throw ph_2.a(v76);
-                    }
-                }
-                return (int)v64;
-            }
-        }
-        return null;
-    }
-
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    protected void L(Object var1_1, String var2_2, List var3_3) {
-        block55: {
-            block54: {
-                block51: {
-                    block52: {
-                        block49: {
-                            block59: {
-                                block42: {
-                                    block43: {
-                                        block40: {
-                                            block41: {
-                                                var4_4 = hi_0.C();
-                                                try {
-                                                    v0 = var1_1;
-                                                    if (var4_4 != null) break block40;
-                                                    if (v0 != null) break block41;
-                                                }
-                                                catch (InvocationTargetException v1) {
-                                                    throw ph_2.a(v1);
-                                                }
-                                                return;
-                                            }
-                                            v0 = var1_1;
-                                        }
-                                        try {
-                                            v2 = v0 instanceof Map;
-                                            if (var4_4 != null) break block42;
-                                            if (!v2) break block43;
-                                        }
-                                        catch (InvocationTargetException v3) {
-                                            throw ph_2.a(v3);
-                                        }
-                                        var5_5 = (Map)var1_1;
-                                        for (Map.Entry<K, V> var7_11 : var5_5.entrySet()) {
-                                            block48: {
-                                                block44: {
-                                                    block45: {
-                                                        block46: {
-                                                            block47: {
-                                                                block57: {
-                                                                    block56: {
-                                                                        var8_15 = var7_11.getValue();
-                                                                        v4 /* !! */  = var2_2;
-                                                                        if (var4_4 != null) break block44;
-                                                                        if (!v4 /* !! */ .equals(var7_11.getKey())) break block45;
-                                                                        break block56;
-                                                                        catch (InvocationTargetException v5) {
-                                                                            throw ph_2.a(v5);
-                                                                        }
-                                                                    }
-                                                                    v6 = var8_15 instanceof Collection;
-                                                                    if (var4_4 != null) break block46;
-                                                                    break block57;
-                                                                    catch (InvocationTargetException v7) {
-                                                                        throw ph_2.a(v7);
-                                                                    }
-                                                                }
-                                                                try {
-                                                                    block58: {
-                                                                        if (!v6) break block47;
-                                                                        break block58;
-                                                                        catch (InvocationTargetException v8) {
-                                                                            throw ph_2.a(v8);
-                                                                        }
-                                                                    }
-                                                                    var3_3.addAll((Collection)var8_15);
-                                                                    if (var4_4 == null) continue;
-                                                                }
-                                                                catch (InvocationTargetException v9) {
-                                                                    throw ph_2.a(v9);
-                                                                }
-                                                            }
-                                                            v6 = var3_3.add(var8_15);
-                                                        }
-                                                        if (var4_4 == null) continue;
-                                                    }
-                                                    v4 /* !! */  = var8_15;
-                                                }
-                                                try {
-                                                    if (var4_4 != null) break block48;
-                                                    if (v4 /* !! */  == null) continue;
-                                                }
-                                                catch (InvocationTargetException v10) {
-                                                    throw ph_2.a(v10);
-                                                }
-                                                v4 /* !! */  = var8_15;
-                                            }
-                                            try {
-                                                if (IG.C(v4 /* !! */ .getClass()) && var4_4 == null) continue;
-                                            }
-                                            catch (InvocationTargetException v11) {
-                                                throw ph_2.a(v11);
-                                            }
-                                            this.L(var8_15, var2_2, var3_3);
-                                            if (var4_4 == null) continue;
-                                        }
-                                        return;
-                                    }
-                                    try {
-                                        v12 = var1_1;
-                                        if (var4_4 != null) break block49;
-                                        v2 = v12 instanceof Collection;
-                                    }
-                                    catch (InvocationTargetException v13) {
-                                        throw ph_2.a(v13);
-                                    }
-                                }
-                                if (!v2) break block59;
-                                for (E var6_9 : (Collection)var1_1) {
-                                    block60: {
-                                        block50: {
-                                            if (var4_4 != null) break block60;
-                                            try {
-                                                block61: {
-                                                    if (!IG.C(var6_9.getClass())) break block50;
-                                                    break block61;
-                                                    catch (InvocationTargetException v14) {
-                                                        throw ph_2.a(v14);
-                                                    }
-                                                }
-                                                if (var4_4 == null) continue;
-                                            }
-                                            catch (InvocationTargetException v15) {
-                                                throw ph_2.a(v15);
-                                            }
-                                        }
-                                        this.L(var6_9, var2_2, var3_3);
-                                    }
-                                    if (var4_4 == null) continue;
-                                }
-                                return;
-                            }
-                            v12 = var1_1;
-                        }
-                        var5_7 = v12.getClass();
-                        var6_10 = this.e(var5_7);
-                        try {
-                            v16 = var6_10;
-                            if (var4_4 != null) break block51;
-                            if (v16 == null) break block52;
-                        }
-                        catch (InvocationTargetException v17) {
-                            throw ph_2.a(v17);
-                        }
-                        try {
-                            block53: {
-                                var7_12 = var6_10.d(var2_2);
-                                try {
-                                    v18 = var7_12;
-                                    if (var4_4 == null) {
-                                        if (v18 == null) break block53;
-                                    }
-                                    ** GOTO lbl126
-                                }
-                                catch (InvocationTargetException v19) {
-                                    throw ph_2.a(v19);
-                                }
-                                try {
-                                    v18 = var7_12.t(var1_1);
-lbl126:
-                                    // 2 sources
-
-                                    var8_16 = v18;
-                                    var3_3.add(var8_16);
-                                }
-                                catch (InvocationTargetException var8_17) {
-                                    throw new hi_0(ph_2.a(2747, -6984) + var2_2, var8_17);
-                                }
-                                catch (IllegalAccessException var8_18) {
-                                    throw new hi_0(ph_2.a(2735, 18482) + var2_2, var8_18);
-                                }
-                                return;
-                            }
-                            var8_19 = var6_10.Y(var1_1);
-                            for (E var10_23 : var8_19) {
-                                this.L(var10_23, var2_2, var3_3);
-                                if (var4_4 == null) continue;
-                            }
-                            return;
-                        }
-                        catch (Exception var7_13) {
-                            throw new hf_0(ph_2.a(2745, -31157) + this.V + ph_2.a(2740, 24767) + var2_2, var7_13);
-                        }
-                    }
-                    v16 = var1_1;
-                }
-                try {
-                    try {
-                        if (var4_4 != null) break block54;
-                        if (!(v16 instanceof List)) break block55;
-                    }
-                    catch (InvocationTargetException v20) {
-                        throw ph_2.a(v20);
-                    }
-                    v16 = var1_1;
-                }
-                catch (InvocationTargetException v21) {
-                    throw ph_2.a(v21);
-                }
-            }
-            var7_14 = (List)v16;
-            for (var8_20 = 0; var8_20 < var7_14.size(); ++var8_20) {
-                var9_22 = var7_14.get(var8_20);
-                this.L(var9_22, var2_2, var3_3);
-                if (var4_4 == null) continue;
-            }
-            return;
-        }
-    }
-
-    protected void R(Object object, String string, long l2, Object object2) {
-        block30: {
-            Object object3;
-            String string2;
-            block29: {
-                block25: {
-                    block26: {
-                        Object object4;
-                        block21: {
-                            block22: {
-                                Map map;
-                                block23: {
-                                    Map map2;
-                                    block24: {
-                                        block19: {
-                                            block20: {
-                                                string2 = hi_0.C();
-                                                try {
-                                                    object4 = object;
-                                                    if (string2 != null) break block19;
-                                                    if (object4 != null) break block20;
-                                                }
-                                                catch (Exception exception) {
-                                                    throw ph_2.a(exception);
-                                                }
-                                                return;
-                                            }
-                                            object4 = object;
-                                        }
-                                        try {
-                                            if (string2 != null) break block21;
-                                            if (!(object4 instanceof Map)) break block22;
-                                        }
-                                        catch (Exception exception) {
-                                            throw ph_2.a(exception);
-                                        }
-                                        map2 = (Map)object;
-                                        try {
-                                            map = map2;
-                                            if (string2 != null) break block23;
-                                            if (!map.containsKey(string)) break block24;
-                                        }
-                                        catch (Exception exception) {
-                                            throw ph_2.a(exception);
-                                        }
-                                        Object v2 = map2.get(string);
-                                        map2.put(string, object2);
-                                        return;
-                                    }
-                                    map = map2;
-                                }
-                                for (Object v3 : map.values()) {
-                                    this.R(v3, string, l2, object2);
-                                    if (string2 == null) continue;
-                                }
-                                return;
-                            }
-                            object4 = object;
-                        }
-                        Class<?> clazz = object4.getClass();
-                        ep_2 ep_22 = this.Z(clazz);
-                        try {
-                            object3 = ep_22;
-                            if (string2 != null) break block25;
-                            if (object3 == null) break block26;
-                        }
-                        catch (Exception exception) {
-                            throw ph_2.a(exception);
-                        }
-                        try {
-                            block28: {
-                                uT uT2;
-                                block27: {
-                                    uT uT3 = ep_22.a(string);
-                                    try {
-                                        uT2 = uT3;
-                                        if (string2 != null) break block27;
-                                        if (uT2 == null) break block28;
-                                    }
-                                    catch (Exception exception) {
-                                        throw ph_2.a(exception);
-                                    }
-                                    uT2 = uT3;
-                                }
-                                uT2.D(object, object2);
-                                return;
-                            }
-                            nj_2 nj_22 = this.e(clazz);
-                            List list = nj_22.y(object);
-                            for (Object e2 : list) {
-                                this.R(e2, string, l2, object2);
-                                if (string2 == null) continue;
-                            }
-                            return;
-                        }
-                        catch (Exception exception) {
-                            throw new hf_0(ph_2.a(2736, -14310) + this.V + ph_2.a(2738, -30609) + string, exception);
-                        }
-                    }
-                    object3 = object;
-                }
-                try {
-                    try {
-                        if (string2 != null) break block29;
-                        if (!(object3 instanceof List)) break block30;
-                    }
-                    catch (Exception exception) {
-                        throw ph_2.a(exception);
-                    }
-                    object3 = object;
-                }
-                catch (Exception exception) {
-                    throw ph_2.a(exception);
-                }
-            }
-            List list = (List)object3;
-            for (int i2 = 0; i2 < list.size(); ++i2) {
-                Object e3 = list.get(i2);
-                this.R(e3, string, l2, object2);
-                if (string2 == null) continue;
-            }
-            return;
-        }
-    }
-
-    protected boolean u(Object object, String string, long l2, Object object2) {
-        block36: {
-            uT uT2;
-            block40: {
-                Type type;
-                Object object3;
-                block41: {
-                    Object object4;
-                    String string2;
-                    block39: {
-                        block37: {
-                            block38: {
-                                ep_2 ep_22;
-                                block35: {
-                                    ep_2 ep_23;
-                                    block34: {
-                                        X4 x42;
-                                        block33: {
-                                            block42: {
-                                                Object object5;
-                                                block30: {
-                                                    boolean bl;
-                                                    block28: {
-                                                        block29: {
-                                                            string2 = hi_0.C();
-                                                            try {
-                                                                try {
-                                                                    bl = object instanceof Map;
-                                                                    if (string2 != null) break block28;
-                                                                    if (!bl) break block29;
-                                                                }
-                                                                catch (hf_0 hf_02) {
-                                                                    throw ph_2.a(hf_02);
-                                                                }
-                                                                ((Map)object).put(string, object2);
-                                                                return true;
-                                                            }
-                                                            catch (hf_0 hf_03) {
-                                                                throw ph_2.a(hf_03);
-                                                            }
-                                                        }
-                                                        try {
-                                                            object5 = object;
-                                                            if (string2 != null) break block30;
-                                                            bl = object5 instanceof List;
-                                                        }
-                                                        catch (hf_0 hf_04) {
-                                                            throw ph_2.a(hf_04);
-                                                        }
-                                                    }
-                                                    if (!bl) break block42;
-                                                    object5 = object;
-                                                }
-                                                for (Object e2 : (List)object5) {
-                                                    block31: {
-                                                        block32: {
-                                                            try {
-                                                                try {
-                                                                    if (string2 != null) break block31;
-                                                                    if (e2 != null) break block32;
-                                                                }
-                                                                catch (hf_0 hf_05) {
-                                                                    throw ph_2.a(hf_05);
-                                                                }
-                                                                if (string2 == null) continue;
-                                                            }
-                                                            catch (hf_0 hf_06) {
-                                                                throw ph_2.a(hf_06);
-                                                            }
-                                                        }
-                                                        this.u(e2, string, l2, object2);
-                                                    }
-                                                    if (string2 == null) continue;
-                                                }
-                                                return true;
-                                            }
-                                            X4 x43 = this.w.h(object.getClass());
-                                            ep_23 = null;
-                                            try {
-                                                try {
-                                                    x42 = x43;
-                                                    if (string2 != null) break block33;
-                                                    if (!(x42 instanceof ep_2)) break block34;
-                                                }
-                                                catch (hf_0 hf_07) {
-                                                    throw ph_2.a(hf_07);
-                                                }
-                                                x42 = x43;
-                                            }
-                                            catch (hf_0 hf_08) {
-                                                throw ph_2.a(hf_08);
-                                            }
-                                        }
-                                        ep_23 = (ep_2)x42;
-                                    }
-                                    try {
-                                        ep_22 = ep_23;
-                                        if (string2 != null) break block35;
-                                        if (ep_22 == null) break block36;
-                                    }
-                                    catch (hf_0 hf_09) {
-                                        throw ph_2.a(hf_09);
-                                    }
-                                    ep_22 = ep_23;
-                                }
-                                uT2 = ep_22.k(l2);
-                                try {
-                                    try {
-                                        object4 = uT2;
-                                        if (string2 != null) break block37;
-                                        if (object4 != null) break block38;
-                                    }
-                                    catch (hf_0 hf_010) {
-                                        throw ph_2.a(hf_010);
-                                    }
-                                    return false;
-                                }
-                                catch (hf_0 hf_011) {
-                                    throw ph_2.a(hf_011);
-                                }
-                            }
-                            object4 = object2;
-                        }
-                        try {
-                            if (string2 != null) break block39;
-                            if (object4 == null) break block40;
-                        }
-                        catch (hf_0 hf_012) {
-                            throw ph_2.a(hf_012);
-                        }
-                        object4 = object2;
-                    }
-                    try {
-                        try {
-                            object3 = object4.getClass();
-                            type = uT2.p.O;
-                            if (string2 != null) break block41;
-                            if (object3 == type) break block40;
-                        }
-                        catch (hf_0 hf_013) {
-                            throw ph_2.a(hf_013);
-                        }
-                        object3 = object2;
-                        type = uT2.p.a;
-                    }
-                    catch (hf_0 hf_014) {
-                        throw ph_2.a(hf_014);
-                    }
-                }
-                object2 = B8.I(object3, type, this.w);
-            }
-            uT2.D(object, object2);
-            return true;
-        }
-        throw new UnsupportedOperationException();
-    }
-
-    protected boolean N(Object object, String string, boolean bl) {
-        block44: {
-            boolean bl2;
-            block43: {
-                String string2;
-                block36: {
-                    boolean bl3;
-                    block39: {
-                        boolean bl4;
-                        block40: {
-                            block38: {
-                                uT uT2;
-                                block37: {
-                                    ep_2 ep_22;
-                                    block35: {
-                                        ep_2 ep_23;
-                                        block34: {
-                                            X4 x42;
-                                            block33: {
-                                                block30: {
-                                                    boolean bl5;
-                                                    block31: {
-                                                        boolean bl6;
-                                                        block32: {
-                                                            boolean bl7;
-                                                            Object object2;
-                                                            block29: {
-                                                                string2 = hi_0.C();
-                                                                try {
-                                                                    try {
-                                                                        object2 = object;
-                                                                        if (string2 != null) break block29;
-                                                                        if (!(object2 instanceof Map)) break block30;
-                                                                    }
-                                                                    catch (hf_0 hf_02) {
-                                                                        throw ph_2.a(hf_02);
-                                                                    }
-                                                                    object2 = ((Map)object).remove(string);
-                                                                }
-                                                                catch (hf_0 hf_03) {
-                                                                    throw ph_2.a(hf_03);
-                                                                }
-                                                            }
-                                                            Object object3 = object2;
-                                                            try {
-                                                                bl7 = object3 != null;
-                                                            }
-                                                            catch (hf_0 hf_04) {
-                                                                throw ph_2.a(hf_04);
-                                                            }
-                                                            bl6 = bl7;
-                                                            try {
-                                                                bl5 = bl;
-                                                                if (string2 != null) break block31;
-                                                                if (!bl5) break block32;
-                                                            }
-                                                            catch (hf_0 hf_05) {
-                                                                throw ph_2.a(hf_05);
-                                                            }
-                                                            for (Object v2 : ((Map)object).values()) {
-                                                                try {
-                                                                    bl5 = this.N(v2, string, bl);
-                                                                    if (string2 == null) {
-                                                                        if (string2 == null) continue;
-                                                                        break;
-                                                                    }
-                                                                    break block31;
-                                                                }
-                                                                catch (hf_0 hf_06) {
-                                                                    throw ph_2.a(hf_06);
-                                                                }
-                                                            }
-                                                        }
-                                                        bl5 = bl6;
-                                                    }
-                                                    return bl5;
-                                                }
-                                                X4 x43 = this.w.h(object.getClass());
-                                                ep_23 = null;
-                                                try {
-                                                    try {
-                                                        x42 = x43;
-                                                        if (string2 != null) break block33;
-                                                        if (!(x42 instanceof ep_2)) break block34;
-                                                    }
-                                                    catch (hf_0 hf_07) {
-                                                        throw ph_2.a(hf_07);
-                                                    }
-                                                    x42 = x43;
-                                                }
-                                                catch (hf_0 hf_08) {
-                                                    throw ph_2.a(hf_08);
-                                                }
-                                            }
-                                            ep_23 = (ep_2)x42;
-                                        }
-                                        try {
-                                            ep_22 = ep_23;
-                                            if (string2 != null) break block35;
-                                            if (ep_22 == null) break block36;
-                                        }
-                                        catch (hf_0 hf_09) {
-                                            throw ph_2.a(hf_09);
-                                        }
-                                        ep_22 = ep_23;
-                                    }
-                                    uT uT3 = ep_22.a(string);
-                                    bl4 = false;
-                                    try {
-                                        uT2 = uT3;
-                                        if (string2 != null) break block37;
-                                        if (uT2 == null) break block38;
-                                    }
-                                    catch (hf_0 hf_010) {
-                                        throw ph_2.a(hf_010);
-                                    }
-                                    uT2 = uT3;
-                                }
-                                uT2.S(object, null);
-                                bl4 = true;
-                            }
-                            try {
-                                bl3 = bl;
-                                if (string2 != null) break block39;
-                                if (!bl3) break block40;
-                            }
-                            catch (hf_0 hf_011) {
-                                throw ph_2.a(hf_011);
-                            }
-                            Collection collection = this.G(object);
-                            for (Object e2 : collection) {
-                                block41: {
-                                    block42: {
-                                        try {
-                                            try {
-                                                if (string2 != null) break block41;
-                                                if (e2 != null) break block42;
-                                            }
-                                            catch (hf_0 hf_012) {
-                                                throw ph_2.a(hf_012);
-                                            }
-                                            if (string2 == null) continue;
-                                        }
-                                        catch (hf_0 hf_013) {
-                                            throw ph_2.a(hf_013);
-                                        }
-                                    }
-                                    this.N(e2, string, bl);
-                                }
-                                if (string2 == null) continue;
-                            }
-                        }
-                        bl3 = bl4;
-                    }
-                    return bl3;
-                }
-                try {
-                    bl2 = bl;
-                    if (string2 != null) break block43;
-                    if (!bl2) break block44;
-                }
-                catch (hf_0 hf_014) {
-                    throw ph_2.a(hf_014);
-                }
-                bl2 = false;
-            }
-            return bl2;
-        }
-        throw new UnsupportedOperationException();
-    }
-
-    protected nj_2 e(Class clazz) {
-        nj_2 nj_22;
-        block5: {
-            ak_0 ak_02;
-            block4: {
-                nj_22 = null;
-                String string = hi_0.C();
-                ak_0 ak_03 = this.F.O(clazz);
-                try {
-                    try {
-                        ak_02 = ak_03;
-                        if (string != null) break block4;
-                        if (!(ak_02 instanceof nj_2)) break block5;
-                    }
-                    catch (hf_0 hf_02) {
-                        throw ph_2.a(hf_02);
-                    }
-                    ak_02 = ak_03;
-                }
-                catch (hf_0 hf_03) {
-                    throw ph_2.a(hf_03);
-                }
-            }
-            nj_22 = (nj_2)ak_02;
-        }
-        return nj_22;
-    }
-
-    protected ep_2 Z(Class clazz) {
-        ep_2 ep_22;
-        block5: {
-            X4 x42;
-            block4: {
-                ep_22 = null;
-                String string = hi_0.C();
-                X4 x43 = this.w.h(clazz);
-                try {
-                    try {
-                        x42 = x43;
-                        if (string != null) break block4;
-                        if (!(x42 instanceof ep_2)) break block5;
-                    }
-                    catch (hf_0 hf_02) {
-                        throw ph_2.a(hf_02);
-                    }
-                    x42 = x43;
-                }
-                catch (hf_0 hf_03) {
-                    throw ph_2.a(hf_03);
-                }
-            }
-            ep_22 = (ep_2)x42;
-        }
-        return ep_22;
-    }
-
-    /*
-     * Loose catch block
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    int T(Object object) {
-        nj_2 nj_22;
-        nj_2 nj_23;
-        block38: {
-            String string;
-            block37: {
-                int n10;
-                block36: {
-                    block34: {
-                        block35: {
-                            block32: {
-                                block33: {
-                                    block30: {
-                                        block31: {
-                                            Object object2;
-                                            block28: {
-                                                block29: {
-                                                    string = hi_0.C();
-                                                    object2 = object;
-                                                    if (string != null) break block28;
-                                                    try {
-                                                        if (object2 != null) break block29;
-                                                        return -1;
-                                                        catch (Exception exception) {
-                                                            throw ph_2.a(exception);
-                                                        }
-                                                    }
-                                                    catch (Exception exception) {
-                                                        throw ph_2.a(exception);
-                                                    }
-                                                }
-                                                object2 = object;
-                                            }
-                                            n10 = object2 instanceof Collection;
-                                            if (string != null) break block30;
-                                            try {
-                                                if (n10 == 0) break block31;
-                                                return ((Collection)object).size();
-                                                catch (Exception exception) {
-                                                    throw ph_2.a(exception);
-                                                }
-                                            }
-                                            catch (Exception exception) {
-                                                throw ph_2.a(exception);
-                                            }
-                                        }
-                                        n10 = object instanceof Object[];
-                                    }
-                                    if (string != null) break block32;
-                                    try {
-                                        if (n10 == 0) break block33;
-                                        return ((Object[])object).length;
-                                        catch (Exception exception) {
-                                            throw ph_2.a(exception);
-                                        }
-                                    }
-                                    catch (Exception exception) {
-                                        throw ph_2.a(exception);
-                                    }
-                                }
-                                n10 = object.getClass().isArray();
-                            }
-                            if (string != null) break block34;
-                            try {
-                                if (n10 == 0) break block35;
-                                return Array.getLength(object);
-                                catch (Exception exception) {
-                                    throw ph_2.a(exception);
-                                }
-                            }
-                            catch (Exception exception) {
-                                throw ph_2.a(exception);
-                            }
-                        }
-                        n10 = object instanceof Map;
-                    }
-                    try {
-                        if (string != null) break block36;
-                        if (n10 == 0) break block37;
-                    }
-                    catch (Exception exception) {
-                        throw ph_2.a(exception);
-                    }
-                    n10 = 0;
-                }
-                int n11 = n10;
-                for (Object v2 : ((Map)object).values()) {
-                    try {
-                        if (v2 != null) {
-                            ++n11;
-                        }
-                    }
-                    catch (Exception exception) {
-                        throw ph_2.a(exception);
-                    }
-                    if (string == null) continue;
-                }
-                return n11;
-            }
-            nj_23 = this.e(object.getClass());
-            nj_22 = nj_23;
-            if (string != null) return nj_22.J(object);
-            try {
-                if (nj_22 != null) break block38;
-                return -1;
-                catch (Exception exception) {
-                    throw ph_2.a(exception);
-                }
-            }
-            catch (Exception exception) {
-                throw ph_2.a(exception);
-            }
-        }
-        try {
-            nj_22 = nj_23;
-            return nj_22.J(object);
-        }
-        catch (Exception exception) {
-            throw new hf_0(ph_2.a(2748, -6552) + this.V, exception);
-        }
-    }
-
-    /*
-     * Loose catch block
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    Set K(Object object) {
-        nj_2 nj_22;
-        nj_2 nj_23;
-        block31: {
-            boolean bl;
-            String string;
-            block30: {
-                block29: {
-                    block27: {
-                        block28: {
-                            Object object2;
-                            block25: {
-                                block26: {
-                                    string = hi_0.C();
-                                    object2 = object;
-                                    if (string != null) break block25;
-                                    try {
-                                        if (object2 != null) break block26;
-                                        return null;
-                                        catch (Exception exception) {
-                                            throw ph_2.a(exception);
-                                        }
-                                    }
-                                    catch (Exception exception) {
-                                        throw ph_2.a(exception);
-                                    }
-                                }
-                                object2 = object;
-                            }
-                            bl = object2 instanceof Map;
-                            if (string != null) break block27;
-                            try {
-                                if (!bl) break block28;
-                                return ((Map)object).keySet();
-                                catch (Exception exception) {
-                                    throw ph_2.a(exception);
-                                }
-                            }
-                            catch (Exception exception) {
-                                throw ph_2.a(exception);
-                            }
-                        }
-                        bl = object instanceof Collection;
-                    }
-                    if (string != null) break block29;
-                    try {
-                        block32: {
-                            if (bl) return null;
-                            break block32;
-                            catch (Exception exception) {
-                                throw ph_2.a(exception);
-                            }
-                        }
-                        bl = object instanceof Object[];
-                    }
-                    catch (Exception exception) {
-                        throw ph_2.a(exception);
-                    }
-                }
-                if (string != null) break block30;
-                try {
-                    block33: {
-                        if (bl) return null;
-                        break block33;
-                        catch (Exception exception) {
-                            throw ph_2.a(exception);
-                        }
-                    }
-                    bl = object.getClass().isArray();
-                }
-                catch (Exception exception) {
-                    throw ph_2.a(exception);
-                }
-            }
-            try {
-                if (bl) {
-                    return null;
-                }
-            }
-            catch (Exception exception) {
-                throw ph_2.a(exception);
-            }
-            nj_23 = this.e(object.getClass());
-            nj_22 = nj_23;
-            if (string != null) return nj_22.v(object);
-            try {
-                if (nj_22 != null) break block31;
-                return null;
-                catch (Exception exception) {
-                    throw ph_2.a(exception);
-                }
-            }
-            catch (Exception exception) {
-                throw ph_2.a(exception);
-            }
-        }
-        try {
-            nj_22 = nj_23;
-            return nj_22.v(object);
-        }
-        catch (Exception exception) {
-            throw new hf_0(ph_2.a(2749, -13255) + this.V, exception);
-        }
-    }
-
-    @Override
-    public String V() {
-        return ok_0.x(this.V);
-    }
-
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public static Object t(Object object, String[] stringArray) {
-        oc_0 oc_02;
-        String[] stringArray2;
-        String string;
-        oc_0 oc_03;
-        block10: {
-            block11: {
-                block9: {
-                    oc_03 = new oc_0();
-                    string = hi_0.C();
-                    try {
-                        stringArray2 = stringArray;
-                        if (string != null) break block9;
-                        if (stringArray2 == null) return oc_03;
-                    }
-                    catch (hf_0 hf_02) {
-                        throw ph_2.a(hf_02);
-                    }
-                    stringArray2 = stringArray;
-                }
-                try {
-                    try {
-                        if (string != null) break block10;
-                        if (stringArray2.length != 0) break block11;
-                        return oc_03;
-                    }
-                    catch (hf_0 hf_03) {
-                        throw ph_2.a(hf_03);
-                    }
-                }
-                catch (hf_0 hf_04) {
-                    throw ph_2.a(hf_04);
-                }
-            }
-            stringArray2 = stringArray;
-        }
-        for (String string2 : stringArray2) {
-            ph_2 ph_22 = ph_2.B(string2);
-            ph_22.x();
-            Object object2 = ph_22.S(object);
-            try {
-                oc_02 = oc_03;
-                if (string != null) return oc_02;
-                oc_02.add(object2);
-                if (string == null) continue;
-                break;
-            }
-            catch (hf_0 hf_05) {
-                throw ph_2.a(hf_05);
-            }
-        }
-        oc_02 = oc_03;
-        return oc_02;
-    }
-
-    public static Object b(Object object, String[] stringArray) {
-        String string;
-        block17: {
-            Object object2;
-            block15: {
-                string = hi_0.C();
-                try {
-                    block16: {
-                        try {
-                            try {
-                                try {
-                                    object2 = stringArray;
-                                    if (string != null) break block15;
-                                    if (object2 == null) break block16;
-                                }
-                                catch (hf_0 hf_02) {
-                                    throw ph_2.a(hf_02);
-                                }
-                                object2 = stringArray;
-                                if (string != null) break block15;
-                            }
-                            catch (hf_0 hf_03) {
-                                throw ph_2.a(hf_03);
-                            }
-                            if (((String[])object2).length != 0) break block17;
-                        }
-                        catch (hf_0 hf_04) {
-                            throw ph_2.a(hf_04);
-                        }
-                    }
-                    object2 = object;
-                }
-                catch (hf_0 hf_05) {
-                    throw ph_2.a(hf_05);
-                }
-            }
-            return object2;
-        }
-        O0 o0 = new O0(true);
-        String[] stringArray2 = stringArray;
-        int n10 = stringArray2.length;
-        int n11 = 0;
-        while (n11 < n10) {
-            block18: {
-                block19: {
-                    String string2 = stringArray2[n11];
-                    ph_2 ph_22 = ph_2.B(string2);
-                    ph_22.x();
-                    a0 a02 = ph_22.K[ph_22.K.length - 1];
-                    try {
-                        if (string != null) break block18;
-                        if (!(a02 instanceof W3)) break block19;
-                    }
-                    catch (hf_0 hf_06) {
-                        throw ph_2.a(hf_06);
-                    }
-                    Object object3 = ph_22.S(object);
-                    try {
-                        try {
-                            if (object3 == null && string == null) break block19;
-                        }
-                        catch (hf_0 hf_07) {
-                            throw ph_2.a(hf_07);
-                        }
-                        ph_22.G(o0, object3);
-                    }
-                    catch (hf_0 hf_08) {
-                        throw ph_2.a(hf_08);
-                    }
-                }
-                ++n11;
-            }
-            if (string == null) continue;
-        }
-        return o0;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block38: {
-            block37: {
-                block36: {
-                    block35: {
-                        block34: {
-                            block33: {
-                                var21 = new String[17];
-                                var19_1 = 0;
-                                var18_2 = "1.\u0006\u00009\u00d3\u00172z(\u00bco\u00eb\u001a[\u00d6\u00a1\u00f4~\u0081R\f\u00c7^!\u00f8\u0011\u00dfB\u009d\u00f2\u0098?\u00a7\u00d6\u00dc8\u0003k2rk\u0095@\u00f28\u00c8\u00d0%K\u00a3\u00d0\u0006S\u0017(\u00f8\u008d\u0013\u00cdey\u00ce\"L%~\u00d5\u00ea\u00e5\u00c9\u00fb\u00b8A\u001b\u00e2\u00d3S\u00111\u008e\u00e6\u00b3\u00c9\u00ef@\u00b1_\u00f2\u000b\u00ee#\u00a9\u00abq\u0019\u0014\u00f5\u00f5)\u0087\u00bd\n\u00a5\u0081A\u00d1n\tX\u00e0\u00ca\b\u008a\u00e4\u0014!\u0018\u00f9\u00c4\u0083\u0016\u00ff(b#\u00d9\u00ae\u0011\u0095\u00ecdOM\u0000Uoh\u0092j5\u00ff\u0015\u00a8\u00a25\u0091_\u00e1\u00dbt\u00e3\u00e6\u009cl\u00d1\u00f9\u00f9a\u008e\u00df\u00d0\u00cf\u00fa\f0\u0013\u00de\u0005\u009c\u00c6/W\u00f19\u00dbb\"\u007f\u001e\u00cf\u0006]\u0002x'hV\u00bd\u0084\u00c7\u00c7X\u00f1\u00b4*\u0005\u0015\u0094h\u0081\u00aa1\u009f\u00b9\u009f\u00f8\u00e8>\u0012xT!\u00c3\u00ac\u00b8\u00f5q\u0004\u0005\u00e1\u0014\r\u00aaC\u00cd\u0004\u00eb\u009fP('E\u00d4>M\u00fb\u00f8x\u00a6}\u009dx\u00f1\u0015\u00b6\u001aP\u00c9\u00caY?\u0091\u00ccS-[\u008d\u0089;Jc\u00e2\u0091\u00be\u00de\u00caI|Oru\u00e9\u000b5\u00b6\u0014!\u00f3\u0099\u00a2\u00f2\u00b8\u008b\"\u0018\u00ad\u00b5\u0095sK\u00bdY\u00ff\u00b3\u0091\u0085X\u00cc\u00fc\u00bf\n=o\u00ed\u00f2 b\u0089\u0093\u000bE\u008e\u001a&2y\u009a\u00ee\u00bf\b\u00c2\u001a{\u00ee\u00af\u00bd\u0093\rY\u00c0\u009f)\u00db\u00c7\u00f1\u0083:\u00db\u00ba\u0099\u00bb.\u00e5\u00e0\u00da\u00e1\u00c7\u009b";
-                                var20_3 = "1.\u0006\u00009\u00d3\u00172z(\u00bco\u00eb\u001a[\u00d6\u00a1\u00f4~\u0081R\f\u00c7^!\u00f8\u0011\u00dfB\u009d\u00f2\u0098?\u00a7\u00d6\u00dc8\u0003k2rk\u0095@\u00f28\u00c8\u00d0%K\u00a3\u00d0\u0006S\u0017(\u00f8\u008d\u0013\u00cdey\u00ce\"L%~\u00d5\u00ea\u00e5\u00c9\u00fb\u00b8A\u001b\u00e2\u00d3S\u00111\u008e\u00e6\u00b3\u00c9\u00ef@\u00b1_\u00f2\u000b\u00ee#\u00a9\u00abq\u0019\u0014\u00f5\u00f5)\u0087\u00bd\n\u00a5\u0081A\u00d1n\tX\u00e0\u00ca\b\u008a\u00e4\u0014!\u0018\u00f9\u00c4\u0083\u0016\u00ff(b#\u00d9\u00ae\u0011\u0095\u00ecdOM\u0000Uoh\u0092j5\u00ff\u0015\u00a8\u00a25\u0091_\u00e1\u00dbt\u00e3\u00e6\u009cl\u00d1\u00f9\u00f9a\u008e\u00df\u00d0\u00cf\u00fa\f0\u0013\u00de\u0005\u009c\u00c6/W\u00f19\u00dbb\"\u007f\u001e\u00cf\u0006]\u0002x'hV\u00bd\u0084\u00c7\u00c7X\u00f1\u00b4*\u0005\u0015\u0094h\u0081\u00aa1\u009f\u00b9\u009f\u00f8\u00e8>\u0012xT!\u00c3\u00ac\u00b8\u00f5q\u0004\u0005\u00e1\u0014\r\u00aaC\u00cd\u0004\u00eb\u009fP('E\u00d4>M\u00fb\u00f8x\u00a6}\u009dx\u00f1\u0015\u00b6\u001aP\u00c9\u00caY?\u0091\u00ccS-[\u008d\u0089;Jc\u00e2\u0091\u00be\u00de\u00caI|Oru\u00e9\u000b5\u00b6\u0014!\u00f3\u0099\u00a2\u00f2\u00b8\u008b\"\u0018\u00ad\u00b5\u0095sK\u00bdY\u00ff\u00b3\u0091\u0085X\u00cc\u00fc\u00bf\n=o\u00ed\u00f2 b\u0089\u0093\u000bE\u008e\u001a&2y\u009a\u00ee\u00bf\b\u00c2\u001a{\u00ee\u00af\u00bd\u0093\rY\u00c0\u009f)\u00db\u00c7\u00f1\u0083:\u00db\u00ba\u0099\u00bb.\u00e5\u00e0\u00da\u00e1\u00c7\u009b".length();
-                                var17_4 = 24;
-                                var16_5 = -1;
-lbl7:
-                                // 2 sources
-
-                                while (true) {
-                                    v0 = 126;
-                                    v1 = ++var16_5;
-                                    v2 = var18_2.substring(v1, v1 + var17_4);
-                                    v3 = -1;
-                                    break block33;
-                                    break;
-                                }
-lbl13:
-                                // 1 sources
-
-                                while (true) {
-                                    var21[var19_1++] = v4.intern();
-                                    if ((var16_5 += var17_4) < var20_3) {
-                                        var17_4 = var18_2.charAt(var16_5);
-                                        ** continue;
-                                    }
-                                    var18_2 = "\u00f6s\b]\u000e\u008e\u0007o\u008es\u00c7(L\u0087\u00bcX\u00d0\u000e\u00ed\u0003\u00ab\u0014)3D\u00a9\u00e698\u0011\u000450ce[\u009b\u0089V\"y\u000f";
-                                    var20_3 = "\u00f6s\b]\u000e\u008e\u0007o\u008es\u00c7(L\u0087\u00bcX\u00d0\u000e\u00ed\u0003\u00ab\u0014)3D\u00a9\u00e698\u0011\u000450ce[\u009b\u0089V\"y\u000f".length();
-                                    var17_4 = 21;
-                                    var16_5 = -1;
-lbl22:
-                                    // 2 sources
-
-                                    while (true) {
-                                        v0 = 35;
-                                        v5 = ++var16_5;
-                                        v2 = var18_2.substring(v5, v5 + var17_4);
-                                        v3 = 0;
-                                        break block33;
-                                        break;
-                                    }
-                                    break;
-                                }
-lbl28:
-                                // 1 sources
-
-                                while (true) {
-                                    var21[var19_1++] = v4.intern();
-                                    if ((var16_5 += var17_4) < var20_3) {
-                                        var17_4 = var18_2.charAt(var16_5);
-                                        ** continue;
-                                    }
-                                    break block34;
-                                    break;
-                                }
-                            }
-                            v6 = v2.toCharArray();
-                            v7 = v6.length;
-                            var22_6 = 0;
-                            v8 = v0;
-                            v9 = v6;
-                            v10 = v7;
-                            if (v7 > 1) ** GOTO lbl85
-                            do {
-                                v11 = v8;
-                                v9 = v9;
-                                v12 = v9;
-                                v13 = v8;
-                                v14 = var22_6;
-                                while (true) {
-                                    switch (var22_6 % 7) {
-                                        case 0: {
-                                            v15 = 125;
-                                            break;
-                                        }
-                                        case 1: {
-                                            v15 = 83;
-                                            break;
-                                        }
-                                        case 2: {
-                                            v15 = 118;
-                                            break;
-                                        }
-                                        case 3: {
-                                            v15 = 109;
-                                            break;
-                                        }
-                                        case 4: {
-                                            v15 = 116;
-                                            break;
-                                        }
-                                        case 5: {
-                                            v15 = 13;
-                                            break;
-                                        }
-                                        default: {
-                                            v15 = 5;
-                                        }
-                                    }
-                                    v12[v14] = (char)(v12[v14] ^ (v13 ^ v15));
-                                    ++var22_6;
-                                    v8 = v11;
-                                    if (v11 != 0) break;
-                                    v11 = v8;
-                                    v9 = v9;
-                                    v14 = v8;
-                                    v12 = v9;
-                                    v13 = v8;
-                                }
-lbl85:
-                                // 2 sources
-
-                                v16 = v9;
-                                v10 = v10;
-                            } while (v10 > var22_6);
-                            v4 = new String(v16);
-                            switch (v3) {
-                                default: {
-                                    ** continue;
-                                }
-                                ** case 0:
-lbl95:
-                                // 1 sources
-
-                                ** continue;
-                            }
-                        }
-                        ph_2.a = var21;
-                        ph_2.b = new String[17];
-                        var8_7 = 2610527661910028729L;
-                        var14_8 = new long[6];
-                        var11_9 = 0;
-                        var12_10 = "zu\u00bf\u00a1\u00c3\u00faD\u00e5\u009e\u0012\u008dF\u0099\u00baG\u0088\u0014\u0000~\u00db\u00b9[\u00a6\u00cfy\u0006P\u0001\u00e2Q\u00e0\u00e3";
-                        var13_11 = "zu\u00bf\u00a1\u00c3\u00faD\u00e5\u009e\u0012\u008dF\u0099\u00baG\u0088\u0014\u0000~\u00db\u00b9[\u00a6\u00cfy\u0006P\u0001\u00e2Q\u00e0\u00e3".length();
-                        var10_12 = 0;
-                        while (true) {
-                            var15_13 = var12_10.substring(var10_12, var10_12 += 8).getBytes("ISO-8859-1");
-                            v17 = var14_8;
-                            v18 = var11_9++;
-                            v19 = ((long)var15_13[0] & 255L) << 56 | ((long)var15_13[1] & 255L) << 48 | ((long)var15_13[2] & 255L) << 40 | ((long)var15_13[3] & 255L) << 32 | ((long)var15_13[4] & 255L) << 24 | ((long)var15_13[5] & 255L) << 16 | ((long)var15_13[6] & 255L) << 8 | (long)var15_13[7] & 255L;
-                            v20 = -1;
-                            break block35;
-                            break;
-                        }
-lbl112:
-                        // 1 sources
-
-                        while (true) {
-                            v17[v18] = v21;
-                            if (var10_12 < var13_11) ** continue;
-                            var12_10 = "\u0098\u00d5%E\u00d7\u0000G\u00e34\u009f\u00c2*v\u0004\u00ef\u00a4";
-                            var13_11 = "\u0098\u00d5%E\u00d7\u0000G\u00e34\u009f\u00c2*v\u0004\u00ef\u00a4".length();
-                            var10_12 = 0;
-                            while (true) {
-                                var15_13 = var12_10.substring(var10_12, var10_12 += 8).getBytes("ISO-8859-1");
-                                v17 = var14_8;
-                                v18 = var11_9++;
-                                v19 = ((long)var15_13[0] & 255L) << 56 | ((long)var15_13[1] & 255L) << 48 | ((long)var15_13[2] & 255L) << 40 | ((long)var15_13[3] & 255L) << 32 | ((long)var15_13[4] & 255L) << 24 | ((long)var15_13[5] & 255L) << 16 | ((long)var15_13[6] & 255L) << 8 | (long)var15_13[7] & 255L;
-                                v20 = 0;
-                                break block35;
-                                break;
-                            }
-                            break;
-                        }
-lbl125:
-                        // 1 sources
-
-                        while (true) {
-                            v17[v18] = v21;
-                            if (var10_12 < var13_11) ** continue;
-                            break block36;
-                            break;
-                        }
-                    }
-                    v21 = v19 ^ var8_7;
-                    switch (v20) {
-                        default: {
-                            ** continue;
-                        }
-                        ** case 0:
-lbl136:
-                        // 1 sources
-
-                        ** continue;
-                    }
-                }
-                ph_2.c = var14_8;
-                ph_2.d = new Integer[6];
-                var0_14 = 4180382787613909172L;
-                var6_15 = new long[20];
-                var3_16 = 0;
-                var4_17 = "D\\\u0091\u00de.m\u00d7\u00e3\u009bK\u00d2\u00b0\u00ed\u0097\u0091\u009c\u00c4\u00dc\u007f_\u0099\u001b\u00fc\bJ\u00015\u0083\u00dcF\u0081`\u0088\u00fe;gjW\u00eb\u00ca\u00e9\u008el3_\u0097\u00b1\u00a8s\u00cf;\t\u0098\u0019$\u00e2\u0003\u007f\u0096\u00ebV\u0091{\u00bb\u00b1\u0017,#\u0011\u0007\u00cc\u00ab\u00b2\"!\u0081GR\u0091\r={\u00c0\u0013\u00b1\u0081W\u0081G.\u008a\u0003J?\u0085\u00d3\u00c9z\u00975\u0096q\u00ac\u00d4f\u001c\u00cb\u0089H\u00a4\u00c4\u00d8\u00e4\u00ce\u0088\u0098\u00ba\u00a9\u00b6\u0001x\u00ffO\u00a9(\u00eeyd\u00de\u00a2J\u001dH\u00da\u0006\u00a7\u00e4\u007fg\u0080\u00bc`\u0081\u0096";
-                var5_18 = "D\\\u0091\u00de.m\u00d7\u00e3\u009bK\u00d2\u00b0\u00ed\u0097\u0091\u009c\u00c4\u00dc\u007f_\u0099\u001b\u00fc\bJ\u00015\u0083\u00dcF\u0081`\u0088\u00fe;gjW\u00eb\u00ca\u00e9\u008el3_\u0097\u00b1\u00a8s\u00cf;\t\u0098\u0019$\u00e2\u0003\u007f\u0096\u00ebV\u0091{\u00bb\u00b1\u0017,#\u0011\u0007\u00cc\u00ab\u00b2\"!\u0081GR\u0091\r={\u00c0\u0013\u00b1\u0081W\u0081G.\u008a\u0003J?\u0085\u00d3\u00c9z\u00975\u0096q\u00ac\u00d4f\u001c\u00cb\u0089H\u00a4\u00c4\u00d8\u00e4\u00ce\u0088\u0098\u00ba\u00a9\u00b6\u0001x\u00ffO\u00a9(\u00eeyd\u00de\u00a2J\u001dH\u00da\u0006\u00a7\u00e4\u007fg\u0080\u00bc`\u0081\u0096".length();
-                var2_19 = 0;
-                while (true) {
-                    var7_20 = var4_17.substring(var2_19, var2_19 += 8).getBytes("ISO-8859-1");
-                    v22 = var6_15;
-                    v23 = var3_16++;
-                    v24 = ((long)var7_20[0] & 255L) << 56 | ((long)var7_20[1] & 255L) << 48 | ((long)var7_20[2] & 255L) << 40 | ((long)var7_20[3] & 255L) << 32 | ((long)var7_20[4] & 255L) << 24 | ((long)var7_20[5] & 255L) << 16 | ((long)var7_20[6] & 255L) << 8 | (long)var7_20[7] & 255L;
-                    v25 = -1;
-                    break block37;
-                    break;
-                }
-lbl153:
-                // 1 sources
-
-                while (true) {
-                    v22[v23] = v26;
-                    if (var2_19 < var5_18) ** continue;
-                    var4_17 = "\u00be\u00b9V\u00ce\u0002\u008a\u00e1\u0016\u00a3tF\u00fa\u00a3\u0017\u000eJ";
-                    var5_18 = "\u00be\u00b9V\u00ce\u0002\u008a\u00e1\u0016\u00a3tF\u00fa\u00a3\u0017\u000eJ".length();
-                    var2_19 = 0;
-                    while (true) {
-                        var7_20 = var4_17.substring(var2_19, var2_19 += 8).getBytes("ISO-8859-1");
-                        v22 = var6_15;
-                        v23 = var3_16++;
-                        v24 = ((long)var7_20[0] & 255L) << 56 | ((long)var7_20[1] & 255L) << 48 | ((long)var7_20[2] & 255L) << 40 | ((long)var7_20[3] & 255L) << 32 | ((long)var7_20[4] & 255L) << 24 | ((long)var7_20[5] & 255L) << 16 | ((long)var7_20[6] & 255L) << 8 | (long)var7_20[7] & 255L;
-                        v25 = 0;
-                        break block37;
-                        break;
-                    }
-                    break;
-                }
-lbl166:
-                // 1 sources
-
-                while (true) {
-                    v22[v23] = v26;
-                    if (var2_19 < var5_18) ** continue;
-                    break block38;
-                    break;
-                }
-            }
-            v26 = v24 ^ var0_14;
-            switch (v25) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl177:
-                // 1 sources
-
-                ** continue;
-            }
-        }
-        ph_2.e = var6_15;
-        ph_2.f = new Long[20];
-        ph_2.s = new ConcurrentHashMap<K, V>(ph_2.a(10897, 1903953822846301660L), 0.75f, 1);
-    }
-
-    private static Exception a(Exception exception) {
-        return exception;
-    }
-
-    private static String a(int n10, int n11) {
-        int n12 = (n10 ^ 0xABF) & 0xFFFF;
-        if (b[n12] == null) {
-            int n13;
-            int n14;
-            char[] cArray = a[n12].toCharArray();
-            switch (cArray[0] & 0xFF) {
-                case 0: {
-                    n14 = 205;
-                    break;
-                }
-                case 1: {
-                    n14 = 80;
-                    break;
-                }
-                case 2: {
-                    n14 = 47;
-                    break;
-                }
-                case 3: {
-                    n14 = 177;
-                    break;
-                }
-                case 4: {
-                    n14 = 194;
-                    break;
-                }
-                case 5: {
-                    n14 = 38;
-                    break;
-                }
-                case 6: {
-                    n14 = 250;
-                    break;
-                }
-                case 7: {
-                    n14 = 207;
-                    break;
-                }
-                case 8: {
-                    n14 = 46;
-                    break;
-                }
-                case 9: {
-                    n14 = 239;
-                    break;
-                }
-                case 10: {
-                    n14 = 148;
-                    break;
-                }
-                case 11: {
-                    n14 = 75;
-                    break;
-                }
-                case 12: {
-                    n14 = 126;
-                    break;
-                }
-                case 13: {
-                    n14 = 210;
-                    break;
-                }
-                case 14: {
-                    n14 = 98;
-                    break;
-                }
-                case 15: {
-                    n14 = 4;
-                    break;
-                }
-                case 16: {
-                    n14 = 107;
-                    break;
-                }
-                case 17: {
-                    n14 = 99;
-                    break;
-                }
-                case 18: {
-                    n14 = 234;
-                    break;
-                }
-                case 19: {
-                    n14 = 67;
-                    break;
-                }
-                case 20: {
-                    n14 = 145;
-                    break;
-                }
-                case 21: {
-                    n14 = 95;
-                    break;
-                }
-                case 22: {
-                    n14 = 235;
-                    break;
-                }
-                case 23: {
-                    n14 = 109;
-                    break;
-                }
-                case 24: {
-                    n14 = 31;
-                    break;
-                }
-                case 25: {
-                    n14 = 37;
-                    break;
-                }
-                case 26: {
-                    n14 = 246;
-                    break;
-                }
-                case 27: {
-                    n14 = 146;
-                    break;
-                }
-                case 28: {
-                    n14 = 181;
-                    break;
-                }
-                case 29: {
-                    n14 = 1;
-                    break;
-                }
-                case 30: {
-                    n14 = 253;
-                    break;
-                }
-                case 31: {
-                    n14 = 92;
-                    break;
-                }
-                case 32: {
-                    n14 = 189;
-                    break;
-                }
-                case 33: {
-                    n14 = 196;
-                    break;
-                }
-                case 34: {
-                    n14 = 43;
-                    break;
-                }
-                case 35: {
-                    n14 = 85;
-                    break;
-                }
-                case 36: {
-                    n14 = 76;
-                    break;
-                }
-                case 37: {
-                    n14 = 26;
-                    break;
-                }
-                case 38: {
-                    n14 = 151;
-                    break;
-                }
-                case 39: {
-                    n14 = 121;
-                    break;
-                }
-                case 40: {
-                    n14 = 117;
-                    break;
-                }
-                case 41: {
-                    n14 = 101;
-                    break;
-                }
-                case 42: {
-                    n14 = 35;
-                    break;
-                }
-                case 43: {
-                    n14 = 212;
-                    break;
-                }
-                case 44: {
-                    n14 = 74;
-                    break;
-                }
-                case 45: {
-                    n14 = 56;
-                    break;
-                }
-                case 46: {
-                    n14 = 50;
-                    break;
-                }
-                case 47: {
-                    n14 = 10;
-                    break;
-                }
-                case 48: {
-                    n14 = 57;
-                    break;
-                }
-                case 49: {
-                    n14 = 23;
-                    break;
-                }
-                case 50: {
-                    n14 = 17;
-                    break;
-                }
-                case 51: {
-                    n14 = 222;
-                    break;
-                }
-                case 52: {
-                    n14 = 167;
-                    break;
-                }
-                case 53: {
-                    n14 = 150;
-                    break;
-                }
-                case 54: {
-                    n14 = 165;
-                    break;
-                }
-                case 55: {
-                    n14 = 200;
-                    break;
-                }
-                case 56: {
-                    n14 = 159;
-                    break;
-                }
-                case 57: {
-                    n14 = 137;
-                    break;
-                }
-                case 58: {
-                    n14 = 11;
-                    break;
-                }
-                case 59: {
-                    n14 = 252;
-                    break;
-                }
-                case 60: {
-                    n14 = 166;
-                    break;
-                }
-                case 61: {
-                    n14 = 223;
-                    break;
-                }
-                case 62: {
-                    n14 = 201;
-                    break;
-                }
-                case 63: {
-                    n14 = 247;
-                    break;
-                }
-                case 64: {
-                    n14 = 131;
-                    break;
-                }
-                case 65: {
-                    n14 = 25;
-                    break;
-                }
-                case 66: {
-                    n14 = 244;
-                    break;
-                }
-                case 67: {
-                    n14 = 58;
-                    break;
-                }
-                case 68: {
-                    n14 = 168;
-                    break;
-                }
-                case 69: {
-                    n14 = 48;
-                    break;
-                }
-                case 70: {
-                    n14 = 5;
-                    break;
-                }
-                case 71: {
-                    n14 = 185;
-                    break;
-                }
-                case 72: {
-                    n14 = 202;
-                    break;
-                }
-                case 73: {
-                    n14 = 154;
-                    break;
-                }
-                case 74: {
-                    n14 = 221;
-                    break;
-                }
-                case 75: {
-                    n14 = 174;
-                    break;
-                }
-                case 76: {
-                    n14 = 172;
-                    break;
-                }
-                case 77: {
-                    n14 = 128;
-                    break;
-                }
-                case 78: {
-                    n14 = 52;
-                    break;
-                }
-                case 79: {
-                    n14 = 63;
-                    break;
-                }
-                case 80: {
-                    n14 = 171;
-                    break;
-                }
-                case 81: {
-                    n14 = 169;
-                    break;
-                }
-                case 82: {
-                    n14 = 83;
-                    break;
-                }
-                case 83: {
-                    n14 = 54;
-                    break;
-                }
-                case 84: {
-                    n14 = 44;
-                    break;
-                }
-                case 85: {
-                    n14 = 62;
-                    break;
-                }
-                case 86: {
-                    n14 = 149;
-                    break;
-                }
-                case 87: {
-                    n14 = 173;
-                    break;
-                }
-                case 88: {
-                    n14 = 218;
-                    break;
-                }
-                case 89: {
-                    n14 = 19;
-                    break;
-                }
-                case 90: {
-                    n14 = 93;
-                    break;
-                }
-                case 91: {
-                    n14 = 197;
-                    break;
-                }
-                case 92: {
-                    n14 = 255;
-                    break;
-                }
-                case 93: {
-                    n14 = 216;
-                    break;
-                }
-                case 94: {
-                    n14 = 118;
-                    break;
-                }
-                case 95: {
-                    n14 = 227;
-                    break;
-                }
-                case 96: {
-                    n14 = 9;
-                    break;
-                }
-                case 97: {
-                    n14 = 232;
-                    break;
-                }
-                case 98: {
-                    n14 = 113;
-                    break;
-                }
-                case 99: {
-                    n14 = 132;
-                    break;
-                }
-                case 100: {
-                    n14 = 28;
-                    break;
-                }
-                case 101: {
-                    n14 = 213;
-                    break;
-                }
-                case 102: {
-                    n14 = 195;
-                    break;
-                }
-                case 103: {
-                    n14 = 21;
-                    break;
-                }
-                case 104: {
-                    n14 = 49;
-                    break;
-                }
-                case 105: {
-                    n14 = 115;
-                    break;
-                }
-                case 106: {
-                    n14 = 243;
-                    break;
-                }
-                case 107: {
-                    n14 = 106;
-                    break;
-                }
-                case 108: {
-                    n14 = 226;
-                    break;
-                }
-                case 109: {
-                    n14 = 64;
-                    break;
-                }
-                case 110: {
-                    n14 = 79;
-                    break;
-                }
-                case 111: {
-                    n14 = 190;
-                    break;
-                }
-                case 112: {
-                    n14 = 32;
-                    break;
-                }
-                case 113: {
-                    n14 = 236;
-                    break;
-                }
-                case 114: {
-                    n14 = 2;
-                    break;
-                }
-                case 115: {
-                    n14 = 45;
-                    break;
-                }
-                case 116: {
-                    n14 = 41;
-                    break;
-                }
-                case 117: {
-                    n14 = 24;
-                    break;
-                }
-                case 118: {
-                    n14 = 104;
-                    break;
-                }
-                case 119: {
-                    n14 = 34;
-                    break;
-                }
-                case 120: {
-                    n14 = 178;
-                    break;
-                }
-                case 121: {
-                    n14 = 156;
-                    break;
-                }
-                case 122: {
-                    n14 = 158;
-                    break;
-                }
-                case 123: {
-                    n14 = 130;
-                    break;
-                }
-                case 124: {
-                    n14 = 124;
-                    break;
-                }
-                case 125: {
-                    n14 = 72;
-                    break;
-                }
-                case 126: {
-                    n14 = 90;
-                    break;
-                }
-                case 127: {
-                    n14 = 78;
-                    break;
-                }
-                case 128: {
-                    n14 = 91;
-                    break;
-                }
-                case 129: {
-                    n14 = 161;
-                    break;
-                }
-                case 130: {
-                    n14 = 191;
-                    break;
-                }
-                case 131: {
-                    n14 = 182;
-                    break;
-                }
-                case 132: {
-                    n14 = 123;
-                    break;
-                }
-                case 133: {
-                    n14 = 61;
-                    break;
-                }
-                case 134: {
-                    n14 = 112;
-                    break;
-                }
-                case 135: {
-                    n14 = 122;
-                    break;
-                }
-                case 136: {
-                    n14 = 77;
-                    break;
-                }
-                case 137: {
-                    n14 = 84;
-                    break;
-                }
-                case 138: {
-                    n14 = 73;
-                    break;
-                }
-                case 139: {
-                    n14 = 160;
-                    break;
-                }
-                case 140: {
-                    n14 = 65;
-                    break;
-                }
-                case 141: {
-                    n14 = 15;
-                    break;
-                }
-                case 142: {
-                    n14 = 30;
-                    break;
-                }
-                case 143: {
-                    n14 = 86;
-                    break;
-                }
-                case 144: {
-                    n14 = 66;
-                    break;
-                }
-                case 145: {
-                    n14 = 36;
-                    break;
-                }
-                case 146: {
-                    n14 = 211;
-                    break;
-                }
-                case 147: {
-                    n14 = 81;
-                    break;
-                }
-                case 148: {
-                    n14 = 245;
-                    break;
-                }
-                case 149: {
-                    n14 = 241;
-                    break;
-                }
-                case 150: {
-                    n14 = 179;
-                    break;
-                }
-                case 151: {
-                    n14 = 133;
-                    break;
-                }
-                case 152: {
-                    n14 = 40;
-                    break;
-                }
-                case 153: {
-                    n14 = 144;
-                    break;
-                }
-                case 154: {
-                    n14 = 238;
-                    break;
-                }
-                case 155: {
-                    n14 = 114;
-                    break;
-                }
-                case 156: {
-                    n14 = 198;
-                    break;
-                }
-                case 157: {
-                    n14 = 224;
-                    break;
-                }
-                case 158: {
-                    n14 = 7;
-                    break;
-                }
-                case 159: {
-                    n14 = 20;
-                    break;
-                }
-                case 160: {
-                    n14 = 170;
-                    break;
-                }
-                case 161: {
-                    n14 = 184;
-                    break;
-                }
-                case 162: {
-                    n14 = 8;
-                    break;
-                }
-                case 163: {
-                    n14 = 100;
-                    break;
-                }
-                case 164: {
-                    n14 = 164;
-                    break;
-                }
-                case 165: {
-                    n14 = 139;
-                    break;
-                }
-                case 166: {
-                    n14 = 59;
-                    break;
-                }
-                case 167: {
-                    n14 = 14;
-                    break;
-                }
-                case 168: {
-                    n14 = 88;
-                    break;
-                }
-                case 169: {
-                    n14 = 55;
-                    break;
-                }
-                case 170: {
-                    n14 = 208;
-                    break;
-                }
-                case 171: {
-                    n14 = 138;
-                    break;
-                }
-                case 172: {
-                    n14 = 141;
-                    break;
-                }
-                case 173: {
-                    n14 = 162;
-                    break;
-                }
-                case 174: {
-                    n14 = 215;
-                    break;
-                }
-                case 175: {
-                    n14 = 204;
-                    break;
-                }
-                case 176: {
-                    n14 = 51;
-                    break;
-                }
-                case 177: {
-                    n14 = 225;
-                    break;
-                }
-                case 178: {
-                    n14 = 233;
-                    break;
-                }
-                case 179: {
-                    n14 = 135;
-                    break;
-                }
-                case 180: {
-                    n14 = 18;
-                    break;
-                }
-                case 181: {
-                    n14 = 87;
-                    break;
-                }
-                case 182: {
-                    n14 = 102;
-                    break;
-                }
-                case 183: {
-                    n14 = 96;
-                    break;
-                }
-                case 184: {
-                    n14 = 125;
-                    break;
-                }
-                case 185: {
-                    n14 = 103;
-                    break;
-                }
-                case 186: {
-                    n14 = 183;
-                    break;
-                }
-                case 187: {
-                    n14 = 140;
-                    break;
-                }
-                case 188: {
-                    n14 = 127;
-                    break;
-                }
-                case 189: {
-                    n14 = 209;
-                    break;
-                }
-                case 190: {
-                    n14 = 143;
-                    break;
-                }
-                case 191: {
-                    n14 = 248;
-                    break;
-                }
-                case 192: {
-                    n14 = 105;
-                    break;
-                }
-                case 193: {
-                    n14 = 89;
-                    break;
-                }
-                case 194: {
-                    n14 = 94;
-                    break;
-                }
-                case 195: {
-                    n14 = 163;
-                    break;
-                }
-                case 196: {
-                    n14 = 60;
-                    break;
-                }
-                case 197: {
-                    n14 = 203;
-                    break;
-                }
-                case 198: {
-                    n14 = 42;
-                    break;
-                }
-                case 199: {
-                    n14 = 254;
-                    break;
-                }
-                case 200: {
-                    n14 = 110;
-                    break;
-                }
-                case 201: {
-                    n14 = 206;
-                    break;
-                }
-                case 202: {
-                    n14 = 12;
-                    break;
-                }
-                case 203: {
-                    n14 = 119;
-                    break;
-                }
-                case 204: {
-                    n14 = 108;
-                    break;
-                }
-                case 205: {
-                    n14 = 120;
-                    break;
-                }
-                case 206: {
-                    n14 = 142;
-                    break;
-                }
-                case 207: {
-                    n14 = 186;
-                    break;
-                }
-                case 208: {
-                    n14 = 228;
-                    break;
-                }
-                case 209: {
-                    n14 = 237;
-                    break;
-                }
-                case 210: {
-                    n14 = 187;
-                    break;
-                }
-                case 211: {
-                    n14 = 53;
-                    break;
-                }
-                case 212: {
-                    n14 = 97;
-                    break;
-                }
-                case 213: {
-                    n14 = 199;
-                    break;
-                }
-                case 214: {
-                    n14 = 16;
-                    break;
-                }
-                case 215: {
-                    n14 = 29;
-                    break;
-                }
-                case 216: {
-                    n14 = 70;
-                    break;
-                }
-                case 217: {
-                    n14 = 214;
-                    break;
-                }
-                case 218: {
-                    n14 = 68;
-                    break;
-                }
-                case 219: {
-                    n14 = 13;
-                    break;
-                }
-                case 220: {
-                    n14 = 33;
-                    break;
-                }
-                case 221: {
-                    n14 = 71;
-                    break;
-                }
-                case 222: {
-                    n14 = 231;
-                    break;
-                }
-                case 223: {
-                    n14 = 6;
-                    break;
-                }
-                case 224: {
-                    n14 = 230;
-                    break;
-                }
-                case 225: {
-                    n14 = 176;
-                    break;
-                }
-                case 226: {
-                    n14 = 229;
-                    break;
-                }
-                case 227: {
-                    n14 = 22;
-                    break;
-                }
-                case 228: {
-                    n14 = 147;
-                    break;
-                }
-                case 229: {
-                    n14 = 155;
-                    break;
-                }
-                case 230: {
-                    n14 = 240;
-                    break;
-                }
-                case 231: {
-                    n14 = 69;
-                    break;
-                }
-                case 232: {
-                    n14 = 192;
-                    break;
-                }
-                case 233: {
-                    n14 = 111;
-                    break;
-                }
-                case 234: {
-                    n14 = 116;
-                    break;
-                }
-                case 235: {
-                    n14 = 251;
-                    break;
-                }
-                case 236: {
-                    n14 = 0;
-                    break;
-                }
-                case 237: {
-                    n14 = 3;
-                    break;
-                }
-                case 238: {
-                    n14 = 129;
-                    break;
-                }
-                case 239: {
-                    n14 = 134;
-                    break;
-                }
-                case 240: {
-                    n14 = 153;
-                    break;
-                }
-                case 241: {
-                    n14 = 220;
-                    break;
-                }
-                case 242: {
-                    n14 = 219;
-                    break;
-                }
-                case 243: {
-                    n14 = 136;
-                    break;
-                }
-                case 244: {
-                    n14 = 180;
-                    break;
-                }
-                case 245: {
-                    n14 = 249;
-                    break;
-                }
-                case 246: {
-                    n14 = 39;
-                    break;
-                }
-                case 247: {
-                    n14 = 242;
-                    break;
-                }
-                case 248: {
-                    n14 = 27;
-                    break;
-                }
-                case 249: {
-                    n14 = 188;
-                    break;
-                }
-                case 250: {
-                    n14 = 82;
-                    break;
-                }
-                case 251: {
-                    n14 = 217;
-                    break;
-                }
-                case 252: {
-                    n14 = 157;
-                    break;
-                }
-                case 253: {
-                    n14 = 175;
-                    break;
-                }
-                case 254: {
-                    n14 = 152;
-                    break;
-                }
-                default: {
-                    n14 = 193;
-                }
-            }
-            int n15 = n14;
-            int n16 = (n11 & 0xFF) - n15;
-            if (n16 < 0) {
-                n16 += 256;
-            }
-            if ((n13 = ((n11 & 0xFFFF) >>> 8) - n15) < 0) {
-                n13 += 256;
-            }
-            int n17 = 0;
-            while (n17 < cArray.length) {
-                int n18 = n17 % 2;
-                int n19 = n17;
-                char[] cArray2 = cArray;
-                char c2 = cArray[n19];
-                if (n18 == 0) {
-                    cArray2[n19] = (char)(c2 ^ n16);
-                    n16 = ((n16 >>> 3 | n16 << 5) ^ cArray[n17]) & 0xFF;
-                } else {
-                    cArray2[n19] = (char)(c2 ^ n13);
-                    n13 = ((n13 >>> 3 | n13 << 5) ^ cArray[n17]) & 0xFF;
-                }
-                ++n17;
-            }
-            ph_2.b[n12] = new String(cArray).intern();
-        }
-        return b[n12];
-    }
-
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x1F4D;
-        if (d[n11] == null) {
-            ph_2.d[n11] = (int)(c[n11] ^ l2);
-        }
-        return d[n11];
-    }
-
-    private static long b(int n10, long l2) {
-        int n11 = (n10 ^ (int)l2 ^ 0x7B0E) & Short.MAX_VALUE;
-        if (f[n11] == null) {
-            ph_2.f[n11] = e[n11] ^ l2;
-        }
-        return f[n11];
-    }
+      return g[var3];
+   }
 }
+
+
+
+
 

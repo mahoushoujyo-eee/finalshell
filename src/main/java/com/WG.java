@@ -1,56 +1,53 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-public class WG
-extends RuntimeException {
-    private static int s;
+public class WG extends RuntimeException {
+   private static int s;
 
-    public WG() {
-    }
+   public WG() {
+   }
 
-    public WG(String string) {
-        super(string);
-    }
+   public WG(String var1) {
+      super(var1);
+   }
 
-    public WG(String string, Throwable throwable) {
-        super(string, throwable);
-    }
+   public WG(String var1, Throwable var2) {
+      super(var1, var2);
+   }
 
-    public WG(Throwable throwable) {
-        super(throwable);
-    }
+   public WG(Throwable var1) {
+      super(var1);
+   }
 
-    public static void z(int n10) {
-        s = n10;
-    }
+   public static void z(int var0) {
+      s = var0;
+   }
 
-    public static int t() {
-        return s;
-    }
+   public static int t() {
+      return s;
+   }
 
-    public static int C() {
-        int n10 = WG.t();
-        try {
-            if (n10 == 0) {
-                return 30;
-            }
-        }
-        catch (RuntimeException runtimeException) {
-            throw WG.a(runtimeException);
-        }
-        return 0;
-    }
+   public static int C() {
+      int var0 = t();
 
-    private static RuntimeException a(RuntimeException runtimeException) {
-        return runtimeException;
-    }
+      try {
+         return var0 == 0 ? 30 : 0;
+      } catch (RuntimeException var1) {
+         throw a(var1);
+      }
+   }
 
-    static {
-        if (WG.t() != 0) {
-            WG.z(86);
-        }
-    }
+   private static RuntimeException a(RuntimeException var0) {
+      return var0;
+   }
+
+   static {
+      if (t() != 0) {
+         z(86);
+      }
+   }
 }
+
+
+
+
 

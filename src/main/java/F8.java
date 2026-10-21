@@ -1,162 +1,194 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com._y_0;
-import com.c;
+import com._y_2;
 import java.awt.Dimension;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import javax.swing.JPanel;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public class F8
-extends JPanel {
-    kj_0 R;
-    kj_0 p;
-    aM H;
-    t3_0 K;
-    _y_0 q;
-    protected String c;
-    private static String[] f;
-    private static final long[] cb;
-    private static final Integer[] db;
+public class F8 extends JPanel {
+   Kj_2 R;
+   Kj_2 p;
+   aM H;
+   t3_2 K;
+   _y_2 q;
+   protected String c;
+   private static String[] f;
+   private static final long[] cb;
+   private static final Integer[] db;
 
-    public F8() {
-        this.setPreferredSize(new Dimension(F8.a(10735, 7292822211235108152L), F8.a(18069, 523133079799642691L)));
-    }
+   public F8() {
+      this.setPreferredSize(new Dimension(a(10735, 7292822211235108152L), a(18069, 523133079799642691L)));
+   }
 
-    public void q() {
-        try {
-            this.K();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   public void q() {
+      Object[] var10001 = com.c.f();
+      Method var10003 = com.c.d(356328755167951757L);
+      Object[] var10002 = var10001;
+      F8 var2 = this;
+      Method var10000 = var10003;
 
-    public void C(KV kV) {
-    }
+      try {
+         var10000.invoke(var2, var10002);
+      } catch (InvocationTargetException var1) {
+         throw var1.getTargetException();
+      }
+   }
 
-    public void S() {
-    }
+   public void C(KV var1) {
+   }
 
-    public kj_0 i() {
-        return (kj_0)this.R;
-    }
+   public void S() {
+   }
 
-    private void b(kj_0 kj_02) {
-        this.R = kj_02;
-    }
+   public Kj_2 i() {
+      return (Kj_2)com.c.c(480934286044834250L).get(this);
+   }
 
-    public kj_0 Y() {
-        return (kj_0)this.p;
-    }
+   private void b(Kj_2 var1) {
+      com.c.c(480934286044834250L).set(this, var1);
+   }
 
-    public void K(kj_0 kj_02) {
-        Object object;
-        this.p = kj_02;
-        try {
-            object = kj_02.Y();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            this.b(object);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   public Kj_2 Y() {
+      return (Kj_2)com.c.c(280691565200945876L).get(this);
+   }
 
-    public aM h() {
-        return (aM)this.H;
-    }
+   public void K(Kj_2 var1) {
+      com.c.c(280691565200945876L).set(this, var1);
+      Object[] var10002 = com.c.f();
+      Method var10004 = com.c.d(328920636414804414L);
+      Object[] var10003 = var10002;
+      Kj_2 var7 = var1;
+      Method var10001 = var10004;
 
-    public void C(aM aM2) {
-        this.H = aM2;
-    }
+      try {
+         var4 = var10001.invoke(var7, var10003);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
 
-    public t3_0 X() {
-        return (t3_0)this.K;
-    }
+      Object[] var5 = com.c.a(var4);
+      Method var9 = com.c.d(238817641764583171L);
+      var10002 = var5;
+      F8 var6 = this;
+      Method var10000 = var9;
 
-    public void U(t3_0 t3_02) {
-        this.K = t3_02;
-    }
+      try {
+         var10000.invoke(var6, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
 
-    public void o() {
-    }
+   public aM h() {
+      return (aM)com.c.c(192114424962340582L).get(this);
+   }
 
-    public _y_0 t() {
-        return (_y_0)this.q;
-    }
+   public void C(aM var1) {
+      com.c.c(192114424962340582L).set(this, var1);
+   }
 
-    public void E(_y_0 _y_02) {
-        this.q = _y_02;
-    }
+   public t3_2 X() {
+      return (t3_2)com.c.c(180652311095961139L).get(this);
+   }
 
-    public String T() {
-        return (String)this.c;
-    }
+   public void U(t3_2 var1) {
+      com.c.c(180652311095961139L).set(this, var1);
+   }
 
-    public void h(String string) {
-        this.c = string;
-    }
+   public void o() {
+   }
 
-    public void h() {
-        this.R = null;
-        this.p = null;
-        this.H = null;
-        this.K = null;
-        this.q = null;
-        this.c = null;
-    }
+   public _y_2 t() {
+      return (_y_2)com.c.c(501796506201911497L).get(this);
+   }
 
-    public void K() {
-        try {
-            yt_1.F.W((Object)new bj_0(this), dd_1.y);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   public void E(_y_2 var1) {
+      com.c.c(501796506201911497L).set(this, var1);
+   }
 
-    public static void D(String[] stringArray) {
-        f = stringArray;
-    }
+   public String T() {
+      return (String)com.c.c(208762370948884177L).get(this);
+   }
 
-    public static String[] y() {
-        return f;
-    }
+   public void h(String var1) {
+      com.c.c(208762370948884177L).set(this, var1);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 1922241311274734944L;
-        long[] lArray = new long[2];
-        F8.D(null);
-        int n10 = 0;
-        String string = "V\u009c5 l\u00aa\b3\u00b3i\u00c8\u00bc\u00bd\u00a3\u00e7H";
-        int n11 = "V\u009c5 l\u00aa\b3\u00b3i\u00c8\u00bc\u00bd\u00a3\u00e7H".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        cb = lArray;
-        db = new Integer[2];
-    }
+   public void h$void() {
+      com.c.c(480934286044834250L).set(this, null);
+      com.c.c(280691565200945876L).set(this, null);
+      com.c.c(192114424962340582L).set(this, null);
+      com.c.c(180652311095961139L).set(this, null);
+      com.c.c(501796506201911497L).set(this, null);
+      com.c.c(208762370948884177L).set(this, null);
+   }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x7CD6;
-        if (db[n11] == null) {
-            F8.db[n11] = (int)(cb[n11] ^ l2);
-        }
-        return db[n11];
-    }
+   public void K() {
+      Method var10000 = (Method)com.c.c(388376917454860932L).get(null);
+      Object[] var10001 = com.c.a(new Bj_2(this), com.c.c(222883478649268280L).getInt(null));
+      Method var10003 = com.c.d(266288712085965362L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
+
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var1) {
+         throw var1.getTargetException();
+      }
+   }
+
+   public static void D(String[] var0) {
+      f = var0;
+   }
+
+   public static String[] y() {
+      return f;
+   }
+
+   static {
+      long var0 = 1922241311274734944L;
+      long[] var6 = new long[2];
+      D(null);
+      int var3 = 0;
+      String var4 = "V\u009c5 lª\b3³iÈ¼½£çH";
+      int var5 = "V\u009c5 lª\b3³iÈ¼½£çH".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      cb = var6;
+      db = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 31958;
+      if (db[var3] == null) {
+         db[var3] = (int)(cb[var3] ^ var1);
+      }
+
+      return db[var3];
+   }
 }
+
+
+
+
 

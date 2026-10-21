@@ -1,45 +1,41 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import org.F.c;
-import org.H.CG;
-import org.h.k_0;
 import org.v.NS;
 import org.v.NU;
-import org.v.m_0;
 
-class C2
-implements m_0 {
-    final CG H;
+class C2 implements org.v.m_2 {
+   final org.H.CG H;
 
-    C2(CG cG) {
-        this.H = cG;
-    }
+   C2(org.H.CG var1) {
+      this.H = var1;
+   }
 
-    @c
-    public Void r(NU nU2) throws Throwable {
-        k_0.B(this.H.e).x(nU2);
-        return null;
-    }
+   @org.F.c
+   public Void r(NU var1) throws Throwable {
+      org.H.k_2.B(this.H.e).x(var1);
+      return null;
+   }
 
-    @c
-    public Void b(NS nS2) throws Throwable {
-        k_0.B(this.H.e).f(nS2);
-        return null;
-    }
+   @org.F.c
+   public Void b(NS var1) throws Throwable {
+      org.H.k_2.B(this.H.e).f(var1);
+      return null;
+   }
 
-    @Override
-    @c
-    public Object Q(NS nS2) throws Throwable {
-        return this.b(nS2);
-    }
+   @org.F.c
+   @Override
+   public Object Q(NS var1) throws Throwable {
+      return this.b(var1);
+   }
 
-    @Override
-    @c
-    public Object Y(NU nU2) throws Throwable {
-        return this.r(nU2);
-    }
+   @org.F.c
+   @Override
+   public Object Y(NU var1) throws Throwable {
+      return this.r(var1);
+   }
 }
+
+
+
+
 

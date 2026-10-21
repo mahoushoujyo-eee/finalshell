@@ -1,24 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.L;
 
-import com.L.m;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-class J
-implements PropertyChangeListener {
-    final m u;
+class J implements PropertyChangeListener {
+   final m u;
 
-    J(m m10) {
-        this.u = m10;
-    }
+   J(m var1) {
+      this.u = var1;
+   }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent propertyChangeEvent) {
-        this.u.m(propertyChangeEvent.getOldValue());
-        this.u.w(propertyChangeEvent.getNewValue());
-    }
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      this.u.m(var1.getOldValue());
+      this.u.w(var1.getNewValue());
+   }
 }
+
+
+
+
 

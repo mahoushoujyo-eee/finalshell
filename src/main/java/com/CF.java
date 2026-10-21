@@ -1,144 +1,173 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.NM;
-import com.W5;
-import com.po_0;
+public class CF implements Po_2, Cloneable {
+   protected int[] B;
+   private static final long[] a;
+   private static final Integer[] b;
 
-public class CF
-implements po_0,
-Cloneable {
-    protected int[] B;
-    private static final long[] a;
-    private static final Integer[] b;
+   public CF() {
+      this.B = new int[a(24370, 4715111695791294126L)];
+   }
 
-    public CF() {
-        this.B = new int[CF.a(24370, 4715111695791294126L)];
-    }
+   public CF(int[] var1) {
+      this.B = var1;
+   }
 
-    public CF(int[] nArray) {
-        this.B = nArray;
-    }
+   @Override
+   public Object clone() {
+      try {
+         com.CF var1 = (com.CF)super.clone();
+         var1.B = (int[])this.B.clone();
+         return var1;
+      } catch (CloneNotSupportedException var2) {
+         return null;
+      }
+   }
 
-    public Object clone() {
-        try {
-            CF cF = (CF)super.clone();
-            cF.B = (int[])this.B.clone();
-            return cF;
-        }
-        catch (CloneNotSupportedException cloneNotSupportedException) {
-            return null;
-        }
-    }
+   public void V(int[] var1) {
+      this.B = var1;
+   }
 
-    public void V(int[] nArray) {
-        this.B = nArray;
-    }
+   public int[] W() {
+      return this.B;
+   }
 
-    public int[] W() {
-        return this.B;
-    }
-
-    @Override
-    public int D(float f10) {
-        int n10;
-        block7: {
-            int n11;
-            block6: {
-                String[] stringArray;
-                block4: {
-                    block5: {
-                        n11 = (int)(f10 * 255.0f);
-                        stringArray = W5.q();
-                        n10 = n11;
-                        if (stringArray == null) break block4;
-                        if (n10 >= 0) break block5;
-                        n11 = 0;
-                        if (stringArray != null) break block6;
-                    }
-                    n10 = n11;
-                }
-                if (stringArray == null) break block7;
-                if (n10 > CF.a(28816, 7043301042965850382L)) {
-                    n11 = CF.a(11412, 5172120128805172489L);
-                }
+   @Override
+   public int D(float var1) {
+      String[] var10000 = com.W5.q();
+      int var3 = (int)(var1 * 255.0F);
+      String[] var2 = var10000;
+      int var4 = var3;
+      if (var2 != null) {
+         if (var3 < 0) {
+            var3 = 0;
+            if (var2 != null) {
+               return this.B[var3];
             }
-            n10 = this.B[n11];
-        }
-        return n10;
-    }
+         }
 
-    public void l(int n10, int n11, int n12, int n13) {
-        int n14;
-        String[] stringArray;
-        int n15;
-        block3: {
-            int n16 = this.B[n11];
-            n15 = this.B[n12];
-            stringArray = W5.q();
-            for (n14 = n11; n14 <= n10; ++n14) {
-                this.B[n14] = NM.n((float)(n14 - n11) / (float)(n10 - n11), n16, n13);
-                if (stringArray != null) {
-                    if (stringArray != null) continue;
-                }
-                break block3;
+         var4 = var3;
+      }
+
+      if (var2 == null) {
+         return var4;
+      } else {
+         if (var4 > a(28816, 7043301042965850382L)) {
+            var3 = a(11412, 5172120128805172489L);
+         }
+
+         return this.B[var3];
+      }
+   }
+
+   public void l(int var1, int var2, int var3, int var4) {
+      String[] var10000 = com.W5.q();
+      int var6 = this.B[var2];
+      int var7 = this.B[var3];
+      String[] var5 = var10000;
+      int var8 = var2;
+
+      while (true) {
+         if (var8 <= var1) {
+            this.B[var8] = NM.n((float)(var8 - var2) / (float)(var1 - var2), var6, var4);
+            var8++;
+            if (var5 == null) {
+               break;
             }
-            n14 = n10;
-        }
-        while (n14 < n12) {
-            this.B[n14] = NM.n((float)(n14 - n10) / (float)(n12 - n10), n13, n15);
-            ++n14;
-            if (stringArray != null) continue;
-        }
-    }
 
-    public void t(int n10, int n11, int n12, int n13) {
-        String[] stringArray = W5.q();
-        for (int i2 = n10; i2 <= n11; ++i2) {
-            this.B[i2] = NM.n((float)(i2 - n10) / (float)(n11 - n10), n12, n13);
-            if (stringArray != null) continue;
-        }
-    }
+            if (var5 != null) {
+               continue;
+            }
+         }
 
-    public void o(int n10, int n11, int n12) {
-        String[] stringArray = W5.q();
-        for (int i2 = n10; i2 <= n11; ++i2) {
-            this.B[i2] = n12;
-            if (stringArray != null) continue;
-        }
-    }
+         var8 = var1;
+         break;
+      }
 
-    public void l(int n10, int n11) {
-        this.B[n10] = n11;
-    }
+      while (var8 < var3) {
+         this.B[var8] = NM.n((float)(var8 - var1) / (float)(var3 - var1), var4, var7);
+         var8++;
+         if (var5 == null) {
+            break;
+         }
+      }
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 2986575538856208387L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "\u001d|\u001f\u001a\u000f\u008b/\u00ad.\u00a7HY\u00adq]\u00f5\u00ae\u00a6\u0096\n@{\u0001\u00f2";
-        int n11 = "\u001d|\u001f\u001a\u000f\u008b/\u00ad.\u00a7HY\u00adq]\u00f5\u00ae\u00a6\u0096\n@{\u0001\u00f2".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[3];
-    }
+   public void t(int var1, int var2, int var3, int var4) {
+      String[] var10000 = com.W5.q();
+      int var6 = var1;
+      String[] var5 = var10000;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x599C;
-        if (b[n11] == null) {
-            CF.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      while (var6 <= var2) {
+         this.B[var6] = NM.n((float)(var6 - var1) / (float)(var2 - var1), var3, var4);
+         var6++;
+         if (var5 == null) {
+            break;
+         }
+      }
+   }
+
+   public void o(int var1, int var2, int var3) {
+      String[] var10000 = com.W5.q();
+      int var5 = var1;
+      String[] var4 = var10000;
+
+      while (var5 <= var2) {
+         this.B[var5] = var3;
+         var5++;
+         if (var4 == null) {
+            break;
+         }
+      }
+   }
+
+   public void l(int var1, int var2) {
+      this.B[var1] = var2;
+   }
+
+   static {
+      long var0 = 2986575538856208387L;
+      long[] var6 = new long[3];
+      int var3 = 0;
+      String var4 = "\u001d|\u001f\u001a\u000f\u008b/\u00ad.§HY\u00adq]õ®¦\u0096\n@{\u0001ò";
+      int var5 = "\u001d|\u001f\u001a\u000f\u008b/\u00ad.§HY\u00adq]õ®¦\u0096\n@{\u0001ò".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[3];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 22940;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

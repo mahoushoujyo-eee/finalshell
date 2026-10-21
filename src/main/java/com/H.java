@@ -1,18 +1,16 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.BX;
-import com.at_0;
-
 public interface H {
-    public void U(at_0 var1, BX var2, int var3);
+   void U(com.at_2 var1, com.BX var2, int var3);
 
-    public void N(at_0 var1, BX var2, int var3);
+   void N(com.at_2 var1, com.BX var2, int var3);
 
-    public boolean T(at_0 var1, BX var2, int var3);
+   boolean T(com.at_2 var1, com.BX var2, int var3);
 
-    public void u(at_0 var1, BX var2, int var3);
+   void u(com.at_2 var1, com.BX var2, int var3);
 }
+
+
+
+
 

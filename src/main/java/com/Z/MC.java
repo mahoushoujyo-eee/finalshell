@@ -1,24 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.Z.Y;
-import com.z.m_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class MC
-implements ActionListener {
-    final Y t;
+class MC implements ActionListener {
+   final com.Z.Y t;
 
-    MC(Y y2) {
-        this.t = y2;
-    }
+   MC(com.Z.Y var1) {
+      this.t = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.t.l.M(m_0.tiles);
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.t.l.M(com.Z.m_2.tiles);
+   }
 }
+
+
+
+
 

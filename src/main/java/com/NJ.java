@@ -1,11 +1,12 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 public interface NJ {
-    public void e();
+   void e();
 
-    public void R();
+   void R();
 }
+
+
+
+
 

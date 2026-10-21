@@ -1,15 +1,12 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.apple.eawt.event;
 
-import com.apple.eawt.event.GestureListener;
-import com.apple.eawt.event.GesturePhaseEvent;
+public interface GesturePhaseListener extends GestureListener {
+   void gestureBegan(GesturePhaseEvent var1);
 
-public interface GesturePhaseListener
-extends GestureListener {
-    public void gestureBegan(GesturePhaseEvent var1);
-
-    public void gestureEnded(GesturePhaseEvent var1);
+   void gestureEnded(GesturePhaseEvent var1);
 }
+
+
+
+
 

@@ -1,95 +1,92 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com._y_0;
-import com.c;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.lang.reflect.InvocationTargetException;
+public class Cs_2 {
+   public static short a;
+   public static int k;
+   public static boolean W;
+   public static boolean D;
+   public static int r;
+   public static int o;
+   public static int x;
+   public static boolean Q;
+   public static int C;
+   public static float P;
+   public static int h;
 
-/*
- * Renamed from cs
- */
-class cs_2
-implements ActionListener {
-    final bq_0 Z;
-    final t3_0 y;
-    final xT k;
+   static {
+      long var1 = 580382013704038002L;
+      long[] var0 = new long[6];
+      int var4 = 0;
+      String var5 = "\u008c\u0015¥jÐÚæx\u008f÷\u0005«ÐÚå\u009aÛ[k@ÐÚæ\u0016\u0003\u001dÊaÐÚæw";
+      int var6 = "\u008c\u0015¥jÐÚæx\u008f÷\u0005«ÐÚå\u009aÛ[k@ÐÚæ\u0016\u0003\u001dÊaÐÚæw".length();
+      byte var3 = 0;
 
-    cs_2(xT xT2, bq_0 bq_02, t3_0 t3_02) {
-        this.k = xT2;
-        this.Z = bq_02;
-        this.y = t3_02;
-    }
+      label21:
+      while (true) {
+         int var10001 = var3;
+         var3 += 8;
+         byte[] var7 = var5.substring(var10001, var3).getBytes("ISO-8859-1");
+         long[] var10000 = var0;
+         var10001 = var4++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        _y_0 _y_02;
-        int n10;
-        U u10;
-        Object object;
-        Object object2;
-        Object object3;
-        String string;
-        try {
-            this.Z.u(System.currentTimeMillis());
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        lv_2 lv_22 = ((_y_0)this.k.o).a();
-        try {
-            string = (String)lv_22.G();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        String string2 = string;
-        try {
-            object3 = yt_1.i();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            object2 = object3.O();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            object = object2.G();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            u10 = (U)object.D();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        U u11 = u10;
-        try {
-            n10 = (Integer)this.y.C();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            _y_02 = (_y_0)u11.Y(n10 + 1);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        _y_0 _y_03 = _y_02;
-        _y_03.H(lv_22);
-        try {
-            u11.A((Object)_y_03, (Object)string2, false);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+         while (true) {
+            long var13 = var10002 ^ var1;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var3 >= var6) {
+                     a = 0;
+                     k = (int)var0[1];
+                     W = false;
+                     D = false;
+                     r = (int)var0[5];
+                     o = (int)var0[3];
+                     x = (int)var0[4];
+                     Q = true;
+                     C = (int)var0[2];
+                     P = 0.7F;
+                     h = (int)var0[0];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var3 < var6) {
+                     continue label21;
+                  }
+
+                  var5 = "ê\u001bµ$ÐÚç^ñm?ÅÐÚòr";
+                  var6 = "ê\u001bµ$ÐÚç^ñm?ÅÐÚòr".length();
+                  var3 = 0;
+            }
+
+            byte var10 = var3;
+            var3 += 8;
+            var7 = var5.substring(var10, var3).getBytes("ISO-8859-1");
+            var10000 = var0;
+            var10001 = var4++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
 }
+
+
+
+
 

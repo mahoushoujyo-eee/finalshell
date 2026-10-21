@@ -1,82 +1,95 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FV;
-import com.SN;
-import com.WC;
 import java.awt.Rectangle;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class XV
-implements ActionListener {
-    private int L;
-    final Rectangle h;
-    final int m;
-    final int E;
-    final Window n;
-    private static final long[] a;
-    private static final Integer[] b;
+class XV implements ActionListener {
+   private int L;
+   final Rectangle h;
+   final int m;
+   final int E;
+   final Window n;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    XV(Rectangle rectangle, int n10, int n11, Window window) {
-        this.h = rectangle;
-        this.m = n10;
-        this.E = n11;
-        this.n = window;
-        this.L = 1;
-    }
+   XV(Rectangle var1, int var2, int var3, Window var4) {
+      this.h = var1;
+      this.m = var2;
+      this.E = var3;
+      this.n = var4;
+      this.L = 1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block4: {
-            XV xV2;
-            block2: {
-                block3: {
-                    String string = FV.D();
-                    xV2 = this;
-                    if (string != null) break block2;
-                    if (xV2.L > XV.a(20114, 1000204779819488227L)) break block3;
-                    int n10 = this.h.width + this.m * this.L / XV.a(7759, 2278290378248356671L);
-                    int n11 = this.h.height + this.E * this.L / XV.a(7759, 2278290378248356671L);
-                    Rectangle rectangle = new Rectangle(this.h.x + this.h.width / 2 - n10 / 2, this.h.y + this.h.height / 2 - n11 / 2, n10, n11);
-                    this.n.setBounds(rectangle);
-                    if (string == null) break block4;
-                }
-                xV2 = SN.E().get(this.n);
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      label15: {
+         String var2 = com.FV.D();
+         Object var10000 = this;
+         if (var2 == null) {
+            if (this.L <= a(20114, 1000204779819488227L)) {
+               int var3 = this.h.width + this.m * this.L / a(7759, 2278290378248356671L);
+               int var4 = this.h.height + this.E * this.L / a(7759, 2278290378248356671L);
+               Rectangle var5 = new Rectangle(this.h.x + this.h.width / 2 - var3 / 2, this.h.y + this.h.height / 2 - var4 / 2, var3, var4);
+               this.n.setBounds(var5);
+               if (var2 == null) {
+                  break label15;
+               }
             }
-            ((WC)((Object)xV2)).Y();
-        }
-        ++this.L;
-    }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 9092564293235972177L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "J\u0000\u0089_\u00e9\u0014\u001bd\u00b7\u00bb\u0001\u00c9pr\u00cb\u00b8";
-        int n11 = "J\u0000\u0089_\u00e9\u0014\u001bd\u00b7\u00bb\u0001\u00c9pr\u00cb\u00b8".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-    }
+            var10000 = SN.E().get(this.n);
+         }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x1D70;
-        if (b[n11] == null) {
-            XV.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+         ((com.WC)var10000).Y();
+      }
+
+      this.L++;
+   }
+
+   static {
+      long var0 = 9092564293235972177L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "J\u0000\u0089_é\u0014\u001bd·»\u0001ÉprË¸";
+      int var5 = "J\u0000\u0089_é\u0014\u001bd·»\u0001ÉprË¸".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 7536;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

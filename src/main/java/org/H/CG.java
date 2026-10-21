@@ -1,110 +1,107 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import org.F.c;
-import org.H.C2;
-import org.h.k_0;
 import org.v.N6;
 import org.v.NT;
 import org.v.RF;
 import org.v._O;
-import org.v._j_0;
-import org.v._p_0;
-import org.v._z_0;
+import org.v._j_2;
+import org.v._p_2;
+import org.v._z_2;
 import org.v.hL;
 
-class CG
-implements hL {
-    final k_0 e;
+class CG implements hL {
+   final org.H.k_2 e;
 
-    CG(k_0 k_02) {
-        this.e = k_02;
-    }
+   CG(org.H.k_2 var1) {
+      this.e = var1;
+   }
 
-    @c
-    public Void D(N6 n62) throws Throwable {
-        n62.F(new C2(this));
-        return null;
-    }
+   @org.F.c
+   public Void D(N6 var1) throws Throwable {
+      var1.F(new org.H.C2(this));
+      return null;
+   }
 
-    @c
-    public Void k(_z_0 _z_02) throws Throwable {
-        k_0.B(this.e).J(_z_02);
-        return null;
-    }
+   @org.F.c
+   public Void k(_z_2 var1) throws Throwable {
+      org.H.k_2.B(this.e).J(var1);
+      return null;
+   }
 
-    @c
-    public Void d(_O _O2) throws Throwable {
-        k_0.B(this.e).y(_O2);
-        return null;
-    }
+   @org.F.c
+   public Void d(_O var1) throws Throwable {
+      org.H.k_2.B(this.e).y(var1);
+      return null;
+   }
 
-    @c
-    public Void e(_j_0 _j_02) throws Throwable {
-        k_0.B(this.e).D(_j_02);
-        return null;
-    }
+   @org.F.c
+   public Void e(_j_2 var1) throws Throwable {
+      org.H.k_2.B(this.e).D(var1);
+      return null;
+   }
 
-    @c
-    public Void D(_p_0 _p_02) throws Throwable {
-        k_0.B(this.e).E(_p_02);
-        return null;
-    }
+   @org.F.c
+   public Void D(_p_2 var1) throws Throwable {
+      org.H.k_2.B(this.e).E(var1);
+      return null;
+   }
 
-    @c
-    public Void i(NT nT2) throws Throwable {
-        k_0.B(this.e).Q(nT2);
-        return null;
-    }
+   @org.F.c
+   public Void i(NT var1) throws Throwable {
+      org.H.k_2.B(this.e).Q(var1);
+      return null;
+   }
 
-    @c
-    public Void o(RF rF) throws Throwable {
-        k_0.B(this.e).m(rF);
-        return null;
-    }
+   @org.F.c
+   public Void o(RF var1) throws Throwable {
+      org.H.k_2.B(this.e).m(var1);
+      return null;
+   }
 
-    @Override
-    @c
-    public Object t(_z_0 _z_02) throws Throwable {
-        return this.k(_z_02);
-    }
+   @org.F.c
+   @Override
+   public Object t(_z_2 var1) throws Throwable {
+      return this.k(var1);
+   }
 
-    @Override
-    @c
-    public Object C(N6 n62) throws Throwable {
-        return this.D(n62);
-    }
+   @org.F.c
+   @Override
+   public Object C(N6 var1) throws Throwable {
+      return this.D(var1);
+   }
 
-    @Override
-    @c
-    public Object L(_p_0 _p_02) throws Throwable {
-        return this.D(_p_02);
-    }
+   @org.F.c
+   @Override
+   public Object L(_p_2 var1) throws Throwable {
+      return this.D(var1);
+   }
 
-    @Override
-    @c
-    public Object K(RF rF) throws Throwable {
-        return this.o(rF);
-    }
+   @org.F.c
+   @Override
+   public Object K(RF var1) throws Throwable {
+      return this.o(var1);
+   }
 
-    @Override
-    @c
-    public Object F(NT nT2) throws Throwable {
-        return this.i(nT2);
-    }
+   @org.F.c
+   @Override
+   public Object F(NT var1) throws Throwable {
+      return this.i(var1);
+   }
 
-    @Override
-    @c
-    public Object F(_j_0 _j_02) throws Throwable {
-        return this.e(_j_02);
-    }
+   @org.F.c
+   @Override
+   public Object F(_j_2 var1) throws Throwable {
+      return this.e(var1);
+   }
 
-    @Override
-    @c
-    public Object I(_O _O2) throws Throwable {
-        return this.d(_O2);
-    }
+   @org.F.c
+   @Override
+   public Object I(_O var1) throws Throwable {
+      return this.d(var1);
+   }
 }
+
+
+
+
 

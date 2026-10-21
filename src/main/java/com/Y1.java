@@ -1,650 +1,952 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FV;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public final class Y1 {
-    public static List B(Object[] objectArray) {
-        ArrayList arrayList = new ArrayList(objectArray.length);
-        Collections.addAll(arrayList, objectArray);
-        return arrayList;
-    }
+   public static List B(Object[] var0) {
+      ArrayList var1 = new ArrayList(var0.length);
+      Collections.addAll(var1, var0);
+      return var1;
+   }
 
-    public static boolean d(int n10, int[] nArray) {
-        String string = FV.D();
-        boolean bl = Y1.x(n10, nArray);
-        if (string == null) {
-            bl = !bl;
-        }
-        return bl;
-    }
+   public static boolean d(int var0, int[] var1) {
+      String var2 = com.FV.D();
+      int var10000 = x(var0, var1);
+      if (var2 == null) {
+         var10000 = var10000 != -1 ? 1 : 0;
+      }
 
-    public static boolean z(long l2, long[] lArray) {
-        String string = FV.D();
-        boolean bl = Y1.a(l2, lArray);
-        if (string == null) {
-            bl = !bl;
-        }
-        return bl;
-    }
+      return (boolean)var10000;
+   }
 
-    public static boolean v(float f10, float[] fArray) {
-        String string = FV.D();
-        boolean bl = Y1.A(f10, fArray);
-        if (string == null) {
-            bl = !bl;
-        }
-        return bl;
-    }
+   public static boolean z(long var0, long[] var2) {
+      String var3 = com.FV.D();
+      int var10000 = a(var0, var2);
+      if (var3 == null) {
+         var10000 = var10000 != -1 ? 1 : 0;
+      }
 
-    public static boolean f(double d2, double[] dArray) {
-        String string = FV.D();
-        boolean bl = Y1.N(d2, dArray);
-        if (string == null) {
-            bl = !bl;
-        }
-        return bl;
-    }
+      return (boolean)var10000;
+   }
 
-    public static boolean B(char c2, char[] cArray) {
-        String string = FV.D();
-        boolean bl = Y1.a(c2, cArray);
-        if (string == null) {
-            bl = !bl;
-        }
-        return bl;
-    }
+   public static boolean v(float var0, float[] var1) {
+      String var2 = com.FV.D();
+      int var10000 = A(var0, var1);
+      if (var2 == null) {
+         var10000 = var10000 != -1 ? 1 : 0;
+      }
 
-    public static boolean C(byte by, byte[] byArray) {
-        String string = FV.D();
-        boolean bl = Y1.l(by, byArray);
-        if (string == null) {
-            bl = !bl;
-        }
-        return bl;
-    }
+      return (boolean)var10000;
+   }
 
-    public static boolean L(String string, String[] stringArray) {
-        String string2 = FV.D();
-        boolean bl = Y1.V(string, stringArray);
-        if (string2 == null) {
-            bl = !bl;
-        }
-        return bl;
-    }
+   public static boolean f(double var0, double[] var2) {
+      String var3 = com.FV.D();
+      int var10000 = N(var0, var2);
+      if (var3 == null) {
+         var10000 = var10000 != -1 ? 1 : 0;
+      }
 
-    public static boolean g(Object object, Object[] objectArray) {
-        String string = FV.D();
-        boolean bl = Y1.q(object, objectArray);
-        if (string == null) {
-            bl = !bl;
-        }
-        return bl;
-    }
+      return (boolean)var10000;
+   }
 
-    public static int x(int n10, int[] nArray) {
-        int n11;
-        block3: {
-            String string = FV.D();
-            for (int i2 = 0; i2 < nArray.length; ++i2) {
-                n11 = nArray[i2];
-                if (string == null) {
-                    int n12;
-                    if (string == null) {
-                        if (n11 != n10) continue;
-                        n12 = i2;
-                    }
-                    return n12;
-                }
-                break block3;
+   public static boolean B(char var0, char[] var1) {
+      String var2 = com.FV.D();
+      int var10000 = a(var0, var1);
+      if (var2 == null) {
+         var10000 = var10000 != -1 ? 1 : 0;
+      }
+
+      return (boolean)var10000;
+   }
+
+   public static boolean C(byte var0, byte[] var1) {
+      String var2 = com.FV.D();
+      int var10000 = l(var0, var1);
+      if (var2 == null) {
+         var10000 = var10000 != -1 ? 1 : 0;
+      }
+
+      return (boolean)var10000;
+   }
+
+   public static boolean L(String var0, String[] var1) {
+      String var2 = com.FV.D();
+      int var10000 = V(var0, var1);
+      if (var2 == null) {
+         var10000 = var10000 != -1 ? 1 : 0;
+      }
+
+      return (boolean)var10000;
+   }
+
+   public static boolean g(Object var0, Object[] var1) {
+      String var2 = com.FV.D();
+      int var10000 = q(var0, var1);
+      if (var2 == null) {
+         var10000 = var10000 != -1 ? 1 : 0;
+      }
+
+      return (boolean)var10000;
+   }
+
+   public static int x(int var0, int[] var1) {
+      String var10000 = com.FV.D();
+      int var3 = 0;
+      String var2 = var10000;
+
+      while (true) {
+         if (var3 < var1.length) {
+            var4 = var1[var3];
+            if (var2 != null) {
+               break;
             }
-            n11 = -1;
-        }
-        return n11;
-    }
 
-    public static int a(long l2, long[] lArray) {
-        int n10;
-        block3: {
-            String string = FV.D();
-            for (int i2 = 0; i2 < lArray.length; ++i2) {
-                long l3 = lArray[i2] - l2;
-                n10 = l3 == 0L ? 0 : (l3 < 0L ? -1 : 1);
-                if (string == null) {
-                    int n11;
-                    if (string == null) {
-                        if (n10 != 0) continue;
-                        n11 = i2;
-                    }
-                    return n11;
-                }
-                break block3;
+            if (var2 != null) {
+               return var4;
             }
-            n10 = -1;
-        }
-        return n10;
-    }
 
-    public static int A(float f10, float[] fArray) {
-        int n10;
-        block3: {
-            String string = FV.D();
-            for (int i2 = 0; i2 < fArray.length; ++i2) {
-                float f11 = fArray[i2] - f10;
-                n10 = f11 == 0.0f ? 0 : (f11 > 0.0f ? 1 : -1);
-                if (string == null) {
-                    int n11;
-                    if (string == null) {
-                        if (n10 != 0) continue;
-                        n11 = i2;
-                    }
-                    return n11;
-                }
-                break block3;
+            if (var4 == var0) {
+               return var3;
             }
-            n10 = -1;
-        }
-        return n10;
-    }
 
-    public static int N(double d2, double[] dArray) {
-        int n10;
-        block3: {
-            String string = FV.D();
-            for (int i2 = 0; i2 < dArray.length; ++i2) {
-                double d3 = dArray[i2] - d2;
-                n10 = d3 == 0.0 ? 0 : (d3 > 0.0 ? 1 : -1);
-                if (string == null) {
-                    int n11;
-                    if (string == null) {
-                        if (n10 != 0) continue;
-                        n11 = i2;
-                    }
-                    return n11;
-                }
-                break block3;
+            var3++;
+            if (var2 == null) {
+               continue;
             }
-            n10 = -1;
-        }
-        return n10;
-    }
+         }
 
-    public static int a(char c2, char[] cArray) {
-        char c3;
-        block3: {
-            String string = FV.D();
-            for (int i2 = 0; i2 < cArray.length; ++i2) {
-                c3 = cArray[i2];
-                if (string == null) {
-                    int n10;
-                    if (string == null) {
-                        if (c3 != c2) continue;
-                        n10 = i2;
-                    }
-                    return n10;
-                }
-                break block3;
+         var4 = -1;
+         break;
+      }
+
+      return var4;
+   }
+
+   public static int a(long var0, long[] var2) {
+      String var10000 = com.FV.D();
+      int var4 = 0;
+      String var3 = var10000;
+
+      while (true) {
+         if (var4 < var2.length) {
+            long var6;
+            var5 = (var6 = var2[var4] - var0) == 0L ? 0 : (var6 < 0L ? -1 : 1);
+            if (var3 != null) {
+               break;
             }
-            c3 = '\uffffffff';
-        }
-        return c3;
-    }
 
-    public static int l(byte by, byte[] byArray) {
-        byte by2;
-        block3: {
-            String string = FV.D();
-            for (int i2 = 0; i2 < byArray.length; ++i2) {
-                by2 = byArray[i2];
-                if (string == null) {
-                    int n10;
-                    if (string == null) {
-                        if (by2 != by) continue;
-                        n10 = i2;
-                    }
-                    return n10;
-                }
-                break block3;
+            if (var3 != null) {
+               return var5;
             }
-            by2 = -1;
-        }
-        return by2;
-    }
 
-    public static int V(String string, String[] stringArray) {
-        return Y1.w(string, stringArray, false);
-    }
-
-    public static int w(String string, String[] stringArray, boolean n10) {
-        String string2 = FV.D();
-        for (int i2 = 0; i2 < stringArray.length; ++i2) {
-            int n11;
-            block8: {
-                block5: {
-                    block6: {
-                        String string3;
-                        block7: {
-                            String string4;
-                            block3: {
-                                block4: {
-                                    string4 = string3 = stringArray[i2];
-                                    if (string2 != null) break block3;
-                                    if (string4 != null) break block4;
-                                    string4 = string;
-                                    if (string2 != null) break block3;
-                                    if (string4 == null) break block5;
-                                }
-                                string4 = string3;
-                            }
-                            if (string2 == null) {
-                                if (string4 == null) continue;
-                                string4 = string;
-                            }
-                            if (string4 == null) continue;
-                            n11 = n10;
-                            if (string2 != null) break block6;
-                            if (n11 == 0) break block7;
-                            if (!string3.equalsIgnoreCase(string)) continue;
-                            break block5;
-                        }
-                        n11 = string3.equals(string) ? 1 : 0;
-                    }
-                    if (string2 == null) {
-                        if (n11 == 0) continue;
-                    }
-                    break block8;
-                }
-                n11 = i2;
+            if (var5 == 0) {
+               return var4;
             }
-            return n11;
-        }
-        return -1;
-    }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public static int q(Object object, Object[] objectArray) {
-        String string = FV.D();
-        for (int i2 = 0; i2 < objectArray.length; ++i2) {
-            int n10;
-            block8: {
-                Object object2;
-                Object object3;
-                block6: {
-                    block7: {
-                        object2 = object3 = objectArray[i2];
-                        if (string != null) break block6;
-                        if (object2 != null) break block7;
-                        object2 = object;
-                        if (string != null) break block6;
-                        if (object2 == null) break block8;
-                    }
-                    object2 = object3;
-                }
-                if (string == null) {
-                    if (object2 == null) continue;
-                    object2 = object;
-                }
-                if (string == null) {
-                    if (object2 == null) continue;
-                    object2 = object3;
-                }
-                n10 = object2.equals(object) ? 1 : 0;
-                if (string != null) return n10;
-                if (n10 == 0) continue;
+            var4++;
+            if (var3 == null) {
+               continue;
             }
-            n10 = i2;
-            return n10;
-        }
-        return -1;
-    }
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     * Lifted jumps to return sites
-     */
-    public static Object[] E(Object[] objectArray, Object object) {
-        Object[] objectArray2 = Y1.R(objectArray, objectArray.length - 1);
-        int n10 = 0;
-        String string = FV.D();
-        int n11 = 0;
-        do {
-            block5: {
-                block4: {
-                    int n12;
-                    Object[] objectArray3;
-                    block3: {
-                        if (n11 >= objectArray.length) return objectArray2;
-                        if (n10 != 0) break block3;
-                        objectArray3 = objectArray;
-                        n12 = n11;
-                        if (string != null) break block4;
-                        if (objectArray3[n12] != object) break block3;
-                        n10 = -1;
-                        if (string == null) break block5;
-                    }
-                    objectArray3 = objectArray2;
-                    n12 = n11 + n10;
-                }
-                objectArray3[n12] = objectArray[n11];
+         var5 = -1;
+         break;
+      }
+
+      return var5;
+   }
+
+   public static int A(float var0, float[] var1) {
+      String var10000 = com.FV.D();
+      int var3 = 0;
+      String var2 = var10000;
+
+      while (true) {
+         if (var3 < var1.length) {
+            float var5;
+            var4 = (var5 = var1[var3] - var0) == 0.0F ? 0 : (var5 < 0.0F ? -1 : 1);
+            if (var2 != null) {
+               break;
             }
-            ++n11;
-        } while (string == null);
-        return objectArray2;
-    }
 
-    public static int[] e(int[] nArray, int n10) {
-        int[] nArray2 = new int[nArray.length - 1];
-        int n11 = 0;
-        String string = FV.D();
-        for (int i2 = 0; i2 < nArray.length; ++i2) {
-            block4: {
-                block3: {
-                    int n12 = i2;
-                    if (string != null) break block3;
-                    if (n12 != n10) break block4;
-                    n12 = n11 = -1;
-                }
-                if (string == null) continue;
+            if (var2 != null) {
+               return var4;
             }
-            nArray2[i2 + n11] = nArray[i2];
-            if (string == null) continue;
-        }
-        return nArray2;
-    }
 
-    public static float[] k(float[] fArray, float f10) {
-        float[] fArray2 = new float[fArray.length - 1];
-        int n10 = 0;
-        String string = FV.D();
-        for (int i2 = 0; i2 < fArray.length; ++i2) {
-            block4: {
-                block3: {
-                    float f11 = (float)i2 - f10;
-                    float f12 = f11 == 0.0f ? 0 : (f11 > 0.0f ? 1 : -1);
-                    if (string != null) break block3;
-                    if (f12 != false) break block4;
-                    n10 = (int)((float)-1);
-                    f12 = n10;
-                }
-                if (string == null) continue;
+            if (var4 == 0) {
+               return var3;
             }
-            fArray2[i2 + n10] = fArray[i2];
-            if (string == null) continue;
-        }
-        return fArray2;
-    }
 
-    public static double[] A(double[] dArray, double d2) {
-        double[] dArray2 = new double[dArray.length - 1];
-        int n10 = 0;
-        String string = FV.D();
-        for (int i2 = 0; i2 < dArray.length; ++i2) {
-            block4: {
-                block3: {
-                    double d3 = (double)i2 - d2;
-                    double d4 = d3 == 0.0 ? 0 : (d3 > 0.0 ? 1 : -1);
-                    if (string != null) break block3;
-                    if (d4 != false) break block4;
-                    n10 = (int)((double)-1);
-                    d4 = n10;
-                }
-                if (string == null) continue;
+            var3++;
+            if (var2 == null) {
+               continue;
             }
-            dArray2[i2 + n10] = dArray[i2];
-            if (string == null) continue;
-        }
-        return dArray2;
-    }
+         }
 
-    public static char[] h(char[] cArray, char c2) {
-        char[] cArray2 = new char[cArray.length - 1];
-        int n10 = 0;
-        String string = FV.D();
-        for (int i2 = 0; i2 < cArray.length; ++i2) {
-            block4: {
-                block3: {
-                    int n11 = i2;
-                    if (string != null) break block3;
-                    if (n11 != c2) break block4;
-                    n11 = n10 = -1;
-                }
-                if (string == null) continue;
+         var4 = -1;
+         break;
+      }
+
+      return var4;
+   }
+
+   public static int N(double var0, double[] var2) {
+      String var10000 = com.FV.D();
+      int var4 = 0;
+      String var3 = var10000;
+
+      while (true) {
+         if (var4 < var2.length) {
+            double var6;
+            var5 = (var6 = var2[var4] - var0) == 0.0 ? 0 : (var6 < 0.0 ? -1 : 1);
+            if (var3 != null) {
+               break;
             }
-            cArray2[i2 + n10] = cArray[i2];
-            if (string == null) continue;
-        }
-        return cArray2;
-    }
 
-    public static byte[] F(byte[] byArray, byte by) {
-        byte[] byArray2 = new byte[byArray.length - 1];
-        int n10 = 0;
-        String string = FV.D();
-        for (int i2 = 0; i2 < byArray.length; ++i2) {
-            block4: {
-                block3: {
-                    int n11 = i2;
-                    if (string != null) break block3;
-                    if (n11 != by) break block4;
-                    n11 = n10 = -1;
-                }
-                if (string == null) continue;
+            if (var3 != null) {
+               return var5;
             }
-            byArray2[i2 + n10] = byArray[i2];
-            if (string == null) continue;
-        }
-        return byArray2;
-    }
 
-    public static boolean[] i(boolean[] blArray, int n10) {
-        boolean[] blArray2 = new boolean[blArray.length - 1];
-        int n11 = 0;
-        String string = FV.D();
-        for (int i2 = 0; i2 < blArray.length; ++i2) {
-            block4: {
-                block3: {
-                    int n12 = i2;
-                    if (string != null) break block3;
-                    if (n12 != n10) break block4;
-                    n12 = n11 = -1;
-                }
-                if (string == null) continue;
+            if (var5 == 0) {
+               return var4;
             }
-            blArray2[i2 + n11] = blArray[i2];
-            if (string == null) continue;
-        }
-        return blArray2;
-    }
 
-    public static Object[] X(Object[] objectArray, int n10) {
-        Object[] objectArray2 = Y1.R(objectArray, objectArray.length - 1);
-        int n11 = 0;
-        String string = FV.D();
-        for (int i2 = 0; i2 < objectArray.length; ++i2) {
-            block4: {
-                block3: {
-                    int n12 = i2;
-                    if (string != null) break block3;
-                    if (n12 != n10) break block4;
-                    n12 = n11 = -1;
-                }
-                if (string == null) continue;
+            var4++;
+            if (var3 == null) {
+               continue;
             }
-            objectArray2[i2 + n11] = objectArray[i2];
-            if (string == null) continue;
-        }
-        return objectArray2;
-    }
+         }
 
-    public static int[] C(int[] nArray, int n10, int n11) {
-        int[] nArray2 = new int[nArray.length + 1];
-        int n12 = 0;
-        String string = FV.D();
-        for (int i2 = 0; i2 < nArray.length; ++i2) {
-            block4: {
-                int n13;
-                block3: {
-                    n13 = i2;
-                    if (string != null) break block3;
-                    if (n13 != n10) break block4;
-                    nArray2[i2] = n11;
-                    n13 = 1;
-                }
-                n12 = n13;
+         var5 = -1;
+         break;
+      }
+
+      return var5;
+   }
+
+   public static int a(char var0, char[] var1) {
+      String var10000 = com.FV.D();
+      int var3 = 0;
+      String var2 = var10000;
+
+      while (true) {
+         if (var3 < var1.length) {
+            var4 = var1[var3];
+            if (var2 != null) {
+               break;
             }
-            nArray2[i2 + n12] = nArray[i2];
-            if (string == null) continue;
-        }
-        return nArray2;
-    }
 
-    public static float[] g(float[] fArray, int n10, float f10) {
-        float[] fArray2 = new float[fArray.length + 1];
-        int n11 = 0;
-        String string = FV.D();
-        for (int i2 = 0; i2 < fArray.length; ++i2) {
-            block4: {
-                int n12;
-                block3: {
-                    n12 = i2;
-                    if (string != null) break block3;
-                    if (n12 != n10) break block4;
-                    fArray2[i2] = f10;
-                    n12 = 1;
-                }
-                n11 = n12;
+            if (var2 != null) {
+               return var4;
             }
-            fArray2[i2 + n11] = fArray[i2];
-            if (string == null) continue;
-        }
-        return fArray2;
-    }
 
-    public static double[] I(double[] dArray, int n10, double d2) {
-        double[] dArray2 = new double[dArray.length + 1];
-        int n11 = 0;
-        String string = FV.D();
-        for (int i2 = 0; i2 < dArray.length; ++i2) {
-            block4: {
-                int n12;
-                block3: {
-                    n12 = i2;
-                    if (string != null) break block3;
-                    if (n12 != n10) break block4;
-                    dArray2[i2] = d2;
-                    n12 = 1;
-                }
-                n11 = n12;
+            if (var4 == var0) {
+               return var3;
             }
-            dArray2[i2 + n11] = dArray[i2];
-            if (string == null) continue;
-        }
-        return dArray2;
-    }
 
-    public static char[] a(char[] cArray, int n10, char c2) {
-        char[] cArray2 = new char[cArray.length + 1];
-        int n11 = 0;
-        String string = FV.D();
-        for (int i2 = 0; i2 < cArray.length; ++i2) {
-            block4: {
-                int n12;
-                block3: {
-                    n12 = i2;
-                    if (string != null) break block3;
-                    if (n12 != n10) break block4;
-                    cArray2[i2] = c2;
-                    n12 = 1;
-                }
-                n11 = n12;
+            var3++;
+            if (var2 == null) {
+               continue;
             }
-            cArray2[i2 + n11] = cArray[i2];
-            if (string == null) continue;
-        }
-        return cArray2;
-    }
+         }
 
-    public static byte[] L(byte[] byArray, int n10, byte by) {
-        byte[] byArray2 = new byte[byArray.length + 1];
-        String string = FV.D();
-        int n11 = 0;
-        for (int i2 = 0; i2 < byArray.length; ++i2) {
-            block4: {
-                int n12;
-                block3: {
-                    n12 = i2;
-                    if (string != null) break block3;
-                    if (n12 != n10) break block4;
-                    byArray2[i2] = by;
-                    n12 = 1;
-                }
-                n11 = n12;
+         var4 = -1;
+         break;
+      }
+
+      return var4;
+   }
+
+   public static int l(byte var0, byte[] var1) {
+      String var10000 = com.FV.D();
+      int var3 = 0;
+      String var2 = var10000;
+
+      while (true) {
+         if (var3 < var1.length) {
+            var4 = var1[var3];
+            if (var2 != null) {
+               break;
             }
-            byArray2[i2 + n11] = byArray[i2];
-            if (string == null) continue;
-        }
-        return byArray2;
-    }
 
-    public static boolean[] W(boolean[] blArray, int n10, boolean bl) {
-        boolean[] blArray2 = new boolean[blArray.length + 1];
-        String string = FV.D();
-        int n11 = 0;
-        for (int i2 = 0; i2 < blArray.length; ++i2) {
-            block4: {
-                int n12;
-                block3: {
-                    n12 = i2;
-                    if (string != null) break block3;
-                    if (n12 != n10) break block4;
-                    blArray2[i2] = bl;
-                    n12 = 1;
-                }
-                n11 = n12;
+            if (var2 != null) {
+               return var4;
             }
-            blArray2[i2 + n11] = blArray[i2];
-            if (string == null) continue;
-        }
-        return blArray2;
-    }
 
-    public static Object[] a(Object[] objectArray, int n10, Object object) {
-        Object[] objectArray2 = Y1.R(objectArray, objectArray.length + 1);
-        String string = FV.D();
-        int n11 = 0;
-        for (int i2 = 0; i2 < objectArray.length; ++i2) {
-            block4: {
-                int n12;
-                block3: {
-                    n12 = i2;
-                    if (string != null) break block3;
-                    if (n12 != n10) break block4;
-                    objectArray2[i2] = object;
-                    n12 = 1;
-                }
-                n11 = n12;
+            if (var4 == var0) {
+               return var3;
             }
-            objectArray2[i2 + n11] = objectArray[i2];
-            if (string == null) continue;
-        }
-        return objectArray2;
-    }
 
-    public static Object[] R(Object[] objectArray, int n10) {
-        return Y1.T(objectArray.getClass().getComponentType(), n10);
-    }
+            var3++;
+            if (var2 == null) {
+               continue;
+            }
+         }
 
-    public static Object[] T(Class clazz, int n10) {
-        return (Object[])Array.newInstance(clazz, n10);
-    }
+         var4 = -1;
+         break;
+      }
+
+      return var4;
+   }
+
+   public static int V(String var0, String[] var1) {
+      return w(var0, var1, false);
+   }
+
+   public static int w(String var0, String[] var1, boolean var2) {
+      String var10000 = com.FV.D();
+      int var4 = 0;
+
+      for (String var3 = var10000; var4 < var1.length; var4++) {
+         String var5;
+         var5 = var1[var4];
+         var10000 = var5;
+         label55:
+         if (var3 == null) {
+            if (var5 == null) {
+               var10000 = var0;
+               if (var3 != null) {
+                  break label55;
+               }
+
+               if (var0 == null) {
+                  return var4;
+               }
+            }
+
+            var10000 = var5;
+         }
+
+         if (var3 == null) {
+            if (var10000 == null) {
+               break;
+            }
+
+            var10000 = var0;
+         }
+
+         if (var10000 != null) {
+            byte var7 = var2;
+            if (var3 == null) {
+               if (var2 != 0) {
+                  if (var5.equalsIgnoreCase(var0)) {
+                     return var4;
+                  }
+                  break;
+               }
+
+               var7 = var5.equals(var0);
+            }
+
+            if (var3 != null) {
+               return var7;
+            }
+
+            if (var7 != 0) {
+               return var4;
+            }
+         }
+         break;
+      }
+
+      return -1;
+   }
+
+   public static int q(Object var0, Object[] var1) {
+      String var10000 = com.FV.D();
+      int var3 = 0;
+
+      for (String var2 = var10000; var3 < var1.length; var3++) {
+         Object var4;
+         var4 = var1[var3];
+         var10000 = (String)var4;
+         label49:
+         if (var2 == null) {
+            if (var4 == null) {
+               var10000 = (String)var0;
+               if (var2 != null) {
+                  break label49;
+               }
+
+               if (var0 == null) {
+                  return var3;
+               }
+            }
+
+            var10000 = (String)var4;
+         }
+
+         if (var2 == null) {
+            if (var10000 == null) {
+               break;
+            }
+
+            var10000 = (String)var0;
+         }
+
+         if (var2 == null) {
+            if (var10000 == null) {
+               break;
+            }
+
+            var10000 = (String)var4;
+         }
+
+         byte var6 = var10000.equals(var0);
+         if (var2 != null) {
+            return var6;
+         }
+
+         if (var6 != 0) {
+            return var3;
+         }
+         break;
+      }
+
+      return -1;
+   }
+
+   public static Object[] E(Object[] var0, Object var1) {
+      String var10000 = com.FV.D();
+      Object[] var3 = R(var0, var0.length - 1);
+      byte var4 = 0;
+      String var2 = var10000;
+      int var5 = 0;
+
+      while (var5 < var0.length) {
+         label25: {
+            int var10001;
+            label24: {
+               if (var4 == 0) {
+                  var10000 = var0;
+                  var10001 = var5;
+                  if (var2 != null) {
+                     break label24;
+                  }
+
+                  if (var0[var5] == var1) {
+                     var4 = -1;
+                     if (var2 == null) {
+                        break label25;
+                     }
+                  }
+               }
+
+               var10000 = var3;
+               var10001 = var5 + var4;
+            }
+
+            ((Object[])var10000)[var10001] = (String)var0[var5];
+         }
+
+         var5++;
+         if (var2 != null) {
+            break;
+         }
+      }
+
+      return var3;
+   }
+
+   public static int[] e(int[] var0, int var1) {
+      int[] var3 = new int[var0.length - 1];
+      String var10000 = com.FV.D();
+      int var4 = 0;
+      int var5 = 0;
+      String var2 = var10000;
+
+      while (var5 < var0.length) {
+         label23: {
+            label22: {
+               int var6 = var5;
+               if (var2 == null) {
+                  if (var5 != var1) {
+                     break label22;
+                  }
+
+                  var6 = -1;
+               }
+
+               var4 = var6;
+               if (var2 == null) {
+                  break label23;
+               }
+            }
+
+            var3[var5 + var4] = var0[var5];
+         }
+
+         var5++;
+         if (var2 != null) {
+            break;
+         }
+      }
+
+      return var3;
+   }
+
+   public static float[] k(float[] var0, float var1) {
+      float[] var3 = new float[var0.length - 1];
+      String var10000 = com.FV.D();
+      int var4 = 0;
+      String var2 = var10000;
+      int var5 = 0;
+
+      while (var5 < var0.length) {
+         label23: {
+            label22: {
+               float var7;
+               int var6 = (var7 = (float)var5 - var1) == 0.0F ? 0 : (var7 < 0.0F ? -1 : 1);
+               if (var2 == null) {
+                  if (var6 != 0) {
+                     break label22;
+                  }
+
+                  var6 = -1;
+               }
+
+               var4 = var6;
+               if (var2 == null) {
+                  break label23;
+               }
+            }
+
+            var3[var5 + var4] = var0[var5];
+         }
+
+         var5++;
+         if (var2 != null) {
+            break;
+         }
+      }
+
+      return var3;
+   }
+
+   public static double[] A(double[] var0, double var1) {
+      double[] var4 = new double[var0.length - 1];
+      int var5 = 0;
+      String var10000 = com.FV.D();
+      int var6 = 0;
+      String var3 = var10000;
+
+      while (var6 < var0.length) {
+         label23: {
+            label22: {
+               double var8;
+               int var7 = (var8 = (double)var6 - var1) == 0.0 ? 0 : (var8 < 0.0 ? -1 : 1);
+               if (var3 == null) {
+                  if (var7 != 0) {
+                     break label22;
+                  }
+
+                  var7 = -1;
+               }
+
+               var5 = var7;
+               if (var3 == null) {
+                  break label23;
+               }
+            }
+
+            var4[var6 + var5] = var0[var6];
+         }
+
+         var6++;
+         if (var3 != null) {
+            break;
+         }
+      }
+
+      return var4;
+   }
+
+   public static char[] h(char[] var0, char var1) {
+      String var10000 = com.FV.D();
+      char[] var3 = new char[var0.length - 1];
+      int var4 = 0;
+      String var2 = var10000;
+      int var5 = 0;
+
+      while (var5 < var0.length) {
+         label23: {
+            label22: {
+               int var6 = var5;
+               if (var2 == null) {
+                  if (var5 != var1) {
+                     break label22;
+                  }
+
+                  var6 = -1;
+               }
+
+               var4 = var6;
+               if (var2 == null) {
+                  break label23;
+               }
+            }
+
+            var3[var5 + var4] = var0[var5];
+         }
+
+         var5++;
+         if (var2 != null) {
+            break;
+         }
+      }
+
+      return var3;
+   }
+
+   public static byte[] F(byte[] var0, byte var1) {
+      byte[] var3 = new byte[var0.length - 1];
+      String var10000 = com.FV.D();
+      int var4 = 0;
+      String var2 = var10000;
+      int var5 = 0;
+
+      while (var5 < var0.length) {
+         label23: {
+            label22: {
+               int var6 = var5;
+               if (var2 == null) {
+                  if (var5 != var1) {
+                     break label22;
+                  }
+
+                  var6 = -1;
+               }
+
+               var4 = var6;
+               if (var2 == null) {
+                  break label23;
+               }
+            }
+
+            var3[var5 + var4] = var0[var5];
+         }
+
+         var5++;
+         if (var2 != null) {
+            break;
+         }
+      }
+
+      return var3;
+   }
+
+   public static boolean[] i(boolean[] var0, int var1) {
+      String var10000 = com.FV.D();
+      boolean[] var3 = new boolean[var0.length - 1];
+      int var4 = 0;
+      int var5 = 0;
+      String var2 = var10000;
+
+      while (var5 < var0.length) {
+         label23: {
+            label22: {
+               int var6 = var5;
+               if (var2 == null) {
+                  if (var5 != var1) {
+                     break label22;
+                  }
+
+                  var6 = -1;
+               }
+
+               var4 = var6;
+               if (var2 == null) {
+                  break label23;
+               }
+            }
+
+            var3[var5 + var4] = var0[var5];
+         }
+
+         var5++;
+         if (var2 != null) {
+            break;
+         }
+      }
+
+      return var3;
+   }
+
+   public static Object[] X(Object[] var0, int var1) {
+      String var10000 = com.FV.D();
+      Object[] var3 = R(var0, var0.length - 1);
+      int var4 = 0;
+      int var5 = 0;
+      String var2 = var10000;
+
+      while (var5 < var0.length) {
+         label23: {
+            label22: {
+               int var6 = var5;
+               if (var2 == null) {
+                  if (var5 != var1) {
+                     break label22;
+                  }
+
+                  var6 = -1;
+               }
+
+               var4 = var6;
+               if (var2 == null) {
+                  break label23;
+               }
+            }
+
+            var3[var5 + var4] = var0[var5];
+         }
+
+         var5++;
+         if (var2 != null) {
+            break;
+         }
+      }
+
+      return var3;
+   }
+
+   public static int[] C(int[] var0, int var1, int var2) {
+      int[] var4 = new int[var0.length + 1];
+      String var10000 = com.FV.D();
+      int var5 = 0;
+      int var6 = 0;
+      String var3 = var10000;
+
+      while (var6 < var0.length) {
+         label19: {
+            int var7 = var6;
+            if (var3 == null) {
+               if (var6 != var1) {
+                  break label19;
+               }
+
+               var4[var6] = var2;
+               var7 = 1;
+            }
+
+            var5 = var7;
+         }
+
+         var4[var6 + var5] = var0[var6];
+         var6++;
+         if (var3 != null) {
+            break;
+         }
+      }
+
+      return var4;
+   }
+
+   public static float[] g(float[] var0, int var1, float var2) {
+      float[] var4 = new float[var0.length + 1];
+      String var10000 = com.FV.D();
+      int var5 = 0;
+      int var6 = 0;
+      String var3 = var10000;
+
+      while (var6 < var0.length) {
+         label19: {
+            int var7 = var6;
+            if (var3 == null) {
+               if (var6 != var1) {
+                  break label19;
+               }
+
+               var4[var6] = var2;
+               var7 = 1;
+            }
+
+            var5 = var7;
+         }
+
+         var4[var6 + var5] = var0[var6];
+         var6++;
+         if (var3 != null) {
+            break;
+         }
+      }
+
+      return var4;
+   }
+
+   public static double[] I(double[] var0, int var1, double var2) {
+      double[] var5 = new double[var0.length + 1];
+      int var6 = 0;
+      String var10000 = com.FV.D();
+      int var7 = 0;
+      String var4 = var10000;
+
+      while (var7 < var0.length) {
+         label19: {
+            int var8 = var7;
+            if (var4 == null) {
+               if (var7 != var1) {
+                  break label19;
+               }
+
+               var5[var7] = var2;
+               var8 = 1;
+            }
+
+            var6 = var8;
+         }
+
+         var5[var7 + var6] = var0[var7];
+         var7++;
+         if (var4 != null) {
+            break;
+         }
+      }
+
+      return var5;
+   }
+
+   public static char[] a(char[] var0, int var1, char var2) {
+      char[] var4 = new char[var0.length + 1];
+      String var10000 = com.FV.D();
+      int var5 = 0;
+      int var6 = 0;
+      String var3 = var10000;
+
+      while (var6 < var0.length) {
+         label19: {
+            int var7 = var6;
+            if (var3 == null) {
+               if (var6 != var1) {
+                  break label19;
+               }
+
+               var4[var6] = var2;
+               var7 = 1;
+            }
+
+            var5 = var7;
+         }
+
+         var4[var6 + var5] = var0[var6];
+         var6++;
+         if (var3 != null) {
+            break;
+         }
+      }
+
+      return var4;
+   }
+
+   public static byte[] L(byte[] var0, int var1, byte var2) {
+      String var10000 = com.FV.D();
+      byte[] var4 = new byte[var0.length + 1];
+      String var3 = var10000;
+      int var5 = 0;
+      int var6 = 0;
+
+      while (var6 < var0.length) {
+         label19: {
+            int var7 = var6;
+            if (var3 == null) {
+               if (var6 != var1) {
+                  break label19;
+               }
+
+               var4[var6] = var2;
+               var7 = 1;
+            }
+
+            var5 = var7;
+         }
+
+         var4[var6 + var5] = var0[var6];
+         var6++;
+         if (var3 != null) {
+            break;
+         }
+      }
+
+      return var4;
+   }
+
+   public static boolean[] W(boolean[] var0, int var1, boolean var2) {
+      String var10000 = com.FV.D();
+      boolean[] var4 = new boolean[var0.length + 1];
+      String var3 = var10000;
+      int var5 = 0;
+      int var6 = 0;
+
+      while (var6 < var0.length) {
+         label19: {
+            int var7 = var6;
+            if (var3 == null) {
+               if (var6 != var1) {
+                  break label19;
+               }
+
+               var4[var6] = var2;
+               var7 = 1;
+            }
+
+            var5 = var7;
+         }
+
+         var4[var6 + var5] = var0[var6];
+         var6++;
+         if (var3 != null) {
+            break;
+         }
+      }
+
+      return var4;
+   }
+
+   public static Object[] a(Object[] var0, int var1, Object var2) {
+      String var10000 = com.FV.D();
+      Object[] var4 = R(var0, var0.length + 1);
+      String var3 = var10000;
+      int var5 = 0;
+      int var6 = 0;
+
+      while (var6 < var0.length) {
+         label19: {
+            int var7 = var6;
+            if (var3 == null) {
+               if (var6 != var1) {
+                  break label19;
+               }
+
+               var4[var6] = var2;
+               var7 = 1;
+            }
+
+            var5 = var7;
+         }
+
+         var4[var6 + var5] = var0[var6];
+         var6++;
+         if (var3 != null) {
+            break;
+         }
+      }
+
+      return var4;
+   }
+
+   public static Object[] R(Object[] var0, int var1) {
+      return T(var0.getClass().getComponentType(), var1);
+   }
+
+   public static Object[] T(Class var0, int var1) {
+      return (Object[])Array.newInstance(var0, var1);
+   }
 }
+
+
+
+
 

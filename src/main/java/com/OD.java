@@ -1,22 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.DI;
-
 public interface OD {
-    default public void O(int n10, int n11, DI dI) {
-        this.w(n10, n11);
-    }
+   default void O(int var1, int var2, com.DI var3) {
+      this.w(var1, var2);
+   }
 
-    default public void F() {
-    }
+   default void F() {
+   }
 
-    public void w(int var1, int var2);
+   void w(int var1, int var2);
 
-    public byte[] T(byte[] var1, int var2, int[] var3);
+   byte[] T(byte[] var1, int var2, int[] var3);
 
-    public byte[] d(byte[] var1, int var2, int[] var3);
+   byte[] d(byte[] var1, int var2, int[] var3);
 }
+
+
+
+
 

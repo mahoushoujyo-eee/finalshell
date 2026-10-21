@@ -1,16 +1,16 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class E
-implements Runnable {
-    final ch_0 R;
+class E implements Runnable {
+   final Ch_2 R;
 
-    E(ch_0 ch_02) {
-        this.R = ch_02;
-    }
+   E(Ch_2 var1) {
+      this.R = var1;
+   }
 
-    @Override
-    public void run() {
-    }
+   @Override
+   public void run() {
+   }
 }
+
+
+
+
 

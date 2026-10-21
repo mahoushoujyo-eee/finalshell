@@ -1,164 +1,230 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class B7
-implements KeyListener {
-    L1 W;
-    final boolean R;
-    final FK r;
-    private static final long[] a;
-    private static final Integer[] b;
+class B7 implements KeyListener {
+   L1 W;
+   final boolean R;
+   final FK r;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    B7(FK fK2, boolean bl) {
-        this.r = fK2;
-        this.R = bl;
-        this.W = null;
-    }
+   B7(FK var1, boolean var2) {
+      this.r = var1;
+      this.R = var2;
+      com.c.c(308750888373001143L).set(this, null);
+   }
 
-    @Override
-    public void keyTyped(KeyEvent keyEvent) {
-    }
+   @Override
+   public void keyTyped(KeyEvent var1) {
+   }
 
-    @Override
-    public void keyReleased(KeyEvent keyEvent) {
-        block17: {
-            FK fK2;
-            block21: {
-                block22: {
-                    int n10;
-                    String[] stringArray;
-                    block20: {
-                        int n11;
-                        block19: {
-                            block18: {
-                                block16: {
-                                    int n12;
-                                    stringArray = FK.i();
-                                    try {
-                                        n12 = ((Boolean)this.r.A()).booleanValue();
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    if (stringArray == null) {
-                                        if (n12 == 0) {
-                                            return;
-                                        }
-                                        n12 = ((tq_2)this.r.s).getSelectedRow();
-                                    }
-                                    int n13 = n12;
-                                    n11 = this.R;
-                                    if (stringArray != null) break block16;
-                                    if (n11 != 0) break block17;
-                                    n11 = keyEvent.getModifiers();
-                                }
-                                if (stringArray != null) break block18;
-                                if (n11 != 0) break block17;
-                                n11 = keyEvent.getKeyCode();
-                            }
-                            if (stringArray != null) break block19;
-                            if (n11 != B7.a(20141, 8189760722115350579L)) break block17;
-                            n11 = ((FK)this.r).isVisible() ? 1 : 0;
-                        }
-                        if (n11 == 0) {
-                            // empty if block
-                        }
-                        if (this.R) break block17;
-                        long l2 = System.currentTimeMillis() - this.r.R;
-                        n10 = this.r.k;
-                        if (stringArray != null) break block20;
-                        if (n10 != B7.a(22529, 5405553293530154653L)) break block17;
-                        try {
-                            this.r.f(false);
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        try {
-                            this.r.Z();
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        fK2 = (FK)this.r;
-                        if (stringArray != null) break block21;
-                        n10 = fK2.isVisible() ? 1 : 0;
-                    }
-                    if (n10 != 0) break block22;
-                    try {
-                        this.r.Q();
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    if (stringArray == null) break block17;
-                }
-                fK2 = (FK)this.r;
+   @Override
+   public void keyReleased(KeyEvent var1) {
+      String[] var2 = FK.i();
+      FK var10000 = (FK)com.c.c(484003208200249497L).get(this);
+      Object[] var10001 = com.c.f();
+      Method var10003 = com.c.d(634403491225282499L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
+
+      try {
+         var12 = (Boolean)var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var10) {
+         throw var10.getTargetException();
+      }
+
+      if (var2 == null) {
+         if (!var12) {
+            return;
+         }
+
+         ((tq_4)com.c.c(618427502576624312L).get(com.c.c(484003208200249497L).get(this))).getSelectedRow();
+      }
+
+      int var13 = com.c.c(361141657865972500L).getBoolean(this);
+      if (var2 == null) {
+         if (var13 != 0) {
+            return;
+         }
+
+         var13 = var1.getModifiers();
+      }
+
+      if (var2 == null) {
+         if (var13 != 0) {
+            return;
+         }
+
+         var13 = var1.getKeyCode();
+      }
+
+      if (var2 == null) {
+         if (var13 != a(20141, 8189760722115350579L)) {
+            return;
+         }
+
+         var13 = ((FK)com.c.c(484003208200249497L).get(this)).isVisible();
+      }
+
+      if (var13 == 0) {
+      }
+
+      if (!com.c.c(361141657865972500L).getBoolean(this)) {
+         label105: {
+            long var4 = System.currentTimeMillis() - com.c.c(202023651119989609L).getLong(com.c.c(484003208200249497L).get(this));
+            int var14 = com.c.c(552009030867017299L).getInt(com.c.c(484003208200249497L).get(this));
+            if (var2 == null) {
+               if (var14 != a(22529, 5405553293530154653L)) {
+                  return;
+               }
+
+               var10000 = (FK)com.c.c(484003208200249497L).get(this);
+               var10001 = com.c.a(false);
+               var10003 = com.c.d(464995000560394494L);
+               var10002 = var10001;
+               var10001 = var10000;
+               Method var16 = var10003;
+
+               try {
+                  var16.invoke(var10001, var10002);
+               } catch (InvocationTargetException var9) {
+                  throw var9.getTargetException();
+               }
+
+               var10000 = (FK)com.c.c(484003208200249497L).get(this);
+               var10001 = com.c.f();
+               var10003 = com.c.d(306221011327708335L);
+               var10002 = var10001;
+               var10001 = var10000;
+               Method var18 = var10003;
+
+               try {
+                  var18.invoke(var10001, var10002);
+               } catch (InvocationTargetException var8) {
+                  throw var8.getTargetException();
+               }
+
+               var10000 = (FK)com.c.c(484003208200249497L).get(this);
+               if (var2 != null) {
+                  break label105;
+               }
+
+               var14 = var10000.isVisible();
             }
-            try {
-                fK2.o();
-            }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-        }
-    }
 
-    @Override
-    public void keyPressed(KeyEvent keyEvent) {
-        block5: {
-            FK fK2;
-            block4: {
-                String[] stringArray = FK.i();
-                this.r.R = System.currentTimeMillis();
-                String[] stringArray2 = stringArray;
-                this.r.k = keyEvent.getKeyCode();
-                fK2 = (FK)this.r;
-                if (stringArray2 != null) break block4;
-                fK2.N = true;
-                if (keyEvent.getKeyCode() != B7.a(28338, 2849901760476180525L)) break block5;
-                fK2 = (FK)this.r;
-            }
-            String string = ((dv_0)fK2.lD).getText().trim();
-            try {
-                this.r.L(string);
-            }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-        }
-    }
+            if (var14 == 0) {
+               var10000 = (FK)com.c.c(484003208200249497L).get(this);
+               var10001 = com.c.f();
+               var10003 = com.c.d(612990022110170911L);
+               var10002 = var10001;
+               var10001 = var10000;
+               Method var21 = var10003;
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 4905433317014324509L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = ";\u008a\u00e5\u0098\u00d7 \u0095<\u00eea{\u00e6\u00a7\u00f05:\u00c4x6s9O\u0083\u0092";
-        int n11 = ";\u008a\u00e5\u0098\u00d7 \u0095<\u00eea{\u00e6\u00a7\u00f05:\u00c4x6s9O\u0083\u0092".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[3];
-    }
+               try {
+                  var21.invoke(var10001, var10002);
+               } catch (InvocationTargetException var7) {
+                  throw var7.getTargetException();
+               }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x1E9E;
-        if (b[n11] == null) {
-            B7.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+               if (var2 == null) {
+                  return;
+               }
+            }
+
+            var10000 = (FK)com.c.c(484003208200249497L).get(this);
+         }
+
+         var10001 = com.c.f();
+         var10003 = com.c.d(496821856781947383L);
+         var10002 = var10001;
+         FK var31 = var10000;
+         Method var22 = var10003;
+
+         try {
+            var22.invoke(var31, var10002);
+         } catch (InvocationTargetException var6) {
+            throw var6.getTargetException();
+         }
+      }
+   }
+
+   @Override
+   public void keyPressed(KeyEvent var1) {
+      String[] var10000 = FK.i();
+      com.c.c(202023651119989609L).setLong(com.c.c(484003208200249497L).get(this), System.currentTimeMillis());
+      String[] var2 = var10000;
+      com.c.c(552009030867017299L).setInt(com.c.c(484003208200249497L).get(this), var1.getKeyCode());
+      FK var5 = (FK)com.c.c(484003208200249497L).get(this);
+      if (var2 == null) {
+         com.c.c(600941127808801108L).setBoolean(var5, true);
+         if (var1.getKeyCode() != a(28338, 2849901760476180525L)) {
+            return;
+         }
+
+         var5 = (FK)com.c.c(484003208200249497L).get(this);
+      }
+
+      String var3 = ((Dv_2)com.c.c(334241381080505095L).get(var5)).getText().trim();
+      var10000 = (String[])com.c.c(484003208200249497L).get(this);
+      Object[] var10001 = com.c.a(var3);
+      Method var10003 = com.c.d(170585917374516338L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      Method var7 = var10003;
+
+      try {
+         var7.invoke(var10001, var10002);
+      } catch (InvocationTargetException var4) {
+         throw var4.getTargetException();
+      }
+   }
+
+   static {
+      long var0 = 4905433317014324509L;
+      long[] var6 = new long[3];
+      int var3 = 0;
+      String var4 = ";\u008aå\u0098× \u0095<îa{æ§ð5:Äx6s9O\u0083\u0092";
+      int var5 = ";\u008aå\u0098× \u0095<îa{æ§ð5:Äx6s9O\u0083\u0092".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[3];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 7838;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

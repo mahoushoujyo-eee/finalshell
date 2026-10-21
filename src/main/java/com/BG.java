@@ -1,21 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.zM;
+class BG implements Runnable {
+   final com.zM T;
 
-class BG
-implements Runnable {
-    final zM T;
+   BG(com.zM var1) {
+      this.T = var1;
+   }
 
-    BG(zM zM2) {
-        this.T = zM2;
-    }
-
-    @Override
-    public void run() {
-        this.T.k.repaint();
-    }
+   @Override
+   public void run() {
+      this.T.k.repaint();
+   }
 }
+
+
+
+
 

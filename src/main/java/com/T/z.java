@@ -1,28 +1,26 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.t;
 
-import com.KD;
-import com.t.n_0;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class z
-extends MouseAdapter {
-    final KD L;
-    final n_0 P;
+class z extends MouseAdapter {
+   final com.KD L;
+   final com.t.n_2 P;
 
-    z(n_0 n_02, KD kD) {
-        this.P = n_02;
-        this.L = kD;
-    }
+   z(com.t.n_2 var1, com.KD var2) {
+      this.P = var1;
+      this.L = var2;
+   }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-        if (mouseEvent.getClickCount() == 2) {
-            this.L.doClick(0);
-        }
-    }
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+      if (var1.getClickCount() == 2) {
+         this.L.doClick(0);
+      }
+   }
 }
+
+
+
+
 

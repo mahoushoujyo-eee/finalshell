@@ -1,15 +1,12 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.apple.eawt;
 
-import com.apple.eawt.AppEvent;
-import com.apple.eawt.AppEventListener;
+public interface UserSessionListener extends AppEventListener {
+   void userSessionDeactivated(AppEvent.UserSessionEvent var1);
 
-public interface UserSessionListener
-extends AppEventListener {
-    public void userSessionDeactivated(AppEvent.UserSessionEvent var1);
-
-    public void userSessionActivated(AppEvent.UserSessionEvent var1);
+   void userSessionActivated(AppEvent.UserSessionEvent var1);
 }
+
+
+
+
 

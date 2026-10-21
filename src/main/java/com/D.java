@@ -1,514 +1,490 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.hi_0;
-import com.rh_1;
+public enum D {
+   CamelCase, PascalCase, SnakeCase, KebabCase, NoChange, NeverUseThisValueExceptDefaultValue;
+   private static final D[] c;
+   private static final long[] a;
+   private static final Integer[] b;
 
-public final class D
-extends Enum {
-    public static final D CamelCase;
-    public static final D PascalCase;
-    public static final D SnakeCase;
-    public static final D KebabCase;
-    public static final D NoChange;
-    public static final D NeverUseThisValueExceptDefaultValue;
-    private static final D[] c;
-    private static final long[] a;
-    private static final Integer[] b;
+   public String C(String param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/Hi_2.C ()Ljava/lang/String;
+      // 003: astore 2
+      // 004: getstatic com/rH_3.v [I
+      // 007: aload 0
+      // 008: invokevirtual com/D.ordinal ()I
+      // 00b: iaload
+      // 00c: tableswitch 580 1 6 40 225 410 495 580 580
+      // 034: new java/lang/StringBuilder
+      // 037: dup
+      // 038: invokespecial java/lang/StringBuilder.<init> ()V
+      // 03b: astore 3
+      // 03c: bipush 0
+      // 03d: istore 4
+      // 03f: iload 4
+      // 041: aload 1
+      // 042: invokevirtual java/lang/String.length ()I
+      // 045: if_icmpge 0e8
+      // 048: aload 1
+      // 049: aload 2
+      // 04a: ifnonnull 0ec
+      // 04d: iload 4
+      // 04f: invokevirtual java/lang/String.charAt (I)C
+      // 052: istore 5
+      // 054: iload 5
+      // 056: sipush 5337
+      // 059: ldc2_w 7913302071303221641
+      // 05c: invokestatic com/D.a (IJ)I
+      // 05f: aload 2
+      // 060: ifnonnull 07f
+      // 063: if_icmplt 0d3
+      // 066: goto 06d
+      // 069: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 06c: athrow
+      // 06d: iload 5
+      // 06f: sipush 6965
+      // 072: ldc2_w 1904900952877284963
+      // 075: invokestatic com/D.a (IJ)I
+      // 078: goto 07f
+      // 07b: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 07e: athrow
+      // 07f: aload 2
+      // 080: ifnonnull 09f
+      // 083: if_icmpgt 0d3
+      // 086: goto 08d
+      // 089: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 08c: athrow
+      // 08d: iload 5
+      // 08f: sipush 19555
+      // 092: ldc2_w 1439012326727313716
+      // 095: invokestatic com/D.a (IJ)I
+      // 098: goto 09f
+      // 09b: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 09e: athrow
+      // 09f: iadd
+      // 0a0: i2c
+      // 0a1: istore 6
+      // 0a3: aload 2
+      // 0a4: ifnonnull 0cf
+      // 0a7: iload 4
+      // 0a9: ifle 0c8
+      // 0ac: goto 0b3
+      // 0af: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0b2: athrow
+      // 0b3: aload 3
+      // 0b4: sipush 5855
+      // 0b7: ldc2_w 6994252397260387210
+      // 0ba: invokestatic com/D.a (IJ)I
+      // 0bd: invokevirtual java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;
+      // 0c0: pop
+      // 0c1: goto 0c8
+      // 0c4: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0c7: athrow
+      // 0c8: aload 3
+      // 0c9: iload 6
+      // 0cb: invokevirtual java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;
+      // 0ce: pop
+      // 0cf: aload 2
+      // 0d0: ifnull 0e1
+      // 0d3: aload 3
+      // 0d4: iload 5
+      // 0d6: invokevirtual java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;
+      // 0d9: pop
+      // 0da: goto 0e1
+      // 0dd: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0e0: athrow
+      // 0e1: iinc 4 1
+      // 0e4: aload 2
+      // 0e5: ifnull 03f
+      // 0e8: aload 3
+      // 0e9: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // 0ec: areturn
+      // 0ed: new java/lang/StringBuilder
+      // 0f0: dup
+      // 0f1: invokespecial java/lang/StringBuilder.<init> ()V
+      // 0f4: astore 3
+      // 0f5: bipush 0
+      // 0f6: istore 4
+      // 0f8: iload 4
+      // 0fa: aload 1
+      // 0fb: invokevirtual java/lang/String.length ()I
+      // 0fe: if_icmpge 1a1
+      // 101: aload 1
+      // 102: aload 2
+      // 103: ifnonnull 1a5
+      // 106: iload 4
+      // 108: invokevirtual java/lang/String.charAt (I)C
+      // 10b: istore 5
+      // 10d: iload 5
+      // 10f: sipush 1410
+      // 112: ldc2_w 6148219698674049241
+      // 115: invokestatic com/D.a (IJ)I
+      // 118: aload 2
+      // 119: ifnonnull 138
+      // 11c: if_icmplt 18c
+      // 11f: goto 126
+      // 122: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 125: athrow
+      // 126: iload 5
+      // 128: sipush 24617
+      // 12b: ldc2_w 3710020709208245619
+      // 12e: invokestatic com/D.a (IJ)I
+      // 131: goto 138
+      // 134: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 137: athrow
+      // 138: aload 2
+      // 139: ifnonnull 158
+      // 13c: if_icmpgt 18c
+      // 13f: goto 146
+      // 142: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 145: athrow
+      // 146: iload 5
+      // 148: sipush 2110
+      // 14b: ldc2_w 7895739788951104877
+      // 14e: invokestatic com/D.a (IJ)I
+      // 151: goto 158
+      // 154: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 157: athrow
+      // 158: iadd
+      // 159: i2c
+      // 15a: istore 6
+      // 15c: aload 2
+      // 15d: ifnonnull 188
+      // 160: iload 4
+      // 162: ifle 181
+      // 165: goto 16c
+      // 168: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 16b: athrow
+      // 16c: aload 3
+      // 16d: sipush 20618
+      // 170: ldc2_w 266157132853999067
+      // 173: invokestatic com/D.a (IJ)I
+      // 176: invokevirtual java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;
+      // 179: pop
+      // 17a: goto 181
+      // 17d: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 180: athrow
+      // 181: aload 3
+      // 182: iload 6
+      // 184: invokevirtual java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;
+      // 187: pop
+      // 188: aload 2
+      // 189: ifnull 19a
+      // 18c: aload 3
+      // 18d: iload 5
+      // 18f: invokevirtual java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;
+      // 192: pop
+      // 193: goto 19a
+      // 196: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 199: athrow
+      // 19a: iinc 4 1
+      // 19d: aload 2
+      // 19e: ifnull 0f8
+      // 1a1: aload 3
+      // 1a2: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // 1a5: areturn
+      // 1a6: aload 1
+      // 1a7: bipush 0
+      // 1a8: invokevirtual java/lang/String.charAt (I)C
+      // 1ab: istore 3
+      // 1ac: iload 3
+      // 1ad: sipush 27384
+      // 1b0: ldc2_w 3748293927315328940
+      // 1b3: invokestatic com/D.a (IJ)I
+      // 1b6: aload 2
+      // 1b7: ifnonnull 1d5
+      // 1ba: if_icmplt 1f9
+      // 1bd: goto 1c4
+      // 1c0: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 1c3: athrow
+      // 1c4: iload 3
+      // 1c5: sipush 27046
+      // 1c8: ldc2_w 5250387992546004212
+      // 1cb: invokestatic com/D.a (IJ)I
+      // 1ce: goto 1d5
+      // 1d1: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 1d4: athrow
+      // 1d5: if_icmpgt 1f9
+      // 1d8: aload 1
+      // 1d9: invokevirtual java/lang/String.toCharArray ()[C
+      // 1dc: astore 4
+      // 1de: aload 4
+      // 1e0: bipush 0
+      // 1e1: dup2
+      // 1e2: caload
+      // 1e3: sipush 2110
+      // 1e6: ldc2_w 7895739788951104877
+      // 1e9: invokestatic com/D.a (IJ)I
+      // 1ec: isub
+      // 1ed: i2c
+      // 1ee: castore
+      // 1ef: new java/lang/String
+      // 1f2: dup
+      // 1f3: aload 4
+      // 1f5: invokespecial java/lang/String.<init> ([C)V
+      // 1f8: areturn
+      // 1f9: aload 1
+      // 1fa: areturn
+      // 1fb: aload 1
+      // 1fc: bipush 0
+      // 1fd: invokevirtual java/lang/String.charAt (I)C
+      // 200: istore 3
+      // 201: iload 3
+      // 202: sipush 1410
+      // 205: ldc2_w 6148219698674049241
+      // 208: invokestatic com/D.a (IJ)I
+      // 20b: aload 2
+      // 20c: ifnonnull 22a
+      // 20f: if_icmplt 24e
+      // 212: goto 219
+      // 215: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 218: athrow
+      // 219: iload 3
+      // 21a: sipush 24617
+      // 21d: ldc2_w 3710020709208245619
+      // 220: invokestatic com/D.a (IJ)I
+      // 223: goto 22a
+      // 226: invokestatic com/D.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 229: athrow
+      // 22a: if_icmpgt 24e
+      // 22d: aload 1
+      // 22e: invokevirtual java/lang/String.toCharArray ()[C
+      // 231: astore 4
+      // 233: aload 4
+      // 235: bipush 0
+      // 236: dup2
+      // 237: caload
+      // 238: sipush 2110
+      // 23b: ldc2_w 7895739788951104877
+      // 23e: invokestatic com/D.a (IJ)I
+      // 241: iadd
+      // 242: i2c
+      // 243: castore
+      // 244: new java/lang/String
+      // 247: dup
+      // 248: aload 4
+      // 24a: invokespecial java/lang/String.<init> ([C)V
+      // 24d: areturn
+      // 24e: aload 1
+      // 24f: areturn
+      // 250: aload 1
+      // 251: areturn
+   }
 
-    public static D[] values() {
-        return (D[])c.clone();
-    }
+   private static D[] q() {
+      D[] var10000 = new D[a(24464, 4072187404589890249L)];
+      var10000[0] = CamelCase;
+      var10000[1] = PascalCase;
+      var10000[2] = SnakeCase;
+      var10000[3] = KebabCase;
+      var10000[4] = NoChange;
+      var10000[5] = NeverUseThisValueExceptDefaultValue;
+      return var10000;
+   }
 
-    public static D valueOf(String string) {
-        return Enum.valueOf(D.class, string);
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var8 = new String[6];
+      int var12 = 0;
+      String var11 = "\b\u0017v6>\u001e*9\u0005`#\u0016\u0013s0-'\u001a=\"m<,$\b4\u0003`\u0010'\u0011\f(\u0002A09\u0013\u001c4\u0002S43\u0007\f\t\u0013\u0013g4=1\b+\u0013\t\u001b\u0017h031\b+\u0013";
+      int var13 = "\b\u0017v6>\u001e*9\u0005`#\u0016\u0013s0-'\u001a=\"m<,$\b4\u0003`\u0010'\u0011\f(\u0002A09\u0013\u001c4\u0002S43\u0007\f\t\u0013\u0013g4=1\b+\u0013\t\u001b\u0017h031\b+\u0013"
+         .length();
+      char var10 = '\n';
+      int var17 = -1;
 
-    /*
-     * WARNING - Possible parameter corruption
-     * WARNING - void declaration
-     */
-    private D() {
-        void var2_-1;
-        void var1_-1;
-    }
+      label70:
+      while (true) {
+         byte var10000 = 35;
+         String var10001 = var11.substring(++var17, var17 + var10);
+         byte var10002 = -1;
 
-    /*
-     * Unable to fully structure code
-     */
-    public String C(String var1_1) {
-        var2_2 = hi_0.C();
-        switch (rh_1.v[this.ordinal()]) {
-            case 1: {
-                var3_3 = new StringBuilder();
-                for (var4_7 = 0; var4_7 < var1_1.length(); ++var4_7) {
-                    v0 = var1_1;
-                    if (var2_2 != null) ** GOTO lbl61
-                    var5_11 = v0.charAt(var4_7);
-                    try {
-                        try {
-                            v1 = var5_11;
-                            v2 = D.a(5337, 7913302071303221641L);
-                            if (var2_2 != null) ** GOTO lbl24
-                            if (v1 >= v2) {
-                            }
-                            ** GOTO lbl55
-                        }
-                        catch (hi_0 v3) {
-                            throw D.a(v3);
-                        }
-                        v1 = var5_11;
-                        v2 = D.a(6965, 1904900952877284963L);
-                    }
-                    catch (hi_0 v4) {
-                        throw D.a(v4);
-                    }
-lbl24:
-                    // 2 sources
+         while (true) {
+            label65: {
+               char[] var39 = var10001.toCharArray();
+               int var10004 = var39.length;
+               int var14 = 0;
+               byte var42 = var10000;
+               var33 = var39;
+               int var24 = var10004;
+               byte var49;
+               char[] var55;
+               int var10006;
+               if (var10004 <= 1) {
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               } else {
+                  var42 = var10000;
+                  var24 = var10004;
+                  if (var10004 <= var14) {
+                     break label65;
+                  }
 
-                    try {
-                        try {
-                            if (var2_2 != null) ** GOTO lbl37
-                            if (v1 <= v2) {
-                            }
-                            ** GOTO lbl55
-                        }
-                        catch (hi_0 v5) {
-                            throw D.a(v5);
-                        }
-                        v1 = var5_11;
-                        v2 = D.a(19555, 1439012326727313716L);
-                    }
-                    catch (hi_0 v6) {
-                        throw D.a(v6);
-                    }
-lbl37:
-                    // 2 sources
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               }
 
-                    var6_13 = (char)(v1 + v2);
-                    try {
-                        try {
-                            if (var2_2 != null) ** GOTO lbl53
-                            if (var4_7 > 0) {
-                            }
-                            ** GOTO lbl51
-                        }
-                        catch (hi_0 v7) {
-                            throw D.a(v7);
-                        }
-                        var3_3.append((char)D.a(5855, 6994252397260387210L));
-                    }
-                    catch (hi_0 v8) {
-                        throw D.a(v8);
-                    }
-lbl51:
-                    // 2 sources
-
-                    var3_3.append(var6_13);
-lbl53:
-                    // 2 sources
-
-                    try {
-                        if (var2_2 == null) continue;
-lbl55:
-                        // 3 sources
-
-                        var3_3.append(var5_11);
-                        continue;
-                    }
-                    catch (hi_0 v9) {
-                        throw D.a(v9);
-                    }
-                }
-                v0 = var3_3.toString();
-lbl61:
-                // 2 sources
-
-                return v0;
-            }
-            case 2: {
-                var3_4 = new StringBuilder();
-                for (var4_8 = 0; var4_8 < var1_1.length(); ++var4_8) {
-                    v10 = var1_1;
-                    if (var2_2 != null) ** GOTO lbl120
-                    var5_12 = v10.charAt(var4_8);
-                    try {
-                        try {
-                            v11 = var5_12;
-                            v12 = D.a(1410, 6148219698674049241L);
-                            if (var2_2 != null) ** GOTO lbl83
-                            if (v11 >= v12) {
-                            }
-                            ** GOTO lbl114
-                        }
-                        catch (hi_0 v13) {
-                            throw D.a(v13);
-                        }
-                        v11 = var5_12;
-                        v12 = D.a(24617, 3710020709208245619L);
-                    }
-                    catch (hi_0 v14) {
-                        throw D.a(v14);
-                    }
-lbl83:
-                    // 2 sources
-
-                    try {
-                        try {
-                            if (var2_2 != null) ** GOTO lbl96
-                            if (v11 <= v12) {
-                            }
-                            ** GOTO lbl114
-                        }
-                        catch (hi_0 v15) {
-                            throw D.a(v15);
-                        }
-                        v11 = var5_12;
-                        v12 = D.a(2110, 7895739788951104877L);
-                    }
-                    catch (hi_0 v16) {
-                        throw D.a(v16);
-                    }
-lbl96:
-                    // 2 sources
-
-                    var6_14 = (char)(v11 + v12);
-                    try {
-                        try {
-                            if (var2_2 != null) ** GOTO lbl112
-                            if (var4_8 > 0) {
-                            }
-                            ** GOTO lbl110
-                        }
-                        catch (hi_0 v17) {
-                            throw D.a(v17);
-                        }
-                        var3_4.append((char)D.a(20618, 266157132853999067L));
-                    }
-                    catch (hi_0 v18) {
-                        throw D.a(v18);
-                    }
-lbl110:
-                    // 2 sources
-
-                    var3_4.append(var6_14);
-lbl112:
-                    // 2 sources
-
-                    try {
-                        if (var2_2 == null) continue;
-lbl114:
-                        // 3 sources
-
-                        var3_4.append(var5_12);
-                        continue;
-                    }
-                    catch (hi_0 v19) {
-                        throw D.a(v19);
-                    }
-                }
-                v10 = var3_4.toString();
-lbl120:
-                // 2 sources
-
-                return v10;
-            }
-            case 3: {
-                var3_5 = var1_1.charAt(0);
-                try {
-                    try {
-                        v20 = var3_5;
-                        v21 = D.a(27384, 3748293927315328940L);
-                        if (var2_2 != null) ** GOTO lbl138
-                        if (v20 >= v21) {
-                        }
-                        ** GOTO lbl142
-                    }
-                    catch (hi_0 v22) {
-                        throw D.a(v22);
-                    }
-                    v20 = var3_5;
-                    v21 = D.a(27046, 5250387992546004212L);
-                }
-                catch (hi_0 v23) {
-                    throw D.a(v23);
-                }
-lbl138:
-                // 2 sources
-
-                if (v20 <= v21) {
-                    var4_9 = var1_1.toCharArray();
-                    var4_9[0] = (char)(var4_9[0] - D.a(2110, 7895739788951104877L));
-                    return new String(var4_9);
-                }
-lbl142:
-                // 3 sources
-
-                return var1_1;
-            }
-            case 4: {
-                var3_6 = var1_1.charAt(0);
-                try {
-                    try {
-                        v24 = var3_6;
-                        v25 = D.a(1410, 6148219698674049241L);
-                        if (var2_2 != null) ** GOTO lbl160
-                        if (v24 >= v25) {
-                        }
-                        ** GOTO lbl164
-                    }
-                    catch (hi_0 v26) {
-                        throw D.a(v26);
-                    }
-                    v24 = var3_6;
-                    v25 = D.a(24617, 3710020709208245619L);
-                }
-                catch (hi_0 v27) {
-                    throw D.a(v27);
-                }
-lbl160:
-                // 2 sources
-
-                if (v24 <= v25) {
-                    var4_10 = var1_1.toCharArray();
-                    var4_10[0] = (char)(var4_10[0] + D.a(2110, 7895739788951104877L));
-                    return new String(var4_10);
-                }
-lbl164:
-                // 3 sources
-
-                return var1_1;
-            }
-        }
-        return var1_1;
-    }
-
-    private static D[] q() {
-        D[] dArray = new D[D.a(24464, 4072187404589890249L)];
-        dArray[0] = CamelCase;
-        dArray[1] = PascalCase;
-        dArray[2] = SnakeCase;
-        dArray[3] = KebabCase;
-        dArray[4] = NoChange;
-        dArray[5] = NeverUseThisValueExceptDefaultValue;
-        return dArray;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block29: {
-            block28: {
-                block27: {
-                    block26: {
-                        var8 = new String[6];
-                        var12_1 = 0;
-                        var11_2 = "\b\u0017v6>\u001e*9\u0005`#\u0016\u0013s0-'\u001a=\"m<,$\b4\u0003`\u0010'\u0011\f(\u0002A09\u0013\u001c4\u0002S43\u0007\f\t\u0013\u0013g4=1\b+\u0013\t\u001b\u0017h031\b+\u0013";
-                        var13_3 = "\b\u0017v6>\u001e*9\u0005`#\u0016\u0013s0-'\u001a=\"m<,$\b4\u0003`\u0010'\u0011\f(\u0002A09\u0013\u001c4\u0002S43\u0007\f\t\u0013\u0013g4=1\b+\u0013\t\u001b\u0017h031\b+\u0013".length();
-                        var10_4 = 10;
-                        var9_5 = -1;
-lbl7:
-                        // 2 sources
-
-                        while (true) {
-                            v0 = 35;
-                            v1 = ++var9_5;
-                            v2 = var11_2.substring(v1, v1 + var10_4);
-                            v3 = -1;
-                            break block26;
-                            break;
-                        }
-lbl13:
-                        // 1 sources
-
-                        while (true) {
-                            var8[var12_1++] = v4.intern();
-                            if ((var9_5 += var10_4) < var13_3) {
-                                var10_4 = var11_2.charAt(var9_5);
-                                ** continue;
-                            }
-                            var11_2 = "/ \u007f\u0004\u0007%7\u0004\t2!]\u0007\u0003\b1\u0012*";
-                            var13_3 = "/ \u007f\u0004\u0007%7\u0004\t2!]\u0007\u0003\b1\u0012*".length();
-                            var10_4 = 8;
-                            var9_5 = -1;
-lbl22:
-                            // 2 sources
-
-                            while (true) {
-                                v0 = 26;
-                                v5 = ++var9_5;
-                                v2 = var11_2.substring(v5, v5 + var10_4);
-                                v3 = 0;
-                                break block26;
-                                break;
-                            }
-                            break;
-                        }
-lbl28:
-                        // 1 sources
-
-                        while (true) {
-                            var8[var12_1++] = v4.intern();
-                            if ((var9_5 += var10_4) < var13_3) {
-                                var10_4 = var11_2.charAt(var9_5);
-                                ** continue;
-                            }
-                            break block27;
-                            break;
-                        }
-                    }
-                    v6 = v2.toCharArray();
-                    v7 = v6.length;
-                    var14_6 = 0;
-                    v8 = v0;
-                    v9 = v6;
-                    v10 = v7;
-                    if (v7 > 1) ** GOTO lbl85
-                    do {
-                        v11 = v8;
-                        v9 = v9;
-                        v12 = v9;
-                        v13 = v8;
-                        v14 = var14_6;
-                        while (true) {
-                            switch (var14_6 % 7) {
-                                case 0: {
-                                    v15 = 123;
-                                    break;
-                                }
-                                case 1: {
-                                    v15 = 85;
-                                    break;
-                                }
-                                case 2: {
-                                    v15 = 38;
-                                    break;
-                                }
-                                case 3: {
-                                    v15 = 118;
-                                    break;
-                                }
-                                case 4: {
-                                    v15 = 124;
-                                    break;
-                                }
-                                case 5: {
-                                    v15 = 81;
-                                    break;
-                                }
-                                default: {
-                                    v15 = 74;
-                                }
-                            }
-                            v12[v14] = (char)(v12[v14] ^ (v13 ^ v15));
-                            ++var14_6;
-                            v8 = v11;
-                            if (v11 != 0) break;
-                            v11 = v8;
-                            v9 = v9;
-                            v14 = v8;
-                            v12 = v9;
-                            v13 = v8;
-                        }
-lbl85:
-                        // 2 sources
-
-                        v16 = v9;
-                        v10 = v10;
-                    } while (v10 > var14_6);
-                    v4 = new String(v16);
-                    switch (v3) {
-                        default: {
-                            ** continue;
-                        }
-                        ** case 0:
-lbl95:
-                        // 1 sources
-
-                        ** continue;
-                    }
-                }
-                var0_7 = 5250573959898731854L;
-                var6_8 = new long[11];
-                var3_9 = 0;
-                var4_10 = "X\u00f5\u00d3\u00b6\u008d\u00f78\u0003\u007f\u00f9\u00eeg\u001e\u0000Y\u00c0\u00dc\u00b1\u00e0\u009a,\u009c\u00e0\u00b8\u0099x\u00b3%\u0012\u00ca$\u0086\u0000\u00f0\u0010\u0090\u00e3S|Z\u009b\u00ee\u00df\u00caV#\u00abw\u0010\u0098\u00d58*\u008f&\u009b\u00a69:\u009e\u0011\u00ccZ\u0083\u00c8m\u00f2\u0080f(\u00b5\u00d6";
-                var5_11 = "X\u00f5\u00d3\u00b6\u008d\u00f78\u0003\u007f\u00f9\u00eeg\u001e\u0000Y\u00c0\u00dc\u00b1\u00e0\u009a,\u009c\u00e0\u00b8\u0099x\u00b3%\u0012\u00ca$\u0086\u0000\u00f0\u0010\u0090\u00e3S|Z\u009b\u00ee\u00df\u00caV#\u00abw\u0010\u0098\u00d58*\u008f&\u009b\u00a69:\u009e\u0011\u00ccZ\u0083\u00c8m\u00f2\u0080f(\u00b5\u00d6".length();
-                var2_12 = 0;
-                while (true) {
-                    var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                    v17 = var6_8;
-                    v18 = var3_9++;
-                    v19 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                    v20 = -1;
-                    break block28;
-                    break;
-                }
-lbl110:
-                // 1 sources
-
-                while (true) {
-                    v17[v18] = v21;
-                    if (var2_12 < var5_11) ** continue;
-                    var4_10 = "\u009d\u00d8\u00d0\u0086\u0013\u001dPg\u00bd\u00b7\u00d0'\u00df\u00c8o\u0081";
-                    var5_11 = "\u009d\u00d8\u00d0\u0086\u0013\u001dPg\u00bd\u00b7\u00d0'\u00df\u00c8o\u0081".length();
-                    var2_12 = 0;
-                    while (true) {
-                        var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                        v17 = var6_8;
-                        v18 = var3_9++;
-                        v19 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                        v20 = 0;
-                        break block28;
+               while (true) {
+                  char var64 = var55[var10006];
+                  byte var65;
+                  switch (var14 % 7) {
+                     case 0:
+                        var65 = 123;
                         break;
-                    }
-                    break;
-                }
-lbl123:
-                // 1 sources
+                     case 1:
+                        var65 = 85;
+                        break;
+                     case 2:
+                        var65 = 38;
+                        break;
+                     case 3:
+                        var65 = 118;
+                        break;
+                     case 4:
+                        var65 = 124;
+                        break;
+                     case 5:
+                        var65 = 81;
+                        break;
+                     default:
+                        var65 = 74;
+                  }
 
-                while (true) {
-                    v17[v18] = v21;
-                    if (var2_12 < var5_11) ** continue;
-                    break block29;
-                    break;
-                }
+                  var55[var10006] = (char)(var64 ^ var49 ^ var65);
+                  var14++;
+                  if (var42 == 0) {
+                     var10006 = var42;
+                     var55 = var33;
+                     var49 = var42;
+                  } else {
+                     if (var24 <= var14) {
+                        break;
+                     }
+
+                     var55 = var33;
+                     var49 = var42;
+                     var10006 = var14;
+                  }
+               }
             }
-            v21 = v19 ^ var0_7;
-            switch (v20) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl134:
-                // 1 sources
 
-                ** continue;
+            String var44 = new String(var33).intern();
+            switch (var10002) {
+               case 0:
+                  var8[var12++] = var44;
+                  if ((var17 += var10) >= var13) {
+                     long var0 = 5250573959898731854L;
+                     long[] var6 = new long[11];
+                     int var3 = 0;
+                     String var4 = "XõÓ¶\u008d÷8\u0003\u007fùîg\u001e\u0000YÀÜ±à\u009a,\u009cà¸\u0099x³%\u0012Ê$\u0086\u0000ð\u0010\u0090ãS|Z\u009bîßÊV#«w\u0010\u0098Õ8*\u008f&\u009b¦9:\u009e\u0011ÌZ\u0083Èmò\u0080f(µÖ";
+                     int var5 = "XõÓ¶\u008d÷8\u0003\u007fùîg\u001e\u0000YÀÜ±à\u009a,\u009cà¸\u0099x³%\u0012Ê$\u0086\u0000ð\u0010\u0090ãS|Z\u009bîßÊV#«w\u0010\u0098Õ8*\u008f&\u009b¦9:\u009e\u0011ÌZ\u0083Èmò\u0080f(µÖ"
+                        .length();
+                     byte var2 = 0;
+
+                     label44:
+                     while (true) {
+                        byte var26 = var2;
+                        var2 += 8;
+                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        long[] var19 = var6;
+                        int var27 = var3++;
+                        long var37 = ((long)var7[0] & 255L) << 56
+                           | ((long)var7[1] & 255L) << 48
+                           | ((long)var7[2] & 255L) << 40
+                           | ((long)var7[3] & 255L) << 32
+                           | ((long)var7[4] & 255L) << 24
+                           | ((long)var7[5] & 255L) << 16
+                           | ((long)var7[6] & 255L) << 8
+                           | (long)var7[7] & 255L;
+                        byte var45 = -1;
+
+                        while (true) {
+                           long var54 = var37 ^ var0;
+                           switch (var45) {
+                              case 0:
+                                 var19[var27] = var54;
+                                 if (var2 >= var5) {
+                                    a = var6;
+                                    b = new Integer[11];
+                                    c = q();
+                                    return;
+                                 }
+                                 break;
+                              default:
+                                 var19[var27] = var54;
+                                 if (var2 < var5) {
+                                    continue label44;
+                                 }
+
+                                 var4 = "\u009dØÐ\u0086\u0013\u001dPg½·Ð'ßÈo\u0081";
+                                 var5 = "\u009dØÐ\u0086\u0013\u001dPg½·Ð'ßÈo\u0081".length();
+                                 var2 = 0;
+                           }
+
+                           byte var28 = var2;
+                           var2 += 8;
+                           var7 = var4.substring(var28, var2).getBytes("ISO-8859-1");
+                           var19 = var6;
+                           var27 = var3++;
+                           var37 = ((long)var7[0] & 255L) << 56
+                              | ((long)var7[1] & 255L) << 48
+                              | ((long)var7[2] & 255L) << 40
+                              | ((long)var7[3] & 255L) << 32
+                              | ((long)var7[4] & 255L) << 24
+                              | ((long)var7[5] & 255L) << 16
+                              | ((long)var7[6] & 255L) << 8
+                              | (long)var7[7] & 255L;
+                           var45 = 0;
+                        }
+                     }
+                  }
+
+                  var10 = var11.charAt(var17);
+                  break;
+               default:
+                  var8[var12++] = var44;
+                  if ((var17 += var10) < var13) {
+                     var10 = var11.charAt(var17);
+                     continue label70;
+                  }
+
+                  var11 = "/ \u007f\u0004\u0007%7\u0004\t2!]\u0007\u0003\b1\u0012*";
+                  var13 = "/ \u007f\u0004\u0007%7\u0004\t2!]\u0007\u0003\b1\u0012*".length();
+                  var10 = '\b';
+                  var17 = -1;
             }
-        }
-        D.a = var6_8;
-        D.b = new Integer[11];
-        D.CamelCase = new D(var8[3], 0);
-        D.PascalCase = new D(var8[0], 1);
-        D.SnakeCase = new D(var8[5], 2);
-        D.KebabCase = new D(var8[2], 3);
-        D.NoChange = new D(var8[4], 4);
-        D.NeverUseThisValueExceptDefaultValue = new D(var8[1], 5);
-        D.c = D.q();
-    }
 
-    private static hi_0 a(hi_0 hi_02) {
-        return hi_02;
-    }
+            var10000 = 26;
+            var10001 = var11.substring(++var17, var17 + var10);
+            var10002 = 0;
+         }
+      }
+   }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x2553;
-        if (b[n11] == null) {
-            D.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+   private static Hi_2 a(Hi_2 var0) {
+      return var0;
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 9555;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
+
 

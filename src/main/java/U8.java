@@ -1,25 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.IOException;
 
-class U8
-implements Runnable {
-    U8() {
-    }
+class U8 implements Runnable {
+   @Override
+   public void run() {
+      bF_3.L = true;
 
-    @Override
-    public void run() {
-        bf_1.L = true;
-        try {
-            bf_1.W = System.currentTimeMillis();
-            bf_1.w = bn_1.J.read(bf_1.O, 0, bf_1.O.length);
-            bf_1.D = System.currentTimeMillis();
-        }
-        catch (IOException iOException) {
-            iOException.printStackTrace();
-        }
-        bf_1.L = false;
-    }
+      try {
+         bF_3.W = System.currentTimeMillis();
+         bF_3.w = bN_3.J.read(bF_3.O, 0, bF_3.O.length);
+         bF_3.D = System.currentTimeMillis();
+      } catch (IOException var2) {
+         var2.printStackTrace();
+      }
+
+      bF_3.L = false;
+   }
 }
+
+
+
+
 

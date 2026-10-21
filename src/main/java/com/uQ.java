@@ -1,29 +1,26 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.BX;
-import com.at_0;
-import com.bw_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class uQ
-implements ActionListener {
-    final BX G;
-    final at_0 J;
-    final bw_0 B;
+class uQ implements ActionListener {
+   final com.BX G;
+   final com.at_2 J;
+   final com.Bw_2 B;
 
-    uQ(bw_0 bw_02, BX bX, at_0 at_02) {
-        this.B = bw_02;
-        this.G = bX;
-        this.J = at_02;
-    }
+   uQ(com.Bw_2 var1, com.BX var2, com.at_2 var3) {
+      this.B = var1;
+      this.G = var2;
+      this.J = var3;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.G.u(this.J);
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.G.u(this.J);
+   }
 }
+
+
+
+
 

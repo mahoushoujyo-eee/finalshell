@@ -1,26 +1,25 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.x;
 
-import com.ky_2;
-import org.x.O;
-
 class V {
-    public final int F;
-    public final int J;
-    public final int d;
-    public final String Z;
+   public final int F;
+   public final int J;
+   public final int d;
+   public final String Z;
 
-    V(int n10, int n11, int n12, String string) {
-        this.F = n10;
-        this.J = n11;
-        this.d = n12;
-        this.Z = string;
-        String string2 = O.f();
-        if (string2 == null) {
-            ky_2.K(new String[2]);
-        }
-    }
+   V(int var1, int var2, int var3, String var4) {
+      this.F = var1;
+      this.J = var2;
+      String var10000 = org.x.O.f();
+      this.d = var3;
+      this.Z = var4;
+      String var5 = var10000;
+      if (var5 == null) {
+         com.ky_4.K(new String[2]);
+      }
+   }
 }
+
+
+
+
 

@@ -1,26 +1,24 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com._y_0;
-import com.bq_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class IU
-implements ActionListener {
-    final _y_0 Y;
-    final bq_0 z;
+class IU implements ActionListener {
+   final _y_2 Y;
+   final com.Bq_2 z;
 
-    IU(bq_0 bq_02, _y_0 _y_02) {
-        this.z = bq_02;
-        this.Y = _y_02;
-    }
+   IU(com.Bq_2 var1, _y_2 var2) {
+      this.z = var1;
+      this.Y = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.Y.w();
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.Y.w();
+   }
 }
+
+
+
+
 

@@ -1,134 +1,134 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.KR;
-import com.ac_0;
-import com.kd_2;
-import com.ke_1;
-import com.py_2;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.Arrays;
 
-class _W
-implements ActionListener {
-    final File a;
-    final KR r;
-    final kd_2 T;
-    private static final String b;
+class _W implements ActionListener {
+   final File a;
+   final com.KR r;
+   final com.kd_4 T;
+   private static final String b;
 
-    _W(kd_2 kd_22, File file, KR kR) {
-        this.T = kd_22;
-        this.a = file;
-        this.r = kR;
-    }
+   _W(com.kd_4 var1, File var2, com.KR var3) {
+      this.T = var1;
+      this.a = var2;
+      this.r = var3;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block5: {
-            block3: {
-                File[] fileArray;
-                String string;
-                File[] fileArray2;
-                block4: {
-                    block2: {
-                        fileArray2 = this.a.listFiles();
-                        string = ke_1.v();
-                        fileArray = fileArray2;
-                        if (string != null) break block2;
-                        if (fileArray == null) break block3;
-                        fileArray = fileArray2;
-                    }
-                    if (string != null) break block4;
-                    if (fileArray.length <= 0) break block3;
-                    fileArray = fileArray2;
-                }
-                Arrays.sort(fileArray, new py_2());
-                kd_2.I(this.T, fileArray2, this.r);
-                if (string == null) break block5;
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      label27: {
+         String var10000 = com.kE_3.v();
+         File[] var3 = this.a.listFiles();
+         String var2 = var10000;
+         File[] var4 = var3;
+         if (var2 == null) {
+            if (var3 == null) {
+               break label27;
             }
-            ac_0.V(this.r, null, b);
-        }
-    }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u001aq\u0010QXi\u001b<|UMRi\u001c'u\u0010P\u001d \u0014=p\u0011F".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 93;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+            var4 = var3;
+         }
+
+         if (var2 == null) {
+            if (var4.length <= 0) {
+               break label27;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 19;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 68;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 40;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 126;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 96;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 20;
-                            break;
-                        }
-                        default: {
-                            n17 = 39;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        b = new String(cArray).intern();
-    }
+
+            var4 = var3;
+         }
+
+         Arrays.sort(var4, new py_4());
+         com.kd_4.I(this.T, var3, this.r);
+         if (var2 == null) {
+            return;
+         }
+      }
+
+      com.ac_2.V(this.r, null, b);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "\u001aq\u0010QXi\u001b<|UMRi\u001c'u\u0010P\u001d \u0014=p\u0011F".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 93;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 93;
+         var10006 = var0;
+      } else {
+         var6 = 93;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            b = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 93;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 19;
+               break;
+            case 1:
+               var23 = 68;
+               break;
+            case 2:
+               var23 = 40;
+               break;
+            case 3:
+               var23 = 126;
+               break;
+            case 4:
+               var23 = 96;
+               break;
+            case 5:
+               var23 = 20;
+               break;
+            default:
+               var23 = 39;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               b = var8;
+               return;
+            }
+
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

@@ -1,44 +1,25 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.RV;
-import com.fm_0;
-import java.awt.Component;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
-import javax.swing.Icon;
+import java.util.List;
+import org.jetbrains.annotations.NotNull;
 
-/*
- * Renamed from com.ez
- */
-public class ez_2
-implements Icon {
-    final fm_0 X;
+public class Ez_2 {
+   private final List Y;
 
-    protected ez_2(fm_0 fm_02) {
-        this.X = fm_02;
-    }
+   public Ez_2(@NotNull com.O2 var1) {
+      this(List.of(var1));
+   }
 
-    @Override
-    public void paintIcon(Component component, Graphics graphics, int n10, int n11) {
-        this.X.i = new Rectangle(n10, n11, this.X.r, this.X.v);
-        Graphics2D graphics2D = (Graphics2D)graphics;
-        Object object = RV.X(graphics2D);
-        this.X.r(graphics2D, n10, n11);
-        RV.X(graphics2D, object);
-    }
+   public Ez_2(@NotNull List var1) {
+      this.Y = var1;
+   }
 
-    @Override
-    public int getIconWidth() {
-        return this.X.H();
-    }
-
-    @Override
-    public int getIconHeight() {
-        return this.X.R();
-    }
+   public List A() {
+      return this.Y;
+   }
 }
+
+
+
+
 

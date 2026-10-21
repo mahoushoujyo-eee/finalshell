@@ -1,48 +1,51 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.l;
 
 import java.util.AbstractCollection;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import org.l.F;
-import org.l.R;
 
-public class C
-extends AbstractCollection {
-    private final Iterator s;
-    private final List N = new ArrayList();
+public class C extends AbstractCollection {
+   private final Iterator s;
+   private final List N = new ArrayList();
 
-    public C(Iterator iterator) {
-        this.s = iterator;
-    }
+   public C(Iterator var1) {
+      this.s = var1;
+   }
 
-    @Override
-    public Iterator iterator() {
-        return new R(this);
-    }
+   @Override
+   public Iterator iterator() {
+      return new org.l.R(this);
+   }
 
-    @Override
-    public int size() {
-        int n10 = 0;
-        Iterator iterator = this.iterator();
-        boolean bl = F.G();
-        while (iterator.hasNext()) {
-            Object e2 = iterator.next();
-            ++n10;
-            if (!bl) continue;
-        }
-        return n10;
-    }
+   @Override
+   public int size() {
+      boolean var10000 = F.G();
+      int var2 = 0;
+      Iterator var3 = this.iterator();
+      boolean var1 = var10000;
 
-    static List K(C c2) {
-        return c2.N;
-    }
+      while (var3.hasNext()) {
+         Object var4 = var3.next();
+         var2++;
+         if (var1) {
+            break;
+         }
+      }
 
-    static Iterator R(C c2) {
-        return c2.s;
-    }
+      return var2;
+   }
+
+   static List K(C var0) {
+      return var0.N;
+   }
+
+   static Iterator R(C var0) {
+      return var0.s;
+   }
 }
+
+
+
+
 

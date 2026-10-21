@@ -1,26 +1,27 @@
-/*
- * Decompiled with CFR 0.152.
- */
 public class D3 {
-    private static boolean X;
+   private static boolean X;
 
-    public static void m(boolean bl) {
-        X = bl;
-    }
+   public static void m(boolean var0) {
+      X = var0;
+   }
 
-    public static boolean S() {
-        return X;
-    }
+   public static boolean S() {
+      return X;
+   }
 
-    public static boolean M() {
-        boolean bl = D3.S();
-        return !bl;
-    }
+   public static boolean M() {
+      boolean var0 = S();
+      return !var0;
+   }
 
-    static {
-        if (!D3.S()) {
-            D3.m(true);
-        }
-    }
+   static {
+      if (!S()) {
+         m(true);
+      }
+   }
 }
+
+
+
+
 

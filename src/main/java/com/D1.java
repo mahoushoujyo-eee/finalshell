@@ -1,33 +1,29 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.G9;
-import com.dm_0;
-import com.na_2;
+class D1 implements com.Dm_2 {
+   final na_4 U;
 
-class D1
-implements dm_0 {
-    final na_2 U;
+   D1(na_4 var1) {
+      this.U = var1;
+   }
 
-    D1(na_2 na_22) {
-        this.U = na_22;
-    }
+   @Override
+   public void G(String var1, G9 var2) {
+      boolean var3 = na_4.e();
+      na_4 var10000 = this.U;
+      if (var3) {
+         if (!this.U.x()) {
+            return;
+         }
 
-    @Override
-    public void G(String string, G9 g92) {
-        block3: {
-            na_2 na_22;
-            block2: {
-                boolean bl = na_2.e();
-                na_22 = this.U;
-                if (!bl) break block2;
-                if (!na_22.x()) break block3;
-                na_22 = this.U;
-            }
-            na_22.h();
-        }
-    }
+         var10000 = this.U;
+      }
+
+      var10000.h();
+   }
 }
+
+
+
+
 

@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.Socket;
@@ -10,347 +7,466 @@ import java.util.List;
 import java.util.Vector;
 import java.util.concurrent.Semaphore;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
 public class a0 {
-    List p;
-    boolean t = false;
-    int w = a0.a(2920, 6871379940283314408L);
-    int Q = a0.a(1120, 6638462424036573154L);
-    int Y = 0;
-    int R;
-    String M = "";
-    byte[] m;
-    Socket x;
-    Socket L;
-    boolean P = false;
-    int q;
-    ArrayList g = new ArrayList();
-    Semaphore E = new Semaphore(0);
-    int V = 0;
-    int K = -1;
-    static int d;
-    static int T;
-    int B = 0;
-    zq_0 F;
-    private static final String a;
-    private static final long[] b;
-    private static final Integer[] c;
-    private static final long e;
+   List p;
+   boolean t = false;
+   int w = a(2920, 6871379940283314408L);
+   int Q = a(1120, 6638462424036573154L);
+   int Y = 0;
+   int R;
+   String M = "";
+   byte[] m;
+   Socket x;
+   Socket L;
+   boolean P = false;
+   int q;
+   ArrayList g = new ArrayList();
+   Semaphore E = new Semaphore(0);
+   int V = 0;
+   int K = -1;
+   static int d;
+   static int T;
+   int B = 0;
+   zq_2 F;
+   private static final String a;
+   private static final long[] b;
+   private static final Integer[] c;
+   private static final long e;
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block13: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block12: {
-                char[] cArray3 = "a]:Y&".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 6;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block12;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block13;
-            }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "a]:Y&".toCharArray();
+      int var10004 = var10003.length;
+      int var10 = 0;
+      byte var32 = 6;
+      char[] var10002 = var10003;
+      int var19 = var10004;
+      char[] var38;
+      byte var44;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var38 = var10003;
+         var10005 = var10;
+         char var10008 = var10003[var10];
+         var10007 = 6;
+         var10006 = var10008;
+         switch (var10 % 7) {
+            case 0:
+               var44 = 47;
+               break;
+            case 1:
+               var44 = 52;
+               break;
+            case 2:
+               var44 = 79;
+               break;
+            case 3:
+               var44 = 43;
+               break;
+            case 4:
+               var44 = 26;
+               break;
+            case 5:
+               var44 = 86;
+               break;
+            default:
+               var44 = 57;
+         }
+      } else {
+         var32 = 6;
+         var19 = var10004;
+         if (var10004 <= var10) {
+            String var36 = new String(var10003).intern();
+            int var25 = -1;
+            a = var36;
+            long var12 = 3704990132045930556L;
+            long[] var17 = new long[3];
+            int var14 = 0;
+            String var15 = "ç\u0095\nce¸\u0017\u0004Ð+\b\u0086½\u0096ÒÄ[¾\n~%Ö\u009fÞ";
+            int var16 = "ç\u0095\nce¸\u0017\u0004Ð+\b\u0086½\u0096ÒÄ[¾\n~%Ö\u009fÞ".length();
+            byte var13 = 0;
+
             do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 47;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 52;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 79;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 43;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 26;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 86;
-                            break;
-                        }
-                        default: {
-                            n17 = 57;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        long l2 = 3704990132045930556L;
-        long[] lArray = new long[3];
-        int n18 = 0;
-        String string = "\u00e7\u0095\nce\u00b8\u0017\u0004\u00d0+\b\u0086\u00bd\u0096\u00d2\u00c4[\u00be\n~%\u00d6\u009f\u00de";
-        int n19 = "\u00e7\u0095\nce\u00b8\u0017\u0004\u00d0+\b\u0086\u00bd\u0096\u00d2\u00c4[\u00be\n~%\u00d6\u009f\u00de".length();
-        int n20 = 0;
-        do {
-            byte[] byArray = string.substring(n20, n20 += 8).getBytes("ISO-8859-1");
-            int n21 = n18++;
-            lArray[n21] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n20 < n19);
-        b = lArray;
-        c = new Integer[3];
-        long l3 = 6495496444793209063L;
-        e = 0x5A24A39A17B64113L ^ l3;
-        d = 1;
-        T = a0.a(18811, 567511245490107130L);
-    }
+               var25 = var13;
+               var13 += 8;
+               byte[] var18 = var15.substring(var25, var13).getBytes("ISO-8859-1");
+               var25 = var14++;
+               long var42 = (
+                     ((long)var18[0] & 255L) << 56
+                        | ((long)var18[1] & 255L) << 48
+                        | ((long)var18[2] & 255L) << 40
+                        | ((long)var18[3] & 255L) << 32
+                        | ((long)var18[4] & 255L) << 24
+                        | ((long)var18[5] & 255L) << 16
+                        | ((long)var18[6] & 255L) << 8
+                        | (long)var18[7] & 255L
+                  )
+                  ^ var12;
+               byte var37 = -1;
+               var17[var25] = var42;
+            } while (var13 < var16);
 
-    public a0(zq_0 zq_02, DataInputStream dataInputStream, DataOutputStream dataOutputStream, int n10, int n11) {
-        this(zq_02, dataInputStream, dataOutputStream, n10, n11, null, 0);
-    }
+            b = var17;
+            c = new Integer[3];
+            long var11 = 6495496444793209063L;
+            long var31 = 6495496444793209107L ^ var11;
+            byte var28 = -1;
+            e = var31;
+            d = 1;
+            T = a(18811, 567511245490107130L);
+            return;
+         }
 
-    public a0(zq_0 zq_02, DataInputStream dataInputStream, DataOutputStream dataOutputStream, int n10, int n11, byte[] byArray, int n12) {
-        this.F = zq_02;
-        this.p = new Vector();
-        this.Q = n11;
-        this.m = byArray;
-        this.q = n10;
-        ys_1 ys_12 = new ys_1(this, byArray, dataOutputStream, n12, dataInputStream, n11);
-        QI.U.execute(ys_12);
-    }
+         var38 = var10003;
+         var10005 = var10;
+         char var45 = var10003[var10];
+         var10007 = 6;
+         var10006 = var45;
+         switch (var10 % 7) {
+            case 0:
+               var44 = 47;
+               break;
+            case 1:
+               var44 = 52;
+               break;
+            case 2:
+               var44 = 79;
+               break;
+            case 3:
+               var44 = 43;
+               break;
+            case 4:
+               var44 = 26;
+               break;
+            case 5:
+               var44 = 86;
+               break;
+            default:
+               var44 = 57;
+         }
+      }
 
-    /*
-     * Loose catch block
-     */
-    void W() {
-        block15: {
-            a0 a02;
-            block18: {
-                Socket socket;
-                block16: {
-                    String[] stringArray;
-                    block17: {
-                        block19: {
-                            stringArray = QI.N();
-                            a0 a03 = this;
-                            if (stringArray == null) break block19;
-                            try {
-                                block20: {
-                                    if (a03.t) break block15;
-                                    break block20;
-                                    catch (InterruptedException interruptedException) {
-                                        throw a0.a(interruptedException);
-                                    }
-                                }
-                                a03 = this;
-                            }
-                            catch (InterruptedException interruptedException) {
-                                throw a0.a(interruptedException);
-                            }
-                        }
-                        a03.t = true;
-                        try {
-                            Thread.sleep(e);
-                        }
-                        catch (InterruptedException interruptedException) {
-                            // empty catch block
-                        }
-                        try {
-                            try {
-                                socket = this.x;
-                                if (stringArray == null) break block16;
-                                if (socket == null) break block17;
-                            }
-                            catch (InterruptedException interruptedException) {
-                                throw a0.a(interruptedException);
-                            }
-                            QI.U.execute(new B9(this));
-                        }
-                        catch (InterruptedException interruptedException) {
-                            throw a0.a(interruptedException);
-                        }
-                    }
-                    try {
-                        a02 = this;
-                        if (stringArray == null) break block18;
-                        socket = a02.L;
-                    }
-                    catch (InterruptedException interruptedException) {
-                        throw a0.a(interruptedException);
-                    }
-                }
-                try {
-                    if (socket != null) {
-                        QI.U.execute(new jv_0(this));
-                    }
-                }
-                catch (InterruptedException interruptedException) {
-                    throw a0.a(interruptedException);
-                }
-                a02 = this;
+      while (true) {
+         var38[var10005] = (char)(var10006 ^ var10007 ^ var44);
+         var10++;
+         if (var32 == 0) {
+            var38 = var10002;
+            var10005 = var32;
+            char var47 = var10002[var32];
+            var10007 = var32;
+            var10006 = var47;
+            switch (var10 % 7) {
+               case 0:
+                  var44 = 47;
+                  break;
+               case 1:
+                  var44 = 52;
+                  break;
+               case 2:
+                  var44 = 79;
+                  break;
+               case 3:
+                  var44 = 43;
+                  break;
+               case 4:
+                  var44 = 26;
+                  break;
+               case 5:
+                  var44 = 86;
+                  break;
+               default:
+                  var44 = 57;
             }
-            a02.Y();
-        }
-    }
+         } else {
+            if (var19 <= var10) {
+               String var34 = new String(var10002).intern();
+               int var21 = -1;
+               a = var34;
+               long var2 = 3704990132045930556L;
+               long[] var8 = new long[3];
+               int var5 = 0;
+               String var6 = "ç\u0095\nce¸\u0017\u0004Ð+\b\u0086½\u0096ÒÄ[¾\n~%Ö\u009fÞ";
+               int var7 = "ç\u0095\nce¸\u0017\u0004Ð+\b\u0086½\u0096ÒÄ[¾\n~%Ö\u009fÞ".length();
+               byte var4 = 0;
 
-    DW f(String string) {
-        DW dW = new DW(this);
-        String string2 = null;
-        string = string.replaceAll("\r", "");
-        string = string.replaceAll(" ", "");
-        String[] stringArray = string.split("\n");
-        String[] stringArray2 = QI.N();
-        String[] stringArray3 = stringArray;
-        int n10 = stringArray.length;
-        int n11 = 0;
-        while (n11 < n10) {
-            block7: {
-                String string3;
-                block6: {
-                    String string4;
-                    string3 = string4 = stringArray3[n11];
-                    if (stringArray2 == null) break block6;
-                    if (!string3.startsWith(a)) break block7;
-                    string3 = string4.substring(5);
-                }
-                String string5 = string3;
-                int n12 = string5.indexOf(":");
-                if (stringArray2 != null) {
-                    if (n12 > -1) {
-                        int n13 = Integer.parseInt(string5.substring(n12 + 1));
-                        dW.o(n13);
-                        string5 = string5.substring(0, n12);
-                    }
-                    string2 = string5;
-                }
-                dW.B(string2);
+               do {
+                  var21 = var4;
+                  var4 += 8;
+                  byte[] var9 = var6.substring(var21, var4).getBytes("ISO-8859-1");
+                  var21 = var5++;
+                  long var41 = (
+                        ((long)var9[0] & 255L) << 56
+                           | ((long)var9[1] & 255L) << 48
+                           | ((long)var9[2] & 255L) << 40
+                           | ((long)var9[3] & 255L) << 32
+                           | ((long)var9[4] & 255L) << 24
+                           | ((long)var9[5] & 255L) << 16
+                           | ((long)var9[6] & 255L) << 8
+                           | (long)var9[7] & 255L
+                     )
+                     ^ var2;
+                  byte var35 = -1;
+                  var8[var21] = var41;
+               } while (var4 < var7);
+
+               b = var8;
+               c = new Integer[3];
+               long var0 = 6495496444793209063L;
+               long var30 = 6495496444793209107L ^ var0;
+               byte var24 = -1;
+               e = var30;
+               d = 1;
+               T = a(18811, 567511245490107130L);
+               return;
             }
-            ++n11;
-        }
-        return dW;
-    }
 
-    public void O(yx_0 yx_02) {
-        this.p.add(yx_02);
-    }
+            var38 = var10002;
+            var10005 = var10;
+            char var46 = var10002[var10];
+            var10007 = var32;
+            var10006 = var46;
+            switch (var10 % 7) {
+               case 0:
+                  var44 = 47;
+                  break;
+               case 1:
+                  var44 = 52;
+                  break;
+               case 2:
+                  var44 = 79;
+                  break;
+               case 3:
+                  var44 = 43;
+                  break;
+               case 4:
+                  var44 = 26;
+                  break;
+               case 5:
+                  var44 = 86;
+                  break;
+               default:
+                  var44 = 57;
+            }
+         }
+      }
+   }
 
-    /*
-     * Handled impossible loop by adding 'first' condition
-     * Enabled aggressive block sorting
-     */
-    void Y() {
-        String[] stringArray = QI.N();
-        Iterator iterator = this.p.iterator();
-        boolean bl = true;
-        do {
-            if (bl && !(bl = false) && stringArray != null) continue;
-            yx_0 yx_02 = (yx_0)iterator.next();
-            yx_02.X();
-        } while (iterator.hasNext());
-    }
+   public a0(zq_2 var1, DataInputStream var2, DataOutputStream var3, int var4, int var5) {
+      this(var1, var2, var3, var4, var5, null, 0);
+   }
 
-    public int F() {
-        return this.Y;
-    }
+   public a0(zq_2 var1, DataInputStream var2, DataOutputStream var3, int var4, int var5, byte[] var6, int var7) {
+      this.F = var1;
+      this.p = new Vector();
+      this.Q = var5;
+      this.m = var6;
+      this.q = var4;
+      yS_3 var8 = new yS_3(this, var6, var3, var7, var2, var5);
+      QI.U.execute(var8);
+   }
 
-    public void l(int n10) {
-        this.Y = n10;
-    }
+   void W() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic QI.N ()[Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnull 1e
+      // 09: getfield a0.t Z
+      // 0c: ifne 7e
+      // 0f: goto 16
+      // 12: invokestatic a0.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 15: athrow
+      // 16: aload 0
+      // 17: goto 1e
+      // 1a: invokestatic a0.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 1d: athrow
+      // 1e: bipush 1
+      // 1f: putfield a0.t Z
+      // 22: getstatic a0.e J
+      // 25: invokestatic java/lang/Thread.sleep (J)V
+      // 28: goto 2c
+      // 2b: astore 2
+      // 2c: aload 0
+      // 2d: getfield a0.x Ljava/net/Socket;
+      // 30: aload 1
+      // 31: ifnull 62
+      // 34: ifnull 53
+      // 37: goto 3e
+      // 3a: invokestatic a0.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 3d: athrow
+      // 3e: getstatic QI.U Ljava/util/concurrent/ThreadPoolExecutor;
+      // 41: new B9
+      // 44: dup
+      // 45: aload 0
+      // 46: invokespecial B9.<init> (La0;)V
+      // 49: invokevirtual java/util/concurrent/ThreadPoolExecutor.execute (Ljava/lang/Runnable;)V
+      // 4c: goto 53
+      // 4f: invokestatic a0.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 52: athrow
+      // 53: aload 0
+      // 54: aload 1
+      // 55: ifnull 7b
+      // 58: getfield a0.L Ljava/net/Socket;
+      // 5b: goto 62
+      // 5e: invokestatic a0.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 61: athrow
+      // 62: ifnull 7a
+      // 65: getstatic QI.U Ljava/util/concurrent/ThreadPoolExecutor;
+      // 68: new Jv_2
+      // 6b: dup
+      // 6c: aload 0
+      // 6d: invokespecial Jv_2.<init> (La0;)V
+      // 70: invokevirtual java/util/concurrent/ThreadPoolExecutor.execute (Ljava/lang/Runnable;)V
+      // 73: goto 7a
+      // 76: invokestatic a0.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 79: athrow
+      // 7a: aload 0
+      // 7b: invokevirtual a0.Y ()V
+      // 7e: return
+   }
 
-    public int c() {
-        return this.R;
-    }
+   DW f(String var1) {
+      DW var3 = new DW(this);
+      String var4 = null;
+      String[] var10000 = QI.N();
+      var1 = var1.replaceAll("\r", "");
+      var1 = var1.replaceAll(" ", "");
+      String[] var5 = var1.split("\n");
+      String[] var2 = var10000;
 
-    public void M(int n10) {
-        this.R = n10;
-    }
+      for (String var6 : var5) {
+         String var15 = var6;
+         if (var2 != null) {
+            if (!var6.startsWith(a)) {
+               continue;
+            }
 
-    public String B() {
-        return this.M;
-    }
+            var15 = var6.substring(5);
+         }
 
-    public void p(String string) {
-        this.M = string;
-    }
+         String var10 = var15;
+         int var11 = var10.indexOf(":");
+         if (var2 != null) {
+            if (var11 > -1) {
+               int var12 = Integer.parseInt(var10.substring(var11 + 1));
+               var3.o(var12);
+               var10 = var10.substring(0, var11);
+            }
 
-    public Socket B() {
-        return this.x;
-    }
+            var4 = var10;
+         }
 
-    public void E(Socket socket) {
-        this.x = socket;
-    }
+         var3.B(var4);
+      }
 
-    public Socket D() {
-        return this.L;
-    }
+      return var3;
+   }
 
-    public void g(Socket socket) {
-        this.L = socket;
-    }
+   public void O(Yx_2 var1) {
+      this.p.add(var1);
+   }
 
-    public int I() {
-        return this.K;
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   void Y() {
+      String[] var1 = QI.N();
+      Iterator var3 = this.p.iterator();
+      if (var1 == null || var3.hasNext()) {
+         do {
+            Yx_2 var2 = (Yx_2)var3.next();
+            var2.X();
+         } while (var3.hasNext());
+      }
+   }
 
-    public void b(int n10) {
-        this.K = n10;
-    }
+   public int F() {
+      return this.Y;
+   }
 
-    public int N() {
-        return this.B;
-    }
+   public void l(int var1) {
+      this.Y = var1;
+   }
 
-    public void R(int n10) {
-        this.B = n10;
-    }
+   public int c() {
+      return this.R;
+   }
 
-    public zq_0 b() {
-        return this.F;
-    }
+   public void M(int var1) {
+      this.R = var1;
+   }
 
-    public void Q(zq_0 zq_02) {
-        this.F = zq_02;
-    }
+   public String B() {
+      return this.M;
+   }
 
-    private static InterruptedException a(InterruptedException interruptedException) {
-        return interruptedException;
-    }
+   public void p(String var1) {
+      this.M = var1;
+   }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x7B80;
-        if (c[n11] == null) {
-            a0.c[n11] = (int)(b[n11] ^ l2);
-        }
-        return c[n11];
-    }
+   public Socket B$Socket() {
+      return this.x;
+   }
+
+   public void E(Socket var1) {
+      this.x = var1;
+   }
+
+   public Socket D() {
+      return this.L;
+   }
+
+   public void g(Socket var1) {
+      this.L = var1;
+   }
+
+   public int I() {
+      return this.K;
+   }
+
+   public void b(int var1) {
+      this.K = var1;
+   }
+
+   public int N() {
+      return this.B;
+   }
+
+   public void R(int var1) {
+      this.B = var1;
+   }
+
+   public zq_2 b() {
+      return this.F;
+   }
+
+   public void Q(zq_2 var1) {
+      this.F = var1;
+   }
+
+   private static InterruptedException a(InterruptedException var0) {
+      return var0;
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 31616;
+      if (c[var3] == null) {
+         c[var3] = (int)(b[var3] ^ var1);
+      }
+
+      return c[var3];
+   }
 }
+
+
+
+
 

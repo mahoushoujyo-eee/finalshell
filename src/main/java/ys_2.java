@@ -1,30 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import javax.swing.event.MenuEvent;
-import javax.swing.event.MenuListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-/*
- * Renamed from ys
- */
-class ys_2
-implements MenuListener {
-    final U f;
+class Ys_2 implements ActionListener {
+   final l5_2 u;
 
-    ys_2(U u10) {
-        this.f = u10;
-    }
+   Ys_2(l5_2 var1) {
+      this.u = var1;
+   }
 
-    @Override
-    public void menuSelected(MenuEvent menuEvent) {
-    }
-
-    @Override
-    public void menuDeselected(MenuEvent menuEvent) {
-    }
-
-    @Override
-    public void menuCanceled(MenuEvent menuEvent) {
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+   }
 }
+
+
+
+
 

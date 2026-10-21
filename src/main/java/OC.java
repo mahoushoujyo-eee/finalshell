@@ -1,17 +1,17 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class OC
-implements Runnable {
-    final to_0 w;
+class OC implements Runnable {
+   final To_2 w;
 
-    OC(to_0 to_02) {
-        this.w = to_02;
-    }
+   OC(To_2 var1) {
+      this.w = var1;
+   }
 
-    @Override
-    public void run() {
-        this.w.v();
-    }
+   @Override
+   public void run() {
+      this.w.v();
+   }
 }
+
+
+
+
 

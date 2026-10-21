@@ -1,29 +1,27 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.GR;
-import com.wo_1;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JList;
 
-class HW
-extends KeyAdapter {
-    final JList m;
-    final wo_1 u;
+class HW extends KeyAdapter {
+   final JList m;
+   final wO_3 u;
 
-    HW(wo_1 wo_12, JList jList) {
-        this.u = wo_12;
-        this.m = jList;
-    }
+   HW(wO_3 var1, JList var2) {
+      this.u = var1;
+      this.m = var2;
+   }
 
-    @Override
-    public void keyReleased(KeyEvent keyEvent) {
-        if (GR.lR.J(keyEvent)) {
-            this.u.N(this.m, this.m.getSelectedIndex());
-        }
-    }
+   @Override
+   public void keyReleased(KeyEvent var1) {
+      if (GR.lR.J(var1)) {
+         this.u.N(this.m, this.m.getSelectedIndex());
+      }
+   }
 }
+
+
+
+
 

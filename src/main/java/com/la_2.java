@@ -1,43 +1,63 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.T4;
-import com.tb_0;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import javax.swing.text.Document;
 
-/*
- * Renamed from com.la
- */
-class la_2
-implements ActionListener {
-    final tb_0 h;
+class La_2 implements PropertyChangeListener {
+   final eK_3 O;
 
-    la_2(tb_0 tb_02) {
-        this.h = tb_02;
-    }
+   La_2(eK_3 var1) {
+      this.O = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block4: {
-            tb_0 tb_02;
-            block2: {
-                block3: {
-                    int n10 = T4.O();
-                    tb_02 = this.h;
-                    if (n10 != 0) break block2;
-                    if (tb_02.d >= this.h.f) break block3;
-                    this.h.d += this.h.I;
-                    this.h.Y.revalidate();
-                    if (n10 == 0) break block4;
-                }
-                this.h.d = this.h.f;
-                tb_02 = this.h;
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      String var2;
+      Object var5;
+      var5 = com.FV.D();
+      Object var3 = var1.getOldValue();
+      var2 = (String)var5;
+      var5 = var3;
+      label35:
+      if (var2 == null) {
+         if (var3 != null) {
+            var5 = var3;
+            if (var2 != null) {
+               break label35;
             }
-            tb_02.U.Y();
-        }
-    }
+
+            if (var3 instanceof Document) {
+               ((Document)var3).removeDocumentListener(this.O);
+            }
+         }
+
+         var5 = var1.getNewValue();
+      }
+
+      Object var4 = var5;
+      var5 = var4;
+      if (var2 == null) {
+         if (var4 == null) {
+            return;
+         }
+
+         var5 = var4;
+      }
+
+      if (var2 == null) {
+         if (!(var5 instanceof Document)) {
+            return;
+         }
+
+         var5 = var4;
+      }
+
+      ((Document)var5).addDocumentListener(this.O);
+   }
 }
+
+
+
+
 

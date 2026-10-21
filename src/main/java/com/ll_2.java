@@ -1,26 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.nx_2;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import javax.swing.JScrollBar;
 
-/*
- * Renamed from com.ll
- */
-class ll_2
-implements ActionListener {
-    final nx_2 t;
+public class Ll_2 extends com.LP implements com.aC {
+   public Ll_2(com.og_4 var1) {
+      super(var1);
+   }
 
-    ll_2(nx_2 nx_22) {
-        this.t = nx_22;
-    }
+   @Override
+   public void I(ex_4 var1) {
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.t.b();
-    }
+   @Override
+   public void g(JScrollBar var1) {
+   }
 }
+
+
+
+
 

@@ -1,40 +1,37 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.C;
 
-import com.C.W;
-import com.c.y_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class P
-implements ActionListener {
-    final y_0 Z;
+class P implements ActionListener {
+   final com.C.y_2 Z;
 
-    P(y_0 y_02) {
-        this.Z = y_02;
-    }
+   P(com.C.y_2 var1) {
+      this.Z = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block4: {
-            y_0 y_02;
-            block2: {
-                block3: {
-                    int[] nArray = W.B();
-                    y_02 = this.Z;
-                    if (nArray != null) break block2;
-                    if (!(y_02.D > 0.0f)) break block3;
-                    this.Z.D -= 0.1f;
-                    this.Z.p();
-                    if (nArray == null) break block4;
-                }
-                this.Z.D = 0.0f;
-                y_02 = this.Z;
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      int[] var2 = com.C.W.B();
+      com.C.y_2 var10000 = this.Z;
+      if (var2 == null) {
+         if (this.Z.D > 0.0F) {
+            this.Z.D -= 0.1F;
+            this.Z.p();
+            if (var2 == null) {
+               return;
             }
-            y_02.Q.Y();
-        }
-    }
+         }
+
+         this.Z.D = 0.0F;
+         var10000 = this.Z;
+      }
+
+      var10000.Q.Y();
+   }
 }
+
+
+
+
 

@@ -1,93 +1,87 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.WU;
-import com.a9;
-import com.kp_0;
-import com.ky_2;
-import com.ne_1;
 import javax.swing.JViewport;
 
-public class BJ
-extends JViewport {
-    public WU q() {
-        return (WU)this.getUI();
-    }
+public class BJ extends JViewport {
+   public com.WU q() {
+      return (com.WU)this.getUI();
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void updateUI() {
-        block16: {
-            block15: {
-                block14: {
-                    block17: {
-                        var1_1 = WU.p();
-                        v0 = this;
-                        if (var1_1 == 0) ** GOTO lbl26
-                        if (v0.getUI() == null) break block14;
-                        break block17;
-                        catch (Throwable v1) {
-                            throw BJ.a(v1);
-                        }
-                    }
-                    try {
-                        block18: {
-                            v2 = this;
-                            if (var1_1 == 0) break block15;
-                            break block18;
-                            catch (Throwable v3) {
-                                throw BJ.a(v3);
-                            }
-                        }
-                        if (!(v2.getUI() instanceof WU)) {
-                        }
-                        ** GOTO lbl33
-                    }
-                    catch (Throwable v4) {
-                        throw BJ.a(v4);
-                    }
-                }
-                try {
-                    v0 = this;
-lbl26:
-                    // 2 sources
+   @Override
+   public void updateUI() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/WU.p ()I
+      // 03: istore 1
+      // 04: aload 0
+      // 05: iload 1
+      // 06: ifeq 33
+      // 09: invokevirtual com/BJ.getUI ()Ljavax/swing/plaf/ViewportUI;
+      // 0c: ifnull 32
+      // 0f: goto 16
+      // 12: invokestatic com/BJ.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 15: athrow
+      // 16: aload 0
+      // 17: iload 1
+      // 18: ifeq 63
+      // 1b: goto 22
+      // 1e: invokestatic com/BJ.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 21: athrow
+      // 22: invokevirtual com/BJ.getUI ()Ljavax/swing/plaf/ViewportUI;
+      // 25: instanceof com/WU
+      // 28: ifne 5b
+      // 2b: goto 32
+      // 2e: invokestatic com/BJ.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 31: athrow
+      // 32: aload 0
+      // 33: getstatic com/a9.zf Ljava/lang/String;
+      // 36: bipush 0
+      // 37: anewarray 36
+      // 3a: invokestatic com/Kp_2.w (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 3d: checkcast com/WU
+      // 40: invokevirtual com/BJ.setUI (Ljavax/swing/plaf/ViewportUI;)V
+      // 43: goto 6a
+      // 46: astore 2
+      // 47: aload 0
+      // 48: aload 2
+      // 49: invokestatic com/nE_3.g (Ljava/lang/Object;Ljava/lang/Throwable;)V
+      // 4c: aload 0
+      // 4d: new com/WU
+      // 50: dup
+      // 51: invokespecial com/WU.<init> ()V
+      // 54: invokevirtual com/BJ.setUI (Ljavax/swing/plaf/ViewportUI;)V
+      // 57: iload 1
+      // 58: ifne 6a
+      // 5b: aload 0
+      // 5c: goto 63
+      // 5f: invokestatic com/BJ.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 62: athrow
+      // 63: aload 0
+      // 64: invokevirtual com/BJ.getUI ()Ljavax/swing/plaf/ViewportUI;
+      // 67: invokevirtual com/BJ.setUI (Ljavax/swing/plaf/ViewportUI;)V
+      // 6a: invokestatic com/ky_4.F ()[Ljava/lang/String;
+      // 6d: ifnull 7e
+      // 70: iinc 1 1
+      // 73: iload 1
+      // 74: invokestatic com/WU.M (I)V
+      // 77: goto 7e
+      // 7a: invokestatic com/BJ.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 7d: athrow
+      // 7e: return
+   }
 
-                    v0.setUI((WU)kp_0.w(a9.zf, new Object[0]));
-                    break block16;
-                }
-                catch (Throwable var2_2) {
-                    try {
-                        ne_1.g(this, var2_2);
-                        this.setUI(new WU());
-                        if (var1_1 != 0) break block16;
-lbl33:
-                        // 2 sources
-
-                        v2 = this;
-                    }
-                    catch (Throwable v5) {
-                        throw BJ.a(v5);
-                    }
-                }
-            }
-            v2.setUI(this.getUI());
-        }
-        try {
-            if (ky_2.F() != null) {
-                WU.M(++var1_1);
-            }
-        }
-        catch (Throwable v6) {
-            throw BJ.a(v6);
-        }
-    }
-
-    private static Throwable a(Throwable throwable) {
-        return throwable;
-    }
+   private static Throwable a(Throwable var0) {
+      return var0;
+   }
 }
+
+
+
+
 

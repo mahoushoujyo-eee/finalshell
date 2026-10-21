@@ -1,24 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
-import org.v._5;
-import org.v.hN;
+public class fR implements hN {
+   public final String z;
 
-public class fR
-implements hN {
-    public final String z;
+   public fR(String var1) {
+      this.z = var1;
+   }
 
-    public fR(String string) {
-        this.z = string;
-    }
-
-    @Override
-    @c
-    public Object G(_5 _52) throws Throwable {
-        return _52.q(this);
-    }
+   @org.F.c
+   @Override
+   public Object G(_5 var1) throws Throwable {
+      return var1.q(this);
+   }
 }
+
+
+
+
 

@@ -1,28 +1,27 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.D2;
-import com.by_0;
 import java.awt.Dimension;
 
-class BE
-extends by_0 {
-    final D2 C;
+class BE extends com.By_2 {
+   final com.D2 C;
 
-    BE(D2 d2, int n10, int n11, int n12) {
-        this.C = d2;
-        super(n10, n11, n12);
-    }
+   BE(com.D2 var1, int var2, int var3, int var4) {
+      super(var2, var3, var4);
+      this.C = var1;
+   }
 
-    @Override
-    public Dimension getPreferredSize() {
-        Dimension dimension = super.getPreferredSize();
-        if (D2.b(this.C) > 0) {
-            dimension.width = D2.b(this.C);
-        }
-        return dimension;
-    }
+   @Override
+   public Dimension getPreferredSize() {
+      Dimension var1 = super.getPreferredSize();
+      if (com.D2.b(this.C) > 0) {
+         var1.width = com.D2.b(this.C);
+      }
+
+      return var1;
+   }
 }
+
+
+
+
 

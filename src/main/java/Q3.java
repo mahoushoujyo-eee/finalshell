@@ -1,60 +1,86 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 
-class Q3
-implements ActionListener {
-    final f3_0 I;
+class Q3 implements ActionListener {
+   final f3_2 I;
 
-    Q3(f3_0 f3_02) {
-        this.I = f3_02;
-    }
+   Q3(f3_2 var1) {
+      this.I = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        String string = null;
-        int n10 = ((ua_1)this.I.q).getSelectedRow();
-        int[] nArray = L9.X();
-        if (n10 > -1) {
-            String string2;
-            ArrayList arrayList;
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      String var3;
+      var3 = null;
+      int[] var10000 = L9.X();
+      int var4 = ((uA_3)com.c.c(266946451169580014L).get(com.c.c(188243249598333161L).get(this))).getSelectedRow();
+      int[] var2 = var10000;
+      label45:
+      if (var4 > -1) {
+         var10000 = (int[])com.c.c(434008521855552520L).get(com.c.c(188243249598333161L).get(this));
+         Object[] var10001 = com.c.f();
+         Method var10003 = com.c.d(508702504224153155L);
+         Object[] var10002 = var10001;
+         var10001 = var10000;
+         Method var11 = var10003;
+
+         try {
+            var12 = (ArrayList)var11.invoke(var10001, var10002);
+         } catch (InvocationTargetException var9) {
+            throw var9.getTargetException();
+         }
+
+         L9 var5 = (L9)var12.get(var4);
+         var10001 = com.c.f();
+         var10003 = com.c.d(129926512000439480L);
+         var10002 = var10001;
+         L9 var20 = var5;
+         Method var13 = var10003;
+
+         try {
+            var14 = (String)var13.invoke(var20, var10002);
+         } catch (InvocationTargetException var8) {
+            throw var8.getTargetException();
+         }
+
+         if (var2 == null) {
+            if (var14 == null) {
+               break label45;
+            }
+
+            var10001 = com.c.f();
+            var10003 = com.c.d(129926512000439480L);
+            var10002 = var10001;
+            L9 var22 = var5;
+            Method var15 = var10003;
+
             try {
-                arrayList = (ArrayList)this.I.K.N();
+               var14 = (String)var15.invoke(var22, var10002);
+            } catch (InvocationTargetException var7) {
+               throw var7.getTargetException();
             }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-            L9 l9 = (L9)arrayList.get(n10);
-            try {
-                string2 = (String)l9.K();
-            }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-            if (nArray == null) {
-                if (string2 != null) {
-                    try {
-                        string2 = (String)l9.K();
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                }
-            } else {
-                string = string2;
-            }
-        }
-        try {
-            lk_0.u(string);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+         }
+
+         var3 = var14;
+      }
+
+      Object[] var16 = com.c.a(var3);
+      Method var17 = com.c.d(396962080382410298L);
+      Object[] var28 = var16;
+      Object var24 = null;
+
+      try {
+         var17.invoke(var24, var28);
+      } catch (InvocationTargetException var6) {
+         throw var6.getTargetException();
+      }
+   }
 }
+
+
+
+
 

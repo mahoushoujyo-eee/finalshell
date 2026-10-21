@@ -1,36 +1,35 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.nx_2;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
-class KM
-extends MouseAdapter {
-    final nx_2 i;
+class KM extends MouseAdapter {
+   final nx_4 i;
 
-    KM(nx_2 nx_22) {
-        this.i = nx_22;
-    }
+   KM(nx_4 var1) {
+      this.i = var1;
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        block5: {
-            boolean bl;
-            block4: {
-                int n10 = nx_2.c();
-                bl = this.i.isEnabled();
-                if (n10 == 0) break block4;
-                if (!bl) break block5;
-                bl = SwingUtilities.isRightMouseButton(mouseEvent);
-            }
-            if (bl) {
-                this.i.j();
-            }
-        }
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      int var2 = nx_4.c();
+      boolean var10000 = this.i.isEnabled();
+      if (var2 != 0) {
+         if (!var10000) {
+            return;
+         }
+
+         var10000 = SwingUtilities.isRightMouseButton(var1);
+      }
+
+      if (var10000) {
+         this.i.j();
+      }
+   }
 }
+
+
+
+
 

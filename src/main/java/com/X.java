@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.hl_0;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
-class X
-extends ComponentAdapter {
-    final hl_0 g;
+class X extends ComponentAdapter {
+   final Hl_2 g;
 
-    X(hl_0 hl_02) {
-        this.g = hl_02;
-    }
+   X(Hl_2 var1) {
+      this.g = var1;
+   }
 
-    @Override
-    public void componentResized(ComponentEvent componentEvent) {
-        this.g.h();
-    }
+   @Override
+   public void componentResized(ComponentEvent var1) {
+      this.g.h();
+   }
 }
+
+
+
+
 

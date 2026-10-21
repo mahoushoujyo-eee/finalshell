@@ -1,34 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.LC;
-import com.pf_1;
 import java.util.HashMap;
 import java.util.Map;
 
 public class E3 {
-    private Map p = new HashMap();
+   private Map p = new HashMap();
 
-    public pf_1 A(String string) {
-        return (pf_1)this.p.get(string);
-    }
+   public pF_3 A(String var1) {
+      return (pF_3)this.p.get(var1);
+   }
 
-    public void w(String string, pf_1 pf_12) {
-        this.p.put(string, pf_12);
-    }
+   public void w(String var1, pF_3 var2) {
+      this.p.put(var1, var2);
+   }
 
-    public Map k() {
-        return this.p;
-    }
+   public Map k() {
+      return this.p;
+   }
 
-    public void G(Map map) {
-        this.p = map;
-    }
+   public void G(Map var1) {
+      this.p = var1;
+   }
 
-    public LC W() {
-        return new LC(this.p);
-    }
+   public com.LC W() {
+      return new com.LC(this.p);
+   }
 }
+
+
+
+
 

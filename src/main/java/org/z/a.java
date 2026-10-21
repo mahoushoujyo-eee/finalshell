@@ -1,121 +1,118 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.z;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
 import org.J.Z;
-import org.w.d;
-import org.w.j;
 
 public class a {
-    private static final Class z;
-    private static final Method a;
-    private final Object K;
+   private static final Class z;
+   private static final Method a;
+   private final Object K;
 
-    public a(Object object) {
-        this.K = object;
-    }
+   public a(Object var1) {
+      this.K = var1;
+   }
 
-    public Z Y() throws IOException {
-        return new Z(j.o(a, this.K, new Object[0]));
-    }
+   public Z Y() throws IOException {
+      return new Z(org.w.j.o(a, this.K, new Object[0]));
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block13: {
-            var0 = new String[2];
-            var4_1 = 0;
-            var3_2 = ")'L\u0001\u001d//I\u0014Ux\u0010+)\u0011\u0018\u0014p\u0004)+\u00118\u0014p\u0004)+m\u0010\u001ap\u00147";
-            var5_3 = ")'L\u0001\u001d//I\u0014Ux\u0010+)\u0011\u0018\u0014p\u0004)+\u00118\u0014p\u0004)+m\u0010\u001ap\u00147".length();
-            var2_4 = 4;
-            var1_5 = -1;
-lbl7:
-            // 2 sources
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var0 = new String[2];
+      int var4 = 0;
+      String var3 = ")'L\u0001\u001d//I\u0014Ux\u0010+)\u0011\u0018\u0014p\u0004)+\u00118\u0014p\u0004)+m\u0010\u001ap\u00147";
+      int var5 = ")'L\u0001\u001d//I\u0014Ux\u0010+)\u0011\u0018\u0014p\u0004)+\u00118\u0014p\u0004)+m\u0010\u001ap\u00147".length();
+      char var2 = 4;
+      int var1 = -1;
+
+      while (true) {
+         char[] var10002;
+         label39: {
+            char[] var10003 = var3.substring(++var1, var1 + var2).toCharArray();
+            int var10004 = var10003.length;
+            int var6 = 0;
+            byte var13 = 106;
+            var10002 = var10003;
+            int var8 = var10004;
+            byte var16;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var16 = 106;
+               var10006 = var6;
+            } else {
+               var13 = 106;
+               var8 = var10004;
+               if (var10004 <= var6) {
+                  break label39;
+               }
+
+               var10005 = var10003;
+               var16 = 106;
+               var10006 = var6;
+            }
 
             while (true) {
-                continue;
-                break;
-            }
-lbl9:
-            // 1 sources
+               char var28 = var10005[var10006];
+               byte var29;
+               switch (var6 % 7) {
+                  case 0:
+                     var29 = 47;
+                     break;
+                  case 1:
+                     var29 = 36;
+                     break;
+                  case 2:
+                     var29 = 85;
+                     break;
+                  case 3:
+                     var29 = 31;
+                     break;
+                  case 4:
+                     var29 = 17;
+                     break;
+                  case 5:
+                     var29 = 126;
+                     break;
+                  default:
+                     var29 = 27;
+               }
 
-            while (true) {
-                var0[var4_1++] = new String(v0).intern();
-                if ((var1_5 += var2_4) < var5_3) {
-                    var2_4 = var3_2.charAt(var1_5);
-                    ** continue;
-                }
-                break block13;
-                break;
-            }
-            v1 = ++var1_5;
-            v2 = var3_2.substring(v1, v1 + var2_4).toCharArray();
-            v3 = v2.length;
-            var6_6 = 0;
-            v4 = 106;
-            v5 = v2;
-            v6 = v3;
-            if (v3 > 1) ** GOTO lbl67
-            do {
-                v7 = v4;
-                v5 = v5;
-                v8 = v5;
-                v9 = v4;
-                v10 = var6_6;
-                while (true) {
-                    switch (var6_6 % 7) {
-                        case 0: {
-                            v11 = 47;
-                            break;
-                        }
-                        case 1: {
-                            v11 = 36;
-                            break;
-                        }
-                        case 2: {
-                            v11 = 85;
-                            break;
-                        }
-                        case 3: {
-                            v11 = 31;
-                            break;
-                        }
-                        case 4: {
-                            v11 = 17;
-                            break;
-                        }
-                        case 5: {
-                            v11 = 126;
-                            break;
-                        }
-                        default: {
-                            v11 = 27;
-                        }
-                    }
-                    v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                    ++var6_6;
-                    v4 = v7;
-                    if (v7 != 0) break;
-                    v7 = v4;
-                    v5 = v5;
-                    v10 = v4;
-                    v8 = v5;
-                    v9 = v4;
-                }
-lbl67:
-                // 2 sources
+               var10005[var10006] = (char)(var28 ^ var16 ^ var29);
+               var6++;
+               if (var13 == 0) {
+                  var10006 = var13;
+                  var10005 = var10002;
+                  var16 = var13;
+               } else {
+                  if (var8 <= var6) {
+                     break;
+                  }
 
-                v0 = v5;
-                v6 = v6;
-            } while (v6 > var6_6);
-            ** while (true)
-        }
-        org.z.a.z = d.Z(var0[1]);
-        org.z.a.a = d.z(org.z.a.z, var0[0], new Class[0]);
-    }
+                  var10005 = var10002;
+                  var16 = var13;
+                  var10006 = var6;
+               }
+            }
+         }
+
+         String var15 = new String(var10002).intern();
+         byte var10 = -1;
+         var0[var4++] = var15;
+         if ((var1 += var2) >= var5) {
+            z = org.w.d.Z(var0[1]);
+            a = org.w.d.z(z, var0[0], new Class[0]);
+            return;
+         }
+
+         var2 = var3.charAt(var1);
+      }
+   }
 }
+
+
+
+
 

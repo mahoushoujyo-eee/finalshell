@@ -1,83 +1,82 @@
-/*
- * Decompiled with CFR 0.152.
- */
 public class Q9 {
-    public static int Z;
-    public static int O;
-    public static int u;
-    public static int h;
-    static int a;
-    public static int z;
+   public static int Z;
+   public static int O;
+   public static int u;
+   public static int h;
+   static int a;
+   public static int z;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var1 = 458143082706300642L;
-                var0_1 = new long[4];
-                var4_2 = 0;
-                var5_3 = "\u00f7n\u001bm\u00d5\n\u00a1a\u0005\u00eem\u0019\u00d5\u0002\u00ee\u00c8";
-                var6_4 = "\u00f7n\u001bm\u00d5\n\u00a1a\u0005\u00eem\u0019\u00d5\u0002\u00ee\u00c8".length();
-                var3_5 = 0;
-                while (true) {
-                    var7_6 = var5_3.substring(var3_5, var3_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var0_1;
-                    v1 = var4_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
+   static {
+      long var1 = 458143082706300642L;
+      long[] var0 = new long[4];
+      int var4 = 0;
+      String var5 = "÷n\u001bmÕ\n¡a\u0005îm\u0019Õ\u0002îÈ";
+      int var6 = "÷n\u001bmÕ\n¡a\u0005îm\u0019Õ\u0002îÈ".length();
+      byte var3 = 0;
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var3_5 < var6_4) ** continue;
-                    var5_3 = "\u00ecL\u001a \u00d5\u0002\u00ee\u00cb5\u008b9i\u00d5U=\u00c0";
-                    var6_4 = "\u00ecL\u001a \u00d5\u0002\u00ee\u00cb5\u008b9i\u00d5U=\u00c0".length();
-                    var3_5 = 0;
-                    while (true) {
-                        var7_6 = var5_3.substring(var3_5, var3_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var0_1;
-                        v1 = var4_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
+      label21:
+      while (true) {
+         int var10001 = var3;
+         var3 += 8;
+         byte[] var7 = var5.substring(var10001, var3).getBytes("ISO-8859-1");
+         long[] var10000 = var0;
+         var10001 = var4++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var3_5 < var6_4) ** continue;
-                    break block8;
-                    break;
-                }
+         while (true) {
+            long var13 = var10002 ^ var1;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var3 >= var6) {
+                     Z = 1;
+                     O = 0;
+                     u = (int)var0[2];
+                     h = (int)var0[1];
+                     a = (int)var0[3];
+                     z = (int)var0[0];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var3 < var6) {
+                     continue label21;
+                  }
+
+                  var5 = "ìL\u001a Õ\u0002îË5\u008b9iÕU=À";
+                  var6 = "ìL\u001a Õ\u0002îË5\u008b9iÕU=À".length();
+                  var3 = 0;
             }
-            v4 = v2 ^ var1;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
 
-                ** continue;
-            }
-        }
-        Q9.Z = 1;
-        Q9.O = 0;
-        Q9.u = (int)var0_1[2];
-        Q9.h = (int)var0_1[1];
-        Q9.a = (int)var0_1[3];
-        Q9.z = (int)var0_1[0];
-    }
+            byte var10 = var3;
+            var3 += 8;
+            var7 = var5.substring(var10, var3).getBytes("ISO-8859-1");
+            var10000 = var0;
+            var10001 = var4++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
 }
+
+
+
+
 

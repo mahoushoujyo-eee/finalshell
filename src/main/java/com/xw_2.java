@@ -1,21 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.KW;
-import java.security.PrivilegedAction;
+class Xw_2 implements com.On_2 {
+   public boolean J(com.DN var1) {
+      String[] var2 = GR.I();
+      boolean var10000 = var1.o();
+      if (var2 != null) {
+         var10000 = !var10000;
+      }
 
-/*
- * Renamed from com.xw
- */
-class xw_2
-implements PrivilegedAction {
-    xw_2() {
-    }
+      return var10000;
+   }
 
-    public Object run() {
-        return KW.class.getProtectionDomain();
-    }
+   @Override
+   public boolean n(Object var1) {
+      return this.J((com.DN)var1);
+   }
 }
+
+
+
+
 

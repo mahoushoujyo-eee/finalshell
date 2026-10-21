@@ -1,232 +1,226 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.gt_1;
-import java.awt.Rectangle;
+import java.awt.Color;
 
-/*
- * Renamed from com.go
- */
-public class go_2
-extends gt_1 {
-    private float Y = 5.0f;
-    private float M = 1.0f;
-    private float K = 0.0f;
-    private int W = go_2.a(26798, 620179751183434260L);
-    private static final String a;
-    private static final long[] b;
-    private static final Integer[] c;
+public class Go_2 implements Cloneable {
+   int T = 0;
+   com.od_4 j;
+   com.od_4 r;
+   com.O H = new com.O();
+   int Y = -1;
+   float L;
+   float D;
+   float F;
+   float w = 0.5F;
+   float V = 0.5F;
+   float u = 0.5F;
+   float v = (float) (Math.PI / 6);
+   float X;
+   float k = 100.0F;
+   private static final String a;
 
-    public void F(float f10) {
-        this.Y = f10;
-    }
+   public Go_2() {
+      this((float) (Math.PI * 3.0 / 2.0), (float) (Math.PI / 6), 1.0F);
+   }
 
-    public float y() {
-        return this.Y;
-    }
+   public Go_2(float var1, float var2, float var3) {
+      this.D = var1;
+      this.F = var2;
+      this.L = var3;
+   }
 
-    public void o(float f10) {
-        this.M = f10;
-    }
+   public void p(float var1) {
+      this.D = var1;
+   }
 
-    public float U() {
-        return this.M;
-    }
+   public float S() {
+      return this.D;
+   }
 
-    public void C(float f10) {
-        this.K = f10;
-    }
+   public void d(float var1) {
+      this.F = var1;
+   }
 
-    public float x() {
-        return this.K;
-    }
+   public float L() {
+      return this.F;
+   }
 
-    public void V(int n10) {
-        this.W = n10;
-    }
+   public void W(float var1) {
+      this.k = var1;
+   }
 
-    public int h() {
-        return this.W;
-    }
+   public float X() {
+      return this.k;
+   }
 
-    /*
-     * Exception decompiling
-     */
-    @Override
-    protected int[] K(int var1_1, int var2_2, int[] var3_3, Rectangle var4_4) {
-        /*
-         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
-         * 
-         * org.benf.cfr.reader.util.ConfusedCFRException: Statement already marked as first in another block
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.markFirstStatementInBlock(Op03SimpleStatement.java:461)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.Misc.markWholeBlock(Misc.java:251)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.considerAsSimpleIf(ConditionalRewriter.java:673)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.identifyNonjumpingConditionals(ConditionalRewriter.java:56)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:722)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
-         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
-         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
-         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
-         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
-         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
-         *     at org.benf.cfr.reader.Main.main(Main.java:54)
-         */
-        throw new IllegalStateException("Decompilation failed");
-    }
+   public void j(float var1) {
+      this.L = var1;
+   }
 
-    public String toString() {
-        return a;
-    }
+   public float q() {
+      return this.L;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block19: {
-            block18: {
-                block20: {
-                    break block20;
-lbl1:
-                    // 1 sources
+   public void U(float var1) {
+      this.v = var1;
+   }
 
-                    while (true) {
-                        continue;
-                        break;
-                    }
-                }
-                v0 = "|L:+:/O\u0000{,)':_]\u0016mi".toCharArray();
-                v1 = v0.length;
-                var8 = 0;
-                v2 = 6;
-                v3 = v0;
-                v4 = v1;
-                if (v1 > 1) ** GOTO lbl54
-                do {
-                    v5 = v2;
-                    v3 = v3;
-                    v6 = v3;
-                    v7 = v2;
-                    v8 = var8;
-                    while (true) {
-                        switch (var8 % 7) {
-                            case 0: {
-                                v9 = 41;
-                                break;
-                            }
-                            case 1: {
-                                v9 = 62;
-                                break;
-                            }
-                            case 2: {
-                                v9 = 69;
-                                break;
-                            }
-                            case 3: {
-                                v9 = 65;
-                                break;
-                            }
-                            case 4: {
-                                v9 = 85;
-                                break;
-                            }
-                            case 5: {
-                                v9 = 83;
-                                break;
-                            }
-                            default: {
-                                v9 = 44;
-                            }
-                        }
-                        v6[v8] = (char)(v6[v8] ^ (v7 ^ v9));
-                        ++var8;
-                        v2 = v5;
-                        if (v5 != 0) break;
-                        v5 = v2;
-                        v3 = v3;
-                        v8 = v2;
-                        v6 = v3;
-                        v7 = v2;
-                    }
-lbl54:
-                    // 2 sources
+   public float s() {
+      return this.v;
+   }
 
-                    v10 = v3;
-                    v4 = v4;
-                } while (v4 > var8);
-                ** while (true)
-                go_2.a = new String(v10).intern();
-                var0_1 = 8833043335492498411L;
-                var6_2 = new long[5];
-                var3_3 = 0;
-                var4_4 = "\u00c2\u00b6i\u00a3`\u0084\u00b1\u00ff2x\u008d\u0018=\u00ee\u00fb\u00b5\u00e85\u00e1\u00da\u00b4Z\u00de\u0095";
-                var5_5 = "\u00c2\u00b6i\u00a3`\u0084\u00b1\u00ff2x\u008d\u0018=\u00ee\u00fb\u00b5\u00e85\u00e1\u00da\u00b4Z\u00de\u0095".length();
-                var2_6 = 0;
-                while (true) {
-                    var7_7 = var4_4.substring(var2_6, var2_6 += 8).getBytes("ISO-8859-1");
-                    v11 = var6_2;
-                    v12 = var3_3++;
-                    v13 = ((long)var7_7[0] & 255L) << 56 | ((long)var7_7[1] & 255L) << 48 | ((long)var7_7[2] & 255L) << 40 | ((long)var7_7[3] & 255L) << 32 | ((long)var7_7[4] & 255L) << 24 | ((long)var7_7[5] & 255L) << 16 | ((long)var7_7[6] & 255L) << 8 | (long)var7_7[7] & 255L;
-                    v14 = -1;
-                    break block18;
-                    break;
-                }
-lbl75:
-                // 1 sources
+   public void o(float var1) {
+      this.w = var1;
+   }
 
-                while (true) {
-                    v11[v12] = v15;
-                    if (var2_6 < var5_5) ** continue;
-                    var4_4 = "\u00b7\u00b5Z\u00f0\u00b8\u00cfoG\u00c4\u00c1\u00f2\u0085\u00d8mtf";
-                    var5_5 = "\u00b7\u00b5Z\u00f0\u00b8\u00cfoG\u00c4\u00c1\u00f2\u0085\u00d8mtf".length();
-                    var2_6 = 0;
-                    while (true) {
-                        var7_7 = var4_4.substring(var2_6, var2_6 += 8).getBytes("ISO-8859-1");
-                        v11 = var6_2;
-                        v12 = var3_3++;
-                        v13 = ((long)var7_7[0] & 255L) << 56 | ((long)var7_7[1] & 255L) << 48 | ((long)var7_7[2] & 255L) << 40 | ((long)var7_7[3] & 255L) << 32 | ((long)var7_7[4] & 255L) << 24 | ((long)var7_7[5] & 255L) << 16 | ((long)var7_7[6] & 255L) << 8 | (long)var7_7[7] & 255L;
-                        v14 = 0;
-                        break block18;
-                        break;
-                    }
-                    break;
-                }
-lbl88:
-                // 1 sources
+   public float Q() {
+      return this.w;
+   }
 
-                while (true) {
-                    v11[v12] = v15;
-                    if (var2_6 < var5_5) ** continue;
-                    break block19;
-                    break;
-                }
+   public void j(int var1) {
+      this.Y = var1;
+   }
+
+   public int U() {
+      return this.Y;
+   }
+
+   public void h(float var1) {
+      this.V = var1;
+   }
+
+   public float M() {
+      return this.V;
+   }
+
+   public void Z(float var1) {
+      this.u = var1;
+   }
+
+   public float o() {
+      return this.u;
+   }
+
+   public void j(int var1, int var2) {
+      String[] var10000 = com.W5.q();
+      float var4 = (float)(Math.cos((double)this.D) * Math.cos((double)this.F));
+      float var5 = (float)(Math.sin((double)this.D) * Math.cos((double)this.F));
+      String[] var3 = var10000;
+      float var6 = (float)Math.sin((double)this.F);
+      this.r = new com.od_4(var4, var5, var6);
+      this.r.E();
+      Go_2 var9 = this;
+      if (var3 != null) {
+         if (this.T != 1) {
+            var4 *= this.k;
+            var5 *= this.k;
+            var6 *= this.k;
+            var4 += (float)var1 * this.V;
+            var5 += (float)var2 * this.u;
+         }
+
+         this.j = new com.od_4(var4, var5, var6);
+         this.H.x(new Color(this.Y));
+         this.H.K(this.L);
+         var9 = this;
+      }
+
+      var9.X = (float)Math.cos((double)this.v);
+   }
+
+   @Override
+   public Object clone() {
+      try {
+         return (Go_2)super.clone();
+      } catch (CloneNotSupportedException var2) {
+         return null;
+      }
+   }
+
+   @Override
+   public String toString() {
+      return a;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "\u001eqk7c".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 119;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 119;
+         var10006 = var0;
+      } else {
+         var6 = 119;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 119;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 37;
+               break;
+            case 1:
+               var23 = 111;
+               break;
+            case 2:
+               var23 = 123;
+               break;
+            case 3:
+               var23 = 40;
+               break;
+            case 4:
+               var23 = 96;
+               break;
+            case 5:
+               var23 = 43;
+               break;
+            default:
+               var23 = 124;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            v15 = v13 ^ var0_1;
-            switch (v14) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl99:
-                // 1 sources
 
-                ** continue;
-            }
-        }
-        go_2.b = var6_2;
-        go_2.c = new Integer[5];
-    }
-
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x2ABA;
-        if (c[n11] == null) {
-            go_2.c[n11] = (int)(b[n11] ^ l2);
-        }
-        return c[n11];
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

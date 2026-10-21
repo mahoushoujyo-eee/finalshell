@@ -1,201 +1,206 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.IJ;
-import com.R9;
-import com.au_0;
-import com.i2_0;
-import com.oj_2;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class E4 {
-    public static String y(String string, Object[] objectArray) {
-        String string2;
-        block4: {
-            block3: {
-                boolean bl;
-                block2: {
-                    boolean bl2 = i2_0.X();
-                    bl = i2_0.m();
-                    if (bl2) break block2;
-                    if (!bl) break block3;
-                    string2 = string;
-                    if (bl2) break block4;
-                    bl = i2_0.D(string2);
-                }
-                string2 = bl ? i2_0.A(string, objectArray) : string;
-                break block4;
-            }
-            string2 = string;
-        }
-        return string2;
-    }
+   public static String y(String var0, Object[] var1) {
+      boolean var2 = i2_2.X();
+      boolean var10000 = i2_2.m();
+      if (!var2) {
+         if (!var10000) {
+            return var0;
+         }
 
-    public static void a(au_0 au_02, String string, Object[] objectArray) {
-        block5: {
-            boolean bl;
-            block4: {
-                boolean bl2 = i2_0.K();
-                bl = i2_0.m();
-                if (!bl2) break block4;
-                if (!bl) break block5;
-                bl = i2_0.D(string);
-            }
-            if (bl) {
-                au_02.u(string, objectArray);
-            }
-        }
-    }
+         if (var2) {
+            return var0;
+         }
 
-    public static List j(oj_2 oj_22) {
-        ArrayList arrayList = new ArrayList();
-        E4.a(oj_22.N(), oj_22, arrayList);
-        return arrayList;
-    }
+         var10000 = i2_2.D(var0);
+      }
 
-    private static void a(String string, oj_2 oj_22, List list) {
-        block10: {
-            List list2;
-            boolean bl;
-            block11: {
-                string = E4.O(string);
-                bl = i2_0.X();
-                list2 = oj_22.I();
-                if (!bl) {
-                    if (list2 != null) {
-                        for (Serializable serializable : oj_22.I()) {
-                            list.add(string + ((R9)serializable).h());
-                            if (!bl) {
-                                if (!bl) continue;
-                            }
-                            break block10;
-                        }
-                    }
-                    list2 = oj_22.j();
-                }
-                if (bl) break block11;
-                if (list2 == null) break block10;
-                list2 = oj_22.j();
-            }
-            for (Serializable serializable : list2) {
-                E4.a(E4.j(string, (oj_2)serializable), (oj_2)serializable, list);
-                if (!bl) continue;
-            }
-        }
-    }
+      return var10000 ? i2_2.A(var0, var1) : var0;
+   }
 
-    public static void Z(oj_2 oj_22, oj_2 oj_23) {
-        E4.w(oj_22.N(), oj_22, oj_23);
-    }
+   public static void a(com.au_2 var0, String var1, Object[] var2) {
+      boolean var3 = i2_2.K();
+      boolean var10000 = i2_2.m();
+      if (var3) {
+         if (!var10000) {
+            return;
+         }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    private static void w(String var0, oj_2 var1_1, oj_2 var2_2) {
-        block16: {
-            block18: {
-                block17: {
-                    block15: {
-                        var0 = E4.O(var0);
-                        var3_3 = i2_0.X();
-                        v0 = var1_1.I();
-                        if (!var3_3) {
-                            if (v0 != null) {
-                                for (R9 var5_5 : var1_1.I()) {
-                                    var6_6 = var5_5 /* !! */ .M();
-                                    var6_6.Z(var0 + var6_6.h());
-                                    var2_2.v(var6_6);
-                                    if (!var3_3) {
-                                        if (!var3_3) continue;
-                                    }
-                                    break block15;
-                                }
-                            }
-                            v0 = var1_1.n();
-                        }
-                        if (!var3_3) {
-                            if (v0 != null) {
-                                for (R9 var5_5 : var1_1.n()) {
-                                    var2_2.N((IJ)var5_5 /* !! */ );
-                                    if (!var3_3) {
-                                        if (!var3_3) continue;
-                                    }
-                                    break block16;
-                                }
-                            } else {
-                                ** GOTO lbl23
-                            }
-                        }
-                        break block17;
-                    }
-                    v0 = var1_1.j();
-                }
-                if (var3_3) break block18;
-                if (v0 == null) break block16;
-                v0 = var1_1.j();
-            }
-            for (R9 var5_5 : v0) {
-                E4.w(E4.j(var0, (oj_2)var5_5 /* !! */ ), (oj_2)var5_5 /* !! */ , var2_2);
-                if (!var3_3) continue;
-            }
-        }
-    }
+         var10000 = i2_2.D(var1);
+      }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    private static String O(String string) {
-        String string2;
-        boolean bl = i2_0.K();
-        String string3 = string;
-        if (bl) {
-            if (string3 == null) return "";
-            string3 = string;
-        }
-        boolean bl2 = string3.equals("");
-        if (bl) {
-            if (bl2) return "";
-            string2 = string;
-            if (!bl) return string2;
-            bl2 = string2.endsWith(".");
-        }
-        if (bl2) return "";
-        string2 = string + ".";
-        return string2;
-    }
+      if (var10000) {
+         var0.u(var1, var2);
+      }
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    private static String j(String string, oj_2 oj_22) {
-        String string2;
-        StringBuilder stringBuilder;
-        block5: {
-            boolean bl;
-            String string3;
-            block4: {
-                string3 = oj_22.N();
-                bl = i2_0.K();
-                stringBuilder = new StringBuilder().append(string);
-                string2 = string3;
-                if (!bl) break block4;
-                if (string2 == null) break block5;
-                string2 = string3;
+   public static List j(com.oj_4 var0) {
+      ArrayList var1 = new ArrayList();
+      a(var0.N(), var0, var1);
+      return var1;
+   }
+
+   private static void a(String var0, com.oj_4 var1, List var2) {
+      boolean var10000 = i2_2.X();
+      var0 = O(var0);
+      boolean var3 = var10000;
+      List var9 = var1.I();
+      if (!var3) {
+         if (var9 != null) {
+            for (R9 var5 : var1.I()) {
+               var2.add(var0 + var5.h());
+               if (var3) {
+                  return;
+               }
+
+               if (var3) {
+                  break;
+               }
             }
-            if (!bl) return stringBuilder.append(string2).toString();
-            if (!string2.equals("")) {
-                string2 = string3;
-                return stringBuilder.append(string2).toString();
+         }
+
+         var9 = var1.j();
+      }
+
+      if (!var3) {
+         if (var9 == null) {
+            return;
+         }
+
+         var9 = var1.j();
+      }
+
+      for (com.oj_4 var8 : var9) {
+         a(j(var0, var8), var8, var2);
+         if (var3) {
+            break;
+         }
+      }
+   }
+
+   public static void Z(com.oj_4 var0, com.oj_4 var1) {
+      w(var0.N(), var0, var1);
+   }
+
+   private static void w(String var0, com.oj_4 var1, com.oj_4 var2) {
+      boolean var3;
+      List var12;
+      label63: {
+         label67: {
+            boolean var10000 = i2_2.X();
+            var0 = O(var0);
+            var3 = var10000;
+            var12 = var1.I();
+            if (!var3) {
+               if (var12 != null) {
+                  for (R9 var5 : var1.I()) {
+                     R9 var6 = var5.M();
+                     var6.Z(var0 + var6.h());
+                     var2.v(var6);
+                     if (var3) {
+                        break label67;
+                     }
+
+                     if (var3) {
+                        break;
+                     }
+                  }
+               }
+
+               var12 = var1.n();
             }
-        }
-        string2 = "";
-        return stringBuilder.append(string2).toString();
-    }
+
+            if (var3) {
+               break label63;
+            }
+
+            if (var12 != null) {
+               for (IJ var10 : var1.n()) {
+                  var2.N(var10);
+                  if (var3) {
+                     return;
+                  }
+
+                  if (var3) {
+                     break;
+                  }
+               }
+            }
+         }
+
+         var12 = var1.j();
+      }
+
+      if (!var3) {
+         if (var12 == null) {
+            return;
+         }
+
+         var12 = var1.j();
+      }
+
+      for (com.oj_4 var11 : var12) {
+         w(j(var0, var11), var11, var2);
+         if (var3) {
+            break;
+         }
+      }
+   }
+
+   private static String O(String var0) {
+      boolean var1 = i2_2.K();
+      String var10000 = var0;
+      if (var1) {
+         if (var0 == null) {
+            return "";
+         }
+
+         var10000 = var0;
+      }
+
+      boolean var2 = var10000.equals("");
+      if (var1) {
+         if (var2) {
+            return "";
+         }
+
+         if (!var1) {
+            return var0;
+         }
+
+         var2 = var0.endsWith(".");
+      }
+
+      return !var2 ? var0 + "." : "";
+   }
+
+   private static String j(String var0, com.oj_4 var1) {
+      boolean var10000 = i2_2.K();
+      String var3 = var1.N();
+      boolean var2 = var10000;
+      StringBuilder var4 = new StringBuilder().append(var0);
+      String var10001 = var3;
+      if (var2) {
+         if (var3 == null) {
+            return var4.append("").toString();
+         }
+
+         var10001 = var3;
+      }
+
+      if (!var2) {
+         return var4.append(var10001).toString();
+      } else {
+         return !var10001.equals("") ? var4.append(var3).toString() : var4.append("").toString();
+      }
+   }
 }
+
+
+
+
 

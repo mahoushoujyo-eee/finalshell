@@ -1,24 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.pc_0;
+class PD extends Pc_2 {
+   String V;
 
-class PD
-extends pc_0 {
-    String V;
+   public PD() {
+   }
 
-    public PD() {
-    }
+   public PD(String var1) {
+      super(var1);
+      this.V = var1;
+   }
 
-    public PD(String string) {
-        super(string);
-        this.V = string;
-    }
-
-    public String k() {
-        return this.V;
-    }
+   public String k() {
+      return this.V;
+   }
 }
+
+
+
+
 

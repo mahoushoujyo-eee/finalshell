@@ -1,23 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.we_1;
 import java.sql.Clob;
 
-class CR
-implements we_1 {
-    CR() {
-    }
+class CR implements wE_3 {
+   public Boolean p(Class var1) {
+      return Clob.class.isAssignableFrom(var1);
+   }
 
-    public Boolean p(Class clazz) {
-        return Clob.class.isAssignableFrom(clazz);
-    }
-
-    @Override
-    public Object N(Object object) {
-        return this.p((Class)object);
-    }
+   @Override
+   public Object N(Object var1) {
+      return this.p((Class)var1);
+   }
 }
+
+
+
+
 

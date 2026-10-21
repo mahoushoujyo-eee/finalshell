@@ -1,27 +1,24 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.V;
 
 import java.io.File;
 import java.util.Iterator;
-import org.V.J;
-import org.V.a;
-import org.l.O;
 
-class Y
-extends O {
-    Y(Iterator iterator) {
-        super(iterator);
-    }
+class Y extends org.l.O {
+   Y(Iterator var1) {
+      super(var1);
+   }
 
-    protected J g(Object object) {
-        return a.c((File)object);
-    }
+   protected J g(Object var1) {
+      return a.c((File)var1);
+   }
 
-    @Override
-    protected Object w(Object object) {
-        return this.g(object);
-    }
+   @Override
+   protected Object w(Object var1) {
+      return this.g(var1);
+   }
 }
+
+
+
+
 

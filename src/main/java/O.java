@@ -1,21 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class O
-implements ActionListener {
-    final z_ V;
+class O implements ActionListener {
+   final z_ V;
 
-    O(z_ z_3) {
-        this.V = z_3;
-    }
+   O(z_ var1) {
+      this.V = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        vi_0 vi_02 = new vi_0((z_)this.V, null, false);
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      new Vi_2((z_)com.c.c(477106985378163972L).get(this), null, false);
+   }
 }
+
+
+
+
 

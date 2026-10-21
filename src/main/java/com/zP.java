@@ -1,236 +1,184 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.S6;
-import com.hi_0;
-import com.ph_2;
-import com.z8;
+class zP extends com.z8 {
+   private final String A;
+   private final S6 l;
 
-class zP
-extends z8 {
-    private final String A;
-    private final S6 l;
+   public zP(String var1, boolean var2, String var3, S6 var4) {
+      super(var1, var2);
+      this.A = var3;
+      this.l = var4;
+   }
 
-    public zP(String string, boolean bl, String string2, S6 s6) {
-        super(string, bl);
-        this.A = string2;
-        this.l = s6;
-    }
+   @Override
+   public boolean x(ph_4 param1, Object param2, Object param3, Object param4) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/Hi_2.C ()Ljava/lang/String;
+      // 003: aload 0
+      // 004: aload 1
+      // 005: aload 2
+      // 006: aload 4
+      // 008: invokevirtual com/zP.H (Lcom/ph_4;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      // 00b: astore 6
+      // 00d: astore 5
+      // 00f: aload 0
+      // 010: getfield com/zP.l Lcom/S6;
+      // 013: getstatic com/S6.EQ Lcom/S6;
+      // 016: aload 5
+      // 018: ifnonnull 046
+      // 01b: if_acmpne 033
+      // 01e: goto 025
+      // 021: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 024: athrow
+      // 025: aload 0
+      // 026: getfield com/zP.A Ljava/lang/String;
+      // 029: aload 6
+      // 02b: invokevirtual java/lang/String.equals (Ljava/lang/Object;)Z
+      // 02e: ireturn
+      // 02f: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 032: athrow
+      // 033: aload 0
+      // 034: getfield com/zP.l Lcom/S6;
+      // 037: aload 5
+      // 039: ifnonnull 070
+      // 03c: getstatic com/S6.NE Lcom/S6;
+      // 03f: goto 046
+      // 042: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 045: athrow
+      // 046: if_acmpne 06e
+      // 049: aload 0
+      // 04a: getfield com/zP.A Ljava/lang/String;
+      // 04d: aload 6
+      // 04f: invokevirtual java/lang/String.equals (Ljava/lang/Object;)Z
+      // 052: aload 5
+      // 054: ifnonnull 069
+      // 057: goto 05e
+      // 05a: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 05d: athrow
+      // 05e: ifne 06c
+      // 061: goto 068
+      // 064: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 067: athrow
+      // 068: bipush 1
+      // 069: goto 06d
+      // 06c: bipush 0
+      // 06d: ireturn
+      // 06e: aload 6
+      // 070: ifnonnull 079
+      // 073: bipush 0
+      // 074: ireturn
+      // 075: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 078: athrow
+      // 079: aload 0
+      // 07a: getfield com/zP.A Ljava/lang/String;
+      // 07d: aload 6
+      // 07f: invokevirtual java/lang/Object.toString ()Ljava/lang/String;
+      // 082: invokevirtual java/lang/String.compareTo (Ljava/lang/String;)I
+      // 085: istore 7
+      // 087: aload 0
+      // 088: getfield com/zP.l Lcom/S6;
+      // 08b: getstatic com/S6.GE Lcom/S6;
+      // 08e: aload 5
+      // 090: ifnonnull 0c2
+      // 093: if_acmpne 0bb
+      // 096: goto 09d
+      // 099: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 09c: athrow
+      // 09d: iload 7
+      // 09f: aload 5
+      // 0a1: ifnonnull 0b6
+      // 0a4: goto 0ab
+      // 0a7: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0aa: athrow
+      // 0ab: ifgt 0b9
+      // 0ae: goto 0b5
+      // 0b1: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0b4: athrow
+      // 0b5: bipush 1
+      // 0b6: goto 0ba
+      // 0b9: bipush 0
+      // 0ba: ireturn
+      // 0bb: aload 0
+      // 0bc: getfield com/zP.l Lcom/S6;
+      // 0bf: getstatic com/S6.GT Lcom/S6;
+      // 0c2: aload 5
+      // 0c4: ifnonnull 0f6
+      // 0c7: if_acmpne 0ef
+      // 0ca: goto 0d1
+      // 0cd: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0d0: athrow
+      // 0d1: iload 7
+      // 0d3: aload 5
+      // 0d5: ifnonnull 0ea
+      // 0d8: goto 0df
+      // 0db: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0de: athrow
+      // 0df: ifge 0ed
+      // 0e2: goto 0e9
+      // 0e5: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0e8: athrow
+      // 0e9: bipush 1
+      // 0ea: goto 0ee
+      // 0ed: bipush 0
+      // 0ee: ireturn
+      // 0ef: aload 0
+      // 0f0: getfield com/zP.l Lcom/S6;
+      // 0f3: getstatic com/S6.LE Lcom/S6;
+      // 0f6: aload 5
+      // 0f8: ifnonnull 12a
+      // 0fb: if_acmpne 123
+      // 0fe: goto 105
+      // 101: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 104: athrow
+      // 105: iload 7
+      // 107: aload 5
+      // 109: ifnonnull 11e
+      // 10c: goto 113
+      // 10f: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 112: athrow
+      // 113: iflt 121
+      // 116: goto 11d
+      // 119: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 11c: athrow
+      // 11d: bipush 1
+      // 11e: goto 122
+      // 121: bipush 0
+      // 122: ireturn
+      // 123: aload 0
+      // 124: getfield com/zP.l Lcom/S6;
+      // 127: getstatic com/S6.LT Lcom/S6;
+      // 12a: if_acmpne 14b
+      // 12d: iload 7
+      // 12f: aload 5
+      // 131: ifnonnull 146
+      // 134: goto 13b
+      // 137: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 13a: athrow
+      // 13b: ifle 149
+      // 13e: goto 145
+      // 141: invokestatic com/zP.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 144: athrow
+      // 145: bipush 1
+      // 146: goto 14a
+      // 149: bipush 0
+      // 14a: ireturn
+      // 14b: bipush 0
+      // 14c: ireturn
+   }
 
-    @Override
-    public boolean x(ph_2 ph_22, Object object, Object object2, Object object3) {
-        block53: {
-            boolean bl;
-            block54: {
-                block55: {
-                    S6 s6;
-                    S6 s62;
-                    boolean bl2;
-                    String string;
-                    block49: {
-                        block50: {
-                            boolean bl3;
-                            block51: {
-                                block52: {
-                                    block45: {
-                                        block46: {
-                                            boolean bl4;
-                                            block47: {
-                                                block48: {
-                                                    block41: {
-                                                        block42: {
-                                                            boolean bl5;
-                                                            block43: {
-                                                                block44: {
-                                                                    Object object4;
-                                                                    Object object5;
-                                                                    block37: {
-                                                                        block38: {
-                                                                            boolean bl6;
-                                                                            block39: {
-                                                                                block40: {
-                                                                                    S6 s63;
-                                                                                    block35: {
-                                                                                        block36: {
-                                                                                            object5 = this.H(ph_22, object, object3);
-                                                                                            string = hi_0.C();
-                                                                                            try {
-                                                                                                try {
-                                                                                                    object4 = this.l;
-                                                                                                    s63 = S6.EQ;
-                                                                                                    if (string != null) break block35;
-                                                                                                    if (object4 != s63) break block36;
-                                                                                                }
-                                                                                                catch (hi_0 hi_02) {
-                                                                                                    throw zP.a(hi_02);
-                                                                                                }
-                                                                                                return this.A.equals(object5);
-                                                                                            }
-                                                                                            catch (hi_0 hi_03) {
-                                                                                                throw zP.a(hi_03);
-                                                                                            }
-                                                                                        }
-                                                                                        try {
-                                                                                            object4 = this.l;
-                                                                                            if (string != null) break block37;
-                                                                                            s63 = S6.NE;
-                                                                                        }
-                                                                                        catch (hi_0 hi_04) {
-                                                                                            throw zP.a(hi_04);
-                                                                                        }
-                                                                                    }
-                                                                                    try {
-                                                                                        try {
-                                                                                            if (object4 != s63) break block38;
-                                                                                            bl6 = this.A.equals(object5);
-                                                                                            if (string != null) break block39;
-                                                                                        }
-                                                                                        catch (hi_0 hi_05) {
-                                                                                            throw zP.a(hi_05);
-                                                                                        }
-                                                                                        if (bl6) break block40;
-                                                                                    }
-                                                                                    catch (hi_0 hi_06) {
-                                                                                        throw zP.a(hi_06);
-                                                                                    }
-                                                                                    bl6 = true;
-                                                                                    break block39;
-                                                                                }
-                                                                                bl6 = false;
-                                                                            }
-                                                                            return bl6;
-                                                                        }
-                                                                        object4 = object5;
-                                                                    }
-                                                                    try {
-                                                                        if (object4 == null) {
-                                                                            return false;
-                                                                        }
-                                                                    }
-                                                                    catch (hi_0 hi_07) {
-                                                                        throw zP.a(hi_07);
-                                                                    }
-                                                                    bl2 = this.A.compareTo(object5.toString());
-                                                                    try {
-                                                                        try {
-                                                                            try {
-                                                                                s62 = this.l;
-                                                                                s6 = S6.GE;
-                                                                                if (string != null) break block41;
-                                                                                if (s62 != s6) break block42;
-                                                                            }
-                                                                            catch (hi_0 hi_08) {
-                                                                                throw zP.a(hi_08);
-                                                                            }
-                                                                            bl5 = bl2;
-                                                                            if (string != null) break block43;
-                                                                        }
-                                                                        catch (hi_0 hi_09) {
-                                                                            throw zP.a(hi_09);
-                                                                        }
-                                                                        if (bl5 > false) break block44;
-                                                                    }
-                                                                    catch (hi_0 hi_010) {
-                                                                        throw zP.a(hi_010);
-                                                                    }
-                                                                    bl5 = true;
-                                                                    break block43;
-                                                                }
-                                                                bl5 = false;
-                                                            }
-                                                            return bl5;
-                                                        }
-                                                        s62 = this.l;
-                                                        s6 = S6.GT;
-                                                    }
-                                                    try {
-                                                        try {
-                                                            try {
-                                                                if (string != null) break block45;
-                                                                if (s62 != s6) break block46;
-                                                            }
-                                                            catch (hi_0 hi_011) {
-                                                                throw zP.a(hi_011);
-                                                            }
-                                                            bl4 = bl2;
-                                                            if (string != null) break block47;
-                                                        }
-                                                        catch (hi_0 hi_012) {
-                                                            throw zP.a(hi_012);
-                                                        }
-                                                        if (bl4 >= false) break block48;
-                                                    }
-                                                    catch (hi_0 hi_013) {
-                                                        throw zP.a(hi_013);
-                                                    }
-                                                    bl4 = true;
-                                                    break block47;
-                                                }
-                                                bl4 = false;
-                                            }
-                                            return bl4;
-                                        }
-                                        s62 = this.l;
-                                        s6 = S6.LE;
-                                    }
-                                    try {
-                                        try {
-                                            try {
-                                                if (string != null) break block49;
-                                                if (s62 != s6) break block50;
-                                            }
-                                            catch (hi_0 hi_014) {
-                                                throw zP.a(hi_014);
-                                            }
-                                            bl3 = bl2;
-                                            if (string != null) break block51;
-                                        }
-                                        catch (hi_0 hi_015) {
-                                            throw zP.a(hi_015);
-                                        }
-                                        if (bl3 < false) break block52;
-                                    }
-                                    catch (hi_0 hi_016) {
-                                        throw zP.a(hi_016);
-                                    }
-                                    bl3 = true;
-                                    break block51;
-                                }
-                                bl3 = false;
-                            }
-                            return bl3;
-                        }
-                        s62 = this.l;
-                        s6 = S6.LT;
-                    }
-                    try {
-                        try {
-                            if (s62 != s6) break block53;
-                            bl = bl2;
-                            if (string != null) break block54;
-                        }
-                        catch (hi_0 hi_017) {
-                            throw zP.a(hi_017);
-                        }
-                        if (bl <= false) break block55;
-                    }
-                    catch (hi_0 hi_018) {
-                        throw zP.a(hi_018);
-                    }
-                    bl = true;
-                    break block54;
-                }
-                bl = false;
-            }
-            return bl;
-        }
-        return false;
-    }
-
-    private static hi_0 a(hi_0 hi_02) {
-        return hi_02;
-    }
+   private static Hi_2 a(Hi_2 var0) {
+      return var0;
+   }
 }
+
+
+
+
 

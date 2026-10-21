@@ -1,81 +1,83 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.Z.T;
-import com.cz_0;
 import java.io.File;
 import java.util.Comparator;
 
-class F
-implements Comparator {
-    final T c;
+class F implements Comparator {
+   final com.Z.T c;
 
-    F(T t2) {
-        this.c = t2;
-    }
+   F(com.Z.T var1) {
+      this.c = var1;
+   }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    public int C(File var1_1, File var2_2) {
-        block15: {
-            block14: {
-                var4_3 = cz_0.z(var1_1);
-                var5_4 = cz_0.z(var2_2);
-                var3_5 = T.v();
-                v0 = var4_3;
-                if (var3_5 == null) {
-                    if (v0 != 0) {
-                        v0 = var5_4;
-                        if (var3_5 == null) {
-                            if (v0 != 0) {
-                                return 0;
-                            } else {
-                                ** GOTO lbl-1000
-                            }
-                        }
-                    } else lbl-1000:
-                    // 3 sources
-
-                    {
-                        v0 = var4_3;
-                    }
-                }
-                if (var3_5 == null) {
-                    if (v0 != 0) {
-                        return -1;
-                    }
-                    v0 = var5_4;
-                }
-                if (var3_5 != null) break block14;
-                if (v0 == 0) break block15;
-                v0 = 1;
+   public int C(File var1, File var2) {
+      String var3;
+      byte var5;
+      byte var10;
+      byte var4 = com.Cz_2.z(var1);
+      String var10000 = com.Z.T.v();
+      var5 = com.Cz_2.z(var2);
+      var3 = var10000;
+      var10 = var4;
+      label50:
+      if (var3 == null) {
+         if (var4 != 0) {
+            var10 = var5;
+            if (var3 != null) {
+               break label50;
             }
-            return v0;
-        }
-        var6_6 = var1_1.length();
-        var8_7 = var2_2.length();
-        v1 = var6_6 == var8_7 ? 0 : (var6_6 < var8_7 ? -1 : 1);
-        if (var3_5 != null) ** GOTO lbl31
-        if (v1 < 0) {
-            v1 = -1;
-        } else {
-            v1 = var6_6 == var8_7 ? 0 : (var6_6 < var8_7 ? -1 : 1);
-lbl31:
-            // 2 sources
 
-            if (var3_5 == null) {
-                v1 = v1 > 0 ? (long)1 : (long)0;
+            if (var5 != 0) {
+               return 0;
             }
-        }
-        return (int)v1;
-    }
+         }
 
-    public int compare(Object object, Object object2) {
-        return this.C((File)object, (File)object2);
-    }
+         var10 = var4;
+      }
+
+      if (var3 == null) {
+         if (var10 != 0) {
+            return -1;
+         }
+
+         var10 = var5;
+      }
+
+      if (var3 == null) {
+         if (var10 == 0) {
+            long var6 = var1.length();
+            long var8 = var2.length();
+            long var12;
+            var10 = (var12 = var6 - var8) == 0L ? 0 : (var12 < 0L ? -1 : 1);
+            if (var3 == null) {
+               if (var10 < 0) {
+                  return -1;
+               }
+
+               long var13;
+               var10 = (var13 = var6 - var8) == 0L ? 0 : (var13 < 0L ? -1 : 1);
+            }
+
+            if (var3 == null) {
+               var10 = var10 > 0 ? 1 : 0;
+            }
+
+            return var10;
+         }
+
+         var10 = 1;
+      }
+
+      return var10;
+   }
+
+   @Override
+   public int compare(Object var1, Object var2) {
+      return this.C((File)var1, (File)var2);
+   }
 }
+
+
+
+
 

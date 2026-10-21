@@ -1,40 +1,36 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.QQ;
-import com.QS;
-import com.ky_2;
-import com.nc_1;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class WH
-implements ActionListener {
-    final nc_1 K;
-    final QS J;
+class WH implements ActionListener {
+   final nC_3 K;
+   final com.QS J;
 
-    WH(QS qS, nc_1 nc_12) {
-        this.J = qS;
-        this.K = nc_12;
-    }
+   WH(com.QS var1, nC_3 var2) {
+      this.J = var1;
+      this.K = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block3: {
-            QS qS;
-            block2: {
-                ky_2[] ky_2Array = QQ.N();
-                this.J.Z(this.K);
-                ky_2[] ky_2Array2 = ky_2Array;
-                qS = this.J;
-                if (ky_2Array2 != null) break block2;
-                if (!qS.O) break block3;
-                qS = this.J;
-            }
-            qS.a();
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      com.ky_4[] var10000 = com.QQ.N();
+      this.J.Z(this.K);
+      com.ky_4[] var2 = var10000;
+      com.QS var3 = this.J;
+      if (var2 == null) {
+         if (!this.J.O) {
+            return;
+         }
+
+         var3 = this.J;
+      }
+
+      var3.a();
+   }
 }
+
+
+
+
 

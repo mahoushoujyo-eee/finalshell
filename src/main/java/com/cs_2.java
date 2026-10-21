@@ -1,304 +1,252 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.YU;
-import com.dm_2;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.SocketException;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
+import java.awt.event.KeyEvent;
+import java.io.Serializable;
+import javax.swing.KeyStroke;
 
-/*
- * Renamed from com.cs
- */
-class cs_2 {
-    InputStream I;
-    OutputStream X;
-    OutputStream K;
-    private boolean G = false;
-    private boolean O = false;
-    private boolean J = false;
-    private static final String a;
+@XStreamAlias("HotkeyData")
+public class Cs_2 implements Serializable, Cloneable {
+   @XStreamAsAttribute
+   protected boolean A;
+   @XStreamAsAttribute
+   protected boolean e;
+   @XStreamAsAttribute
+   protected boolean L;
+   @XStreamAsAttribute
+   protected Integer W;
+   protected transient Integer O;
+   private static final long a;
 
-    cs_2() {
-    }
+   public Cs_2() {
+      this.A = false;
+      this.e = false;
+      this.L = false;
+      this.W = null;
+      this.O = null;
+   }
 
-    void H(OutputStream outputStream) {
-        this.X = outputStream;
-    }
+   public Cs_2(KeyEvent var1) {
+      this.A = com.FN.m(var1);
+      this.e = com.FN.O(var1);
+      this.L = com.FN.y(var1);
+      this.W = var1.getKeyCode();
+      this.O = null;
+   }
 
-    void U(OutputStream outputStream, boolean bl) {
-        this.O = bl;
-        this.H(outputStream);
-    }
+   public Cs_2(Integer var1) {
+      this.A = false;
+      this.e = false;
+      this.L = false;
+      this.W = var1;
+      this.O = null;
+   }
 
-    void p(OutputStream outputStream) {
-        this.K = outputStream;
-    }
+   public Cs_2(boolean var1, boolean var2, boolean var3, Integer var4) {
+      this.A = var1;
+      this.e = var2;
+      this.L = var3;
+      this.W = var4;
+      this.O = null;
+   }
 
-    void m(OutputStream outputStream, boolean bl) {
-        this.J = bl;
-        this.p(outputStream);
-    }
+   public Cs_2(KeyStroke var1) {
+      this.z(var1.getModifiers());
+      this.W = var1.getKeyCode();
+      this.O = null;
+   }
 
-    void U(InputStream inputStream) {
-        this.I = inputStream;
-    }
+   public boolean I() {
+      return this.A;
+   }
 
-    void r(InputStream inputStream, boolean bl) {
-        this.G = bl;
-        this.U(inputStream);
-    }
+   public void s(boolean var1) {
+      this.A = var1;
+      this.O = null;
+   }
 
-    void d(YU yU) throws IOException, SocketException {
-        this.X.write(yU.P.g, 0, yU.P.X);
-        this.X.flush();
-    }
+   public boolean p() {
+      return this.e;
+   }
 
-    void z(byte[] byArray, int n10, int n11) throws IOException {
-        this.X.write(byArray, n10, n11);
-        this.X.flush();
-    }
+   public void M(boolean var1) {
+      this.e = var1;
+      this.O = null;
+   }
 
-    void m(byte[] byArray, int n10, int n11) throws IOException {
-        this.K.write(byArray, n10, n11);
-        this.K.flush();
-    }
+   public boolean w() {
+      return this.L;
+   }
 
-    int z() throws IOException {
-        return this.I.read();
-    }
+   public void x(boolean var1) {
+      this.L = var1;
+      this.O = null;
+   }
 
-    void u(byte[] byArray) throws IOException {
-        this.q(byArray, 0, byArray.length);
-    }
+   public Integer c() {
+      return this.W;
+   }
 
-    void q(byte[] byArray, int n10, int n11) throws IOException {
-        int n12;
-        do {
-            if ((n12 = this.I.read(byArray, n10, n11)) < 0) {
-                throw new IOException(a);
-            }
-            n10 += n12;
-        } while ((n11 -= n12) > 0);
-    }
+   public void D(Integer var1) {
+      this.W = var1;
+      this.O = null;
+   }
 
-    /*
-     * Loose catch block
-     */
-    void l() {
-        boolean bl = dm_2.F();
-        try {
-            block10: {
-                cs_2 cs_22;
-                block11: {
-                    block14: {
-                        block13: {
-                            cs_22 = this;
-                            if (!bl) break block10;
-                            if (cs_22.X == null) break block11;
-                            break block13;
-                            catch (Exception exception) {
-                                throw cs_2.a(exception);
-                            }
-                        }
-                        cs_22 = this;
-                        if (!bl) break block10;
-                        break block14;
-                        catch (Exception exception) {
-                            throw cs_2.a(exception);
-                        }
-                    }
-                    try {
-                        block15: {
-                            if (cs_22.O) break block11;
-                            break block15;
-                            catch (Exception exception) {
-                                throw cs_2.a(exception);
-                            }
-                        }
-                        this.X.close();
-                    }
-                    catch (Exception exception) {
-                        throw cs_2.a(exception);
-                    }
-                }
-                cs_22 = this;
-            }
-            cs_22.X = null;
-        }
-        catch (Exception exception) {
-            // empty catch block
-        }
-    }
+   public boolean g() {
+      return this.W != null;
+   }
 
-    /*
-     * Loose catch block
-     */
-    void Z() {
-        boolean bl = dm_2.F();
-        try {
-            block18: {
-                cs_2 cs_22;
-                block19: {
-                    block24: {
-                        block23: {
-                            cs_22 = this;
-                            if (!bl) break block18;
-                            if (cs_22.I == null) break block19;
-                            break block23;
-                            catch (Exception exception) {
-                                throw cs_2.a(exception);
-                            }
-                        }
-                        cs_22 = this;
-                        if (!bl) break block18;
-                        break block24;
-                        catch (Exception exception) {
-                            throw cs_2.a(exception);
-                        }
-                    }
-                    try {
-                        block25: {
-                            if (cs_22.G) break block19;
-                            break block25;
-                            catch (Exception exception) {
-                                throw cs_2.a(exception);
-                            }
-                        }
-                        this.I.close();
-                    }
-                    catch (Exception exception) {
-                        throw cs_2.a(exception);
-                    }
-                }
-                cs_22 = this;
-            }
-            cs_22.I = null;
-        }
-        catch (Exception exception) {
-            // empty catch block
-        }
-        this.l();
-        try {
-            block21: {
-                cs_2 cs_23;
-                block22: {
-                    block26: {
-                        cs_23 = this;
-                        if (!bl) break block21;
-                        if (cs_23.K == null) break block22;
-                        cs_23 = this;
-                        if (!bl) break block21;
-                        break block26;
-                        catch (Exception exception) {
-                            throw cs_2.a(exception);
-                        }
-                    }
-                    try {
-                        block27: {
-                            if (cs_23.J) break block22;
-                            break block27;
-                            catch (Exception exception) {
-                                throw cs_2.a(exception);
-                            }
-                        }
-                        this.K.close();
-                    }
-                    catch (Exception exception) {
-                        throw cs_2.a(exception);
-                    }
-                }
-                cs_23 = this;
-            }
-            cs_23.K = null;
-        }
-        catch (Exception exception) {
-            // empty catch block
-        }
-    }
+   public boolean J(KeyEvent var1) {
+      String[] var2 = GR.I();
+      boolean var10000 = this.q(var1);
+      if (var2 != null) {
+         if (!var10000) {
+            return false;
+         }
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+         var10000 = this.v(var1);
+      }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u0018\n\u000b\u001b_~}\u0014+OhDj8<\tOiUy9".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 39;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 122;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 67;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 72;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 28;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 23;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 63;
-                            break;
-                        }
-                        default: {
-                            n17 = 122;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+      return var2 == null ? var10000 : var10000;
+   }
+
+   public boolean q(KeyEvent var1) {
+      String[] var2 = GR.I();
+      boolean var10000 = com.FN.i(var1);
+      boolean var10001 = this.A;
+      if (var2 != null) {
+         if (var10000 != this.A) {
+            return false;
+         }
+
+         var10000 = com.FN.O(var1);
+         var10001 = this.e;
+      }
+
+      if (var2 != null) {
+         if (var10000 != var10001) {
+            return false;
+         }
+
+         var10000 = com.FN.y(var1);
+         if (var2 == null) {
+            return var10000;
+         }
+
+         var10001 = this.L;
+      }
+
+      return var10000 == var10001;
+   }
+
+   public boolean v(KeyEvent var1) {
+      String[] var2 = GR.I();
+      int var10000 = var1.getKeyCode();
+      if (var2 != null) {
+         var10000 = var10000 == this.W ? 1 : 0;
+      }
+
+      return (boolean)var10000;
+   }
+
+   public KeyStroke U() {
+      return KeyStroke.getKeyStroke(this.W, this.X());
+   }
+
+   public int X() {
+      String[] var1 = GR.I();
+      int var10000 = this.A;
+      if (var1 != null) {
+         var10000 = this.A ? com.FN.I() : 0;
+      }
+
+      int var10001 = this.e;
+      if (var1 != null) {
+         var10001 = this.e ? (int)a : 0;
+      }
+
+      var10000 |= var10001;
+      var10001 = this.L;
+      if (var1 != null) {
+         var10001 = this.L ? 1 : 0;
+      }
+
+      return var10000 | var10001;
+   }
+
+   public void z(int var1) {
+      this.A = com.FN.k(var1);
+      this.e = com.FN.g(var1);
+      this.L = com.FN.J(var1);
+   }
+
+   @Override
+   public boolean equals(Object var1) {
+      String[] var2 = GR.I();
+      Object var10000 = var1;
+      if (var2 != null) {
+         if (var1 == null) {
+            return (boolean)0;
+         }
+
+         var10000 = var1;
+      }
+
+      int var3 = var10000 instanceof com.Cs_2;
+      if (var2 != null) {
+         if (var3 == 0) {
+            return (boolean)0;
+         }
+
+         var3 = var1.hashCode();
+      }
+
+      if (var2 == null) {
+         return (boolean)var3;
+      } else {
+         return (boolean)(var3 == this.hashCode() ? 1 : 0);
+      }
+   }
+
+   @Override
+   public String toString() {
+      return com.FN.r(this);
+   }
+
+   @Override
+   public int hashCode() {
+      String[] var1 = GR.I();
+      Integer var10000 = this.O;
+      if (var1 != null) {
+         if (this.O == null) {
+            this.O = this.toString().hashCode();
+         }
+
+         var10000 = this.O;
+      }
+
+      return var10000;
+   }
+
+   protected com.Cs_2 D() {
+      return new com.Cs_2(this.I(), this.p(), this.w(), this.c());
+   }
+
+   @Override
+   protected Object clone() throws CloneNotSupportedException {
+      return this.D();
+   }
+
+   static {
+      long var0 = 3590876076870950547L;
+      long var10002 = 8105155492610268827L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

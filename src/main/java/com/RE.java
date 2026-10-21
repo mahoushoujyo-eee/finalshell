@@ -1,23 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.C0;
-import com.R7;
-import com.ds_0;
+class RE extends R7 {
+   final com.C0 V;
 
-class RE
-extends R7 {
-    final C0 V;
+   RE(com.C0 var1) {
+      this.V = var1;
+   }
 
-    RE(C0 c0) {
-        this.V = c0;
-    }
-
-    @Override
-    public void j(ds_0 ds_02) {
-        this.V.N(ds_02);
-    }
+   @Override
+   public void j(com.Ds_2 var1) {
+      this.V.N(var1);
+   }
 }
+
+
+
+
 

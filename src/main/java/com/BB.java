@@ -1,44 +1,38 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ew_0;
-
+// $VF: synthetic class
 class BB {
-    static final int[] h = new int[ew_0.values().length];
+   static final int[] h = new int[Ew_2.values().length];
 
-    static {
-        try {
-            BB.h[ew_0.d.ordinal()] = 1;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            BB.h[ew_0.h.ordinal()] = 2;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            BB.h[ew_0.m.ordinal()] = 3;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            BB.h[ew_0.s.ordinal()] = 4;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            BB.h[ew_0.ms.ordinal()] = 5;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-    }
+   static {
+      try {
+         h[Ew_2.d.ordinal()] = 1;
+      } catch (NoSuchFieldError var5) {
+      }
+
+      try {
+         h[Ew_2.h.ordinal()] = 2;
+      } catch (NoSuchFieldError var4) {
+      }
+
+      try {
+         h[Ew_2.m.ordinal()] = 3;
+      } catch (NoSuchFieldError var3) {
+      }
+
+      try {
+         h[Ew_2.s.ordinal()] = 4;
+      } catch (NoSuchFieldError var2) {
+      }
+
+      try {
+         h[Ew_2.ms.ordinal()] = 5;
+      } catch (NoSuchFieldError var1) {
+      }
+   }
 }
+
+
+
+
 

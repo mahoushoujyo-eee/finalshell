@@ -1,30 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.lang.reflect.InvocationTargetException;
+class Fq_2 extends Thread {
+   final cM_3 e;
+   private static final long a;
 
-/*
- * Renamed from fq
- */
-class fq_2
-implements ActionListener {
-    final gS l;
+   Fq_2(cM_3 var1) {
+      this.e = var1;
+   }
 
-    fq_2(gS gS2) {
-        this.l = gS2;
-    }
+   @Override
+   public void run() {
+      while (true) {
+         try {
+            Thread.sleep(a);
+         } catch (InterruptedException var2) {
+            var2.printStackTrace();
+         }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        try {
-            this.l.h();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+         this.e.T();
+      }
+   }
+
+   static {
+      long var0 = 9045522668680755593L;
+      long var10002 = 9045522668680755809L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

@@ -1,39 +1,36 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import org.b_0;
-import org.h.cs_0;
-import org.v.M;
 import org.v.NJ;
 import org.v.NV;
-import org.v.fo_0;
+import org.v.fo_2;
 
-class X
-implements fo_0 {
-    final cs_0 r;
+class X implements fo_2 {
+   final org.H.Cs_2 r;
 
-    X(cs_0 cs_02) {
-        this.r = cs_02;
-    }
+   X(org.H.Cs_2 var1) {
+      this.r = var1;
+   }
 
-    public M N(NJ nJ2) throws b_0 {
-        return this.r.O(nJ2);
-    }
+   public org.v.M N(NJ var1) throws org.b_2 {
+      return this.r.O(var1);
+   }
 
-    public M n(NV nV2) throws b_0 {
-        return this.r.E(nV2);
-    }
+   public org.v.M n(NV var1) throws org.b_2 {
+      return this.r.E(var1);
+   }
 
-    @Override
-    public Object q(NV nV2) throws Throwable {
-        return this.n(nV2);
-    }
+   @Override
+   public Object q(NV var1) throws Throwable {
+      return this.n(var1);
+   }
 
-    @Override
-    public Object u(NJ nJ2) throws Throwable {
-        return this.N(nJ2);
-    }
+   @Override
+   public Object u(NJ var1) throws Throwable {
+      return this.N(var1);
+   }
 }
+
+
+
+
 

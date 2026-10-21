@@ -1,63 +1,71 @@
-/*
- * Decompiled with CFR 0.152.
- */
 public class K5 {
-    private byte[] q;
-    private byte[] K;
-    private int b;
-    private yu_2 J;
+   private byte[] q;
+   private byte[] K;
+   private int b;
+   private yu_4 J;
 
-    public K5(byte[] byArray) {
-        this(byArray, yu_2.BIN);
-    }
+   public K5(byte[] var1) {
+      this(var1, yu_4.BIN);
+   }
 
-    public K5(byte[] byArray, yu_2 yu_22) {
-        this.q = byArray;
-        this.J = yu_22;
-        this.K = new byte[this.q.length * 2];
-        this.x();
-    }
+   public K5(byte[] var1, yu_4 var2) {
+      this.q = var1;
+      this.J = var2;
+      this.K = new byte[this.q.length * 2];
+      this.x();
+   }
 
-    private void p(byte by) {
-        this.K[this.b] = by;
-        ++this.b;
-    }
+   private void p(byte var1) {
+      this.K[this.b] = var1;
+      this.b++;
+   }
 
-    private void x() {
-        byte by = 0;
-        String[] stringArray = ub_0.A();
-        for (byte by2 : this.q) {
-            byte by3;
-            block5: {
-                block6: {
-                    by3 = this.J.d();
-                    if (stringArray != null) break block5;
-                    if (by3 != 0) break block6;
-                    by3 = (byte)(xP.W(by2, by, false) ? 1 : 0);
-                    if (stringArray != null) break block5;
-                    if (by3 != 0) {
-                        this.p(x9.ZDLE.r());
-                        by2 = xP.c(by2);
-                    }
-                }
-                this.p(by2);
-                by3 = by2;
+   private void x() {
+      String[] var10000 = Ub_2.A();
+      byte var2 = 0;
+      String[] var1 = var10000;
+
+      for (byte var6 : this.q) {
+         var7 = this.J.d();
+         label23:
+         if (var1 == null) {
+            if (var7 == 0) {
+               var7 = xP.W(var6, var2, false);
+               if (var1 != null) {
+                  break label23;
+               }
+
+               if (var7 != 0) {
+                  this.p(x9.ZDLE.r());
+                  var6 = xP.c(var6);
+               }
             }
-            by = by3;
-            if (stringArray == null) continue;
-        }
-    }
 
-    public byte[] v() {
-        return this.q;
-    }
+            this.p(var6);
+            var7 = var6;
+         }
 
-    public int e() {
-        return this.b;
-    }
+         var2 = var7;
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
 
-    public byte[] n() {
-        return this.K;
-    }
+   public byte[] v() {
+      return this.q;
+   }
+
+   public int e() {
+      return this.b;
+   }
+
+   public byte[] n() {
+      return this.K;
+   }
 }
+
+
+
+
 

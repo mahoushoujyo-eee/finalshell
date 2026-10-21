@@ -1,121 +1,154 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.m;
 
-import com.m.K;
-import com.m.s;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 import javax.swing.JTree;
 import javax.swing.plaf.TreeUI;
 import javax.swing.tree.TreePath;
 
-public class R
-implements MouseMotionListener {
-    private JTree a;
+public class R implements MouseMotionListener {
+   private JTree a;
 
-    public R(JTree jTree) {
-        this.a = jTree;
-    }
+   public R(JTree var1) {
+      this.a = var1;
+   }
 
-    @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
-        block5: {
-            block12: {
-                String string;
-                block11: {
-                    block7: {
-                        block10: {
-                            block9: {
-                                block8: {
-                                    int n10;
-                                    block6: {
-                                        JTree jTree;
-                                        block4: {
-                                            string = s.d();
-                                            jTree = this.a;
-                                            if (string == null) break block4;
-                                            if (!jTree.isEnabled()) break block5;
-                                            jTree = this.a;
-                                        }
-                                        TreeUI treeUI = jTree.getUI();
-                                        int n11 = treeUI instanceof K;
-                                        if (string == null) break block6;
-                                        if (n11 == 0) break block7;
-                                        n11 = n10 = ((K)treeUI).Y(mouseEvent.getPoint());
-                                    }
-                                    if (string == null) break block8;
-                                    if (n10 == -1) break block9;
-                                    this.a.setSelectionRow(n10);
-                                }
-                                if (string != null) break block10;
-                            }
-                            this.a.clearSelection();
-                        }
-                        if (string != null) break block5;
-                    }
-                    TreePath treePath = this.a.getPathForLocation(mouseEvent.getX(), mouseEvent.getY());
-                    if (string == null) break block11;
-                    if (treePath == null) break block12;
-                    this.a.setSelectionPath(treePath);
-                }
-                if (string != null) break block5;
+   @Override
+   public void mouseMoved(MouseEvent var1) {
+      String var2 = com.m.s.d();
+      JTree var10000 = this.a;
+      if (var2 != null) {
+         if (!this.a.isEnabled()) {
+            return;
+         }
+
+         var10000 = this.a;
+      }
+
+      label54: {
+         TreeUI var3 = var10000.getUI();
+         int var6 = var3 instanceof com.m.K;
+         if (var2 != null) {
+            if (var6 == 0) {
+               break label54;
             }
+
+            var6 = ((com.m.K)var3).Y(var1.getPoint());
+         }
+
+         label39: {
+            label38: {
+               int var4 = var6;
+               if (var2 != null) {
+                  if (var4 == -1) {
+                     break label38;
+                  }
+
+                  this.a.setSelectionRow(var4);
+               }
+
+               if (var2 != null) {
+                  break label39;
+               }
+            }
+
             this.a.clearSelection();
-        }
-    }
+         }
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-    }
+         if (var2 != null) {
+            return;
+         }
+      }
 
-    public static R E(JTree jTree) {
-        R.s(jTree);
-        R r2 = new R(jTree);
-        jTree.addMouseMotionListener(r2);
-        return r2;
-    }
-
-    public static void s(JTree jTree) {
-        MouseMotionListener[] mouseMotionListenerArray = jTree.getMouseMotionListeners();
-        String string = s.d();
-        int n10 = mouseMotionListenerArray.length;
-        int n11 = 0;
-        while (n11 < n10) {
-            MouseMotionListener mouseMotionListener = mouseMotionListenerArray[n11];
-            if (string != null) {
-                if (mouseMotionListener instanceof R) {
-                    jTree.removeMouseMotionListener(mouseMotionListener);
-                }
-                ++n11;
+      label28: {
+         TreePath var5 = this.a.getPathForLocation(var1.getX(), var1.getY());
+         if (var2 != null) {
+            if (var5 == null) {
+               break label28;
             }
-            if (string != null) continue;
-        }
-    }
 
-    public static boolean t(JTree jTree) {
-        boolean bl;
-        block4: {
-            MouseMotionListener[] mouseMotionListenerArray = jTree.getMouseMotionListeners();
-            String string = s.d();
-            int n10 = mouseMotionListenerArray.length;
-            int n11 = 0;
-            while (n11 < n10) {
-                MouseMotionListener mouseMotionListener = mouseMotionListenerArray[n11];
-                if (string != null) {
-                    bl = mouseMotionListener instanceof R;
-                    if (string == null) break block4;
-                    if (bl) {
-                        return true;
-                    }
-                    ++n11;
-                }
-                if (string != null) continue;
+            this.a.setSelectionPath(var5);
+         }
+
+         if (var2 != null) {
+            return;
+         }
+      }
+
+      this.a.clearSelection();
+   }
+
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+   }
+
+   public static com.m.R E(JTree var0) {
+      s(var0);
+      com.m.R var1 = new com.m.R(var0);
+      var0.addMouseMotionListener(var1);
+      return var1;
+   }
+
+   public static void s(JTree var0) {
+      String var10000 = com.m.s.d();
+      MouseMotionListener[] var2 = var0.getMouseMotionListeners();
+      String var1 = var10000;
+      int var3 = var2.length;
+      int var4 = 0;
+
+      while (var4 < var3) {
+         MouseMotionListener var5 = var2[var4];
+         if (var1 != null) {
+            if (var5 instanceof com.m.R) {
+               var0.removeMouseMotionListener(var5);
             }
-            bl = false;
-        }
-        return bl;
-    }
+
+            var4++;
+         }
+
+         if (var1 == null) {
+            break;
+         }
+      }
+   }
+
+   public static boolean t(JTree var0) {
+      String var10000 = com.m.s.d();
+      MouseMotionListener[] var2 = var0.getMouseMotionListeners();
+      String var1 = var10000;
+      int var3 = var2.length;
+      int var4 = 0;
+
+      while (true) {
+         if (var4 < var3) {
+            MouseMotionListener var5 = var2[var4];
+            if (var1 != null) {
+               var6 = var5 instanceof com.m.R;
+               if (var1 == null) {
+                  break;
+               }
+
+               if (var6) {
+                  return true;
+               }
+
+               var4++;
+            }
+
+            if (var1 != null) {
+               continue;
+            }
+         }
+
+         var6 = false;
+         break;
+      }
+
+      return var6;
+   }
 }
+
+
+
+
 

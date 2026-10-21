@@ -1,51 +1,47 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.NF;
-import com.cb_1;
-import com.ux_0;
 import java.util.List;
 
-class BZ
-implements Runnable {
-    final List e;
-    final NF V;
+class BZ implements Runnable {
+   final List e;
+   final NF V;
 
-    BZ(NF nF2, List list) {
-        this.V = nF2;
-        this.e = list;
-    }
+   BZ(NF var1, List var2) {
+      this.V = var1;
+      this.e = var2;
+   }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    @Override
-    public void run() {
-        Object object;
-        block7: {
-            block8: {
-                String[] stringArray = cb_1.C();
-                object = this.e;
-                if (stringArray == null) break block7;
-                if (object == null) break block8;
-                object = this.e;
-                if (stringArray == null) break block7;
-                if (object.size() > 0) {
-                    this.V.C.c.o(this.e, this.V.C.o, 0);
-                }
+   @Override
+   public void run() {
+      Object var10000;
+      String[] var1 = com.cB_3.C();
+      var10000 = this.e;
+      label27:
+      if (var1 != null) {
+         if (this.e != null) {
+            var10000 = this.e;
+            if (var1 == null) {
+               break label27;
             }
-            object = this.V.C.c.K;
-        }
-        List list = object;
-        synchronized (object) {
-            this.V.C.o.Y(ux_0.loaded);
-            this.V.C.c.nodeChanged(this.V.C.o);
-            // ** MonitorExit[var2_2] (shouldn't be in output)
-            this.V.C.c.s(this.V.C.o, this.e);
-            return;
-        }
-    }
+
+            if (this.e.size() > 0) {
+               this.V.C.c.o(this.e, this.V.C.o, 0);
+            }
+         }
+
+         var10000 = this.V.C.c.K;
+      }
+
+      synchronized (var10000) {
+         this.V.C.o.Y(ux_2.loaded);
+         this.V.C.c.nodeChanged(this.V.C.o);
+      }
+
+      this.V.C.c.s(this.V.C.o, this.e);
+   }
 }
+
+
+
+
 

@@ -1,38 +1,18 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.GA;
-import com.GO;
-import com.L0;
-import com.RV;
-import com.W2;
-import com.WO;
-import com.c;
-import com.e_0;
-import com.hd_0;
-import com.ij_2;
-import com.kq_0;
-import com.og_2;
-import com.pv_1;
-import com.so_0;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontMetrics;
+import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Insets;
-import java.awt.Paint;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Shape;
 import java.awt.event.FocusAdapter;
 import java.awt.geom.GeneralPath;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.RoundRectangle2D;
-import java.io.Serializable;
+import java.awt.geom.Rectangle2D.Double;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.JComponent;
@@ -43,996 +23,1666 @@ import javax.swing.plaf.UIResource;
 import javax.swing.plaf.basic.BasicTabbedPaneUI;
 import javax.swing.text.View;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public class KV
-extends BasicTabbedPaneUI
-implements W2,
-L0 {
-    private ij_2 R = e_0.V;
-    private Color j = e_0.g;
-    private Color F = e_0.l;
-    private Color k = e_0.s;
-    private Color b = e_0.Y;
-    private int r = e_0.b;
-    private int M = e_0.Z;
-    private boolean V = e_0.C;
-    private Insets c = e_0.j;
-    private Insets T = e_0.r;
-    private og_2 C = e_0.h;
-    private int K = e_0.R;
-    private int n = e_0.U;
-    private so_0 t = e_0.u;
-    private Color I = e_0.f;
-    private Color g = e_0.m;
-    private boolean e = e_0.P;
-    private boolean q = e_0.k;
-    private Color B = e_0.e;
-    private boolean f = e_0.O;
-    private final Map l = new HashMap();
-    private final Map w = new HashMap();
-    private FocusAdapter a;
-    private static final String d;
+public class KV extends BasicTabbedPaneUI implements com.W2, com.L0 {
+   private ij_4 R = com.e_2.V;
+   private Color j;
+   private Color F;
+   private Color k;
+   private Color b;
+   private int r;
+   private int M;
+   private boolean V;
+   private Insets c;
+   private Insets T;
+   private com.og_4 C;
+   private int K;
+   private int n;
+   private So_2 t;
+   private Color I;
+   private Color g;
+   private boolean e;
+   private boolean q;
+   private Color B;
+   private boolean f;
+   private final Map l;
+   private final Map w;
+   private FocusAdapter a;
+   private static final String d;
 
-    public static ComponentUI createUI(JComponent jComponent) {
-        return new KV();
-    }
+   public KV() {
+      this.j = com.e_2.g;
+      this.F = com.e_2.l;
+      this.k = com.e_2.s;
+      this.b = com.e_2.Y;
+      this.r = com.e_2.b;
+      this.M = com.e_2.Z;
+      this.V = com.e_2.C;
+      this.c = com.e_2.j;
+      this.T = com.e_2.r;
+      this.C = com.e_2.h;
+      this.K = com.e_2.R;
+      this.n = com.e_2.U;
+      this.t = com.e_2.u;
+      this.I = com.e_2.f;
+      this.g = com.e_2.m;
+      this.e = com.e_2.P;
+      this.q = com.e_2.k;
+      this.B = com.e_2.e;
+      this.f = com.e_2.O;
+      this.l = new HashMap();
+      this.w = new HashMap();
+   }
 
-    @Override
-    public void installUI(JComponent jComponent) {
-        super.installUI(jComponent);
-        FN.Y(this.tabPane);
-        this.tabPane.setBackground(this.B);
-        WO.t(this.tabPane, this.C);
-        this.h();
-        this.a = new pv_1(this);
-        this.tabPane.addFocusListener(this.a);
-    }
+   public static ComponentUI createUI(JComponent var0) {
+      return new com.KV();
+   }
 
-    @Override
-    public void uninstallUI(JComponent jComponent) {
-        String string = hd_0.X();
-        WO.C(this.tabPane, this.C);
-        String string2 = string;
-        KV kV = this;
-        if (string2 != null) {
-            if (kV.a != null) {
-                jComponent.removeFocusListener(this.a);
+   @Override
+   public void installUI(JComponent var1) {
+      super.installUI(var1);
+      com.FN.Y(this.tabPane);
+      this.tabPane.setBackground(this.B);
+      com.WO.t(this.tabPane, this.C);
+      this.h();
+      this.a = new pV_3(this);
+      this.tabPane.addFocusListener(this.a);
+   }
+
+   @Override
+   public void uninstallUI(JComponent var1) {
+      String var10000 = Hd_2.X();
+      com.WO.C(this.tabPane, this.C);
+      String var2 = var10000;
+      com.KV var3 = this;
+      if (var2 != null) {
+         if (this.a != null) {
+            var1.removeFocusListener(this.a);
+         }
+
+         var3 = this;
+      }
+
+      var3.uninstallUI(var1);
+   }
+
+   @Override
+   public Shape B() {
+      return GA.X(this.tabPane, this.N(), this.e());
+   }
+
+   @Override
+   public void h() {
+      String var1;
+      com.KV var3;
+      label36: {
+         var1 = Hd_2.X();
+         JTabbedPane var10000 = this.tabPane;
+         if (var1 != null) {
+            if (this.tabPane == null) {
+               return;
             }
-            kV = this;
-        }
-        super.uninstallUI(jComponent);
-    }
 
-    @Override
-    public Shape B() {
-        return GA.X(this.tabPane, this.N(), this.e());
-    }
+            var3 = this;
+            if (var1 == null) {
+               break label36;
+            }
 
-    @Override
-    public void h() {
-        block8: {
-            KV kV;
-            Insets insets;
-            block10: {
-                block11: {
-                    KV kV2;
-                    String string;
-                    block9: {
-                        JTabbedPane jTabbedPane;
-                        block7: {
-                            string = hd_0.X();
-                            jTabbedPane = this.tabPane;
-                            if (string == null) break block7;
-                            if (jTabbedPane == null) break block8;
-                            kV2 = this;
-                            if (string == null) break block9;
-                            jTabbedPane = kV2.tabPane;
+            var10000 = this.tabPane;
+         }
+
+         if (com.FN.l((JComponent)var10000)) {
+            return;
+         }
+
+         var3 = this;
+      }
+
+      Insets var2 = var3.H(this.tabPane);
+      var3 = this;
+      if (var1 != null) {
+         if (this.R.equals(ij_4.standalone)) {
+            this.tabPane.setBorder(GA.y(com.FN.Z(var2, new Insets(this.M, this.M, this.M, this.M))));
+            if (var1 != null) {
+               return;
+            }
+         }
+
+         var3 = this;
+      }
+
+      var3.tabPane.setBorder(GA.y(var2));
+   }
+
+   private Insets H(JComponent var1) {
+      String var2 = Hd_2.X();
+      com.og_4 var10000 = this.C;
+      if (var2 != null) {
+         if (this.C == null) {
+            return new Insets(0, 0, 0, 0);
+         }
+
+         var10000 = this.C;
+      }
+
+      return var10000.B(var1);
+   }
+
+   public int N() {
+      return this.M;
+   }
+
+   public void M(int var1) {
+      this.M = var1;
+      this.h();
+   }
+
+   public boolean S() {
+      return this.V;
+   }
+
+   public void J(boolean var1) {
+      this.V = var1;
+   }
+
+   public int e() {
+      return this.r;
+   }
+
+   public void l(int var1) {
+      this.r = var1;
+   }
+
+   public Insets h$Insets() {
+      return this.c;
+   }
+
+   public void Z(Insets var1) {
+      this.c = var1;
+   }
+
+   public Insets r() {
+      return this.T;
+   }
+
+   public void S(Insets var1) {
+      this.T = var1;
+   }
+
+   public Color O() {
+      return this.j;
+   }
+
+   public void R(Color var1) {
+      this.j = var1;
+   }
+
+   public Color n() {
+      return this.F;
+   }
+
+   public void t(Color var1) {
+      this.F = var1;
+   }
+
+   public Color T() {
+      return this.k;
+   }
+
+   public void T(Color var1) {
+      this.k = var1;
+   }
+
+   public Color z() {
+      return this.b;
+   }
+
+   public void u(Color var1) {
+      this.b = var1;
+   }
+
+   public void x(int var1, Color var2) {
+      this.l.put(var1, var2);
+   }
+
+   public Color m(int var1) {
+      return (Color)this.l.get(var1);
+   }
+
+   public void v(int var1, com.og_4 var2) {
+      this.w.put(var1, var2);
+   }
+
+   public com.og_4 k(int var1) {
+      return (com.og_4)this.w.get(var1);
+   }
+
+   public ij_4 t() {
+      return this.R;
+   }
+
+   public void e(ij_4 var1) {
+      this.R = var1;
+      this.h();
+   }
+
+   public com.og_4 Q() {
+      return this.C;
+   }
+
+   public void G(com.og_4 var1) {
+      com.WO.C(this.tabPane, this.C);
+      this.C = var1;
+      com.WO.t(this.tabPane, this.C);
+      this.h();
+   }
+
+   public int s() {
+      return this.K;
+   }
+
+   public void g(int var1) {
+      this.K = var1;
+   }
+
+   public int c() {
+      return this.n;
+   }
+
+   public void j(int var1) {
+      this.n = var1;
+   }
+
+   public So_2 d() {
+      return this.t;
+   }
+
+   public void x(So_2 var1) {
+      this.t = var1;
+   }
+
+   public Color r$Color() {
+      return this.I;
+   }
+
+   public void P(Color var1) {
+      this.I = var1;
+   }
+
+   public Color k() {
+      return this.g;
+   }
+
+   public void k(Color var1) {
+      this.g = var1;
+   }
+
+   public boolean U() {
+      return this.e;
+   }
+
+   public void I(boolean var1) {
+      this.e = var1;
+   }
+
+   public boolean h$boolean() {
+      return this.q;
+   }
+
+   public void m(boolean var1) {
+      this.q = var1;
+   }
+
+   public Color D() {
+      return this.B;
+   }
+
+   public void H(Color var1) {
+      this.B = var1;
+   }
+
+   public boolean f() {
+      return this.f;
+   }
+
+   public void R(boolean var1) {
+      this.f = var1;
+   }
+
+   @Override
+   protected int getTabRunIndent(int var1, int var2) {
+      return this.K;
+   }
+
+   @Override
+   protected int getTabRunOverlay(int var1) {
+      return this.n;
+   }
+
+   @Override
+   protected boolean shouldPadTabRun(int var1, int var2) {
+      String var3 = Hd_2.X();
+      int var10000 = this.t.equals(So_2.never);
+      if (var3 != null) {
+         if (var10000 != 0) {
+            return (boolean)0;
+         }
+
+         var10000 = this.t.equals(So_2.always);
+      }
+
+      if (var3 == null) {
+         return (boolean)var10000;
+      } else if (var10000 != 0) {
+         return (boolean)1;
+      } else {
+         var10000 = this.t.equals(So_2.multiline);
+         if (var3 != null) {
+            if (var10000 == 0) {
+               return (boolean)0;
+            }
+
+            var10000 = this.runCount;
+         }
+
+         if (var3 == null) {
+            return (boolean)var10000;
+         } else {
+            return (boolean)(var10000 > 1 ? 1 : 0);
+         }
+      }
+   }
+
+   @Override
+   protected boolean shouldRotateTabRuns(int var1) {
+      return true;
+   }
+
+   @Override
+   protected Insets getContentBorderInsets(int var1) {
+      return new Insets(0, 0, 0, 0);
+   }
+
+   @Override
+   protected Insets getTabAreaInsets(int var1) {
+      Insets var2 = new Insets(0, 0, 0, 0);
+      rotateInsets(this.R.equals(ij_4.standalone) ? new Insets(var1 == 4 ? 1 : 0, 1, 0, 2) : new Insets(-1, -1, 0, 0), var2, var1);
+      return var2;
+   }
+
+   @Override
+   protected Insets getTabInsets(int var1, int var2) {
+      return new Insets(3, 3, 3, 3);
+   }
+
+   @Override
+   protected Insets getSelectedTabPadInsets(int var1) {
+      return new Insets(0, 0, 0, 0);
+   }
+
+   @Override
+   protected int getTabLabelShiftX(int var1, int var2, boolean var3) {
+      return 0;
+   }
+
+   @Override
+   protected int getTabLabelShiftY(int var1, int var2, boolean var3) {
+      return 0;
+   }
+
+   @Override
+   protected void paintTabBorder(Graphics var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8) {
+   }
+
+   @Override
+   protected void paintTabBackground(Graphics var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8) {
+      Color var10 = (Color)com.c.c(381952515264332318L).get(null);
+      String var10000 = Hd_2.X();
+      Graphics2D var11 = (Graphics2D)var1;
+      Object var12 = RV.X(var11);
+      GeneralPath var13 = this.P(com.Kq_2.border, var2, var4, var5, var6, var7, var8);
+      String var9 = var10000;
+      if (this.R.equals(ij_4.standalone)) {
+      }
+
+      label96: {
+         GeneralPath var14 = this.P(com.Kq_2.background, var2, var4, var5, var6, var7, var8);
+         com.KV var26 = this;
+         if (var9 != null) {
+            if (this.w.containsKey(var3) && var8) {
+               Shape var15 = RV.n(var11, var14);
+               com.og_4 var16 = (com.og_4)this.w.get(var3);
+               var16.u(var11, new Rectangle(var4, var5, var6, var7), this.tabPane);
+               RV.w(var11, var15);
+               if (var9 != null) {
+                  break label96;
+               }
+            }
+
+            var26 = this;
+         }
+
+         label84: {
+            Point var20;
+            Point var22;
+            label97: {
+               label98: {
+                  var20 = var26.X(var2, var4, var5, var6, var7);
+                  var22 = this.K(var2, var4, var5, var6, var7);
+                  boolean var27 = var8;
+                  if (var9 != null) {
+                     if (!var8) {
+                        break label97;
+                     }
+
+                     var28 = this;
+                     if (var9 == null) {
+                        break label98;
+                     }
+
+                     var27 = this.q;
+                  }
+
+                  if (var27) {
+                     var11.setPaint(new GradientPaint((float)var20.x, (float)var20.y, var10, (float)var22.x, (float)var22.y, this.F));
+                     if (var9 != null) {
+                        break label84;
+                     }
+                  }
+
+                  var28 = this;
+               }
+
+               Color var17 = var28.tabPane.getBackgroundAt(var3);
+               if (var9 != null && var17 == null) {
+                  this.tabPane.getBackground();
+               }
+
+               Color var18 = (Color)com.c.c(584289422366901854L).get(null);
+               Color var19 = (Color)com.c.c(430348892393272046L).get(null);
+               var11.setPaint(new GradientPaint((float)var20.x, (float)var20.y, var18, (float)var22.x, (float)var22.y, var19));
+               if (var9 != null) {
+                  break label84;
+               }
+            }
+
+            Color var24 = (Color)com.c.c(566846571211444497L).get(null);
+            Color var25 = (Color)com.c.c(541361405791730915L).get(null);
+            var11.setPaint(new GradientPaint((float)var20.x, (float)var20.y, var24, (float)var22.x, (float)var22.y, var25));
+         }
+
+         var11.fill(var8 ? var13 : var14);
+      }
+
+      Color var21 = (Color)com.c.c(522287300181092171L).get(null);
+      boolean var29 = var8;
+      if (var9 != null) {
+         if (var8) {
+            var21 = (Color)com.c.c(379314975479057356L).get(null);
+         }
+
+         var11.setPaint(var21);
+         var11.draw(var13);
+         var29 = var8;
+      }
+
+      label66: {
+         label100: {
+            if (var9 != null) {
+               if (!var29) {
+                  break label100;
+               }
+
+               var29 = this.tabPane.isFocusOwner();
+            }
+
+            if (var9 == null) {
+               break label66;
+            }
+
+            if (var29) {
+               var29 = true;
+               break label66;
+            }
+         }
+
+         var29 = false;
+      }
+
+      boolean var23 = var29;
+      if (var9 != null) {
+         if (this.R.equals(ij_4.standalone)) {
+            GA.l(var11, null, GO.F3, var13, null, var23);
+         }
+
+         RV.X(var11, var12);
+      }
+   }
+
+   @Override
+   protected void paintText(Graphics var1, int var2, Font var3, FontMetrics var4, int var5, String var6, Rectangle var7, boolean var8) {
+      String var9;
+      label70: {
+         String var10000 = Hd_2.X();
+         var1.setFont(var3);
+         var9 = var10000;
+         View var10 = this.getTextViewForTab(var5);
+         View var14 = var10;
+         if (var9 != null) {
+            if (var10 == null) {
+               break label70;
+            }
+
+            var14 = var10;
+         }
+
+         var14.paint(var1, var7);
+         if (var9 != null) {
+            return;
+         }
+      }
+
+      int var11 = this.tabPane.getDisplayedMnemonicIndexAt(var5);
+      if (var9 != null) {
+         label37:
+         if (this.tabPane.isEnabled()) {
+            JTabbedPane var15 = this.tabPane;
+            int var10001 = var5;
+            if (var9 != null) {
+               if (!this.tabPane.isEnabledAt(var5)) {
+                  break label37;
+               }
+
+               var15 = this.tabPane;
+               var10001 = var5;
+            }
+
+            Color var12 = var15.getForegroundAt(var10001);
+            label58:
+            if (var9 != null) {
+               label56:
+               if (var8) {
+                  label54: {
+                     label76: {
+                        boolean var16 = var12 instanceof UIResource;
+                        if (var9 != null) {
+                           if (!var16) {
+                              break label56;
+                           }
+
+                           var17 = this.l;
+                           var18 = var5;
+                           if (var9 == null) {
+                              break label76;
+                           }
+
+                           var16 = var17.containsKey(var18);
                         }
-                        if (FN.l(jTabbedPane)) {
-                            return;
+
+                        if (!var16) {
+                           break label54;
                         }
-                        kV2 = this;
-                    }
-                    insets = kV2.H(this.tabPane);
-                    kV = this;
-                    if (string == null) break block10;
-                    if (!kV.R.equals((Object)ij_2.standalone)) break block11;
-                    this.tabPane.setBorder(GA.y(FN.Z(insets, new Insets(this.M, this.M, this.M, this.M))));
-                    if (string != null) break block8;
-                }
-                kV = this;
+
+                        var17 = this.l;
+                        var18 = var5;
+                     }
+
+                     var12 = (Color)var17.get(var18);
+                     if (var9 != null) {
+                        break label56;
+                     }
+                  }
+
+                  Color var13 = UIManager.getColor(d);
+                  if (var9 == null) {
+                     break label58;
+                  }
+
+                  if (var13 != null) {
+                     var12 = var13;
+                  }
+               }
+
+               var1.setColor(var12);
+               com.FN.W(var1, var6, var11, var7.x, var7.y + var4.getAscent());
             }
-            kV.tabPane.setBorder(GA.y(insets));
-        }
-    }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    private Insets H(JComponent jComponent) {
-        Insets insets;
-        String string = hd_0.X();
-        og_2 og_22 = this.C;
-        if (string != null) {
-            if (og_22 == null) {
-                insets = new Insets(0, 0, 0, 0);
-                return insets;
+            if (var9 != null) {
+               return;
             }
-            og_22 = this.C;
-        }
-        insets = og_22.B(jComponent);
-        return insets;
-    }
+         }
 
-    public int N() {
-        return this.M;
-    }
+         var1.setColor(this.tabPane.getBackgroundAt(var5).brighter());
+         com.FN.W(var1, var6, var11, var7.x, var7.y + var4.getAscent());
+         var1.setColor(this.tabPane.getBackgroundAt(var5).darker());
+      }
 
-    public void M(int n10) {
-        this.M = n10;
-        this.h();
-    }
+      com.FN.W(var1, var6, var11, var7.x - 1, var7.y + var4.getAscent() - 1);
+   }
 
-    public boolean S() {
-        return this.V;
-    }
+   private GeneralPath P(com.Kq_2 var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {
+      String var8;
+      int var12;
+      String var10000 = Hd_2.X();
+      Insets var9 = this.tabPane.getInsets();
+      var8 = var10000;
+      var12 = this.R.equals(ij_4.attached);
+      label80:
+      if (var8 != null) {
+         int var10001;
+         label78: {
+            if (var12 != 0) {
+               var12 = var7;
+               if (var8 == null) {
+                  break label80;
+               }
 
-    public void J(boolean bl) {
-        this.V = bl;
-    }
+               if (var7 != 0) {
+                  var12 = var2;
+                  var10001 = 1;
+                  if (var8 == null) {
+                     break label78;
+                  }
 
-    public int e() {
-        return this.r;
-    }
+                  if (var2 == 1) {
+                     var12 = var3;
+                     var10001 = var9.left;
+                     if (var8 == null) {
+                        break label78;
+                     }
 
-    public void l(int n10) {
-        this.r = n10;
-    }
+                     if (var3 == var9.left) {
+                        var3--;
+                        var5++;
+                     }
+                  }
+               }
+            }
 
-    public Insets h() {
-        return this.c;
-    }
+            var4 -= 2;
+            var6 += 2;
+            var12 = var5;
+            var10001 = com.c.c(262617833768908696L).getInt(null);
+         }
 
-    public void Z(Insets insets) {
-        this.c = insets;
-    }
+         var5 = var12 - var10001;
+         var12 = this.R.equals(ij_4.standalone);
+      }
 
-    public Insets r() {
-        return this.T;
-    }
+      if (var8 != null && var12 == 0) {
+         boolean var14 = false;
+      }
 
-    public void S(Insets insets) {
-        this.T = insets;
-    }
+      int var10;
+      GeneralPath var11;
+      var10 = com.c.c(626885163274229183L).getInt(null);
+      var11 = new GeneralPath(0);
+      var12 = var7;
+      label64:
+      if (var8 != null) {
+         if (var7 == 0) {
+            var12 = this.e;
+            if (var8 == null) {
+               break label64;
+            }
 
-    public Color O() {
-        return this.j;
-    }
+            if (this.e) {
+               return var11;
+            }
+         }
 
-    public void R(Color color) {
-        this.j = color;
-    }
+         var12 = var2;
+      }
 
-    public Color n() {
-        return this.F;
-    }
+      byte var16 = 1;
+      if (var8 != null) {
+         if (var12 == 1) {
+            var11.moveTo((float)var3, (float)(var4 + var6 + this.K(var1)));
+            var11.lineTo((float)var3, (float)(var4 + var10));
+            var11.quadTo((float)var3, (float)var4, (float)(var3 + var10), (float)var4);
+            var11.lineTo((float)(var3 + var5 - var10), (float)var4);
+            var11.quadTo((float)(var3 + var5), (float)var4, (float)(var3 + var5), (float)(var4 + var10));
+            var11.lineTo((float)(var3 + var5), (float)(var4 + var6 + this.K(var1)));
+            if (var8 != null) {
+               return var11;
+            }
+         }
 
-    public void t(Color color) {
-        this.F = color;
-    }
+         var12 = var2;
+         var16 = 3;
+      }
 
-    public Color T() {
-        return this.k;
-    }
+      if (var8 != null) {
+         if (var12 == var16) {
+            var11.moveTo((float)var3, (float)(var4 - this.K(var1)));
+            var11.lineTo((float)var3, (float)(var4 + var6 - var10));
+            var11.quadTo((float)var3, (float)(var4 + var6), (float)(var3 + var10), (float)(var4 + var6));
+            var11.lineTo((float)(var3 + var5 - var10), (float)(var4 + var6));
+            var11.quadTo((float)(var3 + var5), (float)(var4 + var6), (float)(var3 + var5), (float)(var4 + var6 - var10));
+            var11.lineTo((float)(var3 + var5), (float)(var4 - this.K(var1)));
+            if (var8 != null) {
+               return var11;
+            }
+         }
 
-    public void T(Color color) {
-        this.k = color;
-    }
+         var12 = var2;
+         var16 = 2;
+      }
 
-    public Color z() {
-        return this.b;
-    }
+      if (var12 == var16) {
+         var11.moveTo((float)(var3 + var5 + this.K(var1)), (float)var4);
+         var11.lineTo((float)(var3 + var10), (float)var4);
+         var11.quadTo((float)var3, (float)var4, (float)var3, (float)(var4 + var10));
+         var11.lineTo((float)var3, (float)(var4 + var6 - var10));
+         var11.quadTo((float)var3, (float)(var4 + var6), (float)(var3 + var10), (float)(var4 + var6));
+         var11.lineTo((float)(var3 + var5 + this.K(var1)), (float)(var4 + var6));
+         if (var8 != null) {
+            return var11;
+         }
+      }
 
-    public void u(Color color) {
-        this.b = color;
-    }
+      var11.moveTo((float)(var3 - this.K(var1)), (float)var4);
+      var11.lineTo((float)(var3 + var5 - var10), (float)var4);
+      var11.quadTo((float)(var3 + var5), (float)var4, (float)(var3 + var5), (float)(var4 + var10));
+      var11.lineTo((float)(var3 + var5), (float)(var4 + var6 - var10));
+      var11.quadTo((float)(var3 + var5), (float)(var4 + var6), (float)(var3 + var5 - var10), (float)(var4 + var6));
+      var11.lineTo((float)(var3 - this.K(var1)), (float)(var4 + var6));
+      return var11;
+   }
 
-    public void x(int n10, Color color) {
-        this.l.put(n10, color);
-    }
+   private int K(com.Kq_2 var1) {
+      String var2 = Hd_2.X();
+      int var10000 = var1.equals(com.Kq_2.shade);
+      if (var2 != null) {
+         if (var10000 != 0) {
+            var10000 = this.r;
+            if (var2 != null) {
+               var10000 = this.r > 0 ? this.r : 1;
+            }
 
-    public Color m(int n10) {
-        return (Color)this.l.get(n10);
-    }
+            return -var10000;
+         }
 
-    public void v(int n10, og_2 og_22) {
-        this.w.put(n10, og_22);
-    }
+         var10000 = var1.equals(com.Kq_2.border);
+      }
 
-    public og_2 k(int n10) {
-        return (og_2)this.w.get(n10);
-    }
+      if (var2 != null) {
+         if (var10000 != 0) {
+            return -1;
+         }
 
-    public ij_2 t() {
-        return this.R;
-    }
+         var10000 = var1.equals(com.Kq_2.backgroundPainter);
+      }
 
-    public void e(ij_2 ij_22) {
-        this.R = ij_22;
-        this.h();
-    }
+      if (var2 != null) {
+         if (var10000 != 0) {
+            return 2;
+         }
 
-    public og_2 Q() {
-        return this.C;
-    }
+         var10000 = 0;
+      }
 
-    public void G(og_2 og_22) {
-        WO.C(this.tabPane, this.C);
-        this.C = og_22;
-        WO.t(this.tabPane, this.C);
-        this.h();
-    }
+      return var10000;
+   }
 
-    public int s() {
-        return this.K;
-    }
+   private Point X(int var1, int var2, int var3, int var4, int var5) {
+      String var6 = Hd_2.X();
+      int var10000 = var1;
+      byte var10001 = 1;
+      if (var6 != null) {
+         if (var1 == 1) {
+            return new Point(var2, var3);
+         }
 
-    public void g(int n10) {
-        this.K = n10;
-    }
+         var10000 = var1;
+         var10001 = 3;
+      }
 
-    public int c() {
-        return this.n;
-    }
+      if (var6 != null) {
+         if (var10000 == var10001) {
+            return new Point(var2, var3 + var5);
+         }
 
-    public void j(int n10) {
-        this.n = n10;
-    }
+         var10000 = var1;
+         var10001 = 2;
+      }
 
-    public so_0 d() {
-        return this.t;
-    }
+      return var10000 == var10001 ? new Point(var2, var3) : new Point(var2 + var4, var3);
+   }
 
-    public void x(so_0 so_02) {
-        this.t = so_02;
-    }
+   private Point K(int var1, int var2, int var3, int var4, int var5) {
+      String var6 = Hd_2.X();
+      int var10000 = var1;
+      byte var10001 = 1;
+      if (var6 != null) {
+         if (var1 == 1) {
+            return new Point(var2, var3 + var5 - 4);
+         }
 
-    public Color r() {
-        return this.I;
-    }
+         var10000 = var1;
+         var10001 = 3;
+      }
 
-    public void P(Color color) {
-        this.I = color;
-    }
+      if (var6 != null) {
+         if (var10000 == var10001) {
+            return new Point(var2, var3 + 4);
+         }
 
-    public Color k() {
-        return this.g;
-    }
+         var10000 = var1;
+         var10001 = 2;
+      }
 
-    public void k(Color color) {
-        this.g = color;
-    }
+      return var10000 == var10001 ? new Point(var2 + var4 - 4, var3) : new Point(var2 + 4, var3);
+   }
 
-    public boolean U() {
-        return this.e;
-    }
+   @Override
+   protected void paintContentBorder(Graphics var1, int var2, int var3) {
+      String var4;
+      Graphics2D var5;
+      Object var6;
+      int var7;
+      Insets var8;
+      label113: {
+         label112: {
+            var5 = (Graphics2D)var1;
+            String var10000 = Hd_2.X();
+            var6 = RV.X(var5);
+            var4 = var10000;
+            var7 = this.M(var2);
+            var8 = this.tabPane.getInsets();
+            if (var4 != null) {
+               if (var2 != 1 && var2 != 3) {
+                  break label112;
+               }
 
-    public void I(boolean bl) {
-        this.e = bl;
-    }
+               var8.right++;
+            }
 
-    public boolean h() {
-        return this.q;
-    }
+            if (var4 != null) {
+               break label113;
+            }
+         }
 
-    public void m(boolean bl) {
-        this.q = bl;
-    }
+         var8.bottom++;
+      }
 
-    public Color D() {
-        return this.B;
-    }
-
-    public void H(Color color) {
-        this.B = color;
-    }
-
-    public boolean f() {
-        return this.f;
-    }
-
-    public void R(boolean bl) {
-        this.f = bl;
-    }
-
-    @Override
-    protected int getTabRunIndent(int n10, int n11) {
-        return this.K;
-    }
-
-    @Override
-    protected int getTabRunOverlay(int n10) {
-        return this.n;
-    }
-
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    protected boolean shouldPadTabRun(int n10, int n11) {
-        String string = hd_0.X();
-        int n12 = this.t.equals((Object)so_0.never);
-        if (string != null) {
-            if (n12 != 0) return 0 != 0;
-            n12 = this.t.equals((Object)so_0.always);
-        }
-        if (string == null) return n12 != 0;
-        if (n12 != 0) return 1 != 0;
-        n12 = this.t.equals((Object)so_0.multiline);
-        if (string != null) {
-            if (n12 == 0) return 0 != 0;
-            n12 = this.runCount;
-        }
-        if (string == null) return n12 != 0;
-        if (n12 <= 1) return 0 != 0;
-        return 1 != 0;
-    }
-
-    @Override
-    protected boolean shouldRotateTabRuns(int n10) {
-        return true;
-    }
-
-    @Override
-    protected Insets getContentBorderInsets(int n10) {
-        Insets insets = new Insets(0, 0, 0, 0);
-        return insets;
-    }
-
-    @Override
-    protected Insets getTabAreaInsets(int n10) {
-        Insets insets = new Insets(0, 0, 0, 0);
-        KV.rotateInsets(this.R.equals((Object)ij_2.standalone) ? new Insets(n10 == 4 ? 1 : 0, 1, 0, 2) : new Insets(-1, -1, 0, 0), insets, n10);
-        return insets;
-    }
-
-    @Override
-    protected Insets getTabInsets(int n10, int n11) {
-        return new Insets(3, 3, 3, 3);
-    }
-
-    @Override
-    protected Insets getSelectedTabPadInsets(int n10) {
-        Insets insets = new Insets(0, 0, 0, 0);
-        return insets;
-    }
-
-    @Override
-    protected int getTabLabelShiftX(int n10, int n11, boolean bl) {
-        return 0;
-    }
-
-    @Override
-    protected int getTabLabelShiftY(int n10, int n11, boolean bl) {
-        return 0;
-    }
-
-    @Override
-    protected void paintTabBorder(Graphics graphics, int n10, int n11, int n12, int n13, int n14, int n15, boolean bl) {
-    }
-
-    /*
-     * Exception decompiling
-     */
-    @Override
-    protected void paintTabBackground(Graphics var1_1, int var2_2, int var3_3, int var4_4, int var5_5, int var6_6, int var7_7, boolean var8_8) {
-        /*
-         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
-         * 
-         * org.benf.cfr.reader.util.ConfusedCFRException: Statement already marked as first in another block
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.markFirstStatementInBlock(Op03SimpleStatement.java:461)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.Misc.markWholeBlock(Misc.java:251)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.considerAsSimpleIf(ConditionalRewriter.java:673)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.identifyNonjumpingConditionals(ConditionalRewriter.java:56)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:722)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
-         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
-         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
-         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
-         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
-         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
-         *     at org.benf.cfr.reader.Main.main(Main.java:54)
-         */
-        throw new IllegalStateException("Decompilation failed");
-    }
-
-    @Override
-    protected void paintText(Graphics graphics, int n10, Font font, FontMetrics fontMetrics, int n11, String string, Rectangle rectangle, boolean bl) {
-        block9: {
-            int n12;
-            block10: {
-                block11: {
-                    String string2;
-                    block13: {
-                        Color color;
-                        block14: {
-                            block17: {
-                                Integer n13;
-                                Map map;
-                                block16: {
-                                    boolean bl2;
-                                    block15: {
-                                        int n14;
-                                        JTabbedPane jTabbedPane;
-                                        block12: {
-                                            block8: {
-                                                View view;
-                                                block7: {
-                                                    View view2;
-                                                    String string3 = hd_0.X();
-                                                    graphics.setFont(font);
-                                                    string2 = string3;
-                                                    view = view2 = this.getTextViewForTab(n11);
-                                                    if (string2 == null) break block7;
-                                                    if (view == null) break block8;
-                                                    view = view2;
-                                                }
-                                                view.paint(graphics, rectangle);
-                                                if (string2 != null) break block9;
-                                            }
-                                            n12 = this.tabPane.getDisplayedMnemonicIndexAt(n11);
-                                            if (string2 == null) break block10;
-                                            if (!this.tabPane.isEnabled()) break block11;
-                                            jTabbedPane = this.tabPane;
-                                            n14 = n11;
-                                            if (string2 == null) break block12;
-                                            if (!jTabbedPane.isEnabledAt(n14)) break block11;
-                                            jTabbedPane = this.tabPane;
-                                            n14 = n11;
-                                        }
-                                        color = jTabbedPane.getForegroundAt(n14);
-                                        if (string2 == null) break block13;
-                                        if (!bl) break block14;
-                                        bl2 = color instanceof UIResource;
-                                        if (string2 == null) break block15;
-                                        if (!bl2) break block14;
-                                        map = this.l;
-                                        n13 = n11;
-                                        if (string2 == null) break block16;
-                                        bl2 = map.containsKey(n13);
-                                    }
-                                    if (!bl2) break block17;
-                                    map = this.l;
-                                    n13 = n11;
-                                }
-                                color = (Color)map.get(n13);
-                                if (string2 != null) break block14;
-                            }
-                            Color color2 = UIManager.getColor(d);
-                            if (string2 == null) break block13;
-                            if (color2 != null) {
-                                color = color2;
-                            }
+      label116: {
+         Rectangle var9 = var3 != -1 ? this.getTabBounds(this.tabPane, var3) : null;
+         Shape var10 = this.j(var2, var7, var8, var9);
+         int var15 = this.R.equals(ij_4.standalone);
+         if (var4 != null) {
+            if (var15 != 0) {
+               label118: {
+                  GeneralPath var11 = new GeneralPath(0);
+                  var11.append(new Double(0.0, 0.0, (double)this.tabPane.getWidth(), (double)this.tabPane.getHeight()), false);
+                  var11.append(var10, false);
+                  var15 = this.w.containsKey(var3);
+                  if (var4 != null) {
+                     if (var15 != 0) {
+                        Shape var12 = RV.n(var5, var10);
+                        ((com.og_4)this.w.get(var3)).u(var5, var10.getBounds(), this.tabPane);
+                        RV.w(var5, var12);
+                        if (var4 != null) {
+                           break label118;
                         }
-                        graphics.setColor(color);
-                        FN.W(graphics, string, n12, rectangle.x, rectangle.y + fontMetrics.getAscent());
-                    }
-                    if (string2 != null) break block9;
-                }
-                graphics.setColor(this.tabPane.getBackgroundAt(n11).brighter());
-                FN.W(graphics, string, n12, rectangle.x, rectangle.y + fontMetrics.getAscent());
-                graphics.setColor(this.tabPane.getBackgroundAt(n11).darker());
+                     }
+
+                     var15 = var3;
+                  }
+
+                  Color var14 = var15 != -1 ? this.tabPane.getBackgroundAt(var3) : null;
+                  Color var10001 = var14;
+                  if (var4 != null) {
+                     var10001 = var14 != null ? var14 : this.tabPane.getBackground();
+                  }
+
+                  var5.setPaint(var10001);
+                  var5.fill(var10);
+               }
+
+               var5.setPaint(this.g);
+               GA.l(var5, null, GO.F3, var10, null, this.tabPane.isFocusOwner());
+               if (var4 != null) {
+                  break label116;
+               }
             }
-            FN.W(graphics, string, n12, rectangle.x - 1, rectangle.y + fontMetrics.getAscent() - 1);
-        }
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    private GeneralPath P(kq_0 var1_1, int var2_2, int var3_3, int var4_4, int var5_5, int var6_6, boolean var7_7) {
-        block20: {
-            block23: {
-                block21: {
-                    block22: {
-                        block18: {
-                            block19: {
-                                block15: {
-                                    block17: {
-                                        block16: {
-                                            var9_8 = this.tabPane.getInsets();
-                                            var8_9 = hd_0.X();
-                                            v0 = this.R.equals((Object)ij_2.attached);
-                                            if (var8_9 == null) break block15;
-                                            if (v0 == 0) break block16;
-                                            v0 = var7_7;
-                                            if (var8_9 == null) break block15;
-                                            if (v0 == 0) break block16;
-                                            v1 = var2_2;
-                                            v2 = 1;
-                                            if (var8_9 == null) break block17;
-                                            if (v1 != v2) break block16;
-                                            v1 = var3_3--;
-                                            v2 = var9_8.left;
-                                            if (var8_9 == null) break block17;
-                                            if (v1 == v2) {
-                                                // empty if block
-                                            }
-                                        }
-                                        var4_4 -= 2;
-                                        var6_6 += 2;
-                                        v1 = ++var5_5;
-                                        v2 = cy_1.v;
-                                    }
-                                    var5_5 = v1 - v2;
-                                    v0 = (int)this.R.equals((Object)ij_2.standalone);
-                                }
-                                if (var8_9 != null) {
-                                    v0 = v0 != 0 ? this.r : 0;
-                                }
-                                var10_10 = v0;
-                                var10_10 = cy_1.f;
-                                var11_11 = new GeneralPath(0);
-                                v3 = var7_7;
-                                if (var8_9 != null) {
-                                    if (v3 == 0) {
-                                        v3 = (int)this.e;
-                                        if (var8_9 != null) {
-                                            if (v3 != 0) {
-                                                return var11_11;
-                                            } else {
-                                                ** GOTO lbl-1000
-                                            }
-                                        }
-                                    } else lbl-1000:
-                                    // 3 sources
+            var15 = this.w.containsKey(var3);
+         }
 
-                                    {
-                                        v3 = var2_2;
-                                    }
-                                }
-                                v4 = 1;
-                                if (var8_9 == null) break block18;
-                                if (v3 != v4) break block19;
-                                var11_11.moveTo(var3_3, var4_4 + var6_6 + this.K(var1_1));
-                                var11_11.lineTo(var3_3, var4_4 + var10_10);
-                                var11_11.quadTo(var3_3, var4_4, var3_3 + var10_10, var4_4);
-                                var11_11.lineTo(var3_3 + var5_5 - var10_10, var4_4);
-                                var11_11.quadTo(var3_3 + var5_5, var4_4, var3_3 + var5_5, var4_4 + var10_10);
-                                var11_11.lineTo(var3_3 + var5_5, var4_4 + var6_6 + this.K(var1_1));
-                                if (var8_9 != null) break block20;
-                            }
-                            v3 = var2_2;
-                            v4 = 3;
+         label119: {
+            if (var4 != null) {
+               if (var15 != 0) {
+                  ((com.og_4)this.w.get(var3)).u(var5, var10.getBounds(), this.tabPane);
+                  if (var4 != null) {
+                     break label119;
+                  }
+               }
+
+               var15 = var3;
+            }
+
+            Color var13 = var15 != -1 ? this.tabPane.getBackgroundAt(var3) : null;
+            Color var18 = var13;
+            if (var4 != null) {
+               var18 = var13 != null ? var13 : this.tabPane.getBackground();
+            }
+
+            var5.setPaint(var18);
+            var5.fill(var10);
+         }
+
+         var5.setPaint(this.g);
+         if (var4 == null) {
+            return;
+         }
+
+         label78:
+         if (var2 == 1) {
+            if (var9 != null) {
+               var15 = var8.left;
+               int var19 = var9.x;
+               if (var4 != null) {
+                  if (var8.left < var9.x) {
+                     var5.drawLine(var8.left, var8.top + var7, var9.x, var8.top + var7);
+                  }
+
+                  var15 = var9.x + var9.width;
+                  var19 = this.tabPane.getWidth() - var8.right;
+               }
+
+               if (var15 >= var19) {
+                  break label78;
+               }
+
+               var5.drawLine(var9.x + var9.width, var8.top + var7, this.tabPane.getWidth() - var8.right, var8.top + var7);
+               if (var4 != null) {
+                  break label78;
+               }
+            }
+
+            var5.drawLine(var8.left, var8.top + var7, this.tabPane.getWidth() - var8.right, var8.top + var7);
+         }
+      }
+
+      RV.X(var5, var6);
+   }
+
+   public int M$int(int var1) {
+      String var2 = Hd_2.X();
+      int var10000 = var1;
+      byte var10001 = 1;
+      if (var2 != null) {
+         label22:
+         if (var1 != 1) {
+            var10000 = var1;
+            var10001 = 3;
+            if (var2 != null) {
+               if (var1 == 3) {
+                  break label22;
+               }
+
+               var10000 = this.calculateTabAreaWidth(var1, this.runCount, this.maxTabWidth);
+               var10001 = 1;
+            }
+
+            return var10000 - var10001;
+         }
+
+         var10000 = this.calculateTabAreaHeight(var1, this.runCount, this.maxTabHeight);
+         var10001 = 1;
+      }
+
+      return var10000 - var10001;
+   }
+
+   private Shape j(int var1, int var2, Insets var3, Rectangle var4) {
+      String var5 = Hd_2.X();
+      int var10000 = this.R.equals(ij_4.standalone);
+      if (var5 != null) {
+         if (var10000 != 0) {
+            if (var4 != null) {
+               GeneralPath var11 = new GeneralPath(0);
+               var10000 = var1;
+               int var38 = 1;
+               if (var5 != null) {
+                  if (var1 == 1) {
+                     int var13;
+                     label282: {
+                        var13 = var3.top + var2 - 1;
+                        GeneralPath var26 = var11;
+                        float var39 = (float)var4.x;
+                        float var10002 = (float)var13;
+                        if (var5 != null) {
+                           var11.moveTo(var39, var10002);
+                           if (var4.x > var3.left + this.r && this.r > 0) {
+                              var11.lineTo((float)(var3.left + this.r), (float)var13);
+                              var11.quadTo((float)var3.left, (float)var13, (float)var3.left, (float)(var13 + this.r));
+                              if (var5 != null) {
+                                 break label282;
+                              }
+                           }
+
+                           var26 = var11;
+                           var39 = (float)var3.left;
+                           var10002 = (float)var13;
                         }
-                        if (var8_9 == null) break block21;
-                        if (v3 != v4) break block22;
-                        var11_11.moveTo(var3_3, var4_4 - this.K(var1_1));
-                        var11_11.lineTo(var3_3, var4_4 + var6_6 - var10_10);
-                        var11_11.quadTo(var3_3, var4_4 + var6_6, var3_3 + var10_10, var4_4 + var6_6);
-                        var11_11.lineTo(var3_3 + var5_5 - var10_10, var4_4 + var6_6);
-                        var11_11.quadTo(var3_3 + var5_5, var4_4 + var6_6, var3_3 + var5_5, var4_4 + var6_6 - var10_10);
-                        var11_11.lineTo(var3_3 + var5_5, var4_4 - this.K(var1_1));
-                        if (var8_9 != null) break block20;
-                    }
-                    v3 = var2_2;
-                    v4 = 2;
-                }
-                if (v3 != v4) break block23;
-                var11_11.moveTo(var3_3 + var5_5 + this.K(var1_1), var4_4);
-                var11_11.lineTo(var3_3 + var10_10, var4_4);
-                var11_11.quadTo(var3_3, var4_4, var3_3, var4_4 + var10_10);
-                var11_11.lineTo(var3_3, var4_4 + var6_6 - var10_10);
-                var11_11.quadTo(var3_3, var4_4 + var6_6, var3_3 + var10_10, var4_4 + var6_6);
-                var11_11.lineTo(var3_3 + var5_5 + this.K(var1_1), var4_4 + var6_6);
-                if (var8_9 != null) break block20;
-            }
-            var11_11.moveTo(var3_3 - this.K(var1_1), var4_4);
-            var11_11.lineTo(var3_3 + var5_5 - var10_10, var4_4);
-            var11_11.quadTo(var3_3 + var5_5, var4_4, var3_3 + var5_5, var4_4 + var10_10);
-            var11_11.lineTo(var3_3 + var5_5, var4_4 + var6_6 - var10_10);
-            var11_11.quadTo(var3_3 + var5_5, var4_4 + var6_6, var3_3 + var5_5 - var10_10, var4_4 + var6_6);
-            var11_11.lineTo(var3_3 - this.K(var1_1), var4_4 + var6_6);
-        }
-        return var11_11;
-    }
 
-    private int K(kq_0 kq_02) {
-        String string = hd_0.X();
-        int n10 = kq_02.equals((Object)kq_0.shade);
-        if (string != null) {
-            if (n10 != 0) {
-                int n11 = this.r;
-                if (string != null) {
-                    n11 = n11 > 0 ? this.r : 1;
-                }
-                return -n11;
-            }
-            n10 = kq_02.equals((Object)kq_0.border);
-        }
-        if (string != null) {
-            if (n10 != 0) {
-                return -1;
-            }
-            n10 = kq_02.equals((Object)kq_0.backgroundPainter) ? 1 : 0;
-        }
-        if (string != null) {
-            if (n10 != 0) {
-                return 2;
-            }
-            n10 = 0;
-        }
-        return n10;
-    }
+                        var26.lineTo(var39, var10002);
+                     }
 
-    private Point X(int n10, int n11, int n12, int n13, int n14) {
-        String string = hd_0.X();
-        int n15 = n10;
-        int n16 = 1;
-        if (string != null) {
-            if (n15 == n16) {
-                return new Point(n11, n12);
-            }
-            n15 = n10;
-            n16 = 3;
-        }
-        if (string != null) {
-            if (n15 == n16) {
-                return new Point(n11, n12 + n14);
-            }
-            n15 = n10;
-            n16 = 2;
-        }
-        if (n15 == n16) {
-            return new Point(n11, n12);
-        }
-        return new Point(n11 + n13, n12);
-    }
+                     label335: {
+                        var10000 = this.r;
+                        if (var5 != null) {
+                           if (this.r > 0) {
+                              var11.lineTo((float)var3.left, (float)(this.tabPane.getHeight() - var3.bottom - this.r));
+                              var11.quadTo(
+                                 (float)var3.left,
+                                 (float)(this.tabPane.getHeight() - var3.bottom),
+                                 (float)(var3.left + this.r),
+                                 (float)(this.tabPane.getHeight() - var3.bottom)
+                              );
+                              var11.lineTo((float)(this.tabPane.getWidth() - var3.right - this.r), (float)(this.tabPane.getHeight() - var3.bottom));
+                              var11.quadTo(
+                                 (float)(this.tabPane.getWidth() - var3.right),
+                                 (float)(this.tabPane.getHeight() - var3.bottom),
+                                 (float)(this.tabPane.getWidth() - var3.right),
+                                 (float)(this.tabPane.getHeight() - var3.bottom - this.r)
+                              );
+                              if (var5 != null) {
+                                 break label335;
+                              }
+                           }
 
-    private Point K(int n10, int n11, int n12, int n13, int n14) {
-        String string = hd_0.X();
-        int n15 = n10;
-        int n16 = 1;
-        if (string != null) {
-            if (n15 == n16) {
-                return new Point(n11, n12 + n14 - 4);
-            }
-            n15 = n10;
-            n16 = 3;
-        }
-        if (string != null) {
-            if (n15 == n16) {
-                return new Point(n11, n12 + 4);
-            }
-            n15 = n10;
-            n16 = 2;
-        }
-        if (n15 == n16) {
-            return new Point(n11 + n13 - 4, n12);
-        }
-        return new Point(n11 + 4, n12);
-    }
-
-    @Override
-    protected void paintContentBorder(Graphics graphics, int n10, int n11) {
-        block28: {
-            Object object;
-            Graphics2D graphics2D;
-            block24: {
-                Insets insets;
-                int n12;
-                block29: {
-                    Rectangle rectangle;
-                    String string;
-                    block27: {
-                        GeneralPath generalPath;
-                        int n13;
-                        Shape shape;
-                        block25: {
-                            block26: {
-                                block19: {
-                                    block20: {
-                                        block23: {
-                                            Shape shape2;
-                                            int n14;
-                                            block21: {
-                                                block22: {
-                                                    block18: {
-                                                        block17: {
-                                                            block16: {
-                                                                graphics2D = (Graphics2D)graphics;
-                                                                object = RV.X(graphics2D);
-                                                                string = hd_0.X();
-                                                                n12 = this.M(n10);
-                                                                insets = this.tabPane.getInsets();
-                                                                if (string == null) break block16;
-                                                                if (n10 != 1 && n10 != 3) break block17;
-                                                                ++insets.right;
-                                                            }
-                                                            if (string != null) break block18;
-                                                        }
-                                                        ++insets.bottom;
-                                                    }
-                                                    rectangle = n11 != -1 ? this.getTabBounds(this.tabPane, n11) : null;
-                                                    shape = this.j(n10, n12, insets, rectangle);
-                                                    n13 = this.R.equals((Object)ij_2.standalone);
-                                                    if (string == null) break block19;
-                                                    if (n13 == 0) break block20;
-                                                    generalPath = new GeneralPath(0);
-                                                    generalPath.append(new Rectangle2D.Double(0.0, 0.0, this.tabPane.getWidth(), this.tabPane.getHeight()), false);
-                                                    generalPath.append(shape, false);
-                                                    n14 = this.w.containsKey(n11);
-                                                    if (string == null) break block21;
-                                                    if (n14 == 0) break block22;
-                                                    shape2 = RV.n(graphics2D, shape);
-                                                    ((og_2)this.w.get(n11)).u(graphics2D, shape.getBounds(), this.tabPane);
-                                                    RV.w(graphics2D, shape2);
-                                                    if (string != null) break block23;
-                                                }
-                                                n14 = n11;
-                                            }
-                                            shape2 = n14 != -1 ? this.tabPane.getBackgroundAt(n11) : null;
-                                            Object object2 = shape2;
-                                            if (string != null) {
-                                                object2 = object2 != null ? shape2 : this.tabPane.getBackground();
-                                            }
-                                            graphics2D.setPaint((Paint)object2);
-                                            graphics2D.fill(shape);
-                                        }
-                                        graphics2D.setPaint(this.g);
-                                        GA.l(graphics2D, null, GO.F3, shape, null, this.tabPane.isFocusOwner());
-                                        if (string != null) break block24;
-                                    }
-                                    n13 = this.w.containsKey(n11) ? 1 : 0;
-                                }
-                                if (string == null) break block25;
-                                if (n13 == 0) break block26;
-                                ((og_2)this.w.get(n11)).u(graphics2D, shape.getBounds(), this.tabPane);
-                                if (string != null) break block27;
-                            }
-                            n13 = n11;
+                           var10000 = this.f;
                         }
-                        Serializable serializable = generalPath = n13 != -1 ? this.tabPane.getBackgroundAt(n11) : null;
-                        if (string != null) {
-                            serializable = serializable != null ? generalPath : this.tabPane.getBackground();
+
+                        if (var10000 != 0) {
+                           var11.moveTo((float)(this.tabPane.getWidth() - var3.right), (float)(this.tabPane.getHeight() - var3.bottom));
+                           if (var5 != null) {
+                              break label335;
+                           }
                         }
-                        graphics2D.setPaint((Paint)((Object)serializable));
-                        graphics2D.fill(shape);
-                    }
-                    graphics2D.setPaint(this.g);
-                    if (string == null) break block28;
-                    if (n10 != 1) break block24;
-                    if (rectangle == null) break block29;
-                    int n15 = insets.left;
-                    int n16 = rectangle.x;
-                    if (string != null) {
-                        if (n15 < n16) {
-                            graphics2D.drawLine(insets.left, insets.top + n12, rectangle.x, insets.top + n12);
+
+                        var11.lineTo((float)var3.left, (float)(this.tabPane.getHeight() - var3.bottom));
+                        var11.lineTo((float)(this.tabPane.getWidth() - var3.right), (float)(this.tabPane.getHeight() - var3.bottom));
+                     }
+
+                     label336: {
+                        var10000 = var4.x + var4.width;
+                        label262:
+                        if (var5 != null) {
+                           if (var10000 < this.tabPane.getWidth() - var3.right - this.r) {
+                              var10000 = this.r;
+                              if (var5 == null) {
+                                 break label262;
+                              }
+
+                              if (this.r > 0) {
+                                 var11.lineTo((float)(this.tabPane.getWidth() - var3.right), (float)(var13 + this.r));
+                                 var11.quadTo(
+                                    (float)(this.tabPane.getWidth() - var3.right),
+                                    (float)var13,
+                                    (float)(this.tabPane.getWidth() - var3.right - this.r),
+                                    (float)var13
+                                 );
+                                 if (var5 != null) {
+                                    break label336;
+                                 }
+                              }
+                           }
+
+                           var10000 = this.f;
                         }
-                        n15 = rectangle.x + rectangle.width;
-                        n16 = this.tabPane.getWidth() - insets.right;
-                    }
-                    if (n15 >= n16) break block24;
-                    graphics2D.drawLine(rectangle.x + rectangle.width, insets.top + n12, this.tabPane.getWidth() - insets.right, insets.top + n12);
-                    if (string != null) break block24;
-                }
-                graphics2D.drawLine(insets.left, insets.top + n12, this.tabPane.getWidth() - insets.right, insets.top + n12);
+
+                        if (var10000 != 0) {
+                           var11.moveTo((float)(this.tabPane.getWidth() - var3.right), (float)var13);
+                           if (var5 != null) {
+                              break label336;
+                           }
+                        }
+
+                        var11.lineTo((float)(this.tabPane.getWidth() - var3.right), (float)var13);
+                     }
+
+                     var11.lineTo((float)(var4.x + var4.width), (float)var13);
+                     if (var5 != null) {
+                        return var11;
+                     }
+                  }
+
+                  var10000 = var1;
+                  var38 = 3;
+               }
+
+               if (var5 != null) {
+                  if (var10000 == var38) {
+                     int var14;
+                     label240: {
+                        var14 = this.tabPane.getHeight() - var3.bottom - var2;
+                        GeneralPath var29 = var11;
+                        float var40 = (float)var4.x;
+                        float var43 = (float)var14;
+                        if (var5 != null) {
+                           var11.moveTo(var40, var43);
+                           if (var4.x > var3.left + this.r && this.r > 0) {
+                              var11.lineTo((float)(var3.left + this.r), (float)var14);
+                              var11.quadTo((float)var3.left, (float)var14, (float)var3.left, (float)(var14 - this.r));
+                              if (var5 != null) {
+                                 break label240;
+                              }
+                           }
+
+                           var29 = var11;
+                           var40 = (float)var3.left;
+                           var43 = (float)var14;
+                        }
+
+                        var29.lineTo(var40, var43);
+                     }
+
+                     label232: {
+                        if (this.r > 0) {
+                           var11.lineTo((float)var3.left, (float)(var3.top + this.r));
+                           var11.quadTo((float)var3.left, (float)var3.top, (float)(var3.left + this.r), (float)var3.top);
+                           var11.lineTo((float)(this.tabPane.getWidth() - var3.right - this.r), (float)var3.top);
+                           var11.quadTo(
+                              (float)(this.tabPane.getWidth() - var3.right),
+                              (float)var3.top,
+                              (float)(this.tabPane.getWidth() - var3.right),
+                              (float)(var3.top + this.r)
+                           );
+                           if (var5 != null) {
+                              break label232;
+                           }
+                        }
+
+                        var11.lineTo((float)var3.left, (float)var3.top);
+                        var11.lineTo((float)(this.tabPane.getWidth() - var3.right), (float)var3.top);
+                     }
+
+                     label227: {
+                        label226: {
+                           var10000 = var4.x + var4.width;
+                           if (var5 != null) {
+                              if (var10000 >= this.tabPane.getWidth() - var3.right - this.r) {
+                                 break label226;
+                              }
+
+                              var10000 = this.r;
+                           }
+
+                           if (var10000 > 0) {
+                              var11.lineTo((float)(this.tabPane.getWidth() - var3.right), (float)(var14 - this.r));
+                              var11.quadTo(
+                                 (float)(this.tabPane.getWidth() - var3.right),
+                                 (float)var14,
+                                 (float)(this.tabPane.getWidth() - var3.right - this.r),
+                                 (float)var14
+                              );
+                              if (var5 != null) {
+                                 break label227;
+                              }
+                           }
+                        }
+
+                        var11.lineTo((float)(this.tabPane.getWidth() - var3.right), (float)var14);
+                     }
+
+                     var11.lineTo((float)(var4.x + var4.width), (float)var14);
+                     if (var5 != null) {
+                        return var11;
+                     }
+                  }
+
+                  var10000 = var1;
+                  var38 = 2;
+               }
+
+               if (var5 != null) {
+                  if (var10000 == var38) {
+                     int var15;
+                     label209: {
+                        var15 = var3.left + var2;
+                        GeneralPath var31 = var11;
+                        float var41 = (float)var15;
+                        float var44 = (float)var4.y;
+                        if (var5 != null) {
+                           var11.moveTo(var41, var44);
+                           if (var4.y > var3.top + this.r && this.r > 0) {
+                              var11.lineTo((float)var15, (float)(var3.top + this.r));
+                              var11.quadTo((float)var15, (float)var3.top, (float)(var15 + this.r), (float)var3.top);
+                              if (var5 != null) {
+                                 break label209;
+                              }
+                           }
+
+                           var31 = var11;
+                           var41 = (float)var15;
+                           var44 = (float)var3.top;
+                        }
+
+                        var31.lineTo(var41, var44);
+                     }
+
+                     label201: {
+                        if (this.r > 0) {
+                           var11.lineTo((float)(this.tabPane.getWidth() - var3.right - this.r), (float)var3.top);
+                           var11.quadTo(
+                              (float)(this.tabPane.getWidth() - var3.right),
+                              (float)var3.top,
+                              (float)(this.tabPane.getWidth() - var3.right),
+                              (float)(var3.top + this.r)
+                           );
+                           var11.lineTo((float)(this.tabPane.getWidth() - var3.right), (float)(this.tabPane.getHeight() - var3.bottom - this.r));
+                           var11.quadTo(
+                              (float)(this.tabPane.getWidth() - var3.right),
+                              (float)(this.tabPane.getHeight() - var3.bottom),
+                              (float)(this.tabPane.getWidth() - var3.right - this.r),
+                              (float)(this.tabPane.getHeight() - var3.bottom)
+                           );
+                           if (var5 != null) {
+                              break label201;
+                           }
+                        }
+
+                        var11.lineTo((float)(this.tabPane.getWidth() - var3.right), (float)var3.top);
+                        var11.lineTo((float)(this.tabPane.getWidth() - var3.right), (float)(this.tabPane.getHeight() - var3.bottom));
+                     }
+
+                     label196: {
+                        label195: {
+                           var10000 = var4.y + var4.height;
+                           if (var5 != null) {
+                              if (var10000 >= this.tabPane.getHeight() - var3.bottom - this.r) {
+                                 break label195;
+                              }
+
+                              var10000 = this.r;
+                           }
+
+                           if (var10000 > 0) {
+                              var11.lineTo((float)(var15 + this.r), (float)(this.tabPane.getHeight() - var3.bottom));
+                              var11.quadTo(
+                                 (float)var15,
+                                 (float)(this.tabPane.getHeight() - var3.bottom),
+                                 (float)var15,
+                                 (float)(this.tabPane.getHeight() - var3.bottom - this.r)
+                              );
+                              if (var5 != null) {
+                                 break label196;
+                              }
+                           }
+                        }
+
+                        var11.lineTo((float)var15, (float)(this.tabPane.getHeight() - var3.bottom));
+                     }
+
+                     var11.lineTo((float)var15, (float)(var4.y + var4.height));
+                     if (var5 != null) {
+                        return var11;
+                     }
+                  }
+
+                  var10000 = this.tabPane.getWidth() - var3.right;
+                  var38 = var2;
+               }
+
+               int var16;
+               label182: {
+                  var16 = var10000 - var38;
+                  GeneralPath var33 = var11;
+                  float var42 = (float)var16;
+                  float var45 = (float)var4.y;
+                  if (var5 != null) {
+                     var11.moveTo(var42, var45);
+                     if (var4.y > var3.top + this.r && this.r > 0) {
+                        var11.lineTo((float)var16, (float)(var3.top + this.r));
+                        var11.quadTo((float)var16, (float)var3.top, (float)(var16 - this.r), (float)var3.top);
+                        if (var5 != null) {
+                           break label182;
+                        }
+                     }
+
+                     var33 = var11;
+                     var42 = (float)var16;
+                     var45 = (float)var3.top;
+                  }
+
+                  var33.lineTo(var42, var45);
+               }
+
+               label174: {
+                  if (this.r > 0) {
+                     var11.lineTo((float)(var3.left + this.r), (float)var3.top);
+                     var11.quadTo((float)var3.left, (float)var3.top, (float)var3.left, (float)(var3.top + this.r));
+                     var11.lineTo((float)var3.left, (float)(this.tabPane.getHeight() - var3.bottom - this.r));
+                     var11.quadTo(
+                        (float)var3.left,
+                        (float)(this.tabPane.getHeight() - var3.bottom),
+                        (float)(var3.left + this.r),
+                        (float)(this.tabPane.getHeight() - var3.bottom)
+                     );
+                     if (var5 != null) {
+                        break label174;
+                     }
+                  }
+
+                  var11.lineTo((float)var3.left, (float)var3.top);
+                  var11.lineTo((float)var3.left, (float)(this.tabPane.getHeight() - var3.bottom));
+               }
+
+               label169: {
+                  label168: {
+                     var10000 = var4.y + var4.height;
+                     if (var5 != null) {
+                        if (var10000 >= this.tabPane.getHeight() - var3.bottom - this.r) {
+                           break label168;
+                        }
+
+                        var10000 = this.r;
+                     }
+
+                     if (var10000 > 0) {
+                        var11.lineTo((float)(var16 - this.r), (float)(this.tabPane.getHeight() - var3.bottom));
+                        var11.quadTo(
+                           (float)var16,
+                           (float)(this.tabPane.getHeight() - var3.bottom),
+                           (float)var16,
+                           (float)(this.tabPane.getHeight() - var3.bottom - this.r)
+                        );
+                        if (var5 != null) {
+                           break label169;
+                        }
+                     }
+                  }
+
+                  var11.lineTo((float)var16, (float)(this.tabPane.getHeight() - var3.bottom));
+               }
+
+               var11.lineTo((float)var16, (float)(var4.y + var4.height));
+               return var11;
             }
-            RV.X(graphics2D, object);
-        }
-    }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    public int M(int n10) {
-        int n11;
-        int n12;
-        int n13;
-        block4: {
-            block5: {
-                int n14;
-                int n15;
-                block2: {
-                    block3: {
-                        String string = hd_0.X();
-                        n15 = n10;
-                        n14 = 1;
-                        if (string == null) break block2;
-                        if (n15 == n14) break block3;
-                        n13 = n10;
-                        n12 = 3;
-                        if (string == null) break block4;
-                        if (n13 != n12) break block5;
-                    }
-                    n15 = this.calculateTabAreaHeight(n10, this.runCount, this.maxTabHeight);
-                    n14 = 1;
-                }
-                n11 = n15 - n14;
-                return n11;
+            var10000 = var1;
+            if (var5 != null) {
+               var10000 = var1 == 1 ? 1 : 0;
             }
-            n13 = this.calculateTabAreaWidth(n10, this.runCount, this.maxTabWidth);
-            n12 = 1;
-        }
-        n11 = n13 - n12;
-        return n11;
-    }
 
-    /*
-     * Exception decompiling
-     */
-    private Shape j(int var1_1, int var2_2, Insets var3_3, Rectangle var4_4) {
-        /*
-         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
-         * 
-         * org.benf.cfr.reader.util.ConfusedCFRException: Statement already marked as first in another block
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.markFirstStatementInBlock(Op03SimpleStatement.java:461)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.Misc.markWholeBlock(Misc.java:251)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.considerAsSimpleIf(ConditionalRewriter.java:673)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.identifyNonjumpingConditionals(ConditionalRewriter.java:56)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:722)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
-         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
-         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
-         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
-         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
-         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
-         *     at org.benf.cfr.reader.Main.main(Main.java:54)
-         */
-        throw new IllegalStateException("Decompilation failed");
-    }
-
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public Shape N() {
-        RoundRectangle2D.Double double_ = null;
-        int n10 = this.tabPane.getTabPlacement();
-        int n11 = this.M(n10);
-        String string = hd_0.X();
-        Insets insets = this.tabPane.getInsets();
-        int n12 = n10;
-        int n13 = 1;
-        if (string != null) {
-            if (n12 == n13) {
-                return new RoundRectangle2D.Double(insets.left, insets.top + n11, this.tabPane.getWidth() - insets.left - insets.right, this.tabPane.getHeight() - insets.top - n11 - insets.bottom, this.r * 2, this.r * 2);
+            int var10 = var10000;
+            var10000 = var1;
+            if (var5 != null) {
+               var10000 = var1 == 3 ? 1 : 0;
             }
-            n12 = n10;
-            n13 = 3;
-        }
-        if (string != null) {
-            if (n12 == n13) {
-                return new RoundRectangle2D.Double(insets.left, insets.top, this.tabPane.getWidth() - insets.left - insets.right, this.tabPane.getHeight() - insets.top - n11 - insets.bottom, this.r * 2, this.r * 2);
+
+            int var12 = var10000;
+            var10000 = var1;
+            if (var5 != null) {
+               var10000 = var1 == 2 ? 1 : 0;
             }
-            n12 = n10;
-            n13 = 2;
-        }
-        if (string != null) {
-            if (n12 == n13) {
-                return new RoundRectangle2D.Double(insets.left + n11, insets.top, this.tabPane.getWidth() - insets.left - n11 - insets.right, this.tabPane.getHeight() - insets.top - insets.bottom, this.r * 2, this.r * 2);
+
+            int var17 = var10000;
+            var10000 = var1;
+            if (var5 != null) {
+               var10000 = var1 == 4 ? 1 : 0;
             }
-            n12 = n10;
-            n13 = 4;
-        }
-        if (n12 != n13) return double_;
-        return new RoundRectangle2D.Double(insets.left, insets.top, this.tabPane.getWidth() - insets.left - n11 - insets.right, this.tabPane.getHeight() - insets.top - insets.bottom, this.r * 2, this.r * 2);
-    }
 
-    @Override
-    protected void paintFocusIndicator(Graphics graphics, int n10, Rectangle[] rectangleArray, int n11, Rectangle rectangle, Rectangle rectangle2, boolean bl) {
-    }
+            int var18 = var10000;
+            return new java.awt.geom.RoundRectangle2D.Double(
+               (double)(var3.left + (var17 != 0 ? var2 : 0)),
+               (double)(var3.top + (var10 != 0 ? var2 : 0)),
+               (double)(this.tabPane.getWidth() - var3.left - var3.right - (var17 == 0 && var18 == 0 ? 0 : var2)),
+               (double)(this.tabPane.getHeight() - var3.top - var3.bottom - (var10 == 0 && var12 == 0 ? 0 : var2)),
+               (double)(this.r * 2),
+               (double)(this.r * 2)
+            );
+         }
 
-    @Override
-    public void paint(Graphics graphics, JComponent jComponent) {
-        block3: {
-            og_2 og_22;
-            block2: {
-                String string = hd_0.X();
-                og_22 = this.C;
-                if (string == null) break block2;
-                if (og_22 == null) break block3;
-                og_22 = this.C;
+         var10000 = var3.left;
+      }
+
+      int var10001 = var1;
+      if (var5 != null) {
+         var10001 = var1 == 2 ? var2 : 0;
+      }
+
+      int var6 = var10000 + var10001;
+      var10001 = var1;
+      if (var5 != null) {
+         var10001 = var1 == 1 ? var2 : 0;
+      }
+
+      int var7;
+      var7 = var3.top + var10001;
+      var10000 = this.tabPane.getWidth() - var3.left - var3.right;
+      var10001 = var1;
+      label325:
+      if (var5 != null) {
+         if (var1 != 2) {
+            var10001 = var1;
+            if (var5 == null) {
+               break label325;
             }
-            og_22.u((Graphics2D)graphics, FN.N(jComponent), jComponent);
-        }
-        Map map = FN.B(graphics);
-        super.paint(graphics, jComponent);
-        FN.O(graphics, map);
-    }
 
-    static JTabbedPane q(KV kV) {
-        return kV.tabPane;
-    }
-
-    static JTabbedPane C(KV kV) {
-        return kV.tabPane;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "HWmjf)O}Xj&p(syU{mg\u000bpnShzl8qx".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 100;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+            if (var1 != 4) {
+               var10001 = 0;
+               break label325;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 120;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 82;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 107;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 108;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 103;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 41;
-                            break;
-                        }
-                        default: {
-                            n17 = 123;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        d = new String(cArray).intern();
-    }
+         }
+
+         var10001 = var2;
+      }
+
+      int var8;
+      var8 = var10000 - var10001;
+      var10000 = this.tabPane.getHeight() - var3.top - var3.bottom;
+      var10001 = var1;
+      label317:
+      if (var5 != null) {
+         if (var1 != 1) {
+            var10001 = var1;
+            if (var5 == null) {
+               break label317;
+            }
+
+            if (var1 != 3) {
+               var10001 = 0;
+               break label317;
+            }
+         }
+
+         var10001 = var2;
+      }
+
+      int var9 = var10000 - var10001;
+      return new Rectangle(var6, var7, var8 + 1, var9);
+   }
+
+   public Shape N$Shape() {
+      java.awt.geom.RoundRectangle2D.Double var2 = null;
+      int var3 = this.tabPane.getTabPlacement();
+      String var10000 = Hd_2.X();
+      int var4 = this.M(var3);
+      String var1 = var10000;
+      Insets var5 = this.tabPane.getInsets();
+      int var6 = var3;
+      byte var10001 = 1;
+      if (var1 != null) {
+         if (var3 == 1) {
+            var2 = new java.awt.geom.RoundRectangle2D.Double(
+               (double)var5.left,
+               (double)(var5.top + var4),
+               (double)(this.tabPane.getWidth() - var5.left - var5.right),
+               (double)(this.tabPane.getHeight() - var5.top - var4 - var5.bottom),
+               (double)(this.r * 2),
+               (double)(this.r * 2)
+            );
+            return var2;
+         }
+
+         var6 = var3;
+         var10001 = 3;
+      }
+
+      if (var1 != null) {
+         if (var6 == var10001) {
+            var2 = new java.awt.geom.RoundRectangle2D.Double(
+               (double)var5.left,
+               (double)var5.top,
+               (double)(this.tabPane.getWidth() - var5.left - var5.right),
+               (double)(this.tabPane.getHeight() - var5.top - var4 - var5.bottom),
+               (double)(this.r * 2),
+               (double)(this.r * 2)
+            );
+            return var2;
+         }
+
+         var6 = var3;
+         var10001 = 2;
+      }
+
+      if (var1 != null) {
+         if (var6 == var10001) {
+            var2 = new java.awt.geom.RoundRectangle2D.Double(
+               (double)(var5.left + var4),
+               (double)var5.top,
+               (double)(this.tabPane.getWidth() - var5.left - var4 - var5.right),
+               (double)(this.tabPane.getHeight() - var5.top - var5.bottom),
+               (double)(this.r * 2),
+               (double)(this.r * 2)
+            );
+            return var2;
+         }
+
+         var6 = var3;
+         var10001 = 4;
+      }
+
+      if (var6 == var10001) {
+         var2 = new java.awt.geom.RoundRectangle2D.Double(
+            (double)var5.left,
+            (double)var5.top,
+            (double)(this.tabPane.getWidth() - var5.left - var4 - var5.right),
+            (double)(this.tabPane.getHeight() - var5.top - var5.bottom),
+            (double)(this.r * 2),
+            (double)(this.r * 2)
+         );
+      }
+
+      return var2;
+   }
+
+   @Override
+   protected void paintFocusIndicator(Graphics var1, int var2, Rectangle[] var3, int var4, Rectangle var5, Rectangle var6, boolean var7) {
+   }
+
+   @Override
+   public void paint(Graphics var1, JComponent var2) {
+      label13: {
+         String var3 = Hd_2.X();
+         com.og_4 var10000 = this.C;
+         if (var3 != null) {
+            if (this.C == null) {
+               break label13;
+            }
+
+            var10000 = this.C;
+         }
+
+         var10000.u((Graphics2D)var1, com.FN.N(var2), var2);
+      }
+
+      Map var4 = com.FN.B(var1);
+      super.paint(var1, var2);
+      com.FN.O(var1, var4);
+   }
+
+   static JTabbedPane q(com.KV var0) {
+      return var0.tabPane;
+   }
+
+   static JTabbedPane C(com.KV var0) {
+      return var0.tabPane;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "HWmjf)O}Xj&p(syU{mg\u000bpnShzl8qx".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 100;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 100;
+         var10006 = var0;
+      } else {
+         var6 = 100;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            d = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 100;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 120;
+               break;
+            case 1:
+               var23 = 82;
+               break;
+            case 2:
+               var23 = 107;
+               break;
+            case 3:
+               var23 = 108;
+               break;
+            case 4:
+               var23 = 103;
+               break;
+            case 5:
+               var23 = 41;
+               break;
+            default:
+               var23 = 123;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               d = var8;
+               return;
+            }
+
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

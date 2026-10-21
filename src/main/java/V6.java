@@ -1,64 +1,67 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class V6
-extends FilterInputStream {
-    long r = 0L;
-    int h = 0;
-    private boolean E = false;
-    private static final long a;
-    private static final long b;
+public class V6 extends FilterInputStream {
+   long r = 0L;
+   int h = 0;
+   private boolean E = false;
+   private static final long a;
+   private static final long b;
 
-    public V6(InputStream inputStream) {
-        super(inputStream);
-    }
+   public V6(InputStream var1) {
+      super(var1);
+   }
 
-    public int L(long l2) throws IOException {
-        block4: {
-            int n10;
-            block3: {
-                boolean bl = CK.r();
-                try {
-                    n10 = this.E;
-                    if (!bl) break block3;
-                    if (n10 == 0) break block4;
-                }
-                catch (IOException iOException) {
-                    throw V6.a(iOException);
-                }
-                n10 = (int)a;
+   public int L(long var1) throws IOException {
+      boolean var3 = CK.r();
+
+      label34: {
+         try {
+            if (!var3) {
+               return this.E;
             }
-            return n10;
-        }
-        long l3 = System.currentTimeMillis();
-        int n11 = this.read();
-        long l4 = System.currentTimeMillis() - l3;
-        if (l4 > b) {
-            // empty if block
-        }
-        return n11;
-    }
 
-    public void M() {
-        this.E = true;
-    }
+            if (!this.E) {
+               break label34;
+            }
+         } catch (IOException var9) {
+            throw a(var9);
+         }
 
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
+         return (int)a;
+      }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 3873445675594635695L;
-        a = 0xAF96D6A7CE9759B7L ^ l2;
-        long l3 = 8278478027844939072L;
-        b = 0x72E30FE7B292EF18L ^ l3;
-    }
+      long var4 = System.currentTimeMillis();
+      int var6 = this.read();
+      long var7 = System.currentTimeMillis() - var4;
+      if (var7 > b) {
+      }
+
+      return var6;
+   }
+
+   public void M() {
+      this.E = true;
+   }
+
+   private static IOException a(IOException var0) {
+      return var0;
+   }
+
+   static {
+      long var2 = 3873445675594635695L;
+      long var10002 = -5794207854351656521L ^ var2;
+      byte var10001 = -1;
+      a = var10002;
+      long var0 = 8278478027844939072L;
+      var10002 = 8278478027844939544L ^ var0;
+      var10001 = -1;
+      b = var10002;
+   }
 }
+
+
+
+
 

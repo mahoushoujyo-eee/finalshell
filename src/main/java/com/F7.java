@@ -1,25 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FY;
-import com.i2_0;
 import java.lang.ref.WeakReference;
 import javax.swing.JComponent;
 import javax.swing.event.AncestorEvent;
 
-class F7
-extends FY {
-    final WeakReference m;
+class F7 extends com.FY {
+   final WeakReference m;
 
-    F7(WeakReference weakReference) {
-        this.m = weakReference;
-    }
+   F7(WeakReference var1) {
+      this.m = var1;
+   }
 
-    @Override
-    public void ancestorAdded(AncestorEvent ancestorEvent) {
-        i2_0.s((JComponent)this.m.get());
-    }
+   @Override
+   public void ancestorAdded(AncestorEvent var1) {
+      i2_2.s((JComponent)this.m.get());
+   }
 }
+
+
+
+
 

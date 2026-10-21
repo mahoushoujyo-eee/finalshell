@@ -1,219 +1,220 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import javax.swing.table.AbstractTableModel;
 
-public class FZ
-extends AbstractTableModel {
-    ArrayList W;
-    public static String h;
-    public static String e;
-    public static String T;
-    public static String f;
-    public static String n;
-    public static String a;
-    public static String v;
-    String[] c;
+public class FZ extends AbstractTableModel {
+   ArrayList W;
+   public static String h;
+   public static String e;
+   public static String T;
+   public static String f;
+   public static String n;
+   public static String a;
+   public static String v;
+   String[] c;
 
-    public FZ() {
-        this.W = new ArrayList();
-        this.c = new String[]{(String)FZ.h, (String)FZ.e, (String)FZ.f, (String)FZ.v, (String)FZ.n};
-    }
+   public FZ() {
+      com.c.c(237144780372120098L).set(this, new ArrayList());
+      com.c.c(627058192739429618L)
+         .set(
+            this,
+            new String[]{
+               (String)com.c.c(177629519952511192L).get(null),
+               (String)com.c.c(474571876908350800L).get(null),
+               (String)com.c.c(559539778834483789L).get(null),
+               (String)com.c.c(151628481709564751L).get(null),
+               (String)com.c.c(148020468297314945L).get(null)
+            }
+         );
+   }
 
-    @Override
-    public int getRowCount() {
-        return ((ArrayList)this.W).size();
-    }
+   @Override
+   public int getRowCount() {
+      return ((ArrayList)com.c.c(237144780372120098L).get(this)).size();
+   }
 
-    @Override
-    public String getColumnName(int n10) {
-        return ((String[])this.c)[n10];
-    }
+   @Override
+   public String getColumnName(int var1) {
+      return ((String[])com.c.c(627058192739429618L).get(this))[var1];
+   }
 
-    @Override
-    public int getColumnCount() {
-        return ((String[])this.c).length;
-    }
+   @Override
+   public int getColumnCount() {
+      return ((String[])com.c.c(627058192739429618L).get(this)).length;
+   }
 
-    @Override
-    public Object getValueAt(int n10, int n11) {
-        return ((ArrayList)this.W).get(n10);
-    }
+   @Override
+   public Object getValueAt(int var1, int var2) {
+      return ((ArrayList)com.c.c(237144780372120098L).get(this)).get(var1);
+   }
 
-    public void X(ArrayList arrayList) {
-        this.W = arrayList;
-        this.fireTableDataChanged();
-    }
+   public void X(ArrayList var1) {
+      com.c.c(237144780372120098L).set(this, var1);
+      this.fireTableDataChanged();
+   }
 
-    public void a(cn_2 cn_22) {
-        int n10;
-        int n11;
-        try {
-            n11 = (Integer)cn_22.Y();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            n10 = (Integer)cn_22.Y();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        this.fireTableRowsUpdated(n11, n10);
-    }
+   public void a(cn_4 var1) {
+      Object[] var10002 = com.c.f();
+      Method var10004 = com.c.d(406073307634140563L);
+      Object[] var10003 = var10002;
+      cn_4 var5 = var1;
+      Method var10001 = var10004;
 
-    public ArrayList a() {
-        return (ArrayList)this.W;
-    }
+      try {
+         var4 = (Integer)var10001.invoke(var5, var10003);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
 
-    public void s(ArrayList arrayList) {
-        this.W = arrayList;
-    }
+      var10003 = com.c.f();
+      Method var10005 = com.c.d(406073307634140563L);
+      Object[] var10 = var10003;
+      cn_4 var9 = var1;
+      Method var6 = var10005;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block20: {
-            block19: {
-                var0 = new String[6];
-                var4_1 = 0;
-                var3_2 = "\u4f05\u7f49\u0004\u5ebe\u8ff8\u007fX\u0002\u5399\u9026\u0003\u4e6a\u53227";
-                var5_3 = "\u4f05\u7f49\u0004\u5ebe\u8ff8\u007fX\u0002\u5399\u9026\u0003\u4e6a\u53227".length();
-                var2_4 = 2;
-                var1_5 = -1;
-lbl7:
-                // 2 sources
+      try {
+         var7 = (Integer)var6.invoke(var9, var10);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
 
-                while (true) {
-                    v0 = 35;
-                    v1 = ++var1_5;
-                    v2 = var3_2.substring(v1, v1 + var2_4);
-                    v3 = -1;
-                    break block19;
-                    break;
-                }
-lbl13:
-                // 1 sources
+      this.fireTableRowsUpdated(var4, var7);
+   }
 
-                while (true) {
-                    var0[var4_1++] = v4.intern();
-                    if ((var1_5 += var2_4) < var5_3) {
-                        var2_4 = var3_2.charAt(var1_5);
-                        ** continue;
-                    }
-                    var3_2 = "\u4e75\u671b\u5419\u0002\u0007q";
-                    var5_3 = "\u4e75\u671b\u5419\u0002\u0007q".length();
-                    var2_4 = 3;
-                    var1_5 = -1;
-lbl22:
-                    // 2 sources
+   public ArrayList a() {
+      return (ArrayList)com.c.c(237144780372120098L).get(this);
+   }
 
-                    while (true) {
-                        v0 = 37;
-                        v5 = ++var1_5;
-                        v2 = var3_2.substring(v5, v5 + var2_4);
-                        v3 = 0;
-                        break block19;
+   public void s(ArrayList var1) {
+      com.c.c(237144780372120098L).set(this, var1);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var0 = new String[6];
+      int var4 = 0;
+      String var3 = "伅罉\u0004庾迸\u007fX\u0002厙逦\u0003乪匢7";
+      int var5 = "伅罉\u0004庾迸\u007fX\u0002厙逦\u0003乪匢7".length();
+      char var2 = 2;
+      int var8 = -1;
+
+      label53:
+      while (true) {
+         byte var10000 = 35;
+         String var10001 = var3.substring(++var8, var8 + var2);
+         byte var10002 = -1;
+
+         while (true) {
+            label48: {
+               char[] var24 = var10001.toCharArray();
+               int var10004 = var24.length;
+               int var6 = 0;
+               byte var27 = var10000;
+               var20 = var24;
+               int var14 = var10004;
+               byte var32;
+               char[] var36;
+               int var10006;
+               if (var10004 <= 1) {
+                  var36 = var24;
+                  var32 = var10000;
+                  var10006 = var6;
+               } else {
+                  var27 = var10000;
+                  var14 = var10004;
+                  if (var10004 <= var6) {
+                     break label48;
+                  }
+
+                  var36 = var24;
+                  var32 = var10000;
+                  var10006 = var6;
+               }
+
+               while (true) {
+                  char var45 = var36[var10006];
+                  byte var46;
+                  switch (var6 % 7) {
+                     case 0:
+                        var46 = 107;
                         break;
-                    }
-                    break;
-                }
-lbl28:
-                // 1 sources
+                     case 1:
+                        var46 = 4;
+                        break;
+                     case 2:
+                        var46 = 49;
+                        break;
+                     case 3:
+                        var46 = 8;
+                        break;
+                     case 4:
+                        var46 = 94;
+                        break;
+                     case 5:
+                        var46 = 101;
+                        break;
+                     default:
+                        var46 = 20;
+                  }
 
-                while (true) {
-                    var0[var4_1++] = v4.intern();
-                    if ((var1_5 += var2_4) < var5_3) {
-                        var2_4 = var3_2.charAt(var1_5);
-                        ** continue;
-                    }
-                    break block20;
-                    break;
-                }
+                  var36[var10006] = (char)(var45 ^ var32 ^ var46);
+                  var6++;
+                  if (var27 == 0) {
+                     var10006 = var27;
+                     var36 = var20;
+                     var32 = var27;
+                  } else {
+                     if (var14 <= var6) {
+                        break;
+                     }
+
+                     var36 = var20;
+                     var32 = var27;
+                     var10006 = var6;
+                  }
+               }
             }
-            v6 = v2.toCharArray();
-            v7 = v6.length;
-            var6_6 = 0;
-            v8 = v0;
-            v9 = v6;
-            v10 = v7;
-            if (v7 > 1) ** GOTO lbl85
-            do {
-                v11 = v8;
-                v9 = v9;
-                v12 = v9;
-                v13 = v8;
-                v14 = var6_6;
-                while (true) {
-                    switch (var6_6 % 7) {
-                        case 0: {
-                            v15 = 107;
-                            break;
-                        }
-                        case 1: {
-                            v15 = 4;
-                            break;
-                        }
-                        case 2: {
-                            v15 = 49;
-                            break;
-                        }
-                        case 3: {
-                            v15 = 8;
-                            break;
-                        }
-                        case 4: {
-                            v15 = 94;
-                            break;
-                        }
-                        case 5: {
-                            v15 = 101;
-                            break;
-                        }
-                        default: {
-                            v15 = 20;
-                        }
-                    }
-                    v12[v14] = (char)(v12[v14] ^ (v13 ^ v15));
-                    ++var6_6;
-                    v8 = v11;
-                    if (v11 != 0) break;
-                    v11 = v8;
-                    v9 = v9;
-                    v14 = v8;
-                    v12 = v9;
-                    v13 = v8;
-                }
-lbl85:
-                // 2 sources
 
-                v16 = v9;
-                v10 = v10;
-            } while (v10 > var6_6);
-            v4 = new String(v16);
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl95:
-                // 1 sources
+            String var29 = new String(var20).intern();
+            switch (var10002) {
+               case 0:
+                  var0[var4++] = var29;
+                  if ((var8 += var2) >= var5) {
+                     com.c.c(177629519952511192L).set(null, "");
+                     com.c.c(474571876908350800L).set(null, var0[5]);
+                     com.c.c(206646878282070142L).set(null, var0[4]);
+                     com.c.c(559539778834483789L).set(null, var0[1]);
+                     com.c.c(148020468297314945L).set(null, var0[0]);
+                     com.c.c(566410793287284886L).set(null, var0[2]);
+                     com.c.c(151628481709564751L).set(null, var0[3]);
+                     return;
+                  }
 
-                ** continue;
+                  var2 = var3.charAt(var8);
+                  break;
+               default:
+                  var0[var4++] = var29;
+                  if ((var8 += var2) < var5) {
+                     var2 = var3.charAt(var8);
+                     continue label53;
+                  }
+
+                  var3 = "乵望吙\u0002\u0007q";
+                  var5 = "乵望吙\u0002\u0007q".length();
+                  var2 = 3;
+                  var8 = -1;
             }
-        }
-        FZ.h = "";
-        FZ.e = var0[5];
-        FZ.T = var0[4];
-        FZ.f = var0[1];
-        FZ.n = var0[0];
-        FZ.a = var0[2];
-        FZ.v = var0[3];
-    }
+
+            var10000 = 37;
+            var10001 = var3.substring(++var8, var8 + var2);
+            var10002 = 0;
+         }
+      }
+   }
 }
+
+
+
+
 

@@ -1,45 +1,38 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
-import org.v.N_;
-import org.v._Z;
-import org.v.a_1;
-import org.v.fF;
-import org.v.n_2;
+class R implements n_4 {
+   final fF y;
 
-class R
-implements n_2 {
-    final fF y;
+   R(fF var1) {
+      this.y = var1;
+   }
 
-    R(fF fF2) {
-        this.y = fF2;
-    }
+   @org.F.c
+   public Void I(a_3 var1) {
+      this.y.m(var1.F);
+      return null;
+   }
 
-    @c
-    public Void I(a_1 a_12) {
-        this.y.m(a_12.F);
-        return null;
-    }
+   @org.F.c
+   public Void b(_Z var1) {
+      fF.c(this.y, var1.b, true);
+      return null;
+   }
 
-    @c
-    public Void b(_Z _Z2) {
-        fF.c(this.y, (N_)_Z2.b, true);
-        return null;
-    }
+   @org.F.c
+   @Override
+   public Object R(_Z var1) throws Throwable {
+      return this.b(var1);
+   }
 
-    @Override
-    @c
-    public Object R(_Z _Z2) throws Throwable {
-        return this.b(_Z2);
-    }
-
-    @Override
-    @c
-    public Object r(a_1 a_12) throws Throwable {
-        return this.I(a_12);
-    }
+   @org.F.c
+   @Override
+   public Object r(a_3 var1) throws Throwable {
+      return this.I(var1);
+   }
 }
+
+
+
+
 

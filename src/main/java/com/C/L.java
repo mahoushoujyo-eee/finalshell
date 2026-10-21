@@ -1,19 +1,8 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.C;
 
-import com.C.M;
-import com.C.W;
-import com.FJ;
 import com.HQ;
+import com.eL_3;
 import com.L.m;
-import com.cq_2;
-import com.el_1;
-import com.kp_0;
-import com.l9_0;
-import com.oc_1;
-import com.yh_0;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
@@ -22,1482 +11,1814 @@ import java.awt.Point;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.JList;
+import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 import javax.swing.JScrollPane;
 import javax.swing.plaf.ComboBoxUI;
 import javax.swing.plaf.basic.BasicComboPopup;
 
-public class L
-extends W
-implements HQ {
-    protected int e = cq_2.y;
-    protected boolean k = cq_2.d;
-    protected el_1 K = null;
-    protected l9_0 s = null;
-    private static final String[] g;
-    private static final String[] h;
-    private static final long[] l;
-    private static final Integer[] m;
+public class L extends com.C.W implements HQ {
+   protected int e = com.cq_4.y;
+   protected boolean k = com.cq_4.d;
+   protected eL_3 K = null;
+   protected com.l9_2 s = null;
+   private static final String[] g;
+   private static final String[] h;
+   private static final long[] l;
+   private static final Integer[] m;
 
-    public int g() {
-        return this.e;
-    }
+   public int g() {
+      return this.e;
+   }
 
-    @Override
-    public void F(int n10) {
-        this.e = n10;
-    }
+   @Override
+   public void F(int var1) {
+      this.e = var1;
+   }
 
-    public boolean s() {
-        return this.k;
-    }
+   public boolean s() {
+      return this.k;
+   }
 
-    @Override
-    public void v(boolean bl) {
-        this.k = bl;
-    }
+   @Override
+   public void v(boolean var1) {
+      this.k = var1;
+   }
 
-    @Override
-    public void b(el_1 el_12) {
-        this.K = el_12;
-    }
+   @Override
+   public void b(eL_3 var1) {
+      this.K = var1;
+   }
 
-    @Override
-    public void v(l9_0 l9_02) {
-        block3: {
-            L l2;
-            block2: {
-                this.s = l9_02;
-                int[] nArray = W.B();
-                l2 = this;
-                if (nArray != null) break block2;
-                if (l2.s != l9_0.menuBarSubMenu) break block3;
-                l2 = this;
+   @Override
+   public void v(com.l9_2 var1) {
+      int[] var10000 = com.C.W.B();
+      this.s = var1;
+      int[] var2 = var10000;
+      com.C.L var3 = this;
+      if (var2 == null) {
+         if (this.s != com.l9_2.menuBarSubMenu) {
+            return;
+         }
+
+         var3 = this;
+      }
+
+      var3.b(com.C.M.simple);
+   }
+
+   public Insets e(JPopupMenu var1) {
+      Insets var2 = super.B(var1);
+      var2.top = var2.top + this.J;
+      var2.bottom = var2.bottom + this.J;
+      return var2;
+   }
+
+   protected void t(Graphics2D var1, JPopupMenu var2) {
+      Dimension var3 = var2.getSize();
+      this.E(var1, var2, var3);
+      this.s(var1, var2, var3);
+      this.B(var1, var2, var3);
+      this.S(var1, var2, var3);
+   }
+
+   protected void B(Graphics2D var1, JPopupMenu var2, Dimension var3) {
+      int[] var4 = com.C.W.B();
+      com.C.L var10000 = this;
+      if (var4 == null) {
+         if (this.R != com.C.M.dropdown) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      int var17 = var10000.J;
+      if (var4 == null) {
+         if (var10000.J != 0) {
+            return;
+         }
+
+         var17 = this.u;
+      }
+
+      if (var4 == null) {
+         var17 = var17 == 1 ? 1 : 0;
+      }
+
+      int var5;
+      label184: {
+         var5 = var17;
+         com.FJ var6 = (com.FJ)var2.getUI();
+         var18 = var5;
+         if (var4 == null) {
+            if (var5 != 0) {
+               var18 = var6.J().top + this.U.top;
+               if (var4 == null) {
+                  var18 = var18 == 0 ? 1 : 0;
+               }
+               break label184;
             }
-            l2.b(com.C.M.simple);
-        }
-    }
 
-    public Insets e(JPopupMenu jPopupMenu) {
-        Insets insets = super.B(jPopupMenu);
-        insets.top += this.J;
-        insets.bottom += this.J;
-        return insets;
-    }
+            var18 = var6.J().bottom + this.U.bottom;
+         }
 
-    protected void t(Graphics2D graphics2D, JPopupMenu jPopupMenu) {
-        Dimension dimension = jPopupMenu.getSize();
-        this.E(graphics2D, jPopupMenu, dimension);
-        this.s(graphics2D, jPopupMenu, dimension);
-        this.B(graphics2D, jPopupMenu, dimension);
-        this.S(graphics2D, jPopupMenu, dimension);
-    }
+         if (var4 == null) {
+            var18 = var18 == 0 ? 1 : 0;
+         }
+      }
 
-    /*
-     * Unable to fully structure code
-     */
-    protected void B(Graphics2D var1_1, JPopupMenu var2_2, Dimension var3_3) {
-        block20: {
-            block39: {
-                block37: {
-                    block38: {
-                        block35: {
-                            block36: {
-                                block34: {
-                                    block33: {
-                                        block23: {
-                                            block24: {
-                                                block30: {
-                                                    block32: {
-                                                        block31: {
-                                                            block26: {
-                                                                block27: {
-                                                                    block29: {
-                                                                        block28: {
-                                                                            block25: {
-                                                                                block22: {
-                                                                                    block21: {
-                                                                                        block19: {
-                                                                                            var4_4 = W.B();
-                                                                                            v0 = this;
-                                                                                            if (var4_4 != null) break block19;
-                                                                                            if (v0.R != com.C.M.dropdown) break block20;
-                                                                                            v0 = this;
-                                                                                        }
-                                                                                        v1 = v0.J;
-                                                                                        if (var4_4 != null) break block21;
-                                                                                        if (v1 != 0) break block20;
-                                                                                        v1 = this.u;
-                                                                                    }
-                                                                                    if (var4_4 == null) {
-                                                                                        v1 = v1 == 1 ? 1 : 0;
-                                                                                    }
-                                                                                    var5_5 = v1;
-                                                                                    var6_6 = (FJ)var2_2.getUI();
-                                                                                    v2 = var5_5;
-                                                                                    if (var4_4 != null) ** GOTO lbl24
-                                                                                    if (v2 != 0) {
-                                                                                        v2 = var6_6.J().top + this.U.top;
-                                                                                        if (var4_4 == null) {
-                                                                                            v2 = v2 == 0 ? 1 : 0;
-                                                                                        }
-                                                                                    } else {
-                                                                                        v2 = var6_6.J().bottom + this.U.bottom;
-lbl24:
-                                                                                        // 2 sources
+      int var7 = var18;
+      int var19 = var7;
+      if (var4 == null) {
+         if (var7 == 0) {
+            return;
+         }
 
-                                                                                        if (var4_4 == null) {
-                                                                                            v2 = v2 == 0 ? 1 : 0;
-                                                                                        }
-                                                                                    }
-                                                                                    v3 = var7_7 = v2;
-                                                                                    if (var4_4 != null) break block22;
-                                                                                    if (v3 == 0) break block20;
-                                                                                    v3 = var5_5;
-                                                                                }
-                                                                                if (var4_4 != null) ** GOTO lbl36
-                                                                                if (v3 != 0) {
-                                                                                    v4 = 0;
-                                                                                } else {
-                                                                                    v3 = var2_2.getComponentCount();
-lbl36:
-                                                                                    // 2 sources
+         var19 = var5;
+      }
 
-                                                                                    v4 = v3 - 1;
-                                                                                }
-                                                                                var8_8 = v4;
-                                                                                var9_9 = var2_2.getComponent(var8_8);
-                                                                                v5 = var2_2 instanceof BasicComboPopup;
-                                                                                if (var4_4 != null) break block23;
-                                                                                if (!v5) break block24;
-                                                                                v6 = var9_9;
-                                                                                if (var4_4 != null) break block25;
-                                                                                if (!(v6 instanceof JScrollPane)) break block20;
-                                                                                v6 = var9_9;
-                                                                            }
-                                                                            var10_10 = (JScrollPane)v6;
-                                                                            var11_11 = (JList)var10_10.getViewport().getView();
-                                                                            v7 = var5_5;
-                                                                            if (var4_4 != null) break block26;
-                                                                            if (v7 == 0) break block27;
-                                                                            v7 = var11_11.getSelectedIndex();
-                                                                            if (var4_4 != null) break block26;
-                                                                            if (v7 != 0) break block27;
-                                                                            var12_12 = this.O(var2_2);
-                                                                            if (var4_4 != null) break block28;
-                                                                            if (var12_12 == null) break block29;
-                                                                            var1_1.setPaint(var12_12.P());
-                                                                        }
-                                                                        var1_1.fill(this.d(var2_2, var3_3, true));
-                                                                    }
-                                                                    if (var4_4 == null) break block30;
-                                                                }
-                                                                v7 = var5_5;
-                                                            }
-                                                            if (var4_4 != null) break block31;
-                                                            if (v7 != 0) break block30;
-                                                            v7 = var11_11.getSelectedIndex();
-                                                        }
-                                                        if (v7 != var11_11.getModel().getSize() - 1) break block30;
-                                                        var12_12 = this.O(var2_2);
-                                                        if (var4_4 != null) break block32;
-                                                        if (var12_12 == null) break block30;
-                                                        var1_1.setPaint(var12_12.S());
-                                                    }
-                                                    var1_1.fill(this.d(var2_2, var3_3, true));
-                                                }
-                                                if (var4_4 == null) break block20;
-                                            }
-                                            v8 = var9_9;
-                                            if (var4_4 != null) break block33;
-                                            v5 = v8 instanceof JMenuItem;
-                                        }
-                                        if (!v5) break block20;
-                                        v8 = var9_9;
+      label173: {
+         if (var4 == null) {
+            if (var19 != 0) {
+               var20 = 0;
+               break label173;
+            }
+
+            var19 = var2.getComponentCount();
+         }
+
+         var20 = var19 - 1;
+      }
+
+      label199: {
+         int var8 = var20;
+         Component var9 = var2.getComponent(var8);
+         boolean var21 = var2 instanceof BasicComboPopup;
+         if (var4 == null) {
+            if (var21) {
+               Component var22 = var9;
+               if (var4 == null) {
+                  if (!(var9 instanceof JScrollPane)) {
+                     return;
+                  }
+
+                  var22 = var9;
+               }
+
+               label202: {
+                  JList var11;
+                  JScrollPane var10 = (JScrollPane)var22;
+                  var11 = (JList)var10.getViewport().getView();
+                  var23 = var5;
+                  label161:
+                  if (var4 == null) {
+                     if (var5 != 0) {
+                        var23 = var11.getSelectedIndex();
+                        if (var4 != null) {
+                           break label161;
+                        }
+
+                        if (var23 == 0) {
+                           label155: {
+                              m var12 = this.O(var2);
+                              if (var4 == null) {
+                                 if (var12 == null) {
+                                    break label155;
+                                 }
+
+                                 var1.setPaint(var12.P());
+                              }
+
+                              var1.fill(this.d(var2, var3, true));
+                           }
+
+                           if (var4 == null) {
+                              break label202;
+                           }
+                        }
+                     }
+
+                     var23 = var5;
+                  }
+
+                  if (var4 == null) {
+                     if (var23 != 0) {
+                        break label202;
+                     }
+
+                     var23 = var11.getSelectedIndex();
+                  }
+
+                  label141:
+                  if (var23 == var11.getModel().getSize() - 1) {
+                     m var16 = this.O(var2);
+                     if (var4 == null) {
+                        if (var16 == null) {
+                           break label141;
+                        }
+
+                        var1.setPaint(var16.S());
+                     }
+
+                     var1.fill(this.d(var2, var3, true));
+                  }
+               }
+
+               if (var4 == null) {
+                  return;
+               }
+            }
+
+            var24 = var9;
+            if (var4 != null) {
+               break label199;
+            }
+
+            var21 = var9 instanceof JMenuItem;
+         }
+
+         if (!var21) {
+            return;
+         }
+
+         var24 = var9;
+      }
+
+      JMenuItem var13 = (JMenuItem)var24;
+      boolean var25 = var13.isEnabled();
+      if (var4 == null) {
+         if (!var25) {
+            return;
+         }
+
+         var25 = var13.getModel().isArmed();
+      }
+
+      label116:
+      if (var4 == null) {
+         if (!var25) {
+            var25 = var13.isSelected();
+            if (var4 != null) {
+               break label116;
+            }
+
+            if (!var25) {
+               return;
+            }
+         }
+
+         var25 = var13.getUI() instanceof com.oC_3;
+      }
+
+      label203: {
+         if (var4 == null) {
+            if (var25) {
+               com.oC_3 var14 = (com.oC_3)var13.getUI();
+               var1.setPaint(var5 != 0 ? var14.J() : var14.Y());
+               var1.fill(this.d(var2, var3, true));
+               if (var4 == null) {
+                  return;
+               }
+            }
+
+            var26 = var13.getUI();
+            if (var4 != null) {
+               break label203;
+            }
+
+            var25 = var26 instanceof com.Yh_2;
+         }
+
+         if (!var25) {
+            return;
+         }
+
+         var26 = var13.getUI();
+      }
+
+      com.Yh_2 var15 = (com.Yh_2)var26;
+      var1.setPaint(var5 != 0 ? var15.S() : var15.u());
+      var1.fill(this.d(var2, var3, true));
+   }
+
+   protected m O(JPopupMenu var1) {
+      int[] var10000 = com.C.W.B();
+      JComboBox var3 = (JComboBox)com.Kp_2.G(var1, b(-4787, 13469));
+      int[] var2 = var10000;
+      JComboBox var4 = var3;
+      if (var2 == null) {
+         if (var3 == null) {
+            return null;
+         }
+
+         var4 = var3;
+      }
+
+      ComboBoxUI var5 = var4.getUI();
+      if (var2 != null) {
+         return (m)var5;
+      } else {
+         return var5 instanceof m ? (m)var3.getUI() : null;
+      }
+   }
+
+   @Override
+   public Point F(JPopupMenu var1, Component var2, int var3, int var4) {
+      int[] var10000 = com.C.W.B();
+      byte var6 = var2.getComponentOrientation().isLeftToRight();
+      int[] var5 = var10000;
+      int var10001 = var6;
+      if (var5 == null) {
+         var10001 = var6 != 0 ? 0 : b(4281, 2958210818686711873L);
+      }
+
+      this.v = var10001;
+      if (var5 == null) {
+         label497: {
+            label496:
+            if (var2 != null) {
+               label494: {
+                  Component var15 = var2;
+                  if (var5 == null) {
+                     if (!var2.isShowing()) {
+                        var16 = null;
+                        break label494;
+                     }
+
+                     var15 = var2;
+                  }
+
+                  var16 = var15.getLocationOnScreen();
+               }
+
+               Point var7;
+               label488: {
+                  label504: {
+                     var7 = var16;
+                     var17 = this.k;
+                     if (var5 == null) {
+                        if (!this.k) {
+                           break label504;
+                        }
+
+                        var17 = var2.isShowing();
+                     }
+
+                     if (var5 != null) {
+                        break label488;
+                     }
+
+                     if (var17) {
+                        var17 = true;
+                        break label488;
+                     }
+                  }
+
+                  var17 = false;
+               }
+
+               boolean var8;
+               int var9;
+               label534: {
+                  var8 = var17;
+                  var9 = this.c();
+                  boolean var18 = var2 instanceof JMenu;
+                  if (var5 == null) {
+                     if (!var18) {
+                        break label534;
+                     }
+
+                     var18 = var2.getParent() instanceof JPopupMenu;
+                  }
+
+                  if (var5 == null) {
+                     if (var18) {
+                        this.b(com.C.M.simple);
+                        if (var5 != null) {
+                           return new Point(var3, var4);
+                        }
+
+                        if (!var8) {
+                           break label496;
+                        }
+
+                        var10001 = var7.x;
+                        if (var5 == null) {
+                           var10001 = var7.x <= var3 ? -1 : 1;
+                        }
+
+                        int var49;
+                        label466: {
+                           var49 = this.Y;
+                           if (var5 == null) {
+                              if (this.Y) {
+                                 var49 = var9 - this.e;
+                                 break label466;
+                              }
+
+                              var49 = this.e;
+                           }
+
+                           var49 = -var49;
+                        }
+
+                        var3 += var10001 * var49;
+                        var10001 = var7.y;
+                        if (var5 == null) {
+                           var10001 = var7.y <= var4 ? -1 : 1;
+                        }
+
+                        label459: {
+                           com.C.L var50 = this;
+                           if (var5 == null) {
+                              if (this.Y) {
+                                 var49 = var9 + 1 + this.J;
+                                 break label459;
+                              }
+
+                              var50 = this;
+                           }
+
+                           var49 = var50.J;
+                        }
+
+                        var4 += var10001 * var49;
+                        if (var5 == null) {
+                           break label496;
+                        }
+                     }
+
+                     var18 = com.cq_4.W;
+                  }
+
+                  label508: {
+                     if (var5 == null) {
+                        if (var18) {
+                           break label508;
+                        }
+
+                        this.b(com.C.M.simple);
+                        if (var5 != null) {
+                           return new Point(var3, var4);
+                        }
+
+                        var18 = var8;
+                     }
+
+                     if (!var18) {
+                        break label496;
+                     }
+
+                     var10001 = var7.x;
+                     if (var5 == null) {
+                        var10001 = var7.x <= var3 ? -1 : 1;
+                     }
+
+                     int var53;
+                     label447: {
+                        var53 = this.Y;
+                        if (var5 == null) {
+                           if (this.Y) {
+                              var53 = var9 - this.e;
+                              break label447;
+                           }
+
+                           var53 = this.e;
+                        }
+
+                        var53 = -var53;
+                     }
+
+                     label441: {
+                        var3 += var10001 * var53;
+                        com.C.L var32 = this;
+                        if (var5 == null) {
+                           if (this.Y) {
+                              var10001 = var9 + this.J + 1;
+                              break label441;
+                           }
+
+                           var32 = this;
+                        }
+
+                        var10001 = var32.J;
+                     }
+
+                     var4 -= var10001;
+                     if (var5 == null) {
+                        break label496;
+                     }
+                  }
+
+                  this.b(com.C.M.dropdown);
+                  var10001 = var7.y;
+                  if (var5 == null) {
+                     var10001 = var7.y <= var4 ? 1 : 3;
+                  }
+
+                  this.u = var10001;
+                  if (var5 == null) {
+                     if (var8) {
+                        var10001 = var7.x;
+                        if (var5 == null) {
+                           var10001 = var7.x <= var3 ? -1 : 1;
+                        }
+
+                        int var54 = this.Y;
+                        if (var5 == null) {
+                           var54 = this.Y ? var9 : 0;
+                        }
+
+                        var3 += var10001 * var54;
+                        var10001 = var7.y;
+                        if (var5 == null) {
+                           var10001 = var7.y <= var4 ? -1 : 1;
+                        }
+
+                        var54 = this.Y;
+                        if (var5 == null) {
+                           var54 = this.Y ? var9 - this.q : 0;
+                        }
+
+                        var4 += var10001 * var54;
+                     }
+
+                     this.v = var7.x + var2.getWidth() / 2 - var3;
+                  }
+
+                  if (var5 == null) {
+                     break label496;
+                  }
+               }
+
+               int var10;
+               var10 = this.R == com.C.M.dropdown ? 1 : 0;
+               var19 = var2 instanceof JComboBox;
+               label419:
+               if (var5 == null) {
+                  if (var19) {
+                     var19 = var1.getName().equals(b(-4788, -18915));
+                     if (var5 != null) {
+                        break label419;
+                     }
+
+                     if (var19) {
+                        var10001 = var7.y;
+                        if (var5 == null) {
+                           var10001 = var7.y <= var4 ? 1 : 3;
+                        }
+
+                        this.u = var10001;
+                        if (var5 == null) {
+                           label410:
+                           if (var8) {
+                              var10001 = this.Y;
+                              if (var5 == null) {
+                                 var10001 = this.Y ? -var9 : 0;
+                              }
+
+                              var3 += var10001;
+                              int var20 = this.u;
+                              if (var5 == null) {
+                                 if (this.u == 1) {
+                                    label515: {
+                                       var10001 = this.Y;
+                                       if (var5 == null) {
+                                          if (!this.Y) {
+                                             var10001 = 0;
+                                             break label515;
+                                          }
+
+                                          var10001 = var9;
+                                       }
+
+                                       int var56 = var10;
+                                       if (var5 == null) {
+                                          var56 = var10 != 0 ? this.q : 0;
+                                       }
+
+                                       var10001 -= var56;
                                     }
-                                    var10_10 = (JMenuItem)v8;
-                                    v9 = var10_10.isEnabled();
-                                    if (var4_4 != null) break block34;
-                                    if (!v9) break block20;
-                                    v9 = var10_10.getModel().isArmed();
-                                }
-                                if (var4_4 != null) break block35;
-                                if (v9) break block36;
-                                v9 = var10_10.isSelected();
-                                if (var4_4 != null) break block35;
-                                if (!v9) break block20;
-                            }
-                            v9 = var10_10.getUI() instanceof oc_1;
+
+                                    var4 -= var10001;
+                                    if (var5 == null) {
+                                       break label410;
+                                    }
+                                 }
+
+                                 var20 = var2.getPreferredSize().height;
+                              }
+
+                              int var11;
+                              int var58;
+                              label516: {
+                                 var11 = var20;
+                                 var58 = this.Y;
+                                 if (var5 == null) {
+                                    if (!this.Y) {
+                                       var58 = 0;
+                                       break label516;
+                                    }
+
+                                    var58 = var9;
+                                 }
+
+                                 int var10003 = var10;
+                                 if (var5 == null) {
+                                    var10003 = var10 != 0 ? this.q : 0;
+                                 }
+
+                                 var58 -= var10003;
+                              }
+
+                              var4 -= var11 + var58;
+                           }
+
+                           this.v = var7.x + var2.getWidth() / 2 - var3;
                         }
-                        if (var4_4 != null) break block37;
-                        if (!v9) break block38;
-                        var11_11 = (oc_1)var10_10.getUI();
-                        var1_1.setPaint(var5_5 != 0 ? var11_11.J() : var11_11.Y());
-                        var1_1.fill(this.d(var2_2, var3_3, true));
-                        if (var4_4 == null) break block20;
-                    }
-                    v10 = var10_10.getUI();
-                    if (var4_4 != null) break block39;
-                    v9 = v10 instanceof yh_0;
-                }
-                if (!v9) break block20;
-                v10 = var10_10.getUI();
-            }
-            var11_11 = (yh_0)v10;
-            var1_1.setPaint(var5_5 != 0 ? var11_11.S() : var11_11.u());
-            var1_1.fill(this.d(var2_2, var3_3, true));
-        }
-    }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    protected m O(JPopupMenu jPopupMenu) {
-        JComboBox jComboBox = (JComboBox)kp_0.G(jPopupMenu, L.b(-4787, 13469));
-        int[] nArray = W.B();
-        JComboBox jComboBox2 = jComboBox;
-        if (nArray == null) {
-            if (jComboBox2 == null) return null;
-            jComboBox2 = jComboBox;
-        }
-        ComboBoxUI comboBoxUI = jComboBox2.getUI();
-        if (nArray == null) {
-            if (!(comboBoxUI instanceof m)) return null;
-            comboBoxUI = jComboBox.getUI();
-        }
-        m m10 = (m)comboBoxUI;
-        return m10;
-    }
-
-    /*
-     * Exception decompiling
-     */
-    @Override
-    public Point F(JPopupMenu var1_1, Component var2_2, int var3_3, int var4_4) {
-        /*
-         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
-         * 
-         * org.benf.cfr.reader.util.ConfusedCFRException: Statement already marked as first in another block
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.markFirstStatementInBlock(Op03SimpleStatement.java:461)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.Misc.markWholeBlock(Misc.java:251)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.considerAsSimpleIf(ConditionalRewriter.java:673)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.identifyNonjumpingConditionals(ConditionalRewriter.java:56)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:722)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
-         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
-         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
-         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
-         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
-         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
-         *     at org.benf.cfr.reader.Main.main(Main.java:54)
-         */
-        throw new IllegalStateException("Decompilation failed");
-    }
-
-    @Override
-    protected void C(Graphics2D graphics2D, JComponent jComponent) {
-        this.t(graphics2D, (JPopupMenu)jComponent);
-    }
-
-    @Override
-    public Insets B(JComponent jComponent) {
-        return this.e((JPopupMenu)jComponent);
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block17: {
-            block16: {
-                block15: {
-                    var13 = new String[2];
-                    var11_1 = 0;
-                    var10_2 = "n\u00ea\u00ea\u00c4\u00e9\u00e5\u00ed1CI\u00e4<\u001b\u00b43\u0091\bW\u00e3\u00e9\u00e5\u0089\u00d3\u00e1\u00af";
-                    var12_3 = "n\u00ea\u00ea\u00c4\u00e9\u00e5\u00ed1CI\u00e4<\u001b\u00b43\u0091\bW\u00e3\u00e9\u00e5\u0089\u00d3\u00e1\u00af".length();
-                    var9_4 = 16;
-                    var8_5 = -1;
-lbl7:
-                    // 2 sources
-
-                    while (true) {
-                        continue;
-                        break;
-                    }
-lbl9:
-                    // 1 sources
-
-                    while (true) {
-                        var13[var11_1++] = new String(v0).intern();
-                        if ((var8_5 += var9_4) < var12_3) {
-                            var9_4 = var10_2.charAt(var8_5);
-                            ** continue;
+                        if (var5 == null) {
+                           break label496;
                         }
-                        break block15;
-                        break;
-                    }
-                    v1 = ++var8_5;
-                    v2 = var10_2.substring(v1, v1 + var9_4).toCharArray();
-                    v3 = v2.length;
-                    var14_6 = 0;
-                    v4 = 16;
-                    v5 = v2;
-                    v6 = v3;
-                    if (v3 > 1) ** GOTO lbl67
-                    do {
-                        v7 = v4;
-                        v5 = v5;
-                        v8 = v5;
-                        v9 = v4;
-                        v10 = var14_6;
-                        while (true) {
-                            switch (var14_6 % 7) {
-                                case 0: {
-                                    v11 = 19;
-                                    break;
-                                }
-                                case 1: {
-                                    v11 = 82;
-                                    break;
-                                }
-                                case 2: {
-                                    v11 = 17;
-                                    break;
-                                }
-                                case 3: {
-                                    v11 = 33;
-                                    break;
-                                }
-                                case 4: {
-                                    v11 = 43;
-                                    break;
-                                }
-                                case 5: {
-                                    v11 = 53;
-                                    break;
-                                }
-                                default: {
-                                    v11 = 74;
-                                }
-                            }
-                            v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                            ++var14_6;
-                            v4 = v7;
-                            if (v7 != 0) break;
-                            v7 = v4;
-                            v5 = v5;
-                            v10 = v4;
-                            v8 = v5;
-                            v9 = v4;
+                     }
+                  }
+
+                  var19 = var8;
+               }
+
+               if (var19) {
+                  var21 = this;
+                  if (var5 != null) {
+                     break label497;
+                  }
+
+                  if (this.K != null) {
+                     Dimension var14 = var1.getPreferredSize();
+                     Dimension var12 = var2.getSize();
+                     int var22 = var10;
+                     if (var5 == null) {
+                        var22 = var10 != 0 ? var9 - this.q : 0;
+                     }
+
+                     label518: {
+                        int var13;
+                        label376: {
+                           label519: {
+                              label520: {
+                                 label373: {
+                                    label521: {
+                                       var13 = var22;
+                                       int var23 = com.C.V.c[this.K.ordinal()];
+                                       if (var5 == null) {
+                                          switch (var23) {
+                                             case 1:
+                                                var23 = var6;
+                                                break;
+                                             case 2:
+                                                break label521;
+                                             case 3:
+                                                break label373;
+                                             case 4:
+                                                break label520;
+                                             case 5:
+                                                break label519;
+                                             case 6:
+                                                break label376;
+                                             default:
+                                                break label518;
+                                          }
+                                       }
+
+                                       label361: {
+                                          if (var5 == null) {
+                                             if (var23 != 0) {
+                                                var24 = var7.x;
+                                                break label361;
+                                             }
+
+                                             var23 = var7.x + var12.width;
+                                          }
+
+                                          var24 = var23 - var14.width;
+                                       }
+
+                                       label355: {
+                                          var10001 = this.Y;
+                                          if (var5 == null) {
+                                             if (!this.Y) {
+                                                var10001 = 0;
+                                                break label355;
+                                             }
+
+                                             var10001 = var6;
+                                          }
+
+                                          if (var5 == null) {
+                                             var10001 = var10001 != 0 ? -var9 : var9;
+                                          }
+                                       }
+
+                                       var3 = var24 + var10001;
+                                       var4 = var7.y - var14.height + var13;
+                                       var10001 = var6;
+                                       if (var5 == null) {
+                                          var10001 = var6 != 0 ? 0 : b(8696, 8169618003492849921L);
+                                       }
+
+                                       this.v = var10001;
+                                       if (var5 == null) {
+                                          break label518;
+                                       }
+                                    }
+
+                                    var3 = var7.x + var12.width / 2 - var14.width / 2;
+                                    var4 = var7.y - var14.height + var13;
+                                    this.v = var7.x + var2.getWidth() / 2 - var3;
+                                    if (var5 == null) {
+                                       break label518;
+                                    }
+                                 }
+
+                                 int var25 = var6;
+                                 if (var5 == null) {
+                                    var25 = var6 != 0 ? var7.x + var12.width - var14.width : var7.x;
+                                 }
+
+                                 label346: {
+                                    var10001 = this.Y;
+                                    if (var5 == null) {
+                                       if (!this.Y) {
+                                          var10001 = 0;
+                                          break label346;
+                                       }
+
+                                       var10001 = var6;
+                                    }
+
+                                    if (var5 == null) {
+                                       var10001 = var10001 != 0 ? var9 : -var9;
+                                    }
+                                 }
+
+                                 var3 = var25 + var10001;
+                                 var4 = var7.y - var14.height + var13;
+                                 var10001 = var6;
+                                 if (var5 == null) {
+                                    var10001 = var6 != 0 ? b(8696, 8169618003492849921L) : 0;
+                                 }
+
+                                 this.v = var10001;
+                                 if (var5 == null) {
+                                    break label518;
+                                 }
+                              }
+
+                              label339: {
+                                 int var26 = var6;
+                                 if (var5 == null) {
+                                    if (var6 != 0) {
+                                       var27 = var7.x;
+                                       break label339;
+                                    }
+
+                                    var26 = var7.x + var12.width;
+                                 }
+
+                                 var27 = var26 - var14.width;
+                              }
+
+                              label333: {
+                                 var10001 = this.Y;
+                                 if (var5 == null) {
+                                    if (!this.Y) {
+                                       var10001 = 0;
+                                       break label333;
+                                    }
+
+                                    var10001 = var6;
+                                 }
+
+                                 if (var5 == null) {
+                                    var10001 = var10001 != 0 ? -var9 : var9;
+                                 }
+                              }
+
+                              var3 = var27 + var10001;
+                              var4 = var7.y + var12.height - var13;
+                              var10001 = var6;
+                              if (var5 == null) {
+                                 var10001 = var6 != 0 ? 0 : b(8696, 8169618003492849921L);
+                              }
+
+                              this.v = var10001;
+                              if (var5 == null) {
+                                 break label518;
+                              }
+                           }
+
+                           var3 = var7.x + var12.width / 2 - var14.width / 2;
+                           var4 = var7.y + var12.height - var13;
+                           this.v = var7.x + var2.getWidth() / 2 - var3;
+                           if (var5 == null) {
+                              break label518;
+                           }
                         }
-lbl67:
-                        // 2 sources
 
-                        v0 = v5;
-                        v6 = v6;
-                    } while (v6 > var14_6);
-                    ** while (true)
-                }
-                L.g = var13;
-                L.h = new String[2];
-                var0_7 = 5451125638915824452L;
-                var6_8 = new long[2];
-                var3_9 = 0;
-                var4_10 = "s\u0081\u00c7\u00d2\u00a0\u00ec\u001c\u00fa+H\u00bf\u00d3r\u00b6-\u00ba";
-                var5_11 = "s\u0081\u00c7\u00d2\u00a0\u00ec\u001c\u00fa+H\u00bf\u00d3r\u00b6-\u00ba".length();
-                var2_12 = 0;
-                while (true) {
-                    break block16;
-                    break;
-                }
-lbl85:
-                // 1 sources
+                        int var28 = var6;
+                        if (var5 == null) {
+                           var28 = var6 != 0 ? var7.x + var12.width - var14.width : var7.x;
+                        }
 
-                while (true) {
-                    var6_8[v12] = (((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L) ^ var0_7;
-                    if (var2_12 < var5_11) ** continue;
-                    break block17;
-                    break;
-                }
-            }
-            var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-            v12 = var3_9++;
-            ** while (true)
-        }
-        L.l = var6_8;
-        L.m = new Integer[2];
-    }
+                        label325: {
+                           var10001 = this.Y;
+                           if (var5 == null) {
+                              if (!this.Y) {
+                                 var10001 = 0;
+                                 break label325;
+                              }
 
-    private static String b(int n10, int n11) {
-        int n12 = (n10 ^ 0xFFFFED4C) & 0xFFFF;
-        if (h[n12] == null) {
-            int n13;
-            int n14;
-            char[] cArray = g[n12].toCharArray();
-            switch (cArray[0] & 0xFF) {
-                case 0: {
-                    n14 = 193;
-                    break;
-                }
-                case 1: {
-                    n14 = 4;
-                    break;
-                }
-                case 2: {
-                    n14 = 30;
-                    break;
-                }
-                case 3: {
-                    n14 = 39;
-                    break;
-                }
-                case 4: {
-                    n14 = 44;
-                    break;
-                }
-                case 5: {
-                    n14 = 132;
-                    break;
-                }
-                case 6: {
-                    n14 = 86;
-                    break;
-                }
-                case 7: {
-                    n14 = 109;
-                    break;
-                }
-                case 8: {
-                    n14 = 167;
-                    break;
-                }
-                case 9: {
-                    n14 = 148;
-                    break;
-                }
-                case 10: {
-                    n14 = 18;
-                    break;
-                }
-                case 11: {
-                    n14 = 233;
-                    break;
-                }
-                case 12: {
-                    n14 = 151;
-                    break;
-                }
-                case 13: {
-                    n14 = 166;
-                    break;
-                }
-                case 14: {
-                    n14 = 17;
-                    break;
-                }
-                case 15: {
-                    n14 = 78;
-                    break;
-                }
-                case 16: {
-                    n14 = 134;
-                    break;
-                }
-                case 17: {
-                    n14 = 218;
-                    break;
-                }
-                case 18: {
-                    n14 = 101;
-                    break;
-                }
-                case 19: {
-                    n14 = 122;
-                    break;
-                }
-                case 20: {
-                    n14 = 68;
-                    break;
-                }
-                case 21: {
-                    n14 = 187;
-                    break;
-                }
-                case 22: {
-                    n14 = 197;
-                    break;
-                }
-                case 23: {
-                    n14 = 138;
-                    break;
-                }
-                case 24: {
-                    n14 = 63;
-                    break;
-                }
-                case 25: {
-                    n14 = 210;
-                    break;
-                }
-                case 26: {
-                    n14 = 19;
-                    break;
-                }
-                case 27: {
-                    n14 = 209;
-                    break;
-                }
-                case 28: {
-                    n14 = 206;
-                    break;
-                }
-                case 29: {
-                    n14 = 225;
-                    break;
-                }
-                case 30: {
-                    n14 = 227;
-                    break;
-                }
-                case 31: {
-                    n14 = 242;
-                    break;
-                }
-                case 32: {
-                    n14 = 125;
-                    break;
-                }
-                case 33: {
-                    n14 = 104;
-                    break;
-                }
-                case 34: {
-                    n14 = 144;
-                    break;
-                }
-                case 35: {
-                    n14 = 141;
-                    break;
-                }
-                case 36: {
-                    n14 = 168;
-                    break;
-                }
-                case 37: {
-                    n14 = 169;
-                    break;
-                }
-                case 38: {
-                    n14 = 230;
-                    break;
-                }
-                case 39: {
-                    n14 = 129;
-                    break;
-                }
-                case 40: {
-                    n14 = 228;
-                    break;
-                }
-                case 41: {
-                    n14 = 52;
-                    break;
-                }
-                case 42: {
-                    n14 = 183;
-                    break;
-                }
-                case 43: {
-                    n14 = 84;
-                    break;
-                }
-                case 44: {
-                    n14 = 131;
-                    break;
-                }
-                case 45: {
-                    n14 = 192;
-                    break;
-                }
-                case 46: {
-                    n14 = 69;
-                    break;
-                }
-                case 47: {
-                    n14 = 253;
-                    break;
-                }
-                case 48: {
-                    n14 = 40;
-                    break;
-                }
-                case 49: {
-                    n14 = 80;
-                    break;
-                }
-                case 50: {
-                    n14 = 12;
-                    break;
-                }
-                case 51: {
-                    n14 = 229;
-                    break;
-                }
-                case 52: {
-                    n14 = 22;
-                    break;
-                }
-                case 53: {
-                    n14 = 204;
-                    break;
-                }
-                case 54: {
-                    n14 = 8;
-                    break;
-                }
-                case 55: {
-                    n14 = 10;
-                    break;
-                }
-                case 56: {
-                    n14 = 115;
-                    break;
-                }
-                case 57: {
-                    n14 = 214;
-                    break;
-                }
-                case 58: {
-                    n14 = 108;
-                    break;
-                }
-                case 59: {
-                    n14 = 130;
-                    break;
-                }
-                case 60: {
-                    n14 = 243;
-                    break;
-                }
-                case 61: {
-                    n14 = 176;
-                    break;
-                }
-                case 62: {
-                    n14 = 142;
-                    break;
-                }
-                case 63: {
-                    n14 = 79;
-                    break;
-                }
-                case 64: {
-                    n14 = 74;
-                    break;
-                }
-                case 65: {
-                    n14 = 174;
-                    break;
-                }
-                case 66: {
-                    n14 = 119;
-                    break;
-                }
-                case 67: {
-                    n14 = 42;
-                    break;
-                }
-                case 68: {
-                    n14 = 11;
-                    break;
-                }
-                case 69: {
-                    n14 = 92;
-                    break;
-                }
-                case 70: {
-                    n14 = 182;
-                    break;
-                }
-                case 71: {
-                    n14 = 54;
-                    break;
-                }
-                case 72: {
-                    n14 = 217;
-                    break;
-                }
-                case 73: {
-                    n14 = 172;
-                    break;
-                }
-                case 74: {
-                    n14 = 33;
-                    break;
-                }
-                case 75: {
-                    n14 = 127;
-                    break;
-                }
-                case 76: {
-                    n14 = 100;
-                    break;
-                }
-                case 77: {
-                    n14 = 23;
-                    break;
-                }
-                case 78: {
-                    n14 = 64;
-                    break;
-                }
-                case 79: {
-                    n14 = 135;
-                    break;
-                }
-                case 80: {
-                    n14 = 48;
-                    break;
-                }
-                case 81: {
-                    n14 = 254;
-                    break;
-                }
-                case 82: {
-                    n14 = 221;
-                    break;
-                }
-                case 83: {
-                    n14 = 128;
-                    break;
-                }
-                case 84: {
-                    n14 = 102;
-                    break;
-                }
-                case 85: {
-                    n14 = 246;
-                    break;
-                }
-                case 86: {
-                    n14 = 198;
-                    break;
-                }
-                case 87: {
-                    n14 = 2;
-                    break;
-                }
-                case 88: {
-                    n14 = 237;
-                    break;
-                }
-                case 89: {
-                    n14 = 24;
-                    break;
-                }
-                case 90: {
-                    n14 = 181;
-                    break;
-                }
-                case 91: {
-                    n14 = 70;
-                    break;
-                }
-                case 92: {
-                    n14 = 67;
-                    break;
-                }
-                case 93: {
-                    n14 = 184;
-                    break;
-                }
-                case 94: {
-                    n14 = 114;
-                    break;
-                }
-                case 95: {
-                    n14 = 121;
-                    break;
-                }
-                case 96: {
-                    n14 = 87;
-                    break;
-                }
-                case 97: {
-                    n14 = 7;
-                    break;
-                }
-                case 98: {
-                    n14 = 223;
-                    break;
-                }
-                case 99: {
-                    n14 = 201;
-                    break;
-                }
-                case 100: {
-                    n14 = 195;
-                    break;
-                }
-                case 101: {
-                    n14 = 212;
-                    break;
-                }
-                case 102: {
-                    n14 = 123;
-                    break;
-                }
-                case 103: {
-                    n14 = 133;
-                    break;
-                }
-                case 104: {
-                    n14 = 27;
-                    break;
-                }
-                case 105: {
-                    n14 = 124;
-                    break;
-                }
-                case 106: {
-                    n14 = 149;
-                    break;
-                }
-                case 107: {
-                    n14 = 113;
-                    break;
-                }
-                case 108: {
-                    n14 = 85;
-                    break;
-                }
-                case 109: {
-                    n14 = 239;
-                    break;
-                }
-                case 110: {
-                    n14 = 244;
-                    break;
-                }
-                case 111: {
-                    n14 = 190;
-                    break;
-                }
-                case 112: {
-                    n14 = 226;
-                    break;
-                }
-                case 113: {
-                    n14 = 46;
-                    break;
-                }
-                case 114: {
-                    n14 = 13;
-                    break;
-                }
-                case 115: {
-                    n14 = 232;
-                    break;
-                }
-                case 116: {
-                    n14 = 83;
-                    break;
-                }
-                case 117: {
-                    n14 = 153;
-                    break;
-                }
-                case 118: {
-                    n14 = 165;
-                    break;
-                }
-                case 119: {
-                    n14 = 41;
-                    break;
-                }
-                case 120: {
-                    n14 = 81;
-                    break;
-                }
-                case 121: {
-                    n14 = 35;
-                    break;
-                }
-                case 122: {
-                    n14 = 234;
-                    break;
-                }
-                case 123: {
-                    n14 = 145;
-                    break;
-                }
-                case 124: {
-                    n14 = 106;
-                    break;
-                }
-                case 125: {
-                    n14 = 161;
-                    break;
-                }
-                case 126: {
-                    n14 = 76;
-                    break;
-                }
-                case 127: {
-                    n14 = 224;
-                    break;
-                }
-                case 128: {
-                    n14 = 164;
-                    break;
-                }
-                case 129: {
-                    n14 = 91;
-                    break;
-                }
-                case 130: {
-                    n14 = 177;
-                    break;
-                }
-                case 131: {
-                    n14 = 194;
-                    break;
-                }
-                case 132: {
-                    n14 = 200;
-                    break;
-                }
-                case 133: {
-                    n14 = 5;
-                    break;
-                }
-                case 134: {
-                    n14 = 162;
-                    break;
-                }
-                case 135: {
-                    n14 = 60;
-                    break;
-                }
-                case 136: {
-                    n14 = 61;
-                    break;
-                }
-                case 137: {
-                    n14 = 251;
-                    break;
-                }
-                case 138: {
-                    n14 = 186;
-                    break;
-                }
-                case 139: {
-                    n14 = 136;
-                    break;
-                }
-                case 140: {
-                    n14 = 249;
-                    break;
-                }
-                case 141: {
-                    n14 = 77;
-                    break;
-                }
-                case 142: {
-                    n14 = 157;
-                    break;
-                }
-                case 143: {
-                    n14 = 216;
-                    break;
-                }
-                case 144: {
-                    n14 = 238;
-                    break;
-                }
-                case 145: {
-                    n14 = 97;
-                    break;
-                }
-                case 146: {
-                    n14 = 94;
-                    break;
-                }
-                case 147: {
-                    n14 = 137;
-                    break;
-                }
-                case 148: {
-                    n14 = 241;
-                    break;
-                }
-                case 149: {
-                    n14 = 49;
-                    break;
-                }
-                case 150: {
-                    n14 = 189;
-                    break;
-                }
-                case 151: {
-                    n14 = 75;
-                    break;
-                }
-                case 152: {
-                    n14 = 57;
-                    break;
-                }
-                case 153: {
-                    n14 = 99;
-                    break;
-                }
-                case 154: {
-                    n14 = 90;
-                    break;
-                }
-                case 155: {
-                    n14 = 231;
-                    break;
-                }
-                case 156: {
-                    n14 = 6;
-                    break;
-                }
-                case 157: {
-                    n14 = 47;
-                    break;
-                }
-                case 158: {
-                    n14 = 31;
-                    break;
-                }
-                case 159: {
-                    n14 = 28;
-                    break;
-                }
-                case 160: {
-                    n14 = 65;
-                    break;
-                }
-                case 161: {
-                    n14 = 105;
-                    break;
-                }
-                case 162: {
-                    n14 = 150;
-                    break;
-                }
-                case 163: {
-                    n14 = 62;
-                    break;
-                }
-                case 164: {
-                    n14 = 15;
-                    break;
-                }
-                case 165: {
-                    n14 = 66;
-                    break;
-                }
-                case 166: {
-                    n14 = 71;
-                    break;
-                }
-                case 167: {
-                    n14 = 139;
-                    break;
-                }
-                case 168: {
-                    n14 = 45;
-                    break;
-                }
-                case 169: {
-                    n14 = 208;
-                    break;
-                }
-                case 170: {
-                    n14 = 191;
-                    break;
-                }
-                case 171: {
-                    n14 = 205;
-                    break;
-                }
-                case 172: {
-                    n14 = 26;
-                    break;
-                }
-                case 173: {
-                    n14 = 118;
-                    break;
-                }
-                case 174: {
-                    n14 = 112;
-                    break;
-                }
-                case 175: {
-                    n14 = 107;
-                    break;
-                }
-                case 176: {
-                    n14 = 170;
-                    break;
-                }
-                case 177: {
-                    n14 = 110;
-                    break;
-                }
-                case 178: {
-                    n14 = 235;
-                    break;
-                }
-                case 179: {
-                    n14 = 38;
-                    break;
-                }
-                case 180: {
-                    n14 = 152;
-                    break;
-                }
-                case 181: {
-                    n14 = 163;
-                    break;
-                }
-                case 182: {
-                    n14 = 207;
-                    break;
-                }
-                case 183: {
-                    n14 = 203;
-                    break;
-                }
-                case 184: {
-                    n14 = 56;
-                    break;
-                }
-                case 185: {
-                    n14 = 255;
-                    break;
-                }
-                case 186: {
-                    n14 = 240;
-                    break;
-                }
-                case 187: {
-                    n14 = 58;
-                    break;
-                }
-                case 188: {
-                    n14 = 14;
-                    break;
-                }
-                case 189: {
-                    n14 = 211;
-                    break;
-                }
-                case 190: {
-                    n14 = 156;
-                    break;
-                }
-                case 191: {
-                    n14 = 103;
-                    break;
-                }
-                case 192: {
-                    n14 = 50;
-                    break;
-                }
-                case 193: {
-                    n14 = 9;
-                    break;
-                }
-                case 194: {
-                    n14 = 0;
-                    break;
-                }
-                case 195: {
-                    n14 = 51;
-                    break;
-                }
-                case 196: {
-                    n14 = 247;
-                    break;
-                }
-                case 197: {
-                    n14 = 213;
-                    break;
-                }
-                case 198: {
-                    n14 = 16;
-                    break;
-                }
-                case 199: {
-                    n14 = 73;
-                    break;
-                }
-                case 200: {
-                    n14 = 180;
-                    break;
-                }
-                case 201: {
-                    n14 = 236;
-                    break;
-                }
-                case 202: {
-                    n14 = 21;
-                    break;
-                }
-                case 203: {
-                    n14 = 146;
-                    break;
-                }
-                case 204: {
-                    n14 = 158;
-                    break;
-                }
-                case 205: {
-                    n14 = 175;
-                    break;
-                }
-                case 206: {
-                    n14 = 116;
-                    break;
-                }
-                case 207: {
-                    n14 = 37;
-                    break;
-                }
-                case 208: {
-                    n14 = 185;
-                    break;
-                }
-                case 209: {
-                    n14 = 248;
-                    break;
-                }
-                case 210: {
-                    n14 = 245;
-                    break;
-                }
-                case 211: {
-                    n14 = 20;
-                    break;
-                }
-                case 212: {
-                    n14 = 95;
-                    break;
-                }
-                case 213: {
-                    n14 = 120;
-                    break;
-                }
-                case 214: {
-                    n14 = 1;
-                    break;
-                }
-                case 215: {
-                    n14 = 178;
-                    break;
-                }
-                case 216: {
-                    n14 = 59;
-                    break;
-                }
-                case 217: {
-                    n14 = 199;
-                    break;
-                }
-                case 218: {
-                    n14 = 117;
-                    break;
-                }
-                case 219: {
-                    n14 = 147;
-                    break;
-                }
-                case 220: {
-                    n14 = 126;
-                    break;
-                }
-                case 221: {
-                    n14 = 93;
-                    break;
-                }
-                case 222: {
-                    n14 = 111;
-                    break;
-                }
-                case 223: {
-                    n14 = 171;
-                    break;
-                }
-                case 224: {
-                    n14 = 179;
-                    break;
-                }
-                case 225: {
-                    n14 = 154;
-                    break;
-                }
-                case 226: {
-                    n14 = 29;
-                    break;
-                }
-                case 227: {
-                    n14 = 155;
-                    break;
-                }
-                case 228: {
-                    n14 = 36;
-                    break;
-                }
-                case 229: {
-                    n14 = 25;
-                    break;
-                }
-                case 230: {
-                    n14 = 96;
-                    break;
-                }
-                case 231: {
-                    n14 = 89;
-                    break;
-                }
-                case 232: {
-                    n14 = 252;
-                    break;
-                }
-                case 233: {
-                    n14 = 196;
-                    break;
-                }
-                case 234: {
-                    n14 = 173;
-                    break;
-                }
-                case 235: {
-                    n14 = 202;
-                    break;
-                }
-                case 236: {
-                    n14 = 72;
-                    break;
-                }
-                case 237: {
-                    n14 = 32;
-                    break;
-                }
-                case 238: {
-                    n14 = 220;
-                    break;
-                }
-                case 239: {
-                    n14 = 55;
-                    break;
-                }
-                case 240: {
-                    n14 = 188;
-                    break;
-                }
-                case 241: {
-                    n14 = 98;
-                    break;
-                }
-                case 242: {
-                    n14 = 43;
-                    break;
-                }
-                case 243: {
-                    n14 = 215;
-                    break;
-                }
-                case 244: {
-                    n14 = 219;
-                    break;
-                }
-                case 245: {
-                    n14 = 222;
-                    break;
-                }
-                case 246: {
-                    n14 = 140;
-                    break;
-                }
-                case 247: {
-                    n14 = 159;
-                    break;
-                }
-                case 248: {
-                    n14 = 250;
-                    break;
-                }
-                case 249: {
-                    n14 = 34;
-                    break;
-                }
-                case 250: {
-                    n14 = 160;
-                    break;
-                }
-                case 251: {
-                    n14 = 88;
-                    break;
-                }
-                case 252: {
-                    n14 = 82;
-                    break;
-                }
-                case 253: {
-                    n14 = 53;
-                    break;
-                }
-                case 254: {
-                    n14 = 143;
-                    break;
-                }
-                default: {
-                    n14 = 3;
-                }
-            }
-            int n15 = n14;
-            int n16 = (n11 & 0xFF) - n15;
-            if (n16 < 0) {
-                n16 += 256;
-            }
-            if ((n13 = ((n11 & 0xFFFF) >>> 8) - n15) < 0) {
-                n13 += 256;
-            }
-            int n17 = 0;
-            while (n17 < cArray.length) {
-                int n18 = n17 % 2;
-                int n19 = n17;
-                char[] cArray2 = cArray;
-                char c2 = cArray[n19];
-                if (n18 == 0) {
-                    cArray2[n19] = (char)(c2 ^ n16);
-                    n16 = ((n16 >>> 3 | n16 << 5) ^ cArray[n17]) & 0xFF;
-                } else {
-                    cArray2[n19] = (char)(c2 ^ n13);
-                    n13 = ((n13 >>> 3 | n13 << 5) ^ cArray[n17]) & 0xFF;
-                }
-                ++n17;
-            }
-            L.h[n12] = new String(cArray).intern();
-        }
-        return h[n12];
-    }
+                              var10001 = var6;
+                           }
 
-    private static int b(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x68F8;
-        if (m[n11] == null) {
-            L.m[n11] = (int)(l[n11] ^ l2);
-        }
-        return m[n11];
-    }
+                           if (var5 == null) {
+                              var10001 = var10001 != 0 ? var9 : -var9;
+                           }
+                        }
+
+                        var3 = var28 + var10001;
+                        var4 = var7.y + var12.height - var13;
+                        var10001 = var6;
+                        if (var5 == null) {
+                           var10001 = var6 != 0 ? b(8696, 8169618003492849921L) : 0;
+                        }
+
+                        this.v = var10001;
+                     }
+
+                     this.u = this.K.L();
+                  }
+               }
+            }
+
+            var21 = this;
+         }
+
+         var21.K = null;
+      }
+
+      return new Point(var3, var4);
+   }
+
+   @Override
+   protected void C(Graphics2D var1, JComponent var2) {
+      this.t(var1, (JPopupMenu)var2);
+   }
+
+   @Override
+   public Insets B(JComponent var1) {
+      return this.e((JPopupMenu)var1);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var13 = new String[2];
+      int var11 = 0;
+      String var10 = "nêêÄéåí1CIä<\u001b´3\u0091\bWãéå\u0089Óá¯";
+      int var12 = "nêêÄéåí1CIä<\u001b´3\u0091\bWãéå\u0089Óá¯".length();
+      char var9 = 16;
+      int var8 = -1;
+
+      while (true) {
+         char[] var10002;
+         label47: {
+            char[] var10003 = var10.substring(++var8, var8 + var9).toCharArray();
+            int var10004 = var10003.length;
+            int var14 = 0;
+            byte var23 = 16;
+            var10002 = var10003;
+            int var16 = var10004;
+            byte var27;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var27 = 16;
+               var10006 = var14;
+            } else {
+               var23 = 16;
+               var16 = var10004;
+               if (var10004 <= var14) {
+                  break label47;
+               }
+
+               var10005 = var10003;
+               var27 = 16;
+               var10006 = var14;
+            }
+
+            while (true) {
+               char var40 = var10005[var10006];
+               byte var41;
+               switch (var14 % 7) {
+                  case 0:
+                     var41 = 19;
+                     break;
+                  case 1:
+                     var41 = 82;
+                     break;
+                  case 2:
+                     var41 = 17;
+                     break;
+                  case 3:
+                     var41 = 33;
+                     break;
+                  case 4:
+                     var41 = 43;
+                     break;
+                  case 5:
+                     var41 = 53;
+                     break;
+                  default:
+                     var41 = 74;
+               }
+
+               var10005[var10006] = (char)(var40 ^ var27 ^ var41);
+               var14++;
+               if (var23 == 0) {
+                  var10006 = var23;
+                  var10005 = var10002;
+                  var27 = var23;
+               } else {
+                  if (var16 <= var14) {
+                     break;
+                  }
+
+                  var10005 = var10002;
+                  var27 = var23;
+                  var10006 = var14;
+               }
+            }
+         }
+
+         String var25 = new String(var10002).intern();
+         int var18 = -1;
+         var13[var11++] = var25;
+         if ((var8 += var9) >= var12) {
+            g = var13;
+            h = new String[2];
+            long var0 = 5451125638915824452L;
+            long[] var6 = new long[2];
+            int var3 = 0;
+            String var4 = "s\u0081ÇÒ ì\u001cú+H¿Ór¶-º";
+            int var5 = "s\u0081ÇÒ ì\u001cú+H¿Ór¶-º".length();
+            byte var2 = 0;
+
+            do {
+               var18 = var2;
+               var2 += 8;
+               byte[] var7 = var4.substring(var18, var2).getBytes("ISO-8859-1");
+               var18 = var3++;
+               long var31 = (
+                     ((long)var7[0] & 255L) << 56
+                        | ((long)var7[1] & 255L) << 48
+                        | ((long)var7[2] & 255L) << 40
+                        | ((long)var7[3] & 255L) << 32
+                        | ((long)var7[4] & 255L) << 24
+                        | ((long)var7[5] & 255L) << 16
+                        | ((long)var7[6] & 255L) << 8
+                        | (long)var7[7] & 255L
+                  )
+                  ^ var0;
+               byte var26 = -1;
+               var6[var18] = var31;
+            } while (var2 < var5);
+
+            l = var6;
+            m = new Integer[2];
+            return;
+         }
+
+         var9 = var10.charAt(var8);
+      }
+   }
+
+   private static String b(int var0, int var1) {
+      int var2 = (var0 ^ -4788) & 65535;
+      if (h[var2] == null) {
+         char[] var3 = g[var2].toCharArray();
+         short var10000;
+         switch (var3[0] & 0xFF) {
+            case 0:
+               var10000 = 193;
+               break;
+            case 1:
+               var10000 = 4;
+               break;
+            case 2:
+               var10000 = 30;
+               break;
+            case 3:
+               var10000 = 39;
+               break;
+            case 4:
+               var10000 = 44;
+               break;
+            case 5:
+               var10000 = 132;
+               break;
+            case 6:
+               var10000 = 86;
+               break;
+            case 7:
+               var10000 = 109;
+               break;
+            case 8:
+               var10000 = 167;
+               break;
+            case 9:
+               var10000 = 148;
+               break;
+            case 10:
+               var10000 = 18;
+               break;
+            case 11:
+               var10000 = 233;
+               break;
+            case 12:
+               var10000 = 151;
+               break;
+            case 13:
+               var10000 = 166;
+               break;
+            case 14:
+               var10000 = 17;
+               break;
+            case 15:
+               var10000 = 78;
+               break;
+            case 16:
+               var10000 = 134;
+               break;
+            case 17:
+               var10000 = 218;
+               break;
+            case 18:
+               var10000 = 101;
+               break;
+            case 19:
+               var10000 = 122;
+               break;
+            case 20:
+               var10000 = 68;
+               break;
+            case 21:
+               var10000 = 187;
+               break;
+            case 22:
+               var10000 = 197;
+               break;
+            case 23:
+               var10000 = 138;
+               break;
+            case 24:
+               var10000 = 63;
+               break;
+            case 25:
+               var10000 = 210;
+               break;
+            case 26:
+               var10000 = 19;
+               break;
+            case 27:
+               var10000 = 209;
+               break;
+            case 28:
+               var10000 = 206;
+               break;
+            case 29:
+               var10000 = 225;
+               break;
+            case 30:
+               var10000 = 227;
+               break;
+            case 31:
+               var10000 = 242;
+               break;
+            case 32:
+               var10000 = 125;
+               break;
+            case 33:
+               var10000 = 104;
+               break;
+            case 34:
+               var10000 = 144;
+               break;
+            case 35:
+               var10000 = 141;
+               break;
+            case 36:
+               var10000 = 168;
+               break;
+            case 37:
+               var10000 = 169;
+               break;
+            case 38:
+               var10000 = 230;
+               break;
+            case 39:
+               var10000 = 129;
+               break;
+            case 40:
+               var10000 = 228;
+               break;
+            case 41:
+               var10000 = 52;
+               break;
+            case 42:
+               var10000 = 183;
+               break;
+            case 43:
+               var10000 = 84;
+               break;
+            case 44:
+               var10000 = 131;
+               break;
+            case 45:
+               var10000 = 192;
+               break;
+            case 46:
+               var10000 = 69;
+               break;
+            case 47:
+               var10000 = 253;
+               break;
+            case 48:
+               var10000 = 40;
+               break;
+            case 49:
+               var10000 = 80;
+               break;
+            case 50:
+               var10000 = 12;
+               break;
+            case 51:
+               var10000 = 229;
+               break;
+            case 52:
+               var10000 = 22;
+               break;
+            case 53:
+               var10000 = 204;
+               break;
+            case 54:
+               var10000 = 8;
+               break;
+            case 55:
+               var10000 = 10;
+               break;
+            case 56:
+               var10000 = 115;
+               break;
+            case 57:
+               var10000 = 214;
+               break;
+            case 58:
+               var10000 = 108;
+               break;
+            case 59:
+               var10000 = 130;
+               break;
+            case 60:
+               var10000 = 243;
+               break;
+            case 61:
+               var10000 = 176;
+               break;
+            case 62:
+               var10000 = 142;
+               break;
+            case 63:
+               var10000 = 79;
+               break;
+            case 64:
+               var10000 = 74;
+               break;
+            case 65:
+               var10000 = 174;
+               break;
+            case 66:
+               var10000 = 119;
+               break;
+            case 67:
+               var10000 = 42;
+               break;
+            case 68:
+               var10000 = 11;
+               break;
+            case 69:
+               var10000 = 92;
+               break;
+            case 70:
+               var10000 = 182;
+               break;
+            case 71:
+               var10000 = 54;
+               break;
+            case 72:
+               var10000 = 217;
+               break;
+            case 73:
+               var10000 = 172;
+               break;
+            case 74:
+               var10000 = 33;
+               break;
+            case 75:
+               var10000 = 127;
+               break;
+            case 76:
+               var10000 = 100;
+               break;
+            case 77:
+               var10000 = 23;
+               break;
+            case 78:
+               var10000 = 64;
+               break;
+            case 79:
+               var10000 = 135;
+               break;
+            case 80:
+               var10000 = 48;
+               break;
+            case 81:
+               var10000 = 254;
+               break;
+            case 82:
+               var10000 = 221;
+               break;
+            case 83:
+               var10000 = 128;
+               break;
+            case 84:
+               var10000 = 102;
+               break;
+            case 85:
+               var10000 = 246;
+               break;
+            case 86:
+               var10000 = 198;
+               break;
+            case 87:
+               var10000 = 2;
+               break;
+            case 88:
+               var10000 = 237;
+               break;
+            case 89:
+               var10000 = 24;
+               break;
+            case 90:
+               var10000 = 181;
+               break;
+            case 91:
+               var10000 = 70;
+               break;
+            case 92:
+               var10000 = 67;
+               break;
+            case 93:
+               var10000 = 184;
+               break;
+            case 94:
+               var10000 = 114;
+               break;
+            case 95:
+               var10000 = 121;
+               break;
+            case 96:
+               var10000 = 87;
+               break;
+            case 97:
+               var10000 = 7;
+               break;
+            case 98:
+               var10000 = 223;
+               break;
+            case 99:
+               var10000 = 201;
+               break;
+            case 100:
+               var10000 = 195;
+               break;
+            case 101:
+               var10000 = 212;
+               break;
+            case 102:
+               var10000 = 123;
+               break;
+            case 103:
+               var10000 = 133;
+               break;
+            case 104:
+               var10000 = 27;
+               break;
+            case 105:
+               var10000 = 124;
+               break;
+            case 106:
+               var10000 = 149;
+               break;
+            case 107:
+               var10000 = 113;
+               break;
+            case 108:
+               var10000 = 85;
+               break;
+            case 109:
+               var10000 = 239;
+               break;
+            case 110:
+               var10000 = 244;
+               break;
+            case 111:
+               var10000 = 190;
+               break;
+            case 112:
+               var10000 = 226;
+               break;
+            case 113:
+               var10000 = 46;
+               break;
+            case 114:
+               var10000 = 13;
+               break;
+            case 115:
+               var10000 = 232;
+               break;
+            case 116:
+               var10000 = 83;
+               break;
+            case 117:
+               var10000 = 153;
+               break;
+            case 118:
+               var10000 = 165;
+               break;
+            case 119:
+               var10000 = 41;
+               break;
+            case 120:
+               var10000 = 81;
+               break;
+            case 121:
+               var10000 = 35;
+               break;
+            case 122:
+               var10000 = 234;
+               break;
+            case 123:
+               var10000 = 145;
+               break;
+            case 124:
+               var10000 = 106;
+               break;
+            case 125:
+               var10000 = 161;
+               break;
+            case 126:
+               var10000 = 76;
+               break;
+            case 127:
+               var10000 = 224;
+               break;
+            case 128:
+               var10000 = 164;
+               break;
+            case 129:
+               var10000 = 91;
+               break;
+            case 130:
+               var10000 = 177;
+               break;
+            case 131:
+               var10000 = 194;
+               break;
+            case 132:
+               var10000 = 200;
+               break;
+            case 133:
+               var10000 = 5;
+               break;
+            case 134:
+               var10000 = 162;
+               break;
+            case 135:
+               var10000 = 60;
+               break;
+            case 136:
+               var10000 = 61;
+               break;
+            case 137:
+               var10000 = 251;
+               break;
+            case 138:
+               var10000 = 186;
+               break;
+            case 139:
+               var10000 = 136;
+               break;
+            case 140:
+               var10000 = 249;
+               break;
+            case 141:
+               var10000 = 77;
+               break;
+            case 142:
+               var10000 = 157;
+               break;
+            case 143:
+               var10000 = 216;
+               break;
+            case 144:
+               var10000 = 238;
+               break;
+            case 145:
+               var10000 = 97;
+               break;
+            case 146:
+               var10000 = 94;
+               break;
+            case 147:
+               var10000 = 137;
+               break;
+            case 148:
+               var10000 = 241;
+               break;
+            case 149:
+               var10000 = 49;
+               break;
+            case 150:
+               var10000 = 189;
+               break;
+            case 151:
+               var10000 = 75;
+               break;
+            case 152:
+               var10000 = 57;
+               break;
+            case 153:
+               var10000 = 99;
+               break;
+            case 154:
+               var10000 = 90;
+               break;
+            case 155:
+               var10000 = 231;
+               break;
+            case 156:
+               var10000 = 6;
+               break;
+            case 157:
+               var10000 = 47;
+               break;
+            case 158:
+               var10000 = 31;
+               break;
+            case 159:
+               var10000 = 28;
+               break;
+            case 160:
+               var10000 = 65;
+               break;
+            case 161:
+               var10000 = 105;
+               break;
+            case 162:
+               var10000 = 150;
+               break;
+            case 163:
+               var10000 = 62;
+               break;
+            case 164:
+               var10000 = 15;
+               break;
+            case 165:
+               var10000 = 66;
+               break;
+            case 166:
+               var10000 = 71;
+               break;
+            case 167:
+               var10000 = 139;
+               break;
+            case 168:
+               var10000 = 45;
+               break;
+            case 169:
+               var10000 = 208;
+               break;
+            case 170:
+               var10000 = 191;
+               break;
+            case 171:
+               var10000 = 205;
+               break;
+            case 172:
+               var10000 = 26;
+               break;
+            case 173:
+               var10000 = 118;
+               break;
+            case 174:
+               var10000 = 112;
+               break;
+            case 175:
+               var10000 = 107;
+               break;
+            case 176:
+               var10000 = 170;
+               break;
+            case 177:
+               var10000 = 110;
+               break;
+            case 178:
+               var10000 = 235;
+               break;
+            case 179:
+               var10000 = 38;
+               break;
+            case 180:
+               var10000 = 152;
+               break;
+            case 181:
+               var10000 = 163;
+               break;
+            case 182:
+               var10000 = 207;
+               break;
+            case 183:
+               var10000 = 203;
+               break;
+            case 184:
+               var10000 = 56;
+               break;
+            case 185:
+               var10000 = 255;
+               break;
+            case 186:
+               var10000 = 240;
+               break;
+            case 187:
+               var10000 = 58;
+               break;
+            case 188:
+               var10000 = 14;
+               break;
+            case 189:
+               var10000 = 211;
+               break;
+            case 190:
+               var10000 = 156;
+               break;
+            case 191:
+               var10000 = 103;
+               break;
+            case 192:
+               var10000 = 50;
+               break;
+            case 193:
+               var10000 = 9;
+               break;
+            case 194:
+               var10000 = 0;
+               break;
+            case 195:
+               var10000 = 51;
+               break;
+            case 196:
+               var10000 = 247;
+               break;
+            case 197:
+               var10000 = 213;
+               break;
+            case 198:
+               var10000 = 16;
+               break;
+            case 199:
+               var10000 = 73;
+               break;
+            case 200:
+               var10000 = 180;
+               break;
+            case 201:
+               var10000 = 236;
+               break;
+            case 202:
+               var10000 = 21;
+               break;
+            case 203:
+               var10000 = 146;
+               break;
+            case 204:
+               var10000 = 158;
+               break;
+            case 205:
+               var10000 = 175;
+               break;
+            case 206:
+               var10000 = 116;
+               break;
+            case 207:
+               var10000 = 37;
+               break;
+            case 208:
+               var10000 = 185;
+               break;
+            case 209:
+               var10000 = 248;
+               break;
+            case 210:
+               var10000 = 245;
+               break;
+            case 211:
+               var10000 = 20;
+               break;
+            case 212:
+               var10000 = 95;
+               break;
+            case 213:
+               var10000 = 120;
+               break;
+            case 214:
+               var10000 = 1;
+               break;
+            case 215:
+               var10000 = 178;
+               break;
+            case 216:
+               var10000 = 59;
+               break;
+            case 217:
+               var10000 = 199;
+               break;
+            case 218:
+               var10000 = 117;
+               break;
+            case 219:
+               var10000 = 147;
+               break;
+            case 220:
+               var10000 = 126;
+               break;
+            case 221:
+               var10000 = 93;
+               break;
+            case 222:
+               var10000 = 111;
+               break;
+            case 223:
+               var10000 = 171;
+               break;
+            case 224:
+               var10000 = 179;
+               break;
+            case 225:
+               var10000 = 154;
+               break;
+            case 226:
+               var10000 = 29;
+               break;
+            case 227:
+               var10000 = 155;
+               break;
+            case 228:
+               var10000 = 36;
+               break;
+            case 229:
+               var10000 = 25;
+               break;
+            case 230:
+               var10000 = 96;
+               break;
+            case 231:
+               var10000 = 89;
+               break;
+            case 232:
+               var10000 = 252;
+               break;
+            case 233:
+               var10000 = 196;
+               break;
+            case 234:
+               var10000 = 173;
+               break;
+            case 235:
+               var10000 = 202;
+               break;
+            case 236:
+               var10000 = 72;
+               break;
+            case 237:
+               var10000 = 32;
+               break;
+            case 238:
+               var10000 = 220;
+               break;
+            case 239:
+               var10000 = 55;
+               break;
+            case 240:
+               var10000 = 188;
+               break;
+            case 241:
+               var10000 = 98;
+               break;
+            case 242:
+               var10000 = 43;
+               break;
+            case 243:
+               var10000 = 215;
+               break;
+            case 244:
+               var10000 = 219;
+               break;
+            case 245:
+               var10000 = 222;
+               break;
+            case 246:
+               var10000 = 140;
+               break;
+            case 247:
+               var10000 = 159;
+               break;
+            case 248:
+               var10000 = 250;
+               break;
+            case 249:
+               var10000 = 34;
+               break;
+            case 250:
+               var10000 = 160;
+               break;
+            case 251:
+               var10000 = 88;
+               break;
+            case 252:
+               var10000 = 82;
+               break;
+            case 253:
+               var10000 = 53;
+               break;
+            case 254:
+               var10000 = 143;
+               break;
+            default:
+               var10000 = 3;
+         }
+
+         short var4 = var10000;
+         int var5 = (var1 & 0xFF) - var4;
+         if (var5 < 0) {
+            var5 += 256;
+         }
+
+         int var6 = ((var1 & 65535) >>> 8) - var4;
+         if (var6 < 0) {
+            var6 += 256;
+         }
+
+         for (int var7 = 0; var7 < var3.length; var7++) {
+            int var8 = var7 % 2;
+            char var10002 = var3[var7];
+            if (var8 == 0) {
+               var3[var7] = (char)(var10002 ^ var5);
+               var5 = ((var5 >>> 3 | var5 << 5) ^ var3[var7]) & 0xFF;
+            } else {
+               var3[var7] = (char)(var10002 ^ var6);
+               var6 = ((var6 >>> 3 | var6 << 5) ^ var3[var7]) & 0xFF;
+            }
+         }
+
+         h[var2] = new String(var3).intern();
+      }
+
+      return h[var2];
+   }
+
+   private static int b(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 26872;
+      if (m[var3] == null) {
+         m[var3] = (int)(l[var3] ^ var1);
+      }
+
+      return m[var3];
+   }
 }
+
+
+
+
 

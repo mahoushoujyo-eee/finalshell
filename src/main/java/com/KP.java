@@ -1,20 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FJ;
-import com.KD;
-import com.KH;
-import com.SL;
-import com.W6;
-import com.a9;
-import com.el_1;
-import com.gf_0;
-import com.gi_0;
-import com.kp_0;
-import com.ne_1;
-import com.tk_0;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -27,434 +12,478 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JPopupMenu;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public class KP
-extends KD
-implements MouseMotionListener,
-MouseListener,
-ActionListener,
-Serializable {
-    protected boolean J = W6.c;
-    protected el_1 N = W6.b;
-    protected JPopupMenu c = null;
-    protected boolean v = false;
-    private static final long[] a;
-    private static final Integer[] b;
+public class KP extends com.KD implements MouseMotionListener, MouseListener, ActionListener, Serializable {
+   protected boolean J = com.W6.c;
+   protected eL_3 N = com.W6.b;
+   protected JPopupMenu c = null;
+   protected boolean v = false;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public KP() {
-    }
+   public KP() {
+   }
 
-    public KP(Icon icon) {
-        super(icon);
-    }
+   public KP(Icon var1) {
+      super(var1);
+   }
 
-    public KP(String string) {
-        super(string);
-    }
+   public KP(String var1) {
+      super(var1);
+   }
 
-    public KP(String string, Icon icon) {
-        super(string, icon);
-    }
+   public KP(String var1, Icon var2) {
+      super(var1, var2);
+   }
 
-    public KP(ActionListener actionListener) {
-        super(actionListener);
-    }
+   public KP(ActionListener var1) {
+      super(var1);
+   }
 
-    public KP(Icon icon, ActionListener actionListener) {
-        super(icon, actionListener);
-    }
+   public KP(Icon var1, ActionListener var2) {
+      super(var1, var2);
+   }
 
-    public KP(String string, ActionListener actionListener) {
-        super(string, actionListener);
-    }
+   public KP(String var1, ActionListener var2) {
+      super(var1, var2);
+   }
 
-    public KP(String string, Icon icon, ActionListener actionListener) {
-        super(string, icon, actionListener);
-    }
+   public KP(String var1, Icon var2, ActionListener var3) {
+      super(var1, var2, var3);
+   }
 
-    public KP(Action action) {
-        super(action);
-    }
+   public KP(Action var1) {
+      super(var1);
+   }
 
-    @Override
-    protected void init(String string, Icon icon) {
-        super.init(string, icon);
-        this.addMouseMotionListener(this);
-        this.addMouseListener(this);
-        this.addActionListener(this);
-    }
+   @Override
+   protected void init(String var1, Icon var2) {
+      super.init(var1, var2);
+      this.addMouseMotionListener(this);
+      this.addMouseListener(this);
+      this.addActionListener(this);
+   }
 
-    public JPopupMenu r() {
-        return this.c;
-    }
+   public JPopupMenu r() {
+      return this.c;
+   }
 
-    public void O(JPopupMenu jPopupMenu) {
-        this.c = jPopupMenu;
-    }
+   public void O(JPopupMenu var1) {
+      this.c = var1;
+   }
 
-    public boolean f() {
-        return this.J;
-    }
+   public boolean f() {
+      return this.J;
+   }
 
-    public void M(boolean bl) {
-        this.J = bl;
-    }
+   public void M(boolean var1) {
+      this.J = var1;
+   }
 
-    public el_1 A() {
-        return this.N;
-    }
+   public eL_3 A() {
+      return this.N;
+   }
 
-    public void B(el_1 el_12) {
-        this.N = el_12;
-    }
+   public void B(eL_3 var1) {
+      this.N = var1;
+   }
 
-    public ImageIcon t() {
-        return this.z().g();
-    }
+   public ImageIcon t() {
+      return this.z().g();
+   }
 
-    public void C(ImageIcon imageIcon) {
-        this.z().o(imageIcon);
-    }
+   public void C(ImageIcon var1) {
+      this.z().o(var1);
+   }
 
-    public int e() {
-        return this.z().U();
-    }
+   public int e() {
+      return this.z().U();
+   }
 
-    public void p(int n10) {
-        this.z().g(n10);
-    }
+   public void p(int var1) {
+      this.z().g(var1);
+   }
 
-    public int D() {
-        return this.z().O();
-    }
+   public int D() {
+      return this.z().O();
+   }
 
-    public void M(int n10) {
-        this.z().T(n10);
-    }
+   public void M(int var1) {
+      this.z().T(var1);
+   }
 
-    public void A(SL sL) {
-        this.listenerList.add(SL.class, sL);
-    }
+   public void A(SL var1) {
+      this.listenerList.add(SL.class, var1);
+   }
 
-    public void g(SL sL) {
-        block4: {
-            KP kP;
-            block3: {
-                block2: {
-                    boolean bl = tk_0.B();
-                    if (sL == null) break block2;
-                    kP = this;
-                    if (bl) break block3;
-                    if (kP.getAction() != sL) break block2;
-                    this.setAction(null);
-                    if (!bl) break block4;
-                }
-                kP = this;
+   public void g(SL var1) {
+      com.KP var10000;
+      label18: {
+         boolean var2 = com.Tk_2.B();
+         if (var1 != null) {
+            var10000 = this;
+            if (var2) {
+               break label18;
             }
-            kP.listenerList.remove(SL.class, sL);
-        }
-    }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block4: {
-            KP kP;
-            block7: {
-                block8: {
-                    boolean bl;
-                    boolean bl2;
-                    block5: {
-                        block6: {
-                            KP kP2;
-                            block2: {
-                                block3: {
-                                    bl2 = tk_0.B();
-                                    kP2 = this;
-                                    if (bl2) break block2;
-                                    if (kP2.c != null) break block3;
-                                    this.n(actionEvent);
-                                    if (!bl2) break block4;
-                                }
-                                kP2 = this;
-                            }
-                            bl = kP2.J;
-                            if (bl2) break block5;
-                            if (!bl) break block6;
-                            this.e();
-                            this.n(actionEvent);
-                            if (!bl2) break block4;
+            if (this.getAction() == var1) {
+               this.setAction(null);
+               if (!var2) {
+                  return;
+               }
+            }
+         }
+
+         var10000 = this;
+      }
+
+      var10000.listenerList.remove(SL.class, var1);
+   }
+
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      boolean var2 = com.Tk_2.B();
+      com.KP var10000 = this;
+      if (!var2) {
+         if (this.c == null) {
+            this.n(var1);
+            if (!var2) {
+               return;
+            }
+         }
+
+         var10000 = this;
+      }
+
+      label39: {
+         boolean var3 = var10000.J;
+         if (!var2) {
+            if (var10000.J) {
+               this.e();
+               this.n(var1);
+               if (!var2) {
+                  return;
+               }
+            }
+
+            var10000 = this;
+            if (var2) {
+               break label39;
+            }
+
+            var3 = this.v;
+         }
+
+         if (var3) {
+            this.e();
+            this.X(var1);
+            if (!var2) {
+               return;
+            }
+         }
+
+         var10000 = this;
+      }
+
+      var10000.n(var1);
+   }
+
+   public void e$void() {
+      com.KP var2;
+      label27: {
+         boolean var1 = com.Tk_2.Q();
+         boolean var10000 = this.c.getUI() instanceof com.FJ;
+         if (var1) {
+            if (var10000) {
+               ((com.FJ)this.c.getUI()).N(this.N);
+            }
+
+            var2 = this;
+            if (!var1) {
+               break label27;
+            }
+
+            var10000 = this.getComponentOrientation().isLeftToRight();
+         }
+
+         if (var10000) {
+            this.c.show(this, 0, this.getHeight());
+            if (var1) {
+               return;
+            }
+         }
+
+         var2 = this;
+      }
+
+      var2.c.show(this, this.getWidth() - this.c.getPreferredSize().width, this.getHeight());
+   }
+
+   @Override
+   public void mouseMoved(MouseEvent var1) {
+      boolean var10000 = com.Tk_2.B();
+      boolean var3 = this.v;
+      boolean var2 = var10000;
+      com.KP var4 = this;
+      Rectangle var10001 = this.z().o(this);
+      if (!var2) {
+         this.v = var10001.contains(var1.getPoint());
+         if (var3 == this.v) {
+            return;
+         }
+
+         var4 = this;
+         var10001 = this.z().D(this);
+      }
+
+      var4.repaint(var10001);
+   }
+
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+   }
+
+   @Override
+   public void mousePressed(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseExited(MouseEvent var1) {
+      boolean var10000 = com.Tk_2.Q();
+      boolean var3 = this.v;
+      boolean var2 = var10000;
+      com.KP var4 = this;
+      if (var2) {
+         this.v = false;
+         if (var3 == this.v) {
+            return;
+         }
+
+         var4 = this;
+      }
+
+      var4.repaint(this.z().D(this));
+   }
+
+   protected void n(ActionEvent var1) {
+      Object[] var3 = this.listenerList.getListenerList();
+      boolean var10000 = com.Tk_2.B();
+      ActionEvent var4 = null;
+      boolean var2 = var10000;
+      int var5 = var3.length - 2;
+
+      while (var5 >= 0) {
+         if (var3[var5] == SL.class) {
+            Object var7 = var4;
+            if (!var2) {
+               if (var4 == null) {
+                  String var6;
+                  label27: {
+                     var6 = var1.getActionCommand();
+                     String var8 = var6;
+                     if (!var2) {
+                        if (var6 != null) {
+                           break label27;
                         }
-                        kP = this;
-                        if (bl2) break block7;
-                        bl = kP.v;
-                    }
-                    if (!bl) break block8;
-                    this.e();
-                    this.X(actionEvent);
-                    if (!bl2) break block4;
-                }
-                kP = this;
-            }
-            kP.n(actionEvent);
-        }
-    }
 
-    public void e() {
-        block7: {
-            KP kP;
-            block5: {
-                block6: {
-                    boolean bl;
-                    boolean bl2;
-                    block4: {
-                        bl2 = tk_0.Q();
-                        bl = this.c.getUI() instanceof FJ;
-                        if (!bl2) break block4;
-                        if (bl) {
-                            ((FJ)this.c.getUI()).N(this.N);
+                        var8 = this.getActionCommand();
+                     }
+
+                     var6 = var8;
+                  }
+
+                  var4 = new ActionEvent(this, a(26610, 6430039751003275732L), var6, var1.getWhen(), var1.getModifiers());
+               }
+
+               var7 = var3[var5 + 1];
+            }
+
+            ((SL)var7).K(var4);
+         }
+
+         var5 -= 2;
+         if (var2) {
+            break;
+         }
+      }
+   }
+
+   protected void X(ActionEvent var1) {
+      boolean var10000 = com.Tk_2.B();
+      Object[] var3 = this.listenerList.getListenerList();
+      boolean var2 = var10000;
+      ActionEvent var4 = null;
+      int var5 = var3.length - 2;
+
+      while (var5 >= 0) {
+         if (var3[var5] == SL.class) {
+            Object var7 = var4;
+            if (!var2) {
+               if (var4 == null) {
+                  String var6;
+                  label27: {
+                     var6 = var1.getActionCommand();
+                     String var8 = var6;
+                     if (!var2) {
+                        if (var6 != null) {
+                           break label27;
                         }
-                        kP = this;
-                        if (!bl2) break block5;
-                        bl = kP.getComponentOrientation().isLeftToRight();
-                    }
-                    if (!bl) break block6;
-                    this.c.show(this, 0, this.getHeight());
-                    if (bl2) break block7;
-                }
-                kP = this;
+
+                        var8 = this.getActionCommand();
+                     }
+
+                     var6 = var8;
+                  }
+
+                  var4 = new ActionEvent(this, a(8905, 7117045198216414446L), var6, var1.getWhen(), var1.getModifiers());
+               }
+
+               var7 = var3[var5 + 1];
             }
-            kP.c.show(this, this.getWidth() - this.c.getPreferredSize().width, this.getHeight());
-        }
-    }
 
-    @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
-        block3: {
-            Rectangle rectangle;
-            KP kP;
-            block2: {
-                boolean bl = this.v;
-                boolean bl2 = tk_0.B();
-                kP = this;
-                rectangle = this.z().o(this);
-                if (bl2) break block2;
-                kP.v = rectangle.contains(mouseEvent.getPoint());
-                if (bl == this.v) break block3;
-                kP = this;
-                rectangle = this.z().D(this);
-            }
-            kP.repaint(rectangle);
-        }
-    }
+            ((SL)var7).i(var4);
+         }
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-    }
+         var5 -= 2;
+         if (var2) {
+            break;
+         }
+      }
+   }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+   public Gf_2 z() {
+      return (Gf_2)this.getUI();
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void updateUI() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Tk_2.Q ()Z
+      // 03: istore 1
+      // 04: aload 0
+      // 05: iload 1
+      // 06: ifeq 33
+      // 09: invokevirtual com/KP.getUI ()Ljavax/swing/plaf/ButtonUI;
+      // 0c: ifnull 32
+      // 0f: goto 16
+      // 12: invokestatic com/KP.b (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 15: athrow
+      // 16: aload 0
+      // 17: iload 1
+      // 18: ifeq 63
+      // 1b: goto 22
+      // 1e: invokestatic com/KP.b (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 21: athrow
+      // 22: invokevirtual com/KP.getUI ()Ljavax/swing/plaf/ButtonUI;
+      // 25: instanceof com/Gf_2
+      // 28: ifne 5b
+      // 2b: goto 32
+      // 2e: invokestatic com/KP.b (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 31: athrow
+      // 32: aload 0
+      // 33: getstatic com/a9.zL Ljava/lang/String;
+      // 36: bipush 0
+      // 37: anewarray 263
+      // 3a: invokestatic com/Kp_2.w (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 3d: checkcast com/Gf_2
+      // 40: invokevirtual com/KP.setUI (Ljavax/swing/plaf/ButtonUI;)V
+      // 43: goto 6a
+      // 46: astore 2
+      // 47: aload 0
+      // 48: aload 2
+      // 49: invokestatic com/nE_3.g (Ljava/lang/Object;Ljava/lang/Throwable;)V
+      // 4c: aload 0
+      // 4d: new com/Gf_2
+      // 50: dup
+      // 51: invokespecial com/Gf_2.<init> ()V
+      // 54: invokevirtual com/KP.setUI (Ljavax/swing/plaf/ButtonUI;)V
+      // 57: iload 1
+      // 58: ifne 6a
+      // 5b: aload 0
+      // 5c: goto 63
+      // 5f: invokestatic com/KP.b (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 62: athrow
+      // 63: aload 0
+      // 64: invokevirtual com/KP.getUI ()Ljavax/swing/plaf/ButtonUI;
+      // 67: invokevirtual com/KP.setUI (Ljavax/swing/plaf/ButtonUI;)V
+      // 6a: return
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-    }
+   @Override
+   public String getUIClassID() {
+      return com.KH.splitButton.n();
+   }
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-    }
+   @Override
+   public Gi_2 f$Gi_2() {
+      return this.z();
+   }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-        block3: {
-            KP kP;
-            block2: {
-                boolean bl = this.v;
-                boolean bl2 = tk_0.Q();
-                kP = this;
-                if (!bl2) break block2;
-                kP.v = false;
-                if (bl == this.v) break block3;
-                kP = this;
-            }
-            kP.repaint(this.z().D(this));
-        }
-    }
+   private static Throwable b(Throwable var0) {
+      return var0;
+   }
 
-    protected void n(ActionEvent actionEvent) {
-        Object[] objectArray = this.listenerList.getListenerList();
-        Object object = null;
-        boolean bl = tk_0.B();
-        for (int i2 = objectArray.length - 2; i2 >= 0; i2 -= 2) {
-            Object object2;
-            block3: {
-                block4: {
-                    String string;
-                    block6: {
-                        String string2;
-                        block5: {
-                            if (objectArray[i2] != SL.class) continue;
-                            object2 = object;
-                            if (bl) break block3;
-                            if (object2 != null) break block4;
-                            string2 = string = actionEvent.getActionCommand();
-                            if (bl) break block5;
-                            if (string2 != null) break block6;
-                            string2 = this.getActionCommand();
-                        }
-                        string = string2;
-                    }
-                    object = new ActionEvent(this, KP.a(26610, 6430039751003275732L), string, actionEvent.getWhen(), actionEvent.getModifiers());
-                }
-                object2 = objectArray[i2 + 1];
-            }
-            ((SL)object2).K((ActionEvent)object);
-            if (!bl) continue;
-        }
-    }
+   static {
+      long var0 = 5084559714687166735L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "\u001c:¼õ{&n\b`¥P\u0086ã\u0001«2";
+      int var5 = "\u001c:¼õ{&n\b`¥P\u0086ã\u0001«2".length();
+      byte var2 = 0;
 
-    protected void X(ActionEvent actionEvent) {
-        Object[] objectArray = this.listenerList.getListenerList();
-        boolean bl = tk_0.B();
-        Object object = null;
-        for (int i2 = objectArray.length - 2; i2 >= 0; i2 -= 2) {
-            Object object2;
-            block3: {
-                block4: {
-                    String string;
-                    block6: {
-                        String string2;
-                        block5: {
-                            if (objectArray[i2] != SL.class) continue;
-                            object2 = object;
-                            if (bl) break block3;
-                            if (object2 != null) break block4;
-                            string2 = string = actionEvent.getActionCommand();
-                            if (bl) break block5;
-                            if (string2 != null) break block6;
-                            string2 = this.getActionCommand();
-                        }
-                        string = string2;
-                    }
-                    object = new ActionEvent(this, KP.a(8905, 7117045198216414446L), string, actionEvent.getWhen(), actionEvent.getModifiers());
-                }
-                object2 = objectArray[i2 + 1];
-            }
-            ((SL)object2).i((ActionEvent)object);
-            if (!bl) continue;
-        }
-    }
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
 
-    public gf_0 z() {
-        return (gf_0)this.getUI();
-    }
+      a = var6;
+      b = new Integer[2];
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void updateUI() {
-        block13: {
-            block12: {
-                block11: {
-                    block14: {
-                        var1_1 = tk_0.Q();
-                        v0 = this;
-                        if (!var1_1) ** GOTO lbl26
-                        if (v0.getUI() == null) break block11;
-                        break block14;
-                        catch (Throwable v1) {
-                            throw KP.b(v1);
-                        }
-                    }
-                    try {
-                        block15: {
-                            v2 = this;
-                            if (!var1_1) break block12;
-                            break block15;
-                            catch (Throwable v3) {
-                                throw KP.b(v3);
-                            }
-                        }
-                        if (!(v2.getUI() instanceof gf_0)) {
-                        }
-                        ** GOTO lbl33
-                    }
-                    catch (Throwable v4) {
-                        throw KP.b(v4);
-                    }
-                }
-                try {
-                    v0 = this;
-lbl26:
-                    // 2 sources
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 26151;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
 
-                    v0.setUI((gf_0)kp_0.w(a9.zL, new Object[0]));
-                    break block13;
-                }
-                catch (Throwable var2_2) {
-                    try {
-                        ne_1.g(this, var2_2);
-                        this.setUI(new gf_0());
-                        if (var1_1) break block13;
-lbl33:
-                        // 2 sources
-
-                        v2 = this;
-                    }
-                    catch (Throwable v5) {
-                        throw KP.b(v5);
-                    }
-                }
-            }
-            v2.setUI(this.getUI());
-        }
-    }
-
-    @Override
-    public String getUIClassID() {
-        return KH.splitButton.n();
-    }
-
-    @Override
-    public gi_0 f() {
-        return this.z();
-    }
-
-    private static Throwable b(Throwable throwable) {
-        return throwable;
-    }
-
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5084559714687166735L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\u001c:\u00bc\u00f5{&n\b`\u00a5P\u0086\u00e3\u0001\u00ab2";
-        int n11 = "\u001c:\u00bc\u00f5{&n\b`\u00a5P\u0086\u00e3\u0001\u00ab2".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-    }
-
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x6627;
-        if (b[n11] == null) {
-            KP.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      return b[var3];
+   }
 }
+
+
+
+
 

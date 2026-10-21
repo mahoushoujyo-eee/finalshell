@@ -1,55 +1,54 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.R;
 import java.awt.Color;
 
-public class O
-extends R {
-    public O() {
-        this(0.0f, 0.0f, 0.0f, 0.0f);
-    }
+public class O extends com.R {
+   public O() {
+      this(0.0F, 0.0F, 0.0F, 0.0F);
+   }
 
-    public O(float[] fArray) {
-        this.T = fArray[0];
-        this.o = fArray[1];
-        this.I = fArray[2];
-        this.z = fArray[3];
-    }
+   public O(float[] var1) {
+      this.T = var1[0];
+      this.o = var1[1];
+      this.I = var1[2];
+      this.z = var1[3];
+   }
 
-    public O(float f10, float f11, float f12, float f13) {
-        this.T = f10;
-        this.o = f11;
-        this.I = f12;
-        this.z = f13;
-    }
+   public O(float var1, float var2, float var3, float var4) {
+      this.T = var1;
+      this.o = var2;
+      this.I = var3;
+      this.z = var4;
+   }
 
-    public O(O o2) {
-        this.T = o2.T;
-        this.o = o2.o;
-        this.I = o2.I;
-        this.z = o2.z;
-    }
+   public O(com.O var1) {
+      this.T = var1.T;
+      this.o = var1.o;
+      this.I = var1.I;
+      this.z = var1.z;
+   }
 
-    public O(R r2) {
-        this.T = r2.T;
-        this.o = r2.o;
-        this.I = r2.I;
-        this.z = r2.z;
-    }
+   public O(com.R var1) {
+      this.T = var1.T;
+      this.o = var1.o;
+      this.I = var1.I;
+      this.z = var1.z;
+   }
 
-    public O(Color color) {
-        this.x(color);
-    }
+   public O(Color var1) {
+      this.x(var1);
+   }
 
-    public void x(Color color) {
-        this.B(color.getRGBComponents(null));
-    }
+   public void x(Color var1) {
+      this.B(var1.getRGBComponents(null));
+   }
 
-    public Color d() {
-        return new Color(this.T, this.o, this.I, this.z);
-    }
+   public Color d() {
+      return new Color(this.T, this.o, this.I, this.z);
+   }
 }
+
+
+
+
 

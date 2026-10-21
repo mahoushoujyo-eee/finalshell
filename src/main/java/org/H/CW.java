@@ -1,39 +1,36 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import org.b_0;
-import org.h.cs_0;
 import org.v.N6;
 import org.v.NS;
 import org.v.NU;
-import org.v.m_0;
 
-class CW
-implements m_0 {
-    final cs_0 N;
+class CW implements org.v.m_2 {
+   final org.H.Cs_2 N;
 
-    CW(cs_0 cs_02) {
-        this.N = cs_02;
-    }
+   CW(org.H.Cs_2 var1) {
+      this.N = var1;
+   }
 
-    public N6 t(NU nU2) throws b_0 {
-        return this.N.J(nU2);
-    }
+   public N6 t(NU var1) throws org.b_2 {
+      return this.N.J(var1);
+   }
 
-    public N6 w(NS nS2) throws b_0 {
-        return this.N.O(nS2);
-    }
+   public N6 w(NS var1) throws org.b_2 {
+      return this.N.O(var1);
+   }
 
-    @Override
-    public Object Q(NS nS2) throws Throwable {
-        return this.w(nS2);
-    }
+   @Override
+   public Object Q(NS var1) throws Throwable {
+      return this.w(var1);
+   }
 
-    @Override
-    public Object Y(NU nU2) throws Throwable {
-        return this.t(nU2);
-    }
+   @Override
+   public Object Y(NU var1) throws Throwable {
+      return this.t(var1);
+   }
 }
+
+
+
+
 

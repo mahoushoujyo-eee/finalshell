@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.m;
 
-import com.m.V;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
-class B
-extends FocusAdapter {
-    final V b;
+class B extends FocusAdapter {
+   final V b;
 
-    B(V v2) {
-        this.b = v2;
-    }
+   B(V var1) {
+      this.b = var1;
+   }
 
-    @Override
-    public void focusLost(FocusEvent focusEvent) {
-        this.b.stopCellEditing();
-    }
+   @Override
+   public void focusLost(FocusEvent var1) {
+      this.b.stopCellEditing();
+   }
 }
+
+
+
+
 

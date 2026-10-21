@@ -1,91 +1,83 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.C;
 
-import com.C.A;
-import com.C.T;
-import com.C.W;
-import com.FY;
-import com.KR;
-import com.QC;
-import com.ke_1;
-import com.lz_0;
 import java.awt.Graphics2D;
 import java.awt.Insets;
 import java.awt.Rectangle;
 import java.awt.event.ContainerAdapter;
 import javax.swing.JComponent;
 
-public class X
-extends lz_0 {
-    protected ContainerAdapter D;
-    protected FY T;
-    protected ke_1 u = null;
+public class X extends com.Lz_2 {
+   protected ContainerAdapter D;
+   protected com.FY T;
+   protected com.kE_3 u = null;
 
-    public void i(KR kR) {
-        this.D = new A(this, kR);
-        this.T = new T(this, kR);
-        kR.addAncestorListener(this.T);
-    }
+   public void i(com.KR var1) {
+      this.D = new com.C.A(this, var1);
+      this.T = new com.C.T(this, var1);
+      var1.addAncestorListener(this.T);
+   }
 
-    public void w(KR kR) {
-        this.V();
-        this.D = null;
-        kR.removeAncestorListener(this.T);
-        this.T = null;
-    }
+   public void w(com.KR var1) {
+      this.V();
+      this.D = null;
+      var1.removeAncestorListener(this.T);
+      this.T = null;
+   }
 
-    protected void V() {
-        block3: {
-            ke_1 ke_12;
-            block2: {
-                int[] nArray = W.B();
-                ke_12 = this.u;
-                if (nArray != null) break block2;
-                if (ke_12 == null) break block3;
-                ke_12 = this.u;
-            }
-            ke_12.removeContainerListener(this.D);
-            this.u = null;
-        }
-    }
+   protected void V() {
+      int[] var1 = com.C.W.B();
+      com.kE_3 var10000 = this.u;
+      if (var1 == null) {
+         if (this.u == null) {
+            return;
+         }
 
-    public Boolean B(KR kR) {
-        return false;
-    }
+         var10000 = this.u;
+      }
 
-    public Insets X(KR kR) {
-        return QC.S(kR);
-    }
+      var10000.removeContainerListener(this.D);
+      this.u = null;
+   }
 
-    public void J(Graphics2D graphics2D, Rectangle rectangle, KR kR) {
-        QC.q(graphics2D, kR);
-    }
+   public Boolean B(com.KR var1) {
+      return false;
+   }
 
-    @Override
-    public Insets B(JComponent jComponent) {
-        return this.X((KR)jComponent);
-    }
+   public Insets X(com.KR var1) {
+      return com.QC.S(var1);
+   }
 
-    @Override
-    public Boolean d(JComponent jComponent) {
-        return this.B((KR)jComponent);
-    }
+   public void J(Graphics2D var1, Rectangle var2, com.KR var3) {
+      com.QC.q(var1, var3);
+   }
 
-    @Override
-    public void X(JComponent jComponent) {
-        this.w((KR)jComponent);
-    }
+   @Override
+   public Insets B(JComponent var1) {
+      return this.X((com.KR)var1);
+   }
 
-    @Override
-    public void A(JComponent jComponent) {
-        this.i((KR)jComponent);
-    }
+   @Override
+   public Boolean d(JComponent var1) {
+      return this.B((com.KR)var1);
+   }
 
-    @Override
-    public void u(Graphics2D graphics2D, Rectangle rectangle, JComponent jComponent) {
-        this.J(graphics2D, rectangle, (KR)jComponent);
-    }
+   @Override
+   public void X(JComponent var1) {
+      this.w((com.KR)var1);
+   }
+
+   @Override
+   public void A(JComponent var1) {
+      this.i((com.KR)var1);
+   }
+
+   @Override
+   public void u(Graphics2D var1, Rectangle var2, JComponent var3) {
+      this.J(var1, var2, (com.KR)var3);
+   }
 }
+
+
+
+
 

@@ -1,140 +1,150 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
 public class gH {
-    boolean V;
-    boolean B;
-    int U;
-    Runnable N;
-    public static int m;
-    public static int E;
-    public static int y;
-    Thread K;
-    long Q;
-    int w;
-    boolean k;
-    boolean a;
-    String C;
+   boolean V;
+   boolean B;
+   int U;
+   Runnable N;
+   public static int m;
+   public static int E;
+   public static int y;
+   Thread K;
+   long Q;
+   int w;
+   boolean k;
+   boolean a;
+   String C;
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 1430174936627474900L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "\u00c2l\u0099&\bX\u00f1\u00b1\u00e4\u00ff\u00c9k\bX\u00f1\u00b0\u009bK\u00bc\u00ef\bX\u00f1\u008e";
-        int n11 = "\u00c2l\u0099&\bX\u00f1\u00b1\u00e4\u00ff\u00c9k\bX\u00f1\u00b0\u009bK\u00bc\u00ef\bX\u00f1\u008e".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        gH.m = (int)lArray[2];
-        gH.E = (int)lArray[1];
-        gH.y = (int)lArray[0];
-    }
+   static {
+      long var1 = 1430174936627474900L;
+      long[] var0 = new long[3];
+      int var4 = 0;
+      String var5 = "Âl\u0099&\bXñ±äÿÉk\bXñ°\u009bK¼ï\bXñ\u008e";
+      int var6 = "Âl\u0099&\bXñ±äÿÉk\bXñ°\u009bK¼ï\bXñ\u008e".length();
+      byte var3 = 0;
 
-    gH(Runnable runnable, int n10) {
-        this.k = false;
-        this.N = runnable;
-        this.U = n10;
-    }
+      do {
+         int var10001 = var3;
+         var3 += 8;
+         byte[] var7 = var5.substring(var10001, var3).getBytes("ISO-8859-1");
+         var10001 = var4++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var1;
+         byte var10003 = -1;
+         var0[var10001] = var10004;
+      } while (var3 < var6);
 
-    public void Z() {
-        block6: {
-            gH gH2;
-            String string;
-            block5: {
-                string = d8_0.Q();
-                gH2 = this;
-                if (string != null) break block5;
-                if (gH2.a) break block6;
-                this.a = true;
-                gH2 = this;
-            }
-            if (string == null) {
-                if ((Thread)gH2.K != null) {
-                    ((Thread)this.K).interrupt();
-                }
-                gH2 = this;
-            }
-            gH2.V = true;
-        }
-    }
+      com.c.c(523223126306371045L).setInt(null, (int)var0[2]);
+      com.c.c(171346713126145274L).setInt(null, (int)var0[1]);
+      com.c.c(439517225992595079L).setInt(null, (int)var0[0]);
+   }
 
-    public boolean F() {
-        return this.V;
-    }
+   gH(Runnable var1, int var2) {
+      com.c.c(564555266966771525L).setBoolean(this, false);
+      com.c.c(257596131995932042L).set(this, var1);
+      com.c.c(153556024938273560L).setInt(this, var2);
+   }
 
-    public boolean v() {
-        return this.B;
-    }
+   public void Z() {
+      String var1 = d8_2.Q();
+      gH var10000 = this;
+      if (var1 == null) {
+         if (com.c.c(560010910551261201L).getBoolean(this)) {
+            return;
+         }
 
-    public long X() {
-        return this.Q;
-    }
+         com.c.c(560010910551261201L).setBoolean(this, true);
+         var10000 = this;
+      }
 
-    public void I(long l2) {
-        this.Q = l2;
-    }
+      if (var1 == null) {
+         if ((Thread)com.c.c(129202526525324511L).get(var10000) != null) {
+            ((Thread)com.c.c(129202526525324511L).get(this)).interrupt();
+         }
 
-    public int e() {
-        return this.w;
-    }
+         var10000 = this;
+      }
 
-    public void k(int n10) {
-        this.w = n10;
-    }
+      com.c.c(505602397498011009L).setBoolean(var10000, true);
+   }
 
-    public Runnable c() {
-        return (Runnable)this.N;
-    }
+   public boolean F() {
+      return com.c.c(505602397498011009L).getBoolean(this);
+   }
 
-    public void l(Runnable runnable) {
-        this.N = runnable;
-    }
+   public boolean v() {
+      return com.c.c(265865036711565556L).getBoolean(this);
+   }
 
-    public int X() {
-        return this.U;
-    }
+   public long X() {
+      return com.c.c(323336845158005131L).getLong(this);
+   }
 
-    public void R(int n10) {
-        this.U = n10;
-    }
+   public void I(long var1) {
+      com.c.c(323336845158005131L).setLong(this, var1);
+   }
 
-    public boolean r() {
-        return this.k;
-    }
+   public int e() {
+      return com.c.c(459368670286305418L).getInt(this);
+   }
 
-    public void j(boolean bl) {
-        this.k = bl;
-    }
+   public void k(int var1) {
+      com.c.c(459368670286305418L).setInt(this, var1);
+   }
 
-    public boolean R() {
-        return this.a;
-    }
+   public Runnable c() {
+      return (Runnable)com.c.c(257596131995932042L).get(this);
+   }
 
-    public Thread q() {
-        return (Thread)this.K;
-    }
+   public void l(Runnable var1) {
+      com.c.c(257596131995932042L).set(this, var1);
+   }
 
-    public void K(Thread thread) {
-        this.K = thread;
-    }
+   public int X$int() {
+      return com.c.c(153556024938273560L).getInt(this);
+   }
 
-    public String R() {
-        return (String)this.C;
-    }
+   public void R(int var1) {
+      com.c.c(153556024938273560L).setInt(this, var1);
+   }
 
-    public void M(String string) {
-        this.C = string;
-    }
+   public boolean r() {
+      return com.c.c(564555266966771525L).getBoolean(this);
+   }
+
+   public void j(boolean var1) {
+      com.c.c(564555266966771525L).setBoolean(this, var1);
+   }
+
+   public boolean R() {
+      return com.c.c(560010910551261201L).getBoolean(this);
+   }
+
+   public Thread q() {
+      return (Thread)com.c.c(129202526525324511L).get(this);
+   }
+
+   public void K(Thread var1) {
+      com.c.c(129202526525324511L).set(this, var1);
+   }
+
+   public String R$String() {
+      return (String)com.c.c(405895317232152174L).get(this);
+   }
+
+   public void M(String var1) {
+      com.c.c(405895317232152174L).set(this, var1);
+   }
 }
+
+
+
+
 

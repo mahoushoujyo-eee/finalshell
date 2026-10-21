@@ -1,44 +1,40 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FV;
-import com.b.b;
 import java.io.File;
 import javax.swing.ImageIcon;
 import javax.swing.filechooser.FileFilter;
 
-class DZ
-extends b {
-    final FileFilter r;
+class DZ extends com.b.b {
+   final FileFilter r;
 
-    DZ(ImageIcon imageIcon, String string, FileFilter fileFilter) {
-        this.r = fileFilter;
-        super(imageIcon, string);
-    }
+   DZ(ImageIcon var1, String var2, FileFilter var3) {
+      super(var1, var2);
+      this.r = var3;
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    public boolean accept(File file) {
-        String string = FV.D();
-        FileFilter fileFilter = this.r;
-        if (string == null) {
-            if (fileFilter == null) return true;
-            fileFilter = this.r;
-        }
-        boolean bl = fileFilter.accept(file);
-        if (string != null) return bl;
-        if (!bl) return false;
-        return true;
-    }
+   @Override
+   public boolean accept(File var1) {
+      String var2 = com.FV.D();
+      FileFilter var10000 = this.r;
+      if (var2 == null) {
+         if (this.r == null) {
+            return true;
+         }
 
-    @Override
-    public boolean n(Object object) {
-        return this.accept((File)object);
-    }
+         var10000 = this.r;
+      }
+
+      boolean var3 = var10000.accept(var1);
+      return var2 != null ? var3 : var3;
+   }
+
+   @Override
+   public boolean n(Object var1) {
+      return this.accept((File)var1);
+   }
 }
+
+
+
+
 

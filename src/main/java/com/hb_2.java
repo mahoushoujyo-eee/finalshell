@@ -1,114 +1,105 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.NM;
-import com.W5;
-import com.hn_1;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
 
-/*
- * Renamed from com.hb
- */
-public class hb_2
-extends hn_1 {
-    private static final String a;
-    private static final long b;
+class Hb_2 extends MouseMotionAdapter {
+   final pA_3 a;
+   private static final long b;
 
-    @Override
-    public int C(int n10, int n11, int n12) {
-        String[] stringArray = W5.q();
-        int n13 = n10 & 1;
-        if (stringArray != null) {
-            if (n13 == (n11 & 1)) {
-                return n12;
+   Hb_2(pA_3 var1) {
+      this.a = var1;
+   }
+
+   @Override
+   public void mouseMoved(MouseEvent var1) {
+      super.mouseMoved(var1);
+   }
+
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      int var2 = _y_2.y();
+      long var8;
+      int var10000 = (var8 = System.currentTimeMillis() - this.a.M - b) == 0L ? 0 : (var8 < 0L ? -1 : 1);
+      if (var2 == 0) {
+         if (var10000 < 0) {
+            return;
+         }
+
+         var10000 = this.a.A;
+      }
+
+      MouseEvent var10001;
+      label63: {
+         if (var2 == 0) {
+            if (var10000 == 0) {
+               return;
             }
-            n13 = NM.n(0.25f, (int)b, n12);
-        }
-        return n13;
-    }
 
-    public String toString() {
-        return a;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "BL{'\u000e[\u000b>rc=\u0006\u0001\"7~\"\u0018\u0013H\u001eaTg".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 15;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+            var4 = this.a;
+            var10001 = var1;
+            if (var2 != 0) {
+               break label63;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 30;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 55;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 13;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 68;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 104;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 46;
-                            break;
-                        }
-                        default: {
-                            n17 = 97;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        long l2 = 1732358864890347191L;
-        b = 0xB9917AC672D0272EL ^ l2;
-    }
+
+            var10000 = this.a.m(var1);
+         }
+
+         if (var10000 == 0) {
+            return;
+         }
+
+         var4 = this.a;
+         var10001 = var1;
+      }
+
+      XE var3 = pA_3.x(var4, var10001.getPoint());
+      rU_3 var5 = pA_3.e(this.a);
+      if (var2 == 0) {
+         if (var5 == null) {
+            pA_3 var6 = this.a;
+            if (var2 == 0) {
+               if (pA_3.A(this.a) == null) {
+                  pA_3.f(this.a, var3);
+               }
+
+               var6 = this.a;
+            }
+
+            pA_3.t(var6, new rU_3(new XE(pA_3.A(this.a))));
+         }
+
+         this.a.repaint();
+         var5 = pA_3.e(this.a);
+      }
+
+      var5.m(var3);
+      if (pA_3.S(this.a).V()) {
+      }
+
+      var10000 = var1.getPoint().y;
+      if (var2 == 0) {
+         if (var10000 < 0) {
+            pA_3.Z(this.a, (int)((double)var1.getPoint().y * pA_3.z));
+         }
+
+         var10000 = var1.getPoint().y;
+      }
+
+      if (var10000 > this.a.J()) {
+         pA_3.Z(this.a, (int)((double)(var1.getPoint().y - this.a.J()) * pA_3.z));
+      }
+   }
+
+   static {
+      long var0 = 3575949113380697443L;
+      long var10002 = 3575949113380697425L ^ var0;
+      byte var10001 = -1;
+      b = var10002;
+   }
 }
+
+
+
+
 

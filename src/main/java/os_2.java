@@ -1,42 +1,49 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-/*
- * Renamed from os
- */
-class os_2
-implements MouseListener {
-    final CG T;
+class Os_2 implements ActionListener {
+   final Y_ x;
 
-    os_2(CG cG) {
-        this.T = cG;
-    }
+   Os_2(Y_ var1) {
+      this.x = var1;
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      Method var10000 = (Method)com.c.c(587689868050151523L).get(this);
+      Object[] var10001 = com.c.f();
+      Method var10003 = com.c.d(457204009113929650L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        if (mouseEvent.getButton() == 1) {
-            ((y6_0)this.T.y).clearSelection();
-        }
-    }
+      try {
+         var6 = (lN_3)var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var4) {
+         throw var4.getTargetException();
+      }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-    }
+      lN_3 var2 = var6;
+      if (var2 != null) {
+         var10000 = (Method)com.c.c(587689868050151523L).get(this);
+         var10001 = com.c.a(var2);
+         var10003 = com.c.d(306838697711798482L);
+         var10002 = var10001;
+         var10001 = var10000;
+         var10000 = var10003;
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-    }
-
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+         try {
+            var10000.invoke(var10001, var10002);
+         } catch (InvocationTargetException var3) {
+            throw var3.getTargetException();
+         }
+      }
+   }
 }
+
+
+
+
 

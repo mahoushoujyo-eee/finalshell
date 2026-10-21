@@ -1,158 +1,174 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FF;
-import com.FV;
-import com.ne_1;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Enumeration;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
+import java.awt.Dimension;
+import java.awt.Insets;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import javax.swing.JComponent;
 
-/*
- * Renamed from com.lz
- */
-public final class lz_2 {
-    private static final long a;
+public abstract class Lz_2 implements com.og_4 {
+   protected Boolean d = false;
+   protected Dimension H = new Dimension(0, 0);
+   protected Insets U = new Insets(0, 0, 0, 0);
+   protected List c = new ArrayList(1);
+   private static int[] V;
 
-    public static boolean f(String string, String string2) {
-        return lz_2.k(string, string2, null);
-    }
+   @Override
+   public void A(JComponent var1) {
+   }
 
-    public static boolean k(String string, String string2, FF fF2) {
-        return lz_2.c(new File(string), new File(string2), fF2);
-    }
+   @Override
+   public void X(JComponent var1) {
+   }
 
-    public static boolean B(File file, File file2) {
-        return lz_2.c(file, file2, null);
-    }
+   @Override
+   public Boolean d(JComponent var1) {
+      return this.d;
+   }
 
-    public static boolean c(File file, File file2, FF fF2) {
-        String string = FV.D();
-        try {
-            boolean bl;
-            block13: {
-                ZipFile zipFile;
-                block12: {
-                    FF fF3;
-                    block11: {
-                        zipFile = new ZipFile(file);
-                        try {
-                            fF3 = fF2;
-                            if (string != null) break block11;
-                            if (fF3 == null) break block12;
-                        }
-                        catch (Throwable throwable) {
-                            throw lz_2.a(throwable);
-                        }
-                        fF3 = fF2;
-                    }
-                    fF3.s(zipFile.size());
-                }
-                Enumeration<? extends ZipEntry> enumeration = zipFile.entries();
-                int n10 = 0;
-                while (enumeration.hasMoreElements()) {
-                    block16: {
-                        FF fF4;
-                        File file3;
-                        ZipEntry zipEntry;
-                        block15: {
-                            block17: {
-                                block14: {
-                                    zipEntry = enumeration.nextElement();
-                                    try {
-                                        bl = zipEntry.isDirectory();
-                                        if (string != null) break block13;
-                                        if (!bl) break block14;
-                                    }
-                                    catch (Throwable throwable) {
-                                        throw lz_2.a(throwable);
-                                    }
-                                    file3 = new File(file2, zipEntry.getName());
-                                    file3.mkdirs();
-                                    if (string == null) break block17;
-                                }
-                                file3 = new File(file2, zipEntry.getName());
-                                file3.getParentFile().mkdirs();
-                                file3.createNewFile();
-                                lz_2.q(zipFile.getInputStream(zipEntry), new BufferedOutputStream(new FileOutputStream(file3)));
-                            }
-                            try {
-                                fF4 = fF2;
-                                if (string != null) break block15;
-                                if (fF4 == null) break block16;
-                            }
-                            catch (Throwable throwable) {
-                                throw lz_2.a(throwable);
-                            }
-                            fF4 = fF2;
-                        }
-                        fF4.e(zipEntry, file3, n10);
-                        ++n10;
-                    }
-                    if (string == null) continue;
-                }
-                zipFile.close();
-                bl = true;
-            }
-            return bl;
-        }
-        catch (Throwable throwable) {
-            ne_1.g(lz_2.class, throwable);
-            return false;
-        }
-    }
+   public void g(Boolean var1) {
+      this.d = var1;
+      this.l();
+   }
 
-    public static String a(ZipEntry zipEntry) {
-        String string = zipEntry.getName();
-        return string.substring(string.lastIndexOf("/") + 1);
-    }
+   @Override
+   public Dimension d$Dimension(JComponent var1) {
+      return this.H;
+   }
 
-    public static String E(ZipEntry zipEntry) {
-        String string = zipEntry.getName();
-        return string.substring(0, string.lastIndexOf("/") + 1);
-    }
+   public void M(Dimension var1) {
+      this.H = var1;
+      this.x();
+   }
 
-    private static void q(InputStream inputStream, OutputStream outputStream) throws IOException {
-        block4: {
-            int n10;
-            byte[] byArray = new byte[(int)a];
-            String string = FV.D();
-            while ((n10 = inputStream.read(byArray)) >= 0) {
-                try {
-                    outputStream.write(byArray, 0, n10);
-                    if (string == null) {
-                        if (string == null) continue;
-                        break;
-                    }
-                    break block4;
-                }
-                catch (IOException iOException) {
-                    throw lz_2.a(iOException);
-                }
-            }
-            inputStream.close();
-            outputStream.close();
-        }
-    }
+   @Override
+   public Insets B(JComponent var1) {
+      return this.U;
+   }
 
-    private static Throwable a(Throwable throwable) {
-        return throwable;
-    }
+   public void Q(Insets var1) {
+      this.U = var1;
+      this.x();
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 4495718024189373762L;
-        a = 0xA9866DCA4220E942L ^ l2;
-    }
+   public void X(int var1, int var2, int var3, int var4) {
+      this.Q(new Insets(var1, var2, var3, var4));
+   }
+
+   public void z(int var1) {
+      this.X(var1, var1, var1, var1);
+   }
+
+   @Override
+   public void A(p5_2 var1) {
+      this.c.add(var1);
+   }
+
+   @Override
+   public void E(p5_2 var1) {
+      this.c.remove(var1);
+   }
+
+   public void l() {
+      int[] var10000 = M();
+      Iterator var2 = com.aL.J((Collection)this.c).iterator();
+      int[] var1 = var10000;
+
+      while (var2.hasNext()) {
+         p5_2 var3 = (p5_2)var2.next();
+         var3.r();
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
+
+   public void M(Rectangle var1) {
+      this.u(var1.x, var1.y, var1.width, var1.height);
+   }
+
+   public void u(int var1, int var2, int var3, int var4) {
+      int[] var10000 = M();
+      Iterator var6 = com.aL.J((Collection)this.c).iterator();
+      int[] var5 = var10000;
+
+      while (var6.hasNext()) {
+         p5_2 var7 = (p5_2)var6.next();
+         var7.M(var1, var2, var3, var4);
+         if (var5 != null) {
+            break;
+         }
+      }
+   }
+
+   public void x() {
+      int[] var10000 = M();
+      Iterator var2 = com.aL.J((Collection)this.c).iterator();
+      int[] var1 = var10000;
+
+      while (var2.hasNext()) {
+         p5_2 var3 = (p5_2)var2.next();
+         var3.J();
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
+
+   public void g() {
+      int[] var10000 = M();
+      Iterator var2 = com.aL.J((Collection)this.c).iterator();
+      int[] var1 = var10000;
+
+      while (var2.hasNext()) {
+         p5_2 var3 = (p5_2)var2.next();
+         var3.p();
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
+
+   public void Z() {
+      int[] var10000 = M();
+      Iterator var2 = com.aL.J((Collection)this.c).iterator();
+      int[] var1 = var10000;
+
+      while (var2.hasNext()) {
+         p5_2 var3 = (p5_2)var2.next();
+         var3.p();
+         var3.J();
+         var3.r();
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
+
+   protected Point J(int var1, int var2) {
+      return new Point(var1, var2);
+   }
+
+   public static void d(int[] var0) {
+      V = var0;
+   }
+
+   public static int[] M() {
+      return V;
+   }
+
+   static {
+      if (M() != null) {
+         d(new int[1]);
+      }
+   }
 }
+
+
+
+
 

@@ -1,57 +1,55 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import org.F.c;
-import org.h.k_0;
 import org.v.NV;
 import org.v.RS;
-import org.v.f_1;
+import org.v.f_3;
 import org.v.hV;
 
-class CK
-implements f_1 {
-    final k_0 S;
+class CK implements f_3 {
+   final org.H.k_2 S;
 
-    CK(k_0 k_02) {
-        this.S = k_02;
-    }
+   CK(org.H.k_2 var1) {
+      this.S = var1;
+   }
 
-    @c
-    public Void A(NV nV2) throws Throwable {
-        nV2.i(k_0.x(this.S));
-        return null;
-    }
+   @org.F.c
+   public Void A(NV var1) throws Throwable {
+      var1.i(org.H.k_2.x(this.S));
+      return null;
+   }
 
-    @c
-    public Void n(RS rS) throws Throwable {
-        k_0.B(this.S).y(rS);
-        return null;
-    }
+   @org.F.c
+   public Void n(RS var1) throws Throwable {
+      org.H.k_2.B(this.S).y(var1);
+      return null;
+   }
 
-    @c
-    public Void a(hV hV2) throws Throwable {
-        k_0.B(this.S).i(hV2);
-        return null;
-    }
+   @org.F.c
+   public Void a(hV var1) throws Throwable {
+      org.H.k_2.B(this.S).i(var1);
+      return null;
+   }
 
-    @Override
-    @c
-    public Object C(RS rS) throws Throwable {
-        return this.n(rS);
-    }
+   @org.F.c
+   @Override
+   public Object C(RS var1) throws Throwable {
+      return this.n(var1);
+   }
 
-    @Override
-    @c
-    public Object G(hV hV2) throws Throwable {
-        return this.a(hV2);
-    }
+   @org.F.c
+   @Override
+   public Object G(hV var1) throws Throwable {
+      return this.a(var1);
+   }
 
-    @Override
-    @c
-    public Object t(NV nV2) throws Throwable {
-        return this.A(nV2);
-    }
+   @org.F.c
+   @Override
+   public Object t(NV var1) throws Throwable {
+      return this.A(var1);
+   }
 }
+
+
+
+
 

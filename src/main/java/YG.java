@@ -1,73 +1,76 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import jtermios.j;
 
-class YG
-implements Enumeration {
-    List c;
-    Iterator b;
+class YG implements Enumeration {
+   List c = new LinkedList();
+   Iterator b;
 
-    YG() {
-        Object object;
-        ky_2[] ky_2Array;
-        Object object2;
-        block7: {
-            Object object3;
-            this.c = new LinkedList();
-            object2 = L2.X().values().iterator();
-            ky_2Array = xA.P();
-            while (object2.hasNext()) {
-                object = (L2)object2.next();
-                object3 = this.c;
-                if (ky_2Array != null) {
-                    object3.add(object);
-                    if (ky_2Array != null) continue;
-                }
-                break block7;
+   YG() {
+      com.ky_4[] var10000 = xA.P();
+      Iterator var2 = L2.X().values().iterator();
+      com.ky_4[] var1 = var10000;
+
+      while (true) {
+         if (var2.hasNext()) {
+            L2 var3 = (L2)var2.next();
+            var7 = this.c;
+            if (var1 == null) {
+               break;
             }
-            object3 = object2 = j.Y();
-        }
-        if (ky_2Array != null) {
-            if (object2 != null) {
-                object = object2.iterator();
-                while (object.hasNext()) {
-                    String string = (String)object.next();
-                    this.c.add(new L2(string, 1, null, null));
-                    if (ky_2Array != null) {
-                        if (ky_2Array != null) continue;
-                    }
-                    break;
-                }
-            } else {
-                this.b = this.c.iterator();
+
+            this.c.add(var3);
+            if (var1 != null) {
+               continue;
             }
-        }
-    }
+         }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    public boolean hasMoreElements() {
-        ky_2[] ky_2Array = xA.P();
-        Iterator iterator = this.b;
-        if (ky_2Array != null) {
-            if (iterator == null) return false;
-            iterator = this.b;
-        }
-        boolean bl = iterator.hasNext();
-        return bl;
-    }
+         var7 = jtermios.j.Y();
+         break;
+      }
 
-    public Object nextElement() {
-        return this.b.next();
-    }
+      List var5 = var7;
+      if (var1 != null) {
+         if (var5 != null) {
+            for (String var4 : var5) {
+               this.c.add(new L2(var4, 1, null, null));
+               if (var1 == null) {
+                  return;
+               }
+
+               if (var1 == null) {
+                  break;
+               }
+            }
+         }
+
+         this.b = this.c.iterator();
+      }
+   }
+
+   @Override
+   public boolean hasMoreElements() {
+      com.ky_4[] var1 = xA.P();
+      Iterator var10000 = this.b;
+      if (var1 != null) {
+         if (this.b == null) {
+            return false;
+         }
+
+         var10000 = this.b;
+      }
+
+      return var10000.hasNext();
+   }
+
+   @Override
+   public Object nextElement() {
+      return this.b.next();
+   }
 }
+
+
+
+
 

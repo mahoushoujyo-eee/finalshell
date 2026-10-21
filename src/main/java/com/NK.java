@@ -1,157 +1,185 @@
-/*
- * Decompiled with CFR 0.152.
- * 
- * Could not load the following classes:
- *  org.bouncycastle.crypto.BlockCipher
- *  org.bouncycastle.crypto.CipherParameters
- *  org.bouncycastle.crypto.engines.TwofishEngine
- *  org.bouncycastle.crypto.modes.SICBlockCipher
- *  org.bouncycastle.crypto.params.KeyParameter
- *  org.bouncycastle.crypto.params.ParametersWithIV
- */
 package com;
 
-import com.EU;
-import com.K4;
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.engines.TwofishEngine;
 import org.bouncycastle.crypto.modes.SICBlockCipher;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
 
-abstract class NK
-implements EU {
-    private SICBlockCipher y;
-    private static final long[] a;
-    private static final Integer[] b;
+abstract class NK implements EU {
+   private SICBlockCipher y;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    NK() {
-    }
+   @Override
+   public int w() {
+      return a(25680, 8896557438840124926L);
+   }
 
-    @Override
-    public int w() {
-        return NK.a(25680, 8896557438840124926L);
-    }
+   @Override
+   public void z(int param1, byte[] param2, byte[] param3) throws Exception {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/K4.z ()Ljava/lang/String;
+      // 03: astore 4
+      // 05: aload 3
+      // 06: arraylength
+      // 07: aload 4
+      // 09: ifnonnull 3e
+      // 0c: sipush 4065
+      // 0f: ldc2_w 4114277951348235854
+      // 12: invokestatic com/NK.a (IJ)I
+      // 15: if_icmple 3a
+      // 18: goto 1f
+      // 1b: invokestatic com/NK.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1e: athrow
+      // 1f: sipush 4065
+      // 22: ldc2_w 4114277951348235854
+      // 25: invokestatic com/NK.a (IJ)I
+      // 28: newarray 8
+      // 2a: astore 5
+      // 2c: aload 3
+      // 2d: bipush 0
+      // 2e: aload 5
+      // 30: bipush 0
+      // 31: aload 5
+      // 33: arraylength
+      // 34: invokestatic java/lang/System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
+      // 37: aload 5
+      // 39: astore 3
+      // 3a: aload 0
+      // 3b: invokevirtual com/NK.u ()I
+      // 3e: istore 6
+      // 40: aload 2
+      // 41: arraylength
+      // 42: aload 4
+      // 44: ifnonnull 5c
+      // 47: iload 6
+      // 49: if_icmple 6e
+      // 4c: goto 53
+      // 4f: invokestatic com/NK.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 52: athrow
+      // 53: iload 6
+      // 55: goto 5c
+      // 58: invokestatic com/NK.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 5b: athrow
+      // 5c: newarray 8
+      // 5e: astore 5
+      // 60: aload 2
+      // 61: bipush 0
+      // 62: aload 5
+      // 64: bipush 0
+      // 65: aload 5
+      // 67: arraylength
+      // 68: invokestatic java/lang/System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
+      // 6b: aload 5
+      // 6d: astore 2
+      // 6e: new org/bouncycastle/crypto/params/ParametersWithIV
+      // 71: dup
+      // 72: new org/bouncycastle/crypto/params/KeyParameter
+      // 75: dup
+      // 76: aload 2
+      // 77: bipush 0
+      // 78: aload 2
+      // 79: arraylength
+      // 7a: invokespecial org/bouncycastle/crypto/params/KeyParameter.<init> ([BII)V
+      // 7d: aload 3
+      // 7e: bipush 0
+      // 7f: aload 3
+      // 80: arraylength
+      // 81: invokespecial org/bouncycastle/crypto/params/ParametersWithIV.<init> (Lorg/bouncycastle/crypto/CipherParameters;[BII)V
+      // 84: astore 7
+      // 86: aload 0
+      // 87: new org/bouncycastle/crypto/modes/SICBlockCipher
+      // 8a: dup
+      // 8b: new org/bouncycastle/crypto/engines/TwofishEngine
+      // 8e: dup
+      // 8f: invokespecial org/bouncycastle/crypto/engines/TwofishEngine.<init> ()V
+      // 92: invokespecial org/bouncycastle/crypto/modes/SICBlockCipher.<init> (Lorg/bouncycastle/crypto/BlockCipher;)V
+      // 95: putfield com/NK.y Lorg/bouncycastle/crypto/modes/SICBlockCipher;
+      // 98: aload 0
+      // 99: getfield com/NK.y Lorg/bouncycastle/crypto/modes/SICBlockCipher;
+      // 9c: iload 1
+      // 9d: aload 4
+      // 9f: ifnonnull ad
+      // a2: ifne b0
+      // a5: goto ac
+      // a8: invokestatic com/NK.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // ab: athrow
+      // ac: bipush 1
+      // ad: goto b1
+      // b0: bipush 0
+      // b1: aload 7
+      // b3: invokevirtual org/bouncycastle/crypto/modes/SICBlockCipher.init (ZLorg/bouncycastle/crypto/CipherParameters;)V
+      // b6: goto c3
+      // b9: astore 7
+      // bb: aload 0
+      // bc: aconst_null
+      // bd: putfield com/NK.y Lorg/bouncycastle/crypto/modes/SICBlockCipher;
+      // c0: aload 7
+      // c2: athrow
+      // c3: return
+   }
 
-    /*
-     * Loose catch block
-     * Could not resolve type clashes
-     */
-    @Override
-    public void z(int n10, byte[] byArray, byte[] byArray2) throws Exception {
-        String string;
-        block13: {
-            int n11;
-            byte[] byArray3;
-            block12: {
-                int n12;
-                block10: {
-                    block11: {
-                        string = K4.z();
-                        try {
-                            n12 = byArray2.length;
-                            if (string != null) break block10;
-                            if (n12 <= NK.a(4065, 4114277951348235854L)) break block11;
-                        }
-                        catch (Exception exception) {
-                            throw NK.a(exception);
-                        }
-                        byArray3 = new byte[NK.a(4065, 4114277951348235854L)];
-                        System.arraycopy(byArray2, 0, byArray3, 0, byArray3.length);
-                        byArray2 = byArray3;
-                    }
-                    n12 = this.u();
-                }
-                int n13 = n12;
-                n11 = byArray.length;
-                if (string != null) break block12;
-                try {
-                    block16: {
-                        if (n11 <= n13) break block13;
-                        break block16;
-                        catch (Exception exception) {
-                            throw NK.a(exception);
-                        }
-                    }
-                    n11 = n13;
-                }
-                catch (Exception exception) {
-                    throw NK.a(exception);
-                }
-            }
-            byArray3 = new byte[n11];
-            System.arraycopy(byArray, 0, byArray3, 0, byArray3.length);
-            byArray = byArray3;
-        }
-        try {
-            boolean bl;
-            SICBlockCipher sICBlockCipher;
-            ParametersWithIV parametersWithIV;
-            block14: {
-                block15: {
-                    parametersWithIV = new ParametersWithIV((CipherParameters)new KeyParameter(byArray, 0, byArray.length), byArray2, 0, byArray2.length);
-                    try {
-                        sICBlockCipher = this.y = new SICBlockCipher((BlockCipher)new TwofishEngine());
-                        bl = n10;
-                        if (string != null) break block14;
-                        if (bl) break block15;
-                    }
-                    catch (Exception exception) {
-                        throw NK.a(exception);
-                    }
-                    bl = true;
-                    break block14;
-                }
-                bl = false;
-            }
-            sICBlockCipher.init(bl, (CipherParameters)parametersWithIV);
-        }
-        catch (Exception exception) {
-            this.y = null;
-            throw exception;
-        }
-    }
+   @Override
+   public void X(byte[] var1, int var2, int var3, byte[] var4, int var5) throws Exception {
+      this.y.processBytes(var1, var2, var3, var4, var5);
+   }
 
-    @Override
-    public void X(byte[] byArray, int n10, int n11, byte[] byArray2, int n12) throws Exception {
-        this.y.processBytes(byArray, n10, n11, byArray2, n12);
-    }
+   @Override
+   public boolean Y() {
+      return false;
+   }
 
-    @Override
-    public boolean Y() {
-        return false;
-    }
+   private static Exception a(Exception var0) {
+      return var0;
+   }
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+   static {
+      long var0 = 5570044209373346366L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "H)\u009a{»\u0007ÏÐps\u008c©ç¾$`";
+      int var5 = "H)\u009a{»\u0007ÏÐps\u008c©ç¾$`".length();
+      byte var2 = 0;
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5570044209373346366L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "H)\u009a{\u00bb\u0007\u00cf\u00d0ps\u008c\u00a9\u00e7\u00be$`";
-        int n11 = "H)\u009a{\u00bb\u0007\u00cf\u00d0ps\u008c\u00a9\u00e7\u00be$`".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-    }
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x51AE;
-        if (b[n11] == null) {
-            NK.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      a = var6;
+      b = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 20910;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

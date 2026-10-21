@@ -1,27 +1,25 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.E;
-import com._y_0;
 import java.awt.Rectangle;
 
-class EO
-implements E {
-    final _y_0 J;
+class EO implements com.E {
+   final _y_2 J;
 
-    EO(_y_0 _y_02) {
-        this.J = _y_02;
-    }
+   EO(_y_2 var1) {
+      this.J = var1;
+   }
 
-    public Rectangle I() {
-        return new Rectangle(0, 0, _y_0.j(this.J).getWidth(), _y_0.j(this.J).getHeight());
-    }
+   public Rectangle I() {
+      return new Rectangle(0, 0, _y_2.j(this.J).getWidth(), _y_2.j(this.J).getHeight());
+   }
 
-    @Override
-    public Object J() {
-        return this.I();
-    }
+   @Override
+   public Object J() {
+      return this.I();
+   }
 }
+
+
+
+
 

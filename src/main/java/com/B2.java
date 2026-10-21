@@ -1,30 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.YP;
-import com.bs_0;
-import com.dc_1;
+class B2 extends com.Bs_2 {
+   final com.dC_3 f;
 
-class B2
-extends bs_0 {
-    final dc_1 f;
+   B2(com.dC_3 var1, com.dC_3 var2, int var3, int var4, com.YP var5) {
+      super(var2, var3, var4, var5);
+      this.f = var1;
+   }
 
-    B2(dc_1 dc_12, dc_1 dc_13, int n10, int n11, YP yP) {
-        this.f = dc_12;
-        super(dc_13, n10, n11, yP);
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    @Override
-    protected void t() {
-        dc_1 dc_12 = this.f;
-        synchronized (dc_12) {
-            dc_1.G(this.f).remove(this);
-        }
-    }
+   @Override
+   protected void t() {
+      synchronized (this.f) {
+         com.dC_3.G(this.f).remove(this);
+      }
+   }
 }
+
+
+
+
 

@@ -1,185 +1,39 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.W5;
-import com.gt_1;
-import com.iw_2;
+import java.awt.Color;
+import java.awt.Graphics2D;
 import java.awt.Rectangle;
 
-/*
- * Renamed from com.ym
- */
-public class ym_2
-extends gt_1 {
-    private static final String a;
+class Ym_2 extends com.C.y_2 {
+   final _y_2 s;
 
-    @Override
-    protected int[] K(int n10, int n11, int[] nArray, Rectangle rectangle) {
-        int n12 = 0;
-        int[] nArray2 = new int[n10 * n11];
-        String[] stringArray = W5.q();
-        int n13 = 0;
-        block0: while (true) {
-            int n14 = n13;
-            block1: while (n14 < n11) {
-                int n15 = 0;
-                block2: while (true) {
-                    int n16 = n15;
-                    int n17 = n10;
-                    block3: while (n16 < n17) {
-                        int n18 = -1;
-                        n14 = -1;
-                        if (stringArray == null) continue block1;
-                        int n19 = n14;
-                        block4: while (true) {
-                            int n20 = n19;
-                            int n21 = 1;
-                            block5: while (n20 <= n21) {
-                                block9: {
-                                    int n22;
-                                    int n23;
-                                    block10: {
-                                        int n24 = n13 + n19;
-                                        if (stringArray == null) continue block4;
-                                        n16 = 0;
-                                        n17 = n24;
-                                        if (stringArray == null) continue block3;
-                                        if (n16 > n17) break block9;
-                                        n23 = n24;
-                                        n22 = n11;
-                                        if (stringArray == null) break block10;
-                                        if (n23 >= n22) break block9;
-                                        n23 = n24;
-                                        n22 = n10;
-                                    }
-                                    int n25 = n23 * n22;
-                                    int n26 = -1;
-                                    while (n26 <= 1) {
-                                        block11: {
-                                            block12: {
-                                                int n27;
-                                                int n28;
-                                                block13: {
-                                                    int n29 = n15 + n26;
-                                                    if (stringArray == null) break block11;
-                                                    n20 = 0;
-                                                    n21 = n29;
-                                                    if (stringArray == null) continue block5;
-                                                    if (n20 > n21) break block12;
-                                                    n28 = n29;
-                                                    n27 = n10;
-                                                    if (stringArray == null) break block13;
-                                                    if (n28 >= n27) break block12;
-                                                    n28 = n18;
-                                                    n27 = nArray[n25 + n29];
-                                                }
-                                                n18 = iw_2.P(n28, n27, 2);
-                                            }
-                                            ++n26;
-                                        }
-                                        if (stringArray != null) continue;
-                                    }
-                                }
-                                ++n19;
-                                if (stringArray != null) continue block4;
-                            }
-                            break;
-                        }
-                        nArray2[n12++] = n18;
-                        ++n15;
-                        if (stringArray != null) continue block2;
-                    }
-                    break;
-                }
-                ++n13;
-                if (stringArray != null) continue block0;
+   Ym_2(_y_2 var1) {
+      this.s = var1;
+   }
+
+   @Override
+   protected void v(Graphics2D var1, Rectangle var2) {
+      int var10000 = _y_2.M();
+      com.WZ var4 = this.s.kj.f();
+      int var3 = var10000;
+      if (var4 != null) {
+         int var5 = this.s.e.getModel().getMaximum() - this.s.e.getModel().getMinimum();
+         int var6 = Math.max(2, this.v.height / var5);
+         Color var7 = (Color)com.c.c(267150274335408220L).get(null);
+         var1.setColor(var7);
+
+         for (pE_3 var9 : var4.B()) {
+            int var10 = this.v.height * var9.s().r / var5;
+            var1.fillRect(this.v.x, this.v.y + var10, this.v.width, var6);
+            if (var3 == 0) {
+               break;
             }
-            break;
-        }
-        return nArray2;
-    }
-
-    public String toString() {
-        return a;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = ",1'n'*\u0011\u00004?ie".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 89;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 55;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 4;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 11;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 69;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 81;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 62;
-                            break;
-                        }
-                        default: {
-                            n17 = 33;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+         }
+      }
+   }
 }
+
+
+
+
 

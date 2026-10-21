@@ -1,19 +1,27 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import java.util.EventListener;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
 
-/*
- * Renamed from com.os
- */
-public interface os_2
-extends EventListener {
-    public void r(int var1);
+class Os_2 extends FocusAdapter {
+   final com.OG I;
 
-    public void u(int var1, Object var2, Object var3);
+   Os_2(com.OG var1) {
+      this.I = var1;
+   }
 
-    public void V(int var1);
+   @Override
+   public void focusGained(FocusEvent var1) {
+      this.I.repaint();
+   }
+
+   @Override
+   public void focusLost(FocusEvent var1) {
+      this.I.repaint();
+   }
 }
+
+
+
+
 

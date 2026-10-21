@@ -1,32 +1,30 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import org.pcap4j.core.PacketListener;
 import org.pcap4j.core.PcapHandle;
 import org.pcap4j.core.PcapStat;
 
-class OP
-extends Thread {
-    final li_0 d;
-    private final PcapHandle v;
-    private final PacketListener M;
+class OP extends Thread {
+   final Li_2 d;
+   private final PcapHandle v;
+   private final PacketListener M;
 
-    OP(li_0 li_02, PcapHandle pcapHandle, PacketListener packetListener) {
-        this.d = li_02;
-        this.v = pcapHandle;
-        this.M = packetListener;
-    }
+   OP(Li_2 var1, PcapHandle var2, PacketListener var3) {
+      this.d = var1;
+      this.v = var2;
+      this.M = var3;
+   }
 
-    @Override
-    public void run() {
-        try {
-            this.v.loop(-1, this.M);
-            PcapStat pcapStat = this.v.getStats();
-            this.v.close();
-        }
-        catch (Exception exception) {
-            // empty catch block
-        }
-    }
+   @Override
+   public void run() {
+      try {
+         this.v.loop(-1, this.M);
+         PcapStat var1 = this.v.getStats();
+         this.v.close();
+      } catch (Exception var2) {
+      }
+   }
 }
+
+
+
+
 

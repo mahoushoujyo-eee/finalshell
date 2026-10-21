@@ -1,116 +1,124 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.net.InetAddress;
 import java.util.HashSet;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.TreePath;
+import java.util.Hashtable;
 
-/*
- * Renamed from fk
- */
-class fk_2
-implements KeyListener {
-    final a3 G;
-    private static final long a;
+class Fk_2 implements Runnable {
+   final L9 U;
+   final f3_2 d;
+   final String Q;
+   private static final long a;
 
-    fk_2(a3 a32) {
-        this.G = a32;
-    }
+   Fk_2(L9 var1, f3_2 var2, String var3) {
+      this.U = var1;
+      this.d = var2;
+      this.Q = var3;
+   }
 
-    @Override
-    public void keyTyped(KeyEvent keyEvent) {
-    }
+   @Override
+   public void run() {
+      com.ky_4[] var10000 = yT_3.c();
+      int var2 = 0;
+      com.ky_4[] var1 = var10000;
 
-    @Override
-    public void keyReleased(KeyEvent keyEvent) {
-    }
-
-    @Override
-    public void keyPressed(KeyEvent keyEvent) {
-        block16: {
-            a3 a32;
-            DefaultMutableTreeNode defaultMutableTreeNode;
-            block18: {
-                block19: {
-                    boolean bl;
-                    int[] nArray;
-                    block17: {
-                        String string;
-                        String string2;
-                        DefaultMutableTreeNode defaultMutableTreeNode2;
-                        int n10;
-                        block15: {
-                            nArray = a3.I();
-                            n10 = keyEvent.getKeyCode();
-                            if (nArray == null) break block15;
-                            if (n10 != (int)a) break block16;
-                            n10 = ((a3)this.G).getMinSelectionRow();
-                        }
-                        int n11 = n10;
-                        try {
-                            defaultMutableTreeNode2 = (DefaultMutableTreeNode)this.G.i(n11);
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        defaultMutableTreeNode = defaultMutableTreeNode2;
-                        tf_2 tf_22 = (tf_2)defaultMutableTreeNode.getUserObject();
-                        boolean bl2 = false;
-                        TreePath treePath = ((a3)this.G.K).getPathForRow(n11);
-                        try {
-                            string2 = (String)tf_22.k();
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        ((HashSet)this.G.T).add(string2);
-                        DefaultMutableTreeNode defaultMutableTreeNode3 = (DefaultMutableTreeNode)defaultMutableTreeNode.getParent();
-                        try {
-                            this.G.s((Object)defaultMutableTreeNode3, (Object)tf_22, (Object)treePath, null, true, false);
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        try {
-                            string = (String)tf_22.k();
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        bl = ((HashSet)this.G.Z).contains(string);
-                        if (nArray == null) break block17;
-                        if (!bl) break block16;
-                        a32 = (a3)this.G;
-                        if (nArray != null) {
-                            try {
-                                bl = (Boolean)a32.x(defaultMutableTreeNode);
-                            }
-                            catch (InvocationTargetException invocationTargetException) {
-                                throw invocationTargetException.getTargetException();
-                            }
-                        }
-                        break block18;
-                    }
-                    if (!bl) break block19;
-                    ((a3)this.G).collapsePath(new TreePath(defaultMutableTreeNode.getPath()));
-                    if (nArray != null) break block16;
-                }
-                a32 = (a3)this.G;
+      while (true) {
+         try {
+            if (var1 == null) {
+               return;
             }
-            a32.expandPath(new TreePath(defaultMutableTreeNode.getPath()));
-        }
-    }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 7404190692422060865L;
-        a = 0x626B7D44A7120B4BL ^ l2;
-    }
+            if (var2 >= 1) {
+               break;
+            }
+         } catch (Exception var11) {
+            throw a(var11);
+         }
+
+         try {
+            var10000 = (com.ky_4[])com.c.c(508038361377045891L).get(this);
+            Object[] var10001 = com.c.f();
+            Method var10003 = com.c.d(564648154927582737L);
+            Object[] var10002 = var10001;
+            var10001 = var10000;
+            Method var13 = var10003;
+
+            try {
+               var14 = (String)var13.invoke(var10001, var10002);
+            } catch (InvocationTargetException var9) {
+               throw var9.getTargetException();
+            }
+
+            Object[] var15 = com.c.a(InetAddress.getByName(var14).getHostAddress());
+            Method var16 = com.c.d(602697815696322216L);
+            var10002 = var15;
+            var10001 = null;
+
+            try {
+               var17 = (zh_2)var16.invoke(var10001, var10002);
+            } catch (InvocationTargetException var8) {
+               throw var8.getTargetException();
+            }
+
+            zh_2 var3 = var17;
+            var10000 = (com.ky_4[])com.c.c(508038361377045891L).get(this);
+            var10001 = com.c.a(var3);
+            var10003 = com.c.d(432746213469381812L);
+            var10002 = var10001;
+            var10001 = var10000;
+            Method var19 = var10003;
+
+            try {
+               var19.invoke(var10001, var10002);
+            } catch (InvocationTargetException var7) {
+               throw var7.getTargetException();
+            }
+
+            var10000 = (com.ky_4[])com.c.c(394503099456042459L).get(this);
+            var10001 = com.c.a(com.c.c(508038361377045891L).get(this));
+            var10003 = com.c.d(137222181119797019L);
+            var10002 = var10001;
+            var10001 = var10000;
+            Method var21 = var10003;
+
+            try {
+               var21.invoke(var10001, var10002);
+            } catch (InvocationTargetException var6) {
+               throw var6.getTargetException();
+            }
+
+            ((Hashtable)com.c.c(447779733764178905L).get(null)).put((String)com.c.c(350883208365418364L).get(this), var3);
+            break;
+         } catch (Exception var10) {
+            try {
+               Thread.sleep(a);
+            } catch (InterruptedException var5) {
+               var5.printStackTrace();
+            }
+
+            var2++;
+            if (var1 == null) {
+               break;
+            }
+         }
+      }
+
+      ((HashSet)com.c.c(317469799130091897L).get(null)).remove((String)com.c.c(350883208365418364L).get(this));
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
+
+   static {
+      long var0 = 2269056343135973305L;
+      long var10002 = 2269056343135972941L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

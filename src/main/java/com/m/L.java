@@ -1,108 +1,149 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.m;
 
-import com.m.s;
 import java.util.Iterator;
 import java.util.List;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.MutableTreeNode;
 
-public class L
-extends DefaultTreeModel {
-    public L(DefaultMutableTreeNode defaultMutableTreeNode) {
-        super(defaultMutableTreeNode);
-    }
+public class L extends DefaultTreeModel {
+   public L(DefaultMutableTreeNode var1) {
+      super(var1);
+   }
 
-    public L(DefaultMutableTreeNode defaultMutableTreeNode, boolean bl) {
-        super(defaultMutableTreeNode, bl);
-    }
+   public L(DefaultMutableTreeNode var1, boolean var2) {
+      super(var1, var2);
+   }
 
-    public DefaultMutableTreeNode G() {
-        return (DefaultMutableTreeNode)this.getRoot();
-    }
+   public DefaultMutableTreeNode G() {
+      return (DefaultMutableTreeNode)this.getRoot();
+   }
 
-    public void F(List list, DefaultMutableTreeNode defaultMutableTreeNode, int n10) {
-        block3: {
-            String string = s.d();
-            for (int i2 = list.size() - 1; i2 >= 0; --i2) {
-                defaultMutableTreeNode.insert((MutableTreeNode)list.get(i2), n10);
-                if (string != null) continue;
+   public void F(List var1, DefaultMutableTreeNode var2, int var3) {
+      String var10000 = com.m.s.d();
+      int var5 = var1.size() - 1;
+      String var4 = var10000;
+
+      while (var5 >= 0) {
+         var2.insert((MutableTreeNode)var1.get(var5), var3);
+         var5--;
+         if (var4 == null) {
+            break;
+         }
+      }
+
+      int[] var7 = new int[var1.size()];
+      int var6 = 0;
+
+      while (true) {
+         if (var6 < var1.size()) {
+            var7[var6] = var3 + var6;
+            var6++;
+            if (var4 == null) {
+               break;
             }
-            int[] nArray = new int[list.size()];
-            for (int i3 = 0; i3 < list.size(); ++i3) {
-                nArray[i3] = n10 + i3;
-                if (string != null) {
-                    if (string != null) continue;
-                }
-                break block3;
+
+            if (var4 != null) {
+               continue;
             }
-            this.nodesWereInserted(defaultMutableTreeNode, nArray);
-        }
-    }
+         }
 
-    public void d(DefaultMutableTreeNode[] defaultMutableTreeNodeArray, DefaultMutableTreeNode defaultMutableTreeNode, int n10) {
-        block3: {
-            String string = s.d();
-            for (int i2 = defaultMutableTreeNodeArray.length - 1; i2 >= 0; --i2) {
-                defaultMutableTreeNode.insert(defaultMutableTreeNodeArray[i2], n10);
-                if (string != null) continue;
+         this.nodesWereInserted(var2, var7);
+         break;
+      }
+   }
+
+   public void d(DefaultMutableTreeNode[] var1, DefaultMutableTreeNode var2, int var3) {
+      String var10000 = com.m.s.d();
+      int var5 = var1.length - 1;
+      String var4 = var10000;
+
+      while (var5 >= 0) {
+         var2.insert(var1[var5], var3);
+         var5--;
+         if (var4 == null) {
+            break;
+         }
+      }
+
+      int[] var7 = new int[var1.length];
+      int var6 = 0;
+
+      while (true) {
+         if (var6 < var1.length) {
+            var7[var6] = var3 + var6;
+            var6++;
+            if (var4 == null) {
+               break;
             }
-            int[] nArray = new int[defaultMutableTreeNodeArray.length];
-            for (int i3 = 0; i3 < defaultMutableTreeNodeArray.length; ++i3) {
-                nArray[i3] = n10 + i3;
-                if (string != null) {
-                    if (string != null) continue;
-                }
-                break block3;
+
+            if (var4 != null) {
+               continue;
             }
-            this.nodesWereInserted(defaultMutableTreeNode, nArray);
-        }
-    }
+         }
 
-    public void a(List list) {
-        Iterator iterator = list.iterator();
-        String string = s.d();
-        while (iterator.hasNext()) {
-            DefaultMutableTreeNode defaultMutableTreeNode = (DefaultMutableTreeNode)iterator.next();
-            this.removeNodeFromParent(defaultMutableTreeNode);
-            if (string != null) continue;
-        }
-    }
+         this.nodesWereInserted(var2, var7);
+         break;
+      }
+   }
 
-    public void N(DefaultMutableTreeNode defaultMutableTreeNode) {
-        String string = s.d();
-        for (int i2 = 0; i2 < defaultMutableTreeNode.getChildCount(); ++i2) {
-            this.removeNodeFromParent((MutableTreeNode)defaultMutableTreeNode.getChildAt(i2));
-            if (string != null) continue;
-        }
-    }
+   public void a(List var1) {
+      String var10000 = com.m.s.d();
+      Iterator var3 = var1.iterator();
+      String var2 = var10000;
 
-    public void l(DefaultMutableTreeNode[] defaultMutableTreeNodeArray) {
-        DefaultMutableTreeNode[] defaultMutableTreeNodeArray2 = defaultMutableTreeNodeArray;
-        String string = s.d();
-        for (DefaultMutableTreeNode defaultMutableTreeNode : defaultMutableTreeNodeArray2) {
-            this.removeNodeFromParent(defaultMutableTreeNode);
-            if (string != null) continue;
-        }
-    }
+      while (var3.hasNext()) {
+         DefaultMutableTreeNode var4 = (DefaultMutableTreeNode)var3.next();
+         this.removeNodeFromParent(var4);
+         if (var2 == null) {
+            break;
+         }
+      }
+   }
 
-    public void B(DefaultMutableTreeNode defaultMutableTreeNode) {
-        if (defaultMutableTreeNode != null) {
-            this.fireTreeNodesChanged(this, this.getPathToRoot(defaultMutableTreeNode), null, null);
-        }
-    }
+   public void N(DefaultMutableTreeNode var1) {
+      String var10000 = com.m.s.d();
+      int var3 = 0;
+      String var2 = var10000;
 
-    public void L(DefaultMutableTreeNode defaultMutableTreeNode) {
-        if (defaultMutableTreeNode != null) {
-            this.fireTreeStructureChanged(this, this.getPathToRoot(defaultMutableTreeNode), null, null);
-        }
-    }
+      while (var3 < var1.getChildCount()) {
+         this.removeNodeFromParent((MutableTreeNode)var1.getChildAt(var3));
+         var3++;
+         if (var2 == null) {
+            break;
+         }
+      }
+   }
 
-    public void t() {
-        this.fireTreeStructureChanged(this, this.G().getPath(), null, null);
-    }
+   public void l(DefaultMutableTreeNode[] var1) {
+      String var2 = com.m.s.d();
+
+      for (DefaultMutableTreeNode var6 : var1) {
+         this.removeNodeFromParent(var6);
+         if (var2 == null) {
+            break;
+         }
+      }
+   }
+
+   public void B(DefaultMutableTreeNode var1) {
+      if (var1 != null) {
+         this.fireTreeNodesChanged(this, this.getPathToRoot(var1), null, null);
+      }
+   }
+
+   public void L(DefaultMutableTreeNode var1) {
+      if (var1 != null) {
+         this.fireTreeStructureChanged(this, this.getPathToRoot(var1), null, null);
+      }
+   }
+
+   public void t() {
+      this.fireTreeStructureChanged(this, this.G().getPath(), null, null);
+   }
 }
+
+
+
+
 

@@ -1,42 +1,40 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.b;
 
-import com.b.V;
-import com.ky_2;
 import javax.swing.ImageIcon;
 
-public abstract class b
-extends V {
-    protected ImageIcon V;
-    protected String h;
+public abstract class b extends V {
+   protected ImageIcon V;
+   protected String h;
 
-    public b(ImageIcon imageIcon, String string) {
-        this.V = imageIcon;
-        ky_2[] ky_2Array = com.b.V.L();
-        this.h = string;
-        if (ky_2.F() != null) {
-            com.b.V.Q(new ky_2[2]);
-        }
-    }
+   public b(ImageIcon var1, String var2) {
+      com.b.V.L();
+      this.V = var1;
+      this.h = var2;
+      if (com.ky_4.F() != null) {
+         com.b.V.Q(new com.ky_4[2]);
+      }
+   }
 
-    @Override
-    public ImageIcon b() {
-        return this.V;
-    }
+   @Override
+   public ImageIcon b() {
+      return this.V;
+   }
 
-    public void S(ImageIcon imageIcon) {
-        this.V = imageIcon;
-    }
+   public void S(ImageIcon var1) {
+      this.V = var1;
+   }
 
-    @Override
-    public String getDescription() {
-        return this.h;
-    }
+   @Override
+   public String getDescription() {
+      return this.h;
+   }
 
-    public void W(String string) {
-        this.h = string;
-    }
+   public void W(String var1) {
+      this.h = var1;
+   }
 }
+
+
+
+
 

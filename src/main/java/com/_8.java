@@ -1,24 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.BX;
-import com._d_0;
-import com.at_0;
-import com.nm_1;
+class _8 extends _d_2 {
+   final nM_3 N;
 
-class _8
-extends _d_0 {
-    final nm_1 N;
+   _8(nM_3 var1) {
+      this.N = var1;
+   }
 
-    _8(nm_1 nm_12) {
-        this.N = nm_12;
-    }
-
-    @Override
-    public boolean T(at_0 at_02, BX bX, int n10) {
-        return this.N.q(at_02, bX, n10);
-    }
+   @Override
+   public boolean T(com.at_2 var1, com.BX var2, int var3) {
+      return this.N.q(var1, var2, var3);
+   }
 }
+
+
+
+
 

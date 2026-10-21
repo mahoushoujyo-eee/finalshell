@@ -1,52 +1,60 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import com.ky_2;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import org.H.F;
-import org.H.Y;
-import org.h.cr_0;
 
-public class C5
-extends Y {
-    private final F[] f;
+public class C5 extends org.H.Y {
+   private final F[] f;
 
-    public C5(short s2, F[] fArray) {
-        super(s2);
-        this.f = fArray;
-    }
+   public C5(short var1, F[] var2) {
+      super(var1);
+      this.f = var2;
+   }
 
-    private static Y k(short s2, DataInputStream dataInputStream) throws IOException {
-        F[] fArray = new F[dataInputStream.readUnsignedShort()];
-        ky_2[] ky_2Array = cr_0.q();
-        for (int n10 = 0; n10 < fArray.length; n10 = (int)((short)(n10 + 1))) {
-            fArray[n10] = new F(dataInputStream.readShort(), dataInputStream.readShort());
-            if (ky_2Array == null) continue;
-        }
-        return new C5(s2, fArray);
-    }
+   private static org.H.Y k(short var0, DataInputStream var1) throws IOException {
+      com.ky_4[] var10000 = org.H.Cr_2.q();
+      F[] var3 = new F[var1.readUnsignedShort()];
+      short var4 = 0;
+      com.ky_4[] var2 = var10000;
 
-    @Override
-    protected void T(DataOutputStream dataOutputStream) throws IOException {
-        ky_2[] ky_2Array = cr_0.q();
-        dataOutputStream.writeShort(this.f.length);
-        F[] fArray = this.f;
-        int n10 = fArray.length;
-        ky_2[] ky_2Array2 = ky_2Array;
-        for (int i2 = 0; i2 < n10; ++i2) {
-            F f10 = fArray[i2];
-            dataOutputStream.writeShort(f10.p);
-            dataOutputStream.writeShort(f10.X);
-            if (ky_2Array2 == null) continue;
-        }
-    }
+      while (var4 < var3.length) {
+         var3[var4] = new F(var1.readShort(), var1.readShort());
+         var4++;
+         if (var2 != null) {
+            break;
+         }
+      }
 
-    static Y L(short s2, DataInputStream dataInputStream) throws IOException {
-        return C5.k(s2, dataInputStream);
-    }
+      return new org.H.C5(var0, var3);
+   }
+
+   @Override
+   protected void T(DataOutputStream var1) throws IOException {
+      com.ky_4[] var10000 = org.H.Cr_2.q();
+      var1.writeShort(this.f.length);
+      F[] var3 = this.f;
+      int var4 = var3.length;
+      com.ky_4[] var2 = var10000;
+      int var5 = 0;
+
+      while (var5 < var4) {
+         F var6 = var3[var5];
+         var1.writeShort(var6.p);
+         var1.writeShort(var6.X);
+         var5++;
+         if (var2 != null) {
+            break;
+         }
+      }
+   }
+
+   static org.H.Y L(short var0, DataInputStream var1) throws IOException {
+      return k(var0, var1);
+   }
 }
+
+
+
+
 

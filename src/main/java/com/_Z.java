@@ -1,25 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.P1;
-import com.QR;
-import com._m_0;
+class _Z extends _m_2 {
+   final P1 Z;
+   final com.QR e;
 
-class _Z
-extends _m_0 {
-    final P1 Z;
-    final QR e;
+   _Z(com.QR var1, P1 var2) {
+      this.e = var1;
+      this.Z = var2;
+   }
 
-    _Z(QR qR, P1 p1) {
-        this.e = qR;
-        this.Z = p1;
-    }
-
-    @Override
-    public void y(String string, boolean bl) {
-        this.Z.F(string, bl);
-    }
+   @Override
+   public void y(String var1, boolean var2) {
+      this.Z.F(var1, var2);
+   }
 }
+
+
+
+
 

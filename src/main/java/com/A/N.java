@@ -1,24 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.A;
 
-import com.A.d;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-class N
-implements PropertyChangeListener {
-    final d N;
+class N implements PropertyChangeListener {
+   final com.A.d N;
 
-    N(d d2) {
-        this.N = d2;
-    }
+   N(com.A.d var1) {
+      this.N = var1;
+   }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent propertyChangeEvent) {
-        this.N.V.revalidate();
-        this.N.V.repaint();
-    }
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      this.N.V.revalidate();
+      this.N.V.repaint();
+   }
 }
+
+
+
+
 

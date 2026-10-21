@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.IH;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class B6
-implements ActionListener {
-    final IH C;
+class B6 implements ActionListener {
+   final IH C;
 
-    B6(IH iH) {
-        this.C = iH;
-    }
+   B6(IH var1) {
+      this.C = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.C.M();
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.C.M();
+   }
 }
+
+
+
+
 

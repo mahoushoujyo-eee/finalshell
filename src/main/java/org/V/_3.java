@@ -1,93 +1,77 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.b_0;
-import org.v.N3;
-import org.v.NB;
-import org.v.NQ;
-import org.v._4;
-import org.v.h_1;
-import org.v.nf_0;
-import org.v.nh_0;
-import org.v.ni_0;
-import org.v.nq_0;
-import org.v.q_2;
+class _3 implements _4 {
+   final H_3 s;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-class _3
-implements _4 {
-    final h_1 s;
+   _3(H_3 var1) {
+      this.s = var1;
+   }
 
-    _3(h_1 h_12) {
-        this.s = h_12;
-    }
+   public q_4 w(NQ var1) throws org.b_2 {
+      return H_3.A(this.s, var1);
+   }
 
-    public q_2 w(NQ nQ2) throws b_0 {
-        return h_1.A(this.s, nQ2);
-    }
+   public q_4 e(Nf_2 var1) throws org.b_2 {
+      return H_3.J(this.s, var1);
+   }
 
-    @Override
-    public q_2 e(nf_0 nf_02) throws b_0 {
-        return h_1.J(this.s, nf_02);
-    }
+   public q_4 L(N3 var1) throws org.b_2 {
+      return H_3.U(this.s, var1);
+   }
 
-    public q_2 L(N3 n32) throws b_0 {
-        return h_1.U(this.s, n32);
-    }
+   public q_4 u(Ni_2 var1) throws org.b_2 {
+      return H_3.O(this.s, var1);
+   }
 
-    public q_2 u(ni_0 ni_02) throws b_0 {
-        return h_1.O(this.s, ni_02);
-    }
+   public q_4 r(NB var1) throws org.b_2 {
+      return H_3.p(this.s, var1);
+   }
 
-    public q_2 r(NB nB2) throws b_0 {
-        return h_1.p(this.s, nB2);
-    }
+   public q_4 R(Nq_2 var1) {
+      return H_3.i(this.s, var1);
+   }
 
-    public q_2 R(nq_0 nq_02) {
-        return h_1.i(this.s, nq_02);
-    }
+   public q_4 g(Nh_2 var1) throws org.b_2 {
+      return H_3.E(this.s, var1);
+   }
 
-    public q_2 g(nh_0 nh_02) throws b_0 {
-        return h_1.E(this.s, nh_02);
-    }
+   @Override
+   public Object s(Nh_2 var1) throws Throwable {
+      return this.g(var1);
+   }
 
-    @Override
-    public Object s(nh_0 nh_02) throws Throwable {
-        return this.g(nh_02);
-    }
+   @Override
+   public Object e(Nq_2 var1) throws Throwable {
+      return this.R(var1);
+   }
 
-    @Override
-    public Object e(nq_0 nq_02) throws Throwable {
-        return this.R(nq_02);
-    }
+   @Override
+   public Object p(NB var1) throws Throwable {
+      return this.r(var1);
+   }
 
-    @Override
-    public Object p(NB nB2) throws Throwable {
-        return this.r(nB2);
-    }
+   @Override
+   public Object K(Ni_2 var1) throws Throwable {
+      return this.u(var1);
+   }
 
-    @Override
-    public Object K(ni_0 ni_02) throws Throwable {
-        return this.u(ni_02);
-    }
+   @Override
+   public Object M(N3 var1) throws Throwable {
+      return this.L(var1);
+   }
 
-    @Override
-    public Object M(N3 n32) throws Throwable {
-        return this.L(n32);
-    }
+   @Override
+   public Object e$Object(Nf_2 var1) throws Throwable {
+      return this.e(var1);
+   }
 
-    @Override
-    public Object e(nf_0 nf_02) throws Throwable {
-        return this.e(nf_02);
-    }
-
-    @Override
-    public Object V(NQ nQ2) throws Throwable {
-        return this.w(nQ2);
-    }
+   @Override
+   public Object V(NQ var1) throws Throwable {
+      return this.w(var1);
+   }
 }
+
+
+
+
 

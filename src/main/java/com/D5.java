@@ -1,606 +1,828 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.SV;
-import com.aL;
-import com.cb_1;
-import com.m.U;
-import com.nb_0;
-import com.od_1;
-import com.pt_0;
-import com.u3;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.WeakHashMap;
+import java.util.Map.Entry;
 import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.TreeNode;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public class D5
-implements SV {
-    protected u3 b;
-    protected Map D = new WeakHashMap();
-    protected List d = new ArrayList(1);
+public class D5 implements SV {
+   protected u3 b;
+   protected Map D = new WeakHashMap();
+   protected List d = new ArrayList(1);
 
-    public D5(u3 u32) {
-        this.b = u32;
-    }
+   public D5(u3 var1) {
+      this.b = var1;
+   }
 
-    public u3 F() {
-        return this.b;
-    }
+   public u3 F() {
+      return this.b;
+   }
 
-    public void f(u3 u32) {
-        this.D.clear();
-        this.b = u32;
-    }
+   public void f(u3 var1) {
+      this.D.clear();
+      this.b = var1;
+   }
 
-    @Override
-    public List p(boolean bl) {
-        return this.E(pt_0.checked, bl);
-    }
+   @Override
+   public List p(boolean var1) {
+      return this.E(Pt_2.checked, var1);
+   }
 
-    @Override
-    public List O() {
-        return this.E(pt_0.mixed, false);
-    }
+   @Override
+   public List O() {
+      return this.E(Pt_2.mixed, false);
+   }
 
-    protected List E(pt_0 pt_02, boolean bl) {
-        ArrayList<DefaultMutableTreeNode> arrayList;
-        block4: {
-            arrayList = new ArrayList<DefaultMutableTreeNode>(this.D.size());
-            String[] stringArray = cb_1.C();
-            for (Map.Entry entry : this.D.entrySet()) {
-                if (stringArray != null) {
-                    if (entry.getValue() == pt_02) {
-                        arrayList.add((DefaultMutableTreeNode)entry.getKey());
-                    }
-                    if (stringArray != null) continue;
-                }
-                break block4;
+   protected List E(Pt_2 var1, boolean var2) {
+      String[] var10000 = com.cB_3.C();
+      ArrayList var4 = new ArrayList(this.D.size());
+      String[] var3 = var10000;
+      Iterator var5 = this.D.entrySet().iterator();
+
+      while (true) {
+         if (var5.hasNext()) {
+            Entry var6 = (Entry)var5.next();
+            if (var3 == null) {
+               break;
             }
-            if (bl) {
-                U.z(arrayList);
-            }
-        }
-        return arrayList;
-    }
 
-    @Override
-    public void g(Collection collection, boolean bl) {
-        block4: {
-            String[] stringArray = cb_1.C();
-            int n10 = this.d.size();
-            if (stringArray != null) {
-                n10 = n10 > 0 ? 1 : 0;
+            if (var6.getValue() == var1) {
+               var4.add((DefaultMutableTreeNode)var6.getKey());
             }
-            int n11 = n10;
-            ArrayList arrayList = null;
-            if (n11 != 0) {
-                arrayList = new ArrayList(collection.size());
+
+            if (var3 != null) {
+               continue;
             }
-            ArrayList arrayList2 = new ArrayList();
-            for (DefaultMutableTreeNode defaultMutableTreeNode : collection) {
-                this.g(defaultMutableTreeNode, bl, arrayList2, arrayList);
-                if (stringArray != null) {
-                    if (stringArray != null) continue;
-                }
-                break block4;
+         }
+
+         if (var2) {
+            com.m.U.z(var4);
+         }
+         break;
+      }
+
+      return var4;
+   }
+
+   @Override
+   public void g(Collection var1, boolean var2) {
+      String[] var3 = com.cB_3.C();
+      int var10000 = this.d.size();
+      if (var3 != null) {
+         var10000 = var10000 > 0 ? 1 : 0;
+      }
+
+      int var4 = var10000;
+      ArrayList var5 = null;
+      if (var4 != 0) {
+         var5 = new ArrayList(var1.size());
+      }
+
+      ArrayList var6 = new ArrayList();
+      Iterator var7 = var1.iterator();
+
+      while (true) {
+         if (var7.hasNext()) {
+            DefaultMutableTreeNode var8 = (DefaultMutableTreeNode)var7.next();
+            this.g(var8, var2, var6, var5);
+            if (var3 == null) {
+               break;
             }
-            this.S(arrayList2);
-            this.o(arrayList);
-        }
-    }
 
-    @Override
-    public pt_0 P(DefaultMutableTreeNode defaultMutableTreeNode) {
-        pt_0 pt_02 = (pt_0)((Object)this.D.get(defaultMutableTreeNode));
-        String[] stringArray = cb_1.C();
-        pt_0 pt_03 = pt_02;
-        if (stringArray != null) {
-            pt_03 = pt_03 != null ? pt_02 : pt_0.unchecked;
-        }
-        return pt_03;
-    }
-
-    @Override
-    public void s(DefaultMutableTreeNode defaultMutableTreeNode, boolean bl) {
-        String[] stringArray = cb_1.C();
-        int n10 = this.d.size();
-        if (stringArray != null) {
-            n10 = n10 > 0 ? 1 : 0;
-        }
-        int n11 = n10;
-        ArrayList arrayList = null;
-        if (n11 != 0) {
-            arrayList = new ArrayList(1);
-        }
-        ArrayList arrayList2 = new ArrayList();
-        this.g(defaultMutableTreeNode, bl, arrayList2, arrayList);
-        this.S(arrayList2);
-        this.o(arrayList);
-    }
-
-    protected void g(DefaultMutableTreeNode defaultMutableTreeNode, boolean bl, List list, List list2) {
-        block8: {
-            D5 d5;
-            block10: {
-                pt_0 pt_02;
-                String[] stringArray;
-                block9: {
-                    pt_0 pt_03;
-                    block7: {
-                        pt_03 = this.P(defaultMutableTreeNode);
-                        stringArray = cb_1.C();
-                        pt_0 pt_04 = pt_02 = bl ? pt_0.checked : pt_0.unchecked;
-                        if (stringArray == null) break block7;
-                        if (pt_03 == pt_02) break block8;
-                        d5 = this;
-                        if (stringArray == null) break block9;
-                        d5.g(defaultMutableTreeNode, pt_02, list);
-                    }
-                    if (list2 != null) {
-                        list2.add(new od_1(defaultMutableTreeNode, pt_03, pt_02));
-                    }
-                    d5 = this;
-                }
-                if (stringArray == null) break block10;
-                if (!d5.b.e()) break block8;
-                this.h(defaultMutableTreeNode, pt_02, list, list2);
-                d5 = this;
+            if (var3 != null) {
+               continue;
             }
-            d5.f(defaultMutableTreeNode, list, list2);
-        }
-    }
+         }
 
-    protected void f(DefaultMutableTreeNode defaultMutableTreeNode, List list, List list2) {
-        DefaultMutableTreeNode defaultMutableTreeNode2 = (DefaultMutableTreeNode)defaultMutableTreeNode.getParent();
-        String[] stringArray = cb_1.C();
-        while (defaultMutableTreeNode2 != null) {
-            block17: {
-                block18: {
-                    pt_0 pt_02;
-                    block20: {
-                        List list3;
-                        pt_0 pt_03;
-                        block19: {
-                            block14: {
-                                pt_0 pt_04;
-                                pt_02 = pt_0.unchecked;
-                                boolean bl = false;
-                                boolean bl2 = false;
-                                for (int i2 = 0; i2 < defaultMutableTreeNode2.getChildCount(); ++i2) {
-                                    block16: {
-                                        block15: {
-                                            pt_0 pt_05;
-                                            pt_0 pt_06;
-                                            pt_04 = pt_06 = this.P((DefaultMutableTreeNode)defaultMutableTreeNode2.getChildAt(i2));
-                                            if (stringArray == null) break block14;
-                                            pt_0 pt_07 = pt_0.mixed;
-                                            if (stringArray != null) {
-                                                if (pt_04 == pt_07) {
-                                                    pt_02 = pt_0.mixed;
-                                                    if (stringArray != null) break;
-                                                }
-                                                pt_05 = pt_06;
-                                                pt_07 = pt_0.checked;
-                                            }
-                                            if (stringArray != null) {
-                                                if (pt_05 == pt_07) {
-                                                    bl = true;
-                                                    if (stringArray != null) {
-                                                        if (bl2) {
-                                                            pt_02 = pt_0.mixed;
-                                                            if (stringArray != null) break;
-                                                        }
-                                                        pt_02 = pt_0.checked;
-                                                    }
-                                                    if (stringArray != null) continue;
-                                                }
-                                                pt_05 = pt_06;
-                                                pt_07 = pt_0.unchecked;
-                                            }
-                                            if (pt_05 != pt_07) continue;
-                                            bl2 = true;
-                                            if (stringArray == null) break block15;
-                                            if (!bl) break block16;
-                                            pt_02 = pt_0.mixed;
-                                        }
-                                        if (stringArray != null) break;
-                                    }
-                                    pt_02 = pt_0.unchecked;
-                                    if (stringArray != null) continue;
-                                }
-                                pt_04 = pt_03 = this.P(defaultMutableTreeNode2);
-                            }
-                            if (stringArray == null) break block17;
-                            if (pt_03 == pt_02) break block18;
-                            list3 = list2;
-                            if (stringArray == null) break block19;
-                            if (list3 == null) break block20;
-                            list3 = list2;
+         this.S(var6);
+         this.o(var5);
+         break;
+      }
+   }
+
+   @Override
+   public Pt_2 P(DefaultMutableTreeNode var1) {
+      String[] var10000 = com.cB_3.C();
+      Pt_2 var3 = (Pt_2)this.D.get(var1);
+      String[] var2 = var10000;
+      Pt_2 var4 = var3;
+      if (var2 != null) {
+         var4 = var3 != null ? var3 : Pt_2.unchecked;
+      }
+
+      return var4;
+   }
+
+   @Override
+   public void s(DefaultMutableTreeNode var1, boolean var2) {
+      String[] var3 = com.cB_3.C();
+      int var10000 = this.d.size();
+      if (var3 != null) {
+         var10000 = var10000 > 0 ? 1 : 0;
+      }
+
+      int var4 = var10000;
+      ArrayList var5 = null;
+      if (var4 != 0) {
+         var5 = new ArrayList(1);
+      }
+
+      ArrayList var6 = new ArrayList();
+      this.g(var1, var2, var6, var5);
+      this.S(var6);
+      this.o(var5);
+   }
+
+   protected void g(DefaultMutableTreeNode var1, boolean var2, List var3, List var4) {
+      String[] var5;
+      Pt_2 var7;
+      com.D5 var8;
+      label40: {
+         String[] var10000 = com.cB_3.C();
+         Pt_2 var6 = this.P(var1);
+         var5 = var10000;
+         var7 = var2 ? Pt_2.checked : Pt_2.unchecked;
+         if (var5 != null) {
+            if (var6 == var7) {
+               return;
+            }
+
+            var8 = this;
+            if (var5 == null) {
+               break label40;
+            }
+
+            this.g(var1, var7, var3);
+         }
+
+         if (var4 != null) {
+            var4.add(new com.oD_3(var1, var6, var7));
+         }
+
+         var8 = this;
+      }
+
+      if (var5 != null) {
+         if (!var8.b.e()) {
+            return;
+         }
+
+         this.h(var1, var7, var3, var4);
+         var8 = this;
+      }
+
+      var8.f(var1, var3, var4);
+   }
+
+   protected void f(DefaultMutableTreeNode var1, List var2, List var3) {
+      String[] var10000 = com.cB_3.C();
+      DefaultMutableTreeNode var5 = (DefaultMutableTreeNode)var1.getParent();
+      String[] var4 = var10000;
+
+      while (var5 != null) {
+         Pt_2 var6 = Pt_2.unchecked;
+         boolean var7 = false;
+         boolean var8 = false;
+         int var9 = 0;
+
+         while (true) {
+            label86:
+            if (var9 < var5.getChildCount()) {
+               Pt_2 var10 = this.P((DefaultMutableTreeNode)var5.getChildAt(var9));
+               var12 = var10;
+               if (var4 == null) {
+                  break;
+               }
+
+               Pt_2 var10001 = Pt_2.mixed;
+               if (var4 != null) {
+                  if (var10 == Pt_2.mixed) {
+                     var6 = Pt_2.mixed;
+                     if (var4 != null) {
+                        break label86;
+                     }
+                  }
+
+                  var12 = var10;
+                  var10001 = Pt_2.checked;
+               }
+
+               label77: {
+                  if (var4 != null) {
+                     if (var12 == var10001) {
+                        var7 = true;
+                        if (var4 != null) {
+                           if (var8) {
+                              var6 = Pt_2.mixed;
+                              if (var4 != null) {
+                                 break label86;
+                              }
+                           }
+
+                           var6 = Pt_2.checked;
                         }
-                        list3.add(new od_1(defaultMutableTreeNode2, pt_03, pt_02));
-                    }
-                    this.g(defaultMutableTreeNode2, pt_02, list);
-                }
-                defaultMutableTreeNode2 = (DefaultMutableTreeNode)defaultMutableTreeNode2.getParent();
-            }
-            if (stringArray != null) continue;
-        }
-    }
 
-    protected void h(DefaultMutableTreeNode defaultMutableTreeNode, pt_0 pt_02, List list, List list2) {
-        int n10 = 0;
-        String[] stringArray = cb_1.C();
-        while (n10 < defaultMutableTreeNode.getChildCount()) {
-            DefaultMutableTreeNode defaultMutableTreeNode2 = (DefaultMutableTreeNode)defaultMutableTreeNode.getChildAt(n10);
-            if (stringArray != null) {
-                if (list2 != null) {
-                    list2.add(new od_1(defaultMutableTreeNode2, this.P(defaultMutableTreeNode2), pt_02));
-                }
-                this.g(defaultMutableTreeNode2, pt_02, list);
-                this.h(defaultMutableTreeNode2, pt_02, list, list2);
-                ++n10;
-            }
-            if (stringArray != null) continue;
-        }
-    }
-
-    protected void g(DefaultMutableTreeNode defaultMutableTreeNode, pt_0 pt_02, List list) {
-        block2: {
-            pt_0 pt_03;
-            block3: {
-                String[] stringArray = cb_1.C();
-                pt_03 = pt_02;
-                if (stringArray == null) break block2;
-                if (pt_03 == pt_0.unchecked) break block3;
-                this.D.put(defaultMutableTreeNode, pt_02);
-                if (stringArray != null) break block2;
-            }
-            pt_03 = this.D.remove(defaultMutableTreeNode);
-        }
-        list.add(defaultMutableTreeNode);
-    }
-
-    @Override
-    public void j(DefaultMutableTreeNode defaultMutableTreeNode) {
-        String[] stringArray = cb_1.C();
-        int n10 = this.d.size();
-        if (stringArray != null) {
-            n10 = n10 > 0 ? 1 : 0;
-        }
-        int n11 = n10;
-        ArrayList arrayList = null;
-        if (n11 != 0) {
-            arrayList = new ArrayList(1);
-        }
-        ArrayList arrayList2 = new ArrayList();
-        this.g(defaultMutableTreeNode, this.k(this.P(defaultMutableTreeNode)) == pt_0.checked, arrayList2, arrayList);
-        this.S(arrayList2);
-        this.o(arrayList);
-    }
-
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    @Override
-    public void I(Collection var1_1) {
-        block9: {
-            var2_2 = cb_1.C();
-            v0 = this.d.size();
-            if (var2_2 != null) {
-                v0 = v0 > 0 ? 1 : 0;
-            }
-            var3_3 = v0;
-            var4_4 = null;
-            if (var3_3 != 0) {
-                var4_4 = new ArrayList<E>(var1_1.size());
-            }
-            var5_5 = new ArrayList<E>();
-            var6_6 = false;
-            var7_7 = var1_1.iterator();
-            while (var7_7.hasNext()) {
-                block11: {
-                    block10: {
-                        var8_8 = (DefaultMutableTreeNode)var7_7.next();
-                        if (var2_2 == null) break block10;
-                        v1 /* !! */  = this.P(var8_8);
-                        if (var2_2 == null) ** GOTO lbl-1000
-                        if (v1 /* !! */  == pt_0.checked) break block11;
-                        var6_6 = true;
-                    }
-                    if (var2_2 != null) break;
-                }
-                if (var2_2 != null) continue;
-            }
-            for (E v1 : var1_1) lbl-1000:
-            // 2 sources
-
-            {
-                var8_8 = (DefaultMutableTreeNode)v1 /* !! */ ;
-                this.g(var8_8, var6_6, var5_5, var4_4);
-                if (var2_2 != null) {
-                    if (var2_2 != null) continue;
-                }
-                break block9;
-            }
-            this.S(var5_5);
-            this.o(var4_4);
-        }
-    }
-
-    @Override
-    public void c() {
-        block3: {
-            ArrayList<od_1> arrayList;
-            block4: {
-                arrayList = null;
-                String[] stringArray = cb_1.C();
-                if (this.d.size() <= 0) break block4;
-                arrayList = new ArrayList<od_1>(this.D.size());
-                for (Map.Entry entry : this.D.entrySet()) {
-                    block7: {
-                        pt_0 pt_02;
-                        block6: {
-                            pt_0 pt_03;
-                            pt_0 pt_04;
-                            block5: {
-                                pt_02 = (pt_0)((Object)entry.getValue());
-                                if (stringArray == null) break block3;
-                                pt_04 = pt_02;
-                                pt_03 = pt_0.mixed;
-                                if (stringArray == null) break block5;
-                                if (pt_04 == pt_03) break block6;
-                                pt_04 = pt_02;
-                                pt_03 = pt_0.checked;
-                            }
-                            if (pt_04 != pt_03) break block7;
+                        if (var4 != null) {
+                           break label77;
                         }
-                        arrayList.add(new od_1((DefaultMutableTreeNode)entry.getKey(), pt_02, pt_0.unchecked));
-                    }
-                    if (stringArray != null) continue;
-                }
-            }
-            this.D.clear();
-            this.F();
-            this.o(arrayList);
-        }
-    }
+                     }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void h() {
-        block5: {
-            block6: {
-                var2_1 = this.b.W();
-                var3_2 = null;
-                var1_3 = cb_1.C();
-                if (this.d.size() <= 0) break block6;
-                var3_2 = new ArrayList<od_1>(var2_1.size());
-                var4_4 = var2_1.iterator();
-                while (var4_4.hasNext()) {
-                    var5_5 = (DefaultMutableTreeNode)var4_4.next();
-                    v0 = var6_6 = this.P(var5_5);
-                    if (var1_3 != null) {
-                        if (v0 != pt_0.checked) {
-                            var3_2.add(new od_1(var5_5, var6_6, pt_0.checked));
+                     var12 = var10;
+                     var10001 = Pt_2.unchecked;
+                  }
+
+                  if (var12 == var10001) {
+                     label68: {
+                        var8 = true;
+                        if (var4 != null) {
+                           if (!var7) {
+                              break label68;
+                           }
+
+                           var6 = Pt_2.mixed;
                         }
-                        if (var1_3 != null) continue;
-                    }
-                    ** GOTO lbl19
-                }
-            }
-            for (DefaultMutableTreeNode var5_5 : var2_1) {
-                v0 = this.D.put(var5_5, pt_0.checked);
-lbl19:
-                // 2 sources
 
-                if (var1_3 != null) {
-                    if (var1_3 != null) continue;
-                }
-                break block5;
-            }
-            this.F();
-            this.o(var3_2);
-        }
-    }
-
-    protected pt_0 k(pt_0 pt_02) {
-        switch (pt_02) {
-            case unchecked: {
-                return pt_0.checked;
-            }
-            case checked: {
-                return pt_0.unchecked;
-            }
-            case mixed: {
-                return this.b.X() ? pt_0.checked : pt_0.unchecked;
-            }
-        }
-        return pt_0.unchecked;
-    }
-
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    @Override
-    public void y(boolean var1_1) {
-        block12: {
-            block14: {
-                block13: {
-                    var2_2 = cb_1.C();
-                    v0 = this.d.size();
-                    if (var2_2 != null) {
-                        v0 = v0 > 0 ? 1 : 0;
-                    }
-                    var3_3 = v0;
-                    var4_4 = null;
-                    if (var3_3 != 0) {
-                        var4_4 = new ArrayList<od_1>();
-                    }
-                    var5_5 = new ArrayList<Object>();
-                    if (!var1_1) break block13;
-                    var6_6 = new ArrayList<E>(this.D.size());
-                    var7_7 = this.D.entrySet().iterator();
-                    while (var7_7.hasNext()) {
-                        var8_8 = (Map.Entry)var7_7.next();
-                        v1 /* !! */  = var8_8.getValue();
-                        if (var2_2 != null) {
-                            if (v1 /* !! */  == pt_0.checked) {
-                                var6_6.add((DefaultMutableTreeNode)var8_8.getKey());
-                            }
-                            if (var2_2 != null) continue;
+                        if (var4 != null) {
+                           break label86;
                         }
-                        ** GOTO lbl26
-                    }
-                    this.I((List)var6_6);
-                    var7_7 = var6_6.iterator();
-                    while (var7_7.hasNext()) {
-                        v1 /* !! */  = var7_7.next();
-lbl26:
-                        // 2 sources
+                     }
 
-                        var8_8 = (DefaultMutableTreeNode)v1 /* !! */ ;
-                        this.f((DefaultMutableTreeNode)var8_8, var5_5, var4_4);
-                        this.h((DefaultMutableTreeNode)var8_8, pt_0.checked, var5_5, var4_4);
-                        if (var2_2 != null) {
-                            if (var2_2 != null) continue;
-                        }
-                        break block12;
-                    }
-                    if (var2_2 != null) break block14;
-                }
-                var6_6 = this.D.entrySet().iterator();
-                while (var6_6.hasNext()) {
-                    block16: {
-                        block17: {
-                            block15: {
-                                var7_7 = (Map.Entry)var6_6.next();
-                                if (var2_2 == null) break block12;
-                                v2 /* !! */  = var7_7.getValue();
-                                if (var2_2 == null) break block15;
-                                if (v2 /* !! */  != pt_0.mixed) break block16;
-                                v2 /* !! */  = var7_7.getKey();
-                            }
-                            var8_8 = (DefaultMutableTreeNode)v2 /* !! */ ;
-                            var5_5.add(var8_8);
-                            var6_6.remove();
-                            v3 = var4_4;
-                            if (var2_2 == null) break block17;
-                            if (v3 == null) break block16;
-                            v3 = var4_4;
-                        }
-                        v3.add(new od_1((DefaultMutableTreeNode)var8_8, pt_0.mixed, pt_0.unchecked));
-                    }
-                    if (var2_2 != null) continue;
-                }
-            }
-            this.S(var5_5);
-            this.o(var4_4);
-        }
-    }
+                     var6 = Pt_2.unchecked;
+                  }
+               }
 
-    protected void I(List list) {
-        Iterator iterator = list.iterator();
-        String[] stringArray = cb_1.C();
-        block0: while (true) {
-            boolean bl = iterator.hasNext();
-            block1: while (bl) {
-                DefaultMutableTreeNode defaultMutableTreeNode = (DefaultMutableTreeNode)iterator.next();
-                for (DefaultMutableTreeNode defaultMutableTreeNode2 : list) {
-                    block6: {
-                        block5: {
-                            if (stringArray == null) break block5;
-                            bl = this.E(defaultMutableTreeNode, defaultMutableTreeNode2);
-                            if (stringArray == null) continue block1;
-                            if (!bl) break block6;
-                            iterator.remove();
-                        }
-                        if (stringArray != null) continue block0;
-                    }
-                    if (stringArray != null) continue;
-                }
-                if (stringArray != null) continue block0;
+               var9++;
+               if (var4 != null) {
+                  continue;
+               }
             }
+
+            var12 = this.P(var5);
             break;
-        }
-    }
+         }
 
-    protected boolean E(DefaultMutableTreeNode defaultMutableTreeNode, DefaultMutableTreeNode defaultMutableTreeNode2) {
-        DefaultMutableTreeNode defaultMutableTreeNode3;
-        String[] stringArray = cb_1.C();
-        TreeNode treeNode = defaultMutableTreeNode;
-        if (stringArray != null) {
-            if (treeNode == defaultMutableTreeNode2) {
-                return false;
+         Pt_2 var11 = var12;
+         if (var4 != null) {
+            if (var11 != var6) {
+               label49: {
+                  List var13 = var3;
+                  if (var4 != null) {
+                     if (var3 == null) {
+                        break label49;
+                     }
+
+                     var13 = var3;
+                  }
+
+                  var13.add(new com.oD_3(var5, var11, var6));
+               }
+
+               this.g(var5, var6, var2);
             }
-            treeNode = defaultMutableTreeNode2;
-        }
-        if (stringArray != null) {
-            if (treeNode == null) {
-                return true;
+
+            var5 = (DefaultMutableTreeNode)var5.getParent();
+         }
+
+         if (var4 == null) {
+            break;
+         }
+      }
+   }
+
+   protected void h(DefaultMutableTreeNode var1, Pt_2 var2, List var3, List var4) {
+      String[] var10000 = com.cB_3.C();
+      int var6 = 0;
+      String[] var5 = var10000;
+
+      while (var6 < var1.getChildCount()) {
+         DefaultMutableTreeNode var7 = (DefaultMutableTreeNode)var1.getChildAt(var6);
+         if (var5 != null) {
+            if (var4 != null) {
+               var4.add(new com.oD_3(var7, this.P(var7), var2));
             }
-            treeNode = defaultMutableTreeNode3 = defaultMutableTreeNode.getParent();
-        }
-        while (defaultMutableTreeNode3 != null) {
-            TreeNode treeNode2 = defaultMutableTreeNode3;
-            if (stringArray != null) {
-                if (treeNode2 == defaultMutableTreeNode2) {
-                    return true;
-                }
-                treeNode2 = defaultMutableTreeNode3 = defaultMutableTreeNode3.getParent();
+
+            this.g(var7, var2, var3);
+            this.h(var7, var2, var3, var4);
+            var6++;
+         }
+
+         if (var5 == null) {
+            break;
+         }
+      }
+   }
+
+   protected void g(DefaultMutableTreeNode var1, Pt_2 var2, List var3) {
+      String[] var4 = com.cB_3.C();
+      label14:
+      if (var4 != null) {
+         if (var2 != Pt_2.unchecked) {
+            this.D.put(var1, var2);
+            if (var4 != null) {
+               break label14;
             }
-            if (stringArray != null) continue;
-        }
-        return false;
-    }
+         }
 
-    protected void F() {
-        this.b.repaint(this.b.getVisibleRect());
-    }
+         this.D.remove(var1);
+      }
 
-    protected void S(List list) {
-        this.b.t(list);
-    }
+      var3.add(var1);
+   }
 
-    @Override
-    public void J(nb_0 nb_02) {
-        this.d.add(nb_02);
-    }
+   @Override
+   public void j(DefaultMutableTreeNode var1) {
+      String[] var2 = com.cB_3.C();
+      int var10000 = this.d.size();
+      if (var2 != null) {
+         var10000 = var10000 > 0 ? 1 : 0;
+      }
 
-    @Override
-    public void e(nb_0 nb_02) {
-        this.d.remove(nb_02);
-    }
+      int var3 = var10000;
+      ArrayList var4 = null;
+      if (var3 != 0) {
+         var4 = new ArrayList(1);
+      }
 
-    public void o(List list) {
-        block4: {
-            List list2;
-            String[] stringArray;
-            block3: {
-                stringArray = cb_1.C();
-                list2 = list;
-                if (stringArray == null) break block3;
-                if (list2 == null) break block4;
-                list2 = this.d;
+      ArrayList var5 = new ArrayList();
+      this.g(var1, this.k(this.P(var1)) == Pt_2.checked, var5, var4);
+      this.S(var5);
+      this.o(var4);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   @Override
+   public void I(Collection var1) {
+      String[] var2 = com.cB_3.C();
+      int var10000 = this.d.size();
+      if (var2 != null) {
+         var10000 = var10000 > 0 ? 1 : 0;
+      }
+
+      int var3 = var10000;
+      ArrayList var4 = null;
+      if (var3 != 0) {
+         var4 = new ArrayList(var1.size());
+      }
+
+      ArrayList var5 = new ArrayList();
+      boolean var6 = false;
+      Iterator var7 = var1.iterator();
+
+      label62: {
+         while (true) {
+            if (var7.hasNext()) {
+               DefaultMutableTreeNode var8 = (DefaultMutableTreeNode)var7.next();
+               if (var2 != null) {
+                  var10 = this.P(var8);
+                  if (var2 == null) {
+                     break;
+                  }
+
+                  if (var10 != Pt_2.checked) {
+                     var6 = true;
+                     if (var2 == null && var2 != null) {
+                        continue;
+                     }
+                  } else if (var2 != null) {
+                     continue;
+                  }
+               } else if (var2 == null && var2 != null) {
+                  continue;
+               }
             }
-            for (nb_0 nb_02 : aL.J((Collection)list2)) {
-                nb_02.f(list);
-                if (stringArray != null) continue;
+
+            var7 = var1.iterator();
+            if (!var7.hasNext()) {
+               break label62;
             }
-        }
-    }
+
+            var10 = var7.next();
+            break;
+         }
+
+         while (true) {
+            DefaultMutableTreeNode var9 = (DefaultMutableTreeNode)var10;
+            this.g(var9, var6, var5, var4);
+            if (var2 == null) {
+               return;
+            }
+
+            if (var2 == null || !var7.hasNext()) {
+               break;
+            }
+
+            var10 = var7.next();
+         }
+      }
+
+      this.S(var5);
+      this.o(var4);
+   }
+
+   @Override
+   public void c() {
+      String[] var10000 = com.cB_3.C();
+      ArrayList var2 = null;
+      String[] var1 = var10000;
+      if (this.d.size() > 0) {
+         var2 = new ArrayList(this.D.size());
+
+         for (Entry var4 : this.D.entrySet()) {
+            Pt_2 var5 = (Pt_2)var4.getValue();
+            if (var1 == null) {
+               return;
+            }
+
+            label30: {
+               label29: {
+                  Pt_2 var6 = var5;
+                  Pt_2 var10001 = Pt_2.mixed;
+                  if (var1 != null) {
+                     if (var5 == Pt_2.mixed) {
+                        break label29;
+                     }
+
+                     var6 = var5;
+                     var10001 = Pt_2.checked;
+                  }
+
+                  if (var6 != var10001) {
+                     break label30;
+                  }
+               }
+
+               var2.add(new com.oD_3((DefaultMutableTreeNode)var4.getKey(), var5, Pt_2.unchecked));
+            }
+
+            if (var1 == null) {
+               break;
+            }
+         }
+      }
+
+      this.D.clear();
+      this.F();
+      this.o(var2);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   @Override
+   public void h() {
+      String[] var10000 = com.cB_3.C();
+      List var2 = this.b.W();
+      ArrayList var3 = null;
+      String[] var1 = var10000;
+      Iterator var4;
+      if (this.d.size() > 0) {
+         var3 = new ArrayList(var2.size());
+         var4 = var2.iterator();
+
+         while (true) {
+            if (!var4.hasNext()) {
+               var4 = var2.iterator();
+               break;
+            }
+
+            DefaultMutableTreeNode var5 = (DefaultMutableTreeNode)var4.next();
+            Pt_2 var6 = this.P(var5);
+            if (var1 == null) {
+               if (var1 == null) {
+                  return;
+               }
+
+               if (var1 == null) {
+                  this.F();
+                  this.o(var3);
+                  return;
+               }
+               break;
+            }
+
+            if (var6 != Pt_2.checked) {
+               var3.add(new com.oD_3(var5, var6, Pt_2.checked));
+            }
+
+            if (var1 == null) {
+               var4 = var2.iterator();
+               break;
+            }
+         }
+      } else {
+         var4 = var2.iterator();
+      }
+
+      while (true) {
+         if (!var4.hasNext()) {
+            this.F();
+            this.o(var3);
+            break;
+         }
+
+         DefaultMutableTreeNode var7 = (DefaultMutableTreeNode)var4.next();
+         this.D.put(var7, Pt_2.checked);
+         if (var1 == null) {
+            break;
+         }
+
+         if (var1 == null) {
+            this.F();
+            this.o(var3);
+            break;
+         }
+      }
+   }
+
+   protected Pt_2 k(Pt_2 var1) {
+      switch (Sn_2.A[var1.ordinal()]) {
+         case 1:
+            return Pt_2.checked;
+         case 2:
+            return Pt_2.unchecked;
+         case 3:
+            return this.b.X() ? Pt_2.checked : Pt_2.unchecked;
+         default:
+            return Pt_2.unchecked;
+      }
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   @Override
+   public void y(boolean var1) {
+      String[] var2 = com.cB_3.C();
+      int var10000 = this.d.size();
+      if (var2 != null) {
+         var10000 = var10000 > 0 ? 1 : 0;
+      }
+
+      int var3 = var10000;
+      ArrayList var4 = null;
+      if (var3 != 0) {
+         var4 = new ArrayList();
+      }
+
+      ArrayList var5 = new ArrayList();
+      if (!var1) {
+         Iterator var10 = this.D.entrySet().iterator();
+
+         while (var10.hasNext()) {
+            Entry var12 = (Entry)var10.next();
+            if (var2 == null) {
+               return;
+            }
+
+            label125: {
+               Object var19 = var12.getValue();
+               if (var2 != null) {
+                  if (var19 != Pt_2.mixed) {
+                     break label125;
+                  }
+
+                  var19 = var12.getKey();
+               }
+
+               DefaultMutableTreeNode var15 = (DefaultMutableTreeNode)var19;
+               var5.add(var15);
+               var10.remove();
+               ArrayList var20 = var4;
+               if (var2 != null) {
+                  if (var4 == null) {
+                     break label125;
+                  }
+
+                  var20 = var4;
+               }
+
+               var20.add(new com.oD_3(var15, Pt_2.mixed, Pt_2.unchecked));
+            }
+
+            if (var2 == null) {
+               break;
+            }
+         }
+      } else {
+         ArrayList var6 = new ArrayList(this.D.size());
+         Iterator var7 = this.D.entrySet().iterator();
+
+         label114: {
+            while (true) {
+               if (var7.hasNext()) {
+                  Entry var8 = (Entry)var7.next();
+                  var16 = var8.getValue();
+                  if (var2 == null) {
+                     break;
+                  }
+
+                  if (var16 == Pt_2.checked) {
+                     var6.add((DefaultMutableTreeNode)var8.getKey());
+                  }
+
+                  if (var2 != null) {
+                     continue;
+                  }
+               }
+
+               this.I((List)var6);
+               var7 = var6.iterator();
+               if (!var7.hasNext()) {
+                  break label114;
+               }
+
+               var16 = var7.next();
+               break;
+            }
+
+            while (true) {
+               DefaultMutableTreeNode var13 = (DefaultMutableTreeNode)var16;
+               this.f(var13, var5, var4);
+               this.h(var13, Pt_2.checked, var5, var4);
+               if (var2 == null) {
+                  return;
+               }
+
+               if (var2 == null || !var7.hasNext()) {
+                  break;
+               }
+
+               var16 = var7.next();
+            }
+         }
+
+         if (var2 == null) {
+            Iterator var9 = this.D.entrySet().iterator();
+
+            while (var9.hasNext()) {
+               Entry var11 = (Entry)var9.next();
+               if (var2 == null) {
+                  return;
+               }
+
+               label130: {
+                  Object var17 = var11.getValue();
+                  if (var2 != null) {
+                     if (var17 != Pt_2.mixed) {
+                        break label130;
+                     }
+
+                     var17 = var11.getKey();
+                  }
+
+                  DefaultMutableTreeNode var14 = (DefaultMutableTreeNode)var17;
+                  var5.add(var14);
+                  var9.remove();
+                  ArrayList var18 = var4;
+                  if (var2 != null) {
+                     if (var4 == null) {
+                        break label130;
+                     }
+
+                     var18 = var4;
+                  }
+
+                  var18.add(new com.oD_3(var14, Pt_2.mixed, Pt_2.unchecked));
+               }
+
+               if (var2 == null) {
+                  break;
+               }
+            }
+         }
+      }
+
+      this.S(var5);
+      this.o(var4);
+   }
+
+   protected void I(List var1) {
+      String[] var10000 = com.cB_3.C();
+      Iterator var3 = var1.iterator();
+      String[] var2 = var10000;
+
+      label40:
+      while (true) {
+         boolean var7 = var3.hasNext();
+
+         label38:
+         while (var7) {
+            DefaultMutableTreeNode var4 = (DefaultMutableTreeNode)var3.next();
+
+            for (DefaultMutableTreeNode var6 : var1) {
+               label32: {
+                  if (var2 != null) {
+                     var7 = this.E(var4, var6);
+                     if (var2 == null) {
+                        continue label38;
+                     }
+
+                     if (!var7) {
+                        break label32;
+                     }
+
+                     var3.remove();
+                  }
+
+                  if (var2 != null) {
+                     break;
+                  }
+               }
+
+               if (var2 == null) {
+                  break;
+               }
+            }
+
+            if (var2 == null) {
+               return;
+            }
+            continue label40;
+         }
+
+         return;
+      }
+   }
+
+   protected boolean E(DefaultMutableTreeNode var1, DefaultMutableTreeNode var2) {
+      String[] var3 = com.cB_3.C();
+      Object var10000 = var1;
+      if (var3 != null) {
+         if (var1 == var2) {
+            return false;
+         }
+
+         var10000 = var2;
+      }
+
+      if (var3 != null) {
+         if (var10000 == null) {
+            return true;
+         }
+
+         var10000 = var1.getParent();
+      }
+
+      Object var4 = var10000;
+
+      while (var4 != null) {
+         var10000 = var4;
+         if (var3 != null) {
+            if (var4 == var2) {
+               return true;
+            }
+
+            var10000 = var4.getParent();
+         }
+
+         var4 = var10000;
+         if (var3 == null) {
+            break;
+         }
+      }
+
+      return false;
+   }
+
+   protected void F$void() {
+      this.b.repaint(this.b.getVisibleRect());
+   }
+
+   protected void S(List var1) {
+      this.b.t(var1);
+   }
+
+   @Override
+   public void J(Nb_2 var1) {
+      this.d.add(var1);
+   }
+
+   @Override
+   public void e(Nb_2 var1) {
+      this.d.remove(var1);
+   }
+
+   public void o(List var1) {
+      String[] var2 = com.cB_3.C();
+      List var10000 = var1;
+      if (var2 != null) {
+         if (var1 == null) {
+            return;
+         }
+
+         var10000 = this.d;
+      }
+
+      for (Nb_2 var4 : com.aL.J((Collection)var10000)) {
+         var4.f(var1);
+         if (var2 == null) {
+            break;
+         }
+      }
+   }
 }
+
+
+
+
 

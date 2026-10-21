@@ -1,21 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class H
-implements ActionListener {
-    final k0_0 f;
+class H implements ActionListener {
+   final k0_2 f;
 
-    H(k0_0 k0_02) {
-        this.f = k0_02;
-    }
+   H(k0_2 var1) {
+      this.f = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        ((k0_0)this.f).setVisible(false);
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      ((k0_2)com.c.c(447500719249879950L).get(this)).setVisible(false);
+   }
 }
+
+
+
+
 

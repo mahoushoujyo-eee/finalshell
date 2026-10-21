@@ -1,35 +1,32 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.A;
 
-import com.A.d;
-import com.a.y_0;
-import com.k2_0;
 import javax.swing.JComponent;
 
-class j
-extends k2_0 {
-    final d y;
+class j extends com.k2_2 {
+   final com.A.d y;
 
-    j(d d2, JComponent[] jComponentArray) {
-        this.y = d2;
-        super(jComponentArray);
-    }
+   j(com.A.d var1, JComponent[] var2) {
+      super(var2);
+      this.y = var1;
+   }
 
-    @Override
-    public void Y() {
-        block3: {
-            j j2;
-            block2: {
-                int[] nArray = y_0.M();
-                j2 = this;
-                if (nArray == null) break block2;
-                if (!j2.y.Q) break block3;
-                j2 = this;
-            }
-            super.Y();
-        }
-    }
+   @Override
+   public void Y() {
+      int[] var1 = com.A.y_2.M();
+      com.A.j var10000 = this;
+      if (var1 != null) {
+         if (!this.y.Q) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.Y();
+   }
 }
+
+
+
+
 

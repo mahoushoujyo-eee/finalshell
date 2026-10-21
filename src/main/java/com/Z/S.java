@@ -1,31 +1,30 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.Z.T;
-import com.cz_0;
 import java.io.File;
 import java.util.Comparator;
 
-class S
-implements Comparator {
-    final T H;
+class S implements Comparator {
+   final com.Z.T H;
 
-    S(T t2) {
-        this.H = t2;
-    }
+   S(com.Z.T var1) {
+      this.H = var1;
+   }
 
-    public int L(File file, File file2) {
-        boolean bl = cz_0.V(file);
-        boolean bl2 = cz_0.V(file2);
-        String string = bl ? cz_0.G(file.getName(), true) : "";
-        String string2 = bl2 ? cz_0.G(file2.getName(), true) : "";
-        return string.compareToIgnoreCase(string2);
-    }
+   public int L(File var1, File var2) {
+      boolean var3 = com.Cz_2.V(var1);
+      boolean var4 = com.Cz_2.V(var2);
+      String var5 = var3 ? com.Cz_2.G(var1.getName(), true) : "";
+      String var6 = var4 ? com.Cz_2.G(var2.getName(), true) : "";
+      return var5.compareToIgnoreCase(var6);
+   }
 
-    public int compare(Object object, Object object2) {
-        return this.L((File)object, (File)object2);
-    }
+   @Override
+   public int compare(Object var1, Object var2) {
+      return this.L((File)var1, (File)var2);
+   }
 }
+
+
+
+
 

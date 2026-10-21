@@ -1,30 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-/*
- * Renamed from yq
- */
-class yq_2
-implements ActionListener {
-    final DU H;
+class Yq_2 implements Runnable {
+   final String N;
+   final TL E;
 
-    yq_2(DU dU) {
-        this.H = dU;
-    }
+   Yq_2(TL var1, String var2) {
+      this.E = var1;
+      this.N = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        try {
-            DU.M();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void run() {
+      Method var10000 = (Method)com.c.c(627973027287447539L).get(com.c.c(285052103515156702L).get(com.c.c(500933715607216743L).get(this)));
+      Object[] var10001 = com.c.a(com.c.c(610438136343326774L).get(this), true, true);
+      Method var10003 = com.c.d(413727787977868950L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
+
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var1) {
+         throw var1.getTargetException();
+      }
+   }
 }
+
+
+
+
 

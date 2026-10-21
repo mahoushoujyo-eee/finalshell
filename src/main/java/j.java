@@ -1,20 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.awt.Graphics;
 import javax.swing.JTextArea;
 
-class j
-extends JTextArea {
-    final cc_0 g;
+class j extends JTextArea {
+   final Cc_2 g;
 
-    j(cc_0 cc_02) {
-        this.g = cc_02;
-    }
+   j(Cc_2 var1) {
+      this.g = var1;
+   }
 
-    @Override
-    public void paint(Graphics graphics) {
-        super.paint(graphics);
-    }
+   @Override
+   public void paint(Graphics var1) {
+      super.paint(var1);
+   }
 }
+
+
+
+
 

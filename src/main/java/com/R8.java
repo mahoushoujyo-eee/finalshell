@@ -1,281 +1,263 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.D7;
-import com.PY;
-import com.SZ;
-import com.a9;
-import com.kp_0;
-import com.ne_1;
-import com.og_2;
-import com.ox_2;
-import com.sa_0;
-import com.xm_0;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Insets;
 import javax.swing.JScrollBar;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public class R8
-extends JScrollBar
-implements D7,
-sa_0 {
-    public R8() {
-    }
+public class R8 extends JScrollBar implements com.D7, Sa_2 {
+   public R8() {
+   }
 
-    public R8(int n10) {
-        super(n10);
-    }
+   public R8(int var1) {
+      super(var1);
+   }
 
-    public R8(int n10, int n11, int n12, int n13, int n14) {
-        super(n10, n11, n12, n13, n14);
-    }
+   public R8(int var1, int var2, int var3, int var4, int var5) {
+      super(var1, var2, var3, var4, var5);
+   }
 
-    public boolean o() {
-        return this.n().t();
-    }
+   public boolean o() {
+      return this.n().t();
+   }
 
-    public R8 s(boolean bl) {
-        this.n().R(bl);
-        return this;
-    }
+   public R8 s(boolean var1) {
+      this.n().R(var1);
+      return this;
+   }
 
-    public boolean b() {
-        return this.n().q();
-    }
+   public boolean b() {
+      return this.n().q();
+   }
 
-    public R8 L(boolean bl) {
-        this.n().Y(bl);
-        return this;
-    }
+   public R8 L(boolean var1) {
+      this.n().Y(var1);
+      return this;
+   }
 
-    public Insets g() {
-        return this.n().Z();
-    }
+   public Insets g() {
+      return this.n().Z();
+   }
 
-    public R8 W(Insets insets) {
-        this.n().i(insets);
-        return this;
-    }
+   public R8 W(Insets var1) {
+      this.n().i(var1);
+      return this;
+   }
 
-    public R8 k(int n10, int n11, int n12, int n13) {
-        return this.W(new Insets(n10, n11, n12, n13));
-    }
+   public R8 k(int var1, int var2, int var3, int var4) {
+      return this.W(new Insets(var1, var2, var3, var4));
+   }
 
-    public R8 e(int n10) {
-        return this.k(n10, n10, n10, n10);
-    }
+   public R8 e(int var1) {
+      return this.k(var1, var1, var1, var1);
+   }
 
-    public og_2 I() {
-        return ox_2.y(this);
-    }
+   public com.og_4 I() {
+      return com.ox_4.y(this);
+   }
 
-    public R8 M(og_2 og_22) {
-        ox_2.b(this, og_22);
-        return this;
-    }
+   public R8 M(com.og_4 var1) {
+      com.ox_4.b(this, var1);
+      return this;
+   }
 
-    public og_2 C() {
-        return this.n().h();
-    }
+   public com.og_4 C() {
+      return this.n().h();
+   }
 
-    public R8 s(og_2 og_22) {
-        this.n().r(og_22);
-        return this;
-    }
+   public R8 s(com.og_4 var1) {
+      this.n().r(var1);
+      return this;
+   }
 
-    public og_2 o() {
-        return this.n().y();
-    }
+   public com.og_4 o$comog_4() {
+      return this.n().y();
+   }
 
-    public R8 p(og_2 og_22) {
-        this.n().S(og_22);
-        return this;
-    }
+   public R8 p(com.og_4 var1) {
+      this.n().S(var1);
+      return this;
+   }
 
-    @Override
-    public String A() {
-        return this.n().A();
-    }
+   @Override
+   public String A() {
+      return this.n().A();
+   }
 
-    @Override
-    public void S(String string) {
-        this.n().S(string);
-    }
+   @Override
+   public void S(String var1) {
+      this.n().S(var1);
+   }
 
-    public xm_0 n() {
-        return (xm_0)this.getUI();
-    }
+   public Xm_2 n() {
+      return (Xm_2)this.getUI();
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void updateUI() {
-        block13: {
-            block12: {
-                block11: {
-                    block14: {
-                        var1_1 = SZ.L();
-                        v0 = this;
-                        if (var1_1 != null) ** GOTO lbl26
-                        if (v0.getUI() == null) break block11;
-                        break block14;
-                        catch (Throwable v1) {
-                            throw R8.a(v1);
-                        }
-                    }
-                    try {
-                        block15: {
-                            v2 = this;
-                            if (var1_1 != null) break block12;
-                            break block15;
-                            catch (Throwable v3) {
-                                throw R8.a(v3);
-                            }
-                        }
-                        if (!(v2.getUI() instanceof xm_0)) {
-                        }
-                        ** GOTO lbl33
-                    }
-                    catch (Throwable v4) {
-                        throw R8.a(v4);
-                    }
-                }
-                try {
-                    v0 = this;
-lbl26:
-                    // 2 sources
+   @Override
+   public void updateUI() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/SZ.L ()Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnonnull 33
+      // 09: invokevirtual com/R8.getUI ()Ljavax/swing/plaf/ScrollBarUI;
+      // 0c: ifnull 32
+      // 0f: goto 16
+      // 12: invokestatic com/R8.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 15: athrow
+      // 16: aload 0
+      // 17: aload 1
+      // 18: ifnonnull 63
+      // 1b: goto 22
+      // 1e: invokestatic com/R8.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 21: athrow
+      // 22: invokevirtual com/R8.getUI ()Ljavax/swing/plaf/ScrollBarUI;
+      // 25: instanceof com/Xm_2
+      // 28: ifne 5b
+      // 2b: goto 32
+      // 2e: invokestatic com/R8.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 31: athrow
+      // 32: aload 0
+      // 33: getstatic com/a9.p Ljava/lang/String;
+      // 36: bipush 0
+      // 37: anewarray 126
+      // 3a: invokestatic com/Kp_2.w (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 3d: checkcast com/Xm_2
+      // 40: invokevirtual com/R8.setUI (Ljavax/swing/plaf/ScrollBarUI;)V
+      // 43: goto 6a
+      // 46: astore 2
+      // 47: aload 0
+      // 48: aload 2
+      // 49: invokestatic com/nE_3.g (Ljava/lang/Object;Ljava/lang/Throwable;)V
+      // 4c: aload 0
+      // 4d: new com/Xm_2
+      // 50: dup
+      // 51: invokespecial com/Xm_2.<init> ()V
+      // 54: invokevirtual com/R8.setUI (Ljavax/swing/plaf/ScrollBarUI;)V
+      // 57: aload 1
+      // 58: ifnull 6a
+      // 5b: aload 0
+      // 5c: goto 63
+      // 5f: invokestatic com/R8.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 62: athrow
+      // 63: aload 0
+      // 64: invokevirtual com/R8.getUI ()Ljavax/swing/plaf/ScrollBarUI;
+      // 67: invokevirtual com/R8.setUI (Ljavax/swing/plaf/ScrollBarUI;)V
+      // 6a: return
+   }
 
-                    v0.setUI((xm_0)kp_0.w(a9.p, new Object[0]));
-                    break block13;
-                }
-                catch (Throwable var2_2) {
-                    try {
-                        ne_1.g(this, var2_2);
-                        this.setUI(new xm_0());
-                        if (var1_1 == null) break block13;
-lbl33:
-                        // 2 sources
+   @Override
+   public int M() {
+      return PY.f(this);
+   }
 
-                        v2 = this;
-                    }
-                    catch (Throwable v5) {
-                        throw R8.a(v5);
-                    }
-                }
-            }
-            v2.setUI(this.getUI());
-        }
-    }
+   public R8 W(int var1) {
+      return (R8)PY.Q(this, var1);
+   }
 
-    @Override
-    public int M() {
-        return PY.f(this);
-    }
+   @Override
+   public int m() {
+      return PY.m(this);
+   }
 
-    public R8 W(int n10) {
-        return (R8)PY.Q(this, n10);
-    }
+   public R8 a(int var1) {
+      return (R8)PY.j(this, var1);
+   }
 
-    @Override
-    public int m() {
-        return PY.m(this);
-    }
+   @Override
+   public int A$int() {
+      return PY.S(this);
+   }
 
-    public R8 a(int n10) {
-        return (R8)PY.j(this, n10);
-    }
+   public R8 g(int var1) {
+      return (R8)PY.N(this, var1);
+   }
 
-    @Override
-    public int A() {
-        return PY.S(this);
-    }
+   @Override
+   public int Q() {
+      return PY.Z(this);
+   }
 
-    public R8 g(int n10) {
-        return (R8)PY.N(this, n10);
-    }
+   public R8 z(int var1) {
+      return (R8)PY.w(this, var1);
+   }
 
-    @Override
-    public int Q() {
-        return PY.Z(this);
-    }
+   @Override
+   public int i() {
+      return PY.J(this);
+   }
 
-    public R8 z(int n10) {
-        return (R8)PY.w(this, n10);
-    }
+   public R8 O(int var1) {
+      return (R8)PY.b(this, var1);
+   }
 
-    @Override
-    public int i() {
-        return PY.J(this);
-    }
+   @Override
+   public int a() {
+      return PY.i(this);
+   }
 
-    @Override
-    public R8 O(int n10) {
-        return (R8)PY.b(this, n10);
-    }
+   public R8 p(int var1) {
+      return (R8)PY.y(this, var1);
+   }
 
-    @Override
-    public int a() {
-        return PY.i(this);
-    }
+   @Override
+   public Dimension getPreferredSize() {
+      return PY.W(this, super.getPreferredSize());
+   }
 
-    @Override
-    public R8 p(int n10) {
-        return (R8)PY.y(this, n10);
-    }
+   public R8 t(int var1, int var2) {
+      return (R8)PY.O(this, var1, var2);
+   }
 
-    @Override
-    public Dimension getPreferredSize() {
-        return PY.W(this, super.getPreferredSize());
-    }
+   @Override
+   public Component W(int var1, int var2) {
+      return this.t(var1, var2);
+   }
 
-    public R8 t(int n10, int n11) {
-        return (R8)PY.O(this, n10, n11);
-    }
+   @Override
+   public Component d(int var1) {
+      return this.p(var1);
+   }
 
-    @Override
-    public Component W(int n10, int n11) {
-        return this.t(n10, n11);
-    }
+   @Override
+   public Component p$Component(int var1) {
+      return this.O(var1);
+   }
 
-    @Override
-    public Component d(int n10) {
-        return this.p(n10);
-    }
+   @Override
+   public Component D(int var1) {
+      return this.z(var1);
+   }
 
-    @Override
-    public Component p(int n10) {
-        return this.O(n10);
-    }
+   @Override
+   public Component V(int var1) {
+      return this.g(var1);
+   }
 
-    @Override
-    public Component D(int n10) {
-        return this.z(n10);
-    }
+   @Override
+   public Component x(int var1) {
+      return this.a(var1);
+   }
 
-    @Override
-    public Component V(int n10) {
-        return this.g(n10);
-    }
+   @Override
+   public Component O$Component(int var1) {
+      return this.W(var1);
+   }
 
-    @Override
-    public Component x(int n10) {
-        return this.a(n10);
-    }
-
-    @Override
-    public Component O(int n10) {
-        return this.W(n10);
-    }
-
-    private static Throwable a(Throwable throwable) {
-        return throwable;
-    }
+   private static Throwable a(Throwable var0) {
+      return var0;
+   }
 }
+
+
+
+
 

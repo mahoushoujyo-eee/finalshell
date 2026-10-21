@@ -1,54 +1,50 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.QL;
-import com.at_0;
-import com.ll_1;
-import com.zJ;
 import java.awt.FontMetrics;
 import java.awt.datatransfer.DataFlavor;
 import javax.swing.Icon;
 
-public class zU
-extends zJ {
-    protected final QL C;
+public class zU extends com.zJ {
+   protected final com.QL C;
 
-    public zU(QL qL) {
-        this.C = qL;
-    }
+   public zU(com.QL var1) {
+      this.C = var1;
+   }
 
-    @Override
-    public DataFlavor y() {
-        return ll_1.q;
-    }
+   @Override
+   public DataFlavor y() {
+      return com.lL_3.q;
+   }
 
-    protected FontMetrics R(at_0 at_02) {
-        return this.C.getFontMetrics(this.C.getFont());
-    }
+   protected FontMetrics R(com.at_2 var1) {
+      return this.C.getFontMetrics(this.C.getFont());
+   }
 
-    protected Icon h(at_0 at_02) {
-        return at_02.I();
-    }
+   protected Icon h(com.at_2 var1) {
+      return var1.I();
+   }
 
-    protected String A(at_0 at_02) {
-        return at_02.V();
-    }
+   protected String A(com.at_2 var1) {
+      return var1.V();
+   }
 
-    @Override
-    protected String O(Object object) {
-        return this.A((at_0)object);
-    }
+   @Override
+   protected String O(Object var1) {
+      return this.A((com.at_2)var1);
+   }
 
-    @Override
-    protected Icon n(Object object) {
-        return this.h((at_0)object);
-    }
+   @Override
+   protected Icon n(Object var1) {
+      return this.h((com.at_2)var1);
+   }
 
-    @Override
-    protected FontMetrics Z(Object object) {
-        return this.R((at_0)object);
-    }
+   @Override
+   protected FontMetrics Z(Object var1) {
+      return this.R((com.at_2)var1);
+   }
 }
+
+
+
+
 

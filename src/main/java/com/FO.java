@@ -1,17 +1,18 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import java.io.IOException;
 
 public interface FO {
-    public boolean u();
+   boolean u();
 
-    public void C() throws IOException;
+   void C() throws IOException;
 
-    public void I();
+   void I();
 
-    public void f();
+   void f();
 }
+
+
+
+
 

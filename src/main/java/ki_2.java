@@ -1,57 +1,43 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.awt.Dimension;
-import javax.swing.JPanel;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-/*
- * Renamed from ki
- */
-public class ki_2
-extends JPanel {
-    Y3 y;
-    private static final long[] a;
-    private static final Integer[] b;
+class Ki_2 implements Runnable {
+   final BU t;
 
-    public ki_2(Y3 y3) {
-        nB nB2 = new nB();
-        this.setLayout(nB2);
-        this.y = y3;
-        this.setOpaque(false);
-        this.setPreferredSize(new Dimension(ki_2.a(5010, 9206486670880300411L), ki_2.a(27294, 5320961396955161718L)));
-        this.add(y3);
-    }
+   Ki_2(BU var1) {
+      this.t = var1;
+   }
 
-    public Y3 P() {
-        return (Y3)this.y;
-    }
+   @Override
+   public void run() {
+      Method var10000 = (Method)com.c.c(476201740043670453L).get(com.c.c(267379412116570843L).get(com.c.c(597797036197355507L).get(this)));
+      Object[] var10001 = com.c.f();
+      Method var10003 = com.c.d(346382751221538814L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 6680658910786993314L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\u00ffE,\u000bd1\u00e0\u00f5\u00c6~t\u00ef\u00d2\u0015\u0099\u00f8";
-        int n11 = "\u00ffE,\u000bd1\u00e0\u00f5\u00c6~t\u00ef\u00d2\u0015\u0099\u00f8".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-    }
+      try {
+         var10000 = (Method)var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x4EE9;
-        if (b[n11] == null) {
-            ki_2.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      var10001 = com.c.a(com.c.c(588985816751341623L).get(com.c.c(597797036197355507L).get(this)));
+      var10003 = com.c.d(277808345207982888L);
+      var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
+
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var1) {
+         throw var1.getTargetException();
+      }
+   }
 }
+
+
+
+
 

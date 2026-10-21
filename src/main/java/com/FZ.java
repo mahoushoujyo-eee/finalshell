@@ -1,53 +1,62 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.iz_0;
-
 public class FZ {
-    public final iz_0 m;
-    public final iz_0 l;
-    private static String[] d;
+   public final Iz_2 m;
+   public final Iz_2 l;
+   private static String[] d;
 
-    public FZ(iz_0 iz_02, iz_0 iz_03) {
-        this.m = iz_02;
-        this.l = iz_03;
-    }
+   public FZ(Iz_2 var1, Iz_2 var2) {
+      this.m = var1;
+      this.l = var2;
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public boolean equals(Object object) {
-        String[] stringArray = FZ.G();
-        boolean bl = object instanceof FZ;
-        if (stringArray == null) return bl;
-        if (!bl) return false;
-        FZ fZ2 = (FZ)object;
-        iz_0 iz_02 = fZ2.m;
-        iz_0 iz_03 = this.m;
-        if (stringArray != null) {
-            if (iz_02 != iz_03) return false;
-            iz_02 = fZ2.l;
-            iz_03 = this.l;
-        }
-        if (iz_02 != iz_03) return false;
-        return true;
-    }
+   @Override
+   public boolean equals(Object var1) {
+      String[] var2 = G();
+      boolean var10000 = var1 instanceof com.FZ;
+      if (var2 != null) {
+         if (var10000) {
+            com.FZ var3 = (com.FZ)var1;
+            Iz_2 var4 = var3.m;
+            Iz_2 var10001 = this.m;
+            if (var2 != null) {
+               if (var3.m != this.m) {
+                  return false;
+               }
 
-    public static void r(String[] stringArray) {
-        d = stringArray;
-    }
+               var4 = var3.l;
+               var10001 = this.l;
+            }
 
-    public static String[] G() {
-        return d;
-    }
+            if (var4 == var10001) {
+               return true;
+            }
 
-    static {
-        if (FZ.G() == null) {
-            FZ.r(new String[2]);
-        }
-    }
+            return false;
+         }
+
+         var10000 = false;
+      }
+
+      return var10000;
+   }
+
+   public static void r(String[] var0) {
+      d = var0;
+   }
+
+   public static String[] G() {
+      return d;
+   }
+
+   static {
+      if (G() == null) {
+         r(new String[2]);
+      }
+   }
 }
+
+
+
+
 

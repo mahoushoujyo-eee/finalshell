@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import java.awt.event.ComponentEvent;
@@ -8,55 +5,57 @@ import java.awt.event.ComponentListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-public abstract class aJ
-implements ComponentListener,
-WindowListener {
-    @Override
-    public void componentResized(ComponentEvent componentEvent) {
-    }
+public abstract class aJ implements ComponentListener, WindowListener {
+   @Override
+   public void componentResized(ComponentEvent var1) {
+   }
 
-    @Override
-    public void componentMoved(ComponentEvent componentEvent) {
-    }
+   @Override
+   public void componentMoved(ComponentEvent var1) {
+   }
 
-    @Override
-    public void componentShown(ComponentEvent componentEvent) {
-    }
+   @Override
+   public void componentShown(ComponentEvent var1) {
+   }
 
-    @Override
-    public void componentHidden(ComponentEvent componentEvent) {
-        this.t(componentEvent);
-    }
+   @Override
+   public void componentHidden(ComponentEvent var1) {
+      this.t(var1);
+   }
 
-    @Override
-    public void windowOpened(WindowEvent windowEvent) {
-    }
+   @Override
+   public void windowOpened(WindowEvent var1) {
+   }
 
-    @Override
-    public void windowClosing(WindowEvent windowEvent) {
-    }
+   @Override
+   public void windowClosing(WindowEvent var1) {
+   }
 
-    @Override
-    public void windowClosed(WindowEvent windowEvent) {
-        this.t(windowEvent);
-    }
+   @Override
+   public void windowClosed(WindowEvent var1) {
+      this.t(var1);
+   }
 
-    @Override
-    public void windowIconified(WindowEvent windowEvent) {
-    }
+   @Override
+   public void windowIconified(WindowEvent var1) {
+   }
 
-    @Override
-    public void windowDeiconified(WindowEvent windowEvent) {
-    }
+   @Override
+   public void windowDeiconified(WindowEvent var1) {
+   }
 
-    @Override
-    public void windowActivated(WindowEvent windowEvent) {
-    }
+   @Override
+   public void windowActivated(WindowEvent var1) {
+   }
 
-    @Override
-    public void windowDeactivated(WindowEvent windowEvent) {
-    }
+   @Override
+   public void windowDeactivated(WindowEvent var1) {
+   }
 
-    public abstract void t(ComponentEvent var1);
+   public abstract void t(ComponentEvent var1);
 }
+
+
+
+
 

@@ -1,105 +1,113 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.XE;
-import com._y_0;
-import com.pa_1;
-import com.ru_1;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
-class XH
-extends MouseMotionAdapter {
-    final pa_1 i;
-    private static final long a;
+class XH extends MouseMotionAdapter {
+   final pA_3 i;
+   private static final long a;
 
-    XH(pa_1 pa_12) {
-        this.i = pa_12;
-    }
+   XH(pA_3 var1) {
+      this.i = var1;
+   }
 
-    @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
-        pa_1.f(this.i, mouseEvent.getPoint(), mouseEvent.isControlDown());
-    }
+   @Override
+   public void mouseMoved(MouseEvent var1) {
+      pA_3.f(this.i, var1.getPoint(), var1.isControlDown());
+   }
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-        MouseEvent mouseEvent2;
-        pa_1 pa_12;
-        int n10;
-        block18: {
-            long l2;
-            block17: {
-                n10 = _y_0.y();
-                long l3 = System.currentTimeMillis() - this.i.M - a;
-                l2 = l3 == 0L ? 0 : (l3 < 0L ? -1 : 1);
-                if (n10 == 0) {
-                    if (l2 < 0) {
-                        return;
-                    }
-                    l2 = (long)this.i.A;
-                }
-                if (n10 == 0) {
-                    if (l2 == false) {
-                        return;
-                    }
-                    l2 = (long)this.i.m(mouseEvent);
-                }
-                if (n10 != 0) break block17;
-                if (l2 == false) {
-                    return;
-                }
-                pa_12 = this.i;
-                mouseEvent2 = mouseEvent;
-                if (n10 != 0) break block18;
-                l2 = (long)pa_12.m(mouseEvent2);
-            }
-            if (l2 == false) {
-                return;
-            }
-            pa_12 = this.i;
-            mouseEvent2 = mouseEvent;
-        }
-        XE xE2 = pa_1.x(pa_12, mouseEvent2.getPoint());
-        ru_1 ru_12 = pa_1.e(this.i);
-        if (n10 == 0) {
-            if (ru_12 == null) {
-                pa_1 pa_13 = this.i;
-                if (n10 == 0) {
-                    if (pa_1.A(pa_13) == null) {
-                        pa_1.f(this.i, xE2);
-                    }
-                    pa_13 = this.i;
-                }
-                pa_1.t(pa_13, new ru_1(new XE(pa_1.A(this.i))));
-            }
-            this.i.repaint();
-            ru_12 = pa_1.e(this.i);
-        }
-        ru_12.m(xE2);
-        if (pa_1.S(this.i).V()) {
-            // empty if block
-        }
-        int n11 = mouseEvent.getPoint().y;
-        if (n10 == 0) {
-            if (n11 < 0) {
-                pa_1.Z(this.i, (int)((double)mouseEvent.getPoint().y * pa_1.z));
-            }
-            n11 = mouseEvent.getPoint().y;
-        }
-        if (n11 > this.i.J()) {
-            pa_1.Z(this.i, (int)((double)(mouseEvent.getPoint().y - this.i.J()) * pa_1.z));
-        }
-    }
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      int var2 = _y_2.y();
+      long var8;
+      int var10000 = (var8 = System.currentTimeMillis() - this.i.M - a) == 0L ? 0 : (var8 < 0L ? -1 : 1);
+      if (var2 == 0) {
+         if (var10000 < 0) {
+            return;
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 1307081537624475081L;
-        a = 0x1223AFBBB69405FBL ^ l2;
-    }
+         var10000 = this.i.A;
+      }
+
+      if (var2 == 0) {
+         if (var10000 == 0) {
+            return;
+         }
+
+         var10000 = this.i.m(var1);
+      }
+
+      MouseEvent var10001;
+      label71: {
+         if (var2 == 0) {
+            if (var10000 == 0) {
+               return;
+            }
+
+            var4 = this.i;
+            var10001 = var1;
+            if (var2 != 0) {
+               break label71;
+            }
+
+            var10000 = this.i.m(var1);
+         }
+
+         if (var10000 == 0) {
+            return;
+         }
+
+         var4 = this.i;
+         var10001 = var1;
+      }
+
+      XE var3 = pA_3.x(var4, var10001.getPoint());
+      rU_3 var5 = pA_3.e(this.i);
+      if (var2 == 0) {
+         if (var5 == null) {
+            pA_3 var6 = this.i;
+            if (var2 == 0) {
+               if (pA_3.A(this.i) == null) {
+                  pA_3.f(this.i, var3);
+               }
+
+               var6 = this.i;
+            }
+
+            pA_3.t(var6, new rU_3(new XE(pA_3.A(this.i))));
+         }
+
+         this.i.repaint();
+         var5 = pA_3.e(this.i);
+      }
+
+      var5.m(var3);
+      if (pA_3.S(this.i).V()) {
+      }
+
+      var10000 = var1.getPoint().y;
+      if (var2 == 0) {
+         if (var10000 < 0) {
+            pA_3.Z(this.i, (int)((double)var1.getPoint().y * pA_3.z));
+         }
+
+         var10000 = var1.getPoint().y;
+      }
+
+      if (var10000 > this.i.J()) {
+         pA_3.Z(this.i, (int)((double)(var1.getPoint().y - this.i.J()) * pA_3.z));
+      }
+   }
+
+   static {
+      long var0 = 1307081537624475081L;
+      long var10002 = 1307081537624475131L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

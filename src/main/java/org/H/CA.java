@@ -1,28 +1,27 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import org.H.Y;
 
-public class CA
-extends Y {
-    CA(short s2) {
-        super(s2);
-    }
+public class CA extends org.H.Y {
+   CA(short var1) {
+      super(var1);
+   }
 
-    private static Y v(short s2, DataInputStream dataInputStream) {
-        return new CA(s2);
-    }
+   private static org.H.Y v(short var0, DataInputStream var1) {
+      return new org.H.CA(var0);
+   }
 
-    @Override
-    protected void T(DataOutputStream dataOutputStream) {
-    }
+   @Override
+   protected void T(DataOutputStream var1) {
+   }
 
-    static Y K(short s2, DataInputStream dataInputStream) {
-        return CA.v(s2, dataInputStream);
-    }
+   static org.H.Y K(short var0, DataInputStream var1) {
+      return v(var0, var1);
+   }
 }
+
+
+
+
 

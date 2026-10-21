@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import java.awt.Component;
@@ -10,114 +7,127 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 
 public class FV {
-    private static String v;
+   private static String v;
 
-    public static Window L(Component component) {
-        String string = FV.D();
-        Component component2 = component;
-        if (string == null) {
-            if (component2 == null) {
-                return null;
+   public static Window L(Component var0) {
+      String var1 = D();
+      Component var10000 = var0;
+      if (var1 == null) {
+         if (var0 == null) {
+            return null;
+         }
+
+         var10000 = var0;
+      }
+
+      if (var1 == null) {
+         if (var10000 instanceof Window) {
+            return (Window)var0;
+         }
+
+         var10000 = var0;
+      }
+
+      Container var2 = var10000.getParent();
+
+      while (var2 != null) {
+         Container var3 = var2;
+         if (var1 == null) {
+            if (var2 instanceof Window) {
+               return (Window)var2;
             }
-            component2 = component;
-        }
-        if (string == null) {
-            if (component2 instanceof Window) {
-                return (Window)component;
+
+            var3 = var2.getParent();
+         }
+
+         var2 = var3;
+         if (var1 != null) {
+            break;
+         }
+      }
+
+      return null;
+   }
+
+   public static void p(Runnable var0) {
+      label16: {
+         String var1 = D();
+         if (var1 == null) {
+            if (!SwingUtilities.isEventDispatchThread()) {
+               break label16;
             }
-            component2 = component;
-        }
-        Container container = component2.getParent();
-        while (container != null) {
-            Container container2 = container;
-            if (string == null) {
-                if (container2 instanceof Window) {
-                    return (Window)container;
-                }
-                container2 = container = container.getParent();
-            }
-            if (string == null) continue;
-        }
-        return null;
-    }
 
-    public static void p(Runnable runnable) {
-        block4: {
-            block3: {
-                String string;
-                block2: {
-                    string = FV.D();
-                    if (string != null) break block2;
-                    if (!SwingUtilities.isEventDispatchThread()) break block3;
-                    runnable.run();
-                }
-                if (string == null) break block4;
-            }
-            SwingUtilities.invokeLater(runnable);
-        }
-    }
+            var0.run();
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    public static void T(Runnable var0) throws InterruptedException, InvocationTargetException {
-        block9: {
-            block8: {
-                var1_1 = FV.D();
-                try {
-                    try {
-                        if (var1_1 != null) break block8;
-                        if (SwingUtilities.isEventDispatchThread()) {
-                        }
-                        ** GOTO lbl17
-                    }
-                    catch (InterruptedException v0) {
-                        throw FV.a(v0);
-                    }
-                    var0.run();
-                }
-                catch (InterruptedException v1) {
-                    throw FV.a(v1);
-                }
-            }
-            try {
-                if (var1_1 == null) break block9;
-lbl17:
-                // 2 sources
+         if (var1 == null) {
+            return;
+         }
+      }
 
-                SwingUtilities.invokeAndWait(var0);
-            }
-            catch (InterruptedException v2) {
-                throw FV.a(v2);
-            }
-        }
-    }
+      SwingUtilities.invokeLater(var0);
+   }
 
-    public static void G(Runnable runnable) {
-        try {
-            FV.T(runnable);
-        }
-        catch (Throwable throwable) {
-            // empty catch block
-        }
-    }
+   public static void T(Runnable param0) throws InterruptedException, InvocationTargetException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/FV.D ()Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 1
+      // 05: ifnonnull 22
+      // 08: invokestatic javax/swing/SwingUtilities.isEventDispatchThread ()Z
+      // 0b: ifeq 26
+      // 0e: goto 15
+      // 11: invokestatic com/FV.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 14: athrow
+      // 15: aload 0
+      // 16: invokeinterface java/lang/Runnable.run ()V 1
+      // 1b: goto 22
+      // 1e: invokestatic com/FV.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 21: athrow
+      // 22: aload 1
+      // 23: ifnull 31
+      // 26: aload 0
+      // 27: invokestatic javax/swing/SwingUtilities.invokeAndWait (Ljava/lang/Runnable;)V
+      // 2a: goto 31
+      // 2d: invokestatic com/FV.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 30: athrow
+      // 31: return
+   }
 
-    public static void D(String string) {
-        v = string;
-    }
+   public static void G(Runnable var0) {
+      try {
+         T(var0);
+      } catch (Throwable var2) {
+      }
+   }
 
-    public static String D() {
-        return v;
-    }
+   public static void D(String var0) {
+      v = var0;
+   }
 
-    private static InterruptedException a(InterruptedException interruptedException) {
-        return interruptedException;
-    }
+   public static String D() {
+      return v;
+   }
 
-    static {
-        if (FV.D() != null) {
-            FV.D("gJ9Ic");
-        }
-    }
+   private static InterruptedException a(InterruptedException var0) {
+      return var0;
+   }
+
+   static {
+      if (D() != null) {
+         D("gJ9Ic");
+      }
+   }
 }
+
+
+
+
 

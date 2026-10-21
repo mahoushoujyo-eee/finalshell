@@ -1,35 +1,30 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
 import org.I;
-import org.v.NR;
-import org.v.N_;
-import org.v._4;
-import org.v.h_1;
 
-class ND
-extends NR {
-    final N_ Z;
-    final h_1 l;
+class ND extends NR {
+   final N_ Z;
+   final H_3 l;
 
-    ND(h_1 h_12, I i2, N_ n_3) {
-        this.l = h_12;
-        this.Z = n_3;
-        super(i2);
-    }
+   ND(H_3 var1, I var2, N_ var3) {
+      super(var2);
+      this.l = var1;
+      this.Z = var3;
+   }
 
-    @Override
-    @c
-    public Object W(_4 _42) {
-        return null;
-    }
+   @org.F.c
+   @Override
+   public Object W(_4 var1) {
+      return null;
+   }
 
-    @Override
-    public String toString() {
-        return this.Z.toString();
-    }
+   @Override
+   public String toString() {
+      return this.Z.toString();
+   }
 }
+
+
+
+
 

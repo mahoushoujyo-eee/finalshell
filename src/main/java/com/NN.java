@@ -1,19 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 public interface NN {
-    public void E(int var1) throws Exception;
+   void E(int var1) throws Exception;
 
-    public byte[] r();
+   byte[] r();
 
-    public byte[] Z();
+   byte[] Z();
 
-    public byte[] I();
+   byte[] I();
 
-    public byte[] P();
+   byte[] P();
 
-    public byte[] z();
+   byte[] z();
 }
+
+
+
+
 

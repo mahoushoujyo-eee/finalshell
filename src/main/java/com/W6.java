@@ -1,100 +1,184 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.el_1;
 import javax.swing.ImageIcon;
 
 public class W6 {
-    public static ImageIcon H;
-    public static int A;
-    public static int v;
-    public static boolean c;
-    public static el_1 b;
+   public static ImageIcon H;
+   public static int A;
+   public static int v;
+   public static boolean c;
+   public static eL_3 b;
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "y+awKL8`$gmq\u0000$~f~w_".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 15;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "y+awKL8`$gmq\u0000$~f~w_".toCharArray();
+      int var10004 = var10003.length;
+      int var5 = 0;
+      byte var18 = 15;
+      char[] var10002 = var10003;
+      int var9 = var10004;
+      char[] var22;
+      byte var26;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var22 = var10003;
+         var10005 = var5;
+         char var10008 = var10003[var5];
+         var10007 = 15;
+         var10006 = var10008;
+         switch (var5 % 7) {
+            case 0:
+               var26 = 31;
+               break;
+            case 1:
+               var26 = 71;
+               break;
+            case 2:
+               var26 = 1;
+               break;
+            case 3:
+               var26 = 22;
+               break;
+            case 4:
+               var26 = 55;
+               break;
+            case 5:
+               var26 = 108;
+               break;
+            default:
+               var26 = 68;
+         }
+      } else {
+         var18 = 15;
+         var9 = var10004;
+         if (var10004 <= var5) {
+            String var21 = new String(var10003).intern();
+            byte var13 = -1;
+            String var8 = var21;
+            long var7 = 2078424046471458882L;
+            long var17 = -4217405273912922044L ^ var7;
+            var13 = -1;
+            long var6 = var17;
+            H = new ImageIcon(com.W6.class.getResource(var8));
+            A = 1;
+            v = (int)var6;
+            c = false;
+            b = eL_3.belowStart;
+            return;
+         }
+
+         var22 = var10003;
+         var10005 = var5;
+         char var27 = var10003[var5];
+         var10007 = 15;
+         var10006 = var27;
+         switch (var5 % 7) {
+            case 0:
+               var26 = 31;
+               break;
+            case 1:
+               var26 = 71;
+               break;
+            case 2:
+               var26 = 1;
+               break;
+            case 3:
+               var26 = 22;
+               break;
+            case 4:
+               var26 = 55;
+               break;
+            case 5:
+               var26 = 108;
+               break;
+            default:
+               var26 = 68;
+         }
+      }
+
+      while (true) {
+         var22[var10005] = (char)(var10006 ^ var10007 ^ var26);
+         var5++;
+         if (var18 == 0) {
+            var22 = var10002;
+            var10005 = var18;
+            char var29 = var10002[var18];
+            var10007 = var18;
+            var10006 = var29;
+            switch (var5 % 7) {
+               case 0:
+                  var26 = 31;
+                  break;
+               case 1:
+                  var26 = 71;
+                  break;
+               case 2:
+                  var26 = 1;
+                  break;
+               case 3:
+                  var26 = 22;
+                  break;
+               case 4:
+                  var26 = 55;
+                  break;
+               case 5:
+                  var26 = 108;
+                  break;
+               default:
+                  var26 = 68;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 31;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 71;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 1;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 22;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 55;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 108;
-                            break;
-                        }
-                        default: {
-                            n17 = 68;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        String string = new String(cArray).intern();
-        long l2 = 2078424046471458882L;
-        long l3 = 0xC578C43F868FB044L ^ l2;
-        H = new ImageIcon(W6.class.getResource(string));
-        A = 1;
-        v = (int)l3;
-        c = false;
-        b = el_1.belowStart;
-    }
+         } else {
+            if (var9 <= var5) {
+               String var20 = new String(var10002).intern();
+               byte var11 = -1;
+               String var4 = var20;
+               long var2 = 2078424046471458882L;
+               long var16 = -4217405273912922044L ^ var2;
+               var11 = -1;
+               long var0 = var16;
+               H = new ImageIcon(com.W6.class.getResource(var4));
+               A = 1;
+               v = (int)var0;
+               c = false;
+               b = eL_3.belowStart;
+               return;
+            }
+
+            var22 = var10002;
+            var10005 = var5;
+            char var28 = var10002[var5];
+            var10007 = var18;
+            var10006 = var28;
+            switch (var5 % 7) {
+               case 0:
+                  var26 = 31;
+                  break;
+               case 1:
+                  var26 = 71;
+                  break;
+               case 2:
+                  var26 = 1;
+                  break;
+               case 3:
+                  var26 = 22;
+                  break;
+               case 4:
+                  var26 = 55;
+                  break;
+               case 5:
+                  var26 = 108;
+                  break;
+               default:
+                  var26 = 68;
+            }
+         }
+      }
+   }
 }
+
+
+
+
 

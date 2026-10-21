@@ -1,342 +1,414 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import java.io.UnsupportedEncodingException;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public class WI
-extends WC {
-    short F;
-    int o;
-    int i;
-    byte[] K;
-    byte[] y;
-    int Q;
-    InetAddress J;
-    int p;
-    int P;
-    static String s;
-    static byte[] b;
-    int B;
-    long h;
-    private static final long[] a;
-    private static final Integer[] c;
+public class WI extends WC {
+   short F = D6.nu;
+   int o = 0;
+   int i = 0;
+   byte[] K;
+   byte[] y;
+   int Q;
+   InetAddress J;
+   int p;
+   int P;
+   static String s;
+   static byte[] b;
+   int B;
+   long h;
+   private static final long[] a;
+   private static final Integer[] c;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block24: {
-            block23: {
-                block22: {
-                    var8 = new String[2];
-                    var12_1 = 0;
-                    var11_2 = "\u0004hNw0\"A.m\u001b~:/CnnL\u007f7)D?=\u001a\u0005\".\u001eb;";
-                    var13_3 = "\u0004hNw0\"A.m\u001b~:/CnnL\u007f7)D?=\u001a\u0005\".\u001eb;".length();
-                    var10_4 = 24;
-                    var9_5 = -1;
-lbl7:
-                    // 2 sources
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var8 = new String[2];
+      int var12 = 0;
+      String var11 = "\u0004hNw0\"A.m\u001b~:/CnnL\u007f7)D?=\u001a\u0005\".\u001eb;";
+      int var13 = "\u0004hNw0\"A.m\u001b~:/CnnL\u007f7)D?=\u001a\u0005\".\u001eb;".length();
+      char var10 = 24;
+      int var9 = -1;
 
-                    while (true) {
-                        continue;
-                        break;
-                    }
-lbl9:
-                    // 1 sources
+      while (true) {
+         char[] var10002;
+         label66: {
+            char[] var10003 = var11.substring(++var9, var9 + var10).toCharArray();
+            int var10004 = var10003.length;
+            int var14 = 0;
+            byte var29 = 1;
+            var10002 = var10003;
+            int var19 = var10004;
+            byte var34;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var34 = 1;
+               var10006 = var14;
+            } else {
+               var29 = 1;
+               var19 = var10004;
+               if (var10004 <= var14) {
+                  break label66;
+               }
 
-                    while (true) {
-                        var8[var12_1++] = new String(v0).intern();
-                        if ((var9_5 += var10_4) < var13_3) {
-                            var10_4 = var11_2.charAt(var9_5);
-                            ** continue;
+               var10005 = var10003;
+               var34 = 1;
+               var10006 = var14;
+            }
+
+            while (true) {
+               char var48 = var10005[var10006];
+               byte var49;
+               switch (var14 % 7) {
+                  case 0:
+                     var49 = 86;
+                     break;
+                  case 1:
+                     var49 = 91;
+                     break;
+                  case 2:
+                     var49 = 121;
+                     break;
+                  case 3:
+                     var49 = 78;
+                     break;
+                  case 4:
+                     var49 = 2;
+                     break;
+                  case 5:
+                     var49 = 27;
+                     break;
+                  default:
+                     var49 = 112;
+               }
+
+               var10005[var10006] = (char)(var48 ^ var34 ^ var49);
+               var14++;
+               if (var29 == 0) {
+                  var10006 = var29;
+                  var10005 = var10002;
+                  var34 = var29;
+               } else {
+                  if (var19 <= var14) {
+                     break;
+                  }
+
+                  var10005 = var10002;
+                  var34 = var29;
+                  var10006 = var14;
+               }
+            }
+         }
+
+         String var31 = new String(var10002).intern();
+         int var21 = -1;
+         var8[var12++] = var31;
+         if ((var9 += var10) >= var13) {
+            long var0 = 3138444534506236775L;
+            long[] var6 = new long[10];
+            int var3 = 0;
+            String var4 = "òkVy7üá\u0084¼ö\u0089\u0083D\u0017\u0082ç\u009aÈ^Ö\u0003¯#\u0004;YÙ½´\u0098ýüÀÏ\b\u008e\u0015|cêw\u000br3¸ó\u009a»w\u008e\u0090!N³\u0094k·s\u0093ñHp\u000bÖ";
+            int var5 = "òkVy7üá\u0084¼ö\u0089\u0083D\u0017\u0082ç\u009aÈ^Ö\u0003¯#\u0004;YÙ½´\u0098ýüÀÏ\b\u008e\u0015|cêw\u000br3¸ó\u009a»w\u008e\u0090!N³\u0094k·s\u0093ñHp\u000bÖ"
+               .length();
+            byte var2 = 0;
+
+            label50:
+            while (true) {
+               var21 = var2;
+               var2 += 8;
+               byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
+               long[] var10000 = var6;
+               var21 = var3++;
+               long var27 = ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L;
+               byte var32 = -1;
+
+               while (true) {
+                  long var39 = var27 ^ var0;
+                  switch (var32) {
+                     case 0:
+                        var10000[var21] = var39;
+                        if (var2 >= var5) {
+                           a = var6;
+                           c = new Integer[10];
+                           s = var8[0];
+
+                           try {
+                              b = s.getBytes(var8[1]);
+                           } catch (UnsupportedEncodingException var16) {
+                              var16.printStackTrace();
+                           }
+
+                           return;
                         }
-                        break block22;
                         break;
-                    }
-                    v1 = ++var9_5;
-                    v2 = var11_2.substring(v1, v1 + var10_4).toCharArray();
-                    v3 = v2.length;
-                    var14_6 = 0;
-                    v4 = 1;
-                    v5 = v2;
-                    v6 = v3;
-                    if (v3 > 1) ** GOTO lbl67
-                    do {
-                        v7 = v4;
-                        v5 = v5;
-                        v8 = v5;
-                        v9 = v4;
-                        v10 = var14_6;
-                        while (true) {
-                            switch (var14_6 % 7) {
-                                case 0: {
-                                    v11 = 86;
-                                    break;
-                                }
-                                case 1: {
-                                    v11 = 91;
-                                    break;
-                                }
-                                case 2: {
-                                    v11 = 121;
-                                    break;
-                                }
-                                case 3: {
-                                    v11 = 78;
-                                    break;
-                                }
-                                case 4: {
-                                    v11 = 2;
-                                    break;
-                                }
-                                case 5: {
-                                    v11 = 27;
-                                    break;
-                                }
-                                default: {
-                                    v11 = 112;
-                                }
-                            }
-                            v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                            ++var14_6;
-                            v4 = v7;
-                            if (v7 != 0) break;
-                            v7 = v4;
-                            v5 = v5;
-                            v10 = v4;
-                            v8 = v5;
-                            v9 = v4;
+                     default:
+                        var10000[var21] = var39;
+                        if (var2 < var5) {
+                           continue label50;
                         }
-lbl67:
-                        // 2 sources
 
-                        v0 = v5;
-                        v6 = v6;
-                    } while (v6 > var14_6);
-                    ** while (true)
-                }
-                var0_7 = 3138444534506236775L;
-                var6_8 = new long[10];
-                var3_9 = 0;
-                var4_10 = "\u00f2kVy7\u00fc\u00e1\u0084\u00bc\u00f6\u0089\u0083D\u0017\u0082\u00e7\u009a\u00c8^\u00d6\u0003\u00af#\u0004;Y\u00d9\u00bd\u00b4\u0098\u00fd\u00fc\u00c0\u00cf\b\u008e\u0015|c\u00eaw\u000br3\u00b8\u00f3\u009a\u00bbw\u008e\u0090!N\u00b3\u0094k\u00b7s\u0093\u00f1Hp\u000b\u00d6";
-                var5_11 = "\u00f2kVy7\u00fc\u00e1\u0084\u00bc\u00f6\u0089\u0083D\u0017\u0082\u00e7\u009a\u00c8^\u00d6\u0003\u00af#\u0004;Y\u00d9\u00bd\u00b4\u0098\u00fd\u00fc\u00c0\u00cf\b\u008e\u0015|c\u00eaw\u000br3\u00b8\u00f3\u009a\u00bbw\u008e\u0090!N\u00b3\u0094k\u00b7s\u0093\u00f1Hp\u000b\u00d6".length();
-                var2_12 = 0;
-                while (true) {
-                    var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                    v12 = var6_8;
-                    v13 = var3_9++;
-                    v14 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                    v15 = -1;
-                    break block23;
-                    break;
-                }
-lbl88:
-                // 1 sources
+                        var4 = "»ÙT\u009bÄvqFòRX×²z:\u001b";
+                        var5 = "»ÙT\u009bÄvqFòRX×²z:\u001b".length();
+                        var2 = 0;
+                  }
 
-                while (true) {
-                    v12[v13] = v16;
-                    if (var2_12 < var5_11) ** continue;
-                    var4_10 = "\u00bb\u00d9T\u009b\u00c4vqF\u00f2RX\u00d7\u00b2z:\u001b";
-                    var5_11 = "\u00bb\u00d9T\u009b\u00c4vqF\u00f2RX\u00d7\u00b2z:\u001b".length();
-                    var2_12 = 0;
-                    while (true) {
-                        var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                        v12 = var6_8;
-                        v13 = var3_9++;
-                        v14 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                        v15 = 0;
-                        break block23;
-                        break;
-                    }
-                    break;
-                }
-lbl101:
-                // 1 sources
-
-                while (true) {
-                    v12[v13] = v16;
-                    if (var2_12 < var5_11) ** continue;
-                    break block24;
-                    break;
-                }
+                  byte var24 = var2;
+                  var2 += 8;
+                  var7 = var4.substring(var24, var2).getBytes("ISO-8859-1");
+                  var10000 = var6;
+                  var21 = var3++;
+                  var27 = ((long)var7[0] & 255L) << 56
+                     | ((long)var7[1] & 255L) << 48
+                     | ((long)var7[2] & 255L) << 40
+                     | ((long)var7[3] & 255L) << 32
+                     | ((long)var7[4] & 255L) << 24
+                     | ((long)var7[5] & 255L) << 16
+                     | ((long)var7[6] & 255L) << 8
+                     | (long)var7[7] & 255L;
+                  var32 = 0;
+               }
             }
-            v16 = v14 ^ var0_7;
-            switch (v15) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl112:
-                // 1 sources
+         }
 
-                ** continue;
-            }
-        }
-        WI.a = var6_8;
-        WI.c = new Integer[10];
-        WI.s = var8[0];
-        try {
-            WI.b = WI.s.getBytes(var8[1]);
-        }
-        catch (UnsupportedEncodingException var15_14) {
-            var15_14.printStackTrace();
-        }
-    }
+         var10 = var11.charAt(var9);
+      }
+   }
 
-    public WI(int n10, byte[] byArray, int n11, short s2, int n12, int n13) {
-        this.F = D6.nu;
-        this.o = 0;
-        this.i = 0;
-        this.o = n10;
-        this.P = n11;
-        this.i = s2;
-        this.K = new byte[this.i];
-        this.H = n13;
-        this.l = n12;
-        System.arraycopy(byArray, n11, this.K, 0, s2);
-        try {
-            this.K = to_2.R(this.K, b);
-        }
-        catch (Exception exception) {
-            exception.printStackTrace();
-        }
-        this.i = this.K.length;
-    }
+   public WI(int var1, byte[] var2, int var3, short var4, int var5, int var6) {
+      this.o = var1;
+      this.P = var3;
+      this.i = var4;
+      this.K = new byte[this.i];
+      this.H = var6;
+      this.l = var5;
+      System.arraycopy(var2, var3, this.K, 0, var4);
 
-    public void F(int n10) {
-        this.Q = n10;
-        this.y = new byte[this.i + WI.a(7233, 3990813192303492892L) + WI.a(12838, 15515319057027444L)];
-        B8.P(this.W, this.y, 0);
-        B8.P(this.F, this.y, 2);
-        lh_1.u(this.l, this.y, 4);
-        lh_1.u(this.H, this.y, WI.a(12838, 15515319057027444L));
-        lh_1.u(this.o, this.y, WI.a(993, 264113324159049917L));
-        B8.P((short)this.i, this.y, WI.a(7233, 3990813192303492892L));
-        lh_1.u(this.Q, this.y, WI.a(27050, 4874772128051645169L));
-        System.arraycopy(this.K, 0, this.y, WI.a(27588, 2206203659723655323L), this.i);
-        this.g = new DatagramPacket(this.y, this.y.length);
-        this.g.setAddress(this.J);
-        this.g.setPort(this.p);
-    }
+      try {
+         this.K = to_4.R(this.K, b);
+      } catch (Exception var8) {
+         var8.printStackTrace();
+      }
 
-    /*
-     * Loose catch block
-     */
-    public WI(DatagramPacket datagramPacket) {
-        block8: {
-            int n10;
-            block7: {
-                this.F = D6.nu;
-                this.o = 0;
-                this.i = 0;
-                this.g = datagramPacket;
-                this.y = datagramPacket.getData();
-                this.W = B8.M(this.y, 0);
-                this.F = B8.M(this.y, 2);
-                this.l = lh_1.z(this.y, 4);
-                this.H = lh_1.z(this.y, WI.a(31098, 7018684942682217001L));
-                this.o = lh_1.z(this.y, WI.a(2774, 252412390330935692L));
-                ky_2[] ky_2Array = WC.U();
-                n10 = this.i = (int)B8.M(this.y, WI.a(4754, 4978641614805217740L));
-                if (ky_2Array == null) break block7;
-                try {
-                    block9: {
-                        if (n10 <= 0) break block8;
-                        break block9;
-                        catch (Exception exception) {
-                            throw WI.a(exception);
-                        }
-                    }
-                    n10 = datagramPacket.getLength();
-                }
-                catch (Exception exception) {
-                    throw WI.a(exception);
-                }
-            }
-            if (n10 > WI.a(30165, 6461985661042448013L)) {
-                this.Q = lh_1.z(this.y, WI.a(11048, 4765825183584716913L));
-                this.K = new byte[this.i];
-                System.arraycopy(this.y, WI.a(27588, 2206203659723655323L), this.K, 0, this.i);
-                try {
-                    this.K = to_2.b(this.K, b);
-                }
-                catch (Exception exception) {
-                    exception.printStackTrace();
-                }
-            }
-        }
-    }
+      this.i = this.K.length;
+   }
 
-    public int D() {
-        return this.o;
-    }
+   public void F(int var1) {
+      this.Q = var1;
+      this.y = new byte[this.i + a(7233, 3990813192303492892L) + a(12838, 15515319057027444L)];
+      B8.P(this.W, this.y, 0);
+      B8.P(this.F, this.y, 2);
+      lH_3.u(this.l, this.y, 4);
+      lH_3.u(this.H, this.y, a(12838, 15515319057027444L));
+      lH_3.u(this.o, this.y, a(993, 264113324159049917L));
+      B8.P((short)this.i, this.y, a(7233, 3990813192303492892L));
+      lH_3.u(this.Q, this.y, a(27050, 4874772128051645169L));
+      System.arraycopy(this.K, 0, this.y, a(27588, 2206203659723655323L), this.i);
+      this.g = new DatagramPacket(this.y, this.y.length);
+      this.g.setAddress(this.J);
+      this.g.setPort(this.p);
+   }
 
-    public byte[] G() {
-        return this.K;
-    }
+   public WI(DatagramPacket param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: aload 0
+      // 01: invokespecial WC.<init> ()V
+      // 04: aload 0
+      // 05: getstatic D6.nu S
+      // 08: putfield WI.F S
+      // 0b: aload 0
+      // 0c: bipush 0
+      // 0d: putfield WI.o I
+      // 10: aload 0
+      // 11: bipush 0
+      // 12: putfield WI.i I
+      // 15: aload 0
+      // 16: aload 1
+      // 17: putfield WI.g Ljava/net/DatagramPacket;
+      // 1a: invokestatic WC.U ()[Lcom/ky_4;
+      // 1d: aload 0
+      // 1e: aload 1
+      // 1f: invokevirtual java/net/DatagramPacket.getData ()[B
+      // 22: putfield WI.y [B
+      // 25: aload 0
+      // 26: aload 0
+      // 27: getfield WI.y [B
+      // 2a: bipush 0
+      // 2b: invokestatic B8.M ([BI)S
+      // 2e: putfield WI.W S
+      // 31: aload 0
+      // 32: aload 0
+      // 33: getfield WI.y [B
+      // 36: bipush 2
+      // 37: invokestatic B8.M ([BI)S
+      // 3a: putfield WI.F S
+      // 3d: aload 0
+      // 3e: aload 0
+      // 3f: getfield WI.y [B
+      // 42: bipush 4
+      // 43: invokestatic lH_3.z ([BI)I
+      // 46: putfield WI.l I
+      // 49: aload 0
+      // 4a: aload 0
+      // 4b: getfield WI.y [B
+      // 4e: sipush 31098
+      // 51: ldc2_w 7018684942682217001
+      // 54: invokestatic WI.a (IJ)I
+      // 57: invokestatic lH_3.z ([BI)I
+      // 5a: putfield WI.H I
+      // 5d: aload 0
+      // 5e: aload 0
+      // 5f: getfield WI.y [B
+      // 62: sipush 2774
+      // 65: ldc2_w 252412390330935692
+      // 68: invokestatic WI.a (IJ)I
+      // 6b: invokestatic lH_3.z ([BI)I
+      // 6e: putfield WI.o I
+      // 71: astore 2
+      // 72: aload 0
+      // 73: aload 0
+      // 74: getfield WI.y [B
+      // 77: sipush 4754
+      // 7a: ldc2_w 4978641614805217740
+      // 7d: invokestatic WI.a (IJ)I
+      // 80: invokestatic B8.M ([BI)S
+      // 83: putfield WI.i I
+      // 86: aload 0
+      // 87: getfield WI.i I
+      // 8a: aload 2
+      // 8b: ifnull a3
+      // 8e: ifle fc
+      // 91: goto 98
+      // 94: invokestatic WI.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 97: athrow
+      // 98: aload 1
+      // 99: invokevirtual java/net/DatagramPacket.getLength ()I
+      // 9c: goto a3
+      // 9f: invokestatic WI.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // a2: athrow
+      // a3: sipush 30165
+      // a6: ldc2_w 6461985661042448013
+      // a9: invokestatic WI.a (IJ)I
+      // ac: if_icmple fc
+      // af: aload 0
+      // b0: aload 0
+      // b1: getfield WI.y [B
+      // b4: sipush 11048
+      // b7: ldc2_w 4765825183584716913
+      // ba: invokestatic WI.a (IJ)I
+      // bd: invokestatic lH_3.z ([BI)I
+      // c0: putfield WI.Q I
+      // c3: aload 0
+      // c4: aload 0
+      // c5: getfield WI.i I
+      // c8: newarray 8
+      // ca: putfield WI.K [B
+      // cd: aload 0
+      // ce: getfield WI.y [B
+      // d1: sipush 27588
+      // d4: ldc2_w 2206203659723655323
+      // d7: invokestatic WI.a (IJ)I
+      // da: aload 0
+      // db: getfield WI.K [B
+      // de: bipush 0
+      // df: aload 0
+      // e0: getfield WI.i I
+      // e3: invokestatic java/lang/System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
+      // e6: aload 0
+      // e7: aload 0
+      // e8: getfield WI.K [B
+      // eb: getstatic WI.b [B
+      // ee: invokestatic to_4.b ([B[B)[B
+      // f1: putfield WI.K [B
+      // f4: goto fc
+      // f7: astore 3
+      // f8: aload 3
+      // f9: invokevirtual java/lang/Exception.printStackTrace ()V
+      // fc: return
+   }
 
-    public int k() {
-        return this.i;
-    }
+   public int D() {
+      return this.o;
+   }
 
-    public int c() {
-        return this.Q;
-    }
+   public byte[] G() {
+      return this.K;
+   }
 
-    public void z(int n10) {
-        this.Q = n10;
-    }
+   public int k() {
+      return this.i;
+   }
 
-    public InetAddress F() {
-        return this.J;
-    }
+   public int c() {
+      return this.Q;
+   }
 
-    @Override
-    public void K(InetAddress inetAddress) {
-        this.J = inetAddress;
-    }
+   public void z(int var1) {
+      this.Q = var1;
+   }
 
-    public int F() {
-        return this.p;
-    }
+   public InetAddress F() {
+      return this.J;
+   }
 
-    @Override
-    public void S(int n10) {
-        this.p = n10;
-    }
+   @Override
+   public void K(InetAddress var1) {
+      this.J = var1;
+   }
 
-    public int K() {
-        return this.B;
-    }
+   public int F$int() {
+      return this.p;
+   }
 
-    public void C(int n10) {
-        this.B = n10;
-    }
+   @Override
+   public void S(int var1) {
+      this.p = var1;
+   }
 
-    public long a() {
-        return this.h;
-    }
+   public int K() {
+      return this.B;
+   }
 
-    public void s(long l2) {
-        this.h = l2;
-    }
+   public void C(int var1) {
+      this.B = var1;
+   }
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+   public long a() {
+      return this.h;
+   }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x235B;
-        if (c[n11] == null) {
-            WI.c[n11] = (int)(a[n11] ^ l2);
-        }
-        return c[n11];
-    }
+   public void s(long var1) {
+      this.h = var1;
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 9051;
+      if (c[var3] == null) {
+         c[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return c[var3];
+   }
 }
+
+
+
+
 

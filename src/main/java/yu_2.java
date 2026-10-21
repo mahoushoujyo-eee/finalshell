@@ -1,188 +1,151 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
+import java.util.ArrayList;
+import java.util.Iterator;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- * Renamed from yu
- */
-public final class yu_2
-extends Enum {
-    public static final yu_2 BIN32;
-    public static final yu_2 BIN;
-    public static final yu_2 HEX;
-    private int E;
-    private DZ s;
-    private x9 Z;
-    private static final yu_2[] r;
-    private static ky_2[] g;
+public class Yu_2 {
+   ArrayList Z = new ArrayList();
+   int H;
+   int c;
+   boolean a;
+   int n;
+   private static int[] d;
+   private static final long b;
 
-    public static yu_2[] values() {
-        return (yu_2[])r.clone();
-    }
+   public Yu_2() {
+      this.c = (int)b;
+      D();
+      this.a = false;
+      this.n = 0;
+      if (com.ky_4.F() != null) {
+         k(new int[5]);
+      }
+   }
 
-    public static yu_2 valueOf(String string) {
-        return Enum.valueOf(yu_2.class, string);
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   public synchronized void T(org.icmp4j.j var1) {
+      int[] var10000 = D();
+      this.Z.add(var1);
+      int[] var2 = var10000;
+      int var7 = this.Z.size();
+      if (var2 != null) {
+         if (var7 > this.c) {
+            this.Z.remove(0);
+         }
 
-    public static yu_2 O(byte by) {
-        yu_2[] yu_2Array = yu_2.values();
-        ky_2[] ky_2Array = yu_2.c();
-        int n10 = yu_2Array.length;
-        int n11 = 0;
-        while (n11 < n10) {
-            yu_2 yu_22 = yu_2Array[n11];
-            if (ky_2Array == null) {
-                if (yu_22.T() == by) {
-                    return yu_22;
-                }
-                ++n11;
+         var7 = this.a;
+      }
+
+      label47: {
+         label72: {
+            if (var2 != null) {
+               if (var7 == 0) {
+                  var7 = var1.q();
+                  if (var2 == null) {
+                     break label47;
+                  }
+
+                  if (var7 == 0) {
+                     break label72;
+                  }
+
+                  this.H = var1.r();
+                  if (var2 != null) {
+                     break label72;
+                  }
+
+                  com.ky_4.K(new String[2]);
+               }
+
+               var7 = var1.r();
             }
-            if (ky_2Array == null) continue;
-        }
-        return null;
-    }
 
-    /*
-     * WARNING - Possible parameter corruption
-     * WARNING - void declaration
-     */
-    private yu_2(x9 x92) {
-        void var5_3;
-        void var4_2;
-        void var2_-1;
-        void var1_-1;
-        this.E = (int)x92;
-        this.s = var4_2;
-        this.Z = var5_3;
-    }
-
-    public DZ s() {
-        return this.s;
-    }
-
-    public byte T() {
-        return this.Z.r();
-    }
-
-    public int c() {
-        return this.E;
-    }
-
-    public boolean d() {
-        return this == HEX;
-    }
-
-    private static yu_2[] r() {
-        return new yu_2[]{BIN32, BIN, HEX};
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block13: {
-            var0 = new String[3];
-            var4_1 = 0;
-            var3_2 = "0Ze\u0005:Vs)J\u0003:Vs";
-            var5_3 = "0Ze\u0005:Vs)J\u0003:Vs".length();
-            yu_2.r(null);
-            var2_4 = 3;
-            var1_5 = -1;
-lbl8:
-            // 2 sources
-
-            while (true) {
-                continue;
-                break;
+            if (var2 == null) {
+               break label47;
             }
-lbl10:
-            // 1 sources
 
-            while (true) {
-                var0[var4_1++] = new String(v0).intern();
-                if ((var1_5 += var2_4) < var5_3) {
-                    var2_4 = var3_2.charAt(var1_5);
-                    ** continue;
-                }
-                break block13;
-                break;
+            if (var7 > 0) {
+               this.H = var1.r();
             }
-            v1 = ++var1_5;
-            v2 = var3_2.substring(v1, v1 + var2_4).toCharArray();
-            v3 = v2.length;
-            var6_6 = 0;
-            v4 = 115;
-            v5 = v2;
-            v6 = v3;
-            if (v3 > 1) ** GOTO lbl68
-            do {
-                v7 = v4;
-                v5 = v5;
-                v8 = v5;
-                v9 = v4;
-                v10 = var6_6;
-                while (true) {
-                    switch (var6_6 % 7) {
-                        case 0: {
-                            v11 = 11;
-                            break;
-                        }
-                        case 1: {
-                            v11 = 108;
-                            break;
-                        }
-                        case 2: {
-                            v11 = 78;
-                            break;
-                        }
-                        case 3: {
-                            v11 = 105;
-                            break;
-                        }
-                        case 4: {
-                            v11 = 11;
-                            break;
-                        }
-                        case 5: {
-                            v11 = 117;
-                            break;
-                        }
-                        default: {
-                            v11 = 118;
-                        }
-                    }
-                    v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                    ++var6_6;
-                    v4 = v7;
-                    if (v7 != 0) break;
-                    v7 = v4;
-                    v5 = v5;
-                    v10 = v4;
-                    v8 = v5;
-                    v9 = v4;
-                }
-lbl68:
-                // 2 sources
+         }
 
-                v0 = v5;
-                v6 = v6;
-            } while (v6 > var6_6);
-            ** while (true)
-        }
-        yu_2.BIN32 = new yu_2(var0[1], 0, 1, DZ.CRC32, x9.ZBIN32);
-        yu_2.BIN = new yu_2(var0[2], 1, 1, DZ.CRC16, x9.ZBIN);
-        yu_2.HEX = new yu_2(var0[0], 2, 2, DZ.CRC16, x9.ZHEX);
-        yu_2.r = yu_2.r();
-    }
+         var7 = 0;
+      }
 
-    public static void r(ky_2[] ky_2Array) {
-        g = ky_2Array;
-    }
+      int var3 = var7;
+      Iterator var5 = this.Z.iterator();
+      int var8;
+      if (var2 == null) {
+         org.icmp4j.j var4 = (org.icmp4j.j)var5.next();
+         var8 = var4.r();
+         if (var2 != null) {
+            if (var8 == 0) {
+               var3++;
+            }
 
-    public static ky_2[] c() {
-        return g;
-    }
+            var8 = var5.hasNext();
+         }
+      } else {
+         var8 = var5.hasNext();
+      }
+
+      while (true) {
+         while (var8 != 0) {
+            org.icmp4j.j var6 = (org.icmp4j.j)var5.next();
+            var8 = var6.r();
+            if (var2 != null) {
+               if (var8 == 0) {
+                  var3++;
+               }
+
+               var8 = var5.hasNext();
+            }
+         }
+
+         this.n = var3;
+         if (var2 != null) {
+            return;
+         }
+
+         var8 = var5.hasNext();
+      }
+   }
+
+   public int f() {
+      return this.Z.size();
+   }
+
+   public ArrayList C() {
+      return this.Z;
+   }
+
+   public int y() {
+      return this.H;
+   }
+
+   public void T(int var1) {
+      this.H = var1;
+   }
+
+   public static void k(int[] var0) {
+      d = var0;
+   }
+
+   public static int[] D() {
+      return d;
+   }
+
+   static {
+      if (D() == null) {
+         k(new int[5]);
+      }
+
+      long var0 = 861350464523823344L;
+      long var10002 = 720509128154245596L ^ var0;
+      byte var10001 = -1;
+      b = var10002;
+   }
 }
+
+
+
+
 

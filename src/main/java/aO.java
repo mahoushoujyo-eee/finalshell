@@ -1,83 +1,85 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import io.netty.channel.Channel;
-import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.timeout.ReadTimeoutHandler;
 
-class aO
-extends ChannelInitializer {
-    private static final String a;
+class aO extends ChannelInitializer {
+   private static final String a;
 
-    aO() {
-    }
+   protected void H(SocketChannel var1) throws Exception {
+      var1.pipeline().addLast(a, new ReadTimeoutHandler(5));
+      var1.pipeline().addLast(new zF());
+      var1.pipeline().addLast(new Lz_2());
+      var1.pipeline().addLast(new BA());
+   }
 
-    protected void H(SocketChannel socketChannel) throws Exception {
-        socketChannel.pipeline().addLast(a, (ChannelHandler)new ReadTimeoutHandler(5));
-        socketChannel.pipeline().addLast(new zF());
-        socketChannel.pipeline().addLast(new lz_0());
-        socketChannel.pipeline().addLast(new BA());
-    }
+   @Override
+   protected void initChannel(Channel var1) throws Exception {
+      this.H((SocketChannel)var1);
+   }
 
-    protected void initChannel(Channel channel) throws Exception {
-        this.H((SocketChannel)channel);
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "#93v~?\u001643'fb7\u0015507`".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 20;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 20;
+         var10006 = var0;
+      } else {
+         var6 = 20;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "#93v~?\u001643'fb7\u0015507`".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 20;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+         var10005 = var10003;
+         var10 = 20;
+         var10006 = var0;
+      }
+
+      while (true) {
+         var10005[var10006] = (char)(var10005[var10006] ^ var10 ^ switch (var0 % 7) {
+            case 0 -> 69;
+            case 1 -> 72;
+            case 2 -> 70;
+            case 3 -> 6;
+            case 4 -> 62;
+            case 5 -> 66;
+            default -> 111;
+         });
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ (switch (n12 % 7) {
-                        case 0 -> 69;
-                        case 1 -> 72;
-                        case 2 -> 70;
-                        case 3 -> 6;
-                        case 4 -> 62;
-                        case 5 -> 66;
-                        default -> 111;
-                    })));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

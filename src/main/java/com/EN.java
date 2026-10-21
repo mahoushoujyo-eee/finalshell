@@ -1,133 +1,135 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.PM;
-import com.a9;
-import com.pf_2;
-
 public class EN {
-    protected static pf_2 h;
-    protected static boolean U;
-    private static String m;
-    private static final String b;
+   protected static pf_4 h;
+   protected static boolean U;
+   private static String m;
+   private static final String b;
 
-    public static synchronized void b() {
-        block3: {
-            boolean bl;
-            block2: {
-                String string = EN.Y();
-                bl = U;
-                if (string == null) break block2;
-                if (bl) break block3;
-                bl = true;
+   public static synchronized void b() {
+      String var0 = Y();
+      boolean var10000 = U;
+      if (var0 != null) {
+         if (U) {
+            return;
+         }
+
+         var10000 = true;
+      }
+
+      U = var10000;
+      PM.m(pf_4.class);
+   }
+
+   public static pf_4 t() {
+      String var0 = Y();
+      pf_4 var10000 = h;
+      if (var0 != null) {
+         if (h == null) {
+            h = (pf_4)PM.s(com.a9.class.getResource(b));
+         }
+
+         var10000 = h;
+      }
+
+      return var10000;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      if (Y() == null) {
+         F("ucxTnb");
+      }
+
+      char[] var10003 = "^6J4{*bI \u0016-k*rE<Wuv5m".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 49;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 49;
+         var10006 = var0;
+      } else {
+         var6 = 49;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            b = var9;
+            h = null;
+            U = false;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 49;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 29;
+               break;
+            case 1:
+               var23 = 98;
+               break;
+            case 2:
+               var23 = 8;
+               break;
+            case 3:
+               var23 = 106;
+               break;
+            case 4:
+               var23 = 63;
+               break;
+            case 5:
+               var23 = 105;
+               break;
+            default:
+               var23 = 48;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               b = var8;
+               h = null;
+               U = false;
+               return;
             }
-            U = bl;
-            PM.m(pf_2.class);
-        }
-    }
 
-    public static pf_2 t() {
-        String string = EN.Y();
-        pf_2 pf_22 = h;
-        if (string != null) {
-            if (pf_22 == null) {
-                h = (pf_2)PM.s(a9.class.getResource(b));
-            }
-            pf_22 = h;
-        }
-        return pf_22;
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block13: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block12: {
-                if (EN.Y() == null) {
-                    EN.F("ucxTnb");
-                }
-                char[] cArray3 = "^6J4{*bI \u0016-k*rE<Wuv5m".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 49;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block12;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block13;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 29;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 98;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 8;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 106;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 63;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 105;
-                            break;
-                        }
-                        default: {
-                            n17 = 48;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        b = new String(cArray).intern();
-        h = null;
-        U = false;
-    }
+   public static void F(String var0) {
+      m = var0;
+   }
 
-    public static void F(String string) {
-        m = string;
-    }
-
-    public static String Y() {
-        return m;
-    }
+   public static String Y() {
+      return m;
+   }
 }
+
+
+
+
 

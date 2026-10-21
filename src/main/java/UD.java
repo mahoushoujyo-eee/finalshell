@@ -1,29 +1,30 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.net.DatagramPacket;
 
 public class UD {
-    private static String[] E;
+   private static String[] E;
 
-    public UD(DatagramPacket datagramPacket) {
-    }
+   public UD(DatagramPacket var1) {
+   }
 
-    public void X() {
-    }
+   public void X() {
+   }
 
-    public static void W(String[] stringArray) {
-        E = stringArray;
-    }
+   public static void W(String[] var0) {
+      E = var0;
+   }
 
-    public static String[] L() {
-        return E;
-    }
+   public static String[] L() {
+      return E;
+   }
 
-    static {
-        if (UD.L() == null) {
-            UD.W(new String[3]);
-        }
-    }
+   static {
+      if (L() == null) {
+         W(new String[3]);
+      }
+   }
 }
+
+
+
+
 

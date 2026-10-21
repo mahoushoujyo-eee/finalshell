@@ -1,18 +1,6 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.A.E;
-import com.K;
-import com.QB;
-import com.QE;
-import com.T3;
-import com._e_0;
-import com.rv_2;
 import java.awt.Component;
-import java.awt.Container;
-import java.awt.LayoutManager;
 import java.awt.Point;
 import java.awt.Window;
 import java.awt.event.ActionListener;
@@ -20,350 +8,448 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.ImageIcon;
 
-public class QY
-extends QB {
-    protected int O;
-    protected double G;
-    protected double s;
-    protected QE u;
-    protected QE o;
-    protected boolean g;
-    protected List h = new ArrayList();
-    protected int H = -1;
-    private static final String d;
-    private static final long j;
+public class QY extends com.QB {
+   protected int O;
+   protected double G;
+   protected double s;
+   protected com.QE u;
+   protected com.QE o;
+   protected boolean g;
+   protected List h = new ArrayList();
+   protected int H = -1;
+   private static final String d;
+   private static final long j;
 
-    public QY() {
-        super(d, (LayoutManager)new T3());
-        this.Y(true);
-        this.c(0.04f);
-        this.C(false);
-        this.t(0.0f);
-        this.t(true);
-        this.a(true);
-        this.b((int)j);
-        this.u(0.0);
-        this.y(360.0);
-        this.W(QE.shutter);
-        this.y(null);
-        this.P(true);
-    }
+   public QY() {
+      super(d, new com.T3());
+      this.Y(true);
+      this.c(0.04F);
+      this.C(false);
+      this.t(0.0F);
+      this.t(true);
+      this.a(true);
+      this.b((int)j);
+      this.u(0.0);
+      this.y(360.0);
+      this.W(com.QE.shutter);
+      this.y(null);
+      this.P(true);
+   }
 
-    public int v() {
-        return this.O;
-    }
+   public int v() {
+      return this.O;
+   }
 
-    public void b(int n10) {
-        this.O = n10;
-    }
+   public void b(int var1) {
+      this.O = var1;
+   }
 
-    public double V() {
-        return this.G;
-    }
+   public double V() {
+      return this.G;
+   }
 
-    public void u(double d2) {
-        this.G = d2;
-    }
+   public void u(double var1) {
+      this.G = var1;
+   }
 
-    public double a() {
-        return this.s;
-    }
+   public double a() {
+      return this.s;
+   }
 
-    public void y(double d2) {
-        this.s = d2;
-    }
+   public void y(double var1) {
+      this.s = var1;
+   }
 
-    public QE t() {
-        return this.u;
-    }
+   public com.QE t() {
+      return this.u;
+   }
 
-    public void W(QE qE) {
-        this.u = qE;
-    }
+   public void W(com.QE var1) {
+      this.u = var1;
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    public QE H() {
-        QE qE;
-        int[] nArray = _e_0.P();
-        QY qY = this;
-        if (nArray == null) {
-            if (qY.o != null) {
-                qE = this.o;
-                return qE;
+   public com.QE H() {
+      int[] var1 = _e_2.P();
+      com.QY var10000 = this;
+      if (var1 == null) {
+         if (this.o != null) {
+            return this.o;
+         }
+
+         var10000 = this;
+      }
+
+      return var10000.u;
+   }
+
+   public void y(com.QE var1) {
+      this.o = var1;
+   }
+
+   public boolean C() {
+      return this.g;
+   }
+
+   public void P(boolean var1) {
+      this.g = var1;
+   }
+
+   public List R() {
+      return this.h;
+   }
+
+   public _e_2 w(ImageIcon var1) {
+      return this.e(var1, null);
+   }
+
+   public _e_2 e(ImageIcon var1, ActionListener var2) {
+      return this.E(new _e_2(var1, var2));
+   }
+
+   public _e_2 E(_e_2 var1) {
+      this.h.add(var1);
+      var1.setEnabled(var1.V() != null);
+      var1.p(var1.V());
+      var1.addMouseListener(new com.K(this, var1));
+      this.add(var1);
+      return var1;
+   }
+
+   public int u() {
+      return this.H;
+   }
+
+   public com.QY Q(Component var1, int var2, int var3) {
+      this.S(var1, var2, var3);
+      return this;
+   }
+
+   public void h(Component var1, Point var2) {
+      this.S(var1, var2.x, var2.y);
+   }
+
+   public void S(Component var1, int var2, int var3) {
+      synchronized (this.c) {
+         Point var5 = this.X().r(this, var2, var3);
+         super.M(var1, var5.x, var5.y);
+      }
+   }
+
+   @Override
+   protected void i() {
+      this.revalidate();
+   }
+
+   @Override
+   public com.QB l() {
+      this.w();
+      return this;
+   }
+
+   public void w() {
+      this.U(-1);
+   }
+
+   public void U(int var1) {
+      this.H = var1;
+      super.l();
+   }
+
+   @Override
+   protected void f() {
+      int[] var1 = _e_2.P();
+      com.QY var10000 = this;
+      if (var1 == null) {
+         if (this.y > 0.0F) {
+            this.revalidate();
+            if (var1 == null) {
+               return;
             }
-            qY = this;
-        }
-        qE = qY.u;
-        return qE;
-    }
+         }
 
-    public void y(QE qE) {
-        this.o = qE;
-    }
+         this.H = -1;
+         this.revalidate();
+         var10000 = this;
+      }
 
-    public boolean C() {
-        return this.g;
-    }
+      var10000.q();
+   }
 
-    public void P(boolean bl) {
-        this.g = bl;
-    }
+   public double a(Component var1) {
+      return this.j(this.getComponentZOrder(var1));
+   }
 
-    public List R() {
-        return this.h;
-    }
+   public double j(int var1) {
+      return rv_4.p(this.X().r(this, var1));
+   }
 
-    public _e_0 w(ImageIcon imageIcon) {
-        return this.e(imageIcon, null);
-    }
+   public com.T3 X() {
+      return (com.T3)this.getLayout();
+   }
 
-    public _e_0 e(ImageIcon imageIcon, ActionListener actionListener) {
-        return this.E(new _e_0(imageIcon, actionListener));
-    }
+   public static boolean P() {
+      int[] var10000 = _e_2.P();
+      Window[] var1 = Window.getWindows();
+      int var2 = var1.length;
+      int[] var0 = var10000;
+      int var3 = 0;
 
-    public _e_0 E(_e_0 _e_02) {
-        this.h.add(_e_02);
-        _e_02.setEnabled(_e_02.V() != null);
-        _e_02.p(_e_02.V());
-        _e_02.addMouseListener(new K(this, _e_02));
-        this.add(_e_02);
-        return _e_02;
-    }
+      while (true) {
+         if (var3 < var2) {
+            Window var4 = var1[var3];
+            if (var0 == null) {
+               var5 = var4.isShowing();
+               if (var0 != null) {
+                  break;
+               }
 
-    public int u() {
-        return this.H;
-    }
+               label36:
+               if (var5) {
+                  boolean var6 = var4 instanceof com.A.E;
+                  if (var0 == null) {
+                     if (!var6) {
+                        break label36;
+                     }
 
-    public QY Q(Component component, int n10, int n11) {
-        this.S(component, n10, n11);
-        return this;
-    }
+                     var6 = ((com.A.E)var4).getContentPane() instanceof com.QY;
+                  }
 
-    public void h(Component component, Point point) {
-        this.S(component, point.x, point.y);
-    }
+                  if (var0 != null) {
+                     return var6;
+                  }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void S(Component component, int n10, int n11) {
-        Object object = this.c;
-        synchronized (object) {
-            Point point = this.X().r(this, n10, n11);
-            super.M(component, point.x, point.y);
-        }
-    }
+                  if (var6) {
+                     return true;
+                  }
+               }
 
-    @Override
-    protected void i() {
-        this.revalidate();
-    }
-
-    @Override
-    public QB l() {
-        this.w();
-        return this;
-    }
-
-    public void w() {
-        this.U(-1);
-    }
-
-    public void U(int n10) {
-        this.H = n10;
-        super.l();
-    }
-
-    @Override
-    protected void f() {
-        block4: {
-            QY qY;
-            block2: {
-                block3: {
-                    int[] nArray = _e_0.P();
-                    qY = this;
-                    if (nArray != null) break block2;
-                    if (!(qY.y > 0.0f)) break block3;
-                    this.revalidate();
-                    if (nArray == null) break block4;
-                }
-                this.H = -1;
-                this.revalidate();
-                qY = this;
+               var3++;
             }
-            qY.q();
-        }
-    }
 
-    public double a(Component component) {
-        return this.j(this.getComponentZOrder(component));
-    }
-
-    public double j(int n10) {
-        return rv_2.p(this.X().r(this, n10));
-    }
-
-    public T3 X() {
-        return (T3)this.getLayout();
-    }
-
-    public static boolean P() {
-        boolean bl;
-        block3: {
-            Window[] windowArray = Window.getWindows();
-            int n10 = windowArray.length;
-            int[] nArray = _e_0.P();
-            int n11 = 0;
-            while (n11 < n10) {
-                block4: {
-                    block5: {
-                        boolean bl2;
-                        block7: {
-                            block6: {
-                                Window window = windowArray[n11];
-                                if (nArray != null) break block4;
-                                bl = window.isShowing();
-                                if (nArray != null) break block3;
-                                if (!bl) break block5;
-                                bl2 = window instanceof E;
-                                if (nArray != null) break block6;
-                                if (!bl2) break block5;
-                                bl2 = ((E)window).getContentPane() instanceof QY;
-                            }
-                            if (nArray != null) break block7;
-                            if (!bl2) break block5;
-                            bl2 = true;
-                        }
-                        return bl2;
-                    }
-                    ++n11;
-                }
-                if (nArray == null) continue;
+            if (var0 == null) {
+               continue;
             }
-            bl = false;
-        }
-        return bl;
-    }
+         }
 
-    public static void F() {
-        Window[] windowArray = Window.getWindows();
-        int n10 = windowArray.length;
-        int[] nArray = _e_0.P();
-        int n11 = 0;
-        while (n11 < n10) {
-            block3: {
-                block4: {
-                    Container container;
-                    block6: {
-                        boolean bl;
-                        Window window;
-                        block5: {
-                            window = windowArray[n11];
-                            if (nArray != null) break block3;
-                            if (!window.isShowing()) break block4;
-                            bl = window instanceof E;
-                            if (nArray != null) break block5;
-                            if (!bl) break block4;
-                            container = ((E)window).getContentPane();
-                            if (nArray != null) break block6;
-                            bl = container instanceof QY;
-                        }
-                        if (!bl) break block4;
-                        container = ((E)window).getContentPane();
-                    }
-                    QY qY = (QY)container;
-                    qY.w();
-                }
-                ++n11;
+         var5 = false;
+         break;
+      }
+
+      return var5;
+   }
+
+   public static void F() {
+      Window[] var1 = Window.getWindows();
+      int[] var10000 = _e_2.P();
+      int var2 = var1.length;
+      int[] var0 = var10000;
+      int var3 = 0;
+
+      while (var3 < var2) {
+         Window var4 = var1[var3];
+         if (var0 == null) {
+            label25:
+            if (var4.isShowing()) {
+               label44: {
+                  boolean var6 = var4 instanceof com.A.E;
+                  if (var0 == null) {
+                     if (!var6) {
+                        break label25;
+                     }
+
+                     var7 = ((com.A.E)var4).getContentPane();
+                     if (var0 != null) {
+                        break label44;
+                     }
+
+                     var6 = var7 instanceof com.QY;
+                  }
+
+                  if (!var6) {
+                     break label25;
+                  }
+
+                  var7 = ((com.A.E)var4).getContentPane();
+               }
+
+               com.QY var5 = (com.QY)var7;
+               var5.w();
             }
-            if (nArray == null) continue;
-        }
-    }
 
-    @Override
-    public QB M(Component component, int n10, int n11) {
-        return this.Q(component, n10, n11);
-    }
+            var3++;
+         }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u0016b\u001f\u001a&x\b\u0010u\u0010\u0000".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 70;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+         if (var0 != null) {
+            break;
+         }
+      }
+   }
+
+   @Override
+   public com.QB M(Component var1, int var2, int var3) {
+      return this.Q(var1, var2, var3);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "\u0016b\u001f\u001a&x\b\u0010u\u0010\u0000".toCharArray();
+      int var10004 = var10003.length;
+      int var2 = 0;
+      byte var13 = 70;
+      char[] var10002 = var10003;
+      int var4 = var10004;
+      char[] var17;
+      byte var21;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var17 = var10003;
+         var10005 = var2;
+         char var10008 = var10003[var2];
+         var10007 = 70;
+         var10006 = var10008;
+         switch (var2 % 7) {
+            case 0:
+               var21 = 36;
+               break;
+            case 1:
+               var21 = 86;
+               break;
+            case 2:
+               var21 = 56;
+               break;
+            case 3:
+               var21 = 50;
+               break;
+            case 4:
+               var21 = 19;
+               break;
+            case 5:
+               var21 = 78;
+               break;
+            default:
+               var21 = 47;
+         }
+      } else {
+         var13 = 70;
+         var4 = var10004;
+         if (var10004 <= var2) {
+            String var16 = new String(var10003).intern();
+            byte var8 = -1;
+            d = var16;
+            long var3 = 1299338594377316636L;
+            long var12 = -5111244486855313120L ^ var3;
+            var8 = -1;
+            j = var12;
+            return;
+         }
+
+         var17 = var10003;
+         var10005 = var2;
+         char var22 = var10003[var2];
+         var10007 = 70;
+         var10006 = var22;
+         switch (var2 % 7) {
+            case 0:
+               var21 = 36;
+               break;
+            case 1:
+               var21 = 86;
+               break;
+            case 2:
+               var21 = 56;
+               break;
+            case 3:
+               var21 = 50;
+               break;
+            case 4:
+               var21 = 19;
+               break;
+            case 5:
+               var21 = 78;
+               break;
+            default:
+               var21 = 47;
+         }
+      }
+
+      while (true) {
+         var17[var10005] = (char)(var10006 ^ var10007 ^ var21);
+         var2++;
+         if (var13 == 0) {
+            var17 = var10002;
+            var10005 = var13;
+            char var24 = var10002[var13];
+            var10007 = var13;
+            var10006 = var24;
+            switch (var2 % 7) {
+               case 0:
+                  var21 = 36;
+                  break;
+               case 1:
+                  var21 = 86;
+                  break;
+               case 2:
+                  var21 = 56;
+                  break;
+               case 3:
+                  var21 = 50;
+                  break;
+               case 4:
+                  var21 = 19;
+                  break;
+               case 5:
+                  var21 = 78;
+                  break;
+               default:
+                  var21 = 47;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 36;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 86;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 56;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 50;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 19;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 78;
-                            break;
-                        }
-                        default: {
-                            n17 = 47;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        d = new String(cArray).intern();
-        long l2 = 1299338594377316636L;
-        j = 0xB911363840D0B920L ^ l2;
-    }
+         } else {
+            if (var4 <= var2) {
+               String var15 = new String(var10002).intern();
+               byte var6 = -1;
+               d = var15;
+               long var0 = 1299338594377316636L;
+               long var11 = -5111244486855313120L ^ var0;
+               var6 = -1;
+               j = var11;
+               return;
+            }
+
+            var17 = var10002;
+            var10005 = var2;
+            char var23 = var10002[var2];
+            var10007 = var13;
+            var10006 = var23;
+            switch (var2 % 7) {
+               case 0:
+                  var21 = 36;
+                  break;
+               case 1:
+                  var21 = 86;
+                  break;
+               case 2:
+                  var21 = 56;
+                  break;
+               case 3:
+                  var21 = 50;
+                  break;
+               case 4:
+                  var21 = 19;
+                  break;
+               case 5:
+                  var21 = 78;
+                  break;
+               default:
+                  var21 = 47;
+            }
+         }
+      }
+   }
 }
+
+
+
+
 

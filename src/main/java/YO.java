@@ -1,34 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class YO
-extends Thread {
-    final tp_2 U;
-    private static final long a;
+class YO extends Thread {
+   final tp_4 U;
+   private static final long a;
 
-    YO(tp_2 tp_22) {
-        this.U = tp_22;
-    }
+   YO(tp_4 var1) {
+      this.U = var1;
+   }
 
-    @Override
-    public void run() {
-        while (true) {
-            try {
-                Thread.sleep(a);
-            }
-            catch (InterruptedException interruptedException) {
-                interruptedException.printStackTrace();
-            }
-            this.U.R();
-        }
-    }
+   @Override
+   public void run() {
+      while (true) {
+         try {
+            Thread.sleep(a);
+         } catch (InterruptedException var2) {
+            var2.printStackTrace();
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 8393351857207357747L;
-        a = 0x747B2D0B53B5B12DL ^ l2;
-    }
+         this.U.R();
+      }
+   }
+
+   static {
+      long var0 = 8393351857207357747L;
+      long var10002 = 8393351857207357741L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

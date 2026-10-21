@@ -1,30 +1,28 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import java.util.ArrayList;
 import javax.swing.text.Segment;
 
 public final class WP {
-    private ArrayList O = new ArrayList(2);
-    private static WP L = new WP();
+   private ArrayList O = new ArrayList(2);
+   private static com.WP L = new com.WP();
 
-    private WP() {
-    }
+   private WP() {
+   }
 
-    public static Segment x() {
-        int n10 = WP.L.O.size();
-        if (n10 > 0) {
-            return (Segment)WP.L.O.remove(n10 - 1);
-        }
-        return new Segment();
-    }
+   public static Segment x() {
+      int var0 = L.O.size();
+      return var0 > 0 ? (Segment)L.O.remove(var0 - 1) : new Segment();
+   }
 
-    public static void D(Segment segment) {
-        segment.array = null;
-        segment.count = 0;
-        WP.L.O.add(segment);
-    }
+   public static void D(Segment var0) {
+      var0.array = null;
+      var0.count = 0;
+      L.O.add(var0);
+   }
 }
+
+
+
+
 

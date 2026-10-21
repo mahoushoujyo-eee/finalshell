@@ -1,41 +1,28 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.qm_0;
-import java.awt.Rectangle;
+import java.awt.event.ActionEvent;
+import javax.swing.AbstractAction;
 
-/*
- * Renamed from com.yk
- */
-class yk_2
-implements Runnable {
-    final Rectangle N;
-    final qm_0 W;
+class Yk_2 extends AbstractAction {
+   final pA_3 h;
 
-    yk_2(qm_0 qm_02, Rectangle rectangle) {
-        this.W = qm_02;
-        this.N = rectangle;
-    }
+   Yk_2(pA_3 var1, String var2) {
+      super(var2);
+      this.h = var1;
+   }
 
-    @Override
-    public void run() {
-        block4: {
-            yk_2 yk_22;
-            block2: {
-                block3: {
-                    boolean bl = qm_0.Z();
-                    yk_22 = this;
-                    if (bl) break block2;
-                    if (yk_22.N == null) break block3;
-                    this.W.repaint(this.N);
-                    if (!bl) break block4;
-                }
-                yk_22 = this;
-            }
-            yk_22.W.repaint();
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.h.r();
+   }
+
+   @Override
+   public boolean isEnabled() {
+      return pA_3.r(this.h) != null;
+   }
 }
+
+
+
+
 

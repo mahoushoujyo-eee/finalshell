@@ -1,79 +1,78 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.V;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import org.F.c;
-import org.V.N;
-import org.V.U;
-import org.V.f;
-import org.V.p;
+import java.util.Map.Entry;
 import org.l.F;
-import org.v.z_0;
 
-public class X
-extends U {
-    private final Map M;
-    private long N;
-    static final boolean R = !X.class.desiredAssertionStatus();
+public class X extends org.V.U {
+   private final Map M = new HashMap();
+   private long N;
+   static final boolean R = !org.V.X.class.desiredAssertionStatus();
 
-    public X() {
-        this.M = new HashMap();
-    }
+   public X() {
+   }
 
-    public X(Map map) {
-        int[] nArray = f.h();
-        int[] nArray2 = nArray;
-        this.M = new HashMap();
-        for (Map.Entry entry : map.entrySet()) {
-            N n10 = this.I((String)entry.getKey(), (byte[])entry.getValue());
-            if (!R && n10 != null) {
-                throw new AssertionError();
-            }
-            if (nArray2 == null) continue;
-        }
-    }
+   public X(Map var1) {
+      int[] var10000 = org.V.f.h();
+      super();
+      int[] var2 = var10000;
+      this.M = new HashMap();
 
-    @c
-    public N I(String string, byte[] byArray) {
-        return this.M.put(string, new p(this, byArray, string));
-    }
+      for (Entry var4 : var1.entrySet()) {
+         org.V.N var5 = this.I((String)var4.getKey(), (byte[])var4.getValue());
+         if (!R && var5 != null) {
+            throw new AssertionError();
+         }
 
-    @c
-    public N S(String string, String string2) {
-        return this.I(string, string2.getBytes());
-    }
+         if (var2 != null) {
+            break;
+         }
+      }
+   }
 
-    public N O(N n10) {
-        return this.M.put(n10.o(), n10);
-    }
+   @org.F.c
+   public org.V.N I(String var1, byte[] var2) {
+      return this.M.put(var1, new p(this, var2, var1));
+   }
 
-    public Collection q() {
-        return Collections.unmodifiableCollection(this.M.values());
-    }
+   @org.F.c
+   public org.V.N S(String var1, String var2) {
+      return this.I(var1, var2.getBytes());
+   }
 
-    public final void j(long l2) {
-        this.N = l2;
-    }
+   public org.V.N O(org.V.N var1) {
+      return this.M.put(var1.o(), var1);
+   }
 
-    @Override
-    @c
-    public final N J(String string) {
-        return (N)this.M.get(string);
-    }
+   public Collection q() {
+      return Collections.unmodifiableCollection(this.M.values());
+   }
 
-    @Override
-    @c
-    public Iterable E(String string, boolean bl) {
-        return F.W(this.M.values(), new z_0(this, string, bl));
-    }
+   public final void j(long var1) {
+      this.N = var1;
+   }
 
-    static long f(X x10) {
-        return x10.N;
-    }
+   @org.F.c
+   @Override
+   public final org.V.N J(String var1) {
+      return (org.V.N)this.M.get(var1);
+   }
+
+   @org.F.c
+   @Override
+   public Iterable E(String var1, boolean var2) {
+      return F.W(this.M.values(), new z_2(this, var1, var2));
+   }
+
+   static long f(org.V.X var0) {
+      return var0.N;
+   }
 }
+
+
+
+
 

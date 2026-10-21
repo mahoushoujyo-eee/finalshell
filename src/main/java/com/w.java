@@ -1,128 +1,155 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.DI;
-import com.c;
-import com.dm_2;
 import java.awt.AWTEvent;
 import java.awt.event.AWTEventListener;
 import java.awt.event.MouseEvent;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import javax.swing.JButton;
 
-class w
-implements AWTEventListener {
-    private static final long[] a;
-    private static final Integer[] b;
+class w implements AWTEventListener {
+   private static final long[] a;
+   private static final Integer[] b;
 
-    w() {
-    }
+   @Override
+   public void eventDispatched(AWTEvent var1) {
+      int var10000 = com.dm_4.F();
+      var1.getSource();
+      MouseEvent var3 = (MouseEvent)var1;
+      boolean var2 = (boolean)var10000;
+      var10000 = var1.getSource() instanceof JButton;
+      if (var2) {
+         if (var10000 == 0) {
+            return;
+         }
 
-    @Override
-    public void eventDispatched(AWTEvent aWTEvent) {
-        block7: {
-            int n10;
-            int n11;
-            block13: {
-                String string;
-                block14: {
-                    boolean bl;
-                    block12: {
-                        block11: {
-                            String string2;
-                            Object object;
-                            block10: {
-                                int n12;
-                                int n13;
-                                block9: {
-                                    block8: {
-                                        MouseEvent mouseEvent;
-                                        block6: {
-                                            boolean bl2 = dm_2.F();
-                                            aWTEvent.getSource();
-                                            mouseEvent = (MouseEvent)aWTEvent;
-                                            bl = bl2;
-                                            n13 = aWTEvent.getSource() instanceof JButton;
-                                            if (!bl) break block6;
-                                            if (n13 == 0) break block7;
-                                            n13 = mouseEvent.getClickCount();
-                                        }
-                                        n12 = 1;
-                                        if (!bl) break block8;
-                                        if (n13 != n12) break block7;
-                                        int n12 = mouseEvent.getButton();
-                                        n12 = 1;
-                                    }
-                                    if (!bl) break block9;
-                                    if (n13 != n12) break block7;
-                                    object = aWTEvent;
-                                    if (!bl) break block10;
-                                    int n12 = ((AWTEvent)object).getID();
-                                    n12 = w.a(13682, 2697043498985754675L);
-                                }
-                                if (n13 != n12) break block7;
-                                object = aWTEvent.getSource();
-                            }
-                            JButton jButton = (JButton)object;
-                            string = jButton.getText();
-                            try {
-                                string2 = (String)lk_0.a(string);
-                            }
-                            catch (InvocationTargetException invocationTargetException) {
-                                throw invocationTargetException.getTargetException();
-                            }
-                            string = string2;
-                            n11 = string.startsWith(" ");
-                            if (!bl) break block11;
-                            if (n11 == 0) break block7;
-                            n11 = string.endsWith(" ");
-                        }
-                        if (!bl) break block12;
-                        if (n11 == 0) break block7;
-                        n11 = string.length();
-                    }
-                    n10 = w.a(15473, 2236612198155524401L);
-                    if (!bl) break block13;
-                    if (n11 != n10) break block14;
-                    DI.ia = System.currentTimeMillis();
-                    if (bl) break block7;
-                }
-                int n10 = string.length();
-                n10 = 4;
+         var10000 = var3.getClickCount();
+      }
+
+      int var10001 = 1;
+      if (var2) {
+         if (var10000 != 1) {
+            return;
+         }
+
+         var10000 = var3.getButton();
+         var10001 = 1;
+      }
+
+      label78: {
+         if (var2) {
+            if (var10000 != var10001) {
+               return;
             }
-            if (n11 == n10) {
-                DI.J = System.currentTimeMillis();
+
+            var9 = var1;
+            if (!var2) {
+               break label78;
             }
-        }
-    }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 7908920917448075006L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\f(\u000f\u00b4b{\u00bf\u00c8\u00d1[\u00f0\u00ed\u0005\u00f4\u00b79";
-        int n11 = "\f(\u000f\u00b4b{\u00bf\u00c8\u00d1[\u00f0\u00ed\u0005\u00f4\u00b79".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-    }
+            var10000 = var1.getID();
+            var10001 = a(13682, 2697043498985754675L);
+         }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x2540;
-        if (b[n11] == null) {
-            w.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+         if (var10000 != var10001) {
+            return;
+         }
+
+         var9 = var1.getSource();
+      }
+
+      JButton var4 = (JButton)var9;
+      String var5 = var4.getText();
+      Object[] var10 = com.c.a(var5);
+      Method var11 = com.c.d(139122500711711222L);
+      Object[] var17 = var10;
+      Object var15 = null;
+
+      try {
+         var12 = (String)var11.invoke(var15, var17);
+      } catch (InvocationTargetException var6) {
+         throw var6.getTargetException();
+      }
+
+      var5 = var12;
+      var10000 = var5.startsWith(" ");
+      if (var2) {
+         if (var10000 == 0) {
+            return;
+         }
+
+         var10000 = var5.endsWith(" ");
+      }
+
+      if (var2) {
+         if (var10000 == 0) {
+            return;
+         }
+
+         var10000 = var5.length();
+      }
+
+      var10001 = a(15473, 2236612198155524401L);
+      if (var2) {
+         if (var10000 == var10001) {
+            com.DI.ia = System.currentTimeMillis();
+            if (var2) {
+               return;
+            }
+         }
+
+         var10000 = var5.length();
+         var10001 = 4;
+      }
+
+      if (var10000 == var10001) {
+         com.DI.J = System.currentTimeMillis();
+      }
+   }
+
+   static {
+      long var0 = 7908920917448075006L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "\f(\u000f´b{¿ÈÑ[ðí\u0005ô·9";
+      int var5 = "\f(\u000f´b{¿ÈÑ[ðí\u0005ô·9".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 9536;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

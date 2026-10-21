@@ -1,304 +1,366 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.N6;
-import com.z9;
-import com.zH;
 import java.awt.image.BufferedImage;
 import java.awt.image.Kernel;
 
-public class z7
-extends z9 {
-    protected float I;
-    protected Kernel n;
-    private static final long[] c;
-    private static final Integer[] d;
+public class z7 extends com.z9 {
+   protected float I;
+   protected Kernel n;
+   private static final long[] c;
+   private static final Integer[] d;
 
-    public z7() {
-        this(2.0f);
-    }
+   public z7() {
+      this(2.0F);
+   }
 
-    public z7(float f10) {
-        this.o(f10);
-    }
+   public z7(float var1) {
+      this.o(var1);
+   }
 
-    public void o(float f10) {
-        this.I = f10;
-        this.n = z7.i(f10);
-    }
+   public void o(float var1) {
+      this.I = var1;
+      this.n = i(var1);
+   }
 
-    public float V() {
-        return this.I;
-    }
+   public float V() {
+      return this.I;
+   }
 
-    @Override
-    public BufferedImage filter(BufferedImage bufferedImage, BufferedImage bufferedImage2) {
-        int n10;
-        int n11;
-        block3: {
-            BufferedImage bufferedImage3;
-            block2: {
-                n11 = bufferedImage.getWidth();
-                String[] stringArray = zH.U();
-                n10 = bufferedImage.getHeight();
-                bufferedImage3 = bufferedImage2;
-                if (stringArray != null) break block2;
-                if (bufferedImage3 != null) break block3;
-                bufferedImage3 = this.createCompatibleDestImage(bufferedImage, null);
+   @Override
+   public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      int var4;
+      int var5;
+      label13: {
+         String[] var10000 = com.zH.U();
+         var4 = var1.getWidth();
+         String[] var3 = var10000;
+         var5 = var1.getHeight();
+         BufferedImage var8 = var2;
+         if (var3 == null) {
+            if (var2 != null) {
+               break label13;
             }
-            bufferedImage2 = bufferedImage3;
-        }
-        int[] nArray = new int[n11 * n10];
-        int[] nArray2 = new int[n11 * n10];
-        bufferedImage.getRGB(0, 0, n11, n10, nArray, 0, n11);
-        z7.s(this.n, nArray, nArray2, n11, n10, this.T, i);
-        z7.s(this.n, nArray2, nArray, n10, n11, this.T, i);
-        bufferedImage2.setRGB(0, 0, n11, n10, nArray, 0, n11);
-        return bufferedImage2;
-    }
 
-    public static void s(Kernel kernel, int[] nArray, int[] nArray2, int n10, int n11, boolean n12, int n13) {
-        float[] fArray = kernel.getKernelData(null);
-        String[] stringArray = zH.U();
-        int n14 = kernel.getWidth();
-        int n15 = n14 / 2;
-        int n16 = 0;
-        block0: while (true) {
-            int n17 = n16;
-            block1: while (n17 < n11) {
-                int n18 = n16;
-                int n19 = n16 * n10;
-                for (int i2 = 0; i2 < n10; ++i2) {
-                    int n20;
-                    int n21;
-                    int n22;
-                    int n23;
-                    float f10;
-                    float f11;
-                    float f12;
-                    float f13;
-                    block9: {
-                        f13 = 0.0f;
-                        f12 = 0.0f;
-                        f11 = 0.0f;
-                        f10 = 0.0f;
-                        n17 = -n15;
-                        if (stringArray != null) continue block1;
-                        n23 = n17;
-                        while (n23 <= n15) {
-                            block10: {
-                                block11: {
-                                    int n24;
-                                    float f14;
-                                    block17: {
-                                        block16: {
-                                            int n25;
-                                            block18: {
-                                                block19: {
-                                                    block12: {
-                                                        block13: {
-                                                            int n26;
-                                                            block14: {
-                                                                block15: {
-                                                                    f14 = fArray[n15 + n23];
-                                                                    if (stringArray != null) break block10;
-                                                                    float f15 = f14 - 0.0f;
-                                                                    n22 = f15 == 0.0f ? 0 : (f15 > 0.0f ? 1 : -1);
-                                                                    if (stringArray != null) break block9;
-                                                                    if (n22 == 0) break block11;
-                                                                    n24 = n21 = i2 + n23;
-                                                                    if (stringArray != null) break block12;
-                                                                    if (n24 >= 0) break block13;
-                                                                    n24 = n13;
-                                                                    n26 = i;
-                                                                    if (stringArray != null) break block14;
-                                                                    if (n24 != n26) break block15;
-                                                                    n21 = 0;
-                                                                    if (stringArray == null) break block16;
-                                                                }
-                                                                n24 = n13;
-                                                                if (stringArray != null) break block17;
-                                                                n26 = G;
-                                                            }
-                                                            if (n24 != n26) break block16;
-                                                            n21 = (i2 + n10) % n10;
-                                                            if (stringArray == null) break block16;
-                                                        }
-                                                        n24 = n21;
-                                                    }
-                                                    if (stringArray != null) break block17;
-                                                    if (n24 < n10) break block16;
-                                                    n24 = n13;
-                                                    n25 = i;
-                                                    if (stringArray != null) break block18;
-                                                    if (n24 != n25) break block19;
-                                                    n21 = n10 - 1;
-                                                    if (stringArray == null) break block16;
-                                                }
-                                                n24 = n13;
-                                                if (stringArray != null) break block17;
-                                                n25 = G;
-                                            }
-                                            if (n24 == n25) {
-                                                n21 = (i2 + n10) % n10;
-                                            }
-                                        }
-                                        n24 = nArray[n19 + n21];
+            var8 = this.createCompatibleDestImage(var1, null);
+         }
+
+         var2 = var8;
+      }
+
+      int[] var6 = new int[var4 * var5];
+      int[] var7 = new int[var4 * var5];
+      var1.getRGB(0, 0, var4, var5, var6, 0, var4);
+      s(this.n, var6, var7, var4, var5, this.T, i);
+      s(this.n, var7, var6, var5, var4, this.T, i);
+      var2.setRGB(0, 0, var4, var5, var6, 0, var4);
+      return var2;
+   }
+
+   public static void s(Kernel var0, int[] var1, int[] var2, int var3, int var4, boolean var5, int var6) {
+      String[] var10000 = com.zH.U();
+      float[] var8 = var0.getKernelData(null);
+      String[] var7 = var10000;
+      int var9 = var0.getWidth();
+      int var10 = var9 / 2;
+      int var11 = 0;
+
+      label111:
+      while (true) {
+         int var27 = var11;
+
+         label109:
+         while (var27 < var4) {
+            int var12 = var11;
+            int var13 = var11 * var3;
+            int var14 = 0;
+
+            while (var14 < var3) {
+               float var15 = 0.0F;
+               float var16 = 0.0F;
+               float var17 = 0.0F;
+               float var18 = 0.0F;
+               var27 = -var10;
+               if (var7 != null) {
+                  continue label109;
+               }
+
+               int var19 = var27;
+
+               while (true) {
+                  if (var19 <= var10) {
+                     float var20 = var8[var10 + var19];
+                     if (var7 == null) {
+                        float var31;
+                        var28 = (var31 = var20 - 0.0F) == 0.0F ? 0 : (var31 < 0.0F ? -1 : 1);
+                        if (var7 != null) {
+                           break;
+                        }
+
+                        if (var28 != 0) {
+                           label95: {
+                              int var21;
+                              label118: {
+                                 var21 = var14 + var19;
+                                 var29 = var21;
+                                 if (var7 == null) {
+                                    if (var21 < 0) {
+                                       var29 = var6;
+                                       int var10001 = i;
+                                       if (var7 == null) {
+                                          if (var6 == i) {
+                                             var21 = 0;
+                                             if (var7 == null) {
+                                                break label118;
+                                             }
+                                          }
+
+                                          var29 = var6;
+                                          if (var7 != null) {
+                                             break label95;
+                                          }
+
+                                          var10001 = G;
+                                       }
+
+                                       if (var29 != var10001) {
+                                          break label118;
+                                       }
+
+                                       var21 = (var14 + var3) % var3;
+                                       if (var7 == null) {
+                                          break label118;
+                                       }
                                     }
-                                    n20 = n24;
-                                    f10 += f14 * (float)(n20 >> z7.b(26857, 705373954430749629L) & z7.b(6705, 1882377701407930722L));
-                                    f13 += f14 * (float)(n20 >> z7.b(2814, 2400866963155233192L) & z7.b(9559, 4802532881827956226L));
-                                    f12 += f14 * (float)(n20 >> z7.b(10486, 1390218484461669284L) & z7.b(9559, 4802532881827956226L));
-                                    f11 += f14 * (float)(n20 & z7.b(9559, 4802532881827956226L));
-                                }
-                                ++n23;
-                            }
-                            if (stringArray == null) continue;
+
+                                    var29 = var21;
+                                 }
+
+                                 if (var7 != null) {
+                                    break label95;
+                                 }
+
+                                 label80:
+                                 if (var29 >= var3) {
+                                    var29 = var6;
+                                    int var30 = i;
+                                    if (var7 == null) {
+                                       if (var6 == i) {
+                                          var21 = var3 - 1;
+                                          if (var7 == null) {
+                                             break label80;
+                                          }
+                                       }
+
+                                       var29 = var6;
+                                       if (var7 != null) {
+                                          break label95;
+                                       }
+
+                                       var30 = G;
+                                    }
+
+                                    if (var29 == var30) {
+                                       var21 = (var14 + var3) % var3;
+                                    }
+                                 }
+                              }
+
+                              var29 = var1[var13 + var21];
+                           }
+
+                           int var22 = var29;
+                           var18 += var20 * (float)(var22 >> b(26857, 705373954430749629L) & b(6705, 1882377701407930722L));
+                           var15 += var20 * (float)(var22 >> b(2814, 2400866963155233192L) & b(9559, 4802532881827956226L));
+                           var16 += var20 * (float)(var22 >> b(10486, 1390218484461669284L) & b(9559, 4802532881827956226L));
+                           var17 += var20 * (float)(var22 & b(9559, 4802532881827956226L));
                         }
-                        n22 = n12;
-                    }
-                    if (stringArray == null) {
-                        n22 = n22 != 0 ? N6.W((int)((double)f10 + 0.5)) : z7.b(9559, 4802532881827956226L);
-                    }
-                    n23 = n22;
-                    int n27 = N6.W((int)((double)f13 + 0.5));
-                    n21 = N6.W((int)((double)f12 + 0.5));
-                    n20 = N6.W((int)((double)f11 + 0.5));
-                    nArray2[n18] = n23 << z7.b(11361, 3626671100152123185L) | n27 << z7.b(29157, 7833370080731124402L) | n21 << z7.b(12814, 5450116554555625823L) | n20;
-                    n18 += n11;
-                    if (stringArray == null) continue;
-                }
-                ++n16;
-                if (stringArray == null) continue block0;
+
+                        var19++;
+                     }
+
+                     if (var7 == null) {
+                        continue;
+                     }
+                  }
+
+                  var28 = var5;
+                  break;
+               }
+
+               if (var7 == null) {
+                  var28 = var28 != 0 ? N6.W((int)((double)var18 + 0.5)) : b(9559, 4802532881827956226L);
+               }
+
+               var19 = var28;
+               int var24 = N6.W((int)((double)var15 + 0.5));
+               int var25 = N6.W((int)((double)var16 + 0.5));
+               int var26 = N6.W((int)((double)var17 + 0.5));
+               var2[var12] = var19 << b(11361, 3626671100152123185L)
+                  | var24 << b(29157, 7833370080731124402L)
+                  | var25 << b(12814, 5450116554555625823L)
+                  | var26;
+               var12 += var4;
+               var14++;
+               if (var7 != null) {
+                  break;
+               }
             }
-            break;
-        }
-    }
 
-    public static Kernel i(float f10) {
-        int n10;
-        float f11;
-        String[] stringArray;
-        float[] fArray;
-        int n11;
-        block4: {
-            int n12;
-            int n13 = (int)Math.ceil(f10);
-            n11 = n13 * 2 + 1;
-            fArray = new float[n11];
-            float f12 = f10 / 3.0f;
-            float f13 = 2.0f * f12 * f12;
-            float f14 = (float)Math.PI * 2 * f12;
-            float f15 = (float)Math.sqrt(f14);
-            float f16 = f10 * f10;
-            stringArray = zH.U();
-            f11 = 0.0f;
-            int n14 = 0;
-            for (n10 = -n13; n10 <= n13; ++n10) {
-                block7: {
-                    float f17;
-                    block6: {
-                        block5: {
-                            f17 = n10 * n10;
-                            if (stringArray != null) break block5;
-                            n12 = f17 == f16 ? 0 : (f17 > f16 ? 1 : -1);
-                            if (stringArray != null) break block4;
-                            if (n12 <= 0) break block6;
-                            fArray[n14] = 0.0f;
-                        }
-                        if (stringArray == null) break block7;
-                    }
-                    fArray[n14] = (float)Math.exp(-f17 / f13) / f15;
-                }
-                f11 += fArray[n14];
-                ++n14;
-                if (stringArray == null) continue;
+            var11++;
+            if (var7 != null) {
+               return;
             }
-            n12 = n10 = 0;
-        }
-        while (n10 < n11) {
-            int n15 = n10++;
-            fArray[n15] = fArray[n15] / f11;
-            if (stringArray == null) continue;
-        }
-        return new Kernel(n11, 1, fArray);
-    }
+            continue label111;
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 5113615349178364905L;
-                var6_1 = new long[8];
-                var3_2 = 0;
-                var4_3 = "\u00901\u00ca\u00caG\u0001b\u00be\u00f3\u001d^X\u00b4|\u00fc\u00c0\u00cc\u00cc\u00e9U\u00f4K\u00cat\u00b9G\u00f5\u008c\u00abG\u00f8E\u00d4]GK.\u00bf\u00f5\u0014j0\f\u00ed\u00f6j\u00b8L";
-                var5_4 = "\u00901\u00ca\u00caG\u0001b\u00be\u00f3\u001d^X\u00b4|\u00fc\u00c0\u00cc\u00cc\u00e9U\u00f4K\u00cat\u00b9G\u00f5\u008c\u00abG\u00f8E\u00d4]GK.\u00bf\u00f5\u0014j0\f\u00ed\u00f6j\u00b8L".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
+         return;
+      }
+   }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "#\u00aeE\f\u00c5\u00e4!K\"Gi/~\u0014ZQ";
-                    var5_4 = "#\u00aeE\f\u00c5\u00e4!K\"Gi/~\u0014ZQ".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
+   public static Kernel i(float var0) {
+      int var2 = (int)Math.ceil((double)var0);
+      String[] var10000 = com.zH.U();
+      int var3 = var2 * 2 + 1;
+      float[] var4 = new float[var3];
+      float var5 = var0 / 3.0F;
+      float var6 = 2.0F * var5 * var5;
+      float var7 = (float) (Math.PI * 2) * var5;
+      float var8 = (float)Math.sqrt((double)var7);
+      float var9 = var0 * var0;
+      String[] var1 = var10000;
+      float var10 = 0.0F;
+      int var11 = 0;
+      int var12 = -var2;
+
+      while (true) {
+         if (var12 <= var2) {
+            label36: {
+               float var13;
+               label35: {
+                  var13 = (float)(var12 * var12);
+                  if (var1 == null) {
+                     float var16;
+                     var15 = (var16 = var13 - var9) == 0.0F ? 0 : (var16 < 0.0F ? -1 : 1);
+                     if (var1 != null) {
                         break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
+                     }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+                     if (var15 <= 0) {
+                        break label35;
+                     }
+
+                     var4[var11] = 0.0F;
+                  }
+
+                  if (var1 == null) {
+                     break label36;
+                  }
+               }
+
+               var4[var11] = (float)Math.exp((double)(-var13 / var6)) / var8;
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
 
-                ** continue;
+            var10 += var4[var11];
+            var11++;
+            var12++;
+            if (var1 == null) {
+               continue;
             }
-        }
-        z7.c = var6_1;
-        z7.d = new Integer[8];
-    }
+         }
 
-    private static int b(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x2351;
-        if (d[n11] == null) {
-            z7.d[n11] = (int)(c[n11] ^ l2);
-        }
-        return d[n11];
-    }
+         var15 = 0;
+         break;
+      }
+
+      var12 = var15;
+
+      while (var12 < var3) {
+         var4[var12] /= var10;
+         var12++;
+         if (var1 != null) {
+            break;
+         }
+      }
+
+      return new Kernel(var3, 1, var4);
+   }
+
+   static {
+      long var0 = 5113615349178364905L;
+      long[] var6 = new long[8];
+      int var3 = 0;
+      String var4 = "\u00901ÊÊG\u0001b¾ó\u001d^X´|üÀÌÌéUôKÊt¹Gõ\u008c«GøEÔ]GK.¿õ\u0014j0\fíöj¸L";
+      int var5 = "\u00901ÊÊG\u0001b¾ó\u001d^X´|üÀÌÌéUôKÊt¹Gõ\u008c«GøEÔ]GK.¿õ\u0014j0\fíöj¸L".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     c = var6;
+                     d = new Integer[8];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "#®E\fÅä!K\"Gi/~\u0014ZQ";
+                  var5 = "#®E\fÅä!K\"Gi/~\u0014ZQ".length();
+                  var2 = 0;
+            }
+
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   private static int b(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 9041;
+      if (d[var3] == null) {
+         d[var3] = (int)(c[var3] ^ var1);
+      }
+
+      return d[var3];
+   }
 }
+
+
+
+
 

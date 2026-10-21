@@ -1,35 +1,35 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.zo_0;
+public class Pd_2 implements com.WX {
+   @Override
+   public String g(Object var1, String var2, Object var3) {
+      String var4 = nv_4.o();
+      String var10000 = var2;
+      if (var4 != null) {
+         label20:
+         if (var2 != null) {
+            var10000 = var2;
+            if (var4 != null) {
+               if (var2.length() == 0) {
+                  break label20;
+               }
 
-/*
- * Renamed from com.pd
- */
-class pd_2 {
-    static final int[] T = new int[zo_0.values().length];
+               var10000 = var2;
+            }
 
-    static {
-        try {
-            pd_2.T[zo_0.url.ordinal()] = 1;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            pd_2.T[zo_0.filePath.ordinal()] = 2;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            pd_2.T[zo_0.nearClass.ordinal()] = 3;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-    }
+            char[] var5 = var10000.toCharArray();
+            var5[0] = Character.toUpperCase(var5[0]);
+            return new String(var5);
+         }
+
+         var10000 = var2;
+      }
+
+      return var10000;
+   }
 }
+
+
+
+
 

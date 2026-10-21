@@ -1,23 +1,34 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.a9;
-import com.wc_0;
-import java.awt.event.KeyEvent;
+import java.awt.Rectangle;
 
-/*
- * Renamed from com.lb
- */
-class lb_2
-implements wc_0 {
-    lb_2() {
-    }
+public class Lb_2 extends com.LP implements wt_4 {
+   public Lb_2(com.og_4 var1) {
+      super(var1);
+   }
 
-    @Override
-    public void j(KeyEvent keyEvent) {
-        a9.K();
-    }
+   @Override
+   public void R(boolean var1) {
+   }
+
+   @Override
+   public void G(boolean var1) {
+   }
+
+   @Override
+   public void j(boolean var1) {
+   }
+
+   @Override
+   public void R(Rectangle var1) {
+   }
+
+   @Override
+   public void j(Rectangle var1) {
+   }
 }
+
+
+
+
 

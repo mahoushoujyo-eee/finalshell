@@ -1,66 +1,80 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.net.DatagramPacket;
 
-public class WX
-extends WC {
-    public short h = D6.O;
-    byte[] j;
-    int M;
-    private static final long[] a;
-    private static final Integer[] b;
+public class WX extends WC {
+   public short h = D6.O;
+   byte[] j;
+   int M;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public WX(int n10) {
-        this.j = new byte[WX.a(15793, 8606240236008140772L)];
-        B8.P(this.W, this.j, 0);
-        B8.P(this.h, this.j, 2);
-        lh_1.u(n10, this.j, 4);
-        this.g = new DatagramPacket(this.j, this.j.length);
-    }
+   public WX(int var1) {
+      this.j = new byte[a(15793, 8606240236008140772L)];
+      B8.P(this.W, this.j, 0);
+      B8.P(this.h, this.j, 2);
+      lH_3.u(var1, this.j, 4);
+      this.g = new DatagramPacket(this.j, this.j.length);
+   }
 
-    public WX(DatagramPacket datagramPacket) {
-        this.j = new byte[WX.a(4950, 1293325122495889666L)];
-        this.g = datagramPacket;
-        this.j = datagramPacket.getData();
-        this.W = B8.M(this.j, 0);
-        this.h = B8.M(this.j, 2);
-        this.M = lh_1.z(this.j, 4);
-    }
+   public WX(DatagramPacket var1) {
+      this.j = new byte[a(4950, 1293325122495889666L)];
+      this.g = var1;
+      this.j = var1.getData();
+      this.W = B8.M(this.j, 0);
+      this.h = B8.M(this.j, 2);
+      this.M = lH_3.z(this.j, 4);
+   }
 
-    public int a() {
-        return this.M;
-    }
+   public int a() {
+      return this.M;
+   }
 
-    public void I(int n10) {
-        this.M = n10;
-    }
+   public void I(int var1) {
+      this.M = var1;
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 8164599594053305871L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\u00a1F\u00b8m>(\u00e9\u00e3T=&5\u0011\u00acG\u0005";
-        int n11 = "\u00a1F\u00b8m>(\u00e9\u00e3T=&5\u0011\u00acG\u0005".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-    }
+   static {
+      long var0 = 8164599594053305871L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "¡F¸m>(éãT=&5\u0011¬G\u0005";
+      int var5 = "¡F¸m>(éãT=&5\u0011¬G\u0005".length();
+      byte var2 = 0;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x5255;
-        if (b[n11] == null) {
-            WX.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 21077;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

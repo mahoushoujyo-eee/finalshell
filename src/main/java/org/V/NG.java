@@ -1,110 +1,106 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
 import org.I;
-import org.v.NV;
-import org.v._w_0;
-import org.v.hd_0;
 
-public final class NG
-extends NV {
-    @c
-    hd_0 B;
-    private static final String a;
+public final class NG extends NV {
+   @org.F.c
+   hd_2 B;
+   private static final String a;
 
-    public NG(I i2) {
-        super(i2);
-    }
+   public NG(I var1) {
+      super(var1);
+   }
 
-    @Override
-    public String toString() {
-        return a;
-    }
+   @Override
+   public String toString() {
+      return a;
+   }
 
-    @Override
-    @c
-    public Object i(_w_0 _w_02) throws Throwable {
-        return _w_02.E(this);
-    }
+   @org.F.c
+   @Override
+   public Object i(_w_2 var1) throws Throwable {
+      return var1.E(this);
+   }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "d\u001b\u007fP".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 96;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "d\u001b\u007fP".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 96;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 96;
+         var10006 = var0;
+      } else {
+         var6 = 96;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 96;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 112;
+               break;
+            case 1:
+               var23 = 19;
+               break;
+            case 2:
+               var23 = 118;
+               break;
+            case 3:
+               var23 = 67;
+               break;
+            case 4:
+               var23 = 19;
+               break;
+            case 5:
+               var23 = 78;
+               break;
+            default:
+               var23 = 78;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 112;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 19;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 118;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 67;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 19;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 78;
-                            break;
-                        }
-                        default: {
-                            n17 = 78;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

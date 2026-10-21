@@ -1,72 +1,90 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.XM;
-import com.ra_1;
 import java.awt.image.ColorModel;
 
-class TB
-extends XM {
-    private static final long[] c;
-    private static final Integer[] e;
+class TB extends XM {
+   private static final long[] c;
+   private static final Integer[] e;
 
-    public TB(float f10, ColorModel colorModel, ColorModel colorModel2) {
-        super(f10, colorModel, colorModel2);
-    }
+   public TB(float var1, ColorModel var2, ColorModel var3) {
+      super(var1, var2, var3);
+   }
 
-    @Override
-    public void G(int[] nArray, int[] nArray2, float f10) {
-        int n10 = nArray.length;
-        String string = ra_1.c();
-        for (int i2 = 0; i2 < n10; i2 += 4) {
-            int n11 = nArray[i2];
-            int n12 = nArray2[i2];
-            int n13 = nArray[i2 + 1];
-            int n14 = nArray2[i2 + 1];
-            int n15 = nArray[i2 + 2];
-            int n16 = nArray2[i2 + 2];
-            int n17 = nArray[i2 + 3];
-            int n18 = nArray2[i2 + 3];
-            int n19 = TB.b(23182, 7369015157103641019L) - Math.abs(TB.b(10069, 3777408055898881121L) - n11 - n12);
-            int n20 = TB.b(10069, 3777408055898881121L) - Math.abs(TB.b(10069, 3777408055898881121L) - n13 - n14);
-            int n21 = TB.b(10069, 3777408055898881121L) - Math.abs(TB.b(10069, 3777408055898881121L) - n15 - n16);
-            float f11 = f10 * (float)n17 / 255.0f;
-            float f12 = 1.0f - f11;
-            nArray2[i2] = (int)(f11 * (float)n19 + f12 * (float)n12);
-            nArray2[i2 + 1] = (int)(f11 * (float)n20 + f12 * (float)n14);
-            nArray2[i2 + 2] = (int)(f11 * (float)n21 + f12 * (float)n16);
-            nArray2[i2 + 3] = (int)((float)n17 * f10 + (float)n18 * f12);
-            if (string == null) continue;
-        }
-    }
+   @Override
+   public void G(int[] var1, int[] var2, float var3) {
+      int var5 = var1.length;
+      String var10000 = rA_3.c();
+      byte var6 = 0;
+      String var4 = var10000;
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 8555992312076198292L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\u00d2d=V\u00e1\u00cb]\n\u0011\u000b[\u00ff\u0001\u00e7\u00a0\u00d0";
-        int n11 = "\u00d2d=V\u00e1\u00cb]\n\u0011\u000b[\u00ff\u0001\u00e7\u00a0\u00d0".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        c = lArray;
-        e = new Integer[2];
-    }
+      while (var6 < var5) {
+         int var7 = var1[var6];
+         int var8 = var2[var6];
+         int var9 = var1[var6 + 1];
+         int var10 = var2[var6 + 1];
+         int var11 = var1[var6 + 2];
+         int var12 = var2[var6 + 2];
+         int var13 = var1[var6 + 3];
+         int var14 = var2[var6 + 3];
+         int var15 = b(23182, 7369015157103641019L) - Math.abs(b(10069, 3777408055898881121L) - var7 - var8);
+         int var16 = b(10069, 3777408055898881121L) - Math.abs(b(10069, 3777408055898881121L) - var9 - var10);
+         int var17 = b(10069, 3777408055898881121L) - Math.abs(b(10069, 3777408055898881121L) - var11 - var12);
+         float var18 = var3 * (float)var13 / 255.0F;
+         float var19 = 1.0F - var18;
+         var2[var6] = (int)(var18 * (float)var15 + var19 * (float)var8);
+         var2[var6 + 1] = (int)(var18 * (float)var16 + var19 * (float)var10);
+         var2[var6 + 2] = (int)(var18 * (float)var17 + var19 * (float)var12);
+         var2[var6 + 3] = (int)((float)var13 * var3 + (float)var14 * var19);
+         var6 += 4;
+         if (var4 != null) {
+            break;
+         }
+      }
+   }
 
-    private static int b(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x1B34;
-        if (e[n11] == null) {
-            TB.e[n11] = (int)(c[n11] ^ l2);
-        }
-        return e[n11];
-    }
+   static {
+      long var0 = 8555992312076198292L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "Òd=VáË]\n\u0011\u000b[ÿ\u0001ç Ð";
+      int var5 = "Òd=VáË]\n\u0011\u000b[ÿ\u0001ç Ð".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      c = var6;
+      e = new Integer[2];
+   }
+
+   private static int b(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 6964;
+      if (e[var3] == null) {
+         e[var3] = (int)(c[var3] ^ var1);
+      }
+
+      return e[var3];
+   }
 }
+
+
+
+
 

@@ -1,40 +1,29 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-/*
- * Renamed from tx
- */
-class tx_2
-implements MouseListener {
-    final O3 p;
+class Tx_2 implements Runnable {
+   final yT_3 V;
 
-    tx_2(O3 o3) {
-        this.p = o3;
-    }
+   Tx_2(yT_3 var1) {
+      this.V = var1;
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void run() {
+      Object[] var10000 = com.c.f();
+      Method var2 = com.c.d(452351916487440010L);
+      Object[] var4 = var10000;
+      Object var3 = null;
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        ((UT)this.p.x).clearSelection();
-    }
-
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-    }
-
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+      try {
+         var2.invoke(var3, var4);
+      } catch (InvocationTargetException var1) {
+         throw var1.getTargetException();
+      }
+   }
 }
+
+
+
+
 

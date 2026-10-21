@@ -1,17 +1,24 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-/*
- * Renamed from com.ik
- */
-class ik_2
-extends Exception {
-    int Y;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
-    ik_2(int n10) {
-        this.Y = n10;
-    }
+class Ik_2 extends KeyAdapter {
+   final nr_4 Q;
+
+   Ik_2(nr_4 var1) {
+      this.Q = var1;
+   }
+
+   @Override
+   public void keyPressed(KeyEvent var1) {
+      if (GR.lD.J(var1)) {
+         this.Q.g();
+      }
+   }
 }
+
+
+
+
 

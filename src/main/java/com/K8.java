@@ -1,41 +1,39 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FV;
 import java.awt.Frame;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-class K8
-extends WindowAdapter {
-    final Frame L;
-    final Frame N;
+class K8 extends WindowAdapter {
+   final Frame L;
+   final Frame N;
 
-    K8(Frame frame, Frame frame2) {
-        this.L = frame;
-        this.N = frame2;
-    }
+   K8(Frame var1, Frame var2) {
+      this.L = var1;
+      this.N = var2;
+   }
 
-    @Override
-    public void windowActivated(WindowEvent windowEvent) {
-        block4: {
-            Frame frame;
-            block2: {
-                block3: {
-                    String string = FV.D();
-                    frame = this.L;
-                    if (string != null) break block2;
-                    if (!frame.isShowing()) break block3;
-                    this.L.setExtendedState(0);
-                    this.L.toFront();
-                    if (string == null) break block4;
-                }
-                frame = this.N;
+   @Override
+   public void windowActivated(WindowEvent var1) {
+      String var2 = com.FV.D();
+      Frame var10000 = this.L;
+      if (var2 == null) {
+         if (this.L.isShowing()) {
+            this.L.setExtendedState(0);
+            this.L.toFront();
+            if (var2 == null) {
+               return;
             }
-            frame.removeWindowListener(this);
-        }
-    }
+         }
+
+         var10000 = this.N;
+      }
+
+      var10000.removeWindowListener(this);
+   }
 }
+
+
+
+
 

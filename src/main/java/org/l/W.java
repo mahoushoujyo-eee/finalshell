@@ -1,67 +1,68 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.l;
 
 import java.io.File;
 import java.io.FilenameFilter;
-import java.util.Iterator;
 import java.util.List;
-import org.F.c;
-import org.l.F;
-import org.l.q;
-import org.l.z;
 
-class W
-implements org.T.z {
-    private final List W;
-    final File B;
-    final FilenameFilter h;
-    final FilenameFilter c;
+class W implements org.T.z {
+   private final List W;
+   final File B;
+   final FilenameFilter h;
+   final FilenameFilter c;
 
-    W(File file, FilenameFilter filenameFilter, FilenameFilter filenameFilter2) {
-        this.B = file;
-        this.h = filenameFilter;
-        this.c = filenameFilter2;
-        this.W = q.V(new z(this, this.B));
-    }
+   W(File var1, FilenameFilter var2, FilenameFilter var3) {
+      this.B = var1;
+      this.h = var2;
+      this.c = var3;
+      this.W = q.V(new org.l.z(this, this.B));
+   }
 
-    @c
-    public File u() {
-        boolean bl = F.s();
-        while (!this.W.isEmpty()) {
-            block7: {
-                Iterator iterator;
-                boolean bl2;
-                z z10;
-                block5: {
-                    block6: {
-                        z10 = (z)this.W.get(this.W.size() - 1);
-                        bl2 = z10.w.hasNext();
-                        if (!bl) break block5;
-                        if (!bl2) break block6;
-                        this.W.add(new z(this, (File)z10.w.next()));
-                        if (bl) break block7;
-                    }
-                    iterator = z10.Y;
-                    if (!bl) break block7;
-                    bl2 = iterator.hasNext();
-                }
-                if (bl2) {
-                    File file = (File)z10.Y.next();
-                    return file;
-                }
-                iterator = this.W.remove(this.W.size() - 1);
+   @org.F.c
+   public File u() {
+      boolean var1 = F.s();
+
+      while (!this.W.isEmpty()) {
+         label39: {
+            org.l.z var2 = (org.l.z)this.W.get(this.W.size() - 1);
+            boolean var10000 = var2.w.hasNext();
+            if (var1) {
+               if (var10000) {
+                  this.W.add(new org.l.z(this, (File)var2.w.next()));
+                  if (var1) {
+                     break label39;
+                  }
+               }
+
+               if (!var1) {
+                  break label39;
+               }
+
+               var10000 = var2.Y.hasNext();
             }
-            if (bl) continue;
-        }
-        return null;
-    }
 
-    @Override
-    @c
-    public Object h() {
-        return this.u();
-    }
+            if (var10000) {
+               return (File)var2.Y.next();
+            }
+
+            this.W.remove(this.W.size() - 1);
+         }
+
+         if (!var1) {
+            break;
+         }
+      }
+
+      return null;
+   }
+
+   @org.F.c
+   @Override
+   public Object h() {
+      return this.u();
+   }
 }
+
+
+
+
 

@@ -1,55 +1,87 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ak_0;
-import com.nl_1;
-import com.nv_2;
-import com.xd_2;
-import com.ym_1;
-import java.io.IOException;
-import java.lang.reflect.Type;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
-/*
- * Renamed from com.yw
- */
-public class yw_2
-implements ak_0 {
-    public static yw_2 k = new yw_2();
+public class Yw_2 extends com.YP {
+   @NotNull
+   private final com.yA_3 s;
+   @NotNull
+   private final com.YP Y;
+   @Nullable
+   private final com.YP T;
+   @NotNull
+   private final com.KO F;
 
-    @Override
-    public void u(nl_1 nl_12, Object object, Object object2, Type type, int n10) throws IOException {
-        Object object3;
-        ym_1 ym_12;
-        block4: {
-            block5: {
-                ym_12 = nl_12.w;
-                String string = nv_2.o();
-                try {
-                    try {
-                        object3 = object;
-                        if (string == null) break block4;
-                        if (object3 != null) break block5;
-                    }
-                    catch (IOException iOException) {
-                        throw yw_2.a(iOException);
-                    }
-                    ym_12.Y();
-                    return;
-                }
-                catch (IOException iOException) {
-                    throw yw_2.a(iOException);
-                }
-            }
-            object3 = object;
-        }
-        xd_2 xd_22 = (xd_2)object3;
-        ym_12.write(xd_22.V());
-    }
+   public Yw_2(@NotNull com.YP var1, @NotNull com.yA_3 var2) {
+      this(var1.K(), var1.s(), var2, com.KO.HOVER, var1);
+   }
 
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
+   public Yw_2(@Nullable Et_2 var1, @Nullable Et_2 var2, @NotNull com.yA_3 var3, @NotNull com.KO var4, @Nullable com.YP var5) {
+      this(false, var1, var2, var3, var4, var5);
+   }
+
+   private Yw_2(boolean var1, @Nullable Et_2 var2, @Nullable Et_2 var3, @NotNull com.yA_3 var4, @NotNull com.KO var5, @Nullable com.YP var6) {
+      super(var1 ? var2 : null, var1 ? var3 : null);
+      this.Y = new com.aG().j(var3).c(var2).c(SY.UNDERLINED, true).y();
+      this.s = var4;
+      this.F = var5;
+      this.T = var6;
+   }
+
+   @Nullable
+   public com.YP J() {
+      return this.T;
+   }
+
+   @NotNull
+   public com.YP k() {
+      return this.Y;
+   }
+
+   @NotNull
+   public com.yA_3 g() {
+      return this.s;
+   }
+
+   @NotNull
+   public com.KO i() {
+      return this.F;
+   }
+
+   @NotNull
+   public com.am_2 Y() {
+      return new com.am_2(this, null);
+   }
+
+   @NotNull
+   @Override
+   public com.aG n() {
+      return this.Y();
+   }
+
+   static com.yA_3 L(com.Yw_2 var0) {
+      return var0.s;
+   }
+
+   static com.YP h(com.Yw_2 var0) {
+      return var0.Y;
+   }
+
+   static com.YP J(com.Yw_2 var0) {
+      return var0.T;
+   }
+
+   static com.KO x(com.Yw_2 var0) {
+      return var0.F;
+   }
+
+   Yw_2(boolean var1, Et_2 var2, Et_2 var3, com.yA_3 var4, com.KO var5, com.YP var6, com.aK var7) {
+      this(var1, var2, var3, var4, var5, var6);
+   }
 }
+
+
+
+
 

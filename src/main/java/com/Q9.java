@@ -1,24 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.pa_1;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
-class Q9
-extends AbstractAction {
-    final pa_1 k;
+class Q9 extends AbstractAction {
+   final pA_3 k;
 
-    Q9(pa_1 pa_12, String string) {
-        this.k = pa_12;
-        super(string);
-    }
+   Q9(pA_3 var1, String var2) {
+      super(var2);
+      this.k = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.k.v();
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.k.v();
+   }
 }
+
+
+
+
 

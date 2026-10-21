@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  项目级 Maven 配置：绕过全局的 aliyun 镜像，直连 Maven Central。
-  原因：aliyun 的 public 组缺少部分构件，且失败结果会被负缓存；
-  本机直连 repo1.maven.org 是通的。
+  项目级 Maven 配置：把 central 镜像指向华为云。
+  原因：本机 aliyun public 组缺部分构件且失败会被负缓存；华为云镜像是 central 的全量代理。
 -->
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0">
   <mirrors>
     <mirror>
-      <id>central-direct</id>
+      <id>huaweicloud</id>
       <mirrorOf>central</mirrorOf>
-      <url>https://repo1.maven.org/maven2</url>
+      <url>https://repo.huaweicloud.com/repository/maven/</url>
     </mirror>
   </mirrors>
 </settings>

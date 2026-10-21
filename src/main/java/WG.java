@@ -1,163 +1,253 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.lang.reflect.InvocationTargetException;
-import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
+class WG implements Runnable {
+   String A;
+   final k_2 e;
+   private static final String a;
 
-class WG
-implements Runnable {
-    String A;
-    final k_0 e;
-    private static final String a;
+   WG(k_2 var1) {
+      this.e = var1;
+      com.c.c(486747588508308577L).set(this, null);
+   }
 
-    WG(k_0 k_02) {
-        this.e = k_02;
-        this.A = null;
-    }
+   @Override
+   public void run() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic a3.I ()[I
+      // 003: aload 0
+      // 004: ldc2_w 433113400934995198
+      // 007: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 00a: swap
+      // 00b: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 00e: ldc2_w 338548643484545888
+      // 011: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 014: swap
+      // 015: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 018: ldc2_w 305402254993059552
+      // 01b: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 01e: swap
+      // 01f: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 022: invokestatic com/c.f ()[Ljava/lang/Object;
+      // 025: ldc2_w 212042562452272939
+      // 028: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 02b: dup_x2
+      // 02c: pop
+      // 02d: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 030: checkcast zD
+      // 033: goto 03a
+      // 036: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 039: athrow
+      // 03a: astore 2
+      // 03b: astore 1
+      // 03c: aload 0
+      // 03d: ldc2_w 433113400934995198
+      // 040: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 043: swap
+      // 044: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 047: ldc2_w 338548643484545888
+      // 04a: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 04d: swap
+      // 04e: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 051: ldc2_w 515525013030853953
+      // 054: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 057: swap
+      // 058: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 05b: invokestatic com/c.f ()[Ljava/lang/Object;
+      // 05e: ldc2_w 498856411508641826
+      // 061: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 064: dup_x2
+      // 065: pop
+      // 066: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 069: checkcast java/lang/String
+      // 06c: goto 073
+      // 06f: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 072: athrow
+      // 073: astore 3
+      // 074: aconst_null
+      // 075: astore 4
+      // 077: aload 2
+      // 078: aload 3
+      // 079: invokestatic com/c.a (Ljava/lang/Object;)[Ljava/lang/Object;
+      // 07c: ldc2_w 276206147642460148
+      // 07f: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 082: dup_x2
+      // 083: pop
+      // 084: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 087: checkcast tf_4
+      // 08a: goto 091
+      // 08d: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 090: athrow
+      // 091: astore 4
+      // 093: aload 0
+      // 094: ldc2_w 433113400934995198
+      // 097: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 09a: swap
+      // 09b: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 09e: ldc2_w 338548643484545888
+      // 0a1: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 0a4: swap
+      // 0a5: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 0a8: ldc2_w 305402254993059552
+      // 0ab: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 0ae: swap
+      // 0af: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 0b2: aload 4
+      // 0b4: invokestatic com/c.a (Ljava/lang/Object;)[Ljava/lang/Object;
+      // 0b7: ldc2_w 354921658348946569
+      // 0ba: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 0bd: dup_x2
+      // 0be: pop
+      // 0bf: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 0c2: pop
+      // 0c3: goto 0ca
+      // 0c6: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 0c9: athrow
+      // 0ca: goto 0f5
+      // 0cd: astore 4
+      // 0cf: aload 4
+      // 0d1: invokevirtual java/lang/Exception.printStackTrace ()V
+      // 0d4: aload 0
+      // 0d5: new java/lang/StringBuilder
+      // 0d8: dup
+      // 0d9: invokespecial java/lang/StringBuilder.<init> ()V
+      // 0dc: getstatic WG.a Ljava/lang/String;
+      // 0df: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 0e2: aload 4
+      // 0e4: invokevirtual java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      // 0e7: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // 0ea: ldc2_w 486747588508308577
+      // 0ed: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 0f0: dup_x2
+      // 0f1: pop
+      // 0f2: invokevirtual java/lang/reflect/Field.set (Ljava/lang/Object;Ljava/lang/Object;)V
+      // 0f5: aload 0
+      // 0f6: aload 1
+      // 0f7: ifnull 119
+      // 0fa: ldc2_w 486747588508308577
+      // 0fd: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 100: swap
+      // 101: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 104: checkcast java/lang/String
+      // 107: ifnull 14e
+      // 10a: goto 111
+      // 10d: invokestatic WG.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 110: athrow
+      // 111: aload 0
+      // 112: goto 119
+      // 115: invokestatic WG.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 118: athrow
+      // 119: ldc2_w 433113400934995198
+      // 11c: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 11f: swap
+      // 120: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 123: ldc2_w 338548643484545888
+      // 126: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 129: swap
+      // 12a: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 12d: ldc2_w 305402254993059552
+      // 130: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 133: swap
+      // 134: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 137: checkcast a3
+      // 13a: invokestatic javax/swing/SwingUtilities.getWindowAncestor (Ljava/awt/Component;)Ljava/awt/Window;
+      // 13d: aload 0
+      // 13e: ldc2_w 486747588508308577
+      // 141: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 144: swap
+      // 145: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 148: checkcast java/lang/String
+      // 14b: invokestatic javax/swing/JOptionPane.showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;)V
+      // 14e: return
+   }
 
-    @Override
-    public void run() {
-        block16: {
-            WG wG;
-            block15: {
-                String string;
-                zD zD2;
-                try {
-                    zD2 = (zD)this.e.z.d.N();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                zD zD3 = zD2;
-                int[] nArray = a3.I();
-                try {
-                    string = (String)this.e.z.G.k();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                String string2 = string;
-                try {
-                    tf_2 tf_22;
-                    tf_2 tf_23 = null;
-                    try {
-                        tf_22 = (tf_2)zD3.o(string2);
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    tf_23 = tf_22;
-                    try {
-                        this.e.z.d.x(tf_23);
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                }
-                catch (Exception exception) {
-                    exception.printStackTrace();
-                    this.A = a + exception;
-                }
-                try {
-                    try {
-                        wG = this;
-                        if (nArray == null) break block15;
-                        if ((String)wG.A == null) break block16;
-                    }
-                    catch (Exception exception) {
-                        throw WG.a(exception);
-                    }
-                    wG = this;
-                }
-                catch (Exception exception) {
-                    throw WG.a(exception);
-                }
+   private static Exception a(Exception var0) {
+      return var0;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "剑旺奮赠j_".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 32;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 32;
+         var10006 = var0;
+      } else {
+         var6 = 32;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 32;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 70;
+               break;
+            case 1:
+               var23 = 106;
+               break;
+            case 2:
+               var23 = 127;
+               break;
+            case 3:
+               var23 = 101;
+               break;
+            case 4:
+               var23 = 107;
+               break;
+            case 5:
+               var23 = 117;
+               break;
+            default:
+               var23 = 95;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            JOptionPane.showMessageDialog(SwingUtilities.getWindowAncestor((a3)wG.e.z.d), (String)this.A);
-        }
-    }
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u5251\u65fa\u596e\u8d60j_".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 32;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 70;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 106;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 127;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 101;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 107;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 117;
-                            break;
-                        }
-                        default: {
-                            n17 = 95;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

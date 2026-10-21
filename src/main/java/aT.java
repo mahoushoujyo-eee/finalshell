@@ -1,121 +1,121 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import java.util.ArrayList;
 import java.util.HashSet;
 
 public class aT {
-    qm_0 X;
-    int O = 0;
-    ArrayList m;
-    HashSet q;
+   Qm_2 X;
+   int O = 0;
+   ArrayList m;
+   HashSet q;
 
-    aT(qm_0 qm_02) {
-        this.X = qm_02;
-        this.m = new ArrayList();
-        this.q = new HashSet();
-    }
+   aT(Qm_2 var1) {
+      this.X = var1;
+      this.m = new ArrayList();
+      this.q = new HashSet();
+   }
 
-    synchronized void C(int n10) {
-        ky_2[] ky_2Array = qm_0.J();
-        boolean bl = this.q.contains(n10);
-        if (ky_2Array != null && !bl) {
-            this.m.add(n10);
-            bl = this.q.add(n10);
-        }
-    }
+   synchronized void C(int var1) {
+      com.ky_4[] var2 = Qm_2.J();
+      if (var2 != null && !this.q.contains(var1)) {
+         this.m.add(var1);
+         this.q.add(var1);
+      }
+   }
 
-    /*
-     * Handled impossible loop by adding 'first' condition
-     * Enabled aggressive block sorting
-     */
-    synchronized void t() {
-        block10: {
-            int n10;
-            int n11;
-            int n12;
-            ky_2[] ky_2Array;
-            int n13;
-            int n14;
-            int n15;
-            block8: {
-                int n16;
-                block9: {
-                    n15 = 0;
-                    n14 = cs_0.x;
-                    n13 = this.m.size();
-                    ky_2Array = qm_0.J();
-                    n12 = n13 / n14;
-                    int n17 = n13 % n14;
-                    if (ky_2Array != null) {
-                        if (n17 != 0) {
-                            // empty if block
-                        }
-                        n17 = ++n12;
-                    }
-                    if (ky_2Array != null) {
-                        if (n17 == 0) {
-                            n12 = 1;
-                        }
-                        n17 = n14;
-                    }
-                    n11 = n17;
-                    n16 = n13;
-                    if (ky_2Array == null) break block8;
-                    if (n16 > n11) break block9;
-                    this.X.J.Y(this.m);
-                    this.X.J.Y(this.m);
-                    if (ky_2Array != null) break block10;
-                }
-                n16 = n10 = 0;
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   synchronized void t() {
+      int var2 = 0;
+      int var3 = Cs_2.x;
+      com.ky_4[] var10000 = Qm_2.J();
+      int var4 = this.m.size();
+      com.ky_4[] var1 = var10000;
+      int var5 = var4 / var3;
+      int var9 = var4 % var3;
+      if (var1 != null) {
+         if (var9 != 0) {
+            var5++;
+         }
+
+         var9 = var5;
+      }
+
+      if (var1 != null) {
+         if (var9 == 0) {
+            var5 = 1;
+         }
+
+         var9 = var3;
+      }
+
+      int var6 = var9;
+      int var10 = var4;
+      if (var1 != null) {
+         if (var4 <= var6) {
+            this.X.J.Y(this.m);
+            this.X.J.Y(this.m);
+            if (var1 != null) {
+               return;
             }
-            boolean bl = true;
-            do {
-                block12: {
-                    int n18;
-                    int n19;
-                    block11: {
-                        if (bl && !(bl = false) && ky_2Array != null) continue;
-                        ArrayList arrayList = this.P(n15, n11, this.m);
-                        this.X.J.Y(arrayList);
-                        this.X.J.Y(arrayList);
-                        n19 = (n15 += n14) + n11;
-                        n18 = n13;
-                        if (ky_2Array == null) break block11;
-                        if (n19 <= n18) break block12;
-                        n19 = n13;
-                        n18 = (n12 - 1) * n14;
-                    }
-                    n11 = n19 - n18;
-                }
-                ++n10;
-            } while (n10 < n12);
-        }
-    }
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    ArrayList P(int var1_1, int var2_2, ArrayList var3_3) {
-        var5_4 = new ArrayList<Integer>();
-        var4_5 = qm_0.J();
-        var6_6 = 0;
-        if (var4_5 != null) ** GOTO lbl11
-        block0: while (true) {
-            v0 = var5_4;
-            do {
-                v0.add((Integer)var3_3.get(var1_1 + var6_6));
-                ++var6_6;
-lbl11:
-                // 2 sources
+         var10 = 0;
+      }
 
-                if (var6_6 < var2_2) continue block0;
-                v0 = var5_4;
-            } while (var4_5 == null);
-            break;
-        }
-        return v0;
-    }
+      int var7 = var10;
+      if (var1 == null || var7 < var5) {
+         do {
+            ArrayList var8 = this.P(var2, var6, this.m);
+            this.X.J.Y(var8);
+            this.X.J.Y(var8);
+            var2 += var3;
+            int var11 = var2 + var6;
+            if (var1 != null) {
+               if (var11 > var4) {
+                  var6 = var4 - (var5 - 1) * var3;
+                  var7++;
+               } else {
+                  var7++;
+               }
+            } else {
+               var6 = var11 - var4;
+               var7++;
+            }
+         } while (var7 < var5);
+      }
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   ArrayList P(int var1, int var2, ArrayList var3) {
+      com.ky_4[] var10000 = Qm_2.J();
+      ArrayList var5 = new ArrayList();
+      com.ky_4[] var4 = var10000;
+      int var6 = 0;
+      ArrayList var7;
+      if (var4 == null) {
+         var7 = var5;
+      } else if (var6 >= var2) {
+         var7 = var5;
+         if (var4 != null) {
+            return var5;
+         }
+      } else {
+         var7 = var5;
+      }
+
+      while (true) {
+         var7.add((Integer)var3.get(var1 + var6));
+         if (++var6 >= var2) {
+            var7 = var5;
+            if (var4 != null) {
+               return var5;
+            }
+         } else {
+            var7 = var5;
+         }
+      }
+   }
 }
+
+
+
+
 

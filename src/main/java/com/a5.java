@@ -1,28 +1,26 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.cy_1;
-import com.u2;
 import java.io.File;
 
-class a5
-implements Runnable {
-    final File g;
-    final u2 r;
+class a5 implements Runnable {
+   final File g;
+   final u2 r;
 
-    a5(u2 u22, File file) {
-        this.r = u22;
-        this.g = file;
-    }
+   a5(u2 var1, File var2) {
+      this.r = var1;
+      this.g = var2;
+   }
 
-    @Override
-    public void run() {
-        cy_1 cy_12 = this.r.d(this.g);
-        if (cy_12 != null) {
-            this.r.b(cy_12);
-        }
-    }
+   @Override
+   public void run() {
+      com.cY_3 var1 = this.r.d(this.g);
+      if (var1 != null) {
+         this.r.b(var1);
+      }
+   }
 }
+
+
+
+
 

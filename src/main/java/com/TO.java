@@ -1,223 +1,364 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.T4;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Insets;
 
-public class TO
-extends T4 {
-    protected int Y;
-    protected int s;
-    protected int d;
-    protected boolean Q;
-    protected boolean j;
+public class TO extends com.T4 {
+   protected int Y;
+   protected int s;
+   protected int d;
+   protected boolean Q;
+   protected boolean j;
 
-    public TO() {
-        this(0, 0, 0, true, false);
-    }
+   public TO() {
+      this(0, 0, 0, true, false);
+   }
 
-    public TO(boolean bl, boolean bl2) {
-        this(0, 0, 0, bl, bl2);
-    }
+   public TO(boolean var1, boolean var2) {
+      this(0, 0, 0, var1, var2);
+   }
 
-    public TO(int n10, int n11) {
-        this(0, n10, n11, true, false);
-    }
+   public TO(int var1, int var2) {
+      this(0, var1, var2, true, false);
+   }
 
-    public TO(int n10, int n11, int n12) {
-        this(n10, n11, n12, true, false);
-    }
+   public TO(int var1, int var2, int var3) {
+      this(var1, var2, var3, true, false);
+   }
 
-    public TO(int n10) {
-        this(n10, 0, 0, true, false);
-    }
+   public TO(int var1) {
+      this(var1, 0, 0, true, false);
+   }
 
-    public TO(int n10, boolean bl, boolean bl2) {
-        this(n10, 0, 0, bl, bl2);
-    }
+   public TO(int var1, boolean var2, boolean var3) {
+      this(var1, 0, 0, var2, var3);
+   }
 
-    public TO(int n10, int n11, boolean bl, boolean bl2) {
-        this(0, n10, n11, bl, bl2);
-    }
+   public TO(int var1, int var2, boolean var3, boolean var4) {
+      this(0, var1, var2, var3, var4);
+   }
 
-    public TO(int n10, int n11, int n12, boolean bl, boolean bl2) {
-        this.Y = n10;
-        this.s = n11;
-        this.d = n12;
-        this.Q = bl;
-        this.j = bl2;
-    }
+   public TO(int var1, int var2, int var3, boolean var4, boolean var5) {
+      this.Y = var1;
+      this.s = var2;
+      this.d = var3;
+      this.Q = var4;
+      this.j = var5;
+   }
 
-    public void J(int n10) {
-        this.s = n10;
-    }
+   public void J(int var1) {
+      this.s = var1;
+   }
 
-    public void Z(int n10) {
-        this.d = n10;
-    }
+   public void Z(int var1) {
+      this.d = var1;
+   }
 
-    public void r(boolean bl) {
-        this.j = bl;
-    }
+   public void r(boolean var1) {
+      this.j = var1;
+   }
 
-    public void t(boolean bl) {
-        this.Q = bl;
-    }
+   public void t(boolean var1) {
+      this.Q = var1;
+   }
 
-    public int m() {
-        return this.s;
-    }
+   public int m() {
+      return this.s;
+   }
 
-    public int V() {
-        return this.d;
-    }
+   public int V() {
+      return this.d;
+   }
 
-    public boolean d() {
-        return this.j;
-    }
+   public boolean d() {
+      return this.j;
+   }
 
-    public boolean i() {
-        return this.Q;
-    }
+   public boolean i() {
+      return this.Q;
+   }
 
-    @Override
-    public Dimension preferredLayoutSize(Container container) {
-        Container container2;
-        Dimension dimension;
-        block6: {
-            dimension = new Dimension(0, 0);
-            int n10 = T4.b();
-            int n11 = 0;
-            while (n11 < container.getComponentCount()) {
-                container2 = container;
-                if (n10 != 0) {
-                    Component component = container2.getComponent(n11);
-                    if (n10 != 0) {
-                        if (component.isVisible()) {
-                            Dimension dimension2 = component.getPreferredSize();
-                            Dimension dimension3 = dimension;
-                            int n12 = Math.max(dimension.width, dimension2.width);
-                            if (n10 != 0) {
-                                dimension3.width = n12;
-                                if (n11 > 0) {
-                                    dimension.height += this.d;
-                                }
-                                Dimension dimension4 = dimension;
-                                dimension3 = dimension4;
-                                n12 = dimension4.height + dimension2.height;
-                            }
-                            dimension3.height = n12;
+   @Override
+   public Dimension preferredLayoutSize(Container var1) {
+      int var10000 = com.T4.b();
+      Dimension var3 = new Dimension(0, 0);
+      int var2 = var10000;
+      int var4 = 0;
+
+      while (true) {
+         if (var4 < var1.getComponentCount()) {
+            var8 = var1;
+            if (var2 == 0) {
+               break;
+            }
+
+            Component var5 = var1.getComponent(var4);
+            if (var2 != 0) {
+               if (var5.isVisible()) {
+                  Dimension var6 = var5.getPreferredSize();
+                  Dimension var9 = var3;
+                  int var10001 = Math.max(var3.width, var6.width);
+                  if (var2 != 0) {
+                     var3.width = var10001;
+                     if (var4 > 0) {
+                        var3.height = var3.height + this.d;
+                     }
+
+                     var9 = var3;
+                     var10001 = var3.height + var6.height;
+                  }
+
+                  var9.height = var10001;
+               }
+
+               var4++;
+            }
+
+            if (var2 != 0) {
+               continue;
+            }
+         }
+
+         var8 = var1;
+         break;
+      }
+
+      Insets var7 = var8.getInsets();
+      var3.width = var3.width + var7.left + var7.right;
+      var3.height = var3.height + var7.top + var7.bottom;
+      return var3;
+   }
+
+   @Override
+   public Dimension minimumLayoutSize(Container var1) {
+      int var10000 = com.T4.O();
+      Dimension var3 = new Dimension(0, 0);
+      int var4 = 0;
+      int var2 = var10000;
+
+      while (true) {
+         if (var4 < var1.getComponentCount()) {
+            var8 = var1;
+            if (var2 != 0) {
+               break;
+            }
+
+            Component var5 = var1.getComponent(var4);
+            if (var2 == 0) {
+               if (var5.isVisible()) {
+                  Dimension var6 = var5.getMinimumSize();
+                  Dimension var9 = var3;
+                  int var10001 = Math.max(var3.width, var6.width);
+                  if (var2 == 0) {
+                     var3.width = var10001;
+                     if (var4 > 0) {
+                        var3.height = var3.height + this.d;
+                     }
+
+                     var9 = var3;
+                     var10001 = var3.height + var6.height;
+                  }
+
+                  var9.height = var10001;
+               }
+
+               var4++;
+            }
+
+            if (var2 == 0) {
+               continue;
+            }
+         }
+
+         var8 = var1;
+         break;
+      }
+
+      Insets var7 = var8.getInsets();
+      var3.width = var3.width + var7.left + var7.right;
+      var3.height = var3.height + var7.top + var7.bottom;
+      return var3;
+   }
+
+   @Override
+   public void layoutContainer(Container var1) {
+      int var2;
+      Insets var3;
+      Dimension var4;
+      int var5;
+      int var6;
+      int var7;
+      int var15;
+      label93: {
+         label96: {
+            var15 = com.T4.O();
+            var3 = var1.getInsets();
+            var2 = var15;
+            var4 = var1.getSize();
+            var5 = var4.width - (var3.left + var3.right);
+            var6 = var4.height - (var3.top + var3.bottom);
+            var7 = var1.getComponentCount();
+            var15 = this.j;
+            if (var2 == 0) {
+               if (this.j) {
+                  break label96;
+               }
+
+               var15 = this.Y;
+            }
+
+            if (var2 != 0) {
+               break label93;
+            }
+
+            if (var15 != 0) {
+               var15 = this.m(var1);
+               break label93;
+            }
+         }
+
+         var15 = 0;
+      }
+
+      int var8 = var15;
+      int var9 = 0;
+      int var10 = 0;
+
+      while (var10 < var7) {
+         Component var11 = var1.getComponent(var10);
+         if (var2 == 0) {
+            if (var11.isVisible()) {
+               Dimension var12;
+               label74: {
+                  var12 = var11.getPreferredSize();
+                  var15 = this.Q;
+                  if (var2 == 0) {
+                     if (this.Q) {
+                        var15 = var5;
+                        break label74;
+                     }
+
+                     var15 = var5;
+                  }
+
+                  var15 = Math.min(var15, var12.width);
+               }
+
+               int var13;
+               label68: {
+                  int var10001;
+                  label67: {
+                     label99: {
+                        var13 = var15;
+                        var15 = this.j;
+                        if (var2 == 0) {
+                           if (!this.j) {
+                              break label99;
+                           }
+
+                           var15 = var10;
                         }
-                        ++n11;
-                    }
-                    if (n10 != 0) continue;
-                }
-                break block6;
-            }
-            container2 = container;
-        }
-        Insets insets = container2.getInsets();
-        dimension.width += insets.left + insets.right;
-        dimension.height += insets.top + insets.bottom;
-        return dimension;
-    }
 
-    @Override
-    public Dimension minimumLayoutSize(Container container) {
-        Container container2;
-        Dimension dimension;
-        block6: {
-            dimension = new Dimension(0, 0);
-            int n10 = 0;
-            int n11 = T4.O();
-            while (n10 < container.getComponentCount()) {
-                container2 = container;
-                if (n11 == 0) {
-                    Component component = container2.getComponent(n10);
-                    if (n11 == 0) {
-                        if (component.isVisible()) {
-                            Dimension dimension2 = component.getMinimumSize();
-                            Dimension dimension3 = dimension;
-                            int n12 = Math.max(dimension.width, dimension2.width);
-                            if (n11 == 0) {
-                                dimension3.width = n12;
-                                if (n10 > 0) {
-                                    dimension.height += this.d;
-                                }
-                                Dimension dimension4 = dimension;
-                                dimension3 = dimension4;
-                                n12 = dimension4.height + dimension2.height;
-                            }
-                            dimension3.height = n12;
+                        var10001 = var7 - 1;
+                        if (var2 != 0) {
+                           break label67;
                         }
-                        ++n10;
-                    }
-                    if (n11 == 0) continue;
-                }
-                break block6;
-            }
-            container2 = container;
-        }
-        Insets insets = container2.getInsets();
-        dimension.width += insets.left + insets.right;
-        dimension.height += insets.top + insets.bottom;
-        return dimension;
-    }
 
-    /*
-     * Exception decompiling
-     */
-    @Override
-    public void layoutContainer(Container var1_1) {
-        /*
-         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
-         * 
-         * org.benf.cfr.reader.util.ConfusedCFRException: Statement already marked as first in another block
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.markFirstStatementInBlock(Op03SimpleStatement.java:461)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.Misc.markWholeBlock(Misc.java:251)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.considerAsSimpleIf(ConditionalRewriter.java:673)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.identifyNonjumpingConditionals(ConditionalRewriter.java:56)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:722)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
-         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
-         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
-         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
-         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
-         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
-         *     at org.benf.cfr.reader.Main.main(Main.java:54)
-         */
-        throw new IllegalStateException("Decompilation failed");
-    }
+                        if (var15 == var10001) {
+                           var15 = var6;
+                           var10001 = var9;
+                           break label67;
+                        }
+                     }
 
-    protected int m(Container container) {
-        int n10;
-        block4: {
-            int n11 = 0;
-            int n12 = 0;
-            int n13 = T4.b();
-            while (n12 < container.getComponentCount()) {
-                n11 += container.getComponent((int)n12).getPreferredSize().height;
-                if (n13 != 0) {
-                    n10 = n12;
-                    if (n13 == 0) break block4;
-                    if (n10 < container.getComponentCount() - 1) {
-                        n11 += this.d;
-                    }
-                    ++n12;
-                }
-                if (n13 != 0) continue;
+                     var15 = var12.height;
+                     break label68;
+                  }
+
+                  var15 -= var10001;
+               }
+
+               int var14;
+               label55: {
+                  var14 = var15;
+                  var15 = this.j;
+                  if (var2 == 0) {
+                     if (this.j) {
+                        var11.setBounds(var3.left, var3.top + var9, var13, var14);
+                        if (var2 == 0) {
+                           break label55;
+                        }
+                     }
+
+                     var15 = this.Y;
+                  }
+
+                  switch (var15) {
+                     case 1:
+                        var11.setBounds(var3.left, var3.top + var6 / 2 - var8 / 2 + var9, var13, var12.height);
+                        if (var2 == 0) {
+                           break;
+                        }
+                     case 2:
+                        var11.setBounds(var3.left, var4.height - var3.bottom - var8 + var9, var13, var12.height);
+                        if (var2 == 0) {
+                           break;
+                        }
+                     default:
+                        var11.setBounds(var3.left, var3.top + var9, var13, var12.height);
+                  }
+               }
+
+               var9 += var14 + this.d;
             }
-            n10 = n11;
-        }
-        return n10;
-    }
+
+            var10++;
+         }
+
+         if (var2 != 0) {
+            break;
+         }
+      }
+   }
+
+   protected int m(Container var1) {
+      int var3 = 0;
+      int var10000 = com.T4.b();
+      int var4 = 0;
+      int var2 = var10000;
+
+      while (true) {
+         if (var4 < var1.getComponentCount()) {
+            var3 += var1.getComponent(var4).getPreferredSize().height;
+            if (var2 != 0) {
+               var10000 = var4;
+               if (var2 == 0) {
+                  break;
+               }
+
+               if (var4 < var1.getComponentCount() - 1) {
+                  var3 += this.d;
+               }
+
+               var4++;
+            }
+
+            if (var2 != 0) {
+               continue;
+            }
+         }
+
+         var10000 = var3;
+         break;
+      }
+
+      return var10000;
+   }
 }
+
+
+
+
 

@@ -1,129 +1,134 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.HashSet;
 
 public class L9 {
-    String J;
-    String i;
-    boolean a;
-    boolean N;
-    boolean s;
-    int L;
-    zh_0 z;
-    KV c;
-    HashSet v;
-    private static int[] k;
+   String J;
+   String i;
+   boolean a;
+   boolean N;
+   boolean s;
+   int L;
+   zh_2 z;
+   KV c;
+   HashSet v;
+   private static int[] k;
 
-    public L9() {
-        this.v = new HashSet();
-    }
+   public L9() {
+      com.c.c(196959233489421900L).set(this, new HashSet());
+   }
 
-    public void c(String string) {
-        ((HashSet)this.v).add(string);
-    }
+   public void c(String var1) {
+      ((HashSet)com.c.c(196959233489421900L).get(this)).add(var1);
+   }
 
-    public int C() {
-        return ((HashSet)this.v).size();
-    }
+   public int C() {
+      return ((HashSet)com.c.c(196959233489421900L).get(this)).size();
+   }
 
-    public String o() {
-        return (String)this.J;
-    }
+   public String o() {
+      return (String)com.c.c(320742864705291608L).get(this);
+   }
 
-    public void u(String string) {
-        block5: {
-            String string2;
-            L9 l9;
-            block4: {
-                int[] nArray = L9.X();
-                l9 = this;
-                string2 = string;
-                if (nArray != null) break block4;
-                l9.J = string2;
-                if (string == null) break block5;
-                l9 = this;
-                string2 = string;
-            }
-            try {
-                l9.c(string2);
-            }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-        }
-    }
+   public void u(String var1) {
+      int[] var2 = X();
+      L9 var10000 = this;
+      String var10001 = var1;
+      if (var2 == null) {
+         com.c.c(320742864705291608L).set(this, var1);
+         if (var1 == null) {
+            return;
+         }
 
-    public String K() {
-        return (String)this.i;
-    }
+         var10000 = this;
+         var10001 = var1;
+      }
 
-    public void V(String string) {
-        this.i = string;
-    }
+      Object[] var5 = com.c.a(var10001);
+      Method var10003 = com.c.d(378849519055405264L);
+      Object[] var10002 = var5;
+      L9 var6 = var10000;
+      Method var4 = var10003;
 
-    public boolean y() {
-        return this.a;
-    }
+      try {
+         var4.invoke(var6, var10002);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
+   }
 
-    public void V(boolean bl) {
-        this.a = bl;
-    }
+   public String K() {
+      return (String)com.c.c(131287010932144231L).get(this);
+   }
 
-    public boolean s() {
-        return this.s;
-    }
+   public void V(String var1) {
+      com.c.c(131287010932144231L).set(this, var1);
+   }
 
-    public void g(boolean bl) {
-        this.s = bl;
-    }
+   public boolean y() {
+      return com.c.c(289896148011038420L).getBoolean(this);
+   }
 
-    public int O() {
-        return this.L;
-    }
+   public void V(boolean var1) {
+      com.c.c(289896148011038420L).setBoolean(this, var1);
+   }
 
-    public void l(int n10) {
-        this.L = n10;
-    }
+   public boolean s() {
+      return com.c.c(635527125572129349L).getBoolean(this);
+   }
 
-    public zh_0 F() {
-        return (zh_0)this.z;
-    }
+   public void g(boolean var1) {
+      com.c.c(635527125572129349L).setBoolean(this, var1);
+   }
 
-    public void P(zh_0 zh_02) {
-        this.z = zh_02;
-    }
+   public int O() {
+      return com.c.c(159321665489106190L).getInt(this);
+   }
 
-    public boolean i() {
-        return this.N;
-    }
+   public void l(int var1) {
+      com.c.c(159321665489106190L).setInt(this, var1);
+   }
 
-    public void y(boolean bl) {
-        this.N = bl;
-    }
+   public zh_2 F() {
+      return (zh_2)com.c.c(570637810374567417L).get(this);
+   }
 
-    public KV r() {
-        return (KV)this.c;
-    }
+   public void P(zh_2 var1) {
+      com.c.c(570637810374567417L).set(this, var1);
+   }
 
-    public void E(KV kV) {
-        this.c = kV;
-    }
+   public boolean i() {
+      return com.c.c(466904403992138213L).getBoolean(this);
+   }
 
-    public static void A(int[] nArray) {
-        k = nArray;
-    }
+   public void y(boolean var1) {
+      com.c.c(466904403992138213L).setBoolean(this, var1);
+   }
 
-    public static int[] X() {
-        return k;
-    }
+   public KV r() {
+      return (KV)com.c.c(419207569098345878L).get(this);
+   }
 
-    static {
-        if (L9.X() != null) {
-            L9.A(new int[3]);
-        }
-    }
+   public void E(KV var1) {
+      com.c.c(419207569098345878L).set(this, var1);
+   }
+
+   public static void A(int[] var0) {
+      k = var0;
+   }
+
+   public static int[] X() {
+      return k;
+   }
+
+   static {
+      if (X() != null) {
+         A(new int[3]);
+      }
+   }
 }
+
+
+
+
 

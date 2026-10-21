@@ -1,58 +1,70 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.h;
 
-import com.h.K;
-import com.h.c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class a
-implements ActionListener {
-    final c f;
+class a implements ActionListener {
+   final com.h.c f;
 
-    a(c c2) {
-        this.f = c2;
-    }
+   a(com.h.c var1) {
+      this.f = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block4: {
-            c c2;
-            block5: {
-                block6: {
-                    int n10;
-                    boolean bl;
-                    block2: {
-                        block3: {
-                            bl = K.V();
-                            n10 = c.P(this.f);
-                            if (bl) break block2;
-                            if (n10 == 0) break block3;
-                            n10 = c.C(this.f);
-                            if (bl) break block2;
-                            if (n10 >= c.S.size() - 1) break block3;
-                            c.N(this.f);
-                            c.T(this.f).repaint();
-                            if (!bl) break block4;
-                        }
-                        c2 = this.f;
-                        if (bl) break block5;
-                        n10 = c.P(c2) ? 1 : 0;
-                    }
-                    if (n10 != 0) break block6;
-                    c2 = this.f;
-                    if (bl) break block5;
-                    if (c.C(c2) <= 0) break block6;
-                    c.B(this.f);
-                    c.T(this.f).repaint();
-                    if (!bl) break block4;
-                }
-                c2 = this.f;
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      com.h.c var3;
+      label40: {
+         boolean var2;
+         var2 = com.h.K.V();
+         var10000 = com.h.c.P(this.f);
+         label36:
+         if (!var2) {
+            if (var10000 != 0) {
+               var10000 = com.h.c.C(this.f);
+               if (var2) {
+                  break label36;
+               }
+
+               if (var10000 < com.h.c.S.size() - 1) {
+                  com.h.c.N(this.f);
+                  com.h.c.T(this.f).repaint();
+                  if (!var2) {
+                     return;
+                  }
+               }
             }
-            c.t(c2).Y();
-        }
-    }
+
+            var3 = this.f;
+            if (var2) {
+               break label40;
+            }
+
+            var10000 = com.h.c.P(this.f);
+         }
+
+         if (var10000 == 0) {
+            var3 = this.f;
+            if (var2) {
+               break label40;
+            }
+
+            if (com.h.c.C(this.f) > 0) {
+               com.h.c.B(this.f);
+               com.h.c.T(this.f).repaint();
+               if (!var2) {
+                  return;
+               }
+            }
+         }
+
+         var3 = this.f;
+      }
+
+      com.h.c.t(var3).Y();
+   }
 }
+
+
+
+
 

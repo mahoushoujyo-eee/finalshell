@@ -1,217 +1,227 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
 import java.util.Objects;
-import org.F.c;
-import org.P;
-import org.b_0;
-import org.v.M;
-import org.v.RG;
-import org.v._S;
-import org.v._n_0;
-import org.v.h4;
-import org.v.hV;
-import org.v.h_1;
-import org.v.hd_0;
-import org.v.k_0;
-import org.v.nt_0;
-import org.v.u_1;
 
-class L
-extends u_1 {
-    @c
-    private h4[] S;
-    final k_0 r;
-    final _S g;
-    final hV[] q;
-    final boolean O;
-    final nt_0 M;
-    final int f;
-    final String T;
-    final boolean x;
-    final M I;
-    final h_1 h;
+class L extends u_3 {
+   @org.F.c
+   private h4[] S;
+   final K_2 r;
+   final _S g;
+   final hV[] q;
+   final boolean O;
+   final Nt_2 M;
+   final int f;
+   final String T;
+   final boolean x;
+   final org.v.M I;
+   final H_3 h;
 
-    L(h_1 h_12, hd_0 hd_02, k_0 k_02, _S _S2, hV[] hVArray, boolean bl, nt_0 nt_02, int n10, String string, boolean bl2, M m10) {
-        this.h = h_12;
-        this.r = k_02;
-        this.g = _S2;
-        this.q = hVArray;
-        this.O = bl;
-        this.M = nt_02;
-        this.f = n10;
-        this.T = string;
-        this.x = bl2;
-        this.I = m10;
-        hd_0 hd_03 = hd_02;
-        Objects.requireNonNull(hd_03);
-        super(hd_03);
-    }
+   L(H_3 var1, hd_2 var2, K_2 var3, _S var4, hV[] var5, boolean var6, Nt_2 var7, int var8, String var9, boolean var10, org.v.M var11) {
+      this.h = var1;
+      this.r = var3;
+      this.g = var4;
+      this.q = var5;
+      this.O = var6;
+      this.M = var7;
+      this.f = var8;
+      this.T = var9;
+      this.x = var10;
+      this.I = var11;
+      Objects.requireNonNull(var2);
+      super(var2);
+   }
 
-    @Override
-    public _S p() {
-        _S _S2;
-        block6: {
-            L l2;
-            block4: {
-                block5: {
-                    String[] stringArray = RG.C();
-                    try {
-                        try {
-                            l2 = this;
-                            if (stringArray == null) break block4;
-                            if (!(l2.r instanceof _n_0)) break block5;
-                        }
-                        catch (P p2) {
-                            throw L.a(p2);
-                        }
-                        _S2 = _S.PUBLIC;
-                        break block6;
-                    }
-                    catch (P p3) {
-                        throw L.a(p3);
-                    }
-                }
-                l2 = this;
-            }
-            _S2 = l2.g;
-        }
-        return _S2;
-    }
+   @Override
+   public _S p() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/v/RG.C ()[Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnull 24
+      // 09: getfield org/v/L.r Lorg/v/K_2;
+      // 0c: instanceof org/v/_n_2
+      // 0f: ifeq 23
+      // 12: goto 19
+      // 15: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 18: athrow
+      // 19: getstatic org/v/_S.PUBLIC Lorg/v/_S;
+      // 1c: goto 27
+      // 1f: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 22: athrow
+      // 23: aload 0
+      // 24: getfield org/v/L.g Lorg/v/_S;
+      // 27: areturn
+   }
 
-    /*
-     * Loose catch block
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    public h4[] f() {
-        h4[] h4Array;
-        block6: {
-            String[] stringArray = RG.C();
-            h4Array = this.S;
-            if (stringArray == null) return h4Array;
-            try {
-                if (h4Array == null) break block6;
-                return this.S;
-                catch (b_0 b_02) {
-                    throw L.a(b_02);
-                }
-            }
-            catch (b_0 b_03) {
-                throw L.a(b_03);
-            }
-        }
-        try {
-            this.S = h_1.R(this.h, this.q);
-            h4Array = this.S;
-            return h4Array;
-        }
-        catch (b_0 b_04) {
-            throw new P(this.r.Q(), null, b_04);
-        }
-    }
+   @Override
+   public h4[] f() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/v/RG.C ()[Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: getfield org/v/L.S [Lorg/v/h4;
+      // 08: aload 1
+      // 09: ifnull 2f
+      // 0c: ifnull 1f
+      // 0f: goto 16
+      // 12: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15: athrow
+      // 16: aload 0
+      // 17: getfield org/v/L.S [Lorg/v/h4;
+      // 1a: areturn
+      // 1b: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1e: athrow
+      // 1f: aload 0
+      // 20: aload 0
+      // 21: getfield org/v/L.h Lorg/v/H_3;
+      // 24: aload 0
+      // 25: getfield org/v/L.q [Lorg/v/hV;
+      // 28: invokestatic org/v/H_3.R (Lorg/v/H_3;[Lorg/v/hV;)[Lorg/v/h4;
+      // 2b: dup_x1
+      // 2c: putfield org/v/L.S [Lorg/v/h4;
+      // 2f: areturn
+      // 30: astore 2
+      // 31: new org/P
+      // 34: dup
+      // 35: aload 0
+      // 36: getfield org/v/L.r Lorg/v/K_2;
+      // 39: invokeinterface org/v/K_2.Q ()Lorg/I; 1
+      // 3e: aconst_null
+      // 3f: aload 2
+      // 40: invokespecial org/P.<init> (Lorg/I;Ljava/lang/String;Ljava/lang/Throwable;)V
+      // 43: athrow
+   }
 
-    @Override
-    public boolean b() {
-        boolean bl;
-        block6: {
-            block8: {
-                block7: {
-                    String[] stringArray = RG.C();
-                    try {
-                        try {
-                            try {
-                                bl = this.r instanceof _n_0;
-                                if (stringArray == null) break block6;
-                                if (bl) break block7;
-                            }
-                            catch (P p2) {
-                                throw L.a(p2);
-                            }
-                            bl = this.O;
-                            if (stringArray == null) break block6;
-                        }
-                        catch (P p3) {
-                            throw L.a(p3);
-                        }
-                        if (!bl) break block8;
-                    }
-                    catch (P p5) {
-                        throw L.a(p5);
-                    }
-                }
-                bl = true;
-                break block6;
-            }
-            bl = false;
-        }
-        return bl;
-    }
+   @Override
+   public boolean b() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/v/RG.C ()[Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: getfield org/v/L.r Lorg/v/K_2;
+      // 08: instanceof org/v/_n_2
+      // 0b: aload 1
+      // 0c: ifnull 33
+      // 0f: ifne 32
+      // 12: goto 19
+      // 15: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 18: athrow
+      // 19: aload 0
+      // 1a: getfield org/v/L.O Z
+      // 1d: aload 1
+      // 1e: ifnull 33
+      // 21: goto 28
+      // 24: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 27: athrow
+      // 28: ifeq 36
+      // 2b: goto 32
+      // 2e: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 31: athrow
+      // 32: bipush 1
+      // 33: goto 37
+      // 36: bipush 0
+      // 37: ireturn
+   }
 
-    @Override
-    public hd_0 P() throws b_0 {
-        return h_1.Q(this.h).f(h_1.c(this.h, this.M), this.f);
-    }
+   @Override
+   public hd_2 P() throws org.b_2 {
+      return H_3.Q(this.h).f(H_3.c(this.h, this.M), this.f);
+   }
 
-    @Override
-    public String h() {
-        return this.T;
-    }
+   @Override
+   public String h() {
+      return this.T;
+   }
 
-    @Override
-    @c
-    public Object J() throws b_0 {
-        Object object;
-        block10: {
-            block11: {
-                String[] stringArray = RG.C();
-                try {
-                    try {
-                        try {
-                            object = this;
-                            if (stringArray == null) break block10;
-                            if (!((L)object).x) break block11;
-                        }
-                        catch (b_0 b_02) {
-                            throw L.a(b_02);
-                        }
-                        object = this.I;
-                        if (stringArray == null) break block10;
-                    }
-                    catch (b_0 b_03) {
-                        throw L.a(b_03);
-                    }
-                    if (object == null) break block11;
-                }
-                catch (b_0 b_04) {
-                    throw L.a(b_04);
-                }
-                Object object2 = this.h.R(this.I);
-                try {
-                    try {
-                        object = object2;
-                        if (stringArray == null) break block10;
-                        if (object == h_1.K) break block11;
-                    }
-                    catch (b_0 b_05) {
-                        throw L.a(b_05);
-                    }
-                    return h_1.f(this.h, this.I, object2, this.P());
-                }
-                catch (b_0 b_06) {
-                    throw L.a(b_06);
-                }
-            }
-            object = h_1.K;
-        }
-        return object;
-    }
+   @org.F.c
+   @Override
+   public Object J() throws org.b_2 {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/v/RG.C ()[Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnull 65
+      // 09: getfield org/v/L.x Z
+      // 0c: ifeq 62
+      // 0f: goto 16
+      // 12: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15: athrow
+      // 16: aload 0
+      // 17: getfield org/v/L.I Lorg/v/M;
+      // 1a: aload 1
+      // 1b: ifnull 65
+      // 1e: goto 25
+      // 21: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 24: athrow
+      // 25: ifnull 62
+      // 28: goto 2f
+      // 2b: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2e: athrow
+      // 2f: aload 0
+      // 30: getfield org/v/L.h Lorg/v/H_3;
+      // 33: aload 0
+      // 34: getfield org/v/L.I Lorg/v/M;
+      // 37: invokevirtual org/v/H_3.R (Lorg/v/M;)Ljava/lang/Object;
+      // 3a: astore 2
+      // 3b: aload 2
+      // 3c: aload 1
+      // 3d: ifnull 65
+      // 40: getstatic org/v/H_3.K Ljava/lang/Object;
+      // 43: if_acmpeq 62
+      // 46: goto 4d
+      // 49: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 4c: athrow
+      // 4d: aload 0
+      // 4e: getfield org/v/L.h Lorg/v/H_3;
+      // 51: aload 0
+      // 52: getfield org/v/L.I Lorg/v/M;
+      // 55: aload 2
+      // 56: aload 0
+      // 57: invokevirtual org/v/L.P ()Lorg/v/hd_2;
+      // 5a: invokestatic org/v/H_3.f (Lorg/v/H_3;Lorg/v/_u_2;Ljava/lang/Object;Lorg/v/q_4;)Ljava/lang/Object;
+      // 5d: areturn
+      // 5e: invokestatic org/v/L.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 61: athrow
+      // 62: getstatic org/v/H_3.K Ljava/lang/Object;
+      // 65: areturn
+   }
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+   private static Exception a(Exception var0) {
+      return var0;
+   }
 }
+
+
+
+
 

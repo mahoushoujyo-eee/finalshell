@@ -1,8 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.Inet4Address;
@@ -14,14 +11,10 @@ import java.util.Random;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-import org.icmp4j.j;
 import org.pcap4j.core.NotOpenException;
 import org.pcap4j.core.PcapHandle;
 import org.pcap4j.core.PcapNativeException;
 import org.pcap4j.core.PcapNetworkInterface;
-import org.pcap4j.core.Pcaps;
-import org.pcap4j.packet.AbstractPacket;
 import org.pcap4j.packet.EthernetPacket;
 import org.pcap4j.packet.IcmpV4CommonPacket;
 import org.pcap4j.packet.IcmpV4DestinationUnreachablePacket;
@@ -36,1249 +29,1503 @@ import org.pcap4j.packet.namednumber.IcmpV4Type;
 import org.pcap4j.util.MacAddress;
 
 public class xQ {
-    public MacAddress T;
-    public MacAddress i;
-    public PcapHandle z;
-    String A;
-    int k;
-    String v;
-    PcapNetworkInterface B;
-    PcapNetworkInterface c;
-    private final int S = -1;
-    public int u;
-    public static d8_0 x;
-    private final int M;
-    LinkedBlockingQueue n;
-    Random I;
-    boolean G;
-    short V;
-    boolean E;
-    public boolean h;
-    boolean e;
-    public boolean R;
-    Inet4Address j;
-    public static ScheduledExecutorService W;
-    HashMap Q;
-    HashMap s;
-    HashSet t;
-    HashSet C;
-    private static String[] b;
-    private static final String[] d;
-    private static final String[] f;
-    private static final long[] a;
-    private static final Integer[] g;
-    private static final long[] l;
-    private static final Long[] m;
+   public MacAddress T;
+   public MacAddress i;
+   public PcapHandle z;
+   String A;
+   int k;
+   String v;
+   PcapNetworkInterface B;
+   PcapNetworkInterface c;
+   private final int S;
+   public int u;
+   public static d8_2 x;
+   private final int M;
+   LinkedBlockingQueue n;
+   Random I;
+   boolean G;
+   short V;
+   boolean E;
+   public boolean h;
+   boolean e;
+   public boolean R;
+   Inet4Address j;
+   public static ScheduledExecutorService W;
+   HashMap Q;
+   HashMap s;
+   HashSet t;
+   HashSet C;
+   private static String[] b;
+   private static final String[] d;
+   private static final String[] f;
+   private static final long[] a;
+   private static final Integer[] g;
+   private static final long[] l;
+   private static final Long[] m;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block38: {
-            block37: {
-                block36: {
-                    block35: {
-                        block34: {
-                            block33: {
-                                var21 = new String[7];
-                                var19_1 = 0;
-                                var18_2 = "WB\u00d5/Ed\u00b2R\u0083\u0087\u00c6\u0098\u00a4J(\u0018\u000b\u00a4\u00f5o\u00c2o\u0098Dq1\u00f2\u00faf\u0001\u00d8\u001c\u008f\u0084\u00a5Oi\u00f4\u00ad\u001e\u000f,4\u00ba\u00e1\u00a8\u00bd\u000fi4\u00e00tz\u00d7\u00f3\u000f\u00ed0\u00d7 \u00f5\u00de\u001c|\u00ee\u00be\u00f5\u00e5\u0090\u00ec\u0087\u0007\u00a4\u0093\u008f3\u00cb0I";
-                                var20_3 = "WB\u00d5/Ed\u00b2R\u0083\u0087\u00c6\u0098\u00a4J(\u0018\u000b\u00a4\u00f5o\u00c2o\u0098Dq1\u00f2\u00faf\u0001\u00d8\u001c\u008f\u0084\u00a5Oi\u00f4\u00ad\u001e\u000f,4\u00ba\u00e1\u00a8\u00bd\u000fi4\u00e00tz\u00d7\u00f3\u000f\u00ed0\u00d7 \u00f5\u00de\u001c|\u00ee\u00be\u00f5\u00e5\u0090\u00ec\u0087\u0007\u00a4\u0093\u008f3\u00cb0I".length();
-                                xQ.I(new String[1]);
-                                var17_4 = 15;
-                                var16_5 = -1;
-lbl8:
-                                // 2 sources
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var21 = new String[7];
+      String[] var10000 = new String[1];
+      int var19 = 0;
+      String var18 = "WBÕ/Ed²R\u0083\u0087Æ\u0098¤J(\u0018\u000b¤õoÂo\u0098Dq1òúf\u0001Ø\u001c\u008f\u0084¥Oiô\u00ad\u001e\u000f,4ºá¨½\u000fi4à0tz×ó\u000fí0× õÞ\u001c|î¾õå\u0090ì\u0087\u0007¤\u0093\u008f3Ë0I";
+      int var20 = "WBÕ/Ed²R\u0083\u0087Æ\u0098¤J(\u0018\u000b¤õoÂo\u0098Dq1òúf\u0001Ø\u001c\u008f\u0084¥Oiô\u00ad\u001e\u000f,4ºá¨½\u000fi4à0tz×ó\u000fí0× õÞ\u001c|î¾õå\u0090ì\u0087\u0007¤\u0093\u008f3Ë0I"
+         .length();
+      I(var10000);
+      char var17 = 15;
+      int var26 = -1;
 
-                                while (true) {
-                                    v0 = 23;
-                                    v1 = ++var16_5;
-                                    v2 = var18_2.substring(v1, v1 + var17_4);
-                                    v3 = -1;
-                                    break block33;
-                                    break;
-                                }
-lbl14:
-                                // 1 sources
+      label88:
+      while (true) {
+         byte var27 = 23;
+         String var10001 = var18.substring(++var26, var26 + var17);
+         byte var10002 = -1;
 
-                                while (true) {
-                                    var21[var19_1++] = v4.intern();
-                                    if ((var16_5 += var17_4) < var20_3) {
-                                        var17_4 = var18_2.charAt(var16_5);
-                                        ** continue;
-                                    }
-                                    var18_2 = "D\u00c7\u00fd\u0092\u00ab\u00af\b\u00c8\u00ea\u0001\u00b6\u00a2\u00a7\u001e\u000b";
-                                    var20_3 = "D\u00c7\u00fd\u0092\u00ab\u00af\b\u00c8\u00ea\u0001\u00b6\u00a2\u00a7\u001e\u000b".length();
-                                    var17_4 = 6;
-                                    var16_5 = -1;
-lbl23:
-                                    // 2 sources
+         while (true) {
+            label83: {
+               char[] var55 = var10001.toCharArray();
+               int var10004 = var55.length;
+               int var22 = 0;
+               byte var58 = var27;
+               var47 = var55;
+               int var35 = var10004;
+               byte var67;
+               char[] var75;
+               int var10006;
+               if (var10004 <= 1) {
+                  var75 = var55;
+                  var67 = var27;
+                  var10006 = var22;
+               } else {
+                  var58 = var27;
+                  var35 = var10004;
+                  if (var10004 <= var22) {
+                     break label83;
+                  }
 
-                                    while (true) {
-                                        v0 = 60;
-                                        v5 = ++var16_5;
-                                        v2 = var18_2.substring(v5, v5 + var17_4);
-                                        v3 = 0;
-                                        break block33;
-                                        break;
-                                    }
-                                    break;
-                                }
-lbl29:
-                                // 1 sources
+                  var75 = var55;
+                  var67 = var27;
+                  var10006 = var22;
+               }
 
-                                while (true) {
-                                    var21[var19_1++] = v4.intern();
-                                    if ((var16_5 += var17_4) < var20_3) {
-                                        var17_4 = var18_2.charAt(var16_5);
-                                        ** continue;
-                                    }
-                                    break block34;
-                                    break;
-                                }
-                            }
-                            v6 = v2.toCharArray();
-                            v7 = v6.length;
-                            var22_6 = 0;
-                            v8 = v0;
-                            v9 = v6;
-                            v10 = v7;
-                            if (v7 > 1) ** GOTO lbl86
-                            do {
-                                v11 = v8;
-                                v9 = v9;
-                                v12 = v9;
-                                v13 = v8;
-                                v14 = var22_6;
-                                while (true) {
-                                    switch (var22_6 % 7) {
-                                        case 0: {
-                                            v15 = 82;
-                                            break;
-                                        }
-                                        case 1: {
-                                            v15 = 75;
-                                            break;
-                                        }
-                                        case 2: {
-                                            v15 = 2;
-                                            break;
-                                        }
-                                        case 3: {
-                                            v15 = 24;
-                                            break;
-                                        }
-                                        case 4: {
-                                            v15 = 41;
-                                            break;
-                                        }
-                                        case 5: {
-                                            v15 = 101;
-                                            break;
-                                        }
-                                        default: {
-                                            v15 = 70;
-                                        }
-                                    }
-                                    v12[v14] = (char)(v12[v14] ^ (v13 ^ v15));
-                                    ++var22_6;
-                                    v8 = v11;
-                                    if (v11 != 0) break;
-                                    v11 = v8;
-                                    v9 = v9;
-                                    v14 = v8;
-                                    v12 = v9;
-                                    v13 = v8;
-                                }
-lbl86:
-                                // 2 sources
-
-                                v16 = v9;
-                                v10 = v10;
-                            } while (v10 > var22_6);
-                            v4 = new String(v16);
-                            switch (v3) {
-                                default: {
-                                    ** continue;
-                                }
-                                ** case 0:
-lbl96:
-                                // 1 sources
-
-                                ** continue;
-                            }
-                        }
-                        xQ.d = var21;
-                        xQ.f = new String[7];
-                        var8_7 = 2151814781096946377L;
-                        var14_8 = new long[9];
-                        var11_9 = 0;
-                        var12_10 = "O\u00cb%\u00ee\u0019\u0013\u00a5\u00b9KyP\u00fb\u00a5\n\u00b1\u0017\u00c0\u0087\u00acS.\u00afg\u0011;-\u00ff\u00bf\u001a6\u00fes\u0097J;\u00c4\u00b5\u00d8\u0002\u0005\u001e{\u00e6C\u00f2\u008e\u009a\u00daT\u00ad\u009eVz\u00f6\u0082\u00e3";
-                        var13_11 = "O\u00cb%\u00ee\u0019\u0013\u00a5\u00b9KyP\u00fb\u00a5\n\u00b1\u0017\u00c0\u0087\u00acS.\u00afg\u0011;-\u00ff\u00bf\u001a6\u00fes\u0097J;\u00c4\u00b5\u00d8\u0002\u0005\u001e{\u00e6C\u00f2\u008e\u009a\u00daT\u00ad\u009eVz\u00f6\u0082\u00e3".length();
-                        var10_12 = 0;
-                        while (true) {
-                            var15_13 = var12_10.substring(var10_12, var10_12 += 8).getBytes("ISO-8859-1");
-                            v17 = var14_8;
-                            v18 = var11_9++;
-                            v19 = ((long)var15_13[0] & 255L) << 56 | ((long)var15_13[1] & 255L) << 48 | ((long)var15_13[2] & 255L) << 40 | ((long)var15_13[3] & 255L) << 32 | ((long)var15_13[4] & 255L) << 24 | ((long)var15_13[5] & 255L) << 16 | ((long)var15_13[6] & 255L) << 8 | (long)var15_13[7] & 255L;
-                            v20 = -1;
-                            break block35;
-                            break;
-                        }
-lbl113:
-                        // 1 sources
-
-                        while (true) {
-                            v17[v18] = v21;
-                            if (var10_12 < var13_11) ** continue;
-                            var12_10 = "y\u00c9\u00ec\u00fe]\u00ae\u00d0\u00d0\u0018\u00ca\u00e7\u0012\u00d9|\u00fd\u0085";
-                            var13_11 = "y\u00c9\u00ec\u00fe]\u00ae\u00d0\u00d0\u0018\u00ca\u00e7\u0012\u00d9|\u00fd\u0085".length();
-                            var10_12 = 0;
-                            while (true) {
-                                var15_13 = var12_10.substring(var10_12, var10_12 += 8).getBytes("ISO-8859-1");
-                                v17 = var14_8;
-                                v18 = var11_9++;
-                                v19 = ((long)var15_13[0] & 255L) << 56 | ((long)var15_13[1] & 255L) << 48 | ((long)var15_13[2] & 255L) << 40 | ((long)var15_13[3] & 255L) << 32 | ((long)var15_13[4] & 255L) << 24 | ((long)var15_13[5] & 255L) << 16 | ((long)var15_13[6] & 255L) << 8 | (long)var15_13[7] & 255L;
-                                v20 = 0;
-                                break block35;
-                                break;
-                            }
-                            break;
-                        }
-lbl126:
-                        // 1 sources
-
-                        while (true) {
-                            v17[v18] = v21;
-                            if (var10_12 < var13_11) ** continue;
-                            break block36;
-                            break;
-                        }
-                    }
-                    v21 = v19 ^ var8_7;
-                    switch (v20) {
-                        default: {
-                            ** continue;
-                        }
-                        ** case 0:
-lbl137:
-                        // 1 sources
-
-                        ** continue;
-                    }
-                }
-                xQ.a = var14_8;
-                xQ.g = new Integer[9];
-                var0_14 = 7246504059379158680L;
-                var6_15 = new long[4];
-                var3_16 = 0;
-                var4_17 = ".ro\u0000\u00b7\u00bd\u0089\u00e9y\u00ad\u00ab5\u00e9\u0001\u00cc\u00a1";
-                var5_18 = ".ro\u0000\u00b7\u00bd\u0089\u00e9y\u00ad\u00ab5\u00e9\u0001\u00cc\u00a1".length();
-                var2_19 = 0;
-                while (true) {
-                    var7_20 = var4_17.substring(var2_19, var2_19 += 8).getBytes("ISO-8859-1");
-                    v22 = var6_15;
-                    v23 = var3_16++;
-                    v24 = ((long)var7_20[0] & 255L) << 56 | ((long)var7_20[1] & 255L) << 48 | ((long)var7_20[2] & 255L) << 40 | ((long)var7_20[3] & 255L) << 32 | ((long)var7_20[4] & 255L) << 24 | ((long)var7_20[5] & 255L) << 16 | ((long)var7_20[6] & 255L) << 8 | (long)var7_20[7] & 255L;
-                    v25 = -1;
-                    break block37;
-                    break;
-                }
-lbl154:
-                // 1 sources
-
-                while (true) {
-                    v22[v23] = v26;
-                    if (var2_19 < var5_18) ** continue;
-                    var4_17 = "L}\u0006[\u00b9\u00ed\u0081~hlB>2\u0096\bd";
-                    var5_18 = "L}\u0006[\u00b9\u00ed\u0081~hlB>2\u0096\bd".length();
-                    var2_19 = 0;
-                    while (true) {
-                        var7_20 = var4_17.substring(var2_19, var2_19 += 8).getBytes("ISO-8859-1");
-                        v22 = var6_15;
-                        v23 = var3_16++;
-                        v24 = ((long)var7_20[0] & 255L) << 56 | ((long)var7_20[1] & 255L) << 48 | ((long)var7_20[2] & 255L) << 40 | ((long)var7_20[3] & 255L) << 32 | ((long)var7_20[4] & 255L) << 24 | ((long)var7_20[5] & 255L) << 16 | ((long)var7_20[6] & 255L) << 8 | (long)var7_20[7] & 255L;
-                        v25 = 0;
-                        break block37;
+               while (true) {
+                  var75[var10006] = (char)(var75[var10006] ^ var67 ^ switch (var22 % 7) {
+                     case 0 -> 82;
+                     case 1 -> 75;
+                     case 2 -> 2;
+                     case 3 -> 24;
+                     case 4 -> 41;
+                     case 5 -> 101;
+                     default -> 70;
+                  });
+                  var22++;
+                  if (var58 == 0) {
+                     var10006 = var58;
+                     var75 = var47;
+                     var67 = var58;
+                  } else {
+                     if (var35 <= var22) {
                         break;
-                    }
-                    break;
-                }
-lbl167:
-                // 1 sources
+                     }
 
-                while (true) {
-                    v22[v23] = v26;
-                    if (var2_19 < var5_18) ** continue;
-                    break block38;
-                    break;
-                }
+                     var75 = var47;
+                     var67 = var58;
+                     var10006 = var22;
+                  }
+               }
             }
-            v26 = v24 ^ var0_14;
-            switch (v25) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl178:
-                // 1 sources
 
-                ** continue;
-            }
-        }
-        xQ.l = var6_15;
-        xQ.m = new Long[4];
-        xQ.x = new d8_0();
-        xQ.W = Executors.newSingleThreadScheduledExecutor();
-    }
+            String var60 = new String(var47).intern();
+            switch (var10002) {
+               case 0:
+                  var21[var19++] = var60;
+                  if ((var26 += var17) >= var20) {
+                     d = var21;
+                     f = new String[7];
+                     long var8 = 2151814781096946377L;
+                     long[] var14 = new long[9];
+                     int var11 = 0;
+                     String var12 = "OË%î\u0019\u0013¥¹KyPû¥\n±\u0017À\u0087¬S.¯g\u0011;-ÿ¿\u001a6þs\u0097J;ÄµØ\u0002\u0005\u001e{æCò\u008e\u009aÚT\u00ad\u009eVzö\u0082ã";
+                     int var13 = "OË%î\u0019\u0013¥¹KyPû¥\n±\u0017À\u0087¬S.¯g\u0011;-ÿ¿\u001a6þs\u0097J;ÄµØ\u0002\u0005\u001e{æCò\u008e\u009aÚT\u00ad\u009eVzö\u0082ã"
+                        .length();
+                     byte var10 = 0;
 
-    public xQ(boolean bl, boolean bl2) {
-        block11: {
-            boolean bl3;
-            block12: {
-                block13: {
-                    String[] stringArray;
-                    block9: {
-                        block10: {
-                            this.A = "5.5.5.5";
-                            stringArray = xQ.B();
-                            this.k = xQ.a(28505, 1083944260511327002L);
-                            this.v = "";
-                            this.S = -1;
-                            this.u = 1;
-                            this.M = xQ.a(13056, 1352336992268664652L);
-                            this.n = new LinkedBlockingQueue();
-                            this.I = new Random();
-                            this.G = false;
-                            this.E = true;
-                            this.h = false;
-                            this.e = false;
-                            this.R = true;
-                            this.j = null;
-                            try {
-                                bl3 = (Boolean)vk_0.s();
-                            }
-                            catch (InvocationTargetException invocationTargetException) {
-                                throw invocationTargetException.getTargetException();
-                            }
-                            if (stringArray == null) break block9;
-                            if (!bl3) break block10;
-                            this.u = 1;
-                            if (stringArray != null) break block11;
+                     label62:
+                     while (true) {
+                        byte var37 = var10;
+                        var10 += 8;
+                        byte[] var15 = var12.substring(var37, var10).getBytes("ISO-8859-1");
+                        long[] var29 = var14;
+                        int var38 = var11++;
+                        long var51 = ((long)var15[0] & 255L) << 56
+                           | ((long)var15[1] & 255L) << 48
+                           | ((long)var15[2] & 255L) << 40
+                           | ((long)var15[3] & 255L) << 32
+                           | ((long)var15[4] & 255L) << 24
+                           | ((long)var15[5] & 255L) << 16
+                           | ((long)var15[6] & 255L) << 8
+                           | (long)var15[7] & 255L;
+                        byte var61 = -1;
+
+                        while (true) {
+                           long var72 = var51 ^ var8;
+                           switch (var61) {
+                              case 0:
+                                 var29[var38] = var72;
+                                 if (var10 >= var13) {
+                                    a = var14;
+                                    g = new Integer[9];
+                                    long var0 = 7246504059379158680L;
+                                    long[] var6 = new long[4];
+                                    int var3 = 0;
+                                    String var4 = ".ro\u0000·½\u0089éy\u00ad«5é\u0001Ì¡";
+                                    int var5 = ".ro\u0000·½\u0089éy\u00ad«5é\u0001Ì¡".length();
+                                    byte var2 = 0;
+
+                                    label52:
+                                    while (true) {
+                                       byte var40 = var2;
+                                       var2 += 8;
+                                       byte[] var7 = var4.substring(var40, var2).getBytes("ISO-8859-1");
+                                       long[] var30 = var6;
+                                       int var41 = var3++;
+                                       long var53 = ((long)var7[0] & 255L) << 56
+                                          | ((long)var7[1] & 255L) << 48
+                                          | ((long)var7[2] & 255L) << 40
+                                          | ((long)var7[3] & 255L) << 32
+                                          | ((long)var7[4] & 255L) << 24
+                                          | ((long)var7[5] & 255L) << 16
+                                          | ((long)var7[6] & 255L) << 8
+                                          | (long)var7[7] & 255L;
+                                       byte var63 = -1;
+
+                                       while (true) {
+                                          var72 = var53 ^ var0;
+                                          switch (var63) {
+                                             case 0:
+                                                var30[var41] = var72;
+                                                if (var2 >= var5) {
+                                                   l = var6;
+                                                   m = new Long[4];
+                                                   x = new d8_2();
+                                                   W = Executors.newSingleThreadScheduledExecutor();
+                                                   return;
+                                                }
+                                                break;
+                                             default:
+                                                var30[var41] = var72;
+                                                if (var2 < var5) {
+                                                   continue label52;
+                                                }
+
+                                                var4 = "L}\u0006[¹í\u0081~hlB>2\u0096\bd";
+                                                var5 = "L}\u0006[¹í\u0081~hlB>2\u0096\bd".length();
+                                                var2 = 0;
+                                          }
+
+                                          byte var42 = var2;
+                                          var2 += 8;
+                                          var7 = var4.substring(var42, var2).getBytes("ISO-8859-1");
+                                          var30 = var6;
+                                          var41 = var3++;
+                                          var53 = ((long)var7[0] & 255L) << 56
+                                             | ((long)var7[1] & 255L) << 48
+                                             | ((long)var7[2] & 255L) << 40
+                                             | ((long)var7[3] & 255L) << 32
+                                             | ((long)var7[4] & 255L) << 24
+                                             | ((long)var7[5] & 255L) << 16
+                                             | ((long)var7[6] & 255L) << 8
+                                             | (long)var7[7] & 255L;
+                                          var63 = 0;
+                                       }
+                                    }
+                                 }
+                                 break;
+                              default:
+                                 var29[var38] = var72;
+                                 if (var10 < var13) {
+                                    continue label62;
+                                 }
+
+                                 var12 = "yÉìþ]®ÐÐ\u0018Êç\u0012Ù|ý\u0085";
+                                 var13 = "yÉìþ]®ÐÐ\u0018Êç\u0012Ù|ý\u0085".length();
+                                 var10 = 0;
+                           }
+
+                           byte var39 = var10;
+                           var10 += 8;
+                           var15 = var12.substring(var39, var10).getBytes("ISO-8859-1");
+                           var29 = var14;
+                           var38 = var11++;
+                           var51 = ((long)var15[0] & 255L) << 56
+                              | ((long)var15[1] & 255L) << 48
+                              | ((long)var15[2] & 255L) << 40
+                              | ((long)var15[3] & 255L) << 32
+                              | ((long)var15[4] & 255L) << 24
+                              | ((long)var15[5] & 255L) << 16
+                              | ((long)var15[6] & 255L) << 8
+                              | (long)var15[7] & 255L;
+                           var61 = 0;
                         }
-                        try {
-                            bl3 = (Boolean)vk_0.f();
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                    }
-                    if (stringArray == null) break block12;
-                    if (!bl3) break block13;
-                    this.u = 0;
-                    if (stringArray != null) break block11;
-                }
-                try {
-                    bl3 = (Boolean)vk_0.g();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-            }
-            if (bl3) {
-                this.u = 1;
-            }
-        }
-        this.Q = new HashMap();
-        this.s = new HashMap();
-        this.t = new HashSet();
-        this.C = new HashSet();
-        this.G = bl;
-        this.R = bl2;
-    }
+                     }
+                  }
 
-    public void u() throws Exception {
-        try {
-            x.V((Object)new do_0(this), xQ.a(20555, 2451780543939697678L));
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+                  var17 = var18.charAt(var26);
+                  break;
+               default:
+                  var21[var19++] = var60;
+                  if ((var26 += var17) < var20) {
+                     var17 = var18.charAt(var26);
+                     continue label88;
+                  }
 
-    /*
-     * Unable to fully structure code
-     */
-    void x() {
-        var2_1 = null;
-        var1_2 = xQ.B();
-        try {
-            var2_1 = Pcaps.findAllDevs();
-        }
-        catch (PcapNativeException var3_3) {
+                  var18 = "DÇý\u0092«¯\bÈê\u0001¶¢§\u001e\u000b";
+                  var20 = "DÇý\u0092«¯\bÈê\u0001¶¢§\u001e\u000b".length();
+                  var17 = 6;
+                  var26 = -1;
+            }
+
+            var27 = 60;
+            var10001 = var18.substring(++var26, var26 + var17);
+            var10002 = 0;
+         }
+      }
+   }
+
+   public xQ(boolean var1, boolean var2) {
+      String[] var10000 = B();
+      this.A = a(7881, 20547);
+      String[] var3 = var10000;
+      this.k = a(28505, 1083944260511327002L);
+      this.v = "";
+      this.S = -1;
+      this.u = 1;
+      this.M = a(13056, 1352336992268664652L);
+      this.n = new LinkedBlockingQueue();
+      this.I = new Random();
+      this.G = false;
+      this.E = true;
+      this.h = false;
+      this.e = false;
+      this.R = true;
+      this.j = null;
+      Object[] var7 = com.c.f();
+      Method var8 = com.c.d(253808553645062345L);
+      Object[] var19 = var7;
+      Object var14 = null;
+
+      try {
+         var9 = (Boolean)var8.invoke(var14, var19);
+      } catch (InvocationTargetException var6) {
+         throw var6.getTargetException();
+      }
+
+      label51: {
+         if (var3 != null) {
+            if (var9) {
+               this.u = 1;
+               if (var3 != null) {
+                  break label51;
+               }
+            }
+
+            Object[] var10 = com.c.f();
+            Method var11 = com.c.d(561847341732101275L);
+            var19 = var10;
+            var14 = null;
+
+            try {
+               var9 = (Boolean)var11.invoke(var14, var19);
+            } catch (InvocationTargetException var5) {
+               throw var5.getTargetException();
+            }
+         }
+
+         if (var3 != null) {
+            if (var9) {
+               this.u = 0;
+               if (var3 != null) {
+                  break label51;
+               }
+            }
+
+            Object[] var12 = com.c.f();
+            Method var13 = com.c.d(454647487873911743L);
+            var19 = var12;
+            var14 = null;
+
+            try {
+               var9 = (Boolean)var13.invoke(var14, var19);
+            } catch (InvocationTargetException var4) {
+               throw var4.getTargetException();
+            }
+         }
+
+         if (var9) {
+            this.u = 1;
+         }
+      }
+
+      this.Q = new HashMap();
+      this.s = new HashMap();
+      this.t = new HashSet();
+      this.C = new HashSet();
+      this.G = var1;
+      this.R = var2;
+   }
+
+   public void u() throws Exception {
+      d8_2 var10000 = x;
+      Object[] var10001 = com.c.a(new Do_2(this), a(20555, 2451780543939697678L));
+      Method var10003 = com.c.d(201859364639460244L);
+      Object[] var10002 = var10001;
+      d8_2 var3 = var10000;
+      Method var2 = var10003;
+
+      try {
+         var2.invoke(var3, var10002);
+      } catch (InvocationTargetException var1) {
+         throw var1.getTargetException();
+      }
+   }
+
+   void x() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic xQ.B ()[Ljava/lang/String;
+      // 03: aconst_null
+      // 04: astore 2
+      // 05: astore 1
+      // 06: invokestatic org/pcap4j/core/Pcaps.findAllDevs ()Ljava/util/List;
+      // 09: astore 2
+      // 0a: goto 0f
+      // 0d: astore 3
+      // 0e: return
+      // 0f: aload 2
+      // 10: invokeinterface java/util/List.iterator ()Ljava/util/Iterator; 1
+      // 15: astore 4
+      // 17: aload 1
+      // 18: ifnonnull 9e
+      // 1b: aload 4
+      // 1d: invokeinterface java/util/Iterator.next ()Ljava/lang/Object; 1
+      // 22: checkcast org/pcap4j/core/PcapNetworkInterface
+      // 25: astore 3
+      // 26: aload 0
+      // 27: getfield xQ.t Ljava/util/HashSet;
+      // 2a: aload 3
+      // 2b: invokevirtual org/pcap4j/core/PcapNetworkInterface.getName ()Ljava/lang/String;
+      // 2e: invokevirtual java/util/HashSet.contains (Ljava/lang/Object;)Z
+      // 31: aload 1
+      // 32: ifnull a5
+      // 35: ifne 9e
+      // 38: aload 0
+      // 39: getfield xQ.C Ljava/util/HashSet;
+      // 3c: aload 3
+      // 3d: invokevirtual org/pcap4j/core/PcapNetworkInterface.getName ()Ljava/lang/String;
+      // 40: invokevirtual java/util/HashSet.contains (Ljava/lang/Object;)Z
+      // 43: aload 1
+      // 44: ifnull a5
+      // 47: goto 4e
+      // 4a: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 4d: athrow
+      // 4e: ifne 9e
+      // 51: goto 58
+      // 54: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 57: athrow
+      // 58: aload 0
+      // 59: aload 3
+      // 5a: invokevirtual xQ.D (Lorg/pcap4j/core/PcapNetworkInterface;)V
+      // 5d: aload 0
+      // 5e: getfield xQ.t Ljava/util/HashSet;
+      // 61: aload 3
+      // 62: invokevirtual org/pcap4j/core/PcapNetworkInterface.getName ()Ljava/lang/String;
+      // 65: invokevirtual java/util/HashSet.add (Ljava/lang/Object;)Z
+      // 68: pop
+      // 69: goto 9e
+      // 6c: astore 5
+      // 6e: aload 0
+      // 6f: getfield xQ.C Ljava/util/HashSet;
+      // 72: aload 3
+      // 73: invokevirtual org/pcap4j/core/PcapNetworkInterface.getName ()Ljava/lang/String;
+      // 76: invokevirtual java/util/HashSet.add (Ljava/lang/Object;)Z
+      // 79: pop
+      // 7a: aload 5
+      // 7c: invokevirtual java/lang/Exception.getMessage ()Ljava/lang/String;
+      // 7f: sipush 7880
+      // 82: sipush 16312
+      // 85: invokestatic xQ.a (II)Ljava/lang/String;
+      // 88: invokevirtual java/lang/String.contains (Ljava/lang/CharSequence;)Z
+      // 8b: pop
+      // 8c: aload 5
+      // 8e: invokevirtual java/lang/Exception.getMessage ()Ljava/lang/String;
+      // 91: sipush 7886
+      // 94: sipush -11627
+      // 97: invokestatic xQ.a (II)Ljava/lang/String;
+      // 9a: invokevirtual java/lang/String.contains (Ljava/lang/CharSequence;)Z
+      // 9d: pop
+      // 9e: aload 4
+      // a0: invokeinterface java/util/Iterator.hasNext ()Z 1
+      // a5: ifne 1b
+      // a8: aload 1
+      // a9: ifnull 9e
+      // ac: return
+   }
+
+   void D(PcapNetworkInterface var1) throws PcapNativeException, NotOpenException {
+      PcapHandle var2 = var1.openLive(a(19596, 7166196519583858892L), this.r(var1), this.u);
+      String var3 = "";
+      String var10000 = this.A;
+      var3 = a(7884, -26074) + var10000 + ")";
+      Kg_2 var4 = new Kg_2(this, var1, var2);
+      Jj_2 var5 = new Jj_2(this, var2, var4, var1);
+      var5.start();
+   }
+
+   PcapNetworkInterface.PromiscuousMode r(PcapNetworkInterface var1) {
+      PcapNetworkInterface.PromiscuousMode var2 = null;
+      String var3 = (var1.getDescription() + ":" + var1.getName()).toLowerCase();
+      if (var3.contains(a(7883, 15128))) {
+         var2 = PcapNetworkInterface.PromiscuousMode.NONPROMISCUOUS;
+      } else {
+         var2 = PcapNetworkInterface.PromiscuousMode.PROMISCUOUS;
+      }
+
+      return var2;
+   }
+
+   public org.icmp4j.j E(InetAddress param1, int param2, int param3, Q0 param4) throws PcapNativeException, NotOpenException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic xQ.B ()[Ljava/lang/String;
+      // 03: aconst_null
+      // 04: astore 6
+      // 06: astore 5
+      // 08: aload 0
+      // 09: getfield xQ.i Lorg/pcap4j/util/MacAddress;
+      // 0c: ifnonnull 24
+      // 0f: new org/pcap4j/core/NotOpenException
+      // 12: dup
+      // 13: sipush 7885
+      // 16: sipush 8237
+      // 19: invokestatic xQ.a (II)Ljava/lang/String;
+      // 1c: invokespecial org/pcap4j/core/NotOpenException.<init> (Ljava/lang/String;)V
+      // 1f: athrow
+      // 20: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 23: athrow
+      // 24: aload 1
+      // 25: aload 5
+      // 27: ifnull 3f
+      // 2a: instanceof java/net/Inet4Address
+      // 2d: ifeq bd
+      // 30: goto 37
+      // 33: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 36: athrow
+      // 37: aload 1
+      // 38: goto 3f
+      // 3b: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3e: athrow
+      // 3f: checkcast java/net/Inet4Address
+      // 42: astore 7
+      // 44: aload 0
+      // 45: getfield xQ.i Lorg/pcap4j/util/MacAddress;
+      // 48: aload 0
+      // 49: getfield xQ.T Lorg/pcap4j/util/MacAddress;
+      // 4c: aload 0
+      // 4d: getfield xQ.j Ljava/net/Inet4Address;
+      // 50: aload 7
+      // 52: iload 2
+      // 53: iload 3
+      // 54: invokestatic gQ.A (Lorg/pcap4j/util/MacAddress;Lorg/pcap4j/util/MacAddress;Ljava/net/Inet4Address;Ljava/net/Inet4Address;II)Lorg/pcap4j/packet/Packet;
+      // 57: astore 8
+      // 59: new org/icmp4j/j
+      // 5c: dup
+      // 5d: invokespecial org/icmp4j/j.<init> ()V
+      // 60: astore 6
+      // 62: aload 6
+      // 64: aload 4
+      // 66: invokevirtual org/icmp4j/j.a (LQ0;)V
+      // 69: aload 6
+      // 6b: aload 1
+      // 6c: invokevirtual org/icmp4j/j.f (Ljava/net/InetAddress;)V
+      // 6f: aload 6
+      // 71: iload 2
+      // 72: invokevirtual org/icmp4j/j.q (I)V
+      // 75: aload 6
+      // 77: invokevirtual org/icmp4j/j.H ()I
+      // 7a: invokedynamic makeConcatWithConstants (I)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001" ]
+      // 7f: astore 9
+      // 81: aload 0
+      // 82: getfield xQ.s Ljava/util/HashMap;
+      // 85: aload 9
+      // 87: aload 6
+      // 89: invokevirtual java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      // 8c: pop
+      // 8d: getstatic xQ.W Ljava/util/concurrent/ScheduledExecutorService;
+      // 90: new O5
+      // 93: dup
+      // 94: aload 0
+      // 95: aload 9
+      // 97: invokespecial O5.<init> (LxQ;Ljava/lang/String;)V
+      // 9a: sipush 17691
+      // 9d: ldc2_w 935767074703057388
+      // a0: invokestatic xQ.b (IJ)J
+      // a3: getstatic java/util/concurrent/TimeUnit.MILLISECONDS Ljava/util/concurrent/TimeUnit;
+      // a6: invokeinterface java/util/concurrent/ScheduledExecutorService.schedule (Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture; 5
+      // ab: pop
+      // ac: aload 0
+      // ad: getfield xQ.z Lorg/pcap4j/core/PcapHandle;
+      // b0: aload 8
+      // b2: invokevirtual org/pcap4j/core/PcapHandle.sendPacket (Lorg/pcap4j/packet/Packet;)V
+      // b5: aload 6
+      // b7: invokestatic java/lang/System.currentTimeMillis ()J
+      // ba: invokevirtual org/icmp4j/j.R (J)V
+      // bd: aload 6
+      // bf: areturn
+   }
+
+   public org.icmp4j.j p(InetAddress param1, int param2, Q0 param3) throws PcapNativeException, NotOpenException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic xQ.B ()[Ljava/lang/String;
+      // 03: aconst_null
+      // 04: astore 5
+      // 06: astore 4
+      // 08: aload 0
+      // 09: getfield xQ.i Lorg/pcap4j/util/MacAddress;
+      // 0c: ifnonnull 24
+      // 0f: new org/pcap4j/core/NotOpenException
+      // 12: dup
+      // 13: sipush 7887
+      // 16: sipush 22357
+      // 19: invokestatic xQ.a (II)Ljava/lang/String;
+      // 1c: invokespecial org/pcap4j/core/NotOpenException.<init> (Ljava/lang/String;)V
+      // 1f: athrow
+      // 20: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 23: athrow
+      // 24: aload 1
+      // 25: aload 4
+      // 27: ifnull 3f
+      // 2a: instanceof java/net/Inet4Address
+      // 2d: ifeq c3
+      // 30: goto 37
+      // 33: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 36: athrow
+      // 37: aload 1
+      // 38: goto 3f
+      // 3b: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3e: athrow
+      // 3f: checkcast java/net/Inet4Address
+      // 42: astore 6
+      // 44: aload 0
+      // 45: getfield xQ.i Lorg/pcap4j/util/MacAddress;
+      // 48: aload 0
+      // 49: getfield xQ.T Lorg/pcap4j/util/MacAddress;
+      // 4c: aload 0
+      // 4d: getfield xQ.j Ljava/net/Inet4Address;
+      // 50: aload 6
+      // 52: iload 2
+      // 53: invokestatic gQ.S (Lorg/pcap4j/util/MacAddress;Lorg/pcap4j/util/MacAddress;Ljava/net/Inet4Address;Ljava/net/Inet4Address;I)Lorg/pcap4j/packet/Packet;
+      // 56: astore 7
+      // 58: new org/icmp4j/j
+      // 5b: dup
+      // 5c: invokespecial org/icmp4j/j.<init> ()V
+      // 5f: astore 5
+      // 61: aload 5
+      // 63: aload 3
+      // 64: invokevirtual org/icmp4j/j.a (LQ0;)V
+      // 67: aload 5
+      // 69: aload 1
+      // 6a: invokevirtual org/icmp4j/j.f (Ljava/net/InetAddress;)V
+      // 6d: aload 5
+      // 6f: iload 2
+      // 70: invokevirtual org/icmp4j/j.q (I)V
+      // 73: aload 5
+      // 75: invokevirtual org/icmp4j/j.Y ()Ljava/net/InetAddress;
+      // 78: invokevirtual java/net/InetAddress.getHostAddress ()Ljava/lang/String;
+      // 7b: aload 5
+      // 7d: invokevirtual org/icmp4j/j.H ()I
+      // 80: invokedynamic makeConcatWithConstants (Ljava/lang/String;I)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001:\u0001" ]
+      // 85: astore 8
+      // 87: aload 0
+      // 88: getfield xQ.Q Ljava/util/HashMap;
+      // 8b: aload 8
+      // 8d: aload 5
+      // 8f: invokevirtual java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      // 92: pop
+      // 93: getstatic xQ.W Ljava/util/concurrent/ScheduledExecutorService;
+      // 96: new Jn_2
+      // 99: dup
+      // 9a: aload 0
+      // 9b: aload 8
+      // 9d: invokespecial Jn_2.<init> (LxQ;Ljava/lang/String;)V
+      // a0: sipush 19456
+      // a3: ldc2_w 2949232511153416438
+      // a6: invokestatic xQ.b (IJ)J
+      // a9: getstatic java/util/concurrent/TimeUnit.MILLISECONDS Ljava/util/concurrent/TimeUnit;
+      // ac: invokeinterface java/util/concurrent/ScheduledExecutorService.schedule (Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture; 5
+      // b1: pop
+      // b2: aload 0
+      // b3: getfield xQ.z Lorg/pcap4j/core/PcapHandle;
+      // b6: aload 7
+      // b8: invokevirtual org/pcap4j/core/PcapHandle.sendPacket (Lorg/pcap4j/packet/Packet;)V
+      // bb: aload 5
+      // bd: invokestatic java/lang/System.currentTimeMillis ()J
+      // c0: invokevirtual org/icmp4j/j.R (J)V
+      // c3: aload 5
+      // c5: areturn
+   }
+
+   // $VF: Handled exception range with multiple entry points by splitting it
+   // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
+   public void i(Packet var1) {
+      String[] var2 = B();
+
+      try {
+         EthernetPacket var3 = (EthernetPacket)var1;
+         IpV4Packet var4 = null;
+
+         label67: {
+            label66: {
+               Packet var15;
+               label65: {
+                  label64: {
+                     try {
+                        var10000 = this.e;
+                        if (var2 == null) {
+                           break label64;
+                        }
+
+                        if (this.e) {
+                           break label66;
+                        }
+                     } catch (IllegalRawDataException var9) {
+                        throw a(var9);
+                     }
+
+                     try {
+                        var15 = var3.getPayload();
+                        if (var2 == null) {
+                           break label65;
+                        }
+
+                        var10000 = var15 instanceof IpV4Packet;
+                     } catch (IllegalRawDataException var8) {
+                        throw a(var8);
+                     }
+                  }
+
+                  try {
+                     if (!var10000) {
+                        break label67;
+                     }
+
+                     var15 = var3.getPayload();
+                  } catch (IllegalRawDataException var7) {
+                     throw a(var7);
+                  }
+               }
+
+               var4 = (IpV4Packet)var15;
+               break label67;
+            }
+
+            var4 = this.n(var3);
+         }
+
+         IpV4Packet var16;
+         label92: {
+            try {
+               var16 = var4;
+               if (var2 == null) {
+                  break label92;
+               }
+
+               if (var4 == null) {
+                  return;
+               }
+            } catch (IllegalRawDataException var13) {
+               throw a(var13);
+            }
+
+            var16 = var4;
+         }
+
+         IpV4Packet.IpV4Header var5 = var16.getHeader();
+
+         label100: {
+            try {
+               boolean var17 = var4.getPayload() instanceof IcmpV4CommonPacket;
+               if (var2 == null) {
+                  return;
+               }
+
+               if (!var17) {
+                  break label100;
+               }
+            } catch (IllegalRawDataException var12) {
+               throw a(var12);
+            }
+
+            IcmpV4CommonPacket var6 = (IcmpV4CommonPacket)var4.getPayload();
+
+            try {
+               this.C(var6, var5);
+               if (var2 != null) {
+                  return;
+               }
+            } catch (IllegalRawDataException var11) {
+               boolean var10001 = false;
+               throw a(var11);
+            }
+         }
+
+         try {
+            boolean var19 = var3.getPayload() instanceof IllegalPacket;
+         } catch (IllegalRawDataException var10) {
+            boolean var20 = false;
+            throw a(var10);
+         }
+      } catch (IllegalRawDataException var14) {
+         var14.printStackTrace();
+      }
+   }
+
+   public void C(IcmpV4CommonPacket var1, IpV4Packet.IpV4Header var2) {
+      String[] var10000 = B();
+      IcmpV4CommonPacket.IcmpV4CommonHeader var4 = var1.getHeader();
+      String[] var3 = var10000;
+      IcmpV4Type var30 = var4.getType();
+      IcmpV4Type var10001 = IcmpV4Type.DESTINATION_UNREACHABLE;
+      if (var3 != null) {
+         if (var30 == IcmpV4Type.DESTINATION_UNREACHABLE) {
+            IcmpV4DestinationUnreachablePacket var5 = (IcmpV4DestinationUnreachablePacket)var1.getPayload();
+            IcmpV4DestinationUnreachablePacket.IcmpV4DestinationUnreachableHeader var6 = var5.getHeader();
+            String var7 = var2.getSrcAddr().getHostAddress() + ":" + var6.getUnused();
+            org.icmp4j.j var8 = (org.icmp4j.j)this.Q.get(var7);
+            if (var8 == null) {
+               return;
+            }
+
+            long var9 = System.currentTimeMillis() - (long)this.u;
+            if (var3 != null) {
+               if (var9 < var8.R()) {
+                  var9 = var8.R();
+               }
+
+               var8.i(var9);
+               var8.w((int)(var8.q() - var8.R()));
+               var8.P(true);
+            }
+
+            Q0 var11 = var8.E();
+            if (var3 != null) {
+               if (var11 != null) {
+                  B0 var12 = new B0(B0.t);
+                  var12.q(var8);
+                  var11.a(var12);
+               }
+
+               var8.v(true);
+            }
+
+            if (var3 != null) {
+               return;
+            }
+         }
+
+         var30 = var4.getType();
+         var10001 = IcmpV4Type.TIME_EXCEEDED;
+      }
+
+      if (var3 != null) {
+         if (var30 == var10001) {
+            IcmpV4TimeExceededPacket var15 = (IcmpV4TimeExceededPacket)var1.getPayload();
+            IcmpV4TimeExceededPacket.IcmpV4TimeExceededHeader var17 = var15.getHeader();
+            IcmpV4EchoPacket var19 = (IcmpV4EchoPacket)var15.getPayload().getPayload().getPayload();
+            IcmpV4EchoPacket var31 = var19;
+            if (var3 != null) {
+               if (var19 == null) {
+                  return;
+               }
+
+               var31 = var19;
+            }
+
+            IcmpV4EchoPacket.IcmpV4EchoHeader var21 = var31.getHeader();
+            String var23 = var21.getSequenceNumberAsInt() + "";
+            org.icmp4j.j var10 = (org.icmp4j.j)this.s.get(var23);
+            if (var10 == null) {
+               return;
+            }
+
+            long var26 = System.currentTimeMillis() - (long)this.u;
+            if (var3 != null) {
+               if (var26 < var10.R()) {
+                  var26 = var10.R();
+               }
+
+               var10.i(var26);
+               var10.w((int)(var10.q() - var10.R()));
+               var10.P(true);
+               var10.S(var2.getSrcAddr().getHostAddress());
+            }
+
+            Q0 var13 = var10.E();
+            if (var3 != null) {
+               if (var13 != null) {
+                  B0 var14 = new B0(B0.m);
+                  var14.q(var10);
+                  var13.a(var14);
+               }
+
+               var10.v(true);
+            }
+
+            if (var3 != null) {
+               return;
+            }
+         }
+
+         var30 = var4.getType();
+         if (var3 == null) {
             return;
-        }
-        var4_5 = var2_1.iterator();
-        if (var1_2 != null) ** GOTO lbl39
-        block8: while (true) {
-            block10: {
-                var3_4 = var4_5.next();
-                v0 = this.t.contains(var3_4.getName());
-                if (var1_2 == null) ** GOTO lbl42
-                if (v0) break block10;
-                try {
-                    block11: {
-                        v0 = this.C.contains(var3_4.getName());
-                        if (var1_2 == null) ** GOTO lbl42
-                        break block11;
-                        catch (PcapNativeException v1) {
-                            throw xQ.a(v1);
-                        }
-                    }
-                    if (v0) break block10;
-                }
-                catch (PcapNativeException v2) {
-                    throw xQ.a(v2);
-                }
-                try {
-                    this.D(var3_4);
-                    this.t.add(var3_4.getName());
-                }
-                catch (NotOpenException | PcapNativeException var5_6) {
-                    this.C.add(var3_4.getName());
-                    var5_6.getMessage().contains("denied");
-                    var5_6.getMessage().contains("not implemented");
-                }
+         }
+
+         var10001 = IcmpV4Type.ECHO_REPLY;
+      }
+
+      if (var30 == var10001) {
+         IcmpV4EchoReplyPacket var16 = (IcmpV4EchoReplyPacket)var1.getPayload();
+         IcmpV4EchoReplyPacket.IcmpV4EchoReplyHeader var18 = var16.getHeader();
+         String var20 = var2.getSrcAddr().getHostAddress() + ":" + var18.getSequenceNumberAsInt();
+         org.icmp4j.j var22 = (org.icmp4j.j)this.Q.get(var20);
+         String var24 = var18.getSequenceNumberAsInt() + "";
+         org.icmp4j.j var25 = (org.icmp4j.j)this.s.get(var24);
+         org.icmp4j.j var32 = var22;
+         if (var3 != null) {
+            if (var22 == null) {
+               var22 = var25;
             }
-            do {
-                v0 = var4_5.hasNext();
-lbl42:
-                // 3 sources
 
-                if (v0) continue block8;
-            } while (var1_2 == null);
-            break;
-        }
-    }
+            var32 = var22;
+         }
 
-    void D(PcapNetworkInterface pcapNetworkInterface) throws PcapNativeException, NotOpenException {
-        PcapHandle pcapHandle = pcapNetworkInterface.openLive(xQ.a(19596, 7166196519583858892L), this.r(pcapNetworkInterface), this.u);
-        Object object = "";
-        object = "icmp or ( udp and  host " + this.A + ")";
-        kg_0 kg_02 = new kg_0(this, pcapNetworkInterface, pcapHandle);
-        jj_0 jj_02 = new jj_0(this, pcapHandle, kg_02, pcapNetworkInterface);
-        jj_02.start();
-    }
-
-    PcapNetworkInterface.PromiscuousMode r(PcapNetworkInterface pcapNetworkInterface) {
-        PcapNetworkInterface.PromiscuousMode promiscuousMode = null;
-        String string = (pcapNetworkInterface.getDescription() + ":" + pcapNetworkInterface.getName()).toLowerCase();
-        promiscuousMode = string.contains("wireless") ? PcapNetworkInterface.PromiscuousMode.NONPROMISCUOUS : PcapNetworkInterface.PromiscuousMode.PROMISCUOUS;
-        return promiscuousMode;
-    }
-
-    public j E(InetAddress inetAddress, int n10, int n11, Q0 q0) throws PcapNativeException, NotOpenException {
-        j j2;
-        block8: {
-            InetAddress inetAddress2;
-            block7: {
-                j2 = null;
-                String[] stringArray = xQ.B();
-                try {
-                    if (this.i == null) {
-                        throw new NotOpenException("local_mac==null");
-                    }
-                }
-                catch (PcapNativeException pcapNativeException) {
-                    throw xQ.a(pcapNativeException);
-                }
-                try {
-                    try {
-                        inetAddress2 = inetAddress;
-                        if (stringArray == null) break block7;
-                        if (!(inetAddress2 instanceof Inet4Address)) break block8;
-                    }
-                    catch (PcapNativeException pcapNativeException) {
-                        throw xQ.a(pcapNativeException);
-                    }
-                    inetAddress2 = inetAddress;
-                }
-                catch (PcapNativeException pcapNativeException) {
-                    throw xQ.a(pcapNativeException);
-                }
+         if (var3 != null) {
+            if (var32 == null) {
+               return;
             }
-            Inet4Address inet4Address = (Inet4Address)inetAddress2;
-            Packet packet = gQ.A(this.i, this.T, this.j, inet4Address, n10, n11);
-            j2 = new j();
-            j2.a(q0);
-            j2.f(inetAddress);
-            j2.q(n10);
-            String string = "" + j2.H();
-            this.s.put(string, j2);
-            W.schedule(new O5(this, string), xQ.b(17691, 935767074703057388L), TimeUnit.MILLISECONDS);
-            this.z.sendPacket(packet);
-            j2.R(System.currentTimeMillis());
-        }
-        return j2;
-    }
 
-    public j p(InetAddress inetAddress, int n10, Q0 q0) throws PcapNativeException, NotOpenException {
-        j j2;
-        block8: {
-            InetAddress inetAddress2;
-            block7: {
-                j2 = null;
-                String[] stringArray = xQ.B();
-                try {
-                    if (this.i == null) {
-                        throw new NotOpenException("local_mac==null");
-                    }
-                }
-                catch (PcapNativeException pcapNativeException) {
-                    throw xQ.a(pcapNativeException);
-                }
-                try {
-                    try {
-                        inetAddress2 = inetAddress;
-                        if (stringArray == null) break block7;
-                        if (!(inetAddress2 instanceof Inet4Address)) break block8;
-                    }
-                    catch (PcapNativeException pcapNativeException) {
-                        throw xQ.a(pcapNativeException);
-                    }
-                    inetAddress2 = inetAddress;
-                }
-                catch (PcapNativeException pcapNativeException) {
-                    throw xQ.a(pcapNativeException);
-                }
+            var32 = var22;
+         }
+
+         var32.S(var2.getSrcAddr().getHostAddress());
+         long var27 = System.currentTimeMillis() - (long)this.u;
+         if (var3 != null) {
+            if (var27 < var22.R()) {
+               var27 = var22.R();
             }
-            Inet4Address inet4Address = (Inet4Address)inetAddress2;
-            Packet packet = gQ.S(this.i, this.T, this.j, inet4Address, n10);
-            j2 = new j();
-            j2.a(q0);
-            j2.f(inetAddress);
-            j2.q(n10);
-            String string = j2.Y().getHostAddress() + ":" + j2.H();
-            this.Q.put(string, j2);
-            W.schedule(new jn_0(this, string), xQ.b(19456, 2949232511153416438L), TimeUnit.MILLISECONDS);
-            this.z.sendPacket(packet);
-            j2.R(System.currentTimeMillis());
-        }
-        return j2;
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    public void i(Packet var1_1) {
-        block21: {
-            var2_2 = xQ.B();
+            var22.i(var27);
+            var22.w((int)(var22.q() - var22.R()));
+            var22.P(true);
+         }
+
+         Q0 var28 = var22.E();
+         if (var3 != null) {
+            if (var28 != null) {
+               B0 var29 = new B0(B0.t);
+               var29.q(var22);
+               var28.a(var29);
+            }
+
+            var22.v(true);
+         }
+
+         if (var3 != null) {
+            return;
+         }
+      }
+
+      var4.getType();
+   }
+
+   IpV4Packet n(EthernetPacket param1) throws IllegalRawDataException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: aconst_null
+      // 01: astore 3
+      // 02: invokestatic xQ.B ()[Ljava/lang/String;
+      // 05: aload 1
+      // 06: invokevirtual org/pcap4j/packet/EthernetPacket.getPayload ()Lorg/pcap4j/packet/Packet;
+      // 09: invokeinterface org/pcap4j/packet/Packet.getRawData ()[B 1
+      // 0e: astore 4
+      // 10: astore 2
+      // 11: aload 4
+      // 13: arraylength
+      // 14: sipush 17212
+      // 17: ldc2_w 3610664135112806264
+      // 1a: invokestatic xQ.a (IJ)I
+      // 1d: aload 2
+      // 1e: ifnull 52
+      // 21: if_icmple f6
+      // 24: goto 2b
+      // 27: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2a: athrow
+      // 2b: aload 4
+      // 2d: sipush 25696
+      // 30: ldc2_w 1409686679685523490
+      // 33: invokestatic xQ.a (IJ)I
+      // 36: baload
+      // 37: aload 2
+      // 38: ifnull 56
+      // 3b: goto 42
+      // 3e: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 41: athrow
+      // 42: sipush 31767
+      // 45: ldc2_w 7136118817418735702
+      // 48: invokestatic xQ.a (IJ)I
+      // 4b: goto 52
+      // 4e: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 51: athrow
+      // 52: if_icmpne f6
+      // 55: bipush 2
+      // 56: newarray 8
+      // 58: astore 5
+      // 5a: aload 4
+      // 5c: bipush 4
+      // 5d: aload 5
+      // 5f: bipush 0
+      // 60: bipush 2
+      // 61: invokestatic java/lang/System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
+      // 64: aload 5
+      // 66: bipush 0
+      // 67: invokestatic com/c.a (Ljava/lang/Object;I)[Ljava/lang/Object;
+      // 6a: ldc2_w 259396441241254847
+      // 6d: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 70: swap
+      // 71: aconst_null
+      // 72: swap
+      // 73: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 76: checkcast java/lang/Short
+      // 79: invokevirtual java/lang/Short.shortValue ()S
+      // 7c: goto 83
+      // 7f: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 82: athrow
+      // 83: istore 6
+      // 85: iload 6
+      // 87: invokestatic xQ.c (S)I
+      // 8a: bipush 2
+      // 8b: isub
+      // 8c: istore 7
+      // 8e: iload 7
+      // 90: newarray 8
+      // 92: astore 8
+      // 94: aload 4
+      // 96: arraylength
+      // 97: sipush 25696
+      // 9a: ldc2_w 1409686679685523490
+      // 9d: invokestatic xQ.a (IJ)I
+      // a0: isub
+      // a1: istore 9
+      // a3: getstatic gQ.V [B
+      // a6: bipush 2
+      // a7: aload 4
+      // a9: bipush 2
+      // aa: baload
+      // ab: bastore
+      // ac: getstatic gQ.V [B
+      // af: bipush 3
+      // b0: aload 4
+      // b2: bipush 3
+      // b3: baload
+      // b4: bastore
+      // b5: aload 2
+      // b6: ifnull ec
+      // b9: iload 7
+      // bb: aload 4
+      // bd: arraylength
+      // be: sipush 25696
+      // c1: ldc2_w 1409686679685523490
+      // c4: invokestatic xQ.a (IJ)I
+      // c7: isub
+      // c8: if_icmpne f6
+      // cb: goto d2
+      // ce: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // d1: athrow
+      // d2: aload 4
+      // d4: sipush 25696
+      // d7: ldc2_w 1409686679685523490
+      // da: invokestatic xQ.a (IJ)I
+      // dd: aload 8
+      // df: bipush 0
+      // e0: iload 7
+      // e2: invokestatic java/lang/System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
+      // e5: goto ec
+      // e8: invokestatic xQ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // eb: athrow
+      // ec: aload 8
+      // ee: bipush 0
+      // ef: aload 8
+      // f1: arraylength
+      // f2: invokestatic org/pcap4j/packet/IpV4Packet.newPacket ([BII)Lorg/pcap4j/packet/IpV4Packet;
+      // f5: astore 3
+      // f6: aload 3
+      // f7: areturn
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   public static String F(byte[] var0) {
+      String[] var10000 = B();
+      StringBuffer var2 = new StringBuffer();
+      int var3 = 0;
+      String[] var1 = var10000;
+      String var6;
+      if (var1 == null) {
+         var6 = Integer.toHexString(var0[var3] & a(6146, 2752411197042136133L));
+      } else if (var3 >= var0.length) {
+         var6 = var2.toString();
+         if (var1 != null) {
+            return var6;
+         }
+      } else {
+         var6 = Integer.toHexString(var0[var3] & a(6146, 2752411197042136133L));
+      }
+
+      while (true) {
+         String var4 = var6;
+         var4 = var4.replaceAll(":", " ");
+         if (var1 != null) {
+            if (var4.length() == 1) {
+               var4 = "0" + var4;
+            }
+
+            var2.append(var4 + " ");
+         }
+
+         if (++var3 >= var0.length) {
+            var6 = var2.toString();
+            if (var1 != null) {
+               return var6;
+            }
+         } else {
+            var6 = Integer.toHexString(var0[var3] & a(6146, 2752411197042136133L));
+         }
+      }
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   private void d() {
+      String[] var10000 = B();
+      InetAddress var2 = null;
+      String[] var1 = var10000;
+
+      try {
+         var2 = InetAddress.getByName(this.A);
+      } catch (UnknownHostException var9) {
+      }
+
+      label53: {
+         try {
+            var12 = var2;
+            if (var1 == null) {
+               break label53;
+            }
+
+            if (var2 == null) {
+               return;
+            }
+         } catch (UnknownHostException var11) {
+            throw a(var11);
+         }
+
+         var12 = var2;
+      }
+
+      String var3 = var12.getHostAddress();
+      int var5 = 0;
+      if (var1 == null || var5 < 3) {
+         do {
             try {
-                block20: {
-                    block19: {
-                        block18: {
-                            block16: {
-                                block17: {
-                                    var3_3 = (EthernetPacket)var1_1;
-                                    var4_5 = null;
-                                    try {
-                                        v0 = this.e;
-                                        if (var2_2 == null) break block16;
-                                        if (!v0) break block17;
-                                    }
-                                    catch (IllegalRawDataException v1) {
-                                        throw xQ.a(v1);
-                                    }
-                                    var4_5 = this.n(var3_3);
-                                    break block19;
-                                }
-                                try {
-                                    v2 = var3_3.getPayload();
-                                    if (var2_2 == null) break block18;
-                                    v0 = v2 instanceof IpV4Packet;
-                                }
-                                catch (IllegalRawDataException v3) {
-                                    throw xQ.a(v3);
-                                }
-                            }
-                            try {
-                                if (!v0) break block19;
-                                v2 = var3_3.getPayload();
-                            }
-                            catch (IllegalRawDataException v4) {
-                                throw xQ.a(v4);
-                            }
-                        }
-                        var4_5 = (IpV4Packet)v2;
-                    }
-                    try {
-                        v5 = var4_5;
-                        if (var2_2 == null) break block20;
-                        if (v5 == null) break block21;
-                    }
-                    catch (IllegalRawDataException v6) {
-                        throw xQ.a(v6);
-                    }
-                    v5 = var4_5;
-                }
-                var5_6 = v5.getHeader();
-                try {
-                    v7 = var4_5.getPayload() instanceof IcmpV4CommonPacket;
-                    if (var2_2 == null) break block21;
-                    if (v7) {
-                    }
-                    ** GOTO lbl54
-                }
-                catch (IllegalRawDataException v8) {
-                    throw xQ.a(v8);
-                }
-                var6_7 = (IcmpV4CommonPacket)var4_5.getPayload();
-                try {
-                    this.C(var6_7, var5_6);
-                    if (var2_2 != null) break block21;
-lbl54:
-                    // 2 sources
-
-                    v7 = var3_3.getPayload() instanceof IllegalPacket;
-                }
-                catch (IllegalRawDataException v9) {
-                    throw xQ.a(v9);
-                }
+               DatagramSocket var4 = new DatagramSocket();
+               DatagramPacket var6 = new DatagramPacket(new byte[1], 1);
+               var6.setAddress(InetAddress.getByName(var3));
+               var6.setPort(this.k);
+               var4.send(var6);
+               var4.close();
+               Thread.sleep(b(10040, 2106956996069114829L));
+               if (this.i != null) {
+                  break;
+               }
+            } catch (Exception var10) {
+               try {
+                  Thread.sleep(b(25569, 5396066673679992597L));
+               } catch (InterruptedException var8) {
+                  var8.printStackTrace();
+               }
             }
-            catch (IllegalRawDataException var3_4) {
-                var3_4.printStackTrace();
+         } while (++var5 < 3);
+      }
+   }
+
+   public short E() {
+      return this.V;
+   }
+
+   public void K(short var1) {
+      this.V = var1;
+   }
+
+   public static int c(short var0) {
+      return var0 & a(32353, 7043884782288663079L);
+   }
+
+   public static void I(String[] var0) {
+      b = var0;
+   }
+
+   public static String[] B() {
+      return b;
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
+
+   private static String a(int var0, int var1) {
+      int var2 = (var0 ^ 7885) & 65535;
+      if (f[var2] == null) {
+         char[] var3 = d[var2].toCharArray();
+
+         short var4 = switch (var3[0] & 0xFF) {
+            case 0 -> 167;
+            case 1 -> 55;
+            case 2 -> 158;
+            case 3 -> 96;
+            case 4 -> 116;
+            case 5 -> 92;
+            case 6 -> 20;
+            case 7 -> 171;
+            case 8 -> 155;
+            case 9 -> 123;
+            case 10 -> 98;
+            case 11 -> 159;
+            case 12 -> 139;
+            case 13 -> 66;
+            case 14 -> 235;
+            case 15 -> 9;
+            case 16 -> 228;
+            case 17 -> 85;
+            case 18 -> 175;
+            case 19 -> 152;
+            case 20 -> 57;
+            case 21 -> 208;
+            case 22 -> 128;
+            case 23 -> 19;
+            case 24 -> 113;
+            case 25 -> 59;
+            case 26 -> 243;
+            case 27 -> 70;
+            case 28 -> 166;
+            case 29 -> 81;
+            case 30 -> 99;
+            case 31 -> 217;
+            case 32 -> 68;
+            case 33 -> 40;
+            case 34 -> 174;
+            case 35 -> 252;
+            case 36 -> 241;
+            case 37 -> 125;
+            case 38 -> 104;
+            case 39 -> 124;
+            case 40 -> 148;
+            case 41 -> 225;
+            case 42 -> 106;
+            case 43 -> 37;
+            case 44 -> 43;
+            case 45 -> 95;
+            case 46 -> 17;
+            case 47 -> 213;
+            case 48 -> 115;
+            case 49 -> 232;
+            case 50 -> 110;
+            case 51 -> 199;
+            case 52 -> 206;
+            case 53 -> 94;
+            case 54 -> 183;
+            case 55 -> 74;
+            case 56 -> 146;
+            case 57 -> 67;
+            case 58 -> 86;
+            case 59 -> 83;
+            case 60 -> 6;
+            case 61 -> 242;
+            case 62 -> 77;
+            case 63 -> 120;
+            case 64 -> 53;
+            case 65 -> 4;
+            case 66 -> 11;
+            case 67 -> 204;
+            case 68 -> 224;
+            case 69 -> 7;
+            case 70 -> 103;
+            case 71 -> 131;
+            case 72 -> 193;
+            case 73 -> 89;
+            case 74 -> 25;
+            case 75 -> 196;
+            case 76 -> 44;
+            case 77 -> 82;
+            case 78 -> 255;
+            case 79 -> 218;
+            case 80 -> 226;
+            case 81 -> 150;
+            case 82 -> 22;
+            case 83 -> 240;
+            case 84 -> 169;
+            case 85 -> 173;
+            case 86 -> 21;
+            case 87 -> 64;
+            case 88 -> 119;
+            case 89 -> 222;
+            case 90 -> 246;
+            case 91 -> 178;
+            case 92 -> 200;
+            case 93 -> 79;
+            case 94 -> 63;
+            case 95 -> 32;
+            case 96 -> 47;
+            case 97 -> 97;
+            case 98 -> 3;
+            case 99 -> 39;
+            case 100 -> 34;
+            case 101 -> 231;
+            case 102 -> 162;
+            case 103 -> 163;
+            case 104 -> 132;
+            case 105 -> 80;
+            case 106 -> 214;
+            case 107 -> 108;
+            case 108 -> 8;
+            case 109 -> 16;
+            case 110 -> 221;
+            case 111 -> 72;
+            case 112 -> 51;
+            case 113 -> 233;
+            case 114 -> 220;
+            case 115 -> 189;
+            case 116 -> 185;
+            case 117 -> 42;
+            case 118 -> 50;
+            case 119 -> 88;
+            case 120 -> 181;
+            case 121 -> 177;
+            case 122 -> 238;
+            case 123 -> 230;
+            case 124 -> 38;
+            case 125 -> 90;
+            case 126 -> 101;
+            case 127 -> 176;
+            case 128 -> 165;
+            case 129 -> 69;
+            case 130 -> 192;
+            case 131 -> 227;
+            case 132 -> 239;
+            case 133 -> 102;
+            case 134 -> 93;
+            case 135 -> 251;
+            case 136 -> 0;
+            case 137 -> 136;
+            case 138 -> 156;
+            case 139 -> 24;
+            case 140 -> 161;
+            case 141 -> 109;
+            case 142 -> 201;
+            case 143 -> 62;
+            case 144 -> 133;
+            case 145 -> 15;
+            case 146 -> 105;
+            case 147 -> 137;
+            case 148 -> 129;
+            case 149 -> 149;
+            case 150 -> 184;
+            case 151 -> 5;
+            case 152 -> 46;
+            case 153 -> 75;
+            case 154 -> 28;
+            case 155 -> 58;
+            case 156 -> 249;
+            case 157 -> 65;
+            case 158 -> 247;
+            case 159 -> 209;
+            case 160 -> 170;
+            case 161 -> 141;
+            case 162 -> 33;
+            case 163 -> 56;
+            case 164 -> 160;
+            case 165 -> 138;
+            case 166 -> 71;
+            case 167 -> 190;
+            case 168 -> 207;
+            case 169 -> 172;
+            case 170 -> 219;
+            case 171 -> 229;
+            case 172 -> 107;
+            case 173 -> 54;
+            case 174 -> 234;
+            case 175 -> 45;
+            case 176 -> 180;
+            case 177 -> 253;
+            case 178 -> 1;
+            case 179 -> 145;
+            case 180 -> 60;
+            case 181 -> 26;
+            case 182 -> 100;
+            case 183 -> 195;
+            case 184 -> 14;
+            case 185 -> 194;
+            case 186 -> 154;
+            case 187 -> 52;
+            case 188 -> 188;
+            case 189 -> 237;
+            case 190 -> 142;
+            case 191 -> 121;
+            case 192 -> 48;
+            case 193 -> 122;
+            case 194 -> 182;
+            case 195 -> 117;
+            case 196 -> 147;
+            case 197 -> 215;
+            case 198 -> 254;
+            case 199 -> 203;
+            case 200 -> 205;
+            case 201 -> 29;
+            case 202 -> 144;
+            case 203 -> 31;
+            case 204 -> 10;
+            case 205 -> 73;
+            case 206 -> 91;
+            case 207 -> 236;
+            case 208 -> 84;
+            case 209 -> 13;
+            case 210 -> 49;
+            case 211 -> 153;
+            case 212 -> 143;
+            case 213 -> 244;
+            case 214 -> 78;
+            case 215 -> 114;
+            case 216 -> 12;
+            case 217 -> 118;
+            case 218 -> 198;
+            case 219 -> 140;
+            case 220 -> 191;
+            case 221 -> 27;
+            case 222 -> 23;
+            case 223 -> 151;
+            case 224 -> 186;
+            case 225 -> 111;
+            case 226 -> 18;
+            case 227 -> 76;
+            case 228 -> 157;
+            case 229 -> 164;
+            case 230 -> 210;
+            case 231 -> 2;
+            case 232 -> 168;
+            case 233 -> 30;
+            case 234 -> 112;
+            case 235 -> 35;
+            case 236 -> 41;
+            case 237 -> 134;
+            case 238 -> 187;
+            case 239 -> 126;
+            case 240 -> 248;
+            case 241 -> 223;
+            case 242 -> 202;
+            case 243 -> 197;
+            case 244 -> 127;
+            case 245 -> 87;
+            case 246 -> 250;
+            case 247 -> 179;
+            case 248 -> 130;
+            case 249 -> 212;
+            case 250 -> 211;
+            case 251 -> 245;
+            case 252 -> 135;
+            case 253 -> 61;
+            case 254 -> 36;
+            default -> 216;
+         };
+         int var5 = (var1 & 0xFF) - var4;
+         if (var5 < 0) {
+            var5 += 256;
+         }
+
+         int var6 = ((var1 & 65535) >>> 8) - var4;
+         if (var6 < 0) {
+            var6 += 256;
+         }
+
+         for (int var7 = 0; var7 < var3.length; var7++) {
+            int var8 = var7 % 2;
+            char var10002 = var3[var7];
+            if (var8 == 0) {
+               var3[var7] = (char)(var10002 ^ var5);
+               var5 = ((var5 >>> 3 | var5 << 5) ^ var3[var7]) & 0xFF;
+            } else {
+               var3[var7] = (char)(var10002 ^ var6);
+               var6 = ((var6 >>> 3 | var6 << 5) ^ var3[var7]) & 0xFF;
             }
-        }
-    }
+         }
 
-    public void C(IcmpV4CommonPacket icmpV4CommonPacket, IpV4Packet.IpV4Header ipV4Header) {
-        block21: {
-            IcmpV4Type icmpV4Type;
-            IcmpV4CommonPacket.IcmpV4CommonHeader icmpV4CommonHeader;
-            block24: {
-                Object object;
-                B0 b0;
-                Q0 q0;
-                Object object2;
-                String[] stringArray;
-                block25: {
-                    j j2;
-                    Object object3;
-                    AbstractPacket.AbstractHeader abstractHeader;
-                    AbstractPacket abstractPacket;
-                    IcmpV4Type icmpV4Type2;
-                    block22: {
-                        block23: {
-                            String string;
-                            block19: {
-                                block20: {
-                                    icmpV4CommonHeader = icmpV4CommonPacket.getHeader();
-                                    stringArray = xQ.B();
-                                    icmpV4Type = icmpV4CommonHeader.getType();
-                                    icmpV4Type2 = IcmpV4Type.DESTINATION_UNREACHABLE;
-                                    if (stringArray == null) break block19;
-                                    if (icmpV4Type != icmpV4Type2) break block20;
-                                    abstractPacket = (IcmpV4DestinationUnreachablePacket)icmpV4CommonPacket.getPayload();
-                                    abstractHeader = ((IcmpV4DestinationUnreachablePacket)abstractPacket).getHeader();
-                                    object3 = ipV4Header.getSrcAddr().getHostAddress() + ":" + ((IcmpV4DestinationUnreachablePacket.IcmpV4DestinationUnreachableHeader)abstractHeader).getUnused();
-                                    object2 = (j)this.Q.get(object3);
-                                    if (object2 == null) break block21;
-                                    long l2 = System.currentTimeMillis() - (long)this.u;
-                                    if (stringArray != null) {
-                                        if (l2 < ((j)object2).R()) {
-                                            l2 = ((j)object2).R();
-                                        }
-                                        ((j)object2).i(l2);
-                                        ((j)object2).w((int)(((j)object2).q() - ((j)object2).R()));
-                                        ((j)object2).P(true);
-                                    }
-                                    Q0 q02 = ((j)object2).E();
-                                    if (stringArray != null) {
-                                        if (q02 != null) {
-                                            B0 b02 = new B0(B0.t);
-                                            b02.q((j)object2);
-                                            q02.a(b02);
-                                        }
-                                        ((j)object2).v(true);
-                                    }
-                                    if (stringArray != null) break block21;
-                                }
-                                icmpV4Type = icmpV4CommonHeader.getType();
-                                icmpV4Type2 = IcmpV4Type.TIME_EXCEEDED;
-                            }
-                            if (stringArray == null) break block22;
-                            if (icmpV4Type != icmpV4Type2) break block23;
-                            abstractPacket = (IcmpV4TimeExceededPacket)icmpV4CommonPacket.getPayload();
-                            abstractHeader = ((IcmpV4TimeExceededPacket)abstractPacket).getHeader();
-                            Object object4 = object3 = (IcmpV4EchoPacket)((IcmpV4TimeExceededPacket)abstractPacket).getPayload().getPayload().getPayload();
-                            if (stringArray != null) {
-                                if (object4 == null) {
-                                    return;
-                                }
-                                object4 = object3;
-                            }
-                            if ((j2 = (j)this.s.get(string = "" + ((IcmpV4EchoPacket.IcmpV4EchoHeader)(object2 = ((IcmpV4EchoPacket)object4).getHeader())).getSequenceNumberAsInt())) == null) break block21;
-                            long l3 = System.currentTimeMillis() - (long)this.u;
-                            if (stringArray != null) {
-                                if (l3 < j2.R()) {
-                                    l3 = j2.R();
-                                }
-                                j2.i(l3);
-                                j2.w((int)(j2.q() - j2.R()));
-                                j2.P(true);
-                                j2.S(ipV4Header.getSrcAddr().getHostAddress());
-                            }
-                            q0 = j2.E();
-                            if (stringArray != null) {
-                                if (q0 != null) {
-                                    b0 = new B0(B0.m);
-                                    b0.q(j2);
-                                    q0.a(b0);
-                                }
-                                j2.v(true);
-                            }
-                            if (stringArray != null) break block21;
-                        }
-                        icmpV4Type = icmpV4CommonHeader.getType();
-                        if (stringArray == null) break block21;
-                        icmpV4Type2 = IcmpV4Type.ECHO_REPLY;
-                    }
-                    if (icmpV4Type != icmpV4Type2) break block24;
-                    abstractPacket = (IcmpV4EchoReplyPacket)icmpV4CommonPacket.getPayload();
-                    abstractHeader = ((IcmpV4EchoReplyPacket)abstractPacket).getHeader();
-                    object3 = ipV4Header.getSrcAddr().getHostAddress() + ":" + ((IcmpV4EchoReplyPacket.IcmpV4EchoReplyHeader)abstractHeader).getSequenceNumberAsInt();
-                    object2 = (j)this.Q.get(object3);
-                    String string = "" + ((IcmpV4EchoReplyPacket.IcmpV4EchoReplyHeader)abstractHeader).getSequenceNumberAsInt();
-                    j2 = (j)this.s.get(string);
-                    object = object2;
-                    if (stringArray != null) {
-                        if (object == null) {
-                            object2 = j2;
-                        }
-                        object = object2;
-                    }
-                    if (stringArray == null) break block25;
-                    if (object == null) break block21;
-                    object = object2;
-                }
-                ((j)object).S(ipV4Header.getSrcAddr().getHostAddress());
-                long l4 = System.currentTimeMillis() - (long)this.u;
-                if (stringArray != null) {
-                    if (l4 < ((j)object2).R()) {
-                        l4 = ((j)object2).R();
-                    }
-                    ((j)object2).i(l4);
-                    ((j)object2).w((int)(((j)object2).q() - ((j)object2).R()));
-                    ((j)object2).P(true);
-                }
-                q0 = ((j)object2).E();
-                if (stringArray != null) {
-                    if (q0 != null) {
-                        b0 = new B0(B0.t);
-                        b0.q((j)object2);
-                        q0.a(b0);
-                    }
-                    ((j)object2).v(true);
-                }
-                if (stringArray != null) break block21;
-            }
-            icmpV4CommonHeader.getType();
-            icmpV4Type = IcmpV4Type.ECHO;
-        }
-    }
+         f[var2] = new String(var3).intern();
+      }
 
-    IpV4Packet n(EthernetPacket ethernetPacket) throws IllegalRawDataException {
-        IpV4Packet ipV4Packet;
-        block14: {
-            byte[] byArray;
-            block16: {
-                short s2;
-                int n10;
-                String[] stringArray;
-                byte[] byArray2;
-                block15: {
-                    int n11;
-                    block13: {
-                        ipV4Packet = null;
-                        byArray2 = ethernetPacket.getPayload().getRawData();
-                        stringArray = xQ.B();
-                        try {
-                            try {
-                                try {
-                                    n10 = byArray2.length;
-                                    n11 = xQ.a(17212, 3610664135112806264L);
-                                    if (stringArray == null) break block13;
-                                    if (n10 <= n11) break block14;
-                                }
-                                catch (IllegalRawDataException illegalRawDataException) {
-                                    throw xQ.a(illegalRawDataException);
-                                }
-                                n10 = byArray2[xQ.a(25696, 1409686679685523490L)];
-                                if (stringArray == null) break block15;
-                            }
-                            catch (IllegalRawDataException illegalRawDataException) {
-                                throw xQ.a(illegalRawDataException);
-                            }
-                            n11 = xQ.a(31767, 7136118817418735702L);
-                        }
-                        catch (IllegalRawDataException illegalRawDataException) {
-                            throw xQ.a(illegalRawDataException);
-                        }
-                    }
-                    if (n10 != n11) break block14;
-                    n10 = 2;
-                }
-                byte[] byArray3 = new byte[n10];
-                System.arraycopy(byArray2, 4, byArray3, 0, 2);
-                try {
-                    s2 = (Short)cl_2.N((Object)byArray3, 0);
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                short s3 = s2;
-                int n12 = xQ.c(s3) - 2;
-                byArray = new byte[n12];
-                int n13 = byArray2.length - xQ.a(25696, 1409686679685523490L);
-                try {
-                    try {
-                        gQ.V[2] = byArray2[2];
-                        gQ.V[3] = byArray2[3];
-                        if (stringArray == null) break block16;
-                        if (n12 != byArray2.length - xQ.a(25696, 1409686679685523490L)) break block14;
-                    }
-                    catch (IllegalRawDataException illegalRawDataException) {
-                        throw xQ.a(illegalRawDataException);
-                    }
-                    System.arraycopy(byArray2, xQ.a(25696, 1409686679685523490L), byArray, 0, n12);
-                }
-                catch (IllegalRawDataException illegalRawDataException) {
-                    throw xQ.a(illegalRawDataException);
-                }
-            }
-            ipV4Packet = IpV4Packet.newPacket(byArray, 0, byArray.length);
-        }
-        return ipV4Packet;
-    }
+      return f[var2];
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    public static String F(byte[] var0) {
-        var2_1 = new StringBuffer();
-        var3_2 = 0;
-        var1_3 = xQ.B();
-        if (var1_3 != null) ** GOTO lbl16
-        block0: while (true) {
-            v0 = Integer.toHexString(var0[var3_2] & xQ.a(6146, 2752411197042136133L));
-            do {
-                var4_4 = v0;
-                var4_4 = var4_4.replaceAll(":", " ");
-                if (var1_3 != null) {
-                    if (var4_4.length() == 1) {
-                        var4_4 = "0" + (String)var4_4;
-                    }
-                    var2_1.append((String)var4_4 + " ");
-                }
-                ++var3_2;
-lbl16:
-                // 2 sources
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 3140;
+      if (g[var3] == null) {
+         g[var3] = (int)(a[var3] ^ var1);
+      }
 
-                if (var3_2 < var0.length) continue block0;
-                v0 = var2_1.toString();
-            } while (var1_3 == null);
-            break;
-        }
-        return v0;
-    }
+      return g[var3];
+   }
 
-    /*
-     * Handled impossible loop by adding 'first' condition
-     * Enabled aggressive block sorting
-     * Enabled unnecessary exception pruning
-     * Enabled aggressive exception aggregation
-     */
-    private void d() {
-        InetAddress inetAddress;
-        String[] stringArray;
-        block11: {
-            InetAddress inetAddress2 = null;
-            stringArray = xQ.B();
-            try {
-                inetAddress2 = InetAddress.getByName(this.A);
-            }
-            catch (UnknownHostException unknownHostException) {
-                // empty catch block
-            }
-            try {
-                inetAddress = inetAddress2;
-                if (stringArray == null) break block11;
-                if (inetAddress == null) {
-                    return;
-                }
-            }
-            catch (UnknownHostException unknownHostException) {
-                throw xQ.a(unknownHostException);
-            }
-            inetAddress = inetAddress2;
-        }
-        String string = inetAddress.getHostAddress();
-        int n10 = 0;
-        boolean bl = true;
-        do {
-            if (bl && !(bl = false) && stringArray != null) continue;
-            try {
-                DatagramSocket datagramSocket = new DatagramSocket();
-                DatagramPacket datagramPacket = new DatagramPacket(new byte[1], 1);
-                datagramPacket.setAddress(InetAddress.getByName(string));
-                datagramPacket.setPort(this.k);
-                datagramSocket.send(datagramPacket);
-                datagramSocket.close();
-                Thread.sleep(xQ.b(10040, 2106956996069114829L));
-                if (this.i != null) {
-                    return;
-                }
-            }
-            catch (Exception exception) {
-                try {
-                    Thread.sleep(xQ.b(25569, 5396066673679992597L));
-                }
-                catch (InterruptedException interruptedException) {
-                    interruptedException.printStackTrace();
-                }
-            }
-            ++n10;
-        } while (n10 < 3);
-    }
+   private static long b(int var0, long var1) {
+      int var3 = (var0 ^ (int)var1 ^ 25844) & 32767;
+      if (m[var3] == null) {
+         m[var3] = l[var3] ^ var1;
+      }
 
-    public short E() {
-        return this.V;
-    }
-
-    public void K(short s2) {
-        this.V = s2;
-    }
-
-    public static int c(short s2) {
-        return s2 & xQ.a(32353, 7043884782288663079L);
-    }
-
-    public static void I(String[] stringArray) {
-        b = stringArray;
-    }
-
-    public static String[] B() {
-        return b;
-    }
-
-    private static Exception a(Exception exception) {
-        return exception;
-    }
-
-    private static String a(int n10, int n11) {
-        int n12 = (n10 ^ 0x1ECD) & 0xFFFF;
-        if (f[n12] == null) {
-            int n13;
-            char[] cArray = d[n12].toCharArray();
-            int n14 = switch (cArray[0] & 0xFF) {
-                case 0 -> 167;
-                case 1 -> 55;
-                case 2 -> 158;
-                case 3 -> 96;
-                case 4 -> 116;
-                case 5 -> 92;
-                case 6 -> 20;
-                case 7 -> 171;
-                case 8 -> 155;
-                case 9 -> 123;
-                case 10 -> 98;
-                case 11 -> 159;
-                case 12 -> 139;
-                case 13 -> 66;
-                case 14 -> 235;
-                case 15 -> 9;
-                case 16 -> 228;
-                case 17 -> 85;
-                case 18 -> 175;
-                case 19 -> 152;
-                case 20 -> 57;
-                case 21 -> 208;
-                case 22 -> 128;
-                case 23 -> 19;
-                case 24 -> 113;
-                case 25 -> 59;
-                case 26 -> 243;
-                case 27 -> 70;
-                case 28 -> 166;
-                case 29 -> 81;
-                case 30 -> 99;
-                case 31 -> 217;
-                case 32 -> 68;
-                case 33 -> 40;
-                case 34 -> 174;
-                case 35 -> 252;
-                case 36 -> 241;
-                case 37 -> 125;
-                case 38 -> 104;
-                case 39 -> 124;
-                case 40 -> 148;
-                case 41 -> 225;
-                case 42 -> 106;
-                case 43 -> 37;
-                case 44 -> 43;
-                case 45 -> 95;
-                case 46 -> 17;
-                case 47 -> 213;
-                case 48 -> 115;
-                case 49 -> 232;
-                case 50 -> 110;
-                case 51 -> 199;
-                case 52 -> 206;
-                case 53 -> 94;
-                case 54 -> 183;
-                case 55 -> 74;
-                case 56 -> 146;
-                case 57 -> 67;
-                case 58 -> 86;
-                case 59 -> 83;
-                case 60 -> 6;
-                case 61 -> 242;
-                case 62 -> 77;
-                case 63 -> 120;
-                case 64 -> 53;
-                case 65 -> 4;
-                case 66 -> 11;
-                case 67 -> 204;
-                case 68 -> 224;
-                case 69 -> 7;
-                case 70 -> 103;
-                case 71 -> 131;
-                case 72 -> 193;
-                case 73 -> 89;
-                case 74 -> 25;
-                case 75 -> 196;
-                case 76 -> 44;
-                case 77 -> 82;
-                case 78 -> 255;
-                case 79 -> 218;
-                case 80 -> 226;
-                case 81 -> 150;
-                case 82 -> 22;
-                case 83 -> 240;
-                case 84 -> 169;
-                case 85 -> 173;
-                case 86 -> 21;
-                case 87 -> 64;
-                case 88 -> 119;
-                case 89 -> 222;
-                case 90 -> 246;
-                case 91 -> 178;
-                case 92 -> 200;
-                case 93 -> 79;
-                case 94 -> 63;
-                case 95 -> 32;
-                case 96 -> 47;
-                case 97 -> 97;
-                case 98 -> 3;
-                case 99 -> 39;
-                case 100 -> 34;
-                case 101 -> 231;
-                case 102 -> 162;
-                case 103 -> 163;
-                case 104 -> 132;
-                case 105 -> 80;
-                case 106 -> 214;
-                case 107 -> 108;
-                case 108 -> 8;
-                case 109 -> 16;
-                case 110 -> 221;
-                case 111 -> 72;
-                case 112 -> 51;
-                case 113 -> 233;
-                case 114 -> 220;
-                case 115 -> 189;
-                case 116 -> 185;
-                case 117 -> 42;
-                case 118 -> 50;
-                case 119 -> 88;
-                case 120 -> 181;
-                case 121 -> 177;
-                case 122 -> 238;
-                case 123 -> 230;
-                case 124 -> 38;
-                case 125 -> 90;
-                case 126 -> 101;
-                case 127 -> 176;
-                case 128 -> 165;
-                case 129 -> 69;
-                case 130 -> 192;
-                case 131 -> 227;
-                case 132 -> 239;
-                case 133 -> 102;
-                case 134 -> 93;
-                case 135 -> 251;
-                case 136 -> 0;
-                case 137 -> 136;
-                case 138 -> 156;
-                case 139 -> 24;
-                case 140 -> 161;
-                case 141 -> 109;
-                case 142 -> 201;
-                case 143 -> 62;
-                case 144 -> 133;
-                case 145 -> 15;
-                case 146 -> 105;
-                case 147 -> 137;
-                case 148 -> 129;
-                case 149 -> 149;
-                case 150 -> 184;
-                case 151 -> 5;
-                case 152 -> 46;
-                case 153 -> 75;
-                case 154 -> 28;
-                case 155 -> 58;
-                case 156 -> 249;
-                case 157 -> 65;
-                case 158 -> 247;
-                case 159 -> 209;
-                case 160 -> 170;
-                case 161 -> 141;
-                case 162 -> 33;
-                case 163 -> 56;
-                case 164 -> 160;
-                case 165 -> 138;
-                case 166 -> 71;
-                case 167 -> 190;
-                case 168 -> 207;
-                case 169 -> 172;
-                case 170 -> 219;
-                case 171 -> 229;
-                case 172 -> 107;
-                case 173 -> 54;
-                case 174 -> 234;
-                case 175 -> 45;
-                case 176 -> 180;
-                case 177 -> 253;
-                case 178 -> 1;
-                case 179 -> 145;
-                case 180 -> 60;
-                case 181 -> 26;
-                case 182 -> 100;
-                case 183 -> 195;
-                case 184 -> 14;
-                case 185 -> 194;
-                case 186 -> 154;
-                case 187 -> 52;
-                case 188 -> 188;
-                case 189 -> 237;
-                case 190 -> 142;
-                case 191 -> 121;
-                case 192 -> 48;
-                case 193 -> 122;
-                case 194 -> 182;
-                case 195 -> 117;
-                case 196 -> 147;
-                case 197 -> 215;
-                case 198 -> 254;
-                case 199 -> 203;
-                case 200 -> 205;
-                case 201 -> 29;
-                case 202 -> 144;
-                case 203 -> 31;
-                case 204 -> 10;
-                case 205 -> 73;
-                case 206 -> 91;
-                case 207 -> 236;
-                case 208 -> 84;
-                case 209 -> 13;
-                case 210 -> 49;
-                case 211 -> 153;
-                case 212 -> 143;
-                case 213 -> 244;
-                case 214 -> 78;
-                case 215 -> 114;
-                case 216 -> 12;
-                case 217 -> 118;
-                case 218 -> 198;
-                case 219 -> 140;
-                case 220 -> 191;
-                case 221 -> 27;
-                case 222 -> 23;
-                case 223 -> 151;
-                case 224 -> 186;
-                case 225 -> 111;
-                case 226 -> 18;
-                case 227 -> 76;
-                case 228 -> 157;
-                case 229 -> 164;
-                case 230 -> 210;
-                case 231 -> 2;
-                case 232 -> 168;
-                case 233 -> 30;
-                case 234 -> 112;
-                case 235 -> 35;
-                case 236 -> 41;
-                case 237 -> 134;
-                case 238 -> 187;
-                case 239 -> 126;
-                case 240 -> 248;
-                case 241 -> 223;
-                case 242 -> 202;
-                case 243 -> 197;
-                case 244 -> 127;
-                case 245 -> 87;
-                case 246 -> 250;
-                case 247 -> 179;
-                case 248 -> 130;
-                case 249 -> 212;
-                case 250 -> 211;
-                case 251 -> 245;
-                case 252 -> 135;
-                case 253 -> 61;
-                case 254 -> 36;
-                default -> 216;
-            };
-            int n15 = (n11 & 0xFF) - n14;
-            if (n15 < 0) {
-                n15 += 256;
-            }
-            if ((n13 = ((n11 & 0xFFFF) >>> 8) - n14) < 0) {
-                n13 += 256;
-            }
-            int n16 = 0;
-            while (n16 < cArray.length) {
-                int n17 = n16 % 2;
-                int n18 = n16;
-                char[] cArray2 = cArray;
-                char c2 = cArray[n18];
-                if (n17 == 0) {
-                    cArray2[n18] = (char)(c2 ^ n15);
-                    n15 = ((n15 >>> 3 | n15 << 5) ^ cArray[n16]) & 0xFF;
-                } else {
-                    cArray2[n18] = (char)(c2 ^ n13);
-                    n13 = ((n13 >>> 3 | n13 << 5) ^ cArray[n16]) & 0xFF;
-                }
-                ++n16;
-            }
-            xQ.f[n12] = new String(cArray).intern();
-        }
-        return f[n12];
-    }
-
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0xC44;
-        if (g[n11] == null) {
-            xQ.g[n11] = (int)(a[n11] ^ l2);
-        }
-        return g[n11];
-    }
-
-    private static long b(int n10, long l2) {
-        int n11 = (n10 ^ (int)l2 ^ 0x64F4) & Short.MAX_VALUE;
-        if (m[n11] == null) {
-            xQ.m[n11] = l[n11] ^ l2;
-        }
-        return m[n11];
-    }
+      return m[var3];
+   }
 }
+
+
+
+
 

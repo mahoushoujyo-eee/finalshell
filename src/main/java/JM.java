@@ -1,26 +1,25 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-
 class JM {
-    String K;
-    boolean B;
-    String q;
+   String K;
+   boolean B;
+   String q;
 
-    JM(String string) {
-        this.K = "";
-        this.B = false;
-        this.q = "";
-        this.K = string;
-    }
+   JM(String var1) {
+      com.c.c(136568670898850279L).set(this, "");
+      com.c.c(231748893861719771L).setBoolean(this, false);
+      com.c.c(567851261854980699L).set(this, "");
+      com.c.c(136568670898850279L).set(this, var1);
+   }
 
-    boolean w() {
-        return this.B;
-    }
+   boolean w() {
+      return com.c.c(231748893861719771L).getBoolean(this);
+   }
 
-    void u(boolean bl) {
-        this.B = bl;
-    }
+   void u(boolean var1) {
+      com.c.c(231748893861719771L).setBoolean(this, var1);
+   }
 }
+
+
+
+
 

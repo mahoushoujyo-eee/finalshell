@@ -1,40 +1,40 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.Z.T;
-import com.z.d_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class V
-implements ActionListener {
-    final T Q;
+class V implements ActionListener {
+   final com.Z.T Q;
 
-    V(T t2) {
-        this.Q = t2;
-    }
+   V(com.Z.T var1) {
+      this.Q = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block3: {
-            T t2;
-            block4: {
-                String string;
-                block2: {
-                    string = T.v();
-                    t2 = this.Q;
-                    if (string != null) break block2;
-                    if (!((Boolean)t2.N.J()).booleanValue()) break block3;
-                    t2 = this.Q;
-                }
-                if (string != null) break block4;
-                if (t2.S == null) break block3;
-                t2 = this.Q;
-            }
-            t2.M(this.Q.S.getParentFile(), d_0.toolbar);
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      String var2 = com.Z.T.v();
+      com.Z.T var10000 = this.Q;
+      if (var2 == null) {
+         if (!(Boolean)this.Q.N.J()) {
+            return;
+         }
+
+         var10000 = this.Q;
+      }
+
+      if (var2 == null) {
+         if (var10000.S == null) {
+            return;
+         }
+
+         var10000 = this.Q;
+      }
+
+      var10000.M(this.Q.S.getParentFile(), d_2.toolbar);
+   }
 }
+
+
+
+
 

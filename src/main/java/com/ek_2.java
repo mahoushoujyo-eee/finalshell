@@ -1,105 +1,90 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.G9;
-import com.R6;
-import com.e1_0;
-import javax.swing.JComponent;
+public class Ek_2 implements SC {
+   protected float[] D;
+   protected float M;
+   protected float q;
+   protected float y;
+   protected SC N;
 
-/*
- * Renamed from com.ek
- */
-public class ek_2
-extends e1_0 {
-    private static final String a;
+   public Ek_2(float var1, float var2, float var3) {
+      this(var1, var2, var3, new uZ());
+   }
 
-    public void G(R6 r6, String string, G9 g92, Object[] objectArray) {
-        r6.setText(this.q(g92, objectArray));
-        r6.G(this.P(a, g92, objectArray));
-    }
+   public Ek_2(float var1, float var2, float var3, SC var4) {
+      String var10000 = uZ.h();
+      super();
+      this.M = var1;
+      this.q = var2;
+      this.y = var3;
+      this.N = var4;
+      this.D = new float[(int)var3 + 1];
+      String var5 = var10000;
+      float var6 = 1.0F;
+      int var7 = 0;
 
-    @Override
-    public void L(JComponent jComponent, String string, G9 g92, Object[] objectArray) {
-        this.G((R6)jComponent, string, g92, objectArray);
-    }
+      while (var7 <= (int)var3) {
+         this.D[var7] = (float)Math.pow((double)var6, (double)(-var1));
+         var6 *= var2;
+         var7++;
+         if (var5 != null) {
+            break;
+         }
+      }
+   }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u0001(S0\u0007\u0007\u000f\u00076N1".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 109;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+   public void b(SC var1) {
+      this.N = var1;
+   }
+
+   public SC C() {
+      return this.N;
+   }
+
+   @Override
+   public float h(float var1, float var2) {
+      String var10000 = uZ.h();
+      float var4 = 0.0F;
+      var1 += 371.0F;
+      String var3 = var10000;
+      var2 += 529.0F;
+      int var6 = 0;
+
+      while (true) {
+         if (var6 < (int)this.y) {
+            var4 += this.N.h(var1, var2) * this.D[var6];
+            var1 *= this.q;
+            var9 = var2 * this.q;
+            if (var3 != null) {
+               break;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 5;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 43;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 78;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 40;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 30;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 58;
-                            break;
-                        }
-                        default: {
-                            n17 = 16;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+
+            var2 = var9;
+            var6++;
+            if (var3 == null) {
+               continue;
+            }
+         }
+
+         var9 = this.y - (float)((int)this.y);
+         break;
+      }
+
+      float var5 = var9;
+      float var10 = var5;
+      if (var3 == null) {
+         if (var5 != 0.0F) {
+            var4 += var5 * this.N.h(var1, var2) * this.D[var6];
+         }
+
+         var10 = var4;
+      }
+
+      return var10;
+   }
 }
+
+
+
+
 

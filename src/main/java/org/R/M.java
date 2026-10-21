@@ -1,28 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.R;
 
-import com.ky_2;
-import org.R.L;
-import org.R.i;
-import org.w.j;
+class M implements org.R.L {
+   final Object X;
 
-class M
-implements L {
-    final Object X;
+   M(Object var1) {
+      this.X = var1;
+   }
 
-    M(Object object) {
-        this.X = object;
-    }
-
-    @Override
-    public void l(Object object) {
-        ky_2[] ky_2Array = i.W();
-        j.o(L.F, this.X, new Object[]{object});
-        if (ky_2.F() != null) {
-            i.o(new ky_2[3]);
-        }
-    }
+   @Override
+   public void l(Object var1) {
+      com.ky_4[] var2 = org.R.i.W();
+      org.w.j.o(org.R.L.F, this.X, new Object[]{var1});
+      if (com.ky_4.F() != null) {
+         org.R.i.o(new com.ky_4[3]);
+      }
+   }
 }
+
+
+
+
 

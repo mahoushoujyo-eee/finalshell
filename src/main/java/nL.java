@@ -1,24 +1,27 @@
-/*
- * Decompiled with CFR 0.152.
- */
 public class nL {
-    public int j = 0;
-    public UR T;
-    String r;
+   public int j = 0;
+   public UR T;
+   String r;
 
-    public nL(UR uR2, int n10) {
-        this.j = n10;
-        this.T = uR2;
-        this.r = String.valueOf(uR2.v) + "-" + n10;
-    }
+   public nL(UR var1, int var2) {
+      this.j = var2;
+      this.T = var1;
+      this.r = var1.v + "-" + var2;
+   }
 
-    public boolean equals(Object object) {
-        nL nL2 = (nL)object;
-        return nL2.r.equals(this.r);
-    }
+   @Override
+   public boolean equals(Object var1) {
+      nL var2 = (nL)var1;
+      return var2.r.equals(this.r);
+   }
 
-    public int hashCode() {
-        return this.r.hashCode();
-    }
+   @Override
+   public int hashCode() {
+      return this.r.hashCode();
+   }
 }
+
+
+
+
 

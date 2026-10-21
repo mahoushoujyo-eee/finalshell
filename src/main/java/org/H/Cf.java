@@ -1,60 +1,53 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import org.F.c;
-import org.b_0;
-import org.h.cs_0;
 import org.v.NA;
+import org.v.Nr_2;
 import org.v.fE;
 import org.v.fV;
-import org.v.hp_0;
-import org.v.nr_0;
+import org.v.hp_2;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-class Cf
-implements fE {
-    final cs_0 g;
+class Cf implements fE {
+   final org.H.Cs_2 g;
 
-    Cf(cs_0 cs_02) {
-        this.g = cs_02;
-    }
+   Cf(org.H.Cs_2 var1) {
+      this.g = var1;
+   }
 
-    @c
-    public hp_0 R(fV fV2) throws b_0 {
-        return this.g.T(fV2);
-    }
+   @org.F.c
+   public hp_2 R(fV var1) throws org.b_2 {
+      return this.g.T(var1);
+   }
 
-    @Override
-    @c
-    public hp_0 v(NA nA2) throws b_0 {
-        return this.g.w(nA2);
-    }
+   @org.F.c
+   public hp_2 v(NA var1) throws org.b_2 {
+      return this.g.w(var1);
+   }
 
-    @c
-    public hp_0 E(nr_0 nr_02) throws b_0 {
-        return this.g.Y(nr_02);
-    }
+   @org.F.c
+   public hp_2 E(Nr_2 var1) throws org.b_2 {
+      return this.g.Y(var1);
+   }
 
-    @Override
-    @c
-    public Object J(nr_0 nr_02) throws Throwable {
-        return this.E(nr_02);
-    }
+   @org.F.c
+   @Override
+   public Object J(Nr_2 var1) throws Throwable {
+      return this.E(var1);
+   }
 
-    @Override
-    @c
-    public Object v(NA nA2) throws Throwable {
-        return this.v(nA2);
-    }
+   @org.F.c
+   @Override
+   public Object v$Object(NA var1) throws Throwable {
+      return this.v(var1);
+   }
 
-    @Override
-    @c
-    public Object o(fV fV2) throws Throwable {
-        return this.R(fV2);
-    }
+   @org.F.c
+   @Override
+   public Object o(fV var1) throws Throwable {
+      return this.R(var1);
+   }
 }
+
+
+
+
 

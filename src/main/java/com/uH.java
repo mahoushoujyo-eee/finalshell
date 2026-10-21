@@ -1,92 +1,112 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ON;
-import com.c4_0;
 import java.awt.AWTEvent;
 import java.awt.event.AWTEventListener;
 import java.awt.event.FocusEvent;
 
-class uH
-implements AWTEventListener {
-    private static final long[] a;
-    private static final Integer[] b;
+class uH implements AWTEventListener {
+   private static final long[] a;
+   private static final Integer[] b;
 
-    uH() {
-    }
+   @Override
+   public void eventDispatched(AWTEvent var1) {
+      int[] var2 = com.c4_2.g();
+      int var10000 = var1 instanceof FocusEvent;
+      if (var2 == null) {
+         if (var10000 == 0) {
+            return;
+         }
 
-    @Override
-    public void eventDispatched(AWTEvent aWTEvent) {
-        block3: {
-            FocusEvent focusEvent;
-            FocusEvent focusEvent2;
-            block7: {
-                int n10;
-                int n11;
-                block4: {
-                    int[] nArray;
-                    block6: {
-                        block5: {
-                            int n12;
-                            block2: {
-                                nArray = c4_0.g();
-                                n12 = aWTEvent instanceof FocusEvent;
-                                if (nArray != null) break block2;
-                                if (n12 == 0) break block3;
-                                n12 = ON.B.size();
-                            }
-                            if (n12 <= 0) break block3;
-                            focusEvent2 = (FocusEvent)aWTEvent;
-                            n11 = focusEvent2.getID();
-                            n10 = uH.a(16094, 8113623337527375130L);
-                            if (nArray != null) break block4;
-                            if (n11 != n10) break block5;
-                            focusEvent = focusEvent2;
-                            if (nArray != null) break block6;
-                            if (focusEvent.getOppositeComponent() != null) break block5;
-                            ON.u(focusEvent2.getComponent(), null);
-                            if (nArray == null) break block3;
+         var10000 = com.ON.B.size();
+      }
+
+      if (var10000 > 0) {
+         FocusEvent var3;
+         label44: {
+            var3 = (FocusEvent)var1;
+            var10000 = var3.getID();
+            int var10001 = a(16094, 8113623337527375130L);
+            if (var2 == null) {
+               label32: {
+                  if (var10000 == var10001) {
+                     var5 = var3;
+                     if (var2 != null) {
+                        break label32;
+                     }
+
+                     if (var3.getOppositeComponent() == null) {
+                        com.ON.u(var3.getComponent(), null);
+                        if (var2 == null) {
+                           return;
                         }
-                        focusEvent = focusEvent2;
-                    }
-                    if (nArray != null) break block7;
-                    n11 = focusEvent.getID();
-                    n10 = uH.a(10468, 9054562868667048737L);
-                }
-                if (n11 != n10) break block3;
-                focusEvent = focusEvent2;
+                     }
+                  }
+
+                  var5 = var3;
+               }
+
+               if (var2 != null) {
+                  break label44;
+               }
+
+               var10000 = var5.getID();
+               var10001 = a(10468, 9054562868667048737L);
             }
-            ON.u(focusEvent.getOppositeComponent(), focusEvent2.getComponent());
-        }
-    }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 2231055992467143847L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "bj\u00bd\u00e3\u00cb\u00a1\u00caP\u00d2\u00bcw\u00ffvU\u00dcj";
-        int n11 = "bj\u00bd\u00e3\u00cb\u00a1\u00caP\u00d2\u00bcw\u00ffvU\u00dcj".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-    }
+            if (var10000 != var10001) {
+               return;
+            }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x4BC4;
-        if (b[n11] == null) {
-            uH.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+            var5 = var3;
+         }
+
+         com.ON.u(var5.getOppositeComponent(), var3.getComponent());
+      }
+   }
+
+   static {
+      long var0 = 2231055992467143847L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "bj½ãË¡ÊPÒ¼wÿvUÜj";
+      int var5 = "bj½ãË¡ÊPÒ¼wÿvUÜj".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 19396;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

@@ -1,33 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.lang.reflect.InvocationTargetException;
-import javax.swing.JTextArea;
+import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.JLabel;
 
-/*
- * Renamed from up
- */
-class up_2
-implements Runnable {
-    final String t;
-    final JA j;
+class Up_2 extends JLabel {
+   final Bx_2 H;
 
-    up_2(JA jA, String string) {
-        this.j = jA;
-        this.t = string;
-    }
+   Up_2(Bx_2 var1) {
+      this.H = var1;
+   }
 
-    @Override
-    public void run() {
-        ((JTextArea)this.j.Z).append((String)this.t + "\n");
-        try {
-            this.j.x(this.j.Z);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        ((JTextArea)this.j.Z).setCaretPosition(((JTextArea)this.j.Z).getDocument().getLength());
-    }
+   @Override
+   public void paint(Graphics var1) {
+      ((JLabel)com.c.c(264155899074958124L).get(com.c.c(506432474033075896L).get(this)))
+         .setBackground((Color)com.c.c(283651054618121503L).get(com.c.c(506432474033075896L).get(this)));
+      this.paintComponent(var1);
+   }
 }
+
+
+
+
 

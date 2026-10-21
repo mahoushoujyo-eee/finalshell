@@ -1,31 +1,31 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.util.HashMap;
 import javax.swing.JFrame;
 
 public class OI {
-    HashMap b;
+   HashMap b;
 
-    public OI() {
-        this.b = new HashMap();
-    }
+   public OI() {
+      com.c.c(438526059822996541L).set(this, new HashMap());
+   }
 
-    public void j(String string, JFrame jFrame) {
-        ((HashMap)this.b).put(string, jFrame);
-    }
+   public void j(String var1, JFrame var2) {
+      ((HashMap)com.c.c(438526059822996541L).get(this)).put(var1, var2);
+   }
 
-    public JFrame c(String string) {
-        return (JFrame)((HashMap)this.b).get(string);
-    }
+   public JFrame c(String var1) {
+      return (JFrame)((HashMap)com.c.c(438526059822996541L).get(this)).get(var1);
+   }
 
-    public void N(String string) {
-        ((HashMap)this.b).remove(string);
-    }
+   public void N(String var1) {
+      ((HashMap)com.c.c(438526059822996541L).get(this)).remove(var1);
+   }
 
-    public boolean H(String string) {
-        return ((HashMap)this.b).containsKey(string);
-    }
+   public boolean H(String var1) {
+      return ((HashMap)com.c.c(438526059822996541L).get(this)).containsKey(var1);
+   }
 }
+
+
+
+
 

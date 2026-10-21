@@ -1,33 +1,28 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.yi_0;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JComponent;
+import javax.swing.AbstractListModel;
 
-/*
- * Renamed from com.wz
- */
-class wz_2
-implements ActionListener {
-    final JComponent o;
-    final int E;
-    final int G;
-    final yi_0 D;
+class Wz_2 extends AbstractListModel {
+   final Object[] C;
+   final wO_3 I;
 
-    wz_2(yi_0 yi_02, JComponent jComponent, int n10, int n11) {
-        this.D = yi_02;
-        this.o = jComponent;
-        this.E = n10;
-        this.G = n11;
-    }
+   Wz_2(wO_3 var1, Object[] var2) {
+      this.I = var1;
+      this.C = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.D.z(this.o, this.E, this.G);
-    }
+   @Override
+   public int getSize() {
+      return this.C.length;
+   }
+
+   @Override
+   public Object getElementAt(int var1) {
+      return this.C[var1];
+   }
 }
+
+
+
+
 

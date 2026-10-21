@@ -1,28 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.lang.reflect.InvocationTargetException;
+import javax.swing.JPasswordField;
 
-/*
- * Renamed from yw
- */
-class yw_2
-implements Runnable {
-    final FK G;
+class Yw_2 implements Runnable {
+   final tn_4 h;
 
-    yw_2(FK fK2) {
-        this.G = fK2;
-    }
+   Yw_2(tn_4 var1) {
+      this.h = var1;
+   }
 
-    @Override
-    public void run() {
-        try {
-            this.G.h();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void run() {
+      ((JPasswordField)com.c.c(162834556214454166L).get(com.c.c(577830386702927000L).get(this))).requestFocus();
+   }
 }
+
+
+
+
 

@@ -1,19 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
-class JN
-extends AbstractAction {
-    final yz_0 l;
+class JN extends AbstractAction {
+   final Yz_2 l;
 
-    JN(yz_0 yz_02) {
-        this.l = yz_02;
-    }
+   JN(Yz_2 var1) {
+      this.l = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+   }
 }
+
+
+
+
 

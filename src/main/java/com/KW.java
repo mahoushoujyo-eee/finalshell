@@ -1,305 +1,262 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.B8;
-import com.BY;
-import com.EP;
-import com.FW;
-import com.GT;
-import com.GU;
-import com.GV;
-import com.H2;
-import com.HI;
-import com.HK;
-import com.IG;
-import com.IK;
-import com.K2;
-import com.KK;
-import com.N9;
-import com.O0;
-import com.P7;
-import com.S7;
-import com.WX;
-import com.X4;
-import com.ak_0;
-import com.ca_1;
-import com.cw_1;
-import com.da_0;
-import com.df_2;
-import com.dl_1;
-import com.en_0;
-import com.ep_2;
-import com.ge_0;
-import com.hf_0;
-import com.hi_0;
-import com.ks_0;
-import com.nj_2;
-import com.nl_1;
-import com.nv_2;
-import com.o1_0;
-import com.oc_0;
-import com.ok_0;
-import com.on_1;
-import com.ph_0;
-import com.ph_2;
-import com.sw_0;
-import com.u7;
-import com.u9;
-import com.uT;
-import com.ub_0;
-import com.uh_0;
-import com.uy_0;
-import com.wr_2;
-import com.wy_2;
-import com.xd_2;
-import com.xm_1;
-import com.xw_2;
-import com.ym_1;
-import com.yn_2;
-import com.zzzzF6BeanInfo;
-import com.zzzzd4BeanInfo;
 import java.security.AccessController;
 import java.security.ProtectionDomain;
 import java.util.HashMap;
 import java.util.Map;
 
-public class KW
-extends ClassLoader {
-    private static ProtectionDomain n;
-    private static Map G;
+public class KW extends ClassLoader {
+   private static ProtectionDomain n;
+   private static Map G;
 
-    public KW() {
-        super(KW.q());
-    }
+   public KW() {
+      super(q());
+   }
 
-    public KW(ClassLoader classLoader) {
-        super(classLoader);
-    }
+   public KW(ClassLoader var1) {
+      super(var1);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     * Enabled unnecessary exception pruning
-     * Enabled aggressive exception aggregation
-     */
-    static ClassLoader q() {
-        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-        try {
-            if (classLoader == null) return ok_0.class.getClassLoader();
+   static ClassLoader q() {
+      ClassLoader var0 = Thread.currentThread().getContextClassLoader();
+
+      try {
+         if (var0 != null) {
             try {
-                classLoader.loadClass(ok_0.class.getName());
-                return classLoader;
+               var0.loadClass(com.Ok_2.class.getName());
+               return var0;
+            } catch (ClassNotFoundException var2) {
             }
-            catch (ClassNotFoundException classNotFoundException) {
-                // empty catch block
-                return ok_0.class.getClassLoader();
+         }
+      } catch (Hi_2 var3) {
+         throw a(var3);
+      }
+
+      return com.Ok_2.class.getClassLoader();
+   }
+
+   @Override
+   protected Class loadClass(String param1, boolean param2) throws ClassNotFoundException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Ph_2.w ()I
+      // 03: getstatic com/KW.G Ljava/util/Map;
+      // 06: aload 1
+      // 07: invokeinterface java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object; 2
+      // 0c: checkcast java/lang/Class
+      // 0f: astore 4
+      // 11: istore 3
+      // 12: aload 4
+      // 14: iload 3
+      // 15: ifeq 2f
+      // 18: ifnull 29
+      // 1b: goto 22
+      // 1e: invokestatic com/KW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 21: athrow
+      // 22: aload 4
+      // 24: areturn
+      // 25: invokestatic com/KW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 28: athrow
+      // 29: aload 0
+      // 2a: aload 1
+      // 2b: iload 2
+      // 2c: invokespecial java/lang/ClassLoader.loadClass (Ljava/lang/String;Z)Ljava/lang/Class;
+      // 2f: areturn
+      // 30: astore 5
+      // 32: aload 5
+      // 34: athrow
+   }
+
+   public Class F(String var1, byte[] var2, int var3, int var4) throws ClassFormatError {
+      return this.defineClass(var1, var2, var3, var4, n);
+   }
+
+   public boolean W(Class param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Ph_2.w ()I
+      // 03: aload 1
+      // 04: invokevirtual java/lang/Class.getClassLoader ()Ljava/lang/ClassLoader;
+      // 07: astore 3
+      // 08: istore 2
+      // 09: aload 3
+      // 0a: ifnonnull 13
+      // 0d: bipush 0
+      // 0e: ireturn
+      // 0f: invokestatic com/KW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 12: athrow
+      // 13: aload 0
+      // 14: astore 4
+      // 16: aload 4
+      // 18: ifnull 3d
+      // 1b: aload 4
+      // 1d: iload 2
+      // 1e: ifeq 37
+      // 21: aload 3
+      // 22: if_acmpne 32
+      // 25: goto 2c
+      // 28: invokestatic com/KW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2b: athrow
+      // 2c: bipush 0
+      // 2d: ireturn
+      // 2e: invokestatic com/KW.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 31: athrow
+      // 32: aload 4
+      // 34: invokevirtual java/lang/ClassLoader.getParent ()Ljava/lang/ClassLoader;
+      // 37: astore 4
+      // 39: iload 2
+      // 3a: ifne 16
+      // 3d: bipush 1
+      // 3e: ireturn
+   }
+
+   static {
+      long var1 = 4290589594971281358L;
+      long[] var0 = new long[51];
+      int var4 = 0;
+      String var5 = "ðs\bn\r@\u0017ÄWl¾\u000f\r@\u0017ÒS\u008e\u001b'\r@\u0017Ôw%\u000bg\r@\u0017ÉwP:¤\r@\u0017Ç*,\u000fY\r@\u0017åÔe\u009b \r@\u0017Ý\u0088CVI\r@\u0017ÿôÿ\u0087\u0089\r@\u0017à\u007f/n\u0005\r@\u0017Æv\bP\u0018\r@\u0017ØÈ¯àG\r@\u0017×\u001e\u009a~^\r@\u0017ç©%\u0012b\r@\u0017öQ»\u0081ë\r@\u0017ü\u0018¢ñÈ\r@\u0017ÂÂE5*\r@\u0017êT\u009dtn\r@\u0017æÙ\u0012h\\\r@\u0017ûé\u0019:ú\r@\u0017øu^·ó\r@\u0017áRy¡_\r@\u0017þm*{Ö\r@\u0017Ñ\u00ad@C<\r@\u0017îe½-Ç\r@\u0017ë\u000e÷·#\r@\u0017ã@\u0012§×\r@\u0017úUÃ\u000eþ\r@\u0017íúº\u009aL\r@\u0017ÃI/\u0002O\r@\u0017éål\u0097%\r@\u0017Áì¸íV\r@\u0017Ü!üL¶\r@\u0017ÕË§Kk\r@\u0017ï\u0017g&\u0081\r@\u0017Þ%¦¦Ù\r@\u0017ùÂf7þ\r@\u0017äÄißÊ\r@\u0017ÙãÛ\u001a¯\r@\u0017è\r\u001a G\r@\u0017ýHÏ\u009b\f\r@\u0017âºÜ§\u001d\r@\u0017Óá ü\b\r@\u0017ÛÈ\u009co¬\r@\u0017À\u0098\u00824\u0006\r@\u0017Ú²ZD\u0092\r@\u0017Öi3\u000e\u008b\r@\u0017ÐqZ.á\r@\u0017Å\u001e\u001cw\u0095\r@\u0017ì";
+      int var6 = "ðs\bn\r@\u0017ÄWl¾\u000f\r@\u0017ÒS\u008e\u001b'\r@\u0017Ôw%\u000bg\r@\u0017ÉwP:¤\r@\u0017Ç*,\u000fY\r@\u0017åÔe\u009b \r@\u0017Ý\u0088CVI\r@\u0017ÿôÿ\u0087\u0089\r@\u0017à\u007f/n\u0005\r@\u0017Æv\bP\u0018\r@\u0017ØÈ¯àG\r@\u0017×\u001e\u009a~^\r@\u0017ç©%\u0012b\r@\u0017öQ»\u0081ë\r@\u0017ü\u0018¢ñÈ\r@\u0017ÂÂE5*\r@\u0017êT\u009dtn\r@\u0017æÙ\u0012h\\\r@\u0017ûé\u0019:ú\r@\u0017øu^·ó\r@\u0017áRy¡_\r@\u0017þm*{Ö\r@\u0017Ñ\u00ad@C<\r@\u0017îe½-Ç\r@\u0017ë\u000e÷·#\r@\u0017ã@\u0012§×\r@\u0017úUÃ\u000eþ\r@\u0017íúº\u009aL\r@\u0017ÃI/\u0002O\r@\u0017éål\u0097%\r@\u0017Áì¸íV\r@\u0017Ü!üL¶\r@\u0017ÕË§Kk\r@\u0017ï\u0017g&\u0081\r@\u0017Þ%¦¦Ù\r@\u0017ùÂf7þ\r@\u0017äÄißÊ\r@\u0017ÙãÛ\u001a¯\r@\u0017è\r\u001a G\r@\u0017ýHÏ\u009b\f\r@\u0017âºÜ§\u001d\r@\u0017Óá ü\b\r@\u0017ÛÈ\u009co¬\r@\u0017À\u0098\u00824\u0006\r@\u0017Ú²ZD\u0092\r@\u0017Öi3\u000e\u008b\r@\u0017ÐqZ.á\r@\u0017Å\u001e\u001cw\u0095\r@\u0017ì"
+         .length();
+      byte var3 = 0;
+
+      label30:
+      while (true) {
+         int var10001 = var3;
+         var3 += 8;
+         byte[] var7 = var5.substring(var10001, var3).getBytes("ISO-8859-1");
+         long[] var10000 = var0;
+         var10001 = var4++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var19 = var10002 ^ var1;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var19;
+                  if (var3 >= var6) {
+                     G = new HashMap();
+                     n = AccessController.doPrivileged(new xw_4());
+                     Class[] var14 = new Class[(int)var0[13]];
+                     var14[0] = com.Ok_2.class;
+                     var14[1] = com.O0.class;
+                     var14[2] = com.Oc_2.class;
+                     var14[3] = ph_4.class;
+                     var14[4] = xd_4.class;
+                     var14[5] = Hi_2.class;
+                     var14[(int)var0[50]] = Hf_2.class;
+                     var14[(int)var0[3]] = com.df_4.class;
+                     var14[(int)var0[9]] = com.cA_3.class;
+                     var14[(int)var0[4]] = com.oN_3.class;
+                     var14[(int)var0[0]] = HI.class;
+                     var14[(int)var0[47]] = Ph_2.class;
+                     var14[(int)var0[15]] = com.B8.class;
+                     var14[(int)var0[28]] = S7.class;
+                     var14[(int)var0[43]] = GT.class;
+                     var14[(int)var0[30]] = HK.class;
+                     var14[(int)var0[34]] = zzzzF6BeanInfo.class;
+                     var14[(int)var0[49]] = com.ak_2.class;
+                     var14[(int)var0[31]] = nj_4.class;
+                     var14[(int)var0[6]] = nv_4.class;
+                     var14[(int)var0[44]] = zzzzd4BeanInfo.class;
+                     var14[(int)var0[42]] = nL_3.class;
+                     var14[(int)var0[10]] = com.yM_3.class;
+                     var14[(int)var0[37]] = wr_4.class;
+                     var14[(int)var0[45]] = com.BY.class;
+                     var14[(int)var0[11]] = wy_4.class;
+                     var14[(int)var0[2]] = com.K2.class;
+                     var14[(int)var0[32]] = H2.class;
+                     var14[(int)var0[1]] = IK.class;
+                     var14[(int)var0[41]] = com.WX.class;
+                     var14[(int)var0[46]] = com.KK.class;
+                     var14[(int)var0[22]] = com.cW_3.class;
+                     var14[(int)var0[23]] = N9.class;
+                     var14[(int)var0[33]] = EP.class;
+                     var14[(int)var0[48]] = com.FW.class;
+                     var14[(int)var0[27]] = uh_2.class;
+                     var14[(int)var0[16]] = En_2.class;
+                     var14[(int)var0[24]] = ep_4.class;
+                     var14[(int)var0[38]] = IG.class;
+                     var14[(int)var0[29]] = com.yn_4.class;
+                     var14[(int)var0[17]] = P7.class;
+                     var14[(int)var0[12]] = u9.class;
+                     var14[(int)var0[36]] = xM_3.class;
+                     var14[(int)var0[5]] = Ge_2.class;
+                     var14[(int)var0[40]] = com.o1_2.class;
+                     var14[(int)var0[25]] = com.Ks_2.class;
+                     var14[(int)var0[8]] = uy_2.class;
+                     var14[(int)var0[20]] = u7.class;
+                     var14[(int)var0[21]] = Sw_2.class;
+                     var14[(int)var0[7]] = X4.class;
+                     var14[(int)var0[14]] = GV.class;
+                     var14[(int)var0[39]] = GU.class;
+                     var14[(int)var0[26]] = com.Da_2.class;
+                     var14[(int)var0[18]] = com.dL_3.class;
+                     var14[(int)var0[19]] = uT.class;
+                     var14[(int)var0[35]] = ub_2.class;
+                     Class[] var8 = var14;
+
+                     for (Class var12 : var8) {
+                        G.put(var12.getName(), var12);
+                     }
+
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var19;
+                  if (var3 < var6) {
+                     continue label30;
+                  }
+
+                  var5 = "\u0004-\u001aÖ\r@\u0017ß\u0095L·\u0003\r@\u0017È";
+                  var6 = "\u0004-\u001aÖ\r@\u0017ß\u0095L·\u0003\r@\u0017È".length();
+                  var3 = 0;
             }
-        }
-        catch (hi_0 hi_02) {
-            throw KW.a(hi_02);
-        }
-    }
 
-    /*
-     * Loose catch block
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    protected Class loadClass(String string, boolean bl) throws ClassNotFoundException {
-        Class<?> clazz;
-        block6: {
-            Class<?> clazz2 = (Class<?>)G.get(string);
-            int n10 = ph_0.w();
-            clazz = clazz2;
-            if (n10 == 0) return clazz;
-            try {
-                if (clazz == null) break block6;
-                return clazz2;
-                catch (ClassNotFoundException classNotFoundException) {
-                    throw KW.a(classNotFoundException);
-                }
-            }
-            catch (ClassNotFoundException classNotFoundException) {
-                throw KW.a(classNotFoundException);
-            }
-        }
-        clazz = super.loadClass(string, bl);
-        return clazz;
-    }
+            byte var16 = var3;
+            var3 += 8;
+            var7 = var5.substring(var16, var3).getBytes("ISO-8859-1");
+            var10000 = var0;
+            var10001 = var4++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
 
-    public Class F(String string, byte[] byArray, int n10, int n11) throws ClassFormatError {
-        Class<?> clazz = this.defineClass(string, byArray, n10, n11, n);
-        return clazz;
-    }
-
-    public boolean W(Class clazz) {
-        ClassLoader classLoader = clazz.getClassLoader();
-        int n10 = ph_0.w();
-        try {
-            if (classLoader == null) {
-                return false;
-            }
-        }
-        catch (hi_0 hi_02) {
-            throw KW.a(hi_02);
-        }
-        KW kW = this;
-        while (kW != null) {
-            block8: {
-                ClassLoader classLoader2;
-                block9: {
-                    try {
-                        try {
-                            classLoader2 = kW;
-                            if (n10 == 0) break block8;
-                            if (classLoader2 != classLoader) break block9;
-                        }
-                        catch (hi_0 hi_03) {
-                            throw KW.a(hi_03);
-                        }
-                        return false;
-                    }
-                    catch (hi_0 hi_04) {
-                        throw KW.a(hi_04);
-                    }
-                }
-                classLoader2 = kW = kW.getParent();
-            }
-            if (n10 != 0) continue;
-        }
-        return true;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block9: {
-            block8: {
-                var1 = 4290589594971281358L;
-                var0_1 = new long[51];
-                var4_2 = 0;
-                var5_3 = "\u00f0s\bn\r@\u0017\u00c4Wl\u00be\u000f\r@\u0017\u00d2S\u008e\u001b'\r@\u0017\u00d4w%\u000bg\r@\u0017\u00c9wP:\u00a4\r@\u0017\u00c7*,\u000fY\r@\u0017\u00e5\u00d4e\u009b\u00a0\r@\u0017\u00dd\u0088CVI\r@\u0017\u00ff\u00f4\u00ff\u0087\u0089\r@\u0017\u00e0\u007f/n\u0005\r@\u0017\u00c6v\bP\u0018\r@\u0017\u00d8\u00c8\u00af\u00e0G\r@\u0017\u00d7\u001e\u009a~^\r@\u0017\u00e7\u00a9%\u0012b\r@\u0017\u00f6Q\u00bb\u0081\u00eb\r@\u0017\u00fc\u0018\u00a2\u00f1\u00c8\r@\u0017\u00c2\u00c2E5*\r@\u0017\u00eaT\u009dtn\r@\u0017\u00e6\u00d9\u0012h\\\r@\u0017\u00fb\u00e9\u0019:\u00fa\r@\u0017\u00f8u^\u00b7\u00f3\r@\u0017\u00e1Ry\u00a1_\r@\u0017\u00fem*{\u00d6\r@\u0017\u00d1\u00ad@C<\r@\u0017\u00eee\u00bd-\u00c7\r@\u0017\u00eb\u000e\u00f7\u00b7#\r@\u0017\u00e3@\u0012\u00a7\u00d7\r@\u0017\u00faU\u00c3\u000e\u00fe\r@\u0017\u00ed\u00fa\u00ba\u009aL\r@\u0017\u00c3I/\u0002O\r@\u0017\u00e9\u00e5l\u0097%\r@\u0017\u00c1\u00ec\u00b8\u00edV\r@\u0017\u00dc!\u00fcL\u00b6\r@\u0017\u00d5\u00cb\u00a7Kk\r@\u0017\u00ef\u0017g&\u0081\r@\u0017\u00de%\u00a6\u00a6\u00d9\r@\u0017\u00f9\u00c2f7\u00fe\r@\u0017\u00e4\u00c4i\u00df\u00ca\r@\u0017\u00d9\u00e3\u00db\u001a\u00af\r@\u0017\u00e8\r\u001a G\r@\u0017\u00fdH\u00cf\u009b\f\r@\u0017\u00e2\u00ba\u00dc\u00a7\u001d\r@\u0017\u00d3\u00e1 \u00fc\b\r@\u0017\u00db\u00c8\u009co\u00ac\r@\u0017\u00c0\u0098\u00824\u0006\r@\u0017\u00da\u00b2ZD\u0092\r@\u0017\u00d6i3\u000e\u008b\r@\u0017\u00d0qZ.\u00e1\r@\u0017\u00c5\u001e\u001cw\u0095\r@\u0017\u00ec";
-                var6_4 = "\u00f0s\bn\r@\u0017\u00c4Wl\u00be\u000f\r@\u0017\u00d2S\u008e\u001b'\r@\u0017\u00d4w%\u000bg\r@\u0017\u00c9wP:\u00a4\r@\u0017\u00c7*,\u000fY\r@\u0017\u00e5\u00d4e\u009b\u00a0\r@\u0017\u00dd\u0088CVI\r@\u0017\u00ff\u00f4\u00ff\u0087\u0089\r@\u0017\u00e0\u007f/n\u0005\r@\u0017\u00c6v\bP\u0018\r@\u0017\u00d8\u00c8\u00af\u00e0G\r@\u0017\u00d7\u001e\u009a~^\r@\u0017\u00e7\u00a9%\u0012b\r@\u0017\u00f6Q\u00bb\u0081\u00eb\r@\u0017\u00fc\u0018\u00a2\u00f1\u00c8\r@\u0017\u00c2\u00c2E5*\r@\u0017\u00eaT\u009dtn\r@\u0017\u00e6\u00d9\u0012h\\\r@\u0017\u00fb\u00e9\u0019:\u00fa\r@\u0017\u00f8u^\u00b7\u00f3\r@\u0017\u00e1Ry\u00a1_\r@\u0017\u00fem*{\u00d6\r@\u0017\u00d1\u00ad@C<\r@\u0017\u00eee\u00bd-\u00c7\r@\u0017\u00eb\u000e\u00f7\u00b7#\r@\u0017\u00e3@\u0012\u00a7\u00d7\r@\u0017\u00faU\u00c3\u000e\u00fe\r@\u0017\u00ed\u00fa\u00ba\u009aL\r@\u0017\u00c3I/\u0002O\r@\u0017\u00e9\u00e5l\u0097%\r@\u0017\u00c1\u00ec\u00b8\u00edV\r@\u0017\u00dc!\u00fcL\u00b6\r@\u0017\u00d5\u00cb\u00a7Kk\r@\u0017\u00ef\u0017g&\u0081\r@\u0017\u00de%\u00a6\u00a6\u00d9\r@\u0017\u00f9\u00c2f7\u00fe\r@\u0017\u00e4\u00c4i\u00df\u00ca\r@\u0017\u00d9\u00e3\u00db\u001a\u00af\r@\u0017\u00e8\r\u001a G\r@\u0017\u00fdH\u00cf\u009b\f\r@\u0017\u00e2\u00ba\u00dc\u00a7\u001d\r@\u0017\u00d3\u00e1 \u00fc\b\r@\u0017\u00db\u00c8\u009co\u00ac\r@\u0017\u00c0\u0098\u00824\u0006\r@\u0017\u00da\u00b2ZD\u0092\r@\u0017\u00d6i3\u000e\u008b\r@\u0017\u00d0qZ.\u00e1\r@\u0017\u00c5\u001e\u001cw\u0095\r@\u0017\u00ec".length();
-                var3_5 = 0;
-                while (true) {
-                    var7_6 = var5_3.substring(var3_5, var3_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var0_1;
-                    v1 = var4_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block8;
-                    break;
-                }
-lbl14:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var3_5 < var6_4) ** continue;
-                    var5_3 = "\u0004-\u001a\u00d6\r@\u0017\u00df\u0095L\u00b7\u0003\r@\u0017\u00c8";
-                    var6_4 = "\u0004-\u001a\u00d6\r@\u0017\u00df\u0095L\u00b7\u0003\r@\u0017\u00c8".length();
-                    var3_5 = 0;
-                    while (true) {
-                        var7_6 = var5_3.substring(var3_5, var3_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var0_1;
-                        v1 = var4_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block8;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var3_5 < var6_4) ** continue;
-                    break block9;
-                    break;
-                }
-            }
-            v4 = v2 ^ var1;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
-
-                ** continue;
-            }
-        }
-        KW.G = new HashMap<K, V>();
-        KW.n = (ProtectionDomain)AccessController.doPrivileged(new xw_2());
-        v5 = new Class[(int)var0_1[13]];
-        v5[0] = ok_0.class;
-        v5[1] = O0.class;
-        v5[2] = oc_0.class;
-        v5[3] = ph_2.class;
-        v5[4] = xd_2.class;
-        v5[5] = hi_0.class;
-        v5[(int)var0_1[50]] = hf_0.class;
-        v5[(int)var0_1[3]] = df_2.class;
-        v5[(int)var0_1[9]] = ca_1.class;
-        v5[(int)var0_1[4]] = on_1.class;
-        v5[(int)var0_1[0]] = HI.class;
-        v5[(int)var0_1[47]] = ph_0.class;
-        v5[(int)var0_1[15]] = B8.class;
-        v5[(int)var0_1[28]] = S7.class;
-        v5[(int)var0_1[43]] = GT.class;
-        v5[(int)var0_1[30]] = HK.class;
-        v5[(int)var0_1[34]] = zzzzF6BeanInfo.class;
-        v5[(int)var0_1[49]] = ak_0.class;
-        v5[(int)var0_1[31]] = nj_2.class;
-        v5[(int)var0_1[6]] = nv_2.class;
-        v5[(int)var0_1[44]] = zzzzd4BeanInfo.class;
-        v5[(int)var0_1[42]] = nl_1.class;
-        v5[(int)var0_1[10]] = ym_1.class;
-        v5[(int)var0_1[37]] = wr_2.class;
-        v5[(int)var0_1[45]] = BY.class;
-        v5[(int)var0_1[11]] = wy_2.class;
-        v5[(int)var0_1[2]] = K2.class;
-        v5[(int)var0_1[32]] = H2.class;
-        v5[(int)var0_1[1]] = IK.class;
-        v5[(int)var0_1[41]] = WX.class;
-        v5[(int)var0_1[46]] = KK.class;
-        v5[(int)var0_1[22]] = cw_1.class;
-        v5[(int)var0_1[23]] = N9.class;
-        v5[(int)var0_1[33]] = EP.class;
-        v5[(int)var0_1[48]] = FW.class;
-        v5[(int)var0_1[27]] = uh_0.class;
-        v5[(int)var0_1[16]] = en_0.class;
-        v5[(int)var0_1[24]] = ep_2.class;
-        v5[(int)var0_1[38]] = IG.class;
-        v5[(int)var0_1[29]] = yn_2.class;
-        v5[(int)var0_1[17]] = P7.class;
-        v5[(int)var0_1[12]] = u9.class;
-        v5[(int)var0_1[36]] = xm_1.class;
-        v5[(int)var0_1[5]] = ge_0.class;
-        v5[(int)var0_1[40]] = o1_0.class;
-        v5[(int)var0_1[25]] = ks_0.class;
-        v5[(int)var0_1[8]] = uy_0.class;
-        v5[(int)var0_1[20]] = u7.class;
-        v5[(int)var0_1[21]] = sw_0.class;
-        v5[(int)var0_1[7]] = X4.class;
-        v5[(int)var0_1[14]] = GV.class;
-        v5[(int)var0_1[39]] = GU.class;
-        v5[(int)var0_1[26]] = da_0.class;
-        v5[(int)var0_1[18]] = dl_1.class;
-        v5[(int)var0_1[19]] = uT.class;
-        v5[(int)var0_1[35]] = ub_0.class;
-        for (Class var12_11 : var8_7 = v5) {
-            KW.G.put(var12_11.getName(), var12_11);
-        }
-    }
-
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+   private static Exception a(Exception var0) {
+      return var0;
+   }
 }
+
+
+
+
 

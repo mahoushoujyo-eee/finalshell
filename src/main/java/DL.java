@@ -1,20 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class DL
-implements Runnable {
-    final f9_0 X;
-    private final qm_0 i;
+class DL implements Runnable {
+   final f9_2 X;
+   private final Qm_2 i;
 
-    DL(f9_0 f9_02, qm_0 qm_02) {
-        this.X = f9_02;
-        this.i = qm_02;
-    }
+   DL(f9_2 var1, Qm_2 var2) {
+      this.X = var1;
+      this.i = var2;
+   }
 
-    @Override
-    public void run() {
-        this.i.Q = true;
-        this.i.u(true);
-    }
+   @Override
+   public void run() {
+      this.i.Q = true;
+      this.i.u(true);
+   }
 }
+
+
+
+
 

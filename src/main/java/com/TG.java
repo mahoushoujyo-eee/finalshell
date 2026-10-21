@@ -1,71 +1,78 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.XM;
-import com.ra_1;
 import java.awt.image.ColorModel;
 
-class TG
-extends XM {
-    public TG(float f10, ColorModel colorModel, ColorModel colorModel2) {
-        super(f10, colorModel, colorModel2);
-    }
+class TG extends XM {
+   public TG(float var1, ColorModel var2, ColorModel var3) {
+      super(var1, var2, var3);
+   }
 
-    @Override
-    public void G(int[] nArray, int[] nArray2, float f10) {
-        int n10 = nArray.length;
-        String string = ra_1.c();
-        for (int i2 = 0; i2 < n10; i2 += 4) {
-            int n11;
-            int n12;
-            int n13;
-            int n14;
-            int n15;
-            int n16;
-            int n17;
-            int n18;
-            block9: {
-                int n19;
-                block8: {
-                    int n20 = nArray[i2];
-                    n18 = nArray2[i2];
-                    int n21 = nArray[i2 + 1];
-                    n17 = nArray2[i2 + 1];
-                    int n22 = nArray[i2 + 2];
-                    n16 = nArray2[i2 + 2];
-                    n15 = nArray[i2 + 3];
-                    n14 = nArray2[i2 + 3];
-                    int n23 = n13 = n18 - n20;
-                    if (string == null) {
-                        if (n23 < 0) {
-                            n13 = -n13;
-                        }
-                        n23 = n17 - n21;
-                    }
-                    int n24 = n12 = n23;
-                    if (string == null) {
-                        if (n24 < 0) {
-                            n12 = -n12;
-                        }
-                        n24 = n16 - n22;
-                    }
-                    n19 = n11 = n24;
-                    if (string != null) break block8;
-                    if (n19 >= 0) break block9;
-                    n19 = -n11;
-                }
-                n11 = n19;
+   @Override
+   public void G(int[] var1, int[] var2, float var3) {
+      String var10000 = rA_3.c();
+      int var5 = var1.length;
+      String var4 = var10000;
+      byte var6 = 0;
+
+      while (var6 < var5) {
+         int var7 = var1[var6];
+         int var8 = var2[var6];
+         int var9 = var1[var6 + 1];
+         int var10 = var2[var6 + 1];
+         int var11 = var1[var6 + 2];
+         int var12 = var2[var6 + 2];
+         int var13 = var1[var6 + 3];
+         int var14 = var2[var6 + 3];
+         int var15 = var8 - var7;
+         int var20 = var15;
+         if (var4 == null) {
+            if (var15 < 0) {
+               var15 = -var15;
             }
-            float f11 = f10 * (float)n15 / 255.0f;
-            float f12 = 1.0f - f11;
-            nArray2[i2] = (int)(f11 * (float)n13 + f12 * (float)n18);
-            nArray2[i2 + 1] = (int)(f11 * (float)n12 + f12 * (float)n17);
-            nArray2[i2 + 2] = (int)(f11 * (float)n11 + f12 * (float)n16);
-            nArray2[i2 + 3] = (int)((float)n15 * f10 + (float)n14 * f12);
-            if (string == null) continue;
-        }
-    }
+
+            var20 = var10 - var9;
+         }
+
+         int var16 = var20;
+         int var21 = var16;
+         if (var4 == null) {
+            if (var16 < 0) {
+               var16 = -var16;
+            }
+
+            var21 = var12 - var11;
+         }
+
+         int var17;
+         label32: {
+            var17 = var21;
+            int var22 = var17;
+            if (var4 == null) {
+               if (var17 >= 0) {
+                  break label32;
+               }
+
+               var22 = -var17;
+            }
+
+            var17 = var22;
+         }
+
+         float var18 = var3 * (float)var13 / 255.0F;
+         float var19 = 1.0F - var18;
+         var2[var6] = (int)(var18 * (float)var15 + var19 * (float)var8);
+         var2[var6 + 1] = (int)(var18 * (float)var16 + var19 * (float)var10);
+         var2[var6 + 2] = (int)(var18 * (float)var17 + var19 * (float)var12);
+         var2[var6 + 3] = (int)((float)var13 * var3 + (float)var14 * var19);
+         var6 += 4;
+         if (var4 != null) {
+            break;
+         }
+      }
+   }
 }
+
+
+
+
 

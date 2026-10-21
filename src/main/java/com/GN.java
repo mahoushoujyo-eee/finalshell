@@ -1,37 +1,51 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
 public interface GN {
-    public boolean K(int var1);
+   boolean K(int var1);
 
-    public void t(int var1, String var2);
+   void t(int var1, String var2);
 
-    default public void c(int n10, String string, Throwable throwable) {
-        try {
-            if (!this.K(n10)) {
-                return;
+   default void c(int var1, String var2, Throwable var3) {
+      try {
+         if (!this.K(var1)) {
+            return;
+         }
+      } catch (Throwable var10) {
+         throw a(var10);
+      }
+
+      if (var3 != null) {
+         StringWriter var4 = new StringWriter();
+         PrintWriter var5 = new PrintWriter(var4, true);
+
+         try {
+            var3.printStackTrace(var5);
+         } catch (Throwable var9) {
+            try {
+               var5.close();
+            } catch (Throwable var8) {
+               var9.addSuppressed(var8);
             }
-        }
-        catch (Throwable throwable2) {
-            throw GN.a(throwable2);
-        }
-        if (throwable != null) {
-            StringWriter stringWriter = new StringWriter();
-            try (PrintWriter printWriter = new PrintWriter(stringWriter, true);){
-                throwable.printStackTrace(printWriter);
-            }
-            string = string + System.lineSeparator() + stringWriter.toString();
-        }
-        this.t(n10, string);
-    }
 
-    private static Throwable a(Throwable throwable) {
-        return throwable;
-    }
+            throw var9;
+         }
+
+         var5.close();
+         var2 = var2 + System.lineSeparator() + var4.toString();
+      }
+
+      this.t(var1, var2);
+   }
+
+   private static Throwable a(Throwable var0) {
+      return var0;
+   }
 }
+
+
+
+
 

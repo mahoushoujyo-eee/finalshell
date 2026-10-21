@@ -1,53 +1,72 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class aB {
-    ArrayList h;
-    N a;
+   ArrayList h;
+   N a;
 
-    public N q(String string) {
-        N n102;
-        block4: {
-            N n11 = null;
-            String string2 = W2.F();
-            for (N n102 : (ArrayList)this.h) {
-                String string3;
-                if (string2 == null) break block4;
-                N n12 = n102;
-                try {
-                    string3 = (String)n12.o();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                if (string.equals(string3)) {
-                    n11 = n12;
-                }
-                if (string2 != null) continue;
+   public N q(String var1) {
+      String var10000 = W2.F();
+      N var3 = null;
+      String var2 = var10000;
+      Iterator var4 = ((ArrayList)com.c.c(246866782302869295L).get(this)).iterator();
+
+      while (true) {
+         if (var4.hasNext()) {
+            var7 = (N)var4.next();
+            if (var2 == null) {
+               break;
             }
-            n102 = n11;
-        }
-        return n102;
-    }
 
-    public ArrayList q() {
-        return (ArrayList)this.h;
-    }
+            N var5 = var7;
+            Object[] var10002 = com.c.f();
+            Method var10004 = com.c.d(325825537657373656L);
+            Object[] var10003 = var10002;
+            N var9 = var5;
+            Method var10001 = var10004;
 
-    public void r(ArrayList arrayList) {
-        this.h = arrayList;
-    }
+            try {
+               var8 = (String)var10001.invoke(var9, var10003);
+            } catch (InvocationTargetException var6) {
+               throw var6.getTargetException();
+            }
 
-    public N x() {
-        return (N)this.a;
-    }
+            if (var1.equals(var8)) {
+               var3 = var5;
+            }
 
-    public void S(N n10) {
-        this.a = n10;
-    }
+            if (var2 != null) {
+               continue;
+            }
+         }
+
+         var7 = var3;
+         break;
+      }
+
+      return var7;
+   }
+
+   public ArrayList q() {
+      return (ArrayList)com.c.c(246866782302869295L).get(this);
+   }
+
+   public void r(ArrayList var1) {
+      com.c.c(246866782302869295L).set(this, var1);
+   }
+
+   public N x() {
+      return (N)com.c.c(619718667615599045L).get(this);
+   }
+
+   public void S(N var1) {
+      com.c.c(619718667615599045L).set(this, var1);
+   }
 }
+
+
+
+
 

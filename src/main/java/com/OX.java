@@ -1,26 +1,24 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.D2;
-import com.O_;
 import java.awt.Dimension;
 
-class OX
-extends O_ {
-    final D2 Y;
+class OX extends com.O_ {
+   final com.D2 Y;
 
-    OX(D2 d2, String string, int n10, Object[] objectArray) {
-        this.Y = d2;
-        super(string, n10, objectArray);
-    }
+   OX(com.D2 var1, String var2, int var3, Object[] var4) {
+      super(var2, var3, var4);
+      this.Y = var1;
+   }
 
-    @Override
-    public Dimension getPreferredSize() {
-        Dimension dimension = super.getPreferredSize();
-        dimension.width = 0;
-        return dimension;
-    }
+   @Override
+   public Dimension getPreferredSize() {
+      Dimension var1 = super.getPreferredSize();
+      var1.width = 0;
+      return var1;
+   }
 }
+
+
+
+
 

@@ -1,44 +1,42 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.WZ;
-import com._y_0;
-import com.lg_1;
-import com.pe_1;
-import com.xf_1;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.util.Objects;
 import javax.swing.JComponent;
 import javax.swing.plaf.basic.BasicScrollBarUI;
 
-class aF
-extends BasicScrollBarUI {
-    final _y_0 t;
+class aF extends BasicScrollBarUI {
+   final _y_2 t;
 
-    private aF(_y_0 _y_02) {
-        this.t = _y_02;
-    }
+   private aF(_y_2 var1) {
+      this.t = var1;
+   }
 
-    @Override
-    protected void paintTrack(Graphics graphics, JComponent jComponent, Rectangle rectangle) {
-        int n10 = _y_0.y();
-        super.paintTrack(graphics, jComponent, rectangle);
-        int n11 = n10;
-        WZ wZ = this.t.kj.f();
-        if (wZ != null) {
-            int n12 = this.scrollbar.getModel().getMaximum() - this.scrollbar.getModel().getMinimum();
-            int n13 = Math.max(2, rectangle.height / n12);
-            xf_1 xf_12 = this.t.kC.M().o(Objects.requireNonNull(this.t.kC.i().s()));
-            graphics.setColor(lg_1.H(xf_12));
-            for (pe_1 pe_12 : wZ.B()) {
-                int n14 = rectangle.height * pe_12.s().r / n12;
-                graphics.fillRect(rectangle.x, rectangle.y + n14, rectangle.width, n13);
-                if (n11 == 0) continue;
+   @Override
+   protected void paintTrack(Graphics var1, JComponent var2, Rectangle var3) {
+      int var10000 = _y_2.y();
+      super.paintTrack(var1, var2, var3);
+      int var4 = var10000;
+      com.WZ var5 = this.t.kj.f();
+      if (var5 != null) {
+         int var6 = this.scrollbar.getModel().getMaximum() - this.scrollbar.getModel().getMinimum();
+         int var7 = Math.max(2, var3.height / var6);
+         xF_3 var8 = this.t.kC.M().o(Objects.requireNonNull(this.t.kC.i().s()));
+         var1.setColor(com.lG_3.H(var8));
+
+         for (pE_3 var10 : var5.B()) {
+            int var11 = var3.height * var10.s().r / var6;
+            var1.fillRect(var3.x, var3.y + var11, var3.width, var7);
+            if (var4 != 0) {
+               break;
             }
-        }
-    }
+         }
+      }
+   }
 }
+
+
+
+
 

@@ -1,58 +1,63 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class OB
-implements MouseListener {
-    final xw_0 W;
+class OB implements MouseListener {
+   final xw_2 W;
 
-    OB(xw_0 xw_02) {
-        this.W = xw_02;
-    }
+   OB(xw_2 var1) {
+      this.W = var1;
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-        block7: {
-            int n10;
-            int n11;
-            block6: {
-                boolean bl = F6.g();
-                n11 = mouseEvent.getClickCount();
-                n10 = 2;
-                if (bl) break block6;
-                if (n11 != n10) break block7;
-                n11 = mouseEvent.getButton();
-                n10 = 1;
-            }
-            if (n11 == n10) {
-                try {
-                    this.W.F();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-            }
-        }
-    }
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+      boolean var2 = F6.g();
+      int var10000 = var1.getClickCount();
+      byte var10001 = 2;
+      if (!var2) {
+         if (var10000 != 2) {
+            return;
+         }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-    }
+         var10000 = var1.getButton();
+         var10001 = 1;
+      }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-    }
+      if (var10000 == var10001) {
+         Object var4 = com.c.c(302105993042482768L).get(this);
+         Object[] var6 = com.c.f();
+         Method var10003 = com.c.d(297395466930437108L);
+         Object[] var10002 = var6;
+         Object var7 = var4;
+         Method var5 = var10003;
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-    }
+         try {
+            var5.invoke(var7, var10002);
+         } catch (InvocationTargetException var3) {
+            throw var3.getTargetException();
+         }
+      }
+   }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseExited(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+   }
 }
+
+
+
+
 

@@ -1,171 +1,187 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import javax.swing.JLabel;
 
-public class LI
-extends JLabel {
-    boolean z;
-    kl_0 J;
-    private static final long[] a;
-    private static final Integer[] b;
+public class LI extends JLabel {
+   boolean z;
+   Kl_2 J;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public LI() {
-        this.z = false;
-    }
+   public LI() {
+      com.c.c(489863265832754423L).setBoolean(this, false);
+   }
 
-    @Override
-    public void paint(Graphics graphics) {
-        LI lI;
-        block6: {
-            block7: {
-                int n10;
-                int n11;
-                int n12;
-                int n13;
-                Graphics2D graphics2D;
-                block8: {
-                    Color color;
-                    block9: {
-                        long l2;
-                        long l3;
-                        graphics2D = (Graphics2D)graphics;
-                        boolean bl = s.p();
-                        lI = this;
-                        if (bl) break block6;
-                        if ((kl_0)lI.J == null) break block7;
-                        lI = this;
-                        if (bl) break block6;
-                        if (!lI.z) break block7;
-                        color = new Color(LI.a(14128, 5120093020140478051L), LI.a(22044, 7117432141894647630L), LI.a(3014, 3587927999217345174L), LI.a(25358, 3707060545719781983L));
-                        graphics2D.setColor(color);
-                        try {
-                            l3 = (Long)this.J.R();
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        try {
-                            l2 = (Long)this.J.q();
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        float f10 = (float)l3 / (float)l2;
-                        n13 = 2;
-                        n12 = 2;
-                        int n14 = 0;
-                        int n15 = 2;
-                        n11 = (int)(((float)this.getWidth() - (float)n15) * f10) + n14;
-                        n10 = n13;
-                        if (bl) break block8;
-                        if (!(f10 > 0.0f)) break block9;
-                        graphics2D.fillRect(this.getWidth() - n11 - n12, n10, n11, this.getHeight() - 2 * n13);
-                        if (!bl) break block7;
-                    }
-                    graphics2D.setColor(color);
-                }
-                graphics2D.fillRect(this.getWidth() - n11 - n12, n10, n11, this.getHeight() - 2 * n13);
+   @Override
+   public void paint(Graphics var1) {
+      LI var14;
+      boolean var10000 = s.p();
+      Graphics2D var3 = (Graphics2D)var1;
+      boolean var2 = var10000;
+      var14 = this;
+      label44:
+      if (!var2) {
+         if ((Kl_2)com.c.c(227134258213482384L).get(this) != null) {
+            var14 = this;
+            if (var2) {
+               break label44;
             }
-            lI = this;
-        }
-        super.paint(graphics);
-    }
 
-    public boolean X() {
-        return this.z;
-    }
+            label40:
+            if (com.c.c(489863265832754423L).getBoolean(this)) {
+               Color var4 = new Color(
+                  a(14128, 5120093020140478051L), a(22044, 7117432141894647630L), a(3014, 3587927999217345174L), a(25358, 3707060545719781983L)
+               );
+               var3.setColor(var4);
+               Object var15 = com.c.c(227134258213482384L).get(this);
+               Object[] var10001 = com.c.f();
+               Method var10003 = com.c.d(431375544983974376L);
+               Object[] var10002 = var10001;
+               var10001 = (Object[])var15;
+               var15 = var10003;
 
-    public void R(boolean bl) {
-        this.z = bl;
-    }
+               try {
+                  var17 = (Long)var15.invoke(var10001, var10002);
+               } catch (InvocationTargetException var13) {
+                  throw var13.getTargetException();
+               }
 
-    public kl_0 Y() {
-        return (kl_0)this.J;
-    }
+               float var18 = (float)var17;
+               var10001 = (Object[])com.c.c(227134258213482384L).get(this);
+               var10002 = com.c.f();
+               Method var10004 = com.c.d(399113218510016089L);
+               Object[] var25 = var10002;
+               var10002 = var10001;
+               Method var21 = var10004;
 
-    public void e(kl_0 kl_02) {
-        this.J = kl_02;
-    }
+               try {
+                  var22 = (Long)var21.invoke(var10002, var25);
+               } catch (InvocationTargetException var12) {
+                  throw var12.getTargetException();
+               }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 9081866470908194073L;
-                var6_1 = new long[4];
-                var3_2 = 0;
-                var4_3 = "/\u00f4i\u001frms \u009ag\u0016c\u00c2\u0090\u0092\u00fd";
-                var5_4 = "/\u00f4i\u001frms \u009ag\u0016c\u00c2\u0090\u0092\u00fd".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
+               float var5 = var18 / (float)var22;
+               byte var6 = 2;
+               byte var7 = 2;
+               byte var8 = 0;
+               byte var9 = 2;
+               int var10 = (int)(((float)this.getWidth() - (float)var9) * var5) + var8;
+               if (!var2) {
+                  if (var5 > 0.0F) {
+                     var3.fillRect(this.getWidth() - var10 - var7, var6, var10, this.getHeight() - 2 * var6);
+                     if (!var2) {
+                        break label40;
+                     }
+                  }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "\u00b3&\u00b2V\u00ec}'\u0016QM\u00c9\u00abq\u0004O\u0019";
-                    var5_4 = "\u00b3&\u00b2V\u00ec}'\u0016QM\u00c9\u00abq\u0004O\u0019".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
+                  var3.setColor(var4);
+               }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+               var3.fillRect(this.getWidth() - var10 - var7, var6, var10, this.getHeight() - 2 * var6);
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
+         }
 
-                ** continue;
+         var14 = this;
+      }
+
+      var14.paint(var1);
+   }
+
+   public boolean X() {
+      return com.c.c(489863265832754423L).getBoolean(this);
+   }
+
+   public void R(boolean var1) {
+      com.c.c(489863265832754423L).setBoolean(this, var1);
+   }
+
+   public Kl_2 Y() {
+      return (Kl_2)com.c.c(227134258213482384L).get(this);
+   }
+
+   public void e(Kl_2 var1) {
+      com.c.c(227134258213482384L).set(this, var1);
+   }
+
+   static {
+      long var0 = 9081866470908194073L;
+      long[] var6 = new long[4];
+      int var3 = 0;
+      String var4 = "/ôi\u001frms \u009ag\u0016cÂ\u0090\u0092ý";
+      int var5 = "/ôi\u001frms \u009ag\u0016cÂ\u0090\u0092ý".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     b = new Integer[4];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "³&²Vì}'\u0016QMÉ«q\u0004O\u0019";
+                  var5 = "³&²Vì}'\u0016QMÉ«q\u0004O\u0019".length();
+                  var2 = 0;
             }
-        }
-        LI.a = var6_1;
-        LI.b = new Integer[4];
-    }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x2953;
-        if (b[n11] == null) {
-            LI.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 10579;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

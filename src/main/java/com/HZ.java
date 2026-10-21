@@ -1,37 +1,38 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.GR;
-import com.oj_0;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-class HZ
-extends KeyAdapter {
-    final oj_0 B;
+class HZ extends KeyAdapter {
+   final com.Oj_2 B;
 
-    HZ(oj_0 oj_02) {
-        this.B = oj_02;
-    }
+   HZ(com.Oj_2 var1) {
+      this.B = var1;
+   }
 
-    @Override
-    public void keyReleased(KeyEvent keyEvent) {
-        block4: {
-            block3: {
-                boolean bl;
-                block2: {
-                    boolean bl2 = oj_0.V();
-                    bl = GR.lZ.J(keyEvent);
-                    if (bl2) break block2;
-                    if (bl) break block3;
-                    bl = GR.rN.J(keyEvent);
-                }
-                if (!bl) break block4;
+   @Override
+   public void keyReleased(KeyEvent var1) {
+      label16: {
+         boolean var2 = com.Oj_2.V();
+         boolean var10000 = GR.lZ.J(var1);
+         if (!var2) {
+            if (var10000) {
+               break label16;
             }
-            this.B.A();
-        }
-    }
+
+            var10000 = GR.rN.J(var1);
+         }
+
+         if (!var10000) {
+            return;
+         }
+      }
+
+      this.B.A();
+   }
 }
+
+
+
+
 

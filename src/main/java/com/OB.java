@@ -1,32 +1,28 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.OS;
-import com.cz_0;
-import com.kd_2;
-import com.oq_0;
 import java.awt.Component;
 import java.io.File;
 import javax.swing.JList;
 
-class OB
-extends oq_0 {
-    final kd_2 l;
+class OB extends com.Oq_2 {
+   final com.kd_4 l;
 
-    OB(kd_2 kd_22) {
-        this.l = kd_22;
-    }
+   OB(com.kd_4 var1) {
+      this.l = var1;
+   }
 
-    @Override
-    public Component getListCellRendererComponent(JList jList, Object object, int n10, boolean bl, boolean bl2) {
-        OS oS = (OS)super.getListCellRendererComponent(jList, object, n10, bl, bl2);
-        File file = (File)object;
-        oS.setIcon(cz_0.B(file));
-        String string = cz_0.X(file);
-        oS.setText(cz_0.b(string, kd_2.L(this.l)));
-        return oS;
-    }
+   @Override
+   public Component getListCellRendererComponent(JList var1, Object var2, int var3, boolean var4, boolean var5) {
+      com.OS var6 = (com.OS)super.getListCellRendererComponent(var1, var2, var3, var4, var5);
+      File var7 = (File)var2;
+      var6.setIcon(com.Cz_2.B(var7));
+      String var8 = com.Cz_2.X(var7);
+      var6.setText(com.Cz_2.b(var8, com.kd_4.L(this.l)));
+      return var6;
+   }
 }
+
+
+
+
 

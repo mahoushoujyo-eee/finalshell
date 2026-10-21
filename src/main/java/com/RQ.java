@@ -1,35 +1,25 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.GR;
-import com.k3_0;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-class RQ
-extends KeyAdapter {
-    final k3_0 t;
+class RQ extends KeyAdapter {
+   final com.k3_2 t;
 
-    RQ(k3_0 k3_02) {
-        this.t = k3_02;
-    }
+   RQ(com.k3_2 var1) {
+      this.t = var1;
+   }
 
-    @Override
-    public void keyReleased(KeyEvent keyEvent) {
-        block2: {
-            boolean bl;
-            block3: {
-                int[] nArray = k3_0.L();
-                bl = GR.lZ.J(keyEvent);
-                if (nArray == null) break block2;
-                if (bl) break block3;
-                bl = GR.rN.J(keyEvent);
-                if (nArray == null || !bl) break block2;
-            }
-            bl = this.t.q();
-        }
-    }
+   @Override
+   public void keyReleased(KeyEvent var1) {
+      int[] var2 = com.k3_2.L();
+      if (var2 != null && (GR.lZ.J(var1) || var2 != null && GR.rN.J(var1))) {
+         this.t.q();
+      }
+   }
 }
+
+
+
+
 

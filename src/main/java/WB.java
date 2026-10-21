@@ -1,69 +1,87 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class WB
-extends Thread {
-    final mm_0 H;
-    private static final long[] a;
-    private static final Long[] b;
+class WB extends Thread {
+   final mm_2 H;
+   private static final long[] a;
+   private static final Long[] b;
 
-    WB(mm_0 mm_02) {
-        this.H = mm_02;
-    }
+   WB(mm_2 var1) {
+      this.H = var1;
+   }
 
-    @Override
-    public void run() {
-        long l2 = System.currentTimeMillis();
-        boolean bl = mm_0.O();
-        while (true) {
-            if (Math.abs(System.currentTimeMillis() - l2) > WB.a(31173, 7999736964170235622L)) {
-                l2 = System.currentTimeMillis();
-                try {
-                    if (!bl) continue;
-                    this.H.M();
-                }
-                catch (InterruptedException interruptedException) {
-                    throw WB.a(interruptedException);
-                }
-            }
+   @Override
+   public void run() {
+      boolean var10000 = mm_2.O();
+      long var2 = System.currentTimeMillis();
+      boolean var1 = var10000;
+
+      while (true) {
+         while (Math.abs(System.currentTimeMillis() - var2) > a(31173, 7999736964170235622L)) {
+            var2 = System.currentTimeMillis();
+
             try {
-                Thread.sleep(WB.a(21271, 3146832257850807349L));
+               if (var1) {
+                  this.H.M();
+                  break;
+               }
+            } catch (InterruptedException var6) {
+               throw a(var6);
             }
-            catch (InterruptedException interruptedException) {
-                return;
-            }
-        }
-    }
+         }
 
-    private static InterruptedException a(InterruptedException interruptedException) {
-        return interruptedException;
-    }
+         try {
+            Thread.sleep(a(21271, 3146832257850807349L));
+         } catch (InterruptedException var5) {
+            return;
+         }
+      }
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 567096599806601209L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = ",up\u001eH=\u00f3\u00a8h\u00da}85 Z\u00f7";
-        int n11 = ",up\u001eH=\u00f3\u00a8h\u00da}85 Z\u00f7".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Long[2];
-    }
+   private static InterruptedException a(InterruptedException var0) {
+      return var0;
+   }
 
-    private static long a(int n10, long l2) {
-        int n11 = (n10 ^ (int)l2 ^ 0x4722) & Short.MAX_VALUE;
-        if (b[n11] == null) {
-            WB.b[n11] = a[n11] ^ l2;
-        }
-        return b[n11];
-    }
+   static {
+      long var0 = 567096599806601209L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = ",up\u001eH=ó¨hÚ}85 Z÷";
+      int var5 = ",up\u001eH=ó¨hÚ}85 Z÷".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Long[2];
+   }
+
+   private static long a(int var0, long var1) {
+      int var3 = (var0 ^ (int)var1 ^ 18210) & 32767;
+      if (b[var3] == null) {
+         b[var3] = a[var3] ^ var1;
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

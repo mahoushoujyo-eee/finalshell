@@ -1,19 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
 public class C3 {
-    final short k;
-    final short s;
-    final short E;
-    final short O;
+   final short k;
+   final short s;
+   final short E;
+   final short O;
 
-    public C3(short s2, short s3, short s4, short s5) {
-        this.k = s2;
-        this.s = s3;
-        this.E = s4;
-        this.O = s5;
-    }
+   public C3(short var1, short var2, short var3, short var4) {
+      this.k = var1;
+      this.s = var2;
+      this.E = var3;
+      this.O = var4;
+   }
 }
+
+
+
+
 

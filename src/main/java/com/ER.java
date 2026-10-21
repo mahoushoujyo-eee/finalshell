@@ -1,22 +1,17 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.GN;
+class ER implements GN {
+   @Override
+   public boolean K(int var1) {
+      return false;
+   }
 
-class ER
-implements GN {
-    ER() {
-    }
-
-    @Override
-    public boolean K(int n10) {
-        return false;
-    }
-
-    @Override
-    public void t(int n10, String string) {
-    }
+   @Override
+   public void t(int var1, String var2) {
+   }
 }
+
+
+
+
 

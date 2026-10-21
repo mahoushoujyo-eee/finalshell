@@ -1,58 +1,82 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import javax.swing.JCheckBox;
 
-class mP
-implements ActionListener {
-    final JCheckBox Y;
-    final zt_0 u;
+class mP implements ActionListener {
+   final JCheckBox Y;
+   final zt_2 u;
 
-    mP(zt_0 zt_02, JCheckBox jCheckBox) {
-        this.u = zt_02;
-        this.Y = jCheckBox;
-    }
+   mP(zt_2 var1, JCheckBox var2) {
+      this.u = var1;
+      this.Y = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        Object object;
-        Object object2;
-        Object object3;
-        boolean bl = ((JCheckBox)this.Y).isSelected();
-        try {
-            object3 = yt_1.i();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            object2 = object3.h();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            object2.e(bl);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            object = yt_1.i();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            object.S();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      boolean var2 = ((JCheckBox)com.c.c(154700518964492611L).get(this)).isSelected();
+      Object[] var10000 = com.c.f();
+      Method var8 = com.c.d(270389152141252877L);
+      Object[] var26 = var10000;
+      Object var17 = null;
+
+      try {
+         var10000 = (Object[])var8.invoke(var17, var26);
+      } catch (InvocationTargetException var7) {
+         throw var7.getTargetException();
+      }
+
+      var17 = com.c.f();
+      Method var10003 = com.c.d(306266403902896148L);
+      var26 = (Object[])var17;
+      var17 = var10000;
+      Method var10 = var10003;
+
+      try {
+         var10000 = (Object[])var10.invoke(var17, var26);
+      } catch (InvocationTargetException var6) {
+         throw var6.getTargetException();
+      }
+
+      var17 = com.c.a(var2);
+      var10003 = com.c.d(294944257401050698L);
+      var26 = (Object[])var17;
+      var17 = var10000;
+      Method var12 = var10003;
+
+      try {
+         var12.invoke(var17, var26);
+      } catch (InvocationTargetException var5) {
+         throw var5.getTargetException();
+      }
+
+      var10000 = com.c.f();
+      Method var14 = com.c.d(270389152141252877L);
+      var26 = var10000;
+      var17 = null;
+
+      try {
+         var10000 = (Object[])var14.invoke(var17, var26);
+      } catch (InvocationTargetException var4) {
+         throw var4.getTargetException();
+      }
+
+      var17 = com.c.f();
+      var10003 = com.c.d(578864097947885485L);
+      var26 = (Object[])var17;
+      var17 = var10000;
+      Method var16 = var10003;
+
+      try {
+         var16.invoke(var17, var26);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
+   }
 }
+
+
+
+
 

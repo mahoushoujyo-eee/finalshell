@@ -1,72 +1,85 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Insets;
 import javax.swing.JPanel;
 
-public class SP
-extends JPanel {
-    protected Dimension K = new Dimension(SP.a(22388, 1388335077066673046L), SP.a(12892, 5118450692145278652L));
-    private static final long[] a;
-    private static final Integer[] b;
+public class SP extends JPanel {
+   protected Dimension K = new Dimension(a(22388, 1388335077066673046L), a(12892, 5118450692145278652L));
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public SP() {
-        this.setOpaque(false);
-    }
+   public SP() {
+      this.setOpaque(false);
+   }
 
-    @Override
-    protected void paintComponent(Graphics graphics) {
-        Insets insets = this.getBorder().getBorderInsets(this);
-        int n10 = insets.left;
-        int n11 = this.getBorder().getBorderInsets((Component)this).top;
-        int n12 = this.getWidth();
-        int n13 = this.getHeight();
-        Graphics2D graphics2D = (Graphics2D)graphics;
-        int n14 = 0;
-        graphics2D.setColor(new Color(n14, n14, n14, SP.a(21641, 3944900261045733482L)));
-        graphics2D.fillRoundRect(n10, n11, n12 - insets.left - insets.right, n13 - insets.top - insets.bottom, this.K.width, this.K.height);
-    }
+   @Override
+   protected void paintComponent(Graphics var1) {
+      Insets var2 = this.getBorder().getBorderInsets(this);
+      int var3 = var2.left;
+      int var4 = this.getBorder().getBorderInsets(this).top;
+      int var5 = this.getWidth();
+      int var6 = this.getHeight();
+      Graphics2D var7 = (Graphics2D)var1;
+      byte var8 = 0;
+      var7.setColor(new Color(var8, var8, var8, a(21641, 3944900261045733482L)));
+      var7.fillRoundRect(var3, var4, var5 - var2.left - var2.right, var6 - var2.top - var2.bottom, this.K.width, this.K.height);
+   }
 
-    public Dimension z() {
-        return this.K;
-    }
+   public Dimension z() {
+      return this.K;
+   }
 
-    public void x(Dimension dimension) {
-        this.K = dimension;
-    }
+   public void x(Dimension var1) {
+      this.K = var1;
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5641139834241331243L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "\u00d5\u00b4\u008d\u00b6\u0015\u0084\u00bb\u00a9\u00ac\u00f1\u0015\u00e7a\u00b8\u00b8\u0011g\u00ef\u00b4`\u00a5\u00e9^\u0083";
-        int n11 = "\u00d5\u00b4\u008d\u00b6\u0015\u0084\u00bb\u00a9\u00ac\u00f1\u0015\u00e7a\u00b8\u00b8\u0011g\u00ef\u00b4`\u00a5\u00e9^\u0083".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[3];
-    }
+   static {
+      long var0 = 5641139834241331243L;
+      long[] var6 = new long[3];
+      int var3 = 0;
+      String var4 = "Õ´\u008d¶\u0015\u0084»©¬ñ\u0015ça¸¸\u0011gï´`¥é^\u0083";
+      int var5 = "Õ´\u008d¶\u0015\u0084»©¬ñ\u0015ça¸¸\u0011gï´`¥é^\u0083".length();
+      byte var2 = 0;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x5CE2;
-        if (b[n11] == null) {
-            SP.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[3];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 23778;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

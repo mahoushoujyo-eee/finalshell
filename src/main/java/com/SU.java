@@ -1,76 +1,85 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.EW;
-import com.XE;
-import com._y_0;
-import com.iy_1;
-import com.pa_1;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class SU
-extends MouseAdapter {
-    final iy_1 c;
-    final pa_1 e;
+class SU extends MouseAdapter {
+   final iY_3 c;
+   final pA_3 e;
 
-    SU(pa_1 pa_12, iy_1 iy_12) {
-        this.e = pa_12;
-        this.c = iy_12;
-    }
+   SU(pA_3 var1, iY_3 var2) {
+      this.e = var1;
+      this.c = var2;
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        block3: {
-            MouseEvent mouseEvent2;
-            pa_1 pa_12;
-            block4: {
-                boolean bl;
-                block2: {
-                    int n10 = _y_0.M();
-                    bl = pa_1.S(this.e).t();
-                    if (n10 == 0) break block2;
-                    if (!bl) break block3;
-                    pa_12 = this.e;
-                    mouseEvent2 = mouseEvent;
-                    if (n10 == 0) break block4;
-                    bl = pa_12.b(mouseEvent2);
-                }
-                if (!bl) break block3;
-                pa_12 = this.e;
-                mouseEvent2 = mouseEvent;
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      pA_3 var4;
+      MouseEvent var10001;
+      label24: {
+         int var2 = _y_2.M();
+         boolean var10000 = pA_3.S(this.e).t();
+         if (var2 != 0) {
+            if (!var10000) {
+               return;
             }
-            XE xE2 = pa_1.x(pa_12, mouseEvent2.getPoint());
-            this.c.u(xE2.q, xE2.r, new EW(mouseEvent));
-        }
-    }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-        block3: {
-            MouseEvent mouseEvent2;
-            pa_1 pa_12;
-            block4: {
-                boolean bl;
-                block2: {
-                    int n10 = _y_0.M();
-                    bl = pa_1.S(this.e).t();
-                    if (n10 == 0) break block2;
-                    if (!bl) break block3;
-                    pa_12 = this.e;
-                    mouseEvent2 = mouseEvent;
-                    if (n10 == 0) break block4;
-                    bl = pa_12.b(mouseEvent2);
-                }
-                if (!bl) break block3;
-                pa_12 = this.e;
-                mouseEvent2 = mouseEvent;
+            var4 = this.e;
+            var10001 = var1;
+            if (var2 == 0) {
+               break label24;
             }
-            XE xE2 = pa_1.x(pa_12, mouseEvent2.getPoint());
-            this.c.z(xE2.q, xE2.r, new EW(mouseEvent));
-        }
-    }
+
+            var10000 = this.e.b(var1);
+         }
+
+         if (!var10000) {
+            return;
+         }
+
+         var4 = this.e;
+         var10001 = var1;
+      }
+
+      XE var3 = pA_3.x(var4, var10001.getPoint());
+      this.c.u(var3.q, var3.r, new EW(var1));
+   }
+
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+      pA_3 var4;
+      MouseEvent var10001;
+      label24: {
+         int var2 = _y_2.M();
+         boolean var10000 = pA_3.S(this.e).t();
+         if (var2 != 0) {
+            if (!var10000) {
+               return;
+            }
+
+            var4 = this.e;
+            var10001 = var1;
+            if (var2 == 0) {
+               break label24;
+            }
+
+            var10000 = this.e.b(var1);
+         }
+
+         if (!var10000) {
+            return;
+         }
+
+         var4 = this.e;
+         var10001 = var1;
+      }
+
+      XE var3 = pA_3.x(var4, var10001.getPoint());
+      this.c.z(var3.q, var3.r, new EW(var1));
+   }
 }
+
+
+
+
 

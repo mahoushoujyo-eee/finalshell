@@ -1,51 +1,48 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.PQ;
-import com.WF;
-import com.yi_0;
 import java.awt.Rectangle;
 import javax.swing.JComponent;
 
-public abstract class Y8
-extends yi_0 {
-    public Rectangle s(PQ pQ, Object object, int n10, int n11, boolean bl) {
-        Rectangle rectangle = pQ.getCellRect(n10, n11, false);
-        return rectangle.intersection(pQ.getVisibleRect());
-    }
+public abstract class Y8 extends com.Yi_2 {
+   public Rectangle s(PQ var1, Object var2, int var3, int var4, boolean var5) {
+      Rectangle var6 = var1.getCellRect(var3, var4, false);
+      return var6.intersection(var1.getVisibleRect());
+   }
 
-    public WF K(PQ pQ, Object object, int n10, int n11, boolean bl) {
-        return WF.down;
-    }
+   public com.WF K(PQ var1, Object var2, int var3, int var4, boolean var5) {
+      return com.WF.down;
+   }
 
-    protected Object n(PQ pQ, int n10, int n11) {
-        return pQ.getValueAt(n10, n11);
-    }
+   protected Object n(PQ var1, int var2, int var3) {
+      return var1.getValueAt(var2, var3);
+   }
 
-    protected boolean H(PQ pQ, int n10, int n11) {
-        return pQ.isCellSelected(n10, n11);
-    }
+   protected boolean H(PQ var1, int var2, int var3) {
+      return var1.isCellSelected(var2, var3);
+   }
 
-    @Override
-    protected boolean M(JComponent jComponent, int n10, int n11) {
-        return this.H((PQ)jComponent, n10, n11);
-    }
+   @Override
+   protected boolean M(JComponent var1, int var2, int var3) {
+      return this.H((PQ)var1, var2, var3);
+   }
 
-    @Override
-    protected Object c(JComponent jComponent, int n10, int n11) {
-        return this.n((PQ)jComponent, n10, n11);
-    }
+   @Override
+   protected Object c(JComponent var1, int var2, int var3) {
+      return this.n((PQ)var1, var2, var3);
+   }
 
-    @Override
-    public WF h(JComponent jComponent, Object object, int n10, int n11, boolean bl) {
-        return this.K((PQ)jComponent, object, n10, n11, bl);
-    }
+   @Override
+   public com.WF h(JComponent var1, Object var2, int var3, int var4, boolean var5) {
+      return this.K((PQ)var1, var2, var3, var4, var5);
+   }
 
-    @Override
-    public Rectangle E(JComponent jComponent, Object object, int n10, int n11, boolean bl) {
-        return this.s((PQ)jComponent, object, n10, n11, bl);
-    }
+   @Override
+   public Rectangle E(JComponent var1, Object var2, int var3, int var4, boolean var5) {
+      return this.s((PQ)var1, var2, var3, var4, var5);
+   }
 }
+
+
+
+
 

@@ -1,41 +1,36 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.V;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import org.V.N;
-import org.V.X;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-class p
-implements N {
-    final byte[] Z;
-    final String d;
-    final X P;
+class p implements org.V.N {
+   final byte[] Z;
+   final String d;
+   final org.V.X P;
 
-    p(X x10, byte[] byArray, String string) {
-        this.P = x10;
-        this.Z = byArray;
-        this.d = string;
-    }
+   p(org.V.X var1, byte[] var2, String var3) {
+      this.P = var1;
+      this.Z = var2;
+      this.d = var3;
+   }
 
-    @Override
-    public InputStream o() {
-        return new ByteArrayInputStream(this.Z);
-    }
+   @Override
+   public InputStream o() {
+      return new ByteArrayInputStream(this.Z);
+   }
 
-    @Override
-    public String o() {
-        return this.d;
-    }
+   @Override
+   public String o$String() {
+      return this.d;
+   }
 
-    @Override
-    public long z() {
-        return X.f(this.P);
-    }
+   @Override
+   public long z() {
+      return org.V.X.f(this.P);
+   }
 }
+
+
+
+
 

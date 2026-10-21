@@ -1,41 +1,39 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.A;
 
-import com.A.V;
-import com.A.d;
-import com.a.y_0;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
-class O
-extends ComponentAdapter {
-    final V V;
-    final d p;
-    private static final long a;
+class O extends ComponentAdapter {
+   final V V;
+   final com.A.d p;
+   private static final long a;
 
-    O(d d2, V v2) {
-        this.p = d2;
-        this.V = v2;
-    }
+   O(com.A.d var1, V var2) {
+      this.p = var1;
+      this.V = var2;
+   }
 
-    @Override
-    public void componentResized(ComponentEvent componentEvent) {
-        int[] nArray = y_0.M();
-        int n10 = this.V.k().width;
-        if (nArray != null) {
-            n10 = n10 > this.V.getWidth() ? (int)a : 0;
-        }
-        this.V.setHorizontalAlignment(n10);
-    }
+   @Override
+   public void componentResized(ComponentEvent var1) {
+      int[] var2 = com.A.y_2.M();
+      V var10000 = this.V;
+      int var10001 = this.V.k().width;
+      if (var2 != null) {
+         var10001 = var10001 > this.V.getWidth() ? (int)a : 0;
+      }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 4724208833045813334L;
-        a = 0x8D23BE535A75585CL ^ l2;
-    }
+      var10000.setHorizontalAlignment(var10001);
+   }
+
+   static {
+      long var0 = 4724208833045813334L;
+      long var10002 = -8276562424967636900L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

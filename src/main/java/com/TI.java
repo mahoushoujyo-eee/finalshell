@@ -1,365 +1,460 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.T4;
-import com.ky_2;
-import com.oy_1;
-import com.u_;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.util.List;
 
-public class TI
-extends T4 {
-    final oy_1 r;
-    private static final long[] a;
-    private static final Integer[] b;
+public class TI extends com.T4 {
+   final com.oY_3 r;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    protected TI(oy_1 oy_12) {
-        this.r = oy_12;
-    }
+   protected TI(com.oY_3 var1) {
+      this.r = var1;
+   }
 
-    @Override
-    public void layoutContainer(Container container) {
-        int n10 = this.r.getComponentOrientation().isLeftToRight();
-        int n11 = 0;
-        boolean bl = oy_1.Z();
-        while (n11 < this.r.y.size()) {
-            block5: {
-                block6: {
-                    int n12;
-                    int n13;
-                    int n14;
-                    Dimension dimension;
-                    Component component;
-                    block18: {
-                        int n15;
-                        int n16;
-                        block20: {
-                            Point point;
-                            block19: {
-                                int n17;
-                                int n18;
-                                block14: {
-                                    block15: {
-                                        block16: {
-                                            block17: {
-                                                int n19;
-                                                block7: {
-                                                    block8: {
-                                                        block13: {
-                                                            int n20;
-                                                            int n21;
-                                                            block11: {
-                                                                block12: {
-                                                                    int n22;
-                                                                    int n23;
-                                                                    block9: {
-                                                                        block10: {
-                                                                            component = this.r.J(n11).j();
-                                                                            if (bl) break block5;
-                                                                            if (component == null) break block6;
-                                                                            point = this.r.S(n11);
-                                                                            dimension = component.getPreferredSize();
-                                                                            n19 = this.r.v;
-                                                                            if (bl) break block7;
-                                                                            if (n19 != 0) break block8;
-                                                                            n14 = point.x - dimension.width / 2;
-                                                                            n23 = this.r.b;
-                                                                            n22 = 1;
-                                                                            if (bl) break block9;
-                                                                            if (n23 == n22) break block10;
-                                                                            n21 = this.r.b;
-                                                                            n20 = TI.b(28836, 8533925339857010955L);
-                                                                            if (bl) break block11;
-                                                                            if (n21 != n20) break block12;
-                                                                        }
-                                                                        n23 = point.y - this.r.g / 2 - this.r.q - this.r.s;
-                                                                        n22 = dimension.height;
-                                                                    }
-                                                                    n13 = n23 - n22;
-                                                                    component.setBounds(n14, n13, dimension.width, dimension.height);
-                                                                    if (!bl) break block13;
-                                                                }
-                                                                n21 = point.y + this.r.g / 2 + this.r.q;
-                                                                n20 = this.r.s;
-                                                            }
-                                                            n13 = n21 + n20;
-                                                            component.setBounds(n14, n13, dimension.width, dimension.height);
-                                                        }
-                                                        if (!bl) break block6;
-                                                    }
-                                                    n19 = point.y - dimension.height / 2;
-                                                }
-                                                n14 = n19;
-                                                n18 = this.r.b;
-                                                n17 = 2;
-                                                if (bl) break block14;
-                                                if (n18 == n17) break block15;
-                                                n12 = n10;
-                                                if (bl) break block16;
-                                                if (n12 == 0) break block17;
-                                                n18 = this.r.b;
-                                                n17 = TI.b(31330, 7488762487545121743L);
-                                                if (bl) break block14;
-                                                if (n18 == n17) break block15;
-                                            }
-                                            n12 = n10;
-                                        }
-                                        if (bl) break block18;
-                                        if (n12 != 0) break block19;
-                                        n16 = this.r.b;
-                                        n15 = TI.b(25627, 2408699329735185847L);
-                                        if (bl) break block20;
-                                        if (n16 != n15) break block19;
+   @Override
+   public void layoutContainer(Container var1) {
+      int var10000 = com.oY_3.Z();
+      byte var3 = this.r.getComponentOrientation().isLeftToRight();
+      int var4 = 0;
+      boolean var2 = (boolean)var10000;
+
+      while (var4 < this.r.y.size()) {
+         Component var5 = this.r.J(var4).j();
+         if (!var2) {
+            label45:
+            if (var5 != null) {
+               Point var6 = this.r.S(var4);
+               Dimension var7 = var5.getPreferredSize();
+               var10000 = this.r.v;
+               if (!var2) {
+                  if (this.r.v == 0) {
+                     label86: {
+                        int var8;
+                        int var20;
+                        label85: {
+                           label84: {
+                              var8 = var6.x - var7.width / 2;
+                              var10000 = this.r.b;
+                              var20 = 1;
+                              if (!var2) {
+                                 if (this.r.b != 1) {
+                                    var10000 = this.r.b;
+                                    var20 = b(28836, 8533925339857010955L);
+                                    if (var2) {
+                                       break label85;
                                     }
-                                    n18 = point.x - this.r.g / 2 - this.r.q - this.r.s;
-                                    n17 = dimension.width;
-                                }
-                                n13 = n18 - n17;
-                                component.setBounds(n13, n14, dimension.width, dimension.height);
-                                if (!bl) break block6;
-                            }
-                            n16 = point.x + this.r.g / 2 + this.r.q;
-                            n15 = this.r.s;
+
+                                    if (var10000 != var20) {
+                                       break label84;
+                                    }
+                                 }
+
+                                 var10000 = var6.y - this.r.g / 2 - this.r.q - this.r.s;
+                                 var20 = var7.height;
+                              }
+
+                              int var9 = var10000 - var20;
+                              var5.setBounds(var8, var9, var7.width, var7.height);
+                              if (!var2) {
+                                 break label86;
+                              }
+                           }
+
+                           var10000 = var6.y + this.r.g / 2 + this.r.q;
+                           var20 = this.r.s;
                         }
-                        n12 = n16 + n15;
-                    }
-                    n13 = n12;
-                    component.setBounds(n13, n14, dimension.width, dimension.height);
-                }
-                ++n11;
-            }
-            if (!bl) continue;
-        }
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public Dimension preferredLayoutSize(Container var1_1) {
-        block16: {
-            block13: {
-                block14: {
-                    block15: {
-                        block12: {
-                            var3_2 = this.L();
-                            var4_3 = this.K();
-                            var5_4 = this.r.y.size() - 1;
-                            var2_5 = oy_1.Z();
-                            v0 = this.r.v;
-                            if (var2_5) break block14;
-                            if (v0 != 0) break block15;
-                            this.r.Q = Math.max(var4_3.width / 2, this.r.g / 2 + this.r.q);
-                            var7_6 = 0;
-                            for (var8_7 = 0; var8_7 < var5_4; ++var8_7) {
-                                var9_8 = ((u_)this.r.y.get(var8_7)).j();
-                                if (var2_5) break block12;
-                                v1 = var9_8;
-                                if (var2_5) ** GOTO lbl17
-                                if (v1 != null) {
-                                    v1 = var9_8;
-lbl17:
-                                    // 2 sources
+                        int var11 = var10000 + var20;
+                        var5.setBounds(var8, var11, var7.width, var7.height);
+                     }
 
-                                    v2 = v1.getPreferredSize();
-                                } else {
-                                    v2 = new Dimension(0, 0);
-                                }
-                                var10_12 = v2;
-                                v3 = var11_13 = ((u_)this.r.y.get(var8_7 + 1)).j();
-                                if (var2_5) ** GOTO lbl25
-                                if (v3 != null) {
-                                    v3 = var11_13;
-lbl25:
-                                    // 2 sources
+                     if (!var2) {
+                        break label45;
+                     }
+                  }
 
-                                    v4 = v3.getPreferredSize();
-                                } else {
-                                    v4 = new Dimension(0, 0);
-                                }
-                                var12_14 = v4;
-                                var7_6 = Math.max(var7_6, var10_12.width / 2 + var12_14.width / 2);
-                                if (!var2_5) continue;
-                                ky_2.K(new String[4]);
-                                break;
-                            }
-                            var8_7 = (Math.max(this.r.q * 2 + this.r.g, var7_6) + this.r.T) * var5_4;
+                  var10000 = var6.y - var7.height / 2;
+               }
+
+               int var10;
+               label70: {
+                  int var22;
+                  label69: {
+                     label68: {
+                        var10 = var10000;
+                        var10000 = this.r.b;
+                        var22 = 2;
+                        label67:
+                        if (!var2) {
+                           label65:
+                           if (this.r.b != 2) {
+                              var10000 = var3;
+                              if (!var2) {
+                                 if (var3 != 0) {
+                                    var10000 = this.r.b;
+                                    var22 = b(31330, 7488762487545121743L);
+                                    if (var2) {
+                                       break label67;
+                                    }
+
+                                    if (var10000 == var22) {
+                                       break label65;
+                                    }
+                                 }
+
+                                 var10000 = var3;
+                              }
+
+                              if (var2) {
+                                 break label70;
+                              }
+
+                              if (var10000 != 0) {
+                                 break label68;
+                              }
+
+                              var10000 = this.r.b;
+                              var22 = b(25627, 2408699329735185847L);
+                              if (var2) {
+                                 break label69;
+                              }
+
+                              if (var10000 != var22) {
+                                 break label68;
+                              }
+                           }
+
+                           var10000 = var6.x - this.r.g / 2 - this.r.q - this.r.s;
+                           var22 = var7.width;
                         }
-                        v5 = this.r.q * 2 + this.r.g + var3_2.height;
-                        v6 = var3_2.height;
-                        if (!var2_5) {
-                            v6 = v6 > 0 ? this.r.s : 0;
+
+                        int var12 = var10000 - var22;
+                        var5.setBounds(var12, var10, var7.width, var7.height);
+                        if (!var2) {
+                           break label45;
                         }
-                        var9_9 = v5 + v6;
-                        var6_15 = new Dimension(this.r.k.left + var8_7 + this.r.Q * 2 + this.r.k.right + 1, this.r.k.top + var9_9 + this.r.k.bottom + 1);
-                        if (!var2_5) break block16;
-                    }
-                    this.r.Q = Math.max(var4_3.height / 2, this.r.g / 2 + this.r.q);
-                    v0 = 0;
-                }
-                var7_6 = v0;
-                for (var8_7 = 0; var8_7 < var5_4; ++var8_7) {
-                    var9_10 = ((u_)this.r.y.get(var8_7)).j();
-                    if (var2_5) break block13;
-                    v7 = var9_10;
-                    if (var2_5) ** GOTO lbl54
-                    if (v7 != null) {
-                        v7 = var9_10;
-lbl54:
-                        // 2 sources
+                     }
 
-                        v8 = v7.getPreferredSize();
-                    } else {
-                        v8 = new Dimension(0, 0);
-                    }
-                    var10_12 = v8;
-                    v9 = var11_13 = ((u_)this.r.y.get(var8_7 + 1)).j();
-                    if (var2_5) ** GOTO lbl62
-                    if (v9 != null) {
-                        v9 = var11_13;
-lbl62:
-                        // 2 sources
+                     var10000 = var6.x + this.r.g / 2 + this.r.q;
+                     var22 = this.r.s;
+                  }
 
-                        v10 = v9.getPreferredSize();
-                    } else {
-                        v10 = new Dimension(0, 0);
-                    }
-                    var12_14 = v10;
-                    var7_6 = Math.max(var7_6, var10_12.height / 2 + var12_14.height / 2);
-                    if (!var2_5) continue;
-                }
-                var8_7 = (Math.max(this.r.q * 2 + this.r.g, var7_6) + var5_4) * var5_4;
-            }
-            v11 = this.r.q * 2 + this.r.g + var3_2.width;
-            v12 = var3_2.width;
-            if (!var2_5) {
-                v12 = v12 > 0 ? this.r.s : 0;
-            }
-            var9_11 = v11 + v12;
-            var6_15 = new Dimension(this.r.k.left + var9_11 + this.r.k.right + 1, this.r.k.top + var8_7 + this.r.Q * 2 + this.r.k.bottom + 1);
-        }
-        return var6_15;
-    }
+                  var10000 += var22;
+               }
 
-    public Dimension L() {
-        Dimension dimension;
-        block6: {
-            List list;
-            boolean bl;
-            block7: {
-                int n10;
-                block5: {
-                    dimension = new Dimension(0, 0);
-                    bl = oy_1.y();
-                    n10 = this.r.M;
-                    if (!bl) break block5;
-                    if (n10 == 0) break block6;
-                    list = this.r.y;
-                    if (!bl) break block7;
-                    n10 = list.size();
-                }
-                if (n10 <= 0) break block6;
-                list = this.r.y;
+               int var13 = var10000;
+               var5.setBounds(var13, var10, var7.width, var7.height);
             }
-            for (u_ u_2 : list) {
-                if (u_2.j() != null) {
-                    dimension = FN.h(dimension, u_2.j().getPreferredSize());
-                }
-                if (bl) continue;
-            }
-        }
-        return dimension;
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    public Dimension K() {
-        block12: {
-            block15: {
-                block14: {
-                    block13: {
-                        block11: {
-                            var1_1 = oy_1.y();
-                            v0 = this.r.M;
-                            if (!var1_1) break block11;
-                            if (v0 == 0) break block12;
-                            v1 = this.r.y;
-                            if (!var1_1) break block13;
-                            v0 = v1.size();
+            var4++;
+         }
+
+         if (var2) {
+            break;
+         }
+      }
+   }
+
+   @Override
+   public Dimension preferredLayoutSize(Container var1) {
+      int var10000 = com.oY_3.Z();
+      Dimension var3 = this.L();
+      Dimension var4 = this.K();
+      int var5 = this.r.y.size() - 1;
+      boolean var2 = (boolean)var10000;
+      var10000 = this.r.v;
+      if (!var2) {
+         if (this.r.v == 0) {
+            this.r.Q = Math.max(var4.width / 2, this.r.g / 2 + this.r.q);
+            int var7 = 0;
+            int var8 = 0;
+
+            while (true) {
+               if (var8 < var5) {
+                  Component var9 = ((u_)this.r.y.get(var8)).j();
+                  if (var2) {
+                     break;
+                  }
+
+                  label99: {
+                     Component var22 = var9;
+                     if (!var2) {
+                        if (var9 == null) {
+                           var23 = new Dimension(0, 0);
+                           break label99;
                         }
-                        if (v0 <= 0) break block12;
-                        v1 = this.r.y.get(0);
-                    }
-                    var2_2 = ((u_)v1).j();
-                    var3_3 = ((u_)this.r.y.get(this.r.y.size() - 1)).j();
-                    v2 = var2_2;
-                    if (var1_1) {
-                        if (v2 != null) {
-                            v2 = var3_3;
-                            if (var1_1) {
-                                if (v2 != null) {
-                                    return FN.h(var2_2.getPreferredSize(), var3_3.getPreferredSize());
-                                } else {
-                                    ** GOTO lbl-1000
-                                }
-                            }
-                        } else lbl-1000:
-                        // 3 sources
 
-                        {
-                            v2 = var2_2;
+                        var22 = var9;
+                     }
+
+                     var23 = var22.getPreferredSize();
+                  }
+
+                  Dimension var10;
+                  label93: {
+                     var10 = var23;
+                     Component var11 = ((u_)this.r.y.get(var8 + 1)).j();
+                     Component var24 = var11;
+                     if (!var2) {
+                        if (var11 == null) {
+                           var25 = new Dimension(0, 0);
+                           break label93;
                         }
-                    }
-                    if (var1_1) {
-                        if (v2 != null) {
-                            return var2_2.getPreferredSize();
-                        }
-                        v2 = var3_3;
-                    }
-                    if (!var1_1) break block14;
-                    if (v2 == null) break block15;
-                    v2 = var3_3;
-                }
-                return v2.getPreferredSize();
+
+                        var24 = var11;
+                     }
+
+                     var25 = var24.getPreferredSize();
+                  }
+
+                  Dimension var12 = var25;
+                  var7 = Math.max(var7, var10.width / 2 + var12.width / 2);
+                  var8++;
+                  if (!var2) {
+                     continue;
+                  }
+
+                  com.ky_4.K(new String[4]);
+               }
+
+               var8 = (Math.max(this.r.q * 2 + this.r.g, var7) + this.r.T) * var5;
+               break;
             }
+
+            var10000 = this.r.q * 2 + this.r.g + var3.height;
+            int var10001 = var3.height;
+            if (!var2) {
+               var10001 = var3.height > 0 ? this.r.s : 0;
+            }
+
+            int var15 = var10000 + var10001;
+            Dimension var6 = new Dimension(this.r.k.left + var8 + this.r.Q * 2 + this.r.k.right + 1, this.r.k.top + var15 + this.r.k.bottom + 1);
+            if (!var2) {
+               return var6;
+            }
+         }
+
+         this.r.Q = Math.max(var4.height / 2, this.r.g / 2 + this.r.q);
+         var10000 = 0;
+      }
+
+      int var13 = var10000;
+      int var14 = 0;
+
+      label76: {
+         while (var14 < var5) {
+            Component var16 = ((u_)this.r.y.get(var14)).j();
+            if (var2) {
+               break label76;
+            }
+
+            label72: {
+               Component var27 = var16;
+               if (!var2) {
+                  if (var16 == null) {
+                     var28 = new Dimension(0, 0);
+                     break label72;
+                  }
+
+                  var27 = var16;
+               }
+
+               var28 = var27.getPreferredSize();
+            }
+
+            Dimension var18;
+            label66: {
+               var18 = var28;
+               Component var19 = ((u_)this.r.y.get(var14 + 1)).j();
+               Component var29 = var19;
+               if (!var2) {
+                  if (var19 == null) {
+                     var30 = new Dimension(0, 0);
+                     break label66;
+                  }
+
+                  var29 = var19;
+               }
+
+               var30 = var29.getPreferredSize();
+            }
+
+            Dimension var20 = var30;
+            var13 = Math.max(var13, var18.height / 2 + var20.height / 2);
+            var14++;
+            if (var2) {
+               break;
+            }
+         }
+
+         var14 = (Math.max(this.r.q * 2 + this.r.g, var13) + var5) * var5;
+      }
+
+      var10000 = this.r.q * 2 + this.r.g + var3.width;
+      int var32 = var3.width;
+      if (!var2) {
+         var32 = var3.width > 0 ? this.r.s : 0;
+      }
+
+      int var17 = var10000 + var32;
+      return new Dimension(this.r.k.left + var17 + this.r.k.right + 1, this.r.k.top + var14 + this.r.Q * 2 + this.r.k.bottom + 1);
+   }
+
+   public Dimension L() {
+      boolean var1;
+      Dimension var2;
+      List var6;
+      label37: {
+         boolean var10000 = com.oY_3.y();
+         var2 = new Dimension(0, 0);
+         var1 = var10000;
+         int var5 = this.r.M;
+         if (var1) {
+            if (!this.r.M) {
+               return var2;
+            }
+
+            var6 = this.r.y;
+            if (!var1) {
+               break label37;
+            }
+
+            var5 = this.r.y.size();
+         }
+
+         if (var5 <= 0) {
+            return var2;
+         }
+
+         var6 = this.r.y;
+      }
+
+      for (u_ var4 : var6) {
+         if (var4.j() != null) {
+            var2 = com.FN.h(var2, var4.j().getPreferredSize());
+         }
+
+         if (!var1) {
+            break;
+         }
+      }
+
+      return var2;
+   }
+
+   public Dimension K() {
+      boolean var1;
+      Object var4;
+      label55: {
+         var1 = com.oY_3.y();
+         int var10000 = this.r.M;
+         if (var1) {
+            if (!this.r.M) {
+               return new Dimension(0, 0);
+            }
+
+            var4 = this.r.y;
+            if (!var1) {
+               break label55;
+            }
+
+            var10000 = this.r.y.size();
+         }
+
+         if (var10000 <= 0) {
             return new Dimension(0, 0);
-        }
-        return new Dimension(0, 0);
-    }
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5837101667618556336L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "q\u00f9\u00f7\u0015}[Bu\u00d5\u0085\u00a1\u008b\u0017\u00a8\u00dc\fM;\u0080\u0002\u009d\u00dfH\u00b1";
-        int n11 = "q\u00f9\u00f7\u0015}[Bu\u00d5\u0085\u00a1\u008b\u0017\u00a8\u00dc\fM;\u0080\u0002\u009d\u00dfH\u00b1".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[3];
-    }
+         var4 = this.r.y.get(0);
+      }
 
-    private static int b(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x31AD;
-        if (b[n11] == null) {
-            TI.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      Component var2;
+      Component var3;
+      var2 = ((u_)var4).j();
+      var3 = ((u_)this.r.y.get(this.r.y.size() - 1)).j();
+      var4 = var2;
+      label40:
+      if (var1) {
+         if (var2 != null) {
+            var4 = var3;
+            if (!var1) {
+               break label40;
+            }
+
+            if (var3 != null) {
+               return com.FN.h(var2.getPreferredSize(), var3.getPreferredSize());
+            }
+         }
+
+         var4 = var2;
+      }
+
+      if (var1) {
+         if (var4 != null) {
+            return var2.getPreferredSize();
+         }
+
+         var4 = var3;
+      }
+
+      if (var1) {
+         if (var4 == null) {
+            return new Dimension(0, 0);
+         }
+
+         var4 = var3;
+      }
+
+      return var4.getPreferredSize();
+   }
+
+   static {
+      long var0 = 5837101667618556336L;
+      long[] var6 = new long[3];
+      int var3 = 0;
+      String var4 = "qù÷\u0015}[BuÕ\u0085¡\u008b\u0017¨Ü\fM;\u0080\u0002\u009dßH±";
+      int var5 = "qù÷\u0015}[BuÕ\u0085¡\u008b\u0017¨Ü\fM;\u0080\u0002\u009dßH±".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[3];
+   }
+
+   private static int b(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 12717;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

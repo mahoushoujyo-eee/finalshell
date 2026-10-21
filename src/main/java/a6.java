@@ -1,60 +1,69 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class a6 {
-    public int r;
-    public String B;
-    public int a = (int)b;
-    public String m;
-    public String j;
-    b2_0 g;
-    HashMap G = new HashMap();
-    boolean U = false;
-    public String Z;
-    public ArrayList k = new ArrayList();
-    public ArrayList E = new ArrayList();
-    public ArrayList w = new ArrayList();
-    private static ky_2[] V;
-    private static final long b;
+   public int r;
+   public String B;
+   public int a;
+   public String m;
+   public String j;
+   b2_2 g;
+   HashMap G;
+   boolean U;
+   public String Z;
+   public ArrayList k;
+   public ArrayList E;
+   public ArrayList w;
+   private static com.ky_4[] V;
+   private static final long b;
 
-    void g(String string, b2_0 b2_02) {
-        this.G.put(string, b2_02);
-    }
+   public a6() {
+      this.a = (int)b;
+      this.G = new HashMap();
+      this.U = false;
+      this.k = new ArrayList();
+      this.E = new ArrayList();
+      this.w = new ArrayList();
+   }
 
-    void h(nD nD2) {
-        this.w.add(nD2);
-        nD2.F = this;
-    }
+   void g(String var1, b2_2 var2) {
+      this.G.put(var1, var2);
+   }
 
-    public ArrayList k() {
-        return this.w;
-    }
+   void h(nD var1) {
+      this.w.add(var1);
+      var1.F = this;
+   }
 
-    public void d(ArrayList arrayList) {
-        this.w = arrayList;
-    }
+   public ArrayList k() {
+      return this.w;
+   }
 
-    public static void i(ky_2[] ky_2Array) {
-        V = ky_2Array;
-    }
+   public void d(ArrayList var1) {
+      this.w = var1;
+   }
 
-    public static ky_2[] P() {
-        return V;
-    }
+   public static void i(com.ky_4[] var0) {
+      V = var0;
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        if (a6.P() == null) {
-            a6.i(new ky_2[2]);
-        }
-        long l2 = 7002487834923142730L;
-        b = 0x49D2A8EC8968EACL ^ l2;
-    }
+   public static com.ky_4[] P() {
+      return V;
+   }
+
+   static {
+      if (P() == null) {
+         i(new com.ky_4[2]);
+      }
+
+      long var0 = 7002487834923142730L;
+      long var10002 = 332468740234317484L ^ var0;
+      byte var10001 = -1;
+      b = var10002;
+   }
 }
+
+
+
+
 

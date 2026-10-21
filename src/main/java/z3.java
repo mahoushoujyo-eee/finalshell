@@ -1,43 +1,42 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-
 class z3 {
-    String g;
-    String G;
-    String p;
-    final lj_2 x;
+   String g;
+   String G;
+   String p;
+   final lj_4 x;
 
-    z3(lj_2 lj_22, String string, String string2, String string3) {
-        this.x = lj_22;
-        this.g = string;
-        this.G = string2;
-        this.p = string3;
-    }
+   z3(lj_4 var1, String var2, String var3, String var4) {
+      this.x = var1;
+      com.c.c(299608230923374339L).set(this, var2);
+      com.c.c(137660922414738929L).set(this, var3);
+      com.c.c(347606838176642435L).set(this, var4);
+   }
 
-    public String Y() {
-        return (String)this.g;
-    }
+   public String Y() {
+      return (String)com.c.c(299608230923374339L).get(this);
+   }
 
-    public void s(String string) {
-        this.g = string;
-    }
+   public void s(String var1) {
+      com.c.c(299608230923374339L).set(this, var1);
+   }
 
-    public String c() {
-        return (String)this.G;
-    }
+   public String c() {
+      return (String)com.c.c(137660922414738929L).get(this);
+   }
 
-    public void Y(String string) {
-        this.G = string;
-    }
+   public void Y(String var1) {
+      com.c.c(137660922414738929L).set(this, var1);
+   }
 
-    public String z() {
-        return (String)this.p;
-    }
+   public String z() {
+      return (String)com.c.c(347606838176642435L).get(this);
+   }
 
-    public void S(String string) {
-        this.p = string;
-    }
+   public void S(String var1) {
+      com.c.c(347606838176642435L).set(this, var1);
+   }
 }
+
+
+
+
 

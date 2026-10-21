@@ -1,26 +1,24 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.CardLayout;
-import java.awt.Component;
 import javax.swing.JComponent;
 
-public class z8
-extends JComponent {
-    CardLayout G;
+public class z8 extends JComponent {
+   CardLayout G;
 
-    public z8() {
-        this.G = new CardLayout();
-        this.setLayout((CardLayout)this.G);
-    }
+   public z8() {
+      com.c.c(345630514562266623L).set(this, new CardLayout());
+      this.setLayout((CardLayout)com.c.c(345630514562266623L).get(this));
+   }
 
-    public void c(JComponent jComponent) {
-        this.add((Component)jComponent, jComponent.getName());
-    }
+   public void c(JComponent var1) {
+      this.add(var1, var1.getName());
+   }
 
-    public void P(JComponent jComponent) {
-        ((CardLayout)this.G).show(this, jComponent.getName());
-    }
+   public void P(JComponent var1) {
+      ((CardLayout)com.c.c(345630514562266623L).get(this)).show(this, var1.getName());
+   }
 }
+
+
+
+
 

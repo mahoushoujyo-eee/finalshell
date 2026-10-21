@@ -1,47 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Map;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-/*
- * Renamed from ke
- */
-public class ke_2 {
-    private InputStream K;
-    private OutputStream Z;
-    boolean S = true;
+class Ke_2 implements ActionListener {
+   final fp_4 c;
 
-    public ke_2(InputStream inputStream, OutputStream outputStream) {
-        this.K = inputStream;
-        this.Z = outputStream;
-    }
+   Ke_2(fp_4 var1) {
+      this.c = var1;
+   }
 
-    public void G(FY fY2) throws IOException {
-        Q8 q8 = new Q8(this, fY2, this.K, this.Z);
-        q8.o();
-        this.Z.flush();
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      Method var10000 = (Method)com.c.c(260425465387371054L).get(this);
+      Object[] var10001 = com.c.f();
+      Method var10003 = com.c.d(343871400640450352L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
 
-    public void N(Map map) throws IOException {
-        DH dH = new DH(this, map, this.K, this.Z);
-        dH.k();
-        this.Z.flush();
-    }
-
-    public void g() {
-        this.S = false;
-    }
-
-    public boolean J() {
-        int n10 = to_0.L();
-        boolean bl = this.S;
-        if (n10 != 0) {
-            bl = !bl;
-        }
-        return bl;
-    }
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
 }
+
+
+
+
 

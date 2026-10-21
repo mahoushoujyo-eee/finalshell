@@ -1,19 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.GA;
-import com.PY;
-import com.R8;
-import com.W2;
-import com.Y9;
-import com.a9;
-import com.cx_1;
-import com.i2_0;
-import com.kp_0;
-import com.ne_1;
-import com.sa_0;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -22,447 +8,444 @@ import java.awt.Shape;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public class SZ
-extends JScrollPane
-implements W2,
-sa_0,
-cx_1 {
-    private static String V;
-    private static final String b;
+public class SZ extends JScrollPane implements com.W2, Sa_2, com.cX_3 {
+   private static String V;
+   private static final String b;
 
-    public SZ(Component component) {
-        this(component, true);
-    }
+   public SZ(Component var1) {
+      this(var1, true);
+   }
 
-    public SZ(Component component, boolean bl) {
-        this(component, bl, true);
-    }
+   public SZ(Component var1, boolean var2) {
+      this(var1, var2, true);
+   }
 
-    public SZ(Component component, boolean bl, boolean bl2) {
-        block3: {
-            SZ sZ;
-            block2: {
-                String string = SZ.L();
-                super(component);
-                String string2 = string;
-                this.u(bl);
-                this.A().L(bl2);
-                sZ = this;
-                if (string2 != null) break block2;
-                sZ.i().L(bl2);
-                if (bl2) break block3;
-                sZ = this;
+   public SZ(Component var1, boolean var2, boolean var3) {
+      String var10000 = L();
+      super(var1);
+      String var4 = var10000;
+      this.u(var2);
+      this.A().L(var3);
+      SZ var5 = this;
+      if (var4 == null) {
+         this.i().L(var3);
+         if (var3) {
+            return;
+         }
+
+         var5 = this;
+      }
+
+      var5.setCorner(b, null);
+   }
+
+   public R8 Y() {
+      return new R8(1);
+   }
+
+   public R8 W() {
+      return new R8(0);
+   }
+
+   public R8 i() {
+      return (R8)super.getVerticalScrollBar();
+   }
+
+   public R8 A() {
+      return (R8)super.getHorizontalScrollBar();
+   }
+
+   public boolean l() {
+      return this.u().k();
+   }
+
+   public SZ u(boolean var1) {
+      this.u().Y(var1);
+      return this;
+   }
+
+   public int X() {
+      return this.u().R();
+   }
+
+   public SZ g(int var1) {
+      this.u().Q(var1);
+      return this;
+   }
+
+   public int B() {
+      return this.u().C();
+   }
+
+   public SZ G(int var1) {
+      this.u().R(var1);
+      return this;
+   }
+
+   public Insets e() {
+      return this.u().A();
+   }
+
+   public SZ K(Insets var1) {
+      this.u().a(var1);
+      return this;
+   }
+
+   public SZ x(int var1, int var2, int var3, int var4) {
+      return this.K(new Insets(var1, var2, var3, var4));
+   }
+
+   public SZ Q(int var1) {
+      return this.x(var1, var1, var1, var1);
+   }
+
+   public boolean z() {
+      return this.u().D();
+   }
+
+   public SZ r(boolean var1) {
+      this.u().B(var1);
+      return this;
+   }
+
+   public boolean C() {
+      return this.u().K();
+   }
+
+   public SZ L(boolean var1) {
+      this.u().S(var1);
+      return this;
+   }
+
+   public Color W$Color() {
+      return this.u().G();
+   }
+
+   public SZ L(Color var1) {
+      this.u().g(var1);
+      return this;
+   }
+
+   public Color o() {
+      return this.u().z();
+   }
+
+   public SZ t(Color var1) {
+      this.u().d(var1);
+      return this;
+   }
+
+   public void O(boolean var1) {
+      String var10000 = L();
+      R8 var3 = this.A();
+      String var2 = var10000;
+      R8 var5 = var3;
+      if (var2 == null) {
+         if (var3 != null) {
+            var3.s(var1);
+         }
+
+         var5 = this.i();
+      }
+
+      R8 var4 = var5;
+      if (var2 == null && var4 != null) {
+         var4.s(var1);
+      }
+   }
+
+   public void u(String var1) {
+      GA.B(this, var1);
+   }
+
+   @Override
+   public Shape B$Shape() {
+      return this.u().B();
+   }
+
+   public com.Y9 u() {
+      return (com.Y9)this.getUI();
+   }
+
+   @Override
+   public void updateUI() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/SZ.L ()Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnonnull 33
+      // 09: invokevirtual com/SZ.getUI ()Ljavax/swing/plaf/ScrollPaneUI;
+      // 0c: ifnull 32
+      // 0f: goto 16
+      // 12: invokestatic com/SZ.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 15: athrow
+      // 16: aload 0
+      // 17: aload 1
+      // 18: ifnonnull 63
+      // 1b: goto 22
+      // 1e: invokestatic com/SZ.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 21: athrow
+      // 22: invokevirtual com/SZ.getUI ()Ljavax/swing/plaf/ScrollPaneUI;
+      // 25: instanceof com/Y9
+      // 28: ifne 5b
+      // 2b: goto 32
+      // 2e: invokestatic com/SZ.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 31: athrow
+      // 32: aload 0
+      // 33: getstatic com/a9.zo Ljava/lang/String;
+      // 36: bipush 0
+      // 37: anewarray 172
+      // 3a: invokestatic com/Kp_2.w (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 3d: checkcast com/Y9
+      // 40: invokevirtual com/SZ.setUI (Ljavax/swing/plaf/ScrollPaneUI;)V
+      // 43: goto 6a
+      // 46: astore 2
+      // 47: aload 0
+      // 48: aload 2
+      // 49: invokestatic com/nE_3.g (Ljava/lang/Object;Ljava/lang/Throwable;)V
+      // 4c: aload 0
+      // 4d: new com/Y9
+      // 50: dup
+      // 51: invokespecial com/Y9.<init> ()V
+      // 54: invokevirtual com/SZ.setUI (Ljavax/swing/plaf/ScrollPaneUI;)V
+      // 57: aload 1
+      // 58: ifnull 6a
+      // 5b: aload 0
+      // 5c: goto 63
+      // 5f: invokestatic com/SZ.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 62: athrow
+      // 63: aload 0
+      // 64: invokevirtual com/SZ.getUI ()Ljavax/swing/plaf/ScrollPaneUI;
+      // 67: invokevirtual com/SZ.setUI (Ljavax/swing/plaf/ScrollPaneUI;)V
+      // 6a: return
+   }
+
+   @Override
+   public int M() {
+      return PY.f(this);
+   }
+
+   public SZ m(int var1) {
+      return (SZ)PY.Q(this, var1);
+   }
+
+   @Override
+   public int m() {
+      return PY.m(this);
+   }
+
+   public SZ I(int var1) {
+      return (SZ)PY.j(this, var1);
+   }
+
+   @Override
+   public int A$int() {
+      return PY.S(this);
+   }
+
+   public SZ O(int var1) {
+      return (SZ)PY.N(this, var1);
+   }
+
+   @Override
+   public int Q() {
+      return PY.Z(this);
+   }
+
+   public SZ p(int var1) {
+      return (SZ)PY.w(this, var1);
+   }
+
+   @Override
+   public int i$int() {
+      return PY.J(this);
+   }
+
+   public SZ s(int var1) {
+      return (SZ)PY.b(this, var1);
+   }
+
+   @Override
+   public int a() {
+      return PY.i(this);
+   }
+
+   public SZ X(int var1) {
+      return (SZ)PY.y(this, var1);
+   }
+
+   @Override
+   public Dimension getPreferredSize() {
+      return PY.W(this, super.getPreferredSize());
+   }
+
+   public SZ v(int var1, int var2) {
+      return (SZ)PY.O(this, var1, var2);
+   }
+
+   @Override
+   public void o(String var1) {
+      i2_2.f(this, var1);
+   }
+
+   @Override
+   public void I() {
+      i2_2.p(this);
+   }
+
+   @Override
+   public String q() {
+      return i2_2.O(this);
+   }
+
+   @Override
+   public JScrollBar createVerticalScrollBar() {
+      return this.Y();
+   }
+
+   @Override
+   public JScrollBar createHorizontalScrollBar() {
+      return this.W();
+   }
+
+   @Override
+   public Component W(int var1, int var2) {
+      return this.v(var1, var2);
+   }
+
+   @Override
+   public Component d(int var1) {
+      return this.X(var1);
+   }
+
+   @Override
+   public Component p$Component(int var1) {
+      return this.s(var1);
+   }
+
+   @Override
+   public Component D(int var1) {
+      return this.p(var1);
+   }
+
+   @Override
+   public Component V(int var1) {
+      return this.O(var1);
+   }
+
+   @Override
+   public Component x(int var1) {
+      return this.I(var1);
+   }
+
+   @Override
+   public Component O$Component(int var1) {
+      return this.m(var1);
+   }
+
+   public static void d(String var0) {
+      V = var0;
+   }
+
+   public static String L() {
+      return V;
+   }
+
+   private static Throwable a(Throwable var0) {
+      return var0;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      if (L() != null) {
+         d("e5XDRc");
+      }
+
+      char[] var10003 = "AvQ(\u00136UD~N9\u001e*H_wC?".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 55;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 55;
+         var10006 = var0;
+      } else {
+         var6 = 55;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            b = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 55;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 58;
+               break;
+            case 1:
+               var23 = 14;
+               break;
+            case 2:
+               var23 = 49;
+               break;
+            case 3:
+               var23 = 90;
+               break;
+            case 4:
+               var23 = 118;
+               break;
+            case 5:
+               var23 = 94;
+               break;
+            default:
+               var23 = 48;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               b = var8;
+               return;
             }
-            sZ.setCorner(b, null);
-        }
-    }
 
-    public R8 Y() {
-        return new R8(1);
-    }
-
-    public R8 W() {
-        return new R8(0);
-    }
-
-    public R8 i() {
-        return (R8)super.getVerticalScrollBar();
-    }
-
-    public R8 A() {
-        return (R8)super.getHorizontalScrollBar();
-    }
-
-    public boolean l() {
-        return this.u().k();
-    }
-
-    public SZ u(boolean bl) {
-        this.u().Y(bl);
-        return this;
-    }
-
-    public int X() {
-        return this.u().R();
-    }
-
-    public SZ g(int n10) {
-        this.u().Q(n10);
-        return this;
-    }
-
-    public int B() {
-        return this.u().C();
-    }
-
-    public SZ G(int n10) {
-        this.u().R(n10);
-        return this;
-    }
-
-    public Insets e() {
-        return this.u().A();
-    }
-
-    public SZ K(Insets insets) {
-        this.u().a(insets);
-        return this;
-    }
-
-    public SZ x(int n10, int n11, int n12, int n13) {
-        return this.K(new Insets(n10, n11, n12, n13));
-    }
-
-    public SZ Q(int n10) {
-        return this.x(n10, n10, n10, n10);
-    }
-
-    public boolean z() {
-        return this.u().D();
-    }
-
-    public SZ r(boolean bl) {
-        this.u().B(bl);
-        return this;
-    }
-
-    public boolean C() {
-        return this.u().K();
-    }
-
-    public SZ L(boolean bl) {
-        this.u().S(bl);
-        return this;
-    }
-
-    public Color W() {
-        return this.u().G();
-    }
-
-    public SZ L(Color color) {
-        this.u().g(color);
-        return this;
-    }
-
-    public Color o() {
-        return this.u().z();
-    }
-
-    public SZ t(Color color) {
-        this.u().d(color);
-        return this;
-    }
-
-    public void O(boolean bl) {
-        R8 r8;
-        R8 r82 = this.A();
-        String string = SZ.L();
-        R8 r83 = r82;
-        if (string == null) {
-            if (r83 != null) {
-                r82.s(bl);
-            }
-            r83 = this.i();
-        }
-        R8 r84 = r8 = r83;
-        if (string == null && r84 != null) {
-            r84 = r8.s(bl);
-        }
-    }
-
-    public void u(String string) {
-        GA.B(this, string);
-    }
-
-    @Override
-    public Shape B() {
-        return this.u().B();
-    }
-
-    public Y9 u() {
-        return (Y9)this.getUI();
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void updateUI() {
-        block13: {
-            block12: {
-                block11: {
-                    block14: {
-                        var1_1 = SZ.L();
-                        v0 = this;
-                        if (var1_1 != null) ** GOTO lbl26
-                        if (v0.getUI() == null) break block11;
-                        break block14;
-                        catch (Throwable v1) {
-                            throw SZ.a(v1);
-                        }
-                    }
-                    try {
-                        block15: {
-                            v2 = this;
-                            if (var1_1 != null) break block12;
-                            break block15;
-                            catch (Throwable v3) {
-                                throw SZ.a(v3);
-                            }
-                        }
-                        if (!(v2.getUI() instanceof Y9)) {
-                        }
-                        ** GOTO lbl33
-                    }
-                    catch (Throwable v4) {
-                        throw SZ.a(v4);
-                    }
-                }
-                try {
-                    v0 = this;
-lbl26:
-                    // 2 sources
-
-                    v0.setUI((Y9)kp_0.w(a9.zo, new Object[0]));
-                    break block13;
-                }
-                catch (Throwable var2_2) {
-                    try {
-                        ne_1.g(this, var2_2);
-                        this.setUI(new Y9());
-                        if (var1_1 == null) break block13;
-lbl33:
-                        // 2 sources
-
-                        v2 = this;
-                    }
-                    catch (Throwable v5) {
-                        throw SZ.a(v5);
-                    }
-                }
-            }
-            v2.setUI(this.getUI());
-        }
-    }
-
-    @Override
-    public int M() {
-        return PY.f(this);
-    }
-
-    public SZ m(int n10) {
-        return (SZ)PY.Q(this, n10);
-    }
-
-    @Override
-    public int m() {
-        return PY.m(this);
-    }
-
-    public SZ I(int n10) {
-        return (SZ)PY.j(this, n10);
-    }
-
-    @Override
-    public int A() {
-        return PY.S(this);
-    }
-
-    @Override
-    public SZ O(int n10) {
-        return (SZ)PY.N(this, n10);
-    }
-
-    @Override
-    public int Q() {
-        return PY.Z(this);
-    }
-
-    @Override
-    public SZ p(int n10) {
-        return (SZ)PY.w(this, n10);
-    }
-
-    @Override
-    public int i() {
-        return PY.J(this);
-    }
-
-    public SZ s(int n10) {
-        return (SZ)PY.b(this, n10);
-    }
-
-    @Override
-    public int a() {
-        return PY.i(this);
-    }
-
-    public SZ X(int n10) {
-        return (SZ)PY.y(this, n10);
-    }
-
-    @Override
-    public Dimension getPreferredSize() {
-        return PY.W(this, super.getPreferredSize());
-    }
-
-    public SZ v(int n10, int n11) {
-        return (SZ)PY.O(this, n10, n11);
-    }
-
-    @Override
-    public void o(String string) {
-        i2_0.f(this, string);
-    }
-
-    @Override
-    public void I() {
-        i2_0.p(this);
-    }
-
-    @Override
-    public String q() {
-        return i2_0.O(this);
-    }
-
-    @Override
-    public JScrollBar createVerticalScrollBar() {
-        return this.Y();
-    }
-
-    @Override
-    public JScrollBar createHorizontalScrollBar() {
-        return this.W();
-    }
-
-    @Override
-    public Component W(int n10, int n11) {
-        return this.v(n10, n11);
-    }
-
-    @Override
-    public Component d(int n10) {
-        return this.X(n10);
-    }
-
-    @Override
-    public Component p(int n10) {
-        return this.s(n10);
-    }
-
-    @Override
-    public Component D(int n10) {
-        return this.p(n10);
-    }
-
-    @Override
-    public Component V(int n10) {
-        return this.O(n10);
-    }
-
-    @Override
-    public Component x(int n10) {
-        return this.I(n10);
-    }
-
-    @Override
-    public Component O(int n10) {
-        return this.m(n10);
-    }
-
-    public static void d(String string) {
-        V = string;
-    }
-
-    public static String L() {
-        return V;
-    }
-
-    private static Throwable a(Throwable throwable) {
-        return throwable;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block13: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block12: {
-                if (SZ.L() != null) {
-                    SZ.d("e5XDRc");
-                }
-                char[] cArray3 = "AvQ(\u00136UD~N9\u001e*H_wC?".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 55;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block12;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block13;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 58;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 14;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 49;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 90;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 118;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 94;
-                            break;
-                        }
-                        default: {
-                            n17 = 48;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        b = new String(cArray).intern();
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

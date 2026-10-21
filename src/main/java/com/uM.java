@@ -1,22 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.kv_1;
-import com.uW;
+class uM extends uW {
+   final com.kV_3 d;
 
-class uM
-extends uW {
-    final kv_1 d;
+   uM(com.kV_3 var1) {
+      this.d = var1;
+   }
 
-    uM(kv_1 kv_12) {
-        this.d = kv_12;
-    }
-
-    @Override
-    public void L() {
-        this.d.l();
-    }
+   @Override
+   public void L() {
+      this.d.l();
+   }
 }
+
+
+
+
 

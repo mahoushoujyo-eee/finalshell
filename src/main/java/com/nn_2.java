@@ -1,24 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-/*
- * Renamed from com.nn
- */
-public interface nn_2 {
-    public void J() throws Exception;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
 
-    public void H(byte[] var1);
+class Nn_2 extends FocusAdapter {
+   final com.az_2 S;
 
-    public void j(byte[] var1);
+   Nn_2(com.az_2 var1) {
+      this.S = var1;
+   }
 
-    public byte[] t() throws Exception;
-
-    public void D(byte[] var1);
-
-    public byte[] R() throws Exception;
-
-    public void Z() throws Exception;
+   @Override
+   public void focusLost(FocusEvent var1) {
+      this.S.N(var1);
+   }
 }
+
+
+
+
 

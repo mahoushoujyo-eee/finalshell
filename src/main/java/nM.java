@@ -1,21 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import com.ne_2;
+import com.ne_4;
 
-class nM
-implements Runnable {
-    final TM K;
+class nM implements Runnable {
+   final TM K;
 
-    nM(TM tM) {
-        this.K = tM;
-    }
+   nM(TM var1) {
+      this.K = var1;
+   }
 
-    @Override
-    public void run() {
-        ((ne_2)this.K.v).requestFocus();
-        ((ne_2)this.K.v).selectAll();
-    }
+   @Override
+   public void run() {
+      ((ne_4)com.c.c(205795460956385135L).get(com.c.c(275902153730759078L).get(this))).requestFocus();
+      ((ne_4)com.c.c(205795460956385135L).get(com.c.c(275902153730759078L).get(this))).selectAll();
+   }
 }
+
+
+
+
 

@@ -1,56 +1,56 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com._p_0;
+public class W4 implements Comparable {
+   private String c;
+   private String N;
+   private _p_2 I;
 
-public class W4
-implements Comparable {
-    private String c;
-    private String N;
-    private _p_0 I;
+   W4(String var1, String var2, _p_2 var3) {
+      this.G(var1);
+      this.h(var2);
+      this.E(var3);
+   }
 
-    W4(String string, String string2, _p_0 _p_02) {
-        this.G(string);
-        this.h(string2);
-        this.E(_p_02);
-    }
+   public String z() {
+      return this.c;
+   }
 
-    public String z() {
-        return this.c;
-    }
+   void G(String var1) {
+      this.c = var1;
+   }
 
-    void G(String string) {
-        this.c = string;
-    }
+   public String P() {
+      return this.N;
+   }
 
-    public String P() {
-        return this.N;
-    }
+   void h(String var1) {
+      this.N = var1;
+   }
 
-    void h(String string) {
-        this.N = string;
-    }
+   public _p_2 x() {
+      return this.I;
+   }
 
-    public _p_0 x() {
-        return this.I;
-    }
+   void E(_p_2 var1) {
+      this.I = var1;
+   }
 
-    void E(_p_0 _p_02) {
-        this.I = _p_02;
-    }
+   @Override
+   public String toString() {
+      return this.N;
+   }
 
-    public String toString() {
-        return this.N;
-    }
+   public int A(com.W4 var1) {
+      return this.c.compareTo(var1.z());
+   }
 
-    public int A(W4 w4) {
-        return this.c.compareTo(w4.z());
-    }
-
-    public int compareTo(Object object) {
-        return this.A((W4)object);
-    }
+   @Override
+   public int compareTo(Object var1) {
+      return this.A((com.W4)var1);
+   }
 }
+
+
+
+
 

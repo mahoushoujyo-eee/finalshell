@@ -1,157 +1,151 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import com.ky_2;
+import com._y_2;
 import java.lang.reflect.InvocationTargetException;
-import javax.swing.event.TreeSelectionEvent;
-import javax.swing.event.TreeSelectionListener;
-import javax.swing.tree.DefaultMutableTreeNode;
+import java.lang.reflect.Method;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
-/*
- * Renamed from yk
- */
-class yk_2
-implements TreeSelectionListener {
-    final DefaultMutableTreeNode l;
-    final DefaultMutableTreeNode u;
-    final DefaultMutableTreeNode E;
-    final DefaultMutableTreeNode M;
-    final DefaultMutableTreeNode L;
-    final DefaultMutableTreeNode Q;
-    final ox_2 X;
+class Yk_2 implements Runnable {
+   final KR Z;
+   private static final long a;
 
-    yk_2(ox_2 ox_22, DefaultMutableTreeNode defaultMutableTreeNode, DefaultMutableTreeNode defaultMutableTreeNode2, DefaultMutableTreeNode defaultMutableTreeNode3, DefaultMutableTreeNode defaultMutableTreeNode4, DefaultMutableTreeNode defaultMutableTreeNode5, DefaultMutableTreeNode defaultMutableTreeNode6) {
-        this.X = ox_22;
-        this.l = defaultMutableTreeNode;
-        this.u = defaultMutableTreeNode2;
-        this.E = defaultMutableTreeNode3;
-        this.M = defaultMutableTreeNode4;
-        this.L = defaultMutableTreeNode5;
-        String string = ox_2.D();
-        this.Q = defaultMutableTreeNode6;
-        if (ky_2.F() != null) {
-            ox_2.M("TIBij");
-        }
-    }
+   Yk_2(KR var1) {
+      this.Z = var1;
+   }
 
-    @Override
-    public void valueChanged(TreeSelectionEvent treeSelectionEvent) {
-        DefaultMutableTreeNode defaultMutableTreeNode;
-        block22: {
-            boolean bl;
-            block31: {
-                block32: {
-                    String string;
-                    block29: {
-                        block30: {
-                            block27: {
-                                block28: {
-                                    block25: {
-                                        block26: {
-                                            block23: {
-                                                block24: {
-                                                    block20: {
-                                                        block21: {
-                                                            DefaultMutableTreeNode defaultMutableTreeNode2;
-                                                            try {
-                                                                defaultMutableTreeNode2 = (DefaultMutableTreeNode)this.X.B.u();
-                                                            }
-                                                            catch (InvocationTargetException invocationTargetException) {
-                                                                throw invocationTargetException.getTargetException();
-                                                            }
-                                                            defaultMutableTreeNode = defaultMutableTreeNode2;
-                                                            string = ox_2.D();
-                                                            DefaultMutableTreeNode defaultMutableTreeNode3 = defaultMutableTreeNode;
-                                                            if (string == null) {
-                                                                if (defaultMutableTreeNode3 == null) {
-                                                                    return;
-                                                                }
-                                                                defaultMutableTreeNode3 = defaultMutableTreeNode;
-                                                            }
-                                                            bl = defaultMutableTreeNode3.equals((DefaultMutableTreeNode)this.l);
-                                                            if (string != null) break block20;
-                                                            if (!bl) break block21;
-                                                            try {
-                                                                this.X.K.P(this.X.X);
-                                                            }
-                                                            catch (InvocationTargetException invocationTargetException) {
-                                                                throw invocationTargetException.getTargetException();
-                                                            }
-                                                            if (string == null) break block22;
-                                                        }
-                                                        bl = defaultMutableTreeNode.equals((DefaultMutableTreeNode)this.u);
-                                                    }
-                                                    if (string != null) break block23;
-                                                    if (!bl) break block24;
-                                                    try {
-                                                        this.X.K.P(this.X.D);
-                                                    }
-                                                    catch (InvocationTargetException invocationTargetException) {
-                                                        throw invocationTargetException.getTargetException();
-                                                    }
-                                                    if (string == null) break block22;
-                                                }
-                                                bl = defaultMutableTreeNode.equals((DefaultMutableTreeNode)this.E);
-                                            }
-                                            if (string != null) break block25;
-                                            if (!bl) break block26;
-                                            try {
-                                                this.X.K.P(this.X.Q);
-                                            }
-                                            catch (InvocationTargetException invocationTargetException) {
-                                                throw invocationTargetException.getTargetException();
-                                            }
-                                            if (string == null) break block22;
-                                        }
-                                        bl = defaultMutableTreeNode.equals((DefaultMutableTreeNode)this.M);
-                                    }
-                                    if (string != null) break block27;
-                                    if (!bl) break block28;
-                                    try {
-                                        this.X.K.P(this.X.s);
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    if (string == null) break block22;
-                                }
-                                bl = defaultMutableTreeNode.equals((DefaultMutableTreeNode)this.L);
-                            }
-                            if (string != null) break block29;
-                            if (!bl) break block30;
-                            try {
-                                this.X.K.P(this.X.R);
-                            }
-                            catch (InvocationTargetException invocationTargetException) {
-                                throw invocationTargetException.getTargetException();
-                            }
-                            if (string == null) break block22;
-                        }
-                        bl = defaultMutableTreeNode.equals((DefaultMutableTreeNode)this.Q);
-                    }
-                    if (string != null) break block31;
-                    if (!bl) break block32;
-                    try {
-                        this.X.K.P(this.X.P);
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    if (string == null) break block22;
-                }
-                bl = defaultMutableTreeNode.equals((DefaultMutableTreeNode)this.X.m);
+   @Override
+   public void run() {
+      int[] var10000 = DU.u();
+      ((JTextField)com.c.c(429952889391243847L).get(com.c.c(477342503026871908L).get(com.c.c(427592903543022635L).get(this))))
+         .setText(
+            ((JTextField)com.c.c(429952889391243847L).get(com.c.c(477342503026871908L).get(com.c.c(427592903543022635L).get(this)))).getText().toLowerCase()
+         );
+      int[] var1 = var10000;
+      String var2 = new String(
+         ((JPasswordField)com.c.c(228183978052282907L).get(com.c.c(477342503026871908L).get(com.c.c(427592903543022635L).get(this)))).getPassword()
+      );
+      if (var1 != null) {
+         Method var10001 = (Method)com.c.c(181350030129350521L).get(com.c.c(477342503026871908L).get(com.c.c(427592903543022635L).get(this)));
+         Object[] var10002 = com.c.f();
+         Method var10004 = com.c.d(191807067392725406L);
+         Object[] var10003 = var10002;
+         var10002 = var10001;
+         var10001 = var10004;
+
+         try {
+            var28 = (String)var10001.invoke(var10002, var10003);
+         } catch (InvocationTargetException var11) {
+            throw var11.getTargetException();
+         }
+
+         if (!var2.equals(var28)) {
+            Object[] var12 = com.c.a(var2);
+            Method var13 = com.c.d(310648841563123270L);
+            var10002 = var12;
+            var10001 = null;
+
+            try {
+               var14 = (String)var13.invoke(var10001, var10002);
+            } catch (InvocationTargetException var10) {
+               throw var10.getTargetException();
             }
-            if (bl) {
-                try {
-                    this.X.K.P(this.X.z);
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-            }
-        }
-        this.X.J = defaultMutableTreeNode;
-    }
+
+            String var3 = var14;
+            ((JPasswordField)com.c.c(228183978052282907L).get(com.c.c(477342503026871908L).get(com.c.c(427592903543022635L).get(this)))).setText(var3);
+         }
+
+         var10000 = (int[])com.c.c(181350030129350521L).get(com.c.c(477342503026871908L).get(com.c.c(427592903543022635L).get(this)));
+         Object[] var31 = com.c.a(
+            ((JTextField)com.c.c(429952889391243847L).get(com.c.c(477342503026871908L).get(com.c.c(427592903543022635L).get(this)))).getText()
+         );
+         Method var53 = com.c.d(562455292458332652L);
+         var10002 = var31;
+         var10001 = var10000;
+         Method var16 = var53;
+
+         try {
+            var16.invoke(var10001, var10002);
+         } catch (InvocationTargetException var9) {
+            throw var9.getTargetException();
+         }
+
+         var10000 = (int[])com.c.c(181350030129350521L).get(com.c.c(477342503026871908L).get(com.c.c(427592903543022635L).get(this)));
+         Object[] var33 = com.c.a(
+            new String(
+               ((JPasswordField)com.c.c(228183978052282907L).get(com.c.c(477342503026871908L).get(com.c.c(427592903543022635L).get(this)))).getPassword()
+            )
+         );
+         Method var54 = com.c.d(583865646792521502L);
+         var10002 = var33;
+         var10001 = var10000;
+         Method var18 = var54;
+
+         try {
+            var18.invoke(var10001, var10002);
+         } catch (InvocationTargetException var8) {
+            throw var8.getTargetException();
+         }
+
+         Object[] var19 = com.c.f();
+         Method var20 = com.c.d(270389152141252877L);
+         var10002 = var19;
+         var10001 = null;
+
+         try {
+            var10000 = (int[])var20.invoke(var10001, var10002);
+         } catch (InvocationTargetException var7) {
+            throw var7.getTargetException();
+         }
+
+         Object[] var37 = com.c.f();
+         Method var55 = com.c.d(578864097947885485L);
+         var10002 = var37;
+         var10001 = var10000;
+         Method var22 = var55;
+
+         try {
+            var22.invoke(var10001, var10002);
+         } catch (InvocationTargetException var6) {
+            throw var6.getTargetException();
+         }
+
+         _y_2.b();
+         var10000 = (int[])com.c.c(388376917454860932L).get(null);
+         Object[] var39 = com.c.a(new T9(this), (int)a);
+         Method var56 = com.c.d(266288712085965362L);
+         var10002 = var39;
+         var10001 = var10000;
+         Method var24 = var56;
+
+         try {
+            var24.invoke(var10001, var10002);
+         } catch (InvocationTargetException var5) {
+            throw var5.getTargetException();
+         }
+
+         var10000 = (int[])com.c.c(608857086159868835L).get(com.c.c(477342503026871908L).get(com.c.c(427592903543022635L).get(this)));
+         Object[] var41 = com.c.f();
+         Method var57 = com.c.d(409729356224766465L);
+         var10002 = var41;
+         var10001 = var10000;
+         Method var26 = var57;
+
+         try {
+            var26.invoke(var10001, var10002);
+         } catch (InvocationTargetException var4) {
+            throw var4.getTargetException();
+         }
+      }
+   }
+
+   static {
+      long var0 = 7614969788393075630L;
+      long var10002 = -4406316031530747882L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

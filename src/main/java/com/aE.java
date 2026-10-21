@@ -1,51 +1,57 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.EY;
-import com.g_0;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 
-class aE
-extends MouseAdapter {
-    final JComponent k;
-    final g_0 l;
+class aE extends MouseAdapter {
+   final JComponent k;
+   final com.g_2 l;
 
-    aE(g_0 g_02, JComponent jComponent) {
-        this.l = g_02;
-        this.k = jComponent;
-    }
+   aE(com.g_2 var1, JComponent var2) {
+      this.l = var1;
+      this.k = var2;
+   }
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-        block3: {
-            aE aE2;
-            block5: {
-                boolean bl;
-                block4: {
-                    int n10;
-                    block2: {
-                        n10 = EY.G();
-                        bl = this.l.I();
-                        if (n10 == 0) break block2;
-                        if (!bl) break block3;
-                        bl = SwingUtilities.isLeftMouseButton(mouseEvent);
-                    }
-                    if (n10 == 0) break block4;
-                    if (!bl) break block3;
-                    aE2 = this;
-                    if (n10 == 0) break block5;
-                    bl = aE2.k.isEnabled();
-                }
-                if (!bl) break block3;
-                aE2 = this;
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      int var2 = EY.G();
+      boolean var10000 = this.l.I();
+      if (var2 != 0) {
+         if (!var10000) {
+            return;
+         }
+
+         var10000 = SwingUtilities.isLeftMouseButton(var1);
+      }
+
+      label33: {
+         if (var2 != 0) {
+            if (!var10000) {
+               return;
             }
-            aE2.l.exportAsDrag(this.k, mouseEvent, this.l.getSourceActions(this.k));
-        }
-    }
+
+            var3 = this;
+            if (var2 == 0) {
+               break label33;
+            }
+
+            var10000 = this.k.isEnabled();
+         }
+
+         if (!var10000) {
+            return;
+         }
+
+         var3 = this;
+      }
+
+      var3.l.exportAsDrag(this.k, var1, this.l.getSourceActions(this.k));
+   }
 }
+
+
+
+
 

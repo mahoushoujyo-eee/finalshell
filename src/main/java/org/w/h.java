@@ -1,261 +1,427 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.w;
 
-import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.security.AccessControlException;
 import java.util.Collections;
 import java.util.Map;
-import org.F.c;
-import org.w.d;
 
-public class h
-extends ClassLoader {
-    private final Map T;
-    private Map y = Collections.emptyMap();
-    static final /* synthetic */ boolean W;
-    private static final String a;
-    private static final long[] b;
-    private static final Integer[] c;
+public class h extends ClassLoader {
+   private final Map T;
+   private Map y = Collections.emptyMap();
+   private static final String a;
+   private static final long[] b;
+   private static final Integer[] c;
 
-    public h(Map map) {
-        this.T = map;
-    }
+   public h(Map var1) {
+      this.T = var1;
+   }
 
-    public h(Map map, ClassLoader classLoader) {
-        super(classLoader);
-        this.T = map;
-    }
+   public h(Map var1, ClassLoader var2) {
+      super(var2);
+      this.T = var1;
+   }
 
-    public void H(Map map) {
-        this.y = map;
-    }
+   public void H(Map var1) {
+      this.y = var1;
+   }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    protected Class findClass(@c String var1_1) throws ClassNotFoundException {
-        block19: {
-            block18: {
-                block17: {
-                    block16: {
-                        block20: {
-                            var2_2 = d.q();
-                            if (h.W) break block16;
-                            v0 /* !! */  = var1_1;
-                            if (var2_2 != null) break block17;
-                            break block20;
-                            catch (AccessControlException v1) {
-                                throw h.a(v1);
-                            }
-                        }
-                        try {
-                            block21: {
-                                if (v0 /* !! */  != null) break block16;
-                                break block21;
-                                catch (AccessControlException v2) {
-                                    throw h.a(v2);
-                                }
-                            }
-                            throw new AssertionError();
-                        }
-                        catch (AccessControlException v3) {
-                            throw h.a(v3);
-                        }
-                    }
-                    v0 /* !! */  = this.T.get(var1_1);
-                }
-                var3_3 = (byte[])v0 /* !! */ ;
-                v4 = var3_3;
-                if (var2_2 != null) break block18;
-                try {
-                    block22: {
-                        if (v4 != null) break block19;
-                        break block22;
-                        catch (AccessControlException v5) {
-                            throw h.a(v5);
-                        }
-                    }
-                    v6 = this;
-                    if (var2_2 == null) {
-                    }
-                    ** GOTO lbl50
-                }
-                catch (AccessControlException v7) {
-                    throw h.a(v7);
-                }
-                v4 = var3_3 = (byte[])v6.T.get(var1_1.replace((char)h.a(3414, 5971586045051774321L), (char)h.a(19625, 5800405406072661135L)) + h.a);
-            }
-            try {
-                if (v4 == null) {
-                    throw new ClassNotFoundException(var1_1);
-                }
-            }
-            catch (AccessControlException v8) {
-                throw h.a(v8);
-            }
-        }
-        try {
-            v6 = this;
-lbl50:
-            // 2 sources
+   @Override
+   protected Class findClass(@org.F.c String param1) throws ClassNotFoundException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/w/d.q ()[I
+      // 03: astore 2
+      // 04: getstatic org/w/h.W Z
+      // 07: ifne 2c
+      // 0a: aload 1
+      // 0b: aload 2
+      // 0c: ifnonnull 36
+      // 0f: goto 16
+      // 12: invokestatic org/w/h.a (Ljava/security/AccessControlException;)Ljava/security/AccessControlException;
+      // 15: athrow
+      // 16: ifnonnull 2c
+      // 19: goto 20
+      // 1c: invokestatic org/w/h.a (Ljava/security/AccessControlException;)Ljava/security/AccessControlException;
+      // 1f: athrow
+      // 20: new java/lang/AssertionError
+      // 23: dup
+      // 24: invokespecial java/lang/AssertionError.<init> ()V
+      // 27: athrow
+      // 28: invokestatic org/w/h.a (Ljava/security/AccessControlException;)Ljava/security/AccessControlException;
+      // 2b: athrow
+      // 2c: aload 0
+      // 2d: getfield org/w/h.T Ljava/util/Map;
+      // 30: aload 1
+      // 31: invokeinterface java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object; 2
+      // 36: checkcast [B
+      // 39: astore 3
+      // 3a: aload 3
+      // 3b: aload 2
+      // 3c: ifnonnull 8b
+      // 3f: ifnonnull 9b
+      // 42: goto 49
+      // 45: invokestatic org/w/h.a (Ljava/security/AccessControlException;)Ljava/security/AccessControlException;
+      // 48: athrow
+      // 49: aload 0
+      // 4a: aload 2
+      // 4b: ifnonnull 9c
+      // 4e: goto 55
+      // 51: invokestatic org/w/h.a (Ljava/security/AccessControlException;)Ljava/security/AccessControlException;
+      // 54: athrow
+      // 55: getfield org/w/h.T Ljava/util/Map;
+      // 58: new java/lang/StringBuilder
+      // 5b: dup
+      // 5c: invokespecial java/lang/StringBuilder.<init> ()V
+      // 5f: aload 1
+      // 60: sipush 3414
+      // 63: ldc2_w 5971586045051774321
+      // 66: invokestatic org/w/h.a (IJ)I
+      // 69: sipush 19625
+      // 6c: ldc2_w 5800405406072661135
+      // 6f: invokestatic org/w/h.a (IJ)I
+      // 72: invokevirtual java/lang/String.replace (CC)Ljava/lang/String;
+      // 75: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 78: getstatic org/w/h.a Ljava/lang/String;
+      // 7b: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 7e: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // 81: invokeinterface java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object; 2
+      // 86: checkcast [B
+      // 89: astore 3
+      // 8a: aload 3
+      // 8b: ifnonnull 9b
+      // 8e: new java/lang/ClassNotFoundException
+      // 91: dup
+      // 92: aload 1
+      // 93: invokespecial java/lang/ClassNotFoundException.<init> (Ljava/lang/String;)V
+      // 96: athrow
+      // 97: invokestatic org/w/h.a (Ljava/security/AccessControlException;)Ljava/security/AccessControlException;
+      // 9a: athrow
+      // 9b: aload 0
+      // 9c: invokevirtual java/lang/Object.getClass ()Ljava/lang/Class;
+      // 9f: invokevirtual java/lang/Class.getProtectionDomain ()Ljava/security/ProtectionDomain;
+      // a2: astore 4
+      // a4: goto ac
+      // a7: astore 5
+      // a9: aconst_null
+      // aa: astore 4
+      // ac: aload 0
+      // ad: aload 1
+      // ae: aload 3
+      // af: bipush 0
+      // b0: aload 3
+      // b1: arraylength
+      // b2: aload 4
+      // b4: invokespecial java/lang/ClassLoader.defineClass (Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;
+      // b7: areturn
+   }
 
-            var4_4 = v6.getClass().getProtectionDomain();
-        }
-        catch (AccessControlException var5_5) {
-            var4_4 = null;
-        }
-        return super.defineClass(var1_1, var3_3, 0, var3_3.length, var4_4);
-    }
+   @Override
+   public InputStream getResourceAsStream(String param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/w/d.q ()[I
+      // 03: aload 0
+      // 04: aload 1
+      // 05: invokespecial java/lang/ClassLoader.getResourceAsStream (Ljava/lang/String;)Ljava/io/InputStream;
+      // 08: astore 3
+      // 09: astore 2
+      // 0a: aload 3
+      // 0b: aload 2
+      // 0c: ifnonnull 29
+      // 0f: ifnull 1f
+      // 12: goto 19
+      // 15: invokestatic org/w/h.a (Ljava/security/AccessControlException;)Ljava/security/AccessControlException;
+      // 18: athrow
+      // 19: aload 3
+      // 1a: areturn
+      // 1b: invokestatic org/w/h.a (Ljava/security/AccessControlException;)Ljava/security/AccessControlException;
+      // 1e: athrow
+      // 1f: aload 0
+      // 20: getfield org/w/h.y Ljava/util/Map;
+      // 23: aload 1
+      // 24: invokeinterface java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object; 2
+      // 29: checkcast [B
+      // 2c: astore 4
+      // 2e: aload 4
+      // 30: ifnonnull 3b
+      // 33: aconst_null
+      // 34: goto 44
+      // 37: invokestatic org/w/h.a (Ljava/security/AccessControlException;)Ljava/security/AccessControlException;
+      // 3a: athrow
+      // 3b: new java/io/ByteArrayInputStream
+      // 3e: dup
+      // 3f: aload 4
+      // 41: invokespecial java/io/ByteArrayInputStream.<init> ([B)V
+      // 44: areturn
+   }
 
-    @Override
-    public InputStream getResourceAsStream(String string) {
-        ByteArrayInputStream byteArrayInputStream;
-        InputStream inputStream;
-        block6: {
-            block7: {
-                InputStream inputStream2 = super.getResourceAsStream(string);
-                int[] nArray = d.q();
-                try {
-                    try {
-                        inputStream = inputStream2;
-                        if (nArray != null) break block6;
-                        if (inputStream == null) break block7;
-                    }
-                    catch (AccessControlException accessControlException) {
-                        throw h.a(accessControlException);
-                    }
-                    return inputStream2;
-                }
-                catch (AccessControlException accessControlException) {
-                    throw h.a(accessControlException);
-                }
-            }
-            inputStream = this.y.get(string);
-        }
-        byte[] byArray = (byte[])inputStream;
-        try {
-            byteArrayInputStream = byArray == null ? null : new ByteArrayInputStream(byArray);
-        }
-        catch (AccessControlException accessControlException) {
-            throw h.a(accessControlException);
-        }
-        return byteArrayInputStream;
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "EKoou\u0003".toCharArray();
+      int var10004 = var10003.length;
+      int var8 = 0;
+      byte var28 = 126;
+      char[] var10002 = var10003;
+      int var19 = var10004;
+      char[] var34;
+      byte var40;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var34 = var10003;
+         var10005 = var8;
+         char var10008 = var10003[var8];
+         var10007 = 126;
+         var10006 = var10008;
+         switch (var8 % 7) {
+            case 0:
+               var40 = 21;
+               break;
+            case 1:
+               var40 = 86;
+               break;
+            case 2:
+               var40 = 125;
+               break;
+            case 3:
+               var40 = 112;
+               break;
+            case 4:
+               var40 = 120;
+               break;
+            case 5:
+               var40 = 14;
+               break;
+            default:
+               var40 = 92;
+         }
+      } else {
+         var28 = 126;
+         var19 = var10004;
+         if (var10004 <= var8) {
+            String var32 = new String(var10003).intern();
+            int var24 = -1;
+            a = var32;
+            long var11 = 8275381478105837456L;
+            long[] var16 = new long[2];
+            int var13 = 0;
+            String var14 = "\u0014ãQÚ\u0087¥ÊÏ¸8\u0080\u009b!o\u000b0";
+            int var15 = "\u0014ãQÚ\u0087¥ÊÏ¸8\u0080\u009b!o\u000b0".length();
+            byte var12 = 0;
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     * Enabled unnecessary exception pruning
-     * Enabled aggressive exception aggregation
-     */
-    static {
-        boolean bl;
-        char[] cArray;
-        block15: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block14: {
-                char[] cArray3 = "EKoou\u0003".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 126;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block14;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block15;
-            }
             do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 21;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 86;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 125;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 112;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 120;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 14;
-                            break;
-                        }
-                        default: {
-                            n17 = 92;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        long l2 = 8275381478105837456L;
-        long[] lArray = new long[2];
-        int n18 = 0;
-        String string = "\u0014\u00e3Q\u00da\u0087\u00a5\u00ca\u00cf\u00b88\u0080\u009b!o\u000b0";
-        int n19 = "\u0014\u00e3Q\u00da\u0087\u00a5\u00ca\u00cf\u00b88\u0080\u009b!o\u000b0".length();
-        int n20 = 0;
-        do {
-            byte[] byArray = string.substring(n20, n20 += 8).getBytes("ISO-8859-1");
-            int n21 = n18++;
-            lArray[n21] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n20 < n19);
-        b = lArray;
-        c = new Integer[2];
-        try {
-            bl = !h.class.desiredAssertionStatus();
-        }
-        catch (AccessControlException accessControlException) {
-            throw h.a(accessControlException);
-        }
-        W = bl;
-    }
+               var24 = var12;
+               var12 += 8;
+               byte[] var17 = var14.substring(var24, var12).getBytes("ISO-8859-1");
+               var24 = var13++;
+               long var38 = (
+                     ((long)var17[0] & 255L) << 56
+                        | ((long)var17[1] & 255L) << 48
+                        | ((long)var17[2] & 255L) << 40
+                        | ((long)var17[3] & 255L) << 32
+                        | ((long)var17[4] & 255L) << 24
+                        | ((long)var17[5] & 255L) << 16
+                        | ((long)var17[6] & 255L) << 8
+                        | (long)var17[7] & 255L
+                  )
+                  ^ var11;
+               byte var33 = -1;
+               var16[var24] = var38;
+            } while (var12 < var15);
 
-    private static AccessControlException a(AccessControlException accessControlException) {
-        return accessControlException;
-    }
+            b = var16;
+            c = new Integer[2];
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x2827;
-        if (c[n11] == null) {
-            h.c[n11] = (int)(b[n11] ^ l2);
-        }
-        return c[n11];
-    }
+            boolean var18;
+            label85: {
+               try {
+                  if (!h.class.desiredAssertionStatus()) {
+                     var18 = true;
+                     break label85;
+                  }
+               } catch (AccessControlException var10) {
+                  throw a(var10);
+               }
+
+               var18 = false;
+            }
+
+            W = var18;
+            return;
+         }
+
+         var34 = var10003;
+         var10005 = var8;
+         char var41 = var10003[var8];
+         var10007 = 126;
+         var10006 = var41;
+         switch (var8 % 7) {
+            case 0:
+               var40 = 21;
+               break;
+            case 1:
+               var40 = 86;
+               break;
+            case 2:
+               var40 = 125;
+               break;
+            case 3:
+               var40 = 112;
+               break;
+            case 4:
+               var40 = 120;
+               break;
+            case 5:
+               var40 = 14;
+               break;
+            default:
+               var40 = 92;
+         }
+      }
+
+      while (true) {
+         var34[var10005] = (char)(var10006 ^ var10007 ^ var40);
+         var8++;
+         if (var28 == 0) {
+            var34 = var10002;
+            var10005 = var28;
+            char var43 = var10002[var28];
+            var10007 = var28;
+            var10006 = var43;
+            switch (var8 % 7) {
+               case 0:
+                  var40 = 21;
+                  break;
+               case 1:
+                  var40 = 86;
+                  break;
+               case 2:
+                  var40 = 125;
+                  break;
+               case 3:
+                  var40 = 112;
+                  break;
+               case 4:
+                  var40 = 120;
+                  break;
+               case 5:
+                  var40 = 14;
+                  break;
+               default:
+                  var40 = 92;
+            }
+         } else {
+            if (var19 <= var8) {
+               String var30 = new String(var10002).intern();
+               int var21 = -1;
+               a = var30;
+               long var0 = 8275381478105837456L;
+               long[] var6 = new long[2];
+               int var3 = 0;
+               String var4 = "\u0014ãQÚ\u0087¥ÊÏ¸8\u0080\u009b!o\u000b0";
+               int var5 = "\u0014ãQÚ\u0087¥ÊÏ¸8\u0080\u009b!o\u000b0".length();
+               byte var2 = 0;
+
+               do {
+                  var21 = var2;
+                  var2 += 8;
+                  byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
+                  var21 = var3++;
+                  long var37 = (
+                        ((long)var7[0] & 255L) << 56
+                           | ((long)var7[1] & 255L) << 48
+                           | ((long)var7[2] & 255L) << 40
+                           | ((long)var7[3] & 255L) << 32
+                           | ((long)var7[4] & 255L) << 24
+                           | ((long)var7[5] & 255L) << 16
+                           | ((long)var7[6] & 255L) << 8
+                           | (long)var7[7] & 255L
+                     )
+                     ^ var0;
+                  byte var31 = -1;
+                  var6[var21] = var37;
+               } while (var2 < var5);
+
+               b = var6;
+               c = new Integer[2];
+
+               boolean var10000;
+               label38: {
+                  try {
+                     if (!h.class.desiredAssertionStatus()) {
+                        var10000 = true;
+                        break label38;
+                     }
+                  } catch (AccessControlException var9) {
+                     throw a(var9);
+                  }
+
+                  var10000 = false;
+               }
+
+               W = var10000;
+               return;
+            }
+
+            var34 = var10002;
+            var10005 = var8;
+            char var42 = var10002[var8];
+            var10007 = var28;
+            var10006 = var42;
+            switch (var8 % 7) {
+               case 0:
+                  var40 = 21;
+                  break;
+               case 1:
+                  var40 = 86;
+                  break;
+               case 2:
+                  var40 = 125;
+                  break;
+               case 3:
+                  var40 = 112;
+                  break;
+               case 4:
+                  var40 = 120;
+                  break;
+               case 5:
+                  var40 = 14;
+                  break;
+               default:
+                  var40 = 92;
+            }
+         }
+      }
+   }
+
+   private static AccessControlException a(AccessControlException var0) {
+      return var0;
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 10279;
+      if (c[var3] == null) {
+         c[var3] = (int)(b[var3] ^ var1);
+      }
+
+      return c[var3];
+   }
 }
+
+
+
+
 

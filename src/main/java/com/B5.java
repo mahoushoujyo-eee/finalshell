@@ -1,98 +1,98 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ky_2;
-import com.pi_1;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import java.awt.Point;
 
-@XStreamAlias(value="Line")
+@XStreamAlias("Line")
 public class B5 {
-    @XStreamAsAttribute
-    public int L;
-    @XStreamAsAttribute
-    public int I;
-    @XStreamAsAttribute
-    public int z;
-    @XStreamAsAttribute
-    public int A;
+   @XStreamAsAttribute
+   public int L;
+   @XStreamAsAttribute
+   public int I;
+   @XStreamAsAttribute
+   public int z;
+   @XStreamAsAttribute
+   public int A;
 
-    public B5() {
-    }
+   public B5() {
+   }
 
-    public B5(int n10, int n11, int n12, int n13) {
-        this.L = n10;
-        this.I = n11;
-        this.z = n12;
-        this.A = n13;
-    }
+   public B5(int var1, int var2, int var3, int var4) {
+      this.L = var1;
+      this.I = var2;
+      this.z = var3;
+      this.A = var4;
+   }
 
-    public B5(Point point, Point point2) {
-        String[] stringArray = pi_1.v();
-        this.L = point.x;
-        this.I = point.y;
-        String[] stringArray2 = stringArray;
-        this.z = point2.x;
-        this.A = point2.y;
-        if (ky_2.F() != null) {
-            pi_1.t(new String[5]);
-        }
-    }
+   public B5(Point var1, Point var2) {
+      pI_3.v();
+      super();
+      this.L = var1.x;
+      this.I = var1.y;
+      this.z = var2.x;
+      this.A = var2.y;
+      if (com.ky_4.F() != null) {
+         pI_3.t(new String[5]);
+      }
+   }
 
-    public B5(B5 b5) {
-        this.L = b5.L;
-        this.I = b5.I;
-        this.z = b5.z;
-        String[] stringArray = pi_1.v();
-        this.A = b5.A;
-        if (stringArray != null) {
-            ky_2.K(new String[5]);
-        }
-    }
+   public B5(com.B5 var1) {
+      String[] var10000 = pI_3.v();
+      this.L = var1.L;
+      this.I = var1.I;
+      this.z = var1.z;
+      String[] var2 = var10000;
+      this.A = var1.A;
+      if (var2 != null) {
+         com.ky_4.K(new String[5]);
+      }
+   }
 
-    public double r() {
-        return this.L;
-    }
+   public double r() {
+      return (double)this.L;
+   }
 
-    public void R(int n10) {
-        this.L = n10;
-    }
+   public void R(int var1) {
+      this.L = var1;
+   }
 
-    public double Q() {
-        return this.I;
-    }
+   public double Q() {
+      return (double)this.I;
+   }
 
-    public void Z(int n10) {
-        this.I = n10;
-    }
+   public void Z(int var1) {
+      this.I = var1;
+   }
 
-    public double e() {
-        return this.z;
-    }
+   public double e() {
+      return (double)this.z;
+   }
 
-    public void d(int n10) {
-        this.z = n10;
-    }
+   public void d(int var1) {
+      this.z = var1;
+   }
 
-    public double b() {
-        return this.A;
-    }
+   public double b() {
+      return (double)this.A;
+   }
 
-    public void r(int n10) {
-        this.A = n10;
-    }
+   public void r(int var1) {
+      this.A = var1;
+   }
 
-    public void H(Point point) {
-        this.L = point.x;
-        this.I = point.y;
-    }
+   public void H(Point var1) {
+      this.L = var1.x;
+      this.I = var1.y;
+   }
 
-    public void g(Point point) {
-        this.z = point.x;
-        this.A = point.y;
-    }
+   public void g(Point var1) {
+      this.z = var1.x;
+      this.A = var1.y;
+   }
 }
+
+
+
+
 

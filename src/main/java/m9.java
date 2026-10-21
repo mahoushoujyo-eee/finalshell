@@ -1,85 +1,96 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class m9
-implements MouseListener {
-    final jx_0 P;
-    final fr_2 m;
-    final DT T;
+class m9 implements MouseListener {
+   final Jx_2 P;
+   final fr_4 m;
+   final DT T;
 
-    m9(DT dT, jx_0 jx_02, fr_2 fr_22) {
-        this.T = dT;
-        this.P = jx_02;
-        this.m = fr_22;
-    }
+   m9(DT var1, Jx_2 var2, fr_4 var3) {
+      this.T = var1;
+      this.P = var2;
+      this.m = var3;
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-        block14: {
-            int n10;
-            int n11;
-            block13: {
-                int[] nArray;
-                block9: {
-                    block10: {
-                        block12: {
-                            DT dT;
-                            int n12;
-                            block11: {
-                                n12 = ((DT)this.T).rowAtPoint(mouseEvent.getPoint());
-                                nArray = jx_0.O();
-                                n11 = mouseEvent.getButton();
-                                n10 = 3;
-                                if (nArray != null) break block9;
-                                if (n11 != n10) break block10;
-                                dT = (DT)this.T;
-                                if (nArray != null) break block11;
-                                if (dT.isRowSelected(n12)) break block12;
-                                dT = (DT)this.T;
-                            }
-                            dT.getSelectionModel().setSelectionInterval(n12, n12);
-                        }
-                        yj_0 yj_02 = new yj_0((jx_0)this.P, (DT)this.T.I, (fr_2)this.m);
-                        yj_02.show((DT)this.T.I, mouseEvent.getX(), mouseEvent.getY());
-                    }
-                    n11 = mouseEvent.getButton();
-                    n10 = 1;
-                }
-                if (nArray != null) break block13;
-                if (n11 != n10) break block14;
-                n11 = mouseEvent.getClickCount();
-                n10 = 2;
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+      int[] var10000 = Jx_2.O();
+      int var3 = ((DT)com.c.c(256408289213989983L).get(this)).rowAtPoint(var1.getPoint());
+      int[] var2 = var10000;
+      int var6 = var1.getButton();
+      byte var10001 = 3;
+      if (var2 == null) {
+         if (var6 == 3) {
+            label38: {
+               DT var7 = (DT)com.c.c(256408289213989983L).get(this);
+               if (var2 == null) {
+                  if (var7.isRowSelected(var3)) {
+                     break label38;
+                  }
+
+                  var7 = (DT)com.c.c(256408289213989983L).get(this);
+               }
+
+               var7.getSelectionModel().setSelectionInterval(var3, var3);
             }
-            if (n11 == n10) {
-                try {
-                    this.P.F();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-            }
-        }
-    }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-    }
+            Yj_2 var4 = new Yj_2(
+               (Jx_2)com.c.c(199773765280877583L).get(this),
+               (DT)com.c.c(520595572764773303L).get(com.c.c(256408289213989983L).get(this)),
+               (fr_4)com.c.c(504540812240479562L).get(this)
+            );
+            var4.show((DT)com.c.c(520595572764773303L).get(com.c.c(256408289213989983L).get(this)), var1.getX(), var1.getY());
+         }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-    }
+         var6 = var1.getButton();
+         var10001 = 1;
+      }
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-    }
+      if (var2 == null) {
+         if (var6 != var10001) {
+            return;
+         }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+         var6 = var1.getClickCount();
+         var10001 = 2;
+      }
+
+      if (var6 == var10001) {
+         var10000 = (int[])com.c.c(199773765280877583L).get(this);
+         Object[] var10 = com.c.f();
+         Method var10003 = com.c.d(506366507584924367L);
+         Object[] var10002 = var10;
+         Object var11 = var10000;
+         Method var9 = var10003;
+
+         try {
+            var9.invoke(var11, var10002);
+         } catch (InvocationTargetException var5) {
+            throw var5.getTargetException();
+         }
+      }
+   }
+
+   @Override
+   public void mousePressed(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseExited(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+   }
 }
+
+
+
+
 

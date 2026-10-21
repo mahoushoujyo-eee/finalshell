@@ -1,50 +1,40 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.nw_2;
-import java.awt.Component;
+import java.util.Comparator;
 
-/*
- * Renamed from com.yb
- */
-public interface yb_2
-extends nw_2 {
-    public Component a();
+public class Yb_2 implements Comparator {
+   public int R(com.ld_4 var1, com.ld_4 var2) {
+      byte var10000 = i2_2.K();
+      Class var4 = var1.D();
+      boolean var3 = (boolean)var10000;
+      Class var5 = var2.D();
+      var10000 = var4.equals(var5);
+      if (var3) {
+         if (var10000 != 0) {
+            return 0;
+         }
 
-    public Component c(boolean var1);
+         var10000 = var4.isAssignableFrom(var5);
+      }
 
-    public boolean h();
+      if (var3) {
+         if (var10000 != 0) {
+            return 1;
+         }
 
-    public Component R();
+         var10000 = -1;
+      }
 
-    public Component u(boolean var1);
+      return var10000;
+   }
 
-    public boolean K();
-
-    public Component Q();
-
-    public Component N(boolean var1);
-
-    public boolean l();
-
-    public Component D(boolean var1, boolean var2);
-
-    public Component i(int var1);
-
-    public Component o(int var1);
-
-    public Component G(int var1);
-
-    public int Y();
-
-    public Component t(int var1, boolean var2, boolean var3);
-
-    public Component e(int var1, int var2);
-
-    public Component N(String var1);
-
-    public String D();
+   @Override
+   public int compare(Object var1, Object var2) {
+      return this.R((com.ld_4)var1, (com.ld_4)var2);
+   }
 }
+
+
+
+
 

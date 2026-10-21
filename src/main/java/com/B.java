@@ -1,157 +1,170 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.R;
-import com.kb_1;
-import com.kl_0;
+public class B extends com.R {
+   public B() {
+      this(0.0F, 0.0F, 0.0F, 0.0F);
+   }
 
-public class B
-extends R {
-    public B() {
-        this(0.0f, 0.0f, 0.0f, 0.0f);
-    }
+   public B(float[] var1) {
+      this.T = var1[0];
+      this.o = var1[1];
+      this.I = var1[2];
+      this.z = var1[3];
+   }
 
-    public B(float[] fArray) {
-        this.T = fArray[0];
-        this.o = fArray[1];
-        this.I = fArray[2];
-        this.z = fArray[3];
-    }
+   public B(float var1, float var2, float var3, float var4) {
+      this.T = var1;
+      this.o = var2;
+      this.I = var3;
+      this.z = var4;
+   }
 
-    public B(float f10, float f11, float f12, float f13) {
-        this.T = f10;
-        this.o = f11;
-        this.I = f12;
-        this.z = f13;
-    }
+   public B(B var1) {
+      this.T = var1.T;
+      this.o = var1.o;
+      this.I = var1.I;
+      this.z = var1.z;
+   }
 
-    public B(B b2) {
-        this.T = b2.T;
-        this.o = b2.o;
-        this.I = b2.I;
-        this.z = b2.z;
-    }
+   public B(com.R var1) {
+      this.T = var1.T;
+      this.o = var1.o;
+      this.I = var1.I;
+      this.z = var1.z;
+   }
 
-    public B(R r2) {
-        this.T = r2.T;
-        this.o = r2.o;
-        this.I = r2.I;
-        this.z = r2.z;
-    }
+   public void S(com.Kl_2 var1) {
+      float var2 = var1.G * 0.5F;
+      float var3 = (float)Math.cos((double)var2);
+      float var4 = (float)Math.sin((double)var2);
+      this.T = var1.C * var4;
+      this.o = var1.w * var4;
+      this.I = var1.J * var4;
+      this.z = var3;
+   }
 
-    public void S(kl_0 kl_02) {
-        float f10 = kl_02.G * 0.5f;
-        float f11 = (float)Math.cos(f10);
-        float f12 = (float)Math.sin(f10);
-        this.T = kl_02.C * f12;
-        this.o = kl_02.w * f12;
-        this.I = kl_02.J * f12;
-        this.z = f11;
-    }
+   public void l() {
+      float var1 = 1.0F / (this.T * this.T + this.o * this.o + this.I * this.I + this.z * this.z);
+      this.T *= var1;
+      this.o *= var1;
+      this.I *= var1;
+      this.z *= var1;
+   }
 
-    public void l() {
-        float f10 = 1.0f / (this.T * this.T + this.o * this.o + this.I * this.I + this.z * this.z);
-        this.T *= f10;
-        this.o *= f10;
-        this.I *= f10;
-        this.z *= f10;
-    }
-
-    public void G(kb_1 kb_12) {
-        block17: {
-            float f10;
-            float f11;
-            int n10;
-            block20: {
-                double d2;
-                block21: {
-                    block18: {
-                        float f12;
-                        block19: {
-                            double d3;
-                            block15: {
-                                block16: {
-                                    float f13 = kb_12.n + kb_12.B + kb_12.P;
-                                    n10 = R.g();
-                                    double d4 = (double)f13 - 0.0;
-                                    d3 = d4 == 0.0 ? 0 : (d4 > 0.0 ? 1 : -1);
-                                    if (n10 != 0) break block15;
-                                    if (d3 <= 0) break block16;
-                                    f11 = (float)Math.sqrt(f13 + 1.0f);
-                                    this.z = f11 / 2.0f;
-                                    f11 = 0.5f / f11;
-                                    this.T = (kb_12.a - kb_12.T) * f11;
-                                    this.o = (kb_12.v - kb_12.Z) * f11;
-                                    this.I = (kb_12.i - kb_12.C) * f11;
-                                    if (n10 == 0) break block17;
-                                }
-                                d3 = 0.0;
-                            }
-                            d2 = d3;
-                            float f14 = kb_12.B - kb_12.n;
-                            f10 = f14 == 0.0f ? 0 : (f14 > 0.0f ? 1 : -1);
-                            if (n10 != 0) break block18;
-                            if (f10 <= 0) break block19;
-                            d2 = 1.0;
-                            float f15 = kb_12.P - kb_12.B;
-                            f10 = f15 == 0.0f ? 0 : (f15 > 0.0f ? 1 : -1);
-                            if (n10 != 0) break block20;
-                            if (f10 <= 0) break block21;
-                            d2 = 2;
-                            if (n10 == 0) break block21;
-                        }
-                        f10 = (f12 = kb_12.P - kb_12.n) == 0.0f ? 0 : (f12 > 0.0f ? 1 : -1);
-                    }
-                    if (n10 != 0) break block20;
-                    if (f10 > 0) {
-                        d2 = 2;
-                    }
-                }
-                f10 = (float)d2;
+   public void G(com.kB_3 var1) {
+      int var10000 = com.R.g();
+      float var5 = var1.n + var1.B + var1.P;
+      int var2 = var10000;
+      double var12;
+      var10000 = (var12 = (double)var5 - 0.0) == 0.0 ? 0 : (var12 < 0.0 ? -1 : 1);
+      if (var2 == 0) {
+         if (var10000 > 0) {
+            float var3 = (float)Math.sqrt((double)(var5 + 1.0F));
+            this.z = var3 / 2.0F;
+            var3 = 0.5F / var3;
+            this.T = (var1.a - var1.T) * var3;
+            this.o = (var1.v - var1.Z) * var3;
+            this.I = (var1.i - var1.C) * var3;
+            if (var2 == 0) {
+               return;
             }
-            switch (f10) {
-                case 0: {
-                    f11 = (float)Math.sqrt(kb_12.n - (kb_12.B + kb_12.P) + 1.0f);
-                    this.T = f11 * 0.5f;
-                    if (n10 == 0) {
-                        if ((double)f11 != 0.0) {
-                            f11 = 0.5f / f11;
-                        }
-                        this.z = (kb_12.a - kb_12.T) * f11;
-                        this.o = (kb_12.i + kb_12.C) * f11;
-                        this.I = (kb_12.Z + kb_12.v) * f11;
-                    }
-                    if (n10 == 0) break;
-                }
-                case 1: {
-                    f11 = (float)Math.sqrt(kb_12.B - (kb_12.P + kb_12.n) + 1.0f);
-                    this.o = f11 * 0.5f;
-                    if (n10 == 0) {
-                        if ((double)f11 != 0.0) {
-                            f11 = 0.5f / f11;
-                        }
-                        this.z = (kb_12.v - kb_12.Z) * f11;
-                        this.I = (kb_12.a + kb_12.T) * f11;
-                        this.T = (kb_12.C + kb_12.i) * f11;
-                    }
-                    if (n10 == 0) break;
-                }
-                case 2: {
-                    f11 = (float)Math.sqrt(kb_12.n - (kb_12.B + kb_12.P) + 1.0f);
-                    this.I = f11 * 0.5f;
-                    if (n10 == 0) {
-                        if ((double)f11 != 0.0) {
-                            f11 = 0.5f / f11;
-                        }
-                        this.z = (kb_12.i - kb_12.C) * f11;
-                        this.T = (kb_12.v + kb_12.Z) * f11;
-                    }
-                    this.o = (kb_12.T + kb_12.a) * f11;
-                }
+         }
+
+         var10000 = 0;
+      }
+
+      label66: {
+         int var4;
+         label76: {
+            var4 = var10000;
+            float var13;
+            var10000 = (var13 = var1.B - var1.n) == 0.0F ? 0 : (var13 < 0.0F ? -1 : 1);
+            if (var2 == 0) {
+               if (var10000 > 0) {
+                  var4 = 1;
+                  float var14;
+                  var10000 = (var14 = var1.P - var1.B) == 0.0F ? 0 : (var14 < 0.0F ? -1 : 1);
+                  if (var2 != 0) {
+                     break label66;
+                  }
+
+                  if (var10000 <= 0) {
+                     break label76;
+                  }
+
+                  var4 = 2;
+                  if (var2 == 0) {
+                     break label76;
+                  }
+               }
+
+               float var15;
+               var10000 = (var15 = var1.P - var1.n) == 0.0F ? 0 : (var15 < 0.0F ? -1 : 1);
             }
-        }
-    }
+
+            if (var2 != 0) {
+               break label66;
+            }
+
+            if (var10000 > 0) {
+               var4 = 2;
+            }
+         }
+
+         var10000 = var4;
+      }
+
+      switch (var10000) {
+         case 0:
+            float var7 = (float)Math.sqrt((double)(var1.n - (var1.B + var1.P) + 1.0F));
+            this.T = var7 * 0.5F;
+            if (var2 == 0) {
+               if ((double)var7 != 0.0) {
+                  var7 = 0.5F / var7;
+               }
+
+               this.z = (var1.a - var1.T) * var7;
+               this.o = (var1.i + var1.C) * var7;
+               this.I = (var1.Z + var1.v) * var7;
+            }
+
+            if (var2 == 0) {
+               break;
+            }
+         case 1:
+            float var8 = (float)Math.sqrt((double)(var1.B - (var1.P + var1.n) + 1.0F));
+            this.o = var8 * 0.5F;
+            if (var2 == 0) {
+               if ((double)var8 != 0.0) {
+                  var8 = 0.5F / var8;
+               }
+
+               this.z = (var1.v - var1.Z) * var8;
+               this.I = (var1.a + var1.T) * var8;
+               this.T = (var1.C + var1.i) * var8;
+            }
+
+            if (var2 == 0) {
+               break;
+            }
+         case 2:
+            float var9 = (float)Math.sqrt((double)(var1.n - (var1.B + var1.P) + 1.0F));
+            this.I = var9 * 0.5F;
+            if (var2 == 0) {
+               if ((double)var9 != 0.0) {
+                  var9 = 0.5F / var9;
+               }
+
+               this.z = (var1.i - var1.C) * var9;
+               this.T = (var1.v + var1.Z) * var9;
+            }
+
+            this.o = (var1.T + var1.a) * var9;
+      }
+   }
 }
+
+
+
+
 

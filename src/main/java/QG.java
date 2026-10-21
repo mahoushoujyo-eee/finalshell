@@ -1,7 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Graphics;
@@ -12,119 +8,127 @@ import javax.swing.AbstractButton;
 import javax.swing.JComponent;
 import javax.swing.JMenuBar;
 
-class QG
-extends JComponent
-implements ItemListener {
-    Point f;
-    private static final long[] a;
-    private static final Integer[] b;
+class QG extends JComponent implements ItemListener {
+   Point f;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    @Override
-    public void itemStateChanged(ItemEvent itemEvent) {
-        String string = aA.z();
-        boolean bl = itemEvent.getStateChange();
-        if (string == null) {
-            bl = bl;
-        }
-        this.setVisible(bl);
-    }
+   @Override
+   public void itemStateChanged(ItemEvent var1) {
+      String var2 = aA.z();
+      int var10001 = var1.getStateChange();
+      if (var2 == null) {
+         var10001 = var10001 == 1 ? 1 : 0;
+      }
 
-    @Override
-    protected void paintComponent(Graphics graphics) {
-        block3: {
-            block2: {
-                String string = aA.z();
-                if (string != null) break block2;
-                if ((Point)this.f == null) break block3;
-                graphics.setColor(Color.red);
+      this.setVisible((boolean)var10001);
+   }
+
+   @Override
+   protected void paintComponent(Graphics var1) {
+      String var2 = aA.z();
+      if (var2 == null) {
+         if ((Point)com.c.c(375845063199368784L).get(this) == null) {
+            return;
+         }
+
+         var1.setColor(Color.red);
+      }
+
+      var1.fillOval(
+         ((Point)com.c.c(375845063199368784L).get(this)).x - a(29412, 8977705369896610596L),
+         ((Point)com.c.c(375845063199368784L).get(this)).y - a(26312, 7751287107741482763L),
+         a(14709, 4563627486387183796L),
+         a(7347, 7245962285301433713L)
+      );
+   }
+
+   public void T(Point var1) {
+      com.c.c(375845063199368784L).set(this, var1);
+   }
+
+   public QG(AbstractButton var1, JMenuBar var2, Container var3) {
+      O1 var4 = new O1(var1, var2, this, var3);
+      this.addMouseListener(var4);
+      this.addMouseMotionListener(var4);
+   }
+
+   static {
+      long var0 = 3598342783229254806L;
+      long[] var6 = new long[4];
+      int var3 = 0;
+      String var4 = "_KN{C)|6¤6ã\u0088\u0080µ·¸";
+      int var5 = "_KN{C)|6¤6ã\u0088\u0080µ·¸".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     b = new Integer[4];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "þÖØ¥>\u0086£\u0097²Cv\u0082\u0089=Yó";
+                  var5 = "þÖØ¥>\u0086£\u0097²Cv\u0082\u0089=Yó".length();
+                  var2 = 0;
             }
-            graphics.fillOval(((Point)c.c((long)375845063199368784L).get((Object)this)).x - QG.a(29412, 8977705369896610596L), ((Point)c.c((long)375845063199368784L).get((Object)this)).y - QG.a(26312, 7751287107741482763L), QG.a(14709, 4563627486387183796L), QG.a(7347, 7245962285301433713L));
-        }
-    }
 
-    public void T(Point point) {
-        this.f = point;
-    }
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
 
-    public QG(AbstractButton abstractButton, JMenuBar jMenuBar, Container container) {
-        O1 o1 = new O1(abstractButton, jMenuBar, this, container);
-        this.addMouseListener(o1);
-        this.addMouseMotionListener(o1);
-    }
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 6593;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 3598342783229254806L;
-                var6_1 = new long[4];
-                var3_2 = 0;
-                var4_3 = "_KN{C)|6\u00a46\u00e3\u0088\u0080\u00b5\u00b7\u00b8";
-                var5_4 = "_KN{C)|6\u00a46\u00e3\u0088\u0080\u00b5\u00b7\u00b8".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "\u00fe\u00d6\u00d8\u00a5>\u0086\u00a3\u0097\u00b2Cv\u0082\u0089=Y\u00f3";
-                    var5_4 = "\u00fe\u00d6\u00d8\u00a5>\u0086\u00a3\u0097\u00b2Cv\u0082\u0089=Y\u00f3".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
-            }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
-
-                ** continue;
-            }
-        }
-        QG.a = var6_1;
-        QG.b = new Integer[4];
-    }
-
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x19C1;
-        if (b[n11] == null) {
-            QG.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      return b[var3];
+   }
 }
+
+
+
+
 

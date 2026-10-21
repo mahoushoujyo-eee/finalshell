@@ -1,31 +1,26 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
 import org.I;
-import org.v.fr_0;
-import org.v.fs_0;
-import org.v.hs_0;
 
-public final class RT
-extends fr_0
-implements fs_0 {
-    public final String[] Z;
-    @c
-    public final String[][] S;
+public final class RT extends fr_2 implements fs_2 {
+   public final String[] Z;
+   @org.F.c
+   public final String[][] S;
 
-    protected RT(I i2, String[] stringArray, @c String[][] stringArray2) {
-        super(i2);
-        this.Z = stringArray;
-        this.S = stringArray2;
-    }
+   protected RT(I var1, String[] var2, @org.F.c String[][] var3) {
+      super(var1);
+      this.Z = var2;
+      this.S = var3;
+   }
 
-    @Override
-    @c
-    public Object w(hs_0 hs_02) throws Throwable {
-        return hs_02.J(this);
-    }
+   @org.F.c
+   @Override
+   public Object w(hs_2 var1) throws Throwable {
+      return var1.J(this);
+   }
 }
+
+
+
+
 

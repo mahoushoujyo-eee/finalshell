@@ -1,15 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.WC;
-import com._7;
-import com.aL;
-import com.gw_0;
-import com.ky_2;
-import com.n6_0;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -22,534 +12,595 @@ import java.util.Iterator;
 import java.util.List;
 import javax.swing.JComponent;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public class XW
-extends JComponent
-implements ActionListener {
-    protected List N;
-    protected BufferedImage Z;
-    protected BufferedImage X;
-    protected List I;
-    protected WC R;
-    protected boolean u;
-    protected boolean O;
-    protected n6_0 e;
-    private static String[] S;
-    private static final String a;
+public class XW extends JComponent implements ActionListener {
+   protected List N;
+   protected BufferedImage Z;
+   protected BufferedImage X;
+   protected List I;
+   protected com.WC R;
+   protected boolean u;
+   protected boolean O;
+   protected n6_2 e;
+   private static String[] S;
+   private static final String a;
 
-    public XW() {
-        this(null, null);
-    }
+   public XW() {
+      this(null, null);
+   }
 
-    public XW(BufferedImage bufferedImage) {
-        this(bufferedImage, null);
-    }
+   public XW(BufferedImage var1) {
+      this(var1, null);
+   }
 
-    public XW(BufferedImage bufferedImage, BufferedImage bufferedImage2) {
-        String[] stringArray = XW.w();
-        this.N = new ArrayList(1);
-        this.Z = null;
-        this.X = null;
-        String[] stringArray2 = stringArray;
-        this.I = new ArrayList();
-        this.R = null;
-        this.u = false;
-        this.O = false;
-        this.e = null;
-        this.Z = bufferedImage;
-        this.X = bufferedImage2;
-        FN.Y(this);
-        this.setOpaque(false);
-        if (stringArray2 != null) {
-            ky_2.K(new String[3]);
-        }
-    }
+   public XW(BufferedImage var1, BufferedImage var2) {
+      String[] var10000 = w();
+      super();
+      this.N = new ArrayList(1);
+      this.Z = null;
+      this.X = null;
+      String[] var3 = var10000;
+      this.I = new ArrayList();
+      this.R = null;
+      this.u = false;
+      this.O = false;
+      this.e = null;
+      this.Z = var1;
+      this.X = var2;
+      com.FN.Y(this);
+      this.setOpaque(false);
+      if (var3 != null) {
+         com.ky_4.K(new String[3]);
+      }
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public boolean C() {
-        String[] stringArray = XW.w();
-        WC wC = this.R;
-        if (stringArray == null) {
-            if (wC == null) return false;
-            wC = this.R;
-        }
-        boolean bl = wC.i();
-        if (stringArray == null) {
-            if (!bl) return false;
-            bl = this.u;
-        }
-        if (stringArray != null) return bl;
-        if (!bl) return false;
-        return true;
-    }
+   public boolean C() {
+      String[] var1 = w();
+      com.WC var10000 = this.R;
+      if (var1 == null) {
+         if (this.R == null) {
+            return false;
+         }
 
-    public boolean l() {
-        return this.O;
-    }
+         var10000 = this.R;
+      }
 
-    public void b(boolean bl) {
-        this.O = bl;
-    }
+      boolean var2 = var10000.i();
+      if (var1 == null) {
+         if (!var2) {
+            return false;
+         }
 
-    public BufferedImage R() {
-        return this.Z;
-    }
+         var2 = this.u;
+      }
 
-    public void o(BufferedImage bufferedImage) {
-        this.Z = bufferedImage;
-    }
+      return var1 != null ? var2 : var2;
+   }
 
-    public BufferedImage y() {
-        return this.X;
-    }
+   public boolean l() {
+      return this.O;
+   }
 
-    public void m(BufferedImage bufferedImage) {
-        this.X = bufferedImage;
-    }
+   public void b(boolean var1) {
+      this.O = var1;
+   }
 
-    public List p() {
-        return this.I;
-    }
+   public BufferedImage R() {
+      return this.Z;
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public n6_0 E() {
-        String[] stringArray = XW.w();
-        List list = this.I;
-        if (stringArray == null) {
-            if (list == null) return null;
-            list = this.I;
-        }
-        if (stringArray == null) {
-            if (list.size() <= 0) return null;
-            list = this.I.get(0);
-        }
-        n6_0 n6_02 = (n6_0)((Object)list);
-        return n6_02;
-    }
+   public void o(BufferedImage var1) {
+      this.Z = var1;
+   }
 
-    public void C(n6_0 n6_02) {
-        String[] stringArray = XW.w();
-        List list = this.I;
-        if (stringArray == null) {
-            if (list == null) {
-                this.I = new ArrayList();
+   public BufferedImage y() {
+      return this.X;
+   }
+
+   public void m(BufferedImage var1) {
+      this.X = var1;
+   }
+
+   public List p() {
+      return this.I;
+   }
+
+   public n6_2 E() {
+      String[] var1 = w();
+      List var10000 = this.I;
+      if (var1 == null) {
+         if (this.I == null) {
+            return null;
+         }
+
+         var10000 = this.I;
+      }
+
+      if (var1 != null) {
+         return (n6_2)var10000;
+      } else {
+         return var10000.size() > 0 ? (n6_2)this.I.get(0) : null;
+      }
+   }
+
+   public void C(n6_2 var1) {
+      String[] var2 = w();
+      List var10000 = this.I;
+      if (var2 == null) {
+         if (this.I == null) {
+            this.I = new ArrayList();
+         }
+
+         var10000 = this.I;
+      }
+
+      var10000.add(var1);
+   }
+
+   public void W() {
+      String[] var1 = w();
+      List var10000 = this.I;
+      if (var1 == null) {
+         if (this.I == null) {
+            return;
+         }
+
+         var10000 = this.I;
+      }
+
+      var10000.clear();
+      this.I = null;
+   }
+
+   public void f(n6_2 var1) {
+      String[] var2 = w();
+      List var10000 = this.I;
+      if (var2 == null) {
+         if (this.I == null) {
+            return;
+         }
+
+         var10000 = this.I;
+      }
+
+      var10000.remove(var1);
+   }
+
+   public void Z(n6_2 var1) {
+      this.I = var1 != null ? com.aL.e(new n6_2[]{var1}) : null;
+   }
+
+   public void C(List var1) {
+      this.I = var1;
+   }
+
+   public void W(n6_2[] var1) {
+      ArrayList var3;
+      label14: {
+         String[] var2 = w();
+         n6_2[] var10001 = var1;
+         if (var2 == null) {
+            if (var1 == null) {
+               var3 = null;
+               break label14;
             }
-            list = this.I;
-        }
-        list.add(n6_02);
-    }
 
-    public void W() {
-        block3: {
-            List list;
-            block2: {
-                String[] stringArray = XW.w();
-                list = this.I;
-                if (stringArray != null) break block2;
-                if (list == null) break block3;
-                list = this.I;
+            var10001 = var1;
+         }
+
+         var3 = com.aL.e(var10001);
+      }
+
+      this.I = var3;
+   }
+
+   public void R$void() {
+      String[] var1;
+      XW var10000;
+      label50: {
+         label51: {
+            var1 = w();
+            var10000 = this;
+            if (var1 == null) {
+               if (this.R != null) {
+                  var2 = this.R.i();
+                  if (var1 != null) {
+                     break label51;
+                  }
+
+                  if (var2 != 0) {
+                     this.R.Y();
+                     this.R = null;
+                  }
+               }
+
+               var10000 = this;
             }
-            list.clear();
-            this.I = null;
-        }
-    }
 
-    public void f(n6_0 n6_02) {
-        block3: {
-            List list;
-            block2: {
-                String[] stringArray = XW.w();
-                list = this.I;
-                if (stringArray != null) break block2;
-                if (list == null) break block3;
-                list = this.I;
+            if (var1 != null) {
+               break label50;
             }
-            list.remove(n6_02);
-        }
-    }
 
-    public void Z(n6_0 n6_02) {
-        this.I = n6_02 != null ? aL.e(new n6_0[]{n6_02}) : null;
-    }
+            var2 = var10000.N.size();
+         }
 
-    public void C(List list) {
-        this.I = list;
-    }
+         if (var2 > 0) {
+            this.N.clear();
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    public void W(n6_0[] var1_1) {
-        var2_2 = XW.w();
-        v0 = var1_1;
-        if (var2_2 != null) ** GOTO lbl6
-        if (v0 != null) {
-            v0 = var1_1;
-lbl6:
-            // 2 sources
+         var10000 = this;
+      }
 
-            v1 = aL.e(v0);
-        } else {
-            v1 = null;
-        }
-        this.I = v1;
-    }
+      BufferedImage var3 = var10000.Z;
+      if (var1 == null) {
+         if (var10000.Z != null) {
+            this.Z.flush();
+            this.Z = null;
+         }
 
-    public void R() {
-        block15: {
-            BufferedImage bufferedImage;
-            block14: {
-                XW xW2;
-                String[] stringArray;
-                block13: {
-                    int n10;
-                    block12: {
-                        block10: {
-                            block11: {
-                                stringArray = XW.w();
-                                xW2 = this;
-                                if (stringArray != null) break block10;
-                                if (xW2.R == null) break block11;
-                                n10 = this.R.i() ? '\u0001' : '\u0000';
-                                if (stringArray != null) break block12;
-                                if (n10 != 0) {
-                                    this.R.Y();
-                                    this.R = null;
-                                }
-                            }
-                            xW2 = this;
+         var3 = this.X;
+      }
+
+      if (var1 == null) {
+         if (var3 == null) {
+            return;
+         }
+
+         var3 = this.X;
+      }
+
+      var3.flush();
+      this.X = null;
+   }
+
+   public void X(BufferedImage var1) {
+      String[] var2 = w();
+      XW var10000 = this;
+      if (var2 == null) {
+         if (this.C()) {
+            return;
+         }
+
+         this.m(var1);
+         var10000 = this;
+      }
+
+      var10000.x();
+   }
+
+   public void x() {
+      String[] var1;
+      XW var4;
+      label76: {
+         var1 = w();
+         boolean var10000 = this.C();
+         if (var1 == null) {
+            if (var10000) {
+               return;
+            }
+
+            var4 = this;
+            if (var1 != null) {
+               break label76;
+            }
+
+            var10000 = this.l();
+         }
+
+         if (var10000) {
+            return;
+         }
+
+         var4 = this;
+      }
+
+      label61: {
+         label78: {
+            label59: {
+               label58: {
+                  if (var1 == null) {
+                     if (var4.I != null) {
+                        var5 = this.I.size();
+                        if (var1 != null) {
+                           break label59;
                         }
-                        if (stringArray != null) break block13;
-                        n10 = xW2.N.size();
-                    }
-                    if (n10 > 0) {
-                        this.N.clear();
-                    }
-                    xW2 = this;
-                }
-                bufferedImage = xW2.Z;
-                if (stringArray == null) {
-                    if (bufferedImage != null) {
-                        this.Z.flush();
-                        this.Z = null;
-                    }
-                    bufferedImage = this.X;
-                }
-                if (stringArray != null) break block14;
-                if (bufferedImage == null) break block15;
-                bufferedImage = this.X;
-            }
-            bufferedImage.flush();
-            this.X = null;
-        }
-    }
 
-    public void X(BufferedImage bufferedImage) {
-        block3: {
-            XW xW2;
-            block2: {
-                String[] stringArray = XW.w();
-                xW2 = this;
-                if (stringArray != null) break block2;
-                if (xW2.C()) break block3;
-                this.m(bufferedImage);
-                xW2 = this;
-            }
-            xW2.x();
-        }
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public void x() {
-        block20: {
-            block17: {
-                block18: {
-                    block19: {
-                        block15: {
-                            block16: {
-                                block13: {
-                                    block14: {
-                                        block11: {
-                                            block12: {
-                                                block10: {
-                                                    block9: {
-                                                        var1_1 = XW.w();
-                                                        v0 = this.C();
-                                                        if (var1_1 != null) break block9;
-                                                        if (v0) break block10;
-                                                        v1 = this;
-                                                        if (var1_1 != null) break block11;
-                                                        v0 = v1.l();
-                                                    }
-                                                    if (!v0) break block12;
-                                                }
-                                                return;
-                                            }
-                                            v1 = this;
-                                        }
-                                        if (var1_1 != null) break block13;
-                                        if (v1.I == null) break block14;
-                                        v2 = this.I.size();
-                                        if (var1_1 != null) break block15;
-                                        if (v2 > 0) break block16;
-                                    }
-                                    v1 = this;
-                                }
-                                v1.e = null;
-                                if (var1_1 == null) break block17;
-                            }
-                            v2 = this.I.size();
+                        if (var5 > 0) {
+                           break label58;
                         }
-                        v3 = 1;
-                        if (var1_1 != null) break block18;
-                        if (v2 != v3) break block19;
-                        this.e = (n6_0)this.I.get(0);
-                        if (var1_1 == null) break block17;
-                    }
-                    v4 = this;
-                    if (var1_1 != null) break block20;
-                    v2 = v4.I.size();
-                    v3 = 1;
-                }
-                if (v2 > v3) {
-                    this.e = (n6_0)this.I.get(gw_0.K(this.I.size()));
-                }
+                     }
+
+                     var4 = this;
+                  }
+
+                  var4.e = null;
+                  if (var1 == null) {
+                     break label78;
+                  }
+               }
+
+               var5 = this.I.size();
             }
-            v4 = this;
-        }
-        v5 = v4.e;
-        if (var1_1 != null) ** GOTO lbl48
-        if (v5 != null) {
-            v5 = this.e;
-lbl48:
-            // 2 sources
 
-            v6 = v5.y();
-        } else {
-            v6 = 0L;
-        }
-        var2_2 = v6;
-        this.R = new WC(XW.a, var2_2, (ActionListener)this);
-        this.S();
-        this.R.u();
-    }
+            byte var10001 = 1;
+            if (var1 == null) {
+               if (var5 == 1) {
+                  this.e = (n6_2)this.I.get(0);
+                  if (var1 == null) {
+                     break label78;
+                  }
+               }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block4: {
-            XW xW2;
-            block2: {
-                block3: {
-                    String[] stringArray = XW.w();
-                    xW2 = this;
-                    if (stringArray != null) break block2;
-                    if (xW2.e == null) break block3;
-                    xW2 = this;
-                    if (stringArray != null) break block2;
-                    if (!xW2.e.J(this)) break block4;
-                }
-                this.R.Y();
-                xW2 = this;
+               var4 = this;
+               if (var1 != null) {
+                  break label61;
+               }
+
+               var5 = this.I.size();
+               var10001 = 1;
             }
-            xW2.u();
-        }
-    }
 
-    public void d() {
-        String[] stringArray = XW.w();
-        WC wC = this.R;
-        if (stringArray == null && wC != null) {
-            wC = this.R.Y();
-        }
-    }
-
-    protected void u() {
-        BufferedImage bufferedImage = this.Z;
-        this.Z = this.X;
-        this.X = bufferedImage;
-        this.e = null;
-        this.repaint();
-        this.r();
-    }
-
-    @Override
-    protected void paintComponent(Graphics graphics) {
-        block7: {
-            BufferedImage bufferedImage;
-            Graphics2D graphics2D;
-            block6: {
-                XW xW2;
-                block4: {
-                    block5: {
-                        String[] stringArray = XW.w();
-                        super.paintComponent(graphics);
-                        String[] stringArray2 = stringArray;
-                        graphics2D = (Graphics2D)graphics;
-                        xW2 = this;
-                        if (stringArray2 != null) break block4;
-                        if (xW2.e == null) break block5;
-                        xW2 = this;
-                        if (stringArray2 != null) break block4;
-                        if (!xW2.e.X()) break block5;
-                        bufferedImage = this.Z;
-                        if (stringArray2 != null) break block6;
-                        if (bufferedImage == null) break block5;
-                        bufferedImage = this.X;
-                        if (stringArray2 != null) break block6;
-                        if (bufferedImage == null) break block5;
-                        this.e.D(graphics2D, this);
-                        if (stringArray2 == null) break block7;
-                    }
-                    xW2 = this;
-                }
-                bufferedImage = xW2.Z;
+            if (var5 > var10001) {
+               this.e = (n6_2)this.I.get(Gw_2.K(this.I.size()));
             }
-            if (bufferedImage != null) {
-                graphics2D.drawImage(this.Z, 0, 0, this.getWidth(), this.getHeight(), null);
+         }
+
+         var4 = this;
+      }
+
+      label37: {
+         n6_2 var7 = var4.e;
+         if (var1 == null) {
+            if (var4.e == null) {
+               var8 = 0L;
+               break label37;
             }
-        }
-    }
 
-    @Override
-    public Dimension getPreferredSize() {
-        String[] stringArray = XW.w();
-        BufferedImage bufferedImage = this.Z;
-        if (stringArray == null) {
-            if (bufferedImage != null) {
-                return new Dimension(this.Z.getWidth(), this.Z.getHeight());
+            var7 = this.e;
+         }
+
+         var8 = var7.y();
+      }
+
+      long var2 = var8;
+      this.R = new com.WC(a, var2, this);
+      this.S();
+      this.R.u();
+   }
+
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      XW var10000;
+      String[] var2 = w();
+      var10000 = this;
+      label18:
+      if (var2 == null) {
+         if (this.e != null) {
+            var10000 = this;
+            if (var2 != null) {
+               break label18;
             }
-            bufferedImage = this.X;
-        }
-        if (bufferedImage != null) {
-            return new Dimension(this.X.getWidth(), this.X.getHeight());
-        }
-        return new Dimension(0, 0);
-    }
 
-    public void s(_7 _72) {
-        this.N.add(_72);
-    }
-
-    public void Q(_7 _72) {
-        this.N.remove(_72);
-    }
-
-    public void S() {
-        Iterator iterator = aL.J((Collection)this.N).iterator();
-        String[] stringArray = XW.w();
-        while (iterator.hasNext()) {
-            _7 _72 = (_7)iterator.next();
-            _72.X();
-            if (stringArray == null) continue;
-        }
-    }
-
-    public void r() {
-        Iterator iterator = aL.J((Collection)this.N).iterator();
-        String[] stringArray = XW.w();
-        while (iterator.hasNext()) {
-            _7 _72 = (_7)iterator.next();
-            _72.L();
-            if (stringArray == null) continue;
-        }
-    }
-
-    public static void N(String[] stringArray) {
-        S = stringArray;
-    }
-
-    public static String[] w() {
-        return S;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block13: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block12: {
-                if (XW.w() != null) {
-                    XW.N(new String[4]);
-                }
-                char[] cArray3 = "9VK\u000e:\u000f'\u0011UY\u0000+2:\u001e\u0015K\u0007664\u0004TX".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 14;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block12;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block13;
+            if (!this.e.J(this)) {
+               return;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 126;
-                            break;
+         }
+
+         this.R.Y();
+         var10000 = this;
+      }
+
+      var10000.u();
+   }
+
+   public void d() {
+      String[] var1 = w();
+      if (var1 == null && this.R != null) {
+         this.R.Y();
+      }
+   }
+
+   protected void u() {
+      BufferedImage var1 = this.Z;
+      this.Z = this.X;
+      this.X = var1;
+      this.e = null;
+      this.repaint();
+      this.r();
+   }
+
+   @Override
+   protected void paintComponent(Graphics var1) {
+      Graphics2D var3;
+      BufferedImage var5;
+      label35: {
+         String[] var10000 = w();
+         super.paintComponent(var1);
+         String[] var2 = var10000;
+         var3 = (Graphics2D)var1;
+         var4 = this;
+         label34:
+         if (var2 == null) {
+            if (this.e != null) {
+               var4 = this;
+               if (var2 != null) {
+                  break label34;
+               }
+
+               if (this.e.X()) {
+                  var5 = this.Z;
+                  if (var2 != null) {
+                     break label35;
+                  }
+
+                  if (this.Z != null) {
+                     var5 = this.X;
+                     if (var2 != null) {
+                        break label35;
+                     }
+
+                     if (this.X != null) {
+                        this.e.D(var3, this);
+                        if (var2 == null) {
+                           return;
                         }
-                        case 1: {
-                            n17 = 53;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 36;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 103;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 81;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 85;
-                            break;
-                        }
-                        default: {
-                            n17 = 91;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+                     }
+                  }
+               }
+            }
+
+            var4 = this;
+         }
+
+         var5 = var4.Z;
+      }
+
+      if (var5 != null) {
+         var3.drawImage(this.Z, 0, 0, this.getWidth(), this.getHeight(), null);
+      }
+   }
+
+   @Override
+   public Dimension getPreferredSize() {
+      String[] var1 = w();
+      BufferedImage var10000 = this.Z;
+      if (var1 == null) {
+         if (this.Z != null) {
+            return new Dimension(this.Z.getWidth(), this.Z.getHeight());
+         }
+
+         var10000 = this.X;
+      }
+
+      return var10000 != null ? new Dimension(this.X.getWidth(), this.X.getHeight()) : new Dimension(0, 0);
+   }
+
+   public void s(_7 var1) {
+      this.N.add(var1);
+   }
+
+   public void Q(_7 var1) {
+      this.N.remove(var1);
+   }
+
+   public void S() {
+      String[] var10000 = w();
+      Iterator var2 = com.aL.J((Collection)this.N).iterator();
+      String[] var1 = var10000;
+
+      while (var2.hasNext()) {
+         _7 var3 = (_7)var2.next();
+         var3.X();
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
+
+   public void r() {
+      String[] var10000 = w();
+      Iterator var2 = com.aL.J((Collection)this.N).iterator();
+      String[] var1 = var10000;
+
+      while (var2.hasNext()) {
+         _7 var3 = (_7)var2.next();
+         var3.L();
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
+
+   public static void N(String[] var0) {
+      S = var0;
+   }
+
+   public static String[] w() {
+      return S;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      if (w() != null) {
+         N(new String[4]);
+      }
+
+      char[] var10003 = "9VK\u000e:\u000f'\u0011UY\u0000+2:\u001e\u0015K\u0007664\u0004TX".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 14;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 14;
+         var10006 = var0;
+      } else {
+         var6 = 14;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 14;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 126;
+               break;
+            case 1:
+               var23 = 53;
+               break;
+            case 2:
+               var23 = 36;
+               break;
+            case 3:
+               var23 = 103;
+               break;
+            case 4:
+               var23 = 81;
+               break;
+            case 5:
+               var23 = 85;
+               break;
+            default:
+               var23 = 91;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
+            }
+
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

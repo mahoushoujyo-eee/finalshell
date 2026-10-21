@@ -1,174 +1,196 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.OQ;
-import com.T4;
-import com.co_0;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Insets;
 import java.awt.Rectangle;
 
-public class T2
-extends T4 {
-    final OQ l;
-    private static final long[] a;
-    private static final Integer[] b;
+public class T2 extends com.T4 {
+   final com.OQ l;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    protected T2(OQ oQ) {
-        this.l = oQ;
-    }
+   protected T2(com.OQ var1) {
+      this.l = var1;
+   }
 
-    @Override
-    public Dimension preferredLayoutSize(Container container) {
-        return this.l.i() ? OQ.W : OQ.b;
-    }
+   @Override
+   public Dimension preferredLayoutSize(Container var1) {
+      return this.l.i() ? com.OQ.W : com.OQ.b;
+   }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    @Override
-    public void layoutContainer(Container var1_1) {
-        block13: {
-            block14: {
-                block11: {
-                    block12: {
-                        var3_2 = this.l.s.getComponentOrientation().isLeftToRight();
-                        var4_3 = this.l.getInsets();
-                        var2_4 = co_0.U();
-                        var5_5 = this.l.i();
-                        var6_6 = this.l.a.getText() != null ? 1 : 0;
-                        var7_7 = var5_5 != 0 && this.l.o.getText() != null ? 1 : 0;
-                        var8_8 = var5_5 != 0 && this.l.U.getText() != null ? 1 : 0;
-                        this.l.a.setVisible((boolean)var6_6);
-                        this.l.o.setVisible((boolean)var7_7);
-                        this.l.U.setVisible((boolean)var8_8);
-                        v0 = var5_5;
-                        if (var2_4 == null) break block11;
-                        if (v0 == 0) break block12;
-                        v1 = this.l.z;
-                        v2 = var3_2;
-                        if (var2_4 == null) ** GOTO lbl21
-                        if (v2 != 0) {
-                            v3 = var4_3.left;
-                        } else {
-                            v2 = OQ.W.width - var4_3.right;
-lbl21:
-                            // 2 sources
+   @Override
+   public void layoutContainer(Container var1) {
+      String var10000 = com.Co_2.U();
+      byte var3 = this.l.s.getComponentOrientation().isLeftToRight();
+      Insets var4 = this.l.getInsets();
+      String var2 = var10000;
+      byte var5 = this.l.i();
+      int var6 = this.l.a.getText() != null ? 1 : 0;
+      int var7 = var5 != 0 && this.l.o.getText() != null ? 1 : 0;
+      int var8 = var5 != 0 && this.l.U.getText() != null ? 1 : 0;
+      this.l.a.setVisible((boolean)var6);
+      this.l.o.setVisible((boolean)var7);
+      this.l.U.setVisible((boolean)var8);
+      int var19 = var5;
+      if (var2 != null) {
+         if (var5 != 0) {
+            int var24;
+            label92: {
+               var24 = var3;
+               if (var2 != null) {
+                  if (var3 != 0) {
+                     var24 = var4.left;
+                     break label92;
+                  }
 
-                            v3 = v2 - T2.b(27489, 2062756884810957577L);
-                        }
-                        v1.setBounds(v3, var4_3.top, T2.b(5930, 1208210181485035331L), T2.b(5930, 1208210181485035331L));
-                        if (var6_6 == 0) break block13;
-                        var9_9 = this.l.a.getPreferredSize();
-                        var10_11 = var7_7 != 0 ? this.l.o.getPreferredSize() : new Dimension(0, 0);
-                        var11_13 = var8_8 != 0 ? this.l.U.getPreferredSize() : new Dimension(0, 0);
-                        v4 = var9_9.height;
-                        v5 = var7_7;
-                        if (var2_4 != null) {
-                            v5 = v5 != 0 ? 4 + var10_11.height : 0;
-                        }
-                        v6 = v4 + v5;
-                        v7 = var8_8;
-                        if (var2_4 != null) {
-                            v7 = v7 != 0 ? 4 + var11_13.height : 0;
-                        }
-                        var12_14 = v6 + v7;
-                        v8 = var3_2;
-                        if (var2_4 != null) {
-                            v8 = v8 != 0 ? var4_3.left + T2.b(5930, 1208210181485035331L) + 4 : var4_3.left;
-                        }
-                        var13_15 = v8;
-                        var14_16 = OQ.W.width - var4_3.left - var4_3.right - T2.b(5930, 1208210181485035331L) - 4;
-                        var15_17 = var4_3.top + (OQ.W.height - var4_3.top - var4_3.bottom) / 2 - var12_14 / 2;
-                        this.l.a.setBounds(var13_15, var15_17, var14_16, var9_9.height);
-                        var15_17 += var9_9.height + 4;
-                        v9 = var7_7;
-                        if (var2_4 != null) {
-                            if (v9 != 0) {
-                                this.l.o.setBounds(var13_15, var15_17, var14_16, var10_11.height);
-                                var15_17 += var10_11.height + 4;
-                            }
-                            v9 = var8_8;
-                        }
-                        if (v9 != 0) {
-                            this.l.U.setBounds(var13_15, var15_17, var14_16, var11_13.height);
-                        }
-                        if (var2_4 != null) break block13;
-                    }
-                    v0 = OQ.b.width - var4_3.left - var4_3.right;
-                }
-                var9_10 = v0;
-                this.l.z.setBounds(var4_3.left + var9_10 / 2 - T2.b(27170, 7877545228203754057L), var4_3.top, T2.b(5930, 1208210181485035331L), T2.b(5930, 1208210181485035331L));
-                v10 = var6_6;
-                if (var2_4 == null) break block14;
-                if (v10 == 0) break block13;
-                v10 = var4_3.top + T2.b(5930, 1208210181485035331L) + 4;
+                  var24 = com.OQ.W.width - var4.right;
+               }
+
+               var24 -= b(27489, 2062756884810957577L);
             }
-            var10_12 = v10;
-            this.l.a.setBounds(var4_3.left, var10_12, var9_10, OQ.b.height - var10_12 - var4_3.bottom);
-        }
-    }
 
-    public Rectangle K() {
-        int n10;
-        Insets insets;
-        block2: {
-            block3: {
-                block5: {
-                    int n11;
-                    block4: {
-                        int n12;
-                        int n13 = this.l.s.getComponentOrientation().isLeftToRight();
-                        String string = co_0.U();
-                        insets = this.l.getInsets();
-                        n10 = n12 = this.l.i();
-                        if (string == null) break block2;
-                        if (n10 == 0) break block3;
-                        n11 = n13;
-                        if (string == null) break block4;
-                        if (n11 == 0) break block5;
-                        n11 = insets.left + T2.b(5930, 1208210181485035331L) + 4;
-                    }
-                    int n14 = n11;
-                    return new Rectangle(n14, insets.top, OQ.W.width - n14 - insets.right, OQ.W.height - insets.top - insets.bottom);
-                }
-                return new Rectangle(insets.left, insets.top, OQ.W.width - 4 - T2.b(5930, 1208210181485035331L) - insets.right, OQ.W.height - insets.top - insets.bottom);
+            this.l.z.setBounds(var24, var4.top, b(5930, 1208210181485035331L), b(5930, 1208210181485035331L));
+            if (var6 == 0) {
+               return;
             }
-            n10 = insets.top + T2.b(5930, 1208210181485035331L) + 4;
-        }
-        int n15 = n10;
-        return new Rectangle(insets.left, n15, OQ.b.width - insets.left - insets.right, OQ.b.height - n15 - insets.bottom);
-    }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 820168308794802473L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "\u00b6\u00cbPy\u0004\u00d3\u00be\\\u00c7~\u00fcN\f\u0099B\u0016\u00f7\u00cd\u001f\u0016\u00d8\u0097\u00c3{";
-        int n11 = "\u00b6\u00cbPy\u0004\u00d3\u00be\\\u00c7~\u00fcN\f\u0099B\u0016\u00f7\u00cd\u001f\u0016\u00d8\u0097\u00c3{".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[3];
-    }
+            Dimension var9 = this.l.a.getPreferredSize();
+            Dimension var10 = var7 != 0 ? this.l.o.getPreferredSize() : new Dimension(0, 0);
+            Dimension var11 = var8 != 0 ? this.l.U.getPreferredSize() : new Dimension(0, 0);
+            var24 = var7;
+            if (var2 != null) {
+               var24 = var7 != 0 ? 4 + var10.height : 0;
+            }
 
-    private static int b(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x6869;
-        if (b[n11] == null) {
-            T2.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+            int var20 = var9.height + var24;
+            var24 = var8;
+            if (var2 != null) {
+               var24 = var8 != 0 ? 4 + var11.height : 0;
+            }
+
+            int var12 = var20 + var24;
+            int var21 = var3;
+            if (var2 != null) {
+               var21 = var3 != 0 ? var4.left + b(5930, 1208210181485035331L) + 4 : var4.left;
+            }
+
+            int var13 = var21;
+            int var14 = com.OQ.W.width - var4.left - var4.right - b(5930, 1208210181485035331L) - 4;
+            int var15 = var4.top + (com.OQ.W.height - var4.top - var4.bottom) / 2 - var12 / 2;
+            this.l.a.setBounds(var13, var15, var14, var9.height);
+            var15 += var9.height + 4;
+            int var22 = var7;
+            if (var2 != null) {
+               if (var7 != 0) {
+                  this.l.o.setBounds(var13, var15, var14, var10.height);
+                  var15 += var10.height + 4;
+               }
+
+               var22 = var8;
+            }
+
+            if (var22 != 0) {
+               this.l.U.setBounds(var13, var15, var14, var11.height);
+            }
+
+            if (var2 != null) {
+               return;
+            }
+         }
+
+         var19 = com.OQ.b.width - var4.left - var4.right;
+      }
+
+      int var16 = var19;
+      this.l.z.setBounds(var4.left + var16 / 2 - b(27170, 7877545228203754057L), var4.top, b(5930, 1208210181485035331L), b(5930, 1208210181485035331L));
+      int var23 = var6;
+      if (var2 != null) {
+         if (var6 == 0) {
+            return;
+         }
+
+         var23 = var4.top + b(5930, 1208210181485035331L) + 4;
+      }
+
+      int var17 = var23;
+      this.l.a.setBounds(var4.left, var17, var16, com.OQ.b.height - var17 - var4.bottom);
+   }
+
+   public Rectangle K() {
+      String var10000 = com.Co_2.U();
+      byte var2 = this.l.s.getComponentOrientation().isLeftToRight();
+      String var1 = var10000;
+      Insets var3 = this.l.getInsets();
+      byte var4 = this.l.i();
+      int var7 = var4;
+      if (var1 != null) {
+         if (var4 != 0) {
+            int var8 = var2;
+            if (var1 != null) {
+               if (var2 == 0) {
+                  return new Rectangle(
+                     var3.left, var3.top, com.OQ.W.width - 4 - b(5930, 1208210181485035331L) - var3.right, com.OQ.W.height - var3.top - var3.bottom
+                  );
+               }
+
+               var8 = var3.left + b(5930, 1208210181485035331L) + 4;
+            }
+
+            int var6 = var8;
+            return new Rectangle(var6, var3.top, com.OQ.W.width - var6 - var3.right, com.OQ.W.height - var3.top - var3.bottom);
+         }
+
+         var7 = var3.top + b(5930, 1208210181485035331L) + 4;
+      }
+
+      int var5 = var7;
+      return new Rectangle(var3.left, var5, com.OQ.b.width - var3.left - var3.right, com.OQ.b.height - var5 - var3.bottom);
+   }
+
+   static {
+      long var0 = 820168308794802473L;
+      long[] var6 = new long[3];
+      int var3 = 0;
+      String var4 = "¶ËPy\u0004Ó¾\\Ç~üN\f\u0099B\u0016÷Í\u001f\u0016Ø\u0097Ã{";
+      int var5 = "¶ËPy\u0004Ó¾\\Ç~üN\f\u0099B\u0016÷Í\u001f\u0016Ø\u0097Ã{".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[3];
+   }
+
+   private static int b(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 26729;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

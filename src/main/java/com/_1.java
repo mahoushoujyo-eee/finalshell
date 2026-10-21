@@ -1,69 +1,67 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.E;
-import com.rk_2;
-
 public class _1 {
-    private rk_2 n;
-    private int o;
-    private int f;
-    private E l;
+   private rk_4 n;
+   private int o;
+   private int f;
+   private com.E l;
 
-    public _1() {
-        this.n = rk_2.fill;
-    }
+   public _1() {
+      this.n = rk_4.fill;
+   }
 
-    public _1(int n10, int n11) {
-        this.n = rk_2.align;
-        this.o = n10;
-        this.f = n11;
-    }
+   public _1(int var1, int var2) {
+      this.n = rk_4.align;
+      this.o = var1;
+      this.f = var2;
+   }
 
-    public _1(E e2) {
-        this.n = rk_2.custom;
-        this.l = e2;
-    }
+   public _1(com.E var1) {
+      this.n = rk_4.custom;
+      this.l = var1;
+   }
 
-    public _1(rk_2 rk_22, int n10, int n11, E e2) {
-        this.n = rk_22;
-        this.o = n10;
-        this.f = n11;
-        this.l = e2;
-    }
+   public _1(rk_4 var1, int var2, int var3, com.E var4) {
+      this.n = var1;
+      this.o = var2;
+      this.f = var3;
+      this.l = var4;
+   }
 
-    public rk_2 c() {
-        return this.n;
-    }
+   public rk_4 c() {
+      return this.n;
+   }
 
-    public void Q(rk_2 rk_22) {
-        this.n = rk_22;
-    }
+   public void Q(rk_4 var1) {
+      this.n = var1;
+   }
 
-    public int r() {
-        return this.o;
-    }
+   public int r() {
+      return this.o;
+   }
 
-    public void l(int n10) {
-        this.o = n10;
-    }
+   public void l(int var1) {
+      this.o = var1;
+   }
 
-    public int X() {
-        return this.f;
-    }
+   public int X() {
+      return this.f;
+   }
 
-    public void G(int n10) {
-        this.f = n10;
-    }
+   public void G(int var1) {
+      this.f = var1;
+   }
 
-    public E Q() {
-        return this.l;
-    }
+   public com.E Q() {
+      return this.l;
+   }
 
-    public void a(E e2) {
-        this.l = e2;
-    }
+   public void a(com.E var1) {
+      this.l = var1;
+   }
 }
+
+
+
+
 

@@ -1,41 +1,35 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.C;
 
-import com.C.O;
-import com.C.W;
-import com.c4_0;
+class Y extends com.c4_2 {
+   final com.C.O N;
 
-class Y
-extends c4_0 {
-    final O N;
+   Y(com.C.O var1) {
+      this.N = var1;
+   }
 
-    Y(O o2) {
-        this.N = o2;
-    }
+   @Override
+   public boolean z() {
+      int[] var1 = com.C.W.B();
+      boolean var10000 = this.N.F;
+      if (var1 == null) {
+         if (this.N.F) {
+            return false;
+         }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    public boolean z() {
-        int[] nArray = W.B();
-        boolean bl = this.N.F;
-        if (nArray == null) {
-            if (bl) return false;
-            bl = this.N.K;
-        }
-        if (nArray != null) return bl;
-        if (!bl) return false;
-        return true;
-    }
+         var10000 = this.N.K;
+      }
 
-    @Override
-    public void f(boolean bl) {
-        this.N.u = bl;
-        this.N.l();
-    }
+      return var1 != null ? var10000 : var10000;
+   }
+
+   @Override
+   public void f(boolean var1) {
+      this.N.u = var1;
+      this.N.l();
+   }
 }
+
+
+
+
 

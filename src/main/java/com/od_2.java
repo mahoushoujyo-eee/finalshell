@@ -1,66 +1,212 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.oy_2;
+import java.awt.Component;
+import java.util.Map;
+import java.util.WeakHashMap;
+import javax.swing.ImageIcon;
+import javax.swing.JTree;
 
-/*
- * Renamed from com.od
- */
-public class od_2
-extends oy_2 {
-    public od_2() {
-        this(0.0f, 0.0f, 0.0f);
-    }
+public class Od_2 extends com.m.J {
+   public static final ImageIcon Y;
+   public static final Map W;
 
-    public od_2(float[] fArray) {
-        this.e = fArray[0];
-        this.I = fArray[1];
-        this.k = fArray[2];
-    }
+   public static ImageIcon p(ImageIcon var0) {
+      String[] var10000 = com.cB_3.C();
+      ImageIcon var2 = (ImageIcon)W.get(var0);
+      String[] var1 = var10000;
+      ImageIcon var3 = var2;
+      if (var1 != null) {
+         if (var2 == null) {
+            var2 = Xg_2.I(new ImageIcon[]{var0, Y});
+            W.put(var0, var2);
+         }
 
-    public od_2(float f10, float f11, float f12) {
-        this.e = f10;
-        this.I = f11;
-        this.k = f12;
-    }
+         var3 = var2;
+      }
 
-    public od_2(od_2 od_22) {
-        this.e = od_22.e;
-        this.I = od_22.I;
-        this.k = od_22.k;
-    }
+      return var3;
+   }
 
-    public od_2(oy_2 oy_22) {
-        this.e = oy_22.e;
-        this.I = oy_22.I;
-        this.k = oy_22.k;
-    }
+   @Override
+   public com.m.G x(JTree var1, Object var2, boolean var3, boolean var4, boolean var5, int var6, boolean var7) {
+      String[] var8 = com.cB_3.C();
+      com.Od_2 var10000 = this;
+      if (var8 != null) {
+         super.x(var1, var2, var3, var4, var5, var6, var7);
+         if (var2 instanceof com.cB_3) {
+            com.cB_3 var9 = (com.cB_3)var2;
+            if (var9.d()) {
+               this.setIcon(var9.Y());
+            }
+         }
 
-    public float z(od_2 od_22) {
-        return (float)Math.acos(this.Y(od_22) / (this.M() * od_22.M()));
-    }
+         var10000 = this;
+      }
 
-    public float Y(od_2 od_22) {
-        return od_22.e * this.e + od_22.I * this.I + od_22.k * this.k;
-    }
+      return var10000;
+   }
 
-    public void G(od_2 od_22, od_2 od_23) {
-        this.e = od_22.I * od_23.k - od_22.k * od_23.I;
-        this.I = od_22.k * od_23.e - od_22.e * od_23.k;
-        this.k = od_22.e * od_23.I - od_22.I * od_23.e;
-    }
+   @Override
+   public Component getTreeCellRendererComponent(JTree var1, Object var2, boolean var3, boolean var4, boolean var5, int var6, boolean var7) {
+      return this.x(var1, var2, var3, var4, var5, var6, var7);
+   }
 
-    public float M() {
-        return (float)Math.sqrt(this.e * this.e + this.I * this.I + this.k * this.k);
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "~8[\r~\u001apv2X\u0006i\u001bfy<".toCharArray();
+      int var10004 = var10003.length;
+      int var1 = 0;
+      byte var8 = 18;
+      char[] var10002 = var10003;
+      int var3 = var10004;
+      char[] var12;
+      byte var16;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var12 = var10003;
+         var10005 = var1;
+         char var10008 = var10003[var1];
+         var10007 = 18;
+         var10006 = var10008;
+         switch (var1 % 7) {
+            case 0:
+               var16 = 5;
+               break;
+            case 1:
+               var16 = 73;
+               break;
+            case 2:
+               var16 = 38;
+               break;
+            case 3:
+               var16 = 113;
+               break;
+            case 4:
+               var16 = 31;
+               break;
+            case 5:
+               var16 = 39;
+               break;
+            default:
+               var16 = 4;
+         }
+      } else {
+         var8 = 18;
+         var3 = var10004;
+         if (var10004 <= var1) {
+            String var11 = new String(var10003).intern();
+            byte var6 = -1;
+            String var2 = var11;
+            Y = new ImageIcon(com.cB_3.class.getResource(var2));
+            W = new WeakHashMap(5);
+            return;
+         }
 
-    public void E() {
-        float f10 = 1.0f / (float)Math.sqrt(this.e * this.e + this.I * this.I + this.k * this.k);
-        this.e *= f10;
-        this.I *= f10;
-        this.k *= f10;
-    }
+         var12 = var10003;
+         var10005 = var1;
+         char var17 = var10003[var1];
+         var10007 = 18;
+         var10006 = var17;
+         switch (var1 % 7) {
+            case 0:
+               var16 = 5;
+               break;
+            case 1:
+               var16 = 73;
+               break;
+            case 2:
+               var16 = 38;
+               break;
+            case 3:
+               var16 = 113;
+               break;
+            case 4:
+               var16 = 31;
+               break;
+            case 5:
+               var16 = 39;
+               break;
+            default:
+               var16 = 4;
+         }
+      }
+
+      while (true) {
+         var12[var10005] = (char)(var10006 ^ var10007 ^ var16);
+         var1++;
+         if (var8 == 0) {
+            var12 = var10002;
+            var10005 = var8;
+            char var19 = var10002[var8];
+            var10007 = var8;
+            var10006 = var19;
+            switch (var1 % 7) {
+               case 0:
+                  var16 = 5;
+                  break;
+               case 1:
+                  var16 = 73;
+                  break;
+               case 2:
+                  var16 = 38;
+                  break;
+               case 3:
+                  var16 = 113;
+                  break;
+               case 4:
+                  var16 = 31;
+                  break;
+               case 5:
+                  var16 = 39;
+                  break;
+               default:
+                  var16 = 4;
+            }
+         } else {
+            if (var3 <= var1) {
+               String var10 = new String(var10002).intern();
+               byte var5 = -1;
+               String var0 = var10;
+               Y = new ImageIcon(com.cB_3.class.getResource(var0));
+               W = new WeakHashMap(5);
+               return;
+            }
+
+            var12 = var10002;
+            var10005 = var1;
+            char var18 = var10002[var1];
+            var10007 = var8;
+            var10006 = var18;
+            switch (var1 % 7) {
+               case 0:
+                  var16 = 5;
+                  break;
+               case 1:
+                  var16 = 73;
+                  break;
+               case 2:
+                  var16 = 38;
+                  break;
+               case 3:
+                  var16 = 113;
+                  break;
+               case 4:
+                  var16 = 31;
+                  break;
+               case 5:
+                  var16 = 39;
+                  break;
+               default:
+                  var16 = 4;
+            }
+         }
+      }
+   }
 }
+
+
+
+
 

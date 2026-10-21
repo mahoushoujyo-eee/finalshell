@@ -1,30 +1,29 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.pc_0;
-
 public interface aB {
-    public boolean M(byte[] var1) throws pc_0;
+   boolean M(byte[] var1) throws Pc_2;
 
-    public byte[] u();
+   byte[] u();
 
-    public byte[] v(byte[] var1);
+   byte[] v(byte[] var1);
 
-    default public byte[] l(byte[] byArray, String string) {
-        return this.v(byArray);
-    }
+   default byte[] l(byte[] var1, String var2) {
+      return this.v(var1);
+   }
 
-    @Deprecated
-    public boolean j();
+   @Deprecated
+   boolean j();
 
-    public String B();
+   String B();
 
-    public String b();
+   String b();
 
-    public boolean f();
+   boolean f();
 
-    public void v();
+   void v();
 }
+
+
+
+
 

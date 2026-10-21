@@ -1,56 +1,50 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.x;
 
-import com.ky_2;
 import java.util.Comparator;
-import org.F.c;
-import org.x.O;
-import org.x.V;
 
-class l
-implements Comparator {
-    static final boolean d = !O.class.desiredAssertionStatus();
+class l implements Comparator {
+   static final boolean d = !org.x.O.class.desiredAssertionStatus();
 
-    l() {
-    }
+   @Override
+   public int compare(@org.F.c Object var1, @org.F.c Object var2) {
+      String var3 = org.x.O.f();
+      int var10000 = d;
+      if (var3 != null) {
+         if (!d && var1 == null) {
+            throw new AssertionError();
+         }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    public int compare(@c Object var1_1, @c Object var2_2) {
-        var3_3 = O.f();
-        v0 = l.d;
-        if (var3_3 != null) {
-            if (v0 == 0 && var1_1 == null) {
-                throw new AssertionError();
+         var10000 = d;
+      }
+
+      if (var3 != null) {
+         label30: {
+            if (var10000 == 0) {
+               var4 = var2;
+               if (var3 == null) {
+                  break label30;
+               }
+
+               if (var2 == null) {
+                  throw new AssertionError();
+               }
             }
-            v0 = l.d;
-        }
-        if (var3_3 != null) {
-            if (v0 == 0) {
-                v1 = var2_2;
-                if (var3_3 != null) {
-                    if (v1 == null) {
-                        throw new AssertionError();
-                    } else {
-                        ** GOTO lbl-1000
-                    }
-                }
-            } else lbl-1000:
-            // 3 sources
 
-            {
-                v1 = var2_2;
-            }
-            v0 = ((V)v1).F - ((V)var1_1).F;
-        }
-        if (ky_2.F() != null) {
-            O.s("PwyoAb");
-        }
-        return v0;
-    }
+            var4 = var2;
+         }
+
+         var10000 = ((V)var4).F - ((V)var1).F;
+      }
+
+      if (com.ky_4.F() != null) {
+         org.x.O.s("PwyoAb");
+      }
+
+      return var10000;
+   }
 }
+
+
+
+
 

@@ -1,148 +1,271 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.i;
 
 import java.util.Iterator;
 import java.util.List;
-import org.i.M;
-import org.i.l;
 
 public class Z {
-    public final String E;
-    public final List C;
-    private static final String a;
-    private static final long[] b;
-    private static final Integer[] c;
+   public final String E;
+   public final List C;
+   private static final String a;
+   private static final long[] b;
+   private static final Integer[] c;
 
-    public Z(String string, List list) {
-        this.E = string;
-        this.C = list;
-    }
+   public Z(String var1, List var2) {
+      this.E = var1;
+      this.C = var2;
+   }
 
-    public String toString() {
-        StringBuilder stringBuilder;
-        block5: {
-            List list;
-            String string;
-            block6: {
-                stringBuilder = new StringBuilder(this.E);
-                string = M.w();
-                list = this.C;
-                if (string == null) break block6;
-                if (list.isEmpty()) break block5;
-                list = this.C;
-            }
-            Iterator iterator = list.iterator();
-            stringBuilder.append((char)Z.a(27425, 5233722792579288972L)).append(((l)iterator.next()).toString());
-            while (iterator.hasNext()) {
-                stringBuilder.append(a).append(((l)iterator.next()).toString());
-                if (string != null) {
-                    if (string != null) continue;
-                }
-                break block5;
-            }
-            stringBuilder.append((char)Z.a(15092, 7597099401763561048L));
-        }
-        return stringBuilder.toString();
-    }
+   @Override
+   public String toString() {
+      String var10000 = org.i.M.w();
+      StringBuilder var2 = new StringBuilder(this.E);
+      String var1 = var10000;
+      List var4 = this.C;
+      if (var1 != null) {
+         if (this.C.isEmpty()) {
+            return var2.toString();
+         }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block13: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block12: {
-                char[] cArray3 = "Y\u0006".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 40;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block12;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block13;
-            }
+         var4 = this.C;
+      }
+
+      Iterator var3 = var4.iterator();
+      var2.append((char)a(27425, 5233722792579288972L)).append(((l)var3.next()).toString());
+
+      while (var3.hasNext()) {
+         var2.append(a).append(((l)var3.next()).toString());
+         if (var1 == null) {
+            return var2.toString();
+         }
+
+         if (var1 == null) {
+            break;
+         }
+      }
+
+      var2.append((char)a(15092, 7597099401763561048L));
+      return var2.toString();
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "Y\u0006".toCharArray();
+      int var10004 = var10003.length;
+      int var8 = 0;
+      byte var25 = 40;
+      char[] var10002 = var10003;
+      int var16 = var10004;
+      char[] var31;
+      byte var37;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var31 = var10003;
+         var10005 = var8;
+         char var10008 = var10003[var8];
+         var10007 = 40;
+         var10006 = var10008;
+         switch (var8 % 7) {
+            case 0:
+               var37 = 93;
+               break;
+            case 1:
+               var37 = 14;
+               break;
+            case 2:
+               var37 = 71;
+               break;
+            case 3:
+               var37 = 8;
+               break;
+            case 4:
+               var37 = 25;
+               break;
+            case 5:
+               var37 = 98;
+               break;
+            default:
+               var37 = 68;
+         }
+      } else {
+         var25 = 40;
+         var16 = var10004;
+         if (var10004 <= var8) {
+            String var29 = new String(var10003).intern();
+            int var21 = -1;
+            a = var29;
+            long var9 = 5690185576154854112L;
+            long[] var14 = new long[2];
+            int var11 = 0;
+            String var12 = "M¹\u0014á´O=P\u008d«¿\u0001©±ì\u0086";
+            int var13 = "M¹\u0014á´O=P\u008d«¿\u0001©±ì\u0086".length();
+            byte var10 = 0;
+
             do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 93;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 14;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 71;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 8;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 25;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 98;
-                            break;
-                        }
-                        default: {
-                            n17 = 68;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        long l2 = 5690185576154854112L;
-        long[] lArray = new long[2];
-        int n18 = 0;
-        String string = "M\u00b9\u0014\u00e1\u00b4O=P\u008d\u00ab\u00bf\u0001\u00a9\u00b1\u00ec\u0086";
-        int n19 = "M\u00b9\u0014\u00e1\u00b4O=P\u008d\u00ab\u00bf\u0001\u00a9\u00b1\u00ec\u0086".length();
-        int n20 = 0;
-        do {
-            byte[] byArray = string.substring(n20, n20 += 8).getBytes("ISO-8859-1");
-            int n21 = n18++;
-            lArray[n21] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n20 < n19);
-        b = lArray;
-        c = new Integer[2];
-    }
+               var21 = var10;
+               var10 += 8;
+               byte[] var15 = var12.substring(var21, var10).getBytes("ISO-8859-1");
+               var21 = var11++;
+               long var35 = (
+                     ((long)var15[0] & 255L) << 56
+                        | ((long)var15[1] & 255L) << 48
+                        | ((long)var15[2] & 255L) << 40
+                        | ((long)var15[3] & 255L) << 32
+                        | ((long)var15[4] & 255L) << 24
+                        | ((long)var15[5] & 255L) << 16
+                        | ((long)var15[6] & 255L) << 8
+                        | (long)var15[7] & 255L
+                  )
+                  ^ var9;
+               byte var30 = -1;
+               var14[var21] = var35;
+            } while (var10 < var13);
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x24AD;
-        if (c[n11] == null) {
-            Z.c[n11] = (int)(b[n11] ^ l2);
-        }
-        return c[n11];
-    }
+            b = var14;
+            c = new Integer[2];
+            return;
+         }
+
+         var31 = var10003;
+         var10005 = var8;
+         char var38 = var10003[var8];
+         var10007 = 40;
+         var10006 = var38;
+         switch (var8 % 7) {
+            case 0:
+               var37 = 93;
+               break;
+            case 1:
+               var37 = 14;
+               break;
+            case 2:
+               var37 = 71;
+               break;
+            case 3:
+               var37 = 8;
+               break;
+            case 4:
+               var37 = 25;
+               break;
+            case 5:
+               var37 = 98;
+               break;
+            default:
+               var37 = 68;
+         }
+      }
+
+      while (true) {
+         var31[var10005] = (char)(var10006 ^ var10007 ^ var37);
+         var8++;
+         if (var25 == 0) {
+            var31 = var10002;
+            var10005 = var25;
+            char var40 = var10002[var25];
+            var10007 = var25;
+            var10006 = var40;
+            switch (var8 % 7) {
+               case 0:
+                  var37 = 93;
+                  break;
+               case 1:
+                  var37 = 14;
+                  break;
+               case 2:
+                  var37 = 71;
+                  break;
+               case 3:
+                  var37 = 8;
+                  break;
+               case 4:
+                  var37 = 25;
+                  break;
+               case 5:
+                  var37 = 98;
+                  break;
+               default:
+                  var37 = 68;
+            }
+         } else {
+            if (var16 <= var8) {
+               String var27 = new String(var10002).intern();
+               int var18 = -1;
+               a = var27;
+               long var0 = 5690185576154854112L;
+               long[] var6 = new long[2];
+               int var3 = 0;
+               String var4 = "M¹\u0014á´O=P\u008d«¿\u0001©±ì\u0086";
+               int var5 = "M¹\u0014á´O=P\u008d«¿\u0001©±ì\u0086".length();
+               byte var2 = 0;
+
+               do {
+                  var18 = var2;
+                  var2 += 8;
+                  byte[] var7 = var4.substring(var18, var2).getBytes("ISO-8859-1");
+                  var18 = var3++;
+                  long var34 = (
+                        ((long)var7[0] & 255L) << 56
+                           | ((long)var7[1] & 255L) << 48
+                           | ((long)var7[2] & 255L) << 40
+                           | ((long)var7[3] & 255L) << 32
+                           | ((long)var7[4] & 255L) << 24
+                           | ((long)var7[5] & 255L) << 16
+                           | ((long)var7[6] & 255L) << 8
+                           | (long)var7[7] & 255L
+                     )
+                     ^ var0;
+                  byte var28 = -1;
+                  var6[var18] = var34;
+               } while (var2 < var5);
+
+               b = var6;
+               c = new Integer[2];
+               return;
+            }
+
+            var31 = var10002;
+            var10005 = var8;
+            char var39 = var10002[var8];
+            var10007 = var25;
+            var10006 = var39;
+            switch (var8 % 7) {
+               case 0:
+                  var37 = 93;
+                  break;
+               case 1:
+                  var37 = 14;
+                  break;
+               case 2:
+                  var37 = 71;
+                  break;
+               case 3:
+                  var37 = 8;
+                  break;
+               case 4:
+                  var37 = 25;
+                  break;
+               case 5:
+                  var37 = 98;
+                  break;
+               default:
+                  var37 = 68;
+            }
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 9389;
+      if (c[var3] == null) {
+         c[var3] = (int)(b[var3] ^ var1);
+      }
+
+      return c[var3];
+   }
 }
+
+
+
+
 

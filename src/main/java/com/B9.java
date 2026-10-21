@@ -1,35 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com._y_0;
-import com.pa_1;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 
-class B9
-implements MouseWheelListener {
-    final pa_1 R;
+class B9 implements MouseWheelListener {
+   final pA_3 R;
 
-    B9(pa_1 pa_12) {
-        this.R = pa_12;
-    }
+   B9(pA_3 var1) {
+      this.R = var1;
+   }
 
-    @Override
-    public void mouseWheelMoved(MouseWheelEvent mouseWheelEvent) {
-        block3: {
-            int n10;
-            block2: {
-                int n11 = _y_0.y();
-                n10 = this.R.m(mouseWheelEvent);
-                if (n11 != 0) break block2;
-                if (n10 == 0) break block3;
-                n10 = mouseWheelEvent.getWheelRotation();
-            }
-            int n12 = n10;
-            pa_1.Z(this.R, n12);
-        }
-    }
+   @Override
+   public void mouseWheelMoved(MouseWheelEvent var1) {
+      int var2 = _y_2.y();
+      int var10000 = this.R.m(var1);
+      if (var2 == 0) {
+         if (var10000 == 0) {
+            return;
+         }
+
+         var10000 = var1.getWheelRotation();
+      }
+
+      int var3 = var10000;
+      pA_3.Z(this.R, var3);
+   }
 }
+
+
+
+
 

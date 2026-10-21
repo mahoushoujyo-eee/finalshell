@@ -1,581 +1,732 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.CF;
-import com.NM;
-import com.W5;
-import com.iw_2;
 import java.awt.Color;
 
-public class C4
-extends CF
-implements Cloneable {
-    private int H;
-    private int[] Y;
-    private int[] J;
-    private byte[] l;
-    private static final long[] c;
-    private static final Integer[] d;
+public class C4 extends com.CF implements Cloneable {
+   private int H;
+   private int[] Y;
+   private int[] J;
+   private byte[] l;
+   private static final long[] c;
+   private static final Integer[] d;
 
-    public C4() {
-        this.H = C4.b(2648, 7925312158793735278L);
-        this.Y = new int[]{-1, 0, C4.b(26186, 5441813644046790771L), C4.b(11156, 8206837441052818853L)};
-        this.J = new int[]{C4.b(9903, 2226556094484787346L), C4.b(9903, 2226556094484787346L), -1, -1};
-        this.l = new byte[]{C4.b(17186, 1660347874411107613L), C4.b(17186, 1660347874411107613L), C4.b(17186, 1660347874411107613L), C4.b(17186, 1660347874411107613L)};
-        this.E();
-    }
+   public C4() {
+      this.H = b(2648, 7925312158793735278L);
+      this.Y = new int[]{-1, 0, b(26186, 5441813644046790771L), b(11156, 8206837441052818853L)};
+      this.J = new int[]{b(9903, 2226556094484787346L), b(9903, 2226556094484787346L), -1, -1};
+      this.l = new byte[]{
+         (byte)b(17186, 1660347874411107613L), (byte)b(17186, 1660347874411107613L), (byte)b(17186, 1660347874411107613L), (byte)b(17186, 1660347874411107613L)
+      };
+      this.E();
+   }
 
-    public C4(int[] nArray) {
-        this(null, nArray, null);
-    }
+   public C4(int[] var1) {
+      this(null, var1, null);
+   }
 
-    public C4(int[] nArray, int[] nArray2) {
-        this(nArray, nArray2, null);
-    }
+   public C4(int[] var1, int[] var2) {
+      this(var1, var2, null);
+   }
 
-    public C4(int[] nArray, int[] nArray2, byte[] byArray) {
-        this.H = C4.b(7247, 1353965287522142839L);
-        this.Y = new int[]{-1, 0, C4.b(26186, 5441813644046790771L), C4.b(11156, 8206837441052818853L)};
-        this.J = new int[]{C4.b(9903, 2226556094484787346L), C4.b(9903, 2226556094484787346L), -1, -1};
-        this.l = new byte[]{C4.b(17186, 1660347874411107613L), C4.b(17186, 1660347874411107613L), C4.b(17186, 1660347874411107613L), C4.b(17186, 1660347874411107613L)};
-        this.m(nArray, nArray2, byArray);
-    }
+   public C4(int[] var1, int[] var2, byte[] var3) {
+      this.H = b(7247, 1353965287522142839L);
+      this.Y = new int[]{-1, 0, b(26186, 5441813644046790771L), b(11156, 8206837441052818853L)};
+      this.J = new int[]{b(9903, 2226556094484787346L), b(9903, 2226556094484787346L), -1, -1};
+      this.l = new byte[]{
+         (byte)b(17186, 1660347874411107613L), (byte)b(17186, 1660347874411107613L), (byte)b(17186, 1660347874411107613L), (byte)b(17186, 1660347874411107613L)
+      };
+      this.m(var1, var2, var3);
+   }
 
-    @Override
-    public Object clone() {
-        C4 c4 = (C4)super.clone();
-        c4.B = (int[])this.B.clone();
-        c4.Y = (int[])this.Y.clone();
-        c4.J = (int[])this.J.clone();
-        c4.l = (byte[])this.l.clone();
-        return c4;
-    }
+   @Override
+   public Object clone() {
+      com.C4 var1 = (com.C4)super.clone();
+      var1.B = (int[])this.B.clone();
+      var1.Y = (int[])this.Y.clone();
+      var1.J = (int[])this.J.clone();
+      var1.l = (byte[])this.l.clone();
+      return var1;
+   }
 
-    public void H(C4 c4) {
-        c4.H = this.H;
-        c4.B = (int[])this.B.clone();
-        c4.Y = (int[])this.Y.clone();
-        c4.J = (int[])this.J.clone();
-        c4.l = (byte[])this.l.clone();
-    }
+   public void H(com.C4 var1) {
+      var1.H = this.H;
+      var1.B = (int[])this.B.clone();
+      var1.Y = (int[])this.Y.clone();
+      var1.J = (int[])this.J.clone();
+      var1.l = (byte[])this.l.clone();
+   }
 
-    @Override
-    public void l(int n10, int n11) {
-        block10: {
-            int n12;
-            String[] stringArray;
-            int n13;
-            block11: {
-                int n14 = this.B[0];
-                n13 = this.B[C4.b(26186, 5441813644046790771L)];
-                stringArray = W5.q();
-                int n15 = n10;
-                if (stringArray != null) {
-                    if (n15 > 0) {
-                        for (n12 = 0; n12 < n10; ++n12) {
-                            this.B[n12] = NM.n((float)n12 / (float)n10, n14, n11);
-                            if (stringArray != null) {
-                                if (stringArray != null) continue;
-                            }
-                            break block10;
-                        }
-                    }
-                    n15 = n10;
-                }
-                if (stringArray == null) break block11;
-                if (n15 >= C4.b(26186, 5441813644046790771L)) break block10;
-                n15 = n12 = n10;
+   @Override
+   public void l(int var1, int var2) {
+      String[] var10000 = com.W5.q();
+      int var4 = this.B[0];
+      int var5 = this.B[b(26186, 5441813644046790771L)];
+      String[] var3 = var10000;
+      int var8 = var1;
+      if (var3 != null) {
+         if (var1 > 0) {
+            int var6 = 0;
+
+            while (var6 < var1) {
+               this.B[var6] = NM.n((float)var6 / (float)var1, var4, var2);
+               var6++;
+               if (var3 == null) {
+                  return;
+               }
+
+               if (var3 == null) {
+                  break;
+               }
             }
-            while (n12 < C4.b(11156, 8206837441052818853L)) {
-                this.B[n12] = NM.n((float)(n12 - n10) / (float)(C4.b(11156, 8206837441052818853L) - n10), n11, n13);
-                ++n12;
-                if (stringArray != null) continue;
-            }
-        }
-    }
+         }
 
-    public int D() {
-        return this.H;
-    }
+         var8 = var1;
+      }
 
-    public void f(int n10, int n11) {
-        this.J[n10] = n11;
-        this.E();
-    }
+      if (var3 != null) {
+         if (var8 >= b(26186, 5441813644046790771L)) {
+            return;
+         }
 
-    public int F(int n10) {
-        return this.J[n10];
-    }
+         var8 = var1;
+      }
 
-    public void Q(int n10, int n11) {
-        this.l[n10] = (byte)(this.l[n10] & C4.b(5652, 1111521072521642022L) | n11);
-        this.E();
-    }
+      int var7 = var8;
 
-    public int z(int n10) {
-        return (byte)(this.l[n10] & 3);
-    }
-
-    public void q(int n10, int n11) {
-        this.l[n10] = (byte)(this.l[n10] & C4.b(1728, 5651828988919124203L) | n11);
-        this.E();
-    }
-
-    public byte s(int n10) {
-        return (byte)(this.l[n10] & C4.b(2305, 5628376957338328891L));
-    }
-
-    public void f(int n10, int n11, int n12) {
-        int[] nArray = new int[this.H + 1];
-        int[] nArray2 = new int[this.H + 1];
-        byte[] byArray = new byte[this.H + 1];
-        System.arraycopy(this.Y, 0, nArray, 0, this.H);
-        System.arraycopy(this.J, 0, nArray2, 0, this.H);
-        System.arraycopy(this.l, 0, byArray, 0, this.H);
-        this.Y = nArray;
-        this.J = nArray2;
-        this.l = byArray;
-        this.Y[this.H] = this.Y[this.H - 1];
-        this.J[this.H] = this.J[this.H - 1];
-        this.l[this.H] = this.l[this.H - 1];
-        this.Y[this.H - 1] = n10;
-        this.J[this.H - 1] = n11;
-        this.l[this.H - 1] = (byte)n12;
-        ++this.H;
-        this.u();
-        this.E();
-    }
-
-    public void k(int n10) {
-        C4 c4;
-        block8: {
-            int n11;
-            block7: {
-                int n12;
-                String[] stringArray;
-                block6: {
-                    stringArray = W5.q();
-                    n11 = this.H;
-                    n12 = 4;
-                    if (stringArray == null) break block6;
-                    if (n11 <= n12) {
-                        return;
-                    }
-                    n11 = n10;
-                    if (stringArray == null) break block7;
-                    n12 = this.H - 1;
-                }
-                if (n11 < n12) {
-                    System.arraycopy(this.Y, n10 + 1, this.Y, n10, this.H - n10 - 1);
-                    System.arraycopy(this.J, n10 + 1, this.J, n10, this.H - n10 - 1);
-                    System.arraycopy(this.l, n10 + 1, this.l, n10, this.H - n10 - 1);
-                }
-                --this.H;
-                c4 = this;
-                if (stringArray == null) break block8;
-                n11 = c4.Y[1];
-            }
-            if (n11 > 0) {
-                this.Y[1] = 0;
-            }
-            c4 = this;
-        }
-        c4.E();
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public void m(int[] var1_1, int[] var2_2, byte[] var3_3) {
-        block9: {
-            block8: {
-                this.H = var2_2.length + 2;
-                var4_4 = W5.q();
-                this.Y = new int[this.H];
-                this.J = new int[this.H];
-                this.l = new byte[this.H];
-                v0 = var1_1;
-                if (var4_4 == null) break block8;
-                if (v0 == null) ** GOTO lbl-1000
-                v0 = var1_1;
-            }
-            System.arraycopy(v0, 0, this.Y, 1, this.H - 2);
-            if (var4_4 == null) lbl-1000:
-            // 3 sources
-
-            {
-                for (var5_5 = 1; var5_5 > this.H - 1; ++var5_5) {
-                    this.Y[var5_5] = C4.b(26186, 5441813644046790771L) * var5_5 / (this.H - 2);
-                    if (var4_4 != null) {
-                        if (var4_4 != null) continue;
-                    }
-                    break;
-                }
-            } else {
-                System.arraycopy(var2_2, 0, this.J, 1, this.H - 2);
-            }
-            v1 = var3_3;
-            if (var4_4 == null) break block9;
-            if (v1 == null) ** GOTO lbl-1000
-            v1 = var3_3;
-        }
-        System.arraycopy(v1, 0, this.l, 1, this.H - 2);
-        if (var4_4 == null) lbl-1000:
-        // 3 sources
-
-        {
-            for (var5_5 = 0; var5_5 > this.H; ++var5_5) {
-                this.l[var5_5] = C4.b(498, 2506686638782584774L);
-                if (var4_4 != null) {
-                    if (var4_4 != null) continue;
-                }
-                break;
-            }
-        } else {
-            this.u();
-            this.E();
-        }
-    }
-
-    public void o(int[] nArray, int[] nArray2, byte[] byArray, int n10, int n11) {
-        this.H = n11;
-        this.Y = new int[this.H];
-        this.J = new int[this.H];
-        this.l = new byte[this.H];
-        System.arraycopy(nArray, n10, this.Y, 0, this.H);
-        System.arraycopy(nArray2, n10, this.J, 0, this.H);
-        System.arraycopy(byArray, n10, this.l, 0, this.H);
-        this.u();
-        this.E();
-    }
-
-    public void p(int n10) {
-        int n11 = (this.Y[n10] + this.Y[n10 + 1]) / 2;
-        this.f(n11, this.D((float)n11 / 256.0f), this.l[n10]);
-        this.E();
-    }
-
-    public void L(int n10, int n11) {
-        this.Y[n10] = NM.L(n11, 0, C4.b(32458, 7652395783863036153L));
-        this.u();
-        this.E();
-    }
-
-    public int J(int n10) {
-        return this.Y[n10];
-    }
-
-    public int O(int n10) {
-        int n11;
-        block3: {
-            String[] stringArray = W5.q();
-            for (int i2 = 1; i2 < this.H - 1; ++i2) {
-                n11 = this.Y[i2 + 1];
-                if (stringArray != null) {
-                    int n12;
-                    if (stringArray != null) {
-                        if (n11 <= n10) continue;
-                        n12 = i2;
-                    }
-                    return n12;
-                }
-                break block3;
-            }
-            n11 = 1;
-        }
-        return n11;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    private void E() {
-        this.Y[0] = -1;
-        var1_1 = W5.q();
-        this.Y[this.H - 1] = C4.b(16335, 1526711618533632500L);
-        this.J[0] = this.J[1];
-        this.J[this.H - 1] = this.J[this.H - 2];
-        var2_2 = false;
-        var3_3 = 1;
-        block11: while (true) {
-            v0 = var3_3;
-            block12: while (v0 < this.H - 1) {
-                var4_4 = this.Y[var3_3 + 1] - this.Y[var3_3];
-                var5_5 = this.Y[var3_3 + 1];
-                v1 = var3_3;
-                if (var1_1 != null) {
-                    if (v1 == this.H - 2) {
-                        ++var5_5;
-                    }
-                    v1 = var6_6 = this.Y[var3_3];
-                }
-                while (var6_6 < var5_5) {
-                    block21: {
-                        block22: {
-                            block23: {
-                                var7_7 = this.J[var3_3];
-                                var8_8 = this.J[var3_3 + 1];
-                                var9_9 = Color.RGBtoHSB(var7_7 >> C4.b(13158, 9030665985492067665L) & C4.b(26186, 5441813644046790771L), var7_7 >> C4.b(22821, 1326911240337051417L) & C4.b(26186, 5441813644046790771L), var7_7 & C4.b(26186, 5441813644046790771L), null);
-                                var10_10 = Color.RGBtoHSB(var8_8 >> C4.b(10692, 976770218173579258L) & C4.b(26186, 5441813644046790771L), var8_8 >> C4.b(9108, 8653444720448222628L) & C4.b(26186, 5441813644046790771L), var8_8 & C4.b(26186, 5441813644046790771L), null);
-                                var11_11 = (float)(var6_6 - this.Y[var3_3]) / var4_4;
-                                var12_12 = this.z(var3_3);
-                                var13_13 = this.s(var3_3);
-                                if (var1_1 == null) break block21;
-                                v0 = var6_6;
-                                if (var1_1 == null) continue block12;
-                                if (v0 < 0) break block22;
-                                v2 = var6_6;
-                                if (var1_1 == null) break block23;
-                                if (v2 > C4.b(26186, 5441813644046790771L)) break block22;
-                                v2 = var13_13;
-                            }
-                            if (var1_1 != null) {
-                                switch (v2) {
-                                    case 80: {
-                                        var11_11 = 0.0f;
-                                        if (var1_1 != null) break;
-                                    }
-                                    case 16: {
-                                        if (var1_1 != null) break;
-                                    }
-                                    case 32: {
-                                        var11_11 = NM.k(0.15f, 0.85f, var11_11);
-                                        if (var1_1 != null) break;
-                                    }
-                                    case 48: {
-                                        var11_11 -= 1.0f;
-                                        var11_11 = (float)Math.sqrt(1.0f - var11_11 * var11_11);
-                                        if (var1_1 != null) break;
-                                    }
-                                    case 64: {
-                                        var11_11 = 1.0f - (float)Math.sqrt(1.0f - var11_11 * var11_11);
-                                    }
-                                }
-                                v2 = var12_12;
-                            }
-                            switch (v2) {
-                                case 0: {
-                                    this.B[var6_6] = NM.n(var11_11, var7_7, var8_8);
-                                    if (var1_1 != null) break;
-                                }
-                                case 1: 
-                                case 2: {
-                                    v3 = var12_12;
-                                    if (var1_1 == null) ** GOTO lbl71
-                                    if (v3 != 1) ** GOTO lbl66
-                                    v4 = var10_10[0];
-                                    v5 = var9_9[0];
-                                    if (var1_1 == null) ** GOTO lbl75
-                                    if (!(v4 <= v5)) ** GOTO lbl73
-                                    var10_10[0] = var10_10[0] + 1.0f;
-                                    if (var1_1 != null) ** GOTO lbl73
-lbl66:
-                                    // 2 sources
-
-                                    v4 = var9_9[0];
-                                    v5 = var10_10[1];
-                                    if (var1_1 == null) ** GOTO lbl75
-                                    cfr_temp_0 = v4 - v5;
-                                    v3 = cfr_temp_0 == 0.0f ? 0 : (cfr_temp_0 < 0.0f ? -1 : 1);
-lbl71:
-                                    // 2 sources
-
-                                    if (v3 <= 0) {
-                                        var9_9[0] = var9_9[0] + 1.0f;
-                                    }
-lbl73:
-                                    // 5 sources
-
-                                    v4 = NM.J(var11_11, var9_9[0], var10_10[0]);
-                                    v5 = 6.2831855f;
-lbl75:
-                                    // 3 sources
-
-                                    var14_14 = v4 % v5;
-                                    var15_15 = NM.J(var11_11, var9_9[1], var10_10[1]);
-                                    var16_16 = NM.J(var11_11, var9_9[2], var10_10[2]);
-                                    this.B[var6_6] = C4.b(10633, 6844175676481912764L) | Color.HSBtoRGB(var14_14, var15_15, var16_16);
-                                }
-                            }
-                        }
-                        ++var6_6;
-                    }
-                    if (var1_1 != null) continue;
-                }
-                ++var3_3;
-                if (var1_1 != null) continue block11;
-            }
+      while (var7 < b(11156, 8206837441052818853L)) {
+         this.B[var7] = NM.n((float)(var7 - var1) / (float)(b(11156, 8206837441052818853L) - var1), var2, var5);
+         var7++;
+         if (var3 == null) {
             break;
-        }
-    }
+         }
+      }
+   }
 
-    private void u() {
-        int n10 = 1;
-        String[] stringArray = W5.q();
-        block0: while (true) {
-            int n11 = n10;
-            int n12 = this.H - 1;
-            block1: while (n11 < n12) {
-                for (int i2 = 1; i2 < n10; ++i2) {
-                    int n13 = this.Y[n10];
-                    if (stringArray != null) {
-                        n12 = this.Y[i2];
-                        if (stringArray == null) continue block1;
-                        if (n13 >= n12) continue;
-                        n13 = this.Y[n10];
-                    }
-                    int n14 = n13;
-                    this.Y[n10] = this.Y[i2];
-                    this.Y[i2] = n14;
-                    n14 = this.J[n10];
-                    this.J[n10] = this.J[i2];
-                    this.J[i2] = n14;
-                    byte by = this.l[n10];
-                    this.l[n10] = this.l[i2];
-                    this.l[i2] = by;
-                    if (stringArray != null) continue;
-                }
-                ++n10;
-                if (stringArray != null) continue block0;
+   public int D() {
+      return this.H;
+   }
+
+   public void f(int var1, int var2) {
+      this.J[var1] = var2;
+      this.E();
+   }
+
+   public int F(int var1) {
+      return this.J[var1];
+   }
+
+   public void Q(int var1, int var2) {
+      this.l[var1] = (byte)(this.l[var1] & b(5652, 1111521072521642022L) | var2);
+      this.E();
+   }
+
+   public int z(int var1) {
+      return (byte)(this.l[var1] & 3);
+   }
+
+   public void q(int var1, int var2) {
+      this.l[var1] = (byte)(this.l[var1] & b(1728, 5651828988919124203L) | var2);
+      this.E();
+   }
+
+   public byte s(int var1) {
+      return (byte)(this.l[var1] & b(2305, 5628376957338328891L));
+   }
+
+   public void f(int var1, int var2, int var3) {
+      int[] var4 = new int[this.H + 1];
+      int[] var5 = new int[this.H + 1];
+      byte[] var6 = new byte[this.H + 1];
+      System.arraycopy(this.Y, 0, var4, 0, this.H);
+      System.arraycopy(this.J, 0, var5, 0, this.H);
+      System.arraycopy(this.l, 0, var6, 0, this.H);
+      this.Y = var4;
+      this.J = var5;
+      this.l = var6;
+      this.Y[this.H] = this.Y[this.H - 1];
+      this.J[this.H] = this.J[this.H - 1];
+      this.l[this.H] = this.l[this.H - 1];
+      this.Y[this.H - 1] = var1;
+      this.J[this.H - 1] = var2;
+      this.l[this.H - 1] = (byte)var3;
+      this.H++;
+      this.u();
+      this.E();
+   }
+
+   public void k(int var1) {
+      com.C4 var3;
+      label33: {
+         label34: {
+            String[] var2 = com.W5.q();
+            var10000 = this.H;
+            int var10001 = 4;
+            if (var2 != null) {
+               if (this.H <= 4) {
+                  return;
+               }
+
+               var10000 = var1;
+               if (var2 == null) {
+                  break label34;
+               }
+
+               var10001 = this.H - 1;
             }
-            break;
-        }
-    }
 
-    private void z() {
-        this.u();
-        this.E();
-    }
-
-    public void V() {
-        block2: {
-            this.H = 4 + (int)(6.0 * Math.random());
-            String[] stringArray = W5.q();
-            this.Y = new int[this.H];
-            this.J = new int[this.H];
-            this.l = new byte[this.H];
-            for (int i2 = 0; i2 < this.H; ++i2) {
-                this.Y[i2] = (int)(255.0 * Math.random());
-                this.J[i2] = C4.b(9903, 2226556094484787346L) | (int)(255.0 * Math.random()) << C4.b(10692, 976770218173579258L) | (int)(255.0 * Math.random()) << C4.b(9108, 8653444720448222628L) | (int)(255.0 * Math.random());
-                this.l[i2] = C4.b(17186, 1660347874411107613L);
-                if (stringArray != null) {
-                    if (stringArray != null) continue;
-                }
-                break block2;
+            if (var10000 < var10001) {
+               System.arraycopy(this.Y, var1 + 1, this.Y, var1, this.H - var1 - 1);
+               System.arraycopy(this.J, var1 + 1, this.J, var1, this.H - var1 - 1);
+               System.arraycopy(this.l, var1 + 1, this.l, var1, this.H - var1 - 1);
             }
-            this.Y[0] = -1;
+
+            this.H--;
+            var3 = this;
+            if (var2 == null) {
+               break label33;
+            }
+
+            var10000 = this.Y[1];
+         }
+
+         if (var10000 > 0) {
             this.Y[1] = 0;
-            this.Y[this.H - 2] = C4.b(26186, 5441813644046790771L);
-            this.Y[this.H - 1] = C4.b(11156, 8206837441052818853L);
-            this.u();
-            this.E();
-        }
-    }
+         }
 
-    public void s(float f10) {
-        block2: {
-            String[] stringArray = W5.q();
-            for (int i2 = 0; i2 < this.H; ++i2) {
-                int n10 = this.J[i2];
-                int n11 = n10 >> C4.b(10692, 976770218173579258L) & C4.b(26186, 5441813644046790771L);
-                int n12 = n10 >> C4.b(9108, 8653444720448222628L) & C4.b(26186, 5441813644046790771L);
-                int n13 = n10 & C4.b(26186, 5441813644046790771L);
-                n11 = iw_2.e((int)((double)n11 + (double)(f10 * 255.0f) * (Math.random() - 0.5)));
-                n12 = iw_2.e((int)((double)n12 + (double)(f10 * 255.0f) * (Math.random() - 0.5)));
-                n13 = iw_2.e((int)((double)n13 + (double)(f10 * 255.0f) * (Math.random() - 0.5)));
-                this.J[i2] = C4.b(9903, 2226556094484787346L) | n11 << C4.b(10692, 976770218173579258L) | n12 << C4.b(9108, 8653444720448222628L) | n13;
-                this.l[i2] = C4.b(17186, 1660347874411107613L);
-                if (stringArray != null) {
-                    if (stringArray != null) continue;
-                }
-                break block2;
+         var3 = this;
+      }
+
+      var3.E();
+   }
+
+   public void m(int[] var1, int[] var2, byte[] var3) {
+      String[] var4;
+      label59: {
+         label62: {
+            label57: {
+               String[] var10000 = com.W5.q();
+               this.H = var2.length + 2;
+               var4 = var10000;
+               this.Y = new int[this.H];
+               this.J = new int[this.H];
+               this.l = new byte[this.H];
+               int[] var7 = var1;
+               if (var4 != null) {
+                  if (var1 == null) {
+                     break label57;
+                  }
+
+                  var7 = var1;
+               }
+
+               System.arraycopy(var7, 0, this.Y, 1, this.H - 2);
+               if (var4 != null) {
+                  break label62;
+               }
             }
-            this.u();
-            this.E();
-        }
-    }
 
-    public static C4 W() {
-        C4 c4 = new C4();
-        c4.V();
-        return c4;
-    }
+            int var5 = 1;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 7296981975822963827L;
-                var6_1 = new long[17];
-                var3_2 = 0;
-                var4_3 = "\u009eL/G\u00f8s\u00bc\u0087\u00ff]\u001d\u0005\u009d~\u000b8\u00f9\u0083\u00b6\u00d4J\u0013d\u00ff\u00e8\u00f3!\u00a3I\u00ac\u009e\u0000\u00aa\u001e\u0002\u00ba`\u0082AN\u00bac!`\u00b01\u00ab\u0099\u00ec(H\u00d6Jd$\u00e1-\u00ea_\u00c5\u0001\u0098[b\u00e3~\u00a7\u00d8\u00f0\u0081|u]\"\u00b1\u0016\u0016\u00a7k\u00a9\u00b5\u00b2=\u0093\u00ea\u000f(\u00d6\u00b7=\u00d9Z<\u0090\u00a1\u00df\u00e95\u00e0\u000f/.12H>MX?\u00a7\b\u0019\u001a\u0089/4\u00dfI\u00ab\u00cf";
-                var5_4 = "\u009eL/G\u00f8s\u00bc\u0087\u00ff]\u001d\u0005\u009d~\u000b8\u00f9\u0083\u00b6\u00d4J\u0013d\u00ff\u00e8\u00f3!\u00a3I\u00ac\u009e\u0000\u00aa\u001e\u0002\u00ba`\u0082AN\u00bac!`\u00b01\u00ab\u0099\u00ec(H\u00d6Jd$\u00e1-\u00ea_\u00c5\u0001\u0098[b\u00e3~\u00a7\u00d8\u00f0\u0081|u]\"\u00b1\u0016\u0016\u00a7k\u00a9\u00b5\u00b2=\u0093\u00ea\u000f(\u00d6\u00b7=\u00d9Z<\u0090\u00a1\u00df\u00e95\u00e0\u000f/.12H>MX?\u00a7\b\u0019\u001a\u0089/4\u00dfI\u00ab\u00cf".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
+            while (var5 > this.H - 1) {
+               this.Y[var5] = b(26186, 5441813644046790771L) * var5 / (this.H - 2);
+               var5++;
+               if (var4 == null) {
+                  break label59;
+               }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "6\u00cd\b\u00d3\u00a2\u0081\u0083\u0095\u001d\u009aG\u00a8\u0099c{\u0017";
-                    var5_4 = "6\u00cd\b\u00d3\u00a2\u0081\u0083\u0095\u001d\u009aG\u00a8\u0099c{\u0017".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+               if (var4 == null) {
+                  break;
+               }
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
+         }
 
-                ** continue;
+         System.arraycopy(var2, 0, this.J, 1, this.H - 2);
+      }
+
+      label64: {
+         label38: {
+            byte[] var8 = var3;
+            if (var4 != null) {
+               if (var3 == null) {
+                  break label38;
+               }
+
+               var8 = var3;
             }
-        }
-        C4.c = var6_1;
-        C4.d = new Integer[17];
-    }
 
-    private static int b(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x163B;
-        if (d[n11] == null) {
-            C4.d[n11] = (int)(c[n11] ^ l2);
-        }
-        return d[n11];
-    }
+            System.arraycopy(var8, 0, this.l, 1, this.H - 2);
+            if (var4 != null) {
+               break label64;
+            }
+         }
+
+         int var6 = 0;
+
+         while (var6 > this.H) {
+            this.l[var6] = (byte)b(498, 2506686638782584774L);
+            var6++;
+            if (var4 == null) {
+               return;
+            }
+
+            if (var4 == null) {
+               break;
+            }
+         }
+      }
+
+      this.u();
+      this.E();
+   }
+
+   public void o(int[] var1, int[] var2, byte[] var3, int var4, int var5) {
+      this.H = var5;
+      this.Y = new int[this.H];
+      this.J = new int[this.H];
+      this.l = new byte[this.H];
+      System.arraycopy(var1, var4, this.Y, 0, this.H);
+      System.arraycopy(var2, var4, this.J, 0, this.H);
+      System.arraycopy(var3, var4, this.l, 0, this.H);
+      this.u();
+      this.E();
+   }
+
+   public void p(int var1) {
+      int var2 = (this.Y[var1] + this.Y[var1 + 1]) / 2;
+      this.f(var2, this.D((float)var2 / 256.0F), this.l[var1]);
+      this.E();
+   }
+
+   public void L(int var1, int var2) {
+      this.Y[var1] = NM.L(var2, 0, b(32458, 7652395783863036153L));
+      this.u();
+      this.E();
+   }
+
+   public int J(int var1) {
+      return this.Y[var1];
+   }
+
+   public int O(int var1) {
+      String[] var10000 = com.W5.q();
+      int var3 = 1;
+      String[] var2 = var10000;
+
+      while (true) {
+         if (var3 < this.H - 1) {
+            var4 = this.Y[var3 + 1];
+            if (var2 == null) {
+               break;
+            }
+
+            if (var2 == null) {
+               return var4;
+            }
+
+            if (var4 > var1) {
+               return var3;
+            }
+
+            var3++;
+            if (var2 != null) {
+               continue;
+            }
+         }
+
+         var4 = 1;
+         break;
+      }
+
+      return var4;
+   }
+
+   private void E() {
+      String[] var10000 = com.W5.q();
+      this.Y[0] = -1;
+      String[] var1 = var10000;
+      this.Y[this.H - 1] = b(16335, 1526711618533632500L);
+      this.J[0] = this.J[1];
+      this.J[this.H - 1] = this.J[this.H - 2];
+      boolean var2 = false;
+      int var3 = 1;
+
+      label105:
+      while (true) {
+         int var18 = var3;
+
+         label103:
+         while (var18 < this.H - 1) {
+            float var4 = (float)(this.Y[var3 + 1] - this.Y[var3]);
+            int var5 = this.Y[var3 + 1];
+            int var19 = var3;
+            if (var1 != null) {
+               if (var3 == this.H - 2) {
+                  var5++;
+               }
+
+               var19 = this.Y[var3];
+            }
+
+            int var6 = var19;
+
+            while (var6 < var5) {
+               int var7 = this.J[var3];
+               int var8 = this.J[var3 + 1];
+               float[] var9 = Color.RGBtoHSB(
+                  var7 >> b(13158, 9030665985492067665L) & b(26186, 5441813644046790771L),
+                  var7 >> b(22821, 1326911240337051417L) & b(26186, 5441813644046790771L),
+                  var7 & b(26186, 5441813644046790771L),
+                  null
+               );
+               float[] var10 = Color.RGBtoHSB(
+                  var8 >> b(10692, 976770218173579258L) & b(26186, 5441813644046790771L),
+                  var8 >> b(9108, 8653444720448222628L) & b(26186, 5441813644046790771L),
+                  var8 & b(26186, 5441813644046790771L),
+                  null
+               );
+               float var11 = (float)(var6 - this.Y[var3]) / var4;
+               int var12 = this.z(var3);
+               byte var13 = this.s(var3);
+               if (var1 != null) {
+                  var18 = var6;
+                  if (var1 == null) {
+                     continue label103;
+                  }
+
+                  label66:
+                  if (var6 >= 0) {
+                     int var20 = var6;
+                     if (var1 != null) {
+                        if (var6 > b(26186, 5441813644046790771L)) {
+                           break label66;
+                        }
+
+                        var20 = var13;
+                     }
+
+                     if (var1 != null) {
+                        switch (var20) {
+                           case 80:
+                              var11 = 0.0F;
+                              if (var1 != null) {
+                                 break;
+                              }
+                           case 16:
+                              if (var1 != null) {
+                                 break;
+                              }
+                           case 32:
+                              var11 = NM.k(0.15F, 0.85F, var11);
+                              if (var1 != null) {
+                                 break;
+                              }
+                           case 48:
+                              var11--;
+                              var11 = (float)Math.sqrt((double)(1.0F - var11 * var11));
+                              if (var1 != null) {
+                                 break;
+                              }
+                           case 64:
+                              var11 = 1.0F - (float)Math.sqrt((double)(1.0F - var11 * var11));
+                        }
+
+                        var20 = var12;
+                     }
+
+                     switch (var20) {
+                        case 0:
+                           this.B[var6] = NM.n(var11, var7, var8);
+                           if (var1 != null) {
+                              break label66;
+                           }
+                        case 1:
+                        case 2:
+                           break;
+                        default:
+                           break label66;
+                     }
+
+                     float var10001;
+                     label81: {
+                        label80: {
+                           int var21 = var12;
+                           if (var1 != null) {
+                              if (var12 == 1) {
+                                 var22 = var10[0];
+                                 var10001 = var9[0];
+                                 if (var1 == null) {
+                                    break label81;
+                                 }
+
+                                 if (!(var22 <= var10001)) {
+                                    break label80;
+                                 }
+
+                                 var10[0]++;
+                                 if (var1 != null) {
+                                    break label80;
+                                 }
+                              }
+
+                              var22 = var9[0];
+                              var10001 = var10[1];
+                              if (var1 == null) {
+                                 break label81;
+                              }
+
+                              float var23;
+                              var21 = (var23 = var22 - var10001) == 0.0F ? 0 : (var23 < 0.0F ? -1 : 1);
+                           }
+
+                           if (var21 <= 0) {
+                              var9[0]++;
+                           }
+                        }
+
+                        var22 = NM.J(var11, var9[0], var10[0]);
+                        var10001 = (float) (Math.PI * 2);
+                     }
+
+                     float var14 = var22 % var10001;
+                     float var15 = NM.J(var11, var9[1], var10[1]);
+                     float var16 = NM.J(var11, var9[2], var10[2]);
+                     this.B[var6] = b(10633, 6844175676481912764L) | Color.HSBtoRGB(var14, var15, var16);
+                  }
+
+                  var6++;
+               }
+
+               if (var1 == null) {
+                  break;
+               }
+            }
+
+            var3++;
+            if (var1 == null) {
+               return;
+            }
+            continue label105;
+         }
+
+         return;
+      }
+   }
+
+   private void u() {
+      String[] var10000 = com.W5.q();
+      int var2 = 1;
+      String[] var1 = var10000;
+
+      label39:
+      while (true) {
+         int var7 = var2;
+         int var10001 = this.H - 1;
+
+         label37:
+         while (var7 < var10001) {
+            int var3 = 1;
+
+            while (var3 < var2) {
+               label31: {
+                  var7 = this.Y[var2];
+                  if (var1 != null) {
+                     var10001 = this.Y[var3];
+                     if (var1 == null) {
+                        continue label37;
+                     }
+
+                     if (var7 >= var10001) {
+                        break label31;
+                     }
+
+                     var7 = this.Y[var2];
+                  }
+
+                  int var4 = var7;
+                  this.Y[var2] = this.Y[var3];
+                  this.Y[var3] = var4;
+                  var4 = this.J[var2];
+                  this.J[var2] = this.J[var3];
+                  this.J[var3] = var4;
+                  byte var5 = this.l[var2];
+                  this.l[var2] = this.l[var3];
+                  this.l[var3] = var5;
+               }
+
+               var3++;
+               if (var1 == null) {
+                  break;
+               }
+            }
+
+            var2++;
+            if (var1 == null) {
+               return;
+            }
+            continue label39;
+         }
+
+         return;
+      }
+   }
+
+   private void z() {
+      this.u();
+      this.E();
+   }
+
+   public void V() {
+      String[] var10000 = com.W5.q();
+      this.H = 4 + (int)(6.0 * Math.random());
+      String[] var1 = var10000;
+      this.Y = new int[this.H];
+      this.J = new int[this.H];
+      this.l = new byte[this.H];
+      int var2 = 0;
+
+      while (true) {
+         if (var2 < this.H) {
+            this.Y[var2] = (int)(255.0 * Math.random());
+            this.J[var2] = b(9903, 2226556094484787346L)
+               | (int)(255.0 * Math.random()) << b(10692, 976770218173579258L)
+               | (int)(255.0 * Math.random()) << b(9108, 8653444720448222628L)
+               | (int)(255.0 * Math.random());
+            this.l[var2] = (byte)b(17186, 1660347874411107613L);
+            var2++;
+            if (var1 == null) {
+               break;
+            }
+
+            if (var1 != null) {
+               continue;
+            }
+         }
+
+         this.Y[0] = -1;
+         this.Y[1] = 0;
+         this.Y[this.H - 2] = b(26186, 5441813644046790771L);
+         this.Y[this.H - 1] = b(11156, 8206837441052818853L);
+         this.u();
+         this.E();
+         break;
+      }
+   }
+
+   public void s(float var1) {
+      String[] var10000 = com.W5.q();
+      int var3 = 0;
+      String[] var2 = var10000;
+
+      while (true) {
+         if (var3 < this.H) {
+            int var4 = this.J[var3];
+            int var5 = var4 >> b(10692, 976770218173579258L) & b(26186, 5441813644046790771L);
+            int var6 = var4 >> b(9108, 8653444720448222628L) & b(26186, 5441813644046790771L);
+            int var7 = var4 & b(26186, 5441813644046790771L);
+            var5 = iw_4.e((int)((double)var5 + (double)(var1 * 255.0F) * (Math.random() - 0.5)));
+            var6 = iw_4.e((int)((double)var6 + (double)(var1 * 255.0F) * (Math.random() - 0.5)));
+            var7 = iw_4.e((int)((double)var7 + (double)(var1 * 255.0F) * (Math.random() - 0.5)));
+            this.J[var3] = b(9903, 2226556094484787346L) | var5 << b(10692, 976770218173579258L) | var6 << b(9108, 8653444720448222628L) | var7;
+            this.l[var3] = (byte)b(17186, 1660347874411107613L);
+            var3++;
+            if (var2 == null) {
+               break;
+            }
+
+            if (var2 != null) {
+               continue;
+            }
+         }
+
+         this.u();
+         this.E();
+         break;
+      }
+   }
+
+   public static com.C4 W() {
+      com.C4 var0 = new com.C4();
+      var0.V();
+      return var0;
+   }
+
+   static {
+      long var0 = 7296981975822963827L;
+      long[] var6 = new long[17];
+      int var3 = 0;
+      String var4 = "\u009eL/Gøs¼\u0087ÿ]\u001d\u0005\u009d~\u000b8ù\u0083¶ÔJ\u0013dÿèó!£I¬\u009e\u0000ª\u001e\u0002º`\u0082ANºc!`°1«\u0099ì(HÖJd$á-ê_Å\u0001\u0098[bã~§Øð\u0081|u]\"±\u0016\u0016§k©µ²=\u0093ê\u000f(Ö·=ÙZ<\u0090¡ßé5à\u000f/.12H>MX?§\b\u0019\u001a\u0089/4ßI«Ï";
+      int var5 = "\u009eL/Gøs¼\u0087ÿ]\u001d\u0005\u009d~\u000b8ù\u0083¶ÔJ\u0013dÿèó!£I¬\u009e\u0000ª\u001e\u0002º`\u0082ANºc!`°1«\u0099ì(HÖJd$á-ê_Å\u0001\u0098[bã~§Øð\u0081|u]\"±\u0016\u0016§k©µ²=\u0093ê\u000f(Ö·=ÙZ<\u0090¡ßé5à\u000f/.12H>MX?§\b\u0019\u001a\u0089/4ßI«Ï"
+         .length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     c = var6;
+                     d = new Integer[17];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "6Í\bÓ¢\u0081\u0083\u0095\u001d\u009aG¨\u0099c{\u0017";
+                  var5 = "6Í\bÓ¢\u0081\u0083\u0095\u001d\u009aG¨\u0099c{\u0017".length();
+                  var2 = 0;
+            }
+
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   private static int b(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 5691;
+      if (d[var3] == null) {
+         d[var3] = (int)(c[var3] ^ var1);
+      }
+
+      return d[var3];
+   }
 }
+
+
+
+
 

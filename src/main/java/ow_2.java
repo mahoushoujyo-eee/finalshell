@@ -1,41 +1,17 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.Socket;
+class Ow_2 implements Runnable {
+   final oU_3 z;
 
-/*
- * Renamed from ow
- */
-public class ow_2 {
-    Socket U;
-    InputStream j;
-    OutputStream s;
+   Ow_2(oU_3 var1) {
+      this.z = var1;
+   }
 
-    public Socket a() {
-        return (Socket)this.U;
-    }
-
-    public void S(Socket socket) {
-        this.U = socket;
-    }
-
-    public InputStream B() {
-        return (InputStream)this.j;
-    }
-
-    public void R(InputStream inputStream) {
-        this.j = inputStream;
-    }
-
-    public OutputStream l() {
-        return (OutputStream)this.s;
-    }
-
-    public void G(OutputStream outputStream) {
-        this.s = outputStream;
-    }
+   @Override
+   public void run() {
+      ((oU_3)com.c.c(526289073661883036L).get(this)).setVisible(true);
+   }
 }
+
+
+
+
 

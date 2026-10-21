@@ -1,16 +1,16 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class YW
-implements Runnable {
-    final gm_0 t;
+class YW implements Runnable {
+   final gm_2 t;
 
-    YW(gm_0 gm_02) {
-        this.t = gm_02;
-    }
+   YW(gm_2 var1) {
+      this.t = var1;
+   }
 
-    @Override
-    public void run() {
-    }
+   @Override
+   public void run() {
+   }
 }
+
+
+
+
 

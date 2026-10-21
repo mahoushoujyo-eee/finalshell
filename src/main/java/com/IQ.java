@@ -1,114 +1,122 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.IB;
-import com.IH;
-import com.aS;
-import com.uD;
 import java.awt.event.ActionListener;
 import java.io.Serializable;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
 
-public class IQ
-extends IB {
-    private ActionListener J;
+public class IQ extends IB {
+   private ActionListener J;
 
-    public IQ(aS aS2) {
-        super(aS2);
-    }
+   public IQ(com.aS var1) {
+      super(var1);
+   }
 
-    public Integer H() {
-        Integer n10 = (Integer)super.Y();
-        String[] stringArray = IH.M();
-        Integer n11 = n10;
-        if (stringArray != null) {
-            if (n11 == null) {
-                n10 = -1;
+   public Integer H() {
+      String[] var10000 = IH.M();
+      Integer var2 = (Integer)super.Y();
+      String[] var1 = var10000;
+      Integer var3 = var2;
+      if (var1 != null) {
+         if (var2 == null) {
+            var2 = -1;
+         }
+
+         var3 = var2;
+      }
+
+      return var3;
+   }
+
+   protected void Q(JComboBox var1) {
+      this.J = new uD(this);
+      var1.addActionListener(this.J);
+   }
+
+   protected void t(JComboBox var1) {
+      var1.removeActionListener(this.J);
+      this.J = null;
+   }
+
+   protected void L(JComboBox var1) {
+      String[] var10000 = IH.M();
+      Integer var3 = (Integer)this.o();
+      String[] var2 = var10000;
+      Integer var4 = var3;
+      if (var2 != null) {
+         if (var3 == null) {
+            return;
+         }
+
+         var4 = var3;
+      }
+
+      int var5 = var4;
+      if (var2 != null) {
+         if (var5 < 0) {
+            return;
+         }
+
+         var5 = var1.getModel().getSize();
+      }
+
+      label41: {
+         int var10001 = var3;
+         if (var2 != null) {
+            if (var5 <= var10001) {
+               return;
             }
-            n11 = n10;
-        }
-        return n11;
-    }
 
-    protected void Q(JComboBox jComboBox) {
-        this.J = new uD(this);
-        jComboBox.addActionListener(this.J);
-    }
-
-    protected void t(JComboBox jComboBox) {
-        jComboBox.removeActionListener(this.J);
-        this.J = null;
-    }
-
-    protected void L(JComboBox jComboBox) {
-        block3: {
-            JComboBox jComboBox2;
-            Integer n10;
-            block6: {
-                int n11;
-                int n12;
-                block5: {
-                    String[] stringArray;
-                    block4: {
-                        Integer n13;
-                        block2: {
-                            n10 = (Integer)this.o();
-                            stringArray = IH.M();
-                            n13 = n10;
-                            if (stringArray == null) break block2;
-                            if (n13 == null) break block3;
-                            n13 = n10;
-                        }
-                        n12 = n13;
-                        if (stringArray == null) break block4;
-                        if (n12 < 0) break block3;
-                        n12 = jComboBox.getModel().getSize();
-                    }
-                    n11 = n10;
-                    if (stringArray == null) break block5;
-                    if (n12 <= n11) break block3;
-                    jComboBox2 = jComboBox;
-                    if (stringArray == null) break block6;
-                    n12 = jComboBox2.getSelectedIndex();
-                    n11 = n10;
-                }
-                if (n12 == n11) break block3;
-                jComboBox2 = jComboBox;
+            var6 = var1;
+            if (var2 == null) {
+               break label41;
             }
-            jComboBox2.setSelectedIndex(n10);
-        }
-    }
 
-    protected void i(JComboBox jComboBox) {
-        this.J(Integer.valueOf(jComboBox.getSelectedIndex()));
-    }
+            var5 = var1.getSelectedIndex();
+            var10001 = var3;
+         }
 
-    @Override
-    protected void T(JComponent jComponent) {
-        this.i((JComboBox)jComponent);
-    }
+         if (var5 == var10001) {
+            return;
+         }
 
-    @Override
-    protected void s(JComponent jComponent) {
-        this.L((JComboBox)jComponent);
-    }
+         var6 = var1;
+      }
 
-    @Override
-    protected void r(JComponent jComponent) {
-        this.t((JComboBox)jComponent);
-    }
+      var6.setSelectedIndex(var3);
+   }
 
-    @Override
-    protected void F(JComponent jComponent) {
-        this.Q((JComboBox)jComponent);
-    }
+   protected void i(JComboBox var1) {
+      this.J(Integer.valueOf(var1.getSelectedIndex()));
+   }
 
-    @Override
-    public Serializable Y() {
-        return this.H();
-    }
+   @Override
+   protected void T(JComponent var1) {
+      this.i((JComboBox)var1);
+   }
+
+   @Override
+   protected void s(JComponent var1) {
+      this.L((JComboBox)var1);
+   }
+
+   @Override
+   protected void r(JComponent var1) {
+      this.t((JComboBox)var1);
+   }
+
+   @Override
+   protected void F(JComponent var1) {
+      this.Q((JComboBox)var1);
+   }
+
+   @Override
+   public Serializable Y() {
+      return this.H();
+   }
 }
+
+
+
+
 

@@ -1,227 +1,132 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.io.File;
-import java.io.Serializable;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.LayoutManager2;
 import java.lang.reflect.InvocationTargetException;
-import java.sql.Timestamp;
-import javax.swing.filechooser.FileSystemView;
+import java.lang.reflect.Method;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- * Renamed from ck
- */
-public class ck_2
-implements Serializable {
-    long f;
-    long L;
-    String S;
-    long r;
-    String X;
-    Timestamp H;
-    File v;
-    int R;
-    String o;
-    String t;
-    boolean I;
-    long x;
-    int V;
-    boolean G;
-    int a;
-    String m;
-    String q;
-    int y;
-    int l;
-    static FileSystemView U;
-    ln_2 O;
+public abstract class Ck_2 implements LayoutManager2 {
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public ck_2(File file) {
-        this.G = false;
-        try {
-            this.N(file);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void addLayoutComponent(Component var1, Object var2) {
+      Object[] var10001 = com.c.a(var1, var2);
+      Method var10003 = com.c.d(211984589505220492L);
+      Object[] var10002 = var10001;
+      Ck_2 var4 = this;
+      Method var10000 = var10003;
 
-    public ck_2() {
-        this.G = false;
-    }
+      try {
+         var10000.invoke(var4, var10002);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
+   }
 
-    public String T() {
-        return (String)this.S;
-    }
+   @Override
+   public void addLayoutComponent(String var1, Component var2) {
+      Object[] var10001 = com.c.a(var2, var1);
+      Method var10003 = com.c.d(211984589505220492L);
+      Object[] var10002 = var10001;
+      Ck_2 var4 = this;
+      Method var10000 = var10003;
 
-    public void H(String string) {
-        this.S = string;
-    }
+      try {
+         var10000.invoke(var4, var10002);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
+   }
 
-    public long m() {
-        return this.r;
-    }
+   @Override
+   public void removeLayoutComponent(Component var1) {
+      Object[] var10001 = com.c.a(var1);
+      Method var10003 = com.c.d(455538072076904486L);
+      Object[] var10002 = var10001;
+      Ck_2 var3 = this;
+      Method var10000 = var10003;
 
-    public void R(long l2) {
-        this.r = l2;
-    }
+      try {
+         var10000.invoke(var3, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
 
-    public String a() {
-        return (String)this.X;
-    }
+   public void O(Component var1, Object var2) {
+   }
 
-    public void T(String string) {
-        this.X = string;
-    }
+   public void B(Component var1) {
+   }
 
-    public long T() {
-        return this.f;
-    }
+   @Override
+   public Dimension minimumLayoutSize(Container var1) {
+      return this.preferredLayoutSize(var1);
+   }
 
-    public void q(long l2) {
-        this.f = l2;
-    }
+   @Override
+   public Dimension maximumLayoutSize(Container var1) {
+      return new Dimension(a(10031, 8514026021197084715L), a(10137, 963672662800955548L));
+   }
 
-    public long V() {
-        return this.L;
-    }
+   @Override
+   public float getLayoutAlignmentX(Container var1) {
+      return 0.5F;
+   }
 
-    public void w(long l2) {
-        this.L = l2;
-    }
+   @Override
+   public float getLayoutAlignmentY(Container var1) {
+      return 0.5F;
+   }
 
-    public Timestamp U() {
-        return (Timestamp)this.H;
-    }
+   @Override
+   public void invalidateLayout(Container var1) {
+   }
 
-    public void H(Timestamp timestamp) {
-        this.H = timestamp;
-    }
+   static {
+      long var0 = 1452564465116053195L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "\u0093\u007f\u00174º\u0085y\u001f=\u0087\u0003\byfy¨";
+      int var5 = "\u0093\u007f\u00174º\u0085y\u001f=\u0087\u0003\byfy¨".length();
+      byte var2 = 0;
 
-    public boolean M() {
-        return (File)this.v != null;
-    }
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
 
-    public File i() {
-        return (File)this.v;
-    }
+      a = var6;
+      b = new Integer[2];
+   }
 
-    public void N(File file) {
-        this.v = file;
-        this.o = file.getAbsolutePath();
-        this.t = ((FileSystemView)ck_2.U).getSystemDisplayName(file);
-        this.X = file.getName();
-        try {
-            this.R(file.length());
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        this.x = file.lastModified();
-    }
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 24324;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
 
-    public int p() {
-        return this.R;
-    }
-
-    public void l(int n10) {
-        this.R = n10;
-    }
-
-    public String d() {
-        return (String)this.o;
-    }
-
-    public void o(String string) {
-        this.o = string;
-    }
-
-    public String y() {
-        return (String)this.t;
-    }
-
-    public void Q(String string) {
-        this.t = string;
-    }
-
-    public void B(boolean bl) {
-        this.I = bl;
-    }
-
-    public long Q() {
-        return this.x;
-    }
-
-    public void Q(long l2) {
-        this.x = l2;
-    }
-
-    public int I() {
-        return this.V;
-    }
-
-    public void U(int n10) {
-        this.V = n10;
-    }
-
-    public boolean l() {
-        return this.G;
-    }
-
-    public void d(boolean bl) {
-        this.G = bl;
-    }
-
-    public int v() {
-        return this.a;
-    }
-
-    public void s(int n10) {
-        this.a = n10;
-    }
-
-    public String S() {
-        return (String)this.m;
-    }
-
-    public void W(String string) {
-        this.m = string;
-    }
-
-    public String M() {
-        return (String)this.q;
-    }
-
-    public void h(String string) {
-        this.q = string;
-    }
-
-    public int f() {
-        return this.y;
-    }
-
-    public void z(int n10) {
-        this.y = n10;
-    }
-
-    public int s() {
-        return this.l;
-    }
-
-    public void a(int n10) {
-        this.l = n10;
-    }
-
-    public ln_2 u() {
-        return (ln_2)this.O;
-    }
-
-    public void J(ln_2 ln_22) {
-        this.O = ln_22;
-    }
-
-    static {
-        ck_2.U = FileSystemView.getFileSystemView();
-    }
+      return b[var3];
+   }
 }
+
+
+
+
 

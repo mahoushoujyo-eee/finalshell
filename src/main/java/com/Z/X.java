@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.Z.A;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-class X
-implements PropertyChangeListener {
-    final A y;
+class X implements PropertyChangeListener {
+   final com.Z.A y;
 
-    X(A a10) {
-        this.y = a10;
-    }
+   X(com.Z.A var1) {
+      this.y = var1;
+   }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent propertyChangeEvent) {
-        this.y.Z(propertyChangeEvent);
-    }
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      this.y.Z(var1);
+   }
 }
+
+
+
+
 

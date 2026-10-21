@@ -1,50 +1,48 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.BG;
-import com.by_0;
-import com.ej_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JProgressBar;
 import javax.swing.SwingUtilities;
 
-class zM
-implements ActionListener {
-    final JProgressBar k;
-    final ej_0 R;
-    private static final long a;
+class zM implements ActionListener {
+   final JProgressBar k;
+   final Ej_2 R;
+   private static final long a;
 
-    zM(ej_0 ej_02, JProgressBar jProgressBar) {
-        this.R = ej_02;
-        this.k = jProgressBar;
-    }
+   zM(Ej_2 var1, JProgressBar var2) {
+      this.R = var1;
+      this.k = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block2: {
-            int n10;
-            block3: {
-                int n11 = by_0.J();
-                n10 = ej_0.g(this.R);
-                if (n11 != 0) break block2;
-                if (n10 >= (int)a) break block3;
-                ej_0.L(this.R);
-                if (n11 == 0) break block2;
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      int var2 = com.By_2.J();
+      int var10000 = Ej_2.g(this.R);
+      label14:
+      if (var2 == 0) {
+         if (var10000 < (int)a) {
+            Ej_2.L(this.R);
+            if (var2 == 0) {
+               break label14;
             }
-            n10 = ej_0.X(this.R, 0);
-        }
-        SwingUtilities.invokeLater(new BG(this));
-    }
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5785545440390487775L;
-        a = 0xAF1ED752C65B1EF8L ^ l2;
-    }
+         Ej_2.X(this.R, 0);
+      }
+
+      SwingUtilities.invokeLater(new com.BG(this));
+   }
+
+   static {
+      long var0 = 5785545440390487775L;
+      long var10002 = -5827984117255692552L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

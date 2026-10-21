@@ -1,35 +1,35 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
 
-public class zF
-extends MessageToByteEncoder {
-    protected void J(ChannelHandlerContext channelHandlerContext, xU xU2, ByteBuf byteBuf) throws Exception {
-        int[] nArray = xU.t();
-        byteBuf.writeInt(xU2.S());
-        int[] nArray2 = nArray;
-        try {
-            byteBuf.writeInt(xU2.j());
-            byteBuf.writeBytes(xU2.C());
-            if (nArray2 == null) {
-                ky_2.K(new String[3]);
-            }
-        }
-        catch (Exception exception) {
-            throw zF.a(exception);
-        }
-    }
+public class zF extends MessageToByteEncoder {
+   protected void J(ChannelHandlerContext var1, xU var2, ByteBuf var3) throws Exception {
+      int[] var10000 = xU.t();
+      var3.writeInt(var2.S());
+      int[] var4 = var10000;
 
-    protected void encode(ChannelHandlerContext channelHandlerContext, Object object, ByteBuf byteBuf) throws Exception {
-        this.J(channelHandlerContext, (xU)object, byteBuf);
-    }
+      try {
+         var3.writeInt(var2.j());
+         var3.writeBytes(var2.C());
+         if (var4 == null) {
+            com.ky_4.K(new String[3]);
+         }
+      } catch (Exception var5) {
+         throw a(var5);
+      }
+   }
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+   @Override
+   protected void encode(ChannelHandlerContext var1, Object var2, ByteBuf var3) throws Exception {
+      this.J(var1, (xU)var2, var3);
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
 }
+
+
+
+
 

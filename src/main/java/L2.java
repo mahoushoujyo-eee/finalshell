@@ -1,585 +1,752 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import java.io.FileDescriptor;
 import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import jtermios.X;
-import jtermios.j;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
 public class L2 {
-    private static volatile Object V;
-    private volatile String b;
-    private volatile int v;
-    private volatile nv_0 E;
-    private static volatile Hashtable C;
-    private static volatile Hashtable Y;
-    private static volatile Hashtable L;
-    private volatile Hashtable j = new Hashtable();
-    private static final String a;
-    private static final long c;
+   private static volatile Object V;
+   private volatile String b;
+   private volatile int v;
+   private volatile nv_2 E;
+   private static volatile Hashtable C;
+   private static volatile Hashtable Y;
+   private static volatile Hashtable L;
+   private volatile Hashtable j = new Hashtable();
+   private static final String a;
+   private static final long c;
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public boolean equals(Object object) {
-        ky_2[] ky_2Array = xA.P();
-        boolean bl = object instanceof L2;
-        if (ky_2Array != null) {
-            if (!bl) return false;
-            bl = this.b.equals(((L2)object).b);
-        }
-        if (ky_2Array == null) return bl;
-        if (!bl) return false;
-        return true;
-    }
+   @Override
+   public boolean equals(Object var1) {
+      com.ky_4[] var2 = xA.P();
+      boolean var10000 = var1 instanceof L2;
+      if (var2 != null) {
+         if (!var10000) {
+            return false;
+         }
 
-    public int hashCode() {
-        return this.b.hashCode();
-    }
+         var10000 = this.b.equals(((L2)var1).b);
+      }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public static void Z(String string, int n10, nv_0 nv_02) {
-        Object object = V;
-        synchronized (object) {
-            C.put(string, new L2(string, n10, nv_02));
-        }
-    }
+      return var2 == null ? var10000 : var10000;
+   }
 
-    private L2(String string, int n10, nv_0 nv_02) {
-        this.b = string;
-        this.v = n10;
-        this.E = nv_02;
-    }
+   @Override
+   public int hashCode() {
+      return this.b.hashCode();
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    public static L2 f(String var0) throws lq_1 {
-        var2_1 = L2.V;
-        synchronized (var2_1) {
-            block39: {
-                block44: {
-                    block46: {
-                        block47: {
-                            block45: {
-                                block57: {
-                                    block56: {
-                                        block55: {
-                                            block54: {
-                                                block43: {
-                                                    block42: {
-                                                        block50: {
-                                                            block37: {
-                                                                var1_2 = xA.P();
-                                                                var3_3 = false;
-                                                                for (L2 var5_5 : L2.Y.values()) {
-                                                                    block38: {
-                                                                        block36: {
-                                                                            block48: {
-                                                                                v0 = var5_5;
-                                                                                if (var1_2 == null) break block36;
-                                                                                v1 = v0.U().equals(var0);
-                                                                                if (var1_2 == null) break block37;
-                                                                                break block48;
-                                                                                catch (lq_1 v2) {
-                                                                                    throw L2.a(v2);
-                                                                                }
-                                                                            }
-                                                                            try {
-                                                                                block49: {
-                                                                                    if (!v1) break block38;
-                                                                                    break block49;
-                                                                                    catch (lq_1 v3) {
-                                                                                        throw L2.a(v3);
-                                                                                    }
-                                                                                }
-                                                                                v0 = var5_5;
-                                                                            }
-                                                                            catch (lq_1 v4) {
-                                                                                throw L2.a(v4);
-                                                                            }
-                                                                        }
-                                                                        return v0;
-                                                                    }
-                                                                    if (var1_2 != null) continue;
-                                                                }
-                                                                v1 = var3_3;
-                                                            }
-                                                            if (!v1) break block50;
-                                                            var4_4 = L2.N();
-                                                            while (var4_4.hasMoreElements()) {
-                                                                block41: {
-                                                                    block40: {
-                                                                        block51: {
-                                                                            var5_5 = (L2)var4_4.nextElement();
-                                                                            if (var1_2 == null) break block39;
-                                                                            v5 = var5_5;
-                                                                            if (var1_2 == null) break block40;
-                                                                            break block51;
-                                                                            catch (lq_1 v6) {
-                                                                                throw L2.a(v6);
-                                                                            }
-                                                                        }
-                                                                        try {
-                                                                            block52: {
-                                                                                if (!v5.U().equals(var0)) break block41;
-                                                                                break block52;
-                                                                                catch (lq_1 v7) {
-                                                                                    throw L2.a(v7);
-                                                                                }
-                                                                            }
-                                                                            v5 = var5_5;
-                                                                        }
-                                                                        catch (lq_1 v8) {
-                                                                            throw L2.a(v8);
-                                                                        }
-                                                                    }
-                                                                    return v5;
-                                                                }
-                                                                if (var1_2 != null) continue;
-                                                                break block39;
-                                                            }
-                                                            break block39;
-                                                        }
-                                                        var4_4 = (L2)L2.C.get(var0);
-                                                        v9 = var4_4;
-                                                        if (var1_2 == null) break block42;
-                                                        try {
-                                                            block53: {
-                                                                if (v9 == null) break block43;
-                                                                break block53;
-                                                                catch (lq_1 v10) {
-                                                                    throw L2.a(v10);
-                                                                }
-                                                            }
-                                                            v9 = var4_4;
-                                                        }
-                                                        catch (lq_1 v11) {
-                                                            throw L2.a(v11);
-                                                        }
-                                                    }
-                                                    return v9;
-                                                }
-                                                var5_6 = jtermios.j.D(var0, jtermios.j.HV | jtermios.j.z | jtermios.j.J);
-                                                v12 = var5_6;
-                                                v13 = -1;
-                                                if (var1_2 == null) break block44;
-                                                if (v12 == v13) ** GOTO lbl128
-                                                break block54;
-                                                catch (lq_1 v14) {
-                                                    throw L2.a(v14);
-                                                }
-                                            }
-                                            v15 = jtermios.j.T(var5_6, new X());
-                                            if (var1_2 == null) break block45;
-                                            break block55;
-                                            catch (lq_1 v16) {
-                                                throw L2.a(v16);
-                                            }
-                                        }
-                                        if (v15 != -1) ** GOTO lbl116
-                                        break block56;
-                                        catch (lq_1 v17) {
-                                            throw L2.a(v17);
-                                        }
-                                    }
-                                    v18 = jtermios.j.z();
-                                    if (var1_2 == null) break block46;
-                                    break block57;
-                                    catch (lq_1 v19) {
-                                        throw L2.a(v19);
-                                    }
-                                }
-                                try {
-                                    block58: {
-                                        if (v18 == jtermios.j.K) break block47;
-                                        break block58;
-                                        catch (lq_1 v20) {
-                                            throw L2.a(v20);
-                                        }
-                                    }
-                                    v15 = jtermios.j.m(var5_6);
-                                }
-                                catch (lq_1 v21) {
-                                    throw L2.a(v21);
-                                }
-                            }
-                            return new L2(var0, 1, null);
-                        }
-                        v18 = jtermios.j.m(var5_6);
-                    }
-                    try {
-                        if (var1_2 != null) break block39;
-lbl128:
-                        // 2 sources
+   public static void Z(String var0, int var1, nv_2 var2) {
+      synchronized (V) {
+         C.put(var0, new L2(var0, var1, var2));
+      }
+   }
 
-                        v12 = jtermios.j.z();
-                        v13 = jtermios.j.H1;
-                    }
-                    catch (lq_1 v22) {
-                        throw L2.a(v22);
-                    }
-                }
-                if (v12 != v13) {
-                    return new L2(var0, 1, null);
-                }
+   private L2(String var1, int var2, nv_2 var3) {
+      this.b = var1;
+      this.v = var2;
+      this.E = var3;
+   }
+
+   public static L2 f(String param0) throws lQ_3 {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic xA.P ()[Lcom/ky_4;
+      // 003: getstatic L2.V Ljava/lang/Object;
+      // 006: dup
+      // 007: astore 2
+      // 008: monitorenter
+      // 009: astore 1
+      // 00a: bipush 0
+      // 00b: istore 3
+      // 00c: getstatic L2.Y Ljava/util/Hashtable;
+      // 00f: invokevirtual java/util/Hashtable.values ()Ljava/util/Collection;
+      // 012: invokeinterface java/util/Collection.iterator ()Ljava/util/Iterator; 1
+      // 017: astore 4
+      // 019: aload 4
+      // 01b: invokeinterface java/util/Iterator.hasNext ()Z 1
+      // 020: ifeq 061
+      // 023: aload 4
+      // 025: invokeinterface java/util/Iterator.next ()Ljava/lang/Object; 1
+      // 02a: checkcast L2
+      // 02d: astore 5
+      // 02f: aload 5
+      // 031: aload 1
+      // 032: ifnull 05c
+      // 035: invokevirtual L2.U ()Ljava/lang/String;
+      // 038: aload 0
+      // 039: invokevirtual java/lang/String.equals (Ljava/lang/Object;)Z
+      // 03c: aload 1
+      // 03d: ifnull 062
+      // 040: goto 047
+      // 043: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 046: athrow
+      // 047: ifeq 05d
+      // 04a: goto 051
+      // 04d: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 050: athrow
+      // 051: aload 5
+      // 053: aload 2
+      // 054: monitorexit
+      // 055: goto 05c
+      // 058: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 05b: athrow
+      // 05c: areturn
+      // 05d: aload 1
+      // 05e: ifnonnull 019
+      // 061: iload 3
+      // 062: ifeq 0b5
+      // 065: invokestatic L2.N ()Ljava/util/Enumeration;
+      // 068: astore 4
+      // 06a: aload 4
+      // 06c: invokeinterface java/util/Enumeration.hasMoreElements ()Z 1
+      // 071: ifeq 0b2
+      // 074: aload 4
+      // 076: invokeinterface java/util/Enumeration.nextElement ()Ljava/lang/Object; 1
+      // 07b: checkcast L2
+      // 07e: astore 5
+      // 080: aload 1
+      // 081: ifnull 17d
+      // 084: aload 5
+      // 086: aload 1
+      // 087: ifnull 0ad
+      // 08a: goto 091
+      // 08d: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 090: athrow
+      // 091: invokevirtual L2.U ()Ljava/lang/String;
+      // 094: aload 0
+      // 095: invokevirtual java/lang/String.equals (Ljava/lang/Object;)Z
+      // 098: ifeq 0ae
+      // 09b: goto 0a2
+      // 09e: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0a1: athrow
+      // 0a2: aload 5
+      // 0a4: aload 2
+      // 0a5: monitorexit
+      // 0a6: goto 0ad
+      // 0a9: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0ac: athrow
+      // 0ad: areturn
+      // 0ae: aload 1
+      // 0af: ifnonnull 06a
+      // 0b2: goto 17d
+      // 0b5: getstatic L2.C Ljava/util/Hashtable;
+      // 0b8: aload 0
+      // 0b9: invokevirtual java/util/Hashtable.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 0bc: checkcast L2
+      // 0bf: astore 4
+      // 0c1: aload 4
+      // 0c3: aload 1
+      // 0c4: ifnull 0dc
+      // 0c7: ifnull 0dd
+      // 0ca: goto 0d1
+      // 0cd: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0d0: athrow
+      // 0d1: aload 4
+      // 0d3: aload 2
+      // 0d4: monitorexit
+      // 0d5: goto 0dc
+      // 0d8: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0db: athrow
+      // 0dc: areturn
+      // 0dd: aload 0
+      // 0de: getstatic jtermios/j.HV I
+      // 0e1: getstatic jtermios/j.z I
+      // 0e4: ior
+      // 0e5: getstatic jtermios/j.J I
+      // 0e8: ior
+      // 0e9: invokestatic jtermios/j.D (Ljava/lang/String;I)I
+      // 0ec: istore 5
+      // 0ee: iload 5
+      // 0f0: bipush -1
+      // 0f1: aload 1
+      // 0f2: ifnull 16d
+      // 0f5: if_icmpeq 160
+      // 0f8: goto 0ff
+      // 0fb: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0fe: athrow
+      // 0ff: iload 5
+      // 101: new jtermios/X
+      // 104: dup
+      // 105: invokespecial jtermios/X.<init> ()V
+      // 108: invokestatic jtermios/j.T (ILjtermios/X;)I
+      // 10b: aload 1
+      // 10c: ifnull 148
+      // 10f: goto 116
+      // 112: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 115: athrow
+      // 116: bipush -1
+      // 117: if_icmpne 13c
+      // 11a: goto 121
+      // 11d: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 120: athrow
+      // 121: invokestatic jtermios/j.z ()I
+      // 124: aload 1
+      // 125: ifnull 15b
+      // 128: goto 12f
+      // 12b: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 12e: athrow
+      // 12f: getstatic jtermios/j.K I
+      // 132: if_icmpeq 156
+      // 135: goto 13c
+      // 138: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 13b: athrow
+      // 13c: iload 5
+      // 13e: invokestatic jtermios/j.m (I)I
+      // 141: goto 148
+      // 144: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 147: athrow
+      // 148: pop
+      // 149: new L2
+      // 14c: dup
+      // 14d: aload 0
+      // 14e: bipush 1
+      // 14f: aconst_null
+      // 150: invokespecial L2.<init> (Ljava/lang/String;ILnv_2;)V
+      // 153: aload 2
+      // 154: monitorexit
+      // 155: areturn
+      // 156: iload 5
+      // 158: invokestatic jtermios/j.m (I)I
+      // 15b: pop
+      // 15c: aload 1
+      // 15d: ifnonnull 17d
+      // 160: invokestatic jtermios/j.z ()I
+      // 163: getstatic jtermios/j.H1 I
+      // 166: goto 16d
+      // 169: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 16c: athrow
+      // 16d: if_icmpeq 17d
+      // 170: new L2
+      // 173: dup
+      // 174: aload 0
+      // 175: bipush 1
+      // 176: aconst_null
+      // 177: invokespecial L2.<init> (Ljava/lang/String;ILnv_2;)V
+      // 17a: aload 2
+      // 17b: monitorexit
+      // 17c: areturn
+      // 17d: new lQ_3
+      // 180: dup
+      // 181: invokespecial lQ_3.<init> ()V
+      // 184: athrow
+      // 185: astore 6
+      // 187: aload 2
+      // 188: monitorexit
+      // 189: aload 6
+      // 18b: athrow
+   }
+
+   public static L2 v(xA param0) throws lQ_3 {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic xA.P ()[Lcom/ky_4;
+      // 03: getstatic L2.V Ljava/lang/Object;
+      // 06: dup
+      // 07: astore 2
+      // 08: monitorenter
+      // 09: astore 1
+      // 0a: getstatic L2.Y Ljava/util/Hashtable;
+      // 0d: aload 0
+      // 0e: invokevirtual java/util/Hashtable.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 11: checkcast L2
+      // 14: astore 3
+      // 15: aload 3
+      // 16: aload 1
+      // 17: ifnull 33
+      // 1a: ifnonnull 30
+      // 1d: goto 24
+      // 20: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 23: athrow
+      // 24: new lQ_3
+      // 27: dup
+      // 28: invokespecial lQ_3.<init> ()V
+      // 2b: athrow
+      // 2c: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2f: athrow
+      // 30: aload 3
+      // 31: aload 2
+      // 32: monitorexit
+      // 33: areturn
+      // 34: astore 4
+      // 36: aload 2
+      // 37: monitorexit
+      // 38: aload 4
+      // 3a: athrow
+   }
+
+   public xA r(String param1, int param2) throws O_ {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic xA.P ()[Lcom/ky_4;
+      // 03: getstatic L2.V Ljava/lang/Object;
+      // 06: dup
+      // 07: astore 4
+      // 09: monitorenter
+      // 0a: astore 3
+      // 0b: invokestatic java/lang/System.currentTimeMillis ()J
+      // 0e: lstore 5
+      // 10: getstatic L2.L Ljava/util/Hashtable;
+      // 13: aload 0
+      // 14: invokevirtual java/util/Hashtable.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 17: checkcast java/lang/String
+      // 1a: astore 7
+      // 1c: aload 7
+      // 1e: ifnull 5b
+      // 21: aload 0
+      // 22: bipush 3
+      // 23: invokespecial L2.X (I)V
+      // 26: goto 2d
+      // 29: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2c: athrow
+      // 2d: invokestatic java/lang/System.currentTimeMillis ()J
+      // 30: lload 5
+      // 32: lsub
+      // 33: iload 2
+      // 34: i2l
+      // 35: lcmp
+      // 36: ifge 50
+      // 39: getstatic L2.V Ljava/lang/Object;
+      // 3c: getstatic L2.c J
+      // 3f: invokevirtual java/lang/Object.wait (J)V
+      // 42: aload 0
+      // 43: invokevirtual L2.N ()Z
+      // 46: ifne 2d
+      // 49: aload 3
+      // 4a: ifnull 42
+      // 4d: goto 50
+      // 50: goto 5b
+      // 53: astore 8
+      // 55: invokestatic java/lang/Thread.currentThread ()Ljava/lang/Thread;
+      // 58: invokevirtual java/lang/Thread.interrupt ()V
+      // 5b: aload 0
+      // 5c: aload 3
+      // 5d: ifnull 8a
+      // 60: invokevirtual L2.N ()Z
+      // 63: ifeq 7d
+      // 66: goto 6d
+      // 69: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 6c: athrow
+      // 6d: new O_
+      // 70: dup
+      // 71: aload 0
+      // 72: invokevirtual L2.x ()Ljava/lang/String;
+      // 75: invokespecial O_.<init> (Ljava/lang/String;)V
+      // 78: athrow
+      // 79: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 7c: athrow
+      // 7d: getstatic L2.C Ljava/util/Hashtable;
+      // 80: aload 0
+      // 81: getfield L2.b Ljava/lang/String;
+      // 84: invokevirtual java/util/Hashtable.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 87: checkcast L2
+      // 8a: astore 8
+      // 8c: aload 8
+      // 8e: aload 3
+      // 8f: ifnull 9e
+      // 92: ifnull b5
+      // 95: goto 9c
+      // 98: invokestatic L2.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 9b: athrow
+      // 9c: aload 8
+      // 9e: getfield L2.E Lnv_2;
+      // a1: aload 0
+      // a2: getfield L2.b Ljava/lang/String;
+      // a5: aload 8
+      // a7: getfield L2.v I
+      // aa: invokeinterface nv_2.E (Ljava/lang/String;I)LxA; 3
+      // af: astore 9
+      // b1: aload 3
+      // b2: ifnonnull c3
+      // b5: new x3
+      // b8: dup
+      // b9: aload 0
+      // ba: getfield L2.b Ljava/lang/String;
+      // bd: iload 2
+      // be: invokespecial x3.<init> (Ljava/lang/String;I)V
+      // c1: astore 9
+      // c3: getstatic L2.Y Ljava/util/Hashtable;
+      // c6: aload 9
+      // c8: aload 0
+      // c9: invokevirtual java/util/Hashtable.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      // cc: pop
+      // cd: getstatic L2.L Ljava/util/Hashtable;
+      // d0: aload 0
+      // d1: aload 1
+      // d2: invokevirtual java/util/Hashtable.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      // d5: pop
+      // d6: aload 0
+      // d7: bipush 1
+      // d8: invokespecial L2.X (I)V
+      // db: aload 9
+      // dd: aload 4
+      // df: monitorexit
+      // e0: areturn
+      // e1: astore 10
+      // e3: aload 4
+      // e5: monitorexit
+      // e6: aload 10
+      // e8: athrow
+   }
+
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   static void B(xA var0) {
+      com.ky_4[] var10000 = xA.P();
+      Object var2 = V;
+      synchronized (V){} // $VF: monitorenter 
+      com.ky_4[] var1 = var10000;
+
+      try {
+         L2 var3 = (L2)Y.remove(var0);
+         var10000 = var3;
+         if (var1 != null) {
+            if (var3 != null) {
+               var3.X(2);
+               L.remove(var3);
             }
-            throw new lq_1();
-        }
-    }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     * Loose catch block
-     */
-    public static L2 v(xA xA2) throws lq_1 {
-        Object object = V;
-        synchronized (object) {
-            L2 l2;
-            block7: {
-                L2 l22;
-                block8: {
-                    ky_2[] ky_2Array = xA.P();
-                    l22 = (L2)Y.get(xA2);
-                    l2 = l22;
-                    if (ky_2Array == null) break block7;
-                    try {
-                        block9: {
-                            if (l2 != null) break block8;
-                            break block9;
-                            catch (lq_1 lq_12) {
-                                throw L2.a(lq_12);
-                            }
-                        }
-                        throw new lq_1();
-                    }
-                    catch (lq_1 lq_13) {
-                        throw L2.a(lq_13);
-                    }
-                }
-                l2 = l22;
-            }
-            return l2;
-        }
-    }
+            var10000 = (com.ky_4[])var2;
+         }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     * Loose catch block
-     */
-    public xA r(String string, int n10) throws O_ {
-        Object object = V;
-        synchronized (object) {
-            xA xA2;
-            block23: {
-                block21: {
-                    L2 l2;
-                    L2 l22;
-                    ky_2[] ky_2Array;
-                    block20: {
-                        L2 l23;
-                        block18: {
-                            block19: {
-                                block17: {
-                                    ky_2Array = xA.P();
-                                    long l3 = System.currentTimeMillis();
-                                    String string2 = (String)L.get(this);
-                                    try {
-                                        if (string2 == null) break block17;
-                                        this.X(3);
-                                    }
-                                    catch (InterruptedException interruptedException) {
-                                        throw L2.a(interruptedException);
-                                    }
-                                    try {
-                                        while (System.currentTimeMillis() - l3 < (long)n10) {
-                                            V.wait(c);
-                                            while (!this.N()) {
-                                                if (ky_2Array == null) continue;
-                                                break block17;
-                                            }
-                                        }
-                                    }
-                                    catch (InterruptedException interruptedException) {
-                                        Thread.currentThread().interrupt();
-                                    }
-                                }
-                                l23 = this;
-                                if (ky_2Array == null) break block18;
-                                try {
-                                    block22: {
-                                        if (!l23.N()) break block19;
-                                        break block22;
-                                        catch (InterruptedException interruptedException) {
-                                            throw L2.a(interruptedException);
-                                        }
-                                    }
-                                    throw new O_(this.x());
-                                }
-                                catch (InterruptedException interruptedException) {
-                                    throw L2.a(interruptedException);
-                                }
-                            }
-                            l23 = (L2)C.get(this.b);
-                        }
-                        l22 = l23;
-                        try {
-                            l2 = l22;
-                            if (ky_2Array == null) break block20;
-                            if (l2 == null) break block21;
-                        }
-                        catch (InterruptedException interruptedException) {
-                            throw L2.a(interruptedException);
-                        }
-                        l2 = l22;
-                    }
-                    xA2 = l2.E.E(this.b, l22.v);
-                    if (ky_2Array != null) break block23;
-                }
-                xA2 = new x3(this.b, n10);
-            }
-            Y.put(xA2, this);
-            L.put(this, string);
-            this.X(1);
-            return xA2;
-        }
-    }
+         // $VF: monitorexit
+      } finally {
+         // $VF: monitorexit
+      }
+   }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    static void B(xA xA2) {
-        Object object = V;
-        synchronized (object) {
-            ky_2[] ky_2Array = xA.P();
-            L2 l2 = (L2)Y.remove(xA2);
-            Object object2 = l2;
-            if (ky_2Array != null) {
-                if (object2 != null) {
-                    l2.X(2);
-                    L.remove(l2);
-                }
-                object2 = object;
+   public xA K(FileDescriptor var1) throws mw_2 {
+      throw new mw_2(a);
+   }
+
+   public String U() {
+      return this.b;
+   }
+
+   public int r() {
+      return this.v;
+   }
+
+   public static Enumeration N() {
+      synchronized (V) {
+         return new YG();
+      }
+   }
+
+   public String x() {
+      synchronized (V) {
+         return (String)L.get(this);
+      }
+   }
+
+   public boolean N$boolean() {
+      return this.x() != null;
+   }
+
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   public void x(Ob_2 var1) {
+      com.ky_4[] var10000 = xA.P();
+      Object var3 = V;
+      synchronized (V){} // $VF: monitorenter 
+      com.ky_4[] var2 = var10000;
+
+      try {
+         Object var4 = (List)this.j.get(this);
+         var10000 = (com.ky_4[])var4;
+         if (var2 != null) {
+            if (var4 == null) {
+               var4 = new LinkedList();
+               this.j.put(this, var4);
             }
-            // ** MonitorExit[v0] (shouldn't be in output)
+
+            var4.add(var1);
+            var10000 = (com.ky_4[])var3;
+         }
+
+         // $VF: monitorexit
+      } finally {
+         // $VF: monitorexit
+      }
+   }
+
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   public void Q(Ob_2 var1) {
+      com.ky_4[] var10000 = xA.P();
+      Object var3 = V;
+      synchronized (V){} // $VF: monitorenter 
+      com.ky_4[] var2 = var10000;
+
+      try {
+         List var4 = (List)this.j.get(this);
+         var10000 = var4;
+         if (var2 != null) {
+            if (var4 == null) {
+               // $VF: monitorexit
+               return;
+            }
+
+            var4.remove(var1);
+            var10000 = var4;
+         }
+
+         if (var2 != null) {
+            if (var10000.isEmpty()) {
+               this.j.remove(this);
+            }
+
+            var10000 = (com.ky_4[])var3;
+         }
+
+         // $VF: monitorexit
+      } finally {
+         // $VF: monitorexit
+      }
+   }
+
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   private void X(int var1) {
+      com.ky_4[] var10000 = xA.P();
+      Object var3 = V;
+      synchronized (V){} // $VF: monitorenter 
+      com.ky_4[] var2 = var10000;
+
+      try {
+         List var4 = (List)this.j.get(this);
+         List var10 = var4;
+         if (var2 != null) {
+            if (var4 == null) {
+               // $VF: monitorexit
+               return;
+            }
+
+            var10 = var4;
+         }
+
+         Iterator var5 = var10.iterator();
+
+         while (true) {
+            if (var5.hasNext()) {
+               Ob_2 var6 = (Ob_2)var5.next();
+               var6.o(var1);
+               if (var2 == null) {
+                  break;
+               }
+
+               if (var2 != null) {
+                  continue;
+               }
+            }
+
+            // $VF: monitorexit
+            break;
+         }
+      } finally {
+         // $VF: monitorexit
+      }
+   }
+
+   static Hashtable X() {
+      return C;
+   }
+
+   L2(String var1, int var2, nv_2 var3, YG var4) {
+      this(var1, var2, var3);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = " $21xrd 9w91xso02,;f\u007f? 8-xzy;t$*(dy= 2;".toCharArray();
+      int var10004 = var10003.length;
+      int var2 = 0;
+      byte var13 = 92;
+      char[] var10002 = var10003;
+      int var4 = var10004;
+      char[] var17;
+      byte var21;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var17 = var10003;
+         var10005 = var2;
+         char var10008 = var10003[var2];
+         var10007 = 92;
+         var10006 = var10008;
+         switch (var2 % 7) {
+            case 0:
+               var21 = 19;
+               break;
+            case 1:
+               var21 = 8;
+               break;
+            case 2:
+               var21 = 11;
+               break;
+            case 3:
+               var21 = 3;
+               break;
+            case 4:
+               var21 = 4;
+               break;
+            case 5:
+               var21 = 72;
+               break;
+            default:
+               var21 = 74;
+         }
+      } else {
+         var13 = 92;
+         var4 = var10004;
+         if (var10004 <= var2) {
+            String var16 = new String(var10003).intern();
+            byte var8 = -1;
+            a = var16;
+            long var3 = 4492757750992385759L;
+            long var12 = 4492757750992385754L ^ var3;
+            var8 = -1;
+            c = var12;
+            V = new Object();
+            C = new Hashtable();
+            Y = new Hashtable();
+            L = new Hashtable();
             return;
-        }
-    }
+         }
 
-    public xA K(FileDescriptor fileDescriptor) throws mw_0 {
-        throw new mw_0(a);
-    }
+         var17 = var10003;
+         var10005 = var2;
+         char var22 = var10003[var2];
+         var10007 = 92;
+         var10006 = var22;
+         switch (var2 % 7) {
+            case 0:
+               var21 = 19;
+               break;
+            case 1:
+               var21 = 8;
+               break;
+            case 2:
+               var21 = 11;
+               break;
+            case 3:
+               var21 = 3;
+               break;
+            case 4:
+               var21 = 4;
+               break;
+            case 5:
+               var21 = 72;
+               break;
+            default:
+               var21 = 74;
+         }
+      }
 
-    public String U() {
-        return this.b;
-    }
-
-    public int r() {
-        return this.v;
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public static Enumeration N() {
-        Object object = V;
-        synchronized (object) {
-            return new YG();
-        }
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public String x() {
-        Object object = V;
-        synchronized (object) {
-            return (String)L.get(this);
-        }
-    }
-
-    public boolean N() {
-        return this.x() != null;
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void x(ob_0 ob_02) {
-        Object object = V;
-        synchronized (object) {
-            ky_2[] ky_2Array = xA.P();
-            LinkedList<ob_0> linkedList = (LinkedList<ob_0>)this.j.get(this);
-            Object object2 = linkedList;
-            if (ky_2Array != null) {
-                if (object2 == null) {
-                    linkedList = new LinkedList<ob_0>();
-                    this.j.put(this, linkedList);
-                }
-                linkedList.add(ob_02);
-                object2 = object;
+      while (true) {
+         var17[var10005] = (char)(var10006 ^ var10007 ^ var21);
+         var2++;
+         if (var13 == 0) {
+            var17 = var10002;
+            var10005 = var13;
+            char var24 = var10002[var13];
+            var10007 = var13;
+            var10006 = var24;
+            switch (var2 % 7) {
+               case 0:
+                  var21 = 19;
+                  break;
+               case 1:
+                  var21 = 8;
+                  break;
+               case 2:
+                  var21 = 11;
+                  break;
+               case 3:
+                  var21 = 3;
+                  break;
+               case 4:
+                  var21 = 4;
+                  break;
+               case 5:
+                  var21 = 72;
+                  break;
+               default:
+                  var21 = 74;
             }
-            // ** MonitorExit[v0] (shouldn't be in output)
-            return;
-        }
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void Q(ob_0 ob_02) {
-        Object object = V;
-        synchronized (object) {
-            ky_2[] ky_2Array = xA.P();
-            List list = (List)this.j.get(this);
-            Object object2 = list;
-            if (ky_2Array != null) {
-                if (object2 == null) {
-                    return;
-                }
-                list.remove(ob_02);
-                object2 = list;
+         } else {
+            if (var4 <= var2) {
+               String var15 = new String(var10002).intern();
+               byte var6 = -1;
+               a = var15;
+               long var0 = 4492757750992385759L;
+               long var11 = 4492757750992385754L ^ var0;
+               var6 = -1;
+               c = var11;
+               V = new Object();
+               C = new Hashtable();
+               Y = new Hashtable();
+               L = new Hashtable();
+               return;
             }
-            if (ky_2Array != null) {
-                if (object2.isEmpty()) {
-                    this.j.remove(this);
-                }
-                object2 = object;
+
+            var17 = var10002;
+            var10005 = var2;
+            char var23 = var10002[var2];
+            var10007 = var13;
+            var10006 = var23;
+            switch (var2 % 7) {
+               case 0:
+                  var21 = 19;
+                  break;
+               case 1:
+                  var21 = 8;
+                  break;
+               case 2:
+                  var21 = 11;
+                  break;
+               case 3:
+                  var21 = 3;
+                  break;
+               case 4:
+                  var21 = 4;
+                  break;
+               case 5:
+                  var21 = 72;
+                  break;
+               default:
+                  var21 = 74;
             }
-            // ** MonitorExit[v0] (shouldn't be in output)
-            return;
-        }
-    }
+         }
+      }
+   }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    private void X(int n10) {
-        Object object = V;
-        synchronized (object) {
-            List list;
-            ky_2[] ky_2Array = xA.P();
-            List list2 = list = (List)this.j.get(this);
-            if (ky_2Array != null) {
-                if (list2 == null) {
-                    return;
-                }
-                list2 = list;
-            }
-            for (ob_0 ob_02 : list2) {
-                ob_02.o(n10);
-                if (ky_2Array != null) {
-                    if (ky_2Array != null) continue;
-                }
-                break;
-            }
-            return;
-        }
-    }
-
-    static Hashtable X() {
-        return C;
-    }
-
-    L2(String string, int n10, nv_0 nv_02, YG yG) {
-        this(string, n10, nv_02);
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = " $21xrd 9w91xso02,;f\u007f? 8-xzy;t$*(dy= 2;".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 92;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 19;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 8;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 11;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 3;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 4;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 72;
-                            break;
-                        }
-                        default: {
-                            n17 = 74;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        long l2 = 4492757750992385759L;
-        c = 0x3E597B5EF1C8B6DAL ^ l2;
-        V = new Object();
-        C = new Hashtable();
-        Y = new Hashtable();
-        L = new Hashtable();
-    }
-
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+   private static Exception a(Exception var0) {
+      return var0;
+   }
 }
+
+
+
+
 

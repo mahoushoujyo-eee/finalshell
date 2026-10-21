@@ -1,54 +1,50 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
 import org.I;
-import org.v.NV;
-import org.v._4;
-import org.v._w_0;
 
-public abstract class NR
-extends NV {
-    private static boolean v;
+public abstract class NR extends NV {
+   private static boolean v;
 
-    protected NR(I i2) {
-        super(i2);
-    }
+   protected NR(I var1) {
+      super(var1);
+   }
 
-    @Override
-    @c
-    public NR v() {
-        return this;
-    }
+   @org.F.c
+   @Override
+   public NR v() {
+      return this;
+   }
 
-    @c
-    public abstract Object W(_4 var1) throws Throwable;
+   @org.F.c
+   public abstract Object W(_4 var1) throws Throwable;
 
-    @Override
-    @c
-    public final Object i(_w_0 _w_02) throws Throwable {
-        return _w_02.d(this);
-    }
+   @org.F.c
+   @Override
+   public final Object i(_w_2 var1) throws Throwable {
+      return var1.d(this);
+   }
 
-    public static void S(boolean bl) {
-        v = bl;
-    }
+   public static void S(boolean var0) {
+      v = var0;
+   }
 
-    public static boolean k() {
-        return v;
-    }
+   public static boolean k() {
+      return v;
+   }
 
-    public static boolean Q() {
-        boolean bl = NR.k();
-        return !bl;
-    }
+   public static boolean Q() {
+      boolean var0 = k();
+      return !var0;
+   }
 
-    static {
-        if (NR.k()) {
-            NR.S(true);
-        }
-    }
+   static {
+      if (k()) {
+         S(true);
+      }
+   }
 }
+
+
+
+
 

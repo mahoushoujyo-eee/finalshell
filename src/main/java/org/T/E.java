@@ -1,44 +1,41 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.T;
 
-import org.F.c;
-
 public final class E {
-    private E() {
-    }
+   private E() {
+   }
 
-    public static boolean Q(Class clazz, String string) {
-        return E.o(clazz, string, false);
-    }
+   public static boolean Q(Class var0, String var1) {
+      return o(var0, var1, false);
+   }
 
-    public static boolean o(Class clazz, String string, boolean bl) {
-        String string2 = E.T(clazz, string);
-        return string2 != null ? Boolean.parseBoolean(string2) : bl;
-    }
+   public static boolean o(Class var0, String var1, boolean var2) {
+      String var3 = T(var0, var1);
+      return var3 != null ? Boolean.parseBoolean(var3) : var2;
+   }
 
-    public static int V(Class clazz, String string, int n10) {
-        String string2 = E.T(clazz, string);
-        return string2 != null ? Integer.parseInt(string2) : n10;
-    }
+   public static int V(Class var0, String var1, int var2) {
+      String var3 = T(var0, var1);
+      return var3 != null ? Integer.parseInt(var3) : var2;
+   }
 
-    @c
-    public static String T(Class clazz, String string) {
-        return E.g(clazz, string, null);
-    }
+   @org.F.c
+   public static String T(Class var0, String var1) {
+      return g(var0, var1, null);
+   }
 
-    @c
-    public static String g(Class clazz, String string, @c String string2) {
-        String string3 = System.getProperty(clazz.getName() + "." + string);
-        if (string3 != null) {
-            return string3;
-        }
-        string3 = System.getProperty(clazz.getSimpleName() + "." + string);
-        if (string3 != null) {
-            return string3;
-        }
-        return string2;
-    }
+   @org.F.c
+   public static String g(Class var0, String var1, @org.F.c String var2) {
+      String var3 = System.getProperty(var0.getName() + "." + var1);
+      if (var3 != null) {
+         return var3;
+      } else {
+         var3 = System.getProperty(var0.getSimpleName() + "." + var1);
+         return var3 != null ? var3 : var2;
+      }
+   }
 }
+
+
+
+
 

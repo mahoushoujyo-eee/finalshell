@@ -1,37 +1,36 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.bq_0;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-class GL
-implements DocumentListener {
-    final bq_0 p;
+class GL implements DocumentListener {
+   final com.Bq_2 p;
 
-    GL(bq_0 bq_02) {
-        this.p = bq_02;
-    }
+   GL(com.Bq_2 var1) {
+      this.p = var1;
+   }
 
-    @Override
-    public void insertUpdate(DocumentEvent documentEvent) {
-        this.g();
-    }
+   @Override
+   public void insertUpdate(DocumentEvent var1) {
+      this.g();
+   }
 
-    @Override
-    public void removeUpdate(DocumentEvent documentEvent) {
-        this.g();
-    }
+   @Override
+   public void removeUpdate(DocumentEvent var1) {
+      this.g();
+   }
 
-    @Override
-    public void changedUpdate(DocumentEvent documentEvent) {
-        this.g();
-    }
+   @Override
+   public void changedUpdate(DocumentEvent var1) {
+      this.g();
+   }
 
-    private void g() {
-        this.p.s();
-    }
+   private void g() {
+      this.p.s();
+   }
 }
+
+
+
+
 

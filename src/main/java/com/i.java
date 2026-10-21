@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.IY;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
-class i
-implements ItemListener {
-    final IY o;
+class i implements ItemListener {
+   final IY o;
 
-    i(IY iY) {
-        this.o = iY;
-    }
+   i(IY var1) {
+      this.o = var1;
+   }
 
-    @Override
-    public void itemStateChanged(ItemEvent itemEvent) {
-        this.o.M();
-    }
+   @Override
+   public void itemStateChanged(ItemEvent var1) {
+      this.o.M();
+   }
 }
+
+
+
+
 

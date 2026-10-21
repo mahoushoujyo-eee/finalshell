@@ -1,22 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import com.dy_1;
+class xV implements Runnable {
+   final com.dY_3 j;
+   final zD C;
 
-class xV
-implements Runnable {
-    final dy_1 j;
-    final zD C;
+   xV(zD var1, com.dY_3 var2) {
+      this.C = var1;
+      this.j = var2;
+   }
 
-    xV(zD zD2, dy_1 dy_12) {
-        this.C = zD2;
-        this.j = dy_12;
-    }
-
-    @Override
-    public void run() {
-        ((dy_1)this.j).r();
-    }
+   @Override
+   public void run() {
+      ((com.dY_3)com.c.c(193253502925062823L).get(this)).r();
+   }
 }
+
+
+
+
 

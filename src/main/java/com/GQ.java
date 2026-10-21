@@ -1,142 +1,114 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-public final class GQ
-extends Enum {
-    public static final GQ root;
-    public static final GQ folder;
-    public static final GQ leaf;
-    private static final /* synthetic */ GQ[] s;
-    private static String[] u;
+public enum GQ {
+   root, folder, leaf;
+   private static String[] u;
 
-    public static GQ[] values() {
-        return (GQ[])s.clone();
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var0 = new String[3];
+      String[] var10000 = new String[4];
+      int var4 = 0;
+      String var3 = "QjZT\u0006EjYD%\"\u0004O`TF";
+      int var5 = "QjZT\u0006EjYD%\"\u0004O`TF".length();
+      w(var10000);
+      char var2 = 4;
+      int var1 = -1;
 
-    public static GQ valueOf(String string) {
-        return Enum.valueOf(GQ.class, string);
-    }
+      while (true) {
+         char[] var10002;
+         label39: {
+            char[] var10003 = var3.substring(++var1, var1 + var2).toCharArray();
+            int var10004 = var10003.length;
+            int var6 = 0;
+            byte var13 = 40;
+            var10002 = var10003;
+            int var8 = var10004;
+            byte var16;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var16 = 40;
+               var10006 = var6;
+            } else {
+               var13 = 40;
+               var8 = var10004;
+               if (var10004 <= var6) {
+                  break label39;
+               }
 
-    /*
-     * WARNING - Possible parameter corruption
-     * WARNING - void declaration
-     */
-    private GQ() {
-        void var2_-1;
-        void var1_-1;
-    }
-
-    private static /* synthetic */ GQ[] v() {
-        return new GQ[]{root, folder, leaf};
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block13: {
-            var0 = new String[3];
-            var4_1 = 0;
-            var3_2 = "QjZT\u0006EjYD%\"\u0004O`TF";
-            var5_3 = "QjZT\u0006EjYD%\"\u0004O`TF".length();
-            GQ.w(new String[4]);
-            var2_4 = 4;
-            var1_5 = -1;
-lbl8:
-            // 2 sources
+               var10005 = var10003;
+               var16 = 40;
+               var10006 = var6;
+            }
 
             while (true) {
-                continue;
-                break;
+               char var28 = var10005[var10006];
+               byte var29;
+               switch (var6 % 7) {
+                  case 0:
+                     var29 = 11;
+                     break;
+                  case 1:
+                     var29 = 45;
+                     break;
+                  case 2:
+                     var29 = 29;
+                     break;
+                  case 3:
+                     var29 = 8;
+                     break;
+                  case 4:
+                     var29 = 104;
+                     break;
+                  case 5:
+                     var29 = 120;
+                     break;
+                  default:
+                     var29 = 13;
+               }
+
+               var10005[var10006] = (char)(var28 ^ var16 ^ var29);
+               var6++;
+               if (var13 == 0) {
+                  var10006 = var13;
+                  var10005 = var10002;
+                  var16 = var13;
+               } else {
+                  if (var8 <= var6) {
+                     break;
+                  }
+
+                  var10005 = var10002;
+                  var16 = var13;
+                  var10006 = var6;
+               }
             }
-lbl10:
-            // 1 sources
+         }
 
-            while (true) {
-                var0[var4_1++] = new String(v0).intern();
-                if ((var1_5 += var2_4) < var5_3) {
-                    var2_4 = var3_2.charAt(var1_5);
-                    ** continue;
-                }
-                break block13;
-                break;
-            }
-            v1 = ++var1_5;
-            v2 = var3_2.substring(v1, v1 + var2_4).toCharArray();
-            v3 = v2.length;
-            var6_6 = 0;
-            v4 = 40;
-            v5 = v2;
-            v6 = v3;
-            if (v3 > 1) ** GOTO lbl68
-            do {
-                v7 = v4;
-                v5 = v5;
-                v8 = v5;
-                v9 = v4;
-                v10 = var6_6;
-                while (true) {
-                    switch (var6_6 % 7) {
-                        case 0: {
-                            v11 = 11;
-                            break;
-                        }
-                        case 1: {
-                            v11 = 45;
-                            break;
-                        }
-                        case 2: {
-                            v11 = 29;
-                            break;
-                        }
-                        case 3: {
-                            v11 = 8;
-                            break;
-                        }
-                        case 4: {
-                            v11 = 104;
-                            break;
-                        }
-                        case 5: {
-                            v11 = 120;
-                            break;
-                        }
-                        default: {
-                            v11 = 13;
-                        }
-                    }
-                    v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                    ++var6_6;
-                    v4 = v7;
-                    if (v7 != 0) break;
-                    v7 = v4;
-                    v5 = v5;
-                    v10 = v4;
-                    v8 = v5;
-                    v9 = v4;
-                }
-lbl68:
-                // 2 sources
+         String var15 = new String(var10002).intern();
+         byte var10 = -1;
+         var0[var4++] = var15;
+         if ((var1 += var2) >= var5) {
+            return;
+         }
 
-                v0 = v5;
-                v6 = v6;
-            } while (v6 > var6_6);
-            ** while (true)
-        }
-        GQ.root = new GQ(var0[0], 0);
-        GQ.folder = new GQ(var0[1], 1);
-        GQ.leaf = new GQ(var0[2], 2);
-        GQ.s = GQ.v();
-    }
+         var2 = var3.charAt(var1);
+      }
+   }
 
-    public static void w(String[] stringArray) {
-        u = stringArray;
-    }
+   public static void w(String[] var0) {
+      u = var0;
+   }
 
-    public static String[] W() {
-        return u;
-    }
+   public static String[] W() {
+      return u;
+   }
 }
+
+
+
+
+
 

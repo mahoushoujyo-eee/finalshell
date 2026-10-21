@@ -1,47 +1,45 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.j_0;
-import com.pa_1;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 
-class XC
-implements D2 {
-    final Color A;
-    final Font X;
-    final int s;
-    final int D;
-    final j_0 l;
-    final j_0 M;
-    final int b;
-    final int E;
-    final pa_1 p;
+class XC implements D2 {
+   final Color A;
+   final Font X;
+   final int s;
+   final int D;
+   final j_2 l;
+   final j_2 M;
+   final int b;
+   final int E;
+   final pA_3 p;
 
-    XC(pa_1 pa_12, Color color, Font font, int n10, int n11, j_0 j_02, j_0 j_03, int n12, int n13) {
-        this.p = pa_12;
-        this.A = color;
-        this.X = font;
-        this.s = n10;
-        this.D = n11;
-        this.l = j_02;
-        this.M = j_03;
-        this.b = n12;
-        this.E = n13;
-    }
+   XC(pA_3 var1, Color var2, Font var3, int var4, int var5, j_2 var6, j_2 var7, int var8, int var9) {
+      this.p = var1;
+      this.A = var2;
+      this.X = var3;
+      this.s = var4;
+      this.D = var5;
+      this.l = var6;
+      this.M = var7;
+      this.b = var8;
+      this.E = var9;
+   }
 
-    @Override
-    public void h(Graphics graphics) {
-        Graphics2D graphics2D = (Graphics2D)graphics;
-        graphics2D.setColor(this.A);
-        graphics2D.setFont(this.X);
-        int n10 = this.s + this.D;
-        graphics2D.drawChars(this.l.r(), this.M.o() + this.b, this.E, this.D + this.p.U, n10);
-        graphics2D.dispose();
-    }
+   @Override
+   public void h(Graphics var1) {
+      Graphics2D var2 = (Graphics2D)var1;
+      var2.setColor(this.A);
+      var2.setFont(this.X);
+      int var3 = this.s + this.D;
+      var2.drawChars(this.l.r(), this.M.o() + this.b, this.E, this.D + this.p.U, var3);
+      var2.dispose();
+   }
 }
+
+
+
+
 

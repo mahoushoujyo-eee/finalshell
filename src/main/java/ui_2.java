@@ -1,28 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-/*
- * Renamed from ui
- */
-class ui_2
-implements Runnable {
-    final zD q;
+class Ui_2 implements ActionListener {
+   final VN u;
 
-    ui_2(zD zD2) {
-        this.q = zD2;
-    }
+   Ui_2(VN var1) {
+      this.u = var1;
+   }
 
-    @Override
-    public void run() {
-        try {
-            this.q.s();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      Method var10000 = (Method)com.c.c(388376917454860932L).get(null);
+      Object[] var10001 = com.c.a(new n7(this));
+      Method var10003 = com.c.d(434592463220957006L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
+
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
 }
+
+
+
+
 

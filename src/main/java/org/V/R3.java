@@ -1,37 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
 import org.I;
-import org.v.NV;
-import org.v.RQ;
-import org.v.fY;
-import org.v.rx_0;
 
-public class R3
-extends RQ {
-    public final NV S;
+public class R3 extends RQ {
+   public final NV S;
 
-    public R3(I i2, NV nV2) {
-        super(i2);
-        this.S = nV2;
-    }
+   public R3(I var1, NV var2) {
+      super(var1);
+      this.S = var2;
+   }
 
-    @Override
-    public void e(rx_0 rx_02) {
-        this.S.d(rx_02);
-    }
+   @Override
+   public void e(Rx_2 var1) {
+      this.S.d(var1);
+   }
 
-    @Override
-    @c
-    public Object R(fY fY2) throws Throwable {
-        return fY2.S(this);
-    }
+   @org.F.c
+   @Override
+   public Object R(fY var1) throws Throwable {
+      return var1.S(this);
+   }
 
-    public String toString() {
-        return this.S.toString();
-    }
+   @Override
+   public String toString() {
+      return this.S.toString();
+   }
 }
+
+
+
+
 

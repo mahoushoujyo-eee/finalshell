@@ -1,56 +1,52 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.cb_1;
-import com.ux_0;
-import com.zn_0;
 import java.util.List;
 
-class DY
-implements Runnable {
-    final List T;
-    final List w;
-    final cb_1 x;
-    final zn_0 t;
+class DY implements Runnable {
+   final List T;
+   final List w;
+   final com.cB_3 x;
+   final com.zn_2 t;
 
-    DY(zn_0 zn_02, List list, List list2, cb_1 cb_12) {
-        this.t = zn_02;
-        this.T = list;
-        this.w = list2;
-        this.x = cb_12;
-    }
+   DY(com.zn_2 var1, List var2, List var3, com.cB_3 var4) {
+      this.t = var1;
+      this.T = var2;
+      this.w = var3;
+      this.x = var4;
+   }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    @Override
-    public void run() {
-        Object object;
-        block7: {
-            block8: {
-                String[] stringArray = cb_1.C();
-                object = this.T;
-                if (stringArray == null) break block7;
-                if (object == null) break block8;
-                object = this.T;
-                if (stringArray == null) break block7;
-                if (object.size() > 0) {
-                    this.t.N(this.w, false);
-                    this.t.o(this.T, this.x, 0);
-                }
+   @Override
+   public void run() {
+      Object var10000;
+      String[] var1 = com.cB_3.C();
+      var10000 = this.T;
+      label27:
+      if (var1 != null) {
+         if (this.T != null) {
+            var10000 = this.T;
+            if (var1 == null) {
+               break label27;
             }
-            object = this.t.K;
-        }
-        List list = object;
-        synchronized (object) {
-            this.x.Y(ux_0.loaded);
-            this.t.nodeChanged(this.x);
-            // ** MonitorExit[var2_2] (shouldn't be in output)
-            this.t.s(this.x, this.T);
-            return;
-        }
-    }
+
+            if (this.T.size() > 0) {
+               this.t.N(this.w, false);
+               this.t.o(this.T, this.x, 0);
+            }
+         }
+
+         var10000 = this.t.K;
+      }
+
+      synchronized (var10000) {
+         this.x.Y(ux_2.loaded);
+         this.t.nodeChanged(this.x);
+      }
+
+      this.t.s(this.x, this.T);
+   }
 }
+
+
+
+
 

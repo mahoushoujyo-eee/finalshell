@@ -1,11 +1,6 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import java.awt.Button;
 import java.awt.Checkbox;
 import java.awt.CheckboxGroup;
-import java.awt.Component;
 import java.awt.Dialog;
 import java.awt.Font;
 import java.awt.Frame;
@@ -17,2688 +12,2539 @@ import java.awt.List;
 import java.awt.Panel;
 import java.awt.SystemColor;
 import java.awt.TextField;
-import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
-import java.net.UnknownHostException;
 
-public class FN
-extends Dialog
-implements WindowListener,
-ItemListener,
-ActionListener,
-Runnable {
-    TextField J;
-    TextField k;
-    TextField h;
-    TextField B;
-    TextField F;
-    Button D;
-    Button b;
-    Button j;
-    Button w;
-    Button R;
-    List Y;
-    Checkbox I;
-    Checkbox u;
-    Checkbox M;
-    Checkbox z;
-    Checkbox N;
-    Dialog X;
-    Label r;
-    String o;
-    String s;
-    String q;
-    int v;
-    Thread K;
-    CheckboxGroup c;
-    y_0 p;
-    TR W;
-    int H;
-    public static boolean g;
-    private static final String[] a;
-    private static final String[] d;
-    private static final long[] e;
-    private static final Integer[] f;
+public class FN extends Dialog implements WindowListener, ItemListener, ActionListener, Runnable {
+   TextField J;
+   TextField k;
+   TextField h;
+   TextField B;
+   TextField F;
+   Button D;
+   Button b;
+   Button j;
+   Button w;
+   Button R;
+   List Y;
+   Checkbox I;
+   Checkbox u;
+   Checkbox M;
+   Checkbox z;
+   Checkbox N;
+   Dialog X;
+   Label r;
+   String o;
+   String s;
+   String q;
+   int v;
+   Thread K;
+   CheckboxGroup c;
+   y_2 p;
+   TR W;
+   int H;
+   public static boolean g;
+   private static final String[] a;
+   private static final String[] d;
+   private static final long[] e;
+   private static final Integer[] f;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block29: {
-            block28: {
-                block27: {
-                    block26: {
-                        var13 = new String[35];
-                        var11_1 = 0;
-                        var10_2 = "q\u00d7\u00ee\u0018\u009cw\u0003\u00bf\u00c0\u0097\u0005Df\u00a9\u00f0\u00e5\u0006\u0004\u00f7\u00b7\u00dd\u00e9{\u0016o\u00a3\u00b5\u00fa.\u00fa\u00a1\u0098Q\u0088\u00dd\u00e1\u001e\u0002;y8'\u00b02\u00c9\u00a01u\u00f6\u00fc\u0094FH\u00af?\u00c7\u00fb\u009e\u009e\u009c\u00a6\u0084\u00f7\u0090\u00a20&\u00e6q\u0092\u00d6\u00d2^+\u0019\u00b8M\u00c9\u00fcQ\u00d0\u00ba\u000f\u0001\u00f7\u00ce\b\u0001\u00f9B\r\u00b5\u00ca@\u00aa\u00fe\u0006C\u00a0@c\u00ad\u0016\u0007\u00f8\u00a2\u00bd\u00bd\u0081\u0088I\u0011:\u001f\u0080\u00c0\u0098\u0082j_\u00c0\u00d2)/\u009c\u00a9\u00e9a\u008a\u0016\u00a2\r\f/\u0019@G\u00cf\u008dbF\u00bcm\u00a9R\r\u00f0\u00c9\u00f4\u008a\u00ad5\u0006xq'\u00caA\u00c8\u0013\u00aa\u0093\r\u00fc9:h\u0080;\u0099g\u009d/\u0010\u00d393x/\u0005\u00b0\"Sx\u000f\f\u00d7a)\u00c7\u0019\u00b7V\u00c8\u00f2Fb\u00c5\r\t\u0015\u00d6\u0007_~\u001aj\u000eJy\u00c1;\u0004\u008b\u00f33\u00b2\u0004\u000e\u00bcE\u00ba\u0004\"\u00dc/\u009d\u0007g\u00c1N\u00d1\u00ff\u0005\u0086\u0006ktu\u00e2{I\u0014\u0094\u00fde\u001a&\u00e3\u00db> Jn}[\u0086\u00actZ\u00cdi\"\u000b\u001d\u00ec\u00b0\u00be\t\u000e\u0016\u00b7\u00a0\u00df%\t@\u009eL'\u0080d\u00a1\u00e6A\b\u0086T'/nb\u00d7\u009a\u0002Y\u00fe\u0016\u00cf\u009b\u00a1\u00fd\u00ac\u001a\u00e9\u0084B\u000b\u009e\u0091v\f6\u00b8\u0099\u001f\u00845OO\u0006\u00e3*Kfv\r\u00066\u00c7\u0006\u001a\u00817\u0015\u00eb\u00d0\u008a\u00bf\u00dbWd\u00a8\u00d7\u0098\u0090'\u0084\u00cdW\u001d%\u00e0\u0086\u0087m\u0005]\u009f\u00f4\u00cf\u00da\u000e\u00c6\u00cb\u00a8\u0000\u00e9\u00f9\u00day\u00b1g\u0087\u00ab\u0097\u0005\u000f<!@\u0007\u00c9a7[\u008dC\u00b8*\u00c4\u009a\u00f3\u0014]\u00cb\u00ef\u008d\u00f41/L\u008ae\u00cc\u00ab\u0018dX]\u00ef \u00f7\u0011";
-                        var12_3 = "q\u00d7\u00ee\u0018\u009cw\u0003\u00bf\u00c0\u0097\u0005Df\u00a9\u00f0\u00e5\u0006\u0004\u00f7\u00b7\u00dd\u00e9{\u0016o\u00a3\u00b5\u00fa.\u00fa\u00a1\u0098Q\u0088\u00dd\u00e1\u001e\u0002;y8'\u00b02\u00c9\u00a01u\u00f6\u00fc\u0094FH\u00af?\u00c7\u00fb\u009e\u009e\u009c\u00a6\u0084\u00f7\u0090\u00a20&\u00e6q\u0092\u00d6\u00d2^+\u0019\u00b8M\u00c9\u00fcQ\u00d0\u00ba\u000f\u0001\u00f7\u00ce\b\u0001\u00f9B\r\u00b5\u00ca@\u00aa\u00fe\u0006C\u00a0@c\u00ad\u0016\u0007\u00f8\u00a2\u00bd\u00bd\u0081\u0088I\u0011:\u001f\u0080\u00c0\u0098\u0082j_\u00c0\u00d2)/\u009c\u00a9\u00e9a\u008a\u0016\u00a2\r\f/\u0019@G\u00cf\u008dbF\u00bcm\u00a9R\r\u00f0\u00c9\u00f4\u008a\u00ad5\u0006xq'\u00caA\u00c8\u0013\u00aa\u0093\r\u00fc9:h\u0080;\u0099g\u009d/\u0010\u00d393x/\u0005\u00b0\"Sx\u000f\f\u00d7a)\u00c7\u0019\u00b7V\u00c8\u00f2Fb\u00c5\r\t\u0015\u00d6\u0007_~\u001aj\u000eJy\u00c1;\u0004\u008b\u00f33\u00b2\u0004\u000e\u00bcE\u00ba\u0004\"\u00dc/\u009d\u0007g\u00c1N\u00d1\u00ff\u0005\u0086\u0006ktu\u00e2{I\u0014\u0094\u00fde\u001a&\u00e3\u00db> Jn}[\u0086\u00actZ\u00cdi\"\u000b\u001d\u00ec\u00b0\u00be\t\u000e\u0016\u00b7\u00a0\u00df%\t@\u009eL'\u0080d\u00a1\u00e6A\b\u0086T'/nb\u00d7\u009a\u0002Y\u00fe\u0016\u00cf\u009b\u00a1\u00fd\u00ac\u001a\u00e9\u0084B\u000b\u009e\u0091v\f6\u00b8\u0099\u001f\u00845OO\u0006\u00e3*Kfv\r\u00066\u00c7\u0006\u001a\u00817\u0015\u00eb\u00d0\u008a\u00bf\u00dbWd\u00a8\u00d7\u0098\u0090'\u0084\u00cdW\u001d%\u00e0\u0086\u0087m\u0005]\u009f\u00f4\u00cf\u00da\u000e\u00c6\u00cb\u00a8\u0000\u00e9\u00f9\u00day\u00b1g\u0087\u00ab\u0097\u0005\u000f<!@\u0007\u00c9a7[\u008dC\u00b8*\u00c4\u009a\u00f3\u0014]\u00cb\u00ef\u008d\u00f41/L\u008ae\u00cc\u00ab\u0018dX]\u00ef \u00f7\u0011".length();
-                        var9_4 = 6;
-                        var8_5 = -1;
-lbl7:
-                        // 2 sources
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var13 = new String[35];
+      int var11 = 0;
+      String var10 = "q×î\u0018\u009cw\u0003¿À\u0097\u0005Df©ðå\u0006\u0004÷·Ýé{\u0016o£µú.ú¡\u0098Q\u0088Ýá\u001e\u0002;y8'°2É 1uöü\u0094FH¯?Çû\u009e\u009e\u009c¦\u0084÷\u0090¢0&æq\u0092ÖÒ^+\u0019¸MÉüQÐº\u000f\u0001÷Î\b\u0001ùB\rµÊ@ªþ\u0006C @c\u00ad\u0016\u0007ø¢½½\u0081\u0088I\u0011:\u001f\u0080À\u0098\u0082j_ÀÒ)/\u009c©éa\u008a\u0016¢\r\f/\u0019@GÏ\u008dbF¼m©R\rðÉô\u008a\u00ad5\u0006xq'ÊAÈ\u0013ª\u0093\rü9:h\u0080;\u0099g\u009d/\u0010Ó93x/\u0005°\"Sx\u000f\f×a)Ç\u0019·VÈòFbÅ\r\t\u0015Ö\u0007_~\u001aj\u000eJyÁ;\u0004\u008bó3²\u0004\u000e¼Eº\u0004\"Ü/\u009d\u0007gÁNÑÿ\u0005\u0086\u0006ktuâ{I\u0014\u0094ýe\u001a&ãÛ> Jn}[\u0086¬tZÍi\"\u000b\u001dì°¾\t\u000e\u0016· ß%\t@\u009eL'\u0080d¡æA\b\u0086T'/nb×\u009a\u0002Yþ\u0016Ï\u009b¡ý¬\u001aé\u0084B\u000b\u009e\u0091v\f6¸\u0099\u001f\u00845OO\u0006ã*Kfv\r\u00066Ç\u0006\u001a\u00817\u0015ëÐ\u008a¿ÛWd¨×\u0098\u0090'\u0084ÍW\u001d%à\u0086\u0087m\u0005]\u009fôÏÚ\u000eÆË¨\u0000éùÚy±g\u0087«\u0097\u0005\u000f<!@\u0007Éa7[\u008dC¸*Ä\u009aó\u0014]Ëï\u008dô1/L\u008aeÌ«\u0018dX]ï ÷\u0011";
+      int var12 = "q×î\u0018\u009cw\u0003¿À\u0097\u0005Df©ðå\u0006\u0004÷·Ýé{\u0016o£µú.ú¡\u0098Q\u0088Ýá\u001e\u0002;y8'°2É 1uöü\u0094FH¯?Çû\u009e\u009e\u009c¦\u0084÷\u0090¢0&æq\u0092ÖÒ^+\u0019¸MÉüQÐº\u000f\u0001÷Î\b\u0001ùB\rµÊ@ªþ\u0006C @c\u00ad\u0016\u0007ø¢½½\u0081\u0088I\u0011:\u001f\u0080À\u0098\u0082j_ÀÒ)/\u009c©éa\u008a\u0016¢\r\f/\u0019@GÏ\u008dbF¼m©R\rðÉô\u008a\u00ad5\u0006xq'ÊAÈ\u0013ª\u0093\rü9:h\u0080;\u0099g\u009d/\u0010Ó93x/\u0005°\"Sx\u000f\f×a)Ç\u0019·VÈòFbÅ\r\t\u0015Ö\u0007_~\u001aj\u000eJyÁ;\u0004\u008bó3²\u0004\u000e¼Eº\u0004\"Ü/\u009d\u0007gÁNÑÿ\u0005\u0086\u0006ktuâ{I\u0014\u0094ýe\u001a&ãÛ> Jn}[\u0086¬tZÍi\"\u000b\u001dì°¾\t\u000e\u0016· ß%\t@\u009eL'\u0080d¡æA\b\u0086T'/nb×\u009a\u0002Yþ\u0016Ï\u009b¡ý¬\u001aé\u0084B\u000b\u009e\u0091v\f6¸\u0099\u001f\u00845OO\u0006ã*Kfv\r\u00066Ç\u0006\u001a\u00817\u0015ëÐ\u008a¿ÛWd¨×\u0098\u0090'\u0084ÍW\u001d%à\u0086\u0087m\u0005]\u009fôÏÚ\u000eÆË¨\u0000éùÚy±g\u0087«\u0097\u0005\u000f<!@\u0007Éa7[\u008dC¸*Ä\u009aó\u0014]Ëï\u008dô1/L\u008aeÌ«\u0018dX]ï ÷\u0011"
+         .length();
+      char var9 = 6;
+      int var17 = -1;
 
-                        while (true) {
-                            v0 = 87;
-                            v1 = ++var8_5;
-                            v2 = var10_2.substring(v1, v1 + var9_4);
-                            v3 = -1;
-                            break block26;
-                            break;
-                        }
-lbl13:
-                        // 1 sources
+      label70:
+      while (true) {
+         byte var10000 = 87;
+         String var10001 = var10.substring(++var17, var17 + var9);
+         byte var10002 = -1;
 
-                        while (true) {
-                            var13[var11_1++] = v4.intern();
-                            if ((var8_5 += var9_4) < var12_3) {
-                                var9_4 = var10_2.charAt(var8_5);
-                                ** continue;
-                            }
-                            var10_2 = "`\u0010\u00c1\u00ecn\u0013\u0007\u00d5\u009e4l\u00cd\u0090\u0088";
-                            var12_3 = "`\u0010\u00c1\u00ecn\u0013\u0007\u00d5\u009e4l\u00cd\u0090\u0088".length();
-                            var9_4 = 6;
-                            var8_5 = -1;
-lbl22:
-                            // 2 sources
+         while (true) {
+            label65: {
+               char[] var39 = var10001.toCharArray();
+               int var10004 = var39.length;
+               int var14 = 0;
+               byte var42 = var10000;
+               var33 = var39;
+               int var24 = var10004;
+               byte var49;
+               char[] var55;
+               int var10006;
+               if (var10004 <= 1) {
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               } else {
+                  var42 = var10000;
+                  var24 = var10004;
+                  if (var10004 <= var14) {
+                     break label65;
+                  }
 
-                            while (true) {
-                                v0 = 108;
-                                v5 = ++var8_5;
-                                v2 = var10_2.substring(v5, v5 + var9_4);
-                                v3 = 0;
-                                break block26;
-                                break;
-                            }
-                            break;
-                        }
-lbl28:
-                        // 1 sources
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               }
 
-                        while (true) {
-                            var13[var11_1++] = v4.intern();
-                            if ((var8_5 += var9_4) < var12_3) {
-                                var9_4 = var10_2.charAt(var8_5);
-                                ** continue;
-                            }
-                            break block27;
-                            break;
-                        }
-                    }
-                    v6 = v2.toCharArray();
-                    v7 = v6.length;
-                    var14_6 = 0;
-                    v8 = v0;
-                    v9 = v6;
-                    v10 = v7;
-                    if (v7 > 1) ** GOTO lbl85
-                    do {
-                        v11 = v8;
-                        v9 = v9;
-                        v12 = v9;
-                        v13 = v8;
-                        v14 = var14_6;
-                        while (true) {
-                            switch (var14_6 % 7) {
-                                case 0: {
-                                    v15 = 52;
-                                    break;
-                                }
-                                case 1: {
-                                    v15 = 98;
-                                    break;
-                                }
-                                case 2: {
-                                    v15 = 86;
-                                    break;
-                                }
-                                case 3: {
-                                    v15 = 59;
-                                    break;
-                                }
-                                case 4: {
-                                    v15 = 20;
-                                    break;
-                                }
-                                case 5: {
-                                    v15 = 40;
-                                    break;
-                                }
-                                default: {
-                                    v15 = 101;
-                                }
-                            }
-                            v12[v14] = (char)(v12[v14] ^ (v13 ^ v15));
-                            ++var14_6;
-                            v8 = v11;
-                            if (v11 != 0) break;
-                            v11 = v8;
-                            v9 = v9;
-                            v14 = v8;
-                            v12 = v9;
-                            v13 = v8;
-                        }
-lbl85:
-                        // 2 sources
-
-                        v16 = v9;
-                        v10 = v10;
-                    } while (v10 > var14_6);
-                    v4 = new String(v16);
-                    switch (v3) {
-                        default: {
-                            ** continue;
-                        }
-                        ** case 0:
-lbl95:
-                        // 1 sources
-
-                        ** continue;
-                    }
-                }
-                FN.a = var13;
-                FN.d = new String[35];
-                var0_7 = 8009702556478362800L;
-                var6_8 = new long[19];
-                var3_9 = 0;
-                var4_10 = "PP\u001d\u00e6\u00c3\u0012g\u00b6o\u009a3KO\u00a0g\u00f3\u00eaG\u00d8\u00c4\u00ad\u00d9\u00e8Jf\u00c0*Z\u008e\u0093@\u00cbJ\u0011<ri{8\u00f8\u00cb\u00a3\u0000p\u00d5\"\u00e4\u00d5\u001d\u009c\u00eb]\u00c0U_\u00ac*\u00bf\u0082\u00dck\u00b9^|\u00cf\u00c8\u0083\u00d4\u00f0\u00881\u00c4n\u0016zY\u00c1\u00ba\u00d8\u0003\u00b6\f\u00eeeQN\u00ff\u00d2\u00ac\u00b8|\u001f\u00c1\u00bclO\n\u00c9'/\u000e\u0088\u0088\nc\u00dcD\u0095g \u00fd\u0084\u0080V\u00ee\u00df\u008b\u000ea\u00f1>\"\u00fb&=\u0012\u00a9Z\u00fa\u00d5\u00fe\u00b8\u00d2\u00ad \u00a1";
-                var5_11 = "PP\u001d\u00e6\u00c3\u0012g\u00b6o\u009a3KO\u00a0g\u00f3\u00eaG\u00d8\u00c4\u00ad\u00d9\u00e8Jf\u00c0*Z\u008e\u0093@\u00cbJ\u0011<ri{8\u00f8\u00cb\u00a3\u0000p\u00d5\"\u00e4\u00d5\u001d\u009c\u00eb]\u00c0U_\u00ac*\u00bf\u0082\u00dck\u00b9^|\u00cf\u00c8\u0083\u00d4\u00f0\u00881\u00c4n\u0016zY\u00c1\u00ba\u00d8\u0003\u00b6\f\u00eeeQN\u00ff\u00d2\u00ac\u00b8|\u001f\u00c1\u00bclO\n\u00c9'/\u000e\u0088\u0088\nc\u00dcD\u0095g \u00fd\u0084\u0080V\u00ee\u00df\u008b\u000ea\u00f1>\"\u00fb&=\u0012\u00a9Z\u00fa\u00d5\u00fe\u00b8\u00d2\u00ad \u00a1".length();
-                var2_12 = 0;
-                while (true) {
-                    var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                    v17 = var6_8;
-                    v18 = var3_9++;
-                    v19 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                    v20 = -1;
-                    break block28;
-                    break;
-                }
-lbl112:
-                // 1 sources
-
-                while (true) {
-                    v17[v18] = v21;
-                    if (var2_12 < var5_11) ** continue;
-                    var4_10 = "\u00aa\u00adP6\u00a7@2\u00e2\u00ef\u001e\u00ab\u00f1\u00f1\u00c3\u0088\u00c6";
-                    var5_11 = "\u00aa\u00adP6\u00a7@2\u00e2\u00ef\u001e\u00ab\u00f1\u00f1\u00c3\u0088\u00c6".length();
-                    var2_12 = 0;
-                    while (true) {
-                        var7_13 = var4_10.substring(var2_12, var2_12 += 8).getBytes("ISO-8859-1");
-                        v17 = var6_8;
-                        v18 = var3_9++;
-                        v19 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                        v20 = 0;
-                        break block28;
+               while (true) {
+                  char var64 = var55[var10006];
+                  byte var65;
+                  switch (var14 % 7) {
+                     case 0:
+                        var65 = 52;
                         break;
-                    }
-                    break;
-                }
-lbl125:
-                // 1 sources
-
-                while (true) {
-                    v17[v18] = v21;
-                    if (var2_12 < var5_11) ** continue;
-                    break block29;
-                    break;
-                }
-            }
-            v21 = v19 ^ var0_7;
-            switch (v20) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl136:
-                // 1 sources
-
-                ** continue;
-            }
-        }
-        FN.e = var6_8;
-        FN.f = new Integer[19];
-        FN.g = true;
-    }
-
-    public FN(Frame frame) {
-        this(frame, (y_0)null);
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public FN(Frame var1_1, y_0 var2_2) {
-        block33: {
-            block31: {
-                v0 = jk_0.Y();
-                super(var1_1, "Proxy Configuration", true);
-                var3_3 = v0;
-                this.K = null;
-                this.c = new CheckboxGroup();
-                this.X = new Dialog(var1_1, "Warning", true);
-                this.r();
-                this.setResizable(false);
-                this.addWindowListener(this);
-                var4_4 = this.getComponents();
-                var5_5 = 0;
-                try {
-                    if (var3_3 == null) {
-                        while (true) {
-                            v1 = var4_4[var5_5];
-                            break;
-                        }
-                    }
-                    ** GOTO lbl71
-                }
-                catch (NumberFormatException v2) {
-                    throw FN.a(v2);
-                }
-                do {
-                    block27: {
-                        block30: {
-                            block28: {
-                                v3 = v1 instanceof Button;
-                                if (var3_3 != null) {
-                                    try {
-                                        block26: {
-                                            try {
-                                                if (!v3) break block26;
-                                                ((Button)var4_4[var5_5]).addActionListener(this);
-                                                if (var3_3 != null) break block27;
-                                            }
-                                            catch (NumberFormatException v4) {
-                                                throw FN.a(v4);
-                                            }
-                                        }
-                                        v3 = var4_4[var5_5] instanceof TextField;
-                                    }
-                                    catch (NumberFormatException v5) {
-                                        throw FN.a(v5);
-                                    }
-                                }
-                                try {
-                                    try {
-                                        block29: {
-                                            try {
-                                                try {
-                                                    if (var3_3 == null) break block28;
-                                                    if (!v3) break block29;
-                                                }
-                                                catch (NumberFormatException v6) {
-                                                    throw FN.a(v6);
-                                                }
-                                                ((TextField)var4_4[var5_5]).addActionListener(this);
-                                                if (var3_3 != null) break block27;
-                                            }
-                                            catch (NumberFormatException v7) {
-                                                throw FN.a(v7);
-                                            }
-                                        }
-                                        v8 = var4_4[var5_5];
-                                        if (var3_3 == null) break block30;
-                                    }
-                                    catch (NumberFormatException v9) {
-                                        throw FN.a(v9);
-                                    }
-                                    v3 = v8 instanceof Checkbox;
-                                }
-                                catch (NumberFormatException v10) {
-                                    throw FN.a(v10);
-                                }
-                            }
-                            try {
-                                if (!v3) break block27;
-                                v8 = var4_4[var5_5];
-                            }
-                            catch (NumberFormatException v11) {
-                                throw FN.a(v11);
-                            }
-                        }
-                        ((Checkbox)v8).addItemListener(this);
-                    }
-                    ++var5_5;
-lbl71:
-                    // 2 sources
-
-                    if (var5_5 < var4_4.length) ** continue;
-                    this.p = var2_2;
-                    v1 = this;
-                } while (var3_3 == null);
-                try {
-                    block32: {
-                        try {
-                            try {
-                                if (var3_3 == null) break block31;
-                                if (v1.p == null) break block32;
-                            }
-                            catch (NumberFormatException v12) {
-                                throw FN.a(v12);
-                            }
-                            this.O(this.p);
-                            if (var3_3 != null) break block33;
-                        }
-                        catch (NumberFormatException v13) {
-                            throw FN.a(v13);
-                        }
-                    }
-                    v14 = this;
-                }
-                catch (NumberFormatException v15) {
-                    throw FN.a(v15);
-                }
-            }
-            v14.W = new TR();
-        }
-        this.R.addActionListener(this);
-        this.X.addWindowListener(this);
-    }
-
-    public y_0 t() {
-        this.H = 0;
-        this.pack();
-        this.show();
-        return this.p;
-    }
-
-    public y_0 m(y_0 y_02) {
-        y_0 y_03;
-        block4: {
-            block5: {
-                String[] stringArray = jk_0.Y();
-                try {
-                    try {
-                        y_03 = y_02;
-                        if (stringArray == null) break block4;
-                        if (y_03 == null) break block5;
-                    }
-                    catch (NumberFormatException numberFormatException) {
-                        throw FN.a(numberFormatException);
-                    }
-                    this.O(y_02);
-                }
-                catch (NumberFormatException numberFormatException) {
-                    throw FN.a(numberFormatException);
-                }
-            }
-            this.H = 0;
-            this.pack();
-            this.show();
-            y_03 = this.p;
-        }
-        return y_03;
-    }
-
-    @Override
-    public void windowActivated(WindowEvent windowEvent) {
-    }
-
-    @Override
-    public void windowDeactivated(WindowEvent windowEvent) {
-    }
-
-    @Override
-    public void windowOpened(WindowEvent windowEvent) {
-    }
-
-    @Override
-    public void windowClosing(WindowEvent windowEvent) {
-        block11: {
-            Dialog dialog;
-            Window window;
-            block9: {
-                Window window2 = windowEvent.getWindow();
-                String[] stringArray = jk_0.Y();
-                try {
-                    block10: {
-                        try {
-                            try {
-                                window = window2;
-                                dialog = this;
-                                if (stringArray == null) break block9;
-                                if (window != dialog) break block10;
-                            }
-                            catch (NumberFormatException numberFormatException) {
-                                throw FN.a(numberFormatException);
-                            }
-                            this.S();
-                            if (stringArray != null) break block11;
-                        }
-                        catch (NumberFormatException numberFormatException) {
-                            throw FN.a(numberFormatException);
-                        }
-                    }
-                    window = window2;
-                    dialog = this.X;
-                }
-                catch (NumberFormatException numberFormatException) {
-                    throw FN.a(numberFormatException);
-                }
-            }
-            try {
-                if (window == dialog) {
-                    this.u();
-                }
-            }
-            catch (NumberFormatException numberFormatException) {
-                throw FN.a(numberFormatException);
-            }
-        }
-    }
-
-    @Override
-    public void windowClosed(WindowEvent windowEvent) {
-    }
-
-    @Override
-    public void windowIconified(WindowEvent windowEvent) {
-    }
-
-    @Override
-    public void windowDeiconified(WindowEvent windowEvent) {
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void actionPerformed(ActionEvent var1_1) {
-        block36: {
-            block44: {
-                block42: {
-                    block40: {
-                        block38: {
-                            block37: {
-                                block34: {
-                                    var3_2 = var1_1.getSource();
-                                    var2_3 = jk_0.Y();
-                                    try {
-                                        try {
-                                            block35: {
-                                                try {
-                                                    try {
-                                                        v0 = var3_2;
-                                                        v1 = this.j;
-                                                        if (var2_3 == null) break block34;
-                                                        if (v0 != v1) break block35;
-                                                    }
-                                                    catch (NumberFormatException v2) {
-                                                        throw FN.a(v2);
-                                                    }
-                                                    this.S();
-                                                    if (var2_3 != null) break block36;
-                                                }
-                                                catch (NumberFormatException v3) {
-                                                    throw FN.a(v3);
-                                                }
-                                            }
-                                            v0 = var3_2;
-                                            v4 = this;
-                                            if (var2_3 == null) break block37;
-                                        }
-                                        catch (NumberFormatException v5) {
-                                            throw FN.a(v5);
-                                        }
-                                        v1 = v4.D;
-                                    }
-                                    catch (NumberFormatException v6) {
-                                        throw FN.a(v6);
-                                    }
-                                }
-                                try {
-                                    if (v0 != v1) {
-                                        v0 = var3_2;
-                                        v4 = this;
-                                    }
-                                    ** GOTO lbl48
-                                }
-                                catch (NumberFormatException v7) {
-                                    throw FN.a(v7);
-                                }
-                            }
-                            try {
-                                block39: {
-                                    try {
-                                        try {
-                                            if (var2_3 == null) break block38;
-                                            if (v0 != v4.F) break block39;
-                                        }
-                                        catch (NumberFormatException v8) {
-                                            throw FN.a(v8);
-                                        }
-lbl48:
-                                        // 2 sources
-
-                                        this.b();
-                                        if (var2_3 != null) break block36;
-                                    }
-                                    catch (NumberFormatException v9) {
-                                        throw FN.a(v9);
-                                    }
-                                }
-                                v0 = var3_2;
-                                v4 = this;
-                            }
-                            catch (NumberFormatException v10) {
-                                throw FN.a(v10);
-                            }
-                        }
-                        try {
-                            block41: {
-                                try {
-                                    try {
-                                        v11 = v4.b;
-                                        if (var2_3 == null) break block40;
-                                        if (v0 != v11) break block41;
-                                    }
-                                    catch (NumberFormatException v12) {
-                                        throw FN.a(v12);
-                                    }
-                                    this.W();
-                                    if (var2_3 != null) break block36;
-                                }
-                                catch (NumberFormatException v13) {
-                                    throw FN.a(v13);
-                                }
-                            }
-                            v0 = var3_2;
-                            v11 = this.R;
-                        }
-                        catch (NumberFormatException v14) {
-                            throw FN.a(v14);
-                        }
-                    }
-                    try {
-                        try {
-                            block43: {
-                                try {
-                                    try {
-                                        if (var2_3 == null) break block42;
-                                        if (v0 != v11) break block43;
-                                    }
-                                    catch (NumberFormatException v15) {
-                                        throw FN.a(v15);
-                                    }
-                                    this.u();
-                                    if (var2_3 != null) break block36;
-                                }
-                                catch (NumberFormatException v16) {
-                                    throw FN.a(v16);
-                                }
-                            }
-                            v0 = var3_2;
-                            if (var2_3 == null) break block44;
-                        }
-                        catch (NumberFormatException v17) {
-                            throw FN.a(v17);
-                        }
-                        v11 = this.w;
-                    }
-                    catch (NumberFormatException v18) {
-                        throw FN.a(v18);
-                    }
-                }
-                if (v0 == v11) ** GOTO lbl111
-                v0 = var3_2;
-            }
-            try {
-                if (!(v0 instanceof TextField)) break block36;
-lbl111:
-                // 2 sources
-
-                this.H();
-            }
-            catch (NumberFormatException v19) {
-                throw FN.a(v19);
-            }
-        }
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void itemStateChanged(ItemEvent var1_1) {
-        block17: {
-            block16: {
-                block14: {
-                    var3_2 = var1_1.getSource();
-                    var2_3 = jk_0.Y();
-                    try {
-                        block15: {
-                            try {
-                                try {
-                                    try {
-                                        if (var2_3 == null) break block14;
-                                        if (var3_2 == this.u) break block15;
-                                    }
-                                    catch (NumberFormatException v0) {
-                                        throw FN.a(v0);
-                                    }
-                                    v1 = var3_2;
-                                    v2 = this.I;
-                                    if (var2_3 == null) break block16;
-                                }
-                                catch (NumberFormatException v3) {
-                                    throw FN.a(v3);
-                                }
-                                if (v1 == v2) {
-                                }
-                                ** GOTO lbl31
-                            }
-                            catch (NumberFormatException v4) {
-                                throw FN.a(v4);
-                            }
-                        }
-                        this.U();
-                    }
-                    catch (NumberFormatException v5) {
-                        throw FN.a(v5);
-                    }
-                }
-                try {
-                    if (var2_3 != null) break block17;
-lbl31:
-                    // 2 sources
-
-                    v1 = var3_2;
-                    v2 = this.z;
-                }
-                catch (NumberFormatException v6) {
-                    throw FN.a(v6);
-                }
-            }
-            try {
-                if (v1 == v2) {
-                    this.C();
-                }
-            }
-            catch (NumberFormatException v7) {
-                throw FN.a(v7);
-            }
-        }
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void run() {
-        block15: {
-            block18: {
-                block19: {
-                    block16: {
-                        block17: {
-                            var1_1 = jk_0.Y();
-                            try {
-                                try {
-                                    try {
-                                        try {
-                                            v0 = this.R();
-                                            if (var1_1 != null) {
-                                                if (v0) break block15;
-                                            }
-                                            ** GOTO lbl50
-                                        }
-                                        catch (NumberFormatException v1) {
-                                            throw FN.a(v1);
-                                        }
-                                        v2 = this;
-                                        if (var1_1 == null) break block16;
-                                    }
-                                    catch (NumberFormatException v3) {
-                                        throw FN.a(v3);
-                                    }
-                                    if (v2.H == 1) break block17;
-                                }
-                                catch (NumberFormatException v4) {
-                                    throw FN.a(v4);
-                                }
-                                return;
-                            }
-                            catch (NumberFormatException v5) {
-                                throw FN.a(v5);
-                            }
-                        }
-                        v2 = this;
-                    }
-                    try {
-                        try {
-                            if (var1_1 == null) break block18;
-                            if (v2.K == Thread.currentThread()) break block19;
-                        }
-                        catch (NumberFormatException v6) {
-                            throw FN.a(v6);
-                        }
-                        return;
-                    }
-                    catch (NumberFormatException v7) {
-                        throw FN.a(v7);
-                    }
-                }
-                this.H = 0;
-                this.r.setText("Look up failed.");
-                v2 = this;
-            }
-            v2.r.invalidate();
-            return;
-        }
-        block12: while (true) {
-            v8 = this.X;
-            do {
-                v0 = v8.isShowing();
-lbl50:
-                // 2 sources
-
-                if (!v0) continue block12;
-                v8 = this.X;
-            } while (var1_1 == null);
-            break;
-        }
-        v8.dispose();
-    }
-
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    private void H() {
-        block61: {
-            block60: {
-                block59: {
-                    block58: {
-                        block56: {
-                            block51: {
-                                block52: {
-                                    block53: {
-                                        block54: {
-                                            block55: {
-                                                block68: {
-                                                    block67: {
-                                                        block50: {
-                                                            block63: {
-                                                                block65: {
-                                                                    block64: {
-                                                                        block48: {
-                                                                            block49: {
-                                                                                this.o = this.J.getText().trim();
-                                                                                var1_1 = jk_0.Y();
-                                                                                this.s = this.h.getText();
-                                                                                this.q = this.B.getText();
-                                                                                v0 = this;
-                                                                                if (var1_1 == null) break block48;
-                                                                                try {
-                                                                                    block62: {
-                                                                                        if (v0.o.length() != 0) break block49;
-                                                                                        break block62;
-                                                                                        catch (NumberFormatException v1) {
-                                                                                            throw FN.a(v1);
-                                                                                        }
-                                                                                    }
-                                                                                    this.k("Proxy host is not set!");
-                                                                                    return;
-                                                                                }
-                                                                                catch (NumberFormatException v2) {
-                                                                                    throw FN.a(v2);
-                                                                                }
-                                                                            }
-                                                                            v0 = this;
-                                                                        }
-                                                                        v3 = v0.c.getSelectedCheckbox();
-                                                                        if (var1_1 == null) break block50;
-                                                                        if (v3 != this.I) break block63;
-                                                                        break block64;
-                                                                        catch (NumberFormatException v4) {
-                                                                            throw FN.a(v4);
-                                                                        }
-                                                                    }
-                                                                    v5 = this;
-                                                                    if (var1_1 == null) ** GOTO lbl113
-                                                                    break block65;
-                                                                    catch (NumberFormatException v6) {
-                                                                        throw FN.a(v6);
-                                                                    }
-                                                                }
-                                                                try {
-                                                                    block66: {
-                                                                        if (v5.s.length() != 0) break block51;
-                                                                        break block66;
-                                                                        catch (NumberFormatException v7) {
-                                                                            throw FN.a(v7);
-                                                                        }
-                                                                    }
-                                                                    this.k("User name is not set");
-                                                                    return;
-                                                                }
-                                                                catch (NumberFormatException v8) {
-                                                                    throw FN.a(v8);
-                                                                }
-                                                            }
-                                                            v3 = this.z;
-                                                        }
-                                                        v9 = v3.getState();
-                                                        if (var1_1 == null) break block52;
-                                                        if (!v9) break block53;
-                                                        break block67;
-                                                        catch (NumberFormatException v10) {
-                                                            throw FN.a(v10);
-                                                        }
-                                                    }
-                                                    v11 = this.s.length();
-                                                    if (var1_1 == null) break block54;
-                                                    break block68;
-                                                    catch (NumberFormatException v12) {
-                                                        throw FN.a(v12);
-                                                    }
-                                                }
-                                                try {
-                                                    block69: {
-                                                        if (v11 != 0) break block55;
-                                                        break block69;
-                                                        catch (NumberFormatException v13) {
-                                                            throw FN.a(v13);
-                                                        }
-                                                    }
-                                                    this.k("User name is not set.");
-                                                    return;
-                                                }
-                                                catch (NumberFormatException v14) {
-                                                    throw FN.a(v14);
-                                                }
-                                            }
-                                            try {
-                                                v5 = this;
-                                                if (var1_1 != null) {
-                                                    v11 = v5.q.length();
-                                                }
-                                                ** GOTO lbl113
-                                            }
-                                            catch (NumberFormatException v15) {
-                                                throw FN.a(v15);
-                                            }
-                                        }
-                                        try {
-                                            if (v11 == 0) {
-                                                this.k("Password is not set.");
-                                                return;
-                                            }
-                                            break block51;
-                                        }
-                                        catch (NumberFormatException v16) {
-                                            throw FN.a(v16);
-                                        }
-                                    }
-                                    try {
-                                        v5 = this;
-                                        if (var1_1 != null) {
-                                            v9 = v5.M.getState();
-                                        }
-                                        ** GOTO lbl113
-                                    }
-                                    catch (NumberFormatException v17) {
-                                        throw FN.a(v17);
-                                    }
-                                }
-                                try {
-                                    if (!v9) {
-                                        this.k("Please select at least one Authentication Method.");
-                                        return;
-                                    }
-                                }
-                                catch (NumberFormatException v18) {
-                                    throw FN.a(v18);
-                                }
-                            }
-                            try {
-                                v5 = this;
-lbl113:
-                                // 4 sources
-
-                                v5.v = Integer.parseInt(this.k.getText());
-                            }
-                            catch (NumberFormatException var2_2) {
-                                this.k("Proxy port is invalid!");
-                                return;
-                            }
-                            try {
-                                block57: {
-                                    try {
-                                        try {
-                                            this.H = 1;
-                                            v19 = FN.g;
-                                            if (var1_1 == null) break block56;
-                                            if (v19 == 0) break block57;
-                                        }
-                                        catch (NumberFormatException v20) {
-                                            throw FN.a(v20);
-                                        }
-                                        this.K = new Thread(this);
-                                        this.K.start();
-                                        this.M("Looking up host: " + this.o);
-                                        if (var1_1 != null) break block58;
-                                    }
-                                    catch (NumberFormatException v21) {
-                                        throw FN.a(v21);
-                                    }
-                                }
-                                v19 = this.R();
-                            }
-                            catch (NumberFormatException v22) {
-                                throw FN.a(v22);
-                            }
-                        }
-                        try {
-                            try {
-                                if (var1_1 == null) break block59;
-                                if (v19 != 0) break block58;
-                            }
-                            catch (NumberFormatException v23) {
-                                throw FN.a(v23);
-                            }
-                            this.k("Proxy host is invalid.");
-                            this.H = 0;
-                        }
-                        catch (NumberFormatException v24) {
-                            throw FN.a(v24);
-                        }
-                    }
-                    try {
-                        v25 = this;
-                        if (var1_1 == null) break block60;
-                        v19 = v25.H;
-                    }
-                    catch (NumberFormatException v26) {
-                        throw FN.a(v26);
-                    }
-                }
-                try {
-                    if (v19 != 1) break block61;
-                    v25 = this;
-                }
-                catch (NumberFormatException v27) {
-                    throw FN.a(v27);
-                }
-            }
-            v25.dispose();
-        }
-    }
-
-    private void S() {
-        this.p = null;
-        this.dispose();
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    private void b() {
-        block8: {
-            v0 = jk_0.Y();
-            var2_1 = this.F.getText();
-            var2_1.trim();
-            var1_2 = v0;
-            try {
-                if (var2_1.length() == 0) {
-                    return;
-                }
-            }
-            catch (NumberFormatException v1) {
-                throw FN.a(v1);
-            }
-            var3_3 = this.Y.getItems();
-            var4_4 = 0;
-            try {
-                if (var1_2 == null) {
-                    while (true) {
-                        if (!var3_3[var4_4].equals(var2_1)) break block8;
+                     case 1:
+                        var65 = 98;
                         break;
-                    }
-                }
-                ** GOTO lbl26
-            }
-            catch (NumberFormatException v2) {
-                throw FN.a(v2);
-            }
-            return;
-        }
-        do {
-            ++var4_4;
-lbl26:
-            // 2 sources
+                     case 2:
+                        var65 = 86;
+                        break;
+                     case 3:
+                        var65 = 59;
+                        break;
+                     case 4:
+                        var65 = 20;
+                        break;
+                     case 5:
+                        var65 = 40;
+                        break;
+                     default:
+                        var65 = 101;
+                  }
 
-            if (var4_4 < var3_3.length) ** continue;
-            this.Y.add(var2_1);
-            this.W.K(var2_1);
-        } while (var1_2 == null);
-    }
+                  var55[var10006] = (char)(var64 ^ var49 ^ var65);
+                  var14++;
+                  if (var42 == 0) {
+                     var10006 = var42;
+                     var55 = var33;
+                     var49 = var42;
+                  } else {
+                     if (var24 <= var14) {
+                        break;
+                     }
 
-    private void W() {
-        int n10;
-        block2: {
-            int n11;
-            block3: {
-                n10 = this.Y.getSelectedIndex();
-                String[] stringArray = jk_0.Y();
-                try {
-                    n11 = n10;
-                    if (stringArray == null) break block2;
-                    if (n11 >= 0) break block3;
-                }
-                catch (NumberFormatException numberFormatException) {
-                    throw FN.a(numberFormatException);
-                }
-                return;
+                     var55 = var33;
+                     var49 = var42;
+                     var10006 = var14;
+                  }
+               }
             }
-            n11 = this.W.R(this.Y.getItem(n10)) ? 1 : 0;
-        }
-        this.Y.remove(n10);
-        this.Y.select(n10);
-    }
 
-    private void U() {
-        block14: {
-            block17: {
-                FN fN2;
-                block15: {
-                    Checkbox checkbox;
-                    String[] stringArray;
-                    block12: {
-                        Checkbox checkbox2 = this.c.getSelectedCheckbox();
-                        stringArray = jk_0.Y();
-                        try {
-                            try {
-                                block13: {
-                                    try {
-                                        try {
-                                            checkbox = checkbox2;
-                                            if (stringArray == null) break block12;
-                                            if (checkbox != this.I) break block13;
-                                        }
-                                        catch (NumberFormatException numberFormatException) {
-                                            throw FN.a(numberFormatException);
-                                        }
-                                        this.h.setEnabled(true);
-                                        this.B.setEnabled(false);
-                                        this.M.setEnabled(false);
-                                        this.z.setEnabled(false);
-                                        if (stringArray != null) break block14;
-                                    }
-                                    catch (NumberFormatException numberFormatException) {
-                                        throw FN.a(numberFormatException);
-                                    }
-                                }
-                                fN2 = this;
-                                if (stringArray == null) break block15;
-                            }
-                            catch (NumberFormatException numberFormatException) {
-                                throw FN.a(numberFormatException);
-                            }
-                            checkbox = fN2.z;
+            String var44 = new String(var33).intern();
+            switch (var10002) {
+               case 0:
+                  var13[var11++] = var44;
+                  if ((var17 += var9) >= var12) {
+                     a = var13;
+                     d = new String[35];
+                     long var0 = 8009702556478362800L;
+                     long[] var6 = new long[19];
+                     int var3 = 0;
+                     String var4 = "PP\u001dæÃ\u0012g¶o\u009a3KO góêGØÄ\u00adÙèJfÀ*Z\u008e\u0093@ËJ\u0011<ri{8øË£\u0000pÕ\"äÕ\u001d\u009cë]ÀU_¬*¿\u0082Ük¹^|ÏÈ\u0083Ôð\u00881Än\u0016zYÁºØ\u0003¶\fîeQNÿÒ¬¸|\u001fÁ¼lO\nÉ'/\u000e\u0088\u0088\ncÜD\u0095g ý\u0084\u0080Vîß\u008b\u000eañ>\"û&=\u0012©ZúÕþ¸Ò\u00ad ¡";
+                     int var5 = "PP\u001dæÃ\u0012g¶o\u009a3KO góêGØÄ\u00adÙèJfÀ*Z\u008e\u0093@ËJ\u0011<ri{8øË£\u0000pÕ\"äÕ\u001d\u009cë]ÀU_¬*¿\u0082Ük¹^|ÏÈ\u0083Ôð\u00881Än\u0016zYÁºØ\u0003¶\fîeQNÿÒ¬¸|\u001fÁ¼lO\nÉ'/\u000e\u0088\u0088\ncÜD\u0095g ý\u0084\u0080Vîß\u008b\u000eañ>\"û&=\u0012©ZúÕþ¸Ò\u00ad ¡"
+                        .length();
+                     byte var2 = 0;
+
+                     label44:
+                     while (true) {
+                        byte var26 = var2;
+                        var2 += 8;
+                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        long[] var19 = var6;
+                        int var27 = var3++;
+                        long var37 = ((long)var7[0] & 255L) << 56
+                           | ((long)var7[1] & 255L) << 48
+                           | ((long)var7[2] & 255L) << 40
+                           | ((long)var7[3] & 255L) << 32
+                           | ((long)var7[4] & 255L) << 24
+                           | ((long)var7[5] & 255L) << 16
+                           | ((long)var7[6] & 255L) << 8
+                           | (long)var7[7] & 255L;
+                        byte var45 = -1;
+
+                        while (true) {
+                           long var54 = var37 ^ var0;
+                           switch (var45) {
+                              case 0:
+                                 var19[var27] = var54;
+                                 if (var2 >= var5) {
+                                    e = var6;
+                                    f = new Integer[19];
+                                    g = true;
+                                    return;
+                                 }
+                                 break;
+                              default:
+                                 var19[var27] = var54;
+                                 if (var2 < var5) {
+                                    continue label44;
+                                 }
+
+                                 var4 = "ª\u00adP6§@2âï\u001e«ññÃ\u0088Æ";
+                                 var5 = "ª\u00adP6§@2âï\u001e«ññÃ\u0088Æ".length();
+                                 var2 = 0;
+                           }
+
+                           byte var28 = var2;
+                           var2 += 8;
+                           var7 = var4.substring(var28, var2).getBytes("ISO-8859-1");
+                           var19 = var6;
+                           var27 = var3++;
+                           var37 = ((long)var7[0] & 255L) << 56
+                              | ((long)var7[1] & 255L) << 48
+                              | ((long)var7[2] & 255L) << 40
+                              | ((long)var7[3] & 255L) << 32
+                              | ((long)var7[4] & 255L) << 24
+                              | ((long)var7[5] & 255L) << 16
+                              | ((long)var7[6] & 255L) << 8
+                              | (long)var7[7] & 255L;
+                           var45 = 0;
                         }
-                        catch (NumberFormatException numberFormatException) {
-                            throw FN.a(numberFormatException);
-                        }
-                    }
-                    try {
-                        block16: {
-                            try {
-                                if (!checkbox.getState()) break block16;
-                                this.h.setEnabled(true);
-                                this.B.setEnabled(true);
-                                if (stringArray != null) break block17;
-                            }
-                            catch (NumberFormatException numberFormatException) {
-                                throw FN.a(numberFormatException);
-                            }
-                        }
-                        this.h.setEnabled(false);
-                        fN2 = this;
-                    }
-                    catch (NumberFormatException numberFormatException) {
-                        throw FN.a(numberFormatException);
-                    }
-                }
-                fN2.B.setEnabled(false);
+                     }
+                  }
+
+                  var9 = var10.charAt(var17);
+                  break;
+               default:
+                  var13[var11++] = var44;
+                  if ((var17 += var9) < var12) {
+                     var9 = var10.charAt(var17);
+                     continue label70;
+                  }
+
+                  var10 = "`\u0010Áìn\u0013\u0007Õ\u009e4lÍ\u0090\u0088";
+                  var12 = "`\u0010Áìn\u0013\u0007Õ\u009e4lÍ\u0090\u0088".length();
+                  var9 = 6;
+                  var17 = -1;
             }
-            this.M.setEnabled(true);
-            this.z.setEnabled(true);
-        }
-    }
 
-    private void C() {
-        block8: {
-            FN fN2;
-            block6: {
-                String[] stringArray = jk_0.Y();
-                try {
-                    block7: {
-                        try {
-                            try {
-                                fN2 = this;
-                                if (stringArray == null) break block6;
-                                if (!fN2.z.getState()) break block7;
-                            }
-                            catch (NumberFormatException numberFormatException) {
-                                throw FN.a(numberFormatException);
-                            }
-                            this.h.setEnabled(true);
-                            this.B.setEnabled(true);
-                            if (stringArray != null) break block8;
-                        }
-                        catch (NumberFormatException numberFormatException) {
-                            throw FN.a(numberFormatException);
-                        }
-                    }
-                    this.h.setEnabled(false);
-                    fN2 = this;
-                }
-                catch (NumberFormatException numberFormatException) {
-                    throw FN.a(numberFormatException);
-                }
+            var10000 = 108;
+            var10001 = var10.substring(++var17, var17 + var9);
+            var10002 = 0;
+         }
+      }
+   }
+
+   public FN(Frame var1) {
+      this(var1, null);
+   }
+
+   public FN(Frame param1, y_2 param2) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 003: aload 0
+      // 004: aload 1
+      // 005: sipush -31310
+      // 008: sipush -24732
+      // 00b: invokestatic FN.a (II)Ljava/lang/String;
+      // 00e: bipush 1
+      // 00f: invokespecial java/awt/Dialog.<init> (Ljava/awt/Frame;Ljava/lang/String;Z)V
+      // 012: astore 3
+      // 013: aload 0
+      // 014: aconst_null
+      // 015: putfield FN.K Ljava/lang/Thread;
+      // 018: aload 0
+      // 019: new java/awt/CheckboxGroup
+      // 01c: dup
+      // 01d: invokespecial java/awt/CheckboxGroup.<init> ()V
+      // 020: putfield FN.c Ljava/awt/CheckboxGroup;
+      // 023: aload 0
+      // 024: new java/awt/Dialog
+      // 027: dup
+      // 028: aload 1
+      // 029: sipush -31298
+      // 02c: sipush -6725
+      // 02f: invokestatic FN.a (II)Ljava/lang/String;
+      // 032: bipush 1
+      // 033: invokespecial java/awt/Dialog.<init> (Ljava/awt/Frame;Ljava/lang/String;Z)V
+      // 036: putfield FN.X Ljava/awt/Dialog;
+      // 039: aload 0
+      // 03a: invokevirtual FN.r ()V
+      // 03d: aload 0
+      // 03e: bipush 0
+      // 03f: invokevirtual FN.setResizable (Z)V
+      // 042: aload 0
+      // 043: aload 0
+      // 044: invokevirtual FN.addWindowListener (Ljava/awt/event/WindowListener;)V
+      // 047: aload 0
+      // 048: invokevirtual FN.getComponents ()[Ljava/awt/Component;
+      // 04b: astore 4
+      // 04d: bipush 0
+      // 04e: istore 5
+      // 050: aload 3
+      // 051: ifnonnull 0e8
+      // 054: aload 4
+      // 056: iload 5
+      // 058: aaload
+      // 059: goto 060
+      // 05c: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 05f: athrow
+      // 060: instanceof java/awt/Button
+      // 063: aload 3
+      // 064: ifnull 090
+      // 067: ifeq 081
+      // 06a: aload 4
+      // 06c: iload 5
+      // 06e: aaload
+      // 06f: checkcast java/awt/Button
+      // 072: aload 0
+      // 073: invokevirtual java/awt/Button.addActionListener (Ljava/awt/event/ActionListener;)V
+      // 076: aload 3
+      // 077: ifnonnull 0e5
+      // 07a: goto 081
+      // 07d: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 080: athrow
+      // 081: aload 4
+      // 083: iload 5
+      // 085: aaload
+      // 086: instanceof java/awt/TextField
+      // 089: goto 090
+      // 08c: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 08f: athrow
+      // 090: aload 3
+      // 091: ifnull 0cf
+      // 094: ifeq 0b5
+      // 097: goto 09e
+      // 09a: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 09d: athrow
+      // 09e: aload 4
+      // 0a0: iload 5
+      // 0a2: aaload
+      // 0a3: checkcast java/awt/TextField
+      // 0a6: aload 0
+      // 0a7: invokevirtual java/awt/TextField.addActionListener (Ljava/awt/event/ActionListener;)V
+      // 0aa: aload 3
+      // 0ab: ifnonnull 0e5
+      // 0ae: goto 0b5
+      // 0b1: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0b4: athrow
+      // 0b5: aload 4
+      // 0b7: iload 5
+      // 0b9: aaload
+      // 0ba: aload 3
+      // 0bb: ifnull 0de
+      // 0be: goto 0c5
+      // 0c1: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0c4: athrow
+      // 0c5: instanceof java/awt/Checkbox
+      // 0c8: goto 0cf
+      // 0cb: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0ce: athrow
+      // 0cf: ifeq 0e5
+      // 0d2: aload 4
+      // 0d4: iload 5
+      // 0d6: aaload
+      // 0d7: goto 0de
+      // 0da: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0dd: athrow
+      // 0de: checkcast java/awt/Checkbox
+      // 0e1: aload 0
+      // 0e2: invokevirtual java/awt/Checkbox.addItemListener (Ljava/awt/event/ItemListener;)V
+      // 0e5: iinc 5 1
+      // 0e8: iload 5
+      // 0ea: aload 4
+      // 0ec: arraylength
+      // 0ed: if_icmplt 054
+      // 0f0: aload 0
+      // 0f1: aload 2
+      // 0f2: putfield FN.p Ly_2;
+      // 0f5: aload 0
+      // 0f6: aload 3
+      // 0f7: ifnull 060
+      // 0fa: aload 3
+      // 0fb: ifnull 126
+      // 0fe: getfield FN.p Ly_2;
+      // 101: ifnull 11e
+      // 104: goto 10b
+      // 107: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 10a: athrow
+      // 10b: aload 0
+      // 10c: aload 0
+      // 10d: getfield FN.p Ly_2;
+      // 110: invokespecial FN.O (Ly_2;)V
+      // 113: aload 3
+      // 114: ifnonnull 130
+      // 117: goto 11e
+      // 11a: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 11d: athrow
+      // 11e: aload 0
+      // 11f: goto 126
+      // 122: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 125: athrow
+      // 126: new TR
+      // 129: dup
+      // 12a: invokespecial TR.<init> ()V
+      // 12d: putfield FN.W LTR;
+      // 130: aload 0
+      // 131: getfield FN.R Ljava/awt/Button;
+      // 134: aload 0
+      // 135: invokevirtual java/awt/Button.addActionListener (Ljava/awt/event/ActionListener;)V
+      // 138: aload 0
+      // 139: getfield FN.X Ljava/awt/Dialog;
+      // 13c: aload 0
+      // 13d: invokevirtual java/awt/Dialog.addWindowListener (Ljava/awt/event/WindowListener;)V
+      // 140: return
+   }
+
+   public y_2 t() {
+      this.H = 0;
+      this.pack();
+      this.show();
+      return this.p;
+   }
+
+   public y_2 m(y_2 param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 03: astore 2
+      // 04: aload 1
+      // 05: aload 2
+      // 06: ifnull 30
+      // 09: ifnull 1f
+      // 0c: goto 13
+      // 0f: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 12: athrow
+      // 13: aload 0
+      // 14: aload 1
+      // 15: invokespecial FN.O (Ly_2;)V
+      // 18: goto 1f
+      // 1b: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1e: athrow
+      // 1f: aload 0
+      // 20: bipush 0
+      // 21: putfield FN.H I
+      // 24: aload 0
+      // 25: invokevirtual FN.pack ()V
+      // 28: aload 0
+      // 29: invokevirtual FN.show ()V
+      // 2c: aload 0
+      // 2d: getfield FN.p Ly_2;
+      // 30: areturn
+   }
+
+   @Override
+   public void windowActivated(WindowEvent var1) {
+   }
+
+   @Override
+   public void windowDeactivated(WindowEvent var1) {
+   }
+
+   @Override
+   public void windowOpened(WindowEvent var1) {
+   }
+
+   @Override
+   public void windowClosing(WindowEvent param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 03: aload 1
+      // 04: invokevirtual java/awt/event/WindowEvent.getWindow ()Ljava/awt/Window;
+      // 07: astore 3
+      // 08: astore 2
+      // 09: aload 3
+      // 0a: aload 0
+      // 0b: aload 2
+      // 0c: ifnull 34
+      // 0f: if_acmpne 28
+      // 12: goto 19
+      // 15: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 18: athrow
+      // 19: aload 0
+      // 1a: invokespecial FN.S ()V
+      // 1d: aload 2
+      // 1e: ifnonnull 42
+      // 21: goto 28
+      // 24: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 27: athrow
+      // 28: aload 3
+      // 29: aload 0
+      // 2a: getfield FN.X Ljava/awt/Dialog;
+      // 2d: goto 34
+      // 30: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 33: athrow
+      // 34: if_acmpne 42
+      // 37: aload 0
+      // 38: invokespecial FN.u ()V
+      // 3b: goto 42
+      // 3e: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 41: athrow
+      // 42: return
+   }
+
+   @Override
+   public void windowClosed(WindowEvent var1) {
+   }
+
+   @Override
+   public void windowIconified(WindowEvent var1) {
+   }
+
+   @Override
+   public void windowDeiconified(WindowEvent var1) {
+   }
+
+   @Override
+   public void actionPerformed(ActionEvent param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 03: aload 1
+      // 04: invokevirtual java/awt/event/ActionEvent.getSource ()Ljava/lang/Object;
+      // 07: astore 3
+      // 08: astore 2
+      // 09: aload 3
+      // 0a: aload 0
+      // 0b: getfield FN.j Ljava/awt/Button;
+      // 0e: aload 2
+      // 0f: ifnull 42
+      // 12: if_acmpne 2b
+      // 15: goto 1c
+      // 18: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1b: athrow
+      // 1c: aload 0
+      // 1d: invokespecial FN.S ()V
+      // 20: aload 2
+      // 21: ifnonnull ec
+      // 24: goto 2b
+      // 27: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2a: athrow
+      // 2b: aload 3
+      // 2c: aload 0
+      // 2d: aload 2
+      // 2e: ifnull 4e
+      // 31: goto 38
+      // 34: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 37: athrow
+      // 38: getfield FN.D Ljava/awt/Button;
+      // 3b: goto 42
+      // 3e: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 41: athrow
+      // 42: if_acmpeq 5f
+      // 45: aload 3
+      // 46: aload 0
+      // 47: goto 4e
+      // 4a: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 4d: athrow
+      // 4e: aload 2
+      // 4f: ifnull 77
+      // 52: getfield FN.F Ljava/awt/TextField;
+      // 55: if_acmpne 6e
+      // 58: goto 5f
+      // 5b: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 5e: athrow
+      // 5f: aload 0
+      // 60: invokespecial FN.b ()V
+      // 63: aload 2
+      // 64: ifnonnull ec
+      // 67: goto 6e
+      // 6a: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 6d: athrow
+      // 6e: aload 3
+      // 6f: aload 0
+      // 70: goto 77
+      // 73: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 76: athrow
+      // 77: getfield FN.b Ljava/awt/Button;
+      // 7a: aload 2
+      // 7b: ifnull a3
+      // 7e: if_acmpne 97
+      // 81: goto 88
+      // 84: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 87: athrow
+      // 88: aload 0
+      // 89: invokespecial FN.W ()V
+      // 8c: aload 2
+      // 8d: ifnonnull ec
+      // 90: goto 97
+      // 93: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 96: athrow
+      // 97: aload 3
+      // 98: aload 0
+      // 99: getfield FN.R Ljava/awt/Button;
+      // 9c: goto a3
+      // 9f: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // a2: athrow
+      // a3: aload 2
+      // a4: ifnull d7
+      // a7: if_acmpne c0
+      // aa: goto b1
+      // ad: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // b0: athrow
+      // b1: aload 0
+      // b2: invokespecial FN.u ()V
+      // b5: aload 2
+      // b6: ifnonnull ec
+      // b9: goto c0
+      // bc: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // bf: athrow
+      // c0: aload 3
+      // c1: aload 2
+      // c2: ifnull db
+      // c5: goto cc
+      // c8: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // cb: athrow
+      // cc: aload 0
+      // cd: getfield FN.w Ljava/awt/Button;
+      // d0: goto d7
+      // d3: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // d6: athrow
+      // d7: if_acmpeq e1
+      // da: aload 3
+      // db: instanceof java/awt/TextField
+      // de: ifeq ec
+      // e1: aload 0
+      // e2: invokespecial FN.H ()V
+      // e5: goto ec
+      // e8: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // eb: athrow
+      // ec: return
+   }
+
+   @Override
+   public void itemStateChanged(ItemEvent param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 03: aload 1
+      // 04: invokevirtual java/awt/event/ItemEvent.getSource ()Ljava/lang/Object;
+      // 07: astore 3
+      // 08: astore 2
+      // 09: aload 2
+      // 0a: ifnull 41
+      // 0d: aload 3
+      // 0e: aload 0
+      // 0f: getfield FN.u Ljava/awt/Checkbox;
+      // 12: if_acmpeq 36
+      // 15: goto 1c
+      // 18: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1b: athrow
+      // 1c: aload 3
+      // 1d: aload 0
+      // 1e: getfield FN.I Ljava/awt/Checkbox;
+      // 21: aload 2
+      // 22: ifnull 51
+      // 25: goto 2c
+      // 28: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2b: athrow
+      // 2c: if_acmpne 45
+      // 2f: goto 36
+      // 32: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 35: athrow
+      // 36: aload 0
+      // 37: invokespecial FN.U ()V
+      // 3a: goto 41
+      // 3d: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 40: athrow
+      // 41: aload 2
+      // 42: ifnonnull 5f
+      // 45: aload 3
+      // 46: aload 0
+      // 47: getfield FN.z Ljava/awt/Checkbox;
+      // 4a: goto 51
+      // 4d: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 50: athrow
+      // 51: if_acmpne 5f
+      // 54: aload 0
+      // 55: invokespecial FN.C ()V
+      // 58: goto 5f
+      // 5b: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 5e: athrow
+      // 5f: return
+   }
+
+   @Override
+   public void run() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: invokespecial FN.R ()Z
+      // 08: aload 1
+      // 09: ifnull 73
+      // 0c: ifne 6c
+      // 0f: goto 16
+      // 12: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15: athrow
+      // 16: aload 0
+      // 17: aload 1
+      // 18: ifnull 36
+      // 1b: goto 22
+      // 1e: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 21: athrow
+      // 22: getfield FN.H I
+      // 25: bipush 1
+      // 26: if_icmpeq 35
+      // 29: goto 30
+      // 2c: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2f: athrow
+      // 30: return
+      // 31: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 34: athrow
+      // 35: aload 0
+      // 36: aload 1
+      // 37: ifnull 65
+      // 3a: getfield FN.K Ljava/lang/Thread;
+      // 3d: invokestatic java/lang/Thread.currentThread ()Ljava/lang/Thread;
+      // 40: if_acmpeq 4f
+      // 43: goto 4a
+      // 46: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 49: athrow
+      // 4a: return
+      // 4b: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 4e: athrow
+      // 4f: aload 0
+      // 50: bipush 0
+      // 51: putfield FN.H I
+      // 54: aload 0
+      // 55: getfield FN.r Ljava/awt/Label;
+      // 58: sipush -31322
+      // 5b: sipush 5292
+      // 5e: invokestatic FN.a (II)Ljava/lang/String;
+      // 61: invokevirtual java/awt/Label.setText (Ljava/lang/String;)V
+      // 64: aload 0
+      // 65: getfield FN.r Ljava/awt/Label;
+      // 68: invokevirtual java/awt/Label.invalidate ()V
+      // 6b: return
+      // 6c: aload 0
+      // 6d: getfield FN.X Ljava/awt/Dialog;
+      // 70: invokevirtual java/awt/Dialog.isShowing ()Z
+      // 73: ifeq 6c
+      // 76: aload 0
+      // 77: getfield FN.X Ljava/awt/Dialog;
+      // 7a: aload 1
+      // 7b: ifnull 70
+      // 7e: invokevirtual java/awt/Dialog.dispose ()V
+      // 81: return
+   }
+
+   private void H() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 003: aload 0
+      // 004: aload 0
+      // 005: getfield FN.J Ljava/awt/TextField;
+      // 008: invokevirtual java/awt/TextField.getText ()Ljava/lang/String;
+      // 00b: invokevirtual java/lang/String.trim ()Ljava/lang/String;
+      // 00e: putfield FN.o Ljava/lang/String;
+      // 011: astore 1
+      // 012: aload 0
+      // 013: aload 0
+      // 014: getfield FN.h Ljava/awt/TextField;
+      // 017: invokevirtual java/awt/TextField.getText ()Ljava/lang/String;
+      // 01a: putfield FN.s Ljava/lang/String;
+      // 01d: aload 0
+      // 01e: aload 0
+      // 01f: getfield FN.B Ljava/awt/TextField;
+      // 022: invokevirtual java/awt/TextField.getText ()Ljava/lang/String;
+      // 025: putfield FN.q Ljava/lang/String;
+      // 028: aload 0
+      // 029: aload 1
+      // 02a: ifnull 050
+      // 02d: getfield FN.o Ljava/lang/String;
+      // 030: invokevirtual java/lang/String.length ()I
+      // 033: ifne 04f
+      // 036: goto 03d
+      // 039: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 03c: athrow
+      // 03d: aload 0
+      // 03e: sipush -31312
+      // 041: sipush 12407
+      // 044: invokestatic FN.a (II)Ljava/lang/String;
+      // 047: invokespecial FN.k (Ljava/lang/String;)V
+      // 04a: return
+      // 04b: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 04e: athrow
+      // 04f: aload 0
+      // 050: getfield FN.c Ljava/awt/CheckboxGroup;
+      // 053: invokevirtual java/awt/CheckboxGroup.getSelectedCheckbox ()Ljava/awt/Checkbox;
+      // 056: aload 1
+      // 057: ifnull 09a
+      // 05a: aload 0
+      // 05b: getfield FN.I Ljava/awt/Checkbox;
+      // 05e: if_acmpne 096
+      // 061: goto 068
+      // 064: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 067: athrow
+      // 068: aload 0
+      // 069: aload 1
+      // 06a: ifnull 128
+      // 06d: goto 074
+      // 070: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 073: athrow
+      // 074: getfield FN.s Ljava/lang/String;
+      // 077: invokevirtual java/lang/String.length ()I
+      // 07a: ifne 127
+      // 07d: goto 084
+      // 080: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 083: athrow
+      // 084: aload 0
+      // 085: sipush -31315
+      // 088: sipush -10820
+      // 08b: invokestatic FN.a (II)Ljava/lang/String;
+      // 08e: invokespecial FN.k (Ljava/lang/String;)V
+      // 091: return
+      // 092: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 095: athrow
+      // 096: aload 0
+      // 097: getfield FN.z Ljava/awt/Checkbox;
+      // 09a: invokevirtual java/awt/Checkbox.getState ()Z
+      // 09d: aload 1
+      // 09e: ifnull 112
+      // 0a1: ifeq 100
+      // 0a4: goto 0ab
+      // 0a7: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0aa: athrow
+      // 0ab: aload 0
+      // 0ac: getfield FN.s Ljava/lang/String;
+      // 0af: invokevirtual java/lang/String.length ()I
+      // 0b2: aload 1
+      // 0b3: ifnull 0eb
+      // 0b6: goto 0bd
+      // 0b9: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0bc: athrow
+      // 0bd: ifne 0d9
+      // 0c0: goto 0c7
+      // 0c3: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0c6: athrow
+      // 0c7: aload 0
+      // 0c8: sipush -31323
+      // 0cb: sipush 5725
+      // 0ce: invokestatic FN.a (II)Ljava/lang/String;
+      // 0d1: invokespecial FN.k (Ljava/lang/String;)V
+      // 0d4: return
+      // 0d5: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0d8: athrow
+      // 0d9: aload 0
+      // 0da: aload 1
+      // 0db: ifnull 128
+      // 0de: getfield FN.q Ljava/lang/String;
+      // 0e1: invokevirtual java/lang/String.length ()I
+      // 0e4: goto 0eb
+      // 0e7: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0ea: athrow
+      // 0eb: ifne 127
+      // 0ee: aload 0
+      // 0ef: sipush -31335
+      // 0f2: sipush 32590
+      // 0f5: invokestatic FN.a (II)Ljava/lang/String;
+      // 0f8: invokespecial FN.k (Ljava/lang/String;)V
+      // 0fb: return
+      // 0fc: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0ff: athrow
+      // 100: aload 0
+      // 101: aload 1
+      // 102: ifnull 128
+      // 105: getfield FN.M Ljava/awt/Checkbox;
+      // 108: invokevirtual java/awt/Checkbox.getState ()Z
+      // 10b: goto 112
+      // 10e: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 111: athrow
+      // 112: ifne 127
+      // 115: aload 0
+      // 116: sipush -31300
+      // 119: sipush 9917
+      // 11c: invokestatic FN.a (II)Ljava/lang/String;
+      // 11f: invokespecial FN.k (Ljava/lang/String;)V
+      // 122: return
+      // 123: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 126: athrow
+      // 127: aload 0
+      // 128: aload 0
+      // 129: getfield FN.k Ljava/awt/TextField;
+      // 12c: invokevirtual java/awt/TextField.getText ()Ljava/lang/String;
+      // 12f: invokestatic java/lang/Integer.parseInt (Ljava/lang/String;)I
+      // 132: putfield FN.v I
+      // 135: goto 147
+      // 138: astore 2
+      // 139: aload 0
+      // 13a: sipush -31328
+      // 13d: sipush 289
+      // 140: invokestatic FN.a (II)Ljava/lang/String;
+      // 143: invokespecial FN.k (Ljava/lang/String;)V
+      // 146: return
+      // 147: aload 0
+      // 148: bipush 1
+      // 149: putfield FN.H I
+      // 14c: getstatic FN.g Z
+      // 14f: aload 1
+      // 150: ifnull 1a4
+      // 153: ifeq 199
+      // 156: goto 15d
+      // 159: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 15c: athrow
+      // 15d: aload 0
+      // 15e: new java/lang/Thread
+      // 161: dup
+      // 162: aload 0
+      // 163: invokespecial java/lang/Thread.<init> (Ljava/lang/Runnable;)V
+      // 166: putfield FN.K Ljava/lang/Thread;
+      // 169: aload 0
+      // 16a: getfield FN.K Ljava/lang/Thread;
+      // 16d: invokevirtual java/lang/Thread.start ()V
+      // 170: aload 0
+      // 171: new java/lang/StringBuilder
+      // 174: dup
+      // 175: sipush -31311
+      // 178: sipush -12128
+      // 17b: invokestatic FN.a (II)Ljava/lang/String;
+      // 17e: invokespecial java/lang/StringBuilder.<init> (Ljava/lang/String;)V
+      // 181: aload 0
+      // 182: getfield FN.o Ljava/lang/String;
+      // 185: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 188: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // 18b: invokespecial FN.M (Ljava/lang/String;)V
+      // 18e: aload 1
+      // 18f: ifnonnull 1cb
+      // 192: goto 199
+      // 195: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 198: athrow
+      // 199: aload 0
+      // 19a: invokespecial FN.R ()Z
+      // 19d: goto 1a4
+      // 1a0: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1a3: athrow
+      // 1a4: aload 1
+      // 1a5: ifnull 1da
+      // 1a8: ifne 1cb
+      // 1ab: goto 1b2
+      // 1ae: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1b1: athrow
+      // 1b2: aload 0
+      // 1b3: sipush -31299
+      // 1b6: sipush -12473
+      // 1b9: invokestatic FN.a (II)Ljava/lang/String;
+      // 1bc: invokespecial FN.k (Ljava/lang/String;)V
+      // 1bf: aload 0
+      // 1c0: bipush 0
+      // 1c1: putfield FN.H I
+      // 1c4: goto 1cb
+      // 1c7: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1ca: athrow
+      // 1cb: aload 0
+      // 1cc: aload 1
+      // 1cd: ifnull 1e6
+      // 1d0: getfield FN.H I
+      // 1d3: goto 1da
+      // 1d6: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1d9: athrow
+      // 1da: bipush 1
+      // 1db: if_icmpne 1e9
+      // 1de: aload 0
+      // 1df: goto 1e6
+      // 1e2: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1e5: athrow
+      // 1e6: invokevirtual FN.dispose ()V
+      // 1e9: return
+   }
+
+   private void S() {
+      this.p = null;
+      this.dispose();
+   }
+
+   private void b() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 03: aload 0
+      // 04: getfield FN.F Ljava/awt/TextField;
+      // 07: invokevirtual java/awt/TextField.getText ()Ljava/lang/String;
+      // 0a: astore 2
+      // 0b: aload 2
+      // 0c: invokevirtual java/lang/String.trim ()Ljava/lang/String;
+      // 0f: pop
+      // 10: astore 1
+      // 11: aload 2
+      // 12: invokevirtual java/lang/String.length ()I
+      // 15: ifne 1d
+      // 18: return
+      // 19: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1c: athrow
+      // 1d: aload 0
+      // 1e: getfield FN.Y Ljava/awt/List;
+      // 21: invokevirtual java/awt/List.getItems ()[Ljava/lang/String;
+      // 24: astore 3
+      // 25: bipush 0
+      // 26: istore 4
+      // 28: aload 1
+      // 29: ifnonnull 42
+      // 2c: aload 3
+      // 2d: iload 4
+      // 2f: aaload
+      // 30: aload 2
+      // 31: invokevirtual java/lang/String.equals (Ljava/lang/Object;)Z
+      // 34: ifeq 3f
+      // 37: goto 3e
+      // 3a: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3d: athrow
+      // 3e: return
+      // 3f: iinc 4 1
+      // 42: iload 4
+      // 44: aload 3
+      // 45: arraylength
+      // 46: if_icmplt 2c
+      // 49: aload 0
+      // 4a: getfield FN.Y Ljava/awt/List;
+      // 4d: aload 2
+      // 4e: invokevirtual java/awt/List.add (Ljava/lang/String;)V
+      // 51: aload 0
+      // 52: getfield FN.W LTR;
+      // 55: aload 2
+      // 56: invokevirtual TR.K (Ljava/lang/String;)Z
+      // 59: pop
+      // 5a: aload 1
+      // 5b: ifnull 3f
+      // 5e: return
+   }
+
+   private void W() {
+      String[] var10000 = Jk_2.Y();
+      int var2 = this.Y.getSelectedIndex();
+      String[] var1 = var10000;
+
+      label22: {
+         try {
+            if (var1 == null) {
+               break label22;
             }
-            fN2.B.setEnabled(false);
-        }
-    }
 
-    private void u() {
-        block9: {
-            Thread thread;
-            block10: {
-                FN fN2;
-                String[] stringArray;
-                block8: {
-                    String[] stringArray2 = jk_0.Y();
-                    this.X.dispose();
-                    stringArray = stringArray2;
-                    try {
-                        try {
-                            fN2 = this;
-                            if (stringArray == null) break block8;
-                            if (fN2.H != 1) break block9;
-                        }
-                        catch (NumberFormatException numberFormatException) {
-                            throw FN.a(numberFormatException);
-                        }
-                        this.H = 0;
-                        fN2 = this;
-                    }
-                    catch (NumberFormatException numberFormatException) {
-                        throw FN.a(numberFormatException);
-                    }
-                }
-                try {
-                    try {
-                        thread = fN2.K;
-                        if (stringArray == null) break block10;
-                        if (thread == null) break block9;
-                    }
-                    catch (NumberFormatException numberFormatException) {
-                        throw FN.a(numberFormatException);
-                    }
-                    thread = this.K;
-                }
-                catch (NumberFormatException numberFormatException) {
-                    throw FN.a(numberFormatException);
-                }
+            if (var2 < 0) {
+               return;
             }
-            thread.interrupt();
-        }
-    }
+         } catch (NumberFormatException var3) {
+            throw a(var3);
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    private void O(y_0 var1_1) {
-        block23: {
-            block24: {
-                block20: {
-                    block21: {
-                        block22: {
-                            var2_2 = jk_0.Y();
-                            try {
-                                try {
-                                    try {
-                                        try {
-                                            if (var2_2 == null) break block20;
-                                            if (var1_1.w == 5) {
-                                            }
-                                            ** GOTO lbl47
-                                        }
-                                        catch (NumberFormatException v0) {
-                                            throw FN.a(v0);
-                                        }
-                                        this.c.setSelectedCheckbox(this.u);
-                                        this.U();
-                                        v1 = ((c)var1_1).M(0);
-                                        if (var2_2 == null) break block21;
-                                    }
-                                    catch (NumberFormatException v2) {
-                                        throw FN.a(v2);
-                                    }
-                                    if (v1 == null) break block22;
-                                }
-                                catch (NumberFormatException v3) {
-                                    throw FN.a(v3);
-                                }
-                                this.M.setState(true);
-                            }
-                            catch (NumberFormatException v4) {
-                                throw FN.a(v4);
-                            }
-                        }
-                        v1 = ((c)var1_1).M(2);
-                    }
-                    var3_3 = (zT)v1;
-                    try {
-                        try {
-                            try {
-                                if (var2_2 == null) break block23;
-                                if (var3_3 == null) break block24;
-                            }
-                            catch (NumberFormatException v5) {
-                                throw FN.a(v5);
-                            }
-                            this.h.setText(var3_3.h());
-                            this.B.setText(var3_3.P());
-                            this.z.setState(true);
-                            this.C();
-                            if (var2_2 != null) break block24;
-                        }
-                        catch (NumberFormatException v6) {
-                            throw FN.a(v6);
-                        }
-lbl47:
-                        // 2 sources
+         this.W.R(this.Y.getItem(var2));
+      }
 
-                        this.c.setSelectedCheckbox(this.I);
-                        this.U();
-                    }
-                    catch (NumberFormatException v7) {
-                        throw FN.a(v7);
-                    }
-                }
-                this.h.setText(((x_0)var1_1).i);
+      this.Y.remove(var2);
+      this.Y.select(var2);
+   }
+
+   private void U() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 03: aload 0
+      // 04: getfield FN.c Ljava/awt/CheckboxGroup;
+      // 07: invokevirtual java/awt/CheckboxGroup.getSelectedCheckbox ()Ljava/awt/Checkbox;
+      // 0a: astore 2
+      // 0b: astore 1
+      // 0c: aload 2
+      // 0d: aload 1
+      // 0e: ifnull 60
+      // 11: aload 0
+      // 12: getfield FN.I Ljava/awt/Checkbox;
+      // 15: if_acmpne 4a
+      // 18: goto 1f
+      // 1b: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1e: athrow
+      // 1f: aload 0
+      // 20: getfield FN.h Ljava/awt/TextField;
+      // 23: bipush 1
+      // 24: invokevirtual java/awt/TextField.setEnabled (Z)V
+      // 27: aload 0
+      // 28: getfield FN.B Ljava/awt/TextField;
+      // 2b: bipush 0
+      // 2c: invokevirtual java/awt/TextField.setEnabled (Z)V
+      // 2f: aload 0
+      // 30: getfield FN.M Ljava/awt/Checkbox;
+      // 33: bipush 0
+      // 34: invokevirtual java/awt/Checkbox.setEnabled (Z)V
+      // 37: aload 0
+      // 38: getfield FN.z Ljava/awt/Checkbox;
+      // 3b: bipush 0
+      // 3c: invokevirtual java/awt/Checkbox.setEnabled (Z)V
+      // 3f: aload 1
+      // 40: ifnonnull a8
+      // 43: goto 4a
+      // 46: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 49: athrow
+      // 4a: aload 0
+      // 4b: aload 1
+      // 4c: ifnull 91
+      // 4f: goto 56
+      // 52: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 55: athrow
+      // 56: getfield FN.z Ljava/awt/Checkbox;
+      // 59: goto 60
+      // 5c: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 5f: athrow
+      // 60: invokevirtual java/awt/Checkbox.getState ()Z
+      // 63: ifeq 81
+      // 66: aload 0
+      // 67: getfield FN.h Ljava/awt/TextField;
+      // 6a: bipush 1
+      // 6b: invokevirtual java/awt/TextField.setEnabled (Z)V
+      // 6e: aload 0
+      // 6f: getfield FN.B Ljava/awt/TextField;
+      // 72: bipush 1
+      // 73: invokevirtual java/awt/TextField.setEnabled (Z)V
+      // 76: aload 1
+      // 77: ifnonnull 98
+      // 7a: goto 81
+      // 7d: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 80: athrow
+      // 81: aload 0
+      // 82: getfield FN.h Ljava/awt/TextField;
+      // 85: bipush 0
+      // 86: invokevirtual java/awt/TextField.setEnabled (Z)V
+      // 89: aload 0
+      // 8a: goto 91
+      // 8d: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 90: athrow
+      // 91: getfield FN.B Ljava/awt/TextField;
+      // 94: bipush 0
+      // 95: invokevirtual java/awt/TextField.setEnabled (Z)V
+      // 98: aload 0
+      // 99: getfield FN.M Ljava/awt/Checkbox;
+      // 9c: bipush 1
+      // 9d: invokevirtual java/awt/Checkbox.setEnabled (Z)V
+      // a0: aload 0
+      // a1: getfield FN.z Ljava/awt/Checkbox;
+      // a4: bipush 1
+      // a5: invokevirtual java/awt/Checkbox.setEnabled (Z)V
+      // a8: return
+   }
+
+   private void C() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnull 44
+      // 09: getfield FN.z Ljava/awt/Checkbox;
+      // 0c: invokevirtual java/awt/Checkbox.getState ()Z
+      // 0f: ifeq 34
+      // 12: goto 19
+      // 15: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 18: athrow
+      // 19: aload 0
+      // 1a: getfield FN.h Ljava/awt/TextField;
+      // 1d: bipush 1
+      // 1e: invokevirtual java/awt/TextField.setEnabled (Z)V
+      // 21: aload 0
+      // 22: getfield FN.B Ljava/awt/TextField;
+      // 25: bipush 1
+      // 26: invokevirtual java/awt/TextField.setEnabled (Z)V
+      // 29: aload 1
+      // 2a: ifnonnull 4b
+      // 2d: goto 34
+      // 30: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 33: athrow
+      // 34: aload 0
+      // 35: getfield FN.h Ljava/awt/TextField;
+      // 38: bipush 0
+      // 39: invokevirtual java/awt/TextField.setEnabled (Z)V
+      // 3c: aload 0
+      // 3d: goto 44
+      // 40: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 43: athrow
+      // 44: getfield FN.B Ljava/awt/TextField;
+      // 47: bipush 0
+      // 48: invokevirtual java/awt/TextField.setEnabled (Z)V
+      // 4b: return
+   }
+
+   private void u() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 03: aload 0
+      // 04: getfield FN.X Ljava/awt/Dialog;
+      // 07: invokevirtual java/awt/Dialog.dispose ()V
+      // 0a: astore 1
+      // 0b: aload 0
+      // 0c: aload 1
+      // 0d: ifnull 2b
+      // 10: getfield FN.H I
+      // 13: bipush 1
+      // 14: if_icmpne 4a
+      // 17: goto 1e
+      // 1a: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1d: athrow
+      // 1e: aload 0
+      // 1f: bipush 0
+      // 20: putfield FN.H I
+      // 23: aload 0
+      // 24: goto 2b
+      // 27: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2a: athrow
+      // 2b: getfield FN.K Ljava/lang/Thread;
+      // 2e: aload 1
+      // 2f: ifnull 47
+      // 32: ifnull 4a
+      // 35: goto 3c
+      // 38: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3b: athrow
+      // 3c: aload 0
+      // 3d: getfield FN.K Ljava/lang/Thread;
+      // 40: goto 47
+      // 43: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 46: athrow
+      // 47: invokevirtual java/lang/Thread.interrupt ()V
+      // 4a: return
+   }
+
+   private void O(y_2 param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 003: astore 2
+      // 004: aload 2
+      // 005: ifnull 0b0
+      // 008: aload 1
+      // 009: getfield y_2.w I
+      // 00c: bipush 5
+      // 00d: if_icmpne 09a
+      // 010: goto 017
+      // 013: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 016: athrow
+      // 017: aload 0
+      // 018: getfield FN.c Ljava/awt/CheckboxGroup;
+      // 01b: aload 0
+      // 01c: getfield FN.u Ljava/awt/Checkbox;
+      // 01f: invokevirtual java/awt/CheckboxGroup.setSelectedCheckbox (Ljava/awt/Checkbox;)V
+      // 022: aload 0
+      // 023: invokespecial FN.U ()V
+      // 026: aload 1
+      // 027: checkcast c
+      // 02a: bipush 0
+      // 02b: invokevirtual c.M (I)Lxz_2;
+      // 02e: aload 2
+      // 02f: ifnull 05a
+      // 032: goto 039
+      // 035: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 038: athrow
+      // 039: ifnull 052
+      // 03c: goto 043
+      // 03f: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 042: athrow
+      // 043: aload 0
+      // 044: getfield FN.M Ljava/awt/Checkbox;
+      // 047: bipush 1
+      // 048: invokevirtual java/awt/Checkbox.setState (Z)V
+      // 04b: goto 052
+      // 04e: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 051: athrow
+      // 052: aload 1
+      // 053: checkcast c
+      // 056: bipush 2
+      // 057: invokevirtual c.M (I)Lxz_2;
+      // 05a: checkcast zT
+      // 05d: astore 3
+      // 05e: aload 2
+      // 05f: ifnull 0cc
+      // 062: aload 3
+      // 063: ifnull 0be
+      // 066: goto 06d
+      // 069: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 06c: athrow
+      // 06d: aload 0
+      // 06e: getfield FN.h Ljava/awt/TextField;
+      // 071: aload 3
+      // 072: invokevirtual zT.h ()Ljava/lang/String;
+      // 075: invokevirtual java/awt/TextField.setText (Ljava/lang/String;)V
+      // 078: aload 0
+      // 079: getfield FN.B Ljava/awt/TextField;
+      // 07c: aload 3
+      // 07d: invokevirtual zT.P ()Ljava/lang/String;
+      // 080: invokevirtual java/awt/TextField.setText (Ljava/lang/String;)V
+      // 083: aload 0
+      // 084: getfield FN.z Ljava/awt/Checkbox;
+      // 087: bipush 1
+      // 088: invokevirtual java/awt/Checkbox.setState (Z)V
+      // 08b: aload 0
+      // 08c: invokespecial FN.C ()V
+      // 08f: aload 2
+      // 090: ifnonnull 0be
+      // 093: goto 09a
+      // 096: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 099: athrow
+      // 09a: aload 0
+      // 09b: getfield FN.c Ljava/awt/CheckboxGroup;
+      // 09e: aload 0
+      // 09f: getfield FN.I Ljava/awt/Checkbox;
+      // 0a2: invokevirtual java/awt/CheckboxGroup.setSelectedCheckbox (Ljava/awt/Checkbox;)V
+      // 0a5: aload 0
+      // 0a6: invokespecial FN.U ()V
+      // 0a9: goto 0b0
+      // 0ac: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0af: athrow
+      // 0b0: aload 0
+      // 0b1: getfield FN.h Ljava/awt/TextField;
+      // 0b4: aload 1
+      // 0b5: checkcast x_2
+      // 0b8: getfield x_2.i Ljava/lang/String;
+      // 0bb: invokevirtual java/awt/TextField.setText (Ljava/lang/String;)V
+      // 0be: aload 0
+      // 0bf: aload 1
+      // 0c0: getfield y_2.s LTR;
+      // 0c3: invokevirtual TR.clone ()Ljava/lang/Object;
+      // 0c6: checkcast TR
+      // 0c9: putfield FN.W LTR;
+      // 0cc: aload 0
+      // 0cd: getfield FN.W LTR;
+      // 0d0: invokevirtual TR.D ()[Ljava/lang/String;
+      // 0d3: astore 3
+      // 0d4: aload 0
+      // 0d5: getfield FN.Y Ljava/awt/List;
+      // 0d8: invokevirtual java/awt/List.removeAll ()V
+      // 0db: bipush 0
+      // 0dc: istore 4
+      // 0de: aload 2
+      // 0df: ifnonnull 0f7
+      // 0e2: aload 0
+      // 0e3: getfield FN.Y Ljava/awt/List;
+      // 0e6: aload 3
+      // 0e7: iload 4
+      // 0e9: aaload
+      // 0ea: invokevirtual java/awt/List.add (Ljava/lang/String;)V
+      // 0ed: goto 0f4
+      // 0f0: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0f3: athrow
+      // 0f4: iinc 4 1
+      // 0f7: iload 4
+      // 0f9: aload 3
+      // 0fa: arraylength
+      // 0fb: if_icmplt 0e2
+      // 0fe: aload 0
+      // 0ff: getfield FN.J Ljava/awt/TextField;
+      // 102: aload 1
+      // 103: getfield y_2.v Ljava/net/InetAddress;
+      // 106: invokevirtual java/net/InetAddress.getHostName ()Ljava/lang/String;
+      // 109: invokevirtual java/awt/TextField.setText (Ljava/lang/String;)V
+      // 10c: aload 0
+      // 10d: getfield FN.k Ljava/awt/TextField;
+      // 110: new java/lang/StringBuilder
+      // 113: dup
+      // 114: invokespecial java/lang/StringBuilder.<init> ()V
+      // 117: aload 1
+      // 118: getfield y_2.k I
+      // 11b: invokevirtual java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+      // 11e: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // 121: invokevirtual java/awt/TextField.setText (Ljava/lang/String;)V
+      // 124: aload 2
+      // 125: ifnull 0f4
+      // 128: return
+   }
+
+   private boolean R() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Jk_2.Y ()[Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnull a3
+      // 09: getfield FN.c Ljava/awt/CheckboxGroup;
+      // 0c: invokevirtual java/awt/CheckboxGroup.getSelectedCheckbox ()Ljava/awt/Checkbox;
+      // 0f: aload 0
+      // 10: getfield FN.u Ljava/awt/Checkbox;
+      // 13: if_acmpne 9b
+      // 16: goto 1d
+      // 19: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1c: athrow
+      // 1d: aload 0
+      // 1e: new c
+      // 21: dup
+      // 22: aload 0
+      // 23: getfield FN.o Ljava/lang/String;
+      // 26: aload 0
+      // 27: getfield FN.v I
+      // 2a: invokespecial c.<init> (Ljava/lang/String;I)V
+      // 2d: putfield FN.p Ly_2;
+      // 30: aload 0
+      // 31: getfield FN.z Ljava/awt/Checkbox;
+      // 34: invokevirtual java/awt/Checkbox.getState ()Z
+      // 37: aload 1
+      // 38: ifnull 75
+      // 3b: goto 42
+      // 3e: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 41: athrow
+      // 42: ifeq 6e
+      // 45: goto 4c
+      // 48: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 4b: athrow
+      // 4c: aload 0
+      // 4d: getfield FN.p Ly_2;
+      // 50: checkcast c
+      // 53: bipush 2
+      // 54: new zT
+      // 57: dup
+      // 58: aload 0
+      // 59: getfield FN.s Ljava/lang/String;
+      // 5c: aload 0
+      // 5d: getfield FN.q Ljava/lang/String;
+      // 60: invokespecial zT.<init> (Ljava/lang/String;Ljava/lang/String;)V
+      // 63: invokevirtual c.d (ILxz_2;)Z
+      // 66: pop
+      // 67: goto 6e
+      // 6a: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 6d: athrow
+      // 6e: aload 0
+      // 6f: getfield FN.M Ljava/awt/Checkbox;
+      // 72: invokevirtual java/awt/Checkbox.getState ()Z
+      // 75: aload 1
+      // 76: ifnull cb
+      // 79: ifne bf
+      // 7c: goto 83
+      // 7f: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 82: athrow
+      // 83: aload 0
+      // 84: getfield FN.p Ly_2;
+      // 87: checkcast c
+      // 8a: bipush 0
+      // 8b: aconst_null
+      // 8c: invokevirtual c.d (ILxz_2;)Z
+      // 8f: pop
+      // 90: aload 1
+      // 91: ifnonnull bf
+      // 94: goto 9b
+      // 97: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 9a: athrow
+      // 9b: aload 0
+      // 9c: goto a3
+      // 9f: invokestatic FN.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // a2: athrow
+      // a3: new x_2
+      // a6: dup
+      // a7: aload 0
+      // a8: getfield FN.o Ljava/lang/String;
+      // ab: aload 0
+      // ac: getfield FN.v I
+      // af: aload 0
+      // b0: getfield FN.s Ljava/lang/String;
+      // b3: invokespecial x_2.<init> (Ljava/lang/String;ILjava/lang/String;)V
+      // b6: putfield FN.p Ly_2;
+      // b9: goto bf
+      // bc: astore 2
+      // bd: bipush 0
+      // be: ireturn
+      // bf: aload 0
+      // c0: getfield FN.p Ly_2;
+      // c3: aload 0
+      // c4: getfield FN.W LTR;
+      // c7: putfield y_2.s LTR;
+      // ca: bipush 1
+      // cb: ireturn
+   }
+
+   private void M(String var1) {
+      this.r(a(-31320, -21973), var1);
+   }
+
+   private void k(String var1) {
+      this.r(a(-31317, -31935), var1);
+   }
+
+   private void r(String var1, String var2) {
+      this.r.setText(var2);
+      this.r.invalidate();
+      this.X.setTitle(var1);
+      this.X.pack();
+      this.X.show();
+   }
+
+   void r() {
+      GridBagConstraints var5 = new GridBagConstraints();
+      Font var4 = new Font(a(-31303, 25133), 0, a(6807, 775895429429400695L));
+      this.setLayout(new GridBagLayout());
+      this.setFont(var4);
+      this.setBackground(SystemColor.menu);
+      var5.insets = new Insets(3, 3, 3, 3);
+      var5.gridx = 0;
+      var5.gridy = 0;
+      var5.gridwidth = 1;
+      var5.gridheight = 1;
+      var5.anchor = a(31470, 2298113761938207773L);
+      Label var2 = new Label(a(-31324, -23210));
+      this.add(var2, var5);
+      var5.gridx = 1;
+      var5.gridy = 0;
+      var5.gridwidth = 2;
+      var5.gridheight = 1;
+      var5.anchor = a(15795, 5163532686765994833L);
+      this.J = new TextField(a(-31316, -18674), a(15850, 2117661140740485897L));
+      this.add(this.J, var5);
+      var5.gridx = 3;
+      var5.gridy = 0;
+      var5.gridwidth = 1;
+      var5.gridheight = 1;
+      var5.anchor = a(31470, 2298113761938207773L);
+      var2 = new Label(a(-31307, -21321));
+      this.add(var2, var5);
+      var5.gridx = 4;
+      var5.gridy = 0;
+      var5.gridwidth = 1;
+      var5.gridheight = 1;
+      var5.anchor = a(26802, 7832136317888521792L);
+      this.k = new TextField(a(-31306, 6395), 5);
+      this.add(this.k, var5);
+      var5.gridx = 0;
+      var5.gridy = 1;
+      var5.gridwidth = 3;
+      var5.gridheight = 1;
+      var5.anchor = a(21132, 4478431141609462909L);
+      this.I = new Checkbox(a(-31302, -24280), this.c, false);
+      this.I.setFont(new Font(var4.getName(), 1, a(25249, 3705123695549049926L)));
+      String[] var10000 = Jk_2.Y();
+      this.add(this.I, var5);
+      var5.gridx = 3;
+      var5.gridy = 1;
+      var5.gridwidth = 2;
+      var5.gridheight = 1;
+      var5.anchor = a(16008, 3956738837904666734L);
+      this.u = new Checkbox(a(-31325, 12949), this.c, true);
+      this.u.setFont(new Font(var4.getName(), 1, a(27537, 5300129419818853754L)));
+      this.add(this.u, var5);
+      var5.gridx = 0;
+      var5.gridy = 2;
+      var5.gridwidth = 1;
+      var5.gridheight = 1;
+      var5.anchor = a(1061, 7744224220449016513L);
+      var2 = new Label(a(-31314, 30999));
+      this.add(var2, var5);
+      var5.gridx = 1;
+      var5.gridy = 2;
+      var5.gridwidth = 2;
+      var5.gridheight = 1;
+      var5.anchor = a(26802, 7832136317888521792L);
+      this.h = new TextField("", a(15267, 4019817827809637710L));
+      this.h.setEnabled(false);
+      this.add(this.h, var5);
+      var5.gridx = 3;
+      var5.gridy = 2;
+      var5.gridwidth = 2;
+      var5.gridheight = 1;
+      var5.anchor = a(16008, 3956738837904666734L);
+      var2 = new Label(a(-31321, -31009));
+      var2.setFont(new Font(var4.getName(), 1, a(27537, 5300129419818853754L)));
+      this.add(var2, var5);
+      var5.gridx = 0;
+      var5.gridy = 3;
+      var5.gridwidth = 1;
+      var5.gridheight = 1;
+      var5.anchor = a(21080, 6569904376572730551L);
+      var2 = new Label(a(-31313, 19958));
+      this.add(var2, var5);
+      var5.gridx = 1;
+      var5.gridy = 3;
+      var5.gridwidth = 2;
+      var5.gridheight = 1;
+      var5.anchor = a(26802, 7832136317888521792L);
+      this.B = new TextField("", a(15267, 4019817827809637710L));
+      this.B.setEchoChar((char)a(10224, 2020424530237761822L));
+      String[] var1 = var10000;
+      this.B.setEnabled(false);
+      this.add(this.B, var5);
+      var5.gridx = 3;
+      var5.gridy = 3;
+      var5.gridwidth = 2;
+      var5.gridheight = 1;
+      var5.anchor = a(26802, 7832136317888521792L);
+      this.M = new Checkbox(a(-31319, 20621), true);
+      this.add(this.M, var5);
+      var5.gridx = 0;
+      var5.gridy = 4;
+      var5.gridwidth = 3;
+      var5.gridheight = 1;
+      var5.anchor = a(16008, 3956738837904666734L);
+      var2 = new Label(a(-31308, 29478));
+      var2.setFont(new Font(var4.getName(), 1, a(27537, 5300129419818853754L)));
+      this.add(var2, var5);
+      var5.gridx = 3;
+      var5.gridy = 4;
+      var5.gridwidth = 2;
+      var5.gridheight = 1;
+      var5.anchor = a(26802, 7832136317888521792L);
+      this.z = new Checkbox(a(-31305, 26965), false);
+      this.add(this.z, var5);
+      var5.gridx = 0;
+      var5.gridy = 5;
+      var5.gridwidth = 3;
+      var5.gridheight = 2;
+      var5.anchor = a(26802, 7832136317888521792L);
+      var5.fill = 1;
+      this.Y = new List(3);
+      this.add(this.Y, var5);
+      var5.gridx = 3;
+      var5.gridy = 5;
+      var5.gridwidth = 2;
+      var5.gridheight = 1;
+      var5.anchor = a(26802, 7832136317888521792L);
+      this.N = new Checkbox(a(-31336, 8788), false);
+      this.N.setEnabled(false);
+      this.add(this.N, var5);
+      var5.gridx = 0;
+      var5.gridy = a(13840, 8367348394847516920L);
+      var5.gridwidth = 3;
+      var5.gridheight = 1;
+      var5.anchor = a(26802, 7832136317888521792L);
+      this.F = new TextField("", a(1504, 314711578769033989L));
+      this.add(this.F, var5);
+      var5.gridx = 3;
+      var5.gridy = a(9612, 6017605938358299493L);
+      var5.gridwidth = 1;
+      var5.gridheight = 1;
+      var5.anchor = a(16008, 3956738837904666734L);
+      this.D = new Button(a(-31304, -11554));
+      this.add(this.D, var5);
+      var5.gridx = 3;
+      var5.gridy = a(12829, 161375588412013820L);
+      var5.gridwidth = 1;
+      var5.gridheight = 1;
+      var5.anchor = a(16008, 3956738837904666734L);
+      this.b = new Button(a(-31318, 23698));
+      this.add(this.b, var5);
+      var5.gridx = 1;
+      var5.gridy = a(29454, 2385359241553444322L);
+      var5.gridwidth = 1;
+      var5.gridheight = 1;
+      var5.anchor = a(16008, 3956738837904666734L);
+      this.j = new Button(a(-31309, 22667));
+      this.add(this.j, var5);
+      var5.gridx = 0;
+      var5.gridy = a(593, 2941640922776243387L);
+      var5.gridwidth = 1;
+      var5.gridheight = 1;
+      var5.anchor = a(26802, 7832136317888521792L);
+      this.w = new Button(a(-31327, -23399));
+      this.add(this.w, var5);
+      this.R = new Button(a(-31333, 10488));
+      this.r = new Label("", 1);
+      this.r.setFont(new Font(a(-31326, 16823), 1, a(15267, 4019817827809637710L)));
+      Panel var6 = new Panel();
+
+      try {
+         var6.add(this.R);
+         this.X.add(var6, a(-31301, 6995));
+         this.X.add(this.r, a(-31297, -26099));
+         this.X.setResizable(false);
+         if (var1 == null) {
+            com.ky_4.K(new String[4]);
+         }
+      } catch (NumberFormatException var7) {
+         throw a(var7);
+      }
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
+
+   private static String a(int var0, int var1) {
+      int var2 = (var0 ^ -31303) & 65535;
+      if (d[var2] == null) {
+         char[] var3 = a[var2].toCharArray();
+         short var10000;
+         switch (var3[0] & 0xFF) {
+            case 0:
+               var10000 = 190;
+               break;
+            case 1:
+               var10000 = 185;
+               break;
+            case 2:
+               var10000 = 208;
+               break;
+            case 3:
+               var10000 = 236;
+               break;
+            case 4:
+               var10000 = 238;
+               break;
+            case 5:
+               var10000 = 11;
+               break;
+            case 6:
+               var10000 = 207;
+               break;
+            case 7:
+               var10000 = 78;
+               break;
+            case 8:
+               var10000 = 56;
+               break;
+            case 9:
+               var10000 = 85;
+               break;
+            case 10:
+               var10000 = 6;
+               break;
+            case 11:
+               var10000 = 110;
+               break;
+            case 12:
+               var10000 = 235;
+               break;
+            case 13:
+               var10000 = 249;
+               break;
+            case 14:
+               var10000 = 88;
+               break;
+            case 15:
+               var10000 = 186;
+               break;
+            case 16:
+               var10000 = 2;
+               break;
+            case 17:
+               var10000 = 70;
+               break;
+            case 18:
+               var10000 = 215;
+               break;
+            case 19:
+               var10000 = 143;
+               break;
+            case 20:
+               var10000 = 20;
+               break;
+            case 21:
+               var10000 = 77;
+               break;
+            case 22:
+               var10000 = 119;
+               break;
+            case 23:
+               var10000 = 74;
+               break;
+            case 24:
+               var10000 = 187;
+               break;
+            case 25:
+               var10000 = 79;
+               break;
+            case 26:
+               var10000 = 72;
+               break;
+            case 27:
+               var10000 = 51;
+               break;
+            case 28:
+               var10000 = 241;
+               break;
+            case 29:
+               var10000 = 64;
+               break;
+            case 30:
+               var10000 = 73;
+               break;
+            case 31:
+               var10000 = 147;
+               break;
+            case 32:
+               var10000 = 170;
+               break;
+            case 33:
+               var10000 = 146;
+               break;
+            case 34:
+               var10000 = 60;
+               break;
+            case 35:
+               var10000 = 131;
+               break;
+            case 36:
+               var10000 = 152;
+               break;
+            case 37:
+               var10000 = 156;
+               break;
+            case 38:
+               var10000 = 98;
+               break;
+            case 39:
+               var10000 = 223;
+               break;
+            case 40:
+               var10000 = 125;
+               break;
+            case 41:
+               var10000 = 102;
+               break;
+            case 42:
+               var10000 = 168;
+               break;
+            case 43:
+               var10000 = 255;
+               break;
+            case 44:
+               var10000 = 248;
+               break;
+            case 45:
+               var10000 = 3;
+               break;
+            case 46:
+               var10000 = 63;
+               break;
+            case 47:
+               var10000 = 23;
+               break;
+            case 48:
+               var10000 = 144;
+               break;
+            case 49:
+               var10000 = 210;
+               break;
+            case 50:
+               var10000 = 97;
+               break;
+            case 51:
+               var10000 = 113;
+               break;
+            case 52:
+               var10000 = 160;
+               break;
+            case 53:
+               var10000 = 145;
+               break;
+            case 54:
+               var10000 = 254;
+               break;
+            case 55:
+               var10000 = 31;
+               break;
+            case 56:
+               var10000 = 213;
+               break;
+            case 57:
+               var10000 = 59;
+               break;
+            case 58:
+               var10000 = 36;
+               break;
+            case 59:
+               var10000 = 151;
+               break;
+            case 60:
+               var10000 = 62;
+               break;
+            case 61:
+               var10000 = 43;
+               break;
+            case 62:
+               var10000 = 224;
+               break;
+            case 63:
+               var10000 = 10;
+               break;
+            case 64:
+               var10000 = 164;
+               break;
+            case 65:
+               var10000 = 35;
+               break;
+            case 66:
+               var10000 = 105;
+               break;
+            case 67:
+               var10000 = 188;
+               break;
+            case 68:
+               var10000 = 158;
+               break;
+            case 69:
+               var10000 = 15;
+               break;
+            case 70:
+               var10000 = 167;
+               break;
+            case 71:
+               var10000 = 115;
+               break;
+            case 72:
+               var10000 = 177;
+               break;
+            case 73:
+               var10000 = 81;
+               break;
+            case 74:
+               var10000 = 138;
+               break;
+            case 75:
+               var10000 = 232;
+               break;
+            case 76:
+               var10000 = 33;
+               break;
+            case 77:
+               var10000 = 247;
+               break;
+            case 78:
+               var10000 = 173;
+               break;
+            case 79:
+               var10000 = 124;
+               break;
+            case 80:
+               var10000 = 191;
+               break;
+            case 81:
+               var10000 = 96;
+               break;
+            case 82:
+               var10000 = 237;
+               break;
+            case 83:
+               var10000 = 252;
+               break;
+            case 84:
+               var10000 = 101;
+               break;
+            case 85:
+               var10000 = 166;
+               break;
+            case 86:
+               var10000 = 198;
+               break;
+            case 87:
+               var10000 = 211;
+               break;
+            case 88:
+               var10000 = 140;
+               break;
+            case 89:
+               var10000 = 139;
+               break;
+            case 90:
+               var10000 = 217;
+               break;
+            case 91:
+               var10000 = 13;
+               break;
+            case 92:
+               var10000 = 226;
+               break;
+            case 93:
+               var10000 = 240;
+               break;
+            case 94:
+               var10000 = 89;
+               break;
+            case 95:
+               var10000 = 153;
+               break;
+            case 96:
+               var10000 = 212;
+               break;
+            case 97:
+               var10000 = 171;
+               break;
+            case 98:
+               var10000 = 69;
+               break;
+            case 99:
+               var10000 = 19;
+               break;
+            case 100:
+               var10000 = 57;
+               break;
+            case 101:
+               var10000 = 114;
+               break;
+            case 102:
+               var10000 = 123;
+               break;
+            case 103:
+               var10000 = 244;
+               break;
+            case 104:
+               var10000 = 117;
+               break;
+            case 105:
+               var10000 = 95;
+               break;
+            case 106:
+               var10000 = 22;
+               break;
+            case 107:
+               var10000 = 130;
+               break;
+            case 108:
+               var10000 = 39;
+               break;
+            case 109:
+               var10000 = 106;
+               break;
+            case 110:
+               var10000 = 53;
+               break;
+            case 111:
+               var10000 = 41;
+               break;
+            case 112:
+               var10000 = 222;
+               break;
+            case 113:
+               var10000 = 253;
+               break;
+            case 114:
+               var10000 = 108;
+               break;
+            case 115:
+               var10000 = 118;
+               break;
+            case 116:
+               var10000 = 154;
+               break;
+            case 117:
+               var10000 = 30;
+               break;
+            case 118:
+               var10000 = 127;
+               break;
+            case 119:
+               var10000 = 28;
+               break;
+            case 120:
+               var10000 = 209;
+               break;
+            case 121:
+               var10000 = 227;
+               break;
+            case 122:
+               var10000 = 245;
+               break;
+            case 123:
+               var10000 = 192;
+               break;
+            case 124:
+               var10000 = 250;
+               break;
+            case 125:
+               var10000 = 228;
+               break;
+            case 126:
+               var10000 = 1;
+               break;
+            case 127:
+               var10000 = 68;
+               break;
+            case 128:
+               var10000 = 194;
+               break;
+            case 129:
+               var10000 = 169;
+               break;
+            case 130:
+               var10000 = 219;
+               break;
+            case 131:
+               var10000 = 200;
+               break;
+            case 132:
+               var10000 = 161;
+               break;
+            case 133:
+               var10000 = 91;
+               break;
+            case 134:
+               var10000 = 32;
+               break;
+            case 135:
+               var10000 = 99;
+               break;
+            case 136:
+               var10000 = 128;
+               break;
+            case 137:
+               var10000 = 178;
+               break;
+            case 138:
+               var10000 = 44;
+               break;
+            case 139:
+               var10000 = 231;
+               break;
+            case 140:
+               var10000 = 75;
+               break;
+            case 141:
+               var10000 = 47;
+               break;
+            case 142:
+               var10000 = 205;
+               break;
+            case 143:
+               var10000 = 112;
+               break;
+            case 144:
+               var10000 = 243;
+               break;
+            case 145:
+               var10000 = 233;
+               break;
+            case 146:
+               var10000 = 38;
+               break;
+            case 147:
+               var10000 = 7;
+               break;
+            case 148:
+               var10000 = 8;
+               break;
+            case 149:
+               var10000 = 87;
+               break;
+            case 150:
+               var10000 = 104;
+               break;
+            case 151:
+               var10000 = 16;
+               break;
+            case 152:
+               var10000 = 122;
+               break;
+            case 153:
+               var10000 = 165;
+               break;
+            case 154:
+               var10000 = 0;
+               break;
+            case 155:
+               var10000 = 239;
+               break;
+            case 156:
+               var10000 = 242;
+               break;
+            case 157:
+               var10000 = 181;
+               break;
+            case 158:
+               var10000 = 129;
+               break;
+            case 159:
+               var10000 = 189;
+               break;
+            case 160:
+               var10000 = 100;
+               break;
+            case 161:
+               var10000 = 157;
+               break;
+            case 162:
+               var10000 = 45;
+               break;
+            case 163:
+               var10000 = 204;
+               break;
+            case 164:
+               var10000 = 111;
+               break;
+            case 165:
+               var10000 = 251;
+               break;
+            case 166:
+               var10000 = 29;
+               break;
+            case 167:
+               var10000 = 135;
+               break;
+            case 168:
+               var10000 = 229;
+               break;
+            case 169:
+               var10000 = 180;
+               break;
+            case 170:
+               var10000 = 183;
+               break;
+            case 171:
+               var10000 = 136;
+               break;
+            case 172:
+               var10000 = 37;
+               break;
+            case 173:
+               var10000 = 121;
+               break;
+            case 174:
+               var10000 = 133;
+               break;
+            case 175:
+               var10000 = 80;
+               break;
+            case 176:
+               var10000 = 46;
+               break;
+            case 177:
+               var10000 = 159;
+               break;
+            case 178:
+               var10000 = 175;
+               break;
+            case 179:
+               var10000 = 195;
+               break;
+            case 180:
+               var10000 = 54;
+               break;
+            case 181:
+               var10000 = 84;
+               break;
+            case 182:
+               var10000 = 214;
+               break;
+            case 183:
+               var10000 = 55;
+               break;
+            case 184:
+               var10000 = 141;
+               break;
+            case 185:
+               var10000 = 142;
+               break;
+            case 186:
+               var10000 = 176;
+               break;
+            case 187:
+               var10000 = 134;
+               break;
+            case 188:
+               var10000 = 150;
+               break;
+            case 189:
+               var10000 = 27;
+               break;
+            case 190:
+               var10000 = 199;
+               break;
+            case 191:
+               var10000 = 40;
+               break;
+            case 192:
+               var10000 = 71;
+               break;
+            case 193:
+               var10000 = 230;
+               break;
+            case 194:
+               var10000 = 184;
+               break;
+            case 195:
+               var10000 = 206;
+               break;
+            case 196:
+               var10000 = 9;
+               break;
+            case 197:
+               var10000 = 196;
+               break;
+            case 198:
+               var10000 = 174;
+               break;
+            case 199:
+               var10000 = 225;
+               break;
+            case 200:
+               var10000 = 126;
+               break;
+            case 201:
+               var10000 = 203;
+               break;
+            case 202:
+               var10000 = 216;
+               break;
+            case 203:
+               var10000 = 24;
+               break;
+            case 204:
+               var10000 = 163;
+               break;
+            case 205:
+               var10000 = 18;
+               break;
+            case 206:
+               var10000 = 93;
+               break;
+            case 207:
+               var10000 = 67;
+               break;
+            case 208:
+               var10000 = 50;
+               break;
+            case 209:
+               var10000 = 61;
+               break;
+            case 210:
+               var10000 = 107;
+               break;
+            case 211:
+               var10000 = 52;
+               break;
+            case 212:
+               var10000 = 162;
+               break;
+            case 213:
+               var10000 = 25;
+               break;
+            case 214:
+               var10000 = 132;
+               break;
+            case 215:
+               var10000 = 42;
+               break;
+            case 216:
+               var10000 = 14;
+               break;
+            case 217:
+               var10000 = 116;
+               break;
+            case 218:
+               var10000 = 179;
+               break;
+            case 219:
+               var10000 = 220;
+               break;
+            case 220:
+               var10000 = 65;
+               break;
+            case 221:
+               var10000 = 197;
+               break;
+            case 222:
+               var10000 = 202;
+               break;
+            case 223:
+               var10000 = 92;
+               break;
+            case 224:
+               var10000 = 83;
+               break;
+            case 225:
+               var10000 = 246;
+               break;
+            case 226:
+               var10000 = 94;
+               break;
+            case 227:
+               var10000 = 86;
+               break;
+            case 228:
+               var10000 = 5;
+               break;
+            case 229:
+               var10000 = 103;
+               break;
+            case 230:
+               var10000 = 17;
+               break;
+            case 231:
+               var10000 = 48;
+               break;
+            case 232:
+               var10000 = 34;
+               break;
+            case 233:
+               var10000 = 221;
+               break;
+            case 234:
+               var10000 = 12;
+               break;
+            case 235:
+               var10000 = 76;
+               break;
+            case 236:
+               var10000 = 218;
+               break;
+            case 237:
+               var10000 = 21;
+               break;
+            case 238:
+               var10000 = 82;
+               break;
+            case 239:
+               var10000 = 148;
+               break;
+            case 240:
+               var10000 = 109;
+               break;
+            case 241:
+               var10000 = 155;
+               break;
+            case 242:
+               var10000 = 58;
+               break;
+            case 243:
+               var10000 = 90;
+               break;
+            case 244:
+               var10000 = 193;
+               break;
+            case 245:
+               var10000 = 234;
+               break;
+            case 246:
+               var10000 = 49;
+               break;
+            case 247:
+               var10000 = 26;
+               break;
+            case 248:
+               var10000 = 149;
+               break;
+            case 249:
+               var10000 = 182;
+               break;
+            case 250:
+               var10000 = 66;
+               break;
+            case 251:
+               var10000 = 137;
+               break;
+            case 252:
+               var10000 = 120;
+               break;
+            case 253:
+               var10000 = 172;
+               break;
+            case 254:
+               var10000 = 201;
+               break;
+            default:
+               var10000 = 4;
+         }
+
+         short var4 = var10000;
+         int var5 = (var1 & 0xFF) - var4;
+         if (var5 < 0) {
+            var5 += 256;
+         }
+
+         int var6 = ((var1 & 65535) >>> 8) - var4;
+         if (var6 < 0) {
+            var6 += 256;
+         }
+
+         for (int var7 = 0; var7 < var3.length; var7++) {
+            int var8 = var7 % 2;
+            char var10002 = var3[var7];
+            if (var8 == 0) {
+               var3[var7] = (char)(var10002 ^ var5);
+               var5 = ((var5 >>> 3 | var5 << 5) ^ var3[var7]) & 0xFF;
+            } else {
+               var3[var7] = (char)(var10002 ^ var6);
+               var6 = ((var6 >>> 3 | var6 << 5) ^ var3[var7]) & 0xFF;
             }
-            this.W = (TR)var1_1.s.clone();
-        }
-        var3_3 = this.W.D();
-        this.Y.removeAll();
-        var4_4 = 0;
-        try {
-            if (var2_2 == null) {
-                while (true) {
-                    this.Y.add(var3_3[var4_4]);
-                    break;
-                }
-            }
-            ** GOTO lbl70
-        }
-        catch (NumberFormatException v8) {
-            throw FN.a(v8);
-        }
-        do {
-            ++var4_4;
-lbl70:
-            // 2 sources
+         }
 
-            if (var4_4 < ((String[])var3_3).length) ** continue;
-            this.J.setText(var1_1.v.getHostName());
-            this.k.setText("" + var1_1.k);
-        } while (var2_2 == null);
-    }
+         d[var2] = new String(var3).intern();
+      }
 
-    /*
-     * Unable to fully structure code
-     */
-    private boolean R() {
-        block19: {
-            block20: {
-                var1_1 = jk_0.Y();
-                try {
-                    block16: {
-                        block24: {
-                            block17: {
-                                block18: {
-                                    block22: {
-                                        block21: {
-                                            v0 = this;
-                                            if (var1_1 == null) break block16;
-                                            if (v0.c.getSelectedCheckbox() != this.u) ** GOTO lbl49
-                                            break block21;
-                                            catch (UnknownHostException v1) {
-                                                throw FN.a(v1);
-                                            }
-                                        }
-                                        this.p = new c(this.o, this.v);
-                                        v2 = this.z.getState();
-                                        if (var1_1 == null) break block17;
-                                        break block22;
-                                        catch (UnknownHostException v3) {
-                                            throw FN.a(v3);
-                                        }
-                                    }
-                                    try {
-                                        block23: {
-                                            if (!v2) break block18;
-                                            break block23;
-                                            catch (UnknownHostException v4) {
-                                                throw FN.a(v4);
-                                            }
-                                        }
-                                        ((c)this.p).d(2, new zT(this.s, this.q));
-                                    }
-                                    catch (UnknownHostException v5) {
-                                        throw FN.a(v5);
-                                    }
-                                }
-                                v2 = this.M.getState();
-                            }
-                            if (var1_1 == null) break block19;
-                            if (v2) break block20;
-                            break block24;
-                            catch (UnknownHostException v6) {
-                                throw FN.a(v6);
-                            }
-                        }
-                        try {
-                            block25: {
-                                ((c)this.p).d(0, null);
-                                if (var1_1 != null) break block20;
-                                break block25;
-                                catch (UnknownHostException v7) {
-                                    throw FN.a(v7);
-                                }
-                            }
-                            v0 = this;
-                        }
-                        catch (UnknownHostException v8) {
-                            throw FN.a(v8);
-                        }
-                    }
-                    v0.p = new x_0(this.o, this.v, this.s);
-                }
-                catch (UnknownHostException var2_2) {
-                    return false;
-                }
-            }
-            this.p.s = this.W;
-            v2 = true;
-        }
-        return v2;
-    }
+      return d[var2];
+   }
 
-    private void M(String string) {
-        this.r("Info", string);
-    }
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 3811;
+      if (f[var3] == null) {
+         f[var3] = (int)(e[var3] ^ var1);
+      }
 
-    private void k(String string) {
-        this.r("Warning", string);
-    }
-
-    private void r(String string, String string2) {
-        this.r.setText(string2);
-        this.r.invalidate();
-        this.X.setTitle(string);
-        this.X.pack();
-        this.X.show();
-    }
-
-    void r() {
-        GridBagConstraints gridBagConstraints = new GridBagConstraints();
-        Font font = new Font("Dialog", 0, FN.a(6807, 775895429429400695L));
-        FN fN2 = this;
-        fN2.setLayout(new GridBagLayout());
-        fN2.setFont(font);
-        ((Component)fN2).setBackground(SystemColor.menu);
-        gridBagConstraints.insets = new Insets(3, 3, 3, 3);
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 1;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(31470, 2298113761938207773L);
-        Label label = new Label("Host:");
-        fN2.add((Component)label, gridBagConstraints);
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(15795, 5163532686765994833L);
-        this.J = new TextField("socks-proxy", FN.a(15850, 2117661140740485897L));
-        fN2.add((Component)this.J, gridBagConstraints);
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 1;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(31470, 2298113761938207773L);
-        label = new Label("Port:");
-        fN2.add((Component)label, gridBagConstraints);
-        gridBagConstraints.gridx = 4;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 1;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(26802, 7832136317888521792L);
-        this.k = new TextField("1080", 5);
-        fN2.add((Component)this.k, gridBagConstraints);
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(21132, 4478431141609462909L);
-        this.I = new Checkbox("Socks4", this.c, false);
-        this.I.setFont(new Font(font.getName(), 1, FN.a(25249, 3705123695549049926L)));
-        String[] stringArray = jk_0.Y();
-        fN2.add((Component)this.I, gridBagConstraints);
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(16008, 3956738837904666734L);
-        this.u = new Checkbox("Socks5", this.c, true);
-        this.u.setFont(new Font(font.getName(), 1, FN.a(27537, 5300129419818853754L)));
-        fN2.add((Component)this.u, gridBagConstraints);
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 1;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(1061, 7744224220449016513L);
-        label = new Label("User Id:");
-        fN2.add((Component)label, gridBagConstraints);
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(26802, 7832136317888521792L);
-        this.h = new TextField("", FN.a(15267, 4019817827809637710L));
-        this.h.setEnabled(false);
-        fN2.add((Component)this.h, gridBagConstraints);
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(16008, 3956738837904666734L);
-        label = new Label("Authentication");
-        label.setFont(new Font(font.getName(), 1, FN.a(27537, 5300129419818853754L)));
-        fN2.add((Component)label, gridBagConstraints);
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 1;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(21080, 6569904376572730551L);
-        label = new Label("Password:");
-        fN2.add((Component)label, gridBagConstraints);
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(26802, 7832136317888521792L);
-        this.B = new TextField("", FN.a(15267, 4019817827809637710L));
-        this.B.setEchoChar((char)FN.a(10224, 2020424530237761822L));
-        String[] stringArray2 = stringArray;
-        this.B.setEnabled(false);
-        fN2.add((Component)this.B, gridBagConstraints);
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(26802, 7832136317888521792L);
-        this.M = new Checkbox("None", true);
-        fN2.add((Component)this.M, gridBagConstraints);
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(16008, 3956738837904666734L);
-        label = new Label("Direct Hosts");
-        label.setFont(new Font(font.getName(), 1, FN.a(27537, 5300129419818853754L)));
-        fN2.add((Component)label, gridBagConstraints);
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(26802, 7832136317888521792L);
-        this.z = new Checkbox("User/Password", false);
-        fN2.add((Component)this.z, gridBagConstraints);
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.anchor = FN.a(26802, 7832136317888521792L);
-        gridBagConstraints.fill = 1;
-        this.Y = new List(3);
-        fN2.add((Component)this.Y, gridBagConstraints);
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(26802, 7832136317888521792L);
-        this.N = new Checkbox("GSSAPI", false);
-        this.N.setEnabled(false);
-        fN2.add((Component)this.N, gridBagConstraints);
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = FN.a(13840, 8367348394847516920L);
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(26802, 7832136317888521792L);
-        this.F = new TextField("", FN.a(1504, 314711578769033989L));
-        fN2.add((Component)this.F, gridBagConstraints);
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = FN.a(9612, 6017605938358299493L);
-        gridBagConstraints.gridwidth = 1;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(16008, 3956738837904666734L);
-        this.D = new Button("Add");
-        fN2.add((Component)this.D, gridBagConstraints);
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = FN.a(12829, 161375588412013820L);
-        gridBagConstraints.gridwidth = 1;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(16008, 3956738837904666734L);
-        this.b = new Button("Remove");
-        fN2.add((Component)this.b, gridBagConstraints);
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = FN.a(29454, 2385359241553444322L);
-        gridBagConstraints.gridwidth = 1;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(16008, 3956738837904666734L);
-        this.j = new Button("Cancel");
-        fN2.add((Component)this.j, gridBagConstraints);
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = FN.a(593, 2941640922776243387L);
-        gridBagConstraints.gridwidth = 1;
-        gridBagConstraints.gridheight = 1;
-        gridBagConstraints.anchor = FN.a(26802, 7832136317888521792L);
-        this.w = new Button("OK");
-        fN2.add((Component)this.w, gridBagConstraints);
-        this.R = new Button("Dismiss");
-        this.r = new Label("", 1);
-        this.r.setFont(new Font("Dialog", 1, FN.a(15267, 4019817827809637710L)));
-        Panel panel = new Panel();
-        try {
-            panel.add(this.R);
-            this.X.add((Component)panel, "South");
-            this.X.add((Component)this.r, "Center");
-            this.X.setResizable(false);
-            if (stringArray2 == null) {
-                ky_2.K(new String[4]);
-            }
-        }
-        catch (NumberFormatException numberFormatException) {
-            throw FN.a(numberFormatException);
-        }
-    }
-
-    private static Exception a(Exception exception) {
-        return exception;
-    }
-
-    private static String a(int n10, int n11) {
-        int n12 = (n10 ^ 0xFFFF85B9) & 0xFFFF;
-        if (d[n12] == null) {
-            int n13;
-            int n14;
-            char[] cArray = a[n12].toCharArray();
-            switch (cArray[0] & 0xFF) {
-                case 0: {
-                    n14 = 190;
-                    break;
-                }
-                case 1: {
-                    n14 = 185;
-                    break;
-                }
-                case 2: {
-                    n14 = 208;
-                    break;
-                }
-                case 3: {
-                    n14 = 236;
-                    break;
-                }
-                case 4: {
-                    n14 = 238;
-                    break;
-                }
-                case 5: {
-                    n14 = 11;
-                    break;
-                }
-                case 6: {
-                    n14 = 207;
-                    break;
-                }
-                case 7: {
-                    n14 = 78;
-                    break;
-                }
-                case 8: {
-                    n14 = 56;
-                    break;
-                }
-                case 9: {
-                    n14 = 85;
-                    break;
-                }
-                case 10: {
-                    n14 = 6;
-                    break;
-                }
-                case 11: {
-                    n14 = 110;
-                    break;
-                }
-                case 12: {
-                    n14 = 235;
-                    break;
-                }
-                case 13: {
-                    n14 = 249;
-                    break;
-                }
-                case 14: {
-                    n14 = 88;
-                    break;
-                }
-                case 15: {
-                    n14 = 186;
-                    break;
-                }
-                case 16: {
-                    n14 = 2;
-                    break;
-                }
-                case 17: {
-                    n14 = 70;
-                    break;
-                }
-                case 18: {
-                    n14 = 215;
-                    break;
-                }
-                case 19: {
-                    n14 = 143;
-                    break;
-                }
-                case 20: {
-                    n14 = 20;
-                    break;
-                }
-                case 21: {
-                    n14 = 77;
-                    break;
-                }
-                case 22: {
-                    n14 = 119;
-                    break;
-                }
-                case 23: {
-                    n14 = 74;
-                    break;
-                }
-                case 24: {
-                    n14 = 187;
-                    break;
-                }
-                case 25: {
-                    n14 = 79;
-                    break;
-                }
-                case 26: {
-                    n14 = 72;
-                    break;
-                }
-                case 27: {
-                    n14 = 51;
-                    break;
-                }
-                case 28: {
-                    n14 = 241;
-                    break;
-                }
-                case 29: {
-                    n14 = 64;
-                    break;
-                }
-                case 30: {
-                    n14 = 73;
-                    break;
-                }
-                case 31: {
-                    n14 = 147;
-                    break;
-                }
-                case 32: {
-                    n14 = 170;
-                    break;
-                }
-                case 33: {
-                    n14 = 146;
-                    break;
-                }
-                case 34: {
-                    n14 = 60;
-                    break;
-                }
-                case 35: {
-                    n14 = 131;
-                    break;
-                }
-                case 36: {
-                    n14 = 152;
-                    break;
-                }
-                case 37: {
-                    n14 = 156;
-                    break;
-                }
-                case 38: {
-                    n14 = 98;
-                    break;
-                }
-                case 39: {
-                    n14 = 223;
-                    break;
-                }
-                case 40: {
-                    n14 = 125;
-                    break;
-                }
-                case 41: {
-                    n14 = 102;
-                    break;
-                }
-                case 42: {
-                    n14 = 168;
-                    break;
-                }
-                case 43: {
-                    n14 = 255;
-                    break;
-                }
-                case 44: {
-                    n14 = 248;
-                    break;
-                }
-                case 45: {
-                    n14 = 3;
-                    break;
-                }
-                case 46: {
-                    n14 = 63;
-                    break;
-                }
-                case 47: {
-                    n14 = 23;
-                    break;
-                }
-                case 48: {
-                    n14 = 144;
-                    break;
-                }
-                case 49: {
-                    n14 = 210;
-                    break;
-                }
-                case 50: {
-                    n14 = 97;
-                    break;
-                }
-                case 51: {
-                    n14 = 113;
-                    break;
-                }
-                case 52: {
-                    n14 = 160;
-                    break;
-                }
-                case 53: {
-                    n14 = 145;
-                    break;
-                }
-                case 54: {
-                    n14 = 254;
-                    break;
-                }
-                case 55: {
-                    n14 = 31;
-                    break;
-                }
-                case 56: {
-                    n14 = 213;
-                    break;
-                }
-                case 57: {
-                    n14 = 59;
-                    break;
-                }
-                case 58: {
-                    n14 = 36;
-                    break;
-                }
-                case 59: {
-                    n14 = 151;
-                    break;
-                }
-                case 60: {
-                    n14 = 62;
-                    break;
-                }
-                case 61: {
-                    n14 = 43;
-                    break;
-                }
-                case 62: {
-                    n14 = 224;
-                    break;
-                }
-                case 63: {
-                    n14 = 10;
-                    break;
-                }
-                case 64: {
-                    n14 = 164;
-                    break;
-                }
-                case 65: {
-                    n14 = 35;
-                    break;
-                }
-                case 66: {
-                    n14 = 105;
-                    break;
-                }
-                case 67: {
-                    n14 = 188;
-                    break;
-                }
-                case 68: {
-                    n14 = 158;
-                    break;
-                }
-                case 69: {
-                    n14 = 15;
-                    break;
-                }
-                case 70: {
-                    n14 = 167;
-                    break;
-                }
-                case 71: {
-                    n14 = 115;
-                    break;
-                }
-                case 72: {
-                    n14 = 177;
-                    break;
-                }
-                case 73: {
-                    n14 = 81;
-                    break;
-                }
-                case 74: {
-                    n14 = 138;
-                    break;
-                }
-                case 75: {
-                    n14 = 232;
-                    break;
-                }
-                case 76: {
-                    n14 = 33;
-                    break;
-                }
-                case 77: {
-                    n14 = 247;
-                    break;
-                }
-                case 78: {
-                    n14 = 173;
-                    break;
-                }
-                case 79: {
-                    n14 = 124;
-                    break;
-                }
-                case 80: {
-                    n14 = 191;
-                    break;
-                }
-                case 81: {
-                    n14 = 96;
-                    break;
-                }
-                case 82: {
-                    n14 = 237;
-                    break;
-                }
-                case 83: {
-                    n14 = 252;
-                    break;
-                }
-                case 84: {
-                    n14 = 101;
-                    break;
-                }
-                case 85: {
-                    n14 = 166;
-                    break;
-                }
-                case 86: {
-                    n14 = 198;
-                    break;
-                }
-                case 87: {
-                    n14 = 211;
-                    break;
-                }
-                case 88: {
-                    n14 = 140;
-                    break;
-                }
-                case 89: {
-                    n14 = 139;
-                    break;
-                }
-                case 90: {
-                    n14 = 217;
-                    break;
-                }
-                case 91: {
-                    n14 = 13;
-                    break;
-                }
-                case 92: {
-                    n14 = 226;
-                    break;
-                }
-                case 93: {
-                    n14 = 240;
-                    break;
-                }
-                case 94: {
-                    n14 = 89;
-                    break;
-                }
-                case 95: {
-                    n14 = 153;
-                    break;
-                }
-                case 96: {
-                    n14 = 212;
-                    break;
-                }
-                case 97: {
-                    n14 = 171;
-                    break;
-                }
-                case 98: {
-                    n14 = 69;
-                    break;
-                }
-                case 99: {
-                    n14 = 19;
-                    break;
-                }
-                case 100: {
-                    n14 = 57;
-                    break;
-                }
-                case 101: {
-                    n14 = 114;
-                    break;
-                }
-                case 102: {
-                    n14 = 123;
-                    break;
-                }
-                case 103: {
-                    n14 = 244;
-                    break;
-                }
-                case 104: {
-                    n14 = 117;
-                    break;
-                }
-                case 105: {
-                    n14 = 95;
-                    break;
-                }
-                case 106: {
-                    n14 = 22;
-                    break;
-                }
-                case 107: {
-                    n14 = 130;
-                    break;
-                }
-                case 108: {
-                    n14 = 39;
-                    break;
-                }
-                case 109: {
-                    n14 = 106;
-                    break;
-                }
-                case 110: {
-                    n14 = 53;
-                    break;
-                }
-                case 111: {
-                    n14 = 41;
-                    break;
-                }
-                case 112: {
-                    n14 = 222;
-                    break;
-                }
-                case 113: {
-                    n14 = 253;
-                    break;
-                }
-                case 114: {
-                    n14 = 108;
-                    break;
-                }
-                case 115: {
-                    n14 = 118;
-                    break;
-                }
-                case 116: {
-                    n14 = 154;
-                    break;
-                }
-                case 117: {
-                    n14 = 30;
-                    break;
-                }
-                case 118: {
-                    n14 = 127;
-                    break;
-                }
-                case 119: {
-                    n14 = 28;
-                    break;
-                }
-                case 120: {
-                    n14 = 209;
-                    break;
-                }
-                case 121: {
-                    n14 = 227;
-                    break;
-                }
-                case 122: {
-                    n14 = 245;
-                    break;
-                }
-                case 123: {
-                    n14 = 192;
-                    break;
-                }
-                case 124: {
-                    n14 = 250;
-                    break;
-                }
-                case 125: {
-                    n14 = 228;
-                    break;
-                }
-                case 126: {
-                    n14 = 1;
-                    break;
-                }
-                case 127: {
-                    n14 = 68;
-                    break;
-                }
-                case 128: {
-                    n14 = 194;
-                    break;
-                }
-                case 129: {
-                    n14 = 169;
-                    break;
-                }
-                case 130: {
-                    n14 = 219;
-                    break;
-                }
-                case 131: {
-                    n14 = 200;
-                    break;
-                }
-                case 132: {
-                    n14 = 161;
-                    break;
-                }
-                case 133: {
-                    n14 = 91;
-                    break;
-                }
-                case 134: {
-                    n14 = 32;
-                    break;
-                }
-                case 135: {
-                    n14 = 99;
-                    break;
-                }
-                case 136: {
-                    n14 = 128;
-                    break;
-                }
-                case 137: {
-                    n14 = 178;
-                    break;
-                }
-                case 138: {
-                    n14 = 44;
-                    break;
-                }
-                case 139: {
-                    n14 = 231;
-                    break;
-                }
-                case 140: {
-                    n14 = 75;
-                    break;
-                }
-                case 141: {
-                    n14 = 47;
-                    break;
-                }
-                case 142: {
-                    n14 = 205;
-                    break;
-                }
-                case 143: {
-                    n14 = 112;
-                    break;
-                }
-                case 144: {
-                    n14 = 243;
-                    break;
-                }
-                case 145: {
-                    n14 = 233;
-                    break;
-                }
-                case 146: {
-                    n14 = 38;
-                    break;
-                }
-                case 147: {
-                    n14 = 7;
-                    break;
-                }
-                case 148: {
-                    n14 = 8;
-                    break;
-                }
-                case 149: {
-                    n14 = 87;
-                    break;
-                }
-                case 150: {
-                    n14 = 104;
-                    break;
-                }
-                case 151: {
-                    n14 = 16;
-                    break;
-                }
-                case 152: {
-                    n14 = 122;
-                    break;
-                }
-                case 153: {
-                    n14 = 165;
-                    break;
-                }
-                case 154: {
-                    n14 = 0;
-                    break;
-                }
-                case 155: {
-                    n14 = 239;
-                    break;
-                }
-                case 156: {
-                    n14 = 242;
-                    break;
-                }
-                case 157: {
-                    n14 = 181;
-                    break;
-                }
-                case 158: {
-                    n14 = 129;
-                    break;
-                }
-                case 159: {
-                    n14 = 189;
-                    break;
-                }
-                case 160: {
-                    n14 = 100;
-                    break;
-                }
-                case 161: {
-                    n14 = 157;
-                    break;
-                }
-                case 162: {
-                    n14 = 45;
-                    break;
-                }
-                case 163: {
-                    n14 = 204;
-                    break;
-                }
-                case 164: {
-                    n14 = 111;
-                    break;
-                }
-                case 165: {
-                    n14 = 251;
-                    break;
-                }
-                case 166: {
-                    n14 = 29;
-                    break;
-                }
-                case 167: {
-                    n14 = 135;
-                    break;
-                }
-                case 168: {
-                    n14 = 229;
-                    break;
-                }
-                case 169: {
-                    n14 = 180;
-                    break;
-                }
-                case 170: {
-                    n14 = 183;
-                    break;
-                }
-                case 171: {
-                    n14 = 136;
-                    break;
-                }
-                case 172: {
-                    n14 = 37;
-                    break;
-                }
-                case 173: {
-                    n14 = 121;
-                    break;
-                }
-                case 174: {
-                    n14 = 133;
-                    break;
-                }
-                case 175: {
-                    n14 = 80;
-                    break;
-                }
-                case 176: {
-                    n14 = 46;
-                    break;
-                }
-                case 177: {
-                    n14 = 159;
-                    break;
-                }
-                case 178: {
-                    n14 = 175;
-                    break;
-                }
-                case 179: {
-                    n14 = 195;
-                    break;
-                }
-                case 180: {
-                    n14 = 54;
-                    break;
-                }
-                case 181: {
-                    n14 = 84;
-                    break;
-                }
-                case 182: {
-                    n14 = 214;
-                    break;
-                }
-                case 183: {
-                    n14 = 55;
-                    break;
-                }
-                case 184: {
-                    n14 = 141;
-                    break;
-                }
-                case 185: {
-                    n14 = 142;
-                    break;
-                }
-                case 186: {
-                    n14 = 176;
-                    break;
-                }
-                case 187: {
-                    n14 = 134;
-                    break;
-                }
-                case 188: {
-                    n14 = 150;
-                    break;
-                }
-                case 189: {
-                    n14 = 27;
-                    break;
-                }
-                case 190: {
-                    n14 = 199;
-                    break;
-                }
-                case 191: {
-                    n14 = 40;
-                    break;
-                }
-                case 192: {
-                    n14 = 71;
-                    break;
-                }
-                case 193: {
-                    n14 = 230;
-                    break;
-                }
-                case 194: {
-                    n14 = 184;
-                    break;
-                }
-                case 195: {
-                    n14 = 206;
-                    break;
-                }
-                case 196: {
-                    n14 = 9;
-                    break;
-                }
-                case 197: {
-                    n14 = 196;
-                    break;
-                }
-                case 198: {
-                    n14 = 174;
-                    break;
-                }
-                case 199: {
-                    n14 = 225;
-                    break;
-                }
-                case 200: {
-                    n14 = 126;
-                    break;
-                }
-                case 201: {
-                    n14 = 203;
-                    break;
-                }
-                case 202: {
-                    n14 = 216;
-                    break;
-                }
-                case 203: {
-                    n14 = 24;
-                    break;
-                }
-                case 204: {
-                    n14 = 163;
-                    break;
-                }
-                case 205: {
-                    n14 = 18;
-                    break;
-                }
-                case 206: {
-                    n14 = 93;
-                    break;
-                }
-                case 207: {
-                    n14 = 67;
-                    break;
-                }
-                case 208: {
-                    n14 = 50;
-                    break;
-                }
-                case 209: {
-                    n14 = 61;
-                    break;
-                }
-                case 210: {
-                    n14 = 107;
-                    break;
-                }
-                case 211: {
-                    n14 = 52;
-                    break;
-                }
-                case 212: {
-                    n14 = 162;
-                    break;
-                }
-                case 213: {
-                    n14 = 25;
-                    break;
-                }
-                case 214: {
-                    n14 = 132;
-                    break;
-                }
-                case 215: {
-                    n14 = 42;
-                    break;
-                }
-                case 216: {
-                    n14 = 14;
-                    break;
-                }
-                case 217: {
-                    n14 = 116;
-                    break;
-                }
-                case 218: {
-                    n14 = 179;
-                    break;
-                }
-                case 219: {
-                    n14 = 220;
-                    break;
-                }
-                case 220: {
-                    n14 = 65;
-                    break;
-                }
-                case 221: {
-                    n14 = 197;
-                    break;
-                }
-                case 222: {
-                    n14 = 202;
-                    break;
-                }
-                case 223: {
-                    n14 = 92;
-                    break;
-                }
-                case 224: {
-                    n14 = 83;
-                    break;
-                }
-                case 225: {
-                    n14 = 246;
-                    break;
-                }
-                case 226: {
-                    n14 = 94;
-                    break;
-                }
-                case 227: {
-                    n14 = 86;
-                    break;
-                }
-                case 228: {
-                    n14 = 5;
-                    break;
-                }
-                case 229: {
-                    n14 = 103;
-                    break;
-                }
-                case 230: {
-                    n14 = 17;
-                    break;
-                }
-                case 231: {
-                    n14 = 48;
-                    break;
-                }
-                case 232: {
-                    n14 = 34;
-                    break;
-                }
-                case 233: {
-                    n14 = 221;
-                    break;
-                }
-                case 234: {
-                    n14 = 12;
-                    break;
-                }
-                case 235: {
-                    n14 = 76;
-                    break;
-                }
-                case 236: {
-                    n14 = 218;
-                    break;
-                }
-                case 237: {
-                    n14 = 21;
-                    break;
-                }
-                case 238: {
-                    n14 = 82;
-                    break;
-                }
-                case 239: {
-                    n14 = 148;
-                    break;
-                }
-                case 240: {
-                    n14 = 109;
-                    break;
-                }
-                case 241: {
-                    n14 = 155;
-                    break;
-                }
-                case 242: {
-                    n14 = 58;
-                    break;
-                }
-                case 243: {
-                    n14 = 90;
-                    break;
-                }
-                case 244: {
-                    n14 = 193;
-                    break;
-                }
-                case 245: {
-                    n14 = 234;
-                    break;
-                }
-                case 246: {
-                    n14 = 49;
-                    break;
-                }
-                case 247: {
-                    n14 = 26;
-                    break;
-                }
-                case 248: {
-                    n14 = 149;
-                    break;
-                }
-                case 249: {
-                    n14 = 182;
-                    break;
-                }
-                case 250: {
-                    n14 = 66;
-                    break;
-                }
-                case 251: {
-                    n14 = 137;
-                    break;
-                }
-                case 252: {
-                    n14 = 120;
-                    break;
-                }
-                case 253: {
-                    n14 = 172;
-                    break;
-                }
-                case 254: {
-                    n14 = 201;
-                    break;
-                }
-                default: {
-                    n14 = 4;
-                }
-            }
-            int n15 = n14;
-            int n16 = (n11 & 0xFF) - n15;
-            if (n16 < 0) {
-                n16 += 256;
-            }
-            if ((n13 = ((n11 & 0xFFFF) >>> 8) - n15) < 0) {
-                n13 += 256;
-            }
-            int n17 = 0;
-            while (n17 < cArray.length) {
-                int n18 = n17 % 2;
-                int n19 = n17;
-                char[] cArray2 = cArray;
-                char c2 = cArray[n19];
-                if (n18 == 0) {
-                    cArray2[n19] = (char)(c2 ^ n16);
-                    n16 = ((n16 >>> 3 | n16 << 5) ^ cArray[n17]) & 0xFF;
-                } else {
-                    cArray2[n19] = (char)(c2 ^ n13);
-                    n13 = ((n13 >>> 3 | n13 << 5) ^ cArray[n17]) & 0xFF;
-                }
-                ++n17;
-            }
-            FN.d[n12] = new String(cArray).intern();
-        }
-        return d[n12];
-    }
-
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0xEE3;
-        if (f[n11] == null) {
-            FN.f[n11] = (int)(e[n11] ^ l2);
-        }
-        return f[n11];
-    }
+      return f[var3];
+   }
 }
+
+
+
+
 

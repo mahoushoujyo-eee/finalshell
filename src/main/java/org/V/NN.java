@@ -1,65 +1,75 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
 import org.I;
-import org.v.NR;
-import org.v.NV;
-import org.v._w_0;
 
-public final class NN
-extends NV {
-    public final NR l;
-    public final String f;
-    public final NV p;
-    private static final long[] a;
-    private static final Integer[] d;
+public final class NN extends NV {
+   public final NR l;
+   public final String f;
+   public final NV p;
+   private static final long[] a;
+   private static final Integer[] d;
 
-    public NN(I i2, NR nR2, String string, NV nV2) {
-        super(i2);
-        this.l = nR2;
-        this.f = string;
-        this.p = nV2;
-    }
+   public NN(I var1, NR var2, String var3, NV var4) {
+      super(var1);
+      this.l = var2;
+      this.f = var3;
+      this.p = var4;
+   }
 
-    @Override
-    public String toString() {
-        return this.l.toString() + (char)NN.a(27770, 7030598922913227434L) + this.f + (char)NN.a(30192, 2204268455757396769L) + this.p.toString();
-    }
+   @Override
+   public String toString() {
+      return this.l.toString() + a(27770, 7030598922913227434L) + this.f + a(30192, 2204268455757396769L) + this.p.toString();
+   }
 
-    @Override
-    @c
-    public Object i(_w_0 _w_02) throws Throwable {
-        return _w_02.E(this);
-    }
+   @org.F.c
+   @Override
+   public Object i(_w_2 var1) throws Throwable {
+      return var1.E(this);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 6754376292825043918L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "2\u008c\u0014\u00e6\u00ea,\u00a8\u00cflkf&\u00c3T\u00b1D";
-        int n11 = "2\u008c\u0014\u00e6\u00ea,\u00a8\u00cflkf&\u00c3T\u00b1D".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        d = new Integer[2];
-    }
+   static {
+      long var0 = 6754376292825043918L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "2\u008c\u0014æê,¨Ïlkf&ÃT±D";
+      int var5 = "2\u008c\u0014æê,¨Ïlkf&ÃT±D".length();
+      byte var2 = 0;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x4ED1;
-        if (d[n11] == null) {
-            NN.d[n11] = (int)(a[n11] ^ l2);
-        }
-        return d[n11];
-    }
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      d = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 20177;
+      if (d[var3] == null) {
+         d[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return d[var3];
+   }
 }
+
+
+
+
 

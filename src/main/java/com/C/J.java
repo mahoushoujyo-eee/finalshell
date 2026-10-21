@@ -1,16 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.C;
 
-import com.C.W;
-import com.FY;
-import com.QC;
-import com.c.p_0;
-import com.c.s_0;
-import com.c.v_0;
-import com.ke_1;
-import com.ov_0;
 import java.awt.Graphics2D;
 import java.awt.Insets;
 import java.awt.Rectangle;
@@ -18,91 +7,94 @@ import java.awt.event.ContainerAdapter;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 
-public class J
-extends v_0 {
-    protected ContainerAdapter F;
-    protected FY z;
-    protected ke_1 O = null;
+public class J extends v_2 {
+   protected ContainerAdapter F;
+   protected com.FY z;
+   protected com.kE_3 O = null;
 
-    public void l(ov_0 ov_02) {
-        this.F = new p_0(this, ov_02);
-        this.z = new s_0(this, ov_02);
-        ov_02.addAncestorListener(this.z);
-    }
+   public void l(com.Ov_2 var1) {
+      this.F = new com.C.p_2(this, var1);
+      this.z = new s_2(this, var1);
+      var1.addAncestorListener(this.z);
+   }
 
-    public void C(ov_0 ov_02) {
-        this.U();
-        this.F = null;
-        ov_02.removeAncestorListener(this.z);
-        this.z = null;
-    }
+   public void C(com.Ov_2 var1) {
+      this.U();
+      this.F = null;
+      var1.removeAncestorListener(this.z);
+      this.z = null;
+   }
 
-    protected void U() {
-        block3: {
-            ke_1 ke_12;
-            block2: {
-                int[] nArray = W.B();
-                ke_12 = this.O;
-                if (nArray != null) break block2;
-                if (ke_12 == null) break block3;
-                ke_12 = this.O;
-            }
-            ke_12.removeContainerListener(this.F);
-            this.O = null;
-        }
-    }
+   protected void U() {
+      int[] var1 = com.C.W.B();
+      com.kE_3 var10000 = this.O;
+      if (var1 == null) {
+         if (this.O == null) {
+            return;
+         }
 
-    public Boolean P(ov_0 ov_02) {
-        return false;
-    }
+         var10000 = this.O;
+      }
 
-    public Insets k(ov_0 ov_02) {
-        return QC.S(ov_02);
-    }
+      var10000.removeContainerListener(this.F);
+      this.O = null;
+   }
 
-    public void Q(Graphics2D graphics2D, Rectangle rectangle, ov_0 ov_02) {
-        QC.q(graphics2D, ov_02);
-        super.u(graphics2D, rectangle, ov_02);
-    }
+   public Boolean P(com.Ov_2 var1) {
+      return false;
+   }
 
-    @Override
-    public void u(Graphics2D graphics2D, Rectangle rectangle, JLabel jLabel) {
-        this.Q(graphics2D, rectangle, (ov_0)jLabel);
-    }
+   public Insets k(com.Ov_2 var1) {
+      return com.QC.S(var1);
+   }
 
-    @Override
-    public Insets Q(JLabel jLabel) {
-        return this.k((ov_0)jLabel);
-    }
+   public void Q(Graphics2D var1, Rectangle var2, com.Ov_2 var3) {
+      com.QC.q(var1, var3);
+      super.u(var1, var2, (JLabel)var3);
+   }
 
-    @Override
-    public Boolean A(JLabel jLabel) {
-        return this.P((ov_0)jLabel);
-    }
+   @Override
+   public void u(Graphics2D var1, Rectangle var2, JLabel var3) {
+      this.Q(var1, var2, (com.Ov_2)var3);
+   }
 
-    @Override
-    public void u(Graphics2D graphics2D, Rectangle rectangle, JComponent jComponent) {
-        this.Q(graphics2D, rectangle, (ov_0)jComponent);
-    }
+   @Override
+   public Insets Q(JLabel var1) {
+      return this.k((com.Ov_2)var1);
+   }
 
-    @Override
-    public Insets B(JComponent jComponent) {
-        return this.k((ov_0)jComponent);
-    }
+   @Override
+   public Boolean A(JLabel var1) {
+      return this.P((com.Ov_2)var1);
+   }
 
-    @Override
-    public Boolean d(JComponent jComponent) {
-        return this.P((ov_0)jComponent);
-    }
+   @Override
+   public void u(Graphics2D var1, Rectangle var2, JComponent var3) {
+      this.Q(var1, var2, (com.Ov_2)var3);
+   }
 
-    @Override
-    public void X(JComponent jComponent) {
-        this.C((ov_0)jComponent);
-    }
+   @Override
+   public Insets B(JComponent var1) {
+      return this.k((com.Ov_2)var1);
+   }
 
-    @Override
-    public void A(JComponent jComponent) {
-        this.l((ov_0)jComponent);
-    }
+   @Override
+   public Boolean d(JComponent var1) {
+      return this.P((com.Ov_2)var1);
+   }
+
+   @Override
+   public void X(JComponent var1) {
+      this.C((com.Ov_2)var1);
+   }
+
+   @Override
+   public void A(JComponent var1) {
+      this.l((com.Ov_2)var1);
+   }
 }
+
+
+
+
 

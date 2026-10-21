@@ -1,29 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.DP;
-import com.GR;
-import com.HD;
-import com.ON;
-import com.OR;
-import com.QL;
-import com.U.O;
-import com.aL;
-import com.at_0;
-import com.c0_0;
-import com.c4_0;
-import com.el_0;
-import com.hd_0;
-import com.ij_2;
-import com.k__0;
-import com.ky_2;
-import com.lm_0;
-import com.p0_0;
-import com.p3_0;
-import com.w6_0;
-import com.wf_2;
 import java.awt.Component;
 import java.awt.Container;
 import java.util.ArrayList;
@@ -33,646 +9,714 @@ import java.util.List;
 import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public final class BX
-implements el_0,
-SwingConstants {
-    protected QL d;
-    protected final hd_0 B;
-    protected final c4_0 W;
-    protected List Z;
-    private static String[] T;
-    private static final String a;
+public final class BX implements El_2, SwingConstants {
+   protected com.QL d;
+   protected final Hd_2 B;
+   protected final com.c4_2 W;
+   protected List Z;
+   private static String[] T;
+   private static final String a;
 
-    public BX(QL qL) {
-        String[] stringArray = BX.B();
-        this.Z = new ArrayList();
-        this.d = qL;
-        this.B = new hd_0(ij_2.attached);
-        this.B.putClientProperty(a, this);
-        this.v(qL);
-        w6_0.H(this.B, this.B, GR.s, new lm_0(this));
-        String[] stringArray2 = stringArray;
-        wf_2.V(this);
-        this.B.addChangeListener(new p0_0(this));
-        this.B.addMouseListener(new HD(this));
-        this.W = new c0_0(this, true);
-        ON.b(this.B, this.W);
-        if (ky_2.F() != null) {
-            BX.q(new String[4]);
-        }
-    }
+   public BX(com.QL var1) {
+      B();
+      this.Z = new ArrayList();
+      this.d = var1;
+      this.B = new Hd_2(ij_4.attached);
+      this.B.putClientProperty(a, this);
+      this.v(var1);
+      w6_2.H(this.B, this.B, GR.s, new com.Lm_2(this));
+      wf_4.V(this);
+      this.B.addChangeListener(new p0_2(this));
+      this.B.addMouseListener(new HD(this));
+      this.W = new com.c0_2(this, true);
+      com.ON.b(this.B, this.W);
+      if (com.ky_4.F() != null) {
+         q(new String[4]);
+      }
+   }
 
-    public void Z() {
-        block3: {
-            QL qL;
-            block2: {
-                QL qL2 = this.z();
-                String[] stringArray = BX.B();
-                qL = qL2;
-                if (stringArray != null) break block2;
-                if (qL == null) break block3;
-                qL = qL2;
+   public void Z() {
+      String[] var10000 = B();
+      com.QL var2 = this.z();
+      String[] var1 = var10000;
+      com.QL var3 = var2;
+      if (var1 == null) {
+         if (var2 == null) {
+            return;
+         }
+
+         var3 = var2;
+      }
+
+      var3.u();
+   }
+
+   protected void v(com.QL var1) {
+      String[] var10000 = B();
+      com.OR var3 = var1.G();
+      String[] var2 = var10000;
+      com.OR var4 = var3;
+      if (var2 == null) {
+         if (var3 == null) {
+            return;
+         }
+
+         var4 = var3;
+      }
+
+      var4.j(this.B);
+   }
+
+   @Override
+   public Component u() {
+      return this.D();
+   }
+
+   @Override
+   public com.BX F() {
+      return this;
+   }
+
+   public com.QL z() {
+      return this.d;
+   }
+
+   public void U(com.QL var1) {
+      this.d = var1;
+      this.v(var1);
+      this.p();
+   }
+
+   public Hd_2 D() {
+      return this.B;
+   }
+
+   public List a() {
+      return this.Z;
+   }
+
+   public List N() {
+      String[] var10000 = B();
+      ArrayList var2 = new ArrayList(this.Z.size());
+      Iterator var3 = this.Z.iterator();
+      String[] var1 = var10000;
+
+      while (true) {
+         if (var3.hasNext()) {
+            com.at_2 var4 = (com.at_2)var3.next();
+            var5 = var2;
+            if (var1 != null) {
+               break;
             }
-            qL.u();
-        }
-    }
 
-    protected void v(QL qL) {
-        block3: {
-            OR oR;
-            block2: {
-                OR oR2 = qL.G();
-                String[] stringArray = BX.B();
-                oR = oR2;
-                if (stringArray != null) break block2;
-                if (oR == null) break block3;
-                oR = oR2;
+            var2.add(var4.B());
+            if (var1 == null) {
+               continue;
             }
-            oR.j(this.B);
-        }
-    }
+         }
 
-    @Override
-    public Component u() {
-        return this.D();
-    }
+         var5 = var2;
+         break;
+      }
 
-    @Override
-    public BX F() {
-        return this;
-    }
+      return var5;
+   }
 
-    public QL z() {
-        return this.d;
-    }
+   public int o() {
+      return this.Z.size();
+   }
 
-    public void U(QL qL) {
-        this.d = qL;
-        this.v(qL);
-        this.p();
-    }
+   public boolean T(com.at_2 var1) {
+      return this.p(var1.B());
+   }
 
-    public hd_0 D() {
-        return this.B;
-    }
+   public boolean p(String var1) {
+      String[] var10000 = B();
+      Iterator var3 = this.Z.iterator();
+      String[] var2 = var10000;
 
-    public List a() {
-        return this.Z;
-    }
-
-    public List N() {
-        ArrayList<String> arrayList;
-        block2: {
-            ArrayList<String> arrayList2 = new ArrayList<String>(this.Z.size());
-            Iterator iterator = this.Z.iterator();
-            String[] stringArray = BX.B();
-            while (iterator.hasNext()) {
-                at_0 at_02 = (at_0)iterator.next();
-                arrayList = arrayList2;
-                if (stringArray == null) {
-                    arrayList.add(at_02.B());
-                    if (stringArray == null) continue;
-                }
-                break block2;
+      while (true) {
+         if (var3.hasNext()) {
+            com.at_2 var4 = (com.at_2)var3.next();
+            var5 = var4.B().equals(var1);
+            if (var2 != null) {
+               break;
             }
-            arrayList = arrayList2;
-        }
-        return arrayList;
-    }
 
-    public int o() {
-        return this.Z.size();
-    }
-
-    public boolean T(at_0 at_02) {
-        return this.p(at_02.B());
-    }
-
-    public boolean p(String string) {
-        boolean bl;
-        block3: {
-            Iterator iterator = this.Z.iterator();
-            String[] stringArray = BX.B();
-            while (iterator.hasNext()) {
-                block5: {
-                    boolean bl2;
-                    block4: {
-                        at_0 at_02 = (at_0)iterator.next();
-                        bl = at_02.B().equals(string);
-                        if (stringArray != null) break block3;
-                        if (stringArray != null) break block4;
-                        if (!bl) break block5;
-                        bl2 = true;
-                    }
-                    return bl2;
-                }
-                if (stringArray == null) continue;
+            if (var2 != null) {
+               return var5;
             }
-            bl = false;
-        }
-        return bl;
-    }
 
-    public void O(at_0 at_02) {
-        this.J(at_02, -1);
-    }
-
-    public void J(at_0 at_02, int n10) {
-        String[] stringArray = BX.B();
-        int n11 = n10;
-        if (stringArray == null) {
-            n11 = n11 != -1 ? n10 : this.B.getTabCount();
-        }
-        int n12 = n11;
-        this.Z.add(n12, at_02);
-        this.B.insertTab("", at_02.I(), at_02.c(), null, n12);
-        this.B.setBackgroundAt(n12, at_02.d());
-        this.B.setTabComponentAt(n12, this.q(at_02));
-        at_02.f(new p3_0(this));
-    }
-
-    protected JComponent q(at_0 at_02) {
-        return this.z().D().b(this, at_02);
-    }
-
-    public void p() {
-        Iterator iterator = this.a().iterator();
-        String[] stringArray = BX.B();
-        while (iterator.hasNext()) {
-            at_0 at_02 = (at_0)iterator.next();
-            this.X(at_02);
-            if (stringArray == null) continue;
-        }
-    }
-
-    public void X(at_0 at_02) {
-        this.D().setTabComponentAt(this.K(at_02), this.q(at_02));
-    }
-
-    public void I(at_0 at_02) {
-        this.D().setBackgroundAt(this.K(at_02), at_02.d());
-    }
-
-    public void r(at_0 at_02) {
-        this.D().setComponentAt(this.K(at_02), at_02.c());
-    }
-
-    public void u(at_0 at_02) {
-        this.O(at_02);
-        this.z().w(at_02, this, this.K(at_02));
-    }
-
-    public at_0 x(int n10) {
-        return (at_0)this.Z.get(n10);
-    }
-
-    public at_0 H(String string) {
-        Iterator iterator = this.Z.iterator();
-        String[] stringArray = BX.B();
-        while (iterator.hasNext()) {
-            block4: {
-                at_0 at_02;
-                block3: {
-                    at_0 at_03;
-                    at_02 = at_03 = (at_0)iterator.next();
-                    if (stringArray != null) break block3;
-                    if (!at_02.B().equals(string)) break block4;
-                    at_02 = at_03;
-                }
-                return at_02;
+            if (var5) {
+               return true;
             }
-            if (stringArray == null) continue;
-        }
-        return null;
-    }
 
-    public at_0 r() {
-        int n10 = this.B.getSelectedIndex();
-        return n10 != -1 ? (at_0)this.Z.get(n10) : null;
-    }
-
-    public int M() {
-        return this.B.getSelectedIndex();
-    }
-
-    public void d(String string) {
-        this.V(this.m(string));
-    }
-
-    public void q(at_0 at_02) {
-        this.V(this.K(at_02));
-    }
-
-    public void V(int n10) {
-        block4: {
-            hd_0 hd_02;
-            block5: {
-                int n11;
-                block2: {
-                    String[] stringArray;
-                    block3: {
-                        stringArray = BX.B();
-                        n11 = 0;
-                        if (stringArray != null) break block2;
-                        if (n11 > n10) break block3;
-                        n11 = n10;
-                        if (stringArray != null) break block2;
-                        if (n11 >= this.B.getTabCount()) break block3;
-                        this.B.setSelectedIndex(n10);
-                        if (stringArray == null) break block4;
-                    }
-                    hd_02 = this.B;
-                    if (stringArray != null) break block5;
-                    n11 = hd_02.getTabCount();
-                }
-                if (n11 <= 0) break block4;
-                hd_02 = this.B;
+            if (var2 == null) {
+               continue;
             }
-            hd_02.setSelectedIndex(0);
-        }
-    }
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    public void B() {
-        block3: {
-            block2: {
-                var2_1 = this.o();
-                var1_2 = BX.B();
-                v0 = var2_1;
-                v1 = 1;
-                if (var1_2 != null) break block2;
-                if (v0 <= v1) break block3;
-                v0 = this.M();
-                v1 = 1;
+         var5 = false;
+         break;
+      }
+
+      return var5;
+   }
+
+   public void O(com.at_2 var1) {
+      this.J(var1, -1);
+   }
+
+   public void J(com.at_2 var1, int var2) {
+      String[] var3 = B();
+      int var10000 = var2;
+      if (var3 == null) {
+         var10000 = var2 != -1 ? var2 : this.B.getTabCount();
+      }
+
+      int var4 = var10000;
+      this.Z.add(var4, var1);
+      this.B.insertTab("", var1.I(), var1.c(), null, var4);
+      this.B.setBackgroundAt(var4, var1.d());
+      this.B.setTabComponentAt(var4, this.q(var1));
+      var1.f(new p3_2(this));
+   }
+
+   protected JComponent q(com.at_2 var1) {
+      return this.z().D().b(this, var1);
+   }
+
+   public void p() {
+      String[] var10000 = B();
+      Iterator var2 = this.a().iterator();
+      String[] var1 = var10000;
+
+      while (var2.hasNext()) {
+         com.at_2 var3 = (com.at_2)var2.next();
+         this.X(var3);
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
+
+   public void X(com.at_2 var1) {
+      this.D().setTabComponentAt(this.K(var1), this.q(var1));
+   }
+
+   public void I(com.at_2 var1) {
+      this.D().setBackgroundAt(this.K(var1), var1.d());
+   }
+
+   public void r(com.at_2 var1) {
+      this.D().setComponentAt(this.K(var1), var1.c());
+   }
+
+   public void u(com.at_2 var1) {
+      this.O(var1);
+      this.z().w(var1, this, this.K(var1));
+   }
+
+   public com.at_2 x(int var1) {
+      return (com.at_2)this.Z.get(var1);
+   }
+
+   public com.at_2 H(String var1) {
+      String[] var10000 = B();
+      Iterator var3 = this.Z.iterator();
+      String[] var2 = var10000;
+
+      while (true) {
+         if (var3.hasNext()) {
+            com.at_2 var4 = (com.at_2)var3.next();
+            var5 = var4;
+            if (var2 != null) {
+               break;
             }
-            v2 = var3_3 = v0 - v1;
-            v3 = -1;
-            if (var1_2 != null) ** GOTO lbl16
-            if (v2 == v3) {
-                v2 = var2_1;
-                v3 = 1;
-lbl16:
-                // 2 sources
 
-                v4 = v2 - v3;
-            } else {
-                v4 = var3_3;
+            if (var4.B().equals(var1)) {
+               var5 = var4;
+               break;
             }
-            this.V(v4);
-        }
-    }
 
-    public void U() {
-        block5: {
-            int n10;
-            int n11;
-            int n12;
-            String[] stringArray;
-            int n13;
-            block4: {
-                n13 = this.o();
-                stringArray = BX.B();
-                n12 = n13;
-                n11 = 1;
-                if (stringArray != null) break block4;
-                if (n12 <= n11) break block5;
-                n12 = this.M();
-                n11 = 1;
+            if (var2 == null) {
+               continue;
             }
-            int n14 = n10 = n12 + n11;
-            if (stringArray == null) {
-                n14 = n14 == n13 ? 0 : n10;
+         }
+
+         return null;
+      }
+
+      return var5;
+   }
+
+   public com.at_2 r() {
+      int var1 = this.B.getSelectedIndex();
+      return var1 != -1 ? (com.at_2)this.Z.get(var1) : null;
+   }
+
+   public int M() {
+      return this.B.getSelectedIndex();
+   }
+
+   public void d(String var1) {
+      this.V(this.m(var1));
+   }
+
+   public void q$void(com.at_2 var1) {
+      this.V(this.K(var1));
+   }
+
+   public void V(int var1) {
+      Hd_2 var3;
+      label32: {
+         String[] var2 = B();
+         var10000 = 0;
+         label28:
+         if (var2 == null) {
+            if (0 <= var1) {
+               var10000 = var1;
+               if (var2 != null) {
+                  break label28;
+               }
+
+               if (var1 < this.B.getTabCount()) {
+                  this.B.setSelectedIndex(var1);
+                  if (var2 == null) {
+                     return;
+                  }
+               }
             }
-            this.V(n14);
-        }
-    }
 
-    public int m(String string) {
-        return this.K(this.H(string));
-    }
-
-    public int K(at_0 at_02) {
-        return this.Z.indexOf(at_02);
-    }
-
-    public boolean a(int n10) {
-        return this.x(this.x(n10));
-    }
-
-    public boolean A(String string) {
-        return this.x(this.H(string));
-    }
-
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public boolean x(at_0 at_02) {
-        int n10;
-        String[] stringArray = BX.B();
-        if (at_02 == null) return 0 != 0;
-        int n11 = n10 = this.K(at_02);
-        if (stringArray != null) return n11 != 0;
-        if (n11 == -1) return 0 != 0;
-        at_02.m(this.d(at_02));
-        this.B.remove(n10);
-        this.Z.remove(at_02);
-        return true;
-    }
-
-    protected k__0 d(at_0 at_02) {
-        List list = at_02.U();
-        String[] stringArray = BX.B();
-        Iterator iterator = list.iterator();
-        while (iterator.hasNext()) {
-            block6: {
-                BX bX;
-                k__0 k__02;
-                k__0 k__03;
-                block5: {
-                    k__02 = k__03 = (k__0)iterator.next();
-                    if (stringArray != null) break block5;
-                    if (!(k__02 instanceof p3_0)) break block6;
-                    k__02 = k__03;
-                }
-                if ((bX = ((p3_0)k__02).m()) == this) {
-                    return k__03;
-                }
+            var3 = this.B;
+            if (var2 != null) {
+               break label32;
             }
-            if (stringArray == null) continue;
-        }
-        return null;
-    }
 
-    public void J() {
-        Iterator iterator = aL.J((Collection)this.Z).iterator();
-        String[] stringArray = BX.B();
-        while (iterator.hasNext()) {
-            at_0 at_02 = (at_0)iterator.next();
-            this.u(at_02);
-            if (stringArray == null) continue;
-        }
-    }
+            var10000 = this.B.getTabCount();
+         }
 
-    public boolean Q(int n10) {
-        return this.u(this.x(n10));
-    }
+         if (var10000 <= 0) {
+            return;
+         }
 
-    public boolean w(String string) {
-        return this.u(this.H(string));
-    }
+         var3 = this.B;
+      }
 
-    public boolean u(at_0 at_02) {
-        String[] stringArray = BX.B();
-        if (at_02 != null) {
-            QL qL = this.z();
-            int n10 = this.K(at_02);
-            boolean bl = qL.l(at_02, this, n10);
-            if (stringArray == null) {
-                if (bl) {
-                    boolean bl2 = this.x(at_02);
-                    this.e();
-                    qL.p(at_02, this, n10);
-                    return bl2;
-                }
-                bl = false;
+      var3.setSelectedIndex(0);
+   }
+
+   public void B() {
+      String[] var10000 = B();
+      int var2 = this.o();
+      String[] var1 = var10000;
+      int var4 = var2;
+      int var10001 = 1;
+      if (var1 == null) {
+         if (var2 <= 1) {
+            return;
+         }
+
+         var4 = this.M();
+         var10001 = 1;
+      }
+
+      label18: {
+         int var3 = var4 - var10001;
+         var10001 = var3;
+         byte var10002 = -1;
+         if (var1 == null) {
+            if (var3 != -1) {
+               var10001 = var3;
+               break label18;
             }
-            return bl;
-        }
-        return false;
-    }
 
-    public void R(at_0 at_02) {
-        Iterator iterator = aL.J((Collection)this.Z).iterator();
-        String[] stringArray = BX.B();
-        while (iterator.hasNext()) {
-            block6: {
-                at_0 at_03;
-                at_0 at_04;
-                block5: {
-                    at_03 = at_04 = (at_0)iterator.next();
-                    if (stringArray != null) break block5;
-                    if (at_03 == at_02) break block6;
-                    at_03 = at_04;
-                }
-                boolean bl = at_03.J();
-                if (stringArray == null && bl) {
-                    bl = this.u(at_04);
-                }
+            var10001 = var2;
+            var10002 = 1;
+         }
+
+         var10001 -= var10002;
+      }
+
+      this.V(var10001);
+   }
+
+   public void U() {
+      String[] var10000 = B();
+      int var2 = this.o();
+      String[] var1 = var10000;
+      int var4 = var2;
+      int var10001 = 1;
+      if (var1 == null) {
+         if (var2 <= 1) {
+            return;
+         }
+
+         var4 = this.M();
+         var10001 = 1;
+      }
+
+      int var3 = var4 + var10001;
+      var10001 = var3;
+      if (var1 == null) {
+         var10001 = var3 == var2 ? 0 : var3;
+      }
+
+      this.V(var10001);
+   }
+
+   public int m(String var1) {
+      return this.K(this.H(var1));
+   }
+
+   public int K(com.at_2 var1) {
+      return this.Z.indexOf(var1);
+   }
+
+   public boolean a(int var1) {
+      return this.x(this.x(var1));
+   }
+
+   public boolean A(String var1) {
+      return this.x(this.H(var1));
+   }
+
+   public boolean x(com.at_2 var1) {
+      String[] var2 = B();
+      if (var1 != null) {
+         int var3 = this.K(var1);
+         if (var2 != null) {
+            return (boolean)var3;
+         }
+
+         if (var3 != -1) {
+            var1.m(this.d(var1));
+            this.B.remove(var3);
+            this.Z.remove(var1);
+            return true;
+         }
+      }
+
+      return (boolean)0;
+   }
+
+   protected com.k__2 d(com.at_2 var1) {
+      String[] var10000 = B();
+      List var3 = var1.U();
+      String[] var2 = var10000;
+
+      for (com.k__2 var5 : var3) {
+         label21: {
+            com.k__2 var7 = var5;
+            if (var2 == null) {
+               if (!(var5 instanceof p3_2)) {
+                  break label21;
+               }
+
+               var7 = var5;
             }
-            if (stringArray == null) continue;
-        }
-    }
 
-    public void b() {
-        at_0 at_02 = this.r();
-        if (at_02 != null) {
-            this.u(at_02);
-        }
-    }
-
-    public void O() {
-        block3: {
-            QL qL;
-            block2: {
-                QL qL2 = this.z();
-                String[] stringArray = BX.B();
-                qL = qL2;
-                if (stringArray != null) break block2;
-                if (qL == null) break block3;
-                qL = qL2;
+            com.BX var6 = ((p3_2)var7).m();
+            if (var6 == this) {
+               return var5;
             }
-            qL.h(this);
-        }
-    }
+         }
 
-    public boolean Q() {
-        return this.z().G() == this;
-    }
+         if (var2 != null) {
+            break;
+         }
+      }
 
-    public void f(at_0 at_02, int n10) {
-        block3: {
-            QL qL;
-            block2: {
-                QL qL2 = this.z();
-                String[] stringArray = BX.B();
-                qL = qL2;
-                if (stringArray != null) break block2;
-                if (qL == null) break block3;
-                qL = qL2;
+      return null;
+   }
+
+   public void J() {
+      String[] var10000 = B();
+      Iterator var2 = com.aL.J((Collection)this.Z).iterator();
+      String[] var1 = var10000;
+
+      while (var2.hasNext()) {
+         com.at_2 var3 = (com.at_2)var2.next();
+         this.u(var3);
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
+
+   public boolean Q(int var1) {
+      return this.u(this.x(var1));
+   }
+
+   public boolean w(String var1) {
+      return this.u(this.H(var1));
+   }
+
+   public boolean u$boolean(com.at_2 var1) {
+      String[] var2 = B();
+      if (var1 != null) {
+         com.QL var3 = this.z();
+         int var4 = this.K(var1);
+         boolean var10000 = var3.l(var1, this, var4);
+         if (var2 == null) {
+            if (var10000) {
+               boolean var5 = this.x(var1);
+               this.e();
+               var3.p(var1, this, var4);
+               return var5;
             }
-            qL.e(this, at_02, n10);
-        }
-    }
 
-    public void e() {
-        block3: {
-            BX bX;
-            block2: {
-                String[] stringArray = BX.B();
-                bX = this;
-                if (stringArray != null) break block2;
-                if (bX.o() != 0) break block3;
-                bX = this;
+            var10000 = false;
+         }
+
+         return var10000;
+      } else {
+         return false;
+      }
+   }
+
+   public void R(com.at_2 var1) {
+      String[] var10000 = B();
+      Iterator var3 = com.aL.J((Collection)this.Z).iterator();
+      String[] var2 = var10000;
+
+      while (var3.hasNext()) {
+         label35: {
+            com.at_2 var4 = (com.at_2)var3.next();
+            com.at_2 var5 = var4;
+            if (var2 == null) {
+               if (var4 == var1) {
+                  break label35;
+               }
+
+               var5 = var4;
             }
-            bX.w();
-        }
-    }
 
-    public void d() {
-        block3: {
-            Container container;
-            block2: {
-                Container container2 = this.B.getParent();
-                String[] stringArray = BX.B();
-                container = container2;
-                if (stringArray != null) break block2;
-                if (!(container instanceof O)) break block3;
-                container = container2;
+            if (var2 == null && var5.J()) {
+               this.u(var4);
             }
-            DP dP = QL.D((O)container);
-            dP.m();
-        }
-    }
+         }
 
-    public void Y() {
-        block3: {
-            Container container;
-            block2: {
-                Container container2 = this.B.getParent();
-                String[] stringArray = BX.B();
-                container = container2;
-                if (stringArray != null) break block2;
-                if (!(container instanceof O)) break block3;
-                container = container2;
+         if (var2 != null) {
+            break;
+         }
+      }
+   }
+
+   public void b() {
+      com.at_2 var1 = this.r();
+      if (var1 != null) {
+         this.u(var1);
+      }
+   }
+
+   public void O() {
+      String[] var10000 = B();
+      com.QL var2 = this.z();
+      String[] var1 = var10000;
+      com.QL var3 = var2;
+      if (var1 == null) {
+         if (var2 == null) {
+            return;
+         }
+
+         var3 = var2;
+      }
+
+      var3.h(this);
+   }
+
+   public boolean Q() {
+      return this.z().G() == this;
+   }
+
+   public void f(com.at_2 var1, int var2) {
+      String[] var10000 = B();
+      com.QL var4 = this.z();
+      String[] var3 = var10000;
+      com.QL var5 = var4;
+      if (var3 == null) {
+         if (var4 == null) {
+            return;
+         }
+
+         var5 = var4;
+      }
+
+      var5.e(this, var1, var2);
+   }
+
+   public void e() {
+      String[] var1 = B();
+      com.BX var10000 = this;
+      if (var1 == null) {
+         if (this.o() != 0) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.w();
+   }
+
+   public void d() {
+      String[] var10000 = B();
+      Container var2 = this.B.getParent();
+      String[] var1 = var10000;
+      Container var4 = var2;
+      if (var1 == null) {
+         if (!(var2 instanceof com.U.O)) {
+            return;
+         }
+
+         var4 = var2;
+      }
+
+      com.DP var3 = com.QL.D((com.U.O)var4);
+      var3.m();
+   }
+
+   public void Y() {
+      String[] var10000 = B();
+      Container var2 = this.B.getParent();
+      String[] var1 = var10000;
+      Container var4 = var2;
+      if (var1 == null) {
+         if (!(var2 instanceof com.U.O)) {
+            return;
+         }
+
+         var4 = var2;
+      }
+
+      com.DP var3 = com.QL.D((com.U.O)var4);
+      var3.u();
+   }
+
+   public void w() {
+      String[] var10000 = B();
+      com.QL var2 = this.z();
+      String[] var1 = var10000;
+      com.QL var3 = var2;
+      if (var1 == null) {
+         if (var2 == null) {
+            return;
+         }
+
+         var3 = var2;
+      }
+
+      var3.Z(this);
+   }
+
+   public void z$void() {
+      String[] var10000 = B();
+      com.QL var2 = this.z();
+      String[] var1 = var10000;
+      com.QL var3 = var2;
+      if (var1 == null) {
+         if (var2 == null) {
+            return;
+         }
+
+         var3 = var2;
+      }
+
+      var3.Z(var2.H());
+   }
+
+   public static void q(String[] var0) {
+      T = var0;
+   }
+
+   public static String[] B$String() {
+      return T;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      if (B() != null) {
+         q(new String[5]);
+      }
+
+      char[] var10003 = "S\u0007@?\u0001/JCFS+\u0002/\nS\tW+".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 58;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 58;
+         var10006 = var0;
+      } else {
+         var6 = 58;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 58;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 13;
+               break;
+            case 1:
+               var23 = 82;
+               break;
+            case 2:
+               var23 = 25;
+               break;
+            case 3:
+               var23 = 112;
+               break;
+            case 4:
+               var23 = 86;
+               break;
+            case 5:
+               var23 = 112;
+               break;
+            default:
+               var23 = 30;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            DP dP = QL.D((O)container);
-            dP.u();
-        }
-    }
 
-    public void w() {
-        block3: {
-            QL qL;
-            block2: {
-                QL qL2 = this.z();
-                String[] stringArray = BX.B();
-                qL = qL2;
-                if (stringArray != null) break block2;
-                if (qL == null) break block3;
-                qL = qL2;
-            }
-            qL.Z(this);
-        }
-    }
-
-    public void z() {
-        block3: {
-            QL qL;
-            QL qL2;
-            block2: {
-                qL2 = this.z();
-                String[] stringArray = BX.B();
-                qL = qL2;
-                if (stringArray != null) break block2;
-                if (qL == null) break block3;
-                qL = qL2;
-            }
-            qL.Z(qL2.H());
-        }
-    }
-
-    public static void q(String[] stringArray) {
-        T = stringArray;
-    }
-
-    public static String[] B() {
-        return T;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block13: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block12: {
-                if (BX.B() != null) {
-                    BX.q(new String[5]);
-                }
-                char[] cArray3 = "S\u0007@?\u0001/JCFS+\u0002/\nS\tW+".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 58;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block12;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block13;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 13;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 82;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 25;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 112;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 86;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 112;
-                            break;
-                        }
-                        default: {
-                            n17 = 30;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

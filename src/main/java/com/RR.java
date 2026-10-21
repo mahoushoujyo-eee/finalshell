@@ -1,23 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.QD;
+class RR implements Runnable {
+   final int J;
+   final com.QD H;
 
-class RR
-implements Runnable {
-    final int J;
-    final QD H;
+   RR(com.QD var1, int var2) {
+      this.H = var1;
+      this.J = var2;
+   }
 
-    RR(QD qD, int n10) {
-        this.H = qD;
-        this.J = n10;
-    }
-
-    @Override
-    public void run() {
-        this.H.z.setValue(this.J);
-    }
+   @Override
+   public void run() {
+      this.H.z.setValue(this.J);
+   }
 }
+
+
+
+
 

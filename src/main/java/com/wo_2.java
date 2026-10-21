@@ -1,157 +1,192 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.co_0;
-import java.io.File;
-import javax.swing.ImageIcon;
+import java.awt.Component;
+import java.awt.event.ActionListener;
+import javax.swing.JComponent;
+import javax.swing.event.AncestorEvent;
+import javax.swing.event.AncestorListener;
 
-/*
- * Renamed from com.wo
- */
-public class wo_2 {
-    private final Object z = new Object();
-    private File T;
-    private boolean n = false;
-    private boolean M = false;
-    private ImageIcon r = null;
-    private ImageIcon Y = null;
+public class Wo_2 extends com.WC implements AncestorListener {
+   private JComponent P;
 
-    public wo_2() {
-    }
+   public Wo_2(JComponent var1) {
+      super(GO.q);
+      this.M(var1);
+   }
 
-    public wo_2(File file) {
-        this.T = file;
-    }
+   public Wo_2(JComponent var1, long var2) {
+      super(var2);
+      this.M(var1);
+   }
 
-    public File T() {
-        return this.T;
-    }
+   public Wo_2(JComponent var1, String var2, long var3) {
+      super(var2, var3);
+      this.M(var1);
+   }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void j(File file) {
-        Object object = this.z;
-        synchronized (object) {
-            String string = co_0.U();
-            this.T = file;
-            Object object2 = file;
-            if (string != null) {
-                if (object2 == null) {
-                    this.n = false;
-                    this.M = false;
-                    this.r = null;
-                    this.Y = null;
-                }
-                object2 = object;
+   public Wo_2(JComponent var1, long var2, long var4) {
+      super(var2, var4);
+      this.M(var1);
+   }
+
+   public Wo_2(JComponent var1, String var2, long var3, long var5) {
+      super(var2, var3, var5);
+      this.M(var1);
+   }
+
+   public Wo_2(JComponent var1, long var2, ActionListener var4) {
+      super(var2, var4);
+      this.M(var1);
+   }
+
+   public Wo_2(JComponent var1, String var2, long var3, ActionListener var5) {
+      super(var2, var3, var5);
+      this.M(var1);
+   }
+
+   public Wo_2(JComponent var1, long var2, long var4, ActionListener var6) {
+      super(var2, var4, var6);
+      this.M(var1);
+   }
+
+   public Wo_2(JComponent var1, String var2, long var3, long var5, ActionListener var7) {
+      super(var2, var3, var5, var7);
+      this.M(var1);
+   }
+
+   private void M(JComponent var1) {
+      this.P = var1;
+      this.O(true);
+      var1.addAncestorListener(this);
+   }
+
+   public void p() {
+      this.P.removeAncestorListener(this);
+   }
+
+   public Component q() {
+      return this.P;
+   }
+
+   @Override
+   public void ancestorAdded(AncestorEvent var1) {
+      this.u();
+   }
+
+   @Override
+   public void ancestorRemoved(AncestorEvent var1) {
+      this.Y();
+   }
+
+   @Override
+   public void ancestorMoved(AncestorEvent var1) {
+   }
+
+   public static com.Wo_2 G(JComponent var0) {
+      I(var0);
+      return new com.Wo_2(var0);
+   }
+
+   public static com.Wo_2 r(JComponent var0, long var1) {
+      I(var0);
+      return new com.Wo_2(var0, var1);
+   }
+
+   public static com.Wo_2 s(JComponent var0, String var1, long var2) {
+      I(var0);
+      return new com.Wo_2(var0, var1, var2);
+   }
+
+   public static com.Wo_2 d(JComponent var0, long var1, long var3) {
+      I(var0);
+      return new com.Wo_2(var0, var1, var3);
+   }
+
+   public static com.Wo_2 Z(JComponent var0, String var1, long var2, long var4) {
+      I(var0);
+      return new com.Wo_2(var0, var1, var2, var4);
+   }
+
+   public static com.Wo_2 V(JComponent var0, long var1, ActionListener var3) {
+      I(var0);
+      return new com.Wo_2(var0, var1, var3);
+   }
+
+   public static com.Wo_2 H(JComponent var0, String var1, long var2, ActionListener var4) {
+      I(var0);
+      return new com.Wo_2(var0, var1, var2, var4);
+   }
+
+   public static com.Wo_2 J(JComponent var0, long var1, long var3, ActionListener var5) {
+      I(var0);
+      return new com.Wo_2(var0, var1, var3, var5);
+   }
+
+   public static com.Wo_2 Z(JComponent var0, String var1, long var2, long var4, ActionListener var6) {
+      I(var0);
+      return new com.Wo_2(var0, var1, var2, var4, var6);
+   }
+
+   public static void I(JComponent var0) {
+      AncestorListener[] var2 = var0.getAncestorListeners();
+      int var3 = var2.length;
+      int[] var10000 = com.WC.V();
+      int var4 = 0;
+      int[] var1 = var10000;
+
+      while (var4 < var3) {
+         AncestorListener var5 = var2[var4];
+         if (var1 == null) {
+            if (var5 instanceof com.Wo_2) {
+               var0.removeAncestorListener(var5);
             }
-            // ** MonitorExit[v0] (shouldn't be in output)
-            return;
-        }
-    }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public boolean Y() {
-        Object object = this.z;
-        synchronized (object) {
-            return this.n;
-        }
-    }
+            var4++;
+         }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void F(boolean bl) {
-        Object object = this.z;
-        synchronized (object) {
-            String string = co_0.U();
-            Object object2 = this.T;
-            if (string != null) {
-                if (object2 != null) {
-                    this.n = bl;
-                }
-                object2 = object;
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
+
+   public static boolean D(JComponent var0) {
+      AncestorListener[] var2 = var0.getAncestorListeners();
+      int[] var10000 = com.WC.V();
+      int var3 = var2.length;
+      int[] var1 = var10000;
+      int var4 = 0;
+
+      while (true) {
+         if (var4 < var3) {
+            AncestorListener var5 = var2[var4];
+            if (var1 == null) {
+               var6 = var5 instanceof com.Wo_2;
+               if (var1 != null) {
+                  break;
+               }
+
+               if (var6) {
+                  return true;
+               }
+
+               var4++;
             }
-            // ** MonitorExit[v0] (shouldn't be in output)
-            return;
-        }
-    }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public boolean Z() {
-        Object object = this.z;
-        synchronized (object) {
-            return this.M;
-        }
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void y(boolean bl) {
-        Object object = this.z;
-        synchronized (object) {
-            String string = co_0.U();
-            Object object2 = this.T;
-            if (string != null) {
-                if (object2 != null) {
-                    this.M = bl;
-                }
-                object2 = object;
+            if (var1 == null) {
+               continue;
             }
-            // ** MonitorExit[v0] (shouldn't be in output)
-            return;
-        }
-    }
+         }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public ImageIcon k() {
-        Object object = this.z;
-        synchronized (object) {
-            return this.r;
-        }
-    }
+         var6 = false;
+         break;
+      }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void U(ImageIcon imageIcon) {
-        Object object = this.z;
-        synchronized (object) {
-            this.r = imageIcon;
-        }
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public ImageIcon P() {
-        Object object = this.z;
-        synchronized (object) {
-            return this.Y;
-        }
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void C(ImageIcon imageIcon) {
-        Object object = this.z;
-        synchronized (object) {
-            this.Y = imageIcon;
-        }
-    }
-
-    public Object S() {
-        return this.z;
-    }
+      return var6;
+   }
 }
+
+
+
+
 

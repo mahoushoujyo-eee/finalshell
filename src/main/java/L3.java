@@ -1,19 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class L3
-implements ActionListener {
-    final nj_0 m;
+class L3 implements ActionListener {
+   final nj_2 m;
 
-    L3(nj_0 nj_02) {
-        this.m = nj_02;
-    }
+   L3(nj_2 var1) {
+      this.m = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+   }
 }
+
+
+
+
 

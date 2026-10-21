@@ -1,64 +1,117 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
+import java.util.HashMap;
 
-/*
- * Renamed from uf
- */
-public class uf_2 {
-    public static int e;
-    public static int P;
-    int J;
-    tf_2 t;
-    ck_2 u;
+public class Uf_2 implements Runnable {
+   Thread L;
+   HashMap Z = new HashMap();
 
-    public uf_2(int n10) {
-        this.J = 0;
-        this.J = n10;
-    }
+   public Uf_2() {
+      this.L = new Thread(this);
+      this.L.start();
+   }
 
-    public int Q() {
-        return this.J;
-    }
+   synchronized void S(Qm_2 var1, int var2) {
+      com.ky_4[] var3 = Qm_2.J();
+      HashMap var10000 = this.Z;
+      Integer var10001 = var1.W;
+      if (var3 != null) {
+         if (!var10000.containsKey(var10001)) {
+            aT var4 = new aT(var1);
+            this.Z.put(var1.W, var4);
+         }
 
-    public void D(int n10) {
-        this.J = n10;
-    }
+         var10000 = this.Z;
+         var10001 = var1.W;
+      }
 
-    public tf_2 n() {
-        return (tf_2)this.t;
-    }
+      aT var5 = (aT)var10000.get(var10001);
+      var5.C(var2);
+   }
 
-    public void w(tf_2 tf_22) {
-        this.t = tf_22;
-    }
+   synchronized void e(Qm_2 var1) {
+      if (!this.Z.containsKey(var1.W)) {
+         aT var2 = new aT(var1);
+         this.Z.put(var1.W, var2);
+      }
+   }
 
-    public ck_2 v() {
-        return (ck_2)this.u;
-    }
+   @Override
+   public void run() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Qm_2.J ()[Lcom/ky_4;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: dup
+      // 06: astore 2
+      // 07: monitorenter
+      // 08: aload 0
+      // 09: getfield Uf_2.Z Ljava/util/HashMap;
+      // 0c: invokevirtual java/util/HashMap.keySet ()Ljava/util/Set;
+      // 0f: invokeinterface java/util/Set.iterator ()Ljava/util/Iterator; 1
+      // 14: astore 3
+      // 15: aload 1
+      // 16: ifnonnull 44
+      // 19: aload 3
+      // 1a: invokeinterface java/util/Iterator.next ()Ljava/lang/Object; 1
+      // 1f: goto 26
+      // 22: invokestatic Uf_2.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 25: athrow
+      // 26: checkcast java/lang/Integer
+      // 29: invokevirtual java/lang/Integer.intValue ()I
+      // 2c: istore 4
+      // 2e: aload 0
+      // 2f: getfield Uf_2.Z Ljava/util/HashMap;
+      // 32: iload 4
+      // 34: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 37: invokevirtual java/util/HashMap.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 3a: checkcast aT
+      // 3d: astore 5
+      // 3f: aload 5
+      // 41: invokevirtual aT.t ()V
+      // 44: aload 3
+      // 45: invokeinterface java/util/Iterator.hasNext ()Z 1
+      // 4a: ifne 19
+      // 4d: aload 0
+      // 4e: getfield Uf_2.Z Ljava/util/HashMap;
+      // 51: invokevirtual java/util/HashMap.clear ()V
+      // 54: aload 0
+      // 55: aconst_null
+      // 56: putfield Uf_2.Z Ljava/util/HashMap;
+      // 59: aload 0
+      // 5a: new java/util/HashMap
+      // 5d: dup
+      // 5e: invokespecial java/util/HashMap.<init> ()V
+      // 61: putfield Uf_2.Z Ljava/util/HashMap;
+      // 64: aload 2
+      // 65: aload 1
+      // 66: ifnull 26
+      // 69: monitorexit
+      // 6a: goto 70
+      // 6d: aload 2
+      // 6e: monitorexit
+      // 6f: athrow
+      // 70: getstatic Cs_2.o I
+      // 73: i2l
+      // 74: invokestatic java/lang/Thread.sleep (J)V
+      // 77: goto 04
+      // 7a: astore 2
+      // 7b: aload 2
+      // 7c: invokevirtual java/lang/InterruptedException.printStackTrace ()V
+      // 7f: goto 04
+   }
 
-    public void b(ck_2 ck_22) {
-        this.u = ck_22;
-    }
-
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5378886281743865981L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "UZ\u00ca\u0089\u001e\u0090\u0098\u0018N\u007fz\u00b4\u001e\u0090\u0098\u0019";
-        int n11 = "UZ\u00ca\u0089\u001e\u0090\u0098\u0018N\u007fz\u00b4\u001e\u0090\u0098\u0019".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        uf_2.e = (int)lArray[1];
-        uf_2.P = (int)lArray[0];
-    }
+   private static InterruptedException a(InterruptedException var0) {
+      return var0;
+   }
 }
+
+
+
+
 

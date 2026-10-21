@@ -1,70 +1,56 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
 import org.I;
-import org.v.RG;
-import org.v.RW;
-import org.v._S;
-import org.v._U;
-import org.v._Y;
-import org.v._n_0;
-import org.v.fq_0;
-import org.v.fu_0;
-import org.v.hL;
-import org.v.k_0;
-import org.v.nt_0;
 
-public class _O
-extends _n_0
-implements RW {
-    private static final long g;
+public class _O extends _n_2 implements RW {
+   private static final long g;
 
-    public _O(I i2, @c String string, fu_0[] fu_0Array, String string2, @c _U[] _UArray, nt_0[] nt_0Array) {
-        super(i2, string, fu_0Array, string2, _UArray, nt_0Array);
-    }
+   public _O(I var1, @org.F.c String var2, fu_2[] var3, String var4, @org.F.c _U[] var5, Nt_2[] var6) {
+      super(var1, var2, var3, var4, var5, var6);
+   }
 
-    @Override
-    public _S Q() {
-        return RG.N(this.D());
-    }
+   @Override
+   public _S Q() {
+      return RG.N(this.D());
+   }
 
-    @Override
-    public String R() {
-        _Y _Y2 = (_Y)this.y();
-        return _Y2.R() + (char)g + this.j();
-    }
+   @Override
+   public String R() {
+      _Y var1 = (_Y)this.y();
+      return var1.R() + (int)g + this.j();
+   }
 
-    @Override
-    public void C(k_0 k_02) {
-        this.r(k_02);
-    }
+   @Override
+   public void C(K_2 var1) {
+      this.r(var1);
+   }
 
-    @Override
-    public k_0 H() {
-        return (k_0)this.y();
-    }
+   @Override
+   public K_2 H() {
+      return (K_2)this.y();
+   }
 
-    @Override
-    @c
-    public Object J(fq_0 fq_02) throws Throwable {
-        return fq_02.p(this);
-    }
+   @org.F.c
+   @Override
+   public Object J(fq_2 var1) throws Throwable {
+      return var1.p(this);
+   }
 
-    @Override
-    @c
-    public Object i(hL hL2) throws Throwable {
-        return hL2.I(this);
-    }
+   @org.F.c
+   @Override
+   public Object i(hL var1) throws Throwable {
+      return var1.I(this);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 1573063443516784526L;
-        g = 0x926B5D990FF87FAAL ^ l2;
-    }
+   static {
+      long var0 = 1573063443516784526L;
+      long var10002 = -7896114609684709462L ^ var0;
+      byte var10001 = -1;
+      g = var10002;
+   }
 }
+
+
+
+
 

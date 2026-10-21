@@ -1,37 +1,34 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.NJ;
-import com.cn_0;
+class zK implements NJ {
+   final com.Cn_2 S;
 
-class zK
-implements NJ {
-    final cn_0 S;
+   zK(com.Cn_2 var1) {
+      this.S = var1;
+   }
 
-    zK(cn_0 cn_02) {
-        this.S = cn_02;
-    }
+   @Override
+   public void e() {
+      String[] var1 = com.Cn_2.Q();
+      com.Cn_2 var10000 = this.S;
+      if (var1 != null) {
+         if (com.Cn_2.l(this.S).n() != 1) {
+            return;
+         }
 
-    @Override
-    public void e() {
-        block3: {
-            cn_0 cn_02;
-            block2: {
-                String[] stringArray = cn_0.Q();
-                cn_02 = this.S;
-                if (stringArray == null) break block2;
-                if (cn_0.l(cn_02).n() != 1) break block3;
-                cn_02 = this.S;
-            }
-            cn_0.T(cn_02);
-        }
-    }
+         var10000 = this.S;
+      }
 
-    @Override
-    public void R() {
-        cn_0.b(this.S);
-    }
+      com.Cn_2.T(var10000);
+   }
+
+   @Override
+   public void R() {
+      com.Cn_2.b(this.S);
+   }
 }
+
+
+
+
 

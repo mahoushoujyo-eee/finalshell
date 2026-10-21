@@ -1,38 +1,39 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ky_2;
 import java.util.concurrent.ThreadFactory;
 
-public class PU
-implements ThreadFactory {
-    private static String[] o;
+public class PU implements ThreadFactory {
+   private static String[] o;
 
-    @Override
-    public Thread newThread(Runnable runnable) {
-        Thread thread = new Thread(runnable);
-        String[] stringArray = PU.l();
-        thread.setDaemon(true);
-        if (stringArray == null) {
-            ky_2.K(new String[3]);
-        }
-        return thread;
-    }
+   @Override
+   public Thread newThread(Runnable var1) {
+      String[] var10000 = l();
+      Thread var3 = new Thread(var1);
+      String[] var2 = var10000;
+      var3.setDaemon(true);
+      if (var2 == null) {
+         com.ky_4.K(new String[3]);
+      }
 
-    public static void z(String[] stringArray) {
-        o = stringArray;
-    }
+      return var3;
+   }
 
-    public static String[] l() {
-        return o;
-    }
+   public static void z(String[] var0) {
+      o = var0;
+   }
 
-    static {
-        if (PU.l() == null) {
-            PU.z(new String[2]);
-        }
-    }
+   public static String[] l() {
+      return o;
+   }
+
+   static {
+      if (l() == null) {
+         z(new String[2]);
+      }
+   }
 }
+
+
+
+
 

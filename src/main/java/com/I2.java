@@ -1,24 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.X1;
 import javax.swing.JProgressBar;
 
-class I2
-implements Runnable {
-    final JProgressBar q;
-    final X1 R;
+class I2 implements Runnable {
+   final JProgressBar q;
+   final X1 R;
 
-    I2(X1 x12, JProgressBar jProgressBar) {
-        this.R = x12;
-        this.q = jProgressBar;
-    }
+   I2(X1 var1, JProgressBar var2) {
+      this.R = var1;
+      this.q = var2;
+   }
 
-    @Override
-    public void run() {
-        this.q.repaint();
-    }
+   @Override
+   public void run() {
+      this.q.repaint();
+   }
 }
+
+
+
+
 

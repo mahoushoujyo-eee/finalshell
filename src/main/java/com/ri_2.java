@@ -1,26 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.xm_0;
-import java.awt.event.AdjustmentEvent;
-import java.awt.event.AdjustmentListener;
+class Ri_2 extends R7 {
+   final com.C0 A;
 
-/*
- * Renamed from com.ri
- */
-class ri_2
-implements AdjustmentListener {
-    final xm_0 d;
+   Ri_2(com.C0 var1) {
+      this.A = var1;
+   }
 
-    ri_2(xm_0 xm_02) {
-        this.d = xm_02;
-    }
-
-    @Override
-    public void adjustmentValueChanged(AdjustmentEvent adjustmentEvent) {
-        xm_0.x(this.d).repaint();
-    }
+   @Override
+   public void X(com.Ds_2 var1) {
+      this.A.N(var1);
+   }
 }
+
+
+
+
 

@@ -1,243 +1,337 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.l;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import org.F.c;
-import org.T.z;
-import org.l.F;
 
-public class x
-implements Iterator {
-    private final z b;
-    private static final Object o;
-    @c
-    private static final Object A;
-    @c
-    private Object E = o;
-    static final /* synthetic */ boolean L;
-    private static final String a;
+public class x implements Iterator {
+   private final org.T.z b;
+   private static final Object o;
+   @org.F.c
+   private static final Object A;
+   @org.F.c
+   private Object E;
+   private static final String a;
 
-    public x(z z10) {
-        this.b = z10;
-    }
+   public x(org.T.z var1) {
+      this.E = o;
+      this.b = var1;
+   }
 
-    @Override
-    public boolean hasNext() {
-        boolean bl;
-        Object object;
-        Object object2;
-        block6: {
-            block7: {
-                boolean bl2 = F.G();
-                try {
-                    try {
-                        object2 = this.E;
-                        object = o;
-                        if (bl2) break block6;
-                        if (object2 != object) break block7;
-                    }
-                    catch (NoSuchElementException noSuchElementException) {
-                        throw x.a(noSuchElementException);
-                    }
-                    this.E = this.b.h();
-                }
-                catch (NoSuchElementException noSuchElementException) {
-                    throw x.a(noSuchElementException);
-                }
+   @Override
+   public boolean hasNext() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/l/F.G ()Z
+      // 03: istore 1
+      // 04: aload 0
+      // 05: getfield org/l/x.E Ljava/lang/Object;
+      // 08: getstatic org/l/x.o Ljava/lang/Object;
+      // 0b: iload 1
+      // 0c: ifne 34
+      // 0f: if_acmpne 2d
+      // 12: goto 19
+      // 15: invokestatic org/l/x.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 18: athrow
+      // 19: aload 0
+      // 1a: aload 0
+      // 1b: getfield org/l/x.b Lorg/T/z;
+      // 1e: invokeinterface org/T/z.h ()Ljava/lang/Object; 1
+      // 23: putfield org/l/x.E Ljava/lang/Object;
+      // 26: goto 2d
+      // 29: invokestatic org/l/x.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 2c: athrow
+      // 2d: aload 0
+      // 2e: getfield org/l/x.E Ljava/lang/Object;
+      // 31: getstatic org/l/x.A Ljava/lang/Object;
+      // 34: if_acmpeq 3f
+      // 37: bipush 1
+      // 38: goto 40
+      // 3b: invokestatic org/l/x.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 3e: athrow
+      // 3f: bipush 0
+      // 40: ireturn
+   }
+
+   @Override
+   public Object next() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/l/F.s ()Z
+      // 03: istore 1
+      // 04: aload 0
+      // 05: getfield org/l/x.E Ljava/lang/Object;
+      // 08: getstatic org/l/x.o Ljava/lang/Object;
+      // 0b: iload 1
+      // 0c: ifeq 3f
+      // 0f: if_acmpne 2d
+      // 12: goto 19
+      // 15: invokestatic org/l/x.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 18: athrow
+      // 19: aload 0
+      // 1a: aload 0
+      // 1b: getfield org/l/x.b Lorg/T/z;
+      // 1e: invokeinterface org/T/z.h ()Ljava/lang/Object; 1
+      // 23: putfield org/l/x.E Ljava/lang/Object;
+      // 26: goto 2d
+      // 29: invokestatic org/l/x.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 2c: athrow
+      // 2d: aload 0
+      // 2e: getfield org/l/x.E Ljava/lang/Object;
+      // 31: iload 1
+      // 32: ifeq 52
+      // 35: getstatic org/l/x.A Ljava/lang/Object;
+      // 38: goto 3f
+      // 3b: invokestatic org/l/x.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 3e: athrow
+      // 3f: if_acmpne 4e
+      // 42: new java/util/NoSuchElementException
+      // 45: dup
+      // 46: invokespecial java/util/NoSuchElementException.<init> ()V
+      // 49: athrow
+      // 4a: invokestatic org/l/x.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 4d: athrow
+      // 4e: aload 0
+      // 4f: getfield org/l/x.E Ljava/lang/Object;
+      // 52: astore 2
+      // 53: aload 0
+      // 54: iload 1
+      // 55: ifeq 8e
+      // 58: getstatic org/l/x.o Ljava/lang/Object;
+      // 5b: putfield org/l/x.E Ljava/lang/Object;
+      // 5e: getstatic org/l/x.L Z
+      // 61: ifne 8d
+      // 64: goto 6b
+      // 67: invokestatic org/l/x.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 6a: athrow
+      // 6b: aload 2
+      // 6c: iload 1
+      // 6d: ifeq 8e
+      // 70: goto 77
+      // 73: invokestatic org/l/x.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 76: athrow
+      // 77: ifnonnull 8d
+      // 7a: goto 81
+      // 7d: invokestatic org/l/x.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 80: athrow
+      // 81: new java/lang/AssertionError
+      // 84: dup
+      // 85: invokespecial java/lang/AssertionError.<init> ()V
+      // 88: athrow
+      // 89: invokestatic org/l/x.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 8c: athrow
+      // 8d: aload 2
+      // 8e: areturn
+   }
+
+   @Override
+   public void remove() {
+      throw new UnsupportedOperationException(a);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = " mBsk}".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var9 = 74;
+      char[] var10002 = var10003;
+      int var4 = var10004;
+      char[] var13;
+      byte var17;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var13 = var10003;
+         var10005 = var0;
+         char var10008 = var10003[var0];
+         var10007 = 74;
+         var10006 = var10008;
+         switch (var0 % 7) {
+            case 0:
+               var17 = 24;
+               break;
+            case 1:
+               var17 = 66;
+               break;
+            case 2:
+               var17 = 101;
+               break;
+            case 3:
+               var17 = 86;
+               break;
+            case 4:
+               var17 = 87;
+               break;
+            case 5:
+               var17 = 82;
+               break;
+            default:
+               var17 = 40;
+         }
+      } else {
+         var9 = 74;
+         var4 = var10004;
+         if (var10004 <= var0) {
+            String var12 = new String(var10003).intern();
+            byte var7 = -1;
+            a = var12;
+
+            boolean var3;
+            label69: {
+               try {
+                  if (!x.class.desiredAssertionStatus()) {
+                     var3 = true;
+                     break label69;
+                  }
+               } catch (NoSuchElementException var2) {
+                  throw a(var2);
+               }
+
+               var3 = false;
             }
-            object2 = this.E;
-            object = A;
-        }
-        try {
-            bl = object2 != object;
-        }
-        catch (NoSuchElementException noSuchElementException) {
-            throw x.a(noSuchElementException);
-        }
-        return bl;
-    }
 
-    public Object next() {
-        Object object;
-        block20: {
-            Object object2;
-            block21: {
-                Object object3;
-                boolean bl;
-                block19: {
-                    Object object4;
-                    block17: {
-                        block18: {
-                            bl = F.s();
-                            try {
-                                try {
-                                    object3 = this.E;
-                                    object4 = o;
-                                    if (!bl) break block17;
-                                    if (object3 != object4) break block18;
-                                }
-                                catch (NoSuchElementException noSuchElementException) {
-                                    throw x.a(noSuchElementException);
-                                }
-                                this.E = this.b.h();
-                            }
-                            catch (NoSuchElementException noSuchElementException) {
-                                throw x.a(noSuchElementException);
-                            }
-                        }
-                        try {
-                            object3 = this.E;
-                            if (!bl) break block19;
-                            object4 = A;
-                        }
-                        catch (NoSuchElementException noSuchElementException) {
-                            throw x.a(noSuchElementException);
-                        }
-                    }
-                    try {
-                        if (object3 == object4) {
-                            throw new NoSuchElementException();
-                        }
-                    }
-                    catch (NoSuchElementException noSuchElementException) {
-                        throw x.a(noSuchElementException);
-                    }
-                    object3 = this.E;
-                }
-                object2 = object3;
-                try {
-                    try {
-                        try {
-                            try {
-                                object = this;
-                                if (!bl) break block20;
-                                ((x)object).E = o;
-                                if (L) break block21;
-                            }
-                            catch (NoSuchElementException noSuchElementException) {
-                                throw x.a(noSuchElementException);
-                            }
-                            object = object2;
-                            if (!bl) break block20;
-                        }
-                        catch (NoSuchElementException noSuchElementException) {
-                            throw x.a(noSuchElementException);
-                        }
-                        if (object != null) break block21;
-                    }
-                    catch (NoSuchElementException noSuchElementException) {
-                        throw x.a(noSuchElementException);
-                    }
-                    throw new AssertionError();
-                }
-                catch (NoSuchElementException noSuchElementException) {
-                    throw x.a(noSuchElementException);
-                }
+            L = var3;
+            o = new Object();
+            A = null;
+            return;
+         }
+
+         var13 = var10003;
+         var10005 = var0;
+         char var18 = var10003[var0];
+         var10007 = 74;
+         var10006 = var18;
+         switch (var0 % 7) {
+            case 0:
+               var17 = 24;
+               break;
+            case 1:
+               var17 = 66;
+               break;
+            case 2:
+               var17 = 101;
+               break;
+            case 3:
+               var17 = 86;
+               break;
+            case 4:
+               var17 = 87;
+               break;
+            case 5:
+               var17 = 82;
+               break;
+            default:
+               var17 = 40;
+         }
+      }
+
+      while (true) {
+         var13[var10005] = (char)(var10006 ^ var10007 ^ var17);
+         var0++;
+         if (var9 == 0) {
+            var13 = var10002;
+            var10005 = var9;
+            char var20 = var10002[var9];
+            var10007 = var9;
+            var10006 = var20;
+            switch (var0 % 7) {
+               case 0:
+                  var17 = 24;
+                  break;
+               case 1:
+                  var17 = 66;
+                  break;
+               case 2:
+                  var17 = 101;
+                  break;
+               case 3:
+                  var17 = 86;
+                  break;
+               case 4:
+                  var17 = 87;
+                  break;
+               case 5:
+                  var17 = 82;
+                  break;
+               default:
+                  var17 = 40;
             }
-            object = object2;
-        }
-        return object;
-    }
+         } else {
+            if (var4 <= var0) {
+               String var11 = new String(var10002).intern();
+               byte var6 = -1;
+               a = var11;
 
-    @Override
-    public void remove() {
-        throw new UnsupportedOperationException(a);
-    }
+               boolean var10000;
+               label33: {
+                  try {
+                     if (!x.class.desiredAssertionStatus()) {
+                        var10000 = true;
+                        break label33;
+                     }
+                  } catch (NoSuchElementException var1) {
+                     throw a(var1);
+                  }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     * Enabled unnecessary exception pruning
-     * Enabled aggressive exception aggregation
-     */
-    static {
-        boolean bl;
-        char[] cArray;
-        block14: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block13: {
-                char[] cArray3 = " mBsk}".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 74;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block13;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block14;
+                  var10000 = false;
+               }
+
+               L = var10000;
+               o = new Object();
+               A = null;
+               return;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 24;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 66;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 101;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 86;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 87;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 82;
-                            break;
-                        }
-                        default: {
-                            n17 = 40;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        try {
-            bl = !x.class.desiredAssertionStatus();
-        }
-        catch (NoSuchElementException noSuchElementException) {
-            throw x.a(noSuchElementException);
-        }
-        L = bl;
-        o = new Object();
-        A = null;
-    }
 
-    private static NoSuchElementException a(NoSuchElementException noSuchElementException) {
-        return noSuchElementException;
-    }
+            var13 = var10002;
+            var10005 = var0;
+            char var19 = var10002[var0];
+            var10007 = var9;
+            var10006 = var19;
+            switch (var0 % 7) {
+               case 0:
+                  var17 = 24;
+                  break;
+               case 1:
+                  var17 = 66;
+                  break;
+               case 2:
+                  var17 = 101;
+                  break;
+               case 3:
+                  var17 = 86;
+                  break;
+               case 4:
+                  var17 = 87;
+                  break;
+               case 5:
+                  var17 = 82;
+                  break;
+               default:
+                  var17 = 40;
+            }
+         }
+      }
+   }
+
+   private static NoSuchElementException a(NoSuchElementException var0) {
+      return var0;
+   }
 }
+
+
+
+
 

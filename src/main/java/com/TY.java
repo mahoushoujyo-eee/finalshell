@@ -1,186 +1,190 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.XM;
-import com.ra_1;
 import java.awt.image.ColorModel;
 
-class TY
-extends XM {
-    private static final long[] c;
-    private static final Integer[] e;
+class TY extends XM {
+   private static final long[] c;
+   private static final Integer[] e;
 
-    public TY(float f10, ColorModel colorModel, ColorModel colorModel2) {
-        super(f10, colorModel, colorModel2);
-    }
+   public TY(float var1, ColorModel var2, ColorModel var3) {
+      super(var1, var2, var3);
+   }
 
-    @Override
-    public void G(int[] nArray, int[] nArray2, float f10) {
-        int n10 = nArray.length;
-        String string = ra_1.c();
-        for (int i2 = 0; i2 < n10; i2 += 4) {
-            int n11;
-            int n12;
-            int n13;
-            int n14;
-            int n15;
-            int n16;
-            int n17;
-            int n18;
-            block15: {
-                int n19;
-                int n20;
-                block13: {
-                    int n21;
-                    int n22;
-                    block14: {
-                        block12: {
-                            int n23;
-                            int n24;
-                            block10: {
-                                int n25;
-                                block11: {
-                                    block9: {
-                                        int n26;
-                                        int n27;
-                                        block7: {
-                                            int n28;
-                                            block8: {
-                                                n28 = nArray[i2];
-                                                n18 = nArray2[i2];
-                                                n25 = nArray[i2 + 1];
-                                                n17 = nArray2[i2 + 1];
-                                                n22 = nArray[i2 + 2];
-                                                n16 = nArray2[i2 + 2];
-                                                n15 = nArray[i2 + 3];
-                                                n14 = nArray2[i2 + 3];
-                                                n27 = n18;
-                                                n26 = TY.b(3664, 6730940233445230440L);
-                                                if (string != null) break block7;
-                                                if (n27 >= n26) break block8;
-                                                n21 = n18 * n28 + TY.b(8278, 7649783469021981039L);
-                                                n13 = 2 * ((n21 >> TY.b(6108, 4547976378018717408L)) + n21 >> TY.b(23778, 6048668738469041629L));
-                                                if (string == null) break block9;
-                                            }
-                                            n27 = (TY.b(21112, 1487575835253447493L) - n18) * (TY.b(9653, 2662323655478996107L) - n28);
-                                            n26 = TY.b(8278, 7649783469021981039L);
-                                        }
-                                        n21 = n27 + n26;
-                                        n13 = 2 * (TY.b(9653, 2662323655478996107L) - ((n21 >> TY.b(23778, 6048668738469041629L)) + n21 >> TY.b(23778, 6048668738469041629L)));
-                                    }
-                                    n24 = n17;
-                                    n23 = TY.b(8278, 7649783469021981039L);
-                                    if (string != null) break block10;
-                                    if (n24 >= n23) break block11;
-                                    n21 = n17 * n25 + TY.b(8278, 7649783469021981039L);
-                                    n12 = 2 * ((n21 >> TY.b(23778, 6048668738469041629L)) + n21 >> TY.b(23778, 6048668738469041629L));
-                                    if (string == null) break block12;
-                                }
-                                n21 = (TY.b(9653, 2662323655478996107L) - n17) * (TY.b(9653, 2662323655478996107L) - n25) + TY.b(8278, 7649783469021981039L);
-                                n24 = 2;
-                                n23 = TY.b(9653, 2662323655478996107L) - ((n21 >> TY.b(23778, 6048668738469041629L)) + n21 >> TY.b(23778, 6048668738469041629L));
-                            }
-                            n12 = n24 * n23;
-                        }
-                        n20 = n16;
-                        n19 = TY.b(8278, 7649783469021981039L);
-                        if (string != null) break block13;
-                        if (n20 >= n19) break block14;
-                        n21 = n16 * n22 + TY.b(8278, 7649783469021981039L);
-                        n11 = 2 * ((n21 >> TY.b(23778, 6048668738469041629L)) + n21 >> TY.b(23778, 6048668738469041629L));
-                        if (string == null) break block15;
-                    }
-                    n21 = (TY.b(9653, 2662323655478996107L) - n16) * (TY.b(9653, 2662323655478996107L) - n22) + TY.b(8278, 7649783469021981039L);
-                    n20 = 2;
-                    n19 = TY.b(9653, 2662323655478996107L) - ((n21 >> TY.b(23778, 6048668738469041629L)) + n21 >> TY.b(23778, 6048668738469041629L));
-                }
-                n11 = n20 * n19;
+   @Override
+   public void G(int[] var1, int[] var2, float var3) {
+      String var10000 = rA_3.c();
+      int var5 = var1.length;
+      String var4 = var10000;
+      byte var6 = 0;
+
+      while (var6 < var5) {
+         int var8;
+         int var9;
+         int var10;
+         int var11;
+         int var12;
+         int var13;
+         int var14;
+         int var15;
+         label45: {
+            int var7 = var1[var6];
+            var8 = var2[var6];
+            var9 = var1[var6 + 1];
+            var10 = var2[var6 + 1];
+            var11 = var1[var6 + 2];
+            var12 = var2[var6 + 2];
+            var13 = var1[var6 + 3];
+            var14 = var2[var6 + 3];
+            int var26 = var8;
+            int var10001 = b(3664, 6730940233445230440L);
+            if (var4 == null) {
+               if (var8 < var10001) {
+                  int var18 = var8 * var7 + b(8278, 7649783469021981039L);
+                  var15 = 2 * ((var18 >> b(6108, 4547976378018717408L)) + var18 >> b(23778, 6048668738469041629L));
+                  if (var4 == null) {
+                     break label45;
+                  }
+               }
+
+               var26 = (b(21112, 1487575835253447493L) - var8) * (b(9653, 2662323655478996107L) - var7);
+               var10001 = b(8278, 7649783469021981039L);
             }
-            float f11 = f10 * (float)n15 / 255.0f;
-            float f12 = 1.0f - f11;
-            nArray2[i2] = (int)(f11 * (float)n13 + f12 * (float)n18);
-            nArray2[i2 + 1] = (int)(f11 * (float)n12 + f12 * (float)n17);
-            nArray2[i2 + 2] = (int)(f11 * (float)n11 + f12 * (float)n16);
-            nArray2[i2 + 3] = (int)((float)n15 * f10 + (float)n14 * f12);
-            if (string == null) continue;
-        }
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 3909850653919408307L;
-                var6_1 = new long[6];
-                var3_2 = 0;
-                var4_3 = "\u00e1\u00a9]~=\u001d\u00ae[\u008e\u00f8\u0016\u0003c\rk\t\u00c8\u00caa\u00e4\u0006@\u001c\u00c7\u00dd\u00b7\u0082o\u00f7\u00c4\u00e5f";
-                var5_4 = "\u00e1\u00a9]~=\u001d\u00ae[\u008e\u00f8\u0016\u0003c\rk\t\u00c8\u00caa\u00e4\u0006@\u001c\u00c7\u00dd\u00b7\u0082o\u00f7\u00c4\u00e5f".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
+            int var21 = var26 + var10001;
+            var15 = 2 * (b(9653, 2662323655478996107L) - ((var21 >> b(23778, 6048668738469041629L)) + var21 >> b(23778, 6048668738469041629L)));
+         }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "+\u00a8q\u00fb\u00a5R\u00b7[\u0090\u00dd\u008b\u009c\u00b0\u0004\u0019\\";
-                    var5_4 = "+\u00a8q\u00fb\u00a5R\u00b7[\u0090\u00dd\u008b\u009c\u00b0\u0004\u0019\\".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
+         int var16;
+         label38: {
+            int var27 = var10;
+            int var29 = b(8278, 7649783469021981039L);
+            if (var4 == null) {
+               if (var10 < var29) {
+                  int var22 = var10 * var9 + b(8278, 7649783469021981039L);
+                  var16 = 2 * ((var22 >> b(23778, 6048668738469041629L)) + var22 >> b(23778, 6048668738469041629L));
+                  if (var4 == null) {
+                     break label38;
+                  }
+               }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+               int var23 = (b(9653, 2662323655478996107L) - var10) * (b(9653, 2662323655478996107L) - var9) + b(8278, 7649783469021981039L);
+               var27 = 2;
+               var29 = b(9653, 2662323655478996107L) - ((var23 >> b(23778, 6048668738469041629L)) + var23 >> b(23778, 6048668738469041629L));
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
 
-                ** continue;
+            var16 = var27 * var29;
+         }
+
+         int var17;
+         label31: {
+            int var28 = var12;
+            int var30 = b(8278, 7649783469021981039L);
+            if (var4 == null) {
+               if (var12 < var30) {
+                  int var24 = var12 * var11 + b(8278, 7649783469021981039L);
+                  var17 = 2 * ((var24 >> b(23778, 6048668738469041629L)) + var24 >> b(23778, 6048668738469041629L));
+                  if (var4 == null) {
+                     break label31;
+                  }
+               }
+
+               int var25 = (b(9653, 2662323655478996107L) - var12) * (b(9653, 2662323655478996107L) - var11) + b(8278, 7649783469021981039L);
+               var28 = 2;
+               var30 = b(9653, 2662323655478996107L) - ((var25 >> b(23778, 6048668738469041629L)) + var25 >> b(23778, 6048668738469041629L));
             }
-        }
-        TY.c = var6_1;
-        TY.e = new Integer[6];
-    }
 
-    private static int b(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x493C;
-        if (e[n11] == null) {
-            TY.e[n11] = (int)(c[n11] ^ l2);
-        }
-        return e[n11];
-    }
+            var17 = var28 * var30;
+         }
+
+         float var19 = var3 * (float)var13 / 255.0F;
+         float var20 = 1.0F - var19;
+         var2[var6] = (int)(var19 * (float)var15 + var20 * (float)var8);
+         var2[var6 + 1] = (int)(var19 * (float)var16 + var20 * (float)var10);
+         var2[var6 + 2] = (int)(var19 * (float)var17 + var20 * (float)var12);
+         var2[var6 + 3] = (int)((float)var13 * var3 + (float)var14 * var20);
+         var6 += 4;
+         if (var4 != null) {
+            break;
+         }
+      }
+   }
+
+   static {
+      long var0 = 3909850653919408307L;
+      long[] var6 = new long[6];
+      int var3 = 0;
+      String var4 = "á©]~=\u001d®[\u008eø\u0016\u0003c\rk\tÈÊaä\u0006@\u001cÇÝ·\u0082o÷Äåf";
+      int var5 = "á©]~=\u001d®[\u008eø\u0016\u0003c\rk\tÈÊaä\u0006@\u001cÇÝ·\u0082o÷Äåf".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     c = var6;
+                     e = new Integer[6];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "+¨qû¥R·[\u0090Ý\u008b\u009c°\u0004\u0019\\";
+                  var5 = "+¨qû¥R·[\u0090Ý\u008b\u009c°\u0004\u0019\\".length();
+                  var2 = 0;
+            }
+
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   private static int b(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 18748;
+      if (e[var3] == null) {
+         e[var3] = (int)(c[var3] ^ var1);
+      }
+
+      return e[var3];
+   }
 }
+
+
+
+
 

@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.O5;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class PB
-extends MouseAdapter {
-    final O5 K;
+class PB extends MouseAdapter {
+   final com.O5 K;
 
-    PB(O5 o5) {
-        this.K = o5;
-    }
+   PB(com.O5 var1) {
+      this.K = var1;
+   }
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-        this.K.r(mouseEvent);
-    }
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+      this.K.r(var1);
+   }
 }
+
+
+
+
 

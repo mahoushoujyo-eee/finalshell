@@ -1,80 +1,96 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.WC;
 import java.util.Arrays;
 import javax.swing.JTree;
 import javax.swing.event.TreeExpansionEvent;
 import javax.swing.event.TreeExpansionListener;
 import javax.swing.tree.TreePath;
 
-public class Y5
-implements TreeExpansionListener {
-    @Override
-    public void treeExpanded(TreeExpansionEvent treeExpansionEvent) {
-        JTree jTree = (JTree)treeExpansionEvent.getSource();
-        TreePath treePath = treeExpansionEvent.getPath();
-        Object object = treePath.getLastPathComponent();
-        if (jTree.getModel().getChildCount(object) == 1) {
-            Object[] objectArray = treePath.getPath();
-            Object[] objectArray2 = Arrays.copyOf(objectArray, objectArray.length + 1);
-            objectArray2[objectArray.length] = jTree.getModel().getChild(object, 0);
-            jTree.expandPath(new TreePath(objectArray2));
-        }
-    }
+public class Y5 implements TreeExpansionListener {
+   @Override
+   public void treeExpanded(TreeExpansionEvent var1) {
+      JTree var2 = (JTree)var1.getSource();
+      TreePath var3 = var1.getPath();
+      Object var4 = var3.getLastPathComponent();
+      if (var2.getModel().getChildCount(var4) == 1) {
+         Object[] var5 = var3.getPath();
+         Object[] var6 = Arrays.copyOf(var5, var5.length + 1);
+         var6[var5.length] = var2.getModel().getChild(var4, 0);
+         var2.expandPath(new TreePath(var6));
+      }
+   }
 
-    @Override
-    public void treeCollapsed(TreeExpansionEvent treeExpansionEvent) {
-    }
+   @Override
+   public void treeCollapsed(TreeExpansionEvent var1) {
+   }
 
-    public static Y5 H(JTree jTree) {
-        Y5.C(jTree);
-        Y5 y5 = new Y5();
-        jTree.addTreeExpansionListener(y5);
-        return y5;
-    }
+   public static com.Y5 H(JTree var0) {
+      C(var0);
+      com.Y5 var1 = new com.Y5();
+      var0.addTreeExpansionListener(var1);
+      return var1;
+   }
 
-    public static void C(JTree jTree) {
-        TreeExpansionListener[] treeExpansionListenerArray = jTree.getTreeExpansionListeners();
-        int n10 = treeExpansionListenerArray.length;
-        int n11 = 0;
-        int[] nArray = WC.V();
-        while (n11 < n10) {
-            TreeExpansionListener treeExpansionListener = treeExpansionListenerArray[n11];
-            if (nArray == null) {
-                if (treeExpansionListener instanceof Y5) {
-                    jTree.removeTreeExpansionListener(treeExpansionListener);
-                }
-                ++n11;
+   public static void C(JTree var0) {
+      int[] var10000 = com.WC.V();
+      TreeExpansionListener[] var2 = var0.getTreeExpansionListeners();
+      int var3 = var2.length;
+      int var4 = 0;
+      int[] var1 = var10000;
+
+      while (var4 < var3) {
+         TreeExpansionListener var5 = var2[var4];
+         if (var1 == null) {
+            if (var5 instanceof com.Y5) {
+               var0.removeTreeExpansionListener(var5);
             }
-            if (nArray == null) continue;
-        }
-    }
 
-    public static boolean A(JTree jTree) {
-        boolean bl;
-        block4: {
-            TreeExpansionListener[] treeExpansionListenerArray = jTree.getTreeExpansionListeners();
-            int n10 = treeExpansionListenerArray.length;
-            int n11 = 0;
-            int[] nArray = WC.V();
-            while (n11 < n10) {
-                TreeExpansionListener treeExpansionListener = treeExpansionListenerArray[n11];
-                if (nArray == null) {
-                    bl = treeExpansionListener instanceof Y5;
-                    if (nArray != null) break block4;
-                    if (bl) {
-                        return true;
-                    }
-                    ++n11;
-                }
-                if (nArray == null) continue;
+            var4++;
+         }
+
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
+
+   public static boolean A(JTree var0) {
+      TreeExpansionListener[] var2 = var0.getTreeExpansionListeners();
+      int[] var10000 = com.WC.V();
+      int var3 = var2.length;
+      int var4 = 0;
+      int[] var1 = var10000;
+
+      while (true) {
+         if (var4 < var3) {
+            TreeExpansionListener var5 = var2[var4];
+            if (var1 == null) {
+               var6 = var5 instanceof com.Y5;
+               if (var1 != null) {
+                  break;
+               }
+
+               if (var6) {
+                  return true;
+               }
+
+               var4++;
             }
-            bl = false;
-        }
-        return bl;
-    }
+
+            if (var1 == null) {
+               continue;
+            }
+         }
+
+         var6 = false;
+         break;
+      }
+
+      return var6;
+   }
 }
+
+
+
+
 

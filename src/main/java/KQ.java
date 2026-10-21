@@ -1,544 +1,820 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Point;
 import java.awt.Window;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.tree.DefaultMutableTreeNode;
 
-public class KQ
-extends JDialog {
-    private long R;
-    private boolean B;
-    private boolean A;
-    U r;
-    Window m;
-    long g;
-    nj_0 a;
-    Dimension K;
-    Point V;
-    int i;
-    private static final String b;
-    private static final long[] c;
-    private static final Integer[] d;
+public class KQ extends JDialog {
+   private long R;
+   private boolean B;
+   private boolean A;
+   U r;
+   Window m;
+   long g;
+   nj_2 a;
+   Dimension K;
+   Point V;
+   int i;
+   private static final String b;
+   private static final long[] c;
+   private static final Integer[] d;
 
-    public KQ(Window window) {
-        String string;
-        this.B = false;
-        this.A = false;
-        this.setFocusableWindowState(false);
-        this.setIconImage((Image)cy_1.r);
-        try {
-            string = (String)lk_0.B(b);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        this.setTitle(string);
-        this.a = new nj_0();
-        this.setContentPane((nj_0)this.a);
-        this.addComponentListener(new ym_1(this));
-        this.addWindowFocusListener(new b0_0(this));
-        try {
-            this.G();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   public KQ(Window var1) {
+      com.c.c(632784343757357398L).setBoolean(this, false);
+      com.c.c(154418486518278678L).setBoolean(this, false);
+      this.setFocusableWindowState(false);
+      this.setIconImage((Image)com.c.c(582605604039442414L).get(null));
+      Object[] var10001 = com.c.a(b);
+      Method var4 = com.c.d(517287540690064504L);
+      Object[] var10 = var10001;
+      Object var8 = null;
 
-    @Override
-    public void setVisible(boolean bl) {
-        super.setVisible(bl);
-        if (bl) {
-            SwingUtilities.invokeLater(new zS(this));
-        }
-    }
+      try {
+         var10001 = (String)var4.invoke(var8, var10);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
 
-    public void c(ck_2 ck_22, DefaultMutableTreeNode defaultMutableTreeNode) {
-        block41: {
-            JDialog jDialog;
-            File file;
-            JFrame jFrame;
-            lv_2 lv_22;
-            block43: {
-                JFrame jFrame2;
-                String[] stringArray;
-                block42: {
-                    int n10;
-                    int n11;
-                    JFrame jFrame3;
-                    block37: {
-                        block38: {
-                            JDialog jDialog2;
-                            File file2;
-                            block40: {
-                                JFrame jFrame4;
-                                block39: {
-                                    JFrame jFrame5;
-                                    Object object;
-                                    Object object2;
-                                    Object object3;
-                                    lv_2 lv_23;
-                                    File file3;
-                                    Object object4;
-                                    Object object5;
-                                    try {
-                                        object5 = yt_1.i();
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    try {
-                                        object4 = object5.g();
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    try {
-                                        file3 = (File)ck_22.i();
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    try {
-                                        lv_23 = (lv_2)object4.q(file3.getAbsolutePath());
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    lv_22 = lv_23;
-                                    stringArray = F8.y();
-                                    try {
-                                        object3 = yt_1.i();
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    try {
-                                        object2 = object3.v();
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    try {
-                                        object = lv_22.g();
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    try {
-                                        jFrame5 = (JFrame)object2.c(object);
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    jFrame3 = jFrame5;
-                                    try {
-                                        n11 = (Integer)ck_22.I();
-                                    }
-                                    catch (InvocationTargetException invocationTargetException) {
-                                        throw invocationTargetException.getTargetException();
-                                    }
-                                    n10 = lv_2.C;
-                                    if (stringArray != null) break block37;
-                                    if (n11 != n10) break block38;
-                                    jFrame4 = jFrame3;
-                                    if (stringArray != null) break block39;
-                                    if (jFrame4 == null) break block40;
-                                    jFrame4 = jFrame3;
-                                }
-                                jFrame = (km_2)jFrame4;
-                                try {
-                                    jFrame.setVisible(true);
-                                }
-                                catch (InvocationTargetException invocationTargetException) {
-                                    throw invocationTargetException.getTargetException();
-                                }
-                                if (stringArray == null) break block41;
-                            }
-                            try {
-                                file2 = (File)ck_22.i();
-                            }
-                            catch (InvocationTargetException invocationTargetException) {
-                                throw invocationTargetException.getTargetException();
-                            }
-                            String string = file2.getParent();
-                            try {
-                                this.S();
-                            }
-                            catch (InvocationTargetException invocationTargetException) {
-                                throw invocationTargetException.getTargetException();
-                            }
-                            try {
-                                jDialog2 = (JDialog)U.T();
-                            }
-                            catch (InvocationTargetException invocationTargetException) {
-                                throw invocationTargetException.getTargetException();
-                            }
-                            jFrame = new km_2(string, this, jDialog2, lv_22, defaultMutableTreeNode);
-                            if (stringArray == null) break block41;
-                        }
-                        try {
-                            n11 = (Integer)ck_22.I();
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        n10 = lv_2.F;
-                    }
-                    if (n11 != n10) break block41;
-                    jFrame2 = jFrame3;
-                    if (stringArray != null) break block42;
-                    if (jFrame2 == null) break block43;
-                    jFrame2 = jFrame3;
-                }
-                jFrame = (kb_0)jFrame2;
-                try {
-                    jFrame.setVisible(true);
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                if (stringArray == null) break block41;
+      this.setTitle(var10001);
+      com.c.c(144581259712304790L).set(this, new nj_2());
+      this.setContentPane((nj_2)com.c.c(144581259712304790L).get(this));
+      this.addComponentListener(new yM_3(this));
+      this.addWindowFocusListener(new b0_2(this));
+      var10001 = com.c.f();
+      Method var11 = com.c.d(615229640085119640L);
+      var8 = var10001;
+      KQ var7 = this;
+      Method var10000 = var11;
+
+      try {
+         var10000.invoke(var7, (Object[])var8);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
+
+   @Override
+   public void setVisible(boolean var1) {
+      super.setVisible(var1);
+      if (var1) {
+         SwingUtilities.invokeLater(new zS(this));
+      }
+   }
+
+   public void c(ck_4 var1, DefaultMutableTreeNode var2) {
+      String[] var10000 = F8.y();
+      Object[] var10001 = com.c.f();
+      Method var42 = com.c.d(270389152141252877L);
+      Object[] var88 = var10001;
+      Method var65 = null;
+
+      try {
+         var10001 = (Object[])var42.invoke(var65, var88);
+      } catch (InvocationTargetException var24) {
+         throw var24.getTargetException();
+      }
+
+      var65 = com.c.f();
+      Method var10004 = com.c.d(410905379772103887L);
+      var88 = (Object[])var65;
+      var65 = var10001;
+      Method var44 = var10004;
+
+      try {
+         var10001 = (Object[])var44.invoke(var65, var88);
+      } catch (InvocationTargetException var23) {
+         throw var23.getTargetException();
+      }
+
+      var88 = com.c.f();
+      Method var10005 = com.c.d(272998330038223631L);
+      Object[] var104 = var88;
+      ck_4 var91 = var1;
+      var65 = var10005;
+
+      try {
+         var69 = (File)var65.invoke(var91, var104);
+      } catch (InvocationTargetException var22) {
+         throw var22.getTargetException();
+      }
+
+      Object[] var70 = com.c.a(var69.getAbsolutePath());
+      var10004 = com.c.d(489768706953623433L);
+      var88 = var70;
+      var65 = var10001;
+      Method var46 = var10004;
+
+      try {
+         var10001 = (lv_4)var46.invoke(var65, var88);
+      } catch (InvocationTargetException var21) {
+         throw var21.getTargetException();
+      }
+
+      lv_4 var4 = var10001;
+      String[] var3 = var10000;
+      Object[] var26 = com.c.f();
+      Method var27 = com.c.d(270389152141252877L);
+      Object[] var73 = var26;
+      var10001 = null;
+
+      try {
+         var10000 = (String[])var27.invoke(var10001, var73);
+      } catch (InvocationTargetException var20) {
+         throw var20.getTargetException();
+      }
+
+      var10001 = com.c.f();
+      Method var93 = com.c.d(271043866899908885L);
+      Object[] var74 = var10001;
+      var10001 = var10000;
+      Method var29 = var93;
+
+      try {
+         var10000 = (String[])var29.invoke(var10001, var74);
+      } catch (InvocationTargetException var19) {
+         throw var19.getTargetException();
+      }
+
+      Object[] var75 = com.c.f();
+      var10004 = com.c.d(292557478156152530L);
+      var88 = var75;
+      lv_4 var76 = var4;
+      Method var52 = var10004;
+
+      try {
+         var10001 = (Object[])var52.invoke(var76, var88);
+      } catch (InvocationTargetException var18) {
+         throw var18.getTargetException();
+      }
+
+      var10001 = com.c.a(var10001);
+      Method var95 = com.c.d(285199883764466291L);
+      Object[] var77 = var10001;
+      var10001 = var10000;
+      Method var31 = var95;
+
+      try {
+         var32 = (JFrame)var31.invoke(var10001, var77);
+      } catch (InvocationTargetException var17) {
+         throw var17.getTargetException();
+      }
+
+      JFrame var5 = var32;
+      var10001 = com.c.f();
+      Method var96 = com.c.d(528672956857361353L);
+      Object[] var78 = var10001;
+      ck_4 var57 = var1;
+      Method var33 = var96;
+
+      try {
+         var34 = (Integer)var33.invoke(var57, var78);
+      } catch (InvocationTargetException var16) {
+         throw var16.getTargetException();
+      }
+
+      int var58 = com.c.c(590765520000496083L).getInt(null);
+      if (var3 == null) {
+         if (var34 == var58) {
+            label192: {
+               JFrame var35 = var5;
+               if (var3 == null) {
+                  if (var5 == null) {
+                     break label192;
+                  }
+
+                  var35 = var5;
+               }
+
+               km_4 var6 = (km_4)var35;
+               var10001 = com.c.a(true);
+               Method var97 = com.c.d(433716955203722428L);
+               Object[] var79 = var10001;
+               km_4 var60 = var6;
+               Method var36 = var97;
+
+               try {
+                  var36.invoke(var60, var79);
+               } catch (InvocationTargetException var15) {
+                  throw var15.getTargetException();
+               }
+
+               if (var3 == null) {
+                  return;
+               }
             }
+
+            km_4 var37;
+            var88 = com.c.f();
+            var10005 = com.c.d(272998330038223631L);
+            Object[] var107 = var88;
+            ck_4 var99 = var1;
+            var65 = var10005;
+
             try {
-                file = (File)ck_22.i();
+               var81 = (File)var65.invoke(var99, var107);
+            } catch (InvocationTargetException var14) {
+               throw var14.getTargetException();
             }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-            String string = file.getParent();
+
+            String var82 = var81.getParent();
+            Object[] var118 = com.c.f();
+            Method var10007 = com.c.d(249886410317960768L);
+            Object[] var10006 = var118;
+            KQ var119 = this;
+            var10004 = var10007;
+
             try {
-                this.S();
+               var10004.invoke(var119, var10006);
+            } catch (InvocationTargetException var13) {
+               throw var13.getTargetException();
             }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
+
+            Object[] var109 = com.c.f();
+            var10004 = com.c.d(513527511121793373L);
+            var10006 = var109;
+            var10005 = null;
+
             try {
-                jDialog = (JDialog)U.T();
+               var111 = (JDialog)var10004.invoke(var10005, var10006);
+            } catch (InvocationTargetException var12) {
+               throw var12.getTargetException();
             }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
+
+            var37 = new km_4(var82, this, var111, var4, var2);
+            if (var3 == null) {
+               return;
             }
-            jFrame = new kb_0(string, this, jDialog, lv_22, defaultMutableTreeNode);
-        }
-    }
+         }
 
-    public boolean U(JComponent jComponent) {
-        Point point = jComponent.getLocationOnScreen();
-        Point point2 = new Point(point);
-        point2.x = point.x - KQ.a(3636, 792709501032229249L);
-        point2.y = point.y + jComponent.getHeight() + 3;
-        boolean bl = this.getLocationOnScreen().equals(point2);
-        return bl;
-    }
+         var10001 = com.c.f();
+         Method var100 = com.c.d(528672956857361353L);
+         Object[] var83 = var10001;
+         ck_4 var62 = var1;
+         Method var38 = var100;
 
-    public boolean O() {
-        String[] stringArray = F8.y();
-        boolean bl = this.getLocationOnScreen().equals((Point)this.V);
-        if (stringArray == null) {
-            bl = !bl;
-        }
-        return bl;
-    }
+         try {
+            var34 = (Integer)var38.invoke(var62, var83);
+         } catch (InvocationTargetException var11) {
+            throw var11.getTargetException();
+         }
 
-    public void s(JComponent jComponent) {
-        Point point = jComponent.getLocationOnScreen();
-        Point point2 = new Point(point);
-        point2.x = point.x - KQ.a(5354, 7574992466992395101L);
-        point2.y = point.y + jComponent.getHeight() + 3;
-        this.setLocation(point2);
-        try {
-            this.a.r(this);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        this.setContentPane((nj_0)this.a);
-        try {
-            this.setVisible(true);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        this.V = this.getLocationOnScreen();
-        try {
-            lk_0.V(this);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+         var58 = com.c.c(292712586650823274L).getInt(null);
+      }
 
-    void G() {
-        int n10;
-        int n11;
-        block15: {
-            int n12;
-            block14: {
-                int n13;
-                block13: {
-                    int n14;
-                    String[] stringArray;
-                    block12: {
-                        int n15;
-                        int n16;
-                        block11: {
-                            n16 = KQ.a(13367, 3601017576235750278L);
-                            stringArray = F8.y();
-                            int n17 = KQ.a(27896, 6877644600401201992L);
-                            n14 = n11 = this.getPreferredSize().height;
-                            n15 = n17;
-                            if (stringArray != null) break block11;
-                            if (n14 > n15) {
-                                n11 = n17;
-                            }
-                            n14 = n11;
-                            if (stringArray != null) break block12;
-                            n15 = n16;
-                        }
-                        if (n14 < n15) {
-                            n11 = n16;
-                        }
-                        n14 = KQ.a(23281, 4985566960271048005L);
-                    }
-                    int n18 = n14;
-                    n12 = n10 = this.getPreferredSize().width + KQ.a(8706, 4893108247915644340L);
-                    n13 = n18;
-                    if (stringArray == null) {
-                        if (n12 < n13) {
-                            n10 = n18;
-                        }
-                        n12 = n10;
-                        n13 = this.i;
-                    }
-                    if (stringArray != null) break block13;
-                    if (n12 > n13) {
-                        this.i = n10;
-                    }
-                    n12 = n10;
-                    if (stringArray != null) break block14;
-                    n13 = this.i;
-                }
-                if (n12 >= n13) break block15;
-                n12 = this.i;
+      if (var34 == var58) {
+         label194: {
+            JFrame var39 = var5;
+            if (var3 == null) {
+               if (var5 == null) {
+                  break label194;
+               }
+
+               var39 = var5;
             }
-            n10 = n12;
-        }
-        this.setSize(new Dimension(n10, n11));
-        this.K = this.getSize();
-    }
 
-    public long w() {
-        return this.R;
-    }
+            Kb_2 var25 = (Kb_2)var39;
+            var10001 = com.c.a(true);
+            Method var101 = com.c.d(583190785470630532L);
+            Object[] var84 = var10001;
+            Kb_2 var64 = var25;
+            Method var40 = var101;
 
-    public void B(long l2) {
-        this.R = l2;
-    }
+            try {
+               var40.invoke(var64, var84);
+            } catch (InvocationTargetException var10) {
+               throw var10.getTargetException();
+            }
 
-    public boolean k() {
-        return this.B;
-    }
+            if (var3 == null) {
+               return;
+            }
+         }
 
-    public void s(boolean bl) {
-        this.B = bl;
-    }
+         Kb_2 var41;
+         var88 = com.c.f();
+         var10005 = com.c.d(272998330038223631L);
+         Object[] var112 = var88;
+         ck_4 var103 = var1;
+         var65 = var10005;
 
-    public boolean y() {
-        return this.A;
-    }
+         try {
+            var86 = (File)var65.invoke(var103, var112);
+         } catch (InvocationTargetException var9) {
+            throw var9.getTargetException();
+         }
 
-    public void r(boolean bl) {
-        this.A = bl;
-    }
+         String var87 = var86.getParent();
+         Object[] var123 = com.c.f();
+         Method var132 = com.c.d(249886410317960768L);
+         Object[] var129 = var123;
+         KQ var124 = this;
+         var10004 = var132;
 
-    public U S() {
-        return (U)this.r;
-    }
+         try {
+            var10004.invoke(var124, var129);
+         } catch (InvocationTargetException var8) {
+            throw var8.getTargetException();
+         }
 
-    public void Y(U u10) {
-        this.r = u10;
-        this.m = u10;
-    }
+         Object[] var114 = com.c.f();
+         var10004 = com.c.d(513527511121793373L);
+         var129 = var114;
+         var10005 = null;
 
-    public Window Z() {
-        return (Window)this.m;
-    }
+         try {
+            var116 = (JDialog)var10004.invoke(var10005, var129);
+         } catch (InvocationTargetException var7) {
+            throw var7.getTargetException();
+         }
 
-    public void O(Window window) {
-        this.m = window;
-    }
+         var41 = new Kb_2(var87, this, var116, var4, var2);
+      }
+   }
 
-    public long r() {
-        return this.g;
-    }
+   public boolean U(JComponent var1) {
+      Point var2 = var1.getLocationOnScreen();
+      Point var3 = new Point(var2);
+      var3.x = var2.x - a(3636, 792709501032229249L);
+      var3.y = var2.y + var1.getHeight() + 3;
+      return this.getLocationOnScreen().equals(var3);
+   }
 
-    public void g(long l2) {
-        this.g = l2;
-    }
+   public boolean O() {
+      String[] var1 = F8.y();
+      boolean var10000 = this.getLocationOnScreen().equals((Point)com.c.c(135812835324310756L).get(this));
+      if (var1 == null) {
+         var10000 = !var10000;
+      }
 
-    public nj_0 i() {
-        return (nj_0)this.a;
-    }
+      return var10000;
+   }
 
-    static boolean F(KQ kQ) {
-        return kQ.B;
-    }
+   public void s(JComponent var1) {
+      Point var2 = var1.getLocationOnScreen();
+      Point var3 = new Point(var2);
+      var3.x = var2.x - a(5354, 7574992466992395101L);
+      var3.y = var2.y + var1.getHeight() + 3;
+      this.setLocation(var3);
+      Method var10000 = (Method)com.c.c(144581259712304790L).get(this);
+      Object[] var10001 = com.c.a(this);
+      Method var10003 = com.c.d(284342787991930477L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block19: {
-            block18: {
-                block20: {
-                    break block20;
-lbl1:
-                    // 1 sources
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var6) {
+         throw var6.getTargetException();
+      }
 
-                    while (true) {
-                        continue;
+      this.setContentPane((nj_2)com.c.c(144581259712304790L).get(this));
+      var10001 = com.c.a(true);
+      var10003 = com.c.d(634601920284847200L);
+      var10002 = var10001;
+      KQ var13 = this;
+      var10000 = var10003;
+
+      try {
+         var10000.invoke(var13, var10002);
+      } catch (InvocationTargetException var5) {
+         throw var5.getTargetException();
+      }
+
+      com.c.c(135812835324310756L).set(this, this.getLocationOnScreen());
+      Object[] var9 = com.c.a(this);
+      var10000 = com.c.d(214213921318960935L);
+      var10002 = var9;
+      var10001 = null;
+
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var4) {
+         throw var4.getTargetException();
+      }
+   }
+
+   void G() {
+      String[] var1;
+      int var4;
+      int var7;
+      label52: {
+         String[] var10000 = F8.y();
+         int var2 = a(13367, 3601017576235750278L);
+         var1 = var10000;
+         int var3 = a(27896, 6877644600401201992L);
+         var4 = this.getPreferredSize().height;
+         var7 = var4;
+         int var10001 = var3;
+         if (var1 == null) {
+            if (var4 > var3) {
+               var4 = var3;
+            }
+
+            var7 = var4;
+            if (var1 != null) {
+               break label52;
+            }
+
+            var10001 = var2;
+         }
+
+         if (var7 < var10001) {
+            var4 = var2;
+         }
+
+         var7 = a(23281, 4985566960271048005L);
+      }
+
+      int var5 = var7;
+      int var6 = this.getPreferredSize().width + a(8706, 4893108247915644340L);
+      var7 = var6;
+      int var9 = var5;
+      if (var1 == null) {
+         if (var6 < var5) {
+            var6 = var5;
+         }
+
+         var7 = var6;
+         var9 = com.c.c(348629674041412846L).getInt(this);
+      }
+
+      label41: {
+         label54: {
+            if (var1 == null) {
+               if (var7 > var9) {
+                  com.c.c(348629674041412846L).setInt(this, var6);
+               }
+
+               var7 = var6;
+               if (var1 != null) {
+                  break label54;
+               }
+
+               var9 = com.c.c(348629674041412846L).getInt(this);
+            }
+
+            if (var7 >= var9) {
+               break label41;
+            }
+
+            var7 = com.c.c(348629674041412846L).getInt(this);
+         }
+
+         var6 = var7;
+      }
+
+      this.setSize(new Dimension(var6, var4));
+      com.c.c(577511382867416570L).set(this, this.getSize());
+   }
+
+   public long w() {
+      return com.c.c(584953157861614821L).getLong(this);
+   }
+
+   public void B(long var1) {
+      com.c.c(584953157861614821L).setLong(this, var1);
+   }
+
+   public boolean k() {
+      return com.c.c(632784343757357398L).getBoolean(this);
+   }
+
+   public void s(boolean var1) {
+      com.c.c(632784343757357398L).setBoolean(this, var1);
+   }
+
+   public boolean y() {
+      return com.c.c(154418486518278678L).getBoolean(this);
+   }
+
+   public void r(boolean var1) {
+      com.c.c(154418486518278678L).setBoolean(this, var1);
+   }
+
+   public U S() {
+      return (U)com.c.c(333623818237666798L).get(this);
+   }
+
+   public void Y(U var1) {
+      com.c.c(333623818237666798L).set(this, var1);
+      com.c.c(144451340501842917L).set(this, var1);
+   }
+
+   public Window Z() {
+      return (Window)com.c.c(144451340501842917L).get(this);
+   }
+
+   public void O(Window var1) {
+      com.c.c(144451340501842917L).set(this, var1);
+   }
+
+   public long r() {
+      return com.c.c(174659894326967944L).getLong(this);
+   }
+
+   public void g(long var1) {
+      com.c.c(174659894326967944L).setLong(this, var1);
+   }
+
+   public nj_2 i() {
+      return (nj_2)com.c.c(144581259712304790L).get(this);
+   }
+
+   static boolean F(KQ var0) {
+      return com.c.c(632784343757357398L).getBoolean(var0);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "=Ot\u001a\u0012?j\u0013Wi\u0004\u0005UF3tv\t\u0003Xz8nI+,;j\u0007a\u0019\u0017jdY/ \u000ey\u0005nn%s{=9U".toCharArray();
+      int var10004 = var10003.length;
+      int var8 = 0;
+      byte var34 = 2;
+      char[] var10002 = var10003;
+      int var19 = var10004;
+      char[] var42;
+      byte var50;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var42 = var10003;
+         var10005 = var8;
+         char var10008 = var10003[var8];
+         var10007 = 2;
+         var10006 = var10008;
+         switch (var8 % 7) {
+            case 0:
+               var50 = 104;
+               break;
+            case 1:
+               var50 = 27;
+               break;
+            case 2:
+               var50 = 35;
+               break;
+            case 3:
+               var50 = 76;
+               break;
+            case 4:
+               var50 = 67;
+               break;
+            case 5:
+               var50 = 15;
+               break;
+            default:
+               var50 = 42;
+         }
+      } else {
+         var34 = 2;
+         var19 = var10004;
+         if (var10004 <= var8) {
+            String var39 = new String(var10003).intern();
+            int var25 = -1;
+            b = var39;
+            long var9 = 4390531491311959915L;
+            long[] var14 = new long[6];
+            int var11 = 0;
+            String var12 = "x\u0010\n\\L1\u0083ÚÊ;OÆAÊÖà¼\u00961\u0097Î[z÷j÷\u0081ÃÙ\u0087Ì=";
+            int var13 = "x\u0010\n\\L1\u0083ÚÊ;OÆAÊÖà¼\u00961\u0097Î[z÷j÷\u0081ÃÙ\u0087Ì=".length();
+            byte var10 = 0;
+
+            label71:
+            while (true) {
+               var25 = var10;
+               var10 += 8;
+               byte[] var16 = var12.substring(var25, var10).getBytes("ISO-8859-1");
+               long[] var18 = var14;
+               var25 = var11++;
+               long var32 = ((long)var16[0] & 255L) << 56
+                  | ((long)var16[1] & 255L) << 48
+                  | ((long)var16[2] & 255L) << 40
+                  | ((long)var16[3] & 255L) << 32
+                  | ((long)var16[4] & 255L) << 24
+                  | ((long)var16[5] & 255L) << 16
+                  | ((long)var16[6] & 255L) << 8
+                  | (long)var16[7] & 255L;
+               byte var40 = -1;
+
+               while (true) {
+                  long var48 = var32 ^ var9;
+                  switch (var40) {
+                     case 0:
+                        var18[var25] = var48;
+                        if (var10 >= var13) {
+                           c = var14;
+                           d = new Integer[6];
+                           return;
+                        }
                         break;
-                    }
-                }
-                v0 = "=Ot\u001a\u0012?j\u0013Wi\u0004\u0005UF3tv\t\u0003Xz8nI+,;j\u0007a\u0019\u0017jdY/ \u000ey\u0005nn%s{=9U".toCharArray();
-                v1 = v0.length;
-                var8 = 0;
-                v2 = 2;
-                v3 = v0;
-                v4 = v1;
-                if (v1 > 1) ** GOTO lbl54
-                do {
-                    v5 = v2;
-                    v3 = v3;
-                    v6 = v3;
-                    v7 = v2;
-                    v8 = var8;
-                    while (true) {
-                        switch (var8 % 7) {
-                            case 0: {
-                                v9 = 104;
-                                break;
-                            }
-                            case 1: {
-                                v9 = 27;
-                                break;
-                            }
-                            case 2: {
-                                v9 = 35;
-                                break;
-                            }
-                            case 3: {
-                                v9 = 76;
-                                break;
-                            }
-                            case 4: {
-                                v9 = 67;
-                                break;
-                            }
-                            case 5: {
-                                v9 = 15;
-                                break;
-                            }
-                            default: {
-                                v9 = 42;
-                            }
+                     default:
+                        var18[var25] = var48;
+                        if (var10 < var13) {
+                           continue label71;
                         }
-                        v6[v8] = (char)(v6[v8] ^ (v7 ^ v9));
-                        ++var8;
-                        v2 = v5;
-                        if (v5 != 0) break;
-                        v5 = v2;
-                        v3 = v3;
-                        v8 = v2;
-                        v6 = v3;
-                        v7 = v2;
-                    }
-lbl54:
-                    // 2 sources
 
-                    v10 = v3;
-                    v4 = v4;
-                } while (v4 > var8);
-                ** while (true)
-                KQ.b = new String(v10).intern();
-                var0_1 = 4390531491311959915L;
-                var6_2 = new long[6];
-                var3_3 = 0;
-                var4_4 = "x\u0010\n\\L1\u0083\u00da\u00ca;O\u00c6A\u00ca\u00d6\u00e0\u00bc\u00961\u0097\u00ce[z\u00f7j\u00f7\u0081\u00c3\u00d9\u0087\u00cc=";
-                var5_5 = "x\u0010\n\\L1\u0083\u00da\u00ca;O\u00c6A\u00ca\u00d6\u00e0\u00bc\u00961\u0097\u00ce[z\u00f7j\u00f7\u0081\u00c3\u00d9\u0087\u00cc=".length();
-                var2_6 = 0;
-                while (true) {
-                    var7_7 = var4_4.substring(var2_6, var2_6 += 8).getBytes("ISO-8859-1");
-                    v11 = var6_2;
-                    v12 = var3_3++;
-                    v13 = ((long)var7_7[0] & 255L) << 56 | ((long)var7_7[1] & 255L) << 48 | ((long)var7_7[2] & 255L) << 40 | ((long)var7_7[3] & 255L) << 32 | ((long)var7_7[4] & 255L) << 24 | ((long)var7_7[5] & 255L) << 16 | ((long)var7_7[6] & 255L) << 8 | (long)var7_7[7] & 255L;
-                    v14 = -1;
-                    break block18;
-                    break;
-                }
-lbl75:
-                // 1 sources
+                        var12 = "V%ük8\u009c¶©u×R\u007f\u000f¨ì%";
+                        var13 = "V%ük8\u009c¶©u×R\u007f\u000f¨ì%".length();
+                        var10 = 0;
+                  }
 
-                while (true) {
-                    v11[v12] = v15;
-                    if (var2_6 < var5_5) ** continue;
-                    var4_4 = "V%\u00fck8\u009c\u00b6\u00a9u\u00d7R\u007f\u000f\u00a8\u00ec%";
-                    var5_5 = "V%\u00fck8\u009c\u00b6\u00a9u\u00d7R\u007f\u000f\u00a8\u00ec%".length();
-                    var2_6 = 0;
-                    while (true) {
-                        var7_7 = var4_4.substring(var2_6, var2_6 += 8).getBytes("ISO-8859-1");
-                        v11 = var6_2;
-                        v12 = var3_3++;
-                        v13 = ((long)var7_7[0] & 255L) << 56 | ((long)var7_7[1] & 255L) << 48 | ((long)var7_7[2] & 255L) << 40 | ((long)var7_7[3] & 255L) << 32 | ((long)var7_7[4] & 255L) << 24 | ((long)var7_7[5] & 255L) << 16 | ((long)var7_7[6] & 255L) << 8 | (long)var7_7[7] & 255L;
-                        v14 = 0;
-                        break block18;
-                        break;
-                    }
-                    break;
-                }
-lbl88:
-                // 1 sources
-
-                while (true) {
-                    v11[v12] = v15;
-                    if (var2_6 < var5_5) ** continue;
-                    break block19;
-                    break;
-                }
+                  byte var28 = var10;
+                  var10 += 8;
+                  var16 = var12.substring(var28, var10).getBytes("ISO-8859-1");
+                  var18 = var14;
+                  var25 = var11++;
+                  var32 = ((long)var16[0] & 255L) << 56
+                     | ((long)var16[1] & 255L) << 48
+                     | ((long)var16[2] & 255L) << 40
+                     | ((long)var16[3] & 255L) << 32
+                     | ((long)var16[4] & 255L) << 24
+                     | ((long)var16[5] & 255L) << 16
+                     | ((long)var16[6] & 255L) << 8
+                     | (long)var16[7] & 255L;
+                  var40 = 0;
+               }
             }
-            v15 = v13 ^ var0_1;
-            switch (v14) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl99:
-                // 1 sources
+         }
 
-                ** continue;
+         var42 = var10003;
+         var10005 = var8;
+         char var51 = var10003[var8];
+         var10007 = 2;
+         var10006 = var51;
+         switch (var8 % 7) {
+            case 0:
+               var50 = 104;
+               break;
+            case 1:
+               var50 = 27;
+               break;
+            case 2:
+               var50 = 35;
+               break;
+            case 3:
+               var50 = 76;
+               break;
+            case 4:
+               var50 = 67;
+               break;
+            case 5:
+               var50 = 15;
+               break;
+            default:
+               var50 = 42;
+         }
+      }
+
+      while (true) {
+         var42[var10005] = (char)(var10006 ^ var10007 ^ var50);
+         var8++;
+         if (var34 == 0) {
+            var42 = var10002;
+            var10005 = var34;
+            char var53 = var10002[var34];
+            var10007 = var34;
+            var10006 = var53;
+            switch (var8 % 7) {
+               case 0:
+                  var50 = 104;
+                  break;
+               case 1:
+                  var50 = 27;
+                  break;
+               case 2:
+                  var50 = 35;
+                  break;
+               case 3:
+                  var50 = 76;
+                  break;
+               case 4:
+                  var50 = 67;
+                  break;
+               case 5:
+                  var50 = 15;
+                  break;
+               default:
+                  var50 = 42;
             }
-        }
-        KQ.c = var6_2;
-        KQ.d = new Integer[6];
-    }
+         } else {
+            if (var19 <= var8) {
+               String var36 = new String(var10002).intern();
+               int var21 = -1;
+               b = var36;
+               long var0 = 4390531491311959915L;
+               long[] var6 = new long[6];
+               int var3 = 0;
+               String var4 = "x\u0010\n\\L1\u0083ÚÊ;OÆAÊÖà¼\u00961\u0097Î[z÷j÷\u0081ÃÙ\u0087Ì=";
+               int var5 = "x\u0010\n\\L1\u0083ÚÊ;OÆAÊÖà¼\u00961\u0097Î[z÷j÷\u0081ÃÙ\u0087Ì=".length();
+               byte var2 = 0;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x67B4;
-        if (d[n11] == null) {
-            KQ.d[n11] = (int)(c[n11] ^ l2);
-        }
-        return d[n11];
-    }
+               label37:
+               while (true) {
+                  var21 = var2;
+                  var2 += 8;
+                  byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
+                  long[] var10000 = var6;
+                  var21 = var3++;
+                  long var30 = ((long)var7[0] & 255L) << 56
+                     | ((long)var7[1] & 255L) << 48
+                     | ((long)var7[2] & 255L) << 40
+                     | ((long)var7[3] & 255L) << 32
+                     | ((long)var7[4] & 255L) << 24
+                     | ((long)var7[5] & 255L) << 16
+                     | ((long)var7[6] & 255L) << 8
+                     | (long)var7[7] & 255L;
+                  byte var37 = -1;
+
+                  while (true) {
+                     long var46 = var30 ^ var0;
+                     switch (var37) {
+                        case 0:
+                           var10000[var21] = var46;
+                           if (var2 >= var5) {
+                              c = var6;
+                              d = new Integer[6];
+                              return;
+                           }
+                           break;
+                        default:
+                           var10000[var21] = var46;
+                           if (var2 < var5) {
+                              continue label37;
+                           }
+
+                           var4 = "V%ük8\u009c¶©u×R\u007f\u000f¨ì%";
+                           var5 = "V%ük8\u009c¶©u×R\u007f\u000f¨ì%".length();
+                           var2 = 0;
+                     }
+
+                     byte var24 = var2;
+                     var2 += 8;
+                     var7 = var4.substring(var24, var2).getBytes("ISO-8859-1");
+                     var10000 = var6;
+                     var21 = var3++;
+                     var30 = ((long)var7[0] & 255L) << 56
+                        | ((long)var7[1] & 255L) << 48
+                        | ((long)var7[2] & 255L) << 40
+                        | ((long)var7[3] & 255L) << 32
+                        | ((long)var7[4] & 255L) << 24
+                        | ((long)var7[5] & 255L) << 16
+                        | ((long)var7[6] & 255L) << 8
+                        | (long)var7[7] & 255L;
+                     var37 = 0;
+                  }
+               }
+            }
+
+            var42 = var10002;
+            var10005 = var8;
+            char var52 = var10002[var8];
+            var10007 = var34;
+            var10006 = var52;
+            switch (var8 % 7) {
+               case 0:
+                  var50 = 104;
+                  break;
+               case 1:
+                  var50 = 27;
+                  break;
+               case 2:
+                  var50 = 35;
+                  break;
+               case 3:
+                  var50 = 76;
+                  break;
+               case 4:
+                  var50 = 67;
+                  break;
+               case 5:
+                  var50 = 15;
+                  break;
+               default:
+                  var50 = 42;
+            }
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 26548;
+      if (d[var3] == null) {
+         d[var3] = (int)(c[var3] ^ var1);
+      }
+
+      return d[var3];
+   }
 }
+
+
+
+
 

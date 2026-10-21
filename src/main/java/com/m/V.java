@@ -1,95 +1,95 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.m;
 
-import com.L.X;
-import com.m.B;
-import com.m.E;
-import com.m.K;
-import com.m.c;
-import com.m.n;
-import com.m.s;
-import com.ne_2;
-import com.rt_2;
+import com.ne_4;
+import com.rt_4;
 import com.uE;
-import com.wb_0;
 import java.awt.Component;
 import java.awt.Insets;
 import javax.swing.JLabel;
 import javax.swing.JTree;
 import javax.swing.plaf.TreeUI;
 
-public class V
-extends rt_2 {
-    protected boolean E = true;
+public class V extends rt_4 {
+   protected boolean E = true;
 
-    public V() {
-        this(new ne_2());
-    }
+   public V() {
+      this(new ne_4());
+   }
 
-    public V(ne_2 ne_22) {
-        super(ne_22);
-        ne_22.addFocusListener(new c(this));
-    }
+   public V(ne_4 var1) {
+      super(var1);
+      var1.addFocusListener(new com.m.c(this));
+   }
 
-    public V(uE uE2) {
-        super(uE2);
-        uE2.addFocusListener(new E(this));
-    }
+   public V(uE var1) {
+      super(var1);
+      var1.addFocusListener(new com.m.E(this));
+   }
 
-    public V(X x10) {
-        super(x10);
-        x10.addFocusListener(new B(this));
-    }
+   public V(com.L.X var1) {
+      super(var1);
+      var1.addFocusListener(new B(this));
+   }
 
-    @Override
-    public Component getTreeCellEditorComponent(JTree jTree, Object object, boolean bl, boolean bl2, boolean bl3, int n10) {
-        Component component;
-        block7: {
-            Component component2;
-            block8: {
-                component2 = super.getTreeCellEditorComponent(jTree, object, bl, bl2, bl3, n10);
-                Component component3 = jTree.getCellRenderer().getTreeCellRendererComponent(jTree, object, bl, bl2, bl3, n10, true);
-                String string = s.d();
-                component2.setPreferredSize(component3.getPreferredSize());
-                component = component3;
-                if (string == null) break block7;
-                if (!(component instanceof JLabel)) break block8;
-                component = (JLabel)component3;
-                if (string == null) break block7;
-                if (((JLabel)component).getIcon() == null) break block8;
-                JLabel jLabel = (JLabel)component3;
-                component = component2;
-                if (string == null) break block7;
-                if (component instanceof ne_2) {
-                    TreeUI treeUI = jTree.getUI();
-                    int n11 = treeUI instanceof K;
-                    if (string != null) {
-                        n11 = n11 != 0 ? ((K)treeUI).A() : n.O;
-                    }
-                    int n12 = n11;
-                    ne_2 ne_22 = (ne_2)component2;
-                    ne_22.c(false);
-                    ne_22.F(n12);
-                    ne_22.L(false);
-                    int n13 = this.E;
-                    if (string != null) {
-                        if (n13 != 0) {
-                            ne_22.v(new wb_0(jLabel.getIcon()));
-                        }
-                        n13 = n12 + 1;
-                    }
-                    int n14 = n13;
-                    Insets insets = jLabel.getInsets();
-                    ne_22.I(insets.top - n14, insets.left - n14, insets.bottom - n14, insets.right - n14 - 2);
-                    ne_22.d(0, jLabel.getIconTextGap(), 0, 0);
-                }
+   @Override
+   public Component getTreeCellEditorComponent(JTree var1, Object var2, boolean var3, boolean var4, boolean var5, int var6) {
+      Component var8 = super.getTreeCellEditorComponent(var1, var2, var3, var4, var5, var6);
+      String var10000 = com.m.s.d();
+      Component var9 = var1.getCellRenderer().getTreeCellRendererComponent(var1, var2, var3, var4, var5, var6, true);
+      String var7 = var10000;
+      var8.setPreferredSize(var9.getPreferredSize());
+      Component var16 = var9;
+      if (var7 != null) {
+         if (var9 instanceof JLabel) {
+            JLabel var19 = (JLabel)var9;
+            if (var7 == null) {
+               return var19;
             }
-            component2.applyComponentOrientation(jTree.getComponentOrientation());
-            component = component2;
-        }
-        return component;
-    }
+
+            if (var19.getIcon() != null) {
+               JLabel var10 = (JLabel)var9;
+               if (var7 == null) {
+                  return var8;
+               }
+
+               if (var8 instanceof ne_4) {
+                  TreeUI var11 = var1.getUI();
+                  int var17 = var11 instanceof com.m.K;
+                  if (var7 != null) {
+                     var17 = var17 != 0 ? ((com.m.K)var11).A() : n.O;
+                  }
+
+                  int var12 = var17;
+                  ne_4 var13 = (ne_4)var8;
+                  var13.c(false);
+                  var13.F(var12);
+                  var13.L(false);
+                  int var18 = this.E;
+                  if (var7 != null) {
+                     if (this.E) {
+                        var13.v(new com.Wb_2(var10.getIcon()));
+                     }
+
+                     var18 = var12 + 1;
+                  }
+
+                  int var14 = var18;
+                  Insets var15 = var10.getInsets();
+                  var13.I(var15.top - var14, var15.left - var14, var15.bottom - var14, var15.right - var14 - 2);
+                  var13.d(0, var10.getIconTextGap(), 0, 0);
+               }
+            }
+         }
+
+         var8.applyComponentOrientation(var1.getComponentOrientation());
+         var16 = var8;
+      }
+
+      return var16;
+   }
 }
+
+
+
+
 

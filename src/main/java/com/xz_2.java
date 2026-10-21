@@ -1,1518 +1,391 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.A.C;
-import com.EN;
-import com.TJ;
-import com.TO;
-import com.a9;
-import com.ds_0;
-import com.kp_0;
-import com.kp_1;
-import com.ky_2;
-import com.wx_0;
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Insets;
-import java.awt.LayoutManager;
+import java.awt.Cursor;
+import java.awt.Rectangle;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.SwingUtilities;
 
-/*
- * Renamed from com.xz
- */
-public class xz_2
-extends C {
-    protected final ky_2 x;
-    private static final String[] a;
-    private static final String[] b;
+class Xz_2 extends MouseAdapter {
+   final com.kb_4 j;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public static xz_2 M(Component component) {
-        return new xz_2(component).f();
-    }
+   Xz_2(com.kb_4 var1) {
+      this.j = var1;
+   }
 
-    public xz_2(Component component) {
-        this((LayoutManager)new BorderLayout(), component);
-    }
+   private void V(MouseEvent var1) {
+      int[] var2 = com.k3_2.L();
+      boolean var10000 = new Rectangle(0, 0, a(18472, 4376805916605354215L), a(32508, 7406508288587474485L)).contains(var1.getPoint());
+      if (var2 != null) {
+         if (var10000) {
+            com.kb_4.y(this.j, a(27220, 2869854698237145759L));
+            this.j.setCursor(Cursor.getPredefinedCursor(a(10826, 6739842021146555012L)));
+            if (var2 != null) {
+               return;
+            }
+         }
 
-    public static xz_2 J(Component component, int n10) {
-        return new xz_2(component, n10).f();
-    }
+         var10000 = new Rectangle(this.j.getWidth() / 2 - a(10826, 6739842021146555012L), 0, a(32508, 7406508288587474485L), a(32508, 7406508288587474485L))
+            .contains(var1.getPoint());
+      }
 
-    public xz_2(Component component, int n10) {
-        this(component, n10, n10, n10, n10);
-    }
+      if (var2 != null) {
+         if (var10000) {
+            com.kb_4.y(this.j, 1);
+            this.j.setCursor(Cursor.getPredefinedCursor(a(27220, 2869854698237145759L)));
+            if (var2 != null) {
+               return;
+            }
+         }
 
-    public static xz_2 H(Component component, int n10, int n11, int n12, int n13) {
-        return new xz_2(component, n10, n11, n12, n13).f();
-    }
+         var10000 = new Rectangle(this.j.getWidth() - a(32508, 7406508288587474485L), 0, a(32508, 7406508288587474485L), a(32508, 7406508288587474485L))
+            .contains(var1.getPoint());
+      }
 
-    public xz_2(Component component, int n10, int n11, int n12, int n13) {
-        this(component, new Insets(n10, n11, n12, n13));
-    }
+      if (var2 != null) {
+         if (var10000) {
+            com.kb_4.y(this.j, 2);
+            this.j.setCursor(Cursor.getPredefinedCursor(a(17383, 2236633985702894371L)));
+            if (var2 != null) {
+               return;
+            }
+         }
 
-    public static xz_2 N(Component component, Insets insets) {
-        return new xz_2(component, insets).f();
-    }
+         var10000 = new Rectangle(0, this.j.getHeight() / 2 - a(10826, 6739842021146555012L), a(32508, 7406508288587474485L), a(32508, 7406508288587474485L))
+            .contains(var1.getPoint());
+      }
 
-    public xz_2(Component component, Insets insets) {
-        this(new BorderLayout(), component, xz_2.a(-17231, 24607), insets);
-    }
+      if (var2 != null) {
+         if (var10000) {
+            com.kb_4.y(this.j, a(17383, 2236633985702894371L));
+            this.j.setCursor(Cursor.getPredefinedCursor(a(5452, 2970219182896434569L)));
+            if (var2 != null) {
+               return;
+            }
+         }
 
-    public static xz_2 m(LayoutManager layoutManager, Component component) {
-        return new xz_2(layoutManager, component).f();
-    }
+         var10000 = new Rectangle(
+               this.j.getWidth() - a(32508, 7406508288587474485L),
+               this.j.getHeight() / 2 - a(10826, 6739842021146555012L),
+               a(32508, 7406508288587474485L),
+               a(32508, 7406508288587474485L)
+            )
+            .contains(var1.getPoint());
+      }
 
-    public xz_2(LayoutManager layoutManager, Component component) {
-        this(layoutManager, component, null, null);
-    }
+      if (var2 != null) {
+         if (var10000) {
+            com.kb_4.y(this.j, 3);
+            this.j.setCursor(Cursor.getPredefinedCursor(a(2736, 7433830175054221944L)));
+            if (var2 != null) {
+               return;
+            }
+         }
 
-    public static xz_2 d(LayoutManager layoutManager, Component component, int n10) {
-        return new xz_2(layoutManager, component, n10).f();
-    }
+         var10000 = new Rectangle(0, this.j.getHeight() - a(32508, 7406508288587474485L), a(32508, 7406508288587474485L), a(32508, 7406508288587474485L))
+            .contains(var1.getPoint());
+      }
 
-    public xz_2(LayoutManager layoutManager, Component component, int n10) {
-        this(layoutManager, component, new Insets(n10, n10, n10, n10));
-    }
+      if (var2 != null) {
+         if (var10000) {
+            com.kb_4.y(this.j, a(10826, 6739842021146555012L));
+            this.j.setCursor(Cursor.getPredefinedCursor(4));
+            if (var2 != null) {
+               return;
+            }
+         }
 
-    public static xz_2 B(LayoutManager layoutManager, Component component, int n10, int n11, int n12, int n13) {
-        return new xz_2(layoutManager, component, n10, n11, n12, n13).f();
-    }
+         var10000 = new Rectangle(
+               this.j.getWidth() / 2 - a(10826, 6739842021146555012L),
+               this.j.getHeight() - a(32508, 7406508288587474485L),
+               a(32508, 7406508288587474485L),
+               a(32508, 7406508288587474485L)
+            )
+            .contains(var1.getPoint());
+      }
 
-    public xz_2(LayoutManager layoutManager, Component component, int n10, int n11, int n12, int n13) {
-        this(layoutManager, component, new Insets(n10, n11, n12, n13));
-    }
+      if (var2 != null) {
+         if (var10000) {
+            com.kb_4.y(this.j, 5);
+            this.j.setCursor(Cursor.getPredefinedCursor(a(25528, 8702408367310388084L)));
+            if (var2 != null) {
+               return;
+            }
+         }
 
-    public static xz_2 x(LayoutManager layoutManager, Component component, Insets insets) {
-        return new xz_2(layoutManager, component, insets).f();
-    }
+         var10000 = new Rectangle(
+               this.j.getWidth() - a(32508, 7406508288587474485L),
+               this.j.getHeight() - a(32508, 7406508288587474485L),
+               a(32508, 7406508288587474485L),
+               a(32508, 7406508288587474485L)
+            )
+            .contains(var1.getPoint());
+      }
 
-    public xz_2(LayoutManager layoutManager, Component component, Insets insets) {
-        this(layoutManager, component, null, insets);
-    }
+      if (var2 != null) {
+         if (var10000) {
+            com.kb_4.y(this.j, 4);
+            this.j.setCursor(Cursor.getPredefinedCursor(5));
+            if (var2 != null) {
+               return;
+            }
+         }
 
-    public static xz_2 s(LayoutManager layoutManager, Component component, Object object, Insets insets) {
-        return new xz_2(layoutManager, component, object, insets).f();
-    }
+         com.kb_4.y(this.j, -1);
+      }
 
-    public xz_2(LayoutManager layoutManager, Component component, Object object, Insets insets) {
-        block8: {
-            block9: {
-                Object object2;
-                int[] nArray;
-                block4: {
-                    block5: {
-                        block6: {
-                            Component component2;
-                            kp_1 kp_12;
-                            block7: {
-                                int[] nArray2 = ds_0.U();
-                                super(xz_2.t(component));
-                                nArray = nArray2;
-                                this.setLayout(new BorderLayout());
-                                this.x = new ky_2(layoutManager);
-                                object2 = insets;
-                                if (nArray != null) break block4;
-                                if (object2 == null) break block5;
-                                component2 = kp_12 = new kp_1(component, insets);
-                                if (nArray != null) break block6;
-                                component2.setOpaque(false);
-                                if (object == null) break block7;
-                                this.x.add((Component)kp_12, object);
-                                if (nArray == null) break block6;
-                            }
-                            component2 = this.x.add(kp_12);
+      this.j.setCursor(Cursor.getDefaultCursor());
+   }
+
+   @Override
+   public void mouseMoved(MouseEvent var1) {
+      this.V(var1);
+   }
+
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      int[] var10000 = com.k3_2.L();
+      this.V(var1);
+      int[] var2 = var10000;
+      boolean var3 = SwingUtilities.isLeftMouseButton(var1);
+      if (var2 != null) {
+         if (var3) {
+            int var4 = com.kb_4.z(this.j);
+            if (var2 == null) {
+               return;
+            }
+
+            if (var4 != -1) {
+               com.kb_4.Y(this.j, true);
+            }
+         }
+
+         com.kb_4.n(this.j, var1.getXOnScreen());
+         com.kb_4.i(this.j, var1.getYOnScreen());
+      }
+   }
+
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      int[] var2 = com.k3_2.L();
+      int var10000 = com.kb_4.r(this.j);
+      if (var2 != null) {
+         if (var10000) {
+            var10000 = com.kb_4.A(this.j);
+            if (var2 == null) {
+               return;
+            }
+
+            if (var10000 != -1) {
+               var10000 = com.kb_4.Q(this.j);
+               if (var2 == null) {
+                  return;
+               }
+
+               if (var10000 != -1) {
+                  int var10001;
+                  int var10002;
+                  var5 = this.j;
+                  var10001 = (com.kb_4.A(this.j) - var1.getXOnScreen()) * 2;
+                  var10002 = com.kb_4.z(this.j);
+                  label82:
+                  if (var2 != null) {
+                     label89:
+                     if (var10002 != 1) {
+                        var10002 = com.kb_4.z(this.j);
+                        int var10003 = 5;
+                        if (var2 != null) {
+                           if (var10002 == 5) {
+                              break label89;
+                           }
+
+                           var10002 = com.kb_4.z(this.j);
+                           if (var2 == null) {
+                              break label82;
+                           }
+
+                           var10003 = a(27828, 2575646271157384313L);
                         }
-                        if (nArray == null) break block8;
-                    }
-                    object2 = object;
-                }
-                if (object2 == null) break block9;
-                this.x.add(component, object);
-                if (nArray == null) break block8;
-            }
-            this.x.add(component);
-        }
-        this.add((Component)this.x, xz_2.a(-17232, 16276));
-        this.n();
-    }
 
-    public static xz_2 Q(boolean bl, Component[] componentArray) {
-        return new xz_2(bl, componentArray).f();
-    }
+                        if (var10002 != var10003) {
+                           var10002 = com.kb_4.z(this.j);
+                           if (var2 == null) {
+                              break label82;
+                           }
 
-    public xz_2(boolean bl, Component[] componentArray) {
-        this(0, bl, componentArray);
-    }
+                           if (var10002 != a(20341, 312491051622897599L)) {
+                              var10002 = com.kb_4.z(this.j);
+                              if (var2 == null) {
+                                 break label82;
+                              }
 
-    public static xz_2 A(int n10, boolean bl, Component[] componentArray) {
-        return new xz_2(n10, bl, componentArray).f();
-    }
-
-    public xz_2(int n10, boolean bl, Component[] componentArray) {
-        this((LayoutManager)(bl ? new TJ(n10, false) : new TO(0, 0, n10, true, false)), componentArray);
-    }
-
-    public static xz_2 h(LayoutManager layoutManager, Component[] componentArray) {
-        return new xz_2(layoutManager, componentArray).f();
-    }
-
-    public xz_2(LayoutManager layoutManager, Component[] componentArray) {
-        this(layoutManager, null, componentArray);
-    }
-
-    public static xz_2 n(boolean bl, int n10, Component[] componentArray) {
-        return new xz_2(bl, n10, componentArray).f();
-    }
-
-    public xz_2(boolean bl, int n10, Component[] componentArray) {
-        this(bl, n10, n10, n10, n10, componentArray);
-    }
-
-    public static xz_2 L(boolean bl, int n10, int n11, int n12, int n13, Component[] componentArray) {
-        return new xz_2(bl, n10, n11, n12, n13, componentArray).f();
-    }
-
-    public xz_2(boolean bl, int n10, int n11, int n12, int n13, Component[] componentArray) {
-        this(bl, new Insets(n10, n11, n12, n13), componentArray);
-    }
-
-    public static xz_2 f(boolean bl, Insets insets, Component[] componentArray) {
-        return new xz_2(bl, insets, componentArray).f();
-    }
-
-    public xz_2(boolean bl, Insets insets, Component[] componentArray) {
-        this(0, bl, insets, componentArray);
-    }
-
-    public static xz_2 V(int n10, boolean bl, int n11, Component[] componentArray) {
-        return new xz_2(n10, bl, n11, componentArray).f();
-    }
-
-    public xz_2(int n10, boolean bl, int n11, Component[] componentArray) {
-        this(n10, bl, n11, n11, n11, n11, componentArray);
-    }
-
-    public static xz_2 Y(int n10, boolean bl, int n11, int n12, int n13, int n14, Component[] componentArray) {
-        return new xz_2(n10, bl, n11, n12, n13, n14, componentArray).f();
-    }
-
-    public xz_2(int n10, boolean bl, int n11, int n12, int n13, int n14, Component[] componentArray) {
-        this(n10, bl, new Insets(n11, n12, n13, n14), componentArray);
-    }
-
-    public static xz_2 b(int n10, boolean bl, Insets insets, Component[] componentArray) {
-        return new xz_2(n10, bl, insets, componentArray).f();
-    }
-
-    public xz_2(int n10, boolean bl, Insets insets, Component[] componentArray) {
-        this((LayoutManager)(bl ? new TJ(n10, false) : new TO(0, 0, n10, true, false)), insets, componentArray);
-    }
-
-    public static xz_2 B(LayoutManager layoutManager, int n10, Component[] componentArray) {
-        return new xz_2(layoutManager, n10, componentArray).f();
-    }
-
-    public xz_2(LayoutManager layoutManager, int n10, Component[] componentArray) {
-        this(layoutManager, n10, n10, n10, n10, componentArray);
-    }
-
-    public static xz_2 e(LayoutManager layoutManager, int n10, int n11, int n12, int n13, Component[] componentArray) {
-        return new xz_2(layoutManager, n10, n11, n12, n13, componentArray).f();
-    }
-
-    public xz_2(LayoutManager layoutManager, int n10, int n11, int n12, int n13, Component[] componentArray) {
-        this(layoutManager, new Insets(n10, n11, n12, n13), componentArray);
-    }
-
-    public static xz_2 I(LayoutManager layoutManager, Insets insets, Component[] componentArray) {
-        return new xz_2(layoutManager, insets, componentArray).f();
-    }
-
-    public xz_2(LayoutManager layoutManager, Insets insets, Component[] componentArray) {
-        super(xz_2.t(null));
-        int[] nArray = ds_0.U();
-        this.setLayout(new BorderLayout());
-        int[] nArray2 = nArray;
-        this.x = new ky_2(layoutManager);
-        Insets insets2 = insets;
-        if (nArray2 == null) {
-            insets2 = insets2 != null ? insets : new Insets(0, 0, 0, 0);
-        }
-        this.x.b(insets2);
-        this.x.S(componentArray);
-        this.add((Component)this.x, xz_2.a(-17232, 16276));
-        this.n();
-    }
-
-    public void n() {
-        this.setIconImages(a9.e());
-        this.setDefaultCloseOperation(3);
-        this.setResizable(true);
-        this.pack();
-        this.U();
-    }
-
-    @Override
-    public void setBackground(Color color) {
-        block4: {
-            xz_2 xz_22;
-            block2: {
-                block3: {
-                    int[] nArray = ds_0.U();
-                    xz_22 = this;
-                    if (nArray != null) break block2;
-                    if (xz_22.x == null) break block3;
-                    this.x.setBackground(color);
-                    if (nArray == null) break block4;
-                }
-                xz_22 = this;
-            }
-            super.setBackground(color);
-        }
-    }
-
-    public xz_2 f() {
-        this.setVisible(true);
-        return this;
-    }
-
-    public static String t(Component component) {
-        String string;
-        StringBuilder stringBuilder;
-        block6: {
-            block5: {
-                Component component2;
-                block4: {
-                    int[] nArray = ds_0.U();
-                    try {
-                        stringBuilder = new StringBuilder();
-                        component2 = component;
-                        if (nArray != null) break block4;
-                        if (component2 == null) break block5;
-                    }
-                    catch (Throwable throwable) {
-                        throw xz_2.a(throwable);
-                    }
-                    component2 = component;
-                }
-                string = kp_0.c(component2.getClass());
-                break block6;
-            }
-            string = xz_2.a(-17229, -16722);
-        }
-        String string2 = stringBuilder.append(string).append(" ").toString();
-        String string3 = "";
-        try {
-            string3 = xz_2.a(-17226, 9898) + EN.t().toString() + xz_2.a(-17225, -19771);
-        }
-        catch (Throwable throwable) {
-            // empty catch block
-        }
-        String string4 = xz_2.a(-17230, -18310) + wx_0.k() + " " + wx_0.Q() + xz_2.a(-17228, 22362);
-        String string5 = xz_2.a(-17227, -22065) + wx_0.U() + " " + wx_0.C() + xz_2.a(-17217, 19928);
-        return string2 + string3 + string4 + string5;
-    }
-
-    private static Throwable a(Throwable throwable) {
-        return throwable;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block20: {
-            block19: {
-                var5 = new String[9];
-                var3_1 = 0;
-                var2_2 = "\u009d\u0080>\u0002\u0011\u00b3\u0006J\n\u00baa#\u00f8\u0003\u00bc\u009f\u001a\t\u001fC\u00c7\u0083\u0091\u0014}E\u00e0\u0002b\u0086\u0006\u00a1\u0099\u00f8\u00d8\u00eb\u007f";
-                var4_3 = "\u009d\u0080>\u0002\u0011\u00b3\u0006J\n\u00baa#\u00f8\u0003\u00bc\u009f\u001a\t\u001fC\u00c7\u0083\u0091\u0014}E\u00e0\u0002b\u0086\u0006\u00a1\u0099\u00f8\u00d8\u00eb\u007f".length();
-                var1_4 = 3;
-                var0_5 = -1;
-lbl7:
-                // 2 sources
-
-                while (true) {
-                    v0 = 73;
-                    v1 = ++var0_5;
-                    v2 = var2_2.substring(v1, v1 + var1_4);
-                    v3 = -1;
-                    break block19;
-                    break;
-                }
-lbl13:
-                // 1 sources
-
-                while (true) {
-                    var5[var3_1++] = v4.intern();
-                    if ((var0_5 += var1_4) < var4_3) {
-                        var1_4 = var2_2.charAt(var0_5);
-                        ** continue;
-                    }
-                    var2_2 = "\u0093=\u0088z\u00d3\u001d\u0006\u00d1Hd3\u00ec\u001b";
-                    var4_3 = "\u0093=\u0088z\u00d3\u001d\u0006\u00d1Hd3\u00ec\u001b".length();
-                    var1_4 = 6;
-                    var0_5 = -1;
-lbl22:
-                    // 2 sources
-
-                    while (true) {
-                        v0 = 121;
-                        v5 = ++var0_5;
-                        v2 = var2_2.substring(v5, v5 + var1_4);
-                        v3 = 0;
-                        break block19;
-                        break;
-                    }
-                    break;
-                }
-lbl28:
-                // 1 sources
-
-                while (true) {
-                    var5[var3_1++] = v4.intern();
-                    if ((var0_5 += var1_4) < var4_3) {
-                        var1_4 = var2_2.charAt(var0_5);
-                        ** continue;
-                    }
-                    break block20;
-                    break;
-                }
-            }
-            v6 = v2.toCharArray();
-            v7 = v6.length;
-            var6_6 = 0;
-            v8 = v0;
-            v9 = v6;
-            v10 = v7;
-            if (v7 > 1) ** GOTO lbl85
-            do {
-                v11 = v8;
-                v9 = v9;
-                v12 = v9;
-                v13 = v8;
-                v14 = var6_6;
-                while (true) {
-                    switch (var6_6 % 7) {
-                        case 0: {
-                            v15 = 30;
-                            break;
+                              if (var10002 != a(14349, 2266619925450711243L)) {
+                                 var10002 = -1;
+                                 break label82;
+                              }
+                           }
                         }
-                        case 1: {
-                            v15 = 67;
-                            break;
-                        }
-                        case 2: {
-                            v15 = 42;
-                            break;
-                        }
-                        case 3: {
-                            v15 = 94;
-                            break;
-                        }
-                        case 4: {
-                            v15 = 23;
-                            break;
-                        }
-                        case 5: {
-                            v15 = 71;
-                            break;
-                        }
-                        default: {
-                            v15 = 34;
-                        }
-                    }
-                    v12[v14] = (char)(v12[v14] ^ (v13 ^ v15));
-                    ++var6_6;
-                    v8 = v11;
-                    if (v11 != 0) break;
-                    v11 = v8;
-                    v9 = v9;
-                    v14 = v8;
-                    v12 = v9;
-                    v13 = v8;
-                }
-lbl85:
-                // 2 sources
 
-                v16 = v9;
-                v10 = v10;
-            } while (v10 > var6_6);
-            v4 = new String(v16);
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl95:
-                // 1 sources
+                        var10002 = 1;
+                        break label82;
+                     }
 
-                ** continue;
-            }
-        }
-        xz_2.a = var5;
-        xz_2.b = new String[9];
-    }
+                     var10002 = 0;
+                  }
 
-    private static String a(int n10, int n11) {
-        int n12 = (n10 ^ 0xFFFFBCB7) & 0xFFFF;
-        if (b[n12] == null) {
-            int n13;
-            int n14;
-            char[] cArray = a[n12].toCharArray();
-            switch (cArray[0] & 0xFF) {
-                case 0: {
-                    n14 = 26;
-                    break;
-                }
-                case 1: {
-                    n14 = 32;
-                    break;
-                }
-                case 2: {
-                    n14 = 252;
-                    break;
-                }
-                case 3: {
-                    n14 = 176;
-                    break;
-                }
-                case 4: {
-                    n14 = 149;
-                    break;
-                }
-                case 5: {
-                    n14 = 74;
-                    break;
-                }
-                case 6: {
-                    n14 = 118;
-                    break;
-                }
-                case 7: {
-                    n14 = 182;
-                    break;
-                }
-                case 8: {
-                    n14 = 110;
-                    break;
-                }
-                case 9: {
-                    n14 = 169;
-                    break;
-                }
-                case 10: {
-                    n14 = 60;
-                    break;
-                }
-                case 11: {
-                    n14 = 196;
-                    break;
-                }
-                case 12: {
-                    n14 = 206;
-                    break;
-                }
-                case 13: {
-                    n14 = 131;
-                    break;
-                }
-                case 14: {
-                    n14 = 249;
-                    break;
-                }
-                case 15: {
-                    n14 = 126;
-                    break;
-                }
-                case 16: {
-                    n14 = 228;
-                    break;
-                }
-                case 17: {
-                    n14 = 129;
-                    break;
-                }
-                case 18: {
-                    n14 = 245;
-                    break;
-                }
-                case 19: {
-                    n14 = 183;
-                    break;
-                }
-                case 20: {
-                    n14 = 222;
-                    break;
-                }
-                case 21: {
-                    n14 = 186;
-                    break;
-                }
-                case 22: {
-                    n14 = 75;
-                    break;
-                }
-                case 23: {
-                    n14 = 124;
-                    break;
-                }
-                case 24: {
-                    n14 = 51;
-                    break;
-                }
-                case 25: {
-                    n14 = 42;
-                    break;
-                }
-                case 26: {
-                    n14 = 130;
-                    break;
-                }
-                case 27: {
-                    n14 = 254;
-                    break;
-                }
-                case 28: {
-                    n14 = 38;
-                    break;
-                }
-                case 29: {
-                    n14 = 137;
-                    break;
-                }
-                case 30: {
-                    n14 = 250;
-                    break;
-                }
-                case 31: {
-                    n14 = 151;
-                    break;
-                }
-                case 32: {
-                    n14 = 223;
-                    break;
-                }
-                case 33: {
-                    n14 = 89;
-                    break;
-                }
-                case 34: {
-                    n14 = 177;
-                    break;
-                }
-                case 35: {
-                    n14 = 113;
-                    break;
-                }
-                case 36: {
-                    n14 = 18;
-                    break;
-                }
-                case 37: {
-                    n14 = 87;
-                    break;
-                }
-                case 38: {
-                    n14 = 237;
-                    break;
-                }
-                case 39: {
-                    n14 = 2;
-                    break;
-                }
-                case 40: {
-                    n14 = 103;
-                    break;
-                }
-                case 41: {
-                    n14 = 90;
-                    break;
-                }
-                case 42: {
-                    n14 = 88;
-                    break;
-                }
-                case 43: {
-                    n14 = 204;
-                    break;
-                }
-                case 44: {
-                    n14 = 154;
-                    break;
-                }
-                case 45: {
-                    n14 = 117;
-                    break;
-                }
-                case 46: {
-                    n14 = 139;
-                    break;
-                }
-                case 47: {
-                    n14 = 216;
-                    break;
-                }
-                case 48: {
-                    n14 = 49;
-                    break;
-                }
-                case 49: {
-                    n14 = 153;
-                    break;
-                }
-                case 50: {
-                    n14 = 135;
-                    break;
-                }
-                case 51: {
-                    n14 = 77;
-                    break;
-                }
-                case 52: {
-                    n14 = 56;
-                    break;
-                }
-                case 53: {
-                    n14 = 12;
-                    break;
-                }
-                case 54: {
-                    n14 = 185;
-                    break;
-                }
-                case 55: {
-                    n14 = 214;
-                    break;
-                }
-                case 56: {
-                    n14 = 234;
-                    break;
-                }
-                case 57: {
-                    n14 = 57;
-                    break;
-                }
-                case 58: {
-                    n14 = 78;
-                    break;
-                }
-                case 59: {
-                    n14 = 50;
-                    break;
-                }
-                case 60: {
-                    n14 = 45;
-                    break;
-                }
-                case 61: {
-                    n14 = 41;
-                    break;
-                }
-                case 62: {
-                    n14 = 199;
-                    break;
-                }
-                case 63: {
-                    n14 = 93;
-                    break;
-                }
-                case 64: {
-                    n14 = 207;
-                    break;
-                }
-                case 65: {
-                    n14 = 217;
-                    break;
-                }
-                case 66: {
-                    n14 = 166;
-                    break;
-                }
-                case 67: {
-                    n14 = 195;
-                    break;
-                }
-                case 68: {
-                    n14 = 29;
-                    break;
-                }
-                case 69: {
-                    n14 = 95;
-                    break;
-                }
-                case 70: {
-                    n14 = 141;
-                    break;
-                }
-                case 71: {
-                    n14 = 80;
-                    break;
-                }
-                case 72: {
-                    n14 = 146;
-                    break;
-                }
-                case 73: {
-                    n14 = 212;
-                    break;
-                }
-                case 74: {
-                    n14 = 253;
-                    break;
-                }
-                case 75: {
-                    n14 = 226;
-                    break;
-                }
-                case 76: {
-                    n14 = 98;
-                    break;
-                }
-                case 77: {
-                    n14 = 164;
-                    break;
-                }
-                case 78: {
-                    n14 = 72;
-                    break;
-                }
-                case 79: {
-                    n14 = 27;
-                    break;
-                }
-                case 80: {
-                    n14 = 66;
-                    break;
-                }
-                case 81: {
-                    n14 = 238;
-                    break;
-                }
-                case 82: {
-                    n14 = 220;
-                    break;
-                }
-                case 83: {
-                    n14 = 33;
-                    break;
-                }
-                case 84: {
-                    n14 = 155;
-                    break;
-                }
-                case 85: {
-                    n14 = 83;
-                    break;
-                }
-                case 86: {
-                    n14 = 178;
-                    break;
-                }
-                case 87: {
-                    n14 = 105;
-                    break;
-                }
-                case 88: {
-                    n14 = 190;
-                    break;
-                }
-                case 89: {
-                    n14 = 23;
-                    break;
-                }
-                case 90: {
-                    n14 = 150;
-                    break;
-                }
-                case 91: {
-                    n14 = 36;
-                    break;
-                }
-                case 92: {
-                    n14 = 140;
-                    break;
-                }
-                case 93: {
-                    n14 = 158;
-                    break;
-                }
-                case 94: {
-                    n14 = 6;
-                    break;
-                }
-                case 95: {
-                    n14 = 241;
-                    break;
-                }
-                case 96: {
-                    n14 = 201;
-                    break;
-                }
-                case 97: {
-                    n14 = 81;
-                    break;
-                }
-                case 98: {
-                    n14 = 108;
-                    break;
-                }
-                case 99: {
-                    n14 = 34;
-                    break;
-                }
-                case 100: {
-                    n14 = 44;
-                    break;
-                }
-                case 101: {
-                    n14 = 243;
-                    break;
-                }
-                case 102: {
-                    n14 = 179;
-                    break;
-                }
-                case 103: {
-                    n14 = 92;
-                    break;
-                }
-                case 104: {
-                    n14 = 115;
-                    break;
-                }
-                case 105: {
-                    n14 = 197;
-                    break;
-                }
-                case 106: {
-                    n14 = 20;
-                    break;
-                }
-                case 107: {
-                    n14 = 251;
-                    break;
-                }
-                case 108: {
-                    n14 = 160;
-                    break;
-                }
-                case 109: {
-                    n14 = 242;
-                    break;
-                }
-                case 110: {
-                    n14 = 86;
-                    break;
-                }
-                case 111: {
-                    n14 = 73;
-                    break;
-                }
-                case 112: {
-                    n14 = 192;
-                    break;
-                }
-                case 113: {
-                    n14 = 96;
-                    break;
-                }
-                case 114: {
-                    n14 = 63;
-                    break;
-                }
-                case 115: {
-                    n14 = 5;
-                    break;
-                }
-                case 116: {
-                    n14 = 13;
-                    break;
-                }
-                case 117: {
-                    n14 = 28;
-                    break;
-                }
-                case 118: {
-                    n14 = 97;
-                    break;
-                }
-                case 119: {
-                    n14 = 120;
-                    break;
-                }
-                case 120: {
-                    n14 = 173;
-                    break;
-                }
-                case 121: {
-                    n14 = 47;
-                    break;
-                }
-                case 122: {
-                    n14 = 10;
-                    break;
-                }
-                case 123: {
-                    n14 = 25;
-                    break;
-                }
-                case 124: {
-                    n14 = 70;
-                    break;
-                }
-                case 125: {
-                    n14 = 7;
-                    break;
-                }
-                case 126: {
-                    n14 = 162;
-                    break;
-                }
-                case 127: {
-                    n14 = 100;
-                    break;
-                }
-                case 128: {
-                    n14 = 123;
-                    break;
-                }
-                case 129: {
-                    n14 = 82;
-                    break;
-                }
-                case 130: {
-                    n14 = 35;
-                    break;
-                }
-                case 131: {
-                    n14 = 159;
-                    break;
-                }
-                case 132: {
-                    n14 = 184;
-                    break;
-                }
-                case 133: {
-                    n14 = 134;
-                    break;
-                }
-                case 134: {
-                    n14 = 37;
-                    break;
-                }
-                case 135: {
-                    n14 = 22;
-                    break;
-                }
-                case 136: {
-                    n14 = 101;
-                    break;
-                }
-                case 137: {
-                    n14 = 193;
-                    break;
-                }
-                case 138: {
-                    n14 = 17;
-                    break;
-                }
-                case 139: {
-                    n14 = 235;
-                    break;
-                }
-                case 140: {
-                    n14 = 122;
-                    break;
-                }
-                case 141: {
-                    n14 = 109;
-                    break;
-                }
-                case 142: {
-                    n14 = 107;
-                    break;
-                }
-                case 143: {
-                    n14 = 191;
-                    break;
-                }
-                case 144: {
-                    n14 = 187;
-                    break;
-                }
-                case 145: {
-                    n14 = 1;
-                    break;
-                }
-                case 146: {
-                    n14 = 174;
-                    break;
-                }
-                case 147: {
-                    n14 = 147;
-                    break;
-                }
-                case 148: {
-                    n14 = 247;
-                    break;
-                }
-                case 149: {
-                    n14 = 30;
-                    break;
-                }
-                case 150: {
-                    n14 = 194;
-                    break;
-                }
-                case 151: {
-                    n14 = 53;
-                    break;
-                }
-                case 152: {
-                    n14 = 181;
-                    break;
-                }
-                case 153: {
-                    n14 = 189;
-                    break;
-                }
-                case 154: {
-                    n14 = 167;
-                    break;
-                }
-                case 155: {
-                    n14 = 255;
-                    break;
-                }
-                case 156: {
-                    n14 = 121;
-                    break;
-                }
-                case 157: {
-                    n14 = 21;
-                    break;
-                }
-                case 158: {
-                    n14 = 203;
-                    break;
-                }
-                case 159: {
-                    n14 = 116;
-                    break;
-                }
-                case 160: {
-                    n14 = 94;
-                    break;
-                }
-                case 161: {
-                    n14 = 233;
-                    break;
-                }
-                case 162: {
-                    n14 = 14;
-                    break;
-                }
-                case 163: {
-                    n14 = 76;
-                    break;
-                }
-                case 164: {
-                    n14 = 142;
-                    break;
-                }
-                case 165: {
-                    n14 = 180;
-                    break;
-                }
-                case 166: {
-                    n14 = 172;
-                    break;
-                }
-                case 167: {
-                    n14 = 144;
-                    break;
-                }
-                case 168: {
-                    n14 = 3;
-                    break;
-                }
-                case 169: {
-                    n14 = 48;
-                    break;
-                }
-                case 170: {
-                    n14 = 145;
-                    break;
-                }
-                case 171: {
-                    n14 = 114;
-                    break;
-                }
-                case 172: {
-                    n14 = 227;
-                    break;
-                }
-                case 173: {
-                    n14 = 111;
-                    break;
-                }
-                case 174: {
-                    n14 = 246;
-                    break;
-                }
-                case 175: {
-                    n14 = 231;
-                    break;
-                }
-                case 176: {
-                    n14 = 171;
-                    break;
-                }
-                case 177: {
-                    n14 = 213;
-                    break;
-                }
-                case 178: {
-                    n14 = 224;
-                    break;
-                }
-                case 179: {
-                    n14 = 4;
-                    break;
-                }
-                case 180: {
-                    n14 = 54;
-                    break;
-                }
-                case 181: {
-                    n14 = 19;
-                    break;
-                }
-                case 182: {
-                    n14 = 61;
-                    break;
-                }
-                case 183: {
-                    n14 = 125;
-                    break;
-                }
-                case 184: {
-                    n14 = 229;
-                    break;
-                }
-                case 185: {
-                    n14 = 127;
-                    break;
-                }
-                case 186: {
-                    n14 = 209;
-                    break;
-                }
-                case 187: {
-                    n14 = 52;
-                    break;
-                }
-                case 188: {
-                    n14 = 128;
-                    break;
-                }
-                case 189: {
-                    n14 = 175;
-                    break;
-                }
-                case 190: {
-                    n14 = 39;
-                    break;
-                }
-                case 191: {
-                    n14 = 102;
-                    break;
-                }
-                case 192: {
-                    n14 = 188;
-                    break;
-                }
-                case 193: {
-                    n14 = 170;
-                    break;
-                }
-                case 194: {
-                    n14 = 85;
-                    break;
-                }
-                case 195: {
-                    n14 = 168;
-                    break;
-                }
-                case 196: {
-                    n14 = 200;
-                    break;
-                }
-                case 197: {
-                    n14 = 244;
-                    break;
-                }
-                case 198: {
-                    n14 = 15;
-                    break;
-                }
-                case 199: {
-                    n14 = 64;
-                    break;
-                }
-                case 200: {
-                    n14 = 0;
-                    break;
-                }
-                case 201: {
-                    n14 = 8;
-                    break;
-                }
-                case 202: {
-                    n14 = 219;
-                    break;
-                }
-                case 203: {
-                    n14 = 104;
-                    break;
-                }
-                case 204: {
-                    n14 = 205;
-                    break;
-                }
-                case 205: {
-                    n14 = 148;
-                    break;
-                }
-                case 206: {
-                    n14 = 230;
-                    break;
-                }
-                case 207: {
-                    n14 = 165;
-                    break;
-                }
-                case 208: {
-                    n14 = 198;
-                    break;
-                }
-                case 209: {
-                    n14 = 9;
-                    break;
-                }
-                case 210: {
-                    n14 = 16;
-                    break;
-                }
-                case 211: {
-                    n14 = 59;
-                    break;
-                }
-                case 212: {
-                    n14 = 40;
-                    break;
-                }
-                case 213: {
-                    n14 = 152;
-                    break;
-                }
-                case 214: {
-                    n14 = 240;
-                    break;
-                }
-                case 215: {
-                    n14 = 239;
-                    break;
-                }
-                case 216: {
-                    n14 = 232;
-                    break;
-                }
-                case 217: {
-                    n14 = 31;
-                    break;
-                }
-                case 218: {
-                    n14 = 132;
-                    break;
-                }
-                case 219: {
-                    n14 = 236;
-                    break;
-                }
-                case 220: {
-                    n14 = 112;
-                    break;
-                }
-                case 221: {
-                    n14 = 67;
-                    break;
-                }
-                case 222: {
-                    n14 = 208;
-                    break;
-                }
-                case 223: {
-                    n14 = 119;
-                    break;
-                }
-                case 224: {
-                    n14 = 91;
-                    break;
-                }
-                case 225: {
-                    n14 = 138;
-                    break;
-                }
-                case 226: {
-                    n14 = 79;
-                    break;
-                }
-                case 227: {
-                    n14 = 248;
-                    break;
-                }
-                case 228: {
-                    n14 = 62;
-                    break;
-                }
-                case 229: {
-                    n14 = 71;
-                    break;
-                }
-                case 230: {
-                    n14 = 99;
-                    break;
-                }
-                case 231: {
-                    n14 = 161;
-                    break;
-                }
-                case 232: {
-                    n14 = 157;
-                    break;
-                }
-                case 233: {
-                    n14 = 133;
-                    break;
-                }
-                case 234: {
-                    n14 = 84;
-                    break;
-                }
-                case 235: {
-                    n14 = 143;
-                    break;
-                }
-                case 236: {
-                    n14 = 215;
-                    break;
-                }
-                case 237: {
-                    n14 = 24;
-                    break;
-                }
-                case 238: {
-                    n14 = 163;
-                    break;
-                }
-                case 239: {
-                    n14 = 136;
-                    break;
-                }
-                case 240: {
-                    n14 = 65;
-                    break;
-                }
-                case 241: {
-                    n14 = 225;
-                    break;
-                }
-                case 242: {
-                    n14 = 68;
-                    break;
-                }
-                case 243: {
-                    n14 = 43;
-                    break;
-                }
-                case 244: {
-                    n14 = 221;
-                    break;
-                }
-                case 245: {
-                    n14 = 202;
-                    break;
-                }
-                case 246: {
-                    n14 = 106;
-                    break;
-                }
-                case 247: {
-                    n14 = 69;
-                    break;
-                }
-                case 248: {
-                    n14 = 218;
-                    break;
-                }
-                case 249: {
-                    n14 = 210;
-                    break;
-                }
-                case 250: {
-                    n14 = 55;
-                    break;
-                }
-                case 251: {
-                    n14 = 46;
-                    break;
-                }
-                case 252: {
-                    n14 = 58;
-                    break;
-                }
-                case 253: {
-                    n14 = 156;
-                    break;
-                }
-                case 254: {
-                    n14 = 211;
-                    break;
-                }
-                default: {
-                    n14 = 11;
-                }
+                  com.kb_4.H(var5, var10001 * var10002);
+                  com.kb_4.t(this.j, Math.max(com.kb_4.J(this.j), 0));
+                  var6 = this.j;
+                  var10001 = (com.kb_4.Q(this.j) - var1.getYOnScreen()) * 2;
+                  var10002 = com.kb_4.z(this.j);
+                  label59:
+                  if (var2 != null) {
+                     label66:
+                     if (var10002 != a(17383, 2236633985702894371L)) {
+                        var10002 = com.kb_4.z(this.j);
+                        int var9 = 3;
+                        if (var2 != null) {
+                           if (var10002 == 3) {
+                              break label66;
+                           }
+
+                           var10002 = com.kb_4.z(this.j);
+                           if (var2 == null) {
+                              break label59;
+                           }
+
+                           var9 = a(27220, 2869854698237145759L);
+                        }
+
+                        if (var10002 != var9) {
+                           var10002 = com.kb_4.z(this.j);
+                           if (var2 == null) {
+                              break label59;
+                           }
+
+                           if (var10002 != 1) {
+                              var10002 = com.kb_4.z(this.j);
+                              if (var2 == null) {
+                                 break label59;
+                              }
+
+                              if (var10002 != 2) {
+                                 var10002 = -1;
+                                 break label59;
+                              }
+                           }
+                        }
+
+                        var10002 = 1;
+                        break label59;
+                     }
+
+                     var10002 = 0;
+                  }
+
+                  com.kb_4.A(var6, var10001 * var10002);
+                  com.kb_4.T(this.j, Math.max(com.kb_4.v(this.j), 0));
+                  this.j.revalidate();
+               }
             }
-            int n15 = n14;
-            int n16 = (n11 & 0xFF) - n15;
-            if (n16 < 0) {
-                n16 += 256;
+         }
+
+         com.kb_4.n(this.j, var1.getXOnScreen());
+         com.kb_4.i(this.j, var1.getYOnScreen());
+      }
+   }
+
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+      int[] var2 = com.k3_2.L();
+      if (var2 != null) {
+         if (SwingUtilities.isLeftMouseButton(var1)) {
+            com.kb_4.Y(this.j, false);
+         }
+
+         this.V(var1);
+      }
+   }
+
+   static {
+      long var0 = 8842949951879555565L;
+      long[] var6 = new long[11];
+      int var3 = 0;
+      String var4 = "\u008coE\u008egº\u0092\u0090ë÷èÅ;3\u009d\u009c\u0003£ç\u0007ðæ[o\u0091T\u0084ï®A¹\u0006\u0080D½\u0006`ù{\u009e×\u0019·Û\u0017h\u008fÔ%wg¸·.>Uì\u0019\u0093Ü\u008d?\u009bz\u0086l6°\u009a5²É";
+      int var5 = "\u008coE\u008egº\u0092\u0090ë÷èÅ;3\u009d\u009c\u0003£ç\u0007ðæ[o\u0091T\u0084ï®A¹\u0006\u0080D½\u0006`ù{\u009e×\u0019·Û\u0017h\u008fÔ%wg¸·.>Uì\u0019\u0093Ü\u008d?\u009bz\u0086l6°\u009a5²É"
+         .length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     b = new Integer[11];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "ýå^\u008c=ÁdnÌ\u0014ÒØ1\u0019I ";
+                  var5 = "ýå^\u008c=ÁdnÌ\u0014ÒØ1\u0019I ".length();
+                  var2 = 0;
             }
-            if ((n13 = ((n11 & 0xFFFF) >>> 8) - n15) < 0) {
-                n13 += 256;
-            }
-            int n17 = 0;
-            while (n17 < cArray.length) {
-                int n18 = n17 % 2;
-                int n19 = n17;
-                char[] cArray2 = cArray;
-                char c2 = cArray[n19];
-                if (n18 == 0) {
-                    cArray2[n19] = (char)(c2 ^ n16);
-                    n16 = ((n16 >>> 3 | n16 << 5) ^ cArray[n17]) & 0xFF;
-                } else {
-                    cArray2[n19] = (char)(c2 ^ n13);
-                    n13 = ((n13 >>> 3 | n13 << 5) ^ cArray[n17]) & 0xFF;
-                }
-                ++n17;
-            }
-            xz_2.b[n12] = new String(cArray).intern();
-        }
-        return b[n12];
-    }
+
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 22732;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

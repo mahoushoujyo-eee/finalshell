@@ -1,62 +1,57 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.GJ;
-import com.T5;
-import com.cn_0;
-import com.ke_2;
-import com.ky_2;
-import com.xq_0;
 import java.awt.Component;
 import javax.swing.JTextField;
 
 public class X0 {
-    private static final long a;
+   private static final long a;
 
-    public void B(int n10, String string, Component component, T5 t5) {
-        JTextField jTextField = this.k();
-        jTextField.setOpaque(false);
-        jTextField.setDocument(new ke_2((int)a));
-        String[] stringArray = cn_0.Q();
-        jTextField.setText(string);
-        GJ gJ2 = new GJ(this, n10, component, jTextField, t5);
-        jTextField.addFocusListener(gJ2);
-        String[] stringArray2 = stringArray;
-        jTextField.addKeyListener(new xq_0(this, jTextField, gJ2, n10, component, t5));
-        t5.S(jTextField);
-        jTextField.requestFocus();
-        jTextField.selectAll();
-        if (stringArray2 == null) {
-            ky_2.K(new String[2]);
-        }
-    }
+   public void B(int var1, String var2, Component var3, com.T5 var4) {
+      JTextField var6 = this.k();
+      var6.setOpaque(false);
+      var6.setDocument(new com.ke_4((int)a));
+      String[] var10000 = com.Cn_2.Q();
+      var6.setText(var2);
+      GJ var7 = new GJ(this, var1, var3, var6, var4);
+      var6.addFocusListener(var7);
+      String[] var5 = var10000;
+      var6.addKeyListener(new Xq_2(this, var6, var7, var1, var3, var4));
+      var4.S(var6);
+      var6.requestFocus();
+      var6.selectAll();
+      if (var5 == null) {
+         com.ky_4.K(new String[2]);
+      }
+   }
 
-    protected JTextField k() {
-        return new JTextField();
-    }
+   protected JTextField k() {
+      return new JTextField();
+   }
 
-    private static void R(int n10, Component component, String string, T5 t5) {
-        String[] stringArray = cn_0.Q();
-        if (stringArray != null) {
-            if (string != null) {
-                t5.Z(n10, string);
-            }
-            t5.S(component);
-        }
-    }
+   private static void R(int var0, Component var1, String var2, com.T5 var3) {
+      String[] var4 = com.Cn_2.Q();
+      if (var4 != null) {
+         if (var2 != null) {
+            var3.Z(var0, var2);
+         }
 
-    static void k(int n10, Component component, String string, T5 t5) {
-        X0.R(n10, component, string, t5);
-    }
+         var3.S(var1);
+      }
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 3634551773197181529L;
-        a = 0xCABF97D9BF2F226BL ^ l2;
-    }
+   static void k(int var0, Component var1, String var2, com.T5 var3) {
+      R(var0, var1, var2, var3);
+   }
+
+   static {
+      long var0 = 3634551773197181529L;
+      long var10002 = -3837181396025138581L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

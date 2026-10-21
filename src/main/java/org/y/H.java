@@ -1,121 +1,124 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.y;
 
-import com.GO;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import org.F.F;
 import org.V.J;
-import org.V.T;
 
-class H
-extends ClassLoader {
-    final J M;
+class H extends ClassLoader {
+   final J M;
 
-    H(ClassLoader classLoader, J j2) {
-        this.M = j2;
-        super(classLoader);
-    }
+   H(ClassLoader var1, J var2) {
+      super(var1);
+      this.M = var2;
+   }
 
-    /*
-     * Loose catch block
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    @F(value=false)
-    public URL getResource(String string) {
-        Object object;
-        boolean bl;
-        Object object2;
-        block11: {
-            block12: {
-                block10: {
-                    URL uRL;
-                    object2 = super.getResource(string);
-                    bl = GO.B();
-                    try {
-                        uRL = object2;
-                        if (bl) return uRL;
-                        if (uRL == null) break block10;
-                    }
-                    catch (IOException iOException) {
-                        throw H.a(iOException);
-                    }
-                    uRL = object2;
-                    return uRL;
-                }
-                object2 = this.M.J(string);
-                object = object2;
-                if (bl) break block11;
-                try {
-                    if (object != null) break block12;
-                    return null;
-                    catch (IOException iOException) {
-                        throw H.a(iOException);
-                    }
-                }
-                catch (IOException iOException) {
-                    throw H.a(iOException);
-                }
-            }
-            object = object2;
-        }
-        try {
-            if (bl) return ((T)object).T();
-            if (!(object instanceof T)) return null;
-        }
-        catch (IOException iOException) {
-            throw H.a(iOException);
-        }
-        try {
-            object = object2;
-            return ((T)object).T();
-        }
-        catch (IOException iOException) {
-            return null;
-        }
-    }
+   @F(false)
+   @Override
+   public URL getResource(String param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/GO.B ()Z
+      // 03: aload 0
+      // 04: aload 1
+      // 05: invokespecial java/lang/ClassLoader.getResource (Ljava/lang/String;)Ljava/net/URL;
+      // 08: astore 3
+      // 09: istore 2
+      // 0a: aload 3
+      // 0b: iload 2
+      // 0c: ifne 1a
+      // 0f: ifnull 1b
+      // 12: goto 19
+      // 15: invokestatic org/y/H.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 18: athrow
+      // 19: aload 3
+      // 1a: areturn
+      // 1b: aload 0
+      // 1c: getfield org/y/H.M Lorg/V/J;
+      // 1f: aload 1
+      // 20: invokevirtual org/V/J.J (Ljava/lang/String;)Lorg/V/N;
+      // 23: astore 3
+      // 24: aload 3
+      // 25: iload 2
+      // 26: ifne 3a
+      // 29: ifnonnull 39
+      // 2c: goto 33
+      // 2f: invokestatic org/y/H.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 32: athrow
+      // 33: aconst_null
+      // 34: areturn
+      // 35: invokestatic org/y/H.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 38: athrow
+      // 39: aload 3
+      // 3a: iload 2
+      // 3b: ifne 4c
+      // 3e: instanceof org/V/T
+      // 41: ifeq 59
+      // 44: goto 4b
+      // 47: invokestatic org/y/H.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 4a: athrow
+      // 4b: aload 3
+      // 4c: checkcast org/V/T
+      // 4f: invokeinterface org/V/T.T ()Ljava/net/URL; 1
+      // 54: areturn
+      // 55: astore 4
+      // 57: aconst_null
+      // 58: areturn
+      // 59: aconst_null
+      // 5a: areturn
+   }
 
-    /*
-     * Loose catch block
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    @F(value=false)
-    public InputStream getResourceAsStream(String string) {
-        InputStream inputStream;
-        block6: {
-            InputStream inputStream2 = super.getResourceAsStream(string);
-            boolean bl = GO.B();
-            inputStream = inputStream2;
-            if (bl) return inputStream;
-            try {
-                if (inputStream == null) break block6;
-                return inputStream2;
-                catch (IOException iOException) {
-                    throw H.a(iOException);
-                }
-            }
-            catch (IOException iOException) {
-                throw H.a(iOException);
-            }
-        }
-        try {
-            inputStream = this.M.l(string);
-            return inputStream;
-        }
-        catch (IOException iOException) {
-            return null;
-        }
-    }
+   @F(false)
+   @Override
+   public InputStream getResourceAsStream(String param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/GO.B ()Z
+      // 03: aload 0
+      // 04: aload 1
+      // 05: invokespecial java/lang/ClassLoader.getResourceAsStream (Ljava/lang/String;)Ljava/io/InputStream;
+      // 08: astore 3
+      // 09: istore 2
+      // 0a: aload 3
+      // 0b: iload 2
+      // 0c: ifne 27
+      // 0f: ifnull 1f
+      // 12: goto 19
+      // 15: invokestatic org/y/H.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 18: athrow
+      // 19: aload 3
+      // 1a: areturn
+      // 1b: invokestatic org/y/H.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 1e: athrow
+      // 1f: aload 0
+      // 20: getfield org/y/H.M Lorg/V/J;
+      // 23: aload 1
+      // 24: invokevirtual org/V/J.l (Ljava/lang/String;)Ljava/io/InputStream;
+      // 27: areturn
+      // 28: astore 3
+      // 29: aconst_null
+      // 2a: areturn
+   }
 
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
+   private static IOException a(IOException var0) {
+      return var0;
+   }
 }
+
+
+
+
 

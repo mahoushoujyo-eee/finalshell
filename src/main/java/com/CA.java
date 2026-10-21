@@ -1,40 +1,38 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ic_0;
-import com.kz_2;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
 import javax.swing.SwingUtilities;
 
-class CA
-extends MouseAdapter {
-    final ic_0 E;
+class CA extends MouseAdapter {
+   final Ic_2 E;
 
-    CA(ic_0 ic_02) {
-        this.E = ic_02;
-    }
+   CA(Ic_2 var1) {
+      this.E = var1;
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        block5: {
-            int n10;
-            int n11;
-            block4: {
-                n11 = ic_0.g(this.E).getUI().locationToIndex(ic_0.g(this.E), mouseEvent.getPoint());
-                String string = kz_2.M();
-                n10 = SwingUtilities.isLeftMouseButton(mouseEvent);
-                if (string == null) break block4;
-                if (n10 == 0) break block5;
-                n10 = n11;
-            }
-            if (n10 != -1) {
-                ic_0.i(this.E, (File)ic_0.g(this.E).getModel().getElementAt(n11));
-            }
-        }
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      String var10000 = com.kz_4.M();
+      int var3 = Ic_2.g(this.E).getUI().locationToIndex(Ic_2.g(this.E), var1.getPoint());
+      String var2 = var10000;
+      int var4 = SwingUtilities.isLeftMouseButton(var1);
+      if (var2 != null) {
+         if (var4 == 0) {
+            return;
+         }
+
+         var4 = var3;
+      }
+
+      if (var4 != -1) {
+         Ic_2.i(this.E, (File)Ic_2.g(this.E).getModel().getElementAt(var3));
+      }
+   }
 }
+
+
+
+
 

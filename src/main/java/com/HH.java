@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.WZ;
-import com.c7_0;
 import java.awt.event.KeyListener;
 import javax.swing.JComponent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public interface HH {
-    @NotNull
-    public JComponent e();
+   @NotNull
+   JComponent e();
 
-    public void Q(@NotNull c7_0 var1);
+   void Q(@NotNull com.c7_2 var1);
 
-    public void addKeyListener(@NotNull KeyListener var1);
+   void addKeyListener(@NotNull KeyListener var1);
 
-    public void R(@Nullable WZ var1);
+   void R(@Nullable com.WZ var1);
 }
+
+
+
+
 

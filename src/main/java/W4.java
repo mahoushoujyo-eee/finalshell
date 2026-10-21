@@ -1,230 +1,335 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class W4 {
-    public String V;
-    long u;
-    long S;
-    long B;
-    long Q;
-    private static final String a;
-    private static final long b;
+   public String V;
+   long u;
+   long S;
+   long B;
+   long Q;
+   private static final String a;
+   private static final long b;
 
-    public W4(String string) {
-        this.V = string;
-        try {
-            this.v();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   public W4(String var1) {
+      com.c.c(308001167767280047L).set(this, var1);
+      Object[] var10001 = com.c.f();
+      Method var10003 = com.c.d(618950266267220159L);
+      Object[] var10002 = var10001;
+      W4 var3 = this;
+      Method var10000 = var10003;
 
-    public void v() {
-        block17: {
-            String[] stringArray;
-            String[] stringArray2;
-            String[] stringArray3;
-            String[] stringArray4;
-            String string;
-            String[] stringArray5;
-            String string2;
-            String string3;
-            String[] stringArray6;
-            block15: {
-                block16: {
-                    String[] stringArray7;
-                    String[] stringArray8;
-                    String string4;
-                    String[] stringArray9;
-                    String string5 = W2.F();
-                    this.V = ((String)this.V).trim();
-                    String string6 = string5;
-                    String string7 = (String)this.V;
-                    if (string6 != null) {
-                        if (string7.equals("")) {
-                            return;
-                        }
-                        string7 = (String)this.V;
-                    }
-                    try {
-                        stringArray9 = (String[])lk_0.B(string7);
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    stringArray6 = stringArray9;
-                    string3 = string4 = stringArray6[0];
-                    if (string6 == null) break block15;
-                    if (!string3.contains(a)) break block16;
-                    string2 = stringArray6[1];
-                    try {
-                        stringArray8 = (String[])lk_0.v(string2);
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    stringArray5 = stringArray8;
-                    this.u = Long.parseLong(stringArray5[1]);
-                    long l2 = Long.parseLong(stringArray5[(int)b]);
-                    this.S = this.u - l2;
-                    string = stringArray6[2];
-                    try {
-                        stringArray7 = (String[])lk_0.v(string);
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    stringArray4 = stringArray7;
-                    this.B = Long.parseLong(stringArray4[1]);
-                    this.Q = Long.parseLong(stringArray4[2]);
-                    if (string6 != null) break block17;
-                }
-                string3 = stringArray6[1];
-            }
-            string2 = string3;
+      try {
+         var10000.invoke(var3, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
+
+   public void v() {
+      String var10000 = W2.F();
+      com.c.c(308001167767280047L).set(this, ((String)com.c.c(308001167767280047L).get(this)).trim());
+      String var1 = var10000;
+      var10000 = (String)com.c.c(308001167767280047L).get(this);
+      if (var1 != null) {
+         if (var10000.equals("")) {
+            return;
+         }
+
+         var10000 = (String)com.c.c(308001167767280047L).get(this);
+      }
+
+      Object[] var22 = com.c.a(var10000);
+      Method var23 = com.c.d(492930666611970668L);
+      Object[] var52 = var22;
+      Object var41 = null;
+
+      try {
+         var10000 = (String[])var23.invoke(var41, var52);
+      } catch (InvocationTargetException var15) {
+         throw var15.getTargetException();
+      }
+
+      String[] var2 = var10000;
+      String var3 = var2[0];
+      var10000 = var3;
+      if (var1 != null) {
+         if (var3.contains(a)) {
+            String var4 = var2[1];
+            Object[] var26 = com.c.a(var4);
+            Method var27 = com.c.d(393686057219167936L);
+            var52 = var26;
+            var41 = null;
+
             try {
-                stringArray3 = (String[])lk_0.v(string2);
+               var10000 = (String[])var27.invoke(var41, var52);
+            } catch (InvocationTargetException var14) {
+               throw var14.getTargetException();
             }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-            stringArray5 = stringArray3;
-            this.u = Long.parseLong(stringArray5[1]);
-            String string8 = stringArray6[2];
+
+            String[] var5 = var10000;
+            com.c.c(591969639021653010L).setLong(this, Long.parseLong(var5[1]));
+            long var6 = Long.parseLong(var5[(int)b]);
+            com.c.c(627600800800634929L).setLong(this, com.c.c(591969639021653010L).getLong(this) - var6);
+            String var8 = var2[2];
+            Object[] var29 = com.c.a(var8);
+            Method var30 = com.c.d(393686057219167936L);
+            var52 = var29;
+            var41 = null;
+
             try {
-                stringArray2 = (String[])lk_0.v(string8);
+               var10000 = (String[])var30.invoke(var41, var52);
+            } catch (InvocationTargetException var13) {
+               throw var13.getTargetException();
             }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
+
+            String[] var9 = var10000;
+            com.c.c(507089352300075301L).setLong(this, Long.parseLong(var9[1]));
+            com.c.c(493434312974920352L).setLong(this, Long.parseLong(var9[2]));
+            if (var1 != null) {
+               return;
             }
-            String[] stringArray10 = stringArray2;
-            this.S = Long.parseLong(stringArray10[2]);
-            string = stringArray6[3];
-            try {
-                stringArray = (String[])lk_0.v(string);
+         }
+
+         var10000 = var2[1];
+      }
+
+      String var16 = var10000;
+      Object[] var32 = com.c.a(var16);
+      Method var33 = com.c.d(393686057219167936L);
+      var52 = var32;
+      var41 = null;
+
+      try {
+         var10000 = (String[])var33.invoke(var41, var52);
+      } catch (InvocationTargetException var12) {
+         throw var12.getTargetException();
+      }
+
+      String[] var17 = var10000;
+      com.c.c(591969639021653010L).setLong(this, Long.parseLong(var17[1]));
+      String var18 = var2[2];
+      Object[] var35 = com.c.a(var18);
+      Method var36 = com.c.d(393686057219167936L);
+      var52 = var35;
+      var41 = null;
+
+      try {
+         var10000 = (String[])var36.invoke(var41, var52);
+      } catch (InvocationTargetException var11) {
+         throw var11.getTargetException();
+      }
+
+      String[] var7 = var10000;
+      com.c.c(627600800800634929L).setLong(this, Long.parseLong(var7[2]));
+      String var19 = var2[3];
+      Object[] var38 = com.c.a(var19);
+      Method var39 = com.c.d(393686057219167936L);
+      var52 = var38;
+      var41 = null;
+
+      try {
+         var10000 = (String[])var39.invoke(var41, var52);
+      } catch (InvocationTargetException var10) {
+         throw var10.getTargetException();
+      }
+
+      String[] var20 = var10000;
+      com.c.c(507089352300075301L).setLong(this, Long.parseLong(var20[1]));
+      com.c.c(493434312974920352L).setLong(this, Long.parseLong(var20[2]));
+   }
+
+   public long r() {
+      return com.c.c(591969639021653010L).getLong(this);
+   }
+
+   public void o(long var1) {
+      com.c.c(591969639021653010L).setLong(this, var1);
+   }
+
+   public long a() {
+      return com.c.c(627600800800634929L).getLong(this);
+   }
+
+   public void i(long var1) {
+      com.c.c(627600800800634929L).setLong(this, var1);
+   }
+
+   public long R() {
+      return com.c.c(507089352300075301L).getLong(this);
+   }
+
+   public void a(long var1) {
+      com.c.c(507089352300075301L).setLong(this, var1);
+   }
+
+   public long Z() {
+      return com.c.c(493434312974920352L).getLong(this);
+   }
+
+   public void V(long var1) {
+      com.c.c(493434312974920352L).setLong(this, var1);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "GN\tf\u0004\u0019\u0005J]".toCharArray();
+      int var10004 = var10003.length;
+      int var2 = 0;
+      byte var13 = 81;
+      char[] var10002 = var10003;
+      int var4 = var10004;
+      char[] var17;
+      byte var21;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var17 = var10003;
+         var10005 = var2;
+         char var10008 = var10003[var2];
+         var10007 = 81;
+         var10006 = var10008;
+         switch (var2 % 7) {
+            case 0:
+               var21 = 119;
+               break;
+            case 1:
+               var21 = 105;
+               break;
+            case 2:
+               var21 = 57;
+               break;
+            case 3:
+               var21 = 94;
+               break;
+            case 4:
+               var21 = 57;
+               break;
+            case 5:
+               var21 = 41;
+               break;
+            default:
+               var21 = 54;
+         }
+      } else {
+         var13 = 81;
+         var4 = var10004;
+         if (var10004 <= var2) {
+            String var16 = new String(var10003).intern();
+            byte var8 = -1;
+            a = var16;
+            long var3 = 4868874321259095430L;
+            long var12 = 859790081524458880L ^ var3;
+            var8 = -1;
+            b = var12;
+            return;
+         }
+
+         var17 = var10003;
+         var10005 = var2;
+         char var22 = var10003[var2];
+         var10007 = 81;
+         var10006 = var22;
+         switch (var2 % 7) {
+            case 0:
+               var21 = 119;
+               break;
+            case 1:
+               var21 = 105;
+               break;
+            case 2:
+               var21 = 57;
+               break;
+            case 3:
+               var21 = 94;
+               break;
+            case 4:
+               var21 = 57;
+               break;
+            case 5:
+               var21 = 41;
+               break;
+            default:
+               var21 = 54;
+         }
+      }
+
+      while (true) {
+         var17[var10005] = (char)(var10006 ^ var10007 ^ var21);
+         var2++;
+         if (var13 == 0) {
+            var17 = var10002;
+            var10005 = var13;
+            char var24 = var10002[var13];
+            var10007 = var13;
+            var10006 = var24;
+            switch (var2 % 7) {
+               case 0:
+                  var21 = 119;
+                  break;
+               case 1:
+                  var21 = 105;
+                  break;
+               case 2:
+                  var21 = 57;
+                  break;
+               case 3:
+                  var21 = 94;
+                  break;
+               case 4:
+                  var21 = 57;
+                  break;
+               case 5:
+                  var21 = 41;
+                  break;
+               default:
+                  var21 = 54;
             }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
+         } else {
+            if (var4 <= var2) {
+               String var15 = new String(var10002).intern();
+               byte var6 = -1;
+               a = var15;
+               long var0 = 4868874321259095430L;
+               long var11 = 859790081524458880L ^ var0;
+               var6 = -1;
+               b = var11;
+               return;
             }
-            stringArray4 = stringArray;
-            this.B = Long.parseLong(stringArray4[1]);
-            this.Q = Long.parseLong(stringArray4[2]);
-        }
-    }
 
-    public long r() {
-        return this.u;
-    }
-
-    public void o(long l2) {
-        this.u = l2;
-    }
-
-    public long a() {
-        return this.S;
-    }
-
-    public void i(long l2) {
-        this.S = l2;
-    }
-
-    public long R() {
-        return this.B;
-    }
-
-    public void a(long l2) {
-        this.B = l2;
-    }
-
-    public long Z() {
-        return this.Q;
-    }
-
-    public void V(long l2) {
-        this.Q = l2;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "GN\tf\u0004\u0019\u0005J]".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 81;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+            var17 = var10002;
+            var10005 = var2;
+            char var23 = var10002[var2];
+            var10007 = var13;
+            var10006 = var23;
+            switch (var2 % 7) {
+               case 0:
+                  var21 = 119;
+                  break;
+               case 1:
+                  var21 = 105;
+                  break;
+               case 2:
+                  var21 = 57;
+                  break;
+               case 3:
+                  var21 = 94;
+                  break;
+               case 4:
+                  var21 = 57;
+                  break;
+               case 5:
+                  var21 = 41;
+                  break;
+               default:
+                  var21 = 54;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 119;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 105;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 57;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 94;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 57;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 41;
-                            break;
-                        }
-                        default: {
-                            n17 = 54;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        long l2 = 4868874321259095430L;
-        b = 0xBEE968616AB6580L ^ l2;
-    }
+         }
+      }
+   }
 }
+
+
+
+
 

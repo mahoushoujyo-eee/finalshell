@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.V;
 
 import java.io.IOException;
@@ -8,148 +5,160 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
-import org.F.c;
-import org.V.N;
-import org.V.T;
-import org.V.U;
-import org.V.f;
-import org.v.e_0;
+import java.util.Map.Entry;
 import org.y.k;
 
-class O
-extends U {
-    final ClassLoader u;
-    private static final String b;
+class O extends org.V.U {
+   final ClassLoader u;
+   private static final String b;
 
-    O(ClassLoader classLoader) {
-        this.u = classLoader;
-    }
+   O(ClassLoader var1) {
+      this.u = var1;
+   }
 
-    @Override
-    @c
-    public N J(String string) {
-        URL uRL;
-        int[] nArray = f.h();
-        String string2 = string;
-        if (nArray == null && string2.startsWith("/")) {
-            string2 = string = string.substring(1);
-        }
-        if ((uRL = this.u.getResource(string)) == null) {
-            return null;
-        }
-        String string3 = string;
-        return e_0.v(uRL, string3);
-    }
-
-    @Override
-    @c
-    public Iterable E(String string, boolean bl) throws IOException {
-        Map map = k.D(this.u, string, false, bl);
-        ArrayList<T> arrayList = new ArrayList<T>(map.size());
-        Iterator iterator = map.entrySet().iterator();
-        int[] nArray = f.h();
-        while (iterator.hasNext()) {
-            block4: {
-                boolean bl2;
-                Map.Entry entry = iterator.next();
-                String string2 = (String)entry.getKey();
-                URL uRL = (URL)entry.getValue();
-                try {
-                    bl2 = string2.endsWith(b);
-                    if (nArray != null) break block4;
-                    if (!bl2) {
-                        continue;
-                    }
-                }
-                catch (IOException iOException) {
-                    throw O.a(iOException);
-                }
-                bl2 = arrayList.add(e_0.v(uRL, string2));
+   @org.F.c
+   @Override
+   public org.V.N J(String var1) {
+      label17: {
+         int[] var2 = org.V.f.h();
+         String var10000 = var1;
+         if (var2 == null) {
+            if (!var1.startsWith("/")) {
+               break label17;
             }
-            if (nArray == null) continue;
-        }
-        return arrayList;
-    }
 
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
+            var10000 = var1.substring(1);
+         }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u001ao\u0010\u000b\u0012\u000b".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 123;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+         var1 = var10000;
+      }
+
+      URL var3 = this.u.getResource(var1);
+      return var3 == null ? null : org.V.e_2.v(var3, var1);
+   }
+
+   @org.F.c
+   @Override
+   public Iterable E(String var1, boolean var2) throws IOException {
+      Map var4 = k.D(this.u, var1, false, var2);
+      ArrayList var5 = new ArrayList(var4.size());
+      int[] var10000 = org.V.f.h();
+      Iterator var6 = var4.entrySet().iterator();
+      int[] var3 = var10000;
+
+      while (var6.hasNext()) {
+         Entry var7 = (Entry)var6.next();
+         String var8 = (String)var7.getKey();
+         URL var9 = (URL)var7.getValue();
+
+         label26: {
+            try {
+               boolean var11 = var8.endsWith(b);
+               if (var3 != null) {
+                  break label26;
+               }
+
+               if (!var11) {
+                  continue;
+               }
+            } catch (IOException var10) {
+               throw a(var10);
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 79;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 119;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 7;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 17;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 26;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 3;
-                            break;
-                        }
-                        default: {
-                            n17 = 1;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        b = new String(cArray).intern();
-    }
+
+            var5.add(org.V.e_2.v(var9, var8));
+         }
+
+         if (var3 != null) {
+            break;
+         }
+      }
+
+      return var5;
+   }
+
+   private static IOException a(IOException var0) {
+      return var0;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "\u001ao\u0010\u000b\u0012\u000b".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 123;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 123;
+         var10006 = var0;
+      } else {
+         var6 = 123;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            b = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 123;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 79;
+               break;
+            case 1:
+               var23 = 119;
+               break;
+            case 2:
+               var23 = 7;
+               break;
+            case 3:
+               var23 = 17;
+               break;
+            case 4:
+               var23 = 26;
+               break;
+            case 5:
+               var23 = 3;
+               break;
+            default:
+               var23 = 1;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               b = var8;
+               return;
+            }
+
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

@@ -1,23 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
 import org.I;
-import org.v.NP;
-import org.v._w_0;
 
-public final class NM
-extends NP {
-    public NM(I i2, String string) {
-        super(i2, string);
-    }
+public final class NM extends NP {
+   public NM(I var1, String var2) {
+      super(var1, var2);
+   }
 
-    @Override
-    @c
-    public Object i(_w_0 _w_02) throws Throwable {
-        return _w_02.l(this);
-    }
+   @org.F.c
+   @Override
+   public Object i(_w_2 var1) throws Throwable {
+      return var1.l(this);
+   }
 }
+
+
+
+
 

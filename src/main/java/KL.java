@@ -1,7 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.Color;
 import java.awt.Component;
 import javax.swing.BorderFactory;
@@ -10,68 +6,85 @@ import javax.swing.JTable;
 import javax.swing.border.Border;
 import javax.swing.table.TableCellRenderer;
 
-class KL
-extends JLabel
-implements TableCellRenderer {
-    private final Border U = BorderFactory.createCompoundBorder(BorderFactory.createMatteBorder(1, 1, 0, 0, new Color(KL.a(16700, 7768351546985926532L), KL.a(14500, 8924090082085877277L), KL.a(14500, 8924090082085877277L))), BorderFactory.createEmptyBorder(2, 2, 1, 2));
-    private final Color F = new Color(0, true);
-    private static final long[] a;
-    private static final Integer[] b;
+class KL extends JLabel implements TableCellRenderer {
+   private final Border U = BorderFactory.createCompoundBorder(
+      BorderFactory.createMatteBorder(1, 1, 0, 0, new Color(a(16700, 7768351546985926532L), a(14500, 8924090082085877277L), a(14500, 8924090082085877277L))),
+      BorderFactory.createEmptyBorder(2, 2, 1, 2)
+   );
+   private final Color F = new Color(0, true);
+   private static final long[] a;
+   private static final Integer[] b;
 
-    KL() {
-    }
+   @Override
+   public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
+      String var8;
+      label14: {
+         String var7 = Km_2.U();
+         var8 = (String)var2;
+         if (var7 == null) {
+            if (var2 == null) {
+               var8 = "";
+               break label14;
+            }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public Component getTableCellRendererComponent(JTable var1_1, Object var2_2, boolean var3_3, boolean var4_4, int var5_5, int var6_6) {
-        var7_7 = km_0.U();
-        v0 = var2_2;
-        if (var7_7 != null) ** GOTO lbl6
-        if (v0 != null) {
-            v0 = var2_2;
-lbl6:
-            // 2 sources
+            var8 = (String)var2;
+         }
 
-            v1 = v0.toString();
-        } else {
-            v1 = "";
-        }
-        this.setText(v1);
-        this.setHorizontalAlignment(0);
-        this.setOpaque(false);
-        this.setBackground((Color)this.F);
-        this.setForeground(Color.BLACK);
-        this.setBorder((Border)this.U);
-        return this;
-    }
+         var8 = var8.toString();
+      }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 4838082143190303202L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\u008f\u0084'2\u00a5Twi\u0013\u00b1\u00c3\u00c8\u00a3w\u000e\u00f0";
-        int n11 = "\u008f\u0084'2\u00a5Twi\u0013\u00b1\u00c3\u00c8\u00a3w\u000e\u00f0".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-    }
+      this.setText(var8);
+      this.setHorizontalAlignment(0);
+      this.setOpaque(false);
+      this.setBackground((Color)com.c.c(302219736954338503L).get(this));
+      this.setForeground(Color.BLACK);
+      this.setBorder((Border)com.c.c(199364541266016669L).get(this));
+      return this;
+   }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0xEB9;
-        if (b[n11] == null) {
-            KL.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+   static {
+      long var0 = 4838082143190303202L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "\u008f\u0084'2¥Twi\u0013±ÃÈ£w\u000eð";
+      int var5 = "\u008f\u0084'2¥Twi\u0013±ÃÈ£w\u000eð".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 3769;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

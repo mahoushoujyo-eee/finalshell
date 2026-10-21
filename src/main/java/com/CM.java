@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com._n_0;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-class CM
-implements ChangeListener {
-    final _n_0 p;
+class CM implements ChangeListener {
+   final _n_2 p;
 
-    CM(_n_0 _n_02) {
-        this.p = _n_02;
-    }
+   CM(_n_2 var1) {
+      this.p = var1;
+   }
 
-    @Override
-    public void stateChanged(ChangeEvent changeEvent) {
-        _n_0.T(this.p).repaint();
-    }
+   @Override
+   public void stateChanged(ChangeEvent var1) {
+      _n_2.T(this.p).repaint();
+   }
 }
+
+
+
+
 

@@ -1,31 +1,32 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.net.InetSocketAddress;
 
 public class BR {
-    InetSocketAddress m;
-    InetSocketAddress a;
+   InetSocketAddress m;
+   InetSocketAddress a;
 
-    BR(InetSocketAddress inetSocketAddress, InetSocketAddress inetSocketAddress2) {
-        this.m = inetSocketAddress;
-        this.a = inetSocketAddress2;
-    }
+   BR(InetSocketAddress var1, InetSocketAddress var2) {
+      this.m = var1;
+      this.a = var2;
+   }
 
-    public InetSocketAddress B() {
-        return this.m;
-    }
+   public InetSocketAddress B() {
+      return this.m;
+   }
 
-    public void F(InetSocketAddress inetSocketAddress) {
-        this.m = inetSocketAddress;
-    }
+   public void F(InetSocketAddress var1) {
+      this.m = var1;
+   }
 
-    public InetSocketAddress v() {
-        return this.a;
-    }
+   public InetSocketAddress v() {
+      return this.a;
+   }
 
-    public void j(InetSocketAddress inetSocketAddress) {
-        this.a = inetSocketAddress;
-    }
+   public void j(InetSocketAddress var1) {
+      this.a = var1;
+   }
 }
+
+
+
+
 

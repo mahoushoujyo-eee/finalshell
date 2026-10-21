@@ -1,22 +1,45 @@
-/*
- * Decompiled with CFR 0.152.
- */
-/*
- * Renamed from cx
- */
-class cx_2 {
-    int t;
-    int u;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-    cx_2() {
-    }
+class Cx_2 implements tk_4 {
+   final lv_4 z;
+   final Yf_2 s;
 
-    void b(int n10) {
-        this.u += n10;
-    }
+   Cx_2(Yf_2 var1, lv_4 var2) {
+      this.s = var1;
+      this.z = var2;
+   }
 
-    void w(int n10) {
-        this.t += n10;
-    }
+   @Override
+   public void R(U var1) {
+      Method var10001 = (Method)com.c.c(204675463440528185L).get(this);
+      Object[] var10002 = com.c.f();
+      Method var10004 = com.c.d(292557478156152530L);
+      Object[] var10003 = var10002;
+      var10002 = var10001;
+      var10001 = var10004;
+
+      try {
+         var10001 = (Method)var10001.invoke(var10002, var10003);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
+
+      Object[] var6 = com.c.a(var10001);
+      Method var10 = com.c.d(292825639419034536L);
+      var10002 = var6;
+      U var7 = var1;
+      Method var10000 = var10;
+
+      try {
+         var10000.invoke(var7, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
 }
+
+
+
+
 

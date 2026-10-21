@@ -1,84 +1,83 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.WC;
-import com.ac_0;
-import com.ky_2;
 import java.awt.Component;
 import java.awt.Window;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.lang.ref.WeakReference;
 
-class YD
-extends MouseAdapter {
-    final WeakReference A;
-    final WC b;
+class YD extends MouseAdapter {
+   final WeakReference A;
+   final com.WC b;
 
-    YD(WeakReference weakReference, WC wC) {
-        this.A = weakReference;
-        this.b = wC;
-    }
+   YD(WeakReference var1, com.WC var2) {
+      this.A = var1;
+      this.b = var2;
+   }
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-        block5: {
-            boolean bl;
-            block6: {
-                Component component;
-                ky_2[] ky_2Array;
-                block4: {
-                    Component component2 = (Component)this.A.get();
-                    ky_2Array = ac_0.n();
-                    component = component2;
-                    if (ky_2Array != null) break block4;
-                    if (component == null) break block5;
-                    component = component2;
-                }
-                Window window = FN.L(component);
-                bl = window.isShowing();
-                if (ky_2Array != null) break block6;
-                if (!bl) break block5;
-                bl = window.isActive();
-            }
-            if (bl) {
-                this.b.u();
-            }
-        }
-    }
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+      com.ky_4[] var10000 = com.ac_2.n();
+      Component var3 = (Component)this.A.get();
+      com.ky_4[] var2 = var10000;
+      Component var5 = var3;
+      if (var2 == null) {
+         if (var3 == null) {
+            return;
+         }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-        this.N();
-    }
+         var5 = var3;
+      }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        this.N();
-    }
+      Window var4 = com.FN.L(var5);
+      boolean var6 = var4.isShowing();
+      if (var2 == null) {
+         if (!var6) {
+            return;
+         }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-        this.N();
-    }
+         var6 = var4.isActive();
+      }
 
-    private void N() {
-        block3: {
-            Component component;
-            block2: {
-                Component component2 = (Component)this.A.get();
-                ky_2[] ky_2Array = ac_0.n();
-                component = component2;
-                if (ky_2Array != null) break block2;
-                if (component == null) break block3;
-                this.b.Y();
-                component = component2;
-            }
-            ac_0.y(component);
-        }
-    }
+      if (var6) {
+         this.b.u();
+      }
+   }
+
+   @Override
+   public void mouseExited(MouseEvent var1) {
+      this.N();
+   }
+
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      this.N();
+   }
+
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+      this.N();
+   }
+
+   private void N() {
+      com.ky_4[] var10000 = com.ac_2.n();
+      Component var2 = (Component)this.A.get();
+      com.ky_4[] var1 = var10000;
+      Component var3 = var2;
+      if (var1 == null) {
+         if (var2 == null) {
+            return;
+         }
+
+         this.b.Y();
+         var3 = var2;
+      }
+
+      com.ac_2.y(var3);
+   }
 }
+
+
+
+
 

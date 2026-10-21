@@ -1,142 +1,145 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import javax.swing.JCheckBoxMenuItem;
 
-/*
- * Renamed from ci
- */
-public final class ci_2
-extends Enum {
-    public static final ci_2 fill;
-    public static final ci_2 align;
-    public static final ci_2 custom;
-    private static final /* synthetic */ ci_2[] D;
+class Ci_2 implements ActionListener {
+   final JCheckBoxMenuItem k;
+   final nx_2 O;
 
-    public static ci_2[] values() {
-        return (ci_2[])((ci_2[])ci_2.D).clone();
-    }
+   Ci_2(nx_2 var1, JCheckBoxMenuItem var2) {
+      this.O = var1;
+      this.k = var2;
+   }
 
-    public static ci_2 valueOf(String string) {
-        return Enum.valueOf(ci_2.class, string);
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      String var2 = Km_2.U();
+      Object[] var10000 = com.c.f();
+      Method var13 = com.c.d(270389152141252877L);
+      Object[] var51 = var10000;
+      Object var32 = null;
 
-    /*
-     * WARNING - Possible parameter corruption
-     * WARNING - void declaration
-     */
-    private ci_2() {
-        void var2_-1;
-        void var1_-1;
-    }
+      try {
+         var10000 = (yT_3)var13.invoke(var32, var51);
+      } catch (InvocationTargetException var12) {
+         throw var12.getTargetException();
+      }
 
-    private static /* synthetic */ ci_2[] z() {
-        return new ci_2[]{(ci_2)((Object)ci_2.fill), (ci_2)((Object)ci_2.align), (ci_2)((Object)ci_2.custom)};
-    }
+      if (var2 == null) {
+         var32 = com.c.f();
+         Method var10003 = com.c.d(163462326892114024L);
+         var51 = (Object[])var32;
+         var32 = var10000;
+         Method var15 = var10003;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block15: {
-            var0 = new String[3];
-            var4_1 = 0;
-            var3_2 = "\u0003V\nxT:\u0004\u0006J\u0015`\u0005\u0001O\u0010kU";
-            var5_3 = "\u0003V\nxT:\u0004\u0006J\u0015`\u0005\u0001O\u0010kU".length();
-            var2_4 = 6;
-            var1_5 = -1;
-lbl7:
-            // 2 sources
+         try {
+            var10000 = (Object[])var15.invoke(var32, var51);
+         } catch (InvocationTargetException var11) {
+            throw var11.getTargetException();
+         }
 
-            while (true) {
-                continue;
-                break;
+         var32 = com.c.f();
+         var10003 = com.c.d(633712494917113170L);
+         var51 = (Object[])var32;
+         var32 = var10000;
+         Method var17 = var10003;
+
+         try {
+            var18 = (Boolean)var17.invoke(var32, var51);
+         } catch (InvocationTargetException var10) {
+            throw var10.getTargetException();
+         }
+
+         if (!var18) {
+            var10000 = com.c.f();
+            Method var29 = com.c.d(270389152141252877L);
+            var51 = var10000;
+            var32 = null;
+
+            try {
+               var10000 = (Object[])var29.invoke(var32, var51);
+            } catch (InvocationTargetException var4) {
+               throw var4.getTargetException();
             }
-lbl9:
-            // 1 sources
 
-            while (true) {
-                var0[var4_1++] = new String(v0).intern();
-                if ((var1_5 += var2_4) < var5_3) {
-                    var2_4 = var3_2.charAt(var1_5);
-                    ** continue;
-                }
-                break block15;
-                break;
+            var32 = com.c.f();
+            var10003 = com.c.d(248890456776257543L);
+            var51 = (Object[])var32;
+            var32 = var10000;
+            Method var31 = var10003;
+
+            try {
+               var31.invoke(var32, var51);
+               return;
+            } catch (InvocationTargetException var3) {
+               throw var3.getTargetException();
             }
-            v1 = ++var1_5;
-            v2 = var3_2.substring(v1, v1 + var2_4).toCharArray();
-            v3 = v2.length;
-            var6_6 = 0;
-            v4 = 99;
-            v5 = v2;
-            v6 = v3;
-            if (v3 > 1) ** GOTO lbl67
-            do {
-                v7 = v4;
-                v5 = v5;
-                v8 = v5;
-                v9 = v4;
-                v10 = var6_6;
-                while (true) {
-                    switch (var6_6 % 7) {
-                        case 0: {
-                            v11 = 3;
-                            break;
-                        }
-                        case 1: {
-                            v11 = 64;
-                            break;
-                        }
-                        case 2: {
-                            v11 = 26;
-                            break;
-                        }
-                        case 3: {
-                            v11 = 111;
-                            break;
-                        }
-                        case 4: {
-                            v11 = 88;
-                            break;
-                        }
-                        case 5: {
-                            v11 = 52;
-                            break;
-                        }
-                        default: {
-                            v11 = 115;
-                        }
-                    }
-                    v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                    ++var6_6;
-                    v4 = v7;
-                    if (v7 != 0) break;
-                    v7 = v4;
-                    v5 = v5;
-                    v10 = v4;
-                    v8 = v5;
-                    v9 = v4;
-                }
-lbl67:
-                // 2 sources
+         }
 
-                v0 = v5;
-                v6 = v6;
-            } while (v6 > var6_6);
-            ** while (true)
-        }
-        ci_2.fill = new ci_2(var0[1], 0);
-        ci_2.align = new ci_2(var0[2], 1);
-        ci_2.custom = new ci_2(var0[0], 2);
-        try {
-            v12 = (ci_2[])ci_2.z();
-        }
-        catch (InvocationTargetException v13) {
-            throw v13.getTargetException();
-        }
-        ci_2.D = v12;
-    }
+         var10000 = com.c.f();
+         Method var20 = com.c.d(270389152141252877L);
+         var51 = var10000;
+         var32 = null;
+
+         try {
+            var10000 = (Object[])var20.invoke(var32, var51);
+         } catch (InvocationTargetException var9) {
+            throw var9.getTargetException();
+         }
+
+         var32 = com.c.f();
+         var10003 = com.c.d(306266403902896148L);
+         var51 = (Object[])var32;
+         var32 = var10000;
+         Method var22 = var10003;
+
+         try {
+            var10000 = (Object[])var22.invoke(var32, var51);
+         } catch (InvocationTargetException var8) {
+            throw var8.getTargetException();
+         }
+
+         var32 = com.c.a(((JCheckBoxMenuItem)com.c.c(529240269626246118L).get(this)).isSelected());
+         var10003 = com.c.d(522016653675214088L);
+         var51 = (Object[])var32;
+         var32 = var10000;
+         Method var24 = var10003;
+
+         try {
+            var24.invoke(var32, var51);
+         } catch (InvocationTargetException var7) {
+            throw var7.getTargetException();
+         }
+
+         var10000 = com.c.f();
+         Method var26 = com.c.d(270389152141252877L);
+         var51 = var10000;
+         var32 = null;
+
+         try {
+            var10000 = (yT_3)var26.invoke(var32, var51);
+         } catch (InvocationTargetException var6) {
+            throw var6.getTargetException();
+         }
+      }
+
+      var32 = com.c.f();
+      Method var67 = com.c.d(578864097947885485L);
+      var51 = (Object[])var32;
+      var32 = var10000;
+      Method var27 = var67;
+
+      try {
+         var27.invoke(var32, var51);
+      } catch (InvocationTargetException var5) {
+         throw var5.getTargetException();
+      }
+   }
 }
+
+
+
+
 

@@ -1,179 +1,206 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ph_0;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.Arrays;
 
-public class HK
-implements ParameterizedType {
-    private final Type[] N;
-    private final Type F;
-    private final Type r;
-    private static final long[] a;
-    private static final Integer[] b;
+public class HK implements ParameterizedType {
+   private final Type[] N;
+   private final Type F;
+   private final Type r;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public HK(Type[] typeArray, Type type, Type type2) {
-        this.N = typeArray;
-        this.F = type;
-        this.r = type2;
-    }
+   public HK(Type[] var1, Type var2, Type var3) {
+      this.N = var1;
+      this.F = var2;
+      this.r = var3;
+   }
 
-    @Override
-    public Type[] getActualTypeArguments() {
-        return this.N;
-    }
+   @Override
+   public Type[] getActualTypeArguments() {
+      return this.N;
+   }
 
-    @Override
-    public Type getOwnerType() {
-        return this.F;
-    }
+   @Override
+   public Type getOwnerType() {
+      return this.F;
+   }
 
-    @Override
-    public Type getRawType() {
-        return this.r;
-    }
+   @Override
+   public Type getRawType() {
+      return this.r;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    public boolean equals(Object var1_1) {
-        block17: {
-            block18: {
-                block19: {
-                    block15: {
-                        block16: {
-                            block13: {
-                                block14: {
-                                    block12: {
-                                        var2_2 = ph_0.u();
-                                        v0 = this;
-                                        if (var2_2 == 0) {
-                                            if (v0 == var1_1) {
-                                                return true;
-                                            }
-                                            v0 = var1_1;
-                                        }
-                                        if (v0 == null) break block12;
-                                        v1 = this.getClass();
-                                        if (var2_2 != 0) break block13;
-                                        if (v1 == var1_1.getClass()) break block14;
-                                    }
-                                    return false;
-                                }
-                                v1 = var1_1;
-                            }
-                            var3_3 = (HK)v1;
-                            v2 = this;
-                            if (var2_2 == 0) {
-                                if (!Arrays.equals(v2.N, var3_3.N)) {
-                                    return false;
-                                }
-                                v2 = this.F;
-                            }
-                            if (var2_2 != 0) break block15;
-                            if (v2 == null) break block16;
-                            v2 = this.F;
-                            if (var2_2 != 0) break block17;
-                            if (v2.equals(var3_3.F)) break block18;
-                            break block19;
-                        }
-                        v2 = var3_3.F;
-                    }
-                    if (var2_2 != 0) break block17;
-                    if (v2 == null) break block18;
-                }
-                return false;
+   @Override
+   public boolean equals(Object var1) {
+      int var2 = Ph_2.u();
+      Object var10000 = this;
+      if (var2 == 0) {
+         if (this == var1) {
+            return true;
+         }
+
+         var10000 = var1;
+      }
+
+      if (var10000 != null) {
+         var10000 = this.getClass();
+         if (var2 == 0) {
+            if (var10000 != var1.getClass()) {
+               return false;
             }
-            v2 = this.r;
-        }
-        if (var2_2 != 0) ** GOTO lbl43
-        if (v2 != null) {
-            v3 = this.r.equals(var3_3.r);
-        } else {
-            v2 = var3_3.r;
-lbl43:
-            // 2 sources
 
-            v3 = v2 == null;
-        }
-        return v3;
-    }
+            var10000 = var1;
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    public int hashCode() {
-        var1_1 = ph_0.w();
-        v0 = this.N;
-        if (var1_1 == 0) ** GOTO lbl6
-        if (v0 != null) {
-            v0 = this.N;
-lbl6:
-            // 2 sources
+         HK var3 = (HK)var10000;
+         var10000 = this;
+         if (var2 == 0) {
+            if (!Arrays.equals((Object[])this.N, (Object[])var3.N)) {
+               return false;
+            }
 
-            v1 = Arrays.hashCode(v0);
-        } else {
-            v1 = 0;
-        }
-        var2_2 = v1;
-        v2 = HK.a(9313, 5546234599347969587L) * var2_2;
-        v3 = this.F;
-        if (var1_1 == 0) ** GOTO lbl15
-        if (v3 != null) {
-            v3 = this.F;
-lbl15:
-            // 2 sources
+            var10000 = this.F;
+         }
 
-            v4 = v3.hashCode();
-        } else {
-            v4 = 0;
-        }
-        var2_2 = v2 + v4;
-        v5 = HK.a(1592, 1061809867294375019L) * var2_2;
-        v6 = this.r;
-        if (var1_1 == 0) ** GOTO lbl24
-        if (v6 != null) {
-            v6 = this.r;
-lbl24:
-            // 2 sources
+         label62: {
+            label79: {
+               if (var2 == 0) {
+                  if (var10000 != null) {
+                     var10000 = this.F;
+                     if (var2 != 0) {
+                        break label62;
+                     }
 
-            v7 = v6.hashCode();
-        } else {
-            v7 = 0;
-        }
-        var2_2 = v5 + v7;
-        return var2_2;
-    }
+                     if (!this.F.equals(var3.F)) {
+                        return false;
+                     }
+                     break label79;
+                  }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 8577501372899740196L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\u0014*\u001c\u00d6\u0007\u0000\u0094\b&yy\u0005O\b\u00b6P";
-        int n11 = "\u0014*\u001c\u00d6\u0007\u0000\u0094\b&yy\u0005O\b\u00b6P".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-    }
+                  var10000 = var3.F;
+               }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x7A52;
-        if (b[n11] == null) {
-            HK.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+               if (var2 != 0) {
+                  break label62;
+               }
+
+               if (var10000 != null) {
+                  return false;
+               }
+            }
+
+            var10000 = this.r;
+         }
+
+         if (var2 == 0) {
+            if (var10000 != null) {
+               return this.r.equals(var3.r);
+            }
+
+            var10000 = var3.r;
+         }
+
+         return var10000 == null;
+      } else {
+         return false;
+      }
+   }
+
+   @Override
+   public int hashCode() {
+      int var1;
+      int var4;
+      label36: {
+         var1 = Ph_2.w();
+         Type[] var10000 = this.N;
+         if (var1 != 0) {
+            if (this.N == null) {
+               var4 = 0;
+               break label36;
+            }
+
+            var10000 = this.N;
+         }
+
+         var4 = Arrays.hashCode((Object[])var10000);
+      }
+
+      int var7;
+      label30: {
+         int var2 = var4;
+         var4 = a(9313, 5546234599347969587L) * var2;
+         Type var10001 = this.F;
+         if (var1 != 0) {
+            if (this.F == null) {
+               var7 = 0;
+               break label30;
+            }
+
+            var10001 = this.F;
+         }
+
+         var7 = var10001.hashCode();
+      }
+
+      int var3 = var4 + var7;
+      var4 = a(1592, 1061809867294375019L) * var3;
+      Type var8 = this.r;
+      if (var1 != 0) {
+         if (this.r == null) {
+            return var4 + 0;
+         }
+
+         var8 = this.r;
+      }
+
+      return var4 + var8.hashCode();
+   }
+
+   static {
+      long var0 = 8577501372899740196L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "\u0014*\u001cÖ\u0007\u0000\u0094\b&yy\u0005O\b¶P";
+      int var5 = "\u0014*\u001cÖ\u0007\u0000\u0094\b&yy\u0005O\b¶P".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 31314;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

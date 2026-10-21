@@ -1,42 +1,91 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.W5;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
-import java.awt.image.BufferedImageOp;
 
-/*
- * Renamed from com.hy
- */
-public class hy_2
-extends W5 {
-    private BufferedImageOp Z;
-    private int s;
+class Hy_2 implements ActionListener {
+   private int e;
+   final Rectangle f;
+   final com.Qm_2 S;
+   final BufferedImage I;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public hy_2(BufferedImageOp bufferedImageOp, int n10) {
-        this.Z = bufferedImageOp;
-        this.s = n10;
-    }
+   Hy_2(Rectangle var1, com.Qm_2 var2, BufferedImage var3) {
+      this.f = var1;
+      this.S = var2;
+      this.I = var3;
+      this.e = a(15709, 3791628624128876567L);
+   }
 
-    @Override
-    public BufferedImage filter(BufferedImage bufferedImage, BufferedImage bufferedImage2) {
-        BufferedImage bufferedImage3;
-        block2: {
-            BufferedImage bufferedImage4 = bufferedImage;
-            String[] stringArray = W5.q();
-            for (int i2 = 0; i2 < this.s; ++i2) {
-                bufferedImage3 = this.Z.filter(bufferedImage4, bufferedImage2);
-                if (stringArray != null) {
-                    bufferedImage4 = bufferedImage3;
-                    if (stringArray != null) continue;
-                }
-                break block2;
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      com.ky_4[] var2 = com.Ch_2.O();
+      Object var10000 = this;
+      if (var2 != null) {
+         if (this.e > 0) {
+            this.e -= 5;
+            Point var3 = this.f.getLocation();
+            var3.y = var3.y + (a(16103, 1788404574236451756L) - this.e) / 2;
+            this.S.V(this.I, var3, this.e);
+            if (var2 != null) {
+               return;
             }
-            bufferedImage3 = bufferedImage4;
-        }
-        return bufferedImage3;
-    }
+         }
+
+         this.S.K();
+         var10000 = var1.getSource();
+      }
+
+      ((com.WC)var10000).Y();
+   }
+
+   static {
+      long var0 = 2383622583092413208L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "\u001d\u0084;x2µ#k\u009cýÇ\u008a\u001dÞ Ð";
+      int var5 = "\u001d\u0084;x2µ#k\u009cýÇ\u008a\u001dÞ Ð".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 7498;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

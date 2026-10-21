@@ -1,84 +1,83 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.cl_2;
-import com.ky_2;
 import java.lang.ref.WeakReference;
 import javax.swing.JComponent;
 
 public class aS {
-    private WeakReference D;
-    private String p;
-    private String Q;
-    private Object G;
-    private boolean I;
-    private boolean v;
+   private WeakReference D;
+   private String p;
+   private String Q;
+   private Object G;
+   private boolean I;
+   private boolean v;
 
-    public aS() {
-    }
+   public aS() {
+   }
 
-    public aS(JComponent jComponent, String string, String string2, Object object, boolean bl, boolean bl2) {
-        String string3 = cl_2.I();
-        this.p(jComponent);
-        this.b(string);
-        this.h(string2);
-        String string4 = string3;
-        this.M(object);
-        this.O(bl);
-        this.e(bl2);
-        if (ky_2.F() != null) {
-            cl_2.A("Zjt7g");
-        }
-    }
+   public aS(JComponent var1, String var2, String var3, Object var4, boolean var5, boolean var6) {
+      com.cl_4.I();
+      super();
+      this.p(var1);
+      this.b(var2);
+      this.h(var3);
+      this.M(var4);
+      this.O(var5);
+      this.e(var6);
+      if (com.ky_4.F() != null) {
+         com.cl_4.A("Zjt7g");
+      }
+   }
 
-    public JComponent l() {
-        return (JComponent)this.D.get();
-    }
+   public JComponent l() {
+      return (JComponent)this.D.get();
+   }
 
-    public void p(JComponent jComponent) {
-        this.D = new WeakReference<JComponent>(jComponent);
-    }
+   public void p(JComponent var1) {
+      this.D = new WeakReference(var1);
+   }
 
-    public String d() {
-        return this.p;
-    }
+   public String d() {
+      return this.p;
+   }
 
-    public void b(String string) {
-        this.p = string;
-    }
+   public void b(String var1) {
+      this.p = var1;
+   }
 
-    public String N() {
-        return this.Q;
-    }
+   public String N() {
+      return this.Q;
+   }
 
-    public void h(String string) {
-        this.Q = string;
-    }
+   public void h(String var1) {
+      this.Q = var1;
+   }
 
-    public Object L() {
-        return this.G;
-    }
+   public Object L() {
+      return this.G;
+   }
 
-    public void M(Object object) {
-        this.G = object;
-    }
+   public void M(Object var1) {
+      this.G = var1;
+   }
 
-    public boolean G() {
-        return this.I;
-    }
+   public boolean G() {
+      return this.I;
+   }
 
-    public void O(boolean bl) {
-        this.I = bl;
-    }
+   public void O(boolean var1) {
+      this.I = var1;
+   }
 
-    public boolean V() {
-        return this.v;
-    }
+   public boolean V() {
+      return this.v;
+   }
 
-    public void e(boolean bl) {
-        this.v = bl;
-    }
+   public void e(boolean var1) {
+      this.v = var1;
+   }
 }
+
+
+
+
 

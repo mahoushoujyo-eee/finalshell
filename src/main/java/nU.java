@@ -1,24 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
-public class nU
-extends Exception {
-    private static final long serialVersionUID;
+public class nU extends Exception {
+   private static final long serialVersionUID;
 
-    nU() {
-    }
+   nU() {
+   }
 
-    nU(String string) {
-        super(string);
-    }
+   nU(String var1) {
+      super(var1);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2;
-        long l3 = 3243848398434462744L;
-        serialVersionUID = l2 = 0xC134ED82B163BE5AL ^ l3;
-    }
+   static {
+      long var2 = 3243848398434462744L;
+      long var10002 = -4524730580022870438L ^ var2;
+      byte var10001 = -1;
+      long var0 = var10002;
+      serialVersionUID = var0;
+   }
 }
+
+
+
+
 

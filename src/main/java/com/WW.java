@@ -1,199 +1,216 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.W5;
 import java.awt.image.BufferedImage;
 import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
 
-public class WW
-extends W5 {
-    private BufferedImage o;
-    private BufferedImage t;
-    private static final String a;
+public class WW extends com.W5 {
+   private BufferedImage o;
+   private BufferedImage t;
+   private static final String a;
 
-    public WW() {
-    }
+   public WW() {
+   }
 
-    public WW(BufferedImage bufferedImage, BufferedImage bufferedImage2) {
-        this.t = bufferedImage;
-        this.o = bufferedImage2;
-    }
+   public WW(BufferedImage var1, BufferedImage var2) {
+      this.t = var1;
+      this.o = var2;
+   }
 
-    public void s(BufferedImage bufferedImage) {
-        this.o = bufferedImage;
-    }
+   public void s(BufferedImage var1) {
+      this.o = var1;
+   }
 
-    public BufferedImage m() {
-        return this.o;
-    }
+   public BufferedImage m() {
+      return this.o;
+   }
 
-    public void w(BufferedImage bufferedImage) {
-        this.t = bufferedImage;
-    }
+   public void w(BufferedImage var1) {
+      this.t = var1;
+   }
 
-    public BufferedImage h() {
-        return this.t;
-    }
+   public BufferedImage h() {
+      return this.t;
+   }
 
-    public static void m(Raster raster, WritableRaster writableRaster, Raster raster2) {
-        int n10 = raster.getMinX();
-        int n11 = raster.getMinY();
-        int n12 = raster.getWidth();
-        int n13 = raster.getHeight();
-        int[] nArray = null;
-        int[] nArray2 = null;
-        int[] nArray3 = null;
-        int n14 = 0;
-        String[] stringArray = W5.q();
-        while (n14 < n13) {
-            block3: {
-                nArray = raster.getPixels(n10, n11, n12, 1, nArray);
-                nArray2 = raster2.getPixels(n10, n11, n12, 1, nArray2);
-                nArray3 = writableRaster.getPixels(n10, n11, n12, 1, nArray3);
-                int n15 = n10;
-                for (int i2 = 0; i2 < n12; ++i2) {
-                    int n16 = nArray[n15];
-                    int n17 = nArray3[n15];
-                    int n18 = nArray[n15 + 1];
-                    int n19 = nArray3[n15 + 1];
-                    int n20 = nArray[n15 + 2];
-                    int n21 = nArray3[n15 + 2];
-                    int n22 = nArray[n15 + 3];
-                    int n23 = nArray3[n15 + 3];
-                    float f10 = (float)nArray2[n15 + 3] / 255.0f;
-                    float f11 = 1.0f - f10;
-                    nArray3[n15] = (int)(f10 * (float)n16 + f11 * (float)n17);
-                    nArray3[n15 + 1] = (int)(f10 * (float)n18 + f11 * (float)n19);
-                    nArray3[n15 + 2] = (int)(f10 * (float)n20 + f11 * (float)n21);
-                    nArray3[n15 + 3] = (int)(f10 * (float)n22 + f11 * (float)n23);
-                    n15 += 4;
-                    if (stringArray != null) {
-                        if (stringArray != null) continue;
-                    }
-                    break block3;
-                }
-                writableRaster.setPixels(n10, n11, n12, 1, nArray3);
-                ++n11;
-                ++n14;
+   public static void m(Raster var0, WritableRaster var1, Raster var2) {
+      int var4 = var0.getMinX();
+      int var5 = var0.getMinY();
+      int var6 = var0.getWidth();
+      String[] var10000 = com.W5.q();
+      int var7 = var0.getHeight();
+      int[] var8 = null;
+      int[] var9 = null;
+      int[] var10 = null;
+      int var11 = 0;
+      String[] var3 = var10000;
+
+      while (var11 < var7) {
+         var8 = var0.getPixels(var4, var5, var6, 1, var8);
+         var9 = var2.getPixels(var4, var5, var6, 1, var9);
+         var10 = var1.getPixels(var4, var5, var6, 1, var10);
+         int var12 = var4;
+         int var13 = 0;
+
+         while (true) {
+            if (var13 < var6) {
+               int var14 = var8[var12];
+               int var15 = var10[var12];
+               int var16 = var8[var12 + 1];
+               int var17 = var10[var12 + 1];
+               int var18 = var8[var12 + 2];
+               int var19 = var10[var12 + 2];
+               int var20 = var8[var12 + 3];
+               int var21 = var10[var12 + 3];
+               float var22 = (float)var9[var12 + 3] / 255.0F;
+               float var23 = 1.0F - var22;
+               var10[var12] = (int)(var22 * (float)var14 + var23 * (float)var15);
+               var10[var12 + 1] = (int)(var22 * (float)var16 + var23 * (float)var17);
+               var10[var12 + 2] = (int)(var22 * (float)var18 + var23 * (float)var19);
+               var10[var12 + 3] = (int)(var22 * (float)var20 + var23 * (float)var21);
+               var12 += 4;
+               var13++;
+               if (var3 == null) {
+                  break;
+               }
+
+               if (var3 != null) {
+                  continue;
+               }
             }
-            if (stringArray != null) continue;
-        }
-    }
 
-    @Override
-    public BufferedImage filter(BufferedImage bufferedImage, BufferedImage bufferedImage2) {
-        BufferedImage bufferedImage3;
-        block6: {
-            block7: {
-                int n10 = bufferedImage.getWidth();
-                int n11 = bufferedImage.getHeight();
-                int n12 = bufferedImage.getType();
-                WritableRaster writableRaster = bufferedImage.getRaster();
-                String[] stringArray = W5.q();
-                BufferedImage bufferedImage4 = bufferedImage2;
-                if (stringArray != null) {
-                    if (bufferedImage4 == null) {
-                        bufferedImage2 = this.createCompatibleDestImage(bufferedImage, null);
-                    }
-                    bufferedImage4 = bufferedImage2;
-                }
-                WritableRaster writableRaster2 = bufferedImage4.getRaster();
-                bufferedImage3 = this.o;
-                if (stringArray == null) break block6;
-                if (bufferedImage3 == null) break block7;
-                bufferedImage3 = this.t;
-                if (stringArray == null) break block6;
-                if (bufferedImage3 != null) {
-                    WW.m(bufferedImage.getRaster(), bufferedImage2.getRaster(), this.t.getRaster());
-                }
+            var1.setPixels(var4, var5, var6, 1, var10);
+            var5++;
+            var11++;
+            break;
+         }
+
+         if (var3 == null) {
+            break;
+         }
+      }
+   }
+
+   @Override
+   public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      int var4 = var1.getWidth();
+      int var5 = var1.getHeight();
+      String[] var10000 = com.W5.q();
+      int var6 = var1.getType();
+      WritableRaster var7 = var1.getRaster();
+      String[] var3 = var10000;
+      BufferedImage var9 = var2;
+      if (var3 != null) {
+         if (var2 == null) {
+            var2 = this.createCompatibleDestImage(var1, null);
+         }
+
+         var9 = var2;
+      }
+
+      WritableRaster var8 = var9.getRaster();
+      BufferedImage var10 = this.o;
+      if (var3 != null) {
+         if (this.o != null) {
+            if (var3 == null) {
+               return this.t;
             }
-            bufferedImage3 = bufferedImage2;
-        }
-        return bufferedImage3;
-    }
 
-    public String toString() {
-        return a;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "Bz\u007f\u007f%\u00055Bz\u007f8eL".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 50;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+            if (this.t != null) {
+               m(var1.getRaster(), var2.getRaster(), this.t.getRaster());
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 59;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 45;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 52;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 36;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 121;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 80;
-                            break;
-                        }
-                        default: {
-                            n17 = 40;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+         }
+
+         var10 = var2;
+      }
+
+      return var10;
+   }
+
+   @Override
+   public String toString() {
+      return a;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "Bz\u007f\u007f%\u00055Bz\u007f8eL".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 50;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 50;
+         var10006 = var0;
+      } else {
+         var6 = 50;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 50;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 59;
+               break;
+            case 1:
+               var23 = 45;
+               break;
+            case 2:
+               var23 = 52;
+               break;
+            case 3:
+               var23 = 36;
+               break;
+            case 4:
+               var23 = 121;
+               break;
+            case 5:
+               var23 = 80;
+               break;
+            default:
+               var23 = 40;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
+            }
+
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

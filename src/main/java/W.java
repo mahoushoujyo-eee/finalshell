@@ -1,61 +1,74 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class W
-extends Thread {
-    private final mm_0 v;
-    private static final long[] a;
-    private static final Integer[] b;
-    private static final long c;
+class W extends Thread {
+   private final mm_2 v;
+   private static final long[] a;
+   private static final Integer[] b;
+   private static final long c;
 
-    W(mm_0 mm_02) {
-        this.v = mm_02;
-    }
+   W(mm_2 var1) {
+      this.v = var1;
+   }
 
-    @Override
-    public void run() {
-        while (true) {
-            this.v.i(W.a(9389, 4923485583310961952L));
-            this.v.l(W.a(16516, 5369247535158581512L));
-            try {
-                Thread.sleep(c);
-                continue;
-            }
-            catch (InterruptedException interruptedException) {
-                interruptedException.printStackTrace();
-                continue;
-            }
-            break;
-        }
-    }
+   @Override
+   public void run() {
+      while (true) {
+         this.v.i(a(9389, 4923485583310961952L));
+         this.v.l(a(16516, 5369247535158581512L));
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 1302708350702169860L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = ",s\u009cyE\u00cd\u00db|\u0082\u00f1\u00ac\u0014\u00ab\u0088\u0016\u0094";
-        int n11 = ",s\u009cyE\u00cd\u00db|\u0082\u00f1\u00ac\u0014\u00ab\u0088\u0016\u0094".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-        long l3 = 1577382990763278165L;
-        c = 0x15E3FD7907303F5FL ^ l3;
-    }
+         try {
+            Thread.sleep(c);
+         } catch (InterruptedException var2) {
+            var2.printStackTrace();
+         }
+      }
+   }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x198C;
-        if (b[n11] == null) {
-            W.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+   static {
+      long var2 = 1302708350702169860L;
+      long[] var8 = new long[2];
+      int var5 = 0;
+      String var6 = ",s\u009cyEÍÛ|\u0082ñ¬\u0014«\u0088\u0016\u0094";
+      int var7 = ",s\u009cyEÍÛ|\u0082ñ¬\u0014«\u0088\u0016\u0094".length();
+      byte var4 = 0;
+
+      do {
+         int var10001 = var4;
+         var4 += 8;
+         byte[] var9 = var6.substring(var10001, var4).getBytes("ISO-8859-1");
+         var10001 = var5++;
+         long var10004 = (
+               ((long)var9[0] & 255L) << 56
+                  | ((long)var9[1] & 255L) << 48
+                  | ((long)var9[2] & 255L) << 40
+                  | ((long)var9[3] & 255L) << 32
+                  | ((long)var9[4] & 255L) << 24
+                  | ((long)var9[5] & 255L) << 16
+                  | ((long)var9[6] & 255L) << 8
+                  | (long)var9[7] & 255L
+            )
+            ^ var2;
+         byte var10003 = -1;
+         var8[var10001] = var10004;
+      } while (var4 < var7);
+
+      a = var8;
+      b = new Integer[2];
+      long var0 = 1577382990763278165L;
+      long var10002 = 1577382990763278175L ^ var0;
+      byte var11 = -1;
+      c = var10002;
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 6540;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

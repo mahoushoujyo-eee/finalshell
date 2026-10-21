@@ -1,32 +1,28 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
 import org.I;
-import org.v.fr_0;
-import org.v.fu_0;
-import org.v.hj_0;
 
-public class N9
-extends fr_0
-implements fu_0 {
-    public final String P;
+public class N9 extends fr_2 implements fu_2 {
+   public final String P;
 
-    public N9(String string, I i2) {
-        super(i2);
-        this.P = string;
-    }
+   public N9(String var1, I var2) {
+      super(var2);
+      this.P = var1;
+   }
 
-    @Override
-    @c
-    public Object i(hj_0 hj_02) throws Throwable {
-        return hj_02.H(this);
-    }
+   @org.F.c
+   @Override
+   public Object i(hj_2 var1) throws Throwable {
+      return var1.H(this);
+   }
 
-    public String toString() {
-        return this.P;
-    }
+   @Override
+   public String toString() {
+      return this.P;
+   }
 }
+
+
+
+
 

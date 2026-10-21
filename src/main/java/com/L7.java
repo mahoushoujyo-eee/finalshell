@@ -1,8 +1,10 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
+// $VF: synthetic class
 class L7 {
 }
+
+
+
+
 

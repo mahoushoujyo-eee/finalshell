@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.i1_0;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-class YC
-implements PropertyChangeListener {
-    final i1_0 C;
+class YC implements PropertyChangeListener {
+   final i1_2 C;
 
-    YC(i1_0 i1_02) {
-        this.C = i1_02;
-    }
+   YC(i1_2 var1) {
+      this.C = var1;
+   }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent propertyChangeEvent) {
-        this.C.h();
-    }
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      this.C.h();
+   }
 }
+
+
+
+
 

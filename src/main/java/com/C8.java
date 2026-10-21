@@ -1,29 +1,28 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ls_1;
-
 public class C8 {
-    public String y;
-    public ls_1 u;
+   public String y;
+   public com.lS_3 u;
 
-    public C8(String string) {
-        this(string, null);
-    }
+   public C8(String var1) {
+      this(var1, null);
+   }
 
-    public C8(String string, ls_1 ls_12) {
-        this.y = string;
-        this.u = ls_12;
-    }
+   public C8(String var1, com.lS_3 var2) {
+      this.y = var1;
+      this.u = var2;
+   }
 
-    public String K() {
-        return this.y;
-    }
+   public String K() {
+      return this.y;
+   }
 
-    public ls_1 h() {
-        return this.u;
-    }
+   public com.lS_3 h() {
+      return this.u;
+   }
 }
+
+
+
+
 

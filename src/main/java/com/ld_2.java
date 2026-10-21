@@ -1,17 +1,26 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.G9;
-import javax.swing.JComponent;
+import javax.swing.AbstractListModel;
 
-/*
- * Renamed from com.ld
- */
-public interface ld_2 {
-    public Class D();
+class Ld_2 extends AbstractListModel {
+   final No_2 o;
 
-    public void L(JComponent var1, String var2, G9 var3, Object[] var4);
+   Ld_2(No_2 var1) {
+      this.o = var1;
+   }
+
+   @Override
+   public int getSize() {
+      return this.o.M.size();
+   }
+
+   @Override
+   public Object getElementAt(int var1) {
+      return this.o.M.get(var1);
+   }
 }
+
+
+
+
 

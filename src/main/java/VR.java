@@ -1,25 +1,30 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class VR
-implements tk_2 {
-    final m6 i;
+class VR implements tk_4 {
+   final m6 i;
 
-    VR(m6 m62) {
-        this.i = m62;
-    }
+   VR(m6 var1) {
+      this.i = var1;
+   }
 
-    @Override
-    public void R(U u10) {
-        try {
-            u10.K();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void R(U var1) {
+      Object[] var10001 = com.c.f();
+      Method var10003 = com.c.d(176356587927714575L);
+      Object[] var10002 = var10001;
+      U var3 = var1;
+      Method var10000 = var10003;
+
+      try {
+         var10000.invoke(var3, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
 }
+
+
+
+
 

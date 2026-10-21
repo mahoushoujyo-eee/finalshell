@@ -1,16 +1,116 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import java.util.List;
+import java.awt.Component;
+import java.awt.event.FocusAdapter;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import javax.swing.JTextField;
 
-/*
- * Renamed from com.xq
- */
-public interface xq_2 {
-    public List f();
+class Xq_2 extends KeyAdapter {
+   final JTextField Y;
+   final FocusAdapter b;
+   final int Z;
+   final Component D;
+   final com.T5 R;
+   final X0 K;
+   private static final long[] a;
+   private static final Integer[] c;
 
-    public List i(Object var1);
+   Xq_2(X0 var1, JTextField var2, FocusAdapter var3, int var4, Component var5, com.T5 var6) {
+      this.K = var1;
+      this.Y = var2;
+      this.b = var3;
+      this.Z = var4;
+      this.D = var5;
+      this.R = var6;
+   }
+
+   @Override
+   public void keyPressed(KeyEvent var1) {
+      label27: {
+         String[] var2;
+         int var10000;
+         label30: {
+            var2 = com.Cn_2.Q();
+            var10000 = var1.getKeyCode();
+            int var10001 = a(24329, 730080405954399023L);
+            if (var2 != null) {
+               if (var10000 == var10001) {
+                  this.Y.removeFocusListener(this.b);
+                  X0.k(this.Z, this.D, null, this.R);
+                  if (var2 != null) {
+                     return;
+                  }
+               }
+
+               var10000 = var1.getKeyCode();
+               if (var2 == null) {
+                  break label30;
+               }
+
+               var10001 = a(29844, 4767306496160014515L);
+            }
+
+            if (var10000 != var10001) {
+               break label27;
+            }
+
+            this.Y.removeFocusListener(this.b);
+            var10000 = this.Z;
+         }
+
+         X0.k(var10000, this.D, this.Y.getText(), this.R);
+         if (var2 != null) {
+            return;
+         }
+      }
+
+      super.keyPressed(var1);
+   }
+
+   static {
+      long var0 = 911298554295336899L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "ú\u009aè®#{4÷\"\u008f\u009d-\n\u001e\u001fz";
+      int var5 = "ú\u009aè®#{4÷\"\u008f\u009d-\n\u001e\u001fz".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      c = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 21542;
+      if (c[var3] == null) {
+         c[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return c[var3];
+   }
 }
+
+
+
+
 

@@ -1,31 +1,38 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.G9;
-import com.e1_0;
-import com.k3_0;
-import javax.swing.JComponent;
+public interface Eh_2 extends nw_4 {
+   void p(String var1);
 
-/*
- * Renamed from com.eh
- */
-public class eh_2
-extends e1_0 {
-    public void T(k3_0 k3_02, String string, G9 g92, Object[] objectArray) {
-        String string2 = this.q(g92, objectArray);
-        String[] stringArray = e1_0.A();
-        String string3 = string2;
-        if (stringArray != null) {
-            string3 = string3 != null ? string2 : null;
-        }
-        k3_02.u(string3);
-    }
+   void a(String var1, Class var2);
 
-    @Override
-    public void L(JComponent jComponent, String string, G9 g92, Object[] objectArray) {
-        this.T((k3_0)jComponent, string, g92, objectArray);
-    }
+   void E(String var1, Object var2);
+
+   void I(String var1, String var2, Class var3);
+
+   void H(String var1, String var2, Object var3);
+
+   void n(String var1, String var2);
+
+   void S(String var1, boolean var2, boolean var3);
+
+   void O(String var1, Class var2, boolean var3, boolean var4);
+
+   void h(String var1, Object var2, boolean var3, boolean var4);
+
+   void e(String var1, String var2, Class var3, boolean var4, boolean var5);
+
+   void D(String var1, String var2, Object var3, boolean var4, boolean var5);
+
+   void z(IB var1);
+
+   void w();
+
+   void m();
+
+   void e();
 }
+
+
+
+
 

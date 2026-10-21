@@ -1,73 +1,69 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.NI;
-import com.oi_2;
-import com.ph_0;
-import com.xy_2;
 import java.util.AbstractSet;
 import java.util.Iterator;
-import java.util.Map;
+import java.util.Map.Entry;
 
-final class L6
-extends AbstractSet {
-    final xy_2 E;
+final class L6 extends AbstractSet {
+   final xy_4 E;
 
-    private L6(xy_2 xy_22) {
-        this.E = xy_22;
-    }
+   private L6(xy_4 var1) {
+      this.E = var1;
+   }
 
-    @Override
-    public Iterator iterator() {
-        return this.E.O();
-    }
+   @Override
+   public Iterator iterator() {
+      return this.E.O();
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    public boolean contains(Object object) {
-        NI nI2;
-        int n10 = ph_0.u();
-        Object object2 = object;
-        if (n10 == 0) {
-            if (!(object2 instanceof Map.Entry)) {
-                return false;
-            }
-            object2 = object;
-        }
-        Map.Entry entry = (Map.Entry)object2;
-        NI nI3 = nI2 = this.E.j(entry.getKey());
-        if (n10 == 0) {
-            if (nI3 == null) return false;
-            nI3 = nI2;
-        }
-        boolean bl = nI3.equals(entry);
-        if (n10 != 0) return bl;
-        if (!bl) return false;
-        return true;
-    }
+   @Override
+   public boolean contains(Object var1) {
+      int var2 = Ph_2.u();
+      NI var10000 = (NI)var1;
+      if (var2 == 0) {
+         if (!(var1 instanceof Entry)) {
+            return false;
+         }
 
-    @Override
-    public boolean remove(Object object) {
-        return this.E.H(object) != null;
-    }
+         var10000 = (NI)var1;
+      }
 
-    @Override
-    public int size() {
-        return this.E.t;
-    }
+      Entry var3 = var10000;
+      NI var4 = this.E.j(var3.getKey());
+      var10000 = var4;
+      if (var2 == 0) {
+         if (var4 == null) {
+            return false;
+         }
 
-    @Override
-    public void clear() {
-        this.E.clear();
-    }
+         var10000 = var4;
+      }
 
-    L6(xy_2 xy_22, oi_2 oi_22) {
-        this(xy_22);
-    }
+      boolean var6 = var10000.equals(var3);
+      return var2 != 0 ? var6 : var6;
+   }
+
+   @Override
+   public boolean remove(Object var1) {
+      return this.E.H(var1) != null;
+   }
+
+   @Override
+   public int size() {
+      return this.E.t;
+   }
+
+   @Override
+   public void clear() {
+      this.E.clear();
+   }
+
+   L6(xy_4 var1, com.oi_4 var2) {
+      this(var1);
+   }
 }
+
+
+
+
 

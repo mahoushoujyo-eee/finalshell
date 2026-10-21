@@ -1,42 +1,43 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FV;
-import com.cs_0;
-import com.sr_0;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-class W8
-extends KeyAdapter {
-    final cs_0 c;
-    final sr_0 V;
+class W8 extends KeyAdapter {
+   final com.Cs_2 c;
+   final Sr_2 V;
 
-    W8(cs_0 cs_02, sr_0 sr_02) {
-        this.c = cs_02;
-        this.V = sr_02;
-    }
+   W8(com.Cs_2 var1, Sr_2 var2) {
+      this.c = var1;
+      this.V = var2;
+   }
 
-    @Override
-    public void keyTyped(KeyEvent keyEvent) {
-        block4: {
-            W8 w8;
-            block2: {
-                block3: {
-                    String string = FV.D();
-                    w8 = this;
-                    if (string != null) break block2;
-                    if (w8.c == null) break block3;
-                    w8 = this;
-                    if (string != null) break block2;
-                    if (!w8.c.J(keyEvent)) break block4;
-                }
-                w8 = this;
+   @Override
+   public void keyTyped(KeyEvent var1) {
+      com.W8 var10000;
+      String var2 = com.FV.D();
+      var10000 = this;
+      label18:
+      if (var2 == null) {
+         if (this.c != null) {
+            var10000 = this;
+            if (var2 != null) {
+               break label18;
             }
-            w8.V.j(keyEvent);
-        }
-    }
+
+            if (!this.c.J(var1)) {
+               return;
+            }
+         }
+
+         var10000 = this;
+      }
+
+      var10000.V.j(var1);
+   }
 }
+
+
+
+
 

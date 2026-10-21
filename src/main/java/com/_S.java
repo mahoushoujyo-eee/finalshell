@@ -1,26 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.QR;
-import com._m_0;
-import com.em_1;
 import java.util.List;
 
-class _S
-extends _m_0 {
-    final em_1 M;
-    final QR k;
+class _S extends _m_2 {
+   final eM_3 M;
+   final com.QR k;
 
-    _S(QR qR, em_1 em_12) {
-        this.k = qR;
-        this.M = em_12;
-    }
+   _S(com.QR var1, eM_3 var2) {
+      this.k = var1;
+      this.M = var2;
+   }
 
-    @Override
-    public void p(List list) {
-        this.M.k(list);
-    }
+   @Override
+   public void p(List var1) {
+      this.M.k(var1);
+   }
 }
+
+
+
+
 

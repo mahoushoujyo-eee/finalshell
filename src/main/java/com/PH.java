@@ -1,43 +1,44 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.YM;
-import com.nx_2;
-import com.w6_0;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-class PH
-extends WindowAdapter {
-    final YM G;
+class PH extends WindowAdapter {
+   final com.YM G;
 
-    PH(YM yM) {
-        this.G = yM;
-    }
+   PH(com.YM var1) {
+      this.G = var1;
+   }
 
-    @Override
-    public void windowClosed(WindowEvent windowEvent) {
-        int n10 = nx_2.c();
-        YM yM = this.G;
-        if (n10 != 0) {
-            if (YM.q(yM) != null) {
-                YM yM2 = this.G;
-                if (n10 != 0) {
-                    if (YM.Z(yM2)) {
-                        this.G.O.T(YM.O(this.G));
-                    }
-                    YM.q(this.G).flush();
-                    yM2 = this.G;
-                }
-                YM.I(yM2, null);
+   @Override
+   public void windowClosed(WindowEvent var1) {
+      int var2 = nx_4.c();
+      com.YM var10000 = this.G;
+      if (var2 != 0) {
+         if (com.YM.q(this.G) != null) {
+            var10000 = this.G;
+            if (var2 != 0) {
+               if (com.YM.Z(this.G)) {
+                  this.G.O.T(com.YM.O(this.G));
+               }
+
+               com.YM.q(this.G).flush();
+               var10000 = this.G;
             }
-            w6_0.A(YM.l(this.G));
-            YM.E(this.G, null);
-            yM = this.G;
-        }
-        YM.W(yM, null);
-    }
+
+            com.YM.I(var10000, null);
+         }
+
+         w6_2.A(com.YM.l(this.G));
+         com.YM.E(this.G, null);
+         var10000 = this.G;
+      }
+
+      com.YM.W(var10000, null);
+   }
 }
+
+
+
+
 

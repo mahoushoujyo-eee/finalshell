@@ -1,30 +1,25 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.lang.reflect.InvocationTargetException;
+import java.io.IOException;
 
-/*
- * Renamed from cu
- */
-class cu_2
-implements ActionListener {
-    final zs_0 I;
+class Cu_2 implements Runnable {
+   final aU Y;
+   final DH q;
 
-    cu_2(zs_0 zs_02) {
-        this.I = zs_02;
-    }
+   Cu_2(DH var1, aU var2) {
+      this.q = var1;
+      this.Y = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        try {
-            this.I.k(this.I.V);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void run() {
+      try {
+         this.q.H(this.Y);
+      } catch (IOException var2) {
+         var2.printStackTrace();
+      }
+   }
 }
+
+
+
+
 

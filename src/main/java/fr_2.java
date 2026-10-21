@@ -1,266 +1,134 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import javax.swing.table.AbstractTableModel;
+public class Fr_2 {
+   int C;
+   int N;
+   int R;
+   int c;
+   int q;
+   int O;
+   boolean z = false;
+   int U;
 
-/*
- * Renamed from fr
- */
-public class fr_2
-extends AbstractTableModel {
-    private ArrayList M;
-    String[] p;
-    Class[] d;
+   Fr_2() {
+   }
 
-    fr_2() {
-        this.M = new ArrayList();
-        this.d = new Class[]{Object.class};
-        this.p = new String[]{""};
-    }
-
-    public synchronized int C() {
-        int n10;
-        block7: {
-            int n11 = 0;
-            int[] nArray = jx_0.O();
-            for (YI yI : (ArrayList)this.M) {
-                block9: {
-                    int n12;
-                    int n13;
-                    block8: {
-                        int n14;
-                        int n15;
-                        try {
-                            n15 = (Integer)yI.D();
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        n10 = n14 = n15;
-                        if (nArray != null) break block7;
-                        n13 = YI.e;
-                        if (nArray != null) break block8;
-                        if (n10 != n13) break block9;
-                        try {
-                            n12 = (Integer)yI.t();
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        n13 = YI.N;
-                    }
-                    if (n12 == n13) {
-                        ++n11;
-                    }
-                }
-                if (nArray == null) continue;
+   float m() {
+      com.ky_4[] var1;
+      int var2;
+      label23: {
+         com.ky_4[] var10000 = Qm_2.J();
+         var2 = this.R() - this.o();
+         var1 = var10000;
+         int var4 = var2;
+         if (var1 != null) {
+            if (var2 >= 0) {
+               break label23;
             }
-            n10 = n11;
-        }
-        return n10;
-    }
 
-    public synchronized YI O() {
-        YI yI = null;
-        int[] nArray = jx_0.O();
-        int n10 = 0;
-        while (n10 < ((ArrayList)this.M).size()) {
-            int n11;
-            YI yI2 = (YI)((ArrayList)this.M).get(((ArrayList)this.M).size() - 1 - n10);
-            try {
-                n11 = (Integer)yI2.D();
-            }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-            int n12 = n11;
-            if (nArray != null) continue;
-            if (n12 == YI.U) {
-                yI = yI2;
-                break;
-            }
-            ++n10;
-        }
-        return yI;
-    }
+            var4 = 0;
+         }
 
-    public synchronized void q(YI yI) {
-        block9: {
-            int n10;
-            block8: {
-                int n11;
-                int[] nArray;
-                block5: {
-                    n10 = -1;
-                    Iterator iterator = ((ArrayList)this.M).iterator();
-                    nArray = jx_0.O();
-                    while (iterator.hasNext()) {
-                        block7: {
-                            block6: {
-                                YI yI2 = (YI)iterator.next();
-                                if (nArray != null) break block6;
-                                n11 = yI2.equals(yI) ? 1 : 0;
-                                if (nArray != null) break block5;
-                                if (n11 == 0) break block7;
-                                ++n10;
-                            }
-                            if (nArray == null) break;
-                        }
-                        if (nArray == null) continue;
-                    }
-                    n11 = n10;
-                }
-                if (nArray != null) break block8;
-                if (n11 <= -1) break block9;
-                n11 = ((ArrayList)this.M).remove(yI) ? 1 : 0;
-            }
-            this.fireTableRowsDeleted(n10, n10);
-        }
-    }
+         var2 = var4;
+      }
 
-    public synchronized void O(YI yI) {
-        block3: {
-            int n10 = 0;
-            int[] nArray = jx_0.O();
-            for (YI yI2 : (ArrayList)this.M) {
-                if (nArray == null) {
-                    if (nArray == null) {
-                        if (yI2.equals(yI) && nArray == null) break;
-                        ++n10;
-                    }
-                    if (nArray == null) continue;
-                }
-                break block3;
-            }
-            this.fireTableCellUpdated(n10, 0);
-        }
-    }
+      float var3 = 0.0F;
+      int var5 = this.R();
+      if (var1 != null) {
+         if (var5 <= 0) {
+            return var3;
+         }
 
-    public synchronized void S(YI yI) {
-        ((ArrayList)this.M).add(yI);
-        this.fireTableRowsInserted(((ArrayList)this.M).size() - 1, ((ArrayList)this.M).size());
-    }
+         var5 = var2;
+      }
 
-    public synchronized void D(YI yI) {
-        ((ArrayList)this.M).add(0, yI);
-        this.fireTableDataChanged();
-    }
+      return (float)var5 / (float)this.R();
+   }
 
-    public void T(List list) {
-        block3: {
-            ArrayList arrayList;
-            block2: {
-                int[] nArray = jx_0.O();
-                arrayList = (ArrayList)this.M;
-                if (nArray != null) break block2;
-                arrayList.clear();
-                if (list == null) break block3;
-                arrayList = (ArrayList)this.M;
-            }
-            arrayList.addAll(list);
-        }
-    }
+   float y() {
+      com.ky_4[] var10000 = Qm_2.J();
+      float var2 = 0.0F;
+      com.ky_4[] var1 = var10000;
+      int var3 = this.Q();
+      if (var1 != null) {
+         if (var3 <= 0) {
+            return var2;
+         }
 
-    public int V(int n10) {
-        int n11;
-        block5: {
-            int n12 = -1;
-            int n13 = 0;
-            int[] nArray = jx_0.O();
-            for (YI yI : (ArrayList)this.M) {
-                if (nArray == null) {
-                    int n14;
-                    n11 = n10;
-                    if (nArray != null) break block5;
-                    try {
-                        n14 = (Integer)yI.B();
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    if (n11 == n14) {
-                        n12 = n13;
-                        if (nArray == null) break;
-                    }
-                    ++n13;
-                }
-                if (nArray == null) continue;
-            }
-            n11 = n12;
-        }
-        return n11;
-    }
+         var3 = this.u();
+      }
 
-    List y() {
-        return (ArrayList)this.M;
-    }
+      return (float)var3 / (float)this.Q();
+   }
 
-    public YI b(int n10) {
-        int[] nArray = jx_0.O();
-        int n11 = n10;
-        if (nArray == null) {
-            n11 = n11 > -1 ? 1 : 0;
-        }
-        int n12 = n10;
-        if (nArray == null) {
-            n12 = n12 < ((ArrayList)this.M).size() ? 1 : 0;
-        }
-        if ((n11 & n12) != 0) {
-            return (YI)((ArrayList)this.M).get(n10);
-        }
-        return null;
-    }
+   void h(int var1) {
+      this.U += var1;
+   }
 
-    @Override
-    public synchronized Object getValueAt(int n10, int n11) {
-        YI yI = null;
-        if (n10 < ((ArrayList)this.M).size()) {
-            yI = (YI)((ArrayList)this.M).get(n10);
-        }
-        return yI;
-    }
+   void A(int var1) {
+      this.R++;
+      this.C += var1;
+   }
 
-    @Override
-    public void setValueAt(Object object, int n10, int n11) {
-        this.fireTableCellUpdated(n10, n11);
-    }
+   void q(int var1) {
+      this.N += var1;
+   }
 
-    @Override
-    public synchronized int getRowCount() {
-        return ((ArrayList)this.M).size();
-    }
+   public int R() {
+      return this.C;
+   }
 
-    @Override
-    public int getColumnCount() {
-        return ((String[])this.p).length;
-    }
+   public int y$int() {
+      return this.R;
+   }
 
-    @Override
-    public String getColumnName(int n10) {
-        return ((String[])this.p)[n10];
-    }
+   public int o() {
+      return this.c;
+   }
 
-    public Class getColumnClass(int n10) {
-        return ((Class[])this.d)[n10];
-    }
+   public void C(int var1) {
+      if (var1 > this.c) {
+         this.c = var1;
+      }
+   }
 
-    @Override
-    public boolean isCellEditable(int n10, int n11) {
-        boolean bl = false;
-        int[] nArray = jx_0.O();
-        boolean bl2 = n11;
-        if (nArray == null) {
-            if (!bl2) {
-                bl = true;
-            }
-            bl2 = false;
-        }
-        return bl2;
-    }
+   public int G() {
+      return this.q;
+   }
+
+   public void H(int var1) {
+      this.q = var1;
+   }
+
+   public int z() {
+      return this.O;
+   }
+
+   public void g(int var1) {
+      this.O = var1;
+      this.z = true;
+   }
+
+   public boolean x() {
+      return this.z;
+   }
+
+   public int u() {
+      return this.U;
+   }
+
+   public void c(int var1) {
+      this.U = var1;
+   }
+
+   public int Q() {
+      return this.N;
+   }
+
+   public void D(int var1) {
+      this.N = var1;
+   }
 }
+
+
+
+
 

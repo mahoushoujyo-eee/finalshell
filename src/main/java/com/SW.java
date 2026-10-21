@@ -1,171 +1,182 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.DA;
-import com.EE;
-import com.dn_2;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import javax.swing.ImageIcon;
 
-public class SW
-extends Authenticator {
-    public static final ImageIcon k;
-    private DA w = null;
-    private static int[] e;
+public class SW extends Authenticator {
+   public static final ImageIcon k;
+   private com.DA w = null;
+   private static int[] e;
 
-    @Override
-    protected PasswordAuthentication getPasswordAuthentication() {
-        return this.D();
-    }
+   @Override
+   protected PasswordAuthentication getPasswordAuthentication() {
+      return this.D();
+   }
 
-    private PasswordAuthentication D() {
-        PasswordAuthentication passwordAuthentication;
-        block3: {
-            block8: {
-                block9: {
-                    dn_2 dn_22;
-                    int[] nArray;
-                    block7: {
-                        SW sW;
-                        dn_2 dn_23;
-                        block6: {
-                            int n10;
-                            block4: {
-                                block5: {
-                                    block2: {
-                                        dn_23 = EE.S().C();
-                                        nArray = SW.P();
-                                        if (this.w == null) break block2;
-                                        passwordAuthentication = null;
-                                        if (nArray != null) break block3;
-                                    }
-                                    n10 = dn_23.M();
-                                    if (nArray == null) break block4;
-                                    if (n10 == 0) break block5;
-                                    passwordAuthentication = this.Q(dn_23);
-                                    if (nArray != null) break block3;
-                                }
-                                this.w = new DA(this, dn_23);
-                                this.w.setVisible(true);
-                                sW = this;
-                                if (nArray == null) break block6;
-                                n10 = sW.w.i();
-                            }
-                            if (n10 != 0) break block7;
-                            dn_23.F(true);
-                            dn_23.w(this.w.p());
-                            dn_23.v(new String(this.w.p()));
-                            EE.f(dn_23, this.w.Y());
-                            sW = this;
-                        }
-                        passwordAuthentication = sW.Q(dn_23);
-                        if (nArray != null) break block8;
-                    }
-                    if (!(dn_22 = EE.S()).M()) break block9;
-                    passwordAuthentication = this.Q(dn_22);
-                    if (nArray != null) break block8;
-                }
-                passwordAuthentication = null;
+   private PasswordAuthentication D() {
+      int[] var10000 = P();
+      com.dn_4 var2 = EE.S().C();
+      int[] var1 = var10000;
+      if (this.w != null) {
+         Object var3 = null;
+         if (var1 != null) {
+            return (PasswordAuthentication)var3;
+         }
+      }
+
+      PasswordAuthentication var8;
+      label46: {
+         label37: {
+            label47: {
+               int var5 = var2.M();
+               if (var1 != null) {
+                  if (var5 != 0) {
+                     var8 = this.Q(var2);
+                     if (var1 != null) {
+                        return var8;
+                     }
+                  }
+
+                  this.w = new com.DA(this, var2);
+                  this.w.setVisible(true);
+                  var6 = this;
+                  if (var1 == null) {
+                     break label47;
+                  }
+
+                  var5 = this.w.i();
+               }
+
+               if (var5 != 0) {
+                  break label37;
+               }
+
+               var2.F(true);
+               var2.w(this.w.p());
+               var2.v(new String(this.w.p()));
+               EE.f(var2, this.w.Y());
+               var6 = this;
             }
-            this.w = null;
-        }
-        return passwordAuthentication;
-    }
 
-    private PasswordAuthentication Q(dn_2 dn_22) {
-        return new PasswordAuthentication(dn_22.t(), dn_22.X().toCharArray());
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block13: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block12: {
-                if (SW.P() == null) {
-                    SW.u(new int[3]);
-                }
-                char[] cArray3 = "\u0011<\u0002\u0016J\u0010l\r+\u0005VIQj".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 81;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block12;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block13;
+            var8 = var6.Q(var2);
+            if (var1 != null) {
+               break label46;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 41;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 14;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 60;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 41;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 104;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 110;
-                            break;
-                        }
-                        default: {
-                            n17 = 92;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        String string = new String(cArray).intern();
-        k = new ImageIcon(SW.class.getResource(string));
-    }
+         }
 
-    public static void u(int[] nArray) {
-        e = nArray;
-    }
+         com.dn_4 var4 = EE.S();
+         if (var4.M()) {
+            var8 = this.Q(var4);
+            if (var1 != null) {
+               break label46;
+            }
+         }
 
-    public static int[] P() {
-        return e;
-    }
+         var8 = null;
+      }
+
+      this.w = null;
+      return var8;
+   }
+
+   private PasswordAuthentication Q(com.dn_4 var1) {
+      return new PasswordAuthentication(var1.t(), var1.X().toCharArray());
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      if (P() == null) {
+         u(new int[3]);
+      }
+
+      char[] var10003 = "\u0011<\u0002\u0016J\u0010l\r+\u0005VIQj".toCharArray();
+      int var10004 = var10003.length;
+      int var1 = 0;
+      byte var8 = 81;
+      char[] var10002 = var10003;
+      int var3 = var10004;
+      byte var12;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var12 = 81;
+         var10006 = var1;
+      } else {
+         var8 = 81;
+         var3 = var10004;
+         if (var10004 <= var1) {
+            String var11 = new String(var10003).intern();
+            byte var6 = -1;
+            String var2 = var11;
+            k = new ImageIcon(SW.class.getResource(var2));
+            return;
+         }
+
+         var10005 = var10003;
+         var12 = 81;
+         var10006 = var1;
+      }
+
+      while (true) {
+         char var24 = var10005[var10006];
+         byte var25;
+         switch (var1 % 7) {
+            case 0:
+               var25 = 41;
+               break;
+            case 1:
+               var25 = 14;
+               break;
+            case 2:
+               var25 = 60;
+               break;
+            case 3:
+               var25 = 41;
+               break;
+            case 4:
+               var25 = 104;
+               break;
+            case 5:
+               var25 = 110;
+               break;
+            default:
+               var25 = 92;
+         }
+
+         var10005[var10006] = (char)(var24 ^ var12 ^ var25);
+         var1++;
+         if (var8 == 0) {
+            var10006 = var8;
+            var10005 = var10002;
+            var12 = var8;
+         } else {
+            if (var3 <= var1) {
+               String var10 = new String(var10002).intern();
+               byte var5 = -1;
+               String var0 = var10;
+               k = new ImageIcon(SW.class.getResource(var0));
+               return;
+            }
+
+            var10005 = var10002;
+            var12 = var8;
+            var10006 = var1;
+         }
+      }
+   }
+
+   public static void u(int[] var0) {
+      e = var0;
+   }
+
+   public static int[] P() {
+      return e;
+   }
 }
+
+
+
+
 

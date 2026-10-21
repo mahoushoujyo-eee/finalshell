@@ -1,14 +1,13 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ky_2;
+import java.io.File;
+import java.util.EventListener;
 
-/*
- * Renamed from com.kn
- */
-public class kn_2
-extends ky_2 {
+public interface Kn_2 extends EventListener {
+   void r(File var1);
 }
+
+
+
+
 

@@ -1,57 +1,48 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.A;
 
-import com.A.d;
-import com.O_;
-import com.a.y_0;
 import java.awt.Dimension;
 
-public class V
-extends O_ {
-    final d u;
+public class V extends com.O_ {
+   final com.A.d u;
 
-    public V(d d2) {
-        this.u = d2;
-    }
+   public V(com.A.d var1) {
+      this.u = var1;
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    @Override
-    public String getText() {
-        String string;
-        block5: {
-            int[] nArray;
-            String string2;
-            block4: {
-                string2 = this.u.i();
-                nArray = y_0.M();
-                string = string2;
-                if (nArray == null) break block4;
-                if (string == null) break block5;
-                string = string2;
-            }
-            if (nArray == null) return string;
-            if (!string.equals("")) {
-                string = string2;
-                return string;
-            }
-        }
-        string = this.u.s;
-        return string;
-    }
+   @Override
+   public String getText() {
+      int[] var10000 = com.A.y_2.M();
+      String var2 = this.u.i();
+      int[] var1 = var10000;
+      String var3 = var2;
+      if (var1 != null) {
+         if (var2 == null) {
+            return this.u.s;
+         }
 
-    @Override
-    public Dimension getPreferredSize() {
-        Dimension dimension = super.getPreferredSize();
-        dimension.width = Math.min(dimension.width, this.u.z);
-        return dimension;
-    }
+         var3 = var2;
+      }
 
-    public Dimension k() {
-        return super.getPreferredSize();
-    }
+      if (var1 == null) {
+         return var3;
+      } else {
+         return !var3.equals("") ? var2 : this.u.s;
+      }
+   }
+
+   @Override
+   public Dimension getPreferredSize() {
+      Dimension var1 = super.getPreferredSize();
+      var1.width = Math.min(var1.width, this.u.z);
+      return var1;
+   }
+
+   public Dimension k() {
+      return super.getPreferredSize();
+   }
 }
+
+
+
+
 

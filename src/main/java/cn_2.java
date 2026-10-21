@@ -1,118 +1,82 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
-import java.util.HashSet;
+import java.lang.reflect.Method;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- * Renamed from cn
- */
-public class cn_2 {
-    String n;
-    String O;
-    boolean g;
-    boolean t;
-    boolean L;
-    int A;
-    zh_0 r;
-    KV U;
-    HashSet N;
+class Cn_2 implements Runnable {
+   final org.icmp4j.j k;
+   final L9 X;
+   final dw_4 U;
 
-    public cn_2() {
-        this.N = new HashSet();
-    }
+   Cn_2(dw_4 var1, org.icmp4j.j var2, L9 var3) {
+      this.U = var1;
+      this.k = var2;
+      this.X = var3;
+   }
 
-    public void V(String string) {
-        ((HashSet)this.N).add(string);
-    }
+   @Override
+   public void run() {
+      int[] var1 = L9.X();
+      Cn_2 var10000 = this;
+      if (var1 == null) {
+         if (((org.icmp4j.j)com.c.c(549298689525284783L).get(this)).r() >= 0) {
+            return;
+         }
 
-    public int G() {
-        return ((HashSet)this.N).size();
-    }
+         var10000 = this;
+      }
 
-    public String B() {
-        return (String)this.n;
-    }
+      var10000 = (Cn_2)com.c.c(608283482680598697L).get(var10000);
+      Object[] var10001 = com.c.f();
+      Method var10003 = com.c.d(219753915081057422L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      Method var8 = var10003;
 
-    public void a(String string) {
-        block5: {
-            String string2;
-            cn_2 cn_22;
-            block4: {
-                int[] nArray = YQ.m();
-                cn_22 = this;
-                string2 = string;
-                if (nArray == null) break block4;
-                cn_22.n = string2;
-                if (string == null) break block5;
-                cn_22 = this;
-                string2 = string;
-            }
-            try {
-                cn_22.V(string2);
-            }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-        }
-    }
+      try {
+         var9 = (KV)var8.invoke(var10001, var10002);
+      } catch (InvocationTargetException var6) {
+         throw var6.getTargetException();
+      }
 
-    public String c() {
-        return (String)this.O;
-    }
+      KV var2 = var9;
+      var10001 = com.c.a(com.c.c(549298689525284783L).get(this));
+      var10003 = com.c.d(608917329576578057L);
+      var10002 = var10001;
+      KV var17 = var2;
+      Method var10 = var10003;
 
-    public void Q(String string) {
-        this.O = string;
-    }
+      try {
+         var10.invoke(var17, var10002);
+      } catch (InvocationTargetException var5) {
+         throw var5.getTargetException();
+      }
 
-    public boolean E() {
-        return this.g;
-    }
+      var10000 = (Cn_2)com.c.c(487072334706875582L).get(com.c.c(440131299031849072L).get(this));
+      var10001 = com.c.a(com.c.c(608283482680598697L).get(this));
+      var10003 = com.c.d(137222181119797019L);
+      var10002 = var10001;
+      var10001 = var10000;
+      Method var12 = var10003;
 
-    public void x(boolean bl) {
-        this.g = bl;
-    }
+      try {
+         var12.invoke(var10001, var10002);
+      } catch (InvocationTargetException var4) {
+         throw var4.getTargetException();
+      }
 
-    public boolean B() {
-        return this.L;
-    }
+      Object[] var13 = com.c.a(com.c.c(608283482680598697L).get(this), com.c.c(487072334706875582L).get(com.c.c(440131299031849072L).get(this)));
+      Method var14 = com.c.d(146445297662860567L);
+      var10002 = var13;
+      var10001 = null;
 
-    public void e(boolean bl) {
-        this.L = bl;
-    }
-
-    public int Y() {
-        return this.A;
-    }
-
-    public void n(int n10) {
-        this.A = n10;
-    }
-
-    public zh_0 W() {
-        return (zh_0)this.r;
-    }
-
-    public void n(zh_0 zh_02) {
-        this.r = zh_02;
-    }
-
-    public boolean a() {
-        return this.t;
-    }
-
-    public void L(boolean bl) {
-        this.t = bl;
-    }
-
-    public KV C() {
-        return (KV)this.U;
-    }
-
-    public void y(KV kV) {
-        this.U = kV;
-    }
+      try {
+         var14.invoke(var10001, var10002);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
+   }
 }
+
+
+
+
 

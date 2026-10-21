@@ -1,16 +1,16 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class FS
-extends Thread {
-    final xx_0 h;
+class FS extends Thread {
+   final xx_2 h;
 
-    FS(xx_0 xx_02) {
-        this.h = xx_02;
-    }
+   FS(xx_2 var1) {
+      this.h = var1;
+   }
 
-    @Override
-    public void run() {
-    }
+   @Override
+   public void run() {
+   }
 }
+
+
+
+
 

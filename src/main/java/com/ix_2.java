@@ -1,74 +1,78 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.rn_0;
-import com.up_0;
-import java.awt.Component;
-import java.awt.Point;
-import java.awt.dnd.DragSourceDragEvent;
-import java.awt.dnd.DragSourceDropEvent;
-import java.awt.image.BufferedImage;
-import java.lang.ref.WeakReference;
+import java.awt.event.AdjustmentListener;
+import java.io.Serializable;
 import javax.swing.JComponent;
+import javax.swing.JScrollBar;
 
-/*
- * Renamed from com.ix
- */
-public abstract class ix_2
-implements up_0 {
-    protected Point r;
-    protected WeakReference W;
+public class Ix_2 extends IB {
+   private AdjustmentListener U;
 
-    public BufferedImage H(JComponent jComponent, DragSourceDragEvent dragSourceDragEvent) {
-        block4: {
-            block3: {
-                WeakReference weakReference;
-                block2: {
-                    int n10 = rn_0.Y();
-                    weakReference = this.W;
-                    if (n10 == 0) break block2;
-                    if (weakReference == null) break block3;
-                    weakReference = this.W.get();
-                }
-                if (weakReference == jComponent) break block4;
-            }
-            Point point = jComponent.getLocationOnScreen();
-            Point point2 = dragSourceDragEvent.getLocation();
-            this.r = new Point(point.x - point2.x, point.y - point2.y);
-            this.W = new WeakReference<JComponent>(jComponent);
-        }
-        return FN.p((Component)jComponent, this.J());
-    }
+   public Ix_2(com.aS var1) {
+      super(var1);
+   }
 
-    public float J() {
-        return 0.8f;
-    }
+   public Integer n() {
+      String[] var10000 = IH.M();
+      Integer var2 = (Integer)super.Y();
+      String[] var1 = var10000;
+      Integer var3 = var2;
+      if (var1 != null) {
+         if (var2 == null) {
+            var2 = ((JScrollBar)this.b()).getMinimum();
+         }
 
-    public Point f(JComponent jComponent, DragSourceDragEvent dragSourceDragEvent) {
-        return this.r;
-    }
+         var3 = var2;
+      }
 
-    public void v(JComponent jComponent, DragSourceDropEvent dragSourceDropEvent) {
-        this.r = null;
-        this.W = null;
-    }
+      return var3;
+   }
 
-    @Override
-    public void v(Object object, DragSourceDropEvent dragSourceDropEvent) {
-        this.v((JComponent)object, dragSourceDropEvent);
-    }
+   protected void h(JScrollBar var1) {
+      this.U = new EL(this);
+      var1.addAdjustmentListener(this.U);
+   }
 
-    @Override
-    public Point e(Object object, DragSourceDragEvent dragSourceDragEvent) {
-        return this.f((JComponent)object, dragSourceDragEvent);
-    }
+   protected void g(JScrollBar var1) {
+      var1.removeAdjustmentListener(this.U);
+      this.U = null;
+   }
 
-    @Override
-    public BufferedImage u(Object object, DragSourceDragEvent dragSourceDragEvent) {
-        return this.H((JComponent)object, dragSourceDragEvent);
-    }
+   protected void m(JScrollBar var1) {
+      var1.setValue((Integer)this.o());
+   }
+
+   protected void F(JScrollBar var1) {
+      com.cl_4.A(this.M(), this.S(), var1.getValue());
+   }
+
+   @Override
+   protected void T(JComponent var1) {
+      this.F((JScrollBar)var1);
+   }
+
+   @Override
+   protected void s(JComponent var1) {
+      this.m((JScrollBar)var1);
+   }
+
+   @Override
+   protected void r(JComponent var1) {
+      this.g((JScrollBar)var1);
+   }
+
+   @Override
+   protected void F(JComponent var1) {
+      this.h((JScrollBar)var1);
+   }
+
+   @Override
+   public Serializable Y() {
+      return this.n();
+   }
 }
+
+
+
+
 

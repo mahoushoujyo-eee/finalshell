@@ -1,16 +1,17 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 class KE {
-    final KE O;
-    final boolean o;
-    Object t;
+   final com.KE O;
+   final boolean o;
+   Object t;
 
-    public KE(KE kE, boolean bl) {
-        this.O = kE;
-        this.o = bl;
-    }
+   public KE(com.KE var1, boolean var2) {
+      this.O = var1;
+      this.o = var2;
+   }
 }
+
+
+
+
 

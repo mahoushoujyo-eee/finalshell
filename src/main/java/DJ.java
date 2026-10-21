@@ -1,1082 +1,1208 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.invoke.LambdaMetafactory;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicReference;
-import org.pcap4j.core.BpfProgram;
 import org.pcap4j.core.NotOpenException;
-import org.pcap4j.core.PcapAddress;
-import org.pcap4j.core.PcapDumper;
-import org.pcap4j.core.PcapHandle;
 import org.pcap4j.core.PcapNativeException;
 import org.pcap4j.core.PcapNetworkInterface;
-import org.pcap4j.core.Pcaps;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
 public class DJ {
-    private static final int Y;
-    private static final boolean w;
-    private static final String Q;
-    private static final int P;
-    private static final int x;
-    private static final int I;
-    private static final boolean i;
-    private static final SimpleDateFormat D;
-    private static final String p;
-    private static final String[] a;
-    private static final String[] b;
+   private static final int Y;
+   private static final boolean w;
+   private static final String Q;
+   private static final int P;
+   private static final int x;
+   private static final int I;
+   private static final boolean i;
+   private static final SimpleDateFormat D;
+   private static final String p;
+   private static final String[] a;
+   private static final String[] b;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block29: {
-            block28: {
-                block27: {
-                    block26: {
-                        var13 = new String[53];
-                        var11_1 = 0;
-                        var10_2 = "`\u00df\u00c3q\u00e3\u001b\u00c9\u00b8]\u00d4\u001f1\u000f\u00e7\u0096#?M\u00c2\u0016\u00fa\u00f3\u00c15s8\"\u00d6auT\u0016\u00e0\u00b4\u0094\u00cb\u001d\u00d3U\u0098\u00f4\u0087x\u00faV\u00b9\u00a5\f:\u0080\u0010Hd\\\u007fE<\u00b5*\u00a5\u0013\u0090\u00da\u00f8\u00fe\u00bd>\\|\td\u00a4\nI\\`4\u0018\u00c4\u0092d\u008e\u0018]\u0097\u0088:\u00e4&\u00fb\u009c\u009d\u00d0wD@\u0000\t\u009f\u0003\u0094E\u0093\u001c\u0005\u0085&\r\u00ca\b\u0086\u00cf\u00dc\u0001\u0002\u009f,\u00cd\u0010M\u00a1\u0011\u0089\u00bda\u007f\u00b6\u009c\u0007\u0091nv\u008f\u001a(>\u00ff4y\n\u00cc\u00e8\u00f9N\u00ae8\u0016\u00ccV\u007f@\u0019\u00846\\\u00ee{\u00b6\u0098\u00fc\u001c\u00b0j~\u00c6\u00ce\f\u00b2\u00aa\u000f\u00bf\u00dd\r\ft\u0086\u00ef\u00e3\u00b3 \u00b1\u00ba\u0004tG\u0094\u009f\u00c6:\u001f\u00b5\\u\u008b:M\u0019X:\u00d8`\u00ee0\u008e\u00e7&>\u00d5]\u009fgtS\u009ap\u0007\u009bQ\u008d\u009a\u00851\u0015\u0004\u00d5\u00c1\b\u009e\u000bw\u00981\u00dd*C\u00dc\u00d7\u00f7\u00c4k\u0004\u00daAx\u00e0\u0005\u0082\u0013\u00a8\u00ed\u00af\u0005Z\u001c\u00b3\f\u00cc\u0015\fu\u0007\u00c9\u00f1D\n\u0012\u009b\u0081\u008b\u008fg\u00bd>DR~u\u000e\u0007\u0005\u00a34~\u00fa\u00a5\u0005\u0002\u0092\u0090\u00d0\u0084B\u008cj,\u00ae*\u0084R\u00a4\u00c5v\u00d1*\u00a4R\u00ac\u00c3\u00f0\u0098\u00ab o\\\u00a6\u00a6\u00ea\b\f\u0004\u00b0\u0015Q\u0090\u009d\u00ca\u00df\u00e5`\u00d9\u00f7\u0089\u00c2\u00d5\u00ee\u00ca\u00b8\u0007\u00bc\u00d3))\u008fs~\u00c2|8!\u0002.\u008c\u008d!\u00b3\u0095Q4\u0003\u000e>\u0095\u001e9E\u0002l\u00f2S\u00d3S\u001eO\u0007[V\u00a8\u00ca\u00ac\u00f3@\u009f\u00d6~\u00e3\u00abY\u00b1\u0099\u00e8\u00be$\u00b3\u0012rr\u00b5\u0080\u00ce\u00f5\u00be\u00b75\u00dby\u0098\u00ad\u00aaa\u00f2`j:\u00b7]\u00023\u009fU\u00bd\u00e6%hy(\u00bf\u00b8\"p!\u00ba\u00d8\u009fs\tn\u00f3\u00cd\u00e2#\u001f\u00ac\u00afNa5\u0085\u00c7\r\u0099\u008b\u001c\u0016\u00ea\u0006|\u00c2\u0096z\u00ae\u00dfq)r\u00e2\u00c9M\u00a1\u00c9\u009a?\u00034\u00b9V\u001cy\u00d2\u00a9=$\u00da\u00b0\u00c1\u00c4\u00f7t\u00c4t\u00d8U@\u0000O\u00fc\u00cd\u00f5\u000e\u00e7\u00ce\u00d0vD\u00d9\u0005rs\u00fa\u00b3z\u000f\u00a9\u00bb\u00a1\u00d6\u00f5\u0087\u0011\n`\u0089[\u00f2\u0018\u0081m\u001a\u00f4\u00f9*\u00fe\u00a5\u00ed\u0011\u00c6b\u00b8ef\u0005\u00a7@\u0091\u00eb\u00b7\u00b8GT=\u0093\u00d5@\u00fd \u00daL~M}w\"\u00d7 \u00df\u00c0I\u00ae\u00ea\u00d5\u00e4\u0010I\u00e3\u00f7\u00f1\u00c7Z\u00dd\u008f\t/\u00ac\u00dc\u00f1\u0089\u00cd\u0019rR[\b\u00cd\u00c5\u00ef\u00b1\u0003$\u000f\u00ae\u00c7_\u001a\u0005\u00b3\u00e9\u00cf\u0089Yb\u00caW\u0098Qn\u009e\u00f4\u00f5$\u008ah\u00ffJ\u00f5\u00c3\u00f2]\u00cd0a\u00cb\u00f5\u0018\u00b5\u0003\u008ai\u0084*\u00eby'\u0099\u00c7\u000f\u00d6\u0019\u008f\u00d3~\u00f5\u00d2\u0098\u00e5/\u00e9B\u00f5BcA\u00baO\u000f\u001a\u00e7\u00a8\u00009`\u00dd\u0018u\u00ff\u00fe\u0018\u00b8R\u00f5\u0087|\u0099\u00e1?\u00beM\u0003h=3\u0007\u0093(u\u00cd:<e\u0002m\u00dd\u0098\u00c7\u009d\u00d5\u008e\u0018_;\u00a8\u0010X\u00cc\u00f7\u00c9(^]8\u00ad\u00ecI\u00bd_\u0090-\u008b\u0089\u00de<\u00833\u0011&\u0016\u00bc\u00d2\u00f1[\u00b8F9\u0005i\u00c2\u008e\u0000\u0005I\u00fc\u00b6\u000b\u00e6\u001f\b\u00de\u00b9F+\u00d6\u000b\u0012\u00de\u0005\u0001\u00d7\u0094'\u00b7\u0017\u00d0\u00ac\u000f\u00d7G>\u00be\u00ce)\u00cbJSo\u00e0\u000f\u00f2\u0011\u0017\u009bV\u00d3\u0099\u009b\t\u00d3*\u0084\u00f5\u00a4\u00dc1\u00f6f\u0004huN\u00f6\u000b\u00c9\u001d\u00e6m\u00d0U\u0083\u0015\u001c\u009c\u0016\u0003Q\u00a7\u00fa\u0007\u0093#\u00a8\u00d4\u0001\u00f8\u00a1\u000f#\u001a\u00f0\u00e2\u00df\u0001T\u00da\u00c8\u0093N\u00b1\u00ba\u00e99\u0007/\bQ\u00dc\u000f\u0011\u0011\b\u008a\u00e7\u00cc\u00e0\u0087r8\u00f1A\u00bd\u0014\u0092\n\r\bM\u0017\u00c5=\u0012\u009aG\u0090\r\u009a\u00fc\u00dc5mD\u00f7\u000e\u00d7\u008a\u00c9\u0092B\u00a35\u00eau\u0003\u00f4\u00ba\u00fb\u00db\u00bcqk\u00d9\u000b:\u00e7o\u00d4\u0085\u0013\u00c3\u00a3\u0006\u00d95c\\rX\u0092\u00f6\\\u00d3\u00bf\u0096H\u0083\u0011]T-\u00ed\u00b4\u00c0\u00a2\u0082\u008b\u0092;\u00dd\u0093\u00deV?u#\u00e9\u001a\u00b8\u0082\u00bal\u001c~\u0090\f\u0018}\u00ef\u00d5\u0089\u00e6\u00a4V\u00dc\u00e3\u0088jA\u0091z}\u0088\ff>\u0019\u00c9\u0006 XL\u0082\u0097\u0087=gc\u00e9i\u00fa\u0086}[v\u009aq\u00bf\u000b\u00c5\u00bax\u00d8\u00cd1/A\u00edU\u008c0\u00ff\u00c44E\u0087\u00c9\u00b4\u001bQ\u007f\u0006\u009db\u0093\u0093IT!\u00d5dV\u00f5\u009e\u00e0\u00003\u0088\u00a1\u0098\u000b\u00b6\u00fcF\u00ae\u0003\u00f2\u009d\u008a\u00ed\u00f2d\u0091y\u001f(2x\u0013h\u001f\u00a0\u00afz\u0097\u00a0\u00a5W\u00da>\u00eeB\u00e9\u00fa'B4\u009a\f\u00c5U?zJ1u\u0088w;Q%\u0007\u00ea\u008a\u00a3\u00e1@^\u00ad\u0018\u0080\u0015\u00df(`0\u00b9\u00ddRh\u00df\u00b3\rV\u00c4\u0095W\u0017\u00deZH\u0090\u00c0\u00b5\u0006\u00c5\u00da\n\u00fd\u0094L3\r \u001aA<#\u0017 R\u00d7\u00e7V \u00bc F\u00bb\u000e)K\u00ad~' ,\u0000\u00f0\u00dc\u00d9\u00c6P\u0012U+N\u00c2\u00b8=f[+\u0016E<\u00ce\u00846P\u00bea\u0097";
-                        var12_3 = "`\u00df\u00c3q\u00e3\u001b\u00c9\u00b8]\u00d4\u001f1\u000f\u00e7\u0096#?M\u00c2\u0016\u00fa\u00f3\u00c15s8\"\u00d6auT\u0016\u00e0\u00b4\u0094\u00cb\u001d\u00d3U\u0098\u00f4\u0087x\u00faV\u00b9\u00a5\f:\u0080\u0010Hd\\\u007fE<\u00b5*\u00a5\u0013\u0090\u00da\u00f8\u00fe\u00bd>\\|\td\u00a4\nI\\`4\u0018\u00c4\u0092d\u008e\u0018]\u0097\u0088:\u00e4&\u00fb\u009c\u009d\u00d0wD@\u0000\t\u009f\u0003\u0094E\u0093\u001c\u0005\u0085&\r\u00ca\b\u0086\u00cf\u00dc\u0001\u0002\u009f,\u00cd\u0010M\u00a1\u0011\u0089\u00bda\u007f\u00b6\u009c\u0007\u0091nv\u008f\u001a(>\u00ff4y\n\u00cc\u00e8\u00f9N\u00ae8\u0016\u00ccV\u007f@\u0019\u00846\\\u00ee{\u00b6\u0098\u00fc\u001c\u00b0j~\u00c6\u00ce\f\u00b2\u00aa\u000f\u00bf\u00dd\r\ft\u0086\u00ef\u00e3\u00b3 \u00b1\u00ba\u0004tG\u0094\u009f\u00c6:\u001f\u00b5\\u\u008b:M\u0019X:\u00d8`\u00ee0\u008e\u00e7&>\u00d5]\u009fgtS\u009ap\u0007\u009bQ\u008d\u009a\u00851\u0015\u0004\u00d5\u00c1\b\u009e\u000bw\u00981\u00dd*C\u00dc\u00d7\u00f7\u00c4k\u0004\u00daAx\u00e0\u0005\u0082\u0013\u00a8\u00ed\u00af\u0005Z\u001c\u00b3\f\u00cc\u0015\fu\u0007\u00c9\u00f1D\n\u0012\u009b\u0081\u008b\u008fg\u00bd>DR~u\u000e\u0007\u0005\u00a34~\u00fa\u00a5\u0005\u0002\u0092\u0090\u00d0\u0084B\u008cj,\u00ae*\u0084R\u00a4\u00c5v\u00d1*\u00a4R\u00ac\u00c3\u00f0\u0098\u00ab o\\\u00a6\u00a6\u00ea\b\f\u0004\u00b0\u0015Q\u0090\u009d\u00ca\u00df\u00e5`\u00d9\u00f7\u0089\u00c2\u00d5\u00ee\u00ca\u00b8\u0007\u00bc\u00d3))\u008fs~\u00c2|8!\u0002.\u008c\u008d!\u00b3\u0095Q4\u0003\u000e>\u0095\u001e9E\u0002l\u00f2S\u00d3S\u001eO\u0007[V\u00a8\u00ca\u00ac\u00f3@\u009f\u00d6~\u00e3\u00abY\u00b1\u0099\u00e8\u00be$\u00b3\u0012rr\u00b5\u0080\u00ce\u00f5\u00be\u00b75\u00dby\u0098\u00ad\u00aaa\u00f2`j:\u00b7]\u00023\u009fU\u00bd\u00e6%hy(\u00bf\u00b8\"p!\u00ba\u00d8\u009fs\tn\u00f3\u00cd\u00e2#\u001f\u00ac\u00afNa5\u0085\u00c7\r\u0099\u008b\u001c\u0016\u00ea\u0006|\u00c2\u0096z\u00ae\u00dfq)r\u00e2\u00c9M\u00a1\u00c9\u009a?\u00034\u00b9V\u001cy\u00d2\u00a9=$\u00da\u00b0\u00c1\u00c4\u00f7t\u00c4t\u00d8U@\u0000O\u00fc\u00cd\u00f5\u000e\u00e7\u00ce\u00d0vD\u00d9\u0005rs\u00fa\u00b3z\u000f\u00a9\u00bb\u00a1\u00d6\u00f5\u0087\u0011\n`\u0089[\u00f2\u0018\u0081m\u001a\u00f4\u00f9*\u00fe\u00a5\u00ed\u0011\u00c6b\u00b8ef\u0005\u00a7@\u0091\u00eb\u00b7\u00b8GT=\u0093\u00d5@\u00fd \u00daL~M}w\"\u00d7 \u00df\u00c0I\u00ae\u00ea\u00d5\u00e4\u0010I\u00e3\u00f7\u00f1\u00c7Z\u00dd\u008f\t/\u00ac\u00dc\u00f1\u0089\u00cd\u0019rR[\b\u00cd\u00c5\u00ef\u00b1\u0003$\u000f\u00ae\u00c7_\u001a\u0005\u00b3\u00e9\u00cf\u0089Yb\u00caW\u0098Qn\u009e\u00f4\u00f5$\u008ah\u00ffJ\u00f5\u00c3\u00f2]\u00cd0a\u00cb\u00f5\u0018\u00b5\u0003\u008ai\u0084*\u00eby'\u0099\u00c7\u000f\u00d6\u0019\u008f\u00d3~\u00f5\u00d2\u0098\u00e5/\u00e9B\u00f5BcA\u00baO\u000f\u001a\u00e7\u00a8\u00009`\u00dd\u0018u\u00ff\u00fe\u0018\u00b8R\u00f5\u0087|\u0099\u00e1?\u00beM\u0003h=3\u0007\u0093(u\u00cd:<e\u0002m\u00dd\u0098\u00c7\u009d\u00d5\u008e\u0018_;\u00a8\u0010X\u00cc\u00f7\u00c9(^]8\u00ad\u00ecI\u00bd_\u0090-\u008b\u0089\u00de<\u00833\u0011&\u0016\u00bc\u00d2\u00f1[\u00b8F9\u0005i\u00c2\u008e\u0000\u0005I\u00fc\u00b6\u000b\u00e6\u001f\b\u00de\u00b9F+\u00d6\u000b\u0012\u00de\u0005\u0001\u00d7\u0094'\u00b7\u0017\u00d0\u00ac\u000f\u00d7G>\u00be\u00ce)\u00cbJSo\u00e0\u000f\u00f2\u0011\u0017\u009bV\u00d3\u0099\u009b\t\u00d3*\u0084\u00f5\u00a4\u00dc1\u00f6f\u0004huN\u00f6\u000b\u00c9\u001d\u00e6m\u00d0U\u0083\u0015\u001c\u009c\u0016\u0003Q\u00a7\u00fa\u0007\u0093#\u00a8\u00d4\u0001\u00f8\u00a1\u000f#\u001a\u00f0\u00e2\u00df\u0001T\u00da\u00c8\u0093N\u00b1\u00ba\u00e99\u0007/\bQ\u00dc\u000f\u0011\u0011\b\u008a\u00e7\u00cc\u00e0\u0087r8\u00f1A\u00bd\u0014\u0092\n\r\bM\u0017\u00c5=\u0012\u009aG\u0090\r\u009a\u00fc\u00dc5mD\u00f7\u000e\u00d7\u008a\u00c9\u0092B\u00a35\u00eau\u0003\u00f4\u00ba\u00fb\u00db\u00bcqk\u00d9\u000b:\u00e7o\u00d4\u0085\u0013\u00c3\u00a3\u0006\u00d95c\\rX\u0092\u00f6\\\u00d3\u00bf\u0096H\u0083\u0011]T-\u00ed\u00b4\u00c0\u00a2\u0082\u008b\u0092;\u00dd\u0093\u00deV?u#\u00e9\u001a\u00b8\u0082\u00bal\u001c~\u0090\f\u0018}\u00ef\u00d5\u0089\u00e6\u00a4V\u00dc\u00e3\u0088jA\u0091z}\u0088\ff>\u0019\u00c9\u0006 XL\u0082\u0097\u0087=gc\u00e9i\u00fa\u0086}[v\u009aq\u00bf\u000b\u00c5\u00bax\u00d8\u00cd1/A\u00edU\u008c0\u00ff\u00c44E\u0087\u00c9\u00b4\u001bQ\u007f\u0006\u009db\u0093\u0093IT!\u00d5dV\u00f5\u009e\u00e0\u00003\u0088\u00a1\u0098\u000b\u00b6\u00fcF\u00ae\u0003\u00f2\u009d\u008a\u00ed\u00f2d\u0091y\u001f(2x\u0013h\u001f\u00a0\u00afz\u0097\u00a0\u00a5W\u00da>\u00eeB\u00e9\u00fa'B4\u009a\f\u00c5U?zJ1u\u0088w;Q%\u0007\u00ea\u008a\u00a3\u00e1@^\u00ad\u0018\u0080\u0015\u00df(`0\u00b9\u00ddRh\u00df\u00b3\rV\u00c4\u0095W\u0017\u00deZH\u0090\u00c0\u00b5\u0006\u00c5\u00da\n\u00fd\u0094L3\r \u001aA<#\u0017 R\u00d7\u00e7V \u00bc F\u00bb\u000e)K\u00ad~' ,\u0000\u00f0\u00dc\u00d9\u00c6P\u0012U+N\u00c2\u00b8=f[+\u0016E<\u00ce\u00846P\u00bea\u0097".length();
-                        var9_4 = 25;
-                        var8_5 = -1;
-lbl7:
-                        // 2 sources
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var13 = new String[53];
+      int var11 = 0;
+      String var10 = "`ßÃqã\u001bÉ¸]Ô\u001f1\u000fç\u0096#?MÂ\u0016úóÁ5s8\"ÖauT\u0016à´\u0094Ë\u001dÓU\u0098ô\u0087xúV¹¥\f:\u0080\u0010Hd\\\u007fE<µ*¥\u0013\u0090Úøþ½>\\|\td¤\nI\\`4\u0018Ä\u0092d\u008e\u0018]\u0097\u0088:ä&û\u009c\u009dÐwD@\u0000\t\u009f\u0003\u0094E\u0093\u001c\u0005\u0085&\rÊ\b\u0086ÏÜ\u0001\u0002\u009f,Í\u0010M¡\u0011\u0089½a\u007f¶\u009c\u0007\u0091nv\u008f\u001a(>ÿ4y\nÌèùN®8\u0016ÌV\u007f@\u0019\u00846\\î{¶\u0098ü\u001c°j~ÆÎ\f²ª\u000f¿Ý\r\ft\u0086ïã³ ±º\u0004tG\u0094\u009fÆ:\u001fµ\\u\u008b:M\u0019X:Ø`î0\u008eç&>Õ]\u009fgtS\u009ap\u0007\u009bQ\u008d\u009a\u00851\u0015\u0004ÕÁ\b\u009e\u000bw\u00981Ý*CÜ×÷Äk\u0004ÚAxà\u0005\u0082\u0013¨í¯\u0005Z\u001c³\fÌ\u0015\fu\u0007ÉñD\n\u0012\u009b\u0081\u008b\u008fg½>DR~u\u000e\u0007\u0005£4~ú¥\u0005\u0002\u0092\u0090Ð\u0084B\u008cj,®*\u0084R¤ÅvÑ*¤R¬Ãð\u0098« o\\¦¦ê\b\f\u0004°\u0015Q\u0090\u009dÊßå`Ù÷\u0089ÂÕîÊ¸\u0007¼Ó))\u008fs~Â|8!\u0002.\u008c\u008d!³\u0095Q4\u0003\u000e>\u0095\u001e9E\u0002lòSÓS\u001eO\u0007[V¨Ê¬ó@\u009fÖ~ã«Y±\u0099è¾$³\u0012rrµ\u0080Îõ¾·5Ûy\u0098\u00adªaò`j:·]\u00023\u009fU½æ%hy(¿¸\"p!ºØ\u009fs\tnóÍâ#\u001f¬¯Na5\u0085Ç\r\u0099\u008b\u001c\u0016ê\u0006|Â\u0096z®ßq)râÉM¡É\u009a?\u00034¹V\u001cyÒ©=$Ú°ÁÄ÷tÄtØU@\u0000OüÍõ\u000eçÎÐvDÙ\u0005rsú³z\u000f©»¡Öõ\u0087\u0011\n`\u0089[ò\u0018\u0081m\u001aôù*þ¥í\u0011Æb¸ef\u0005§@\u0091ë·¸GT=\u0093Õ@ý ÚL~M}w\"× ßÀI®êÕä\u0010Iã÷ñÇZÝ\u008f\t/¬Üñ\u0089Í\u0019rR[\bÍÅï±\u0003$\u000f®Ç_\u001a\u0005³éÏ\u0089YbÊW\u0098Qn\u009eôõ$\u008ahÿJõÃò]Í0aËõ\u0018µ\u0003\u008ai\u0084*ëy'\u0099Ç\u000fÖ\u0019\u008fÓ~õÒ\u0098å/éBõBcAºO\u000f\u001aç¨\u00009`Ý\u0018uÿþ\u0018¸Rõ\u0087|\u0099á?¾M\u0003h=3\u0007\u0093(uÍ:<e\u0002mÝ\u0098Ç\u009dÕ\u008e\u0018_;¨\u0010XÌ÷É(^]8\u00adìI½_\u0090-\u008b\u0089Þ<\u00833\u0011&\u0016¼Òñ[¸F9\u0005iÂ\u008e\u0000\u0005Iü¶\u000bæ\u001f\bÞ¹F+Ö\u000b\u0012Þ\u0005\u0001×\u0094'·\u0017Ð¬\u000f×G>¾Î)ËJSoà\u000fò\u0011\u0017\u009bVÓ\u0099\u009b\tÓ*\u0084õ¤Ü1öf\u0004huNö\u000bÉ\u001dæmÐU\u0083\u0015\u001c\u009c\u0016\u0003Q§ú\u0007\u0093#¨Ô\u0001ø¡\u000f#\u001aðâß\u0001TÚÈ\u0093N±ºé9\u0007/\bQÜ\u000f\u0011\u0011\b\u008açÌà\u0087r8ñA½\u0014\u0092\n\r\bM\u0017Å=\u0012\u009aG\u0090\r\u009aüÜ5mD÷\u000e×\u008aÉ\u0092B£5êu\u0003ôºûÛ¼qkÙ\u000b:çoÔ\u0085\u0013Ã£\u0006Ù5c\\rX\u0092ö\\Ó¿\u0096H\u0083\u0011]T-í´À¢\u0082\u008b\u0092;Ý\u0093ÞV?u#é\u001a¸\u0082ºl\u001c~\u0090\f\u0018}ïÕ\u0089æ¤VÜã\u0088jA\u0091z}\u0088\ff>\u0019É\u0006 XL\u0082\u0097\u0087=gcéiú\u0086}[v\u009aq¿\u000bÅºxØÍ1/AíU\u008c0ÿÄ4E\u0087É´\u001bQ\u007f\u0006\u009db\u0093\u0093IT!ÕdVõ\u009eà\u00003\u0088¡\u0098\u000b¶üF®\u0003ò\u009d\u008aíòd\u0091y\u001f(2x\u0013h\u001f ¯z\u0097 ¥WÚ>îBéú'B4\u009a\fÅU?zJ1u\u0088w;Q%\u0007ê\u008a£á@^\u00ad\u0018\u0080\u0015ß(`0¹ÝRhß³\rVÄ\u0095W\u0017ÞZH\u0090Àµ\u0006ÅÚ\ný\u0094L3\r \u001aA<#\u0017 R×çV ¼ F»\u000e)K\u00ad~' ,\u0000ðÜÙÆP\u0012U+NÂ¸=f[+\u0016E<Î\u00846P¾a\u0097";
+      int var12 = "`ßÃqã\u001bÉ¸]Ô\u001f1\u000fç\u0096#?MÂ\u0016úóÁ5s8\"ÖauT\u0016à´\u0094Ë\u001dÓU\u0098ô\u0087xúV¹¥\f:\u0080\u0010Hd\\\u007fE<µ*¥\u0013\u0090Úøþ½>\\|\td¤\nI\\`4\u0018Ä\u0092d\u008e\u0018]\u0097\u0088:ä&û\u009c\u009dÐwD@\u0000\t\u009f\u0003\u0094E\u0093\u001c\u0005\u0085&\rÊ\b\u0086ÏÜ\u0001\u0002\u009f,Í\u0010M¡\u0011\u0089½a\u007f¶\u009c\u0007\u0091nv\u008f\u001a(>ÿ4y\nÌèùN®8\u0016ÌV\u007f@\u0019\u00846\\î{¶\u0098ü\u001c°j~ÆÎ\f²ª\u000f¿Ý\r\ft\u0086ïã³ ±º\u0004tG\u0094\u009fÆ:\u001fµ\\u\u008b:M\u0019X:Ø`î0\u008eç&>Õ]\u009fgtS\u009ap\u0007\u009bQ\u008d\u009a\u00851\u0015\u0004ÕÁ\b\u009e\u000bw\u00981Ý*CÜ×÷Äk\u0004ÚAxà\u0005\u0082\u0013¨í¯\u0005Z\u001c³\fÌ\u0015\fu\u0007ÉñD\n\u0012\u009b\u0081\u008b\u008fg½>DR~u\u000e\u0007\u0005£4~ú¥\u0005\u0002\u0092\u0090Ð\u0084B\u008cj,®*\u0084R¤ÅvÑ*¤R¬Ãð\u0098« o\\¦¦ê\b\f\u0004°\u0015Q\u0090\u009dÊßå`Ù÷\u0089ÂÕîÊ¸\u0007¼Ó))\u008fs~Â|8!\u0002.\u008c\u008d!³\u0095Q4\u0003\u000e>\u0095\u001e9E\u0002lòSÓS\u001eO\u0007[V¨Ê¬ó@\u009fÖ~ã«Y±\u0099è¾$³\u0012rrµ\u0080Îõ¾·5Ûy\u0098\u00adªaò`j:·]\u00023\u009fU½æ%hy(¿¸\"p!ºØ\u009fs\tnóÍâ#\u001f¬¯Na5\u0085Ç\r\u0099\u008b\u001c\u0016ê\u0006|Â\u0096z®ßq)râÉM¡É\u009a?\u00034¹V\u001cyÒ©=$Ú°ÁÄ÷tÄtØU@\u0000OüÍõ\u000eçÎÐvDÙ\u0005rsú³z\u000f©»¡Öõ\u0087\u0011\n`\u0089[ò\u0018\u0081m\u001aôù*þ¥í\u0011Æb¸ef\u0005§@\u0091ë·¸GT=\u0093Õ@ý ÚL~M}w\"× ßÀI®êÕä\u0010Iã÷ñÇZÝ\u008f\t/¬Üñ\u0089Í\u0019rR[\bÍÅï±\u0003$\u000f®Ç_\u001a\u0005³éÏ\u0089YbÊW\u0098Qn\u009eôõ$\u008ahÿJõÃò]Í0aËõ\u0018µ\u0003\u008ai\u0084*ëy'\u0099Ç\u000fÖ\u0019\u008fÓ~õÒ\u0098å/éBõBcAºO\u000f\u001aç¨\u00009`Ý\u0018uÿþ\u0018¸Rõ\u0087|\u0099á?¾M\u0003h=3\u0007\u0093(uÍ:<e\u0002mÝ\u0098Ç\u009dÕ\u008e\u0018_;¨\u0010XÌ÷É(^]8\u00adìI½_\u0090-\u008b\u0089Þ<\u00833\u0011&\u0016¼Òñ[¸F9\u0005iÂ\u008e\u0000\u0005Iü¶\u000bæ\u001f\bÞ¹F+Ö\u000b\u0012Þ\u0005\u0001×\u0094'·\u0017Ð¬\u000f×G>¾Î)ËJSoà\u000fò\u0011\u0017\u009bVÓ\u0099\u009b\tÓ*\u0084õ¤Ü1öf\u0004huNö\u000bÉ\u001dæmÐU\u0083\u0015\u001c\u009c\u0016\u0003Q§ú\u0007\u0093#¨Ô\u0001ø¡\u000f#\u001aðâß\u0001TÚÈ\u0093N±ºé9\u0007/\bQÜ\u000f\u0011\u0011\b\u008açÌà\u0087r8ñA½\u0014\u0092\n\r\bM\u0017Å=\u0012\u009aG\u0090\r\u009aüÜ5mD÷\u000e×\u008aÉ\u0092B£5êu\u0003ôºûÛ¼qkÙ\u000b:çoÔ\u0085\u0013Ã£\u0006Ù5c\\rX\u0092ö\\Ó¿\u0096H\u0083\u0011]T-í´À¢\u0082\u008b\u0092;Ý\u0093ÞV?u#é\u001a¸\u0082ºl\u001c~\u0090\f\u0018}ïÕ\u0089æ¤VÜã\u0088jA\u0091z}\u0088\ff>\u0019É\u0006 XL\u0082\u0097\u0087=gcéiú\u0086}[v\u009aq¿\u000bÅºxØÍ1/AíU\u008c0ÿÄ4E\u0087É´\u001bQ\u007f\u0006\u009db\u0093\u0093IT!ÕdVõ\u009eà\u00003\u0088¡\u0098\u000b¶üF®\u0003ò\u009d\u008aíòd\u0091y\u001f(2x\u0013h\u001f ¯z\u0097 ¥WÚ>îBéú'B4\u009a\fÅU?zJ1u\u0088w;Q%\u0007ê\u008a£á@^\u00ad\u0018\u0080\u0015ß(`0¹ÝRhß³\rVÄ\u0095W\u0017ÞZH\u0090Àµ\u0006ÅÚ\ný\u0094L3\r \u001aA<#\u0017 R×çV ¼ F»\u000e)K\u00ad~' ,\u0000ðÜÙÆP\u0012U+NÂ¸=f[+\u0016E<Î\u00846P¾a\u0097"
+         .length();
+      char var9 = 25;
+      int var17 = -1;
 
-                        while (true) {
-                            v0 = 13;
-                            v1 = ++var8_5;
-                            v2 = var10_2.substring(v1, v1 + var9_4);
-                            v3 = -1;
-                            break block26;
-                            break;
-                        }
-lbl13:
-                        // 1 sources
+      label71:
+      while (true) {
+         byte var10000 = 13;
+         String var10001 = var10.substring(++var17, var17 + var9);
+         byte var10002 = -1;
 
-                        while (true) {
-                            var13[var11_1++] = v4.intern();
-                            if ((var8_5 += var9_4) < var12_3) {
-                                var9_4 = var10_2.charAt(var8_5);
-                                ** continue;
-                            }
-                            var10_2 = "Y\u00dd\u00e4`\f\u0019\u001d\u00d9\u000e\u00eb\u00c2<\u008b#&\u00a6\u00fb";
-                            var12_3 = "Y\u00dd\u00e4`\f\u0019\u001d\u00d9\u000e\u00eb\u00c2<\u008b#&\u00a6\u00fb".length();
-                            var9_4 = 4;
-                            var8_5 = -1;
-lbl22:
-                            // 2 sources
+         while (true) {
+            label66: {
+               char[] var39 = var10001.toCharArray();
+               int var10004 = var39.length;
+               int var14 = 0;
+               byte var42 = var10000;
+               var33 = var39;
+               int var24 = var10004;
+               byte var49;
+               char[] var55;
+               int var10006;
+               if (var10004 <= 1) {
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               } else {
+                  var42 = var10000;
+                  var24 = var10004;
+                  if (var10004 <= var14) {
+                     break label66;
+                  }
 
-                            while (true) {
-                                v0 = 55;
-                                v5 = ++var8_5;
-                                v2 = var10_2.substring(v5, v5 + var9_4);
-                                v3 = 0;
-                                break block26;
-                                break;
-                            }
-                            break;
-                        }
-lbl28:
-                        // 1 sources
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               }
 
-                        while (true) {
-                            var13[var11_1++] = v4.intern();
-                            if ((var8_5 += var9_4) < var12_3) {
-                                var9_4 = var10_2.charAt(var8_5);
-                                ** continue;
-                            }
-                            break block27;
-                            break;
-                        }
-                    }
-                    v6 = v2.toCharArray();
-                    v7 = v6.length;
-                    var14_6 = 0;
-                    v8 = v0;
-                    v9 = v6;
-                    v10 = v7;
-                    if (v7 > 1) ** GOTO lbl85
-                    do {
-                        v11 = v8;
-                        v9 = v9;
-                        v12 = v9;
-                        v13 = v8;
-                        v14 = var14_6;
-                        while (true) {
-                            switch (var14_6 % 7) {
-                                case 0: {
-                                    v15 = 16;
-                                    break;
-                                }
-                                case 1: {
-                                    v15 = 79;
-                                    break;
-                                }
-                                case 2: {
-                                    v15 = 44;
-                                    break;
-                                }
-                                case 3: {
-                                    v15 = 38;
-                                    break;
-                                }
-                                case 4: {
-                                    v15 = 60;
-                                    break;
-                                }
-                                case 5: {
-                                    v15 = 17;
-                                    break;
-                                }
-                                default: {
-                                    v15 = 1;
-                                }
-                            }
-                            v12[v14] = (char)(v12[v14] ^ (v13 ^ v15));
-                            ++var14_6;
-                            v8 = v11;
-                            if (v11 != 0) break;
-                            v11 = v8;
-                            v9 = v9;
-                            v14 = v8;
-                            v12 = v9;
-                            v13 = v8;
-                        }
-lbl85:
-                        // 2 sources
-
-                        v16 = v9;
-                        v10 = v10;
-                    } while (v10 > var14_6);
-                    v4 = new String(v16);
-                    switch (v3) {
-                        default: {
-                            ** continue;
-                        }
-                        ** case 0:
-lbl95:
-                        // 1 sources
-
-                        ** continue;
-                    }
-                }
-                DJ.a = var13;
-                DJ.b = new String[53];
-                var1_7 = 6274525002612250120L;
-                var0_8 = new long[4];
-                var4_9 = 0;
-                var5_10 = "a7\u008a\u00f1\u00fb\u0002\u0096\u0002\u00d2\\\u00df\u00cf\u0084\u00fdi\u00f7";
-                var6_11 = "a7\u008a\u00f1\u00fb\u0002\u0096\u0002\u00d2\\\u00df\u00cf\u0084\u00fdi\u00f7".length();
-                var3_12 = 0;
-                while (true) {
-                    var7_13 = var5_10.substring(var3_12, var3_12 += 8).getBytes("ISO-8859-1");
-                    v17 = var0_8;
-                    v18 = var4_9++;
-                    v19 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                    v20 = -1;
-                    break block28;
-                    break;
-                }
-lbl112:
-                // 1 sources
-
-                while (true) {
-                    v17[v18] = v21;
-                    if (var3_12 < var6_11) ** continue;
-                    var5_10 = "I\u00f5\u008e\u008f\u00fb\u0002\u0096pp\u0006\u00a0\u00b4\u00fb\u0003\u0096\b";
-                    var6_11 = "I\u00f5\u008e\u008f\u00fb\u0002\u0096pp\u0006\u00a0\u00b4\u00fb\u0003\u0096\b".length();
-                    var3_12 = 0;
-                    while (true) {
-                        var7_13 = var5_10.substring(var3_12, var3_12 += 8).getBytes("ISO-8859-1");
-                        v17 = var0_8;
-                        v18 = var4_9++;
-                        v19 = ((long)var7_13[0] & 255L) << 56 | ((long)var7_13[1] & 255L) << 48 | ((long)var7_13[2] & 255L) << 40 | ((long)var7_13[3] & 255L) << 32 | ((long)var7_13[4] & 255L) << 24 | ((long)var7_13[5] & 255L) << 16 | ((long)var7_13[6] & 255L) << 8 | (long)var7_13[7] & 255L;
-                        v20 = 0;
-                        break block28;
+               while (true) {
+                  var55[var10006] = (char)(var55[var10006] ^ var49 ^ switch (var14 % 7) {
+                     case 0 -> 16;
+                     case 1 -> 79;
+                     case 2 -> 44;
+                     case 3 -> 38;
+                     case 4 -> 60;
+                     case 5 -> 17;
+                     default -> 1;
+                  });
+                  var14++;
+                  if (var42 == 0) {
+                     var10006 = var42;
+                     var55 = var33;
+                     var49 = var42;
+                  } else {
+                     if (var24 <= var14) {
                         break;
-                    }
-                    break;
-                }
-lbl125:
-                // 1 sources
+                     }
 
-                while (true) {
-                    v17[v18] = v21;
-                    if (var3_12 < var6_11) ** continue;
-                    break block29;
-                    break;
-                }
+                     var55 = var33;
+                     var49 = var42;
+                     var10006 = var14;
+                  }
+               }
             }
-            v21 = v19 ^ var1_7;
-            switch (v20) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl136:
-                // 1 sources
 
-                ** continue;
-            }
-        }
-        DJ.Y = Integer.getInteger("count", (int)var0_8[1]);
-        DJ.w = Boolean.getBoolean("quiet");
-        DJ.Q = System.getProperty("intf", "");
-        DJ.P = Integer.getInteger("run", (int)var0_8[2]);
-        DJ.x = Integer.getInteger("readTimeout", (int)var0_8[0]);
-        DJ.I = Integer.getInteger("snaplen", (int)var0_8[3]);
-        DJ.i = Boolean.getBoolean("timestampPrecision.nano");
-        DJ.D = new SimpleDateFormat("yyyy-MM-dd_HH_mm_ss");
-        DJ.p = System.getProperty("pcapFile", "Dump" + DJ.D.format(new Date()) + ".pcap");
-    }
+            String var44 = new String(var33).intern();
+            switch (var10002) {
+               case 0:
+                  var13[var11++] = var44;
+                  if ((var17 += var9) >= var12) {
+                     a = var13;
+                     b = new String[53];
+                     long var1 = 6274525002612250120L;
+                     long[] var0 = new long[4];
+                     int var4 = 0;
+                     String var5 = "a7\u008añû\u0002\u0096\u0002Ò\\ßÏ\u0084ýi÷";
+                     int var6 = "a7\u008añû\u0002\u0096\u0002Ò\\ßÏ\u0084ýi÷".length();
+                     byte var3 = 0;
 
-    private DJ() {
-    }
+                     label45:
+                     while (true) {
+                        byte var26 = var3;
+                        var3 += 8;
+                        byte[] var7 = var5.substring(var26, var3).getBytes("ISO-8859-1");
+                        long[] var19 = var0;
+                        int var27 = var4++;
+                        long var37 = ((long)var7[0] & 255L) << 56
+                           | ((long)var7[1] & 255L) << 48
+                           | ((long)var7[2] & 255L) << 40
+                           | ((long)var7[3] & 255L) << 32
+                           | ((long)var7[4] & 255L) << 24
+                           | ((long)var7[5] & 255L) << 16
+                           | ((long)var7[6] & 255L) << 8
+                           | (long)var7[7] & 255L;
+                        byte var45 = -1;
 
-    static void a() {
-        System.out.println("============Usage=============");
-        System.out.println("You can set other attributes as -D:");
-        System.out.println(String.format("\t%-20s -> %s", "count", "Packets numbers. Not supported Anymore. use -Drun. "));
-        System.out.println(String.format("\t%-20s -> %s", "readTimeout", "Read timeout in ms"));
-        System.out.println(String.format("\t%-20s -> %s", "snaplen", "SnapLen"));
-        System.out.println(String.format("\t%-20s -> %s", "run", "How long in seconds to run"));
-        System.out.println(String.format("\t%-20s -> %s", "quiet", "Run in quiet mode? if it's true, you should set the - intf"));
-        System.out.println(String.format("\t%-20s -> %s", "intf", "Set the network interface"));
-        System.out.println(String.format("\t%-20s -> %s", "pcapFile", "Set the output file path"));
-        System.out.println("============Usage=============");
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    public static void main(String[] var0) throws PcapNativeException, NotOpenException, IOException {
-        block57: {
-            block61: {
-                block55: {
-                    block54: {
-                        block52: {
-                            block53: {
-                                block63: {
-                                    block51: {
-                                        block50: {
-                                            var1_1 = xQ.B();
-                                            v0 = var0;
-                                            if (var1_1 == null) break block50;
-                                            try {
-                                                block62: {
-                                                    if (v0.length == 0) break block51;
-                                                    break block62;
-                                                    catch (Exception v1) {
-                                                        throw DJ.a(v1);
-                                                    }
-                                                }
-                                                v0 = var0;
-                                            }
-                                            catch (Exception v2) {
-                                                throw DJ.a(v2);
-                                            }
-                                        }
-                                        v3 = v0[0];
-                                        break block63;
-                                    }
-                                    v3 = "";
-                                }
-                                var2_2 = v3;
-                                v4 = var2_2;
-                                if (var1_1 == null) break block52;
-                                try {
-                                    block64: {
-                                        if (!v4.isEmpty()) break block53;
-                                        break block64;
-                                        catch (Exception v5) {
-                                            throw DJ.a(v5);
-                                        }
-                                    }
-                                    System.out.println("You Should set the filter expression as the first argument");
-                                    System.out.println("The filter expression is same with the capture filter in the Wireshark or tcpdump");
-                                    DJ.a();
+                        while (true) {
+                           long var54 = var37 ^ var1;
+                           switch (var45) {
+                              case 0:
+                                 var19[var27] = var54;
+                                 if (var3 >= var6) {
+                                    Y = Integer.getInteger(a(13685, 7900), (int)var0[1]);
+                                    w = Boolean.getBoolean(a(13665, 19930));
+                                    Q = System.getProperty(a(13645, -5578), "");
+                                    P = Integer.getInteger(a(13658, -24755), (int)var0[2]);
+                                    x = Integer.getInteger(a(13661, -23536), (int)var0[0]);
+                                    I = Integer.getInteger(a(13649, 9475), (int)var0[3]);
+                                    i = Boolean.getBoolean(a(13662, -13058));
+                                    D = new SimpleDateFormat(a(13651, 5115));
+                                    p = System.getProperty(a(13654, 13911), a(13684, 13) + D.format(new Date()) + a(13680, -2946));
                                     return;
-                                }
-                                catch (Exception v6) {
-                                    throw DJ.a(v6);
-                                }
-                            }
-                            v4 = System.getProperty("quiet");
-                        }
-                        try {
-                            if (v4 == null) {
-                                System.out.println("Must set whether this is in a quiet mode. use -Dquiet=true|false");
-                                DJ.a();
-                                return;
-                            }
-                        }
-                        catch (Exception v7) {
-                            throw DJ.a(v7);
-                        }
-                        try {
-                            System.out.println("readTimeout: " + DJ.x);
-                            System.out.println("snaplen: " + DJ.I);
-                            System.out.println("timestampPrecision.nano: " + DJ.i);
-                            System.out.println("run: " + DJ.P);
-                            System.out.println("quiet: " + DJ.w);
-                            System.out.println("intf: " + DJ.Q);
-                            System.out.println("Filter is " + var2_2);
-                            System.out.println("\n");
-                            v8 = DJ.w;
-                            if (var1_1 == null) break block54;
-                            if (v8) {
-                            }
-                            ** GOTO lbl67
-                        }
-                        catch (Exception v9) {
-                            throw DJ.a(v9);
-                        }
-                        var3_3 = DJ.o(DJ.Q);
-                        if (var1_1 != null) break block55;
-lbl67:
-                        // 2 sources
+                                 }
+                                 break;
+                              default:
+                                 var19[var27] = var54;
+                                 if (var3 < var6) {
+                                    continue label45;
+                                 }
 
-                        try {
-                            block65: {
-                                v10 = DJ.Q;
-                                if (var1_1 == null) ** GOTO lbl87
-                                break block65;
-                                catch (Exception v11) {
-                                    throw DJ.a(v11);
-                                }
-                            }
-                            v8 = v10.isEmpty();
+                                 var5 = "Iõ\u008e\u008fû\u0002\u0096pp\u0006 ´û\u0003\u0096\b";
+                                 var6 = "Iõ\u008e\u008fû\u0002\u0096pp\u0006 ´û\u0003\u0096\b".length();
+                                 var3 = 0;
+                           }
+
+                           byte var28 = var3;
+                           var3 += 8;
+                           var7 = var5.substring(var28, var3).getBytes("ISO-8859-1");
+                           var19 = var0;
+                           var27 = var4++;
+                           var37 = ((long)var7[0] & 255L) << 56
+                              | ((long)var7[1] & 255L) << 48
+                              | ((long)var7[2] & 255L) << 40
+                              | ((long)var7[3] & 255L) << 32
+                              | ((long)var7[4] & 255L) << 24
+                              | ((long)var7[5] & 255L) << 16
+                              | ((long)var7[6] & 255L) << 8
+                              | (long)var7[7] & 255L;
+                           var45 = 0;
                         }
-                        catch (Exception v12) {
-                            throw DJ.a(v12);
-                        }
-                    }
-                    if (v8) {
-                        try {
-                            var3_3 = DJ.n();
-                        }
-                        catch (Exception var4_4) {
-                            var4_4.printStackTrace();
-                            return;
-                        }
-                    } else {
-                        v10 = DJ.Q;
-lbl87:
-                        // 2 sources
+                     }
+                  }
 
-                        var3_3 = DJ.o(v10);
-                    }
-                }
-                try {
-                    if (var3_3 == null) {
-                        System.out.println("No interfaces found, make sure your set the correct libpcap files");
-                        return;
-                    }
-                }
-                catch (Exception v13) {
-                    throw DJ.a(v13);
-                }
-                System.out.println(var3_3.getName() + "(" + var3_3.getDescription() + ")");
-                var4_5 = new PcapHandle.Builder(var3_3.getName()).snaplen(DJ.I).promiscuousMode(PcapNetworkInterface.PromiscuousMode.PROMISCUOUS).timeoutMillis(DJ.x);
-                try {
-                    if (DJ.i) {
-                        var4_5.timestampPrecision(PcapHandle.TimestampPrecision.NANO);
-                    }
-                }
-                catch (Exception v14) {
-                    throw DJ.a(v14);
-                }
-                var5_6 = var4_5.build();
-                var5_6.setFilter(var2_2, BpfProgram.BpfCompileMode.OPTIMIZE);
-                Runtime.getRuntime().addShutdownHook(new Thread((Runnable)LambdaMetafactory.metafactory(null, null, null, ()V, lambda$0(), ()V)()));
-                var6_7 = new CountDownLatch(1);
-                var7_8 = new AtomicReference<V>();
-                var8_9 = new Thread(new VP(var5_6, var6_7, var7_8));
-                var8_9.start();
-                try {
-                    try {
-                        var6_7.await(DJ.P, TimeUnit.SECONDS);
-                    }
-                    catch (InterruptedException var9_10) {
-                        block58: {
-                            var8_9.interrupt();
-                            var11_11 = (PcapDumper)var7_8.get();
-                            try {
-                                if (var1_1 == null) break block57;
-                                if (var11_11 == null) break block58;
-                            }
-                            catch (Exception v15) {
-                                throw DJ.a(v15);
-                            }
-                            try {
-                                var11_11.close();
-                            }
-                            catch (Exception var12_14) {
-                                // empty catch block
-                            }
-                        }
-                        try {
-                            var5_6.close();
-                        }
-                        catch (Exception var12_15) {}
-                        break block57;
-                    }
-                }
-                catch (Throwable var10_20) {
-                    block59: {
-                        block60: {
-                            var8_9.interrupt();
-                            var11_12 = (PcapDumper)var7_8.get();
-                            try {
-                                if (var1_1 == null) break block59;
-                                if (var11_12 == null) break block60;
-                            }
-                            catch (Exception v16) {
-                                throw DJ.a(v16);
-                            }
-                            try {
-                                var11_12.close();
-                            }
-                            catch (Exception var12_16) {
-                                // empty catch block
-                            }
-                        }
-                        try {
-                            var5_6.close();
-                        }
-                        catch (Exception var12_17) {
-                            // empty catch block
-                        }
-                    }
-                    throw var10_20;
-                }
-                var8_9.interrupt();
-                var11_13 = (PcapDumper)var7_8.get();
-                try {
-                    if (var1_1 == null) break block57;
-                    if (var11_13 == null) break block61;
-                }
-                catch (Exception v17) {
-                    throw DJ.a(v17);
-                }
-                try {
-                    var11_13.close();
-                }
-                catch (Exception var12_18) {
-                    // empty catch block
-                }
-            }
-            try {
-                var5_6.close();
-            }
-            catch (Exception var12_19) {
-                // empty catch block
-            }
-        }
-    }
+                  var9 = var10.charAt(var17);
+                  break;
+               default:
+                  var13[var11++] = var44;
+                  if ((var17 += var9) < var12) {
+                     var9 = var10.charAt(var17);
+                     continue label71;
+                  }
 
-    /*
-     * Unable to fully structure code
-     */
-    private static PcapNetworkInterface n() throws Exception {
-        var1 = DJ.e();
-        var0_1 = xQ.B();
-        DJ.A();
-        var2_2 = 0;
-        while (true) {
-            block18: {
-                block17: {
-                    DJ.s(String.format("Select a device number ( 0 - %d) to capture packets, or enter 'q' to quit > ", new Object[]{var1.size() - 1}));
-                    var3_3 = DJ.A();
-                    if (var3_3 != null) break block17;
-                    try {
-                        block19: {
-                            if (var0_1 == null) ** GOTO lbl36
-                            break block19;
-                            catch (NumberFormatException v0) {
-                                throw DJ.a(v0);
-                            }
-                        }
-                        if (var0_1 != null) continue;
-                    }
-                    catch (NumberFormatException v1) {
-                        throw DJ.a(v1);
-                    }
-                }
-                v2 = var3_3.equals("q");
-                if (var0_1 == null) ** GOTO lbl43
-                try {
-                    block20: {
-                        if (v2 == 0) break block18;
-                        break block20;
-                        catch (NumberFormatException v3) {
-                            throw DJ.a(v3);
-                        }
-                    }
-                    return null;
-                }
-                catch (NumberFormatException v4) {
-                    throw DJ.a(v4);
-                }
+                  var10 = "YÝä`\f\u0019\u001dÙ\u000eëÂ<\u008b#&¦û";
+                  var12 = "YÝä`\f\u0019\u001dÙ\u000eëÂ<\u008b#&¦û".length();
+                  var9 = 4;
+                  var17 = -1;
             }
-            try {
-                var2_2 = Integer.parseInt(var3_3);
-lbl36:
-                // 2 sources
 
-                try {
-                    if (var0_1 == null) continue;
-                    v2 = var2_2;
-                }
-                catch (NumberFormatException v5) {
-                    throw DJ.a(v5);
-                }
-lbl43:
-                // 3 sources
+            var10000 = 55;
+            var10001 = var10.substring(++var17, var17 + var9);
+            var10002 = 0;
+         }
+      }
+   }
 
-                if (v2 < 0) ** GOTO lbl49
-                try {
-                    block21: {
-                        if (var2_2 < var1.size()) break;
-                        break block21;
-                        catch (NumberFormatException v6) {
-                            throw DJ.a(v6);
-                        }
-                    }
-                    DJ.s("Invalid input.");
-                    continue;
-                }
-                catch (NumberFormatException v7) {
-                    throw DJ.a(v7);
-                }
-            }
-            catch (NumberFormatException var4_4) {
-                DJ.s("Invalid input.");
-                if (var0_1 == null) break;
-                continue;
-            }
-            break;
-        }
-        return (PcapNetworkInterface)var1.get(var2_2);
-    }
+   private DJ(String name, int ordinal) {
+   }
 
-    protected static void s(String string) throws IOException {
-        System.out.print(string);
-    }
+   static void a() {
+      System.out.println(a(13676, 3821));
+      System.out.println(a(13653, 31215));
+      System.out.println(String.format(a(13642, 8729), a(13682, -12093), a(13644, -27182)));
+      System.out.println(String.format(a(13648, 27145), a(13687, -28696), a(13677, -32664)));
+      System.out.println(String.format(a(13648, 27145), a(13689, -28407), a(13659, -16242)));
+      System.out.println(String.format(a(13648, 27145), a(13675, -1337), a(13671, 3032)));
+      System.out.println(String.format(a(13648, 27145), a(13673, 28489), a(13674, -32240)));
+      System.out.println(String.format(a(13648, 27145), a(13686, -18838), a(13694, 4423)));
+      System.out.println(String.format(a(13648, 27145), a(13664, -6141), a(13646, 9665)));
+      System.out.println(a(13668, -17020));
+   }
 
-    protected static String A() throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        return bufferedReader.readLine();
-    }
+   public static void main(String[] param0) throws PcapNativeException, NotOpenException, IOException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic xQ.B ()[Ljava/lang/String;
+      // 003: astore 1
+      // 004: aload 0
+      // 005: aload 1
+      // 006: ifnull 01c
+      // 009: arraylength
+      // 00a: ifeq 021
+      // 00d: goto 014
+      // 010: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 013: athrow
+      // 014: aload 0
+      // 015: goto 01c
+      // 018: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 01b: athrow
+      // 01c: bipush 0
+      // 01d: aaload
+      // 01e: goto 023
+      // 021: ldc ""
+      // 023: astore 2
+      // 024: aload 2
+      // 025: aload 1
+      // 026: ifnull 068
+      // 029: invokevirtual java/lang/String.isEmpty ()Z
+      // 02c: ifeq 05c
+      // 02f: goto 036
+      // 032: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 035: athrow
+      // 036: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 039: sipush 13667
+      // 03c: sipush -6120
+      // 03f: invokestatic DJ.a (II)Ljava/lang/String;
+      // 042: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 045: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 048: sipush 13666
+      // 04b: sipush -29183
+      // 04e: invokestatic DJ.a (II)Ljava/lang/String;
+      // 051: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 054: invokestatic DJ.a ()V
+      // 057: return
+      // 058: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 05b: athrow
+      // 05c: sipush 13673
+      // 05f: sipush 28489
+      // 062: invokestatic DJ.a (II)Ljava/lang/String;
+      // 065: invokestatic java/lang/System.getProperty (Ljava/lang/String;)Ljava/lang/String;
+      // 068: ifnonnull 082
+      // 06b: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 06e: sipush 13688
+      // 071: sipush 29449
+      // 074: invokestatic DJ.a (II)Ljava/lang/String;
+      // 077: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 07a: invokestatic DJ.a ()V
+      // 07d: return
+      // 07e: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 081: athrow
+      // 082: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 085: getstatic DJ.x I
+      // 088: sipush 13693
+      // 08b: sipush 27103
+      // 08e: invokestatic DJ.a (II)Ljava/lang/String;
+      // 091: swap
+      // 092: invokedynamic makeConcatWithConstants (Ljava/lang/String;I)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001\u0001" ]
+      // 097: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 09a: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 09d: getstatic DJ.I I
+      // 0a0: sipush 13663
+      // 0a3: sipush -14209
+      // 0a6: invokestatic DJ.a (II)Ljava/lang/String;
+      // 0a9: swap
+      // 0aa: invokedynamic makeConcatWithConstants (Ljava/lang/String;I)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001\u0001" ]
+      // 0af: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 0b2: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 0b5: getstatic DJ.i Z
+      // 0b8: sipush 13669
+      // 0bb: sipush -23482
+      // 0be: invokestatic DJ.a (II)Ljava/lang/String;
+      // 0c1: swap
+      // 0c2: invokedynamic makeConcatWithConstants (Ljava/lang/String;Z)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001\u0001" ]
+      // 0c7: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 0ca: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 0cd: getstatic DJ.P I
+      // 0d0: sipush 13681
+      // 0d3: sipush 18705
+      // 0d6: invokestatic DJ.a (II)Ljava/lang/String;
+      // 0d9: swap
+      // 0da: invokedynamic makeConcatWithConstants (Ljava/lang/String;I)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001\u0001" ]
+      // 0df: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 0e2: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 0e5: getstatic DJ.w Z
+      // 0e8: sipush 13657
+      // 0eb: sipush 17994
+      // 0ee: invokestatic DJ.a (II)Ljava/lang/String;
+      // 0f1: swap
+      // 0f2: invokedynamic makeConcatWithConstants (Ljava/lang/String;Z)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001\u0001" ]
+      // 0f7: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 0fa: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 0fd: getstatic DJ.Q Ljava/lang/String;
+      // 100: sipush 13647
+      // 103: sipush 12009
+      // 106: invokestatic DJ.a (II)Ljava/lang/String;
+      // 109: swap
+      // 10a: invokedynamic makeConcatWithConstants (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001\u0001" ]
+      // 10f: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 112: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 115: aload 2
+      // 116: sipush 13691
+      // 119: sipush 31567
+      // 11c: invokestatic DJ.a (II)Ljava/lang/String;
+      // 11f: swap
+      // 120: invokedynamic makeConcatWithConstants (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001\u0001" ]
+      // 125: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 128: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 12b: ldc "\n"
+      // 12d: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 130: getstatic DJ.w Z
+      // 133: aload 1
+      // 134: ifnull 164
+      // 137: ifeq 14c
+      // 13a: goto 141
+      // 13d: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 140: athrow
+      // 141: getstatic DJ.Q Ljava/lang/String;
+      // 144: invokestatic DJ.o (Ljava/lang/String;)Lorg/pcap4j/core/PcapNetworkInterface;
+      // 147: astore 3
+      // 148: aload 1
+      // 149: ifnonnull 17d
+      // 14c: getstatic DJ.Q Ljava/lang/String;
+      // 14f: aload 1
+      // 150: ifnull 179
+      // 153: goto 15a
+      // 156: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 159: athrow
+      // 15a: invokevirtual java/lang/String.isEmpty ()Z
+      // 15d: goto 164
+      // 160: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 163: athrow
+      // 164: ifeq 176
+      // 167: invokestatic DJ.n ()Lorg/pcap4j/core/PcapNetworkInterface;
+      // 16a: astore 3
+      // 16b: goto 17d
+      // 16e: astore 4
+      // 170: aload 4
+      // 172: invokevirtual java/lang/Exception.printStackTrace ()V
+      // 175: return
+      // 176: getstatic DJ.Q Ljava/lang/String;
+      // 179: invokestatic DJ.o (Ljava/lang/String;)Lorg/pcap4j/core/PcapNetworkInterface;
+      // 17c: astore 3
+      // 17d: aload 3
+      // 17e: ifnonnull 195
+      // 181: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 184: sipush 13655
+      // 187: sipush 31793
+      // 18a: invokestatic DJ.a (II)Ljava/lang/String;
+      // 18d: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 190: return
+      // 191: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 194: athrow
+      // 195: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 198: aload 3
+      // 199: invokevirtual org/pcap4j/core/PcapNetworkInterface.getName ()Ljava/lang/String;
+      // 19c: aload 3
+      // 19d: invokevirtual org/pcap4j/core/PcapNetworkInterface.getDescription ()Ljava/lang/String;
+      // 1a0: invokedynamic makeConcatWithConstants (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001(\u0001)" ]
+      // 1a5: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 1a8: new org/pcap4j/core/PcapHandle$Builder
+      // 1ab: dup
+      // 1ac: aload 3
+      // 1ad: invokevirtual org/pcap4j/core/PcapNetworkInterface.getName ()Ljava/lang/String;
+      // 1b0: invokespecial org/pcap4j/core/PcapHandle$Builder.<init> (Ljava/lang/String;)V
+      // 1b3: getstatic DJ.I I
+      // 1b6: invokevirtual org/pcap4j/core/PcapHandle$Builder.snaplen (I)Lorg/pcap4j/core/PcapHandle$Builder;
+      // 1b9: getstatic org/pcap4j/core/PcapNetworkInterface$PromiscuousMode.PROMISCUOUS Lorg/pcap4j/core/PcapNetworkInterface$PromiscuousMode;
+      // 1bc: invokevirtual org/pcap4j/core/PcapHandle$Builder.promiscuousMode (Lorg/pcap4j/core/PcapNetworkInterface$PromiscuousMode;)Lorg/pcap4j/core/PcapHandle$Builder;
+      // 1bf: getstatic DJ.x I
+      // 1c2: invokevirtual org/pcap4j/core/PcapHandle$Builder.timeoutMillis (I)Lorg/pcap4j/core/PcapHandle$Builder;
+      // 1c5: astore 4
+      // 1c7: getstatic DJ.i Z
+      // 1ca: ifeq 1dd
+      // 1cd: aload 4
+      // 1cf: getstatic org/pcap4j/core/PcapHandle$TimestampPrecision.NANO Lorg/pcap4j/core/PcapHandle$TimestampPrecision;
+      // 1d2: invokevirtual org/pcap4j/core/PcapHandle$Builder.timestampPrecision (Lorg/pcap4j/core/PcapHandle$TimestampPrecision;)Lorg/pcap4j/core/PcapHandle$Builder;
+      // 1d5: pop
+      // 1d6: goto 1dd
+      // 1d9: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1dc: athrow
+      // 1dd: aload 4
+      // 1df: invokevirtual org/pcap4j/core/PcapHandle$Builder.build ()Lorg/pcap4j/core/PcapHandle;
+      // 1e2: astore 5
+      // 1e4: aload 5
+      // 1e6: aload 2
+      // 1e7: getstatic org/pcap4j/core/BpfProgram$BpfCompileMode.OPTIMIZE Lorg/pcap4j/core/BpfProgram$BpfCompileMode;
+      // 1ea: invokevirtual org/pcap4j/core/PcapHandle.setFilter (Ljava/lang/String;Lorg/pcap4j/core/BpfProgram$BpfCompileMode;)V
+      // 1ed: invokestatic java/lang/Runtime.getRuntime ()Ljava/lang/Runtime;
+      // 1f0: new java/lang/Thread
+      // 1f3: dup
+      // 1f4: invokedynamic run ()Ljava/lang/Runnable; bsm=java/lang/invoke/LambdaMetafactory.metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; args=[ ()V, DJ.lambda$0 ()V, ()V ]
+      // 1f9: invokespecial java/lang/Thread.<init> (Ljava/lang/Runnable;)V
+      // 1fc: invokevirtual java/lang/Runtime.addShutdownHook (Ljava/lang/Thread;)V
+      // 1ff: new java/util/concurrent/CountDownLatch
+      // 202: dup
+      // 203: bipush 1
+      // 204: invokespecial java/util/concurrent/CountDownLatch.<init> (I)V
+      // 207: astore 6
+      // 209: new java/util/concurrent/atomic/AtomicReference
+      // 20c: dup
+      // 20d: invokespecial java/util/concurrent/atomic/AtomicReference.<init> ()V
+      // 210: astore 7
+      // 212: new java/lang/Thread
+      // 215: dup
+      // 216: new VP
+      // 219: dup
+      // 21a: aload 5
+      // 21c: aload 6
+      // 21e: aload 7
+      // 220: invokespecial VP.<init> (Lorg/pcap4j/core/PcapHandle;Ljava/util/concurrent/CountDownLatch;Ljava/util/concurrent/atomic/AtomicReference;)V
+      // 223: invokespecial java/lang/Thread.<init> (Ljava/lang/Runnable;)V
+      // 226: astore 8
+      // 228: aload 8
+      // 22a: invokevirtual java/lang/Thread.start ()V
+      // 22d: aload 6
+      // 22f: getstatic DJ.P I
+      // 232: i2l
+      // 233: getstatic java/util/concurrent/TimeUnit.SECONDS Ljava/util/concurrent/TimeUnit;
+      // 236: invokevirtual java/util/concurrent/CountDownLatch.await (JLjava/util/concurrent/TimeUnit;)Z
+      // 239: pop
+      // 23a: goto 2ad
+      // 23d: astore 9
+      // 23f: aload 8
+      // 241: invokevirtual java/lang/Thread.interrupt ()V
+      // 244: aload 7
+      // 246: invokevirtual java/util/concurrent/atomic/AtomicReference.get ()Ljava/lang/Object;
+      // 249: checkcast org/pcap4j/core/PcapDumper
+      // 24c: astore 11
+      // 24e: aload 1
+      // 24f: ifnull 26d
+      // 252: aload 11
+      // 254: ifnull 268
+      // 257: goto 25e
+      // 25a: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 25d: athrow
+      // 25e: aload 11
+      // 260: invokevirtual org/pcap4j/core/PcapDumper.close ()V
+      // 263: goto 268
+      // 266: astore 12
+      // 268: aload 5
+      // 26a: invokevirtual org/pcap4j/core/PcapHandle.close ()V
+      // 26d: goto 2e0
+      // 270: astore 12
+      // 272: goto 2e0
+      // 275: astore 10
+      // 277: aload 8
+      // 279: invokevirtual java/lang/Thread.interrupt ()V
+      // 27c: aload 7
+      // 27e: invokevirtual java/util/concurrent/atomic/AtomicReference.get ()Ljava/lang/Object;
+      // 281: checkcast org/pcap4j/core/PcapDumper
+      // 284: astore 11
+      // 286: aload 1
+      // 287: ifnull 2a5
+      // 28a: aload 11
+      // 28c: ifnull 2a0
+      // 28f: goto 296
+      // 292: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 295: athrow
+      // 296: aload 11
+      // 298: invokevirtual org/pcap4j/core/PcapDumper.close ()V
+      // 29b: goto 2a0
+      // 29e: astore 12
+      // 2a0: aload 5
+      // 2a2: invokevirtual org/pcap4j/core/PcapHandle.close ()V
+      // 2a5: goto 2aa
+      // 2a8: astore 12
+      // 2aa: aload 10
+      // 2ac: athrow
+      // 2ad: aload 8
+      // 2af: invokevirtual java/lang/Thread.interrupt ()V
+      // 2b2: aload 7
+      // 2b4: invokevirtual java/util/concurrent/atomic/AtomicReference.get ()Ljava/lang/Object;
+      // 2b7: checkcast org/pcap4j/core/PcapDumper
+      // 2ba: astore 11
+      // 2bc: aload 1
+      // 2bd: ifnull 2db
+      // 2c0: aload 11
+      // 2c2: ifnull 2d6
+      // 2c5: goto 2cc
+      // 2c8: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2cb: athrow
+      // 2cc: aload 11
+      // 2ce: invokevirtual org/pcap4j/core/PcapDumper.close ()V
+      // 2d1: goto 2d6
+      // 2d4: astore 12
+      // 2d6: aload 5
+      // 2d8: invokevirtual org/pcap4j/core/PcapHandle.close ()V
+      // 2db: goto 2e0
+      // 2de: astore 12
+      // 2e0: return
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    private static List e() throws IOException {
-        List<PcapNetworkInterface> list;
-        List<PcapNetworkInterface> list2;
-        block9: {
-            String[] stringArray;
-            block8: {
-                list2 = null;
-                stringArray = xQ.B();
-                try {
-                    list2 = Pcaps.findAllDevs();
-                }
-                catch (PcapNativeException pcapNativeException) {
-                    throw new IOException(pcapNativeException.getMessage());
-                }
-                try {
-                    list = list2;
-                    if (stringArray == null) break block8;
-                    if (list == null) throw new IOException("No NIF found, is the libpcap successfully set/installed?");
-                }
-                catch (PcapNativeException pcapNativeException) {
-                    throw DJ.a(pcapNativeException);
-                }
-                list = list2;
-            }
-            try {
-                try {
-                    if (stringArray == null) return list;
-                    if (!list.isEmpty()) break block9;
-                    throw new IOException("No NIF found, is the libpcap successfully set/installed?");
-                }
-                catch (PcapNativeException pcapNativeException) {
-                    throw DJ.a(pcapNativeException);
-                }
-            }
-            catch (PcapNativeException pcapNativeException) {
-                throw DJ.a(pcapNativeException);
-            }
-        }
-        list = list2;
-        return list;
-    }
+   private static PcapNetworkInterface n() throws Exception {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic xQ.B ()[Ljava/lang/String;
+      // 03: invokestatic DJ.e ()Ljava/util/List;
+      // 06: astore 1
+      // 07: astore 0
+      // 08: invokestatic DJ.A ()V
+      // 0b: bipush 0
+      // 0c: istore 2
+      // 0d: sipush 13650
+      // 10: sipush -28500
+      // 13: invokestatic DJ.a (II)Ljava/lang/String;
+      // 16: bipush 1
+      // 17: anewarray 4
+      // 1a: dup
+      // 1b: bipush 0
+      // 1c: aload 1
+      // 1d: invokeinterface java/util/List.size ()I 1
+      // 22: bipush 1
+      // 23: isub
+      // 24: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 27: aastore
+      // 28: invokestatic java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      // 2b: invokestatic DJ.s (Ljava/lang/String;)V
+      // 2e: invokestatic DJ.A ()Ljava/lang/String;
+      // 31: dup
+      // 32: astore 3
+      // 33: ifnonnull 4c
+      // 36: aload 0
+      // 37: ifnull 6c
+      // 3a: goto 41
+      // 3d: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 40: athrow
+      // 41: aload 0
+      // 42: ifnonnull 0d
+      // 45: goto 4c
+      // 48: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 4b: athrow
+      // 4c: aload 3
+      // 4d: ldc_w "q"
+      // 50: invokevirtual java/lang/String.equals (Ljava/lang/Object;)Z
+      // 53: aload 0
+      // 54: ifnull 78
+      // 57: ifeq 67
+      // 5a: goto 61
+      // 5d: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 60: athrow
+      // 61: aconst_null
+      // 62: areturn
+      // 63: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 66: athrow
+      // 67: aload 3
+      // 68: invokestatic java/lang/Integer.parseInt (Ljava/lang/String;)I
+      // 6b: istore 2
+      // 6c: aload 0
+      // 6d: ifnull 9f
+      // 70: iload 2
+      // 71: goto 78
+      // 74: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 77: athrow
+      // 78: iflt 8c
+      // 7b: iload 2
+      // 7c: aload 1
+      // 7d: invokeinterface java/util/List.size ()I 1
+      // 82: if_icmplt b4
+      // 85: goto 8c
+      // 88: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 8b: athrow
+      // 8c: sipush 13670
+      // 8f: sipush -19430
+      // 92: invokestatic DJ.a (II)Ljava/lang/String;
+      // 95: invokestatic DJ.s (Ljava/lang/String;)V
+      // 98: goto 9f
+      // 9b: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 9e: athrow
+      // 9f: goto 0d
+      // a2: astore 4
+      // a4: sipush 13656
+      // a7: sipush 6233
+      // aa: invokestatic DJ.a (II)Ljava/lang/String;
+      // ad: invokestatic DJ.s (Ljava/lang/String;)V
+      // b0: aload 0
+      // b1: ifnonnull 0d
+      // b4: aload 1
+      // b5: iload 2
+      // b6: invokeinterface java/util/List.get (I)Ljava/lang/Object; 2
+      // bb: checkcast org/pcap4j/core/PcapNetworkInterface
+      // be: areturn
+   }
 
-    /*
-     * Handled impossible loop by adding 'first' condition
-     * Enabled aggressive block sorting
-     * Enabled unnecessary exception pruning
-     * Enabled aggressive exception aggregation
-     */
-    private static PcapNetworkInterface o(String string) throws IOException {
-        StringBuilder stringBuilder = new StringBuilder();
-        String[] stringArray = xQ.B();
-        Iterator iterator = DJ.e().iterator();
-        boolean bl = true;
-        do {
-            if (bl && !(bl = false) && stringArray != null) continue;
-            PcapNetworkInterface pcapNetworkInterface = (PcapNetworkInterface)iterator.next();
-            stringBuilder.append(pcapNetworkInterface.getName()).append(";");
-            if (!pcapNetworkInterface.getName().equals(string)) continue;
-            try {
-                if (stringArray == null) throw new IllegalArgumentException("Please choose one interface from above names. Unknown interface - " + string);
-                return pcapNetworkInterface;
-            }
-            catch (IOException iOException) {
-                throw DJ.a(iOException);
-            }
-        } while (iterator.hasNext());
-        DJ.A();
-        throw new IllegalArgumentException("Please choose one interface from above names. Unknown interface - " + string);
-    }
+   protected static void s(String var0) throws IOException {
+      System.out.print(var0);
+   }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    private static void A() throws IOException {
-        var1 = DJ.e();
-        var2_1 = new StringBuilder();
-        var3_2 = 0;
-        var0_3 = xQ.B();
-        var5_4 = var1.iterator();
-        try {
-            if (var0_3 == null) {
-                while (true) {
-                    v0 = var5_4.next();
-                    break;
-                }
-            }
-            ** GOTO lbl61
-        }
-        catch (IOException v1) {
-            throw DJ.a(v1);
-        }
-        do {
-            var4_5 = (PcapNetworkInterface)v0;
-            var2_1.append("NIF[").append(var3_2).append("]: ").append(var4_5.getName()).append("\n");
-            v2 = var4_5;
-            if (var0_3 != null) {
-                try {
-                    if (v2.getDescription() != null) {
-                        var2_1.append("      : description: ").append(var4_5.getDescription()).append("\n");
-                    }
-                }
-                catch (IOException v3) {
-                    throw DJ.a(v3);
-                }
-                v2 = var4_5;
-            }
-            var7_7 = v2.getLinkLayerAddresses().iterator();
-            try {
-                if (var0_3 == null) {
-                    while (true) {
-                        v4 = var7_7.next();
-                        break;
-                    }
-                }
-                ** GOTO lbl41
-            }
-            catch (IOException v5) {
-                throw DJ.a(v5);
-            }
-            do {
-                var6_6 = v4;
-                var2_1.append("      : link layer address: ").append(var6_6).append("\n");
-lbl41:
-                // 2 sources
+   protected static String A() throws IOException {
+      BufferedReader var0 = new BufferedReader(new InputStreamReader(System.in));
+      return var0.readLine();
+   }
 
-                if (var7_7.hasNext()) ** continue;
-                v4 = var4_5.getAddresses().iterator();
-            } while (var0_3 == null);
-            var7_7 = v4;
-            try {
-                if (var0_3 == null) {
-                    while (true) {
-                        v6 /* !! */  = var7_7.next();
-                        break;
-                    }
-                }
-                ** GOTO lbl57
-            }
-            catch (IOException v7) {
-                throw DJ.a(v7);
-            }
-            do {
-                var6_6 = (PcapAddress)v6 /* !! */ ;
-                var2_1.append("      : address: ").append(var6_6.getAddress()).append("\n");
-lbl57:
-                // 2 sources
+   private static List e() throws IOException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic xQ.B ()[Ljava/lang/String;
+      // 03: aconst_null
+      // 04: astore 1
+      // 05: astore 0
+      // 06: invokestatic org/pcap4j/core/Pcaps.findAllDevs ()Ljava/util/List;
+      // 09: astore 1
+      // 0a: goto 1a
+      // 0d: astore 2
+      // 0e: new java/io/IOException
+      // 11: dup
+      // 12: aload 2
+      // 13: invokevirtual org/pcap4j/core/PcapNativeException.getMessage ()Ljava/lang/String;
+      // 16: invokespecial java/io/IOException.<init> (Ljava/lang/String;)V
+      // 19: athrow
+      // 1a: aload 1
+      // 1b: aload 0
+      // 1c: ifnull 2a
+      // 1f: ifnull 3d
+      // 22: goto 29
+      // 25: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 28: athrow
+      // 29: aload 1
+      // 2a: aload 0
+      // 2b: ifnull 53
+      // 2e: invokeinterface java/util/List.isEmpty ()Z 1
+      // 33: ifeq 52
+      // 36: goto 3d
+      // 39: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3c: athrow
+      // 3d: new java/io/IOException
+      // 40: dup
+      // 41: sipush 13695
+      // 44: sipush 30701
+      // 47: invokestatic DJ.a (II)Ljava/lang/String;
+      // 4a: invokespecial java/io/IOException.<init> (Ljava/lang/String;)V
+      // 4d: athrow
+      // 4e: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 51: athrow
+      // 52: aload 1
+      // 53: areturn
+   }
 
-                if (var7_7.hasNext()) ** continue;
-                v6 /* !! */  = var2_1.append("\n").append("\n");
-            } while (var0_3 == null);
-            ++var3_2;
-lbl61:
-            // 2 sources
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   private static PcapNetworkInterface o(String var0) throws IOException {
+      String[] var10000 = xQ.B();
+      StringBuilder var2 = new StringBuilder();
+      String[] var1 = var10000;
+      Iterator var4 = e().iterator();
+      if (var1 != null && !var4.hasNext()) {
+         A();
+      } else {
+         while (true) {
+            PcapNetworkInterface var3 = (PcapNetworkInterface)var4.next();
+            var2.append(var3.getName()).append(";");
+            if (var3.getName().equals(var0)) {
+               try {
+                  if (var1 != null) {
+                     return var3;
+                  }
+                  break;
+               } catch (IOException var5) {
+                  throw a(var5);
+               }
+            }
 
-            if (var5_4.hasNext()) ** continue;
-            var2_1.append("\n");
-            v0 = System.out;
-        } while (var0_3 == null);
-        v0.println(var2_1.toString());
-    }
+            if (!var4.hasNext()) {
+               A();
+               break;
+            }
+         }
+      }
 
-    /*
-     * Unable to fully structure code
-     */
-    private static void lambda$0() {
-        block8: {
-            var1 = new File(DJ.p);
-            var0_1 = xQ.B();
-            try {
-                block9: {
-                    if (var0_1 == null) break block8;
-                    if (!var1.exists()) ** GOTO lbl18
-                    break block9;
-                    catch (IOException v0) {
-                        throw DJ.a(v0);
-                    }
-                }
-                try {
-                    block10: {
-                        System.out.println("Output file is - " + var1.getCanonicalPath());
-                        if (var0_1 != null) break block8;
-                        break block10;
-                        catch (IOException v1) {
-                            throw DJ.a(v1);
-                        }
-                    }
-                    System.out.println("Dump file not existed - " + var1.getCanonicalPath());
-                }
-                catch (IOException v2) {
-                    throw DJ.a(v2);
-                }
-            }
-            catch (IOException var2_2) {
-                // empty catch block
-            }
-        }
-    }
+      throw new IllegalArgumentException(a(13678, 19143) + var0);
+   }
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+   private static void A$void() throws IOException {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic DJ.e ()Ljava/util/List;
+      // 003: astore 1
+      // 004: new java/lang/StringBuilder
+      // 007: dup
+      // 008: invokespecial java/lang/StringBuilder.<init> ()V
+      // 00b: astore 2
+      // 00c: invokestatic xQ.B ()[Ljava/lang/String;
+      // 00f: bipush 0
+      // 010: istore 3
+      // 011: astore 0
+      // 012: aload 1
+      // 013: invokeinterface java/util/List.iterator ()Ljava/util/Iterator; 1
+      // 018: astore 5
+      // 01a: aload 0
+      // 01b: ifnonnull 12e
+      // 01e: aload 5
+      // 020: invokeinterface java/util/Iterator.next ()Ljava/lang/Object; 1
+      // 025: goto 02c
+      // 028: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 02b: athrow
+      // 02c: checkcast org/pcap4j/core/PcapNetworkInterface
+      // 02f: astore 4
+      // 031: aload 2
+      // 032: sipush 13660
+      // 035: sipush 27946
+      // 038: invokestatic DJ.a (II)Ljava/lang/String;
+      // 03b: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 03e: iload 3
+      // 03f: invokevirtual java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+      // 042: sipush 13679
+      // 045: sipush -21324
+      // 048: invokestatic DJ.a (II)Ljava/lang/String;
+      // 04b: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 04e: aload 4
+      // 050: invokevirtual org/pcap4j/core/PcapNetworkInterface.getName ()Ljava/lang/String;
+      // 053: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 056: ldc "\n"
+      // 058: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 05b: pop
+      // 05c: aload 4
+      // 05e: aload 0
+      // 05f: ifnull 08c
+      // 062: invokevirtual org/pcap4j/core/PcapNetworkInterface.getDescription ()Ljava/lang/String;
+      // 065: ifnull 08a
+      // 068: aload 2
+      // 069: sipush 13683
+      // 06c: sipush 10563
+      // 06f: invokestatic DJ.a (II)Ljava/lang/String;
+      // 072: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 075: aload 4
+      // 077: invokevirtual org/pcap4j/core/PcapNetworkInterface.getDescription ()Ljava/lang/String;
+      // 07a: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 07d: ldc "\n"
+      // 07f: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 082: pop
+      // 083: goto 08a
+      // 086: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 089: athrow
+      // 08a: aload 4
+      // 08c: invokevirtual org/pcap4j/core/PcapNetworkInterface.getLinkLayerAddresses ()Ljava/util/ArrayList;
+      // 08f: invokevirtual java/util/ArrayList.iterator ()Ljava/util/Iterator;
+      // 092: astore 7
+      // 094: aload 0
+      // 095: ifnonnull 0c3
+      // 098: aload 7
+      // 09a: invokeinterface java/util/Iterator.next ()Ljava/lang/Object; 1
+      // 09f: goto 0a6
+      // 0a2: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0a5: athrow
+      // 0a6: checkcast org/pcap4j/util/LinkLayerAddress
+      // 0a9: astore 6
+      // 0ab: aload 2
+      // 0ac: sipush 13672
+      // 0af: sipush 26619
+      // 0b2: invokestatic DJ.a (II)Ljava/lang/String;
+      // 0b5: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 0b8: aload 6
+      // 0ba: invokevirtual java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      // 0bd: ldc "\n"
+      // 0bf: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 0c2: pop
+      // 0c3: aload 7
+      // 0c5: invokeinterface java/util/Iterator.hasNext ()Z 1
+      // 0ca: ifne 098
+      // 0cd: aload 4
+      // 0cf: invokevirtual org/pcap4j/core/PcapNetworkInterface.getAddresses ()Ljava/util/List;
+      // 0d2: invokeinterface java/util/List.iterator ()Ljava/util/Iterator; 1
+      // 0d7: aload 0
+      // 0d8: ifnull 0a6
+      // 0db: astore 7
+      // 0dd: aload 0
+      // 0de: ifnonnull 111
+      // 0e1: aload 7
+      // 0e3: invokeinterface java/util/Iterator.next ()Ljava/lang/Object; 1
+      // 0e8: goto 0ef
+      // 0eb: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0ee: athrow
+      // 0ef: checkcast org/pcap4j/core/PcapAddress
+      // 0f2: astore 6
+      // 0f4: aload 2
+      // 0f5: sipush 13652
+      // 0f8: sipush 32424
+      // 0fb: invokestatic DJ.a (II)Ljava/lang/String;
+      // 0fe: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 101: aload 6
+      // 103: invokeinterface org/pcap4j/core/PcapAddress.getAddress ()Ljava/net/InetAddress; 1
+      // 108: invokevirtual java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      // 10b: ldc "\n"
+      // 10d: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 110: pop
+      // 111: aload 7
+      // 113: invokeinterface java/util/Iterator.hasNext ()Z 1
+      // 118: ifne 0e1
+      // 11b: aload 2
+      // 11c: ldc "\n"
+      // 11e: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 121: ldc "\n"
+      // 123: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 126: aload 0
+      // 127: ifnull 0ef
+      // 12a: pop
+      // 12b: iinc 3 1
+      // 12e: aload 5
+      // 130: invokeinterface java/util/Iterator.hasNext ()Z 1
+      // 135: ifne 01e
+      // 138: aload 2
+      // 139: ldc "\n"
+      // 13b: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 13e: pop
+      // 13f: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 142: aload 0
+      // 143: ifnull 02c
+      // 146: aload 2
+      // 147: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // 14a: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 14d: return
+   }
 
-    private static String a(int n10, int n11) {
-        int n12 = (n10 ^ 0x357E) & 0xFFFF;
-        if (b[n12] == null) {
-            int n13;
-            char[] cArray = a[n12].toCharArray();
-            int n14 = switch (cArray[0] & 0xFF) {
-                case 0 -> 10;
-                case 1 -> 74;
-                case 2 -> 126;
-                case 3 -> 12;
-                case 4 -> 192;
-                case 5 -> 119;
-                case 6 -> 28;
-                case 7 -> 187;
-                case 8 -> 81;
-                case 9 -> 59;
-                case 10 -> 49;
-                case 11 -> 210;
-                case 12 -> 117;
-                case 13 -> 240;
-                case 14 -> 249;
-                case 15 -> 110;
-                case 16 -> 146;
-                case 17 -> 18;
-                case 18 -> 231;
-                case 19 -> 102;
-                case 20 -> 27;
-                case 21 -> 248;
-                case 22 -> 198;
-                case 23 -> 26;
-                case 24 -> 216;
-                case 25 -> 149;
-                case 26 -> 153;
-                case 27 -> 4;
-                case 28 -> 109;
-                case 29 -> 84;
-                case 30 -> 50;
-                case 31 -> 164;
-                case 32 -> 21;
-                case 33 -> 160;
-                case 34 -> 250;
-                case 35 -> 46;
-                case 36 -> 212;
-                case 37 -> 173;
-                case 38 -> 179;
-                case 39 -> 161;
-                case 40 -> 168;
-                case 41 -> 108;
-                case 42 -> 65;
-                case 43 -> 180;
-                case 44 -> 205;
-                case 45 -> 103;
-                case 46 -> 123;
-                case 47 -> 2;
-                case 48 -> 223;
-                case 49 -> 128;
-                case 50 -> 7;
-                case 51 -> 221;
-                case 52 -> 169;
-                case 53 -> 235;
-                case 54 -> 17;
-                case 55 -> 214;
-                case 56 -> 95;
-                case 57 -> 172;
-                case 58 -> 141;
-                case 59 -> 87;
-                case 60 -> 189;
-                case 61 -> 73;
-                case 62 -> 226;
-                case 63 -> 124;
-                case 64 -> 72;
-                case 65 -> 155;
-                case 66 -> 143;
-                case 67 -> 219;
-                case 68 -> 62;
-                case 69 -> 145;
-                case 70 -> 91;
-                case 71 -> 159;
-                case 72 -> 151;
-                case 73 -> 222;
-                case 74 -> 142;
-                case 75 -> 204;
-                case 76 -> 15;
-                case 77 -> 217;
-                case 78 -> 35;
-                case 79 -> 182;
-                case 80 -> 32;
-                case 81 -> 36;
-                case 82 -> 48;
-                case 83 -> 137;
-                case 84 -> 165;
-                case 85 -> 11;
-                case 86 -> 234;
-                case 87 -> 8;
-                case 88 -> 64;
-                case 89 -> 19;
-                case 90 -> 71;
-                case 91 -> 181;
-                case 92 -> 162;
-                case 93 -> 206;
-                case 94 -> 202;
-                case 95 -> 121;
-                case 96 -> 44;
-                case 97 -> 158;
-                case 98 -> 61;
-                case 99 -> 133;
-                case 100 -> 183;
-                case 101 -> 154;
-                case 102 -> 207;
-                case 103 -> 131;
-                case 104 -> 227;
-                case 105 -> 40;
-                case 106 -> 208;
-                case 107 -> 241;
-                case 108 -> 176;
-                case 109 -> 156;
-                case 110 -> 83;
-                case 111 -> 43;
-                case 112 -> 230;
-                case 113 -> 197;
-                case 114 -> 175;
-                case 115 -> 218;
-                case 116 -> 129;
-                case 117 -> 239;
-                case 118 -> 247;
-                case 119 -> 170;
-                case 120 -> 166;
-                case 121 -> 78;
-                case 122 -> 105;
-                case 123 -> 225;
-                case 124 -> 188;
-                case 125 -> 25;
-                case 126 -> 31;
-                case 127 -> 63;
-                case 128 -> 116;
-                case 129 -> 79;
-                case 130 -> 82;
-                case 131 -> 136;
-                case 132 -> 255;
-                case 133 -> 185;
-                case 134 -> 20;
-                case 135 -> 139;
-                case 136 -> 1;
-                case 137 -> 245;
-                case 138 -> 122;
-                case 139 -> 0;
-                case 140 -> 171;
-                case 141 -> 57;
-                case 142 -> 177;
-                case 143 -> 152;
-                case 144 -> 253;
-                case 145 -> 6;
-                case 146 -> 254;
-                case 147 -> 157;
-                case 148 -> 111;
-                case 149 -> 120;
-                case 150 -> 113;
-                case 151 -> 112;
-                case 152 -> 68;
-                case 153 -> 3;
-                case 154 -> 5;
-                case 155 -> 92;
-                case 156 -> 96;
-                case 157 -> 243;
-                case 158 -> 13;
-                case 159 -> 224;
-                case 160 -> 67;
-                case 161 -> 134;
-                case 162 -> 215;
-                case 163 -> 9;
-                case 164 -> 148;
-                case 165 -> 101;
-                case 166 -> 16;
-                case 167 -> 186;
-                case 168 -> 97;
-                case 169 -> 229;
-                case 170 -> 24;
-                case 171 -> 244;
-                case 172 -> 47;
-                case 173 -> 76;
-                case 174 -> 246;
-                case 175 -> 232;
-                case 176 -> 45;
-                case 177 -> 220;
-                case 178 -> 150;
-                case 179 -> 22;
-                case 180 -> 29;
-                case 181 -> 118;
-                case 182 -> 70;
-                case 183 -> 77;
-                case 184 -> 51;
-                case 185 -> 85;
-                case 186 -> 37;
-                case 187 -> 195;
-                case 188 -> 33;
-                case 189 -> 211;
-                case 190 -> 238;
-                case 191 -> 39;
-                case 192 -> 193;
-                case 193 -> 190;
-                case 194 -> 252;
-                case 195 -> 80;
-                case 196 -> 41;
-                case 197 -> 213;
-                case 198 -> 199;
-                case 199 -> 138;
-                case 200 -> 201;
-                case 201 -> 88;
-                case 202 -> 60;
-                case 203 -> 90;
-                case 204 -> 237;
-                case 205 -> 69;
-                case 206 -> 194;
-                case 207 -> 23;
-                case 208 -> 203;
-                case 209 -> 184;
-                case 210 -> 86;
-                case 211 -> 99;
-                case 212 -> 106;
-                case 213 -> 233;
-                case 214 -> 94;
-                case 215 -> 58;
-                case 216 -> 56;
-                case 217 -> 30;
-                case 218 -> 163;
-                case 219 -> 236;
-                case 220 -> 200;
-                case 221 -> 38;
-                case 222 -> 75;
-                case 223 -> 174;
-                case 224 -> 93;
-                case 225 -> 147;
-                case 226 -> 42;
-                case 227 -> 144;
-                case 228 -> 104;
-                case 229 -> 98;
-                case 230 -> 191;
-                case 231 -> 242;
-                case 232 -> 34;
-                case 233 -> 55;
-                case 234 -> 228;
-                case 235 -> 107;
-                case 236 -> 196;
-                case 237 -> 167;
-                case 238 -> 140;
-                case 239 -> 114;
-                case 240 -> 53;
-                case 241 -> 115;
-                case 242 -> 251;
-                case 243 -> 178;
-                case 244 -> 66;
-                case 245 -> 135;
-                case 246 -> 100;
-                case 247 -> 127;
-                case 248 -> 209;
-                case 249 -> 54;
-                case 250 -> 130;
-                case 251 -> 89;
-                case 252 -> 52;
-                case 253 -> 125;
-                case 254 -> 132;
-                default -> 14;
-            };
-            int n15 = (n11 & 0xFF) - n14;
-            if (n15 < 0) {
-                n15 += 256;
+   private static void lambda$0() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic xQ.B ()[Ljava/lang/String;
+      // 03: new java/io/File
+      // 06: dup
+      // 07: getstatic DJ.p Ljava/lang/String;
+      // 0a: invokespecial java/io/File.<init> (Ljava/lang/String;)V
+      // 0d: astore 1
+      // 0e: astore 0
+      // 0f: aload 0
+      // 10: ifnull 65
+      // 13: aload 1
+      // 14: invokevirtual java/io/File.exists ()Z
+      // 17: ifeq 45
+      // 1a: goto 21
+      // 1d: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 20: athrow
+      // 21: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 24: aload 1
+      // 25: invokevirtual java/io/File.getCanonicalPath ()Ljava/lang/String;
+      // 28: sipush 13690
+      // 2b: sipush -1718
+      // 2e: invokestatic DJ.a (II)Ljava/lang/String;
+      // 31: swap
+      // 32: invokedynamic makeConcatWithConstants (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001\u0001" ]
+      // 37: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 3a: aload 0
+      // 3b: ifnonnull 69
+      // 3e: goto 45
+      // 41: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 44: athrow
+      // 45: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 48: aload 1
+      // 49: invokevirtual java/io/File.getCanonicalPath ()Ljava/lang/String;
+      // 4c: sipush 13692
+      // 4f: sipush -6068
+      // 52: invokestatic DJ.a (II)Ljava/lang/String;
+      // 55: swap
+      // 56: invokedynamic makeConcatWithConstants (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; bsm=java/lang/invoke/StringConcatFactory.makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; args=[ "\u0001\u0001" ]
+      // 5b: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 5e: goto 65
+      // 61: invokestatic DJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 64: athrow
+      // 65: goto 69
+      // 68: astore 2
+      // 69: return
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
+
+   private static String a(int var0, int var1) {
+      int var2 = (var0 ^ 13694) & 65535;
+      if (b[var2] == null) {
+         char[] var3 = a[var2].toCharArray();
+
+         short var4 = switch (var3[0] & 0xFF) {
+            case 0 -> 10;
+            case 1 -> 74;
+            case 2 -> 126;
+            case 3 -> 12;
+            case 4 -> 192;
+            case 5 -> 119;
+            case 6 -> 28;
+            case 7 -> 187;
+            case 8 -> 81;
+            case 9 -> 59;
+            case 10 -> 49;
+            case 11 -> 210;
+            case 12 -> 117;
+            case 13 -> 240;
+            case 14 -> 249;
+            case 15 -> 110;
+            case 16 -> 146;
+            case 17 -> 18;
+            case 18 -> 231;
+            case 19 -> 102;
+            case 20 -> 27;
+            case 21 -> 248;
+            case 22 -> 198;
+            case 23 -> 26;
+            case 24 -> 216;
+            case 25 -> 149;
+            case 26 -> 153;
+            case 27 -> 4;
+            case 28 -> 109;
+            case 29 -> 84;
+            case 30 -> 50;
+            case 31 -> 164;
+            case 32 -> 21;
+            case 33 -> 160;
+            case 34 -> 250;
+            case 35 -> 46;
+            case 36 -> 212;
+            case 37 -> 173;
+            case 38 -> 179;
+            case 39 -> 161;
+            case 40 -> 168;
+            case 41 -> 108;
+            case 42 -> 65;
+            case 43 -> 180;
+            case 44 -> 205;
+            case 45 -> 103;
+            case 46 -> 123;
+            case 47 -> 2;
+            case 48 -> 223;
+            case 49 -> 128;
+            case 50 -> 7;
+            case 51 -> 221;
+            case 52 -> 169;
+            case 53 -> 235;
+            case 54 -> 17;
+            case 55 -> 214;
+            case 56 -> 95;
+            case 57 -> 172;
+            case 58 -> 141;
+            case 59 -> 87;
+            case 60 -> 189;
+            case 61 -> 73;
+            case 62 -> 226;
+            case 63 -> 124;
+            case 64 -> 72;
+            case 65 -> 155;
+            case 66 -> 143;
+            case 67 -> 219;
+            case 68 -> 62;
+            case 69 -> 145;
+            case 70 -> 91;
+            case 71 -> 159;
+            case 72 -> 151;
+            case 73 -> 222;
+            case 74 -> 142;
+            case 75 -> 204;
+            case 76 -> 15;
+            case 77 -> 217;
+            case 78 -> 35;
+            case 79 -> 182;
+            case 80 -> 32;
+            case 81 -> 36;
+            case 82 -> 48;
+            case 83 -> 137;
+            case 84 -> 165;
+            case 85 -> 11;
+            case 86 -> 234;
+            case 87 -> 8;
+            case 88 -> 64;
+            case 89 -> 19;
+            case 90 -> 71;
+            case 91 -> 181;
+            case 92 -> 162;
+            case 93 -> 206;
+            case 94 -> 202;
+            case 95 -> 121;
+            case 96 -> 44;
+            case 97 -> 158;
+            case 98 -> 61;
+            case 99 -> 133;
+            case 100 -> 183;
+            case 101 -> 154;
+            case 102 -> 207;
+            case 103 -> 131;
+            case 104 -> 227;
+            case 105 -> 40;
+            case 106 -> 208;
+            case 107 -> 241;
+            case 108 -> 176;
+            case 109 -> 156;
+            case 110 -> 83;
+            case 111 -> 43;
+            case 112 -> 230;
+            case 113 -> 197;
+            case 114 -> 175;
+            case 115 -> 218;
+            case 116 -> 129;
+            case 117 -> 239;
+            case 118 -> 247;
+            case 119 -> 170;
+            case 120 -> 166;
+            case 121 -> 78;
+            case 122 -> 105;
+            case 123 -> 225;
+            case 124 -> 188;
+            case 125 -> 25;
+            case 126 -> 31;
+            case 127 -> 63;
+            case 128 -> 116;
+            case 129 -> 79;
+            case 130 -> 82;
+            case 131 -> 136;
+            case 132 -> 255;
+            case 133 -> 185;
+            case 134 -> 20;
+            case 135 -> 139;
+            case 136 -> 1;
+            case 137 -> 245;
+            case 138 -> 122;
+            case 139 -> 0;
+            case 140 -> 171;
+            case 141 -> 57;
+            case 142 -> 177;
+            case 143 -> 152;
+            case 144 -> 253;
+            case 145 -> 6;
+            case 146 -> 254;
+            case 147 -> 157;
+            case 148 -> 111;
+            case 149 -> 120;
+            case 150 -> 113;
+            case 151 -> 112;
+            case 152 -> 68;
+            case 153 -> 3;
+            case 154 -> 5;
+            case 155 -> 92;
+            case 156 -> 96;
+            case 157 -> 243;
+            case 158 -> 13;
+            case 159 -> 224;
+            case 160 -> 67;
+            case 161 -> 134;
+            case 162 -> 215;
+            case 163 -> 9;
+            case 164 -> 148;
+            case 165 -> 101;
+            case 166 -> 16;
+            case 167 -> 186;
+            case 168 -> 97;
+            case 169 -> 229;
+            case 170 -> 24;
+            case 171 -> 244;
+            case 172 -> 47;
+            case 173 -> 76;
+            case 174 -> 246;
+            case 175 -> 232;
+            case 176 -> 45;
+            case 177 -> 220;
+            case 178 -> 150;
+            case 179 -> 22;
+            case 180 -> 29;
+            case 181 -> 118;
+            case 182 -> 70;
+            case 183 -> 77;
+            case 184 -> 51;
+            case 185 -> 85;
+            case 186 -> 37;
+            case 187 -> 195;
+            case 188 -> 33;
+            case 189 -> 211;
+            case 190 -> 238;
+            case 191 -> 39;
+            case 192 -> 193;
+            case 193 -> 190;
+            case 194 -> 252;
+            case 195 -> 80;
+            case 196 -> 41;
+            case 197 -> 213;
+            case 198 -> 199;
+            case 199 -> 138;
+            case 200 -> 201;
+            case 201 -> 88;
+            case 202 -> 60;
+            case 203 -> 90;
+            case 204 -> 237;
+            case 205 -> 69;
+            case 206 -> 194;
+            case 207 -> 23;
+            case 208 -> 203;
+            case 209 -> 184;
+            case 210 -> 86;
+            case 211 -> 99;
+            case 212 -> 106;
+            case 213 -> 233;
+            case 214 -> 94;
+            case 215 -> 58;
+            case 216 -> 56;
+            case 217 -> 30;
+            case 218 -> 163;
+            case 219 -> 236;
+            case 220 -> 200;
+            case 221 -> 38;
+            case 222 -> 75;
+            case 223 -> 174;
+            case 224 -> 93;
+            case 225 -> 147;
+            case 226 -> 42;
+            case 227 -> 144;
+            case 228 -> 104;
+            case 229 -> 98;
+            case 230 -> 191;
+            case 231 -> 242;
+            case 232 -> 34;
+            case 233 -> 55;
+            case 234 -> 228;
+            case 235 -> 107;
+            case 236 -> 196;
+            case 237 -> 167;
+            case 238 -> 140;
+            case 239 -> 114;
+            case 240 -> 53;
+            case 241 -> 115;
+            case 242 -> 251;
+            case 243 -> 178;
+            case 244 -> 66;
+            case 245 -> 135;
+            case 246 -> 100;
+            case 247 -> 127;
+            case 248 -> 209;
+            case 249 -> 54;
+            case 250 -> 130;
+            case 251 -> 89;
+            case 252 -> 52;
+            case 253 -> 125;
+            case 254 -> 132;
+            default -> 14;
+         };
+         int var5 = (var1 & 0xFF) - var4;
+         if (var5 < 0) {
+            var5 += 256;
+         }
+
+         int var6 = ((var1 & 65535) >>> 8) - var4;
+         if (var6 < 0) {
+            var6 += 256;
+         }
+
+         for (int var7 = 0; var7 < var3.length; var7++) {
+            int var8 = var7 % 2;
+            char var10002 = var3[var7];
+            if (var8 == 0) {
+               var3[var7] = (char)(var10002 ^ var5);
+               var5 = ((var5 >>> 3 | var5 << 5) ^ var3[var7]) & 0xFF;
+            } else {
+               var3[var7] = (char)(var10002 ^ var6);
+               var6 = ((var6 >>> 3 | var6 << 5) ^ var3[var7]) & 0xFF;
             }
-            if ((n13 = ((n11 & 0xFFFF) >>> 8) - n14) < 0) {
-                n13 += 256;
-            }
-            int n16 = 0;
-            while (n16 < cArray.length) {
-                int n17 = n16 % 2;
-                int n18 = n16;
-                char[] cArray2 = cArray;
-                char c2 = cArray[n18];
-                if (n17 == 0) {
-                    cArray2[n18] = (char)(c2 ^ n15);
-                    n15 = ((n15 >>> 3 | n15 << 5) ^ cArray[n16]) & 0xFF;
-                } else {
-                    cArray2[n18] = (char)(c2 ^ n13);
-                    n13 = ((n13 >>> 3 | n13 << 5) ^ cArray[n16]) & 0xFF;
-                }
-                ++n16;
-            }
-            DJ.b[n12] = new String(cArray).intern();
-        }
-        return b[n12];
-    }
+         }
+
+         b[var2] = new String(var3).intern();
+      }
+
+      return b[var2];
+   }
 }
+
+
+
+
 

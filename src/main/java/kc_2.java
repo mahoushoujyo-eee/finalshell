@@ -1,55 +1,35 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import com.ky_2;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-/*
- * Renamed from kc
- */
-class kc_2
-extends Thread {
-    final Process Y;
+class Kc_2 implements ActionListener {
+   final aM H;
+   final xT F;
 
-    kc_2(Process process) {
-        this.Y = process;
-    }
+   Kc_2(xT var1, aM var2) {
+      this.F = var1;
+      this.H = var2;
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     * Enabled unnecessary exception pruning
-     * Enabled aggressive exception aggregation
-     */
-    @Override
-    public void run() {
-        InputStream inputStream = ((Process)this.Y).getErrorStream();
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-        ky_2[] ky_2Array = yt_1.c();
-        while (true) {
-            try {
-                String string;
-                while ((string = bufferedReader.readLine()) != null) {
-                }
-            }
-            catch (IOException iOException) {
-                iOException.printStackTrace();
-                return;
-            }
-            try {
-                if (ky_2Array != null) return;
-            }
-            catch (IOException iOException) {
-                throw kc_2.a(iOException);
-            }
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      Method var10000 = (Method)com.c.c(389935200192627445L).get(this);
+      Object[] var10001 = com.c.a(true);
+      Method var10003 = com.c.d(328322194154687590L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
 
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
 }
+
+
+
+
 

@@ -1,23 +1,18 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.LN;
-import com.N;
-import com.kf_0;
-import com.w8_0;
 import java.util.List;
 
-final class LF
-extends LN {
-    @Override
-    public String W(w8_0 w8_02, int n10) {
-        List list = ((kf_0)((Object)w8_02.s())).q();
-        if (n10 == list.size()) {
-            return w8_02.b().M();
-        }
-        return ((N)list.get((int)n10)).m;
-    }
+class LF extends com.LN {
+   @Override
+   public String W(w8_2 var1, int var2) {
+      List var3 = ((com.Kf_2)var1.s()).q();
+      return var2 == var3.size() ? var1.b().M() : ((com.N)var3.get(var2)).m;
+   }
 }
+
+
+
+
+
+
 

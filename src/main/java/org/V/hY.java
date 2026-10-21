@@ -1,51 +1,45 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
 import java.util.Objects;
-import org.v._S;
-import org.v.h4;
-import org.v.h_1;
-import org.v.hd_0;
-import org.v.hv_0;
 
-class hY
-extends hv_0 {
-    final hd_0[] i;
-    final h_1 h;
+class hY extends hv_2 {
+   final hd_2[] i;
+   final H_3 h;
 
-    hY(h_1 h_12, hd_0 hd_02, hd_0[] hd_0Array) {
-        this.h = h_12;
-        this.i = hd_0Array;
-        hd_0 hd_03 = hd_02;
-        Objects.requireNonNull(hd_03);
-        super(hd_03);
-    }
+   hY(H_3 var1, hd_2 var2, hd_2[] var3) {
+      this.h = var1;
+      this.i = var3;
+      Objects.requireNonNull(var2);
+      super(var2);
+   }
 
-    @Override
-    public boolean c() {
-        return false;
-    }
+   @Override
+   public boolean c() {
+      return false;
+   }
 
-    @Override
-    public hd_0[] d() {
-        return this.i;
-    }
+   @Override
+   public hd_2[] d() {
+      return this.i;
+   }
 
-    @Override
-    public _S p() {
-        return _S.PUBLIC;
-    }
+   @Override
+   public _S p() {
+      return _S.PUBLIC;
+   }
 
-    @Override
-    public hd_0[] S() {
-        return new hd_0[0];
-    }
+   @Override
+   public hd_2[] S() {
+      return new hd_2[0];
+   }
 
-    @Override
-    public h4[] f() {
-        return new h4[0];
-    }
+   @Override
+   public h4[] f() {
+      return new h4[0];
+   }
 }
+
+
+
+
 

@@ -1,57 +1,70 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.fm_0;
-import com.uE;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class NT
-implements ActionListener {
-    final fm_0 g;
+class NT implements ActionListener {
+   final com.Fm_2 g;
 
-    NT(fm_0 fm_02) {
-        this.g = fm_02;
-    }
+   NT(com.Fm_2 var1) {
+      this.g = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block4: {
-            fm_0 fm_02;
-            block5: {
-                block6: {
-                    int n10;
-                    boolean bl;
-                    block2: {
-                        block3: {
-                            bl = uE.o();
-                            n10 = this.g.m;
-                            if (!bl) break block2;
-                            if (n10 == 0) break block3;
-                            n10 = this.g.G++;
-                            if (!bl) break block2;
-                            if (n10 >= 5) break block3;
-                            this.g.U.repaint();
-                            if (bl) break block4;
-                        }
-                        fm_02 = this.g;
-                        if (!bl) break block5;
-                        n10 = fm_02.m ? 1 : 0;
-                    }
-                    if (n10 != 0) break block6;
-                    fm_02 = this.g;
-                    if (!bl) break block5;
-                    if (fm_02.G <= 0) break block6;
-                    --this.g.G;
-                    this.g.U.repaint();
-                    if (bl) break block4;
-                }
-                fm_02 = this.g;
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      com.Fm_2 var3;
+      label40: {
+         boolean var2;
+         var2 = uE.o();
+         var10000 = this.g.m;
+         label36:
+         if (var2) {
+            if (this.g.m) {
+               var10000 = this.g.G;
+               if (!var2) {
+                  break label36;
+               }
+
+               if (this.g.G < 5) {
+                  this.g.G++;
+                  this.g.U.repaint();
+                  if (var2) {
+                     return;
+                  }
+               }
             }
-            fm_02.g.Y();
-        }
-    }
+
+            var3 = this.g;
+            if (!var2) {
+               break label40;
+            }
+
+            var10000 = this.g.m;
+         }
+
+         if (var10000 == 0) {
+            var3 = this.g;
+            if (!var2) {
+               break label40;
+            }
+
+            if (this.g.G > 0) {
+               this.g.G--;
+               this.g.U.repaint();
+               if (var2) {
+                  return;
+               }
+            }
+         }
+
+         var3 = this.g;
+      }
+
+      var3.g.Y();
+   }
 }
+
+
+
+
 

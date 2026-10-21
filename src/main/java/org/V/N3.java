@@ -1,44 +1,38 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
 import org.I;
-import org.v.NR;
-import org.v.N_;
-import org.v._4;
-import org.v.u_1;
 
-public final class N3
-extends NR {
-    public final N_ o;
-    public final u_1 P;
-    private static final long a;
+public final class N3 extends NR {
+   public final N_ o;
+   public final u_3 P;
+   private static final long a;
 
-    public N3(I i2, N_ n_3, u_1 u_12) {
-        super(i2);
-        this.o = n_3;
-        this.P = u_12;
-    }
+   public N3(I var1, N_ var2, u_3 var3) {
+      super(var1);
+      this.o = var2;
+      this.P = var3;
+   }
 
-    @Override
-    public String toString() {
-        return this.o.toString() + (char)a + this.P.h();
-    }
+   @Override
+   public String toString() {
+      return this.o.toString() + (int)a + this.P.h();
+   }
 
-    @Override
-    @c
-    public Object W(_4 _42) throws Throwable {
-        return _42.M(this);
-    }
+   @org.F.c
+   @Override
+   public Object W(_4 var1) throws Throwable {
+      return var1.M(this);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 4778177404587537342L;
-        a = 0x9A2F46729A3CF390L ^ l2;
-    }
+   static {
+      long var0 = 4778177404587537342L;
+      long var10002 = -7336567809935346800L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

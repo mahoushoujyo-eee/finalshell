@@ -1,120 +1,121 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.util.ArrayList;
 import java.util.HashSet;
 
 public class g9 {
-    UR f;
-    int h = 0;
-    ArrayList A;
-    HashSet a;
+   UR f;
+   int h = 0;
+   ArrayList A;
+   HashSet a;
 
-    g9(UR uR2) {
-        this.f = uR2;
-        this.A = new ArrayList();
-        this.a = new HashSet();
-    }
+   g9(UR var1) {
+      this.f = var1;
+      this.A = new ArrayList();
+      this.a = new HashSet();
+   }
 
-    synchronized void S(int n10) {
-        String[] stringArray = QI.N();
-        boolean bl = this.a.contains(n10);
-        if (stringArray != null && !bl) {
-            this.A.add(n10);
-            bl = this.a.add(n10);
-        }
-    }
+   synchronized void S(int var1) {
+      String[] var2 = QI.N();
+      if (var2 != null && !this.a.contains(var1)) {
+         this.A.add(var1);
+         this.a.add(var1);
+      }
+   }
 
-    /*
-     * Handled impossible loop by adding 'first' condition
-     * Enabled aggressive block sorting
-     */
-    synchronized void x() {
-        block10: {
-            int n10;
-            int n11;
-            String[] stringArray;
-            int n12;
-            int n13;
-            int n14;
-            int n15;
-            block8: {
-                int n16;
-                block9: {
-                    n15 = 0;
-                    n14 = yh_0.a;
-                    n13 = this.A.size();
-                    n12 = n13 / n14;
-                    stringArray = QI.N();
-                    int n17 = n13 % n14;
-                    if (stringArray != null) {
-                        if (n17 != 0) {
-                            // empty if block
-                        }
-                        n17 = ++n12;
-                    }
-                    if (stringArray != null) {
-                        if (n17 == 0) {
-                            n12 = 1;
-                        }
-                        n17 = n14;
-                    }
-                    n11 = n17;
-                    n16 = n13;
-                    if (stringArray == null) break block8;
-                    if (n16 > n11) break block9;
-                    this.f.z.s(this.A);
-                    this.f.z.s(this.A);
-                    if (stringArray != null) break block10;
-                }
-                n16 = n10 = 0;
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   synchronized void x() {
+      String[] var10000 = QI.N();
+      int var2 = 0;
+      int var3 = Yh_2.a;
+      int var4 = this.A.size();
+      int var5 = var4 / var3;
+      String[] var1 = var10000;
+      int var9 = var4 % var3;
+      if (var1 != null) {
+         if (var9 != 0) {
+            var5++;
+         }
+
+         var9 = var5;
+      }
+
+      if (var1 != null) {
+         if (var9 == 0) {
+            var5 = 1;
+         }
+
+         var9 = var3;
+      }
+
+      int var6 = var9;
+      int var10 = var4;
+      if (var1 != null) {
+         if (var4 <= var6) {
+            this.f.z.s(this.A);
+            this.f.z.s(this.A);
+            if (var1 != null) {
+               return;
             }
-            boolean bl = true;
-            do {
-                block12: {
-                    int n18;
-                    int n19;
-                    block11: {
-                        if (bl && !(bl = false) && stringArray != null) continue;
-                        ArrayList arrayList = this.m(n15, n11, this.A);
-                        this.f.z.s(arrayList);
-                        this.f.z.s(arrayList);
-                        n19 = (n15 += n14) + n11;
-                        n18 = n13;
-                        if (stringArray == null) break block11;
-                        if (n19 <= n18) break block12;
-                        n19 = n13;
-                        n18 = (n12 - 1) * n14;
-                    }
-                    n11 = n19 - n18;
-                }
-                ++n10;
-            } while (n10 < n12);
-        }
-    }
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    ArrayList m(int var1_1, int var2_2, ArrayList var3_3) {
-        var5_4 = new ArrayList<Integer>();
-        var4_5 = QI.N();
-        var6_6 = 0;
-        if (var4_5 != null) ** GOTO lbl11
-        block0: while (true) {
-            v0 = var5_4;
-            do {
-                v0.add((Integer)var3_3.get(var1_1 + var6_6));
-                ++var6_6;
-lbl11:
-                // 2 sources
+         var10 = 0;
+      }
 
-                if (var6_6 < var2_2) continue block0;
-                v0 = var5_4;
-            } while (var4_5 == null);
-            break;
-        }
-        return v0;
-    }
+      int var7 = var10;
+      if (var1 == null || var7 < var5) {
+         do {
+            ArrayList var8 = this.m(var2, var6, this.A);
+            this.f.z.s(var8);
+            this.f.z.s(var8);
+            var2 += var3;
+            int var11 = var2 + var6;
+            if (var1 != null) {
+               if (var11 > var4) {
+                  var6 = var4 - (var5 - 1) * var3;
+                  var7++;
+               } else {
+                  var7++;
+               }
+            } else {
+               var6 = var11 - var4;
+               var7++;
+            }
+         } while (var7 < var5);
+      }
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   ArrayList m(int var1, int var2, ArrayList var3) {
+      String[] var10000 = QI.N();
+      ArrayList var5 = new ArrayList();
+      String[] var4 = var10000;
+      int var6 = 0;
+      ArrayList var7;
+      if (var4 == null) {
+         var7 = var5;
+      } else if (var6 >= var2) {
+         var7 = var5;
+         if (var4 != null) {
+            return var5;
+         }
+      } else {
+         var7 = var5;
+      }
+
+      while (true) {
+         var7.add((Integer)var3.get(var1 + var6));
+         if (++var6 >= var2) {
+            var7 = var5;
+            if (var4 != null) {
+               return var5;
+            }
+         } else {
+            var7 = var5;
+         }
+      }
+   }
 }
+
+
+
+
 

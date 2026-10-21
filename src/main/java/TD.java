@@ -1,66 +1,66 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
-public class TD
-extends TN {
-    String D;
-    String L;
+public class TD extends TN {
+   String D;
+   String L;
 
-    public TD(String string, String string2) {
-        this.n = dq_0.Z;
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        DataOutputStream dataOutputStream = new DataOutputStream(byteArrayOutputStream);
-        try {
-            dataOutputStream.writeShort(this.n);
-            dataOutputStream.writeInt(string.getBytes().length);
-            dataOutputStream.write(string.getBytes());
-            dataOutputStream.writeInt(string2.getBytes().length);
-            dataOutputStream.write(string2.getBytes());
-            this.u = byteArrayOutputStream.toByteArray();
-        }
-        catch (IOException iOException) {
-            iOException.printStackTrace();
-        }
-    }
+   public TD(String var1, String var2) {
+      this.n = Dq_2.Z;
+      ByteArrayOutputStream var3 = new ByteArrayOutputStream();
+      DataOutputStream var4 = new DataOutputStream(var3);
 
-    public TD(byte[] byArray) {
-        this.n = dq_0.Z;
-        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(byArray);
-        DataInputStream dataInputStream = new DataInputStream(byteArrayInputStream);
-        try {
-            this.n = dataInputStream.readShort();
-            byte[] byArray2 = new byte[dataInputStream.readInt()];
-            dataInputStream.read(byArray2);
-            this.L = new String(byArray2);
-            byte[] byArray3 = new byte[dataInputStream.readInt()];
-            dataInputStream.read(byArray3);
-            this.D = new String(byArray3);
-        }
-        catch (Exception exception) {
-            exception.printStackTrace();
-        }
-    }
+      try {
+         var4.writeShort(this.n);
+         var4.writeInt(var1.getBytes().length);
+         var4.write(var1.getBytes());
+         var4.writeInt(var2.getBytes().length);
+         var4.write(var2.getBytes());
+         this.u = var3.toByteArray();
+      } catch (IOException var6) {
+         var6.printStackTrace();
+      }
+   }
 
-    public String x() {
-        return this.D;
-    }
+   public TD(byte[] var1) {
+      this.n = Dq_2.Z;
+      ByteArrayInputStream var2 = new ByteArrayInputStream(var1);
+      DataInputStream var3 = new DataInputStream(var2);
 
-    public void m(String string) {
-        this.D = string;
-    }
+      try {
+         this.n = var3.readShort();
+         byte[] var4 = new byte[var3.readInt()];
+         var3.read(var4);
+         this.L = new String(var4);
+         byte[] var5 = new byte[var3.readInt()];
+         var3.read(var5);
+         this.D = new String(var5);
+      } catch (Exception var6) {
+         var6.printStackTrace();
+      }
+   }
 
-    public String T() {
-        return this.L;
-    }
+   public String x() {
+      return this.D;
+   }
 
-    public void Z(String string) {
-        this.L = string;
-    }
+   public void m(String var1) {
+      this.D = var1;
+   }
+
+   public String T() {
+      return this.L;
+   }
+
+   public void Z(String var1) {
+      this.L = var1;
+   }
 }
+
+
+
+
 

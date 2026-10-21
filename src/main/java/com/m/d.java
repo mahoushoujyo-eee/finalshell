@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.m;
 
-import com.m.s;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 
-class d
-implements TreeSelectionListener {
-    final s g;
+class d implements TreeSelectionListener {
+   final com.m.s g;
 
-    d(s s2) {
-        this.g = s2;
-    }
+   d(com.m.s var1) {
+      this.g = var1;
+   }
 
-    @Override
-    public void valueChanged(TreeSelectionEvent treeSelectionEvent) {
-        this.g.U();
-    }
+   @Override
+   public void valueChanged(TreeSelectionEvent var1) {
+      this.g.U();
+   }
 }
+
+
+
+
 

@@ -1,22 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com._y_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class TV
-implements ActionListener {
-    final _y_0 U;
+class TV implements ActionListener {
+   final _y_2 U;
 
-    TV(_y_0 _y_02) {
-        this.U = _y_02;
-    }
+   TV(_y_2 var1) {
+      this.U = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+   }
 }
+
+
+
+
 

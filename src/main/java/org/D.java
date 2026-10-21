@@ -1,44 +1,39 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org;
 
 import java.io.IOException;
 import java.io.Reader;
-import org.F.c;
-import org.U;
-import org.Y;
-import org.b_0;
-import org.e_0;
 
-public interface D
-extends e_0 {
-    public void w(@c ClassLoader var1);
+public interface D extends org.e_2 {
+   void w(@org.F.c ClassLoader var1);
 
-    public void N(boolean var1, boolean var2, boolean var3);
+   void N(boolean var1, boolean var2, boolean var3);
 
-    public void q(@c U var1);
+   void q(@org.F.c org.U var1);
 
-    public void t(@c Y var1);
+   void t(@org.F.c org.Y var1);
 
-    public void P(String[] var1);
+   void P(String[] var1);
 
-    public String[] i();
+   String[] i();
 
-    public void t(String var1);
+   void t(String var1);
 
-    public void Q(@c Class var1);
+   void Q(@org.F.c Class var1);
 
-    @Deprecated
-    public void Z(@c Class var1);
+   @Deprecated
+   void Z(@org.F.c Class var1);
 
-    public void P(Class[] var1);
+   void P(Class[] var1);
 
-    @Deprecated
-    public void Q(Class[] var1);
+   @Deprecated
+   void Q(Class[] var1);
 
-    public Class t();
+   Class t();
 
-    public Object c(Reader var1) throws b_0, IOException;
+   Object c(Reader var1) throws b_2, IOException;
 }
+
+
+
+
 

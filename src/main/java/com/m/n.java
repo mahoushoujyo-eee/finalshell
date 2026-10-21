@@ -1,112 +1,110 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.m;
 
 import com.GO;
-import com.m.T;
 import java.awt.BasicStroke;
 import java.awt.Color;
 
 public final class n {
-    public static boolean o;
-    public static boolean a;
-    public static Color r;
-    public static boolean y;
-    public static Color g;
-    public static boolean A;
-    public static Color x;
-    public static T Y;
-    public static int Q;
-    public static int O;
-    public static boolean G;
-    public static Color E;
-    public static Color W;
-    public static int j;
-    public static BasicStroke D;
-    public static int U;
-    public static int F;
+   public static boolean o;
+   public static boolean a;
+   public static Color r;
+   public static boolean y;
+   public static Color g;
+   public static boolean A;
+   public static Color x;
+   public static com.m.T Y;
+   public static int Q;
+   public static int O;
+   public static boolean G;
+   public static Color E;
+   public static Color W;
+   public static int j;
+   public static BasicStroke D;
+   public static int U;
+   public static int F;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var1 = 2306466989437600228L;
-                var0_1 = new long[8];
-                var4_2 = 0;
-                var5_3 = "hc\u001f\u00e3\u00b7\u0097\u00c1\n!\u007f\u00b2q\u00b7\u0097\u00c1,\u00c3C\u008dH\u00b7\u0097\u00c1\u00d6\u00a9\u00c1\u0081\u00ea\u00b7\u0097\u00c1\u001b\u00c6,f,\u00b7\u0097\u00c1,\u00fa%:{\u00b7\u0097\u00c1\n";
-                var6_4 = "hc\u001f\u00e3\u00b7\u0097\u00c1\n!\u007f\u00b2q\u00b7\u0097\u00c1,\u00c3C\u008dH\u00b7\u0097\u00c1\u00d6\u00a9\u00c1\u0081\u00ea\u00b7\u0097\u00c1\u001b\u00c6,f,\u00b7\u0097\u00c1,\u00fa%:{\u00b7\u0097\u00c1\n".length();
-                var3_5 = 0;
-                while (true) {
-                    var7_6 = var5_3.substring(var3_5, var3_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var0_1;
-                    v1 = var4_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
+   static {
+      long var1 = 2306466989437600228L;
+      long[] var0 = new long[8];
+      int var4 = 0;
+      String var5 = "hc\u001fã·\u0097Á\n!\u007f²q·\u0097Á,ÃC\u008dH·\u0097ÁÖ©Á\u0081ê·\u0097Á\u001bÆ,f,·\u0097Á,ú%:{·\u0097Á\n";
+      int var6 = "hc\u001fã·\u0097Á\n!\u007f²q·\u0097Á,ÃC\u008dH·\u0097ÁÖ©Á\u0081ê·\u0097Á\u001bÆ,f,·\u0097Á,ú%:{·\u0097Á\n".length();
+      byte var3 = 0;
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var3_5 < var6_4) ** continue;
-                    var5_3 = "\u0016\u00f1J\u0089\u00b7\u0097\u00c1\u00ec\u00fey\u001b\u00ce\u00b7\u0097\u00c1\u00e8";
-                    var6_4 = "\u0016\u00f1J\u0089\u00b7\u0097\u00c1\u00ec\u00fey\u001b\u00ce\u00b7\u0097\u00c1\u00e8".length();
-                    var3_5 = 0;
-                    while (true) {
-                        var7_6 = var5_3.substring(var3_5, var3_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var0_1;
-                        v1 = var4_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
+      label21:
+      while (true) {
+         int var10001 = var3;
+         var3 += 8;
+         byte[] var7 = var5.substring(var10001, var3).getBytes("ISO-8859-1");
+         long[] var10000 = var0;
+         var10001 = var4++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var3_5 < var6_4) ** continue;
-                    break block8;
-                    break;
-                }
+         while (true) {
+            long var13 = var10002 ^ var1;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var3 >= var6) {
+                     o = false;
+                     a = true;
+                     r = new Color((int)var0[1], (int)var0[4], (int)var0[4]);
+                     y = true;
+                     g = new Color((int)var0[5], (int)var0[0], (int)var0[0]);
+                     A = true;
+                     x = Color.GRAY;
+                     Y = com.m.T.line;
+                     Q = GO.Fx;
+                     O = GO.FG;
+                     G = true;
+                     E = new Color(0, 0, (int)var0[3], (int)var0[2]);
+                     W = Color.GRAY;
+                     j = GO.Fx;
+                     D = new BasicStroke(1.0F, 1, 1, 0.0F, new float[]{3.0F, 3.0F}, 0.0F);
+                     U = (int)var0[6];
+                     F = (int)var0[7];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var3 < var6) {
+                     continue label21;
+                  }
+
+                  var5 = "\u0016ñJ\u0089·\u0097Áìþy\u001bÎ·\u0097Áè";
+                  var6 = "\u0016ñJ\u0089·\u0097Áìþy\u001bÎ·\u0097Áè".length();
+                  var3 = 0;
             }
-            v4 = v2 ^ var1;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
 
-                ** continue;
-            }
-        }
-        n.o = false;
-        n.a = true;
-        n.r = new Color((int)var0_1[1], (int)var0_1[4], (int)var0_1[4]);
-        n.y = true;
-        n.g = new Color((int)var0_1[5], (int)var0_1[0], (int)var0_1[0]);
-        n.A = true;
-        n.x = Color.GRAY;
-        n.Y = T.line;
-        n.Q = GO.Fx;
-        n.O = GO.FG;
-        n.G = true;
-        n.E = new Color(0, 0, (int)var0_1[3], (int)var0_1[2]);
-        n.W = Color.GRAY;
-        n.j = GO.Fx;
-        n.D = new BasicStroke(1.0f, 1, 1, 0.0f, new float[]{3.0f, 3.0f}, 0.0f);
-        n.U = (int)var0_1[6];
-        n.F = (int)var0_1[7];
-    }
+            byte var10 = var3;
+            var3 += 8;
+            var7 = var5.substring(var10, var3).getBytes("ISO-8859-1");
+            var10000 = var0;
+            var10001 = var4++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
 }
+
+
+
+
 

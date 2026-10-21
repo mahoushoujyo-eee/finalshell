@@ -1,32 +1,30 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.NJ;
-import com.it_2;
 import java.awt.event.ContainerEvent;
 import java.awt.event.ContainerListener;
 
-class TW
-implements ContainerListener {
-    final NJ S;
-    final it_2 R;
+class TW implements ContainerListener {
+   final NJ S;
+   final it_4 R;
 
-    TW(it_2 it_22, NJ nJ2) {
-        this.R = it_22;
-        this.S = nJ2;
-    }
+   TW(it_4 var1, NJ var2) {
+      this.R = var1;
+      this.S = var2;
+   }
 
-    @Override
-    public void componentAdded(ContainerEvent containerEvent) {
-    }
+   @Override
+   public void componentAdded(ContainerEvent var1) {
+   }
 
-    @Override
-    public void componentRemoved(ContainerEvent containerEvent) {
-        if (containerEvent.getSource() == this.R.E) {
-            this.S.e();
-        }
-    }
+   @Override
+   public void componentRemoved(ContainerEvent var1) {
+      if (var1.getSource() == this.R.E) {
+         this.S.e();
+      }
+   }
 }
+
+
+
+
 

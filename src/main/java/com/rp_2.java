@@ -1,42 +1,61 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.cb_1;
-import com.on_0;
-import com.r7_0;
-import java.util.Comparator;
+import java.util.Arrays;
 
-/*
- * Renamed from com.rp
- */
-public abstract class rp_2
-implements r7_0 {
-    protected Comparator F = null;
-    protected on_0 m = null;
+class Rp_2 {
+   private final byte[] X;
 
-    @Override
-    public Comparator H(cb_1 cb_12) {
-        return this.F;
-    }
+   Rp_2(int[] var1) {
+      this.X = e(var1);
+   }
 
-    public void L(Comparator comparator) {
-        this.F = comparator;
-    }
+   Rp_2(byte[] var1) {
+      this.X = var1;
+   }
 
-    @Override
-    public on_0 h(cb_1 cb_12) {
-        return this.m;
-    }
+   @Override
+   public boolean equals(Object var1) {
+      String[] var2 = com.Wq_2.y();
+      Object var10000 = this;
+      if (var2 == null) {
+         if (this == var1) {
+            return true;
+         }
 
-    public void P(on_0 on_02) {
-        this.m = on_02;
-    }
+         var10000 = var1;
+      }
 
-    @Override
-    public boolean y(cb_1 cb_12) {
-        return false;
-    }
+      if (var2 == null) {
+         if (!(var10000 instanceof Rp_2)) {
+            return false;
+         }
+
+         var10000 = var1;
+      }
+
+      Rp_2 var3 = (Rp_2)var10000;
+      return Arrays.equals(this.X, var3.X);
+   }
+
+   @Override
+   public int hashCode() {
+      return Arrays.hashCode(this.X);
+   }
+
+   private static byte[] e(int[] var0) {
+      byte[] var1 = new byte[var0.length];
+      int var2 = 0;
+
+      for (int var6 : var0) {
+         var1[var2] = (byte)var6;
+         var2++;
+      }
+
+      return var1;
+   }
 }
+
+
+
+
 

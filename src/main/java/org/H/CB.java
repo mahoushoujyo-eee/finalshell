@@ -1,42 +1,38 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
-import org.F.c;
-import org.h.g_0;
-import org.h.m_0;
-import org.h.r_0;
 
-public abstract class CB
-implements r_0 {
-    private final byte J;
-    public final short h;
+public abstract class CB implements org.H.r_2 {
+   private final byte J;
+   public final short h;
 
-    public CB(byte by, short s2) {
-        this.J = by;
-        this.h = s2;
-    }
+   public CB(byte var1, short var2) {
+      this.J = var1;
+      this.h = var2;
+   }
 
-    @Override
-    public byte s() {
-        return this.J;
-    }
+   @Override
+   public byte s() {
+      return this.J;
+   }
 
-    @Override
-    public void E(DataOutputStream dataOutputStream) throws IOException {
-        dataOutputStream.writeShort(this.h);
-    }
+   @Override
+   public void E(DataOutputStream var1) throws IOException {
+      var1.writeShort(this.h);
+   }
 
-    @Override
-    @c
-    public Object d(m_0 m_02) throws Throwable {
-        return this.b(m_02);
-    }
+   @org.F.c
+   @Override
+   public Object d(org.H.m_2 var1) throws Throwable {
+      return this.b(var1);
+   }
 
-    @c
-    protected abstract Object b(g_0 var1) throws Throwable;
+   @org.F.c
+   protected abstract Object b(org.H.g_2 var1) throws Throwable;
 }
+
+
+
+
 

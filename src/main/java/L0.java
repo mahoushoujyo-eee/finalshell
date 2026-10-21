@@ -1,123 +1,153 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Iterator;
 import java.util.Vector;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
 public class L0 {
-    public long E;
-    public long u;
-    Thread A;
-    int J;
-    Vector B;
-    QB Q;
-    public int Y;
-    public int L;
+   public long E;
+   public long u;
+   Thread A;
+   int J;
+   Vector B;
+   QB Q;
+   public int Y;
+   public int L;
 
-    public L0(int n10) {
-        block3: {
-            boolean bl = zD.d();
-            this.Y = 0;
-            boolean bl2 = bl;
-            this.L = 0;
-            this.J = n10;
-            this.B = new Vector();
-            for (int i2 = 0; i2 < n10; ++i2) {
-                QB qB = new QB();
-                if (!bl2) {
-                    int n11 = i2;
-                    if (bl2) continue;
-                    if (n11 == 0) {
-                        this.Q = qB;
-                    }
-                    n11 = ((Vector)this.B).add(qB) ? 1 : 0;
-                    if (!bl2) continue;
-                }
-                break block3;
+   public L0(int var1) {
+      boolean var10000 = zD.d();
+      super();
+      com.c.c(313681502140473979L).setInt(this, 0);
+      boolean var2 = var10000;
+      com.c.c(587987719470651652L).setInt(this, 0);
+      com.c.c(208184117373149257L).setInt(this, var1);
+      com.c.c(200915860947377828L).set(this, new Vector());
+      int var3 = 0;
+
+      while (true) {
+         if (var3 < var1) {
+            QB var4 = new QB();
+            if (var2) {
+               break;
             }
-            this.A = new tw_1(this);
-            ((Thread)this.A).start();
-        }
-    }
 
-    public void X() {
-        ((Thread)this.A).interrupt();
-    }
+            if (!var2) {
+               if (var3 == 0) {
+                  com.c.c(304026184918353025L).set(this, var4);
+               }
 
-    public int S() {
-        return this.Y;
-    }
-
-    public void P(int n10) {
-        this.Y = n10;
-    }
-
-    public int a() {
-        return this.L;
-    }
-
-    public void F(int n10) {
-        this.L = n10;
-    }
-
-    void S() {
-        block2: {
-            int n10 = 0;
-            boolean bl = zD.X();
-            int n11 = 0;
-            for (QB qB : (Vector)this.B) {
-                n10 += qB.l;
-                n11 += qB.C;
-                if (bl) {
-                    if (bl) continue;
-                }
-                break block2;
+               ((Vector)com.c.c(200915860947377828L).get(this)).add(var4);
             }
-            this.Y = (int)((float)n11 / (float)((Vector)this.B).size());
-            this.L = (int)((float)n10) / ((Vector)this.B).size();
-            ((Vector)this.B).remove(0);
-        }
-        QB qB = new QB();
-        this.Q = qB;
-        ((Vector)this.B).add(qB);
-    }
 
-    public void T(int n10) {
-        L0 l0 = this;
-        l0.u = l0.u + (long)n10;
-        try {
-            this.Q.y(n10);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+            var3++;
+            if (!var2) {
+               continue;
+            }
+         }
 
-    public void N(int n10) {
-        L0 l0 = this;
-        l0.E = l0.E + (long)n10;
-        try {
-            this.Q.E(n10);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+         com.c.c(328888399667795027L).set(this, new tW_3(this));
+         ((Thread)com.c.c(328888399667795027L).get(this)).start();
+         break;
+      }
+   }
 
-    public void v() {
-    }
+   public void X() {
+      ((Thread)com.c.c(328888399667795027L).get(this)).interrupt();
+   }
 
-    public void V() {
-    }
+   public int S() {
+      return com.c.c(313681502140473979L).getInt(this);
+   }
 
-    public void c(int n10) {
-    }
+   public void P(int var1) {
+      com.c.c(313681502140473979L).setInt(this, var1);
+   }
 
-    public void Z(int n10) {
-    }
+   public int a() {
+      return com.c.c(587987719470651652L).getInt(this);
+   }
+
+   public void F(int var1) {
+      com.c.c(587987719470651652L).setInt(this, var1);
+   }
+
+   void S$void() {
+      boolean var10000 = zD.X();
+      int var2 = 0;
+      boolean var1 = var10000;
+      int var3 = 0;
+      Iterator var4 = ((Vector)com.c.c(200915860947377828L).get(this)).iterator();
+
+      while (true) {
+         if (var4.hasNext()) {
+            QB var5 = (QB)var4.next();
+            var2 += com.c.c(634944541091262560L).getInt(var5);
+            var3 += com.c.c(291580733527856622L).getInt(var5);
+            if (!var1) {
+               break;
+            }
+
+            if (var1) {
+               continue;
+            }
+         }
+
+         com.c.c(313681502140473979L).setInt(this, (int)((float)var3 / (float)((Vector)com.c.c(200915860947377828L).get(this)).size()));
+         com.c.c(587987719470651652L).setInt(this, (int)((float)var2) / ((Vector)com.c.c(200915860947377828L).get(this)).size());
+         ((Vector)com.c.c(200915860947377828L).get(this)).remove(0);
+         break;
+      }
+
+      QB var6 = new QB();
+      com.c.c(304026184918353025L).set(this, var6);
+      ((Vector)com.c.c(200915860947377828L).get(this)).add(var6);
+   }
+
+   public void T(int var1) {
+      com.c.c(436456179109857455L).setLong(this, com.c.c(436456179109857455L).getLong(this) + (long)var1);
+      Method var10000 = (Method)com.c.c(304026184918353025L).get(this);
+      Object[] var10001 = com.c.a(var1);
+      Method var10003 = com.c.d(322521174366635584L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
+
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
+
+   public void N(int var1) {
+      com.c.c(313231035437214097L).setLong(this, com.c.c(313231035437214097L).getLong(this) + (long)var1);
+      Method var10000 = (Method)com.c.c(304026184918353025L).get(this);
+      Object[] var10001 = com.c.a(var1);
+      Method var10003 = com.c.d(364751476035821007L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
+
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
+
+   public void v() {
+   }
+
+   public void V() {
+   }
+
+   public void c(int var1) {
+   }
+
+   public void Z(int var1) {
+   }
 }
+
+
+
+
 

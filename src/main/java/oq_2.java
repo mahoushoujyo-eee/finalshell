@@ -1,29 +1,31 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import javax.swing.JTextField;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-/*
- * Renamed from oq
- */
-class oq_2
-implements FocusListener {
-    final xl_0 u;
+class Oq_2 implements Runnable {
+   final YQ p;
 
-    oq_2(xl_0 xl_02) {
-        this.u = xl_02;
-    }
+   Oq_2(YQ var1) {
+      this.p = var1;
+   }
 
-    @Override
-    public void focusLost(FocusEvent focusEvent) {
-    }
+   @Override
+   public void run() {
+      Method var10000 = (Method)com.c.c(395405244100121506L).get(this);
+      Object[] var10001 = com.c.a(com.c.c(306654569208204766L).get(null));
+      Method var10003 = com.c.d(283179149030029231L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
 
-    @Override
-    public void focusGained(FocusEvent focusEvent) {
-        ((JTextField)this.u.C).selectAll();
-    }
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var1) {
+         throw var1.getTargetException();
+      }
+   }
 }
+
+
+
+
 

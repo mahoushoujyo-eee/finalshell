@@ -1,484 +1,576 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.SC;
-import com.e3_0;
-import com.ky_2;
-import com.r__0;
 import java.util.Random;
 
-public class uZ
-implements e3_0,
-SC,
-r__0 {
-    private static Random q;
-    static int[] U;
-    static float[][] Z;
-    static float[][] m;
-    static float[] u;
-    static boolean D;
-    private static String R;
-    private static final long[] a;
-    private static final Integer[] b;
+public class uZ implements e3_2, SC, r__2 {
+   private static Random q;
+   static int[] U;
+   static float[][] Z;
+   static float[][] m;
+   static float[] u;
+   static boolean D;
+   private static String R;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    @Override
-    public float H(float f10) {
-        return uZ.x(f10);
-    }
+   @Override
+   public float H(float var1) {
+      return x(var1);
+   }
 
-    @Override
-    public float h(float f10, float f11) {
-        return uZ.x(f10, f11);
-    }
+   @Override
+   public float h(float var1, float var2) {
+      return x(var1, var2);
+   }
 
-    @Override
-    public float K(float f10, float f11, float f12) {
-        return uZ.G(f10, f11, f12);
-    }
+   @Override
+   public float K(float var1, float var2, float var3) {
+      return G(var1, var2, var3);
+   }
 
-    public static float q(float f10, float f11, float f12) {
-        float f13;
-        block2: {
-            float f14 = 0.0f;
-            float f15 = 1.0f;
-            String string = uZ.h();
-            while (f15 <= f12) {
-                f14 += Math.abs(uZ.x(f15 * f10, f15 * f11)) / f15;
-                f13 = f15 * 2.0f;
-                if (string == null) {
-                    f15 = f13;
-                    if (string == null) continue;
-                }
-                break block2;
+   public static float q(float var0, float var1, float var2) {
+      String var10000 = h();
+      float var4 = 0.0F;
+      float var5 = 1.0F;
+      String var3 = var10000;
+
+      while (true) {
+         if (var5 <= var2) {
+            var4 += Math.abs(x(var5 * var0, var5 * var1)) / var5;
+            var6 = var5 * 2.0F;
+            if (var3 != null) {
+               break;
             }
-            f13 = f14;
-        }
-        return f13;
-    }
 
-    public static float b(float f10, float f11, float f12, float f13) {
-        float f14;
-        block2: {
-            float f15 = 0.0f;
-            float f16 = 1.0f;
-            String string = uZ.h();
-            while (f16 <= f13) {
-                f15 += Math.abs(uZ.G(f16 * f10, f16 * f11, f16 * f12)) / f16;
-                f14 = f16 * 2.0f;
-                if (string == null) {
-                    f16 = f14;
-                    if (string == null) continue;
-                }
-                break block2;
+            var5 = var6;
+            if (var3 == null) {
+               continue;
             }
-            f14 = f15;
-        }
-        return f14;
-    }
+         }
 
-    private static float X(float f10) {
-        return f10 * f10 * (3.0f - 2.0f * f10);
-    }
+         var6 = var4;
+         break;
+      }
 
-    public static float x(float f10) {
-        block3: {
-            boolean bl;
-            block2: {
-                String string = uZ.h();
-                bl = D;
-                if (string != null) break block2;
-                if (!bl) break block3;
-                bl = false;
+      return var6;
+   }
+
+   public static float b(float var0, float var1, float var2, float var3) {
+      float var5 = 0.0F;
+      String var10000 = h();
+      float var6 = 1.0F;
+      String var4 = var10000;
+
+      while (true) {
+         if (var6 <= var3) {
+            var5 += Math.abs(G(var6 * var0, var6 * var1, var6 * var2)) / var6;
+            var7 = var6 * 2.0F;
+            if (var4 != null) {
+               break;
             }
-            D = bl;
-            uZ.c();
-        }
-        float f11 = f10 + 4096.0f;
-        int n10 = (int)f11 & uZ.a(11238, 5150438208742926474L);
-        int n11 = n10 + 1 & uZ.a(11238, 5150438208742926474L);
-        float f12 = f11 - (float)((int)f11);
-        float f13 = f12 - 1.0f;
-        float f14 = uZ.X(f12);
-        float f15 = f12 * u[U[n10]];
-        float f16 = f13 * u[U[n11]];
-        return 2.3f * uZ.h(f14, f15, f16);
-    }
 
-    public static float x(float f10, float f11) {
-        block3: {
-            boolean bl;
-            block2: {
-                String string = uZ.h();
-                bl = D;
-                if (string != null) break block2;
-                if (!bl) break block3;
-                bl = false;
+            var6 = var7;
+            if (var4 == null) {
+               continue;
             }
-            D = bl;
-            uZ.c();
-        }
-        float f12 = f10 + 4096.0f;
-        int n10 = (int)f12 & uZ.a(11588, 6200431532376796714L);
-        int n11 = n10 + 1 & uZ.a(11238, 5150438208742926474L);
-        float f13 = f12 - (float)((int)f12);
-        float f14 = f13 - 1.0f;
-        f12 = f11 + 4096.0f;
-        int n12 = (int)f12 & uZ.a(11238, 5150438208742926474L);
-        int n13 = n12 + 1 & uZ.a(11238, 5150438208742926474L);
-        float f15 = f12 - (float)((int)f12);
-        float f16 = f15 - 1.0f;
-        int n14 = U[n10];
-        int n15 = U[n11];
-        int n16 = U[n14 + n12];
-        int n17 = U[n15 + n12];
-        int n18 = U[n14 + n13];
-        int n19 = U[n15 + n13];
-        float f17 = uZ.X(f13);
-        float f18 = uZ.X(f15);
-        float[] fArray = m[n16];
-        float f19 = f13 * fArray[0] + f15 * fArray[1];
-        fArray = m[n17];
-        float f20 = f14 * fArray[0] + f15 * fArray[1];
-        float f21 = uZ.h(f17, f19, f20);
-        fArray = m[n18];
-        f19 = f13 * fArray[0] + f16 * fArray[1];
-        fArray = m[n19];
-        f20 = f14 * fArray[0] + f16 * fArray[1];
-        float f22 = uZ.h(f17, f19, f20);
-        return 1.5f * uZ.h(f18, f21, f22);
-    }
+         }
 
-    public static float G(float f10, float f11, float f12) {
-        block5: {
-            boolean bl;
-            block4: {
-                String string = uZ.h();
-                bl = D;
-                if (string != null) break block4;
-                if (!bl) break block5;
-                bl = false;
+         var7 = var5;
+         break;
+      }
+
+      return var7;
+   }
+
+   private static float X(float var0) {
+      return var0 * var0 * (3.0F - 2.0F * var0);
+   }
+
+   public static float x(float var0) {
+      label13: {
+         String var1 = h();
+         boolean var10000 = D;
+         if (var1 == null) {
+            if (!D) {
+               break label13;
             }
-            D = bl;
-            uZ.c();
-        }
-        float f13 = f10 + 4096.0f;
-        int n10 = (int)f13 & uZ.a(11238, 5150438208742926474L);
-        int n11 = n10 + 1 & uZ.a(11238, 5150438208742926474L);
-        float f14 = f13 - (float)((int)f13);
-        float f15 = f14 - 1.0f;
-        f13 = f11 + 4096.0f;
-        int n12 = (int)f13 & uZ.a(11238, 5150438208742926474L);
-        int n13 = n12 + 1 & uZ.a(11238, 5150438208742926474L);
-        float f16 = f13 - (float)((int)f13);
-        float f17 = f16 - 1.0f;
-        f13 = f12 + 4096.0f;
-        int n14 = (int)f13 & uZ.a(11238, 5150438208742926474L);
-        int n15 = n14 + 1 & uZ.a(11238, 5150438208742926474L);
-        float f18 = f13 - (float)((int)f13);
-        float f19 = f18 - 1.0f;
-        int n16 = U[n10];
-        int n17 = U[n11];
-        int n18 = U[n16 + n12];
-        int n19 = U[n17 + n12];
-        int n20 = U[n16 + n13];
-        int n21 = U[n17 + n13];
-        f13 = uZ.X(f14);
-        float f20 = uZ.X(f16);
-        float f21 = uZ.X(f18);
-        float[] fArray = Z[n18 + n14];
-        float f22 = f14 * fArray[0] + f16 * fArray[1] + f18 * fArray[2];
-        fArray = Z[n19 + n14];
-        float f23 = f15 * fArray[0] + f16 * fArray[1] + f18 * fArray[2];
-        float f24 = uZ.h(f13, f22, f23);
-        fArray = Z[n20 + n14];
-        f22 = f14 * fArray[0] + f17 * fArray[1] + f18 * fArray[2];
-        fArray = Z[n21 + n14];
-        f23 = f15 * fArray[0] + f17 * fArray[1] + f18 * fArray[2];
-        float f25 = uZ.h(f13, f22, f23);
-        float f26 = uZ.h(f20, f24, f25);
-        fArray = Z[n18 + n15];
-        f22 = f14 * fArray[0] + f16 * fArray[1] + f19 * fArray[2];
-        fArray = Z[n19 + n15];
-        f23 = f15 * fArray[0] + f16 * fArray[1] + f19 * fArray[2];
-        f24 = uZ.h(f13, f22, f23);
-        fArray = Z[n20 + n15];
-        f22 = f14 * fArray[0] + f17 * fArray[1] + f19 * fArray[2];
-        fArray = Z[n21 + n15];
-        f23 = f15 * fArray[0] + f17 * fArray[1] + f19 * fArray[2];
-        f25 = uZ.h(f13, f22, f23);
-        float f27 = uZ.h(f20, f24, f25);
-        float f28 = 1.5f * uZ.h(f21, f26, f27);
-        if (ky_2.F() != null) {
-            uZ.C("J8yvCc");
-        }
-        return f28;
-    }
 
-    public static float h(float f10, float f11, float f12) {
-        return f11 + f10 * (f12 - f11);
-    }
+            var10000 = false;
+         }
 
-    private static void L(float[] fArray) {
-        float f10 = (float)Math.sqrt(fArray[0] * fArray[0] + fArray[1] * fArray[1]);
-        fArray[0] = fArray[0] / f10;
-        fArray[1] = fArray[1] / f10;
-    }
+         D = var10000;
+         c();
+      }
 
-    static void x(float[] fArray) {
-        float f10 = (float)Math.sqrt(fArray[0] * fArray[0] + fArray[1] * fArray[1] + fArray[2] * fArray[2]);
-        fArray[0] = fArray[0] / f10;
-        fArray[1] = fArray[1] / f10;
-        fArray[2] = fArray[2] / f10;
-    }
+      float var7 = var0 + 4096.0F;
+      int var2 = (int)var7 & a(11238, 5150438208742926474L);
+      int var3 = var2 + 1 & a(11238, 5150438208742926474L);
+      float var4 = var7 - (float)((int)var7);
+      float var5 = var4 - 1.0F;
+      float var6 = X(var4);
+      float var8 = var4 * u[U[var2]];
+      float var9 = var5 * u[U[var3]];
+      return 2.3F * h(var6, var8, var9);
+   }
 
-    private static int F() {
-        return q.nextInt() & uZ.a(2595, 1148101393946184012L);
-    }
-
-    private static void c() {
-        int n10;
-        String string;
-        int n11;
-        block15: {
-            block12: {
-                int n12;
-                n11 = 0;
-                string = uZ.h();
-                while (n11 < uZ.a(32717, 6423534006966877349L)) {
-                    block14: {
-                        block13: {
-                            uZ.U[n11] = n11;
-                            uZ.u[n11] = (float)(uZ.F() % uZ.a(3557, 365854411868933767L) - uZ.a(22414, 1863777980156761316L)) / 256.0f;
-                            n12 = 0;
-                            if (string != null) break block12;
-                            for (n10 = v9552929; n10 < 2; ++n10) {
-                                uZ.m[n11][n10] = (float)(uZ.F() % uZ.a(1024, 3183709916096202601L) - uZ.a(22414, 1863777980156761316L)) / 256.0f;
-                                if (string == null) {
-                                    if (string == null) continue;
-                                }
-                                break block13;
-                            }
-                            uZ.L(m[n11]);
-                        }
-                        for (n10 = 0; n10 < 3; ++n10) {
-                            uZ.Z[n11][n10] = (float)(uZ.F() % uZ.a(1024, 3183709916096202601L) - uZ.a(22414, 1863777980156761316L)) / 256.0f;
-                            if (string == null) {
-                                if (string == null) continue;
-                            }
-                            break block14;
-                        }
-                        uZ.x(Z[n11]);
-                        ++n11;
-                    }
-                    if (string == null) continue;
-                }
-                n12 = n11 = uZ.a(11238, 5150438208742926474L);
+   public static float x(float var0, float var1) {
+      label13: {
+         String var2 = h();
+         boolean var10000 = D;
+         if (var2 == null) {
+            if (!D) {
+               break label13;
             }
-            while (n11 >= 0) {
-                int n13 = U[n11];
-                n10 = uZ.F() % uZ.a(22414, 1863777980156761316L);
-                uZ.U[n11] = U[n10];
-                uZ.U[n10] = n13;
-                --n11;
-                if (string == null) {
-                    if (string == null) continue;
-                }
-                break block15;
+
+            var10000 = false;
+         }
+
+         D = var10000;
+         c();
+      }
+
+      float var20 = var0 + 4096.0F;
+      int var3 = (int)var20 & a(11588, 6200431532376796714L);
+      int var4 = var3 + 1 & a(11238, 5150438208742926474L);
+      float var11 = var20 - (float)((int)var20);
+      float var12 = var11 - 1.0F;
+      var20 = var1 + 4096.0F;
+      int var5 = (int)var20 & a(11238, 5150438208742926474L);
+      int var6 = var5 + 1 & a(11238, 5150438208742926474L);
+      float var13 = var20 - (float)((int)var20);
+      float var14 = var13 - 1.0F;
+      int var23 = U[var3];
+      int var24 = U[var4];
+      int var7 = U[var23 + var5];
+      int var8 = U[var24 + var5];
+      int var9 = U[var23 + var6];
+      int var10 = U[var24 + var6];
+      float var16 = X(var11);
+      float var17 = X(var13);
+      float[] var15 = m[var7];
+      float var21 = var11 * var15[0] + var13 * var15[1];
+      var15 = m[var8];
+      float var22 = var12 * var15[0] + var13 * var15[1];
+      float var18 = h(var16, var21, var22);
+      var15 = m[var9];
+      var21 = var11 * var15[0] + var14 * var15[1];
+      var15 = m[var10];
+      var22 = var12 * var15[0] + var14 * var15[1];
+      float var19 = h(var16, var21, var22);
+      return 1.5F * h(var17, var18, var19);
+   }
+
+   public static float G(float var0, float var1, float var2) {
+      label17: {
+         String var3 = h();
+         boolean var10000 = D;
+         if (var3 == null) {
+            if (!D) {
+               break label17;
             }
-            n11 = 0;
-        }
-        while (n11 < uZ.a(4394, 5000535023714767433L)) {
-            block17: {
-                block16: {
-                    uZ.U[uZ.a((int)22414, (long)1863777980156761316L) + n11] = U[n11];
-                    uZ.u[uZ.a((int)22414, (long)1863777980156761316L) + n11] = u[n11];
-                    for (n10 = 0; n10 < 2; ++n10) {
-                        uZ.m[uZ.a((int)22414, (long)1863777980156761316L) + n11][n10] = m[n11][n10];
-                        if (string == null) {
-                            if (string == null) continue;
-                        }
-                        break block16;
-                    }
-                    n10 = 0;
-                }
-                while (n10 < 3) {
-                    uZ.Z[uZ.a((int)22414, (long)1863777980156761316L) + n11][n10] = Z[n11][n10];
-                    ++n10;
-                    if (string == null) {
-                        if (string == null) continue;
-                    }
-                    break block17;
-                }
-                ++n11;
+
+            var10000 = false;
+         }
+
+         D = var10000;
+         c();
+      }
+
+      float var27 = var0 + 4096.0F;
+      int var4 = (int)var27 & a(11238, 5150438208742926474L);
+      int var5 = var4 + 1 & a(11238, 5150438208742926474L);
+      float var14 = var27 - (float)((int)var27);
+      float var15 = var14 - 1.0F;
+      var27 = var1 + 4096.0F;
+      int var6 = (int)var27 & a(11238, 5150438208742926474L);
+      int var7 = var6 + 1 & a(11238, 5150438208742926474L);
+      float var16 = var27 - (float)((int)var27);
+      float var17 = var16 - 1.0F;
+      var27 = var2 + 4096.0F;
+      int var8 = (int)var27 & a(11238, 5150438208742926474L);
+      int var9 = var8 + 1 & a(11238, 5150438208742926474L);
+      float var18 = var27 - (float)((int)var27);
+      float var19 = var18 - 1.0F;
+      int var30 = U[var4];
+      int var31 = U[var5];
+      int var10 = U[var30 + var6];
+      int var11 = U[var31 + var6];
+      int var12 = U[var30 + var7];
+      int var13 = U[var31 + var7];
+      var27 = X(var14);
+      float var21 = X(var16);
+      float var22 = X(var18);
+      float[] var20 = Z[var10 + var8];
+      float var28 = var14 * var20[0] + var16 * var20[1] + var18 * var20[2];
+      var20 = Z[var11 + var8];
+      float var29 = var15 * var20[0] + var16 * var20[1] + var18 * var20[2];
+      float var23 = h(var27, var28, var29);
+      var20 = Z[var12 + var8];
+      var28 = var14 * var20[0] + var17 * var20[1] + var18 * var20[2];
+      var20 = Z[var13 + var8];
+      var29 = var15 * var20[0] + var17 * var20[1] + var18 * var20[2];
+      float var24 = h(var27, var28, var29);
+      float var25 = h(var21, var23, var24);
+      var20 = Z[var10 + var9];
+      var28 = var14 * var20[0] + var16 * var20[1] + var19 * var20[2];
+      var20 = Z[var11 + var9];
+      var29 = var15 * var20[0] + var16 * var20[1] + var19 * var20[2];
+      var23 = h(var27, var28, var29);
+      var20 = Z[var12 + var9];
+      var28 = var14 * var20[0] + var17 * var20[1] + var19 * var20[2];
+      var20 = Z[var13 + var9];
+      var29 = var15 * var20[0] + var17 * var20[1] + var19 * var20[2];
+      var24 = h(var27, var28, var29);
+      float var26 = h(var21, var23, var24);
+      float var50 = 1.5F * h(var22, var25, var26);
+      if (com.ky_4.F() != null) {
+         C("J8yvCc");
+      }
+
+      return var50;
+   }
+
+   public static float h(float var0, float var1, float var2) {
+      return var1 + var0 * (var2 - var1);
+   }
+
+   private static void L(float[] var0) {
+      float var1 = (float)Math.sqrt((double)(var0[0] * var0[0] + var0[1] * var0[1]));
+      var0[0] /= var1;
+      var0[1] /= var1;
+   }
+
+   static void x(float[] var0) {
+      float var1 = (float)Math.sqrt((double)(var0[0] * var0[0] + var0[1] * var0[1] + var0[2] * var0[2]));
+      var0[0] /= var1;
+      var0[1] /= var1;
+      var0[2] /= var1;
+   }
+
+   private static int F() {
+      return q.nextInt() & a(2595, 1148101393946184012L);
+   }
+
+   private static void c() {
+      String var10000 = h();
+      int var1 = 0;
+      String var0 = var10000;
+
+      while (true) {
+         if (var1 < a(32717, 6423534006966877349L)) {
+            U[var1] = var1;
+            u[var1] = (float)(F() % a(3557, 365854411868933767L) - a(22414, 1863777980156761316L)) / 256.0F;
+            var8 = 0;
+            if (var0 != null) {
+               break;
             }
-            if (string == null) continue;
-        }
-    }
 
-    public static float[] I(e3_0 e3_02, float[] fArray) {
-        block6: {
-            String string;
-            block8: {
-                float[] fArray2;
-                block7: {
-                    string = uZ.h();
-                    fArray2 = fArray;
-                    if (string != null) break block7;
-                    if (fArray2 != null) break block8;
-                    fArray2 = new float[2];
-                }
-                fArray = fArray2;
+            int var2 = 0;
+
+            label92: {
+               while (var2 < 2) {
+                  m[var1][var2] = (float)(F() % a(1024, 3183709916096202601L) - a(22414, 1863777980156761316L)) / 256.0F;
+                  var2++;
+                  if (var0 != null) {
+                     break label92;
+                  }
+
+                  if (var0 != null) {
+                     break;
+                  }
+               }
+
+               L(m[var1]);
             }
-            float f10 = 0.0f;
-            float f11 = 0.0f;
-            float f12 = -100.0f;
-            while (f12 < 100.0f) {
-                float f13 = e3_02.H(f12);
-                f10 = Math.min(f10, f13);
-                f11 = Math.max(f11, f13);
-                f12 = (float)((double)f12 + 1.27139);
-                if (string == null) {
-                    if (string == null) continue;
-                }
-                break block6;
+
+            var2 = 0;
+
+            label81: {
+               while (var2 < 3) {
+                  Z[var1][var2] = (float)(F() % a(1024, 3183709916096202601L) - a(22414, 1863777980156761316L)) / 256.0F;
+                  var2++;
+                  if (var0 != null) {
+                     break label81;
+                  }
+
+                  if (var0 != null) {
+                     break;
+                  }
+               }
+
+               x(Z[var1]);
+               var1++;
             }
-            fArray[0] = f10;
-            fArray[1] = f11;
-        }
-        return fArray;
-    }
 
-    public static float[] B(SC sC, float[] fArray) {
-        block7: {
-            String string;
-            block10: {
-                float[] fArray2;
-                block9: {
-                    string = uZ.h();
-                    fArray2 = fArray;
-                    if (string != null) break block9;
-                    if (fArray2 != null) break block10;
-                    fArray2 = new float[2];
-                }
-                fArray = fArray2;
+            if (var0 == null) {
+               continue;
             }
-            float f10 = 0.0f;
-            float f11 = 0.0f;
-            float f12 = -100.0f;
-            while (f12 < 100.0f) {
-                block8: {
-                    if (string != null) break block7;
-                    float f13 = -100.0f;
-                    while (f13 < 100.0f) {
-                        float f14 = sC.h(f13, f12);
-                        f10 = Math.min(f10, f14);
-                        f11 = Math.max(f11, f14);
-                        f13 = (float)((double)f13 + 10.77139);
-                        if (string == null) {
-                            if (string == null) continue;
-                        }
-                        break block8;
-                    }
-                    f12 = (float)((double)f12 + 10.35173);
-                }
-                if (string == null) continue;
+         }
+
+         var8 = a(11238, 5150438208742926474L);
+         break;
+      }
+
+      var1 = var8;
+
+      while (true) {
+         if (var1 >= 0) {
+            int var3 = U[var1];
+            int var6;
+            U[var1] = U[var6 = F() % a(22414, 1863777980156761316L)];
+            U[var6] = var3;
+            var1--;
+            if (var0 != null) {
+               break;
             }
-            fArray[0] = f10;
-            fArray[1] = f11;
-        }
-        return fArray;
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 3648071574311890996L;
-                var6_1 = new long[10];
-                var3_2 = 0;
-                uZ.C(null);
-                var4_3 = "\u00f6\u00cb\u00f1r\u0001\u007f%\u00d08\u0080,\u001a\u00b6^\u00b1\u00bbx\u00cbj\u00b2\u00e1\u00e9\u008d\u00919/\u00f1\tF\u00c2\u00f5]\u000f[\u00b8\u00c0#|^\u00e1\u0099D\u00cd{I\u00bb\u0086\u0087\u00fe\u00fc<D\u0083\u00b7\u00d8A\u00ab\u00d1\u009e@\u00de\r)\u00f1";
-                var5_4 = "\u00f6\u00cb\u00f1r\u0001\u007f%\u00d08\u0080,\u001a\u00b6^\u00b1\u00bbx\u00cbj\u00b2\u00e1\u00e9\u008d\u00919/\u00f1\tF\u00c2\u00f5]\u000f[\u00b8\u00c0#|^\u00e1\u0099D\u00cd{I\u00bb\u0086\u0087\u00fe\u00fc<D\u0083\u00b7\u00d8A\u00ab\u00d1\u009e@\u00de\r)\u00f1".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl15:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "I\u0080\u00fb-\u008c\u00fa|\u00b3\u00ac{dk\u0091dc\u007f";
-                    var5_4 = "I\u0080\u00fb-\u008c\u00fa|\u00b3\u00ac{dk\u0091dc\u007f".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl28:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+            if (var0 == null) {
+               continue;
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl39:
-                // 1 sources
+         }
 
-                ** continue;
+         var1 = 0;
+         break;
+      }
+
+      while (var1 < a(4394, 5000535023714767433L)) {
+         U[a(22414, 1863777980156761316L) + var1] = U[var1];
+         u[a(22414, 1863777980156761316L) + var1] = u[var1];
+         int var7 = 0;
+
+         while (true) {
+            if (var7 < 2) {
+               m[a(22414, 1863777980156761316L) + var1][var7] = m[var1][var7];
+               var7++;
+               if (var0 != null) {
+                  break;
+               }
+
+               if (var0 == null) {
+                  continue;
+               }
             }
-        }
-        uZ.a = var6_1;
-        uZ.b = new Integer[10];
-        uZ.q = new Random();
-        uZ.U = new int[uZ.a(22698, 4396321567949347783L)];
-        uZ.Z = new float[uZ.a(16614, 5695793909344617357L)][3];
-        uZ.m = new float[uZ.a(16614, 5695793909344617357L)][2];
-        uZ.u = new float[uZ.a(16614, 5695793909344617357L)];
-        uZ.D = true;
-    }
 
-    public static void C(String string) {
-        R = string;
-    }
+            var7 = 0;
+            break;
+         }
 
-    public static String h() {
-        return R;
-    }
+         while (true) {
+            if (var7 < 3) {
+               Z[a(22414, 1863777980156761316L) + var1][var7] = Z[var1][var7];
+               var7++;
+               if (var0 != null) {
+                  break;
+               }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x36A;
-        if (b[n11] == null) {
-            uZ.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+               if (var0 == null) {
+                  continue;
+               }
+            }
+
+            var1++;
+            break;
+         }
+
+         if (var0 != null) {
+            break;
+         }
+      }
+   }
+
+   public static float[] I(e3_2 var0, float[] var1) {
+      String var2;
+      label27: {
+         var2 = h();
+         float[] var10000 = var1;
+         if (var2 == null) {
+            if (var1 != null) {
+               break label27;
+            }
+
+            var10000 = new float[2];
+         }
+
+         var1 = var10000;
+      }
+
+      float var3 = 0.0F;
+      float var4 = 0.0F;
+      float var5 = -100.0F;
+
+      while (true) {
+         if (var5 < 100.0F) {
+            float var6 = var0.H(var5);
+            var3 = Math.min(var3, var6);
+            var4 = Math.max(var4, var6);
+            var5 = (float)((double)var5 + 1.27139);
+            if (var2 != null) {
+               break;
+            }
+
+            if (var2 == null) {
+               continue;
+            }
+         }
+
+         var1[0] = var3;
+         var1[1] = var4;
+         break;
+      }
+
+      return var1;
+   }
+
+   public static float[] B(SC var0, float[] var1) {
+      String var2;
+      label43: {
+         var2 = h();
+         float[] var10000 = var1;
+         if (var2 == null) {
+            if (var1 != null) {
+               break label43;
+            }
+
+            var10000 = new float[2];
+         }
+
+         var1 = var10000;
+      }
+
+      float var3 = 0.0F;
+      float var4 = 0.0F;
+      float var5 = -100.0F;
+
+      while (true) {
+         if (var5 < 100.0F) {
+            if (var2 != null) {
+               break;
+            }
+
+            float var6 = -100.0F;
+
+            label31: {
+               while (var6 < 100.0F) {
+                  float var7 = var0.h(var6, var5);
+                  var3 = Math.min(var3, var7);
+                  var4 = Math.max(var4, var7);
+                  var6 = (float)((double)var6 + 10.77139);
+                  if (var2 != null) {
+                     break label31;
+                  }
+
+                  if (var2 != null) {
+                     break;
+                  }
+               }
+
+               var5 = (float)((double)var5 + 10.35173);
+            }
+
+            if (var2 == null) {
+               continue;
+            }
+         }
+
+         var1[0] = var3;
+         var1[1] = var4;
+         break;
+      }
+
+      return var1;
+   }
+
+   static {
+      long var0 = 3648071574311890996L;
+      long[] var6 = new long[10];
+      int var3 = 0;
+      C(null);
+      String var4 = "öËñr\u0001\u007f%Ð8\u0080,\u001a¶^±»xËj²áé\u008d\u00919/ñ\tFÂõ]\u000f[¸À#|^á\u0099DÍ{I»\u0086\u0087þü<D\u0083·ØA«Ñ\u009e@Þ\r)ñ";
+      int var5 = "öËñr\u0001\u007f%Ð8\u0080,\u001a¶^±»xËj²áé\u008d\u00919/ñ\tFÂõ]\u000f[¸À#|^á\u0099DÍ{I»\u0086\u0087þü<D\u0083·ØA«Ñ\u009e@Þ\r)ñ".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     b = new Integer[10];
+                     q = new Random();
+                     U = new int[a(22698, 4396321567949347783L)];
+                     Z = new float[a(16614, 5695793909344617357L)][3];
+                     m = new float[a(16614, 5695793909344617357L)][2];
+                     u = new float[a(16614, 5695793909344617357L)];
+                     D = true;
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "I\u0080û-\u008cú|³¬{dk\u0091dc\u007f";
+                  var5 = "I\u0080û-\u008cú|³¬{dk\u0091dc\u007f".length();
+                  var2 = 0;
+            }
+
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   public static void C(String var0) {
+      R = var0;
+   }
+
+   public static String h() {
+      return R;
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 874;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

@@ -1,53 +1,42 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.BT;
-import com.BZ;
-import com.FN;
-import com.np_0;
-import com.um_0;
 import java.util.ArrayList;
 import java.util.List;
 
-class NF
-implements np_0 {
-    final um_0 C;
+class NF implements Np_2 {
+   final um_2 C;
 
-    NF(um_0 um_02) {
-        this.C = um_02;
-    }
+   NF(um_2 var1) {
+      this.C = var1;
+   }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    @Override
-    public void S(List list) {
-        Object object = this.C.c.f;
-        synchronized (object) {
-            this.C.c.i.put(this.C.o.H(), list);
-            this.C.c.g(list);
-        }
-        object = this.C.c.Y(this.C.o, list);
-        Object object2 = this.C.c.f;
-        synchronized (object2) {
-            this.C.c.g.put(this.C.o.H(), true);
-        }
-        FN.p(new BZ(this, (List)object));
-    }
+   @Override
+   public void S(List var1) {
+      synchronized (this.C.c.f) {
+         this.C.c.i.put(this.C.o.H(), var1);
+         this.C.c.g(var1);
+      }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    @Override
-    public void l(Throwable throwable) {
-        Object object = this.C.c.f;
-        synchronized (object) {
-            this.C.c.i.put(this.C.o.H(), new ArrayList(0));
-            this.C.c.g.put(this.C.o.H(), true);
-        }
-        FN.p(new BT(this, throwable));
-    }
+      List var7 = this.C.c.Y(this.C.o, var1);
+      synchronized (this.C.c.f) {
+         this.C.c.g.put(this.C.o.H(), true);
+      }
+
+      com.FN.p(new com.BZ(this, var7));
+   }
+
+   @Override
+   public void l(Throwable var1) {
+      synchronized (this.C.c.f) {
+         this.C.c.i.put(this.C.o.H(), new ArrayList(0));
+         this.C.c.g.put(this.C.o.H(), true);
+      }
+
+      com.FN.p(new com.BT(this, var1));
+   }
 }
+
+
+
+
 

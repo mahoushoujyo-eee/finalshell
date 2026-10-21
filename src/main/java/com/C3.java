@@ -1,18 +1,16 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ht_0;
+public abstract class C3 implements Ht_2 {
+   @Override
+   public void Q() {
+   }
 
-public abstract class C3
-implements ht_0 {
-    @Override
-    public void Q() {
-    }
-
-    @Override
-    public void c() {
-    }
+   @Override
+   public void c() {
+   }
 }
+
+
+
+
 

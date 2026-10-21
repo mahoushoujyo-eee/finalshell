@@ -1,113 +1,130 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.T4;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Insets;
 
-public class TU
-extends T4 {
-    protected int Q;
+public class TU extends com.T4 {
+   protected int Q;
 
-    public TU(int n10) {
-        this.Q = n10;
-    }
+   public TU(int var1) {
+      this.Q = var1;
+   }
 
-    public int t() {
-        return this.Q;
-    }
+   public int t() {
+      return this.Q;
+   }
 
-    public void C(int n10) {
-        this.Q = n10;
-    }
+   public void C(int var1) {
+      this.Q = var1;
+   }
 
-    @Override
-    public Dimension preferredLayoutSize(Container container) {
-        return this.r(container, false);
-    }
+   @Override
+   public Dimension preferredLayoutSize(Container var1) {
+      return this.r(var1, false);
+   }
 
-    @Override
-    public Dimension minimumLayoutSize(Container container) {
-        return this.r(container, true);
-    }
+   @Override
+   public Dimension minimumLayoutSize(Container var1) {
+      return this.r(var1, true);
+   }
 
-    @Override
-    public void layoutContainer(Container container) {
-        Dimension dimension = this.preferredLayoutSize(container);
-        int n10 = T4.O();
-        Dimension dimension2 = new Dimension(dimension.width, container.getSize().height);
-        int n11 = dimension.width;
-        if (n10 == 0) {
-            n11 = n11 < dimension2.width ? 1 : 0;
-        }
-        int n12 = n11;
-        Insets insets = container.getInsets();
-        int n13 = insets.left;
-        int n14 = insets.top;
-        int n15 = Math.max(dimension2.height, dimension.height) - insets.top - insets.bottom;
-        int n16 = dimension2.width - dimension.width;
-        int n17 = container.getComponentCount();
-        int n18 = 0;
-        while (n18 < n17) {
-            Component component = container.getComponent(n18);
-            if (n10 == 0) {
-                if (component.isVisible()) {
-                    int n19 = n12;
-                    if (n10 == 0) {
-                        n19 = n19 != 0 ? component.getMinimumSize().width : component.getPreferredSize().width;
-                    }
-                    int n20 = n19;
-                    int n21 = n16;
-                    if (n10 == 0) {
-                        if (n21 > 0) {
-                            n20 += n20 * n16 / dimension.width;
-                        }
-                        component.setBounds(n13, n14, n20, n15);
-                        n21 = n13 + (n20 - this.Q);
-                    }
-                    n13 = n21;
-                }
-                ++n18;
+   @Override
+   public void layoutContainer(Container var1) {
+      int var10000 = com.T4.O();
+      Dimension var3 = this.preferredLayoutSize(var1);
+      int var2 = var10000;
+      Dimension var4 = new Dimension(var3.width, var1.getSize().height);
+      var10000 = var3.width;
+      if (var2 == 0) {
+         var10000 = var3.width < var4.width ? 1 : 0;
+      }
+
+      int var5 = var10000;
+      Insets var6 = var1.getInsets();
+      int var7 = var6.left;
+      int var8 = var6.top;
+      int var9 = Math.max(var4.height, var3.height) - var6.top - var6.bottom;
+      int var10 = var4.width - var3.width;
+      int var11 = var1.getComponentCount();
+      int var12 = 0;
+
+      while (var12 < var11) {
+         Component var13 = var1.getComponent(var12);
+         if (var2 == 0) {
+            if (var13.isVisible()) {
+               var10000 = var5;
+               if (var2 == 0) {
+                  var10000 = var5 != 0 ? var13.getMinimumSize().width : var13.getPreferredSize().width;
+               }
+
+               int var14 = var10000;
+               var10000 = var10;
+               if (var2 == 0) {
+                  if (var10 > 0) {
+                     var14 += var14 * var10 / var3.width;
+                  }
+
+                  var13.setBounds(var7, var8, var14, var9);
+                  var10000 = var7 + (var14 - this.Q);
+               }
+
+               var7 = var10000;
             }
-            if (n10 == 0) continue;
-        }
-    }
 
-    protected Dimension r(Container container, boolean bl) {
-        Container container2;
-        Dimension dimension;
-        block4: {
-            int n10 = container.getComponentCount();
-            dimension = new Dimension(0, 0);
-            int n11 = 0;
-            int n12 = T4.b();
-            while (n11 < n10) {
-                container2 = container;
-                if (n12 != 0) {
-                    Component component = container2.getComponent(n11);
-                    Dimension dimension2 = bl ? component.getMinimumSize() : component.getPreferredSize();
-                    dimension.height = Math.max(dimension2.height, dimension.height);
-                    dimension.width += dimension2.width;
-                    if (n12 != 0) {
-                        if (n11 != 0) {
-                            dimension.width -= this.Q;
-                        }
-                        ++n11;
-                    }
-                    if (n12 != 0) continue;
-                }
-                break block4;
+            var12++;
+         }
+
+         if (var2 != 0) {
+            break;
+         }
+      }
+   }
+
+   protected Dimension r(Container var1, boolean var2) {
+      int var10000 = com.T4.b();
+      int var4 = var1.getComponentCount();
+      Dimension var5 = new Dimension(0, 0);
+      int var6 = 0;
+      int var3 = var10000;
+
+      while (true) {
+         if (var6 < var4) {
+            var10 = var1;
+            if (var3 == 0) {
+               break;
             }
-            container2 = container;
-        }
-        Insets insets = container2.getInsets();
-        dimension.width += insets.left + insets.right;
-        dimension.height += insets.top + insets.bottom;
-        return dimension;
-    }
+
+            Component var7 = var1.getComponent(var6);
+            Dimension var8 = var2 ? var7.getMinimumSize() : var7.getPreferredSize();
+            var5.height = Math.max(var8.height, var5.height);
+            var5.width = var5.width + var8.width;
+            if (var3 != 0) {
+               if (var6 != 0) {
+                  var5.width = var5.width - this.Q;
+               }
+
+               var6++;
+            }
+
+            if (var3 != 0) {
+               continue;
+            }
+         }
+
+         var10 = var1;
+         break;
+      }
+
+      Insets var9 = var10.getInsets();
+      var5.width = var5.width + var9.left + var9.right;
+      var5.height = var5.height + var9.top + var9.bottom;
+      return var5;
+   }
 }
+
+
+
+
 

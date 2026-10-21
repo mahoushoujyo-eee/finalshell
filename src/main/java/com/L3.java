@@ -1,11 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.lz_0;
-import com.pf_1;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -16,94 +10,98 @@ import java.net.URL;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 
-public class L3
-extends lz_0 {
-    protected pf_1 t;
+public class L3 extends com.Lz_2 {
+   protected pF_3 t;
 
-    public L3() {
-        this((pf_1)null);
-    }
+   public L3() {
+      this((pF_3)null);
+   }
 
-    public L3(URL uRL) {
-        this(new pf_1(uRL));
-    }
+   public L3(URL var1) {
+      this(new pF_3(var1));
+   }
 
-    public L3(String string) {
-        this(new pf_1(string));
-    }
+   public L3(String var1) {
+      this(new pF_3(var1));
+   }
 
-    public L3(ImageIcon imageIcon) {
-        this(new pf_1(imageIcon));
-    }
+   public L3(ImageIcon var1) {
+      this(new pF_3(var1));
+   }
 
-    public L3(Image image) {
-        this(new pf_1(image));
-    }
+   public L3(Image var1) {
+      this(new pF_3(var1));
+   }
 
-    public L3(BufferedImage bufferedImage) {
-        this(new pf_1(bufferedImage));
-    }
+   public L3(BufferedImage var1) {
+      this(new pF_3(var1));
+   }
 
-    public L3(pf_1 pf_12) {
-        this.t = pf_12;
-    }
+   public L3(pF_3 var1) {
+      this.t = var1;
+   }
 
-    public pf_1 X() {
-        return this.t;
-    }
+   public pF_3 X() {
+      return this.t;
+   }
 
-    public void P(pf_1 pf_12) {
-        this.t = pf_12;
-        this.Z();
-    }
+   public void P(pF_3 var1) {
+      this.t = var1;
+      this.Z();
+   }
 
-    @Override
-    public Dimension d(JComponent jComponent) {
-        int[] nArray = lz_0.M();
-        L3 l3 = this;
-        if (nArray == null) {
-            if (l3.t != null) {
-                this.t.k(jComponent);
-                return this.t.R();
-            }
-            l3 = this;
-        }
-        return super.d(jComponent);
-    }
+   @Override
+   public Dimension d(JComponent var1) {
+      int[] var2 = com.Lz_2.M();
+      com.L3 var10000 = this;
+      if (var2 == null) {
+         if (this.t != null) {
+            this.t.k(var1);
+            return this.t.R();
+         }
 
-    @Override
-    public Insets B(JComponent jComponent) {
-        Insets insets;
-        block3: {
-            pf_1 pf_12;
-            block2: {
-                insets = super.B(jComponent);
-                int[] nArray = lz_0.M();
-                pf_12 = this.t;
-                if (nArray != null) break block2;
-                if (pf_12 == null) break block3;
-                pf_12 = this.t;
-            }
-            pf_12.k(jComponent);
-            return FN.Z(insets, this.t.U());
-        }
-        return insets;
-    }
+         var10000 = this;
+      }
 
-    @Override
-    public void u(Graphics2D graphics2D, Rectangle rectangle, JComponent jComponent) {
-        block3: {
-            pf_1 pf_12;
-            block2: {
-                int[] nArray = lz_0.M();
-                pf_12 = this.t;
-                if (nArray != null) break block2;
-                if (pf_12 == null) break block3;
-                this.t.k(jComponent);
-                pf_12 = this.t;
-            }
-            pf_12.T(jComponent, graphics2D);
-        }
-    }
+      return var10000.d(var1);
+   }
+
+   @Override
+   public Insets B(JComponent var1) {
+      int[] var10000 = com.Lz_2.M();
+      Insets var3 = super.B(var1);
+      int[] var2 = var10000;
+      pF_3 var4 = this.t;
+      if (var2 == null) {
+         if (this.t == null) {
+            return var3;
+         }
+
+         var4 = this.t;
+      }
+
+      var4.k(var1);
+      return com.FN.Z(var3, this.t.U());
+   }
+
+   @Override
+   public void u(Graphics2D var1, Rectangle var2, JComponent var3) {
+      int[] var4 = com.Lz_2.M();
+      pF_3 var10000 = this.t;
+      if (var4 == null) {
+         if (this.t == null) {
+            return;
+         }
+
+         this.t.k(var3);
+         var10000 = this.t;
+      }
+
+      var10000.T(var3, var1);
+   }
 }
+
+
+
+
 

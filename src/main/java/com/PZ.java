@@ -1,11 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.WC;
-import com.aL;
-import com.nb_1;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -14,110 +8,136 @@ import javax.swing.AbstractButton;
 import javax.swing.ButtonGroup;
 import javax.swing.ButtonModel;
 
-public class PZ
-extends ButtonGroup {
-    private final List j = new ArrayList(1);
-    private boolean S = true;
+public class PZ extends ButtonGroup {
+   private final List j = new ArrayList(1);
+   private boolean S = true;
 
-    public PZ() {
-    }
+   public PZ() {
+   }
 
-    public PZ(AbstractButton[] abstractButtonArray) {
-        this.p(abstractButtonArray);
-    }
+   public PZ(AbstractButton[] var1) {
+      this.p(var1);
+   }
 
-    public PZ(List list) {
-        this.J(list);
-    }
+   public PZ(List var1) {
+      this.J(var1);
+   }
 
-    public PZ(boolean bl) {
-        this.F(bl);
-    }
+   public PZ(boolean var1) {
+      this.F(var1);
+   }
 
-    public boolean f() {
-        return this.S;
-    }
+   public boolean f() {
+      return this.S;
+   }
 
-    public void F(boolean bl) {
-        this.S = bl;
-    }
+   public void F(boolean var1) {
+      this.S = var1;
+   }
 
-    @Override
-    public void setSelected(ButtonModel buttonModel, boolean bl) {
-        block6: {
-            PZ pZ;
-            block4: {
-                block5: {
-                    int[] nArray;
-                    block2: {
-                        block3: {
-                            nArray = WC.V();
-                            if (nArray != null) break block2;
-                            if (bl) break block3;
-                            pZ = this;
-                            if (nArray != null) break block4;
-                            if (pZ.S) break block5;
-                        }
-                        super.setSelected(buttonModel, bl);
-                    }
-                    if (nArray == null) break block6;
-                }
-                pZ = this;
+   @Override
+   public void setSelected(ButtonModel var1, boolean var2) {
+      label25: {
+         PZ var10000;
+         label24: {
+            label23: {
+               int[] var3 = com.WC.V();
+               if (var3 == null) {
+                  if (!var2) {
+                     var10000 = this;
+                     if (var3 != null) {
+                        break label24;
+                     }
+
+                     if (this.S) {
+                        break label23;
+                     }
+                  }
+
+                  super.setSelected(var1, var2);
+               }
+
+               if (var3 == null) {
+                  break label25;
+               }
             }
-            pZ.clearSelection();
-        }
-        this.p();
-    }
 
-    public List L() {
-        return aL.J((Collection)this.buttons);
-    }
+            var10000 = this;
+         }
 
-    public void V(nb_1 nb_12) {
-        this.j.add(nb_12);
-    }
+         var10000.clearSelection();
+      }
 
-    public void P(nb_1 nb_12) {
-        this.j.remove(nb_12);
-    }
+      this.p();
+   }
 
-    public void p() {
-        Iterator iterator = aL.J((Collection)this.j).iterator();
-        int[] nArray = WC.V();
-        while (iterator.hasNext()) {
-            nb_1 nb_12 = (nb_1)iterator.next();
-            nb_12.z();
-            if (nArray == null) continue;
-        }
-    }
+   public List L() {
+      return com.aL.J((Collection)this.buttons);
+   }
 
-    public void p(AbstractButton[] abstractButtonArray) {
-        AbstractButton[] abstractButtonArray2 = abstractButtonArray;
-        int n10 = abstractButtonArray2.length;
-        int[] nArray = WC.V();
-        for (int i2 = 0; i2 < n10; ++i2) {
-            AbstractButton abstractButton = abstractButtonArray2[i2];
-            this.add(abstractButton);
-            if (nArray == null) continue;
-        }
-    }
+   public void V(nB_3 var1) {
+      this.j.add(var1);
+   }
 
-    public void J(List list) {
-        Iterator iterator = list.iterator();
-        int[] nArray = WC.V();
-        while (iterator.hasNext()) {
-            AbstractButton abstractButton = (AbstractButton)iterator.next();
-            this.add(abstractButton);
-            if (nArray == null) continue;
-        }
-    }
+   public void P(nB_3 var1) {
+      this.j.remove(var1);
+   }
 
-    public static PZ h(AbstractButton[] abstractButtonArray) {
-        return new PZ(abstractButtonArray);
-    }
+   public void p() {
+      int[] var10000 = com.WC.V();
+      Iterator var2 = com.aL.J((Collection)this.j).iterator();
+      int[] var1 = var10000;
 
-    public static PZ c(List list) {
-        return new PZ(list);
-    }
+      while (var2.hasNext()) {
+         nB_3 var3 = (nB_3)var2.next();
+         var3.z();
+         if (var1 != null) {
+            break;
+         }
+      }
+   }
+
+   public void p(AbstractButton[] var1) {
+      int[] var10000 = com.WC.V();
+      AbstractButton[] var3 = var1;
+      int var4 = var1.length;
+      int[] var2 = var10000;
+      int var5 = 0;
+
+      while (var5 < var4) {
+         AbstractButton var6 = var3[var5];
+         this.add(var6);
+         var5++;
+         if (var2 != null) {
+            break;
+         }
+      }
+   }
+
+   public void J(List var1) {
+      int[] var10000 = com.WC.V();
+      Iterator var3 = var1.iterator();
+      int[] var2 = var10000;
+
+      while (var3.hasNext()) {
+         AbstractButton var4 = (AbstractButton)var3.next();
+         this.add(var4);
+         if (var2 != null) {
+            break;
+         }
+      }
+   }
+
+   public static PZ h(AbstractButton[] var0) {
+      return new PZ(var0);
+   }
+
+   public static PZ c(List var0) {
+      return new PZ(var0);
+   }
 }
+
+
+
+
 

@@ -1,23 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
 import org.I;
-import org.v.fY;
-import org.v.fr_0;
-import org.v.rx_0;
 
-public abstract class RQ
-extends fr_0 {
-    protected RQ(I i2) {
-        super(i2);
-    }
+public abstract class RQ extends fr_2 {
+   protected RQ(I var1) {
+      super(var1);
+   }
 
-    public abstract void e(rx_0 var1);
+   public abstract void e(Rx_2 var1);
 
-    @c
-    public abstract Object R(fY var1) throws Throwable;
+   @org.F.c
+   public abstract Object R(fY var1) throws Throwable;
 }
+
+
+
+
 

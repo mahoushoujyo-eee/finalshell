@@ -1,76 +1,96 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.IOException;
-import java.net.DatagramPacket;
 
-class z6
-implements Runnable {
-    final qu_0 j;
-    private static final long a;
+class z6 implements Runnable {
+   final Qu_2 j;
+   private static final long a;
 
-    z6(qu_0 qu_02) {
-        this.j = qu_02;
-    }
+   z6(Qu_2 var1) {
+      this.j = var1;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void run() {
-        var1_1 = QI.N();
-        try {
-            try {
-                if (var1_1 != null) ** GOTO lbl19
-                block7: while (true) {
-                    var2_2 = new byte[(int)z6.a];
-                    var3_4 = new DatagramPacket(var2_2, var2_2.length);
-                    this.j.T.receive(var3_4);
-                    this.j.K(var3_4);
-                    v0 = var3_4.getLength();
-                    if (var1_1 != null) {
-                        try {
-                            if (v0 > qu_0.Y) {
-                                qu_0.Y = var3_4.getLength();
-                            }
-                        }
-                        catch (IOException v1) {
-                            throw z6.a(v1);
-                        }
-                    }
-                    ** GOTO lbl21
-lbl19:
-                    // 2 sources
+   @Override
+   public void run() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic QI.N ()[Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 1
+      // 05: ifnonnull 49
+      // 08: getstatic z6.a J
+      // 0b: l2i
+      // 0c: newarray 8
+      // 0e: astore 2
+      // 0f: new java/net/DatagramPacket
+      // 12: dup
+      // 13: aload 2
+      // 14: aload 2
+      // 15: arraylength
+      // 16: invokespecial java/net/DatagramPacket.<init> ([BI)V
+      // 19: astore 3
+      // 1a: aload 0
+      // 1b: getfield z6.j LQu_2;
+      // 1e: getfield Qu_2.T Ljava/net/DatagramSocket;
+      // 21: aload 3
+      // 22: invokevirtual java/net/DatagramSocket.receive (Ljava/net/DatagramPacket;)V
+      // 25: aload 0
+      // 26: getfield z6.j LQu_2;
+      // 29: aload 3
+      // 2a: invokevirtual Qu_2.K (Ljava/net/DatagramPacket;)V
+      // 2d: aload 3
+      // 2e: invokevirtual java/net/DatagramPacket.getLength ()I
+      // 31: aload 1
+      // 32: ifnull 50
+      // 35: getstatic Qu_2.Y I
+      // 38: if_icmple 49
+      // 3b: aload 3
+      // 3c: invokevirtual java/net/DatagramPacket.getLength ()I
+      // 3f: putstatic Qu_2.Y I
+      // 42: goto 49
+      // 45: invokestatic z6.a (Ljava/io/IOException;)Ljava/io/IOException;
+      // 48: athrow
+      // 49: aload 0
+      // 4a: getfield z6.j LQu_2;
+      // 4d: getfield Qu_2.n Z
+      // 50: ifne 08
+      // 53: aload 1
+      // 54: ifnull 49
+      // 57: goto 71
+      // 5a: astore 2
+      // 5b: aload 0
+      // 5c: getfield z6.j LQu_2;
+      // 5f: invokevirtual Qu_2.T ()V
+      // 62: goto 78
+      // 65: astore 4
+      // 67: aload 0
+      // 68: getfield z6.j LQu_2;
+      // 6b: invokevirtual Qu_2.T ()V
+      // 6e: aload 4
+      // 70: athrow
+      // 71: aload 0
+      // 72: getfield z6.j LQu_2;
+      // 75: invokevirtual Qu_2.T ()V
+      // 78: return
+   }
 
-                    do {
-                        v0 = this.j.n;
-lbl21:
-                        // 2 sources
+   private static IOException a(IOException var0) {
+      return var0;
+   }
 
-                        if (v0 != 0) continue block7;
-                    } while (var1_1 == null);
-                    break;
-                }
-            }
-            catch (IOException var2_3) {
-                this.j.T();
-            }
-        }
-        finally {
-            this.j.T();
-        }
-    }
-
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
-
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 7554952516090738692L;
-        a = 0x49C146E218883DD8L ^ l2;
-    }
+   static {
+      long var0 = 7554952516090738692L;
+      long var10002 = 5314606972162031064L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

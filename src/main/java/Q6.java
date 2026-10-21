@@ -1,61 +1,62 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.util.ArrayList;
 import javax.swing.table.AbstractTableModel;
 
-public class Q6
-extends AbstractTableModel {
-    private ArrayList v;
-    String[] N;
-    Class[] j;
-    private static final long a;
+public class Q6 extends AbstractTableModel {
+   private ArrayList v;
+   String[] N;
+   Class[] j;
+   private static final long a;
 
-    Q6() {
-        this.v = new ArrayList();
-        this.j = new Class[]{Object.class};
-        this.N = new String[]{""};
-    }
+   Q6() {
+      com.c.c(593268998095649359L).set(this, new ArrayList());
+      com.c.c(382572070510439589L).set(this, new Class[]{Object.class});
+      com.c.c(332657287529601498L).set(this, new String[]{""});
+   }
 
-    @Override
-    public int getRowCount() {
-        int n10 = (int)a;
-        String string = vn_0.C();
-        int n11 = ((ArrayList)this.v).size();
-        if (string == null) {
-            if (n11 > n10) {
-                return n10;
-            }
-            n11 = ((ArrayList)this.v).size();
-        }
-        return n11;
-    }
+   @Override
+   public int getRowCount() {
+      String var10000 = Vn_2.C();
+      int var2 = (int)a;
+      String var1 = var10000;
+      int var3 = ((ArrayList)com.c.c(593268998095649359L).get(this)).size();
+      if (var1 == null) {
+         if (var3 > var2) {
+            return var2;
+         }
 
-    @Override
-    public int getColumnCount() {
-        return ((String[])this.N).length;
-    }
+         var3 = ((ArrayList)com.c.c(593268998095649359L).get(this)).size();
+      }
 
-    @Override
-    public Object getValueAt(int n10, int n11) {
-        return ((ArrayList)this.v).get(n10);
-    }
+      return var3;
+   }
 
-    public ArrayList J() {
-        return (ArrayList)this.v;
-    }
+   @Override
+   public int getColumnCount() {
+      return ((String[])com.c.c(332657287529601498L).get(this)).length;
+   }
 
-    public void B(ArrayList arrayList) {
-        this.v = arrayList;
-    }
+   @Override
+   public Object getValueAt(int var1, int var2) {
+      return ((ArrayList)com.c.c(593268998095649359L).get(this)).get(var1);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 423249386125184514L;
-        a = 0x9623919BFF64CE1CL ^ l2;
-    }
+   public ArrayList J() {
+      return (ArrayList)com.c.c(593268998095649359L).get(this);
+   }
+
+   public void B(ArrayList var1) {
+      com.c.c(593268998095649359L).set(this, var1);
+   }
+
+   static {
+      long var0 = 423249386125184514L;
+      long var10002 = -7628093244644733412L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

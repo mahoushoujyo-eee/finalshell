@@ -1,58 +1,68 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.GO;
-import com.O8;
-import com.RV;
-import com.c.v_0;
+import com.C.v_2;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 
-public class Y6
-extends v_0 {
-    public static Color G;
-    public static int K;
+public class Y6 extends v_2 {
+   public static Color G;
+   public static int K;
 
-    public void Z(Graphics2D graphics2D, Rectangle rectangle, O8 o8) {
-        Object object = RV.X(graphics2D);
-        graphics2D.setColor(G);
-        graphics2D.fillRoundRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height, K * 2, K * 2);
-        RV.X(graphics2D, object);
-        super.u(graphics2D, rectangle, o8);
-    }
+   public void Z(Graphics2D var1, Rectangle var2, com.O8 var3) {
+      Object var4 = RV.X(var1);
+      var1.setColor(G);
+      var1.fillRoundRect(var2.x, var2.y, var2.width, var2.height, K * 2, K * 2);
+      RV.X(var1, var4);
+      super.u(var1, var2, (JLabel)var3);
+   }
 
-    @Override
-    public void u(Graphics2D graphics2D, Rectangle rectangle, JLabel jLabel) {
-        this.Z(graphics2D, rectangle, (O8)jLabel);
-    }
+   @Override
+   public void u(Graphics2D var1, Rectangle var2, JLabel var3) {
+      this.Z(var1, var2, (com.O8)var3);
+   }
 
-    @Override
-    public void u(Graphics2D graphics2D, Rectangle rectangle, JComponent jComponent) {
-        this.Z(graphics2D, rectangle, (O8)jComponent);
-    }
+   @Override
+   public void u(Graphics2D var1, Rectangle var2, JComponent var3) {
+      this.Z(var1, var2, (com.O8)var3);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 8666983656198584621L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "\u00a4V\u00b4x5\u00d59\u009f7\u0099\u00b7Q5\u00d59\u00d2\u001f\u00ff\u008f\u00115\u00d59\u00d2";
-        int n11 = "\u00a4V\u00b4x5\u00d59\u009f7\u0099\u00b7Q5\u00d59\u00d2\u001f\u00ff\u008f\u00115\u00d59\u00d2".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        G = new Color((int)lArray[1], (int)lArray[2], (int)lArray[2], (int)lArray[0]);
-        K = GO.Fx;
-    }
+   static {
+      long var1 = 8666983656198584621L;
+      long[] var0 = new long[3];
+      int var4 = 0;
+      String var5 = "¤V´x5Õ9\u009f7\u0099·Q5Õ9Ò\u001fÿ\u008f\u00115Õ9Ò";
+      int var6 = "¤V´x5Õ9\u009f7\u0099·Q5Õ9Ò\u001fÿ\u008f\u00115Õ9Ò".length();
+      byte var3 = 0;
+
+      do {
+         int var10001 = var3;
+         var3 += 8;
+         byte[] var7 = var5.substring(var10001, var3).getBytes("ISO-8859-1");
+         var10001 = var4++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var1;
+         byte var10003 = -1;
+         var0[var10001] = var10004;
+      } while (var3 < var6);
+
+      G = new Color((int)var0[1], (int)var0[2], (int)var0[2], (int)var0[0]);
+      K = GO.Fx;
+   }
 }
+
+
+
+
 

@@ -1,23 +1,17 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-
 class QB {
-    int l;
-    int C;
+   int l;
+   int C;
 
-    QB() {
-    }
+   void E(int var1) {
+      com.c.c(291580733527856622L).setInt(this, com.c.c(291580733527856622L).getInt(this) + var1);
+   }
 
-    void E(int n10) {
-        QB qB = this;
-        qB.C = qB.C + n10;
-    }
-
-    void y(int n10) {
-        QB qB = this;
-        qB.l = qB.l + n10;
-    }
+   void y(int var1) {
+      com.c.c(634944541091262560L).setInt(this, com.c.c(634944541091262560L).getInt(this) + var1);
+   }
 }
+
+
+
+
 

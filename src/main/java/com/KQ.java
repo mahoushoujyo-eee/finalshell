@@ -1,83 +1,87 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ac_0;
-import com.ic_1;
-import com.ky_2;
-import com.wd_0;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JComponent;
 
-class KQ
-implements ActionListener {
-    final wd_0 I;
+class KQ implements ActionListener {
+   final com.Wd_2 I;
 
-    KQ(wd_0 wd_02) {
-        this.I = wd_02;
-    }
+   KQ(com.Wd_2 var1) {
+      this.I = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block8: {
-            JComponent jComponent;
-            JComponent jComponent2;
-            block10: {
-                block11: {
-                    int n10;
-                    ky_2[] ky_2Array;
-                    float f10;
-                    block9: {
-                        block4: {
-                            block5: {
-                                wd_0 wd_02;
-                                block6: {
-                                    block7: {
-                                        float f11 = (float)wd_0.J() / (1000.0f / (float)wd_0.x());
-                                        f10 = 1.0f / f11;
-                                        ky_2Array = ac_0.n();
-                                        n10 = wd_0.q(this.I).equals((Object)ic_1.fadeIn);
-                                        if (ky_2Array != null) break block4;
-                                        if (n10 == 0) break block5;
-                                        wd_02 = this.I;
-                                        if (ky_2Array != null) break block6;
-                                        if (!(wd_0.Y(wd_02) < 1.0f)) break block7;
-                                        wd_0.F(this.I, Math.min(wd_0.Y(this.I) + f10, 1.0f));
-                                        this.I.repaint();
-                                        if (ky_2Array == null) break block8;
-                                    }
-                                    wd_0.Y(this.I);
-                                    wd_02 = this.I;
-                                }
-                                wd_0.N(wd_02).Y();
-                                if (ky_2Array == null) break block8;
-                            }
-                            n10 = wd_0.q(this.I).equals((Object)ic_1.fadeOut) ? 1 : 0;
-                        }
-                        if (ky_2Array != null) break block9;
-                        if (n10 == 0) break block8;
-                        jComponent2 = this.I;
-                        if (ky_2Array != null) break block10;
-                        float f12 = wd_0.Y((wd_0)jComponent2) - 0.0f;
-                        n10 = f12 == 0.0f ? 0 : (f12 > 0.0f ? 1 : -1);
-                    }
-                    if (n10 <= 0) break block11;
-                    wd_0.F(this.I, Math.max(wd_0.Y(this.I) - f10, 0.0f));
-                    this.I.repaint();
-                    if (ky_2Array == null) break block8;
-                }
-                jComponent2 = (JComponent)this.I.getParent();
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      float var3 = (float)com.Wd_2.J() / (1000.0F / (float)com.Wd_2.x());
+      com.ky_4[] var10000 = com.ac_2.n();
+      float var4 = 1.0F / var3;
+      com.ky_4[] var2 = var10000;
+      int var7 = com.Wd_2.q(this.I).equals(iC_3.fadeIn);
+      if (var2 == null) {
+         if (var7 != 0) {
+            com.Wd_2 var8 = this.I;
+            if (var2 == null) {
+               if (com.Wd_2.Y(this.I) < 1.0F) {
+                  com.Wd_2.F(this.I, Math.min(com.Wd_2.Y(this.I) + var4, 1.0F));
+                  this.I.repaint();
+                  if (var2 == null) {
+                     return;
+                  }
+               }
+
+               com.Wd_2.Y(this.I);
+               var8 = this.I;
             }
-            if ((jComponent = jComponent2) != null) {
-                Rectangle rectangle = this.I.getBounds();
-                jComponent.remove(this.I);
-                jComponent.repaint(rectangle);
+
+            com.Wd_2.N(var8).Y();
+            if (var2 == null) {
+               return;
             }
-            wd_0.N(this.I).Y();
-        }
-    }
+         }
+
+         var7 = com.Wd_2.q(this.I).equals(iC_3.fadeOut);
+      }
+
+      label50: {
+         if (var2 == null) {
+            if (var7 == 0) {
+               return;
+            }
+
+            var10000 = this.I;
+            if (var2 != null) {
+               break label50;
+            }
+
+            float var10;
+            var7 = (var10 = com.Wd_2.Y(this.I) - 0.0F) == 0.0F ? 0 : (var10 < 0.0F ? -1 : 1);
+         }
+
+         if (var7 > 0) {
+            com.Wd_2.F(this.I, Math.max(com.Wd_2.Y(this.I) - var4, 0.0F));
+            this.I.repaint();
+            if (var2 == null) {
+               return;
+            }
+         }
+
+         var10000 = (JComponent)this.I.getParent();
+      }
+
+      Object var5 = var10000;
+      if (var5 != null) {
+         Rectangle var6 = this.I.getBounds();
+         var5.remove(this.I);
+         var5.repaint(var6);
+      }
+
+      com.Wd_2.N(this.I).Y();
+   }
 }
+
+
+
+
 

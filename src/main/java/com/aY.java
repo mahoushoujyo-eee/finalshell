@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.DK;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-class aY
-extends WindowAdapter {
-    final DK q;
+class aY extends WindowAdapter {
+   final com.DK q;
 
-    aY(DK dK) {
-        this.q = dK;
-    }
+   aY(com.DK var1) {
+      this.q = var1;
+   }
 
-    @Override
-    public void windowClosed(WindowEvent windowEvent) {
-        this.q.z = -1;
-    }
+   @Override
+   public void windowClosed(WindowEvent var1) {
+      this.q.z = -1;
+   }
 }
+
+
+
+
 

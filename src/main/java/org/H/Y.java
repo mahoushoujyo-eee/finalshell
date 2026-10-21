@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
 import java.io.ByteArrayOutputStream;
@@ -8,24 +5,28 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 public abstract class Y {
-    private final short b;
+   private final short b;
 
-    public Y(short s2) {
-        this.b = s2;
-    }
+   public Y(short var1) {
+      this.b = var1;
+   }
 
-    public void B(DataOutputStream dataOutputStream) throws IOException {
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        this.T(new DataOutputStream(byteArrayOutputStream));
-        dataOutputStream.writeShort(this.b);
-        dataOutputStream.writeInt(byteArrayOutputStream.size());
-        byteArrayOutputStream.writeTo(dataOutputStream);
-    }
+   public void B(DataOutputStream var1) throws IOException {
+      ByteArrayOutputStream var2 = new ByteArrayOutputStream();
+      this.T(new DataOutputStream(var2));
+      var1.writeShort(this.b);
+      var1.writeInt(var2.size());
+      var2.writeTo(var1);
+   }
 
-    protected abstract void T(DataOutputStream var1) throws IOException;
+   protected abstract void T(DataOutputStream var1) throws IOException;
 
-    static short H(Y y2) {
-        return y2.b;
-    }
+   static short H(org.H.Y var0) {
+      return var0.b;
+   }
 }
+
+
+
+
 

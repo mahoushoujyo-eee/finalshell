@@ -1,51 +1,42 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
-import org.b_0;
-import org.v.M;
-import org.v.NJ;
-import org.v.NV;
-import org.v.fo_0;
-import org.v.h_1;
-import org.v.q_2;
+class hS implements fo_2 {
+   final q_4 d;
+   final org.v.M t;
+   final H_3 w;
 
-class hS
-implements fo_0 {
-    final q_2 d;
-    final M t;
-    final h_1 w;
+   hS(H_3 var1, q_4 var2, org.v.M var3) {
+      this.w = var1;
+      this.d = var2;
+      this.t = var3;
+   }
 
-    hS(h_1 h_12, q_2 q_22, M m10) {
-        this.w = h_12;
-        this.d = q_22;
-        this.t = m10;
-    }
+   @org.F.c
+   public Void U(NJ var1) throws org.b_2 {
+      H_3.e(this.w, var1, this.d);
+      return null;
+   }
 
-    @c
-    public Void U(NJ nJ2) throws b_0 {
-        h_1.e(this.w, nJ2, this.d);
-        return null;
-    }
+   @org.F.c
+   public Void W(NV var1) throws org.b_2 {
+      H_3.h(this.w, this.t, H_3.X(this.w, var1), this.d, this.w.w(var1));
+      return null;
+   }
 
-    @c
-    public Void W(NV nV2) throws b_0 {
-        h_1.h(this.w, this.t, h_1.X(this.w, nV2), this.d, this.w.w(nV2));
-        return null;
-    }
+   @org.F.c
+   @Override
+   public Object q(NV var1) throws Throwable {
+      return this.W(var1);
+   }
 
-    @Override
-    @c
-    public Object q(NV nV2) throws Throwable {
-        return this.W(nV2);
-    }
-
-    @Override
-    @c
-    public Object u(NJ nJ2) throws Throwable {
-        return this.U(nJ2);
-    }
+   @org.F.c
+   @Override
+   public Object u(NJ var1) throws Throwable {
+      return this.U(var1);
+   }
 }
+
+
+
+
 

@@ -1,52 +1,67 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class BW
-implements ComponentListener {
-    final bq_0 p;
-    final U u;
-    final yn_1 s;
+class BW implements ComponentListener {
+   final Bq_2 p;
+   final U u;
+   final yN_3 s;
 
-    BW(yn_1 yn_12, bq_0 bq_02, U u10) {
-        this.s = yn_12;
-        this.p = bq_02;
-        this.u = u10;
-    }
+   BW(yN_3 var1, Bq_2 var2, U var3) {
+      this.s = var1;
+      this.p = var2;
+      this.u = var3;
+   }
 
-    @Override
-    public void componentShown(ComponentEvent componentEvent) {
-        Point point = new Point();
-        Point point2 = MouseInfo.getPointerInfo().getLocation();
-        Point point3 = ((bq_0)this.p).getLocationOnScreen();
-        point.x = point2.x - (point3.x - ((U)c.c((long)297636157862580024L).get((Object)this)).getLocationOnScreen().x + ((Point)c.c((long)161378981027509202L).get((Object)c.c((long)479413945485822457L).get((Object)c.c((long)312271273134902461L).get((Object)this)))).x);
-        point.y = point2.y - (point3.y - ((U)c.c((long)297636157862580024L).get((Object)this)).getLocationOnScreen().y + ((Point)c.c((long)161378981027509202L).get((Object)c.c((long)479413945485822457L).get((Object)c.c((long)312271273134902461L).get((Object)this)))).y);
-        ((U)this.u).setLocation(point);
-        try {
-            lk_0.V(this.u);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        ((U)this.u).removeComponentListener(this);
-    }
+   @Override
+   public void componentShown(ComponentEvent var1) {
+      Point var2 = new Point();
+      Point var3 = MouseInfo.getPointerInfo().getLocation();
+      Point var4 = ((Bq_2)com.c.c(235474809631262608L).get(this)).getLocationOnScreen();
+      var2.x = var3.x
+         - (
+            var4.x
+               - ((U)com.c.c(297636157862580024L).get(this)).getLocationOnScreen().x
+               + ((Point)com.c.c(161378981027509202L).get(com.c.c(479413945485822457L).get(com.c.c(312271273134902461L).get(this)))).x
+         );
+      var2.y = var3.y
+         - (
+            var4.y
+               - ((U)com.c.c(297636157862580024L).get(this)).getLocationOnScreen().y
+               + ((Point)com.c.c(161378981027509202L).get(com.c.c(479413945485822457L).get(com.c.c(312271273134902461L).get(this)))).y
+         );
+      ((U)com.c.c(297636157862580024L).get(this)).setLocation(var2);
+      Object[] var10000 = com.c.a(com.c.c(297636157862580024L).get(this));
+      Method var6 = com.c.d(214213921318960935L);
+      Object[] var8 = var10000;
+      Object var7 = null;
 
-    @Override
-    public void componentResized(ComponentEvent componentEvent) {
-    }
+      try {
+         var6.invoke(var7, var8);
+      } catch (InvocationTargetException var5) {
+         throw var5.getTargetException();
+      }
 
-    @Override
-    public void componentMoved(ComponentEvent componentEvent) {
-    }
+      ((U)com.c.c(297636157862580024L).get(this)).removeComponentListener(this);
+   }
 
-    @Override
-    public void componentHidden(ComponentEvent componentEvent) {
-    }
+   @Override
+   public void componentResized(ComponentEvent var1) {
+   }
+
+   @Override
+   public void componentMoved(ComponentEvent var1) {
+   }
+
+   @Override
+   public void componentHidden(ComponentEvent var1) {
+   }
 }
+
+
+
+
 

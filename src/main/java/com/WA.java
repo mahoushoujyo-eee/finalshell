@@ -1,12 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.GR;
-import com.cb_1;
-import com.u3;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -16,119 +9,143 @@ import java.util.Iterator;
 import java.util.List;
 import javax.swing.tree.DefaultMutableTreeNode;
 
-public class WA
-implements MouseListener,
-KeyListener {
-    final u3 n;
+public class WA implements MouseListener, KeyListener {
+   final u3 n;
 
-    protected WA(u3 u32) {
-        this.n = u32;
-    }
+   protected WA(u3 var1) {
+      this.n = var1;
+   }
 
-    @Override
-    public void keyPressed(KeyEvent keyEvent) {
-        block7: {
-            int n10;
-            List list;
-            block5: {
-                boolean bl;
-                String[] stringArray;
-                block6: {
-                    stringArray = cb_1.C();
-                    bl = this.n.b();
-                    if (stringArray == null) break block6;
-                    if (!bl) break block7;
-                    bl = GR.rN.J(keyEvent);
-                }
-                if (!bl) break block7;
-                list = this.n.V();
-                Iterator iterator = list.iterator();
-                while (iterator.hasNext()) {
-                    block10: {
-                        block9: {
-                            boolean bl2;
-                            block8: {
-                                DefaultMutableTreeNode defaultMutableTreeNode = (DefaultMutableTreeNode)iterator.next();
-                                n10 = this.n.R(defaultMutableTreeNode) ? 1 : 0;
-                                if (stringArray == null) break block5;
-                                if (stringArray == null) break block8;
-                                if (n10 == 0) break block9;
-                                bl2 = this.n.N(defaultMutableTreeNode);
-                            }
-                            if (bl2) break block10;
+   @Override
+   public void keyPressed(KeyEvent var1) {
+      String[] var2 = com.cB_3.C();
+      int var10000 = this.n.b();
+      if (var2 != null) {
+         if (!var10000) {
+            return;
+         }
+
+         var10000 = GR.rN.J(var1);
+      }
+
+      if (var10000) {
+         List var3 = this.n.V();
+         Iterator var4 = var3.iterator();
+
+         label39: {
+            while (var4.hasNext()) {
+               DefaultMutableTreeNode var5 = (DefaultMutableTreeNode)var4.next();
+               var10000 = this.n.R(var5);
+               if (var2 == null) {
+                  break label39;
+               }
+
+               label35: {
+                  label34: {
+                     if (var2 != null) {
+                        if (var10000 == 0) {
+                           break label34;
                         }
-                        iterator.remove();
-                    }
-                    if (stringArray != null) continue;
-                }
-                n10 = list.size();
+
+                        var10000 = this.n.N(var5);
+                     }
+
+                     if (var10000 != 0) {
+                        break label35;
+                     }
+                  }
+
+                  var4.remove();
+               }
+
+               if (var2 == null) {
+                  break;
+               }
             }
-            if (n10 > 0) {
-                this.n.i(list);
+
+            var10000 = var3.size();
+         }
+
+         if (var10000 > 0) {
+            this.n.i(var3);
+         }
+      }
+   }
+
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      String[] var2 = com.cB_3.C();
+      boolean var10000 = this.n.b();
+      if (var2 != null) {
+         if (!var10000) {
+            return;
+         }
+
+         var10000 = com.FN.B(var1);
+      }
+
+      if (var10000) {
+         DefaultMutableTreeNode var3 = this.n.q(var1.getPoint());
+         if (var3 != null) {
+            DefaultMutableTreeNode var10001;
+            label38: {
+               var10000 = this.n.R(var3);
+               if (var2 != null) {
+                  if (!var10000) {
+                     return;
+                  }
+
+                  var6 = this.n;
+                  var10001 = var3;
+                  if (var2 == null) {
+                     break label38;
+                  }
+
+                  var10000 = this.n.N(var3);
+               }
+
+               if (!var10000) {
+                  return;
+               }
+
+               var6 = this.n;
+               var10001 = var3;
             }
-        }
-    }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        block5: {
-            Rectangle rectangle;
-            DefaultMutableTreeNode defaultMutableTreeNode;
-            u3 u32;
-            DefaultMutableTreeNode defaultMutableTreeNode2;
-            block7: {
-                boolean bl;
-                block6: {
-                    boolean bl2;
-                    String[] stringArray;
-                    block4: {
-                        stringArray = cb_1.C();
-                        bl2 = this.n.b();
-                        if (stringArray == null) break block4;
-                        if (!bl2) break block5;
-                        bl2 = FN.B(mouseEvent);
-                    }
-                    if (!bl2 || (defaultMutableTreeNode2 = this.n.q(mouseEvent.getPoint())) == null) break block5;
-                    bl = this.n.R(defaultMutableTreeNode2);
-                    if (stringArray == null) break block6;
-                    if (!bl) break block5;
-                    u32 = this.n;
-                    defaultMutableTreeNode = defaultMutableTreeNode2;
-                    if (stringArray == null) break block7;
-                    bl = u32.N(defaultMutableTreeNode);
-                }
-                if (!bl) break block5;
-                u32 = this.n;
-                defaultMutableTreeNode = defaultMutableTreeNode2;
+            Rectangle var4 = var6.O(var10001);
+            if (var4.contains(var1.getPoint())) {
+               this.n.E(var3);
             }
-            if ((rectangle = u32.O(defaultMutableTreeNode)).contains(mouseEvent.getPoint())) {
-                this.n.E(defaultMutableTreeNode2);
-            }
-        }
-    }
+         }
+      }
+   }
 
-    @Override
-    public void keyTyped(KeyEvent keyEvent) {
-    }
+   @Override
+   public void keyTyped(KeyEvent var1) {
+   }
 
-    @Override
-    public void keyReleased(KeyEvent keyEvent) {
-    }
+   @Override
+   public void keyReleased(KeyEvent var1) {
+   }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+   }
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+   }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseExited(MouseEvent var1) {
+   }
 }
+
+
+
+
 

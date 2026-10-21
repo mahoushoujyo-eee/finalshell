@@ -1,13 +1,14 @@
-/*
- * Decompiled with CFR 0.152.
- */
 public class nX {
-    public static void u(Object object) {
-        System.out.println(object);
-    }
+   public static void u(Object var0) {
+      System.out.println(var0);
+   }
 
-    public static void d(String string) {
-        System.out.println(string);
-    }
+   public static void d(String var0) {
+      System.out.println(var0);
+   }
 }
+
+
+
+
 

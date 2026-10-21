@@ -1,87 +1,97 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.YM;
-import com.ky_2;
-import com.lz_0;
-import com.nx_2;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import javax.swing.JComponent;
 
-class LD
-extends lz_0 {
-    final YM a;
-    private static final long[] b;
-    private static final Integer[] e;
+class LD extends com.Lz_2 {
+   final com.YM a;
+   private static final long[] b;
+   private static final Integer[] e;
 
-    LD(YM yM) {
-        this.a = yM;
-    }
+   LD(com.YM var1) {
+      this.a = var1;
+   }
 
-    public void d(Graphics2D graphics2D, Rectangle rectangle, ky_2 ky_22) {
-        block5: {
-            YM yM;
-            block4: {
-                int n10 = nx_2.R();
-                yM = this.a;
-                if (n10 != 0) break block4;
-                if (!YM.M(yM).isShowing()) break block5;
-                yM = this.a;
-            }
-            if (yM.O.j != null) {
-                graphics2D.drawImage(YM.q(this.a), rectangle.x + 2, rectangle.y + 2, rectangle.width - 4, rectangle.height - 4, null);
-                graphics2D.setPaint(Color.BLACK);
-                graphics2D.drawRect(0, 0, rectangle.width - 1, rectangle.height - 1);
-                graphics2D.setPaint(Color.WHITE);
-                graphics2D.drawRect(1, 1, rectangle.width - 3, rectangle.height - 3);
-                int n11 = rectangle.x + rectangle.width / 2;
-                int n12 = rectangle.y + rectangle.height / 2;
-                graphics2D.setPaint(Color.WHITE);
-                graphics2D.drawLine(n11 - 1, n12 - LD.a(9662, 736673284630892496L), n11 - 1, n12 + LD.a(30869, 1820307675219661562L));
-                graphics2D.drawLine(n11 + 1, n12 - LD.a(30869, 1820307675219661562L), n11 + 1, n12 + LD.a(30869, 1820307675219661562L));
-                graphics2D.drawLine(n11 - LD.a(30869, 1820307675219661562L), n12 - 1, n11 + LD.a(30869, 1820307675219661562L), n12 - 1);
-                graphics2D.drawLine(n11 - LD.a(30869, 1820307675219661562L), n12 + 1, n11 + LD.a(30869, 1820307675219661562L), n12 + 1);
-                graphics2D.setPaint(Color.BLACK);
-                graphics2D.drawLine(n11, n12 - LD.a(30869, 1820307675219661562L), n11, n12 + LD.a(30869, 1820307675219661562L));
-                graphics2D.drawLine(n11 - LD.a(30869, 1820307675219661562L), n12, n11 + LD.a(30869, 1820307675219661562L), n12);
-            }
-        }
-    }
+   public void d(Graphics2D var1, Rectangle var2, com.ky_4 var3) {
+      int var4 = nx_4.R();
+      com.YM var10000 = this.a;
+      if (var4 == 0) {
+         if (!com.YM.M(this.a).isShowing()) {
+            return;
+         }
 
-    @Override
-    public void u(Graphics2D graphics2D, Rectangle rectangle, JComponent jComponent) {
-        this.d(graphics2D, rectangle, (ky_2)jComponent);
-    }
+         var10000 = this.a;
+      }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 2074378631410572291L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "-<\u00c4\u00bf\u00eb\u0012\u0093\u00d4\u00a3A\u00a1GE\u0081\u00ce\u00fe";
-        int n11 = "-<\u00c4\u00bf\u00eb\u0012\u0093\u00d4\u00a3A\u00a1GE\u0081\u00ce\u00fe".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        b = lArray;
-        e = new Integer[2];
-    }
+      if (var10000.O.j != null) {
+         var1.drawImage(com.YM.q(this.a), var2.x + 2, var2.y + 2, var2.width - 4, var2.height - 4, null);
+         var1.setPaint(Color.BLACK);
+         var1.drawRect(0, 0, var2.width - 1, var2.height - 1);
+         var1.setPaint(Color.WHITE);
+         var1.drawRect(1, 1, var2.width - 3, var2.height - 3);
+         int var5 = var2.x + var2.width / 2;
+         int var6 = var2.y + var2.height / 2;
+         var1.setPaint(Color.WHITE);
+         var1.drawLine(var5 - 1, var6 - a(9662, 736673284630892496L), var5 - 1, var6 + a(30869, 1820307675219661562L));
+         var1.drawLine(var5 + 1, var6 - a(30869, 1820307675219661562L), var5 + 1, var6 + a(30869, 1820307675219661562L));
+         var1.drawLine(var5 - a(30869, 1820307675219661562L), var6 - 1, var5 + a(30869, 1820307675219661562L), var6 - 1);
+         var1.drawLine(var5 - a(30869, 1820307675219661562L), var6 + 1, var5 + a(30869, 1820307675219661562L), var6 + 1);
+         var1.setPaint(Color.BLACK);
+         var1.drawLine(var5, var6 - a(30869, 1820307675219661562L), var5, var6 + a(30869, 1820307675219661562L));
+         var1.drawLine(var5 - a(30869, 1820307675219661562L), var6, var5 + a(30869, 1820307675219661562L), var6);
+      }
+   }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x6A6E;
-        if (e[n11] == null) {
-            LD.e[n11] = (int)(b[n11] ^ l2);
-        }
-        return e[n11];
-    }
+   @Override
+   public void u(Graphics2D var1, Rectangle var2, JComponent var3) {
+      this.d(var1, var2, (com.ky_4)var3);
+   }
+
+   static {
+      long var0 = 2074378631410572291L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "-<Ä¿ë\u0012\u0093Ô£A¡GE\u0081Îþ";
+      int var5 = "-<Ä¿ë\u0012\u0093Ô£A¡GE\u0081Îþ".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      b = var6;
+      e = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 27246;
+      if (e[var3] == null) {
+         e[var3] = (int)(b[var3] ^ var1);
+      }
+
+      return e[var3];
+   }
 }
+
+
+
+
 

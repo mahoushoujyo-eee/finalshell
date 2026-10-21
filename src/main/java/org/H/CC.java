@@ -1,68 +1,65 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import org.F.c;
-import org.b_0;
-import org.h.cs_0;
 import org.v.N9;
 import org.v.RA;
 import org.v.RH;
-import org.v.fu_0;
-import org.v.hj_0;
-import org.v.rg_0;
+import org.v.Rg_2;
+import org.v.fu_2;
+import org.v.hj_2;
 
-class CC
-implements hj_0 {
-    final cs_0 O;
+class CC implements hj_2 {
+   final org.H.Cs_2 O;
 
-    CC(cs_0 cs_02) {
-        this.O = cs_02;
-    }
+   CC(org.H.Cs_2 var1) {
+      this.O = var1;
+   }
 
-    @c
-    public fu_0 Y(RA rA) throws b_0 {
-        return this.O.t(rA);
-    }
+   @org.F.c
+   public fu_2 Y(RA var1) throws org.b_2 {
+      return this.O.t(var1);
+   }
 
-    @c
-    public fu_0 m(rg_0 rg_02) throws b_0 {
-        return this.O.c(rg_02);
-    }
+   @org.F.c
+   public fu_2 m(Rg_2 var1) throws org.b_2 {
+      return this.O.c(var1);
+   }
 
-    @c
-    public fu_0 M(RH rH) throws b_0 {
-        return this.O.H(rH);
-    }
+   @org.F.c
+   public fu_2 M(RH var1) throws org.b_2 {
+      return this.O.H(var1);
+   }
 
-    @c
-    public fu_0 x(N9 n92) throws b_0 {
-        return this.O.M(n92);
-    }
+   @org.F.c
+   public fu_2 x(N9 var1) throws org.b_2 {
+      return this.O.M(var1);
+   }
 
-    @Override
-    @c
-    public Object H(N9 n92) throws Throwable {
-        return this.x(n92);
-    }
+   @org.F.c
+   @Override
+   public Object H(N9 var1) throws Throwable {
+      return this.x(var1);
+   }
 
-    @Override
-    @c
-    public Object b(RH rH) throws Throwable {
-        return this.M(rH);
-    }
+   @org.F.c
+   @Override
+   public Object b(RH var1) throws Throwable {
+      return this.M(var1);
+   }
 
-    @Override
-    @c
-    public Object a(rg_0 rg_02) throws Throwable {
-        return this.m(rg_02);
-    }
+   @org.F.c
+   @Override
+   public Object a(Rg_2 var1) throws Throwable {
+      return this.m(var1);
+   }
 
-    @Override
-    @c
-    public Object z(RA rA) throws Throwable {
-        return this.Y(rA);
-    }
+   @org.F.c
+   @Override
+   public Object z(RA var1) throws Throwable {
+      return this.Y(var1);
+   }
 }
+
+
+
+
 

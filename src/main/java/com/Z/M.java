@@ -1,61 +1,61 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.E;
-import com.Z.T;
+class M implements com.E {
+   final com.Z.T k;
 
-class M
-implements E {
-    final T k;
+   M(com.Z.T var1) {
+      this.k = var1;
+   }
 
-    M(T t2) {
-        this.k = t2;
-    }
+   public Boolean Y() {
+      String var1 = com.Z.T.v();
+      boolean var10000 = this.k.H.isEditing();
+      if (var1 == null) {
+         if (var10000) {
+            return false;
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    public Boolean Y() {
-        boolean bl;
-        block5: {
-            String string;
-            block8: {
-                block7: {
-                    block6: {
-                        block4: {
-                            string = T.v();
-                            bl = this.k.H.isEditing();
-                            if (string != null) break block4;
-                            if (bl) break block5;
-                            bl = this.k.E.k();
-                        }
-                        if (string != null) break block6;
-                        if (bl) break block5;
-                        bl = this.k.hD.isEditing();
-                    }
-                    if (string != null) break block7;
-                    if (bl) break block5;
-                    bl = this.k.D.V();
-                }
-                if (string != null) break block8;
-                if (bl) break block5;
-                bl = this.k.R.isFocusOwner();
-            }
-            if (string != null) return bl;
-            if (!bl) {
-                bl = true;
-                return bl;
-            }
-        }
-        bl = false;
-        return bl;
-    }
+         var10000 = this.k.E.k();
+      }
 
-    @Override
-    public Object J() {
-        return this.Y();
-    }
+      if (var1 == null) {
+         if (var10000) {
+            return false;
+         }
+
+         var10000 = this.k.hD.isEditing();
+      }
+
+      if (var1 == null) {
+         if (var10000) {
+            return false;
+         }
+
+         var10000 = this.k.D.V();
+      }
+
+      if (var1 == null) {
+         if (var10000) {
+            return false;
+         }
+
+         var10000 = this.k.R.isFocusOwner();
+      }
+
+      if (var1 != null) {
+         return var10000;
+      } else {
+         return !var10000 ? true : false;
+      }
+   }
+
+   @Override
+   public Object J() {
+      return this.Y();
+   }
 }
+
+
+
+
 

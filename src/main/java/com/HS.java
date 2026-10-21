@@ -1,31 +1,30 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com._c_0;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import javax.swing.text.JTextComponent;
 
-class HS
-implements FocusListener {
-    final JTextComponent K;
-    final _c_0 z;
+class HS implements FocusListener {
+   final JTextComponent K;
+   final _c_2 z;
 
-    HS(_c_0 _c_02, JTextComponent jTextComponent) {
-        this.z = _c_02;
-        this.K = jTextComponent;
-    }
+   HS(_c_2 var1, JTextComponent var2) {
+      this.z = var1;
+      this.K = var2;
+   }
 
-    @Override
-    public void focusLost(FocusEvent focusEvent) {
-        this.K.repaint();
-    }
+   @Override
+   public void focusLost(FocusEvent var1) {
+      this.K.repaint();
+   }
 
-    @Override
-    public void focusGained(FocusEvent focusEvent) {
-        this.K.repaint();
-    }
+   @Override
+   public void focusGained(FocusEvent var1) {
+      this.K.repaint();
+   }
 }
+
+
+
+
 

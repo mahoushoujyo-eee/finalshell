@@ -1,22 +1,26 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import java.nio.charset.Charset;
 import java.util.Set;
 import java.util.SortedMap;
 
 public class mG {
-    public static void main(String[] stringArray) throws Exception {
-        SortedMap<String, Charset> sortedMap = Charset.availableCharsets();
-        Set<String> set = sortedMap.keySet();
-        ky_2[] ky_2Array = yt_1.c();
-        for (String string : set) {
-            Charset charset = (Charset)sortedMap.get(string);
-            System.out.println(charset.name());
-            Set<String> set2 = charset.aliases();
-            if (ky_2Array != null) continue;
-        }
-    }
+   public static void main(String[] var0) throws Exception {
+      com.ky_4[] var10000 = yT_3.c();
+      SortedMap var2 = Charset.availableCharsets();
+      Set var3 = var2.keySet();
+      com.ky_4[] var1 = var10000;
+
+      for (String var5 : var3) {
+         Charset var6 = (Charset)var2.get(var5);
+         System.out.println(var6.name());
+         Set var7 = var6.aliases();
+         if (var1 == null) {
+            break;
+         }
+      }
+   }
 }
+
+
+
+
 

@@ -1,17 +1,17 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class d
-implements Runnable {
-    final yt_1 h;
+class d implements Runnable {
+   final yT_3 h;
 
-    d(yt_1 yt_12) {
-        this.h = yt_12;
-    }
+   d(yT_3 var1) {
+      this.h = var1;
+   }
 
-    @Override
-    public void run() {
-        System.gc();
-    }
+   @Override
+   public void run() {
+      System.gc();
+   }
 }
+
+
+
+
 

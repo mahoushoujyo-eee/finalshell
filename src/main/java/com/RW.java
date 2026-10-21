@@ -1,24 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.DQ;
-import com.gq_0;
-
 public interface RW {
-    public int e(String var1, byte[] var2);
+   int e(String var1, byte[] var2);
 
-    public void Y(DQ var1, gq_0 var2);
+   void Y(com.DQ var1, Gq_2 var2);
 
-    public void Y(String var1, String var2);
+   void Y(String var1, String var2);
 
-    public void n(String var1, String var2, byte[] var3);
+   void n(String var1, String var2, byte[] var3);
 
-    public String O();
+   String O();
 
-    public DQ[] G();
+   com.DQ[] G();
 
-    public DQ[] R(String var1, String var2);
+   com.DQ[] R(String var1, String var2);
 }
+
+
+
+
 

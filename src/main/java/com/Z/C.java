@@ -1,24 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.Z.T;
-import java.util.List;
 import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
 
-class C
-implements CaretListener {
-    final T z;
+class C implements CaretListener {
+   final com.Z.T z;
 
-    C(T t2) {
-        this.z = t2;
-    }
+   C(com.Z.T var1) {
+      this.z = var1;
+   }
 
-    @Override
-    public void caretUpdate(CaretEvent caretEvent) {
-        this.z.b((List)null);
-    }
+   @Override
+   public void caretUpdate(CaretEvent var1) {
+      this.z.b(null);
+   }
 }
+
+
+
+
 

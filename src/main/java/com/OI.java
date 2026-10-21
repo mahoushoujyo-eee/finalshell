@@ -1,28 +1,27 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.K9;
-import com.QR;
 import java.util.Comparator;
 
-class OI
-implements Comparator {
-    final QR a;
+class OI implements Comparator {
+   final com.QR a;
 
-    OI(QR qR) {
-        this.a = qR;
-    }
+   OI(com.QR var1) {
+      this.a = var1;
+   }
 
-    public int d(K9 k9, K9 k92) {
-        Integer n10 = this.a.J.indexOf(k9);
-        Integer n11 = this.a.J.indexOf(k92);
-        return n10.compareTo(n11);
-    }
+   public int d(com.K9 var1, com.K9 var2) {
+      Integer var3 = this.a.J.indexOf(var1);
+      Integer var4 = this.a.J.indexOf(var2);
+      return var3.compareTo(var4);
+   }
 
-    public int compare(Object object, Object object2) {
-        return this.d((K9)object, (K9)object2);
-    }
+   @Override
+   public int compare(Object var1, Object var2) {
+      return this.d((com.K9)var1, (com.K9)var2);
+   }
 }
+
+
+
+
 

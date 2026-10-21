@@ -1,133 +1,110 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.KE;
-import com.a0;
-import com.hi_0;
-import com.ph_2;
-import com.yn_2;
-import java.util.Collection;
+class EM implements com.a0 {
+   public static final EM D = new EM();
 
-class EM
-implements a0 {
-    public static final EM D = new EM();
+   @Override
+   public Object Y(ph_4 param1, Object param2, Object param3) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Hi_2.C ()Ljava/lang/String;
+      // 03: aconst_null
+      // 04: astore 5
+      // 06: astore 4
+      // 08: aload 3
+      // 09: aload 4
+      // 0b: ifnonnull 23
+      // 0e: instanceof java/util/Collection
+      // 11: ifeq b3
+      // 14: goto 1b
+      // 17: invokestatic com/EM.a (Ljava/lang/UnsupportedOperationException;)Ljava/lang/UnsupportedOperationException;
+      // 1a: athrow
+      // 1b: aload 3
+      // 1c: goto 23
+      // 1f: invokestatic com/EM.a (Ljava/lang/UnsupportedOperationException;)Ljava/lang/UnsupportedOperationException;
+      // 22: athrow
+      // 23: checkcast java/util/Collection
+      // 26: invokeinterface java/util/Collection.iterator ()Ljava/util/Iterator; 1
+      // 2b: astore 6
+      // 2d: aload 6
+      // 2f: invokeinterface java/util/Iterator.hasNext ()Z 1
+      // 34: ifeq b0
+      // 37: aload 6
+      // 39: invokeinterface java/util/Iterator.next ()Ljava/lang/Object; 1
+      // 3e: astore 7
+      // 40: aload 7
+      // 42: aload 4
+      // 44: ifnonnull bd
+      // 47: aload 4
+      // 49: ifnonnull 6b
+      // 4c: goto 53
+      // 4f: invokestatic com/EM.a (Ljava/lang/UnsupportedOperationException;)Ljava/lang/UnsupportedOperationException;
+      // 52: athrow
+      // 53: ifnonnull 69
+      // 56: goto 5d
+      // 59: invokestatic com/EM.a (Ljava/lang/UnsupportedOperationException;)Ljava/lang/UnsupportedOperationException;
+      // 5c: athrow
+      // 5d: aload 4
+      // 5f: ifnull 2d
+      // 62: goto 69
+      // 65: invokestatic com/EM.a (Ljava/lang/UnsupportedOperationException;)Ljava/lang/UnsupportedOperationException;
+      // 68: athrow
+      // 69: aload 5
+      // 6b: aload 4
+      // 6d: ifnonnull 8c
+      // 70: ifnonnull 83
+      // 73: goto 7a
+      // 76: invokestatic com/EM.a (Ljava/lang/UnsupportedOperationException;)Ljava/lang/UnsupportedOperationException;
+      // 79: athrow
+      // 7a: aload 7
+      // 7c: astore 5
+      // 7e: aload 4
+      // 80: ifnull ab
+      // 83: aload 5
+      // 85: goto 8c
+      // 88: invokestatic com/EM.a (Ljava/lang/UnsupportedOperationException;)Ljava/lang/UnsupportedOperationException;
+      // 8b: athrow
+      // 8c: aload 4
+      // 8e: ifnonnull a9
+      // 91: aload 7
+      // 93: invokestatic com/ph_4.x (Ljava/lang/Object;Ljava/lang/Object;)I
+      // 96: ifle ab
+      // 99: goto a0
+      // 9c: invokestatic com/EM.a (Ljava/lang/UnsupportedOperationException;)Ljava/lang/UnsupportedOperationException;
+      // 9f: athrow
+      // a0: aload 7
+      // a2: goto a9
+      // a5: invokestatic com/EM.a (Ljava/lang/UnsupportedOperationException;)Ljava/lang/UnsupportedOperationException;
+      // a8: athrow
+      // a9: astore 5
+      // ab: aload 4
+      // ad: ifnull 2d
+      // b0: goto bb
+      // b3: new java/lang/UnsupportedOperationException
+      // b6: dup
+      // b7: invokespecial java/lang/UnsupportedOperationException.<init> ()V
+      // ba: athrow
+      // bb: aload 5
+      // bd: areturn
+   }
 
-    EM() {
-    }
+   @Override
+   public void Z(ph_4 var1, com.yn_4 var2, com.KE var3) {
+      throw new UnsupportedOperationException();
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public Object Y(ph_2 var1_1, Object var2_2, Object var3_3) {
-        block22: {
-            block28: {
-                block21: {
-                    block20: {
-                        var5_4 = null;
-                        var4_5 = hi_0.C();
-                        try {
-                            try {
-                                v0 = var3_3;
-                                if (var4_5 != null) break block20;
-                                if (!(v0 instanceof Collection)) break block21;
-                            }
-                            catch (UnsupportedOperationException v1) {
-                                throw EM.a(v1);
-                            }
-                            v0 = var3_3;
-                        }
-                        catch (UnsupportedOperationException v2) {
-                            throw EM.a(v2);
-                        }
-                    }
-                    for (E var7_7 : (Collection)v0) {
-                        block26: {
-                            block27: {
-                                block25: {
-                                    block23: {
-                                        block24: {
-                                            try {
-                                                try {
-                                                    try {
-                                                        v3 = var7_7;
-                                                        if (var4_5 != null) break block22;
-                                                        if (var4_5 != null) break block23;
-                                                    }
-                                                    catch (UnsupportedOperationException v4) {
-                                                        throw EM.a(v4);
-                                                    }
-                                                    if (v3 != null) break block24;
-                                                }
-                                                catch (UnsupportedOperationException v5) {
-                                                    throw EM.a(v5);
-                                                }
-                                                if (var4_5 == null) continue;
-                                            }
-                                            catch (UnsupportedOperationException v6) {
-                                                throw EM.a(v6);
-                                            }
-                                        }
-                                        v7 = var5_4;
-                                    }
-                                    try {
-                                        if (var4_5 != null) break block25;
-                                        if (v7 == null) {
-                                        }
-                                        ** GOTO lbl47
-                                    }
-                                    catch (UnsupportedOperationException v8) {
-                                        throw EM.a(v8);
-                                    }
-                                    var5_4 = var7_7;
-                                    try {
-                                        if (var4_5 == null) break block26;
-lbl47:
-                                        // 2 sources
-
-                                        v7 = var5_4;
-                                    }
-                                    catch (UnsupportedOperationException v9) {
-                                        throw EM.a(v9);
-                                    }
-                                }
-                                try {
-                                    try {
-                                        if (var4_5 != null) break block27;
-                                        if (ph_2.x(v7, var7_7) <= 0) break block26;
-                                    }
-                                    catch (UnsupportedOperationException v10) {
-                                        throw EM.a(v10);
-                                    }
-                                    v7 = var7_7;
-                                }
-                                catch (UnsupportedOperationException v11) {
-                                    throw EM.a(v11);
-                                }
-                            }
-                            var5_4 = v7;
-                        }
-                        if (var4_5 == null) continue;
-                        break block28;
-                    }
-                    break block28;
-                }
-                throw new UnsupportedOperationException();
-            }
-            v3 = var5_4;
-        }
-        return v3;
-    }
-
-    @Override
-    public void Z(ph_2 ph_22, yn_2 yn_22, KE kE) {
-        throw new UnsupportedOperationException();
-    }
-
-    private static UnsupportedOperationException a(UnsupportedOperationException unsupportedOperationException) {
-        return unsupportedOperationException;
-    }
+   private static UnsupportedOperationException a(UnsupportedOperationException var0) {
+      return var0;
+   }
 }
+
+
+
+
 

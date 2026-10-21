@@ -1,42 +1,46 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.XM;
-import com.ra_1;
 import java.awt.image.ColorModel;
 
-class T_
-extends XM {
-    public T_(float f10, ColorModel colorModel, ColorModel colorModel2) {
-        super(f10, colorModel, colorModel2);
-    }
+class T_ extends XM {
+   public T_(float var1, ColorModel var2, ColorModel var3) {
+      super(var1, var2, var3);
+   }
 
-    @Override
-    public void G(int[] nArray, int[] nArray2, float f10) {
-        int n10 = nArray.length;
-        String string = ra_1.c();
-        for (int i2 = 0; i2 < n10; i2 += 4) {
-            int n11 = nArray[i2];
-            int n12 = nArray2[i2];
-            int n13 = nArray[i2 + 1];
-            int n14 = nArray2[i2 + 1];
-            int n15 = nArray[i2 + 2];
-            int n16 = nArray2[i2 + 2];
-            int n17 = nArray[i2 + 3];
-            int n18 = nArray2[i2 + 3];
-            int n19 = (n12 + n11) / 2;
-            int n20 = (n14 + n13) / 2;
-            int n21 = (n16 + n15) / 2;
-            float f11 = f10 * (float)n17 / 255.0f;
-            float f12 = 1.0f - f11;
-            nArray2[i2] = (int)(f11 * (float)n19 + f12 * (float)n12);
-            nArray2[i2 + 1] = (int)(f11 * (float)n20 + f12 * (float)n14);
-            nArray2[i2 + 2] = (int)(f11 * (float)n21 + f12 * (float)n16);
-            nArray2[i2 + 3] = (int)((float)n17 * f10 + (float)n18 * f12);
-            if (string == null) continue;
-        }
-    }
+   @Override
+   public void G(int[] var1, int[] var2, float var3) {
+      int var5 = var1.length;
+      String var10000 = rA_3.c();
+      byte var6 = 0;
+      String var4 = var10000;
+
+      while (var6 < var5) {
+         int var7 = var1[var6];
+         int var8 = var2[var6];
+         int var9 = var1[var6 + 1];
+         int var10 = var2[var6 + 1];
+         int var11 = var1[var6 + 2];
+         int var12 = var2[var6 + 2];
+         int var13 = var1[var6 + 3];
+         int var14 = var2[var6 + 3];
+         int var15 = (var8 + var7) / 2;
+         int var16 = (var10 + var9) / 2;
+         int var17 = (var12 + var11) / 2;
+         float var18 = var3 * (float)var13 / 255.0F;
+         float var19 = 1.0F - var18;
+         var2[var6] = (int)(var18 * (float)var15 + var19 * (float)var8);
+         var2[var6 + 1] = (int)(var18 * (float)var16 + var19 * (float)var10);
+         var2[var6 + 2] = (int)(var18 * (float)var17 + var19 * (float)var12);
+         var2[var6 + 3] = (int)((float)var13 * var3 + (float)var14 * var19);
+         var6 += 4;
+         if (var4 != null) {
+            break;
+         }
+      }
+   }
 }
+
+
+
+
 

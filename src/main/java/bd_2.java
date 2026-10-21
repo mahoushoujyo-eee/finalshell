@@ -1,70 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-/*
- * Renamed from bd
- */
-class bd_2
-implements ActionListener {
-    final String W;
-    final CW z;
+class Bd_2 implements Runnable {
+   final U X;
+   final fo_4 F;
 
-    bd_2(CW cW, String string) {
-        this.z = cW;
-        this.W = string;
-    }
+   Bd_2(fo_4 var1, U var2) {
+      this.F = var1;
+      this.X = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        li_2 li_22;
-        Object object;
-        Object object2;
-        Object object3;
-        t3_0 t3_02;
-        try {
-            t3_02 = (t3_0)this.z.u.Q();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        t3_0 t3_03 = t3_02;
-        try {
-            object3 = t3_03.l();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        lj_2 lj_22 = (lj_2)object3;
-        try {
-            object2 = yt_1.i();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            object = object2.h();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            li_22 = (li_2)object.u(this.W);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        li_2 li_23 = li_22;
-        try {
-            this.z.H((Object)t3_03, (Object)lj_22, this.z.E, (Object)li_23);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void run() {
+      Method var10000 = (Method)com.c.c(503352577815543664L).get(this);
+      Object[] var10001 = com.c.f();
+      Method var10003 = com.c.d(176356587927714575L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
+
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var1) {
+         throw var1.getTargetException();
+      }
+   }
 }
+
+
+
+
 

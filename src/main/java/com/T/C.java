@@ -1,159 +1,184 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.t;
 
-import com.t.L;
-import com.t.W;
-import com.t.n_0;
 import java.awt.Cursor;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class C
-extends MouseAdapter {
-    private boolean l;
-    final L w;
-    private static final long[] a;
-    private static final Integer[] b;
+class C extends MouseAdapter {
+   private boolean l;
+   final com.t.L w;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    private C(L l2) {
-        this.w = l2;
-        this.l = false;
-    }
+   private C(com.t.L var1) {
+      this.w = var1;
+      this.l = false;
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        this.l = true;
-        L.R(this.w, true);
-        this.b(mouseEvent.getPoint());
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      this.l = true;
+      com.t.L.R(this.w, true);
+      this.b(var1.getPoint());
+   }
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-        this.b(mouseEvent.getPoint());
-    }
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      this.b(var1.getPoint());
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-        block3: {
-            L l2;
-            block2: {
-                this.l = false;
-                int n10 = n_0.g();
-                L.R(this.w, false);
-                l2 = this.w;
-                if (n10 != 0) break block2;
-                if (L.N(l2).getVisibleRect().contains(mouseEvent.getPoint())) break block3;
-                l2 = this.w;
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+      int var10000 = com.t.n_2.g();
+      this.l = false;
+      int var2 = var10000;
+      com.t.L.R(this.w, false);
+      com.t.L var3 = this.w;
+      if (var2 == 0) {
+         if (com.t.L.N(this.w).getVisibleRect().contains(var1.getPoint())) {
+            return;
+         }
+
+         var3 = this.w;
+      }
+
+      var3.setCursor(Cursor.getDefaultCursor());
+   }
+
+   private void b(Point var1) {
+      int var2;
+      int var3;
+      int var10001;
+      label43: {
+         label46: {
+            var3 = com.t.n_2.W();
+            com.t.L.u(this.w, var1);
+            var2 = var3;
+            var3 = com.t.L.H(this.w).x;
+            var10001 = 2;
+            if (var2 != 0) {
+               if (var3 < 2) {
+                  com.t.L.H(this.w).x = 2;
+                  if (var2 != 0) {
+                     break label46;
+                  }
+               }
+
+               var3 = com.t.L.H(this.w).x;
+               var10001 = a(16814, 2416795011955695764L);
             }
-            l2.setCursor(Cursor.getDefaultCursor());
-        }
-    }
 
-    private void b(Point point) {
-        L l2;
-        block15: {
-            block14: {
-                int n10;
-                int n11;
-                block12: {
-                    int n12;
-                    block13: {
-                        block11: {
-                            block10: {
-                                block8: {
-                                    block9: {
-                                        int n13 = n_0.W();
-                                        L.u(this.w, point);
-                                        n12 = n13;
-                                        n11 = L.H((L)this.w).x;
-                                        n10 = 2;
-                                        if (n12 == 0) break block8;
-                                        if (n11 >= n10) break block9;
-                                        L.H((L)this.w).x = 2;
-                                        if (n12 != 0) break block10;
-                                    }
-                                    n11 = L.H((L)this.w).x;
-                                    n10 = C.a(16814, 2416795011955695764L);
-                                }
-                                if (n12 == 0) break block11;
-                                if (n11 > n10) {
-                                    L.H((L)this.w).x = C.a(22101, 6800546665711974254L);
-                                }
-                            }
-                            n11 = L.H((L)this.w).y;
-                            n10 = 2;
-                        }
-                        if (n12 == 0) break block12;
-                        if (n11 >= n10) break block13;
-                        L.H((L)this.w).y = 2;
-                        if (n12 != 0) break block14;
-                    }
-                    l2 = this.w;
-                    if (n12 == 0) break block15;
-                    n11 = L.H((L)l2).y;
-                    n10 = C.a(22101, 6800546665711974254L);
-                }
-                if (n11 > n10) {
-                    L.H((L)this.w).y = C.a(22101, 6800546665711974254L);
-                }
+            if (var2 == 0) {
+               break label43;
             }
-            l2 = this.w;
-        }
-        l2.p(L.l(this.w).X(L.H((L)this.w).x, L.H((L)this.w).y));
-    }
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-        this.w.setCursor(L.z(this.w));
-    }
-
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-        block3: {
-            C c2;
-            block2: {
-                int n10 = n_0.g();
-                c2 = this;
-                if (n10 != 0) break block2;
-                if (c2.l) break block3;
-                c2 = this;
+            if (var3 > var10001) {
+               com.t.L.H(this.w).x = a(22101, 6800546665711974254L);
             }
-            c2.w.setCursor(Cursor.getDefaultCursor());
-        }
-    }
+         }
 
-    C(L l2, W w2) {
-        this(l2);
-    }
+         var3 = com.t.L.H(this.w).y;
+         var10001 = 2;
+      }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 574130379787635079L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "U\u0093s+\u00e8\u008e\u00a8\u0011\u00c5\u00d7v\u00aa\u00be:?\u00eb";
-        int n11 = "U\u0093s+\u00e8\u008e\u00a8\u0011\u00c5\u00d7v\u00aa\u00be:?\u00eb".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-    }
+      label32: {
+         label31: {
+            if (var2 != 0) {
+               if (var3 < var10001) {
+                  com.t.L.H(this.w).y = 2;
+                  if (var2 != 0) {
+                     break label31;
+                  }
+               }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x613A;
-        if (b[n11] == null) {
-            C.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+               var4 = this.w;
+               if (var2 == 0) {
+                  break label32;
+               }
+
+               var3 = com.t.L.H(this.w).y;
+               var10001 = a(22101, 6800546665711974254L);
+            }
+
+            if (var3 > var10001) {
+               com.t.L.H(this.w).y = a(22101, 6800546665711974254L);
+            }
+         }
+
+         var4 = this.w;
+      }
+
+      var4.p(com.t.L.l(this.w).X(com.t.L.H(this.w).x, com.t.L.H(this.w).y));
+   }
+
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+      this.w.setCursor(com.t.L.z(this.w));
+   }
+
+   @Override
+   public void mouseExited(MouseEvent var1) {
+      int var2 = com.t.n_2.g();
+      C var10000 = this;
+      if (var2 == 0) {
+         if (this.l) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.w.setCursor(Cursor.getDefaultCursor());
+   }
+
+   C(com.t.L var1, com.t.W var2) {
+      this(var1);
+   }
+
+   static {
+      long var0 = 574130379787635079L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "U\u0093s+è\u008e¨\u0011Å×vª¾:?ë";
+      int var5 = "U\u0093s+è\u008e¨\u0011Å×vª¾:?ë".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 24890;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

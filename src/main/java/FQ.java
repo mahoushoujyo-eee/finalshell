@@ -1,48 +1,63 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.text.Collator;
 import java.util.Comparator;
 
-class FQ
-implements Comparator {
-    final Collator O;
-    final zD d;
+class FQ implements Comparator {
+   final Collator O;
+   final zD d;
 
-    FQ(zD zD2, Collator collator) {
-        this.d = zD2;
-        this.O = collator;
-    }
+   FQ(zD var1, Collator var2) {
+      this.d = var1;
+      this.O = var2;
+   }
 
-    public int L(tf_2 tf_22, tf_2 tf_23) {
-        String string;
-        String string2;
-        try {
-            string2 = (String)tf_22.M();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            string = (String)tf_23.M();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        return ((Collator)this.O).compare(string2, string);
-    }
+   public int L(tf_4 var1, tf_4 var2) {
+      Collator var10000 = (Collator)com.c.c(253109345344799940L).get(this);
+      Object[] var10002 = com.c.f();
+      Method var10004 = com.c.d(179612178163941306L);
+      Object[] var10003 = var10002;
+      tf_4 var6 = var1;
+      Method var10001 = var10004;
 
-    public int compare(Object object, Object object2) {
-        int n10;
-        try {
-            n10 = (Integer)this.L((Object)((tf_2)object), (Object)((tf_2)object2));
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        return n10;
-    }
+      try {
+         var5 = (String)var10001.invoke(var6, var10003);
+      } catch (InvocationTargetException var4) {
+         throw var4.getTargetException();
+      }
+
+      var10003 = com.c.f();
+      Method var10005 = com.c.d(179612178163941306L);
+      Object[] var11 = var10003;
+      tf_4 var10 = var2;
+      Method var7 = var10005;
+
+      try {
+         var10002 = (String)var7.invoke(var10, var11);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
+
+      return var10000.compare(var5, var10002);
+   }
+
+   @Override
+   public int compare(Object var1, Object var2) {
+      Object[] var10001 = com.c.a((tf_4)var1, (tf_4)var2);
+      Method var10003 = com.c.d(431144183358013024L);
+      Object[] var10002 = var10001;
+      FQ var4 = this;
+      Method var10000 = var10003;
+
+      try {
+         return (Integer)var10000.invoke(var4, var10002);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
+   }
 }
+
+
+
+
 

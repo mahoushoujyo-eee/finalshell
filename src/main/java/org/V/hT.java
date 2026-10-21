@@ -1,226 +1,310 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
 import java.util.HashMap;
-import org.b_0;
-import org.v.RA;
-import org.v.RG;
-import org.v.RH;
-import org.v._d_0;
-import org.v._e_0;
-import org.v.c_0;
-import org.v.h4;
-import org.v.h_1;
-import org.v.hy_0;
-import org.v.nt_0;
-import org.v.rg_0;
-import org.v.t_2;
 
-class hT
-implements _e_0 {
-    static final boolean m;
-    final h_1 T;
-    private static final String a;
+class hT implements _e_2 {
+   static final boolean m;
+   final H_3 T;
+   private static final String a;
 
-    hT(h_1 h_12) {
-        this.T = h_12;
-    }
+   hT(H_3 var1) {
+      this.T = var1;
+   }
 
-    public h4 v(RA rA) throws b_0 {
-        return this.E(rA.A, new hy_0[0]);
-    }
+   public h4 v(RA var1) throws org.b_2 {
+      return this.E(var1.A, new hy_2[0]);
+   }
 
-    public h4 O(RH rH) throws b_0 {
-        return this.E(rH.A, new hy_0[]{new hy_0(a, rH.V)});
-    }
+   public h4 O(RH var1) throws org.b_2 {
+      return this.E(var1.A, new hy_2[]{new hy_2(a, var1.V)});
+   }
 
-    public h4 Y(rg_0 rg_02) throws b_0 {
-        return this.E(rg_02.A, rg_02.Z);
-    }
+   public h4 Y(Rg_2 var1) throws org.b_2 {
+      return this.E(var1.A, var1.Z);
+   }
 
-    private h4 E(nt_0 nt_02, hy_0[] hy_0Array) throws b_0 {
-        HashMap<String, Object> hashMap = new HashMap<String, Object>();
-        String[] stringArray = RG.C();
-        for (hy_0 hy_02 : hy_0Array) {
-            hashMap.put(hy_02.l, this.z(hy_02.R));
-            if (stringArray != null) continue;
-        }
-        return new c_0(this, hashMap, nt_02);
-    }
+   private h4 E(Nt_2 var1, hy_2[] var2) throws org.b_2 {
+      String[] var10000 = RG.C();
+      HashMap var4 = new HashMap();
+      String[] var3 = var10000;
 
-    /*
-     * Loose catch block
-     */
-    private Object z(t_2 t_22) throws b_0 {
-        String[] stringArray = RG.C();
-        try {
-            Object object;
-            block12: {
-                Object object2;
-                block13: {
-                    block16: {
-                        object2 = t_22.g(new _d_0(this));
-                        if (m) break block13;
-                        object = object2;
-                        if (stringArray == null) break block12;
-                        break block16;
-                        catch (Exception exception) {
-                            throw hT.a(exception);
-                        }
-                    }
-                    try {
-                        block17: {
-                            if (object != null) break block13;
-                            break block17;
-                            catch (Exception exception) {
-                                throw hT.a(exception);
-                            }
-                        }
-                        throw new AssertionError();
-                    }
-                    catch (Exception exception) {
-                        throw hT.a(exception);
-                    }
-                }
-                object = object2;
+      for (hy_2 var8 : var2) {
+         var4.put(var8.l, this.z(var8.R));
+         if (var3 == null) {
+            break;
+         }
+      }
+
+      return new C_2(this, var4, var1);
+   }
+
+   private Object z(t_4 param1) throws org.b_2 {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/v/RG.C ()[Ljava/lang/String;
+      // 03: astore 2
+      // 04: aload 1
+      // 05: new org/v/_d_2
+      // 08: dup
+      // 09: aload 0
+      // 0a: invokespecial org/v/_d_2.<init> (Lorg/v/hT;)V
+      // 0d: invokeinterface org/v/t_4.g (Lorg/v/f_3;)Ljava/lang/Object; 2
+      // 12: astore 3
+      // 13: getstatic org/v/hT.m Z
+      // 16: ifne 3b
+      // 19: aload 3
+      // 1a: aload 2
+      // 1b: ifnull 3c
+      // 1e: goto 25
+      // 21: invokestatic org/v/hT.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 24: athrow
+      // 25: ifnonnull 3b
+      // 28: goto 2f
+      // 2b: invokestatic org/v/hT.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2e: athrow
+      // 2f: new java/lang/AssertionError
+      // 32: dup
+      // 33: invokespecial java/lang/AssertionError.<init> ()V
+      // 36: athrow
+      // 37: invokestatic org/v/hT.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3a: athrow
+      // 3b: aload 3
+      // 3c: areturn
+      // 3d: astore 3
+      // 3e: aload 3
+      // 3f: aload 2
+      // 40: ifnull 58
+      // 43: instanceof org/b_2
+      // 46: ifeq 5c
+      // 49: goto 50
+      // 4c: invokestatic org/v/hT.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 4f: athrow
+      // 50: aload 3
+      // 51: goto 58
+      // 54: invokestatic org/v/hT.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 57: athrow
+      // 58: checkcast org/b_2
+      // 5b: athrow
+      // 5c: new java/lang/IllegalStateException
+      // 5f: dup
+      // 60: aload 3
+      // 61: invokespecial java/lang/IllegalStateException.<init> (Ljava/lang/Throwable;)V
+      // 64: athrow
+   }
+
+   @Override
+   public Object b(RH var1) throws Throwable {
+      return this.O(var1);
+   }
+
+   @Override
+   public Object a(Rg_2 var1) throws Throwable {
+      return this.Y(var1);
+   }
+
+   @Override
+   public Object z(RA var1) throws Throwable {
+      return this.v(var1);
+   }
+
+   static Object F(hT var0, t_4 var1) throws org.b_2 {
+      return var0.z(var1);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "\u00118\u0019\f\"".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var9 = 21;
+      char[] var10002 = var10003;
+      int var4 = var10004;
+      char[] var13;
+      byte var17;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var13 = var10003;
+         var10005 = var0;
+         char var10008 = var10003[var0];
+         var10007 = 21;
+         var10006 = var10008;
+         switch (var0 % 7) {
+            case 0:
+               var17 = 114;
+               break;
+            case 1:
+               var17 = 76;
+               break;
+            case 2:
+               var17 = 96;
+               break;
+            case 3:
+               var17 = 108;
+               break;
+            case 4:
+               var17 = 82;
+               break;
+            case 5:
+               var17 = 114;
+               break;
+            default:
+               var17 = 82;
+         }
+      } else {
+         var9 = 21;
+         var4 = var10004;
+         if (var10004 <= var0) {
+            String var12 = new String(var10003).intern();
+            byte var7 = -1;
+            a = var12;
+
+            boolean var3;
+            label69: {
+               try {
+                  if (!H_3.class.desiredAssertionStatus()) {
+                     var3 = true;
+                     break label69;
+                  }
+               } catch (IllegalStateException var2) {
+                  throw a(var2);
+               }
+
+               var3 = false;
             }
-            return object;
-        }
-        catch (Exception exception) {
-            block15: {
-                Exception exception2;
-                block14: {
-                    try {
-                        try {
-                            exception2 = exception;
-                            if (stringArray == null) break block14;
-                            if (!(exception2 instanceof b_0)) break block15;
-                        }
-                        catch (Exception exception3) {
-                            throw hT.a(exception3);
-                        }
-                        exception2 = exception;
-                    }
-                    catch (Exception exception4) {
-                        throw hT.a(exception4);
-                    }
-                }
-                throw (b_0)exception2;
+
+            m = var3;
+            return;
+         }
+
+         var13 = var10003;
+         var10005 = var0;
+         char var18 = var10003[var0];
+         var10007 = 21;
+         var10006 = var18;
+         switch (var0 % 7) {
+            case 0:
+               var17 = 114;
+               break;
+            case 1:
+               var17 = 76;
+               break;
+            case 2:
+               var17 = 96;
+               break;
+            case 3:
+               var17 = 108;
+               break;
+            case 4:
+               var17 = 82;
+               break;
+            case 5:
+               var17 = 114;
+               break;
+            default:
+               var17 = 82;
+         }
+      }
+
+      while (true) {
+         var13[var10005] = (char)(var10006 ^ var10007 ^ var17);
+         var0++;
+         if (var9 == 0) {
+            var13 = var10002;
+            var10005 = var9;
+            char var20 = var10002[var9];
+            var10007 = var9;
+            var10006 = var20;
+            switch (var0 % 7) {
+               case 0:
+                  var17 = 114;
+                  break;
+               case 1:
+                  var17 = 76;
+                  break;
+               case 2:
+                  var17 = 96;
+                  break;
+               case 3:
+                  var17 = 108;
+                  break;
+               case 4:
+                  var17 = 82;
+                  break;
+               case 5:
+                  var17 = 114;
+                  break;
+               default:
+                  var17 = 82;
             }
-            throw new IllegalStateException(exception);
-        }
-    }
+         } else {
+            if (var4 <= var0) {
+               String var11 = new String(var10002).intern();
+               byte var6 = -1;
+               a = var11;
 
-    @Override
-    public Object b(RH rH) throws Throwable {
-        return this.O(rH);
-    }
+               boolean var10000;
+               label33: {
+                  try {
+                     if (!H_3.class.desiredAssertionStatus()) {
+                        var10000 = true;
+                        break label33;
+                     }
+                  } catch (IllegalStateException var1) {
+                     throw a(var1);
+                  }
 
-    @Override
-    public Object a(rg_0 rg_02) throws Throwable {
-        return this.Y(rg_02);
-    }
+                  var10000 = false;
+               }
 
-    @Override
-    public Object z(RA rA) throws Throwable {
-        return this.v(rA);
-    }
-
-    static Object F(hT hT2, t_2 t_22) throws b_0 {
-        return hT2.z(t_22);
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     * Enabled unnecessary exception pruning
-     * Enabled aggressive exception aggregation
-     */
-    static {
-        boolean bl;
-        char[] cArray;
-        block14: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block13: {
-                char[] cArray3 = "\u00118\u0019\f\"".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 21;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block13;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block14;
+               m = var10000;
+               return;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 114;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 76;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 96;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 108;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 82;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 114;
-                            break;
-                        }
-                        default: {
-                            n17 = 82;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        try {
-            bl = !h_1.class.desiredAssertionStatus();
-        }
-        catch (IllegalStateException illegalStateException) {
-            throw hT.a(illegalStateException);
-        }
-        m = bl;
-    }
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+            var13 = var10002;
+            var10005 = var0;
+            char var19 = var10002[var0];
+            var10007 = var9;
+            var10006 = var19;
+            switch (var0 % 7) {
+               case 0:
+                  var17 = 114;
+                  break;
+               case 1:
+                  var17 = 76;
+                  break;
+               case 2:
+                  var17 = 96;
+                  break;
+               case 3:
+                  var17 = 108;
+                  break;
+               case 4:
+                  var17 = 82;
+                  break;
+               case 5:
+                  var17 = 114;
+                  break;
+               default:
+                  var17 = 82;
+            }
+         }
+      }
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
 }
+
+
+
+
 

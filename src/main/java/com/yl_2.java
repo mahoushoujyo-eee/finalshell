@@ -1,26 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.QH;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-/*
- * Renamed from com.yl
- */
-class yl_2
-implements PropertyChangeListener {
-    final QH h;
+class Yl_2 implements ActionListener {
+   final com.kV_3 b;
 
-    yl_2(QH qH) {
-        this.h = qH;
-    }
+   Yl_2(com.kV_3 var1) {
+      this.b = var1;
+   }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent propertyChangeEvent) {
-        this.h.h();
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.b.P(-1);
+   }
 }
+
+
+
+
 

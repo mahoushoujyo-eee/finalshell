@@ -1,23 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import javax.swing.table.DefaultTableModel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-/*
- * Renamed from ll
- */
-class ll_2
-extends DefaultTableModel {
-    ll_2() {
-    }
+class Ll_2 implements ActionListener {
+   final ox_4 J;
 
-    @Override
-    public int getColumnCount() {
-        return 1;
-    }
+   Ll_2(ox_4 var1) {
+      this.J = var1;
+   }
 
-    public void G() {
-        super.addRow(new Object[]{new UC(0, 0, "", "")});
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+   }
 }
+
+
+
+
 

@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import java.awt.Container;
@@ -8,19 +5,22 @@ import java.awt.Rectangle;
 import javax.swing.JComponent;
 import javax.swing.ScrollPaneLayout;
 
-public class IL
-extends ScrollPaneLayout {
-    private final JComponent f;
+public class IL extends ScrollPaneLayout {
+   private final JComponent f;
 
-    public IL(JComponent jComponent) {
-        this.f = jComponent;
-    }
+   public IL(JComponent var1) {
+      this.f = var1;
+   }
 
-    @Override
-    public void layoutContainer(Container container) {
-        super.layoutContainer(container);
-        this.f.setBounds(new Rectangle(this.viewport.getBounds()));
-        container.setComponentZOrder(this.f, 0);
-    }
+   @Override
+   public void layoutContainer(Container var1) {
+      super.layoutContainer(var1);
+      this.f.setBounds(new Rectangle(this.viewport.getBounds()));
+      var1.setComponentZOrder(this.f, 0);
+   }
 }
+
+
+
+
 

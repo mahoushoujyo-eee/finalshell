@@ -1,17 +1,18 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 public interface PA {
-    public void X(String var1, int var2) throws Exception;
+   void X(String var1, int var2) throws Exception;
 
-    public byte[] K();
+   byte[] K();
 
-    public byte[] b();
+   byte[] b();
 
-    default public void k(String string, byte[] byArray) throws Exception {
-        throw new UnsupportedOperationException();
-    }
+   default void k(String var1, byte[] var2) throws Exception {
+      throw new UnsupportedOperationException();
+   }
 }
+
+
+
+
 

@@ -1,174 +1,180 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.ky_2;
-import com.sd_0;
 import org.jetbrains.annotations.NotNull;
 
 public class KB {
-    public final Object X;
-    public final Object S;
-    private static final KB j;
-    private static final long a;
+   public final Object X;
+   public final Object S;
+   private static final com.KB j = Z(null, null);
+   private static final long a;
 
-    @NotNull
-    public static KB Z(Object object, Object object2) {
-        return new KB(object, object2);
-    }
+   @NotNull
+   public static com.KB Z(Object var0, Object var1) {
+      return new com.KB(var0, var1);
+   }
 
-    public static Object K(KB kB) {
-        ky_2[] ky_2Array = sd_0.t();
-        Object object = kB;
-        if (ky_2Array != null) {
-            object = object != null ? kB.X : null;
-        }
-        return object;
-    }
+   public static Object K(com.KB var0) {
+      com.ky_4[] var1 = Sd_2.t();
+      Object var10000 = var0;
+      if (var1 != null) {
+         var10000 = var0 != null ? var0.X : null;
+      }
 
-    public static Object B(KB kB) {
-        ky_2[] ky_2Array = sd_0.t();
-        Object object = kB;
-        if (ky_2Array != null) {
-            object = object != null ? kB.S : null;
-        }
-        return object;
-    }
+      return var10000;
+   }
 
-    public static KB w() {
-        return j;
-    }
+   public static Object B(com.KB var0) {
+      com.ky_4[] var1 = Sd_2.t();
+      Object var10000 = var0;
+      if (var1 != null) {
+         var10000 = var0 != null ? var0.S : null;
+      }
 
-    public KB(Object object, Object object2) {
-        this.X = object;
-        this.S = object2;
-    }
+      return var10000;
+   }
 
-    public final Object F() {
-        return this.X;
-    }
+   public static com.KB w() {
+      return j;
+   }
 
-    public final Object e() {
-        return this.S;
-    }
+   public KB(Object var1, Object var2) {
+      this.X = var1;
+      this.S = var2;
+   }
 
-    public boolean equals(Object object) {
-        boolean bl;
-        block21: {
-            block22: {
-                block23: {
-                    Object object2;
-                    block19: {
-                        KB kB;
-                        block20: {
-                            ky_2[] ky_2Array;
-                            block16: {
-                                block17: {
-                                    block18: {
-                                        block14: {
-                                            block15: {
-                                                Object object3;
-                                                block12: {
-                                                    block13: {
-                                                        block11: {
-                                                            ky_2Array = sd_0.t();
-                                                            Object object4 = this;
-                                                            if (ky_2Array != null) {
-                                                                if (object4 == object) {
-                                                                    return true;
-                                                                }
-                                                                object4 = object;
-                                                            }
-                                                            if (object4 == null) break block11;
-                                                            object3 = this.getClass();
-                                                            if (ky_2Array == null) break block12;
-                                                            if (object3 == object.getClass()) break block13;
-                                                        }
-                                                        return false;
-                                                    }
-                                                    object3 = object;
-                                                }
-                                                kB = (KB)object3;
-                                                object2 = this.X;
-                                                if (ky_2Array == null) break block14;
-                                                if (object2 == null) break block15;
-                                                object2 = this.X;
-                                                if (ky_2Array == null) break block16;
-                                                if (object2.equals(kB.X)) break block17;
-                                                break block18;
-                                            }
-                                            object2 = kB.X;
-                                        }
-                                        if (ky_2Array == null) break block16;
-                                        if (object2 == null) break block17;
-                                    }
-                                    return false;
-                                }
-                                object2 = this.S;
-                            }
-                            if (ky_2Array == null) break block19;
-                            if (object2 == null) break block20;
-                            bl = this.S.equals(kB.S);
-                            if (ky_2Array == null) break block21;
-                            if (bl) break block22;
-                            break block23;
-                        }
-                        object2 = kB.S;
-                    }
-                    if (object2 == null) break block22;
-                }
-                return false;
+   public final Object F() {
+      return this.X;
+   }
+
+   public final Object e() {
+      return this.S;
+   }
+
+   @Override
+   public boolean equals(Object var1) {
+      com.ky_4[] var2 = Sd_2.t();
+      Object var10000 = this;
+      if (var2 != null) {
+         if (this == var1) {
+            return true;
+         }
+
+         var10000 = var1;
+      }
+
+      if (var10000 != null) {
+         var10000 = this.getClass();
+         if (var2 != null) {
+            if (var10000 != var1.getClass()) {
+               return false;
             }
-            bl = true;
-        }
-        return bl;
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    public int hashCode() {
-        var1_1 = sd_0.t();
-        v0 = this.X;
-        if (var1_1 == null) ** GOTO lbl6
-        if (v0 != null) {
-            v0 = this.X;
-lbl6:
-            // 2 sources
+            var10000 = var1;
+         }
 
-            v1 = v0.hashCode();
-        } else {
-            v1 = 0;
-        }
-        var2_2 = v1;
-        v2 = (int)KB.a * var2_2;
-        v3 = this.S;
-        if (var1_1 == null) ** GOTO lbl15
-        if (v3 != null) {
-            v3 = this.S;
-lbl15:
-            // 2 sources
+         com.KB var3;
+         label65: {
+            label81: {
+               var3 = (com.KB)var10000;
+               var10000 = this.X;
+               if (var2 != null) {
+                  if (this.X != null) {
+                     var10000 = this.X;
+                     if (var2 == null) {
+                        break label65;
+                     }
 
-            v4 = v3.hashCode();
-        } else {
-            v4 = 0;
-        }
-        var2_2 = v2 + v4;
-        return var2_2;
-    }
+                     if (!this.X.equals(var3.X)) {
+                        return false;
+                     }
+                     break label81;
+                  }
 
-    public String toString() {
-        return "<" + this.X + "," + this.S + ">";
-    }
+                  var10000 = var3.X;
+               }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5978068851461671251L;
-        a = 0xA423324A7E33494CL ^ l2;
-        j = KB.Z(null, null);
-    }
+               if (var2 == null) {
+                  break label65;
+               }
+
+               if (var10000 != null) {
+                  return false;
+               }
+            }
+
+            var10000 = this.S;
+         }
+
+         if (var2 != null) {
+            if (var10000 != null) {
+               boolean var6 = this.S.equals(var3.S);
+               if (var2 == null) {
+                  return var6;
+               }
+
+               if (!var6) {
+                  return false;
+               }
+
+               return true;
+            }
+
+            var10000 = var3.S;
+         }
+
+         return var10000 == null;
+      } else {
+         return false;
+      }
+   }
+
+   @Override
+   public int hashCode() {
+      com.ky_4[] var1;
+      int var3;
+      label25: {
+         var1 = Sd_2.t();
+         Object var10000 = this.X;
+         if (var1 != null) {
+            if (this.X == null) {
+               var3 = 0;
+               break label25;
+            }
+
+            var10000 = this.X;
+         }
+
+         var3 = var10000.hashCode();
+      }
+
+      int var2 = var3;
+      var3 = (int)a * var2;
+      Object var10001 = this.S;
+      if (var1 != null) {
+         if (this.S == null) {
+            return var3 + 0;
+         }
+
+         var10001 = this.S;
+      }
+
+      return var3 + var10001.hashCode();
+   }
+
+   @Override
+   public String toString() {
+      return "<" + this.X + "," + this.S + ">";
+   }
+
+   static {
+      long var0 = 5978068851461671251L;
+      long var10002 = -6619391731778238132L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

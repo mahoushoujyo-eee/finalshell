@@ -1,68 +1,70 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class JZ
-extends Thread {
-    final ob_1 y;
-    private static final long a;
-    private static final long b;
+class JZ extends Thread {
+   final oB_3 y;
+   private static final long a;
+   private static final long b;
 
-    JZ(ob_1 ob_12) {
-        this.y = ob_12;
-    }
+   JZ(oB_3 var1) {
+      this.y = var1;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void run() {
-        block7: {
-            var2_1 = 0;
-            var1_2 = QI.N();
-            try {
-                if (var1_2 == null) {
-                    while (true) {
-                        if (this.y.k == null) break block7;
-                        break;
-                    }
-                }
-                ** GOTO lbl20
-            }
-            catch (InterruptedException v0) {
-                throw JZ.a(v0);
-            }
-            if (var1_2 != null) ** GOTO lbl21
-        }
-        try {
-            Thread.sleep(JZ.b);
-        }
-        catch (InterruptedException var3_3) {
-            var3_3.printStackTrace();
-        }
-        do {
-            ++var2_1;
-lbl20:
-            // 2 sources
+   @Override
+   public void run() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic QI.N ()[Ljava/lang/String;
+      // 03: bipush 0
+      // 04: istore 2
+      // 05: astore 1
+      // 06: aload 1
+      // 07: ifnonnull 30
+      // 0a: aload 0
+      // 0b: getfield JZ.y LoB_3;
+      // 0e: getfield oB_3.k Ljava/lang/String;
+      // 11: ifnull 1f
+      // 14: goto 1b
+      // 17: invokestatic JZ.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 1a: athrow
+      // 1b: aload 1
+      // 1c: ifnonnull 38
+      // 1f: getstatic JZ.b J
+      // 22: invokestatic java/lang/Thread.sleep (J)V
+      // 25: goto 2d
+      // 28: astore 3
+      // 29: aload 3
+      // 2a: invokevirtual java/lang/InterruptedException.printStackTrace ()V
+      // 2d: iinc 2 1
+      // 30: iload 2
+      // 31: getstatic JZ.a J
+      // 34: l2i
+      // 35: if_icmplt 0a
+      // 38: aload 1
+      // 39: ifnull 25
+      // 3c: return
+   }
 
-            if (var2_1 < (int)JZ.a) ** continue;
-lbl21:
-            // 2 sources
+   private static InterruptedException a(InterruptedException var0) {
+      return var0;
+   }
 
-        } while (var1_2 == null);
-    }
-
-    private static InterruptedException a(InterruptedException interruptedException) {
-        return interruptedException;
-    }
-
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 7401182919832832537L;
-        a = 0x27FFC5A006530A07L ^ l2;
-        long l3 = 5282880152178032161L;
-        b = 0x49508F822D887DC9L ^ l3;
-    }
+   static {
+      long var2 = 7401182919832832537L;
+      long var10002 = 2882239577631951367L ^ var2;
+      byte var10001 = -1;
+      a = var10002;
+      long var0 = 5282880152178032161L;
+      var10002 = 5282880152178032073L ^ var0;
+      var10001 = -1;
+      b = var10002;
+   }
 }
+
+
+
+
 

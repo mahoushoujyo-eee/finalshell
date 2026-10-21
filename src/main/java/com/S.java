@@ -1,333 +1,351 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.IN;
-import com.ky_2;
-import com.pt_0;
-import com.yn_0;
+import java.awt.AWTEvent;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.ItemEvent;
-import javax.swing.JToggleButton;
+import javax.swing.JToggleButton.ToggleButtonModel;
 
-public class S
-extends JToggleButton.ToggleButtonModel {
-    protected boolean p = IN.G;
-    private static final long[] a;
-    private static final Integer[] b;
+public class S extends ToggleButtonModel {
+   protected boolean p = IN.G;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public boolean O() {
-        return this.p;
-    }
+   public boolean O() {
+      return this.p;
+   }
 
-    public void y(boolean bl) {
-        this.p = bl;
-    }
+   public void y(boolean var1) {
+      this.p = var1;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    public void f(pt_0 var1_1) {
-        var2_2 = pt_0.b();
-        if (var2_2 != null) ** GOTO lbl6
-        switch (yn_0.M[var1_1.ordinal()]) {
-            case 1: {
-                this.setSelected(false);
-lbl6:
-                // 2 sources
-
-                if (var2_2 == null) break;
+   public void f(Pt_2 var1) {
+      label22: {
+         com.ky_4[] var2;
+         label21: {
+            var2 = Pt_2.b();
+            if (var2 == null) {
+               switch (com.Yn_2.M[var1.ordinal()]) {
+                  case 1:
+                     this.setSelected(false);
+                     break;
+                  case 2:
+                     break label21;
+                  case 3:
+                     break label22;
+                  default:
+                     return;
+               }
             }
-            case 2: {
-                this.setSelected(true);
-                if (var2_2 == null) break;
+
+            if (var2 == null) {
+               return;
             }
-            case 3: {
-                this.g(true);
+         }
+
+         this.setSelected(true);
+         if (var2 == null) {
+            return;
+         }
+      }
+
+      this.g(true);
+   }
+
+   public Pt_2 y() {
+      com.ky_4[] var1 = Pt_2.b();
+      boolean var10000 = this.X();
+      if (var1 == null) {
+         if (var10000) {
+            return Pt_2.mixed;
+         }
+
+         var10000 = this.isSelected();
+      }
+
+      return var10000 ? Pt_2.checked : Pt_2.unchecked;
+   }
+
+   @Override
+   public void setPressed(boolean var1) {
+      com.ky_4[] var2 = Pt_2.b();
+      int var10000 = this.isEnabled();
+      if (var2 == null) {
+         if (var10000 == 0) {
+            return;
+         }
+
+         var10000 = this.isPressed();
+      }
+
+      if (var2 == null) {
+         if (var10000 == var1) {
+            return;
+         }
+
+         var10000 = var1;
+      }
+
+      label76: {
+         label75: {
+            if (var2 == null) {
+               if (var10000 != 0) {
+                  break label75;
+               }
+
+               var7 = this;
+               if (var2 != null) {
+                  break label76;
+               }
+
+               var10000 = this.isArmed();
             }
-        }
-    }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    public pt_0 y() {
-        pt_0 pt_02;
-        ky_2[] ky_2Array = pt_0.b();
-        boolean bl = this.X();
-        if (ky_2Array == null) {
-            if (bl) {
-                pt_02 = pt_0.mixed;
-                return pt_02;
+            if (var10000 != 0) {
+               this.d();
             }
-            bl = this.isSelected();
-        }
-        if (bl) {
-            pt_02 = pt_0.checked;
-            return pt_02;
-        }
-        pt_02 = pt_0.unchecked;
-        return pt_02;
-    }
+         }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    @Override
-    public void setPressed(boolean var1_1) {
-        block20: {
-            block24: {
-                block25: {
-                    block22: {
-                        block23: {
-                            block21: {
-                                block19: {
-                                    block18: {
-                                        block17: {
-                                            block16: {
-                                                block14: {
-                                                    block15: {
-                                                        block13: {
-                                                            block12: {
-                                                                var2_2 = pt_0.b();
-                                                                v0 = this.isEnabled();
-                                                                if (var2_2 != null) break block12;
-                                                                if (!v0) break block13;
-                                                                v0 = this.isPressed();
-                                                            }
-                                                            if (var2_2 != null) break block14;
-                                                            if (v0 != var1_1) break block15;
-                                                        }
-                                                        return;
-                                                    }
-                                                    v0 = var1_1;
-                                                }
-                                                if (var2_2 != null) break block16;
-                                                if (v0) break block17;
-                                                v1 = this;
-                                                if (var2_2 != null) break block18;
-                                                v0 = v1.isArmed();
-                                            }
-                                            if (v0) {
-                                                this.d();
-                                            }
-                                        }
-                                        v1 = this;
-                                    }
-                                    v2 = var1_1;
-                                    if (var2_2 != null) ** GOTO lbl31
-                                    if (v2 != 0) {
-                                        v3 = this.stateMask | 4;
-                                    } else {
-                                        v2 = this.stateMask;
-lbl31:
-                                        // 2 sources
+         var7 = this;
+      }
 
-                                        v3 = v2 & S.a(4766, 3863445292575446678L);
-                                    }
-                                    v1.stateMask = v3;
-                                    this.fireStateChanged();
-                                    v4 = this.isPressed();
-                                    if (var2_2 != null) break block19;
-                                    if (v4 != 0) break block20;
-                                    v4 = this.isArmed();
-                                }
-                                if (var2_2 != null) break block21;
-                                if (v4 == 0) break block20;
-                                v4 = 0;
-                            }
-                            var3_3 = v4;
-                            var4_4 = EventQueue.getCurrentEvent();
-                            v5 = var4_4 instanceof InputEvent;
-                            if (var2_2 != null) break block22;
-                            if (v5 == 0) break block23;
-                            var3_3 = ((InputEvent)var4_4).getModifiers();
-                            if (var2_2 == null) break block24;
-                        }
-                        v5 = var4_4 instanceof ActionEvent;
-                    }
-                    if (var2_2 != null) break block25;
-                    if (v5 == 0) break block24;
-                    v5 = ((ActionEvent)var4_4).getModifiers();
-                }
-                var3_3 = v5;
+      int var10;
+      label66: {
+         var10 = var1;
+         if (var2 == null) {
+            if (var1 != 0) {
+               var10 = this.stateMask | 4;
+               break label66;
             }
-            var5_5 = EventQueue.getMostRecentEventTime();
-            this.fireActionPerformed(new ActionEvent(this, S.a(5724, 489063734572372561L), this.getActionCommand(), var5_5, var3_3));
-        }
-    }
 
-    protected void d() {
-        this.f(this.Y(this.y()));
-    }
+            var10 = this.stateMask;
+         }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    @Override
-    public void setSelected(boolean var1_1) {
-        block2: {
-            block3: {
-                var3_2 = this.X();
-                var2_3 = pt_0.b();
-                if (var2_3 != null) break block2;
-                if (!var3_2) break block3;
-                this.stateMask &= S.a(3451, 8044606198164277621L);
-                v0 = var1_1;
-                if (var2_3 != null) ** GOTO lbl12
-                if (v0 != 0) {
-                    v1 = this.stateMask & S.a(7556, 5045667298793806223L);
-                } else {
-                    v0 = this.stateMask;
-lbl12:
-                    // 2 sources
+         var10 &= a(4766, 3863445292575446678L);
+      }
 
-                    v1 = v0 | 2;
-                }
-                this.stateMask = v1;
+      var7.stateMask = var10;
+      this.fireStateChanged();
+      var10000 = this.isPressed();
+      if (var2 == null) {
+         if (var10000 != 0) {
+            return;
+         }
+
+         var10000 = this.isArmed();
+      }
+
+      if (var2 == null) {
+         if (var10000 == 0) {
+            return;
+         }
+
+         var10000 = (byte)0;
+      }
+
+      int var3;
+      label91: {
+         var3 = var10000;
+         AWTEvent var4 = EventQueue.getCurrentEvent();
+         var10000 = var4 instanceof InputEvent;
+         if (var2 == null) {
+            if (var10000 != 0) {
+               var3 = ((InputEvent)var4).getModifiers();
+               if (var2 == null) {
+                  break label91;
+               }
             }
-            super.setSelected(var1_1);
-        }
-    }
 
-    public boolean X() {
-        ky_2[] ky_2Array = pt_0.b();
-        boolean bl = this.stateMask & S.a(29808, 216269436117168255L);
-        if (ky_2Array == null) {
-            bl = bl;
-        }
-        return bl;
-    }
+            var10000 = var4 instanceof ActionEvent;
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    public void g(boolean var1_1) {
-        var2_2 = pt_0.b();
-        v0 = this;
-        if (var2_2 == null) {
-            if (v0.X() == var1_1) {
-                return;
+         if (var2 == null) {
+            if (var10000 == 0) {
+               break label91;
             }
-            v0 = this;
-        }
-        v1 = var1_1;
-        if (var2_2 != null) ** GOTO lbl13
-        if (v1 != 0) {
-            v2 = this.stateMask | S.a(9977, 4060913670531310325L) | 2;
-        } else {
-            v1 = this.stateMask;
-lbl13:
-            // 2 sources
 
-            v2 = v1 & S.a(4750, 6830364874690188932L);
-        }
-        v0.stateMask = v2;
-        this.fireStateChanged();
-        this.fireItemStateChanged(new ItemEvent(this, S.a(23821, 7849490957253515524L), this, 3));
-    }
+            var10000 = ((ActionEvent)var4).getModifiers();
+         }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    protected pt_0 Y(pt_0 pt_02) {
-        ky_2[] ky_2Array = pt_0.b();
-        int n10 = yn_0.M[pt_02.ordinal()];
-        if (ky_2Array != null) return n10 != 0 ? pt_0.mixed : pt_0.checked;
-        switch (n10) {
-            case 1: {
-                n10 = this.p ? 1 : 0;
-                return n10 != 0 ? pt_0.mixed : pt_0.checked;
+         var3 = var10000;
+      }
+
+      long var5 = EventQueue.getMostRecentEventTime();
+      this.fireActionPerformed(new ActionEvent(this, a(5724, 489063734572372561L), this.getActionCommand(), var5, var3));
+   }
+
+   protected void d() {
+      this.f(this.Y(this.y()));
+   }
+
+   @Override
+   public void setSelected(boolean var1) {
+      com.ky_4[] var10000 = Pt_2.b();
+      boolean var3 = this.X();
+      com.ky_4[] var2 = var10000;
+      if (var2 == null) {
+         if (var3) {
+            int var4;
+            label20: {
+               this.stateMask = this.stateMask & a(3451, 8044606198164277621L);
+               var4 = var1;
+               if (var2 == null) {
+                  if (var1 != 0) {
+                     var4 = this.stateMask & a(7556, 5045667298793806223L);
+                     break label20;
+                  }
+
+                  var4 = this.stateMask;
+               }
+
+               var4 |= 2;
             }
-            case 2: {
-                return this.p ? pt_0.unchecked : pt_0.mixed;
+
+            this.stateMask = var4;
+         }
+
+         super.setSelected((boolean)var1);
+      }
+   }
+
+   public boolean X() {
+      com.ky_4[] var1 = Pt_2.b();
+      int var10000 = this.stateMask & a(29808, 216269436117168255L);
+      if (var1 == null) {
+         var10000 = var10000 != 0 ? 1 : 0;
+      }
+
+      return (boolean)var10000;
+   }
+
+   public void g(boolean var1) {
+      com.ky_4[] var2 = Pt_2.b();
+      S var10000 = this;
+      if (var2 == null) {
+         if (this.X() == var1) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      int var3;
+      label21: {
+         var3 = var1;
+         if (var2 == null) {
+            if (var1 != 0) {
+               var3 = this.stateMask | a(9977, 4060913670531310325L) | 2;
+               break label21;
             }
-            case 3: {
-                return this.p ? pt_0.checked : pt_0.unchecked;
+
+            var3 = this.stateMask;
+         }
+
+         var3 &= a(4750, 6830364874690188932L);
+      }
+
+      var10000.stateMask = var3;
+      this.fireStateChanged();
+      this.fireItemStateChanged(new ItemEvent(this, a(23821, 7849490957253515524L), this, 3));
+   }
+
+   protected Pt_2 Y(Pt_2 var1) {
+      com.ky_4[] var2 = Pt_2.b();
+      int var10000 = com.Yn_2.M[var1.ordinal()];
+      if (var2 == null) {
+         switch (var10000) {
+            case 1:
+               var10000 = this.p;
+               break;
+            case 2:
+               return this.p ? Pt_2.unchecked : Pt_2.mixed;
+            case 3:
+               return this.p ? Pt_2.checked : Pt_2.unchecked;
+            default:
+               return Pt_2.unchecked;
+         }
+      }
+
+      return var10000 != 0 ? Pt_2.mixed : Pt_2.checked;
+   }
+
+   static {
+      long var0 = 5499702052714726613L;
+      long[] var6 = new long[8];
+      int var3 = 0;
+      String var4 = "*»â\u0087m\u0007¦ \u0088ËKfÍ:\u0015m¥ú\u0017Ô&\u000frß\u0092\u0014íeÕ\u0005ô*Q~BÑ\u0018ní¸]\u008dÚ\u008e80ßl";
+      int var5 = "*»â\u0087m\u0007¦ \u0088ËKfÍ:\u0015m¥ú\u0017Ô&\u000frß\u0092\u0014íeÕ\u0005ô*Q~BÑ\u0018ní¸]\u008dÚ\u008e80ßl".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     b = new Integer[8];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "BG®r\u0003Em.B\u001d³>þ\u001bb§";
+                  var5 = "BG®r\u0003Em.B\u001d³>þ\u001bb§".length();
+                  var2 = 0;
             }
-        }
-        return pt_0.unchecked;
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 5499702052714726613L;
-                var6_1 = new long[8];
-                var3_2 = 0;
-                var4_3 = "*\u00bb\u00e2\u0087m\u0007\u00a6\u00a0\u0088\u00cbKf\u00cd:\u0015m\u00a5\u00fa\u0017\u00d4&\u000fr\u00df\u0092\u0014\u00ede\u00d5\u0005\u00f4*Q~B\u00d1\u0018n\u00ed\u00b8]\u008d\u00da\u008e80\u00dfl";
-                var5_4 = "*\u00bb\u00e2\u0087m\u0007\u00a6\u00a0\u0088\u00cbKf\u00cd:\u0015m\u00a5\u00fa\u0017\u00d4&\u000fr\u00df\u0092\u0014\u00ede\u00d5\u0005\u00f4*Q~B\u00d1\u0018n\u00ed\u00b8]\u008d\u00da\u008e80\u00dfl".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "BG\u00aer\u0003Em.B\u001d\u00b3>\u00fe\u001bb\u00a7";
-                    var5_4 = "BG\u00aer\u0003Em.B\u001d\u00b3>\u00fe\u001bb\u00a7".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 17420;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
-            }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
-
-                ** continue;
-            }
-        }
-        S.a = var6_1;
-        S.b = new Integer[8];
-    }
-
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x440C;
-        if (b[n11] == null) {
-            S.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      return b[var3];
+   }
 }
+
+
+
+
 

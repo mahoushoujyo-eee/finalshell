@@ -1,19 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
-/*
- * Renamed from te
- */
-class te_2
-implements Runnable {
-    final ty_0 j;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-    te_2(ty_0 ty_02) {
-        this.j = ty_02;
-    }
+class Te_2 implements ActionListener {
+   final Jx_2 f;
 
-    @Override
-    public void run() {
-    }
+   Te_2(Jx_2 var1) {
+      this.f = var1;
+   }
+
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+   }
 }
+
+
+
+
 

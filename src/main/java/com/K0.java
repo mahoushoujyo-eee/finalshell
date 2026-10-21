@@ -1,35 +1,37 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.lz_1;
 import java.lang.ref.SoftReference;
-import java.util.Map;
+import java.util.Map.Entry;
 
-class K0
-implements Map.Entry {
-    final Map.Entry x;
-    final Object W;
-    final lz_1 G;
+class K0 implements Entry {
+   final Entry x;
+   final Object W;
+   final com.lZ_3 G;
 
-    K0(lz_1 lz_12, Map.Entry entry, Object object) {
-        this.G = lz_12;
-        this.x = entry;
-        this.W = object;
-    }
+   K0(com.lZ_3 var1, Entry var2, Object var3) {
+      this.G = var1;
+      this.x = var2;
+      this.W = var3;
+   }
 
-    public Object getKey() {
-        return this.x.getKey();
-    }
+   @Override
+   public Object getKey() {
+      return this.x.getKey();
+   }
 
-    public Object getValue() {
-        return this.W;
-    }
+   @Override
+   public Object getValue() {
+      return this.W;
+   }
 
-    public Object setValue(Object object) {
-        this.x.setValue(new SoftReference<Object>(object, lz_1.n(this.G)));
-        return this.W;
-    }
+   @Override
+   public Object setValue(Object var1) {
+      this.x.setValue(new SoftReference(var1, com.lZ_3.n(this.G)));
+      return this.W;
+   }
 }
+
+
+
+
 

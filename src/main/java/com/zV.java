@@ -1,117 +1,107 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.B8;
-import com.hi_0;
-import com.ph_2;
-import com.z8;
+class zV extends com.z8 {
+   private final long s;
+   private final long I;
+   private final boolean N;
 
-class zV
-extends z8 {
-    private final long s;
-    private final long I;
-    private final boolean N;
+   public zV(String var1, boolean var2, long var3, long var5, boolean var7) {
+      super(var1, var2);
+      this.s = var3;
+      this.I = var5;
+      this.N = var7;
+   }
 
-    public zV(String string, boolean bl, long l2, long l3, boolean bl2) {
-        super(string, bl);
-        this.s = l2;
-        this.I = l3;
-        this.N = bl2;
-    }
+   @Override
+   public boolean x(ph_4 param1, Object param2, Object param3, Object param4) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Hi_2.C ()Ljava/lang/String;
+      // 03: aload 0
+      // 04: aload 1
+      // 05: aload 2
+      // 06: aload 4
+      // 08: invokevirtual com/zV.H (Lcom/ph_4;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      // 0b: astore 6
+      // 0d: astore 5
+      // 0f: aload 6
+      // 11: aload 5
+      // 13: ifnonnull 28
+      // 16: ifnonnull 26
+      // 19: goto 20
+      // 1c: invokestatic com/zV.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 1f: athrow
+      // 20: bipush 0
+      // 21: ireturn
+      // 22: invokestatic com/zV.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 25: athrow
+      // 26: aload 6
+      // 28: instanceof java/lang/Number
+      // 2b: aload 5
+      // 2d: ifnonnull 9b
+      // 30: ifeq 97
+      // 33: goto 3a
+      // 36: invokestatic com/zV.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 39: athrow
+      // 3a: aload 6
+      // 3c: checkcast java/lang/Number
+      // 3f: invokestatic com/B8.e (Ljava/lang/Number;)J
+      // 42: lstore 7
+      // 44: lload 7
+      // 46: aload 0
+      // 47: getfield com/zV.s J
+      // 4a: lcmp
+      // 4b: aload 5
+      // 4d: ifnonnull 9b
+      // 50: iflt 97
+      // 53: goto 5a
+      // 56: invokestatic com/zV.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 59: athrow
+      // 5a: lload 7
+      // 5c: aload 0
+      // 5d: getfield com/zV.I J
+      // 60: lcmp
+      // 61: aload 5
+      // 63: ifnonnull 9b
+      // 66: goto 6d
+      // 69: invokestatic com/zV.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 6c: athrow
+      // 6d: ifgt 97
+      // 70: goto 77
+      // 73: invokestatic com/zV.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 76: athrow
+      // 77: aload 0
+      // 78: getfield com/zV.N Z
+      // 7b: aload 5
+      // 7d: ifnonnull 92
+      // 80: goto 87
+      // 83: invokestatic com/zV.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 86: athrow
+      // 87: ifne 95
+      // 8a: goto 91
+      // 8d: invokestatic com/zV.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 90: athrow
+      // 91: bipush 1
+      // 92: goto 96
+      // 95: bipush 0
+      // 96: ireturn
+      // 97: aload 0
+      // 98: getfield com/zV.N Z
+      // 9b: ireturn
+   }
 
-    @Override
-    public boolean x(ph_2 ph_22, Object object, Object object2, Object object3) {
-        int n10;
-        block18: {
-            block19: {
-                boolean bl;
-                block20: {
-                    block21: {
-                        Object object4;
-                        String string;
-                        Object object5;
-                        block16: {
-                            block17: {
-                                object5 = this.H(ph_22, object, object3);
-                                string = hi_0.C();
-                                try {
-                                    try {
-                                        object4 = object5;
-                                        if (string != null) break block16;
-                                        if (object4 != null) break block17;
-                                    }
-                                    catch (hi_0 hi_02) {
-                                        throw zV.a(hi_02);
-                                    }
-                                    return false;
-                                }
-                                catch (hi_0 hi_03) {
-                                    throw zV.a(hi_03);
-                                }
-                            }
-                            object4 = object5;
-                        }
-                        try {
-                            n10 = object4 instanceof Number;
-                            if (string != null) break block18;
-                            if (n10 == 0) break block19;
-                        }
-                        catch (hi_0 hi_04) {
-                            throw zV.a(hi_04);
-                        }
-                        long l2 = B8.e((Number)object5);
-                        try {
-                            try {
-                                try {
-                                    try {
-                                        try {
-                                            long l3 = l2 - this.s;
-                                            n10 = l3 == 0L ? 0 : (l3 < 0L ? -1 : 1);
-                                            if (string != null) break block18;
-                                            if (n10 < 0) break block19;
-                                        }
-                                        catch (hi_0 hi_05) {
-                                            throw zV.a(hi_05);
-                                        }
-                                        long l4 = l2 - this.I;
-                                        n10 = l4 == 0L ? 0 : (l4 < 0L ? -1 : 1);
-                                        if (string != null) break block18;
-                                    }
-                                    catch (hi_0 hi_06) {
-                                        throw zV.a(hi_06);
-                                    }
-                                    if (n10 > 0) break block19;
-                                }
-                                catch (hi_0 hi_07) {
-                                    throw zV.a(hi_07);
-                                }
-                                bl = this.N;
-                                if (string != null) break block20;
-                            }
-                            catch (hi_0 hi_08) {
-                                throw zV.a(hi_08);
-                            }
-                            if (bl) break block21;
-                        }
-                        catch (hi_0 hi_09) {
-                            throw zV.a(hi_09);
-                        }
-                        bl = true;
-                        break block20;
-                    }
-                    bl = false;
-                }
-                return bl;
-            }
-            n10 = this.N;
-        }
-        return n10 != 0;
-    }
-
-    private static hi_0 a(hi_0 hi_02) {
-        return hi_02;
-    }
+   private static Hi_2 a(Hi_2 var0) {
+      return var0;
+   }
 }
+
+
+
+
 

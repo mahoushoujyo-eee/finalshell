@@ -1,289 +1,343 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.QE;
-import com.QY;
-import com.T4;
-import com._e_0;
-import com.gw_0;
-import com.rv_2;
-import com.wn_1;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Point;
 
-public class T3
-extends T4 {
-    private static final long a;
+public class T3 extends com.T4 {
+   private static final long a;
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void layoutContainer(Container var1_1) {
-        block7: {
-            block6: {
-                block5: {
-                    var3_2 = (QY)var1_1;
-                    var4_3 = gw_0.d(var3_2.u());
-                    var2_4 = _e_0.P();
-                    v0 = var3_2;
-                    if (var2_4 != null) ** GOTO lbl10
-                    if (!v0.k()) {
-                        v1 = var3_2.t();
-                    } else {
-                        v0 = var3_2;
-lbl10:
-                        // 2 sources
-
-                        v1 = var5_5 = v0.H();
-                    }
-                    if (var2_4 != null) break block5;
-                    if (!var5_5.l()) break block6;
-                    this.R(var3_2, var4_3, var5_5);
-                }
-                if (var2_4 == null) break block7;
+   @Override
+   public void layoutContainer(Container var1) {
+      int[] var2;
+      com.QY var3;
+      float var4;
+      com.QE var7;
+      label28: {
+         var3 = (com.QY)var1;
+         int[] var10000 = _e_2.P();
+         var4 = Gw_2.d(var3.u());
+         var2 = var10000;
+         com.QY var6 = var3;
+         if (var2 == null) {
+            if (!var3.k()) {
+               var7 = var3.t();
+               break label28;
             }
-            this.e(var3_2, var4_3, var5_5);
-        }
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    protected void e(QY var1_1, float var2_2, QE var3_3) {
-        var5_4 = FN.P(var1_1.getComponents());
-        var6_5 = var1_1.getComponentCount();
-        var4_6 = _e_0.P();
-        v0 = wn_1.Z[var3_3.ordinal()];
-        if (var4_6 != null) ** GOTO lbl9
-        switch (v0) {
-            case 1: {
-                v0 = 0;
-lbl9:
-                // 2 sources
+            var6 = var3;
+         }
 
-                var7_7 = v0;
-                var8_8 = 0;
-                for (var9_9 = 0; var9_9 < var6_5; ++var9_9) {
-                    this.l(var1_1, var9_9, 0, var8_8);
-                    var8_8 = (int)((float)var8_8 + (float)var5_4.height * var2_2);
-                    if (var4_6 == null) ** break;
-                }
-                break;
+         var7 = var6.H();
+      }
+
+      com.QE var5;
+      label21: {
+         var5 = var7;
+         if (var2 == null) {
+            if (!var5.l()) {
+               break label21;
             }
-        }
-    }
 
-    protected void l(QY qY, int n10, int n11, int n12) {
-        Component component = qY.getComponent(n10);
-        Dimension dimension = component.getPreferredSize();
-        component.setBounds(n11, n12, dimension.width, dimension.height);
-    }
+            this.R(var3, var4, var5);
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    protected void R(QY var1_1, float var2_2, QE var3_3) {
-        var5_4 = FN.P(var1_1.getComponents());
-        var6_5 = new Point(var1_1.v(), var1_1.v());
-        var7_6 = Math.max(var5_4.width, var5_4.height);
-        var4_7 = _e_0.P();
-        v0 = var8_8 = var1_1.u();
-        if (var4_7 == null) {
-            v0 = v0 != -1 ? var8_8 : 0;
-        }
-        var9_9 = v0;
-        var10_10 = var1_1.v() - var7_6 / 2;
-        var11_11 = this.b(var1_1);
-        var13_12 = this.X(var1_1);
-        v1 = var1_1.C();
-        if (var4_7 == null) {
-            v1 = v1 != 0 ? 1 : -1;
-        }
-        var15_13 = v1;
-        var16_14 = var1_1.getComponentCount();
-        block0 : switch (wn_1.Z[var3_3.ordinal()]) {
-            case 2: {
-                var17_15 = (double)var2_2 * var11_11;
-                for (var19_17 = 0; var19_17 < var16_14; ++var19_17) {
-                    var20_20 = var9_9 + var19_17;
-                    if (var4_7 != null) break block0;
-                    v2 = var20_20;
-                    v3 = var16_14;
-                    if (var4_7 != null) ** GOTO lbl31
-                    if (v2 < v3) {
-                        v4 = var20_20;
-                    } else {
-                        v2 = var20_20;
-                        v3 = var16_14;
-lbl31:
-                        // 2 sources
+         if (var2 == null) {
+            return;
+         }
+      }
 
-                        v4 = v2 - v3;
-                    }
-                    var21_21 = v4;
-                    var22_22 = var13_12 + (double)var9_9 * var11_11 + var17_15 * (double)var19_17 * (double)var15_13;
-                    var24_24 = (int)Math.round((double)var6_5.x + (double)var10_10 * Math.cos(var22_22));
-                    var25_26 = (int)Math.round((double)var6_5.y + (double)var10_10 * Math.sin(var22_22));
-                    this.y(var1_1, var21_21, var24_24, var25_26);
-                    if (var4_7 == null) continue;
-                }
-                if (var4_7 == null) break;
+      this.e(var3, var4, var5);
+   }
+
+   protected void e(com.QY var1, float var2, com.QE var3) {
+      int[] var10000 = _e_2.P();
+      Dimension var5 = com.FN.P(var1.getComponents());
+      int var6 = var1.getComponentCount();
+      int[] var4 = var10000;
+      int var10 = wN_3.Z[var3.ordinal()];
+      if (var4 == null) {
+         switch (var10) {
+            case 1:
+               boolean var11 = false;
+               break;
+            default:
+               return;
+         }
+      }
+
+      int var8 = 0;
+      int var9 = 0;
+
+      while (var9 < var6) {
+         this.l(var1, var9, 0, var8);
+         var8 = (int)((float)var8 + (float)var5.height * var2);
+         var9++;
+         if (var4 != null) {
+            break;
+         }
+      }
+   }
+
+   protected void l(com.QY var1, int var2, int var3, int var4) {
+      Component var5 = var1.getComponent(var2);
+      Dimension var6 = var5.getPreferredSize();
+      var5.setBounds(var3, var4, var6.width, var6.height);
+   }
+
+   protected void R(com.QY var1, float var2, com.QE var3) {
+      int[] var10000 = _e_2.P();
+      Dimension var5 = com.FN.P(var1.getComponents());
+      Point var6 = new Point(var1.v(), var1.v());
+      int var7 = Math.max(var5.width, var5.height);
+      int[] var4 = var10000;
+      int var8 = var1.u();
+      int var43 = var8;
+      if (var4 == null) {
+         var43 = var8 != -1 ? var8 : 0;
+      }
+
+      int var9 = var43;
+      int var10 = var1.v() - var7 / 2;
+      double var11 = this.b(var1);
+      double var13 = this.X(var1);
+      int var44 = var1.C();
+      if (var4 == null) {
+         var44 = var44 != 0 ? 1 : -1;
+      }
+
+      int var15;
+      int var16;
+      label129: {
+         var15 = var44;
+         var16 = var1.getComponentCount();
+         switch (wN_3.Z[var3.ordinal()]) {
+            case 2:
+               double var17 = (double)var2 * var11;
+               int var19 = 0;
+
+               while (var19 < var16) {
+                  int var20 = var9 + var19;
+                  if (var4 != null) {
+                     return;
+                  }
+
+                  label111: {
+                     int var45 = var20;
+                     int var10001 = var16;
+                     if (var4 == null) {
+                        if (var20 < var16) {
+                           var46 = var20;
+                           break label111;
+                        }
+
+                        var45 = var20;
+                        var10001 = var16;
+                     }
+
+                     var46 = var45 - var10001;
+                  }
+
+                  int var21 = var46;
+                  double var22 = var13 + (double)var9 * var11 + var17 * (double)var19 * (double)var15;
+                  int var24 = (int)Math.round((double)var6.x + (double)var10 * Math.cos(var22));
+                  int var25 = (int)Math.round((double)var6.y + (double)var10 * Math.sin(var22));
+                  this.y(var1, var21, var24, var25);
+                  var19++;
+                  if (var4 != null) {
+                     break;
+                  }
+               }
+
+               if (var4 == null) {
+                  return;
+               }
+            case 3:
+               int var29 = Math.round((float)var10 * var2);
+               int var18 = 0;
+
+               while (var18 < var16) {
+                  double var34 = var13 + var11 * (double)var18 * (double)var15;
+                  if (var4 != null) {
+                     return;
+                  }
+
+                  int var47 = var18;
+                  if (var4 == null) {
+                     var47 = var18 == var8 ? var10 : var29;
+                  }
+
+                  int var37 = var47;
+                  int var40 = (int)Math.round((double)var6.x + (double)var37 * Math.cos(var34));
+                  int var23 = (int)Math.round((double)var6.y + (double)var37 * Math.sin(var34));
+                  this.y(var1, var18, var40, var23);
+                  var18++;
+                  if (var4 != null) {
+                     break;
+                  }
+               }
+
+               if (var4 == null) {
+                  return;
+               }
+            case 4:
+               break;
+            case 5:
+               break label129;
+            default:
+               return;
+         }
+
+         int var30 = Math.round((float)var10 * var2);
+         int var48 = var1.q();
+         if (var4 == null) {
+            var48 = var48 != 0 ? -1 : 1;
+         }
+
+         int var32 = var48;
+         double var35 = rv_4.l((double)((float)(var32 * (int)a) * (1.0F - var2)));
+         int var38 = 0;
+
+         while (var38 < var16) {
+            if (var4 != null) {
+               return;
             }
-            case 3: {
-                var17_16 = Math.round((float)var10_10 * var2_2);
-                for (var18_27 = 0; var18_27 < var16_14; ++var18_27) {
-                    var19_18 = var13_12 + var11_11 * (double)var18_27 * (double)var15_13;
-                    if (var4_7 != null) break block0;
-                    v5 = var18_27;
-                    if (var4_7 == null) {
-                        v5 = v5 == var8_8 ? var10_10 : var17_16;
-                    }
-                    var21_21 = v5;
-                    var22_23 = (int)Math.round((double)var6_5.x + (double)var21_21 * Math.cos(var19_18));
-                    var23_29 = (int)Math.round((double)var6_5.y + (double)var21_21 * Math.sin(var19_18));
-                    this.y(var1_1, var18_27, var22_23, var23_29);
-                    if (var4_7 == null) continue;
-                }
-                if (var4_7 == null) break;
+
+            double var41 = var38 == var8 ? 0.0 : var35;
+            double var42 = var13 + (var11 * (double)var38 + var41) * (double)var15;
+            int var49 = var38;
+            if (var4 == null) {
+               var49 = var38 == var8 ? var10 : var30;
             }
-            case 4: {
-                var17_16 = Math.round((float)var10_10 * var2_2);
-                v6 = var1_1.q();
-                if (var4_7 == null) {
-                    v6 = v6 != 0 ? -1 : 1;
-                }
-                var18_27 = v6;
-                var19_19 = rv_2.l((float)(var18_27 * (int)T3.a) * (1.0f - var2_2));
-                for (var21_21 = 0; var21_21 < var16_14; ++var21_21) {
-                    if (var4_7 != null) break block0;
-                    var22_22 = var21_21 == var8_8 ? 0.0 : var19_19;
-                    var24_25 = var13_12 + (var11_11 * (double)var21_21 + var22_22) * (double)var15_13;
-                    v7 = var21_21;
-                    if (var4_7 == null) {
-                        v7 = v7 == var8_8 ? var10_10 : var17_16;
-                    }
-                    var26_30 = v7;
-                    var27_31 = (int)Math.round((double)var6_5.x + (double)var26_30 * Math.cos(var24_25));
-                    var28_32 = (int)Math.round((double)var6_5.y + (double)var26_30 * Math.sin(var24_25));
-                    this.y(var1_1, var21_21, var27_31, var28_32);
-                    if (var4_7 == null) continue;
-                }
-                if (var4_7 == null) break;
+
+            int var26 = var49;
+            int var27 = (int)Math.round((double)var6.x + (double)var26 * Math.cos(var42));
+            int var28 = (int)Math.round((double)var6.y + (double)var26 * Math.sin(var42));
+            this.y(var1, var38, var27, var28);
+            var38++;
+            if (var4 != null) {
+               break;
             }
-            case 5: {
-                for (var17_16 = 0; var17_16 < var16_14; ++var17_16) {
-                    var18_28 = var13_12 + var11_11 * (double)var17_16 * (double)var15_13;
-                    var20_20 = (int)Math.round((double)var6_5.x + (double)var10_10 * Math.cos(var18_28));
-                    var21_21 = (int)Math.round((double)var6_5.y + (double)var10_10 * Math.sin(var18_28));
-                    this.y(var1_1, var17_16, var20_20, var21_21);
-                    if (var4_7 == null) ** break;
-                }
-                break;
-            }
-        }
-    }
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    public double b(QY qY) {
-        double d2;
-        double d3 = rv_2.l(Math.min(qY.a(), 360.0));
-        int[] nArray = _e_0.P();
-        double d4 = d3;
-        double d5 = Math.PI * 2;
-        if (nArray == null) {
-            if (d4 < d5) {
-                d2 = d3 / (double)(qY.getComponentCount() - 1);
-                return d2;
-            }
-            d4 = d3;
-            d5 = qY.getComponentCount();
-        }
-        d2 = d4 / d5;
-        return d2;
-    }
+         if (var4 == null) {
+            return;
+         }
+      }
 
-    public double X(QY qY) {
-        return rv_2.l(qY.V()) - 1.5707963267948966;
-    }
+      int var31 = 0;
 
-    public double r(QY qY, int n10) {
-        int[] nArray = _e_0.P();
-        int n11 = qY.C();
-        if (nArray == null) {
-            n11 = n11 != 0 ? 1 : -1;
-        }
-        int n12 = n11;
-        switch (qY.t()) {
-            default: 
-        }
-        double d2 = this.X(qY);
-        double d3 = this.b(qY);
-        return d2 + d3 * (double)n10 * (double)n12;
-    }
+      while (var31 < var16) {
+         double var33 = var13 + var11 * (double)var31 * (double)var15;
+         int var36 = (int)Math.round((double)var6.x + (double)var10 * Math.cos(var33));
+         int var39 = (int)Math.round((double)var6.y + (double)var10 * Math.sin(var33));
+         this.y(var1, var31, var36, var39);
+         var31++;
+         if (var4 != null) {
+            break;
+         }
+      }
+   }
 
-    protected void y(QY qY, int n10, int n11, int n12) {
-        Component component = qY.getComponent(n10);
-        Dimension dimension = component.getPreferredSize();
-        component.setBounds(n11 - dimension.width / 2, n12 - dimension.height / 2, dimension.width, dimension.height);
-    }
+   public double b(com.QY var1) {
+      int[] var10000 = _e_2.P();
+      double var3 = rv_4.l(Math.min(var1.a(), 360.0));
+      int[] var2 = var10000;
+      double var5 = var3;
+      double var10001 = Math.PI * 2;
+      if (var2 == null) {
+         if (var3 < Math.PI * 2) {
+            return var3 / (double)(var1.getComponentCount() - 1);
+         }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public Dimension preferredLayoutSize(Container var1_1) {
-        var3_2 = (QY)var1_1;
-        var2_3 = _e_0.P();
-        v0 = wn_1.Z[var3_2.t().ordinal()];
-        if (var2_3 != null) ** GOTO lbl8
-        switch (v0) {
-            case 2: 
-            case 3: 
-            case 4: 
-            case 5: {
-                v0 = var3_2.v();
-lbl8:
-                // 2 sources
+         var5 = var3;
+         var10001 = (double)var1.getComponentCount();
+      }
 
-                var4_4 = v0;
-                return new Dimension(var4_4 * 2, var4_4 * 2);
-            }
-            case 1: {
-                var4_5 = FN.P(var3_2.getComponents());
-                var5_6 = var3_2.getComponentCount();
-                return new Dimension(var4_5.width, var4_5.height * var5_6);
-            }
-        }
-        return new Dimension(0, 0);
-    }
+      return var5 / var10001;
+   }
 
-    public Point r(QY qY, int n10, int n11) {
-        switch (qY.t()) {
-            case roll: 
-            case star: 
-            case shutter: 
-            case fade: {
-                Dimension dimension = this.preferredLayoutSize(qY);
-                return new Point(n10 - dimension.width / 2, n11 - dimension.height / 2);
-            }
-        }
-        return new Point(n10, n11);
-    }
+   public double X(com.QY var1) {
+      return rv_4.l(var1.V()) - (Math.PI / 2);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5773783133856348037L;
-        a = 0xAAFDB0EB5FA637DFL ^ l2;
-    }
+   public double r(com.QY var1, int var2) {
+      int[] var3 = _e_2.P();
+      int var10000 = var1.C();
+      if (var3 == null) {
+         var10000 = var10000 != 0 ? 1 : -1;
+      }
+
+      int var4 = var10000;
+      switch (wN_3.Z[var1.t().ordinal()]) {
+         case 2:
+         case 3:
+         case 4:
+         case 5:
+         default:
+            double var5 = this.X(var1);
+            double var7 = this.b(var1);
+            return var5 + var7 * (double)var2 * (double)var4;
+      }
+   }
+
+   protected void y(com.QY var1, int var2, int var3, int var4) {
+      Component var5 = var1.getComponent(var2);
+      Dimension var6 = var5.getPreferredSize();
+      var5.setBounds(var3 - var6.width / 2, var4 - var6.height / 2, var6.width, var6.height);
+   }
+
+   @Override
+   public Dimension preferredLayoutSize(Container var1) {
+      int[] var10000 = _e_2.P();
+      com.QY var3 = (com.QY)var1;
+      int[] var2 = var10000;
+      int var7 = wN_3.Z[var3.t().ordinal()];
+      if (var2 == null) {
+         switch (var7) {
+            case 1:
+               Dimension var6 = com.FN.P(var3.getComponents());
+               int var5 = var3.getComponentCount();
+               return new Dimension(var6.width, var6.height * var5);
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+               var7 = var3.v();
+               break;
+            default:
+               return new Dimension(0, 0);
+         }
+      }
+
+      int var4 = var7;
+      return new Dimension(var4 * 2, var4 * 2);
+   }
+
+   public Point r(com.QY var1, int var2, int var3) {
+      switch (wN_3.Z[var1.t().ordinal()]) {
+         case 1:
+         default:
+            return new Point(var2, var3);
+         case 2:
+         case 3:
+         case 4:
+         case 5:
+            Dimension var4 = this.preferredLayoutSize(var1);
+            return new Point(var2 - var4.width / 2, var3 - var4.height / 2);
+      }
+   }
+
+   static {
+      long var0 = 5773783133856348037L;
+      long var10002 = -6125545393185474593L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

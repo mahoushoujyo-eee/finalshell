@@ -1,10 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.ds_0;
 import java.awt.Component;
 import java.awt.MouseInfo;
 import java.awt.Point;
@@ -13,101 +8,104 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
-public class HG
-extends MouseAdapter {
-    protected Component A;
-    protected boolean B = false;
-    protected Component V = null;
-    protected Point k = null;
-    protected Rectangle C = null;
+public class HG extends MouseAdapter {
+   protected Component A;
+   protected boolean B = false;
+   protected Component V = null;
+   protected Point k = null;
+   protected Rectangle C = null;
 
-    public static void Y(Component component) {
-        HG.X(component, null);
-    }
+   public static void Y(Component var0) {
+      X(var0, null);
+   }
 
-    public static void X(Component component, Component component2) {
-        HG hG2 = new HG(component2);
-        component.addMouseListener(hG2);
-        component.addMouseMotionListener(hG2);
-    }
+   public static void X(Component var0, Component var1) {
+      HG var2 = new HG(var1);
+      var0.addMouseListener(var2);
+      var0.addMouseMotionListener(var2);
+   }
 
-    public HG() {
-        this(null);
-    }
+   public HG() {
+      this(null);
+   }
 
-    public HG(Component component) {
-        this.A = component;
-    }
+   public HG(Component var1) {
+      this.A = var1;
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        block5: {
-            Rectangle rectangle;
-            block7: {
-                Rectangle rectangle2;
-                HG hG2;
-                int[] nArray;
-                block6: {
-                    block4: {
-                        nArray = ds_0.U();
-                        if (nArray != null) break block4;
-                        if (!SwingUtilities.isLeftMouseButton(mouseEvent)) break block5;
-                        this.V = this.T(mouseEvent);
-                    }
-                    hG2 = this;
-                    if (nArray != null) break block6;
-                    if (hG2.V == null) break block5;
-                    hG2 = this;
-                }
-                rectangle = rectangle2 = hG2.V(mouseEvent);
-                if (nArray != null) break block7;
-                if (rectangle == null) break block5;
-                rectangle = rectangle2;
-            }
-            if (rectangle.contains(mouseEvent.getPoint())) {
-                this.B = true;
-                this.k = MouseInfo.getPointerInfo().getLocation();
-                this.C = this.V.getBounds();
-            }
-        }
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      int[] var2 = com.Ds_2.U();
+      if (var2 == null) {
+         if (!SwingUtilities.isLeftMouseButton(var1)) {
+            return;
+         }
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-        if (this.B) {
-            Point point = MouseInfo.getPointerInfo().getLocation();
-            this.V.setLocation(this.C.x + (point.x - this.k.x), this.C.y + (point.y - this.k.y));
-        }
-    }
+         this.V = this.T(var1);
+      }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-        this.B = false;
-        this.V = null;
-        this.k = null;
-        this.C = null;
-    }
+      HG var10000 = this;
+      if (var2 == null) {
+         if (this.V == null) {
+            return;
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    protected Component T(MouseEvent mouseEvent) {
-        Component component;
-        int[] nArray = ds_0.U();
-        HG hG2 = this;
-        if (nArray == null) {
-            if (hG2.A == null) {
-                component = FN.L(mouseEvent.getComponent());
-                return component;
-            }
-            hG2 = this;
-        }
-        component = hG2.A;
-        return component;
-    }
+         var10000 = this;
+      }
 
-    protected Rectangle V(MouseEvent mouseEvent) {
-        return FN.N(mouseEvent.getComponent());
-    }
+      Rectangle var3 = var10000.V(var1);
+      Rectangle var4 = var3;
+      if (var2 == null) {
+         if (var3 == null) {
+            return;
+         }
+
+         var4 = var3;
+      }
+
+      if (var4.contains(var1.getPoint())) {
+         this.B = true;
+         this.k = MouseInfo.getPointerInfo().getLocation();
+         this.C = this.V.getBounds();
+      }
+   }
+
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      if (this.B) {
+         Point var2 = MouseInfo.getPointerInfo().getLocation();
+         this.V.setLocation(this.C.x + (var2.x - this.k.x), this.C.y + (var2.y - this.k.y));
+      }
+   }
+
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+      this.B = false;
+      this.V = null;
+      this.k = null;
+      this.C = null;
+   }
+
+   protected Component T(MouseEvent var1) {
+      int[] var2 = com.Ds_2.U();
+      HG var10000 = this;
+      if (var2 == null) {
+         if (this.A == null) {
+            return com.FN.L(var1.getComponent());
+         }
+
+         var10000 = this;
+      }
+
+      return var10000.A;
+   }
+
+   protected Rectangle V(MouseEvent var1) {
+      return com.FN.N(var1.getComponent());
+   }
 }
+
+
+
+
 

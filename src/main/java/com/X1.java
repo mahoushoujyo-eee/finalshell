@@ -1,94 +1,105 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.I2;
-import com.by_0;
-import com.ej_0;
-import com.rd_1;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JProgressBar;
 import javax.swing.SwingUtilities;
 
-class X1
-implements ActionListener {
-    final JProgressBar H;
-    final ej_0 V;
-    private static final long[] a;
-    private static final Integer[] b;
-    private static final long c;
+class X1 implements ActionListener {
+   final JProgressBar H;
+   final Ej_2 V;
+   private static final long[] a;
+   private static final Integer[] b;
+   private static final long c;
 
-    X1(ej_0 ej_02, JProgressBar jProgressBar) {
-        this.V = ej_02;
-        this.H = jProgressBar;
-    }
+   X1(Ej_2 var1, JProgressBar var2) {
+      this.V = var1;
+      this.H = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block4: {
-            block2: {
-                int n10;
-                block3: {
-                    int n11 = by_0.y();
-                    n10 = ej_0.g(this.V);
-                    if (n11 == 0) break block2;
-                    if (n10 >= ej_0.I(this.V)) break block3;
-                    ej_0.C(this.V, X1.a(21520, 9110738063845259727L));
-                    this.S(this.H);
-                    if (n11 != 0) break block4;
-                }
-                n10 = ej_0.X(this.V, X1.a(2958, 898257431738132048L));
-            }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      int var2 = com.By_2.y();
+      int var10000 = Ej_2.g(this.V);
+      if (var2 != 0) {
+         if (var10000 < Ej_2.I(this.V)) {
+            Ej_2.C(this.V, a(21520, 9110738063845259727L));
             this.S(this.H);
-            rd_1.l(c);
-        }
-    }
-
-    private void S(JProgressBar jProgressBar) {
-        block5: {
-            int n10;
-            block4: {
-                int n11 = by_0.y();
-                n10 = jProgressBar.isIndeterminate();
-                if (n11 == 0) break block4;
-                if (n10 != 0) break block5;
-                n10 = jProgressBar.getValue();
+            if (var2 != 0) {
+               return;
             }
-            if (n10 > jProgressBar.getMinimum()) {
-                SwingUtilities.invokeLater(new I2(this, jProgressBar));
-            }
-        }
-    }
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 1682504722857885809L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\u00a7\u0081j\u0003\u0003\u00fc\u00f9\u00b1\u00e6\u00ba\u0015s\u0092\u00b8Y\u00a9";
-        int n11 = "\u00a7\u0081j\u0003\u0003\u00fc\u00f9\u00b1\u00e6\u00ba\u0015s\u0092\u00b8Y\u00a9".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-        long l3 = 135952753654703297L;
-        c = 0x1E3004F23D3211DL ^ l3;
-    }
+         Ej_2.X(this.V, a(2958, 898257431738132048L));
+      }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x2DDF;
-        if (b[n11] == null) {
-            X1.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      this.S(this.H);
+      rD_3.l(c);
+   }
+
+   private void S(JProgressBar var1) {
+      int var2 = com.By_2.y();
+      int var10000 = var1.isIndeterminate();
+      if (var2 != 0) {
+         if (var10000 != 0) {
+            return;
+         }
+
+         var10000 = var1.getValue();
+      }
+
+      if (var10000 > var1.getMinimum()) {
+         SwingUtilities.invokeLater(new I2(this, var1));
+      }
+   }
+
+   static {
+      long var2 = 1682504722857885809L;
+      long[] var8 = new long[2];
+      int var5 = 0;
+      String var6 = "§\u0081j\u0003\u0003üù±æº\u0015s\u0092¸Y©";
+      int var7 = "§\u0081j\u0003\u0003üù±æº\u0015s\u0092¸Y©".length();
+      byte var4 = 0;
+
+      do {
+         int var10001 = var4;
+         var4 += 8;
+         byte[] var9 = var6.substring(var10001, var4).getBytes("ISO-8859-1");
+         var10001 = var5++;
+         long var10004 = (
+               ((long)var9[0] & 255L) << 56
+                  | ((long)var9[1] & 255L) << 48
+                  | ((long)var9[2] & 255L) << 40
+                  | ((long)var9[3] & 255L) << 32
+                  | ((long)var9[4] & 255L) << 24
+                  | ((long)var9[5] & 255L) << 16
+                  | ((long)var9[6] & 255L) << 8
+                  | (long)var9[7] & 255L
+            )
+            ^ var2;
+         byte var10003 = -1;
+         var8[var10001] = var10004;
+      } while (var4 < var7);
+
+      a = var8;
+      b = new Integer[2];
+      long var0 = 135952753654703297L;
+      long var10002 = 135952753654702365L ^ var0;
+      byte var11 = -1;
+      c = var10002;
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 11743;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

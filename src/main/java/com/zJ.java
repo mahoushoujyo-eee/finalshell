@@ -1,17 +1,8 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.GA;
-import com.RV;
-import com.ky_2;
-import com.rn_0;
-import com.up_0;
-import com.xg_0;
 import java.awt.Color;
 import java.awt.FontMetrics;
+import java.awt.Graphics2D;
 import java.awt.Insets;
 import java.awt.Point;
 import java.awt.dnd.DragSourceDragEvent;
@@ -19,115 +10,144 @@ import java.awt.dnd.DragSourceDropEvent;
 import java.awt.image.BufferedImage;
 import javax.swing.Icon;
 
-public abstract class zJ
-implements up_0 {
-    protected static final Insets T;
-    private static final long[] a;
-    private static final Integer[] b;
+public abstract class zJ implements up_2 {
+   protected static final Insets T;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    protected FontMetrics Z(Object object) {
-        return FN.E();
-    }
+   protected FontMetrics Z(Object var1) {
+      return com.FN.E();
+   }
 
-    protected abstract Icon n(Object var1);
+   protected abstract Icon n(Object var1);
 
-    protected abstract String O(Object var1);
+   protected abstract String O(Object var1);
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public BufferedImage u(Object var1_1, DragSourceDragEvent var2_2) {
-        var4_3 = this.n(var1_1);
-        var3_4 = rn_0.Y();
-        var5_5 = this.O(var1_1);
-        var6_6 = this.Z(var1_1);
-        v0 = zJ.T.left;
-        v1 = var4_3;
-        if (var3_4 == 0) ** GOTO lbl10
-        if (v1 != null) {
-            v1 = var4_3;
-lbl10:
-            // 2 sources
-
-            v2 = v1.getIconWidth() + 4;
-        } else {
-            v2 = 3;
-        }
-        var7_7 = v0 + v2;
-        var8_8 = zJ.T.right + 3;
-        var9_9 = var7_7 + var6_6.stringWidth(var5_5) + var8_8;
-        v3 = zJ.T.top;
-        v4 = var4_3;
-        if (var3_4 == 0) ** GOTO lbl21
-        if (v4 != null) {
-            v4 = var4_3;
-lbl21:
-            // 2 sources
-
-            v5 = v4.getIconHeight();
-        } else {
-            v5 = 0;
-        }
-        var10_10 = v3 + Math.max(v5, var6_6.getHeight()) + zJ.T.bottom;
-        var11_11 = xg_0.g(var9_9, var10_10, 3);
-        var12_12 = var11_11.createGraphics();
-        RV.p(var12_12, Float.valueOf(0.8f));
-        RV.b(var12_12, var6_6.getFont());
-        RV.L(var12_12);
-        var12_12.setPaint(Color.WHITE);
-        var12_12.fillRect(0, 0, var9_9, var10_10);
-        var12_12.setPaint(Color.LIGHT_GRAY);
-        var12_12.drawRect(0, 0, var9_9 - 1, var10_10 - 1);
-        if (var3_4 != 0) {
-            if (var4_3 != null) {
-                var4_3.paintIcon(null, var12_12, zJ.T.left, zJ.T.top);
+   @Override
+   public BufferedImage u(Object var1, DragSourceDragEvent var2) {
+      int var3;
+      Icon var4;
+      String var5;
+      FontMetrics var6;
+      int var13;
+      label37: {
+         int var10000 = Rn_2.Y();
+         var4 = this.n(var1);
+         var3 = var10000;
+         var5 = this.O(var1);
+         var6 = this.Z(var1);
+         Icon var10001 = var4;
+         if (var3 != 0) {
+            if (var4 == null) {
+               var13 = 3;
+               break label37;
             }
-            var12_12.setPaint(Color.BLACK);
-            var12_12.drawString(var5_5, var7_7, zJ.T.top + (var10_10 - zJ.T.top - zJ.T.bottom) / 2 + GA.d(var6_6));
-            var12_12.dispose();
-        }
-        if (var3_4 == 0) {
-            ky_2.K(new String[3]);
-        }
-        return var11_11;
-    }
 
-    @Override
-    public Point e(Object object, DragSourceDragEvent dragSourceDragEvent) {
-        return new Point(zJ.a(20335, 8956823061290534712L), 5);
-    }
+            var10001 = var4;
+         }
 
-    @Override
-    public void v(Object object, DragSourceDropEvent dragSourceDropEvent) {
-    }
+         var13 = var10001.getIconWidth() + 4;
+      }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5307909822936804245L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "(V\u0005\u0005\u00f3\u00cb\u00ac\u00b4\u00ba'\u001b\u00c8\u007fbn=\u001fn\u0010-g~\u00b5\u00ed";
-        int n11 = "(V\u0005\u0005\u00f3\u00cb\u00ac\u00b4\u00ba'\u001b\u00c8\u007fbn=\u001fn\u0010-g~\u00b5\u00ed".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[3];
-        T = new Insets(zJ.a(22059, 1826042720172039806L), zJ.a(3576, 3249174288654534062L), zJ.a(3576, 3249174288654534062L), zJ.a(3576, 3249174288654534062L));
-    }
+      int var7;
+      int var9;
+      label31: {
+         var7 = T.left + var13;
+         int var8 = T.right + 3;
+         var9 = var7 + var6.stringWidth(var5) + var8;
+         Icon var14 = var4;
+         if (var3 != 0) {
+            if (var4 == null) {
+               var13 = 0;
+               break label31;
+            }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x857;
-        if (b[n11] == null) {
-            zJ.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+            var14 = var4;
+         }
+
+         var13 = var14.getIconHeight();
+      }
+
+      int var10 = T.top + Math.max(var13, var6.getHeight()) + T.bottom;
+      BufferedImage var11 = Xg_2.g(var9, var10, 3);
+      Graphics2D var12 = var11.createGraphics();
+      RV.p(var12, 0.8F);
+      RV.b(var12, var6.getFont());
+      RV.L(var12);
+      var12.setPaint(Color.WHITE);
+      var12.fillRect(0, 0, var9, var10);
+      var12.setPaint(Color.LIGHT_GRAY);
+      var12.drawRect(0, 0, var9 - 1, var10 - 1);
+      if (var3 != 0) {
+         if (var4 != null) {
+            var4.paintIcon(null, var12, T.left, T.top);
+         }
+
+         var12.setPaint(Color.BLACK);
+         var12.drawString(var5, var7, T.top + (var10 - T.top - T.bottom) / 2 + GA.d(var6));
+         var12.dispose();
+      }
+
+      if (var3 == 0) {
+         com.ky_4.K(new String[3]);
+      }
+
+      return var11;
+   }
+
+   @Override
+   public Point e(Object var1, DragSourceDragEvent var2) {
+      return new Point(a(20335, 8956823061290534712L), 5);
+   }
+
+   @Override
+   public void v(Object var1, DragSourceDropEvent var2) {
+   }
+
+   static {
+      long var0 = 5307909822936804245L;
+      long[] var6 = new long[3];
+      int var3 = 0;
+      String var4 = "(V\u0005\u0005óË¬´º'\u001bÈ\u007fbn=\u001fn\u0010-g~µí";
+      int var5 = "(V\u0005\u0005óË¬´º'\u001bÈ\u007fbn=\u001fn\u0010-g~µí".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[3];
+      T = new Insets(a(22059, 1826042720172039806L), a(3576, 3249174288654534062L), a(3576, 3249174288654534062L), a(3576, 3249174288654534062L));
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 2135;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

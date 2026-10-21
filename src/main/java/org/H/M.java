@@ -1,54 +1,51 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import com.ky_2;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import org.F.c;
-import org.h.cr_0;
-import org.h.m_0;
-import org.h.r_0;
 
-public final class M
-implements r_0 {
-    public final r_0[] z;
-    private static final long a;
+public final class M implements org.H.r_2 {
+   public final org.H.r_2[] z;
+   private static final long a;
 
-    public M(r_0[] r_0Array) {
-        this.z = r_0Array;
-    }
+   public M(org.H.r_2[] var1) {
+      this.z = var1;
+   }
 
-    @Override
-    public byte s() {
-        return (byte)((int)a);
-    }
+   @Override
+   public byte s() {
+      return (byte)((int)a);
+   }
 
-    @Override
-    public void E(DataOutputStream dataOutputStream) throws IOException {
-        ky_2[] ky_2Array = cr_0.q();
-        dataOutputStream.writeShort(this.z.length);
-        ky_2[] ky_2Array2 = ky_2Array;
-        for (r_0 r_02 : this.z) {
-            dataOutputStream.writeByte(r_02.s());
-            r_02.E(dataOutputStream);
-            if (ky_2Array2 == null) continue;
-        }
-    }
+   @Override
+   public void E(DataOutputStream var1) throws IOException {
+      com.ky_4[] var10000 = org.H.Cr_2.q();
+      var1.writeShort(this.z.length);
+      com.ky_4[] var2 = var10000;
 
-    @Override
-    @c
-    public Object d(m_0 m_02) throws Throwable {
-        return m_02.M(this);
-    }
+      for (org.H.r_2 var6 : this.z) {
+         var1.writeByte(var6.s());
+         var6.E(var1);
+         if (var2 != null) {
+            break;
+         }
+      }
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 8213722792239723985L;
-        a = 0x51E2BF7E82FA758AL ^ l2;
-    }
+   @org.F.c
+   @Override
+   public Object d(org.H.m_2 var1) throws Throwable {
+      return var1.M(this);
+   }
+
+   static {
+      long var0 = 8213722792239723985L;
+      long var10002 = 5900489011893007754L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

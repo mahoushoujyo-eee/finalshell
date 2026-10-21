@@ -1,29 +1,28 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.Z.A;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.List;
 
-class R
-implements ActionListener {
-    final A k;
+class R implements ActionListener {
+   final com.Z.A k;
 
-    R(A a10) {
-        this.k = a10;
-    }
+   R(com.Z.A var1) {
+      this.k = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        A.y(this.k, true);
-        List list = A.s(this.k).s();
-        A.n(this.k).setSelectedFiles(list.toArray(new File[list.size()]));
-        A.y(this.k, false);
-        A.n(this.k).approveSelection();
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      com.Z.A.y(this.k, true);
+      List var2 = com.Z.A.s(this.k).s();
+      com.Z.A.n(this.k).setSelectedFiles(var2.toArray(new File[var2.size()]));
+      com.Z.A.y(this.k, false);
+      com.Z.A.n(this.k).approveSelection();
+   }
 }
+
+
+
+
 

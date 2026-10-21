@@ -1,336 +1,511 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.O3;
-import com.dm_2;
-import com.dn_0;
-import com.dy_1;
-import com.ou_1;
-import com.s_0;
-import com.uJ;
 import java.io.IOException;
 
 class Y4 {
-    O3[] G;
-    int r;
-    int R;
-    final dy_1 Y;
-    private static final String a;
-    private static final long b;
+   com.O3[] G;
+   int r;
+   int R;
+   final com.dY_3 Y;
+   private static final String a;
+   private static final long b;
 
-    Y4(dy_1 dy_12, int n10) {
-        block2: {
-            this.Y = dy_12;
-            boolean bl = dm_2.J();
-            this.G = null;
-            this.G = new O3[n10];
-            for (int i2 = 0; i2 < this.G.length; ++i2) {
-                this.G[i2] = new O3(this);
-                if (!bl) {
-                    if (!bl) continue;
-                }
-                break block2;
+   Y4(com.dY_3 var1, int var2) {
+      boolean var10000 = com.dm_4.J();
+      this.Y = var1;
+      boolean var3 = var10000;
+      super();
+      this.G = null;
+      this.G = new com.O3[var2];
+      int var4 = 0;
+
+      while (true) {
+         if (var4 < this.G.length) {
+            this.G[var4] = new com.O3(this);
+            var4++;
+            if (var3) {
+               break;
             }
-            this.w();
-        }
-    }
 
-    void w() {
-        this.R = 0;
-        this.r = 0;
-    }
-
-    void Y(int n10, long l2, int n11) {
-        int n12;
-        boolean bl = dm_2.J();
-        int n13 = this.R;
-        if (!bl) {
-            if (n13 == 0) {
-                this.r = 0;
+            if (!var3) {
+               continue;
             }
-            n13 = n12 = this.r + this.R;
-        }
-        if (!bl) {
-            if (n12 >= this.G.length) {
-                n12 -= this.G.length;
+         }
+
+         this.w();
+         break;
+      }
+   }
+
+   void w() {
+      this.r = this.R = 0;
+   }
+
+   void Y(int var1, long var2, int var4) {
+      boolean var5 = com.dm_4.J();
+      int var10000 = this.R;
+      if (!var5) {
+         if (this.R == 0) {
+            this.r = 0;
+         }
+
+         var10000 = this.r + this.R;
+      }
+
+      int var6 = var10000;
+      if (!var5) {
+         if (var6 >= this.G.length) {
+            var6 -= this.G.length;
+         }
+
+         this.G[var6].y = var1;
+         this.G[var6].P = var2;
+         this.G[var6].C = (long)var4;
+         this.R++;
+      }
+   }
+
+   com.O3 y(int param1) throws com.oU_3, com.Dn_2 {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/dm_4.J ()Z
+      // 03: aload 0
+      // 04: dup
+      // 05: getfield com/Y4.R I
+      // 08: bipush 1
+      // 09: isub
+      // 0a: putfield com/Y4.R I
+      // 0d: istore 2
+      // 0e: aload 0
+      // 0f: getfield com/Y4.r I
+      // 12: istore 3
+      // 13: aload 0
+      // 14: dup
+      // 15: getfield com/Y4.r I
+      // 18: bipush 1
+      // 19: iadd
+      // 1a: putfield com/Y4.r I
+      // 1d: aload 0
+      // 1e: getfield com/Y4.r I
+      // 21: aload 0
+      // 22: getfield com/Y4.G [Lcom/O3;
+      // 25: arraylength
+      // 26: iload 2
+      // 27: ifne 55
+      // 2a: if_icmpne 40
+      // 2d: goto 34
+      // 30: invokestatic com/Y4.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 33: athrow
+      // 34: aload 0
+      // 35: bipush 0
+      // 36: putfield com/Y4.r I
+      // 39: goto 40
+      // 3c: invokestatic com/Y4.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 3f: athrow
+      // 40: aload 0
+      // 41: getfield com/Y4.G [Lcom/O3;
+      // 44: iload 3
+      // 45: aaload
+      // 46: iload 2
+      // 47: ifne fa
+      // 4a: getfield com/O3.y I
+      // 4d: iload 1
+      // 4e: goto 55
+      // 51: invokestatic com/Y4.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 54: athrow
+      // 55: if_icmpeq ea
+      // 58: aload 0
+      // 59: invokevirtual com/Y4.M ()J
+      // 5c: lstore 4
+      // 5e: bipush 0
+      // 5f: istore 6
+      // 61: bipush 0
+      // 62: istore 7
+      // 64: iload 7
+      // 66: aload 0
+      // 67: getfield com/Y4.G [Lcom/O3;
+      // 6a: arraylength
+      // 6b: if_icmpge b9
+      // 6e: aload 0
+      // 6f: getfield com/Y4.G [Lcom/O3;
+      // 72: iload 7
+      // 74: aaload
+      // 75: getfield com/O3.y I
+      // 78: iload 2
+      // 79: ifne bb
+      // 7c: iload 2
+      // 7d: ifne 9a
+      // 80: goto 87
+      // 83: invokestatic com/Y4.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 86: athrow
+      // 87: iload 1
+      // 88: if_icmpne ab
+      // 8b: goto 92
+      // 8e: invokestatic com/Y4.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 91: athrow
+      // 92: bipush 1
+      // 93: goto 9a
+      // 96: invokestatic com/Y4.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 99: athrow
+      // 9a: istore 6
+      // 9c: aload 0
+      // 9d: getfield com/Y4.G [Lcom/O3;
+      // a0: iload 7
+      // a2: aaload
+      // a3: bipush 0
+      // a4: putfield com/O3.y I
+      // a7: iload 2
+      // a8: ifeq b9
+      // ab: iinc 7 1
+      // ae: iload 2
+      // af: ifeq 64
+      // b2: goto b9
+      // b5: invokestatic com/Y4.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // b8: athrow
+      // b9: iload 6
+      // bb: ifeq cd
+      // be: new com/oU_3
+      // c1: dup
+      // c2: aload 0
+      // c3: lload 4
+      // c5: invokespecial com/oU_3.<init> (Lcom/Y4;J)V
+      // c8: athrow
+      // c9: invokestatic com/Y4.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // cc: athrow
+      // cd: new com/Dn_2
+      // d0: dup
+      // d1: bipush 4
+      // d2: new java/lang/StringBuilder
+      // d5: dup
+      // d6: invokespecial java/lang/StringBuilder.<init> ()V
+      // d9: getstatic com/Y4.a Ljava/lang/String;
+      // dc: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // df: iload 1
+      // e0: invokevirtual java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+      // e3: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // e6: invokespecial com/Dn_2.<init> (ILjava/lang/String;)V
+      // e9: athrow
+      // ea: aload 0
+      // eb: getfield com/Y4.G [Lcom/O3;
+      // ee: iload 3
+      // ef: aaload
+      // f0: bipush 0
+      // f1: putfield com/O3.y I
+      // f4: aload 0
+      // f5: getfield com/Y4.G [Lcom/O3;
+      // f8: iload 3
+      // f9: aaload
+      // fa: areturn
+   }
+
+   int J() {
+      return this.R;
+   }
+
+   int D() {
+      return this.G.length;
+   }
+
+   // $VF: Handled exception range with multiple entry points by splitting it
+   // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
+   void W(s_2 var1, uJ var2) throws IOException {
+      int var10000 = com.dm_4.J();
+      int var4 = this.R;
+      boolean var3 = (boolean)var10000;
+      int var5 = 0;
+
+      label67:
+      while (true) {
+         var10000 = var5;
+         int var10001 = var4;
+
+         label64:
+         while (var10000 < var10001) {
+            var1 = com.dY_3.b(this.Y, var2, var1);
+            int var6 = var1.W;
+            if (var3) {
+               return;
             }
-            this.G[n12].y = n10;
-            this.G[n12].P = l2;
-            this.G[n12].C = n11;
-            ++this.R;
-        }
-    }
 
-    /*
-     * WARNING - void declaration
-     */
-    O3 y(int n10) throws ou_1, dn_0 {
-        O3 o3;
-        block21: {
-            int n11;
-            int n12;
-            int n13;
-            boolean bl;
-            block19: {
-                block20: {
-                    --this.R;
-                    bl = dm_2.J();
-                    n13 = this.r++;
-                    try {
-                        try {
-                            n12 = this.r;
-                            n11 = this.G.length;
-                            if (bl) break block19;
-                            if (n12 != n11) break block20;
+            int var7 = 0;
+
+            while (var7 < this.G.length) {
+               label57: {
+                  label56: {
+                     try {
+                        var13 = this.G[var7];
+                        if (var3) {
+                           break label56;
                         }
-                        catch (ou_1 ou_12) {
-                            throw Y4.a(ou_12);
+
+                        var10000 = var13.y;
+                        var10001 = var1.w;
+                        if (var3) {
+                           continue label64;
                         }
-                        this.r = 0;
-                    }
-                    catch (ou_1 ou_13) {
-                        throw Y4.a(ou_13);
-                    }
-                }
-                try {
-                    o3 = this.G[n13];
-                    if (bl) break block21;
-                    n12 = o3.y;
-                    n11 = n10;
-                }
-                catch (ou_1 ou_14) {
-                    throw Y4.a(ou_14);
-                }
+                     } catch (IOException var11) {
+                        throw a(var11);
+                     }
+
+                     try {
+                        if (var10000 != var10001) {
+                           break label57;
+                        }
+
+                        var13 = this.G[var7];
+                     } catch (IOException var10) {
+                        throw a(var10);
+                     }
+                  }
+
+                  try {
+                     var13.y = 0;
+                     if (!var3) {
+                        break;
+                     }
+                  } catch (IOException var9) {
+                     boolean var15 = false;
+                     throw a(var9);
+                  }
+               }
+
+               try {
+                  var7++;
+                  if (var3) {
+                     break;
+                  }
+               } catch (IOException var8) {
+                  boolean var16 = false;
+                  throw a(var8);
+               }
             }
-            if (n12 != n11) {
-                int n14;
-                long l2;
-                block22: {
-                    void var6_6;
-                    l2 = this.M();
-                    boolean n15 = false;
-                    for (int i2 = 0; i2 < this.G.length; ++i2) {
-                        boolean bl2;
-                        block23: {
-                            try {
-                                try {
-                                    try {
-                                        n14 = this.G[i2].y;
-                                        if (bl) break block22;
-                                        if (bl) break block23;
-                                    }
-                                    catch (ou_1 ou_15) {
-                                        throw Y4.a(ou_15);
-                                    }
-                                    if (n14 != n10) continue;
-                                }
-                                catch (ou_1 ou_16) {
-                                    throw Y4.a(ou_16);
-                                }
-                                bl2 = true;
-                            }
-                            catch (ou_1 ou_17) {
-                                throw Y4.a(ou_17);
-                            }
-                        }
-                        var6_6 = bl2;
-                        try {
-                            this.G[i2].y = 0;
-                            if (!bl) break;
-                            if (!bl) continue;
-                            break;
-                        }
-                        catch (ou_1 ou_18) {
-                            throw Y4.a(ou_18);
-                        }
-                    }
-                    n14 = var6_6;
-                }
-                try {
-                    if (n14 != 0) {
-                        throw new ou_1(this, l2);
-                    }
-                }
-                catch (ou_1 ou_19) {
-                    throw Y4.a(ou_19);
-                }
-                throw new dn_0(4, a + n10);
+
+            com.dY_3.B(this.Y, (long)var6);
+            var5++;
+            if (!var3) {
+               continue label67;
             }
-            this.G[n13].y = 0;
-            o3 = this.G[n13];
-        }
-        return o3;
-    }
+            break;
+         }
 
-    int J() {
-        return this.R;
-    }
+         this.w();
+         return;
+      }
+   }
 
-    int D() {
-        return this.G.length;
-    }
+   long M() {
+      long var2 = b;
+      int var10000 = com.dm_4.J();
+      int var4 = 0;
+      boolean var1 = (boolean)var10000;
 
-    void W(s_0 s_02, uJ uJ2) throws IOException {
-        block9: {
-            int n10 = this.R;
-            boolean bl = dm_2.J();
-            int n11 = 0;
-            block6: while (true) {
-                int n12 = n11;
-                int n13 = n10;
-                block7: while (n12 < n13) {
-                    s_02 = dy_1.b(this.Y, uJ2, s_02);
-                    int n14 = s_02.W;
-                    if (bl) break block9;
-                    for (int i2 = 0; i2 < this.G.length; ++i2) {
-                        block10: {
-                            O3 o3;
-                            try {
-                                o3 = this.G[i2];
-                                if (bl) break block10;
-                                n12 = o3.y;
-                                n13 = s_02.w;
-                                if (bl) continue block7;
-                            }
-                            catch (IOException iOException) {
-                                throw Y4.a(iOException);
-                            }
-                            try {
-                                if (n12 != n13) continue;
-                                o3 = this.G[i2];
-                            }
-                            catch (IOException iOException) {
-                                throw Y4.a(iOException);
-                            }
-                        }
-                        try {
-                            o3.y = 0;
-                            if (!bl) break;
-                            if (!bl) continue;
-                            break;
-                        }
-                        catch (IOException iOException) {
-                            throw Y4.a(iOException);
-                        }
-                    }
-                    dy_1.B(this.Y, n14);
-                    ++n11;
-                    if (!bl) continue block6;
-                }
-                break;
+      while (var4 < this.G.length) {
+         label30: {
+            label38: {
+               var10000 = this.G[var4].y;
+               if (!var1) {
+                  if (this.G[var4].y == 0 && !var1) {
+                     break label30;
+                  }
+
+                  var6 = var2;
+                  if (var1) {
+                     break label38;
+                  }
+
+                  long var7;
+                  var10000 = (var7 = var2 - this.G[var4].P) == 0L ? 0 : (var7 < 0L ? -1 : 1);
+               }
+
+               if (var10000 <= 0) {
+                  break label30;
+               }
+
+               var6 = this.G[var4].P;
             }
-            this.w();
-        }
-    }
 
-    long M() {
-        long l2 = b;
-        boolean bl = dm_2.J();
-        for (int i2 = 0; i2 < this.G.length; ++i2) {
-            long l3;
-            block4: {
-                int n10;
-                block3: {
-                    n10 = this.G[i2].y;
-                    if (bl) break block3;
-                    if (n10 == 0 && !bl) continue;
-                    l3 = l2;
-                    if (bl) break block4;
-                    long l4 = l3 - this.G[i2].P;
-                    n10 = l4 == 0L ? 0 : (l4 < 0L ? -1 : 1);
-                }
-                if (n10 <= 0) continue;
-                l3 = this.G[i2].P;
+            var2 = var6;
+         }
+
+         var4++;
+         if (var1) {
+            break;
+         }
+      }
+
+      return var2;
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "By\"G7J\bAi6G7\u0003\\er8\\=N\u00120n6C'\\\u000fd<:Vr".toCharArray();
+      int var10004 = var10003.length;
+      int var2 = 0;
+      byte var13 = 76;
+      char[] var10002 = var10003;
+      int var4 = var10004;
+      char[] var17;
+      byte var21;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var17 = var10003;
+         var10005 = var2;
+         char var10008 = var10003[var2];
+         var10007 = 76;
+         var10006 = var10008;
+         switch (var2 % 7) {
+            case 0:
+               var21 = 92;
+               break;
+            case 1:
+               var21 = 80;
+               break;
+            case 2:
+               var21 = 31;
+               break;
+            case 3:
+               var21 = 126;
+               break;
+            case 4:
+               var21 = 30;
+               break;
+            case 5:
+               var21 = 117;
+               break;
+            default:
+               var21 = 48;
+         }
+      } else {
+         var13 = 76;
+         var4 = var10004;
+         if (var10004 <= var2) {
+            String var16 = new String(var10003).intern();
+            byte var8 = -1;
+            a = var16;
+            long var3 = 4939171300816766569L;
+            long var12 = 4284200736038009238L ^ var3;
+            var8 = -1;
+            b = var12;
+            return;
+         }
+
+         var17 = var10003;
+         var10005 = var2;
+         char var22 = var10003[var2];
+         var10007 = 76;
+         var10006 = var22;
+         switch (var2 % 7) {
+            case 0:
+               var21 = 92;
+               break;
+            case 1:
+               var21 = 80;
+               break;
+            case 2:
+               var21 = 31;
+               break;
+            case 3:
+               var21 = 126;
+               break;
+            case 4:
+               var21 = 30;
+               break;
+            case 5:
+               var21 = 117;
+               break;
+            default:
+               var21 = 48;
+         }
+      }
+
+      while (true) {
+         var17[var10005] = (char)(var10006 ^ var10007 ^ var21);
+         var2++;
+         if (var13 == 0) {
+            var17 = var10002;
+            var10005 = var13;
+            char var24 = var10002[var13];
+            var10007 = var13;
+            var10006 = var24;
+            switch (var2 % 7) {
+               case 0:
+                  var21 = 92;
+                  break;
+               case 1:
+                  var21 = 80;
+                  break;
+               case 2:
+                  var21 = 31;
+                  break;
+               case 3:
+                  var21 = 126;
+                  break;
+               case 4:
+                  var21 = 30;
+                  break;
+               case 5:
+                  var21 = 117;
+                  break;
+               default:
+                  var21 = 48;
             }
-            l2 = l3;
-            if (!bl) continue;
-        }
-        return l2;
-    }
-
-    private static Exception a(Exception exception) {
-        return exception;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "By\"G7J\bAi6G7\u0003\\er8\\=N\u00120n6C'\\\u000fd<:Vr".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 76;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+         } else {
+            if (var4 <= var2) {
+               String var15 = new String(var10002).intern();
+               byte var6 = -1;
+               a = var15;
+               long var0 = 4939171300816766569L;
+               long var11 = 4284200736038009238L ^ var0;
+               var6 = -1;
+               b = var11;
+               return;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 92;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 80;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 31;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 126;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 30;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 117;
-                            break;
-                        }
-                        default: {
-                            n17 = 48;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        long l2 = 4939171300816766569L;
-        b = 0x3B7489DEEA033996L ^ l2;
-    }
+
+            var17 = var10002;
+            var10005 = var2;
+            char var23 = var10002[var2];
+            var10007 = var13;
+            var10006 = var23;
+            switch (var2 % 7) {
+               case 0:
+                  var21 = 92;
+                  break;
+               case 1:
+                  var21 = 80;
+                  break;
+               case 2:
+                  var21 = 31;
+                  break;
+               case 3:
+                  var21 = 126;
+                  break;
+               case 4:
+                  var21 = 30;
+                  break;
+               case 5:
+                  var21 = 117;
+                  break;
+               default:
+                  var21 = 48;
+            }
+         }
+      }
+   }
 }
+
+
+
+
 

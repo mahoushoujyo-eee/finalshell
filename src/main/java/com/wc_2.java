@@ -1,26 +1,15 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.IH;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
+import java.awt.event.KeyEvent;
 
-/*
- * Renamed from com.wc
- */
-class wc_2
-extends FocusAdapter {
-    final IH l;
+public interface Wc_2 extends Sr_2 {
+   com.Wc_2 g = new com.dN_3();
 
-    wc_2(IH iH) {
-        this.l = iH;
-    }
-
-    @Override
-    public void focusLost(FocusEvent focusEvent) {
-        this.l.M();
-    }
+   @Override
+   void j(KeyEvent var1);
 }
+
+
+
+
 

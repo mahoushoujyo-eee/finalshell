@@ -1,28 +1,29 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.IOException;
 
-class OX
-implements Runnable {
-    final byte[] S;
+class OX implements Runnable {
+   final byte[] S;
 
-    OX(byte[] byArray) {
-        this.S = byArray;
-    }
+   OX(byte[] var1) {
+      this.S = var1;
+   }
 
-    @Override
-    public void run() {
-        bj_2.t = true;
-        bj_2.x = true;
-        try {
-            bj_2.F = bn_1.J.read(this.S, 0, this.S.length);
-            bj_2.T = System.currentTimeMillis();
-        }
-        catch (IOException iOException) {
-            iOException.printStackTrace();
-        }
-        bj_2.t = false;
-    }
+   @Override
+   public void run() {
+      bj_4.t = true;
+      bj_4.x = true;
+
+      try {
+         bj_4.F = bN_3.J.read(this.S, 0, this.S.length);
+         bj_4.T = System.currentTimeMillis();
+      } catch (IOException var2) {
+         var2.printStackTrace();
+      }
+
+      bj_4.t = false;
+   }
 }
+
+
+
+
 

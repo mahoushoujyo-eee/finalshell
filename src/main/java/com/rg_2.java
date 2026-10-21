@@ -1,26 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.kc_2;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+class Rg_2 implements Runnable {
+   final pv_4 v;
 
-/*
- * Renamed from com.rg
- */
-class rg_2
-extends MouseAdapter {
-    final kc_2 Y;
+   Rg_2(pv_4 var1) {
+      this.v = var1;
+   }
 
-    rg_2(kc_2 kc_22) {
-        this.Y = kc_22;
-    }
-
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        this.Y.requestFocusInWindow();
-    }
+   @Override
+   public void run() {
+      this.v.H();
+   }
 }
+
+
+
+
 

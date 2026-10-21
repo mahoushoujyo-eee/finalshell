@@ -1,35 +1,34 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-
 public class K3 {
-    um_2 d;
-    um_2 i;
-    um_2 L;
+   um_4 d;
+   um_4 i;
+   um_4 L;
 
-    public um_2 D() {
-        return (um_2)this.d;
-    }
+   public um_4 D() {
+      return (um_4)com.c.c(316308885847392115L).get(this);
+   }
 
-    public void j(um_2 um_22) {
-        this.d = um_22;
-    }
+   public void j(um_4 var1) {
+      com.c.c(316308885847392115L).set(this, var1);
+   }
 
-    public um_2 a() {
-        return (um_2)this.i;
-    }
+   public um_4 a() {
+      return (um_4)com.c.c(321851462624880331L).get(this);
+   }
 
-    public void C(um_2 um_22) {
-        this.i = um_22;
-    }
+   public void C(um_4 var1) {
+      com.c.c(321851462624880331L).set(this, var1);
+   }
 
-    public um_2 R() {
-        return (um_2)this.L;
-    }
+   public um_4 R() {
+      return (um_4)com.c.c(532550135364804121L).get(this);
+   }
 
-    public void B(um_2 um_22) {
-        this.L = um_22;
-    }
+   public void B(um_4 var1) {
+      com.c.c(532550135364804121L).set(this, var1);
+   }
 }
+
+
+
+
 

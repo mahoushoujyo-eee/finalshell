@@ -1,196 +1,356 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.P;
-import org.v.B;
-import org.v.RG;
-import org.v.fU;
-import org.v.hq_0;
+class hD extends hq_2 {
+   private final fU N;
+   private final fU y;
+   private final fU p;
+   final B z;
+   private static final String a;
+   private static final long[] b;
+   private static final Integer[] c;
 
-class hD
-extends hq_0 {
-    private final fU N;
-    private final fU y;
-    private final fU p;
-    final B z;
-    private static final String a;
-    private static final long[] b;
-    private static final Integer[] c;
+   hD(B var1, fU var2, fU var3, fU var4) {
+      super(var1, null);
+      this.z = var1;
+      this.N = var2;
+      this.y = var3;
+      this.p = var4;
+   }
 
-    hD(B b2, fU fU2, fU fU3, fU fU4) {
-        this.z = b2;
-        super(b2, null);
-        this.N = fU2;
-        this.y = fU3;
-        this.p = fU4;
-    }
+   @Override
+   public void W() {
+   }
 
-    @Override
-    public void W() {
-    }
+   @Override
+   public void i() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/v/RG.C ()[Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: getfield org/v/hD.y Lorg/v/fU;
+      // 08: getfield org/v/fU.E I
+      // 0b: bipush -1
+      // 0c: aload 1
+      // 0d: ifnull 29
+      // 10: if_icmpeq 37
+      // 13: goto 1a
+      // 16: invokestatic org/v/hD.a (Lorg/P;)Lorg/P;
+      // 19: athrow
+      // 1a: aload 0
+      // 1b: getfield org/v/hD.p Lorg/v/fU;
+      // 1e: getfield org/v/fU.E I
+      // 21: bipush -1
+      // 22: goto 29
+      // 25: invokestatic org/v/hD.a (Lorg/P;)Lorg/P;
+      // 28: athrow
+      // 29: aload 1
+      // 2a: ifnull 54
+      // 2d: if_icmpne 46
+      // 30: goto 37
+      // 33: invokestatic org/v/hD.a (Lorg/P;)Lorg/P;
+      // 36: athrow
+      // 37: new org/P
+      // 3a: dup
+      // 3b: getstatic org/v/hD.a Ljava/lang/String;
+      // 3e: invokespecial org/P.<init> (Ljava/lang/String;)V
+      // 41: athrow
+      // 42: invokestatic org/v/hD.a (Lorg/P;)Lorg/P;
+      // 45: athrow
+      // 46: aload 0
+      // 47: getfield org/v/hD.p Lorg/v/fU;
+      // 4a: getfield org/v/fU.E I
+      // 4d: aload 0
+      // 4e: getfield org/v/hD.y Lorg/v/fU;
+      // 51: getfield org/v/fU.E I
+      // 54: isub
+      // 55: istore 2
+      // 56: bipush 4
+      // 57: newarray 8
+      // 59: dup
+      // 5a: bipush 0
+      // 5b: iload 2
+      // 5c: sipush 26203
+      // 5f: ldc2_w 5755400069355521437
+      // 62: invokestatic org/v/hD.a (IJ)I
+      // 65: ishr
+      // 66: i2b
+      // 67: bastore
+      // 68: dup
+      // 69: bipush 1
+      // 6a: iload 2
+      // 6b: sipush 7163
+      // 6e: ldc2_w 1485853274894055487
+      // 71: invokestatic org/v/hD.a (IJ)I
+      // 74: ishr
+      // 75: i2b
+      // 76: bastore
+      // 77: dup
+      // 78: bipush 2
+      // 79: iload 2
+      // 7a: sipush 28043
+      // 7d: ldc2_w 852927981213437516
+      // 80: invokestatic org/v/hD.a (IJ)I
+      // 83: ishr
+      // 84: i2b
+      // 85: bastore
+      // 86: dup
+      // 87: bipush 3
+      // 88: iload 2
+      // 89: i2b
+      // 8a: bastore
+      // 8b: astore 3
+      // 8c: aload 3
+      // 8d: bipush 0
+      // 8e: aload 0
+      // 8f: getfield org/v/hD.z Lorg/v/B;
+      // 92: invokestatic org/v/B.s (Lorg/v/B;)[B
+      // 95: aload 0
+      // 96: getfield org/v/hD.N Lorg/v/fU;
+      // 99: getfield org/v/fU.E I
+      // 9c: bipush 4
+      // 9d: invokestatic java/lang/System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
+      // a0: return
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    @Override
-    public void i() {
-        int n10;
-        int n11;
-        block9: {
-            block10: {
-                String[] stringArray;
-                block8: {
-                    stringArray = RG.C();
-                    try {
-                        try {
-                            n11 = this.y.E;
-                            n10 = -1;
-                            if (stringArray == null) break block8;
-                            if (n11 == n10) throw new P(a);
-                        }
-                        catch (P p2) {
-                            throw hD.a(p2);
-                        }
-                        n11 = this.p.E;
-                        n10 = -1;
-                    }
-                    catch (P p3) {
-                        throw hD.a(p3);
-                    }
-                }
-                try {
-                    try {
-                        if (stringArray == null) break block9;
-                        if (n11 != n10) break block10;
-                        throw new P(a);
-                    }
-                    catch (P p5) {
-                        throw hD.a(p5);
-                    }
-                }
-                catch (P p6) {
-                    throw hD.a(p6);
-                }
-            }
-            n11 = this.p.E;
-            n10 = this.y.E;
-        }
-        int n12 = n11 - n10;
-        byte[] byArray = new byte[]{(byte)(n12 >> hD.a(26203, 5755400069355521437L)), (byte)(n12 >> hD.a(7163, 1485853274894055487L)), (byte)(n12 >> hD.a(28043, 852927981213437516L)), (byte)n12};
-        System.arraycopy(byArray, 0, B.s(this.z), this.N.E, 4);
-    }
+   static fU E(hD var0) {
+      return var0.y;
+   }
 
-    static fU E(hD hD2) {
-        return hD2.y;
-    }
+   static fU T(hD var0) {
+      return var0.p;
+   }
 
-    static fU T(hD hD2) {
-        return hD2.p;
-    }
+   private static org.P a(org.P var0) {
+      return var0;
+   }
 
-    private static P a(P p2) {
-        return p2;
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "#\b\u0015~7Rj\u0012\f\u0017\u007f;G>\u0005I\u0014v>U/\u0014I\u0019b9H)\bI\u000f\u007fxS$\u0013\f\u000f0<C9\u0014\u0000\u0015q,O%\u000eI\u0014v>U/\u0014"
+         .toCharArray();
+      int var10004 = var10003.length;
+      int var8 = 0;
+      byte var25 = 33;
+      char[] var10002 = var10003;
+      int var16 = var10004;
+      char[] var31;
+      byte var37;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var31 = var10003;
+         var10005 = var8;
+         char var10008 = var10003[var8];
+         var10007 = 33;
+         var10006 = var10008;
+         switch (var8 % 7) {
+            case 0:
+               var37 = 65;
+               break;
+            case 1:
+               var37 = 72;
+               break;
+            case 2:
+               var37 = 90;
+               break;
+            case 3:
+               var37 = 49;
+               break;
+            case 4:
+               var37 = 121;
+               break;
+            case 5:
+               var37 = 7;
+               break;
+            default:
+               var37 = 107;
+         }
+      } else {
+         var25 = 33;
+         var16 = var10004;
+         if (var10004 <= var8) {
+            String var29 = new String(var10003).intern();
+            int var21 = -1;
+            a = var29;
+            long var9 = 989219453243424840L;
+            long[] var14 = new long[3];
+            int var11 = 0;
+            String var12 = "û7Õ\r¡JÅÍ¦H\u00808ØLÎ\fJÆµè]\u00128g";
+            int var13 = "û7Õ\r¡JÅÍ¦H\u00808ØLÎ\fJÆµè]\u00128g".length();
+            byte var10 = 0;
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block13: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block12: {
-                char[] cArray3 = "#\b\u0015~7Rj\u0012\f\u0017\u007f;G>\u0005I\u0014v>U/\u0014I\u0019b9H)\bI\u000f\u007fxS$\u0013\f\u000f0<C9\u0014\u0000\u0015q,O%\u000eI\u0014v>U/\u0014".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 33;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block12;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block13;
-            }
             do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 65;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 72;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 90;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 49;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 121;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 7;
-                            break;
-                        }
-                        default: {
-                            n17 = 107;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        long l2 = 989219453243424840L;
-        long[] lArray = new long[3];
-        int n18 = 0;
-        String string = "\u00fb7\u00d5\r\u00a1J\u00c5\u00cd\u00a6H\u00808\u00d8L\u00ce\fJ\u00c6\u00b5\u00e8]\u00128g";
-        int n19 = "\u00fb7\u00d5\r\u00a1J\u00c5\u00cd\u00a6H\u00808\u00d8L\u00ce\fJ\u00c6\u00b5\u00e8]\u00128g".length();
-        int n20 = 0;
-        do {
-            byte[] byArray = string.substring(n20, n20 += 8).getBytes("ISO-8859-1");
-            int n21 = n18++;
-            lArray[n21] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n20 < n19);
-        b = lArray;
-        c = new Integer[3];
-    }
+               var21 = var10;
+               var10 += 8;
+               byte[] var15 = var12.substring(var21, var10).getBytes("ISO-8859-1");
+               var21 = var11++;
+               long var35 = (
+                     ((long)var15[0] & 255L) << 56
+                        | ((long)var15[1] & 255L) << 48
+                        | ((long)var15[2] & 255L) << 40
+                        | ((long)var15[3] & 255L) << 32
+                        | ((long)var15[4] & 255L) << 24
+                        | ((long)var15[5] & 255L) << 16
+                        | ((long)var15[6] & 255L) << 8
+                        | (long)var15[7] & 255L
+                  )
+                  ^ var9;
+               byte var30 = -1;
+               var14[var21] = var35;
+            } while (var10 < var13);
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x23C6;
-        if (c[n11] == null) {
-            hD.c[n11] = (int)(b[n11] ^ l2);
-        }
-        return c[n11];
-    }
+            b = var14;
+            c = new Integer[3];
+            return;
+         }
+
+         var31 = var10003;
+         var10005 = var8;
+         char var38 = var10003[var8];
+         var10007 = 33;
+         var10006 = var38;
+         switch (var8 % 7) {
+            case 0:
+               var37 = 65;
+               break;
+            case 1:
+               var37 = 72;
+               break;
+            case 2:
+               var37 = 90;
+               break;
+            case 3:
+               var37 = 49;
+               break;
+            case 4:
+               var37 = 121;
+               break;
+            case 5:
+               var37 = 7;
+               break;
+            default:
+               var37 = 107;
+         }
+      }
+
+      while (true) {
+         var31[var10005] = (char)(var10006 ^ var10007 ^ var37);
+         var8++;
+         if (var25 == 0) {
+            var31 = var10002;
+            var10005 = var25;
+            char var40 = var10002[var25];
+            var10007 = var25;
+            var10006 = var40;
+            switch (var8 % 7) {
+               case 0:
+                  var37 = 65;
+                  break;
+               case 1:
+                  var37 = 72;
+                  break;
+               case 2:
+                  var37 = 90;
+                  break;
+               case 3:
+                  var37 = 49;
+                  break;
+               case 4:
+                  var37 = 121;
+                  break;
+               case 5:
+                  var37 = 7;
+                  break;
+               default:
+                  var37 = 107;
+            }
+         } else {
+            if (var16 <= var8) {
+               String var27 = new String(var10002).intern();
+               int var18 = -1;
+               a = var27;
+               long var0 = 989219453243424840L;
+               long[] var6 = new long[3];
+               int var3 = 0;
+               String var4 = "û7Õ\r¡JÅÍ¦H\u00808ØLÎ\fJÆµè]\u00128g";
+               int var5 = "û7Õ\r¡JÅÍ¦H\u00808ØLÎ\fJÆµè]\u00128g".length();
+               byte var2 = 0;
+
+               do {
+                  var18 = var2;
+                  var2 += 8;
+                  byte[] var7 = var4.substring(var18, var2).getBytes("ISO-8859-1");
+                  var18 = var3++;
+                  long var34 = (
+                        ((long)var7[0] & 255L) << 56
+                           | ((long)var7[1] & 255L) << 48
+                           | ((long)var7[2] & 255L) << 40
+                           | ((long)var7[3] & 255L) << 32
+                           | ((long)var7[4] & 255L) << 24
+                           | ((long)var7[5] & 255L) << 16
+                           | ((long)var7[6] & 255L) << 8
+                           | (long)var7[7] & 255L
+                     )
+                     ^ var0;
+                  byte var28 = -1;
+                  var6[var18] = var34;
+               } while (var2 < var5);
+
+               b = var6;
+               c = new Integer[3];
+               return;
+            }
+
+            var31 = var10002;
+            var10005 = var8;
+            char var39 = var10002[var8];
+            var10007 = var25;
+            var10006 = var39;
+            switch (var8 % 7) {
+               case 0:
+                  var37 = 65;
+                  break;
+               case 1:
+                  var37 = 72;
+                  break;
+               case 2:
+                  var37 = 90;
+                  break;
+               case 3:
+                  var37 = 49;
+                  break;
+               case 4:
+                  var37 = 121;
+                  break;
+               case 5:
+                  var37 = 7;
+                  break;
+               default:
+                  var37 = 107;
+            }
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 9158;
+      if (c[var3] == null) {
+         c[var3] = (int)(b[var3] ^ var1);
+      }
+
+      return c[var3];
+   }
 }
+
+
+
+
 

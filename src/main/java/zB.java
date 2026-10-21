@@ -1,60 +1,56 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
 public class zB {
-    String j;
-    String K;
-    int p;
-    int b;
-    long C;
+   String j;
+   String K;
+   int p;
+   int b;
+   long C;
 
-    public zB() {
-        this.C = System.currentTimeMillis();
-    }
+   public zB() {
+      com.c.c(453484836900178585L).setLong(this, System.currentTimeMillis());
+   }
 
-    public String W() {
-        return (String)this.j;
-    }
+   public String W() {
+      return (String)com.c.c(294744154085743058L).get(this);
+   }
 
-    public void L(String string) {
-        this.j = string;
-    }
+   public void L(String var1) {
+      com.c.c(294744154085743058L).set(this, var1);
+   }
 
-    public String l() {
-        return (String)this.K;
-    }
+   public String l() {
+      return (String)com.c.c(498497885998729734L).get(this);
+   }
 
-    public void T(String string) {
-        this.K = string;
-    }
+   public void T(String var1) {
+      com.c.c(498497885998729734L).set(this, var1);
+   }
 
-    public int I() {
-        return this.p;
-    }
+   public int I() {
+      return com.c.c(624500043017334514L).getInt(this);
+   }
 
-    public void y(int n10) {
-        this.p = n10;
-    }
+   public void y(int var1) {
+      com.c.c(624500043017334514L).setInt(this, var1);
+   }
 
-    public int l() {
-        return this.b;
-    }
+   public int l$int() {
+      return com.c.c(418486639502868955L).getInt(this);
+   }
 
-    public void J(int n10) {
-        this.b = n10;
-    }
+   public void J(int var1) {
+      com.c.c(418486639502868955L).setInt(this, var1);
+   }
 
-    public long Q() {
-        return this.C;
-    }
+   public long Q() {
+      return com.c.c(453484836900178585L).getLong(this);
+   }
 
-    public void x(long l2) {
-        this.C = l2;
-    }
+   public void x(long var1) {
+      com.c.c(453484836900178585L).setLong(this, var1);
+   }
 }
+
+
+
+
 

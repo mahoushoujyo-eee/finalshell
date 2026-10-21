@@ -1,84 +1,81 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import com.S3;
-import com.c;
-import com.xf_1;
+import com.xF_3;
 import java.awt.Color;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
 public class nY {
-    xf_1 e;
-    xf_1 j;
-    xf_1 Q;
-    xf_1 x;
-    xf_1 z;
-    S3 K;
+   xF_3 e;
+   xF_3 j;
+   xF_3 Q;
+   xF_3 x;
+   xF_3 z;
+   S3 K;
 
-    public xf_1 B() {
-        return (xf_1)this.j;
-    }
+   public xF_3 B() {
+      return (xF_3)com.c.c(294166995888460100L).get(this);
+   }
 
-    public Color F() {
-        return new Color(((xf_1)this.j).p());
-    }
+   public Color F() {
+      return new Color(((xF_3)com.c.c(294166995888460100L).get(this)).p());
+   }
 
-    public void c(xf_1 xf_12) {
-        this.j = xf_12;
-    }
+   public void c(xF_3 var1) {
+      com.c.c(294166995888460100L).set(this, var1);
+   }
 
-    public S3 e() {
-        return (S3)this.K;
-    }
+   public S3 e() {
+      return (S3)com.c.c(439227539949669859L).get(this);
+   }
 
-    public void B(S3 s3) {
-        this.K = s3;
-    }
+   public void B(S3 var1) {
+      com.c.c(439227539949669859L).set(this, var1);
+   }
 
-    public xf_1 a() {
-        return (xf_1)this.e;
-    }
+   public xF_3 a() {
+      return (xF_3)com.c.c(572052182183869459L).get(this);
+   }
 
-    public Color L() {
-        return new Color(((xf_1)this.e).p());
-    }
+   public Color L() {
+      return new Color(((xF_3)com.c.c(572052182183869459L).get(this)).p());
+   }
 
-    public void T(xf_1 xf_12) {
-        this.e = xf_12;
-    }
+   public void T(xF_3 var1) {
+      com.c.c(572052182183869459L).set(this, var1);
+   }
 
-    public xf_1 n() {
-        return (xf_1)this.Q;
-    }
+   public xF_3 n() {
+      return (xF_3)com.c.c(435798884234313026L).get(this);
+   }
 
-    public Color N() {
-        return new Color(((xf_1)this.Q).p());
-    }
+   public Color N() {
+      return new Color(((xF_3)com.c.c(435798884234313026L).get(this)).p());
+   }
 
-    public void M(xf_1 xf_12) {
-        this.Q = xf_12;
-    }
+   public void M(xF_3 var1) {
+      com.c.c(435798884234313026L).set(this, var1);
+   }
 
-    public xf_1 N() {
-        return (xf_1)this.x;
-    }
+   public xF_3 N$xF_3() {
+      return (xF_3)com.c.c(424642669276801918L).get(this);
+   }
 
-    public void Y(xf_1 xf_12) {
-        this.x = xf_12;
-    }
+   public void Y(xF_3 var1) {
+      com.c.c(424642669276801918L).set(this, var1);
+   }
 
-    public xf_1 o() {
-        return (xf_1)this.z;
-    }
+   public xF_3 o() {
+      return (xF_3)com.c.c(502617156715439076L).get(this);
+   }
 
-    public Color m() {
-        return new Color(((xf_1)this.z).p());
-    }
+   public Color m() {
+      return new Color(((xF_3)com.c.c(502617156715439076L).get(this)).p());
+   }
 
-    public void m(xf_1 xf_12) {
-        this.z = xf_12;
-    }
+   public void m(xF_3 var1) {
+      com.c.c(502617156715439076L).set(this, var1);
+   }
 }
+
+
+
+
 

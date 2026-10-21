@@ -1,46 +1,54 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.XL;
-import com.XW;
-import com.du_0;
-import com.gw_0;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class SM
-implements ActionListener {
-    final XW r;
-    final XL g;
+class SM implements ActionListener {
+   final XW r;
+   final XL g;
 
-    SM(XL xL2, XW xW2) {
-        this.g = xL2;
-        this.r = xW2;
-    }
+   SM(XL var1, XW var2) {
+      this.g = var1;
+      this.r = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        boolean bl = du_0.W();
-        for (int i2 = 0; i2 < XL.I(this.g); ++i2) {
-            XL xL2 = this.g;
-            if (!bl) {
-                if (XL.X(xL2).size() > 0) {
-                    int n10 = gw_0.K(XL.X(this.g).size());
-                    Point point = (Point)XL.X(this.g).remove(n10);
-                    int[] nArray = XL.Q(this.g)[point.x];
-                    int n11 = point.y;
-                    nArray[n11] = nArray[n11] + XL.K(this.g);
-                    this.r.repaint();
-                    if (!bl) continue;
-                }
-                xL2 = this.g;
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      boolean var10000 = com.Du_2.W();
+      int var3 = 0;
+      boolean var2 = var10000;
+
+      while (var3 < XL.I(this.g)) {
+         label21: {
+            XL var6 = this.g;
+            if (!var2) {
+               if (XL.X(this.g).size() > 0) {
+                  int var4 = Gw_2.K(XL.X(this.g).size());
+                  Point var5 = (Point)XL.X(this.g).remove(var4);
+                  int[] var7 = XL.Q(this.g)[var5.x];
+                  var7[var5.y] = var7[var5.y] + XL.K(this.g);
+                  this.r.repaint();
+                  if (!var2) {
+                     break label21;
+                  }
+               }
+
+               var6 = this.g;
             }
-            XL.h(xL2).Y();
-            if (!bl) continue;
-        }
-    }
+
+            XL.h(var6).Y();
+         }
+
+         var3++;
+         if (var2) {
+            break;
+         }
+      }
+   }
 }
+
+
+
+
 

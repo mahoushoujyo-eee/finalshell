@@ -1,79 +1,79 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class B3
-extends PrintStream {
-    HashSet K = new HashSet();
-    StringBuffer k = new StringBuffer();
-    private static final long a;
+public class B3 extends PrintStream {
+   HashSet K = new HashSet();
+   StringBuffer k = new StringBuffer();
+   private static final long a;
 
-    public B3(OutputStream outputStream) {
-        super(outputStream);
-    }
+   public B3(OutputStream var1) {
+      super(var1);
+   }
 
-    @Override
-    public void write(byte[] byArray, int n10, int n11) {
-        super.write(byArray, n10, n11);
-        this.d(new String(byArray, n10, n11));
-    }
+   @Override
+   public void write(byte[] var1, int var2, int var3) {
+      super.write(var1, var2, var3);
+      this.d(new String(var1, var2, var3));
+   }
 
-    /*
-     * Handled impossible loop by adding 'first' condition
-     * Enabled aggressive block sorting
-     */
-    private void d(String string) {
-        B3 b3;
-        boolean bl;
-        block5: {
-            block6: {
-                bl = cn_1.B();
-                b3 = this;
-                if (bl) break block5;
-                if (b3.k == null) break block6;
-                b3 = this;
-                if (bl) break block5;
-                if (b3.k.length() < (int)a) {
-                    this.k.append(string);
-                }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   private void d(String var1) {
+      boolean var2;
+      B3 var10000;
+      var2 = cN_3.B();
+      var10000 = this;
+      label21:
+      if (!var2) {
+         if (this.k != null) {
+            var10000 = this;
+            if (var2) {
+               break label21;
             }
-            b3 = this;
-        }
-        Iterator iterator = b3.K.iterator();
-        boolean bl2 = true;
-        do {
-            if (bl2 && !(bl2 = false) && !bl) continue;
-            CH cH = (CH)iterator.next();
-            cH.d(string);
-        } while (iterator.hasNext());
-    }
 
-    public void W(CH cH) {
-        this.K.add(cH);
-    }
+            if (this.k.length() < (int)a) {
+               this.k.append(var1);
+            }
+         }
 
-    public void j(CH cH) {
-        this.K.remove(cH);
-    }
+         var10000 = this;
+      }
 
-    public StringBuffer C() {
-        return this.k;
-    }
+      Iterator var4 = var10000.K.iterator();
+      if (var2 || var4.hasNext()) {
+         do {
+            CH var3 = (CH)var4.next();
+            var3.d(var1);
+         } while (var4.hasNext());
+      }
+   }
 
-    public void p(StringBuffer stringBuffer) {
-        this.k = stringBuffer;
-    }
+   public void W(CH var1) {
+      this.K.add(var1);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 3432898752115771358L;
-        a = 0xC17E512E0DBE20CEL ^ l2;
-    }
+   public void j(CH var1) {
+      this.K.remove(var1);
+   }
+
+   public StringBuffer C() {
+      return this.k;
+   }
+
+   public void p(StringBuffer var1) {
+      this.k = var1;
+   }
+
+   static {
+      long var0 = 3432898752115771358L;
+      long var10002 = -4504073319083007794L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

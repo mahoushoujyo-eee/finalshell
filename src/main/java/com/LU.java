@@ -1,47 +1,41 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.HQ;
-import com.LP;
-import com.el_1;
-import com.l9_0;
-import com.og_2;
 import java.awt.Component;
 import java.awt.Point;
 import javax.swing.JPopupMenu;
 
-public class LU
-extends LP
-implements HQ {
-    public LU(og_2 og_22) {
-        super(og_22);
-    }
+public class LU extends com.LP implements HQ {
+   public LU(com.og_4 var1) {
+      super(var1);
+   }
 
-    @Override
-    public void d(boolean bl) {
-    }
+   @Override
+   public void d(boolean var1) {
+   }
 
-    @Override
-    public void F(int n10) {
-    }
+   @Override
+   public void F(int var1) {
+   }
 
-    @Override
-    public void v(boolean bl) {
-    }
+   @Override
+   public void v(boolean var1) {
+   }
 
-    @Override
-    public void b(el_1 el_12) {
-    }
+   @Override
+   public void b(eL_3 var1) {
+   }
 
-    @Override
-    public void v(l9_0 l9_02) {
-    }
+   @Override
+   public void v(com.l9_2 var1) {
+   }
 
-    @Override
-    public Point F(JPopupMenu jPopupMenu, Component component, int n10, int n11) {
-        return new Point(n10, n11);
-    }
+   @Override
+   public Point F(JPopupMenu var1, Component var2, int var3, int var4) {
+      return new Point(var3, var4);
+   }
 }
+
+
+
+
 

@@ -1,16 +1,15 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.NZ;
-import com.QT;
-
-final class NX
-extends NZ {
-    @Override
-    public void r(QT qT, boolean bl) {
-        qT.V(bl);
-    }
+class NX extends com.NZ {
+   @Override
+   public void r(com.QT var1, boolean var2) {
+      var1.V(var2);
+   }
 }
+
+
+
+
+
+
 

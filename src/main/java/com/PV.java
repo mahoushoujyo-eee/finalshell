@@ -1,84 +1,91 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.nx_2;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import java.awt.Color;
 import java.io.Serializable;
 
-@XStreamAlias(value="GradientColorData")
-public class PV
-implements Serializable,
-Cloneable {
-    @XStreamAsAttribute
-    private float B;
-    @XStreamAsAttribute
-    private Color v;
+@XStreamAlias("GradientColorData")
+public class PV implements Serializable, Cloneable {
+   @XStreamAsAttribute
+   private float B;
+   @XStreamAsAttribute
+   private Color v;
 
-    public PV() {
-        this.B = 0.0f;
-        this.v = Color.WHITE;
-    }
+   public PV() {
+      this.B = 0.0F;
+      this.v = Color.WHITE;
+   }
 
-    public PV(float f10, Color color) {
-        this.B = f10;
-        this.v = color;
-    }
+   public PV(float var1, Color var2) {
+      this.B = var1;
+      this.v = var2;
+   }
 
-    public Color N() {
-        return this.v;
-    }
+   public Color N() {
+      return this.v;
+   }
 
-    public void C(Color color) {
-        this.v = color;
-    }
+   public void C(Color var1) {
+      this.v = var1;
+   }
 
-    public float I() {
-        return this.B;
-    }
+   public float I() {
+      return this.B;
+   }
 
-    public void P(float f10) {
-        this.B = f10;
-    }
+   public void P(float var1) {
+      this.B = var1;
+   }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public boolean equals(Object object) {
-        int n10 = nx_2.R();
-        Object object2 = object;
-        if (n10 == 0) {
-            if (object2 == null) return false;
-            object2 = object;
-        }
-        if (n10 == 0) {
-            if (!(object2 instanceof PV)) {
-                return false;
-            }
-            object2 = object;
-        }
-        PV pV2 = (PV)object2;
-        boolean bl = Float.compare(this.I(), pV2.I());
-        if (n10 == 0) {
-            if (bl) return false;
-            bl = this.N().equals(pV2.N());
-        }
-        if (n10 != 0) return bl;
-        if (!bl) return false;
-        return true;
-    }
+   @Override
+   public boolean equals(Object var1) {
+      int var2 = nx_4.R();
+      Object var10000 = var1;
+      if (var2 == 0) {
+         if (var1 == null) {
+            return false;
+         }
 
-    public PV H() {
-        return new PV(this.B, FN.q(this.v));
-    }
+         var10000 = var1;
+      }
 
-    public Object clone() throws CloneNotSupportedException {
-        return this.H();
-    }
+      if (var2 == 0) {
+         if (!(var10000 instanceof PV)) {
+            return false;
+         }
+
+         var10000 = var1;
+      }
+
+      PV var3 = (PV)var10000;
+      int var4 = Float.compare(this.I(), var3.I());
+      if (var2 == 0) {
+         if (var4 != 0) {
+            return (boolean)0;
+         }
+
+         var4 = this.N().equals(var3.N());
+      }
+
+      if (var2 != 0) {
+         return (boolean)var4;
+      } else {
+         return (boolean)(var4 != 0 ? 1 : 0);
+      }
+   }
+
+   public PV H() {
+      return new PV(this.B, com.FN.q(this.v));
+   }
+
+   @Override
+   public Object clone() throws CloneNotSupportedException {
+      return this.H();
+   }
 }
+
+
+
+
 

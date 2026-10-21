@@ -1,188 +1,255 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import javax.swing.JTextField;
 
 public class JJ {
-    private static final String a;
-    private static final long b;
+   private static final String a;
+   private static final long b;
 
-    public static int N(String string) throws Exception {
-        int n10;
-        block22: {
-            int n11;
-            block23: {
-                String[] stringArray;
-                block20: {
-                    int n12;
-                    block21: {
-                        int n13;
-                        int n14;
-                        block18: {
-                            block19: {
-                                block16: {
-                                    block17: {
-                                        n12 = 1;
-                                        n11 = 0;
-                                        stringArray = F8.y();
-                                        try {
-                                            n11 = Integer.parseInt(string);
-                                        }
-                                        catch (Exception exception) {
-                                            n12 = 0;
-                                        }
-                                        try {
-                                            try {
-                                                n14 = n11;
-                                                if (stringArray != null) break block16;
-                                                if (n14 >= 1) break block17;
-                                            }
-                                            catch (Exception exception) {
-                                                throw JJ.a(exception);
-                                            }
-                                            n14 = 1;
-                                            break block16;
-                                        }
-                                        catch (Exception exception) {
-                                            throw JJ.a(exception);
-                                        }
-                                    }
-                                    n14 = 0;
-                                }
-                                try {
-                                    try {
-                                        n13 = n11;
-                                        if (stringArray != null) break block18;
-                                        if (n13 <= (int)b) break block19;
-                                    }
-                                    catch (Exception exception) {
-                                        throw JJ.a(exception);
-                                    }
-                                    n13 = 1;
-                                    break block18;
-                                }
-                                catch (Exception exception) {
-                                    throw JJ.a(exception);
-                                }
-                            }
-                            n13 = 0;
-                        }
-                        try {
-                            n10 = n14 | n13;
-                            if (stringArray != null) break block20;
-                            if (n10 == 0) break block21;
-                        }
-                        catch (Exception exception) {
-                            throw JJ.a(exception);
-                        }
-                        n12 = 0;
-                    }
-                    n10 = n12;
-                }
-                try {
-                    try {
-                        if (stringArray != null) break block22;
-                        if (n10 != 0) break block23;
-                    }
-                    catch (Exception exception) {
-                        throw JJ.a(exception);
-                    }
-                    throw new Exception(a);
-                }
-                catch (Exception exception) {
-                    throw JJ.a(exception);
-                }
+   public static int N(String param0) throws Exception {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic F8.y ()[Ljava/lang/String;
+      // 03: bipush 1
+      // 04: istore 2
+      // 05: bipush 0
+      // 06: istore 3
+      // 07: astore 1
+      // 08: aload 0
+      // 09: invokestatic java/lang/Integer.parseInt (Ljava/lang/String;)I
+      // 0c: istore 3
+      // 0d: goto 14
+      // 10: astore 4
+      // 12: bipush 0
+      // 13: istore 2
+      // 14: iload 3
+      // 15: aload 1
+      // 16: ifnonnull 2c
+      // 19: bipush 1
+      // 1a: if_icmpge 2f
+      // 1d: goto 24
+      // 20: invokestatic JJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 23: athrow
+      // 24: bipush 1
+      // 25: goto 2c
+      // 28: invokestatic JJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2b: athrow
+      // 2c: goto 30
+      // 2f: bipush 0
+      // 30: iload 3
+      // 31: aload 1
+      // 32: ifnonnull 4b
+      // 35: getstatic JJ.b J
+      // 38: l2i
+      // 39: if_icmple 4e
+      // 3c: goto 43
+      // 3f: invokestatic JJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 42: athrow
+      // 43: bipush 1
+      // 44: goto 4b
+      // 47: invokestatic JJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 4a: athrow
+      // 4b: goto 4f
+      // 4e: bipush 0
+      // 4f: ior
+      // 50: aload 1
+      // 51: ifnonnull 61
+      // 54: ifeq 60
+      // 57: goto 5e
+      // 5a: invokestatic JJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 5d: athrow
+      // 5e: bipush 0
+      // 5f: istore 2
+      // 60: iload 2
+      // 61: aload 1
+      // 62: ifnonnull 7f
+      // 65: ifne 7e
+      // 68: goto 6f
+      // 6b: invokestatic JJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 6e: athrow
+      // 6f: new java/lang/Exception
+      // 72: dup
+      // 73: getstatic JJ.a Ljava/lang/String;
+      // 76: invokespecial java/lang/Exception.<init> (Ljava/lang/String;)V
+      // 79: athrow
+      // 7a: invokestatic JJ.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 7d: athrow
+      // 7e: iload 3
+      // 7f: ireturn
+   }
+
+   public static void n(JTextField var0) {
+      var0.setText(var0.getText().trim());
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "窼厏桭弖锵讐8".toCharArray();
+      int var10004 = var10003.length;
+      int var2 = 0;
+      byte var13 = 90;
+      char[] var10002 = var10003;
+      int var4 = var10004;
+      char[] var17;
+      byte var21;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var17 = var10003;
+         var10005 = var2;
+         char var10008 = var10003[var2];
+         var10007 = 90;
+         var10006 = var10008;
+         switch (var2 % 7) {
+            case 0:
+               var21 = 9;
+               break;
+            case 1:
+               var21 = 54;
+               break;
+            case 2:
+               var21 = 11;
+               break;
+            case 3:
+               var21 = 67;
+               break;
+            case 4:
+               var21 = 118;
+               break;
+            case 5:
+               var21 = 37;
+               break;
+            default:
+               var21 = 67;
+         }
+      } else {
+         var13 = 90;
+         var4 = var10004;
+         if (var10004 <= var2) {
+            String var16 = new String(var10003).intern();
+            byte var8 = -1;
+            a = var16;
+            long var3 = 753486037508985668L;
+            long var12 = -5329357860416416956L ^ var3;
+            var8 = -1;
+            b = var12;
+            return;
+         }
+
+         var17 = var10003;
+         var10005 = var2;
+         char var22 = var10003[var2];
+         var10007 = 90;
+         var10006 = var22;
+         switch (var2 % 7) {
+            case 0:
+               var21 = 9;
+               break;
+            case 1:
+               var21 = 54;
+               break;
+            case 2:
+               var21 = 11;
+               break;
+            case 3:
+               var21 = 67;
+               break;
+            case 4:
+               var21 = 118;
+               break;
+            case 5:
+               var21 = 37;
+               break;
+            default:
+               var21 = 67;
+         }
+      }
+
+      while (true) {
+         var17[var10005] = (char)(var10006 ^ var10007 ^ var21);
+         var2++;
+         if (var13 == 0) {
+            var17 = var10002;
+            var10005 = var13;
+            char var24 = var10002[var13];
+            var10007 = var13;
+            var10006 = var24;
+            switch (var2 % 7) {
+               case 0:
+                  var21 = 9;
+                  break;
+               case 1:
+                  var21 = 54;
+                  break;
+               case 2:
+                  var21 = 11;
+                  break;
+               case 3:
+                  var21 = 67;
+                  break;
+               case 4:
+                  var21 = 118;
+                  break;
+               case 5:
+                  var21 = 37;
+                  break;
+               default:
+                  var21 = 67;
             }
-            n10 = n11;
-        }
-        return n10;
-    }
-
-    public static void n(JTextField jTextField) {
-        jTextField.setText(jTextField.getText().trim());
-    }
-
-    private static Exception a(Exception exception) {
-        return exception;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u7abc\u538f\u686d\u5f16\u9535\u8b908".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 90;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+         } else {
+            if (var4 <= var2) {
+               String var15 = new String(var10002).intern();
+               byte var6 = -1;
+               a = var15;
+               long var0 = 753486037508985668L;
+               long var11 = -5329357860416416956L ^ var0;
+               var6 = -1;
+               b = var11;
+               return;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 9;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 54;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 11;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 67;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 118;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 37;
-                            break;
-                        }
-                        default: {
-                            n17 = 67;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        long l2 = 753486037508985668L;
-        b = 0xB60A514318F19344L ^ l2;
-    }
+
+            var17 = var10002;
+            var10005 = var2;
+            char var23 = var10002[var2];
+            var10007 = var13;
+            var10006 = var23;
+            switch (var2 % 7) {
+               case 0:
+                  var21 = 9;
+                  break;
+               case 1:
+                  var21 = 54;
+                  break;
+               case 2:
+                  var21 = 11;
+                  break;
+               case 3:
+                  var21 = 67;
+                  break;
+               case 4:
+                  var21 = 118;
+                  break;
+               case 5:
+                  var21 = 37;
+                  break;
+               default:
+                  var21 = 67;
+            }
+         }
+      }
+   }
 }
+
+
+
+
 

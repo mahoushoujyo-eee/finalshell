@@ -1,42 +1,50 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import java.awt.Component;
 import java.awt.Graphics;
 import javax.swing.JScrollPane;
 import javax.swing.JViewport;
 
-class QU
-extends JScrollPane {
-    QU(Component component, int n10, int n11) {
-        super(component, n10, n11);
-    }
+class QU extends JScrollPane {
+   QU(Component var1, int var2, int var3) {
+      super(var1, var2, var3);
+   }
 
-    @Override
-    public void paint(Graphics graphics) {
-        block4: {
-            Component[] componentArray = this.getComponents();
-            ky_2[] ky_2Array = yt_1.c();
-            Component[] componentArray2 = componentArray;
-            int n10 = componentArray2.length;
-            int n11 = 0;
-            while (n11 < n10) {
-                Component component = componentArray2[n11];
-                if (ky_2Array != null) {
-                    if (ky_2Array != null) {
-                        if (component instanceof JViewport) {
-                            JViewport jViewport = (JViewport)component;
-                            jViewport.setOpaque(false);
-                        }
-                        ++n11;
-                    }
-                    if (ky_2Array != null) continue;
-                }
-                break block4;
+   @Override
+   public void paint(Graphics var1) {
+      com.ky_4[] var10000 = yT_3.c();
+      Component[] var3 = this.getComponents();
+      com.ky_4[] var2 = var10000;
+      Component[] var4 = var3;
+      int var5 = var3.length;
+      int var6 = 0;
+
+      while (true) {
+         if (var6 < var5) {
+            Component var7 = var4[var6];
+            if (var2 == null) {
+               break;
             }
-            super.paint(graphics);
-        }
-    }
+
+            if (var2 != null) {
+               if (var7 instanceof JViewport) {
+                  JViewport var8 = (JViewport)var7;
+                  var8.setOpaque(false);
+               }
+
+               var6++;
+            }
+
+            if (var2 != null) {
+               continue;
+            }
+         }
+
+         super.paint(var1);
+         break;
+      }
+   }
 }
+
+
+
+
 

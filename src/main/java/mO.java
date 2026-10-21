@@ -1,25 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.io.IOException;
 
-class mO
-implements Runnable {
-    final yt_1 j;
+class mO implements Runnable {
+   final yT_3 j;
 
-    mO(yt_1 yt_12) {
-        this.j = yt_12;
-    }
+   mO(yT_3 var1) {
+      this.j = var1;
+   }
 
-    @Override
-    public void run() {
-        try {
-            this.j.yN = new ca_2();
-        }
-        catch (IOException iOException) {
-            iOException.printStackTrace();
-        }
-    }
+   @Override
+   public void run() {
+      try {
+         com.c.c(581577507203115864L).set(com.c.c(157811870559881943L).get(this), new ca_4());
+      } catch (IOException var2) {
+         var2.printStackTrace();
+      }
+   }
 }
+
+
+
+
 

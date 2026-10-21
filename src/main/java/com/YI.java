@@ -1,25 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.YO;
-import com.i2_0;
 import java.awt.ComponentOrientation;
 
-class YI
-extends YO {
-    YI() {
-    }
-
-    @Override
-    public void Z(String string, String string2) {
-        ComponentOrientation componentOrientation = ComponentOrientation.getOrientation(i2_0.Z(string));
-        ComponentOrientation componentOrientation2 = ComponentOrientation.getOrientation(i2_0.Z(string2));
-        if (componentOrientation.isLeftToRight() != componentOrientation2.isLeftToRight()) {
-            FN.D();
-        }
-    }
+class YI extends com.YO {
+   @Override
+   public void Z(String var1, String var2) {
+      ComponentOrientation var3 = ComponentOrientation.getOrientation(i2_2.Z(var1));
+      ComponentOrientation var4 = ComponentOrientation.getOrientation(i2_2.Z(var2));
+      if (var3.isLeftToRight() != var4.isLeftToRight()) {
+         com.FN.D();
+      }
+   }
 }
+
+
+
+
 

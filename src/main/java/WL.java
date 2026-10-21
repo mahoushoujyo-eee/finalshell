@@ -1,134 +1,210 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class WL
-implements PropertyChangeListener {
-    final ux_0 m;
-    private static final long[] a;
-    private static final Long[] b;
+class WL implements PropertyChangeListener {
+   final Ux_2 m;
+   private static final long[] a;
+   private static final Long[] b;
 
-    WL(ux_0 ux_02) {
-        this.m = ux_02;
-    }
+   WL(Ux_2 var1) {
+      this.m = var1;
+   }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent propertyChangeEvent) {
-        block24: {
-            kj_0 kj_02;
-            long l2;
-            String[] stringArray;
-            block25: {
-                int n10;
-                block23: {
-                    long l3 = System.currentTimeMillis() - this.m.h.hQ;
-                    stringArray = F8.y();
-                    long l4 = l3 - WL.a(10515, 2619215024826120798L);
-                    l2 = l4 == 0L ? 0 : (l4 < 0L ? -1 : 1);
-                    if (stringArray != null) break block23;
-                    if (l2 <= 0) break block24;
-                    long l5 = this.m.h.hQ - WL.a(12161, 6512755223826758861L);
-                    l2 = l5 == 0L ? 0 : (l5 < 0L ? -1 : 1);
-                }
-                if (stringArray != null) break block25;
-                if (l2 <= 0) break block24;
-                try {
-                    n10 = (Integer)this.m.h.d.getDividerLocation();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                l2 = ((aE)this.m.h.d).getHeight() - n10 - this.m.h.L;
-            }
-            long l6 = l2;
-            try {
-                kj_02 = (kj_0)this.m.h.P.i();
-            }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-            if (stringArray == null) {
-                boolean bl;
-                try {
-                    bl = (Boolean)kj_02.l();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                if (bl) {
-                    Object object;
-                    try {
-                        object = this.m.h.P.i();
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    try {
-                        object.G((int)l6);
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    try {
-                        kj_02 = (kj_0)this.m.h.P.Y();
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                }
-            } else {
-                Object object;
-                try {
-                    kj_02.G((int)l6);
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                try {
-                    object = yt_1.i();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                try {
-                    object.S();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-            }
-        }
-    }
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      String[] var10000 = F8.y();
+      long var3 = System.currentTimeMillis() - com.c.c(130882364772064219L).getLong(com.c.c(338897995870391143L).get(com.c.c(495603700922808760L).get(this)));
+      String[] var2 = var10000;
+      long var68;
+      int var15 = (var68 = var3 - a(10515, 2619215024826120798L)) == 0L ? 0 : (var68 < 0L ? -1 : 1);
+      if (var2 == null) {
+         if (var15 <= 0) {
+            return;
+         }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 8953957269610244155L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\u00d9\u00dc\u00d3\u0013\u0013\u0099\u00ab\tX\u001b\u008a\u0082L\u0005R\u00ad";
-        int n11 = "\u00d9\u00dc\u00d3\u0013\u0013\u0099\u00ab\tX\u001b\u008a\u0082L\u0005R\u00ad".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Long[2];
-    }
+         long var69;
+         var15 = (
+                  var69 = com.c.c(130882364772064219L).getLong(com.c.c(338897995870391143L).get(com.c.c(495603700922808760L).get(this)))
+                     - a(12161, 6512755223826758861L)
+               )
+               == 0L
+            ? 0
+            : (var69 < 0L ? -1 : 1);
+      }
 
-    private static long a(int n10, long l2) {
-        int n11 = (n10 ^ (int)l2 ^ 0x534C) & Short.MAX_VALUE;
-        if (b[n11] == null) {
-            WL.b[n11] = a[n11] ^ l2;
-        }
-        return b[n11];
-    }
+      if (var2 == null) {
+         if (var15 <= 0) {
+            return;
+         }
+
+         int var16 = ((aE)com.c.c(132798821314429637L).get(com.c.c(338897995870391143L).get(com.c.c(495603700922808760L).get(this)))).getHeight();
+         Object var10001 = com.c.c(132798821314429637L).get(com.c.c(338897995870391143L).get(com.c.c(495603700922808760L).get(this)));
+         Object[] var10002 = com.c.f();
+         Method var10004 = com.c.d(608818074819783119L);
+         Object[] var10003 = var10002;
+         var10002 = (Object[])var10001;
+         var10001 = var10004;
+
+         try {
+            var34 = (Integer)var10001.invoke(var10002, var10003);
+         } catch (InvocationTargetException var14) {
+            throw var14.getTargetException();
+         }
+
+         var15 = var16 - var34 - com.c.c(515873310631527540L).getInt(com.c.c(338897995870391143L).get(com.c.c(495603700922808760L).get(this)));
+      }
+
+      int var5 = var15;
+      var10000 = (String[])com.c.c(395703699466617837L).get(com.c.c(338897995870391143L).get(com.c.c(495603700922808760L).get(this)));
+      Object[] var35 = com.c.f();
+      Method var61 = com.c.d(483219322811206313L);
+      Object[] var52 = var35;
+      var35 = var10000;
+      Method var18 = var61;
+
+      try {
+         var19 = (Kj_2)var18.invoke(var35, var52);
+      } catch (InvocationTargetException var13) {
+         throw var13.getTargetException();
+      }
+
+      if (var2 == null) {
+         var35 = com.c.f();
+         var61 = com.c.d(571514335693873067L);
+         var52 = var35;
+         Kj_2 var38 = var19;
+         Method var20 = var61;
+
+         try {
+            var21 = (Boolean)var20.invoke(var38, var52);
+         } catch (InvocationTargetException var12) {
+            throw var12.getTargetException();
+         }
+
+         if (!var21) {
+            return;
+         }
+
+         var10000 = (String[])com.c.c(395703699466617837L).get(com.c.c(338897995870391143L).get(com.c.c(495603700922808760L).get(this)));
+         var35 = com.c.f();
+         var61 = com.c.d(483219322811206313L);
+         var52 = var35;
+         var35 = var10000;
+         Method var23 = var61;
+
+         try {
+            var10000 = (String[])var23.invoke(var35, var52);
+         } catch (InvocationTargetException var11) {
+            throw var11.getTargetException();
+         }
+
+         var35 = com.c.a(var5);
+         var61 = com.c.d(364834420547747177L);
+         var52 = var35;
+         var35 = var10000;
+         Method var25 = var61;
+
+         try {
+            var25.invoke(var35, var52);
+         } catch (InvocationTargetException var10) {
+            throw var10.getTargetException();
+         }
+
+         var10000 = (String[])com.c.c(395703699466617837L).get(com.c.c(338897995870391143L).get(com.c.c(495603700922808760L).get(this)));
+         var35 = com.c.f();
+         var61 = com.c.d(503550115260388056L);
+         var52 = var35;
+         var35 = var10000;
+         Method var27 = var61;
+
+         try {
+            var19 = (Kj_2)var27.invoke(var35, var52);
+         } catch (InvocationTargetException var9) {
+            throw var9.getTargetException();
+         }
+      }
+
+      var35 = com.c.a(var5);
+      var61 = com.c.d(364834420547747177L);
+      var52 = var35;
+      Kj_2 var46 = var19;
+      Method var28 = var61;
+
+      try {
+         var28.invoke(var46, var52);
+      } catch (InvocationTargetException var8) {
+         throw var8.getTargetException();
+      }
+
+      Object[] var29 = com.c.f();
+      Method var30 = com.c.d(270389152141252877L);
+      var52 = var29;
+      var35 = null;
+
+      try {
+         var10000 = (String[])var30.invoke(var35, var52);
+      } catch (InvocationTargetException var7) {
+         throw var7.getTargetException();
+      }
+
+      var35 = com.c.f();
+      var61 = com.c.d(578864097947885485L);
+      var52 = var35;
+      var35 = var10000;
+      Method var32 = var61;
+
+      try {
+         var32.invoke(var35, var52);
+      } catch (InvocationTargetException var6) {
+         throw var6.getTargetException();
+      }
+   }
+
+   static {
+      long var0 = 8953957269610244155L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "ÙÜÓ\u0013\u0013\u0099«\tX\u001b\u008a\u0082L\u0005R\u00ad";
+      int var5 = "ÙÜÓ\u0013\u0013\u0099«\tX\u001b\u008a\u0082L\u0005R\u00ad".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Long[2];
+   }
+
+   private static long a(int var0, long var1) {
+      int var3 = (var0 ^ (int)var1 ^ 21324) & 32767;
+      if (b[var3] == null) {
+         b[var3] = a[var3] ^ var1;
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

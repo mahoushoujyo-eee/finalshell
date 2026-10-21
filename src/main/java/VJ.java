@@ -1,44 +1,53 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.awt.Component;
 import java.awt.Graphics;
 import javax.swing.JScrollPane;
 import javax.swing.JViewport;
 
-class VJ
-extends JScrollPane {
-    final F6 G;
+class VJ extends JScrollPane {
+   final F6 G;
 
-    VJ(F6 f62, Component component) {
-        this.G = f62;
-        super(component);
-    }
+   VJ(F6 var1, Component var2) {
+      super(var2);
+      this.G = var1;
+   }
 
-    @Override
-    public void paint(Graphics graphics) {
-        block4: {
-            Component[] componentArray = this.getComponents();
-            boolean bl = F6.i();
-            Component[] componentArray2 = componentArray;
-            int n10 = componentArray2.length;
-            int n11 = 0;
-            while (n11 < n10) {
-                Component component = componentArray2[n11];
-                if (bl) {
-                    if (bl) {
-                        if (component instanceof JViewport) {
-                            JViewport jViewport = (JViewport)component;
-                            jViewport.setOpaque(false);
-                        }
-                        ++n11;
-                    }
-                    if (bl) continue;
-                }
-                break block4;
+   @Override
+   public void paint(Graphics var1) {
+      boolean var10000 = F6.i();
+      Component[] var3 = this.getComponents();
+      boolean var2 = var10000;
+      Component[] var4 = var3;
+      int var5 = var3.length;
+      int var6 = 0;
+
+      while (true) {
+         if (var6 < var5) {
+            Component var7 = var4[var6];
+            if (!var2) {
+               break;
             }
-            super.paint(graphics);
-        }
-    }
+
+            if (var2) {
+               if (var7 instanceof JViewport) {
+                  JViewport var8 = (JViewport)var7;
+                  var8.setOpaque(false);
+               }
+
+               var6++;
+            }
+
+            if (var2) {
+               continue;
+            }
+         }
+
+         super.paint(var1);
+         break;
+      }
+   }
 }
+
+
+
+
 

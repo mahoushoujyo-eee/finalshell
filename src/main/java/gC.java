@@ -1,52 +1,66 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Graphics;
 import javax.swing.JScrollPane;
 
-class gC
-extends JScrollPane {
-    private static final long[] a;
-    private static final Integer[] b;
+class gC extends JScrollPane {
+   private static final long[] a;
+   private static final Integer[] b;
 
-    gC(Component component) {
-        super(component);
-    }
+   gC(Component var1) {
+      super(var1);
+   }
 
-    @Override
-    public void paint(Graphics graphics) {
-        super.paint(graphics);
-        graphics.setColor(new Color(gC.a(9027, 7207630479965414036L), gC.a(17656, 7074004464367273261L), gC.a(17656, 7074004464367273261L), gC.a(10517, 6162690979598231747L)));
-        graphics.drawRect(0, 0, this.getWidth() - 1, this.getHeight() - 1);
-    }
+   @Override
+   public void paint(Graphics var1) {
+      super.paint(var1);
+      var1.setColor(new Color(a(9027, 7207630479965414036L), a(17656, 7074004464367273261L), a(17656, 7074004464367273261L), a(10517, 6162690979598231747L)));
+      var1.drawRect(0, 0, this.getWidth() - 1, this.getHeight() - 1);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 2328232635136771963L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "J\u00e3K\u00de\u00ddQe'h\u0081\u0085Zh\u00b8o\u00c0l\u00c7R\u00c4\u00a5\u00ef\u0002\u009e";
-        int n11 = "J\u00e3K\u00de\u00ddQe'h\u0081\u0085Zh\u00b8o\u00c0l\u00c7R\u00c4\u00a5\u00ef\u0002\u009e".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[3];
-    }
+   static {
+      long var0 = 2328232635136771963L;
+      long[] var6 = new long[3];
+      int var3 = 0;
+      String var4 = "JãKÞÝQe'h\u0081\u0085Zh¸oÀlÇRÄ¥ï\u0002\u009e";
+      int var5 = "JãKÞÝQe'h\u0081\u0085Zh¸oÀlÇRÄ¥ï\u0002\u009e".length();
+      byte var2 = 0;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x41D7;
-        if (b[n11] == null) {
-            gC.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[3];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 16855;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

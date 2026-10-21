@@ -1,26 +1,25 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class TJ
-implements Runnable {
-    final bg_0 b;
-    private final String i;
-    private final int M;
+class TJ implements Runnable {
+   final Bg_2 b;
+   private final String i;
+   private final int M;
 
-    TJ(bg_0 bg_02, String string, int n10) {
-        this.b = bg_02;
-        this.i = string;
-        this.M = n10;
-    }
+   TJ(Bg_2 var1, String var2, int var3) {
+      this.b = var1;
+      this.i = var2;
+      this.M = var3;
+   }
 
-    @Override
-    public void run() {
-        try {
-            new n6(this.i, this.M);
-        }
-        catch (Exception exception) {
-            exception.printStackTrace();
-        }
-    }
+   @Override
+   public void run() {
+      try {
+         new n6(this.i, this.M);
+      } catch (Exception var2) {
+         var2.printStackTrace();
+      }
+   }
 }
+
+
+
+
 

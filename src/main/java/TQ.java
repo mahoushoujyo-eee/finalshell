@@ -1,116 +1,130 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.util.Iterator;
-import java.util.LinkedList;
 
-public class TQ
-implements Iterator {
-    private Iterator j;
-    private static final String a;
+public class TQ implements Iterator {
+   private Iterator j;
+   private static final String a;
 
-    /*
-     * Unable to fully structure code
-     */
-    public TQ(Iterator var1_1) {
-        v0 = qm_0.J();
-        super();
-        this.j = null;
-        var3_2 = new LinkedList<E>();
-        var2_3 = v0;
-        try {
-            if (var2_3 == null) lbl-1000:
-            // 2 sources
+   public TQ(Iterator param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic Qm_2.J ()[Lcom/ky_4;
+      // 03: aload 0
+      // 04: invokespecial java/lang/Object.<init> ()V
+      // 07: aload 0
+      // 08: aconst_null
+      // 09: putfield TQ.j Ljava/util/Iterator;
+      // 0c: new java/util/LinkedList
+      // 0f: dup
+      // 10: invokespecial java/util/LinkedList.<init> ()V
+      // 13: astore 3
+      // 14: astore 2
+      // 15: aload 2
+      // 16: ifnonnull 2b
+      // 19: aload 3
+      // 1a: aload 1
+      // 1b: invokeinterface java/util/Iterator.next ()Ljava/lang/Object; 1
+      // 20: invokevirtual java/util/LinkedList.add (Ljava/lang/Object;)Z
+      // 23: pop
+      // 24: goto 2b
+      // 27: invokestatic TQ.a (Ljava/lang/UnsupportedOperationException;)Ljava/lang/UnsupportedOperationException;
+      // 2a: athrow
+      // 2b: aload 1
+      // 2c: invokeinterface java/util/Iterator.hasNext ()Z 1
+      // 31: ifne 19
+      // 34: aload 0
+      // 35: aload 3
+      // 36: invokevirtual java/util/LinkedList.iterator ()Ljava/util/Iterator;
+      // 39: putfield TQ.j Ljava/util/Iterator;
+      // 3c: return
+   }
 
-            {
-                while (true) {
-                    var3_2.add(var1_1.next());
-                    continue;
-                    break;
-                }
+   @Override
+   public boolean hasNext() {
+      return this.j.hasNext();
+   }
+
+   @Override
+   public void remove() {
+      throw new UnsupportedOperationException(a);
+   }
+
+   @Override
+   public Object next() {
+      return this.j.next();
+   }
+
+   private static UnsupportedOperationException a(UnsupportedOperationException var0) {
+      return var0;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "(Gs?\f=\u0012\\N:>I5\u0005Q@t Ut\b\bJh-X;\u0013R".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 36;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 36;
+         var10006 = var0;
+      } else {
+         var6 = 36;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 36;
+         var10006 = var0;
+      }
+
+      while (true) {
+         var10005[var10006] = (char)(var10005[var10006] ^ var10 ^ switch (var0 % 7) {
+            case 0 -> 88;
+            case 1 -> 11;
+            case 2 -> 62;
+            case 3 -> 104;
+            case 4 -> 8;
+            case 5 -> 112;
+            default -> 69;
+         });
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-        }
-        catch (UnsupportedOperationException v1) {
-            throw TQ.a(v1);
-        }
-        ** while (var1_1.hasNext())
-lbl16:
-        // 1 sources
 
-        this.j = var3_2.iterator();
-    }
-
-    @Override
-    public boolean hasNext() {
-        return this.j.hasNext();
-    }
-
-    @Override
-    public void remove() {
-        throw new UnsupportedOperationException(a);
-    }
-
-    public Object next() {
-        return this.j.next();
-    }
-
-    private static UnsupportedOperationException a(UnsupportedOperationException unsupportedOperationException) {
-        return unsupportedOperationException;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "(Gs?\f=\u0012\\N:>I5\u0005Q@t Ut\b\bJh-X;\u0013R".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 36;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ (switch (n12 % 7) {
-                        case 0 -> 88;
-                        case 1 -> 11;
-                        case 2 -> 62;
-                        case 3 -> 104;
-                        case 4 -> 8;
-                        case 5 -> 112;
-                        default -> 69;
-                    })));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

@@ -1,132 +1,103 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-public final class OK
-extends Enum {
-    public static final OK aboveLive;
-    public static final OK onLine;
-    public static final OK belowLine;
-    private static final /* synthetic */ OK[] e;
+public enum OK {
+   aboveLive, onLine, belowLine;
 
-    public static OK[] values() {
-        return (OK[])e.clone();
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var0 = new String[3];
+      int var4 = 0;
+      String var3 = "%3{#@\u0015\u0006)3\u0006(8[%Y<\t&4x:R\u0015\u000613";
+      int var5 = "%3{#@\u0015\u0006)3\u0006(8[%Y<\t&4x:R\u0015\u000613".length();
+      char var2 = '\t';
+      int var1 = -1;
 
-    public static OK valueOf(String string) {
-        return Enum.valueOf(OK.class, string);
-    }
+      while (true) {
+         char[] var10002;
+         label39: {
+            char[] var10003 = var3.substring(++var1, var1 + var2).toCharArray();
+            int var10004 = var10003.length;
+            int var6 = 0;
+            byte var13 = 35;
+            var10002 = var10003;
+            int var8 = var10004;
+            byte var16;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var16 = 35;
+               var10006 = var6;
+            } else {
+               var13 = 35;
+               var8 = var10004;
+               if (var10004 <= var6) {
+                  break label39;
+               }
 
-    /*
-     * WARNING - Possible parameter corruption
-     * WARNING - void declaration
-     */
-    private OK() {
-        void var2_-1;
-        void var1_-1;
-    }
-
-    private static /* synthetic */ OK[] x() {
-        return new OK[]{aboveLive, onLine, belowLine};
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block13: {
-            var0 = new String[3];
-            var4_1 = 0;
-            var3_2 = "%3{#@\u0015\u0006)3\u0006(8[%Y<\t&4x:R\u0015\u000613";
-            var5_3 = "%3{#@\u0015\u0006)3\u0006(8[%Y<\t&4x:R\u0015\u000613".length();
-            var2_4 = 9;
-            var1_5 = -1;
-lbl7:
-            // 2 sources
+               var10005 = var10003;
+               var16 = 35;
+               var10006 = var6;
+            }
 
             while (true) {
-                continue;
-                break;
-            }
-lbl9:
-            // 1 sources
+               char var28 = var10005[var10006];
+               byte var29;
+               switch (var6 % 7) {
+                  case 0:
+                     var29 = 100;
+                     break;
+                  case 1:
+                     var29 = 117;
+                     break;
+                  case 2:
+                     var29 = 52;
+                     break;
+                  case 3:
+                     var29 = 111;
+                     break;
+                  case 4:
+                     var29 = 20;
+                     break;
+                  case 5:
+                     var29 = 122;
+                     break;
+                  default:
+                     var29 = 76;
+               }
 
-            while (true) {
-                var0[var4_1++] = new String(v0).intern();
-                if ((var1_5 += var2_4) < var5_3) {
-                    var2_4 = var3_2.charAt(var1_5);
-                    ** continue;
-                }
-                break block13;
-                break;
-            }
-            v1 = ++var1_5;
-            v2 = var3_2.substring(v1, v1 + var2_4).toCharArray();
-            v3 = v2.length;
-            var6_6 = 0;
-            v4 = 35;
-            v5 = v2;
-            v6 = v3;
-            if (v3 > 1) ** GOTO lbl67
-            do {
-                v7 = v4;
-                v5 = v5;
-                v8 = v5;
-                v9 = v4;
-                v10 = var6_6;
-                while (true) {
-                    switch (var6_6 % 7) {
-                        case 0: {
-                            v11 = 100;
-                            break;
-                        }
-                        case 1: {
-                            v11 = 117;
-                            break;
-                        }
-                        case 2: {
-                            v11 = 52;
-                            break;
-                        }
-                        case 3: {
-                            v11 = 111;
-                            break;
-                        }
-                        case 4: {
-                            v11 = 20;
-                            break;
-                        }
-                        case 5: {
-                            v11 = 122;
-                            break;
-                        }
-                        default: {
-                            v11 = 76;
-                        }
-                    }
-                    v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                    ++var6_6;
-                    v4 = v7;
-                    if (v7 != 0) break;
-                    v7 = v4;
-                    v5 = v5;
-                    v10 = v4;
-                    v8 = v5;
-                    v9 = v4;
-                }
-lbl67:
-                // 2 sources
+               var10005[var10006] = (char)(var28 ^ var16 ^ var29);
+               var6++;
+               if (var13 == 0) {
+                  var10006 = var13;
+                  var10005 = var10002;
+                  var16 = var13;
+               } else {
+                  if (var8 <= var6) {
+                     break;
+                  }
 
-                v0 = v5;
-                v6 = v6;
-            } while (v6 > var6_6);
-            ** while (true)
-        }
-        OK.aboveLive = new OK(var0[2], 0);
-        OK.onLine = new OK(var0[1], 1);
-        OK.belowLine = new OK(var0[0], 2);
-        OK.e = OK.x();
-    }
+                  var10005 = var10002;
+                  var16 = var13;
+                  var10006 = var6;
+               }
+            }
+         }
+
+         String var15 = new String(var10002).intern();
+         byte var10 = -1;
+         var0[var4++] = var15;
+         if ((var1 += var2) >= var5) {
+            return;
+         }
+
+         var2 = var3.charAt(var1);
+      }
+   }
 }
+
+
+
+
+
 

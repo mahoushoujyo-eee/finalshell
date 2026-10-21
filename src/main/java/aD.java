@@ -1,7 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.Color;
 import java.awt.Composite;
 import java.awt.Font;
@@ -16,6 +12,7 @@ import java.awt.Rectangle;
 import java.awt.RenderingHints;
 import java.awt.Shape;
 import java.awt.Stroke;
+import java.awt.RenderingHints.Key;
 import java.awt.font.FontRenderContext;
 import java.awt.font.GlyphVector;
 import java.awt.geom.AffineTransform;
@@ -25,444 +22,458 @@ import java.awt.image.ImageObserver;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.RenderableImage;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.text.AttributedCharacterIterator;
 import java.util.Map;
 
-public class aD
-extends Graphics2D {
-    private final Graphics2D n;
-
-    public aD(Graphics2D graphics2D) {
-        this.n = graphics2D;
-    }
-
-    @Override
-    public Graphics create() {
-        return ((Graphics2D)this.n).create();
-    }
-
-    @Override
-    public Graphics create(int n10, int n11, int n12, int n13) {
-        return ((Graphics2D)this.n).create(n10, n11, n12, n13);
-    }
-
-    @Override
-    public Color getColor() {
-        return ((Graphics2D)this.n).getColor();
-    }
-
-    @Override
-    public void setColor(Color color) {
-        ((Graphics2D)this.n).setColor(color);
-    }
-
-    @Override
-    public void setPaintMode() {
-        ((Graphics2D)this.n).setPaintMode();
-    }
-
-    @Override
-    public void setXORMode(Color color) {
-        ((Graphics2D)this.n).setXORMode(color);
-    }
-
-    @Override
-    public Font getFont() {
-        return ((Graphics2D)this.n).getFont();
-    }
-
-    @Override
-    public void setFont(Font font) {
-        ((Graphics2D)this.n).setFont(font);
-    }
-
-    @Override
-    public FontMetrics getFontMetrics() {
-        return ((Graphics2D)this.n).getFontMetrics();
-    }
-
-    @Override
-    public FontMetrics getFontMetrics(Font font) {
-        return ((Graphics2D)this.n).getFontMetrics(font);
-    }
-
-    @Override
-    public Rectangle getClipBounds() {
-        return ((Graphics2D)this.n).getClipBounds();
-    }
-
-    @Override
-    public void clipRect(int n10, int n11, int n12, int n13) {
-        ((Graphics2D)this.n).clipRect(n10, n11, n12, n13);
-    }
-
-    @Override
-    public void setClip(int n10, int n11, int n12, int n13) {
-        ((Graphics2D)this.n).setClip(n10, n11, n12, n13);
-    }
-
-    @Override
-    public Shape getClip() {
-        return ((Graphics2D)this.n).getClip();
-    }
-
-    @Override
-    public void setClip(Shape shape) {
-        ((Graphics2D)this.n).setClip(shape);
-    }
-
-    @Override
-    public void copyArea(int n10, int n11, int n12, int n13, int n14, int n15) {
-        ((Graphics2D)this.n).copyArea(n10, n11, n12, n13, n14, n15);
-    }
-
-    @Override
-    public void drawLine(int n10, int n11, int n12, int n13) {
-        ((Graphics2D)this.n).drawLine(n10, n11, n12, n13);
-    }
-
-    @Override
-    public void fillRect(int n10, int n11, int n12, int n13) {
-        ((Graphics2D)this.n).fillRect(n10, n11, n12, n13);
-    }
-
-    @Override
-    public void drawRect(int n10, int n11, int n12, int n13) {
-        ((Graphics2D)this.n).drawRect(n10, n11, n12, n13);
-    }
-
-    @Override
-    public void clearRect(int n10, int n11, int n12, int n13) {
-        ((Graphics2D)this.n).clearRect(n10, n11, n12, n13);
-    }
-
-    @Override
-    public void drawRoundRect(int n10, int n11, int n12, int n13, int n14, int n15) {
-        ((Graphics2D)this.n).drawRoundRect(n10, n11, n12, n13, n14, n15);
-    }
-
-    @Override
-    public void fillRoundRect(int n10, int n11, int n12, int n13, int n14, int n15) {
-        ((Graphics2D)this.n).fillRoundRect(n10, n11, n12, n13, n14, n15);
-    }
-
-    @Override
-    public void drawOval(int n10, int n11, int n12, int n13) {
-        ((Graphics2D)this.n).drawOval(n10, n11, n12, n13);
-    }
-
-    @Override
-    public void fillOval(int n10, int n11, int n12, int n13) {
-        ((Graphics2D)this.n).fillOval(n10, n11, n12, n13);
-    }
-
-    @Override
-    public void drawArc(int n10, int n11, int n12, int n13, int n14, int n15) {
-        ((Graphics2D)this.n).drawArc(n10, n11, n12, n13, n14, n15);
-    }
-
-    @Override
-    public void fillArc(int n10, int n11, int n12, int n13, int n14, int n15) {
-        ((Graphics2D)this.n).fillArc(n10, n11, n12, n13, n14, n15);
-    }
-
-    @Override
-    public void drawPolyline(int[] nArray, int[] nArray2, int n10) {
-        ((Graphics2D)this.n).drawPolyline(nArray, nArray2, n10);
-    }
-
-    @Override
-    public void drawPolygon(int[] nArray, int[] nArray2, int n10) {
-        ((Graphics2D)this.n).drawPolygon(nArray, nArray2, n10);
-    }
-
-    @Override
-    public void drawPolygon(Polygon polygon) {
-        ((Graphics2D)this.n).drawPolygon(polygon);
-    }
-
-    @Override
-    public void fillPolygon(int[] nArray, int[] nArray2, int n10) {
-        ((Graphics2D)this.n).fillPolygon(nArray, nArray2, n10);
-    }
-
-    @Override
-    public void fillPolygon(Polygon polygon) {
-        ((Graphics2D)this.n).fillPolygon(polygon);
-    }
-
-    @Override
-    public void drawChars(char[] cArray, int n10, int n11, int n12, int n13) {
-        ((Graphics2D)this.n).drawChars(cArray, n10, n11, n12, n13);
-    }
-
-    @Override
-    public void drawBytes(byte[] byArray, int n10, int n11, int n12, int n13) {
-        ((Graphics2D)this.n).drawBytes(byArray, n10, n11, n12, n13);
-    }
-
-    @Override
-    public boolean drawImage(Image image, int n10, int n11, ImageObserver imageObserver) {
-        return ((Graphics2D)this.n).drawImage(image, n10, n11, imageObserver);
-    }
-
-    @Override
-    public boolean drawImage(Image image, int n10, int n11, int n12, int n13, ImageObserver imageObserver) {
-        return ((Graphics2D)this.n).drawImage(image, n10, n11, n12, n13, imageObserver);
-    }
-
-    @Override
-    public boolean drawImage(Image image, int n10, int n11, Color color, ImageObserver imageObserver) {
-        return ((Graphics2D)this.n).drawImage(image, n10, n11, color, imageObserver);
-    }
-
-    @Override
-    public boolean drawImage(Image image, int n10, int n11, int n12, int n13, Color color, ImageObserver imageObserver) {
-        return ((Graphics2D)this.n).drawImage(image, n10, n11, n12, n13, color, imageObserver);
-    }
-
-    @Override
-    public boolean drawImage(Image image, int n10, int n11, int n12, int n13, int n14, int n15, int n16, int n17, ImageObserver imageObserver) {
-        return ((Graphics2D)this.n).drawImage(image, n10, n11, n12, n13, n14, n15, n16, n17, imageObserver);
-    }
-
-    @Override
-    public boolean drawImage(Image image, int n10, int n11, int n12, int n13, int n14, int n15, int n16, int n17, Color color, ImageObserver imageObserver) {
-        return ((Graphics2D)this.n).drawImage(image, n10, n11, n12, n13, n14, n15, n16, n17, color, imageObserver);
-    }
-
-    @Override
-    public void dispose() {
-        ((Graphics2D)this.n).dispose();
-    }
-
-    @Override
-    public String toString() {
-        return ((Graphics2D)this.n).toString();
-    }
-
-    @Override
-    public Rectangle getClipRect() {
-        return ((Graphics2D)this.n).getClipRect();
-    }
-
-    @Override
-    public boolean hitClip(int n10, int n11, int n12, int n13) {
-        return ((Graphics2D)this.n).hitClip(n10, n11, n12, n13);
-    }
-
-    @Override
-    public Rectangle getClipBounds(Rectangle rectangle) {
-        return ((Graphics2D)this.n).getClipBounds(rectangle);
-    }
-
-    @Override
-    public void draw3DRect(int n10, int n11, int n12, int n13, boolean bl) {
-        ((Graphics2D)this.n).draw3DRect(n10, n11, n12, n13, bl);
-    }
-
-    @Override
-    public void fill3DRect(int n10, int n11, int n12, int n13, boolean bl) {
-        ((Graphics2D)this.n).fill3DRect(n10, n11, n12, n13, bl);
-    }
-
-    @Override
-    public void draw(Shape shape) {
-        ((Graphics2D)this.n).draw(shape);
-    }
-
-    @Override
-    public boolean drawImage(Image image, AffineTransform affineTransform, ImageObserver imageObserver) {
-        return ((Graphics2D)this.n).drawImage(image, affineTransform, imageObserver);
-    }
-
-    @Override
-    public void drawImage(BufferedImage bufferedImage, BufferedImageOp bufferedImageOp, int n10, int n11) {
-        ((Graphics2D)this.n).drawImage(bufferedImage, bufferedImageOp, n10, n11);
-    }
-
-    @Override
-    public void drawRenderedImage(RenderedImage renderedImage, AffineTransform affineTransform) {
-        ((Graphics2D)this.n).drawRenderedImage(renderedImage, affineTransform);
-    }
-
-    @Override
-    public void drawRenderableImage(RenderableImage renderableImage, AffineTransform affineTransform) {
-        ((Graphics2D)this.n).drawRenderableImage(renderableImage, affineTransform);
-    }
-
-    @Override
-    public void drawString(String string, int n10, int n11) {
-        String string2;
-        try {
-            string2 = (String)lk_0.a(string);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        string = string2;
-        ((Graphics2D)this.n).drawString(string, n10, n11);
-    }
-
-    @Override
-    public void drawString(String string, float f10, float f11) {
-        String string2;
-        try {
-            string2 = (String)lk_0.a(string);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        string = string2;
-        ((Graphics2D)this.n).drawString(string, f10, f11);
-    }
-
-    @Override
-    public void drawString(AttributedCharacterIterator attributedCharacterIterator, int n10, int n11) {
-        ((Graphics2D)this.n).drawString(attributedCharacterIterator, n10, n11);
-    }
-
-    @Override
-    public void drawString(AttributedCharacterIterator attributedCharacterIterator, float f10, float f11) {
-        ((Graphics2D)this.n).drawString(attributedCharacterIterator, f10, f11);
-    }
-
-    @Override
-    public void drawGlyphVector(GlyphVector glyphVector, float f10, float f11) {
-        ((Graphics2D)this.n).drawGlyphVector(glyphVector, f10, f11);
-    }
-
-    @Override
-    public void fill(Shape shape) {
-        ((Graphics2D)this.n).fill(shape);
-    }
-
-    @Override
-    public boolean hit(Rectangle rectangle, Shape shape, boolean bl) {
-        return ((Graphics2D)this.n).hit(rectangle, shape, bl);
-    }
-
-    @Override
-    public GraphicsConfiguration getDeviceConfiguration() {
-        return ((Graphics2D)this.n).getDeviceConfiguration();
-    }
-
-    @Override
-    public void setComposite(Composite composite) {
-        ((Graphics2D)this.n).setComposite(composite);
-    }
-
-    @Override
-    public void setPaint(Paint paint) {
-        ((Graphics2D)this.n).setPaint(paint);
-    }
-
-    @Override
-    public void setStroke(Stroke stroke) {
-        ((Graphics2D)this.n).setStroke(stroke);
-    }
-
-    @Override
-    public void setRenderingHint(RenderingHints.Key key, Object object) {
-        ((Graphics2D)this.n).setRenderingHint(key, object);
-    }
-
-    @Override
-    public Object getRenderingHint(RenderingHints.Key key) {
-        return ((Graphics2D)this.n).getRenderingHint(key);
-    }
-
-    public void setRenderingHints(Map map) {
-        ((Graphics2D)this.n).setRenderingHints(map);
-    }
-
-    public void addRenderingHints(Map map) {
-        ((Graphics2D)this.n).addRenderingHints(map);
-    }
-
-    @Override
-    public RenderingHints getRenderingHints() {
-        return ((Graphics2D)this.n).getRenderingHints();
-    }
-
-    @Override
-    public void translate(int n10, int n11) {
-        ((Graphics2D)this.n).translate(n10, n11);
-    }
-
-    @Override
-    public void translate(double d2, double d3) {
-        ((Graphics2D)this.n).translate(d2, d3);
-    }
-
-    @Override
-    public void rotate(double d2) {
-        ((Graphics2D)this.n).rotate(d2);
-    }
-
-    @Override
-    public void rotate(double d2, double d3, double d4) {
-        ((Graphics2D)this.n).rotate(d2, d3, d4);
-    }
-
-    @Override
-    public void scale(double d2, double d3) {
-        ((Graphics2D)this.n).scale(d2, d3);
-    }
-
-    @Override
-    public void shear(double d2, double d3) {
-        ((Graphics2D)this.n).shear(d2, d3);
-    }
-
-    @Override
-    public void transform(AffineTransform affineTransform) {
-        ((Graphics2D)this.n).transform(affineTransform);
-    }
-
-    @Override
-    public void setTransform(AffineTransform affineTransform) {
-        ((Graphics2D)this.n).setTransform(affineTransform);
-    }
-
-    @Override
-    public AffineTransform getTransform() {
-        return ((Graphics2D)this.n).getTransform();
-    }
-
-    @Override
-    public Paint getPaint() {
-        return ((Graphics2D)this.n).getPaint();
-    }
-
-    @Override
-    public Composite getComposite() {
-        return ((Graphics2D)this.n).getComposite();
-    }
-
-    @Override
-    public void setBackground(Color color) {
-        ((Graphics2D)this.n).setBackground(color);
-    }
-
-    @Override
-    public Color getBackground() {
-        return ((Graphics2D)this.n).getBackground();
-    }
-
-    @Override
-    public Stroke getStroke() {
-        return ((Graphics2D)this.n).getStroke();
-    }
-
-    @Override
-    public void clip(Shape shape) {
-        ((Graphics2D)this.n).clip(shape);
-    }
-
-    @Override
-    public FontRenderContext getFontRenderContext() {
-        return ((Graphics2D)this.n).getFontRenderContext();
-    }
+public class aD extends Graphics2D {
+   private final Graphics2D n;
+
+   public aD(Graphics2D var1) {
+      this.n = var1;
+   }
+
+   @Override
+   public Graphics create() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).create();
+   }
+
+   @Override
+   public Graphics create(int var1, int var2, int var3, int var4) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).create(var1, var2, var3, var4);
+   }
+
+   @Override
+   public Color getColor() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getColor();
+   }
+
+   @Override
+   public void setColor(Color var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setColor(var1);
+   }
+
+   @Override
+   public void setPaintMode() {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setPaintMode();
+   }
+
+   @Override
+   public void setXORMode(Color var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setXORMode(var1);
+   }
+
+   @Override
+   public Font getFont() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getFont();
+   }
+
+   @Override
+   public void setFont(Font var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setFont(var1);
+   }
+
+   @Override
+   public FontMetrics getFontMetrics() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getFontMetrics();
+   }
+
+   @Override
+   public FontMetrics getFontMetrics(Font var1) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getFontMetrics(var1);
+   }
+
+   @Override
+   public Rectangle getClipBounds() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getClipBounds();
+   }
+
+   @Override
+   public void clipRect(int var1, int var2, int var3, int var4) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).clipRect(var1, var2, var3, var4);
+   }
+
+   @Override
+   public void setClip(int var1, int var2, int var3, int var4) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setClip(var1, var2, var3, var4);
+   }
+
+   @Override
+   public Shape getClip() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getClip();
+   }
+
+   @Override
+   public void setClip(Shape var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setClip(var1);
+   }
+
+   @Override
+   public void copyArea(int var1, int var2, int var3, int var4, int var5, int var6) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).copyArea(var1, var2, var3, var4, var5, var6);
+   }
+
+   @Override
+   public void drawLine(int var1, int var2, int var3, int var4) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawLine(var1, var2, var3, var4);
+   }
+
+   @Override
+   public void fillRect(int var1, int var2, int var3, int var4) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).fillRect(var1, var2, var3, var4);
+   }
+
+   @Override
+   public void drawRect(int var1, int var2, int var3, int var4) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawRect(var1, var2, var3, var4);
+   }
+
+   @Override
+   public void clearRect(int var1, int var2, int var3, int var4) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).clearRect(var1, var2, var3, var4);
+   }
+
+   @Override
+   public void drawRoundRect(int var1, int var2, int var3, int var4, int var5, int var6) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawRoundRect(var1, var2, var3, var4, var5, var6);
+   }
+
+   @Override
+   public void fillRoundRect(int var1, int var2, int var3, int var4, int var5, int var6) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).fillRoundRect(var1, var2, var3, var4, var5, var6);
+   }
+
+   @Override
+   public void drawOval(int var1, int var2, int var3, int var4) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawOval(var1, var2, var3, var4);
+   }
+
+   @Override
+   public void fillOval(int var1, int var2, int var3, int var4) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).fillOval(var1, var2, var3, var4);
+   }
+
+   @Override
+   public void drawArc(int var1, int var2, int var3, int var4, int var5, int var6) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawArc(var1, var2, var3, var4, var5, var6);
+   }
+
+   @Override
+   public void fillArc(int var1, int var2, int var3, int var4, int var5, int var6) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).fillArc(var1, var2, var3, var4, var5, var6);
+   }
+
+   @Override
+   public void drawPolyline(int[] var1, int[] var2, int var3) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawPolyline(var1, var2, var3);
+   }
+
+   @Override
+   public void drawPolygon(int[] var1, int[] var2, int var3) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawPolygon(var1, var2, var3);
+   }
+
+   @Override
+   public void drawPolygon(Polygon var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawPolygon(var1);
+   }
+
+   @Override
+   public void fillPolygon(int[] var1, int[] var2, int var3) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).fillPolygon(var1, var2, var3);
+   }
+
+   @Override
+   public void fillPolygon(Polygon var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).fillPolygon(var1);
+   }
+
+   @Override
+   public void drawChars(char[] var1, int var2, int var3, int var4, int var5) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawChars(var1, var2, var3, var4, var5);
+   }
+
+   @Override
+   public void drawBytes(byte[] var1, int var2, int var3, int var4, int var5) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawBytes(var1, var2, var3, var4, var5);
+   }
+
+   @Override
+   public boolean drawImage(Image var1, int var2, int var3, ImageObserver var4) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawImage(var1, var2, var3, var4);
+   }
+
+   @Override
+   public boolean drawImage(Image var1, int var2, int var3, int var4, int var5, ImageObserver var6) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawImage(var1, var2, var3, var4, var5, var6);
+   }
+
+   @Override
+   public boolean drawImage(Image var1, int var2, int var3, Color var4, ImageObserver var5) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawImage(var1, var2, var3, var4, var5);
+   }
+
+   @Override
+   public boolean drawImage(Image var1, int var2, int var3, int var4, int var5, Color var6, ImageObserver var7) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawImage(var1, var2, var3, var4, var5, var6, var7);
+   }
+
+   @Override
+   public boolean drawImage(Image var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, ImageObserver var10) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawImage(var1, var2, var3, var4, var5, var6, var7, var8, var9, var10);
+   }
+
+   @Override
+   public boolean drawImage(Image var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, Color var10, ImageObserver var11) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawImage(var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11);
+   }
+
+   @Override
+   public void dispose() {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).dispose();
+   }
+
+   @Override
+   public String toString() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).toString();
+   }
+
+   @Override
+   public Rectangle getClipRect() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getClipRect();
+   }
+
+   @Override
+   public boolean hitClip(int var1, int var2, int var3, int var4) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).hitClip(var1, var2, var3, var4);
+   }
+
+   @Override
+   public Rectangle getClipBounds(Rectangle var1) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getClipBounds(var1);
+   }
+
+   @Override
+   public void draw3DRect(int var1, int var2, int var3, int var4, boolean var5) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).draw3DRect(var1, var2, var3, var4, var5);
+   }
+
+   @Override
+   public void fill3DRect(int var1, int var2, int var3, int var4, boolean var5) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).fill3DRect(var1, var2, var3, var4, var5);
+   }
+
+   @Override
+   public void draw(Shape var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).draw(var1);
+   }
+
+   @Override
+   public boolean drawImage(Image var1, AffineTransform var2, ImageObserver var3) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawImage(var1, var2, var3);
+   }
+
+   @Override
+   public void drawImage(BufferedImage var1, BufferedImageOp var2, int var3, int var4) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawImage(var1, var2, var3, var4);
+   }
+
+   @Override
+   public void drawRenderedImage(RenderedImage var1, AffineTransform var2) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawRenderedImage(var1, var2);
+   }
+
+   @Override
+   public void drawRenderableImage(RenderableImage var1, AffineTransform var2) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawRenderableImage(var1, var2);
+   }
+
+   @Override
+   public void drawString(String var1, int var2, int var3) {
+      Object[] var10000 = com.c.a(var1);
+      Method var6 = com.c.d(139122500711711222L);
+      Object[] var9 = var10000;
+      Object var8 = null;
+
+      try {
+         var10000 = (String)var6.invoke(var8, var9);
+      } catch (InvocationTargetException var4) {
+         throw var4.getTargetException();
+      }
+
+      var1 = var10000;
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawString(var1, var2, var3);
+   }
+
+   @Override
+   public void drawString(String var1, float var2, float var3) {
+      Object[] var10000 = com.c.a(var1);
+      Method var6 = com.c.d(139122500711711222L);
+      Object[] var9 = var10000;
+      Object var8 = null;
+
+      try {
+         var10000 = (String)var6.invoke(var8, var9);
+      } catch (InvocationTargetException var4) {
+         throw var4.getTargetException();
+      }
+
+      var1 = var10000;
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawString(var1, var2, var3);
+   }
+
+   @Override
+   public void drawString(AttributedCharacterIterator var1, int var2, int var3) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawString(var1, var2, var3);
+   }
+
+   @Override
+   public void drawString(AttributedCharacterIterator var1, float var2, float var3) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawString(var1, var2, var3);
+   }
+
+   @Override
+   public void drawGlyphVector(GlyphVector var1, float var2, float var3) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).drawGlyphVector(var1, var2, var3);
+   }
+
+   @Override
+   public void fill(Shape var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).fill(var1);
+   }
+
+   @Override
+   public boolean hit(Rectangle var1, Shape var2, boolean var3) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).hit(var1, var2, var3);
+   }
+
+   @Override
+   public GraphicsConfiguration getDeviceConfiguration() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getDeviceConfiguration();
+   }
+
+   @Override
+   public void setComposite(Composite var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setComposite(var1);
+   }
+
+   @Override
+   public void setPaint(Paint var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setPaint(var1);
+   }
+
+   @Override
+   public void setStroke(Stroke var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setStroke(var1);
+   }
+
+   @Override
+   public void setRenderingHint(Key var1, Object var2) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setRenderingHint(var1, var2);
+   }
+
+   @Override
+   public Object getRenderingHint(Key var1) {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getRenderingHint(var1);
+   }
+
+   @Override
+   public void setRenderingHints(Map var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setRenderingHints(var1);
+   }
+
+   @Override
+   public void addRenderingHints(Map var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).addRenderingHints(var1);
+   }
+
+   @Override
+   public RenderingHints getRenderingHints() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getRenderingHints();
+   }
+
+   @Override
+   public void translate(int var1, int var2) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).translate(var1, var2);
+   }
+
+   @Override
+   public void translate(double var1, double var3) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).translate(var1, var3);
+   }
+
+   @Override
+   public void rotate(double var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).rotate(var1);
+   }
+
+   @Override
+   public void rotate(double var1, double var3, double var5) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).rotate(var1, var3, var5);
+   }
+
+   @Override
+   public void scale(double var1, double var3) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).scale(var1, var3);
+   }
+
+   @Override
+   public void shear(double var1, double var3) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).shear(var1, var3);
+   }
+
+   @Override
+   public void transform(AffineTransform var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).transform(var1);
+   }
+
+   @Override
+   public void setTransform(AffineTransform var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setTransform(var1);
+   }
+
+   @Override
+   public AffineTransform getTransform() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getTransform();
+   }
+
+   @Override
+   public Paint getPaint() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getPaint();
+   }
+
+   @Override
+   public Composite getComposite() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getComposite();
+   }
+
+   @Override
+   public void setBackground(Color var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).setBackground(var1);
+   }
+
+   @Override
+   public Color getBackground() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getBackground();
+   }
+
+   @Override
+   public Stroke getStroke() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getStroke();
+   }
+
+   @Override
+   public void clip(Shape var1) {
+      ((Graphics2D)com.c.c(144523399290368409L).get(this)).clip(var1);
+   }
+
+   @Override
+   public FontRenderContext getFontRenderContext() {
+      return ((Graphics2D)com.c.c(144523399290368409L).get(this)).getFontRenderContext();
+   }
 }
+
+
+
+
 

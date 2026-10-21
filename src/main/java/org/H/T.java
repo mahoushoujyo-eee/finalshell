@@ -1,72 +1,68 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import org.F.c;
-import org.h.cu_0;
-import org.h.k_0;
-import org.h.o_0;
 import org.v.NL;
 import org.v.NV;
-import org.v.nt_0;
-import org.v.ny_0;
-import org.v.x_0;
+import org.v.Nt_2;
+import org.v.Ny_2;
+import org.v.X_2;
 
-class T
-implements x_0 {
-    final k_0 T;
+class T implements X_2 {
+   final org.H.k_2 T;
 
-    T(k_0 k_02) {
-        this.T = k_02;
-    }
+   T(org.H.k_2 var1) {
+      this.T = var1;
+   }
 
-    @c
-    public Void J(NV nV2) throws Throwable {
-        nV2.i(k_0.x(this.T));
-        return null;
-    }
+   @org.F.c
+   public Void J(NV var1) throws Throwable {
+      var1.i(org.H.k_2.x(this.T));
+      return null;
+   }
 
-    @c
-    public Void W(ny_0 ny_02) throws Throwable {
-        k_0.B(this.T).V(ny_02);
-        return null;
-    }
+   @org.F.c
+   public Void W(Ny_2 var1) throws Throwable {
+      org.H.k_2.B(this.T).V(var1);
+      return null;
+   }
 
-    @c
-    public Void W(nt_0 nt_02) throws Throwable {
-        nt_02.h(new cu_0(this));
-        return null;
-    }
+   @org.F.c
+   public Void W(Nt_2 var1) throws Throwable {
+      var1.h(new org.H.Cu_2(this));
+      return null;
+   }
 
-    @c
-    public Void k(NL nL2) throws Throwable {
-        nL2.s(new o_0(this));
-        return null;
-    }
+   @org.F.c
+   public Void k(NL var1) throws Throwable {
+      var1.s(new org.H.o_2(this));
+      return null;
+   }
 
-    @Override
-    @c
-    public Object V(NL nL2) throws Throwable {
-        return this.k(nL2);
-    }
+   @org.F.c
+   @Override
+   public Object V(NL var1) throws Throwable {
+      return this.k(var1);
+   }
 
-    @Override
-    @c
-    public Object u(nt_0 nt_02) throws Throwable {
-        return this.W(nt_02);
-    }
+   @org.F.c
+   @Override
+   public Object u(Nt_2 var1) throws Throwable {
+      return this.W(var1);
+   }
 
-    @Override
-    @c
-    public Object k(NV nV2) throws Throwable {
-        return this.J(nV2);
-    }
+   @org.F.c
+   @Override
+   public Object k(NV var1) throws Throwable {
+      return this.J(var1);
+   }
 
-    @Override
-    @c
-    public Object V(ny_0 ny_02) throws Throwable {
-        return this.W(ny_02);
-    }
+   @org.F.c
+   @Override
+   public Object V(Ny_2 var1) throws Throwable {
+      return this.W(var1);
+   }
 }
+
+
+
+
 

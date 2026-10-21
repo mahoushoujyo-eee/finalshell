@@ -1,26 +1,25 @@
-/*
- * Decompiled with CFR 0.152.
- */
-public class pV
-extends Exception {
-    private static final long serialVersionUID;
-    String x;
+public class pV extends Exception {
+   private static final long serialVersionUID;
+   String x;
 
-    pV(String string) {
-        this.x = string;
-    }
+   pV(String var1) {
+      this.x = var1;
+   }
 
-    @Override
-    public void printStackTrace() {
-    }
+   @Override
+   public void printStackTrace() {
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2;
-        long l3 = 2028208590500628135L;
-        serialVersionUID = l2 = 0x651F636B9109C224L ^ l3;
-    }
+   static {
+      long var2 = 2028208590500628135L;
+      long var10002 = 7286652035754738212L ^ var2;
+      byte var10001 = -1;
+      long var0 = var10002;
+      serialVersionUID = var0;
+   }
 }
+
+
+
+
 

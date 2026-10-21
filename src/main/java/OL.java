@@ -1,20 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import javax.swing.JPasswordField;
 
-class OL
-implements Runnable {
-    final qv_0 n;
+class OL implements Runnable {
+   final Qv_2 n;
 
-    OL(qv_0 qv_02) {
-        this.n = qv_02;
-    }
+   OL(Qv_2 var1) {
+      this.n = var1;
+   }
 
-    @Override
-    public void run() {
-        ((JPasswordField)this.n.J).requestFocus();
-    }
+   @Override
+   public void run() {
+      ((JPasswordField)com.c.c(284728928774308093L).get(com.c.c(227384670406593934L).get(this))).requestFocus();
+   }
 }
+
+
+
+
 

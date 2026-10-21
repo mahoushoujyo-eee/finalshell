@@ -1,20 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.z.o_0;
 import java.io.File;
 import java.util.List;
 
-public abstract class K
-implements o_0 {
-    @Override
-    public void W(File file) {
-    }
+public abstract class K implements com.Z.o_2 {
+   @Override
+   public void W(File var1) {
+   }
 
-    @Override
-    public void D(List list) {
-    }
+   @Override
+   public void D(List var1) {
+   }
 }
+
+
+
+
 

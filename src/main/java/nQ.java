@@ -1,19 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-class nQ
-implements ListSelectionListener {
-    final f3_0 D;
+class nQ implements ListSelectionListener {
+   final f3_2 D;
 
-    nQ(f3_0 f3_02) {
-        this.D = f3_02;
-    }
+   nQ(f3_2 var1) {
+      this.D = var1;
+   }
 
-    @Override
-    public void valueChanged(ListSelectionEvent listSelectionEvent) {
-    }
+   @Override
+   public void valueChanged(ListSelectionEvent var1) {
+   }
 }
+
+
+
+
 

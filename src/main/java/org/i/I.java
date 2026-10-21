@@ -1,229 +1,371 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.i;
 
-import com.ky_2;
 import java.util.Iterator;
 import java.util.List;
-import org.i.D;
-import org.i.M;
-import org.i.Z;
-import org.i.k;
-import org.i.l;
-import org.i.q;
-import org.i.z_0;
 
-public class I
-implements q,
-z_0 {
-    public final String W;
-    public final String D;
-    public final List Y;
-    public final List L;
-    private final k Q;
-    private static final String a;
-    private static final long[] b;
-    private static final Integer[] c;
+public class I implements q, z_2 {
+   public final String W;
+   public final String D;
+   public final List Y;
+   public final List L;
+   private final k Q;
+   private static final String a;
+   private static final long[] b;
+   private static final Integer[] c;
 
-    public I(String string, String string2, List list, List list2, k k2) {
-        this.W = string;
-        this.D = string2;
-        this.Y = list;
-        this.L = list2;
-        this.Q = k2;
-    }
+   public I(String var1, String var2, List var3, List var4, k var5) {
+      this.W = var1;
+      this.D = var2;
+      this.Y = var3;
+      this.L = var4;
+      this.Q = var5;
+   }
 
-    @Override
-    public Object P(D d2) throws Throwable {
-        return d2.m(this);
-    }
+   @Override
+   public Object P(D var1) throws Throwable {
+      return var1.m(this);
+   }
 
-    @Override
-    public String toString() {
-        StringBuilder stringBuilder;
-        block8: {
-            String string = this.W.replace((char)I.a(20819, 7809542723905355770L), (char)I.a(11988, 9118117175711006847L));
-            StringBuilder stringBuilder2 = new StringBuilder().append(this.Q.B(string)).append(this.D);
-            String string2 = M.w();
-            List list = this.Y;
-            if (string2 != null) {
-                block7: {
-                    if (!list.isEmpty()) {
-                        Iterator iterator = this.Y.iterator();
-                        stringBuilder2.append((char)I.a(22134, 2480402778419722460L)).append(((l)iterator.next()).toString());
-                        while (iterator.hasNext()) {
-                            stringBuilder2.append(a).append(((l)iterator.next()).toString());
-                            if (string2 != null) {
-                                if (string2 != null) continue;
-                            }
-                            break block7;
+   @Override
+   public String toString() {
+      String var10000 = org.i.M.w();
+      String var2 = this.W.replace((char)a(20819, 7809542723905355770L), (char)a(11988, 9118117175711006847L));
+      StringBuilder var3 = new StringBuilder().append(this.Q.B(var2)).append(this.D);
+      String var1 = var10000;
+      List var7 = this.Y;
+      if (var1 != null) {
+         label33:
+         if (!this.Y.isEmpty()) {
+            Iterator var4 = this.Y.iterator();
+            var3.append((char)a(22134, 2480402778419722460L)).append(((l)var4.next()).toString());
+
+            while (var4.hasNext()) {
+               var3.append(a).append(((l)var4.next()).toString());
+               if (var1 == null) {
+                  break label33;
+               }
+
+               if (var1 == null) {
+                  break;
+               }
+            }
+
+            var3.append((char)a(26062, 445237641614969702L));
+         }
+
+         var7 = this.L;
+      }
+
+      Iterator var6 = var7.iterator();
+
+      while (true) {
+         if (var6.hasNext()) {
+            Z var5 = (Z)var6.next();
+            var8 = var3.append((char)a(4627, 6814222937820019903L)).append(var5.toString());
+            if (var1 == null) {
+               break;
+            }
+
+            if (var1 != null) {
+               continue;
+            }
+         }
+
+         var8 = var3;
+         break;
+      }
+
+      var10000 = var8.toString();
+      if (com.ky_4.F() != null) {
+         org.i.M.W("d2AjUb");
+      }
+
+      return var10000;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "\u001b~".toCharArray();
+      int var10004 = var10003.length;
+      int var8 = 0;
+      byte var34 = 18;
+      char[] var10002 = var10003;
+      int var19 = var10004;
+      char[] var42;
+      byte var50;
+      int var10005;
+      char var10006;
+      byte var10007;
+      if (var10004 <= 1) {
+         var42 = var10003;
+         var10005 = var8;
+         char var10008 = var10003[var8];
+         var10007 = 18;
+         var10006 = var10008;
+         switch (var8 % 7) {
+            case 0:
+               var50 = 37;
+               break;
+            case 1:
+               var50 = 76;
+               break;
+            case 2:
+               var50 = 64;
+               break;
+            case 3:
+               var50 = 123;
+               break;
+            case 4:
+               var50 = 22;
+               break;
+            case 5:
+               var50 = 64;
+               break;
+            default:
+               var50 = 125;
+         }
+      } else {
+         var34 = 18;
+         var19 = var10004;
+         if (var10004 <= var8) {
+            String var39 = new String(var10003).intern();
+            int var25 = -1;
+            a = var39;
+            long var9 = 3772344670906437222L;
+            long[] var14 = new long[5];
+            int var11 = 0;
+            String var12 = "n\u000e\u0005¹b \u0085>ëkL<Ã*1³ÊÂ¶4¤.6\u0086";
+            int var13 = "n\u000e\u0005¹b \u0085>ëkL<Ã*1³ÊÂ¶4¤.6\u0086".length();
+            byte var10 = 0;
+
+            label71:
+            while (true) {
+               var25 = var10;
+               var10 += 8;
+               byte[] var16 = var12.substring(var25, var10).getBytes("ISO-8859-1");
+               long[] var18 = var14;
+               var25 = var11++;
+               long var32 = ((long)var16[0] & 255L) << 56
+                  | ((long)var16[1] & 255L) << 48
+                  | ((long)var16[2] & 255L) << 40
+                  | ((long)var16[3] & 255L) << 32
+                  | ((long)var16[4] & 255L) << 24
+                  | ((long)var16[5] & 255L) << 16
+                  | ((long)var16[6] & 255L) << 8
+                  | (long)var16[7] & 255L;
+               byte var40 = -1;
+
+               while (true) {
+                  long var48 = var32 ^ var9;
+                  switch (var40) {
+                     case 0:
+                        var18[var25] = var48;
+                        if (var10 >= var13) {
+                           b = var14;
+                           c = new Integer[5];
+                           return;
                         }
-                        stringBuilder2.append((char)I.a(26062, 445237641614969702L));
-                    }
-                }
-                list = this.L;
-            }
-            for (Z z10 : list) {
-                stringBuilder = stringBuilder2.append((char)I.a(4627, 6814222937820019903L)).append(z10.toString());
-                if (string2 != null) {
-                    if (string2 != null) continue;
-                }
-                break block8;
-            }
-            stringBuilder = stringBuilder2;
-        }
-        String string = stringBuilder.toString();
-        if (ky_2.F() != null) {
-            M.W("d2AjUb");
-        }
-        return string;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block19: {
-            block18: {
-                block20: {
-                    break block20;
-lbl1:
-                    // 1 sources
-
-                    while (true) {
-                        continue;
                         break;
-                    }
-                }
-                v0 = "\u001b~".toCharArray();
-                v1 = v0.length;
-                var8 = 0;
-                v2 = 18;
-                v3 = v0;
-                v4 = v1;
-                if (v1 > 1) ** GOTO lbl54
-                do {
-                    v5 = v2;
-                    v3 = v3;
-                    v6 = v3;
-                    v7 = v2;
-                    v8 = var8;
-                    while (true) {
-                        switch (var8 % 7) {
-                            case 0: {
-                                v9 = 37;
-                                break;
-                            }
-                            case 1: {
-                                v9 = 76;
-                                break;
-                            }
-                            case 2: {
-                                v9 = 64;
-                                break;
-                            }
-                            case 3: {
-                                v9 = 123;
-                                break;
-                            }
-                            case 4: {
-                                v9 = 22;
-                                break;
-                            }
-                            case 5: {
-                                v9 = 64;
-                                break;
-                            }
-                            default: {
-                                v9 = 125;
-                            }
+                     default:
+                        var18[var25] = var48;
+                        if (var10 < var13) {
+                           continue label71;
                         }
-                        v6[v8] = (char)(v6[v8] ^ (v7 ^ v9));
-                        ++var8;
-                        v2 = v5;
-                        if (v5 != 0) break;
-                        v5 = v2;
-                        v3 = v3;
-                        v8 = v2;
-                        v6 = v3;
-                        v7 = v2;
-                    }
-lbl54:
-                    // 2 sources
 
-                    v10 = v3;
-                    v4 = v4;
-                } while (v4 > var8);
-                ** while (true)
-                I.a = new String(v10).intern();
-                var0_1 = 3772344670906437222L;
-                var6_2 = new long[5];
-                var3_3 = 0;
-                var4_4 = "n\u000e\u0005\u00b9b\u00a0\u0085>\u00ebkL<\u00c3*1\u00b3\u00ca\u00c2\u00b64\u00a4.6\u0086";
-                var5_5 = "n\u000e\u0005\u00b9b\u00a0\u0085>\u00ebkL<\u00c3*1\u00b3\u00ca\u00c2\u00b64\u00a4.6\u0086".length();
-                var2_6 = 0;
-                while (true) {
-                    var7_7 = var4_4.substring(var2_6, var2_6 += 8).getBytes("ISO-8859-1");
-                    v11 = var6_2;
-                    v12 = var3_3++;
-                    v13 = ((long)var7_7[0] & 255L) << 56 | ((long)var7_7[1] & 255L) << 48 | ((long)var7_7[2] & 255L) << 40 | ((long)var7_7[3] & 255L) << 32 | ((long)var7_7[4] & 255L) << 24 | ((long)var7_7[5] & 255L) << 16 | ((long)var7_7[6] & 255L) << 8 | (long)var7_7[7] & 255L;
-                    v14 = -1;
-                    break block18;
-                    break;
-                }
-lbl75:
-                // 1 sources
+                        var12 = "ä\u008e\u001d¹!\u0013Î7}wz\u000eR£ò÷";
+                        var13 = "ä\u008e\u001d¹!\u0013Î7}wz\u000eR£ò÷".length();
+                        var10 = 0;
+                  }
 
-                while (true) {
-                    v11[v12] = v15;
-                    if (var2_6 < var5_5) ** continue;
-                    var4_4 = "\u00e4\u008e\u001d\u00b9!\u0013\u00ce7}wz\u000eR\u00a3\u00f2\u00f7";
-                    var5_5 = "\u00e4\u008e\u001d\u00b9!\u0013\u00ce7}wz\u000eR\u00a3\u00f2\u00f7".length();
-                    var2_6 = 0;
-                    while (true) {
-                        var7_7 = var4_4.substring(var2_6, var2_6 += 8).getBytes("ISO-8859-1");
-                        v11 = var6_2;
-                        v12 = var3_3++;
-                        v13 = ((long)var7_7[0] & 255L) << 56 | ((long)var7_7[1] & 255L) << 48 | ((long)var7_7[2] & 255L) << 40 | ((long)var7_7[3] & 255L) << 32 | ((long)var7_7[4] & 255L) << 24 | ((long)var7_7[5] & 255L) << 16 | ((long)var7_7[6] & 255L) << 8 | (long)var7_7[7] & 255L;
-                        v14 = 0;
-                        break block18;
-                        break;
-                    }
-                    break;
-                }
-lbl88:
-                // 1 sources
-
-                while (true) {
-                    v11[v12] = v15;
-                    if (var2_6 < var5_5) ** continue;
-                    break block19;
-                    break;
-                }
+                  byte var28 = var10;
+                  var10 += 8;
+                  var16 = var12.substring(var28, var10).getBytes("ISO-8859-1");
+                  var18 = var14;
+                  var25 = var11++;
+                  var32 = ((long)var16[0] & 255L) << 56
+                     | ((long)var16[1] & 255L) << 48
+                     | ((long)var16[2] & 255L) << 40
+                     | ((long)var16[3] & 255L) << 32
+                     | ((long)var16[4] & 255L) << 24
+                     | ((long)var16[5] & 255L) << 16
+                     | ((long)var16[6] & 255L) << 8
+                     | (long)var16[7] & 255L;
+                  var40 = 0;
+               }
             }
-            v15 = v13 ^ var0_1;
-            switch (v14) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl99:
-                // 1 sources
+         }
 
-                ** continue;
+         var42 = var10003;
+         var10005 = var8;
+         char var51 = var10003[var8];
+         var10007 = 18;
+         var10006 = var51;
+         switch (var8 % 7) {
+            case 0:
+               var50 = 37;
+               break;
+            case 1:
+               var50 = 76;
+               break;
+            case 2:
+               var50 = 64;
+               break;
+            case 3:
+               var50 = 123;
+               break;
+            case 4:
+               var50 = 22;
+               break;
+            case 5:
+               var50 = 64;
+               break;
+            default:
+               var50 = 125;
+         }
+      }
+
+      while (true) {
+         var42[var10005] = (char)(var10006 ^ var10007 ^ var50);
+         var8++;
+         if (var34 == 0) {
+            var42 = var10002;
+            var10005 = var34;
+            char var53 = var10002[var34];
+            var10007 = var34;
+            var10006 = var53;
+            switch (var8 % 7) {
+               case 0:
+                  var50 = 37;
+                  break;
+               case 1:
+                  var50 = 76;
+                  break;
+               case 2:
+                  var50 = 64;
+                  break;
+               case 3:
+                  var50 = 123;
+                  break;
+               case 4:
+                  var50 = 22;
+                  break;
+               case 5:
+                  var50 = 64;
+                  break;
+               default:
+                  var50 = 125;
             }
-        }
-        I.b = var6_2;
-        I.c = new Integer[5];
-    }
+         } else {
+            if (var19 <= var8) {
+               String var36 = new String(var10002).intern();
+               int var21 = -1;
+               a = var36;
+               long var0 = 3772344670906437222L;
+               long[] var6 = new long[5];
+               int var3 = 0;
+               String var4 = "n\u000e\u0005¹b \u0085>ëkL<Ã*1³ÊÂ¶4¤.6\u0086";
+               int var5 = "n\u000e\u0005¹b \u0085>ëkL<Ã*1³ÊÂ¶4¤.6\u0086".length();
+               byte var2 = 0;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x2EA8;
-        if (c[n11] == null) {
-            I.c[n11] = (int)(b[n11] ^ l2);
-        }
-        return c[n11];
-    }
+               label37:
+               while (true) {
+                  var21 = var2;
+                  var2 += 8;
+                  byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
+                  long[] var10000 = var6;
+                  var21 = var3++;
+                  long var30 = ((long)var7[0] & 255L) << 56
+                     | ((long)var7[1] & 255L) << 48
+                     | ((long)var7[2] & 255L) << 40
+                     | ((long)var7[3] & 255L) << 32
+                     | ((long)var7[4] & 255L) << 24
+                     | ((long)var7[5] & 255L) << 16
+                     | ((long)var7[6] & 255L) << 8
+                     | (long)var7[7] & 255L;
+                  byte var37 = -1;
+
+                  while (true) {
+                     long var46 = var30 ^ var0;
+                     switch (var37) {
+                        case 0:
+                           var10000[var21] = var46;
+                           if (var2 >= var5) {
+                              b = var6;
+                              c = new Integer[5];
+                              return;
+                           }
+                           break;
+                        default:
+                           var10000[var21] = var46;
+                           if (var2 < var5) {
+                              continue label37;
+                           }
+
+                           var4 = "ä\u008e\u001d¹!\u0013Î7}wz\u000eR£ò÷";
+                           var5 = "ä\u008e\u001d¹!\u0013Î7}wz\u000eR£ò÷".length();
+                           var2 = 0;
+                     }
+
+                     byte var24 = var2;
+                     var2 += 8;
+                     var7 = var4.substring(var24, var2).getBytes("ISO-8859-1");
+                     var10000 = var6;
+                     var21 = var3++;
+                     var30 = ((long)var7[0] & 255L) << 56
+                        | ((long)var7[1] & 255L) << 48
+                        | ((long)var7[2] & 255L) << 40
+                        | ((long)var7[3] & 255L) << 32
+                        | ((long)var7[4] & 255L) << 24
+                        | ((long)var7[5] & 255L) << 16
+                        | ((long)var7[6] & 255L) << 8
+                        | (long)var7[7] & 255L;
+                     var37 = 0;
+                  }
+               }
+            }
+
+            var42 = var10002;
+            var10005 = var8;
+            char var52 = var10002[var8];
+            var10007 = var34;
+            var10006 = var52;
+            switch (var8 % 7) {
+               case 0:
+                  var50 = 37;
+                  break;
+               case 1:
+                  var50 = 76;
+                  break;
+               case 2:
+                  var50 = 64;
+                  break;
+               case 3:
+                  var50 = 123;
+                  break;
+               case 4:
+                  var50 = 22;
+                  break;
+               case 5:
+                  var50 = 64;
+                  break;
+               default:
+                  var50 = 125;
+            }
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 11944;
+      if (c[var3] == null) {
+         c[var3] = (int)(b[var3] ^ var1);
+      }
+
+      return c[var3];
+   }
 }
+
+
+
+
 

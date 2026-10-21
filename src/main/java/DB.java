@@ -1,96 +1,98 @@
-/*
- * Decompiled with CFR 0.152.
- */
+// $VF: synthetic class
 class DB {
-    static final int[] t;
-    static final int[] X;
+   static final int[] t;
+   static final int[] X;
 
-    /*
-     * Enabled aggressive block sorting
-     * Enabled unnecessary exception pruning
-     * Enabled aggressive exception aggregation
-     */
-    static {
-        long l2 = 5073275504973760296L;
-        long[] lArray = new long[3];
-        int n10 = 0;
-        String string = "\u001a\u009e\u00ca*A\u00a6\u00c7.\u00bd\u0014L\u00e5A\u00a6\u00c7 \u00da\u00b4\t\u0007A\u00a6\u00c7/";
-        int n11 = "\u001a\u009e\u00ca*A\u00a6\u00c7.\u00bd\u0014L\u00e5A\u00a6\u00c7 \u00da\u00b4\t\u0007A\u00a6\u00c7/".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        X = new int[mR.values().length];
-        try {
-            DB.X[mR.NOTHING.ordinal()] = 1;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            DB.X[mR.FILENAME.ordinal()] = 2;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            DB.X[mR.DATA.ordinal()] = 3;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        t = new int[x9.values().length];
-        try {
-            DB.t[x9.ZRQINIT.ordinal()] = 1;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            DB.t[x9.ZFILE.ordinal()] = 2;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            DB.t[x9.ZEOF.ordinal()] = 3;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            DB.t[x9.ZDATA.ordinal()] = 4;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            DB.t[x9.ZFIN.ordinal()] = 5;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            DB.t[x9.ZCRCW.ordinal()] = (int)lArray[0];
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            DB.t[x9.ZCRCQ.ordinal()] = (int)lArray[2];
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            DB.t[x9.ZCRCE.ordinal()] = (int)lArray[1];
-            return;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-    }
+   static {
+      long var1 = 5073275504973760296L;
+      long[] var0 = new long[3];
+      int var4 = 0;
+      String var5 = "\u001a\u009eÊ*A¦Ç.½\u0014LåA¦Ç Ú´\t\u0007A¦Ç/";
+      int var6 = "\u001a\u009eÊ*A¦Ç.½\u0014LåA¦Ç Ú´\t\u0007A¦Ç/".length();
+      byte var3 = 0;
+
+      do {
+         int var10001 = var3;
+         var3 += 8;
+         byte[] var7 = var5.substring(var10001, var3).getBytes("ISO-8859-1");
+         var10001 = var4++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var1;
+         byte var10003 = -1;
+         var0[var10001] = var10004;
+      } while (var3 < var6);
+
+      X = new int[mR.values().length];
+
+      try {
+         X[mR.NOTHING.ordinal()] = 1;
+      } catch (NoSuchFieldError var19) {
+      }
+
+      try {
+         X[mR.FILENAME.ordinal()] = 2;
+      } catch (NoSuchFieldError var18) {
+      }
+
+      try {
+         X[mR.DATA.ordinal()] = 3;
+      } catch (NoSuchFieldError var17) {
+      }
+
+      t = new int[x9.values().length];
+
+      try {
+         t[x9.ZRQINIT.ordinal()] = 1;
+      } catch (NoSuchFieldError var16) {
+      }
+
+      try {
+         t[x9.ZFILE.ordinal()] = 2;
+      } catch (NoSuchFieldError var15) {
+      }
+
+      try {
+         t[x9.ZEOF.ordinal()] = 3;
+      } catch (NoSuchFieldError var14) {
+      }
+
+      try {
+         t[x9.ZDATA.ordinal()] = 4;
+      } catch (NoSuchFieldError var13) {
+      }
+
+      try {
+         t[x9.ZFIN.ordinal()] = 5;
+      } catch (NoSuchFieldError var12) {
+      }
+
+      try {
+         t[x9.ZCRCW.ordinal()] = (int)var0[0];
+      } catch (NoSuchFieldError var11) {
+      }
+
+      try {
+         t[x9.ZCRCQ.ordinal()] = (int)var0[2];
+      } catch (NoSuchFieldError var10) {
+      }
+
+      try {
+         t[x9.ZCRCE.ordinal()] = (int)var0[1];
+      } catch (NoSuchFieldError var9) {
+      }
+   }
 }
+
+
+
+
 

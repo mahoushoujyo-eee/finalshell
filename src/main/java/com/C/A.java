@@ -1,35 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.C;
 
-import com.C.X;
-import com.KR;
 import java.awt.event.ContainerAdapter;
 import java.awt.event.ContainerEvent;
 
-class A
-extends ContainerAdapter {
-    final KR f;
-    final X e;
+class A extends ContainerAdapter {
+   final com.KR f;
+   final com.C.X e;
 
-    A(X x10, KR kR) {
-        this.e = x10;
-        this.f = kR;
-    }
+   A(com.C.X var1, com.KR var2) {
+      this.e = var1;
+      this.f = var2;
+   }
 
-    @Override
-    public void componentAdded(ContainerEvent containerEvent) {
-        if (containerEvent.getChild() != this.f) {
-            this.e.Z();
-        }
-    }
+   @Override
+   public void componentAdded(ContainerEvent var1) {
+      if (var1.getChild() != this.f) {
+         this.e.Z();
+      }
+   }
 
-    @Override
-    public void componentRemoved(ContainerEvent containerEvent) {
-        if (containerEvent.getChild() != this.f) {
-            this.e.Z();
-        }
-    }
+   @Override
+   public void componentRemoved(ContainerEvent var1) {
+      if (var1.getChild() != this.f) {
+         this.e.Z();
+      }
+   }
 }
+
+
+
+
 

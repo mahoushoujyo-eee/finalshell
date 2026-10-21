@@ -1,58 +1,56 @@
-/*
- * Decompiled with CFR 0.152.
- */
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
 public class QM {
-    void K(KJ kJ) {
-    }
+   void K(KJ var1) {
+   }
 
-    int r() {
-        return 0;
-    }
+   int r() {
+      return 0;
+   }
 
-    int W() {
-        return 0;
-    }
+   int W() {
+      return 0;
+   }
 
-    boolean l() {
-        return false;
-    }
+   boolean l() {
+      return false;
+   }
 
-    boolean H() {
-        return false;
-    }
+   boolean H() {
+      return false;
+   }
 
-    boolean t() {
-        return false;
-    }
+   boolean t() {
+      return false;
+   }
 
-    boolean L() {
-        return false;
-    }
+   boolean L() {
+      return false;
+   }
 
-    boolean m() {
-        return false;
-    }
+   boolean m() {
+      return false;
+   }
 
-    void N(boolean bl) {
-    }
+   void N(boolean var1) {
+   }
 
-    void p(boolean bl) {
-    }
+   void p(boolean var1) {
+   }
 
-    void R() {
-    }
+   void R() {
+   }
 
-    void F() {
-    }
+   void F() {
+   }
 
-    int b(int n10) throws mw_0 {
-        return this.r();
-    }
+   int b(int var1) throws mw_2 {
+      return this.r();
+   }
 
-    void m() {
-    }
+   void m$void() {
+   }
 }
+
+
+
+
 

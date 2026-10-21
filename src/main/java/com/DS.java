@@ -1,23 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.kf_1;
-import com.kn_0;
 import java.io.File;
 
-class DS
-implements kn_0 {
-    final kf_1 I;
+class DS implements com.Kn_2 {
+   final com.kF_3 I;
 
-    DS(kf_1 kf_12) {
-        this.I = kf_12;
-    }
+   DS(com.kF_3 var1) {
+      this.I = var1;
+   }
 
-    @Override
-    public void r(File file) {
-        this.I.V(this.I.d.G(), false, true);
-    }
+   @Override
+   public void r(File var1) {
+      this.I.V(this.I.d.G(), false, true);
+   }
 }
+
+
+
+
 

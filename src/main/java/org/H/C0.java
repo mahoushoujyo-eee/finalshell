@@ -1,48 +1,44 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
-import org.F.c;
-import org.h.m_0;
-import org.h.r_0;
 
-public final class C0
-implements r_0 {
-    public final short M;
-    public final short Z;
-    private static final long a;
+public final class C0 implements org.H.r_2 {
+   public final short M;
+   public final short Z;
+   private static final long a;
 
-    public C0(short s2, short s3) {
-        this.M = s2;
-        this.Z = s3;
-    }
+   public C0(short var1, short var2) {
+      this.M = var1;
+      this.Z = var2;
+   }
 
-    @Override
-    public byte s() {
-        return (byte)((int)a);
-    }
+   @Override
+   public byte s() {
+      return (byte)((int)a);
+   }
 
-    @Override
-    public void E(DataOutputStream dataOutputStream) throws IOException {
-        dataOutputStream.writeShort(this.M);
-        dataOutputStream.writeShort(this.Z);
-    }
+   @Override
+   public void E(DataOutputStream var1) throws IOException {
+      var1.writeShort(this.M);
+      var1.writeShort(this.Z);
+   }
 
-    @Override
-    @c
-    public Object d(m_0 m_02) throws Throwable {
-        return m_02.P(this);
-    }
+   @org.F.c
+   @Override
+   public Object d(org.H.m_2 var1) throws Throwable {
+      return var1.P(this);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 1889590547488403747L;
-        a = 0xD203474569FB7146L ^ l2;
-    }
+   static {
+      long var0 = 1889590547488403747L;
+      long var10002 = -3313726537358151354L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

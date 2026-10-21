@@ -1,26 +1,24 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.EX;
-import com.kd_1;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class FA
-implements ActionListener {
-    final EX w;
-    final kd_1 F;
+class FA implements ActionListener {
+   final EX w;
+   final com.kD_3 F;
 
-    FA(kd_1 kd_12, EX eX) {
-        this.F = kd_12;
-        this.w = eX;
-    }
+   FA(com.kD_3 var1, EX var2) {
+      this.F = var1;
+      this.w = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.w.setValue(1);
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.w.setValue(1);
+   }
 }
+
+
+
+
 

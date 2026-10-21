@@ -1,54 +1,56 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.k2_0;
-import com.k3_0;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import javax.swing.JButton;
 
-class PW
-implements PropertyChangeListener {
-    final k2_0 c;
+class PW implements PropertyChangeListener {
+   final com.k2_2 c;
 
-    PW(k2_0 k2_02) {
-        this.c = k2_02;
-    }
+   PW(com.k2_2 var1) {
+      this.c = var1;
+   }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent propertyChangeEvent) {
-        block7: {
-            int n10;
-            int n11;
-            int[] nArray;
-            block8: {
-                Object object;
-                block6: {
-                    Object object2 = propertyChangeEvent.getSource();
-                    nArray = k3_0.L();
-                    object = object2;
-                    if (nArray == null) break block6;
-                    if (!(object instanceof JButton)) break block7;
-                    object = object2;
-                }
-                JButton jButton = (JButton)object;
-                n10 = n11 = this.c.getComponentZOrder(jButton);
-                if (nArray == null) break block8;
-                if (n10 == -1) break block7;
-                n10 = n11;
-            }
-            if (nArray != null) {
-                if (n10 > 0) {
-                    this.c.getComponent(n11 - 1).repaint();
-                }
-                n10 = n11;
-            }
-            if (n10 < this.c.getComponentCount() - 1) {
-                this.c.getComponent(n11 + 1).repaint();
-            }
-        }
-    }
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      int[] var10000 = com.k3_2.L();
+      Object var3 = var1.getSource();
+      int[] var2 = var10000;
+      var10000 = (int[])var3;
+      if (var2 != null) {
+         if (!(var3 instanceof JButton)) {
+            return;
+         }
+
+         var10000 = (int[])var3;
+      }
+
+      JButton var4 = (JButton)var10000;
+      int var5 = this.c.getComponentZOrder(var4);
+      int var7 = var5;
+      if (var2 != null) {
+         if (var5 == -1) {
+            return;
+         }
+
+         var7 = var5;
+      }
+
+      if (var2 != null) {
+         if (var7 > 0) {
+            this.c.getComponent(var5 - 1).repaint();
+         }
+
+         var7 = var5;
+      }
+
+      if (var7 < this.c.getComponentCount() - 1) {
+         this.c.getComponent(var5 + 1).repaint();
+      }
+   }
 }
+
+
+
+
 

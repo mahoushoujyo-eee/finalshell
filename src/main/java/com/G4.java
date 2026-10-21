@@ -1,42 +1,43 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FV;
-import com.HT;
-import com.O5;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class G4
-extends MouseAdapter {
-    final HT v;
-    final O5 V;
+class G4 extends MouseAdapter {
+   final HT v;
+   final com.O5 V;
 
-    G4(HT hT2, O5 o5) {
-        this.v = hT2;
-        this.V = o5;
-    }
+   G4(HT var1, com.O5 var2) {
+      this.v = var1;
+      this.V = var2;
+   }
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-        block4: {
-            G4 g42;
-            block2: {
-                block3: {
-                    String string = FV.D();
-                    g42 = this;
-                    if (string != null) break block2;
-                    if (g42.v == null) break block3;
-                    g42 = this;
-                    if (string != null) break block2;
-                    if (g42.v != HT.l(mouseEvent)) break block4;
-                }
-                g42 = this;
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      G4 var10000;
+      String var2 = com.FV.D();
+      var10000 = this;
+      label18:
+      if (var2 == null) {
+         if (this.v != null) {
+            var10000 = this;
+            if (var2 != null) {
+               break label18;
             }
-            g42.V.r(mouseEvent);
-        }
-    }
+
+            if (this.v != HT.l(var1)) {
+               return;
+            }
+         }
+
+         var10000 = this;
+      }
+
+      var10000.V.r(var1);
+   }
 }
+
+
+
+
 

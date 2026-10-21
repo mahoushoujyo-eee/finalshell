@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import com.thoughtworks.xstream.converters.MarshallingContext;
@@ -10,62 +7,82 @@ import com.thoughtworks.xstream.converters.reflection.ReflectionProvider;
 import com.thoughtworks.xstream.io.HierarchicalStreamReader;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 import com.thoughtworks.xstream.mapper.Mapper;
-import com.u0;
 
-public class YF
-extends ReflectionConverter {
-    public YF(Mapper mapper, ReflectionProvider reflectionProvider) {
-        super(mapper, reflectionProvider);
-    }
+public class YF extends ReflectionConverter {
+   public YF(Mapper var1, ReflectionProvider var2) {
+      super(var1, var2);
+   }
 
-    @Override
-    public boolean canConvert(Class clazz) {
-        return u0.class.getCanonicalName().equals(clazz.getCanonicalName());
-    }
+   @Override
+   public boolean canConvert(Class var1) {
+      return u0.class.getCanonicalName().equals(var1.getCanonicalName());
+   }
 
-    @Override
-    public void marshal(Object object, HierarchicalStreamWriter hierarchicalStreamWriter, MarshallingContext marshallingContext) {
-        u0 u02 = (u0)object;
-        String[] stringArray = u0.P();
-        for (int i2 = 0; i2 < u02.v(); ++i2) {
-            Object object2 = u02.K(i2);
-            hierarchicalStreamWriter.startNode(this.mapper.serializedClass(object2.getClass()));
-            marshallingContext.convertAnother(object2);
-            hierarchicalStreamWriter.endNode();
-            Object object3 = u02.o(i2);
-            hierarchicalStreamWriter.startNode(this.mapper.serializedClass(object3.getClass()));
-            marshallingContext.convertAnother(object3);
-            hierarchicalStreamWriter.endNode();
-            if (stringArray != null) continue;
-        }
-    }
+   @Override
+   public void marshal(Object var1, HierarchicalStreamWriter var2, MarshallingContext var3) {
+      u0 var5 = (u0)var1;
+      String[] var10000 = u0.P();
+      int var6 = 0;
+      String[] var4 = var10000;
 
-    @Override
-    public Object unmarshal(HierarchicalStreamReader hierarchicalStreamReader, UnmarshallingContext unmarshallingContext) {
-        u0 u02 = new u0();
-        String[] stringArray = u0.P();
-        int n10 = 0;
-        Object object = null;
-        while (hierarchicalStreamReader.hasMoreChildren()) {
-            block5: {
-                Class clazz;
-                block4: {
-                    block3: {
-                        hierarchicalStreamReader.moveDown();
-                        clazz = this.mapper.realClass(hierarchicalStreamReader.getNodeName());
-                        if (stringArray == null) break block3;
-                        if (n10 % 2 != 0) break block4;
-                        object = unmarshallingContext.convertAnother(u02, clazz);
-                    }
-                    if (stringArray != null) break block5;
-                }
-                u02.A(object, unmarshallingContext.convertAnother(u02, clazz));
+      while (var6 < var5.v()) {
+         Object var7 = var5.K(var6);
+         var2.startNode(this.mapper.serializedClass(var7.getClass()));
+         var3.convertAnother(var7);
+         var2.endNode();
+         Object var8 = var5.o(var6);
+         var2.startNode(this.mapper.serializedClass(var8.getClass()));
+         var3.convertAnother(var8);
+         var2.endNode();
+         var6++;
+         if (var4 == null) {
+            break;
+         }
+      }
+   }
+
+   @Override
+   public Object unmarshal(HierarchicalStreamReader var1, UnmarshallingContext var2) {
+      String[] var10000 = u0.P();
+      u0 var4 = new u0();
+      String[] var3 = var10000;
+      int var5 = 0;
+      Object var6 = null;
+
+      while (var1.hasMoreChildren()) {
+         label23: {
+            Class var7;
+            label22: {
+               var1.moveDown();
+               var7 = this.mapper.realClass(var1.getNodeName());
+               if (var3 != null) {
+                  if (var5 % 2 != 0) {
+                     break label22;
+                  }
+
+                  var6 = var2.convertAnother(var4, var7);
+               }
+
+               if (var3 != null) {
+                  break label23;
+               }
             }
-            hierarchicalStreamReader.moveUp();
-            ++n10;
-            if (stringArray != null) continue;
-        }
-        return u02;
-    }
+
+            var4.A(var6, var2.convertAnother(var4, var7));
+         }
+
+         var1.moveUp();
+         var5++;
+         if (var3 == null) {
+            break;
+         }
+      }
+
+      return var4;
+   }
 }
+
+
+
+
 

@@ -1,140 +1,140 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.net.DatagramPacket;
 
-public class V_
-extends vb_0 {
-    public short R = BN.y;
-    byte[] B;
-    int r;
-    int z;
-    int G;
-    private static final long[] a;
-    private static final Integer[] b;
+public class V_ extends Vb_2 {
+   public short R = BN.y;
+   byte[] B;
+   int r;
+   int z;
+   int G;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public V_(int n10, int n11, int n12, int n13, int n14) {
-        this.B = new byte[V_.a(13899, 3384811622759484692L)];
-        nb_0.s(this.V, this.B, 0);
-        nb_0.s(this.R, this.B, 2);
-        cn_1.P(n10, this.B, 4);
-        cn_1.P(n11, this.B, V_.a(25798, 7007651448375320465L));
-        cn_1.P(n12, this.B, V_.a(16913, 1114947073741142341L));
-        nb_0.s((short)(n13 / V_.a(5668, 2403136607807696248L)), this.B, V_.a(28269, 8983863149012751676L));
-        nb_0.s((short)(n14 / V_.a(20449, 7836925158754628791L)), this.B, V_.a(13361, 8364430354140385122L));
-        this.O = new DatagramPacket(this.B, this.B.length);
-    }
+   public V_(int var1, int var2, int var3, int var4, int var5) {
+      this.B = new byte[a(13899, 3384811622759484692L)];
+      nb_2.s(this.V, this.B, 0);
+      nb_2.s(this.R, this.B, 2);
+      cN_3.P(var1, this.B, 4);
+      cN_3.P(var2, this.B, a(25798, 7007651448375320465L));
+      cN_3.P(var3, this.B, a(16913, 1114947073741142341L));
+      nb_2.s((short)(var4 / a(5668, 2403136607807696248L)), this.B, a(28269, 8983863149012751676L));
+      nb_2.s((short)(var5 / a(20449, 7836925158754628791L)), this.B, a(13361, 8364430354140385122L));
+      this.O = new DatagramPacket(this.B, this.B.length);
+   }
 
-    public V_(DatagramPacket datagramPacket) {
-        this.B = new byte[V_.a(23100, 4086099864281817454L)];
-        this.O = datagramPacket;
-        this.B = datagramPacket.getData();
-        this.V = nb_0.Q(this.B, 0);
-        this.R = nb_0.Q(this.B, 2);
-        this.p = cn_1.m(this.B, 4);
-        this.x = cn_1.m(this.B, V_.a(21423, 5678773943378487546L));
-        this.r = cn_1.m(this.B, V_.a(1695, 158662474167090625L));
-        this.z = nb_0.Q(this.B, V_.a(15051, 7087397558827762070L));
-        this.G = nb_0.Q(this.B, V_.a(18477, 3961241305414022013L));
-    }
+   public V_(DatagramPacket var1) {
+      this.B = new byte[a(23100, 4086099864281817454L)];
+      this.O = var1;
+      this.B = var1.getData();
+      this.V = nb_2.Q(this.B, 0);
+      this.R = nb_2.Q(this.B, 2);
+      this.p = cN_3.m(this.B, 4);
+      this.x = cN_3.m(this.B, a(21423, 5678773943378487546L));
+      this.r = cN_3.m(this.B, a(1695, 158662474167090625L));
+      this.z = nb_2.Q(this.B, a(15051, 7087397558827762070L));
+      this.G = nb_2.Q(this.B, a(18477, 3961241305414022013L));
+   }
 
-    public int m() {
-        return this.r;
-    }
+   public int m() {
+      return this.r;
+   }
 
-    public void G(int n10) {
-        this.r = n10;
-    }
+   public void G(int var1) {
+      this.r = var1;
+   }
 
-    public int K() {
-        return this.z;
-    }
+   public int K() {
+      return this.z;
+   }
 
-    public void e(int n10) {
-        this.z = n10;
-    }
+   public void e(int var1) {
+      this.z = var1;
+   }
 
-    public int A() {
-        return this.G;
-    }
+   public int A() {
+      return this.G;
+   }
 
-    public void L(int n10) {
-        this.G = n10;
-    }
+   public void L(int var1) {
+      this.G = var1;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 7157113023317754834L;
-                var6_1 = new long[12];
-                var3_2 = 0;
-                var4_3 = "\b\u0099\u009f7\u0016\u00c9seZ\u00f1\u0096\u00ad\u00d6\u0004\u00dcKW\u0002)\u007f=\u009e\u00fa\u009b\u0095a3\u00c1\u008a\u00fc\u00eb s\u00e5\u00c0\u0018\u0083gb\u00a8_\u00c70\u0081\u00cb%\f\u00a2\u00dcB)\u00e0\"\u00e3\u00f0\u00bdl\u00e1I4\u0097\u008d\u00d6\u00feQ\u009d{\u009e\u0017\u00c4\u00be\u001f\u0014-\u00ca\u0080*\u001c\u000e\u00d2";
-                var5_4 = "\b\u0099\u009f7\u0016\u00c9seZ\u00f1\u0096\u00ad\u00d6\u0004\u00dcKW\u0002)\u007f=\u009e\u00fa\u009b\u0095a3\u00c1\u008a\u00fc\u00eb s\u00e5\u00c0\u0018\u0083gb\u00a8_\u00c70\u0081\u00cb%\f\u00a2\u00dcB)\u00e0\"\u00e3\u00f0\u00bdl\u00e1I4\u0097\u008d\u00d6\u00feQ\u009d{\u009e\u0017\u00c4\u00be\u001f\u0014-\u00ca\u0080*\u001c\u000e\u00d2".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
+   static {
+      long var0 = 7157113023317754834L;
+      long[] var6 = new long[12];
+      int var3 = 0;
+      String var4 = "\b\u0099\u009f7\u0016ÉseZñ\u0096\u00adÖ\u0004ÜKW\u0002)\u007f=\u009eú\u009b\u0095a3Á\u008aüë såÀ\u0018\u0083gb¨_Ç0\u0081Ë%\f¢ÜB)à\"ãð½láI4\u0097\u008dÖþQ\u009d{\u009e\u0017Ä¾\u001f\u0014-Ê\u0080*\u001c\u000eÒ";
+      int var5 = "\b\u0099\u009f7\u0016ÉseZñ\u0096\u00adÖ\u0004ÜKW\u0002)\u007f=\u009eú\u009b\u0095a3Á\u008aüë såÀ\u0018\u0083gb¨_Ç0\u0081Ë%\f¢ÜB)à\"ãð½láI4\u0097\u008dÖþQ\u009d{\u009e\u0017Ä¾\u001f\u0014-Ê\u0080*\u001c\u000eÒ"
+         .length();
+      byte var2 = 0;
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "\u00c3T\u00cf^\u00c30*\u00aaq\u008e|A\u009f\u00cb\u0002T";
-                    var5_4 = "\u00c3T\u00cf^\u00c30*\u00aaq\u008e|A\u009f\u00cb\u0002T".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     b = new Integer[12];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "ÃTÏ^Ã0*ªq\u008e|A\u009fË\u0002T";
+                  var5 = "ÃTÏ^Ã0*ªq\u008e|A\u009fË\u0002T".length();
+                  var2 = 0;
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
 
-                ** continue;
-            }
-        }
-        V_.a = var6_1;
-        V_.b = new Integer[12];
-    }
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x7B56;
-        if (b[n11] == null) {
-            V_.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 31574;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

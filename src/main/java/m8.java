@@ -1,12 +1,12 @@
-/*
- * Decompiled with CFR 0.152.
- */
-public class m8
-extends Exception {
-    final c3_0 A;
+public class m8 extends Exception {
+   final c3_2 A;
 
-    public m8(c3_0 c3_02) {
-        this.A = c3_02;
-    }
+   public m8(c3_2 var1) {
+      this.A = var1;
+   }
 }
+
+
+
+
 

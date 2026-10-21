@@ -1,293 +1,315 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.hi_0;
-import com.ps_0;
+class P3 extends Ps_2 {
+   private final String F;
+   private static final long[] a;
+   private static final Integer[] b;
 
-class P3
-extends ps_0 {
-    private final String F;
-    private static final long[] a;
-    private static final Integer[] b;
+   public P3(String var1) {
+      this.F = var1;
+      this.c();
+      this.N();
+   }
 
-    public P3(String string) {
-        this.F = string;
-        this.c();
-        this.N();
-    }
+   @Override
+   void c() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/Hi_2.C ()Ljava/lang/String;
+      // 03: aload 0
+      // 04: dup
+      // 05: getfield com/P3.p I
+      // 08: bipush 1
+      // 09: iadd
+      // 0a: putfield com/P3.p I
+      // 0d: astore 1
+      // 0e: aload 0
+      // 0f: aload 1
+      // 10: ifnonnull 44
+      // 13: getfield com/P3.p I
+      // 16: aload 0
+      // 17: getfield com/P3.F Ljava/lang/String;
+      // 1a: invokevirtual java/lang/String.length ()I
+      // 1d: if_icmplt 3c
+      // 20: goto 27
+      // 23: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 26: athrow
+      // 27: aload 0
+      // 28: bipush 0
+      // 29: putfield com/P3.D C
+      // 2c: aload 0
+      // 2d: bipush 1
+      // 2e: putfield com/P3.o Z
+      // 31: aload 1
+      // 32: ifnull 52
+      // 35: goto 3c
+      // 38: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 3b: athrow
+      // 3c: aload 0
+      // 3d: goto 44
+      // 40: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 43: athrow
+      // 44: aload 0
+      // 45: getfield com/P3.F Ljava/lang/String;
+      // 48: aload 0
+      // 49: getfield com/P3.p I
+      // 4c: invokevirtual java/lang/String.charAt (I)C
+      // 4f: putfield com/P3.D C
+      // 52: return
+   }
 
-    @Override
-    void c() {
-        block8: {
-            block6: {
-                ++this.p;
-                String string = hi_0.C();
-                try {
-                    P3 p3;
-                    block7: {
-                        try {
-                            try {
-                                p3 = this;
-                                if (string != null) break block6;
-                                if (p3.p < this.F.length()) break block7;
-                            }
-                            catch (hi_0 hi_02) {
-                                throw P3.a(hi_02);
-                            }
-                            this.D = '\u0000';
-                            this.o = true;
-                            if (string == null) break block8;
-                        }
-                        catch (hi_0 hi_03) {
-                            throw P3.a(hi_03);
-                        }
-                    }
-                    p3 = this;
-                }
-                catch (hi_0 hi_04) {
-                    throw P3.a(hi_04);
-                }
+   @Override
+   protected final void B() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic com/Hi_2.C ()Ljava/lang/String;
+      // 003: aload 0
+      // 004: getfield com/P3.p I
+      // 007: bipush 1
+      // 008: iadd
+      // 009: istore 2
+      // 00a: astore 1
+      // 00b: iload 2
+      // 00c: aload 0
+      // 00d: getfield com/P3.F Ljava/lang/String;
+      // 010: invokevirtual java/lang/String.length ()I
+      // 013: if_icmpge 082
+      // 016: aload 0
+      // 017: getfield com/P3.F Ljava/lang/String;
+      // 01a: iload 2
+      // 01b: invokevirtual java/lang/String.charAt (I)C
+      // 01e: istore 3
+      // 01f: iload 3
+      // 020: sipush 29902
+      // 023: ldc2_w 8841087341138747027
+      // 026: invokestatic com/P3.b (IJ)I
+      // 029: aload 1
+      // 02a: ifnonnull 093
+      // 02d: aload 1
+      // 02e: ifnonnull 05e
+      // 031: goto 038
+      // 034: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 037: athrow
+      // 038: if_icmpne 04d
+      // 03b: goto 042
+      // 03e: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 041: athrow
+      // 042: aload 1
+      // 043: ifnull 082
+      // 046: goto 04d
+      // 049: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 04c: athrow
+      // 04d: iload 3
+      // 04e: sipush 10106
+      // 051: ldc2_w 6941471577648319777
+      // 054: invokestatic com/P3.b (IJ)I
+      // 057: goto 05e
+      // 05a: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 05d: athrow
+      // 05e: if_icmpne 07b
+      // 061: aload 0
+      // 062: aload 0
+      // 063: getfield com/P3.F Ljava/lang/String;
+      // 066: iload 2
+      // 067: bipush 1
+      // 068: iadd
+      // 069: invokevirtual java/lang/String.charAt (I)C
+      // 06c: putfield com/P3.D C
+      // 06f: aload 0
+      // 070: iload 2
+      // 071: bipush 1
+      // 072: iadd
+      // 073: putfield com/P3.p I
+      // 076: return
+      // 077: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 07a: athrow
+      // 07b: iinc 2 1
+      // 07e: aload 1
+      // 07f: ifnull 00b
+      // 082: aload 0
+      // 083: invokevirtual com/P3.c ()V
+      // 086: aload 0
+      // 087: getfield com/P3.D C
+      // 08a: sipush 21283
+      // 08d: ldc2_w 4679770532779735418
+      // 090: invokestatic com/P3.b (IJ)I
+      // 093: if_icmpne 0ee
+      // 096: aload 0
+      // 097: invokevirtual com/P3.c ()V
+      // 09a: aload 0
+      // 09b: aload 1
+      // 09c: ifnonnull 0e7
+      // 09f: goto 0a6
+      // 0a2: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0a5: athrow
+      // 0a6: getfield com/P3.D C
+      // 0a9: sipush 11105
+      // 0ac: ldc2_w 8750538030182875449
+      // 0af: invokestatic com/P3.b (IJ)I
+      // 0b2: aload 1
+      // 0b3: ifnonnull 106
+      // 0b6: goto 0bd
+      // 0b9: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0bc: athrow
+      // 0bd: if_icmpne 0e6
+      // 0c0: goto 0c7
+      // 0c3: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0c6: athrow
+      // 0c7: aload 0
+      // 0c8: invokevirtual com/P3.c ()V
+      // 0cb: aload 0
+      // 0cc: invokevirtual com/P3.c ()V
+      // 0cf: aload 0
+      // 0d0: invokevirtual com/P3.c ()V
+      // 0d3: aload 0
+      // 0d4: invokevirtual com/P3.c ()V
+      // 0d7: aload 0
+      // 0d8: invokevirtual com/P3.c ()V
+      // 0db: aload 1
+      // 0dc: ifnull 086
+      // 0df: goto 0e6
+      // 0e2: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 0e5: athrow
+      // 0e6: aload 0
+      // 0e7: invokevirtual com/P3.c ()V
+      // 0ea: aload 1
+      // 0eb: ifnull 086
+      // 0ee: aload 0
+      // 0ef: getfield com/P3.D C
+      // 0f2: aload 1
+      // 0f3: ifnonnull 12e
+      // 0f6: sipush 17077
+      // 0f9: ldc2_w 6777162843506125039
+      // 0fc: invokestatic com/P3.b (IJ)I
+      // 0ff: goto 106
+      // 102: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 105: athrow
+      // 106: if_icmpne 118
+      // 109: aload 0
+      // 10a: invokevirtual com/P3.c ()V
+      // 10d: aload 1
+      // 10e: ifnull 14b
+      // 111: goto 118
+      // 114: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 117: athrow
+      // 118: aload 0
+      // 119: aload 1
+      // 11a: ifnonnull 144
+      // 11d: goto 124
+      // 120: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 123: athrow
+      // 124: getfield com/P3.o Z
+      // 127: goto 12e
+      // 12a: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 12d: athrow
+      // 12e: ifeq 13c
+      // 131: aload 1
+      // 132: ifnull 14b
+      // 135: goto 13c
+      // 138: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 13b: athrow
+      // 13c: aload 0
+      // 13d: goto 144
+      // 140: invokestatic com/P3.a (Lcom/Hi_2;)Lcom/Hi_2;
+      // 143: athrow
+      // 144: invokevirtual com/P3.c ()V
+      // 147: aload 1
+      // 148: ifnull 086
+      // 14b: return
+   }
+
+   private static Hi_2 a(Hi_2 var0) {
+      return var0;
+   }
+
+   static {
+      long var0 = 8019264614180948973L;
+      long[] var6 = new long[5];
+      int var3 = 0;
+      String var4 = "®ä\u008f\u0005\u008c°²Ë\u0004tÊX\"\u0085J¡ÍÿÆ!\u0094/Fî";
+      int var5 = "®ä\u008f\u0005\u008c°²Ë\u0004tÊX\"\u0085J¡ÍÿÆ!\u0094/Fî".length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     b = new Integer[5];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "k\u007f²\u009eÀ5# ìXÀIüÚ\u0095\"";
+                  var5 = "k\u007f²\u009eÀ5# ìXÀIüÚ\u0095\"".length();
+                  var2 = 0;
             }
-            p3.D = this.F.charAt(this.p);
-        }
-    }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    protected final void B() {
-        var1_2 = hi_0.C();
-        for (var2_1 = this.p + 1; var2_1 < this.F.length(); ++var2_1) {
-            block34: {
-                var3_3 = this.F.charAt(var2_1);
-                try {
-                    block35: {
-                        try {
-                            try {
-                                try {
-                                    v0 = var3_3;
-                                    v1 = P3.b(29902, 8841087341138747027L);
-                                    if (var1_2 == null) {
-                                        if (var1_2 != null) break block34;
-                                    }
-                                    ** GOTO lbl42
-                                }
-                                catch (hi_0 v2) {
-                                    throw P3.a(v2);
-                                }
-                                if (v0 != v1) break block35;
-                            }
-                            catch (hi_0 v3) {
-                                throw P3.a(v3);
-                            }
-                            if (var1_2 == null) break;
-                        }
-                        catch (hi_0 v4) {
-                            throw P3.a(v4);
-                        }
-                    }
-                    v5 = var3_3;
-                    v6 = P3.b(10106, 6941471577648319777L);
-                }
-                catch (hi_0 v7) {
-                    throw P3.a(v7);
-                }
-            }
-            try {
-                if (v5 != v6) continue;
-                this.D = this.F.charAt(var2_1 + 1);
-                this.p = var2_1 + 1;
-                return;
-            }
-            catch (hi_0 v8) {
-                throw P3.a(v8);
-            }
-        }
-        this.c();
-        do lbl-1000:
-        // 4 sources
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
 
-        {
-            block41: {
-                block40: {
-                    block38: {
-                        block36: {
-                            block37: {
-                                block39: {
-                                    v0 = this.D;
-                                    v1 = P3.b(21283, 4679770532779735418L);
-lbl42:
-                                    // 2 sources
+   private static int b(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 27225;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
 
-                                    try {
-                                        try {
-                                            try {
-                                                try {
-                                                    if (v0 != v1) break block36;
-                                                    this.c();
-                                                    v9 = this;
-                                                    if (var1_2 != null) break block37;
-                                                }
-                                                catch (hi_0 v10) {
-                                                    throw P3.a(v10);
-                                                }
-                                                v11 = v9.D;
-                                                v12 = P3.b(11105, 8750538030182875449L);
-                                                if (var1_2 != null) break block38;
-                                            }
-                                            catch (hi_0 v13) {
-                                                throw P3.a(v13);
-                                            }
-                                            if (v11 != v12) break block39;
-                                        }
-                                        catch (hi_0 v14) {
-                                            throw P3.a(v14);
-                                        }
-                                        this.c();
-                                        this.c();
-                                        this.c();
-                                        this.c();
-                                        this.c();
-                                        if (var1_2 == null) ** GOTO lbl-1000
-                                    }
-                                    catch (hi_0 v15) {
-                                        throw P3.a(v15);
-                                    }
-                                }
-                                v9 = this;
-                            }
-                            v9.c();
-                            if (var1_2 == null) ** GOTO lbl-1000
-                        }
-                        try {
-                            v11 = this.D;
-                            if (var1_2 != null) break block40;
-                            v12 = P3.b(17077, 6777162843506125039L);
-                        }
-                        catch (hi_0 v16) {
-                            throw P3.a(v16);
-                        }
-                    }
-                    try {
-                        try {
-                            try {
-                                if (v11 == v12) {
-                                    this.c();
-                                    if (var1_2 == null) break;
-                                }
-                            }
-                            catch (hi_0 v17) {
-                                throw P3.a(v17);
-                            }
-                            v18 = this;
-                            if (var1_2 != null) break block41;
-                        }
-                        catch (hi_0 v19) {
-                            throw P3.a(v19);
-                        }
-                        v11 = (char)v18.o;
-                    }
-                    catch (hi_0 v20) {
-                        throw P3.a(v20);
-                    }
-                }
-                try {
-                    try {
-                        if (v11 != '\u0000' && var1_2 == null) break;
-                    }
-                    catch (hi_0 v21) {
-                        throw P3.a(v21);
-                    }
-                    v18 = this;
-                }
-                catch (hi_0 v22) {
-                    throw P3.a(v22);
-                }
-            }
-            v18.c();
-        } while (var1_2 == null);
-    }
-
-    private static hi_0 a(hi_0 hi_02) {
-        return hi_02;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 8019264614180948973L;
-                var6_1 = new long[5];
-                var3_2 = 0;
-                var4_3 = "\u00ae\u00e4\u008f\u0005\u008c\u00b0\u00b2\u00cb\u0004t\u00caX\"\u0085J\u00a1\u00cd\u00ff\u00c6!\u0094/F\u00ee";
-                var5_4 = "\u00ae\u00e4\u008f\u0005\u008c\u00b0\u00b2\u00cb\u0004t\u00caX\"\u0085J\u00a1\u00cd\u00ff\u00c6!\u0094/F\u00ee".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "k\u007f\u00b2\u009e\u00c05# \u00ecX\u00c0I\u00fc\u00da\u0095\"";
-                    var5_4 = "k\u007f\u00b2\u009e\u00c05# \u00ecX\u00c0I\u00fc\u00da\u0095\"".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
-
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
-            }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
-
-                ** continue;
-            }
-        }
-        P3.a = var6_1;
-        P3.b = new Integer[5];
-    }
-
-    private static int b(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x6A59;
-        if (b[n11] == null) {
-            P3.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      return b[var3];
+   }
 }
+
+
+
+
 

@@ -1,26 +1,25 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.kz_2;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 
-class SF
-implements ActionListener {
-    final File G;
-    final kz_2 h;
+class SF implements ActionListener {
+   final File G;
+   final com.kz_4 h;
 
-    SF(kz_2 kz_22, File file) {
-        this.h = kz_22;
-        this.G = file;
-    }
+   SF(com.kz_4 var1, File var2) {
+      this.h = var1;
+      this.G = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.h.X(this.G);
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.h.X(this.G);
+   }
 }
+
+
+
+
 

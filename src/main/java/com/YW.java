@@ -1,1917 +1,2720 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.BM;
-import com.EZ;
-import com.FN;
-import com.XD;
-import com.cn_1;
-import com.fk_0;
-import com.kd_1;
 import java.awt.Cursor;
 import java.awt.Insets;
 import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
+import java.awt.image.BufferedImage;
+import java.util.Iterator;
 import javax.swing.SwingUtilities;
 
-class YW
-extends MouseAdapter {
-    private boolean f;
-    private boolean M;
-    private boolean Q;
-    private boolean z;
-    private boolean H;
-    private boolean T;
-    private boolean i;
-    private boolean u;
-    private boolean Z;
-    private boolean G;
-    private boolean R;
-    private boolean W;
-    private boolean q;
-    private boolean L;
-    private boolean e;
-    private boolean F;
-    private boolean m;
-    private boolean D;
-    private int k;
-    private int O;
-    private Rectangle h;
-    private Insets j;
-    private EZ g;
-    private EZ p;
-    final BM o;
-    private static final long[] a;
-    private static final Integer[] b;
+class YW extends MouseAdapter {
+   private boolean f;
+   private boolean M;
+   private boolean Q;
+   private boolean z;
+   private boolean H;
+   private boolean T;
+   private boolean i;
+   private boolean u;
+   private boolean Z;
+   private boolean G;
+   private boolean R;
+   private boolean W;
+   private boolean q;
+   private boolean L;
+   private boolean e;
+   private boolean F;
+   private boolean m;
+   private boolean D;
+   private int k;
+   private int O;
+   private Rectangle h;
+   private Insets j;
+   private EZ g;
+   private EZ p;
+   final com.BM o;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    private YW(BM bM) {
-        this.o = bM;
-        this.f = false;
-        this.M = false;
-        this.Q = false;
-        this.z = false;
-        this.H = false;
-        this.T = false;
-        this.i = false;
-        this.u = false;
-        this.Z = false;
-        this.G = false;
-        this.R = false;
-        this.W = false;
-        this.q = false;
-        this.L = false;
-        this.e = false;
-        this.F = false;
-        this.m = false;
-        this.D = false;
-        this.k = -1;
-        this.O = -1;
-        this.h = null;
-        this.j = null;
-        this.g = null;
-        this.p = null;
-    }
+   private YW(com.BM var1) {
+      this.o = var1;
+      this.f = false;
+      this.M = false;
+      this.Q = false;
+      this.z = false;
+      this.H = false;
+      this.T = false;
+      this.i = false;
+      this.u = false;
+      this.Z = false;
+      this.G = false;
+      this.R = false;
+      this.W = false;
+      this.q = false;
+      this.L = false;
+      this.e = false;
+      this.F = false;
+      this.m = false;
+      this.D = false;
+      this.k = -1;
+      this.O = -1;
+      this.h = null;
+      this.j = null;
+      this.g = null;
+      this.p = null;
+   }
 
-    @Override
-    public void mouseWheelMoved(MouseWheelEvent mouseWheelEvent) {
-        this.d(mouseWheelEvent, cn_1.mouseWheelMoved);
-    }
+   @Override
+   public void mouseWheelMoved(MouseWheelEvent var1) {
+      this.d(var1, com.cN_3.mouseWheelMoved);
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        this.d(mouseEvent, cn_1.mousePressed);
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      this.d(var1, com.cN_3.mousePressed);
+   }
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-        this.d(mouseEvent, cn_1.mouseDragged);
-    }
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      this.d(var1, com.cN_3.mouseDragged);
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-        this.d(mouseEvent, cn_1.mouseReleased);
-    }
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+      this.d(var1, com.cN_3.mouseReleased);
+   }
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-        this.d(mouseEvent, cn_1.mouseEntered);
-    }
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+      this.d(var1, com.cN_3.mouseEntered);
+   }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-        this.d(mouseEvent, cn_1.mouseExited);
-    }
+   @Override
+   public void mouseExited(MouseEvent var1) {
+      this.d(var1, com.cN_3.mouseExited);
+   }
 
-    @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
-        this.d(mouseEvent, cn_1.mouseMoved);
-    }
+   @Override
+   public void mouseMoved(MouseEvent var1) {
+      this.d(var1, com.cN_3.mouseMoved);
+   }
 
-    private void d(MouseEvent mouseEvent, cn_1 cn_12) {
-        block3: {
-            YW yW;
-            block2: {
-                int[] nArray = kd_1.u();
-                yW = this;
-                if (nArray != null) break block2;
-                if (!yW.n(mouseEvent, cn_12)) break block3;
-                yW = this;
+   private void d(MouseEvent var1, com.cN_3 var2) {
+      int[] var3 = com.kD_3.u();
+      com.YW var10000 = this;
+      if (var3 == null) {
+         if (!this.n(var1, var2)) {
+            return;
+         }
+
+         var10000 = this;
+      }
+
+      var10000.o.repaint();
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   private boolean n(MouseEvent var1, com.cN_3 var2) {
+      int[] var10000 = com.kD_3.u();
+      BufferedImage var4 = this.o.O();
+      int[] var3 = var10000;
+      if (var4 == null) {
+         return false;
+      } else {
+         int var5 = var1.getX();
+         int var6 = var1.getY();
+         int var7 = this.o.getWidth();
+         int var8 = this.o.getHeight();
+         int var9 = var4.getWidth() * com.BM.B(this.o);
+         int var10 = var4.getHeight() * com.BM.B(this.o);
+         Insets var11 = com.BM.v(this.o).U();
+         int var10001 = com.BM.C(this.o);
+         if (var3 == null) {
+            var10001 = var10001 != 0 ? a(30561, 4735278992581391554L) : 0;
+         }
+
+         int var12 = (var7 + var10001) / 2 - var9 / 2;
+         var10001 = com.BM.C(this.o);
+         if (var3 == null) {
+            var10001 = var10001 != 0 ? a(23745, 4742954739731292009L) : 0;
+         }
+
+         int var13 = (var8 + var10001) / 2 - var10 / 2;
+         int var14 = 0;
+         int var15 = com.BM.q(this.o, var12, var11);
+         int var16 = com.BM.Y(this.o, var12, var9, var11);
+         int var17 = com.BM.P(this.o, var13, var11);
+         int var18 = com.BM.w(this.o, var13, var10, var11);
+         byte var66 = var2.equals(com.cN_3.mousePressed);
+         if (var3 == null) {
+            if (var66 != 0) {
+               this.o.requestFocusInWindow();
             }
-            yW.o.repaint();
-        }
-    }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    private boolean n(MouseEvent var1_1, cn_1 var2_2) {
-        block392: {
-            block393: {
-                block406: {
-                    block407: {
-                        block404: {
-                            block405: {
-                                block402: {
-                                    block403: {
-                                        block396: {
-                                            block397: {
-                                                block400: {
-                                                    block401: {
-                                                        block398: {
-                                                            block399: {
-                                                                block394: {
-                                                                    block395: {
-                                                                        block376: {
-                                                                            block377: {
-                                                                                block390: {
-                                                                                    block391: {
-                                                                                        block388: {
-                                                                                            block389: {
-                                                                                                block386: {
-                                                                                                    block387: {
-                                                                                                        block380: {
-                                                                                                            block381: {
-                                                                                                                block384: {
-                                                                                                                    block385: {
-                                                                                                                        block382: {
-                                                                                                                            block383: {
-                                                                                                                                block378: {
-                                                                                                                                    block379: {
-                                                                                                                                        block366: {
-                                                                                                                                            block367: {
-                                                                                                                                                block375: {
-                                                                                                                                                    block372: {
-                                                                                                                                                        block373: {
-                                                                                                                                                            block374: {
-                                                                                                                                                                block370: {
-                                                                                                                                                                    block371: {
-                                                                                                                                                                        block368: {
-                                                                                                                                                                            block369: {
-                                                                                                                                                                                block198: {
-                                                                                                                                                                                    block278: {
-                                                                                                                                                                                        block279: {
-                                                                                                                                                                                            block287: {
-                                                                                                                                                                                                block284: {
-                                                                                                                                                                                                    block285: {
-                                                                                                                                                                                                        block286: {
-                                                                                                                                                                                                            block282: {
-                                                                                                                                                                                                                block283: {
-                                                                                                                                                                                                                    block276: {
-                                                                                                                                                                                                                        block277: {
-                                                                                                                                                                                                                            block281: {
-                                                                                                                                                                                                                                block280: {
-                                                                                                                                                                                                                                    block268: {
-                                                                                                                                                                                                                                        block269: {
-                                                                                                                                                                                                                                            block275: {
-                                                                                                                                                                                                                                                block272: {
-                                                                                                                                                                                                                                                    block273: {
-                                                                                                                                                                                                                                                        block274: {
-                                                                                                                                                                                                                                                            block270: {
-                                                                                                                                                                                                                                                                block271: {
-                                                                                                                                                                                                                                                                    block266: {
-                                                                                                                                                                                                                                                                        block267: {
-                                                                                                                                                                                                                                                                            block258: {
-                                                                                                                                                                                                                                                                                block259: {
-                                                                                                                                                                                                                                                                                    block265: {
-                                                                                                                                                                                                                                                                                        block262: {
-                                                                                                                                                                                                                                                                                            block263: {
-                                                                                                                                                                                                                                                                                                block264: {
-                                                                                                                                                                                                                                                                                                    block260: {
-                                                                                                                                                                                                                                                                                                        block261: {
-                                                                                                                                                                                                                                                                                                            block256: {
-                                                                                                                                                                                                                                                                                                                block257: {
-                                                                                                                                                                                                                                                                                                                    block248: {
-                                                                                                                                                                                                                                                                                                                        block249: {
-                                                                                                                                                                                                                                                                                                                            block255: {
-                                                                                                                                                                                                                                                                                                                                block252: {
-                                                                                                                                                                                                                                                                                                                                    block253: {
-                                                                                                                                                                                                                                                                                                                                        block254: {
-                                                                                                                                                                                                                                                                                                                                            block250: {
-                                                                                                                                                                                                                                                                                                                                                block251: {
-                                                                                                                                                                                                                                                                                                                                                    block246: {
-                                                                                                                                                                                                                                                                                                                                                        block247: {
-                                                                                                                                                                                                                                                                                                                                                            block238: {
-                                                                                                                                                                                                                                                                                                                                                                block239: {
-                                                                                                                                                                                                                                                                                                                                                                    block245: {
-                                                                                                                                                                                                                                                                                                                                                                        block242: {
-                                                                                                                                                                                                                                                                                                                                                                            block243: {
-                                                                                                                                                                                                                                                                                                                                                                                block244: {
-                                                                                                                                                                                                                                                                                                                                                                                    block240: {
-                                                                                                                                                                                                                                                                                                                                                                                        block241: {
-                                                                                                                                                                                                                                                                                                                                                                                            block236: {
-                                                                                                                                                                                                                                                                                                                                                                                                block237: {
-                                                                                                                                                                                                                                                                                                                                                                                                    block228: {
-                                                                                                                                                                                                                                                                                                                                                                                                        block229: {
-                                                                                                                                                                                                                                                                                                                                                                                                            block235: {
-                                                                                                                                                                                                                                                                                                                                                                                                                block232: {
-                                                                                                                                                                                                                                                                                                                                                                                                                    block233: {
-                                                                                                                                                                                                                                                                                                                                                                                                                        block234: {
-                                                                                                                                                                                                                                                                                                                                                                                                                            block230: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                block231: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                    block226: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                        block227: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                            block224: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                block225: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    block223: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        block222: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            block215: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                block212: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    block221: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        block218: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            block219: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                block220: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    block216: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        block217: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            block213: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                block214: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    block211: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        block207: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            block208: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                block209: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    block210: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        block205: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            block206: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                block203: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    block204: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        block201: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            block202: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                block199: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    block200: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var4_3 = this.o.O();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var3_4 = kd_1.u();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var4_3 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            return false;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var5_5 = var1_1.getX();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var6_6 = var1_1.getY();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var7_7 = this.o.getWidth();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var8_8 = this.o.getHeight();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var9_9 = var4_3.getWidth() * BM.B(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var10_10 = var4_3.getHeight() * BM.B(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var11_11 = BM.v(this.o).U();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v0 = BM.C(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            v0 = v0 != 0 ? YW.a(30561, 4735278992581391554L) : 0;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var12_12 = (var7_7 + v0) / 2 - var9_9 / 2;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v1 = BM.C(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            v1 = v1 != 0 ? YW.a(23745, 4742954739731292009L) : 0;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var13_13 = (var8_8 + v1) / 2 - var10_10 / 2;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var14_14 = 0;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var15_15 = BM.q(this.o, var12_12, var11_11);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var16_16 = BM.Y(this.o, var12_12, var9_9, var11_11);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var17_17 = BM.P(this.o, var13_13, var11_11);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        var18_18 = BM.w(this.o, var13_13, var10_10, var11_11);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v2 = var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (v2 != 0) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                this.o.requestFocusInWindow();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            v2 = BM.D(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block199;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (v2 != 0) break block200;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v2 = BM.x(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block201;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (v2 == 0) break block202;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    v2 = var2_2.equals((Object)cn_1.mouseMoved);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                if (var3_4 != null) break block203;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                if (v2 != 0) break block204;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            v2 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block203;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (v2 != 0) break block204;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v2 = var2_2.equals((Object)cn_1.mouseEntered);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block203;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (v2 != 0) break block204;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v3 = var2_2.equals((Object)cn_1.mouseExited);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block205;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (v3 == 0) break block206;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    v2 = 1;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                var14_14 = v2;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            v3 = BM.w(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block207;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (v3 != 0) break block208;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v3 = var2_2.equals((Object)cn_1.mouseWheelMoved);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block207;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (v3 == 0) break block208;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v4 = var1_1;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block209;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (FN.m(v4)) break block210;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v3 = FN.O(var1_1);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block207;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (v3 == 0) break block208;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    v4 = var1_1;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                var19_19 = (MouseWheelEvent)v4;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                this.o.b(this.o.F() - var19_19.getWheelRotation());
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                this.o.setCursor(Cursor.getDefaultCursor());
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                return (boolean)var14_14;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            v3 = SwingUtilities.isMiddleMouseButton(var1_1);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block211;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (v3 == 0) break block212;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v3 = this.f;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block213;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (v3 != 0) break block214;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    v5 = this.o;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block215;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (BM.w(v5)) break block212;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                v3 = var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block216;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (v3 == 0) break block217;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            BM.Z(this.o, true);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            this.f = true;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            this.h = this.o.getVisibleRect();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            var1_1 = SwingUtilities.convertMouseEvent(this.o, var1_1, BM.t(this.o));
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            this.k = var1_1.getX();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            this.O = var1_1.getY();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            this.o.setCursor(Cursor.getPredefinedCursor(YW.a(19354, 1458221832100988988L)));
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) break block218;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v3 = this.f;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block219;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (v3 == 0) break block220;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    v3 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block219;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (v3 == 0) break block220;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    var1_1 = SwingUtilities.convertMouseEvent(this.o, var1_1, BM.t(this.o));
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    BM.t(this.o).A().setValue(this.h.x - (var1_1.getX() - this.k));
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    BM.t(this.o).i().setValue(this.h.y - (var1_1.getY() - this.O));
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    this.o.setCursor(Cursor.getPredefinedCursor(YW.a(3469, 3902783817702149672L)));
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) break block218;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                v3 = this.f;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block221;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (v3 == 0) break block218;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            v3 = var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block221;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (v3 != 0) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                BM.Z(this.o, false);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                this.f = false;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                this.o.setCursor(Cursor.getDefaultCursor());
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        v3 = var14_14;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    return (boolean)v3;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                v5 = this.o;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block222;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (BM.v(v5) == null) break block223;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            v6 = this;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block224;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            v5 = v6.o;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (BM.E(v5) != null) break block225;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    return (boolean)var14_14;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                v6 = this;
-                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                                            v7 = v6.M;
-                                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block226;
-                                                                                                                                                                                                                                                                                                                                                                                                                                            if (v7 != 0) break block227;
-                                                                                                                                                                                                                                                                                                                                                                                                                                            v8 = BM.w(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block228;
-                                                                                                                                                                                                                                                                                                                                                                                                                                            if (v8 != 0) break block229;
-                                                                                                                                                                                                                                                                                                                                                                                                                                            v8 = new Rectangle(var15_15, var13_13 + var10_10, var16_16 - var15_15, BM.B(this.o)).contains(var5_5, var6_6);
-                                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block228;
-                                                                                                                                                                                                                                                                                                                                                                                                                                            if (v8 == 0) break block229;
-                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                        v7 = var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block230;
-                                                                                                                                                                                                                                                                                                                                                                                                                                    if (v7 == 0) break block231;
-                                                                                                                                                                                                                                                                                                                                                                                                                                    BM.Z(this.o, true);
-                                                                                                                                                                                                                                                                                                                                                                                                                                    this.M = true;
-                                                                                                                                                                                                                                                                                                                                                                                                                                    this.k = var5_5;
-                                                                                                                                                                                                                                                                                                                                                                                                                                    this.j = var11_11;
-                                                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) break block232;
-                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                v7 = this.M;
-                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block233;
-                                                                                                                                                                                                                                                                                                                                                                                                                            if (v7 == 0) break block234;
-                                                                                                                                                                                                                                                                                                                                                                                                                            v7 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block233;
-                                                                                                                                                                                                                                                                                                                                                                                                                            if (v7 == 0) break block234;
-                                                                                                                                                                                                                                                                                                                                                                                                                            var19_20 = (var5_5 - this.k) / BM.B(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                            v9 = var20_32 = this.j.left + var19_20;
-                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                if (v9 < 0) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                    var20_32 = 0;
-                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                v9 = var20_32;
-                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                            v10 = var4_3.getWidth() - 1;
-                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                if (v9 > v10) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                    var20_32 = var4_3.getWidth() - 1;
-                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                v9 = this.j.right;
-                                                                                                                                                                                                                                                                                                                                                                                                                                v10 = var19_20;
-                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                            v11 = var21_44 = v9 - v10;
-                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                if (v11 < 0) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                    var21_44 = 0;
-                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                v11 = var21_44;
-                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                if (v11 > var4_3.getWidth() - 1) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                    var21_44 = var4_3.getWidth() - 1;
-                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                BM.v(this.o).t(this.j.top, var20_32, this.j.bottom, var21_44);
-                                                                                                                                                                                                                                                                                                                                                                                                                                v11 = 1;
-                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                            var14_14 = v11;
-                                                                                                                                                                                                                                                                                                                                                                                                                            BM.A(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) break block232;
-                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                        v7 = this.M;
-                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block235;
-                                                                                                                                                                                                                                                                                                                                                                                                                    if (v7 == 0) break block232;
-                                                                                                                                                                                                                                                                                                                                                                                                                    v7 = var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block235;
-                                                                                                                                                                                                                                                                                                                                                                                                                    if (v7 != 0) {
-                                                                                                                                                                                                                                                                                                                                                                                                                        BM.Z(this.o, false);
-                                                                                                                                                                                                                                                                                                                                                                                                                        this.M = false;
-                                                                                                                                                                                                                                                                                                                                                                                                                        BM.U(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                        BM.A(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                this.o.setCursor(Cursor.getPredefinedCursor(YW.a(28457, 3903936605368315021L)));
-                                                                                                                                                                                                                                                                                                                                                                                                                v7 = var14_14;
-                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                            return (boolean)v7;
-                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                        v8 = this.H;
-                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block236;
-                                                                                                                                                                                                                                                                                                                                                                                                    if (v8 != 0) break block237;
-                                                                                                                                                                                                                                                                                                                                                                                                    v12 = BM.w(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block238;
-                                                                                                                                                                                                                                                                                                                                                                                                    if (v12 != 0) break block239;
-                                                                                                                                                                                                                                                                                                                                                                                                    v12 = new Rectangle(var12_12 + var9_9, var17_17, BM.B(this.o), var18_18 - var17_17).contains(var5_5, var6_6);
-                                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block238;
-                                                                                                                                                                                                                                                                                                                                                                                                    if (v12 == 0) break block239;
-                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                v8 = var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block240;
-                                                                                                                                                                                                                                                                                                                                                                                            if (v8 == 0) break block241;
-                                                                                                                                                                                                                                                                                                                                                                                            BM.Z(this.o, true);
-                                                                                                                                                                                                                                                                                                                                                                                            this.H = true;
-                                                                                                                                                                                                                                                                                                                                                                                            this.O = var6_6;
-                                                                                                                                                                                                                                                                                                                                                                                            this.j = var11_11;
-                                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) break block242;
-                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                        v8 = this.H;
-                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block243;
-                                                                                                                                                                                                                                                                                                                                                                                    if (v8 == 0) break block244;
-                                                                                                                                                                                                                                                                                                                                                                                    v8 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block243;
-                                                                                                                                                                                                                                                                                                                                                                                    if (v8 == 0) break block244;
-                                                                                                                                                                                                                                                                                                                                                                                    var19_21 = (var6_6 - this.O) / BM.B(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                    v13 = var20_33 = this.j.top + var19_21;
-                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                        if (v13 < 0) {
-                                                                                                                                                                                                                                                                                                                                                                                            var20_33 = 0;
-                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                        v13 = var20_33;
-                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                    v14 = var4_3.getHeight() - 1;
-                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                        if (v13 > v14) {
-                                                                                                                                                                                                                                                                                                                                                                                            var20_33 = var4_3.getHeight() - 1;
-                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                        v13 = this.j.bottom;
-                                                                                                                                                                                                                                                                                                                                                                                        v14 = var19_21;
-                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                    v15 = var21_45 = v13 - v14;
-                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                        if (v15 < 0) {
-                                                                                                                                                                                                                                                                                                                                                                                            var21_45 = 0;
-                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                        v15 = var21_45;
-                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                                                        if (v15 > var4_3.getHeight() - 1) {
-                                                                                                                                                                                                                                                                                                                                                                                            var21_45 = var4_3.getHeight() - 1;
-                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                        BM.v(this.o).t(var20_33, this.j.left, var21_45, this.j.right);
-                                                                                                                                                                                                                                                                                                                                                                                        v15 = 1;
-                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                    var14_14 = v15;
-                                                                                                                                                                                                                                                                                                                                                                                    BM.A(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) break block242;
-                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                v8 = this.H;
-                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block245;
-                                                                                                                                                                                                                                                                                                                                                                            if (v8 == 0) break block242;
-                                                                                                                                                                                                                                                                                                                                                                            v8 = var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block245;
-                                                                                                                                                                                                                                                                                                                                                                            if (v8 != 0) {
-                                                                                                                                                                                                                                                                                                                                                                                BM.Z(this.o, false);
-                                                                                                                                                                                                                                                                                                                                                                                this.H = false;
-                                                                                                                                                                                                                                                                                                                                                                                BM.U(this.o);
-                                                                                                                                                                                                                                                                                                                                                                                BM.A(this.o);
-                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                        this.o.setCursor(Cursor.getPredefinedCursor(YW.a(25620, 4591689828834764723L)));
-                                                                                                                                                                                                                                                                                                                                                                        v8 = var14_14;
-                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                    return (boolean)v8;
-                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                v12 = this.Q;
-                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block246;
-                                                                                                                                                                                                                                                                                                                                                            if (v12 != 0) break block247;
-                                                                                                                                                                                                                                                                                                                                                            v16 = BM.w(this.o);
-                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block248;
-                                                                                                                                                                                                                                                                                                                                                            if (v16 != 0) break block249;
-                                                                                                                                                                                                                                                                                                                                                            v16 = var6_6;
-                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block248;
-                                                                                                                                                                                                                                                                                                                                                            if (v16 < var13_13) break block249;
-                                                                                                                                                                                                                                                                                                                                                            v16 = var15_15 + BM.g(this.o);
-                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block248;
-                                                                                                                                                                                                                                                                                                                                                            if (v16 < var5_5) break block249;
-                                                                                                                                                                                                                                                                                                                                                            v16 = var15_15 - BM.g(this.o);
-                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block248;
-                                                                                                                                                                                                                                                                                                                                                            if (v16 > var5_5) break block249;
-                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                        v12 = var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block250;
-                                                                                                                                                                                                                                                                                                                                                    if (v12 == 0) break block251;
-                                                                                                                                                                                                                                                                                                                                                    BM.Z(this.o, true);
-                                                                                                                                                                                                                                                                                                                                                    this.Q = true;
-                                                                                                                                                                                                                                                                                                                                                    this.k = var5_5;
-                                                                                                                                                                                                                                                                                                                                                    this.j = var11_11;
-                                                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) break block252;
-                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                v12 = this.Q;
-                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block253;
-                                                                                                                                                                                                                                                                                                                                            if (v12 == 0) break block254;
-                                                                                                                                                                                                                                                                                                                                            v12 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block253;
-                                                                                                                                                                                                                                                                                                                                            if (v12 == 0) break block254;
-                                                                                                                                                                                                                                                                                                                                            var19_22 = (var5_5 - this.k) / BM.B(this.o);
-                                                                                                                                                                                                                                                                                                                                            v17 = var20_34 = this.j.left + var19_22;
-                                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                if (v17 < 0) {
-                                                                                                                                                                                                                                                                                                                                                    var20_34 = 0;
-                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                v17 = var20_34;
-                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                if (v17 > var4_3.getWidth() - this.j.right - 1) {
-                                                                                                                                                                                                                                                                                                                                                    var20_34 = var4_3.getWidth() - this.j.right - 1;
-                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                BM.v(this.o).t(this.j.top, var20_34, this.j.bottom, this.j.right);
-                                                                                                                                                                                                                                                                                                                                                v17 = 1;
-                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                            var14_14 = v17;
-                                                                                                                                                                                                                                                                                                                                            BM.A(this.o);
-                                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) break block252;
-                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                        v12 = this.Q;
-                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block255;
-                                                                                                                                                                                                                                                                                                                                    if (v12 == 0) break block252;
-                                                                                                                                                                                                                                                                                                                                    v12 = var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block255;
-                                                                                                                                                                                                                                                                                                                                    if (v12 != 0) {
-                                                                                                                                                                                                                                                                                                                                        BM.Z(this.o, false);
-                                                                                                                                                                                                                                                                                                                                        this.Q = false;
-                                                                                                                                                                                                                                                                                                                                        BM.U(this.o);
-                                                                                                                                                                                                                                                                                                                                        BM.A(this.o);
-                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                this.o.setCursor(Cursor.getPredefinedCursor(YW.a(12032, 7575239365437598881L)));
-                                                                                                                                                                                                                                                                                                                                v12 = var14_14;
-                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                            return (boolean)v12;
-                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                        v16 = (int)this.z;
-                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block256;
-                                                                                                                                                                                                                                                                                                                    if (v16 != 0) break block257;
-                                                                                                                                                                                                                                                                                                                    v18 = BM.w(this.o);
-                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block258;
-                                                                                                                                                                                                                                                                                                                    if (v18 != 0) break block259;
-                                                                                                                                                                                                                                                                                                                    v18 = var6_6;
-                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block258;
-                                                                                                                                                                                                                                                                                                                    if (v18 < var13_13) break block259;
-                                                                                                                                                                                                                                                                                                                    v18 = var16_16 + BM.g(this.o);
-                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block258;
-                                                                                                                                                                                                                                                                                                                    if (v18 < var5_5) break block259;
-                                                                                                                                                                                                                                                                                                                    v18 = var16_16 - BM.g(this.o);
-                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block258;
-                                                                                                                                                                                                                                                                                                                    if (v18 > var5_5) break block259;
-                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                v16 = (int)var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block260;
-                                                                                                                                                                                                                                                                                                            if (v16 == 0) break block261;
-                                                                                                                                                                                                                                                                                                            BM.Z(this.o, true);
-                                                                                                                                                                                                                                                                                                            this.z = true;
-                                                                                                                                                                                                                                                                                                            this.k = var5_5;
-                                                                                                                                                                                                                                                                                                            this.j = var11_11;
-                                                                                                                                                                                                                                                                                                            if (var3_4 == null) break block262;
-                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                        v16 = (int)this.z;
-                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block263;
-                                                                                                                                                                                                                                                                                                    if (v16 == 0) break block264;
-                                                                                                                                                                                                                                                                                                    v16 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block263;
-                                                                                                                                                                                                                                                                                                    if (v16 == 0) break block264;
-                                                                                                                                                                                                                                                                                                    var19_23 = (var5_5 - this.k) / BM.B(this.o);
-                                                                                                                                                                                                                                                                                                    v19 = var20_35 = this.j.right - var19_23;
-                                                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                        if (v19 < 0) {
-                                                                                                                                                                                                                                                                                                            var20_35 = 0;
-                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                        v19 = var20_35;
-                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                        if (v19 > var4_3.getWidth() - this.j.left - 1) {
-                                                                                                                                                                                                                                                                                                            var20_35 = var4_3.getWidth() - this.j.left - 1;
-                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                        BM.v(this.o).t(this.j.top, this.j.left, this.j.bottom, var20_35);
-                                                                                                                                                                                                                                                                                                        v19 = 1;
-                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                    var14_14 = v19;
-                                                                                                                                                                                                                                                                                                    BM.A(this.o);
-                                                                                                                                                                                                                                                                                                    if (var3_4 == null) break block262;
-                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                v16 = (int)this.z;
-                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block265;
-                                                                                                                                                                                                                                                                                            if (v16 == 0) break block262;
-                                                                                                                                                                                                                                                                                            v16 = (int)var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block265;
-                                                                                                                                                                                                                                                                                            if (v16 != 0) {
-                                                                                                                                                                                                                                                                                                BM.Z(this.o, false);
-                                                                                                                                                                                                                                                                                                this.z = false;
-                                                                                                                                                                                                                                                                                                BM.U(this.o);
-                                                                                                                                                                                                                                                                                                BM.A(this.o);
-                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                        this.o.setCursor(Cursor.getPredefinedCursor(YW.a(9245, 4824231993813116861L)));
-                                                                                                                                                                                                                                                                                        v16 = var14_14;
-                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                    return (boolean)v16;
-                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                v18 = (int)this.T;
-                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                            if (var3_4 != null) break block266;
-                                                                                                                                                                                                                                                                            if (v18 != 0) break block267;
-                                                                                                                                                                                                                                                                            v20 = BM.w(this.o);
-                                                                                                                                                                                                                                                                            if (var3_4 != null) break block268;
-                                                                                                                                                                                                                                                                            if (v20 != 0) break block269;
-                                                                                                                                                                                                                                                                            v20 = var5_5;
-                                                                                                                                                                                                                                                                            if (var3_4 != null) break block268;
-                                                                                                                                                                                                                                                                            if (v20 < var12_12) break block269;
-                                                                                                                                                                                                                                                                            v20 = var17_17 + BM.g(this.o);
-                                                                                                                                                                                                                                                                            if (var3_4 != null) break block268;
-                                                                                                                                                                                                                                                                            if (v20 < var6_6) break block269;
-                                                                                                                                                                                                                                                                            v20 = var17_17 - BM.g(this.o);
-                                                                                                                                                                                                                                                                            if (var3_4 != null) break block268;
-                                                                                                                                                                                                                                                                            if (v20 > var6_6) break block269;
-                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                        v18 = (int)var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                    if (var3_4 != null) break block270;
-                                                                                                                                                                                                                                                                    if (v18 == 0) break block271;
-                                                                                                                                                                                                                                                                    BM.Z(this.o, true);
-                                                                                                                                                                                                                                                                    this.T = true;
-                                                                                                                                                                                                                                                                    this.O = var6_6;
-                                                                                                                                                                                                                                                                    this.j = var11_11;
-                                                                                                                                                                                                                                                                    if (var3_4 == null) break block272;
-                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                v18 = (int)this.T;
-                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                            if (var3_4 != null) break block273;
-                                                                                                                                                                                                                                                            if (v18 == 0) break block274;
-                                                                                                                                                                                                                                                            v18 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                                                            if (var3_4 != null) break block273;
-                                                                                                                                                                                                                                                            if (v18 == 0) break block274;
-                                                                                                                                                                                                                                                            var19_24 = (var6_6 - this.O) / BM.B(this.o);
-                                                                                                                                                                                                                                                            v21 = var20_36 = this.j.top + var19_24;
-                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                if (v21 < 0) {
-                                                                                                                                                                                                                                                                    var20_36 = 0;
-                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                v21 = var20_36;
-                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                if (v21 > var4_3.getHeight() - this.j.bottom - 1) {
-                                                                                                                                                                                                                                                                    var20_36 = var4_3.getHeight() - this.j.bottom - 1;
-                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                BM.v(this.o).t(var20_36, this.j.left, this.j.bottom, this.j.right);
-                                                                                                                                                                                                                                                                v21 = 1;
-                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                            var14_14 = v21;
-                                                                                                                                                                                                                                                            BM.A(this.o);
-                                                                                                                                                                                                                                                            if (var3_4 == null) break block272;
-                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                        v18 = (int)this.T;
-                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                    if (var3_4 != null) break block275;
-                                                                                                                                                                                                                                                    if (v18 == 0) break block272;
-                                                                                                                                                                                                                                                    v18 = (int)var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                                                                    if (var3_4 != null) break block275;
-                                                                                                                                                                                                                                                    if (v18 != 0) {
-                                                                                                                                                                                                                                                        BM.Z(this.o, false);
-                                                                                                                                                                                                                                                        this.T = false;
-                                                                                                                                                                                                                                                        BM.U(this.o);
-                                                                                                                                                                                                                                                        BM.A(this.o);
-                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                this.o.setCursor(Cursor.getPredefinedCursor(YW.a(1392, 5711206895726462674L)));
-                                                                                                                                                                                                                                                v18 = var14_14;
-                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                            return (boolean)v18;
-                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                        v20 = (int)this.i;
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    if (var3_4 != null) break block276;
-                                                                                                                                                                                                                                    if (v20 != 0) break block277;
-                                                                                                                                                                                                                                    v22 = this.o;
-                                                                                                                                                                                                                                    if (var3_4 != null) break block278;
-                                                                                                                                                                                                                                    if (BM.w(v22)) break block279;
-                                                                                                                                                                                                                                    v20 = var5_5;
-                                                                                                                                                                                                                                    v23 = var12_12;
-                                                                                                                                                                                                                                    if (var3_4 != null) break block280;
-                                                                                                                                                                                                                                    if (v20 < v23) break block279;
-                                                                                                                                                                                                                                    v20 = var18_18 + BM.g(this.o);
-                                                                                                                                                                                                                                    v23 = var6_6;
-                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                if (var3_4 != null) break block281;
-                                                                                                                                                                                                                                if (v20 < v23) break block279;
-                                                                                                                                                                                                                                v20 = var18_18 - BM.g(this.o);
-                                                                                                                                                                                                                                if (var3_4 != null) break block276;
-                                                                                                                                                                                                                                v23 = var6_6;
-                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                            if (v20 > v23) break block279;
-                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                        v20 = (int)var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                    if (var3_4 != null) break block282;
-                                                                                                                                                                                                                    if (v20 == 0) break block283;
-                                                                                                                                                                                                                    BM.Z(this.o, true);
-                                                                                                                                                                                                                    this.i = true;
-                                                                                                                                                                                                                    this.O = var6_6;
-                                                                                                                                                                                                                    this.j = var11_11;
-                                                                                                                                                                                                                    if (var3_4 == null) break block284;
-                                                                                                                                                                                                                }
-                                                                                                                                                                                                                v20 = (int)this.i;
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                            if (var3_4 != null) break block285;
-                                                                                                                                                                                                            if (v20 == 0) break block286;
-                                                                                                                                                                                                            v20 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                            if (var3_4 != null) break block285;
-                                                                                                                                                                                                            if (v20 == 0) break block286;
-                                                                                                                                                                                                            var19_25 = (var6_6 - this.O) / BM.B(this.o);
-                                                                                                                                                                                                            v24 = var20_37 = this.j.bottom - var19_25;
-                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                if (v24 < 0) {
-                                                                                                                                                                                                                    var20_37 = 0;
-                                                                                                                                                                                                                }
-                                                                                                                                                                                                                v24 = var20_37;
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                if (v24 > var4_3.getHeight() - this.j.top - 1) {
-                                                                                                                                                                                                                    var20_37 = var4_3.getHeight() - this.j.top - 1;
-                                                                                                                                                                                                                }
-                                                                                                                                                                                                                BM.v(this.o).t(this.j.top, this.j.left, var20_37, this.j.right);
-                                                                                                                                                                                                                v24 = 1;
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                            var14_14 = v24;
-                                                                                                                                                                                                            BM.A(this.o);
-                                                                                                                                                                                                            if (var3_4 == null) break block284;
-                                                                                                                                                                                                        }
-                                                                                                                                                                                                        v20 = (int)this.i;
-                                                                                                                                                                                                    }
-                                                                                                                                                                                                    if (var3_4 != null) break block287;
-                                                                                                                                                                                                    if (v20 == 0) break block284;
-                                                                                                                                                                                                    v20 = (int)var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                    if (var3_4 != null) break block287;
-                                                                                                                                                                                                    if (v20 != 0) {
-                                                                                                                                                                                                        BM.Z(this.o, false);
-                                                                                                                                                                                                        this.i = false;
-                                                                                                                                                                                                        BM.U(this.o);
-                                                                                                                                                                                                        BM.A(this.o);
-                                                                                                                                                                                                    }
-                                                                                                                                                                                                }
-                                                                                                                                                                                                this.o.setCursor(Cursor.getPredefinedCursor(YW.a(5450, 4092936664386377443L)));
-                                                                                                                                                                                                v20 = var14_14;
-                                                                                                                                                                                            }
-                                                                                                                                                                                            return (boolean)v20;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        v22 = this.o;
-                                                                                                                                                                                    }
-                                                                                                                                                                                    var19_26 = BM.v(v22).U().iterator();
-                                                                                                                                                                                    while (var19_26.hasNext()) {
-                                                                                                                                                                                        block289: {
-                                                                                                                                                                                            block328: {
-                                                                                                                                                                                                block323: {
-                                                                                                                                                                                                    block324: {
-                                                                                                                                                                                                        block325: {
-                                                                                                                                                                                                            block327: {
-                                                                                                                                                                                                                block326: {
-                                                                                                                                                                                                                    block321: {
-                                                                                                                                                                                                                        block322: {
-                                                                                                                                                                                                                            block317: {
-                                                                                                                                                                                                                                block318: {
-                                                                                                                                                                                                                                    block320: {
-                                                                                                                                                                                                                                        block319: {
-                                                                                                                                                                                                                                            block315: {
-                                                                                                                                                                                                                                                block316: {
-                                                                                                                                                                                                                                                    block307: {
-                                                                                                                                                                                                                                                        block308: {
-                                                                                                                                                                                                                                                            block314: {
-                                                                                                                                                                                                                                                                block311: {
-                                                                                                                                                                                                                                                                    block312: {
-                                                                                                                                                                                                                                                                        block313: {
-                                                                                                                                                                                                                                                                            block309: {
-                                                                                                                                                                                                                                                                                block310: {
-                                                                                                                                                                                                                                                                                    block305: {
-                                                                                                                                                                                                                                                                                        block306: {
-                                                                                                                                                                                                                                                                                            block303: {
-                                                                                                                                                                                                                                                                                                block304: {
-                                                                                                                                                                                                                                                                                                    block302: {
-                                                                                                                                                                                                                                                                                                        block294: {
-                                                                                                                                                                                                                                                                                                            block295: {
-                                                                                                                                                                                                                                                                                                                block301: {
-                                                                                                                                                                                                                                                                                                                    block298: {
-                                                                                                                                                                                                                                                                                                                        block299: {
-                                                                                                                                                                                                                                                                                                                            block300: {
-                                                                                                                                                                                                                                                                                                                                block296: {
-                                                                                                                                                                                                                                                                                                                                    block297: {
-                                                                                                                                                                                                                                                                                                                                        block292: {
-                                                                                                                                                                                                                                                                                                                                            block293: {
-                                                                                                                                                                                                                                                                                                                                                block290: {
-                                                                                                                                                                                                                                                                                                                                                    block291: {
-                                                                                                                                                                                                                                                                                                                                                        block288: {
-                                                                                                                                                                                                                                                                                                                                                            var20_38 = (EZ)var19_26.next();
-                                                                                                                                                                                                                                                                                                                                                            v25 = var20_38.C();
-                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) ** GOTO lbl813
-                                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block288;
-                                                                                                                                                                                                                                                                                                                                                            if (v25) break block289;
-                                                                                                                                                                                                                                                                                                                                                            v26 = this.Z;
-                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block290;
-                                                                                                                                                                                                                                                                                                                                                        if (v26 == 0) break block291;
-                                                                                                                                                                                                                                                                                                                                                        v27 = this.g.Y(var20_38);
-                                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block292;
-                                                                                                                                                                                                                                                                                                                                                        if (v27 != 0) break block293;
-                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                    v26 = BM.w(this.o);
-                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                if (var3_4 != null) break block294;
-                                                                                                                                                                                                                                                                                                                                                if (v26 != 0) break block295;
-                                                                                                                                                                                                                                                                                                                                                v26 = (int)new Rectangle(var12_12 + var20_38.x() * BM.B(this.o), var13_13 - BM.B(this.o), (var20_38.f() - var20_38.x() + 1) * BM.B(this.o), BM.B(this.o) + (BM.K(this.o) != false ? var10_10 : 0)).contains(var5_5, var6_6);
-                                                                                                                                                                                                                                                                                                                                                if (var3_4 != null) break block294;
-                                                                                                                                                                                                                                                                                                                                                if (v26 == 0) break block295;
-                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                            v27 = var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block296;
-                                                                                                                                                                                                                                                                                                                                        if (v27 == 0) break block297;
-                                                                                                                                                                                                                                                                                                                                        BM.Z(this.o, true);
-                                                                                                                                                                                                                                                                                                                                        this.Z = true;
-                                                                                                                                                                                                                                                                                                                                        this.k = var5_5;
-                                                                                                                                                                                                                                                                                                                                        this.g = var20_38.R();
-                                                                                                                                                                                                                                                                                                                                        if (var3_4 == null) break block298;
-                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                    v27 = this.Z;
-                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                if (var3_4 != null) break block299;
-                                                                                                                                                                                                                                                                                                                                if (v27 == 0) break block300;
-                                                                                                                                                                                                                                                                                                                                v27 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                                                                                                                                if (var3_4 != null) break block299;
-                                                                                                                                                                                                                                                                                                                                if (v27 == 0) break block300;
-                                                                                                                                                                                                                                                                                                                                var21_46 = (var5_5 - this.k) / BM.B(this.o);
-                                                                                                                                                                                                                                                                                                                                v28 = var22_53 = this.g.x() + var21_46;
-                                                                                                                                                                                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                    if (v28 < 0) {
-                                                                                                                                                                                                                                                                                                                                        var22_53 = 0;
-                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                    v28 = var22_53;
-                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                v29 = var4_3.getWidth() - 1;
-                                                                                                                                                                                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                    if (v28 > v29) {
-                                                                                                                                                                                                                                                                                                                                        var22_53 = var4_3.getWidth() - 1;
-                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                    v28 = this.g.f();
-                                                                                                                                                                                                                                                                                                                                    v29 = var21_46;
-                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                v30 = var23_60 = v28 + v29;
-                                                                                                                                                                                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                    if (v30 < 0) {
-                                                                                                                                                                                                                                                                                                                                        var23_60 = 0;
-                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                    v30 = var23_60;
-                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                    if (v30 > var4_3.getWidth() - 1) {
-                                                                                                                                                                                                                                                                                                                                        var23_60 = var4_3.getWidth() - 1;
-                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                    var20_38.z(var22_53);
-                                                                                                                                                                                                                                                                                                                                    var20_38.T(var23_60);
-                                                                                                                                                                                                                                                                                                                                    v30 = var14_14 = 1;
-                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                if (var3_4 == null) break block298;
-                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                            v27 = this.Z;
-                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block301;
-                                                                                                                                                                                                                                                                                                                        if (v27 == 0) break block298;
-                                                                                                                                                                                                                                                                                                                        v27 = var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block301;
-                                                                                                                                                                                                                                                                                                                        if (v27 != 0) {
-                                                                                                                                                                                                                                                                                                                            BM.Z(this.o, false);
-                                                                                                                                                                                                                                                                                                                            this.Z = false;
-                                                                                                                                                                                                                                                                                                                            BM.W(this.o);
-                                                                                                                                                                                                                                                                                                                            var14_14 = 1;
-                                                                                                                                                                                                                                                                                                                            BM.U(this.o);
-                                                                                                                                                                                                                                                                                                                            BM.A(this.o);
-                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                    this.o.setCursor(Cursor.getPredefinedCursor(YW.a(25620, 4591689828834764723L)));
-                                                                                                                                                                                                                                                                                                                    v27 = var14_14;
-                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                return (boolean)v27;
-                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                            v26 = var6_6;
-                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                        if (var3_4 != null) break block302;
-                                                                                                                                                                                                                                                                                                        if (v26 > var13_13 + var10_10) break block289;
-                                                                                                                                                                                                                                                                                                        v26 = (int)this.G;
-                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block303;
-                                                                                                                                                                                                                                                                                                    if (v26 == 0) break block304;
-                                                                                                                                                                                                                                                                                                    v31 = this.g.Y(var20_38);
-                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block305;
-                                                                                                                                                                                                                                                                                                    if (v31 != 0) break block306;
-                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                v26 = (int)BM.w(this.o);
-                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block307;
-                                                                                                                                                                                                                                                                                            if (v26 != 0) break block308;
-                                                                                                                                                                                                                                                                                            v26 = var12_12 + var20_38.x() * BM.B(this.o) - BM.g(this.o);
-                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block307;
-                                                                                                                                                                                                                                                                                            if (v26 > var5_5) break block308;
-                                                                                                                                                                                                                                                                                            v26 = var5_5;
-                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block307;
-                                                                                                                                                                                                                                                                                            if (v26 > var12_12 + var20_38.x() * BM.B(this.o) + BM.g(this.o)) break block308;
-                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                        v31 = var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block309;
-                                                                                                                                                                                                                                                                                    if (v31 == 0) break block310;
-                                                                                                                                                                                                                                                                                    BM.Z(this.o, true);
-                                                                                                                                                                                                                                                                                    this.G = true;
-                                                                                                                                                                                                                                                                                    this.k = var5_5;
-                                                                                                                                                                                                                                                                                    this.g = var20_38.R();
-                                                                                                                                                                                                                                                                                    if (var3_4 == null) break block311;
-                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                v31 = this.G;
-                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                            if (var3_4 != null) break block312;
-                                                                                                                                                                                                                                                                            if (v31 == 0) break block313;
-                                                                                                                                                                                                                                                                            v31 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                                                                            if (var3_4 != null) break block312;
-                                                                                                                                                                                                                                                                            if (v31 == 0) break block313;
-                                                                                                                                                                                                                                                                            var21_47 = (var5_5 - this.k) / BM.B(this.o);
-                                                                                                                                                                                                                                                                            v32 = var22_54 = this.g.x() + var21_47;
-                                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                if (v32 < 0) {
-                                                                                                                                                                                                                                                                                    var22_54 = 0;
-                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                v32 = var22_54;
-                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                if (v32 > this.g.f()) {
-                                                                                                                                                                                                                                                                                    var22_54 = this.g.f();
-                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                var20_38.z(var22_54);
-                                                                                                                                                                                                                                                                                v32 = var14_14 = 1;
-                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                            if (var3_4 == null) break block311;
-                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                        v31 = this.G;
-                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                    if (var3_4 != null) break block314;
-                                                                                                                                                                                                                                                                    if (v31 == 0) break block311;
-                                                                                                                                                                                                                                                                    v31 = var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                                                                                    if (var3_4 != null) break block314;
-                                                                                                                                                                                                                                                                    if (v31 != 0) {
-                                                                                                                                                                                                                                                                        BM.Z(this.o, false);
-                                                                                                                                                                                                                                                                        this.G = false;
-                                                                                                                                                                                                                                                                        BM.W(this.o);
-                                                                                                                                                                                                                                                                        var14_14 = 1;
-                                                                                                                                                                                                                                                                        BM.U(this.o);
-                                                                                                                                                                                                                                                                        BM.A(this.o);
-                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                this.o.setCursor(Cursor.getPredefinedCursor(YW.a(9245, 4824231993813116861L)));
-                                                                                                                                                                                                                                                                v31 = var14_14;
-                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                            return (boolean)v31;
-                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                        v26 = (int)this.R;
-                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                    if (var3_4 != null) break block315;
-                                                                                                                                                                                                                                                    if (v26 == 0) break block316;
-                                                                                                                                                                                                                                                    v26 = (int)this.g.Y(var20_38);
-                                                                                                                                                                                                                                                    if (var3_4 != null) break block317;
-                                                                                                                                                                                                                                                    if (v26 != 0) break block318;
-                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                v26 = (int)BM.w(this.o);
-                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                            if (var3_4 != null) break block319;
-                                                                                                                                                                                                                                            if (v26 != 0) break block289;
-                                                                                                                                                                                                                                            v26 = var12_12 + (var20_38.f() + 1) * BM.B(this.o) - BM.g(this.o);
-                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                        v33 = var5_5;
-                                                                                                                                                                                                                                        if (var3_4 != null) break block320;
-                                                                                                                                                                                                                                        if (v26 > v33) break block289;
-                                                                                                                                                                                                                                        v26 = var5_5;
-                                                                                                                                                                                                                                        if (var3_4 != null) break block317;
-                                                                                                                                                                                                                                        v33 = var12_12 + (var20_38.f() + 1) * BM.B(this.o) + BM.g(this.o);
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    if (v26 > v33) break block289;
-                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                v26 = (int)var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                            if (var3_4 != null) break block321;
-                                                                                                                                                                                                                            if (v26 == 0) break block322;
-                                                                                                                                                                                                                            BM.Z(this.o, true);
-                                                                                                                                                                                                                            this.R = true;
-                                                                                                                                                                                                                            this.k = var5_5;
-                                                                                                                                                                                                                            this.g = var20_38.R();
-                                                                                                                                                                                                                            if (var3_4 == null) break block323;
-                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                        v26 = (int)this.R;
-                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                    if (var3_4 != null) break block324;
-                                                                                                                                                                                                                    if (v26 == 0) break block325;
-                                                                                                                                                                                                                    v26 = (int)var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                    if (var3_4 != null) break block324;
-                                                                                                                                                                                                                    if (v26 == 0) break block325;
-                                                                                                                                                                                                                    var21_48 = (var5_5 - this.k) / BM.B(this.o);
-                                                                                                                                                                                                                    v34 = var22_55 = this.g.f() + var21_48;
-                                                                                                                                                                                                                    v35 = this.g.x();
-                                                                                                                                                                                                                    if (var3_4 != null) break block326;
-                                                                                                                                                                                                                    if (v34 < v35) {
-                                                                                                                                                                                                                        var22_55 = this.g.x();
-                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                    v34 = var22_55;
-                                                                                                                                                                                                                    if (var3_4 != null) break block327;
-                                                                                                                                                                                                                    v35 = var4_3.getWidth() - 1;
-                                                                                                                                                                                                                }
-                                                                                                                                                                                                                if (v34 > v35) {
-                                                                                                                                                                                                                    var22_55 = var4_3.getWidth() - 1;
-                                                                                                                                                                                                                }
-                                                                                                                                                                                                                var20_38.T(var22_55);
-                                                                                                                                                                                                                v34 = var14_14 = 1;
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                            if (var3_4 == null) break block323;
-                                                                                                                                                                                                        }
-                                                                                                                                                                                                        v26 = (int)this.R;
-                                                                                                                                                                                                    }
-                                                                                                                                                                                                    if (var3_4 != null) break block328;
-                                                                                                                                                                                                    if (v26 == 0) break block323;
-                                                                                                                                                                                                    v26 = (int)var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                    if (var3_4 != null) break block328;
-                                                                                                                                                                                                    if (v26 != 0) {
-                                                                                                                                                                                                        BM.Z(this.o, false);
-                                                                                                                                                                                                        this.R = false;
-                                                                                                                                                                                                        BM.W(this.o);
-                                                                                                                                                                                                        var14_14 = 1;
-                                                                                                                                                                                                        BM.U(this.o);
-                                                                                                                                                                                                        BM.A(this.o);
-                                                                                                                                                                                                    }
-                                                                                                                                                                                                }
-                                                                                                                                                                                                this.o.setCursor(Cursor.getPredefinedCursor(YW.a(9245, 4824231993813116861L)));
-                                                                                                                                                                                                v26 = var14_14;
-                                                                                                                                                                                            }
-                                                                                                                                                                                            return (boolean)v26;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        if (var3_4 == null) continue;
-                                                                                                                                                                                    }
-                                                                                                                                                                                    var19_26 = BM.v(this.o).g().iterator();
-                                                                                                                                                                                    do {
-                                                                                                                                                                                        block365: {
-                                                                                                                                                                                            block360: {
-                                                                                                                                                                                                block361: {
-                                                                                                                                                                                                    block362: {
-                                                                                                                                                                                                        block364: {
-                                                                                                                                                                                                            block363: {
-                                                                                                                                                                                                                block358: {
-                                                                                                                                                                                                                    block359: {
-                                                                                                                                                                                                                        block355: {
-                                                                                                                                                                                                                            block356: {
-                                                                                                                                                                                                                                block357: {
-                                                                                                                                                                                                                                    block353: {
-                                                                                                                                                                                                                                        block354: {
-                                                                                                                                                                                                                                            block345: {
-                                                                                                                                                                                                                                                block346: {
-                                                                                                                                                                                                                                                    block352: {
-                                                                                                                                                                                                                                                        block349: {
-                                                                                                                                                                                                                                                            block350: {
-                                                                                                                                                                                                                                                                block351: {
-                                                                                                                                                                                                                                                                    block347: {
-                                                                                                                                                                                                                                                                        block348: {
-                                                                                                                                                                                                                                                                            block343: {
-                                                                                                                                                                                                                                                                                block344: {
-                                                                                                                                                                                                                                                                                    block341: {
-                                                                                                                                                                                                                                                                                        block342: {
-                                                                                                                                                                                                                                                                                            block333: {
-                                                                                                                                                                                                                                                                                                block334: {
-                                                                                                                                                                                                                                                                                                    block340: {
-                                                                                                                                                                                                                                                                                                        block337: {
-                                                                                                                                                                                                                                                                                                            block338: {
-                                                                                                                                                                                                                                                                                                                block339: {
-                                                                                                                                                                                                                                                                                                                    block335: {
-                                                                                                                                                                                                                                                                                                                        block336: {
-                                                                                                                                                                                                                                                                                                                            block331: {
-                                                                                                                                                                                                                                                                                                                                block332: {
-                                                                                                                                                                                                                                                                                                                                    block329: {
-                                                                                                                                                                                                                                                                                                                                        block330: {
-                                                                                                                                                                                                                                                                                                                                            v25 = var19_26.hasNext();
-lbl813:
-                                                                                                                                                                                                                                                                                                                                            // 2 sources
+            var66 = com.BM.D(this.o);
+         }
 
-                                                                                                                                                                                                                                                                                                                                            if (!v25) break;
-                                                                                                                                                                                                                                                                                                                                            var20_38 = (EZ)var19_26.next();
-                                                                                                                                                                                                                                                                                                                                            v36 = var20_38.C();
-                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block198;
-                                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                                                if (v36 != 0) continue;
-                                                                                                                                                                                                                                                                                                                                                v37 = this.W;
-                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block329;
-                                                                                                                                                                                                                                                                                                                                            if (v37 == 0) break block330;
-                                                                                                                                                                                                                                                                                                                                            v38 = this.g.Y(var20_38);
-                                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block331;
-                                                                                                                                                                                                                                                                                                                                            if (v38 != 0) break block332;
-                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                        v37 = BM.w(this.o);
-                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block333;
-                                                                                                                                                                                                                                                                                                                                    if (v37 != 0) break block334;
-                                                                                                                                                                                                                                                                                                                                    v37 = (int)new Rectangle(var12_12 - BM.B(this.o), var13_13 + var20_38.x() * BM.B(this.o), BM.B(this.o) + (BM.K(this.o) != false ? var9_9 : 0), (var20_38.f() - var20_38.x() + 1) * BM.B(this.o)).contains(var5_5, var6_6);
-                                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block333;
-                                                                                                                                                                                                                                                                                                                                    if (v37 == 0) break block334;
-                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                v38 = var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block335;
-                                                                                                                                                                                                                                                                                                                            if (v38 == 0) break block336;
-                                                                                                                                                                                                                                                                                                                            BM.Z(this.o, true);
-                                                                                                                                                                                                                                                                                                                            this.W = true;
-                                                                                                                                                                                                                                                                                                                            this.O = var6_6;
-                                                                                                                                                                                                                                                                                                                            this.g = var20_38.R();
-                                                                                                                                                                                                                                                                                                                            if (var3_4 == null) break block337;
-                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                        v38 = this.W;
-                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block338;
-                                                                                                                                                                                                                                                                                                                    if (v38 == 0) break block339;
-                                                                                                                                                                                                                                                                                                                    v38 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block338;
-                                                                                                                                                                                                                                                                                                                    if (v38 == 0) break block339;
-                                                                                                                                                                                                                                                                                                                    var21_49 = (var6_6 - this.O) / BM.B(this.o);
-                                                                                                                                                                                                                                                                                                                    v39 = var22_56 = this.g.x() + var21_49;
-                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                        if (v39 < 0) {
-                                                                                                                                                                                                                                                                                                                            var22_56 = 0;
-                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                        v39 = var22_56;
-                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                    v40 = var4_3.getHeight() - 1;
-                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                        if (v39 > v40) {
-                                                                                                                                                                                                                                                                                                                            var22_56 = var4_3.getHeight() - 1;
-                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                        v39 = this.g.f();
-                                                                                                                                                                                                                                                                                                                        v40 = var21_49;
-                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                    v41 = var23_61 = v39 + v40;
-                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                        if (v41 < 0) {
-                                                                                                                                                                                                                                                                                                                            var23_61 = 0;
-                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                        v41 = var23_61;
-                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                                        if (v41 > var4_3.getHeight() - 1) {
-                                                                                                                                                                                                                                                                                                                            var23_61 = var4_3.getHeight() - 1;
-                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                        var20_38.z(var22_56);
-                                                                                                                                                                                                                                                                                                                        var20_38.T(var23_61);
-                                                                                                                                                                                                                                                                                                                        v41 = var14_14 = 1;
-                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                    if (var3_4 == null) break block337;
-                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                v38 = this.W;
-                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block340;
-                                                                                                                                                                                                                                                                                                            if (v38 == 0) break block337;
-                                                                                                                                                                                                                                                                                                            v38 = var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block340;
-                                                                                                                                                                                                                                                                                                            if (v38 != 0) {
-                                                                                                                                                                                                                                                                                                                BM.Z(this.o, false);
-                                                                                                                                                                                                                                                                                                                this.W = false;
-                                                                                                                                                                                                                                                                                                                BM.F(this.o);
-                                                                                                                                                                                                                                                                                                                var14_14 = 1;
-                                                                                                                                                                                                                                                                                                                BM.U(this.o);
-                                                                                                                                                                                                                                                                                                                BM.A(this.o);
-                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                        this.o.setCursor(Cursor.getPredefinedCursor(YW.a(25620, 4591689828834764723L)));
-                                                                                                                                                                                                                                                                                                        v38 = var14_14;
-                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                    return (boolean)v38;
-                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                v37 = var5_5;
-                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                            if (var3_4 == null) {
-                                                                                                                                                                                                                                                                                                if (v37 > var12_12 + var9_9) continue;
-                                                                                                                                                                                                                                                                                                v37 = (int)this.q;
-                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block341;
-                                                                                                                                                                                                                                                                                            if (v37 == 0) break block342;
-                                                                                                                                                                                                                                                                                            v42 = this.g.Y(var20_38);
-                                                                                                                                                                                                                                                                                            if (var3_4 != null) break block343;
-                                                                                                                                                                                                                                                                                            if (v42 != 0) break block344;
-                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                        v37 = (int)BM.w(this.o);
-                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block345;
-                                                                                                                                                                                                                                                                                    if (v37 != 0) break block346;
-                                                                                                                                                                                                                                                                                    v37 = var13_13 + var20_38.x() * BM.B(this.o) - BM.g(this.o);
-                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block345;
-                                                                                                                                                                                                                                                                                    if (v37 > var6_6) break block346;
-                                                                                                                                                                                                                                                                                    v37 = var6_6;
-                                                                                                                                                                                                                                                                                    if (var3_4 != null) break block345;
-                                                                                                                                                                                                                                                                                    if (v37 > var13_13 + var20_38.x() * BM.B(this.o) + BM.g(this.o)) break block346;
-                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                v42 = var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                            if (var3_4 != null) break block347;
-                                                                                                                                                                                                                                                                            if (v42 == 0) break block348;
-                                                                                                                                                                                                                                                                            BM.Z(this.o, true);
-                                                                                                                                                                                                                                                                            this.q = true;
-                                                                                                                                                                                                                                                                            this.O = var6_6;
-                                                                                                                                                                                                                                                                            this.g = var20_38.R();
-                                                                                                                                                                                                                                                                            if (var3_4 == null) break block349;
-                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                        v42 = this.q;
-                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                    if (var3_4 != null) break block350;
-                                                                                                                                                                                                                                                                    if (v42 == 0) break block351;
-                                                                                                                                                                                                                                                                    v42 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                                                                    if (var3_4 != null) break block350;
-                                                                                                                                                                                                                                                                    if (v42 == 0) break block351;
-                                                                                                                                                                                                                                                                    var21_50 = (var6_6 - this.O) / BM.B(this.o);
-                                                                                                                                                                                                                                                                    v43 = var22_57 = this.g.x() + var21_50;
-                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                        if (v43 < 0) {
-                                                                                                                                                                                                                                                                            var22_57 = 0;
-                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                        v43 = var22_57;
-                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                                                        if (v43 > this.g.f()) {
-                                                                                                                                                                                                                                                                            var22_57 = this.g.f();
-                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                        var20_38.z(var22_57);
-                                                                                                                                                                                                                                                                        v43 = var14_14 = 1;
-                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                    if (var3_4 == null) break block349;
-                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                v42 = this.q;
-                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                            if (var3_4 != null) break block352;
-                                                                                                                                                                                                                                                            if (v42 == 0) break block349;
-                                                                                                                                                                                                                                                            v42 = var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                                                                            if (var3_4 != null) break block352;
-                                                                                                                                                                                                                                                            if (v42 != 0) {
-                                                                                                                                                                                                                                                                BM.Z(this.o, false);
-                                                                                                                                                                                                                                                                this.q = false;
-                                                                                                                                                                                                                                                                BM.F(this.o);
-                                                                                                                                                                                                                                                                var14_14 = 1;
-                                                                                                                                                                                                                                                                BM.U(this.o);
-                                                                                                                                                                                                                                                                BM.A(this.o);
-                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                        this.o.setCursor(Cursor.getPredefinedCursor(YW.a(5450, 4092936664386377443L)));
-                                                                                                                                                                                                                                                        v42 = var14_14;
-                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                    return (boolean)v42;
-                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                v37 = (int)this.L;
-                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                            if (var3_4 != null) break block353;
-                                                                                                                                                                                                                                            if (v37 == 0) break block354;
-                                                                                                                                                                                                                                            v37 = (int)this.g.Y(var20_38);
-                                                                                                                                                                                                                                            if (var3_4 != null) break block355;
-                                                                                                                                                                                                                                            if (v37 != 0) break block356;
-                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                        v37 = (int)BM.w(this.o);
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    if (var3_4 == null) {
-                                                                                                                                                                                                                                        if (v37 != 0) continue;
-                                                                                                                                                                                                                                        v37 = var13_13 + (var20_38.f() + 1) * BM.B(this.o) - BM.g(this.o);
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    v44 = var6_6;
-                                                                                                                                                                                                                                    if (var3_4 != null) break block357;
-                                                                                                                                                                                                                                    if (v37 > v44) continue;
-                                                                                                                                                                                                                                    v37 = var6_6;
-                                                                                                                                                                                                                                    if (var3_4 != null) break block355;
-                                                                                                                                                                                                                                    v44 = var13_13 + (var20_38.f() + 1) * BM.B(this.o) + BM.g(this.o);
-                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                if (v37 > v44) continue;
-                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                            v37 = (int)var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                        if (var3_4 != null) break block358;
-                                                                                                                                                                                                                        if (v37 == 0) break block359;
-                                                                                                                                                                                                                        BM.Z(this.o, true);
-                                                                                                                                                                                                                        this.L = true;
-                                                                                                                                                                                                                        this.O = var6_6;
-                                                                                                                                                                                                                        this.g = var20_38.R();
-                                                                                                                                                                                                                        if (var3_4 == null) break block360;
-                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                    v37 = (int)this.L;
-                                                                                                                                                                                                                }
-                                                                                                                                                                                                                if (var3_4 != null) break block361;
-                                                                                                                                                                                                                if (v37 == 0) break block362;
-                                                                                                                                                                                                                v37 = (int)var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                                                                if (var3_4 != null) break block361;
-                                                                                                                                                                                                                if (v37 == 0) break block362;
-                                                                                                                                                                                                                var21_51 = (var6_6 - this.O) / BM.B(this.o);
-                                                                                                                                                                                                                v45 = var22_58 = this.g.f() + var21_51;
-                                                                                                                                                                                                                v46 = this.g.x();
-                                                                                                                                                                                                                if (var3_4 != null) break block363;
-                                                                                                                                                                                                                if (v45 < v46) {
-                                                                                                                                                                                                                    var22_58 = this.g.x();
-                                                                                                                                                                                                                }
-                                                                                                                                                                                                                v45 = var22_58;
-                                                                                                                                                                                                                if (var3_4 != null) break block364;
-                                                                                                                                                                                                                v46 = var4_3.getHeight() - 1;
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                            if (v45 > v46) {
-                                                                                                                                                                                                                var22_58 = var4_3.getHeight() - 1;
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                            var20_38.T(var22_58);
-                                                                                                                                                                                                            v45 = var14_14 = 1;
-                                                                                                                                                                                                        }
-                                                                                                                                                                                                        if (var3_4 == null) break block360;
-                                                                                                                                                                                                    }
-                                                                                                                                                                                                    v37 = (int)this.L;
-                                                                                                                                                                                                }
-                                                                                                                                                                                                if (var3_4 != null) break block365;
-                                                                                                                                                                                                if (v37 == 0) break block360;
-                                                                                                                                                                                                v37 = (int)var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                                                                if (var3_4 != null) break block365;
-                                                                                                                                                                                                if (v37 != 0) {
-                                                                                                                                                                                                    BM.Z(this.o, false);
-                                                                                                                                                                                                    this.L = false;
-                                                                                                                                                                                                    BM.F(this.o);
-                                                                                                                                                                                                    var14_14 = 1;
-                                                                                                                                                                                                    BM.U(this.o);
-                                                                                                                                                                                                    BM.A(this.o);
-                                                                                                                                                                                                }
-                                                                                                                                                                                            }
-                                                                                                                                                                                            this.o.setCursor(Cursor.getPredefinedCursor(YW.a(5450, 4092936664386377443L)));
-                                                                                                                                                                                            v37 = var14_14;
-                                                                                                                                                                                        }
-                                                                                                                                                                                        return (boolean)v37;
-                                                                                                                                                                                    } while (var3_4 == null);
-                                                                                                                                                                                    v36 = BM.z(this.o);
-                                                                                                                                                                                }
-                                                                                                                                                                                if (var3_4 != null) break block366;
-                                                                                                                                                                                if (v36 == 0) break block367;
-                                                                                                                                                                                v47 = this.u;
-                                                                                                                                                                                if (var3_4 != null) break block368;
-                                                                                                                                                                                if (v47 != 0) break block369;
-                                                                                                                                                                                v36 = BM.w(this.o);
-                                                                                                                                                                                if (var3_4 != null) break block366;
-                                                                                                                                                                                if (v36 != 0) break block367;
-                                                                                                                                                                                v36 = (int)new Rectangle(var15_15, var17_17, var16_16 - var15_15, var18_18 - var17_17).contains(var5_5, var6_6);
-                                                                                                                                                                                if (var3_4 != null) break block366;
-                                                                                                                                                                                if (v36 == 0) break block367;
-                                                                                                                                                                            }
-                                                                                                                                                                            v47 = var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                                                        }
-                                                                                                                                                                        if (var3_4 != null) break block370;
-                                                                                                                                                                        if (v47 == 0) break block371;
-                                                                                                                                                                        BM.Z(this.o, true);
-                                                                                                                                                                        this.u = true;
-                                                                                                                                                                        this.k = var5_5;
-                                                                                                                                                                        this.O = var6_6;
-                                                                                                                                                                        this.j = var11_11;
-                                                                                                                                                                        if (var3_4 == null) break block372;
-                                                                                                                                                                    }
-                                                                                                                                                                    v47 = this.u;
-                                                                                                                                                                }
-                                                                                                                                                                if (var3_4 != null) break block373;
-                                                                                                                                                                if (v47 == 0) break block374;
-                                                                                                                                                                v47 = var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                                                                if (var3_4 != null) break block373;
-                                                                                                                                                                if (v47 == 0) break block374;
-                                                                                                                                                                var19_27 = (var6_6 - this.O) / BM.B(this.o);
-                                                                                                                                                                v48 = var20_39 = this.j.top + var19_27;
-                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                    if (v48 < 0) {
-                                                                                                                                                                        var20_39 = 0;
-                                                                                                                                                                    }
-                                                                                                                                                                    v48 = var20_39;
-                                                                                                                                                                }
-                                                                                                                                                                v49 = var4_3.getHeight() - 1;
-                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                    if (v48 > v49) {
-                                                                                                                                                                        var20_39 = var4_3.getHeight() - 1;
-                                                                                                                                                                    }
-                                                                                                                                                                    v48 = this.j.bottom;
-                                                                                                                                                                    v49 = var19_27;
-                                                                                                                                                                }
-                                                                                                                                                                v50 = var21_52 = v48 - v49;
-                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                    if (v50 < 0) {
-                                                                                                                                                                        var21_52 = 0;
-                                                                                                                                                                    }
-                                                                                                                                                                    v50 = var21_52;
-                                                                                                                                                                }
-                                                                                                                                                                v51 = var4_3.getHeight() - 1;
-                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                    if (v50 > v51) {
-                                                                                                                                                                        var21_52 = var4_3.getHeight() - 1;
-                                                                                                                                                                    }
-                                                                                                                                                                    v50 = var5_5 - this.k;
-                                                                                                                                                                    v51 = BM.B(this.o);
-                                                                                                                                                                }
-                                                                                                                                                                var22_59 = v50 / v51;
-                                                                                                                                                                v52 = var23_62 = this.j.left + var22_59;
-                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                    if (v52 < 0) {
-                                                                                                                                                                        var23_62 = 0;
-                                                                                                                                                                    }
-                                                                                                                                                                    v52 = var23_62;
-                                                                                                                                                                }
-                                                                                                                                                                v53 = var4_3.getWidth() - 1;
-                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                    if (v52 > v53) {
-                                                                                                                                                                        var23_62 = var4_3.getWidth() - 1;
-                                                                                                                                                                    }
-                                                                                                                                                                    v52 = this.j.right;
-                                                                                                                                                                    v53 = var22_59;
-                                                                                                                                                                }
-                                                                                                                                                                v54 = var24_63 = v52 - v53;
-                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                    if (v54 < 0) {
-                                                                                                                                                                        var24_63 = 0;
-                                                                                                                                                                    }
-                                                                                                                                                                    v54 = var24_63;
-                                                                                                                                                                }
-                                                                                                                                                                if (var3_4 == null) {
-                                                                                                                                                                    if (v54 > var4_3.getWidth() - 1) {
-                                                                                                                                                                        var24_63 = var4_3.getWidth() - 1;
-                                                                                                                                                                    }
-                                                                                                                                                                    BM.v(this.o).t(var20_39, var23_62, var21_52, var24_63);
-                                                                                                                                                                    v54 = 1;
-                                                                                                                                                                }
-                                                                                                                                                                var14_14 = v54;
-                                                                                                                                                                BM.A(this.o);
-                                                                                                                                                                break block372;
-                                                                                                                                                            }
-                                                                                                                                                            v47 = this.u;
-                                                                                                                                                        }
-                                                                                                                                                        if (var3_4 != null) break block375;
-                                                                                                                                                        if (v47 == 0) break block372;
-                                                                                                                                                        v47 = var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                                                        if (var3_4 != null) break block375;
-                                                                                                                                                        if (v47 != 0) {
-                                                                                                                                                            BM.Z(this.o, false);
-                                                                                                                                                            this.u = false;
-                                                                                                                                                            BM.U(this.o);
-                                                                                                                                                            BM.A(this.o);
-                                                                                                                                                        }
-                                                                                                                                                    }
-                                                                                                                                                    this.o.setCursor(Cursor.getPredefinedCursor(YW.a(25620, 4591689828834764723L)));
-                                                                                                                                                    v47 = var14_14;
-                                                                                                                                                }
-                                                                                                                                                return (boolean)v47;
-                                                                                                                                            }
-                                                                                                                                            v36 = SwingUtilities.isLeftMouseButton(var1_1);
-                                                                                                                                        }
-                                                                                                                                        if (var3_4 != null) break block376;
-                                                                                                                                        if (v36 == 0) break block377;
-                                                                                                                                        v36 = this.e;
-                                                                                                                                        if (var3_4 != null) break block378;
-                                                                                                                                        if (v36 != 0) break block379;
-                                                                                                                                        v36 = (int)BM.w(this.o);
-                                                                                                                                        if (var3_4 != null) break block380;
-                                                                                                                                        if (v36 != 0) break block381;
-                                                                                                                                    }
-                                                                                                                                    v36 = (int)var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                                                }
-                                                                                                                                if (var3_4 != null) break block382;
-                                                                                                                                if (v36 == 0) break block383;
-                                                                                                                                v36 = var5_5;
-                                                                                                                                if (var3_4 != null) break block382;
-                                                                                                                                if (v36 <= var12_12) break block383;
-                                                                                                                                v36 = var5_5;
-                                                                                                                                if (var3_4 != null) break block382;
-                                                                                                                                if (v36 >= var12_12 + var9_9) break block383;
-                                                                                                                                v36 = var6_6;
-                                                                                                                                if (var3_4 != null) break block382;
-                                                                                                                                if (v36 >= var13_13) break block383;
-                                                                                                                                BM.Z(this.o, true);
-                                                                                                                                this.e = true;
-                                                                                                                                this.k = var5_5;
-                                                                                                                                this.g = new EZ((var5_5 - var12_12) / BM.B(this.o), false);
-                                                                                                                                BM.v(this.o).H(this.g);
-                                                                                                                                var14_14 = 1;
-                                                                                                                                if (var3_4 == null) break block381;
-                                                                                                                            }
-                                                                                                                            v36 = (int)this.e;
-                                                                                                                        }
-                                                                                                                        if (var3_4 != null) break block384;
-                                                                                                                        if (v36 == 0) break block385;
-                                                                                                                        v36 = (int)var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                                                        if (var3_4 != null) break block384;
-                                                                                                                        if (v36 == 0) break block385;
-                                                                                                                        var19_28 = (this.k - var12_12) / BM.B(this.o);
-                                                                                                                        var20_40 = (var5_5 - var12_12) / BM.B(this.o);
-                                                                                                                        this.g.z(Math.max(0, Math.min(var19_28, var20_40)));
-                                                                                                                        this.g.T(Math.min(var4_3.getWidth() - 1, Math.max(var19_28, var20_40)));
-                                                                                                                        var14_14 = 1;
-                                                                                                                        break block381;
-                                                                                                                    }
-                                                                                                                    v36 = (int)this.e;
-                                                                                                                }
-                                                                                                                if (var3_4 != null) break block380;
-                                                                                                                if (v36 == 0) break block381;
-                                                                                                                v36 = (int)var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                                                if (var3_4 != null) break block380;
-                                                                                                                if (v36 != 0) {
-                                                                                                                    BM.Z(this.o, false);
-                                                                                                                    this.e = false;
-                                                                                                                    BM.W(this.o);
-                                                                                                                    var14_14 = 1;
-                                                                                                                    BM.U(this.o);
-                                                                                                                    BM.A(this.o);
-                                                                                                                }
-                                                                                                            }
-                                                                                                            v36 = (int)this.F;
-                                                                                                        }
-                                                                                                        if (var3_4 != null) break block386;
-                                                                                                        if (v36 != 0) break block387;
-                                                                                                        v36 = (int)BM.w(this.o);
-                                                                                                        if (var3_4 != null) break block376;
-                                                                                                        if (v36 != 0) break block377;
-                                                                                                    }
-                                                                                                    v36 = (int)var2_2.equals((Object)cn_1.mousePressed);
-                                                                                                }
-                                                                                                if (var3_4 != null) break block388;
-                                                                                                if (v36 == 0) break block389;
-                                                                                                v36 = var6_6;
-                                                                                                if (var3_4 != null) break block388;
-                                                                                                if (v36 <= var13_13) break block389;
-                                                                                                v36 = var6_6;
-                                                                                                if (var3_4 != null) break block388;
-                                                                                                if (v36 >= var13_13 + var10_10) break block389;
-                                                                                                v36 = var5_5;
-                                                                                                if (var3_4 != null) break block388;
-                                                                                                if (v36 >= var12_12) break block389;
-                                                                                                BM.Z(this.o, true);
-                                                                                                this.F = true;
-                                                                                                this.O = var6_6;
-                                                                                                this.g = new EZ((var6_6 - var13_13) / BM.B(this.o), false);
-                                                                                                BM.v(this.o).o(this.g);
-                                                                                                var14_14 = 1;
-                                                                                                if (var3_4 == null) break block377;
-                                                                                            }
-                                                                                            v36 = (int)this.F;
-                                                                                        }
-                                                                                        if (var3_4 != null) break block390;
-                                                                                        if (v36 == 0) break block391;
-                                                                                        v36 = (int)var2_2.equals((Object)cn_1.mouseDragged);
-                                                                                        if (var3_4 != null) break block390;
-                                                                                        if (v36 == 0) break block391;
-                                                                                        var19_29 = (this.O - var13_13) / BM.B(this.o);
-                                                                                        var20_41 = (var6_6 - var13_13) / BM.B(this.o);
-                                                                                        this.g.z(Math.max(0, Math.min(var19_29, var20_41)));
-                                                                                        this.g.T(Math.min(var4_3.getHeight() - 1, Math.max(var19_29, var20_41)));
-                                                                                        var14_14 = 1;
-                                                                                        if (var3_4 == null) break block377;
-                                                                                    }
-                                                                                    v36 = (int)this.F;
-                                                                                }
-                                                                                if (var3_4 != null) break block376;
-                                                                                if (v36 == 0) break block377;
-                                                                                v36 = (int)var2_2.equals((Object)cn_1.mouseReleased);
-                                                                                if (var3_4 != null) break block376;
-                                                                                if (v36 != 0) {
-                                                                                    BM.Z(this.o, false);
-                                                                                    this.F = false;
-                                                                                    BM.F(this.o);
-                                                                                    var14_14 = 1;
-                                                                                    BM.U(this.o);
-                                                                                    BM.A(this.o);
-                                                                                }
-                                                                            }
-                                                                            v36 = SwingUtilities.isRightMouseButton(var1_1);
-                                                                        }
-                                                                        if (var3_4 != null) break block392;
-                                                                        if (v36 == 0) break block393;
-                                                                        v36 = this.m;
-                                                                        if (var3_4 != null) break block394;
-                                                                        if (v36 != 0) break block395;
-                                                                        v36 = (int)BM.w(this.o);
-                                                                        if (var3_4 != null) break block396;
-                                                                        if (v36 != 0) break block397;
-                                                                    }
-                                                                    v36 = (int)var2_2.equals((Object)cn_1.mousePressed);
-                                                                }
-                                                                if (var3_4 != null) break block398;
-                                                                if (v36 == 0) break block399;
-                                                                v36 = var5_5;
-                                                                if (var3_4 != null) break block398;
-                                                                if (v36 <= var12_12) break block399;
-                                                                v36 = var5_5;
-                                                                if (var3_4 != null) break block398;
-                                                                if (v36 >= var12_12 + var9_9) break block399;
-                                                                v36 = var6_6;
-                                                                if (var3_4 != null) break block398;
-                                                                if (v36 >= var13_13) break block399;
-                                                                BM.Z(this.o, true);
-                                                                this.m = true;
-                                                                this.k = var5_5;
-                                                                this.p = new EZ((var5_5 - var12_12) / BM.B(this.o), false);
-                                                                this.V();
-                                                                var14_14 = 1;
-                                                                if (var3_4 == null) break block397;
-                                                            }
-                                                            v36 = (int)this.m;
-                                                        }
-                                                        if (var3_4 != null) break block400;
-                                                        if (v36 == 0) break block401;
-                                                        v36 = (int)var2_2.equals((Object)cn_1.mouseDragged);
-                                                        if (var3_4 != null) break block400;
-                                                        if (v36 == 0) break block401;
-                                                        var19_30 = (this.k - var12_12) / BM.B(this.o);
-                                                        var20_42 = (var5_5 - var12_12) / BM.B(this.o);
-                                                        this.p.z(Math.max(0, Math.min(var19_30, var20_42)));
-                                                        this.p.T(Math.min(var4_3.getWidth() - 1, Math.max(var19_30, var20_42)));
-                                                        this.V();
-                                                        var14_14 = 1;
-                                                        if (var3_4 == null) break block397;
-                                                    }
-                                                    v36 = (int)this.m;
-                                                }
-                                                if (var3_4 != null) break block396;
-                                                if (v36 == 0) break block397;
-                                                v36 = (int)var2_2.equals((Object)cn_1.mouseReleased);
-                                                if (var3_4 != null) break block396;
-                                                if (v36 != 0) {
-                                                    BM.Z(this.o, false);
-                                                    this.m = false;
-                                                    var14_14 = 1;
-                                                    BM.U(this.o);
-                                                    BM.A(this.o);
-                                                }
-                                            }
-                                            v36 = (int)this.D;
-                                        }
-                                        if (var3_4 != null) break block402;
-                                        if (v36 != 0) break block403;
-                                        v36 = (int)BM.w(this.o);
-                                        if (var3_4 != null) break block392;
-                                        if (v36 != 0) break block393;
-                                    }
-                                    v36 = (int)var2_2.equals((Object)cn_1.mousePressed);
-                                }
-                                if (var3_4 != null) break block404;
-                                if (v36 == 0) break block405;
-                                v36 = var6_6;
-                                if (var3_4 != null) break block404;
-                                if (v36 <= var13_13) break block405;
-                                v36 = var6_6;
-                                if (var3_4 != null) break block404;
-                                if (v36 >= var13_13 + var10_10) break block405;
-                                v36 = var5_5;
-                                if (var3_4 != null) break block404;
-                                if (v36 >= var12_12) break block405;
-                                BM.Z(this.o, true);
-                                this.D = true;
-                                this.O = var6_6;
-                                this.p = new EZ((var6_6 - var13_13) / BM.B(this.o), false);
-                                this.z();
-                                var14_14 = 1;
-                                if (var3_4 == null) break block393;
-                            }
-                            v36 = (int)this.D;
+         label1877: {
+            label1876: {
+               label1875: {
+                  label1886: {
+                     label1873: {
+                        label1887: {
+                           if (var3 == null) {
+                              if (var66 == 0) {
+                                 var66 = com.BM.x(this.o);
+                                 if (var3 != null) {
+                                    break label1873;
+                                 }
+
+                                 if (var66 == 0) {
+                                    break label1887;
+                                 }
+                              }
+
+                              var66 = var2.equals(com.cN_3.mouseMoved);
+                           }
+
+                           if (var3 != null) {
+                              break label1875;
+                           }
+
+                           if (var66 != 0) {
+                              break label1886;
+                           }
                         }
-                        if (var3_4 != null) break block406;
-                        if (v36 == 0) break block407;
-                        v36 = (int)var2_2.equals((Object)cn_1.mouseDragged);
-                        if (var3_4 != null) break block406;
-                        if (v36 == 0) break block407;
-                        var19_31 = (this.O - var13_13) / BM.B(this.o);
-                        var20_43 = (var6_6 - var13_13) / BM.B(this.o);
-                        this.p.z(Math.max(0, Math.min(var19_31, var20_43)));
-                        this.p.T(Math.min(var4_3.getHeight() - 1, Math.max(var19_31, var20_43)));
-                        this.z();
-                        var14_14 = 1;
-                        if (var3_4 == null) break block393;
-                    }
-                    v36 = (int)this.D;
-                }
-                if (var3_4 != null) break block392;
-                if (v36 == 0) break block393;
-                v36 = (int)var2_2.equals((Object)cn_1.mouseReleased);
-                if (var3_4 != null) break block392;
-                if (v36 != 0) {
-                    BM.Z(this.o, false);
-                    this.D = false;
-                    var14_14 = 1;
-                    BM.U(this.o);
-                    BM.A(this.o);
-                }
+
+                        var66 = var2.equals(com.cN_3.mouseDragged);
+                     }
+
+                     if (var3 != null) {
+                        break label1875;
+                     }
+
+                     if (var66 == 0) {
+                        var66 = var2.equals(com.cN_3.mouseEntered);
+                        if (var3 != null) {
+                           break label1875;
+                        }
+
+                        if (var66 == 0) {
+                           var67 = var2.equals(com.cN_3.mouseExited);
+                           if (var3 != null) {
+                              break label1877;
+                           }
+
+                           if (var67 == 0) {
+                              break label1876;
+                           }
+                        }
+                     }
+                  }
+
+                  var66 = 1;
+               }
+
+               var14 = var66;
             }
-            this.o.setCursor(Cursor.getDefaultCursor());
-            v36 = var14_14;
-        }
-        return (boolean)v36;
-    }
 
-    private void V() {
-        block2: {
-            boolean[] blArray = BM.Y(this.o);
-            int[] nArray = kd_1.u();
-            for (int i2 = this.p.x(); i2 <= this.p.f(); ++i2) {
-                blArray[i2] = false;
-                if (nArray == null) {
-                    if (nArray == null) continue;
-                }
-                break block2;
+            var67 = com.BM.w(this.o);
+         }
+
+         label2046: {
+            label1832:
+            if (var3 == null) {
+               label1843: {
+                  if (var67 == 0) {
+                     var67 = var2.equals(com.cN_3.mouseWheelMoved);
+                     if (var3 != null) {
+                        break label1832;
+                     }
+
+                     if (var67 != 0) {
+                        var68 = var1;
+                        if (var3 != null) {
+                           break label2046;
+                        }
+
+                        if (com.FN.m(var1)) {
+                           break label1843;
+                        }
+
+                        var67 = com.FN.O(var1);
+                        if (var3 != null) {
+                           break label1832;
+                        }
+
+                        if (var67 != 0) {
+                           break label1843;
+                        }
+                     }
+                  }
+
+                  var67 = SwingUtilities.isMiddleMouseButton(var1);
+                  break label1832;
+               }
+
+               var68 = var1;
+               break label2046;
             }
-            BM.v(this.o).f(fk_0.h(blArray));
-            BM.g(this.o);
-        }
-    }
 
-    private void z() {
-        block2: {
-            boolean[] blArray = BM.P(this.o);
-            int[] nArray = kd_1.u();
-            for (int i2 = this.p.x(); i2 <= this.p.f(); ++i2) {
-                blArray[i2] = false;
-                if (nArray == null) {
-                    if (nArray == null) continue;
-                }
-                break block2;
+            label2062: {
+               label1823: {
+                  label1822: {
+                     label1892: {
+                        if (var3 == null) {
+                           if (var67 == 0) {
+                              break label1892;
+                           }
+
+                           var67 = this.f;
+                        }
+
+                        if (var3 != null) {
+                           break label1823;
+                        }
+
+                        if (var67 != 0) {
+                           break label1822;
+                        }
+
+                        var69 = this.o;
+                        if (var3 != null) {
+                           break label2062;
+                        }
+
+                        if (!com.BM.w(this.o)) {
+                           break label1822;
+                        }
+                     }
+
+                     var69 = this.o;
+                     break label2062;
+                  }
+
+                  var67 = var2.equals(com.cN_3.mousePressed);
+               }
+
+               if (var3 == null) {
+                  if (var67 != 0) {
+                     com.BM.Z(this.o, true);
+                     this.f = true;
+                     this.h = this.o.getVisibleRect();
+                     var1 = SwingUtilities.convertMouseEvent(this.o, var1, com.BM.t(this.o));
+                     this.k = var1.getX();
+                     this.O = var1.getY();
+                     this.o.setCursor(Cursor.getPredefinedCursor(a(19354, 1458221832100988988L)));
+                     if (var3 == null) {
+                        return (boolean)var14;
+                     }
+                  }
+
+                  var67 = this.f;
+               }
+
+               label1796:
+               if (var3 == null) {
+                  if (var67 != 0) {
+                     var67 = var2.equals(com.cN_3.mouseDragged);
+                     if (var3 != null) {
+                        break label1796;
+                     }
+
+                     if (var67 != 0) {
+                        var1 = SwingUtilities.convertMouseEvent(this.o, var1, com.BM.t(this.o));
+                        com.BM.t(this.o).A().setValue(this.h.x - (var1.getX() - this.k));
+                        com.BM.t(this.o).i().setValue(this.h.y - (var1.getY() - this.O));
+                        this.o.setCursor(Cursor.getPredefinedCursor(a(3469, 3902783817702149672L)));
+                        if (var3 == null) {
+                           return (boolean)var14;
+                        }
+                     }
+                  }
+
+                  var67 = this.f;
+               }
+
+               if (var3 != null) {
+                  return (boolean)var67;
+               }
+
+               if (var67 != 0) {
+                  boolean var118 = var2.equals(com.cN_3.mouseReleased);
+                  if (var3 != null) {
+                     return var118;
+                  }
+
+                  if (var118) {
+                     com.BM.Z(this.o, false);
+                     this.f = false;
+                     this.o.setCursor(Cursor.getDefaultCursor());
+                  }
+               }
+
+               return (boolean)var14;
             }
-            BM.v(this.o).e(fk_0.h(blArray));
-            BM.g(this.o);
-        }
-    }
 
-    YW(BM bM, XD xD2) {
-        this(bM);
-    }
+            label1895: {
+               if (var3 == null) {
+                  if (com.BM.v(var69) == null) {
+                     return (boolean)var14;
+                  }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block8: {
-            block7: {
-                var0 = 4424023602517480002L;
-                var6_1 = new long[10];
-                var3_2 = 0;
-                var4_3 = "\u0014\u00b5\u0011q\u00a8\u00b1\u00b5\u00f4\u00a195\u00d4\u00a0\u0089>\u00e8F\u008e\u0011\u00fb{v\u0014\u00992\u00a0U\u007fP\u00d1f\u0094\u0010Yy\u008bu`\u00fe\u00c2@;7n\u00b8\u00b8\u001cf\u0011\u0095$N+\u00e6\u00dar\u009a\u000b\u0095+\u00a7\u0087\u00f5\u00fc";
-                var5_4 = "\u0014\u00b5\u0011q\u00a8\u00b1\u00b5\u00f4\u00a195\u00d4\u00a0\u0089>\u00e8F\u008e\u0011\u00fb{v\u0014\u00992\u00a0U\u007fP\u00d1f\u0094\u0010Yy\u008bu`\u00fe\u00c2@;7n\u00b8\u00b8\u001cf\u0011\u0095$N+\u00e6\u00dar\u009a\u000b\u0095+\u00a7\u0087\u00f5\u00fc".length();
-                var2_5 = 0;
-                while (true) {
-                    var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var6_1;
-                    v1 = var3_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block7;
-                    break;
-                }
-lbl14:
-                // 1 sources
+                  var70 = this;
+                  if (var3 != null) {
+                     break label1895;
+                  }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    var4_3 = "\u00d6\u009f\u00d9{6\u008f\u00cd?\u00a0\u0091\u00a0\u0086\u00e9\u0013\u0084\u00a8";
-                    var5_4 = "\u00d6\u009f\u00d9{6\u008f\u00cd?\u00a0\u0091\u00a0\u0086\u00e9\u0013\u0084\u00a8".length();
-                    var2_5 = 0;
-                    while (true) {
-                        var7_6 = var4_3.substring(var2_5, var2_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var6_1;
-                        v1 = var3_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block7;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
+                  var69 = this.o;
+               }
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var2_5 < var5_4) ** continue;
-                    break block8;
-                    break;
-                }
+               if (com.BM.E(var69) == null) {
+                  return (boolean)var14;
+               }
+
+               var70 = this;
             }
-            v4 = v2 ^ var0;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
 
-                ** continue;
+            label2048: {
+               boolean var71 = var70.M;
+               if (var3 == null) {
+                  label1763:
+                  if (var70.M == 0) {
+                     var72 = com.BM.w(this.o);
+                     if (var3 != null) {
+                        break label2048;
+                     }
+
+                     if (var72 == 0) {
+                        var72 = new Rectangle(var15, var13 + var10, var16 - var15, com.BM.B(this.o)).contains(var5, var6);
+                        if (var3 != null) {
+                           break label2048;
+                        }
+
+                        if (var72 != 0) {
+                           break label1763;
+                        }
+                     }
+
+                     var72 = this.H;
+                     break label2048;
+                  }
+
+                  var71 = var2.equals(com.cN_3.mousePressed);
+               }
+
+               label1900: {
+                  if (var3 == null) {
+                     if (var71) {
+                        com.BM.Z(this.o, true);
+                        this.M = true;
+                        this.k = var5;
+                        this.j = var11;
+                        if (var3 == null) {
+                           break label1900;
+                        }
+                     }
+
+                     var71 = this.M;
+                  }
+
+                  label1740:
+                  if (var3 == null) {
+                     if (var71) {
+                        var71 = var2.equals(com.cN_3.mouseDragged);
+                        if (var3 != null) {
+                           break label1740;
+                        }
+
+                        if (var71) {
+                           int var26 = (var5 - this.k) / com.BM.B(this.o);
+                           int var20 = this.j.left + var26;
+                           int var73 = var20;
+                           if (var3 == null) {
+                              if (var20 < 0) {
+                                 var20 = 0;
+                              }
+
+                              var73 = var20;
+                           }
+
+                           var10001 = var4.getWidth() - 1;
+                           if (var3 == null) {
+                              if (var73 > var10001) {
+                                 var20 = var4.getWidth() - 1;
+                              }
+
+                              var73 = this.j.right;
+                              var10001 = var26;
+                           }
+
+                           int var21 = var73 - var10001;
+                           int var74 = var21;
+                           if (var3 == null) {
+                              if (var21 < 0) {
+                                 var21 = 0;
+                              }
+
+                              var74 = var21;
+                           }
+
+                           if (var3 == null) {
+                              if (var74 > var4.getWidth() - 1) {
+                                 var21 = var4.getWidth() - 1;
+                              }
+
+                              com.BM.v(this.o).t(this.j.top, var20, this.j.bottom, var21);
+                              var74 = 1;
+                           }
+
+                           var14 = var74;
+                           com.BM.A(this.o);
+                           if (var3 == null) {
+                              break label1900;
+                           }
+                        }
+                     }
+
+                     var71 = this.M;
+                  }
+
+                  if (var3 != null) {
+                     return var71;
+                  }
+
+                  if (var71) {
+                     boolean var119 = var2.equals(com.cN_3.mouseReleased);
+                     if (var3 != null) {
+                        return var119;
+                     }
+
+                     if (var119) {
+                        com.BM.Z(this.o, false);
+                        this.M = false;
+                        com.BM.U(this.o);
+                        com.BM.A(this.o);
+                     }
+                  }
+               }
+
+               this.o.setCursor(Cursor.getPredefinedCursor(a(28457, 3903936605368315021L)));
+               return (boolean)var14;
             }
-        }
-        YW.a = var6_1;
-        YW.b = new Integer[10];
-    }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x3A0;
-        if (b[n11] == null) {
-            YW.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+            label2049: {
+               if (var3 == null) {
+                  label1714:
+                  if (var72 == 0) {
+                     var75 = com.BM.w(this.o);
+                     if (var3 != null) {
+                        break label2049;
+                     }
+
+                     if (var75 == 0) {
+                        var75 = new Rectangle(var12 + var9, var17, com.BM.B(this.o), var18 - var17).contains(var5, var6);
+                        if (var3 != null) {
+                           break label2049;
+                        }
+
+                        if (var75 != 0) {
+                           break label1714;
+                        }
+                     }
+
+                     var75 = this.Q;
+                     break label2049;
+                  }
+
+                  var72 = var2.equals(com.cN_3.mousePressed);
+               }
+
+               label1905: {
+                  if (var3 == null) {
+                     if (var72 != 0) {
+                        com.BM.Z(this.o, true);
+                        this.H = true;
+                        this.O = var6;
+                        this.j = var11;
+                        if (var3 == null) {
+                           break label1905;
+                        }
+                     }
+
+                     var72 = this.H;
+                  }
+
+                  label1691:
+                  if (var3 == null) {
+                     if (var72 != 0) {
+                        var72 = var2.equals(com.cN_3.mouseDragged);
+                        if (var3 != null) {
+                           break label1691;
+                        }
+
+                        if (var72 != 0) {
+                           int var27 = (var6 - this.O) / com.BM.B(this.o);
+                           int var38 = this.j.top + var27;
+                           int var76 = var38;
+                           if (var3 == null) {
+                              if (var38 < 0) {
+                                 var38 = 0;
+                              }
+
+                              var76 = var38;
+                           }
+
+                           var10001 = var4.getHeight() - 1;
+                           if (var3 == null) {
+                              if (var76 > var10001) {
+                                 var38 = var4.getHeight() - 1;
+                              }
+
+                              var76 = this.j.bottom;
+                              var10001 = var27;
+                           }
+
+                           int var50 = var76 - var10001;
+                           int var77 = var50;
+                           if (var3 == null) {
+                              if (var50 < 0) {
+                                 var50 = 0;
+                              }
+
+                              var77 = var50;
+                           }
+
+                           if (var3 == null) {
+                              if (var77 > var4.getHeight() - 1) {
+                                 var50 = var4.getHeight() - 1;
+                              }
+
+                              com.BM.v(this.o).t(var38, this.j.left, var50, this.j.right);
+                              var77 = 1;
+                           }
+
+                           var14 = var77;
+                           com.BM.A(this.o);
+                           if (var3 == null) {
+                              break label1905;
+                           }
+                        }
+                     }
+
+                     var72 = this.H;
+                  }
+
+                  if (var3 != null) {
+                     return (boolean)var72;
+                  }
+
+                  if (var72 != 0) {
+                     boolean var120 = var2.equals(com.cN_3.mouseReleased);
+                     if (var3 != null) {
+                        return var120;
+                     }
+
+                     if (var120) {
+                        com.BM.Z(this.o, false);
+                        this.H = false;
+                        com.BM.U(this.o);
+                        com.BM.A(this.o);
+                     }
+                  }
+               }
+
+               this.o.setCursor(Cursor.getPredefinedCursor(a(25620, 4591689828834764723L)));
+               return (boolean)var14;
+            }
+
+            label2050: {
+               if (var3 == null) {
+                  label1665:
+                  if (var75 == 0) {
+                     var78 = com.BM.w(this.o);
+                     if (var3 != null) {
+                        break label2050;
+                     }
+
+                     if (var78 == 0) {
+                        var78 = var6;
+                        if (var3 != null) {
+                           break label2050;
+                        }
+
+                        if (var6 >= var13) {
+                           var78 = var15 + com.BM.g(this.o);
+                           if (var3 != null) {
+                              break label2050;
+                           }
+
+                           if (var78 >= var5) {
+                              var78 = var15 - com.BM.g(this.o);
+                              if (var3 != null) {
+                                 break label2050;
+                              }
+
+                              if (var78 <= var5) {
+                                 break label1665;
+                              }
+                           }
+                        }
+                     }
+
+                     var78 = this.z;
+                     break label2050;
+                  }
+
+                  var75 = var2.equals(com.cN_3.mousePressed);
+               }
+
+               label1910: {
+                  if (var3 == null) {
+                     if (var75 != 0) {
+                        com.BM.Z(this.o, true);
+                        this.Q = true;
+                        this.k = var5;
+                        this.j = var11;
+                        if (var3 == null) {
+                           break label1910;
+                        }
+                     }
+
+                     var75 = this.Q;
+                  }
+
+                  label1636:
+                  if (var3 == null) {
+                     if (var75 != 0) {
+                        var75 = var2.equals(com.cN_3.mouseDragged);
+                        if (var3 != null) {
+                           break label1636;
+                        }
+
+                        if (var75 != 0) {
+                           int var28 = (var5 - this.k) / com.BM.B(this.o);
+                           int var39 = this.j.left + var28;
+                           int var79 = var39;
+                           if (var3 == null) {
+                              if (var39 < 0) {
+                                 var39 = 0;
+                              }
+
+                              var79 = var39;
+                           }
+
+                           if (var3 == null) {
+                              if (var79 > var4.getWidth() - this.j.right - 1) {
+                                 var39 = var4.getWidth() - this.j.right - 1;
+                              }
+
+                              com.BM.v(this.o).t(this.j.top, var39, this.j.bottom, this.j.right);
+                              var79 = 1;
+                           }
+
+                           var14 = var79;
+                           com.BM.A(this.o);
+                           if (var3 == null) {
+                              break label1910;
+                           }
+                        }
+                     }
+
+                     var75 = this.Q;
+                  }
+
+                  if (var3 != null) {
+                     return (boolean)var75;
+                  }
+
+                  if (var75 != 0) {
+                     boolean var121 = var2.equals(com.cN_3.mouseReleased);
+                     if (var3 != null) {
+                        return var121;
+                     }
+
+                     if (var121) {
+                        com.BM.Z(this.o, false);
+                        this.Q = false;
+                        com.BM.U(this.o);
+                        com.BM.A(this.o);
+                     }
+                  }
+               }
+
+               this.o.setCursor(Cursor.getPredefinedCursor(a(12032, 7575239365437598881L)));
+               return (boolean)var14;
+            }
+
+            label2051: {
+               if (var3 == null) {
+                  label1613:
+                  if (var78 == 0) {
+                     var80 = com.BM.w(this.o);
+                     if (var3 != null) {
+                        break label2051;
+                     }
+
+                     if (var80 == 0) {
+                        var80 = var6;
+                        if (var3 != null) {
+                           break label2051;
+                        }
+
+                        if (var6 >= var13) {
+                           var80 = var16 + com.BM.g(this.o);
+                           if (var3 != null) {
+                              break label2051;
+                           }
+
+                           if (var80 >= var5) {
+                              var80 = var16 - com.BM.g(this.o);
+                              if (var3 != null) {
+                                 break label2051;
+                              }
+
+                              if (var80 <= var5) {
+                                 break label1613;
+                              }
+                           }
+                        }
+                     }
+
+                     var80 = this.T;
+                     break label2051;
+                  }
+
+                  var78 = var2.equals(com.cN_3.mousePressed);
+               }
+
+               label1915: {
+                  if (var3 == null) {
+                     if (var78 != 0) {
+                        com.BM.Z(this.o, true);
+                        this.z = true;
+                        this.k = var5;
+                        this.j = var11;
+                        if (var3 == null) {
+                           break label1915;
+                        }
+                     }
+
+                     var78 = this.z;
+                  }
+
+                  label1584:
+                  if (var3 == null) {
+                     if (var78 != 0) {
+                        var78 = var2.equals(com.cN_3.mouseDragged);
+                        if (var3 != null) {
+                           break label1584;
+                        }
+
+                        if (var78 != 0) {
+                           int var29 = (var5 - this.k) / com.BM.B(this.o);
+                           int var40 = this.j.right - var29;
+                           int var81 = var40;
+                           if (var3 == null) {
+                              if (var40 < 0) {
+                                 var40 = 0;
+                              }
+
+                              var81 = var40;
+                           }
+
+                           if (var3 == null) {
+                              if (var81 > var4.getWidth() - this.j.left - 1) {
+                                 var40 = var4.getWidth() - this.j.left - 1;
+                              }
+
+                              com.BM.v(this.o).t(this.j.top, this.j.left, this.j.bottom, var40);
+                              var81 = 1;
+                           }
+
+                           var14 = var81;
+                           com.BM.A(this.o);
+                           if (var3 == null) {
+                              break label1915;
+                           }
+                        }
+                     }
+
+                     var78 = this.z;
+                  }
+
+                  if (var3 != null) {
+                     return (boolean)var78;
+                  }
+
+                  if (var78 != 0) {
+                     boolean var122 = var2.equals(com.cN_3.mouseReleased);
+                     if (var3 != null) {
+                        return var122;
+                     }
+
+                     if (var122) {
+                        com.BM.Z(this.o, false);
+                        this.z = false;
+                        com.BM.U(this.o);
+                        com.BM.A(this.o);
+                     }
+                  }
+               }
+
+               this.o.setCursor(Cursor.getPredefinedCursor(a(9245, 4824231993813116861L)));
+               return (boolean)var14;
+            }
+
+            label2052: {
+               if (var3 == null) {
+                  label1561:
+                  if (var80 == 0) {
+                     var82 = com.BM.w(this.o);
+                     if (var3 != null) {
+                        break label2052;
+                     }
+
+                     if (var82 == 0) {
+                        var82 = var5;
+                        if (var3 != null) {
+                           break label2052;
+                        }
+
+                        if (var5 >= var12) {
+                           var82 = var17 + com.BM.g(this.o);
+                           if (var3 != null) {
+                              break label2052;
+                           }
+
+                           if (var82 >= var6) {
+                              var82 = var17 - com.BM.g(this.o);
+                              if (var3 != null) {
+                                 break label2052;
+                              }
+
+                              if (var82 <= var6) {
+                                 break label1561;
+                              }
+                           }
+                        }
+                     }
+
+                     var82 = this.i;
+                     break label2052;
+                  }
+
+                  var80 = var2.equals(com.cN_3.mousePressed);
+               }
+
+               label1920: {
+                  if (var3 == null) {
+                     if (var80 != 0) {
+                        com.BM.Z(this.o, true);
+                        this.T = true;
+                        this.O = var6;
+                        this.j = var11;
+                        if (var3 == null) {
+                           break label1920;
+                        }
+                     }
+
+                     var80 = this.T;
+                  }
+
+                  label1532:
+                  if (var3 == null) {
+                     if (var80 != 0) {
+                        var80 = var2.equals(com.cN_3.mouseDragged);
+                        if (var3 != null) {
+                           break label1532;
+                        }
+
+                        if (var80 != 0) {
+                           int var30 = (var6 - this.O) / com.BM.B(this.o);
+                           int var41 = this.j.top + var30;
+                           int var83 = var41;
+                           if (var3 == null) {
+                              if (var41 < 0) {
+                                 var41 = 0;
+                              }
+
+                              var83 = var41;
+                           }
+
+                           if (var3 == null) {
+                              if (var83 > var4.getHeight() - this.j.bottom - 1) {
+                                 var41 = var4.getHeight() - this.j.bottom - 1;
+                              }
+
+                              com.BM.v(this.o).t(var41, this.j.left, this.j.bottom, this.j.right);
+                              var83 = 1;
+                           }
+
+                           var14 = var83;
+                           com.BM.A(this.o);
+                           if (var3 == null) {
+                              break label1920;
+                           }
+                        }
+                     }
+
+                     var80 = this.T;
+                  }
+
+                  if (var3 != null) {
+                     return (boolean)var80;
+                  }
+
+                  if (var80 != 0) {
+                     boolean var123 = var2.equals(com.cN_3.mouseReleased);
+                     if (var3 != null) {
+                        return var123;
+                     }
+
+                     if (var123) {
+                        com.BM.Z(this.o, false);
+                        this.T = false;
+                        com.BM.U(this.o);
+                        com.BM.A(this.o);
+                     }
+                  }
+               }
+
+               this.o.setCursor(Cursor.getPredefinedCursor(a(1392, 5711206895726462674L)));
+               return (boolean)var14;
+            }
+
+            label2053: {
+               label1492:
+               if (var3 == null) {
+                  label1496:
+                  if (var82 == 0) {
+                     var84 = this.o;
+                     if (var3 != null) {
+                        break label2053;
+                     }
+
+                     label1507:
+                     if (!com.BM.w(this.o)) {
+                        var82 = var5;
+                        var10001 = var12;
+                        if (var3 == null) {
+                           if (var5 < var12) {
+                              break label1507;
+                           }
+
+                           var82 = var18 + com.BM.g(this.o);
+                           var10001 = var6;
+                        }
+
+                        if (var3 == null) {
+                           if (var82 < var10001) {
+                              break label1507;
+                           }
+
+                           var82 = var18 - com.BM.g(this.o);
+                           if (var3 != null) {
+                              break label1492;
+                           }
+
+                           var10001 = var6;
+                        }
+
+                        if (var82 <= var10001) {
+                           break label1496;
+                        }
+                     }
+
+                     var84 = this.o;
+                     break label2053;
+                  }
+
+                  var82 = var2.equals(com.cN_3.mousePressed);
+               }
+
+               label1927: {
+                  if (var3 == null) {
+                     if (var82 != 0) {
+                        com.BM.Z(this.o, true);
+                        this.i = true;
+                        this.O = var6;
+                        this.j = var11;
+                        if (var3 == null) {
+                           break label1927;
+                        }
+                     }
+
+                     var82 = this.i;
+                  }
+
+                  label1476:
+                  if (var3 == null) {
+                     if (var82 != 0) {
+                        var82 = var2.equals(com.cN_3.mouseDragged);
+                        if (var3 != null) {
+                           break label1476;
+                        }
+
+                        if (var82 != 0) {
+                           int var31 = (var6 - this.O) / com.BM.B(this.o);
+                           int var42 = this.j.bottom - var31;
+                           int var85 = var42;
+                           if (var3 == null) {
+                              if (var42 < 0) {
+                                 var42 = 0;
+                              }
+
+                              var85 = var42;
+                           }
+
+                           if (var3 == null) {
+                              if (var85 > var4.getHeight() - this.j.top - 1) {
+                                 var42 = var4.getHeight() - this.j.top - 1;
+                              }
+
+                              com.BM.v(this.o).t(this.j.top, this.j.left, var42, this.j.right);
+                              var85 = 1;
+                           }
+
+                           var14 = var85;
+                           com.BM.A(this.o);
+                           if (var3 == null) {
+                              break label1927;
+                           }
+                        }
+                     }
+
+                     var82 = this.i;
+                  }
+
+                  if (var3 != null) {
+                     return (boolean)var82;
+                  }
+
+                  if (var82 != 0) {
+                     boolean var124 = var2.equals(com.cN_3.mouseReleased);
+                     if (var3 != null) {
+                        return var124;
+                     }
+
+                     if (var124) {
+                        com.BM.Z(this.o, false);
+                        this.i = false;
+                        com.BM.U(this.o);
+                        com.BM.A(this.o);
+                     }
+                  }
+               }
+
+               this.o.setCursor(Cursor.getPredefinedCursor(a(5450, 4092936664386377443L)));
+               return (boolean)var14;
+            }
+
+            Iterator var32 = com.BM.v(var84).U().iterator();
+
+            EZ var43;
+            label2054: {
+               label2055: {
+                  label2056: {
+                     label2057: {
+                        label2058: {
+                           label2059: {
+                              label1450: {
+                                 label1449: {
+                                    label1448: {
+                                       label1447: {
+                                          label1446: {
+                                             label1445: {
+                                                label1935: {
+                                                   while (true) {
+                                                      if (var32.hasNext()) {
+                                                         var43 = (EZ)var32.next();
+                                                         var86 = var43.C();
+                                                         if (var3 != null) {
+                                                            break;
+                                                         }
+
+                                                         label2008: {
+                                                            if (var3 == null) {
+                                                               if (var86 != 0) {
+                                                                  break label2008;
+                                                               }
+
+                                                               var86 = this.Z;
+                                                            }
+
+                                                            if (var3 == null) {
+                                                               if (var86 != 0) {
+                                                                  var87 = this.g.Y(var43);
+                                                                  if (var3 != null) {
+                                                                     break label2054;
+                                                                  }
+
+                                                                  if (var87 != 0) {
+                                                                     break label1449;
+                                                                  }
+                                                               }
+
+                                                               var86 = com.BM.w(this.o);
+                                                            }
+
+                                                            label1316:
+                                                            if (var3 == null) {
+                                                               if (var86 == 0) {
+                                                                  var86 = new Rectangle(
+                                                                        var12 + var43.x() * com.BM.B(this.o),
+                                                                        var13 - com.BM.B(this.o),
+                                                                        (var43.f() - var43.x() + 1) * com.BM.B(this.o),
+                                                                        com.BM.B(this.o) + (com.BM.K(this.o) ? var10 : 0)
+                                                                     )
+                                                                     .contains(var5, var6);
+                                                                  if (var3 != null) {
+                                                                     break label1316;
+                                                                  }
+
+                                                                  if (var86 != 0) {
+                                                                     break label1449;
+                                                                  }
+                                                               }
+
+                                                               var86 = var6;
+                                                            }
+
+                                                            if (var3 == null) {
+                                                               if (var86 > var13 + var10) {
+                                                                  break label2008;
+                                                               }
+
+                                                               var86 = this.G;
+                                                            }
+
+                                                            if (var3 == null) {
+                                                               if (var86 != 0) {
+                                                                  var88 = this.g.Y(var43);
+                                                                  if (var3 != null) {
+                                                                     break label2055;
+                                                                  }
+
+                                                                  if (var88 != 0) {
+                                                                     break label1448;
+                                                                  }
+                                                               }
+
+                                                               var86 = com.BM.w(this.o);
+                                                            }
+
+                                                            label1334:
+                                                            if (var3 == null) {
+                                                               if (var86 == 0) {
+                                                                  var86 = var12 + var43.x() * com.BM.B(this.o) - com.BM.g(this.o);
+                                                                  if (var3 != null) {
+                                                                     break label1334;
+                                                                  }
+
+                                                                  if (var86 <= var5) {
+                                                                     var86 = var5;
+                                                                     if (var3 != null) {
+                                                                        break label1334;
+                                                                     }
+
+                                                                     if (var5 <= var12 + var43.x() * com.BM.B(this.o) + com.BM.g(this.o)) {
+                                                                        break label1448;
+                                                                     }
+                                                                  }
+                                                               }
+
+                                                               var86 = this.R;
+                                                            }
+
+                                                            if (var3 == null) {
+                                                               if (var86 != 0) {
+                                                                  var86 = this.g.Y(var43);
+                                                                  if (var3 != null) {
+                                                                     break label2056;
+                                                                  }
+
+                                                                  if (var86 != 0) {
+                                                                     break label1447;
+                                                                  }
+                                                               }
+
+                                                               var86 = com.BM.w(this.o);
+                                                            }
+
+                                                            if (var3 == null) {
+                                                               if (var86 != 0) {
+                                                                  break label2008;
+                                                               }
+
+                                                               var86 = var12 + (var43.f() + 1) * com.BM.B(this.o) - com.BM.g(this.o);
+                                                            }
+
+                                                            var10001 = var5;
+                                                            if (var3 == null) {
+                                                               if (var86 > var5) {
+                                                                  break label2008;
+                                                               }
+
+                                                               var86 = var5;
+                                                               if (var3 != null) {
+                                                                  break label2056;
+                                                               }
+
+                                                               var10001 = var12 + (var43.f() + 1) * com.BM.B(this.o) + com.BM.g(this.o);
+                                                            }
+
+                                                            if (var86 <= var10001) {
+                                                               break label1447;
+                                                            }
+                                                         }
+
+                                                         if (var3 == null) {
+                                                            continue;
+                                                         }
+                                                      }
+
+                                                      var32 = com.BM.v(this.o).g().iterator();
+                                                      var86 = var32.hasNext();
+                                                      break;
+                                                   }
+
+                                                   while (var86 != 0) {
+                                                      var43 = (EZ)var32.next();
+                                                      var93 = var43.C();
+                                                      if (var3 != null) {
+                                                         break label1450;
+                                                      }
+
+                                                      label2009: {
+                                                         if (var3 == null) {
+                                                            if (var93 != 0) {
+                                                               break label2009;
+                                                            }
+
+                                                            var93 = this.W;
+                                                         }
+
+                                                         if (var3 == null) {
+                                                            if (var93 != 0) {
+                                                               var94 = this.g.Y(var43);
+                                                               if (var3 != null) {
+                                                                  break label2057;
+                                                               }
+
+                                                               if (var94 != 0) {
+                                                                  break label1446;
+                                                               }
+                                                            }
+
+                                                            var93 = com.BM.w(this.o);
+                                                         }
+
+                                                         label1368:
+                                                         if (var3 == null) {
+                                                            if (var93 == 0) {
+                                                               var93 = new Rectangle(
+                                                                     var12 - com.BM.B(this.o),
+                                                                     var13 + var43.x() * com.BM.B(this.o),
+                                                                     com.BM.B(this.o) + (com.BM.K(this.o) ? var9 : 0),
+                                                                     (var43.f() - var43.x() + 1) * com.BM.B(this.o)
+                                                                  )
+                                                                  .contains(var5, var6);
+                                                               if (var3 != null) {
+                                                                  break label1368;
+                                                               }
+
+                                                               if (var93 != 0) {
+                                                                  break label1446;
+                                                               }
+                                                            }
+
+                                                            var93 = var5;
+                                                         }
+
+                                                         if (var3 == null) {
+                                                            if (var93 > var12 + var9) {
+                                                               break label2009;
+                                                            }
+
+                                                            var93 = this.q;
+                                                         }
+
+                                                         if (var3 == null) {
+                                                            if (var93 != 0) {
+                                                               var95 = this.g.Y(var43);
+                                                               if (var3 != null) {
+                                                                  break label2058;
+                                                               }
+
+                                                               if (var95 != 0) {
+                                                                  break label1445;
+                                                               }
+                                                            }
+
+                                                            var93 = com.BM.w(this.o);
+                                                         }
+
+                                                         label1386:
+                                                         if (var3 == null) {
+                                                            if (var93 == 0) {
+                                                               var93 = var13 + var43.x() * com.BM.B(this.o) - com.BM.g(this.o);
+                                                               if (var3 != null) {
+                                                                  break label1386;
+                                                               }
+
+                                                               if (var93 <= var6) {
+                                                                  var93 = var6;
+                                                                  if (var3 != null) {
+                                                                     break label1386;
+                                                                  }
+
+                                                                  if (var6 <= var13 + var43.x() * com.BM.B(this.o) + com.BM.g(this.o)) {
+                                                                     break label1445;
+                                                                  }
+                                                               }
+                                                            }
+
+                                                            var93 = this.L;
+                                                         }
+
+                                                         if (var3 == null) {
+                                                            if (var93 != 0) {
+                                                               var93 = this.g.Y(var43);
+                                                               if (var3 != null) {
+                                                                  break label2059;
+                                                               }
+
+                                                               if (var93 != 0) {
+                                                                  break label1935;
+                                                               }
+                                                            }
+
+                                                            var93 = com.BM.w(this.o);
+                                                         }
+
+                                                         if (var3 == null) {
+                                                            if (var93 != 0) {
+                                                               break label2009;
+                                                            }
+
+                                                            var93 = var13 + (var43.f() + 1) * com.BM.B(this.o) - com.BM.g(this.o);
+                                                         }
+
+                                                         var10001 = var6;
+                                                         if (var3 == null) {
+                                                            if (var93 > var6) {
+                                                               break label2009;
+                                                            }
+
+                                                            var93 = var6;
+                                                            if (var3 != null) {
+                                                               break label2059;
+                                                            }
+
+                                                            var10001 = var13 + (var43.f() + 1) * com.BM.B(this.o) + com.BM.g(this.o);
+                                                         }
+
+                                                         if (var93 <= var10001) {
+                                                            break label1935;
+                                                         }
+                                                      }
+
+                                                      if (var3 != null) {
+                                                         var93 = com.BM.z(this.o);
+                                                         break label1450;
+                                                      }
+
+                                                      var86 = var32.hasNext();
+                                                   }
+
+                                                   var93 = com.BM.z(this.o);
+                                                   break label1450;
+                                                }
+
+                                                var93 = var2.equals(com.cN_3.mousePressed);
+                                                break label2059;
+                                             }
+
+                                             var95 = var2.equals(com.cN_3.mousePressed);
+                                             break label2058;
+                                          }
+
+                                          var94 = var2.equals(com.cN_3.mousePressed);
+                                          break label2057;
+                                       }
+
+                                       var86 = var2.equals(com.cN_3.mousePressed);
+                                       break label2056;
+                                    }
+
+                                    var88 = var2.equals(com.cN_3.mousePressed);
+                                    break label2055;
+                                 }
+
+                                 var87 = var2.equals(com.cN_3.mousePressed);
+                                 break label2054;
+                              }
+
+                              label2010: {
+                                 label1265:
+                                 if (var3 == null) {
+                                    label1276: {
+                                       if (var93 != 0) {
+                                          var100 = this.u;
+                                          if (var3 != null) {
+                                             break label2010;
+                                          }
+
+                                          if (this.u) {
+                                             break label1276;
+                                          }
+
+                                          var93 = com.BM.w(this.o);
+                                          if (var3 != null) {
+                                             break label1265;
+                                          }
+
+                                          if (var93 == 0) {
+                                             var93 = new Rectangle(var15, var17, var16 - var15, var18 - var17).contains(var5, var6);
+                                             if (var3 != null) {
+                                                break label1265;
+                                             }
+
+                                             if (var93 != 0) {
+                                                break label1276;
+                                             }
+                                          }
+                                       }
+
+                                       var93 = SwingUtilities.isLeftMouseButton(var1);
+                                       break label1265;
+                                    }
+
+                                    var100 = var2.equals(com.cN_3.mousePressed);
+                                    break label2010;
+                                 }
+
+                                 label1257:
+                                 if (var3 == null) {
+                                    label1255:
+                                    if (var93 != 0) {
+                                       label1253: {
+                                          label1953: {
+                                             var93 = this.e;
+                                             if (var3 == null) {
+                                                if (!this.e) {
+                                                   var93 = com.BM.w(this.o);
+                                                   if (var3 != null) {
+                                                      break label1253;
+                                                   }
+
+                                                   if (var93 != 0) {
+                                                      break label1953;
+                                                   }
+                                                }
+
+                                                var93 = var2.equals(com.cN_3.mousePressed);
+                                             }
+
+                                             label1244:
+                                             if (var3 == null) {
+                                                if (var93 != 0) {
+                                                   var93 = var5;
+                                                   if (var3 != null) {
+                                                      break label1244;
+                                                   }
+
+                                                   if (var5 > var12) {
+                                                      var93 = var5;
+                                                      if (var3 != null) {
+                                                         break label1244;
+                                                      }
+
+                                                      if (var5 < var12 + var9) {
+                                                         var93 = var6;
+                                                         if (var3 != null) {
+                                                            break label1244;
+                                                         }
+
+                                                         if (var6 < var13) {
+                                                            com.BM.Z(this.o, true);
+                                                            this.e = true;
+                                                            this.k = var5;
+                                                            this.g = new EZ((var5 - var12) / com.BM.B(this.o), false);
+                                                            com.BM.v(this.o).H(this.g);
+                                                            var14 = 1;
+                                                            if (var3 == null) {
+                                                               break label1953;
+                                                            }
+                                                         }
+                                                      }
+                                                   }
+                                                }
+
+                                                var93 = this.e;
+                                             }
+
+                                             label1228:
+                                             if (var3 == null) {
+                                                if (var93 != 0) {
+                                                   var93 = var2.equals(com.cN_3.mouseDragged);
+                                                   if (var3 != null) {
+                                                      break label1228;
+                                                   }
+
+                                                   if (var93 != 0) {
+                                                      int var33 = (this.k - var12) / com.BM.B(this.o);
+                                                      int var45 = (var5 - var12) / com.BM.B(this.o);
+                                                      this.g.z(Math.max(0, Math.min(var33, var45)));
+                                                      this.g.T(Math.min(var4.getWidth() - 1, Math.max(var33, var45)));
+                                                      var14 = 1;
+                                                      break label1953;
+                                                   }
+                                                }
+
+                                                var93 = this.e;
+                                             }
+
+                                             if (var3 != null) {
+                                                break label1253;
+                                             }
+
+                                             if (var93 != 0) {
+                                                var93 = var2.equals(com.cN_3.mouseReleased);
+                                                if (var3 != null) {
+                                                   break label1253;
+                                                }
+
+                                                if (var93 != 0) {
+                                                   com.BM.Z(this.o, false);
+                                                   this.e = false;
+                                                   com.BM.W(this.o);
+                                                   var14 = 1;
+                                                   com.BM.U(this.o);
+                                                   com.BM.A(this.o);
+                                                }
+                                             }
+                                          }
+
+                                          var93 = this.F;
+                                       }
+
+                                       if (var3 == null) {
+                                          if (var93 == 0) {
+                                             var93 = com.BM.w(this.o);
+                                             if (var3 != null) {
+                                                break label1257;
+                                             }
+
+                                             if (var93 != 0) {
+                                                break label1255;
+                                             }
+                                          }
+
+                                          var93 = var2.equals(com.cN_3.mousePressed);
+                                       }
+
+                                       label1205:
+                                       if (var3 == null) {
+                                          if (var93 != 0) {
+                                             var93 = var6;
+                                             if (var3 != null) {
+                                                break label1205;
+                                             }
+
+                                             if (var6 > var13) {
+                                                var93 = var6;
+                                                if (var3 != null) {
+                                                   break label1205;
+                                                }
+
+                                                if (var6 < var13 + var10) {
+                                                   var93 = var5;
+                                                   if (var3 != null) {
+                                                      break label1205;
+                                                   }
+
+                                                   if (var5 < var12) {
+                                                      com.BM.Z(this.o, true);
+                                                      this.F = true;
+                                                      this.O = var6;
+                                                      this.g = new EZ((var6 - var13) / com.BM.B(this.o), false);
+                                                      com.BM.v(this.o).o(this.g);
+                                                      var14 = 1;
+                                                      if (var3 == null) {
+                                                         break label1255;
+                                                      }
+                                                   }
+                                                }
+                                             }
+                                          }
+
+                                          var93 = this.F;
+                                       }
+
+                                       label1189:
+                                       if (var3 == null) {
+                                          if (var93 != 0) {
+                                             var93 = var2.equals(com.cN_3.mouseDragged);
+                                             if (var3 != null) {
+                                                break label1189;
+                                             }
+
+                                             if (var93 != 0) {
+                                                int var34 = (this.O - var13) / com.BM.B(this.o);
+                                                int var46 = (var6 - var13) / com.BM.B(this.o);
+                                                this.g.z(Math.max(0, Math.min(var34, var46)));
+                                                this.g.T(Math.min(var4.getHeight() - 1, Math.max(var34, var46)));
+                                                var14 = 1;
+                                                if (var3 == null) {
+                                                   break label1255;
+                                                }
+                                             }
+                                          }
+
+                                          var93 = this.F;
+                                       }
+
+                                       if (var3 != null) {
+                                          break label1257;
+                                       }
+
+                                       if (var93 != 0) {
+                                          var93 = var2.equals(com.cN_3.mouseReleased);
+                                          if (var3 != null) {
+                                             break label1257;
+                                          }
+
+                                          if (var93 != 0) {
+                                             com.BM.Z(this.o, false);
+                                             this.F = false;
+                                             com.BM.F(this.o);
+                                             var14 = 1;
+                                             com.BM.U(this.o);
+                                             com.BM.A(this.o);
+                                          }
+                                       }
+                                    }
+
+                                    var93 = SwingUtilities.isRightMouseButton(var1);
+                                 }
+
+                                 if (var3 == null) {
+                                    label1170:
+                                    if (var93 != 0) {
+                                       label1168: {
+                                          label1955: {
+                                             var129 = this.m;
+                                             if (var3 == null) {
+                                                if (!this.m) {
+                                                   var129 = com.BM.w(this.o);
+                                                   if (var3 != null) {
+                                                      break label1168;
+                                                   }
+
+                                                   if (var129 != 0) {
+                                                      break label1955;
+                                                   }
+                                                }
+
+                                                var129 = var2.equals(com.cN_3.mousePressed);
+                                             }
+
+                                             label1159:
+                                             if (var3 == null) {
+                                                if (var129 != 0) {
+                                                   var129 = var5;
+                                                   if (var3 != null) {
+                                                      break label1159;
+                                                   }
+
+                                                   if (var5 > var12) {
+                                                      var129 = var5;
+                                                      if (var3 != null) {
+                                                         break label1159;
+                                                      }
+
+                                                      if (var5 < var12 + var9) {
+                                                         var129 = var6;
+                                                         if (var3 != null) {
+                                                            break label1159;
+                                                         }
+
+                                                         if (var6 < var13) {
+                                                            com.BM.Z(this.o, true);
+                                                            this.m = true;
+                                                            this.k = var5;
+                                                            this.p = new EZ((var5 - var12) / com.BM.B(this.o), false);
+                                                            this.V();
+                                                            var14 = 1;
+                                                            if (var3 == null) {
+                                                               break label1955;
+                                                            }
+                                                         }
+                                                      }
+                                                   }
+                                                }
+
+                                                var129 = this.m;
+                                             }
+
+                                             label1143:
+                                             if (var3 == null) {
+                                                if (var129 != 0) {
+                                                   var129 = var2.equals(com.cN_3.mouseDragged);
+                                                   if (var3 != null) {
+                                                      break label1143;
+                                                   }
+
+                                                   if (var129 != 0) {
+                                                      int var35 = (this.k - var12) / com.BM.B(this.o);
+                                                      int var47 = (var5 - var12) / com.BM.B(this.o);
+                                                      this.p.z(Math.max(0, Math.min(var35, var47)));
+                                                      this.p.T(Math.min(var4.getWidth() - 1, Math.max(var35, var47)));
+                                                      this.V();
+                                                      var14 = 1;
+                                                      if (var3 == null) {
+                                                         break label1955;
+                                                      }
+                                                   }
+                                                }
+
+                                                var129 = this.m;
+                                             }
+
+                                             if (var3 != null) {
+                                                break label1168;
+                                             }
+
+                                             if (var129 != 0) {
+                                                var129 = var2.equals(com.cN_3.mouseReleased);
+                                                if (var3 != null) {
+                                                   break label1168;
+                                                }
+
+                                                if (var129 != 0) {
+                                                   com.BM.Z(this.o, false);
+                                                   this.m = false;
+                                                   var14 = 1;
+                                                   com.BM.U(this.o);
+                                                   com.BM.A(this.o);
+                                                }
+                                             }
+                                          }
+
+                                          var129 = this.D;
+                                       }
+
+                                       if (var3 == null) {
+                                          if (var129 == 0) {
+                                             byte var130 = com.BM.w(this.o);
+                                             if (var3 != null) {
+                                                return (boolean)var130;
+                                             }
+
+                                             if (var130 != 0) {
+                                                break label1170;
+                                             }
+                                          }
+
+                                          var129 = var2.equals(com.cN_3.mousePressed);
+                                       }
+
+                                       label1119:
+                                       if (var3 == null) {
+                                          if (var129 != 0) {
+                                             var129 = var6;
+                                             if (var3 != null) {
+                                                break label1119;
+                                             }
+
+                                             if (var6 > var13) {
+                                                var129 = var6;
+                                                if (var3 != null) {
+                                                   break label1119;
+                                                }
+
+                                                if (var6 < var13 + var10) {
+                                                   var129 = var5;
+                                                   if (var3 != null) {
+                                                      break label1119;
+                                                   }
+
+                                                   if (var5 < var12) {
+                                                      com.BM.Z(this.o, true);
+                                                      this.D = true;
+                                                      this.O = var6;
+                                                      this.p = new EZ((var6 - var13) / com.BM.B(this.o), false);
+                                                      this.z();
+                                                      var14 = 1;
+                                                      if (var3 == null) {
+                                                         break label1170;
+                                                      }
+                                                   }
+                                                }
+                                             }
+                                          }
+
+                                          var129 = this.D;
+                                       }
+
+                                       label1103:
+                                       if (var3 == null) {
+                                          if (var129 != 0) {
+                                             var129 = var2.equals(com.cN_3.mouseDragged);
+                                             if (var3 != null) {
+                                                break label1103;
+                                             }
+
+                                             if (var129 != 0) {
+                                                int var36 = (this.O - var13) / com.BM.B(this.o);
+                                                int var48 = (var6 - var13) / com.BM.B(this.o);
+                                                this.p.z(Math.max(0, Math.min(var36, var48)));
+                                                this.p.T(Math.min(var4.getHeight() - 1, Math.max(var36, var48)));
+                                                this.z();
+                                                var14 = 1;
+                                                if (var3 == null) {
+                                                   break label1170;
+                                                }
+                                             }
+                                          }
+
+                                          var129 = this.D;
+                                       }
+
+                                       if (var3 != null) {
+                                          return (boolean)var129;
+                                       }
+
+                                       if (var129 != 0) {
+                                          boolean var131 = var2.equals(com.cN_3.mouseReleased);
+                                          if (var3 != null) {
+                                             return var131;
+                                          }
+
+                                          if (var131) {
+                                             com.BM.Z(this.o, false);
+                                             this.D = false;
+                                             var14 = 1;
+                                             com.BM.U(this.o);
+                                             com.BM.A(this.o);
+                                          }
+                                       }
+                                    }
+
+                                    this.o.setCursor(Cursor.getDefaultCursor());
+                                    var93 = var14;
+                                 }
+
+                                 return (boolean)var93;
+                              }
+
+                              label1956: {
+                                 if (var3 == null) {
+                                    if (var100) {
+                                       com.BM.Z(this.o, true);
+                                       this.u = true;
+                                       this.k = var5;
+                                       this.O = var6;
+                                       this.j = var11;
+                                       if (var3 == null) {
+                                          break label1956;
+                                       }
+                                    }
+
+                                    var100 = this.u;
+                                 }
+
+                                 label1078:
+                                 if (var3 == null) {
+                                    if (var100) {
+                                       var100 = var2.equals(com.cN_3.mouseDragged);
+                                       if (var3 != null) {
+                                          break label1078;
+                                       }
+
+                                       if (var100) {
+                                          int var37 = (var6 - this.O) / com.BM.B(this.o);
+                                          int var49 = this.j.top + var37;
+                                          int var101 = var49;
+                                          if (var3 == null) {
+                                             if (var49 < 0) {
+                                                var49 = 0;
+                                             }
+
+                                             var101 = var49;
+                                          }
+
+                                          var10001 = var4.getHeight() - 1;
+                                          if (var3 == null) {
+                                             if (var101 > var10001) {
+                                                var49 = var4.getHeight() - 1;
+                                             }
+
+                                             var101 = this.j.bottom;
+                                             var10001 = var37;
+                                          }
+
+                                          int var57 = var101 - var10001;
+                                          int var102 = var57;
+                                          if (var3 == null) {
+                                             if (var57 < 0) {
+                                                var57 = 0;
+                                             }
+
+                                             var102 = var57;
+                                          }
+
+                                          var10001 = var4.getHeight() - 1;
+                                          if (var3 == null) {
+                                             if (var102 > var10001) {
+                                                var57 = var4.getHeight() - 1;
+                                             }
+
+                                             var102 = var5 - this.k;
+                                             var10001 = com.BM.B(this.o);
+                                          }
+
+                                          int var63 = var102 / var10001;
+                                          int var65 = this.j.left + var63;
+                                          int var103 = var65;
+                                          if (var3 == null) {
+                                             if (var65 < 0) {
+                                                var65 = 0;
+                                             }
+
+                                             var103 = var65;
+                                          }
+
+                                          var10001 = var4.getWidth() - 1;
+                                          if (var3 == null) {
+                                             if (var103 > var10001) {
+                                                var65 = var4.getWidth() - 1;
+                                             }
+
+                                             var103 = this.j.right;
+                                             var10001 = var63;
+                                          }
+
+                                          int var24 = var103 - var10001;
+                                          int var104 = var24;
+                                          if (var3 == null) {
+                                             if (var24 < 0) {
+                                                var24 = 0;
+                                             }
+
+                                             var104 = var24;
+                                          }
+
+                                          if (var3 == null) {
+                                             if (var104 > var4.getWidth() - 1) {
+                                                var24 = var4.getWidth() - 1;
+                                             }
+
+                                             com.BM.v(this.o).t(var49, var65, var57, var24);
+                                             var104 = 1;
+                                          }
+
+                                          var14 = var104;
+                                          com.BM.A(this.o);
+                                          break label1956;
+                                       }
+                                    }
+
+                                    var100 = this.u;
+                                 }
+
+                                 if (var3 != null) {
+                                    return var100;
+                                 }
+
+                                 if (var100) {
+                                    boolean var134 = var2.equals(com.cN_3.mouseReleased);
+                                    if (var3 != null) {
+                                       return var134;
+                                    }
+
+                                    if (var134) {
+                                       com.BM.Z(this.o, false);
+                                       this.u = false;
+                                       com.BM.U(this.o);
+                                       com.BM.A(this.o);
+                                    }
+                                 }
+                              }
+
+                              this.o.setCursor(Cursor.getPredefinedCursor(a(25620, 4591689828834764723L)));
+                              return (boolean)var14;
+                           }
+
+                           label1958: {
+                              if (var3 == null) {
+                                 if (var93 != 0) {
+                                    com.BM.Z(this.o, true);
+                                    this.L = true;
+                                    this.O = var6;
+                                    this.g = var43.R();
+                                    if (var3 == null) {
+                                       break label1958;
+                                    }
+                                 }
+
+                                 var93 = this.L;
+                              }
+
+                              label1055:
+                              if (var3 == null) {
+                                 if (var93 != 0) {
+                                    var93 = var2.equals(com.cN_3.mouseDragged);
+                                    if (var3 != null) {
+                                       break label1055;
+                                    }
+
+                                    if (var93 != 0) {
+                                       label1959: {
+                                          int var54 = (var6 - this.O) / com.BM.B(this.o);
+                                          int var60 = this.g.f() + var54;
+                                          var96 = var60;
+                                          var10001 = this.g.x();
+                                          if (var3 == null) {
+                                             if (var60 < var10001) {
+                                                var60 = this.g.x();
+                                             }
+
+                                             var96 = var60;
+                                             if (var3 != null) {
+                                                break label1959;
+                                             }
+
+                                             var10001 = var4.getHeight() - 1;
+                                          }
+
+                                          if (var96 > var10001) {
+                                             var60 = var4.getHeight() - 1;
+                                          }
+
+                                          var43.T(var60);
+                                          var96 = 1;
+                                       }
+
+                                       var14 = var96;
+                                       if (var3 == null) {
+                                          break label1958;
+                                       }
+                                    }
+                                 }
+
+                                 var93 = this.L;
+                              }
+
+                              if (var3 != null) {
+                                 return (boolean)var93;
+                              }
+
+                              if (var93 != 0) {
+                                 boolean var128 = var2.equals(com.cN_3.mouseReleased);
+                                 if (var3 != null) {
+                                    return var128;
+                                 }
+
+                                 if (var128) {
+                                    com.BM.Z(this.o, false);
+                                    this.L = false;
+                                    com.BM.F(this.o);
+                                    var14 = 1;
+                                    com.BM.U(this.o);
+                                    com.BM.A(this.o);
+                                 }
+                              }
+                           }
+
+                           this.o.setCursor(Cursor.getPredefinedCursor(a(5450, 4092936664386377443L)));
+                           return (boolean)var14;
+                        }
+
+                        label1961: {
+                           if (var3 == null) {
+                              if (var95 != 0) {
+                                 com.BM.Z(this.o, true);
+                                 this.q = true;
+                                 this.O = var6;
+                                 this.g = var43.R();
+                                 if (var3 == null) {
+                                    break label1961;
+                                 }
+                              }
+
+                              var95 = this.q;
+                           }
+
+                           label1024:
+                           if (var3 == null) {
+                              if (var95 != 0) {
+                                 var95 = var2.equals(com.cN_3.mouseDragged);
+                                 if (var3 != null) {
+                                    break label1024;
+                                 }
+
+                                 if (var95 != 0) {
+                                    int var55 = (var6 - this.O) / com.BM.B(this.o);
+                                    int var61 = this.g.x() + var55;
+                                    int var97 = var61;
+                                    if (var3 == null) {
+                                       if (var61 < 0) {
+                                          var61 = 0;
+                                       }
+
+                                       var97 = var61;
+                                    }
+
+                                    if (var3 == null) {
+                                       if (var97 > this.g.f()) {
+                                          var61 = this.g.f();
+                                       }
+
+                                       var43.z(var61);
+                                       var97 = 1;
+                                    }
+
+                                    var14 = var97;
+                                    if (var3 == null) {
+                                       break label1961;
+                                    }
+                                 }
+                              }
+
+                              var95 = this.q;
+                           }
+
+                           if (var3 != null) {
+                              return (boolean)var95;
+                           }
+
+                           if (var95 != 0) {
+                              boolean var133 = var2.equals(com.cN_3.mouseReleased);
+                              if (var3 != null) {
+                                 return var133;
+                              }
+
+                              if (var133) {
+                                 com.BM.Z(this.o, false);
+                                 this.q = false;
+                                 com.BM.F(this.o);
+                                 var14 = 1;
+                                 com.BM.U(this.o);
+                                 com.BM.A(this.o);
+                              }
+                           }
+                        }
+
+                        this.o.setCursor(Cursor.getPredefinedCursor(a(5450, 4092936664386377443L)));
+                        return (boolean)var14;
+                     }
+
+                     label1963: {
+                        if (var3 == null) {
+                           if (var94 != 0) {
+                              com.BM.Z(this.o, true);
+                              this.W = true;
+                              this.O = var6;
+                              this.g = var43.R();
+                              if (var3 == null) {
+                                 break label1963;
+                              }
+                           }
+
+                           var94 = this.W;
+                        }
+
+                        label997:
+                        if (var3 == null) {
+                           if (var94 != 0) {
+                              var94 = var2.equals(com.cN_3.mouseDragged);
+                              if (var3 != null) {
+                                 break label997;
+                              }
+
+                              if (var94 != 0) {
+                                 int var56 = (var6 - this.O) / com.BM.B(this.o);
+                                 int var62 = this.g.x() + var56;
+                                 int var98 = var62;
+                                 if (var3 == null) {
+                                    if (var62 < 0) {
+                                       var62 = 0;
+                                    }
+
+                                    var98 = var62;
+                                 }
+
+                                 var10001 = var4.getHeight() - 1;
+                                 if (var3 == null) {
+                                    if (var98 > var10001) {
+                                       var62 = var4.getHeight() - 1;
+                                    }
+
+                                    var98 = this.g.f();
+                                    var10001 = var56;
+                                 }
+
+                                 int var64 = var98 + var10001;
+                                 int var99 = var64;
+                                 if (var3 == null) {
+                                    if (var64 < 0) {
+                                       var64 = 0;
+                                    }
+
+                                    var99 = var64;
+                                 }
+
+                                 if (var3 == null) {
+                                    if (var99 > var4.getHeight() - 1) {
+                                       var64 = var4.getHeight() - 1;
+                                    }
+
+                                    var43.z(var62);
+                                    var43.T(var64);
+                                    var99 = 1;
+                                 }
+
+                                 var14 = var99;
+                                 if (var3 == null) {
+                                    break label1963;
+                                 }
+                              }
+                           }
+
+                           var94 = this.W;
+                        }
+
+                        if (var3 != null) {
+                           return (boolean)var94;
+                        }
+
+                        if (var94 != 0) {
+                           boolean var132 = var2.equals(com.cN_3.mouseReleased);
+                           if (var3 != null) {
+                              return var132;
+                           }
+
+                           if (var132) {
+                              com.BM.Z(this.o, false);
+                              this.W = false;
+                              com.BM.F(this.o);
+                              var14 = 1;
+                              com.BM.U(this.o);
+                              com.BM.A(this.o);
+                           }
+                        }
+                     }
+
+                     this.o.setCursor(Cursor.getPredefinedCursor(a(25620, 4591689828834764723L)));
+                     return (boolean)var14;
+                  }
+
+                  label1965: {
+                     if (var3 == null) {
+                        if (var86 != 0) {
+                           com.BM.Z(this.o, true);
+                           this.R = true;
+                           this.k = var5;
+                           this.g = var43.R();
+                           if (var3 == null) {
+                              break label1965;
+                           }
+                        }
+
+                        var86 = this.R;
+                     }
+
+                     label967:
+                     if (var3 == null) {
+                        if (var86 != 0) {
+                           var86 = var2.equals(com.cN_3.mouseDragged);
+                           if (var3 != null) {
+                              break label967;
+                           }
+
+                           if (var86 != 0) {
+                              label1966: {
+                                 int var51 = (var5 - this.k) / com.BM.B(this.o);
+                                 int var22 = this.g.f() + var51;
+                                 var89 = var22;
+                                 var10001 = this.g.x();
+                                 if (var3 == null) {
+                                    if (var22 < var10001) {
+                                       var22 = this.g.x();
+                                    }
+
+                                    var89 = var22;
+                                    if (var3 != null) {
+                                       break label1966;
+                                    }
+
+                                    var10001 = var4.getWidth() - 1;
+                                 }
+
+                                 if (var89 > var10001) {
+                                    var22 = var4.getWidth() - 1;
+                                 }
+
+                                 var43.T(var22);
+                                 var89 = 1;
+                              }
+
+                              var14 = var89;
+                              if (var3 == null) {
+                                 break label1965;
+                              }
+                           }
+                        }
+
+                        var86 = this.R;
+                     }
+
+                     if (var3 != null) {
+                        return (boolean)var86;
+                     }
+
+                     if (var86 != 0) {
+                        boolean var125 = var2.equals(com.cN_3.mouseReleased);
+                        if (var3 != null) {
+                           return var125;
+                        }
+
+                        if (var125) {
+                           com.BM.Z(this.o, false);
+                           this.R = false;
+                           com.BM.W(this.o);
+                           var14 = 1;
+                           com.BM.U(this.o);
+                           com.BM.A(this.o);
+                        }
+                     }
+                  }
+
+                  this.o.setCursor(Cursor.getPredefinedCursor(a(9245, 4824231993813116861L)));
+                  return (boolean)var14;
+               }
+
+               label1968: {
+                  if (var3 == null) {
+                     if (var88 != 0) {
+                        com.BM.Z(this.o, true);
+                        this.G = true;
+                        this.k = var5;
+                        this.g = var43.R();
+                        if (var3 == null) {
+                           break label1968;
+                        }
+                     }
+
+                     var88 = this.G;
+                  }
+
+                  label936:
+                  if (var3 == null) {
+                     if (var88 != 0) {
+                        var88 = var2.equals(com.cN_3.mouseDragged);
+                        if (var3 != null) {
+                           break label936;
+                        }
+
+                        if (var88 != 0) {
+                           int var52 = (var5 - this.k) / com.BM.B(this.o);
+                           int var58 = this.g.x() + var52;
+                           int var90 = var58;
+                           if (var3 == null) {
+                              if (var58 < 0) {
+                                 var58 = 0;
+                              }
+
+                              var90 = var58;
+                           }
+
+                           if (var3 == null) {
+                              if (var90 > this.g.f()) {
+                                 var58 = this.g.f();
+                              }
+
+                              var43.z(var58);
+                              var90 = 1;
+                           }
+
+                           var14 = var90;
+                           if (var3 == null) {
+                              break label1968;
+                           }
+                        }
+                     }
+
+                     var88 = this.G;
+                  }
+
+                  if (var3 != null) {
+                     return (boolean)var88;
+                  }
+
+                  if (var88 != 0) {
+                     boolean var127 = var2.equals(com.cN_3.mouseReleased);
+                     if (var3 != null) {
+                        return var127;
+                     }
+
+                     if (var127) {
+                        com.BM.Z(this.o, false);
+                        this.G = false;
+                        com.BM.W(this.o);
+                        var14 = 1;
+                        com.BM.U(this.o);
+                        com.BM.A(this.o);
+                     }
+                  }
+               }
+
+               this.o.setCursor(Cursor.getPredefinedCursor(a(9245, 4824231993813116861L)));
+               return (boolean)var14;
+            }
+
+            label1970: {
+               if (var3 == null) {
+                  if (var87 != 0) {
+                     com.BM.Z(this.o, true);
+                     this.Z = true;
+                     this.k = var5;
+                     this.g = var43.R();
+                     if (var3 == null) {
+                        break label1970;
+                     }
+                  }
+
+                  var87 = this.Z;
+               }
+
+               label909:
+               if (var3 == null) {
+                  if (var87 != 0) {
+                     var87 = var2.equals(com.cN_3.mouseDragged);
+                     if (var3 != null) {
+                        break label909;
+                     }
+
+                     if (var87 != 0) {
+                        int var53 = (var5 - this.k) / com.BM.B(this.o);
+                        int var59 = this.g.x() + var53;
+                        int var91 = var59;
+                        if (var3 == null) {
+                           if (var59 < 0) {
+                              var59 = 0;
+                           }
+
+                           var91 = var59;
+                        }
+
+                        var10001 = var4.getWidth() - 1;
+                        if (var3 == null) {
+                           if (var91 > var10001) {
+                              var59 = var4.getWidth() - 1;
+                           }
+
+                           var91 = this.g.f();
+                           var10001 = var53;
+                        }
+
+                        int var23 = var91 + var10001;
+                        int var92 = var23;
+                        if (var3 == null) {
+                           if (var23 < 0) {
+                              var23 = 0;
+                           }
+
+                           var92 = var23;
+                        }
+
+                        if (var3 == null) {
+                           if (var92 > var4.getWidth() - 1) {
+                              var23 = var4.getWidth() - 1;
+                           }
+
+                           var43.z(var59);
+                           var43.T(var23);
+                           var92 = 1;
+                        }
+
+                        var14 = var92;
+                        if (var3 == null) {
+                           break label1970;
+                        }
+                     }
+                  }
+
+                  var87 = this.Z;
+               }
+
+               if (var3 != null) {
+                  return (boolean)var87;
+               }
+
+               if (var87 != 0) {
+                  boolean var126 = var2.equals(com.cN_3.mouseReleased);
+                  if (var3 != null) {
+                     return var126;
+                  }
+
+                  if (var126) {
+                     com.BM.Z(this.o, false);
+                     this.Z = false;
+                     com.BM.W(this.o);
+                     var14 = 1;
+                     com.BM.U(this.o);
+                     com.BM.A(this.o);
+                  }
+               }
+            }
+
+            this.o.setCursor(Cursor.getPredefinedCursor(a(25620, 4591689828834764723L)));
+            return (boolean)var14;
+         }
+
+         MouseWheelEvent var19 = (MouseWheelEvent)var68;
+         this.o.b(this.o.F() - var19.getWheelRotation());
+         this.o.setCursor(Cursor.getDefaultCursor());
+         return (boolean)var14;
+      }
+   }
+
+   private void V() {
+      int[] var10000 = com.kD_3.u();
+      boolean[] var2 = com.BM.Y(this.o);
+      int[] var1 = var10000;
+      int var3 = this.p.x();
+
+      while (true) {
+         if (var3 <= this.p.f()) {
+            var2[var3] = false;
+            var3++;
+            if (var1 != null) {
+               break;
+            }
+
+            if (var1 == null) {
+               continue;
+            }
+         }
+
+         com.BM.v(this.o).f(com.Fk_2.h(var2));
+         com.BM.g(this.o);
+         break;
+      }
+   }
+
+   private void z() {
+      int[] var10000 = com.kD_3.u();
+      boolean[] var2 = com.BM.P(this.o);
+      int var3 = this.p.x();
+      int[] var1 = var10000;
+
+      while (true) {
+         if (var3 <= this.p.f()) {
+            var2[var3] = false;
+            var3++;
+            if (var1 != null) {
+               break;
+            }
+
+            if (var1 == null) {
+               continue;
+            }
+         }
+
+         com.BM.v(this.o).e(com.Fk_2.h(var2));
+         com.BM.g(this.o);
+         break;
+      }
+   }
+
+   YW(com.BM var1, XD var2) {
+      this(var1);
+   }
+
+   static {
+      long var0 = 4424023602517480002L;
+      long[] var6 = new long[10];
+      int var3 = 0;
+      String var4 = "\u0014µ\u0011q¨±µô¡95Ô \u0089>èF\u008e\u0011û{v\u0014\u00992 U\u007fPÑf\u0094\u0010Yy\u008bu`þÂ@;7n¸¸\u001cf\u0011\u0095$N+æÚr\u009a\u000b\u0095+§\u0087õü";
+      int var5 = "\u0014µ\u0011q¨±µô¡95Ô \u0089>èF\u008e\u0011û{v\u0014\u00992 U\u007fPÑf\u0094\u0010Yy\u008bu`þÂ@;7n¸¸\u001cf\u0011\u0095$N+æÚr\u009a\u000b\u0095+§\u0087õü"
+         .length();
+      byte var2 = 0;
+
+      label20:
+      while (true) {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         long[] var10000 = var6;
+         var10001 = var3++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
+
+         while (true) {
+            long var13 = var10002 ^ var0;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var13;
+                  if (var2 >= var5) {
+                     a = var6;
+                     b = new Integer[10];
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var13;
+                  if (var2 < var5) {
+                     continue label20;
+                  }
+
+                  var4 = "Ö\u009fÙ{6\u008fÍ? \u0091 \u0086é\u0013\u0084¨";
+                  var5 = "Ö\u009fÙ{6\u008fÍ? \u0091 \u0086é\u0013\u0084¨".length();
+                  var2 = 0;
+            }
+
+            byte var10 = var2;
+            var2 += 8;
+            var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
+            var10000 = var6;
+            var10001 = var3++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 928;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

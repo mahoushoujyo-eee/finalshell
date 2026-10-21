@@ -1,36 +1,32 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.BM;
-import com.PM;
-import com.kd_1;
-import com.wx_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class K1
-implements ActionListener {
-    final kd_1 A;
+class K1 implements ActionListener {
+   final com.kD_3 A;
 
-    K1(kd_1 kd_12) {
-        this.A = kd_12;
-    }
+   K1(com.kD_3 var1) {
+      this.A = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block3: {
-            BM bM;
-            block2: {
-                int[] nArray = kd_1.u();
-                bM = kd_1.c(this.A);
-                if (nArray != null) break block2;
-                if (bM.R()) break block3;
-                bM = kd_1.c(this.A);
-            }
-            wx_0.G(PM.l(bM.w()));
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      int[] var2 = com.kD_3.u();
+      com.BM var10000 = com.kD_3.c(this.A);
+      if (var2 == null) {
+         if (var10000.R()) {
+            return;
+         }
+
+         var10000 = com.kD_3.c(this.A);
+      }
+
+      com.Wx_2.G(PM.l(var10000.w()));
+   }
 }
+
+
+
+
 

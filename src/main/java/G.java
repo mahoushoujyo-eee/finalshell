@@ -1,93 +1,129 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import javax.swing.JButton;
 
-class G
-implements MouseListener {
-    final y1_0 c;
-    final tg_0 w;
-    final F_ V;
+class G implements MouseListener {
+   final y1_2 c;
+   final Tg_2 w;
+   final F_ V;
 
-    G(F_ f_2, y1_0 y1_02, tg_0 tg_02) {
-        this.V = f_2;
-        this.c = y1_02;
-        this.w = tg_02;
-    }
+   G(F_ var1, y1_2 var2, Tg_2 var3) {
+      this.V = var1;
+      this.c = var2;
+      this.w = var3;
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-        block14: {
-            G g10;
-            block15: {
-                block16: {
-                    int n10;
-                    String[] stringArray;
-                    block13: {
-                        Object object;
-                        String[] stringArray2 = F_.F();
-                        try {
-                            object = yt_1.i();
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        try {
-                            object.P();
-                        }
-                        catch (InvocationTargetException invocationTargetException) {
-                            throw invocationTargetException.getTargetException();
-                        }
-                        stringArray = stringArray2;
-                        n10 = mouseEvent.getButton();
-                        if (stringArray == null) break block13;
-                        if (n10 != 1) break block14;
-                        g10 = this;
-                        if (stringArray != null) {
-                            try {
-                                n10 = ((Boolean)g10.c.i()).booleanValue() ? 1 : 0;
-                            }
-                            catch (InvocationTargetException invocationTargetException) {
-                                throw invocationTargetException.getTargetException();
-                            }
-                        }
-                        break block15;
-                    }
-                    if (n10 != 0) break block16;
-                    if (mouseEvent.getButton() != 1) break block14;
-                    try {
-                        this.w.A();
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    ((tg_0)this.w).show((JButton)this.V.hR, 0 - ((tg_0)com.c.c((long)129362754730391727L).get((Object)this)).getPreferredSize().width + ((JButton)this.V.hR).getWidth() - 2, 0 - (((tg_0)com.c.c((long)129362754730391727L).get((Object)this)).getPreferredSize().height + 1));
-                    if (stringArray != null) break block14;
-                }
-                g10 = this;
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+      String[] var10000 = F_.F();
+      Object[] var10001 = com.c.f();
+      Method var13 = com.c.d(270389152141252877L);
+      Object[] var25 = var10001;
+      Object var20 = null;
+
+      try {
+         var10001 = (Object[])var13.invoke(var20, var25);
+      } catch (InvocationTargetException var6) {
+         throw var6.getTargetException();
+      }
+
+      var20 = com.c.f();
+      Method var10004 = com.c.d(284609497308396758L);
+      var25 = (Object[])var20;
+      var20 = var10001;
+      Method var15 = var10004;
+
+      try {
+         var15.invoke(var20, var25);
+      } catch (InvocationTargetException var5) {
+         throw var5.getTargetException();
+      }
+
+      label61: {
+         String[] var2 = var10000;
+         int var7 = var1.getButton();
+         if (var2 != null) {
+            if (var7 != 1) {
+               return;
             }
-            ((tg_0)g10.w).setVisible(false);
-        }
-    }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-    }
+            var8 = this;
+            if (var2 == null) {
+               break label61;
+            }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-    }
+            var10000 = (String[])com.c.c(218869713873426275L).get(this);
+            var10001 = com.c.f();
+            Method var27 = com.c.d(410760064034581011L);
+            var20 = var10001;
+            var10001 = var10000;
+            Method var10 = var27;
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-    }
+            try {
+               var7 = (Boolean)var10.invoke(var10001, (Object[])var20);
+            } catch (InvocationTargetException var4) {
+               throw var4.getTargetException();
+            }
+         }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+         if (var7 == 0) {
+            if (var1.getButton() != 1) {
+               return;
+            }
+
+            var10000 = (String[])com.c.c(129362754730391727L).get(this);
+            var10001 = com.c.f();
+            Method var28 = com.c.d(337799717273932072L);
+            var20 = var10001;
+            var10001 = var10000;
+            Method var12 = var28;
+
+            try {
+               var12.invoke(var10001, (Object[])var20);
+            } catch (InvocationTargetException var3) {
+               throw var3.getTargetException();
+            }
+
+            ((Tg_2)com.c.c(129362754730391727L).get(this))
+               .show(
+                  (JButton)com.c.c(316737507384357237L).get(com.c.c(420140467323718004L).get(this)),
+                  0
+                     - ((Tg_2)com.c.c(129362754730391727L).get(this)).getPreferredSize().width
+                     + ((JButton)com.c.c(316737507384357237L).get(com.c.c(420140467323718004L).get(this))).getWidth()
+                     - 2,
+                  0 - (((Tg_2)com.c.c(129362754730391727L).get(this)).getPreferredSize().height + 1)
+               );
+            if (var2 != null) {
+               return;
+            }
+         }
+
+         var8 = this;
+      }
+
+      ((Tg_2)com.c.c(129362754730391727L).get(var8)).setVisible(false);
+   }
+
+   @Override
+   public void mousePressed(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseExited(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+   }
+
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+   }
 }
+
+
+
+
 

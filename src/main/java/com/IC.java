@@ -1,21 +1,19 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.kd_1;
+class IC implements Runnable {
+   final com.kD_3 Y;
 
-class IC
-implements Runnable {
-    final kd_1 Y;
+   IC(com.kD_3 var1) {
+      this.Y = var1;
+   }
 
-    IC(kd_1 kd_12) {
-        this.Y = kd_12;
-    }
-
-    @Override
-    public void run() {
-        kd_1.n(this.Y, true);
-    }
+   @Override
+   public void run() {
+      com.kD_3.n(this.Y, true);
+   }
 }
+
+
+
+
 

@@ -1,49 +1,52 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.BK;
-import com.KD;
-import com.gi_0;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JComponent;
 
-class Q5
-implements ActionListener {
-    final BK B;
+class Q5 implements ActionListener {
+   final com.BK B;
 
-    Q5(BK bK) {
-        this.B = bK;
-    }
+   Q5(com.BK var1) {
+      this.B = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block6: {
-            JComponent jComponent;
-            block5: {
-                float f10;
-                block4: {
-                    this.B.g.u += 0.075f;
-                    int[] nArray = KD.s();
-                    float f11 = this.B.g.u - 1.0f;
-                    f10 = f11 == 0.0f ? 0 : (f11 > 0.0f ? 1 : -1);
-                    if (nArray != null) break block4;
-                    if (f10 >= 0) {
-                        this.B.g.u = 1.0f;
-                        this.B.g.x.Y();
-                    }
-                    gi_0.F(this.B.g);
-                    jComponent = this.B.w;
-                    if (nArray != null) break block5;
-                    f10 = (float)jComponent.isEnabled();
-                }
-                if (f10 == false) break block6;
-                jComponent = this.B.w;
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      JComponent var4;
+      label25: {
+         int[] var10000 = com.KD.s();
+         this.B.g.u += 0.075F;
+         int[] var2 = var10000;
+         float var5;
+         int var3 = (var5 = this.B.g.u - 1.0F) == 0.0F ? 0 : (var5 < 0.0F ? -1 : 1);
+         if (var2 == null) {
+            if (var3 >= 0) {
+               this.B.g.u = 1.0F;
+               this.B.g.x.Y();
             }
-            jComponent.repaint();
-        }
-    }
+
+            Gi_2.F(this.B.g);
+            var4 = this.B.w;
+            if (var2 != null) {
+               break label25;
+            }
+
+            var3 = this.B.w.isEnabled();
+         }
+
+         if (var3 == 0) {
+            return;
+         }
+
+         var4 = this.B.w;
+      }
+
+      var4.repaint();
+   }
 }
+
+
+
+
 

@@ -1,34 +1,31 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
+class QF implements Runnable {
+   final oE_3 I;
+   private static final long a;
 
-class QF
-implements Runnable {
-    final oe_1 I;
-    private static final long a;
+   QF(oE_3 var1) {
+      this.I = var1;
+   }
 
-    QF(oe_1 oe_12) {
-        this.I = oe_12;
-    }
+   @Override
+   public void run() {
+      try {
+         Thread.sleep(a);
+      } catch (InterruptedException var2) {
+         var2.printStackTrace();
+      }
 
-    @Override
-    public void run() {
-        try {
-            Thread.sleep(a);
-        }
-        catch (InterruptedException interruptedException) {
-            interruptedException.printStackTrace();
-        }
-        ((nq_0)this.I.U).setVisible(false);
-    }
+      ((nq_2)com.c.c(549465658310609690L).get(com.c.c(442764781923245602L).get(this))).setVisible(false);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 6469273428450883857L;
-        a = 0x59C779E851B03C05L ^ l2;
-    }
+   static {
+      long var0 = 6469273428450883857L;
+      long var10002 = 6469273428450884613L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

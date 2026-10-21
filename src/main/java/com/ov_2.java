@@ -1,127 +1,156 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.YP;
-import com.aG;
-import com.et_0;
-import com.j_0;
-import org.jetbrains.annotations.NotNull;
+import javax.swing.Icon;
 
-/*
- * Renamed from com.ov
- */
-public class ov_2 {
-    private YP Q = YP.r;
-    private YP P = YP.r;
-    private YP D = null;
+public class Ov_2 extends com.O_ implements ND {
+   protected boolean W;
+   protected float Z;
+   private static final String a;
 
-    public YP U() {
-        return YP.P(this.p());
-    }
+   public Ov_2() {
+      this.f();
+   }
 
-    @NotNull
-    private static YP m(@NotNull YP yP, @NotNull YP yP2) {
-        YP yP3;
-        boolean bl;
-        aG aG2;
-        block9: {
-            block10: {
-                et_0 et_02;
-                block7: {
-                    block8: {
-                        aG2 = yP.n();
-                        bl = j_0.g();
-                        et_02 = yP.s();
-                        if (!bl) break block7;
-                        if (et_02 != null) break block8;
-                        et_02 = yP2.s();
-                        if (!bl) break block7;
-                        if (et_02 != null) {
-                            aG2.j(yP2.s());
-                        }
-                    }
-                    yP3 = yP;
-                    if (!bl) break block9;
-                    et_02 = yP3.K();
-                }
-                if (et_02 != null) break block10;
-                yP3 = yP2;
-                if (!bl) break block9;
-                if (yP3.K() != null) {
-                    aG2.c(yP2.K());
-                }
+   public Ov_2(Icon var1) {
+      super(var1);
+      this.f();
+   }
+
+   public Ov_2(Icon var1, int var2) {
+      super(var1, var2);
+      this.f();
+   }
+
+   public Ov_2(String var1) {
+      super(var1);
+      this.f();
+   }
+
+   public Ov_2(String var1, int var2) {
+      super(var1, var2, new Object[0]);
+      this.f();
+   }
+
+   public Ov_2(String var1, Icon var2) {
+      super(var1, var2);
+      this.f();
+   }
+
+   public Ov_2(String var1, Icon var2, int var3) {
+      super(var1, var2, var3, new Object[0]);
+      this.f();
+   }
+
+   private void f() {
+      this.S(a);
+   }
+
+   @Override
+   public void o(boolean var1) {
+      this.W = var1;
+      this.repaint();
+   }
+
+   @Override
+   public boolean D() {
+      return this.W;
+   }
+
+   @Override
+   public void w(float var1) {
+      this.Z = var1;
+      this.repaint();
+   }
+
+   @Override
+   public float D$float() {
+      return this.Z;
+   }
+
+   @Override
+   public boolean contains(int var1, int var2) {
+      return com.QC.q(this, var1, var2);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "tWCSaSccHD\u001f`\\t{@HF".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 4;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 4;
+         var10006 = var0;
+      } else {
+         var6 = 4;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 4;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 18;
+               break;
+            case 1:
+               var23 = 33;
+               break;
+            case 2:
+               var23 = 34;
+               break;
+            case 3:
+               var23 = 54;
+               break;
+            case 4:
+               var23 = 1;
+               break;
+            case 5:
+               var23 = 52;
+               break;
+            default:
+               var23 = 21;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            yP3 = yP;
-        }
-        if (bl) {
-            if (yP3 != null) {
-                aG2.v(yP.a());
-                aG2.H(yP.r());
-                aG2.R(yP.w());
-            }
-            yP3 = aG2.y();
-        }
-        YP yP4 = yP3;
-        return yP4;
-    }
 
-    public void L() {
-        this.Q = this.P;
-        this.D = null;
-    }
-
-    public void u(ov_2 ov_22) {
-        this.W(ov_22.U());
-    }
-
-    public void t(YP yP) {
-        this.P = yP;
-        this.D = null;
-    }
-
-    public et_0 c() {
-        return this.R(null);
-    }
-
-    public et_0 R(et_0 et_02) {
-        boolean bl = j_0.g();
-        et_0 et_03 = et_02;
-        if (bl) {
-            et_03 = et_03 != null ? et_02 : this.P.s();
-        }
-        return et_03;
-    }
-
-    public et_0 A() {
-        return this.A(null);
-    }
-
-    public et_0 A(et_0 et_02) {
-        boolean bl = j_0.g();
-        et_0 et_03 = et_02;
-        if (bl) {
-            et_03 = et_03 != null ? et_02 : this.P.K();
-        }
-        return et_03;
-    }
-
-    public void W(YP yP) {
-        this.Q = yP;
-        this.D = null;
-    }
-
-    private YP p() {
-        boolean bl = j_0.g();
-        YP yP = this.D;
-        if (bl) {
-            if (yP == null) {
-                this.D = ov_2.m(this.Q, this.P);
-            }
-            yP = this.D;
-        }
-        return yP;
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

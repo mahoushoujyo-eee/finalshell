@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.W;
 
-import com.W.e;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class D
-implements ActionListener {
-    final e N;
+class D implements ActionListener {
+   final e N;
 
-    D(e e2) {
-        this.N = e2;
-    }
+   D(e var1) {
+      this.N = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        e.I(this.N, 0);
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      e.I(this.N, 0);
+   }
 }
+
+
+
+
 

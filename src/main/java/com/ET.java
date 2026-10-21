@@ -1,27 +1,26 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.qt_0;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import javax.swing.JLayeredPane;
 
-class ET
-extends ComponentAdapter {
-    final qt_0 A;
-    final JLayeredPane m;
+class ET extends ComponentAdapter {
+   final com.Qt_2 A;
+   final JLayeredPane m;
 
-    ET(qt_0 qt_02, JLayeredPane jLayeredPane) {
-        this.A = qt_02;
-        this.m = jLayeredPane;
-    }
+   ET(com.Qt_2 var1, JLayeredPane var2) {
+      this.A = var1;
+      this.m = var2;
+   }
 
-    @Override
-    public void componentResized(ComponentEvent componentEvent) {
-        this.A.setBounds(0, 0, this.m.getWidth(), this.m.getHeight());
-        this.A.revalidate();
-    }
+   @Override
+   public void componentResized(ComponentEvent var1) {
+      this.A.setBounds(0, 0, this.m.getWidth(), this.m.getHeight());
+      this.A.revalidate();
+   }
 }
+
+
+
+
 

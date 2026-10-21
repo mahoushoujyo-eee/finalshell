@@ -1,49 +1,55 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.util.HashMap;
 
 public class T0 {
-    HashMap c;
-    long k;
+   HashMap c;
+   long k;
 
-    public T0(long l2) {
-        this.k = l2;
-        this.c = new HashMap();
-    }
+   public T0(long var1) {
+      this.k = var1;
+      this.c = new HashMap();
+   }
 
-    public boolean equals(Object object) {
-        T0 t0 = (T0)object;
-        String[] stringArray = QI.N();
-        long l2 = this.k - t0.k;
-        long l3 = l2 == 0L ? 0 : (l2 < 0L ? -1 : 1);
-        if (stringArray != null) {
-            if (l3 == false) {
-                return true;
-            }
-            l3 = 0;
-        }
-        return (boolean)l3;
-    }
+   @Override
+   public boolean equals(Object var1) {
+      String[] var10000 = QI.N();
+      T0 var3 = (T0)var1;
+      String[] var2 = var10000;
+      long var5;
+      int var4 = (var5 = this.k - var3.k) == 0L ? 0 : (var5 < 0L ? -1 : 1);
+      if (var2 != null) {
+         if (!var4) {
+            return true;
+         }
 
-    public int hashCode() {
-        return Long.toString(this.k).hashCode();
-    }
+         var4 = 0;
+      }
 
-    public void c(nL nL2, kw_0 kw_02) {
-        this.c.put(nL2, kw_02);
-    }
+      return (boolean)var4;
+   }
 
-    public void n(nL nL2) {
-        this.c.remove(nL2);
-    }
+   @Override
+   public int hashCode() {
+      return Long.toString(this.k).hashCode();
+   }
 
-    public int k() {
-        return this.c.size();
-    }
+   public void c(nL var1, Kw_2 var2) {
+      this.c.put(var1, var2);
+   }
 
-    public HashMap v() {
-        return this.c;
-    }
+   public void n(nL var1) {
+      this.c.remove(var1);
+   }
+
+   public int k() {
+      return this.c.size();
+   }
+
+   public HashMap v() {
+      return this.c;
+   }
 }
+
+
+
+
 

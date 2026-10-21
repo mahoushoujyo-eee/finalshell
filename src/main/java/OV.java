@@ -1,154 +1,184 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
-class OV
-implements Runnable {
-    final ck_2 W;
-    final F6 J;
-    private static final String a;
+class OV implements Runnable {
+   final ck_4 W;
+   final F6 J;
+   private static final String a;
 
-    OV(F6 f62, ck_2 ck_22) {
-        this.J = f62;
-        this.W = ck_22;
-    }
+   OV(F6 var1, ck_4 var2) {
+      this.J = var1;
+      this.W = var2;
+   }
 
-    @Override
-    public void run() {
-        zD zD2;
-        try {
-            zD2 = (zD)this.J.S.N();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        zD zD3 = zD2;
-        String string = null;
-        try {
-            Object object;
-            Object object2;
-            try {
-                object2 = this.W.d();
-            }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-            try {
-                zD3.f(object2);
-            }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-            try {
-                object = this.W.d();
-            }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-            try {
-                this.J.S.i(object);
-            }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
-            }
-        }
-        catch (Exception exception) {
-            exception.printStackTrace();
-            string = a + exception;
-        }
-        try {
-            if (string != null) {
-                JOptionPane.showMessageDialog(SwingUtilities.getWindowAncestor((F6)this.J), string);
-            }
-        }
-        catch (Exception exception) {
-            throw OV.a(exception);
-        }
-    }
+   @Override
+   public void run() {
+      Method var10000 = (Method)com.c.c(627973027287447539L).get(com.c.c(514714590539131673L).get(this));
+      Object[] var10001 = com.c.f();
+      Method var10003 = com.c.d(212042562452272939L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+      try {
+         var12 = (zD)var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var10) {
+         throw var10.getTargetException();
+      }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "\u5239\u966c\u65f8\u4e96\u5971\u8d5b&\u0013".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 89;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+      zD var1 = var12;
+      String var2 = null;
+
+      try {
+         var10001 = (Object[])com.c.c(579580447192533868L).get(this);
+         var10002 = com.c.f();
+         Method var10004 = com.c.d(605430732347023634L);
+         Object[] var33 = var10002;
+         var10002 = var10001;
+         Method var18 = var10004;
+
+         try {
+            var10001 = (Object[])var18.invoke(var10002, var33);
+         } catch (InvocationTargetException var8) {
+            throw var8.getTargetException();
+         }
+
+         var10001 = com.c.a(var10001);
+         var10003 = com.c.d(596624758422184723L);
+         var10002 = var10001;
+         zD var21 = var1;
+         var10000 = var10003;
+
+         try {
+            var10000.invoke(var21, var10002);
+         } catch (InvocationTargetException var7) {
+            throw var7.getTargetException();
+         }
+
+         var10000 = (Method)com.c.c(627973027287447539L).get(com.c.c(514714590539131673L).get(this));
+         var10001 = (Object[])com.c.c(579580447192533868L).get(this);
+         var10002 = com.c.f();
+         var10004 = com.c.d(605430732347023634L);
+         Object[] var35 = var10002;
+         var10002 = var10001;
+         Method var23 = var10004;
+
+         try {
+            var10001 = (Object[])var23.invoke(var10002, var35);
+         } catch (InvocationTargetException var6) {
+            throw var6.getTargetException();
+         }
+
+         var10001 = com.c.a(var10001);
+         var10003 = com.c.d(266662749976559972L);
+         var10002 = var10001;
+         var10001 = var10000;
+         var10000 = var10003;
+
+         try {
+            var10000.invoke(var10001, var10002);
+         } catch (InvocationTargetException var5) {
+            throw var5.getTargetException();
+         }
+      } catch (Exception var9) {
+         var9.printStackTrace();
+         var2 = a + var9;
+      }
+
+      try {
+         if (var2 != null) {
+            JOptionPane.showMessageDialog(SwingUtilities.getWindowAncestor((F6)com.c.c(514714590539131673L).get(this)), var2);
+         }
+      } catch (Exception var4) {
+         throw a(var4);
+      }
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "刹陬旸亖奱赛&\u0013".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 89;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 89;
+         var10006 = var0;
+      } else {
+         var6 = 89;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 89;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 64;
+               break;
+            case 1:
+               var23 = 81;
+               break;
+            case 2:
+               var23 = 38;
+               break;
+            case 3:
+               var23 = 57;
+               break;
+            case 4:
+               var23 = 25;
+               break;
+            case 5:
+               var23 = 39;
+               break;
+            default:
+               var23 = 94;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 64;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 81;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 38;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 57;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 25;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 39;
-                            break;
-                        }
-                        default: {
-                            n17 = 94;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

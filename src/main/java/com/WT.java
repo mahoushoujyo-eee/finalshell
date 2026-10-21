@@ -1,10 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.pb_2;
 import java.awt.Component;
 import javax.swing.Icon;
 import javax.swing.JCheckBoxMenuItem;
@@ -14,110 +9,135 @@ import javax.swing.JRadioButtonMenuItem;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 
-public final class WT
-implements SwingConstants {
-    private static final long a;
+public final class WT implements SwingConstants {
+   private static final long a;
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public static int r(JMenuItem jMenuItem, boolean bl) {
-        Icon icon;
-        JMenuItem jMenuItem2;
-        int[] nArray;
-        block7: {
-            block6: {
-                int n10;
-                boolean bl2;
-                block5: {
-                    nArray = pb_2.g();
-                    bl2 = bl;
-                    if (nArray == null) break block5;
-                    if (!bl2) break block6;
-                    jMenuItem2 = jMenuItem;
-                    if (nArray == null) break block7;
-                    bl2 = jMenuItem2.getParent() instanceof JPopupMenu;
-                }
-                if (!bl2) break block6;
-                int n11 = 0;
-                JPopupMenu jPopupMenu = (JPopupMenu)jMenuItem.getParent();
-                int n12 = 0;
-                while (n12 < jPopupMenu.getComponentCount()) {
-                    block8: {
-                        block9: {
-                            int n13;
-                            block12: {
-                                block13: {
-                                    Component component;
-                                    Component component2;
-                                    block10: {
-                                        block11: {
-                                            JMenuItem jMenuItem3;
-                                            component2 = jPopupMenu.getComponent(n12);
-                                            if (nArray == null) break block8;
-                                            n10 = component2 instanceof JMenuItem;
-                                            if (nArray == null) return n10;
-                                            if (n10 == 0) break block9;
-                                            component = jMenuItem3 = (JMenuItem)component2;
-                                            if (nArray == null) break block10;
-                                            if (component.getIcon() == null) break block11;
-                                            n11 = Math.max(n11, jMenuItem3.getIcon().getIconWidth());
-                                            if (nArray != null) break block9;
-                                        }
-                                        component = component2;
-                                    }
-                                    n13 = component instanceof JCheckBoxMenuItem;
-                                    if (nArray == null) break block12;
-                                    if (n13 != 0) break block13;
-                                    n13 = component2 instanceof JRadioButtonMenuItem;
-                                    if (nArray == null) break block12;
-                                    if (n13 == 0) break block9;
-                                }
-                                n13 = Math.max(n11, (int)a);
-                            }
-                            n11 = n13;
-                        }
-                        ++n12;
-                    }
-                    if (nArray != null) continue;
-                }
-                n10 = n11;
-                return n10;
+   public static int r(JMenuItem var0, boolean var1) {
+      int[] var2;
+      JMenuItem var9;
+      label80: {
+         label79: {
+            var2 = pb_4.g();
+            boolean var10000 = var1;
+            if (var2 != null) {
+               if (!var1) {
+                  break label79;
+               }
+
+               var9 = var0;
+               if (var2 == null) {
+                  break label80;
+               }
+
+               var10000 = var0.getParent() instanceof JPopupMenu;
             }
-            jMenuItem2 = jMenuItem;
-        }
-        Icon icon2 = icon = jMenuItem2.getIcon();
-        if (nArray != null) {
-            if (icon2 == null) return 0;
-            icon2 = icon;
-        }
-        int n14 = icon2.getIconWidth();
-        return n14;
-    }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public static String s(JMenuItem jMenuItem) {
-        KeyStroke keyStroke = jMenuItem.getAccelerator();
-        int[] nArray = pb_2.g();
-        KeyStroke keyStroke2 = keyStroke;
-        if (nArray != null) {
-            if (keyStroke2 == null) return null;
-            keyStroke2 = keyStroke;
-        }
-        String string = FN.Y(keyStroke2);
-        return string;
-    }
+            if (var10000) {
+               int var3 = 0;
+               JPopupMenu var4 = (JPopupMenu)var0.getParent();
+               int var5 = 0;
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 4815222046804689306L;
-        a = 0xFDD3AE827E6C418AL ^ l2;
-    }
+               while (true) {
+                  if (var5 < var4.getComponentCount()) {
+                     Component var6 = var4.getComponent(var5);
+                     if (var2 != null) {
+                        var10 = var6 instanceof JMenuItem;
+                        if (var2 == null) {
+                           break;
+                        }
+
+                        label56:
+                        if (var10 != 0) {
+                           JMenuItem var7 = (JMenuItem)var6;
+                           Object var11 = var7;
+                           if (var2 != null) {
+                              if (var7.getIcon() != null) {
+                                 var3 = Math.max(var3, var7.getIcon().getIconWidth());
+                                 if (var2 != null) {
+                                    break label56;
+                                 }
+                              }
+
+                              var11 = var6;
+                           }
+
+                           var12 = var11 instanceof JCheckBoxMenuItem;
+                           label48:
+                           if (var2 != null) {
+                              if (var12 == 0) {
+                                 var12 = var6 instanceof JRadioButtonMenuItem;
+                                 if (var2 == null) {
+                                    break label48;
+                                 }
+
+                                 if (var12 == 0) {
+                                    break label56;
+                                 }
+                              }
+
+                              var12 = Math.max(var3, (int)a);
+                           }
+
+                           var3 = var12;
+                        }
+
+                        var5++;
+                     }
+
+                     if (var2 != null) {
+                        continue;
+                     }
+                  }
+
+                  var10 = var3;
+                  break;
+               }
+
+               return var10;
+            }
+         }
+
+         var9 = var0;
+      }
+
+      Icon var8 = var9.getIcon();
+      Icon var13 = var8;
+      if (var2 != null) {
+         if (var8 == null) {
+            return 0;
+         }
+
+         var13 = var8;
+      }
+
+      return var13.getIconWidth();
+   }
+
+   public static String s(JMenuItem var0) {
+      int[] var10000 = pb_4.g();
+      KeyStroke var2 = var0.getAccelerator();
+      int[] var1 = var10000;
+      KeyStroke var3 = var2;
+      if (var1 != null) {
+         if (var2 == null) {
+            return null;
+         }
+
+         var3 = var2;
+      }
+
+      return com.FN.Y(var3);
+   }
+
+   static {
+      long var0 = 4815222046804689306L;
+      long var10002 = -156589686537830006L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

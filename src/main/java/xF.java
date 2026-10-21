@@ -1,39 +1,38 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.IOException;
 import java.net.DatagramPacket;
 
-class xF
-implements Runnable {
-    final F0 X;
-    private static final long a;
+class xF implements Runnable {
+   final F0 X;
+   private static final long a;
 
-    xF(F0 f02) {
-        this.X = f02;
-    }
+   xF(F0 var1) {
+      this.X = var1;
+   }
 
-    @Override
-    public void run() {
-        while (true) {
-            byte[] byArray = new byte[(int)a];
-            DatagramPacket datagramPacket = new DatagramPacket(byArray, byArray.length);
-            try {
-                this.X.X.receive(datagramPacket);
-                this.X.e(datagramPacket);
-            }
-            catch (IOException iOException) {
-                return;
-            }
-        }
-    }
+   @Override
+   public void run() {
+      while (true) {
+         byte[] var1 = new byte[(int)a];
+         DatagramPacket var2 = new DatagramPacket(var1, var1.length);
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5889304329227815079L;
-        a = 0x979BD0E4A5CB4D7BL ^ l2;
-    }
+         try {
+            this.X.X.receive(var2);
+            this.X.e(var2);
+         } catch (IOException var4) {
+            return;
+         }
+      }
+   }
+
+   static {
+      long var0 = 5889304329227815079L;
+      long var10002 = -7522189072139596421L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

@@ -1,16 +1,16 @@
-/*
- * Decompiled with CFR 0.152.
- */
-class xO
-implements Runnable {
-    final yt_1 A;
+class xO implements Runnable {
+   final yT_3 A;
 
-    xO(yt_1 yt_12) {
-        this.A = yt_12;
-    }
+   xO(yT_3 var1) {
+      this.A = var1;
+   }
 
-    @Override
-    public void run() {
-    }
+   @Override
+   public void run() {
+   }
 }
+
+
+
+
 

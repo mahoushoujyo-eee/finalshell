@@ -1,84 +1,98 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.A;
 
-import com.A.d;
-import com.FN;
 import com.HG;
-import com.a.y_0;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
 
-class l
-extends HG {
-    final d z;
+class l extends HG {
+   final com.A.d z;
 
-    l(d d2) {
-        this.z = d2;
-    }
+   l(com.A.d var1) {
+      this.z = var1;
+   }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-        block3: {
-            d d2;
-            block7: {
-                block8: {
-                    int n10;
-                    int[] nArray;
-                    block6: {
-                        block5: {
-                            block4: {
-                                block2: {
-                                    nArray = y_0.M();
-                                    n10 = this.z.u();
-                                    if (nArray == null) break block2;
-                                    if (n10 == 0) break block3;
-                                    n10 = this.z.t();
-                                }
-                                if (nArray == null) break block4;
-                                if (n10 == 0) break block3;
-                                n10 = FN.B(mouseEvent);
-                            }
-                            if (nArray == null) break block5;
-                            if (n10 == 0) break block3;
-                            n10 = mouseEvent.getClickCount();
-                        }
-                        if (nArray == null) break block6;
-                        if (n10 != 2) break block3;
-                        d2 = this.z;
-                        if (nArray == null) break block7;
-                        n10 = d2.j() ? 1 : 0;
-                    }
-                    if (n10 == 0) break block8;
-                    this.z.J();
-                    if (nArray != null) break block3;
-                }
-                d2 = this.z;
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+      int[] var2 = com.A.y_2.M();
+      int var10000 = this.z.u();
+      if (var2 != null) {
+         if (var10000 == 0) {
+            return;
+         }
+
+         var10000 = this.z.t();
+      }
+
+      if (var2 != null) {
+         if (var10000 == 0) {
+            return;
+         }
+
+         var10000 = com.FN.B(var1);
+      }
+
+      if (var2 != null) {
+         if (var10000 == 0) {
+            return;
+         }
+
+         var10000 = var1.getClickCount();
+      }
+
+      label51: {
+         if (var2 != null) {
+            if (var10000 != 2) {
+               return;
             }
-            d2.p();
-        }
-    }
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-        l l2;
-        block4: {
-            block5: {
-                int[] nArray = y_0.M();
-                l2 = this;
-                if (nArray == null) break block4;
-                if (!l2.B) break block5;
-                l2 = this;
-                if (nArray == null) break block4;
-                if (l2.z.j()) {
-                    this.k = new Point(this.k.x + this.z.X, this.k.y + this.z.X);
-                    this.z.J();
-                }
+            var3 = this.z;
+            if (var2 == null) {
+               break label51;
             }
-            l2 = this;
-        }
-        super.mouseDragged(mouseEvent);
-    }
+
+            var10000 = this.z.j();
+         }
+
+         if (var10000 != 0) {
+            this.z.J();
+            if (var2 != null) {
+               return;
+            }
+         }
+
+         var3 = this.z;
+      }
+
+      var3.p();
+   }
+
+   @Override
+   public void mouseDragged(MouseEvent var1) {
+      l var10000;
+      int[] var2 = com.A.y_2.M();
+      var10000 = this;
+      label17:
+      if (var2 != null) {
+         if (this.B) {
+            var10000 = this;
+            if (var2 == null) {
+               break label17;
+            }
+
+            if (this.z.j()) {
+               this.k = new Point(this.k.x + this.z.X, this.k.y + this.z.X);
+               this.z.J();
+            }
+         }
+
+         var10000 = this;
+      }
+
+      var10000.mouseDragged(var1);
+   }
 }
+
+
+
+
 

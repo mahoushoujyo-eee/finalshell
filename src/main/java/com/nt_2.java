@@ -1,50 +1,46 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.kw_1;
-import com.oy_1;
-import com.xt_0;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import javax.swing.SwingUtilities;
 
-/*
- * Renamed from com.nt
- */
-class nt_2
-implements ActionListener {
-    final xt_0 G;
+class Nt_2 implements iL_3 {
+   final int l;
+   final int Z;
+   final pA_3 e;
 
-    nt_2(xt_0 xt_02) {
-        this.G = xt_02;
-    }
+   Nt_2(pA_3 var1, int var2, int var3) {
+      this.e = var1;
+      this.l = var2;
+      this.Z = var3;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block7: {
-            xt_0 xt_02;
-            block6: {
-                boolean bl;
-                block4: {
-                    int n10;
-                    block5: {
-                        bl = oy_1.y();
-                        n10 = xt_0.u(this.G);
-                        if (!bl) break block4;
-                        if (n10 >= this.G.z.J() * 2) break block5;
-                        xt_0.t(this.G, kw_1.e(this.G.z));
-                        if (bl) break block4;
-                    }
-                    n10 = xt_0.X(this.G, 0);
-                }
-                xt_02 = this.G;
-                if (!bl) break block6;
-                if (!xt_02.isVisible()) break block7;
-                xt_02 = this.G;
-            }
-            xt_02.repaint();
-        }
-    }
+   @Override
+   public void s() {
+      int var10000 = _y_2.M();
+      int var2 = pA_3.D(this.e).T.r - 1;
+      int var1 = var10000;
+      if (var1 != 0) {
+         if (var2 + this.l < this.Z) {
+            return;
+         }
+
+         pA_3.T(this.e).q(this);
+      }
+
+      SwingUtilities.invokeLater(this::lambda$modelChanged$0);
+   }
+
+   private void lambda$modelChanged$0() {
+      pA_3.T(this.e).w();
+
+      try {
+         pA_3.y(this.e).setRangeProperties(0, this.e.N.c(), -pA_3.T(this.e).H(), this.e.N.c(), false);
+      } finally {
+         pA_3.T(this.e).h();
+      }
+   }
 }
+
+
+
+
 

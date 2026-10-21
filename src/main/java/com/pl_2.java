@@ -1,129 +1,204 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.YP;
-import com.im_2;
-import com.j_0;
-import com.pt_1;
-import java.util.Map;
-import org.jetbrains.annotations.NotNull;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import javax.swing.table.AbstractTableModel;
 
-/*
- * Renamed from com.pl
- */
-class pl_2
-extends pt_1 {
-    int h;
-    final StringBuilder N;
-    final Map x;
-    final im_2 G;
-    private static final String a;
+public class Pl_2 extends AbstractTableModel implements nd_4 {
+   private List O;
+   private List x;
+   private static final String b;
 
-    pl_2(im_2 im_22, StringBuilder stringBuilder, Map map) {
-        this.G = im_22;
-        this.N = stringBuilder;
-        this.x = map;
-        this.h = 0;
-    }
+   public Pl_2() {
+      this(new ArrayList(), com.aL.J((Collection)q));
+   }
 
-    @Override
-    public void N(int n10, int n11, @NotNull YP yP, @NotNull j_0 j_02, int n12) {
-        boolean bl = j_0.g();
-        int n13 = n10;
-        if (bl) {
-            if (n13 == 0) {
-                this.N.append("\n");
+   public Pl_2(String[] var1) {
+      this(new ArrayList(), Arrays.asList(var1));
+   }
+
+   public Pl_2(List var1) {
+      this(new ArrayList(), var1);
+   }
+
+   public Pl_2(Collection var1, String[] var2) {
+      this(var1, Arrays.asList(var2));
+   }
+
+   public Pl_2(Collection var1, List var2) {
+      this.O = var2;
+      this.x = new ArrayList(var1);
+   }
+
+   public void L(Collection var1) {
+      this.x.clear();
+      this.x.addAll(var1);
+      this.fireTableDataChanged();
+   }
+
+   public void d(Collection var1) {
+      String var2 = com.kz_4.M();
+      int var10000 = var1.size();
+      if (var2 != null) {
+         if (var10000 <= 0) {
+            return;
+         }
+
+         var10000 = this.x.size();
+      }
+
+      int var3 = var10000;
+      this.x.addAll(var1);
+      this.fireTableRowsInserted(var3, var3 + var1.size() - 1);
+   }
+
+   public int A(File var1) {
+      return this.x.indexOf(var1);
+   }
+
+   public File m(int var1) {
+      return (File)this.x.get(var1);
+   }
+
+   public void s(List var1) {
+      this.O = var1;
+      this.fireTableStructureChanged();
+   }
+
+   public String z(int var1) {
+      return (String)this.O.get(var1);
+   }
+
+   public boolean S(String var1) {
+      return this.O.contains(var1);
+   }
+
+   public int y(String var1) {
+      return this.O.indexOf(var1);
+   }
+
+   @Override
+   public String getColumnName(int var1) {
+      return i2_2.O((String)this.O.get(var1));
+   }
+
+   @Override
+   public int getRowCount() {
+      return this.x.size();
+   }
+
+   @Override
+   public int getColumnCount() {
+      return this.O.size();
+   }
+
+   @Override
+   public Object getValueAt(int var1, int var2) {
+      return this.x.get(var1);
+   }
+
+   @Override
+   public Class getColumnClass(int var1) {
+      return File.class;
+   }
+
+   @Override
+   public boolean isCellEditable(int var1, int var2) {
+      String var3 = com.kz_4.M();
+      boolean var10000 = this.z(var2).equals(b);
+      if (var3 != null) {
+         if (!var10000) {
+            return false;
+         }
+
+         var10000 = com.Cz_2.J(this.m(var1));
+      }
+
+      return var3 == null ? var10000 : var10000;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "k(G]\u0012\\7z$IT\u0010Rvs>@C]Nx~!@\u001f\u0010Uui K\u001f\u001d[ty".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 3;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 3;
+         var10006 = var0;
+      } else {
+         var6 = 3;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            b = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 3;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 31;
+               break;
+            case 1:
+               var23 = 78;
+               break;
+            case 2:
+               var23 = 38;
+               break;
+            case 3:
+               var23 = 50;
+               break;
+            case 4:
+               var23 = 112;
+               break;
+            case 5:
+               var23 = 57;
+               break;
+            default:
+               var23 = 26;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               b = var8;
+               return;
             }
-            n13 = yP.q();
-        }
-        int n14 = n13;
-        pl_2 pl_22 = this;
-        if (bl) {
-            if (!pl_22.x.containsKey(n14)) {
-                this.x.put(n14, this.h++);
-            }
-            pl_22 = this;
-        }
-        pl_22.N.append(String.format(a, this.x.get(n14)));
-    }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "GP6]\"".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 58;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 88;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 90;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 62;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 3;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 56;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 75;
-                            break;
-                        }
-                        default: {
-                            n17 = 110;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

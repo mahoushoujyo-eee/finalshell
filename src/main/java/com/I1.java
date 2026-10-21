@@ -1,106 +1,96 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.IB;
-import com.IH;
-import com.NE;
-import com.aS;
-import com.bn_0;
-import com.c9_0;
-import com.ks_2;
-import java.io.Serializable;
+import java.util.List;
 import javax.swing.JComponent;
 
-public class I1
-extends IB {
-    private bn_0 O;
+public class I1 extends IB {
+   private com.Bn_2 O;
 
-    public I1(aS aS2) {
-        super(aS2);
-    }
+   public I1(com.aS var1) {
+      super(var1);
+   }
 
-    protected void s(ks_2 ks_22) {
-        this.O = new c9_0(this);
-        ks_22.j(this.O);
-    }
+   protected void s(com.ks_4 var1) {
+      this.O = new com.c9_2(this);
+      var1.j(this.O);
+   }
 
-    protected void P(ks_2 ks_22) {
-        ks_22.N(this.O);
-        this.O = null;
-    }
+   protected void P(com.ks_4 var1) {
+      var1.N(this.O);
+      this.O = null;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    protected void K(ks_2 var1_1) {
-        block3: {
-            var3_2 = (String)this.o();
-            var2_3 = IH.M();
-            v0 = var3_2;
-            if (var2_3 == null) break block3;
-            if (v0 == null) ** GOTO lbl-1000
-            v0 = var3_2.trim();
-        }
-        v1 = "";
-        if (var2_3 != null) {
-            ** if (!v0.equals((Object)v1)) goto lbl-1000
-        }
-        ** GOTO lbl16
-lbl-1000:
-        // 2 sources
+   protected void K(com.ks_4 var1) {
+      List var6;
+      label23: {
+         label25: {
+            String[] var10000 = IH.M();
+            String var3 = (String)this.o();
+            String[] var2 = var10000;
+            String var5 = var3;
+            if (var2 != null) {
+               if (var3 == null) {
+                  break label25;
+               }
 
-        {
-            v2 = null;
-            ** GOTO lbl17
-        }
-lbl-1000:
-        // 1 sources
+               var5 = var3.trim();
+            }
 
-        {
-            v0 = var3_2;
-            v1 = ",";
-lbl16:
-            // 2 sources
+            String var10001 = "";
+            if (var2 != null) {
+               if (var5.equals("")) {
+                  break label25;
+               }
 
-            v2 = NE.x(v0, v1);
-        }
-lbl17:
-        // 2 sources
+               var5 = var3;
+               var10001 = ",";
+            }
 
-        var4_4 = v2;
-        var1_1.h(var4_4);
-    }
+            var6 = NE.x(var5, var10001);
+            break label23;
+         }
 
-    protected void G(ks_2 ks_22) {
-        String string = NE.I(ks_22.P(), ",");
-        String[] stringArray = IH.M();
-        String string2 = string;
-        if (stringArray != null) {
-            string2 = string2 != null ? string : "";
-        }
-        this.J((Serializable)((Object)string2));
-    }
+         var6 = null;
+      }
 
-    @Override
-    protected void T(JComponent jComponent) {
-        this.G((ks_2)jComponent);
-    }
+      List var4 = var6;
+      var1.h(var4);
+   }
 
-    @Override
-    protected void s(JComponent jComponent) {
-        this.K((ks_2)jComponent);
-    }
+   protected void G(com.ks_4 var1) {
+      String[] var10000 = IH.M();
+      String var3 = NE.I(var1.P(), ",");
+      String[] var2 = var10000;
+      String var10001 = var3;
+      if (var2 != null) {
+         var10001 = var3 != null ? var3 : "";
+      }
 
-    @Override
-    protected void r(JComponent jComponent) {
-        this.P((ks_2)jComponent);
-    }
+      this.J(var10001);
+   }
 
-    @Override
-    protected void F(JComponent jComponent) {
-        this.s((ks_2)jComponent);
-    }
+   @Override
+   protected void T(JComponent var1) {
+      this.G((com.ks_4)var1);
+   }
+
+   @Override
+   protected void s(JComponent var1) {
+      this.K((com.ks_4)var1);
+   }
+
+   @Override
+   protected void r(JComponent var1) {
+      this.P((com.ks_4)var1);
+   }
+
+   @Override
+   protected void F(JComponent var1) {
+      this.s((com.ks_4)var1);
+   }
 }
+
+
+
+
 

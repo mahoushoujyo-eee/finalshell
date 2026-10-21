@@ -1,55 +1,69 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import java.awt.Dimension;
 import javax.swing.JPanel;
 
-public class BS
-extends JPanel {
-    Y3 m;
-    private static final long[] a;
-    private static final Integer[] b;
+public class BS extends JPanel {
+   Y3 m;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public BS(Y3 y3) {
-        nB nB2 = new nB();
-        this.setLayout(nB2);
-        this.m = y3;
-        this.setOpaque(false);
-        this.setPreferredSize(new Dimension(BS.a(29379, 8305696419938623317L), BS.a(13510, 5822189323777546577L)));
-        this.add(y3);
-    }
+   public BS(Y3 var1) {
+      nB var2 = new nB();
+      this.setLayout(var2);
+      this.m = var1;
+      this.setOpaque(false);
+      this.setPreferredSize(new Dimension(a(29379, 8305696419938623317L), a(13510, 5822189323777546577L)));
+      this.add(var1);
+   }
 
-    public Y3 N() {
-        return this.m;
-    }
+   public Y3 N() {
+      return this.m;
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 393518101829894274L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "N\u00a4\u00fa\u0086\u0082\u00ed\u001e\u00fb\f\u00fd?\u00efJ\u0094\u00d8\u00ff";
-        int n11 = "N\u00a4\u00fa\u0086\u0082\u00ed\u001e\u00fb\f\u00fd?\u00efJ\u0094\u00d8\u00ff".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-    }
+   static {
+      long var0 = 393518101829894274L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "N¤ú\u0086\u0082í\u001eû\fý?ïJ\u0094Øÿ";
+      int var5 = "N¤ú\u0086\u0082í\u001eû\fý?ïJ\u0094Øÿ".length();
+      byte var2 = 0;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x2D96;
-        if (b[n11] == null) {
-            BS.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 11670;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

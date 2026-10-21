@@ -1,34 +1,31 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.a.y_0;
-import com.gm_0;
-import com.pk_2;
 import java.awt.Dialog;
 import java.awt.Frame;
 import javax.swing.JRootPane;
 
-class D3
-extends y_0 {
-    final pk_2 B;
+class D3 extends com.A.y_2 {
+   final pk_4 B;
 
-    public D3(pk_2 pk_22, Frame frame, String string, boolean bl) {
-        this.B = pk_22;
-        super(frame, string, bl);
-    }
+   public D3(pk_4 var1, Frame var2, String var3, boolean var4) {
+      super(var2, var3, var4);
+      this.B = var1;
+   }
 
-    public D3(pk_2 pk_22, Dialog dialog, String string, boolean bl) {
-        this.B = pk_22;
-        super(dialog, string, bl);
-    }
+   public D3(pk_4 var1, Dialog var2, String var3, boolean var4) {
+      super(var2, var3, var4);
+      this.B = var1;
+   }
 
-    @Override
-    protected JRootPane createRootPane() {
-        gm_0 gm_02 = new gm_0(this);
-        gm_02.setOpaque(true);
-        return gm_02;
-    }
+   @Override
+   protected JRootPane createRootPane() {
+      Gm_2 var1 = new Gm_2(this);
+      var1.setOpaque(true);
+      return var1;
+   }
 }
+
+
+
+
 

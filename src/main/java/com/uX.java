@@ -1,159 +1,158 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.NE;
-import com.cl_2;
-import com.le_1;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamConverter;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-@XStreamAlias(value="SettingsGroup")
-@XStreamConverter(value=le_1.class)
-public class uX
-implements Serializable {
-    private String R;
-    private String v;
-    private Map u;
-    private static final String a;
+@XStreamAlias("SettingsGroup")
+@XStreamConverter(com.lE_3.class)
+public class uX implements Serializable {
+   private String R;
+   private String v;
+   private Map u;
+   private static final String a;
 
-    public uX() {
-        this(null);
-    }
+   public uX() {
+      this(null);
+   }
 
-    public uX(String string) {
-        this.R = NE.E(a);
-        this.v = string;
-    }
+   public uX(String var1) {
+      this.R = NE.E(a);
+      this.v = var1;
+   }
 
-    public uX(String string, String string2) {
-        this.R = string;
-        this.v = string2;
-    }
+   public uX(String var1, String var2) {
+      this.R = var1;
+      this.v = var2;
+   }
 
-    public String t() {
-        return this.R;
-    }
+   public String t() {
+      return this.R;
+   }
 
-    public void N(String string) {
-        this.R = string;
-    }
+   public void N(String var1) {
+      this.R = var1;
+   }
 
-    public String J() {
-        return this.v;
-    }
+   public String J() {
+      return this.v;
+   }
 
-    public void a(String string) {
-        this.v = string;
-    }
+   public void a(String var1) {
+      this.v = var1;
+   }
 
-    public Map c() {
-        String string = cl_2.I();
-        Map map = this.u;
-        if (string == null) {
-            if (map == null) {
-                this.u = new HashMap();
+   public Map c() {
+      String var1 = com.cl_4.I();
+      Map var10000 = this.u;
+      if (var1 == null) {
+         if (this.u == null) {
+            this.u = new HashMap();
+         }
+
+         var10000 = this.u;
+      }
+
+      return var10000;
+   }
+
+   public void O(Map var1) {
+      this.u = var1;
+   }
+
+   public Object O(String var1) {
+      return this.c().get(var1);
+   }
+
+   public Object D(String var1) {
+      return this.c().remove(var1);
+   }
+
+   public Object J(String var1, Object var2) {
+      return this.c().put(var1, var2);
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "En".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 55;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 55;
+         var10006 = var0;
+      } else {
+         var6 = 55;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 55;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 33;
+               break;
+            case 1:
+               var23 = 30;
+               break;
+            case 2:
+               var23 = 2;
+               break;
+            case 3:
+               var23 = 113;
+               break;
+            case 4:
+               var23 = 106;
+               break;
+            case 5:
+               var23 = 100;
+               break;
+            default:
+               var23 = 29;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            map = this.u;
-        }
-        return map;
-    }
 
-    public void O(Map map) {
-        this.u = map;
-    }
-
-    public Object O(String string) {
-        return this.c().get(string);
-    }
-
-    public Object D(String string) {
-        return this.c().remove(string);
-    }
-
-    public Object J(String string, Object object) {
-        return this.c().put(string, object);
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "En".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 55;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 33;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 30;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 2;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 113;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 106;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 100;
-                            break;
-                        }
-                        default: {
-                            n17 = 29;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

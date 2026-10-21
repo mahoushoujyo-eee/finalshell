@@ -1,23 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.A;
 
-import com.A.d;
-import com.O_;
 import javax.swing.Icon;
 
-class w
-extends O_ {
-    final d c;
+class w extends com.O_ {
+   final com.A.d c;
 
-    w(d d2) {
-        this.c = d2;
-    }
+   w(com.A.d var1) {
+      this.c = var1;
+   }
 
-    @Override
-    public Icon getIcon() {
-        return this.c.k();
-    }
+   @Override
+   public Icon getIcon() {
+      return this.c.k();
+   }
 }
+
+
+
+
 

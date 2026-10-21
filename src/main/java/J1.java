@@ -1,9 +1,10 @@
-/*
- * Decompiled with CFR 0.152.
- */
 public interface J1 {
-    public int Z();
+   int Z();
 
-    public long C(byte[] var1);
+   long C(byte[] var1);
 }
+
+
+
+
 

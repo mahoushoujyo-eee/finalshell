@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.QS;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class CD
-implements ActionListener {
-    final QS f;
+class CD implements ActionListener {
+   final com.QS f;
 
-    CD(QS qS) {
-        this.f = qS;
-    }
+   CD(com.QS var1) {
+      this.f = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.f.V();
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.f.V();
+   }
 }
+
+
+
+
 

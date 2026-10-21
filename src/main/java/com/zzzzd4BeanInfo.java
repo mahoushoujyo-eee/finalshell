@@ -1,28 +1,26 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.O4;
-import com.ph_0;
-
 public class zzzzd4BeanInfo {
-    protected final Class x;
-    protected final String j;
-    protected final String z;
-    protected final O4 L;
-    protected final ph_0[] b;
-    protected final ph_0[] D;
-    protected int P;
+   protected final Class x;
+   protected final String j;
+   protected final String z;
+   protected final com.O4 L;
+   protected final Ph_2[] b;
+   protected final Ph_2[] D;
+   protected int P;
 
-    public zzzzd4BeanInfo(Class clazz, O4 o4, String string, String string2, int n10, ph_0[] ph_0Array, ph_0[] ph_0Array2) {
-        this.x = clazz;
-        this.L = o4;
-        this.j = string;
-        this.z = string2;
-        this.P = n10;
-        this.b = ph_0Array;
-        this.D = ph_0Array2;
-    }
+   public zzzzd4BeanInfo(Class var1, com.O4 var2, String var3, String var4, int var5, Ph_2[] var6, Ph_2[] var7) {
+      this.x = var1;
+      this.L = var2;
+      this.j = var3;
+      this.z = var4;
+      this.P = var5;
+      this.b = var6;
+      this.D = var7;
+   }
 }
+
+
+
+
 

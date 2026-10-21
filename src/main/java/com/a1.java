@@ -1,227 +1,309 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.uZ;
-
 public class a1 {
-    protected float[] D;
-    protected float[] U;
-    protected float[] c;
+   protected float[] D;
+   protected float[] U;
+   protected float[] c;
 
-    public a1(int n10) {
-        this.D = new float[n10];
-        this.U = new float[n10];
-        this.c = new float[n10];
-        int n11 = 1;
-        String string = uZ.h();
-        for (int i2 = 0; i2 < n10; ++i2) {
-            double d2 = Math.PI * -2 / (double)(n11 <<= 1);
-            this.D[i2] = (float)Math.sin(0.5 * d2);
-            this.U[i2] = -2.0f * this.D[i2] * this.D[i2];
-            this.c[i2] = (float)Math.sin(d2);
-            if (string == null) continue;
-        }
-    }
+   public a1(int var1) {
+      this.D = new float[var1];
+      String var10000 = uZ.h();
+      this.U = new float[var1];
+      this.c = new float[var1];
+      byte var3 = 1;
+      String var2 = var10000;
+      int var4 = 0;
 
-    private void L(int n10, float[] fArray, float[] fArray2) {
-        int n11 = 0;
-        String string = uZ.h();
-        for (int i2 = 0; i2 < n10; ++i2) {
-            int n12;
-            int n13;
-            block5: {
-                int n14;
-                int n15 = i2;
-                int n16 = n11;
-                if (string == null) {
-                    if (n15 > n16) {
-                        float f10 = fArray[n11];
-                        fArray[n11] = fArray[i2];
-                        fArray[i2] = f10;
-                        f10 = fArray2[n11];
-                        fArray2[n11] = fArray2[i2];
-                        fArray2[i2] = f10;
-                    }
-                    n15 = n10;
-                    n16 = 1;
-                }
-                for (n14 = (v5847929) >> (v5847930); n11 >= n14; n11 -= n14, n14 >>= 1) {
-                    n13 = n14;
-                    n12 = 2;
-                    if (string == null && string == null) {
-                        if (n13 < n12) break;
-                        if (string == null) continue;
-                    }
-                    break block5;
-                }
-                n13 = n11;
-                n12 = n14;
+      while (var4 < var1) {
+         var3 <<= 1;
+         double var5 = (-Math.PI * 2) / (double)var3;
+         this.D[var4] = (float)Math.sin(0.5 * var5);
+         this.U[var4] = -2.0F * this.D[var4] * this.D[var4];
+         this.c[var4] = (float)Math.sin(var5);
+         var4++;
+         if (var2 != null) {
+            break;
+         }
+      }
+   }
+
+   private void L(int var1, float[] var2, float[] var3) {
+      String var10000 = uZ.h();
+      int var5 = 0;
+      int var6 = 0;
+      String var4 = var10000;
+
+      while (var6 < var1) {
+         int var10 = var6;
+         int var10001 = var5;
+         if (var4 == null) {
+            if (var6 > var5) {
+               float var7 = var2[var5];
+               var2[var5] = var2[var6];
+               var2[var6] = var7;
+               var7 = var3[var5];
+               var3[var5] = var3[var6];
+               var3[var6] = var7;
             }
-            n11 = n13 + n12;
-            if (string == null) continue;
-        }
-    }
 
-    private void L(int n10, int n11, int n12, float[] fArray, float[] fArray2) {
-        int n13;
-        String string;
-        block7: {
-            int n14 = 1;
-            int n15 = 0;
-            string = uZ.h();
-            block0: while (true) {
-                int n16 = n15;
-                block1: while (n16 < n11) {
-                    int n17 = n14;
-                    n14 <<= 1;
-                    float f10 = (float)n12 * this.D[n15];
-                    float f11 = this.U[n15];
-                    float f12 = (float)n12 * this.c[n15];
-                    float f13 = 1.0f;
-                    float f14 = 0.0f;
-                    n13 = 0;
-                    if (string != null) break block7;
-                    int n18 = n13;
-                    while (n18 < n17) {
-                        block8: {
-                            n16 = n18;
-                            if (string != null) continue block1;
-                            for (int i2 = v5847960; i2 < n10; i2 += n14) {
-                                int n19 = i2 + n17;
-                                float f15 = fArray[n19];
-                                float f16 = fArray2[n19];
-                                float f17 = f13 * f15 - f14 * f16;
-                                float f18 = f14 * f15 + f13 * f16;
-                                fArray[n19] = fArray[i2] - f17;
-                                int n20 = i2;
-                                fArray[n20] = fArray[n20] + f17;
-                                fArray2[n19] = fArray2[i2] - f18;
-                                int n21 = i2;
-                                fArray2[n21] = fArray2[n21] + f18;
-                                if (string == null) {
-                                    if (string == null) continue;
-                                }
-                                break block8;
-                            }
-                            f10 = f13;
-                            f13 = f10 * f11 - f14 * f12 + f13;
-                            f14 = f14 * f11 + f10 * f12 + f14;
-                            ++n18;
-                        }
-                        if (string == null) continue;
-                    }
-                    ++n15;
-                    if (string == null) continue block0;
-                }
-                break;
-            }
-            n13 = n12;
-        }
-        if (n13 == -1) {
-            float f19 = 1.0f / (float)n10;
-            int n22 = 0;
-            while (n22 < n10) {
-                int n23 = n22;
-                fArray[n23] = fArray[n23] * f19;
-                int n24 = n22++;
-                fArray2[n24] = fArray2[n24] * f19;
-                if (string == null) continue;
-            }
-        }
-    }
+            var10 = var1;
+            var10001 = 1;
+         }
 
-    public void r(float[] fArray, float[] fArray2, int n10, int n11, boolean n12) {
-        String string = uZ.h();
-        this.L(n11, fArray, fArray2);
-        String string2 = string;
-        int n13 = n12;
-        if (string2 == null) {
-            n13 = n13 != 0 ? 1 : -1;
-        }
-        this.L(n11, n10, n13, fArray, fArray2);
-    }
+         int var9 = var10 >> var10001;
 
-    public void f(float[] fArray, float[] fArray2, int n10, int n11, boolean bl) {
-        int n12;
-        int n13;
-        float[] fArray3;
-        float[] fArray4;
-        String string;
-        int n14;
-        block7: {
-            int n15 = this.r(n10);
-            n14 = this.r(n11);
-            int n16 = Math.max(n11, n10);
-            string = uZ.h();
-            fArray4 = new float[n16];
-            fArray3 = new float[n16];
-            for (n13 = 0; n13 < n11; ++n13) {
-                n12 = n13 * n10;
-                System.arraycopy(fArray, n12, fArray4, 0, n10);
-                System.arraycopy(fArray2, n12, fArray3, 0, n10);
-                this.r(fArray4, fArray3, n15, n10, bl);
-                System.arraycopy(fArray4, 0, fArray, n12, n10);
-                System.arraycopy(fArray3, 0, fArray2, n12, n10);
-                if (string == null) {
-                    if (string == null) continue;
-                }
-                break block7;
-            }
-            n13 = 0;
-        }
-        while (n13 < n10) {
-            block9: {
-                int n17;
-                block8: {
-                    n12 = n13;
-                    for (n17 = 0; n17 < n11; ++n17) {
-                        fArray4[n17] = fArray[n12];
-                        fArray3[n17] = fArray2[n12];
-                        n12 += n10;
-                        if (string == null) {
-                            if (string == null) continue;
-                        }
-                        break block8;
-                    }
-                    this.r(fArray4, fArray3, n14, n11, bl);
-                    n12 = n13;
-                }
-                for (n17 = 0; n17 < n11; ++n17) {
-                    fArray[n12] = fArray4[n17];
-                    fArray2[n12] = fArray3[n17];
-                    n12 += n10;
-                    if (string == null) {
-                        if (string == null) continue;
-                    }
-                    break block9;
-                }
-                ++n13;
-            }
-            if (string == null) continue;
-        }
-    }
+         while (true) {
+            if (var5 >= var9) {
+               var11 = var9;
+               var10001 = 2;
+               if (var4 != null || var4 != null) {
+                  break;
+               }
 
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    private int r(int n10) {
-        int n11 = 1;
-        String string = uZ.h();
-        int n12 = 0;
-        while (n11 < n10) {
-            n11 *= 2;
-            ++n12;
-            if (string != null) return -1;
-            if (string == null) continue;
-        }
-        int n13 = n11;
-        if (string != null) return n13;
-        if (n13 != n10) return -1;
-        n13 = n12;
-        return n13;
-    }
+               if (var9 >= 2) {
+                  var5 -= var9;
+                  var9 >>= 1;
+                  if (var4 == null) {
+                     continue;
+                  }
+               }
+            }
+
+            var11 = var5;
+            var10001 = var9;
+            break;
+         }
+
+         var5 = var11 + var10001;
+         var6++;
+         if (var4 != null) {
+            break;
+         }
+      }
+   }
+
+   private void L(int var1, int var2, int var3, float[] var4, float[] var5) {
+      byte var7 = 1;
+      String var10000 = uZ.h();
+      int var8 = 0;
+      String var6 = var10000;
+
+      label61:
+      while (true) {
+         int var25 = var8;
+
+         label58:
+         while (var25 < var2) {
+            byte var16 = var7;
+            var7 <<= 1;
+            float var15 = (float)var3 * this.D[var8];
+            float var11 = this.U[var8];
+            float var12 = (float)var3 * this.c[var8];
+            float var9 = 1.0F;
+            float var10 = 0.0F;
+            var26 = 0;
+            if (var6 != null) {
+               break label61;
+            }
+
+            int var17 = 0;
+
+            while (var17 < var16) {
+               var25 = var17;
+               if (var6 != null) {
+                  continue label58;
+               }
+
+               int var18 = var17;
+
+               while (true) {
+                  if (var18 < var1) {
+                     int var19 = var18 + var16;
+                     float var20 = var4[var19];
+                     float var21 = var5[var19];
+                     float var13 = var9 * var20 - var10 * var21;
+                     float var14 = var10 * var20 + var9 * var21;
+                     var4[var19] = var4[var18] - var13;
+                     var4[var18] += var13;
+                     var5[var19] = var5[var18] - var14;
+                     var5[var18] += var14;
+                     var18 += var7;
+                     if (var6 != null) {
+                        break;
+                     }
+
+                     if (var6 == null) {
+                        continue;
+                     }
+                  }
+
+                  var15 = var9;
+                  var9 += var9 * var11 - var10 * var12;
+                  var10 += var10 * var11 + var15 * var12;
+                  var17++;
+                  break;
+               }
+
+               if (var6 != null) {
+                  break;
+               }
+            }
+
+            var8++;
+            if (var6 == null) {
+               continue label61;
+            }
+            break;
+         }
+
+         var26 = var3;
+         break;
+      }
+
+      if (var26 == -1) {
+         float var22 = 1.0F / (float)var1;
+         int var23 = 0;
+
+         while (var23 < var1) {
+            var4[var23] *= var22;
+            var5[var23] *= var22;
+            var23++;
+            if (var6 != null) {
+               break;
+            }
+         }
+      }
+   }
+
+   public void r(float[] var1, float[] var2, int var3, int var4, boolean var5) {
+      String var10000 = uZ.h();
+      this.L(var4, var1, var2);
+      String var6 = var10000;
+      int var10003 = var5;
+      if (var6 == null) {
+         var10003 = var5 != 0 ? 1 : -1;
+      }
+
+      this.L(var4, var3, var10003, var1, var2);
+   }
+
+   public void f(float[] var1, float[] var2, int var3, int var4, boolean var5) {
+      String var10000 = uZ.h();
+      int var7 = this.r(var3);
+      int var8 = this.r(var4);
+      int var9 = Math.max(var4, var3);
+      String var6 = var10000;
+      float[] var10 = new float[var9];
+      float[] var11 = new float[var9];
+      int var12 = 0;
+
+      while (true) {
+         if (var12 < var4) {
+            int var13 = var12 * var3;
+            System.arraycopy(var1, var13, var10, 0, var3);
+            System.arraycopy(var2, var13, var11, 0, var3);
+            this.r(var10, var11, var7, var3, var5);
+            System.arraycopy(var10, 0, var1, var13, var3);
+            System.arraycopy(var11, 0, var2, var13, var3);
+            var12++;
+            if (var6 != null) {
+               break;
+            }
+
+            if (var6 == null) {
+               continue;
+            }
+         }
+
+         var12 = 0;
+         break;
+      }
+
+      while (var12 < var3) {
+         int var15 = var12;
+         int var14 = 0;
+
+         while (true) {
+            if (var14 < var4) {
+               var10[var14] = var1[var15];
+               var11[var14] = var2[var15];
+               var15 += var3;
+               var14++;
+               if (var6 != null) {
+                  break;
+               }
+
+               if (var6 == null) {
+                  continue;
+               }
+            }
+
+            this.r(var10, var11, var8, var4, var5);
+            var15 = var12;
+            break;
+         }
+
+         var14 = 0;
+
+         while (true) {
+            if (var14 < var4) {
+               var1[var15] = var10[var14];
+               var2[var15] = var11[var14];
+               var15 += var3;
+               var14++;
+               if (var6 != null) {
+                  break;
+               }
+
+               if (var6 == null) {
+                  continue;
+               }
+            }
+
+            var12++;
+            break;
+         }
+
+         if (var6 != null) {
+            break;
+         }
+      }
+   }
+
+   private int r(int var1) {
+      String var10000 = uZ.h();
+      byte var3 = 1;
+      String var2 = var10000;
+      int var4 = 0;
+
+      while (true) {
+         if (var3 < var1) {
+            var3 *= 2;
+            var4++;
+            if (var2 != null) {
+               break;
+            }
+
+            if (var2 == null) {
+               continue;
+            }
+         }
+
+         if (var2 != null) {
+            return var3;
+         }
+
+         if (var3 == var1) {
+            return var4;
+         }
+         break;
+      }
+
+      return -1;
+   }
 }
+
+
+
+
 

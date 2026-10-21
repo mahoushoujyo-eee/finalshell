@@ -1,72 +1,90 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com._T;
-import com.pv_2;
+class GP implements Runnable {
+   final long T;
+   final _T M;
+   private static final long[] a;
+   private static final Long[] b;
 
-class GP
-implements Runnable {
-    final long T;
-    final _T M;
-    private static final long[] a;
-    private static final Long[] b;
+   GP(_T var1, long var2) {
+      this.M = var1;
+      this.T = var2;
+   }
 
-    GP(_T _T2, long l2) {
-        this.M = _T2;
-        this.T = l2;
-    }
+   @Override
+   public void run() {
+      String var1 = pv_4.r();
 
-    @Override
-    public void run() {
-        String string = pv_2.r();
-        block2: while (true) {
-            int n10 = this.M.c.b;
-            while (n10 == 0) {
-                long l2;
-                try {
-                    Thread.sleep(GP.a(12520, 1523639616274985619L));
-                }
-                catch (InterruptedException interruptedException) {
-                    interruptedException.printStackTrace();
-                }
-                n10 = (l2 = System.currentTimeMillis() - this.T - GP.a(16643, 9182747863385736057L)) == 0L ? 0 : (l2 < 0L ? -1 : 1);
-                if (string != null) continue;
-                if (n10 <= 0) continue block2;
-                this.M.c.b = true;
-                if (string != null) break block2;
-                continue block2;
+      while (true) {
+         int var10000 = this.M.c.b;
+
+         do {
+            if (var10000 != 0) {
+               return;
             }
-            break;
-        }
-    }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 8860798014919041535L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "o\u00d2\u00ee\u00f1\u0094t\u0013^\u0005\u0098L^\u0092\u00a9\u00e9>";
-        int n11 = "o\u00d2\u00ee\u00f1\u0094t\u0013^\u0005\u0098L^\u0092\u00a9\u00e9>".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Long[2];
-    }
+            try {
+               Thread.sleep(a(12520, 1523639616274985619L));
+            } catch (InterruptedException var3) {
+               var3.printStackTrace();
+            }
 
-    private static long a(int n10, long l2) {
-        int n11 = (n10 ^ (int)l2 ^ 0x427B) & Short.MAX_VALUE;
-        if (b[n11] == null) {
-            GP.b[n11] = a[n11] ^ l2;
-        }
-        return b[n11];
-    }
+            long var4;
+            var10000 = (var4 = System.currentTimeMillis() - this.T - a(16643, 9182747863385736057L)) == 0L ? 0 : (var4 < 0L ? -1 : 1);
+         } while (var1 != null);
+
+         if (var10000 > 0) {
+            this.M.c.b = true;
+            if (var1 != null) {
+               return;
+            }
+         }
+      }
+   }
+
+   static {
+      long var0 = 8860798014919041535L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "oÒîñ\u0094t\u0013^\u0005\u0098L^\u0092©é>";
+      int var5 = "oÒîñ\u0094t\u0013^\u0005\u0098L^\u0092©é>".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Long[2];
+   }
+
+   private static long a(int var0, long var1) {
+      int var3 = (var0 ^ (int)var1 ^ 17019) & 32767;
+      if (b[var3] == null) {
+         b[var3] = a[var3] ^ var1;
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

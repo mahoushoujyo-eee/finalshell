@@ -1,42 +1,44 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
-
 public class TN {
-    byte[] u;
-    short n;
-    private static ky_2[] Z;
+   byte[] u;
+   short n;
+   private static com.ky_4[] Z;
 
-    public byte[] c() {
-        return this.u;
-    }
+   public byte[] c() {
+      return this.u;
+   }
 
-    public static short V(byte[] byArray) {
-        int n10 = -1;
-        ky_2[] ky_2Array = TN.D();
-        int n11 = byArray.length;
-        if (ky_2Array != null) {
-            if (n11 >= 2) {
-                n10 = B8.M(byArray, 0);
-            }
-            n11 = n10;
-        }
-        return (short)n11;
-    }
+   public static short V(byte[] var0) {
+      com.ky_4[] var10000 = D();
+      short var2 = -1;
+      com.ky_4[] var1 = var10000;
+      int var3 = var0.length;
+      if (var1 != null) {
+         if (var3 >= 2) {
+            var2 = B8.M(var0, 0);
+         }
 
-    public static void s(ky_2[] ky_2Array) {
-        Z = ky_2Array;
-    }
+         var3 = var2;
+      }
 
-    public static ky_2[] D() {
-        return Z;
-    }
+      return (short)var3;
+   }
 
-    static {
-        if (TN.D() == null) {
-            TN.s(new ky_2[4]);
-        }
-    }
+   public static void s(com.ky_4[] var0) {
+      Z = var0;
+   }
+
+   public static com.ky_4[] D() {
+      return Z;
+   }
+
+   static {
+      if (D() == null) {
+         s(new com.ky_4[4]);
+      }
+   }
 }
+
+
+
+
 

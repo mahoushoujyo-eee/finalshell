@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org;
 
 import java.io.File;
@@ -10,241 +7,247 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.StringReader;
-import org.F.c;
-import org.b_0;
-import org.d_0;
-import org.e_0;
 
-public abstract class f
-implements e_0 {
-    private static final String a;
+public abstract class f implements org.e_2 {
+   private static final String a;
 
-    @Override
-    public abstract void Y(@c String var1, Reader var2) throws b_0, IOException;
+   @Override
+   public abstract void Y(@org.F.c String var1, Reader var2) throws b_2, IOException;
 
-    @Override
-    public final void f(Reader reader) throws b_0, IOException {
-        this.Y(null, reader);
-    }
+   @Override
+   public final void f(Reader var1) throws b_2, IOException {
+      this.Y(null, var1);
+   }
 
-    @Override
-    public final void i(InputStream inputStream) throws b_0, IOException {
-        this.f(null, inputStream);
-    }
+   @Override
+   public final void i(InputStream var1) throws b_2, IOException {
+      this.f(null, var1);
+   }
 
-    @Override
-    public final void f(@c String string, InputStream inputStream) throws b_0, IOException {
-        this.d(string, inputStream, null);
-    }
+   @Override
+   public final void f(@org.F.c String var1, InputStream var2) throws b_2, IOException {
+      this.d(var1, var2, null);
+   }
 
-    @Override
-    public final void V(InputStream inputStream, @c String string) throws b_0, IOException {
-        InputStreamReader inputStreamReader;
-        f f10;
-        try {
-            f10 = this;
-            inputStreamReader = string == null ? new InputStreamReader(inputStream) : new InputStreamReader(inputStream, string);
-        }
-        catch (b_0 b_02) {
-            throw f.b(b_02);
-        }
-        f10.f(inputStreamReader);
-    }
+   @Override
+   public final void V(InputStream var1, @org.F.c String var2) throws b_2, IOException {
+      org.f var10000;
+      InputStreamReader var10001;
+      label16: {
+         try {
+            var10000 = this;
+            if (var2 == null) {
+               var10001 = new InputStreamReader(var1);
+               break label16;
+            }
+         } catch (b_2 var3) {
+            throw b(var3);
+         }
 
-    @Override
-    public final void d(@c String string, InputStream inputStream, @c String string2) throws b_0, IOException {
-        InputStreamReader inputStreamReader;
-        String string3;
-        f f10;
-        try {
-            f10 = this;
-            string3 = string;
-            inputStreamReader = string2 == null ? new InputStreamReader(inputStream) : new InputStreamReader(inputStream, string2);
-        }
-        catch (b_0 b_02) {
-            throw f.b(b_02);
-        }
-        f10.Y(string3, inputStreamReader);
-    }
+         var10001 = new InputStreamReader(var1, var2);
+      }
 
-    @Override
-    public final void D(String string) throws b_0 {
-        this.E(null, string);
-    }
+      var10000.f(var10001);
+   }
 
-    @Override
-    public final void E(@c String string, String string2) throws b_0 {
-        try {
-            this.Y(string, new StringReader(string2));
-        }
-        catch (IOException iOException) {
-            iOException.printStackTrace();
-            throw new RuntimeException(a);
-        }
-    }
+   @Override
+   public final void d(@org.F.c String var1, InputStream var2, @org.F.c String var3) throws b_2, IOException {
+      org.f var10000;
+      String var10001;
+      InputStreamReader var10002;
+      label16: {
+         try {
+            var10000 = this;
+            var10001 = var1;
+            if (var3 == null) {
+               var10002 = new InputStreamReader(var2);
+               break label16;
+            }
+         } catch (b_2 var4) {
+            throw b(var4);
+         }
 
-    @Override
-    public final void O(File file) throws b_0, IOException {
-        this.o(file, null);
-    }
+         var10002 = new InputStreamReader(var2, var3);
+      }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     * Unable to fully structure code
-     */
-    @Override
-    public final void o(File var1_1, @c String var2_2) throws b_0, IOException {
-        block14: {
-            var4_3 = new FileInputStream(var1_1);
-            var3_4 = d_0.b();
+      var10000.Y(var10001, var10002);
+   }
+
+   @Override
+   public final void D(String var1) throws b_2 {
+      this.E((String)null, var1);
+   }
+
+   @Override
+   public final void E(@org.F.c String var1, String var2) throws b_2 {
+      try {
+         this.Y(var1, new StringReader(var2));
+      } catch (IOException var4) {
+         var4.printStackTrace();
+         throw new RuntimeException(a);
+      }
+   }
+
+   @Override
+   public final void O(File var1) throws b_2, IOException {
+      this.o(var1, null);
+   }
+
+   // $VF: Handled exception range with multiple entry points by splitting it
+   // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
+   @Override
+   public final void o(File var1, @org.F.c String var2) throws b_2, IOException {
+      com.ky_4[] var10000 = d_2.b();
+      FileInputStream var4 = new FileInputStream(var1);
+      com.ky_4[] var3 = var10000;
+
+      try {
+         String var24;
+         InputStreamReader var10002;
+         label104: {
             try {
-                try {
-                    v0 = this;
-                    v1 = var1_1.getAbsolutePath();
-                    v2 = var2_2 == null ? new InputStreamReader(var4_3) : new InputStreamReader((InputStream)var4_3, var2_2);
-                }
-                catch (IOException v3) {
-                    throw f.b(v3);
-                }
-                v0.Y(v1, v2);
-                var4_3.close();
-                var4_3 = null;
+               var22 = this;
+               var24 = var1.getAbsolutePath();
+               if (var2 == null) {
+                  var10002 = new InputStreamReader(var4);
+                  break label104;
+               }
+            } catch (IOException var19) {
+               throw b(var19);
             }
-            catch (Throwable var6_6) {
-                block15: {
-                    try {
-                        v4 = var4_3;
-                        if (var3_4 != null) {
-                            if (v4 == null) break block15;
-                        }
-                        ** GOTO lbl24
-                    }
-                    catch (IOException v5) {
-                        throw f.b(v5);
-                    }
-                    try {
-                        v4 = var4_3;
-lbl24:
-                        // 2 sources
 
-                        v4.close();
-                    }
-                    catch (IOException var7_7) {
-                        // empty catch block
-                    }
-                }
-                throw var6_6;
+            var10002 = new InputStreamReader(var4, var2);
+         }
+
+         var22.Y(var24, var10002);
+         var4.close();
+         var4 = null;
+      } finally {
+         label95: {
+            label94: {
+               try {
+                  var21 = var4;
+                  if (var3 == null) {
+                     break label94;
+                  }
+
+                  if (var4 == null) {
+                     break label95;
+                  }
+               } catch (IOException var18) {
+                  throw b(var18);
+               }
+
+               try {
+                  var21 = var4;
+               } catch (IOException var17) {
+                  boolean var10001 = false;
+                  break label95;
+               }
             }
+
             try {
-                v6 = var4_3;
-                if (var3_4 != null) {
-                    if (v6 == null) break block14;
-                }
-                ** GOTO lbl40
+               var21.close();
+            } catch (IOException var16) {
+               boolean var23 = false;
             }
-            catch (IOException v7) {
-                throw f.b(v7);
+         }
+      }
+   }
+
+   @Override
+   public final void c(String var1) throws b_2, IOException {
+      this.r(var1, null);
+   }
+
+   @Override
+   public final void r(String var1, @org.F.c String var2) throws b_2, IOException {
+      this.o(new File(var1), var2);
+   }
+
+   private static Exception b(Exception var0) {
+      return var0;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = ">x@i|o\u0007\u001f_a4\u000eY\u0012\tS}s(T\u0001\u0002A|s\u0015s6\u0015Uj#(U\u001c\u0003".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 13;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 13;
+         var10006 = var0;
+      } else {
+         var6 = 13;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 13;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 96;
+               break;
+            case 1:
+               var23 = 59;
+               break;
+            case 2:
+               var23 = 2;
+               break;
+            case 3:
+               var23 = 94;
+               break;
+            case 4:
+               var23 = 81;
+               break;
+            case 5:
+               var23 = 49;
+               break;
+            default:
+               var23 = 126;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            try {
-                v6 = var4_3;
-lbl40:
-                // 2 sources
 
-                v6.close();
-            }
-            catch (IOException var5_5) {}
-        }
-    }
-
-    @Override
-    public final void c(String string) throws b_0, IOException {
-        this.r(string, null);
-    }
-
-    @Override
-    public final void r(String string, @c String string2) throws b_0, IOException {
-        this.o(new File(string), string2);
-    }
-
-    private static Exception b(Exception exception) {
-        return exception;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = ">x@i|o\u0007\u001f_a4\u000eY\u0012\tS}s(T\u0001\u0002A|s\u0015s6\u0015Uj#(U\u001c\u0003".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 13;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 96;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 59;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 2;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 94;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 81;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 49;
-                            break;
-                        }
-                        default: {
-                            n17 = 126;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

@@ -1,21 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-class VQ
-implements ListSelectionListener {
-    final km_0 f;
+class VQ implements ListSelectionListener {
+   final Km_2 f;
 
-    VQ(km_0 km_02) {
-        this.f = km_02;
-    }
+   VQ(Km_2 var1) {
+      this.f = var1;
+   }
 
-    @Override
-    public void valueChanged(ListSelectionEvent listSelectionEvent) {
-        this.f.S = System.currentTimeMillis();
-    }
+   @Override
+   public void valueChanged(ListSelectionEvent var1) {
+      com.c.c(363492891300853480L).setLong(com.c.c(269574532637239586L).get(this), System.currentTimeMillis());
+   }
 }
+
+
+
+
 

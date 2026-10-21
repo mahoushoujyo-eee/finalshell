@@ -1,14 +1,12 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.b_0;
-import org.v.q_2;
-
 public interface h4 {
-    public q_2 I() throws b_0;
+   q_4 I() throws org.b_2;
 
-    public Object y(String var1) throws b_0;
+   Object y(String var1) throws org.b_2;
 }
+
+
+
+
 

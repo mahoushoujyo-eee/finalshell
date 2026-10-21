@@ -1,23 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.QH;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-class IP
-implements PropertyChangeListener {
-    final QH k;
+class IP implements PropertyChangeListener {
+   final com.QH k;
 
-    IP(QH qH) {
-        this.k = qH;
-    }
+   IP(com.QH var1) {
+      this.k = var1;
+   }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent propertyChangeEvent) {
-        QH.j(this.k);
-    }
+   @Override
+   public void propertyChange(PropertyChangeEvent var1) {
+      com.QH.j(this.k);
+   }
 }
+
+
+
+
 

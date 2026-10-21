@@ -1,25 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
-import org.v.NV;
-import org.v.j_0;
-import org.v.n_2;
+public class _Z implements J_2 {
+   public final NV b;
 
-public class _Z
-implements j_0 {
-    public final NV b;
+   public _Z(NV var1) {
+      this.b = var1;
+   }
 
-    public _Z(NV nV2) {
-        this.b = nV2;
-    }
-
-    @Override
-    @c
-    public Object c(n_2 n_22) throws Throwable {
-        return n_22.R(this);
-    }
+   @org.F.c
+   @Override
+   public Object c(n_4 var1) throws Throwable {
+      return var1.R(this);
+   }
 }
+
+
+
+
 

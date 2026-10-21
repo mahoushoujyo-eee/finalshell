@@ -1,34 +1,43 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class UP
-implements ActionListener {
-    final U S;
+class UP implements ActionListener {
+   final U S;
 
-    UP(U u10) {
-        this.S = u10;
-    }
+   UP(U var1) {
+      this.S = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        Object object;
-        try {
-            object = yt_1.i();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            object.T();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      Object[] var10000 = com.c.f();
+      Method var4 = com.c.d(270389152141252877L);
+      Object[] var10 = var10000;
+      Object var7 = null;
+
+      try {
+         var10000 = (Object[])var4.invoke(var7, var10);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
+
+      var7 = com.c.f();
+      Method var10003 = com.c.d(579658074404235868L);
+      var10 = (Object[])var7;
+      var7 = var10000;
+      Method var6 = var10003;
+
+      try {
+         var6.invoke(var7, var10);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
 }
+
+
+
+
 

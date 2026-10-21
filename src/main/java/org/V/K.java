@@ -1,135 +1,132 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.V;
 
 import java.io.File;
 import java.io.FilenameFilter;
-import org.F.c;
-import org.V.G;
-import org.V.f;
-import org.v.y_0;
 
-class K
-implements FilenameFilter {
-    static final boolean n;
-    final y_0 S;
-    private static final String a;
+class K implements FilenameFilter {
+   static final boolean n;
+   final org.V.y_2 S;
+   private static final String a;
 
-    K(y_0 y_02) {
-        this.S = y_02;
-    }
+   K(org.V.y_2 var1) {
+      this.S = var1;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public boolean accept(@c File var1_1, @c String var2_2) {
-        var3_3 = f.h();
-        v0 = K.n;
-        if (var3_3 == null) {
-            if (!v0 && var1_1 == null) {
-                throw new AssertionError();
+   @Override
+   public boolean accept(@org.F.c File var1, @org.F.c String var2) {
+      int[] var3 = org.V.f.h();
+      boolean var10000 = n;
+      if (var3 == null) {
+         if (!n && var1 == null) {
+            throw new AssertionError();
+         }
+
+         var10000 = n;
+      }
+
+      if (var3 == null) {
+         label26: {
+            if (!var10000) {
+               var4 = var2;
+               if (var3 != null) {
+                  break label26;
+               }
+
+               if (var2 == null) {
+                  throw new AssertionError();
+               }
             }
-            v0 = K.n;
-        }
-        if (var3_3 == null) {
-            if (!v0) {
-                v1 = var2_2;
-                if (var3_3 == null) {
-                    if (v1 == null) {
-                        throw new AssertionError();
-                    } else {
-                        ** GOTO lbl-1000
-                    }
-                }
-            } else lbl-1000:
-            // 3 sources
 
-            {
-                v1 = var2_2;
-            }
-            v0 = v1.endsWith(K.a);
-        }
-        return v0;
-    }
+            var4 = var2;
+         }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "Q\u0019\u0014,".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 73;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+         var10000 = var4.endsWith(a);
+      }
+
+      return var10000;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "Q\u0019\u0014,".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 73;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 73;
+         var10006 = var0;
+      } else {
+         var6 = 73;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            n = !org.V.G.class.desiredAssertionStatus();
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 73;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 54;
+               break;
+            case 1:
+               var23 = 58;
+               break;
+            case 2:
+               var23 = 60;
+               break;
+            case 3:
+               var23 = 23;
+               break;
+            case 4:
+               var23 = 92;
+               break;
+            case 5:
+               var23 = 67;
+               break;
+            default:
+               var23 = 97;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               n = !org.V.G.class.desiredAssertionStatus();
+               return;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 54;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 58;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 60;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 23;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 92;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 67;
-                            break;
-                        }
-                        default: {
-                            n17 = 97;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-        n = !G.class.desiredAssertionStatus();
-    }
+
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

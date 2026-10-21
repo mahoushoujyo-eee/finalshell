@@ -1,305 +1,379 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.Window;
 import java.awt.event.KeyEvent;
-import java.lang.reflect.InvocationTargetException;
-import javax.swing.KeyStroke;
-import org.apache.commons.lang.StringUtils;
 
-class QP
-extends qh_0 {
-    final zG n;
-    final zG T;
-    final U w;
-    private static final long a;
+class QP extends Qh_2 {
+   final zG n;
+   final zG T;
+   final U w;
+   private static final long a;
 
-    QP(U u10, Window window, zG zG2, zG zG3) {
-        this.w = u10;
-        this.n = zG2;
-        this.T = zG3;
-        super(window);
-    }
+   QP(U var1, Window var2, zG var3, zG var4) {
+      super(var2);
+      this.w = var1;
+      this.n = var3;
+      this.T = var4;
+   }
 
-    /*
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    @Override
-    public void i(KeyEvent var1_1) {
-        block78: {
-            block79: {
-                block77: {
-                    block72: {
-                        block73: {
-                            block75: {
-                                block70: {
-                                    block71: {
-                                        block85: {
-                                            block84: {
-                                                block83: {
-                                                    block82: {
-                                                        block81: {
-                                                            var3_2 = KeyStroke.getKeyStrokeForEvent(var1_1);
-                                                            var2_3 = F8.y();
-                                                            var4_4 = false;
-                                                            v0 = var1_1.getModifiers();
-                                                            if (var2_3 != null) break block70;
-                                                            if (v0 == (int)QP.a) break block71;
-                                                            break block81;
-                                                            catch (Exception v1) {
-                                                                throw QP.a(v1);
-                                                            }
-                                                        }
-                                                        v0 = var1_1.getModifiers();
-                                                        if (var2_3 != null) break block70;
-                                                        break block82;
-                                                        catch (Exception v2) {
-                                                            throw QP.a(v2);
-                                                        }
-                                                    }
-                                                    if (v0 == 2) break block71;
-                                                    break block83;
-                                                    catch (Exception v3) {
-                                                        throw QP.a(v3);
-                                                    }
-                                                }
-                                                v0 = (int)var1_1.isAltDown();
-                                                if (var2_3 != null) break block70;
-                                                break block84;
-                                                catch (Exception v4) {
-                                                    throw QP.a(v4);
-                                                }
-                                            }
-                                            if (v0 != 0) break block71;
-                                            break block85;
-                                            catch (Exception v5) {
-                                                throw QP.a(v5);
-                                            }
-                                        }
-                                        try {
-                                            block86: {
-                                                v6 = (int)var1_1.isControlDown();
-                                                if (var2_3 != null) break block72;
-                                                break block86;
-                                                catch (Exception v7) {
-                                                    throw QP.a(v7);
-                                                }
-                                            }
-                                            if (v6 == 0) break block73;
-                                        }
-                                        catch (Exception v8) {
-                                            throw QP.a(v8);
-                                        }
-                                    }
-                                    v0 = 0;
-                                }
-                                var5_5 = v0;
-                                try {
-                                    block76: {
-                                        block74: {
-                                            var6_6 = var1_1.getKeyChar() + "";
-                                            var6_6 = var6_6.trim();
-                                            v9 = var6_6.equals("");
-                                            if (var2_3 != null) break block74;
-                                            try {
-                                                block87: {
-                                                    if (v9 != 0) break block75;
-                                                    break block87;
-                                                    catch (Exception v10) {
-                                                        throw QP.a(v10);
-                                                    }
-                                                }
-                                                v9 = StringUtils.isNumeric((String)var6_6);
-                                            }
-                                            catch (Exception v11) {
-                                                throw QP.a(v11);
-                                            }
-                                        }
-                                        if (var2_3 != null) break block76;
-                                        try {
-                                            block88: {
-                                                if (v9 == 0) break block75;
-                                                break block88;
-                                                catch (Exception v12) {
-                                                    throw QP.a(v12);
-                                                }
-                                            }
-                                            v9 = Integer.parseInt((String)var6_6);
-                                        }
-                                        catch (Exception v13) {
-                                            throw QP.a(v13);
-                                        }
-                                    }
-                                    var5_5 = v9;
-                                }
-                                catch (Exception var6_7) {
-                                    var6_7.printStackTrace();
-                                }
-                            }
-                            try {
-                                v6 = var5_5;
-                                if (var2_3 != null) break block72;
-                                if (v6 > 0) {
-                                }
-                                break block73;
-                            }
-                            catch (Exception v14) {
-                                throw QP.a(v14);
-                            }
-                            try {
-                                v15 = (t3_0)this.w.C.x(var5_5);
-                            }
-                            catch (InvocationTargetException v16) {
-                                throw v16.getTargetException();
-                            }
-                            var6_6 = v15;
-                            try {
-                                if (var6_6 == null) ** GOTO lbl114
-                                try {
-                                    this.w.C.X(var6_6);
-                                }
-                                catch (InvocationTargetException v17) {
-                                    throw v17.getTargetException();
-                                }
-                            }
-                            catch (Exception v18) {
-                                throw QP.a(v18);
-                            }
-                        }
-                        try {
-                            v19 = (KeyStroke)this.n.f();
-                        }
-                        catch (InvocationTargetException v20) {
-                            throw v20.getTargetException();
-                        }
-                        v6 = (int)var3_2.equals(v19);
-                    }
-                    try {
-                        try {
-                            try {
-                                if (var2_3 == null) {
-                                    if (v6 == 0) ** GOTO lbl142
-                                }
-                                break block77;
-                            }
-                            catch (Exception v21) {
-                                throw QP.a(v21);
-                            }
-                            try {
-                                this.w.C.m();
-                            }
-                            catch (InvocationTargetException v22) {
-                                throw v22.getTargetException();
-                            }
-                            if (var2_3 != null) {
-                            }
-                            break block78;
-                        }
-                        catch (Exception v23) {
-                            throw QP.a(v23);
-                        }
-lbl142:
-                        // 2 sources
+   @Override
+   public void i(KeyEvent param1) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic F8.y ()[Ljava/lang/String;
+      // 003: aload 1
+      // 004: invokestatic javax/swing/KeyStroke.getKeyStrokeForEvent (Ljava/awt/event/KeyEvent;)Ljavax/swing/KeyStroke;
+      // 007: astore 3
+      // 008: astore 2
+      // 009: bipush 0
+      // 00a: istore 4
+      // 00c: aload 1
+      // 00d: invokevirtual java/awt/event/KeyEvent.getModifiers ()I
+      // 010: aload 2
+      // 011: ifnonnull 06f
+      // 014: getstatic QP.a J
+      // 017: l2i
+      // 018: if_icmpeq 06e
+      // 01b: goto 022
+      // 01e: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 021: athrow
+      // 022: aload 1
+      // 023: invokevirtual java/awt/event/KeyEvent.getModifiers ()I
+      // 026: aload 2
+      // 027: ifnonnull 06f
+      // 02a: goto 031
+      // 02d: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 030: athrow
+      // 031: bipush 2
+      // 032: if_icmpeq 06e
+      // 035: goto 03c
+      // 038: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 03b: athrow
+      // 03c: aload 1
+      // 03d: invokevirtual java/awt/event/KeyEvent.isAltDown ()Z
+      // 040: aload 2
+      // 041: ifnonnull 06f
+      // 044: goto 04b
+      // 047: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 04a: athrow
+      // 04b: ifne 06e
+      // 04e: goto 055
+      // 051: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 054: athrow
+      // 055: aload 1
+      // 056: invokevirtual java/awt/event/KeyEvent.isControlDown ()Z
+      // 059: aload 2
+      // 05a: ifnonnull 178
+      // 05d: goto 064
+      // 060: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 063: athrow
+      // 064: ifeq 151
+      // 067: goto 06e
+      // 06a: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 06d: athrow
+      // 06e: bipush 0
+      // 06f: istore 5
+      // 071: new java/lang/StringBuilder
+      // 074: dup
+      // 075: invokespecial java/lang/StringBuilder.<init> ()V
+      // 078: aload 1
+      // 079: invokevirtual java/awt/event/KeyEvent.getKeyChar ()C
+      // 07c: invokevirtual java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;
+      // 07f: ldc ""
+      // 081: invokevirtual java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+      // 084: invokevirtual java/lang/StringBuilder.toString ()Ljava/lang/String;
+      // 087: astore 6
+      // 089: aload 6
+      // 08b: invokevirtual java/lang/String.trim ()Ljava/lang/String;
+      // 08e: astore 6
+      // 090: aload 6
+      // 092: ldc ""
+      // 094: invokevirtual java/lang/String.equals (Ljava/lang/Object;)Z
+      // 097: aload 2
+      // 098: ifnonnull 0b1
+      // 09b: ifne 0cd
+      // 09e: goto 0a5
+      // 0a1: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0a4: athrow
+      // 0a5: aload 6
+      // 0a7: invokestatic org/apache/commons/lang/StringUtils.isNumeric (Ljava/lang/String;)Z
+      // 0aa: goto 0b1
+      // 0ad: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0b0: athrow
+      // 0b1: aload 2
+      // 0b2: ifnonnull 0cb
+      // 0b5: ifeq 0cd
+      // 0b8: goto 0bf
+      // 0bb: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0be: athrow
+      // 0bf: aload 6
+      // 0c1: invokestatic java/lang/Integer.parseInt (Ljava/lang/String;)I
+      // 0c4: goto 0cb
+      // 0c7: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0ca: athrow
+      // 0cb: istore 5
+      // 0cd: goto 0d7
+      // 0d0: astore 6
+      // 0d2: aload 6
+      // 0d4: invokevirtual java/lang/Exception.printStackTrace ()V
+      // 0d7: iload 5
+      // 0d9: aload 2
+      // 0da: ifnonnull 178
+      // 0dd: ifle 151
+      // 0e0: goto 0e7
+      // 0e3: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0e6: athrow
+      // 0e7: aload 0
+      // 0e8: ldc2_w 161177414596717597
+      // 0eb: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 0ee: swap
+      // 0ef: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 0f2: ldc2_w 493158471773442262
+      // 0f5: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 0f8: swap
+      // 0f9: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 0fc: iload 5
+      // 0fe: invokestatic com/c.a (I)[Ljava/lang/Object;
+      // 101: ldc2_w 567768013360538453
+      // 104: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 107: dup_x2
+      // 108: pop
+      // 109: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 10c: checkcast t3_2
+      // 10f: goto 116
+      // 112: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 115: athrow
+      // 116: astore 6
+      // 118: aload 6
+      // 11a: ifnull 151
+      // 11d: aload 0
+      // 11e: ldc2_w 161177414596717597
+      // 121: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 124: swap
+      // 125: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 128: ldc2_w 493158471773442262
+      // 12b: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 12e: swap
+      // 12f: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 132: aload 6
+      // 134: invokestatic com/c.a (Ljava/lang/Object;)[Ljava/lang/Object;
+      // 137: ldc2_w 176011466134249595
+      // 13a: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 13d: dup_x2
+      // 13e: pop
+      // 13f: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 142: pop
+      // 143: goto 14a
+      // 146: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 149: athrow
+      // 14a: goto 151
+      // 14d: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 150: athrow
+      // 151: aload 3
+      // 152: aload 0
+      // 153: ldc2_w 319551843007769804
+      // 156: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 159: swap
+      // 15a: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 15d: invokestatic com/c.f ()[Ljava/lang/Object;
+      // 160: ldc2_w 546345160214988812
+      // 163: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 166: dup_x2
+      // 167: pop
+      // 168: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 16b: checkcast javax/swing/KeyStroke
+      // 16e: goto 175
+      // 171: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 174: athrow
+      // 175: invokevirtual javax/swing/KeyStroke.equals (Ljava/lang/Object;)Z
+      // 178: aload 2
+      // 179: ifnonnull 1ea
+      // 17c: ifeq 1bc
+      // 17f: goto 186
+      // 182: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 185: athrow
+      // 186: aload 0
+      // 187: ldc2_w 161177414596717597
+      // 18a: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 18d: swap
+      // 18e: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 191: ldc2_w 493158471773442262
+      // 194: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 197: swap
+      // 198: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 19b: invokestatic com/c.f ()[Ljava/lang/Object;
+      // 19e: ldc2_w 590160201207864641
+      // 1a1: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 1a4: dup_x2
+      // 1a5: pop
+      // 1a6: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 1a9: pop
+      // 1aa: goto 1b1
+      // 1ad: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 1b0: athrow
+      // 1b1: aload 2
+      // 1b2: ifnull 2fa
+      // 1b5: goto 1bc
+      // 1b8: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1bb: athrow
+      // 1bc: aload 3
+      // 1bd: aload 0
+      // 1be: ldc2_w 471446672619646134
+      // 1c1: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 1c4: swap
+      // 1c5: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 1c8: invokestatic com/c.f ()[Ljava/lang/Object;
+      // 1cb: ldc2_w 546345160214988812
+      // 1ce: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 1d1: dup_x2
+      // 1d2: pop
+      // 1d3: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 1d6: checkcast javax/swing/KeyStroke
+      // 1d9: goto 1e0
+      // 1dc: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 1df: athrow
+      // 1e0: invokevirtual javax/swing/KeyStroke.equals (Ljava/lang/Object;)Z
+      // 1e3: goto 1ea
+      // 1e6: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1e9: athrow
+      // 1ea: aload 2
+      // 1eb: ifnonnull 29b
+      // 1ee: ifeq 22e
+      // 1f1: goto 1f8
+      // 1f4: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 1f7: athrow
+      // 1f8: aload 0
+      // 1f9: ldc2_w 161177414596717597
+      // 1fc: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 1ff: swap
+      // 200: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 203: ldc2_w 493158471773442262
+      // 206: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 209: swap
+      // 20a: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 20d: invokestatic com/c.f ()[Ljava/lang/Object;
+      // 210: ldc2_w 143308290537343547
+      // 213: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 216: dup_x2
+      // 217: pop
+      // 218: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 21b: pop
+      // 21c: goto 223
+      // 21f: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 222: athrow
+      // 223: aload 2
+      // 224: ifnull 2fa
+      // 227: goto 22e
+      // 22a: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 22d: athrow
+      // 22e: aload 3
+      // 22f: invokestatic com/c.f ()[Ljava/lang/Object;
+      // 232: ldc2_w 270389152141252877
+      // 235: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 238: swap
+      // 239: aconst_null
+      // 23a: swap
+      // 23b: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 23e: goto 245
+      // 241: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 244: athrow
+      // 245: invokestatic com/c.f ()[Ljava/lang/Object;
+      // 248: ldc2_w 306266403902896148
+      // 24b: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 24e: dup_x2
+      // 24f: pop
+      // 250: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 253: goto 25a
+      // 256: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 259: athrow
+      // 25a: ldc2_w 391819096557420250
+      // 25d: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 260: aconst_null
+      // 261: invokevirtual java/lang/reflect/Field.getInt (Ljava/lang/Object;)I
+      // 264: invokestatic com/c.a (I)[Ljava/lang/Object;
+      // 267: ldc2_w 487190762664997585
+      // 26a: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 26d: dup_x2
+      // 26e: pop
+      // 26f: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 272: goto 279
+      // 275: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 278: athrow
+      // 279: invokestatic com/c.f ()[Ljava/lang/Object;
+      // 27c: ldc2_w 546345160214988812
+      // 27f: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 282: dup_x2
+      // 283: pop
+      // 284: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 287: checkcast javax/swing/KeyStroke
+      // 28a: goto 291
+      // 28d: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 290: athrow
+      // 291: invokevirtual javax/swing/KeyStroke.equals (Ljava/lang/Object;)Z
+      // 294: goto 29b
+      // 297: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 29a: athrow
+      // 29b: ifeq 2fa
+      // 29e: aload 0
+      // 29f: ldc2_w 161177414596717597
+      // 2a2: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 2a5: swap
+      // 2a6: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 2a9: ldc2_w 493158471773442262
+      // 2ac: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 2af: swap
+      // 2b0: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 2b3: aload 0
+      // 2b4: ldc2_w 161177414596717597
+      // 2b7: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 2ba: swap
+      // 2bb: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 2be: ldc2_w 493158471773442262
+      // 2c1: invokestatic com/c.c (J)Ljava/lang/reflect/Field;
+      // 2c4: swap
+      // 2c5: invokevirtual java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 2c8: invokestatic com/c.f ()[Ljava/lang/Object;
+      // 2cb: ldc2_w 194560825135347400
+      // 2ce: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 2d1: dup_x2
+      // 2d2: pop
+      // 2d3: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 2d6: goto 2dd
+      // 2d9: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 2dc: athrow
+      // 2dd: invokestatic com/c.a (Ljava/lang/Object;)[Ljava/lang/Object;
+      // 2e0: ldc2_w 228917422408595458
+      // 2e3: invokestatic com/c.d (J)Ljava/lang/reflect/Method;
+      // 2e6: dup_x2
+      // 2e7: pop
+      // 2e8: invokevirtual java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 2eb: pop
+      // 2ec: goto 2f3
+      // 2ef: invokevirtual java/lang/reflect/InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+      // 2f2: athrow
+      // 2f3: goto 2fa
+      // 2f6: invokestatic QP.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 2f9: athrow
+      // 2fa: return
+   }
 
-                        try {
-                            v24 = (KeyStroke)this.T.f();
-                        }
-                        catch (InvocationTargetException v25) {
-                            throw v25.getTargetException();
-                        }
-                        v6 = (int)var3_2.equals(v24);
-                    }
-                    catch (Exception v26) {
-                        throw QP.a(v26);
-                    }
-                }
-                try {
-                    block80: {
-                        try {
-                            try {
-                                if (var2_3 != null) break block79;
-                                if (v6 != 0) {
-                                }
-                                break block80;
-                            }
-                            catch (Exception v27) {
-                                throw QP.a(v27);
-                            }
-                            try {
-                                this.w.C.s();
-                            }
-                            catch (InvocationTargetException v28) {
-                                throw v28.getTargetException();
-                            }
-                            if (var2_3 == null) break block78;
-                        }
-                        catch (Exception v29) {
-                            throw QP.a(v29);
-                        }
-                    }
-                    try {
-                        v30 = yt_1.i();
-                    }
-                    catch (InvocationTargetException v31) {
-                        throw v31.getTargetException();
-                    }
-                    try {
-                        v32 = v30.h();
-                    }
-                    catch (InvocationTargetException v33) {
-                        throw v33.getTargetException();
-                    }
-                    try {
-                        v34 = v32.L(US.k);
-                    }
-                    catch (InvocationTargetException v35) {
-                        throw v35.getTargetException();
-                    }
-                    try {
-                        v36 = (KeyStroke)v34.f();
-                    }
-                    catch (InvocationTargetException v37) {
-                        throw v37.getTargetException();
-                    }
-                    v6 = (int)var3_2.equals(v36);
-                }
-                catch (Exception v38) {
-                    throw QP.a(v38);
-                }
-            }
-            try {
-                if (v6 == 0) break block78;
-                try {
-                    v39 = this.w.C.Q();
-                }
-                catch (InvocationTargetException v40) {
-                    throw v40.getTargetException();
-                }
-                try {
-                    this.w.C.N(v39);
-                }
-                catch (InvocationTargetException v41) {
-                    throw v41.getTargetException();
-                }
-            }
-            catch (Exception v42) {
-                throw QP.a(v42);
-            }
-        }
-    }
+   private static Exception a(Exception var0) {
+      return var0;
+   }
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
-
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 2291886859903111746L;
-        a = 0x925A0BDCC5E9124AL ^ l2;
-    }
+   static {
+      long var0 = 2291886859903111746L;
+      long var10002 = -7900989553427017142L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

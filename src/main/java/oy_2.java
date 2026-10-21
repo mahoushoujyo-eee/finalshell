@@ -1,17 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
+import javax.swing.table.DefaultTableModel;
 
-/*
- * Renamed from oy
- */
-public class oy_2 {
-    Thread c;
+class Oy_2 extends DefaultTableModel {
+   final dE_3 Z;
 
-    oy_2() {
-        this.c = new ny_0(this);
-        ((Thread)this.c).start();
-    }
+   Oy_2(dE_3 var1, Object[][] var2, Object[] var3) {
+      super(var2, var3);
+      this.Z = var1;
+   }
+
+   @Override
+   public Class getColumnClass(int var1) {
+      return var1 == 2 ? Boolean.class : String.class;
+   }
 }
+
+
+
+
 

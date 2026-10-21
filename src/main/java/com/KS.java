@@ -1,23 +1,23 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import java.awt.Insets;
-import javax.swing.plaf.BorderUIResource;
+import javax.swing.plaf.BorderUIResource.EmptyBorderUIResource;
 
-public final class KS
-extends BorderUIResource.EmptyBorderUIResource {
-    public KS(int n10) {
-        super(n10, n10, n10, n10);
-    }
+public final class KS extends EmptyBorderUIResource {
+   public KS(int var1) {
+      super(var1, var1, var1, var1);
+   }
 
-    public KS(int n10, int n11, int n12, int n13) {
-        super(n10, n11, n12, n13);
-    }
+   public KS(int var1, int var2, int var3, int var4) {
+      super(var1, var2, var3, var4);
+   }
 
-    public KS(Insets insets) {
-        super(insets);
-    }
+   public KS(Insets var1) {
+      super(var1);
+   }
 }
+
+
+
+
 

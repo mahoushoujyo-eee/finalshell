@@ -1,79 +1,102 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class YZ
-implements ActionListener {
-    final nx_0 H;
+class YZ implements ActionListener {
+   final nx_2 H;
 
-    YZ(nx_0 nx_02) {
-        this.H = nx_02;
-    }
+   YZ(nx_2 var1) {
+      this.H = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        block16: {
-            String string;
-            block17: {
-                String string2;
-                block18: {
-                    String string3;
-                    tf_2 tf_22;
-                    String string4;
-                    block15: {
-                        string4 = km_0.U();
-                        nx_0 nx_02 = (nx_0)this.H;
-                        if (string4 == null) {
-                            if ((ck_2)nx_02.U != null) {
-                                Object object;
-                                try {
-                                    object = this.H.U.d();
-                                }
-                                catch (InvocationTargetException invocationTargetException) {
-                                    throw invocationTargetException.getTargetException();
-                                }
-                                try {
-                                    lk_0.u(object);
-                                }
-                                catch (InvocationTargetException invocationTargetException) {
-                                    throw invocationTargetException.getTargetException();
-                                }
-                            }
-                            nx_02 = (nx_0)this.H;
-                        }
-                        tf_22 = (tf_2)nx_02.P;
-                        if (string4 != null) break block15;
-                        if (tf_22 == null) break block16;
-                        tf_22 = (tf_2)this.H.P;
-                    }
-                    try {
-                        string3 = (String)tf_22.k();
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                    string = string2 = string3;
-                    if (string4 != null) break block17;
-                    if (string.equals("/")) break block18;
-                    string = string2;
-                    if (string4 != null) break block17;
-                    if (!string.endsWith("/")) {
-                        string2 = string2 + "/";
-                    }
-                }
-                string = string2;
-            }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      String var2 = Km_2.U();
+      nx_2 var10000 = (nx_2)com.c.c(380371888959224761L).get(this);
+      if (var2 == null) {
+         if ((ck_4)com.c.c(450156560726681374L).get(var10000) != null) {
+            var10000 = (nx_2)com.c.c(450156560726681374L).get(com.c.c(380371888959224761L).get(this));
+            Object[] var10001 = com.c.f();
+            Method var10003 = com.c.d(605430732347023634L);
+            Object[] var10002 = var10001;
+            var10001 = var10000;
+            Method var9 = var10003;
+
             try {
-                lk_0.u(string);
+               var10000 = (nx_2)var9.invoke(var10001, var10002);
+            } catch (InvocationTargetException var7) {
+               throw var7.getTargetException();
             }
-            catch (InvocationTargetException invocationTargetException) {
-                throw invocationTargetException.getTargetException();
+
+            Object[] var11 = com.c.a(var10000);
+            Method var12 = com.c.d(396962080382410298L);
+            var10002 = var11;
+            var10001 = null;
+
+            try {
+               var12.invoke(var10001, var10002);
+            } catch (InvocationTargetException var6) {
+               throw var6.getTargetException();
             }
-        }
-    }
+         }
+
+         var10000 = (nx_2)com.c.c(380371888959224761L).get(this);
+      }
+
+      tf_4 var13 = (tf_4)com.c.c(566271456646205392L).get(var10000);
+      if (var2 == null) {
+         if (var13 == null) {
+            return;
+         }
+
+         var13 = (tf_4)com.c.c(566271456646205392L).get(com.c.c(380371888959224761L).get(this));
+      }
+
+      Object[] var22 = com.c.f();
+      Method var31 = com.c.d(498856411508641826L);
+      Object[] var28 = var22;
+      tf_4 var23 = var13;
+      Method var14 = var31;
+
+      try {
+         var15 = (String)var14.invoke(var23, var28);
+      } catch (InvocationTargetException var5) {
+         throw var5.getTargetException();
+      }
+
+      String var3 = var15;
+      var16 = var3;
+      label56:
+      if (var2 == null) {
+         if (!var3.equals("/")) {
+            var16 = var3;
+            if (var2 != null) {
+               break label56;
+            }
+
+            if (!var3.endsWith("/")) {
+               var3 = var3 + "/";
+            }
+         }
+
+         var16 = var3;
+      }
+
+      Object[] var17 = com.c.a(var16);
+      Method var18 = com.c.d(396962080382410298L);
+      var28 = var17;
+      var22 = null;
+
+      try {
+         var18.invoke(var22, var28);
+      } catch (InvocationTargetException var4) {
+         throw var4.getTargetException();
+      }
+   }
 }
+
+
+
+
 

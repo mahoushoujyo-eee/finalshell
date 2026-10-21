@@ -1,33 +1,32 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JLabel;
 
-public class DC
-extends JLabel {
-    private static final long a;
+public class DC extends JLabel {
+   private static final long a;
 
-    public DC(String string) {
-        super(string);
-        this.setOpaque(true);
-        this.setHorizontalAlignment(0);
-        int n10 = (int)a;
-        this.setForeground(new Color(n10, n10, n10));
-    }
+   public DC(String var1) {
+      super(var1);
+      this.setOpaque(true);
+      this.setHorizontalAlignment(0);
+      int var2 = (int)a;
+      this.setForeground(new Color(var2, var2, var2));
+   }
 
-    @Override
-    public void paint(Graphics graphics) {
-        super.paint(graphics);
-    }
+   @Override
+   public void paint(Graphics var1) {
+      super.paint(var1);
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 1014987571449219614L;
-        a = 0xB7E4AA338FAACA7AL ^ l2;
-    }
+   static {
+      long var0 = 1014987571449219614L;
+      long var10002 = -5195840931648320902L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

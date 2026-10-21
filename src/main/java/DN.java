@@ -1,9 +1,4 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.KS;
-import com.c;
-import com.ne_2;
+import com.ne_4;
 import java.awt.Container;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -12,173 +7,224 @@ import java.awt.GraphicsConfiguration;
 import java.awt.Window;
 import java.awt.image.BufferedImage;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.ImageIcon;
 
-public class DN
-extends ne_2 {
-    private BufferedImage I;
-    private static final Map D;
-    private static final long[] a;
-    private static final Integer[] b;
+public class DN extends ne_4 {
+   private BufferedImage I;
+   private static final Map D;
+   private static final long[] a;
+   private static final Integer[] b;
 
-    public DN() {
-        this(DN.a(14808, 3943790025191899887L));
-    }
+   public DN() {
+      this(a(14808, 3943790025191899887L));
+   }
 
-    public DN(int n10) {
-        super(n10);
-        Font font;
-        Object object;
-        this.I = null;
-        this.L(false);
-        this.c(false);
-        KS kS = new KS(3, DN.a(14435, 4717495035907064661L), 3, 3);
-        this.setBorder(kS);
-        try {
-            object = yt_1.i();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            object.O();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        try {
-            font = (Font)fx_2.o();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        this.setFont(font);
-    }
+   public DN(int var1) {
+      super(var1);
+      com.c.c(329170386049535157L).set(this, null);
+      this.L(false);
+      this.c(false);
+      com.KS var2 = new com.KS(3, a(14435, 4717495035907064661L), 3, 3);
+      this.setBorder(var2);
+      Object[] var10001 = com.c.f();
+      Method var6 = com.c.d(270389152141252877L);
+      Object[] var17 = var10001;
+      Object var12 = null;
 
-    @Override
-    public void paint(Graphics graphics) {
-        Graphics2D graphics2D = (Graphics2D)graphics;
-        super.paint(graphics);
-    }
+      try {
+         var10001 = (Object[])var6.invoke(var12, var17);
+      } catch (InvocationTargetException var5) {
+         throw var5.getTargetException();
+      }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    @Override
-    public void paintComponent(Graphics graphics) {
-        block15: {
-            block9: {
-                Object object;
-                BufferedImage bufferedImage;
-                int n10;
-                int n11;
-                String string;
-                block13: {
-                    block14: {
-                        DN dN;
-                        block11: {
-                            block12: {
-                                int n12;
-                                block10: {
-                                    block8: {
-                                        Container container = this.getTopLevelAncestor();
-                                        string = aA.z();
-                                        n12 = container instanceof Window;
-                                        if (string != null) break block8;
-                                        if (n12 == 0) break block9;
-                                        n12 = ((Window)container).isOpaque();
-                                    }
-                                    if (string != null) break block10;
-                                    if (n12 != 0) break block9;
-                                    n12 = this.getWidth();
-                                }
-                                n11 = n12;
-                                n10 = this.getHeight();
-                                dN = this;
-                                if (string != null) break block11;
-                                if ((BufferedImage)dN.I == null) break block12;
-                                dN = this;
-                                if (string != null) break block11;
-                                if (((BufferedImage)dN.I).getWidth() != n11) break block12;
-                                bufferedImage = (BufferedImage)this.I;
-                                if (string != null) break block13;
-                                if (bufferedImage.getHeight() == n10) break block14;
-                            }
-                            dN = this;
+      var12 = com.c.f();
+      Method var10004 = com.c.d(634817973682994708L);
+      var17 = (Object[])var12;
+      var12 = var10001;
+      Method var8 = var10004;
+
+      try {
+         var8.invoke(var12, var17);
+      } catch (InvocationTargetException var4) {
+         throw var4.getTargetException();
+      }
+
+      var10001 = com.c.f();
+      Method var10 = com.c.d(499537131214815290L);
+      var17 = var10001;
+      var12 = null;
+
+      try {
+         var10001 = (Font)var10.invoke(var12, var17);
+      } catch (InvocationTargetException var3) {
+         throw var3.getTargetException();
+      }
+
+      this.setFont(var10001);
+   }
+
+   @Override
+   public void paint(Graphics var1) {
+      Graphics2D var2 = (Graphics2D)var1;
+      super.paint(var1);
+   }
+
+   @Override
+   public void paintComponent(Graphics var1) {
+      label97: {
+         String var10000 = aA.z();
+         Container var3 = this.getTopLevelAncestor();
+         String var2 = var10000;
+         int var11 = var3 instanceof Window;
+         if (var2 == null) {
+            if (var11 == 0) {
+               break label97;
+            }
+
+            var11 = ((Window)var3).isOpaque();
+         }
+
+         if (var2 == null) {
+            if (var11 != 0) {
+               break label97;
+            }
+
+            var11 = this.getWidth();
+         }
+
+         int var4;
+         int var5;
+         label83: {
+            label82: {
+               var4 = var11;
+               var5 = this.getHeight();
+               var12 = this;
+               label81:
+               if (var2 == null) {
+                  if ((BufferedImage)com.c.c(329170386049535157L).get(this) != null) {
+                     var12 = this;
+                     if (var2 != null) {
+                        break label81;
+                     }
+
+                     if (((BufferedImage)com.c.c(329170386049535157L).get(this)).getWidth() == var4) {
+                        var13 = (BufferedImage)com.c.c(329170386049535157L).get(this);
+                        if (var2 != null) {
+                           break label83;
                         }
-                        object = dN.getGraphicsConfiguration();
-                        this.I = ((GraphicsConfiguration)object).createCompatibleImage(n11, n10, 3);
-                    }
-                    bufferedImage = (BufferedImage)this.I;
-                }
-                object = bufferedImage.createGraphics();
-                try {
-                    super.paintComponent((Graphics)object);
-                }
-                finally {
-                    ((Graphics)object).dispose();
-                }
-                graphics.drawImage((BufferedImage)this.I, 0, 0, n11, n10, 0, 0, n11, n10, null);
-                if (string == null) break block15;
+
+                        if (var13.getHeight() == var5) {
+                           break label82;
+                        }
+                     }
+                  }
+
+                  var12 = this;
+               }
+
+               GraphicsConfiguration var6 = var12.getGraphicsConfiguration();
+               com.c.c(329170386049535157L).set(this, var6.createCompatibleImage(var4, var5, 3));
             }
-            super.paintComponent(graphics);
-        }
-    }
 
-    public ImageIcon U(String string) {
-        ImageIcon imageIcon;
-        try {
-            imageIcon = (ImageIcon)this.q(this.getClass(), (Object)string);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        return imageIcon;
-    }
+            var13 = (BufferedImage)com.c.c(329170386049535157L).get(this);
+         }
 
-    public ImageIcon q(Class clazz, String string) {
-        String string2 = clazz.getCanonicalName() + ":" + string;
-        String string3 = aA.z();
-        Map map = (Map)DN.D;
-        String string4 = string2;
-        if (string3 == null) {
-            if (!map.containsKey(string4)) {
-                ((Map)DN.D).put(string2, new ImageIcon(clazz.getResource("/" + string)));
-            }
-            map = (Map)DN.D;
-            string4 = string2;
-        }
-        return (ImageIcon)map.get(string4);
-    }
+         Graphics2D var10 = var13.createGraphics();
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 3754755697294332681L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\u00e1h\u00ae\u00c0\u00c3\u00d0\u0091\u00e9T\u00b3\u008cLgr\u0090V";
-        int n11 = "\u00e1h\u00ae\u00c0\u00c3\u00d0\u0091\u00e9T\u00b3\u008cLgr\u0090V".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        a = lArray;
-        b = new Integer[2];
-        D = new HashMap();
-    }
+         try {
+            super.paintComponent(var10);
+         } finally {
+            var10.dispose();
+         }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x7B37;
-        if (b[n11] == null) {
-            DN.b[n11] = (int)(a[n11] ^ l2);
-        }
-        return b[n11];
-    }
+         var1.drawImage((BufferedImage)com.c.c(329170386049535157L).get(this), 0, 0, var4, var5, 0, 0, var4, var5, null);
+         if (var2 == null) {
+            return;
+         }
+      }
+
+      super.paintComponent(var1);
+   }
+
+   public ImageIcon U(String var1) {
+      Object[] var10001 = com.c.a(this.getClass(), var1);
+      Method var10003 = com.c.d(224017843723037148L);
+      Object[] var10002 = var10001;
+      DN var3 = this;
+      Method var10000 = var10003;
+
+      try {
+         return (ImageIcon)var10000.invoke(var3, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
+
+   public ImageIcon q(Class var1, String var2) {
+      String var10000 = aA.z();
+      String var4 = var1.getCanonicalName() + ":" + var2;
+      String var3 = var10000;
+      Map var5 = (Map)com.c.c(628253408435626925L).get(null);
+      String var10001 = var4;
+      if (var3 == null) {
+         if (!var5.containsKey(var4)) {
+            ((Map)com.c.c(628253408435626925L).get(null)).put(var4, new ImageIcon(var1.getResource("/" + var2)));
+         }
+
+         var5 = (Map)com.c.c(628253408435626925L).get(null);
+         var10001 = var4;
+      }
+
+      return (ImageIcon)var5.get(var10001);
+   }
+
+   static {
+      long var0 = 3754755697294332681L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "áh®ÀÃÐ\u0091éT³\u008cLgr\u0090V";
+      int var5 = "áh®ÀÃÐ\u0091éT³\u008cLgr\u0090V".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      a = var6;
+      b = new Integer[2];
+      D = new HashMap();
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 31543;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
+
+      return b[var3];
+   }
 }
+
+
+
+
 

@@ -1,102 +1,252 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.O0;
-import com.X4;
-import com.ak_0;
-import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.Multimap;
-import com.nl_1;
-import com.nv_2;
-import com.ym_1;
-import com.yn_2;
-import java.io.IOException;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.GradientPaint;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Shape;
+import java.awt.Stroke;
+import java.awt.geom.RoundRectangle2D.Double;
+import javax.swing.Icon;
 
-/*
- * Renamed from com.op
- */
-public class op_2
-implements ak_0,
-X4 {
-    public static op_2 K = new op_2();
+public class Op_2 extends com.O_ implements com.W2, com.au_2 {
+   private Color y = GO.FR;
+   private Color d = GO.Q;
+   private Color b = GO.Ft;
+   private Color H = GO.Ff;
+   private Color t = GO.FX;
+   private final Stroke a = new BasicStroke(2.5F, 1, 1, 1.0F);
+   private boolean J = false;
+   private static final long[] c;
+   private static final Integer[] e;
 
-    @Override
-    public void u(nl_1 nl_12, Object object, Object object2, Type type, int n10) throws IOException {
-        block5: {
-            Object object3;
-            block4: {
-                ym_1 ym_12 = nl_12.w;
-                String string = nv_2.o();
-                try {
-                    try {
-                        object3 = object;
-                        if (string == null) break block4;
-                        if (!(object3 instanceof Multimap)) break block5;
-                    }
-                    catch (IOException iOException) {
-                        throw op_2.a(iOException);
-                    }
-                    object3 = object;
-                }
-                catch (IOException iOException) {
-                    throw op_2.a(iOException);
-                }
+   public Op_2() {
+      this.L();
+   }
+
+   public Op_2(Icon var1) {
+      super(var1);
+      this.L();
+   }
+
+   public Op_2(Icon var1, int var2) {
+      super(var1, var2);
+      this.L();
+   }
+
+   public Op_2(String var1) {
+      super(var1);
+      this.L();
+   }
+
+   public Op_2(String var1, int var2) {
+      super(var1, var2, new Object[0]);
+      this.L();
+   }
+
+   public Op_2(String var1, Icon var2, int var3) {
+      super(var1, var2, var3, new Object[0]);
+      this.L();
+   }
+
+   protected void L() {
+      this.setOpaque(false);
+      this.D(true);
+      this.setForeground(Color.DARK_GRAY);
+      this.q(Color.LIGHT_GRAY);
+      this.x(b(32128, 5579374550264534920L));
+      this.setHorizontalAlignment(0);
+      com.FN.u(this);
+      com.FN.O(this, b(24821, 2808339090634590972L));
+   }
+
+   public Color E() {
+      return this.y;
+   }
+
+   public void v(Color var1) {
+      this.y = var1;
+      this.repaint();
+   }
+
+   public Color i() {
+      return this.d;
+   }
+
+   public void d(Color var1) {
+      this.d = var1;
+      this.repaint();
+   }
+
+   public Color e() {
+      return this.b;
+   }
+
+   public void L(Color var1) {
+      this.b = var1;
+      this.repaint();
+   }
+
+   public Color K() {
+      return this.H;
+   }
+
+   public void s(Color var1) {
+      this.H = var1;
+      this.repaint();
+   }
+
+   public Color O() {
+      return this.t;
+   }
+
+   public void i(Color var1) {
+      this.t = var1;
+      this.repaint();
+   }
+
+   public boolean H() {
+      return this.J;
+   }
+
+   public void G(boolean var1) {
+      this.J = var1;
+      this.repaint();
+   }
+
+   @Override
+   public Shape B() {
+      int var1 = this.getWidth();
+      int var2 = this.getHeight();
+      int var3 = Math.min(var1, var2);
+      return new Double(
+         (double)(var1 / 2 - var3 / 2 + 1),
+         (double)(var2 / 2 - var3 / 2 + 1),
+         (double)(var3 - 3),
+         (double)(var3 - 3),
+         (double)(this.getWidth() - 4),
+         (double)(this.getHeight() - 4)
+      );
+   }
+
+   @Override
+   protected void paintComponent(Graphics var1) {
+      com.Op_2 var9;
+      label52: {
+         boolean var10000 = com.Oj_2.V();
+         Graphics2D var3 = (Graphics2D)var1;
+         boolean var2 = var10000;
+         Object var4 = RV.X(var3);
+         int var5 = this.getWidth();
+         int var6 = this.getHeight();
+         int var7 = Math.min(var5, var6);
+         Color var8 = this.getBackground();
+         if (!var2) {
+            if (var8 != null) {
+               label39: {
+                  if (this.J) {
+                     var3.setPaint(this.b);
+                     if (!var2) {
+                        break label39;
+                     }
+                  }
+
+                  var3.setPaint(new GradientPaint(0.0F, 0.0F, this.y, 0.0F, (float)this.getHeight(), this.d));
+               }
+
+               var3.fillRoundRect(var5 / 2 - var7 / 2 + 1, var6 / 2 - var7 / 2 + 1, var7 - 2, var7 - 2, this.getWidth() - 4, this.getHeight() - 4);
             }
-            Multimap multimap = (Multimap)object3;
-            nl_12.B(multimap.asMap());
-        }
-    }
 
-    @Override
-    public Object z(yn_2 yn_22, Type type, Object object) {
-        block6: {
-            Type type2 = type;
-            String string = nv_2.o();
-            Type type3 = type;
-            if (string != null) {
-                if (type3 instanceof ParameterizedType) {
-                    type2 = ((ParameterizedType)type).getRawType();
-                }
-                type3 = type2;
+            var9 = this;
+            if (var2) {
+               break label52;
             }
-            if (type3 != ArrayListMultimap.class) break block6;
-            ArrayListMultimap arrayListMultimap = ArrayListMultimap.create();
-            O0 o0 = yn_22.Q();
-            for (Map.Entry entry : o0.entrySet()) {
-                block7: {
-                    boolean bl;
-                    Object v2;
-                    block8: {
-                        v2 = entry.getValue();
-                        bl = v2 instanceof Collection;
-                        if (string == null) break block7;
-                        if (!bl) break block8;
-                        arrayListMultimap.putAll(entry.getKey(), (Iterable)((List)v2));
-                        if (string != null) break block7;
-                    }
-                    bl = arrayListMultimap.put(entry.getKey(), v2);
-                }
-                if (string != null) continue;
+
+            var8 = this.K();
+         }
+
+         if (var8 != null) {
+            Color var10;
+            label27: {
+               var3.setStroke(this.a);
+               com.Op_2 var10001 = this;
+               if (!var2) {
+                  if (this.isEnabled()) {
+                     var10 = this.H;
+                     break label27;
+                  }
+
+                  var10001 = this;
+               }
+
+               var10 = var10001.t;
             }
-            return arrayListMultimap;
-        }
-        return null;
-    }
 
-    @Override
-    public int j() {
-        return 0;
-    }
+            var3.setPaint(var10);
+            var3.drawRoundRect(var5 / 2 - var7 / 2 + 1, var6 / 2 - var7 / 2 + 1, var7 - 3, var7 - 3, this.getWidth() - 4, this.getHeight() - 4);
+         }
 
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
+         RV.X(var3, var4);
+         var9 = this;
+      }
+
+      var9.paintComponent(var1);
+   }
+
+   @Override
+   public Dimension getPreferredSize() {
+      Dimension var1 = super.getPreferredSize();
+      int var2 = Math.max(var1.width, var1.height);
+      var1.width = var2;
+      var1.height = var2;
+      return var1;
+   }
+
+   static {
+      long var0 = 990727641345555910L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "ñ¿µ\u00adÒÐªF,±¸ñy\u0091·.";
+      int var5 = "ñ¿µ\u00adÒÐªF,±¸ñy\u0091·.".length();
+      byte var2 = 0;
+
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      c = var6;
+      e = new Integer[2];
+   }
+
+   private static int b(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 10760;
+      if (e[var3] == null) {
+         e[var3] = (int)(c[var3] ^ var1);
+      }
+
+      return e[var3];
+   }
 }
+
+
+
+
 

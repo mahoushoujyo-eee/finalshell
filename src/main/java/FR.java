@@ -1,7 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.util.HashMap;
@@ -23,1761 +19,1571 @@ import org.pcap4j.packet.namednumber.TcpPort;
 import org.pcap4j.util.MacAddress;
 
 public class FR {
-    InetAddress U;
-    int k;
-    HashMap O = new HashMap();
-    HashMap b = new HashMap();
-    int p = FR.a(27671, 8373575933482908695L);
-    Random t = new Random();
-    PcapHandle K;
-    HashSet a = new HashSet();
-    HashMap x = new HashMap();
-    MacAddress d;
-    int H;
-    Packet L = null;
-    int u = 0;
-    private static final String[] c;
-    private static final String[] e;
-    private static final long[] f;
-    private static final Integer[] g;
-    private static final long h;
+   InetAddress U;
+   int k;
+   HashMap O = new HashMap();
+   HashMap b = new HashMap();
+   int p = a(27671, 8373575933482908695L);
+   Random t = new Random();
+   PcapHandle K;
+   HashSet a = new HashSet();
+   HashMap x = new HashMap();
+   MacAddress d;
+   int H;
+   Packet L = null;
+   int u = 0;
+   private static final String[] c;
+   private static final String[] e;
+   private static final long[] f;
+   private static final Integer[] g;
+   private static final long h;
 
-    FR(int n10, PcapHandle pcapHandle) {
-        this.K = pcapHandle;
-        this.H = n10;
-    }
+   FR(int var1, PcapHandle var2) {
+      this.K = var2;
+      this.H = var1;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    public void L(Packet var1_1, EthernetPacket.EthernetHeader var2_2, IpV4Packet.IpV4Header var3_3, TcpPacket var4_4, boolean var5_5) {
-        block63: {
-            block67: {
-                block68: {
-                    block65: {
-                        block66: {
-                            block64: {
-                                block55: {
-                                    block61: {
-                                        block62: {
-                                            block59: {
-                                                block60: {
-                                                    block58: {
-                                                        block56: {
-                                                            block57: {
-                                                                block72: {
-                                                                    block71: {
-                                                                        block54: {
-                                                                            block69: {
-                                                                                var7_6 = var4_4.getHeader();
-                                                                                var8_7 = null;
-                                                                                var6_8 = QI.N();
-                                                                                v0 = var4_4.getPayload();
-                                                                                if (var6_8 == null) break block69;
-                                                                                try {
-                                                                                    block70: {
-                                                                                        if (v0 == null) break block54;
-                                                                                        break block70;
-                                                                                        catch (PcapNativeException v1) {
-                                                                                            throw FR.a(v1);
-                                                                                        }
-                                                                                    }
-                                                                                    v0 = var4_4.getPayload();
-                                                                                }
-                                                                                catch (PcapNativeException v2) {
-                                                                                    throw FR.a(v2);
-                                                                                }
-                                                                            }
-                                                                            var8_7 = v0.getRawData();
-                                                                        }
-                                                                        v3 = var5_5;
-                                                                        if (var6_8 == null) break block55;
-                                                                        if (!v3) ** GOTO lbl133
-                                                                        break block71;
-                                                                        catch (PcapNativeException v4) {
-                                                                            throw FR.a(v4);
-                                                                        }
-                                                                    }
-                                                                    this.d = var2_2.getSrcAddr();
-                                                                    v5 = var7_6.getSyn();
-                                                                    if (var6_8 == null) break block56;
-                                                                    break block72;
-                                                                    catch (PcapNativeException v6) {
-                                                                        throw FR.a(v6);
-                                                                    }
-                                                                }
-                                                                try {
-                                                                    block73: {
-                                                                        if (!v5) break block57;
-                                                                        break block73;
-                                                                        catch (PcapNativeException v7) {
-                                                                            throw FR.a(v7);
-                                                                        }
-                                                                    }
-                                                                    var7_6.getAck();
-                                                                }
-                                                                catch (PcapNativeException v8) {
-                                                                    throw FR.a(v8);
-                                                                }
-                                                            }
-                                                            v5 = var7_6.getSyn();
-                                                        }
-                                                        if (var6_8 == null) break block58;
-                                                        try {
-                                                            block74: {
-                                                                if (v5) break block59;
-                                                                break block74;
-                                                                catch (PcapNativeException v9) {
-                                                                    throw FR.a(v9);
-                                                                }
-                                                            }
-                                                            v5 = var7_6.getAck();
-                                                        }
-                                                        catch (PcapNativeException v10) {
-                                                            throw FR.a(v10);
-                                                        }
-                                                    }
-                                                    if (var6_8 == null) break block60;
-                                                    try {
-                                                        block75: {
-                                                            if (!v5) break block59;
-                                                            break block75;
-                                                            catch (PcapNativeException v11) {
-                                                                throw FR.a(v11);
-                                                            }
-                                                        }
-                                                        this.O.remove(var7_6.getAcknowledgmentNumber());
-                                                        v5 = this.a.contains(var3_3.getIdentification());
-                                                    }
-                                                    catch (PcapNativeException v12) {
-                                                        throw FR.a(v12);
-                                                    }
-                                                }
-                                                var9_9 = (int)v5;
-                                            }
-                                            if (var4_4.getPayload() != null) {
-                                                var9_10 = new String(var8_7);
-                                            }
-                                            v13 = var7_6.getSequenceNumber();
-                                            v14 = this.p;
-                                            if (var6_8 == null) break block61;
-                                            try {
-                                                block76: {
-                                                    if (v13 <= v14) break block62;
-                                                    break block76;
-                                                    catch (PcapNativeException v15) {
-                                                        throw FR.a(v15);
-                                                    }
-                                                }
-                                                this.p = var7_6.getSequenceNumber();
-                                            }
-                                            catch (PcapNativeException v16) {
-                                                throw FR.a(v16);
-                                            }
-                                        }
-                                        v13 = bg_0.A;
-                                        v14 = bg_0.g;
-                                    }
-                                    try {
-                                        if (v13 != v14 || var4_4.getPayload() == null) break block63;
-                                    }
-                                    catch (PcapNativeException v17) {
-                                        throw FR.a(v17);
-                                    }
-                                    var9_9 = var7_6.getSequenceNumber();
-                                    try {
-                                        if (this.x.containsKey(var9_9)) break block63;
-                                        var10_11 = new aV();
-                                        this.x.put(var9_9, var10_11);
-                                        var11_14 = var9_9;
-                                        var12_16 = 0;
-                                        if (var6_8 != null) ** GOTO lbl127
-                                        do {
-                                            var13_19 = FR.Y(var1_1, var11_14 + this.t.nextInt(FR.a(26427, 3556159475663714101L)), new byte[FR.a(29145, 5806713907765256659L)]);
-                                            try {
-                                                this.K.sendPacket(var13_19);
-                                            }
-                                            catch (PcapNativeException var14_22) {
-                                                var14_22.printStackTrace();
-                                            }
-                                            catch (NotOpenException var14_23) {
-                                                var14_23.printStackTrace();
-                                            }
-                                            Thread.sleep(FR.h);
-                                            ++var12_16;
-lbl127:
-                                            // 2 sources
+   public void L(Packet param1, EthernetPacket.EthernetHeader param2, IpV4Packet.IpV4Header param3, TcpPacket param4, boolean param5) {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: aload 4
+      // 002: invokevirtual org/pcap4j/packet/TcpPacket.getHeader ()Lorg/pcap4j/packet/TcpPacket$TcpHeader;
+      // 005: astore 7
+      // 007: invokestatic QI.N ()[Ljava/lang/String;
+      // 00a: aconst_null
+      // 00b: astore 8
+      // 00d: astore 6
+      // 00f: aload 4
+      // 011: invokevirtual org/pcap4j/packet/TcpPacket.getPayload ()Lorg/pcap4j/packet/Packet;
+      // 014: aload 6
+      // 016: ifnull 02f
+      // 019: ifnull 036
+      // 01c: goto 023
+      // 01f: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 022: athrow
+      // 023: aload 4
+      // 025: invokevirtual org/pcap4j/packet/TcpPacket.getPayload ()Lorg/pcap4j/packet/Packet;
+      // 028: goto 02f
+      // 02b: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 02e: athrow
+      // 02f: invokeinterface org/pcap4j/packet/Packet.getRawData ()[B 1
+      // 034: astore 8
+      // 036: iload 5
+      // 038: aload 6
+      // 03a: ifnull 1cd
+      // 03d: ifeq 1c1
+      // 040: goto 047
+      // 043: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 046: athrow
+      // 047: aload 0
+      // 048: aload 2
+      // 049: invokevirtual org/pcap4j/packet/EthernetPacket$EthernetHeader.getSrcAddr ()Lorg/pcap4j/util/MacAddress;
+      // 04c: putfield FR.d Lorg/pcap4j/util/MacAddress;
+      // 04f: aload 7
+      // 051: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getSyn ()Z
+      // 054: aload 6
+      // 056: ifnull 07c
+      // 059: goto 060
+      // 05c: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 05f: athrow
+      // 060: ifeq 077
+      // 063: goto 06a
+      // 066: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 069: athrow
+      // 06a: aload 7
+      // 06c: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getAck ()Z
+      // 06f: pop
+      // 070: goto 077
+      // 073: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 076: athrow
+      // 077: aload 7
+      // 079: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getSyn ()Z
+      // 07c: aload 6
+      // 07e: ifnull 097
+      // 081: ifne 0cd
+      // 084: goto 08b
+      // 087: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 08a: athrow
+      // 08b: aload 7
+      // 08d: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getAck ()Z
+      // 090: goto 097
+      // 093: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 096: athrow
+      // 097: aload 6
+      // 099: ifnull 0cb
+      // 09c: ifeq 0cd
+      // 09f: goto 0a6
+      // 0a2: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 0a5: athrow
+      // 0a6: aload 0
+      // 0a7: getfield FR.O Ljava/util/HashMap;
+      // 0aa: aload 7
+      // 0ac: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getAcknowledgmentNumber ()I
+      // 0af: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 0b2: invokevirtual java/util/HashMap.remove (Ljava/lang/Object;)Ljava/lang/Object;
+      // 0b5: pop
+      // 0b6: aload 0
+      // 0b7: getfield FR.a Ljava/util/HashSet;
+      // 0ba: aload 3
+      // 0bb: invokevirtual org/pcap4j/packet/IpV4Packet$IpV4Header.getIdentification ()S
+      // 0be: invokestatic java/lang/Short.valueOf (S)Ljava/lang/Short;
+      // 0c1: invokevirtual java/util/HashSet.contains (Ljava/lang/Object;)Z
+      // 0c4: goto 0cb
+      // 0c7: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 0ca: athrow
+      // 0cb: istore 9
+      // 0cd: aload 4
+      // 0cf: invokevirtual org/pcap4j/packet/TcpPacket.getPayload ()Lorg/pcap4j/packet/Packet;
+      // 0d2: ifnull 0e0
+      // 0d5: new java/lang/String
+      // 0d8: dup
+      // 0d9: aload 8
+      // 0db: invokespecial java/lang/String.<init> ([B)V
+      // 0de: astore 9
+      // 0e0: aload 7
+      // 0e2: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getSequenceNumber ()I
+      // 0e5: aload 0
+      // 0e6: getfield FR.p I
+      // 0e9: aload 6
+      // 0eb: ifnull 10e
+      // 0ee: if_icmple 108
+      // 0f1: goto 0f8
+      // 0f4: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 0f7: athrow
+      // 0f8: aload 0
+      // 0f9: aload 7
+      // 0fb: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getSequenceNumber ()I
+      // 0fe: putfield FR.p I
+      // 101: goto 108
+      // 104: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 107: athrow
+      // 108: getstatic Bg_2.A I
+      // 10b: getstatic Bg_2.g I
+      // 10e: if_icmpne 2f7
+      // 111: aload 4
+      // 113: invokevirtual org/pcap4j/packet/TcpPacket.getPayload ()Lorg/pcap4j/packet/Packet;
+      // 116: ifnull 2f7
+      // 119: goto 120
+      // 11c: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 11f: athrow
+      // 120: aload 7
+      // 122: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getSequenceNumber ()I
+      // 125: istore 9
+      // 127: aload 0
+      // 128: getfield FR.x Ljava/util/HashMap;
+      // 12b: iload 9
+      // 12d: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 130: invokevirtual java/util/HashMap.containsKey (Ljava/lang/Object;)Z
+      // 133: ifne 2f7
+      // 136: new aV
+      // 139: dup
+      // 13a: invokespecial aV.<init> ()V
+      // 13d: astore 10
+      // 13f: aload 0
+      // 140: getfield FR.x Ljava/util/HashMap;
+      // 143: iload 9
+      // 145: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 148: aload 10
+      // 14a: invokevirtual java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      // 14d: pop
+      // 14e: iload 9
+      // 150: istore 11
+      // 152: bipush 0
+      // 153: istore 12
+      // 155: aload 6
+      // 157: ifnonnull 1a4
+      // 15a: aload 1
+      // 15b: iload 11
+      // 15d: aload 0
+      // 15e: getfield FR.t Ljava/util/Random;
+      // 161: sipush 26427
+      // 164: ldc2_w 3556159475663714101
+      // 167: invokestatic FR.a (IJ)I
+      // 16a: invokevirtual java/util/Random.nextInt (I)I
+      // 16d: iadd
+      // 16e: sipush 29145
+      // 171: ldc2_w 5806713907765256659
+      // 174: invokestatic FR.a (IJ)I
+      // 177: newarray 8
+      // 179: invokestatic FR.Y (Lorg/pcap4j/packet/Packet;I[B)Lorg/pcap4j/packet/Packet;
+      // 17c: astore 13
+      // 17e: aload 0
+      // 17f: getfield FR.K Lorg/pcap4j/core/PcapHandle;
+      // 182: aload 13
+      // 184: invokevirtual org/pcap4j/core/PcapHandle.sendPacket (Lorg/pcap4j/packet/Packet;)V
+      // 187: goto 19b
+      // 18a: astore 14
+      // 18c: aload 14
+      // 18e: invokevirtual org/pcap4j/core/PcapNativeException.printStackTrace ()V
+      // 191: goto 19b
+      // 194: astore 14
+      // 196: aload 14
+      // 198: invokevirtual org/pcap4j/core/NotOpenException.printStackTrace ()V
+      // 19b: getstatic FR.h J
+      // 19e: invokestatic java/lang/Thread.sleep (J)V
+      // 1a1: iinc 12 1
+      // 1a4: iload 12
+      // 1a6: sipush 22102
+      // 1a9: ldc2_w 161573514968893019
+      // 1ac: invokestatic FR.a (IJ)I
+      // 1af: if_icmplt 15a
+      // 1b2: goto 2f7
+      // 1b5: astore 10
+      // 1b7: aload 10
+      // 1b9: invokevirtual java/lang/Exception.printStackTrace ()V
+      // 1bc: aload 6
+      // 1be: ifnonnull 2f7
+      // 1c1: aload 7
+      // 1c3: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getSyn ()Z
+      // 1c6: goto 1cd
+      // 1c9: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 1cc: athrow
+      // 1cd: aload 6
+      // 1cf: ifnull 1e8
+      // 1d2: ifeq 1e9
+      // 1d5: goto 1dc
+      // 1d8: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 1db: athrow
+      // 1dc: aload 7
+      // 1de: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getAck ()Z
+      // 1e1: goto 1e8
+      // 1e4: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 1e7: athrow
+      // 1e8: pop
+      // 1e9: aload 4
+      // 1eb: invokevirtual org/pcap4j/packet/TcpPacket.getPayload ()Lorg/pcap4j/packet/Packet;
+      // 1ee: ifnull 2f7
+      // 1f1: aload 7
+      // 1f3: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getSequenceNumber ()I
+      // 1f6: aload 8
+      // 1f8: arraylength
+      // 1f9: iadd
+      // 1fa: istore 9
+      // 1fc: aload 0
+      // 1fd: getfield FR.b Ljava/util/HashMap;
+      // 200: iload 9
+      // 202: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 205: aload 6
+      // 207: ifnull 236
+      // 20a: invokevirtual java/util/HashMap.containsKey (Ljava/lang/Object;)Z
+      // 20d: ifne 22d
+      // 210: goto 217
+      // 213: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 216: athrow
+      // 217: aload 0
+      // 218: getfield FR.b Ljava/util/HashMap;
+      // 21b: iload 9
+      // 21d: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 220: aload 4
+      // 222: invokevirtual java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      // 225: pop
+      // 226: goto 22d
+      // 229: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 22c: athrow
+      // 22d: aload 0
+      // 22e: getfield FR.O Ljava/util/HashMap;
+      // 231: iload 9
+      // 233: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 236: aload 4
+      // 238: invokevirtual java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      // 23b: pop
+      // 23c: aload 0
+      // 23d: aload 0
+      // 23e: getfield FR.d Lorg/pcap4j/util/MacAddress;
+      // 241: aload 2
+      // 242: invokevirtual org/pcap4j/packet/EthernetPacket$EthernetHeader.getSrcAddr ()Lorg/pcap4j/util/MacAddress;
+      // 245: aload 3
+      // 246: invokevirtual org/pcap4j/packet/IpV4Packet$IpV4Header.getDstAddr ()Ljava/net/Inet4Address;
+      // 249: aload 7
+      // 24b: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getDstPort ()Lorg/pcap4j/packet/namednumber/TcpPort;
+      // 24e: invokevirtual org/pcap4j/packet/namednumber/TcpPort.value ()Ljava/lang/Number;
+      // 251: checkcast java/lang/Short
+      // 254: invokevirtual java/lang/Short.shortValue ()S
+      // 257: aload 3
+      // 258: invokevirtual org/pcap4j/packet/IpV4Packet$IpV4Header.getSrcAddr ()Ljava/net/Inet4Address;
+      // 25b: aload 7
+      // 25d: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getSrcPort ()Lorg/pcap4j/packet/namednumber/TcpPort;
+      // 260: invokevirtual org/pcap4j/packet/namednumber/TcpPort.value ()Ljava/lang/Number;
+      // 263: checkcast java/lang/Short
+      // 266: invokevirtual java/lang/Short.shortValue ()S
+      // 269: iload 9
+      // 26b: aload 0
+      // 26c: getfield FR.p I
+      // 26f: invokevirtual FR.f (Lorg/pcap4j/util/MacAddress;Lorg/pcap4j/util/MacAddress;Ljava/net/Inet4Address;SLjava/net/Inet4Address;SII)Lorg/pcap4j/packet/Packet;
+      // 272: astore 10
+      // 274: aload 7
+      // 276: invokevirtual org/pcap4j/packet/TcpPacket$TcpHeader.getSequenceNumber ()I
+      // 279: istore 11
+      // 27b: aload 0
+      // 27c: getfield FR.x Ljava/util/HashMap;
+      // 27f: iload 11
+      // 281: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 284: invokevirtual java/util/HashMap.containsKey (Ljava/lang/Object;)Z
+      // 287: aload 6
+      // 289: ifnull 2db
+      // 28c: ifne 2d8
+      // 28f: goto 296
+      // 292: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 295: athrow
+      // 296: new aV
+      // 299: dup
+      // 29a: invokespecial aV.<init> ()V
+      // 29d: astore 12
+      // 29f: aload 0
+      // 2a0: getfield FR.x Ljava/util/HashMap;
+      // 2a3: iload 11
+      // 2a5: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 2a8: aload 12
+      // 2aa: invokevirtual java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      // 2ad: pop
+      // 2ae: bipush 0
+      // 2af: istore 13
+      // 2b1: aload 6
+      // 2b3: ifnonnull 2c0
+      // 2b6: iinc 13 1
+      // 2b9: goto 2c0
+      // 2bc: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 2bf: athrow
+      // 2c0: iload 13
+      // 2c2: sipush 19552
+      // 2c5: ldc2_w 2534144807940103279
+      // 2c8: invokestatic FR.a (IJ)I
+      // 2cb: if_icmplt 2b6
+      // 2ce: goto 2d8
+      // 2d1: astore 12
+      // 2d3: aload 12
+      // 2d5: invokevirtual java/lang/Exception.printStackTrace ()V
+      // 2d8: getstatic Bg_2.A I
+      // 2db: getstatic Bg_2.Z I
+      // 2de: if_icmpne 2f7
+      // 2e1: getstatic java/lang/System.out Ljava/io/PrintStream;
+      // 2e4: sipush -15728
+      // 2e7: sipush 13435
+      // 2ea: invokestatic FR.a (II)Ljava/lang/String;
+      // 2ed: invokevirtual java/io/PrintStream.println (Ljava/lang/String;)V
+      // 2f0: goto 2f7
+      // 2f3: invokestatic FR.a (Lorg/pcap4j/core/PcapNativeException;)Lorg/pcap4j/core/PcapNativeException;
+      // 2f6: athrow
+      // 2f7: return
+   }
 
-                                        } while (var12_16 < FR.a(22102, 161573514968893019L));
-                                        break block63;
-                                    }
-                                    catch (Exception var10_12) {
-                                        try {
-                                            var10_12.printStackTrace();
-                                            if (var6_8 != null) break block63;
-lbl133:
-                                            // 2 sources
+   void B() {
+      int var1 = 0;
 
-                                            v3 = var7_6.getSyn();
-                                        }
-                                        catch (PcapNativeException v18) {
-                                            throw FR.a(v18);
-                                        }
-                                    }
-                                }
-                                if (var6_8 == null) break block64;
-                                try {
-                                    block77: {
-                                        if (!v3) break block64;
-                                        break block77;
-                                        catch (PcapNativeException v19) {
-                                            throw FR.a(v19);
-                                        }
-                                    }
-                                    v3 = var7_6.getAck();
-                                }
-                                catch (PcapNativeException v20) {
-                                    throw FR.a(v20);
-                                }
-                            }
-                            if (var4_4.getPayload() == null) break block63;
-                            var9_9 = var7_6.getSequenceNumber() + var8_7.length;
-                            v21 = this.b;
-                            v22 = var9_9;
-                            if (var6_8 == null) break block65;
-                            try {
-                                block78: {
-                                    if (v21.containsKey(v22)) break block66;
-                                    break block78;
-                                    catch (PcapNativeException v23) {
-                                        throw FR.a(v23);
-                                    }
-                                }
-                                this.b.put(var9_9, var4_4);
-                            }
-                            catch (PcapNativeException v24) {
-                                throw FR.a(v24);
-                            }
-                        }
-                        v21 = this.O;
-                        v22 = var9_9;
-                    }
-                    v21.put(v22, var4_4);
-                    var10_13 = this.f(this.d, var2_2.getSrcAddr(), var3_3.getDstAddr(), (Short)var7_6.getDstPort().value(), var3_3.getSrcAddr(), (Short)var7_6.getSrcPort().value(), var9_9, this.p);
-                    var11_15 = var7_6.getSequenceNumber();
-                    try {
-                        try {
-                            v25 = (int)this.x.containsKey(var11_15);
-                            if (var6_8 == null) break block67;
-                            if (v25 != 0) break block68;
-                        }
-                        catch (PcapNativeException v26) {
-                            throw FR.a(v26);
-                        }
-                        var12_17 = new aV();
-                        this.x.put(var11_15, var12_17);
-                        var13_20 = 0;
-                        try {
-                            if (var6_8 == null) {
-                                while (true) {
-                                    ++var13_20;
-                                    continue;
-                                    break;
-                                }
-                            }
-                        }
-                        catch (PcapNativeException v27) {
-                            throw FR.a(v27);
-                        }
-                        if (var13_20 < FR.a(19552, 2534144807940103279L)) ** continue;
-                    }
-                    catch (Exception var12_18) {
-                        var12_18.printStackTrace();
-                    }
-                }
-                v25 = bg_0.A;
+      while (true) {
+         var1++;
+
+         try {
+            Thread.sleep(1L);
+         } catch (InterruptedException var8) {
+            var8.printStackTrace();
+         }
+
+         byte var2 = 3;
+         aV var3 = new aV();
+         this.x.put(Integer.valueOf(var2), var3);
+         Packet var4 = Y(this.L, this.u + a(28386, 1027342367398117097L) * var1, new byte[a(24099, 5359861936110964258L)]);
+
+         try {
+            this.K.sendPacket(var4);
+            System.out.println(a(-15727, -10382) + var4.getRawData().length);
+         } catch (PcapNativeException var6) {
+            var6.printStackTrace();
+         } catch (NotOpenException var7) {
+            var7.printStackTrace();
+         }
+      }
+   }
+
+   static Packet Y(Packet var0, int var1, byte[] var2) {
+      Packet var4 = null;
+      EthernetPacket var5 = (EthernetPacket)var0;
+      EthernetPacket.EthernetHeader var6 = var5.getHeader();
+      IpV4Packet var7 = (IpV4Packet)var5.getPayload();
+      IpV4Packet.IpV4Header var8 = var7.getHeader();
+      TcpPacket var9 = (TcpPacket)var7.getPayload();
+      TcpPacket.TcpHeader var10 = var9.getHeader();
+      String[] var10000 = QI.N();
+      short var11 = var10.getSrcPort().value();
+      short var12 = var10.getDstPort().value();
+      String[] var3 = var10000;
+      TcpPacket.Builder var13 = new TcpPacket.Builder();
+      if (var3 != null) {
+         if (var9.getPayload() != null) {
+            var13.payloadBuilder(new UnknownPacket.Builder().rawData(var2));
+         }
+
+         var13.correctChecksumAtBuild(true);
+         var13.correctLengthAtBuild(true);
+         var13.paddingAtBuild(true);
+         var13.ack(true);
+         var13.acknowledgmentNumber(var10.getAcknowledgmentNumber());
+         var13.checksum(var10.getChecksum());
+         var13.dataOffset(var10.getDataOffset());
+         var13.dstAddr(var8.getDstAddr());
+         var13.dstPort(new TcpPort((short)var12, ""));
+         var13.fin(var10.getFin());
+         var13.options(var10.getOptions());
+         var13.padding(var10.getPadding());
+         var13.psh(var10.getPsh());
+         var13.reserved(var10.getReserved());
+         var13.rst(var10.getRst());
+         var13.sequenceNumber(var1);
+         var13.srcAddr(var8.getSrcAddr());
+         var13.srcPort(new TcpPort((short)var11, ""));
+         var13.syn(var10.getSyn());
+         var13.urg(var10.getUrg());
+         var13.urgentPointer(var10.getUrgentPointer());
+         var13.window(var10.getWindow());
+      }
+
+      IpV4Packet.Builder var14 = new IpV4Packet.Builder();
+      var14.correctChecksumAtBuild(true);
+      var14.correctLengthAtBuild(true);
+      var14.paddingAtBuild(true);
+      var14.dstAddr(var8.getDstAddr());
+      var14.fragmentOffset((short)0);
+      var14.headerChecksum(var8.getHeaderChecksum());
+      var14.identification(var8.getIdentification());
+      var14.ihl((byte)5);
+      var14.moreFragmentFlag(var8.getMoreFragmentFlag());
+      var14.options(var8.getOptions());
+      var14.padding(var8.getPadding());
+      var14.protocol(IpNumber.TCP);
+      var14.reservedFlag(var8.getReservedFlag());
+      var14.srcAddr(var8.getSrcAddr());
+      var14.tos(IpV4Rfc1349Tos.newInstance((byte)0));
+      var14.totalLength((short)a(14128, 3302240601966602041L));
+      var14.ttl((byte)a(25108, 1795155023343366679L));
+      var14.version(IpVersion.IPV4);
+      var14.payloadBuilder(var13);
+      EthernetPacket.Builder var15 = new EthernetPacket.Builder();
+      var15.dstAddr(var6.getDstAddr()).srcAddr(var6.getSrcAddr()).type(EtherType.IPV4).payloadBuilder(var14).paddingAtBuild(true);
+      var4 = var15.build();
+      if (var3 == null) {
+         com.ky_4.K(new String[1]);
+      }
+
+      return var4;
+   }
+
+   Packet a(Packet var1, int var2) {
+      Packet var4 = null;
+      EthernetPacket var5 = (EthernetPacket)var1;
+      EthernetPacket.EthernetHeader var6 = var5.getHeader();
+      IpV4Packet var7 = (IpV4Packet)var5.getPayload();
+      IpV4Packet.IpV4Header var8 = var7.getHeader();
+      TcpPacket var9 = (TcpPacket)var7.getPayload();
+      TcpPacket.TcpHeader var10 = var9.getHeader();
+      QI.N();
+      TcpPacket.Builder var11 = new TcpPacket.Builder();
+      var11.payloadBuilder(new UnknownPacket.Builder().rawData(var9.getPayload().getRawData()));
+      var11.correctChecksumAtBuild(true);
+      var11.correctLengthAtBuild(true);
+      var11.paddingAtBuild(true);
+      var11.ack(true);
+      var11.acknowledgmentNumber(var10.getAcknowledgmentNumber());
+      var11.checksum(var10.getChecksum());
+      var11.dataOffset(var10.getDataOffset());
+      var11.dstAddr(var8.getDstAddr());
+      var11.dstPort(new TcpPort(var10.getDstPort().value(), ""));
+      var11.fin(var10.getFin());
+      var11.options(var10.getOptions());
+      var11.padding(var10.getPadding());
+      var11.psh(var10.getPsh());
+      var11.reserved(var10.getReserved());
+      var11.rst(var10.getRst());
+      var11.sequenceNumber(var2);
+      var11.srcAddr(var8.getSrcAddr());
+      var11.srcPort(new TcpPort(var10.getSrcPort().value(), ""));
+      var11.syn(var10.getSyn());
+      var11.urg(var10.getUrg());
+      var11.urgentPointer(var10.getUrgentPointer());
+      var11.window(var10.getWindow());
+      IpV4Packet.Builder var12 = new IpV4Packet.Builder();
+      var12.correctChecksumAtBuild(true);
+      var12.correctLengthAtBuild(true);
+      var12.paddingAtBuild(true);
+      var12.dstAddr(var8.getDstAddr());
+      var12.fragmentOffset((short)0);
+      var12.headerChecksum(var8.getHeaderChecksum());
+      var12.identification(var8.getIdentification());
+      var12.ihl((byte)5);
+      var12.moreFragmentFlag(var8.getMoreFragmentFlag());
+      var12.options(var8.getOptions());
+      var12.padding(var8.getPadding());
+      var12.protocol(IpNumber.TCP);
+      var12.reservedFlag(var8.getReservedFlag());
+      var12.srcAddr(var8.getSrcAddr());
+      var12.tos(IpV4Rfc1349Tos.newInstance((byte)0));
+      var12.totalLength((short)a(14128, 3302240601966602041L));
+      var12.ttl((byte)a(9447, 6315362085436749024L));
+      var12.version(IpVersion.IPV4);
+      var12.payloadBuilder(var11);
+      EthernetPacket.Builder var13 = new EthernetPacket.Builder();
+      var13.dstAddr(var6.getDstAddr()).srcAddr(var6.getSrcAddr()).type(EtherType.IPV4).payloadBuilder(var12).paddingAtBuild(true);
+      var4 = var13.build();
+      if (com.ky_4.F() != null) {
+         QI.p(new String[1]);
+      }
+
+      return var4;
+   }
+
+   Packet f(MacAddress var1, MacAddress var2, Inet4Address var3, short var4, Inet4Address var5, short var6, int var7, int var8) {
+      TcpPacket.Builder var9 = new TcpPacket.Builder();
+      var9.correctChecksumAtBuild(true);
+      var9.correctLengthAtBuild(true);
+      var9.paddingAtBuild(true);
+      var9.ack(true);
+      var9.acknowledgmentNumber(var7);
+      var9.dataOffset((byte)5);
+      var9.dstAddr(var5);
+      var9.dstPort(new TcpPort(var6, ""));
+      var9.psh(false);
+      var9.reserved((byte)0);
+      var9.rst(false);
+      var9.sequenceNumber(var8);
+      var9.srcAddr(var3);
+      var9.srcPort(new TcpPort(var4, ""));
+      var9.syn(false);
+      var9.urg(false);
+      var9.window((short)a(7403, 2878021800271105255L));
+      IpV4Packet.Builder var10 = new IpV4Packet.Builder();
+      var10.correctChecksumAtBuild(true);
+      var10.correctLengthAtBuild(true);
+      var10.paddingAtBuild(true);
+      var10.dstAddr(var5);
+      var10.dontFragmentFlag(true);
+      var10.fragmentOffset((short)0);
+      short var11 = (short)Math.abs(this.t.nextInt(a(20504, 6098610844995420176L)));
+      var10.identification(var11);
+      var10.ihl((byte)5);
+      var10.protocol(IpNumber.TCP);
+      var10.srcAddr(var3);
+      var10.tos(IpV4Rfc1349Tos.newInstance((byte)0));
+      var10.totalLength((short)a(19839, 8143512145391689085L));
+      var10.ttl((byte)a(14128, 3302240601966602041L));
+      var10.version(IpVersion.IPV4);
+      var10.payloadBuilder(var9);
+      EthernetPacket.Builder var12 = new EthernetPacket.Builder();
+      var12.dstAddr(var2).srcAddr(var1).type(EtherType.IPV4).payloadBuilder(var10).paddingAtBuild(true);
+      EthernetPacket var13 = var12.build();
+      IpV4Packet var14 = var10.build();
+      TcpPacket var15 = var9.build();
+      this.a.add(var11);
+      return var13;
+   }
+
+   public InetAddress q() {
+      return this.U;
+   }
+
+   public void w(InetAddress var1) {
+      this.U = var1;
+   }
+
+   public int c() {
+      return this.k;
+   }
+
+   public void o(int var1) {
+      this.k = var1;
+   }
+
+   public int A() {
+      return this.H;
+   }
+
+   public void l(int var1) {
+      this.H = var1;
+   }
+
+   private static PcapNativeException a(PcapNativeException var0) {
+      return var0;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var15 = new String[2];
+      int var13 = 0;
+      String var12 = "危遏櫭抁Ù\u0007弣吰杠勻税櫉抹";
+      int var14 = "危遏櫭抁Ù\u0007弣吰杠勻税櫉抹".length();
+      char var11 = 5;
+      int var10 = -1;
+
+      while (true) {
+         char[] var10002;
+         label56: {
+            char[] var10003 = var12.substring(++var10, var10 + var11).toCharArray();
+            int var10004 = var10003.length;
+            int var16 = 0;
+            byte var31 = 124;
+            var10002 = var10003;
+            int var19 = var10004;
+            byte var36;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var36 = 124;
+               var10006 = var16;
+            } else {
+               var31 = 124;
+               var19 = var10004;
+               if (var10004 <= var16) {
+                  break label56;
+               }
+
+               var10005 = var10003;
+               var36 = 124;
+               var10006 = var16;
             }
-            try {
-                if (v25 == bg_0.Z) {
-                    System.out.println("开启服务端模拟");
-                }
-            }
-            catch (PcapNativeException v28) {
-                throw FR.a(v28);
-            }
-        }
-    }
-
-    void B() {
-        int n10 = 0;
-        while (true) {
-            ++n10;
-            try {
-                Thread.sleep(1L);
-            }
-            catch (InterruptedException interruptedException) {
-                interruptedException.printStackTrace();
-            }
-            int n11 = 3;
-            aV aV2 = new aV();
-            this.x.put(n11, aV2);
-            Packet packet = FR.Y(this.L, this.u + FR.a(28386, 1027342367398117097L) * n10, new byte[FR.a(24099, 5359861936110964258L)]);
-            try {
-                this.K.sendPacket(packet);
-                System.out.println("发送模拟 " + packet.getRawData().length);
-                continue;
-            }
-            catch (PcapNativeException pcapNativeException) {
-                pcapNativeException.printStackTrace();
-                continue;
-            }
-            catch (NotOpenException notOpenException) {
-                notOpenException.printStackTrace();
-                continue;
-            }
-            break;
-        }
-    }
-
-    static Packet Y(Packet packet, int n10, byte[] byArray) {
-        EthernetPacket ethernetPacket = null;
-        EthernetPacket ethernetPacket2 = (EthernetPacket)packet;
-        EthernetPacket.EthernetHeader ethernetHeader = ethernetPacket2.getHeader();
-        IpV4Packet ipV4Packet = (IpV4Packet)ethernetPacket2.getPayload();
-        IpV4Packet.IpV4Header ipV4Header = ipV4Packet.getHeader();
-        TcpPacket tcpPacket = (TcpPacket)ipV4Packet.getPayload();
-        TcpPacket.TcpHeader tcpHeader = tcpPacket.getHeader();
-        short s2 = (Short)tcpHeader.getSrcPort().value();
-        short s3 = (Short)tcpHeader.getDstPort().value();
-        String[] stringArray = QI.N();
-        TcpPacket.Builder builder = new TcpPacket.Builder();
-        if (stringArray != null) {
-            if (tcpPacket.getPayload() != null) {
-                builder.payloadBuilder(new UnknownPacket.Builder().rawData(byArray));
-            }
-            builder.correctChecksumAtBuild(true);
-            builder.correctLengthAtBuild(true);
-            builder.paddingAtBuild(true);
-            builder.ack(true);
-            builder.acknowledgmentNumber(tcpHeader.getAcknowledgmentNumber());
-            builder.checksum(tcpHeader.getChecksum());
-            builder.dataOffset(tcpHeader.getDataOffset());
-            builder.dstAddr(ipV4Header.getDstAddr());
-            builder.dstPort(new TcpPort(s3, ""));
-            builder.fin(tcpHeader.getFin());
-            builder.options(tcpHeader.getOptions());
-            builder.padding(tcpHeader.getPadding());
-            builder.psh(tcpHeader.getPsh());
-            builder.reserved(tcpHeader.getReserved());
-            builder.rst(tcpHeader.getRst());
-            builder.sequenceNumber(n10);
-            builder.srcAddr(ipV4Header.getSrcAddr());
-            builder.srcPort(new TcpPort(s2, ""));
-            builder.syn(tcpHeader.getSyn());
-            builder.urg(tcpHeader.getUrg());
-            builder.urgentPointer(tcpHeader.getUrgentPointer());
-            builder.window(tcpHeader.getWindow());
-        }
-        IpV4Packet.Builder builder2 = new IpV4Packet.Builder();
-        builder2.correctChecksumAtBuild(true);
-        builder2.correctLengthAtBuild(true);
-        builder2.paddingAtBuild(true);
-        builder2.dstAddr(ipV4Header.getDstAddr());
-        builder2.fragmentOffset((short)0);
-        builder2.headerChecksum(ipV4Header.getHeaderChecksum());
-        builder2.identification(ipV4Header.getIdentification());
-        builder2.ihl((byte)5);
-        builder2.moreFragmentFlag(ipV4Header.getMoreFragmentFlag());
-        builder2.options(ipV4Header.getOptions());
-        builder2.padding(ipV4Header.getPadding());
-        builder2.protocol(IpNumber.TCP);
-        builder2.reservedFlag(ipV4Header.getReservedFlag());
-        builder2.srcAddr(ipV4Header.getSrcAddr());
-        builder2.tos(IpV4Rfc1349Tos.newInstance((byte)0));
-        builder2.totalLength((short)FR.a(14128, 3302240601966602041L));
-        builder2.ttl((byte)FR.a(25108, 1795155023343366679L));
-        builder2.version(IpVersion.IPV4);
-        builder2.payloadBuilder(builder);
-        EthernetPacket.Builder builder3 = new EthernetPacket.Builder();
-        builder3.dstAddr(ethernetHeader.getDstAddr()).srcAddr(ethernetHeader.getSrcAddr()).type(EtherType.IPV4).payloadBuilder(builder2).paddingAtBuild(true);
-        ethernetPacket = builder3.build();
-        if (stringArray == null) {
-            ky_2.K(new String[1]);
-        }
-        return ethernetPacket;
-    }
-
-    Packet a(Packet packet, int n10) {
-        EthernetPacket ethernetPacket = null;
-        EthernetPacket ethernetPacket2 = (EthernetPacket)packet;
-        EthernetPacket.EthernetHeader ethernetHeader = ethernetPacket2.getHeader();
-        IpV4Packet ipV4Packet = (IpV4Packet)ethernetPacket2.getPayload();
-        IpV4Packet.IpV4Header ipV4Header = ipV4Packet.getHeader();
-        TcpPacket tcpPacket = (TcpPacket)ipV4Packet.getPayload();
-        TcpPacket.TcpHeader tcpHeader = tcpPacket.getHeader();
-        String[] stringArray = QI.N();
-        TcpPacket.Builder builder = new TcpPacket.Builder();
-        builder.payloadBuilder(new UnknownPacket.Builder().rawData(tcpPacket.getPayload().getRawData()));
-        builder.correctChecksumAtBuild(true);
-        builder.correctLengthAtBuild(true);
-        builder.paddingAtBuild(true);
-        builder.ack(true);
-        builder.acknowledgmentNumber(tcpHeader.getAcknowledgmentNumber());
-        builder.checksum(tcpHeader.getChecksum());
-        builder.dataOffset(tcpHeader.getDataOffset());
-        builder.dstAddr(ipV4Header.getDstAddr());
-        builder.dstPort(new TcpPort((Short)tcpHeader.getDstPort().value(), ""));
-        builder.fin(tcpHeader.getFin());
-        builder.options(tcpHeader.getOptions());
-        builder.padding(tcpHeader.getPadding());
-        builder.psh(tcpHeader.getPsh());
-        builder.reserved(tcpHeader.getReserved());
-        builder.rst(tcpHeader.getRst());
-        builder.sequenceNumber(n10);
-        builder.srcAddr(ipV4Header.getSrcAddr());
-        builder.srcPort(new TcpPort((Short)tcpHeader.getSrcPort().value(), ""));
-        builder.syn(tcpHeader.getSyn());
-        String[] stringArray2 = stringArray;
-        builder.urg(tcpHeader.getUrg());
-        builder.urgentPointer(tcpHeader.getUrgentPointer());
-        builder.window(tcpHeader.getWindow());
-        IpV4Packet.Builder builder2 = new IpV4Packet.Builder();
-        builder2.correctChecksumAtBuild(true);
-        builder2.correctLengthAtBuild(true);
-        builder2.paddingAtBuild(true);
-        builder2.dstAddr(ipV4Header.getDstAddr());
-        builder2.fragmentOffset((short)0);
-        builder2.headerChecksum(ipV4Header.getHeaderChecksum());
-        builder2.identification(ipV4Header.getIdentification());
-        builder2.ihl((byte)5);
-        builder2.moreFragmentFlag(ipV4Header.getMoreFragmentFlag());
-        builder2.options(ipV4Header.getOptions());
-        builder2.padding(ipV4Header.getPadding());
-        builder2.protocol(IpNumber.TCP);
-        builder2.reservedFlag(ipV4Header.getReservedFlag());
-        builder2.srcAddr(ipV4Header.getSrcAddr());
-        builder2.tos(IpV4Rfc1349Tos.newInstance((byte)0));
-        builder2.totalLength((short)FR.a(14128, 3302240601966602041L));
-        builder2.ttl((byte)FR.a(9447, 6315362085436749024L));
-        builder2.version(IpVersion.IPV4);
-        builder2.payloadBuilder(builder);
-        EthernetPacket.Builder builder3 = new EthernetPacket.Builder();
-        builder3.dstAddr(ethernetHeader.getDstAddr()).srcAddr(ethernetHeader.getSrcAddr()).type(EtherType.IPV4).payloadBuilder(builder2).paddingAtBuild(true);
-        ethernetPacket = builder3.build();
-        if (ky_2.F() != null) {
-            QI.p(new String[1]);
-        }
-        return ethernetPacket;
-    }
-
-    Packet f(MacAddress macAddress, MacAddress macAddress2, Inet4Address inet4Address, short s2, Inet4Address inet4Address2, short s3, int n10, int n11) {
-        TcpPacket.Builder builder = new TcpPacket.Builder();
-        builder.correctChecksumAtBuild(true);
-        builder.correctLengthAtBuild(true);
-        builder.paddingAtBuild(true);
-        builder.ack(true);
-        builder.acknowledgmentNumber(n10);
-        builder.dataOffset((byte)5);
-        builder.dstAddr(inet4Address2);
-        builder.dstPort(new TcpPort(s3, ""));
-        builder.psh(false);
-        builder.reserved((byte)0);
-        builder.rst(false);
-        builder.sequenceNumber(n11);
-        builder.srcAddr(inet4Address);
-        builder.srcPort(new TcpPort(s2, ""));
-        builder.syn(false);
-        builder.urg(false);
-        builder.window((short)FR.a(7403, 2878021800271105255L));
-        IpV4Packet.Builder builder2 = new IpV4Packet.Builder();
-        builder2.correctChecksumAtBuild(true);
-        builder2.correctLengthAtBuild(true);
-        builder2.paddingAtBuild(true);
-        builder2.dstAddr(inet4Address2);
-        builder2.dontFragmentFlag(true);
-        builder2.fragmentOffset((short)0);
-        short s4 = (short)Math.abs(this.t.nextInt(FR.a(20504, 6098610844995420176L)));
-        builder2.identification(s4);
-        builder2.ihl((byte)5);
-        builder2.protocol(IpNumber.TCP);
-        builder2.srcAddr(inet4Address);
-        builder2.tos(IpV4Rfc1349Tos.newInstance((byte)0));
-        builder2.totalLength((short)FR.a(19839, 8143512145391689085L));
-        builder2.ttl((byte)FR.a(14128, 3302240601966602041L));
-        builder2.version(IpVersion.IPV4);
-        builder2.payloadBuilder(builder);
-        EthernetPacket.Builder builder3 = new EthernetPacket.Builder();
-        builder3.dstAddr(macAddress2).srcAddr(macAddress).type(EtherType.IPV4).payloadBuilder(builder2).paddingAtBuild(true);
-        EthernetPacket ethernetPacket = builder3.build();
-        IpV4Packet ipV4Packet = builder2.build();
-        TcpPacket tcpPacket = builder.build();
-        this.a.add(s4);
-        return ethernetPacket;
-    }
-
-    public InetAddress q() {
-        return this.U;
-    }
-
-    public void w(InetAddress inetAddress) {
-        this.U = inetAddress;
-    }
-
-    public int c() {
-        return this.k;
-    }
-
-    public void o(int n10) {
-        this.k = n10;
-    }
-
-    public int A() {
-        return this.H;
-    }
-
-    public void l(int n10) {
-        this.H = n10;
-    }
-
-    private static PcapNativeException a(PcapNativeException pcapNativeException) {
-        return pcapNativeException;
-    }
-
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block24: {
-            block23: {
-                block22: {
-                    block21: {
-                        var15 = new String[2];
-                        var13_1 = 0;
-                        var12_2 = "\u5371\u904f\u6aed\u6281\u00d9\u0007\u5f23\u5430\u6760\u52fb\u7a0e\u6ac9\u62b9";
-                        var14_3 = "\u5371\u904f\u6aed\u6281\u00d9\u0007\u5f23\u5430\u6760\u52fb\u7a0e\u6ac9\u62b9".length();
-                        var11_4 = 5;
-                        var10_5 = -1;
-lbl7:
-                        // 2 sources
-
-                        while (true) {
-                            continue;
-                            break;
-                        }
-lbl9:
-                        // 1 sources
-
-                        while (true) {
-                            var15[var13_1++] = new String(v0).intern();
-                            if ((var10_5 += var11_4) < var14_3) {
-                                var11_4 = var12_2.charAt(var10_5);
-                                ** continue;
-                            }
-                            break block21;
-                            break;
-                        }
-                        v1 = ++var10_5;
-                        v2 = var12_2.substring(v1, v1 + var11_4).toCharArray();
-                        v3 = v2.length;
-                        var16_6 = 0;
-                        v4 = 124;
-                        v5 = v2;
-                        v6 = v3;
-                        if (v3 > 1) ** GOTO lbl67
-                        do {
-                            v7 = v4;
-                            v5 = v5;
-                            v8 = v5;
-                            v9 = v4;
-                            v10 = var16_6;
-                            while (true) {
-                                switch (var16_6 % 7) {
-                                    case 0: {
-                                        v11 = 39;
-                                        break;
-                                    }
-                                    case 1: {
-                                        v11 = 82;
-                                        break;
-                                    }
-                                    case 2: {
-                                        v11 = 30;
-                                        break;
-                                    }
-                                    case 3: {
-                                        v11 = 47;
-                                        break;
-                                    }
-                                    case 4: {
-                                        v11 = 113;
-                                        break;
-                                    }
-                                    case 5: {
-                                        v11 = 20;
-                                        break;
-                                    }
-                                    default: {
-                                        v11 = 104;
-                                    }
-                                }
-                                v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                                ++var16_6;
-                                v4 = v7;
-                                if (v7 != 0) break;
-                                v7 = v4;
-                                v5 = v5;
-                                v10 = v4;
-                                v8 = v5;
-                                v9 = v4;
-                            }
-lbl67:
-                            // 2 sources
-
-                            v0 = v5;
-                            v6 = v6;
-                        } while (v6 > var16_6);
-                        ** while (true)
-                    }
-                    FR.c = var15;
-                    FR.e = new String[2];
-                    var2_7 = 3048035834704825174L;
-                    var8_8 = new long[13];
-                    var5_9 = 0;
-                    var6_10 = "\u0092H\u0092\u001a\u00e1G0c$\u0007\u00b8\u00e4\u00ee\u0095+\u00a9\u00c0>\u0081X\u009d)l[\u00d0\u001fFk)rt\u00b9_j@\u00be\u00f8\u0095\u0097'\u00b5\u000b\u00baO\u00e1\u00ad\u001bsf\u00bb\u000fy:\u00ec\u00ac-\u00a7\u00d29\u00ba\u008d<\u00b8\u008d\u00fb\u00e8\u00c2\u00fc\u00cd\u001d\u00b9\u0001\u00f6\u00dbe\u0080,\u0018\u0096\u001fn`\"\u00c4=6\u0000`";
-                    var7_11 = "\u0092H\u0092\u001a\u00e1G0c$\u0007\u00b8\u00e4\u00ee\u0095+\u00a9\u00c0>\u0081X\u009d)l[\u00d0\u001fFk)rt\u00b9_j@\u00be\u00f8\u0095\u0097'\u00b5\u000b\u00baO\u00e1\u00ad\u001bsf\u00bb\u000fy:\u00ec\u00ac-\u00a7\u00d29\u00ba\u008d<\u00b8\u008d\u00fb\u00e8\u00c2\u00fc\u00cd\u001d\u00b9\u0001\u00f6\u00dbe\u0080,\u0018\u0096\u001fn`\"\u00c4=6\u0000`".length();
-                    var4_12 = 0;
-                    while (true) {
-                        var9_13 = var6_10.substring(var4_12, var4_12 += 8).getBytes("ISO-8859-1");
-                        v12 = var8_8;
-                        v13 = var5_9++;
-                        v14 = ((long)var9_13[0] & 255L) << 56 | ((long)var9_13[1] & 255L) << 48 | ((long)var9_13[2] & 255L) << 40 | ((long)var9_13[3] & 255L) << 32 | ((long)var9_13[4] & 255L) << 24 | ((long)var9_13[5] & 255L) << 16 | ((long)var9_13[6] & 255L) << 8 | (long)var9_13[7] & 255L;
-                        v15 = -1;
-                        break block22;
-                        break;
-                    }
-lbl90:
-                    // 1 sources
-
-                    while (true) {
-                        v12[v13] = v16;
-                        if (var4_12 < var7_11) ** continue;
-                        var6_10 = "\n\u00e6\u00ed\u00ca\u0081<7A\u00ff]\u00ea#\u0004S\u007f\u00f6";
-                        var7_11 = "\n\u00e6\u00ed\u00ca\u0081<7A\u00ff]\u00ea#\u0004S\u007f\u00f6".length();
-                        var4_12 = 0;
-                        while (true) {
-                            var9_13 = var6_10.substring(var4_12, var4_12 += 8).getBytes("ISO-8859-1");
-                            v12 = var8_8;
-                            v13 = var5_9++;
-                            v14 = ((long)var9_13[0] & 255L) << 56 | ((long)var9_13[1] & 255L) << 48 | ((long)var9_13[2] & 255L) << 40 | ((long)var9_13[3] & 255L) << 32 | ((long)var9_13[4] & 255L) << 24 | ((long)var9_13[5] & 255L) << 16 | ((long)var9_13[6] & 255L) << 8 | (long)var9_13[7] & 255L;
-                            v15 = 0;
-                            break block22;
-                            break;
-                        }
-                        break;
-                    }
-lbl103:
-                    // 1 sources
-
-                    while (true) {
-                        v12[v13] = v16;
-                        if (var4_12 < var7_11) ** continue;
-                        break block23;
-                        break;
-                    }
-                }
-                v16 = v14 ^ var2_7;
-                switch (v15) {
-                    default: {
-                        ** continue;
-                    }
-                    ** case 0:
-lbl114:
-                    // 1 sources
-
-                    ** continue;
-                }
-            }
-            FR.f = var8_8;
-            FR.g = new Integer[13];
-            break block24;
-lbl119:
-            // 1 sources
 
             while (true) {
-                continue;
-                break;
-            }
-        }
-        var0_14 = 7024049030228112637L;
-        ** while (true)
-        FR.h = 7024049030228112638L ^ var0_14;
-    }
+               char var50 = var10005[var10006];
+               byte var51;
+               switch (var16 % 7) {
+                  case 0:
+                     var51 = 39;
+                     break;
+                  case 1:
+                     var51 = 82;
+                     break;
+                  case 2:
+                     var51 = 30;
+                     break;
+                  case 3:
+                     var51 = 47;
+                     break;
+                  case 4:
+                     var51 = 113;
+                     break;
+                  case 5:
+                     var51 = 20;
+                     break;
+                  default:
+                     var51 = 104;
+               }
 
-    private static String a(int n10, int n11) {
-        int n12 = (n10 ^ 0xFFFFC291) & 0xFFFF;
-        if (e[n12] == null) {
-            int n13;
-            int n14;
-            char[] cArray = c[n12].toCharArray();
-            switch (cArray[0] & 0xFF) {
-                case 0: {
-                    n14 = 158;
-                    break;
-                }
-                case 1: {
-                    n14 = 85;
-                    break;
-                }
-                case 2: {
-                    n14 = 245;
-                    break;
-                }
-                case 3: {
-                    n14 = 243;
-                    break;
-                }
-                case 4: {
-                    n14 = 167;
-                    break;
-                }
-                case 5: {
-                    n14 = 35;
-                    break;
-                }
-                case 6: {
-                    n14 = 110;
-                    break;
-                }
-                case 7: {
-                    n14 = 53;
-                    break;
-                }
-                case 8: {
-                    n14 = 196;
-                    break;
-                }
-                case 9: {
-                    n14 = 28;
-                    break;
-                }
-                case 10: {
-                    n14 = 160;
-                    break;
-                }
-                case 11: {
-                    n14 = 84;
-                    break;
-                }
-                case 12: {
-                    n14 = 203;
-                    break;
-                }
-                case 13: {
-                    n14 = 141;
-                    break;
-                }
-                case 14: {
-                    n14 = 251;
-                    break;
-                }
-                case 15: {
-                    n14 = 189;
-                    break;
-                }
-                case 16: {
-                    n14 = 222;
-                    break;
-                }
-                case 17: {
-                    n14 = 64;
-                    break;
-                }
-                case 18: {
-                    n14 = 179;
-                    break;
-                }
-                case 19: {
-                    n14 = 109;
-                    break;
-                }
-                case 20: {
-                    n14 = 49;
-                    break;
-                }
-                case 21: {
-                    n14 = 205;
-                    break;
-                }
-                case 22: {
-                    n14 = 105;
-                    break;
-                }
-                case 23: {
-                    n14 = 238;
-                    break;
-                }
-                case 24: {
-                    n14 = 228;
-                    break;
-                }
-                case 25: {
-                    n14 = 74;
-                    break;
-                }
-                case 26: {
-                    n14 = 142;
-                    break;
-                }
-                case 27: {
-                    n14 = 98;
-                    break;
-                }
-                case 28: {
-                    n14 = 224;
-                    break;
-                }
-                case 29: {
-                    n14 = 71;
-                    break;
-                }
-                case 30: {
-                    n14 = 6;
-                    break;
-                }
-                case 31: {
-                    n14 = 221;
-                    break;
-                }
-                case 32: {
-                    n14 = 248;
-                    break;
-                }
-                case 33: {
-                    n14 = 117;
-                    break;
-                }
-                case 34: {
-                    n14 = 2;
-                    break;
-                }
-                case 35: {
-                    n14 = 133;
-                    break;
-                }
-                case 36: {
-                    n14 = 65;
-                    break;
-                }
-                case 37: {
-                    n14 = 180;
-                    break;
-                }
-                case 38: {
-                    n14 = 67;
-                    break;
-                }
-                case 39: {
-                    n14 = 130;
-                    break;
-                }
-                case 40: {
-                    n14 = 201;
-                    break;
-                }
-                case 41: {
-                    n14 = 44;
-                    break;
-                }
-                case 42: {
-                    n14 = 119;
-                    break;
-                }
-                case 43: {
-                    n14 = 1;
-                    break;
-                }
-                case 44: {
-                    n14 = 124;
-                    break;
-                }
-                case 45: {
-                    n14 = 94;
-                    break;
-                }
-                case 46: {
-                    n14 = 61;
-                    break;
-                }
-                case 47: {
-                    n14 = 93;
-                    break;
-                }
-                case 48: {
-                    n14 = 4;
-                    break;
-                }
-                case 49: {
-                    n14 = 181;
-                    break;
-                }
-                case 50: {
-                    n14 = 170;
-                    break;
-                }
-                case 51: {
-                    n14 = 129;
-                    break;
-                }
-                case 52: {
-                    n14 = 204;
-                    break;
-                }
-                case 53: {
-                    n14 = 101;
-                    break;
-                }
-                case 54: {
-                    n14 = 157;
-                    break;
-                }
-                case 55: {
-                    n14 = 103;
-                    break;
-                }
-                case 56: {
-                    n14 = 175;
-                    break;
-                }
-                case 57: {
-                    n14 = 11;
-                    break;
-                }
-                case 58: {
-                    n14 = 25;
-                    break;
-                }
-                case 59: {
-                    n14 = 62;
-                    break;
-                }
-                case 60: {
-                    n14 = 112;
-                    break;
-                }
-                case 61: {
-                    n14 = 164;
-                    break;
-                }
-                case 62: {
-                    n14 = 231;
-                    break;
-                }
-                case 63: {
-                    n14 = 146;
-                    break;
-                }
-                case 64: {
-                    n14 = 218;
-                    break;
-                }
-                case 65: {
-                    n14 = 92;
-                    break;
-                }
-                case 66: {
-                    n14 = 225;
-                    break;
-                }
-                case 67: {
-                    n14 = 14;
-                    break;
-                }
-                case 68: {
-                    n14 = 27;
-                    break;
-                }
-                case 69: {
-                    n14 = 36;
-                    break;
-                }
-                case 70: {
-                    n14 = 159;
-                    break;
-                }
-                case 71: {
-                    n14 = 113;
-                    break;
-                }
-                case 72: {
-                    n14 = 18;
-                    break;
-                }
-                case 73: {
-                    n14 = 138;
-                    break;
-                }
-                case 74: {
-                    n14 = 192;
-                    break;
-                }
-                case 75: {
-                    n14 = 42;
-                    break;
-                }
-                case 76: {
-                    n14 = 195;
-                    break;
-                }
-                case 77: {
-                    n14 = 144;
-                    break;
-                }
-                case 78: {
-                    n14 = 45;
-                    break;
-                }
-                case 79: {
-                    n14 = 216;
-                    break;
-                }
-                case 80: {
-                    n14 = 193;
-                    break;
-                }
-                case 81: {
-                    n14 = 127;
-                    break;
-                }
-                case 82: {
-                    n14 = 173;
-                    break;
-                }
-                case 83: {
-                    n14 = 229;
-                    break;
-                }
-                case 84: {
-                    n14 = 246;
-                    break;
-                }
-                case 85: {
-                    n14 = 128;
-                    break;
-                }
-                case 86: {
-                    n14 = 197;
-                    break;
-                }
-                case 87: {
-                    n14 = 200;
-                    break;
-                }
-                case 88: {
-                    n14 = 90;
-                    break;
-                }
-                case 89: {
-                    n14 = 86;
-                    break;
-                }
-                case 90: {
-                    n14 = 249;
-                    break;
-                }
-                case 91: {
-                    n14 = 70;
-                    break;
-                }
-                case 92: {
-                    n14 = 154;
-                    break;
-                }
-                case 93: {
-                    n14 = 17;
-                    break;
-                }
-                case 94: {
-                    n14 = 254;
-                    break;
-                }
-                case 95: {
-                    n14 = 210;
-                    break;
-                }
-                case 96: {
-                    n14 = 178;
-                    break;
-                }
-                case 97: {
-                    n14 = 43;
-                    break;
-                }
-                case 98: {
-                    n14 = 247;
-                    break;
-                }
-                case 99: {
-                    n14 = 151;
-                    break;
-                }
-                case 100: {
-                    n14 = 95;
-                    break;
-                }
-                case 101: {
-                    n14 = 69;
-                    break;
-                }
-                case 102: {
-                    n14 = 207;
-                    break;
-                }
-                case 103: {
-                    n14 = 165;
-                    break;
-                }
-                case 104: {
-                    n14 = 145;
-                    break;
-                }
-                case 105: {
-                    n14 = 155;
-                    break;
-                }
-                case 106: {
-                    n14 = 41;
-                    break;
-                }
-                case 107: {
-                    n14 = 108;
-                    break;
-                }
-                case 108: {
-                    n14 = 73;
-                    break;
-                }
-                case 109: {
-                    n14 = 212;
-                    break;
-                }
-                case 110: {
-                    n14 = 50;
-                    break;
-                }
-                case 111: {
-                    n14 = 46;
-                    break;
-                }
-                case 112: {
-                    n14 = 163;
-                    break;
-                }
-                case 113: {
-                    n14 = 217;
-                    break;
-                }
-                case 114: {
-                    n14 = 169;
-                    break;
-                }
-                case 115: {
-                    n14 = 199;
-                    break;
-                }
-                case 116: {
-                    n14 = 156;
-                    break;
-                }
-                case 117: {
-                    n14 = 37;
-                    break;
-                }
-                case 118: {
-                    n14 = 131;
-                    break;
-                }
-                case 119: {
-                    n14 = 75;
-                    break;
-                }
-                case 120: {
-                    n14 = 3;
-                    break;
-                }
-                case 121: {
-                    n14 = 55;
-                    break;
-                }
-                case 122: {
-                    n14 = 80;
-                    break;
-                }
-                case 123: {
-                    n14 = 242;
-                    break;
-                }
-                case 124: {
-                    n14 = 190;
-                    break;
-                }
-                case 125: {
-                    n14 = 60;
-                    break;
-                }
-                case 126: {
-                    n14 = 116;
-                    break;
-                }
-                case 127: {
-                    n14 = 72;
-                    break;
-                }
-                case 128: {
-                    n14 = 183;
-                    break;
-                }
-                case 129: {
-                    n14 = 152;
-                    break;
-                }
-                case 130: {
-                    n14 = 89;
-                    break;
-                }
-                case 131: {
-                    n14 = 123;
-                    break;
-                }
-                case 132: {
-                    n14 = 137;
-                    break;
-                }
-                case 133: {
-                    n14 = 134;
-                    break;
-                }
-                case 134: {
-                    n14 = 252;
-                    break;
-                }
-                case 135: {
-                    n14 = 176;
-                    break;
-                }
-                case 136: {
-                    n14 = 5;
-                    break;
-                }
-                case 137: {
-                    n14 = 107;
-                    break;
-                }
-                case 138: {
-                    n14 = 219;
-                    break;
-                }
-                case 139: {
-                    n14 = 32;
-                    break;
-                }
-                case 140: {
-                    n14 = 34;
-                    break;
-                }
-                case 141: {
-                    n14 = 202;
-                    break;
-                }
-                case 142: {
-                    n14 = 120;
-                    break;
-                }
-                case 143: {
-                    n14 = 31;
-                    break;
-                }
-                case 144: {
-                    n14 = 63;
-                    break;
-                }
-                case 145: {
-                    n14 = 22;
-                    break;
-                }
-                case 146: {
-                    n14 = 111;
-                    break;
-                }
-                case 147: {
-                    n14 = 166;
-                    break;
-                }
-                case 148: {
-                    n14 = 223;
-                    break;
-                }
-                case 149: {
-                    n14 = 48;
-                    break;
-                }
-                case 150: {
-                    n14 = 237;
-                    break;
-                }
-                case 151: {
-                    n14 = 241;
-                    break;
-                }
-                case 152: {
-                    n14 = 198;
-                    break;
-                }
-                case 153: {
-                    n14 = 250;
-                    break;
-                }
-                case 154: {
-                    n14 = 122;
-                    break;
-                }
-                case 155: {
-                    n14 = 76;
-                    break;
-                }
-                case 156: {
-                    n14 = 118;
-                    break;
-                }
-                case 157: {
-                    n14 = 81;
-                    break;
-                }
-                case 158: {
-                    n14 = 52;
-                    break;
-                }
-                case 159: {
-                    n14 = 39;
-                    break;
-                }
-                case 160: {
-                    n14 = 57;
-                    break;
-                }
-                case 161: {
-                    n14 = 56;
-                    break;
-                }
-                case 162: {
-                    n14 = 214;
-                    break;
-                }
-                case 163: {
-                    n14 = 99;
-                    break;
-                }
-                case 164: {
-                    n14 = 102;
-                    break;
-                }
-                case 165: {
-                    n14 = 66;
-                    break;
-                }
-                case 166: {
-                    n14 = 24;
-                    break;
-                }
-                case 167: {
-                    n14 = 143;
-                    break;
-                }
-                case 168: {
-                    n14 = 104;
-                    break;
-                }
-                case 169: {
-                    n14 = 255;
-                    break;
-                }
-                case 170: {
-                    n14 = 26;
-                    break;
-                }
-                case 171: {
-                    n14 = 13;
-                    break;
-                }
-                case 172: {
-                    n14 = 244;
-                    break;
-                }
-                case 173: {
-                    n14 = 172;
-                    break;
-                }
-                case 174: {
-                    n14 = 168;
-                    break;
-                }
-                case 175: {
-                    n14 = 162;
-                    break;
-                }
-                case 176: {
-                    n14 = 140;
-                    break;
-                }
-                case 177: {
-                    n14 = 233;
-                    break;
-                }
-                case 178: {
-                    n14 = 125;
-                    break;
-                }
-                case 179: {
-                    n14 = 88;
-                    break;
-                }
-                case 180: {
-                    n14 = 213;
-                    break;
-                }
-                case 181: {
-                    n14 = 100;
-                    break;
-                }
-                case 182: {
-                    n14 = 185;
-                    break;
-                }
-                case 183: {
-                    n14 = 58;
-                    break;
-                }
-                case 184: {
-                    n14 = 19;
-                    break;
-                }
-                case 185: {
-                    n14 = 106;
-                    break;
-                }
-                case 186: {
-                    n14 = 10;
-                    break;
-                }
-                case 187: {
-                    n14 = 239;
-                    break;
-                }
-                case 188: {
-                    n14 = 191;
-                    break;
-                }
-                case 189: {
-                    n14 = 97;
-                    break;
-                }
-                case 190: {
-                    n14 = 240;
-                    break;
-                }
-                case 191: {
-                    n14 = 115;
-                    break;
-                }
-                case 192: {
-                    n14 = 77;
-                    break;
-                }
-                case 193: {
-                    n14 = 235;
-                    break;
-                }
-                case 194: {
-                    n14 = 220;
-                    break;
-                }
-                case 195: {
-                    n14 = 59;
-                    break;
-                }
-                case 196: {
-                    n14 = 148;
-                    break;
-                }
-                case 197: {
-                    n14 = 227;
-                    break;
-                }
-                case 198: {
-                    n14 = 33;
-                    break;
-                }
-                case 199: {
-                    n14 = 8;
-                    break;
-                }
-                case 200: {
-                    n14 = 132;
-                    break;
-                }
-                case 201: {
-                    n14 = 114;
-                    break;
-                }
-                case 202: {
-                    n14 = 188;
-                    break;
-                }
-                case 203: {
-                    n14 = 78;
-                    break;
-                }
-                case 204: {
-                    n14 = 54;
-                    break;
-                }
-                case 205: {
-                    n14 = 139;
-                    break;
-                }
-                case 206: {
-                    n14 = 174;
-                    break;
-                }
-                case 207: {
-                    n14 = 150;
-                    break;
-                }
-                case 208: {
-                    n14 = 187;
-                    break;
-                }
-                case 209: {
-                    n14 = 149;
-                    break;
-                }
-                case 210: {
-                    n14 = 177;
-                    break;
-                }
-                case 211: {
-                    n14 = 9;
-                    break;
-                }
-                case 212: {
-                    n14 = 186;
-                    break;
-                }
-                case 213: {
-                    n14 = 7;
-                    break;
-                }
-                case 214: {
-                    n14 = 147;
-                    break;
-                }
-                case 215: {
-                    n14 = 29;
-                    break;
-                }
-                case 216: {
-                    n14 = 38;
-                    break;
-                }
-                case 217: {
-                    n14 = 121;
-                    break;
-                }
-                case 218: {
-                    n14 = 79;
-                    break;
-                }
-                case 219: {
-                    n14 = 136;
-                    break;
-                }
-                case 220: {
-                    n14 = 194;
-                    break;
-                }
-                case 221: {
-                    n14 = 15;
-                    break;
-                }
-                case 222: {
-                    n14 = 153;
-                    break;
-                }
-                case 223: {
-                    n14 = 253;
-                    break;
-                }
-                case 224: {
-                    n14 = 184;
-                    break;
-                }
-                case 225: {
-                    n14 = 51;
-                    break;
-                }
-                case 226: {
-                    n14 = 230;
-                    break;
-                }
-                case 227: {
-                    n14 = 30;
-                    break;
-                }
-                case 228: {
-                    n14 = 82;
-                    break;
-                }
-                case 229: {
-                    n14 = 96;
-                    break;
-                }
-                case 230: {
-                    n14 = 211;
-                    break;
-                }
-                case 231: {
-                    n14 = 68;
-                    break;
-                }
-                case 232: {
-                    n14 = 209;
-                    break;
-                }
-                case 233: {
-                    n14 = 21;
-                    break;
-                }
-                case 234: {
-                    n14 = 171;
-                    break;
-                }
-                case 235: {
-                    n14 = 215;
-                    break;
-                }
-                case 236: {
-                    n14 = 232;
-                    break;
-                }
-                case 237: {
-                    n14 = 23;
-                    break;
-                }
-                case 238: {
-                    n14 = 16;
-                    break;
-                }
-                case 239: {
-                    n14 = 226;
-                    break;
-                }
-                case 240: {
-                    n14 = 182;
-                    break;
-                }
-                case 241: {
-                    n14 = 206;
-                    break;
-                }
-                case 242: {
-                    n14 = 47;
-                    break;
-                }
-                case 243: {
-                    n14 = 126;
-                    break;
-                }
-                case 244: {
-                    n14 = 208;
-                    break;
-                }
-                case 245: {
-                    n14 = 87;
-                    break;
-                }
-                case 246: {
-                    n14 = 20;
-                    break;
-                }
-                case 247: {
-                    n14 = 91;
-                    break;
-                }
-                case 248: {
-                    n14 = 0;
-                    break;
-                }
-                case 249: {
-                    n14 = 161;
-                    break;
-                }
-                case 250: {
-                    n14 = 135;
-                    break;
-                }
-                case 251: {
-                    n14 = 83;
-                    break;
-                }
-                case 252: {
-                    n14 = 236;
-                    break;
-                }
-                case 253: {
-                    n14 = 234;
-                    break;
-                }
-                case 254: {
-                    n14 = 12;
-                    break;
-                }
-                default: {
-                    n14 = 40;
-                }
-            }
-            int n15 = n14;
-            int n16 = (n11 & 0xFF) - n15;
-            if (n16 < 0) {
-                n16 += 256;
-            }
-            if ((n13 = ((n11 & 0xFFFF) >>> 8) - n15) < 0) {
-                n13 += 256;
-            }
-            int n17 = 0;
-            while (n17 < cArray.length) {
-                int n18 = n17 % 2;
-                int n19 = n17;
-                char[] cArray2 = cArray;
-                char c2 = cArray[n19];
-                if (n18 == 0) {
-                    cArray2[n19] = (char)(c2 ^ n16);
-                    n16 = ((n16 >>> 3 | n16 << 5) ^ cArray[n17]) & 0xFF;
-                } else {
-                    cArray2[n19] = (char)(c2 ^ n13);
-                    n13 = ((n13 >>> 3 | n13 << 5) ^ cArray[n17]) & 0xFF;
-                }
-                ++n17;
-            }
-            FR.e[n12] = new String(cArray).intern();
-        }
-        return e[n12];
-    }
+               var10005[var10006] = (char)(var50 ^ var36 ^ var51);
+               var16++;
+               if (var31 == 0) {
+                  var10006 = var31;
+                  var10005 = var10002;
+                  var36 = var31;
+               } else {
+                  if (var19 <= var16) {
+                     break;
+                  }
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x500B;
-        if (g[n11] == null) {
-            FR.g[n11] = (int)(f[n11] ^ l2);
-        }
-        return g[n11];
-    }
+                  var10005 = var10002;
+                  var36 = var31;
+                  var10006 = var16;
+               }
+            }
+         }
+
+         String var33 = new String(var10002).intern();
+         int var21 = -1;
+         var15[var13++] = var33;
+         if ((var10 += var11) >= var14) {
+            c = var15;
+            e = new String[2];
+            long var2 = 3048035834704825174L;
+            long[] var8 = new long[13];
+            int var5 = 0;
+            String var6 = "\u0092H\u0092\u001aáG0c$\u0007¸äî\u0095+©À>\u0081X\u009d)l[Ð\u001fFk)rt¹_j@¾ø\u0095\u0097'µ\u000bºOá\u00ad\u001bsf»\u000fy:ì¬-§Ò9º\u008d<¸\u008dûèÂüÍ\u001d¹\u0001öÛe\u0080,\u0018\u0096\u001fn`\"Ä=6\u0000`";
+            int var7 = "\u0092H\u0092\u001aáG0c$\u0007¸äî\u0095+©À>\u0081X\u009d)l[Ð\u001fFk)rt¹_j@¾ø\u0095\u0097'µ\u000bºOá\u00ad\u001bsf»\u000fy:ì¬-§Ò9º\u008d<¸\u008dûèÂüÍ\u001d¹\u0001öÛe\u0080,\u0018\u0096\u001fn`\"Ä=6\u0000`"
+               .length();
+            byte var4 = 0;
+
+            label40:
+            while (true) {
+               var21 = var4;
+               var4 += 8;
+               byte[] var9 = var6.substring(var21, var4).getBytes("ISO-8859-1");
+               long[] var10000 = var8;
+               var21 = var5++;
+               long var28 = ((long)var9[0] & 255L) << 56
+                  | ((long)var9[1] & 255L) << 48
+                  | ((long)var9[2] & 255L) << 40
+                  | ((long)var9[3] & 255L) << 32
+                  | ((long)var9[4] & 255L) << 24
+                  | ((long)var9[5] & 255L) << 16
+                  | ((long)var9[6] & 255L) << 8
+                  | (long)var9[7] & 255L;
+               byte var34 = -1;
+
+               while (true) {
+                  long var41 = var28 ^ var2;
+                  switch (var34) {
+                     case 0:
+                        var10000[var21] = var41;
+                        if (var4 >= var7) {
+                           f = var8;
+                           g = new Integer[13];
+                           long var0 = 7024049030228112637L;
+                           long var30 = 7024049030228112638L ^ var0;
+                           byte var25 = -1;
+                           h = var30;
+                           return;
+                        }
+                        break;
+                     default:
+                        var10000[var21] = var41;
+                        if (var4 < var7) {
+                           continue label40;
+                        }
+
+                        var6 = "\næíÊ\u0081<7Aÿ]ê#\u0004S\u007fö";
+                        var7 = "\næíÊ\u0081<7Aÿ]ê#\u0004S\u007fö".length();
+                        var4 = 0;
+                  }
+
+                  byte var24 = var4;
+                  var4 += 8;
+                  var9 = var6.substring(var24, var4).getBytes("ISO-8859-1");
+                  var10000 = var8;
+                  var21 = var5++;
+                  var28 = ((long)var9[0] & 255L) << 56
+                     | ((long)var9[1] & 255L) << 48
+                     | ((long)var9[2] & 255L) << 40
+                     | ((long)var9[3] & 255L) << 32
+                     | ((long)var9[4] & 255L) << 24
+                     | ((long)var9[5] & 255L) << 16
+                     | ((long)var9[6] & 255L) << 8
+                     | (long)var9[7] & 255L;
+                  var34 = 0;
+               }
+            }
+         }
+
+         var11 = var12.charAt(var10);
+      }
+   }
+
+   private static String a(int var0, int var1) {
+      int var2 = (var0 ^ -15727) & 65535;
+      if (e[var2] == null) {
+         char[] var3 = c[var2].toCharArray();
+         short var10000;
+         switch (var3[0] & 0xFF) {
+            case 0:
+               var10000 = 158;
+               break;
+            case 1:
+               var10000 = 85;
+               break;
+            case 2:
+               var10000 = 245;
+               break;
+            case 3:
+               var10000 = 243;
+               break;
+            case 4:
+               var10000 = 167;
+               break;
+            case 5:
+               var10000 = 35;
+               break;
+            case 6:
+               var10000 = 110;
+               break;
+            case 7:
+               var10000 = 53;
+               break;
+            case 8:
+               var10000 = 196;
+               break;
+            case 9:
+               var10000 = 28;
+               break;
+            case 10:
+               var10000 = 160;
+               break;
+            case 11:
+               var10000 = 84;
+               break;
+            case 12:
+               var10000 = 203;
+               break;
+            case 13:
+               var10000 = 141;
+               break;
+            case 14:
+               var10000 = 251;
+               break;
+            case 15:
+               var10000 = 189;
+               break;
+            case 16:
+               var10000 = 222;
+               break;
+            case 17:
+               var10000 = 64;
+               break;
+            case 18:
+               var10000 = 179;
+               break;
+            case 19:
+               var10000 = 109;
+               break;
+            case 20:
+               var10000 = 49;
+               break;
+            case 21:
+               var10000 = 205;
+               break;
+            case 22:
+               var10000 = 105;
+               break;
+            case 23:
+               var10000 = 238;
+               break;
+            case 24:
+               var10000 = 228;
+               break;
+            case 25:
+               var10000 = 74;
+               break;
+            case 26:
+               var10000 = 142;
+               break;
+            case 27:
+               var10000 = 98;
+               break;
+            case 28:
+               var10000 = 224;
+               break;
+            case 29:
+               var10000 = 71;
+               break;
+            case 30:
+               var10000 = 6;
+               break;
+            case 31:
+               var10000 = 221;
+               break;
+            case 32:
+               var10000 = 248;
+               break;
+            case 33:
+               var10000 = 117;
+               break;
+            case 34:
+               var10000 = 2;
+               break;
+            case 35:
+               var10000 = 133;
+               break;
+            case 36:
+               var10000 = 65;
+               break;
+            case 37:
+               var10000 = 180;
+               break;
+            case 38:
+               var10000 = 67;
+               break;
+            case 39:
+               var10000 = 130;
+               break;
+            case 40:
+               var10000 = 201;
+               break;
+            case 41:
+               var10000 = 44;
+               break;
+            case 42:
+               var10000 = 119;
+               break;
+            case 43:
+               var10000 = 1;
+               break;
+            case 44:
+               var10000 = 124;
+               break;
+            case 45:
+               var10000 = 94;
+               break;
+            case 46:
+               var10000 = 61;
+               break;
+            case 47:
+               var10000 = 93;
+               break;
+            case 48:
+               var10000 = 4;
+               break;
+            case 49:
+               var10000 = 181;
+               break;
+            case 50:
+               var10000 = 170;
+               break;
+            case 51:
+               var10000 = 129;
+               break;
+            case 52:
+               var10000 = 204;
+               break;
+            case 53:
+               var10000 = 101;
+               break;
+            case 54:
+               var10000 = 157;
+               break;
+            case 55:
+               var10000 = 103;
+               break;
+            case 56:
+               var10000 = 175;
+               break;
+            case 57:
+               var10000 = 11;
+               break;
+            case 58:
+               var10000 = 25;
+               break;
+            case 59:
+               var10000 = 62;
+               break;
+            case 60:
+               var10000 = 112;
+               break;
+            case 61:
+               var10000 = 164;
+               break;
+            case 62:
+               var10000 = 231;
+               break;
+            case 63:
+               var10000 = 146;
+               break;
+            case 64:
+               var10000 = 218;
+               break;
+            case 65:
+               var10000 = 92;
+               break;
+            case 66:
+               var10000 = 225;
+               break;
+            case 67:
+               var10000 = 14;
+               break;
+            case 68:
+               var10000 = 27;
+               break;
+            case 69:
+               var10000 = 36;
+               break;
+            case 70:
+               var10000 = 159;
+               break;
+            case 71:
+               var10000 = 113;
+               break;
+            case 72:
+               var10000 = 18;
+               break;
+            case 73:
+               var10000 = 138;
+               break;
+            case 74:
+               var10000 = 192;
+               break;
+            case 75:
+               var10000 = 42;
+               break;
+            case 76:
+               var10000 = 195;
+               break;
+            case 77:
+               var10000 = 144;
+               break;
+            case 78:
+               var10000 = 45;
+               break;
+            case 79:
+               var10000 = 216;
+               break;
+            case 80:
+               var10000 = 193;
+               break;
+            case 81:
+               var10000 = 127;
+               break;
+            case 82:
+               var10000 = 173;
+               break;
+            case 83:
+               var10000 = 229;
+               break;
+            case 84:
+               var10000 = 246;
+               break;
+            case 85:
+               var10000 = 128;
+               break;
+            case 86:
+               var10000 = 197;
+               break;
+            case 87:
+               var10000 = 200;
+               break;
+            case 88:
+               var10000 = 90;
+               break;
+            case 89:
+               var10000 = 86;
+               break;
+            case 90:
+               var10000 = 249;
+               break;
+            case 91:
+               var10000 = 70;
+               break;
+            case 92:
+               var10000 = 154;
+               break;
+            case 93:
+               var10000 = 17;
+               break;
+            case 94:
+               var10000 = 254;
+               break;
+            case 95:
+               var10000 = 210;
+               break;
+            case 96:
+               var10000 = 178;
+               break;
+            case 97:
+               var10000 = 43;
+               break;
+            case 98:
+               var10000 = 247;
+               break;
+            case 99:
+               var10000 = 151;
+               break;
+            case 100:
+               var10000 = 95;
+               break;
+            case 101:
+               var10000 = 69;
+               break;
+            case 102:
+               var10000 = 207;
+               break;
+            case 103:
+               var10000 = 165;
+               break;
+            case 104:
+               var10000 = 145;
+               break;
+            case 105:
+               var10000 = 155;
+               break;
+            case 106:
+               var10000 = 41;
+               break;
+            case 107:
+               var10000 = 108;
+               break;
+            case 108:
+               var10000 = 73;
+               break;
+            case 109:
+               var10000 = 212;
+               break;
+            case 110:
+               var10000 = 50;
+               break;
+            case 111:
+               var10000 = 46;
+               break;
+            case 112:
+               var10000 = 163;
+               break;
+            case 113:
+               var10000 = 217;
+               break;
+            case 114:
+               var10000 = 169;
+               break;
+            case 115:
+               var10000 = 199;
+               break;
+            case 116:
+               var10000 = 156;
+               break;
+            case 117:
+               var10000 = 37;
+               break;
+            case 118:
+               var10000 = 131;
+               break;
+            case 119:
+               var10000 = 75;
+               break;
+            case 120:
+               var10000 = 3;
+               break;
+            case 121:
+               var10000 = 55;
+               break;
+            case 122:
+               var10000 = 80;
+               break;
+            case 123:
+               var10000 = 242;
+               break;
+            case 124:
+               var10000 = 190;
+               break;
+            case 125:
+               var10000 = 60;
+               break;
+            case 126:
+               var10000 = 116;
+               break;
+            case 127:
+               var10000 = 72;
+               break;
+            case 128:
+               var10000 = 183;
+               break;
+            case 129:
+               var10000 = 152;
+               break;
+            case 130:
+               var10000 = 89;
+               break;
+            case 131:
+               var10000 = 123;
+               break;
+            case 132:
+               var10000 = 137;
+               break;
+            case 133:
+               var10000 = 134;
+               break;
+            case 134:
+               var10000 = 252;
+               break;
+            case 135:
+               var10000 = 176;
+               break;
+            case 136:
+               var10000 = 5;
+               break;
+            case 137:
+               var10000 = 107;
+               break;
+            case 138:
+               var10000 = 219;
+               break;
+            case 139:
+               var10000 = 32;
+               break;
+            case 140:
+               var10000 = 34;
+               break;
+            case 141:
+               var10000 = 202;
+               break;
+            case 142:
+               var10000 = 120;
+               break;
+            case 143:
+               var10000 = 31;
+               break;
+            case 144:
+               var10000 = 63;
+               break;
+            case 145:
+               var10000 = 22;
+               break;
+            case 146:
+               var10000 = 111;
+               break;
+            case 147:
+               var10000 = 166;
+               break;
+            case 148:
+               var10000 = 223;
+               break;
+            case 149:
+               var10000 = 48;
+               break;
+            case 150:
+               var10000 = 237;
+               break;
+            case 151:
+               var10000 = 241;
+               break;
+            case 152:
+               var10000 = 198;
+               break;
+            case 153:
+               var10000 = 250;
+               break;
+            case 154:
+               var10000 = 122;
+               break;
+            case 155:
+               var10000 = 76;
+               break;
+            case 156:
+               var10000 = 118;
+               break;
+            case 157:
+               var10000 = 81;
+               break;
+            case 158:
+               var10000 = 52;
+               break;
+            case 159:
+               var10000 = 39;
+               break;
+            case 160:
+               var10000 = 57;
+               break;
+            case 161:
+               var10000 = 56;
+               break;
+            case 162:
+               var10000 = 214;
+               break;
+            case 163:
+               var10000 = 99;
+               break;
+            case 164:
+               var10000 = 102;
+               break;
+            case 165:
+               var10000 = 66;
+               break;
+            case 166:
+               var10000 = 24;
+               break;
+            case 167:
+               var10000 = 143;
+               break;
+            case 168:
+               var10000 = 104;
+               break;
+            case 169:
+               var10000 = 255;
+               break;
+            case 170:
+               var10000 = 26;
+               break;
+            case 171:
+               var10000 = 13;
+               break;
+            case 172:
+               var10000 = 244;
+               break;
+            case 173:
+               var10000 = 172;
+               break;
+            case 174:
+               var10000 = 168;
+               break;
+            case 175:
+               var10000 = 162;
+               break;
+            case 176:
+               var10000 = 140;
+               break;
+            case 177:
+               var10000 = 233;
+               break;
+            case 178:
+               var10000 = 125;
+               break;
+            case 179:
+               var10000 = 88;
+               break;
+            case 180:
+               var10000 = 213;
+               break;
+            case 181:
+               var10000 = 100;
+               break;
+            case 182:
+               var10000 = 185;
+               break;
+            case 183:
+               var10000 = 58;
+               break;
+            case 184:
+               var10000 = 19;
+               break;
+            case 185:
+               var10000 = 106;
+               break;
+            case 186:
+               var10000 = 10;
+               break;
+            case 187:
+               var10000 = 239;
+               break;
+            case 188:
+               var10000 = 191;
+               break;
+            case 189:
+               var10000 = 97;
+               break;
+            case 190:
+               var10000 = 240;
+               break;
+            case 191:
+               var10000 = 115;
+               break;
+            case 192:
+               var10000 = 77;
+               break;
+            case 193:
+               var10000 = 235;
+               break;
+            case 194:
+               var10000 = 220;
+               break;
+            case 195:
+               var10000 = 59;
+               break;
+            case 196:
+               var10000 = 148;
+               break;
+            case 197:
+               var10000 = 227;
+               break;
+            case 198:
+               var10000 = 33;
+               break;
+            case 199:
+               var10000 = 8;
+               break;
+            case 200:
+               var10000 = 132;
+               break;
+            case 201:
+               var10000 = 114;
+               break;
+            case 202:
+               var10000 = 188;
+               break;
+            case 203:
+               var10000 = 78;
+               break;
+            case 204:
+               var10000 = 54;
+               break;
+            case 205:
+               var10000 = 139;
+               break;
+            case 206:
+               var10000 = 174;
+               break;
+            case 207:
+               var10000 = 150;
+               break;
+            case 208:
+               var10000 = 187;
+               break;
+            case 209:
+               var10000 = 149;
+               break;
+            case 210:
+               var10000 = 177;
+               break;
+            case 211:
+               var10000 = 9;
+               break;
+            case 212:
+               var10000 = 186;
+               break;
+            case 213:
+               var10000 = 7;
+               break;
+            case 214:
+               var10000 = 147;
+               break;
+            case 215:
+               var10000 = 29;
+               break;
+            case 216:
+               var10000 = 38;
+               break;
+            case 217:
+               var10000 = 121;
+               break;
+            case 218:
+               var10000 = 79;
+               break;
+            case 219:
+               var10000 = 136;
+               break;
+            case 220:
+               var10000 = 194;
+               break;
+            case 221:
+               var10000 = 15;
+               break;
+            case 222:
+               var10000 = 153;
+               break;
+            case 223:
+               var10000 = 253;
+               break;
+            case 224:
+               var10000 = 184;
+               break;
+            case 225:
+               var10000 = 51;
+               break;
+            case 226:
+               var10000 = 230;
+               break;
+            case 227:
+               var10000 = 30;
+               break;
+            case 228:
+               var10000 = 82;
+               break;
+            case 229:
+               var10000 = 96;
+               break;
+            case 230:
+               var10000 = 211;
+               break;
+            case 231:
+               var10000 = 68;
+               break;
+            case 232:
+               var10000 = 209;
+               break;
+            case 233:
+               var10000 = 21;
+               break;
+            case 234:
+               var10000 = 171;
+               break;
+            case 235:
+               var10000 = 215;
+               break;
+            case 236:
+               var10000 = 232;
+               break;
+            case 237:
+               var10000 = 23;
+               break;
+            case 238:
+               var10000 = 16;
+               break;
+            case 239:
+               var10000 = 226;
+               break;
+            case 240:
+               var10000 = 182;
+               break;
+            case 241:
+               var10000 = 206;
+               break;
+            case 242:
+               var10000 = 47;
+               break;
+            case 243:
+               var10000 = 126;
+               break;
+            case 244:
+               var10000 = 208;
+               break;
+            case 245:
+               var10000 = 87;
+               break;
+            case 246:
+               var10000 = 20;
+               break;
+            case 247:
+               var10000 = 91;
+               break;
+            case 248:
+               var10000 = 0;
+               break;
+            case 249:
+               var10000 = 161;
+               break;
+            case 250:
+               var10000 = 135;
+               break;
+            case 251:
+               var10000 = 83;
+               break;
+            case 252:
+               var10000 = 236;
+               break;
+            case 253:
+               var10000 = 234;
+               break;
+            case 254:
+               var10000 = 12;
+               break;
+            default:
+               var10000 = 40;
+         }
+
+         short var4 = var10000;
+         int var5 = (var1 & 0xFF) - var4;
+         if (var5 < 0) {
+            var5 += 256;
+         }
+
+         int var6 = ((var1 & 65535) >>> 8) - var4;
+         if (var6 < 0) {
+            var6 += 256;
+         }
+
+         for (int var7 = 0; var7 < var3.length; var7++) {
+            int var8 = var7 % 2;
+            char var10002 = var3[var7];
+            if (var8 == 0) {
+               var3[var7] = (char)(var10002 ^ var5);
+               var5 = ((var5 >>> 3 | var5 << 5) ^ var3[var7]) & 0xFF;
+            } else {
+               var3[var7] = (char)(var10002 ^ var6);
+               var6 = ((var6 >>> 3 | var6 << 5) ^ var3[var7]) & 0xFF;
+            }
+         }
+
+         e[var2] = new String(var3).intern();
+      }
+
+      return e[var2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 20491;
+      if (g[var3] == null) {
+         g[var3] = (int)(f[var3] ^ var1);
+      }
+
+      return g[var3];
+   }
 }
+
+
+
+
 

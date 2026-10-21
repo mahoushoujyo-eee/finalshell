@@ -1,79 +1,76 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.IB;
-import com.IH;
-import com.aS;
-import com.da_1;
-import com.ds_2;
-import com.k3_0;
 import java.io.Serializable;
 import javax.swing.JComponent;
 
-public class I9
-extends IB {
-    private da_1 V;
+public class I9 extends IB {
+   private com.dA_3 V;
 
-    public I9(aS aS2) {
-        super(aS2);
-    }
+   public I9(com.aS var1) {
+      super(var1);
+   }
 
-    public Boolean l() {
-        Boolean bl = (Boolean)super.Y();
-        String[] stringArray = IH.M();
-        Boolean bl2 = bl;
-        if (stringArray != null) {
-            if (bl2 == null) {
-                bl = true;
-            }
-            bl2 = bl;
-        }
-        return bl2;
-    }
+   public Boolean l() {
+      String[] var10000 = IH.M();
+      Boolean var2 = (Boolean)super.Y();
+      String[] var1 = var10000;
+      Boolean var3 = var2;
+      if (var1 != null) {
+         if (var2 == null) {
+            var2 = true;
+         }
 
-    protected void B(k3_0 k3_02) {
-        this.V = new ds_2(this);
-        k3_02.m(this.V);
-    }
+         var3 = var2;
+      }
 
-    protected void b(k3_0 k3_02) {
-        k3_02.B(this.V);
-        this.V = null;
-    }
+      return var3;
+   }
 
-    protected void V(k3_0 k3_02) {
-        k3_02.u((Boolean)this.o());
-    }
+   protected void B(com.k3_2 var1) {
+      this.V = new com.ds_4(this);
+      var1.m(this.V);
+   }
 
-    protected void u(k3_0 k3_02) {
-        this.J(Boolean.valueOf(k3_02.Y()));
-    }
+   protected void b(com.k3_2 var1) {
+      var1.B(this.V);
+      this.V = null;
+   }
 
-    @Override
-    protected void T(JComponent jComponent) {
-        this.u((k3_0)jComponent);
-    }
+   protected void V(com.k3_2 var1) {
+      var1.u((Boolean)this.o());
+   }
 
-    @Override
-    protected void s(JComponent jComponent) {
-        this.V((k3_0)jComponent);
-    }
+   protected void u(com.k3_2 var1) {
+      this.J(Boolean.valueOf(var1.Y()));
+   }
 
-    @Override
-    protected void r(JComponent jComponent) {
-        this.b((k3_0)jComponent);
-    }
+   @Override
+   protected void T(JComponent var1) {
+      this.u((com.k3_2)var1);
+   }
 
-    @Override
-    protected void F(JComponent jComponent) {
-        this.B((k3_0)jComponent);
-    }
+   @Override
+   protected void s(JComponent var1) {
+      this.V((com.k3_2)var1);
+   }
 
-    @Override
-    public Serializable Y() {
-        return this.l();
-    }
+   @Override
+   protected void r(JComponent var1) {
+      this.b((com.k3_2)var1);
+   }
+
+   @Override
+   protected void F(JComponent var1) {
+      this.B((com.k3_2)var1);
+   }
+
+   @Override
+   public Serializable Y() {
+      return this.l();
+   }
 }
+
+
+
+
 

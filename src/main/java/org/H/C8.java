@@ -1,49 +1,47 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import org.b_0;
-import org.h.cs_0;
 import org.v.NV;
 import org.v.RS;
-import org.v.f_1;
+import org.v.f_3;
 import org.v.hV;
-import org.v.t_2;
+import org.v.t_4;
 
-class C8
-implements f_1 {
-    final cs_0 B;
+class C8 implements f_3 {
+   final org.H.Cs_2 B;
 
-    C8(cs_0 cs_02) {
-        this.B = cs_02;
-    }
+   C8(org.H.Cs_2 var1) {
+      this.B = var1;
+   }
 
-    public t_2 f(NV nV2) throws b_0 {
-        return this.B.E(nV2);
-    }
+   public t_4 f(NV var1) throws org.b_2 {
+      return this.B.E(var1);
+   }
 
-    public t_2 k(RS rS) throws b_0 {
-        return this.B.T(rS);
-    }
+   public t_4 k(RS var1) throws org.b_2 {
+      return this.B.T(var1);
+   }
 
-    public t_2 y(hV hV2) throws b_0 {
-        return this.B.R(hV2);
-    }
+   public t_4 y(hV var1) throws org.b_2 {
+      return this.B.R(var1);
+   }
 
-    @Override
-    public Object C(RS rS) throws Throwable {
-        return this.k(rS);
-    }
+   @Override
+   public Object C(RS var1) throws Throwable {
+      return this.k(var1);
+   }
 
-    @Override
-    public Object G(hV hV2) throws Throwable {
-        return this.y(hV2);
-    }
+   @Override
+   public Object G(hV var1) throws Throwable {
+      return this.y(var1);
+   }
 
-    @Override
-    public Object t(NV nV2) throws Throwable {
-        return this.f(nV2);
-    }
+   @Override
+   public Object t(NV var1) throws Throwable {
+      return this.f(var1);
+   }
 }
+
+
+
+
 

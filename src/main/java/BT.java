@@ -1,27 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class BT
-implements Runnable {
-    final String F;
-    final lw_0 W;
+class BT implements Runnable {
+   final String F;
+   final Lw_2 W;
 
-    BT(lw_0 lw_02, String string) {
-        this.W = lw_02;
-        this.F = string;
-    }
+   BT(Lw_2 var1, String var2) {
+      this.W = var1;
+      this.F = var2;
+   }
 
-    @Override
-    public void run() {
-        try {
-            this.W.Z.w.j(this.F, true, true);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void run() {
+      Method var10000 = (Method)com.c.c(294487557435087442L).get(com.c.c(257342744894307012L).get(com.c.c(216367832445276444L).get(this)));
+      Object[] var10001 = com.c.a(com.c.c(527035799301297247L).get(this), true, true);
+      Method var10003 = com.c.d(413727787977868950L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
+
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var1) {
+         throw var1.getTargetException();
+      }
+   }
 }
+
+
+
+
 

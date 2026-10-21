@@ -1,43 +1,40 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.C;
 
-import com.C.W;
-import com.C.X;
-import com.FY;
-import com.KR;
-import com.ke_1;
 import java.awt.Container;
 import javax.swing.event.AncestorEvent;
 
-class T
-extends FY {
-    final KR M;
-    final X f;
+class T extends com.FY {
+   final com.KR M;
+   final com.C.X f;
 
-    T(X x10, KR kR) {
-        this.f = x10;
-        this.M = kR;
-    }
+   T(com.C.X var1, com.KR var2) {
+      this.f = var1;
+      this.M = var2;
+   }
 
-    @Override
-    public void ancestorAdded(AncestorEvent ancestorEvent) {
-        Container container = this.M.getParent();
-        int[] nArray = W.B();
-        if (nArray == null) {
-            if (container instanceof ke_1) {
-                this.f.u = (ke_1)container;
-                this.f.u.addContainerListener(this.f.D);
-            }
-            this.f.Z();
-        }
-    }
+   @Override
+   public void ancestorAdded(AncestorEvent var1) {
+      int[] var10000 = com.C.W.B();
+      Container var3 = this.M.getParent();
+      int[] var2 = var10000;
+      if (var2 == null) {
+         if (var3 instanceof com.kE_3) {
+            this.f.u = (com.kE_3)var3;
+            this.f.u.addContainerListener(this.f.D);
+         }
 
-    @Override
-    public void ancestorRemoved(AncestorEvent ancestorEvent) {
-        this.f.V();
-        this.f.Z();
-    }
+         this.f.Z();
+      }
+   }
+
+   @Override
+   public void ancestorRemoved(AncestorEvent var1) {
+      this.f.V();
+      this.f.Z();
+   }
 }
+
+
+
+
 

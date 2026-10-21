@@ -1,16 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.C;
 
-import com.C.C;
-import com.C.W;
-import com.C.Z;
-import com.C.d;
-import com.FY;
-import com.QC;
-import com.ke_1;
-import com.ki_2;
 import java.awt.Graphics2D;
 import java.awt.Insets;
 import java.awt.Rectangle;
@@ -18,86 +7,89 @@ import java.awt.event.ContainerAdapter;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 
-public class I
-extends d {
-    protected ContainerAdapter S;
-    protected FY R;
-    protected ke_1 A = null;
+public class I extends com.C.d {
+   protected ContainerAdapter S;
+   protected com.FY R;
+   protected com.kE_3 A = null;
 
-    public void w(ki_2 ki_22) {
-        this.S = new C(this, ki_22);
-        this.R = new Z(this, ki_22);
-        ki_22.addAncestorListener(this.R);
-    }
+   public void w(com.ki_4 var1) {
+      this.S = new C(this, var1);
+      this.R = new Z(this, var1);
+      var1.addAncestorListener(this.R);
+   }
 
-    public void v(ki_2 ki_22) {
-        this.r();
-        this.S = null;
-        ki_22.removeAncestorListener(this.R);
-        this.R = null;
-    }
+   public void v(com.ki_4 var1) {
+      this.r();
+      this.S = null;
+      var1.removeAncestorListener(this.R);
+      this.R = null;
+   }
 
-    protected void r() {
-        block3: {
-            ke_1 ke_12;
-            block2: {
-                int[] nArray = com.C.W.B();
-                ke_12 = this.A;
-                if (nArray != null) break block2;
-                if (ke_12 == null) break block3;
-                ke_12 = this.A;
-            }
-            ke_12.removeContainerListener(this.S);
-            this.A = null;
-        }
-    }
+   protected void r() {
+      int[] var1 = com.C.W.B();
+      com.kE_3 var10000 = this.A;
+      if (var1 == null) {
+         if (this.A == null) {
+            return;
+         }
 
-    public Boolean z(ki_2 ki_22) {
-        return false;
-    }
+         var10000 = this.A;
+      }
 
-    public Insets S(ki_2 ki_22) {
-        return QC.S(ki_22);
-    }
+      var10000.removeContainerListener(this.S);
+      this.A = null;
+   }
 
-    public void c(Graphics2D graphics2D, Rectangle rectangle, ki_2 ki_22) {
-        QC.q(graphics2D, ki_22);
-        super.h(graphics2D, rectangle, ki_22);
-    }
+   public Boolean z(com.ki_4 var1) {
+      return false;
+   }
 
-    @Override
-    public void h(Graphics2D graphics2D, Rectangle rectangle, JPanel jPanel) {
-        this.c(graphics2D, rectangle, (ki_2)jPanel);
-    }
+   public Insets S(com.ki_4 var1) {
+      return com.QC.S(var1);
+   }
 
-    @Override
-    public Boolean y(JPanel jPanel) {
-        return this.z((ki_2)jPanel);
-    }
+   public void c(Graphics2D var1, Rectangle var2, com.ki_4 var3) {
+      com.QC.q(var1, var3);
+      super.h(var1, var2, var3);
+   }
 
-    @Override
-    public void u(Graphics2D graphics2D, Rectangle rectangle, JComponent jComponent) {
-        this.c(graphics2D, rectangle, (ki_2)jComponent);
-    }
+   @Override
+   public void h(Graphics2D var1, Rectangle var2, JPanel var3) {
+      this.c(var1, var2, (com.ki_4)var3);
+   }
 
-    @Override
-    public Insets B(JComponent jComponent) {
-        return this.S((ki_2)jComponent);
-    }
+   @Override
+   public Boolean y(JPanel var1) {
+      return this.z((com.ki_4)var1);
+   }
 
-    @Override
-    public Boolean d(JComponent jComponent) {
-        return this.z((ki_2)jComponent);
-    }
+   @Override
+   public void u(Graphics2D var1, Rectangle var2, JComponent var3) {
+      this.c(var1, var2, (com.ki_4)var3);
+   }
 
-    @Override
-    public void X(JComponent jComponent) {
-        this.v((ki_2)jComponent);
-    }
+   @Override
+   public Insets B(JComponent var1) {
+      return this.S((com.ki_4)var1);
+   }
 
-    @Override
-    public void A(JComponent jComponent) {
-        this.w((ki_2)jComponent);
-    }
+   @Override
+   public Boolean d(JComponent var1) {
+      return this.z((com.ki_4)var1);
+   }
+
+   @Override
+   public void X(JComponent var1) {
+      this.v((com.ki_4)var1);
+   }
+
+   @Override
+   public void A(JComponent var1) {
+      this.w((com.ki_4)var1);
+   }
 }
+
+
+
+
 

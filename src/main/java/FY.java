@@ -1,27 +1,29 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
 public interface FY {
-    public String T();
+   String T();
 
-    public InputStream g() throws IOException;
+   InputStream g() throws IOException;
 
-    public OutputStream D() throws IOException;
+   OutputStream D() throws IOException;
 
-    public OutputStream M(boolean var1) throws IOException;
+   OutputStream M(boolean var1) throws IOException;
 
-    public FY Y(String var1);
+   FY Y(String var1);
 
-    public long F();
+   long F();
 
-    public boolean u();
+   boolean u();
 
-    public boolean B();
+   boolean B();
 
-    public String toString();
+   @Override
+   String toString();
 }
+
+
+
+
 

@@ -1,23 +1,21 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.D2;
+class C5 implements Runnable {
+   final boolean I;
+   final com.D2 h;
 
-class C5
-implements Runnable {
-    final boolean I;
-    final D2 h;
+   C5(com.D2 var1, boolean var2) {
+      this.h = var1;
+      this.I = var2;
+   }
 
-    C5(D2 d2, boolean bl) {
-        this.h = d2;
-        this.I = bl;
-    }
-
-    @Override
-    public void run() {
-        D2.G(this.h).setIndeterminate(this.I);
-    }
+   @Override
+   public void run() {
+      com.D2.G(this.h).setIndeterminate(this.I);
+   }
 }
+
+
+
+
 

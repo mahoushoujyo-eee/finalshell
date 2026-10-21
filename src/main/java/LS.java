@@ -1,30 +1,36 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import javax.swing.JMenuItem;
 
-class LS
-implements ActionListener {
-    final JMenuItem V;
-    final wx_0 M;
+class LS implements ActionListener {
+   final JMenuItem V;
+   final Wx_2 M;
 
-    LS(wx_0 wx_02, JMenuItem jMenuItem) {
-        this.M = wx_02;
-        this.V = jMenuItem;
-    }
+   LS(Wx_2 var1, JMenuItem var2) {
+      this.M = var1;
+      this.V = var2;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        try {
-            yt_1.F.J(new KH(this));
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      Method var10000 = (Method)com.c.c(388376917454860932L).get(null);
+      Object[] var10001 = com.c.a(new KH(this));
+      Method var10003 = com.c.d(434592463220957006L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
+
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
 }
+
+
+
+
 

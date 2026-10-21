@@ -1,305 +1,307 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.l;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Stack;
-import org.F.c;
-import org.l.F;
-import org.l.G;
 
-public class N
-implements Iterator {
-    private final Stack i = new Stack();
-    @c
-    private Object S;
-    private boolean M;
-    static final /* synthetic */ boolean Y;
+public class N implements Iterator {
+   private final Stack i = new Stack();
+   @org.F.c
+   private Object S;
+   private boolean M;
 
-    public N(Iterator iterator) {
-        this.i.push(iterator);
-    }
+   public N(Iterator var1) {
+      this.i.push(var1);
+   }
 
-    @Override
-    public boolean hasNext() {
-        boolean bl;
-        block6: {
-            block8: {
-                block7: {
-                    boolean bl2 = F.s();
-                    try {
-                        try {
-                            try {
-                                bl = this.M;
-                                if (!bl2) break block6;
-                                if (bl) break block7;
-                            }
-                            catch (NoSuchElementException noSuchElementException) {
-                                throw N.a(noSuchElementException);
-                            }
-                            bl = this.p();
-                            if (!bl2) break block6;
-                        }
-                        catch (NoSuchElementException noSuchElementException) {
-                            throw N.a(noSuchElementException);
-                        }
-                        if (!bl) break block8;
-                    }
-                    catch (NoSuchElementException noSuchElementException) {
-                        throw N.a(noSuchElementException);
-                    }
-                }
-                bl = true;
-                break block6;
+   @Override
+   public boolean hasNext() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/l/F.s ()Z
+      // 03: istore 1
+      // 04: aload 0
+      // 05: getfield org/l/N.M Z
+      // 08: iload 1
+      // 09: ifeq 30
+      // 0c: ifne 2f
+      // 0f: goto 16
+      // 12: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 15: athrow
+      // 16: aload 0
+      // 17: invokespecial org/l/N.p ()Z
+      // 1a: iload 1
+      // 1b: ifeq 30
+      // 1e: goto 25
+      // 21: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 24: athrow
+      // 25: ifeq 33
+      // 28: goto 2f
+      // 2b: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 2e: athrow
+      // 2f: bipush 1
+      // 30: goto 34
+      // 33: bipush 0
+      // 34: ireturn
+   }
+
+   @Override
+   public Object next() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic org/l/F.s ()Z
+      // 03: istore 1
+      // 04: aload 0
+      // 05: getfield org/l/N.M Z
+      // 08: iload 1
+      // 09: ifeq 4e
+      // 0c: ifne 3b
+      // 0f: goto 16
+      // 12: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 15: athrow
+      // 16: aload 0
+      // 17: invokespecial org/l/N.p ()Z
+      // 1a: iload 1
+      // 1b: ifeq 4e
+      // 1e: goto 25
+      // 21: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 24: athrow
+      // 25: ifne 3b
+      // 28: goto 2f
+      // 2b: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 2e: athrow
+      // 2f: new java/util/NoSuchElementException
+      // 32: dup
+      // 33: invokespecial java/util/NoSuchElementException.<init> ()V
+      // 36: athrow
+      // 37: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 3a: athrow
+      // 3b: aload 0
+      // 3c: iload 1
+      // 3d: ifeq 7a
+      // 40: bipush 0
+      // 41: putfield org/l/N.M Z
+      // 44: getstatic org/l/N.Y Z
+      // 47: goto 4e
+      // 4a: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 4d: athrow
+      // 4e: ifne 76
+      // 51: aload 0
+      // 52: getfield org/l/N.S Ljava/lang/Object;
+      // 55: iload 1
+      // 56: ifeq 7a
+      // 59: goto 60
+      // 5c: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 5f: athrow
+      // 60: ifnonnull 76
+      // 63: goto 6a
+      // 66: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 69: athrow
+      // 6a: new java/lang/AssertionError
+      // 6d: dup
+      // 6e: invokespecial java/lang/AssertionError.<init> ()V
+      // 71: athrow
+      // 72: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 75: athrow
+      // 76: aload 0
+      // 77: getfield org/l/N.S Ljava/lang/Object;
+      // 7a: areturn
+   }
+
+   private boolean p() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic org/l/F.s ()Z
+      // 003: istore 1
+      // 004: aload 0
+      // 005: getfield org/l/N.i Ljava/util/Stack;
+      // 008: invokevirtual java/util/Stack.empty ()Z
+      // 00b: ifne 136
+      // 00e: aload 0
+      // 00f: getfield org/l/N.i Ljava/util/Stack;
+      // 012: invokevirtual java/util/Stack.peek ()Ljava/lang/Object;
+      // 015: checkcast java/util/Iterator
+      // 018: astore 2
+      // 019: aload 2
+      // 01a: iload 1
+      // 01b: ifeq 051
+      // 01e: invokeinterface java/util/Iterator.hasNext ()Z 1
+      // 023: iload 1
+      // 024: ifeq 137
+      // 027: goto 02e
+      // 02a: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 02d: athrow
+      // 02e: ifne 04b
+      // 031: goto 038
+      // 034: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 037: athrow
+      // 038: aload 0
+      // 039: getfield org/l/N.i Ljava/util/Stack;
+      // 03c: invokevirtual java/util/Stack.pop ()Ljava/lang/Object;
+      // 03f: pop
+      // 040: iload 1
+      // 041: ifne 004
+      // 044: goto 04b
+      // 047: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 04a: athrow
+      // 04b: aload 2
+      // 04c: invokeinterface java/util/Iterator.next ()Ljava/lang/Object; 1
+      // 051: astore 3
+      // 052: aload 3
+      // 053: instanceof java/util/Iterator
+      // 056: iload 1
+      // 057: ifeq 086
+      // 05a: ifeq 07b
+      // 05d: goto 064
+      // 060: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 063: athrow
+      // 064: aload 0
+      // 065: getfield org/l/N.i Ljava/util/Stack;
+      // 068: aload 3
+      // 069: checkcast java/util/Iterator
+      // 06c: invokevirtual java/util/Stack.push (Ljava/lang/Object;)Ljava/lang/Object;
+      // 06f: pop
+      // 070: iload 1
+      // 071: ifne 132
+      // 074: goto 07b
+      // 077: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 07a: athrow
+      // 07b: aload 3
+      // 07c: instanceof [Ljava/lang/Object;
+      // 07f: goto 086
+      // 082: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 085: athrow
+      // 086: iload 1
+      // 087: ifeq 0be
+      // 08a: ifeq 0b3
+      // 08d: goto 094
+      // 090: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 093: athrow
+      // 094: aload 0
+      // 095: getfield org/l/N.i Ljava/util/Stack;
+      // 098: aload 3
+      // 099: checkcast [Ljava/lang/Object;
+      // 09c: invokestatic java/util/Arrays.asList ([Ljava/lang/Object;)Ljava/util/List;
+      // 09f: invokeinterface java/util/List.iterator ()Ljava/util/Iterator; 1
+      // 0a4: invokevirtual java/util/Stack.push (Ljava/lang/Object;)Ljava/lang/Object;
+      // 0a7: pop
+      // 0a8: iload 1
+      // 0a9: ifne 132
+      // 0ac: goto 0b3
+      // 0af: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 0b2: athrow
+      // 0b3: aload 3
+      // 0b4: instanceof java/util/Collection
+      // 0b7: goto 0be
+      // 0ba: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 0bd: athrow
+      // 0be: iload 1
+      // 0bf: ifeq 0f3
+      // 0c2: ifeq 0e8
+      // 0c5: goto 0cc
+      // 0c8: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 0cb: athrow
+      // 0cc: aload 0
+      // 0cd: getfield org/l/N.i Ljava/util/Stack;
+      // 0d0: aload 3
+      // 0d1: checkcast java/util/Collection
+      // 0d4: invokeinterface java/util/Collection.iterator ()Ljava/util/Iterator; 1
+      // 0d9: invokevirtual java/util/Stack.push (Ljava/lang/Object;)Ljava/lang/Object;
+      // 0dc: pop
+      // 0dd: iload 1
+      // 0de: ifne 132
+      // 0e1: goto 0e8
+      // 0e4: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 0e7: athrow
+      // 0e8: aload 3
+      // 0e9: instanceof java/util/Enumeration
+      // 0ec: goto 0f3
+      // 0ef: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 0f2: athrow
+      // 0f3: iload 1
+      // 0f4: ifeq 131
+      // 0f7: ifeq 11f
+      // 0fa: goto 101
+      // 0fd: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 100: athrow
+      // 101: aload 0
+      // 102: getfield org/l/N.i Ljava/util/Stack;
+      // 105: new org/l/G
+      // 108: dup
+      // 109: aload 3
+      // 10a: checkcast java/util/Enumeration
+      // 10d: invokespecial org/l/G.<init> (Ljava/util/Enumeration;)V
+      // 110: invokevirtual java/util/Stack.push (Ljava/lang/Object;)Ljava/lang/Object;
+      // 113: pop
+      // 114: iload 1
+      // 115: ifne 132
+      // 118: goto 11f
+      // 11b: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 11e: athrow
+      // 11f: aload 0
+      // 120: aload 3
+      // 121: putfield org/l/N.S Ljava/lang/Object;
+      // 124: aload 0
+      // 125: bipush 1
+      // 126: putfield org/l/N.M Z
+      // 129: bipush 1
+      // 12a: goto 131
+      // 12d: invokestatic org/l/N.a (Ljava/util/NoSuchElementException;)Ljava/util/NoSuchElementException;
+      // 130: athrow
+      // 131: ireturn
+      // 132: iload 1
+      // 133: ifne 004
+      // 136: bipush 0
+      // 137: ireturn
+   }
+
+   @Override
+   public void remove() {
+      ((Iterator)this.i.peek()).remove();
+   }
+
+   static {
+      boolean var10000;
+      label16: {
+         try {
+            if (!org.l.N.class.desiredAssertionStatus()) {
+               var10000 = true;
+               break label16;
             }
-            bl = false;
-        }
-        return bl;
-    }
+         } catch (NoSuchElementException var0) {
+            throw a(var0);
+         }
 
-    public Object next() {
-        Object object;
-        block18: {
-            block19: {
-                boolean bl;
-                boolean bl2;
-                block16: {
-                    block17: {
-                        bl2 = F.s();
-                        try {
-                            try {
-                                try {
-                                    try {
-                                        bl = this.M;
-                                        if (!bl2) break block16;
-                                        if (bl) break block17;
-                                    }
-                                    catch (NoSuchElementException noSuchElementException) {
-                                        throw N.a(noSuchElementException);
-                                    }
-                                    bl = this.p();
-                                    if (!bl2) break block16;
-                                }
-                                catch (NoSuchElementException noSuchElementException) {
-                                    throw N.a(noSuchElementException);
-                                }
-                                if (bl) break block17;
-                            }
-                            catch (NoSuchElementException noSuchElementException) {
-                                throw N.a(noSuchElementException);
-                            }
-                            throw new NoSuchElementException();
-                        }
-                        catch (NoSuchElementException noSuchElementException) {
-                            throw N.a(noSuchElementException);
-                        }
-                    }
-                    try {
-                        object = this;
-                        if (!bl2) break block18;
-                        ((N)object).M = false;
-                        bl = Y;
-                    }
-                    catch (NoSuchElementException noSuchElementException) {
-                        throw N.a(noSuchElementException);
-                    }
-                }
-                try {
-                    try {
-                        try {
-                            if (bl) break block19;
-                            object = this.S;
-                            if (!bl2) break block18;
-                        }
-                        catch (NoSuchElementException noSuchElementException) {
-                            throw N.a(noSuchElementException);
-                        }
-                        if (object != null) break block19;
-                    }
-                    catch (NoSuchElementException noSuchElementException) {
-                        throw N.a(noSuchElementException);
-                    }
-                    throw new AssertionError();
-                }
-                catch (NoSuchElementException noSuchElementException) {
-                    throw N.a(noSuchElementException);
-                }
-            }
-            object = this.S;
-        }
-        return object;
-    }
+         var10000 = false;
+      }
 
-    private boolean p() {
-        boolean bl;
-        block32: {
-            boolean bl2 = F.s();
-            while (!this.i.empty()) {
-                block36: {
-                    boolean bl3;
-                    block41: {
-                        Iterator iterator;
-                        block39: {
-                            block37: {
-                                block34: {
-                                    Iterator iterator2;
-                                    block31: {
-                                        Iterator iterator3;
-                                        block33: {
-                                            iterator3 = (Iterator)this.i.peek();
-                                            try {
-                                                try {
-                                                    try {
-                                                        iterator2 = iterator3;
-                                                        if (!bl2) break block31;
-                                                        bl = iterator2.hasNext();
-                                                        if (!bl2) break block32;
-                                                    }
-                                                    catch (NoSuchElementException noSuchElementException) {
-                                                        throw N.a(noSuchElementException);
-                                                    }
-                                                    if (bl) break block33;
-                                                }
-                                                catch (NoSuchElementException noSuchElementException) {
-                                                    throw N.a(noSuchElementException);
-                                                }
-                                                this.i.pop();
-                                                if (bl2) continue;
-                                            }
-                                            catch (NoSuchElementException noSuchElementException) {
-                                                throw N.a(noSuchElementException);
-                                            }
-                                        }
-                                        iterator2 = iterator3.next();
-                                    }
-                                    iterator = iterator2;
-                                    try {
-                                        block35: {
-                                            try {
-                                                try {
-                                                    bl3 = iterator instanceof Iterator;
-                                                    if (!bl2) break block34;
-                                                    if (!bl3) break block35;
-                                                }
-                                                catch (NoSuchElementException noSuchElementException) {
-                                                    throw N.a(noSuchElementException);
-                                                }
-                                                this.i.push(iterator);
-                                                if (bl2) break block36;
-                                            }
-                                            catch (NoSuchElementException noSuchElementException) {
-                                                throw N.a(noSuchElementException);
-                                            }
-                                        }
-                                        bl3 = iterator instanceof Object[];
-                                    }
-                                    catch (NoSuchElementException noSuchElementException) {
-                                        throw N.a(noSuchElementException);
-                                    }
-                                }
-                                try {
-                                    block38: {
-                                        try {
-                                            try {
-                                                if (!bl2) break block37;
-                                                if (!bl3) break block38;
-                                            }
-                                            catch (NoSuchElementException noSuchElementException) {
-                                                throw N.a(noSuchElementException);
-                                            }
-                                            this.i.push(Arrays.asList((Object[])iterator).iterator());
-                                            if (bl2) break block36;
-                                        }
-                                        catch (NoSuchElementException noSuchElementException) {
-                                            throw N.a(noSuchElementException);
-                                        }
-                                    }
-                                    bl3 = iterator instanceof Collection;
-                                }
-                                catch (NoSuchElementException noSuchElementException) {
-                                    throw N.a(noSuchElementException);
-                                }
-                            }
-                            try {
-                                block40: {
-                                    try {
-                                        try {
-                                            if (!bl2) break block39;
-                                            if (!bl3) break block40;
-                                        }
-                                        catch (NoSuchElementException noSuchElementException) {
-                                            throw N.a(noSuchElementException);
-                                        }
-                                        this.i.push(((Collection)((Object)iterator)).iterator());
-                                        if (bl2) break block36;
-                                    }
-                                    catch (NoSuchElementException noSuchElementException) {
-                                        throw N.a(noSuchElementException);
-                                    }
-                                }
-                                bl3 = iterator instanceof Enumeration;
-                            }
-                            catch (NoSuchElementException noSuchElementException) {
-                                throw N.a(noSuchElementException);
-                            }
-                        }
-                        try {
-                            block42: {
-                                try {
-                                    try {
-                                        if (!bl2) break block41;
-                                        if (!bl3) break block42;
-                                    }
-                                    catch (NoSuchElementException noSuchElementException) {
-                                        throw N.a(noSuchElementException);
-                                    }
-                                    this.i.push(new G((Enumeration)((Object)iterator)));
-                                    if (bl2) break block36;
-                                }
-                                catch (NoSuchElementException noSuchElementException) {
-                                    throw N.a(noSuchElementException);
-                                }
-                            }
-                            this.S = iterator;
-                            this.M = true;
-                            bl3 = true;
-                        }
-                        catch (NoSuchElementException noSuchElementException) {
-                            throw N.a(noSuchElementException);
-                        }
-                    }
-                    return bl3;
-                }
-                if (bl2) continue;
-            }
-            bl = false;
-        }
-        return bl;
-    }
+      Y = var10000;
+   }
 
-    @Override
-    public void remove() {
-        ((Iterator)this.i.peek()).remove();
-    }
-
-    static {
-        boolean bl;
-        try {
-            bl = !N.class.desiredAssertionStatus();
-        }
-        catch (NoSuchElementException noSuchElementException) {
-            throw N.a(noSuchElementException);
-        }
-        Y = bl;
-    }
-
-    private static NoSuchElementException a(NoSuchElementException noSuchElementException) {
-        return noSuchElementException;
-    }
+   private static NoSuchElementException a(NoSuchElementException var0) {
+      return var0;
+   }
 }
+
+
+
+
 

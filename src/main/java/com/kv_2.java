@@ -1,26 +1,51 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.E_;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+public class Kv_2 extends HM {
+   private float g;
 
-/*
- * Renamed from com.kv
- */
-class kv_2
-extends WindowAdapter {
-    final E_ k;
+   public Kv_2(SC var1, float var2) {
+      super(var1);
+      this.g = var2;
+   }
 
-    kv_2(E_ e_) {
-        this.k = e_;
-    }
+   public void P(float var1) {
+      this.g = var1;
+   }
 
-    @Override
-    public void windowClosing(WindowEvent windowEvent) {
-        this.k.a(windowEvent);
-    }
+   public float m() {
+      return this.g;
+   }
+
+   @Override
+   public float h(float var1, float var2) {
+      String var10000 = uZ.h();
+      float var4 = 0.0F;
+      String var3 = var10000;
+      float var5 = 1.0F;
+
+      while (true) {
+         if (var5 <= this.g) {
+            var4 += Math.abs(this.T.h(var5 * var1, var5 * var2)) / var5;
+            var6 = var5 * 2.0F;
+            if (var3 != null) {
+               break;
+            }
+
+            var5 = var6;
+            if (var3 == null) {
+               continue;
+            }
+         }
+
+         var6 = var4;
+         break;
+      }
+
+      return var6;
+   }
 }
+
+
+
+
 

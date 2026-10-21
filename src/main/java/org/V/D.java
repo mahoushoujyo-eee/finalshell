@@ -1,27 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.V;
 
 import java.io.File;
-import org.F.c;
-import org.V.N;
-import org.V.U;
-import org.v.d_0;
 
-public abstract class D
-extends U {
-    @Override
-    @c
-    public final N J(String string) {
-        File file = this.C(string);
-        if (file == null) {
-            return null;
-        }
-        return new d_0(file);
-    }
+public abstract class D extends org.V.U {
+   @org.F.c
+   @Override
+   public final org.V.N J(String var1) {
+      File var2 = this.C(var1);
+      return var2 == null ? null : new d_2(var2);
+   }
 
-    @c
-    protected abstract File C(String var1);
+   @org.F.c
+   protected abstract File C(String var1);
 }
+
+
+
+
 

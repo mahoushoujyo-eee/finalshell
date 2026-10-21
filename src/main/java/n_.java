@@ -1,27 +1,33 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class n_
-implements ActionListener {
-    final kb_0 C;
+class n_ implements ActionListener {
+   final Kb_2 C;
 
-    n_(kb_0 kb_02) {
-        this.C = kb_02;
-    }
+   n_(Kb_2 var1) {
+      this.C = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        try {
-            this.C.setVisible(false);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      Method var10000 = (Method)com.c.c(554193528273869769L).get(this);
+      Object[] var10001 = com.c.a(false);
+      Method var10003 = com.c.d(583190785470630532L);
+      Object[] var10002 = var10001;
+      var10001 = var10000;
+      var10000 = var10003;
+
+      try {
+         var10000.invoke(var10001, var10002);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
 }
+
+
+
+
 

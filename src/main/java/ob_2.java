@@ -1,10 +1,8 @@
-/*
- * Decompiled with CFR 0.152.
- */
-/*
- * Renamed from ob
- */
-public interface ob_2
-extends bg_1 {
+public interface Ob_2 {
+   void o(int var1);
 }
+
+
+
+
 

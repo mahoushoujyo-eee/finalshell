@@ -1,21 +1,78 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.WR;
-import com.em_0;
-import com.og_2;
+import java.io.Serializable;
+import javax.swing.JComponent;
+import javax.swing.JSlider;
+import javax.swing.event.ChangeListener;
 
-/*
- * Renamed from com.ia
- */
-public interface ia_2
-extends og_2,
-WR,
-em_0 {
-    public void O(boolean var1);
+public class Ia_2 extends IB {
+   private ChangeListener f;
 
-    public void V(boolean var1);
+   public Ia_2(com.aS var1) {
+      super(var1);
+   }
+
+   public Integer A() {
+      String[] var10000 = IH.M();
+      Integer var2 = (Integer)super.Y();
+      String[] var1 = var10000;
+      Integer var3 = var2;
+      if (var1 != null) {
+         if (var2 == null) {
+            var2 = ((JSlider)this.b()).getMinimum();
+         }
+
+         var3 = var2;
+      }
+
+      return var3;
+   }
+
+   protected void S(JSlider var1) {
+      this.f = new Gx_2(this);
+      var1.addChangeListener(this.f);
+   }
+
+   protected void A(JSlider var1) {
+      var1.removeChangeListener(this.f);
+      this.f = null;
+   }
+
+   protected void p(JSlider var1) {
+      var1.setValue((Integer)this.o());
+   }
+
+   protected void M(JSlider var1) {
+      com.cl_4.A(this.M(), this.S(), var1.getValue());
+   }
+
+   @Override
+   protected void T(JComponent var1) {
+      this.M((JSlider)var1);
+   }
+
+   @Override
+   protected void s(JComponent var1) {
+      this.p((JSlider)var1);
+   }
+
+   @Override
+   protected void r(JComponent var1) {
+      this.A((JSlider)var1);
+   }
+
+   @Override
+   protected void F(JComponent var1) {
+      this.S((JSlider)var1);
+   }
+
+   @Override
+   public Serializable Y() {
+      return this.A();
+   }
 }
+
+
+
+
 

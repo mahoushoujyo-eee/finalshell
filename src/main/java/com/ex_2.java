@@ -1,133 +1,83 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-/*
- * Renamed from com.ex
- */
-public final class ex_2
-extends Enum {
-    public static final ex_2 decrease;
-    public static final ex_2 increase;
-    private static final /* synthetic */ ex_2[] Y;
+import com.b.V;
+import java.io.File;
+import java.util.Iterator;
+import java.util.List;
 
-    public static ex_2[] values() {
-        return (ex_2[])Y.clone();
-    }
+class Ex_2 extends EY {
+   final com.kz_4 K;
 
-    public static ex_2 valueOf(String string) {
-        return Enum.valueOf(ex_2.class, string);
-    }
+   Ex_2(com.kz_4 var1) {
+      this.K = var1;
+   }
 
-    /*
-     * WARNING - Possible parameter corruption
-     * WARNING - void declaration
-     */
-    private ex_2() {
-        void var2_-1;
-        void var1_-1;
-    }
+   @Override
+   public boolean A() {
+      return this.K.y;
+   }
 
-    private static /* synthetic */ ex_2[] t() {
-        return new ex_2[]{decrease, increase};
-    }
+   @Override
+   public boolean d(List var1) {
+      V var3 = this.K.O();
+      String var10000 = com.kz_4.M();
+      Iterator var4 = var1.iterator();
+      String var2 = var10000;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block13: {
-            var0 = new String[2];
-            var4_1 = 0;
-            var3_2 = "\u000eLGfmr\t\u0002\b\u0003GGfmr\t\u0002";
-            var5_3 = "\u000eLGfmr\t\u0002\b\u0003GGfmr\t\u0002".length();
-            var2_4 = 8;
-            var1_5 = -1;
-lbl7:
-            // 2 sources
+      while (true) {
+         if (var4.hasNext()) {
+            label42: {
+               File var5 = (File)var4.next();
+               File var7 = var5;
+               if (var2 != null) {
+                  boolean var8 = var5.isDirectory();
+                  if (var2 == null) {
+                     return var8;
+                  }
 
-            while (true) {
-                continue;
-                break;
+                  if (var8) {
+                     var9 = var5;
+                     break label42;
+                  }
+
+                  var7 = var5;
+               }
+
+               var9 = var7.getParentFile();
             }
-lbl9:
-            // 1 sources
 
-            while (true) {
-                var0[var4_1++] = new String(v0).intern();
-                if ((var1_5 += var2_4) < var5_3) {
-                    var2_4 = var3_2.charAt(var1_5);
-                    ** continue;
-                }
-                break block13;
-                break;
+            File var6 = var9;
+            if (var2 == null) {
+               break;
             }
-            v1 = ++var1_5;
-            v2 = var3_2.substring(v1, v1 + var2_4).toCharArray();
-            v3 = v2.length;
-            var6_6 = 0;
-            v4 = 110;
-            v5 = v2;
-            v6 = v3;
-            if (v3 > 1) ** GOTO lbl67
-            do {
-                v7 = v4;
-                v5 = v5;
-                v8 = v5;
-                v9 = v4;
-                v10 = var6_6;
-                while (true) {
-                    switch (var6_6 % 7) {
-                        case 0: {
-                            v11 = 9;
-                            break;
-                        }
-                        case 1: {
-                            v11 = 76;
-                            break;
-                        }
-                        case 2: {
-                            v11 = 74;
-                            break;
-                        }
-                        case 3: {
-                            v11 = 122;
-                            break;
-                        }
-                        case 4: {
-                            v11 = 102;
-                            break;
-                        }
-                        case 5: {
-                            v11 = 125;
-                            break;
-                        }
-                        default: {
-                            v11 = 20;
-                        }
-                    }
-                    v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                    ++var6_6;
-                    v4 = v7;
-                    if (v7 != 0) break;
-                    v7 = v4;
-                    v5 = v5;
-                    v10 = v4;
-                    v8 = v5;
-                    v9 = v4;
-                }
-lbl67:
-                // 2 sources
 
-                v0 = v5;
-                v6 = v6;
-            } while (v6 > var6_6);
-            ** while (true)
-        }
-        ex_2.decrease = new ex_2(var0[1], 0);
-        ex_2.increase = new ex_2(var0[0], 1);
-        ex_2.Y = ex_2.t();
-    }
+            if (var3 != null) {
+               boolean var10 = var3.accept(var6);
+               if (var2 == null) {
+                  return var10;
+               }
+
+               if (!var10) {
+                  if (var2 != null) {
+                     continue;
+                  }
+
+                  return false;
+               }
+            }
+
+            this.K.X(var6);
+            break;
+         }
+
+         return false;
+      }
+
+      return true;
+   }
 }
+
+
+
+
 

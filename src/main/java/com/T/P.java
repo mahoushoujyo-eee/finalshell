@@ -1,63 +1,71 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.t;
 
-import com.t.a_0;
-import com.t.n_0;
 import java.awt.Color;
 import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
 import javax.swing.event.ChangeListener;
 
-class P
-implements CaretListener {
-    final ChangeListener q;
-    final n_0 O;
+class P implements CaretListener {
+   final ChangeListener q;
+   final com.t.n_2 O;
 
-    P(n_0 n_02, ChangeListener changeListener) {
-        this.O = n_02;
-        this.q = changeListener;
-    }
+   P(com.t.n_2 var1, ChangeListener var2) {
+      this.O = var1;
+      this.q = var2;
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void caretUpdate(CaretEvent var1_1) {
-        block5: {
-            var2_2 = n_0.g();
+   // $VF: Handled exception range with multiple entry points by splitting it
+   // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
+   @Override
+   public void caretUpdate(CaretEvent var1) {
+      int var2 = com.t.n_2.g();
+
+      label34: {
+         int var10000;
+         label40: {
             try {
-                v0 = n_0.N(this.O);
-                if (var2_2 == 0) {
-                    if (v0 != 0) break block5;
-                }
-                ** GOTO lbl13
+               var10000 = com.t.n_2.N(this.O);
+               if (var2 != 0) {
+                  break label40;
+               }
+
+               if (var10000 != 0) {
+                  return;
+               }
+            } catch (Throwable var8) {
+               throw a(var8);
             }
-            catch (Throwable v1) {
-                throw P.a(v1);
-            }
-            n_0.r(this.O).K(this.q);
+
+            com.t.n_2.r(this.O).K(this.q);
+
             try {
-                v0 = Integer.parseInt(n_0.U(this.O).getText());
-lbl13:
-                // 2 sources
-
-                var3_3 = v0;
-                var4_5 = Integer.parseInt(n_0.Z(this.O).getText());
-                var5_6 = Integer.parseInt(n_0.l(this.O).getText());
-                n_0.y(this.O, new Color(var3_3, var4_5, var5_6));
-                n_0.a(this.O, n_0.c(this.O), a_0.rgbField);
+               var10000 = Integer.parseInt(com.t.n_2.U(this.O).getText());
+            } catch (Throwable var7) {
+               boolean var10001 = false;
+               break label34;
             }
-            catch (Throwable var3_4) {
-                // empty catch block
-            }
-            n_0.r(this.O).N(this.q);
-        }
-    }
+         }
 
-    private static Throwable a(Throwable throwable) {
-        return throwable;
-    }
+         try {
+            int var3 = var10000;
+            int var4 = Integer.parseInt(com.t.n_2.Z(this.O).getText());
+            int var5 = Integer.parseInt(com.t.n_2.l(this.O).getText());
+            com.t.n_2.y(this.O, new Color(var3, var4, var5));
+            com.t.n_2.a(this.O, com.t.n_2.c(this.O), com.t.a_2.rgbField);
+         } catch (Throwable var6) {
+            boolean var9 = false;
+         }
+      }
+
+      com.t.n_2.r(this.O).N(this.q);
+   }
+
+   private static Throwable a(Throwable var0) {
+      return var0;
+   }
 }
+
+
+
+
 

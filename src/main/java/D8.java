@@ -1,837 +1,902 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.ky_2;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
+import java.util.ArrayList;
 import java.util.HashMap;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
 public class D8 {
-    qm_0 I;
-    x1 q;
-    public InetAddress g;
-    public int U;
-    HashMap t = new HashMap();
-    int w = -1;
-    int G = -1;
-    Object k = new Object();
-    boolean y = false;
-    Object Y = new Object();
-    byte[] h = new byte[4];
-    int z = 0;
-    int n = (int)d;
-    int F = -1;
-    tz_2 V;
-    float m = cs_0.r;
-    int l;
-    int D;
-    boolean v = false;
-    boolean b = false;
-    static int x;
-    static int W;
-    boolean Z = false;
-    public int H;
-    long S;
-    private static final String[] a;
-    private static final String[] c;
-    private static final long d;
+   Qm_2 I;
+   x1 q;
+   public InetAddress g;
+   public int U;
+   HashMap t = new HashMap();
+   int w = -1;
+   int G = -1;
+   Object k = new Object();
+   boolean y = false;
+   Object Y = new Object();
+   byte[] h = new byte[4];
+   int z = 0;
+   int n;
+   int F;
+   tz_4 V;
+   float m;
+   int l;
+   int D;
+   boolean v;
+   boolean b;
+   static int x;
+   static int W;
+   boolean Z;
+   public int H;
+   long S;
+   private static final String[] a;
+   private static final String[] c;
+   private static final long d;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block15: {
-            block14: {
-                var7 = new String[3];
-                var5_1 = 0;
-                var4_2 = "\u8f35\u6329\u67fc\u5e7f\u7a67\u0005\u8ff8\u6354\u5d9d\u6587\u5f43\f\u8f2b\u635d\u5de7\u65a6\u5f0c\u001fH\u00f7o\u00e70\u00cc";
-                var6_3 = "\u8f35\u6329\u67fc\u5e7f\u7a67\u0005\u8ff8\u6354\u5d9d\u6587\u5f43\f\u8f2b\u635d\u5de7\u65a6\u5f0c\u001fH\u00f7o\u00e70\u00cc".length();
-                var3_4 = 5;
-                var2_5 = -1;
-lbl7:
-                // 2 sources
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var7 = new String[3];
+      int var5 = 0;
+      String var4 = "輵挩柼广穧\u0005迸捔嶝文彃\f輫捝巧斦弌\u001fH÷oç0Ì";
+      int var6 = "輵挩柼广穧\u0005迸捔嶝文彃\f輫捝巧斦弌\u001fH÷oç0Ì".length();
+      char var3 = 5;
+      int var2 = -1;
 
-                while (true) {
-                    continue;
-                    break;
-                }
-lbl9:
-                // 1 sources
+      while (true) {
+         char[] var10002;
+         label38: {
+            char[] var10003 = var4.substring(++var2, var2 + var3).toCharArray();
+            int var10004 = var10003.length;
+            int var8 = 0;
+            byte var17 = 111;
+            var10002 = var10003;
+            int var10 = var10004;
+            byte var20;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var20 = 111;
+               var10006 = var8;
+            } else {
+               var17 = 111;
+               var10 = var10004;
+               if (var10004 <= var8) {
+                  break label38;
+               }
 
-                while (true) {
-                    var7[var5_1++] = new String(v0).intern();
-                    if ((var2_5 += var3_4) < var6_3) {
-                        var3_4 = var4_2.charAt(var2_5);
-                        ** continue;
-                    }
-                    break block14;
-                    break;
-                }
-                v1 = ++var2_5;
-                v2 = var4_2.substring(v1, v1 + var3_4).toCharArray();
-                v3 = v2.length;
-                var8_6 = 0;
-                v4 = 111;
-                v5 = v2;
-                v6 = v3;
-                if (v3 > 1) ** GOTO lbl67
-                do {
-                    v7 = v4;
-                    v5 = v5;
-                    v8 = v5;
-                    v9 = v4;
-                    v10 = var8_6;
-                    while (true) {
-                        switch (var8_6 % 7) {
-                            case 0: {
-                                v11 = 84;
-                                break;
-                            }
-                            case 1: {
-                                v11 = 72;
-                                break;
-                            }
-                            case 2: {
-                                v11 = 125;
-                                break;
-                            }
-                            case 3: {
-                                v11 = 58;
-                                break;
-                            }
-                            case 4: {
-                                v11 = 113;
-                                break;
-                            }
-                            case 5: {
-                                v11 = 117;
-                                break;
-                            }
-                            default: {
-                                v11 = 6;
-                            }
-                        }
-                        v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                        ++var8_6;
-                        v4 = v7;
-                        if (v7 != 0) break;
-                        v7 = v4;
-                        v5 = v5;
-                        v10 = v4;
-                        v8 = v5;
-                        v9 = v4;
-                    }
-lbl67:
-                    // 2 sources
-
-                    v0 = v5;
-                    v6 = v6;
-                } while (v6 > var8_6);
-                ** while (true)
+               var10005 = var10003;
+               var20 = 111;
+               var10006 = var8;
             }
-            D8.a = var7;
-            D8.c = new String[3];
-            break block15;
-lbl78:
-            // 1 sources
 
             while (true) {
-                continue;
-                break;
+               var10005[var10006] = (char)(var10005[var10006] ^ var20 ^ switch (var8 % 7) {
+                  case 0 -> 84;
+                  case 1 -> 72;
+                  case 2 -> 125;
+                  case 3 -> 58;
+                  case 4 -> 113;
+                  case 5 -> 117;
+                  default -> 6;
+               });
+               var8++;
+               if (var17 == 0) {
+                  var10006 = var17;
+                  var10005 = var10002;
+                  var20 = var17;
+               } else {
+                  if (var10 <= var8) {
+                     break;
+                  }
+
+                  var10005 = var10002;
+                  var20 = var17;
+                  var10006 = var8;
+               }
             }
-        }
-        var0_7 = 5167279490983469835L;
-        ** while (true)
-        D8.d = 4292586453142807297L ^ var0_7;
-        D8.x = 0;
-    }
+         }
 
-    D8(qm_0 qm_02) {
-        this.I = qm_02;
-        this.V = new tz_2(qm_02);
-        this.q = qm_02.J;
-        this.g = qm_02.c;
-        this.U = qm_02.i;
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     * Unable to fully structure code
-     * Could not resolve type clashes
-     */
-    public byte[] e() throws fg_1 {
-        block24: {
-            block23: {
-                var2_1 = null;
-                var1_2 = qm_0.J();
-                v0 /* !! */  = this.I;
-                if (var1_2 == null) break block23;
-                try {
-                    block30: {
-                        if (!v0 /* !! */ .Z()) break block24;
-                        break block30;
-                        catch (InterruptedException v1) {
-                            throw D8.a(v1);
-                        }
-                    }
-                    v0 /* !! */  = this.t.get(this.w + 1);
-                }
-                catch (InterruptedException v2) {
-                    throw D8.a(v2);
-                }
-            }
-            var2_1 = (vw_0)v0 /* !! */ ;
-            var3_3 = this.k;
-            synchronized (var3_3) {
-                v3 = var2_1;
-                if (var1_2 != null) {
-                    block25: {
-                        block26: {
-                            try {
-                                if (v3 != null) break block25;
-                                this.k.wait();
-                                break block26;
-                            }
-                            catch (fg_1 v4) {
-                                throw D8.a(v4);
-                            }
-                            {
-                                catch (InterruptedException var4_4) {
-                                    var4_4.printStackTrace();
-                                }
-                            }
-                        }
-                        var2_1 = (vw_0)this.t.get(this.w + 1);
-                    }
-                    v3 = var3_3;
-                }
-                // ** MonitorExit[v3] (shouldn't be in output)
-            }
-        }
-        throw new fg_1("连接未建立");
-        {
-            block28: {
-                block29: {
-                    block27: {
-                        v6 = this;
-                        if (var1_2 == null) break block27;
-                        try {
-                            block31: {
-                                if (v6.v) break block28;
-                                break block31;
-                                catch (InterruptedException v7) {
-                                    throw D8.a(v7);
-                                }
-                            }
-                            v6 = this;
-                        }
-                        catch (InterruptedException v8) {
-                            throw D8.a(v8);
-                        }
-                    }
-                    v6.M();
-                    v9 = var2_1;
-                    if (var1_2 == null) ** GOTO lbl78
-                    try {
-                        block32: {
-                            if (v9 != null) break block29;
-                            break block32;
-                            catch (InterruptedException v10) {
-                                throw D8.a(v10);
-                            }
-                        }
-                        throw new fg_1("连接已断开ccccccc");
-                    }
-                    catch (InterruptedException v11) {
-                        throw D8.a(v11);
-                    }
-                }
-                this.I.J.S();
-                ++this.w;
-                var3_3 = this.k;
-                synchronized (var3_3) {
-                    this.t.remove(var2_1.N());
-                    v9 = var3_3;
-lbl78:
-                    // 2 sources
-
-                    // ** MonitorExit[v9] (shouldn't be in output)
-                    this.S += (long)var2_1.q().length;
-                    return var2_1.q();
-                }
-            }
-            throw new fg_1("连接已断开");
-        }
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     * Unable to fully structure code
-     */
-    public void t(DatagramPacket var1_1) {
-        block34: {
-            block35: {
-                block29: {
-                    block30: {
-                        block33: {
-                            block32: {
-                                block31: {
-                                    block26: {
-                                        block27: {
-                                            block28: {
-                                                block25: {
-                                                    block24: {
-                                                        var2_2 = qm_0.J();
-                                                        if (var1_1 == null) ** GOTO lbl127
-                                                        v0 = this.I.Z();
-                                                        if (var2_2 == null) break block24;
-                                                        if (v0 == 0) ** GOTO lbl127
-                                                        v0 = ym_2.i(var1_1);
-                                                    }
-                                                    var4_3 = v0;
-                                                    var5_4 = ym_2.y(var1_1);
-                                                    v1 = var4_3;
-                                                    v2 = cs_0.a;
-                                                    if (var2_2 == null) break block25;
-                                                    if (v1 != v2) ** GOTO lbl127
-                                                    this.I.T();
-                                                    v1 = var5_4;
-                                                    v2 = BN.B;
-                                                }
-                                                if (var2_2 == null) break block26;
-                                                if (v1 != v2) break block27;
-                                                var3_5 = new vw_0(var1_1);
-                                                var6_6 = var3_5.o();
-                                                v3 = var7_8 = (fr_0)this.I.d.X.get(var6_6);
-                                                if (var2_2 != null) {
-                                                    if (v3 == null) {
-                                                        var7_8 = new fr_0();
-                                                        var7_8.H(var6_6);
-                                                        this.I.d.X.put(var6_6, var7_8);
-                                                    }
-                                                    v3 = var7_8;
-                                                }
-                                                v3.A(var3_5.q().length);
-                                                v4 = var6_6;
-                                                if (var2_2 != null) {
-                                                    if (v4 > this.l) {
-                                                        this.l = var6_6;
-                                                    }
-                                                    v4 = var3_5.N();
-                                                }
-                                                var8_10 = v4;
-                                                v5 = this.I.J;
-                                                v6 = var3_5;
-                                                if (var2_2 == null) break block28;
-                                                v5.w(v6.N());
-                                                if (var8_10 <= this.w) ** GOTO lbl127
-                                                v7 = this.k;
-                                                v6 = v7;
-                                                v5 = v7;
-                                            }
-                                            var9_12 = v6;
-                                            synchronized (v5) {
-                                                this.t.put(var8_10, var3_5);
-                                                v8 = this.t;
-                                                if (var2_2 != null) {
-                                                    if (v8.containsKey(this.w + 1)) {
-                                                        this.k.notify();
-                                                    }
-                                                    v8 = var9_12;
-                                                }
-                                                // ** MonitorExit[v8] (shouldn't be in output)
-                                            }
-                                        }
-                                        v1 = var5_4;
-                                        v2 = BN.D;
-                                    }
-                                    if (var2_2 == null) break block29;
-                                    if (v1 != v2) break block30;
-                                    var6_7 = new vt_0(var1_1);
-                                    var7_9 = var6_7.n();
-                                    if (var7_9 > this.F) {
-                                        this.F = var7_9;
-                                    }
-                                    var8_11 = var6_7.t();
-                                    var9_13 = 0;
-                                    if (var2_2 != null) ** GOTO lbl81
-                                    block3: while (true) {
-                                        v10 = var8_11.get(var9_13);
-                                        do {
-                                            var10_15 = (Integer)v10;
-                                            this.I.J.a(var10_15);
-                                            ++var9_13;
-lbl81:
-                                            // 2 sources
-
-                                            if (var9_13 < var8_11.size()) continue block3;
-                                            v10 = this.I.d.A(var6_7.W());
-                                        } while (var2_2 == null);
-                                        break;
-                                    }
-                                    v11 = var9_14 = v10;
-                                    if (var2_2 != null) {
-                                        if (v11 != null && var6_7.L() > var9_14.o()) {
-                                            var9_14.C(var6_7.L());
-                                        }
-                                        v11 = this.I.d.A(var6_7.r());
-                                    }
-                                    v12 = var10_16 = v11;
-                                    if (var2_2 != null) {
-                                        if (v12 != null && var6_7.N() > var10_16.o()) {
-                                            var10_16.C(var6_7.N());
-                                        }
-                                        v12 = this.I.d.A(var6_7.O());
-                                    }
-                                    if ((var11_17 = v12) == null) break block31;
-                                    v13 = var6_7.Z();
-                                    if (var2_2 == null) break block32;
-                                    if (v13 > var11_17.o()) {
-                                        var11_17.C(var6_7.Z());
-                                    }
-                                }
-                                v14 = this;
-                                if (var2_2 == null) break block33;
-                                v13 = (int)v14.Q();
-                            }
-                            if (v13 == 0) ** GOTO lbl127
-                            v14 = this;
-                        }
-                        v14.I.J.H();
-                        if (var2_2 != null) ** GOTO lbl127
-                    }
-                    v1 = var5_4;
-                    v2 = BN.Y;
-                }
-                if (var2_2 == null) break block34;
-                if (v1 != v2) break block35;
-                var6_7 = new vm_0(var1_1);
-                this.b = true;
-                var7_9 = var6_7.v();
-                this.A(var7_9);
-                if (var2_2 != null) ** GOTO lbl127
-            }
-            v1 = var5_4;
-            v2 = BN.f;
-        }
-        if (v1 == v2) {
-            var6_7 = new VK(var1_1);
-            this.I.N();
-        }
-lbl127:
-        // 11 sources
-
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    public void J() {
-        Object object = this.k;
-        synchronized (object) {
-            this.t.clear();
-        }
-    }
-
-    boolean Q() {
-        this.H = this.I.J.B - this.F;
-        ky_2[] ky_2Array = qm_0.J();
-        boolean bl = false;
-        float f10 = (float)this.H - this.m;
-        float f11 = f10 == 0.0f ? 0 : (f10 < 0.0f ? -1 : 1);
-        if (ky_2Array != null) {
-            if (f11 < 0) {
-                bl = true;
-            }
-            f11 = (float)bl;
-        }
-        return (boolean)f11;
-    }
-
-    void A(int n10) {
-        block3: {
-            D8 d8;
-            block2: {
-                this.D = n10;
-                ky_2[] ky_2Array = qm_0.J();
-                d8 = this;
-                if (ky_2Array == null) break block2;
-                if (d8.v) break block3;
-                d8 = this;
-            }
-            d8.M();
-        }
-    }
-
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    void M() {
-        Object object;
-        block8: {
-            int n10;
-            block7: {
-                ky_2[] ky_2Array = qm_0.J();
-                n10 = this.v;
-                if (ky_2Array != null) {
-                    if (n10 != 0) return;
-                    n10 = this.b;
-                }
-                if (ky_2Array == null) break block7;
-                if (n10 == 0) return;
-                object = this;
-                if (ky_2Array == null) break block8;
-                n10 = ((D8)object).w;
-            }
-            if (n10 < this.D - 1) return;
-            this.v = true;
-            object = this.k;
-        }
-        D8 d8 = object;
-        synchronized (object) {
-            this.k.notifyAll();
-            // ** MonitorExit[var2_2] (shouldn't be in output)
-            this.I.J.N();
+         String var19 = new String(var10002).intern();
+         byte var12 = -1;
+         var7[var5++] = var19;
+         if ((var2 += var3) >= var6) {
+            a = var7;
+            c = new String[3];
+            long var0 = 5167279490983469835L;
+            long var16 = 4292586453142807297L ^ var0;
+            var12 = -1;
+            d = var16;
+            x = 0;
             return;
-        }
-    }
+         }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    void g() {
-        block5: {
-            int n10;
-            block4: {
-                ky_2[] ky_2Array = qm_0.J();
-                n10 = this.v;
-                if (ky_2Array == null) break block4;
-                if (n10 != 0) break block5;
-                n10 = W + 1;
+         var3 = var4.charAt(var2);
+      }
+   }
+
+   D8(Qm_2 var1) {
+      this.n = (int)d;
+      this.F = -1;
+      this.m = (float)Cs_2.r;
+      this.v = false;
+      this.b = false;
+      this.Z = false;
+      this.I = var1;
+      this.V = new tz_4(var1);
+      this.q = var1.J;
+      this.g = var1.c;
+      this.U = var1.i;
+   }
+
+   public byte[] e() throws fG_3 {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 000: invokestatic Qm_2.J ()[Lcom/ky_4;
+      // 003: aconst_null
+      // 004: astore 2
+      // 005: astore 1
+      // 006: aload 0
+      // 007: getfield D8.I LQm_2;
+      // 00a: aload 1
+      // 00b: ifnull 032
+      // 00e: invokevirtual Qm_2.Z ()Z
+      // 011: ifeq 076
+      // 014: goto 01b
+      // 017: invokestatic D8.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 01a: athrow
+      // 01b: aload 0
+      // 01c: getfield D8.t Ljava/util/HashMap;
+      // 01f: aload 0
+      // 020: getfield D8.w I
+      // 023: bipush 1
+      // 024: iadd
+      // 025: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 028: invokevirtual java/util/HashMap.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 02b: goto 032
+      // 02e: invokestatic D8.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 031: athrow
+      // 032: checkcast Vw_2
+      // 035: astore 2
+      // 036: aload 0
+      // 037: getfield D8.k Ljava/lang/Object;
+      // 03a: dup
+      // 03b: astore 3
+      // 03c: monitorenter
+      // 03d: aload 2
+      // 03e: aload 1
+      // 03f: ifnull 06f
+      // 042: ifnonnull 06e
+      // 045: aload 0
+      // 046: getfield D8.k Ljava/lang/Object;
+      // 049: invokevirtual java/lang/Object.wait ()V
+      // 04c: goto 05a
+      // 04f: invokestatic D8.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 052: athrow
+      // 053: astore 4
+      // 055: aload 4
+      // 057: invokevirtual java/lang/InterruptedException.printStackTrace ()V
+      // 05a: aload 0
+      // 05b: getfield D8.t Ljava/util/HashMap;
+      // 05e: aload 0
+      // 05f: getfield D8.w I
+      // 062: bipush 1
+      // 063: iadd
+      // 064: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 067: invokevirtual java/util/HashMap.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 06a: checkcast Vw_2
+      // 06d: astore 2
+      // 06e: aload 3
+      // 06f: monitorexit
+      // 070: goto 087
+      // 073: aload 3
+      // 074: monitorexit
+      // 075: athrow
+      // 076: new fG_3
+      // 079: dup
+      // 07a: sipush 16698
+      // 07d: sipush -32603
+      // 080: invokestatic D8.a (II)Ljava/lang/String;
+      // 083: invokespecial fG_3.<init> (Ljava/lang/String;)V
+      // 086: athrow
+      // 087: aload 0
+      // 088: aload 1
+      // 089: ifnull 0a1
+      // 08c: getfield D8.v Z
+      // 08f: ifne 10e
+      // 092: goto 099
+      // 095: invokestatic D8.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 098: athrow
+      // 099: aload 0
+      // 09a: goto 0a1
+      // 09d: invokestatic D8.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0a0: athrow
+      // 0a1: invokevirtual D8.M ()V
+      // 0a4: aload 2
+      // 0a5: aload 1
+      // 0a6: ifnull 0f3
+      // 0a9: ifnonnull 0c8
+      // 0ac: goto 0b3
+      // 0af: invokestatic D8.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0b2: athrow
+      // 0b3: new fG_3
+      // 0b6: dup
+      // 0b7: sipush 16696
+      // 0ba: sipush 21314
+      // 0bd: invokestatic D8.a (II)Ljava/lang/String;
+      // 0c0: invokespecial fG_3.<init> (Ljava/lang/String;)V
+      // 0c3: athrow
+      // 0c4: invokestatic D8.a (Ljava/lang/Exception;)Ljava/lang/Exception;
+      // 0c7: athrow
+      // 0c8: aload 0
+      // 0c9: getfield D8.I LQm_2;
+      // 0cc: getfield Qm_2.J Lx1;
+      // 0cf: invokevirtual x1.S ()V
+      // 0d2: aload 0
+      // 0d3: dup
+      // 0d4: getfield D8.w I
+      // 0d7: bipush 1
+      // 0d8: iadd
+      // 0d9: putfield D8.w I
+      // 0dc: aload 0
+      // 0dd: getfield D8.k Ljava/lang/Object;
+      // 0e0: dup
+      // 0e1: astore 3
+      // 0e2: monitorenter
+      // 0e3: aload 0
+      // 0e4: getfield D8.t Ljava/util/HashMap;
+      // 0e7: aload 2
+      // 0e8: invokevirtual Vw_2.N ()I
+      // 0eb: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 0ee: invokevirtual java/util/HashMap.remove (Ljava/lang/Object;)Ljava/lang/Object;
+      // 0f1: pop
+      // 0f2: aload 3
+      // 0f3: monitorexit
+      // 0f4: goto 0fa
+      // 0f7: aload 3
+      // 0f8: monitorexit
+      // 0f9: athrow
+      // 0fa: aload 0
+      // 0fb: dup
+      // 0fc: getfield D8.S J
+      // 0ff: aload 2
+      // 100: invokevirtual Vw_2.q ()[B
+      // 103: arraylength
+      // 104: i2l
+      // 105: ladd
+      // 106: putfield D8.S J
+      // 109: aload 2
+      // 10a: invokevirtual Vw_2.q ()[B
+      // 10d: areturn
+      // 10e: new fG_3
+      // 111: dup
+      // 112: sipush 16699
+      // 115: sipush 17290
+      // 118: invokestatic D8.a (II)Ljava/lang/String;
+      // 11b: invokespecial fG_3.<init> (Ljava/lang/String;)V
+      // 11e: athrow
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   public void t(DatagramPacket var1) {
+      com.ky_4[] var2 = Qm_2.J();
+      if (var1 != null) {
+         int var10000 = this.I.Z();
+         if (var2 != null) {
+            if (var10000 == 0) {
+               return;
             }
-            W = n10;
-            this.v = true;
-            Object object = this.k;
-            synchronized (object) {
-                this.k.notifyAll();
+
+            var10000 = ym_4.i(var1);
+         }
+
+         int var4 = var10000;
+         int var5 = ym_4.y(var1);
+         var10000 = var4;
+         short var10001 = Cs_2.a;
+         if (var2 != null) {
+            if (var4 != Cs_2.a) {
+               return;
             }
-            this.I.J.O();
-        }
-    }
 
-    public int C() {
-        return this.l;
-    }
+            this.I.T();
+            var10000 = var5;
+            var10001 = BN.B;
+         }
 
-    public void B(int n10) {
-        this.l = n10;
-    }
+         if (var2 != null) {
+            if (var10000 == var10001) {
+               Vw_2 var3 = new Vw_2(var1);
+               int var14 = var3.o();
+               Fr_2 var16 = (Fr_2)this.I.d.X.get(var14);
+               Fr_2 var28 = var16;
+               if (var2 != null) {
+                  if (var16 == null) {
+                     var16 = new Fr_2();
+                     var16.H(var14);
+                     this.I.d.X.put(var14, var16);
+                  }
 
-    public int J() {
-        return this.D;
-    }
+                  var28 = var16;
+               }
 
-    public void o(int n10) {
-        this.D = n10;
-    }
+               var28.A(var3.q().length);
+               var10000 = var14;
+               if (var2 != null) {
+                  if (var14 > this.l) {
+                     this.l = var14;
+                  }
 
-    private static Exception a(Exception exception) {
-        return exception;
-    }
+                  var10000 = var3.N();
+               }
 
-    private static String a(int n10, int n11) {
-        int n12 = (n10 ^ 0x413A) & 0xFFFF;
-        if (c[n12] == null) {
-            int n13;
-            char[] cArray = a[n12].toCharArray();
-            int n14 = switch (cArray[0] & 0xFF) {
-                case 0 -> 11;
-                case 1 -> 91;
-                case 2 -> 32;
-                case 3 -> 103;
-                case 4 -> 131;
-                case 5 -> 197;
-                case 6 -> 205;
-                case 7 -> 240;
-                case 8 -> 54;
-                case 9 -> 89;
-                case 10 -> 34;
-                case 11 -> 165;
-                case 12 -> 212;
-                case 13 -> 15;
-                case 14 -> 213;
-                case 15 -> 244;
-                case 16 -> 116;
-                case 17 -> 108;
-                case 18 -> 6;
-                case 19 -> 49;
-                case 20 -> 107;
-                case 21 -> 79;
-                case 22 -> 95;
-                case 23 -> 36;
-                case 24 -> 113;
-                case 25 -> 245;
-                case 26 -> 223;
-                case 27 -> 160;
-                case 28 -> 247;
-                case 29 -> 166;
-                case 30 -> 55;
-                case 31 -> 10;
-                case 32 -> 224;
-                case 33 -> 226;
-                case 34 -> 225;
-                case 35 -> 241;
-                case 36 -> 236;
-                case 37 -> 178;
-                case 38 -> 145;
-                case 39 -> 137;
-                case 40 -> 80;
-                case 41 -> 70;
-                case 42 -> 227;
-                case 43 -> 254;
-                case 44 -> 201;
-                case 45 -> 132;
-                case 46 -> 35;
-                case 47 -> 82;
-                case 48 -> 192;
-                case 49 -> 207;
-                case 50 -> 56;
-                case 51 -> 21;
-                case 52 -> 3;
-                case 53 -> 105;
-                case 54 -> 84;
-                case 55 -> 177;
-                case 56 -> 58;
-                case 57 -> 211;
-                case 58 -> 203;
-                case 59 -> 48;
-                case 60 -> 93;
-                case 61 -> 243;
-                case 62 -> 196;
-                case 63 -> 157;
-                case 64 -> 175;
-                case 65 -> 200;
-                case 66 -> 189;
-                case 67 -> 122;
-                case 68 -> 51;
-                case 69 -> 174;
-                case 70 -> 69;
-                case 71 -> 77;
-                case 72 -> 135;
-                case 73 -> 13;
-                case 74 -> 143;
-                case 75 -> 90;
-                case 76 -> 26;
-                case 77 -> 126;
-                case 78 -> 156;
-                case 79 -> 50;
-                case 80 -> 163;
-                case 81 -> 161;
-                case 82 -> 42;
-                case 83 -> 25;
-                case 84 -> 195;
-                case 85 -> 41;
-                case 86 -> 248;
-                case 87 -> 216;
-                case 88 -> 120;
-                case 89 -> 45;
-                case 90 -> 233;
-                case 91 -> 46;
-                case 92 -> 134;
-                case 93 -> 104;
-                case 94 -> 17;
-                case 95 -> 154;
-                case 96 -> 9;
-                case 97 -> 139;
-                case 98 -> 167;
-                case 99 -> 43;
-                case 100 -> 168;
-                case 101 -> 78;
-                case 102 -> 16;
-                case 103 -> 60;
-                case 104 -> 117;
-                case 105 -> 209;
-                case 106 -> 232;
-                case 107 -> 210;
-                case 108 -> 29;
-                case 109 -> 251;
-                case 110 -> 181;
-                case 111 -> 176;
-                case 112 -> 73;
-                case 113 -> 222;
-                case 114 -> 76;
-                case 115 -> 33;
-                case 116 -> 149;
-                case 117 -> 159;
-                case 118 -> 96;
-                case 119 -> 229;
-                case 120 -> 172;
-                case 121 -> 124;
-                case 122 -> 2;
-                case 123 -> 164;
-                case 124 -> 31;
-                case 125 -> 246;
-                case 126 -> 202;
-                case 127 -> 115;
-                case 128 -> 194;
-                case 129 -> 150;
-                case 130 -> 47;
-                case 131 -> 112;
-                case 132 -> 198;
-                case 133 -> 102;
-                case 134 -> 14;
-                case 135 -> 66;
-                case 136 -> 180;
-                case 137 -> 138;
-                case 138 -> 250;
-                case 139 -> 99;
-                case 140 -> 8;
-                case 141 -> 24;
-                case 142 -> 64;
-                case 143 -> 228;
-                case 144 -> 147;
-                case 145 -> 230;
-                case 146 -> 220;
-                case 147 -> 231;
-                case 148 -> 234;
-                case 149 -> 100;
-                case 150 -> 146;
-                case 151 -> 39;
-                case 152 -> 52;
-                case 153 -> 128;
-                case 154 -> 86;
-                case 155 -> 237;
-                case 156 -> 19;
-                case 157 -> 57;
-                case 158 -> 83;
-                case 159 -> 38;
-                case 160 -> 53;
-                case 161 -> 74;
-                case 162 -> 152;
-                case 163 -> 151;
-                case 164 -> 4;
-                case 165 -> 158;
-                case 166 -> 87;
-                case 167 -> 255;
-                case 168 -> 75;
-                case 169 -> 94;
-                case 170 -> 23;
-                case 171 -> 215;
-                case 172 -> 68;
-                case 173 -> 133;
-                case 174 -> 106;
-                case 175 -> 190;
-                case 176 -> 121;
-                case 177 -> 62;
-                case 178 -> 155;
-                case 179 -> 85;
-                case 180 -> 0;
-                case 181 -> 101;
-                case 182 -> 199;
-                case 183 -> 12;
-                case 184 -> 188;
-                case 185 -> 136;
-                case 186 -> 98;
-                case 187 -> 169;
-                case 188 -> 110;
-                case 189 -> 7;
-                case 190 -> 5;
-                case 191 -> 125;
-                case 192 -> 20;
-                case 193 -> 185;
-                case 194 -> 238;
-                case 195 -> 109;
-                case 196 -> 140;
-                case 197 -> 204;
-                case 198 -> 127;
-                case 199 -> 239;
-                case 200 -> 170;
-                case 201 -> 71;
-                case 202 -> 141;
-                case 203 -> 37;
-                case 204 -> 249;
-                case 205 -> 67;
-                case 206 -> 217;
-                case 207 -> 183;
-                case 208 -> 111;
-                case 209 -> 235;
-                case 210 -> 81;
-                case 211 -> 114;
-                case 212 -> 129;
-                case 213 -> 218;
-                case 214 -> 182;
-                case 215 -> 144;
-                case 216 -> 214;
-                case 217 -> 97;
-                case 218 -> 72;
-                case 219 -> 153;
-                case 220 -> 206;
-                case 221 -> 44;
-                case 222 -> 61;
-                case 223 -> 63;
-                case 224 -> 130;
-                case 225 -> 186;
-                case 226 -> 221;
-                case 227 -> 92;
-                case 228 -> 148;
-                case 229 -> 187;
-                case 230 -> 219;
-                case 231 -> 208;
-                case 232 -> 40;
-                case 233 -> 30;
-                case 234 -> 27;
-                case 235 -> 179;
-                case 236 -> 242;
-                case 237 -> 171;
-                case 238 -> 191;
-                case 239 -> 28;
-                case 240 -> 193;
-                case 241 -> 59;
-                case 242 -> 123;
-                case 243 -> 173;
-                case 244 -> 253;
-                case 245 -> 142;
-                case 246 -> 18;
-                case 247 -> 65;
-                case 248 -> 22;
-                case 249 -> 119;
-                case 250 -> 184;
-                case 251 -> 162;
-                case 252 -> 252;
-                case 253 -> 118;
-                case 254 -> 1;
-                default -> 88;
-            };
-            int n15 = (n11 & 0xFF) - n14;
-            if (n15 < 0) {
-                n15 += 256;
+               int var17 = var10000;
+               Object var30 = this.I.J;
+               Object var32 = var3;
+               if (var2 != null) {
+                  this.I.J.w(var3.N());
+                  if (var17 <= this.w) {
+                     return;
+                  }
+
+                  var30 = this.k;
+                  var32 = this.k;
+               }
+
+               Object var19 = var32;
+               synchronized (var30) {
+                  this.t.put(var17, var3);
+                  Object var31 = this.t;
+                  if (var2 != null) {
+                     if (this.t.containsKey(this.w + 1)) {
+                        this.k.notify();
+                     }
+
+                     var31 = var19;
+                  }
+
+                  // $VF: monitorexit
+                  return;
+               }
             }
-            if ((n13 = ((n11 & 0xFFFF) >>> 8) - n14) < 0) {
-                n13 += 256;
+
+            var10000 = var5;
+            var10001 = BN.D;
+         }
+
+         if (var2 != null) {
+            if (var10000 == var10001) {
+               Vt_2 var6 = new Vt_2(var1);
+               int var7 = var6.n();
+               if (var7 > this.F) {
+                  this.F = var7;
+               }
+
+               ArrayList var8 = var6.t();
+               int var9 = 0;
+               if (var2 == null) {
+                  int var10 = (Integer)var8.get(var9);
+                  this.I.J.a(var10);
+                  var9++;
+               }
+
+               while (true) {
+                  Object var23;
+                  if (var9 >= var8.size()) {
+                     var23 = this.I.d.A(var6.W());
+                     if (var2 != null) {
+                        Object var18 = var23;
+                        Object var24 = var18;
+                        if (var2 != null) {
+                           if (var18 != null && var6.L() > ((Fr_2)var18).o()) {
+                              ((Fr_2)var18).C(var6.L());
+                           }
+
+                           var24 = this.I.d.A(var6.r());
+                        }
+
+                        Object var20 = var24;
+                        Object var25 = var20;
+                        if (var2 != null) {
+                           if (var20 != null && var6.N() > ((Fr_2)var20).o()) {
+                              ((Fr_2)var20).C(var6.N());
+                           }
+
+                           var25 = this.I.d.A(var6.O());
+                        }
+
+                        label162: {
+                           label163: {
+                              Object var11 = var25;
+                              if (var11 != null) {
+                                 var10000 = var6.Z();
+                                 if (var2 == null) {
+                                    break label163;
+                                 }
+
+                                 if (var10000 > ((Fr_2)var11).o()) {
+                                    ((Fr_2)var11).C(var6.Z());
+                                 }
+                              }
+
+                              var27 = this;
+                              if (var2 == null) {
+                                 break label162;
+                              }
+
+                              var10000 = this.Q();
+                           }
+
+                           if (var10000 == 0) {
+                              return;
+                           }
+
+                           var27 = this;
+                        }
+
+                        var27.I.J.H();
+                        if (var2 != null) {
+                           return;
+                        }
+                        break;
+                     }
+                  } else {
+                     var23 = var8.get(var9);
+                  }
+
+                  int var21 = (Integer)var23;
+                  this.I.J.a(var21);
+                  var9++;
+               }
             }
-            int n16 = 0;
-            while (n16 < cArray.length) {
-                int n17 = n16 % 2;
-                int n18 = n16;
-                char[] cArray2 = cArray;
-                char c2 = cArray[n18];
-                if (n17 == 0) {
-                    cArray2[n18] = (char)(c2 ^ n15);
-                    n15 = ((n15 >>> 3 | n15 << 5) ^ cArray[n16]) & 0xFF;
-                } else {
-                    cArray2[n18] = (char)(c2 ^ n13);
-                    n13 = ((n13 >>> 3 | n13 << 5) ^ cArray[n16]) & 0xFF;
-                }
-                ++n16;
+
+            var10000 = var5;
+            var10001 = BN.Y;
+         }
+
+         if (var2 != null) {
+            if (var10000 == var10001) {
+               Vm_2 var13 = new Vm_2(var1);
+               this.b = true;
+               int var15 = var13.v();
+               this.A(var15);
+               if (var2 != null) {
+                  return;
+               }
             }
-            D8.c[n12] = new String(cArray).intern();
-        }
-        return c[n12];
-    }
+
+            var10000 = var5;
+            var10001 = BN.f;
+         }
+
+         if (var10000 == var10001) {
+            new VK(var1);
+            this.I.N();
+         }
+      }
+   }
+
+   public void J() {
+      synchronized (this.k) {
+         this.t.clear();
+      }
+   }
+
+   boolean Q() {
+      com.ky_4[] var10000 = Qm_2.J();
+      this.H = this.I.J.B - this.F;
+      com.ky_4[] var1 = var10000;
+      byte var2 = 0;
+      float var4;
+      int var3 = (var4 = (float)this.H - this.m) == 0.0F ? 0 : (var4 < 0.0F ? -1 : 1);
+      if (var1 != null) {
+         if (var3 < 0) {
+            var2 = 1;
+         }
+
+         var3 = var2;
+      }
+
+      return (boolean)var3;
+   }
+
+   void A(int var1) {
+      com.ky_4[] var10000 = Qm_2.J();
+      this.D = var1;
+      com.ky_4[] var2 = var10000;
+      D8 var3 = this;
+      if (var2 != null) {
+         if (this.v) {
+            return;
+         }
+
+         var3 = this;
+      }
+
+      var3.M();
+   }
+
+   void M() {
+      com.ky_4[] var1 = Qm_2.J();
+      int var10000 = this.v;
+      if (var1 != null) {
+         if (this.v) {
+            return;
+         }
+
+         var10000 = this.b;
+      }
+
+      label43: {
+         if (var1 != null) {
+            if (var10000 == 0) {
+               return;
+            }
+
+            var4 = this;
+            if (var1 == null) {
+               break label43;
+            }
+
+            var10000 = this.w;
+         }
+
+         if (var10000 < this.D - 1) {
+            return;
+         }
+
+         this.v = true;
+         var4 = this.k;
+      }
+
+      synchronized (var4) {
+         this.k.notifyAll();
+      }
+
+      this.I.J.N();
+   }
+
+   void g() {
+      com.ky_4[] var1 = Qm_2.J();
+      int var10000 = this.v;
+      if (var1 != null) {
+         if (this.v) {
+            return;
+         }
+
+         var10000 = W + 1;
+      }
+
+      W = var10000;
+      this.v = true;
+      synchronized (this.k) {
+         this.k.notifyAll();
+      }
+
+      this.I.J.O();
+   }
+
+   public int C() {
+      return this.l;
+   }
+
+   public void B(int var1) {
+      this.l = var1;
+   }
+
+   public int J$int() {
+      return this.D;
+   }
+
+   public void o(int var1) {
+      this.D = var1;
+   }
+
+   private static Exception a(Exception var0) {
+      return var0;
+   }
+
+   private static String a(int var0, int var1) {
+      int var2 = (var0 ^ 16698) & 65535;
+      if (c[var2] == null) {
+         char[] var3 = a[var2].toCharArray();
+
+         short var4 = switch (var3[0] & 0xFF) {
+            case 0 -> 11;
+            case 1 -> 91;
+            case 2 -> 32;
+            case 3 -> 103;
+            case 4 -> 131;
+            case 5 -> 197;
+            case 6 -> 205;
+            case 7 -> 240;
+            case 8 -> 54;
+            case 9 -> 89;
+            case 10 -> 34;
+            case 11 -> 165;
+            case 12 -> 212;
+            case 13 -> 15;
+            case 14 -> 213;
+            case 15 -> 244;
+            case 16 -> 116;
+            case 17 -> 108;
+            case 18 -> 6;
+            case 19 -> 49;
+            case 20 -> 107;
+            case 21 -> 79;
+            case 22 -> 95;
+            case 23 -> 36;
+            case 24 -> 113;
+            case 25 -> 245;
+            case 26 -> 223;
+            case 27 -> 160;
+            case 28 -> 247;
+            case 29 -> 166;
+            case 30 -> 55;
+            case 31 -> 10;
+            case 32 -> 224;
+            case 33 -> 226;
+            case 34 -> 225;
+            case 35 -> 241;
+            case 36 -> 236;
+            case 37 -> 178;
+            case 38 -> 145;
+            case 39 -> 137;
+            case 40 -> 80;
+            case 41 -> 70;
+            case 42 -> 227;
+            case 43 -> 254;
+            case 44 -> 201;
+            case 45 -> 132;
+            case 46 -> 35;
+            case 47 -> 82;
+            case 48 -> 192;
+            case 49 -> 207;
+            case 50 -> 56;
+            case 51 -> 21;
+            case 52 -> 3;
+            case 53 -> 105;
+            case 54 -> 84;
+            case 55 -> 177;
+            case 56 -> 58;
+            case 57 -> 211;
+            case 58 -> 203;
+            case 59 -> 48;
+            case 60 -> 93;
+            case 61 -> 243;
+            case 62 -> 196;
+            case 63 -> 157;
+            case 64 -> 175;
+            case 65 -> 200;
+            case 66 -> 189;
+            case 67 -> 122;
+            case 68 -> 51;
+            case 69 -> 174;
+            case 70 -> 69;
+            case 71 -> 77;
+            case 72 -> 135;
+            case 73 -> 13;
+            case 74 -> 143;
+            case 75 -> 90;
+            case 76 -> 26;
+            case 77 -> 126;
+            case 78 -> 156;
+            case 79 -> 50;
+            case 80 -> 163;
+            case 81 -> 161;
+            case 82 -> 42;
+            case 83 -> 25;
+            case 84 -> 195;
+            case 85 -> 41;
+            case 86 -> 248;
+            case 87 -> 216;
+            case 88 -> 120;
+            case 89 -> 45;
+            case 90 -> 233;
+            case 91 -> 46;
+            case 92 -> 134;
+            case 93 -> 104;
+            case 94 -> 17;
+            case 95 -> 154;
+            case 96 -> 9;
+            case 97 -> 139;
+            case 98 -> 167;
+            case 99 -> 43;
+            case 100 -> 168;
+            case 101 -> 78;
+            case 102 -> 16;
+            case 103 -> 60;
+            case 104 -> 117;
+            case 105 -> 209;
+            case 106 -> 232;
+            case 107 -> 210;
+            case 108 -> 29;
+            case 109 -> 251;
+            case 110 -> 181;
+            case 111 -> 176;
+            case 112 -> 73;
+            case 113 -> 222;
+            case 114 -> 76;
+            case 115 -> 33;
+            case 116 -> 149;
+            case 117 -> 159;
+            case 118 -> 96;
+            case 119 -> 229;
+            case 120 -> 172;
+            case 121 -> 124;
+            case 122 -> 2;
+            case 123 -> 164;
+            case 124 -> 31;
+            case 125 -> 246;
+            case 126 -> 202;
+            case 127 -> 115;
+            case 128 -> 194;
+            case 129 -> 150;
+            case 130 -> 47;
+            case 131 -> 112;
+            case 132 -> 198;
+            case 133 -> 102;
+            case 134 -> 14;
+            case 135 -> 66;
+            case 136 -> 180;
+            case 137 -> 138;
+            case 138 -> 250;
+            case 139 -> 99;
+            case 140 -> 8;
+            case 141 -> 24;
+            case 142 -> 64;
+            case 143 -> 228;
+            case 144 -> 147;
+            case 145 -> 230;
+            case 146 -> 220;
+            case 147 -> 231;
+            case 148 -> 234;
+            case 149 -> 100;
+            case 150 -> 146;
+            case 151 -> 39;
+            case 152 -> 52;
+            case 153 -> 128;
+            case 154 -> 86;
+            case 155 -> 237;
+            case 156 -> 19;
+            case 157 -> 57;
+            case 158 -> 83;
+            case 159 -> 38;
+            case 160 -> 53;
+            case 161 -> 74;
+            case 162 -> 152;
+            case 163 -> 151;
+            case 164 -> 4;
+            case 165 -> 158;
+            case 166 -> 87;
+            case 167 -> 255;
+            case 168 -> 75;
+            case 169 -> 94;
+            case 170 -> 23;
+            case 171 -> 215;
+            case 172 -> 68;
+            case 173 -> 133;
+            case 174 -> 106;
+            case 175 -> 190;
+            case 176 -> 121;
+            case 177 -> 62;
+            case 178 -> 155;
+            case 179 -> 85;
+            case 180 -> 0;
+            case 181 -> 101;
+            case 182 -> 199;
+            case 183 -> 12;
+            case 184 -> 188;
+            case 185 -> 136;
+            case 186 -> 98;
+            case 187 -> 169;
+            case 188 -> 110;
+            case 189 -> 7;
+            case 190 -> 5;
+            case 191 -> 125;
+            case 192 -> 20;
+            case 193 -> 185;
+            case 194 -> 238;
+            case 195 -> 109;
+            case 196 -> 140;
+            case 197 -> 204;
+            case 198 -> 127;
+            case 199 -> 239;
+            case 200 -> 170;
+            case 201 -> 71;
+            case 202 -> 141;
+            case 203 -> 37;
+            case 204 -> 249;
+            case 205 -> 67;
+            case 206 -> 217;
+            case 207 -> 183;
+            case 208 -> 111;
+            case 209 -> 235;
+            case 210 -> 81;
+            case 211 -> 114;
+            case 212 -> 129;
+            case 213 -> 218;
+            case 214 -> 182;
+            case 215 -> 144;
+            case 216 -> 214;
+            case 217 -> 97;
+            case 218 -> 72;
+            case 219 -> 153;
+            case 220 -> 206;
+            case 221 -> 44;
+            case 222 -> 61;
+            case 223 -> 63;
+            case 224 -> 130;
+            case 225 -> 186;
+            case 226 -> 221;
+            case 227 -> 92;
+            case 228 -> 148;
+            case 229 -> 187;
+            case 230 -> 219;
+            case 231 -> 208;
+            case 232 -> 40;
+            case 233 -> 30;
+            case 234 -> 27;
+            case 235 -> 179;
+            case 236 -> 242;
+            case 237 -> 171;
+            case 238 -> 191;
+            case 239 -> 28;
+            case 240 -> 193;
+            case 241 -> 59;
+            case 242 -> 123;
+            case 243 -> 173;
+            case 244 -> 253;
+            case 245 -> 142;
+            case 246 -> 18;
+            case 247 -> 65;
+            case 248 -> 22;
+            case 249 -> 119;
+            case 250 -> 184;
+            case 251 -> 162;
+            case 252 -> 252;
+            case 253 -> 118;
+            case 254 -> 1;
+            default -> 88;
+         };
+         int var5 = (var1 & 0xFF) - var4;
+         if (var5 < 0) {
+            var5 += 256;
+         }
+
+         int var6 = ((var1 & 65535) >>> 8) - var4;
+         if (var6 < 0) {
+            var6 += 256;
+         }
+
+         for (int var7 = 0; var7 < var3.length; var7++) {
+            int var8 = var7 % 2;
+            char var10002 = var3[var7];
+            if (var8 == 0) {
+               var3[var7] = (char)(var10002 ^ var5);
+               var5 = ((var5 >>> 3 | var5 << 5) ^ var3[var7]) & 0xFF;
+            } else {
+               var3[var7] = (char)(var10002 ^ var6);
+               var6 = ((var6 >>> 3 | var6 << 5) ^ var3[var7]) & 0xFF;
+            }
+         }
+
+         c[var2] = new String(var3).intern();
+      }
+
+      return c[var2];
+   }
 }
+
+
+
+
 

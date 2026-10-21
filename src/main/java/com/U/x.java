@@ -1,57 +1,62 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.U;
 
-import com.U.O;
-import com.U.y;
 import java.awt.Canvas;
 import java.awt.Dimension;
 import java.awt.Graphics;
 
-class x
-extends Canvas {
-    final y C;
+class x extends Canvas {
+   final y C;
 
-    x(y y2) {
-        this.C = y2;
-    }
+   x(y var1) {
+      this.C = var1;
+   }
 
-    @Override
-    public void paint(Graphics graphics) {
-        block3: {
-            Graphics graphics2;
-            Dimension dimension;
-            block5: {
-                block6: {
-                    y y2;
-                    boolean bl;
-                    block4: {
-                        int n10;
-                        block2: {
-                            bl = O.U();
-                            n10 = this.C.isContinuousLayout();
-                            if (bl) break block2;
-                            if (n10 != 0) break block3;
-                            y2 = this.C;
-                            if (bl) break block4;
-                            n10 = y2.getLastDragLocation();
-                        }
-                        if (n10 == -1) break block3;
-                        y2 = this.C;
-                    }
-                    dimension = y.X(y2).getSize();
-                    graphics2 = graphics;
-                    if (bl) break block5;
-                    graphics2.setColor(this.C.Z);
-                    if (this.C.getOrientation() != 1) break block6;
-                    graphics.fillRect(0, 0, y.J(this.C) - 1, dimension.height - 1);
-                    if (!bl) break block3;
-                }
-                graphics2 = graphics;
+   @Override
+   public void paint(Graphics var1) {
+      boolean var2;
+      y var4;
+      label35: {
+         var2 = com.U.O.U();
+         int var10000 = this.C.isContinuousLayout();
+         if (!var2) {
+            if (var10000 != 0) {
+               return;
             }
-            graphics2.fillRect(0, 0, dimension.width - 1, y.H(this.C) - 1);
-        }
-    }
+
+            var4 = this.C;
+            if (var2) {
+               break label35;
+            }
+
+            var10000 = this.C.getLastDragLocation();
+         }
+
+         if (var10000 == -1) {
+            return;
+         }
+
+         var4 = this.C;
+      }
+
+      Dimension var3 = com.U.y.X(var4).getSize();
+      Graphics var5 = var1;
+      if (!var2) {
+         var1.setColor(this.C.Z);
+         if (this.C.getOrientation() == 1) {
+            var1.fillRect(0, 0, com.U.y.J(this.C) - 1, var3.height - 1);
+            if (!var2) {
+               return;
+            }
+         }
+
+         var5 = var1;
+      }
+
+      var5.fillRect(0, 0, var3.width - 1, com.U.y.H(this.C) - 1);
+   }
 }
+
+
+
+
 

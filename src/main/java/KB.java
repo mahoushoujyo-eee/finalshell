@@ -1,68 +1,79 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-class KB
-implements MouseListener {
-    final f7_0 P;
+class KB implements MouseListener {
+   final f7_2 P;
 
-    KB(f7_0 f7_02) {
-        this.P = f7_02;
-    }
+   KB(f7_2 var1) {
+      this.P = var1;
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-        block9: {
-            int n10;
-            int n11;
-            block8: {
-                String[] stringArray = Y_.j();
-                n11 = mouseEvent.getButton();
-                n10 = 1;
-                if (stringArray == null) break block8;
-                if (n11 != n10) break block9;
-                n11 = mouseEvent.getClickCount();
-                n10 = 2;
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+      String[] var2 = Y_.j();
+      int var10000 = var1.getButton();
+      byte var10001 = 1;
+      if (var2 != null) {
+         if (var10000 != 1) {
+            return;
+         }
+
+         var10000 = var1.getClickCount();
+         var10001 = 2;
+      }
+
+      if (var10000 == var10001) {
+         Object var6 = com.c.c(512348400607580044L).get(com.c.c(455024111575775958L).get(this));
+         Object[] var11 = com.c.f();
+         Method var10003 = com.c.d(457204009113929650L);
+         Object[] var10002 = var11;
+         Object var12 = var6;
+         Method var7 = var10003;
+
+         try {
+            var8 = (lN_3)var7.invoke(var12, var10002);
+         } catch (InvocationTargetException var5) {
+            throw var5.getTargetException();
+         }
+
+         lN_3 var3 = var8;
+         if (var3 != null) {
+            Object var9 = com.c.c(512348400607580044L).get(com.c.c(455024111575775958L).get(this));
+            Object[] var13 = com.c.a(var3);
+            var10003 = com.c.d(306838697711798482L);
+            var10002 = var13;
+            Object var14 = var9;
+            Method var10 = var10003;
+
+            try {
+               var10.invoke(var14, var10002);
+            } catch (InvocationTargetException var4) {
+               throw var4.getTargetException();
             }
-            if (n11 == n10) {
-                ln_1 ln_12;
-                try {
-                    ln_12 = (ln_1)this.P.e.U();
-                }
-                catch (InvocationTargetException invocationTargetException) {
-                    throw invocationTargetException.getTargetException();
-                }
-                ln_1 ln_13 = ln_12;
-                if (ln_13 != null) {
-                    try {
-                        this.P.e.e(ln_13);
-                    }
-                    catch (InvocationTargetException invocationTargetException) {
-                        throw invocationTargetException.getTargetException();
-                    }
-                }
-            }
-        }
-    }
+         }
+      }
+   }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+   }
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+   }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseExited(MouseEvent var1) {
+   }
 }
+
+
+
+
 

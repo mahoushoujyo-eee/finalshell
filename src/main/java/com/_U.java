@@ -1,49 +1,54 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.QB;
-import com.WC;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class _U
-implements ActionListener {
-    final QB o;
+class _U implements ActionListener {
+   final com.QB o;
 
-    _U(QB qB) {
-        this.o = qB;
-    }
+   _U(com.QB var1) {
+      this.o = var1;
+   }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     */
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        Object object = this.o.c;
-        synchronized (object) {
-            block7: {
-                block5: {
-                    QB qB;
-                    block6: {
-                        int[] nArray = WC.V();
-                        qB = this.o;
-                        if (nArray != null) break block5;
-                        if (!(qB.y > 0.0f)) break block6;
-                        this.o.y = Math.max(this.o.y - this.o.A, 0.0f);
-                        this.o.t(this.o.y);
-                        if (nArray == null) break block7;
-                    }
-                    this.o.D();
-                    this.o.S.Y();
-                    this.o.S = null;
-                    qB = this.o;
-                }
-                qB.U = false;
+   // $VF: Could not create synchronized statement, marking monitor enters and exits
+   // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      int[] var10000 = com.WC.V();
+      Object var3 = this.o.c;
+      synchronized (this.o.c){} // $VF: monitorenter 
+      int[] var2 = var10000;
+
+      try {
+         label34: {
+            com.QB var7 = this.o;
+            if (var2 == null) {
+               if (this.o.y > 0.0F) {
+                  this.o.y = Math.max(this.o.y - this.o.A, 0.0F);
+                  this.o.t(this.o.y);
+                  if (var2 == null) {
+                     break label34;
+                  }
+               }
+
+               this.o.D();
+               this.o.S.Y();
+               this.o.S = null;
+               var7 = this.o;
             }
-            this.o.f();
-        }
-    }
+
+            var7.U = false;
+         }
+
+         this.o.f();
+         // $VF: monitorexit
+      } finally {
+         // $VF: monitorexit
+      }
+   }
 }
+
+
+
+
 

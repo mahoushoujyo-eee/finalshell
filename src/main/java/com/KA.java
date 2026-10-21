@@ -1,214 +1,205 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.a9;
-import com.kp_0;
-import com.ne_1;
-import com.pb_2;
-import com.yd_0;
 import java.awt.Color;
 import java.awt.Stroke;
 import javax.swing.JSeparator;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- */
-public class KA
-extends JSeparator {
-    private static final String a;
+public class KA extends JSeparator {
+   private static final String a;
 
-    public KA() {
-        super(0);
-    }
+   public KA() {
+      super(0);
+   }
 
-    public Color D() {
-        return this.N().Y();
-    }
+   public Color D() {
+      return this.N().Y();
+   }
 
-    public KA Z(Color color) {
-        this.N().D(color);
-        return this;
-    }
+   public com.KA Z(Color var1) {
+      this.N().D(var1);
+      return this;
+   }
 
-    public Stroke d() {
-        return this.N().j();
-    }
+   public Stroke d() {
+      return this.N().j();
+   }
 
-    public KA o(Stroke stroke) {
-        this.N().o(stroke);
-        return this;
-    }
+   public com.KA o(Stroke var1) {
+      this.N().o(var1);
+      return this;
+   }
 
-    public int d() {
-        return this.N().A();
-    }
+   public int d$int() {
+      return this.N().A();
+   }
 
-    public KA J(int n10) {
-        this.N().F(n10);
-        return this;
-    }
+   public com.KA J(int var1) {
+      this.N().F(var1);
+      return this;
+   }
 
-    public int h() {
-        return this.N().I();
-    }
+   public int h() {
+      return this.N().I();
+   }
 
-    public KA E(int n10) {
-        this.N().v(n10);
-        return this;
-    }
+   public com.KA E(int var1) {
+      this.N().v(var1);
+      return this;
+   }
 
-    public yd_0 N() {
-        return (yd_0)this.getUI();
-    }
+   public com.Yd_2 N() {
+      return (com.Yd_2)this.getUI();
+   }
 
-    /*
-     * Unable to fully structure code
-     */
-    @Override
-    public void updateUI() {
-        block13: {
-            block12: {
-                block11: {
-                    block14: {
-                        var1_1 = pb_2.g();
-                        v0 = this;
-                        if (var1_1 == null) ** GOTO lbl26
-                        if (v0.getUI() == null) break block11;
-                        break block14;
-                        catch (Throwable v1) {
-                            throw KA.a(v1);
-                        }
-                    }
-                    try {
-                        block15: {
-                            v2 = this;
-                            if (var1_1 == null) break block12;
-                            break block15;
-                            catch (Throwable v3) {
-                                throw KA.a(v3);
-                            }
-                        }
-                        if (!(v2.getUI() instanceof yd_0)) {
-                        }
-                        ** GOTO lbl33
-                    }
-                    catch (Throwable v4) {
-                        throw KA.a(v4);
-                    }
-                }
-                try {
-                    v0 = this;
-lbl26:
-                    // 2 sources
+   @Override
+   public void updateUI() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic com/pb_4.g ()[I
+      // 03: astore 1
+      // 04: aload 0
+      // 05: aload 1
+      // 06: ifnull 33
+      // 09: invokevirtual com/KA.getUI ()Ljavax/swing/plaf/SeparatorUI;
+      // 0c: ifnull 32
+      // 0f: goto 16
+      // 12: invokestatic com/KA.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 15: athrow
+      // 16: aload 0
+      // 17: aload 1
+      // 18: ifnull 63
+      // 1b: goto 22
+      // 1e: invokestatic com/KA.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 21: athrow
+      // 22: invokevirtual com/KA.getUI ()Ljavax/swing/plaf/SeparatorUI;
+      // 25: instanceof com/Yd_2
+      // 28: ifne 5b
+      // 2b: goto 32
+      // 2e: invokestatic com/KA.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 31: athrow
+      // 32: aload 0
+      // 33: getstatic com/a9.zI Ljava/lang/String;
+      // 36: bipush 0
+      // 37: anewarray 80
+      // 3a: invokestatic com/Kp_2.w (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+      // 3d: checkcast com/Yd_2
+      // 40: invokevirtual com/KA.setUI (Ljavax/swing/plaf/SeparatorUI;)V
+      // 43: goto 6a
+      // 46: astore 2
+      // 47: aload 0
+      // 48: aload 2
+      // 49: invokestatic com/nE_3.g (Ljava/lang/Object;Ljava/lang/Throwable;)V
+      // 4c: aload 0
+      // 4d: new com/Yd_2
+      // 50: dup
+      // 51: invokespecial com/Yd_2.<init> ()V
+      // 54: invokevirtual com/KA.setUI (Ljavax/swing/plaf/SeparatorUI;)V
+      // 57: aload 1
+      // 58: ifnonnull 6a
+      // 5b: aload 0
+      // 5c: goto 63
+      // 5f: invokestatic com/KA.a (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      // 62: athrow
+      // 63: aload 0
+      // 64: invokevirtual com/KA.getUI ()Ljavax/swing/plaf/SeparatorUI;
+      // 67: invokevirtual com/KA.setUI (Ljavax/swing/plaf/SeparatorUI;)V
+      // 6a: return
+   }
 
-                    v0.setUI((yd_0)kp_0.w(a9.zI, new Object[0]));
-                    break block13;
-                }
-                catch (Throwable var2_2) {
-                    try {
-                        ne_1.g(this, var2_2);
-                        this.setUI(new yd_0());
-                        if (var1_1 != null) break block13;
-lbl33:
-                        // 2 sources
+   @Override
+   public String getUIClassID() {
+      return a;
+   }
 
-                        v2 = this;
-                    }
-                    catch (Throwable v5) {
-                        throw KA.a(v5);
-                    }
-                }
+   private static Throwable a(Throwable var0) {
+      return var0;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "?4X\u000f}#\u001e\u0001.{\u001f}\u000f\t\u000e/G\bX'".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 120;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 120;
+         var10006 = var0;
+      } else {
+         var6 = 120;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 120;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 23;
+               break;
+            case 1:
+               var23 = 35;
+               break;
+            case 2:
+               var23 = 80;
+               break;
+            case 3:
+               var23 = 2;
+               break;
+            case 4:
+               var23 = 117;
+               break;
+            case 5:
+               var23 = 22;
+               break;
+            default:
+               var23 = 3;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            v2.setUI(this.getUI());
-        }
-    }
 
-    @Override
-    public String getUIClassID() {
-        return a;
-    }
-
-    private static Throwable a(Throwable throwable) {
-        return throwable;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "?4X\u000f}#\u001e\u0001.{\u001f}\u000f\t\u000e/G\bX'".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 120;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 23;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 35;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 80;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 2;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 117;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 22;
-                            break;
-                        }
-                        default: {
-                            n17 = 3;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

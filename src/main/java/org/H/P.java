@@ -1,170 +1,167 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import com.ky_2;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-import org.H.C_;
-import org.H.Y;
-import org.h.cr_0;
-import org.h.v_0;
-import org.h.w_0;
 
-public class P
-implements w_0 {
-    private final short s;
-    private final short y;
-    private final short U;
-    private final List E;
-    final cr_0 A;
-    private static final String a;
+public class P implements org.H.w_2 {
+   private final short s;
+   private final short y;
+   private final short U;
+   private final List E;
+   final org.H.Cr_2 A;
+   private static final String a;
 
-    public P(cr_0 cr_02, short s2, short s3, short s4, List list) {
-        this.A = cr_02;
-        this.s = s2;
-        this.y = s3;
-        this.U = s4;
-        this.E = list;
-    }
+   public P(org.H.Cr_2 var1, short var2, short var3, short var4, List var5) {
+      this.A = var1;
+      this.s = var2;
+      this.y = var3;
+      this.U = var4;
+      this.E = var5;
+   }
 
-    public cr_0 x() {
-        return this.A;
-    }
+   public org.H.Cr_2 x() {
+      return this.A;
+   }
 
-    public short D() {
-        return this.s;
-    }
+   public short D() {
+      return this.s;
+   }
 
-    @Override
-    public v_0[] R(boolean bl) {
-        C_ c_ = cr_0.Z(this.A, bl, this.E);
-        ky_2[] ky_2Array = cr_0.q();
-        C_ c_2 = c_;
-        if (ky_2Array == null) {
-            if (c_2 == null) {
-                return new v_0[0];
+   @Override
+   public v_2[] R(boolean var1) {
+      com.ky_4[] var10000 = org.H.Cr_2.q();
+      org.H.C_ var3 = org.H.Cr_2.Z(this.A, var1, this.E);
+      com.ky_4[] var2 = var10000;
+      org.H.C_ var4 = var3;
+      if (var2 == null) {
+         if (var3 == null) {
+            return new v_2[0];
+         }
+
+         var4 = var3;
+      }
+
+      return org.H.C_.j(var4).toArray(new v_2[org.H.C_.j(var3).size()]);
+   }
+
+   public String s() {
+      return this.A.S(this.y);
+   }
+
+   public String q() {
+      return this.A.S(this.U);
+   }
+
+   public org.H.Y[] i() {
+      return this.E.toArray(new org.H.Y[this.E.size()]);
+   }
+
+   public void m(org.H.Y var1) {
+      this.E.add(var1);
+   }
+
+   @Override
+   public void t(boolean var1, String var2, Map var3) {
+      org.H.Cr_2.q(this.A, var1, var2, var3, this.E);
+   }
+
+   public void i(DataOutputStream var1) throws IOException {
+      var1.writeShort(this.s);
+      var1.writeShort(this.y);
+      var1.writeShort(this.U);
+      org.H.Cr_2.m(var1, this.E);
+   }
+
+   @Override
+   public String toString() {
+      try {
+         return this.A + "." + this.A.S(this.y) + a;
+      } catch (Exception var2) {
+         return super.toString();
+      }
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "$YGO\u0019".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 106;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 106;
+         var10006 = var0;
+      } else {
+         var6 = 106;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 106;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 102;
+               break;
+            case 1:
+               var23 = 29;
+               break;
+            case 2:
+               var23 = 3;
+               break;
+            case 3:
+               var23 = 11;
+               break;
+            case 4:
+               var23 = 90;
+               break;
+            case 5:
+               var23 = 38;
+               break;
+            default:
+               var23 = 73;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            c_2 = c_;
-        }
-        return C_.j(c_2).toArray(new v_0[C_.j(c_).size()]);
-    }
 
-    public String s() {
-        return this.A.S(this.y);
-    }
-
-    public String q() {
-        return this.A.S(this.U);
-    }
-
-    public Y[] i() {
-        return this.E.toArray(new Y[this.E.size()]);
-    }
-
-    public void m(Y y2) {
-        this.E.add(y2);
-    }
-
-    @Override
-    public void t(boolean bl, String string, Map map) {
-        cr_0.q(this.A, bl, string, map, this.E);
-    }
-
-    public void i(DataOutputStream dataOutputStream) throws IOException {
-        dataOutputStream.writeShort(this.s);
-        dataOutputStream.writeShort(this.y);
-        dataOutputStream.writeShort(this.U);
-        cr_0.m(dataOutputStream, this.E);
-    }
-
-    public String toString() {
-        try {
-            return this.A + "." + this.A.S(this.y) + a;
-        }
-        catch (Exception exception) {
-            return super.toString();
-        }
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "$YGO\u0019".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 106;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 102;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 29;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 3;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 11;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 90;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 38;
-                            break;
-                        }
-                        default: {
-                            n17 = 73;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

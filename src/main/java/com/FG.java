@@ -1,158 +1,144 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.B1;
-import com.yr_1;
-
+// $VF: synthetic class
 class FG {
-    static final int[] V;
-    static final int[] L;
+   static final int[] V;
+   static final int[] L;
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block34: {
-            block33: {
-                var1 = 8303453149883046337L;
-                var0_1 = new long[4];
-                var4_2 = 0;
-                var5_3 = "\u00c2^\u0089\u0089o\u00e0\u0099\u00c63\u008f7No\u00e0\u0099\u00c8";
-                var6_4 = "\u00c2^\u0089\u0089o\u00e0\u0099\u00c63\u008f7No\u00e0\u0099\u00c8".length();
-                var3_5 = 0;
-                while (true) {
-                    var7_6 = var5_3.substring(var3_5, var3_5 += 8).getBytes("ISO-8859-1");
-                    v0 = var0_1;
-                    v1 = var4_2++;
-                    v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                    v3 = -1;
-                    break block33;
-                    break;
-                }
-lbl14:
-                // 1 sources
+   static {
+      long var1 = 8303453149883046337L;
+      long[] var0 = new long[4];
+      int var4 = 0;
+      String var5 = "Â^\u0089\u0089oà\u0099Æ3\u008f7Noà\u0099È";
+      int var6 = "Â^\u0089\u0089oà\u0099Æ3\u008f7Noà\u0099È".length();
+      byte var3 = 0;
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var3_5 < var6_4) ** continue;
-                    var5_3 = "X\u00e4\u00cc\u00c1o\u00e0\u0099\u00c7\u00bd\u00e4N\u00d0o\u00e0\u0099\u00c9";
-                    var6_4 = "X\u00e4\u00cc\u00c1o\u00e0\u0099\u00c7\u00bd\u00e4N\u00d0o\u00e0\u0099\u00c9".length();
-                    var3_5 = 0;
-                    while (true) {
-                        var7_6 = var5_3.substring(var3_5, var3_5 += 8).getBytes("ISO-8859-1");
-                        v0 = var0_1;
-                        v1 = var4_2++;
-                        v2 = ((long)var7_6[0] & 255L) << 56 | ((long)var7_6[1] & 255L) << 48 | ((long)var7_6[2] & 255L) << 40 | ((long)var7_6[3] & 255L) << 32 | ((long)var7_6[4] & 255L) << 24 | ((long)var7_6[5] & 255L) << 16 | ((long)var7_6[6] & 255L) << 8 | (long)var7_6[7] & 255L;
-                        v3 = 0;
-                        break block33;
-                        break;
-                    }
-                    break;
-                }
-lbl27:
-                // 1 sources
+      label104:
+      while (true) {
+         int var10001 = var3;
+         var3 += 8;
+         byte[] var7 = var5.substring(var10001, var3).getBytes("ISO-8859-1");
+         long[] var10000 = var0;
+         var10001 = var4++;
+         long var10002 = ((long)var7[0] & 255L) << 56
+            | ((long)var7[1] & 255L) << 48
+            | ((long)var7[2] & 255L) << 40
+            | ((long)var7[3] & 255L) << 32
+            | ((long)var7[4] & 255L) << 24
+            | ((long)var7[5] & 255L) << 16
+            | ((long)var7[6] & 255L) << 8
+            | (long)var7[7] & 255L;
+         byte var10003 = -1;
 
-                while (true) {
-                    v0[v1] = v4;
-                    if (var3_5 < var6_4) ** continue;
-                    break block34;
-                    break;
-                }
+         while (true) {
+            long var27 = var10002 ^ var1;
+            switch (var10003) {
+               case 0:
+                  var10000[var10001] = var27;
+                  if (var3 >= var6) {
+                     L = new int[com.B1.values().length];
+
+                     try {
+                        L[com.B1.up.ordinal()] = 1;
+                     } catch (NoSuchFieldError var21) {
+                     }
+
+                     try {
+                        L[com.B1.down.ordinal()] = 2;
+                     } catch (NoSuchFieldError var20) {
+                     }
+
+                     try {
+                        L[com.B1.left.ordinal()] = 3;
+                     } catch (NoSuchFieldError var19) {
+                     }
+
+                     try {
+                        L[com.B1.right.ordinal()] = 4;
+                     } catch (NoSuchFieldError var18) {
+                     }
+
+                     V = new int[com.yR_3.values().length];
+
+                     try {
+                        V[com.yR_3.center.ordinal()] = 1;
+                     } catch (NoSuchFieldError var17) {
+                     }
+
+                     try {
+                        V[com.yR_3.topLeft.ordinal()] = 2;
+                     } catch (NoSuchFieldError var16) {
+                     }
+
+                     try {
+                        V[com.yR_3.topRight.ordinal()] = 3;
+                     } catch (NoSuchFieldError var15) {
+                     }
+
+                     try {
+                        V[com.yR_3.bottomLeft.ordinal()] = 4;
+                     } catch (NoSuchFieldError var14) {
+                     }
+
+                     try {
+                        V[com.yR_3.bottomRight.ordinal()] = 5;
+                     } catch (NoSuchFieldError var13) {
+                     }
+
+                     try {
+                        V[com.yR_3.topCenter.ordinal()] = (int)var0[2];
+                     } catch (NoSuchFieldError var12) {
+                     }
+
+                     try {
+                        V[com.yR_3.bottomCenter.ordinal()] = (int)var0[0];
+                     } catch (NoSuchFieldError var11) {
+                     }
+
+                     try {
+                        V[com.yR_3.leftCenter.ordinal()] = (int)var0[3];
+                     } catch (NoSuchFieldError var10) {
+                     }
+
+                     try {
+                        V[com.yR_3.rightCenter.ordinal()] = (int)var0[1];
+                     } catch (NoSuchFieldError var9) {
+                     }
+
+                     return;
+                  }
+                  break;
+               default:
+                  var10000[var10001] = var27;
+                  if (var3 < var6) {
+                     continue label104;
+                  }
+
+                  var5 = "XäÌÁoà\u0099Ç½äNÐoà\u0099É";
+                  var6 = "XäÌÁoà\u0099Ç½äNÐoà\u0099É".length();
+                  var3 = 0;
             }
-            v4 = v2 ^ var1;
-            switch (v3) {
-                default: {
-                    ** continue;
-                }
-                ** case 0:
-lbl38:
-                // 1 sources
 
-                ** continue;
-            }
-        }
-        FG.L = new int[B1.values().length];
-        try {
-            FG.L[B1.up.ordinal()] = 1;
-        }
-        catch (NoSuchFieldError var8_7) {
-            // empty catch block
-        }
-        try {
-            FG.L[B1.down.ordinal()] = 2;
-        }
-        catch (NoSuchFieldError var8_8) {
-            // empty catch block
-        }
-        try {
-            FG.L[B1.left.ordinal()] = 3;
-        }
-        catch (NoSuchFieldError var8_9) {
-            // empty catch block
-        }
-        try {
-            FG.L[B1.right.ordinal()] = 4;
-        }
-        catch (NoSuchFieldError var8_10) {
-            // empty catch block
-        }
-        FG.V = new int[yr_1.values().length];
-        try {
-            FG.V[yr_1.center.ordinal()] = 1;
-        }
-        catch (NoSuchFieldError var8_11) {
-            // empty catch block
-        }
-        try {
-            FG.V[yr_1.topLeft.ordinal()] = 2;
-        }
-        catch (NoSuchFieldError var8_12) {
-            // empty catch block
-        }
-        try {
-            FG.V[yr_1.topRight.ordinal()] = 3;
-        }
-        catch (NoSuchFieldError var8_13) {
-            // empty catch block
-        }
-        try {
-            FG.V[yr_1.bottomLeft.ordinal()] = 4;
-        }
-        catch (NoSuchFieldError var8_14) {
-            // empty catch block
-        }
-        try {
-            FG.V[yr_1.bottomRight.ordinal()] = 5;
-        }
-        catch (NoSuchFieldError var8_15) {
-            // empty catch block
-        }
-        try {
-            FG.V[yr_1.topCenter.ordinal()] = (int)var0_1[2];
-        }
-        catch (NoSuchFieldError var8_16) {
-            // empty catch block
-        }
-        try {
-            FG.V[yr_1.bottomCenter.ordinal()] = (int)var0_1[0];
-        }
-        catch (NoSuchFieldError var8_17) {
-            // empty catch block
-        }
-        try {
-            FG.V[yr_1.leftCenter.ordinal()] = (int)var0_1[3];
-        }
-        catch (NoSuchFieldError var8_18) {
-            // empty catch block
-        }
-        try {
-            FG.V[yr_1.rightCenter.ordinal()] = (int)var0_1[1];
-        }
-        catch (NoSuchFieldError var8_19) {
-            // empty catch block
-        }
-    }
+            byte var24 = var3;
+            var3 += 8;
+            var7 = var5.substring(var24, var3).getBytes("ISO-8859-1");
+            var10000 = var0;
+            var10001 = var4++;
+            var10002 = ((long)var7[0] & 255L) << 56
+               | ((long)var7[1] & 255L) << 48
+               | ((long)var7[2] & 255L) << 40
+               | ((long)var7[3] & 255L) << 32
+               | ((long)var7[4] & 255L) << 24
+               | ((long)var7[5] & 255L) << 16
+               | ((long)var7[6] & 255L) << 8
+               | (long)var7[7] & 255L;
+            var10003 = 0;
+         }
+      }
+   }
 }
+
+
+
+
 

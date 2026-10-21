@@ -1,70 +1,63 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import org.F.c;
-import org.L;
-import org.U;
-import org.V.H;
 import org.V.J;
-import org.V.N;
-import org.Y;
-import org.b_0;
-import org.j;
 
 public interface K {
-    @c
-    public static final File y = null;
-    public static final J L = new j();
-    public static final H J = new L();
+   @org.F.c
+   File y = null;
+   J L = new org.j();
+   org.V.H J = new org.L();
 
-    public void M(Charset var1);
+   void M(Charset var1);
 
-    public void L(Charset var1);
+   void L(Charset var1);
 
-    @Deprecated
-    public void z(@c String var1);
+   @Deprecated
+   void z(@org.F.c String var1);
 
-    public void e(boolean var1);
+   void e(boolean var1);
 
-    public void r(boolean var1);
+   void r(boolean var1);
 
-    public void Z(boolean var1);
+   void Z(boolean var1);
 
-    public void l(int var1);
+   void l(int var1);
 
-    public void D(int var1);
+   void D(int var1);
 
-    public void B(J var1);
+   void B(J var1);
 
-    public void l(File[] var1);
+   void l(File[] var1);
 
-    public void Q(File[] var1);
+   void Q(File[] var1);
 
-    public void B(File[] var1);
+   void B(File[] var1);
 
-    public void R(File[] var1);
+   void R(File[] var1);
 
-    public void Z(@c File var1, boolean var2);
+   void Z(@org.F.c File var1, boolean var2);
 
-    public void n(J var1, boolean var2);
+   void n(J var1, boolean var2);
 
-    public void Q(J var1);
+   void Q(J var1);
 
-    public void T(H var1);
+   void T(org.V.H var1);
 
-    public void U(boolean var1);
+   void U(boolean var1);
 
-    public boolean W(File[] var1) throws b_0, IOException;
+   boolean W(File[] var1) throws b_2, IOException;
 
-    public void Q(N[] var1) throws b_0, IOException;
+   void Q(org.V.N[] var1) throws b_2, IOException;
 
-    public void N(@c U var1);
+   void N(@org.F.c org.U var1);
 
-    public void z(Y var1);
+   void z(org.Y var1);
 }
+
+
+
+
 

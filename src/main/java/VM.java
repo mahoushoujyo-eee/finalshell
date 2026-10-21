@@ -1,37 +1,36 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-class VM
-implements MouseListener {
-    final lh_0 X;
+class VM implements MouseListener {
+   final Lh_2 X;
 
-    VM(lh_0 lh_02) {
-        this.X = lh_02;
-    }
+   VM(Lh_2 var1) {
+      this.X = var1;
+   }
 
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseReleased(MouseEvent var1) {
+   }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        ((qp_0)this.X.e).clearSelection();
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      ((Qp_2)com.c.c(575306184824179663L).get(com.c.c(498800724028752721L).get(this))).clearSelection();
+   }
 
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseExited(MouseEvent var1) {
+   }
 
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseEntered(MouseEvent var1) {
+   }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-    }
+   @Override
+   public void mouseClicked(MouseEvent var1) {
+   }
 }
+
+
+
+
 

@@ -1,9 +1,5 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import com.ky_2;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -14,102 +10,120 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.H.Y;
-import org.h.cr_0;
-import org.h.r_0;
-import org.h.v_0;
 
-public class C_
-extends Y {
-    private final List L;
+public class C_ extends org.H.Y {
+   private final List L;
 
-    C_(short s2) {
-        super(s2);
-        this.L = new ArrayList();
-    }
+   C_(short var1) {
+      super(var1);
+      this.L = new ArrayList();
+   }
 
-    C_(short s2, v_0[] v_0Array) {
-        super(s2);
-        this.L = new ArrayList<v_0>(Arrays.asList(v_0Array));
-    }
+   C_(short var1, v_2[] var2) {
+      super(var1);
+      this.L = new ArrayList(Arrays.asList(var2));
+   }
 
-    public List A() {
-        return this.L;
-    }
+   public List A() {
+      return this.L;
+   }
 
-    private static Y q(short s2, DataInputStream dataInputStream) throws IOException {
-        v_0[] v_0Array = new v_0[dataInputStream.readUnsignedShort()];
-        ky_2[] ky_2Array = cr_0.q();
-        for (int n10 = 0; n10 < v_0Array.length; n10 = (int)((short)(n10 + 1))) {
-            v_0Array[n10] = C_.q(dataInputStream);
-            if (ky_2Array == null) continue;
-        }
-        return new C_(s2, v_0Array);
-    }
+   private static org.H.Y q(short var0, DataInputStream var1) throws IOException {
+      com.ky_4[] var10000 = org.H.Cr_2.q();
+      v_2[] var3 = new v_2[var1.readUnsignedShort()];
+      short var4 = 0;
+      com.ky_4[] var2 = var10000;
 
-    private static v_0 q(DataInputStream dataInputStream) throws IOException {
-        return new v_0(dataInputStream.readShort(), C_.K(dataInputStream));
-    }
+      while (var4 < var3.length) {
+         var3[var4] = q(var1);
+         var4++;
+         if (var2 != null) {
+            break;
+         }
+      }
 
-    private static Map K(DataInputStream dataInputStream) throws IOException {
-        HashMap<Short, r_0> hashMap;
-        block7: {
-            int n10 = dataInputStream.readUnsignedShort();
-            ky_2[] ky_2Array = cr_0.q();
+      return new org.H.C_(var0, var3);
+   }
+
+   private static v_2 q(DataInputStream var0) throws IOException {
+      return new v_2(var0.readShort(), K(var0));
+   }
+
+   private static Map K(DataInputStream var0) throws IOException {
+      com.ky_4[] var10000 = org.H.Cr_2.q();
+      int var2 = var0.readUnsignedShort();
+      com.ky_4[] var1 = var10000;
+
+      try {
+         if (var2 == 0) {
+            return Collections.emptyMap();
+         }
+      } catch (IOException var6) {
+         throw a(var6);
+      }
+
+      HashMap var3 = new HashMap();
+      int var4 = 0;
+
+      while (true) {
+         if (var4 < var2) {
             try {
-                if (n10 == 0) {
-                    return Collections.emptyMap();
-                }
+               var7 = var3;
+               if (var1 != null) {
+                  break;
+               }
+
+               var3.put(var0.readShort(), org.H.Cr_2.d(var0));
+               var4++;
+               if (var1 == null) {
+                  continue;
+               }
+            } catch (IOException var5) {
+               throw a(var5);
             }
-            catch (IOException iOException) {
-                throw C_.a(iOException);
-            }
-            HashMap<Short, r_0> hashMap2 = new HashMap<Short, r_0>();
-            for (int i2 = 0; i2 < n10; ++i2) {
-                try {
-                    hashMap = hashMap2;
-                    if (ky_2Array == null) {
-                        hashMap.put(dataInputStream.readShort(), cr_0.d(dataInputStream));
-                        if (ky_2Array == null) continue;
-                        break;
-                    }
-                    break block7;
-                }
-                catch (IOException iOException) {
-                    throw C_.a(iOException);
-                }
-            }
-            hashMap = hashMap2;
-        }
-        return hashMap;
-    }
+         }
 
-    @Override
-    protected void T(DataOutputStream dataOutputStream) throws IOException {
-        dataOutputStream.writeShort(this.L.size());
-        Iterator iterator = this.L.iterator();
-        ky_2[] ky_2Array = cr_0.q();
-        while (iterator.hasNext()) {
-            v_0 v_02 = (v_0)iterator.next();
-            v_02.E(dataOutputStream);
-            if (ky_2Array == null) continue;
-        }
-    }
+         var7 = var3;
+         break;
+      }
 
-    static List j(C_ c_) {
-        return c_.L;
-    }
+      return var7;
+   }
 
-    static Y d(short s2, DataInputStream dataInputStream) throws IOException {
-        return C_.q(s2, dataInputStream);
-    }
+   @Override
+   protected void T(DataOutputStream var1) throws IOException {
+      var1.writeShort(this.L.size());
+      com.ky_4[] var10000 = org.H.Cr_2.q();
+      Iterator var3 = this.L.iterator();
+      com.ky_4[] var2 = var10000;
 
-    static v_0 i(DataInputStream dataInputStream) throws IOException {
-        return C_.q(dataInputStream);
-    }
+      while (var3.hasNext()) {
+         v_2 var4 = (v_2)var3.next();
+         var4.E(var1);
+         if (var2 != null) {
+            break;
+         }
+      }
+   }
 
-    private static IOException a(IOException iOException) {
-        return iOException;
-    }
+   static List j(org.H.C_ var0) {
+      return var0.L;
+   }
+
+   static org.H.Y d(short var0, DataInputStream var1) throws IOException {
+      return q(var0, var1);
+   }
+
+   static v_2 i(DataInputStream var0) throws IOException {
+      return q(var0);
+   }
+
+   private static IOException a(IOException var0) {
+      return var0;
+   }
 }
+
+
+
+
 

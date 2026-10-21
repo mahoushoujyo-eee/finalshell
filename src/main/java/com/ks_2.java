@@ -1,657 +1,267 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.BC;
-import com.E;
-import com.IB;
-import com.LX;
-import com.T0;
-import com.aL;
-import com.bn_0;
-import com.cl_2;
-import com.do_1;
-import com.eh_0;
-import com.k3_0;
-import com.kr_0;
-import com.ky_2;
-import com.pv_0;
-import java.awt.Component;
-import java.awt.Insets;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.SwingConstants;
+public enum Ks_2 {
+   AutoCloseSource, AllowComment, AllowUnQuotedFieldNames, AllowSingleQuotes, InternFieldNames, AllowISO8601DateFormat, AllowArbitraryCommas, UseBigDecimal, IgnoreNotMatch, SortFeidFastMatch, DisableASM, DisableCircularReferenceDetect, InitStringFieldAsEmpty, SupportArrayToBean, OrderedField, DisableSpecialKeyDetect, UseObjectArray, SupportNonPublicField, IgnoreAutoType, DisableFieldSmartMatch, SupportAutoType, NonStringKeyAsString, CustomMapDeserializer, ErrorOnEnumNotMatch, SafeMode, TrimStringFieldValue, UseNativeJavaObject;
+   public final int mask = 1 << this.ordinal();
+   private static final long[] a;
+   private static final Integer[] b;
 
-/*
- * Duplicate member names - consider using --renamedupmembers true
- * Renamed from com.ks
- */
-public class ks_2
-extends ky_2
-implements SwingConstants,
-eh_0 {
-    protected boolean v = BC.c;
-    protected LX G = BC.Z;
-    protected int T = BC.l;
-    protected ImageIcon w = BC.q;
-    protected ImageIcon i = BC.d;
-    protected boolean e = BC.W;
-    protected boolean r = BC.p;
-    protected int F = BC.x;
-    protected List H = new ArrayList(1);
-    protected List y = new ArrayList();
-    protected List C = new ArrayList();
-    protected k3_0 j = null;
+   public final int v() {
+      return this.mask;
+   }
 
-    public ks_2() {
-        this.h(BC.Z);
-    }
+   public static boolean D(int var0, com.Ks_2 var1) {
+      boolean var2 = com.yn_4.Y();
+      int var10000 = var0 & var1.mask;
+      if (var2) {
+         var10000 = var10000 != 0 ? 1 : 0;
+      }
 
-    public ks_2(LX lX) {
-        this.h(lX);
-    }
+      return (boolean)var10000;
+   }
 
-    protected void h(LX lX) {
-        this.i(true);
-        this.u(false);
-        this.setLayout(new T0(this));
-        this.m(lX);
-    }
+   public static int H(int var0, com.Ks_2 var1, boolean var2) {
+      boolean var3 = com.yn_4.o();
+      int var10000 = var2;
+      if (!var3) {
+         if (var2 != 0) {
+            var0 |= var1.mask;
+            if (!var3) {
+               return var0;
+            }
+         }
 
-    public boolean w() {
-        return this.v;
-    }
+         var10000 = var0 & ~var1.mask;
+      }
 
-    public void v(boolean bl) {
-        this.v = bl;
-        this.B();
-    }
+      return var10000;
+   }
 
-    protected void B() {
-        Iterator iterator = this.y.iterator();
-        int[] nArray = k3_0.L();
-        while (iterator.hasNext()) {
-            k3_0 k3_02 = (k3_0)iterator.next();
-            k3_02.l(this.v);
-            if (nArray != null) continue;
-        }
-    }
+   public static int C(com.Ks_2[] var0) {
+      boolean var1 = com.yn_4.o();
+      if (var0 == null) {
+         return 0;
+      } else {
+         int var2 = 0;
+         com.Ks_2[] var3 = var0;
+         int var4 = var0.length;
+         int var5 = 0;
 
-    public int Z() {
-        return this.T;
-    }
+         int var10000;
+         while (true) {
+            if (var5 < var4) {
+               com.Ks_2 var6 = var3[var5];
+               var10000 = var2 | var6.mask;
+               if (var1) {
+                  break;
+               }
 
-    public void o(int n10) {
-        this.T = n10;
-        this.t();
-    }
+               var2 = var10000;
+               var5++;
+               if (!var1) {
+                  continue;
+               }
+            }
 
-    public ImageIcon B() {
-        return this.w;
-    }
+            var10000 = var2;
+            break;
+         }
 
-    public void g(ImageIcon imageIcon) {
-        this.w = imageIcon;
-        this.c();
-    }
+         return var10000;
+      }
+   }
 
-    public ImageIcon r() {
-        return this.i;
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var8 = new String[27];
+      int var12 = 0;
+      String var11 = "eY\u0017%a\"ceE\u0010']\u0002ymJ\u0011){\u0014aG\t%d,\u007fBB\u00118r\u001ftcD\b'r\u001e\u000eiL\u000b%a\bLU_\n\u001ej\u001dh\u0012s^\u0015:|\u001fyaY\u0017+j9bbN\u0004$\u0016aG\t%d$^o\u0013Sz\")lTN#%a\u0000lT\ndB\u0016+q\u0001hax(\u0017aG\t%d8cq^\n>v\tKIN\t.]\f`EX\u0011aG\t%d>dNL\t/B\u0018bTN\u0016\foY\u0001/a\bifB\u0000&w\u0016dB\u0016+q\u0001hfB\u0000&w>`AY\u0011\u0007r\u0019nH\u000fa^\u0011%P\u0001bSN6%f\u001fnE\u000fs^\u0015:|\u001fya^\u0011%G\u0014}E\u0010iE\u0011/a\u0003KIN\t.]\f`EX\u000euX\u0000\u0005q\u0007hC_$8a\ft\u0015c^\u0016>|\u0000@A[!/`\b\u007fIJ\t#i\b\u007f\u0016iE\f>@\u0019\u007fIE\u0002\fz\baDj\u0016\u000f~\u001dyY\u000eiL\u000b%a\bCO_(+g\u000ee\u0015s^\u0015:|\u001fynD\u000b\u001af\u000faIH##v\u0001i\u0014tY\f'@\u0019\u007fIE\u0002\fz\baD}\u0004&f\b\faG\t%d.bMF\u0000$g\bsJ\u0003/^\u0002iE\u0014nD\u000b\u0019g\u001fdNL./j,~s_\u0017#}\n\u0017dB\u0016+q\u0001hs[\u0000)z\fakN\u001c\u000ev\u0019hC_\u001edB\u0016+q\u0001hcB\u0017)f\u0001lRy\u0000,v\u001fhNH\u0000\u000ev\u0019hC_\ruX\u0000\bz\nIEH\f'r\u0001";
+      int var13 = "eY\u0017%a\"ceE\u0010']\u0002ymJ\u0011){\u0014aG\t%d,\u007fBB\u00118r\u001ftcD\b'r\u001e\u000eiL\u000b%a\bLU_\n\u001ej\u001dh\u0012s^\u0015:|\u001fyaY\u0017+j9bbN\u0004$\u0016aG\t%d$^o\u0013Sz\")lTN#%a\u0000lT\ndB\u0016+q\u0001hax(\u0017aG\t%d8cq^\n>v\tKIN\t.]\f`EX\u0011aG\t%d>dNL\t/B\u0018bTN\u0016\foY\u0001/a\bifB\u0000&w\u0016dB\u0016+q\u0001hfB\u0000&w>`AY\u0011\u0007r\u0019nH\u000fa^\u0011%P\u0001bSN6%f\u001fnE\u000fs^\u0015:|\u001fya^\u0011%G\u0014}E\u0010iE\u0011/a\u0003KIN\t.]\f`EX\u000euX\u0000\u0005q\u0007hC_$8a\ft\u0015c^\u0016>|\u0000@A[!/`\b\u007fIJ\t#i\b\u007f\u0016iE\f>@\u0019\u007fIE\u0002\fz\baDj\u0016\u000f~\u001dyY\u000eiL\u000b%a\bCO_(+g\u000ee\u0015s^\u0015:|\u001fynD\u000b\u001af\u000faIH##v\u0001i\u0014tY\f'@\u0019\u007fIE\u0002\fz\baD}\u0004&f\b\faG\t%d.bMF\u0000$g\bsJ\u0003/^\u0002iE\u0014nD\u000b\u0019g\u001fdNL./j,~s_\u0017#}\n\u0017dB\u0016+q\u0001hs[\u0000)z\fakN\u001c\u000ev\u0019hC_\u001edB\u0016+q\u0001hcB\u0017)f\u0001lRy\u0000,v\u001fhNH\u0000\u000ev\u0019hC_\ruX\u0000\bz\nIEH\f'r\u0001"
+         .length();
+      char var10 = 19;
+      int var17 = -1;
 
-    public void z(ImageIcon imageIcon) {
-        this.i = imageIcon;
-        this.c();
-    }
+      label70:
+      while (true) {
+         byte var10000 = 79;
+         String var10001 = var11.substring(++var17, var17 + var10);
+         byte var10002 = -1;
 
-    protected void c() {
-        Iterator iterator = this.y.iterator();
-        int[] nArray = k3_0.L();
-        while (iterator.hasNext()) {
-            k3_0 k3_02 = (k3_0)iterator.next();
-            k3_02.x(this.w);
-            k3_02.I(this.i);
-            if (nArray != null) continue;
-        }
-    }
+         while (true) {
+            label65: {
+               char[] var39 = var10001.toCharArray();
+               int var10004 = var39.length;
+               int var14 = 0;
+               byte var42 = var10000;
+               var33 = var39;
+               int var24 = var10004;
+               byte var49;
+               char[] var55;
+               int var10006;
+               if (var10004 <= 1) {
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               } else {
+                  var42 = var10000;
+                  var24 = var10004;
+                  if (var10004 <= var14) {
+                     break label65;
+                  }
 
-    public LX y() {
-        return this.G;
-    }
+                  var55 = var39;
+                  var49 = var10000;
+                  var10006 = var14;
+               }
 
-    public void m(LX lX) {
-        this.G = lX;
-        this.t();
-    }
+               while (true) {
+                  char var64 = var55[var10006];
+                  byte var65;
+                  switch (var14 % 7) {
+                     case 0:
+                        var65 = 111;
+                        break;
+                     case 1:
+                        var65 = 100;
+                        break;
+                     case 2:
+                        var65 = 42;
+                        break;
+                     case 3:
+                        var65 = 5;
+                        break;
+                     case 4:
+                        var65 = 92;
+                        break;
+                     case 5:
+                        var65 = 34;
+                        break;
+                     default:
+                        var65 = 66;
+                  }
 
-    public boolean H() {
-        return this.e;
-    }
+                  var55[var10006] = (char)(var64 ^ var49 ^ var65);
+                  var14++;
+                  if (var42 == 0) {
+                     var10006 = var42;
+                     var55 = var33;
+                     var49 = var42;
+                  } else {
+                     if (var24 <= var14) {
+                        break;
+                     }
 
-    public void q(boolean bl) {
-        this.e = bl;
-        this.revalidate();
-    }
+                     var55 = var33;
+                     var49 = var42;
+                     var10006 = var14;
+                  }
+               }
+            }
 
-    public boolean e() {
-        return this.r;
-    }
+            String var44 = new String(var33).intern();
+            switch (var10002) {
+               case 0:
+                  var8[var12++] = var44;
+                  if ((var17 += var10) >= var13) {
+                     long var0 = 8657948486763682443L;
+                     long[] var6 = new long[43];
+                     int var3 = 0;
+                     String var4 = "*Ý+ô²\u0094\u0013\u008bïø\u0003ôÇ¥;_\u0017\u008eÿ\u0081YT\u0095ÃJ}äT8\u0096Gã\u0080Mh#àªÿ\u001b\u008cXQI»\u000f5yÝ¯\u0003\u009c;Â)¾p7ÜI²*ò\u00adþ¾\u009f\u001a£[±¹ûå\u0013ä§\u00103Ñ=\u008f\u000eæ2w\u0007(\u0000ù¸\u0095õ\u009d\u009eÒµ\u0082ZkÜ>ÝÃ\u0094e\u008a\u0019\t*ùeãKéµ\u001cº\u0089\u001b%ùÕm¬×6\u008eáÊÇ\u001f*\u0002ú\u0082¥\u0001Cå×\u009eÄ²ÒÆ*\u001f\u0017®J\u001b7\u007f¶Ã\u0003)\u008aýöTµT\u0084/\u0083ù-ê¶PÅ\u00136\u009býû\u0099ÈBJ\u0096íBS\u0019oS7\u0091Ï+©1\u0005¯\u0018±ÐÎ¹Ã\u0004'·Sj×YtÀfV\\\\^\u0010\u0016h&\n\rç^\u000fÙu\b\u0093Fï\u001c\u0004\u008d\u001aèÝò²ÛþLEN@·\u009c,pB\u009dà\u009bd\u008eámÙZ¦\u000b.xÇ\u000eVÐ`î\u0012Àû[rÐÏb\u0099Y:üJü.Û=Ã\u0013\u0003\u0081¢0k½[\u0001z\"\u0006bç\u008aáÓ\u0001Ýó±_ \u008fs\u008bõ¥A»Ú¹(]Áký\u0086ò\u009a";
+                     int var5 = "*Ý+ô²\u0094\u0013\u008bïø\u0003ôÇ¥;_\u0017\u008eÿ\u0081YT\u0095ÃJ}äT8\u0096Gã\u0080Mh#àªÿ\u001b\u008cXQI»\u000f5yÝ¯\u0003\u009c;Â)¾p7ÜI²*ò\u00adþ¾\u009f\u001a£[±¹ûå\u0013ä§\u00103Ñ=\u008f\u000eæ2w\u0007(\u0000ù¸\u0095õ\u009d\u009eÒµ\u0082ZkÜ>ÝÃ\u0094e\u008a\u0019\t*ùeãKéµ\u001cº\u0089\u001b%ùÕm¬×6\u008eáÊÇ\u001f*\u0002ú\u0082¥\u0001Cå×\u009eÄ²ÒÆ*\u001f\u0017®J\u001b7\u007f¶Ã\u0003)\u008aýöTµT\u0084/\u0083ù-ê¶PÅ\u00136\u009býû\u0099ÈBJ\u0096íBS\u0019oS7\u0091Ï+©1\u0005¯\u0018±ÐÎ¹Ã\u0004'·Sj×YtÀfV\\\\^\u0010\u0016h&\n\rç^\u000fÙu\b\u0093Fï\u001c\u0004\u008d\u001aèÝò²ÛþLEN@·\u009c,pB\u009dà\u009bd\u008eámÙZ¦\u000b.xÇ\u000eVÐ`î\u0012Àû[rÐÏb\u0099Y:üJü.Û=Ã\u0013\u0003\u0081¢0k½[\u0001z\"\u0006bç\u008aáÓ\u0001Ýó±_ \u008fs\u008bõ¥A»Ú¹(]Áký\u0086ò\u009a"
+                        .length();
+                     byte var2 = 0;
 
-    public void g(boolean bl) {
-        this.r = bl;
-        this.H(-1, true);
-    }
+                     label44:
+                     while (true) {
+                        byte var26 = var2;
+                        var2 += 8;
+                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        long[] var19 = var6;
+                        int var27 = var3++;
+                        long var37 = ((long)var7[0] & 255L) << 56
+                           | ((long)var7[1] & 255L) << 48
+                           | ((long)var7[2] & 255L) << 40
+                           | ((long)var7[3] & 255L) << 32
+                           | ((long)var7[4] & 255L) << 24
+                           | ((long)var7[5] & 255L) << 16
+                           | ((long)var7[6] & 255L) << 8
+                           | (long)var7[7] & 255L;
+                        byte var45 = -1;
 
-    protected void H(int n10, boolean n11) {
-        block27: {
-            block26: {
-                int n12;
-                block25: {
-                    int n13;
-                    int n14;
-                    block15: {
-                        int[] nArray;
-                        block18: {
-                            block19: {
-                                block16: {
-                                    block17: {
-                                        n14 = 0;
-                                        nArray = k3_0.L();
-                                        n12 = n11;
-                                        if (nArray == null) break block16;
-                                        if (n12 == 0) break block17;
-                                        n12 = this.r ? 1 : 0;
-                                        if (nArray == null) break block18;
-                                        if (n12 != 0) break block19;
-                                        for (int i2 = 0; i2 < this.y.size(); ++i2) {
-                                            int n15;
-                                            k3_0 k3_02;
-                                            block24: {
-                                                int n16;
-                                                block23: {
-                                                    block20: {
-                                                        block22: {
-                                                            block21: {
-                                                                k3_02 = (k3_0)this.y.get(i2);
-                                                                int n13 = n10;
-                                                                n13 = -1;
-                                                                if (nArray == null) break block15;
-                                                                if (nArray == null) break block20;
-                                                                if (n12 != n13) break block21;
-                                                                n15 = k3_02.Y() ? 1 : 0;
-                                                                if (nArray == null) break block22;
-                                                                if (n15 != 0) {
-                                                                    n10 = i2;
-                                                                }
-                                                            }
-                                                            n15 = n10;
-                                                        }
-                                                        n16 = -1;
-                                                    }
-                                                    if (nArray == null) break block23;
-                                                    if (n15 == n16) continue;
-                                                    n15 = i2;
-                                                    if (nArray == null) break block24;
-                                                    n16 = n10;
-                                                }
-                                                if (n15 == n16) continue;
-                                                n15 = k3_02.Y() ? 1 : 0;
-                                            }
-                                            if (nArray == null || n15 == 0) continue;
-                                            n14 = 1;
-                                            n15 = k3_02.u(false) ? 1 : 0;
-                                            if (nArray != null) continue;
-                                        }
-                                        if (nArray != null) break block19;
-                                    }
-                                    n12 = this.I();
-                                }
-                                if (nArray == null) break block18;
-                                if (n12 == 0) {
-                                    this.j.u(true);
-                                }
-                            }
-                            n12 = n10;
+                        while (true) {
+                           long var54 = var37 ^ var0;
+                           switch (var45) {
+                              case 0:
+                                 var19[var27] = var54;
+                                 if (var2 >= var5) {
+                                    a = var6;
+                                    b = new Integer[43];
+                                    return;
+                                 }
+                                 break;
+                              default:
+                                 var19[var27] = var54;
+                                 if (var2 < var5) {
+                                    continue label44;
+                                 }
+
+                                 var4 = "kË\u009b_iH|IÏ\u000eª\u0088\u0089nh³";
+                                 var5 = "kË\u009b_iH|IÏ\u000eª\u0088\u0089nh³".length();
+                                 var2 = 0;
+                           }
+
+                           byte var28 = var2;
+                           var2 += 8;
+                           var7 = var4.substring(var28, var2).getBytes("ISO-8859-1");
+                           var19 = var6;
+                           var27 = var3++;
+                           var37 = ((long)var7[0] & 255L) << 56
+                              | ((long)var7[1] & 255L) << 48
+                              | ((long)var7[2] & 255L) << 40
+                              | ((long)var7[3] & 255L) << 32
+                              | ((long)var7[4] & 255L) << 24
+                              | ((long)var7[5] & 255L) << 16
+                              | ((long)var7[6] & 255L) << 8
+                              | (long)var7[7] & 255L;
+                           var45 = 0;
                         }
-                        if (nArray == null) break block25;
-                        n13 = -1;
-                    }
-                    if (n12 != n13) break block26;
-                    n12 = n14;
-                }
-                if (n12 == 0) break block27;
+                     }
+                  }
+
+                  var10 = var11.charAt(var17);
+                  break;
+               default:
+                  var8[var12++] = var44;
+                  if ((var17 += var10) < var13) {
+                     var10 = var11.charAt(var17);
+                     continue label70;
+                  }
+
+                  var11 = "Gp#\na<PpY0\rS\u0014X`|9\u0013Al40F-Pbz\u001b\u001fQ8vvu4\u001dS";
+                  var13 = "Gp#\na<PpY0\rS\u0014X`|9\u0013Al40F-Pbz\u001b\u001fQ8vvu4\u001dS".length();
+                  var10 = 17;
+                  var17 = -1;
             }
-            this.l();
-        }
-    }
 
-    public int O() {
-        return this.F;
-    }
+            var10000 = 123;
+            var10001 = var11.substring(++var17, var17 + var10);
+            var10002 = 0;
+         }
+      }
+   }
 
-    public void k(int n10) {
-        this.F = n10;
-        this.revalidate();
-    }
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 23017;
+      if (b[var3] == null) {
+         b[var3] = (int)(a[var3] ^ var1);
+      }
 
-    public k3_0 V(String string, Component component) {
-        return this.e(this.y.size(), string, component);
-    }
-
-    public k3_0 e(int n10, String string, Component component) {
-        return this.I(n10, new k3_0(string, component));
-    }
-
-    public k3_0 d(Icon icon, String string, Component component) {
-        return this.M(this.y.size(), icon, string, component);
-    }
-
-    public k3_0 M(int n10, Icon icon, String string, Component component) {
-        return this.I(n10, new k3_0(icon, string, component));
-    }
-
-    public k3_0 A(Component component, Component component2) {
-        return this.t(this.y.size(), component, component2);
-    }
-
-    public k3_0 t(int n10, Component component, Component component2) {
-        k3_0 k3_02 = new k3_0("", component2);
-        k3_02.u(component);
-        return this.I(n10, k3_02);
-    }
-
-    protected k3_0 I(int n10, k3_0 k3_02) {
-        k3_02.l(this.v);
-        int[] nArray = k3_0.L();
-        k3_02.x(this.w);
-        k3_02.I(this.i);
-        int[] nArray2 = nArray;
-        if (nArray2 != null) {
-            if (!this.r) {
-                boolean bl = this.k();
-                if (nArray2 != null && bl) {
-                    bl = k3_02.x(false, false);
-                }
-            }
-            k3_02.B(new kr_0(this, k3_02));
-        }
-        do_1 do_12 = new do_1(this);
-        k3_02.m(do_12);
-        this.C.add(do_12);
-        this.f(n10, new Component[]{k3_02});
-        this.y.add(n10, k3_02);
-        this.t();
-        this.l();
-        return k3_02;
-    }
-
-    public void b(int n10) {
-        this.m((k3_0)this.y.get(n10));
-    }
-
-    protected void m(k3_0 k3_02) {
-        int n10 = this.y.indexOf(k3_02);
-        int[] nArray = k3_0.L();
-        if (nArray != null) {
-            if (n10 == -1) {
-                return;
-            }
-            k3_02.B((E)null);
-            k3_02.B((pv_0)this.C.get(n10));
-            this.C.remove(n10);
-            this.remove(k3_02);
-            this.y.remove(n10);
-        }
-        if (nArray != null) {
-            if (k3_02 == this.j) {
-                this.j = null;
-            }
-            this.t();
-        }
-    }
-
-    public List n() {
-        return aL.J((Collection)this.y);
-    }
-
-    public List N() {
-        return this.y;
-    }
-
-    public k3_0 M(int n10) {
-        return (k3_0)this.y.get(n10);
-    }
-
-    /*
-     * Exception decompiling
-     */
-    protected void t() {
-        /*
-         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
-         * 
-         * org.benf.cfr.reader.util.ConfusedCFRException: Statement already marked as first in another block
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.markFirstStatementInBlock(Op03SimpleStatement.java:461)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.Misc.markWholeBlock(Misc.java:251)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.considerAsSimpleIf(ConditionalRewriter.java:673)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.identifyNonjumpingConditionals(ConditionalRewriter.java:56)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:722)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
-         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
-         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
-         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
-         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
-         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
-         *     at org.benf.cfr.reader.Main.main(Main.java:54)
-         */
-        throw new IllegalStateException("Decompilation failed");
-    }
-
-    public boolean k() {
-        boolean bl;
-        block3: {
-            Iterator iterator = this.y.iterator();
-            int[] nArray = k3_0.L();
-            while (iterator.hasNext()) {
-                block5: {
-                    boolean bl2;
-                    block4: {
-                        k3_0 k3_02 = (k3_0)iterator.next();
-                        bl = k3_02.Y();
-                        if (nArray == null) break block3;
-                        if (nArray == null) break block4;
-                        if (!bl) break block5;
-                        bl2 = true;
-                    }
-                    return bl2;
-                }
-                if (nArray != null) continue;
-            }
-            bl = false;
-        }
-        return bl;
-    }
-
-    public int b() {
-        int n10;
-        block3: {
-            Iterator iterator = this.y.iterator();
-            int[] nArray = k3_0.L();
-            while (iterator.hasNext()) {
-                block5: {
-                    int n11;
-                    block4: {
-                        k3_0 k3_02 = (k3_0)iterator.next();
-                        n10 = k3_02.Y() ? 1 : 0;
-                        if (nArray == null) break block3;
-                        if (nArray == null) break block4;
-                        if (n10 == 0) break block5;
-                        n11 = this.y.indexOf(k3_02);
-                    }
-                    return n11;
-                }
-                if (nArray != null) continue;
-            }
-            n10 = -1;
-        }
-        return n10;
-    }
-
-    public int I() {
-        int n10;
-        block3: {
-            int n11 = 0;
-            int[] nArray = k3_0.L();
-            for (k3_0 k3_02 : this.y) {
-                n10 = k3_02.Y() ? 1 : 0;
-                if (nArray != null) {
-                    if (n10 != 0) {
-                        ++n11;
-                    }
-                    if (nArray != null) continue;
-                }
-                break block3;
-            }
-            n10 = n11;
-        }
-        return n10;
-    }
-
-    public Icon L(int n10) {
-        return ((k3_0)this.y.get(n10)).u();
-    }
-
-    public void B(int n10, Icon icon) {
-        ((k3_0)this.y.get(n10)).C(icon);
-    }
-
-    public String d(int n10) {
-        return ((k3_0)this.y.get(n10)).Q();
-    }
-
-    public void g(int n10, String string) {
-        ((k3_0)this.y.get(n10)).u(string);
-    }
-
-    public Component a(int n10) {
-        return ((k3_0)this.y.get(n10)).t();
-    }
-
-    public void H(int n10, Component component) {
-        ((k3_0)this.y.get(n10)).u(component);
-    }
-
-    public Component b(int n10) {
-        return ((k3_0)this.y.get(n10)).F();
-    }
-
-    public void d(int n10, Component component) {
-        ((k3_0)this.y.get(n10)).V(component);
-    }
-
-    public Insets E(int n10) {
-        return ((k3_0)this.y.get(n10)).h();
-    }
-
-    public void O(int n10, Insets insets) {
-        ((k3_0)this.y.get(n10)).j(insets);
-    }
-
-    public void c(int n10, int n11, int n12, int n13, int n14) {
-        this.O(n10, new Insets(n11, n12, n13, n14));
-    }
-
-    public void b(int n10, int n11) {
-        this.c(n10, n11, n11, n11, n11);
-    }
-
-    public List s() {
-        ArrayList<k3_0> arrayList = new ArrayList<k3_0>();
-        Iterator iterator = this.y.iterator();
-        int[] nArray = k3_0.L();
-        while (iterator.hasNext()) {
-            k3_0 k3_02 = (k3_0)iterator.next();
-            boolean bl = k3_02.Y();
-            if (nArray != null && bl) {
-                bl = arrayList.add(k3_02);
-            }
-            if (nArray != null) continue;
-        }
-        return arrayList;
-    }
-
-    /*
-     * Exception decompiling
-     */
-    public void G(List var1_1) {
-        /*
-         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
-         * 
-         * org.benf.cfr.reader.util.ConfusedCFRException: Statement already marked as first in another block
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.markFirstStatementInBlock(Op03SimpleStatement.java:461)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.Misc.markWholeBlock(Misc.java:251)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.considerAsSimpleIf(ConditionalRewriter.java:673)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.identifyNonjumpingConditionals(ConditionalRewriter.java:56)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:722)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
-         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
-         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
-         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
-         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
-         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
-         *     at org.benf.cfr.reader.Main.main(Main.java:54)
-         */
-        throw new IllegalStateException("Decompilation failed");
-    }
-
-    public List P() {
-        ArrayList<Integer> arrayList = new ArrayList<Integer>();
-        int[] nArray = k3_0.L();
-        for (int i2 = 0; i2 < this.y.size(); ++i2) {
-            boolean bl = ((k3_0)this.y.get(i2)).Y();
-            if (nArray == null || !bl) continue;
-            bl = arrayList.add(i2);
-            if (nArray != null) continue;
-        }
-        return arrayList;
-    }
-
-    /*
-     * Exception decompiling
-     */
-    public void h(List var1_1) {
-        /*
-         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
-         * 
-         * org.benf.cfr.reader.util.ConfusedCFRException: Statement already marked as first in another block
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.markFirstStatementInBlock(Op03SimpleStatement.java:461)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.Misc.markWholeBlock(Misc.java:251)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.considerAsSimpleIf(ConditionalRewriter.java:673)
-         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.op3rewriters.ConditionalRewriter.identifyNonjumpingConditionals(ConditionalRewriter.java:56)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:722)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
-         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
-         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
-         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
-         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
-         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
-         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
-         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
-         *     at org.benf.cfr.reader.Main.main(Main.java:54)
-         */
-        throw new IllegalStateException("Decompilation failed");
-    }
-
-    public List x() {
-        return aL.J((Collection)this.H);
-    }
-
-    public void w(List list) {
-        this.H = list;
-    }
-
-    public void j(bn_0 bn_02) {
-        this.H.add(bn_02);
-    }
-
-    public void N(bn_0 bn_02) {
-        this.H.remove(bn_02);
-    }
-
-    protected void l() {
-        Iterator iterator = aL.J((Collection)this.H).iterator();
-        int[] nArray = k3_0.L();
-        while (iterator.hasNext()) {
-            bn_0 bn_02 = (bn_0)iterator.next();
-            bn_02.E();
-            if (nArray != null) continue;
-        }
-    }
-
-    @Override
-    public void p(String string) {
-        cl_2.c(this, string);
-    }
-
-    @Override
-    public void a(String string, Class clazz) {
-        cl_2.x(this, string, clazz);
-    }
-
-    @Override
-    public void E(String string, Object object) {
-        cl_2.e(this, string, object);
-    }
-
-    @Override
-    public void n(String string, String string2) {
-        cl_2.B(this, string, string2);
-    }
-
-    @Override
-    public void I(String string, String string2, Class clazz) {
-        cl_2.t(this, string, string2, clazz);
-    }
-
-    @Override
-    public void H(String string, String string2, Object object) {
-        cl_2.a(this, string, string2, object);
-    }
-
-    @Override
-    public void S(String string, boolean bl, boolean bl2) {
-        cl_2.l(this, string, bl, bl2);
-    }
-
-    @Override
-    public void O(String string, Class clazz, boolean bl, boolean bl2) {
-        cl_2.X(this, string, clazz, bl, bl2);
-    }
-
-    @Override
-    public void h(String string, Object object, boolean bl, boolean bl2) {
-        cl_2.A(this, string, object, bl, bl2);
-    }
-
-    @Override
-    public void e(String string, String string2, Class clazz, boolean bl, boolean bl2) {
-        cl_2.L(this, string, string2, clazz, bl, bl2);
-    }
-
-    @Override
-    public void D(String string, String string2, Object object, boolean bl, boolean bl2) {
-        cl_2.y(this, string, string2, object, bl, bl2);
-    }
-
-    @Override
-    public void z(IB iB) {
-        cl_2.a(this, iB);
-    }
-
-    @Override
-    public void w() {
-        cl_2.O(this);
-    }
-
-    @Override
-    public void m() {
-        cl_2.G(this);
-    }
-
-    @Override
-    public void e() {
-        cl_2.H(this);
-    }
+      return b[var3];
+   }
 }
+
+
+
+
+
 

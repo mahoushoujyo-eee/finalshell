@@ -1,120 +1,116 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import com.thoughtworks.xstream.converters.SingleValueConverter;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 
-public class XY
-implements SingleValueConverter {
-    private static final SimpleDateFormat I;
+public class XY implements SingleValueConverter {
+   private static final SimpleDateFormat I;
 
-    @Override
-    public boolean canConvert(Class clazz) {
-        return Long.class.getCanonicalName().equals(clazz.getCanonicalName());
-    }
+   @Override
+   public boolean canConvert(Class var1) {
+      return Long.class.getCanonicalName().equals(var1.getCanonicalName());
+   }
 
-    @Override
-    public String toString(Object object) {
-        if (object == null) {
-            return "";
-        }
-        return I.format(new Date((Long)object));
-    }
+   @Override
+   public String toString(Object var1) {
+      return var1 == null ? "" : I.format(new Date((Long)var1));
+   }
 
-    @Override
-    public Object fromString(String string) {
-        try {
-            return I.parse(string).getTime();
-        }
-        catch (Throwable throwable) {
-            try {
-                return Long.parseLong(string);
+   @Override
+   public Object fromString(String var1) {
+      try {
+         return I.parse(var1).getTime();
+      } catch (Throwable var5) {
+         try {
+            return Long.parseLong(var1);
+         } catch (Throwable var4) {
+            return 0L;
+         }
+      }
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "=}m:|g~ `:".toCharArray();
+      int var10004 = var10003.length;
+      int var1 = 0;
+      byte var8 = 38;
+      char[] var10002 = var10003;
+      int var3 = var10004;
+      byte var12;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var12 = 38;
+         var10006 = var1;
+      } else {
+         var8 = 38;
+         var3 = var10004;
+         if (var10004 <= var1) {
+            String var11 = new String(var10003).intern();
+            byte var6 = -1;
+            String var2 = var11;
+            I = new SimpleDateFormat(var2);
+            return;
+         }
+
+         var10005 = var10003;
+         var12 = 38;
+         var10006 = var1;
+      }
+
+      while (true) {
+         char var24 = var10005[var10006];
+         byte var25;
+         switch (var1 % 7) {
+            case 0:
+               var25 = 127;
+               break;
+            case 1:
+               var25 = 63;
+               break;
+            case 2:
+               var25 = 101;
+               break;
+            case 3:
+               var25 = 81;
+               break;
+            case 4:
+               var25 = 23;
+               break;
+            case 5:
+               var25 = 111;
+               break;
+            default:
+               var25 = 33;
+         }
+
+         var10005[var10006] = (char)(var24 ^ var12 ^ var25);
+         var1++;
+         if (var8 == 0) {
+            var10006 = var8;
+            var10005 = var10002;
+            var12 = var8;
+         } else {
+            if (var3 <= var1) {
+               String var10 = new String(var10002).intern();
+               byte var5 = -1;
+               String var0 = var10;
+               I = new SimpleDateFormat(var0);
+               return;
             }
-            catch (Throwable throwable2) {
-                return 0L;
-            }
-        }
-    }
 
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "=}m:|g~ `:".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 38;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 127;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 63;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 101;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 81;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 23;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 111;
-                            break;
-                        }
-                        default: {
-                            n17 = 33;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        String string = new String(cArray).intern();
-        I = new SimpleDateFormat(string);
-    }
+            var10005 = var10002;
+            var12 = var8;
+            var10006 = var1;
+         }
+      }
+   }
 }
+
+
+
+
 

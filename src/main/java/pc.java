@@ -1,39 +1,43 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import javax.swing.JLabel;
 
-class pc
-implements ActionListener {
-    final JLabel F;
-    final Color U;
-    final W8 K;
-    final String I;
-    final jx_0 z;
+class pc implements ActionListener {
+   final JLabel F;
+   final Color U;
+   final W8 K;
+   final String I;
+   final Jx_2 z;
 
-    pc(jx_0 jx_02, JLabel jLabel, Color color, W8 w8, String string) {
-        this.z = jx_02;
-        this.F = jLabel;
-        this.U = color;
-        this.K = w8;
-        this.I = string;
-    }
+   pc(Jx_2 var1, JLabel var2, Color var3, W8 var4, String var5) {
+      this.z = var1;
+      this.F = var2;
+      this.U = var3;
+      this.K = var4;
+      this.I = var5;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        ((JLabel)this.F).setBackground((Color)this.U);
-        ((W8)this.K).setBackground((Color)this.U);
-        try {
-            lk_0.z(this.I);
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      ((JLabel)com.c.c(266813260529737153L).get(this)).setBackground((Color)com.c.c(376475672846154025L).get(this));
+      ((W8)com.c.c(437054913838482762L).get(this)).setBackground((Color)com.c.c(376475672846154025L).get(this));
+      Object[] var10000 = com.c.a(com.c.c(541906194858714572L).get(this));
+      Method var3 = com.c.d(555473894912140963L);
+      Object[] var5 = var10000;
+      Object var4 = null;
+
+      try {
+         var3.invoke(var4, var5);
+      } catch (InvocationTargetException var2) {
+         throw var2.getTargetException();
+      }
+   }
 }
+
+
+
+
 

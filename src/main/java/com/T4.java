@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
 import java.awt.Component;
@@ -8,99 +5,113 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.LayoutManager2;
 
-public abstract class T4
-implements LayoutManager2 {
-    private static int c;
-    private static final long[] g;
-    private static final Integer[] k;
+public abstract class T4 implements LayoutManager2 {
+   private static int c;
+   private static final long[] g;
+   private static final Integer[] k;
 
-    @Override
-    public void addLayoutComponent(Component component, Object object) {
-        this.A(component, object);
-    }
+   @Override
+   public void addLayoutComponent(Component var1, Object var2) {
+      this.A(var1, var2);
+   }
 
-    @Override
-    public void addLayoutComponent(String string, Component component) {
-        this.A(component, string);
-    }
+   @Override
+   public void addLayoutComponent(String var1, Component var2) {
+      this.A(var2, var1);
+   }
 
-    @Override
-    public void removeLayoutComponent(Component component) {
-        this.F(component);
-    }
+   @Override
+   public void removeLayoutComponent(Component var1) {
+      this.F(var1);
+   }
 
-    public void A(Component component, Object object) {
-    }
+   public void A(Component var1, Object var2) {
+   }
 
-    public void F(Component component) {
-    }
+   public void F(Component var1) {
+   }
 
-    @Override
-    public Dimension minimumLayoutSize(Container container) {
-        return this.preferredLayoutSize(container);
-    }
+   @Override
+   public Dimension minimumLayoutSize(Container var1) {
+      return this.preferredLayoutSize(var1);
+   }
 
-    @Override
-    public Dimension maximumLayoutSize(Container container) {
-        return new Dimension(T4.a(23296, 5614625828517698134L), T4.a(14998, 7986499160904711105L));
-    }
+   @Override
+   public Dimension maximumLayoutSize(Container var1) {
+      return new Dimension(a(23296, 5614625828517698134L), a(14998, 7986499160904711105L));
+   }
 
-    @Override
-    public float getLayoutAlignmentX(Container container) {
-        return 0.5f;
-    }
+   @Override
+   public float getLayoutAlignmentX(Container var1) {
+      return 0.5F;
+   }
 
-    @Override
-    public float getLayoutAlignmentY(Container container) {
-        return 0.5f;
-    }
+   @Override
+   public float getLayoutAlignmentY(Container var1) {
+      return 0.5F;
+   }
 
-    @Override
-    public void invalidateLayout(Container container) {
-    }
+   @Override
+   public void invalidateLayout(Container var1) {
+   }
 
-    public static void l(int n10) {
-        c = n10;
-    }
+   public static void l(int var0) {
+      c = var0;
+   }
 
-    public static int b() {
-        return c;
-    }
+   public static int b() {
+      return c;
+   }
 
-    public static int O() {
-        int n10 = T4.b();
-        if (n10 == 0) {
-            return 51;
-        }
-        return 0;
-    }
+   public static int O() {
+      int var0 = b();
+      return var0 == 0 ? 51 : 0;
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 2303545438569127437L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\u0088\u00a2\u009dF\u00dd\u009a{\u00a4\u00e77b\u00c1v\u00b3\u009a3";
-        int n11 = "\u0088\u00a2\u009dF\u00dd\u009a{\u00a4\u00e77b\u00c1v\u00b3\u009a3".length();
-        T4.l(103);
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        g = lArray;
-        k = new Integer[2];
-    }
+   static {
+      long var0 = 2303545438569127437L;
+      long[] var6 = new long[2];
+      int var3 = 0;
+      String var4 = "\u0088¢\u009dFÝ\u009a{¤ç7bÁv³\u009a3";
+      int var5 = "\u0088¢\u009dFÝ\u009a{¤ç7bÁv³\u009a3".length();
+      l(103);
+      byte var2 = 0;
 
-    private static int a(int n10, long l2) {
-        int n11 = n10 ^ (int)(l2 & 0x7FFFL) ^ 0x156;
-        if (k[n11] == null) {
-            T4.k[n11] = (int)(g[n11] ^ l2);
-        }
-        return k[n11];
-    }
+      do {
+         int var10001 = var2;
+         var2 += 8;
+         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var10001 = var3++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var0;
+         byte var10003 = -1;
+         var6[var10001] = var10004;
+      } while (var2 < var5);
+
+      g = var6;
+      k = new Integer[2];
+   }
+
+   private static int a(int var0, long var1) {
+      int var3 = var0 ^ (int)(var1 & 32767L) ^ 342;
+      if (k[var3] == null) {
+         k[var3] = (int)(g[var3] ^ var1);
+      }
+
+      return k[var3];
+   }
 }
+
+
+
+
 

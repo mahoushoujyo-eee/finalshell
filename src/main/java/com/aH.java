@@ -1,32 +1,28 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.xx_0;
-
+// $VF: synthetic class
 class aH {
-    static final int[] H = new int[xx_0.values().length];
+   static final int[] H = new int[Xx_2.values().length];
 
-    static {
-        try {
-            aH.H[xx_0.preferred.ordinal()] = 1;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            aH.H[xx_0.fitComponent.ordinal()] = 2;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-        try {
-            aH.H[xx_0.repeat.ordinal()] = 3;
-        }
-        catch (NoSuchFieldError noSuchFieldError) {
-            // empty catch block
-        }
-    }
+   static {
+      try {
+         H[Xx_2.preferred.ordinal()] = 1;
+      } catch (NoSuchFieldError var3) {
+      }
+
+      try {
+         H[Xx_2.fitComponent.ordinal()] = 2;
+      } catch (NoSuchFieldError var2) {
+      }
+
+      try {
+         H[Xx_2.repeat.ordinal()] = 3;
+      } catch (NoSuchFieldError var1) {
+      }
+   }
 }
+
+
+
+
 

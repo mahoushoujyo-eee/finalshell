@@ -1,22 +1,29 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
-/*
- * Renamed from bv
- */
-class bv_2
-implements Runnable {
-    final xh_0 W;
+class Bv_2 implements Runnable {
+   final Ty_2 V;
 
-    bv_2(xh_0 xh_02) {
-        this.W = xh_02;
-    }
+   Bv_2(Ty_2 var1) {
+      this.V = var1;
+   }
 
-    @Override
-    public void run() {
-        ((a3)this.W.O.x.K).startEditingAtPath(((a3)this.W.O.x.K).getSelectionPath());
-    }
+   @Override
+   public void run() {
+      Object[] var10000 = com.c.a(com.c.c(359898254707283044L).get(this));
+      Method var2 = com.c.d(395648233250236832L);
+      Object[] var4 = var10000;
+      Object var3 = null;
+
+      try {
+         var2.invoke(var3, var4);
+      } catch (InvocationTargetException var1) {
+         throw var1.getTargetException();
+      }
+   }
 }
+
+
+
+
 

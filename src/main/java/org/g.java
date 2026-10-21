@@ -1,30 +1,28 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import org.E;
-import org.T.s;
 
-class g
-extends ByteArrayOutputStream {
-    final OutputStream i;
-    final E z;
+class g extends ByteArrayOutputStream {
+   final OutputStream i;
+   final org.E z;
 
-    g(E e2, OutputStream outputStream) {
-        this.z = e2;
-        this.i = outputStream;
-    }
+   g(org.E var1, OutputStream var2) {
+      this.z = var1;
+      this.i = var2;
+   }
 
-    @Override
-    public void close() throws IOException {
-        byte[] byArray = this.toByteArray();
-        s.K(byArray);
-        this.i.write(byArray);
-        this.i.close();
-    }
+   @Override
+   public void close() throws IOException {
+      byte[] var1 = this.toByteArray();
+      org.T.s.K(var1);
+      this.i.write(var1);
+      this.i.close();
+   }
 }
+
+
+
+
 

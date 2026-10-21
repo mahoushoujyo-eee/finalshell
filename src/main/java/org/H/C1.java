@@ -1,30 +1,26 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import org.H.CB;
-import org.h.g_0;
+public final class C1 extends org.H.CB {
+   private static final long a;
 
-public final class C1
-extends CB {
-    private static final long a;
+   public C1(short var1) {
+      super((byte)((int)a), var1);
+   }
 
-    public C1(short s2) {
-        super((byte)a, s2);
-    }
+   @Override
+   protected Object b(org.H.g_2 var1) throws Throwable {
+      return var1.Y(this);
+   }
 
-    @Override
-    protected Object b(g_0 g_02) throws Throwable {
-        return g_02.Y(this);
-    }
-
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 7571045044208224088L;
-        a = 0x2B8B75BCC683470BL ^ l2;
-    }
+   static {
+      long var0 = 7571045044208224088L;
+      long var10002 = 3137731019038476043L ^ var0;
+      byte var10001 = -1;
+      a = var10002;
+   }
 }
+
+
+
+
 

@@ -1,66 +1,56 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.v;
 
-import org.F.c;
-import org.b_0;
-import org.v.NL;
-import org.v.NV;
-import org.v.h_1;
-import org.v.nt_0;
-import org.v.ny_0;
-import org.v.q_2;
-import org.v.x_0;
+class h0 implements X_2 {
+   final H_3 v;
 
-class h0
-implements x_0 {
-    final h_1 v;
+   h0(H_3 var1) {
+      this.v = var1;
+   }
 
-    h0(h_1 h_12) {
-        this.v = h_12;
-    }
+   public q_4 g(Ny_2 var1) throws org.b_2 {
+      return H_3.i(this.v, var1);
+   }
 
-    public q_2 g(ny_0 ny_02) throws b_0 {
-        return h_1.i(this.v, ny_02);
-    }
+   @org.F.c
+   public q_4 R(Nt_2 var1) throws org.b_2 {
+      return H_3.v(this.v, var1);
+   }
 
-    @c
-    public q_2 R(nt_0 nt_02) throws b_0 {
-        return h_1.v(this.v, nt_02);
-    }
+   @org.F.c
+   public q_4 b(NV var1) throws org.b_2 {
+      return H_3.O(this.v, var1);
+   }
 
-    @c
-    public q_2 b(NV nV2) throws b_0 {
-        return h_1.O(this.v, nV2);
-    }
+   @org.F.c
+   public q_4 N(NL var1) throws org.b_2 {
+      return H_3.P(this.v, var1);
+   }
 
-    @c
-    public q_2 N(NL nL2) throws b_0 {
-        return h_1.P(this.v, nL2);
-    }
+   @org.F.c
+   @Override
+   public Object V(NL var1) throws Throwable {
+      return this.N(var1);
+   }
 
-    @Override
-    @c
-    public Object V(NL nL2) throws Throwable {
-        return this.N(nL2);
-    }
+   @org.F.c
+   @Override
+   public Object u(Nt_2 var1) throws Throwable {
+      return this.R(var1);
+   }
 
-    @Override
-    @c
-    public Object u(nt_0 nt_02) throws Throwable {
-        return this.R(nt_02);
-    }
+   @org.F.c
+   @Override
+   public Object k(NV var1) throws Throwable {
+      return this.b(var1);
+   }
 
-    @Override
-    @c
-    public Object k(NV nV2) throws Throwable {
-        return this.b(nV2);
-    }
-
-    @Override
-    public Object V(ny_0 ny_02) throws Throwable {
-        return this.g(ny_02);
-    }
+   @Override
+   public Object V(Ny_2 var1) throws Throwable {
+      return this.g(var1);
+   }
 }
+
+
+
+
 

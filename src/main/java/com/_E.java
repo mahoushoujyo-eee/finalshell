@@ -1,39 +1,51 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.DE;
-import com.G6;
 import com.b.V;
 
 public final class _E {
-    public static boolean d;
-    public static int M;
-    public static int P;
-    public static G6 z;
-    public static V Z;
+   public static boolean d;
+   public static int M;
+   public static int P;
+   public static G6 z;
+   public static V Z;
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 8194998609679021620L;
-        long[] lArray = new long[2];
-        int n10 = 0;
-        String string = "\u00a0\u00ea[\u00c1\b\u00bc\u00f67\u00da:\u00bd\u00bb\b\u00bc\u00f67";
-        int n11 = "\u00a0\u00ea[\u00c1\b\u00bc\u00f67\u00da:\u00bd\u00bb\b\u00bc\u00f67".length();
-        int n12 = 0;
-        do {
-            byte[] byArray = string.substring(n12, n12 += 8).getBytes("ISO-8859-1");
-            int n13 = n10++;
-            lArray[n13] = (((long)byArray[0] & 0xFFL) << 56 | ((long)byArray[1] & 0xFFL) << 48 | ((long)byArray[2] & 0xFFL) << 40 | ((long)byArray[3] & 0xFFL) << 32 | ((long)byArray[4] & 0xFFL) << 24 | ((long)byArray[5] & 0xFFL) << 16 | ((long)byArray[6] & 0xFFL) << 8 | (long)byArray[7] & 0xFFL) ^ l2;
-        } while (n12 < n11);
-        d = true;
-        M = (int)lArray[1];
-        P = (int)lArray[0];
-        z = G6.tiles;
-        Z = DE.I;
-    }
+   static {
+      long var1 = 8194998609679021620L;
+      long[] var0 = new long[2];
+      int var4 = 0;
+      String var5 = " ê[Á\b¼ö7Ú:½»\b¼ö7";
+      int var6 = " ê[Á\b¼ö7Ú:½»\b¼ö7".length();
+      byte var3 = 0;
+
+      do {
+         int var10001 = var3;
+         var3 += 8;
+         byte[] var7 = var5.substring(var10001, var3).getBytes("ISO-8859-1");
+         var10001 = var4++;
+         long var10004 = (
+               ((long)var7[0] & 255L) << 56
+                  | ((long)var7[1] & 255L) << 48
+                  | ((long)var7[2] & 255L) << 40
+                  | ((long)var7[3] & 255L) << 32
+                  | ((long)var7[4] & 255L) << 24
+                  | ((long)var7[5] & 255L) << 16
+                  | ((long)var7[6] & 255L) << 8
+                  | (long)var7[7] & 255L
+            )
+            ^ var1;
+         byte var10003 = -1;
+         var0[var10001] = var10004;
+      } while (var3 < var6);
+
+      d = true;
+      M = (int)var0[1];
+      P = (int)var0[0];
+      z = G6.tiles;
+      Z = com.DE.I;
+   }
 }
+
+
+
+
 

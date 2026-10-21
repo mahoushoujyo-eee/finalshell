@@ -1,209 +1,205 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.GR;
-import com.NE;
-import com.WF;
-import com.cs_0;
-import com.ky_2;
-import com.wc_0;
 import java.awt.Component;
 import java.lang.ref.WeakReference;
 import javax.swing.JComponent;
 
 public class DN {
-    private String t = null;
-    private boolean j = false;
-    private WeakReference x = null;
-    private WeakReference K = null;
-    private cs_0 O;
-    private WF p;
-    private wc_0 J;
-    private static final String a;
+   private String t = null;
+   private boolean j = false;
+   private WeakReference x = null;
+   private WeakReference K;
+   private com.Cs_2 O;
+   private com.WF p;
+   private com.Wc_2 J;
+   private static final String a;
 
-    public DN() {
-        String[] stringArray = GR.I();
-        this.O = null;
-        this.p = null;
-        this.J = null;
-        if (ky_2.F() != null) {
-            GR.O(new String[2]);
-        }
-    }
+   public DN() {
+      GR.I();
+      this.K = null;
+      this.O = null;
+      this.p = null;
+      this.J = null;
+      if (com.ky_4.F() != null) {
+         GR.O(new String[2]);
+      }
+   }
 
-    public String k() {
-        String[] stringArray = GR.I();
-        String string = this.t;
-        if (stringArray != null) {
-            if (string == null) {
-                this.C();
+   public String k() {
+      String[] var1 = GR.I();
+      String var10000 = this.t;
+      if (var1 != null) {
+         if (this.t == null) {
+            this.C();
+         }
+
+         var10000 = this.t;
+      }
+
+      return var10000;
+   }
+
+   public void b(String var1) {
+      this.t = var1;
+   }
+
+   public void C() {
+      this.t = NE.E(a);
+   }
+
+   public boolean o() {
+      return this.j;
+   }
+
+   public com.DN s(boolean var1) {
+      this.j = var1;
+      return this;
+   }
+
+   public Component R() {
+      String[] var1 = GR.I();
+      Object var10000 = this.x;
+      if (var1 != null) {
+         if (this.x == null) {
+            return null;
+         }
+
+         var10000 = this.x.get();
+      }
+
+      return (Component)var10000;
+   }
+
+   public com.DN p(Component var1) {
+      this.x = new WeakReference(var1);
+      return this;
+   }
+
+   public JComponent j() {
+      String[] var1 = GR.I();
+      Object var10000 = this.K;
+      if (var1 != null) {
+         if (this.K == null) {
+            return null;
+         }
+
+         var10000 = this.K.get();
+      }
+
+      return (JComponent)var10000;
+   }
+
+   public com.DN u(JComponent var1) {
+      this.K = new WeakReference(var1);
+      return this;
+   }
+
+   public com.Cs_2 x() {
+      return this.O;
+   }
+
+   public com.DN M(com.Cs_2 var1) {
+      this.O = var1;
+      return this;
+   }
+
+   public com.WF O() {
+      return this.p;
+   }
+
+   public com.DN T(com.WF var1) {
+      this.p = var1;
+      return this;
+   }
+
+   public com.Wc_2 t() {
+      return this.J;
+   }
+
+   public com.DN v(com.Wc_2 var1) {
+      this.J = var1;
+      return this;
+   }
+
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      char[] var10003 = "V_".toCharArray();
+      int var10004 = var10003.length;
+      int var0 = 0;
+      byte var6 = 20;
+      char[] var10002 = var10003;
+      int var1 = var10004;
+      byte var10;
+      char[] var10005;
+      int var10006;
+      if (var10004 <= 1) {
+         var10005 = var10003;
+         var10 = 20;
+         var10006 = var0;
+      } else {
+         var6 = 20;
+         var1 = var10004;
+         if (var10004 <= var0) {
+            String var9 = new String(var10003).intern();
+            byte var4 = -1;
+            a = var9;
+            return;
+         }
+
+         var10005 = var10003;
+         var10 = 20;
+         var10006 = var0;
+      }
+
+      while (true) {
+         char var22 = var10005[var10006];
+         byte var23;
+         switch (var0 % 7) {
+            case 0:
+               var23 = 10;
+               break;
+            case 1:
+               var23 = 2;
+               break;
+            case 2:
+               var23 = 4;
+               break;
+            case 3:
+               var23 = 111;
+               break;
+            case 4:
+               var23 = 29;
+               break;
+            case 5:
+               var23 = 99;
+               break;
+            default:
+               var23 = 124;
+         }
+
+         var10005[var10006] = (char)(var22 ^ var10 ^ var23);
+         var0++;
+         if (var6 == 0) {
+            var10006 = var6;
+            var10005 = var10002;
+            var10 = var6;
+         } else {
+            if (var1 <= var0) {
+               String var8 = new String(var10002).intern();
+               byte var3 = -1;
+               a = var8;
+               return;
             }
-            string = this.t;
-        }
-        return string;
-    }
 
-    public void b(String string) {
-        this.t = string;
-    }
-
-    public void C() {
-        this.t = NE.E(a);
-    }
-
-    public boolean o() {
-        return this.j;
-    }
-
-    public DN s(boolean bl) {
-        this.j = bl;
-        return this;
-    }
-
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public Component R() {
-        String[] stringArray = GR.I();
-        WeakReference weakReference = this.x;
-        if (stringArray != null) {
-            if (weakReference == null) return null;
-            weakReference = this.x.get();
-        }
-        Component component = (Component)((Object)weakReference);
-        return component;
-    }
-
-    public DN p(Component component) {
-        this.x = new WeakReference<Component>(component);
-        return this;
-    }
-
-    /*
-     * Enabled force condition propagation
-     * Lifted jumps to return sites
-     */
-    public JComponent j() {
-        String[] stringArray = GR.I();
-        WeakReference weakReference = this.K;
-        if (stringArray != null) {
-            if (weakReference == null) return null;
-            weakReference = this.K.get();
-        }
-        JComponent jComponent = (JComponent)((Object)weakReference);
-        return jComponent;
-    }
-
-    public DN u(JComponent jComponent) {
-        this.K = new WeakReference<JComponent>(jComponent);
-        return this;
-    }
-
-    public cs_0 x() {
-        return this.O;
-    }
-
-    public DN M(cs_0 cs_02) {
-        this.O = cs_02;
-        return this;
-    }
-
-    public WF O() {
-        return this.p;
-    }
-
-    public DN T(WF wF) {
-        this.p = wF;
-        return this;
-    }
-
-    public wc_0 t() {
-        return this.J;
-    }
-
-    public DN v(wc_0 wc_02) {
-        this.J = wc_02;
-        return this;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "V_".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 20;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
-            }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 10;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 2;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 4;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 111;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 29;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 99;
-                            break;
-                        }
-                        default: {
-                            n17 = 124;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+            var10005 = var10002;
+            var10 = var6;
+            var10006 = var0;
+         }
+      }
+   }
 }
+
+
+
+
 

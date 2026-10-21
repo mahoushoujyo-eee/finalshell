@@ -1,31 +1,29 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.V;
 
 import java.io.File;
-import org.V.f;
 
-public class E
-extends f {
-    private final File I;
-    private static final long b;
+public class E extends org.V.f {
+   private final File I;
+   private static final long b;
 
-    public E(File file) {
-        this.I = file;
-    }
+   public E(File var1) {
+      this.I = var1;
+   }
 
-    @Override
-    protected final File r(String string) {
-        return new File(this.I, string.replace((char)b, File.separatorChar));
-    }
+   @Override
+   protected final File r(String var1) {
+      return new File(this.I, var1.replace((char)((int)b), File.separatorChar));
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 5009753000943441928L;
-        b = 0x6FF827DFC1AE5827L ^ l2;
-    }
+   static {
+      long var0 = 5009753000943441928L;
+      long var10002 = 8068242574414862375L ^ var0;
+      byte var10001 = -1;
+      b = var10002;
+   }
 }
+
+
+
+
 

@@ -1,26 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.gj_2;
-import com.yp_2;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 
-/*
- * Renamed from com.gp
- */
-class gp_2
-extends gj_2 {
-    final yp_2 K;
+class Gp_2 extends ComponentAdapter {
+   final com.Wd_2 I;
 
-    gp_2(yp_2 yp_22) {
-        this.K = yp_22;
-    }
+   Gp_2(com.Wd_2 var1) {
+      this.I = var1;
+   }
 
-    @Override
-    protected float q(float f10) {
-        f10 += yp_2.f(this.K) * (float)Math.sin((double)(f10 * 2.0f) * Math.PI);
-        return 1.0f - (float)Math.exp(-f10 * yp_2.o(this.K));
-    }
+   @Override
+   public void componentResized(ComponentEvent var1) {
+      this.I.t();
+   }
 }
+
+
+
+
 

@@ -1,13 +1,10 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.apple.eawt.event;
 
-import com.apple.eawt.event.GestureListener;
-import com.apple.eawt.event.MagnificationEvent;
-
-public interface MagnificationListener
-extends GestureListener {
-    public void magnify(MagnificationEvent var1);
+public interface MagnificationListener extends GestureListener {
+   void magnify(MagnificationEvent var1);
 }
+
+
+
+
 

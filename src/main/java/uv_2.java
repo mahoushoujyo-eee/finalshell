@@ -1,29 +1,20 @@
-/*
- * Decompiled with CFR 0.152.
- */
-import com.c;
-import java.lang.reflect.InvocationTargetException;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
-/*
- * Renamed from uv
- */
-class uv_2
-implements Runnable {
-    final o3_0 r;
+class Uv_2 extends MouseAdapter {
+   final mi_2 q;
 
-    uv_2(o3_0 o3_02) {
-        this.r = o3_02;
-    }
+   Uv_2(mi_2 var1) {
+      this.q = var1;
+   }
 
-    @Override
-    public void run() {
-        try {
-            this.r.E.b.v.y();
-        }
-        catch (InvocationTargetException invocationTargetException) {
-            throw invocationTargetException.getTargetException();
-        }
-        ((km_0)this.r.E.b).editCellAt(this.r.d, this.r.u);
-    }
+   @Override
+   public void mousePressed(MouseEvent var1) {
+      super.mousePressed(var1);
+   }
 }
+
+
+
+
 

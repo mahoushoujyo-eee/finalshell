@@ -1,107 +1,103 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.O4;
-import com.xy_1;
+public enum Xx_2 {
+   preferred, fitComponent, repeat;
 
-/*
- * Renamed from com.xx
- */
-@O4(Z={"type", "bbox", "coordinates"})
-public class xx_2
-extends xy_1 {
-    private double[][] n;
-    private static final String a;
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var0 = new String[3];
+      int var4 = 0;
+      String var3 = "\n7\u0015\u0018\u0010h\t\b \u0000\u001b\u0014nm\u001d6\f\u001e;\u0011>\u001eqo\u0017<\u0000\u0013\u0005";
+      int var5 = "\n7\u0015\u0018\u0010h\t\b \u0000\u001b\u0014nm\u001d6\f\u001e;\u0011>\u001eqo\u0017<\u0000\u0013\u0005".length();
+      char var2 = 6;
+      int var1 = -1;
 
-    public xx_2() {
-        super(a);
-    }
+      while (true) {
+         char[] var10002;
+         label39: {
+            char[] var10003 = var3.substring(++var1, var1 + var2).toCharArray();
+            int var10004 = var10003.length;
+            int var6 = 0;
+            byte var13 = 49;
+            var10002 = var10003;
+            int var8 = var10004;
+            byte var16;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var16 = 49;
+               var10006 = var6;
+            } else {
+               var13 = 49;
+               var8 = var10004;
+               if (var10004 <= var6) {
+                  break label39;
+               }
 
-    public double[][] L() {
-        return this.n;
-    }
-
-    public void E(double[][] dArray) {
-        this.n = dArray;
-    }
-
-    /*
-     * Handled impossible loop by duplicating code
-     * Enabled aggressive block sorting
-     */
-    static {
-        char[] cArray;
-        block12: {
-            int n10;
-            char[] cArray2;
-            int n11;
-            int n12;
-            block11: {
-                char[] cArray3 = "6L[z7\u0014\u0000\u0013KR".toCharArray();
-                int n13 = cArray3.length;
-                n12 = 0;
-                n11 = 105;
-                cArray2 = cArray3;
-                n10 = n13;
-                if (n13 <= 1) break block11;
-                cArray = cArray2;
-                n10 = n10;
-                if (n10 <= n12) break block12;
+               var10005 = var10003;
+               var16 = 49;
+               var10006 = var6;
             }
-            do {
-                int n14 = n11;
-                cArray2 = cArray2;
-                char[] cArray4 = cArray2;
-                int n15 = n11;
-                int n16 = n12;
-                while (true) {
-                    int n17;
-                    switch (n12 % 7) {
-                        case 0: {
-                            n17 = 19;
-                            break;
-                        }
-                        case 1: {
-                            n17 = 76;
-                            break;
-                        }
-                        case 2: {
-                            n17 = 92;
-                            break;
-                        }
-                        case 3: {
-                            n17 = 118;
-                            break;
-                        }
-                        case 4: {
-                            n17 = 13;
-                            break;
-                        }
-                        case 5: {
-                            n17 = 9;
-                            break;
-                        }
-                        default: {
-                            n17 = 27;
-                        }
-                    }
-                    cArray4[n16] = (char)(cArray4[n16] ^ (n15 ^ n17));
-                    ++n12;
-                    n11 = n14;
-                    if (n14 != 0) break;
-                    n14 = n11;
-                    cArray2 = cArray2;
-                    n16 = n11;
-                    cArray4 = cArray2;
-                    n15 = n11;
-                }
-                cArray = cArray2;
-                n10 = n10;
-            } while (n10 > n12);
-        }
-        a = new String(cArray).intern();
-    }
+
+            while (true) {
+               char var28 = var10005[var10006];
+               byte var29;
+               switch (var6 % 7) {
+                  case 0:
+                     var29 = 73;
+                     break;
+                  case 1:
+                     var29 = 99;
+                     break;
+                  case 2:
+                     var29 = 84;
+                     break;
+                  case 3:
+                     var29 = 76;
+                     break;
+                  case 4:
+                     var29 = 64;
+                     break;
+                  case 5:
+                     var29 = 45;
+                     break;
+                  default:
+                     var29 = 46;
+               }
+
+               var10005[var10006] = (char)(var28 ^ var16 ^ var29);
+               var6++;
+               if (var13 == 0) {
+                  var10006 = var13;
+                  var10005 = var10002;
+                  var16 = var13;
+               } else {
+                  if (var8 <= var6) {
+                     break;
+                  }
+
+                  var10005 = var10002;
+                  var16 = var13;
+                  var10006 = var6;
+               }
+            }
+         }
+
+         String var15 = new String(var10002).intern();
+         byte var10 = -1;
+         var0[var4++] = var15;
+         if ((var1 += var2) >= var5) {
+            return;
+         }
+
+         var2 = var3.charAt(var1);
+      }
+   }
 }
+
+
+
+
+
 

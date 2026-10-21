@@ -1,53 +1,50 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package org.H;
 
-import com.ky_2;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import org.h.cr_0;
-import org.h.u_0;
 
 public abstract class CM {
-    final int X;
-    static final boolean t;
-    private static final long d;
+   final int X;
+   static final boolean t = !org.H.Cr_2.class.desiredAssertionStatus();
+   private static final long d;
 
-    public CM(int n10) {
-        block2: {
-            block3: {
-                block5: {
-                    int n11;
-                    block4: {
-                        ky_2[] ky_2Array = cr_0.q();
-                        ky_2[] ky_2Array2 = ky_2Array;
-                        if (ky_2Array2 != null) break block2;
-                        if (t) break block3;
-                        n11 = n10;
-                        if (ky_2Array2 != null) break block4;
-                        if (n11 < 0) break block5;
-                        n11 = n10;
-                    }
-                    if (n11 <= (int)d) break block3;
-                }
-                throw new AssertionError();
+   public CM(int var1) {
+      com.ky_4[] var10000 = org.H.Cr_2.q();
+      super();
+      com.ky_4[] var2 = var10000;
+      if (var2 == null) {
+         if (!t) {
+            int var3 = var1;
+            if (var2 == null) {
+               if (var1 < 0) {
+                  throw new AssertionError();
+               }
+
+               var3 = var1;
             }
-            this.X = n10;
-        }
-    }
 
-    public abstract Object r(u_0 var1);
+            if (var3 > (int)d) {
+               throw new AssertionError();
+            }
+         }
 
-    public abstract void e(DataOutputStream var1) throws IOException;
+         this.X = var1;
+      }
+   }
 
-    /*
-     * Enabled aggressive block sorting
-     */
-    static {
-        long l2 = 2196569374868418399L;
-        d = 0xC69CC7CA618850A0L ^ l2;
-        t = !cr_0.class.desiredAssertionStatus();
-    }
+   public abstract Object r(org.H.u_2 var1);
+
+   public abstract void e(DataOutputStream var1) throws IOException;
+
+   static {
+      long var0 = 2196569374868418399L;
+      long var10002 = -4135210685799313248L ^ var0;
+      byte var10001 = -1;
+      d = var10002;
+   }
 }
+
+
+
+
 

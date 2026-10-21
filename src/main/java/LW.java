@@ -1,101 +1,117 @@
-/*
- * Decompiled with CFR 0.152.
- */
 import java.util.HashMap;
 
-public class LW
-implements Runnable {
-    Thread o;
-    HashMap s = new HashMap();
+public class LW implements Runnable {
+   Thread o;
+   HashMap s = new HashMap();
 
-    public LW() {
-        this.o = new Thread(this);
-        this.o.start();
-    }
+   public LW() {
+      this.o = new Thread(this);
+      this.o.start();
+   }
 
-    synchronized void d(qu_0 qu_02, int n10) {
-        z1 z12;
-        String[] stringArray = QI.N();
-        HashMap hashMap = this.s;
-        Integer n11 = qu_02.a;
-        if (stringArray != null) {
-            if (!hashMap.containsKey(n11)) {
-                z12 = new z1(qu_02);
-                this.s.put(qu_02.a, z12);
-            }
-            hashMap = this.s;
-            n11 = qu_02.a;
-        }
-        z12 = (z1)hashMap.get(n11);
-        z12.k(n10);
-    }
+   synchronized void d(Qu_2 var1, int var2) {
+      String[] var3 = QI.N();
+      HashMap var10000 = this.s;
+      Integer var10001 = var1.a;
+      if (var3 != null) {
+         if (!var10000.containsKey(var10001)) {
+            z1 var4 = new z1(var1);
+            this.s.put(var1.a, var4);
+         }
 
-    synchronized void i(qu_0 qu_02) {
-        if (!this.s.containsKey(qu_02.a)) {
-            z1 z12 = new z1(qu_02);
-            this.s.put(qu_02.a, z12);
-        }
-    }
+         var10000 = this.s;
+         var10001 = var1.a;
+      }
 
-    /*
-     * WARNING - Removed try catching itself - possible behaviour change.
-     * Unable to fully structure code
-     * Enabled aggressive block sorting
-     * Enabled unnecessary exception pruning
-     * Enabled aggressive exception aggregation
-     * Converted monitor instructions to comments
-     * Lifted jumps to return sites
-     */
-    @Override
-    public void run() {
-        var1_1 = QI.N();
-        while (true) {
-            block11: {
-                var2_2 = this;
-                // MONITORENTER : var2_2
-                var3_4 = this.s.keySet().iterator();
-                try {
-                    if (var1_1 == null) {
-                        break block11;
-                    }
-                    ** GOTO lbl23
-                }
-                catch (InterruptedException v0) {
-                    throw LW.a(v0);
-                }
-            }
-            block8: while (true) {
-                v2 /* !! */  = var3_4.next();
-                do {
-                    var4_5 = (Integer)v2 /* !! */ ;
-                    var5_6 = (z1)this.s.get(var4_5);
-                    var5_6.h();
-lbl23:
-                    // 2 sources
+      z1 var5 = (z1)var10000.get(var10001);
+      var5.k(var2);
+   }
 
-                    if (var3_4.hasNext()) continue block8;
-                    this.s.clear();
-                    this.s = null;
-                    this.s = new HashMap<K, V>();
-                    v2 /* !! */  = var2_2;
-                } while (var1_1 == null);
-                break;
-            }
-            // MONITOREXIT : v2 /* !! */ 
-            try {
-                Thread.sleep(yh_0.M);
-                continue;
-            }
-            catch (InterruptedException var2_3) {
-                var2_3.printStackTrace();
-                continue;
-            }
-            break;
-        }
-    }
+   synchronized void i(Qu_2 var1) {
+      if (!this.s.containsKey(var1.a)) {
+         z1 var2 = new z1(var1);
+         this.s.put(var1.a, var2);
+      }
+   }
 
-    private static InterruptedException a(InterruptedException interruptedException) {
-        return interruptedException;
-    }
+   @Override
+   public void run() {
+      // $VF: Couldn't be decompiled
+      throw new UnsupportedOperationException("decompilation failed (Vineflower)");
+      // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
+      // java.lang.RuntimeException: parsing failure!
+      //   at org.jetbrains.java.decompiler.modules.decompiler.decompose.DomHelper.parseGraph(DomHelper.java:211)
+      //   at org.jetbrains.java.decompiler.main.rels.MethodProcessor.codeToJava(MethodProcessor.java:166)
+      //
+      // Bytecode:
+      // 00: invokestatic QI.N ()[Ljava/lang/String;
+      // 03: astore 1
+      // 04: aload 0
+      // 05: dup
+      // 06: astore 2
+      // 07: monitorenter
+      // 08: aload 0
+      // 09: getfield LW.s Ljava/util/HashMap;
+      // 0c: invokevirtual java/util/HashMap.keySet ()Ljava/util/Set;
+      // 0f: invokeinterface java/util/Set.iterator ()Ljava/util/Iterator; 1
+      // 14: astore 3
+      // 15: aload 1
+      // 16: ifnonnull 44
+      // 19: aload 3
+      // 1a: invokeinterface java/util/Iterator.next ()Ljava/lang/Object; 1
+      // 1f: goto 26
+      // 22: invokestatic LW.a (Ljava/lang/InterruptedException;)Ljava/lang/InterruptedException;
+      // 25: athrow
+      // 26: checkcast java/lang/Integer
+      // 29: invokevirtual java/lang/Integer.intValue ()I
+      // 2c: istore 4
+      // 2e: aload 0
+      // 2f: getfield LW.s Ljava/util/HashMap;
+      // 32: iload 4
+      // 34: invokestatic java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+      // 37: invokevirtual java/util/HashMap.get (Ljava/lang/Object;)Ljava/lang/Object;
+      // 3a: checkcast z1
+      // 3d: astore 5
+      // 3f: aload 5
+      // 41: invokevirtual z1.h ()V
+      // 44: aload 3
+      // 45: invokeinterface java/util/Iterator.hasNext ()Z 1
+      // 4a: ifne 19
+      // 4d: aload 0
+      // 4e: getfield LW.s Ljava/util/HashMap;
+      // 51: invokevirtual java/util/HashMap.clear ()V
+      // 54: aload 0
+      // 55: aconst_null
+      // 56: putfield LW.s Ljava/util/HashMap;
+      // 59: aload 0
+      // 5a: new java/util/HashMap
+      // 5d: dup
+      // 5e: invokespecial java/util/HashMap.<init> ()V
+      // 61: putfield LW.s Ljava/util/HashMap;
+      // 64: aload 2
+      // 65: aload 1
+      // 66: ifnull 26
+      // 69: monitorexit
+      // 6a: goto 70
+      // 6d: aload 2
+      // 6e: monitorexit
+      // 6f: athrow
+      // 70: getstatic Yh_2.M I
+      // 73: i2l
+      // 74: invokestatic java/lang/Thread.sleep (J)V
+      // 77: goto 04
+      // 7a: astore 2
+      // 7b: aload 2
+      // 7c: invokevirtual java/lang/InterruptedException.printStackTrace ()V
+      // 7f: goto 04
+   }
+
+   private static InterruptedException a(InterruptedException var0) {
+      return var0;
+   }
 }
+
+
+
+
 

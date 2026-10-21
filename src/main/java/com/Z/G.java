@@ -1,24 +1,22 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com.Z;
 
-import com.Z.T;
-import com.b.V;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class G
-implements ActionListener {
-    final T f;
+class G implements ActionListener {
+   final com.Z.T f;
 
-    G(T t2) {
-        this.f = t2;
-    }
+   G(com.Z.T var1) {
+      this.f = var1;
+   }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvent) {
-        this.f.R((V)this.f.i.getSelectedItem(), false);
-    }
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      this.f.R((com.b.V)this.f.i.getSelectedItem(), false);
+   }
 }
+
+
+
+
 

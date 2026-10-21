@@ -1,173 +1,141 @@
-/*
- * Decompiled with CFR 0.152.
- */
 package com;
 
-import com.FN;
-import com.WC;
 import java.awt.event.MouseEvent;
 
-public final class HT
-extends Enum {
-    public static final HT left;
-    public static final HT middle;
-    public static final HT right;
-    private final int s;
-    private static final /* synthetic */ HT[] H;
+public enum HT {
+   left, middle, right;
+   private final int s;
 
-    public static HT[] values() {
-        return (HT[])H.clone();
-    }
+   private HT(int var3) {
+      this.s = var3;
+   }
 
-    public static HT valueOf(String string) {
-        return Enum.valueOf(HT.class, string);
-    }
+   public int r() {
+      return this.s;
+   }
 
-    /*
-     * WARNING - Possible parameter corruption
-     * WARNING - void declaration
-     */
-    private HT() {
-        void var3_1;
-        void var2_-1;
-        void var1_-1;
-        this.s = var3_1;
-    }
+   public static HT l(MouseEvent var0) {
+      int[] var1 = com.WC.V();
+      boolean var10000 = com.FN.L(var0);
+      if (var1 == null) {
+         if (var10000) {
+            return right;
+         }
 
-    public int r() {
-        return this.s;
-    }
+         var10000 = com.FN.N(var0);
+      }
 
-    public static HT l(MouseEvent mouseEvent) {
-        int[] nArray = WC.V();
-        boolean bl = FN.L(mouseEvent);
-        if (nArray == null) {
-            if (bl) {
-                return right;
-            }
-            bl = FN.N(mouseEvent);
-        }
-        if (bl) {
+      return var10000 ? middle : left;
+   }
+
+   public static HT x(int var0) {
+      switch (var0) {
+         case 1:
+            return left;
+         case 2:
             return middle;
-        }
-        return left;
-    }
+         case 3:
+            return right;
+         default:
+            return null;
+      }
+   }
 
-    public static HT x(int n10) {
-        switch (n10) {
-            case 1: {
-                return left;
-            }
-            case 2: {
-                return middle;
-            }
-            case 3: {
-                return right;
-            }
-        }
-        return null;
-    }
+   // $VF: Irreducible bytecode was duplicated to produce valid code
+   static {
+      String[] var0 = new String[3];
+      int var4 = 0;
+      String var3 = " fLV~\u0006?fOZf7\u0004>jMJ";
+      int var5 = " fLV~\u0006?fOZf7\u0004>jMJ".length();
+      char var2 = 5;
+      int var1 = -1;
 
-    private static /* synthetic */ HT[] T() {
-        return new HT[]{left, middle, right};
-    }
+      while (true) {
+         char[] var10002;
+         label39: {
+            char[] var10003 = var3.substring(++var1, var1 + var2).toCharArray();
+            int var10004 = var10003.length;
+            int var6 = 0;
+            byte var13 = 32;
+            var10002 = var10003;
+            int var8 = var10004;
+            byte var16;
+            char[] var10005;
+            int var10006;
+            if (var10004 <= 1) {
+               var10005 = var10003;
+               var16 = 32;
+               var10006 = var6;
+            } else {
+               var13 = 32;
+               var8 = var10004;
+               if (var10004 <= var6) {
+                  break label39;
+               }
 
-    /*
-     * Unable to fully structure code
-     */
-    static {
-        block13: {
-            var0 = new String[3];
-            var4_1 = 0;
-            var3_2 = " fLV~\u0006?fOZf7\u0004>jMJ";
-            var5_3 = " fLV~\u0006?fOZf7\u0004>jMJ".length();
-            var2_4 = 5;
-            var1_5 = -1;
-lbl7:
-            // 2 sources
+               var10005 = var10003;
+               var16 = 32;
+               var10006 = var6;
+            }
 
             while (true) {
-                continue;
-                break;
-            }
-lbl9:
-            // 1 sources
+               char var28 = var10005[var10006];
+               byte var29;
+               switch (var6 % 7) {
+                  case 0:
+                     var29 = 114;
+                     break;
+                  case 1:
+                     var29 = 47;
+                     break;
+                  case 2:
+                     var29 = 11;
+                     break;
+                  case 3:
+                     var29 = 30;
+                     break;
+                  case 4:
+                     var29 = 42;
+                     break;
+                  case 5:
+                     var29 = 114;
+                     break;
+                  default:
+                     var29 = 126;
+               }
 
-            while (true) {
-                var0[var4_1++] = new String(v0).intern();
-                if ((var1_5 += var2_4) < var5_3) {
-                    var2_4 = var3_2.charAt(var1_5);
-                    ** continue;
-                }
-                break block13;
-                break;
-            }
-            v1 = ++var1_5;
-            v2 = var3_2.substring(v1, v1 + var2_4).toCharArray();
-            v3 = v2.length;
-            var6_6 = 0;
-            v4 = 32;
-            v5 = v2;
-            v6 = v3;
-            if (v3 > 1) ** GOTO lbl67
-            do {
-                v7 = v4;
-                v5 = v5;
-                v8 = v5;
-                v9 = v4;
-                v10 = var6_6;
-                while (true) {
-                    switch (var6_6 % 7) {
-                        case 0: {
-                            v11 = 114;
-                            break;
-                        }
-                        case 1: {
-                            v11 = 47;
-                            break;
-                        }
-                        case 2: {
-                            v11 = 11;
-                            break;
-                        }
-                        case 3: {
-                            v11 = 30;
-                            break;
-                        }
-                        case 4: {
-                            v11 = 42;
-                            break;
-                        }
-                        case 5: {
-                            v11 = 114;
-                            break;
-                        }
-                        default: {
-                            v11 = 126;
-                        }
-                    }
-                    v8[v10] = (char)(v8[v10] ^ (v9 ^ v11));
-                    ++var6_6;
-                    v4 = v7;
-                    if (v7 != 0) break;
-                    v7 = v4;
-                    v5 = v5;
-                    v10 = v4;
-                    v8 = v5;
-                    v9 = v4;
-                }
-lbl67:
-                // 2 sources
+               var10005[var10006] = (char)(var28 ^ var16 ^ var29);
+               var6++;
+               if (var13 == 0) {
+                  var10006 = var13;
+                  var10005 = var10002;
+                  var16 = var13;
+               } else {
+                  if (var8 <= var6) {
+                     break;
+                  }
 
-                v0 = v5;
-                v6 = v6;
-            } while (v6 > var6_6);
-            ** while (true)
-        }
-        HT.left = new HT(var0[2], 0, 1);
-        HT.middle = new HT(var0[1], 1, 2);
-        HT.right = new HT(var0[0], 2, 3);
-        HT.H = HT.T();
-    }
+                  var10005 = var10002;
+                  var16 = var13;
+                  var10006 = var6;
+               }
+            }
+         }
+
+         String var15 = new String(var10002).intern();
+         byte var10 = -1;
+         var0[var4++] = var15;
+         if ((var1 += var2) >= var5) {
+            return;
+         }
+
+         var2 = var3.charAt(var1);
+      }
+   }
 }
+
+
+
+
+
 
