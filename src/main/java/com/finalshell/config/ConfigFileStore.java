@@ -141,12 +141,13 @@ public class ConfigFileStore {
       int var3 = 0;
       Object[] var10001 = Registry.packArgs(var1);
       long var5 = 356145384774107640L;
-      Object var10002 = Ref.h2(356145384774107640L, var5);
+      Object var10002;
 
       try {
+         var10002 = Ref.h2(356145384774107640L, var5);
          var10002 = (String)var10002;
-      } catch (InvocationTargetException var11) {
-         throw var11.getTargetException();
+      } catch (RuntimeException var11) {
+         throw new RuntimeException(var11);
       }
 
       String var4 = (String)var10002;
@@ -193,7 +194,7 @@ public class ConfigFileStore {
                   continue;
                }
             } catch (Exception var17) {
-               throw a(var17);
+               throw new RuntimeException(a(var17));
             }
          }
 
@@ -204,11 +205,7 @@ public class ConfigFileStore {
          Object[] var14 = var10003;
          Ref.h(500254107892663862L, var14, var15);
 
-         try {
-            break;
-         } catch (InvocationTargetException var16) {
-            throw var16.getTargetException();
-         }
+         break;
       }
    }
 

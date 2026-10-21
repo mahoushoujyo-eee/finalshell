@@ -248,7 +248,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
             return 1 != 0;
          }
       } catch (IllegalArgumentException var2) {
-         throw a(var2);
+         throw new RuntimeException(a(var2));
       }
 
       return 0 != 0;
@@ -409,7 +409,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
             return true;
          }
       } catch (IllegalArgumentException var2) {
-         throw a(var2);
+         throw new RuntimeException(a(var2));
       }
 
       return false;
@@ -1430,7 +1430,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
                   continue;
                }
             } catch (IllegalArgumentException var4) {
-               throw a(var4);
+               throw new RuntimeException(a(var4));
             }
          }
 
@@ -1448,7 +1448,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
             return this.h();
          }
       } catch (IllegalArgumentException var7) {
-         throw a(var7);
+         throw new RuntimeException(a(var7));
       }
 
       NI[] var3 = this.v;
@@ -1475,7 +1475,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
                      return 1 != 0;
                   }
                } catch (IllegalArgumentException var6) {
-                  throw a(var6);
+                  throw new RuntimeException(a(var6));
                }
                break;
             }
@@ -1650,7 +1650,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
             return var2;
          }
       } catch (IllegalArgumentException var3) {
-         throw a(var3);
+         throw new RuntimeException(a(var3));
       }
 
       return this.n = new Iv4(this, null);
@@ -1671,7 +1671,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
             return var2;
          }
       } catch (IllegalArgumentException var3) {
-         throw a(var3);
+         throw new RuntimeException(a(var3));
       }
 
       return this.r = new Iv2(this, null);
@@ -1696,7 +1696,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
             return var2;
          }
       } catch (IllegalArgumentException var3) {
-         throw a(var3);
+         throw new RuntimeException(a(var3));
       }
 
       return this.L = new L6_2(this, null);
@@ -2709,7 +2709,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
             while (true) {
                var19 = var2;
                var2 += 8;
-               byte[] var7 = var4.substring(var19, var2).getBytes("ISO-8859-1");
+               byte[] var7 = var4.substring(var19, var2).getBytes(java.nio.charset.Charset.forName("ISO-8859-1"));
                long[] var10000 = var6;
                var19 = var3++;
                long var25 = ((long)var7[0] & 255L) << 56
@@ -2746,7 +2746,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
 
                   byte var22 = var2;
                   var2 += 8;
-                  var7 = var4.substring(var22, var2).getBytes("ISO-8859-1");
+                  var7 = var4.substring(var22, var2).getBytes(java.nio.charset.Charset.forName("ISO-8859-1"));
                   var10000 = var6;
                   var19 = var3++;
                   var25 = ((long)var7[0] & 255L) << 56

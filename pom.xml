@@ -50,6 +50,13 @@
       <version>1.2.0</version>
     </dependency>
 
+    <!-- 混合构建兜底：未恢复到可编译状态的类使用原始字节码（hybrid-build 分支） -->
+    <dependency>
+      <groupId>com.finalshell</groupId>
+      <artifactId>fallback-classes</artifactId>
+      <version>1.0</version>
+    </dependency>
+
     <!--
       Lombok 不再作为依赖声明：
         · 重建后的源码里 0 处 import lombok、0 处 lombok 注解、0 个 .SCL.lombok 标记文件
@@ -112,6 +119,18 @@
               <groupId>javax.activation</groupId>
               <artifactId>javax.activation-api</artifactId>
               <version>1.2.0</version>
+              <packaging>jar</packaging>
+            </configuration>
+          </execution>
+          <execution>
+            <id>install-fallback-classes</id>
+            <phase>validate</phase>
+            <goals><goal>install-file</goal></goals>
+            <configuration>
+              <file>${project.basedir}/lib/fallback-classes.jar</file>
+              <groupId>com.finalshell</groupId>
+              <artifactId>fallback-classes</artifactId>
+              <version>1.0</version>
               <packaging>jar</packaging>
             </configuration>
           </execution>

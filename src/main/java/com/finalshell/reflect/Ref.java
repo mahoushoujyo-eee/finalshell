@@ -49,12 +49,14 @@ public final class Ref {
      * @param target 接收者；静态方法传 null
      * @param args   实参数组
      */
-    public static <T> T h(long key, Object target, Object args) throws InvocationTargetException {
+    public static <T> T h(long key, Object target, Object args) {
         Object[] a = (args instanceof Object[]) ? (Object[]) args : (Object[]) target;
         Object t = (args instanceof Object[]) ? target : args;
         try {
             Method m = Registry.lookupMethod(key);
             return cast(m.invoke(t, a));
+        } catch (InvocationTargetException e) {
+            throw new RuntimeException(e.getTargetException());
         } catch (IllegalAccessException | IllegalArgumentException e) {
             throw new IllegalStateException(e);
         }
@@ -66,12 +68,14 @@ public final class Ref {
      * <p>第二个参数放宽成 {@code Object}：调用点上它是混淆器打包出来的实参数组，
      * 但反编译出来的静态类型未必还是 {@code Object[]}，放宽后不必逐个强转。
      */
-    public static <T> T h2(long key, Object args) throws InvocationTargetException {
+    public static <T> T h2(long key, Object args) {
         Object[] a = (args instanceof Object[]) ? (Object[]) args
                 : (args == null ? new Object[0] : new Object[]{args});
         try {
             Method m = Registry.lookupMethod(key);
             return cast(m.invoke(null, a));
+        } catch (InvocationTargetException e) {
+            throw new RuntimeException(e.getTargetException());
         } catch (IllegalAccessException | IllegalArgumentException e) {
             throw new IllegalStateException(e);
         }
@@ -127,4 +131,23 @@ public final class Ref {
          throw new IllegalStateException(e);
       }
    }
+
+   public static void setInt(long key, Object obj, int v) { try { Ref.setInt(key, obj, v); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static int getInt(long key, Object obj) { try { return Ref.getInt(key, obj); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static void setLong(long key, Object obj, long v) { try { Ref.setLong(key, obj, v); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static long getLong(long key, Object obj) { try { return Ref.getLong(key, obj); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static void setBoolean(long key, Object obj, boolean v) { try { Ref.setBoolean(key, obj, v); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static boolean getBoolean(long key, Object obj) { try { return Ref.getBoolean(key, obj); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static void setDouble(long key, Object obj, double v) { try { Ref.setDouble(key, obj, v); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static double getDouble(long key, Object obj) { try { return Ref.getDouble(key, obj); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static void setFloat(long key, Object obj, float v) { try { Ref.setFloat(key, obj, v); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static float getFloat(long key, Object obj) { try { return Ref.getFloat(key, obj); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static void setShort(long key, Object obj, short v) { try { Ref.setShort(key, obj, v); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static short getShort(long key, Object obj) { try { return Ref.getShort(key, obj); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static void setByte(long key, Object obj, byte v) { try { Ref.setByte(key, obj, v); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static byte getByte(long key, Object obj) { try { return Ref.getByte(key, obj); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static void setChar(long key, Object obj, char v) { try { Ref.setChar(key, obj, v); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static char getChar(long key, Object obj) { try { return Ref.getChar(key, obj); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static void setField(long key, Object obj, Object v) { try { Ref.setField(0L, obj, v); } catch (Exception e) { throw new IllegalStateException(e); } }
+   public static Object getField(long key, Object obj) { try { return Ref.getField(0L, obj); } catch (Exception e) { throw new IllegalStateException(e); } }
 }

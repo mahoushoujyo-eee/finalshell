@@ -24,7 +24,7 @@ public class EX3 extends ObjectInputStream {
             return;
          }
       } catch (Throwable var8) {
-         throw a(var8);
+         throw new RuntimeException(a(var8));
       }
 
       try {
@@ -48,7 +48,7 @@ public class EX3 extends ObjectInputStream {
                   break;
                }
             } catch (Throwable var6) {
-               throw a(var6);
+               throw new RuntimeException(a(var6));
             }
          }
 
@@ -77,7 +77,7 @@ public class EX3 extends ObjectInputStream {
                   break;
                }
             } catch (IllegalAccessException var6) {
-               throw a(var6);
+               throw new RuntimeException(a(var6));
             }
          }
       } catch (IllegalAccessException var7) {
@@ -1191,7 +1191,7 @@ public class EX3 extends ObjectInputStream {
                      do {
                         byte var24 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var24, var2).getBytes("ISO-8859-1");
+                        byte[] var7 = var4.substring(var24, var2).getBytes(java.nio.charset.Charset.forName("ISO-8859-1"));
                         int var25 = var3++;
                         long var47 = (
                               ((long)var7[0] & 255L) << 56

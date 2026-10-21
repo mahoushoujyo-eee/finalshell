@@ -1,0 +1,37 @@
+package com.finalshell.ui.listener;
+
+import com.finalshell.reflect.Ref;
+import com.finalshell.reflect.Registry;
+import com.finalshell.task.QT;
+import com.finalshell.ui.dialog.DU;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.lang.reflect.InvocationTargetException;
+
+public class TJ3 implements ActionListener {
+   public final DU B;
+
+   public TJ3(DU var1) {
+      this.B = var1;
+   }
+
+   @Override
+   public void actionPerformed(ActionEvent var1) {
+      Ref.g(388376917454860932L, null);
+      Object[] var10001 = Registry.packArgs(new QT(this));
+      long var3 = 434592463220957006L;
+      Object[] var2 = var10001;
+      Ref.h(434592463220957006L, var2, var3);
+
+      try {
+         ;
+      } catch (InvocationTargetException var4) {
+         throw new RuntimeException(var4.getTargetException());
+      }
+   }
+}
+
+
+
+
+
