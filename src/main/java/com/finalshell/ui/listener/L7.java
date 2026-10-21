@@ -44,7 +44,7 @@ public class L7 implements MouseListener {
                }
             }
 
-            var10001 = var1.getButton();
+            var10001 = (L7)(var1.getButton());
          }
 
          var10002 = 1;
@@ -55,7 +55,7 @@ public class L7 implements MouseListener {
             return;
          }
 
-         var10001 = var1.getClickCount();
+         var10001 = (L7)(var1.getClickCount());
          var10002 = 2;
       }
 

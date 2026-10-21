@@ -350,7 +350,7 @@ public class MainFrame extends JFrame implements CS3_2, Ms2, AL, Fb2 {
             this.setSize(Registry.lookupField(491767757682910516L).getInt(this), Registry.lookupField(331537502062700338L).getInt(this));
          }
 
-         var10003 = var5;
+         var10003 = (Rectangle)(var5);
          Object[] var10004 = Registry.emptyArgs();
          long var18 = 625743137504778004L;
          Object[] var17 = var10004;
@@ -444,7 +444,7 @@ public class MainFrame extends JFrame implements CS3_2, Ms2, AL, Fb2 {
             this.setExtendedState(this.getExtendedState() | a(1289, 6556516967129669109L));
          }
 
-         var96 = var5;
+         var96 = (Boolean)(var5);
          Object var10005 = Registry.emptyArgs();
          long var22 = 494397881178401642L;
          Object var21 = var10005;
@@ -2096,7 +2096,7 @@ public class MainFrame extends JFrame implements CS3_2, Ms2, AL, Fb2 {
          }
 
          Object var24 = 132798821314429637L;
-         if (this != ((AE)Ref.g(132798821314429637L, var24)).getHeight()) {
+         if (0 != ((AE)Ref.g(132798821314429637L, var24)).getHeight()) {
             Object var26 = 132798821314429637L;
             ((AE)Ref.g(132798821314429637L, var26)).getHeight();
             Object var28 = 132798821314429637L;
@@ -3277,7 +3277,7 @@ public class MainFrame extends JFrame implements CS3_2, Ms2, AL, Fb2 {
       var5.setForeground(new Color(a(17215, 5362272149277547463L), a(17215, 5362272149277547463L), a(17215, 5362272149277547463L)));
       Y12_2 var10055;
       Object var119 = 337860688004803931L;
-var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
+var5 = (Key)(new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119)));
       Y12_2 var6 = var10055;
       var5.addMouseListener(new Y4(this, var6, var5));
       Registry.emptyArgs();
@@ -3424,10 +3424,10 @@ var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       Point var1 = ((com.finalshell.core.C)Ref.g(406404529706956411L, var3)).getLocationOnScreen();
       int var10001 = var1.x - ((C5)Registry.lookupField(222367947831078517L).get(null)).getWidth();
       Object var5 = 406404529706956411L;
-      int var2 = this + ((com.finalshell.core.C)Ref.g(406404529706956411L, var5)).getWidth();
+      int var2 = 0 + ((com.finalshell.core.C)Ref.g(406404529706956411L, var5)).getWidth();
       C5 var10002 = (C5)Registry.lookupField(222367947831078517L).get(null);
       Object var7 = 406404529706956411L;
-      var2.setLocation(var1.y, this + ((com.finalshell.core.C)Ref.g(406404529706956411L, var7)).getHeight() + 2);
+      var2.setLocation(var1.y, 0 + ((com.finalshell.core.C)Ref.g(406404529706956411L, var7)).getHeight() + 2);
       ((C5)Registry.lookupField(222367947831078517L).get(null)).setVisible(true);
    }
 
@@ -3492,7 +3492,7 @@ var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
             }
          }
 
-         var10003 = var4.getClass().equals(ConnectionProperty.class);
+         var10003 = (F8)(var4.getClass().equals(ConnectionProperty.class));
       }
 
       label166: {
@@ -3522,7 +3522,7 @@ var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
                   }
                }
 
-               var10003 = var4.getClass().equals(CE.class);
+               var10003 = (F8)(var4.getClass().equals(CE.class));
             }
 
             if (var3 != null) {
@@ -3531,7 +3531,7 @@ var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
 
             if (var10003 == null) {
                CE var63 = (CE)var4;
-               var10003 = var1;
+               var10003 = (F8)(var1);
                Object var76 = Registry.emptyArgs();
                long var18 = 584415777428790164L;
                Object var17 = var76;
@@ -3570,7 +3570,7 @@ var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
             }
          }
 
-         var10003 = this;
+         var10003 = (F8)(this);
          Object var25 = 493158471773442262L;
          Ref.g(493158471773442262L, var25);
          ArrayList var81 = Registry.emptyArgs();
@@ -3588,7 +3588,7 @@ var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       }
 
       Object var64 = var10003;
-      var10003 = (Object[])var64;
+      var10003 = (F8)((Object[])var64);
       if (var3 == null) {
          if (var64 == null) {
             long var30 = 208444474277099894L;
@@ -3620,7 +3620,7 @@ var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
             }
          }
 
-         var10003 = this;
+         var10003 = (F8)(this);
          Object[] var79 = Registry.emptyArgs();
          long var44 = 603983761173484132L;
          var43 = var79;
@@ -3647,7 +3647,7 @@ var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
             }
          }
 
-         var10003 = (Object[])var64;
+         var10003 = (F8)((Object[])var64);
       }
 
       if (var3 == null) {
@@ -3655,7 +3655,7 @@ var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
             return;
          }
 
-         var10003 = this;
+         var10003 = (F8)(this);
          Object var47 = 493158471773442262L;
          Ref.g(493158471773442262L, var47);
          Object[] var84 = Registry.emptyArgs();
@@ -4466,7 +4466,7 @@ var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
          throw var20.getTargetException();
       }
 
-      var10002 = new Color(var10003, var10004);
+      var10002 = (int)(new Color(var10003, var10004));
       Refresh var2 = var10001;
       Object[] var21 = Registry.packArgs(var1);
       long var7 = 427189173729820890L;
@@ -4883,13 +4883,13 @@ var10004 = new Random(var10005.p());
                }
 
                ConnectionProperty var7 = (ConnectionProperty)var22;
-               var10003 = var7.R();
+               var10003 = (ArrayList)(var7.R());
                if (var1 == null) {
                   if (var10003 == null) {
                      break label58;
                   }
 
-                  var10003 = true;
+                  var10003 = (ArrayList)(true);
                }
 
                var2 = var10003;
@@ -4944,7 +4944,7 @@ var10004 = new Random(var10005.p());
       ConnectionProperty var58;
       label170: {
          label171: {
-            var58 = F8.y();
+            var58 = (ConnectionProperty)(F8.y());
             String var5 = "";
             var6 = null;
             var4 = (String[])var58;
@@ -4958,7 +4958,7 @@ var10004 = new Random(var10005.p());
             }
 
             var6 = var58.a();
-            var58 = var6;
+            var58 = (ConnectionProperty)(var6);
             if (var4 != null) {
                break label170;
             }
@@ -5292,7 +5292,7 @@ var65 = new MainFrame((String)var7, (int)var70, (String)var7, var10010, (Lv4_2)v
          throw var61.getTargetException();
       }
 
-      var10015.setText((String)var10016);
+      ((javax.swing.text.JTextComponent)var10015).setText((String)var10016);
       JMenuItem var14 = new JMenuItem(a(1415, -1959));
       Object var53 = 337860688004803931L;
       ((JPopupMenu)Ref.g(337860688004803931L, var53)).add(var14);
@@ -5384,7 +5384,7 @@ var65 = new MainFrame((String)var7, (int)var70, (String)var7, var10010, (Lv4_2)v
          throw var33.getTargetException();
       }
 
-var10005 = new RenderingHints(var10006, var37);
+var10005 = (Key)(new RenderingHints(var10006, var37));
       Object[] var2 = var10004;
       Object var12 = 433205011082801842L;
       ((JMenu)Ref.g(433205011082801842L, var12)).add(var2);
@@ -5421,7 +5421,7 @@ var10005 = new RenderingHints(var10006, var37);
          throw var31.getTargetException();
       }
 
-var10009 = new RenderingHints(var3, var43);
+var10009 = (Key)(new RenderingHints(var3, var43));
       JCheckBoxMenuItem var4 = var10008;
       Object var22 = 433205011082801842L;
       ((JMenu)Ref.g(433205011082801842L, var22)).add((JMenuItem)var4);
@@ -5473,9 +5473,9 @@ var10009 = new RenderingHints(var3, var43);
                Object var14 = 467883177032167383L;
                int var10008 = ((JSplitPane)Ref.g(467883177032167383L, var14)).getDividerLocation();
                Object var16 = 467883177032167383L;
-               super.x = var10008 - (this + ((JSplitPane)Ref.g(467883177032167383L, var16)).getDividerSize());
+               super.x = var10008 - (0 + ((JSplitPane)Ref.g(467883177032167383L, var16)).getDividerSize());
                Object var18 = 467883177032167383L;
-               var3.width.width = this + ((JSplitPane)Ref.g(467883177032167383L, var18)).getDividerLocation();
+               var3.width.width = 0 + ((JSplitPane)Ref.g(467883177032167383L, var18)).getDividerLocation();
                this.setBounds(var3);
                if (var2 == null) {
                   break label43;
@@ -5496,11 +5496,11 @@ var10009 = new RenderingHints(var3, var43);
          Object var28 = 467883177032167383L;
          int var42 = ((JSplitPane)Ref.g(467883177032167383L, var28)).getDividerLocation();
          Object var30 = 467883177032167383L;
-         super.x = var42 + this + ((JSplitPane)Ref.g(467883177032167383L, var30)).getDividerSize();
+         super.x = var42 + 0 + ((JSplitPane)Ref.g(467883177032167383L, var30)).getDividerSize();
          Object var32 = 467883177032167383L;
          int var10005 = ((JSplitPane)Ref.g(467883177032167383L, var32)).getDividerLocation();
          Object var34 = 467883177032167383L;
-         super.width = var10005 - (this + ((JSplitPane)Ref.g(467883177032167383L, var34)).getDividerSize());
+         super.width = var10005 - (0 + ((JSplitPane)Ref.g(467883177032167383L, var34)).getDividerSize());
          this.setBounds(var41);
       }
 
@@ -5814,7 +5814,7 @@ var10009 = new RenderingHints(var3, var43);
                         }
                      }
 
-                     var10009 = var5;
+                     var10009 = (ArrayList)(var5);
                      if (var1 != null) {
                         break label107;
                      }
@@ -5826,7 +5826,7 @@ var10009 = new RenderingHints(var3, var43);
                      break label106;
                   }
 
-                  var10009 = var5;
+                  var10009 = (ArrayList)(var5);
                }
 
                FileCommandPanel var40 = (FileCommandPanel)var10009;
@@ -7706,7 +7706,7 @@ var10009 = new RenderingHints(var3, var43);
       String[] var21 = new String[60];
       int var19 = 0;
       String var18 = "儮尛诼罣\u000eGK=\u0089\u0093nqRg®Î\u008e8\u000e\u0005幌棸a縟稖\u0006繢竓伀畦廣劭\u0006幑觸错願覮凖\b磻孵免閬穾參呤j\u0003俓辅棄$ÞôÄ\u0088E.$iÅ\u009e\u008bB\u0098?\u008dU\u0016L\u0081=óÎ×p&æ1ÞpÝ\u0017(\u009e;ò\u0099\u0002遄颩\u0002政仍\b硵孉农锫穄匳吣t\u0002侅輨\u0004彤遨咅丳\rÂ\u0088\u008dñ\u00852£ð?øÇF\u001b\u0002茣匰H\u008br^±ÜxàÑ\u008c\rGù¿\u008714Ek~¿]c·Àªc*V\u0002\u0089\nz:\u009b{ AºðimzÝ#ð_mzfu|Ä}æ\u009cÙýº1K[1â\"g\u000eK>ãa`'\t©(×\u008eÌ4í_ð\u0002几岩\t¨6\nÐ\u009c%\u001a\b§\u0010åbi¬\u0019Ê ÆM=\u009bÍ\u0090d§Õ\u000e¸ÓÂ\u009al\f\u008e\u001e\u0098'1¿Ç(\u0002族弍\u0004斮乨篡琅\u0005¨í³\tÌ\fªñSSÍ6;7ñàSº\u0007t並瑇杰勒嘯?\u0004救棐笐颮\u0004乔杳寲钐\u0004疾扈寞鑛\nÝ¾¹Ô¥aäÂØ\u001f\u0012éµ\u0083´«Y\u0007Næ¡%'ìV/*lc\u0002涂惔7Î'Æò\u0005a&\u008bÄ´¸Íþg \u0086àð[¥~\n,\u008f\\é®ñ*T¡ªe·8cL\u0088µ\u001d\u0088\u009eèdJºÏVk\u0083\u0095³OÓ@\u0004輠丂暐旾\u0006à\\N`ý=0\u001b\u0001¹¦Vjæ+Öõ\u000bqÎ¿Â=\u001d²\u0000\rýV\u0097\u0004g\u00ad\u0007öÃg\u0080m \u008e&ö\u00063\u00044y\u0096r\u0017*Ùó\u009b06ÛÝW?npëä} ã¿8bd\u0015gy2·9ã\u0089\u0001\u0006Úd\u0010í±Ü;_jâg³ô ú£B\"{¶\u0081\u0007\u0002淨惀0:ïøøà\u001c\u0084.³{Ï\u0012Ã+\u0015HYJ0Ýìã\t\u0010¯(§ù-\u00008i îÚtU\u001fÔ ¢\u0089/P\u009d\u008f]ô\u000bF¼|£p_\u009a\u008a>\u007f~'û\u001e`ÕÑ\u0085¶\u001c\u009c,\u0090Ú³\nÞ\u0019õ\tMè\u008fê|¡á$zG¬~\u0093¢Õ\u0004séÇ\u0094%\u0019à²É¶\rÚ²í\u001d[\u00832\u0093\u0097\u0097z4ïñ³6\u0089ÐÿÃ\u0004謒镼羹穃\u0004\u0093ÚûÖ\u0004辥掃對恠\u0005孒铔笗璫噂\u0005púìÔ«\u0002例梚\u0004也竭咦毬\u0005\u0083z\u0092Äd\u0002枿眔\u000b¶ü\u0006OÂ\u0083í79\u0080c06pBWÜéR¦B²®QÕðV\u0089\u000fÍöÇYËq\u0010M=Çêß\u000bg\u0088\u0091÷\u0082ç#÷\u007fo=p//L\u009dîJ\u0003\u001f;\u0001\u0004ª剷邅U\f\u0011Ö$·#ªæ¤J\u0092$ô\n\u0016\u0007\u0000\u009c¼³H\u0001C\u0013\u0006àENCýY";
-      var20 = "儮尛诼罣\u000eGK=\u0089\u0093nqRg®Î\u008e8\u000e\u0005幌棸a縟稖\u0006繢竓伀畦廣劭\u0006幑觸错願覮凖\b磻孵免閬穾參呤j\u0003俓辅棄$ÞôÄ\u0088E.$iÅ\u009e\u008bB\u0098?\u008dU\u0016L\u0081=óÎ×p&æ1ÞpÝ\u0017(\u009e;ò\u0099\u0002遄颩\u0002政仍\b硵孉农锫穄匳吣t\u0002侅輨\u0004彤遨咅丳\rÂ\u0088\u008dñ\u00852£ð?øÇF\u001b\u0002茣匰H\u008br^±ÜxàÑ\u008c\rGù¿\u008714Ek~¿]c·Àªc*V\u0002\u0089\nz:\u009b{ AºðimzÝ#ð_mzfu|Ä}æ\u009cÙýº1K[1â\"g\u000eK>ãa`'\t©(×\u008eÌ4í_ð\u0002几岩\t¨6\nÐ\u009c%\u001a\b§\u0010åbi¬\u0019Ê ÆM=\u009bÍ\u0090d§Õ\u000e¸ÓÂ\u009al\f\u008e\u001e\u0098'1¿Ç(\u0002族弍\u0004斮乨篡琅\u0005¨í³\tÌ\fªñSSÍ6;7ñàSº\u0007t並瑇杰勒嘯?\u0004救棐笐颮\u0004乔杳寲钐\u0004疾扈寞鑛\nÝ¾¹Ô¥aäÂØ\u001f\u0012éµ\u0083´«Y\u0007Næ¡%'ìV/*lc\u0002涂惔7Î'Æò\u0005a&\u008bÄ´¸Íþg \u0086àð[¥~\n,\u008f\\é®ñ*T¡ªe·8cL\u0088µ\u001d\u0088\u009eèdJºÏVk\u0083\u0095³OÓ@\u0004輠丂暐旾\u0006à\\N`ý=0\u001b\u0001¹¦Vjæ+Öõ\u000bqÎ¿Â=\u001d²\u0000\rýV\u0097\u0004g\u00ad\u0007öÃg\u0080m \u008e&ö\u00063\u00044y\u0096r\u0017*Ùó\u009b06ÛÝW?npëä} ã¿8bd\u0015gy2·9ã\u0089\u0001\u0006Úd\u0010í±Ü;_jâg³ô ú£B\"{¶\u0081\u0007\u0002淨惀0:ïøøà\u001c\u0084.³{Ï\u0012Ã+\u0015HYJ0Ýìã\t\u0010¯(§ù-\u00008i îÚtU\u001fÔ ¢\u0089/P\u009d\u008f]ô\u000bF¼|£p_\u009a\u008a>\u007f~'û\u001e`ÕÑ\u0085¶\u001c\u009c,\u0090Ú³\nÞ\u0019õ\tMè\u008fê|¡á$zG¬~\u0093¢Õ\u0004séÇ\u0094%\u0019à²É¶\rÚ²í\u001d[\u00832\u0093\u0097\u0097z4ïñ³6\u0089ÐÿÃ\u0004謒镼羹穃\u0004\u0093ÚûÖ\u0004辥掃對恠\u0005孒铔笗璫噂\u0005púìÔ«\u0002例梚\u0004也竭咦毬\u0005\u0083z\u0092Äd\u0002枿眔\u000b¶ü\u0006OÂ\u0083í79\u0080c06pBWÜéR¦B²®QÕðV\u0089\u000fÍöÇYËq\u0010M=Çêß\u000bg\u0088\u0091÷\u0082ç#÷\u007fo=p//L\u009dîJ\u0003\u001f;\u0001\u0004ª剷邅U\f\u0011Ö$·#ªæ¤J\u0092$ô\n\u0016\u0007\u0000\u009c¼³H\u0001C\u0013\u0006àENCýY";
+      var20 = (boolean)("儮尛诼罣\u000eGK=\u0089\u0093nqRg®Î\u008e8\u000e\u0005幌棸a縟稖\u0006繢竓伀畦廣劭\u0006幑觸错願覮凖\b磻孵免閬穾參呤j\u0003俓辅棄$ÞôÄ\u0088E.$iÅ\u009e\u008bB\u0098?\u008dU\u0016L\u0081=óÎ×p&æ1ÞpÝ\u0017(\u009e;ò\u0099\u0002遄颩\u0002政仍\b硵孉农锫穄匳吣t\u0002侅輨\u0004彤遨咅丳\rÂ\u0088\u008dñ\u00852£ð?øÇF\u001b\u0002茣匰H\u008br^±ÜxàÑ\u008c\rGù¿\u008714Ek~¿]c·Àªc*V\u0002\u0089\nz:\u009b{ AºðimzÝ#ð_mzfu|Ä}æ\u009cÙýº1K[1â\"g\u000eK>ãa`'\t©(×\u008eÌ4í_ð\u0002几岩\t¨6\nÐ\u009c%\u001a\b§\u0010åbi¬\u0019Ê ÆM=\u009bÍ\u0090d§Õ\u000e¸ÓÂ\u009al\f\u008e\u001e\u0098'1¿Ç(\u0002族弍\u0004斮乨篡琅\u0005¨í³\tÌ\fªñSSÍ6;7ñàSº\u0007t並瑇杰勒嘯?\u0004救棐笐颮\u0004乔杳寲钐\u0004疾扈寞鑛\nÝ¾¹Ô¥aäÂØ\u001f\u0012éµ\u0083´«Y\u0007Næ¡%'ìV/*lc\u0002涂惔7Î'Æò\u0005a&\u008bÄ´¸Íþg \u0086àð[¥~\n,\u008f\\é®ñ*T¡ªe·8cL\u0088µ\u001d\u0088\u009eèdJºÏVk\u0083\u0095³OÓ@\u0004輠丂暐旾\u0006à\\N`ý=0\u001b\u0001¹¦Vjæ+Öõ\u000bqÎ¿Â=\u001d²\u0000\rýV\u0097\u0004g\u00ad\u0007öÃg\u0080m \u008e&ö\u00063\u00044y\u0096r\u0017*Ùó\u009b06ÛÝW?npëä} ã¿8bd\u0015gy2·9ã\u0089\u0001\u0006Úd\u0010í±Ü;_jâg³ô ú£B\"{¶\u0081\u0007\u0002淨惀0:ïøøà\u001c\u0084.³{Ï\u0012Ã+\u0015HYJ0Ýìã\t\u0010¯(§ù-\u00008i îÚtU\u001fÔ ¢\u0089/P\u009d\u008f]ô\u000bF¼|£p_\u009a\u008a>\u007f~'û\u001e`ÕÑ\u0085¶\u001c\u009c,\u0090Ú³\nÞ\u0019õ\tMè\u008fê|¡á$zG¬~\u0093¢Õ\u0004séÇ\u0094%\u0019à²É¶\rÚ²í\u001d[\u00832\u0093\u0097\u0097z4ïñ³6\u0089ÐÿÃ\u0004謒镼羹穃\u0004\u0093ÚûÖ\u0004辥掃對恠\u0005孒铔笗璫噂\u0005púìÔ«\u0002例梚\u0004也竭咦毬\u0005\u0083z\u0092Äd\u0002枿眔\u000b¶ü\u0006OÂ\u0083í79\u0080c06pBWÜéR¦B²®QÕðV\u0089\u000fÍöÇYËq\u0010M=Çêß\u000bg\u0088\u0091÷\u0082ç#÷\u007fo=p//L\u009dîJ\u0003\u001f;\u0001\u0004ª剷邅U\f\u0011Ö$·#ªæ¤J\u0092$ô\n\u0016\u0007\u0000\u009c¼³H\u0001C\u0013\u0006àENCýY");
          // [VF] .length();
       char var17 = 4;
       int var34 = -1;
@@ -7959,6 +7959,7 @@ var10009 = new RenderingHints(var3, var43);
          }
       }
    }
+   private static Object var180;
 }
 
 

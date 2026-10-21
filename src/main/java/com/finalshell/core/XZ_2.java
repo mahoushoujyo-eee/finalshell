@@ -1166,6 +1166,7 @@ public class XZ_2 {
          }
       }
    }
+   private static Object var67;
 }
 
 

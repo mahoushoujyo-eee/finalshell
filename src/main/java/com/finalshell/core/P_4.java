@@ -44,7 +44,7 @@ public class P_4 implements W2_4 {
          var4 = var3;
       }
 
-      return C_.j(var4).toArray(new V2_3[C_.j(var3).size()]);
+      return (V2_3[])(C_.j(var4).toArray(new V2_3[C_.j(var3).size()]));
    }
 
    public String s() {
@@ -56,7 +56,7 @@ public class P_4 implements W2_4 {
    }
 
    public Y_3[] i() {
-      return this.E.toArray(new Y_3[this.E.size()]);
+      return (Y_3[])(this.E.toArray(new Y_3[this.E.size()]));
    }
 
    public void m(Y_3 var1) {

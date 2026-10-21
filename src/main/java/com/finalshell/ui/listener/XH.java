@@ -113,6 +113,7 @@ public class XH extends MouseMotionAdapter {
       byte var10001 = -1;
       a = var10002;
    }
+   private static Object var4;
 }
 
 

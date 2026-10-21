@@ -22,7 +22,7 @@ public int compareTo(Enum o) {
    public static Integer[] b;
 
    public static KD3[] values() {
-      return (KD3[])A.clone();
+      return (KD3[])com.finalshell.reflect.Ref.cloneObject(A);
    }
 
    public static KD3 valueOf(String var0) {
@@ -241,6 +241,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object A;
 }
 
 

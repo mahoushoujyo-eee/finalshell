@@ -483,7 +483,7 @@ public class FV {
          throw var8.getTargetException();
       }
 
-      return var10003.append((String)var10004).toString();
+      return ((java.lang.StringBuilder)var10003).append((String)var10004).toString();
    }
 
    public static String D(int var0) {

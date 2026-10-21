@@ -415,7 +415,7 @@ public class Connect2 {
          }
 
          this.d = true;
-         var4 = this.G;
+         var4 = (Connect2)(this.G);
       }
 
       synchronized (var4) {

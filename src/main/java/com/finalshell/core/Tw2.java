@@ -139,7 +139,7 @@ public class Tw2 extends T4 implements SwingConstants {
       int var24;
       label182: {
          var20 = var10000;
-         var21 = var1.getInsets();
+         var21 = (int)(var1.getInsets());
          var22 = var1.getSize();
          var23 = var22.width - var21.left - var21.right;
          var24 = var22.height - var21.top - var21.bottom;
@@ -300,7 +300,7 @@ public class Tw2 extends T4 implements SwingConstants {
                   var10 = var2 != 0 ? var9.getMinimumSize() : var9.getPreferredSize();
                   var13 = var2;
                   if (var3 == 0) {
-                     if (var2 == 0) {
+                     if (!var2) {
                         break label94;
                      }
 

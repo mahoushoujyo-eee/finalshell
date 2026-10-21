@@ -475,7 +475,7 @@ public class U3 extends S {
    }
 
    public Rectangle O$Rectangle(DefaultMutableTreeNode var1) {
-      return this.C(this.N(var1));
+      return (Rectangle)(this.C(this.N(var1)));
    }
 
    public Rectangle C(TreePath var1) {

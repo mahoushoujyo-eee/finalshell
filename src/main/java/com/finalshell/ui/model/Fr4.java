@@ -108,7 +108,7 @@ public class Fr4 extends AbstractTableModel {
 
       while (true) {
          Object var6 = 400544122862714728L;
-         if (!(this < ((ArrayList)Ref.g(400544122862714728L, var6)).size())) {
+         if (!(0 < ((ArrayList)Ref.g(400544122862714728L, var6)).size())) {
             break;
          }
 
@@ -285,7 +285,7 @@ public class Fr4 extends AbstractTableModel {
                var10003 = Ref.h(305126359001981386L, var9, var10);
 
                try {
-                  var13 = (Integer)var10003;
+                  var13 = (boolean)((Integer)var10003);
                } catch (InvocationTargetException var11) {
                   throw var11.getTargetException();
                }
@@ -326,7 +326,7 @@ public class Fr4 extends AbstractTableModel {
 
       if (var2 == null) {
          Object var3 = 400544122862714728L;
-         if (this < ((ArrayList)Ref.g(400544122862714728L, var3)).size()) {
+         if (0 < ((ArrayList)Ref.g(400544122862714728L, var3)).size()) {
             boolean var10002 = true;
          } else {
             boolean var7 = false;
@@ -345,7 +345,7 @@ public class Fr4 extends AbstractTableModel {
    public synchronized Object getValueAt(int var1, int var2) {
       YI var3 = null;
       Object var4 = 400544122862714728L;
-      if (this < ((ArrayList)Ref.g(400544122862714728L, var4)).size()) {
+      if (0 < ((ArrayList)Ref.g(400544122862714728L, var4)).size()) {
          Object var6 = 400544122862714728L;
          var3 = (YI)((ArrayList)Ref.g(400544122862714728L, var6)).get(var1);
       }
@@ -398,6 +398,7 @@ public class Fr4 extends AbstractTableModel {
 
       return var6 != 0;
    }
+   private static Object var16;
 }
 
 

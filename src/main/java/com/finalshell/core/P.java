@@ -397,13 +397,13 @@ public class P extends T4 {
             var11 = var7.F();
             label278:
             if (var8 != null) {
-               var31 = var7.y();
+               var31 = (byte)(var7.y());
                if (var3 != null) {
                   if (var31 == 0) {
                      break label278;
                   }
 
-                  var31 = var7.k$boolean();
+                  var31 = (byte)(var7.k$boolean());
                }
 
                if (var3 == null) {
@@ -414,7 +414,7 @@ public class P extends T4 {
                   break label295;
                }
 
-               var31 = var7.t$boolean();
+               var31 = (byte)(var7.t$boolean());
                if (var3 == null) {
                   break label281;
                }
@@ -423,7 +423,7 @@ public class P extends T4 {
                   break label295;
                }
 
-               var31 = var7.w();
+               var31 = (byte)(var7.w());
                if (var3 == null) {
                   break label281;
                }
@@ -444,7 +444,7 @@ public class P extends T4 {
       label258: {
          var12 = (byte)var31;
          if (var9 != null) {
-            var31 = var7.A$boolean();
+            var31 = (byte)(var7.A$boolean());
             if (var3 == null) {
                break label258;
             }
@@ -462,7 +462,7 @@ public class P extends T4 {
       label251: {
          var13 = var31;
          if (var10 != null) {
-            var31 = var7.s$boolean();
+            var31 = (byte)(var7.s$boolean());
             if (var3 == null) {
                break label251;
             }
@@ -481,13 +481,13 @@ public class P extends T4 {
          var14 = var31;
          label243:
          if (var11 != null) {
-            var31 = var7.i$boolean();
+            var31 = (byte)(var7.i$boolean());
             if (var3 != null) {
                if (var31 == 0) {
                   break label243;
                }
 
-               var31 = var7.j$boolean();
+               var31 = (byte)(var7.j$boolean());
             }
 
             if (var3 == null) {
@@ -544,9 +544,9 @@ public class P extends T4 {
       int var19;
       int var20;
       label286: {
-         var31 = var2;
+         var31 = (byte)(var2);
          if (var3 != null) {
-            if (var2 != 0) {
+            if (var2) {
                var31 = var12;
                if (var3 != null) {
                   if (var12 != 0) {
@@ -707,7 +707,7 @@ public class P extends T4 {
       label143: {
          var22 = 0;
          var23 = 0;
-         if (var2 != 0) {
+         if (var2) {
             JRootPane var40 = var6;
             if (var3 != null) {
                if (var6.getContentPane() != null) {
@@ -792,6 +792,7 @@ public class P extends T4 {
          return var4 > 0 ? var3 - SG.d : 0;
       }
    }
+   private static Object var39;
 }
 
 

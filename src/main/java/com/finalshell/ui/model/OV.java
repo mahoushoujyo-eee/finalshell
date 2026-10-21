@@ -14,7 +14,7 @@ public int compareTo(Enum o) {
    public static long a;
 
    public static OV[] values() {
-      return (OV[])k.clone();
+      return (OV[])com.finalshell.reflect.Ref.cloneObject(k);
    }
 
    public static OV valueOf(String var0) {
@@ -155,6 +155,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object k;
 }
 
 

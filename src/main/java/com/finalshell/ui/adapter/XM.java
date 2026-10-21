@@ -125,7 +125,7 @@ public class XM extends DefaultTableCellRenderer {
             }
          }
 
-         var31 = var5 % 2;
+         var31 = (JLabel)(var5 % 2);
       }
 
       JLabel var30 = var31;

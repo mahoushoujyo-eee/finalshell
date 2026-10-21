@@ -706,7 +706,7 @@ public class Cs2_2 {
    }
 
    public NV_2[] k(NV_2[] var1) throws B2_5 {
-      return this.z(Arrays.asList(var1)).toArray(new NV_2[0]);
+      return (NV_2[])(this.z(Arrays.asList(var1)).toArray(new NV_2[0]));
    }
 
    public List g(Collection var1) throws B2_5 {
@@ -1892,23 +1892,23 @@ public class Cs2_2 {
    }
 
    public NR_2 u(NQ var1) throws B2_5 {
-      return new NQ(var1.Q(), Arrays.copyOf(var1.z, var1.W));
+      return (I)(new NQ(var1.Q(), Arrays.copyOf(var1.z, var1.W)));
    }
 
    public NR_2 A(Nf2_2 var1) throws B2_5 {
-      return new Nf2_2(var1.Q(), this.E(var1.d), this.E(var1.J));
+      return (I)(new Nf2_2(var1.Q(), this.E(var1.d), this.E(var1.J)));
    }
 
    public NR_2 Q(N3_2 var1) throws B2_5 {
-      return new N3_2(var1.Q(), this.h(var1.o), var1.P);
+      return (I)(new N3_2(var1.Q(), this.h(var1.o), var1.P));
    }
 
    public NR_2 V(Ni2_2 var1) throws B2_5 {
-      return new Ni2_2(var1.Q(), this.h(var1.S), var1.J);
+      return (I)(new Ni2_2(var1.Q(), this.h(var1.S), var1.J));
    }
 
    public NR_2 l(NB_2 var1) throws B2_5 {
-      return new NB_2(var1.Q(), this.y(var1.o), var1.B);
+      return (I)(new NB_2(var1.Q(), this.y(var1.o), var1.B));
    }
 
    public NR_2 Y(Nq2 var1) throws B2_5 {
@@ -1916,7 +1916,7 @@ public class Cs2_2 {
    }
 
    public NR_2 A(Nh2_2 var1) throws B2_5 {
-      return new Nh2_2(var1.Q(), this.E(var1.E));
+      return (I)(new Nh2_2(var1.Q(), this.E(var1.E)));
    }
 
    public T4_3 T(RS_2 var1) throws B2_5 {

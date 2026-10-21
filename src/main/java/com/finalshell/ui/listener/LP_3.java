@@ -265,6 +265,7 @@ public class LP_3 implements ActionListener {
          }
       }
    }
+   private static Object var82;
 }
 
 

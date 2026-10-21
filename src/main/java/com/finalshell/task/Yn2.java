@@ -26,7 +26,7 @@ public class Yn2 implements Runnable {
       var10002 = Ref.h(349012733953542138L, var5, var6);
 
       try {
-         var14 = (Boolean)var10002;
+         var14 = ((Boolean)var10002) ? 1 : 0;
       } catch (InvocationTargetException var12) {
          throw var12.getTargetException();
       }

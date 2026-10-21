@@ -18,7 +18,7 @@ public int compareTo(Enum o) {
    public static String[] c;
 
    public static GS[] values() {
-      return (GS[])b.clone();
+      return (GS[])com.finalshell.reflect.Ref.cloneObject(b);
    }
 
    public static GS valueOf(String var0) {
@@ -1007,6 +1007,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object b;
 }
 
 

@@ -44,7 +44,7 @@ public int compareTo(Enum o) {
    public static Integer[] b;
 
    public static X9[] values() {
-      return (X9[])E.clone();
+      return (X9[])com.finalshell.reflect.Ref.cloneObject(E);
    }
 
    public static X9 valueOf(String var0) {
@@ -317,6 +317,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object E;
 }
 
 

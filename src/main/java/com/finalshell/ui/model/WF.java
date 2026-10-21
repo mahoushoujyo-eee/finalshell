@@ -17,7 +17,7 @@ public int compareTo(Enum o) {
    public static long a;
 
    public static WF[] values() {
-      return (WF[])S.clone();
+      return (WF[])com.finalshell.reflect.Ref.cloneObject(S);
    }
 
    public static WF valueOf(String var0) {
@@ -158,6 +158,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object S;
 }
 
 

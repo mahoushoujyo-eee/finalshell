@@ -176,7 +176,7 @@ public class User extends Z7 {
          throw var83.getTargetException();
       }
 
-var10022 = new Un2(var10023, var88);
+var10022 = (User)(new Un2(var10023, var88));
       Object[] var15 = var10021;
       this.add(var15, a(-8128, 20675));
       var15.addActionListener(new Un2(this, var15));

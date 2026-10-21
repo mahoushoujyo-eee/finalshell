@@ -33,7 +33,7 @@ public class W2 extends MouseAdapter {
                return;
             }
 
-            var4 = this.L.hD;
+            var4 = (File)(this.L.hD);
             if (var2 != null) {
                break label45;
             }
@@ -45,7 +45,7 @@ public class W2 extends MouseAdapter {
             return;
          }
 
-         var4 = this.L.hD;
+         var4 = (File)(this.L.hD);
       }
 
       label25: {

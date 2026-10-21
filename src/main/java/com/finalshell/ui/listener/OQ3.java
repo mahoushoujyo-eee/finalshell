@@ -98,7 +98,7 @@ public class OQ3 implements MouseListener {
             label36: {
                System.currentTimeMillis();
                Object var19 = 414214645141473905L;
-               long var4 = this - Registry.lookupField(159470416555914823L).getLong(Ref.g(414214645141473905L, var19));
+               long var4 = 0 - Registry.lookupField(159470416555914823L).getLong(Ref.g(414214645141473905L, var19));
                long var32;
                OQ3 var31 = (var32 = var4 - a(9273, 9088079100375348038L)) == 0L ? 0 : (var32 < 0L ? -1 : 1);
                if (var2 == null) {
@@ -225,7 +225,7 @@ public class OQ3 implements MouseListener {
             DefaultMutableTreeNode var8;
             TreePath var9;
             label200: {
-               var8 = var10006;
+               var8 = (DefaultMutableTreeNode)(var10006);
                var9 = null;
                if (var6 > -1) {
                   var10006 = var5;
@@ -248,7 +248,7 @@ public class OQ3 implements MouseListener {
 
                   label181:
                   if (var90 == 1) {
-                     var93 = var8;
+                     var93 = (ImportExportPanel)(var8);
                      if (var2 == null) {
                         if (var8 == null) {
                            break label181;
@@ -501,6 +501,8 @@ public class OQ3 implements MouseListener {
       a = var6;
       b = new Long[2];
    }
+   private static Object var90;
+   private static Object var92;
 }
 
 

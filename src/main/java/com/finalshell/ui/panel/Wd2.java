@@ -156,7 +156,7 @@ public class Wd2 extends JComponent implements W2_3 {
          this.C = new WeakReference<>(var1);
          this.x = var2;
          this.c = var4;
-         var5 = var10000;
+         var5 = (Ky4[])(var10000);
          this.W = var3;
          this.M = new O8();
          this.M.setFont(G2_2.c());
@@ -280,7 +280,7 @@ public class Wd2 extends JComponent implements W2_3 {
       Ky4[] var10000 = Ac2.n();
       Component var2 = this.N$Component();
       Ky4[] var1 = var10000;
-      var10000 = this;
+      var10000 = (Ky4[])(this);
       if (var1 == null) {
          if (this.W != null) {
             boolean var11 = this.W.equals(WF.leading);
@@ -328,7 +328,7 @@ public class Wd2 extends JComponent implements W2_3 {
             return WF.right;
          }
 
-         var10000 = var2;
+         var10000 = (Ky4[])(var2);
       }
 
       if (var1 == null) {
@@ -336,20 +336,20 @@ public class Wd2 extends JComponent implements W2_3 {
             return WF.down;
          }
 
-         var10000 = SwingUtilities.getRootPane(var2).getGlassPane();
+         var10000 = (Ky4[])(SwingUtilities.getRootPane(var2).getGlassPane());
       }
 
       Object var3 = var10000;
       Object var9 = var3;
       if (var1 == null) {
-         if (!var3.isShowing()) {
+         if (!((javax.swing.JComponent)var3).isShowing()) {
             return WF.down;
          }
 
          var9 = var3;
       }
 
-      Dimension var4 = var9.getSize();
+      Dimension var4 = ((javax.swing.JComponent)var9).getSize();
       Rectangle var5 = FN.J(var2, (Component)var3);
       Dimension var6 = this.getPreferredSize();
       int var10 = var5.y + this.e(var2, WF.down).y + var6.height;
@@ -2515,6 +2515,9 @@ public class Wd2 extends JComponent implements W2_3 {
          }
       }
    }
+   private static int var29;
+   private static int var30;
+   private static int var36;
 }
 
 

@@ -111,12 +111,12 @@ public class X_5 {
 
             var3 = var10000;
             if (!var1) {
-               return var2.toArray(new X_5[var2.size()]);
+               return (X_5[])(var2.toArray(new X_5[var2.size()]));
             }
             continue label61;
          }
 
-         return var2.toArray(new X_5[var2.size()]);
+         return (X_5[])(var2.toArray(new X_5[var2.size()]));
       }
    }
 

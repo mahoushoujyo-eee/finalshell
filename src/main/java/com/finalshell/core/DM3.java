@@ -2208,7 +2208,7 @@ public abstract class DM3 extends RowSorter {
                      break label50;
                   }
 
-                  if (var1 == 0) {
+                  if (!var1) {
                      break label55;
                   }
                } catch (IllegalArgumentException var16) {
@@ -2216,7 +2216,7 @@ public abstract class DM3 extends RowSorter {
                }
 
                Object var4 = 487785452946359037L;
-               var3 = ((int[])Ref.g(487785452946359037L, var4)).length - 1;
+               var3 = (DM3)(((int[])Ref.g(487785452946359037L, var4)).length - 1);
 
                while (var3 >= 0) {
                   try {

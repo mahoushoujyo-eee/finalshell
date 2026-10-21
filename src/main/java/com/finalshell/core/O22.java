@@ -115,7 +115,7 @@ public final class O22 {
       String[] var1 = var10000;
 
       try {
-         var10000 = this.S;
+         var10000 = (String[])(this.S);
          if (var1 != null) {
             if (this.S != null) {
                this.S.shutdown();

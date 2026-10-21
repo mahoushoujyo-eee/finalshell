@@ -106,7 +106,7 @@ public class L extends Ky4 {
          var3 = this.A;
       }
 
-      var3.repaint();
+      ((javax.swing.JComponent)var3).repaint();
    }
 
    public boolean H() {

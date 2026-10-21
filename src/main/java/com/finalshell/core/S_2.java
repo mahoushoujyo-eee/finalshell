@@ -77,7 +77,7 @@ public class S_2 extends BasicOptionPaneUI {
             return;
          }
 
-         var17 = var2;
+         var17 = (ButtonAreaLayout)(var2);
       }
 
       int var18 = ((Object[])var17).length;
@@ -138,7 +138,7 @@ public class S_2 extends BasicOptionPaneUI {
                            }
                         }
 
-                        var17 = (Object[])var11;
+                        var17 = (ButtonAreaLayout)((Object[])var11);
                         if (var4 == 0) {
                            break label156;
                         }
@@ -153,7 +153,7 @@ public class S_2 extends BasicOptionPaneUI {
                         }
                      }
 
-                     var17 = (Object[])var11;
+                     var17 = (ButtonAreaLayout)((Object[])var11);
                   }
 
                   String var14 = var17.toString();
@@ -1255,7 +1255,7 @@ public class S_2 extends BasicOptionPaneUI {
       String[] var13 = new String[16];
       int var11 = 0;
       String var10 = "¥×ÑÞD/)^\fT?Ê§p\"\u0086g\"ÈØèM[pôå\u000fníÚ\u0003\u008e\u0014\u0093S>ücÆ|d\tÍ\u0005ÇTy1\"¹úz\u0001\u0012v\u008cRÃP*\u0015\u0083\u0085o>r\u008c\u0017D,º¯\u0015\rJ=\u001b½1°û)\u0004Î\u0084ZW\u0016b_ÓÓ!\u0010\u0011£\u0089\u0011\u0015\\V*ql±3v&ç\u0012ta\u0015\u0090á^ªo\fý=9æ\u0003¢\u0094Õ)·ºH\fY×\u0011¨k\u0089?+µ|dy\u0018I%ÔZ\u0018Ó\u00ad\u0015\u0001Ùl\u00ad)ì5! e ÒðÛ¥v+p>^\u0091\u0018íéñ«\u009a,C9îfù²Ë×Â÷Ç@¹\\%Ü\u007fO\u0014L\u009bÅå\u001cå\u0093\u0000ôAºV£KÏdf2\u0080\u001c\u0014-\"éÒ\u0099\u0003#ÜâÚx%û%Ä©\u0007\u008b¬+\u0014\u0092©\u001e£g-ü\u0019\u0019b\u00072\u0014Ç9õ¸\u0000Z^\u000fl°\u0011D8Ú\f\u009a'·\u0099±¡ÀT\u0006\u0081àd _à";
-      var12 = "¥×ÑÞD/)^\fT?Ê§p\"\u0086g\"ÈØèM[pôå\u000fníÚ\u0003\u008e\u0014\u0093S>ücÆ|d\tÍ\u0005ÇTy1\"¹úz\u0001\u0012v\u008cRÃP*\u0015\u0083\u0085o>r\u008c\u0017D,º¯\u0015\rJ=\u001b½1°û)\u0004Î\u0084ZW\u0016b_ÓÓ!\u0010\u0011£\u0089\u0011\u0015\\V*ql±3v&ç\u0012ta\u0015\u0090á^ªo\fý=9æ\u0003¢\u0094Õ)·ºH\fY×\u0011¨k\u0089?+µ|dy\u0018I%ÔZ\u0018Ó\u00ad\u0015\u0001Ùl\u00ad)ì5! e ÒðÛ¥v+p>^\u0091\u0018íéñ«\u009a,C9îfù²Ë×Â÷Ç@¹\\%Ü\u007fO\u0014L\u009bÅå\u001cå\u0093\u0000ôAºV£KÏdf2\u0080\u001c\u0014-\"éÒ\u0099\u0003#ÜâÚx%û%Ä©\u0007\u008b¬+\u0014\u0092©\u001e£g-ü\u0019\u0019b\u00072\u0014Ç9õ¸\u0000Z^\u000fl°\u0011D8Ú\f\u009a'·\u0099±¡ÀT\u0006\u0081àd _à";
+      var12 = (boolean)("¥×ÑÞD/)^\fT?Ê§p\"\u0086g\"ÈØèM[pôå\u000fníÚ\u0003\u008e\u0014\u0093S>ücÆ|d\tÍ\u0005ÇTy1\"¹úz\u0001\u0012v\u008cRÃP*\u0015\u0083\u0085o>r\u008c\u0017D,º¯\u0015\rJ=\u001b½1°û)\u0004Î\u0084ZW\u0016b_ÓÓ!\u0010\u0011£\u0089\u0011\u0015\\V*ql±3v&ç\u0012ta\u0015\u0090á^ªo\fý=9æ\u0003¢\u0094Õ)·ºH\fY×\u0011¨k\u0089?+µ|dy\u0018I%ÔZ\u0018Ó\u00ad\u0015\u0001Ùl\u00ad)ì5! e ÒðÛ¥v+p>^\u0091\u0018íéñ«\u009a,C9îfù²Ë×Â÷Ç@¹\\%Ü\u007fO\u0014L\u009bÅå\u001cå\u0093\u0000ôAºV£KÏdf2\u0080\u001c\u0014-\"éÒ\u0099\u0003#ÜâÚx%û%Ä©\u0007\u008b¬+\u0014\u0092©\u001e£g-ü\u0019\u0019b\u00072\u0014Ç9õ¸\u0000Z^\u000fl°\u0011D8Ú\f\u009a'·\u0099±¡ÀT\u0006\u0081àd _à");
          // [VF] .length();
       char var9 = ' ';
       int var17 = -1;

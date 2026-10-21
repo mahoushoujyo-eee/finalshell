@@ -559,7 +559,7 @@ public class K22 extends Ky4 implements SwingConstants {
                var8 = var7;
             }
 
-            var8.setForeground(var2);
+            ((javax.swing.JComponent)var8).setForeground(var2);
          }
 
          var6++;

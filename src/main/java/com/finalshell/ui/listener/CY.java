@@ -32,7 +32,7 @@ public class CY implements MouseMotionListener {
       if (var2 == null) {
          Registry.lookupField(410066848429556838L).getInt(var10001);
          Object var10 = 547565734661310786L;
-         if (this != Registry.lookupField(458852233453534750L).getInt(Ref.g(547565734661310786L, var10))) {
+         if (0 != Registry.lookupField(458852233453534750L).getInt(Ref.g(547565734661310786L, var10))) {
             Object var12 = 547565734661310786L;
             ((Tq4)Ref.g(547565734661310786L, var12)).repaint();
          }

@@ -15,7 +15,7 @@ public int compareTo(Enum o) {
    public static W2 failed;
 
    public static W2[] values() {
-      return (W2[])Q.clone();
+      return (W2[])com.finalshell.reflect.Ref.cloneObject(Q);
    }
 
    public static W2 valueOf(String var0) {
@@ -151,6 +151,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object Q;
 }
 
 

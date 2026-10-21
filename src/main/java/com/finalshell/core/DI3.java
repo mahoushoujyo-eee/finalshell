@@ -509,7 +509,7 @@ public class DI3 extends ReflectionConverter {
          label62: {
             try {
                if (var2 == null) {
-                  return (com.finalshell.ui.model.Cc2)var3;
+                  return (Cc2)((com.finalshell.ui.model.Cc2)var3);
                }
 
                if (var3 != null) {
@@ -526,7 +526,7 @@ public class DI3 extends ReflectionConverter {
 
          try {
             if (var2 == null) {
-               return (com.finalshell.ui.model.Cc2)var4;
+               return (Cc2)((com.finalshell.ui.model.Cc2)var4);
             }
 
             if (var4 != null) {

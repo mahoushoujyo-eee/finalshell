@@ -30,7 +30,7 @@ public class BP3 extends SystemDefaultDnsResolver {
             throw var13.getTargetException();
          }
 
-         var10001.append((String)var10002);
+         ((java.lang.StringBuilder)var10001).append((String)var10002);
          var10002 = Registry.packArgs(a);
          long var6 = 517287540690064504L;
          Object var10003 = Ref.h2(517287540690064504L, var6);
@@ -41,7 +41,7 @@ public class BP3 extends SystemDefaultDnsResolver {
             throw var12.getTargetException();
          }
 
-         String var3 = var10002.append((String)var10003).toString();
+         String var3 = ((java.lang.StringBuilder)var10002).append((String)var10003).toString();
          Object var8 = 526415368393605621L;
          Object var10004 = Ref.g(526415368393605621L, var8);
          Object var10 = 623538750367053717L;

@@ -11,7 +11,7 @@ public int compareTo(Enum o) {
    public static String P;
 
    public static OV3[] values() {
-      return (OV3[])C.clone();
+      return (OV3[])com.finalshell.reflect.Ref.cloneObject(C);
    }
 
    public static OV3 valueOf(String var0) {
@@ -129,6 +129,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object C;
 }
 
 

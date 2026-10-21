@@ -146,7 +146,7 @@ public class Na2 extends DefaultTreeCellRenderer {
             return (ImageIcon)Registry.lookupField(392185280097364709L).get(null);
          }
 
-         var10001 = var0;
+         var10001 = (Integer)(var0);
          Object[] var10 = Registry.emptyArgs();
          long var5 = 528672956857361353L;
          Object[] var4 = var10;
@@ -180,7 +180,7 @@ public class Na2 extends DefaultTreeCellRenderer {
       label248:
       if (var2 != null) {
          Color var12 = Color.black;
-         var10000 = var2.getClass();
+         var10000 = (String)(var2.getClass());
          if (var8 == null) {
             if (!var10000.equals(DefaultMutableTreeNode.class)) {
                break label248;
@@ -313,7 +313,7 @@ public class Na2 extends DefaultTreeCellRenderer {
                      var141 = var14.getClass().equals(com.finalshell.ui.model.Ck4.class);
                   }
 
-                  var145 = var8;
+                  var145 = (File)(var8);
                   if (var8 != null) {
                      break label239;
                   }
@@ -321,7 +321,7 @@ public class Na2 extends DefaultTreeCellRenderer {
                   if (var141) {
                      com.finalshell.ui.model.Ck4 var134 = (com.finalshell.ui.model.Ck4)var14;
                      Object var49 = 381547437801812312L;
-                     var145 = (JLabel)Ref.g(381547437801812312L, var49);
+                     var145 = (File)((JLabel)Ref.g(381547437801812312L, var49));
                      Object[] var146 = Registry.packArgs(var134);
                      long var51 = 169066270618240407L;
                      String var152 = (String)Ref.h2(169066270618240407L, var51);
@@ -466,7 +466,7 @@ public class Na2 extends DefaultTreeCellRenderer {
 
                Object var83 = 381547437801812312L;
                ((JLabel)Ref.g(381547437801812312L, var83)).setText(var15);
-               var145 = Registry.lookupField(473953447235666329L).getInt(this) - var13.getLevel() * var10;
+               var145 = (File)(Registry.lookupField(473953447235666329L).getInt(this) - var13.getLevel() * var10);
             }
 
             var11 = var145;

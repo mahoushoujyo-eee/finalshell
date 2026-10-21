@@ -11,7 +11,7 @@ public int compareTo(Enum o) {
    public static String[] k;
 
    public static Bi2[] values() {
-      return (Bi2[])B.clone();
+      return (Bi2[])com.finalshell.reflect.Ref.cloneObject(B);
    }
 
    public static Bi2 valueOf(String var0) {
@@ -129,6 +129,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object B;
 }
 
 

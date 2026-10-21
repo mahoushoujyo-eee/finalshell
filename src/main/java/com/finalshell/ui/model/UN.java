@@ -31,7 +31,7 @@ public class UN extends AbstractTableModel {
    public synchronized Object getValueAt(int var1, int var2) {
       String var3 = null;
       Object var4 = 388227650086417294L;
-      if (this < ((ArrayList)Ref.g(388227650086417294L, var4)).size()) {
+      if (0 < ((ArrayList)Ref.g(388227650086417294L, var4)).size()) {
          Object var6 = 388227650086417294L;
          var3 = (String)((ArrayList)Ref.g(388227650086417294L, var6)).get(var1);
       }

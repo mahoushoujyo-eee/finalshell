@@ -34,7 +34,7 @@ public class Dj4 implements ActionListener {
          throw var34.getTargetException();
       }
 
-var10004 = new Dj4(var10005);
+var10004 = (SetExternalEditorPanel)(new Dj4(var10005));
       Registry.packArgs(var10003.getName());
       long var10 = 353935338506646766L;
       var10004 = Ref.h2(353935338506646766L, var10);

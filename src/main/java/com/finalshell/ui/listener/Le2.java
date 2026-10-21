@@ -232,7 +232,7 @@ public class Le2 implements MouseListener {
                                  break label203;
                               }
 
-                              var10009 = var8;
+                              var10009 = (String)(var8);
                               Object[] var10010 = Registry.emptyArgs();
                               long var56 = 577747074549625554L;
                               Object[] var55 = var10010;
@@ -257,7 +257,7 @@ public class Le2 implements MouseListener {
                         var4 = false;
                      }
 
-                     var10009 = var8;
+                     var10009 = (String)(var8);
                      Object[] var93 = Registry.emptyArgs();
                      long var58 = 372900192662778876L;
                      Object[] var57 = var93;
@@ -276,7 +276,7 @@ public class Le2 implements MouseListener {
                }
             }
 
-            var10004 = var1.getButton();
+            var10004 = (Le2)(var1.getButton());
             if (!var2) {
                break label195;
             }

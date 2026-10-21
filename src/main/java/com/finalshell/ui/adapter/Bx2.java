@@ -106,7 +106,7 @@ public class Bx2 extends Oe2 {
                   Object var30 = 279211102447061689L;
                   Object var10012 = Ref.g(279211102447061689L, var30);
                   Object var32 = 435262014696409152L;
-                  var10012.setBackground((Color)Ref.g(435262014696409152L, var32));
+                  ((javax.swing.JComponent)var10012).setBackground((Color)Ref.g(435262014696409152L, var32));
                   if (this == null) {
                      break label65;
                   }
@@ -117,7 +117,7 @@ public class Bx2 extends Oe2 {
                Object var36 = 279211102447061689L;
                Object var70 = Ref.g(279211102447061689L, var36);
                Object var38 = 262573955458954459L;
-               var70.setBackground((Color)Ref.g(262573955458954459L, var38));
+               ((javax.swing.JComponent)var70).setBackground((Color)Ref.g(262573955458954459L, var38));
                if (this == null) {
                   break label65;
                }
@@ -142,7 +142,7 @@ public class Bx2 extends Oe2 {
             Object var42 = 279211102447061689L;
             Object var71 = Ref.g(279211102447061689L, var42);
             Object var44 = 435262014696409152L;
-            var71.setBackground((Color)Ref.g(435262014696409152L, var44));
+            ((javax.swing.JComponent)var71).setBackground((Color)Ref.g(435262014696409152L, var44));
             if (this == null) {
                break label65;
             }
@@ -153,7 +153,7 @@ public class Bx2 extends Oe2 {
          Object var48 = 279211102447061689L;
          Object var72 = Ref.g(279211102447061689L, var48);
          Object var50 = 262573955458954459L;
-         var72.setBackground((Color)Ref.g(262573955458954459L, var50));
+         ((javax.swing.JComponent)var72).setBackground((Color)Ref.g(262573955458954459L, var50));
       }
 
       Object var52 = 264155899074958124L;
@@ -164,6 +164,7 @@ public class Bx2 extends Oe2 {
       Object var56 = 264155899074958124L;
       return (JLabel)Ref.g(264155899074958124L, var56);
    }
+   private static Object var64;
 }
 
 

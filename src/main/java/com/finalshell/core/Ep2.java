@@ -62,11 +62,11 @@ public class Ep2 implements Lf2 {
          var19 = this.p;
       }
 
-      var20 = SetBackgroundImagePanel.Y(var19);
+      var20 = (KB)(SetBackgroundImagePanel.Y(var19));
       label45:
       if (var6 == 0) {
          if (var20 != null) {
-            var20 = SetBackgroundImagePanel.Y(this.p);
+            var20 = (KB)(SetBackgroundImagePanel.Y(this.p));
             if (var6 != 0) {
                break label45;
             }
@@ -79,7 +79,7 @@ public class Ep2 implements Lf2 {
             }
          }
 
-         var20 = SetBackgroundImagePanel.e(this.p);
+         var20 = (KB)(SetBackgroundImagePanel.e(this.p));
       }
 
       if (var6 == 0) {
@@ -87,7 +87,7 @@ public class Ep2 implements Lf2 {
             return;
          }
 
-         var20 = SetBackgroundImagePanel.e(this.p);
+         var20 = (KB)(SetBackgroundImagePanel.e(this.p));
       }
 
       KB var14 = var20.x(var1, var7 + this.p.P, var4.length());

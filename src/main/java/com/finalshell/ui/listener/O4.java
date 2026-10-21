@@ -106,7 +106,7 @@ public class O4 implements MouseListener {
             }
          }
 
-         var10004 = var1.getButton();
+         var10004 = (O4)(var1.getButton());
          var10005 = 3;
       }
 

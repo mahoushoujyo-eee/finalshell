@@ -81,13 +81,13 @@ public class I4 extends MouseAdapter {
                               label185: {
                                  int var5 = K5_2.g(this.Q, var4, var3.getPathCount() - 1);
                                  var6 = var1.getX() - var5;
-                                 var10000 = this.Q.V();
+                                 var10000 = (String)(this.Q.V());
                                  if (var2 != null) {
                                     if (var10000 == null) {
                                        break label185;
                                     }
 
-                                    var10000 = this.Q.G(var4).contains(var1.getX(), var1.getY());
+                                    var10000 = (String)(this.Q.G(var4).contains(var1.getX(), var1.getY()));
                                  }
 
                                  if (var2 != null) {
@@ -95,7 +95,7 @@ public class I4 extends MouseAdapter {
                                        break label185;
                                     }
 
-                                    var10000 = K5_2.s(this.Q).isRowSelected(var4);
+                                    var10000 = (String)(K5_2.s(this.Q).isRowSelected(var4));
                                  }
 
                                  if (var2 == null) {
@@ -103,12 +103,12 @@ public class I4 extends MouseAdapter {
                                  }
 
                                  if (var10000 == null) {
-                                    var10000 = true;
+                                    var10000 = (String)(true);
                                     break label155;
                                  }
                               }
 
-                              var10000 = false;
+                              var10000 = (String)(false);
                            }
 
                            Na2 var7 = var10000;
@@ -118,10 +118,10 @@ public class I4 extends MouseAdapter {
                                  label135: {
                                     label187: {
                                        Na2 var8 = (Na2)K5_2.w(this.Q).getCellRenderer();
-                                       var18 = var7;
+                                       var18 = (boolean)(var7);
                                        if (var2 != null) {
                                           if (var7 == null) {
-                                             var18 = var8;
+                                             var18 = (boolean)(var8);
                                              Object[] var10001 = Registry.packArgs(var4, var6);
                                              long var10 = 460506329433732058L;
                                              Object[] var9 = var10001;
@@ -166,7 +166,7 @@ public class I4 extends MouseAdapter {
                                     var18 = true;
                                  }
 
-                                 var7 = var18;
+                                 var7 = (Na2)(var18);
                               }
 
                               var17 = var7;
@@ -650,6 +650,8 @@ public class I4 extends MouseAdapter {
       byte var10001 = -1;
       a = var10002;
    }
+   private static Object var19;
+   private static Object R;
 }
 
 

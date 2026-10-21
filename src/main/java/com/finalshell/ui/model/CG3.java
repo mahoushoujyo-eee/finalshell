@@ -9,7 +9,7 @@ public int compareTo(Enum o) {
    public static CG3 stack;
 
    public static CG3[] values() {
-      return (CG3[])F.clone();
+      return (CG3[])com.finalshell.reflect.Ref.cloneObject(F);
    }
 
    public static CG3 valueOf(String var0) {
@@ -117,6 +117,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object F;
 }
 
 

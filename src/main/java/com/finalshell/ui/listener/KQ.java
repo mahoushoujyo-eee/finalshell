@@ -54,7 +54,7 @@ public class KQ implements ActionListener {
                return;
             }
 
-            var10000 = this.I;
+            var10000 = (Ky4[])(this.I);
             if (var2 != null) {
                break label50;
             }
@@ -71,14 +71,14 @@ public class KQ implements ActionListener {
             }
          }
 
-         var10000 = (JComponent)this.I.getParent();
+         var10000 = (Ky4[])((JComponent)this.I.getParent());
       }
 
       Object var5 = var10000;
       if (var5 != null) {
          Rectangle var6 = this.I.getBounds();
          var5.remove(this.I);
-         var5.repaint(var6);
+         ((javax.swing.JComponent)var5).repaint(var6);
       }
 
       Wd2.N(this.I).Y();

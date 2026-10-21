@@ -37,7 +37,7 @@ public class WA extends WC {
 
       while (true) {
          if (var9 >= var3.size()) {
-            var10000 = this;
+            var10000 = (Ky4[])(this);
             if (var7 != null) {
                this.g = new DatagramPacket(this.X, this.X.length);
                if (Ky4.F$arrString() != null) {

@@ -328,7 +328,7 @@ public class Df4 implements Closeable {
 
       label60: {
          try {
-            var7 = this.C;
+            var7 = (int)(this.C);
             if (var1 != null) {
                break label60;
             }
@@ -340,7 +340,7 @@ public class Df4 implements Closeable {
             throw a(var6);
          }
 
-         var7 = this.C;
+         var7 = (int)(this.C);
       }
 
       int var2 = var7.S;

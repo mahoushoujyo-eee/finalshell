@@ -208,7 +208,7 @@ public class ReservedAddressCellRenderer extends DefaultTableCellRenderer {
                         var16 = var15.append((String)var148).toString();
                      }
 
-                     var119 = var15;
+                     var119 = (String)(var15);
                      Object[] var10007 = Registry.emptyArgs();
                      long var42 = 564648154927582737L;
                      Object[] var41 = var10007;
@@ -271,11 +271,11 @@ public class ReservedAddressCellRenderer extends DefaultTableCellRenderer {
                         label418: {
                            label419: {
                               label381: {
-                                 var122 = var18;
+                                 var122 = (Zh2_2)(var18);
                                  label380:
                                  if (this == null) {
                                     if (!var18.startsWith(a(15065, 17340))) {
-                                       var122 = var18;
+                                       var122 = (Zh2_2)(var18);
                                        if (this != null) {
                                           break label380;
                                        }
@@ -292,7 +292,7 @@ public class ReservedAddressCellRenderer extends DefaultTableCellRenderer {
                                        }
                                     }
 
-                                    var122 = a(15068, -22252);
+                                    var122 = (Zh2_2)(a(15068, -22252));
                                  }
 
                                  var16 = var122;
@@ -301,7 +301,7 @@ public class ReservedAddressCellRenderer extends DefaultTableCellRenderer {
                                  }
                               }
 
-                              var122 = var18;
+                              var122 = (Zh2_2)(var18);
                               if (this != null) {
                                  break label418;
                               }
@@ -316,7 +316,7 @@ public class ReservedAddressCellRenderer extends DefaultTableCellRenderer {
                               }
                            }
 
-                           var122 = var19.l();
+                           var122 = (Zh2_2)(var19.l());
                         }
 
                         var16 = var122;
@@ -444,7 +444,7 @@ public class ReservedAddressCellRenderer extends DefaultTableCellRenderer {
                            throw var76.getTargetException();
                         }
 
-                        var16 = var139.append((String)var151).append("").toString();
+                        var16 = ((java.lang.StringBuilder)var139).append((String)var151).append("").toString();
                      }
 
                      var8.setHorizontalAlignment(4);
@@ -551,7 +551,7 @@ public class ReservedAddressCellRenderer extends DefaultTableCellRenderer {
 
       int var138 = (var3) ? 1 : 0;
       if (this == null) {
-         if (var3 != 0) {
+         if (var3) {
             var8.setBackground((Color)Registry.lookupField(623875439513009390L).get(null));
             var8.setForeground((Color)Registry.lookupField(513155505692963448L).get(null));
             var8.setOpaque(true);
@@ -1578,6 +1578,9 @@ public class ReservedAddressCellRenderer extends DefaultTableCellRenderer {
          }
       }
    }
+   private static Object var130;
+   private static java.util.List var113;
+   private static Object var134;
 }
 
 

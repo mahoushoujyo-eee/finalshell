@@ -34,7 +34,7 @@ public class E92 extends E12 {
             break label29;
          }
 
-         var8 = var7;
+         var8 = (int)(var7);
       }
 
       var1.setMnemonic(var8);
@@ -47,6 +47,7 @@ public class E92 extends E12 {
    public void L(JComponent var1, String var2, com.finalshell.ui.model.G9 var3, Object[] var4) {
       this.G((AbstractButton)var1, var2, var3, var4);
    }
+   private static Object var7;
 }
 
 

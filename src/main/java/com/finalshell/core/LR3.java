@@ -98,13 +98,13 @@ public class LR3 implements LazyValue {
       Object[] var5 = var1;
       if (var2 == null) {
          if (var1 == null) {
-            return var3;
+            return (Class[])(var3);
          }
 
          var5 = var1;
       }
 
-      var3 = new java.lang.Class[var5.length];
+      var3 = (Class)(new java.lang.Class[var5.length]);
       int var4 = 0;
 
       while (var4 < var1.length) {
@@ -148,7 +148,7 @@ public class LR3 implements LazyValue {
          }
       }
 
-      return var3;
+      return (Class[])(var3);
    }
 
    public static Exception a(Exception var0) {

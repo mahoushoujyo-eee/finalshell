@@ -538,7 +538,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                      Object var17 = 618427502576624312L;
                      ((Tq4)Ref.g(618427502576624312L, var17)).getRowHeight();
                      Object var19 = 618427502576624312L;
-                     int var4 = this * ((Tq4)Ref.g(618427502576624312L, var19)).getRowCount();
+                     int var4 = 0 * ((Tq4)Ref.g(618427502576624312L, var19)).getRowCount();
                      short var10003 = 19468;
                      Object var21 = 618427502576624312L;
                      var4 = ((Tq4)Ref.g(618427502576624312L, var21)).getPreferredSize().height;
@@ -546,7 +546,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                      Object var23 = 618427502576624312L;
                      Object var6 = ((Tq4)Ref.g(618427502576624312L, var23)).getRowHeight();
                      Object var25 = 529887570589696401L;
-                     var52 = this + ((JPanel)Ref.g(529887570589696401L, var25)).getPreferredSize().height + 2;
+                     var52 = 0 + ((JPanel)Ref.g(529887570589696401L, var25)).getPreferredSize().height + 2;
                      var10006 = var52;
                      Object var10007 = Registry.lookupField(121864494913095536L).getInt(this);
                      if (this == null) {
@@ -635,7 +635,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          int var60 = var65;
          int var8 = Registry.lookupField(607893582657885022L).getInt(this) * var60;
          Object var31 = 529887570589696401L;
-         var52 = this + ((JPanel)Ref.g(529887570589696401L, var31)).getPreferredSize().height + 5;
+         var52 = 0 + ((JPanel)Ref.g(529887570589696401L, var31)).getPreferredSize().height + 5;
          int var10004 = var59;
          if (this == null) {
             if (var59 == 0) {
@@ -755,7 +755,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
             if (var73) {
                Object var45 = 334241381080505095L;
-               var55.y.y = this + ((Dv2)Ref.g(334241381080505095L, var45)).getHeight();
+               var55.y.y = 0 + ((Dv2)Ref.g(334241381080505095L, var45)).getHeight();
                if (var1 == null) {
                   break label110;
                }
@@ -774,7 +774,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          var58.height = (int)var52;
          if (Registry.lookupField(208862359481951532L).getBoolean(this)) {
             Object var47 = 334241381080505095L;
-            var58.x.x = this + (((Dv2)Ref.g(334241381080505095L, var47)).getWidth() - this.getWidth());
+            var58.x.x = 0 + (((Dv2)Ref.g(334241381080505095L, var47)).getWidth() - this.getWidth());
          }
 
          var69 = var58;
@@ -804,7 +804,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          label127: {
             if (var1 == null) {
                if (var10001 == null) {
-                  var10001 = this;
+                  var10001 = (Boolean)(this);
                   Object var6 = 618427502576624312L;
                   int var10002 = ((Tq4)Ref.g(618427502576624312L, var6)).getRowCount();
                   if (var1 != null) {
@@ -869,7 +869,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                   }
                }
 
-               var10001 = this;
+               var10001 = (Boolean)(this);
                Object var22 = 618427502576624312L;
                ((Tq4)Ref.g(618427502576624312L, var22)).getRowCount();
             }
@@ -1024,7 +1024,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                   }
                }
 
-               var10001 = this;
+               var10001 = (Boolean)(this);
                Object var18 = 618427502576624312L;
                ((Tq4)Ref.g(618427502576624312L, var18)).getSelectedRow();
             }
@@ -1051,7 +1051,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             if (var1 == null) {
                if (var62 < 0) {
                   Object var22 = 618427502576624312L;
-                  var57 = ((Tq4)Ref.g(618427502576624312L, var22)).getRowCount() - 1;
+                  var57 = (ClearListDialog)(((Tq4)Ref.g(618427502576624312L, var22)).getRowCount() - 1);
                }
 
                Object var24 = 618427502576624312L;
@@ -1101,11 +1101,11 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          if (var64 > 0) {
             label131: {
                Object var38 = 369475678680292668L;
-               var59 = ((JXList)Ref.g(369475678680292668L, var38)).getSelectedIndex();
+               var59 = (ClearListDialog)(((JXList)Ref.g(369475678680292668L, var38)).getSelectedIndex());
                ClearListDialog var10003 = var59;
                if (var1 == null) {
                   if (var59 == null) {
-                     var59 = 0;
+                     var59 = (ClearListDialog)(0);
                      if (var1 == null) {
                         break label131;
                      }
@@ -1175,7 +1175,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                   int var2 = ((Tq4)Ref.g(618427502576624312L, var5)).getSelectedRow();
                   var2++;
                   Object var7 = 618427502576624312L;
-                  if (!(this > ((Tq4)Ref.g(618427502576624312L, var7)).getRowCount() - 1)) {
+                  if (!(0 > ((Tq4)Ref.g(618427502576624312L, var7)).getRowCount() - 1)) {
                      Object var9 = 618427502576624312L;
                      ((Tq4)Ref.g(618427502576624312L, var9)).getSelectionModel().setSelectionInterval(var2, var2);
                   }
@@ -1201,7 +1201,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                   }
                }
 
-               var10001 = this;
+               var10001 = (Boolean)(this);
                Object var17 = 618427502576624312L;
                ((Tq4)Ref.g(618427502576624312L, var17)).getSelectedRow();
             }
@@ -1244,7 +1244,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             ClearListDialog var50 = -1;
             if (var1 == null) {
                if (var46 == null) {
-                  var46 = false;
+                  var46 = (ClearListDialog)(false);
                   if (var1 == null) {
                      break label64;
                   }
@@ -1274,7 +1274,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             }
 
             if (var10000 > var50) {
-               var46 = false;
+               var46 = (ClearListDialog)(false);
             }
          }
 
@@ -1570,7 +1570,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       var10002 = Ref.h(257476172962055898L, var6, var7);
 
       try {
-         var27 = (Boolean)var10002;
+         var27 = ((Boolean)var10002) ? 1 : 0;
       } catch (InvocationTargetException var24) {
          throw var24.getTargetException();
       }
@@ -2515,7 +2515,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                         break label503;
                      }
 
-                     var158 = Registry.lookupField(546619646805113494L).getBoolean(this);
+                     var158 = (ClearListDialog)(Registry.lookupField(546619646805113494L).getBoolean(this));
                   }
 
                   if (var158 == null) {
@@ -4089,6 +4089,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          }
       }
    }
+   private static Object var136;
 }
 
 

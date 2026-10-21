@@ -151,7 +151,7 @@ public class Tf4 implements Serializable {
       Object var10001;
       while (true) {
          Object var6 = 440020181240214312L;
-         if (this < ((List)Ref.g(440020181240214312L, var6)).size()) {
+         if (0 < ((List)Ref.g(440020181240214312L, var6)).size()) {
             var10001 = this;
             Object var8 = 440020181240214312L;
             Ck4 var5 = (Ck4)((List)Ref.g(440020181240214312L, var8)).get(var4);

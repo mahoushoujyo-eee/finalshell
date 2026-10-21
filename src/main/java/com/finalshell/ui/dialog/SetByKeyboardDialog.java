@@ -197,7 +197,7 @@ public class SetByKeyboardDialog extends JDialog {
                throw var81.getTargetException();
             }
 
-            var10033.setText((String)var10034);
+            ((javax.swing.text.JTextComponent)var10033).setText((String)var10034);
          }
 
          SwingUtilities.getWindowAncestor(var1);

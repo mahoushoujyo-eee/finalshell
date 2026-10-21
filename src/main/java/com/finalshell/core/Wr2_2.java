@@ -761,6 +761,8 @@ public final class Wr2_2 {
          }
       }
    }
+   private static Object var37;
+   private static Object var43;
 }
 
 

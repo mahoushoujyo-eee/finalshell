@@ -554,7 +554,7 @@ var10032 = new JPanel((String)var10033);
          throw var38.getTargetException();
       }
 
-      var10003.setText((String)var10004);
+      ((javax.swing.text.JTextComponent)var10003).setText((String)var10004);
       Object var7 = 614660311662874560L;
       var10004 = (JTextField)Ref.g(614660311662874560L, var7);
       Registry.emptyArgs();
@@ -621,7 +621,7 @@ var10032 = new JPanel((String)var10033);
          throw var35.getTargetException();
       }
 
-      var10017.setText((String)var10018);
+      ((javax.swing.text.JTextComponent)var10017).setText((String)var10018);
    }
 
    public JButton e(String var1) {

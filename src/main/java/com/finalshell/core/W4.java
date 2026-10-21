@@ -42,7 +42,7 @@ public class W4 {
             return;
          }
 
-         var10003 = this;
+         var10003 = (String)(this);
          Object var16 = 308001167767280047L;
          String var10004 = (String)Ref.g(308001167767280047L, var16);
       }

@@ -735,7 +735,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                      }
                   }
 
-                  var39 = this;
+                  var39 = (boolean)(this);
                   if (var3 != null) {
                      break label572;
                   }
@@ -750,7 +750,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                   }
                }
 
-               var39 = this;
+               var39 = (boolean)(this);
             }
 
             var38 = var39.k;
@@ -769,12 +769,12 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                      }
 
                      if (!var38) {
-                        var38 = (0) != 0;
+                        var38 = (int)((0) != 0);
                         break label549;
                      }
                   }
 
-                  var38 = (1) != 0;
+                  var38 = (int)((1) != 0);
                }
 
                boolean var8 = (var38) != 0;
@@ -809,12 +809,12 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                         }
 
                         if (!var38) {
-                           var38 = (1) != 0;
+                           var38 = (int)((1) != 0);
                            break label539;
                         }
                      }
 
-                     var38 = (0) != 0;
+                     var38 = (int)((0) != 0);
                   }
 
                   boolean var10;
@@ -885,12 +885,12 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                            }
 
                            if (var38 != 0) {
-                              var38 = (1) != 0;
+                              var38 = (int)((1) != 0);
                               break label504;
                            }
                         }
 
-                        var38 = (0) != 0;
+                        var38 = (int)((0) != 0);
                      }
 
                      boolean var12;
@@ -1411,7 +1411,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
          var4 = (AbstractButton)var2;
          ButtonModel var5 = var4.getModel();
          FontMetrics var6 = var2.getFontMetrics(var2.getFont());
-         var10001 = KD.s$arrint();
+         var10001 = (String)(KD.s$arrint());
          var7 = this.X(var4, var6, var4.getWidth(), var4.getHeight());
          this.clearTextShiftOffset();
          var3 = (int[])var10001;

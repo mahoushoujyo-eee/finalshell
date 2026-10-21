@@ -9,7 +9,7 @@ public int compareTo(Enum o) {
    public static G6 tiles;
 
    public static G6[] values() {
-      return (G6[])T.clone();
+      return (G6[])com.finalshell.reflect.Ref.cloneObject(T);
    }
 
    public static G6 valueOf(String var0) {
@@ -117,6 +117,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object T;
 }
 
 

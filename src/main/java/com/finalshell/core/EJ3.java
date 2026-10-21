@@ -15,7 +15,7 @@ public class EJ3 implements PK3 {
          }
 
          var10000 = var2;
-         var10001 = Time.class;
+         var10001 = (Class<Date>)(Time.class);
       }
 
       if (var3 == 0) {
@@ -28,7 +28,7 @@ public class EJ3 implements PK3 {
             return var2;
          }
 
-         var10001 = Timestamp.class;
+         var10001 = (Class<Date>)(Timestamp.class);
       }
 
       return var10000 != var10001 ? null : B8_2.q(var1);

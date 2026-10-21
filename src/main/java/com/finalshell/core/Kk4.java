@@ -25,7 +25,7 @@ public class Kk4 implements Q0 {
       Object var7 = 524600235576671488L;
       long var10004 = ((j)Ref.g(524600235576671488L, var7)).q$long();
       Object var9 = 524600235576671488L;
-      var10004.w((int)(this - ((j)Ref.g(524600235576671488L, var9)).R()));
+      var10004.w((int)(0 - ((j)Ref.g(524600235576671488L, var9)).R()));
       Object var11 = 524600235576671488L;
       ((j)Ref.g(524600235576671488L, var11)).S(var2.A());
       Object var13 = 524600235576671488L;

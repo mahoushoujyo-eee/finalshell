@@ -123,7 +123,7 @@ public class ExtranetAddressModel extends AbstractTableModel {
 
       if (var2 == null) {
          Object var3 = 396909645103208969L;
-         if (this < ((List)Ref.g(396909645103208969L, var3)).size()) {
+         if (0 < ((List)Ref.g(396909645103208969L, var3)).size()) {
             boolean var10002 = true;
          } else {
             boolean var7 = false;

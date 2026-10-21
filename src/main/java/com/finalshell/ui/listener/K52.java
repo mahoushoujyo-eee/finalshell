@@ -371,6 +371,8 @@ public class K52 implements ActionListener {
          }
       }
    }
+   private static Object var131;
+   private static Object var136;
 }
 
 

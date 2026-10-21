@@ -10,7 +10,7 @@ public int compareTo(Enum o) {
    public static So2 always;
 
    public static So2[] values() {
-      return (So2[])C.clone();
+      return (So2[])com.finalshell.reflect.Ref.cloneObject(C);
    }
 
    public static So2 valueOf(String var0) {
@@ -119,6 +119,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object C;
 }
 
 

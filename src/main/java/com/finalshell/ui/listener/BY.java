@@ -168,7 +168,7 @@ var10022 = new BY((String)var10023, var10024, (Window)var10025, var3, null);
             }
          }
 
-         var10016 = this;
+         var10016 = (Integer)(this);
          Object var48 = 584267852523456400L;
          var10017 = Ref.g(584267852523456400L, var48);
          Object var50 = 160092931880009273L;

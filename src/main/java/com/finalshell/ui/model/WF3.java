@@ -9,7 +9,7 @@ public int compareTo(Enum o) {
    public static WF3 Remote;
 
    public static WF3[] values() {
-      return (WF3[])y.clone();
+      return (WF3[])com.finalshell.reflect.Ref.cloneObject(y);
    }
 
    public static WF3 valueOf(String var0) {
@@ -117,6 +117,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object y;
 }
 
 

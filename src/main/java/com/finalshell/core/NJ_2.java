@@ -198,12 +198,12 @@ public class NJ_2 {
          Object var95 = Ref.h2(492930666611970668L, var35);
 
          try {
-            var96 = (String[])var95;
+            var96 = (String)((String[])var95);
          } catch (InvocationTargetException var67) {
             throw var67.getTargetException();
          }
 
-         var4 = var96;
+         var4 = (String[])(var96);
          var10004 = 1;
          break;
       }

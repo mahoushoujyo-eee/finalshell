@@ -117,6 +117,7 @@ public class Ym2 implements KeyListener {
       byte var10001 = -1;
       a = var10002;
    }
+   private static Object var18;
 }
 
 

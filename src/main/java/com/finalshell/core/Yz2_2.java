@@ -257,7 +257,7 @@ public abstract class Yz2_2 extends TransferHandler {
                var13 = var9;
             }
 
-            var13.add(var8.getIndex(var11));
+            ((java.math.BigInteger)var13).add(var8.getIndex(var11));
             if (var2 == null) {
                break;
             }

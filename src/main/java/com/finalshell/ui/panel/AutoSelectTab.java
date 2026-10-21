@@ -45,7 +45,7 @@ public class AutoSelectTab extends Z7 {
          throw var42.getTargetException();
       }
 
-var10005 = new L82(var10006, var46);
+var10005 = (AutoSelectTab)(new L82(var10006, var46));
       Object[] var2 = var10004;
       String var1 = var10003;
       this.add(var2, a(23286, -7441));
@@ -69,7 +69,7 @@ var10005 = new L82(var10006, var46);
          throw var41.getTargetException();
       }
 
-var10007 = new L82(var10008, var53);
+var10007 = (AutoSelectTab)(new L82(var10008, var53));
       Object[] var3 = var10006;
       Registry.emptyArgs();
       long var18 = 253808553645062345L;
@@ -126,7 +126,7 @@ var10007 = new L82(var10008, var53);
          throw var38.getTargetException();
       }
 
-var10011 = new L82(var10012, var56);
+var10011 = (AutoSelectTab)(new L82(var10012, var56));
       Object[] var4 = var10010;
       this.add(var4, a(23281, 15640));
       var4.addActionListener(new M32(this, var4));
@@ -149,7 +149,7 @@ var10011 = new L82(var10012, var56);
          throw var37.getTargetException();
       }
 
-      var10014 = new L82(var10015, var62);
+      var10014 = (AutoSelectTab)(new L82(var10015, var62));
       Object var5 = var10013;
       Registry.emptyArgs();
       long var34 = 253808553645062345L;

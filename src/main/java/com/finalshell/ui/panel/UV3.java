@@ -116,7 +116,7 @@ public class UV3 extends JComponent {
             }
          }
 
-         var10001 = var1;
+         var10001 = (Integer)(var1);
          Object[] var49 = Registry.emptyArgs();
          long var14 = 486203322657356972L;
          Object[] var13 = var49;
@@ -151,7 +151,7 @@ public class UV3 extends JComponent {
             }
          }
 
-         var10001 = var1;
+         var10001 = (Integer)(var1);
          Object[] var51 = Registry.emptyArgs();
          long var24 = 486203322657356972L;
          Object[] var23 = var51;
@@ -189,7 +189,7 @@ public class UV3 extends JComponent {
             }
          }
 
-         var10001 = var1;
+         var10001 = (Integer)(var1);
          Object[] var53 = Registry.emptyArgs();
          long var32 = 486203322657356972L;
          Object[] var31 = var53;

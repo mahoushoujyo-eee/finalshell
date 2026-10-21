@@ -178,7 +178,7 @@ public class UW3 implements MouseListener {
             }
          }
 
-         var10004 = var1.getButton();
+         var10004 = (UW3)(var1.getButton());
          var10005 = 3;
       }
 

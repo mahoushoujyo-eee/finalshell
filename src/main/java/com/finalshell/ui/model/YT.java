@@ -15,7 +15,7 @@ public int compareTo(Enum o) {
    public static long a;
 
    public static YT[] values() {
-      return (YT[])f.clone();
+      return (YT[])com.finalshell.reflect.Ref.cloneObject(f);
    }
 
    public static YT valueOf(String var0) {
@@ -165,6 +165,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object f;
 }
 
 

@@ -59,7 +59,7 @@ public class W7 implements AWTEventListener {
             return;
          }
 
-         var11 = var1.getSource();
+         var11 = (AWTEvent)(var1.getSource());
       }
 
       JButton var4 = (JButton)var11;

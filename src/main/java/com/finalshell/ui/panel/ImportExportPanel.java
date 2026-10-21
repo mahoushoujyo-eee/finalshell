@@ -443,7 +443,7 @@ var10006 = new TreePath(this, (DefaultMutableTreeNode)Ref.g(213130010239103238L,
                   }
                }
 
-               var10007 = var112;
+               var10007 = (Integer)(var112);
                Object[] var133 = Registry.emptyArgs();
                long var34 = 402271797068414482L;
                var33 = var133;
@@ -598,7 +598,7 @@ var10006 = new TreePath(this, (DefaultMutableTreeNode)Ref.g(213130010239103238L,
          var147 = var113;
          if (var1 == null) {
             if (var113 != 0) {
-               var10013 = var5;
+               var10013 = (F8)(var5);
                label347:
                if (var1 == null) {
                   label337:
@@ -698,7 +698,7 @@ var161 = new HashMap(var165);
                      }
                   }
 
-                  var10013 = var6;
+                  var10013 = (F8)(var6);
                }
 
                for (Lv4_2 var116 : var10013) {
@@ -740,7 +740,7 @@ var116 = new HashMap(var171);
                }
             }
 
-            var10013 = var5;
+            var10013 = (F8)(var5);
             if (var1 != null) {
                break label440;
             }
@@ -813,7 +813,7 @@ var162 = new HashMap(var174);
             }
          }
 
-         var10013 = var6;
+         var10013 = (F8)(var6);
       }
 
       for (Lv4_2 var118 : var10013) {
@@ -932,7 +932,7 @@ var118 = new HashMap(var10019);
       com.finalshell.ui.frame.MainFrame var7;
       U62 var10008;
       label180: {
-         var7 = var10007;
+         var7 = (MainFrame)(var10007);
          EditorSelectionDialog var8 = new EditorSelectionDialog(Registry.lookupField(317162390314131527L).getInt(null), var7, a(11174, -30976), new Dv4(), false);
          if (var3 == null) {
             if (var4 != null) {
@@ -3335,7 +3335,7 @@ var118 = new HashMap(var10019);
                      }
                   }
 
-                  var10000 = var6.getUserObject().getClass();
+                  var10000 = (String)(var6.getUserObject().getClass());
                   if (var4 != null) {
                      break label47;
                   }
@@ -3484,7 +3484,7 @@ var118 = new HashMap(var10019);
                break label159;
             }
 
-            var10001 = var5;
+            var10001 = (String)(var5);
             Object[] var10002 = Registry.emptyArgs();
             var22 = 179612178163941306L;
             Object[] var21 = var10002;
@@ -3624,7 +3624,7 @@ var118 = new HashMap(var10019);
                      }
                   }
 
-                  var10000 = var5.getUserObject().getClass();
+                  var10000 = (String)(var5.getUserObject().getClass());
                   if (var3 != null) {
                      break label47;
                   }
@@ -3672,7 +3672,7 @@ var118 = new HashMap(var10019);
 
          do {
             Object var8 = 593306439561595691L;
-            if (!(this < ((ImportExportPanel)Ref.g(593306439561595691L, var8)).getRowCount())) {
+            if (!(0 < ((ImportExportPanel)Ref.g(593306439561595691L, var8)).getRowCount())) {
                break;
             }
 
@@ -3917,13 +3917,13 @@ var118 = new HashMap(var10019);
       var10002 = this;
       if (var2 == null) {
          if (Registry.lookupField(557374830394047111L).getBoolean(this)) {
-            var10002 = var3;
+            var10002 = (ImportExportPanel)(var3);
             if (var2 == null) {
                if (var3 == null) {
                   return;
                }
 
-               var10002 = var3.getParent();
+               var10002 = (ImportExportPanel)(var3.getParent());
             }
 
             if (var10002 == null) {
@@ -3969,7 +3969,7 @@ var118 = new HashMap(var10019);
                      break label33;
                   }
 
-                  var10002 = var3.getParent();
+                  var10002 = (DefaultMutableTreeNode)(var3.getParent());
                }
 
                if (var10002 != null) {
@@ -4347,7 +4347,7 @@ var118 = new HashMap(var10019);
                break label157;
             }
 
-            var10001 = (Object[])var38.getUserObject();
+            var10001 = (DefaultMutableTreeNode)((Object[])var38.getUserObject());
          }
 
          label158: {
@@ -4370,7 +4370,7 @@ var118 = new HashMap(var10019);
                   break label157;
                }
 
-               var10001 = var38.getUserObject().getClass();
+               var10001 = (DefaultMutableTreeNode)(var38.getUserObject().getClass());
                if (var1 != null) {
                   break label158;
                }
@@ -4382,7 +4382,7 @@ var118 = new HashMap(var10019);
                break label157;
             }
 
-            var10001 = (Object[])var38.getUserObject();
+            var10001 = (DefaultMutableTreeNode)((Object[])var38.getUserObject());
          }
 
          var40 = (Ck4)var10001;
@@ -5148,7 +5148,7 @@ var118 = new HashMap(var10019);
          Object var13 = 571388131590801605L;
          ((Yo4)Ref.g(571388131590801605L, var13)).nodeStructureChanged(var1);
          var5 = var4.iterator();
-         var10003 = var5.hasNext();
+         var10003 = (String)(var5.hasNext());
          break;
       }
 
@@ -5159,7 +5159,7 @@ var118 = new HashMap(var10019);
             break;
          }
 
-         var10003 = var5.hasNext();
+         var10003 = (String)(var5.hasNext());
       }
    }
 
@@ -5773,12 +5773,12 @@ var118 = new HashMap(var10019);
                            Lv4_2 var16;
                            label467: {
                               Object var15 = var10011;
-                              var16 = false;
-                              var10011 = (Object[])var15;
+                              var16 = (Lv4_2)(false);
+                              var10011 = (Integer)((Object[])var15);
                               int var10012 = Registry.lookupField(304719506057429442L).getInt(null);
                               if (var2 == null) {
                                  if (var15 == var10012) {
-                                    var10011 = var117;
+                                    var10011 = (Integer)(var117);
                                     Object[] var145 = Registry.emptyArgs();
                                     long var56 = 380415140795833934L;
                                     Object[] var55 = var145;
@@ -5793,7 +5793,7 @@ var118 = new HashMap(var10019);
                                     Lv4_2 var10013;
                                     var147.toLowerCase();
                                     Object var57 = 119358758450406151L;
-                                    var10013 = this.contains((String)Ref.g(119358758450406151L, var57));
+                                    var10013 = (Point)(this.contains((String)Ref.g(119358758450406151L, var57)));
                                     label374:
                                     if (var2 == null) {
                                        if (var10013 == null) {
@@ -5869,7 +5869,7 @@ var118 = new HashMap(var10019);
                                           }
                                        }
 
-                                       var10013 = true;
+                                       var10013 = (Lv4_2)(true);
                                     }
 
                                     var16 = var10013;
@@ -5878,13 +5878,13 @@ var118 = new HashMap(var10019);
                                     }
                                  }
 
-                                 var10011 = (Object[])var15;
+                                 var10011 = (Integer)((Object[])var15);
                                  var10012 = Registry.lookupField(387101562873018885L).getInt(null);
                               }
 
                               if (var2 == null) {
                                  if (var10011 == var10012) {
-                                    var10011 = var117;
+                                    var10011 = (Integer)(var117);
                                     Object[] var148 = Registry.emptyArgs();
                                     long var74 = 286931176286176762L;
                                     Object[] var73 = var148;
@@ -5907,19 +5907,19 @@ var118 = new HashMap(var10019);
                                        break label467;
                                     }
 
-                                    var16 = true;
+                                    var16 = (Lv4_2)(true);
                                     if (var2 == null) {
                                        break label467;
                                     }
                                  }
 
-                                 var10011 = (Object[])var15;
+                                 var10011 = (Integer)((Object[])var15);
                                  var10012 = Registry.lookupField(243306902745055487L).getInt(null);
                               }
 
                               if (var2 == null) {
                                  if (var10011 == var10012) {
-                                    var10011 = var117;
+                                    var10011 = (Integer)(var117);
                                     Object[] var151 = Registry.emptyArgs();
                                     long var78 = 380415140795833934L;
                                     Object[] var77 = var151;
@@ -5942,19 +5942,19 @@ var118 = new HashMap(var10019);
                                        break label467;
                                     }
 
-                                    var16 = true;
+                                    var16 = (Lv4_2)(true);
                                     if (var2 == null) {
                                        break label467;
                                     }
                                  }
 
-                                 var10011 = (Object[])var15;
+                                 var10011 = (Integer)((Object[])var15);
                                  var10012 = Registry.lookupField(346595405273673113L).getInt(null);
                               }
 
                               if (var2 == null) {
                                  if (var10011 == var10012) {
-                                    var10011 = var14.toLowerCase();
+                                    var10011 = (Integer)(var14.toLowerCase());
                                     Object var81 = 119358758450406151L;
                                     boolean var154 = this.contains((String)Ref.g(119358758450406151L, var81));
                                     if (var2 != null) {
@@ -5965,19 +5965,19 @@ var118 = new HashMap(var10019);
                                        break label467;
                                     }
 
-                                    var16 = true;
+                                    var16 = (Lv4_2)(true);
                                     if (var2 == null) {
                                        break label467;
                                     }
                                  }
 
-                                 var10011 = (Object[])var15;
+                                 var10011 = (Integer)((Object[])var15);
                                  var10012 = Registry.lookupField(238917600523772047L).getInt(null);
                               }
 
                               if (var2 == null) {
                                  if (var10011 == var10012) {
-                                    var10011 = var117;
+                                    var10011 = (Integer)(var117);
                                     Object[] var155 = Registry.emptyArgs();
                                     long var84 = 218711337515318169L;
                                     Object[] var83 = var155;
@@ -6000,13 +6000,13 @@ var118 = new HashMap(var10019);
                                        break label467;
                                     }
 
-                                    var16 = true;
+                                    var16 = (Lv4_2)(true);
                                     if (var2 == null) {
                                        break label467;
                                     }
                                  }
 
-                                 var10011 = (Object[])var15;
+                                 var10011 = (Integer)((Object[])var15);
                                  if (var2 != null) {
                                     break label380;
                                  }
@@ -6015,7 +6015,7 @@ var118 = new HashMap(var10019);
                               }
 
                               if (var10011 == var10012) {
-                                 var10011 = var117;
+                                 var10011 = (Integer)(var117);
                                  Object[] var158 = Registry.emptyArgs();
                                  long var88 = 255973732097233937L;
                                  Object[] var87 = var158;
@@ -6035,12 +6035,12 @@ var118 = new HashMap(var10019);
                                  }
 
                                  if (var164) {
-                                    var16 = true;
+                                    var16 = (Lv4_2)(true);
                                  }
                               }
                            }
 
-                           var10011 = var16;
+                           var10011 = (Integer)(var16);
                         }
 
                         if (var2 == null && var10011 == null) {

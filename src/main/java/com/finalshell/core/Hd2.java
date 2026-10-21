@@ -229,7 +229,7 @@ public abstract class Hd2 implements C_f_2 {
          var18 = var12 == null ? H : var12;
       }
 
-      return var18;
+      return (HP_2[])(var18);
    }
 
    public final HP_2[] w() throws B2_5 {
@@ -616,7 +616,7 @@ public abstract class Hd2 implements C_f_2 {
 
    public final U3_3[] y() {
       Collection var1 = this.V$Map().values();
-      return var1.toArray(new U3_3[var1.size()]);
+      return (U3_3[])(var1.toArray(new U3_3[var1.size()]));
    }
 
    public Map V$Map() {
@@ -652,7 +652,7 @@ public abstract class Hd2 implements C_f_2 {
             }
          }
 
-         var8 = this.R = var3;
+         var8 = (LinkedHashMap)(this.R = var3);
          break;
       }
 

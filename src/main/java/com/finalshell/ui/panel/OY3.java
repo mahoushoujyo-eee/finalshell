@@ -621,7 +621,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       }
 
       int var3 = var10000;
-      var4 = this.T$Point();
+      var4 = (int)(this.T$Point());
       Point var5 = this.J();
       float var6 = (float)this.O$int();
       var10000 = var3;

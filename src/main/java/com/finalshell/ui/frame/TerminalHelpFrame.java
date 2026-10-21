@@ -71,7 +71,7 @@ public class TerminalHelpFrame extends JFrame {
          throw var17.getTargetException();
       }
 
-var10007 = new Q7(var10008, !var20);
+var10007 = (TerminalHelpFrame)(new Q7(var10008, !var20));
       Object[] var4 = var10006;
       var2.add(var4, a(-30866, -5189));
       var4.addActionListener(new Q7(this, var4));

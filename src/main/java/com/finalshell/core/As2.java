@@ -112,7 +112,7 @@ public class As2 extends AO_2 {
                   return;
                }
 
-               var12 = this;
+               var12 = (ImageIcon)(this);
                if (!var7) {
                   break label61;
                }

@@ -66,7 +66,7 @@ public class UB3 implements KeyListener {
                         if (Registry.lookupField(312620352076276408L).getInt(var50) == a(12946, 2137176971674416974L)) {
                            System.currentTimeMillis();
                            Object var13 = 614438461152141123L;
-                           long var5 = this - Registry.lookupField(573885833107561009L).getLong(Ref.g(614438461152141123L, var13));
+                           long var5 = 0 - Registry.lookupField(573885833107561009L).getLong(Ref.g(614438461152141123L, var13));
                            if (var5 < c) {
                               Object var15 = 507290872213626229L;
                               ((SetBackgroundImagePanel)Ref.g(507290872213626229L, var15)).X$_y_2().O$pA_3().requestFocus();

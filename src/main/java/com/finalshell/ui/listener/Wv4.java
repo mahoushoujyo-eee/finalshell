@@ -189,7 +189,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
          }
 
          label55: {
-            var11 = var6;
+            var11 = (Icon)(var6);
             if (var3) {
                if (var6 == null) {
                   break label55;

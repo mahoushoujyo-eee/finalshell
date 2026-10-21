@@ -9838,7 +9838,7 @@ public class H3_2 {
       label21: {
          label20: {
             try {
-               var6 = var1;
+               var6 = (String[])(var1);
                if (var3 == null) {
                   break label21;
                }
@@ -9853,7 +9853,7 @@ public class H3_2 {
             var4 = this.n(var1.p, var2);
          }
 
-         var6 = var1;
+         var6 = (String[])(var1);
       }
 
       var6.H = var4;

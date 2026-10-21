@@ -34,7 +34,7 @@ public class X_6 extends U2_3 {
 
    @C_9
    public N_6 I(String var1, byte[] var2) {
-      return this.M.put(var1, new P2_4(this, var2, var1));
+      return (N_6)(this.M.put(var1, new P2_4(this, var2, var1)));
    }
 
    @C_9
@@ -43,7 +43,7 @@ public class X_6 extends U2_3 {
    }
 
    public N_6 O(N_6 var1) {
-      return this.M.put(var1.o$String(), var1);
+      return (N_6)(this.M.put(var1.o$String(), var1));
    }
 
    public Collection q() {

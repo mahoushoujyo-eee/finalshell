@@ -11,7 +11,7 @@ public int compareTo(Enum o) {
    public static On4 MOUSE_FORMAT_XTERM;
 
    public static On4[] values() {
-      return (On4[])G.clone();
+      return (On4[])com.finalshell.reflect.Ref.cloneObject(G);
    }
 
    public static On4 valueOf(String var0) {
@@ -146,6 +146,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object G;
 }
 
 

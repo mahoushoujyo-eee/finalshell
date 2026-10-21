@@ -61,7 +61,7 @@ public class Gb2 implements ActionListener {
                break label45;
             }
 
-            var10006 = var5;
+            var10006 = (String)(var5);
             Object[] var10007 = Registry.emptyArgs();
             long var19 = 564648154927582737L;
             Object[] var18 = var10007;

@@ -155,7 +155,7 @@ public abstract class QR {
       try {
          NE3.n(this, a(11221, 12226) + Cz2.m(var1), new Object[0]);
          this.r = new ArrayList();
-         var10000 = this;
+         var10000 = (Ky4[])(this);
          if (var2 == null) {
             if (this.z(var1)) {
                this.r();
@@ -1713,11 +1713,11 @@ public abstract class QR {
             }
 
             label36: {
-               var10 = var9.w();
+               var10 = (boolean)(var9.w());
                label35:
                if (var3 == null) {
                   if (var10 == null) {
-                     var10 = var4.w();
+                     var10 = (boolean)(var4.w());
                      if (var3 != null) {
                         break label35;
                      }
@@ -1727,7 +1727,7 @@ public abstract class QR {
                      }
                   }
 
-                  var10 = var7.w();
+                  var10 = (boolean)(var7.w());
                }
 
                if (!var10.a(var4.w())) {

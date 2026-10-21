@@ -64,7 +64,7 @@ public class ZX_2 {
 
       do {
          Object var5 = 534533505321913417L;
-         if (!(this < ((String)Ref.g(534533505321913417L, var5)).length())) {
+         if (!(0 < ((String)Ref.g(534533505321913417L, var5)).length())) {
             break;
          }
 
@@ -74,7 +74,7 @@ public class ZX_2 {
                if (var2 == null) {
                   Object var7 = 146154677724726531L;
                   ((ArrayList)Ref.g(146154677724726531L, var7)).add(var3);
-                  var2 = false;
+                  var2 = (ZX_2)(false);
                   if (var1 != null) {
                      break label48;
                   }
@@ -89,7 +89,7 @@ public class ZX_2 {
             var10001 = var4;
             if (var1 != null) {
                if (var4 == a(31120, 8152296831967166228L)) {
-                  var2 = true;
+                  var2 = (ZX_2)(true);
                   Object[] var10002 = Registry.packArgs(var3);
                   long var12 = 196196524577674886L;
                   Object[] var11 = var10002;
@@ -106,7 +106,7 @@ public class ZX_2 {
                   }
                }
 
-               var10001 = false;
+               var10001 = (ZX_2)(false);
             }
 
             var2 = var10001;

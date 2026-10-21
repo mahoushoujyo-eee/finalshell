@@ -65,7 +65,7 @@ public abstract class Ej4 implements Wt2_2 {
       var1[0] = (byte)(var1[0] & a(1944, 6895148760205822032L));
       BigInteger var4 = new BigInteger(var1);
       NamedParameterSpec var5 = new NamedParameterSpec(this.I());
-      var6 = (new EdECPublicKeySpec(var5, new EdECPoint(var3, var4))) != 0;
+      var6 = (((new EdECPublicKeySpec(var5, new EdECPoint(var3, var4))) != 0) != 0);
       PublicKey var7 = this.d.generatePublic(var6);
       this.v.initVerify(var7);
    }

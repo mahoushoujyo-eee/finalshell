@@ -1331,7 +1331,7 @@ public class Cf2 {
          throw var14.getTargetException();
       }
 
-      String var3 = var10001.append((String)var10002).append(a(11851, -26114)).toString();
+      String var3 = ((java.lang.StringBuilder)var10001).append((String)var10002).append(a(11851, -26114)).toString();
       new StringBuilder().append(a(11846, -3882));
       Object[] var10003 = Registry.packArgs(
          a(31289, 2273142890505424550L) + ((Random)Registry.lookupField(627307116923973904L).get(null)).nextInt(a(21049, 3191785575528982181L))
@@ -1345,7 +1345,7 @@ public class Cf2 {
          throw var13.getTargetException();
       }
 
-      StringBuilder var16 = var10003.append((String)var10004).append(".");
+      StringBuilder var16 = ((java.lang.StringBuilder)var10003).append((String)var10004).append(".");
       var10004 = Registry.packArgs(2 + ((Random)Registry.lookupField(627307116923973904L).get(null)).nextInt(5));
       long var10 = 464590328393221700L;
       Object var10005 = Ref.h2(464590328393221700L, var10);
@@ -1356,7 +1356,7 @@ public class Cf2 {
          throw var12.getTargetException();
       }
 
-      var16.append(var10004.append((String)var10005).append(a(11844, 14077)).toString());
+      var16.append(((java.lang.StringBuilder)var10004).append((String)var10005).append(a(11844, 14077)).toString());
       var2.append(a(11862, -4852));
       int var17 = BS.t();
       var2.append(a(11865, 316));

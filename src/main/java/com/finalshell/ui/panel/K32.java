@@ -213,7 +213,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
                break label25;
             }
 
-            var4 = this.M;
+            var4 = (K32)(this.M);
          }
 
          if (var4 != null) {
@@ -221,7 +221,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
          }
 
          this.M = this.C(var1, var2);
-         var4 = this.j;
+         var4 = (K32)(this.j);
       }
 
       ((Ky4)var4).add(this.M, b(-73, -20720));
@@ -306,7 +306,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
             }
          }
 
-         var6 = this.M;
+         var6 = (K32)(this.M);
       }
 
       ((O)var6).S(var2);
@@ -504,7 +504,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
                               }
                            }
 
-                           var4 = this.j;
+                           var4 = (K32)(this.j);
                         }
 
                         ((Ky4)var4).add(this.g, this.E == 4 ? b(-80, -11735) : b(-72, 13545));
@@ -544,13 +544,13 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
                   }
                }
 
-               var4 = this.j;
+               var4 = (K32)(this.j);
             }
 
             ((Ky4)var4).remove(this.g);
          }
 
-         var4 = this.j;
+         var4 = (K32)(this.j);
       }
 
       ((Ky4)var4).revalidate();
@@ -585,7 +585,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
             }
          }
 
-         var4 = new O(var2, var1, a(7403, 4557693452061224937L), new Object[0]);
+         var4 = (O6)(new O(var2, var1, a(7403, 4557693452061224937L), new Object[0]));
       }
 
       ((O)var4).D(true);
@@ -1452,7 +1452,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
             return var2;
          }
 
-         var4 = this.Y;
+         var4 = (K32)(this.Y);
       }
 
       Dimension var3 = var4.getPreferredSize();

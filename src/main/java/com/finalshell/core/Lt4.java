@@ -138,13 +138,13 @@ public class Lt4 {
             label90:
             if (var5 == null) {
                Object var25 = 634698459927178616L;
-               if (this == ((Dimension)Ref.g(634698459927178616L, var25)).width) {
+               if (0 == ((Dimension)Ref.g(634698459927178616L, var25)).width) {
                   if (var5 != null) {
                      break label90;
                   }
 
                   Object var27 = 634698459927178616L;
-                  if (this == ((Dimension)Ref.g(634698459927178616L, var27)).height) {
+                  if (0 == ((Dimension)Ref.g(634698459927178616L, var27)).height) {
                      break label91;
                   }
                }

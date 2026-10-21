@@ -12,7 +12,7 @@ public int compareTo(Enum o) {
    public static XP3 atYearEnd;
 
    public static XP3[] values() {
-      return (XP3[])V.clone();
+      return (XP3[])com.finalshell.reflect.Ref.cloneObject(V);
    }
 
    public static XP3 valueOf(String var0) {
@@ -148,6 +148,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object V;
 }
 
 

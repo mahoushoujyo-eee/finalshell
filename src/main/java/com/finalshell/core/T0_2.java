@@ -70,7 +70,7 @@ public class T0_2 extends T4 {
             label67: {
                label66: {
                   if (var3 != 0) {
-                     if (var2 != 0) {
+                     if (var2) {
                         break label66;
                      }
 

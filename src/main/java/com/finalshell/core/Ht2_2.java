@@ -188,7 +188,7 @@ public class Ht2_2 extends Hd2 {
          throw a(var3);
       }
 
-      return var2.toArray(new C_f_2[var2.size()]);
+      return (C_f_2[])(var2.toArray(new C_f_2[var2.size()]));
    }
 
    public C_f_2 F(Z2_4 var1) throws B2_5 {
@@ -427,7 +427,7 @@ public class Ht2_2 extends Hd2 {
          }
       }
 
-      return var3.toArray(new Hd2[var3.size()]);
+      return (Hd2[])(var3.toArray(new Hd2[var3.size()]));
    }
 
    @C_9

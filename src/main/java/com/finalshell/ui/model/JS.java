@@ -305,7 +305,7 @@ public class JS implements Comparator {
                            break label210;
                         }
 
-                        var10006 = var7;
+                        var10006 = (String)(var7);
                         Object[] var10007 = Registry.emptyArgs();
                         long var69 = 577747074549625554L;
                         Object[] var68 = var10007;
@@ -325,7 +325,7 @@ public class JS implements Comparator {
                   return ((Comparator)Ref.g(396791488371189674L, var70)).compare(var4, (String)var6);
                }
 
-               var10002 = true;
+               var10002 = (JS)(true);
             }
 
             return (int)var10002;

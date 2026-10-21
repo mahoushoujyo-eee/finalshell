@@ -55,7 +55,7 @@ public class ProgressDialog extends JDialog {
          throw var22.getTargetException();
       }
 
-      var10009.setFont((Font)var10010);
+      ((javax.swing.JComponent)var10009).setFont((Font)var10010);
       JButton var3 = new JButton(a(-7410, -31338));
       var3.addActionListener(new Ke2(this));
       this.setSize(a(9953, 5721815721997315116L), a(2661, 8046323881064464553L));

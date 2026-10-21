@@ -201,7 +201,7 @@ public class Ct2 implements Comparator {
             }
          }
 
-         var10001 = true;
+         var10001 = (Ct2)(true);
       }
 
       return (int)var10001;

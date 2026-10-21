@@ -277,7 +277,7 @@ public class AM extends JPanel {
 
    public T32 x(int var1) {
       Object var2 = 417119238929760524L;
-      if (this <= ((ArrayList)Ref.g(417119238929760524L, var2)).size()) {
+      if (0 <= ((ArrayList)Ref.g(417119238929760524L, var2)).size()) {
          Object var4 = 417119238929760524L;
          return (T32)((ArrayList)Ref.g(417119238929760524L, var4)).get(var1 - 1);
       } else {
@@ -328,14 +328,14 @@ public class AM extends JPanel {
             var1.setColor(var4);
          }
 
-         var10001 = true;
+         var10001 = (AM)(true);
       }
 
       AM var5 = var10001;
       boolean var17 = Registry.lookupField(579186049990057769L).getBoolean(this);
       if (var2 == null) {
          if (var17) {
-            var5 = false;
+            var5 = (AM)(false);
          }
 
          var17 = Registry.lookupField(196077290577414286L).getBoolean(this);
@@ -894,7 +894,7 @@ public class AM extends JPanel {
          label188:
          if (var5 == null) {
             if (var10002 == null) {
-               var10002 = this;
+               var10002 = (Boolean)(this);
                Object var16 = 417119238929760524L;
                int var10003 = ((ArrayList)Ref.g(417119238929760524L, var16)).size();
                if (var5 != null) {
@@ -905,7 +905,7 @@ public class AM extends JPanel {
                if (var10003 > 1) {
                   if (var5 == null) {
                      Object var18 = 417119238929760524L;
-                     if (this == ((ArrayList)Ref.g(417119238929760524L, var18)).size() - 1) {
+                     if (0 == ((ArrayList)Ref.g(417119238929760524L, var18)).size() - 1) {
                         var7 = var8 - 1;
                         if (var5 == null) {
                            break label184;
@@ -917,7 +917,7 @@ public class AM extends JPanel {
                }
             }
 
-            var10002 = this;
+            var10002 = (Boolean)(this);
             Object var20 = 417119238929760524L;
             ((ArrayList)Ref.g(417119238929760524L, var20)).remove(var1);
             Bq2 var10005 = (Bq2)(Registry.emptyArgs());
@@ -959,7 +959,7 @@ public class AM extends JPanel {
                }
             }
 
-            var10002 = (Object[])var7;
+            var10002 = (Boolean)((Object[])var7);
          }
 
          if (var10002 > -1) {
@@ -1916,7 +1916,7 @@ public class AM extends JPanel {
       int var2 = var10001 + var10002;
       if (var1 == null) {
          Object var5 = 417119238929760524L;
-         if (this > ((ArrayList)Ref.g(417119238929760524L, var5)).size() - 1) {
+         if (0 > ((ArrayList)Ref.g(417119238929760524L, var5)).size() - 1) {
             var2 = 0;
          }
 
@@ -2447,7 +2447,7 @@ public class AM extends JPanel {
 
       do {
          Object var3 = 417119238929760524L;
-         if (!(this < ((ArrayList)Ref.g(417119238929760524L, var3)).size())) {
+         if (!(0 < ((ArrayList)Ref.g(417119238929760524L, var3)).size())) {
             break;
          }
 
@@ -2481,7 +2481,7 @@ public class AM extends JPanel {
 
       do {
          Object var4 = 417119238929760524L;
-         if (!(this < ((ArrayList)Ref.g(417119238929760524L, var4)).size())) {
+         if (!(0 < ((ArrayList)Ref.g(417119238929760524L, var4)).size())) {
             break;
          }
 
@@ -2544,7 +2544,7 @@ public class AM extends JPanel {
          if (var7 < var6) {
             Component var8 = var5[var7];
             if (var2 == null) {
-               var9 = var8.equals(var1);
+               var9 = (int)(var8.equals(var1));
                if (var2 != null) {
                   break;
                }
@@ -2930,7 +2930,7 @@ public class AM extends JPanel {
                   throw var24.getTargetException();
                }
 
-               if (var2 > var10003.getHeight()) {
+               if (var2 > ((javax.swing.JComponent)var10003).getHeight()) {
                   Rectangle var34 = new Rectangle(0, (int)var1.getY(), var2.getWidth(), 5);
                   var2.scrollRectToVisible(var34);
                }
@@ -3102,7 +3102,7 @@ public class AM extends JPanel {
          int var10001 = var1;
          if (var2 == null) {
             Registry.lookupField(579186049990057769L).setBoolean(this, (boolean)var1);
-            if (var1 != 0) {
+            if (var1) {
                Registry.lookupField(388202870823471257L).setInt(this, a(7865, 4720692661393674316L));
                if (var2 == null) {
                   break label23;
@@ -3504,6 +3504,7 @@ public class AM extends JPanel {
          }
       }
    }
+   private static Object var113;
 }
 
 

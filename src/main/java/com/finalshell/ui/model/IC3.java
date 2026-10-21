@@ -10,7 +10,7 @@ public int compareTo(Enum o) {
    public static IC3 fadeOut;
 
    public static IC3[] values() {
-      return (IC3[])H.clone();
+      return (IC3[])com.finalshell.reflect.Ref.cloneObject(H);
    }
 
    public static IC3 valueOf(String var0) {
@@ -119,6 +119,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object H;
 }
 
 

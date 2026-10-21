@@ -313,7 +313,7 @@ public class DS {
          throw var9.getTargetException();
       }
 
-var10004 = new Random((byte[])var10005);
+var10004 = (long)(new Random((byte[])var10005));
       DESKeySpec var3 = var10002;
       SecretKeyFactory var4 = SecretKeyFactory.getInstance(a(-32029, (int)var10002));
       SecretKey var5 = var4.generateSecret(var3);

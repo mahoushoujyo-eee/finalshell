@@ -228,7 +228,7 @@ public final class Xg2 {
             return null;
          }
 
-         var10000 = var1;
+         var10000 = (ImageIcon)(var1);
       }
 
       var9 = ((Object[])var10000).length;
@@ -537,7 +537,7 @@ public final class Xg2 {
 
       while (true) {
          if (var7 < var6) {
-            var10 = var5[var7];
+            var10 = (ImageIcon[])(var5[var7]);
             if (var2 != null) {
                break;
             }
@@ -566,7 +566,7 @@ public final class Xg2 {
             }
          }
 
-         var10 = new ImageIcon(G(var3));
+         var10 = (ImageIcon[])(new ImageIcon(G(var3)));
          break;
       }
 
@@ -2847,7 +2847,7 @@ public final class Xg2 {
                      var6 = new long[15];
                      int var3 = 0;
                      String var4 = "fú\u00adhYéÄ{*üB?·\u008dbêRòÂyÈ´t~\u009c\\ì[F?\u0095}¢ØËc ;¹ò\u009fb];Àg~W\u0094=Ôï£:ÕeVéüx®C²²ã\u0083\u009c÷\u000fTy\u00122æ#×÷¾Ç \u008b¾57+lYË²}ýüÎNþzÙ)=\u0017¬;Ôè";
-                     var5 = "fú\u00adhYéÄ{*üB?·\u008dbêRòÂyÈ´t~\u009c\\ì[F?\u0095}¢ØËc ;¹ò\u009fb];Àg~W\u0094=Ôï£:ÕeVéüx®C²²ã\u0083\u009c÷\u000fTy\u00122æ#×÷¾Ç \u008b¾57+lYË²}ýüÎNþzÙ)=\u0017¬;Ôè";
+                     var5 = (boolean)("fú\u00adhYéÄ{*üB?·\u008dbêRòÂyÈ´t~\u009c\\ì[F?\u0095}¢ØËc ;¹ò\u009fb];Àg~W\u0094=Ôï£:ÕeVéüx®C²²ã\u0083\u009c÷\u000fTy\u00122æ#×÷¾Ç \u008b¾57+lYË²}ýüÎNþzÙ)=\u0017¬;Ôè");
                         // [VF] .length();
                      byte var2 = 0;
 

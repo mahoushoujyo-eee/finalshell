@@ -14,7 +14,7 @@ public int compareTo(Enum o) {
    public static Zo2 nearClass;
 
    public static Zo2[] values() {
-      return (Zo2[])K.clone();
+      return (Zo2[])com.finalshell.reflect.Ref.cloneObject(K);
    }
 
    public static Zo2 valueOf(String var0) {
@@ -123,6 +123,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object K;
 }
 
 

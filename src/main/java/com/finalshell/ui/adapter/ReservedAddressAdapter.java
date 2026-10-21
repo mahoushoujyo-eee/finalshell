@@ -211,7 +211,7 @@ public class ReservedAddressAdapter extends DefaultTableCellRenderer {
                      throw var43.getTargetException();
                   }
 
-                  var16 = var15.append(var69).append("").toString();
+                  var16 = ((java.lang.StringBuilder)var15).append(var69).append("").toString();
                   var9.setHorizontalAlignment(4);
                   if (this != null) {
                      break label204;
@@ -291,7 +291,7 @@ public class ReservedAddressAdapter extends DefaultTableCellRenderer {
          this.setBorder((Border)Ref.g(222484112996747555L, var37));
          int var64 = (var3) ? 1 : 0;
          if (this != null) {
-            if (var3 != 0) {
+            if (var3) {
                var9.setBackground((Color)Registry.lookupField(623875439513009390L).get(null));
                var9.setForeground((Color)Registry.lookupField(513155505692963448L).get(null));
                var9.setOpaque(true);

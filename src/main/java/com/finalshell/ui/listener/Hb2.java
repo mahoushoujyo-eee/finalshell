@@ -105,6 +105,7 @@ public class Hb2 extends MouseMotionAdapter {
       byte var10001 = -1;
       b = var10002;
    }
+   private static Object var4;
 }
 
 

@@ -458,7 +458,7 @@ public class Ug4 extends DefaultTableCellRenderer {
 
       int var124 = (var3) ? 1 : 0;
       if (this != null) {
-         if (var3 != 0) {
+         if (var3) {
             var8.setBackground((Color)Registry.lookupField(623875439513009390L).get(null));
             var8.setForeground((Color)Registry.lookupField(513155505692963448L).get(null));
             var8.setOpaque(true);

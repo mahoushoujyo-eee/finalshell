@@ -46,6 +46,7 @@ public class I72 extends MouseAdapter {
 
       var3.v(KD3.E(this.Y).N());
    }
+   private static Object var3;
 }
 
 

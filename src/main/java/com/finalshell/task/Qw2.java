@@ -136,7 +136,7 @@ public class Qw2 implements Runnable {
 
                if (var7 != null) {
                   Fv2_2 var8 = var7.s$Fv_2();
-                  var10007 = var8;
+                  var10007 = (ConnectionProperty)(var8);
                   if (var1 != null) {
                      break label285;
                   }
@@ -145,7 +145,7 @@ public class Qw2 implements Runnable {
                      int var10012;
                      label307: {
                         label276: {
-                           var10007 = this;
+                           var10007 = (ConnectionProperty)(this);
                            Object var33 = 312999054265392578L;
                            Registry.lookupField(349489007421858747L)
                               .setInt(Ref.g(312999054265392578L, var33), Registry.lookupField(525666349884219254L).getInt(this));
@@ -310,7 +310,7 @@ public class Qw2 implements Runnable {
                }
             }
 
-            var10007 = (Object[])var2;
+            var10007 = (ConnectionProperty)((Object[])var2);
          }
 
          // $VF: monitorexit
@@ -363,6 +363,7 @@ public class Qw2 implements Runnable {
       a = var6;
       b = new Integer[2];
    }
+   private static Object var99;
 }
 
 

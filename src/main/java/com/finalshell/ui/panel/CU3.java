@@ -231,6 +231,7 @@ public class CU3 extends JLabel {
       long var3 = 148570893766943457L;
       Ref.s(148570893766943457L, var1, var3);
    }
+   private static int var37;
 }
 
 

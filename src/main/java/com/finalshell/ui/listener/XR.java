@@ -53,6 +53,7 @@ public class XR extends KeyAdapter {
          }
       }
    }
+   private static Object var7;
 }
 
 

@@ -40,7 +40,7 @@ public class Ap2_2 {
       String[] var4 = var10000;
       byte var8 = (byte)((var3) ? 1 : 0);
       if (var4 == null) {
-         if (var3 != 0) {
+         if (var3) {
             var5 = 2;
          }
 

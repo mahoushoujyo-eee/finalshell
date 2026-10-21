@@ -136,7 +136,7 @@ public class CV3 implements Gq2, Hs2 {
       while (true) {
          if (var9 < var7) {
             String var10 = var4[var9];
-            var11 = var8;
+            var11 = (String)(var8);
             if (var6 != null) {
                break;
             }
@@ -148,11 +148,11 @@ public class CV3 implements Gq2, Hs2 {
             }
          }
 
-         var11 = var8;
+         var11 = (String)(var8);
          break;
       }
 
-      return var11;
+      return (String[])(var11);
    }
 
    static {

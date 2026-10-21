@@ -11,7 +11,7 @@ public int compareTo(Enum o) {
    public static I3 both;
 
    public static I3[] values() {
-      return (I3[])M.clone();
+      return (I3[])com.finalshell.reflect.Ref.cloneObject(M);
    }
 
    public static I3 valueOf(String var0) {
@@ -146,6 +146,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object M;
 }
 
 

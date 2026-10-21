@@ -20,13 +20,13 @@ public class Hu2 implements Runnable {
       String[] var10000 = com.finalshell.core.BX.B$arrString();
       Hd2 var2 = this.N.D();
       String[] var1 = var10000;
-      var10000 = var2;
+      var10000 = (String[])(var2);
       if (var1 == null) {
          if (FN.l((Component)var2)) {
             return;
          }
 
-         var10000 = var2.getSelectedComponent();
+         var10000 = (String[])(var2.getSelectedComponent());
       }
 
       label32: {

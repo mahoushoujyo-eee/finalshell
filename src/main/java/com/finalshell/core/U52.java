@@ -151,7 +151,7 @@ public class U52 {
 
          label42: {
             try {
-               var10000 = var6 instanceof IOException;
+               var10000 = (String[])(var6 instanceof IOException);
                if (var3 != null) {
                   break label42;
                }
@@ -164,7 +164,7 @@ public class U52 {
             }
 
             try {
-               var10000 = var5.getUri().getHost();
+               var10000 = (String[])(var5.getUri().getHost());
                Object var16 = 623538750367053717L;
                this.equals((String)Ref.g(623538750367053717L, var16));
             } catch (URISyntaxException var19) {

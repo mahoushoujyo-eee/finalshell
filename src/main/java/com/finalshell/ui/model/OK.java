@@ -10,7 +10,7 @@ public int compareTo(Enum o) {
    public static OK belowLine;
 
    public static OK[] values() {
-      return (OK[])e.clone();
+      return (OK[])com.finalshell.reflect.Ref.cloneObject(e);
    }
 
    public static OK valueOf(String var0) {
@@ -119,6 +119,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object e;
 }
 
 

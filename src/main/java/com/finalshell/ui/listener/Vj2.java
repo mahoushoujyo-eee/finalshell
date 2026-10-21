@@ -166,13 +166,13 @@ public class Vj2 implements ActionListener {
                         }
 
                         label233: {
-                           var10017 = var4;
+                           var10017 = (T32)(var4);
                            if (var2 == null) {
                               if (var4 != null) {
                                  break label233;
                               }
 
-                              var10017 = var7;
+                              var10017 = (T32)(var7);
                               Object[] var105 = Registry.emptyArgs();
                               long var52 = 194560825135347400L;
                               Object[] var51 = var105;
@@ -190,13 +190,13 @@ public class Vj2 implements ActionListener {
                            }
 
                            Object var9 = var10017;
-                           var10017 = (Object[])var9;
+                           var10017 = (T32)((Object[])var9);
                            if (var2 == null) {
                               if (var9 == null) {
                                  break label233;
                               }
 
-                              var10017 = (Object[])var9;
+                              var10017 = (T32)((Object[])var9);
                            }
 
                            label235: {
@@ -221,7 +221,7 @@ public class Vj2 implements ActionListener {
                                     }
                                  }
 
-                                 var10017 = (Object[])var9;
+                                 var10017 = (T32)((Object[])var9);
                                  if (var2 != null) {
                                     break label235;
                                  }
@@ -233,7 +233,7 @@ public class Vj2 implements ActionListener {
                                  break label233;
                               }
 
-                              var10017 = (Object[])var9;
+                              var10017 = (T32)((Object[])var9);
                            }
 
                            CE var87 = (CE)var10017;

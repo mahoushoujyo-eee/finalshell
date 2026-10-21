@@ -412,7 +412,7 @@ public class Wl4 implements Ak2, X4 {
 
                                                    while (var16 < var15.length) {
                                                       label96: {
-                                                         var10000 = var15[var16];
+                                                         var10000 = (String)(var15[var16]);
                                                          if (var4 != null) {
                                                             var26 = var10000.getName().equals(var10.getName());
                                                             if (var4 == null) {
@@ -423,7 +423,7 @@ public class Wl4 implements Ak2, X4 {
                                                                break label96;
                                                             }
 
-                                                            var10000 = var12.getActualTypeArguments()[var16];
+                                                            var10000 = (String)(var12.getActualTypeArguments()[var16]);
                                                          }
 
                                                          var14 = var10000;
@@ -451,7 +451,7 @@ public class Wl4 implements Ak2, X4 {
                                              var10000 = (String)var14;
                                           }
 
-                                          var7 = (java.lang.Class)var10000;
+                                          var7 = (Class)((java.lang.Class)var10000);
                                           if (var4 != null) {
                                              break label109;
                                           }
@@ -479,7 +479,7 @@ public class Wl4 implements Ak2, X4 {
                         var10000 = (String)var8;
                      }
 
-                     var7 = B8_2.x(var10000);
+                     var7 = (Type)(B8_2.x(var10000));
                   }
 
                   if (var4 != null) {
@@ -585,7 +585,7 @@ public class Wl4 implements Ak2, X4 {
                                  }
                               }
 
-                              var18 = this.x(var1, var2, (Oc2)var8);
+                              var18 = (Class)(this.x(var1, var2, (Oc2)var8));
                            }
 
                            var15 = var18;

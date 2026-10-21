@@ -91,7 +91,7 @@ public class C7 {
                            }
                         }
 
-                        var40 = var6.startsWith("d");
+                        var40 = (long)(var6.startsWith("d"));
                      }
 
                      if (var1 != null && var40 != 0) {
@@ -113,11 +113,11 @@ public class C7 {
          break;
       }
 
-      var5 = var39;
+      var5 = (int)(var39);
 
       do {
          Object var16 = 542680837339050651L;
-         if (!(this < ((ArrayList)Ref.g(542680837339050651L, var16)).size())) {
+         if (!(0 < ((ArrayList)Ref.g(542680837339050651L, var16)).size())) {
             break;
          }
 
@@ -1060,6 +1060,7 @@ public class C7 {
          var1 = var2.charAt(var0);
       }
    }
+   private static Object var39;
 }
 
 

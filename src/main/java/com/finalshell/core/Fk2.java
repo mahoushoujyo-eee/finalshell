@@ -164,7 +164,7 @@ public final class Fk2 {
          )
          - 1;
       ArrayList var4 = new ArrayList();
-      var5 = null;
+      var5 = (boolean)(null);
 
       for (int var7 = 1; var7 < var3; var7++) {
          int var8;
@@ -187,7 +187,7 @@ public final class Fk2 {
 
          boolean var6 = var8 != Color.BLACK.getRGB();
          if (var5 == null) {
-            var5 = new EZ(var7 - 1, var7 - 1, var6);
+            var5 = (boolean)(new EZ(var7 - 1, var7 - 1, var6));
          } else if (var6 == var5.C()) {
             var5.T(var7 - 1);
          } else if (var6 != var5.C()) {
@@ -195,7 +195,7 @@ public final class Fk2 {
                var4.add(var5);
             }
 
-            var5 = new EZ(var7 - 1, var7 - 1, var6);
+            var5 = (boolean)(new EZ(var7 - 1, var7 - 1, var6));
          }
       }
 

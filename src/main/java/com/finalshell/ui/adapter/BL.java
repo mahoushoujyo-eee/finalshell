@@ -133,7 +133,7 @@ public class BL extends DefaultTableCellRenderer {
                         throw var52.getTargetException();
                      }
 
-                     var10004.append((String)var10005).append("/");
+                     ((java.lang.StringBuilder)var10004).append((String)var10005).append("/");
                      Object var10006 = Registry.emptyArgs();
                      long var24 = 399113218510016089L;
                      Object var23 = var10006;
@@ -155,7 +155,7 @@ public class BL extends DefaultTableCellRenderer {
                         throw var50.getTargetException();
                      }
 
-                     var11 = var10006.append((String)var10007).toString();
+                     var11 = ((java.lang.StringBuilder)var10006).append((String)var10007).toString();
                      var8.setHorizontalAlignment(4);
                      var10007 = Registry.packArgs(true);
                      long var28 = 630219014051795833L;
@@ -275,7 +275,7 @@ public class BL extends DefaultTableCellRenderer {
 
       int var74 = (var3) ? 1 : 0;
       if (var7) {
-         if (var3 != 0) {
+         if (var3) {
             var8.setBackground((Color)Registry.lookupField(623875439513009390L).get(null));
             var8.setForeground((Color)Registry.lookupField(513155505692963448L).get(null));
             var8.setOpaque(true);

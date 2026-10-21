@@ -2,7 +2,7 @@
 
 从混淆过的 `finalshell.jar` 逆向重建的 Java 17 / Maven 源码工程：第三方依赖按原包字节切出打进 `lib/`，自研代码先在**字节码层**修掉混淆器制造的结构性破坏，再用 Vineflower 反编译 + 文本级修复器落成 5387 个 `.java` 文件。
 
-> **当前状态（2026-10-21）**：**尚未编译通过**。干净树全量 `javac` 仍有 **7,118 个错误 / 1,332 个文件**。
+> **当前状态（2026-10-21）**：**尚未编译通过**。干净树全量 `javac` 仍有 **6,268 个错误 / 1,286 个文件**。
 > 本轮已把「Round 40 = 0」证伪为语法门禁假象，详见 [docs/HANDOFF.md](docs/HANDOFF.md) §1。
 > 重建目标是**可编译、读得懂、改得动**；成员名仍是混淆的，剩余错误集中在类型恢复长尾。
 
@@ -34,12 +34,12 @@
 | `5368` | 语义改名表条目数 | `Get-Content tables\class-rename-kind.tsv -Encoding UTF8 \| Measure-Object -Line` （减 1 行表头） |
 | `28441` | 已解出的字符串明文条数 | `Get-Content tables-lit\strings.tsv -Encoding UTF8 \| Measure-Object -Line` （减 1 行表头） |
 | `39761` | 已解出的数值常量条数 | `Get-Content tables-lit\numbers.tsv -Encoding UTF8 \| Measure-Object -Line` （减 1 行表头） |
-| `7118` / `1332` | 解除 javac 100 条错误上限后的**真实**错误数 / 涉及文件数 | `mvn -s maven-settings.xml compile 2>&1 \| Tee-Object javac.log`，再 `Select-String javac.log -Pattern 'error:' \| Measure-Object` 与 `… -Pattern '^\S+\.java:\d+: error'` |
+| `6268` / `1286` | 解除 javac 100 条错误上限后的**真实**错误数 / 涉及文件数 | `mvn -s maven-settings.xml compile 2>&1 \| Tee-Object javac.log`，再 `Select-String javac.log -Pattern 'error:' \| Measure-Object` 与 `… -Pattern '^\S+\.java:\d+: error'` |
 | `3323` / `764` | 反编译不出方法体的占位数 / 涉及文件数 | `Select-String -Path src\main\java\*.java -Pattern 'decompilation failed \(Vineflower\)' -Recurse \| Measure-Object`；文件数去重后统计 |
 | `8274` | 已折叠成辅助调用的反射调用点数 | `Select-String -Path src\main\java\*.java -Pattern 'Ref\.h2?\(' -Recurse \| Measure-Object` |
 | `171` | 仓库体积（不含 `.git`，MiB） | `'{0:N0}' -f ((Get-ChildItem . -Recurse -File -Force \| Where-Object { $_.FullName -notlike '*\.git\*' } \| Measure-Object -Property Length -Sum).Sum / 1MB)` |
 | `com.finalshell.core.St_2` | 可执行 jar 的入口类 | `Select-String pom.xml -Pattern 'mainClass'` —— **注意：当前 pom 里还是 `st`，而新树里已经没有 `st` 这个类了（`com.finalshell.core.ST` 是抽象类，不能当入口）。必须由构建方确认真实入口类后再填，并同步改 `pom.xml`** |
-| `(本地工作区，未推送)` | 本次同步对应的提交号 | `git log --oneline -1` |
+| `{{HEAD_COMMIT}}` | 本次同步对应的提交号 | `git log --oneline -1` |
 
 > **统计口径提醒**：仓库启用了 `core.autocrlf=true`，`.java` / `.tsv` 等文本文件在工作区是 CRLF、索引里是 LF。
 > 因此任何"按文件大小"的比较都会把**只有换行符差异**的文件判成"已修改"。统计"改了多少文件"时，
@@ -178,7 +178,7 @@ mvn -s maven-settings.xml compile
 * 用 `tools/FixVineflower.java` 修 Vineflower 的 6 类输出缺陷（假枚举降级、构造器生成、不可反编译方法体占位、孤立转型等）。
 * 用 `tools/FixTree.java` 做**错误驱动修复**：读 `javac -Xmaxerrs 100000` 的完整日志，按错误类别定点修补，迭代到不动点。
 
-> `javac` 默认只报前 100 条错误，会让人误以为「只差一点」。当前实测真实错误数是 **7,118 个错误 / 1,332 个文件**。
+> `javac` 默认只报前 100 条错误，会让人误以为「只差一点」。当前实测真实错误数是 **6,268 个错误 / 1,286 个文件**。
 > **注意**：曾出现的「只剩 1 个错误」是语法门禁关闭了类型检查造成的假象；修掉那个语法错后立刻暴露 10,245 个类型错误，详见 `docs/HANDOFF.md` §1。
 
 ### 复现流水线

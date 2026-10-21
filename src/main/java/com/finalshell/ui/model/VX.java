@@ -212,7 +212,7 @@ public class VX extends AbstractTableModel {
 
       do {
          Object var21 = 563076254564406524L;
-         if (!(this < ((ArrayList)Ref.g(563076254564406524L, var21)).size())) {
+         if (!(0 < ((ArrayList)Ref.g(563076254564406524L, var21)).size())) {
             break;
          }
 

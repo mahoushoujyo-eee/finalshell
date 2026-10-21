@@ -21,7 +21,7 @@ public int compareTo(Enum o) {
    public static Integer[] b;
 
    public static YH[] values() {
-      return (YH[])i.clone();
+      return (YH[])com.finalshell.reflect.Ref.cloneObject(i);
    }
 
    public static YH valueOf(String var0) {
@@ -236,6 +236,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object i;
 }
 
 

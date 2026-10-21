@@ -1349,6 +1349,7 @@ var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32)
          }
       }
    }
+   private static Object var47;
 }
 
 

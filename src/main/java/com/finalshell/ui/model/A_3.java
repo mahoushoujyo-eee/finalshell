@@ -9,7 +9,7 @@ public int compareTo(Enum o) {
    public static A_3 AND;
 
    public static A_3[] values() {
-      return (A_3[])Y.clone();
+      return (A_3[])com.finalshell.reflect.Ref.cloneObject(Y);
    }
 
    public static A_3 valueOf(String var0) {
@@ -117,6 +117,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object Y;
 }
 
 

@@ -85,7 +85,7 @@ public class Q3 implements ListCellRenderer {
                var8 = (Color)var2;
             }
 
-            var8 = var8.toString();
+            var8 = (Color)(var8.toString());
             if (var6 == null) {
                if (var8.equals("")) {
                   break label55;
@@ -1042,6 +1042,7 @@ public class Q3 implements ListCellRenderer {
          var1 = var2.charAt(var0);
       }
    }
+   private static Object var11;
 }
 
 

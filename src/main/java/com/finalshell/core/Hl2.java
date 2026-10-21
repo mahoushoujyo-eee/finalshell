@@ -804,7 +804,7 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
                      var17 = GO.r;
                   }
 
-                  var6 = var17;
+                  var6 = (Color)(var17);
                   if (var2) {
                      break label142;
                   }
@@ -901,7 +901,7 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
                         var19 = var7.x;
                      }
 
-                     var11 = var19;
+                     var11 = (int)(var19);
                      if (var2) {
                         break label178;
                      }
@@ -1941,6 +1941,9 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
          }
       }
    }
+   private static Object var19;
+   private static Object var17;
+   private static Object right;
 }
 
 

@@ -68,7 +68,7 @@ public class PortMapping {
             Exception var43;
             StringBuilder var47 = new StringBuilder().append(a(-20564, 7141));
             Object var9 = 512189539626964799L;
-var47 = new ArrayList(var1.append((String)Ref.g(512189539626964799L, var9)).append(a(-20562, -3586)).toString());
+var47 = (StringBuilder)(new ArrayList(var1.append((String)Ref.g(512189539626964799L, var9)).append(a(-20562, -3586)).toString()));
             throw var43;
          }
       } catch (IOException var38) {
@@ -90,7 +90,7 @@ var47 = new ArrayList(var1.append((String)Ref.g(512189539626964799L, var9)).appe
             throw var34.getTargetException();
          }
 
-var1 = new ArrayList(var49);
+var1 = (BS)(new ArrayList(var49));
          var2 = var10003;
          Object[] var46 = Registry.packArgs(var2);
          long var14 = 288445759195044409L;
@@ -131,7 +131,7 @@ var1 = new ArrayList(var49);
             throw var31.getTargetException();
          }
 
-var42 = new ArrayList(var1.append(var45).append(a(-20560, -20007)).toString());
+var42 = (StringBuilder)(new ArrayList(var1.append(var45).append(a(-20560, -20007)).toString()));
          throw var10001;
       } finally {
          ;

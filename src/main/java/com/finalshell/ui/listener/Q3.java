@@ -61,7 +61,7 @@ public class Q3 implements ActionListener {
                break label45;
             }
 
-            var10006 = var5;
+            var10006 = (String)(var5);
             Object[] var10007 = Registry.emptyArgs();
             long var19 = 129926512000439480L;
             Object[] var18 = var10007;

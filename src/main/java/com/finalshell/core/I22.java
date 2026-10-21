@@ -1091,7 +1091,7 @@ public class I22 implements Ss2 {
    }
 
    public static ImageIcon W(String var0, ImageIcon var1) {
-      return x.put(var0, var1);
+      return (ImageIcon)(x.put(var0, var1));
    }
 
    public static String l$String(String var0) {
@@ -2875,7 +2875,7 @@ public class I22 implements Ss2 {
                c.put(var0, var4);
             }
 
-            var4.add(var1);
+            ((java.math.BigInteger)var4).add(var1);
             var10 = var3;
          }
 

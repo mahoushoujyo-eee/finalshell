@@ -10,7 +10,7 @@ public int compareTo(Enum o) {
    public static LX separated;
 
    public static LX[] values() {
-      return (LX[])a.clone();
+      return (LX[])com.finalshell.reflect.Ref.cloneObject(a);
    }
 
    public static LX valueOf(String var0) {
@@ -119,6 +119,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object a;
 }
 
 

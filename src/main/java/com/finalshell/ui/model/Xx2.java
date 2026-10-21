@@ -10,7 +10,7 @@ public int compareTo(Enum o) {
    public static Xx2 repeat;
 
    public static Xx2[] values() {
-      return (Xx2[])I.clone();
+      return (Xx2[])com.finalshell.reflect.Ref.cloneObject(I);
    }
 
    public static Xx2 valueOf(String var0) {
@@ -119,6 +119,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object I;
 }
 
 

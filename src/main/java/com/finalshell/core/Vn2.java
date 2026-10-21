@@ -258,6 +258,7 @@ public class Vn2 extends JTable {
          }
       }
    }
+   private static Object var38;
 }
 
 

@@ -727,7 +727,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
             }
          }
 
-         var12 = RV.X(var1);
+         var12 = (O_2)(RV.X(var1));
       }
 
       Object var6;
@@ -817,7 +817,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
             Composite var6;
             label109: {
                label108: {
-                  var6 = (RV.a(var1, var21, var10002)) != 0;
+                  var6 = (((RV.a(var1, var21, var10002)) != 0) != 0);
                   var13 = this.K;
                   if (var5 == null) {
                      if (!this.K) {
@@ -1151,7 +1151,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       int[] var3 = W_2.B$arrint();
       int var10000 = (var2) ? 1 : 0;
       if (var3 == null) {
-         if (var2 == 0) {
+         if (!var2) {
             GeneralPath var7 = new GeneralPath(0);
             boolean var8 = false;
             boolean var6 = false;

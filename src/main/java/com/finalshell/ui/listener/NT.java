@@ -64,6 +64,7 @@ public class NT implements ActionListener {
 
       var3.g.Y();
    }
+   private static Object var10000;
 }
 
 

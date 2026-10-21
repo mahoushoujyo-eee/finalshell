@@ -10,8 +10,8 @@
 | 项 | 值 |
 |---|---|
 | 源码规模 | **5,387** 个 `.java`，16 个 `com.finalshell.*` 语义包（20 个叶包） |
-| 当前 javac 错误 | **7,118** 个，涉及 **1,332** 个文件（`temp\fsbuild\kr1.log`，Xmaxerrs=100000） |
-| 起点 | 32,377 → 本轮从干净组装树重新修复到 7,118 |
+| 当前 javac 错误 | **6,268** 个，涉及 **1,286** 个文件（`temp\fsbuild\ku2.log`，Xmaxerrs=100000） |
+| 起点 | 32,377 → 本轮从干净组装树重新修复到 6,268 |
 | 类名 | **429 / 5,387** 可读（非混淆形态）；本轮应用 **89** 个有证据的语义改名 |
 | 其余类名 | 4,942 个仍是混淆形态，缺少 E1/E2 证据，**不要臆造** |
 | 反射别名 | `RegistryAliases` 1,310 个类映射（改名后已同步） |
@@ -55,6 +55,7 @@ javac 在**存在语法错误**时会跳过类型检查。本轮实测：
    - `fix_simple_errors.py`：`@Override` 失配（169）、无方法体（117）、int→byte（268）；
    - `fix_boolean.py`：boolean/int 互换、`if (int)`、setBoolean 等（约 400 处）；
    - 处理 `new X;`、`.length();` 残留。
+3b. **第二轮长尾修复**：缺失变量字段合成、Object 接收者强转（setText/append/Swing）、`Ref.cloneObject`、boolean 二轮；7,118 → 6,268。
 4. **命名**：
    - 应用 `rename-plan\class-rename-proposal-v2.tsv` 中 88 个高置信改动 + `U → MainFrame`，共 **89** 个；
    - 同步更新文件、构造器、引用、`RegistryAliases`（reflect=1 的 51 个）；

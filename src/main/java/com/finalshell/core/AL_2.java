@@ -237,7 +237,7 @@ public final class AL_2 {
          if (var4.hasNext()) {
             label24: {
                var5 = var4.next();
-               var10000 = var0;
+               var10000 = (String)(var0);
                if (var2 == null) {
                   var7 = var0.contains(var5);
                   if (var2 != null) {

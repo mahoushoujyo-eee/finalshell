@@ -46,7 +46,7 @@ public int compareTo(Enum o) {
    public static Integer[] b;
 
    public static EP[] values() {
-      return (EP[])c.clone();
+      return (EP[])com.finalshell.reflect.Ref.cloneObject(c);
    }
 
    public static EP valueOf(String var0) {
@@ -97,7 +97,7 @@ public int compareTo(Enum o) {
       String var3 = Nv4.o();
       int var10000 = (var2) ? 1 : 0;
       if (var3 != null) {
-         if (var2 != 0) {
+         if (var2) {
             var0 |= var1.mask;
             if (var3 != null) {
                return var0;
@@ -353,6 +353,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object c;
 }
 
 

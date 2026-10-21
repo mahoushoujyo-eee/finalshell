@@ -1850,7 +1850,7 @@ public class Hb2 implements C7_3 {
       String[] var5 = new String[10];
       int var3 = 0;
       String var2 = "'y\u0004\u0017\u0084+q\f\u000f1\u008aT\nS\u009ds[/s¬²\r£\u0084@ý´\b\u0095U6\u001cøcË.\u0003\u001bÜÄ\u0016\u0012ÊYÕ¡\u0005ÿ\u0005P\u000e¾\u0013BÃÿÒ\u0015\u0002½ cV\u0006M\u0007¶\u001aù)\u0013f/Ã\u0097FLP\u0007´\ttZö9G)òU¢\b\\\u008b\u000fÇß\u0018/A";
-      var4 = "'y\u0004\u0017\u0084+q\f\u000f1\u008aT\nS\u009ds[/s¬²\r£\u0084@ý´\b\u0095U6\u001cøcË.\u0003\u001bÜÄ\u0016\u0012ÊYÕ¡\u0005ÿ\u0005P\u000e¾\u0013BÃÿÒ\u0015\u0002½ cV\u0006M\u0007¶\u001aù)\u0013f/Ã\u0097FLP\u0007´\ttZö9G)òU¢\b\\\u008b\u000fÇß\u0018/A";
+      var4 = (boolean)("'y\u0004\u0017\u0084+q\f\u000f1\u008aT\nS\u009ds[/s¬²\r£\u0084@ý´\b\u0095U6\u001cøcË.\u0003\u001bÜÄ\u0016\u0012ÊYÕ¡\u0005ÿ\u0005P\u000e¾\u0013BÃÿÒ\u0015\u0002½ cV\u0006M\u0007¶\u001aù)\u0013f/Ã\u0097FLP\u0007´\ttZö9G)òU¢\b\\\u008b\u000fÇß\u0018/A");
          // [VF] .length();
       char var1 = 3;
       int var8 = -1;
@@ -1953,7 +1953,7 @@ public class Hb2 implements C7_3 {
                   }
 
                   var2 = "Õ%\u009aUJçMë\u0003#)GüÌÌ\u0013LHDõ³\u0017\u009eÂÂÁ\u0089xª\u008dþ\u0098óúfî$d¨ä\u0010IÆ´\u0094";
-                  var4 = "Õ%\u009aUJçMë\u0003#)GüÌÌ\u0013LHDõ³\u0017\u009eÂÂÁ\u0089xª\u008dþ\u0098óúfî$d¨ä\u0010IÆ´\u0094".length();
+                  var4 = (("Õ%\u009aUJçMë\u0003#)GüÌÌ\u0013LHDõ³\u0017\u009eÂÂÁ\u0089xª\u008dþ\u0098óúfî$d¨ä\u0010IÆ´\u0094".length()) != 0);
                   var1 = 21;
                   var8 = -1;
             }

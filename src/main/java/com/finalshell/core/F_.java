@@ -29,7 +29,7 @@ public class F_ extends An2 implements SwingConstants {
       Ky4[] var1 = var10000;
 
       try {
-         var10000 = this.i;
+         var10000 = (Ky4[])(this.i);
          if (var1 == null) {
             if (this.i.size() > 0) {
                Rectangle var3;

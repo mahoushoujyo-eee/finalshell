@@ -54,6 +54,7 @@ public class FH3 implements Runnable {
       byte var10001 = -1;
       a = var10002;
    }
+   private static Object G;
 }
 
 

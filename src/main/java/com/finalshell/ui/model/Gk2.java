@@ -43,7 +43,7 @@ public class Gk2 extends AbstractTableModel {
       int var10002 = (var1) ? 1 : 0;
       if (!var2) {
          Registry.lookupField(370248853974917727L).setBoolean(this, (boolean)var1);
-         if (var1 == 0) {
+         if (!var1) {
             var9 = new String[a(9105, 778820718585847637L)];
             var9[0] = (String)Registry.lookupField(261433743018117933L).get(null);
             var9[1] = (String)Registry.lookupField(572421534966713491L).get(null);
@@ -149,7 +149,7 @@ public class Gk2 extends AbstractTableModel {
             throw var10.getTargetException();
          }
 
-         if (var12 == var1 && var2 == null || var2 == false) {
+         if (var12 == var1 && var2 == null || var2 == 0) {
             break;
          }
       }

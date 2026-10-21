@@ -77,7 +77,7 @@ public class Sd2 {
       label100: {
          var12 = var17 - var19;
          Object var13 = null;
-         var14 = (0) ? 1 : 0;
+         var14 = (((0) ? 1 : 0) != 0);
          int var18 = Registry.lookupField(280429622358205740L).getBoolean(null);
          if (var5 != null) {
             if (var18 == 0) {
@@ -300,11 +300,11 @@ public class Sd2 {
                            break label55;
                         }
 
-                        var10001 = (var0[var6]) ? 1 : 0;
-                        var10002 = var3;
+                        var10001 = (((var0[var6]) ? 1 : 0) != 0);
+                        var10002 = (int)(var3);
                      }
 
-                     var8 = U(var10001, var10002);
+                     var8 = ((U(var10001, var10002)) != 0);
                      if (var4 != null) {
                         if (var8 == 0) {
                            break label55;
@@ -515,7 +515,7 @@ public class Sd2 {
                   }
                }
 
-               var10000 = var1;
+               var10000 = (int)(var1);
             }
 
             label191:

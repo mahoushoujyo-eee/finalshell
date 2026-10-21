@@ -51,7 +51,7 @@ public class LU3 implements ActionListener {
          var10000.invalidate();
       }
 
-      var3.repaint();
+      ((javax.swing.JComponent)var3).repaint();
       Cl4_2.A(a, D12.Y(this.K), false);
       D12.S(this.K).Y();
    }

@@ -52,6 +52,7 @@ public class L42_2 implements Fb2 {
          ((JButton)Ref.g(304856760029970283L, var12)).setEnabled(true);
       }
    }
+   private static Object var16;
 }
 
 

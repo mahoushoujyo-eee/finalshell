@@ -64,6 +64,8 @@ public class Ab2 implements Comparator {
          throw var5.getTargetException();
       }
    }
+   private static Object var14;
+   private static Object var16;
 }
 
 

@@ -62,7 +62,7 @@ public class FileDropTransferHandler extends TransferHandler {
       TransferSupport var10000;
       label181: {
          var2 = ConnectionInfoPanel.I();
-         var10000 = var1.isDrop();
+         var10000 = (TransferSupport)(var1.isDrop());
          if (var2 != null) {
             if (var10000 == null) {
                return false;
@@ -340,11 +340,11 @@ public class FileDropTransferHandler extends TransferHandler {
                   Object var18 = 465495214303676957L;
                   FileDropTransferHandler var10006 = ((DefaultMutableTreeNode)Ref.g(465495214303676957L, var18)).getLevel();
                   if (var2 != null) {
-                     if (this < var10006 && var2 != null) {
+                     if (0 < var10006 && var2 != null) {
                         break label67;
                      }
 
-                     var10005 = var9.getLevel();
+                     var10005 = (FileDropTransferHandler)(var9.getLevel());
                      if (var2 == null) {
                         break label74;
                      }
@@ -398,7 +398,7 @@ public class FileDropTransferHandler extends TransferHandler {
          }
 
          DefaultMutableTreeNode[] var31 = (DefaultMutableTreeNode[])var10004;
-         var34 = var6.toArray(new DefaultMutableTreeNode[var6.size()]);
+         var34 = (DefaultMutableTreeNode[])(var6.toArray(new DefaultMutableTreeNode[var6.size()]));
          long var27 = 206399079994630893L;
          DefaultMutableTreeNode[] var26 = var34;
          Ref.s(206399079994630893L, var26, var27);

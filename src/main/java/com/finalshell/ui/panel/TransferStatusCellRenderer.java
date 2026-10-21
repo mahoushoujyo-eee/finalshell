@@ -212,7 +212,7 @@ public class TransferStatusCellRenderer extends JPanel implements TableCellRende
                   throw var86.getTargetException();
                }
 
-               var10006.append((String)var10007).append(a(9136, 22390));
+               ((java.lang.StringBuilder)var10006).append((String)var10007).append(a(9136, 22390));
                Object var10008 = Registry.emptyArgs();
                long var28 = 361359281152527627L;
                Object var27 = var10008;
@@ -234,7 +234,7 @@ public class TransferStatusCellRenderer extends JPanel implements TableCellRende
                   throw var84.getTargetException();
                }
 
-               var7 = var10008.append((String)var10009).toString();
+               var7 = ((java.lang.StringBuilder)var10008).append((String)var10009).toString();
                if (this == null) {
                   break label207;
                }
@@ -372,7 +372,7 @@ public class TransferStatusCellRenderer extends JPanel implements TableCellRende
             var121 = Ref.h(361359281152527627L, var59, var60);
 
             try {
-               var123 = (Long)var121;
+               var123 = (boolean)((Long)var121);
             } catch (InvocationTargetException var78) {
                throw var78.getTargetException();
             }

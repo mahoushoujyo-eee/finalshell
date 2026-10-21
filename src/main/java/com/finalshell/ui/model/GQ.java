@@ -11,7 +11,7 @@ public int compareTo(Enum o) {
    public static String[] u;
 
    public static GQ[] values() {
-      return (GQ[])s.clone();
+      return (GQ[])com.finalshell.reflect.Ref.cloneObject(s);
    }
 
    public static GQ valueOf(String var0) {
@@ -130,6 +130,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object s;
 }
 
 

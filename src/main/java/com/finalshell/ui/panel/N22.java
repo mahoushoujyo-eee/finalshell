@@ -102,7 +102,7 @@ public class N22 extends JPanel {
       Object var32 = 260020873771796015L;
       int var10014 = ((JR)Ref.g(260020873771796015L, var32)).getRowHeight() * Registry.lookupField(190401741690531753L).getInt(null);
       Object var34 = 260020873771796015L;
-      int var4 = this + ((JR)Ref.g(260020873771796015L, var34)).getTableHeader().getSize().height;
+      int var4 = 0 + ((JR)Ref.g(260020873771796015L, var34)).getTableHeader().getSize().height;
       Object var36 = 260020873771796015L;
       int var5 = ((JR)Ref.g(260020873771796015L, var36)).getTableHeader().getPreferredSize().height + 2;
       var4 += var5;

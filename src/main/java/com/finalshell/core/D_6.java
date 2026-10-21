@@ -134,7 +134,7 @@ public class D_6 {
          }
 
          label153: {
-            var10000 = var10000.getClass();
+            var10000 = (String)(var10000.getClass());
             if (!var3) {
                if (!var10000.isArray()) {
                   break label153;
@@ -1174,6 +1174,7 @@ public class D_6 {
          }
       }
    }
+   private static Object length;
 }
 
 

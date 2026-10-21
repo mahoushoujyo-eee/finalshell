@@ -42,7 +42,7 @@ public int compareTo(Enum o) {
    public static Integer[] d;
 
    public static PP[] values() {
-      return (PP[])N.clone();
+      return (PP[])com.finalshell.reflect.Ref.cloneObject(N);
    }
 
    public static PP valueOf(String var0) {
@@ -1094,6 +1094,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object N;
 }
 
 

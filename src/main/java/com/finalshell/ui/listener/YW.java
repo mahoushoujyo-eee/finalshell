@@ -401,13 +401,13 @@ public class YW extends MouseAdapter {
                if (var3 == null) {
                   label1763:
                   if (var70.M == 0) {
-                     var72 = BM.w(this.o);
+                     var72 = (Rectangle)(BM.w(this.o));
                      if (var3 != null) {
                         break label2048;
                      }
 
                      if (var72 == 0) {
-                        var72 = new Rectangle(var15, var13 + var10, var16 - var15, BM.B(this.o)).contains(var5, var6);
+                        var72 = (Rectangle)(new Rectangle(var15, var13 + var10, var16 - var15, BM.B(this.o)).contains(var5, var6));
                         if (var3 != null) {
                            break label2048;
                         }
@@ -417,7 +417,7 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var72 = this.H;
+                     var72 = (Rectangle)(this.H);
                      break label2048;
                   }
 
@@ -526,13 +526,13 @@ public class YW extends MouseAdapter {
                if (var3 == null) {
                   label1714:
                   if (var72 == 0) {
-                     var75 = BM.w(this.o);
+                     var75 = (Rectangle)(BM.w(this.o));
                      if (var3 != null) {
                         break label2049;
                      }
 
                      if (var75 == 0) {
-                        var75 = new Rectangle(var12 + var9, var17, BM.B(this.o), var18 - var17).contains(var5, var6);
+                        var75 = (Rectangle)(new Rectangle(var12 + var9, var17, BM.B(this.o), var18 - var17).contains(var5, var6));
                         if (var3 != null) {
                            break label2049;
                         }
@@ -542,11 +542,11 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var75 = this.Q;
+                     var75 = (Rectangle)(this.Q);
                      break label2049;
                   }
 
-                  var72 = var2.equals(CN3.mousePressed);
+                  var72 = (Rectangle)(var2.equals(CN3.mousePressed));
                }
 
                label1905: {
@@ -561,13 +561,13 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var72 = this.H;
+                     var72 = (Rectangle)(this.H);
                   }
 
                   label1691:
                   if (var3 == null) {
                      if (var72 != 0) {
-                        var72 = var2.equals(CN3.mouseDragged);
+                        var72 = (Rectangle)(var2.equals(CN3.mouseDragged));
                         if (var3 != null) {
                            break label1691;
                         }
@@ -621,7 +621,7 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var72 = this.H;
+                     var72 = (Rectangle)(this.H);
                   }
 
                   if (var3 != null) {
@@ -685,7 +685,7 @@ public class YW extends MouseAdapter {
                      break label2050;
                   }
 
-                  var75 = var2.equals(CN3.mousePressed);
+                  var75 = (Rectangle)(var2.equals(CN3.mousePressed));
                }
 
                label1910: {
@@ -700,13 +700,13 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var75 = this.Q;
+                     var75 = (Rectangle)(this.Q);
                   }
 
                   label1636:
                   if (var3 == null) {
                      if (var75 != 0) {
-                        var75 = var2.equals(CN3.mouseDragged);
+                        var75 = (Rectangle)(var2.equals(CN3.mouseDragged));
                         if (var3 != null) {
                            break label1636;
                         }
@@ -740,7 +740,7 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var75 = this.Q;
+                     var75 = (Rectangle)(this.Q);
                   }
 
                   if (var3 != null) {
@@ -1300,8 +1300,8 @@ public class YW extends MouseAdapter {
                                                    }
 
                                                    while (var86 != 0) {
-                                                      var43 = ((EZ)var32.next()) ? 1 : 0;
-                                                      var93 = var43.C();
+                                                      var43 = ((((EZ)var32.next()) ? 1 : 0) != 0);
+                                                      var93 = (int)(var43.C());
                                                       if (var3 != null) {
                                                          break label1450;
                                                       }
@@ -1312,7 +1312,7 @@ public class YW extends MouseAdapter {
                                                                break label2009;
                                                             }
 
-                                                            var93 = this.W;
+                                                            var93 = (int)(this.W);
                                                          }
 
                                                          if (var3 == null) {
@@ -1327,7 +1327,7 @@ public class YW extends MouseAdapter {
                                                                }
                                                             }
 
-                                                            var93 = BM.w(this.o);
+                                                            var93 = (int)(BM.w(this.o));
                                                          }
 
                                                          label1368:
@@ -1357,7 +1357,7 @@ public class YW extends MouseAdapter {
                                                                break label2009;
                                                             }
 
-                                                            var93 = this.q;
+                                                            var93 = (int)(this.q);
                                                          }
 
                                                          if (var3 == null) {
@@ -1372,7 +1372,7 @@ public class YW extends MouseAdapter {
                                                                }
                                                             }
 
-                                                            var93 = BM.w(this.o);
+                                                            var93 = (int)(BM.w(this.o));
                                                          }
 
                                                          label1386:
@@ -1395,12 +1395,12 @@ public class YW extends MouseAdapter {
                                                                }
                                                             }
 
-                                                            var93 = this.L;
+                                                            var93 = (int)(this.L);
                                                          }
 
                                                          if (var3 == null) {
                                                             if (var93 != 0) {
-                                                               var93 = this.g.Y(var43);
+                                                               var93 = (int)(this.g.Y(var43));
                                                                if (var3 != null) {
                                                                   break label2059;
                                                                }
@@ -1410,7 +1410,7 @@ public class YW extends MouseAdapter {
                                                                }
                                                             }
 
-                                                            var93 = BM.w(this.o);
+                                                            var93 = (int)(BM.w(this.o));
                                                          }
 
                                                          if (var3 == null) {
@@ -1441,18 +1441,18 @@ public class YW extends MouseAdapter {
                                                       }
 
                                                       if (var3 != null) {
-                                                         var93 = BM.z(this.o);
+                                                         var93 = (int)(BM.z(this.o));
                                                          break label1450;
                                                       }
 
                                                       var86 = var32.hasNext();
                                                    }
 
-                                                   var93 = BM.z(this.o);
+                                                   var93 = (int)(BM.z(this.o));
                                                    break label1450;
                                                 }
 
-                                                var93 = var2.equals(CN3.mousePressed);
+                                                var93 = (int)(var2.equals(CN3.mousePressed));
                                                 break label2059;
                                              }
 
@@ -1490,13 +1490,13 @@ public class YW extends MouseAdapter {
                                              break label1276;
                                           }
 
-                                          var93 = BM.w(this.o);
+                                          var93 = (int)(BM.w(this.o));
                                           if (var3 != null) {
                                              break label1265;
                                           }
 
                                           if (var93 == 0) {
-                                             var93 = new Rectangle(var15, var17, var16 - var15, var18 - var17).contains(var5, var6);
+                                             var93 = (int)(new Rectangle(var15, var17, var16 - var15, var18 - var17).contains(var5, var6));
                                              if (var3 != null) {
                                                 break label1265;
                                              }
@@ -1507,7 +1507,7 @@ public class YW extends MouseAdapter {
                                           }
                                        }
 
-                                       var93 = SwingUtilities.isLeftMouseButton(var1);
+                                       var93 = (int)(SwingUtilities.isLeftMouseButton(var1));
                                        break label1265;
                                     }
 
@@ -1521,10 +1521,10 @@ public class YW extends MouseAdapter {
                                     if (var93 != 0) {
                                        label1253: {
                                           label1953: {
-                                             var93 = this.e;
+                                             var93 = (int)(this.e);
                                              if (var3 == null) {
                                                 if (!this.e) {
-                                                   var93 = BM.w(this.o);
+                                                   var93 = (int)(BM.w(this.o));
                                                    if (var3 != null) {
                                                       break label1253;
                                                    }
@@ -1534,7 +1534,7 @@ public class YW extends MouseAdapter {
                                                    }
                                                 }
 
-                                                var93 = var2.equals(CN3.mousePressed);
+                                                var93 = (int)(var2.equals(CN3.mousePressed));
                                              }
 
                                              label1244:
@@ -1572,13 +1572,13 @@ public class YW extends MouseAdapter {
                                                    }
                                                 }
 
-                                                var93 = this.e;
+                                                var93 = (int)(this.e);
                                              }
 
                                              label1228:
                                              if (var3 == null) {
                                                 if (var93 != 0) {
-                                                   var93 = var2.equals(CN3.mouseDragged);
+                                                   var93 = (int)(var2.equals(CN3.mouseDragged));
                                                    if (var3 != null) {
                                                       break label1228;
                                                    }
@@ -1593,7 +1593,7 @@ public class YW extends MouseAdapter {
                                                    }
                                                 }
 
-                                                var93 = this.e;
+                                                var93 = (int)(this.e);
                                              }
 
                                              if (var3 != null) {
@@ -1601,7 +1601,7 @@ public class YW extends MouseAdapter {
                                              }
 
                                              if (var93 != 0) {
-                                                var93 = var2.equals(CN3.mouseReleased);
+                                                var93 = (int)(var2.equals(CN3.mouseReleased));
                                                 if (var3 != null) {
                                                    break label1253;
                                                 }
@@ -1617,12 +1617,12 @@ public class YW extends MouseAdapter {
                                              }
                                           }
 
-                                          var93 = this.F;
+                                          var93 = (int)(this.F);
                                        }
 
                                        if (var3 == null) {
                                           if (var93 == 0) {
-                                             var93 = BM.w(this.o);
+                                             var93 = (int)(BM.w(this.o));
                                              if (var3 != null) {
                                                 break label1257;
                                              }
@@ -1632,7 +1632,7 @@ public class YW extends MouseAdapter {
                                              }
                                           }
 
-                                          var93 = var2.equals(CN3.mousePressed);
+                                          var93 = (int)(var2.equals(CN3.mousePressed));
                                        }
 
                                        label1205:
@@ -1670,13 +1670,13 @@ public class YW extends MouseAdapter {
                                              }
                                           }
 
-                                          var93 = this.F;
+                                          var93 = (int)(this.F);
                                        }
 
                                        label1189:
                                        if (var3 == null) {
                                           if (var93 != 0) {
-                                             var93 = var2.equals(CN3.mouseDragged);
+                                             var93 = (int)(var2.equals(CN3.mouseDragged));
                                              if (var3 != null) {
                                                 break label1189;
                                              }
@@ -1693,7 +1693,7 @@ public class YW extends MouseAdapter {
                                              }
                                           }
 
-                                          var93 = this.F;
+                                          var93 = (int)(this.F);
                                        }
 
                                        if (var3 != null) {
@@ -1701,7 +1701,7 @@ public class YW extends MouseAdapter {
                                        }
 
                                        if (var93 != 0) {
-                                          var93 = var2.equals(CN3.mouseReleased);
+                                          var93 = (int)(var2.equals(CN3.mouseReleased));
                                           if (var3 != null) {
                                              break label1257;
                                           }
@@ -1717,7 +1717,7 @@ public class YW extends MouseAdapter {
                                        }
                                     }
 
-                                    var93 = SwingUtilities.isRightMouseButton(var1);
+                                    var93 = (int)(SwingUtilities.isRightMouseButton(var1));
                                  }
 
                                  if (var3 == null) {
@@ -1725,10 +1725,10 @@ public class YW extends MouseAdapter {
                                     if (var93 != 0) {
                                        label1168: {
                                           label1955: {
-                                             var129 = this.m;
+                                             var129 = (int)(this.m);
                                              if (var3 == null) {
                                                 if (!this.m) {
-                                                   var129 = BM.w(this.o);
+                                                   var129 = (int)(BM.w(this.o));
                                                    if (var3 != null) {
                                                       break label1168;
                                                    }
@@ -1738,7 +1738,7 @@ public class YW extends MouseAdapter {
                                                    }
                                                 }
 
-                                                var129 = var2.equals(CN3.mousePressed);
+                                                var129 = (int)(var2.equals(CN3.mousePressed));
                                              }
 
                                              label1159:
@@ -1776,13 +1776,13 @@ public class YW extends MouseAdapter {
                                                    }
                                                 }
 
-                                                var129 = this.m;
+                                                var129 = (int)(this.m);
                                              }
 
                                              label1143:
                                              if (var3 == null) {
                                                 if (var129 != 0) {
-                                                   var129 = var2.equals(CN3.mouseDragged);
+                                                   var129 = (int)(var2.equals(CN3.mouseDragged));
                                                    if (var3 != null) {
                                                       break label1143;
                                                    }
@@ -1800,7 +1800,7 @@ public class YW extends MouseAdapter {
                                                    }
                                                 }
 
-                                                var129 = this.m;
+                                                var129 = (int)(this.m);
                                              }
 
                                              if (var3 != null) {
@@ -1808,7 +1808,7 @@ public class YW extends MouseAdapter {
                                              }
 
                                              if (var129 != 0) {
-                                                var129 = var2.equals(CN3.mouseReleased);
+                                                var129 = (int)(var2.equals(CN3.mouseReleased));
                                                 if (var3 != null) {
                                                    break label1168;
                                                 }
@@ -1823,7 +1823,7 @@ public class YW extends MouseAdapter {
                                              }
                                           }
 
-                                          var129 = this.D;
+                                          var129 = (int)(this.D);
                                        }
 
                                        if (var3 == null) {
@@ -1838,7 +1838,7 @@ public class YW extends MouseAdapter {
                                              }
                                           }
 
-                                          var129 = var2.equals(CN3.mousePressed);
+                                          var129 = (int)(var2.equals(CN3.mousePressed));
                                        }
 
                                        label1119:
@@ -1876,13 +1876,13 @@ public class YW extends MouseAdapter {
                                              }
                                           }
 
-                                          var129 = this.D;
+                                          var129 = (int)(this.D);
                                        }
 
                                        label1103:
                                        if (var3 == null) {
                                           if (var129 != 0) {
-                                             var129 = var2.equals(CN3.mouseDragged);
+                                             var129 = (int)(var2.equals(CN3.mouseDragged));
                                              if (var3 != null) {
                                                 break label1103;
                                              }
@@ -1900,7 +1900,7 @@ public class YW extends MouseAdapter {
                                              }
                                           }
 
-                                          var129 = this.D;
+                                          var129 = (int)(this.D);
                                        }
 
                                        if (var3 != null) {
@@ -2080,13 +2080,13 @@ public class YW extends MouseAdapter {
                                     }
                                  }
 
-                                 var93 = this.L;
+                                 var93 = (int)(this.L);
                               }
 
                               label1055:
                               if (var3 == null) {
                                  if (var93 != 0) {
-                                    var93 = var2.equals(CN3.mouseDragged);
+                                    var93 = (int)(var2.equals(CN3.mouseDragged));
                                     if (var3 != null) {
                                        break label1055;
                                     }
@@ -2125,7 +2125,7 @@ public class YW extends MouseAdapter {
                                     }
                                  }
 
-                                 var93 = this.L;
+                                 var93 = (int)(this.L);
                               }
 
                               if (var3 != null) {
@@ -2735,6 +2735,13 @@ public class YW extends MouseAdapter {
          }
       }
    }
+   private static Object var67;
+   private static Object var69;
+   private static Object var84;
+   private static Object var87;
+   private static Object var88;
+   private static Object var94;
+   private static Object var95;
 }
 
 

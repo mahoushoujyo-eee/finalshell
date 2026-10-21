@@ -66,7 +66,7 @@ public class W62 {
             label79: {
                var5 = (JComponent)var4.getKey();
                WeakReference var6 = (WeakReference)var4.getValue();
-               var10000 = var6;
+               var10000 = (String[])(var6);
                if (var0 != null) {
                   if (var6 == null) {
                      var12 = null;
@@ -125,7 +125,7 @@ public class W62 {
             label79: {
                var5 = (JComponent)var4.getKey();
                WeakReference var6 = (WeakReference)var4.getValue();
-               var10000 = var6;
+               var10000 = (String[])(var6);
                if (var0 != null) {
                   if (var6 == null) {
                      var12 = null;
@@ -280,7 +280,7 @@ public class W62 {
       String[] var10000 = GR.I();
       JComponent var3 = var1.j();
       String[] var2 = var10000;
-      var10000 = var3;
+      var10000 = (String[])(var3);
       if (var2 != null) {
          if (var3 == null) {
             DN_2 var7 = var1;
@@ -307,7 +307,7 @@ public class W62 {
             }
          }
 
-         var10000 = var1.R();
+         var10000 = (String[])(var1.R());
       }
 
       Object var4 = var10000;
@@ -504,7 +504,7 @@ public class W62 {
 
       try {
          List var4 = O(var0);
-         var10000 = var4;
+         var10000 = (String[])(var4);
          if (var2 != null) {
             if (var4 != null) {
                for (DN_2 var6 : var4) {
@@ -546,7 +546,7 @@ public class W62 {
                q.put(var0, new WeakReference<>(var4));
             }
 
-            var4.add(var1);
+            ((java.math.BigInteger)var4).add(var1);
             var10000 = (String[])var3;
          }
 
@@ -566,7 +566,7 @@ public class W62 {
 
       try {
          List var4 = I(var0);
-         var10000 = var4;
+         var10000 = (String[])(var4);
          if (var2 != null) {
             if (var4 != null) {
                var4.remove(var1);
@@ -591,7 +591,7 @@ public class W62 {
 
       try {
          List var4 = I(var0);
-         var10000 = var4;
+         var10000 = (String[])(var4);
          if (var2 != null) {
             if (var4 != null) {
                var4.removeAll(var1);
@@ -625,7 +625,7 @@ public class W62 {
       try {
          label31: {
             WeakReference var3 = (WeakReference)q.get(var0);
-            var10000 = var3;
+            var10000 = (String[])(var3);
             if (var1 != null) {
                if (var3 == null) {
                   var8 = null;
@@ -719,13 +719,13 @@ public class W62 {
                      var9 = var4;
                   }
 
-                  var9.add(var0);
+                  ((java.math.BigInteger)var9).add(var0);
                   if (var1 != null) {
                      break label69;
                   }
                }
 
-               var10000 = R;
+               var10000 = (String[])(R);
                if (var1 == null) {
                   break label65;
                }
@@ -758,13 +758,13 @@ public class W62 {
       synchronized (var10000) {
          label48: {
             JComponent var3 = var0.j();
-            var10000 = var3;
+            var10000 = (List)(var3);
             if (var1 != null) {
                if (var3 == null) {
                   break label48;
                }
 
-               var10000 = var3;
+               var10000 = (List)(var3);
             }
 
             label30: {
@@ -838,7 +838,7 @@ public class W62 {
       try {
          label31: {
             WeakReference var3 = (WeakReference)z.get(var0);
-            var10000 = var3;
+            var10000 = (String[])(var3);
             if (var1 != null) {
                if (var3 == null) {
                   var8 = null;

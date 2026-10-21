@@ -662,7 +662,7 @@ public int compareTo(Enum o) {
    public static Integer[] b;
 
    public static Gz2[] values() {
-      return (Gz2[])C.clone();
+      return (Gz2[])com.finalshell.reflect.Ref.cloneObject(C);
    }
 
    public static Gz2 valueOf(String var0) {
@@ -1594,6 +1594,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object C;
 }
 
 

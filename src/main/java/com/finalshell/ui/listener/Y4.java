@@ -86,7 +86,7 @@ public class Y4 implements MouseListener {
             Object var23 = 337860688004803931L;
             int var38 = var10011 - ((JPopupMenu)Ref.g(337860688004803931L, var23)).getPreferredSize().width;
             Object var25 = 299167437768682002L;
-            Object var10012 = this + ((com.finalshell.core.C)Ref.g(299167437768682002L, var25)).getWidth() - 2;
+            Object var10012 = 0 + ((com.finalshell.core.C)Ref.g(299167437768682002L, var25)).getWidth() - 2;
             Object var27 = 299167437768682002L;
             var38.show((Component)var10012, (int)this, ((com.finalshell.core.C)Ref.g(299167437768682002L, var27)).getHeight() + 3);
             if (var2 == null) {

@@ -12,7 +12,7 @@ public int compareTo(Enum o) {
    public static QE list;
 
    public static QE[] values() {
-      return (QE[])v.clone();
+      return (QE[])com.finalshell.reflect.Ref.cloneObject(v);
    }
 
    public static QE valueOf(String var0) {
@@ -186,6 +186,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object v;
 }
 
 

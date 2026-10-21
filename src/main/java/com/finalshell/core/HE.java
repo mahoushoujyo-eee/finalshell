@@ -787,7 +787,7 @@ public class HE extends C2_5{
 
       HashSet var4 = new HashSet();
       new C_x_2_2(var4).U(var3);
-      return var4.toArray(new String[var4.size()]);
+      return (String[])(var4.toArray(new String[var4.size()]));
    }
 
    public static Exception a(Exception var0) {

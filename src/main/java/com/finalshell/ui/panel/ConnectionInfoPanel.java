@@ -791,7 +791,7 @@ public class ConnectionInfoPanel extends AA {
 
          do {
             Object var8 = 230619793659643674L;
-            if (!(this < ((ConnectionInfoPanel)Ref.g(230619793659643674L, var8)).getRowCount())) {
+            if (!(0 < ((ConnectionInfoPanel)Ref.g(230619793659643674L, var8)).getRowCount())) {
                break;
             }
 
@@ -973,7 +973,7 @@ public class ConnectionInfoPanel extends AA {
             DefaultMutableTreeNode var10001 = (DefaultMutableTreeNode)((HashMap)Ref.g(159245943539531162L, var16)).get(var1);
          }
 
-         var6 = var10000;
+         var6 = (DefaultMutableTreeNode)(var10000);
       }
 
       Tf4 var8 = null;
@@ -2581,7 +2581,7 @@ public class ConnectionInfoPanel extends AA {
                      }
                   }
 
-                  var10005 = var35.getClass();
+                  var10005 = (List)(var35.getClass());
                   if (var4 == null) {
                      break label121;
                   }
@@ -3411,13 +3411,13 @@ public class ConnectionInfoPanel extends AA {
          }
 
          var8 = var7.iterator();
-         var10005 = var8.hasNext();
+         var10005 = (List)(var8.hasNext());
          break;
       }
 
       while (var10005 == null) {
          String var115 = (String)var8.next();
-         var10005 = var6;
+         var10005 = (List)(var6);
          Object[] var10006 = Registry.packArgs(var115);
          var35 = 630828008397989993L;
          Object[] var34 = var10006;
@@ -3583,13 +3583,13 @@ public class ConnectionInfoPanel extends AA {
             }
 
             var117 = var114.iterator();
-            var141 = var117.hasNext();
+            var141 = (List)(var117.hasNext());
             break;
          }
 
          while (var141 == null) {
             String var121 = (String)var117.next();
-            var141 = var6;
+            var141 = (List)(var6);
             Object[] var145 = Registry.packArgs(var121);
             var65 = 548576199562161390L;
             Object[] var64 = var145;
@@ -5196,7 +5196,7 @@ public class ConnectionInfoPanel extends AA {
          throw var4.getTargetException();
       }
 
-      return this.getPathBounds(var10002);
+      return (TreePath)(this.getPathBounds(var10002));
    }
 
    @Override
@@ -6316,6 +6316,7 @@ public class ConnectionInfoPanel extends AA {
          }
       }
    }
+   private static Object var173;
 }
 
 

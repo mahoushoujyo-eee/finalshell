@@ -10,7 +10,7 @@ public int compareTo(Enum o) {
    public static String[] L;
 
    public static PI3[] values() {
-      return (PI3[])H.clone();
+      return (PI3[])com.finalshell.reflect.Ref.cloneObject(H);
    }
 
    public static PI3 valueOf(String var0) {
@@ -127,6 +127,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object H;
 }
 
 

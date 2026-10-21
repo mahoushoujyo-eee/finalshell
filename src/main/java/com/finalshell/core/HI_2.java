@@ -810,7 +810,7 @@ public class HI_2 extends C2_5{
    }
 
    public FK[] A(@C_9 HG var1) throws B2_5, IOException {
-      return this.z.q(var1);
+      return (U_5)(this.z.q(var1));
    }
 
 
@@ -1754,7 +1754,7 @@ public class HI_2 extends C2_5{
       HashSet var4 = new HashSet();
       HashSet var5 = new HashSet();
       new C_Q_2(var4, var5).B(var3);
-      return var5.toArray(new String[var5.size()]);
+      return (String[])(var5.toArray(new String[var5.size()]));
    }
 
    static {

@@ -839,7 +839,7 @@ public class K5_2 extends BasicTreeUI {
             boolean var17 = false;
 
             while (!var17) {
-               var10000 = var6;
+               var10000 = (String)(var6);
                if (var2 != null) {
                   if (!var6.hasMoreElements()) {
                      break;
@@ -887,7 +887,7 @@ public class K5_2 extends BasicTreeUI {
                            label131: {
                               label95: {
                                  label132: {
-                                    var10000 = var9;
+                                    var10000 = (String)(var9);
                                     if (var2 != null) {
                                        if (var9 == null) {
                                           break label95;
@@ -898,7 +898,7 @@ public class K5_2 extends BasicTreeUI {
                                           break label132;
                                        }
 
-                                       var10000 = this.drawingCache.get(var9);
+                                       var10000 = (String)(this.drawingCache.get(var9));
                                     }
 
                                     if (var10000 == null) {
@@ -1163,7 +1163,7 @@ public class K5_2 extends BasicTreeUI {
                var4 = this.tree.getPathBounds(var5.pathByAddingChild(var11.getChild(var5.getLastPathComponent(), var6)));
             }
 
-            var29 = this.tree.getClass().equals(ImportExportPanel.class);
+            var29 = (K5_2)(this.tree.getClass().equals(ImportExportPanel.class));
             if (var2 == null) {
                break label102;
             }
@@ -1233,7 +1233,7 @@ public class K5_2 extends BasicTreeUI {
             }
          }
 
-         var29 = var4.y;
+         var29 = (K5_2)(var4.y);
       }
 
       if (var2 != null) {
@@ -1241,7 +1241,7 @@ public class K5_2 extends BasicTreeUI {
             var4.y--;
          }
 
-         var29 = this.k;
+         var29 = (K5_2)(this.k);
       }
 
       if (var29 == null) {
@@ -1303,7 +1303,7 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public DefaultMutableTreeNode n() {
-      return this.F;
+      return (DefaultMutableTreeNode)(this.F);
    }
 
    public static JTree l(K5_2 var0) {
@@ -2458,6 +2458,7 @@ public class K5_2 extends BasicTreeUI {
          }
       }
    }
+   private static Object F;
 }
 
 

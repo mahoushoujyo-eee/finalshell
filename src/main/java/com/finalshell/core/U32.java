@@ -45,6 +45,7 @@ public class U32 implements Fb2 {
          var1.setText(var10005);
       }
    }
+   private static Object var14;
 }
 
 

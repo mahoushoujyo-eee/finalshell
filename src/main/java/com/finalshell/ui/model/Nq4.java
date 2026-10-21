@@ -10,7 +10,7 @@ public int compareTo(Enum o) {
    public static Nq4 trailing;
 
    public static Nq4[] values() {
-      return (Nq4[])m.clone();
+      return (Nq4[])com.finalshell.reflect.Ref.cloneObject(m);
    }
 
    public static Nq4 valueOf(String var0) {
@@ -119,6 +119,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object m;
 }
 
 

@@ -331,7 +331,7 @@ public class Xz2 extends MouseAdapter {
       var6 = new long[11];
       int var3 = 0;
       String var4 = "\u008coE\u008egº\u0092\u0090ë÷èÅ;3\u009d\u009c\u0003£ç\u0007ðæ[o\u0091T\u0084ï®A¹\u0006\u0080D½\u0006`ù{\u009e×\u0019·Û\u0017h\u008fÔ%wg¸·.>Uì\u0019\u0093Ü\u008d?\u009bz\u0086l6°\u009a5²É";
-      var5 = "\u008coE\u008egº\u0092\u0090ë÷èÅ;3\u009d\u009c\u0003£ç\u0007ðæ[o\u0091T\u0084ï®A¹\u0006\u0080D½\u0006`ù{\u009e×\u0019·Û\u0017h\u008fÔ%wg¸·.>Uì\u0019\u0093Ü\u008d?\u009bz\u0086l6°\u009a5²É";
+      var5 = (boolean)("\u008coE\u008egº\u0092\u0090ë÷èÅ;3\u009d\u009c\u0003£ç\u0007ðæ[o\u0091T\u0084ï®A¹\u0006\u0080D½\u0006`ù{\u009e×\u0019·Û\u0017h\u008fÔ%wg¸·.>Uì\u0019\u0093Ü\u008d?\u009bz\u0086l6°\u009a5²É");
          // [VF] .length();
       byte var2 = 0;
 
@@ -391,6 +391,7 @@ public class Xz2 extends MouseAdapter {
          }
       }
    }
+   private static Object var6;
 }
 
 

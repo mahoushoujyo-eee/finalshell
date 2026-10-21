@@ -84,6 +84,7 @@ public class L92 {
       a = var6;
       b = new Integer[3];
    }
+   private static Object var9;
 }
 
 

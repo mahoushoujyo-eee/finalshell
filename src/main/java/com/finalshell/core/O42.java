@@ -18,7 +18,7 @@ public final class O42 {
       String var10000 = FV_2.D();
       Map var6 = (Map)C.get(var0);
       String var4 = var10000;
-      var10000 = var6;
+      var10000 = (String)(var6);
       if (var4 == null) {
          if (var6 == null) {
             Shape var10 = (Shape)var2.J();
@@ -32,7 +32,7 @@ public final class O42 {
       }
 
       var7 = (IO3)var10000;
-      var10000 = var7;
+      var10000 = (String)(var7);
       if (var4 == null) {
          label28:
          if (var7 != null) {

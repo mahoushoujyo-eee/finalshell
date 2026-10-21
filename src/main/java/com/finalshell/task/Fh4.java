@@ -66,7 +66,7 @@ public class Fh4 implements Runnable {
                return;
             }
 
-            var10006 = this;
+            var10006 = (Boolean)(this);
             Object var14 = 391045987025414928L;
             GH_2 var10007 = (GH_2)Ref.g(391045987025414928L, var14);
             if (var1 != null) {

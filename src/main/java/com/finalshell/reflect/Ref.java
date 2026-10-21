@@ -117,4 +117,14 @@ public final class Ref {
     public static <E extends Throwable> RuntimeException sneaky(Throwable t) throws E {
         throw (E) t;
     }
+
+   public static Object cloneObject(Object obj) {
+      try {
+         java.lang.reflect.Method m = Object.class.getDeclaredMethod("clone");
+         m.setAccessible(true);
+         return m.invoke(obj);
+      } catch (Exception e) {
+         throw new IllegalStateException(e);
+      }
+   }
 }

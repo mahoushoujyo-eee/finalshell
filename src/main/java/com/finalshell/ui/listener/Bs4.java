@@ -100,6 +100,7 @@ public class Bs4 implements MouseListener {
    @Override
    public void mouseClicked(MouseEvent var1) {
    }
+   private static Object var39;
 }
 
 

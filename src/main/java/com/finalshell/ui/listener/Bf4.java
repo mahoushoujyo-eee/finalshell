@@ -93,6 +93,7 @@ public class Bf4 extends MouseAdapter {
          }
       }
    }
+   private static Object var29;
 }
 
 

@@ -24,7 +24,7 @@ public class Dv4 implements Zv2_2 {
          throw var12.getTargetException();
       }
 
-var3 = new String(var10003);
+var3 = (Ck4)(new String(var10003));
       File var4 = var10001;
       Ky4[] var13 = Vk2.y();
       boolean var5 = false;

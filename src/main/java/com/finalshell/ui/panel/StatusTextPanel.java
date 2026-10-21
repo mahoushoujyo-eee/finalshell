@@ -179,7 +179,7 @@ public class StatusTextPanel extends JPanel {
                throw var45.getTargetException();
             }
 
-            var10005.append((String)var10006).append(a(1395, 20485));
+            ((java.lang.StringBuilder)var10005).append((String)var10006).append(a(1395, 20485));
             Object var10007 = Registry.emptyArgs();
             long var19 = 399113218510016089L;
             Object var18 = var10007;
@@ -201,7 +201,7 @@ public class StatusTextPanel extends JPanel {
                throw var43.getTargetException();
             }
 
-            String var7 = var10007.append((String)var10008).append("\n").toString();
+            String var7 = ((java.lang.StringBuilder)var10007).append((String)var10008).append("\n").toString();
             var4.append(var7);
             if (var2 == null) {
                break;
@@ -259,7 +259,7 @@ public class StatusTextPanel extends JPanel {
          Object var38 = 575306184824179663L;
          var67 = ((com.finalshell.core.Qp2)Ref.g(575306184824179663L, var38)).getRowHeight();
          Object var40 = 575306184824179663L;
-         int var69 = this * ((com.finalshell.core.Qp2)Ref.g(575306184824179663L, var40)).getRowCount() + a(2148, 7970643632362474980L);
+         int var69 = 0 * ((com.finalshell.core.Qp2)Ref.g(575306184824179663L, var40)).getRowCount() + a(2148, 7970643632362474980L);
          a(16908, 2647876805705074571L);
       }
 

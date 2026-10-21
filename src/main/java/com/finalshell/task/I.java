@@ -68,8 +68,9 @@ public class I implements Runnable {
          var29 = var29 > 0 ? 1 : 0;
       }
 
-      var10010.setEnabled(var29);
+      ((javax.swing.JComponent)var10010).setEnabled(var29);
    }
+   private static Object var26;
 }
 
 

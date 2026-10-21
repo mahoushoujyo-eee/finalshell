@@ -836,7 +836,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                            var10001 = GO.r;
                         }
 
-                        var6 = var10001;
+                        var6 = (Color)(var10001);
                         if (var2 == null) {
                            break label161;
                         }

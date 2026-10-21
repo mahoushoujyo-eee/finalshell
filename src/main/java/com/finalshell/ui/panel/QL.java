@@ -2559,6 +2559,8 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
          }
       }
    }
+   private static Object var20;
+   private static Object var25;
 }
 
 

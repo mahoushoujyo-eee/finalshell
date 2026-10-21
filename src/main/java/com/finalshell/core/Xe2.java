@@ -251,7 +251,7 @@ public class Xe2 {
       label37: {
          label36: {
             try {
-               var7 = var2;
+               var7 = (boolean)(var2);
                if (!var3) {
                   break label36;
                }
@@ -263,10 +263,10 @@ public class Xe2 {
                throw a(var6);
             }
 
-            var7 = var2;
+            var7 = (boolean)(var2);
          }
 
-         var4 = E8.J(var7);
+         var4 = (String)(E8.J(var7));
       }
 
       label27: {

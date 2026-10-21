@@ -281,7 +281,7 @@ public class HG {
                                  }
                               }
 
-                              var8 = var9.toArray(new String[var9.size()][]);
+                              var8 = (String[][])(var9.toArray(new String[var9.size()][]));
                               if (var2 != null) {
                                  break label92;
                               }
@@ -314,7 +314,7 @@ public class HG {
                                  }
                               }
 
-                              var14 = var16.toArray(new String[var16.size()][]);
+                              var14 = (String[][])(var16.toArray(new String[var16.size()][]));
                               if (var2 != null) {
                                  break label78;
                               }
@@ -358,7 +358,7 @@ public class HG {
                      }
                   }
 
-                  var6 = new Ry2_2(this.C$I(), var13, var15.toArray(new String[var15.size()][]));
+                  var6 = (String[][])(new Ry2_2(this.C$I(), var13, var15.toArray(new String[var15.size()][])));
 
                   try {
                      if (var2 != null) {
@@ -387,7 +387,7 @@ public class HG {
          }
       }
 
-      return new RL(this.C$I(), var1, var3, var4, var5.toArray(new Fs2_3[var5.size()]));
+      return (Fs2_3[])(new RL(this.C$I(), var1, var3, var4, var5.toArray(new Fs2_3[var5.size()])));
    }
 
    public Rs2 O$Rs_2() throws B2_5, IOException {
@@ -730,7 +730,7 @@ public class HG {
          var2.add(var3);
       } while (var1 != null);
 
-      return var2.toArray(new Fu2_2[var2.size()]);
+      return (Fu2_2[])(var2.toArray(new Fu2_2[var2.size()]));
    }
 
    @C_9
@@ -2019,7 +2019,7 @@ public class HG {
             label59: {
                try {
                   this.m(var6, var5);
-                  var13 = var3;
+                  var13 = (boolean)(var3);
                   var10001 = com.finalshell.ui.model.F_2.COMPILATION_UNIT;
                   if (var4 == null) {
                      break label65;
@@ -2045,7 +2045,7 @@ public class HG {
             }
 
             try {
-               var13 = var3;
+               var13 = (boolean)(var3);
                var10001 = com.finalshell.ui.model.F_2.NAMED_TYPE_DECLARATION;
             } catch (B2_5 var10) {
                boolean var17 = false;
@@ -3293,7 +3293,7 @@ public class HG {
       while (!var2[0]) {
          var1.add(this.Q(var2));
          if (!this.I(",")) {
-            return new RJ_2(this.C$I(), var1.toArray(new R9[var1.size()]), var2[0]);
+            return (R9[])(new RJ_2(this.C$I(), var1.toArray(new R9[var1.size()]), var2[0]));
          }
       }
 
@@ -3915,7 +3915,7 @@ public class HG {
             var4 = var2;
          } while (var1 == null);
 
-         return var2.toArray(new Rq2_2[var2.size()]);
+         return (Rq2_2[])(var2.toArray(new Rq2_2[var2.size()]));
       }
    }
 
@@ -5345,7 +5345,7 @@ public class HG {
             var3 = var2;
          } while (var1 == null);
 
-         return var2.toArray(new NV_2[var2.size()]);
+         return (NV_2[])(var2.toArray(new NV_2[var2.size()]));
       }
    }
 
@@ -5460,7 +5460,7 @@ public class HG {
          }
       }
 
-      return new NA_3(this.C$I(), var2.toArray(new HV_2[var2.size()]), this.L$arrString(), this.J$arrhp_2());
+      return (HV_2[])(new NA_3(this.C$I(), var2.toArray(new HV_2[var2.size()]), this.L$arrString(), this.J$arrhp_2()));
    }
 
    @C_9
@@ -5500,7 +5500,7 @@ public class HG {
          break;
       }
 
-      return var10000.toArray(new C_U[var2.size()]);
+      return (C_U[])(var10000.toArray(new C_U[var2.size()]));
    }
 
    public C_U u$_U() throws B2_5, IOException {
@@ -5520,7 +5520,7 @@ public class HG {
             }
          }
 
-         return new C_U(var2, var3.toArray(new NA_3[var3.size()]));
+         return (NA_3[])(new C_U(var2, var3.toArray(new NA_3[var3.size()])));
       }
    }
 
@@ -8165,7 +8165,7 @@ public class HG {
             var3 = var2;
          } while (var1 == null);
 
-         return var2.toArray(new NV_2[var2.size()]);
+         return (NV_2[])(var2.toArray(new NV_2[var2.size()]));
       }
    }
 

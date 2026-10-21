@@ -1009,7 +1009,7 @@ public class ProcessMonitorService {
 
                      label547:
                      if (!var144.equals("")) {
-                        var10003 = Registry.packArgs(Integer.parseInt(var21[var5]));
+                        var10003 = (int)(Registry.packArgs(Integer.parseInt(var21[var5])));
                         var50 = 463707540165777128L;
                         Object[] var49 = (Object[])var10003;
                         Ref.h(463707540165777128L, var49, var50);
@@ -1042,7 +1042,7 @@ public class ProcessMonitorService {
                                              throw var130.getTargetException();
                                           }
 
-                                          var147 = var169.append((String)var181).append("t").toString();
+                                          var147 = ((java.lang.StringBuilder)var169).append((String)var181).append("t").toString();
                                           var181 = Registry.e((long)(1.0995116E12F * var153));
                                           long var54 = 507393495849422758L;
                                           Object[] var53 = (Object[])var181;
@@ -1075,7 +1075,7 @@ public class ProcessMonitorService {
                                              throw var128.getTargetException();
                                           }
 
-                                          var147 = var170.append((String)var184).append("g").toString();
+                                          var147 = ((java.lang.StringBuilder)var170).append((String)var184).append("g").toString();
                                           var184 = Registry.e((long)(1.0737418E9F * var153));
                                           long var58 = 507393495849422758L;
                                           Object[] var57 = (Object[])var184;
@@ -1146,7 +1146,7 @@ public class ProcessMonitorService {
                                  }
                               }
 
-                              var10003 = var21[var6];
+                              var10003 = (int)(var21[var6]);
                            }
 
                            String var150 = (String)var10003;
@@ -1195,7 +1195,7 @@ public class ProcessMonitorService {
                                        throw var123.getTargetException();
                                     }
 
-                                    var187 = Registry.packArgs(var187.append((String)var10006).append("m").toString());
+                                    var187 = Registry.packArgs(((java.lang.StringBuilder)var187).append((String)var10006).append("m").toString());
                                     long var68 = 232079950911053536L;
                                     Object var67 = var187;
                                     Ref.h(232079950911053536L, var67, var68);
@@ -1430,7 +1430,7 @@ public class ProcessMonitorService {
             while (true) {
                if (var146.hasNext()) {
                   LI3_2 var148 = (LI3_2)var146.next();
-                  var176 = var148;
+                  var176 = (ArrayList)(var148);
                   Object var192 = Registry.emptyArgs();
                   long var96 = 419335026051024288L;
                   Object var95 = var192;
@@ -1457,7 +1457,7 @@ public class ProcessMonitorService {
                   }
                }
 
-               var176 = var142.size();
+               var176 = (ArrayList)(var142.size());
                break;
             }
 
@@ -3127,6 +3127,7 @@ public class ProcessMonitorService {
          }
       }
    }
+   private static Object var194;
 }
 
 

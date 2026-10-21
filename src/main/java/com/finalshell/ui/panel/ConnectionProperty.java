@@ -2507,7 +2507,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       var59.setBackground(var59);
       var10007 = this;
       if (var1 == null) {
-         var10007 = this.k7;
+         var10007 = (ConnectionProperty)(this.k7);
          Color var63;
          XF3 var10011 = (XF3)(Registry.emptyArgs());
          long var29 = 307147474512918572L;
@@ -4428,6 +4428,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          }
       }
    }
+   private static Object k7;
+   private static int K;
 }
 
 

@@ -36,7 +36,7 @@ public class Y42 implements MouseListener {
                }
             }
 
-            var10001 = var1.getButton();
+            var10001 = (Y42)(var1.getButton());
          }
 
          var10002 = 1;
@@ -47,7 +47,7 @@ public class Y42 implements MouseListener {
             return;
          }
 
-         var10001 = var1.getClickCount();
+         var10001 = (Y42)(var1.getClickCount());
          var10002 = 2;
       }
 

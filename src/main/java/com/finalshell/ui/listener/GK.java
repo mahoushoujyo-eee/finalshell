@@ -89,7 +89,7 @@ public class GK implements MouseMotionListener {
                return;
             }
 
-            var10004 = this;
+            var10004 = (Boolean)(this);
             Object var16 = 523286601714712427L;
             Bq2 var10005 = (Bq2)Ref.g(523286601714712427L, var16);
             if (var2 != null) {
@@ -187,7 +187,7 @@ public class GK implements MouseMotionListener {
       }
 
       Point var5 = var1.getLocationOnScreen();
-      var10009 = (Object[])var4;
+      var10009 = (Integer)((Object[])var4);
       int var10010 = Registry.lookupField(299739253213373636L).getInt(null);
       if (var2 == null) {
          if (var4 == var10010) {
@@ -195,7 +195,7 @@ public class GK implements MouseMotionListener {
                label237: {
                   System.currentTimeMillis();
                   Object var34 = 523286601714712427L;
-                  long var6 = this - Registry.lookupField(265947950920722185L).getLong(Ref.g(523286601714712427L, var34));
+                  long var6 = 0 - Registry.lookupField(265947950920722185L).getLong(Ref.g(523286601714712427L, var34));
                   long var120;
                   GK var104 = (var120 = var6 - a) == 0L ? 0 : (var120 < 0L ? -1 : 1);
                   if (var2 == null) {
@@ -260,7 +260,7 @@ public class GK implements MouseMotionListener {
             }
          }
 
-         var10009 = (Object[])var4;
+         var10009 = (Integer)((Object[])var4);
          var10010 = Registry.lookupField(489009438537732568L).getInt(null);
       }
 
@@ -294,7 +294,7 @@ public class GK implements MouseMotionListener {
                   return;
                }
 
-               var110 = this;
+               var110 = (Boolean)(this);
                Object var58 = 523286601714712427L;
                Ref.g(523286601714712427L, var58);
                Object var60 = 158293829082319616L;
@@ -339,7 +339,7 @@ public class GK implements MouseMotionListener {
             }
          }
 
-         var10009 = (Object[])var4;
+         var10009 = (Integer)((Object[])var4);
          var10010 = Registry.lookupField(581124220784366544L).getInt(null);
       }
 
@@ -349,7 +349,7 @@ public class GK implements MouseMotionListener {
                break label241;
             }
 
-            var10009 = (Object[])var4;
+            var10009 = (Integer)((Object[])var4);
             var10010 = Registry.lookupField(617945104086657545L).getInt(null);
          }
 
@@ -358,7 +358,7 @@ public class GK implements MouseMotionListener {
                break label241;
             }
 
-            var10009 = (Object[])var4;
+            var10009 = (Integer)((Object[])var4);
             var10010 = Registry.lookupField(470891030811937041L).getInt(null);
          }
 

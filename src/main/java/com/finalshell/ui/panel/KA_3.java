@@ -232,7 +232,7 @@ public class KA_3 extends JPanel {
                }
             }
 
-            var10021 = var2 % 2;
+            var10021 = (Color)(var2 % 2);
          }
 
          label78: {
@@ -408,7 +408,7 @@ public class KA_3 extends JPanel {
                      throw var86.getTargetException();
                   }
 
-                  var2.setText(var10009.append((String)var10010).append(" ").toString());
+                  var2.setText(((java.lang.StringBuilder)var10009).append((String)var10010).append(" ").toString());
                   Object var41 = 632750596709798569L;
                   Ref.g(632750596709798569L, var41);
                   Object var10011 = Registry.emptyArgs();
@@ -472,7 +472,7 @@ public class KA_3 extends JPanel {
                      throw var81.getTargetException();
                   }
 
-                  var2.setText(var10017.append((String)var10018).append(" ").toString());
+                  var2.setText(((java.lang.StringBuilder)var10017).append((String)var10018).append(" ").toString());
                   Object var57 = 242398463597090504L;
                   JLabel var109 = (JLabel)Ref.g(242398463597090504L, var57);
                   String var10019 = (String)(Registry.emptyArgs());
@@ -559,7 +559,7 @@ public class KA_3 extends JPanel {
                break label139;
             }
 
-            var10003 = Registry.lookupField(349489007421858747L).getInt(this);
+            var10003 = (KA_3)(Registry.lookupField(349489007421858747L).getInt(this));
             var10004 = Registry.lookupField(149407827136588388L).getInt(null);
          }
 

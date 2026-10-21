@@ -211,7 +211,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
                         var16 = var15.append((String)var140).toString();
                      }
 
-                     var116 = var15;
+                     var116 = (String)(var15);
                      Object[] var10007 = Registry.emptyArgs();
                      long var42 = 278346905124376511L;
                      Object[] var41 = var10007;
@@ -274,11 +274,11 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
                         label398: {
                            label399: {
                               label361: {
-                                 var119 = var18;
+                                 var119 = (Zh2_2)(var18);
                                  label360:
                                  if (var7 != null) {
                                     if (!var18.startsWith(a(29188, 5318))) {
-                                       var119 = var18;
+                                       var119 = (Zh2_2)(var18);
                                        if (var7 == null) {
                                           break label360;
                                        }
@@ -295,7 +295,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
                                        }
                                     }
 
-                                    var119 = a(29187, 18275);
+                                    var119 = (Zh2_2)(a(29187, 18275));
                                  }
 
                                  var16 = var119;
@@ -304,7 +304,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
                                  }
                               }
 
-                              var119 = var18;
+                              var119 = (Zh2_2)(var18);
                               if (var7 == null) {
                                  break label398;
                               }
@@ -319,7 +319,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
                               }
                            }
 
-                           var119 = var19.l();
+                           var119 = (Zh2_2)(var19.l());
                         }
 
                         var16 = var119;
@@ -446,7 +446,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
                            throw var73.getTargetException();
                         }
 
-                        var16 = var135.append((String)var143).append("").toString();
+                        var16 = ((java.lang.StringBuilder)var135).append((String)var143).append("").toString();
                      }
 
                      var8.setHorizontalAlignment(4);
@@ -526,7 +526,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
       label409: {
          int var134 = (var3) ? 1 : 0;
          if (var7 != null) {
-            if (var3 != 0) {
+            if (var3) {
                var8.setBackground((Color)Registry.lookupField(623875439513009390L).get(null));
                var8.setForeground((Color)Registry.lookupField(513155505692963448L).get(null));
                var8.setOpaque(true);
@@ -1559,6 +1559,9 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
          }
       }
    }
+   private static Object var127;
+   private static java.util.List var110;
+   private static Object var131;
 }
 
 

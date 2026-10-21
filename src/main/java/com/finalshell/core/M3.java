@@ -668,7 +668,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
             var13 = var6;
          }
 
-         var13.setBackground(UIManager.getColor(a(-1127, 26858)));
+         ((javax.swing.JComponent)var13).setBackground(UIManager.getColor(a(-1127, 26858)));
       }
 
       boolean var7 = false;
@@ -807,7 +807,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
                }
             }
 
-            var18 = this.comboBox;
+            var18 = (Dimension)(this.comboBox);
             if (var1 != null) {
                break label82;
             }
@@ -819,7 +819,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
             return var2;
          }
 
-         var18 = this.editor;
+         var18 = (Dimension)(this.editor);
       }
 
       Dimension var11 = var18.getPreferredSize();

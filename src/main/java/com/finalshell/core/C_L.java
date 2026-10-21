@@ -770,7 +770,7 @@ public abstract class C_L {
       label22: {
          try {
             var10 = null;
-            var11 = var10;
+            var11 = (HashMap)(var10);
             if (var1 == null) {
                var10002 = N_5.H(System.getProperty(a(5470, 3201)));
                break label22;

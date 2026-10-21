@@ -60,6 +60,7 @@ public class Tu2 implements KeyListener {
          }
       }
    }
+   private static Object var14;
 }
 
 

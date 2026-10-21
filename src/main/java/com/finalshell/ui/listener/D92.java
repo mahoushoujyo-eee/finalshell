@@ -46,7 +46,7 @@ public class D92 implements MouseListener {
                   throw var20.getTargetException();
                }
 
-var5 = new D92(var10006);
+var5 = (Vn2)(new D92(var10006));
                File var6 = var10004;
                Object var16 = 483663784764278403L;
                com.finalshell.ui.frame.MainFrame var7 = (com.finalshell.ui.frame.MainFrame)SwingUtilities.windowForComponent((Vn2)Ref.g(483663784764278403L, var16));

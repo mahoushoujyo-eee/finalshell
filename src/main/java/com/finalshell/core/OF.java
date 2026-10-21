@@ -691,6 +691,7 @@ public class OF implements BufferedImageOp {
          }
       }
    }
+   private static Object var20;
 }
 
 

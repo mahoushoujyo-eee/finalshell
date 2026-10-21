@@ -134,7 +134,7 @@ public class Le4_2 {
          throw var4.getTargetException();
       }
 
-      return var10001.substring(0, a(29559, 783906915426678515L));
+      return ((java.lang.String)var10001).substring(0, a(29559, 783906915426678515L));
    }
 
    public static byte[] d(String var0) {
@@ -810,7 +810,7 @@ public class Le4_2 {
       while (true) {
          if (var10.hasNext()) {
             Ln4_2 var37 = (Ln4_2)var10.next();
-            var40 = var8;
+            var40 = (boolean)(var8);
             String var46 = (String)(Registry.emptyArgs());
             var15 = 194080076253066315L;
             Object var14 = var46;
@@ -871,7 +871,7 @@ public class Le4_2 {
          label156: {
             if (var40 != false) {
                Ln4_2 var38 = (Ln4_2)var10.next();
-               var40 = var6;
+               var40 = (boolean)(var6);
                String var50 = (String)(Registry.emptyArgs());
                long var21 = 194080076253066315L;
                Object var20 = var50;
@@ -910,7 +910,7 @@ public class Le4_2 {
             }
 
             Ln4_2 var39 = (Ln4_2)var10.next();
-            var40 = var6;
+            var40 = (boolean)(var6);
             String var53 = (String)(Registry.emptyArgs());
             long var23 = 194080076253066315L;
             Object var22 = var53;
@@ -2106,7 +2106,7 @@ public class Le4_2 {
          String var3 = var1.C$String(a(-30874, -11363));
          if (var0 == null) {
             if (var3 != null) {
-               var10001 = var3.equals(a(-30857, -9105));
+               var10001 = (Ln4_2)(var3.equals(a(-30857, -9105)));
                if (var0 == null) {
                   break label125;
                }
@@ -2128,7 +2128,7 @@ public class Le4_2 {
             }
          }
 
-         var10001 = var1.containsKey(a(-30907, -14136));
+         var10001 = (Ln4_2)(var1.containsKey(a(-30907, -14136)));
       }
 
       if (var0 == null) {
@@ -2145,7 +2145,7 @@ public class Le4_2 {
             }
          }
 
-         var10001 = var1.containsKey(a(-30859, -11238));
+         var10001 = (Ln4_2)(var1.containsKey(a(-30859, -11238)));
       }
 
       if (var0 == null) {
@@ -3186,7 +3186,7 @@ public class Le4_2 {
       var13 = new String[33];
       int var11 = 0;
       var10 = "\"¾\u0010BÝ\u0007â\u001b½U\t5à½Ü\u0015\u001d^¼W\n¶\u001f\u0082v\u008f\u0081¨ËôO\t^Ì³\u0087åEa³A\u000bÌ`i\u0096yv«û\u0015\u009cµ\u0012\u000e.¹Û¤ÎIÞP\u0010#_Do½\u008dT¦\rìwM3æC2ÀmðFHá\u000bñØÎ\u0081\u008d\u00945§Æ\u0017Ï\u0002ç/\u0005µñ{û\u0018\u0012\u0094|h\u009e\u0012Íái\u009cêíÁdgD\u000b\u008f\u008c\t\u009fç\u008bââé\u0081&]\u000bÑý$Ôøº\u009bb\u0013¯u\u000b&\u0002\u009e\u001cn1®Çµ\u001b¡\u00043²A\u0096\u000bi!\u000bºnwsÛ\u000e\u0098Ö\u0004p@´\u0016\u000b=r\u0081Ð?:YrK\u00ad~\u0004M\u008b¼«\u0005jZ\u0084ªÃ\u0004+þßÁ\tì(\u0086År>²ØÊ\u0003éÛõ\b\u008b\u0088ðI\u0012RV>\u000b¬å\u008b×\rÚ%nÄ.\u008f\u000bÔ\u009dÀï¥O×\b\u009aâD\u0012YdS\u0092ùçâû%´\u008dË\u0091ý\u0007ß\u0003ì\u0011d\u0099×* V¥Â©\u008c/|^\u001d\rP¿\b»ÜöÃÒ\u0003N\u0014\u0002\u001a\u0002\u0005\u0086åBÓ\u0013";
-      var12 = "\"¾\u0010BÝ\u0007â\u001b½U\t5à½Ü\u0015\u001d^¼W\n¶\u001f\u0082v\u008f\u0081¨ËôO\t^Ì³\u0087åEa³A\u000bÌ`i\u0096yv«û\u0015\u009cµ\u0012\u000e.¹Û¤ÎIÞP\u0010#_Do½\u008dT¦\rìwM3æC2ÀmðFHá\u000bñØÎ\u0081\u008d\u00945§Æ\u0017Ï\u0002ç/\u0005µñ{û\u0018\u0012\u0094|h\u009e\u0012Íái\u009cêíÁdgD\u000b\u008f\u008c\t\u009fç\u008bââé\u0081&]\u000bÑý$Ôøº\u009bb\u0013¯u\u000b&\u0002\u009e\u001cn1®Çµ\u001b¡\u00043²A\u0096\u000bi!\u000bºnwsÛ\u000e\u0098Ö\u0004p@´\u0016\u000b=r\u0081Ð?:YrK\u00ad~\u0004M\u008b¼«\u0005jZ\u0084ªÃ\u0004+þßÁ\tì(\u0086År>²ØÊ\u0003éÛõ\b\u008b\u0088ðI\u0012RV>\u000b¬å\u008b×\rÚ%nÄ.\u008f\u000bÔ\u009dÀï¥O×\b\u009aâD\u0012YdS\u0092ùçâû%´\u008dË\u0091ý\u0007ß\u0003ì\u0011d\u0099×* V¥Â©\u008c/|^\u001d\rP¿\b»ÜöÃÒ\u0003N\u0014\u0002\u001a\u0002\u0005\u0086åBÓ\u0013";
+      var12 = (boolean)("\"¾\u0010BÝ\u0007â\u001b½U\t5à½Ü\u0015\u001d^¼W\n¶\u001f\u0082v\u008f\u0081¨ËôO\t^Ì³\u0087åEa³A\u000bÌ`i\u0096yv«û\u0015\u009cµ\u0012\u000e.¹Û¤ÎIÞP\u0010#_Do½\u008dT¦\rìwM3æC2ÀmðFHá\u000bñØÎ\u0081\u008d\u00945§Æ\u0017Ï\u0002ç/\u0005µñ{û\u0018\u0012\u0094|h\u009e\u0012Íái\u009cêíÁdgD\u000b\u008f\u008c\t\u009fç\u008bââé\u0081&]\u000bÑý$Ôøº\u009bb\u0013¯u\u000b&\u0002\u009e\u001cn1®Çµ\u001b¡\u00043²A\u0096\u000bi!\u000bºnwsÛ\u000e\u0098Ö\u0004p@´\u0016\u000b=r\u0081Ð?:YrK\u00ad~\u0004M\u008b¼«\u0005jZ\u0084ªÃ\u0004+þßÁ\tì(\u0086År>²ØÊ\u0003éÛõ\b\u008b\u0088ðI\u0012RV>\u000b¬å\u008b×\rÚ%nÄ.\u008f\u000bÔ\u009dÀï¥O×\b\u009aâD\u0012YdS\u0092ùçâû%´\u008dË\u0091ý\u0007ß\u0003ì\u0011d\u0099×* V¥Â©\u008c/|^\u001d\rP¿\b»ÜöÃÒ\u0003N\u0014\u0002\u001a\u0002\u0005\u0086åBÓ\u0013");
          // [VF] .length();
       char var9 = '\n';
       int var17 = -1;
@@ -3360,6 +3360,7 @@ public class Le4_2 {
          }
       }
    }
+   private static Object var29;
 }
 
 

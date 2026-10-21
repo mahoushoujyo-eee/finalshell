@@ -421,14 +421,14 @@ public class OG extends O implements W2_3, Sa2 {
                   var9 = this;
                   if (var2 != null) {
                      if (!this.G) {
-                        var9 = GA.m(0, 0, 0, this.getHeight());
+                        var9 = (OG)(GA.m(0, 0, 0, this.getHeight()));
                         break label65;
                      }
 
                      var9 = this;
                   }
 
-                  var9 = var9.getBackground();
+                  var9 = (OG)(var9.getBackground());
                }
 
                var3.setPaint(var9);

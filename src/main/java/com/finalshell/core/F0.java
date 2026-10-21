@@ -150,7 +150,7 @@ public class F0 {
          var3.close();
          Object var8 = this.y;
          synchronized (this.y) {
-            var10000 = var7;
+            var10000 = (String[])(var7);
             if (var2 != null) {
                if (var7 == null) {
                   int var9 = Math.abs(x.nextInt());

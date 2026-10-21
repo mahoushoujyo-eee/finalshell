@@ -169,7 +169,7 @@ public class ZU extends Z7 {
          throw var96.getTargetException();
       }
 
-var10030 = new Oc4(var3, var101);
+var10030 = (ZU)(new Oc4(var3, var101));
       long var74 = 389807861524576519L;
       var73 = var10029;
       Ref.s(389807861524576519L, var73, var74);
@@ -196,7 +196,7 @@ var10030 = new Oc4(var3, var101);
          throw var95.getTargetException();
       }
 
-var10034 = new Oc4(var10035, var108);
+var10034 = (ZU)(new Oc4(var10035, var108));
       Object[] var13 = var10033;
       this.add(var13, a(17836, 24691));
       var13.addActionListener(new Oc4(this, var13));
@@ -456,7 +456,7 @@ var10034 = new Oc4(var10035, var108);
                throw var85.getTargetException();
             }
 
-var2 = new String(var10019);
+var2 = (U5)(new String(var10019));
             var10016.setFrom(var10016);
             StringBuilder var10017 = new StringBuilder().append(a(17804, -13756));
             Object[] var10018 = Registry.e(System.currentTimeMillis());
@@ -469,7 +469,7 @@ var2 = new String(var10019);
                throw var84.getTargetException();
             }
 
-            var10017.setSubject(var10018.append((String)var10019).toString());
+            var10017.setSubject(((java.lang.StringBuilder)var10018).append((String)var10019).toString());
             RecipientType var122 = RecipientType.TO;
             InternetAddress var127;
             String var10022 = (String)(Registry.emptyArgs());
@@ -483,7 +483,7 @@ var2 = new String(var10019);
                throw var83.getTargetException();
             }
 
-var2 = new String(var10022);
+var2 = (U5)(new String(var10022));
             var122.setRecipient(var127, var127);
             var8.setText(a(17834, -21903));
             var8.saveChanges();
@@ -611,7 +611,7 @@ var2 = new String(var10022);
             var10011.setText(var2.append(var73).toString());
          }
 
-         var10009 = this;
+         var10009 = (String)(this);
          Object var25 = 479298920582418590L;
          JTextField var61 = (JTextField)Ref.g(479298920582418590L, var25);
          String var10012 = (String)(Registry.emptyArgs());

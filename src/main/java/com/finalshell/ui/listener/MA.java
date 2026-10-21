@@ -37,7 +37,7 @@ public class MA implements ActionListener {
          }
 
          Object var7 = 502923952788570949L;
-         if (this == Registry.lookupField(181494556387054133L).getInt(Ref.g(502923952788570949L, var7))) {
+         if (0 == Registry.lookupField(181494556387054133L).getInt(Ref.g(502923952788570949L, var7))) {
             return;
          }
 

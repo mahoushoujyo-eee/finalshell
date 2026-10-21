@@ -72,7 +72,7 @@ public class Oi2 implements ActionListener {
             label105: {
                label92: {
                   var3 = var10005;
-                  var10005 = (Object[])var3;
+                  var10005 = (String)((Object[])var3);
                   if (var2 != null) {
                      var10005 = Registry.packArgs(var3);
                      long var21 = 330094358428833085L;

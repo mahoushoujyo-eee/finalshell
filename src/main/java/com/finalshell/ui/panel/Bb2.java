@@ -119,7 +119,7 @@ public class Bb2 extends JLabel {
          throw var5.getTargetException();
       }
 
-      String var2 = var10001.append((String)var10002).append("%").toString();
+      String var2 = ((java.lang.StringBuilder)var10001).append((String)var10002).append("%").toString();
       this.setText(var2);
       this.repaint();
    }

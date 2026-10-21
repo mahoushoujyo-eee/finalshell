@@ -683,7 +683,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
                   break label80;
                }
 
-               if (var7 != 0) {
+               if (var7) {
                   var12 = var2;
                   var10001 = 1;
                   if (var8 == null) {
@@ -726,7 +726,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
       var12 = (var7) ? 1 : 0;
       label64:
       if (var8 != null) {
-         if (var7 == 0) {
+         if (!var7) {
             var12 = (this.e) ? 1 : 0;
             if (var8 == null) {
                break label64;

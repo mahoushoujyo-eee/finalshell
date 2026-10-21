@@ -579,9 +579,9 @@ public class OC3 extends BasicMenuUI implements L0_2 {
       if (var10 != null) {
       int var15;
          label87: {
-            var15 = var8;
+            var15 = (int)(var8);
             if (var9 != null) {
-               if (var8 != 0) {
+               if (var8) {
                   var15 = this.a;
                   if (var9 == null) {
                      break label87;

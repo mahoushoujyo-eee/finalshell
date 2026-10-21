@@ -188,7 +188,7 @@ public class LE extends DefaultTreeCellRenderer {
                            }
                         }
 
-                        var97 = var72;
+                        var97 = (String)(var72);
                         Object[] var106 = Registry.emptyArgs();
                         long var30 = 179612178163941306L;
                         Object[] var29 = var106;
@@ -310,7 +310,7 @@ public class LE extends DefaultTreeCellRenderer {
                   }
                }
 
-               var10004 = var18;
+               var10004 = (String)(var18);
                Object[] var102 = Registry.emptyArgs();
                long var48 = 396085629172753019L;
                Object[] var47 = var102;

@@ -9,7 +9,7 @@ public int compareTo(Enum o) {
    public static K72 hex;
 
    public static K72[] values() {
-      return (K72[])c.clone();
+      return (K72[])com.finalshell.reflect.Ref.cloneObject(c);
    }
 
    public static K72 valueOf(String var0) {
@@ -117,6 +117,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object c;
 }
 
 

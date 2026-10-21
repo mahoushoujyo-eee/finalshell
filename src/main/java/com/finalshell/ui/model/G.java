@@ -9,7 +9,7 @@ public int compareTo(Enum o) {
    public static G thick;
 
    public static G[] values() {
-      return (G[])M.clone();
+      return (G[])com.finalshell.reflect.Ref.cloneObject(M);
    }
 
    public static G valueOf(String var0) {
@@ -117,6 +117,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object M;
 }
 
 

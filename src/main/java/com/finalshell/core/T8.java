@@ -53,7 +53,7 @@ public class T8 extends TransferHandler {
       TransferSupport var10000;
       label80: {
          var2 = com.finalshell.ui.panel.F8.y();
-         var10000 = var1.isDrop();
+         var10000 = (TransferSupport)(var1.isDrop());
          if (var2 == null) {
             if (var10000 == null) {
                return false;
@@ -252,7 +252,7 @@ public class T8 extends TransferHandler {
          while (true) {
             label67:
             if (var9 < var4.length) {
-               var10001 = var4;
+               var10001 = (DefaultMutableTreeNode)(var4);
                if (var2 != null) {
                   break;
                }
@@ -313,7 +313,7 @@ public class T8 extends TransferHandler {
                }
             }
 
-            var10001 = var5.toArray(new DefaultMutableTreeNode[var5.size()]);
+            var10001 = (DefaultMutableTreeNode)(var5.toArray(new DefaultMutableTreeNode[var5.size()]));
             break;
          }
 
@@ -340,7 +340,7 @@ public class T8 extends TransferHandler {
 
          do {
             Object var8 = 366662457817467315L;
-            if (!(this < ((DefaultMutableTreeNode[])Ref.g(366662457817467315L, var8)).length)) {
+            if (!(0 < ((DefaultMutableTreeNode[])Ref.g(366662457817467315L, var8)).length)) {
                break;
             }
 

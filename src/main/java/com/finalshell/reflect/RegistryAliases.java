@@ -1334,7 +1334,7 @@ public final class RegistryAliases {
    }
 
    public static String resolve(String var0) {
-      return MAP.getOrDefault(var0, var0);
+      return (String)(MAP.getOrDefault(var0, var0));
    }
 
    public static Class forName(String var0) throws ClassNotFoundException {

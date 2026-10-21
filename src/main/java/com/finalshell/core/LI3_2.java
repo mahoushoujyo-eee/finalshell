@@ -90,7 +90,7 @@ public class LI3_2 {
                   throw var19.getTargetException();
                }
 
-               var5 = var10005;
+               var5 = (U82)(var10005);
                if (this != null) {
                   return var5;
                }

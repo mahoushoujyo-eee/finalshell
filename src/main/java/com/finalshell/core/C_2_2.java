@@ -39,7 +39,7 @@ public class C_2_2 implements W2_4 {
          var4 = var3;
       }
 
-      return C_.j(var4).toArray(new V2_3[C_.j(var3).size()]);
+      return (V2_3[])(C_.j(var4).toArray(new V2_3[C_.j(var3).size()]));
    }
 
    public String K(Cr2_2 var1) {
@@ -51,7 +51,7 @@ public class C_2_2 implements W2_4 {
    }
 
    public Y_3[] M() {
-      return this.E.toArray(new Y_3[this.E.size()]);
+      return (Y_3[])(this.E.toArray(new Y_3[this.E.size()]));
    }
 
    public void g(Y_3 var1) {

@@ -942,13 +942,13 @@ public class Mv2 implements Gq2, Hs2 {
             int var10004 = var10003.length;
             int var8 = 0;
             byte var17 = 64;
-            var10002 = var10003;
+            var10002 = (char[])(var10003);
             int var10 = var10004;
             byte var20;
             char[] var10005;
             int var10006;
             if (var10004 <= 1) {
-               var10005 = var10003;
+               var10005 = (char[])(var10003);
                var20 = 64;
                var10006 = var8;
             } else {
@@ -958,7 +958,7 @@ public class Mv2 implements Gq2, Hs2 {
                   break label38;
                }
 
-               var10005 = var10003;
+               var10005 = (char[])(var10003);
                var20 = 64;
                var10006 = var8;
             }

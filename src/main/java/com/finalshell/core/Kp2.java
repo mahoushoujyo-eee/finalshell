@@ -1136,7 +1136,7 @@ public final class Kp2 {
             Object var6 = var5.next();
 
             try {
-               var8 = var4;
+               var8 = (Field[])(var4);
                if (var3 != null) {
                   break;
                }
@@ -1184,7 +1184,7 @@ public final class Kp2 {
       while (true) {
          if (var5 < var0.length) {
             try {
-               var10000 = var4;
+               var10000 = (String)(var4);
                if (var3 != null) {
                   break;
                }
@@ -1199,7 +1199,7 @@ public final class Kp2 {
             }
          }
 
-         var10000 = var4;
+         var10000 = (String)(var4);
          break;
       }
 

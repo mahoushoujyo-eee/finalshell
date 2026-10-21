@@ -13,7 +13,7 @@ public int compareTo(Enum o) {
    public static String i;
 
    public static GV[] values() {
-      return (GV[])c.clone();
+      return (GV[])com.finalshell.reflect.Ref.cloneObject(c);
    }
 
    public static GV valueOf(String var0) {
@@ -158,6 +158,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object c;
 }
 
 

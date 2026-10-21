@@ -11,7 +11,7 @@ public int compareTo(Enum o) {
    public static HA error;
 
    public static HA[] values() {
-      return (HA[])p.clone();
+      return (HA[])com.finalshell.reflect.Ref.cloneObject(p);
    }
 
    public static HA valueOf(String var0) {
@@ -146,6 +146,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object p;
 }
 
 

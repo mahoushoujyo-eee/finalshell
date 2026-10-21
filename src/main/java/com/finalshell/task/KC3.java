@@ -73,7 +73,7 @@ public class KC3 implements Runnable {
             throw var43.getTargetException();
          }
 
-         var10011.append((String)var10012).append(var2);
+         ((java.lang.StringBuilder)var10011).append((String)var10012).append(var2);
          Object var22 = 128708130735072831L;
          Object var10013 = Ref.g(128708130735072831L, var22);
          String var10014 = (String)(Registry.emptyArgs());
@@ -87,7 +87,7 @@ public class KC3 implements Runnable {
             throw var42.getTargetException();
          }
 
-         var10012 = Registry.packArgs(this, var10013.append((String)var10014).toString());
+         var10012 = Registry.packArgs(this, ((java.lang.StringBuilder)var10013).append((String)var10014).toString());
          long var27 = 247777483328047393L;
          Object var26 = var10012;
          Ref.h(247777483328047393L, var26, var27);

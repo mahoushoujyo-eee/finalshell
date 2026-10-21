@@ -98,7 +98,7 @@ public class Kb2 extends JFrame {
                   throw var192.getTargetException();
                }
 
-               this.setTitle(var10010.append((String)var10011).append(a(-6089, 29415)).toString());
+               this.setTitle(((java.lang.StringBuilder)var10010).append((String)var10011).append(a(-6089, 29415)).toString());
                Registry.emptyArgs();
                long var35 = 270389152141252877L;
                Ref.h2(270389152141252877L, var35);
@@ -459,7 +459,7 @@ public class Kb2 extends JFrame {
 
       Registry.lookupField(364177130736457168L).setBoolean(null, true);
       if (Ky4.F$arrString() != null) {
-         int var6 = this + 1;
+         int var6 = 0 + 1;
          Z7.z(var6);
       }
    }
@@ -628,7 +628,7 @@ public class Kb2 extends JFrame {
             }
          }
 
-         var10002 = var3.size();
+         var10002 = (Z7)(var3.size());
          break;
       }
 
@@ -716,7 +716,7 @@ public class Kb2 extends JFrame {
                throw var27.getTargetException();
             }
 
-            String var32 = var43.append((String)var10005.get(0)).toString();
+            String var32 = ((java.lang.StringBuilder)var43).append((String)var10005.get(0)).toString();
          }
 
          var10002 = (Z7)var2;

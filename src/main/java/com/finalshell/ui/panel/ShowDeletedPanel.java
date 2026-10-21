@@ -394,10 +394,10 @@ public class ShowDeletedPanel extends JPanel implements Fb2 {
          throw var159.getTargetException();
       }
 
-var10061 = new UV3(var10062, var177);
+var10061 = (ShowDeletedPanel)(new UV3(var10062, var177));
       Object var7 = var10060;
       var7.setOpaque(false);
-      var7.setBackground(Color.white);
+      ((javax.swing.JComponent)var7).setBackground(Color.white);
       var6.add(var7, "");
       var7.addActionListener(new Dm2(this, var7));
       Registry.packArgs(a(23329, -16369));
@@ -753,7 +753,7 @@ var10061 = new UV3(var10062, var177);
             return;
          }
 
-         var10006 = var3;
+         var10006 = (Integer)(var3);
          var33 = Registry.emptyArgs();
          long var17 = 486203322657356972L;
          Object[] var16 = var33;
@@ -1378,7 +1378,7 @@ var10061 = new UV3(var10062, var177);
             return var3;
          }
 
-         var13 = var7;
+         var13 = (File[])(var7);
       }
 
       java.io.File[] var8 = var13;
@@ -2488,6 +2488,7 @@ var10061 = new UV3(var10062, var177);
          }
       }
    }
+   private static Object var172;
 }
 
 

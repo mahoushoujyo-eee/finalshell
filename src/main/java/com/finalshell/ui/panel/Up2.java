@@ -22,7 +22,7 @@ public class Up2 extends JLabel {
       Object var6 = 506432474033075896L;
       Object var10004 = Ref.g(506432474033075896L, var6);
       Object var8 = 283651054618121503L;
-      var10004.setBackground((Color)Ref.g(283651054618121503L, var8));
+      ((javax.swing.JComponent)var10004).setBackground((Color)Ref.g(283651054618121503L, var8));
       this.paintComponent(var1);
    }
 }

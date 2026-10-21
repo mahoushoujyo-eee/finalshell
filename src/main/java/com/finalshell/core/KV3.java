@@ -34,7 +34,7 @@ public class KV3 implements YA {
                         var7 = new HashSet();
                      }
 
-                     var7.add(var3[0]);
+                     ((java.math.BigInteger)var7).add(var3[0]);
                      Lr2.h(this.O).put(var6, var7);
                   }
                }

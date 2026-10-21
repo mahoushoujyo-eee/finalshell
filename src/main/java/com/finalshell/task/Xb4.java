@@ -104,7 +104,7 @@ public class Xb4 implements Runnable {
 
       try {
          Xb4 var3 = (Xb4)H.get(this.g);
-         var10000 = var3;
+         var10000 = (String)(var3);
          if (var1 != null) {
             if (var3 == this) {
                synchronized (this.g.S()) {
@@ -244,7 +244,7 @@ public class Xb4 implements Runnable {
                this.g.U(var1);
             }
 
-            var10000 = var3;
+            var10000 = (Wo4)(var3);
          }
 
          // $VF: monitorexit
@@ -369,7 +369,7 @@ public class Xb4 implements Runnable {
 
       try {
          Xb4 var3 = (Xb4)H.get(var0);
-         var10000 = var3;
+         var10000 = (String)(var3);
          if (var1 != null) {
             if (var3 != null) {
                var3.P();

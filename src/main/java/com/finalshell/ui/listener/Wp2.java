@@ -35,7 +35,7 @@ public class Wp2 implements ActionListener {
             throw var11.getTargetException();
          }
 
-         var10004.setText((String)var10005);
+         ((javax.swing.text.JTextComponent)var10004).setText((String)var10005);
       }
    }
 }

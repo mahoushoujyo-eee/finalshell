@@ -76,13 +76,13 @@ public class Dt4 implements ActionListener {
       }
 
       DefaultMutableTreeNode var5 = var10009;
-      var10009 = var5.getUserObject().getClass();
+      var10009 = (DefaultMutableTreeNode)(var5.getUserObject().getClass());
       if (var2 == null) {
          if (!var10009.equals(Ck4.class)) {
             return;
          }
 
-         var10009 = (Object[])var5.getUserObject();
+         var10009 = (DefaultMutableTreeNode)((Object[])var5.getUserObject());
       }
 
       Ck4 var6 = (Ck4)var10009;

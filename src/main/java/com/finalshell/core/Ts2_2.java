@@ -197,7 +197,7 @@ public class Ts2_2 extends T4 implements SwingConstants {
                   var5++;
                }
 
-               var22 = this.F;
+               var22 = (int)(this.F);
             }
 
             if (var2 == 0) {
@@ -251,7 +251,7 @@ public class Ts2_2 extends T4 implements SwingConstants {
             if (var14.hasNext()) {
                Component var15 = (Component)var14.next();
                Dimension var16 = var15.getPreferredSize();
-               var24 = this.F;
+               var24 = (int)(this.F);
                if (var2 != 0) {
                   break;
                }
@@ -317,8 +317,8 @@ public class Ts2_2 extends T4 implements SwingConstants {
       int var10001;
       label34: {
          label33: {
-            var4 = (T4.b()) ? 1 : 0;
-            var6 = this.a;
+            var4 = (((T4.b()) ? 1 : 0) != 0);
+            var6 = (int)(this.a);
             if (var4 != 0) {
                if (!this.a) {
                   var6 = this.J;

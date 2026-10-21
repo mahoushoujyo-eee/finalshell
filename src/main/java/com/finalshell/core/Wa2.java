@@ -109,11 +109,11 @@ public class Wa2 extends TransferHandler {
                   Object var18 = 529627744240700508L;
                   Wa2 var10006 = ((DefaultMutableTreeNode)Ref.g(529627744240700508L, var18)).getLevel();
                   if (var2 == null) {
-                     if (this < var10006 && var2 == null) {
+                     if (0 < var10006 && var2 == null) {
                         break label67;
                      }
 
-                     var10005 = var9.getLevel();
+                     var10005 = (Wa2)(var9.getLevel());
                      if (var2 != null) {
                         break label74;
                      }

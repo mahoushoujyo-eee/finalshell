@@ -347,6 +347,7 @@ public class BA3 extends JLabel {
          }
       }
    }
+   private static Object var67;
 }
 
 

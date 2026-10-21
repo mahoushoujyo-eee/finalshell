@@ -18,9 +18,9 @@ public final class Rv4 {
       }
 
       if (var1 != null) {
-         return t(var10000.toArray(new Point[var0.size()]));
+         return (Point[])(t(var10000.toArray(new Point[var0.size()])));
       } else {
-         return var10000.size() > 0 ? t(var0.toArray(new Point[var0.size()])) : null;
+         return (Point[])(var10000.size() > 0 ? t(var0.toArray(new Point[var0.size()])) : null);
       }
    }
 
@@ -150,7 +150,7 @@ public final class Rv4 {
             return null;
          }
 
-         var10000 = var0;
+         var10000 = (Rectangle)(var0);
       }
 
       if (var1 == null) {
@@ -158,7 +158,7 @@ public final class Rv4 {
             return null;
          }
 
-         var10000 = var0;
+         var10000 = (Rectangle)(var0);
       }
 
       Rectangle var2 = ((Object[])var10000)[0];

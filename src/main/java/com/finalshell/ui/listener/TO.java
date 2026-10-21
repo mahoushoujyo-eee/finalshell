@@ -93,12 +93,12 @@ public class TO implements MouseListener {
 
             if (var10000 == var10001) {
                Object var18 = 396507593444187971L;
-               var3 = ((com.finalshell.core.Km2)Ref.g(396507593444187971L, var18)).rowAtPoint(var1.getPoint());
+               var3 = (String)(((com.finalshell.core.Km2)Ref.g(396507593444187971L, var18)).rowAtPoint(var1.getPoint()));
                Object var20 = 396507593444187971L;
                if (!((com.finalshell.core.Km2)Ref.g(396507593444187971L, var20)).isRowSelected((int)var3)) {
                }
 
-               var107 = var1.getClickCount();
+               var107 = (TO)(var1.getClickCount());
                var10003 = 2;
                if (var2 != null) {
                   break label229;
@@ -280,12 +280,12 @@ public class TO implements MouseListener {
             }
 
             Object var58 = 396507593444187971L;
-            var106 = ((com.finalshell.core.Km2)Ref.g(396507593444187971L, var58)).rowAtPoint(var1.getPoint());
+            var106 = (String)(((com.finalshell.core.Km2)Ref.g(396507593444187971L, var58)).rowAtPoint(var1.getPoint()));
          }
 
          var3 = var106;
          var1.getButton();
-         var107 = 3;
+         var107 = (TO)(3);
       }
 
       if (var2 == null) {
@@ -319,12 +319,12 @@ public class TO implements MouseListener {
                   Object var72 = 612091313834066062L;
                   Kl4 var130 = (Kl4)Ref.g(612091313834066062L, var72);
                   Object var74 = 487924346083543578L;
-var125 = new O32(var130, this, (ConnectionInfoPanel)Ref.g(487924346083543578L, var74));
+var125 = (TO)(new O32(var130, this, (ConnectionInfoPanel)Ref.g(487924346083543578L, var74)));
                   this.show((Component)var1.getSource(), var1.getX(), var1.getY());
                }
             }
 
-            var107 = var1.getButton();
+            var107 = (TO)(var1.getButton());
          }
 
          var10003 = true;
@@ -334,7 +334,7 @@ var125 = new O32(var130, this, (ConnectionInfoPanel)Ref.g(487924346083543578L, v
          if (var107 == var10003) {
             System.currentTimeMillis();
             Object var76 = 396507593444187971L;
-            long var104 = this - Registry.lookupField(363492891300853480L).getLong(Ref.g(396507593444187971L, var76));
+            long var104 = 0 - Registry.lookupField(363492891300853480L).getLong(Ref.g(396507593444187971L, var76));
             if (var104 > a) {
                int var105 = var1.getClickCount();
                var10003 = this;

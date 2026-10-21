@@ -22,7 +22,7 @@ public int compareTo(Enum o) {
    public static Integer[] b;
 
    public static F2_2[] values() {
-      return (F2_2[])h.clone();
+      return (F2_2[])com.finalshell.reflect.Ref.cloneObject(h);
    }
 
    public static F2_2 valueOf(String var0) {
@@ -238,6 +238,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object h;
 }
 
 

@@ -34,7 +34,7 @@ public class Ol4 extends MouseAdapter {
                return;
             }
 
-            var9 = this.p;
+            var9 = (Point)(this.p);
             if (var2 == null) {
                break label39;
             }
@@ -58,11 +58,12 @@ public class Ol4 extends MouseAdapter {
             }
          }
 
-         var9 = this.p;
+         var9 = (Point)(this.p);
       }
 
       var9.x(var3);
    }
+   private static java.awt.Point var9;
 }
 
 

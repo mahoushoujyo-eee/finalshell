@@ -116,6 +116,7 @@ public class Zg2_2 {
    public static void __vfClinit__() {
       Registry.lookupField(323929397643124273L).set(null, new HashMap());
    }
+   private static Object var15;
 }
 
 

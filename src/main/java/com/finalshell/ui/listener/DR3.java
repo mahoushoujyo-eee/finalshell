@@ -70,7 +70,7 @@ public class DR3 implements FocusListener {
                var9 = var1.getOppositeComponent();
             }
 
-            var10 = var9.getClass().equals(JRootPane.class);
+            var10 = (DR3)(var9.getClass().equals(JRootPane.class));
             if (var2 != null) {
                break label48;
             }
@@ -105,7 +105,7 @@ public class DR3 implements FocusListener {
             return;
          }
 
-         var10 = Registry.lookupField(404708917332303584L).getBoolean(this);
+         var10 = (DR3)(Registry.lookupField(404708917332303584L).getBoolean(this));
       }
 
       if (var10 == null) {

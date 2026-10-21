@@ -232,7 +232,7 @@ public class RemoteAdapter extends DefaultTableCellRenderer {
             }
          }
 
-         var41 = var5 % 2;
+         var41 = (String)(var5 % 2);
       }
 
       String var15 = var41;
@@ -1248,6 +1248,7 @@ public class RemoteAdapter extends DefaultTableCellRenderer {
          }
       }
    }
+   private static Object var34;
 }
 
 

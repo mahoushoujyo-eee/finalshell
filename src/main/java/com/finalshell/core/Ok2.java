@@ -180,7 +180,7 @@ public abstract class Ok2 implements CA3_2, Xd4 {
 
       while (true) {
          if (var7 < var6) {
-            var10000 = var5[var7];
+            var10000 = (String)(var5[var7]);
             if (var3 != null) {
                break;
             }
@@ -326,7 +326,7 @@ public abstract class Ok2 implements CA3_2, Xd4 {
 
       while (true) {
          if (var6 < var5) {
-            var10000 = var4[var6];
+            var10000 = (String)(var4[var6]);
             if (var2 != null) {
                break;
             }

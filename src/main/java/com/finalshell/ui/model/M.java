@@ -9,7 +9,7 @@ public int compareTo(Enum o) {
    public static M dropdown;
 
    public static M[] values() {
-      return (M[])F.clone();
+      return (M[])com.finalshell.reflect.Ref.cloneObject(F);
    }
 
    public static M valueOf(String var0) {
@@ -117,6 +117,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object F;
 }
 
 

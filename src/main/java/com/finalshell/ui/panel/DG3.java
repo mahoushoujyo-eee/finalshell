@@ -168,7 +168,7 @@ public class DG3 extends JPanel implements AL {
          throw var20.getTargetException();
       }
 
-      var10005 = Registry.packArgs(var1, var10006.append((String)var10007).toString());
+      var10005 = Registry.packArgs(var1, ((java.lang.StringBuilder)var10006).append((String)var10007).toString());
       long var13 = 407014907239672455L;
       Object var12 = var10005;
       var10005 = Ref.h(407014907239672455L, var12, var13);

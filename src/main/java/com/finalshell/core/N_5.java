@@ -53,7 +53,7 @@ public final class N_5 {
          var2 = var10000 + var10001;
       } while (!var1);
 
-      return var3.toArray(new File[var3.size()]);
+      return (File[])(var3.toArray(new File[var3.size()]));
    }
 
    @C_9

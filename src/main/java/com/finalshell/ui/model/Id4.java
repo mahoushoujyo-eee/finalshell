@@ -16,7 +16,7 @@ public int compareTo(Enum o) {
    public static Integer[] b;
 
    public static Id4[] values() {
-      return (Id4[])c.clone();
+      return (Id4[])com.finalshell.reflect.Ref.cloneObject(c);
    }
 
    public static Id4 valueOf(String var0) {
@@ -192,6 +192,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object c;
 }
 
 

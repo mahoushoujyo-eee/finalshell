@@ -30,7 +30,7 @@ public final class RN_2 extends R8_2 {
    }
 
    public C_r_2[] a() {
-      return this.D.toArray(new C_r_2[this.D.size()]);
+      return (C_r_2[])(this.D.toArray(new C_r_2[this.D.size()]));
    }
 
    @C_9

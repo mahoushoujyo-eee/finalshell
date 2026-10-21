@@ -96,7 +96,7 @@ public class Af2 implements TreeSelectionListener {
          throw var26.getTargetException();
       }
 
-var28 = new Af2(var10007);
+var28 = (ImportExportPanel)(new Af2(var10007));
       String var33 = var32.getParent();
       long var25 = 348708854043337366L;
       String var24 = var33;

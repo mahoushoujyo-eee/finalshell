@@ -78,7 +78,7 @@ public class XP_2 {
                   return (boolean)var2;
                }
 
-               if (var2 != 0) {
+               if (var2) {
                   if (var3 != null) {
                      return var1 != 0;
                   }
@@ -1085,7 +1085,7 @@ public class XP_2 {
             long[] var6 = new long[8];
             int var3 = 0;
             String var4 = "G\u0092WÞ\u0003[\u0005\u009e\u0012ï\twæû<\u0013Ü<!ö\u000el\\\u0088ñF)d,\u001d[Éß9í\ruØLp¬Ö±âp8ÉS";
-            var5 = "G\u0092WÞ\u0003[\u0005\u009e\u0012ï\twæû<\u0013Ü<!ö\u000el\\\u0088ñF)d,\u001d[Éß9í\ruØLp¬Ö±âp8ÉS".length();
+            var5 = (("G\u0092WÞ\u0003[\u0005\u009e\u0012ï\twæû<\u0013Ü<!ö\u000el\\\u0088ñF)d,\u001d[Éß9í\ruØLp¬Ö±âp8ÉS".length()) != 0);
             byte var2 = 0;
 
             label40:

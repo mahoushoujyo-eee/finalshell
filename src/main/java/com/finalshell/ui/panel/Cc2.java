@@ -172,7 +172,7 @@ public class Cc2 extends F8 {
             return;
          }
 
-         var22 = var4.contains(a(-29618, 14278));
+         var22 = (String)(var4.contains(a(-29618, 14278)));
       }
 
       if (var2 == null) {
@@ -180,7 +180,7 @@ public class Cc2 extends F8 {
             return;
          }
 
-         var22 = var4.contains(a(-29625, 6854));
+         var22 = (String)(var4.contains(a(-29625, 6854)));
       }
 
       if (var2 == null) {
@@ -188,7 +188,7 @@ public class Cc2 extends F8 {
             return;
          }
 
-         var22 = var4.contains(a(-29619, 31946));
+         var22 = (String)(var4.contains(a(-29619, 31946)));
       }
 
       if (var2 == null) {
@@ -196,7 +196,7 @@ public class Cc2 extends F8 {
             return;
          }
 
-         var22 = var4.contains(a(-29626, -18639));
+         var22 = (String)(var4.contains(a(-29626, -18639)));
       }
 
       String var10005;
@@ -225,7 +225,7 @@ public class Cc2 extends F8 {
          }
 
          Object var12 = 210912483329447649L;
-         if (!(this > ((String)Ref.g(210912483329447649L, var12)).length())) {
+         if (!(0 > ((String)Ref.g(210912483329447649L, var12)).length())) {
             return;
          }
 

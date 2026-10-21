@@ -23,12 +23,12 @@ public class Rh2_2 extends R_5 {
 
    @Override
    public C_5 J() {
-      return new HE();
+      return (C_5)(new HE());
    }
 
    @Override
    public N2_5 O() {
-      return new HI_2();
+      return (N2_5)(new HI_2());
    }
 
    @Override
@@ -48,12 +48,12 @@ public class Rh2_2 extends R_5 {
 
    @Override
    public W3_4 C() {
-      return AccessController.doPrivileged(new A_2_2(this));
+      return (W3_4)(AccessController.doPrivileged(new A_2_2(this)));
    }
 
    @Override
    public W3_4 w(ClassLoader var1) {
-      return AccessController.doPrivileged(new RE_2(this, var1));
+      return (W3_4)(AccessController.doPrivileged(new RE_2(this, var1)));
    }
 
    static {

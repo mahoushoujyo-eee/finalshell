@@ -259,7 +259,7 @@ var10003 = new JMenuItem(var10004);
                }
             }
 
-            var10002 = this;
+            var10002 = (Integer)(this);
             Object var39 = 571912682165835448L;
             Ref.g(571912682165835448L, var39);
             Object[] var81 = Registry.emptyArgs();

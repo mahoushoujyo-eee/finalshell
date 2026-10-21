@@ -5543,7 +5543,7 @@ public final class Cz2 {
                                     long[] var6 = new long[6];
                                     var3 = 0;
                                     String var4 = "DÆge¾+N`Dru¦A\u0014S\u00195µ8]áWíî\u001c\u0087°\u009a®nl\u0080";
-                                    var5 = "DÆge¾+N`Dru¦A\u0014S\u00195µ8]áWíî\u001c\u0087°\u009a®nl\u0080".length();
+                                    var5 = (("DÆge¾+N`Dru¦A\u0014S\u00195µ8]áWíî\u001c\u0087°\u009a®nl\u0080".length()) != 0);
                                     byte var2 = 0;
 
                                     label52:
@@ -5629,7 +5629,7 @@ public final class Cz2 {
                                                 }
 
                                                 var4 = "6\u0095©)\u0004þç©0Q`_¸AÑè";
-                                                var5 = "6\u0095©)\u0004þç©0Q`_¸AÑè".length();
+                                                var5 = (("6\u0095©)\u0004þç©0Q`_¸AÑè".length()) != 0);
                                                 var2 = 0;
                                           }
 
@@ -5701,6 +5701,7 @@ public final class Cz2 {
          }
       }
    }
+   private static Object var24;
 }
 
 

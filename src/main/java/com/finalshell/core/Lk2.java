@@ -180,7 +180,7 @@ public class Lk2 {
          throw var3.getTargetException();
       }
 
-      var10001.setText((String)var10002);
+      ((javax.swing.text.JTextComponent)var10001).setText((String)var10002);
       var0.setLineWrap(true);
       var0.setWrapStyleWord(true);
       return var0;
@@ -2261,7 +2261,7 @@ public class Lk2 {
                      try {
                         var29 = 0;
                      } catch (IOException | FontFormatException var14) {
-                        var30 = var14;
+                        var30 = (FontFormatException)(var14);
                         boolean var31 = false;
                         break label89;
                      }
@@ -2271,7 +2271,7 @@ public class Lk2 {
                      var5 = Font.createFont(var29, new FileInputStream(var22)).deriveFont(var1, (float)var2);
                      return var5;
                   } catch (IOException | FontFormatException var13) {
-                     var30 = var13;
+                     var30 = (FontFormatException)(var13);
                      boolean var32 = false;
                   }
                }
@@ -2734,7 +2734,7 @@ public class Lk2 {
          throw var3.getTargetException();
       }
 
-      return var10001.substring(a(22081, 7904724917460113939L), a(32650, 4379114587436528592L));
+      return ((java.lang.String)var10001).substring(a(22081, 7904724917460113939L), a(32650, 4379114587436528592L));
    }
 
    public static void R() {
@@ -5501,7 +5501,7 @@ public class Lk2 {
                }
 
                try {
-                  var10000 = var0.getClass();
+                  var10000 = (Ky4[])(var0.getClass());
                   if (var1 == null) {
                      break label64;
                   }
@@ -5533,12 +5533,12 @@ public class Lk2 {
             throw var9.getTargetException();
          }
 
-         var3 = new String(var10003);
+         var3 = (Tf4)(new String(var10003));
          var2 = var10001;
          return var2;
       }
 
-      var12 = (com.finalshell.ui.model.Ck4)var10000;
+      var12 = (Ck4)((com.finalshell.ui.model.Ck4)var10000);
       String var18 = (String)(Registry.emptyArgs());
       var7 = 605430732347023634L;
       var6 = var18;
@@ -5550,7 +5550,7 @@ public class Lk2 {
          throw var8.getTargetException();
       }
 
-      var12 = new String(var18);
+      var12 = (Ck4)(new String(var18));
       return var15;
    }
 
@@ -6137,7 +6137,7 @@ var10004 = new Color(var12, (int)var10006, var13);
 
       label60: {
          try {
-            var28 = var3;
+            var28 = (long)(var3);
             if (var4 == null) {
                break label60;
             }
@@ -6149,7 +6149,7 @@ var10004 = new Color(var12, (int)var10006, var13);
             throw a(var25);
          }
 
-         var28 = var3;
+         var28 = (long)(var3);
       }
 
       int var8 = var28.length();
@@ -8469,7 +8469,7 @@ var10004 = new Color(var12, (int)var10006, var13);
          throw var8.getTargetException();
       }
 
-      String var3 = var10002.append((String)var10003).append(var2).append(var1).toString();
+      String var3 = ((java.lang.StringBuilder)var10002).append((String)var10003).append(var2).append(var1).toString();
       return var3.replaceAll(b(-17820, -19938), "/");
    }
 
@@ -10907,7 +10907,7 @@ var10004 = new Color(var12, (int)var10006, var13);
                      var14 = new long[110];
                      int var11 = 0;
                      String var12 = "L\u0097;þæ¬È8å\u001e£ç\u008ab\u00829»e\u0089)ý\u0081\n)çQ5Tõ¾åó\u001e$lÿfétSM\u0088(\u0012\u009a²1\u0087¡\u0002uäðøsJ4Z\u0006Û\u0001ÀÃþ\u008d£\u009cmôZ\u0096\u008cÒ\u009fÉ²\u0015@ ´\u0094\u001cª8xûZÐËÁéÀ\u0091\u009fl3¦Ê¿wn)*+\u0004ÃÔ\u0017RH\bÕ\u009eQìÉ[lP¬ÆÒ*\u0010\u0080\u0011ÐÂ\u0099àµn1ÙÑò\u000fË\u000f\u0080jõÐÌ3\u0082\u0080\u0097ìÂÂ\u0014:'³§Qg¼'\u009bÅ\u0083F/\u0010\u00938Ü^\u008ad\u0087ùâ!©~jË±>LRD\"?x\u0002ÿó§\u0084\u0091Mcn\u0096a\u008f\u009e\u009a¯\u00894Ñrò\u0081OÜð¯Ú\n\u0005TL\u0005â7\u0082\u0081\u0006]ão1ÿ (\u000bò&»\u009dÚ\u001a.cP\u000f´Ã/igo\u001bZª\u0097Ê¹øpø\u0095?xßs\u008f\u0006R\u0094\u00adä\u0087#=G®\u0014 Ä\u000fq¤Çu\bÄû¶\"iqÙV\u007fH\u009diÁ8Ù7U\u0087\u0013~Ñ\u001b6'\u0091Ãt\u001bÈ'<\u0017Û ÓåL\u0083?Hp~\u0083Ý®ò\u0085JZ0y´\r\u001eà\u0086\u008a0\u008fY\u008b/dÍFkëô{<øÎ·8Ë\u0006ÔJùÏ£\t\u001d úÞ\u009c<\u0012\u0095L$rÑOÑ+aÔ\u0096y\u0097@\u0081®5+»ÝV²¤¸zÙ.°\u001aúIÆgØ¦\u0092ßÛÒy\u009a¡{\u0083`\u000b\n;YÎ`Aw!6\u0093)\u008d³iÆ?ñOº;\u0016-ûÞþ\u0010\u0001Ï\"Ô\u0090E|«øM\u001e«\u0000Û\u0013)\u009aºË\u008fµ\u009dé`Ê^>³0dISæ»\u007f\noÓB\nÐù×\u0096Eþ¿´ò¨\u0097÷j\r\u0017\u0002\u000bÿá4!¡jð\u0013êSqËTÈç¼\u0014xHz-\u0085yé\u0096Î\u0084\u008c;oè\u0000Óa\u0003\u008f^hÊk8\u0013a  À_NÑÚ\u0017A½mB\u00061!£_Ï³\u0006Û\u0011\u0004¢2\u0002º\u001b.\u000eE-ÉÎ¨}SI]èMÈ\\\u0098oJ×ï\u009d§ºu#í\u000bz<@.\u0019\u0019\u000fÌ¤\u0015©¹ÍÏIÌ\u0013M\u0092|R8\u0016\u007fcÜ\u0015ó\\6\u0013Z\u008a\u0099¢\u008e\u0010û\u000fÖ\u009c\u008dÐ\u0081M\u0011ÿñ\u000eÁPä\u0083Â`q?3ÕÞ\u0089Ì\u00990Ù#áó¿\u0011q²ö\u008bµÍ \u0093á_\u0002\u0014\u001fÏê.&I¸îj±\u0018»\u000eÕ¤NÔ\u0007\u001b®lAS22Hì\u0089\u0092.v\u0007!\u0014\u0001\u0095\u0081.ïcY+Lgï1k)ÁEFÀ°\u0000dFý¶¢6ÿNÖm`\u0084a2\u0004ëÓ¶É*\u0085HðÇÒ ©L%\u008b\u001e\u000b\u0014äbxÄÌi³\u001fi¤\u0017\u0081ßä ,çìÖ>TÞqÿ-±\u0096Ùß\u001fT_\u008dêz\u0017À×\u009bj\u0016ó\u0012)¶!\u000bö]m\u0099£: \u001e\u009a\u001dGq\u0017%ÀM(ÁË:0\tæÓ§ÕDï|Î\trmÄwÙf\u0003\u001aÁò\u0096\u0093ijn¾\u008fq\u0004";
-                     var13 = "L\u0097;þæ¬È8å\u001e£ç\u008ab\u00829»e\u0089)ý\u0081\n)çQ5Tõ¾åó\u001e$lÿfétSM\u0088(\u0012\u009a²1\u0087¡\u0002uäðøsJ4Z\u0006Û\u0001ÀÃþ\u008d£\u009cmôZ\u0096\u008cÒ\u009fÉ²\u0015@ ´\u0094\u001cª8xûZÐËÁéÀ\u0091\u009fl3¦Ê¿wn)*+\u0004ÃÔ\u0017RH\bÕ\u009eQìÉ[lP¬ÆÒ*\u0010\u0080\u0011ÐÂ\u0099àµn1ÙÑò\u000fË\u000f\u0080jõÐÌ3\u0082\u0080\u0097ìÂÂ\u0014:'³§Qg¼'\u009bÅ\u0083F/\u0010\u00938Ü^\u008ad\u0087ùâ!©~jË±>LRD\"?x\u0002ÿó§\u0084\u0091Mcn\u0096a\u008f\u009e\u009a¯\u00894Ñrò\u0081OÜð¯Ú\n\u0005TL\u0005â7\u0082\u0081\u0006]ão1ÿ (\u000bò&»\u009dÚ\u001a.cP\u000f´Ã/igo\u001bZª\u0097Ê¹øpø\u0095?xßs\u008f\u0006R\u0094\u00adä\u0087#=G®\u0014 Ä\u000fq¤Çu\bÄû¶\"iqÙV\u007fH\u009diÁ8Ù7U\u0087\u0013~Ñ\u001b6'\u0091Ãt\u001bÈ'<\u0017Û ÓåL\u0083?Hp~\u0083Ý®ò\u0085JZ0y´\r\u001eà\u0086\u008a0\u008fY\u008b/dÍFkëô{<øÎ·8Ë\u0006ÔJùÏ£\t\u001d úÞ\u009c<\u0012\u0095L$rÑOÑ+aÔ\u0096y\u0097@\u0081®5+»ÝV²¤¸zÙ.°\u001aúIÆgØ¦\u0092ßÛÒy\u009a¡{\u0083`\u000b\n;YÎ`Aw!6\u0093)\u008d³iÆ?ñOº;\u0016-ûÞþ\u0010\u0001Ï\"Ô\u0090E|«øM\u001e«\u0000Û\u0013)\u009aºË\u008fµ\u009dé`Ê^>³0dISæ»\u007f\noÓB\nÐù×\u0096Eþ¿´ò¨\u0097÷j\r\u0017\u0002\u000bÿá4!¡jð\u0013êSqËTÈç¼\u0014xHz-\u0085yé\u0096Î\u0084\u008c;oè\u0000Óa\u0003\u008f^hÊk8\u0013a  À_NÑÚ\u0017A½mB\u00061!£_Ï³\u0006Û\u0011\u0004¢2\u0002º\u001b.\u000eE-ÉÎ¨}SI]èMÈ\\\u0098oJ×ï\u009d§ºu#í\u000bz<@.\u0019\u0019\u000fÌ¤\u0015©¹ÍÏIÌ\u0013M\u0092|R8\u0016\u007fcÜ\u0015ó\\6\u0013Z\u008a\u0099¢\u008e\u0010û\u000fÖ\u009c\u008dÐ\u0081M\u0011ÿñ\u000eÁPä\u0083Â`q?3ÕÞ\u0089Ì\u00990Ù#áó¿\u0011q²ö\u008bµÍ \u0093á_\u0002\u0014\u001fÏê.&I¸îj±\u0018»\u000eÕ¤NÔ\u0007\u001b®lAS22Hì\u0089\u0092.v\u0007!\u0014\u0001\u0095\u0081.ïcY+Lgï1k)ÁEFÀ°\u0000dFý¶¢6ÿNÖm`\u0084a2\u0004ëÓ¶É*\u0085HðÇÒ ©L%\u008b\u001e\u000b\u0014äbxÄÌi³\u001fi¤\u0017\u0081ßä ,çìÖ>TÞqÿ-±\u0096Ùß\u001fT_\u008dêz\u0017À×\u009bj\u0016ó\u0012)¶!\u000bö]m\u0099£: \u001e\u009a\u001dGq\u0017%ÀM(ÁË:0\tæÓ§ÕDï|Î\trmÄwÙf\u0003\u001aÁò\u0096\u0093ijn¾\u008fq\u0004";
+                     var13 = (boolean)("L\u0097;þæ¬È8å\u001e£ç\u008ab\u00829»e\u0089)ý\u0081\n)çQ5Tõ¾åó\u001e$lÿfétSM\u0088(\u0012\u009a²1\u0087¡\u0002uäðøsJ4Z\u0006Û\u0001ÀÃþ\u008d£\u009cmôZ\u0096\u008cÒ\u009fÉ²\u0015@ ´\u0094\u001cª8xûZÐËÁéÀ\u0091\u009fl3¦Ê¿wn)*+\u0004ÃÔ\u0017RH\bÕ\u009eQìÉ[lP¬ÆÒ*\u0010\u0080\u0011ÐÂ\u0099àµn1ÙÑò\u000fË\u000f\u0080jõÐÌ3\u0082\u0080\u0097ìÂÂ\u0014:'³§Qg¼'\u009bÅ\u0083F/\u0010\u00938Ü^\u008ad\u0087ùâ!©~jË±>LRD\"?x\u0002ÿó§\u0084\u0091Mcn\u0096a\u008f\u009e\u009a¯\u00894Ñrò\u0081OÜð¯Ú\n\u0005TL\u0005â7\u0082\u0081\u0006]ão1ÿ (\u000bò&»\u009dÚ\u001a.cP\u000f´Ã/igo\u001bZª\u0097Ê¹øpø\u0095?xßs\u008f\u0006R\u0094\u00adä\u0087#=G®\u0014 Ä\u000fq¤Çu\bÄû¶\"iqÙV\u007fH\u009diÁ8Ù7U\u0087\u0013~Ñ\u001b6'\u0091Ãt\u001bÈ'<\u0017Û ÓåL\u0083?Hp~\u0083Ý®ò\u0085JZ0y´\r\u001eà\u0086\u008a0\u008fY\u008b/dÍFkëô{<øÎ·8Ë\u0006ÔJùÏ£\t\u001d úÞ\u009c<\u0012\u0095L$rÑOÑ+aÔ\u0096y\u0097@\u0081®5+»ÝV²¤¸zÙ.°\u001aúIÆgØ¦\u0092ßÛÒy\u009a¡{\u0083`\u000b\n;YÎ`Aw!6\u0093)\u008d³iÆ?ñOº;\u0016-ûÞþ\u0010\u0001Ï\"Ô\u0090E|«øM\u001e«\u0000Û\u0013)\u009aºË\u008fµ\u009dé`Ê^>³0dISæ»\u007f\noÓB\nÐù×\u0096Eþ¿´ò¨\u0097÷j\r\u0017\u0002\u000bÿá4!¡jð\u0013êSqËTÈç¼\u0014xHz-\u0085yé\u0096Î\u0084\u008c;oè\u0000Óa\u0003\u008f^hÊk8\u0013a  À_NÑÚ\u0017A½mB\u00061!£_Ï³\u0006Û\u0011\u0004¢2\u0002º\u001b.\u000eE-ÉÎ¨}SI]èMÈ\\\u0098oJ×ï\u009d§ºu#í\u000bz<@.\u0019\u0019\u000fÌ¤\u0015©¹ÍÏIÌ\u0013M\u0092|R8\u0016\u007fcÜ\u0015ó\\6\u0013Z\u008a\u0099¢\u008e\u0010û\u000fÖ\u009c\u008dÐ\u0081M\u0011ÿñ\u000eÁPä\u0083Â`q?3ÕÞ\u0089Ì\u00990Ù#áó¿\u0011q²ö\u008bµÍ \u0093á_\u0002\u0014\u001fÏê.&I¸îj±\u0018»\u000eÕ¤NÔ\u0007\u001b®lAS22Hì\u0089\u0092.v\u0007!\u0014\u0001\u0095\u0081.ïcY+Lgï1k)ÁEFÀ°\u0000dFý¶¢6ÿNÖm`\u0084a2\u0004ëÓ¶É*\u0085HðÇÒ ©L%\u008b\u001e\u000b\u0014äbxÄÌi³\u001fi¤\u0017\u0081ßä ,çìÖ>TÞqÿ-±\u0096Ùß\u001fT_\u008dêz\u0017À×\u009bj\u0016ó\u0012)¶!\u000bö]m\u0099£: \u001e\u009a\u001dGq\u0017%ÀM(ÁË:0\tæÓ§ÕDï|Î\trmÄwÙf\u0003\u001aÁò\u0096\u0093ijn¾\u008fq\u0004");
                         // [VF] .length();
                      byte var10 = 0;
 
@@ -11083,7 +11083,7 @@ var10004 = new Color(var12, (int)var10006, var13);
                                  }
 
                                  var12 = ("\u0081:,1¡\u001aCÅjMZ`\u0085][\u0084") != 0;
-                                 var13 = "\u0081:,1¡\u001aCÅjMZ`\u0085][\u0084".length();
+                                 var13 = (("\u0081:,1¡\u001aCÅjMZ`\u0085][\u0084".length()) != 0);
                                  var10 = 0;
                            }
 

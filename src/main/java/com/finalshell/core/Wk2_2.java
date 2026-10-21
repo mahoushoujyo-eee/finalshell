@@ -37,7 +37,7 @@ public class Wk2_2 implements Ak2, X4 {
       if (var4 != null) {
          if (var2 == StringBuffer.class) {
             P7 var7 = var1.N;
-            var10000 = var7;
+            var10000 = (Type)(var7);
             if (var4 != null) {
                if (var7.P() == 4) {
                   String var10 = var7.z();
@@ -61,12 +61,12 @@ public class Wk2_2 implements Ak2, X4 {
             return var2;
          }
 
-         var10001 = StringBuilder.class;
+         var10001 = (Class<StringBuffer>)(StringBuilder.class);
       }
 
       if (var10000 == var10001) {
          P7 var5 = var1.N;
-         var10000 = var5;
+         var10000 = (Type)(var5);
          if (var4 != null) {
             if (var5.P() == 4) {
                String var8 = var5.z();

@@ -465,7 +465,7 @@ public class Xw2 extends JDialog {
          }
 
          Object var34 = 599144936174029496L;
-         var10008 = ((ArrayList)Ref.g(599144936174029496L, var34)).size();
+         var10008 = (Kl4)(((ArrayList)Ref.g(599144936174029496L, var34)).size());
          break;
       }
 

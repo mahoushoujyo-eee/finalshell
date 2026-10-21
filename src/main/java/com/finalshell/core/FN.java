@@ -7179,7 +7179,7 @@ public final class FN extends FV_2 {
                      long[] var6 = new long[6];
                      int var3 = 0;
                      String var4 = "ÈtsHÿÐ\u009b\u008bê`y¹\u0081ÍR¶E\u0083/»¹ñw`\u0083ô¢\nd]ÓÞ";
-                     var5 = "ÈtsHÿÐ\u009b\u008bê`y¹\u0081ÍR¶E\u0083/»¹ñw`\u0083ô¢\nd]ÓÞ".length();
+                     var5 = (("ÈtsHÿÐ\u009b\u008bê`y¹\u0081ÍR¶E\u0083/»¹ñw`\u0083ô¢\nd]ÓÞ".length()) != 0);
                      byte var2 = 0;
 
                      label44:
@@ -7222,7 +7222,7 @@ public final class FN extends FV_2 {
                                  }
 
                                  var4 = ("´Eã\u001b\"÷¥hYG\u0099°`Ñê°") != 0;
-                                 var5 = "´Eã\u001b\"÷¥hYG\u0099°`Ñê°".length();
+                                 var5 = (("´Eã\u001b\"÷¥hYG\u0099°`Ñê°".length()) != 0);
                                  var2 = 0;
                            }
 

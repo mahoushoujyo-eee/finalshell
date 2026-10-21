@@ -1557,6 +1557,7 @@ public class KC extends DefaultCellEditor {
          var9 = var10.charAt(var8);
       }
    }
+   private static int var54;
 }
 
 

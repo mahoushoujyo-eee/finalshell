@@ -20,7 +20,7 @@ public class Y8 implements ActionListener {
       label40: {
          boolean var2;
          var2 = K4_2.Z$boolean();
-         var10000 = C4.i(this.y);
+         var10000 = (int)(C4.i(this.y));
          label36:
          if (var2) {
             if (var10000 != 0) {
@@ -43,7 +43,7 @@ public class Y8 implements ActionListener {
                break label40;
             }
 
-            var10000 = C4.i(this.y);
+            var10000 = (int)(C4.i(this.y));
          }
 
          if (var10000 == 0) {
@@ -66,6 +66,7 @@ public class Y8 implements ActionListener {
 
       C4.T$WC(var3).Y();
    }
+   private static int var10000;
 }
 
 

@@ -292,7 +292,7 @@ public class RemoteProcessManager {
          if (var4.hasNext()) {
       long var36;
             W2 var5 = (W2)var4.next();
-            var36 = var5;
+            var36 = (long)(var5);
             Object var11 = 260853473545280110L;
             Object[] var10002 = Registry.packArgs(Ref.g(260853473545280110L, var11));
             long var14 = 526767780011823972L;
@@ -1529,7 +1529,7 @@ var10004 = new RemoteProcessManager(var1, (int)this, (String)var10007, var10008)
 
       while (true) {
          if (var5.hasNext()) {
-            var10000 = (String)var5.next();
+            var10000 = (String[])((String)var5.next());
             if (var3 != null) {
                break;
             }
@@ -1541,7 +1541,7 @@ var10004 = new RemoteProcessManager(var1, (int)this, (String)var10007, var10008)
             }
          }
 
-         var10000 = (String)Registry.lookupField(611613352793368552L).get(null) + var4.toString();
+         var10000 = (String[])((String)Registry.lookupField(611613352793368552L).get(null) + var4.toString());
          break;
       }
 
@@ -2057,7 +2057,7 @@ var10004 = new RemoteProcessManager(var1, (int)this, (String)var10007, var10008)
                String[] var10002 = var5;
                int var73 = var6;
                if (var3 == null) {
-                  var71 = var5[var6].endsWith("\n");
+                  var71 = (byte)(var5[var6].endsWith("\n"));
                   if (var3 != null) {
                      break;
                   }
@@ -3224,7 +3224,7 @@ var10004 = new RemoteProcessManager(var1, (int)this, (String)var10007, var10008)
       String[] var21 = new String[33];
       int var19 = 0;
       var18 = "lî ëu\u007f%®\u0014ß\u0085N\u008fÉ2\nhpØ{NöaÊ\u0096í\u0000é\u0093\u0007B©i\u001d3½®\r\u0083ÿãkÃ\u0005gE'°\u0011\u000eK\u0005*$,Ýº\u0007·\u0002m\u0098Tï:\u0007F)Sý\u0093CÂ\u0010¶\u0082þ×ÿÓ¢\u0098\u008aÕDÜ\u0012.pë\u000b©B\u0019\u0090Ô¤ü\nU\u0003b\b\u0094»\t¯Ø\t«æ\u0006ïaj\u0091)c\u0004Æ\" Î\bäóõª\u009d\u001bÝ\u0010\tÇ¯Æ\u0098rþ\u008e0\u0018\u0002µH\u0018\u0098§»¼áÆ\u0001\u0002öÚ \u0013]ûë^£dæ½\u000b<\u000f\u0094\u0003U+m\u00062²h§÷\u0016\u0003x#1\u001cÓ\r5ÁPr\u001d¤©O2æ\u009duæ\u0001R,9)EÈõD\u0007A&¡\u0007´1õ\u001eÒ\u008eÞ\u0003_\u008aÕ\u0006\u0084ÖMâÅ\u007f\b\u009cA\bðøâ¯\u009b\u000b\u0099\u009a\u001f\u008b\u0014ÇäfV\u008e\u0002\t36X«¡\u0098ôüW\u000eÕ<!)¨\u00140CØ¼\u0001¥\u0015\u0081\rõn-Y\u001aC\\\u008d@©ý-Ö\u00147\u00113W3sÎzcû\u0082w&¢\u0000ë=e\u001f\u0083\b\u008b%\nÜ\u001að\u007fÚ\u0010,¥\u008e¶\u0083¨2D}ôîC\u00880.-";
-      var20 = "lî ëu\u007f%®\u0014ß\u0085N\u008fÉ2\nhpØ{NöaÊ\u0096í\u0000é\u0093\u0007B©i\u001d3½®\r\u0083ÿãkÃ\u0005gE'°\u0011\u000eK\u0005*$,Ýº\u0007·\u0002m\u0098Tï:\u0007F)Sý\u0093CÂ\u0010¶\u0082þ×ÿÓ¢\u0098\u008aÕDÜ\u0012.pë\u000b©B\u0019\u0090Ô¤ü\nU\u0003b\b\u0094»\t¯Ø\t«æ\u0006ïaj\u0091)c\u0004Æ\" Î\bäóõª\u009d\u001bÝ\u0010\tÇ¯Æ\u0098rþ\u008e0\u0018\u0002µH\u0018\u0098§»¼áÆ\u0001\u0002öÚ \u0013]ûë^£dæ½\u000b<\u000f\u0094\u0003U+m\u00062²h§÷\u0016\u0003x#1\u001cÓ\r5ÁPr\u001d¤©O2æ\u009duæ\u0001R,9)EÈõD\u0007A&¡\u0007´1õ\u001eÒ\u008eÞ\u0003_\u008aÕ\u0006\u0084ÖMâÅ\u007f\b\u009cA\bðøâ¯\u009b\u000b\u0099\u009a\u001f\u008b\u0014ÇäfV\u008e\u0002\t36X«¡\u0098ôüW\u000eÕ<!)¨\u00140CØ¼\u0001¥\u0015\u0081\rõn-Y\u001aC\\\u008d@©ý-Ö\u00147\u00113W3sÎzcû\u0082w&¢\u0000ë=e\u001f\u0083\b\u008b%\nÜ\u001að\u007fÚ\u0010,¥\u008e¶\u0083¨2D}ôîC\u00880.-";
+      var20 = (boolean)("lî ëu\u007f%®\u0014ß\u0085N\u008fÉ2\nhpØ{NöaÊ\u0096í\u0000é\u0093\u0007B©i\u001d3½®\r\u0083ÿãkÃ\u0005gE'°\u0011\u000eK\u0005*$,Ýº\u0007·\u0002m\u0098Tï:\u0007F)Sý\u0093CÂ\u0010¶\u0082þ×ÿÓ¢\u0098\u008aÕDÜ\u0012.pë\u000b©B\u0019\u0090Ô¤ü\nU\u0003b\b\u0094»\t¯Ø\t«æ\u0006ïaj\u0091)c\u0004Æ\" Î\bäóõª\u009d\u001bÝ\u0010\tÇ¯Æ\u0098rþ\u008e0\u0018\u0002µH\u0018\u0098§»¼áÆ\u0001\u0002öÚ \u0013]ûë^£dæ½\u000b<\u000f\u0094\u0003U+m\u00062²h§÷\u0016\u0003x#1\u001cÓ\r5ÁPr\u001d¤©O2æ\u009duæ\u0001R,9)EÈõD\u0007A&¡\u0007´1õ\u001eÒ\u008eÞ\u0003_\u008aÕ\u0006\u0084ÖMâÅ\u007f\b\u009cA\bðøâ¯\u009b\u000b\u0099\u009a\u001f\u008b\u0014ÇäfV\u008e\u0002\t36X«¡\u0098ôüW\u000eÕ<!)¨\u00140CØ¼\u0001¥\u0015\u0081\rõn-Y\u001aC\\\u008d@©ý-Ö\u00147\u00113W3sÎzcû\u0082w&¢\u0000ë=e\u001f\u0083\b\u008b%\nÜ\u001að\u007fÚ\u0010,¥\u008e¶\u0083¨2D}ôîC\u00880.-");
          // [VF] .length();
       char var17 = '\b';
       int var25 = -1;
@@ -3416,7 +3416,7 @@ var10004 = new RemoteProcessManager(var1, (int)this, (String)var10007, var10008)
                   }
 
                   var18 = ("\u0001³\u0089\u0084\u0097\u0014¼\u0006¨\u0085ñ\u008b\u000eY") != 0;
-                  var20 = "\u0001³\u0089\u0084\u0097\u0014¼\u0006¨\u0085ñ\u008b\u000eY".length();
+                  var20 = (("\u0001³\u0089\u0084\u0097\u0014¼\u0006¨\u0085ñ\u008b\u000eY".length()) != 0);
                   var17 = 7;
                   var25 = -1;
             }

@@ -119,7 +119,7 @@ public class Q2_3 extends D2_5 {
                break label48;
             }
 
-            if (var2 != 0) {
+            if (var2) {
                throw new AssertionError(a(15419, -21432));
             }
          }

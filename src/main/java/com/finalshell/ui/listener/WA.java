@@ -99,7 +99,7 @@ public class WA implements MouseListener, KeyListener {
                      return;
                   }
 
-                  var6 = this.n;
+                  var6 = (Rectangle)(this.n);
                   var10001 = var3;
                   if (var2 == null) {
                      break label38;
@@ -112,7 +112,7 @@ public class WA implements MouseListener, KeyListener {
                   return;
                }
 
-               var6 = this.n;
+               var6 = (Rectangle)(this.n);
                var10001 = var3;
             }
 

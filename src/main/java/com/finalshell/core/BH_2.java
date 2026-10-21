@@ -1099,6 +1099,7 @@ public class BH_2 implements EU {
          var9 = var10.charAt(var8);
       }
    }
+   private static Object var16;
 }
 
 

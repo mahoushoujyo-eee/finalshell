@@ -159,7 +159,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
                      var3 = var10000;
                      var7 = (var2) ? 1 : 0;
                      if (var3 != null) {
-                        if (var2 != 0) {
+                        if (var2) {
                            var7 = (this.r) ? 1 : 0;
                            if (var3 == null) {
                               break label102;

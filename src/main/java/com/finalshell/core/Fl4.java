@@ -828,7 +828,7 @@ public class Fl4 implements C22 {
                   var10008 = Ref.h(281745090680724750L, var27, var28);
 
                   try {
-                     var122 = (Integer)var10008;
+                     var122 = (boolean)((Integer)var10008);
                   } catch (InvocationTargetException var103) {
                      throw var103.getTargetException();
                   }
@@ -866,7 +866,7 @@ public class Fl4 implements C22 {
                   var116 = Ref.h(372364150653756350L, var31, var32);
 
                   try {
-                     var118 = (Integer)var116;
+                     var118 = (boolean)((Integer)var116);
                   } catch (InvocationTargetException var102) {
                      throw var102.getTargetException();
                   }

@@ -60,7 +60,7 @@ public class Ac2 {
          if (var1.hasNext()) {
             Component var2 = (Component)var1.next();
             WC_2 var3 = (WC_2)Z.get(var2);
-            var10000 = var3;
+            var10000 = (Ky4[])(var3);
             if (var0 == null) {
                if (var0 == null) {
                   if (var3 != null) {
@@ -241,7 +241,7 @@ public class Ac2 {
       }
 
       int var6 = var8;
-      return W(var0, var1, var2, var3, var6);
+      return ((W(var0, var1, var2, var3, var6)) != 0);
    }
 
    public static com.finalshell.ui.panel.Wd2 W(Component var0, JComponent var1, WF var2, int var3, boolean var4) {
@@ -364,7 +364,7 @@ public class Ac2 {
                }
 
                if (var1 == null) {
-                  if (!var10000.isShowing()) {
+                  if (!((javax.swing.JComponent)var10000).isShowing()) {
                      break label45;
                   }
 
@@ -399,7 +399,7 @@ public class Ac2 {
       while (var1.hasNext()) {
          label38: {
             Component var2 = (Component)var1.next();
-            var10000 = var2;
+            var10000 = (Ky4[])(var2);
             if (var0 == null) {
                if (!var2.isShowing()) {
                   break label38;

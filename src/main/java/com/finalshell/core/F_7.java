@@ -38,7 +38,7 @@ public final class F_7 {
    public static java.lang.Class[] L(java.lang.Class var0) {
       HashSet var1 = new HashSet();
       n(var0, var1);
-      return var1.toArray(new java.lang.Class[var1.size()]);
+      return (Class[])(var1.toArray(new java.lang.Class[var1.size()]));
    }
 
    public static void n(java.lang.Class var0, Set var1) {

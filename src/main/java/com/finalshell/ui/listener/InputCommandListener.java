@@ -49,7 +49,7 @@ public class InputCommandListener implements ActionListener {
             return;
          }
 
-         var10002 = var4.equals("");
+         var10002 = (InputCommandListener)(var4.equals(""));
       }
 
       label91: {

@@ -84,7 +84,7 @@ public class AA implements EU {
             label40: {
                try {
                   this.m = Cipher.getInstance(a(-563, 27674) + var5);
-                  var14 = this.m;
+                  var14 = (long)(this.m);
                   var15 = var1;
                   if (var4) {
                      break label41;

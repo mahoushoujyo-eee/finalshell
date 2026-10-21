@@ -33,7 +33,7 @@ public class H2 extends MouseAdapter {
                return;
             }
 
-            var4 = this.h.E;
+            var4 = (File)(this.h.E);
             if (var2 != null) {
                break label45;
             }
@@ -45,7 +45,7 @@ public class H2 extends MouseAdapter {
             return;
          }
 
-         var4 = this.h.E;
+         var4 = (File)(this.h.E);
       }
 
       label25: {

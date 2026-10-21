@@ -52,7 +52,7 @@ public class OH3 extends BasicTabbedPaneUI {
             if (var13 >= 0) {
                int var14 = 0;
                int var15 = this.tabRuns[var13];
-               var20 = this;
+               var20 = (boolean)(this);
                if (var4 == null) {
                   break;
                }
@@ -161,7 +161,7 @@ public class OH3 extends BasicTabbedPaneUI {
                      return;
                   }
 
-                  var20 = this;
+                  var20 = (boolean)(this);
                   break label124;
                }
 
@@ -169,7 +169,7 @@ public class OH3 extends BasicTabbedPaneUI {
                   return;
                }
 
-               var20 = this;
+               var20 = (boolean)(this);
                break;
             }
 
@@ -178,7 +178,7 @@ public class OH3 extends BasicTabbedPaneUI {
                   return;
                }
 
-               var20 = this;
+               var20 = (boolean)(this);
                break label124;
             }
 
@@ -186,7 +186,7 @@ public class OH3 extends BasicTabbedPaneUI {
                return;
             }
 
-            var20 = this;
+            var20 = (boolean)(this);
             break;
          }
 
@@ -195,7 +195,7 @@ public class OH3 extends BasicTabbedPaneUI {
                return;
             }
 
-            var20 = this;
+            var20 = (boolean)(this);
          }
       }
 
@@ -321,7 +321,7 @@ public class OH3 extends BasicTabbedPaneUI {
       label132: {
          var12 = com.finalshell.ui.panel.Hd2.X();
          if (var12 != null) {
-            if (var11 != 0) {
+            if (var11) {
                var1.setPaint(
                   new GradientPaint(
                      (float)var7,
@@ -382,7 +382,7 @@ public class OH3 extends BasicTabbedPaneUI {
          int var14 = var10000;
          var10000 = (var11) ? 1 : 0;
          if (var12 != null) {
-            if (var11 != 0) {
+            if (var11) {
                var1.setColor(this.n);
                var10000 = var13;
                if (var12 != null) {

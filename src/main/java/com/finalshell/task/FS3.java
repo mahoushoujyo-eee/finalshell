@@ -40,7 +40,7 @@ public class FS3 implements Runnable {
                return;
             }
 
-            var10003 = this;
+            var10003 = (Boolean)(this);
             Object var8 = 516278995074848564L;
             Ref.g(516278995074848564L, var8);
             Object var10 = 389567756310007794L;

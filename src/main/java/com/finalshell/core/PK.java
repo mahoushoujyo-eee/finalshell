@@ -45,7 +45,7 @@ public final class PK {
          String[] var9 = var8.split("=");
          String var10 = V(var9[0]);
          String var11 = "";
-         var10000 = var9;
+         var10000 = (String)(var9);
          if (var1 == null) {
             if (var9.length > 1) {
                var11 = V(var9[1]);
@@ -65,7 +65,7 @@ public final class PK {
             var15 = var12;
          }
 
-         var15.add(var11);
+         ((java.math.BigInteger)var15).add(var11);
          if (var1 != null) {
             break;
          }

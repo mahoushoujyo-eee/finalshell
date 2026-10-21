@@ -168,7 +168,7 @@ public class KW extends ClassLoader {
                   var10000[var10001] = var19;
                   if (var3 >= var6) {
                      G = new HashMap();
-                     n = AccessController.doPrivileged(new Xw4());
+                     n = (ProtectionDomain)(AccessController.doPrivileged(new Xw4()));
                      java.lang.Class[] var14 = new java.lang.Class[(int)var0[13]];
                      var14[0] = Ok2.class;
                      var14[1] = O0.class;

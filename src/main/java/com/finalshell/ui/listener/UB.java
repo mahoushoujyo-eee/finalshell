@@ -45,7 +45,7 @@ public class UB implements MouseListener {
          }
 
          Object var6 = 312381051327550610L;
-         var19 = ((Nd2_2)Ref.g(312381051327550610L, var6)).rowAtPoint(var1.getPoint());
+         var19 = (String[])(((Nd2_2)Ref.g(312381051327550610L, var6)).rowAtPoint(var1.getPoint()));
       }
 
       String[] var3 = var19;

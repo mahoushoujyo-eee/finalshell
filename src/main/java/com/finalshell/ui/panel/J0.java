@@ -326,6 +326,7 @@ public class J0 extends JLabel {
          }
       }
    }
+   private static int var48;
 }
 
 

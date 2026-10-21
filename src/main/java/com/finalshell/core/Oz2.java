@@ -44,7 +44,7 @@ public class Oz2 implements KeyEventDispatcher {
          if (var4.hasNext()) {
             label53: {
                Qh2 var5 = (Qh2)var4.next();
-               var10004 = var5;
+               var10004 = (Z)(var5);
                if (var2 == null) {
                   Window var10005 = (Window)(Registry.emptyArgs());
                   long var15 = 466015795722654385L;
@@ -84,7 +84,7 @@ public class Oz2 implements KeyEventDispatcher {
             }
          }
 
-         var10004 = false;
+         var10004 = (Z)(false);
          break;
       }
 

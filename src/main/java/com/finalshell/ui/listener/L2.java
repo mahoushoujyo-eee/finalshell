@@ -90,6 +90,7 @@ public class L2 extends HG {
 
       var10000.mouseDragged(var1);
    }
+   private static Object var3;
 }
 
 

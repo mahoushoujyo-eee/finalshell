@@ -237,7 +237,7 @@ public class TP extends T4 {
          Insets var25;
          label230: {
             label258: {
-               var24 = var1.getSize();
+               var24 = (int)(var1.getSize());
                var25 = var1.getInsets();
                var10000 = (this.v) ? 1 : 0;
                label228:
@@ -418,7 +418,7 @@ public class TP extends T4 {
                         var43 = 1;
                      }
 
-                     var7 = var43;
+                     var7 = (byte)(var43);
                      if (var2 == 0) {
                         break label260;
                      }
@@ -501,7 +501,7 @@ public class TP extends T4 {
                   var47 = 0;
                }
 
-               var7 = var47;
+               var7 = (byte)(var47);
             }
 
             var14++;
@@ -520,7 +520,7 @@ public class TP extends T4 {
             var5 = T4.O();
             var10000 = (var1) ? 1 : 0;
             if (var5 == 0) {
-               if (var1 != 0) {
+               if (var1) {
                   var10000 = this.R;
                   if (var5 != 0) {
                      break label82;
@@ -1624,6 +1624,8 @@ public class TP extends T4 {
          }
       }
    }
+   private static Object var43;
+   private static Object var47;
 }
 
 

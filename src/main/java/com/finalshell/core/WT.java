@@ -80,7 +80,7 @@ public final class WT implements SwingConstants {
                               var12 = Math.max(var3, (int)a);
                            }
 
-                           var3 = var12;
+                           var3 = (int)(var12);
                         }
 
                         var5++;
@@ -141,6 +141,7 @@ public final class WT implements SwingConstants {
       byte var10001 = -1;
       a = var10002;
    }
+   private static Object var12;
 }
 
 

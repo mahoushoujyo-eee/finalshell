@@ -442,6 +442,7 @@ public class E2 extends JComponent {
          }
       }
    }
+   private static Object var8;
 }
 
 

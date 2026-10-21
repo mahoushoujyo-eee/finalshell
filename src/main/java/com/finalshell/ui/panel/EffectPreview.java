@@ -257,7 +257,7 @@ public class EffectPreview extends Z7 {
          throw var15.getTargetException();
       }
 
-      this.setText(var10008.append(var10009.size()).append(a(-9474, 16059)).toString());
+      this.setText(((java.lang.StringBuilder)var10008).append(var10009.size()).append(a(-9474, 16059)).toString());
    }
 
    @Override
@@ -1238,6 +1238,7 @@ public class EffectPreview extends Z7 {
          }
       }
    }
+   private static Object var23;
 }
 
 

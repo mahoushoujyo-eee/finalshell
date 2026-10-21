@@ -271,7 +271,7 @@ public class Ln2 {
          throw var28.getTargetException();
       }
 
-      String var3 = var10006.append((String)var10007).append(a(-17573, -32005)).toString();
+      String var3 = ((java.lang.StringBuilder)var10006).append((String)var10007).append(a(-17573, -32005)).toString();
       SyncTaskManifest var4 = new SyncTaskManifest();
       Object var1 = var10005;
 

@@ -369,7 +369,7 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
                         break label119;
                      }
 
-                     var10004 = var8;
+                     var10004 = (String)(var8);
                      if (var2 != null) {
                         break label120;
                      }
@@ -390,7 +390,7 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
                      break label119;
                   }
 
-                  var10004 = var8;
+                  var10004 = (String)(var8);
                }
 
                var3 = var10004;
@@ -542,7 +542,7 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
                throw var40.getTargetException();
             }
 
-var10015 = new AM(var10016);
+var10015 = (boolean)(new AM(var10016));
             this.setTitle(this.getAbsolutePath());
          }
 

@@ -44,7 +44,7 @@ public class U4 implements ActionListener {
             throw var17.getTargetException();
          }
       } else if (var10003 != null) {
-         var10003 = this;
+         var10003 = (String)(this);
          Object var9 = 546998639759791835L;
          Ref.g(546998639759791835L, var9);
          Object var11 = 487595327584450503L;

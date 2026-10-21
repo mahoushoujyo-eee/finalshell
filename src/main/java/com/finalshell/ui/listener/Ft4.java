@@ -48,7 +48,7 @@ public class Ft4 implements MouseListener {
             return;
          }
 
-         var10002 = this;
+         var10002 = (Boolean)(this);
          Object var7 = 276917056825011926L;
          Ref.g(276917056825011926L, var7);
          Object var9 = 142536030060271800L;

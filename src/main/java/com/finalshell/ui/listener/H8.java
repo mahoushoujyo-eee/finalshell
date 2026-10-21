@@ -31,7 +31,7 @@ public class H8 extends MouseAdapter {
 
       label33: {
          Object var3 = var10000;
-         var3.requestFocus();
+         ((javax.swing.JComponent)var3).requestFocus();
          var3.requestFocusInWindow();
          boolean var4 = com.finalshell.ui.panel.Kd4.M(this.c);
          if (var2 == null) {

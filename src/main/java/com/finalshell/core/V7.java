@@ -139,7 +139,7 @@ public class V7 {
       ArrayList var24;
             O0 var4 = var0.V(var3);
             LD3_2 var5 = new LD3_2();
-            var24 = var5;
+            var24 = (ArrayList)(var5);
             Object[] var10001 = Registry.packArgs(var4.b(a(18532, 28921)));
             long var7 = 225283838617508237L;
             Object[] var6 = var10001;
@@ -1254,6 +1254,7 @@ public class V7 {
          }
       }
    }
+   private static Object var24;
 }
 
 

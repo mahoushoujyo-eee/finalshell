@@ -50,7 +50,7 @@ public class LogPanel extends JPanel {
          throw var44.getTargetException();
       }
 
-var10003 = new Ui2((String)var10004);
+var10003 = (LogPanel)(new Ui2((String)var10004));
       long var9 = 402079050501623703L;
       JButton var8 = var10002;
       Ref.s(402079050501623703L, var8, var9);
@@ -69,7 +69,7 @@ var10003 = new Ui2((String)var10004);
          throw var43.getTargetException();
       }
 
-      var10006 = new int[(String)var10007];
+      var10006 = (int)(new int[(String)var10007]);
       JButton var1 = var10005;
       var1.addActionListener(new CP(this));
       JLabel var2 = new JLabel(a(23401, -27424));
@@ -106,7 +106,7 @@ var10003 = new Ui2((String)var10004);
          throw var42.getTargetException();
       }
 
-var10014 = new FH((String)var10015, Registry.lookupField(376642468236131701L).getBoolean(this));
+var10014 = (LogPanel)(new FH((String)var10015, Registry.lookupField(376642468236131701L).getBoolean(this)));
       JCheckBox var4 = var10013;
       var3.add(var4, a(23398, 29260));
       var4.addActionListener(new FH(this, var4));

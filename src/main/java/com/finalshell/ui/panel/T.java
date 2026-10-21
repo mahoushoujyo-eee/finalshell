@@ -472,7 +472,7 @@ public class T extends Ky4 {
             return;
          }
 
-         var10000 = this.J;
+         var10000 = (Ky4)(this.J);
       }
 
       label34: {
@@ -487,7 +487,7 @@ public class T extends Ky4 {
             }
 
             this.J = var1;
-            var10000 = var1;
+            var10000 = (Ky4)(var1);
          }
 
          if (var10000 != null) {
@@ -921,7 +921,7 @@ public class T extends Ky4 {
          T var5 = this;
          if (var2 == null) {
             if (this.B == com.finalshell.ui.model.P.save) {
-               var5 = var3;
+               var5 = (T)(var3);
                if (var2 == null) {
                   if (var3.size() <= 0) {
                      break label46;
@@ -1039,14 +1039,14 @@ public class T extends Ky4 {
          var2 = this;
          if (var1 == null) {
             if (this.B == com.finalshell.ui.model.P.save) {
-               var2 = this.R;
+               var2 = (T)(this.R);
                break label14;
             }
 
             var2 = this;
          }
 
-         var2 = var2.l;
+         var2 = (T)(var2.l);
       }
 
       this.W.add(var2);
@@ -1367,14 +1367,14 @@ public class T extends Ky4 {
          var2 = this;
          if (var1 == null) {
             if (this.Z) {
-               var2 = new Kl4(4, new Component[]{this.i, this.I, this.a});
+               var2 = (T)(new Kl4(4, new Component[]{this.i, this.I, this.a}));
                break label14;
             }
 
             var2 = this;
          }
 
-         var2 = var2.i;
+         var2 = (T)(var2.i);
       }
 
       this.n.add(var2);

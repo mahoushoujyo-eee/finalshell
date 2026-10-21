@@ -42,7 +42,7 @@ public class KT3 implements AWTEventListener {
                break label50;
             }
 
-            var15 = (var10000 instanceof Component) ? 1 : 0;
+            var15 = (Component)((var10000 instanceof Component) ? 1 : 0);
          }
 
          if (var15 == 0) {

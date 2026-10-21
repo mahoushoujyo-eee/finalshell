@@ -209,7 +209,7 @@ public class EditProxyServerDialog extends JDialog {
                      }
                   }
 
-                  var10036 = var2;
+                  var10036 = (String)(var2);
                   Object[] var124 = Registry.emptyArgs();
                   long var90 = 562951426394330328L;
                   Object[] var89 = var124;

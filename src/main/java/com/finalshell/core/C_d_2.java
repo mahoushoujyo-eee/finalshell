@@ -139,7 +139,7 @@ public class C_d_2 implements F_3_2 {
       while (true) {
          if (var4 < var3.length) {
             try {
-               var10000 = var3;
+               var10000 = (String[])(var3);
                if (var2 == null) {
                   break;
                }
@@ -154,7 +154,7 @@ public class C_d_2 implements F_3_2 {
             }
          }
 
-         var10000 = var3;
+         var10000 = (String[])(var3);
          break;
       }
 

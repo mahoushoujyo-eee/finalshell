@@ -213,7 +213,7 @@ public class YQ3 extends GT3 {
                                  break label486;
                               }
 
-                              var65 = this.r;
+                              var65 = (int)(this.r);
                            }
 
                            if (var5 != null) {
@@ -259,7 +259,7 @@ public class YQ3 extends GT3 {
                               break label488;
                            }
 
-                           var64 = this.r;
+                           var64 = (int)(this.r);
                         }
 
                         if (var5 != null) {
@@ -468,7 +468,7 @@ public class YQ3 extends GT3 {
                               continue;
                            }
 
-                           var71 = this.r;
+                           var71 = (int)(this.r);
                         }
 
                         if (var5 != null) {
@@ -549,7 +549,7 @@ public class YQ3 extends GT3 {
                         continue;
                      }
 
-                     var72 = this.r;
+                     var72 = (int)(this.r);
                   }
 
                   if (var5 != null) {
@@ -680,7 +680,7 @@ public class YQ3 extends GT3 {
                               break label501;
                            }
 
-                           var75 = this.r;
+                           var75 = (int)(this.r);
                         }
 
                         if (var5 != null) {

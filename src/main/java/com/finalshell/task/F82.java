@@ -168,6 +168,7 @@ public class F82 implements Runnable {
       a = var6;
       b = new Long[2];
    }
+   private static Object var27;
 }
 
 

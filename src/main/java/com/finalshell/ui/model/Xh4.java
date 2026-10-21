@@ -9,7 +9,7 @@ public int compareTo(Enum o) {
    public static Xh4 componentCenter;
 
    public static Xh4[] values() {
-      return (Xh4[])z.clone();
+      return (Xh4[])com.finalshell.reflect.Ref.cloneObject(z);
    }
 
    public static Xh4 valueOf(String var0) {
@@ -117,6 +117,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object z;
 }
 
 

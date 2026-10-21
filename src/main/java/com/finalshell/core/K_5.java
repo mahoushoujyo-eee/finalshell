@@ -193,7 +193,7 @@ public class K_5 {
          break;
       }
 
-      return var5.toArray(new String[var3.size()]);
+      return (String[])(var5.toArray(new String[var3.size()]));
    }
 
    public static java.lang.Class c(String param0) {
@@ -1428,7 +1428,7 @@ public class K_5 {
       var5 = 0;
       String[] var10000 = new String[3];
       String var4 = "\u0095èÜ\u0006\u00990ðÔ\u0093©\u0003ùáQ\u0004O\u0018í\u0002\u0005h8\u0096µ\u001e\u0004\u009f~÷Î\u0005\u000b¥ú\u0006\u0093\u0002¯e\u0006\u001fÃ ª\u0089f\u0004\u008e\u0093áW\u0004*ó\u0094©\u0004\u00ad8:Ó\u0007 \u001f\u001b?¾\u001f\b\u0005Æ\\ô®R\u0007ØÝ\u0004g]\u0014t\u0004\u0096Ñ\u0003í\u0005ñt\u0012«\u008e";
-      var6 = "\u0095èÜ\u0006\u00990ðÔ\u0093©\u0003ùáQ\u0004O\u0018í\u0002\u0005h8\u0096µ\u001e\u0004\u009f~÷Î\u0005\u000b¥ú\u0006\u0093\u0002¯e\u0006\u001fÃ ª\u0089f\u0004\u008e\u0093áW\u0004*ó\u0094©\u0004\u00ad8:Ó\u0007 \u001f\u001b?¾\u001f\b\u0005Æ\\ô®R\u0007ØÝ\u0004g]\u0014t\u0004\u0096Ñ\u0003í\u0005ñt\u0012«\u008e";
+      var6 = (boolean)("\u0095èÜ\u0006\u00990ðÔ\u0093©\u0003ùáQ\u0004O\u0018í\u0002\u0005h8\u0096µ\u001e\u0004\u009f~÷Î\u0005\u000b¥ú\u0006\u0093\u0002¯e\u0006\u001fÃ ª\u0089f\u0004\u008e\u0093áW\u0004*ó\u0094©\u0004\u00ad8:Ó\u0007 \u001f\u001b?¾\u001f\b\u0005Æ\\ô®R\u0007ØÝ\u0004g]\u0014t\u0004\u0096Ñ\u0003í\u0005ñt\u0012«\u008e");
          // [VF] .length();
       char var3 = 3;
       c(var10000);

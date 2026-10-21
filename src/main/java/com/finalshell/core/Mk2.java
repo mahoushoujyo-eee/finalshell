@@ -53,6 +53,7 @@ public class Mk2 implements Fb2 {
          ((JButton)Ref.g(402079050501623703L, var12)).setEnabled(true);
       }
    }
+   private static Object var16;
 }
 
 

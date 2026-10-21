@@ -10,7 +10,7 @@ public class C_j_2 extends C_D implements RW_2, F22 {
 
    @Override
    public com.finalshell.ui.model.S_3 Q() {
-      return RG_2.N$_S(this.D());
+      return (Fu2_2[])(RG_2.N$_S(this.D()));
    }
 
    @Override
@@ -41,7 +41,7 @@ public class C_j_2 extends C_D implements RW_2, F22 {
    }
 
    public boolean D() {
-      return RG_2.G(this.D(), new String[]{f});
+      return (Fu2_2[])(RG_2.G(this.D(), new String[]{f}));
    }
 
    static {

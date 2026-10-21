@@ -136,7 +136,7 @@ public class Ay2 {
             long[] var15 = new long[6];
             int var12 = 0;
             String var13 = "@×tÂë\u0002\u0081ZÇÄ\u0097\u0091\u0093\u000eês\u0019ÍõS\niÎJN|ú¢ÔR«ë";
-            var14 = "@×tÂë\u0002\u0081ZÇÄ\u0097\u0091\u0093\u000eês\u0019ÍõS\niÎJN|ú¢ÔR«ë".length();
+            var14 = (("@×tÂë\u0002\u0081ZÇÄ\u0097\u0091\u0093\u000eês\u0019ÍõS\niÎJN|ú¢ÔR«ë".length()) != 0);
             byte var11 = 0;
 
             label71:
@@ -175,7 +175,7 @@ public class Ay2 {
                         }
 
                         var13 = ("¦5\u0093C àB83¬\u008aÍ\u000fÛeÙ") != 0;
-                        var14 = "¦5\u0093C àB83¬\u008aÍ\u000fÛeÙ".length();
+                        var14 = (("¦5\u0093C àB83¬\u008aÍ\u000fÛeÙ".length()) != 0);
                         var11 = 0;
                   }
 

@@ -184,7 +184,7 @@ public class PrivateKeyPanel extends JPanel {
       label56: {
          label49: {
             try {
-               var10001 = var2.equals("");
+               var10001 = (String)(var2.equals(""));
                if (var1 == null) {
                   break label49;
                }

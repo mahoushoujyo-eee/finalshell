@@ -157,7 +157,7 @@ public class LS3 {
    }
 
    public static K6[] A(LS3 var0) {
-      return var0.J().toArray(new K6[var0.J().size()]);
+      return (K6[])(var0.J().toArray(new K6[var0.J().size()]));
    }
 
    public static IllegalArgumentException a(IllegalArgumentException var0) {

@@ -35,7 +35,7 @@ public class E42 extends EF3 {
             break label57;
          }
 
-         var14 = var13;
+         var14 = (int)(var13);
       }
 
       label48: {
@@ -86,6 +86,7 @@ public class E42 extends EF3 {
    public void L(JComponent var1, String var2, com.finalshell.ui.model.G9 var3, Object[] var4) {
       this.J((AbstractButton)var1, var2, var3, var4);
    }
+   private static Object var13;
 }
 
 

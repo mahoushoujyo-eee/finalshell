@@ -13,7 +13,7 @@ public int compareTo(Enum o) {
    public static Ky4[] L;
 
    public static Pt2[] values() {
-      return (Pt2[])G.clone();
+      return (Pt2[])com.finalshell.reflect.Ref.cloneObject(G);
    }
 
    public static Pt2 valueOf(String var0) {
@@ -131,6 +131,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object G;
 }
 
 

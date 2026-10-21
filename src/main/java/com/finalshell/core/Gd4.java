@@ -752,6 +752,7 @@ public class Gd4 extends Gy4 {
          }
       }
    }
+   private static int var35;
 }
 
 

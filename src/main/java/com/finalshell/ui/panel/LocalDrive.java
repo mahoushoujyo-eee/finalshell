@@ -326,7 +326,7 @@ public class LocalDrive extends Z7 {
                   throw var42.getTargetException();
                }
 
-               this.setText(var10011.append(var45).toString());
+               this.setText(((java.lang.StringBuilder)var10011).append(var45).toString());
                Object var27 = 363204830369816461L;
                var10011 = (JTextField)Ref.g(363204830369816461L, var27);
                new StringBuilder().append("");
@@ -343,7 +343,7 @@ public class LocalDrive extends Z7 {
                   throw var41.getTargetException();
                }
 
-               this.setText(var10014.append(var47).toString());
+               this.setText(((java.lang.StringBuilder)var10014).append(var47).toString());
                if (this == null) {
                   break label37;
                }
@@ -626,7 +626,7 @@ public class LocalDrive extends Z7 {
          Object var102 = Ref.h(460154043505201015L, var45, var46);
 
          try {
-            var10019 = (Boolean)var102;
+            var10019 = ((Boolean)var102) ? 1 : 0;
          } catch (InvocationTargetException var65) {
             throw var65.getTargetException();
          }

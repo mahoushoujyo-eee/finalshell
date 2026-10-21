@@ -177,7 +177,7 @@ public class YQ extends JPanel {
             return;
          }
 
-         var22 = var4.contains(a(-3372, 6205));
+         var22 = (String)(var4.contains(a(-3372, 6205)));
       }
 
       if (var2 != null) {
@@ -185,7 +185,7 @@ public class YQ extends JPanel {
             return;
          }
 
-         var22 = var4.contains(a(-3371, -17807));
+         var22 = (String)(var4.contains(a(-3371, -17807)));
       }
 
       if (var2 != null) {
@@ -193,7 +193,7 @@ public class YQ extends JPanel {
             return;
          }
 
-         var22 = var4.contains(a(-3373, 22447));
+         var22 = (String)(var4.contains(a(-3373, 22447)));
       }
 
       if (var2 != null) {
@@ -201,7 +201,7 @@ public class YQ extends JPanel {
             return;
          }
 
-         var22 = var4.contains(a(-3370, -4110));
+         var22 = (String)(var4.contains(a(-3370, -4110)));
       }
 
       String var10005;
@@ -230,7 +230,7 @@ public class YQ extends JPanel {
          }
 
          Object var12 = 430112502366759747L;
-         if (!(this > ((String)Ref.g(430112502366759747L, var12)).length())) {
+         if (!(0 > ((String)Ref.g(430112502366759747L, var12)).length())) {
             return;
          }
 

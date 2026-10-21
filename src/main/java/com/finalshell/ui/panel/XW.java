@@ -614,6 +614,7 @@ public class XW extends JComponent implements ActionListener {
          }
       }
    }
+   private static int var5;
 }
 
 

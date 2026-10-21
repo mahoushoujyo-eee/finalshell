@@ -45,7 +45,7 @@ public class Z4 extends Z8 {
       label65: {
          label49: {
             try {
-               var10000 = var5;
+               var10000 = (String)(var5);
                if (var7 != null) {
                   break label49;
                }
@@ -57,7 +57,7 @@ public class Z4 extends Z8 {
                throw a(var14);
             }
 
-            var10000 = var5;
+            var10000 = (String)(var5);
          }
 
          String[] var9 = var10000;

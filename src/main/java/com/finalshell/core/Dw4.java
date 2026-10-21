@@ -57,7 +57,7 @@ public class Dw4 {
       if (var3 != null || this.equals((String)Ref.g(488976998546483488L, var11))) {
          if (var3 == null) {
             Object var13 = 145412445008776377L;
-            if (!(this < ((ArrayList)Ref.g(145412445008776377L, var13)).size() - 1)) {
+            if (!(0 < ((ArrayList)Ref.g(145412445008776377L, var13)).size() - 1)) {
                return;
             }
 
@@ -98,7 +98,7 @@ public class Dw4 {
 
             do {
                Object var23 = 145412445008776377L;
-               if (!(this < ((ArrayList)Ref.g(145412445008776377L, var23)).size())) {
+               if (!(0 < ((ArrayList)Ref.g(145412445008776377L, var23)).size())) {
                   break;
                }
 
@@ -178,7 +178,7 @@ public class Dw4 {
          label97: {
             do {
                Object var19 = 145412445008776377L;
-               if (!(this < ((ArrayList)Ref.g(145412445008776377L, var19)).size())) {
+               if (!(0 < ((ArrayList)Ref.g(145412445008776377L, var19)).size())) {
                   break;
                }
 
@@ -758,6 +758,9 @@ public class Dw4 {
          }
       }
    }
+   private static Object var38;
+   private static Object var45;
+   private static int var24;
 }
 
 

@@ -270,7 +270,7 @@ public class MV {
                var10003 = Ref.h(336340164074561368L, var14, var15);
 
                try {
-                  var24 = (Long)var10003;
+                  var24 = (boolean)((Long)var10003);
                } catch (InvocationTargetException var18) {
                   throw var18.getTargetException();
                }

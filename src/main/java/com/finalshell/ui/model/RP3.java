@@ -14,7 +14,7 @@ public int compareTo(Enum o) {
    public static long a;
 
    public static RP3[] values() {
-      return (RP3[])w.clone();
+      return (RP3[])com.finalshell.reflect.Ref.cloneObject(w);
    }
 
    public static RP3 valueOf(String var0) {
@@ -155,6 +155,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object w;
 }
 
 

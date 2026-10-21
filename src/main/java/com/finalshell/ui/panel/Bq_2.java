@@ -90,8 +90,8 @@ public class Bq_2 extends JPanel implements D9 {
       }
 
       var10003.B = (KD)var10004;
-      this.B.setFont((Font)Registry.lookupField(334953030171430953L).get(null));
-      this.B.setForeground(var4);
+      ((javax.swing.JComponent)this.B).setFont((Font)Registry.lookupField(334953030171430953L).get(null));
+      ((javax.swing.JComponent)this.B).setForeground(var4);
       this.B.t(var4);
       this.B.addActionListener(new OI3(this));
       var10004 = Registry.packArgs("\uf078");
@@ -300,7 +300,7 @@ public class Bq_2 extends JPanel implements D9 {
    @Override
    public void requestFocus() {
       super.requestFocus();
-      this.T.requestFocus();
+      ((javax.swing.JComponent)this.T).requestFocus();
    }
 
    @Override
@@ -318,12 +318,12 @@ public class Bq_2 extends JPanel implements D9 {
    }
 
    public JTextField d() {
-      return this.T;
+      return (JTextField)(this.T);
    }
 
    @Override
    public void J(String var1) {
-      this.T.setText(var1);
+      ((javax.swing.text.JTextComponent)this.T).setText(var1);
    }
 
    static {
@@ -1326,6 +1326,8 @@ public class Bq_2 extends JPanel implements D9 {
          }
       }
    }
+   private static Object T;
+   private static Object B;
 }
 
 

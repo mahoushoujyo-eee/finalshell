@@ -12,7 +12,7 @@ public int compareTo(Enum o) {
    public static L fileEntry;
 
    public static L[] values() {
-      return (L[])C.clone();
+      return (L[])com.finalshell.reflect.Ref.cloneObject(C);
    }
 
    public static L valueOf(String var0) {
@@ -148,6 +148,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object C;
 }
 
 

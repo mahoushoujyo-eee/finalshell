@@ -19,7 +19,7 @@ public int compareTo(Enum o) {
    public static String[] b;
 
    public static Nb4[] values() {
-      return (Nb4[])N.clone();
+      return (Nb4[])com.finalshell.reflect.Ref.cloneObject(N);
    }
 
    public static Nb4 valueOf(String var0) {
@@ -977,6 +977,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object N;
 }
 
 

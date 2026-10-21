@@ -346,6 +346,7 @@ public class BQ extends O {
          }
       }
    }
+   private static Object var67;
 }
 
 

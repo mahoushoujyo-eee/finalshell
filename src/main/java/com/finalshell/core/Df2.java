@@ -472,12 +472,12 @@ public class Df2 {
       label54: {
          int[] var5;
          var5 = Nm4.g();
-         var10000 = var3;
+         var10000 = (int[])(var3);
          label46:
          if (var5 == null) {
             label44: {
                if (var3 <= 0) {
-                  var10000 = var4;
+                  var10000 = (int[])(var4);
                   if (var5 != null) {
                      break label46;
                   }
@@ -501,7 +501,7 @@ public class Df2 {
                break label54;
             }
 
-            var10000 = var7.L;
+            var10000 = (int[])(var7.L);
          }
 
          label30:

@@ -30,7 +30,7 @@ public class Ba2 extends AbstractTableModel {
    public synchronized Object getValueAt(int var1, int var2) {
       String var3 = null;
       Object var4 = 340080073196519749L;
-      if (this < ((ArrayList)Ref.g(340080073196519749L, var4)).size()) {
+      if (0 < ((ArrayList)Ref.g(340080073196519749L, var4)).size()) {
          Object var6 = 340080073196519749L;
          var3 = (String)((ArrayList)Ref.g(340080073196519749L, var6)).get(var1);
       }

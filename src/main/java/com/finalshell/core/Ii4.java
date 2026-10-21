@@ -173,6 +173,7 @@ public class Ii4 implements ListCellRenderer {
          }
       }
    }
+   private static Object var15;
 }
 
 

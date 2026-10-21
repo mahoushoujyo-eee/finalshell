@@ -68,7 +68,7 @@ public class VY implements MouseListener {
       if (var30 == var10007) {
          System.currentTimeMillis();
          Object var19 = 402958598703799057L;
-         long var4 = this - Registry.lookupField(572181340793640435L).getLong(Ref.g(402958598703799057L, var19));
+         long var4 = 0 - Registry.lookupField(572181340793640435L).getLong(Ref.g(402958598703799057L, var19));
          long var32;
          VY var31 = (var32 = var4 - a) == 0L ? 0 : (var32 < 0L ? -1 : 1);
          if (var2 != null) {
@@ -381,6 +381,7 @@ public class VY implements MouseListener {
       byte var10001 = -1;
       a = var10002;
    }
+   private static Object var61;
 }
 
 

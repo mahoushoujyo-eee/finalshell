@@ -2093,7 +2093,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    }
 
    public Font s() {
-      return this.t.Z();
+      return (Font)(this.t.Z());
    }
 
    @NotNull
@@ -9980,6 +9980,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
          }
       }
    }
+   private static Object d;
 }
 
 

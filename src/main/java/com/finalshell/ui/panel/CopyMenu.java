@@ -104,10 +104,10 @@ public class CopyMenu extends JPopupMenu {
       }
 
       JMenuItem var33 = new JMenuItem(a(-8934, -3991));
-      var10002 = var33;
+      var10002 = (F8)(var33);
       if (var2 == null) {
          var33.addActionListener(new ZL(this, var1, var2));
-         var10002 = var3;
+         var10002 = (F8)(var3);
          Object var40 = Registry.emptyArgs();
          long var26 = 589411218730404657L;
          Object var25 = var40;

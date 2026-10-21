@@ -172,7 +172,7 @@ public class YB3 extends GT3 {
             int var15;
             int var16;
             int[] var17;
-            var15 = var38;
+            var15 = (int)(var38);
             var16 = var2;
             var17 = var3;
             var39 = this;
@@ -248,12 +248,12 @@ public class YB3 extends GT3 {
                      var26 = var34 < var1 - 1 ? var8 * ((SC)var14).h(var21 + 1.0F, var33) - var23 : -2.0F;
                      var27 = var32 < var2 - 1 ? var8 * ((SC)var14).h(var21, var33 + 1.0F) - var23 : -2.0F;
                      float var52;
-                     var41 = (var52 = var24 - -2.0F) == 0.0F ? 0 : (var52 < 0.0F ? -1 : 1);
+                     var41 = (((var52 = var24 - -2.0F) == 0.0F ? 0 : (var52 < 0.0F ? -1 : 1)) != 0);
                      label203:
                      if (var5 != null) {
                         if (var41) {
                            float var53;
-                           var41 = (var53 = var27 - -2.0F) == 0.0F ? 0 : (var53 < 0.0F ? -1 : 1);
+                           var41 = (((var53 = var27 - -2.0F) == 0.0F ? 0 : (var53 < 0.0F ? -1 : 1)) != 0);
                            if (var5 == null) {
                               break label203;
                            }
@@ -282,14 +282,14 @@ public class YB3 extends GT3 {
                         }
 
                         float var54;
-                        var41 = (var54 = var24 - -2.0F) == 0.0F ? 0 : (var54 < 0.0F ? -1 : 1);
+                        var41 = (((var54 = var24 - -2.0F) == 0.0F ? 0 : (var54 < 0.0F ? -1 : 1)) != 0);
                      }
 
                      label196:
                      if (var5 != null) {
                         if (var41) {
                            float var55;
-                           var41 = (var55 = var25 - -2.0F) == 0.0F ? 0 : (var55 < 0.0F ? -1 : 1);
+                           var41 = (((var55 = var25 - -2.0F) == 0.0F ? 0 : (var55 < 0.0F ? -1 : 1)) != 0);
                            if (var5 == null) {
                               break label196;
                            }
@@ -318,14 +318,14 @@ public class YB3 extends GT3 {
                         }
 
                         float var56;
-                        var41 = (var56 = var25 - -2.0F) == 0.0F ? 0 : (var56 < 0.0F ? -1 : 1);
+                        var41 = (((var56 = var25 - -2.0F) == 0.0F ? 0 : (var56 < 0.0F ? -1 : 1)) != 0);
                      }
 
                      label189:
                      if (var5 != null) {
                         if (var41) {
                            float var57;
-                           var41 = (var57 = var26 - -2.0F) == 0.0F ? 0 : (var57 < 0.0F ? -1 : 1);
+                           var41 = (((var57 = var26 - -2.0F) == 0.0F ? 0 : (var57 < 0.0F ? -1 : 1)) != 0);
                            if (var5 == null) {
                               break label189;
                            }
@@ -354,7 +354,7 @@ public class YB3 extends GT3 {
                         }
 
                         float var58;
-                        var41 = (var58 = var26 - -2.0F) == 0.0F ? 0 : (var58 < 0.0F ? -1 : 1);
+                        var41 = (((var58 = var26 - -2.0F) == 0.0F ? 0 : (var58 < 0.0F ? -1 : 1)) != 0);
                      }
 
                      label259: {
@@ -364,7 +364,7 @@ public class YB3 extends GT3 {
                            }
 
                            float var59;
-                           var41 = (var59 = var27 - -2.0F) == 0.0F ? 0 : (var59 < 0.0F ? -1 : 1);
+                           var41 = (((var59 = var27 - -2.0F) == 0.0F ? 0 : (var59 < 0.0F ? -1 : 1)) != 0);
                         }
 
                         label260: {
@@ -387,7 +387,7 @@ public class YB3 extends GT3 {
                               }
 
                               double var60;
-                              var41 = (var60 = (double)var30.k - 0.0) == 0.0 ? 0 : (var60 < 0.0 ? -1 : 1);
+                              var41 = (((var60 = (double)var30.k - 0.0) == 0.0 ? 0 : (var60 < 0.0 ? -1 : 1)) != 0);
                            }
 
                            if (var41 < 0) {
@@ -797,6 +797,7 @@ public class YB3 extends GT3 {
          }
       }
    }
+   private static Object var38;
 }
 
 

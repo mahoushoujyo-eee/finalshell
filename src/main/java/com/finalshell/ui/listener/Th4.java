@@ -100,10 +100,10 @@ public class Th4 implements ActionListener {
             throw var27.getTargetException();
          }
 
-var3 = new Th4(var10008);
+var3 = (SetExternalEditorPanel)(new Th4(var10008));
          File var5 = var40;
          var10006 = var5.exists();
-         if (var2 == null && var10006 == false) {
+         if (var2 == null && var10006 == 0) {
             boolean var33;
             var10006 = var33 = true;
          }

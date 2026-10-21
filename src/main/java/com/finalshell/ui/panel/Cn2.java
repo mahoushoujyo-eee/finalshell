@@ -387,7 +387,7 @@ public abstract class Cn2 extends JPanel implements FM, CS3_2 {
       String[] var2 = var10000;
 
       try {
-         var10000 = this.Z;
+         var10000 = (String[])(this.Z);
          if (var2 != null) {
             if (this.Z != null) {
                this.Z.S$void(var1);

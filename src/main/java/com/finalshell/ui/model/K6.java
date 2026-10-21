@@ -14,7 +14,7 @@ public int compareTo(Enum o) {
    public static long a;
 
    public static K6[] values() {
-      return (K6[])q.clone();
+      return (K6[])com.finalshell.reflect.Ref.cloneObject(q);
    }
 
    public static K6 valueOf(String var0) {
@@ -155,6 +155,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object q;
 }
 
 

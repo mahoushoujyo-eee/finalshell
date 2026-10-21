@@ -323,7 +323,7 @@ public class EnvironmentVariablePanel extends F8 {
          throw var7.getTargetException();
       }
 
-      var10002.setText(var10003);
+      ((javax.swing.text.JTextComponent)var10002).setText(var10003);
       var1.setCaretPosition(0);
       DefaultCaret var2 = (DefaultCaret)var1.getCaret();
       var2.setUpdatePolicy(1);

@@ -263,7 +263,7 @@ public class F92 {
 
       try {
          var3 = (Fr2)this.C.get(var1);
-         var10000 = var3;
+         var10000 = (Ky4[])(var3);
          if (var2 != null) {
             if (var3 == null) {
                var3 = new Fr2();

@@ -74,7 +74,7 @@ var10008 = new String(((JPasswordField)Ref.g(228183978052282907L, var16)).getPas
                Object var34 = 411470404885834306L;
                Object var10014 = Ref.g(411470404885834306L, var34);
                Object var36 = 429952889391243847L;
-               var10014.setText(((JTextField)Ref.g(429952889391243847L, var36)).getText().toLowerCase());
+               ((javax.swing.text.JTextComponent)var10014).setText(((JTextField)Ref.g(429952889391243847L, var36)).getText().toLowerCase());
                Object var38 = 475144306283845054L;
                Ref.g(475144306283845054L, var38);
                Object var40 = 411470404885834306L;

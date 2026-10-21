@@ -340,7 +340,7 @@ public class A2_3 extends As2 {
                      return;
                   }
 
-                  var10000 = this;
+                  var10000 = (Ky4[])(this);
                   if (var7 != null) {
                      break label45;
                   }
@@ -451,6 +451,7 @@ public class A2_3 extends As2 {
          }
       }
    }
+   private static Object var16;
 }
 
 

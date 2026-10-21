@@ -118,7 +118,7 @@ public class ProxySelectionPanel extends Z7 implements Fb2 {
                break label38;
             }
 
-            var10001 = var1;
+            var10001 = (Integer)(var1);
             Object[] var14 = Registry.emptyArgs();
             long var6 = 542590257020999358L;
             Object[] var5 = var14;

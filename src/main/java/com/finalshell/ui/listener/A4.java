@@ -17,7 +17,7 @@ public class A4 implements ActionListener {
       label40: {
          boolean var2;
          var2 = K4_2.V();
-         var10000 = C4.P(this.f);
+         var10000 = (int)(C4.P(this.f));
          label36:
          if (!var2) {
             if (var10000 != 0) {
@@ -40,7 +40,7 @@ public class A4 implements ActionListener {
                break label40;
             }
 
-            var10000 = C4.P(this.f);
+            var10000 = (int)(C4.P(this.f));
          }
 
          if (var10000 == 0) {
@@ -63,6 +63,7 @@ public class A4 implements ActionListener {
 
       C4.t(var3).Y();
    }
+   private static int var10000;
 }
 
 

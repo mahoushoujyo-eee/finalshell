@@ -243,7 +243,7 @@ public class FolderAdapter extends DefaultTableCellRenderer {
                                           }
                                        }
 
-                                       var198 = var162;
+                                       var198 = (String)(var162);
                                        Object[] var227 = Registry.emptyArgs();
                                        long var51 = 396085629172753019L;
                                        Object[] var50 = var227;
@@ -329,7 +329,7 @@ public class FolderAdapter extends DefaultTableCellRenderer {
                                        throw var149.getTargetException();
                                     }
 
-                                    var164 = var268.append((String)var270).toString();
+                                    var164 = ((java.lang.StringBuilder)var268).append((String)var270).toString();
                                     if (var7 == null) {
                                        break label606;
                                     }
@@ -379,7 +379,7 @@ public class FolderAdapter extends DefaultTableCellRenderer {
                                        throw var147.getTargetException();
                                     }
 
-var162 = new SimpleDateFormat(var280);
+var162 = (String)(new SimpleDateFormat(var280));
                                     var164 = var268.append(var272.format(var272)).toString();
                                     if (var7 == null) {
                                        break label606;
@@ -738,7 +738,7 @@ var162 = new SimpleDateFormat(var280);
                      throw var130.getTargetException();
                   }
 
-var18 = new SimpleDateFormat(var277);
+var18 = (String)(new SimpleDateFormat(var277));
                   var19 = var10012.append(var10013.format(var10013)).toString();
                   if (var7 == null) {
                      break label620;
@@ -900,7 +900,7 @@ var18 = new SimpleDateFormat(var277);
       this.setBorder((Border)Ref.g(438642701836156454L, var122));
       int var186 = var3;
       if (var7 == null) {
-         if (var3 != 0) {
+         if (var3) {
             var9.setOpaque(true);
             var9.setForeground(Color.black);
             if (var7 == null) {
@@ -1913,6 +1913,7 @@ var18 = new SimpleDateFormat(var277);
          var9 = var10.charAt(var8);
       }
    }
+   private static Object var192;
 }
 
 

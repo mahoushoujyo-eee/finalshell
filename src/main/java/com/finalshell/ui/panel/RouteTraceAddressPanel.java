@@ -137,7 +137,7 @@ public class RouteTraceAddressPanel extends JPanel {
       Ref.s(243859269374928732L, var43, var44);
       Y12_2 var10018;
       Object var45 = 243859269374928732L;
-var5 = new com.finalshell.ui.listener.Qq2(this, (JPopupMenu)Ref.g(243859269374928732L, var45));
+var5 = (Y12_2)(new com.finalshell.ui.listener.Qq2(this, (JPopupMenu)Ref.g(243859269374928732L, var45)));
       Y12_2 var8 = var10018;
       var5.addActionListener(new com.finalshell.ui.listener.Qq2(this, var8));
       if (Ky4.F$arrString() != null) {
@@ -1599,6 +1599,7 @@ var5 = new com.finalshell.ui.listener.Qq2(this, (JPopupMenu)Ref.g(24385926937492
          }
       }
    }
+   private static Object var32;
 }
 
 

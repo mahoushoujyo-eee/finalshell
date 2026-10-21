@@ -68,6 +68,8 @@ public class Bn2 implements Comparator {
          throw var5.getTargetException();
       }
    }
+   private static Object var18;
+   private static Object var20;
 }
 
 

@@ -100,7 +100,7 @@ public class TerminalHint extends Z7 {
          throw var60.getTargetException();
       }
 
-var10010 = new UW(var10011, var69);
+var10010 = (TerminalHint)(new UW(var10011, var69));
       Object[] var61 = var10009;
       var61.addActionListener(new UW(this, var61));
       JPanel var62 = new JPanel(new MigLayout(a(13501, -31602)));

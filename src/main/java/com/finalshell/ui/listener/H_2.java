@@ -83,6 +83,7 @@ public class H_2 implements ActionListener {
          throw var30.getTargetException();
       }
    }
+   private static Object var33;
 }
 
 

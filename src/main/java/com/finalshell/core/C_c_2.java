@@ -487,7 +487,7 @@ public class C_c_2 extends BasicTextAreaUI implements L0_2, SwingConstants {
                         var15 = var7.x;
                      }
 
-                     var11 = var15;
+                     var11 = (int)(var15);
                      if (var2) {
                         break label133;
                      }
@@ -1478,6 +1478,7 @@ public class C_c_2 extends BasicTextAreaUI implements L0_2, SwingConstants {
          var9 = var10.charAt(var8);
       }
    }
+   private static Object var15;
 }
 
 

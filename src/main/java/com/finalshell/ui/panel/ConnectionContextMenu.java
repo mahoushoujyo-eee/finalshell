@@ -199,7 +199,7 @@ public class ConnectionContextMenu extends JPopupMenu {
             var48 = !var48;
          }
 
-         var10003.setEnabled(var48);
+         ((javax.swing.JComponent)var10003).setEnabled(var48);
          var7.addActionListener(new Qb2(this));
          ConnectionContextMenu var44 = this;
          if (var1 == null) {

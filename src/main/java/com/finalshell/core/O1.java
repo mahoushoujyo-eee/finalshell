@@ -146,7 +146,7 @@ public class O1 extends MouseInputAdapter {
             QG var10002 = (QG)Ref.g(486361035811796603L, var11);
             Object var13 = 227260023880111667L;
             Point var6 = SwingUtilities.convertPoint(var4, this, (Container)Ref.g(227260023880111667L, var13));
-            var10003 = var6.y;
+            var10003 = (Component)(var6.y);
             if (this == null) {
                if (var6.y >= 0) {
                   Component var7 = SwingUtilities.getDeepestComponentAt(var5, var6.x, var6.y);
@@ -175,9 +175,9 @@ public class O1 extends MouseInputAdapter {
                   break label51;
                }
 
-               var10003 = var6.y;
+               var10003 = (Component)(var6.y);
                Object var15 = 242487389787666318L;
-               int var10004 = this + ((JMenuBar)Ref.g(242487389787666318L, var15)).getHeight();
+               int var10004 = 0 + ((JMenuBar)Ref.g(242487389787666318L, var15)).getHeight();
             }
 
             if (this != null) {

@@ -983,7 +983,7 @@ public class CN extends FilterWriter {
          var5 = 0;
          var6 = 0;
          char var21 = var4.charAt(var6);
-         var33 = a(19222, 7286478498634719781L);
+         var33 = ((a(19222, 7286478498634719781L)) != 0);
          if (var1 == null) {
             if (var21 == var33) {
                var6++;

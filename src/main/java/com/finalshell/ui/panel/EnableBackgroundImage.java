@@ -80,7 +80,7 @@ public class EnableBackgroundImage extends Z7 {
          throw var59.getTargetException();
       }
 
-var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
+var10005 = (EnableBackgroundImage)(new com.finalshell.ui.listener.Oi2(var2, var66));
       JCheckBox var4 = var64;
       var4.setForeground(new Color(a(16906, 6456310998628703149L), 0, a(18249, 1688511695136890605L)));
       var3.add(var4, "");
@@ -217,7 +217,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
       Object var2;
       FX3 var3;
       label146: {
-         var3 = var10004;
+         var3 = (FX3)(var10004);
          var2 = var10003;
          var10003 = var1.startsWith(a(9165, 1668));
          if (var2 != null) {

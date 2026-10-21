@@ -259,7 +259,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       var10002 = Ref.h2(390743284003303285L, var105);
 
       try {
-         var10002 = (Border)var10002;
+         var10002 = (KD)((Border)var10002);
       } catch (InvocationTargetException var269) {
          throw var269.getTargetException();
       }
@@ -1442,7 +1442,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
                      break label562;
                   }
 
-                  var10038 = var12;
+                  var10038 = (Boolean)(var12);
                   Object[] var10039 = Registry.emptyArgs();
                   long var162 = 123582976489362497L;
                   Object[] var161 = var10039;

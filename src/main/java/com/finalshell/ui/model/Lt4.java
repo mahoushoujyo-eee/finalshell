@@ -25,7 +25,7 @@ public int compareTo(Enum o) {
    public static Integer[] d;
 
    public static Lt4[] values() {
-      return (Lt4[])I.clone();
+      return (Lt4[])com.finalshell.reflect.Ref.cloneObject(I);
    }
 
    public static Lt4 valueOf(String var0) {
@@ -1049,6 +1049,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object I;
 }
 
 

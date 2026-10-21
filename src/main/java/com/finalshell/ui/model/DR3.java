@@ -18,7 +18,7 @@ public int compareTo(Enum o) {
    public static Integer[] b;
 
    public static DR3[] values() {
-      return (DR3[])o.clone();
+      return (DR3[])com.finalshell.reflect.Ref.cloneObject(o);
    }
 
    public static DR3 valueOf(String var0) {
@@ -250,6 +250,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object o;
 }
 
 

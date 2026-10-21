@@ -23,7 +23,7 @@ public class As2 extends JComponent {
       Ref.s(539292081619626259L, var2, var8);
       Tv2 var10005;
       Object var9 = 539292081619626259L;
-var1 = new As2(this, (ImportExportPanel)Ref.g(539292081619626259L, var9));
+var1 = (ShowDeletedPanel)(new As2(this, (ImportExportPanel)Ref.g(539292081619626259L, var9)));
       long var12 = 229342211508771365L;
       Tv2 var11 = var10005;
       Ref.s(229342211508771365L, var11, var12);

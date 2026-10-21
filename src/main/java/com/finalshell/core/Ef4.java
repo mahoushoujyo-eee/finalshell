@@ -55,7 +55,7 @@ public class Ef4 extends E12 {
                break label37;
             }
 
-            var11 = var10;
+            var11 = (int)(var10);
          }
 
          var1.setMnemonicAt(var6, var11);
@@ -70,6 +70,7 @@ public class Ef4 extends E12 {
    public void L(JComponent var1, String var2, com.finalshell.ui.model.G9 var3, Object[] var4) {
       this.V((JTabbedPane)var1, var2, var3, var4);
    }
+   private static Object var10;
 }
 
 

@@ -15,7 +15,7 @@ public int compareTo(Enum o) {
    public final int s;
 
    public static HT[] values() {
-      return (HT[])H.clone();
+      return (HT[])com.finalshell.reflect.Ref.cloneObject(H);
    }
 
    public static HT valueOf(String var0) {
@@ -156,6 +156,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object H;
 }
 
 

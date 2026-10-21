@@ -37,7 +37,7 @@ public class Xp4 implements Ka2 {
 
          String var4;
          label120: {
-            var4 = var20;
+            var4 = (String)(var20);
             Component var21 = var2;
             if (var3 == null) {
                if (var2 == null) {
@@ -1075,6 +1075,7 @@ public class Xp4 implements Ka2 {
          var1 = var2.charAt(var0);
       }
    }
+   private static Object var20;
 }
 
 

@@ -151,7 +151,7 @@ public class TL3 {
 
          label42: {
             try {
-               var10000 = var6 instanceof IOException;
+               var10000 = (String[])(var6 instanceof IOException);
                if (var3 != null) {
                   break label42;
                }
@@ -164,7 +164,7 @@ public class TL3 {
             }
 
             try {
-               var10000 = var5.getUri().getHost();
+               var10000 = (String[])(var5.getUri().getHost());
                Object var16 = 457982698878206003L;
                this.equals((String)Ref.g(457982698878206003L, var16));
             } catch (URISyntaxException var19) {

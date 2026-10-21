@@ -167,7 +167,7 @@ public class XN extends JLabel implements D2 {
                }
 
                float var20;
-               var10003 = (var20 = var4 - 0.0F) == 0.0F ? 0 : (var20 < 0.0F ? -1 : 1);
+               var10003 = (Graphics2D)((var20 = var4 - 0.0F) == 0.0F ? 0 : (var20 < 0.0F ? -1 : 1));
             }
 
             if (var10003 > 0) {
@@ -207,7 +207,7 @@ public class XN extends JLabel implements D2 {
          throw var8.getTargetException();
       }
 
-      String var3 = var10001.append((String)var10002).append("%").toString();
+      String var3 = ((java.lang.StringBuilder)var10001).append((String)var10002).append("%").toString();
       this.setText(var3);
       Object var6 = 321784082643385098L;
       ((JLabel)Ref.g(321784082643385098L, var6)).setText(var2);

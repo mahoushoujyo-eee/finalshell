@@ -154,7 +154,7 @@ public class XK_2 {
             var2 = (String)var10002;
          }
 
-         var17 = var0.getModifiers();
+         var17 = (Boolean)(var0.getModifiers());
       }
 
       Registry.packArgs(var17);
@@ -238,7 +238,7 @@ public class XK_2 {
             var2 = (String)var10002;
          }
 
-         var17 = var0.getModifiers();
+         var17 = (Boolean)(var0.getModifiers());
       }
 
       Registry.packArgs(var17);

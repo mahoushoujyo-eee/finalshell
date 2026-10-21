@@ -26,7 +26,7 @@ public class Lo4_2 implements Q0 {
       Object var9 = 501251444652304240L;
       long var10004 = ((j)Ref.g(501251444652304240L, var9)).q$long();
       Object var11 = 501251444652304240L;
-      var10004.w((int)(this - ((j)Ref.g(501251444652304240L, var11)).R()));
+      var10004.w((int)(0 - ((j)Ref.g(501251444652304240L, var11)).R()));
       Object var13 = 501251444652304240L;
       ((j)Ref.g(501251444652304240L, var13)).S(var3.A());
       L9.X();

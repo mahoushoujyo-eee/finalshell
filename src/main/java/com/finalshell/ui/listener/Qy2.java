@@ -42,7 +42,7 @@ public class Qy2 implements MouseListener {
             label44: {
                System.currentTimeMillis();
                Object var10 = 170719139226265942L;
-               long var4 = this - Registry.lookupField(415368146415028056L).getLong(Ref.g(170719139226265942L, var10));
+               long var4 = 0 - Registry.lookupField(415368146415028056L).getLong(Ref.g(170719139226265942L, var10));
                long var26;
                Qy2 var10003 = (var26 = var4 - a) == 0L ? 0 : (var26 < 0L ? -1 : 1);
                if (var2 != null) {

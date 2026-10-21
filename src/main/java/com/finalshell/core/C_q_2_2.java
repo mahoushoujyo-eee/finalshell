@@ -141,7 +141,7 @@ public abstract class C_q_2_2 extends C_i_2 implements HU_2 {
       label27: {
          try {
             if (var1 == null) {
-               return this.k.toArray(new NU_3[this.k.size()]);
+               return (NU_3[])(this.k.toArray(new NU_3[this.k.size()]));
             }
 
             if (this.k.isEmpty()) {
@@ -151,7 +151,7 @@ public abstract class C_q_2_2 extends C_i_2 implements HU_2 {
             throw a(var3);
          }
 
-         return this.k.toArray(new NU_3[this.k.size()]);
+         return (NU_3[])(this.k.toArray(new NU_3[this.k.size()]));
       }
 
       NU_3 var2 = new NU_3(this.Q(), null, RG_2.J(this.Q(), new String[]{d}), new RJ_2(this.Q()), new Nt2_2[0], null, Collections.emptyList());

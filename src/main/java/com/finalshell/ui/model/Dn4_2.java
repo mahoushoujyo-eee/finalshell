@@ -246,7 +246,7 @@ public class Dn4_2 implements Comparator {
                }
 
                long var167;
-               var115 = (var167 = var6 - 0L) == 0L ? 0 : (var167 < 0L ? -1 : 1);
+               var115 = (Dn4_2)((var167 = var6 - 0L) == 0L ? 0 : (var167 < 0L ? -1 : 1));
             }
 
             if (var3 != null) {
@@ -447,7 +447,7 @@ public class Dn4_2 implements Comparator {
             }
          }
 
-         var10001 = true;
+         var10001 = (Dn4_2)(true);
       }
 
       return (int)var10001;

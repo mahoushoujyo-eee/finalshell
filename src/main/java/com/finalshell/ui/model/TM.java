@@ -30,7 +30,7 @@ public int compareTo(Enum o) {
    public static Integer[] d;
 
    public static TM[] values() {
-      return (TM[])k.clone();
+      return (TM[])com.finalshell.reflect.Ref.cloneObject(k);
    }
 
    public static TM valueOf(String var0) {
@@ -1019,7 +1019,7 @@ public int compareTo(Enum o) {
                                     grayDownTip = new TM(a(-31752, -22705), a(11602, 6684386899190305156L));
                                     dark = new TM(a(-31750, -18962), a(7643, 9054671724984197390L));
                                     k = z();
-                                    i = new HashMap("i", 0);
+                                    i = (int)(new HashMap("i", 0));
                                     return;
                                  }
                                  break;
@@ -1073,6 +1073,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object k;
 }
 
 

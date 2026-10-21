@@ -61,6 +61,7 @@ public class D72 implements ActionListener {
    public static IOException a(IOException var0) {
       return var0;
    }
+   private static Object var10000;
 }
 
 

@@ -623,7 +623,7 @@ public class DY3 extends Dq4 {
       label39: {
          label32: {
             try {
-               var8 = new File(var1);
+               var8 = (boolean)(new File(var1));
                if (var2) {
                   break label32;
                }
@@ -636,7 +636,7 @@ public class DY3 extends Dq4 {
             }
 
             try {
-               var8 = new File(var1);
+               var8 = (boolean)(new File(var1));
             } catch (Exception var5) {
                boolean var10001 = false;
                break label39;
@@ -7311,7 +7311,7 @@ public class DY3 extends Dq4 {
       label20: {
          try {
             this.T().O(this.C, this, c(2095, 6387013520474958520L) + var1.length + 4);
-            var8 = var5;
+            var8 = (int)(var5);
             if (!var6) {
                break label20;
             }
@@ -7323,7 +7323,7 @@ public class DY3 extends Dq4 {
             throw a(var7);
          }
 
-         var8 = var5;
+         var8 = (int)(var5);
       }
 
       var8.Y(this.f - 1, var2, var4);

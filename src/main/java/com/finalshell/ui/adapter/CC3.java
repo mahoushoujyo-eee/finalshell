@@ -64,7 +64,7 @@ public class CC3 extends DefaultTableCellRenderer {
                }
             }
 
-            var28 = var5 % 2;
+            var28 = (CC3)(var5 % 2);
          }
 
          CC3 var9 = var28;

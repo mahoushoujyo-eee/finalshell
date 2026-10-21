@@ -15,7 +15,7 @@ public class LY3 implements WE3 {
          }
 
          var10000 = var1;
-         var10001 = Time.class;
+         var10001 = (Class<Date>)(Time.class);
       }
 
       if (var2) {
@@ -24,7 +24,7 @@ public class LY3 implements WE3 {
          }
 
          var10000 = var1;
-         var10001 = Timestamp.class;
+         var10001 = (Class<Date>)(Timestamp.class);
       }
 
       return var10000 != var10001 ? false : true;

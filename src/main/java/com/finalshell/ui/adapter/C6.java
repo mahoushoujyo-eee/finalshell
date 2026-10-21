@@ -121,7 +121,7 @@ public class C6 extends DefaultTableCellRenderer {
                      throw var26.getTargetException();
                   }
 
-                  var13 = var40.append(var41).append("").toString();
+                  var13 = ((java.lang.StringBuilder)var40).append(var41).append("").toString();
                }
             }
 
@@ -143,7 +143,7 @@ public class C6 extends DefaultTableCellRenderer {
             }
          }
 
-         var31 = var5 % 2;
+         var31 = (JLabel)(var5 % 2);
       }
 
       JLabel var30 = var31;

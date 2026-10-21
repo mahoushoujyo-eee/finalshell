@@ -591,13 +591,13 @@ public class CustomAcceleratePanel extends JPanel {
                }
 
                label208: {
-                  var10010 = var3;
+                  var10010 = (T32)(var3);
                   if (var1 != null) {
                      if (var3 != null) {
                         break label208;
                      }
 
-                     var10010 = var6;
+                     var10010 = (T32)(var6);
                      Object[] var91 = Registry.emptyArgs();
                      long var43 = 194560825135347400L;
                      Object[] var42 = var91;
@@ -992,13 +992,13 @@ public class CustomAcceleratePanel extends JPanel {
                }
 
                label208: {
-                  var10010 = var3;
+                  var10010 = (T32)(var3);
                   if (var1 != null) {
                      if (var3 != null) {
                         break label208;
                      }
 
-                     var10010 = var6;
+                     var10010 = (T32)(var6);
                      Object[] var91 = Registry.emptyArgs();
                      long var43 = 194560825135347400L;
                      Object[] var42 = var91;

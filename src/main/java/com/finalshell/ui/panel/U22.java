@@ -227,11 +227,11 @@ public class U22 extends Us2 {
                if (Cz2.n(var13, var1)) {
       String[] var14;
                   label98: {
-                     var14 = var2;
+                     var14 = (String[])(var2);
                      label78:
                      if (var5 != null) {
                         if (var2) {
-                           var14 = var6;
+                           var14 = (String[])(var6);
                            if (var5 == null) {
                               break label78;
                            }
@@ -244,7 +244,7 @@ public class U22 extends Us2 {
                            }
                         }
 
-                        var14 = var3;
+                        var14 = (String[])(var3);
                      }
 
                      if (var14 != 0) {
@@ -683,7 +683,7 @@ public class U22 extends Us2 {
          java.io.File var4 = var1.D();
          var3 = var10000;
          if (var4 != null) {
-            var9 = var2.contains(var4);
+            var9 = (byte)(var2.contains(var4));
             if (var3 == null) {
                break label43;
             }

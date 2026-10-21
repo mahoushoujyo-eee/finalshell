@@ -109,7 +109,7 @@ public class B5_2 implements Icon {
             var17 = this.t;
          }
 
-         var18 = com.finalshell.ui.listener.C4.L$Color(var17);
+         var18 = (C4)(com.finalshell.ui.listener.C4.L$Color(var17));
       }
 
       var6.setPaint(var18);
@@ -157,6 +157,7 @@ public class B5_2 implements Icon {
    public int getIconHeight() {
       return com.finalshell.ui.listener.C4.c(this.t);
    }
+   private static Object var17;
 }
 
 

@@ -300,7 +300,7 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
          }
 
          Composite var4;
-         var4 = (RV.a(var3, var10001, var10002)) != 0;
+         var4 = (((RV.a(var3, var10001, var10002)) != 0) != 0);
          BufferedImage var5 = this.B();
          label128:
          if (var5 != null) {

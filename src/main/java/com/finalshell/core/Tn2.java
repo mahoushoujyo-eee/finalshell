@@ -575,6 +575,7 @@ public class Tn2 {
          }
       }
    }
+   private static int var51;
 }
 
 

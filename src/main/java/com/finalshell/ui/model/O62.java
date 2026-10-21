@@ -12,7 +12,7 @@ public int compareTo(Enum o) {
    public static String[] c;
 
    public static O62[] values() {
-      return (O62[])h.clone();
+      return (O62[])com.finalshell.reflect.Ref.cloneObject(h);
    }
 
    public static O62 valueOf(String var0) {
@@ -156,6 +156,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object h;
 }
 
 

@@ -11,7 +11,7 @@ public int compareTo(Enum o) {
    public static L92 customPopupMenu;
 
    public static L92[] values() {
-      return (L92[])s.clone();
+      return (L92[])com.finalshell.reflect.Ref.cloneObject(s);
    }
 
    public static L92 valueOf(String var0) {
@@ -146,6 +146,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object s;
 }
 
 

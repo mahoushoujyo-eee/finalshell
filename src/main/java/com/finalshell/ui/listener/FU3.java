@@ -135,7 +135,7 @@ public class FU3 implements ActionListener {
                            break label381;
                         }
 
-                        var171 = var144.isDirectory();
+                        var171 = (FU3)(var144.isDirectory());
                      }
 
                      if (var2 == null) {
@@ -143,7 +143,7 @@ public class FU3 implements ActionListener {
                            break label381;
                         }
 
-                        var171 = var144.isFile();
+                        var171 = (FU3)(var144.isFile());
                      }
 
                      if (var2 == null) {
@@ -395,7 +395,7 @@ public class FU3 implements ActionListener {
                               label394: {
                                  String var150 = var197;
                                  File var153 = new File(var150);
-                                 var197 = var153.exists();
+                                 var197 = (String)(var153.exists());
                                  if (var2 == null) {
                                     if (var197 == null) {
                                        break label394;
@@ -433,7 +433,7 @@ public class FU3 implements ActionListener {
                                              break label281;
                                           }
 
-                                          var197 = this;
+                                          var197 = (String)(this);
                                           Object var90 = 121430004283033522L;
                                           Ref.g(121430004283033522L, var90);
                                           long var93 = 518641299092321834L;

@@ -242,7 +242,7 @@ public class C62 extends AbstractTableModel {
 
       do {
          Object var21 = 484427497215582043L;
-         if (!(this < ((ArrayList)Ref.g(484427497215582043L, var21)).size())) {
+         if (!(0 < ((ArrayList)Ref.g(484427497215582043L, var21)).size())) {
             break;
          }
 

@@ -532,7 +532,7 @@ public class Bq2 extends O {
                   break label144;
                }
 
-               var211 = this;
+               var211 = (Boolean)(this);
                if (this != null) {
                   break label223;
                }
@@ -632,7 +632,7 @@ public class Bq2 extends O {
          label76: {
             boolean var20 = var2;
             if (var1 == null) {
-               var21 = Registry.lookupField(120501553429581714L).getBoolean(this);
+               var21 = (Bq2)(Registry.lookupField(120501553429581714L).getBoolean(this));
                if (var2 == var21) {
                   break label76;
                }
@@ -875,7 +875,7 @@ public class Bq2 extends O {
                }
             }
 
-            var10008 = var10008.getMousePosition();
+            var10008 = (Window)(var10008.getMousePosition());
          }
 
          if (var10008 != null) {
@@ -1104,7 +1104,7 @@ public class Bq2 extends O {
             throw var17.getTargetException();
          }
 
-         var10006 = new boolean[var10007.p()];
+         var10006 = (Color)(new boolean[var10007.p()]);
          long var11 = 544542606382447190L;
          Object var10 = var10005;
          Ref.s(544542606382447190L, var10, var11);

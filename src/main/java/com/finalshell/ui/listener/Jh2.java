@@ -43,7 +43,7 @@ public class Jh2 implements MouseListener {
                }
             }
 
-            var10001 = var1.getButton();
+            var10001 = (Jh2)(var1.getButton());
          }
 
          var10002 = 1;
@@ -55,7 +55,7 @@ public class Jh2 implements MouseListener {
                return;
             }
 
-            var10001 = var1.getClickCount();
+            var10001 = (Jh2)(var1.getClickCount());
             if (this != null) {
                break label58;
             }

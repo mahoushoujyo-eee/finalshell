@@ -297,10 +297,10 @@ public abstract class WO3 implements K3_2 {
                   return var10000 != 0;
                }
 
-               var10000 = (0) != 0;
+               var10000 = (int)((0) != 0);
             }
 
-            return var10000;
+            return ((var10000) != 0);
          }
 
          var10000 = 0;

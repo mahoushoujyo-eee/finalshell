@@ -181,7 +181,7 @@ public class YM extends MouseAdapter {
          var9 = Nx4.R();
          var2 = MouseInfo.getPointerInfo().getLocation();
          var1 = var9;
-         var3 = this.C.getGraphicsConfiguration().getDevice().getDefaultConfiguration().getBounds();
+         var3 = (int)(this.C.getGraphicsConfiguration().getDevice().getDefaultConfiguration().getBounds());
          int var4 = this.C.getWidth();
          var5 = this.C.getHeight();
          var9 = var2.x + a(19200, 6499329437529908106L) + var4;

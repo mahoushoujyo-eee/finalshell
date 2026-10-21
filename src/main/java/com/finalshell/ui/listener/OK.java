@@ -49,7 +49,7 @@ public class OK implements KeyListener {
          throw var16.getTargetException();
       }
 
-      var10007.setText((String)var10008);
+      ((javax.swing.text.JTextComponent)var10007).setText((String)var10008);
    }
 }
 

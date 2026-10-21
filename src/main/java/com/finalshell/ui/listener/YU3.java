@@ -333,6 +333,8 @@ public class YU3 extends MouseAdapter {
    @Override
    public void mouseClicked(MouseEvent var1) {
    }
+   private static Object var25;
+   private static Object A;
 }
 
 

@@ -40,7 +40,7 @@ public class KI3 extends Ky4 {
                         break label55;
                      }
 
-                     var8 = this.Q.Y;
+                     var8 = (K32)(this.Q.Y);
                   }
 
                   if (var8 != null) {
@@ -66,7 +66,7 @@ public class KI3 extends Ky4 {
                break label52;
             }
 
-            var8 = this.Q.Y;
+            var8 = (K32)(this.Q.Y);
          }
 
          if (var8 != null) {

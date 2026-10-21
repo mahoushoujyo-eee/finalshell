@@ -32,7 +32,7 @@ public class Wo4 {
 
       try {
          this.T = var1;
-         var10000 = var1;
+         var10000 = (String)(var1);
          if (var2 != null) {
             if (var1 == null) {
                this.n = false;
@@ -65,7 +65,7 @@ public class Wo4 {
       String var2 = var10000;
 
       try {
-         var10000 = this.T;
+         var10000 = (String)(this.T);
          if (var2 != null) {
             if (this.T != null) {
                this.n = var1;
@@ -95,7 +95,7 @@ public class Wo4 {
       String var2 = var10000;
 
       try {
-         var10000 = this.T;
+         var10000 = (String)(this.T);
          if (var2 != null) {
             if (this.T != null) {
                this.M = var1;

@@ -9,7 +9,7 @@ public int compareTo(Enum o) {
    public static Ex4 increase;
 
    public static Ex4[] values() {
-      return (Ex4[])Y.clone();
+      return (Ex4[])com.finalshell.reflect.Ref.cloneObject(Y);
    }
 
    public static Ex4 valueOf(String var0) {
@@ -117,6 +117,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object Y;
 }
 
 

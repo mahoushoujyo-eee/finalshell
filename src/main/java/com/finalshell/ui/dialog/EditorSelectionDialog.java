@@ -375,7 +375,7 @@ public class EditorSelectionDialog extends JDialog {
          }
 
          Object var34 = 519726087570605904L;
-         var10008 = ((ArrayList)Ref.g(519726087570605904L, var34)).size();
+         var10008 = (Kl4)(((ArrayList)Ref.g(519726087570605904L, var34)).size());
          break;
       }
 

@@ -12,7 +12,7 @@ public int compareTo(Enum o) {
    public static boolean P;
 
    public static Eg4[] values() {
-      return (Eg4[])X.clone();
+      return (Eg4[])com.finalshell.reflect.Ref.cloneObject(X);
    }
 
    public static Eg4 valueOf(String var0) {
@@ -161,6 +161,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object X;
 }
 
 

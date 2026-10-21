@@ -125,7 +125,7 @@ public class TransferSpeedPanel extends JPanel {
                   throw var26.getTargetException();
                }
 
-               var29 = var10003.append((String)var10004).append(a(21189, -9742)).toString();
+               var29 = ((java.lang.StringBuilder)var10003).append((String)var10004).append(a(21189, -9742)).toString();
                if (var2 != null) {
                   break label84;
                }
@@ -172,7 +172,7 @@ public class TransferSpeedPanel extends JPanel {
             throw var23.getTargetException();
          }
 
-         var29 = var10002.append((String)var42).append(a(21195, -32714)).toString();
+         var29 = ((java.lang.StringBuilder)var10002).append((String)var42).append(a(21195, -32714)).toString();
       }
 
       Object var16 = 586386105516248075L;

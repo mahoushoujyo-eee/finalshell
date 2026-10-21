@@ -92,7 +92,7 @@ public final class UK_2 extends UT_2 {
       if (var6 > this.l) {
          Object var7;
          label36: {
-            var10000 = var4.v();
+            var10000 = (UK_2)(var4.v());
             if (var3 == null) {
                if (var10000 != null) {
                   var7 = B8_2.I(var2, var4.v(), this.H.L());

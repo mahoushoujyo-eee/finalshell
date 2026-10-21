@@ -410,7 +410,7 @@ public class KV3 extends Ky4 {
             }
          }
 
-         var5 = this.C;
+         var5 = (KV3)(this.C);
          break;
       }
 
@@ -551,7 +551,7 @@ public class KV3 extends Ky4 {
                }
 
                label161: {
-                  var27.add(var10, var5 * 2 + "," + var6);
+                  ((java.math.BigInteger)var27).add(var10, var5 * 2 + "," + var6);
                   var3.add(var10);
                   Gk2.o(var4);
                   var29 = ++var5;
@@ -622,7 +622,7 @@ public class KV3 extends Ky4 {
                var31 = var1;
             }
 
-            var31.add(var12, var5 * 2 + "," + var6);
+            ((java.math.BigInteger)var31).add(var12, var5 * 2 + "," + var6);
             var3.add(var12);
             var29 = var15;
             int var10001;
@@ -1817,7 +1817,7 @@ public class KV3 extends Ky4 {
                      long[] var6 = new long[21];
                      int var3 = 0;
                      String var4 = "LTKÞýZDû!è\u0085D½K\u0019Ù´úV1·\u0016\r\u0000×\u0081ñ°\u0095V´\u0095r\u008b\nÛs\u0092\u0091¹=D\u00adÒçX\u008cÀ$ób4¡\u0014\u000fÌÙu\u000b\b_%ô]'y\u008f S1\u0016ìÆ\nQ\u001c,Áíó\u0093ÖÁ%K2ßOº;\u0092_\u00935®\u0013læ\u001bÔ\u008dð\u0092\u0080\u00960\u0004ép·AôÜã3C\u001eÝÐïZÉ\u0001\u0006?\u0007Y@JNÏ\u0019\u0018b×\u0012\u001a%ï<H\u0095Ê\u001eÈfwÎÈ¦\t\u008d";
-                     var5 = "LTKÞýZDû!è\u0085D½K\u0019Ù´úV1·\u0016\r\u0000×\u0081ñ°\u0095V´\u0095r\u008b\nÛs\u0092\u0091¹=D\u00adÒçX\u008cÀ$ób4¡\u0014\u000fÌÙu\u000b\b_%ô]'y\u008f S1\u0016ìÆ\nQ\u001c,Áíó\u0093ÖÁ%K2ßOº;\u0092_\u00935®\u0013læ\u001bÔ\u008dð\u0092\u0080\u00960\u0004ép·AôÜã3C\u001eÝÐïZÉ\u0001\u0006?\u0007Y@JNÏ\u0019\u0018b×\u0012\u001a%ï<H\u0095Ê\u001eÈfwÎÈ¦\t\u008d";
+                     var5 = (boolean)("LTKÞýZDû!è\u0085D½K\u0019Ù´úV1·\u0016\r\u0000×\u0081ñ°\u0095V´\u0095r\u008b\nÛs\u0092\u0091¹=D\u00adÒçX\u008cÀ$ób4¡\u0014\u000fÌÙu\u000b\b_%ô]'y\u008f S1\u0016ìÆ\nQ\u001c,Áíó\u0093ÖÁ%K2ßOº;\u0092_\u00935®\u0013læ\u001bÔ\u008dð\u0092\u0080\u00960\u0004ép·AôÜã3C\u001eÝÐïZÉ\u0001\u0006?\u0007Y@JNÏ\u0019\u0018b×\u0012\u001a%ï<H\u0095Ê\u001eÈfwÎÈ¦\t\u008d");
                         // [VF] .length();
                      byte var2 = 0;
 

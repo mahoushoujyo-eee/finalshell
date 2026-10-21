@@ -86,7 +86,7 @@ public class CommandEditDialog extends JDialog {
             throw var47.getTargetException();
          }
 
-         this.setTitle(var10005.append((String)var10006).toString());
+         this.setTitle(((java.lang.StringBuilder)var10005).append((String)var10006).toString());
       }
 
       this.setModal(true);
@@ -162,7 +162,7 @@ public class CommandEditDialog extends JDialog {
                throw var45.getTargetException();
             }
 
-            var10008.setText(var10009);
+            ((javax.swing.text.JTextComponent)var10008).setText(var10009);
             Object var35 = 302503956502467966L;
             Object var10010 = Ref.g(302503956502467966L, var35);
             String var10011 = (String)(Registry.emptyArgs());

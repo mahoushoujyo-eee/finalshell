@@ -27,7 +27,7 @@ public final class RD extends RB {
    }
 
    public C_9_2[] E() {
-      return this.l.toArray(new C_9_2[this.l.size()]);
+      return (C_9_2[])(this.l.toArray(new C_9_2[this.l.size()]));
    }
 
    @C_9

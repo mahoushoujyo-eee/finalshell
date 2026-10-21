@@ -12,7 +12,7 @@ public int compareTo(Enum o) {
    public static Dh4 floating;
 
    public static Dh4[] values() {
-      return (Dh4[])g.clone();
+      return (Dh4[])com.finalshell.reflect.Ref.cloneObject(g);
    }
 
    public static Dh4 valueOf(String var0) {
@@ -148,6 +148,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object g;
 }
 
 

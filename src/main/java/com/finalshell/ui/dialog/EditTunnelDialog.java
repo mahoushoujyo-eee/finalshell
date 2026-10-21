@@ -234,7 +234,7 @@ public class EditTunnelDialog extends JDialog {
                      }
                   }
 
-                  var10043 = var2;
+                  var10043 = (String)(var2);
                   Object[] var145 = Registry.emptyArgs();
                   long var105 = 471582560640574154L;
                   Object[] var104 = var145;
@@ -258,7 +258,7 @@ public class EditTunnelDialog extends JDialog {
                      }
                   }
 
-                  var10043 = var2;
+                  var10043 = (String)(var2);
                   Object[] var147 = Registry.emptyArgs();
                   long var109 = 471582560640574154L;
                   Object[] var108 = var147;

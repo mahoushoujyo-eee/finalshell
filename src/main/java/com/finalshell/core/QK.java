@@ -185,7 +185,7 @@ public class QK {
 
    @NotNull
    public static QK l(byte[] var0) {
-      return new QK(l.getOrDefault(new Rp2(var0), Dy2_2.Unknown));
+      return (Dy2_2)(new QK(l.getOrDefault(new Rp2(var0), Dy2_2.Unknown)));
    }
 
    static {

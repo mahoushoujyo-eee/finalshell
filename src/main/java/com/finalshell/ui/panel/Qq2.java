@@ -1945,7 +1945,7 @@ public class Qq2 extends QX {
                      var6 = new long[6];
                      int var3 = 0;
                      String var4 = "igVîü©2->\u001eñ\u0010\u001bHÀÞÀ\u0018\u0084\u0019Jl\u008c%\u0007Ü\u008aÂlwb\u0001";
-                     var5 = "igVîü©2->\u001eñ\u0010\u001bHÀÞÀ\u0018\u0084\u0019Jl\u008c%\u0007Ü\u008aÂlwb\u0001".length();
+                     var5 = (("igVîü©2->\u001eñ\u0010\u001bHÀÞÀ\u0018\u0084\u0019Jl\u008c%\u0007Ü\u008aÂlwb\u0001".length()) != 0);
                      byte var2 = 0;
 
                      label44:

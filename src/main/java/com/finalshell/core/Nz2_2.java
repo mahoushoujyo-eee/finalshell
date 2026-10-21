@@ -109,7 +109,7 @@ public class Nz2_2 {
                         var16 = var16.substring(a(8076, -7680).length());
                      }
 
-                     var10005 = var18;
+                     var10005 = (HashMap)(var18);
                      if (var2 == null) {
                         break label507;
                      }
@@ -121,7 +121,7 @@ public class Nz2_2 {
                      var18 = var18.substring(a(8076, -7680).length());
                   }
 
-                  var10005 = var16.substring(0, var16.lastIndexOf(":"));
+                  var10005 = (HashMap)(var16.substring(0, var16.lastIndexOf(":")));
                }
 
                String var19 = var10005;
@@ -321,7 +321,7 @@ public class Nz2_2 {
                         var163 = var163.substring(a(8076, -7680).length());
                      }
 
-                     var10005 = var166;
+                     var10005 = (HashMap)(var166);
                      if (var2 == null) {
                         break label513;
                      }
@@ -333,13 +333,13 @@ public class Nz2_2 {
                      var166 = var166.substring(a(8076, -7680).length());
                   }
 
-                  var10005 = var163.substring(0, var163.lastIndexOf(":"));
+                  var10005 = (HashMap)(var163.substring(0, var163.lastIndexOf(":")));
                }
 
                String var27;
                String var28;
                boolean var29;
-               var27 = var10005;
+               var27 = (String)(var10005);
                var28 = var166.substring(0, var166.lastIndexOf(":"));
                var29 = false;
                var190 = var7.contains(var27);
@@ -808,7 +808,7 @@ public class Nz2_2 {
                return (String)var4;
             }
 
-            var27 = var5;
+            var27 = (String)(var5);
             Object[] var10004 = Registry.emptyArgs();
             long var15 = 412318774197756267L;
             Object[] var14 = var10004;

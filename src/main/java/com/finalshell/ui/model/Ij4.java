@@ -9,7 +9,7 @@ public int compareTo(Enum o) {
    public static Ij4 attached;
 
    public static Ij4[] values() {
-      return (Ij4[])n.clone();
+      return (Ij4[])com.finalshell.reflect.Ref.cloneObject(n);
    }
 
    public static Ij4 valueOf(String var0) {
@@ -117,6 +117,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object n;
 }
 
 

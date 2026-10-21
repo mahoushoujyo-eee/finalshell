@@ -77,7 +77,7 @@ public class TerminateProcessConfirmListener implements ActionListener {
       }
 
       Object var7 = var10009;
-      var10009 = (Object[])var7;
+      var10009 = (U82)((Object[])var7);
       if (var5 == null) {
          if (var7 == null) {
             String var10010 = (String)(Registry.emptyArgs());
@@ -94,7 +94,7 @@ public class TerminateProcessConfirmListener implements ActionListener {
             var7 = var10010;
          }
 
-         var10009 = (Object[])var7;
+         var10009 = (U82)((Object[])var7);
       }
 
       if (var5 == null) {
@@ -113,7 +113,7 @@ public class TerminateProcessConfirmListener implements ActionListener {
             var7 = var58;
          }
 
-         var10009 = (Object[])var7;
+         var10009 = (U82)((Object[])var7);
       }
 
       label93: {
@@ -146,7 +146,7 @@ public class TerminateProcessConfirmListener implements ActionListener {
       TerminateProcessConfirmListener var55 = var7.length();
       if (var5 == null) {
          if (var55 > var8) {
-            var7 = var7.substring(0, var8) + a(-31781, -6139);
+            var7 = ((java.lang.String)var7).substring(0, var8) + a(-31781, -6139);
          }
 
          var55 = this;

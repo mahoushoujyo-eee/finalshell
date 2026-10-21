@@ -40,7 +40,7 @@ public class Kl4 extends Pl2 {
       int var10002 = (var1) ? 1 : 0;
       if (var2 == null) {
          Registry.lookupField(603912005139022520L).setBoolean(this, (boolean)var1);
-         if (var1 != 0) {
+         if (var1) {
             String[] var10 = new String[]{
                (String)Registry.lookupField(120798900280429031L).get(null),
                (String)Registry.lookupField(255728535682922342L).get(null),
@@ -132,7 +132,7 @@ public class Kl4 extends Pl2 {
                }
             }
 
-            var55 = Registry.lookupField(234889186655774911L).getInt(this);
+            var55 = (Boolean)(Registry.lookupField(234889186655774911L).getInt(this));
          }
 
          label175: {
@@ -345,11 +345,11 @@ public class Kl4 extends Pl2 {
                   throw var15.getTargetException();
                }
 
-               var7 = var10002;
+               var7 = (String)(var10002);
             }
 
             label48: {
-               var10001 = var7.equals(var1);
+               var10001 = (int)(var7.equals(var1));
                if (var2 == null) {
                   if (var10001 == 0) {
                      break label48;
@@ -459,7 +459,7 @@ public class Kl4 extends Pl2 {
 
       do {
          Object var4 = 222207838991232685L;
-         if (!(this < ((String[])Ref.g(222207838991232685L, var4)).length)) {
+         if (!(0 < ((String[])Ref.g(222207838991232685L, var4)).length)) {
             break;
          }
 
@@ -646,6 +646,7 @@ public class Kl4 extends Pl2 {
          }
       }
    }
+   private static Object var70;
 }
 
 

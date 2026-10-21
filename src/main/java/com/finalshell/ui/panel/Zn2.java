@@ -208,7 +208,7 @@ public class Zn2 extends Z7 {
             throw var140.getTargetException();
          }
 
-         var2 = (java.awt.Component) var10024.p();
+         var2 = (Component)((java.awt.Component) var10024.p());
          var10021.setBackground(var10021);
          Object var57 = 539382548805975630L;
          DC var10022 = (DC)Ref.g(539382548805975630L, var57);
@@ -224,7 +224,7 @@ public class Zn2 extends Z7 {
             throw var139.getTargetException();
          }
 
-         var2 = (java.awt.Component) var10026.p();
+         var2 = (NY)((java.awt.Component) var10026.p());
          var10023.setForeground(var10023);
          Object var61 = 539382548805975630L;
          DC var154 = (DC)Ref.g(539382548805975630L, var61);
@@ -270,7 +270,7 @@ public class Zn2 extends Z7 {
             throw var137.getTargetException();
          }
 
-         var2 = (java.awt.Component) var10036.p();
+         var2 = (Component)((java.awt.Component) var10036.p());
          var10033.setBackground(var10033);
          Object var81 = 358208192808330593L;
          DC var10034 = (DC)Ref.g(358208192808330593L, var81);
@@ -286,7 +286,7 @@ public class Zn2 extends Z7 {
             throw var136.getTargetException();
          }
 
-         var2 = (java.awt.Component) var10038.p();
+         var2 = (NY)((java.awt.Component) var10038.p());
          var10035.setForeground(var10035);
          Object var85 = 358208192808330593L;
          DC var163 = (DC)Ref.g(358208192808330593L, var85);
@@ -649,7 +649,7 @@ public class Zn2 extends Z7 {
                   throw var68.getTargetException();
                }
 
-               var76 = var10017;
+               var76 = (Zn2)(var10017);
                if (var1 == null) {
                   break label101;
                }
@@ -1788,6 +1788,7 @@ public class Zn2 extends Z7 {
          }
       }
    }
+   private static int var148;
 }
 
 

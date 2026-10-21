@@ -494,7 +494,7 @@ public class ConnectionState {
          }
 
          this.v = true;
-         var4 = this.k;
+         var4 = (ConnectionState)(this.k);
       }
 
       synchronized (var4) {

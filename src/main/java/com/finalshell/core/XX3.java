@@ -48,7 +48,7 @@ public class XX3 {
 
                label45: {
                   if (var2 == 0) {
-                     if (var1 == 0) {
+                     if (!var1) {
                         var16 = (float)Math.sqrt(Math.pow((double)(var10 - var8), 2.0) + Math.pow((double)(var9 - var8), 2.0));
                         if (var2 == 0) {
                            break label45;
@@ -131,7 +131,7 @@ public class XX3 {
                   continue label52;
                }
 
-               if (var1 == 0) {
+               if (!var1) {
                }
 
                var10000 = var16;

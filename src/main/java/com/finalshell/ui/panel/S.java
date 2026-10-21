@@ -144,7 +144,7 @@ public class S extends JTree implements Yb4 {
       String var10000 = d();
       TreeModel var2 = this.getModel();
       String var1 = var10000;
-      var10000 = var2;
+      var10000 = (String)(var2);
       if (var1 != null) {
          if (var2 == null) {
             return;

@@ -119,16 +119,16 @@ public class OQ extends Oq2 {
          var8 = var7.T();
          this.S(this.i() ? C : r);
          var9 = null;
-         var10000 = this.z;
+         var10000 = (String)(this.z);
          if (var6 != null) {
             if (this.z.isEnabled()) {
                Object var15;
                synchronized (var15 = var7.S()) {
-                  var10000 = var7;
+                  var10000 = (String)(var7);
                   label96:
                   if (var6 != null) {
                      if (!var7.Y()) {
-                        var10000 = var7;
+                        var10000 = (String)(var7);
                         if (var6 == null) {
                            break label96;
                         }
@@ -164,7 +164,7 @@ public class OQ extends Oq2 {
 
          Object var10 = var10000;
          synchronized (var10000) {
-            var10000 = var7;
+            var10000 = (String)(var7);
             if (var6 != null) {
                if (!var7.Z()) {
                   Xb4.r(this.s, var7, true);

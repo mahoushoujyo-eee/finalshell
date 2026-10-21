@@ -210,7 +210,7 @@ public class KQ extends JDialog {
             }
          }
 
-         var10009 = var1;
+         var10009 = (Integer)(var1);
          Object[] var68 = Registry.emptyArgs();
          long var34 = 528672956857361353L;
          Object[] var33 = var68;

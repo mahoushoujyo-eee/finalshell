@@ -608,9 +608,9 @@ public class Lv4_2 extends Ln4_2 {
       label253: {
          label257: {
             O0 var3 = var67.D(var10006);
-            var68 = var1.containsKey(a(490, -544));
+            var68 = (Lv4_2)(var1.containsKey(a(490, -544)));
             if (this != null) {
-               if (var68 != false) {
+               if (var68 != 0) {
                   var10006 = var1.C$String(a(491, -32534));
                   long var19 = 154052875261920619L;
                   String var18 = var10006;
@@ -620,14 +620,14 @@ public class Lv4_2 extends Ln4_2 {
                   }
                }
 
-               var68 = var1.containsKey(a(466, 22752));
+               var68 = (Lv4_2)(var1.containsKey(a(466, 22752)));
             }
 
             if (this == null) {
                break label253;
             }
 
-            if (var68 != false) {
+            if (var68 != 0) {
                var10006 = var1.C$String(a(500, -12827));
                long var21 = 154052875261920619L;
                String var20 = var10006;
@@ -635,127 +635,127 @@ public class Lv4_2 extends Ln4_2 {
             }
          }
 
-         var68 = var1.containsKey(a(460, -11389));
+         var68 = (Lv4_2)(var1.containsKey(a(460, -11389)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             Registry.lookupField(353418721809589950L).setInt(this, var1.b(a(508, 15475)));
          }
 
-         var68 = var1.containsKey(a(493, -23826));
+         var68 = (Lv4_2)(var1.containsKey(a(493, -23826)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             var10006 = var1.C$String(a(471, -7084));
             long var23 = 384838941154535182L;
             String var22 = var10006;
             Ref.s(384838941154535182L, var22, var23);
          }
 
-         var68 = var1.containsKey(a(459, 4085));
+         var68 = (Lv4_2)(var1.containsKey(a(459, 4085)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             Registry.lookupField(359956729055048598L).setBoolean(this, var1.G(a(495, -9961)));
          }
 
-         var68 = var1.containsKey(a(450, 30225));
+         var68 = (Lv4_2)(var1.containsKey(a(450, 30225)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             Registry.lookupField(205554092669544631L).setBoolean(this, var1.G(a(453, 14017)));
          }
 
-         var68 = var1.containsKey(a(461, 963));
+         var68 = (Lv4_2)(var1.containsKey(a(461, 963)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             Registry.lookupField(247451900503244996L).setInt(this, var1.b(a(497, -24382)));
          }
 
-         var68 = var1.containsKey(a(454, 28206));
+         var68 = (Lv4_2)(var1.containsKey(a(454, 28206)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             Registry.lookupField(419895388352319860L).setInt(this, var1.b(a(412, 14465)));
          }
 
-         var68 = var1.containsKey(a(507, -7021));
+         var68 = (Lv4_2)(var1.containsKey(a(507, -7021)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             Registry.lookupField(272810655467653509L).setInt(this, var1.b(a(467, 25751)));
          }
 
-         var68 = var1.containsKey(a(497, -24382));
+         var68 = (Lv4_2)(var1.containsKey(a(497, -24382)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             Registry.lookupField(531480989154892349L).setBoolean(this, var1.G(a(474, -14398)));
          }
 
-         var68 = var1.containsKey(a(496, -19147));
+         var68 = (Lv4_2)(var1.containsKey(a(496, -19147)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             var10006 = var1.C$String(a(506, 21882));
             long var25 = 627907196991541283L;
             String var24 = var10006;
             Ref.s(627907196991541283L, var24, var25);
          }
 
-         var68 = var1.containsKey(a(477, -28977));
+         var68 = (Lv4_2)(var1.containsKey(a(477, -28977)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             var10006 = var1.C$String(a(470, -13107));
             long var27 = 526478836065910155L;
             String var26 = var10006;
             Ref.s(526478836065910155L, var26, var27);
          }
 
-         var68 = var1.containsKey(a(463, -11049));
+         var68 = (Lv4_2)(var1.containsKey(a(463, -11049)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             Registry.lookupField(598230571115316872L).setInt(this, var1.b(a(504, 22653)));
          }
 
-         var68 = var1.containsKey(a(481, -25592));
+         var68 = (Lv4_2)(var1.containsKey(a(481, -25592)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             Registry.lookupField(286838803629205994L).setInt(this, var1.b(a(452, -15798)));
          }
 
-         var68 = var1.containsKey(a(468, -11819));
+         var68 = (Lv4_2)(var1.containsKey(a(468, -11819)));
       }
 
       if (this != null) {
-         if (var68 != false) {
+         if (var68 != 0) {
             Registry.lookupField(269341826487623253L).setBoolean(this, var1.G(a(503, 26995)));
          }
 
-         var68 = var1.containsKey(a(408, -8640));
+         var68 = (Lv4_2)(var1.containsKey(a(408, -8640)));
       }
 
       Object var78;
       label223: {
          label258: {
             if (this != null) {
-               if (var68 != false) {
+               if (var68 != 0) {
                   Registry.lookupField(610023586786477617L).setBoolean(this, var1.G(a(482, -17089)));
                }
 
@@ -775,7 +775,7 @@ public class Lv4_2 extends Ln4_2 {
                var1.containsKey(a(415, 26137));
             }
 
-            if (var68 != false) {
+            if (var68 != 0) {
                Oc2 var4 = var1.J(a(478, 646));
                int var5 = 0;
 
@@ -2290,7 +2290,7 @@ public class Lv4_2 extends Ln4_2 {
       String[] var13 = new String[71];
       int var11 = 0;
       String var10 = "\u0084¼as×\u0087ÓÐ\u0085ç*øÎxÝdá$¾`ªh»*ÿ\u000eÚPEØÁ]½È`\u009b@;+Ãã\u008e\u0093¬Æ\u0095\u001b\u0017r.LBeª\u0002¥É\u0014]¬Þ#\u0016¿\u0015Àº<ü\u0000\u008d\u008a}@1\u0095\u001aÅ\u000b¼\u000fu\u000bo@\u00ad×O\u0016\u0083\tì~Zàs\t·\u00003\u0002\u008b<\u000bÜ\u009f\u009e\u001c\u000fS066Ø§\u0015\u0081Ö\u0018<\u0019'\u008a²a?OµVkJ?im\u0015¿~\u0013\u009bè¦Iì\u0002MÁObo-<-²àî}8\b\u0092O=_K=´7\u0011´Ìg}\u0017FËè\u0086àJ\u0018Âd\\çÑ\u000bxÇêúhÈ(le»V\u0004a¡\u009b\\\u0006\u001b3\u0016\u0088@©\u000e\bèo\u0017fiègRDu°ÖÊ\u000eÕó¢Ù:Á-BbìÛþ¶à\u0013%\u008bä\u0082\u00ad\u001c\u0004¦ô\u0088¥\u009bfUþ\u0090kØð\u0013\u0083ï\u008d\u0011\u008aÉøt#\u0088²\u009aÀ3K±¥ÜÜ\u00046\u0093©Ä\u0004\u0087Õ\u0085\f\u0016< ¯òïþT\u0089¼D!Eÿ\u007fÈ÷=U ¸\u008eÛ\n\u0018^TáG×w½Kæ\b3å\u0012Â\u0086m7¤\u0010z\u008b·{yã\u009eá¶¢ÎZ\u0004f0\u009c\u0016+ÊQ?øÖo((,çúÄÅR\u0084_l\u007f\u007fIÆ\u0002Ð\u001d\u0005Ùí¿ÍÙ\u0007\u00adîb@$\u008f)\u0006P\u0098üxö¯\u0015r\u008cfwÖNs\u009f^\u009a¨\u0001ªýÕí\u009a7kô±\u0010\u0012\u0083ºzØÃªå0\"\u001eJ\u001edsÜ\b@\u0087|\u008eKä\u008e\u0095\u0013·\u0080¶ãç0M#Ý8\u0080\u008dÂ\u0097jÈùÓ¢\u0006\u0095ÌDòáþ\u000b:\u0086¥:ufî\u0013'\u008e\u008e\u0004½ô\u0000ö\u0013\u000e\u000e<-¼N>\u0084û\u0096©Y£K'¾(=m\u0006\u00860¥è6¥\b\u008d\u0080Ù\u0014níþ\u0082\u0004\u0096\u0086§f\u000eI9G-c.H\u008fFY÷\u0013\u0086¾\u0013ù\u0084êÄe³|÷i¤«õ¤6¡\u0083\u008c\u0011t\u0004\u001aÕ°É\u000eâ¦Dsæ\u0094¶è\u0011¹µT{µ\bü\u0014÷\u0086«¿FÈ\t@lÏ¢ÁAá\tù\u0005kS\u00adÙ\u00ad\b\u009d¬Ü#w²3Æ\u0019³\u0081×\u0085\t\u001c\u00049ë}Áë¾H\u008cA\u0018¹òÖ3ÙM\u0082T\niÇzÒ\u0082±Ïq\\\u007f\u0004e__\u0098\u0015\u001e>8dÊÙÄ\u000fyn\fÿ\u001d+¹Õ¥ÓO»Æ\u0004¤ËûÏ\ry\u0093(\u0089Á>¢¹h1Û·ì\r\u0001@'ó q\u009ePï\f+\u0010ò\u000bóB{§³$§ØÄ\u0005ù\u0007\u000bT¶\u0017¾ez\u000bp\u000eëÃHï,\u0088å'F\u0005\u0018·ÇaÄ\u0016W\u0082Þ6\t÷Q\fï¨\u001fjÛ×±Æ#$ðv¸ç\u0002«³\bª\t°#2øF\u0006\nÙ&\u00843¬£öñjà\u0019|á.\u00896\u009dã\t\u0017{^+MPòB×Ù\u000bÚ\fXª²¨\u0005ð}\u009aß}\u0014\u008c\fä7Q=ý\u0090§6_Aù¢óEà5 Ñ\u00027\u0097\u000f<\u001f\u009fO\u009bnÂr,ì¤×\u0019;×";
-      var12 = "\u0084¼as×\u0087ÓÐ\u0085ç*øÎxÝdá$¾`ªh»*ÿ\u000eÚPEØÁ]½È`\u009b@;+Ãã\u008e\u0093¬Æ\u0095\u001b\u0017r.LBeª\u0002¥É\u0014]¬Þ#\u0016¿\u0015Àº<ü\u0000\u008d\u008a}@1\u0095\u001aÅ\u000b¼\u000fu\u000bo@\u00ad×O\u0016\u0083\tì~Zàs\t·\u00003\u0002\u008b<\u000bÜ\u009f\u009e\u001c\u000fS066Ø§\u0015\u0081Ö\u0018<\u0019'\u008a²a?OµVkJ?im\u0015¿~\u0013\u009bè¦Iì\u0002MÁObo-<-²àî}8\b\u0092O=_K=´7\u0011´Ìg}\u0017FËè\u0086àJ\u0018Âd\\çÑ\u000bxÇêúhÈ(le»V\u0004a¡\u009b\\\u0006\u001b3\u0016\u0088@©\u000e\bèo\u0017fiègRDu°ÖÊ\u000eÕó¢Ù:Á-BbìÛþ¶à\u0013%\u008bä\u0082\u00ad\u001c\u0004¦ô\u0088¥\u009bfUþ\u0090kØð\u0013\u0083ï\u008d\u0011\u008aÉøt#\u0088²\u009aÀ3K±¥ÜÜ\u00046\u0093©Ä\u0004\u0087Õ\u0085\f\u0016< ¯òïþT\u0089¼D!Eÿ\u007fÈ÷=U ¸\u008eÛ\n\u0018^TáG×w½Kæ\b3å\u0012Â\u0086m7¤\u0010z\u008b·{yã\u009eá¶¢ÎZ\u0004f0\u009c\u0016+ÊQ?øÖo((,çúÄÅR\u0084_l\u007f\u007fIÆ\u0002Ð\u001d\u0005Ùí¿ÍÙ\u0007\u00adîb@$\u008f)\u0006P\u0098üxö¯\u0015r\u008cfwÖNs\u009f^\u009a¨\u0001ªýÕí\u009a7kô±\u0010\u0012\u0083ºzØÃªå0\"\u001eJ\u001edsÜ\b@\u0087|\u008eKä\u008e\u0095\u0013·\u0080¶ãç0M#Ý8\u0080\u008dÂ\u0097jÈùÓ¢\u0006\u0095ÌDòáþ\u000b:\u0086¥:ufî\u0013'\u008e\u008e\u0004½ô\u0000ö\u0013\u000e\u000e<-¼N>\u0084û\u0096©Y£K'¾(=m\u0006\u00860¥è6¥\b\u008d\u0080Ù\u0014níþ\u0082\u0004\u0096\u0086§f\u000eI9G-c.H\u008fFY÷\u0013\u0086¾\u0013ù\u0084êÄe³|÷i¤«õ¤6¡\u0083\u008c\u0011t\u0004\u001aÕ°É\u000eâ¦Dsæ\u0094¶è\u0011¹µT{µ\bü\u0014÷\u0086«¿FÈ\t@lÏ¢ÁAá\tù\u0005kS\u00adÙ\u00ad\b\u009d¬Ü#w²3Æ\u0019³\u0081×\u0085\t\u001c\u00049ë}Áë¾H\u008cA\u0018¹òÖ3ÙM\u0082T\niÇzÒ\u0082±Ïq\\\u007f\u0004e__\u0098\u0015\u001e>8dÊÙÄ\u000fyn\fÿ\u001d+¹Õ¥ÓO»Æ\u0004¤ËûÏ\ry\u0093(\u0089Á>¢¹h1Û·ì\r\u0001@'ó q\u009ePï\f+\u0010ò\u000bóB{§³$§ØÄ\u0005ù\u0007\u000bT¶\u0017¾ez\u000bp\u000eëÃHï,\u0088å'F\u0005\u0018·ÇaÄ\u0016W\u0082Þ6\t÷Q\fï¨\u001fjÛ×±Æ#$ðv¸ç\u0002«³\bª\t°#2øF\u0006\nÙ&\u00843¬£öñjà\u0019|á.\u00896\u009dã\t\u0017{^+MPòB×Ù\u000bÚ\fXª²¨\u0005ð}\u009aß}\u0014\u008c\fä7Q=ý\u0090§6_Aù¢óEà5 Ñ\u00027\u0097\u000f<\u001f\u009fO\u009bnÂr,ì¤×\u0019;×";
+      var12 = (boolean)("\u0084¼as×\u0087ÓÐ\u0085ç*øÎxÝdá$¾`ªh»*ÿ\u000eÚPEØÁ]½È`\u009b@;+Ãã\u008e\u0093¬Æ\u0095\u001b\u0017r.LBeª\u0002¥É\u0014]¬Þ#\u0016¿\u0015Àº<ü\u0000\u008d\u008a}@1\u0095\u001aÅ\u000b¼\u000fu\u000bo@\u00ad×O\u0016\u0083\tì~Zàs\t·\u00003\u0002\u008b<\u000bÜ\u009f\u009e\u001c\u000fS066Ø§\u0015\u0081Ö\u0018<\u0019'\u008a²a?OµVkJ?im\u0015¿~\u0013\u009bè¦Iì\u0002MÁObo-<-²àî}8\b\u0092O=_K=´7\u0011´Ìg}\u0017FËè\u0086àJ\u0018Âd\\çÑ\u000bxÇêúhÈ(le»V\u0004a¡\u009b\\\u0006\u001b3\u0016\u0088@©\u000e\bèo\u0017fiègRDu°ÖÊ\u000eÕó¢Ù:Á-BbìÛþ¶à\u0013%\u008bä\u0082\u00ad\u001c\u0004¦ô\u0088¥\u009bfUþ\u0090kØð\u0013\u0083ï\u008d\u0011\u008aÉøt#\u0088²\u009aÀ3K±¥ÜÜ\u00046\u0093©Ä\u0004\u0087Õ\u0085\f\u0016< ¯òïþT\u0089¼D!Eÿ\u007fÈ÷=U ¸\u008eÛ\n\u0018^TáG×w½Kæ\b3å\u0012Â\u0086m7¤\u0010z\u008b·{yã\u009eá¶¢ÎZ\u0004f0\u009c\u0016+ÊQ?øÖo((,çúÄÅR\u0084_l\u007f\u007fIÆ\u0002Ð\u001d\u0005Ùí¿ÍÙ\u0007\u00adîb@$\u008f)\u0006P\u0098üxö¯\u0015r\u008cfwÖNs\u009f^\u009a¨\u0001ªýÕí\u009a7kô±\u0010\u0012\u0083ºzØÃªå0\"\u001eJ\u001edsÜ\b@\u0087|\u008eKä\u008e\u0095\u0013·\u0080¶ãç0M#Ý8\u0080\u008dÂ\u0097jÈùÓ¢\u0006\u0095ÌDòáþ\u000b:\u0086¥:ufî\u0013'\u008e\u008e\u0004½ô\u0000ö\u0013\u000e\u000e<-¼N>\u0084û\u0096©Y£K'¾(=m\u0006\u00860¥è6¥\b\u008d\u0080Ù\u0014níþ\u0082\u0004\u0096\u0086§f\u000eI9G-c.H\u008fFY÷\u0013\u0086¾\u0013ù\u0084êÄe³|÷i¤«õ¤6¡\u0083\u008c\u0011t\u0004\u001aÕ°É\u000eâ¦Dsæ\u0094¶è\u0011¹µT{µ\bü\u0014÷\u0086«¿FÈ\t@lÏ¢ÁAá\tù\u0005kS\u00adÙ\u00ad\b\u009d¬Ü#w²3Æ\u0019³\u0081×\u0085\t\u001c\u00049ë}Áë¾H\u008cA\u0018¹òÖ3ÙM\u0082T\niÇzÒ\u0082±Ïq\\\u007f\u0004e__\u0098\u0015\u001e>8dÊÙÄ\u000fyn\fÿ\u001d+¹Õ¥ÓO»Æ\u0004¤ËûÏ\ry\u0093(\u0089Á>¢¹h1Û·ì\r\u0001@'ó q\u009ePï\f+\u0010ò\u000bóB{§³$§ØÄ\u0005ù\u0007\u000bT¶\u0017¾ez\u000bp\u000eëÃHï,\u0088å'F\u0005\u0018·ÇaÄ\u0016W\u0082Þ6\t÷Q\fï¨\u001fjÛ×±Æ#$ðv¸ç\u0002«³\bª\t°#2øF\u0006\nÙ&\u00843¬£öñjà\u0019|á.\u00896\u009dã\t\u0017{^+MPòB×Ù\u000bÚ\fXª²¨\u0005ð}\u009aß}\u0014\u008c\fä7Q=ý\u0090§6_Aù¢óEà5 Ñ\u00027\u0097\u000f<\u001f\u009fO\u009bnÂr,ì¤×\u0019;×");
          // [VF] .length();
       int[] var10000 = new int[5];
       char var9 = 17;
@@ -2461,7 +2461,7 @@ public class Lv4_2 extends Ln4_2 {
                   }
 
                   var10 = "D_\u0002)IÕ\u007f\nnª\bäqL\u0019\u0098\u008a&}";
-                  var12 = "D_\u0002)IÕ\u007f\nnª\bäqL\u0019\u0098\u008a&}".length();
+                  var12 = (("D_\u0002)IÕ\u007f\nnª\bäqL\u0019\u0098\u008a&}".length()) != 0);
                   var9 = '\n';
                   var17 = -1;
             }

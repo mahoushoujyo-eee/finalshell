@@ -14,7 +14,7 @@ public int compareTo(Enum o) {
    public static BU none;
 
    public static BU[] values() {
-      return (BU[])O.clone();
+      return (BU[])com.finalshell.reflect.Ref.cloneObject(O);
    }
 
    public static BU valueOf(String var0) {
@@ -196,6 +196,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object O;
 }
 
 

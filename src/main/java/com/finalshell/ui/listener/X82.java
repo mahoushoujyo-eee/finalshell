@@ -200,7 +200,7 @@ public class X82 implements TreeSelectionListener {
                }
             }
 
-            var10005 = this;
+            var10005 = (DefaultMutableTreeNode)(this);
             Object var73 = 496002419724426617L;
             Ref.g(496002419724426617L, var73);
             Object[] var102 = Registry.emptyArgs();
@@ -219,7 +219,7 @@ public class X82 implements TreeSelectionListener {
          }
 
          label151: {
-            var10005 = (Object[])var4;
+            var10005 = (DefaultMutableTreeNode)((Object[])var4);
             if (var2 == null) {
                if (var4 == null) {
                   break label151;

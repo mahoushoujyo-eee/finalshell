@@ -38,9 +38,10 @@ public class Cc4 extends C42 {
             var4 = this.z;
          }
 
-         var4.repaint();
+         ((javax.swing.JComponent)var4).repaint();
       }
    }
+   private static Object var4;
 }
 
 

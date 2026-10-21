@@ -93,7 +93,7 @@ public class Xo2 {
       String[] var2 = var10000;
       int var5 = (var1) ? 1 : 0;
       if (var2 == null) {
-         if (var1 == 0) {
+         if (!var1) {
             this.f--;
 
             label78:
@@ -274,7 +274,7 @@ public class Xo2 {
       String[] var2 = var10000;
       byte var6 = (byte)((var1) ? 1 : 0);
       if (var2 == null) {
-         if (var1 == 0) {
+         if (!var1) {
             this.f--;
          }
 

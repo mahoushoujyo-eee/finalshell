@@ -1313,7 +1313,7 @@ public class X2 {
                   }
 
                   var2 = "¬(hÎ\u008fºjQÚnÏ\u008d{ÑÖ\u000eæ\u0092!\u0099¦PF\u0001`Ú0\u0015l^";
-                  var4 = "¬(hÎ\u008fºjQÚnÏ\u008d{ÑÖ\u000eæ\u0092!\u0099¦PF\u0001`Ú0\u0015l^".length();
+                  var4 = (("¬(hÎ\u008fºjQÚnÏ\u008d{ÑÖ\u000eæ\u0092!\u0099¦PF\u0001`Ú0\u0015l^".length()) != 0);
                   var1 = 15;
                   var8 = -1;
             }

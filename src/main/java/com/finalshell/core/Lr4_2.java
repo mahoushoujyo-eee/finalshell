@@ -1245,6 +1245,7 @@ public class Lr4_2 {
          }
       }
    }
+   private static Object var19;
 }
 
 

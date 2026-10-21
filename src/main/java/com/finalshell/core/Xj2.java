@@ -753,7 +753,7 @@ public class Xj2 extends Xv2 {
                         Composite var37;
                         label240: {
                            label366: {
-                              var37 = (RV.a(var1, var55, var60)) != 0;
+                              var37 = (((RV.a(var1, var55, var60)) != 0) != 0);
                               var1.drawImage(var7, var25, var31, var28, var34, 0, var31, var4, var34, null);
                               var60 = (this.N) ? 1 : 0;
                               if (var3 == null) {
@@ -864,7 +864,7 @@ public class Xj2 extends Xv2 {
                   Composite var38;
                   label201: {
                      label369: {
-                        var38 = (RV.a(var1, var56, var62)) != 0;
+                        var38 = (((RV.a(var1, var56, var62)) != 0) != 0);
                         var1.drawImage(var7, var26, var32, var29, var35, var26, 0, var29, var5, null);
                         var62 = (this.N) ? 1 : 0;
                         if (var3 == null) {

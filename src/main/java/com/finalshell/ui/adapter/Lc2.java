@@ -179,7 +179,7 @@ public class Lc2 extends DefaultTableCellRenderer {
                      throw var75.getTargetException();
                   }
 
-                  var17 = var10008.append((String)var10009).append(" ").toString();
+                  var17 = ((java.lang.StringBuilder)var10008).append((String)var10009).append(" ").toString();
                   var10009 = Registry.packArgs(true);
                   long var35 = 470566827426873505L;
                   Object[] var34 = (Object[])var10009;
@@ -225,7 +225,7 @@ public class Lc2 extends DefaultTableCellRenderer {
                      throw var72.getTargetException();
                   }
 
-                  var17 = var98.append((String)var109).append("").toString();
+                  var17 = ((java.lang.StringBuilder)var98).append((String)var109).append("").toString();
                   var109 = Registry.packArgs(true);
                   long var41 = 277230421274009311L;
                   Object[] var40 = (Object[])var109;
@@ -690,6 +690,7 @@ public class Lc2 extends DefaultTableCellRenderer {
          }
       }
    }
+   private static Object var94;
 }
 
 

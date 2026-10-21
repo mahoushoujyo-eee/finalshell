@@ -1132,6 +1132,7 @@ public class Lx2 {
          var9 = var10.charAt(var8);
       }
    }
+   private static Object var13;
 }
 
 

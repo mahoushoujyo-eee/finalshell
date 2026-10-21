@@ -182,7 +182,7 @@ public class Zn2 extends L4_2 {
          }
 
          List var5 = (List)this.i.remove(var1.H());
-         var10000 = var5;
+         var10000 = (String[])(var5);
          if (var3 != null) {
             if (var5 != null) {
                for (CB3 var7 : var5) {
@@ -325,7 +325,7 @@ public class Zn2 extends L4_2 {
 
       try {
          var8 = true;
-         var10000 = var1;
+         var10000 = (String[])(var1);
          if (var2 != null) {
             if (var1.d()) {
                // $VF: monitorexit
@@ -400,7 +400,7 @@ public class Zn2 extends L4_2 {
 
       try {
          var11 = true;
-         var10000 = var1;
+         var10000 = (String[])(var1);
          if (var3 != null) {
             if (var1.d()) {
                // $VF: monitorexit
@@ -506,7 +506,7 @@ public class Zn2 extends L4_2 {
       Object var5 = var10000;
       synchronized (var10000) {
          List var6 = (List)this.i.get(var4.H());
-         var10000 = var6;
+         var10000 = (MutableTreeNode)(var6);
          if (var2 != null) {
             if (var6 != null) {
                var6.remove(var3);
@@ -532,7 +532,7 @@ public class Zn2 extends L4_2 {
       CB3 var5 = (CB3)var1;
       var4 = var10000;
       CB3 var6 = (CB3)var2;
-      var10000 = var6;
+      var10000 = (String[])(var6);
       if (var4 != null) {
          if (!var6.g$boolean()) {
             return;
@@ -551,7 +551,7 @@ public class Zn2 extends L4_2 {
                this.i.put(var6.H(), var8);
             }
 
-            var8.add(var5);
+            ((java.math.BigInteger)var8).add(var5);
             var10000 = (String[])var7;
          }
 
@@ -623,7 +623,7 @@ public class Zn2 extends L4_2 {
          }
 
          for (int var7 = var1.length - 1; var7 >= 0; var7--) {
-            var6.add(var3, var1[var7]);
+            ((java.math.BigInteger)var6).add(var3, var1[var7]);
             if (var4 != null && var4 != null) {
                continue;
             }

@@ -626,7 +626,7 @@ public class ConnectionEditorPanel extends Z7 {
                throw var69.getTargetException();
             }
 
-            var10027.setText(var10028);
+            ((javax.swing.text.JTextComponent)var10027).setText(var10028);
             if (this == null) {
                return;
             }

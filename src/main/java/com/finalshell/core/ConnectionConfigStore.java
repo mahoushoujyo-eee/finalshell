@@ -1449,7 +1449,7 @@ public class ConnectionConfigStore {
                var6 = var6 + File.separator;
             }
 
-            var10002 = new StringBuilder().append(var6);
+            var10002 = (String)(new StringBuilder().append(var6));
             String var10004 = (String)(Registry.emptyArgs());
             long var16 = 413442976446181537L;
             Object var15 = var10004;
@@ -1585,7 +1585,7 @@ public class ConnectionConfigStore {
                var5 = var5 + File.separator;
             }
 
-            var30 = new StringBuilder().append(var5);
+            var30 = (String)(new StringBuilder().append(var5));
             String var10005 = (String)(Registry.emptyArgs());
             long var18 = 413442976446181537L;
             Object var17 = var10005;
@@ -4838,7 +4838,7 @@ public class ConnectionConfigStore {
          throw var41.getTargetException();
       }
 
-      var4 = new com.finalshell.core.TQ3(var10013, Registry.lookupField(234937930320207719L).getInt(null), -1);
+      var4 = (Lv4_2)(new com.finalshell.core.TQ3(var10013, Registry.lookupField(234937930320207719L).getInt(null), -1));
       Object[] var51 = Registry.packArgs(var10011);
       long var39 = 473928376202613579L;
       Object[] var38 = var51;
@@ -5042,7 +5042,7 @@ public class ConnectionConfigStore {
          throw var36.getTargetException();
       }
 
-      var4 = new com.finalshell.core.TQ3(var10017, Registry.lookupField(428968525961987582L).getInt(null), -1);
+      var4 = (Lv4_2)(new com.finalshell.core.TQ3(var10017, Registry.lookupField(428968525961987582L).getInt(null), -1));
       Object[] var41 = Registry.packArgs(var10015);
       long var34 = 473928376202613579L;
       var33 = var41;

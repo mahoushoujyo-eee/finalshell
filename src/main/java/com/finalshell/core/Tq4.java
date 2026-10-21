@@ -143,9 +143,9 @@ public class Tq4 extends JTable implements Xv2_2 {
       Object var4 = var2 * this.getRowHeight();
       this.getParent().getParent().getWidth();
       Object var9 = 298076432091071542L;
-      int var5 = this - ((JPanel)Ref.g(298076432091071542L, var9)).getPreferredSize().width - 5;
+      int var5 = 0 - ((JPanel)Ref.g(298076432091071542L, var9)).getPreferredSize().width - 5;
       Object var11 = 298076432091071542L;
-      int var10006 = this - (((JPanel)Ref.g(298076432091071542L, var11)).getPreferredSize().height - this.getRowHeight()) / 2;
+      int var10006 = 0 - (((JPanel)Ref.g(298076432091071542L, var11)).getPreferredSize().height - this.getRowHeight()) / 2;
       Object var13 = 298076432091071542L;
       Object var15 = 298076432091071542L;
 var10006 = new int[]{(int)this, ((JPanel)Ref.g(298076432091071542L, var13)).getPreferredSize().width, (int)this, ((JPanel)Ref.g(298076432091071542L, var15)).getPreferredSize().height};

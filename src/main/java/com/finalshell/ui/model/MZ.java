@@ -62,6 +62,8 @@ public class MZ implements Comparator {
 
       return var20 < var10005 ? -1 : 0;
    }
+   private static Object var17;
+   private static Object var19;
 }
 
 

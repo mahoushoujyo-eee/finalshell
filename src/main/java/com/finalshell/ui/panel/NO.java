@@ -139,7 +139,7 @@ public class NO extends JPanel {
       String var10007 = ((JTextField)Ref.g(195693382821276289L, var5)).getText();
       Object var7 = 445356554747401550L;
 var10005 = new NO((int)this, (int)var10007, this, ((JTextField)Ref.g(445356554747401550L, var7)).getText());
-      return this;
+      return (UC)(this);
    }
 
    public static JComboBox W(NO var0) {

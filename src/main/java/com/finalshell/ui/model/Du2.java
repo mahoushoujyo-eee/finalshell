@@ -11,7 +11,7 @@ public int compareTo(Enum o) {
    public static boolean T;
 
    public static Du2[] values() {
-      return (Du2[])t.clone();
+      return (Du2[])com.finalshell.reflect.Ref.cloneObject(t);
    }
 
    public static Du2 valueOf(String var0) {
@@ -134,6 +134,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object t;
 }
 
 

@@ -143,7 +143,7 @@ public final class QC {
                return;
             }
 
-            var10000 = var1;
+            var10000 = (String)(var1);
             if (var2 != null) {
                break label148;
             }
@@ -394,12 +394,12 @@ public final class QC {
             }
 
             if (var12 == 1) {
-               var12 = var7;
+               var12 = (int)(var7);
                if (var9 != null) {
                   break label98;
                }
 
-               if (var7 == 0) {
+               if (!var7) {
                   if (var6 > 0) {
                      return new Double(0.0, 0.0, (double)var2, (double)var3, (double)var6, (double)var6);
                   }
@@ -409,7 +409,7 @@ public final class QC {
             }
          }
 
-         var12 = var1.equals(BU.end);
+         var12 = (int)(var1.equals(BU.end));
       }
 
       if (var9 == null) {
@@ -417,10 +417,10 @@ public final class QC {
             GeneralPath var11;
             label72: {
                label102: {
-                  var11 = (new GeneralPath(0)) ? 1 : 0;
-                  var12 = var8;
+                  var11 = (GeneralPath)((new GeneralPath(0)) ? 1 : 0);
+                  var12 = (int)(var8);
                   if (var9 == null) {
-                     if (var8 != 0) {
+                     if (var8) {
                         label66: {
                            var11.moveTo((float)(var2 - var4 - var5 - 1), 0.0F);
                            var11.lineTo((float)(var2 - var5 - 1), (float)(var3 / 2));
@@ -488,7 +488,7 @@ public final class QC {
          label82: {
             var10 = new GeneralPath(0);
             if (var9 == null) {
-               if (var8 != 0) {
+               if (var8) {
                   var10.moveTo(0.0F, 0.0F);
                   var10.lineTo((float)(var2 - var6), 0.0F);
                   var10.quadTo((float)var2, 0.0F, (float)var2, (float)var6);
@@ -526,9 +526,9 @@ public final class QC {
          var5 = var4.getBounds();
          int var6 = var5.width;
          var5.width = Math.round((float)var6 * var1);
-         var7 = var2;
+         var7 = (int)(var2);
          if (var3 == null) {
-            if (var2 != 0) {
+            if (var2) {
                var7 = var5.x;
                break label14;
             }
@@ -607,13 +607,13 @@ public final class QC {
                var14 = var6;
             }
 
-            var15 = var14 instanceof com.finalshell.ui.panel.KE3;
+            var15 = (int)(var14 instanceof com.finalshell.ui.panel.KE3);
             if (var3 != null) {
                break label61;
             }
 
             if (var15 != 0) {
-               var15 = var0 instanceof ND;
+               var15 = (int)(var0 instanceof ND);
                if (var3 != null) {
                   break label61;
                }

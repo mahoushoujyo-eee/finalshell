@@ -140,7 +140,7 @@ public class W92 {
       label41: {
          label40: {
             try {
-               var10000 = var2;
+               var10000 = (String)(var2);
                if (var1 != null) {
                   break label40;
                }

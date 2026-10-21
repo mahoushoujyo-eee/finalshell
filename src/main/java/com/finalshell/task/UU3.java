@@ -51,7 +51,7 @@ public class UU3 implements Runnable {
             throw var39.getTargetException();
          }
 
-         var10007.append((String)var10008);
+         ((java.lang.StringBuilder)var10007).append((String)var10008);
          Object var12 = 342460290428124331L;
          this.append((String)Ref.g(342460290428124331L, var12));
          Object var14 = 245403701154742402L;
@@ -67,7 +67,7 @@ public class UU3 implements Runnable {
             throw var38.getTargetException();
          }
 
-         Object[] var10009 = Registry.packArgs(this, var10010.append((String)var10011).toString());
+         Object[] var10009 = Registry.packArgs(this, ((java.lang.StringBuilder)var10010).append((String)var10011).toString());
          long var19 = 247777483328047393L;
          Object[] var18 = var10009;
          Ref.h(247777483328047393L, var18, var19);

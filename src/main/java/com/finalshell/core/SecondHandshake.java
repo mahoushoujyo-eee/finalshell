@@ -994,7 +994,7 @@ public class SecondHandshake {
 
       try {
          this.u++;
-         var10000 = this;
+         var10000 = (String[])(this);
          if (var1 == null) {
             if (this.u >= a(1562, 7439966017211434529L)) {
                this.u = 0;

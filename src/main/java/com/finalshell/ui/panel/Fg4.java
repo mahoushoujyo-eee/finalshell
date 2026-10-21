@@ -106,7 +106,7 @@ public class Fg4 extends JPanel implements TableCellRenderer {
                      label313: {
                         byte var87 = (byte)((var3) ? 1 : 0);
                         if (var7 == null) {
-                           if (var3 == 0) {
+                           if (!var3) {
                               break label279;
                            }
 
@@ -235,7 +235,7 @@ public class Fg4 extends JPanel implements TableCellRenderer {
 
                var90 = (var3) ? 1 : 0;
                if (var7 == null) {
-                  if (var3 != 0) {
+                  if (var3) {
                      break label283;
                   }
 
@@ -279,7 +279,7 @@ public class Fg4 extends JPanel implements TableCellRenderer {
                                  if ((ArrayList)Ref.g(438759596186612739L, var37) != null) {
                                     byte var94 = (byte)((var3) ? 1 : 0);
                                     if (var7 == null) {
-                                       if (var3 == 0) {
+                                       if (!var3) {
                                           break label212;
                                        }
 
@@ -361,7 +361,7 @@ public class Fg4 extends JPanel implements TableCellRenderer {
                            ((JLabel)Ref.g(442347690627635916L, var47)).setText("");
                         }
 
-                        var95 = var1.getRowCount() - var5;
+                        var95 = (Fg4)(var1.getRowCount() - var5);
                         if (var7 != null) {
                            break label300;
                         }
@@ -373,7 +373,7 @@ public class Fg4 extends JPanel implements TableCellRenderer {
                         break label220;
                      }
 
-                     var95 = Registry.lookupField(461058301372135593L).getBoolean(this);
+                     var95 = (Fg4)(Registry.lookupField(461058301372135593L).getBoolean(this));
                   }
 
                   if (var95 != null) {

@@ -736,6 +736,7 @@ public class Hr4 extends W5 {
          }
       }
    }
+   private static Object var58;
 }
 
 

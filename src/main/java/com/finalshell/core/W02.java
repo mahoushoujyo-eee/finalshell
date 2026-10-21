@@ -473,7 +473,7 @@ public class W02 {
                   break label40;
                }
 
-               if (var4 != 0) {
+               if (var4) {
                   break label39;
                }
             } catch (IllegalArgumentException var11) {

@@ -388,7 +388,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
             var10 = var3.isFocusOwner();
          }
 
-         if (var2 == null && var10 == false) {
+         if (var2 == null && var10 == 0) {
             var3.selectAll();
             var3.requestFocusInWindow();
          }

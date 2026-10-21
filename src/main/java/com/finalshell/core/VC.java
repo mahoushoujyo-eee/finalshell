@@ -649,7 +649,7 @@ public class VC {
                      break label554;
                   }
 
-                  var282 = var207;
+                  var282 = (Long)(var207);
                   Object[] var294 = Registry.emptyArgs();
                   long var134 = 415937735200792127L;
                   Object[] var133 = var294;
@@ -803,6 +803,8 @@ public class VC {
       long var3 = 144008674458598213L;
       Ref.s(144008674458598213L, var1, var3);
    }
+   private static Object var251;
+   private static Object var273;
 }
 
 

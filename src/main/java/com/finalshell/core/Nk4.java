@@ -871,6 +871,7 @@ public class Nk4 {
          }
       }
    }
+   private static Object var7;
 }
 
 

@@ -14,7 +14,7 @@ public int compareTo(Enum o) {
    public static Fj2 verticalContent;
 
    public static Fj2[] values() {
-      return (Fj2[])K.clone();
+      return (Fj2[])com.finalshell.reflect.Ref.cloneObject(K);
    }
 
    public static Fj2 valueOf(String var0) {
@@ -149,6 +149,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object K;
 }
 
 

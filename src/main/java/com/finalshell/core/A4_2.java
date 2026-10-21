@@ -212,7 +212,7 @@ public class A4_2 extends FileChooserUI {
                      while (var10 < var9) {
                         FileFilter var11 = var8[var10];
                         if (var2 == null) {
-                           var17 = var7.contains(var11);
+                           var17 = (int)(var7.contains(var11));
                            if (var2 != null) {
                               break label182;
                            }
@@ -1353,6 +1353,7 @@ public class A4_2 extends FileChooserUI {
          }
       }
    }
+   private static int var17;
 }
 
 

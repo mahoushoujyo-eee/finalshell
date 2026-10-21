@@ -904,7 +904,7 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
       long[] var6 = new long[13];
       int var3 = 0;
       String var4 = "\u0098\u0097»x;.\u0085Ê/ìÇ6~óãþ4dDx\u0015\u0080Êyµ\u0092\u0015Yª\u0017v\në\u0003Õc}ÈÁ*X\r_âÿ\n\u001bØ³ø±ã)\u001dÚíØWf õíù\u0096{\b\u0010\u0082\\ã\u001d\u0000b´'b\u009d<ÐÇÃØP42ó\u0092a";
-      var5 = "\u0098\u0097»x;.\u0085Ê/ìÇ6~óãþ4dDx\u0015\u0080Êyµ\u0092\u0015Yª\u0017v\në\u0003Õc}ÈÁ*X\r_âÿ\n\u001bØ³ø±ã)\u001dÚíØWf õíù\u0096{\b\u0010\u0082\\ã\u001d\u0000b´'b\u009d<ÐÇÃØP42ó\u0092a";
+      var5 = (boolean)("\u0098\u0097»x;.\u0085Ê/ìÇ6~óãþ4dDx\u0015\u0080Êyµ\u0092\u0015Yª\u0017v\në\u0003Õc}ÈÁ*X\r_âÿ\n\u001bØ³ø±ã)\u001dÚíØWf õíù\u0096{\b\u0010\u0082\\ã\u001d\u0000b´'b\u009d<ÐÇÃØP42ó\u0092a");
          // [VF] .length();
       byte var2 = 0;
 
@@ -956,7 +956,7 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
                   }
 
                   var4 = "\"©Ù+\u0083Íé\u0084i\u001dÙî,4)D";
-                  var5 = "\"©Ù+\u0083Íé\u0084i\u001dÙî,4)D".length();
+                  var5 = (("\"©Ù+\u0083Íé\u0084i\u001dÙî,4)D".length()) != 0);
                   var2 = 0;
             }
 

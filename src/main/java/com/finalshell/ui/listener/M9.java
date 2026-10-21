@@ -53,7 +53,7 @@ public class M9 implements MouseListener {
             Object var15 = 520595572764773303L;
             DT var10008 = (DT)Ref.g(520595572764773303L, var15);
             Object var17 = 504540812240479562L;
-var10007 = new M9(var10008, this, (Fr4)Ref.g(504540812240479562L, var17));
+var10007 = (SelectDownloadFolderPanel)(new M9(var10008, this, (Fr4)Ref.g(504540812240479562L, var17)));
             Object var19 = 256408289213989983L;
             Object var30 = Ref.g(256408289213989983L, var19);
             Object var21 = 520595572764773303L;

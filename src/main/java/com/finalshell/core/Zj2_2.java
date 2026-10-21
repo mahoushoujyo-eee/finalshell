@@ -215,7 +215,7 @@ public class Zj2_2 {
          break;
       }
 
-      var8 = var10000;
+      var8 = (Iterator)(var10000);
 
       label668:
       while (true) {
@@ -1048,7 +1048,7 @@ public class Zj2_2 {
                int var103 = var4;
                if (var1 == null) {
                   if (var4 != 0) {
-                     var10 = var3[var95];
+                     var10 = (int)(var3[var95]);
                      if (var1 == null) {
                         break label320;
                      }
@@ -1658,7 +1658,7 @@ public class Zj2_2 {
                continue label178;
             }
 
-            return var1;
+            return (Oc2)(var1);
          }
 
          return (Oc2)var87;
@@ -2630,6 +2630,7 @@ public class Zj2_2 {
          }
       }
    }
+   private static Object var196;
 }
 
 

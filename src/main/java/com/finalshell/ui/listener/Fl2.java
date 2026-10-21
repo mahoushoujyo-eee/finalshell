@@ -62,6 +62,7 @@ public class Fl2 implements ActionListener {
 
       var3.v.Y();
    }
+   private static Object var10000;
 }
 
 

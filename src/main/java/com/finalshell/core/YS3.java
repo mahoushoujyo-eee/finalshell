@@ -188,7 +188,7 @@ public class YS3 extends GT3 {
          break;
       }
 
-      var11 = var34;
+      var11 = (int)(var34);
 
       while (true) {
          if (var11 < this.C) {
@@ -310,7 +310,7 @@ public class YS3 extends GT3 {
          break;
       }
 
-      var11 = var39;
+      var11 = (int)(var39);
       var10 = 0.0F;
 
       while (var10 < (float)var2) {
@@ -641,6 +641,8 @@ public class YS3 extends GT3 {
          }
       }
    }
+   private static Object var34;
+   private static Object var39;
 }
 
 

@@ -214,7 +214,7 @@ public class F12 extends DefaultTableCellRenderer {
                                  throw var145.getTargetException();
                               }
 
-                              var17 = var188.append((String)var10009).append(" ").toString();
+                              var17 = ((java.lang.StringBuilder)var188).append((String)var10009).append(" ").toString();
                               var10009 = Registry.packArgs(true);
                               long var45 = 470566827426873505L;
                               Object[] var44 = (Object[])var10009;
@@ -260,7 +260,7 @@ public class F12 extends DefaultTableCellRenderer {
                                  throw var142.getTargetException();
                               }
 
-                              var17 = var192.append((String)var222).append("").toString();
+                              var17 = ((java.lang.StringBuilder)var192).append((String)var222).append("").toString();
                               var222 = Registry.packArgs(true);
                               long var51 = 277230421274009311L;
                               Object[] var50 = (Object[])var222;
@@ -364,7 +364,7 @@ public class F12 extends DefaultTableCellRenderer {
                                                             throw var137.getTargetException();
                                                          }
 
-                                                         var17 = var15.append((String)var10011).append(" ").append(var17.substring(var19.length())).toString();
+                                                         var17 = var15.append((String)var10011).append(" ").append(((java.lang.String)var17).substring(var19.length())).toString();
                                                       }
                                                    }
                                                 }
@@ -392,7 +392,7 @@ public class F12 extends DefaultTableCellRenderer {
                                        throw var136.getTargetException();
                                     }
 
-                                    var199 = var15.equals(var230);
+                                    var199 = (U82)(var15.equals(var230));
                                  }
 
                                  if (var199 == null) {
@@ -571,7 +571,7 @@ public class F12 extends DefaultTableCellRenderer {
                                                       throw var128.getTargetException();
                                                    }
 
-                                                   var17 = var15.append((String)var263).append(" ").append(var17.substring(var157.length())).toString();
+                                                   var17 = var15.append((String)var263).append(" ").append(((java.lang.String)var17).substring(var157.length())).toString();
                                                 }
                                              }
                                           }
@@ -599,7 +599,7 @@ public class F12 extends DefaultTableCellRenderer {
                                  throw var127.getTargetException();
                               }
 
-                              var207 = var15.equals(var238);
+                              var207 = (U82)(var15.equals(var238));
                            }
 
                            if (var207 == null) {
@@ -690,7 +690,7 @@ public class F12 extends DefaultTableCellRenderer {
                            throw var122.getTargetException();
                         }
 
-                        var17 = var209.append((String)var241).append("").toString();
+                        var17 = ((java.lang.StringBuilder)var209).append((String)var241).append("").toString();
                         var241 = Registry.packArgs(true);
                         long var91 = 277230421274009311L;
                         Object[] var90 = (Object[])var241;
@@ -793,7 +793,7 @@ public class F12 extends DefaultTableCellRenderer {
                                                    throw var117.getTargetException();
                                                 }
 
-                                                var17 = var15.append((String)var266).append(" ").append(var17.substring(var158.length())).toString();
+                                                var17 = var15.append((String)var266).append(" ").append(((java.lang.String)var17).substring(var158.length())).toString();
                                              }
                                           }
                                        }
@@ -821,7 +821,7 @@ public class F12 extends DefaultTableCellRenderer {
                               throw var116.getTargetException();
                            }
 
-                           var216 = var15.equals(var249);
+                           var216 = (U82)(var15.equals(var249));
                         }
 
                         if (var216 == null) {
@@ -897,7 +897,7 @@ public class F12 extends DefaultTableCellRenderer {
 
             int var219 = var3;
             if (var7) {
-               if (var3 != 0) {
+               if (var3) {
                   var8.setBackground((Color)Registry.lookupField(623875439513009390L).get(null));
                   var8.setForeground((Color)Registry.lookupField(513155505692963448L).get(null));
                   var8.setOpaque(true);
@@ -1220,6 +1220,10 @@ public class F12 extends DefaultTableCellRenderer {
          }
       }
    }
+   private static Object var170;
+   private static Object var173;
+   private static Object var178;
+   private static Object var185;
 }
 
 

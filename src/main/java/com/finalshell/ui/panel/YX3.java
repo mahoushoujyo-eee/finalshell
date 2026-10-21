@@ -189,7 +189,7 @@ public class YX3 extends JPanel implements AL {
                }
             }
 
-            var10001 = var1;
+            var10001 = (Integer)(var1);
             Object[] var36 = Registry.emptyArgs();
             long var13 = 613318919495852812L;
             Object[] var12 = var36;

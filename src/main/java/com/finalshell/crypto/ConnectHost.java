@@ -173,7 +173,7 @@ public class ConnectHost {
          }
 
          var10003 = Registry.packArgs(
-            var10003.append((String)var10004).append(var0).toString().getBytes(a(-8799, 20067)), Registry.lookupField(539188650316259173L).get(null)
+            ((java.lang.StringBuilder)var10003).append((String)var10004).append(var0).toString().getBytes(a(-8799, 20067)), Registry.lookupField(539188650316259173L).get(null)
          );
          long var9 = 260894324830752426L;
          Object var8 = var10003;
@@ -807,7 +807,7 @@ public class ConnectHost {
             Object var10001 = Ref.h2(330094358428833085L, var3);
 
             try {
-               var7 = (Boolean)var10001;
+               var7 = (byte)((Boolean)var10001);
             } catch (InvocationTargetException var5) {
                throw var5.getTargetException();
             }

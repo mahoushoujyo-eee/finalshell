@@ -20,7 +20,7 @@ public class U22 extends Authenticator {
       String var10003 = (String)Ref.g(522655102270864719L, var1);
       Object var3 = 423186633558396677L;
 var10003 = new U22(this, (String)Ref.g(423186633558396677L, var3));
-      return this;
+      return (PasswordAuthentication)(this);
    }
 }
 

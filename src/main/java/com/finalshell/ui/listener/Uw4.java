@@ -84,7 +84,7 @@ public class Uw4 implements ActionListener {
          throw var29.getTargetException();
       }
 
-      var10006.setText(var10007);
+      ((javax.swing.text.JTextComponent)var10006).setText(var10007);
    }
 }
 

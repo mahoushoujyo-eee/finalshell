@@ -55,7 +55,7 @@ public final class F3_3 {
             }
          }
 
-         var5 = Array.newInstance(var1, var3.size());
+         var5 = (ArrayList)(Array.newInstance(var1, var3.size()));
          break;
       }
 

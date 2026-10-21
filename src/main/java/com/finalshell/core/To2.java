@@ -24,7 +24,7 @@ public class To2 extends T4 implements SwingConstants {
       Ky4[] var3 = var10000;
 
       try {
-         var10000 = var1;
+         var10000 = (Ky4[])(var1);
          if (var3 == null) {
             if (var1 instanceof QS) {
                this.W.add((QS)var1);
@@ -49,7 +49,7 @@ public class To2 extends T4 implements SwingConstants {
       Ky4[] var2 = var10000;
 
       try {
-         var10000 = var1;
+         var10000 = (Ky4[])(var1);
          if (var2 == null) {
             if (var1 instanceof QS) {
                this.W.remove(var1);
@@ -79,7 +79,7 @@ public class To2 extends T4 implements SwingConstants {
       Ky4[] var2 = var10000;
 
       try {
-         var10000 = this.W;
+         var10000 = (Ky4[])(this.W);
          if (var2 == null) {
             if (this.W.size() > 0) {
                Rectangle var4 = FN.N(var1);

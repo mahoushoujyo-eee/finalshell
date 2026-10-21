@@ -26,7 +26,7 @@ public int compareTo(Enum o) {
    public static Integer[] d;
 
    public static NC3[] values() {
-      return (NC3[])z.clone();
+      return (NC3[])com.finalshell.reflect.Ref.cloneObject(z);
    }
 
    public static NC3 valueOf(String var0) {
@@ -1056,6 +1056,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object z;
 }
 
 

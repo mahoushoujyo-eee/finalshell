@@ -106,7 +106,7 @@ public final class G9 implements Serializable, Cloneable {
    }
 
    public N7 R() {
-      return this.y(null);
+      return (N7)(this.y(null));
    }
 
    public N7 y(String var1) {

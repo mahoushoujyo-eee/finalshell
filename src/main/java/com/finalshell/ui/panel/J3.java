@@ -40,7 +40,7 @@ public class J3 extends G implements TreeCellRenderer {
          var9 = var1.isEnabled();
          var8 = var10000;
          this.setFont(var1.getFont());
-         var15 = this;
+         var15 = (ImageIcon)(this);
          if (var8 != null) {
             this.setEnabled(var9);
             if (var5) {

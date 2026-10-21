@@ -11,7 +11,7 @@ public int compareTo(Enum o) {
    public static Ux2 failed;
 
    public static Ux2[] values() {
-      return (Ux2[])s.clone();
+      return (Ux2[])com.finalshell.reflect.Ref.cloneObject(s);
    }
 
    public static Ux2 valueOf(String var0) {
@@ -146,6 +146,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object s;
 }
 
 

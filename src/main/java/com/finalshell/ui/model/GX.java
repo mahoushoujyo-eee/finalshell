@@ -12,7 +12,7 @@ public int compareTo(Enum o) {
    public static GX weblaf;
 
    public static GX[] values() {
-      return (GX[])W.clone();
+      return (GX[])com.finalshell.reflect.Ref.cloneObject(W);
    }
 
    public static GX valueOf(String var0) {
@@ -120,6 +120,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object W;
 }
 
 

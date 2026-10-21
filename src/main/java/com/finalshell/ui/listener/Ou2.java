@@ -53,7 +53,7 @@ public class Ou2 extends KeyAdapter {
                      File var4 = this.y.b;
                      if (var2 != null) {
                         if (this.y.b == null) {
-                           var5 = this.y;
+                           var5 = (int)(this.y);
                            if (var2 == null) {
                               break label45;
                            }
@@ -63,7 +63,7 @@ public class Ou2 extends KeyAdapter {
                            }
                         }
 
-                        var6 = this.y;
+                        var6 = (int)(this.y);
                         if (var2 == null) {
                            break label47;
                         }
@@ -75,7 +75,7 @@ public class Ou2 extends KeyAdapter {
                         break label46;
                      }
 
-                     var6 = this.y;
+                     var6 = (int)(this.y);
                      if (var2 == null) {
                         break label47;
                      }
@@ -86,7 +86,7 @@ public class Ou2 extends KeyAdapter {
                   }
 
                   this.y.P();
-                  var5 = this.y;
+                  var5 = (int)(this.y);
                }
 
                var5.transferFocus();
@@ -95,7 +95,7 @@ public class Ou2 extends KeyAdapter {
                }
             }
 
-            var6 = this.y;
+            var6 = (int)(this.y);
          }
 
          var6.Z.setText(this.y.y());

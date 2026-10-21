@@ -986,7 +986,7 @@ public class PingMessageReceiver {
          label43: {
             label42: {
                try {
-                  var10000 = var8;
+                  var10000 = (String[])(var8);
                   if (var7 == null) {
                      break label43;
                   }

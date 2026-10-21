@@ -31,14 +31,14 @@ public class Yk2 implements Runnable {
       Object var12 = 477342503026871908L;
       Object var10007 = Ref.g(477342503026871908L, var12);
       Object var14 = 429952889391243847L;
-      var10007.setText(((JTextField)Ref.g(429952889391243847L, var14)).getText().toLowerCase());
+      ((javax.swing.text.JTextComponent)var10007).setText(((JTextField)Ref.g(429952889391243847L, var14)).getText().toLowerCase());
       Object var1 = var10006;
       Object var16 = 427592903543022635L;
       Object var10009 = Ref.g(427592903543022635L, var16);
       Object var18 = 477342503026871908L;
       Object var10010 = Ref.g(477342503026871908L, var18);
       Object var20 = 228183978052282907L;
-var10010 = new T9(((JPasswordField)Ref.g(228183978052282907L, var20)).getPassword());
+var10010 = (Yk2)(new T9(((JPasswordField)Ref.g(228183978052282907L, var20)).getPassword()));
       Object var2 = var10009;
       if (var1 != null) {
          Object var22 = 427592903543022635L;
@@ -111,7 +111,7 @@ var10010 = new T9(((JPasswordField)Ref.g(228183978052282907L, var20)).getPasswor
          Object var60 = 477342503026871908L;
          Object var10028 = Ref.g(477342503026871908L, var60);
          Object var62 = 228183978052282907L;
-var10028 = new T9(((JPasswordField)Ref.g(228183978052282907L, var62)).getPassword());
+var10028 = (Yk2)(new T9(((JPasswordField)Ref.g(228183978052282907L, var62)).getPassword()));
          var10027 = Registry.packArgs(var10027);
          long var65 = 583865646792521502L;
          Object[] var64 = (Object[])var10027;

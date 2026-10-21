@@ -58,7 +58,7 @@ public class RenameFolderDialog extends JDialog {
                   throw var30.getTargetException();
                }
 
-               this.setTitle(var10007.append((String)var10008).toString());
+               this.setTitle(((java.lang.StringBuilder)var10007).append((String)var10008).toString());
                if (this == null) {
                   break label46;
                }
@@ -98,7 +98,7 @@ public class RenameFolderDialog extends JDialog {
                throw var29.getTargetException();
             }
 
-            var10005.setText(var10006);
+            ((javax.swing.text.JTextComponent)var10005).setText(var10006);
          }
 
          new JPanel();
@@ -109,11 +109,11 @@ public class RenameFolderDialog extends JDialog {
       var8.setLayout(new MigLayout(a(-18513, -5214)));
       JButton var9 = new JButton(a(-18528, -10230));
       var9.setFocusable(false);
-      var8.add(var9);
+      ((java.math.BigInteger)var8).add(var9);
       var9.addActionListener(new Ft2(this, var7, var5, var2, var1, var3));
       JButton var10 = new JButton(a(-18523, 28641));
       var10.setFocusable(false);
-      var8.add(var10);
+      ((java.math.BigInteger)var8).add(var10);
       var10.addActionListener(new H(this));
       this.pack();
       this.setLocationRelativeTo(var1);

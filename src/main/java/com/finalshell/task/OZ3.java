@@ -64,6 +64,7 @@ public class OZ3 implements Runnable {
          throw var19.getTargetException();
       }
    }
+   private static Object U;
 }
 
 

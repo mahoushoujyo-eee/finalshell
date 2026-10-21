@@ -38,7 +38,7 @@ public class W0 extends WC {
 
       while (true) {
          if (var10 >= var3.size()) {
-            var10000 = this;
+            var10000 = (Ky4[])(this);
             if (var8 != null) {
                this.g = new DatagramPacket(this.h, this.h.length);
                return;

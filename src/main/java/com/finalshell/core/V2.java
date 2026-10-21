@@ -148,7 +148,7 @@ public class V2 extends Lz2_2 implements LJ3 {
          }
 
          label92: {
-            var17 = var10;
+            var17 = (Icon)(var10);
             if (var4 == null) {
                if (var10 == null) {
                   break label92;

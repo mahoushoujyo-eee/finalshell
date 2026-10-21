@@ -828,7 +828,7 @@ public class Yj4 extends GT3 {
                label49: {
                   var9 = var19 / var10001;
                   float var25;
-                  var20 = (var25 = var9 - 1.0F) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
+                  var20 = (((var25 = var9 - 1.0F) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1)) != 0);
                   if (var5 != null) {
                      if (var20 > 0) {
                         var9 = 1.0F;
@@ -844,7 +844,7 @@ public class Yj4 extends GT3 {
                      }
 
                      float var26;
-                     var20 = (var26 = var9 - -1.0F) == 0.0F ? 0 : (var26 < 0.0F ? -1 : 1);
+                     var20 = (((var26 = var9 - -1.0F) == 0.0F ? 0 : (var26 < 0.0F ? -1 : 1)) != 0);
                   }
 
                   if (var20 < 0) {

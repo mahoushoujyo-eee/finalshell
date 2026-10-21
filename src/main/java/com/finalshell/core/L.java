@@ -419,7 +419,7 @@ public class L extends W_2 implements HQ {
 
                         int var49;
                         label466: {
-                           var49 = this.Y;
+                           var49 = (int)(this.Y);
                            if (var5 == null) {
                               if (this.Y) {
                                  var49 = var9 - this.e;
@@ -486,7 +486,7 @@ public class L extends W_2 implements HQ {
 
                      int var53;
                      label447: {
-                        var53 = this.Y;
+                        var53 = (int)(this.Y);
                         if (var5 == null) {
                            if (this.Y) {
                               var53 = var9 - this.e;
@@ -545,7 +545,7 @@ public class L extends W_2 implements HQ {
                            var10001 = var7.y <= var4 ? -1 : 1;
                         }
 
-                        var54 = this.Y;
+                        var54 = (int)(this.Y);
                         if (var5 == null) {
                            var54 = this.Y ? var9 - this.q : 0;
                         }
@@ -582,7 +582,7 @@ public class L extends W_2 implements HQ {
                         if (var5 == null) {
                            label410:
                            if (var8) {
-                              var10001 = this.Y;
+                              var10001 = (int)(this.Y);
                               if (var5 == null) {
                                  var10001 = this.Y ? -var9 : 0;
                               }
@@ -592,7 +592,7 @@ public class L extends W_2 implements HQ {
                               if (var5 == null) {
                                  if (this.u == 1) {
                                     label515: {
-                                       var10001 = this.Y;
+                                       var10001 = (int)(this.Y);
                                        if (var5 == null) {
                                           if (!this.Y) {
                                              var10001 = 0;
@@ -622,8 +622,8 @@ public class L extends W_2 implements HQ {
                               int var11;
                               int var58;
                               label516: {
-                                 var11 = (var20) ? 1 : 0;
-                                 var58 = this.Y;
+                                 var11 = (((var20) ? 1 : 0) != 0);
+                                 var58 = (int)(this.Y);
                                  if (var5 == null) {
                                     if (!this.Y) {
                                        var58 = 0;
@@ -713,7 +713,7 @@ public class L extends W_2 implements HQ {
                                        }
 
                                        label355: {
-                                          var10001 = this.Y;
+                                          var10001 = (int)(this.Y);
                                           if (var5 == null) {
                                              if (!this.Y) {
                                                 var10001 = 0;
@@ -755,7 +755,7 @@ public class L extends W_2 implements HQ {
                                  }
 
                                  label346: {
-                                    var10001 = this.Y;
+                                    var10001 = (int)(this.Y);
                                     if (var5 == null) {
                                        if (!this.Y) {
                                           var10001 = 0;
@@ -798,7 +798,7 @@ public class L extends W_2 implements HQ {
                               }
 
                               label333: {
-                                 var10001 = this.Y;
+                                 var10001 = (int)(this.Y);
                                  if (var5 == null) {
                                     if (!this.Y) {
                                        var10001 = 0;
@@ -840,7 +840,7 @@ public class L extends W_2 implements HQ {
                         }
 
                         label325: {
-                           var10001 = this.Y;
+                           var10001 = (int)(this.Y);
                            if (var5 == null) {
                               if (!this.Y) {
                                  var10001 = 0;
@@ -1830,6 +1830,7 @@ public class L extends W_2 implements HQ {
          var9 = var10.charAt(var8);
       }
    }
+   private static int var24;
 }
 
 

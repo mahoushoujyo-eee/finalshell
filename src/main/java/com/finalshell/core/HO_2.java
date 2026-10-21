@@ -327,7 +327,7 @@ public class HO_2 extends F2_4 implements O2_5 {
 
    public Cr2_2[] R() {
       Collection var1 = this.T$Collection();
-      return var1.toArray(new Cr2_2[var1.size()]);
+      return (Cr2_2[])(var1.toArray(new Cr2_2[var1.size()]));
    }
 
    @Override
@@ -444,7 +444,7 @@ public class HO_2 extends F2_4 implements O2_5 {
 
    public ClassLoader p$ClassLoader() {
       Map var1 = this.Q();
-      return AccessController.doPrivileged(new Fw2_2(this, var1));
+      return (ClassLoader)(AccessController.doPrivileged(new Fw2_2(this, var1)));
    }
 
    @Override

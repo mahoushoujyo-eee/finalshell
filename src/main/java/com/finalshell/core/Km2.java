@@ -297,15 +297,15 @@ public class Km2 extends KK {
       U$String();
       var5 = 493953348619799745L;
       Object var7 = 140993979563084749L;
-      int var2 = this - ((Point)Ref.g(140993979563084749L, var7)).y;
+      int var2 = 0 - ((Point)Ref.g(140993979563084749L, var7)).y;
       Object var9 = 493953348619799745L;
       int var10004 = ((Point)Ref.g(493953348619799745L, var9)).x;
       Object var11 = 140993979563084749L;
-      int var3 = this - ((Point)Ref.g(140993979563084749L, var11)).x;
+      int var3 = 0 - ((Point)Ref.g(140993979563084749L, var11)).x;
       int var1 = var10004;
       long var13 = 140993979563084749L;
       Object var15 = 493953348619799745L;
-      Km2 var10006 = this - ((Point)Ref.g(493953348619799745L, var15)).y;
+      Km2 var10006 = 0 - ((Point)Ref.g(493953348619799745L, var15)).y;
       if (var1 == 0) {
          if (var10006 > 0) {
             label42: {
@@ -332,7 +332,7 @@ public class Km2 extends KK {
          var10006 = this;
          long var17 = 493953348619799745L;
          Object var19 = 140993979563084749L;
-         int var10008 = this - ((Point)Ref.g(140993979563084749L, var19)).y;
+         int var10008 = 0 - ((Point)Ref.g(140993979563084749L, var19)).y;
       }
 
       if (var1 == 0) {
@@ -340,7 +340,7 @@ public class Km2 extends KK {
             return;
          }
 
-         var10006 = Math.abs(var3 / var2);
+         var10006 = (Km2)(Math.abs(var3 / var2));
       }
 
       float var21 = (float)var10006;
@@ -1502,7 +1502,7 @@ public class Km2 extends KK {
             long[] var6 = new long[12];
             int var3 = 0;
             String var4 = "\u0011\u001cÝó\n>Ëà\u0003Tø\u0099ý·³\u0088Æù\u0010yJ\u0085j2(BÒú\u0010}\u009d\u0088À\u0012C\u009eàâð<K)m¥\u0091ø¯·±Fåçùþ¥h[\u0089epñ\u007fRAÞê)\u0001ö)±\u008a <\u0084g\u0001«c'";
-            var5 = "\u0011\u001cÝó\n>Ëà\u0003Tø\u0099ý·³\u0088Æù\u0010yJ\u0085j2(BÒú\u0010}\u009d\u0088À\u0012C\u009eàâð<K)m¥\u0091ø¯·±Fåçùþ¥h[\u0089epñ\u007fRAÞê)\u0001ö)±\u008a <\u0084g\u0001«c'";
+            var5 = (boolean)("\u0011\u001cÝó\n>Ëà\u0003Tø\u0099ý·³\u0088Æù\u0010yJ\u0085j2(BÒú\u0010}\u009d\u0088À\u0012C\u009eàâð<K)m¥\u0091ø¯·±Fåçùþ¥h[\u0089epñ\u007fRAÞê)\u0001ö)±\u008a <\u0084g\u0001«c'");
                // [VF] .length();
             byte var2 = 0;
 

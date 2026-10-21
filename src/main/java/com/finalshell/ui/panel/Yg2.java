@@ -1149,6 +1149,7 @@ public class Yg2 extends JLabel {
          var9 = var10.charAt(var8);
       }
    }
+   private static Object var15;
 }
 
 

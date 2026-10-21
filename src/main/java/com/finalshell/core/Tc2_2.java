@@ -519,6 +519,8 @@ public class Tc2_2 extends T4 implements Pc4 {
       byte var10001 = -1;
       a = var10002;
    }
+   private static Object var65;
+   private static Object r;
 }
 
 

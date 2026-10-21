@@ -2564,7 +2564,7 @@ var10004 = new FileBrowserAddressBar(this, var10006, var2, var3, var7, var9, fal
          }
       }
 
-      return this;
+      return (YI)(this);
    }
 
    public YI z(java.io.File var1, String var2, String var3) {
@@ -4525,7 +4525,7 @@ var10004 = new FileBrowserAddressBar(this, var10006, var2, var3, var7, var9, fal
             throw var104.getTargetException();
          }
 
-         var10019.append((String)var10020).append(java.io.File.separator);
+         ((java.lang.StringBuilder)var10019).append((String)var10020).append(java.io.File.separator);
          Object[] var10021 = Registry.emptyArgs();
          long var68 = 157614116591371207L;
          Object[] var67 = var10021;
@@ -4541,7 +4541,7 @@ var10004 = new FileBrowserAddressBar(this, var10006, var2, var3, var7, var9, fal
             throw var103.getTargetException();
          }
 
-         var10021.append((String)var10022).append("_").append(var16).append(var14).append(".").append(var17).toString();
+         ((java.lang.StringBuilder)var10021).append((String)var10022).append("_").append(var16).append(var14).append(".").append(var17).toString();
       }
 
       var11 = (String)var10018;
@@ -6206,6 +6206,8 @@ var10027 = new FileBrowserAddressBar(this, var10029, var122, var121, var11, var1
          }
       }
    }
+   private static Object var143;
+   private static Object var62;
 }
 
 

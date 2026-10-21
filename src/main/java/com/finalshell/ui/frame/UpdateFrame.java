@@ -462,7 +462,7 @@ public class UpdateFrame extends JFrame implements CH {
                   }
                }
 
-               var10006 = this;
+               var10006 = (Boolean)(this);
                Object var17 = 215526989813745242L;
                Ref.g(215526989813745242L, var17);
                Object[] var10008 = Registry.emptyArgs();
@@ -481,7 +481,7 @@ public class UpdateFrame extends JFrame implements CH {
                   break label457;
                }
 
-               var10006 = this;
+               var10006 = (Boolean)(this);
                Object var21 = 215526989813745242L;
                Ref.g(215526989813745242L, var21);
                Object[] var168 = Registry.emptyArgs();
@@ -543,7 +543,7 @@ public class UpdateFrame extends JFrame implements CH {
                               throw var152.getTargetException();
                            }
 
-                           var10010.append((String)var10011).append(" ");
+                           ((java.lang.StringBuilder)var10010).append((String)var10011).append(" ");
                            Object var35 = 215526989813745242L;
                            Ref.g(215526989813745242L, var35);
                            Object var10013 = Registry.emptyArgs();
@@ -567,7 +567,7 @@ public class UpdateFrame extends JFrame implements CH {
                               throw var150.getTargetException();
                            }
 
-                           var10013.append((String)var10014).append("/");
+                           ((java.lang.StringBuilder)var10013).append((String)var10014).append("/");
                            Object var41 = 215526989813745242L;
                            Ref.g(215526989813745242L, var41);
                            Object var10016 = Registry.emptyArgs();
@@ -591,7 +591,7 @@ public class UpdateFrame extends JFrame implements CH {
                               throw var148.getTargetException();
                            }
 
-                           var2 = var10016.append((String)var10017).toString();
+                           var2 = ((java.lang.StringBuilder)var10016).append((String)var10017).toString();
                         }
 
                         if (var1 != null) {
@@ -624,7 +624,7 @@ public class UpdateFrame extends JFrame implements CH {
                   }
                }
 
-               var10006 = this;
+               var10006 = (Boolean)(this);
                Object var49 = 215526989813745242L;
                Ref.g(215526989813745242L, var49);
                Object[] var176 = Registry.emptyArgs();
@@ -697,7 +697,7 @@ public class UpdateFrame extends JFrame implements CH {
                            break label469;
                         }
 
-                        var191 = this;
+                        var191 = (boolean)(this);
                         Object var63 = 215526989813745242L;
                         Ref.g(215526989813745242L, var63);
                         Object[] var205 = Registry.emptyArgs();
@@ -724,7 +724,7 @@ public class UpdateFrame extends JFrame implements CH {
                   var191 = false;
                }
 
-               var187.setEnabled((boolean)var191);
+               ((javax.swing.JComponent)var187).setEnabled((boolean)var191);
                Object var67 = 175547947792914580L;
                JButton var192 = (JButton)Ref.g(175547947792914580L, var67);
                Object var69 = 215526989813745242L;
@@ -747,7 +747,7 @@ public class UpdateFrame extends JFrame implements CH {
                            break label471;
                         }
 
-                        var213 = this;
+                        var213 = (boolean)(this);
                         Object var73 = 215526989813745242L;
                         Ref.g(215526989813745242L, var73);
                         Object[] var224 = Registry.emptyArgs();
@@ -766,7 +766,7 @@ public class UpdateFrame extends JFrame implements CH {
                            break label471;
                         }
 
-                        var213 = this;
+                        var213 = (boolean)(this);
                         Object var77 = 215526989813745242L;
                         Ref.g(215526989813745242L, var77);
                         Object[] var226 = Registry.emptyArgs();
@@ -793,7 +793,7 @@ public class UpdateFrame extends JFrame implements CH {
                   var213 = false;
                }
 
-               var207.setEnabled((boolean)var213);
+               ((javax.swing.JComponent)var207).setEnabled((boolean)var213);
                if (var1 == null) {
                   return;
                }
@@ -833,7 +833,7 @@ public class UpdateFrame extends JFrame implements CH {
                            break label476;
                         }
 
-                        var195 = this;
+                        var195 = (boolean)(this);
                         Object var89 = 215526989813745242L;
                         Ref.g(215526989813745242L, var89);
                         Object[] var208 = Registry.emptyArgs();
@@ -860,7 +860,7 @@ public class UpdateFrame extends JFrame implements CH {
                   var195 = false;
                }
 
-               var188.setEnabled((boolean)var195);
+               ((javax.swing.JComponent)var188).setEnabled((boolean)var195);
                Object var93 = 175547947792914580L;
                JButton var196 = (JButton)Ref.g(175547947792914580L, var93);
                Object var95 = 215526989813745242L;
@@ -883,7 +883,7 @@ public class UpdateFrame extends JFrame implements CH {
                            break label478;
                         }
 
-                        var216 = this;
+                        var216 = (boolean)(this);
                         Object var99 = 215526989813745242L;
                         Ref.g(215526989813745242L, var99);
                         Object[] var228 = Registry.emptyArgs();
@@ -902,7 +902,7 @@ public class UpdateFrame extends JFrame implements CH {
                            break label478;
                         }
 
-                        var216 = this;
+                        var216 = (boolean)(this);
                         Object var103 = 215526989813745242L;
                         Ref.g(215526989813745242L, var103);
                         Object[] var230 = Registry.emptyArgs();
@@ -929,7 +929,7 @@ public class UpdateFrame extends JFrame implements CH {
                   var216 = false;
                }
 
-               var210.setEnabled((boolean)var216);
+               ((javax.swing.JComponent)var210).setEnabled((boolean)var216);
                if (var1 == null) {
                   return;
                }
@@ -965,7 +965,7 @@ public class UpdateFrame extends JFrame implements CH {
                var199 = !var199;
             }
 
-            var189.setEnabled(var199);
+            ((javax.swing.JComponent)var189).setEnabled(var199);
             Object var115 = 175547947792914580L;
             JButton var200 = (JButton)Ref.g(175547947792914580L, var115);
             Object var117 = 215526989813745242L;
@@ -988,7 +988,7 @@ public class UpdateFrame extends JFrame implements CH {
                         break label482;
                      }
 
-                     var219 = this;
+                     var219 = (boolean)(this);
                      Object var121 = 215526989813745242L;
                      Ref.g(215526989813745242L, var121);
                      Object[] var232 = Registry.emptyArgs();
@@ -1007,7 +1007,7 @@ public class UpdateFrame extends JFrame implements CH {
                         break label482;
                      }
 
-                     var219 = this;
+                     var219 = (boolean)(this);
                      Object var125 = 215526989813745242L;
                      Ref.g(215526989813745242L, var125);
                      Object[] var234 = Registry.emptyArgs();
@@ -1034,7 +1034,7 @@ public class UpdateFrame extends JFrame implements CH {
                var219 = false;
             }
 
-            var211.setEnabled((boolean)var219);
+            ((javax.swing.JComponent)var211).setEnabled((boolean)var219);
          }
       }
    }

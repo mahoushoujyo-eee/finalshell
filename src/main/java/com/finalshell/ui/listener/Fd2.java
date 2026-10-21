@@ -43,7 +43,7 @@ public class Fd2 implements ItemListener {
          var10004 = Ref.h(358544030666779924L, var8, var9);
 
          try {
-            var36 = (Integer)var10004;
+            var36 = (boolean)((Integer)var10004);
          } catch (InvocationTargetException var33) {
             throw var33.getTargetException();
          }

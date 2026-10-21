@@ -916,7 +916,7 @@ public class A9 extends BasicLookAndFeel {
                   return (Icon)q.get(var2);
                }
 
-               var6 = var2;
+               var6 = (ImageIcon)(var2);
                if (var3 != null) {
                   break label26;
                }
@@ -929,7 +929,7 @@ public class A9 extends BasicLookAndFeel {
                break label24;
             }
 
-            var6 = var2;
+            var6 = (ImageIcon)(var2);
          }
 
          var6 = Xg2.J(var6);

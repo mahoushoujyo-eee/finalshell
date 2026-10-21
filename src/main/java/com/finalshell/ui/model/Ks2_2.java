@@ -39,7 +39,7 @@ public int compareTo(Enum o) {
    public static Integer[] b;
 
    public static Ks2_2[] values() {
-      return (Ks2_2[])s.clone();
+      return (Ks2_2[])com.finalshell.reflect.Ref.cloneObject(s);
    }
 
    public static Ks2_2 valueOf(String var0) {
@@ -334,6 +334,7 @@ public int compareTo(Enum o) {
          }
       }
    }
+   private static Object s;
 }
 
 

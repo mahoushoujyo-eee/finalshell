@@ -75,7 +75,7 @@ public class KP3 implements Runnable {
          throw var69.getTargetException();
       }
 
-      var10013.append((String)var10014).append(var3);
+      ((java.lang.StringBuilder)var10013).append((String)var10014).append(var3);
       Object var32 = 583261171697996206L;
       String var4 = this.append((String)Ref.g(583261171697996206L, var32)).toString();
 

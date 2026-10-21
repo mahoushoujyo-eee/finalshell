@@ -1096,6 +1096,7 @@ public class WL implements EU {
          var9 = var10.charAt(var8);
       }
    }
+   private static Object var15;
 }
 
 

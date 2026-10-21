@@ -98,7 +98,7 @@ public class LB3 extends JLabel implements D2 {
       this.setOpaque(false);
       new Cursor(a(14256, 1058038408501836567L));
       if (Ky4.F$arrString() != null) {
-         int var1 = this + 1;
+         int var1 = 0 + 1;
          LocalMachinePanel.O(var1);
       }
    }

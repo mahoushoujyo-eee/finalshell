@@ -90,6 +90,7 @@ public class We2_2 extends Wc2{
 
       var4.Y(var5);
    }
+   private static Object var4;
 }
 
 

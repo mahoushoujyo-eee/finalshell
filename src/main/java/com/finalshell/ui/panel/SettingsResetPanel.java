@@ -180,7 +180,7 @@ public class SettingsResetPanel extends JPanel {
       Ref.s(635187916850230994L, var79, var80);
       Y12_2 var93;
       Object var81 = 635187916850230994L;
-var8 = new Yi4(this, (JPopupMenu)Ref.g(635187916850230994L, var81));
+var8 = (JRadioButtonMenuItem)(new Yi4(this, (JPopupMenu)Ref.g(635187916850230994L, var81)));
       Y12_2 var9 = var93;
       var8.addActionListener(new Qi2(this, var9, var8));
       KD var10 = new KD(a(3119, -80));
@@ -298,7 +298,7 @@ var8 = new Yi4(this, (JPopupMenu)Ref.g(635187916850230994L, var81));
                   }
                }
 
-               var10004 = this;
+               var10004 = (UI3)(this);
                Object var25 = 571184257102162393L;
                Ref.g(571184257102162393L, var25);
                Object[] var90 = Registry.packArgs(var1, var5, var2);
@@ -356,7 +356,7 @@ var8 = new Yi4(this, (JPopupMenu)Ref.g(635187916850230994L, var81));
                   throw var75.getTargetException();
                }
 
-               var5.setText(var10010.append((String)var10011).append(" ").toString());
+               var5.setText(((java.lang.StringBuilder)var10010).append((String)var10011).append(" ").toString());
                Object var39 = 507795167072795983L;
                JO var104 = (JO)Ref.g(507795167072795983L, var39);
                new StringBuilder();
@@ -381,7 +381,7 @@ var8 = new Yi4(this, (JPopupMenu)Ref.g(635187916850230994L, var81));
                   throw var73.getTargetException();
                }
 
-               var5.setText(var10013.append((String)var10014).append("").toString());
+               var5.setText(((java.lang.StringBuilder)var10013).append((String)var10014).append("").toString());
                Object var45 = 213022483458441055L;
                JO var109 = (JO)Ref.g(213022483458441055L, var45);
                new StringBuilder().append("");
@@ -417,7 +417,7 @@ var8 = new Yi4(this, (JPopupMenu)Ref.g(635187916850230994L, var81));
                   throw var70.getTargetException();
                }
 
-               var112.setText(var10017.append((String)var10018).toString());
+               var112.setText(((java.lang.StringBuilder)var10017).append((String)var10018).toString());
                Object var53 = 335079693523391250L;
                JO var113 = (JO)Ref.g(335079693523391250L, var53);
                new StringBuilder().append("");
@@ -453,7 +453,7 @@ var8 = new Yi4(this, (JPopupMenu)Ref.g(635187916850230994L, var81));
                   throw var67.getTargetException();
                }
 
-               var119.setText(var10021.append((String)var10022).toString());
+               var119.setText(((java.lang.StringBuilder)var10021).append((String)var10022).toString());
                if (var1 == null) {
                   break label180;
                }

@@ -535,7 +535,7 @@ public class TM extends DefaultCellEditor {
             var7 = var10006;
             Object var9 = var8.getUserObject();
             var10 = a((int)var10004, (int)this);
-            var71 = var9.getClass().equals(com.finalshell.ui.model.Ck4.class);
+            var71 = (TM)(var9.getClass().equals(com.finalshell.ui.model.Ck4.class));
             if (var7 == null) {
                if (var71 == null) {
                   com.finalshell.ui.model.Ck4 var11 = (com.finalshell.ui.model.Ck4)var9;
@@ -597,7 +597,7 @@ public class TM extends DefaultCellEditor {
                   }
                }
 
-               var71 = var9.getClass().equals(Tf4.class);
+               var71 = (TM)(var9.getClass().equals(Tf4.class));
             }
 
             if (var7 != null) {
@@ -704,7 +704,7 @@ public class TM extends DefaultCellEditor {
       TM var69 = var71;
       if (var7 == null) {
          if (var69 < a(22060, 2537572981719092311L)) {
-            var69 = a(4902, 436208838433868126L);
+            var69 = (TM)(a(4902, 436208838433868126L));
          }
 
          Object var56 = 205795460956385135L;
@@ -750,7 +750,7 @@ public class TM extends DefaultCellEditor {
             }
 
             Object var5 = var10003;
-            var10003 = (Object[])var5;
+            var10003 = (Integer)((Object[])var5);
             if (var2 == null) {
                if (var5 == null) {
                   return false;
@@ -1763,6 +1763,7 @@ public class TM extends DefaultCellEditor {
          var9 = var10.charAt(var8);
       }
    }
+   private static int var79;
 }
 
 

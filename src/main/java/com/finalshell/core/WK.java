@@ -42,13 +42,13 @@ public class WK extends W2 {
       var10003.clear();
       Object var1 = var10002;
       Object var15 = 372236004790213499L;
-      var10003 = (String)Ref.g(372236004790213499L, var15);
+      var10003 = (ArrayList)((String)Ref.g(372236004790213499L, var15));
       if (var1 != null) {
          if (var10003 == null) {
             return;
          }
 
-         var10003 = this;
+         var10003 = (ArrayList)(this);
          Object var17 = 372236004790213499L;
          String var10004 = (String)Ref.g(372236004790213499L, var17);
       }

@@ -458,6 +458,7 @@ public class QY extends QB {
          }
       }
    }
+   private static Object var7;
 }
 
 

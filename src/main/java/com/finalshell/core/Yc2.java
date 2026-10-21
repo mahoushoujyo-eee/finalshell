@@ -36,7 +36,7 @@ public class Yc2 {
             var5 = new HashSet();
          }
 
-         var5.add(var4);
+         ((java.math.BigInteger)var5).add(var4);
          this.e.put(var3, var5);
       }
 

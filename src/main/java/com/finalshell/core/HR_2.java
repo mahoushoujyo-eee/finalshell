@@ -21,7 +21,7 @@ public class HR_2 extends HP_2 {
    }
 
    public com.finalshell.ui.model.S_3 p$_S() {
-      return this.N.p();
+      return (S_3)(this.N.p());
    }
 
    @Override
@@ -45,7 +45,7 @@ public class HR_2 extends HP_2 {
 
    @Override
    public Hd2[] d() throws B2_5 {
-      return this.N.p();
+      return (Hd2[])(this.N.p());
    }
 
    @Override

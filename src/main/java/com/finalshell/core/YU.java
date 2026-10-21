@@ -25,7 +25,7 @@ public class YU {
       boolean var3 = (var10000) != 0;
       var10000 = (var2) ? 1 : 0;
       if (!var3) {
-         if (var2 == 0) {
+         if (!var2) {
             var4 -= 4;
          }
 
@@ -46,7 +46,7 @@ public class YU {
 
       var4 = var10000 + var10001;
       if (!var3) {
-         if (var2 != 0) {
+         if (var2) {
             var4 -= 4;
          }
 

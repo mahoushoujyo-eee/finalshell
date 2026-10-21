@@ -251,6 +251,7 @@ public abstract class F2_4 implements E22 {
          }
       }
    }
+   private static Object var21;
 }
 
 

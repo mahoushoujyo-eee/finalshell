@@ -76,7 +76,7 @@ public class CC implements Comparator {
             var21 = "";
             var22 = false;
             var23 = false;
-            var117 = var1.getClass().equals(Tf4.class);
+            var117 = (CC)(var1.getClass().equals(Tf4.class));
             if (var3 == null) {
                if (var117 == null) {
                   Tf4 var24 = (Tf4)var1;
@@ -136,7 +136,7 @@ public class CC implements Comparator {
                   }
                }
 
-               var117 = var1.getClass().equals(Ck4.class);
+               var117 = (CC)(var1.getClass().equals(Ck4.class));
             }
 
             if (var3 != null) {
@@ -222,7 +222,7 @@ public class CC implements Comparator {
             }
          }
 
-         var117 = var2.getClass().equals(Tf4.class);
+         var117 = (CC)(var2.getClass().equals(Tf4.class));
       }
 
       label282: {
@@ -274,7 +274,7 @@ public class CC implements Comparator {
                   }
                }
 
-               var117 = var2.getClass().equals(Ck4.class);
+               var117 = (CC)(var2.getClass().equals(Ck4.class));
             }
 
             if (var3 != null) {
@@ -411,7 +411,7 @@ public class CC implements Comparator {
                throw var93.getTargetException();
             }
 
-            return var150;
+            return (int)(var150);
          }
 
          var117 = this;
@@ -445,7 +445,7 @@ public class CC implements Comparator {
                throw var94.getTargetException();
             }
 
-            return var147;
+            return (int)(var147);
          }
 
          var117 = this;
@@ -468,7 +468,7 @@ public class CC implements Comparator {
                throw var95.getTargetException();
             }
 
-            return var144;
+            return (int)(var144);
          }
 
          var117 = this;
@@ -481,7 +481,7 @@ public class CC implements Comparator {
             return Integer.compare(var18, var18);
          }
 
-         var117 = true;
+         var117 = (CC)(true);
       }
 
       return (int)var117;
@@ -531,6 +531,9 @@ public class CC implements Comparator {
       a = var6;
       b = new Long[2];
    }
+   private static Object var150;
+   private static Object var147;
+   private static Object var144;
 }
 
 

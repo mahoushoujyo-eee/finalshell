@@ -22,7 +22,7 @@ public abstract class HP_2 extends Hu2 {
 
    @Override
    public F3_4 v() throws B2_5 {
-      return new F3_4(this.p().z$String(), Hd2.k(this.p()));
+      return (Hd2[])(new F3_4(this.p().z$String(), Hd2.k(this.p())));
    }
 
    @Override

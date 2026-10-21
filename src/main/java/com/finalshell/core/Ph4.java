@@ -3774,7 +3774,7 @@ public class Ph4 implements Xd4 {
          label115: {
             label109: {
                try {
-                  var10000 = var5;
+                  var10000 = (String)(var5);
                   if (var3 != null) {
                      break label109;
                   }
@@ -3793,7 +3793,7 @@ public class Ph4 implements Xd4 {
                label116: {
                   label98: {
                      try {
-                        var18 = var10000 instanceof Map;
+                        var18 = (Map)(var10000 instanceof Map);
                         if (var3 != null) {
                            break label98;
                         }

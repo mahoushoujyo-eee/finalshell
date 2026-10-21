@@ -338,7 +338,7 @@ public final class Y1 {
          if (var10000 != null) {
             byte var7 = (byte)((var2) ? 1 : 0);
             if (var3 == null) {
-               if (var2 != 0) {
+               if (var2) {
                   if (var5.equalsIgnoreCase(var0)) {
                      return var4;
                   }
@@ -429,7 +429,7 @@ public final class Y1 {
             int var10001;
             label24: {
                if (var4 == 0) {
-                  var10000 = var0;
+                  var10000 = (String)(var0);
                   var10001 = var5;
                   if (var2 != null) {
                      break label24;
@@ -443,7 +443,7 @@ public final class Y1 {
                   }
                }
 
-               var10000 = var3;
+               var10000 = (String)(var3);
                var10001 = var5 + var4;
             }
 

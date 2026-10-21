@@ -52,7 +52,7 @@ public class TQ extends XM {
 
          int var15;
          label36: {
-            var15 = var21;
+            var15 = (int)(var21);
             int var22 = var9;
             int var26 = b(9098, 4152576233581542125L);
             if (var4 == null) {
@@ -70,7 +70,7 @@ public class TQ extends XM {
 
          int var16;
          label30: {
-            var16 = var23;
+            var16 = (int)(var23);
             int var24 = var11;
             int var27 = b(9098, 4152576233581542125L);
             if (var4 == null) {
@@ -144,6 +144,8 @@ public class TQ extends XM {
       c = var6;
       e = new Integer[2];
    }
+   private static Object var21;
+   private static Object var23;
 }
 
 

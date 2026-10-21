@@ -1257,6 +1257,7 @@ public class NW3 implements Converter {
          }
       }
    }
+   private static java.util.List var9;
 }
 
 

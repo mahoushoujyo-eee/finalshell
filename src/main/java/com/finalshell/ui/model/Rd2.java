@@ -9,7 +9,7 @@ public int compareTo(Enum o) {
    public static Rd2 EXPRESSIONS_IN_TRY_WITH_RESOURCES_ALLOWED;
 
    public static Rd2[] values() {
-      return (Rd2[])s.clone();
+      return (Rd2[])com.finalshell.reflect.Ref.cloneObject(s);
    }
 
    public static Rd2 valueOf(String var0) {
@@ -118,6 +118,7 @@ public int compareTo(Enum o) {
          var2 = var3.charAt(var1);
       }
    }
+   private static Object s;
 }
 
 

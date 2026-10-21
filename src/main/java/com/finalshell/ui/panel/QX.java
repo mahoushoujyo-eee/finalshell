@@ -434,7 +434,7 @@ public class QX extends Ky4 {
    @Override
    public boolean contains(int var1, int var2) {
       boolean var3;
-      var3 = Y();
+      var3 = (boolean)(Y());
       QX var10000 = this;
       if (var3 == null) {
          if (this.M == IC3.fadeOut) {

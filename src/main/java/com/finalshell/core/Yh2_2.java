@@ -520,9 +520,9 @@ public class Yh2_2 extends BasicMenuItemUI implements L0_2 {
       if (var11 != null) {
       int var17;
          label95: {
-            var17 = var8;
+            var17 = (int)(var8);
             if (var9 != null) {
-               if (var8 != 0) {
+               if (var8) {
                   var17 = this.l;
                   if (var9 == null) {
                      break label95;

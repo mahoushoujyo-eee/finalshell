@@ -53,7 +53,7 @@ public final class Wx2 {
 
       label51: {
          try {
-            var9 = var1;
+            var9 = (boolean)(var1);
             if (var0 != null) {
                break label51;
             }
@@ -65,7 +65,7 @@ public final class Wx2 {
             throw a(var8);
          }
 
-         var9 = var1;
+         var9 = (boolean)(var1);
       }
 
       DataFlavor var10001;
@@ -84,7 +84,7 @@ public final class Wx2 {
          }
 
          try {
-            var9 = var1;
+            var9 = (boolean)(var1);
             var10001 = DataFlavor.stringFlavor;
          } catch (UnsupportedFlavorException var5) {
             boolean var11 = false;
@@ -1412,7 +1412,7 @@ public final class Wx2 {
                                  if (var2 >= var5) {
                                     d = var6;
                                     e = new Integer[6];
-                                    z = AccessController.doPrivileged(new Wn4());
+                                    z = (String)(AccessController.doPrivileged(new Wn4()));
                                     String var15 = z.toLowerCase(Locale.ENGLISH);
                                     if (var15.contains(a(26311, 29411))) {
                                        b = a(26311, 29411);

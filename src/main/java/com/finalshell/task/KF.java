@@ -31,7 +31,7 @@ public class KF implements Runnable {
       Object var11 = 496137818179803296L;
       Object var10007 = Ref.g(496137818179803296L, var11);
       Object var13 = 132798821314429637L;
-      var10007.add((AE)Ref.g(132798821314429637L, var13), a);
+      ((java.math.BigInteger)var10007).add((AE)Ref.g(132798821314429637L, var13), a);
       Object var15 = 496137818179803296L;
       Ref.g(496137818179803296L, var15);
       Object var17 = 467883177032167383L;

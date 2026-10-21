@@ -421,14 +421,14 @@ public class L2 {
 
       try {
          L2 var3 = (L2)Y.remove(var0);
-         var10000 = var3;
+         var10000 = (Ky4)(var3);
          if (var1 != null) {
             if (var3 != null) {
                var3.X(2);
                L.remove(var3);
             }
 
-            var10000 = (Ky4[])var2;
+            var10000 = (Ky4)((Ky4[])var2);
          }
 
          // $VF: monitorexit
@@ -482,7 +482,7 @@ public class L2 {
                this.j.put(this, var4);
             }
 
-            var4.add(var1);
+            ((java.math.BigInteger)var4).add(var1);
             var10000 = (Ky4[])var3;
          }
 
@@ -502,7 +502,7 @@ public class L2 {
 
       try {
          List var4 = (List)this.j.get(this);
-         var10000 = var4;
+         var10000 = (Ky4[])(var4);
          if (var2 != null) {
             if (var4 == null) {
                // $VF: monitorexit
@@ -510,7 +510,7 @@ public class L2 {
             }
 
             var4.remove(var1);
-            var10000 = var4;
+            var10000 = (Ky4[])(var4);
          }
 
          if (var2 != null) {

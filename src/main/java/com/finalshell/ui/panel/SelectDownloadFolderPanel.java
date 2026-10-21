@@ -215,7 +215,7 @@ var10012 = new ArrayList(var10013);
       Object var69 = 435031631667149019L;
       C_C var10031 = (C_C)Ref.g(435031631667149019L, var69);
       Object var71 = 468326905894456044L;
-var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
+var10031 = (C5)(new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71)));
       Object var73 = 435031631667149019L;
       ((C_C)Ref.g(435031631667149019L, var73)).addMouseListener(new com.finalshell.ui.listener.OS(this, this));
       Fr4 var10032 = new Fr4();
@@ -309,7 +309,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
                throw var20.getTargetException();
             }
 
-            var3 = new java.io.File(var10008);
+            var3 = (YI)(new java.io.File(var10008));
             java.io.File var4 = var10006;
             if (this == null && var4.exists()) {
                Registry.packArgs(var4);
@@ -951,7 +951,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
             }
 
             Object var6 = var10003;
-            var10003 = (Object[])var6;
+            var10003 = (Integer)((Object[])var6);
             if (var1 != null) {
                break;
             }
@@ -960,7 +960,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
                label56:
                if (var1 == null) {
                   if (var6 != Registry.lookupField(635857280906233483L).getInt(null)) {
-                     var10003 = (Object[])var6;
+                     var10003 = (Integer)((Object[])var6);
                      if (var1 != null) {
                         break label56;
                      }
@@ -970,7 +970,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
                      }
                   }
 
-                  var10003 = true;
+                  var10003 = (Integer)(true);
                }
 
                var2 = var10003;
@@ -1047,7 +1047,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          YI var4;
          Object var5;
          label221: {
-            var4 = var10002;
+            var4 = (YI)(var10002);
             var5 = false;
             int var78 = var3;
             int var10003 = Registry.lookupField(355995585155017665L).getInt(null);
@@ -1283,7 +1283,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
                   return;
                }
 
-               var10007 = var6;
+               var10007 = (Integer)(var6);
                if (var1 != null) {
                   break label230;
                }
@@ -2340,6 +2340,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          }
       }
    }
+   private static Object var74;
 }
 
 

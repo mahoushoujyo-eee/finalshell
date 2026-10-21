@@ -443,7 +443,7 @@ public class UpdateDialog extends JDialog implements CH {
                   }
                }
 
-               var10006 = this;
+               var10006 = (Boolean)(this);
                Object var18 = 354794456661762655L;
                Ref.g(354794456661762655L, var18);
                Object[] var10008 = Registry.emptyArgs();
@@ -462,7 +462,7 @@ public class UpdateDialog extends JDialog implements CH {
                   break label475;
                }
 
-               var10006 = this;
+               var10006 = (Boolean)(this);
                Object var22 = 354794456661762655L;
                Ref.g(354794456661762655L, var22);
                Object[] var169 = Registry.emptyArgs();
@@ -523,7 +523,7 @@ public class UpdateDialog extends JDialog implements CH {
                            throw var153.getTargetException();
                         }
 
-                        var10010.append((String)var10011).append(" ");
+                        ((java.lang.StringBuilder)var10010).append((String)var10011).append(" ");
                         Object var36 = 354794456661762655L;
                         Ref.g(354794456661762655L, var36);
                         Object var10013 = Registry.emptyArgs();
@@ -547,7 +547,7 @@ public class UpdateDialog extends JDialog implements CH {
                            throw var151.getTargetException();
                         }
 
-                        var10013.append((String)var10014).append("/");
+                        ((java.lang.StringBuilder)var10013).append((String)var10014).append("/");
                         Object var42 = 354794456661762655L;
                         Ref.g(354794456661762655L, var42);
                         Object var10016 = Registry.emptyArgs();
@@ -571,7 +571,7 @@ public class UpdateDialog extends JDialog implements CH {
                            throw var149.getTargetException();
                         }
 
-                        var2 = var10016.append((String)var10017).toString();
+                        var2 = ((java.lang.StringBuilder)var10016).append((String)var10017).toString();
                      }
 
                      var176 = Registry.lookupField(356414783958618676L).getBoolean(this);
@@ -628,7 +628,7 @@ public class UpdateDialog extends JDialog implements CH {
                   }
                }
 
-               var10006 = this;
+               var10006 = (Boolean)(this);
                Object var50 = 354794456661762655L;
                Ref.g(354794456661762655L, var50);
                Object[] var179 = Registry.emptyArgs();
@@ -701,7 +701,7 @@ public class UpdateDialog extends JDialog implements CH {
                            break label486;
                         }
 
-                        var194 = this;
+                        var194 = (boolean)(this);
                         Object var64 = 354794456661762655L;
                         Ref.g(354794456661762655L, var64);
                         Object[] var208 = Registry.emptyArgs();
@@ -728,7 +728,7 @@ public class UpdateDialog extends JDialog implements CH {
                   var194 = false;
                }
 
-               var190.setEnabled((boolean)var194);
+               ((javax.swing.JComponent)var190).setEnabled((boolean)var194);
                Object var68 = 497567577586291331L;
                JButton var195 = (JButton)Ref.g(497567577586291331L, var68);
                Object var70 = 354794456661762655L;
@@ -751,7 +751,7 @@ public class UpdateDialog extends JDialog implements CH {
                            break label488;
                         }
 
-                        var216 = this;
+                        var216 = (boolean)(this);
                         Object var74 = 354794456661762655L;
                         Ref.g(354794456661762655L, var74);
                         Object[] var227 = Registry.emptyArgs();
@@ -770,7 +770,7 @@ public class UpdateDialog extends JDialog implements CH {
                            break label488;
                         }
 
-                        var216 = this;
+                        var216 = (boolean)(this);
                         Object var78 = 354794456661762655L;
                         Ref.g(354794456661762655L, var78);
                         Object[] var229 = Registry.emptyArgs();
@@ -797,7 +797,7 @@ public class UpdateDialog extends JDialog implements CH {
                   var216 = false;
                }
 
-               var210.setEnabled((boolean)var216);
+               ((javax.swing.JComponent)var210).setEnabled((boolean)var216);
                if (var1 == null) {
                   return;
                }
@@ -837,7 +837,7 @@ public class UpdateDialog extends JDialog implements CH {
                            break label493;
                         }
 
-                        var198 = this;
+                        var198 = (boolean)(this);
                         Object var90 = 354794456661762655L;
                         Ref.g(354794456661762655L, var90);
                         Object[] var211 = Registry.emptyArgs();
@@ -864,7 +864,7 @@ public class UpdateDialog extends JDialog implements CH {
                   var198 = false;
                }
 
-               var191.setEnabled((boolean)var198);
+               ((javax.swing.JComponent)var191).setEnabled((boolean)var198);
                Object var94 = 497567577586291331L;
                JButton var199 = (JButton)Ref.g(497567577586291331L, var94);
                Object var96 = 354794456661762655L;
@@ -887,7 +887,7 @@ public class UpdateDialog extends JDialog implements CH {
                            break label495;
                         }
 
-                        var219 = this;
+                        var219 = (boolean)(this);
                         Object var100 = 354794456661762655L;
                         Ref.g(354794456661762655L, var100);
                         Object[] var231 = Registry.emptyArgs();
@@ -906,7 +906,7 @@ public class UpdateDialog extends JDialog implements CH {
                            break label495;
                         }
 
-                        var219 = this;
+                        var219 = (boolean)(this);
                         Object var104 = 354794456661762655L;
                         Ref.g(354794456661762655L, var104);
                         Object[] var233 = Registry.emptyArgs();
@@ -933,7 +933,7 @@ public class UpdateDialog extends JDialog implements CH {
                   var219 = false;
                }
 
-               var213.setEnabled((boolean)var219);
+               ((javax.swing.JComponent)var213).setEnabled((boolean)var219);
                if (var1 == null) {
                   return;
                }
@@ -969,7 +969,7 @@ public class UpdateDialog extends JDialog implements CH {
                var202 = !var202;
             }
 
-            var192.setEnabled(var202);
+            ((javax.swing.JComponent)var192).setEnabled(var202);
             Object var116 = 497567577586291331L;
             JButton var203 = (JButton)Ref.g(497567577586291331L, var116);
             Object var118 = 354794456661762655L;
@@ -992,7 +992,7 @@ public class UpdateDialog extends JDialog implements CH {
                         break label499;
                      }
 
-                     var222 = this;
+                     var222 = (boolean)(this);
                      Object var122 = 354794456661762655L;
                      Ref.g(354794456661762655L, var122);
                      Object[] var235 = Registry.emptyArgs();
@@ -1011,7 +1011,7 @@ public class UpdateDialog extends JDialog implements CH {
                         break label499;
                      }
 
-                     var222 = this;
+                     var222 = (boolean)(this);
                      Object var126 = 354794456661762655L;
                      Ref.g(354794456661762655L, var126);
                      Object[] var237 = Registry.emptyArgs();
@@ -1038,7 +1038,7 @@ public class UpdateDialog extends JDialog implements CH {
                var222 = false;
             }
 
-            var214.setEnabled((boolean)var222);
+            ((javax.swing.JComponent)var214).setEnabled((boolean)var222);
          }
       }
    }

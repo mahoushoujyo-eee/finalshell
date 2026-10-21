@@ -30,7 +30,7 @@ public class XG extends AbstractTableModel {
    public synchronized Object getValueAt(int var1, int var2) {
       String var3 = null;
       Object var4 = 410487397827032565L;
-      if (this < ((ArrayList)Ref.g(410487397827032565L, var4)).size()) {
+      if (0 < ((ArrayList)Ref.g(410487397827032565L, var4)).size()) {
          Object var6 = 410487397827032565L;
          var3 = (String)((ArrayList)Ref.g(410487397827032565L, var6)).get(var1);
       }

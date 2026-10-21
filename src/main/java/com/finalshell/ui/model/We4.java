@@ -29,7 +29,7 @@ public int compareTo(Enum o) {
    }
 
    public ImageIcon t() {
-      return Uc2_2.T(this, a(-25233, 18109));
+      return (Enum)(Uc2_2.T(this, a(-25233, 18109)));
    }
 
    public String B() {

@@ -197,7 +197,7 @@ public class TE {
                      var10005 = Ref.h(162488024198852693L, var23, var24);
 
                      try {
-                        var68 = (Long)var10005;
+                        var68 = (int)((Long)var10005);
                      } catch (InvocationTargetException var33) {
                         throw var33.getTargetException();
                      }
@@ -417,7 +417,7 @@ public class TE {
                var10004 = a(13138, 23964);
             }
 
-            var3 = var10003.C$String(var10004);
+            var3 = (String)(var10003.C$String(var10004));
          }
 
          var10004 = Registry.packArgs(var3);
@@ -1541,6 +1541,7 @@ public class TE {
          }
       }
    }
+   private static int var68;
 }
 
 

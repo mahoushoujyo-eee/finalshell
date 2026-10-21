@@ -194,7 +194,7 @@ public class KM {
          label41: {
             label40: {
                try {
-                  var10000 = var0.startsWith(a(-29352, -10253));
+                  var10000 = (Ky4[])(var0.startsWith(a(-29352, -10253)));
                   if (var1 == null) {
                      break label40;
                   }
@@ -358,7 +358,7 @@ public class KM {
             label100: {
                label106: {
                   try {
-                     var10004 = var5;
+                     var10004 = (String)(var5);
                      if (var0 == null) {
                         break label100;
                      }
@@ -400,7 +400,7 @@ public class KM {
                }
 
                try {
-                  var10004 = var5;
+                  var10004 = (String)(var5);
                } catch (IOException var37) {
                   var10000 = var37;
                   boolean var10001 = false;
@@ -1388,6 +1388,7 @@ public class KM {
          }
       }
    }
+   private static Object var37;
 }
 
 

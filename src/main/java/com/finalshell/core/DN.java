@@ -50,7 +50,7 @@ public class DN extends Ne4 {
          throw var11.getTargetException();
       }
 
-      var10004.setFont((Font)var10005);
+      ((javax.swing.JComponent)var10004).setFont((Font)var10005);
    }
 
    @Override

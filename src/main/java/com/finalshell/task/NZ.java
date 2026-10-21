@@ -31,7 +31,7 @@ public class NZ implements Runnable {
       Object var5 = 268243776161260323L;
       Object var10004 = Ref.g(268243776161260323L, var5);
       Object var7 = 316737507384357237L;
-      var10004.add((JButton)Ref.g(316737507384357237L, var7), 1);
+      ((java.math.BigInteger)var10004).add((JButton)Ref.g(316737507384357237L, var7), 1);
    }
 }
 

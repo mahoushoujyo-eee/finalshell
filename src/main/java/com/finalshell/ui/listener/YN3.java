@@ -1549,7 +1549,7 @@ public class YN3 implements MouseListener {
                return;
             }
 
-            var10010 = this;
+            var10010 = (Boolean)(this);
             Object var23 = 465738942243700971L;
             AM var10011 = (AM)Ref.g(465738942243700971L, var23);
             if (this != null) {

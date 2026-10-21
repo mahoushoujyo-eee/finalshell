@@ -131,7 +131,7 @@ public class Km4 extends JFrame {
                   throw var238.getTargetException();
                }
 
-               this.setTitle(var10009.append((String)var10010).append(a(-2282, 29772)).toString());
+               this.setTitle(((java.lang.StringBuilder)var10009).append((String)var10010).append(a(-2282, 29772)).toString());
                Registry.emptyArgs();
                long var42 = 270389152141252877L;
                Ref.h2(270389152141252877L, var42);
@@ -766,7 +766,7 @@ public class Km4 extends JFrame {
             }
          }
 
-         var10002 = var3.size();
+         var10002 = (Z7)(var3.size());
          break;
       }
 
@@ -854,7 +854,7 @@ public class Km4 extends JFrame {
                throw var27.getTargetException();
             }
 
-            String var32 = var43.append((String)var10005.get(0)).toString();
+            String var32 = ((java.lang.StringBuilder)var43).append((String)var10005.get(0)).toString();
          }
 
          var10002 = (Z7)var2;

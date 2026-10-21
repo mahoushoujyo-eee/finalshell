@@ -230,7 +230,7 @@ public class ProxySelectionAdapter extends DefaultTableCellRenderer {
             }
          }
 
-         var36 = var5 % 2;
+         var36 = (JLabel)(var5 % 2);
       }
 
       JLabel var35 = var36;
@@ -1248,6 +1248,8 @@ public class ProxySelectionAdapter extends DefaultTableCellRenderer {
          }
       }
    }
+   private static Object var38;
+   private static Object var47;
 }
 
 

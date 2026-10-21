@@ -82,7 +82,7 @@ public class C32 {
                         break label68;
                      }
 
-                     if (var2 == 0) {
+                     if (!var2) {
                         break label64;
                      }
                   } catch (Throwable var11) {
@@ -560,7 +560,7 @@ public class C32 {
                      break label62;
                   }
 
-                  if (var1 != 0) {
+                  if (var1) {
                      break label58;
                   }
                } catch (IOException var8) {
@@ -587,7 +587,7 @@ public class C32 {
             }
          }
 
-         var5 = var9;
+         var5 = (int)(var9);
       }
 
       this.b((byte)var5);
@@ -1848,7 +1848,7 @@ public class C32 {
                                  }
 
                                  var12 = ("¬Y'ÏÖ¡j\u000390¯\u0012\r¯\u0087\f") != 0;
-                                 var13 = "¬Y'ÏÖ¡j\u000390¯\u0012\r¯\u0087\f".length();
+                                 var13 = (("¬Y'ÏÖ¡j\u000390¯\u0012\r¯\u0087\f".length()) != 0);
                                  var10 = 0;
                            }
 
@@ -1892,6 +1892,7 @@ public class C32 {
          }
       }
    }
+   private static Object var9;
 }
 
 

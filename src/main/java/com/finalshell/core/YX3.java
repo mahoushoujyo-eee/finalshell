@@ -48,7 +48,7 @@ public class YX3 extends GT3 {
       int[] var11 = var10.D();
       byte var42 = (byte)((var6) ? 1 : 0);
       if (var8 != null) {
-         if (var6 == 0) {
+         if (!var6) {
             int var12 = 0;
 
             while (var12 < var9) {
@@ -88,7 +88,7 @@ public class YX3 extends GT3 {
                label188: {
                   var44 = var7;
                   if (var8 != null) {
-                     if (var7 == 0) {
+                     if (!var7) {
                         break label188;
                      }
 
@@ -111,7 +111,7 @@ public class YX3 extends GT3 {
             int var14;
             int var15;
             label92: {
-               var14 = var44;
+               var14 = (int)(var44);
                int var45 = var14;
                if (var8 != null) {
                   if (var14 != 0) {
@@ -615,6 +615,7 @@ public class YX3 extends GT3 {
          }
       }
    }
+   private static Object var44;
 }
 
 

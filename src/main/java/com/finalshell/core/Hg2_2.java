@@ -651,7 +651,7 @@ public class Hg2_2 extends Hd2 {
       }
 
       Collection var2 = ((C_q_2_2)this.J).E.values();
-      return var2.toArray(new U3_3[var2.size()]);
+      return (U3_3[])(var2.toArray(new U3_3[var2.size()]));
    }
 
    @C_9

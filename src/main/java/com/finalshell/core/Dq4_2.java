@@ -93,7 +93,7 @@ public class Dq4_2 implements TreeCellRenderer {
          Object var17 = 193338774593183220L;
          Object var10003 = (JCheckBox)Ref.g(193338774593183220L, var17);
          if (var8 == null) {
-            var10003.setEnabled(var1.isEnabled());
+            ((javax.swing.JComponent)var10003).setEnabled(var1.isEnabled());
             label49:
             if (var2 != null) {
                var10003 = var2;

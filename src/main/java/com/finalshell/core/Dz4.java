@@ -41,7 +41,7 @@ public class Dz4 implements Transferable, UIResource {
 
       DataFlavor[] var2;
       label104: {
-         var2 = var10002;
+         var2 = (DataFlavor[])(var10002);
          DataFlavor[] var10001 = var2;
          if (this == null) {
             if (var2 == null) {
@@ -517,7 +517,7 @@ public class Dz4 implements Transferable, UIResource {
       DataFlavor[] var3;
       int var9;
       label47: {
-         var3 = var10002;
+         var3 = (DataFlavor[])(var10002);
          var2 = this;
          DataFlavor[] var10001 = var3;
          if (this == null) {
@@ -713,7 +713,7 @@ public class Dz4 implements Transferable, UIResource {
       String[] var0 = new String[7];
       int var4 = 0;
       String var3 = "|ImfnogiE{)\"sj{_(x ij&Ez<\u0013zjlIg |Imfnw\u007fe@.q-~x{\u0011\u007fs7~%dM{uoL\u007fzE{u=i\\e~(|j|Ez|ng&bMcslu}e\u0001y}\"~g%Cwx$|\u007fzIs)\"sj{_(x ij&@t|&1X|^||&\u001e|Imfnw\u007fe@.q-~x{\u0011\u007fs7~%aC;@$~om^3|Imfnw\u007fe@.q)~y{Ia/4qbkCqwz|gi_f/+~}i\u0002|}oVexYaA5mniA";
-      var5 = "|ImfnogiE{)\"sj{_(x ij&Ez<\u0013zjlIg |Imfnw\u007fe@.q-~x{\u0011\u007fs7~%dM{uoL\u007fzE{u=i\\e~(|j|Ez|ng&bMcslu}e\u0001y}\"~g%Cwx$|\u007fzIs)\"sj{_(x ij&@t|&1X|^||&\u001e|Imfnw\u007fe@.q-~x{\u0011\u007fs7~%aC;@$~om^3|Imfnw\u007fe@.q)~y{Ia/4qbkCqwz|gi_f/+~}i\u0002|}oVexYaA5mniA";
+      var5 = (boolean)("|ImfnogiE{)\"sj{_(x ij&Ez<\u0013zjlIg |Imfnw\u007fe@.q-~x{\u0011\u007fs7~%dM{uoL\u007fzE{u=i\\e~(|j|Ez|ng&bMcslu}e\u0001y}\"~g%Cwx$|\u007fzIs)\"sj{_(x ij&@t|&1X|^||&\u001e|Imfnw\u007fe@.q-~x{\u0011\u007fs7~%aC;@$~om^3|Imfnw\u007fe@.q)~y{Ia/4qbkCqwz|gi_f/+~}i\u0002|}oVexYaA5mniA");
          // [VF] .length();
       char var2 = 31;
       int var10 = -1;
@@ -839,6 +839,7 @@ public class Dz4 implements Transferable, UIResource {
          }
       }
    }
+   private static Object var27;
 }
 
 

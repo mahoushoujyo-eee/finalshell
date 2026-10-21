@@ -149,7 +149,7 @@ var10011 = new JPanel(var10012);
          throw var134.getTargetException();
       }
 
-      var10019.setText(var10020);
+      ((javax.swing.text.JTextComponent)var10019).setText(var10020);
       Registry.packArgs(a((int)var10017, (int)this));
       long var59 = 517287540690064504L;
       Object var10018 = Ref.h2(517287540690064504L, var59);
@@ -287,7 +287,7 @@ var10023 = new JPanel(var10024);
          throw var125.getTargetException();
       }
 
-      var10038.setText(var10039);
+      ((javax.swing.text.JTextComponent)var10038).setText(var10039);
       JPanel var17 = new JPanel();
       var17.setLayout(new MigLayout(a(23471, 28934)));
       var4.add(var17, a(23457, 10860));
@@ -420,7 +420,7 @@ var10023 = new JPanel(var10024);
          throw var14.getTargetException();
       }
 
-      var10003.setText(var10004);
+      ((javax.swing.text.JTextComponent)var10003).setText(var10004);
       Object var7 = 228183978052282907L;
       JPasswordField var17 = (JPasswordField)Ref.g(228183978052282907L, var7);
       Object var9 = 181350030129350521L;
@@ -436,7 +436,7 @@ var10023 = new JPanel(var10024);
          throw var13.getTargetException();
       }
 
-      var10006.setText(var10007);
+      ((javax.swing.text.JTextComponent)var10006).setText(var10007);
    }
 
    @Override

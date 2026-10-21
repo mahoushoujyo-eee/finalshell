@@ -91,13 +91,13 @@ public class G implements MouseListener {
             JButton var10008 = (JButton)Ref.g(316737507384357237L, var19);
             boolean var10009 = false;
             Object var21 = 129362754730391727L;
-            int var10010 = this - ((CompleteFullPathPanel)Ref.g(129362754730391727L, var21)).getPreferredSize().width;
+            int var10010 = 0 - ((CompleteFullPathPanel)Ref.g(129362754730391727L, var21)).getPreferredSize().width;
             Object var23 = 420140467323718004L;
             Object var10012 = Ref.g(420140467323718004L, var23);
             Object var25 = 316737507384357237L;
             var10012 = var10012 + ((JButton)Ref.g(316737507384357237L, var25)).getWidth() - 2;
             Object var27 = 129362754730391727L;
-            this.show((Component)var10012, 0, this - (((CompleteFullPathPanel)Ref.g(129362754730391727L, var27)).getPreferredSize().height + 1));
+            this.show((Component)var10012, 0, 0 - (((CompleteFullPathPanel)Ref.g(129362754730391727L, var27)).getPreferredSize().height + 1));
             if (var2 != null) {
                return;
             }

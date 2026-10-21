@@ -63,7 +63,7 @@ public class B7 implements KeyListener {
             return;
          }
 
-         var45 = var1.getModifiers();
+         var45 = (B7)(var1.getModifiers());
       }
 
       if (var2 == null) {
@@ -71,7 +71,7 @@ public class B7 implements KeyListener {
             return;
          }
 
-         var45 = var1.getKeyCode();
+         var45 = (B7)(var1.getKeyCode());
       }
 
       if (var2 == null) {
@@ -91,7 +91,7 @@ public class B7 implements KeyListener {
          label105: {
             System.currentTimeMillis();
             Object var16 = 484003208200249497L;
-            long var4 = this - Registry.lookupField(202023651119989609L).getLong(Ref.g(484003208200249497L, var16));
+            long var4 = 0 - Registry.lookupField(202023651119989609L).getLong(Ref.g(484003208200249497L, var16));
             Object var18 = 484003208200249497L;
             B7 var10004 = Registry.lookupField(552009030867017299L).getInt(Ref.g(484003208200249497L, var18));
             if (var2 == null) {

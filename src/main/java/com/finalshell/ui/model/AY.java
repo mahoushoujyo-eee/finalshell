@@ -92,7 +92,7 @@ public class AY implements Comparator {
                return 1;
             }
 
-            var10009 = var7;
+            var10009 = (String)(var7);
             Object[] var10010 = Registry.emptyArgs();
             long var27 = 286931176286176762L;
             Object[] var26 = var10010;

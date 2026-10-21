@@ -117,7 +117,7 @@ public class S extends ToggleButtonModel {
       label66: {
          var10 = (var1) ? 1 : 0;
          if (var2 == null) {
-            if (var1 != 0) {
+            if (var1) {
                var10 = this.stateMask | 4;
                break label66;
             }
@@ -194,7 +194,7 @@ public class S extends ToggleButtonModel {
                this.stateMask = this.stateMask & a(3451, 8044606198164277621L);
                var4 = (var1) ? 1 : 0;
                if (var2 == null) {
-                  if (var1 != 0) {
+                  if (var1) {
                      var4 = this.stateMask & a(7556, 5045667298793806223L);
                      break label20;
                   }
@@ -237,7 +237,7 @@ public class S extends ToggleButtonModel {
       label21: {
          var3 = (var1) ? 1 : 0;
          if (var2 == null) {
-            if (var1 != 0) {
+            if (var1) {
                var3 = this.stateMask | a(9977, 4060913670531310325L) | 2;
                break label21;
             }

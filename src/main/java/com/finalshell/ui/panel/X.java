@@ -78,7 +78,7 @@ public class X extends JPanel {
             var1.setColor(var4);
          }
 
-         var10001 = 3;
+         var10001 = (X)(3);
       }
 
       X var5 = var10001;

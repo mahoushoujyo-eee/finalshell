@@ -157,6 +157,8 @@ public class Pw4 extends KeyAdapter {
    public void r() {
       Ic2.g(this.V).scrollRectToVisible(Ic2.g(this.V).getUI().getCellBounds(Ic2.g(this.V), Ic2.g(this.V).getSelectedIndex(), Ic2.g(this.V).getSelectedIndex()));
    }
+   private static Object var3;
+   private static Object var6;
 }
 
 

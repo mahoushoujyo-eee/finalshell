@@ -622,7 +622,7 @@ public class Rx2 {
                      var35 = var5 + a(13409, 3323115123623782981L) + this.X(var5 + 2);
                   }
 
-                  var5 = var35;
+                  var5 = (int)(var35);
                   var7--;
                   if (var4 != null) {
                      break;
@@ -633,7 +633,7 @@ public class Rx2 {
             }
 
             if (var4 != null) {
-               return var35;
+               return (int)(var35);
             }
 
             if (var35 != 0) {
@@ -1821,6 +1821,7 @@ public class Rx2 {
          }
       }
    }
+   private static Object var35;
 }
 
 

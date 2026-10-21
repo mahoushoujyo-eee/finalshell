@@ -130,7 +130,7 @@ public class FilePermissionPanel extends JPopupMenu {
       Object var10007;
       label92: {
          label109: {
-            var10005.setEnabled(var45);
+            ((javax.swing.JComponent)var10005).setEnabled(var45);
             var5.addActionListener(new ConfirmDeleteFolderListener2(this));
             this.add(var5);
             var6 = new JMenuItem(a(32322, 12479));
@@ -170,7 +170,7 @@ public class FilePermissionPanel extends JPopupMenu {
          var48 = false;
       }
 
-      var10007.setEnabled(var48);
+      ((javax.swing.JComponent)var10007).setEnabled(var48);
       var6.addActionListener(new ConfirmDeleteFolderListener(this));
       this.add(var6);
       if (var1 != null) {

@@ -492,7 +492,7 @@ public class Om4 {
       long var15;
             O0 var4 = var0.V(var3);
             LN3 var5 = new LN3();
-            var15 = var5;
+            var15 = (long)(var5);
             Object[] var10001 = Registry.packArgs(var4.Z(a(-11036, -3843)));
             long var7 = 622750082590203090L;
             Object[] var6 = var10001;
@@ -1543,6 +1543,7 @@ public class Om4 {
          }
       }
    }
+   private static Object var21;
 }
 
 

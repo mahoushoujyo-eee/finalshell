@@ -39,7 +39,7 @@ public class Kg4 implements ActionListener {
       var10005 = Ref.h(226341449505323490L, var14, var15);
 
       try {
-         var10005 = (com.finalshell.ui.frame.MainFrame)var10005;
+         var10005 = (MainFrame)((com.finalshell.ui.frame.MainFrame)var10005);
       } catch (InvocationTargetException var27) {
          throw var27.getTargetException();
       }
@@ -65,7 +65,7 @@ public class Kg4 implements ActionListener {
                return;
             }
 
-            var10005 = var3;
+            var10005 = (ConnectionProperty)(var3);
             Object[] var10006 = Registry.emptyArgs();
             long var19 = 179934491990092343L;
             Object[] var18 = var10006;

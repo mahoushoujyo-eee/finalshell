@@ -280,7 +280,7 @@ public class US3 extends JPanel implements ListCellRenderer {
          Object var30 = 350626890368158221L;
 var13 = new Point((int)this, ((JLabel)Ref.g(350626890368158221L, var30)).getPreferredSize().height);
          var39.setPreferredSize(var39);
-         var38 = this.getPreferredSize().height;
+         var38 = (String[])(this.getPreferredSize().height);
       }
 
       Registry.lookupField(578205431322382778L).setInt(null, (int)var38);

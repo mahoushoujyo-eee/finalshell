@@ -86,7 +86,7 @@ public class ND_2 {
       if (var1 == null) {
          var10000 = (Ky4[])this.I.get(var3);
       } else if (var3 >= this.I.size()) {
-         var10000 = var2;
+         var10000 = (Ky4[])(var2);
          if (var1 != null) {
             return var2;
          }
@@ -98,7 +98,7 @@ public class ND_2 {
          A6 var4 = (A6)var10000;
          var2 = var2 + var4.B + a;
          if (++var3 >= this.I.size()) {
-            var10000 = var2;
+            var10000 = (Ky4[])(var2);
             if (var1 != null) {
                return var2;
             }

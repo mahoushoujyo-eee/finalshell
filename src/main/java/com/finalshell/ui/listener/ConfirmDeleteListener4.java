@@ -72,7 +72,7 @@ public class ConfirmDeleteListener4 implements ActionListener {
          var10010 = Ref.h(165121676688475085L, var24, var25);
 
          try {
-            var46 = (Integer)var10010;
+            var46 = (boolean)((Integer)var10010);
          } catch (InvocationTargetException var41) {
             throw var41.getTargetException();
          }

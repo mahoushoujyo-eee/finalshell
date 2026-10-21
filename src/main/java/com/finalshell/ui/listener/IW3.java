@@ -71,6 +71,8 @@ public class IW3 implements ActionListener {
 
       var7.C.Y();
    }
+   private static Object var7;
+   private static Object C;
 }
 
 

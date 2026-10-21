@@ -56,6 +56,7 @@ public class Oo4 implements Fb2 {
          var1.setText(var10006);
       }
    }
+   private static Object var18;
 }
 
 

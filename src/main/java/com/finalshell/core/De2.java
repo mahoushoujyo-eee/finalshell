@@ -13,7 +13,7 @@ public class De2 {
       int var10000 = this.p & 2;
       if (var5 == null) {
          if (var10000 == 0) {
-            if (var4 != 0) {
+            if (var4) {
                this.F(var3, var2.V, a(18642, 8239009293587362182L));
                var2.z(-1);
                if (var5 == null) {

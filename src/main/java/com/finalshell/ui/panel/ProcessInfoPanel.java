@@ -1353,6 +1353,7 @@ public class ProcessInfoPanel extends JPanel {
          }
       }
    }
+   private static Object var50;
 }
 
 

@@ -399,6 +399,9 @@ public class Wu2 extends MouseAdapter {
    @Override
    public void mouseClicked(MouseEvent var1) {
    }
+   private static Object var27;
+   private static Object var37;
+   private static Object A;
 }
 
 

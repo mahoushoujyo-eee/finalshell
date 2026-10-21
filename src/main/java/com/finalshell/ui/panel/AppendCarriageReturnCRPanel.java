@@ -260,7 +260,7 @@ public class AppendCarriageReturnCRPanel extends JPanel implements AL, Fb2 {
                Ky4.K(new String[3]);
             }
 
-            var10030 = var3;
+            var10030 = (Integer)(var3);
             Object[] var233 = Registry.emptyArgs();
             long var90 = 257025344649675398L;
             Object[] var89 = var233;
@@ -294,7 +294,7 @@ public class AppendCarriageReturnCRPanel extends JPanel implements AL, Fb2 {
          throw var220.getTargetException();
       }
 
-var10032 = new Dimension(var3, var238);
+var10032 = (int)(new Dimension(var3, var238));
       JCheckBoxMenuItem var17 = var235;
       var17.addActionListener(new com.finalshell.ui.listener.T(this, var17));
       var12.add((JMenuItem)var17);
@@ -311,7 +311,7 @@ var10032 = new Dimension(var3, var238);
          throw var219.getTargetException();
       }
 
-var10033 = new Dimension(var3, var241);
+var10033 = (int)(new Dimension(var3, var241));
       JCheckBoxMenuItem var18 = var236;
       var18.addActionListener(new Nw2(this, var18));
       JCheckBoxMenuItem var239;
@@ -327,7 +327,7 @@ var10033 = new Dimension(var3, var241);
          throw var218.getTargetException();
       }
 
-var242 = new Dimension(var3, var244);
+var242 = (int)(new Dimension(var3, var244));
       long var98 = 274811053631936956L;
       JCheckBoxMenuItem var97 = var239;
       Ref.s(274811053631936956L, var97, var98);
@@ -631,7 +631,7 @@ var242 = new Dimension(var3, var244);
                }
             }
 
-            var10068 = var3;
+            var10068 = (Integer)(var3);
             Object[] var265 = Registry.emptyArgs();
             long var188 = 579797607180676881L;
             Object[] var187 = var265;
@@ -889,7 +889,7 @@ var242 = new Dimension(var3, var244);
             }
          }
 
-         var10011 = var4;
+         var10011 = (String)(var4);
          Object[] var72 = Registry.emptyArgs();
          long var39 = 579797607180676881L;
          Object[] var38 = var72;
@@ -1196,13 +1196,13 @@ var242 = new Dimension(var3, var244);
                int var10 = 0;
 
                while (var10 < var7.size()) {
-                  var10012 = (Object[])var7.get(var10);
+                  var10012 = (ArrayList)((Object[])var7.get(var10));
 
                   label216:
                   while (true) {
                      Li4 var11 = (Li4)var10012;
                      CommandListPanel var12 = new CommandListPanel(this, var11);
-                     var10012 = this;
+                     var10012 = (ArrayList)(this);
                      Object var47 = 220282364724549275L;
                      Ref.g(220282364724549275L, var47);
                      Object var10016 = Registry.emptyArgs();
@@ -1506,7 +1506,7 @@ var242 = new Dimension(var3, var244);
                   }
                }
 
-               var10009 = var4;
+               var10009 = (ConnectionProperty)(var4);
                Object[] var71 = Registry.emptyArgs();
                long var34 = 165950045643857861L;
                var33 = var71;
@@ -1609,9 +1609,9 @@ var242 = new Dimension(var3, var244);
          JScrollPane var10002 = (JScrollPane)Ref.g(544586534803602568L, var6);
       }
 
-      Dimension var2 = var10001.getSize();
+      Dimension var2 = ((javax.swing.JComponent)var10001).getSize();
       Object var8 = 544586534803602568L;
-      var2.width.width = this - ((JScrollPane)Ref.g(544586534803602568L, var8)).getVerticalScrollBar().getWidth();
+      var2.width.width = 0 - ((JScrollPane)Ref.g(544586534803602568L, var8)).getVerticalScrollBar().getWidth();
       Object var10 = 132722259088033339L;
       ((Ge2)Ref.g(132722259088033339L, var10)).setPreferredSize(var2);
       Object var12 = 132722259088033339L;
@@ -2114,7 +2114,7 @@ var242 = new Dimension(var3, var244);
       Object[] var10005 = Registry.emptyArgs();
       long var7 = 424156930953488367L;
       Object[] var6 = var10005;
-var10004 = new Insets((CommandListPanel)Ref.h(424156930953488367L, var6, var7), false, this, null);
+var10004 = (int)(new Insets((CommandListPanel)Ref.h(424156930953488367L, var6, var7), false, this, null));
    }
 
    public void j(T32 var1) {
@@ -2127,7 +2127,7 @@ var10004 = new Insets((CommandListPanel)Ref.h(424156930953488367L, var6, var7), 
       Object[] var10005 = Registry.emptyArgs();
       long var8 = 424156930953488367L;
       Object[] var7 = var10005;
-var10004 = new Insets((CommandListPanel)Ref.h(424156930953488367L, var7, var8), true, this, var1);
+var10004 = (int)(new Insets((CommandListPanel)Ref.h(424156930953488367L, var7, var8), true, this, var1));
    }
 
    public void J() {
@@ -2182,7 +2182,7 @@ var10004 = new Insets((CommandListPanel)Ref.h(424156930953488367L, var7, var8), 
       JScrollPane var20;
             Component var7 = var4[var6];
             Bq2 var8 = (Bq2)var7;
-            var20 = var8;
+            var20 = (JScrollPane)(var8);
             Object[] var10002 = Registry.emptyArgs();
             long var14 = 227343441450903310L;
             Object[] var13 = var10002;

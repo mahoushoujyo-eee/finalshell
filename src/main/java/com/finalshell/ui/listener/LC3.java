@@ -24,7 +24,7 @@ public class LC3 implements MouseListener {
          com.finalshell.ui.panel.F8.y();
          long var10001 = System.currentTimeMillis();
          Object var5 = 175824513233244249L;
-         long var3 = this - Registry.lookupField(126803268638211778L).getLong(Ref.g(175824513233244249L, var5));
+         long var3 = 0 - Registry.lookupField(126803268638211778L).getLong(Ref.g(175824513233244249L, var5));
          long var2 = var10001;
          if (var2 == 0) {
             if (var3 <= a) {

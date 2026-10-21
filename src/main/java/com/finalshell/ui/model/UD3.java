@@ -250,7 +250,7 @@ public int compareTo(Enum o) {
                                        throw var17.getTargetException();
                                     }
 
-                                    I = (UD3[])var32;
+                                    I = (UD3)((UD3[])var32);
                                     return;
                                  }
                                  break;

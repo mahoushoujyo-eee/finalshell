@@ -186,7 +186,7 @@ public class AS extends JPanel implements TableCellRenderer {
                   throw var54.getTargetException();
                }
 
-               var12 = var10.append((String)var10008).append("/").append(var12).toString();
+               var12 = ((java.lang.StringBuilder)var10).append((String)var10008).append("/").append(var12).toString();
                var10008 = Registry.emptyArgs();
                long var28 = 413442976446181537L;
                Object var27 = var10008;
@@ -204,12 +204,12 @@ public class AS extends JPanel implements TableCellRenderer {
             while (var10 == null) {
                var12 = "/" + var12;
                if (var7 == null) {
-                  var10006 = var12.length();
+                  var10006 = (LO3)(var12.length());
                   Object var10007 = true;
                   if (var7 == null) {
                      label154: {
                         if (var10006 > 1) {
-                           var10006 = var12.endsWith("/");
+                           var10006 = (LO3)(var12.endsWith("/"));
                            var10007 = var7;
                            if (var7 != null) {
                               break label154;
@@ -220,7 +220,7 @@ public class AS extends JPanel implements TableCellRenderer {
                            }
                         }
 
-                        var10006 = this;
+                        var10006 = (LO3)(this);
                         Object var29 = 335331661733051084L;
                         ((JLabel)Ref.g(335331661733051084L, var29)).setText(var12);
                         var10007 = this;
@@ -261,7 +261,7 @@ public class AS extends JPanel implements TableCellRenderer {
                         }
                      }
 
-                     var10006 = var8;
+                     var10006 = (LO3)(var8);
                      var10007 = Registry.emptyArgs();
                      long var40 = 402271797068414482L;
                      Object[] var39 = (Object[])var10007;

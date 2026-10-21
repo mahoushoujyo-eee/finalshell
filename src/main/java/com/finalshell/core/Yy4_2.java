@@ -764,7 +764,7 @@ public class Yy4_2 implements C22 {
                   var10008 = Ref.h(239921854059042654L, var27, var28);
 
                   try {
-                     var121 = (Integer)var10008;
+                     var121 = (boolean)((Integer)var10008);
                   } catch (InvocationTargetException var101) {
                      throw var101.getTargetException();
                   }
@@ -802,7 +802,7 @@ public class Yy4_2 implements C22 {
                   var114 = Ref.h(235790799710687710L, var31, var32);
 
                   try {
-                     var116 = (Integer)var114;
+                     var116 = (boolean)((Integer)var114);
                   } catch (InvocationTargetException var100) {
                      throw var100.getTargetException();
                   }

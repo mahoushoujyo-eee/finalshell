@@ -123,7 +123,7 @@ public int compareTo(Enum o) {
             Object var14 = Ref.h2(545218802171132370L, var7);
 
             try {
-               var15 = (Ci4[])var14;
+               var15 = (Ci4)((Ci4[])var14);
             } catch (InvocationTargetException var9) {
                throw var9.getTargetException();
             }

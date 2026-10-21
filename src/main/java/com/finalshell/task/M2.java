@@ -50,7 +50,7 @@ public class M2 implements Runnable {
             throw var35.getTargetException();
          }
 
-         var10007.append((String)var10008);
+         ((java.lang.StringBuilder)var10007).append((String)var10008);
          Object var12 = 146880237550439469L;
          this.append((String)Ref.g(146880237550439469L, var12));
          Object var14 = 508507555311476301L;
@@ -66,7 +66,7 @@ public class M2 implements Runnable {
             throw var34.getTargetException();
          }
 
-         Object[] var10009 = Registry.packArgs(this, var10010.append((String)var10011).toString());
+         Object[] var10009 = Registry.packArgs(this, ((java.lang.StringBuilder)var10010).append((String)var10011).toString());
          long var19 = 247777483328047393L;
          Object[] var18 = var10009;
          Ref.h(247777483328047393L, var18, var19);
