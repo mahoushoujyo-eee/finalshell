@@ -104,6 +104,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
 
    @Override
    public void h() {
+      Insets var6;
       int[] var1 = Pb4.g();
       JMenuItem var10000 = this.menuItem;
       if (var1 != null) {
@@ -114,13 +115,13 @@ public class OC3 extends BasicMenuUI implements L0_2 {
          var10000 = this.menuItem;
       }
 
-      byte var5 = (FN.l((JComponent)var10000)) ? 1 : 0;
+      byte var5 = (byte)((FN.l((JComponent)var10000)) ? 1 : 0);
       if (var1 != null) {
          if (var5 != 0) {
             return;
          }
 
-         var5 = (this.menuItem.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+         var5 = (byte)((this.menuItem.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       }
 
       Insets var3;
@@ -129,7 +130,6 @@ public class OC3 extends BasicMenuUI implements L0_2 {
          var3 = new Insets(this.W.top, var2 != 0 ? this.W.left : this.W.right, this.W.bottom, var2 != 0 ? this.W.right : this.W.left);
          if (var1 != null) {
             if (this.o != null) {
-      Insets var6;
                Insets var4;
                int var7;
                int var10001;
@@ -290,10 +290,12 @@ public class OC3 extends BasicMenuUI implements L0_2 {
 
    @Override
    public void paint(Graphics var1, JComponent var2) {
+      String var18;
+      View var33;
+      JMenu var6;
       int[] var3;
       Graphics2D var4;
       Object var5;
-      JMenu var6;
       byte var7;
       int var8;
       Insets var10;
@@ -305,8 +307,8 @@ public class OC3 extends BasicMenuUI implements L0_2 {
             label114: {
                var4 = (Graphics2D)var1;
                var5 = RV.X(var4);
-               var6 = ((JMenu)var2) ? 1 : 0;
-               var7 = (var6.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+               var6 = (JMenu)var2;
+               var7 = (byte)((var6.getComponentOrientation().isLeftToRight()) ? 1 : 0);
                var8 = var6.getWidth();
                int var9 = var6.getHeight();
                int[] var10000 = Pb4.g();
@@ -349,7 +351,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
          var28 = (1) != 0;
       }
 
-      boolean var14 = ((boolean)var28) != 0;
+      boolean var14 = (boolean)var28;
       this.M(var4, var6, var14, (boolean)var7);
       int var15 = WT.r(var6, this.Y);
       var28 = (var15) != 0;
@@ -359,7 +361,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
 
       int var16;
       label93: {
-         var16 = (var28) != 0;
+         var16 = (var28) ? 1 : 0;
          var28 = (var7) != 0;
          if (var3 != null) {
             if (var7 != 0) {
@@ -376,7 +378,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
       int var17;
       int var35;
       label87: {
-         var17 = (var28) != 0;
+         var17 = (var28) ? 1 : 0;
          this.v(var4, var6, var17, var11, var15, var12, var14, (boolean)var7);
          var35 = var7;
          if (var3 != null) {
@@ -393,7 +395,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
 
       label81: {
          var17 += var35;
-         String var18 = var6.getText();
+         var18 = var6.getText();
          String var32 = var18;
          if (var3 != null) {
             if (var18 == null) {
@@ -412,7 +414,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
                var20 = RV.b(var1, var6.getFont());
                var21 = var6.getFontMetrics(var6.getFont());
                View var22 = (View)var6.getClientProperty(a(-11710, 26908));
-               View var33 = var22;
+               var33 = var22;
                if (var3 != null) {
                   if (var22 == null) {
                      var28 = (var21.stringWidth(var18)) != 0;
@@ -460,6 +462,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
    }
 
    public void M(Graphics2D var1, JMenu var2, boolean var3, boolean var4) {
+      boolean var6;
       int[] var5;
       label73: {
          var5 = Pb4.g();
@@ -478,7 +481,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
          }
       }
 
-      boolean var6 = var2.getParent() instanceof JPopupMenu;
+      var6 = var2.getParent() instanceof JPopupMenu;
       if (var5 != null) {
          if (var6) {
             if (!var3) {
@@ -554,6 +557,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
    }
 
    public void v(Graphics2D var1, JMenu var2, int var3, int var4, int var5, int var6, boolean var7, boolean var8) {
+      int var18;
       int[] var9;
       Icon var14;
       label83: {
@@ -575,7 +579,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
       if (var10 != null) {
       int var15;
          label87: {
-            var15 = (var8) ? 1 : 0;
+            var15 = var8;
             if (var9 != null) {
                if (var8 != 0) {
                   var15 = this.a;
@@ -631,7 +635,6 @@ public class OC3 extends BasicMenuUI implements L0_2 {
             int var17 = var11;
             if (var9 != null) {
                if (var11 != 0) {
-      Insets var18;
                   var18 = var3;
                   break label89;
                }
@@ -692,7 +695,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
          }
       }
 
-      int var13 = (A9.R$boolean()) ? 1 : 0;
+      int var13 = A9.R$boolean();
       if (var10 != null) {
          var13 = var13 != 0 ? -1 : var2.getDisplayedMnemonicIndex();
       }
@@ -727,6 +730,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
 
    @Override
    public Dimension getPreferredSize(JComponent var1) {
+      String var18;
       int[] var2;
       JMenu var3;
       Insets var4;
@@ -765,7 +769,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
          label62: {
             label75: {
                String var11 = var3.getText();
-               String var18 = var11;
+               var18 = var11;
                if (var2 != null) {
                   if (var11 == null) {
                      break label75;
@@ -854,6 +858,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -11707) & 65535;
       if (e[var2] == null) {
          char[] var3 = d[var2].toCharArray();
@@ -1634,7 +1639,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1668,6 +1673,8 @@ public class OC3 extends BasicMenuUI implements L0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      long[] var6;
       String[] var13 = new String[9];
       int var11 = 0;
       String var10 = "±\tA\u0007\u0013ñbµ´\u0000ÜFO}¢(0\u0090Ñ\u0004Ò\u0003¯l\u0006S.tP\u0000\u009b\u00146ZY#2ß8\u0082\u0011A0Qô\u0099\u0097Z\u0081õ\u0013?\u0014ÜÅMCîO8å\u0093\u0012£$/b}\u0018\u0019\u0013\u0010Ð\u0013Uª|®ÈòüR\u000bä°äA¦!ûS`Å\u0012m\u0011Ú\u0004`\u0091\f¹y\u0081{zgk»_\u0085\u0010";
@@ -1683,7 +1690,6 @@ public class OC3 extends BasicMenuUI implements L0_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -1762,7 +1768,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
                      d = var13;
                      e = new String[9];
                      long var0 = 6953005946931731015L;
-                     long[] var6 = new long[4];
+                     var6 = new long[4];
                      int var3 = 0;
                      String var4 = "ò\u000fRª\u0082\u00812\u0098¸¸\u000eÍ\u0018éü}";
                      int var5 = "ò\u000fRª\u0082\u00812\u0098¸¸\u000eÍ\u0018éü}".length();

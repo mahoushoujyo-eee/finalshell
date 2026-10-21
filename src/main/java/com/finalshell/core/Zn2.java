@@ -70,10 +70,11 @@ public class Zn2 extends L4_2 {
 
    @Override
    public int getChildCount(Object var1) {
+      int var4;
       String[] var10000 = CB3.C$arrString();
       CB3 var3 = (CB3)var1;
       String[] var2 = var10000;
-      int var4 = (this.isLeaf(var3)) ? 1 : 0;
+      var4 = (this.isLeaf(var3)) ? 1 : 0;
       if (var2 != null) {
          if (var4 != 0) {
             return 0;
@@ -94,8 +95,9 @@ public class Zn2 extends L4_2 {
    }
 
    public CB3 f(Object var1, int var2) {
+      CB3 var4;
       String[] var10000 = CB3.C$arrString();
-      CB3 var4 = (CB3)var1;
+      var4 = (CB3)var1;
       String[] var3 = var10000;
       Zn2 var5 = this;
       Object var10001 = var4;
@@ -114,6 +116,8 @@ public class Zn2 extends L4_2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public boolean L(CB3 var1) {
+      Boolean var4;
+      boolean var9;
       String[] var10000 = CB3.C$arrString();
       Object var3 = this.f;
       synchronized (this.f){} // $VF: monitorenter 
@@ -122,12 +126,10 @@ public class Zn2 extends L4_2 {
       try {
          label45: {
             label49: {
-               Boolean var4 = (Boolean)this.g.get(var1.H());
+               var4 = (Boolean)this.g.get(var1.H());
                Boolean var8 = var4;
                if (var2 != null) {
                   if (var4 == null) {
-      Boolean var9;
-      Boolean var9;
                      break label49;
                   }
 
@@ -280,13 +282,14 @@ public class Zn2 extends L4_2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void g(List var1) {
+      Iterator var4;
       String[] var10000 = CB3.C$arrString();
       Object var3 = this.f;
       synchronized (this.f){} // $VF: monitorenter 
       String[] var2 = var10000;
 
       try {
-         Iterator var4 = var1.iterator();
+         var4 = var1.iterator();
 
          while (true) {
             if (var4.hasNext()) {
@@ -313,6 +316,7 @@ public class Zn2 extends L4_2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public int s(CB3 var1) {
+      int[] var4;
       String[] var10000 = CB3.C$arrString();
       Object var3 = this.K;
       synchronized (this.K){} // $VF: monitorenter 
@@ -347,7 +351,7 @@ public class Zn2 extends L4_2 {
       if (var2 != null) {
          label73:
          if (var10 > 0) {
-            int[] var4 = new int[var10];
+            var4 = new int[var10];
             Object[] var5 = new Object[var10];
             int var6 = var10 - 1;
 
@@ -368,7 +372,7 @@ public class Zn2 extends L4_2 {
             this.nodesWereRemoved(var1, var4, var5);
          }
 
-         var14 = this.x;
+         var14 = (this.x) ? 1 : 0;
       }
 
       if (var2 != null) {
@@ -432,6 +436,7 @@ public class Zn2 extends L4_2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void Y$void(CB3 var1, List var2) {
+      Object var4;
       String[] var3 = CB3.C$arrString();
       Object var10000 = var1;
       if (var3 != null) {
@@ -442,7 +447,7 @@ public class Zn2 extends L4_2 {
          var10000 = this.f;
       }
 
-      Object var4 = var10000;
+      var4 = var10000;
       synchronized (var10000) {
          Object var5 = (List)this.i.get(var1.H());
          var10000 = var5;
@@ -522,9 +527,10 @@ public class Zn2 extends L4_2 {
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    @Override
    public void insertNodeInto(MutableTreeNode var1, MutableTreeNode var2, int var3) {
+      String[] var4;
       String[] var10000 = CB3.C$arrString();
       CB3 var5 = (CB3)var1;
-      String[] var4 = var10000;
+      var4 = var10000;
       CB3 var6 = (CB3)var2;
       var10000 = var6;
       if (var4 != null) {
@@ -640,6 +646,7 @@ public class Zn2 extends L4_2 {
    }
 
    public void F(CB3 var1, boolean var2) {
+      boolean var4;
       String[] var3 = CB3.C$arrString();
       CB3 var10000 = var1;
       if (var3 != null) {
@@ -782,12 +789,13 @@ public class Zn2 extends L4_2 {
    }
 
    public void Q(List var1) {
+      CB3 var4;
       String[] var10000 = CB3.C$arrString();
       Iterator var3 = var1.iterator();
       String[] var2 = var10000;
 
       while (var3.hasNext()) {
-         CB3 var4 = (CB3)var3.next();
+         var4 = (CB3)var3.next();
          this.a(var4);
          if (var2 == null) {
             break;
@@ -807,10 +815,11 @@ public class Zn2 extends L4_2 {
    }
 
    public void a(CB3 var1) {
+      ImageIcon var4;
       String[] var10000 = CB3.C$arrString();
       ImageIcon var3 = var1.Y();
       String[] var2 = var10000;
-      ImageIcon var4 = var3;
+      var4 = var3;
       if (var2 != null) {
          if (var3 == null) {
             return;
@@ -950,7 +959,6 @@ public class Zn2 extends L4_2 {
       return this.F();
    }
 }
-
 
 
 

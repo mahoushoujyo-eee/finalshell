@@ -283,6 +283,10 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
 
    @Override
    public void paintComponent(Graphics var1) {
+      int var13;
+      int var15;
+      int var17;
+      int var19;
       String var10000 = m$String();
       super.paintComponent(var1);
       String var2 = var10000;
@@ -296,7 +300,7 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
          }
 
          Composite var4;
-         var4 = ((((RV.a(var3, var10001, (boolean)var10002)) != 0) != 0) != 0) != 0;
+         var4 = (RV.a(var3, var10001, var10002)) != 0;
          BufferedImage var5 = this.B();
          label128:
          if (var5 != null) {
@@ -461,7 +465,7 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
             var10002 = var10002 < 0 ? 1 : 0;
          }
 
-         RV.E(var3, var4, (boolean)var10002);
+         RV.E(var3, var4, var10002);
       }
    }
 

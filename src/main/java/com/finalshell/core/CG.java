@@ -1573,6 +1573,7 @@ public abstract class CG extends Cv2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[14];
       int var11 = 0;
       String var10 = "ópq\u0015¢>ú)\u009aP\u0001Vo,G¡\u0096ÌÌÒ\u008fÀÕ¯\u001a\u000b\u008eV\u009e\bÑ\u0015É\u0093\t3\f\t\u0001è¶Ä}¶\u009e\u0089\u0002'\u008dþ\"5X÷0%Ü\u0012\u007f\u0082\u0016uÒ°2©\u0012jÊ¡ÔÜ9q\u0088ù\bPé$×(7oÂ\u0002^\u000f\u001f+u¼\u0005¹\u008c{ã,\t\u0005\"Ò\u0096\u0006Nù¯§Þñ\u0005#*8$/\"¯QUáï9°9\\½\u008a\u0098\u0098^\u0095E\b\u0017½«æM¢L\u001e×\u008a&i¹Ò\u000eO\u008f'ÕÒ)°9G\u001c3YÐÏÚ\u0000~\u0010Ñj\u0085\u0019ï«\u0011øÊ¼³8¡\u001e[+E\u008f\u0011+à\u00ad\u0006\u0089\túMÉp\u0092 cS«\u0002ïA\"»\u0084×[¿nºÓ\u001dà¢3\u009d+5ë\u001cÂ?\u0011¶\u001a¨¦_\u008a¢\u008dlÙeªUî";
@@ -1588,7 +1589,6 @@ public abstract class CG extends Cv2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

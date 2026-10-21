@@ -2,13 +2,13 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.lang.reflect.InvocationTargetException;
 
 public class Qk2 implements Runnable {
-   public final Address l;
+   public final FileBrowserAddressBar l;
 
-   public Qk2(Address var1) {
+   public Qk2(FileBrowserAddressBar var1) {
       this.l = var1;
    }
 

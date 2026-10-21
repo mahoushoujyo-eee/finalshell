@@ -319,6 +319,8 @@ public class Df4 implements Closeable {
    }
 
    public void U() {
+      int var7;
+      int var8;
       String var10000 = Hi2.C();
       this.i = this.C;
       this.C = this.C.K;
@@ -335,8 +337,6 @@ public class Df4 implements Closeable {
                return;
             }
          } catch (Hi2 var6) {
-      int var8;
-      int var8;
             throw a(var6);
          }
 
@@ -503,6 +503,8 @@ public class Df4 implements Closeable {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public Integer S() {
+      boolean var7;
+      Object var8;
       String var1 = Hi2.C();
 
       Object var10000;
@@ -537,12 +539,12 @@ public class Df4 implements Closeable {
             this.R();
             var10000 = this.e.M();
          } catch (Hi2 var3) {
-            boolean var7 = false;
+            var7 = false;
             throw a(var3);
          }
       }
 
-      Object var8 = var10000;
+      var8 = var10000;
       this.h$void();
       return B8_2.Y(var8);
    }
@@ -550,6 +552,8 @@ public class Df4 implements Closeable {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public Long o() {
+      boolean var7;
+      Object var8;
       String var1 = Hi2.C();
 
       Object var10000;
@@ -584,12 +588,12 @@ public class Df4 implements Closeable {
             this.R();
             var10000 = this.e.M();
          } catch (Hi2 var3) {
-            boolean var7 = false;
+            var7 = false;
             throw a(var3);
          }
       }
 
-      Object var8 = var10000;
+      var8 = var10000;
       this.h$void();
       return B8_2.s(var8);
    }
@@ -980,6 +984,7 @@ public class Df4 implements Closeable {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void h$void() {
+      int var10;
       String var10000 = Hi2.C();
       int var2 = this.C.S;
       String var1 = var10000;
@@ -1091,6 +1096,7 @@ public class Df4 implements Closeable {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -14359) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1877,7 +1883,7 @@ public class Df4 implements Closeable {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1905,6 +1911,7 @@ public class Df4 implements Closeable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte[] var7;
       String[] var13 = new String[3];
       int var11 = 0;
       String var10 = "ÿ8´@Ã\u0086Ý\u0017\u00adÑ\ngOt°\u000e\u0010àûW8¿\u0089Rö\\í4à\u0088\u0084H\u0010\u000f\u0014A\u0080\u001d\u0005\u0007_\u001dü\u00978RpÇ\u0013";
@@ -2003,7 +2010,7 @@ public class Df4 implements Closeable {
             while (true) {
                var19 = var2;
                var2 += 8;
-               byte[] var7 = var4.substring(var19, var2).getBytes("ISO-8859-1");
+               var7 = var4.substring(var19, var2).getBytes("ISO-8859-1");
                long[] var10000 = var6;
                var19 = var3++;
                long var25 = ((long)var7[0] & 255L) << 56
@@ -2060,7 +2067,6 @@ public class Df4 implements Closeable {
       }
    }
 }
-
 
 
 

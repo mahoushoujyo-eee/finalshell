@@ -28,6 +28,7 @@ public class TB3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var0 = new String[18];
       int var4 = 0;
       String var3 = "m .\u00189`\u0013a\"uVsdNz\"*\u0006{1.Q{uýb2z\u0015z0L#\"5Tyb\\`$,]d0N~35[9:Nh%u\u00186lAi3?H60F}.9Ssd=r'>\u0017,7Ara;O}0Lxa2]wt\\,\u001ax\u0018;fAz 3T+2<,a}Cfb\b`5zKcr\u0012z3r\u001c&<Ag/>]n8E>m2]wtH%-?Vqd\t&)?Yr9Mg/>]n8E>m.Y\u007f|H#(4\\shI*qvPsq\u0005'l6]xw\u0015fi2]wtH'<zC\u007fvA&2/Zed\u0013&ek\u00146!M.ws\u0005+2N~35[92H.:*J\u007f~\u0015.c*\u001aee\u0003}5(\u00102 M9m3Vru\u0019&ej\u00144v\u0005,hw\u0000?m\u001c)\u0010i$.[y~\u0007.\r\u0015vQO#G\u0015\u0017b2z\u0015;s\u000eb.(\u0005xu\u0017k3z\u0015z0Loa\u0018b2z\u0015;s\u000eb.(\u0005xu\u0017k3z\u0015ztA# z\u0006}2z\u0015xy\nf()Lyb\u0018.l9#b2z\u0015;s\u000eb.(\u0005xu\u0017k3z\u0015z0L#'/Tz=\u0015g,?\u0018;qA\u0002j'\u000em .\u00189`\u0013a\"uKbq\u0015\u0017m .\u00189u\u0015mn(]rx\u0000zl(]zu\u0000}$\u0004h3?]\u000e`$.Kbq\u0015.l4Lc|\u0011\u0011m .\u00189`\u0013a\"uVsdNj$,\t.44Y{uA#3";
@@ -43,7 +44,6 @@ public class TB3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label48: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -99,9 +99,10 @@ public class U1 extends MouseAdapter {
    }
 
    public void R(Point var1, Point var2) {
+      int var5;
       int var10000 = (PQ.G()) ? 1 : 0;
       this.t.V = var2;
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
       Rq2 var4 = this.t.Q();
       if (var4 != null) {
          label49: {
@@ -118,7 +119,6 @@ public class U1 extends MouseAdapter {
             var10000 = var9.y;
          }
 
-         int var5;
          label43: {
             var5 = var10000;
             Point var11 = var1;

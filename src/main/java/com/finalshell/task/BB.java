@@ -1,16 +1,16 @@
 package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class BB implements Runnable {
-   public final U y;
+   public final MainFrame y;
    public static String[] a;
    public static String[] b;
 
-   public BB(U var1) {
+   public BB(MainFrame var1) {
       this.y = var1;
    }
 

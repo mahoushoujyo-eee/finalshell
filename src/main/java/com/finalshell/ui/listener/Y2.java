@@ -18,13 +18,14 @@ public class Y2 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      Long var44;
       ClearListDialog.i$arrString();
       System.currentTimeMillis();
       Object var6 = 603322144267344178L;
       Object var10003 = Ref.g(603322144267344178L, var6);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var9 = 598310545867820014L;
-      Object[] var8 = var10004;
+      Object var8 = var10004;
       var10004 = Ref.h(598310545867820014L, var8, var9);
 
       try {
@@ -127,7 +128,7 @@ public class Y2 implements ActionListener {
 
       Rectangle var49 = (Rectangle)(Registry.emptyArgs());
       long var33 = 590715370702654304L;
-      Object[] var32 = var49;
+      Object var32 = var49;
       var49 = Ref.h(590715370702654304L, var32, var33);
 
       try {

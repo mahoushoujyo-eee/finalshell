@@ -5,7 +5,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.BG;
 import com.finalshell.task.QZ;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -30,7 +30,7 @@ public class Ca4 {
    public static void y() {
       long var9;
       label38: {
-         long var0 = (((((long)Address.i()) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
+         long var0 = ((long)FileBrowserAddressBar.i()) ? 1 : 0;
          long var11;
          int var10000 = (var11 = ConnectHost.ia - 0L) == 0L ? 0 : (var11 < 0L ? -1 : 1);
          if (var0 != false) {
@@ -127,7 +127,8 @@ public class Ca4 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void U() {
-      Address.i();
+      Long var38;
+      FileBrowserAddressBar.i();
       Object var7 = 437411261289262047L;
       Object var2;
       synchronized (var2 = Ref.g(437411261289262047L, var7)){} // $VF: monitorenter 
@@ -150,9 +151,9 @@ public class Ca4 {
                label101: {
                   if (var1 == null) {
                      System.currentTimeMillis();
-                     Object[] var10005 = Registry.emptyArgs();
+                     Object var10005 = Registry.emptyArgs();
                      long var14 = 463739992279195407L;
-                     Object[] var13 = var10005;
+                     Object var13 = var10005;
                      var10005 = Ref.h(463739992279195407L, var13, var14);
 
                      try {
@@ -167,7 +168,7 @@ public class Ca4 {
 
                      var10005 = Registry.emptyArgs();
                      long var16 = 268465037806953599L;
-                     Object[] var15 = var10005;
+                     Object var15 = var10005;
                      Ref.h(268465037806953599L, var15, var16);
 
                      try {

@@ -20,6 +20,7 @@ public class Ep2 implements Lf2 {
 
    @Override
    public void N(int var1, int var2, @NotNull YP var3, @NotNull com.finalshell.ui.model.J2 var4, int var5) {
+      KB var20;
       int var6;
       int var7;
       SetBackgroundImagePanel var19;

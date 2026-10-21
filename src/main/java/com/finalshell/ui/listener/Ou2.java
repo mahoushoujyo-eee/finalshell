@@ -16,6 +16,8 @@ public class Ou2 extends KeyAdapter {
 
    @Override
    public void keyPressed(KeyEvent var1) {
+      int var5;
+      int var6;
       String var2;
       boolean var3;
       label60: {

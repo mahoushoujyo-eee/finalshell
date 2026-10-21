@@ -285,6 +285,7 @@ public class RY implements E32, SC, R__2 {
 
    @Override
    public float h(float var1, float var2) {
+      int var8;
       String var3;
       float var11;
       label55: {
@@ -325,7 +326,7 @@ public class RY implements E32, SC, R__2 {
                   continue label46;
                }
 
-               int var8 = 3;
+               var8 = 3;
 
                while (true) {
                   if (var8 > 0) {
@@ -367,6 +368,7 @@ public class RY implements E32, SC, R__2 {
 
    @Override
    public float K(float var1, float var2, float var3) {
+      int var8;
       String var4;
       float var13;
       label72: {
@@ -420,7 +422,7 @@ public class RY implements E32, SC, R__2 {
                   int var7 = var27;
 
                   while (var7 <= var21) {
-                     int var8 = this.y[var10
+                     var8 = this.y[var10
                            + var5
                            + this.y[var11 + var6 + this.y[var12 + var7 & a(10726, 325880949302216003L)] & a(10726, 325880949302216003L)]
                         & a(10726, 325880949302216003L)];
@@ -554,7 +556,6 @@ public class RY implements E32, SC, R__2 {
                      var4++;
                      if (var2 != null) {
       int var8;
-      int var8;
                         break;
                      }
                   }
@@ -579,6 +580,7 @@ public class RY implements E32, SC, R__2 {
    }
 
    public static float[] d(int var0) {
+      float[] var8;
       String var10000 = UZ.h();
       float[] var2 = new float[a(24968, 3476063267217738963L)];
       f = new Random((long)var0);
@@ -689,7 +691,6 @@ public class RY implements E32, SC, R__2 {
       }
    }
 }
-
 
 
 

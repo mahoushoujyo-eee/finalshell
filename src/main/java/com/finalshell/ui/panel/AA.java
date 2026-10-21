@@ -59,7 +59,7 @@ public class AA extends JTree {
    public void f$void(DefaultMutableTreeNode var1) {
       TreePath var10001 = (TreePath)(Registry.packArgs(var1));
       long var4 = 263865946362642439L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(263865946362642439L, var3, var4);
 
       try {
@@ -81,7 +81,7 @@ public class AA extends JTree {
    public boolean N(DefaultMutableTreeNode var1) {
       TreePath var10002 = (TreePath)(Registry.packArgs(var1));
       long var3 = 263865946362642439L;
-      Object[] var2 = var10002;
+      Object var2 = var10002;
       var10002 = Ref.h(263865946362642439L, var2, var3);
 
       try {
@@ -96,7 +96,7 @@ public class AA extends JTree {
    public void X(DefaultMutableTreeNode var1) {
       TreePath var10002 = (TreePath)(Registry.packArgs(var1));
       long var3 = 263865946362642439L;
-      Object[] var2 = var10002;
+      Object var2 = var10002;
       var10002 = Ref.h(263865946362642439L, var2, var3);
 
       try {
@@ -115,7 +115,7 @@ public class AA extends JTree {
    public void A(DefaultMutableTreeNode var1) {
       TreePath var10001 = (TreePath)(Registry.packArgs(var1));
       long var4 = 263865946362642439L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(263865946362642439L, var3, var4);
 
       try {
@@ -131,9 +131,9 @@ public class AA extends JTree {
    }
 
    public DefaultMutableTreeNode o(Point var1) {
-      Object[] var10001 = Registry.packArgs(var1.x, var1.y);
+      Object var10001 = Registry.packArgs(var1.x, var1.y);
       long var3 = 546937145493854086L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(546937145493854086L, var2, var3);
 
       try {
@@ -144,9 +144,9 @@ public class AA extends JTree {
    }
 
    public DefaultMutableTreeNode k(int var1, int var2) {
-      Object[] var10001 = Registry.packArgs(this.getPathForLocation(var1, var2));
+      Object var10001 = Registry.packArgs(this.getPathForLocation(var1, var2));
       long var4 = 465406037200718653L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(465406037200718653L, var3, var4);
 
       try {
@@ -159,7 +159,7 @@ public class AA extends JTree {
    public Rectangle f$Rectangle(DefaultMutableTreeNode var1) {
       TreePath var10002 = (TreePath)(Registry.packArgs(var1));
       long var3 = 263865946362642439L;
-      Object[] var2 = var10002;
+      Object var2 = var10002;
       var10002 = Ref.h(263865946362642439L, var2, var3);
 
       try {
@@ -192,7 +192,7 @@ public class AA extends JTree {
    public boolean x(DefaultMutableTreeNode var1) {
       TreePath var10002 = (TreePath)(Registry.packArgs(var1));
       long var3 = 263865946362642439L;
-      Object[] var2 = var10002;
+      Object var2 = var10002;
       var10002 = Ref.h(263865946362642439L, var2, var3);
 
       try {
@@ -205,9 +205,9 @@ public class AA extends JTree {
    }
 
    public DefaultMutableTreeNode u() {
-      Object[] var10001 = Registry.packArgs(this.getSelectionPath());
+      Object var10001 = Registry.packArgs(this.getSelectionPath());
       long var2 = 465406037200718653L;
-      Object[] var1 = var10001;
+      Object var1 = var10001;
       var10001 = Ref.h(465406037200718653L, var1, var2);
 
       try {
@@ -243,7 +243,7 @@ public class AA extends JTree {
 
          DefaultMutableTreeNode var10002 = (DefaultMutableTreeNode)(Registry.packArgs(var7));
          long var9 = 465406037200718653L;
-         Object[] var8 = var10002;
+         Object var8 = var10002;
          var10002 = Ref.h(465406037200718653L, var8, var9);
 
          try {
@@ -263,9 +263,9 @@ public class AA extends JTree {
    }
 
    public DefaultMutableTreeNode i(int var1) {
-      Object[] var10001 = Registry.packArgs(this.getPathForRow(var1));
+      Object var10001 = Registry.packArgs(this.getPathForRow(var1));
       long var3 = 465406037200718653L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(465406037200718653L, var2, var3);
 
       try {
@@ -290,9 +290,9 @@ public class AA extends JTree {
    }
 
    public DefaultMutableTreeNode p(Point var1) {
-      Object[] var10001 = Registry.packArgs(var1.x, var1.y);
+      Object var10001 = Registry.packArgs(var1.x, var1.y);
       long var3 = 628674419087187212L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(628674419087187212L, var2, var3);
 
       try {
@@ -303,9 +303,9 @@ public class AA extends JTree {
    }
 
    public DefaultMutableTreeNode J(int var1, int var2) {
-      Object[] var10001 = Registry.packArgs(this.getClosestPathForLocation(var1, var2));
+      Object var10001 = Registry.packArgs(this.getClosestPathForLocation(var1, var2));
       long var4 = 465406037200718653L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(465406037200718653L, var3, var4);
 
       try {

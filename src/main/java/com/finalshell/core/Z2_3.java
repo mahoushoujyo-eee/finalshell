@@ -37,13 +37,13 @@ public class Z2_3 implements A_4 {
 
       String var4 = var6.o$String();
       int var5 = this.C.length();
-      byte var7 = (var4.startsWith(this.C)) ? 1 : 0;
+      byte var7 = (byte)((var4.startsWith(this.C)) ? 1 : 0);
       if (var2 == null) {
          if (var7 == 0) {
             return 0 != 0;
          }
 
-         var7 = (this.B) ? 1 : 0;
+         var7 = (byte)((this.B) ? 1 : 0);
       }
 
       if (var2 != null) {

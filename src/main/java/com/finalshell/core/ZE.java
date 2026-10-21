@@ -55,6 +55,9 @@ public class ZE extends Zy2 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      int var30;
+      ZE var31;
+      BufferedImage var32;
       int var4 = var1.getWidth();
       int var5 = var1.getHeight();
       int[] var6 = new int[var4];
@@ -186,10 +189,6 @@ public class ZE extends Zy2 {
                var31.K(var8, 0, var10, var4, 1, var6);
                var10++;
                if (var3 == null) {
-      return var32;
-      return var32;
-      return var32;
-      return var32;
                   continue;
                }
             }

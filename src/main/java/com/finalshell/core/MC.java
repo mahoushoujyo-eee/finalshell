@@ -3,7 +3,7 @@ package com.finalshell.core;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.Component;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
@@ -29,9 +29,10 @@ public class MC extends DefaultTreeCellEditor {
 
    @Override
    public Component getTreeCellEditorComponent(JTree var1, Object var2, boolean var3, boolean var4, boolean var5, int var6) {
+      File var22;
       Object var19;
       label43: {
-         int[] var10001 = Connection4.I();
+         int[] var10001 = ConnectionInfoPanel.I();
          DefaultMutableTreeNode var8 = (DefaultMutableTreeNode)var2;
          Object var9 = var8.getUserObject();
          int[] var7 = var10001;
@@ -72,7 +73,7 @@ public class MC extends DefaultTreeCellEditor {
       Tf4 var18 = (Tf4)var19;
       File var23 = Registry.emptyArgs();
       long var15 = 543633160597441792L;
-      Object[] var14 = var23;
+      Object var14 = var23;
       var23 = Ref.h(543633160597441792L, var14, var15);
 
       try {

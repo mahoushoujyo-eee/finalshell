@@ -41,10 +41,11 @@ public class WK_2 extends BasicTableHeaderUI {
 
    @Override
    public void paint(Graphics var1, JComponent var2) {
+      TableColumn var26;
       int var10000 = (PQ.G()) ? 1 : 0;
       Graphics2D var4 = (Graphics2D)var1;
       Paint var5 = t(0, 1, 0, this.header.getHeight() - 1);
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
       var4.setPaint(var5);
       if (var2.isOpaque()) {
       }
@@ -112,7 +113,6 @@ public class WK_2 extends BasicTableHeaderUI {
                      int var14 = var16.getWidth();
                      var15.width = var14;
                      if (var3) {
-      TableColumn var26;
                         var26 = var16;
                         if (!var3) {
                            break label109;
@@ -146,7 +146,6 @@ public class WK_2 extends BasicTableHeaderUI {
                int var19 = var20.getWidth();
                var15.width = var19;
                if (var3) {
-      TableColumn var26;
                   var26 = var20;
                   if (!var3) {
                      break label109;
@@ -161,8 +160,6 @@ public class WK_2 extends BasicTableHeaderUI {
                }
 
                if (!var3) {
-      TableColumn var26;
-      TableColumn var26;
                   break;
                }
             }
@@ -205,9 +202,9 @@ public class WK_2 extends BasicTableHeaderUI {
    }
 
    public void D(Graphics var1, Rectangle var2, int var3, TableColumn var4, TableColumn var5, TableColumnModel var6) {
-      int var10000 = PQ.G();
-      byte var8 = this.header.getComponentOrientation().isLeftToRight();
-      boolean var7 = (boolean)var10000;
+      int var10000 = (PQ.G()) ? 1 : 0;
+      byte var8 = (byte)((this.header.getComponentOrientation().isLeftToRight()) ? 1 : 0);
+      boolean var7 = (var10000) != 0;
       WK_2 var10 = this;
       if (var7) {
          if (this.x) {

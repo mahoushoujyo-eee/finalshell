@@ -1,15 +1,15 @@
 package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.RouteTracePanel2;
+import com.finalshell.ui.panel.ConnectionContextMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class TK implements ActionListener {
-   public final RouteTracePanel2 B;
+   public final ConnectionContextMenu B;
 
-   public TK(RouteTracePanel2 var1) {
+   public TK(ConnectionContextMenu var1) {
       this.B = var1;
    }
 

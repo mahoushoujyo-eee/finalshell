@@ -35,7 +35,7 @@ public class DQ implements ActionListener {
       Ref.g(435109479173232140L, var18);
       ArrayList var10007 = Registry.emptyArgs();
       long var21 = 245965692335108743L;
-      Object[] var20 = var10007;
+      Object var20 = var10007;
       var10007 = Ref.h(245965692335108743L, var20, var21);
 
       try {
@@ -58,7 +58,7 @@ public class DQ implements ActionListener {
 
       String var10009 = (String)(Registry.emptyArgs());
       long var25 = 577747074549625554L;
-      Object[] var24 = var10009;
+      Object var24 = var10009;
       var10009 = Ref.h(577747074549625554L, var24, var25);
 
       try {

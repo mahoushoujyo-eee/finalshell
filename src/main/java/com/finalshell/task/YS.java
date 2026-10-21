@@ -70,7 +70,7 @@ public class YS implements Runnable {
                   T32 var7 = (T32)var10019.get(((ArrayList)Ref.g(417119238929760524L, var45)).size() - 1);
                   Bq2 var10020 = (Bq2)(Registry.emptyArgs());
                   long var48 = 584096728105558414L;
-                  Object[] var47 = var10020;
+                  Object var47 = var10020;
                   var10020 = Ref.h(584096728105558414L, var47, var48);
 
                   try {

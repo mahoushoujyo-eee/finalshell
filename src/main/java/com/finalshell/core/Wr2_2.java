@@ -102,6 +102,14 @@ public final class Wr2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static String u(byte[] var0) {
+      byte var50;
+      byte var58;
+      byte var60;
+      byte var62;
+      int var63;
+      byte var67;
+      byte var69;
+      byte var71;
       String var1 = L();
       byte[] var10000 = var0;
       if (var1 == null) {
@@ -261,8 +269,6 @@ public final class Wr2_2 {
                var7[var13++] = K[var31 & a(22504, 866947295508982798L)];
                var15++;
                if (var1 != null) {
-      int var63;
-      int var63;
                   break label188;
                }
 
@@ -431,8 +437,8 @@ public final class Wr2_2 {
                var38 = var2[var16++];
             }
 
-            char var12 = (((var38) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-            char var39 = J(var38);
+            char var12 = var38;
+            char var39 = (J(var38)) ? 1 : 0;
             if (var1 == null) {
                if (var39 == 0) {
                   return null;
@@ -442,7 +448,7 @@ public final class Wr2_2 {
             }
 
             char var13 = var39;
-            byte var40 = J(var39);
+            byte var40 = (byte)((J(var39)) ? 1 : 0);
             if (var1 == null) {
                if (var40 == 0) {
                   return null;
@@ -493,8 +499,8 @@ public final class Wr2_2 {
          var18 = var41;
          var19 = L[var23];
          char var24 = var2[var16++];
-         var25 = (((var2[var16++]) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-         byte var42 = J(var24);
+         var25 = var2[var16++];
+         byte var42 = (byte)((J(var24)) ? 1 : 0);
          if (var1 == null) {
             if (var42 != 0) {
                var43 = J(var25);
@@ -508,13 +514,13 @@ public final class Wr2_2 {
                }
             }
 
-            var42 = L(var24);
+            var42 = (byte)((L(var24)) ? 1 : 0);
          }
 
          label107:
          if (var1 == null) {
             if (var42 != 0) {
-               var42 = L(var25);
+               var42 = (byte)((L(var25)) ? 1 : 0);
                if (var1 != null) {
                   break label107;
                }
@@ -536,7 +542,7 @@ public final class Wr2_2 {
                }
             }
 
-            var42 = L(var24);
+            var42 = (byte)((L(var24)) ? 1 : 0);
          }
 
          if (var1 == null) {
@@ -544,7 +550,7 @@ public final class Wr2_2 {
                return null;
             }
 
-            var42 = L(var25);
+            var42 = (byte)((L(var25)) ? 1 : 0);
          }
 
          if (var1 == null) {
@@ -596,7 +602,7 @@ public final class Wr2_2 {
                   char[] var10000 = var0;
                   int var10001 = var4;
                   if (var1 == null) {
-                     var5 = I(var0[var4]);
+                     var5 = (I(var0[var4])) ? 1 : 0;
                      if (var1 != null) {
                         break;
                      }
@@ -756,7 +762,6 @@ public final class Wr2_2 {
       }
    }
 }
-
 
 
 

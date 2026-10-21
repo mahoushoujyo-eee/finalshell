@@ -101,10 +101,11 @@ public final class Xg2 {
    }
 
    public static BufferedImage A(Shape var0, Image var1) {
+      Graphics2D var5;
       int var2 = var1.getWidth(null);
       int var3 = var1.getHeight(null);
       BufferedImage var4 = g(var2, var3, 3);
-      Graphics2D var5 = var4.createGraphics();
+      var5 = var4.createGraphics();
       RV.X(var5);
       var5.setPaint(Color.WHITE);
       var5.fill(var0);
@@ -115,6 +116,7 @@ public final class Xg2 {
    }
 
    public static List i(List var0) {
+      ArrayList var5;
       ArrayList var2 = new ArrayList(var0.size());
       String var10000 = FV_2.D();
       Iterator var3 = var0.iterator();
@@ -122,7 +124,6 @@ public final class Xg2 {
 
       while (true) {
          if (var3.hasNext()) {
-      BufferedImage var5;
             ImageIcon var4 = (ImageIcon)var3.next();
             var5 = var2;
             if (var1 != null) {
@@ -131,7 +132,6 @@ public final class Xg2 {
 
             var2.add(var4.getImage());
             if (var1 == null) {
-      BufferedImage var5;
                continue;
             }
          }
@@ -148,6 +148,10 @@ public final class Xg2 {
    }
 
    public static ImageIcon Z(int var0, List var1) {
+      Iterator var5;
+      ImageIcon var6;
+      int var7;
+      ImageIcon var8;
       String var2 = FV_2.D();
       List var10000 = var1;
       if (var2 == null) {
@@ -158,7 +162,7 @@ public final class Xg2 {
          var10000 = var1;
       }
 
-      int var7 = var10000.size();
+      var7 = var10000.size();
       if (var2 == null) {
          if (var7 == 0) {
             return null;
@@ -169,7 +173,7 @@ public final class Xg2 {
 
       Image[] var3 = new Image[var7];
       int var4 = 0;
-      Iterator var5 = var1.iterator();
+      var5 = var1.iterator();
 
       while (true) {
          if (var5.hasNext()) {
@@ -180,7 +184,7 @@ public final class Xg2 {
 
             Image var9;
             label29: {
-               ImageIcon var6 = var8;
+               var6 = var8;
                ImageIcon var10002 = var6;
                if (var2 == null) {
                   if (var6 == null) {
@@ -213,6 +217,10 @@ public final class Xg2 {
    }
 
    public static ImageIcon w(int var0, ImageIcon[] var1) {
+      ImageIcon[] var5;
+      int var7;
+      ImageIcon var8;
+      int var9;
       String var2 = FV_2.D();
       ImageIcon var10000 = var1;
       if (var2 == null) {
@@ -223,7 +231,7 @@ public final class Xg2 {
          var10000 = var1;
       }
 
-      int var9 = ((Object[])var10000).length;
+      var9 = ((Object[])var10000).length;
       if (var2 == null) {
          if (var9 == 0) {
             return null;
@@ -234,9 +242,9 @@ public final class Xg2 {
 
       Image[] var3 = new Image[var9];
       int var4 = 0;
-      ImageIcon[] var5 = var1;
+      var5 = var1;
       int var6 = var1.length;
-      int var7 = 0;
+      var7 = 0;
 
       while (true) {
          if (var7 < var6) {
@@ -247,7 +255,7 @@ public final class Xg2 {
 
             Image var11;
             label29: {
-               ImageIcon var8 = var10000;
+               var8 = var10000;
                ImageIcon var10002 = var8;
                if (var2 == null) {
                   if (var8 == null) {
@@ -281,6 +289,8 @@ public final class Xg2 {
    }
 
    public static BufferedImage k(int var0, Image[] var1) {
+      int var6;
+      int var9;
       String var2 = FV_2.D();
       Image[] var10000 = var1;
       if (var2 == null) {
@@ -295,7 +305,7 @@ public final class Xg2 {
          Dimension var3 = new Dimension(0, 0);
          Image[] var4 = var1;
          int var5 = var1.length;
-         int var6 = 0;
+         var6 = 0;
 
          while (true) {
             if (var6 < var5) {
@@ -344,7 +354,7 @@ public final class Xg2 {
          var6 = 0;
          Image[] var14 = var1;
          int var8 = var1.length;
-         int var9 = 0;
+         var9 = 0;
 
          while (true) {
             if (var9 < var8) {
@@ -386,6 +396,12 @@ public final class Xg2 {
    }
 
    public static ImageIcon E(String var0, List var1) {
+      ImageIcon var10;
+      Iterator var5;
+      ImageIcon var6;
+      ImageIcon var7;
+      List var8;
+      int var9;
       String var2 = FV_2.D();
       if (var0 != null) {
          if (var2 != null) {
@@ -397,7 +413,7 @@ public final class Xg2 {
          }
       }
 
-      List var8 = var1;
+      var8 = var1;
       if (var2 == null) {
          if (var1 == null) {
             return null;
@@ -406,7 +422,7 @@ public final class Xg2 {
          var8 = var1;
       }
 
-      int var9 = var8.size();
+      var9 = var8.size();
       if (var2 == null) {
          if (var9 == 0) {
             return null;
@@ -425,7 +441,7 @@ public final class Xg2 {
 
       Image[] var3 = new Image[var9];
       int var4 = 0;
-      Iterator var5 = var1.iterator();
+      var5 = var1.iterator();
 
       while (true) {
          if (var5.hasNext()) {
@@ -436,7 +452,7 @@ public final class Xg2 {
 
             Image var11;
             label52: {
-               ImageIcon var6 = var10;
+               var6 = var10;
                ImageIcon var10002 = var6;
                if (var2 == null) {
                   if (var6 == null) {
@@ -461,7 +477,7 @@ public final class Xg2 {
          break;
       }
 
-      ImageIcon var7 = var10;
+      var7 = var10;
       if (var2 == null && var0 != null) {
          Z.put(var0, var7);
       }
@@ -474,6 +490,8 @@ public final class Xg2 {
    }
 
    public static ImageIcon U(String var0, ImageIcon[] var1) {
+      ImageIcon[] var5;
+      int var7;
       String var2 = FV_2.D();
       if (var0 != null) {
          if (var2 != null) {
@@ -513,9 +531,9 @@ public final class Xg2 {
 
       Image[] var3 = new Image[var11];
       int var4 = 0;
-      ImageIcon[] var5 = var1;
+      var5 = var1;
       int var6 = var1.length;
-      int var7 = 0;
+      var7 = 0;
 
       while (true) {
          if (var7 < var6) {
@@ -569,6 +587,9 @@ public final class Xg2 {
    }
 
    public static BufferedImage I(String var0, Image[] var1) {
+      BufferedImage var10;
+      int var6;
+      int var8;
       String var2 = FV_2.D();
       if (var0 != null) {
          if (var2 != null) {
@@ -606,7 +627,7 @@ public final class Xg2 {
          Dimension var3 = new Dimension(0, 0);
          Image[] var4 = var1;
          int var5 = var1.length;
-         int var6 = 0;
+         var6 = 0;
 
          while (true) {
             if (var6 < var5) {
@@ -646,11 +667,11 @@ public final class Xg2 {
                var17 = var3.width;
             }
 
-            BufferedImage var10 = g(var17, var3.height, 3);
+            var10 = g(var17, var3.height, 3);
             Graphics2D var11 = var10.createGraphics();
             Image[] var12 = var1;
             int var13 = var1.length;
-            int var8 = 0;
+            var8 = 0;
 
             while (true) {
                if (var8 < var13) {
@@ -884,12 +905,16 @@ public final class Xg2 {
    }
 
    public static Color e(ImageIcon var0) {
+      int var10;
+      BufferedImage var5;
+      int var6;
+      int var7;
       int var2 = 0;
       String var10000 = FV_2.D();
       int var3 = 0;
       int var4 = 0;
-      BufferedImage var5 = v(var0.getImage());
-      int var6 = 0;
+      var5 = v(var0.getImage());
+      var6 = 0;
       String var1 = var10000;
 
       while (true) {
@@ -899,7 +924,7 @@ public final class Xg2 {
                break;
             }
 
-            int var7 = 0;
+            var7 = 0;
 
             label27: {
                while (var7 < var0.getIconHeight()) {
@@ -942,10 +967,12 @@ public final class Xg2 {
    }
 
    public static ImageIcon l(String var0, int var1) {
+      ImageIcon var5;
+      ImageIcon var6;
       String var10000 = FV_2.D();
       ImageIcon var3 = e(var0, false);
       String var2 = var10000;
-      ImageIcon var5 = var3;
+      var5 = var3;
       if (var2 == null) {
          if (var3 == null) {
             return null;
@@ -955,7 +982,7 @@ public final class Xg2 {
       }
 
       ImageIcon var4 = var5;
-      ImageIcon var6 = var4;
+      var6 = var4;
       if (var2 == null) {
          if (var4 != null) {
             var4.setDescription(var3.getIconWidth() + "x" + var3.getIconHeight());
@@ -1008,6 +1035,10 @@ public final class Xg2 {
    }
 
    public static BufferedImage h(BufferedImage var0, int var1) {
+      int var10;
+      BufferedImage var7;
+      Graphics2D var8;
+      int var9;
       String var2 = FV_2.D();
       BufferedImage var10000 = var0;
       if (var2 == null) {
@@ -1094,8 +1125,8 @@ public final class Xg2 {
 
       int var5 = Math.max(var10, var10001);
       int var6 = Math.max(1, var4);
-      BufferedImage var7 = g(var5, var6, 3);
-      Graphics2D var8 = var7.createGraphics();
+      var7 = g(var5, var6, 3);
+      var8 = var7.createGraphics();
       RV.O(var8);
       var8.drawImage(var0, 0, 0, var3, var4, null);
       var8.dispose();
@@ -1144,7 +1175,7 @@ public final class Xg2 {
                break label40;
             }
 
-            var10000 = g.containsKey(var0);
+            var10000 = (g.containsKey(var0)) ? 1 : 0;
          }
 
          if (var10000 == 0) {
@@ -1185,6 +1216,9 @@ public final class Xg2 {
    }
 
    public static ImageIcon e(String var0, boolean var1) {
+      boolean var5;
+      Map var6;
+      ImageIcon var7;
       String var2 = FV_2.D();
       String var10000 = var0;
       if (var2 == null) {
@@ -1195,7 +1229,7 @@ public final class Xg2 {
          var10000 = var0.trim();
       }
 
-      boolean var5 = var10000.equals("");
+      var5 = var10000.equals("");
       if (var2 == null) {
          if (var5) {
             return null;
@@ -1237,7 +1271,7 @@ public final class Xg2 {
       }
 
       ImageIcon var3 = (ImageIcon)var6.get(var10001);
-      ImageIcon var7 = var3;
+      var7 = var3;
       if (var2 == null) {
          if (var3 != null) {
             return var3;
@@ -1271,6 +1305,10 @@ public final class Xg2 {
    }
 
    public static ImageIcon d(URL var0, boolean var1) {
+      ImageIcon var5;
+      boolean var6;
+      Map var7;
+      ImageIcon var8;
       String var2 = FV_2.D();
       URL var10000 = var0;
       if (var2 == null) {
@@ -1286,7 +1324,7 @@ public final class Xg2 {
       label45: {
          label40: {
             var3 = var10000.toString();
-            boolean var6 = var1;
+            var6 = var1;
             if (var2 == null) {
                if (!var1) {
                   break label40;
@@ -1308,7 +1346,7 @@ public final class Xg2 {
             }
          }
 
-         ImageIcon var5 = new ImageIcon(var0);
+         var5 = new ImageIcon(var0);
          if (var1) {
             g.put(var3, var5);
          }
@@ -1317,7 +1355,7 @@ public final class Xg2 {
       }
 
       ImageIcon var4 = (ImageIcon)var7.get(var10001);
-      ImageIcon var8 = var4;
+      var8 = var4;
       if (var2 == null) {
          if (var4 != null) {
             return var4;
@@ -1423,13 +1461,14 @@ public final class Xg2 {
    }
 
    public static ImageIcon U(String var0, int var1, boolean var2) {
+      ImageIcon var5;
       String var3 = FV_2.D();
       Map var10000 = E;
       String var10001 = var1 + b(-31662, -21917) + var0;
       if (var3 == null) {
          if (!var10000.containsKey(var10001)) {
             ImageIcon var4 = l(var0, var1);
-            ImageIcon var5 = c(var4, var1, var2);
+            var5 = c(var4, var1, var2);
             E.put(var1 + b(-31657, -7393) + var0, var5);
             return var5;
          }
@@ -1442,12 +1481,13 @@ public final class Xg2 {
    }
 
    public static ImageIcon Y(String var0, ImageIcon var1, int var2, boolean var3) {
+      ImageIcon var5;
       String var4 = FV_2.D();
       Map var10000 = E;
       String var10001 = var0;
       if (var4 == null) {
          if (!E.containsKey(var0)) {
-            ImageIcon var5 = c(var1, var2, var3);
+            var5 = c(var1, var2, var3);
             E.put(var0, var5);
             return var5;
          }
@@ -1460,10 +1500,12 @@ public final class Xg2 {
    }
 
    public static ImageIcon c(ImageIcon var0, int var1, boolean var2) {
+      Graphics2D var5;
+      ImageIcon var6;
       var1 += 4;
       String var10000 = FV_2.D();
       BufferedImage var4 = g(var1, var1, 3);
-      Graphics2D var5 = var4.createGraphics();
+      var5 = var4.createGraphics();
       String var3 = var10000;
       if (var0 != null) {
          var5.drawImage(var0.getImage(), var1 / 2 - var0.getIconWidth() / 2, var1 / 2 - var0.getIconHeight() / 2, null);
@@ -1474,7 +1516,6 @@ public final class Xg2 {
          var5.drawRect(0, 0, var1 - 1, var1 - 1);
       }
 
-      ImageIcon var6;
       String var8;
       label19: {
          var5.dispose();
@@ -1570,14 +1611,18 @@ public final class Xg2 {
    }
 
    public static BufferedImage j(BufferedImage var0, int var1, int var2) {
+      BufferedImage var5;
+      Graphics2D var6;
+      Double var7;
+      Shape var8;
       int var3 = var0.getWidth();
       int var4 = var0.getHeight();
-      BufferedImage var5 = g(var3 + var1 * 2 + 1, var4 + var1 * 2 + 1, 3);
-      Graphics2D var6 = var5.createGraphics();
+      var5 = g(var3 + var1 * 2 + 1, var4 + var1 * 2 + 1, 3);
+      var6 = var5.createGraphics();
       RV.X(var6);
       RV.O(var6);
-      Double var7 = new Double((double)var1, (double)var1, (double)var3, (double)var4, (double)var2, (double)var2);
-      Shape var8 = var6.getClip();
+      var7 = new Double((double)var1, (double)var1, (double)var3, (double)var4, (double)var2, (double)var2);
+      var8 = var6.getClip();
       var6.setClip(var7);
       var6.drawImage(var0, var1, var1, null);
       var6.setClip(var8);
@@ -1608,16 +1653,21 @@ public final class Xg2 {
    }
 
    public static BufferedImage C(int var0, int var1, Shape var2, int var3, float var4, Color var5) {
-      int var6 = var3 * 2 + var0;
-      int var7 = var3 * 2 + var1;
-      BufferedImage var8 = g(var6, var6, 3);
-      Graphics2D var9 = var8.createGraphics();
+      Zf2 var10;
+      int var6;
+      int var7;
+      BufferedImage var8;
+      Graphics2D var9;
+      var6 = var3 * 2 + var0;
+      var7 = var3 * 2 + var1;
+      var8 = g(var6, var6, 3);
+      var9 = var8.createGraphics();
       RV.X(var9);
       var9.translate(var3, var3);
       var9.setPaint(Color.BLACK);
       var9.fill(var2);
       var9.dispose();
-      Zf2 var10 = new Zf2(var3, 0, 0, var4);
+      var10 = new Zf2(var3, 0, 0, var4);
       BufferedImage var11 = var10.filter(var8, null);
       if (var5 != null) {
          Graphics2D var12 = var11.createGraphics();
@@ -1879,6 +1929,8 @@ public final class Xg2 {
    }
 
    public static String b(int var0, int var1) {
+      int var6;
+      int var8;
       int var2 = (var0 ^ -31661) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -2659,13 +2711,13 @@ public final class Xg2 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -2693,12 +2745,18 @@ public final class Xg2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var33;
+      boolean var5;
+      long[] var6;
+      byte[] var7;
+      int var9;
       String[] var13 = new String[7];
       int var11 = 0;
-      String var10 = "ÖÉ Ø¯ðä\u0015#\u001ew$ÁS\räÎÏï\u0092º®6\tÌîç\u0004\u0080\u000f;\u001d\u001b\u000b±®w¾ÂyK¸âqWÂ#\u009d_*ËF;\u0000áwÍ)Ø#\u001b³!¹e\\\u0080%\u00033ë\u0001}í\fxº\u0096wÑ¬ò\u0013)\u0093â\u0013Z\u0004\u0085\u008f\u009b\r";
+      var10 = "ÖÉ Ø¯ðä\u0015#\u001ew$ÁS\räÎÏï\u0092º®6\tÌîç\u0004\u0080\u000f;\u001d\u001b\u000b±®w¾ÂyK¸âqWÂ#\u009d_*ËF;\u0000áwÍ)Ø#\u001b³!¹e\\\u0080%\u00033ë\u0001}í\fxº\u0096wÑ¬ò\u0013)\u0093â\u0013Z\u0004\u0085\u008f\u009b\r";
       int var12 = "ÖÉ Ø¯ðä\u0015#\u001ew$ÁS\räÎÏï\u0092º®6\tÌîç\u0004\u0080\u000f;\u001d\u001b\u000b±®w¾ÂyK¸âqWÂ#\u009d_*ËF;\u0000áwÍ)Ø#\u001b³!¹e\\\u0080%\u00033ë\u0001}í\fxº\u0096wÑ¬ò\u0013)\u0093â\u0013Z\u0004\u0085\u008f\u009b\r"
          .length();
-      char var9 = 27;
+      var9 = 27;
       int var17 = -1;
 
       label70:
@@ -2786,18 +2844,18 @@ public final class Xg2 {
                      a = var13;
                      b = new String[7];
                      long var0 = 7617842255369400522L;
-                     long[] var6 = new long[15];
+                     var6 = new long[15];
                      int var3 = 0;
                      String var4 = "fú\u00adhYéÄ{*üB?·\u008dbêRòÂyÈ´t~\u009c\\ì[F?\u0095}¢ØËc ;¹ò\u009fb];Àg~W\u0094=Ôï£:ÕeVéüx®C²²ã\u0083\u009c÷\u000fTy\u00122æ#×÷¾Ç \u008b¾57+lYË²}ýüÎNþzÙ)=\u0017¬;Ôè";
-                     int var5 = "fú\u00adhYéÄ{*üB?·\u008dbêRòÂyÈ´t~\u009c\\ì[F?\u0095}¢ØËc ;¹ò\u009fb];Àg~W\u0094=Ôï£:ÕeVéüx®C²²ã\u0083\u009c÷\u000fTy\u00122æ#×÷¾Ç \u008b¾57+lYË²}ýüÎNþzÙ)=\u0017¬;Ôè"
-                        .length();
+                     var5 = "fú\u00adhYéÄ{*üB?·\u008dbêRòÂyÈ´t~\u009c\\ì[F?\u0095}¢ØËc ;¹ò\u009fb];Àg~W\u0094=Ôï£:ÕeVéüx®C²²ã\u0083\u009c÷\u000fTy\u00122æ#×÷¾Ç \u008b¾57+lYË²}ýüÎNþzÙ)=\u0017¬;Ôè";
+                        // [VF] .length();
                      byte var2 = 0;
 
                      label44:
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56
@@ -2836,7 +2894,7 @@ public final class Xg2 {
                                  }
 
                                  var4 = "½ÜH\u0084\u0016£¦ÝKAÞ\u001dÊ\u00adÿ=";
-                                 var5 = "½ÜH\u0084\u0016£¦ÝKAÞ\u001dÊ\u00adÿ=".length();
+                                 var5 = ("½ÜH\u0084\u0016£¦ÝKAÞ\u001dÊ\u00adÿ=".length()) != 0;
                                  var2 = 0;
                            }
 
@@ -2880,7 +2938,6 @@ public final class Xg2 {
       }
    }
 }
-
 
 
 

@@ -1831,6 +1831,7 @@ public abstract class Cj4 extends Fv2_2{
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var15 = new String[19];
       int var13 = 0;
       String var12 = "\u000b!Z\u0096#\u009c]G\u0080\"Þ\u0080w)\u0011Ê\u0093 h?\u009d\u0097\u0018ªj\u0097\u0019¶ÍP9Å\u0006YeEâ\u00950\u0006\u009bL~\u0097a£\u0004Û\u00193=\u0004øKWw\túF\u0018£â¿¥+\u007f\u000f×n\u0083×Kj\u0019æ{µ\u00ad\u0093þ\u0094²\u0006´X\u009b\u0015Ýó\u0005P\u0018¨\u0018*\u0007zH\u000b\u0010¥®\u008d\u0007B^\fÒEö\u0091\u000fx¢vNõYÎ\u0080\u0081yò\n\u0005§Ï\u000fT¡ó.EUØ\u0001CIª\f\u000eg®\u000fku\u0014´¹\u0006Gk°\u0004Ô¥ÑRW\u0005\u0095Y\u00100=\t\u0014\u0019ÅHYÂÒ\u0084\u0091";
@@ -1847,7 +1848,6 @@ public abstract class Cj4 extends Fv2_2{
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label56: {
                char[] var38 = var10001.toCharArray();
                int var10004 = var38.length;

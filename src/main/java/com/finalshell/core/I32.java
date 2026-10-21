@@ -148,10 +148,10 @@ public class I32 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public synchronized byte[] H(byte[] var1, byte[] var2, String var3) {
-      char[] var15;
+      String var15;
       int var10000 = (Dm4.F$boolean()) ? 1 : 0;
       byte var5 = 0;
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
 
       label85: {
          label89: {

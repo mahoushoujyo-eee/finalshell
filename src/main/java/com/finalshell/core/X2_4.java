@@ -48,10 +48,10 @@ public class X2_4 extends Y2_5 implements Cloneable {
    }
 
    @Override
-   public Jk2 k(int var1, InetAddress var2, int var3) {
+   public ProxyMessage k(int var1, InetAddress var2, int var3) {
       String[] var4;
       label20: {
-         var4 = Jk2.Y();
+         var4 = ProxyMessage.Y();
          int var10000 = var1;
          if (var4 != null) {
             switch (var1) {
@@ -76,12 +76,12 @@ public class X2_4 extends Y2_5 implements Cloneable {
    }
 
    @Override
-   public Jk2 Q(int var1, String var2, int var3) throws UnknownHostException {
+   public ProxyMessage Q(int var1, String var2, int var3) throws UnknownHostException {
       return this.k(var1, InetAddress.getByName(var2), var3);
    }
 
    @Override
-   public Jk2 o(InputStream var1) throws B52, IOException {
+   public ProxyMessage o(InputStream var1) throws B52, IOException {
       return new Jo2(var1, true);
    }
 

@@ -2,7 +2,7 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import com.finalshell.ui.panel.FilePermissionPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,11 +20,11 @@ public class ConfirmDeleteFolderListener2 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
-      Connection4.I();
+      ConnectionInfoPanel.I();
       Object var4 = 481028078493164457L;
       Object var10002 = Ref.g(481028078493164457L, var4);
       Object var6 = 305402254993059552L;
-      int var3 = JOptionPane.showConfirmDialog(((Connection4)Ref.g(305402254993059552L, var6)).getParent(), a(7719, -7943), a(7718, 13730), 0);
+      int var3 = JOptionPane.showConfirmDialog(((ConnectionInfoPanel)Ref.g(305402254993059552L, var6)).getParent(), a(7719, -7943), a(7718, 13730), 0);
       Object var2 = var10002;
       if (var2 != null) {
          if (var3 == 0) {

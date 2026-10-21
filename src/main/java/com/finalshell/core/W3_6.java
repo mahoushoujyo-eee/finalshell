@@ -1746,6 +1746,8 @@ public class W3_6 extends M_5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var13;
+      char[] var25;
       String[] var7 = new String[25];
       int var5 = 0;
       String var4 = ")\u0006C\u0013xr=Vn\u000fP\u0097ï5ä\f6f9öü·\u0014ã\u0086\u008b\u0000agZ7\u0018M;Ê\u0087E#ºÛ\u0001¯&\u0093-peQ\u0084bÆ \u0086\u0085b 2pÑ\b\u0015¾Èv<v£\"\u0086\u00adìOTÔ\u0018\r\u0016\rÙÜÓ0\u0014¦\u007f¿O÷}}ï\u0099\u0001>}|\u008e\u0016\u009d\u0014\u007f}\u0088\tßÇâ¯\u0088ý@©åè\u0084îkuØå\u0007OÕ¿Â\u008c º\u0015ac¿\u0015¿yÙ\u008a^è%\u0083,6m¦Þ\u00ad\u0087r\u0000\u000fÅJñ{ ¹W+9wÞ¿Ñöm\u000b\u0016$¢°Ð\u0000>ËÃ_\u0099\t\u0012\u0089FË¡E\u001cYk2.~·åu2#\u007fòa\u0004QK\u008d\u008e\\'ï\u0092\u0095\u0095¢\u0001Ôÿ3\u001cûAÿ%mhª6¸\u0013Òf.í\\ñ÷iw×\u00800\u0089GÎ<°\f\u000f«§'|çìKÖ\u008bâ]¶&A.i\u001aáã\u0011Ë&\u0010Dê¶¸y±~\u000fVoF\u009d\u0018ýò»\u0007\u009fL¥â1Ùv©ã!\u0087¼à\u009bqáB´Ý\u0092\u0018¼é2\u008a\u001c\u001c\u0014Qè\u001c\u0088Þ7&\u0084k¼\u001aºº\u008c\u0004\u0098Ñ\u000bà@Ì\u009fÿ\u0085\u0014\u009bQ\b8o²~ôÍ\u000fü\næ\rº÷U\u008cÌ¦ÒÝ\u0014KÉ\u000e\u009f\u000f\u0015øõË¶(ÀèÅ%K_Á^s\u000bwQlRøþóà°\u0011\u0002\n\u0018v\u0081¶Eb^{@}\u0013$ÏÛÈ\u0086Ò\u009aÞ¾n\u0094\u009fOÆ¨ô³Po\u0007¤(Vj¥_X\tV¶ à\u0081A\u001aßë\u0003Ø\u0090d\u0017nK.\u008e¬S½\u009b\u0015\u001amV-L\u0016q«àpÌ\u008dL¿\tðÚtm\u001bðIé\u0081";
@@ -1761,7 +1763,6 @@ public class W3_6 extends M_5 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var25;
             label65: {
                char[] var30 = var10001.toCharArray();
                int var10004 = var30.length;

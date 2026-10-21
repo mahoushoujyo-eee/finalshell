@@ -22,6 +22,7 @@ public class Lx2 {
    }
 
    public Wj4 g(int var1, String var2, String var3) {
+      Lx2 var14;
       int[] var4 = XB.X();
       if (this.k != null) {
          return null;
@@ -1008,7 +1009,8 @@ public class Lx2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var13 = new String[3];
+      String[] var13;
+      var13 = new String[3];
       int var11 = 0;
       String var10 = "<|W\f\u001d\u0004\u0004ÅIz¯\u0002¤N";
       int var12 = "<|W\f\u001d\u0004\u0004ÅIz¯\u0002¤N".length();

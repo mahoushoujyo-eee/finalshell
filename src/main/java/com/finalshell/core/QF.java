@@ -29,8 +29,8 @@ public class QF extends Qi2 {
       label22: {
          label21: {
             try {
-               var7 = (var4) ? 1 : 0;
-               var10001 = (this.K()) ? 1 : 0;
+               var7 = var4;
+               var10001 = (byte)((this.K()) ? 1 : 0);
                if (var3) {
                   break label22;
                }
@@ -868,7 +868,8 @@ public class QF extends Qi2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var7 = new String[2];
+      String[] var7;
+      var7 = new String[2];
       int var5 = 0;
       String var4 = "P¦Kh\u0006öÂ\u008bâJR";
       int var6 = "P¦Kh\u0006öÂ\u008bâJR".length();

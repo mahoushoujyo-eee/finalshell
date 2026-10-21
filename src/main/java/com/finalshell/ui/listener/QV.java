@@ -37,6 +37,7 @@ public class QV implements MouseListener {
 
    @Override
    public void mouseReleased(MouseEvent var1) {
+      Integer var77;
       int[] var2 = SelectDownloadFolderPanel.O$arrint();
       if (var2 == null) {
          if (var1.getButton() != 1) {
@@ -50,7 +51,7 @@ public class QV implements MouseListener {
          StringBuilder var10003 = new StringBuilder().append(a);
          File var10004;
          Object var8 = 198856776624497515L;
-         super((String)Ref.g(198856776624497515L, var8));
+         // [VF-super] super((String)Ref.g(198856776624497515L, var8));
          var10003.setText(var10004.append(var10004.getAbsolutePath()).toString());
          Object var10 = 169328206873800150L;
          Ref.g(169328206873800150L, var10);
@@ -116,9 +117,9 @@ public class QV implements MouseListener {
       Object var44 = 169328206873800150L;
       Ref.g(169328206873800150L, var44);
       Object var46 = 198856776624497515L;
-      Object[] var71 = Registry.packArgs(Ref.g(198856776624497515L, var46));
+      Object var71 = Registry.packArgs(Ref.g(198856776624497515L, var46));
       long var49 = 491105122976850438L;
-      Object[] var48 = var71;
+      Object var48 = var71;
       var71 = Ref.h(491105122976850438L, var48, var49);
 
       try {
@@ -142,9 +143,9 @@ public class QV implements MouseListener {
       JPopupMenu var74 = (JPopupMenu)Ref.g(600739725726203285L, var60);
       Object var62 = 163486738077339335L;
       Object var10012 = Ref.g(163486738077339335L, var62);
-      Object[] var75 = Registry.emptyArgs();
+      Object var75 = Registry.emptyArgs();
       long var65 = 284002349345105786L;
-      Object[] var64 = var75;
+      Object var64 = var75;
       var75 = Ref.h(284002349345105786L, var64, var65);
 
       try {

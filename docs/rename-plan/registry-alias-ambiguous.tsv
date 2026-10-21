@@ -1,0 +1,2 @@
+# 消歧仍不唯一的 Registry 明文（alias 取排序第一个候选）
+# name	candidates	hits_by_member+type	hits_by_member_name	hits_by_type_ref

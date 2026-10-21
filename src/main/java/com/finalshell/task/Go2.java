@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
-import com.finalshell.core.LF3_2;
+import com.finalshell.core.SpeedTestService;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Go2 implements Runnable {
-   public final LF3_2 J;
+   public final SpeedTestService J;
 
-   public Go2(LF3_2 var1) {
+   public Go2(SpeedTestService var1) {
       this.J = var1;
    }
 

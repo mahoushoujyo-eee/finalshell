@@ -276,6 +276,8 @@ public class HW3 extends HN3 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      BufferedImage var13;
+      Graphics2D var9;
       long var4 = System.currentTimeMillis();
       String[] var10000 = W5.q();
       this.F = (float)(this.j >> a(441, 1969262590378910249L) & a(19191, 7104045652179741039L)) * 0.003921569F;
@@ -323,8 +325,6 @@ public class HW3 extends HN3 {
                }
 
                if (var3 != null) {
-      HW3 var13;
-      HW3 var13;
                   continue;
                }
             }
@@ -345,7 +345,7 @@ public class HW3 extends HN3 {
          var13 = var2;
       }
 
-      Graphics2D var9 = var13.createGraphics();
+      var9 = var13.createGraphics();
       var9.drawImage(this.T, 0, 0, var2.getWidth(), var2.getHeight(), var8, 0, var8 + 1, a(1713, 1373492479831942432L), null);
       var9.dispose();
       BufferedImage var10 = super.filter(var2, var2);
@@ -357,6 +357,7 @@ public class HW3 extends HN3 {
    }
 
    public float k(float var1, float var2) {
+      float var9;
       String[] var10000 = W5.q();
       float var4 = 0.0F;
       var1 += 371.0F;
@@ -399,16 +400,18 @@ public class HW3 extends HN3 {
 
    @Override
    public int C(int var1, int var2, int var3) {
+      float var13;
+      float var9;
       float var5 = (float)var1 / this.y;
       float var6 = (float)var2 / this.a;
       float var7 = (float)Math.pow((double)this.M, (double)(100.0F * var6 * var6));
       float var8 = (float)(var3 >> a(27537, 9161988940983322626L) & a(7626, 6180954340632280668L)) * 0.003921569F;
-      float var9 = (float)(var3 >> a(27458, 4500278557435775191L) & a(7626, 6180954340632280668L)) * 0.003921569F;
+      var9 = (float)(var3 >> a(27458, 4500278557435775191L) & a(7626, 6180954340632280668L)) * 0.003921569F;
       String[] var10000 = W5.q();
       float var10 = (float)(var3 & a(7626, 6180954340632280668L)) * 0.003921569F;
       float var11 = this.y * 0.5F;
       float var12 = (float)var1 - var11;
-      float var13 = (float)var2;
+      var13 = (float)var2;
       var13 = this.Q[var2];
       var12 = (var5 - 0.5F) * (1.0F + var13);
       var13 += this.U * this.r;
@@ -1291,11 +1294,13 @@ public class HW3 extends HN3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var13 = new String[2];
+      String[] var13;
+      char var9;
+      var13 = new String[2];
       int var11 = 0;
       String var10 = "ßÔ{t·>Ò\u0007Ú2\u009d\"]\u000eºE1¾Å¨ÏU\u0012Ë©°º\u001a";
       int var12 = "ßÔ{t·>Ò\u0007Ú2\u009d\"]\u000eºE1¾Å¨ÏU\u0012Ë©°º\u001a".length();
-      char var9 = '\r';
+      var9 = '\r';
       int var8 = -1;
 
       while (true) {
@@ -1445,7 +1450,6 @@ public class HW3 extends HN3 {
       }
    }
 }
-
 
 
 

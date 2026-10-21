@@ -18,13 +18,14 @@ public class AZ implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      String var36;
       Object var4 = 238068443595657962L;
       Object var10003 = Ref.g(238068443595657962L, var4);
       Object var6 = 450156560726681374L;
       Object var10004 = Ref.g(450156560726681374L, var6);
       String var10005 = (String)(Registry.emptyArgs());
       long var9 = 605430732347023634L;
-      Object[] var8 = var10005;
+      Object var8 = var10005;
       var10005 = Ref.h(605430732347023634L, var8, var9);
 
       try {
@@ -51,7 +52,7 @@ var10004 = new AZ(var10005);
       Ref.g(571912682165835448L, var14);
       ArrayList var10007 = (ArrayList)(Registry.emptyArgs());
       long var17 = 339037510611298074L;
-      Object[] var16 = var10007;
+      Object var16 = var10007;
       var10007 = Ref.h(339037510611298074L, var16, var17);
 
       try {

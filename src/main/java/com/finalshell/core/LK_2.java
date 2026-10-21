@@ -69,7 +69,7 @@ public class LK_2 extends Lz2_2 {
 
          var10000 = this.C.getAlpha();
          if (var2 != null) {
-            return Boolean.valueOf((boolean)var10000);
+            return Boolean.valueOf(var10000);
          }
 
          var10001 = a(24958, 7667382412824850253L);

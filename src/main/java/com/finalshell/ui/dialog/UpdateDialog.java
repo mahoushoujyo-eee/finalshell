@@ -2,7 +2,7 @@ package com.finalshell.ui.dialog;
 
 import com.finalshell.core.CH;
 import com.finalshell.core.Fl4;
-import com.finalshell.core.Y7;
+import com.finalshell.core.UpdateManifestLegacy;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.Au2;
@@ -50,6 +50,9 @@ public class UpdateDialog extends JDialog implements CH {
 
    public UpdateDialog(JFrame var1, Fl4 var2) {
    super();
+   boolean var63;
+   boolean var64;
+   long var9;
       label63: {
          y();
          Registry.lookupField(356414783958618676L).setBoolean(this, false);
@@ -66,7 +69,7 @@ public class UpdateDialog extends JDialog implements CH {
          JPanel var4 = (JPanel)this.getContentPane();
          var4.setLayout(new MigLayout(a(25139, 14069), "", ""));
          JTextArea var10003 = new JTextArea();
-         long var9 = 246965589172664073L;
+         var9 = 246965589172664073L;
          JTextArea var8 = var10003;
          Ref.s(246965589172664073L, var8, var9);
          Object var10 = 246965589172664073L;
@@ -137,7 +140,7 @@ public class UpdateDialog extends JDialog implements CH {
             Ref.s(209593506021318868L, var40, var41);
             JScrollPane var10019;
             Object var42 = 209593506021318868L;
-            super((JTextArea)Ref.g(209593506021318868L, var42));
+            // [VF-super] super((JTextArea)Ref.g(209593506021318868L, var42));
             long var45 = 160285884699057566L;
             JScrollPane var44 = var10019;
             Ref.s(160285884699057566L, var44, var45);
@@ -202,6 +205,7 @@ public class UpdateDialog extends JDialog implements CH {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void I(JTextArea var1) {
+      BadLocationException var10;
       int var9;
       String[] var10000 = y();
       int var3 = var1.getLineCount() - a(11841, 8627037662698472096L);
@@ -225,7 +229,6 @@ public class UpdateDialog extends JDialog implements CH {
             try {
                var9 = var1.getLineEndOffset(var3 - 1);
             } catch (BadLocationException var6) {
-      Object var10;
                var10 = var6;
                boolean var10001 = false;
                break label30;
@@ -237,7 +240,6 @@ public class UpdateDialog extends JDialog implements CH {
             var1.replaceRange("", 0, var8);
             return;
          } catch (BadLocationException var5) {
-      JPanel var10;
             var10 = var5;
             boolean var11 = false;
          }
@@ -248,12 +250,13 @@ public class UpdateDialog extends JDialog implements CH {
    }
 
    public void N(String var1) {
+      long var9;
       y();
       Object var4 = 209593506021318868L;
       ((JTextArea)Ref.g(209593506021318868L, var4)).append(var1);
       Object var6 = 209593506021318868L;
       Object[] var10004 = Registry.packArgs(Ref.g(209593506021318868L, var6));
-      long var9 = 584802178139769689L;
+      var9 = 584802178139769689L;
       Object[] var8 = var10004;
       Ref.h(584802178139769689L, var8, var9);
 
@@ -271,9 +274,10 @@ public class UpdateDialog extends JDialog implements CH {
    }
 
    public void C() {
+      Object[] var10;
       String[] var1 = y();
       long var16;
-      Object[] var10000 = (var16 = System.currentTimeMillis() - Registry.lookupField(633275544900052147L).getLong(this)) == 0L ? 0 : (var16 < 0L ? -1 : 1);
+      Object var10000 = (var16 = System.currentTimeMillis() - Registry.lookupField(633275544900052147L).getLong(this)) == 0L ? 0 : (var16 < 0L ? -1 : 1);
       if (var1 == null) {
          if (!(var10000 > 0)) {
             return;
@@ -312,7 +316,7 @@ public class UpdateDialog extends JDialog implements CH {
       Ref.g(354794456661762655L, var8);
       Object[] var15 = Registry.emptyArgs();
       long var11 = 119751058421524022L;
-      Object[] var10 = var15;
+      var10 = var15;
       Ref.h(119751058421524022L, var10, var11);
 
       try {
@@ -324,11 +328,12 @@ public class UpdateDialog extends JDialog implements CH {
 
    @Override
    public void setVisible(boolean var1) {
+      UpdateDialog var9;
       String[] var10000 = y();
       Object var3 = this.isVisible();
       super.setVisible((boolean)var1);
       String[] var2 = var10000;
-      UpdateDialog var9 = (UpdateDialog)var1;
+      var9 = (UpdateDialog)var1;
       if (var2 == null) {
          if (var1 != false) {
             Registry.lookupField(356414783958618676L).setBoolean(this, true);
@@ -373,27 +378,38 @@ public class UpdateDialog extends JDialog implements CH {
    }
 
    public void N() {
+      boolean var176;
+      boolean var194;
+      boolean var198;
+      boolean var202;
+      Long var205;
+      boolean var216;
+      boolean var219;
+      boolean var222;
+      Long var224;
+      long var63;
+      long var9;
       y();
       String var2 = a(25131, 20027);
       Object var6 = 354794456661762655L;
       Ref.g(354794456661762655L, var6);
-      Y7 var10003 = (Y7)(Registry.emptyArgs());
-      long var9 = 187528749319748416L;
-      Object[] var8 = var10003;
+      UpdateManifestLegacy var10003 = (UpdateManifestLegacy)(Registry.emptyArgs());
+      var9 = 187528749319748416L;
+      Object var8 = var10003;
       var10003 = Ref.h(187528749319748416L, var8, var9);
 
       try {
-         var10003 = (Y7)var10003;
+         var10003 = (UpdateManifestLegacy)var10003;
       } catch (InvocationTargetException var160) {
          throw var160.getTargetException();
       }
 
-      Y7 var3 = var10003;
+      UpdateManifestLegacy var3 = var10003;
       Object var10 = 354794456661762655L;
       Object var10004 = Ref.g(354794456661762655L, var10);
       String var10005 = (String)(Registry.emptyArgs());
       long var13 = 384899068105386845L;
-      Object[] var12 = var10005;
+      Object var12 = var10005;
       var10005 = Ref.h(384899068105386845L, var12, var13);
 
       try {
@@ -409,7 +425,7 @@ public class UpdateDialog extends JDialog implements CH {
          Ref.g(354794456661762655L, var14);
          Boolean var10006 = (Boolean)(Registry.emptyArgs());
          long var17 = 262117569331123961L;
-         Object[] var16 = var10006;
+         Object var16 = var10006;
          var10006 = Ref.h(262117569331123961L, var16, var17);
 
          try {
@@ -466,7 +482,7 @@ public class UpdateDialog extends JDialog implements CH {
                      new StringBuilder().append(a(25148, -15329));
                      String var171 = (String)(Registry.emptyArgs());
                      long var27 = 226996047220245423L;
-                     Object[] var26 = var171;
+                     Object var26 = var171;
                      var171 = Ref.h(226996047220245423L, var26, var27);
 
                      try {
@@ -480,9 +496,9 @@ public class UpdateDialog extends JDialog implements CH {
 
                   Object var28 = 354794456661762655L;
                   Ref.g(354794456661762655L, var28);
-                  Object[] var174 = Registry.emptyArgs();
+                  Object var174 = Registry.emptyArgs();
                   long var31 = 529735557312904033L;
-                  Object[] var30 = var174;
+                  Object var30 = var174;
                   var174 = Ref.h(529735557312904033L, var30, var31);
 
                   try {
@@ -498,7 +514,7 @@ public class UpdateDialog extends JDialog implements CH {
                         Object var10010 = Ref.g(354794456661762655L, var32);
                         String var10011 = (String)(Registry.emptyArgs());
                         long var35 = 183894823848696366L;
-                        Object[] var34 = var10011;
+                        Object var34 = var10011;
                         var10011 = Ref.h(183894823848696366L, var34, var35);
 
                         try {
@@ -510,9 +526,9 @@ public class UpdateDialog extends JDialog implements CH {
                         var10010.append((String)var10011).append(" ");
                         Object var36 = 354794456661762655L;
                         Ref.g(354794456661762655L, var36);
-                        Object[] var10013 = Registry.emptyArgs();
+                        Object var10013 = Registry.emptyArgs();
                         long var39 = 510595481607148382L;
-                        Object[] var38 = var10013;
+                        Object var38 = var10013;
                         var10013 = Ref.h(510595481607148382L, var38, var39);
 
                         try {
@@ -534,9 +550,9 @@ public class UpdateDialog extends JDialog implements CH {
                         var10013.append((String)var10014).append("/");
                         Object var42 = 354794456661762655L;
                         Ref.g(354794456661762655L, var42);
-                        Object[] var10016 = Registry.emptyArgs();
+                        Object var10016 = Registry.emptyArgs();
                         long var45 = 295779105922796909L;
-                        Object[] var44 = var10016;
+                        Object var44 = var10016;
                         var10016 = Ref.h(295779105922796909L, var44, var45);
 
                         try {
@@ -668,8 +684,8 @@ public class UpdateDialog extends JDialog implements CH {
                Object var60 = 354794456661762655L;
                Object var190 = Ref.g(354794456661762655L, var60);
                boolean var10012 = (boolean)Registry.emptyArgs();
-               long var63 = 539567672930282978L;
-               Object[] var62 = var10012;
+               var63 = 539567672930282978L;
+               Object var62 = var10012;
                var10012 = Ref.h(539567672930282978L, var62, var63);
 
                try {
@@ -719,7 +735,7 @@ public class UpdateDialog extends JDialog implements CH {
                Object var210 = Ref.g(354794456661762655L, var70);
                boolean var10015 = (boolean)Registry.emptyArgs();
                long var73 = 539567672930282978L;
-               Object[] var72 = var10015;
+               Object var72 = var10015;
                var10015 = Ref.h(539567672930282978L, var72, var73);
 
                try {
@@ -805,7 +821,7 @@ public class UpdateDialog extends JDialog implements CH {
                Object var191 = Ref.g(354794456661762655L, var86);
                boolean var196 = (boolean)Registry.emptyArgs();
                long var89 = 539567672930282978L;
-               Object[] var88 = var196;
+               Object var88 = var196;
                var196 = Ref.h(539567672930282978L, var88, var89);
 
                try {
@@ -855,7 +871,7 @@ public class UpdateDialog extends JDialog implements CH {
                Object var213 = Ref.g(354794456661762655L, var96);
                boolean var217 = (boolean)Registry.emptyArgs();
                long var99 = 539567672930282978L;
-               Object[] var98 = var217;
+               Object var98 = var217;
                var217 = Ref.h(539567672930282978L, var98, var99);
 
                try {
@@ -938,9 +954,9 @@ public class UpdateDialog extends JDialog implements CH {
             JButton var187 = (JButton)Ref.g(484654819353749686L, var110);
             Object var112 = 354794456661762655L;
             Object var192 = Ref.g(354794456661762655L, var112);
-            Object[] var200 = Registry.emptyArgs();
+            Object var200 = Registry.emptyArgs();
             long var115 = 262117569331123961L;
-            Object[] var114 = var200;
+            Object var114 = var200;
             var200 = Ref.h(262117569331123961L, var114, var115);
 
             try {
@@ -960,7 +976,7 @@ public class UpdateDialog extends JDialog implements CH {
             Object var214 = Ref.g(354794456661762655L, var118);
             boolean var220 = (boolean)Registry.emptyArgs();
             long var121 = 539567672930282978L;
-            Object[] var120 = var220;
+            Object var120 = var220;
             var220 = Ref.h(539567672930282978L, var120, var121);
 
             try {
@@ -1858,6 +1874,8 @@ public class UpdateDialog extends JDialog implements CH {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      byte[] var9;
       String[] var15 = new String[19];
       int var13 = 0;
       r(null);
@@ -1874,7 +1892,6 @@ public class UpdateDialog extends JDialog implements CH {
          byte var10002 = -1;
 
          while (true) {
-      long var33;
             label56: {
                char[] var38 = var10001.toCharArray();
                int var10004 = var38.length;
@@ -1962,7 +1979,7 @@ public class UpdateDialog extends JDialog implements CH {
                      do {
                         byte var26 = var4;
                         var4 += 8;
-                        byte[] var9 = var6.substring(var26, var4).getBytes("ISO-8859-1");
+                        var9 = var6.substring(var26, var4).getBytes("ISO-8859-1");
                         int var27 = var5++;
                         long var51 = (
                               ((long)var9[0] & 255L) << 56

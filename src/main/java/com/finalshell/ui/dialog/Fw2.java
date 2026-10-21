@@ -20,6 +20,7 @@ public class Fw2 extends ClearListDialog {
 
    public Fw2(String var1, EditPanel var2, Dv2 var3) {
       super(var3, true);
+      long var11;
       Object[] var10001 = Registry.packArgs(b(29988, 1516009930303765884L), b(19668, 4005540325463934093L));
       long var5 = 620992058944098515L;
       Object[] var4 = var10001;
@@ -36,7 +37,7 @@ public class Fw2 extends ClearListDialog {
       long var9 = 426573730261755490L;
       Ref.s(426573730261755490L, var2, var9);
       Object[] var10004 = Registry.packArgs(false);
-      long var11 = 482653304504628027L;
+      var11 = 482653304504628027L;
       Object[] var10 = var10004;
       Ref.h(482653304504628027L, var10, var11);
 
@@ -135,7 +136,7 @@ public class Fw2 extends ClearListDialog {
       Object var7 = 187140034186517946L;
       Dx4_2 var10003 = Registry.packArgs(Ref.g(187140034186517946L, var7));
       long var10 = 242040625560871861L;
-      Object[] var9 = var10003;
+      Object var9 = var10003;
       var10003 = Ref.h(242040625560871861L, var9, var10);
 
       try {
@@ -149,6 +150,7 @@ public class Fw2 extends ClearListDialog {
 
    @Override
    public void L(String var1) {
+      boolean var11;
       Registry.packArgs(var1);
       long var3 = 330094358428833085L;
       Object var10001 = Ref.h2(330094358428833085L, var3);
@@ -180,6 +182,7 @@ public class Fw2 extends ClearListDialog {
 
    @Override
    public void i(L1 var1, int var2) {
+      long var11;
       Object[] var10001 = Registry.emptyArgs();
       long var4 = 247369048764074052L;
       Object[] var3 = var10001;
@@ -210,7 +213,7 @@ public class Fw2 extends ClearListDialog {
       }
 
       Registry.emptyArgs();
-      long var11 = 270389152141252877L;
+      var11 = 270389152141252877L;
       Ref.h2(270389152141252877L, var11);
       Object[] var10006 = Registry.emptyArgs();
       long var14 = 612604310671515822L;
@@ -245,7 +248,7 @@ public class Fw2 extends ClearListDialog {
       Dv2 var10002 = (Dv2)Ref.g(334241381080505095L, var4);
       String var10004 = (String)(Registry.emptyArgs());
       long var7 = 542058094445767607L;
-      Object[] var6 = var10004;
+      Object var6 = var10004;
       var10004 = Ref.h(542058094445767607L, var6, var7);
 
       try {

@@ -27,6 +27,8 @@ public class Ic2 implements CaretListener {
 
    @Override
    public void caretUpdate(CaretEvent var1) {
+      int var11;
+      Ic2 var14;
       String var2;
       Kz4 var9;
       label99: {

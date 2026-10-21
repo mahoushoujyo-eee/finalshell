@@ -1564,6 +1564,7 @@ public class W42 implements UL_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[25];
       int var11 = 0;
       String var10 = "9\u008895Ù¦Ê;\u0007I²,\u008a~ú\u0092\u0002e]\u0006\u0087ç+\u007f+Q\u0006_;\u000b¯|T\u0006g\u0084\b\\\u0018.\u0006asóé4\u0087\u0002\u001f\u001a\u0002.\u0095\u0004\u00adòö\u0098\u0003û¬p\u0004\u0086P\u0093Ì\u0005\"a\u009eu÷\u0007\u001c¬\u0082M¯\u0006¬¸Z%WÃ,ì\u0095ËQs\u0014ÔZ7ìwI¸Âîøa_ÉR¨\u0084ìþÕü\u0011\b\u0094>õ\u0086ùKjÖÜå²¾ÎG(}\u0090\u0011\u00ad\u0097y\u0086>_\u0086\t\u00167ÜG\u0018©1ÓÊ8d\u0084å¢\u0004¸r&Í}\u008dí ß\r\u0083f¥b$.N\u009e\u00979À·R?OÚ³eæ6\u00139©ÃI£\u0086$¿\r©±:\u001f»\u0001ü\"\u0081ØR\u00021\u0087\u0090^\u0082©\u0099H\u000eBÿðf©PäÀ¢sÈ@\u0010g\u008a\u0099\f0\\M^Mjrâ\u001e\u0015)\u0007\u0015Ê\\LØÖ¹\u009f<\u0000\u0090\u009e\t\u0018¿\u0004ÿvÞ\u000b\u0004k8*Å\u0005\u0091Bì\u0015½\u0004'XæÇ\bñ\u0013$B~L:b\u0004è§Z6\u00035\u0081\u00ad\u0006½XSÇs]\u0004¿@ñÀ";
@@ -1579,7 +1580,6 @@ public class W42 implements UL_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

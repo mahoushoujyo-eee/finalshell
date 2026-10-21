@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -58,7 +58,7 @@ public class Z5_2 implements LayoutManager {
       while (var6 < var5) {
          label33: {
             Component var7 = var4[var6];
-            boolean var16 = var7.getClass().equals(Connection5.class);
+            boolean var16 = var7.getClass().equals(ImportExportPanel.class);
             if (var2 == null) {
                if (var16) {
                   Km2 var10001 = (Km2)var7;

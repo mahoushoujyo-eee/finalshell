@@ -39,6 +39,8 @@ public class K52 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      Integer var146;
+      Integer var149;
       Registry.emptyArgs();
       long var10 = 270389152141252877L;
       Ref.h2(270389152141252877L, var10);
@@ -50,25 +52,25 @@ public class K52 implements ActionListener {
       long var15 = 240567170779145617L;
       Object[] var14 = var10003;
       Ref.h(240567170779145617L, var14, var15);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var17 = 226341449505323490L;
-      Object[] var16 = var10004;
+      Object var16 = var10004;
       var10004 = Ref.h(226341449505323490L, var16, var17);
 
       try {
-         var10004 = (com.finalshell.ui.frame.U)var10004;
+         var10004 = (com.finalshell.ui.frame.MainFrame)var10004;
       } catch (InvocationTargetException var126) {
          throw var126.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var3 = var10004;
+      com.finalshell.ui.frame.MainFrame var3 = var10004;
       SelectDownloadFolderPanel.O$arrint();
       Object var18 = 529591097353700130L;
       Ref.g(529591097353700130L, var18);
       Object var20 = 121991795061046485L;
-      Object[] var10008 = Registry.packArgs(Ref.g(121991795061046485L, var20), var3);
+      Object var10008 = Registry.packArgs(Ref.g(121991795061046485L, var20), var3);
       long var23 = 596842460043417062L;
-      Object[] var22 = var10008;
+      Object var22 = var10008;
       Ref.h(596842460043417062L, var22, var23);
 
       try {
@@ -79,7 +81,7 @@ public class K52 implements ActionListener {
 
       var10008 = Registry.emptyArgs();
       long var25 = 418327897845479655L;
-      Object[] var24 = var10008;
+      Object var24 = var10008;
       var10008 = Ref.h(418327897845479655L, var24, var25);
 
       try {
@@ -93,7 +95,7 @@ public class K52 implements ActionListener {
          if (var5 == Registry.lookupField(564170828581134815L).getInt(null)) {
             String var10009 = (String)(Registry.emptyArgs());
             long var27 = 191095475795927576L;
-            Object[] var26 = var10009;
+            Object var26 = var10009;
             var10009 = Ref.h(191095475795927576L, var26, var27);
 
             try {
@@ -105,9 +107,9 @@ public class K52 implements ActionListener {
             String var6 = var10009;
             Object var28 = 122366408558848086L;
             Ref.g(122366408558848086L, var28);
-            Object[] var10011 = Registry.packArgs(var6);
+            Object var10011 = Registry.packArgs(var6);
             long var31 = 610893823161621108L;
-            Object[] var30 = var10011;
+            Object var30 = var10011;
             var10011 = Ref.h(610893823161621108L, var30, var31);
 
             try {
@@ -145,9 +147,9 @@ public class K52 implements ActionListener {
 
             Object var40 = 529591097353700130L;
             Ref.g(529591097353700130L, var40);
-            Object[] var10017 = Registry.packArgs(var6);
+            Object var10017 = Registry.packArgs(var6);
             long var43 = 491105122976850438L;
-            Object[] var42 = var10017;
+            Object var42 = var10017;
             var10017 = Ref.h(491105122976850438L, var42, var43);
 
             try {
@@ -182,9 +184,9 @@ public class K52 implements ActionListener {
                   JPopupMenu var10023 = (JPopupMenu)Ref.g(578022464992353597L, var54);
                   Object var56 = 122366408558848086L;
                   Object var10026 = Ref.g(122366408558848086L, var56);
-                  Object[] var10027 = Registry.emptyArgs();
+                  Object var10027 = Registry.emptyArgs();
                   long var59 = 284002349345105786L;
-                  Object[] var58 = var10027;
+                  Object var58 = var10027;
                   var10027 = Ref.h(284002349345105786L, var58, var59);
 
                   try {
@@ -214,9 +216,9 @@ public class K52 implements ActionListener {
                   JPopupMenu var10019 = (JPopupMenu)Ref.g(578022464992353597L, var70);
                   Object var72 = 122366408558848086L;
                   Object var143 = Ref.g(122366408558848086L, var72);
-                  Object[] var144 = Registry.emptyArgs();
+                  Object var144 = Registry.emptyArgs();
                   long var75 = 284002349345105786L;
-                  Object[] var74 = var144;
+                  Object var74 = var144;
                   var144 = Ref.h(284002349345105786L, var74, var75);
 
                   try {

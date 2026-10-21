@@ -890,6 +890,7 @@ public class P2_5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "\u0097ò@\u000f\u008aõ8²á\u0002Ê¾";
@@ -904,7 +905,6 @@ public class P2_5 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

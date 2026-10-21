@@ -16,12 +16,13 @@ public class Yn2 implements Runnable {
 
    @Override
    public void run() {
+      int var14;
       boolean var1 = Ln4_2.R();
       Object var3 = 129595593052585232L;
       Ref.g(129595593052585232L, var3);
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var6 = 349012733953542138L;
-      Object[] var5 = var10002;
+      Object var5 = var10002;
       var10002 = Ref.h(349012733953542138L, var5, var6);
 
       try {

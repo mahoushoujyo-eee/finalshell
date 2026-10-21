@@ -19,6 +19,7 @@ public class OK3 implements Runnable {
 
    @Override
    public void run() {
+      Integer var26;
       label52: {
          String var1 = Vn2.C();
          Object var3 = 288985563586479085L;
@@ -61,9 +62,9 @@ public class OK3 implements Runnable {
          Ty4 var23 = (Ty4)Ref.g(288985563586479085L, var11);
       }
 
-      Object[] var24 = Registry.emptyArgs();
+      Object var24 = Registry.emptyArgs();
       long var14 = 542590257020999358L;
-      Object[] var13 = var24;
+      Object var13 = var24;
       var24 = Ref.h(542590257020999358L, var13, var14);
 
       try {

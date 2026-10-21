@@ -32,6 +32,7 @@ public class O_2_4 implements H4_2 {
 
    @Override
    public String toString() {
+      StringBuilder var6;
       String var2 = "@" + F0_2.F(Ht2_2.j(this.i).S$String(this.o.B));
       String[] var10000 = RG_2.C();
       StringBuilder var3 = null;
@@ -40,7 +41,6 @@ public class O_2_4 implements H4_2 {
 
       while (true) {
          if (var4.hasNext()) {
-      StringBuilder var6;
             Entry var5 = (Entry)var4.next();
             var6 = var3;
             if (var1 == null) {
@@ -61,7 +61,6 @@ public class O_2_4 implements H4_2 {
 
             var3.append((String)var5.getKey()).append(a(30399, -3539)).append(var5.getValue());
             if (var1 != null) {
-      StringBuilder var6;
                continue;
             }
          }
@@ -91,6 +90,7 @@ public class O_2_4 implements H4_2 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ 30399) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -871,7 +871,7 @@ public class O_2_4 implements H4_2 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -988,7 +988,6 @@ public class O_2_4 implements H4_2 {
       }
    }
 }
-
 
 
 

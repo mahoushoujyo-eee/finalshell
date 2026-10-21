@@ -14,6 +14,7 @@ public class Tn2 {
    public static Integer[] b;
 
    public byte[] G(byte[] var1, UD3 var2) {
+      Integer var48;
       int[] var3 = new int[a(6832, 5874474620014300320L)];
       Registry.packArgs(var1);
       long var11 = 512736053921422101L;
@@ -26,9 +27,9 @@ public class Tn2 {
       }
 
       int[] var4 = (int[])var10001;
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var14 = 250599912893926029L;
-      Object[] var13 = var10002;
+      Object var13 = var10002;
       var10002 = Ref.h(250599912893926029L, var13, var14);
 
       try {
@@ -50,9 +51,9 @@ public class Tn2 {
 
          var7 += var6;
          if (var6 == var5) {
-            Object[] var10003 = Registry.packArgs(var3);
+            Object var10003 = Registry.packArgs(var3);
             long var16 = 193381276319214693L;
-            Object[] var15 = var10003;
+            Object var15 = var10003;
             Ref.h(193381276319214693L, var15, var16);
 
             try {
@@ -66,9 +67,9 @@ public class Tn2 {
       }
 
       int var10004 = var3[var6];
-      Object[] var10006 = Registry.emptyArgs();
+      Object var10006 = Registry.emptyArgs();
       long var18 = 128251248314931182L;
-      Object[] var17 = var10006;
+      Object var17 = var10006;
       var10006 = Ref.h(128251248314931182L, var17, var18);
 
       try {
@@ -117,7 +118,7 @@ public class Tn2 {
       ByteArrayOutputStream var39 = new ByteArrayOutputStream();
       var10006 = Registry.emptyArgs();
       long var26 = 191459104244495531L;
-      Object[] var25 = var10006;
+      Object var25 = var10006;
       var10006 = Ref.h(191459104244495531L, var25, var26);
 
       try {
@@ -300,6 +301,7 @@ public class Tn2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long var48;
       char[] var10003 = ":v\u001e%(\u0000\u001d?~\u001d\")\u0007\u0010>{\u001b'/\u0002".toCharArray();
       int var10004 = var10003.length;
       int var9 = 0;
@@ -503,7 +505,7 @@ public class Tn2 {
                   byte var39 = -1;
 
                   while (true) {
-                     long var48 = var32 ^ var0;
+                     var48 = var32 ^ var0;
                      switch (var39) {
                         case 0:
                            var10000[var23] = var48;

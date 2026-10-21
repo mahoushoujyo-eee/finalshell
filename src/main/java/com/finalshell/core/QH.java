@@ -530,6 +530,9 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
 
    @Override
    public void h() {
+      Insets var10;
+      Insets var11;
+      Insets var9;
       boolean var1;
       QH var7;
       label131: {
@@ -583,7 +586,6 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
       Insets var8 = var4;
       if (var1) {
          if (var4 != null) {
-      boolean var9;
             int var16;
             int var10001;
             label104: {
@@ -595,7 +597,6 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                   var9 = var2;
                   var10001 = var2.left;
                   if (var3) {
-      boolean var10;
                      var16 = var4.left;
                      break label104;
                   }
@@ -708,6 +709,9 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
 
    @Override
    public void paintSafely(Graphics var1) {
+      FontMetrics var10;
+      int var11;
+      int var31;
       Ne4.m$boolean();
       Object[] var10001 = Registry.packArgs(this.getComponent(), var1);
       long var12 = 135169693674870498L;
@@ -871,7 +875,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
       super.paintSafely(var1);
       if (var2 == null) {
          if (this.L(var3)) {
-            byte var19 = var3.getComponentOrientation().isLeftToRight();
+            byte var19 = (byte)((var3.getComponentOrientation().isLeftToRight()) ? 1 : 0);
             Rectangle var7 = this.getVisibleEditorRect();
             Shape var8 = RV.n(var4, var7);
             var10002 = this.S;
@@ -886,11 +890,10 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
             }
 
             String var9;
-            int var11;
             label210: {
                var4.setPaint((Paint)var10002);
                var9 = Cf4_2.X(this.Q);
-               FontMetrics var10 = var4.getFontMetrics();
+               var10 = var4.getFontMetrics();
                int var26 = this.a;
                if (var2 == null) {
                   if (this.a == 0) {
@@ -1850,12 +1853,17 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      int var11;
+      long[] var19;
+      char[] var33;
+      int var9;
       String[] var13 = new String[11];
-      int var11 = 0;
-      String var10 = "Ñ\u009589ò\u009a\u0014Ü\u00adIæ&\u0094Djÿ\u0011ÖMÛäó\u0094@\u0017=\u0090\u0007¯Líé<.e\u0006¤\u0088\u0096\u009a'î\u0014`IÞzÔ\u0007\u001a\u00184_¯\u0084ôÝ\u0016³üóª\f\u0007öuÆÎYÊÉ\u0007\u0017¬Ö\u009dZi\u000b\u0014tB1ÄMIX®½\u009fº\u0096*úê+\r¼\u008bã\bÐ\u000e51#W\u0088ø";
+      var11 = 0;
+      var10 = "Ñ\u009589ò\u009a\u0014Ü\u00adIæ&\u0094Djÿ\u0011ÖMÛäó\u0094@\u0017=\u0090\u0007¯Líé<.e\u0006¤\u0088\u0096\u009a'î\u0014`IÞzÔ\u0007\u001a\u00184_¯\u0084ôÝ\u0016³üóª\f\u0007öuÆÎYÊÉ\u0007\u0017¬Ö\u009dZi\u000b\u0014tB1ÄMIX®½\u009fº\u0096*úê+\r¼\u008bã\bÐ\u000e51#W\u0088ø";
       int var12 = "Ñ\u009589ò\u009a\u0014Ü\u00adIæ&\u0094Djÿ\u0011ÖMÛäó\u0094@\u0017=\u0090\u0007¯Líé<.e\u0006¤\u0088\u0096\u009a'î\u0014`IÞzÔ\u0007\u001a\u00184_¯\u0084ôÝ\u0016³üóª\f\u0007öuÆÎYÊÉ\u0007\u0017¬Ö\u009dZi\u000b\u0014tB1ÄMIX®½\u009fº\u0096*úê+\r¼\u008bã\bÐ\u000e51#W\u0088ø"
          .length();
-      char var9 = 6;
+      var9 = 6;
       int var17 = -1;
 
       label70:
@@ -1954,7 +1962,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                         byte var26 = var2;
                         var2 += 8;
                         byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
-                        long[] var19 = var6;
+                        var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56
                            | ((long)var7[1] & 255L) << 48
@@ -2028,7 +2036,6 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
       }
    }
 }
-
 
 
 

@@ -44,6 +44,8 @@ public class Rm4 implements Cd4 {
 
    @Override
    public Vector e() {
+      Vector var7;
+      Vector var8;
       boolean var10000 = Dm4.F$boolean();
       Vector var2 = new Vector();
       boolean var1 = var10000;
@@ -51,7 +53,6 @@ public class Rm4 implements Cd4 {
 
       while (true) {
          if (var3 < this.v.size()) {
-      Vector var7;
             AB_2 var4 = (AB_2)this.v.elementAt(var3);
             var7 = var2;
             if (!var1) {
@@ -74,7 +75,6 @@ public class Rm4 implements Cd4 {
 
       while (true) {
          if (var6 < var5.size()) {
-      Vector var8;
             var8 = var2;
             if (!var1) {
                break;
@@ -186,7 +186,6 @@ public class Rm4 implements Cd4 {
       return var0;
    }
 }
-
 
 
 

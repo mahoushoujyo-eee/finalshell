@@ -1098,6 +1098,7 @@ public final class R9 implements Serializable, Cloneable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[9];
       int var3 = 0;
       String var2 = "ýñ;\u0091\u0002½ú\u0002¾\u0086\u0004q\u008d¼]\u0007¼$\u0019aâR\u0098\tûÉíjâ[»À\u0019\u0002Ø>";
@@ -1112,7 +1113,6 @@ public final class R9 implements Serializable, Cloneable {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

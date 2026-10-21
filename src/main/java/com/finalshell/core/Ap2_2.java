@@ -32,10 +32,13 @@ public class Ap2_2 {
    }
 
    public void t(char var1, int var2, boolean var3) {
+      int var10;
+      Ap2_2 var11;
+      byte var6;
       String[] var10000 = F();
       byte var5 = 1;
       String[] var4 = var10000;
-      byte var8 = (var3) ? 1 : 0;
+      byte var8 = (byte)((var3) ? 1 : 0);
       if (var4 == null) {
          if (var3 != 0) {
             var5 = 2;
@@ -47,7 +50,7 @@ public class Ap2_2 {
       label56: {
          label57: {
             label58: {
-               byte var6 = var8;
+               var6 = var8;
                Ow4 var9 = this.A;
                if (var4 == null) {
                   if (this.A != null) {
@@ -105,6 +108,7 @@ public class Ap2_2 {
    }
 
    public int x(int var1) {
+      int var6;
       String[] var10000 = F();
       byte var3 = -1;
       String[] var2 = var10000;
@@ -131,8 +135,6 @@ public class Ap2_2 {
             }
 
             if (var2 == null) {
-      byte var6;
-      byte var6;
                continue;
             }
          }
@@ -199,7 +201,6 @@ public class Ap2_2 {
       a = var10002;
    }
 }
-
 
 
 

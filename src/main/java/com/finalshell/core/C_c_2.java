@@ -269,6 +269,7 @@ public class C_c_2 extends BasicTextAreaUI implements L0_2, SwingConstants {
 
    @Override
    public void h() {
+      Insets var10;
       boolean var10000 = Ne4.A$boolean();
       JTextComponent var2 = this.getComponent();
       boolean var1 = var10000;
@@ -290,7 +291,7 @@ public class C_c_2 extends BasicTextAreaUI implements L0_2, SwingConstants {
       }
 
       Insets var3 = var7.getMargin();
-      byte var4 = (var2.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      byte var4 = (byte)((var2.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       Insets var8 = var3;
       if (var1) {
          var8 = var3 == null
@@ -304,8 +305,6 @@ public class C_c_2 extends BasicTextAreaUI implements L0_2, SwingConstants {
          Og4 var9 = this.K;
          if (var1) {
             if (this.K == null) {
-      Insets var10;
-      Insets var10;
                break label72;
             }
 
@@ -354,6 +353,8 @@ public class C_c_2 extends BasicTextAreaUI implements L0_2, SwingConstants {
 
    @Override
    public void paintSafely(Graphics var1) {
+      FontMetrics var10;
+      int var18;
       boolean var2;
       Graphics2D var3;
       JTextComponent var4;
@@ -407,7 +408,7 @@ public class C_c_2 extends BasicTextAreaUI implements L0_2, SwingConstants {
       super.paintSafely(var1);
       if (var2) {
          if (this.T(var4)) {
-            byte var6 = var4.getComponentOrientation().isLeftToRight();
+            byte var6 = (byte)((var4.getComponentOrientation().isLeftToRight()) ? 1 : 0);
             Rectangle var7 = this.getVisibleEditorRect();
             Shape var8 = RV.n(var3, var7);
             Font var10001 = this.H;
@@ -422,7 +423,6 @@ public class C_c_2 extends BasicTextAreaUI implements L0_2, SwingConstants {
             }
 
             String var9;
-            FontMetrics var10;
             int var11;
             label133: {
                var3.setPaint(var17);
@@ -1479,7 +1479,6 @@ public class C_c_2 extends BasicTextAreaUI implements L0_2, SwingConstants {
       }
    }
 }
-
 
 
 

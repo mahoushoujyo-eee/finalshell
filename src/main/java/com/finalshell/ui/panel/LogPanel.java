@@ -34,6 +34,8 @@ public class LogPanel extends JPanel {
    public static Integer[] d;
 
    public LogPanel() {
+      super();
+      long var30;
       Registry.lookupField(376642468236131701L).setBoolean(this, true);
       this.h = a(26660, 3010000648684305307L);
       this.setLayout(new MigLayout(a(23406, 21430), a(23404, -1626), a(23399, -8210)));
@@ -85,7 +87,7 @@ var10003 = new Ui2((String)var10004);
       Ref.h2(322267315291882359L, var22);
       JScrollPane var10011;
       Object var24 = 544408036581651484L;
-      super((JTextArea)Ref.g(544408036581651484L, var24));
+      // [VF-super] super((JTextArea)Ref.g(544408036581651484L, var24));
       long var27 = 291624504329155555L;
       JScrollPane var26 = var10011;
       Ref.s(291624504329155555L, var26, var27);
@@ -95,7 +97,7 @@ var10003 = new Ui2((String)var10004);
       this.add(var3, a(23397, 30026));
       JCheckBox var10013;
       Object[] var10014 = Registry.packArgs(a(23403, -22190));
-      long var30 = 517287540690064504L;
+      var30 = 517287540690064504L;
       Object var10015 = Ref.h2(517287540690064504L, var30);
 
       try {
@@ -170,6 +172,7 @@ var10014 = new FH((String)var10015, Registry.lookupField(376642468236131701L).ge
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void O(JTextArea var1) {
+      BadLocationException var10;
       int var10000 = User.c$int();
       int var3 = var1.getLineCount() - a(32221, 3889047184158191203L);
       int var2 = var10000;
@@ -192,7 +195,6 @@ var10014 = new FH((String)var10015, Registry.lookupField(376642468236131701L).ge
             try {
                var10000 = var1.getLineEndOffset(var3 - 1);
             } catch (BadLocationException var6) {
-      long var10;
                var10 = var6;
                boolean var10001 = false;
                break label30;
@@ -204,7 +206,6 @@ var10014 = new FH((String)var10015, Registry.lookupField(376642468236131701L).ge
             var1.replaceRange("", 0, var8);
             return;
          } catch (BadLocationException var5) {
-      JButton var10;
             var10 = var5;
             boolean var11 = false;
          }
@@ -1037,9 +1038,11 @@ var10014 = new FH((String)var10015, Registry.lookupField(376642468236131701L).ge
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var30;
       String[] var13 = new String[14];
       int var11 = 0;
-      String var10 = "6=?|'\u0004·Bzk¢!\u001f=øjµ\u008a\tEça:e\u008bê,KXs÷É\u0002§Æ(\u0098ÓÈ§w(ÐùôÁ,}\u0080õl,Tó\u009cÌxApx\u0019%ÿA·Ï¨6\u0000M/8?\u0082³D\u0011¨d&¡íßk\u0002¸1úb\bDÐM\u0018\u0002攺忰0Öý\u001f\u008fýYØT¢dQËDú«ÝZ(û\u009e¥§»\u0090²¹N\u0096Q\u0014+\u0010\u009cT\u0099\u001bà&\u0011 à\u008fÕé\u0018\fßc0\\°-b¶ R\\D²®õ«&\u0018ì¸ËÛ¬%üÂSÔ&{9¦àS°\u00951idT&dó¸xK÷Qñ\u000eO\u00164Ù\u008e~½aþ3\u000f,£\u0094/^Ï:}v°\u008eR¯\fcµLÛã\u0081°¦¶mûe(Æ,!^ä@ÏÂux_ZvK·\u0084\r>/\u0082a\u008b¼i¹Ià\u000f`àI\u0096ÔE\u001e\u009aI\u008c:\u009d\të¨x=\u00038o}$\f¸ç7\u0091\u008cÈ]\u008f\u000bHLÁ";
+      var10 = "6=?|'\u0004·Bzk¢!\u001f=øjµ\u008a\tEça:e\u008bê,KXs÷É\u0002§Æ(\u0098ÓÈ§w(ÐùôÁ,}\u0080õl,Tó\u009cÌxApx\u0019%ÿA·Ï¨6\u0000M/8?\u0082³D\u0011¨d&¡íßk\u0002¸1úb\bDÐM\u0018\u0002攺忰0Öý\u001f\u008fýYØT¢dQËDú«ÝZ(û\u009e¥§»\u0090²¹N\u0096Q\u0014+\u0010\u009cT\u0099\u001bà&\u0011 à\u008fÕé\u0018\fßc0\\°-b¶ R\\D²®õ«&\u0018ì¸ËÛ¬%üÂSÔ&{9¦àS°\u00951idT&dó¸xK÷Qñ\u000eO\u00164Ù\u008e~½aþ3\u000f,£\u0094/^Ï:}v°\u008eR¯\fcµLÛã\u0081°¦¶mûe(Æ,!^ä@ÏÂux_ZvK·\u0084\r>/\u0082a\u008b¼i¹Ià\u000f`àI\u0096ÔE\u001e\u009aI\u008c:\u009d\të¨x=\u00038o}$\f¸ç7\u0091\u008cÈ]\u008f\u000bHLÁ";
       int var12 = "6=?|'\u0004·Bzk¢!\u001f=øjµ\u008a\tEça:e\u008bê,KXs÷É\u0002§Æ(\u0098ÓÈ§w(ÐùôÁ,}\u0080õl,Tó\u009cÌxApx\u0019%ÿA·Ï¨6\u0000M/8?\u0082³D\u0011¨d&¡íßk\u0002¸1úb\bDÐM\u0018\u0002攺忰0Öý\u001f\u008fýYØT¢dQËDú«ÝZ(û\u009e¥§»\u0090²¹N\u0096Q\u0014+\u0010\u009cT\u0099\u001bà&\u0011 à\u008fÕé\u0018\fßc0\\°-b¶ R\\D²®õ«&\u0018ì¸ËÛ¬%üÂSÔ&{9¦àS°\u00951idT&dó¸xK÷Qñ\u000eO\u00164Ù\u008e~½aþ3\u000f,£\u0094/^Ï:}v°\u008eR¯\fcµLÛã\u0081°¦¶mûe(Æ,!^ä@ÏÂux_ZvK·\u0084\r>/\u0082a\u008b¼i¹Ià\u000f`àI\u0096ÔE\u001e\u009aI\u008c:\u009d\të¨x=\u00038o}$\f¸ç7\u0091\u008cÈ]\u008f\u000bHLÁ"
          .length();
       char var9 = ' ';
@@ -1052,7 +1055,6 @@ var10014 = new FH((String)var10015, Registry.lookupField(376642468236131701L).ge
          byte var10002 = -1;
 
          while (true) {
-      Object[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

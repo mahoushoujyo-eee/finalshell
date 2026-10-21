@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -12,7 +12,7 @@ public class AN implements Or2 {
    public static Integer[] b;
 
    @Override
-   public byte[] k(PingMessageR var1, byte[] var2) {
+   public byte[] k(PingMessageReceiver var1, byte[] var2) {
       ByteArrayOutputStream var3 = new ByteArrayOutputStream();
       GZIPOutputStream var4 = null;
 

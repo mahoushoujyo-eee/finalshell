@@ -580,6 +580,8 @@ public final class NE {
    }
 
    public static List x(String var0, String var1) {
+      String var6;
+      ArrayList var8;
       String var10000 = FV_2.D();
       List var3 = D(var0, var1);
       String var2 = var10000;
@@ -591,8 +593,7 @@ public final class NE {
 
          while (true) {
             if (var5.hasNext()) {
-      StringTokenizer var8;
-               String var6 = (String)var5.next();
+               var6 = (String)var5.next();
 
                try {
                   var8 = var4;
@@ -605,7 +606,6 @@ public final class NE {
                      continue;
                   }
                } catch (Gs2 var7) {
-      StringTokenizer var8;
                   throw a(var7);
                }
             }
@@ -937,6 +937,7 @@ public final class NE {
    }
 
    public static String O(String var0, int var1) {
+      StringBuilder var6;
       String var10000 = FV_2.D();
       StringBuilder var3 = new StringBuilder(var1);
       String var2 = var10000;
@@ -1547,6 +1548,8 @@ public final class NE {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
+      int var8;
       int var2 = (var0 ^ 31690) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -2327,13 +2330,13 @@ public final class NE {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -2370,6 +2373,9 @@ public final class NE {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var47;
+      long[] var6;
+      long var8;
       String[] var21 = new String[11];
       int var19 = 0;
       String var18 = "«LÙìÆ\u001a}¸\u007fìÌ\u001c¢Ô½\u0002ø¿\u0003%¡Û\u0003Y9q\u0002«³\u0002üø\u0003#\u001a\u001b\u0006$-á\u0087ZÐ\u0002]Q";
@@ -2461,7 +2467,7 @@ public final class NE {
                   if ((var26 += var17) >= var20) {
                      a = var21;
                      b = new String[11];
-                     long var8 = 8347981160931060230L;
+                     var8 = 8347981160931060230L;
                      long[] var14 = new long[37];
                      int var11 = 0;
                      String var12 = "2rÜ$¿Àé¯Úåò=áÐ»«\u0013U³\u008d\u008f\u0019²¯\u001a¡\u0093¶uR/¤×ëÔ\u007fJ\u008dÆ[\u00ad\u0006·×¿sÎo\u001fç\u0085ÊðVïöÚï\u008cÈ\u001c\\òÍ¡U\u0006«%¿ÔA^\bzV¿v\u0095oQ+i±çî7`\u0018\u0017z\u008eÉöò9\u008dl/P\u0005õ³1!ñ\u0084DøP\u0098\u0007X\u0086/:\u0094ÐAó\u00920þ7Øñbw\u008b\u0018´(\u0014G\u009d\u0007L\u0015,\u0003g2è\\\u00ad\u0011\u0091¡\u0007ÀV\u008a\u0081U _ö\u001b><£æ¶Y¬¥ &Z\u0094\u0082Vä\u0013\u0006Æ\u007fàß\u0002n6ò\u0092\u000e)®éÏ\u008bs¤\u0011Ð\u0003µ\u0096qX\u0019¬\u0096jÕ\u008fÒ(±ïÀ)\u0018\fÆí[9_\n:m¨øü\u009b¼¡\u009f\u009bA~Æ¼&z\u0002]xÃ\u008a\u008bÐ?Ø\u000b\r\"è\u0090 jëã\u0093R]õï\u008cÓÏÁ\u00ad\u00922\u0083l\u008eA§<\u008d\u0084ËÑ´¨°*V";
@@ -2495,7 +2501,7 @@ public final class NE {
                                     c = var14;
                                     d = new Integer[37];
                                     long var0 = 5299507507319969930L;
-                                    long[] var6 = new long[8];
+                                    var6 = new long[8];
                                     int var3 = 0;
                                     String var4 = "3\f,¼Ãà\u008dÂ\u001a´c\u0084\u0095ì\u009f\\cÕ|×Áâ¦4Yg\u0007Q¬ë+v}¥\u0094¥áåVí~äÁ\u0093Ýd\u0083d";
                                     int var5 = "3\f,¼Ãà\u008dÂ\u001a´c\u0084\u0095ì\u009f\\cÕ|×Áâ¦4Yg\u0007Q¬ë+v}¥\u0094¥áåVí~äÁ\u0093Ýd\u0083d".length();
@@ -2644,7 +2650,6 @@ public final class NE {
       }
    }
 }
-
 
 
 

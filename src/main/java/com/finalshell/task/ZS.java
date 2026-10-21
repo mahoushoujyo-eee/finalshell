@@ -21,7 +21,7 @@ public class ZS implements Runnable {
       Ref.g(144581259712304790L, var3);
       Ne4 var10003 = Registry.emptyArgs();
       long var6 = 150976763033464620L;
-      Object[] var5 = var10003;
+      Object var5 = var10003;
       var10003 = Ref.h(150976763033464620L, var5, var6);
 
       try {

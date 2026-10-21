@@ -140,6 +140,7 @@ public class N2 extends BasicSliderUI implements L0_2 {
    }
 
    public void h$void() {
+      Insets var7;
       int var1 = W();
       JSlider var10000 = this.slider;
       if (var1 != 0) {
@@ -150,13 +151,13 @@ public class N2 extends BasicSliderUI implements L0_2 {
          var10000 = this.slider;
       }
 
-      byte var5 = (FN.l((JComponent)var10000)) ? 1 : 0;
+      byte var5 = (byte)((FN.l((JComponent)var10000)) ? 1 : 0);
       if (var1 != 0) {
          if (var5 != 0) {
             return;
          }
 
-         var5 = (this.slider.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+         var5 = (byte)((this.slider.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       }
 
       byte var2 = var5;
@@ -164,7 +165,6 @@ public class N2 extends BasicSliderUI implements L0_2 {
       N2 var6 = this;
       if (var1 != 0) {
          if (this.q != null) {
-      Insets var7;
             Insets var4;
             int var8;
             int var10001;
@@ -484,7 +484,7 @@ public class N2 extends BasicSliderUI implements L0_2 {
    }
 
    public Shape l$Shape() {
-      int var1 = (W()) ? 1 : 0;
+      int var1 = W();
       int var10000 = (this.Y) ? 1 : 0;
       if (var1 != 0) {
          if (!this.Y) {
@@ -662,6 +662,7 @@ public class N2 extends BasicSliderUI implements L0_2 {
 
    @Override
    public void paintTrack(Graphics var1) {
+      N2 var12;
       int var10000 = W();
       Graphics2D var3 = (Graphics2D)var1;
       int var2 = var10000;
@@ -1785,7 +1786,9 @@ public class N2 extends BasicSliderUI implements L0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var7 = new String[4];
+      char[] var23;
+      String[] var7;
+      var7 = new String[4];
       int var5 = 0;
       String var4 = "®Å®}\u0003 ªÒý¯\u0000CÆo~:XTç?\u0014v@µÍ`6Æ\u0010p÷±Hð\u000e¸\u0016\u0080Ñü\u008f";
       int var6 = "®Å®}\u0003 ªÒý¯\u0000CÆo~:XTç?\u0014v@µÍ`6Æ\u0010p÷±Hð\u000e¸\u0016\u0080Ñü\u008f".length();
@@ -1800,7 +1803,6 @@ public class N2 extends BasicSliderUI implements L0_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

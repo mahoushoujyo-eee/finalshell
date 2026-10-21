@@ -1,12 +1,12 @@
 package com.finalshell.task;
 
-import com.finalshell.ui.dialog.DownloadDialog;
+import com.finalshell.ui.dialog.DownloadProgressDialog;
 import java.io.IOException;
 
 public class OL3 implements Runnable {
-   public final DownloadDialog R;
+   public final DownloadProgressDialog R;
 
-   public OL3(DownloadDialog var1) {
+   public OL3(DownloadProgressDialog var1) {
       this.R = var1;
    }
 

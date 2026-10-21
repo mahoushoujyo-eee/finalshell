@@ -8,9 +8,9 @@ import javax.swing.tree.DefaultMutableTreeNode;
 
 public class T02 implements Transferable {
    public DefaultMutableTreeNode[] f;
-   public final File8 M;
+   public final FileDropTransferHandler M;
 
-   public T02(File8 var1, DefaultMutableTreeNode[] var2) {
+   public T02(FileDropTransferHandler var1, DefaultMutableTreeNode[] var2) {
       this.M = var1;
       long var4 = 598588342391137217L;
       Ref.s(598588342391137217L, var2, var4);

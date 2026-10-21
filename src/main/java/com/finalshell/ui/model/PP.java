@@ -7,7 +7,7 @@ import java.util.Map;
 import javax.swing.ImageIcon;
 
 public final class PP {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -889,6 +889,7 @@ public final class PP {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[26];
       int var11 = 0;
       String var10 = "\"\"|c+\u0005Z\u0019íð\u007f\u000b\u0019\u0011\u001cn×\u0019\u0091¼ö\u001ft\u000e\u0090'pÏ»\u008d±³¨öëýÓ\u001d\u0005G\u0098m²j\u0003§\u001fY\u0005àB¯ù©\u0005£\u001c\nî^\u000b\u001dA\u0083ºëîn\u008d\t9\u008b\u0006ü\u008cD÷\u0080_\u0005¼²ê\u0099 \u0004±\u0013íÃ\u0004M\u001c6¾\f¢\u0092b³1Áy E:%-\u0007\bÌ÷:'±ñ\u0005µ«hÝ¨\u0004|\u007f;N\bý->\tÓ6\u0011Å\u0004Pý\u0092&\u0004\u0083ªfG\b\b[\u007fÃìîil\u0005ûT\u0002\u0088%\t©,îãÕÝ\rÃr\u0003I\u0090¾";
@@ -904,7 +905,6 @@ public final class PP {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

@@ -25,6 +25,7 @@ public final class Rv4 {
    }
 
    public static Rectangle t(Point[] var0) {
+      Rectangle var8;
       String var1 = FV_2.D();
       Point[] var10000 = var0;
       if (var1 == null) {
@@ -86,8 +87,6 @@ public final class Rv4 {
                            var2.y = var4.y;
                            var2.height += var6;
                            if (var1 == null) {
-      Rectangle var8;
-      Rectangle var8;
                               break label64;
                            }
                         }
@@ -247,6 +246,7 @@ public final class Rv4 {
    }
 
    public static Rectangle q(Rectangle var0) {
+      Rectangle var7;
       String var1;
       int var10000;
       var1 = FV_2.D();
@@ -280,7 +280,7 @@ public final class Rv4 {
 
       int var4 = var10000;
       int var5 = Math.abs(var0.height);
-      Rectangle var7 = var0;
+      var7 = var0;
       if (var1 == null) {
          if (var0.height < 0) {
             var4 -= var5;
@@ -469,7 +469,6 @@ public final class Rv4 {
       return var0 * 180.0 / Math.PI;
    }
 }
-
 
 
 

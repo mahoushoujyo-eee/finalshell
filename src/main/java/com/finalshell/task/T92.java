@@ -19,7 +19,7 @@ public class T92 implements Runnable {
       Ref.h2(270389152141252877L, var2);
       TextEditorFrame var10002 = (TextEditorFrame)(Registry.emptyArgs());
       long var5 = 176098798606098947L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       var10002 = Ref.h(176098798606098947L, var4, var5);
 
       try {

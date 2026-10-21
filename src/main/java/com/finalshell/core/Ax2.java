@@ -5,6 +5,7 @@ import java.util.List;
 
 public final class Ax2 {
    public static boolean Z(Object var0, Object[] var1) {
+      int var5;
       String var2 = FV_2.D();
       Object[] var10000 = var1;
       if (var2 == null) {
@@ -22,7 +23,7 @@ public final class Ax2 {
          if (var7 > 0) {
             Object[] var3 = var1;
             int var4 = var1.length;
-            int var5 = 0;
+            var5 = 0;
 
             while (var5 < var4) {
                Object var6 = var3[var5];
@@ -91,6 +92,7 @@ public final class Ax2 {
    }
 
    public static boolean f(String var0, List var1) {
+      boolean var5;
       String var10000 = FV_2.D();
       Iterator var3 = var1.iterator();
       String var2 = var10000;

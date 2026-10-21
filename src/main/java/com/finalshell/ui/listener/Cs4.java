@@ -24,6 +24,7 @@ public class Cs4 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      Integer var41;
       Object var6 = 145480031395295354L;
       Ref.g(145480031395295354L, var6);
       Object[] var10002 = Registry.e(System.currentTimeMillis());
@@ -43,7 +44,7 @@ public class Cs4 implements ActionListener {
       Lv4_2 var2 = ((ConnectionProperty)Ref.g(272626629694387105L, var12)).a();
       String var10005 = (String)(Registry.emptyArgs());
       long var15 = 432693308750455264L;
-      Object[] var14 = var10005;
+      Object var14 = var10005;
       var10005 = Ref.h(432693308750455264L, var14, var15);
 
       try {
@@ -77,9 +78,9 @@ public class Cs4 implements ActionListener {
 
       Object var24 = 388053628828140941L;
       Ref.g(388053628828140941L, var24);
-      Object[] var10012 = Registry.emptyArgs();
+      Object var10012 = Registry.emptyArgs();
       long var27 = 328118709254946779L;
-      Object[] var26 = var10012;
+      Object var26 = var10012;
       var10012 = Ref.h(328118709254946779L, var26, var27);
 
       try {
@@ -90,7 +91,7 @@ public class Cs4 implements ActionListener {
 
       var10012 = Registry.packArgs(var41 + 1);
       long var29 = 373772676770569629L;
-      Object[] var28 = var10012;
+      Object var28 = var10012;
       var10012 = Ref.h(373772676770569629L, var28, var29);
 
       try {

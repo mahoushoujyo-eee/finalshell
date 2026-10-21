@@ -14,9 +14,10 @@ public class Ji2 implements Fb2 {
 
    @Override
    public void O(Ty4 var1) {
-      Object[] var10001 = Registry.emptyArgs();
+      Integer var11;
+      Object var10001 = Registry.emptyArgs();
       long var3 = 542590257020999358L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(542590257020999358L, var2, var3);
 
       try {

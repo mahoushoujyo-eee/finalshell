@@ -311,6 +311,7 @@ public class V2 extends Lz2_2 implements LJ3 {
    }
 
    public Dimension K(JLabel var1) {
+      String var20;
       int[] var2;
       String var3;
       Icon var19;
@@ -342,7 +343,6 @@ public class V2 extends Lz2_2 implements LJ3 {
          var7 = var5.left + var5.right;
          var8 = var5.top + var5.bottom;
          if (var4 == null) {
-      String var20;
             var20 = var3;
             if (var2 == null) {
                if (var3 == null) {
@@ -357,7 +357,6 @@ public class V2 extends Lz2_2 implements LJ3 {
             }
 
             if (var20 != null && var6 == null) {
-      String var20;
                return new Dimension(var7, var8);
             }
          }
@@ -571,7 +570,6 @@ public class V2 extends Lz2_2 implements LJ3 {
       }
    }
 }
-
 
 
 

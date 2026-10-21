@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.Ub2;
 
 public final class X9 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -107,6 +107,7 @@ public final class X9 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var8 = new String[32];
       int var12 = 0;
       String var11 = "Ya;#\u0007Yc+.\u0002FB\u0005Yr($\u000b\u0004Yr($\u0004Yr;)\u0005Yb1.\u001c\u0005Yu6\"\t\u0004Yt5!\u0004Yw3)\u0006Yr5*\u001cC\u0006Yb3)\u0005[\u0005Yr($\u001b\u0005Yu;3\r\u0005Yw3+\t\u0005Yr($\t\u0004Yy??\u0005Yc/%}\bYr5*\u0001NXG\u0007Yb.#\t]D\u0004Yp9,\u0006Yc3)\u0005[\bYw(\"\tLXW\u0004Yu6\"\u0006Ys3)\u007f=\u0005Yr($\u001d\nYr2&\u0000CSMv?\u0005Yc/%|\u0005Yc*(\u001f\u0006Yp8(\u001e[\u0004Ys3)";
@@ -122,7 +123,6 @@ public final class X9 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

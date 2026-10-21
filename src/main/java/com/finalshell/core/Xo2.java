@@ -86,6 +86,7 @@ public class Xo2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void A(boolean var1) {
+      int var7;
       String var3 = this.x.toString();
       String[] var10000 = Wq2_2.y();
       String var4 = a;
@@ -126,7 +127,7 @@ public class Xo2 {
                      break label78;
                   }
 
-                  byte var11 = (Character.isLetterOrDigit(var3.charAt(this.f))) ? 1 : 0;
+                  byte var11 = (byte)((Character.isLetterOrDigit(var3.charAt(this.f))) ? 1 : 0);
                   if (var2 == null ? var11 == 0 && var4.indexOf(var3.charAt(this.f)) == -1 : var11 == -1) {
                      break label78;
                   }
@@ -193,7 +194,7 @@ public class Xo2 {
          }
 
          while (var6 < var10001) {
-            int var7 = (Character.isLetterOrDigit(var3.charAt(this.f))) ? 1 : 0;
+            var7 = (Character.isLetterOrDigit(var3.charAt(this.f))) ? 1 : 0;
             if (var2 == null) {
                if (var7 != 0) {
                   return;
@@ -241,7 +242,7 @@ public class Xo2 {
                         break label66;
                      }
 
-                     byte var9 = (Character.isLetterOrDigit(var3.charAt(this.f))) ? 1 : 0;
+                     byte var9 = (byte)((Character.isLetterOrDigit(var3.charAt(this.f))) ? 1 : 0);
                      if (var2 == null ? var9 == 0 && var4.indexOf(var3.charAt(this.f)) == -1 : var9 == -1) {
                         break label66;
                      }
@@ -271,7 +272,7 @@ public class Xo2 {
       String[] var10000 = Wq2_2.y();
       String var3 = this.x.toString();
       String[] var2 = var10000;
-      byte var6 = (var1) ? 1 : 0;
+      byte var6 = (byte)((var1) ? 1 : 0);
       if (var2 == null) {
          if (var1 == 0) {
             this.f--;
@@ -300,7 +301,7 @@ public class Xo2 {
 
             label55: {
                int var5 = var7;
-               byte var8 = (Character.isLetterOrDigit((char)var5)) ? 1 : 0;
+               byte var8 = (byte)((Character.isLetterOrDigit((char)var5)) ? 1 : 0);
                if (var2 == null) {
                   if (var8 != 0) {
                      var4 = 1;
@@ -324,7 +325,6 @@ public class Xo2 {
 
             this.f += var10002;
             if (var2 == null) {
-      int var7;
       int var7;
                continue;
             }
@@ -420,7 +420,6 @@ public class Xo2 {
       }
    }
 }
-
 
 
 

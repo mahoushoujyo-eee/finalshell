@@ -2,14 +2,14 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
 public class DO implements MouseMotionListener {
-   public final Connection4 F;
+   public final ConnectionInfoPanel F;
 
-   public DO(Connection4 var1) {
+   public DO(ConnectionInfoPanel var1) {
       this.F = var1;
    }
 

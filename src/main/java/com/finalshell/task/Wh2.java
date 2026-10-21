@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.connection.Mapping;
+import com.finalshell.connection.PortMapping;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.io.IOException;
@@ -10,9 +10,9 @@ import java.net.Socket;
 
 public class Wh2 implements Runnable {
    public final ServerSocket s;
-   public final Mapping t;
+   public final PortMapping t;
 
-   public Wh2(Mapping var1, ServerSocket var2) {
+   public Wh2(PortMapping var1, ServerSocket var2) {
       this.t = var1;
       this.s = var2;
    }

@@ -1,11 +1,11 @@
 package com.finalshell.task;
 
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 
 public class Te4 implements Runnable {
-   public final Ty2 j;
+   public final RemoteProcessManager j;
 
-   public Te4(Ty2 var1) {
+   public Te4(RemoteProcessManager var1) {
       this.j = var1;
    }
 

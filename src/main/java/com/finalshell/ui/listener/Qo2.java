@@ -2,7 +2,7 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import com.finalshell.ui.panel.ShowDeletedPanel;
 import com.finalshell.ui.panel.Tv2;
 import java.awt.event.ActionEvent;
@@ -10,11 +10,11 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Qo2 implements ActionListener {
-   public final Connection5 w;
+   public final ImportExportPanel w;
    public final ShowDeletedPanel l;
    public final Tv2 u;
 
-   public Qo2(Tv2 var1, Connection5 var2, ShowDeletedPanel var3) {
+   public Qo2(Tv2 var1, ImportExportPanel var2, ShowDeletedPanel var3) {
       this.u = var1;
       this.w = var2;
       this.l = var3;

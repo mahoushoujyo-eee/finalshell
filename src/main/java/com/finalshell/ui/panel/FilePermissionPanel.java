@@ -20,15 +20,15 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class FilePermissionPanel extends JPopupMenu {
-   public Connection4 d;
+   public ConnectionInfoPanel d;
    public TreePath w;
    public Tf4 G;
    public DefaultMutableTreeNode i;
    public static String[] a;
    public static String[] b;
 
-   public FilePermissionPanel(Connection4 var1, TreePath var2, Tf4 var3, DefaultMutableTreeNode var4) {
-      Connection4.I();
+   public FilePermissionPanel(ConnectionInfoPanel var1, TreePath var2, Tf4 var3, DefaultMutableTreeNode var4) {
+      ConnectionInfoPanel.I();
       long var7 = 128960385538717158L;
       Ref.s(128960385538717158L, var2, var7);
       long var9 = 305402254993059552L;
@@ -70,7 +70,7 @@ public class FilePermissionPanel extends JPopupMenu {
       Object var10005;
       label104: {
          label108: {
-            int[] var10000 = Connection4.I();
+            int[] var10000 = ConnectionInfoPanel.I();
             JMenuItem var2 = new JMenuItem(a(32334, 13760));
             var1 = var10000;
             Object var12 = 515525013030853953L;
@@ -180,7 +180,7 @@ public class FilePermissionPanel extends JPopupMenu {
             Ref.g(515525013030853953L, var32);
             String var10010 = (String)(Registry.emptyArgs());
             long var35 = 498856411508641826L;
-            Object[] var34 = var10010;
+            Object var34 = var10010;
             var10010 = Ref.h(498856411508641826L, var34, var35);
 
             try {
@@ -1032,6 +1032,7 @@ public class FilePermissionPanel extends JPopupMenu {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[10];
       int var3 = 0;
       String var2 = "勸隙\u0006勁敥l酖庵Ô\u0004妚勬趽彸\u0003酎吐吝\u0005敕廉攦任奥\u0002剄敆\u0002乬轨\u0005下侼©\f\u001f";
@@ -1046,7 +1047,6 @@ public class FilePermissionPanel extends JPopupMenu {
          byte var10002 = -1;
 
          while (true) {
-      Object var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

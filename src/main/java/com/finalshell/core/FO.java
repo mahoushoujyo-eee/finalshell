@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -24,7 +24,7 @@ public class FO {
    public String L;
    public int S;
    public int X;
-   public PingMessageR C;
+   public PingMessageReceiver C;
    public String a;
    public InetAddress f;
    public int R;
@@ -33,7 +33,7 @@ public class FO {
    public static String d;
    public static long e;
 
-   public FO(PingMessageR var1, String var2, int var3, F0 var4, InetAddress var5, int var6, String var7, int var8) {
+   public FO(PingMessageReceiver var1, String var2, int var3, F0 var4, InetAddress var5, int var6, String var7, int var8) {
       this.S = (int)e;
       this.t = -1;
       this.C = var1;
@@ -59,7 +59,7 @@ public class FO {
          var10.printStackTrace();
       }
 
-      PingMessageR.U.execute(new com.finalshell.task.L32(this));
+      PingMessageReceiver.U.execute(new com.finalshell.task.L32(this));
    }
 
    public void B(DatagramPacket var1) {

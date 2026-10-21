@@ -40,7 +40,7 @@ public class Cb_2 extends KeyAdapter {
       int var10000 = (Na4.e()) ? 1 : 0;
       Na4.q(this.L, FN.m(var1));
       Na4.f(this.L, FN.O(var1));
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       Na4.z(this.L, FN.y(var1));
       var10000 = var1.getKeyCode();
       int var10001 = a(3915, 1600315036027361801L);

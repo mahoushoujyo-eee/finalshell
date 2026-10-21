@@ -1330,6 +1330,7 @@ public class CC3 implements WE3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "L´¢Í¼3â$°\u008b\\mw\u0081E\u009f4\u0088\u0010ñ\u0013ck±fÿS\u0082Ïñ\u008b\u008c¯£S\nöóONÊ\u000eý'Ì¨\u0004d\u001d\r&";
@@ -1344,7 +1345,6 @@ public class CC3 implements WE3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

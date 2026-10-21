@@ -2628,6 +2628,7 @@ public class DelayedAckSACK {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var46;
       String[] var21 = new String[24];
       int var19 = 0;
       String var18 = "÷8i\u0007\u0083诺污稼厥tÍ\u0011\t7Æ\u009aõ\u0084~F»¸½Z-\u0093\u0097=\u009d\b\u009d\u0085d6\u0088ÖÂg\u000fq\t$\r½%ÌSn`á5¸Ý£\u0006杂刉穼提抶<\t硨诔帯述ò o\u00ad\u009e\u000bD\u0000º\u0017\u000e`\u00987Ã\t\u0090\bq\u001aùÅ;«·¨\u0006\\Þ¡-8ý\u0007F瘏梜窸号ä\u0087\u0013ÉÔ3¶_R\u0090½å½\u0090\u008e\u0096ª\u0019\u0096\u0083U?\u0012筕乘歕捯抄孉扃窫謶汒呆歅¾Ô\u0011\u009194\f\u0090õA{(0gU|\u0083u<\u0007jCpW®\u0017<\n硏譨廋轧n@þé\u0085A\u0002\u0099ò\u000e¤C¢¢\u0098üxøü³`úx\u001a\tL°¨\u0088:fòú¥\u0010筇价欗掲拌寲扊竜吭幪tJ\u0012©ìk\u0018筶主欱挞戈柈剄噆咨幎哨毊g帠謩沆呗欺'4e;á6\u0005赇斗酧厎Ø";
@@ -2643,7 +2644,6 @@ public class DelayedAckSACK {
          byte var10002 = -1;
 
          while (true) {
-      char[] var46;
             label83: {
                char[] var54 = var10001.toCharArray();
                int var10004 = var54.length;

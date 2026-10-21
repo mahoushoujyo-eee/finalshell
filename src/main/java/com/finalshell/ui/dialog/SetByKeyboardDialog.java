@@ -39,6 +39,7 @@ public class SetByKeyboardDialog extends JDialog {
 
    public SetByKeyboardDialog(SwitchTabCommand var1, ZG_2 var2, boolean var3) {
    super(SwingUtilities.getWindowAncestor(var1));
+   JTextField var37;
       String[] var4;
       label62: {
          String[] var10000 = SwitchTabCommand.B();
@@ -100,7 +101,7 @@ public class SetByKeyboardDialog extends JDialog {
       var7.add(new JLabel(a(-3819, -27897)), a(-3815, 10086));
       JTextField var10013 = new JTextField();
       long var38 = 429365332657596163L;
-      JTextField var37 = var10013;
+      var37 = var10013;
       Ref.s(429365332657596163L, var37, var38);
       Object var39 = 429365332657596163L;
       ((JTextField)Ref.g(429365332657596163L, var39)).setEditable(false);
@@ -171,7 +172,7 @@ public class SetByKeyboardDialog extends JDialog {
             JLabel var10029 = (JLabel)Ref.g(423082797457659284L, var71);
             String var10031 = (String)(Registry.emptyArgs());
             long var74 = 540131728661869699L;
-            Object[] var73 = var10031;
+            Object var73 = var10031;
             var10031 = Ref.h(540131728661869699L, var73, var74);
 
             try {
@@ -183,9 +184,9 @@ public class SetByKeyboardDialog extends JDialog {
             var2.setText(var10031);
             Object var75 = 429365332657596163L;
             JTextField var89 = (JTextField)Ref.g(429365332657596163L, var75);
-            Object[] var10033 = Registry.emptyArgs();
+            Object var10033 = Registry.emptyArgs();
             long var78 = 546345160214988812L;
-            Object[] var77 = var10033;
+            Object var77 = var10033;
             var10033 = Registry.packArgs(Ref.h(546345160214988812L, var77, var78));
             long var79 = 214304962730069281L;
             Object var10034 = Ref.h2(214304962730069281L, var79);
@@ -210,6 +211,7 @@ public class SetByKeyboardDialog extends JDialog {
    }
 
    public void D() {
+      Integer var37;
       Registry.emptyArgs();
       long var1 = 270389152141252877L;
       Ref.h2(270389152141252877L, var1);
@@ -272,9 +274,9 @@ public class SetByKeyboardDialog extends JDialog {
       Ref.g(184771138473043971L, var21);
       Object var23 = 140293464803714020L;
       Ref.g(140293464803714020L, var23);
-      Object[] var10014 = Registry.emptyArgs();
+      Object var10014 = Registry.emptyArgs();
       long var26 = 468069908955066583L;
-      Object[] var25 = var10014;
+      Object var25 = var10014;
       var10014 = Ref.h(468069908955066583L, var25, var26);
 
       try {
@@ -285,7 +287,7 @@ public class SetByKeyboardDialog extends JDialog {
 
       var10014 = Registry.packArgs(var37);
       long var28 = 221528496004086081L;
-      Object[] var27 = var10014;
+      Object var27 = var10014;
       Ref.h(221528496004086081L, var27, var28);
 
       try {
@@ -1116,6 +1118,8 @@ public class SetByKeyboardDialog extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      long var37;
       String[] var13 = new String[24];
       int var11 = 0;
       String var10 = "盋揨挀閾皶譱翝\u0002碃孪\u0011\u0001j\r\u0017\u008e«\u00ad\u0016aïõ¯zR\u0004h\u008e\nÛÂ\u009côU·S¨å¦\u0011´\u008b\u008c@¼û\u009c[QÜÝÝåvó¡\u000f\u0011a{4^é:6!\u0006\u0093u6ðISFY\u0004_Q\tú\u000eI*\u0004\u001f¯ª\u00897÷úf\u001f;C\u0017ÚÊ¼õQ\u0097Û¬ý&/Ó\u0003\u0010#nR®Iï\u009bÝ½\u000eö\u0088óKQ Vc\fÕ\u0019úÔÿ\u0011Ú&¥\u0013\b(ü\t\u0086ß\u0007F¦O@Ó^\u000e~\u0085âês\u0014\u0012à\u0084\u0000\b@ö¨\no´\u0013AÞn}Y\u0095}\u0005侭攞彷挶锐\u000bóø\u0099³õ_G²g\b|\u0004揲镯Vº\u0005敪帹弚捩閽\u0002叧浄\u0004撕俇æ\u0093\u000f\r\u001d·\u0091\u009c>pHÒ]\u0097ÏÚ§X\u001eÙ\u0098\u0016Ií`ÁnþÑG{\u000fþ©\f\u0018¢\u0000b\u0082\u0085¸\u0001K'ûÿöµ\n°[ñÇøÑædS?";
@@ -1131,7 +1135,6 @@ public class SetByKeyboardDialog extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      Object var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -1223,7 +1226,7 @@ public class SetByKeyboardDialog extends JDialog {
                         byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
-                        long var37 = ((long)var7[0] & 255L) << 56
+                        var37 = ((long)var7[0] & 255L) << 56
                            | ((long)var7[1] & 255L) << 48
                            | ((long)var7[2] & 255L) << 40
                            | ((long)var7[3] & 255L) << 32

@@ -405,6 +405,7 @@ public class FJ extends BasicPopupMenuUI implements SwingConstants, D7, W2_3, L0
 
    @Override
    public Popup getPopup(JPopupMenu var1, int var2, int var3) {
+      boolean var14;
       int[] var4 = Pb4.g();
       FJ var10000 = this;
       if (var4 != null) {
@@ -1336,6 +1337,8 @@ public class FJ extends BasicPopupMenuUI implements SwingConstants, D7, W2_3, L0
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var14;
+      char[] var20;
       String[] var5 = new String[22];
       int var3 = 0;
       String var2 = "ÔcM\\]dÕËzR\u0011k(º5£J\u0011h\u0080\u0098ò³\u0002\u0080\u008cJà\u000b³ú \u0082\u0091Ñrñg¥]\r\u000fX\u0099\u001a#\u008c\u0016å±k\u0006\u0093\u000f\u0014\u000b©¨öf\u009eõ\u0080óWÇùñË\u001dK\u0086|\u0099õ\u000bÎè.Ê@\u0093\\¿<±%\u000bY\u0080ýÍ:8\u0007ÌÉ\u0002\u0088\nnB\u001ax·à\u0088[Ñ@\u000f\u009dñeã)ýsq\u009e\u0003ÈZ\u008f;Ò\u000fú\u0005\u0089}´.À\u000bèL\u0006³V\u0006é\f©/\u0005\u0086BSêø\u0085æ+Ú\u0014ëa´ïå½\u0085äýÛ\u0006hÉù\u001a\rf´\u0085ì\u0007_E\u008b´ÒîÏ\nS\u0089Ï÷+&±\u001aPÛ\f\u0003.4~ÏÙÕ\nZ\r·À\u00071ÚFGk\u0090ø\u0005\u0018ºá\u008a_\u000bßw\f9\u0004íÔp-H\u0007\n^\u0018nÅ\u001f`7Ò\u0080Â\u0005òw¼3ô";
@@ -1351,14 +1354,13 @@ public class FJ extends BasicPopupMenuUI implements SwingConstants, D7, W2_3, L0
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;
                int var6 = 0;
                byte var27 = var10000;
                var20 = var24;
-               int var14 = var10004;
+               var14 = var10004;
                byte var32;
                char[] var36;
                int var10006;

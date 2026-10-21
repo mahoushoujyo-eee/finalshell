@@ -2,15 +2,15 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.PublicKey;
+import com.finalshell.ui.panel.ConnectionEditorPanel;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class MB implements ItemListener {
-   public final PublicKey h;
+   public final ConnectionEditorPanel h;
 
-   public MB(PublicKey var1) {
+   public MB(ConnectionEditorPanel var1) {
       this.h = var1;
    }
 

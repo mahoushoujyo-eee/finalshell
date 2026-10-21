@@ -131,7 +131,7 @@ public class SystemInfoPanel extends JPanel {
       Ref.s(351888682852198624L, var1, var5);
       ConnectionProperty var10003 = (ConnectionProperty)(Registry.emptyArgs());
       long var7 = 147203951713786110L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       var10003 = Ref.h(147203951713786110L, var6, var7);
 
       try {
@@ -171,7 +171,7 @@ public class SystemInfoPanel extends JPanel {
             ((KD)Ref.g(463553898644515337L, var14)).setVisible(true);
             String var10004 = (String)(Registry.emptyArgs());
             long var17 = 367865097688692441L;
-            Object[] var16 = var10004;
+            Object var16 = var10004;
             var10004 = Ref.h(367865097688692441L, var16, var17);
 
             try {
@@ -185,7 +185,7 @@ public class SystemInfoPanel extends JPanel {
                JLabel var10005 = (JLabel)Ref.g(138927541502642713L, var18);
                String var10007 = (String)(Registry.emptyArgs());
                long var21 = 367865097688692441L;
-               Object[] var20 = var10007;
+               Object var20 = var10007;
                var10007 = Ref.h(367865097688692441L, var20, var21);
 
                try {
@@ -1037,6 +1037,7 @@ public class SystemInfoPanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[17];
       int var11 = 0;
       String var10 = "Os¦È\u0082bye-L³\u0090\u0099ë<«¬Bl\u0098³¬·-\u0017\u000e\u00078|,Jñªá·\u0091\u001f\u0098),\r+Ê3\u0084J\u0084/|R.|\u0091\r\u0004糽縘佱悥\u0011W\u009d¼n»Ù\u0011Ü\u0089\u0017ÏB\u009a{zq¨\u0002奷剞\u0005ÏVR\u008a\u008d\"x°d\u0018LèÚ¦\u001d¸y}\u0088,9K\u0088$¹*\n\u0014¯~ÝGóû\u007f\u001a_ïÀ\u008e\u00050-\u00adår\u000eÕñ\u0016ÂiE\u0005]\u0095\u0007NKÔW\u0003r¾á\u0004 BÔ¥\u000e&±X\u001dÎ×:%¥\t]\u008baN\u0002J\u009c\u0016åT3áàYê\u0098<\u0005ì\u0081\u0093ô°øg\u00ad]6©8";
@@ -1052,7 +1053,6 @@ public class SystemInfoPanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

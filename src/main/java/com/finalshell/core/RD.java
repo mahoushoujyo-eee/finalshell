@@ -32,13 +32,13 @@ public final class RD extends RB {
 
    @C_9
    public C_9_2 o(String var1) {
+      C_9_2 var5;
       String[] var10000 = RG_2.C();
       Iterator var3 = this.l.iterator();
       String[] var2 = var10000;
 
       while (true) {
          if (var3.hasNext()) {
-      C_9_2 var5;
             C_9_2 var4 = (C_9_2)var3.next();
             var5 = var4;
             if (var2 == null) {

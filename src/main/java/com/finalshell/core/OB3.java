@@ -1231,6 +1231,7 @@ public class OB3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var40;
       String[] var21 = new String[16];
       int var19 = 0;
       String var18 = "¾N&Ë>\u008b X4×º¢Fc\u0003 ]p\u0018££\u0080\u001cÞ\u0011ë18èÃ&Ï½\u0006³\u0011Ð©\u008aç9LÛ\u001b.*oMv\u001f\u0011xBZOË\u0091¦®©N\u0099?´\u008dFØä\u0012\nÿ\u0003¨ßd\f¢ç{«ýjj\u000e\u0012fâ£\u000f(Mô«d\u0087kÙ]ç\u0097®â¢Å\u0003.\u0093¡\u0018Q*Þ-\u00157\u0092õ\u0017p&5sß\u0091ÿãY÷»,\u001f5\u001f\"kÆôP \u0001\"\u0080Én^\n\u00984ÃY\u000eVIà\u009c;\u0092j°Â><\t.ã\u0081ù^\u0003UÕÛ\u0005\u008b©\u000f3 \u0017}\u001bx\u0093-j»×\u0092\u008b|ZíyZ\u0017Äá\u008döa©¤\u000eÖ\u0096+Ð\u009fè\u00144²Zj\u0013\\U";
@@ -1246,7 +1247,6 @@ public class OB3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var40;
             label66: {
                char[] var44 = var10001.toCharArray();
                int var10004 = var44.length;

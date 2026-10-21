@@ -109,6 +109,7 @@ public class AS extends JPanel implements TableCellRenderer {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    @Override
    public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
+      Integer var78;
       String var7;
       label158: {
          var7 = Vn2.C();
@@ -124,7 +125,7 @@ public class AS extends JPanel implements TableCellRenderer {
          Lv4_2 var8 = (Lv4_2)var10000;
          String var10001 = (String)(Registry.emptyArgs());
          long var14 = 286931176286176762L;
-         Object[] var13 = var10001;
+         Object var13 = var10001;
          var10001 = Ref.h(286931176286176762L, var13, var14);
 
          try {
@@ -139,7 +140,7 @@ public class AS extends JPanel implements TableCellRenderer {
          Object var10 = null;
          String var10003 = (String)(Registry.emptyArgs());
          long var18 = 413442976446181537L;
-         Object[] var17 = var10003;
+         Object var17 = var10003;
          var10003 = Ref.h(413442976446181537L, var17, var18);
 
          try {
@@ -162,7 +163,7 @@ public class AS extends JPanel implements TableCellRenderer {
             Ref.h(410905379772103887L, var21, var22);
             LO3 var10006 = (LO3)(Registry.packArgs(var11));
             long var24 = 133273064107181210L;
-            Object[] var23 = var10006;
+            Object var23 = var10006;
             var10006 = Ref.h(133273064107181210L, var23, var24);
 
             try {
@@ -176,7 +177,7 @@ public class AS extends JPanel implements TableCellRenderer {
                new StringBuilder();
                String var10008 = (String)(Registry.emptyArgs());
                long var26 = 286931176286176762L;
-               Object[] var25 = var10008;
+               Object var25 = var10008;
                var10008 = Ref.h(286931176286176762L, var25, var26);
 
                try {
@@ -188,7 +189,7 @@ public class AS extends JPanel implements TableCellRenderer {
                var12 = var10.append((String)var10008).append("/").append(var12).toString();
                var10008 = Registry.emptyArgs();
                long var28 = 413442976446181537L;
-               Object[] var27 = var10008;
+               Object var27 = var10008;
                var10008 = Ref.h(413442976446181537L, var27, var28);
 
                try {
@@ -227,7 +228,7 @@ public class AS extends JPanel implements TableCellRenderer {
                         JLabel var75 = (JLabel)Ref.g(558115666774932292L, var31);
                         String var10010 = (String)(Registry.emptyArgs());
                         long var34 = 255973732097233937L;
-                        Object[] var33 = var10010;
+                        Object var33 = var10010;
                         var10010 = Ref.h(255973732097233937L, var33, var34);
 
                         try {
@@ -239,7 +240,7 @@ public class AS extends JPanel implements TableCellRenderer {
                         var8.setText(var10010);
                         var10010 = Registry.emptyArgs();
                         long var36 = 402271797068414482L;
-                        Object[] var35 = var10010;
+                        Object var35 = var10010;
                         var10010 = Ref.h(402271797068414482L, var35, var36);
 
                         try {
@@ -291,9 +292,9 @@ public class AS extends JPanel implements TableCellRenderer {
       Object var43 = 295365565062933336L;
       Color var59 = (Color)Ref.g(295365565062933336L, var43);
       if (var7 == null) {
-         Object[] var76 = Registry.emptyArgs();
+         Object var76 = Registry.emptyArgs();
          long var46 = 183196893795195206L;
-         Object[] var45 = var76;
+         Object var45 = var76;
          var76 = Ref.h(183196893795195206L, var45, var46);
 
          try {

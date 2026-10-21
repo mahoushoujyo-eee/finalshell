@@ -2,16 +2,16 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.panel.NetworkMonitorPanel;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 
 public class Xt2 implements Runnable {
-   public final U C;
+   public final MainFrame C;
 
-   public Xt2(U var1) {
+   public Xt2(MainFrame var1) {
       this.C = var1;
    }
 

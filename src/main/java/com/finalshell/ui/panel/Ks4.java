@@ -144,10 +144,11 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
    }
 
    public void H(int var1, boolean var2) {
+      int var4;
+      int var5;
       label105: {
          int var7;
          label108: {
-            byte var4;
             int var10001;
             label109: {
                int[] var3;
@@ -168,7 +169,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
                               break label110;
                            }
 
-                           int var5 = 0;
+                           var5 = 0;
 
                            while (var5 < this.y.size()) {
                               K32 var6 = (K32)this.y.get(var5);
@@ -303,12 +304,14 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
    }
 
    public K32 t(int var1, Component var2, Component var3) {
-      K32 var4 = new K32("", var3);
+      K32 var4;
+      var4 = new K32("", var3);
       var4.u(var2);
       return this.I(var1, var4);
    }
 
    public K32 I(int var1, K32 var2) {
+      DO3 var4;
       var2.l(this.v);
       int[] var10000 = K32.L$arrint();
       var2.x(this.w);
@@ -322,7 +325,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
          var2.B(new Kr2(this, var2));
       }
 
-      DO3 var4 = new DO3(this);
+      var4 = new DO3(this);
       var2.m(var4);
       this.C.add(var4);
       this.f(var1, new Component[]{var2});
@@ -374,6 +377,8 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
    }
 
    public void t() {
+      int var4;
+      int var5;
       int[] var10000 = K32.L$arrint();
       boolean var2 = this.G.equals(LX.united);
       int[] var1 = var10000;
@@ -383,14 +388,14 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
          var7 = this.T == 0 ? 1 : 0;
       }
 
-      int var4 = var7;
+      var4 = var7;
       int var10001 = (var2) ? 1 : 0;
       if (var1 != null) {
          var10001 = (!var2) ? 1 : 0;
       }
 
-      this.T((boolean)var10001);
-      int var5 = 0;
+      this.T(var10001);
+      var5 = 0;
 
       while (true) {
          if (var5 < this.y.size()) {
@@ -467,7 +472,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
                   var10002 = 0;
                }
 
-               var6.I((boolean)var10001, (boolean)((((var10002 != 0) != 0) != 0) != 0), false, false);
+               var6.I(var10001, (var10002 != 0), false, false);
             }
 
             var5++;
@@ -483,6 +488,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
    }
 
    public boolean k() {
+      boolean var4;
       int[] var10000 = K32.L$arrint();
       Iterator var2 = this.y.iterator();
       int[] var1 = var10000;
@@ -516,6 +522,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
    }
 
    public int b() {
+      int var4;
       int[] var10000 = K32.L$arrint();
       Iterator var2 = this.y.iterator();
       int[] var1 = var10000;
@@ -523,7 +530,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
       while (true) {
          if (var2.hasNext()) {
             K32 var3 = (K32)var2.next();
-            var4 = var3.Y$boolean();
+            var4 = (var3.Y$boolean()) ? 1 : 0;
             if (var1 == null) {
                break;
             }
@@ -549,6 +556,8 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
    }
 
    public int I() {
+      K32 var4;
+      int var5;
       int[] var10000 = K32.L$arrint();
       int var2 = 0;
       int[] var1 = var10000;
@@ -556,8 +565,8 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
 
       while (true) {
          if (var3.hasNext()) {
-            K32 var4 = (K32)var3.next();
-            var5 = var4.Y$boolean();
+            var4 = (K32)var3.next();
+            var5 = (var4.Y$boolean()) ? 1 : 0;
             if (var1 == null) {
                break;
             }
@@ -567,8 +576,6 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
             }
 
             if (var1 != null) {
-      Iterator var5;
-      Iterator var5;
                continue;
             }
          }
@@ -629,13 +636,14 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
    }
 
    public List s() {
+      K32 var4;
       int[] var10000 = K32.L$arrint();
       ArrayList var2 = new ArrayList();
       Iterator var3 = this.y.iterator();
       int[] var1 = var10000;
 
       while (var3.hasNext()) {
-         K32 var4 = (K32)var3.next();
+         var4 = (K32)var3.next();
          if (var1 != null && var4.Y$boolean()) {
             var2.add(var4);
          }
@@ -649,13 +657,13 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
    }
 
    public void G(List var1) {
+      K32 var4;
+      boolean var5;
       int[] var10000 = K32.L$arrint();
       Iterator var3 = this.y.iterator();
       int[] var2 = var10000;
 
       while (var3.hasNext()) {
-         K32 var4;
-         boolean var5;
          label28: {
             label36: {
                var4 = (K32)var3.next();
@@ -710,12 +718,13 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
    }
 
    public void h(List var1) {
+      K32 var4;
+      boolean var5;
       int[] var10000 = K32.L$arrint();
       int var3 = 0;
       int[] var2 = var10000;
 
       while (var3 < this.y.size()) {
-         boolean var5;
          label28: {
             label36: {
                var4 = (K32)this.y.get(var3);
@@ -853,7 +862,6 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
       Cl4_2.H(this);
    }
 }
-
 
 
 

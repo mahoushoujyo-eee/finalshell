@@ -22,7 +22,7 @@ public class Ke4_2 {
    }
 
    public void N(Map var1) throws IOException {
-      DH var2 = new DH(this, var1, this.K, this.Z);
+      ZModemFileStream var2 = new ZModemFileStream(this, var1, this.K, this.Z);
       var2.k();
       this.Z.flush();
    }

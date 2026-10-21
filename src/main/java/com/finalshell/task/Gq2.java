@@ -1,13 +1,13 @@
 package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.dialog.DownloadDialog;
+import com.finalshell.ui.dialog.DownloadProgressDialog;
 
 public class Gq2 implements Runnable {
-   public final DownloadDialog U;
+   public final DownloadProgressDialog U;
    public static long a;
 
-   public Gq2(DownloadDialog var1) {
+   public Gq2(DownloadProgressDialog var1) {
       this.U = var1;
    }
 
@@ -20,7 +20,7 @@ public class Gq2 implements Runnable {
       }
 
       Object var2 = 310503994018213298L;
-      ((DownloadDialog)Ref.g(310503994018213298L, var2)).setVisible(false);
+      ((DownloadProgressDialog)Ref.g(310503994018213298L, var2)).setVisible(false);
    }
 
    static {

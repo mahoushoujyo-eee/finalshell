@@ -181,9 +181,9 @@ public class Mj2 extends JPanel implements SwingConstants {
       long var2 = 202330964504671952L;
       Object[] var1 = var10001;
       Ref.h(202330964504671952L, var1, var2);
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var4 = 496970617216875190L;
-      Object[] var3 = var10002;
+      Object var3 = var10002;
       var10002 = Ref.h(496970617216875190L, var3, var4);
 
       try {
@@ -249,9 +249,9 @@ public class Mj2 extends JPanel implements SwingConstants {
       long var2 = 202330964504671952L;
       Object[] var1 = var10001;
       Ref.h(202330964504671952L, var1, var2);
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var4 = 145642607398979814L;
-      Object[] var3 = var10002;
+      Object var3 = var10002;
       var10002 = Ref.h(145642607398979814L, var3, var4);
 
       try {

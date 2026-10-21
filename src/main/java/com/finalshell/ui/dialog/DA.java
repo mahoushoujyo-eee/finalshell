@@ -923,6 +923,7 @@ public class DA extends E {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[14];
       int var11 = 0;
       String var10 = "»\u001cù\u0017\u0086Q\u0082T2_3öÄf\u0007\u001aëb$N\u009eÆ÷\u000ení\u0013\u0003\u000f7m\u0016¼ðÅ`ÚÙ.&g|sYe\nõC¤g´:\u0096v\u0003Pp¥\u0016¥ÉæG¾=¢ºöïA+#D=\u008a½^\u008f\u0013ê\u009b\u0016á3n\u0018¯Ö\u0080Ç²@ÉÞ2ú\u001f]ù¤\u0007Búy\u0013\u0015EÍ[[»ùÒö\\\u0015A=\u0083íÒ\u009aâÛ\u0003Pz§\u0003\u0085\u0000=\u0003\u0003(Ì\u0013üEy[\u009a\u0080\u0013Æ\u001d\u008a/YöT¤\"©¼È";
@@ -938,7 +939,6 @@ public class DA extends E {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

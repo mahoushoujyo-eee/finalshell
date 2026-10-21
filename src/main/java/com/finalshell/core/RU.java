@@ -18,10 +18,11 @@ public final class RU extends Fr2_2 {
 
    @Override
    public String toString() {
+      StringBuilder var5;
       String[] var10000 = RG_2.C();
       StringBuilder var2 = new StringBuilder();
       String[] var1 = var10000;
-      byte var4 = (this.F) ? 1 : 0;
+      byte var4 = (byte)((this.F) ? 1 : 0);
       if (var1 != null) {
          if (this.F) {
             var2.append(a(20153, 19462));
@@ -876,7 +877,8 @@ public final class RU extends Fr2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var5 = new String[2];
+      String[] var5;
+      var5 = new String[2];
       int var3 = 0;
       String var2 = "¼å:\u0006|\u0083âÏH ";
       int var4 = "¼å:\u0006|\u0083âÏH ".length();

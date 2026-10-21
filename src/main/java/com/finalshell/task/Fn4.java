@@ -1,7 +1,7 @@
 package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.dialog.EditDialog3;
+import com.finalshell.ui.dialog.CommandEditDialog;
 import java.awt.Component;
 import javax.swing.SwingUtilities;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
@@ -9,11 +9,11 @@ import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 public class Fn4 implements Runnable {
    public final Component S;
    public final RSyntaxTextArea U;
-   public final EditDialog3 p;
+   public final CommandEditDialog p;
    public static long[] a;
    public static Integer[] b;
 
-   public Fn4(EditDialog3 var1, Component var2, RSyntaxTextArea var3) {
+   public Fn4(CommandEditDialog var1, Component var2, RSyntaxTextArea var3) {
       this.p = var1;
       this.S = var2;
       this.U = var3;
@@ -22,15 +22,15 @@ public class Fn4 implements Runnable {
    @Override
    public void run() {
       Object var1 = 199577697489155795L;
-      ((EditDialog3)Ref.g(199577697489155795L, var1)).setSize(a(4257, 3190588006658207218L), a(11646, 9016145284451323948L));
+      ((CommandEditDialog)Ref.g(199577697489155795L, var1)).setSize(a(4257, 3190588006658207218L), a(11646, 9016145284451323948L));
       Object var3 = 199577697489155795L;
-      EditDialog3 var10002 = (EditDialog3)Ref.g(199577697489155795L, var3);
+      CommandEditDialog var10002 = (CommandEditDialog)Ref.g(199577697489155795L, var3);
       Object var5 = 621560698028342333L;
       this.setLocationRelativeTo(SwingUtilities.getWindowAncestor((Component)Ref.g(621560698028342333L, var5)));
       Object var7 = 449381642067527995L;
       ((RSyntaxTextArea)Ref.g(449381642067527995L, var7)).setCaretPosition(0);
       Object var9 = 199577697489155795L;
-      ((EditDialog3)Ref.g(199577697489155795L, var9)).setVisible(true);
+      ((CommandEditDialog)Ref.g(199577697489155795L, var9)).setVisible(true);
    }
 
    static {

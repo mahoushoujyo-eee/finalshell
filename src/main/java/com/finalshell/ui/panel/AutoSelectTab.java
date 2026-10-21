@@ -18,6 +18,12 @@ public class AutoSelectTab extends Z7 {
    public static String[] b;
 
    public AutoSelectTab() {
+      long var20;
+      Boolean var46;
+      Boolean var53;
+      Boolean var56;
+      boolean var59;
+      Boolean var62;
       this.setLayout(new MigLayout(a(23287, 11042), a(23284, 17143), a(23285, 4204)));
       N();
       String var10003 = a(23283, 32494);
@@ -30,7 +36,7 @@ public class AutoSelectTab extends Z7 {
       var10006 = Ref.h(306266403902896148L, var8, var9);
       JCheckBox var10007 = Registry.emptyArgs();
       long var11 = 623727123785142657L;
-      Object[] var10 = var10007;
+      Object var10 = var10007;
       var10007 = Ref.h(623727123785142657L, var10, var11);
 
       try {
@@ -52,9 +58,9 @@ var10005 = new L82(var10006, var46);
       long var15 = 306266403902896148L;
       Object[] var14 = var10008;
       var10008 = Ref.h(306266403902896148L, var14, var15);
-      Object[] var10009 = Registry.emptyArgs();
+      Object var10009 = Registry.emptyArgs();
       long var17 = 593871185714058018L;
-      Object[] var16 = var10009;
+      Object var16 = var10009;
       var10009 = Ref.h(593871185714058018L, var16, var17);
 
       try {
@@ -83,7 +89,7 @@ var10007 = new L82(var10008, var53);
                }
 
                var10007 = Registry.emptyArgs();
-               long var20 = 454647487873911743L;
+               var20 = 454647487873911743L;
                var10008 = Ref.h2(454647487873911743L, var20);
 
                try {
@@ -109,9 +115,9 @@ var10007 = new L82(var10008, var53);
       long var25 = 306266403902896148L;
       Object[] var24 = var10012;
       var10012 = Ref.h(306266403902896148L, var24, var25);
-      Object[] var10013 = Registry.emptyArgs();
+      Object var10013 = Registry.emptyArgs();
       long var27 = 249847093911123285L;
-      Object[] var26 = var10013;
+      Object var26 = var10013;
       var10013 = Ref.h(249847093911123285L, var26, var27);
 
       try {
@@ -132,9 +138,9 @@ var10011 = new L82(var10012, var56);
       long var31 = 306266403902896148L;
       Object[] var30 = var10015;
       var10015 = Ref.h(306266403902896148L, var30, var31);
-      Object[] var10016 = Registry.emptyArgs();
+      Object var10016 = Registry.emptyArgs();
       long var33 = 629017702607628679L;
-      Object[] var32 = var10016;
+      Object var32 = var10016;
       var10016 = Ref.h(629017702607628679L, var32, var33);
 
       try {
@@ -143,8 +149,8 @@ var10011 = new L82(var10012, var56);
          throw var37.getTargetException();
       }
 
-var10014 = new L82(var10015, var62);
-      Object[] var5 = var10013;
+      var10014 = new L82(var10015, var62);
+      Object var5 = var10013;
       Registry.emptyArgs();
       long var34 = 253808553645062345L;
       var10014 = Ref.h2(253808553645062345L, var34);
@@ -1000,6 +1006,8 @@ var10014 = new L82(var10015, var62);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
+      int var46;
       String[] var5 = new String[9];
       int var3 = 0;
       String var2 = "X §öª\u0015¸¯±Y\u0005\bæ1é£¡T\u0004L,êý\u0004Ñ\u001dÊ<\u0002zÝ\u0006脉劭逄丑梘箥\u0004復柤咁剽\u0004\u008d¡ÒL";
@@ -1015,7 +1023,6 @@ var10014 = new L82(var10015, var62);
          byte var10002 = -1;
 
          while (true) {
-      Object[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;
@@ -1044,7 +1051,6 @@ var10014 = new L82(var10015, var62);
 
                while (true) {
                   char var45 = var36[var10006];
-                  byte var46;
                   switch (var6 % 7) {
                      case 0:
                         var46 = 104;

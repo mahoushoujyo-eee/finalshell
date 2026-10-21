@@ -24,6 +24,7 @@ public class Q4 implements DocumentListener {
 
    @Override
    public void insertUpdate(DocumentEvent var1) {
+      boolean var12;
       Object var3 = 298809275001855761L;
       Registry.packArgs(Ref.g(298809275001855761L, var3));
       long var5 = 431506790279947428L;

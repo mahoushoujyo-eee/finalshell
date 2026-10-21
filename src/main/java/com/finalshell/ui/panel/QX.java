@@ -84,6 +84,7 @@ public class QX extends Ky4 {
    }
 
    public void j(boolean var1) {
+      QX var3;
       String[] var2 = Y();
       boolean var10000 = this.isShowing();
       if (var2 == null) {
@@ -194,13 +195,14 @@ public class QX extends Ky4 {
    }
 
    public boolean y() {
+      WeakReference var3;
       String[] var10000 = Y();
       Iterator var2 = this.u.iterator();
       String[] var1 = var10000;
 
       while (var2.hasNext()) {
          label37: {
-            WeakReference var3 = (WeakReference)var2.next();
+            var3 = (WeakReference)var2.next();
             Component var4 = (Component)var3.get();
             Component var5 = var4;
             if (var1 == null) {
@@ -302,12 +304,13 @@ public class QX extends Ky4 {
    }
 
    public void I(Component var1, E_2 var2) {
+      String[] var3;
       this.k();
       this.b = var1;
       String[] var10000 = Y();
       this.f = new X7(this, var1, var2);
       this.b.addComponentListener(this.f);
-      String[] var3 = var10000;
+      var3 = var10000;
       Component var4 = var1;
       if (var3 == null) {
          if (!(var1 instanceof JComponent)) {
@@ -393,11 +396,12 @@ public class QX extends Ky4 {
    }
 
    public void Z() {
+      Qt2 var3;
       String[] var10000 = Y();
       this.k();
       Qt2 var2 = (Qt2)this.getParent();
       String[] var1 = var10000;
-      Qt2 var3 = var2;
+      var3 = var2;
       if (var1 == null) {
          if (var2 == null) {
             return;
@@ -429,7 +433,8 @@ public class QX extends Ky4 {
 
    @Override
    public boolean contains(int var1, int var2) {
-      String[] var3 = Y();
+      boolean var3;
+      var3 = Y();
       QX var10000 = this;
       if (var3 == null) {
          if (this.M == IC3.fadeOut) {
@@ -452,12 +457,13 @@ public class QX extends Ky4 {
    }
 
    public void X() {
+      Cg4 var3;
       String[] var10000 = Y();
       Iterator var2 = AL_2.J((Collection)this.w).iterator();
       String[] var1 = var10000;
 
       while (var2.hasNext()) {
-         Cg4 var3 = (Cg4)var2.next();
+         var3 = (Cg4)var2.next();
          var3.Y();
          if (var1 != null) {
             break;
@@ -466,12 +472,13 @@ public class QX extends Ky4 {
    }
 
    public void C() {
+      Cg4 var3;
       String[] var10000 = Y();
       Iterator var2 = AL_2.J((Collection)this.w).iterator();
       String[] var1 = var10000;
 
       while (var2.hasNext()) {
-         Cg4 var3 = (Cg4)var2.next();
+         var3 = (Cg4)var2.next();
          var3.h();
          if (var1 != null) {
             break;
@@ -480,12 +487,13 @@ public class QX extends Ky4 {
    }
 
    public void e() {
+      Cg4 var3;
       String[] var10000 = Y();
       Iterator var2 = AL_2.J((Collection)this.w).iterator();
       String[] var1 = var10000;
 
       while (var2.hasNext()) {
-         Cg4 var3 = (Cg4)var2.next();
+         var3 = (Cg4)var2.next();
          var3.T();
          if (var1 != null) {
             break;
@@ -494,12 +502,13 @@ public class QX extends Ky4 {
    }
 
    public void H() {
+      Cg4 var3;
       String[] var10000 = Y();
       Iterator var2 = AL_2.J((Collection)this.w).iterator();
       String[] var1 = var10000;
 
       while (var2.hasNext()) {
-         Cg4 var3 = (Cg4)var2.next();
+         var3 = (Cg4)var2.next();
          var3.H();
          if (var1 != null) {
             break;
@@ -536,6 +545,7 @@ public class QX extends Ky4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long var3;
       if (Y() != null) {
          f(new String[4]);
       }
@@ -586,7 +596,7 @@ public class QX extends Ky4 {
             String var16 = new String(var10003).intern();
             byte var8 = -1;
             g = var16;
-            long var3 = 2846792827234914634L;
+            var3 = 2846792827234914634L;
             long var12 = 2846792827234914659L ^ var3;
             var8 = -1;
             z = var12;

@@ -888,6 +888,7 @@ public class YI3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = ";ô\u0098\u0003Ê\f¦\u0003\u008d)K";
@@ -902,7 +903,6 @@ public class YI3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

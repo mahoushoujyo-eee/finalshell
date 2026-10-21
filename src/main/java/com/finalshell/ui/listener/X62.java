@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class X62 extends WindowAdapter {
-   public final com.finalshell.ui.frame.U J;
+   public final com.finalshell.ui.frame.MainFrame J;
 
-   public X62(com.finalshell.ui.frame.U var1) {
+   public X62(com.finalshell.ui.frame.MainFrame var1) {
       this.J = var1;
    }
 
@@ -23,7 +23,7 @@ public class X62 extends WindowAdapter {
       Ref.g(493158471773442262L, var4);
       ArrayList var10003 = (ArrayList)(Registry.emptyArgs());
       long var7 = 230171768324088030L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       var10003 = Ref.h(230171768324088030L, var6, var7);
 
       try {

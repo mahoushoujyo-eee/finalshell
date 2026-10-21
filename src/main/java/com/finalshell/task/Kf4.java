@@ -38,7 +38,7 @@ public class Kf4 implements Runnable {
          Object var10003 = Ref.g(142536030060271800L, var4);
          ArrayList var10004 = (ArrayList)(Registry.emptyArgs());
          long var7 = 230171768324088030L;
-         Object[] var6 = var10004;
+         Object var6 = var10004;
          var10004 = Ref.h(230171768324088030L, var6, var7);
 
          try {

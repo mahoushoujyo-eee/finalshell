@@ -28,7 +28,7 @@ public class DT extends JTable {
       this.setSelectionBackground((Color)Registry.lookupField(623875439513009390L).get(null));
       this.getTableHeader().setVisible(false);
       this.setTableHeader(null);
-      com.finalshell.ui.panel.Ql2 var3 = new com.finalshell.ui.panel.Ql2();
+      com.finalshell.ui.panel.TransferStatusCellRenderer var3 = new com.finalshell.ui.panel.TransferStatusCellRenderer();
       this.setDefaultRenderer(Object.class, var3);
       this.setRowHeight(a(28146, 69380773180708842L));
       this.setShowGrid(true);
@@ -40,9 +40,9 @@ public class DT extends JTable {
    public YI m(int var1) {
       Object var2 = 537287653217599524L;
       Ref.g(537287653217599524L, var2);
-      Object[] var10002 = Registry.packArgs(this.convertRowIndexToModel(var1));
+      Object var10002 = Registry.packArgs(this.convertRowIndexToModel(var1));
       long var5 = 501106210434703361L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       var10002 = Ref.h(501106210434703361L, var4, var5);
 
       try {

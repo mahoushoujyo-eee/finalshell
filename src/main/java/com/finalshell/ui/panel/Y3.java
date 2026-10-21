@@ -32,7 +32,7 @@ public class Y3 extends JPanel {
       RenderingHints var3 = new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
       C var10002 = (C)(Registry.packArgs("\uf0c5"));
       long var10 = 385693903992234485L;
-      Object[] var9 = var10002;
+      Object var9 = var10002;
       var10002 = Ref.h(385693903992234485L, var9, var10);
 
       try {
@@ -46,7 +46,7 @@ public class Y3 extends JPanel {
       var4.addActionListener(new F2(this, var1));
       C var10003 = (C)(Registry.packArgs("\uf0ea"));
       long var12 = 385693903992234485L;
-      Object[] var11 = var10003;
+      Object var11 = var10003;
       var10003 = Ref.h(385693903992234485L, var11, var12);
 
       try {
@@ -60,7 +60,7 @@ public class Y3 extends JPanel {
       var5.addActionListener(new OT3(this, var1));
       C var10004 = (C)(Registry.packArgs("\uf002"));
       long var14 = 385693903992234485L;
-      Object[] var13 = var10004;
+      Object var13 = var10004;
       var10004 = Ref.h(385693903992234485L, var13, var14);
 
       try {

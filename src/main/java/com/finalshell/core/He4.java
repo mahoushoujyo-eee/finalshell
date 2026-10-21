@@ -46,6 +46,7 @@ public class He4 extends W5 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      int var28;
       BufferedImage var7;
       int var26;
       int var4 = var1.getWidth();
@@ -68,7 +69,7 @@ public class He4 extends W5 {
                break label109;
             }
 
-            if (var26) {
+            if (var26 != 0) {
                int[] var9 = null;
                int var10 = 0;
                int var11 = 0;
@@ -203,7 +204,7 @@ public class He4 extends W5 {
          var26 = (this.S) ? 1 : 0;
       }
 
-      if (var26) {
+      if (var26 != 0) {
          var7 = new Hl4().filter(var7, var7);
       }
 
@@ -230,6 +231,7 @@ public class He4 extends W5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte var28;
       char[] var10003 = "+q]\u0018Lvk\u0007s\\\u0018M<A\rp\u001a\u0012Yyh\u000f`I\u000eV8A\u001d;\u0014S".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -322,7 +324,7 @@ public class He4 extends W5 {
                         var10 = 0;
                   }
 
-                  byte var28 = var10;
+                  var28 = var10;
                   var10 += 8;
                   var16 = var12.substring(var28, var10).getBytes("ISO-8859-1");
                   var18 = var14;

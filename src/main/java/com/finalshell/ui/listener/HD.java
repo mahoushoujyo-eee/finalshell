@@ -22,10 +22,11 @@ public class HD extends MouseAdapter {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      boolean var19;
       String[] var2 = BX.B$arrString();
       int var10000 = (FN.N(var1)) ? 1 : 0;
       if (var2 == null) {
-         if (var10000) {
+         if (var10000 != 0) {
             var10000 = (this.L.z$QL().w$boolean()) ? 1 : 0;
             if (var2 == null) {
                if (var10000 == 0) {
@@ -51,7 +52,7 @@ public class HD extends MouseAdapter {
          var10000 = (FN.W(var1)) ? 1 : 0;
       }
 
-      if (var10000) {
+      if (var10000 != 0) {
          QL var15 = this.L.z$QL();
          var10000 = (var15.W()) ? 1 : 0;
          if (var2 == null) {
@@ -150,7 +151,7 @@ public class HD extends MouseAdapter {
          label82: {
             label146: {
                var8 = var10000;
-               var9 = (this.L.B.getParent() instanceof com.finalshell.ui.panel.O2) ? 1 : 0;
+               var9 = (byte)((this.L.B.getParent() instanceof com.finalshell.ui.panel.O2) ? 1 : 0);
                var10000 = var9;
                if (var2 == null) {
                   if (var9 == 0) {
@@ -178,12 +179,12 @@ public class HD extends MouseAdapter {
          var11.W(BX.class, a(-32268, 25639), a(-32284, 10608));
          var11.H(a(-32276, -9790));
          var11.V(a(-32280, -11922), a(-32273, 15508), GR.s, var6, new H3(this, var16));
-         var11.y(a(-32265, 25799), a(-32258, -28800), (boolean)var7, new Sh2(this, var16));
+         var11.y(a(-32265, 25799), a(-32258, -28800), var7, new Sh2(this, var16));
          var11.M();
-         var11.y(a(-32271, 1964), a(-32257, -29699), (boolean)var8, new RN3(this, var5));
-         var11.y(a(-32287, -4578), a(-32281, -2668), (boolean)var8, new Sk2(this, var5));
-         var11.y(a(-32266, -7168), a(-32285, 16014), (boolean)var8, new IA3(this, var5));
-         var11.y(a(-32270, 6914), a(-32277, 28265), (boolean)var8, new S8(this, var5));
+         var11.y(a(-32271, 1964), a(-32257, -29699), var8, new RN3(this, var5));
+         var11.y(a(-32287, -4578), a(-32281, -2668), var8, new Sk2(this, var5));
+         var11.y(a(-32266, -7168), a(-32285, 16014), var8, new IA3(this, var5));
+         var11.y(a(-32270, 6914), a(-32277, 28265), var8, new S8(this, var5));
          var11.M();
          R1 var23 = var11;
          String var10001 = a(-32275, -27404);
@@ -1013,6 +1014,7 @@ public class HD extends MouseAdapter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[26];
       int var3 = 0;
       String var2 = "ÛeC\u008bN\u008bIm;Ó\u0005÷\u00045X\u000e\u0004÷iëÀ\u0006¼gOû0º\u0007½Æ\u008fÿ×\u0005z\u0003à¢\u0006\u0007+\u0000\u0089\u001dc_J\u0005\n(\u008aÝù\n\u0093\u008bJVo0m-¶\u0014\u0005¿a\u0007JP\u0011±³]'³\u008e\u0000\u0010\u001eu$}âH<\u0094?\u0006úN\u0087Þ)\u001e\u0012\u001f\bø\u0002*\u0013þÑÜ \u0086C\u0015ó\b\u001e?\u008b\u00063:¬EWÒ\u0005UöZ¸û\u0007èê%z\u0082µÐ\u0003FxÒ\u000bÎ¥)Ò\u0095å\u001a|Q\bd\u000b\u008dÍ\n,çä\u0099=\u0010\u008bz\u00047m\n°\u0006\u0082á\u009a>\u0091½\u0007ý¡S)&Ó?\nÐ[\"LbsÌl\u0081.\u0004\u0012¿U¾";
@@ -1028,7 +1030,6 @@ public class HD extends MouseAdapter {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

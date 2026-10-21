@@ -33,7 +33,7 @@ public class XC3 extends XA3 {
       int[] var2 = WC_2.V();
       int var10000 = (var1 instanceof MouseEvent) ? 1 : 0;
       if (var2 == null) {
-         if (var10000) {
+         if (var10000 != 0) {
             MouseEvent var3 = (MouseEvent)var1;
             var10000 = var3.getID();
             if (var2 == null) {

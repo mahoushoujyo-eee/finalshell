@@ -4,21 +4,21 @@ import com.finalshell.core.D6;
 import com.finalshell.core.LH3_2;
 import com.finalshell.core.Lc4_2;
 import com.finalshell.core.Wu2;
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.IOException;
 import java.net.DatagramPacket;
 
 public class Yz4 implements Runnable {
-   public final com.finalshell.core.PacketLoss k;
+   public final com.finalshell.core.PacketLossStats k;
    public static long a;
 
-   public Yz4(com.finalshell.core.PacketLoss var1) {
+   public Yz4(com.finalshell.core.PacketLossStats var1) {
       this.k = var1;
    }
 
    @Override
    public void run() {
-      String[] var1 = PingMessageR.N();
+      String[] var1 = PingMessageReceiver.N();
 
       while (true) {
          byte[] var2 = new byte[(int)a];

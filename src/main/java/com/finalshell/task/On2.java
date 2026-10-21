@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.Copy2;
+import com.finalshell.ui.panel.EnvironmentVariablePanel;
 import javax.swing.JSplitPane;
 
 public class On2 implements Runnable {
    public final JSplitPane N;
-   public final Copy2 v;
+   public final EnvironmentVariablePanel v;
 
-   public On2(Copy2 var1, JSplitPane var2) {
+   public On2(EnvironmentVariablePanel var1, JSplitPane var2) {
       this.v = var1;
       this.N = var2;
    }

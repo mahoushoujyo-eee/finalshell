@@ -67,7 +67,7 @@ public class C02 {
       label143:
       while (true) {
          var10006 = (Object[])var4;
-         Object[] var10007 = 2;
+         Object var10007 = 2;
 
          label141:
          while (var10006 < var10007) {

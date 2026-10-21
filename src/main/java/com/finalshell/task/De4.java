@@ -4,15 +4,15 @@ import com.finalshell.core.Km2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.lang.reflect.InvocationTargetException;
 
 public class De4 implements Runnable {
    public final Tf4 q;
    public final String U;
-   public final Address s;
+   public final FileBrowserAddressBar s;
 
-   public De4(Address var1, Tf4 var2, String var3) {
+   public De4(FileBrowserAddressBar var1, Tf4 var2, String var3) {
       this.s = var1;
       this.q = var2;
       this.U = var3;

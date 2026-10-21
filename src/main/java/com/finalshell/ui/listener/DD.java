@@ -19,6 +19,7 @@ public class DD extends MouseAdapter {
 
    @Override
    public void mouseClicked(MouseEvent var1) {
+      MouseEvent var6;
       int var2 = WO3.f();
       int var10000 = this.X.x();
       if (var2 == 0) {

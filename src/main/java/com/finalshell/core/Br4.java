@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 
 public class Br4 {
    public Connect2 q;
@@ -62,7 +62,7 @@ public class Br4 {
    }
 
    public void O() {
-      String[] var1 = PingMessageR.N();
+      String[] var1 = PingMessageReceiver.N();
       Br4 var10000 = this;
       if (var1 != null) {
          if (this.R) {

@@ -68,7 +68,7 @@ public class Gu2 extends PipedInputStream {
    public int e() {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var2 = 0;
-      boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var1 = (var10000) != 0;
       var10000 = this.out;
       int var10001 = this.in;
       if (!var1) {

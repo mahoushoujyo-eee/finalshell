@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
-import com.finalshell.connection.Connection;
+import com.finalshell.connection.ConnectionState;
 import com.finalshell.ui.panel.Ky4;
 
 public class Tz4 {
-   public Connection T;
+   public ConnectionState T;
    public boolean r = false;
    public Qm2 d;
    public static String a;

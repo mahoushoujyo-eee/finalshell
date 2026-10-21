@@ -1119,12 +1119,14 @@ public class OQ {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var17;
+      char[] var46;
       String[] var21 = new String[16];
       int var19 = 0;
       String var18 = "cd\u0007\fP'\u009e<Õ\u007f\u0002ӍȈ\u0002ӂȆ\u0003b\u0017\u0088\u0003¯ýQ\u0002Òú\u0002Æ}\u00026%\u0004^V\u000fÎ\u0016\u0094û¬¸\\l<nªoµ\u0082\u008e\u0092Ó\u008dmáÆkr¦\u0002\u009f3\u0002Ｑ￭\u0002１ﾂ";
       int var20 = "cd\u0007\fP'\u009e<Õ\u007f\u0002ӍȈ\u0002ӂȆ\u0003b\u0017\u0088\u0003¯ýQ\u0002Òú\u0002Æ}\u00026%\u0004^V\u000fÎ\u0016\u0094û¬¸\\l<nªoµ\u0082\u008e\u0092Ó\u008dmáÆkr¦\u0002\u009f3\u0002Ｑ￭\u0002１ﾂ"
          .length();
-      char var17 = 2;
+      var17 = 2;
       int var26 = -1;
 
       label88:
@@ -1134,7 +1136,6 @@ public class OQ {
          byte var10002 = -1;
 
          while (true) {
-      char[] var46;
             label83: {
                char[] var54 = var10001.toCharArray();
                int var10004 = var54.length;

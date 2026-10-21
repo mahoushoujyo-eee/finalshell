@@ -3,7 +3,7 @@ package com.finalshell.ui.listener;
 import com.finalshell.core.FX3;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.RouteTracePanel3;
+import com.finalshell.ui.panel.RouteTraceAddressPanel;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,9 +16,9 @@ public class AG implements ActionListener {
    public final String D;
    public final JPopupMenu N;
    public final com.finalshell.ui.panel.W8 S;
-   public final RouteTracePanel3 m;
+   public final RouteTraceAddressPanel m;
 
-   public AG(RouteTracePanel3 var1, FX3 var2, String var3, JPopupMenu var4, com.finalshell.ui.panel.W8 var5) {
+   public AG(RouteTraceAddressPanel var1, FX3 var2, String var3, JPopupMenu var4, com.finalshell.ui.panel.W8 var5) {
       this.m = var1;
       this.q = var2;
       this.D = var3;
@@ -68,9 +68,9 @@ public class AG implements ActionListener {
       Object var24 = 352329716694519879L;
       Ref.g(352329716694519879L, var24);
       Object var26 = 308573825510407868L;
-      Object[] var10013 = Registry.packArgs(Ref.g(308573825510407868L, var26));
+      Object var10013 = Registry.packArgs(Ref.g(308573825510407868L, var26));
       long var29 = 399675325010309536L;
-      Object[] var28 = var10013;
+      Object var28 = var10013;
       var10013 = Ref.h(399675325010309536L, var28, var29);
 
       try {

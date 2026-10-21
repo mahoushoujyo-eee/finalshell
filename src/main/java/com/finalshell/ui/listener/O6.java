@@ -2,21 +2,21 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class O6 implements MouseListener {
-   public final Address I;
+   public final FileBrowserAddressBar I;
 
-   public O6(Address var1) {
+   public O6(FileBrowserAddressBar var1) {
       this.I = var1;
    }
 
    @Override
    public void mouseReleased(MouseEvent var1) {
-      boolean var2 = Address.i();
+      boolean var2 = FileBrowserAddressBar.i();
       int var10000 = var1.getClickCount();
       byte var10001 = 2;
       if (var2) {

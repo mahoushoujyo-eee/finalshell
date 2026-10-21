@@ -1030,6 +1030,7 @@ public class KN3 extends Ky4 implements Au2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[12];
       int var3 = 0;
       String var2 = "'ª\u0095ÃÆ\u0085\u0094·\r£$¥Lñ(Ð\u001eëñ{\u0012\u0010ÌÓ\u0087\u0091å&U\u001c¹¬_×\f\u001aÜ<ý\u0006úÿà=À¶\u0014Æ\u0094©\u0004A}d¨\u0013@çÙ4~'!ÿÕÍ¼\u0016ÚG*~12jAÒ}ß~3\u008aÇ©ÿ\u0010J\u000e°|\u0005øR\u0010ÃL\u0015?Ç6æ-É±Ðî\tò_\u001cÜ9]Jxã\u0013\b\u0014ÛÂªF¾ÝÃR Y;E#\u009e\u0004\u007f1\u001a¹Ã\u0003\u000f³à\u0013\fjPSá\u007f(\u0006ÝÓ\u0094\nÚ«ª¢%®§";
@@ -1045,7 +1046,6 @@ public class KN3 extends Ky4 implements Au2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -84,6 +84,9 @@ public class Ip5 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void r() throws Exception {
+      IOException var38;
+      ByteArrayOutputStream var39;
+      Boolean var44;
       int[] var10000 = g();
       o = this.v.lastModified();
       int[] var1 = var10000;
@@ -151,7 +154,6 @@ public class Ip5 {
                   }
                } finally {
                   if (var21) {
-      ByteArrayOutputStream var39;
                      try {
                         label193: {
                            label148: {
@@ -467,7 +469,7 @@ public class Ip5 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public C_3 T(int var1) {
-      String var17;
+      byte var17;
       int[] var10000 = g();
       C_3 var3 = new C_3();
       int[] var2 = var10000;
@@ -1607,12 +1609,16 @@ public class Ip5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var17;
+      byte var38;
+      byte var39;
+      char[] var46;
       String[] var21 = new String[4];
       int var19 = 0;
       String var18 = "È\u0016仜聺举稒\u0002Ï¤";
       int var20 = "È\u0016仜聺举稒\u0002Ï¤".length();
       f(null);
-      char var17 = 6;
+      var17 = 6;
       int var26 = -1;
 
       label88:
@@ -1622,7 +1628,6 @@ public class Ip5 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var46;
             label83: {
                char[] var54 = var10001.toCharArray();
                int var10004 = var54.length;
@@ -1743,7 +1748,7 @@ public class Ip5 {
 
                                     label52:
                                     while (true) {
-                                       byte var39 = var2;
+                                       var39 = var2;
                                        var2 += 8;
                                        byte[] var7 = var4.substring(var39, var2).getBytes("ISO-8859-1");
                                        long[] var29 = var6;
@@ -1812,7 +1817,7 @@ public class Ip5 {
                                  var10 = 0;
                            }
 
-                           byte var38 = var10;
+                           var38 = var10;
                            var10 += 8;
                            var15 = var12.substring(var38, var10).getBytes("ISO-8859-1");
                            var28 = var14;

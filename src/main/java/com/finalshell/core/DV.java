@@ -341,7 +341,7 @@ public class DV {
    public int J(int[] var1) {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var3 = var1[0];
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       int var4 = this.Q[var3++] & a(12224, 2723626974890989789L);
 
       label45: {

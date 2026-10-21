@@ -28,9 +28,10 @@ public class AE extends JSplitPane {
    }
 
    public void B(boolean var1) {
-      Object[] var10002 = Registry.emptyArgs();
+      Integer var6;
+      Object var10002 = Registry.emptyArgs();
       long var3 = 608818074819783119L;
-      Object[] var2 = var10002;
+      Object var2 = var10002;
       var10002 = Ref.h(608818074819783119L, var2, var3);
 
       try {

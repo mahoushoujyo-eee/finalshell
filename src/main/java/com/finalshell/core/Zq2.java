@@ -1412,6 +1412,7 @@ public abstract class Zq2 extends ZS implements X4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var36;
       String[] var15 = new String[11];
       int var13 = 0;
       String var12 = "°sÉs³È\u0003A\u008c\u0013\"Íýå+]|§\u0003:Â\u001d\fx¦òÇ\u0080â\u0092g\u0099ÙQi\u001d8;¦y³¬\\u\u0096Ì+%\u009107\u008b\u0092ó@Õ©+Â\u0081\u0003F\u0092M\u0011\u0019ç\u009a]MÌ*³¥kÖ\u0093z\u000e6c Î%?\u008f\u0006ë\u0013K9\u0003.C¯\u0003áúV\fè\u0011à1Â<Ú¼\u0090¢p\u0006\u0015\u0004'!úCÜB{U\rT\u0001öY|Í-\u0098C8\u0089";
@@ -1427,7 +1428,6 @@ public abstract class Zq2 extends ZS implements X4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var36;
             label65: {
                char[] var43 = var10001.toCharArray();
                int var10004 = var43.length;

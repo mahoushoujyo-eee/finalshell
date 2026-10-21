@@ -62,7 +62,7 @@ public final class XE {
 
          var4 = this.r;
          if (var2 != null) {
-            return (boolean)this.r;
+            return (this.r != 0);
          }
 
          var10001 = var3.r;

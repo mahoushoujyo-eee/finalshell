@@ -494,7 +494,7 @@ public class OG extends O implements W2_3, Sa2 {
       var10000 -= var10001;
       var10001 = (var3) ? 1 : 0;
       if (var4 != null) {
-         var10001 = var3 != 0 ? 0 : 1;
+         var10001 = var3 ? 0 : 1;
       }
 
       float var6 = (float)(var10000 - var10001) * (float)var1;
@@ -1507,6 +1507,7 @@ public class OG extends O implements W2_3, Sa2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var27;
       String[] var9 = new String[12];
       Ky4[] var10000 = new Ky4[4];
       int var7 = 0;
@@ -1524,7 +1525,6 @@ public class OG extends O implements W2_3, Sa2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var27;
             label47: {
                char[] var33 = var10001.toCharArray();
                int var10004 = var33.length;

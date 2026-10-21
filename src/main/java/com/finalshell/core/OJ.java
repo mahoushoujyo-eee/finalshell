@@ -29,6 +29,7 @@ public class OJ {
    }
 
    public static ConnectHost T(String var0, String var1, String var2, int var3) throws Pc2 {
+      Z22 var8;
       String[] var10000 = Cj4.v$arrString();
       ConnectHost var5 = null;
       String[] var4 = var10000;
@@ -167,6 +168,7 @@ public class OJ {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -6770) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -953,7 +955,7 @@ public class OJ {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);

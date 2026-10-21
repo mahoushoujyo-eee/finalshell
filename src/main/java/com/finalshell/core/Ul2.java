@@ -65,7 +65,7 @@ public class Ul2 extends UT_2 {
 
    @Override
    public void y(Yn4 var1, Object var2, Type var3, Map var4) {
-      WildcardType var10;
+      int var10;
       Ky4[] var5;
       Object var11;
       label67: {
@@ -103,7 +103,7 @@ public class Ul2 extends UT_2 {
                   var10 = var11.length();
                }
 
-               if (var10 != null) {
+               if (var10 != 0) {
                   break label57;
                }
             }
@@ -153,6 +153,12 @@ public class Ul2 extends UT_2 {
    }
 
    public final void w(Yn4 var1, Type var2, Collection var3) {
+      int var10;
+      int var37;
+      Type var38;
+      int var42;
+      Type var43;
+      int var46;
       Ky4[] var4;
       Type var5;
       X4 var6;
@@ -187,7 +193,6 @@ public class Ul2 extends UT_2 {
                            var9 = (java.lang.Class)var36;
                         }
 
-                        int var10;
                         label242: {
                            var10 = -1;
                            if (var9 != null) {
@@ -197,7 +202,7 @@ public class Ul2 extends UT_2 {
                               while (var11 < var12) {
                                  TypeVariable var13 = var9.getTypeParameters()[var11];
                                  if (var4 == null) {
-                                    var37 = var13.getName().equals(var7.getName());
+                                    var37 = (var13.getName().equals(var7.getName())) ? 1 : 0;
                                     if (var4 != null) {
                                        break label242;
                                     }
@@ -213,7 +218,6 @@ public class Ul2 extends UT_2 {
                                  }
 
                                  if (var4 != null) {
-      WildcardType var37;
                                     break;
                                  }
                               }
@@ -229,7 +233,7 @@ public class Ul2 extends UT_2 {
                               }
 
                               var5 = var8.getActualTypeArguments()[var10];
-                              var37 = var5.equals(this.J);
+                              var37 = (var5.equals(this.J)) ? 1 : 0;
                            }
 
                            if (var37 == 0) {
@@ -274,7 +278,7 @@ public class Ul2 extends UT_2 {
                            break label269;
                         }
 
-                        var39 = var40 instanceof TypeVariable;
+                        var39 = (var40 instanceof TypeVariable) ? 1 : 0;
                      }
 
                      if (var39 == 0) {
@@ -313,7 +317,7 @@ public class Ul2 extends UT_2 {
                         while (var33 < var14) {
                            TypeVariable var15 = var29.getTypeParameters()[var33];
                            if (var4 == null) {
-                              var42 = var15.getName().equals(var22.getName());
+                              var42 = (var15.getName().equals(var22.getName())) ? 1 : 0;
                               if (var4 != null) {
                                  break label196;
                               }
@@ -515,6 +519,7 @@ public class Ul2 extends UT_2 {
    }
 
    public static void __vfClinit__() {
+      byte var10;
       long var0 = 6745192190414285224L;
       long[] var6 = new long[6];
       int var3 = 0;
@@ -561,7 +566,7 @@ public class Ul2 extends UT_2 {
                   var2 = 0;
             }
 
-            byte var10 = var2;
+            var10 = var2;
             var2 += 8;
             var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
             var10000 = var6;
@@ -579,7 +584,6 @@ public class Ul2 extends UT_2 {
       }
    }
 }
-
 
 
 

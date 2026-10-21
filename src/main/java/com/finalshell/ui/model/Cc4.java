@@ -15,10 +15,14 @@ public class Cc4 implements Comparator {
    }
 
    public int o(L1 var1, L1 var2) {
+      Integer var26;
+      Integer var29;
+      Integer var31;
+      Integer var33;
       ClearListDialog.i$arrString();
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var14 = 608348398594129275L;
-      Object[] var13 = var10002;
+      Object var13 = var10002;
       var10002 = Ref.h(608348398594129275L, var13, var14);
 
       try {
@@ -30,7 +34,7 @@ public class Cc4 implements Comparator {
       double var4 = (double)var26;
       var10002 = Registry.emptyArgs();
       long var16 = 608348398594129275L;
-      Object[] var15 = var10002;
+      Object var15 = var10002;
       var10002 = Ref.h(608348398594129275L, var15, var16);
 
       try {
@@ -40,9 +44,9 @@ public class Cc4 implements Comparator {
       }
 
       double var6 = (double)var29;
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var18 = 236277018693765536L;
-      Object[] var17 = var10003;
+      Object var17 = var10003;
       var10003 = Ref.h(236277018693765536L, var17, var18);
 
       try {
@@ -52,9 +56,9 @@ public class Cc4 implements Comparator {
       }
 
       double var8 = (double)var31;
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var20 = 236277018693765536L;
-      Object[] var19 = var10004;
+      Object var19 = var10004;
       var10004 = Ref.h(236277018693765536L, var19, var20);
 
       try {
@@ -116,9 +120,9 @@ public class Cc4 implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((L1)var1, (L1)var2);
+      Object var10001 = Registry.packArgs((L1)var1, (L1)var2);
       long var4 = 242703001634192352L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(242703001634192352L, var3, var4);
 
       try {

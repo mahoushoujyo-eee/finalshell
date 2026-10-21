@@ -7,15 +7,16 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class BK3 implements ActionListener {
-   public final com.finalshell.ui.frame.U I;
+   public final com.finalshell.ui.frame.MainFrame I;
    public static long a;
 
-   public BK3(com.finalshell.ui.frame.U var1) {
+   public BK3(com.finalshell.ui.frame.MainFrame var1) {
       this.I = var1;
    }
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      Long var21;
       com.finalshell.ui.panel.F8.y();
       Registry.emptyArgs();
       long var5 = 270389152141252877L;
@@ -50,9 +51,9 @@ public class BK3 implements ActionListener {
 
       System.currentTimeMillis();
       var10003 = (Object[])Registry.lookupField(222367947831078517L).get(null);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var10 = 134055940149281481L;
-      Object[] var9 = var10004;
+      Object var9 = var10004;
       var10004 = Ref.h(134055940149281481L, var9, var10);
 
       try {

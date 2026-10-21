@@ -4,7 +4,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.Xh2_2;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
 import java.lang.reflect.InvocationTargetException;
@@ -19,13 +19,13 @@ import javax.swing.tree.DefaultMutableTreeNode;
 public class KC extends DefaultCellEditor {
    public Ne4 b;
    public com.finalshell.ui.panel.Wb2 O;
-   public final Connection4 x;
+   public final ConnectionInfoPanel x;
    public static String[] a;
    public static String[] c;
    public static long[] d;
    public static Integer[] e;
 
-   public KC(Connection4 var1, JTextField var2) {
+   public KC(ConnectionInfoPanel var1, JTextField var2) {
       super(var2);
       this.x = var1;
       DN var10001 = new DN();
@@ -394,7 +394,7 @@ public class KC extends DefaultCellEditor {
             Ref.g(489572751534480599L, var13);
             long var16 = 503294693928161508L;
             Ref.s(503294693928161508L, var2, var16);
-            Connection4.I();
+            ConnectionInfoPanel.I();
             Object var17 = 489572751534480599L;
             var46 = Ref.g(489572751534480599L, var17);
             Object var19 = 503294693928161508L;
@@ -408,7 +408,7 @@ public class KC extends DefaultCellEditor {
                   com.finalshell.ui.model.Ck4 var11 = (com.finalshell.ui.model.Ck4)var9;
                   String var10005 = (String)(Registry.emptyArgs());
                   long var22 = 396085629172753019L;
-                  Object[] var21 = var10005;
+                  Object var21 = var10005;
                   var10005 = Ref.h(396085629172753019L, var21, var22);
 
                   try {
@@ -435,7 +435,7 @@ public class KC extends DefaultCellEditor {
                Tf4 var43 = (Tf4)var9;
                String var49 = (String)(Registry.emptyArgs());
                long var24 = 179612178163941306L;
-               Object[] var23 = var49;
+               Object var23 = var49;
                var49 = Ref.h(179612178163941306L, var23, var24);
 
                try {
@@ -493,7 +493,8 @@ public class KC extends DefaultCellEditor {
 
    @Override
    public boolean isCellEditable(EventObject var1) {
-      int[] var10000 = Connection4.I();
+      boolean var36;
+      int[] var10000 = ConnectionInfoPanel.I();
       byte var3 = 0;
       int[] var2 = var10000;
       EventObject var29 = var1;
@@ -505,7 +506,7 @@ public class KC extends DefaultCellEditor {
          var29 = var1;
       }
 
-      byte var30 = (var29 instanceof MouseEvent) ? 1 : 0;
+      byte var30 = (byte)((var29 instanceof MouseEvent) ? 1 : 0);
       if (var2 != null) {
          if (var30 != 0) {
             MouseEvent var4 = (MouseEvent)var1;
@@ -519,7 +520,7 @@ public class KC extends DefaultCellEditor {
             Ref.g(489572751534480599L, var8);
             DefaultMutableTreeNode var10002 = (DefaultMutableTreeNode)(Registry.packArgs(((MouseEvent)var1).getPoint()));
             long var11 = 229190360333115919L;
-            Object[] var10 = var10002;
+            Object var10 = var10002;
             var10002 = Ref.h(229190360333115919L, var10, var11);
 
             try {
@@ -533,7 +534,7 @@ public class KC extends DefaultCellEditor {
                Tf4 var7 = (Tf4)var6.getUserObject();
                String var10003 = Registry.emptyArgs();
                long var13 = 498856411508641826L;
-               Object[] var12 = var10003;
+               Object var12 = var10003;
                var10003 = Ref.h(498856411508641826L, var12, var13);
 
                try {

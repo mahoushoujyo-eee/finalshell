@@ -24,9 +24,10 @@ public final class Fk2 {
    public static String[] b;
 
    public static PF3 I(int var0, int var1, float var2) {
+      PF3 var5;
       String var4 = a(-16451, -1119) + var0 + ";" + var1 + ";" + var2;
       String var10000 = FV_2.D();
-      PF3 var5 = i(var4);
+      var5 = i(var4);
       String var3 = var10000;
       PF3 var7 = var5;
       if (var3 == null) {
@@ -43,8 +44,9 @@ public final class Fk2 {
    }
 
    public static PF3 h(int var0, int var1, float var2) {
+      int var5;
       int var4 = Math.max(var0, var1) / 2;
-      int var5 = var0 * 2 + var4 * 2;
+      var5 = var0 * 2 + var4 * 2;
       BufferedImage var6 = new BufferedImage(var5, var5, 2);
       Graphics2D var7 = var6.createGraphics();
       RV.X(var7);
@@ -76,9 +78,10 @@ public final class Fk2 {
    }
 
    public static PF3 p(int var0, int var1, float var2) {
+      PF3 var5;
       String var10000 = FV_2.D();
       String var4 = a(-16452, -14834) + var0 + ";" + var1 + ";" + var2;
-      PF3 var5 = i(var4);
+      var5 = i(var4);
       String var3 = var10000;
       PF3 var7 = var5;
       if (var3 == null) {
@@ -111,8 +114,9 @@ public final class Fk2 {
    }
 
    public static PF3 o(int var0, int var1, float var2) {
+      int var5;
       int var4 = Math.max(var0, var1);
-      int var5 = var0 * 2 + var4 * 2;
+      var5 = var0 * 2 + var4 * 2;
       BufferedImage var6 = new BufferedImage(var5, var5, 2);
       String var10000 = FV_2.D();
       Graphics2D var7 = var6.createGraphics();
@@ -151,6 +155,7 @@ public final class Fk2 {
    }
 
    public static List O(BufferedImage var0, com.finalshell.ui.model.Fj2 var1) {
+      boolean var5;
       boolean var2 = var1.equals(com.finalshell.ui.model.Fj2.horizontalStretch) || var1.equals(com.finalshell.ui.model.Fj2.verticalStretch);
       int var3 = (
             !var1.equals(com.finalshell.ui.model.Fj2.horizontalStretch) && !var1.equals(com.finalshell.ui.model.Fj2.horizontalContent)
@@ -159,7 +164,7 @@ public final class Fk2 {
          )
          - 1;
       ArrayList var4 = new ArrayList();
-      EZ var5 = null;
+      var5 = null;
 
       for (int var7 = 1; var7 < var3; var7++) {
          int var8;
@@ -202,11 +207,12 @@ public final class Fk2 {
    }
 
    public static List h(boolean[] var0) {
+      int var5;
       String var10000 = FV_2.D();
       ArrayList var2 = new ArrayList();
       EZ var3 = null;
       String var1 = var10000;
-      int var5 = 0;
+      var5 = 0;
 
       while (true) {
          if (var5 < var0.length) {
@@ -325,6 +331,7 @@ public final class Fk2 {
    }
 
    public static LC_2 D(com.finalshell.ui.model.Nu2 var0) {
+      LC_2 var5;
       String var10000 = FV_2.D();
       LC_2 var2 = new LC_2();
       Iterator var3 = var0.b().keySet().iterator();
@@ -332,7 +339,6 @@ public final class Fk2 {
 
       while (true) {
          if (var3.hasNext()) {
-      boolean var5;
             String var4 = (String)var3.next();
             var5 = var2;
             if (var1 != null) {
@@ -341,7 +347,6 @@ public final class Fk2 {
 
             var2.C(var4, y(var0.S(var4)));
             if (var1 == null) {
-      boolean var5;
                continue;
             }
          }
@@ -1171,7 +1176,8 @@ public final class Fk2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var5 = new String[2];
+      String[] var5;
+      var5 = new String[2];
       int var3 = 0;
       String var2 = "²õ&Xö>\u0006L$%\u001aÏv";
       int var4 = "²õ&Xö>\u0006L$%\u001aÏv".length();
@@ -1264,7 +1270,6 @@ public final class Fk2 {
       }
    }
 }
-
 
 
 

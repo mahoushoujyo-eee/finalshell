@@ -22,13 +22,14 @@ public class NF implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var25;
       int var2 = LocalMachinePanel.i();
       if (var2 == 0) {
          Object var3 = 234982775223540525L;
          Ref.g(234982775223540525L, var3);
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var6 = 410760064034581011L;
-         Object[] var5 = var10002;
+         Object var5 = var10002;
          var10002 = Ref.h(410760064034581011L, var5, var6);
 
          try {

@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.ConnectionProperty;
@@ -11,7 +11,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class Mv2 implements Gq2, Hs2 {
-   public Connection12 L;
+   public FileTransferConnection L;
    public String d;
    public JTextField v;
    public static String[] a;
@@ -33,10 +33,10 @@ public class Mv2 implements Gq2, Hs2 {
 
    @Override
    public boolean C(String var1) {
-      int var10000 = (Connection12.X()) ? 1 : 0;
+      int var10000 = (FileTransferConnection.X()) ? 1 : 0;
       Object[] var3 = new Object[]{a(-25510, -22491), a(-25511, 20551)};
       int var4 = JOptionPane.showOptionDialog(null, var1, a(-25512, -24787), -1, 2, null, var3, var3[0]);
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       var10000 = var4;
       if (var2) {
          var10000 = var4 == 0 ? 1 : 0;
@@ -57,7 +57,7 @@ public class Mv2 implements Gq2, Hs2 {
 
    @Override
    public boolean G(String var1) {
-      Connection12.X();
+      FileTransferConnection.X();
       Object[] var10001 = new Object[1];
       Object var5 = 479150787716720832L;
       ((Object[])false)[this] = (boolean)((JTextField)Ref.g(479150787716720832L, var5));
@@ -96,7 +96,7 @@ public class Mv2 implements Gq2, Hs2 {
       Ref.h(463613233744937961L, var9, var10);
       ConnectionProperty var10003 = (ConnectionProperty)(Registry.emptyArgs());
       long var12 = 205360729747621821L;
-      Object[] var11 = var10003;
+      Object var11 = var10003;
       var10003 = Ref.h(205360729747621821L, var11, var12);
 
       try {
@@ -108,12 +108,12 @@ public class Mv2 implements Gq2, Hs2 {
       return N22.j(var10003.x$U(), var2, var3, var4, var5, var6);
    }
 
-   public Connection12 v() {
+   public FileTransferConnection v() {
       Object var1 = 335447551291092209L;
-      return (Connection12)Ref.g(335447551291092209L, var1);
+      return (FileTransferConnection)Ref.g(335447551291092209L, var1);
    }
 
-   public void V(Connection12 var1) {
+   public void V(FileTransferConnection var1) {
       long var3 = 335447551291092209L;
       Ref.s(335447551291092209L, var1, var3);
    }
@@ -938,7 +938,7 @@ public class Mv2 implements Gq2, Hs2 {
       while (true) {
          char[] var10002;
          label38: {
-            char[] var10003 = var4.substring(++var2, var2 + var3).toCharArray();
+            char var10003 = var4.substring(++var2, var2 + var3).toCharArray();
             int var10004 = var10003.length;
             int var8 = 0;
             byte var17 = 64;

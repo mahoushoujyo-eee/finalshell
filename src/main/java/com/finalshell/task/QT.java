@@ -21,6 +21,8 @@ public class QT implements Runnable {
 
    @Override
    public void run() {
+      boolean var134;
+      boolean var138;
       int[] var1 = DU.u();
       Object var4 = 475144306283845054L;
       Ref.g(475144306283845054L, var4);
@@ -90,7 +92,7 @@ var10018 = new String(((JPasswordField)Ref.g(228183978052282907L, var42)).getPas
             Object var139 = Ref.g(181350030129350521L, var48);
             String var10012 = (String)(Registry.emptyArgs());
             long var51 = 191807067392725406L;
-            Object[] var50 = var10012;
+            Object var50 = var10012;
             var10012 = Ref.h(191807067392725406L, var50, var51);
 
             try {

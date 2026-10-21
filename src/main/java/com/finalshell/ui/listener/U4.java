@@ -24,7 +24,7 @@ public class U4 implements ActionListener {
       Ref.g(487595327584450503L, var5);
       String var10003 = (String)(Registry.emptyArgs());
       long var8 = 292557478156152530L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(292557478156152530L, var7, var8);
 
       try {

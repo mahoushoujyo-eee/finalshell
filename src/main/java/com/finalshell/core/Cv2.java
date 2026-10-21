@@ -2669,6 +2669,7 @@ public abstract class Cv2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[51];
       int var11 = 0;
       String var10 = "Xòþÿ àPAöê\u0006sÂ7#®t@\u0010\u000e\u009a?CO¼X\u009cðê\u0016ê&3ºó\u0005{±F\u00adº\u000e\u0019<è\u0006\u0010ºà9ÓÓë¯\r\u008f\u001a÷Vð\u000b\"fÔL\u0002\u0000\u0006s\u00889P\u0096pÕ¸\u0080\u0004b\u0091,\u00ad.\n¿\u009f¡$g[\u0097gü\u0016\u001ckE\u0093¸ÚÑãt¶Wÿñ5,\u0012\u0096F\u001b\u008a(1i,\u0081}Ø\u0094þ\u0007µôCM\u0080\u009a´\u0012ZÚ¾ú(GQRÖ\u0088\u0002?B¾3\u009fvf\u0007÷¦\u000b\u0007\u009fÓ\u0091\fBß\u0089\u008e*ée0é\u00804\u0083\u0006´ûs;Â¤\u001a¶Ñ#\u009b\u009a|1ì8Ì.ÆW\u001c[\u0080å¾954PË\u0002$£\u0010²4)êIuóIò0óÊä\u0090$½\f+\b¤t\u008f¶ÑÛ\u007fýæ,\u0019\fd\u007f\u009cGNZþÈbkòÚNMô\u0003óf]}¦M\u000bª\u0002e\u008e\u0011»\u009e\u0098\u008fµó¦\u0013÷óQlï\u0097\u00adðô\u001cIc×|RYûl\u008e'\u008f\u0095ý°\u0002\f\u007f;ÚFý¤µ8Nïò\u0018\u000b\u0090¾í\u0018YÜh¦\u0006B_\u0011Úå½Ûb\u000e6jåÜ\u0013\u0089§+¤gÕ\u0003\u0001\u000e-\r\u00824`¨\u009a\tF¹\u007fÿ&Û§\u0013ñ»¨b×\u0015BüÔ(1Ð`\u001aÆ~t»g\u000b¼Cb»³St\u0096ºð\u001e\u0002÷¿\u000fù#Ýuö}h4\ftHÓ\u0011\u0095}\u000b»\u0082ºÉ\u0082\u001b~z2q¹\tÕåOo\u0016ÉÆÄ'\r}£U½¿¨6¼\r\u0005ïÇ®\re\u001a£\u008a]sîgP\u0085\u0097YF\u000fßT\u009bJJx\t`CÞ»Ï$2\u0080\u000b:w¸!óû=B¼Þ\n\n\u0088+G²»\u0089\f=\u008f]\bfyHo\u0096GÇ<\u0005Ô\r³Ý\u0004\u0013KËDæþ$\u0018E\n\u007fÂ\nqh?\u0015¯\nH\bh¥\u0089ô®4ÀR\b\u0081¡\u0017Í\u0016\u001f-¼\b\u0005ù\u0087Æ\u0004no\u0090\u0013®ÞøDipêÏT.\t \b-\u0010½M\u0018ô\u000f\u0090ÎðÈSÊÜÂ\u009aª\u009a\b[î6\u000et¸E\u0096¥¨V{\u0005\u009b1¦V®\u000bÑÁ÷¡+\u0016KÛ\u0094Em\u000eaªÖ{\u0017ï1Rª!þ÷\u0080\u0011\u000fõ\u000eK\u0012\u0081q\u0094>Ù\u009d\u00ad||\u008d5\u0006¸ÄòÜòX\u0010òW«K\u009df\u0017¯¬¤¼Ë\u0005½\u0011´\u00130¹+¨\u0013í¥|½X4î¯ôä\u0086Õu$";
@@ -2684,7 +2685,6 @@ public abstract class Cv2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

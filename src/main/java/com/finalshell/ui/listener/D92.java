@@ -37,7 +37,7 @@ public class D92 implements MouseListener {
                File var10004;
                String var10006 = (String)(Registry.emptyArgs());
                long var15 = 432693308750455264L;
-               Object[] var14 = var10006;
+               Object var14 = var10006;
                var10006 = Ref.h(432693308750455264L, var14, var15);
 
                try {
@@ -49,7 +49,7 @@ public class D92 implements MouseListener {
 var5 = new D92(var10006);
                File var6 = var10004;
                Object var16 = 483663784764278403L;
-               com.finalshell.ui.frame.U var7 = (com.finalshell.ui.frame.U)SwingUtilities.windowForComponent((Vn2)Ref.g(483663784764278403L, var16));
+               com.finalshell.ui.frame.MainFrame var7 = (com.finalshell.ui.frame.MainFrame)SwingUtilities.windowForComponent((Vn2)Ref.g(483663784764278403L, var16));
                SwingUtilities.invokeLater(new Qz2(this, var6, var7));
             }
          }

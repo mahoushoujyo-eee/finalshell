@@ -4,16 +4,16 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class CG3 implements KeyListener {
-   public final Connection4 r;
+   public final ConnectionInfoPanel r;
 
-   public CG3(Connection4 var1) {
+   public CG3(ConnectionInfoPanel var1) {
       this.r = var1;
    }
 
@@ -27,7 +27,8 @@ public class CG3 implements KeyListener {
 
    @Override
    public void keyPressed(KeyEvent var1) {
-      int[] var2 = Connection4.I();
+      boolean var67;
+      int[] var2 = ConnectionInfoPanel.I();
       if (var1.getModifiers() <= 0) {
          String var3 = (var1.getKeyChar() + "").toLowerCase();
          CG3 var10000 = var3.length();
@@ -38,12 +39,12 @@ public class CG3 implements KeyListener {
 
             var10000 = this;
             Object var12 = 403838484831587097L;
-            ((Connection4)Ref.g(403838484831587097L, var12)).getMinSelectionRow();
+            ((ConnectionInfoPanel)Ref.g(403838484831587097L, var12)).getMinSelectionRow();
          }
 
          CG3 var4 = var10000;
          Object var14 = 403838484831587097L;
-         int var5 = ((Connection4)Ref.g(403838484831587097L, var14)).getRowCount();
+         int var5 = ((ConnectionInfoPanel)Ref.g(403838484831587097L, var14)).getRowCount();
          boolean var6 = false;
          int var7 = var4 + 1;
 
@@ -78,7 +79,7 @@ public class CG3 implements KeyListener {
                            Ck4 var11 = (Ck4)var9;
                            String var10004 = (String)(Registry.emptyArgs());
                            long var21 = 396085629172753019L;
-                           Object[] var20 = var10004;
+                           Object var20 = var10004;
                            var10004 = Ref.h(396085629172753019L, var20, var21);
 
                            try {
@@ -104,7 +105,7 @@ public class CG3 implements KeyListener {
                         Tf4 var54 = (Tf4)var9;
                         String var62 = (String)(Registry.emptyArgs());
                         long var23 = 179612178163941306L;
-                        Object[] var22 = var62;
+                        Object var22 = var62;
                         var62 = Ref.h(179612178163941306L, var22, var23);
 
                         try {
@@ -128,9 +129,9 @@ public class CG3 implements KeyListener {
                if (var59 != null) {
                   var59 = this;
                   Object var24 = 403838484831587097L;
-                  ((Connection4)Ref.g(403838484831587097L, var24)).setSelectionRow(var7);
+                  ((ConnectionInfoPanel)Ref.g(403838484831587097L, var24)).setSelectionRow(var7);
                   Object var26 = 403838484831587097L;
-                  ((Connection4)Ref.g(403838484831587097L, var26)).scrollRowToVisible(var7);
+                  ((ConnectionInfoPanel)Ref.g(403838484831587097L, var26)).scrollRowToVisible(var7);
                   var6 = true;
                   if (var2 != null) {
                      break;
@@ -161,7 +162,7 @@ public class CG3 implements KeyListener {
             Ref.g(403838484831587097L, var28);
             DefaultMutableTreeNode var10005 = (DefaultMutableTreeNode)(Registry.packArgs((int)var48));
             long var31 = 290714206414786866L;
-            Object[] var30 = var10005;
+            Object var30 = var10005;
             var10005 = Ref.h(290714206414786866L, var30, var31);
 
             try {
@@ -183,7 +184,7 @@ public class CG3 implements KeyListener {
                            Ck4 var55 = (Ck4)var50;
                            String var10006 = (String)(Registry.emptyArgs());
                            long var33 = 396085629172753019L;
-                           Object[] var32 = var10006;
+                           Object var32 = var10006;
                            var10006 = Ref.h(396085629172753019L, var32, var33);
 
                            try {
@@ -209,7 +210,7 @@ public class CG3 implements KeyListener {
                         Tf4 var56 = (Tf4)var50;
                         String var70 = (String)(Registry.emptyArgs());
                         long var35 = 179612178163941306L;
-                        Object[] var34 = var70;
+                        Object var34 = var70;
                         var70 = Ref.h(179612178163941306L, var34, var35);
 
                         try {
@@ -232,9 +233,9 @@ public class CG3 implements KeyListener {
 
                if (var67) {
                   Object var36 = 403838484831587097L;
-                  ((Connection4)Ref.g(403838484831587097L, var36)).setSelectionRow((int)var48);
+                  ((ConnectionInfoPanel)Ref.g(403838484831587097L, var36)).setSelectionRow((int)var48);
                   Object var38 = 403838484831587097L;
-                  ((Connection4)Ref.g(403838484831587097L, var38)).scrollRowToVisible((int)var48);
+                  ((ConnectionInfoPanel)Ref.g(403838484831587097L, var38)).scrollRowToVisible((int)var48);
                   var6 = true;
                   if (var2 != null) {
                      break;

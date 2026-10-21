@@ -17,6 +17,7 @@ public class Fh4 implements Runnable {
 
    @Override
    public void run() {
+      Integer var45;
       D82_2.Q();
       Object var2 = 391045987025414928L;
       Ref.g(391045987025414928L, var2);
@@ -35,7 +36,7 @@ public class Fh4 implements Runnable {
       Object var10004 = Ref.g(391045987025414928L, var6);
       Runnable var10005 = Registry.emptyArgs();
       long var9 = 341542274982347937L;
-      Object[] var8 = var10005;
+      Object var8 = var10005;
       var10005 = Ref.h(341542274982347937L, var8, var9);
 
       try {
@@ -50,7 +51,7 @@ public class Fh4 implements Runnable {
       Ref.g(391045987025414928L, var10);
       Boolean var10006 = (Boolean)(Registry.emptyArgs());
       long var13 = 434390456563867566L;
-      Object[] var12 = var10006;
+      Object var12 = var10006;
       var10006 = Ref.h(434390456563867566L, var12, var13);
 
       try {
@@ -92,9 +93,9 @@ public class Fh4 implements Runnable {
          System.currentTimeMillis();
          Object var20 = 391045987025414928L;
          Object var10010 = Ref.g(391045987025414928L, var20);
-         Object[] var10011 = Registry.emptyArgs();
+         Object var10011 = Registry.emptyArgs();
          long var23 = 175209733329813569L;
-         Object[] var22 = var10011;
+         Object var22 = var10011;
          var10011 = Ref.h(175209733329813569L, var22, var23);
 
          try {

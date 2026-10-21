@@ -5,8 +5,8 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.task.VI;
 import com.finalshell.ui.listener.Dk_4;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Address;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.Component;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -20,8 +20,8 @@ import javax.swing.table.TableCellEditor;
 public class MT extends AbstractCellEditor implements TableCellEditor {
    public Object T;
    public Object w;
-   public Connection4 Y;
-   public Address s;
+   public ConnectionInfoPanel Y;
+   public FileBrowserAddressBar s;
    public Ne4 L;
    public com.finalshell.ui.panel.Wb2 z;
    public JTable F;
@@ -430,7 +430,7 @@ public class MT extends AbstractCellEditor implements TableCellEditor {
          com.finalshell.ui.model.Ck4 var9 = (com.finalshell.ui.model.Ck4)var10002;
          String var46 = (String)(Registry.emptyArgs());
          long var19 = 396085629172753019L;
-         Object[] var18 = var46;
+         Object var18 = var46;
          var46 = Ref.h(396085629172753019L, var18, var19);
 
          try {
@@ -460,7 +460,7 @@ public class MT extends AbstractCellEditor implements TableCellEditor {
             Tf4 var44 = (Tf4)Ref.g(217476342349774680L, var24);
             String var10007 = (String)(Registry.emptyArgs());
             long var27 = 179612178163941306L;
-            Object[] var26 = var10007;
+            Object var26 = var10007;
             var10007 = Ref.h(179612178163941306L, var26, var27);
 
             try {
@@ -502,22 +502,22 @@ public class MT extends AbstractCellEditor implements TableCellEditor {
       return var45;
    }
 
-   public Connection4 y$a3() {
+   public ConnectionInfoPanel y$a3() {
       Object var1 = 400471378487267832L;
-      return (Connection4)Ref.g(400471378487267832L, var1);
+      return (ConnectionInfoPanel)Ref.g(400471378487267832L, var1);
    }
 
-   public void A(Connection4 var1) {
+   public void A(ConnectionInfoPanel var1) {
       long var3 = 400471378487267832L;
       Ref.s(400471378487267832L, var1, var3);
    }
 
-   public Address u() {
+   public FileBrowserAddressBar u() {
       Object var1 = 219976392524080121L;
-      return (Address)Ref.g(219976392524080121L, var1);
+      return (FileBrowserAddressBar)Ref.g(219976392524080121L, var1);
    }
 
-   public void K(Address var1) {
+   public void K(FileBrowserAddressBar var1) {
       long var3 = 219976392524080121L;
       Ref.s(219976392524080121L, var1, var3);
    }

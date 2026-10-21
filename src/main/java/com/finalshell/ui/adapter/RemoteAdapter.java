@@ -35,6 +35,8 @@ public class RemoteAdapter extends DefaultTableCellRenderer {
 
    @Override
    public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
+      Integer var46;
+      Integer var49;
       String var10000 = TunnelList.V();
       Component var8 = super.getTableCellRendererComponent(var1, var2, (boolean)var3, var4, var5, var6);
       JLabel var9 = (JLabel)var8;
@@ -43,9 +45,9 @@ public class RemoteAdapter extends DefaultTableCellRenderer {
       int var11 = var1.convertColumnIndexToModel(var6);
       YE var12 = (YE)var2;
       String var13 = "";
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var17 = 471582560640574154L;
-      Object[] var16 = var10001;
+      Object var16 = var10001;
       var10001 = Ref.h(471582560640574154L, var16, var17);
 
       try {
@@ -132,9 +134,9 @@ public class RemoteAdapter extends DefaultTableCellRenderer {
             if (var7 != null) {
                if (var35 == var39) {
                   new StringBuilder().append("");
-                  Object[] var10003 = Registry.emptyArgs();
+                  Object var10003 = Registry.emptyArgs();
                   long var21 = 437259655987883724L;
-                  Object[] var20 = var10003;
+                  Object var20 = var10003;
                   var10003 = Ref.h(437259655987883724L, var20, var21);
 
                   try {
@@ -198,9 +200,9 @@ public class RemoteAdapter extends DefaultTableCellRenderer {
 
                if (var14 != Registry.lookupField(297191265528158022L).getInt(null)) {
                   new StringBuilder().append("");
-                  Object[] var47 = Registry.emptyArgs();
+                  Object var47 = Registry.emptyArgs();
                   long var25 = 595134275840130239L;
-                  Object[] var24 = var47;
+                  Object var24 = var47;
                   var47 = Ref.h(595134275840130239L, var24, var25);
 
                   try {
@@ -1069,6 +1071,8 @@ public class RemoteAdapter extends DefaultTableCellRenderer {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      byte var49;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "枽垏\u0006(AºÓb9";
@@ -1083,7 +1087,6 @@ public class RemoteAdapter extends DefaultTableCellRenderer {
          byte var10002 = -1;
 
          while (true) {
-      byte var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -1091,7 +1094,6 @@ public class RemoteAdapter extends DefaultTableCellRenderer {
                byte var42 = var10000;
                var33 = var39;
                int var24 = var10004;
-               byte var49;
                char[] var55;
                int var10006;
                if (var10004 <= 1) {

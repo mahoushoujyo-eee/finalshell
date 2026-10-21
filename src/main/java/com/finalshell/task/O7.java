@@ -4,16 +4,16 @@ import com.finalshell.core.PG_2;
 import com.finalshell.core.Qh2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.panel.F8;
 import java.lang.reflect.InvocationTargetException;
 
 public class O7 implements Runnable {
    public final Qh2 A;
-   public final U E;
+   public final MainFrame E;
    public static long a;
 
-   public O7(U var1, Qh2 var2) {
+   public O7(MainFrame var1, Qh2 var2) {
       this.E = var1;
       this.A = var2;
    }
@@ -28,7 +28,7 @@ public class O7 implements Runnable {
          Ref.h2(270389152141252877L, var3);
          PG_2 var10002 = (PG_2)(Registry.emptyArgs());
          long var6 = 296847891750502060L;
-         Object[] var5 = var10002;
+         Object var5 = var10002;
          var10002 = Ref.h(296847891750502060L, var5, var6);
 
          try {

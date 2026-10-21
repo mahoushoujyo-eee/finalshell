@@ -2,13 +2,13 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.dialog.DownloadDialog;
+import com.finalshell.ui.dialog.DownloadProgressDialog;
 import java.lang.reflect.InvocationTargetException;
 
 public class L62 implements Runnable {
-   public final DownloadDialog O;
+   public final DownloadProgressDialog O;
 
-   public L62(DownloadDialog var1) {
+   public L62(DownloadProgressDialog var1) {
       this.O = var1;
    }
 

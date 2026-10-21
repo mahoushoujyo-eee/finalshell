@@ -14,6 +14,7 @@ public class Mx2 implements Runnable {
 
    @Override
    public void run() {
+      boolean var28;
       com.finalshell.ui.panel.Ky4[] var10000 = YT3_2.c();
       long var2 = System.currentTimeMillis();
       com.finalshell.ui.panel.Ky4[] var1 = var10000;

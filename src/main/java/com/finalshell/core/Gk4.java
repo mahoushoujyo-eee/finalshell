@@ -44,6 +44,10 @@ public class Gk4 extends Gy4 {
 
    @Override
    public void h(int var1, int var2, float[] var3) {
+      boolean var30;
+      float var33;
+      float var34;
+      float var38;
       String[] var10000 = W5.q();
       float var10 = 0.0F;
       String[] var4 = var10000;
@@ -57,7 +61,7 @@ public class Gk4 extends Gy4 {
                      label207: {
                         var5 = 0.0F;
                         float var49;
-                        var30 = (var49 = (float)var1 - this.j) == 0.0F ? 0 : (var49 < 0.0F ? -1 : 1);
+                        var30 = ((var49 = (float)var1 - this.j) == 0.0F ? 0 : (var49 < 0.0F ? -1 : 1)) != 0;
                         if (var4 != null) {
                            if (var30 >= 0) {
                               float var50;
@@ -95,7 +99,7 @@ public class Gk4 extends Gy4 {
                            }
 
                            float var52;
-                           var30 = (var52 = (float)var1 - this.j) == 0.0F ? 0 : (var52 < 0.0F ? -1 : 1);
+                           var30 = ((var52 = (float)var1 - this.j) == 0.0F ? 0 : (var52 < 0.0F ? -1 : 1)) != 0;
                         }
 
                         if (var4 == null) {
@@ -150,10 +154,10 @@ public class Gk4 extends Gy4 {
                      }
 
                      float var55;
-                     var30 = (var55 = var34 - this.j) == 0.0F ? 0 : (var55 < 0.0F ? -1 : 1);
+                     var30 = ((var55 = var34 - this.j) == 0.0F ? 0 : (var55 < 0.0F ? -1 : 1)) != 0;
                   }
 
-                  if (var30 != 0) {
+                  if (var30) {
                      var7 = Math.abs(((float)var2 - this.s) / ((float)var1 - this.j));
                      if (var4 != null) {
                         break label193;
@@ -226,8 +230,6 @@ public class Gk4 extends Gy4 {
                      if (var37 >= 0) {
                         var11 = var17 - (float) Math.PI;
                         if (var4 != null) {
-      float var38;
-      float var38;
                            break label201;
                         }
                      }
@@ -446,7 +448,6 @@ public class Gk4 extends Gy4 {
       }
    }
 }
-
 
 
 

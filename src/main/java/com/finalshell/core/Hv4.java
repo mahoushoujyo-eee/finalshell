@@ -53,7 +53,7 @@ public class Hv4 extends W5 {
       int[] var6 = new int[var4 * var5];
       int[] var7 = new int[var4 * var5];
       this.l(var1, 0, 0, var4, var5, var6);
-      byte var10 = (this.z) ? 1 : 0;
+      byte var10 = (byte)((this.z) ? 1 : 0);
       if (var3 != null) {
          if (this.z) {
             NM.g(var6, 0, var6.length);

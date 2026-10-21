@@ -51,6 +51,7 @@ public class C_ extends Y_3 {
    }
 
    public static Map K(DataInputStream var0) throws IOException {
+      HashMap var7;
       Ky4[] var10000 = Cr2_2.q$arrky_4();
       int var2 = var0.readUnsignedShort();
       Ky4[] var1 = var10000;
@@ -68,7 +69,6 @@ public class C_ extends Y_3 {
 
       while (true) {
          if (var4 < var2) {
-      V2_3[] var7;
             try {
                var7 = var3;
                if (var1 != null) {
@@ -81,7 +81,6 @@ public class C_ extends Y_3 {
                   continue;
                }
             } catch (IOException var5) {
-      V2_3[] var7;
                throw a(var5);
             }
          }
@@ -125,7 +124,6 @@ public class C_ extends Y_3 {
       return var0;
    }
 }
-
 
 
 

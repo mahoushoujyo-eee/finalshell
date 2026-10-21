@@ -62,6 +62,7 @@ public class R62 extends Rp4 {
    }
 
    public List F() {
+      ArrayList var5;
       ArrayList var2 = new ArrayList(this.l.size());
       String[] var10000 = CB3.C$arrString();
       Iterator var3 = this.l.iterator();
@@ -69,7 +70,6 @@ public class R62 extends Rp4 {
 
       while (true) {
          if (var3.hasNext()) {
-      ArrayList var5;
             File var4 = (File)var3.next();
             var5 = var2;
             if (var1 == null) {
@@ -78,7 +78,6 @@ public class R62 extends Rp4 {
 
             var2.add(new com.finalshell.ui.model.CY3(var4));
             if (var1 != null) {
-      ArrayList var5;
                continue;
             }
          }
@@ -91,6 +90,7 @@ public class R62 extends Rp4 {
    }
 
    public List B(com.finalshell.ui.model.CY3 var1) {
+      ArrayList var10;
       String[] var10000 = CB3.C$arrString();
       File[] var3 = var1.D().listFiles();
       String[] var2 = var10000;
@@ -177,7 +177,6 @@ public class R62 extends Rp4 {
       return var0;
    }
 }
-
 
 
 

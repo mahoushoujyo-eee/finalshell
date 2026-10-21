@@ -197,6 +197,7 @@ public class NW3 implements Converter {
 
    @Override
    public Object unmarshal(HierarchicalStreamReader var1, UnmarshallingContext var2) {
+      HierarchicalStreamReader var14;
       int[] var3;
       com.finalshell.ui.model.G9 var4;
       Character var16;
@@ -244,8 +245,6 @@ public class NW3 implements Converter {
                      if (var13 != 0) {
                         var11.add((com.finalshell.ui.model.N7)var2.convertAnother(var4, com.finalshell.ui.model.N7.class));
                         if (var3 != null) {
-      char var14;
-      char var14;
                            break label82;
                         }
 
@@ -257,7 +256,7 @@ public class NW3 implements Converter {
                         break label83;
                      }
 
-                     var13 = var1.getNodeName().equals(a(-24898, 26211));
+                     var13 = (var1.getNodeName().equals(a(-24898, 26211))) ? 1 : 0;
                   }
 
                   if (var13 != 0) {
@@ -1140,6 +1139,8 @@ public class NW3 implements Converter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var14;
+      char[] var20;
       String[] var5 = new String[17];
       int var3 = 0;
       String var2 = "C\tD®\"\u0016s\u0004¥?\u0087µ\u0003L\u000bÐ\u0006=\u0018\u000f\u008b\"E\u0004æIçõ\u0005ãØAÒì\u0005+\u0097 \u001d`\b\u0005\u0001¼\u008fm\u0014û\u0003\bó\u0018b¬¶p\u0080\u008f\u0006L\u009a!ÛçO\u0004ø\\)À\u0004\u008f^Â\u0099\u0007\u0000R,Å/{Ò\u0004\u000fá×w\u0005\u0089þ\f\u0016E";
@@ -1161,7 +1162,7 @@ public class NW3 implements Converter {
                int var6 = 0;
                byte var27 = var10000;
                var20 = var24;
-               int var14 = var10004;
+               var14 = var10004;
                byte var32;
                char[] var36;
                int var10006;
@@ -1257,7 +1258,6 @@ public class NW3 implements Converter {
       }
    }
 }
-
 
 
 

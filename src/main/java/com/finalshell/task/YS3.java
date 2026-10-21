@@ -1,7 +1,7 @@
 package com.finalshell.task;
 
 import com.finalshell.core.A0;
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -33,7 +33,10 @@ public class YS3 implements Runnable {
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    @Override
    public void run() {
-      String[] var10000 = PingMessageR.N();
+      Throwable var35;
+      YS3 var36;
+      IOException var37;
+      String[] var10000 = PingMessageReceiver.N();
       byte[] var2 = new byte[this.W.q];
       int var3 = 0;
       long var4 = System.currentTimeMillis();

@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.core.L0;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
@@ -17,7 +17,7 @@ public class TW3 extends Thread {
 
    @Override
    public void run() {
-      boolean var10000 = Connection12.d$boolean();
+      boolean var10000 = FileTransferConnection.d$boolean();
       long var2 = System.currentTimeMillis();
       boolean var1 = var10000;
 

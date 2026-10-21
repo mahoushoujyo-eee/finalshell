@@ -176,10 +176,11 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public void f(int var1) {
+      int[] var2;
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       int var3 = var1 - this.X;
       this.X = var1;
-      int[] var2 = var10000;
+      var2 = var10000;
       D var5 = this;
       if (var2 != null) {
          if (!this.M) {
@@ -210,9 +211,10 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public void b(int var1) {
+      int[] var2;
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       this.I = var1;
-      int[] var2 = var10000;
+      var2 = var10000;
       D var3 = this;
       if (var2 != null) {
          if (!this.M) {
@@ -232,9 +234,10 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public void Q(int var1) {
+      int[] var2;
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       this.Y = var1;
-      int[] var2 = var10000;
+      var2 = var10000;
       D var3 = this;
       if (var2 != null) {
          if (!this.M) {
@@ -254,9 +257,10 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public void I(Insets var1) {
+      int[] var2;
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       this.T = var1;
-      int[] var2 = var10000;
+      var2 = var10000;
       D var3 = this;
       if (var2 != null) {
          if (!this.M) {
@@ -276,9 +280,10 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public void H(boolean var1) {
+      int[] var2;
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       this.G = var1;
-      int[] var2 = var10000;
+      var2 = var10000;
       D var3 = this;
       if (var2 != null) {
          if (!this.M) {
@@ -292,6 +297,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public ImageIcon l() {
+      D var2;
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       ImageIcon var10000 = this.a;
       if (var1 != null) {
@@ -325,9 +331,10 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public void q(int var1) {
+      int[] var2;
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       this.z = var1;
-      int[] var2 = var10000;
+      var2 = var10000;
       D var3 = this;
       if (var2 != null) {
          if (!this.r$boolean()) {
@@ -355,9 +362,10 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public void S(String var1) {
+      int[] var2;
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       this.s = var1;
-      int[] var2 = var10000;
+      var2 = var10000;
       D var3 = this;
       if (var2 != null) {
          if (!this.r$boolean()) {
@@ -487,9 +495,11 @@ public class D extends BasicRootPaneUI implements SwingConstants {
 
    @Override
    public void propertyChange(PropertyChangeEvent var1) {
+      int[] var2;
+      D var7;
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       super.propertyChange(var1);
-      int[] var2 = var10000;
+      var2 = var10000;
       String var3 = var1.getPropertyName();
       var10000 = (int[])var3;
       if (var2 != null) {
@@ -510,7 +520,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
 
       JRootPane var4 = (JRootPane)var10000;
       int var5 = var4.getWindowDecorationStyle();
-      D var7 = this;
+      var7 = this;
       if (var2 != null) {
          this.d$void();
          if (var5 == 0) {
@@ -630,6 +640,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public void O() {
+      D var2;
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       this.y = new B_2(this);
       int[] var1 = var10000;
@@ -639,7 +650,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       this.x.addPropertyChangeListener(a(-27685, 9307), this.D);
       this.u = new com.finalshell.ui.listener.Y3(this);
       this.x.addPropertyChangeListener(a(-27702, 23514), this.u);
-      D var2 = this;
+      var2 = this;
       if (var1 != null) {
          if (!this.u$boolean()) {
             return;
@@ -654,13 +665,14 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public void A$void() {
+      D var2;
       this.x.removeWindowFocusListener(this.y);
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       this.x.removePropertyChangeListener(a(-27695, 7361), this.D);
       this.x.removePropertyChangeListener(a(-27682, 9191), this.D);
       this.x.removePropertyChangeListener(a(-27701, 20287), this.u);
       int[] var1 = var10000;
-      D var2 = this;
+      var2 = this;
       if (var1 != null) {
          if (!this.u$boolean()) {
             return;
@@ -761,8 +773,9 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public JComponent I() {
+      com.finalshell.ui.panel.V var2;
       com.finalshell.ui.panel.W var1 = new com.finalshell.ui.panel.W(this);
-      com.finalshell.ui.panel.V var2 = new com.finalshell.ui.panel.V(this);
+      var2 = new com.finalshell.ui.panel.V(this);
       var2.D(true);
       var2.setHorizontalAlignment(0);
       var2.addComponentListener(new com.finalshell.ui.listener.O2(this, var2));
@@ -779,6 +792,8 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public void Z$void() {
+      boolean var2;
+      boolean var7;
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       D var10000 = this;
       if (var1 != null) {
@@ -789,7 +804,6 @@ public class D extends BasicRootPaneUI implements SwingConstants {
          var10000 = this;
       }
 
-      boolean var2;
       JComponent[] var3;
       var2 = var10000.u$boolean();
       var3 = new JComponent[3];
@@ -797,7 +811,6 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       label53:
       if (var1 != null) {
          if (this.q) {
-      int[] var7;
             var7 = var2;
             if (var1 == null) {
                break label53;
@@ -826,7 +839,6 @@ public class D extends BasicRootPaneUI implements SwingConstants {
                }
 
                if (var7) {
-      int[] var7;
                   var7 = var2;
                   if (var1 == null) {
                      break label45;
@@ -869,6 +881,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public void n() {
+      D var2;
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       K22 var10000 = this.S;
       if (var1 != null) {
@@ -883,7 +896,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       }
 
       var10000.I(C2_2.b);
-      D var2 = this;
+      var2 = this;
       if (var1 != null) {
          if (!this.C) {
             return;
@@ -898,7 +911,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
          var10001 = this.Y > 0 ? 1 : 0;
       }
 
-      var2.S.P((boolean)var10001);
+      var2.S.P(var10001);
    }
 
    public void h() {
@@ -953,8 +966,9 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    }
 
    public ImageIcon k$ImageIcon() {
-      int[] var1;
+      List var2;
       List var7;
+      int[] var1;
       label67: {
          var1 = com.finalshell.ui.dialog.Y2.M$arrint();
          Window var10000 = this.x;
@@ -970,7 +984,6 @@ public class D extends BasicRootPaneUI implements SwingConstants {
          var7 = var10000.getIconImages();
       }
 
-      List var2;
       var2 = var7;
       var7 = var2;
       label61:
@@ -1151,6 +1164,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
 
    @Override
    public void paint(Graphics var1, JComponent var2) {
+      int var12;
       int[] var3 = com.finalshell.ui.dialog.Y2.M$arrint();
       if (this.M) {
          Graphics2D var10;
@@ -1161,8 +1175,8 @@ public class D extends BasicRootPaneUI implements SwingConstants {
                Graphics2D var4;
                label63: {
                   var4 = (Graphics2D)var1;
-                  var5 = ((((RV.X(var4)) ? 1 : 0) ? 1 : 0) != 0) != 0;
-                  byte var6 = (this.j$boolean()) ? 1 : 0;
+                  var5 = RV.X(var4);
+                  byte var6 = (byte)((this.j$boolean()) ? 1 : 0);
                   int var10000 = var6;
                   if (var3 != null) {
                      if (var6 != 0) {
@@ -2108,11 +2122,14 @@ public class D extends BasicRootPaneUI implements SwingConstants {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var12;
+      char[] var33;
+      byte[] var7;
       String[] var13 = new String[22];
       int var11 = 0;
       String var10 = "¥\u009aý\t\u0098\u0016$-h¶D÷Rëû(êÿX\u008c\u0081&{\u0097Aæ\tv\t.6)ÕVÙo/\u0014\u000fpÆâË\u0015Xx\u001e¾\u0096BY\\\n!\u0005,É\"Ù\u001b\u0005Ëé0g!\u0006ø¯´!ön\u0003\u0018sÀ\u0011Ùþ×Ì³¸½\u000b)\u001b%SîÜ×Ï$\u0019²*ºV\u001eë\u0017m\u009dG\u000f}ö*\u0007<ðÌÀ¸\u009d2Û\u0004\u0010\bu\u001eÇ\u009c\u008e\u0013Ïð\u0012\u0011¦ÎÇ\u0090ÙÆ+§\u008fHd\u001e\tkI/B\u0015¨Á%jÐ\u007fx qu!õÁ>\u001e<Õ\"B\u007fß\u0018\u00961>5\u008e\u0087\u001aìÝç»Ì=^¼Íi\u00ad\u00199\u0011-v{\u0006\nñÃñ\u0006\u001b\tP\u009bæ`¯oPùó\u0013ó\u0097\u0092á\u001b\u001d\u00ad»\u0089\u0098Ë\u000f\u0089÷¤=%P\u0005\u0019\u0017b\u000e_\u0088ÊÅAÑËRì]\u0018rz^\u0004\u0015¡'\u0011\u008c`ú\b]ûÔ)8¥\u0019&\u0012\u0088åý¯öÔ\n\u0082(³mãºùÿW½\u0081";
-      int var12 = "¥\u009aý\t\u0098\u0016$-h¶D÷Rëû(êÿX\u008c\u0081&{\u0097Aæ\tv\t.6)ÕVÙo/\u0014\u000fpÆâË\u0015Xx\u001e¾\u0096BY\\\n!\u0005,É\"Ù\u001b\u0005Ëé0g!\u0006ø¯´!ön\u0003\u0018sÀ\u0011Ùþ×Ì³¸½\u000b)\u001b%SîÜ×Ï$\u0019²*ºV\u001eë\u0017m\u009dG\u000f}ö*\u0007<ðÌÀ¸\u009d2Û\u0004\u0010\bu\u001eÇ\u009c\u008e\u0013Ïð\u0012\u0011¦ÎÇ\u0090ÙÆ+§\u008fHd\u001e\tkI/B\u0015¨Á%jÐ\u007fx qu!õÁ>\u001e<Õ\"B\u007fß\u0018\u00961>5\u008e\u0087\u001aìÝç»Ì=^¼Íi\u00ad\u00199\u0011-v{\u0006\nñÃñ\u0006\u001b\tP\u009bæ`¯oPùó\u0013ó\u0097\u0092á\u001b\u001d\u00ad»\u0089\u0098Ë\u000f\u0089÷¤=%P\u0005\u0019\u0017b\u000e_\u0088ÊÅAÑËRì]\u0018rz^\u0004\u0015¡'\u0011\u008c`ú\b]ûÔ)8¥\u0019&\u0012\u0088åý¯öÔ\n\u0082(³mãºùÿW½\u0081"
-         .length();
+      var12 = "¥\u009aý\t\u0098\u0016$-h¶D÷Rëû(êÿX\u008c\u0081&{\u0097Aæ\tv\t.6)ÕVÙo/\u0014\u000fpÆâË\u0015Xx\u001e¾\u0096BY\\\n!\u0005,É\"Ù\u001b\u0005Ëé0g!\u0006ø¯´!ön\u0003\u0018sÀ\u0011Ùþ×Ì³¸½\u000b)\u001b%SîÜ×Ï$\u0019²*ºV\u001eë\u0017m\u009dG\u000f}ö*\u0007<ðÌÀ¸\u009d2Û\u0004\u0010\bu\u001eÇ\u009c\u008e\u0013Ïð\u0012\u0011¦ÎÇ\u0090ÙÆ+§\u008fHd\u001e\tkI/B\u0015¨Á%jÐ\u007fx qu!õÁ>\u001e<Õ\"B\u007fß\u0018\u00961>5\u008e\u0087\u001aìÝç»Ì=^¼Íi\u00ad\u00199\u0011-v{\u0006\nñÃñ\u0006\u001b\tP\u009bæ`¯oPùó\u0013ó\u0097\u0092á\u001b\u001d\u00ad»\u0089\u0098Ë\u000f\u0089÷¤=%P\u0005\u0019\u0017b\u000e_\u0088ÊÅAÑËRì]\u0018rz^\u0004\u0015¡'\u0011\u008c`ú\b]ûÔ)8¥\u0019&\u0012\u0088åý¯öÔ\n\u0082(³mãºùÿW½\u0081";
+         // [VF] .length();
       char var9 = 5;
       int var17 = -1;
 
@@ -2123,7 +2140,6 @@ public class D extends BasicRootPaneUI implements SwingConstants {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -2213,7 +2229,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56
@@ -2284,7 +2300,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
                   }
 
                   var10 = "Ö$=9\u0017À~å:\t<=`\u001a¼¤\u000bi\u0094";
-                  var12 = "Ö$=9\u0017À~å:\t<=`\u001a¼¤\u000bi\u0094".length();
+                  var12 = ("Ö$=9\u0017À~å:\t<=`\u001a¼¤\u000bi\u0094".length()) != 0;
                   var9 = '\t';
                   var17 = -1;
             }

@@ -90,6 +90,7 @@ public class Zy2 extends ZH {
    }
 
    public int w(int var1) {
+      int var5;
       String[] var10000 = ZH.U();
       int var3 = 1;
       String[] var2 = var10000;
@@ -105,8 +106,6 @@ public class Zy2 extends ZH {
             var3 = var5;
             var4++;
             if (var2 == null) {
-      int var5;
-      int var5;
                continue;
             }
          }
@@ -170,7 +169,7 @@ public class Zy2 extends ZH {
                float var25;
                int var24 = (var25 = this.c - 0.0F) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
                if (var3 == null) {
-                  if (var24) {
+                  if (var24 != 0) {
                      var16.rotate((double)var11);
                   }
 
@@ -201,7 +200,6 @@ public class Zy2 extends ZH {
       }
    }
 }
-
 
 
 

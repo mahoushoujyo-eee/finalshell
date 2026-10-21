@@ -4,7 +4,7 @@ public abstract class Fq2 {
    public static IF M;
    public static Fq2 h;
 
-   IF s(String var1);
+   IF s(String var1) { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
    static {
       __vfClinit__();

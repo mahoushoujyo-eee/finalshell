@@ -241,7 +241,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
 
       try {
          if (var1 != 0) {
-            return (boolean)this.t;
+            return (this.t != 0);
          }
 
          if (this.t == 0) {

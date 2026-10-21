@@ -912,6 +912,7 @@ public class Rb2_2 implements Hs2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[10];
       int var11 = 0;
       String var10 = "©\u0003\t\u0006X\u0090¯\u0095\u0006\u008bÍ\u0013×\u00adß\u0002ß¤\u0004\u001a\u0005\u008d\u0004\tZÊßme×f<\u0000\u0005U\u0013\u0091r®\t0\u0006Î\u0002\u009aO\u0099ûÿ\u0004e\u0015b\u0006";
@@ -927,7 +928,6 @@ public class Rb2_2 implements Hs2_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

@@ -1,6 +1,6 @@
 package com.finalshell.ui.dialog;
 
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import java.awt.Frame;
 import javax.swing.JDialog;
 
@@ -13,7 +13,7 @@ public class OD extends JDialog {
       new OD(null);
    }
 
-   public OD(U var1) {
+   public OD(MainFrame var1) {
       super((Frame)var1);
       this.setTitle(a);
       this.setSize(a(23550, 6466152228272100294L), a(1126, 8136239753717779551L));

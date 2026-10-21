@@ -1,26 +1,26 @@
 package com.finalshell.task;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.reflect.Ref;
 import com.finalshell.ui.dialog.ProgressDialog;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.Component;
 import java.util.ArrayList;
 
 public class Vy2 implements Runnable {
    public String F;
-   public final Connection12 N;
+   public final FileTransferConnection N;
    public final String s;
    public final ArrayList Q;
    public final ProgressDialog f;
    public final Tf4 l;
    public final boolean T;
    public final Component O;
-   public final Address p;
+   public final FileBrowserAddressBar p;
    public static String a;
 
-   public Vy2(Address var1, Connection12 var2, String var3, ArrayList var4, ProgressDialog var5, Tf4 var6, boolean var7, Component var8) {
+   public Vy2(FileBrowserAddressBar var1, FileTransferConnection var2, String var3, ArrayList var4, ProgressDialog var5, Tf4 var6, boolean var7, Component var8) {
       this.p = var1;
       this.N = var2;
       this.s = var3;

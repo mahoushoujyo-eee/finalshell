@@ -28,6 +28,7 @@ public class Nj4 extends Nv4 implements Ak2 {
    }
 
    public static Map N(String[] var0) {
+      HashMap var8;
       String var10000 = Nv4.o();
       HashMap var2 = new HashMap();
       String[] var3 = var0;
@@ -37,7 +38,6 @@ public class Nj4 extends Nv4 implements Ak2 {
 
       while (true) {
          if (var5 < var4) {
-      HashMap var8;
             String var6 = var3[var5];
 
             try {
@@ -52,7 +52,6 @@ public class Nj4 extends Nv4 implements Ak2 {
                   continue;
                }
             } catch (Hi2 var7) {
-      HashMap var8;
                throw a(var7);
             }
          }
@@ -2348,6 +2347,7 @@ public class Nj4 extends Nv4 implements Ak2 {
    }
 
    public void w(NL3 var1, String var2, Object var3) {
+      java.lang.Class var10;
       String var4 = Nv4.o();
 
       String var10000;
@@ -3068,6 +3068,7 @@ public class Nj4 extends Nv4 implements Ak2 {
    }
 
    public List Y(Object var1) throws Exception {
+      ArrayList var9;
       ArrayList var3 = new ArrayList(this.b.length);
       String var10000 = Nv4.o();
       Nc2[] var4 = this.b;
@@ -3709,6 +3710,7 @@ public class Nj4 extends Nv4 implements Ak2 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -18574) & 65535;
       if (c[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -4495,7 +4497,7 @@ public class Nj4 extends Nv4 implements Ak2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -4523,9 +4525,11 @@ public class Nj4 extends Nv4 implements Ak2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var33;
       String[] var13 = new String[13];
       int var11 = 0;
-      String var10 = "\u0099¼\bãkr\u0086¹\u007f¦E\u0011³8}\u008c\u009bmZqkHRÛ¨8=}«\u0011ÊCRã~\u0080æÌüÿ -öæö¦Ò\u0014Ü\u000f Í\u001eoD×È·JWð¾%vÛ>¬V\u000eA4#h2\u0018D;öIUPd¡\u000e;\u0006l.ÛÐy\"Qj¡4ú-\u0004}ëø\u008f\u0005 \u0083\u0081ÿ?\n\u0001\u001cµ\f¹\u009d\u0012«\u009f<\u0014\u0003J[eaz«u5ãõÝ\u0007ïÛ\\\u0004{Wþ";
+      var10 = "\u0099¼\bãkr\u0086¹\u007f¦E\u0011³8}\u008c\u009bmZqkHRÛ¨8=}«\u0011ÊCRã~\u0080æÌüÿ -öæö¦Ò\u0014Ü\u000f Í\u001eoD×È·JWð¾%vÛ>¬V\u000eA4#h2\u0018D;öIUPd¡\u000e;\u0006l.ÛÐy\"Qj¡4ú-\u0004}ëø\u008f\u0005 \u0083\u0081ÿ?\n\u0001\u001cµ\f¹\u009d\u0012«\u009f<\u0014\u0003J[eaz«u5ãõÝ\u0007ïÛ\\\u0004{Wþ";
       int var12 = "\u0099¼\bãkr\u0086¹\u007f¦E\u0011³8}\u008c\u009bmZqkHRÛ¨8=}«\u0011ÊCRã~\u0080æÌüÿ -öæö¦Ò\u0014Ü\u000f Í\u001eoD×È·JWð¾%vÛ>¬V\u000eA4#h2\u0018D;öIUPd¡\u000e;\u0006l.ÛÐy\"Qj¡4ú-\u0004}ëø\u008f\u0005 \u0083\u0081ÿ?\n\u0001\u001cµ\f¹\u009d\u0012«\u009f<\u0014\u0003J[eaz«u5ãõÝ\u0007ïÛ\\\u0004{Wþ"
          .length();
       char var9 = 2;
@@ -4702,7 +4706,6 @@ public class Nj4 extends Nv4 implements Ak2 {
       }
    }
 }
-
 
 
 

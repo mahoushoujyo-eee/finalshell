@@ -780,6 +780,8 @@ public class CN extends FilterWriter {
    // $VF: Irreducible bytecode has more than 5 nodes in sequence and was not entirely decomposed
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static void d(List var0) {
+      boolean var17;
+      boolean var33;
       Ky4[] var10000 = Cr2_2.q$arrky_4();
       ArrayList var2 = new ArrayList();
       Ky4[] var1 = var10000;
@@ -981,7 +983,7 @@ public class CN extends FilterWriter {
          var5 = 0;
          var6 = 0;
          char var21 = var4.charAt(var6);
-         int var33 = a(19222, 7286478498634719781L);
+         var33 = a(19222, 7286478498634719781L);
          if (var1 == null) {
             if (var21 == var33) {
                var6++;
@@ -2058,6 +2060,8 @@ public class CN extends FilterWriter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean j;
+      char[] var33;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "Ò\u001e\u000f\u0018\u001e\u001dçö'\u0007+=p\n[\u009a²\u009c\u008b\u0086Ü\u0085@iÇðí³è\u00adÄzEZ\u0005\u0002Ï\u001d";
@@ -2072,7 +2076,6 @@ public class CN extends FilterWriter {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label71: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

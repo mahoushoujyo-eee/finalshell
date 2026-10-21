@@ -30,6 +30,7 @@ public class Nc2 implements Comparable {
 
    public Nc2(java.lang.Class var1, Ph2 var2) {
    super();
+   int var18;
       String var3;
       this.s = false;
       this.q = false;

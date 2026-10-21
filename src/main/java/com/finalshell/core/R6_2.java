@@ -927,6 +927,8 @@ public class R6_2 extends Fr2_2 implements X_3_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var11;
+      char[] var22;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "\u0019\t\u0007·ãÿÉ@¤\u0016";
@@ -941,7 +943,6 @@ public class R6_2 extends Fr2_2 implements X_3_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var22;
             label62: {
                char[] var26 = var10001.toCharArray();
                int var10004 = var26.length;

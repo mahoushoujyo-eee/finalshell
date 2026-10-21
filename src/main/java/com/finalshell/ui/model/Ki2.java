@@ -14,13 +14,13 @@ public class Ki2 implements Comparator {
          if (var4 == 0) {
             Class var5 = var1.getReturnType();
             Class var6 = var2.getReturnType();
-            byte var8 = (var5.equals(var6)) ? 1 : 0;
+            byte var8 = (byte)((var5.equals(var6)) ? 1 : 0);
             if (var3 == 0) {
                if (var8 != 0) {
                   return 0;
                }
 
-               var8 = (var5.isAssignableFrom(var6)) ? 1 : 0;
+               var8 = (byte)((var5.isAssignableFrom(var6)) ? 1 : 0);
             }
 
             if (var3 == 0) {
@@ -28,7 +28,7 @@ public class Ki2 implements Comparator {
                   return -1;
                }
 
-               var8 = (var6.isAssignableFrom(var5)) ? 1 : 0;
+               var8 = (byte)((var6.isAssignableFrom(var5)) ? 1 : 0);
             }
 
             if (var3 == 0) {

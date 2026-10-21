@@ -57,6 +57,7 @@ public class RT implements Serializable {
 
    @Override
    public boolean equals(Object var1) {
+      boolean var5;
       int[] var2 = com.finalshell.ui.panel.KD3.u();
       Object var10000 = var1;
       if (var2 == null) {
@@ -72,7 +73,7 @@ public class RT implements Serializable {
          return var4;
       } else if (var4) {
          RT var3 = (RT)var1;
-         boolean var5 = this.W().equals(var3.W());
+         var5 = this.W().equals(var3.W());
          if (var2 == null) {
             if (!var5) {
                return false;
@@ -96,6 +97,7 @@ public class RT implements Serializable {
    }
 
    public static boolean g(List var0, List var1) {
+      boolean var5;
       int[] var2;
       List var10000;
       var2 = com.finalshell.ui.panel.KD3.u();

@@ -36,7 +36,7 @@ public class KN3 implements ActionListener {
          var14 = var14 == 2 ? 1 : 0;
       }
 
-      Registry.packArgs(var10003, (boolean)var14);
+      Registry.packArgs(var10003, var14);
       long var9 = 364338532999266861L;
       Ref.h2(364338532999266861L, var9);
 

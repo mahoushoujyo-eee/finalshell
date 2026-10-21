@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.InputStream;
 import java.io.OutputStream;
 
@@ -65,7 +65,8 @@ public class Cm2 {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void u(long var1, int var3, int var4) {
       long var14;
-      String[] var10000 = PingMessageR.N();
+      InterruptedException var15;
+      String[] var10000 = PingMessageReceiver.N();
       long var6 = (long)(1000.0F * (float)var4 / (float)var3);
       String[] var5 = var10000;
       long var8 = System.currentTimeMillis() - var1;

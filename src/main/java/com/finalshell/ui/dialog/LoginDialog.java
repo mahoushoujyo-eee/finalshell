@@ -4,7 +4,7 @@ import com.finalshell.core.Lv4_2;
 import com.finalshell.crypto.ConnectHost;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.listener.O7_2;
 import com.finalshell.ui.listener.Y1;
 import com.finalshell.ui.listener.YR;
@@ -28,8 +28,9 @@ public class LoginDialog extends JDialog {
    public static String[] a;
    public static String[] b;
 
-   public LoginDialog(U var1, Lv4_2 var2, ConnectHost var3) {
+   public LoginDialog(MainFrame var1, Lv4_2 var2, ConnectHost var3) {
       super((Frame)var1);
+      JCheckBox var20;
       long var9 = 122410195226651561L;
       Ref.s(122410195226651561L, var2, var9);
       long var11 = 599351420990196803L;
@@ -58,7 +59,7 @@ public class LoginDialog extends JDialog {
 
       JCheckBox var10007 = new JCheckBox(a(22739, -19866), false);
       long var21 = 467359613916331212L;
-      JCheckBox var20 = var10007;
+      var20 = var10007;
       Ref.s(467359613916331212L, var20, var21);
       Object var22 = 467359613916331212L;
       Object[] var10009 = Registry.packArgs(Ref.g(467359613916331212L, var22));
@@ -94,6 +95,7 @@ public class LoginDialog extends JDialog {
    }
 
    public void V() {
+      long var20;
       Object var3 = 551683023645458635L;
       String var2 = ((JTextField)Ref.g(551683023645458635L, var3)).getText().trim();
       Object var5 = 599351420990196803L;
@@ -125,7 +127,7 @@ public class LoginDialog extends JDialog {
             Ref.h(410905379772103887L, var15, var16);
             Object var17 = 122410195226651561L;
             Object[] var10009 = Registry.packArgs(Ref.g(122410195226651561L, var17));
-            long var20 = 370860320396635908L;
+            var20 = 370860320396635908L;
             Object[] var19 = var10009;
             Ref.h(370860320396635908L, var19, var20);
 
@@ -950,6 +952,7 @@ public class LoginDialog extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[11];
       int var3 = 0;
       String var2 = "ÁW9=\u0007\u001dË\u0080\u0097\u0019\\`\u0017-t\\\u0002匕淇\r\u0097,à\u0012\u007fºß=H\u0086^ÞÜ\u0006轂儌疤戮咾?\u0011wi6LLB$7ujó\u001a>êr\u0010'\u0011\u0099[!üGgÙ\u0093¹ör\u0080XþRn{\u0002碊宐\u0005讓佒痙把向\u0004Gx5\u0012";
@@ -965,7 +968,6 @@ public class LoginDialog extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      Object[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -32,7 +32,7 @@ public class K72 implements TreeSelectionListener {
       Ref.g(418996528515713032L, var9);
       DefaultMutableTreeNode var10004 = (DefaultMutableTreeNode)(Registry.emptyArgs());
       long var12 = 148691699844242618L;
-      Object[] var11 = var10004;
+      Object var11 = var10004;
       var10004 = Ref.h(148691699844242618L, var11, var12);
 
       try {

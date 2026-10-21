@@ -6,7 +6,7 @@ public abstract class L_6 {
    public static java.lang.Class r;
    public static Method F;
 
-   void l(Object var1);
+   void l(Object var1) { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
    static {
       __vfClinit__();

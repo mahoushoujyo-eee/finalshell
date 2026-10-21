@@ -16,10 +16,11 @@ public class ZX_2 {
    public static Integer[] c;
 
    public static void main(String[] var0) {
+      Boolean var5;
       ZX_2 var10001 = new ZX_2(a);
-      Object[] var10002 = Registry.packArgs(a(11769, 3652905388264958844L));
+      Object var10002 = Registry.packArgs(a(11769, 3652905388264958844L));
       long var2 = 416740220276092047L;
-      Object[] var1 = var10002;
+      Object var1 = var10002;
       var10002 = Ref.h(416740220276092047L, var1, var2);
 
       try {
@@ -32,12 +33,13 @@ public class ZX_2 {
    }
 
    public ZX_2(String var1) {
+      long var5;
       ArrayList var10001 = new ArrayList();
       long var3 = 146154677724726531L;
       ArrayList var2 = var10001;
       Ref.s(146154677724726531L, var2, var3);
       ArrayList var10002 = new ArrayList();
-      long var5 = 232915715875859675L;
+      var5 = 232915715875859675L;
       ArrayList var4 = var10002;
       Ref.s(232915715875859675L, var4, var5);
       long var7 = 534533505321913417L;

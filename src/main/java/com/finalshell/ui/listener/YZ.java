@@ -61,7 +61,7 @@ public class YZ implements ActionListener {
 
       String var31 = (String)(Registry.emptyArgs());
       long var25 = 498856411508641826L;
-      Object[] var24 = var31;
+      Object var24 = var31;
       var31 = Ref.h(498856411508641826L, var24, var25);
 
       try {

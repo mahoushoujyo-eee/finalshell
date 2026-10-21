@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import javax.swing.event.TreeExpansionEvent;
 
 public class Va2 implements Runnable {
    public final TreeExpansionEvent E;
-   public final Connection4 Y;
+   public final ConnectionInfoPanel Y;
    public static String a;
 
-   public Va2(Connection4 var1, TreeExpansionEvent var2) {
+   public Va2(ConnectionInfoPanel var1, TreeExpansionEvent var2) {
       this.Y = var1;
       this.E = var2;
    }

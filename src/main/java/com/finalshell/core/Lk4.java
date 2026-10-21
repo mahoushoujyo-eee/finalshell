@@ -230,7 +230,7 @@ public class Lk4 extends L42 implements W2_3, Eh2, Sa2 {
       int var8;
       label73: {
          int var4 = var10;
-         byte var5 = (this.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+         byte var5 = (byte)((this.getComponentOrientation().isLeftToRight()) ? 1 : 0);
          int var6 = this.getWidth();
          var7 = this.getHeight();
          int var11 = var5;

@@ -10,9 +10,9 @@ import java.lang.reflect.InvocationTargetException;
 public class FW extends MouseAdapter {
    public final Color s;
    public final Color H;
-   public final com.finalshell.ui.frame.U p;
+   public final com.finalshell.ui.frame.MainFrame p;
 
-   public FW(com.finalshell.ui.frame.U var1, Color var2, Color var3) {
+   public FW(com.finalshell.ui.frame.MainFrame var1, Color var2, Color var3) {
       this.p = var1;
       this.s = var2;
       this.H = var3;
@@ -35,7 +35,7 @@ public class FW extends MouseAdapter {
       }
 
       Object var7 = 572351643511277543L;
-      com.finalshell.ui.frame.U var2 = (com.finalshell.ui.frame.U)Ref.g(572351643511277543L, var7);
+      com.finalshell.ui.frame.MainFrame var2 = (com.finalshell.ui.frame.MainFrame)Ref.g(572351643511277543L, var7);
       Object var9 = 572351643511277543L;
       Ref.g(572351643511277543L, var9);
       Object var11 = 488270198363831547L;

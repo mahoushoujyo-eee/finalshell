@@ -128,7 +128,7 @@ public class Qy2 implements CW3 {
 
          if (var4 != null) {
             if (var7 != 0) {
-               byte var8 = (this.k.contains(var3)) ? 1 : 0;
+               byte var8 = (byte)((this.k.contains(var3)) ? 1 : 0);
                if (var4 == null) {
                   return var8 != 0;
                }

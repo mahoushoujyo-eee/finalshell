@@ -22,16 +22,16 @@ public class T2_3 extends T4 {
    @Override
    public void layoutContainer(Container var1) {
       String var10000 = com.finalshell.ui.panel.Co2.U$String();
-      byte var3 = (this.l.s.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      byte var3 = (byte)((this.l.s.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       Insets var4 = this.l.getInsets();
       String var2 = var10000;
-      byte var5 = (this.l.i()) ? 1 : 0;
+      byte var5 = (byte)((this.l.i()) ? 1 : 0);
       int var6 = this.l.a.getText() != null ? 1 : 0;
       int var7 = var5 != 0 && this.l.o.getText() != null ? 1 : 0;
       int var8 = var5 != 0 && this.l.U.getText() != null ? 1 : 0;
-      this.l.a.setVisible((boolean)var6);
-      this.l.o.setVisible((boolean)var7);
-      this.l.U.setVisible((boolean)var8);
+      this.l.a.setVisible(var6);
+      this.l.o.setVisible(var7);
+      this.l.U.setVisible(var8);
       int var19 = var5;
       if (var2 != null) {
          if (var5 != 0) {
@@ -119,10 +119,10 @@ public class T2_3 extends T4 {
 
    public Rectangle K() {
       String var10000 = com.finalshell.ui.panel.Co2.U$String();
-      byte var2 = (this.l.s.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      byte var2 = (byte)((this.l.s.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       String var1 = var10000;
       Insets var3 = this.l.getInsets();
-      byte var4 = (this.l.i()) ? 1 : 0;
+      byte var4 = (byte)((this.l.i()) ? 1 : 0);
       int var7 = var4;
       if (var1 != null) {
          if (var4 != 0) {

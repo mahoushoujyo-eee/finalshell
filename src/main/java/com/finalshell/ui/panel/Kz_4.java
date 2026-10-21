@@ -77,6 +77,7 @@ public class Kz_4 extends JComponent {
 
    @Override
    public void paint(Graphics var1) {
+      int var81;
       GradientPaint var10001 = new GradientPaint(
          0.0F,
          0.0F,
@@ -114,7 +115,7 @@ public class Kz_4 extends JComponent {
 
       ArrayList var75 = (ArrayList)(Registry.emptyArgs());
       long var41 = 174879372698186460L;
-      Object[] var40 = var75;
+      Object var40 = var75;
       var75 = Ref.h(174879372698186460L, var40, var41);
 
       try {
@@ -128,7 +129,7 @@ public class Kz_4 extends JComponent {
       Ref.g(138736762734453887L, var42);
       ArrayList var10006 = (ArrayList)(Registry.emptyArgs());
       long var45 = 397464978562681153L;
-      Object[] var44 = var10006;
+      Object var44 = var10006;
       var10006 = Ref.h(397464978562681153L, var44, var45);
 
       try {
@@ -145,13 +146,12 @@ public class Kz_4 extends JComponent {
             var11 = var10006;
             var12 = e;
             int var14 = 0;
-            byte var80 = (Registry.lookupField(472643134503049350L).getBoolean(this)) ? 1 : 0;
+            byte var80 = (byte)((Registry.lookupField(472643134503049350L).getBoolean(this)) ? 1 : 0);
             if (var9 != null) {
                if (var80 != 0) {
                   int var15 = 0;
 
                   while (var15 < var10.size()) {
-      int var81;
                      var81 = var15;
                      var10007 = (this.getWidth() - var7) / Registry.lookupField(169932481795517130L).getInt(this);
                      if (var2 == null) {
@@ -203,7 +203,6 @@ public class Kz_4 extends JComponent {
             int var61 = var80;
 
             while (var61 < var11.size()) {
-      int var81;
                var81 = var61;
                var10007 = (this.getWidth() - var7) / Registry.lookupField(169932481795517130L).getInt(this);
                if (var2 == null) {

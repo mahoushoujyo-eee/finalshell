@@ -6,7 +6,7 @@ import com.finalshell.core.UT;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.CE;
-import com.finalshell.ui.panel.CopyPanel;
+import com.finalshell.ui.panel.ProcessInfoPanel;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
@@ -15,9 +15,9 @@ import javax.swing.JPopupMenu;
 
 public class UW3 implements MouseListener {
    public final JPopupMenu O;
-   public final CopyPanel M;
+   public final ProcessInfoPanel M;
 
-   public UW3(CopyPanel var1, JPopupMenu var2) {
+   public UW3(ProcessInfoPanel var1, JPopupMenu var2) {
       this.M = var1;
       this.O = var2;
    }
@@ -28,6 +28,7 @@ public class UW3 implements MouseListener {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      Integer var68;
       UW3 var10004;
       Object var10005;
       label95: {
@@ -79,7 +80,7 @@ public class UW3 implements MouseListener {
                Ref.g(541329565900929595L, var24);
                ArrayList var10007 = Registry.emptyArgs();
                long var27 = 312359756468558646L;
-               Object[] var26 = var10007;
+               Object var26 = var10007;
                var10007 = Ref.h(312359756468558646L, var26, var27);
 
                try {
@@ -93,9 +94,9 @@ public class UW3 implements MouseListener {
                Registry.lookupField(310361548260550163L).setInt(Ref.g(455973235717218907L, var28), var6);
                Object var30 = 455973235717218907L;
                Ref.g(455973235717218907L, var30);
-               Object[] var10011 = Registry.emptyArgs();
+               Object var10011 = Registry.emptyArgs();
                long var33 = 134324574424375296L;
-               Object[] var32 = var10011;
+               Object var32 = var10011;
                var10011 = Ref.h(134324574424375296L, var32, var33);
 
                try {
@@ -129,10 +130,10 @@ public class UW3 implements MouseListener {
 
                   T32 var10015 = (T32)(Registry.emptyArgs());
                   long var41 = 539126826743258386L;
-                  Object[] var40 = var10015;
+                  Object var40 = var10015;
                   var10015 = Registry.packArgs(Ref.h(539126826743258386L, var40, var41));
                   long var43 = 205706428666299254L;
-                  Object[] var42 = var10015;
+                  Object var42 = var10015;
                   var10015 = Ref.h(205706428666299254L, var42, var43);
 
                   try {

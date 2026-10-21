@@ -215,6 +215,7 @@ public class ON3 implements Closeable, Flushable {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void j() {
+      int var8;
       String var10000 = Hi2.C();
       this.d = this.d.K;
       String var1 = var10000;
@@ -280,8 +281,6 @@ public class ON3 implements Closeable, Flushable {
                      break label60;
                   }
                } catch (Hi2 var4) {
-      int var8;
-      int var8;
                   boolean var10 = false;
                   throw a(var4);
                }
@@ -366,6 +365,7 @@ public class ON3 implements Closeable, Flushable {
    }
 
    public void d() {
+      int var8;
       String var1 = Hi2.C();
 
       RC var10000;
@@ -770,7 +770,6 @@ public class ON3 implements Closeable, Flushable {
       }
    }
 }
-
 
 
 

@@ -4,7 +4,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.AM;
 import com.finalshell.ui.panel.AppendCarriageReturnCRPanel;
-import com.finalshell.ui.panel.Copy3;
+import com.finalshell.ui.panel.CommandListPanel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.lang.reflect.InvocationTargetException;
@@ -13,11 +13,11 @@ import javax.swing.JPopupMenu;
 
 public class AddCommandListener extends MouseAdapter {
    public final AppendCarriageReturnCRPanel j;
-   public final Copy3 k;
+   public final CommandListPanel k;
    public static String[] a;
    public static String[] b;
 
-   public AddCommandListener(Copy3 var1, AppendCarriageReturnCRPanel var2) {
+   public AddCommandListener(CommandListPanel var1, AppendCarriageReturnCRPanel var2) {
       this.k = var1;
       this.j = var2;
    }

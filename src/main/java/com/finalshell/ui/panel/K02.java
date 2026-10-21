@@ -284,7 +284,7 @@ public class K02 extends Ky4 {
          var10002 = var10002 < 0 ? 1 : 0;
       }
 
-      RV.a(var10000, var10001, (boolean)var10002);
+      RV.a(var10000, var10001, var10002);
       super.paintComponent(var1);
    }
 
@@ -1120,6 +1120,7 @@ public class K02 extends Ky4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[5];
       int var5 = 0;
       String var4 = "u(û\u0095\u0082£ëú÷îtO©Ü\u0080z²÷Pß\u001fW\u007fAB\u000f\u0019Ê\u0082'\u001b\u009b\u0087ô¿[\u0019â½C\u0091\u0003'¥I";
@@ -1134,7 +1135,6 @@ public class K02 extends Ky4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

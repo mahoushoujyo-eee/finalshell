@@ -27,6 +27,7 @@ public final class RT3 {
    }
 
    public static HashMap d(Map var0) {
+      HashMap var6;
       HashMap var2 = new HashMap(var0.size());
       String var10000 = FV_2.D();
       Iterator var3 = var0.entrySet().iterator();
@@ -34,7 +35,6 @@ public final class RT3 {
 
       while (true) {
          if (var3.hasNext()) {
-      HashMap var6;
             Entry var4 = (Entry)var3.next();
 
             try {
@@ -48,7 +48,6 @@ public final class RT3 {
                   continue;
                }
             } catch (RuntimeException var5) {
-      HashMap var6;
                throw a(var5);
             }
          }
@@ -61,6 +60,7 @@ public final class RT3 {
    }
 
    public static HashMap i(HashMap var0) {
+      HashMap var6;
       String var10000 = FV_2.D();
       HashMap var2 = new HashMap(var0.size());
       String var1 = var10000;
@@ -93,6 +93,7 @@ public final class RT3 {
    }
 
    public static LinkedHashMap r(LinkedHashMap var0) {
+      LinkedHashMap var6;
       String var10000 = FV_2.D();
       LinkedHashMap var2 = new LinkedHashMap(var0.size());
       Iterator var3 = var0.entrySet().iterator();
@@ -125,6 +126,7 @@ public final class RT3 {
    }
 
    public static Eo4 U(Eo4 var0) {
+      Eo4 var6;
       String var10000 = FV_2.D();
       Eo4 var2 = new Eo4(var0.size());
       Iterator var3 = var0.entrySet().iterator();
@@ -440,6 +442,7 @@ public final class RT3 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ 22283) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1220,7 +1223,7 @@ public final class RT3 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1338,7 +1341,6 @@ public final class RT3 {
       }
    }
 }
-
 
 
 

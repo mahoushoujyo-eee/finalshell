@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.TW3;
@@ -20,7 +20,7 @@ public class L0 {
 
    public L0(int var1) {
    super();
-      boolean var10000 = Connection12.d$boolean();
+      boolean var10000 = FileTransferConnection.d$boolean();
       Registry.lookupField(313681502140473979L).setInt(this, 0);
       boolean var2 = var10000;
       Registry.lookupField(587987719470651652L).setInt(this, 0);
@@ -86,7 +86,7 @@ public class L0 {
    }
 
    public void S$void() {
-      boolean var10000 = Connection12.X();
+      boolean var10000 = FileTransferConnection.X();
       int var2 = 0;
       boolean var1 = var10000;
       int var3 = 0;

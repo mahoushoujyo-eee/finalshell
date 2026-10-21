@@ -45,6 +45,14 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
 
    @Override
    public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
+      String var101;
+      String var104;
+      String var107;
+      Integer var112;
+      Integer var115;
+      boolean var123;
+      Integer var139;
+      Object[] var33;
       Object var21 = 181705794370842224L;
       BQ var8 = (BQ)Ref.g(181705794370842224L, var21);
       int[] var10001 = YQ.m();
@@ -71,9 +79,9 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
          throw var90.getTargetException();
       }
 
-      Object[] var10003 = Registry.packArgs(false);
+      Object var10003 = Registry.packArgs(false);
       long var26 = 190819213857712489L;
-      Object[] var25 = var10003;
+      Object var25 = var10003;
       Ref.h(190819213857712489L, var25, var26);
 
       try {
@@ -96,7 +104,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
          Object var16 = "";
          KV var10004 = (KV)(Registry.emptyArgs());
          long var28 = 249636090880581982L;
-         Object[] var27 = var10004;
+         Object var27 = var10004;
          var10004 = Ref.h(249636090880581982L, var27, var28);
 
          try {
@@ -111,9 +119,9 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
             if (var7 != null) {
                if (var14 == 0) {
                   new StringBuilder();
-                  Object[] var10006 = Registry.emptyArgs();
+                  Object var10006 = Registry.emptyArgs();
                   long var30 = 406073307634140563L;
-                  Object[] var29 = var10006;
+                  Object var29 = var10006;
                   var10006 = Ref.h(406073307634140563L, var29, var30);
 
                   try {
@@ -147,9 +155,9 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
 
                   var16 = var101;
                   if (var7 != null) {
-                     Object[] var113 = Registry.emptyArgs();
+                     Object var113 = Registry.emptyArgs();
                      long var34 = 229563943762043592L;
-                     Object[] var33 = var113;
+                     var33 = var113;
                      var113 = Ref.h(229563943762043592L, var33, var34);
 
                      try {
@@ -160,9 +168,9 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
 
                      if (var115 > 1) {
                         new StringBuilder().append((String)var16).append("┋");
-                        Object[] var10008 = Registry.emptyArgs();
+                        Object var10008 = Registry.emptyArgs();
                         long var36 = 229563943762043592L;
-                        Object[] var35 = var10008;
+                        Object var35 = var10008;
                         var10008 = Ref.h(229563943762043592L, var35, var36);
 
                         try {
@@ -177,7 +185,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
 
                   String var116 = (String)(Registry.emptyArgs());
                   long var38 = 410964816567354120L;
-                  Object[] var37 = var116;
+                  Object var37 = var116;
                   var116 = Ref.h(410964816567354120L, var37, var38);
 
                   try {
@@ -191,7 +199,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
                         new StringBuilder().append((String)var16).append("┋");
                         String var140 = (String)(Registry.emptyArgs());
                         long var40 = 410964816567354120L;
-                        Object[] var39 = var140;
+                        Object var39 = var140;
                         var140 = Ref.h(410964816567354120L, var39, var40);
 
                         try {
@@ -251,7 +259,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
                   if (var18 != null) {
                      Zh2_2 var119 = (Zh2_2)(Registry.emptyArgs());
                      long var46 = 544766541203572491L;
-                     Object[] var45 = var119;
+                     Object var45 = var119;
                      var119 = Ref.h(544766541203572491L, var45, var46);
 
                      try {
@@ -344,9 +352,9 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
 
                      label319:
                      if (var107 != null && (var7 == null || var17 != null)) {
-                        Object[] var125 = Registry.emptyArgs();
+                        Object var125 = Registry.emptyArgs();
                         long var50 = 520926529036853194L;
-                        Object[] var49 = var125;
+                        Object var49 = var125;
                         var125 = Ref.h(520926529036853194L, var49, var50);
 
                         try {
@@ -412,9 +420,9 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
                   }
 
                   int var93 = var110.size();
-                  Object[] var129 = Registry.emptyArgs();
+                  Object var129 = Registry.emptyArgs();
                   long var56 = 183746953072628965L;
-                  Object[] var55 = var129;
+                  Object var55 = var129;
                   var129 = Ref.h(183746953072628965L, var55, var56);
 
                   try {
@@ -428,7 +436,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
                   if (var7 != null) {
                      if (var93 > 0) {
                         new StringBuilder().append("");
-                        Object[] var135 = Registry.packArgs(var20);
+                        Object var135 = Registry.packArgs(var20);
                         long var57 = 443004786775321843L;
                         Object var143 = Ref.h2(443004786775321843L, var57);
 
@@ -1374,6 +1382,7 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[8];
       int var11 = 0;
       String var10 = "Þ§\t\u0012¢\u00ad~¡\u0007È½Ë\u009eú<c\u0003峡埴習\u0003íÙs\u0004侱番垗垩\u0010·O.\u0010z+Íd\u008aÕOÜ·å\u0010\u001f";
@@ -1388,7 +1397,6 @@ public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
          byte var10002 = -1;
 
          while (true) {
-      Object[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

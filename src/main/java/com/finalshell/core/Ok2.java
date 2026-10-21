@@ -170,7 +170,8 @@ public abstract class Ok2 implements CA3_2, Xd4 {
    }
 
    public static Object l(String var0, IG var1, Ks2_2[] var2) {
-      String var10000 = Hi2.C();
+      String var10000;
+      var10000 = Hi2.C();
       int var4 = h;
       String var3 = var10000;
       Ks2_2[] var5 = var2;
@@ -315,7 +316,8 @@ public abstract class Ok2 implements CA3_2, Xd4 {
    }
 
    public static Object C(String var0, Ks2_2[] var1) {
-      String var10000 = Hi2.C();
+      String var10000;
+      var10000 = Hi2.C();
       int var3 = h;
       String var2 = var10000;
       Ks2_2[] var4 = var1;
@@ -1099,6 +1101,7 @@ public abstract class Ok2 implements CA3_2, Xd4 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public static List V(String var0, Type[] var1, IG var2) {
+      Object[] var10000;
       String var3 = Hi2.C();
 
       try {
@@ -1114,7 +1117,6 @@ public abstract class Ok2 implements CA3_2, Xd4 {
 
       List var4;
       label42: {
-         Object[] var10000;
          label56: {
             label53: {
                try {
@@ -1302,7 +1304,9 @@ public abstract class Ok2 implements CA3_2, Xd4 {
    }
 
    public static String D(Object var0, En2 var1, Wr4[] var2, String var3, int var4, EP[] var5) {
-      String var10000 = Hi2.C();
+      String var10000;
+      Wr4[] var26;
+      var10000 = Hi2.C();
       YM3 var7 = new YM3(null, var4, var5);
       String var6 = var10000;
 
@@ -1334,8 +1338,6 @@ public abstract class Ok2 implements CA3_2, Xd4 {
                   var8.D(EP.WriteDateUseDateFormat, true);
                }
             } catch (RuntimeException var19) {
-      char[] var26;
-      char[] var26;
                throw a(var19);
             }
          }
@@ -1423,7 +1425,9 @@ public abstract class Ok2 implements CA3_2, Xd4 {
    }
 
    public static byte[] d(Charset var0, Object var1, En2 var2, Wr4[] var3, String var4, int var5, EP[] var6) {
-      String var10000 = Hi2.C();
+      String var10000;
+      Wr4[] var27;
+      var10000 = Hi2.C();
       YM3 var8 = new YM3(null, var5, var6);
       String var7 = var10000;
 
@@ -1513,7 +1517,9 @@ public abstract class Ok2 implements CA3_2, Xd4 {
    }
 
    public static byte[] t(Charset var0, Object var1, En2 var2, Wr4[] var3, String var4, int var5, EP[] var6) {
-      String var10000 = Hi2.C();
+      String var10000;
+      Wr4[] var27;
+      var10000 = Hi2.C();
       YM3 var8 = new YM3(null, var5, var6);
       String var7 = var10000;
 
@@ -1647,7 +1653,9 @@ public abstract class Ok2 implements CA3_2, Xd4 {
    }
 
    public static final int R(OutputStream var0, Charset var1, Object var2, En2 var3, Wr4[] var4, String var5, int var6, EP[] var7) throws IOException {
-      String var10000 = Hi2.C();
+      String var10000;
+      Wr4[] var29;
+      var10000 = Hi2.C();
       YM3 var9 = new YM3(null, var6, var7);
       String var8 = var10000;
 
@@ -1738,7 +1746,9 @@ public abstract class Ok2 implements CA3_2, Xd4 {
    }
 
    public static final int x(OutputStream var0, Charset var1, Object var2, En2 var3, Wr4[] var4, String var5, int var6, EP[] var7) throws IOException {
-      String var10000 = Hi2.C();
+      String var10000;
+      Wr4[] var29;
+      var10000 = Hi2.C();
       YM3 var9 = new YM3(null, var6, var7);
       String var8 = var10000;
 
@@ -2325,6 +2335,7 @@ public abstract class Ok2 implements CA3_2, Xd4 {
    }
 
    public Object X(HI var1) {
+      HI var10000;
       String var2 = Hi2.C();
 
       Type var5;
@@ -3752,6 +3763,8 @@ public abstract class Ok2 implements CA3_2, Xd4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var27;
+      char[] var47;
       String[] var13 = new String[14];
       int var11 = 0;
       String var10 = "¼x·ñ\u009b\u0005¡#\u0014\u009aï\u0005\u0087l¯¾ª\u0013^_\u0002\u0004Ò\u001dh\u0010)\b-HO\u0085¿\u0004ëó\u009a\u0004\u0003Â\tÁ\f\u009d(å\u0014\u0019sRö¸\u0083\u0084×\u0004ú<6\u001e\u001b:5À\u000b<¬§MÉ\n\u0085\u0091\u000bKP\u0017$U![:ô/3a2\u008b\u0012µÛ\u0089\u0082¯_JâAxpÆÐ\u0081ìUZ!,8\u00978\u000b\u0099n\u008cÄ\u0099\u00adyP\u0097¤ç×@´*\u00ad\u008aGKAN\u0099Ö[ó\u0081U¢ \u001f{W^£øR\u0002-\u0014\u0093$exFñx×\u001fÚÉvD\u001f\u0086ªå\u0016\t\u0086!\u0087\u0004Á·\u008c\u0015\u0090Ê¾«V©c\u0097yWv(\u0016Fý1!)\u009b,{³!ð\u0002´\u0012\u0016?#Im\u00878éÙulg\u009dÆ\u009dªm\u00ad`´\f¡\u008cÜÕ";
@@ -3894,7 +3907,7 @@ public abstract class Ok2 implements CA3_2, Xd4 {
                                     var15 |= Ks2_2.SortFeidFastMatch.v();
                                     var15 |= Ks2_2.IgnoreNotMatch.v();
                                     h = var15;
-                                    int var27 = 0;
+                                    var27 = 0;
                                     var27 |= EP.QuoteFieldNames.a();
                                     var27 |= EP.SkipTransientField.a();
                                     var27 |= EP.WriteEnumUsingName.a();
@@ -3957,7 +3970,6 @@ public abstract class Ok2 implements CA3_2, Xd4 {
       }
    }
 }
-
 
 
 

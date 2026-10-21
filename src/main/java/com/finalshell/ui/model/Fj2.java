@@ -4,7 +4,7 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 @XStreamAlias("NinePatchIntervalType")
 public final class Fj2 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -30,6 +30,7 @@ public final class Fj2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var0 = new String[4];
       int var4 = 0;
       String var3 = "tTd'\u001d9Mnry=\u0000?Bv\u000ftTd'\u001d9Mnbb!\u0011.Oj";
@@ -44,7 +45,6 @@ public final class Fj2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label48: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

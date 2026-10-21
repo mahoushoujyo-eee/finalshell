@@ -1,6 +1,6 @@
 package com.finalshell.ui.panel;
 
-import com.finalshell.core.CK;
+import com.finalshell.core.ZModemTransfer;
 import com.finalshell.core.KD;
 import com.finalshell.core.KV;
 import com.finalshell.core.Qe2_2;
@@ -37,7 +37,7 @@ import net.miginfocom.swing.MigLayout;
 
 public class NetworkMonitorPanel extends JPanel {
    public JTextArea M;
-   public ResetPanel w;
+   public SettingsResetPanel w;
    public LocalMachinePanel R;
    public LocalMachinePanel K;
    public LocalMachinePanel h;
@@ -54,9 +54,9 @@ public class NetworkMonitorPanel extends JPanel {
    public JPanel o;
    public JPanel O;
    public JPanel m;
-   public Lh2 S;
+   public StatusTextPanel S;
    public KV k;
-   public RouteTracePanel3 z;
+   public RouteTraceAddressPanel z;
    public KD b;
    public ActionListener x;
    public Fg2 n;
@@ -73,6 +73,13 @@ public class NetworkMonitorPanel extends JPanel {
    public static Long[] r;
 
    public NetworkMonitorPanel() {
+      Object[] var255;
+      Border var278;
+      boolean var280;
+      boolean var281;
+      Border var284;
+      JPanel var295;
+      long var42;
       KV.b$arrString();
       KD var10002 = (KD)Registry.lookupField(503018106388102479L).get(null);
       long var12 = 562709803585288522L;
@@ -90,9 +97,9 @@ public class NetworkMonitorPanel extends JPanel {
       JFrame var2 = (JFrame)SwingUtilities.getWindowAncestor(this);
       NetworkMonitorPanel var1 = this;
       this.setLayout(new MigLayout(a(-16829, 10177), a(-16792, 7620), a(-16827, -14514)));
-      RouteTracePanel3 var276 = new RouteTracePanel3();
+      RouteTraceAddressPanel var276 = new RouteTraceAddressPanel();
       long var16 = 391441074927119348L;
-      RouteTracePanel3 var15 = var276;
+      RouteTraceAddressPanel var15 = var276;
       Ref.s(391441074927119348L, var15, var16);
       Registry.emptyArgs();
       long var17 = 253808553645062345L;
@@ -136,7 +143,7 @@ public class NetworkMonitorPanel extends JPanel {
       Object var39 = 337538783710661995L;
       ((JPanel)Ref.g(337538783710661995L, var39)).setLayout(new MigLayout(a(-16798, 3607), a(-16797, -9582), ""));
       JPanel var10016 = new JPanel();
-      long var42 = 490839366246843781L;
+      var42 = 490839366246843781L;
       JPanel var41 = var10016;
       Ref.s(490839366246843781L, var41, var42);
       Object var43 = 490839366246843781L;
@@ -247,7 +254,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       var8.setFont((Font)Registry.lookupField(593752358540399204L).get(null));
       var8.setForeground((Color)Registry.lookupField(503018106388102479L).get(null));
       var8.s(2);
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var105 = 390743284003303285L;
       var10002 = Ref.h2(390743284003303285L, var105);
 
@@ -262,7 +269,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       KD var9 = new KD(a(-16823, 10766));
       var9.setFont((Font)Registry.lookupField(593752358540399204L).get(null));
       var9.setForeground((Color)Registry.lookupField(503018106388102479L).get(null));
-      var9.s(2 + CK.U4 / a(12633, 6964386598727357117L));
+      var9.s(2 + ZModemTransfer.U4 / a(12633, 6964386598727357117L));
       var10002 = Registry.emptyArgs();
       long var107 = 390743284003303285L;
       var10003 = (Color)Ref.h2(390743284003303285L, var107);
@@ -298,7 +305,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       ((KD)Ref.g(390337642905784351L, var115)).s(2);
       Object var117 = 390337642905784351L;
       KD var10007 = (KD)Ref.g(390337642905784351L, var117);
-      Object[] var10008 = Registry.emptyArgs();
+      Object var10008 = Registry.emptyArgs();
       long var119 = 390743284003303285L;
       var10009 = (JPanel)Ref.h2(390743284003303285L, var119);
 
@@ -325,7 +332,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          var10.setFont((Font)Registry.lookupField(593752358540399204L).get(null));
          var10.setForeground((Color)Registry.lookupField(503018106388102479L).get(null));
          var10.s(2);
-         Object[] var285 = Registry.emptyArgs();
+         Object var285 = Registry.emptyArgs();
          long var129 = 390743284003303285L;
          Object var10014 = Ref.h2(390743284003303285L, var129);
 
@@ -449,7 +456,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          }
 
          Object var199 = 311449913309936351L;
-         JPanel var295 = (JPanel)Ref.g(311449913309936351L, var199);
+         var295 = (JPanel)Ref.g(311449913309936351L, var199);
          Object var201 = 236476838463251049L;
          this.add((Fg2)Ref.g(236476838463251049L, var201), a(-16791, 5701));
          Object var203 = 236476838463251049L;
@@ -462,14 +469,14 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          JPanel var10052 = (JPanel)Ref.g(311449913309936351L, var207);
          Object var209 = 171773526509373969L;
          this.add((N22)Ref.g(171773526509373969L, var209), a(-16812, 6211));
-         ResetPanel var10054 = new ResetPanel();
+         SettingsResetPanel var10054 = new SettingsResetPanel();
          long var212 = 209907997339407280L;
-         ResetPanel var211 = var10054;
+         SettingsResetPanel var211 = var10054;
          Ref.s(209907997339407280L, var211, var212);
          Object var213 = 311449913309936351L;
          JPanel var10055 = (JPanel)Ref.g(311449913309936351L, var213);
          Object var215 = 209907997339407280L;
-         this.add((ResetPanel)Ref.g(209907997339407280L, var215), a(-16812, 6211));
+         this.add((SettingsResetPanel)Ref.g(209907997339407280L, var215), a(-16812, 6211));
          LocalMachinePanel var10057 = new LocalMachinePanel(false);
          long var218 = 134377275801203767L;
          LocalMachinePanel var217 = var10057;
@@ -482,14 +489,14 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          long var224 = 186804416387474045L;
          LocalMachinePanel var223 = var10060;
          Ref.s(186804416387474045L, var223, var224);
-         Lh2 var10061 = new Lh2();
+         StatusTextPanel var10061 = new StatusTextPanel();
          long var226 = 605918452401995520L;
-         Lh2 var225 = var10061;
+         StatusTextPanel var225 = var10061;
          Ref.s(605918452401995520L, var225, var226);
          Object var227 = 311449913309936351L;
          JPanel var10062 = (JPanel)Ref.g(311449913309936351L, var227);
          Object var229 = 605918452401995520L;
-         this.add((Lh2)Ref.g(605918452401995520L, var229), a(-16789, -9767));
+         this.add((StatusTextPanel)Ref.g(605918452401995520L, var229), a(-16789, -9767));
          JPanel var10064 = new JPanel();
          long var232 = 169574103913720852L;
          JPanel var231 = var10064;
@@ -523,7 +530,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          ((KD)Ref.g(245369139082503219L, var253)).addActionListener(new N4(this));
          Object[] var10076 = Registry.emptyArgs();
          long var256 = 240475708906671602L;
-         Object[] var255 = var10076;
+         var255 = var10076;
          Ref.h(240475708906671602L, var255, var256);
 
          try {
@@ -557,6 +564,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
    }
 
    public void j(boolean var1) {
+      boolean var42;
       label34: {
          String[] var2 = KV.b$arrString();
          if (var2 == null) {
@@ -611,9 +619,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       long var34 = 163462326892114024L;
       Object[] var33 = var10004;
       Ref.h(163462326892114024L, var33, var34);
-      Object[] var40 = Registry.emptyArgs();
+      Object var40 = Registry.emptyArgs();
       long var36 = 133802226692684648L;
-      Object[] var35 = var40;
+      Object var35 = var40;
       var40 = Ref.h(133802226692684648L, var35, var36);
 
       try {
@@ -718,6 +726,18 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
    }
 
    public void I(KV var1, String var2) {
+      Float var239;
+      Float var243;
+      Float var246;
+      Float var255;
+      Long var278;
+      Long var284;
+      Integer var292;
+      Long var295;
+      Long var303;
+      Integer var309;
+      Integer var316;
+      Object[] var43;
       String[] var3 = KV.b$arrString();
       if (var3 == null) {
          Registry.emptyArgs();
@@ -725,7 +745,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          Ref.h2(270389152141252877L, var13);
          CustomAcceleratePanel var10002 = (CustomAcceleratePanel)(Registry.emptyArgs());
          long var16 = 178123814153223768L;
-         Object[] var15 = var10002;
+         Object var15 = var10002;
          var10002 = Ref.h(178123814153223768L, var15, var16);
 
          try {
@@ -763,7 +783,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       String var4 = "";
       String var10001 = (String)(Registry.emptyArgs());
       long var28 = 209399997283157048L;
-      Object[] var27 = var10001;
+      Object var27 = var10001;
       var10001 = Ref.h(209399997283157048L, var27, var28);
 
       try {
@@ -778,7 +798,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
                new StringBuilder().append(a(-16816, 6620));
                String var10003 = (String)(Registry.emptyArgs());
                long var30 = 209399997283157048L;
-               Object[] var29 = var10003;
+               Object var29 = var10003;
                var10003 = Ref.h(209399997283157048L, var29, var30);
 
                try {
@@ -800,9 +820,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       }
 
       float var232 = 100.0F;
-      Object[] var237 = Registry.emptyArgs();
+      Object var237 = Registry.emptyArgs();
       long var32 = 410411715083358489L;
-      Object[] var31 = var237;
+      Object var31 = var237;
       var237 = Ref.h(410411715083358489L, var31, var32);
 
       try {
@@ -822,9 +842,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       }
 
       float var240 = 100.0F;
-      Object[] var241 = Registry.emptyArgs();
+      Object var241 = Registry.emptyArgs();
       long var36 = 440725766405094122L;
-      Object[] var35 = var241;
+      Object var35 = var241;
       var241 = Ref.h(440725766405094122L, var35, var36);
 
       try {
@@ -844,9 +864,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       }
 
       float var244 = 100.0F;
-      Object[] var10007 = Registry.emptyArgs();
+      Object var10007 = Registry.emptyArgs();
       long var40 = 531948198761202255L;
-      Object[] var39 = var10007;
+      Object var39 = var10007;
       var10007 = Ref.h(531948198761202255L, var39, var40);
 
       try {
@@ -867,7 +887,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
       String var10008 = (String)(Registry.emptyArgs());
       long var44 = 508791797614776598L;
-      Object[] var43 = var10008;
+      var43 = var10008;
       var10008 = Ref.h(508791797614776598L, var43, var44);
 
       try {
@@ -890,9 +910,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          ((JO)Ref.g(457425432556226606L, var47)).setText(a(-16806, 19681) + var8);
          Object var49 = 155632814602802062L;
          Ref.g(155632814602802062L, var49);
-         Object[] var10013 = Registry.emptyArgs();
+         Object var10013 = Registry.emptyArgs();
          long var52 = 410411715083358489L;
-         Object[] var51 = var10013;
+         Object var51 = var10013;
          var10013 = Ref.h(410411715083358489L, var51, var52);
 
          try {
@@ -903,7 +923,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
          var10013 = Registry.packArgs(var255, "");
          long var54 = 352790705129823814L;
-         Object[] var53 = var10013;
+         Object var53 = var10013;
          Ref.h(352790705129823814L, var53, var54);
 
          try {
@@ -926,9 +946,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
          new StringBuilder();
          b(31832, 5006455029266321193L);
-         Object[] var10020 = Registry.emptyArgs();
+         Object var10020 = Registry.emptyArgs();
          long var60 = 168084160108370846L;
-         Object[] var59 = var10020;
+         Object var59 = var10020;
          var10020 = Ref.h(168084160108370846L, var59, var60);
 
          try {
@@ -937,7 +957,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
             throw var213.getTargetException();
          }
 
-         Object[] var10019 = Registry.e(var1 * var278);
+         Object var10019 = Registry.e(var1 * var278);
          long var61 = 148259110884974759L;
          var10020 = Ref.h2(148259110884974759L, var61);
 
@@ -949,9 +969,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
          var10019.append(var10020.replaceAll(a(-16799, 1580), "M")).append("/");
          long var281 = b(15825, 6477291223511125665L);
-         Object[] var10022 = Registry.emptyArgs();
+         Object var10022 = Registry.emptyArgs();
          long var64 = 209547680018014679L;
-         Object[] var63 = var10022;
+         Object var63 = var10022;
          var10022 = Ref.h(209547680018014679L, var63, var64);
 
          try {
@@ -960,7 +980,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
             throw var211.getTargetException();
          }
 
-         Object[] var10021 = Registry.e(var1 * var284);
+         Object var10021 = Registry.e(var1 * var284);
          long var65 = 148259110884974759L;
          var10022 = Ref.h2(148259110884974759L, var65);
 
@@ -972,7 +992,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
          var10020 = Registry.packArgs((float)var281, var10021.append(var10022.replaceAll(a(-16804, 17446), "M")).toString());
          long var68 = 352790705129823814L;
-         Object[] var67 = var10020;
+         Object var67 = var10020;
          Ref.h(352790705129823814L, var67, var68);
 
          try {
@@ -995,9 +1015,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
          new StringBuilder();
          b(15825, 6477291223511125665L);
-         Object[] var10027 = Registry.emptyArgs();
+         Object var10027 = Registry.emptyArgs();
          long var74 = 348947692501054575L;
-         Object[] var73 = var10027;
+         Object var73 = var10027;
          var10027 = Ref.h(348947692501054575L, var73, var74);
 
          try {
@@ -1006,7 +1026,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
             throw var207.getTargetException();
          }
 
-         Object[] var10026 = Registry.e(var1 * var295);
+         Object var10026 = Registry.e(var1 * var295);
          long var75 = 148259110884974759L;
          var10027 = Ref.h2(148259110884974759L, var75);
 
@@ -1018,9 +1038,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
          var10026.append(var10027.replaceAll(a(-16804, 17446), "M")).append("/");
          long var298 = b(15825, 6477291223511125665L);
-         Object[] var10029 = Registry.emptyArgs();
+         Object var10029 = Registry.emptyArgs();
          long var78 = 414941625058048834L;
-         Object[] var77 = var10029;
+         Object var77 = var10029;
          var10029 = Ref.h(414941625058048834L, var77, var78);
 
          try {
@@ -1029,7 +1049,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
             throw var205.getTargetException();
          }
 
-         Object[] var10028 = Registry.e(var1 * var303);
+         Object var10028 = Registry.e(var1 * var303);
          long var79 = 148259110884974759L;
          var10029 = Ref.h2(148259110884974759L, var79);
 
@@ -1041,7 +1061,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
          var10027 = Registry.packArgs((float)var298, var10028.append(var10029.replaceAll(a(-16804, 17446), "M")).toString());
          long var82 = 352790705129823814L;
-         Object[] var81 = var10027;
+         Object var81 = var10027;
          Ref.h(352790705129823814L, var81, var82);
 
          try {
@@ -1054,7 +1074,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          Ref.g(171773526509373969L, var83);
          var10029 = Registry.packArgs(var1, var2);
          long var86 = 255590692333221564L;
-         Object[] var85 = var10029;
+         Object var85 = var10029;
          Ref.h(255590692333221564L, var85, var86);
 
          try {
@@ -1083,7 +1103,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       boolean var10 = false;
       String var10010 = (String)(Registry.emptyArgs());
       long var92 = 442956477837655654L;
-      Object[] var91 = var10010;
+      Object var91 = var10010;
       var10010 = Ref.h(442956477837655654L, var91, var92);
 
       try {
@@ -1114,7 +1134,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
             String var10012 = (String)(Registry.emptyArgs());
             long var96 = 442956477837655654L;
-            Object[] var95 = var10012;
+            Object var95 = var10012;
             var10012 = Ref.h(442956477837655654L, var95, var96);
 
             try {
@@ -1141,7 +1161,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
             new StringBuilder().append(var9).append(a(-16830, -4601));
             String var257 = (String)(Registry.emptyArgs());
             long var98 = 442956477837655654L;
-            Object[] var97 = var257;
+            Object var97 = var257;
             var257 = Ref.h(442956477837655654L, var97, var98);
 
             try {
@@ -1159,7 +1179,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          new StringBuilder().append(var9).append(a(-16800, -20887));
          String var260 = (String)(Registry.emptyArgs());
          long var100 = 367865097688692441L;
-         Object[] var99 = var260;
+         Object var99 = var260;
          var260 = Ref.h(367865097688692441L, var99, var100);
 
          try {
@@ -1172,7 +1192,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          new StringBuilder().append(var9).append(a(-16807, -2777));
          String var10014 = (String)(Registry.emptyArgs());
          long var102 = 442956477837655654L;
-         Object[] var101 = var10014;
+         Object var101 = var10014;
          var10014 = Ref.h(442956477837655654L, var101, var102);
 
          try {
@@ -1187,7 +1207,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       if (var3 == null) {
          String var265 = (String)(Registry.emptyArgs());
          long var104 = 612402923891880410L;
-         Object[] var103 = var265;
+         Object var103 = var265;
          var265 = Ref.h(612402923891880410L, var103, var104);
 
          try {
@@ -1200,7 +1220,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
             new StringBuilder().append(var9).append(a(-16794, -14636));
             String var273 = (String)(Registry.emptyArgs());
             long var106 = 612402923891880410L;
-            Object[] var105 = var273;
+            Object var105 = var273;
             var273 = Ref.h(612402923891880410L, var105, var106);
 
             try {
@@ -1215,7 +1235,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
       Zh2_2 var268 = (Zh2_2)(Registry.emptyArgs());
       long var108 = 591069155424737009L;
-      Object[] var107 = var268;
+      Object var107 = var268;
       var268 = Ref.h(591069155424737009L, var107, var108);
 
       try {
@@ -1283,9 +1303,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          long var124 = 332825939301957587L;
          Object[] var123 = var289;
          var289 = Ref.h(332825939301957587L, var123, var124);
-         Object[] var10025 = Registry.emptyArgs();
+         Object var10025 = Registry.emptyArgs();
          long var126 = 520926529036853194L;
-         Object[] var125 = var10025;
+         Object var125 = var10025;
          var10025 = Ref.h(520926529036853194L, var125, var126);
 
          try {
@@ -1311,9 +1331,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          long var132 = 119641992249824588L;
          Object[] var131 = var300;
          var300 = Ref.h(119641992249824588L, var131, var132);
-         Object[] var307 = Registry.emptyArgs();
+         Object var307 = Registry.emptyArgs();
          long var134 = 475342606112898003L;
-         Object[] var133 = var307;
+         Object var133 = var307;
          var307 = Ref.h(475342606112898003L, var133, var134);
 
          try {
@@ -1340,9 +1360,9 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       long var140 = 332825939301957587L;
       Object[] var139 = var311;
       var311 = Ref.h(332825939301957587L, var139, var140);
-      Object[] var10033 = Registry.emptyArgs();
+      Object var10033 = Registry.emptyArgs();
       long var142 = 520926529036853194L;
-      Object[] var141 = var10033;
+      Object var141 = var10033;
       var10033 = Ref.h(520926529036853194L, var141, var142);
 
       try {
@@ -1368,7 +1388,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          Ref.h2(270389152141252877L, var145);
          FP var10032 = (FP)(Registry.emptyArgs());
          long var148 = 606040881383812332L;
-         Object[] var147 = var10032;
+         Object var147 = var10032;
          var10032 = Ref.h(606040881383812332L, var147, var148);
 
          try {
@@ -1388,7 +1408,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
             Ref.h(606040881383812332L, var151, var152);
             User var10035 = (User)(Registry.emptyArgs());
             long var154 = 159697299249466811L;
-            Object[] var153 = var10035;
+            Object var153 = var10035;
             var10035 = Ref.h(159697299249466811L, var153, var154);
 
             try {
@@ -1407,7 +1427,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
             Ref.h(612604310671515822L, var157, var158);
             Boolean var10038 = (Boolean)(Registry.emptyArgs());
             long var160 = 430191496442422486L;
-            Object[] var159 = var10038;
+            Object var159 = var10038;
             var10038 = Ref.h(430191496442422486L, var159, var160);
 
             try {
@@ -1488,12 +1508,12 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       }
    }
 
-   public Lh2 z() {
+   public StatusTextPanel z() {
       Object var1 = 605918452401995520L;
-      return (Lh2)Ref.g(605918452401995520L, var1);
+      return (StatusTextPanel)Ref.g(605918452401995520L, var1);
    }
 
-   public void h(Lh2 var1) {
+   public void h(StatusTextPanel var1) {
       long var3 = 605918452401995520L;
       Ref.s(605918452401995520L, var1, var3);
    }
@@ -1508,12 +1528,12 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       Ref.s(171773526509373969L, var1, var3);
    }
 
-   public RouteTracePanel3 W() {
+   public RouteTraceAddressPanel W() {
       Object var1 = 391441074927119348L;
-      return (RouteTracePanel3)Ref.g(391441074927119348L, var1);
+      return (RouteTraceAddressPanel)Ref.g(391441074927119348L, var1);
    }
 
-   public void n(RouteTracePanel3 var1) {
+   public void n(RouteTraceAddressPanel var1) {
       long var3 = 391441074927119348L;
       Ref.s(391441074927119348L, var1, var3);
    }
@@ -2360,6 +2380,7 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var43;
       String[] var21 = new String[50];
       int var19 = 0;
       String var18 = "Ä\u0091\u0081N\u00192Ü2[\u008a\u008d÷\n3¡d\u0097Ô\u0088\u0001\u008f¦Ó÷\fp\u0091å:0\u0002冗嬾\u0002亿挶\u000f\u0085ß\u0098ý\u001b\u0088\u001f/A¦\u0083\u001a,\u0092}\u0003\u0085\u001d\u008d\u000ewü\u009a_\u009f\rU\u001fg¦îw\u0085\u0094\u000bM\u009fêX\u0093W£\u0012½¬Ú\u000fB\u0010`\u0004\u0004·üÈ=Z\f\u0085ÝaC\u0018\u008d©\u00993;Q\u0019\u0014ÃÄÓó#¯99Éï\u0099\f\u0081\u0017To\r¬$áDð=¨0ÚA[\u00891\u0004跘畱辷踕\n®\u0018²\u0083Ù\u0087\u0088\"_º\u000eÿH\u008bÉ½ß\u0011Eïîÿ\u001d§Ù\u0014Èú¾\u0012\u0088«r*\u008b¨[OrUÃ21\u009b{c\u0004G\u0006S\u008a\u0019²]\"k\u0088\u008b·Ï;½e5ôÞ\u0005\u0007&Âç.rÕ¥²8\u0004缟繴瘊捨\u0003迃衱Ñ\u0005À:[ì¥\u0004退庭淴謔\u0004品欐牀惌\u0014Yô\u008cÓÎ\u0093º-\u0092HxS\u0016ÖOB \u0095I¢\u001c:Dù¾\u001aQj§\u0081úSö,·Ú3¶L\u008c\u0090'\u009f!á(B¡x\u0003赶远Q\u000e¨\u0085apàèº£\u009a1Q\u0085rÊ\r\u009d5Çf4y0¸ÏP?«½\u0004Í± J\u0002\u009c\u0090\u0015ål\u001bÀ<ñäaYÁ\u0001b9úª\u009aG_\u0096Oâ\u0005).íL\u0082\u0011àÿ¢Éq¿\u0007z,Aæ\u0081\u009aF\u001bùl\u0019'z\u0090\u008fÞ\u0017}\\bÎNz\u00915©8³%UÒ$JoAa\u000e¥(÷®0\u0089×É3×\u000b_\u0090ü\u0004丣朶A\u009d\u00054\u007fNfö\u0005丈枬吓Ôa\u000fcz#çí_\u0084²G\u0019¿\u008cp\u0015Ñ\u0015È!¾i\u0088Ä{Î\u0082\u001c|\u008d\u001c\u008c\u0097å77\u0098B#\u001b\u008c\u007f/ÙÀ½;1ãB|áÉUfo!Ç~ásºê3]Åû\u0004/'Íà\u001aW\u0011Moö\u0004²È{\u0011\u009220ö\u0099¹\\ÎkE\u000fj\"ÕºS\u000e_±¨\u009dÛïª\u0005\u009cNþl.\u009a\u0011©Ë\u008bOTo£`¸\u0002téÈKQX%\u0005e%Ru}\u0004\u009eI_\u0098\u0004輈衐¨ä\u0004使翪rØ";
@@ -2375,7 +2396,6 @@ var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          byte var10002 = -1;
 
          while (true) {
-      Object var43;
             label74: {
                char[] var49 = var10001.toCharArray();
                int var10004 = var49.length;

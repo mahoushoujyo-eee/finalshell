@@ -1268,6 +1268,7 @@ public abstract class Cq2_2 extends Cv2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "b\u0089\u001d\u0082\u008fÄQÀ/\u001b\u008aÐÿpÍÇº\u000f oÐLS\u00968Y¹\u008a\u0083¡´Ì";
@@ -1282,7 +1283,6 @@ public abstract class Cq2_2 extends Cv2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

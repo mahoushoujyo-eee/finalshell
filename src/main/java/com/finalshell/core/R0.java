@@ -64,6 +64,22 @@ public class R0 implements Pc4 {
    public static String[] D;
 
    public R0(Tc2_2 var1, Container var2) {
+      R0 var11;
+      R0 var15;
+      Dimension var16;
+      R0 var17;
+      Dimension var18;
+      R0 var20;
+      Dimension var21;
+      Dimension var23;
+      Dimension var26;
+      Dimension var28;
+      Dimension var31;
+      Dimension var33;
+      int var6;
+      int var7;
+      int var8;
+      int var9;
       this.z = var1.c();
       this.I = var1.B();
       this.s = var1.F();
@@ -280,10 +296,6 @@ public class R0 implements Pc4 {
             }
 
             if (var10000 > 0) {
-      int var6;
-      int var6;
-      int var6;
-      int var6;
                var10000 = 1;
                break label325;
             }
@@ -313,8 +325,8 @@ public class R0 implements Pc4 {
       }
 
       label306: {
-         this.x = (boolean)var10001;
-         R0 var15 = this;
+         this.x = var10001;
+         var15 = this;
          if (var3 != 0) {
             if (!this.x) {
                var16 = new Dimension(0, 0);
@@ -329,7 +341,7 @@ public class R0 implements Pc4 {
 
       label300: {
          this.w = var16;
-         R0 var17 = this;
+         var17 = this;
          if (var3 != 0) {
             if (!this.x) {
                var18 = new Dimension(0, 0);
@@ -390,8 +402,8 @@ public class R0 implements Pc4 {
       }
 
       label274: {
-         this.Q = (boolean)var10001;
-         R0 var20 = this;
+         this.Q = var10001;
+         var20 = this;
          if (var3 != 0) {
             if (!this.Q) {
                var21 = new Dimension(0, 0);
@@ -467,7 +479,7 @@ public class R0 implements Pc4 {
       }
 
       label242: {
-         this.H = (boolean)var10001;
+         this.H = var10001;
          R0 var25 = this;
          if (var3 != 0) {
             if (!this.H) {
@@ -544,7 +556,7 @@ public class R0 implements Pc4 {
       }
 
       label210: {
-         this.K = (boolean)var10001;
+         this.K = var10001;
          R0 var30 = this;
          if (var3 != 0) {
             if (!this.K) {
@@ -579,6 +591,14 @@ public class R0 implements Pc4 {
    }
 
    public void V() {
+      Dimension var6;
+      Dimension var7;
+      Dimension var8;
+      Dimension var9;
+      Dimension var15;
+      Dimension var17;
+      Dimension var19;
+      Dimension var21;
       int var1 = com.finalshell.ui.panel.Ku4.H();
       this.q = this.x ? new Rectangle(this.i.x, this.i.y, this.i.width, this.I.top + this.V.height + this.I.bottom) : new Rectangle(0, 0);
       this.c = this.K
@@ -597,25 +617,25 @@ public class R0 implements Pc4 {
             this.i.height - this.q.height - this.c.height
          )
          : new Rectangle(0, 0);
-      int var10000 = this.x;
+      int var10000 = (this.x) ? 1 : 0;
       if (var1 == 0) {
          var10000 = this.x ? 1 : 0;
       }
 
-      int var2 = ((((var10000 + this.l.top) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-      var10000 = this.Q;
+      int var2 = var10000 + this.l.top;
+      var10000 = (this.Q) ? 1 : 0;
       if (var1 == 0) {
          var10000 = this.Q ? 1 : 0;
       }
 
-      int var3 = ((((var10000 + this.l.left) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-      var10000 = this.H;
+      int var3 = var10000 + this.l.left;
+      var10000 = (this.H) ? 1 : 0;
       if (var1 == 0) {
          var10000 = this.H ? 1 : 0;
       }
 
-      int var4 = ((((var10000 + this.l.right) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-      var10000 = this.K;
+      int var4 = var10000 + this.l.right;
+      var10000 = (this.K) ? 1 : 0;
       if (var1 == 0) {
          var10000 = this.K ? 1 : 0;
       }
@@ -637,7 +657,7 @@ public class R0 implements Pc4 {
       }
 
       label114: {
-         Dimension var6 = var15;
+         var6 = var15;
          this.m = this.r != null
             ? new Rectangle(
                this.i.x + this.L.width + var3, this.i.y + this.q.height + var2, this.i.width - this.L.width - this.p.width - var3 - var4, var6.height
@@ -657,7 +677,7 @@ public class R0 implements Pc4 {
       }
 
       label107: {
-         Dimension var7 = var17;
+         var7 = var17;
          this.W = this.y != null
             ? new Rectangle(
                this.i.x + this.L.width + var3,
@@ -680,7 +700,7 @@ public class R0 implements Pc4 {
       }
 
       label100: {
-         Dimension var8 = var19;
+         var8 = var19;
          this.U = this.n != null
             ? new Rectangle(
                this.i.x + this.L.width + var3,
@@ -702,7 +722,7 @@ public class R0 implements Pc4 {
          var21 = var20.getPreferredSize();
       }
 
-      Dimension var9 = var21;
+      var9 = var21;
       this.v = this.R != null
          ? new Rectangle(
             this.i.x + this.i.width - this.p.width - var4 - var9.width,
@@ -725,6 +745,7 @@ public class R0 implements Pc4 {
    }
 
    public Dimension T(String var1, List var2) {
+      boolean var11;
       int var3;
       Dimension var4;
       label56: {
@@ -732,7 +753,7 @@ public class R0 implements Pc4 {
             int var10000 = com.finalshell.ui.panel.Ku4.W();
             var4 = new Dimension(0, 0);
             var3 = var10000;
-            boolean var11 = var1.startsWith(a(-16981, 14678));
+            var11 = var1.startsWith(a(-16981, 14678));
             if (var3 != 0) {
                if (var11) {
                   break label51;
@@ -794,6 +815,8 @@ public class R0 implements Pc4 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
+      int var8;
       int var2 = (var0 ^ -16991) & 65535;
       if (D[var2] == null) {
          char[] var3 = h[var2].toCharArray();
@@ -1574,13 +1597,13 @@ public class R0 implements Pc4 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1599,6 +1622,7 @@ public class R0 implements Pc4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[21];
       int var3 = 0;
       String var2 = "\u001fð5o\u001b¸b\u000b4Ó¶@xQLqå\f¬\b\tz\u001c5ê\u0092fî\b\u0015I\u0092\u0013ü-Ü.\tÍä\u0084æçä\u001b±\u0006\u000bý\u0019RR¤\u001cÕ.Õõ\u0080\u000b\u009eg?Gc3L\u0085ØV´\t\u000f`Üvøíhí¿\n\u0095²\u0082lþÐ\u0081Ðû\u0085\fÞM6Ø(MD\u000eð½Èä\u0003ó¿C\b¨C(\u0012lv¶r\tA®Ä~\u001c\u0014±|&\fý\u0090Rc¤:ÕôÙr\u0090Ê\fJÕ¥\u00110ù\"Á\u0084y\u0082Ã\u000bî+0\u0014èÔ\\7äÖ¦\fàxñ~Ð\u0099[\u0080\büª\u001b\u0006hßà\u008aò\u0007\u000bÉü\t¥\u008fí²æ:þW";

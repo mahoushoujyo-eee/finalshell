@@ -3,16 +3,16 @@ package com.finalshell.ui.listener;
 import com.finalshell.core.Lj4_2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Copy3;
+import com.finalshell.ui.panel.CommandListPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bd4 implements ActionListener {
    public final String W;
-   public final Copy3 z;
+   public final CommandListPanel z;
 
-   public Bd4(Copy3 var1, String var2) {
+   public Bd4(CommandListPanel var1, String var2) {
       this.z = var1;
       this.W = var2;
    }
@@ -46,9 +46,9 @@ public class Bd4 implements ActionListener {
       Object[] var15 = var10006;
       Ref.h(306266403902896148L, var15, var16);
       Object var17 = 606727952009104367L;
-      Object[] var10008 = Registry.packArgs(Ref.g(606727952009104367L, var17));
+      Object var10008 = Registry.packArgs(Ref.g(606727952009104367L, var17));
       long var20 = 534852582493690392L;
-      Object[] var19 = var10008;
+      Object var19 = var10008;
       var10008 = Ref.h(534852582493690392L, var19, var20);
 
       try {

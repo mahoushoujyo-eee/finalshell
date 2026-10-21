@@ -436,6 +436,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
    }
 
    public void G(PF3 var1) {
+      Y_ var4;
       int var10000 = Yp2.T();
       this.W = var1;
       int var2 = var10000;
@@ -644,6 +645,12 @@ public class Y_ extends Lz2_2 implements WR_2 {
 
    @Override
    public Insets B(JComponent var1) {
+      PF3 var10001;
+      Y_ var12;
+      PF3 var14;
+      PF3 var16;
+      PF3 var18;
+      Insets var4;
       int var10000 = Yp2.f();
       PF3 var3 = this.J$pF_3();
       int var2 = var10000;
@@ -660,7 +667,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
                var10 = var3;
             }
 
-            Insets var4 = var10.U$Insets();
+            var4 = var10.U$Insets();
             boolean var11 = this.J;
             if (var2 == 0) {
                if (!this.J) {
@@ -669,7 +676,6 @@ public class Y_ extends Lz2_2 implements WR_2 {
                      label107: {
                         PF3 var5 = this.K$pF_3();
                         if (this.P) {
-      int var10001;
                            var10001 = var5;
                            if (var2 != 0) {
                               break label107;
@@ -701,7 +707,6 @@ public class Y_ extends Lz2_2 implements WR_2 {
                      label92: {
                         PF3 var6 = this.L();
                         if (this.s) {
-      PF3 var14;
                            var14 = var6;
                            if (var2 != 0) {
                               break label92;
@@ -734,7 +739,6 @@ public class Y_ extends Lz2_2 implements WR_2 {
                         label75: {
                            PF3 var7 = this.M();
                            if (this.R) {
-      PF3 var16;
                               var16 = var7;
                               if (var2 != 0) {
                                  break label75;
@@ -776,7 +780,6 @@ public class Y_ extends Lz2_2 implements WR_2 {
                label58: {
                   PF3 var8 = var12.h();
                   if (this.g) {
-      PF3 var18;
                      var18 = var8;
                      if (var2 != 0) {
                         break label58;
@@ -807,6 +810,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
 
    @Override
    public void u(Graphics2D var1, Rectangle var2, JComponent var3) {
+      PF3 var14;
       int var4 = Yp2.f();
       Y_ var10000 = this;
       if (var4 == 0) {
@@ -819,7 +823,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
 
       label87: {
          PF3 var5 = var10000.J$pF_3();
-         PF3 var14 = var5;
+         var14 = var5;
          if (var4 == 0) {
             if (var5 == null) {
                break label87;
@@ -1092,25 +1096,25 @@ public class Y_ extends Lz2_2 implements WR_2 {
       int var4 = Yp2.f();
       if (!this.N && var1 != null) {
          Insets var5 = this.K ? var1.U$Insets() : var1.x();
-         int var10000 = this.J;
+         int var10000 = (this.J) ? 1 : 0;
          if (var4 == 0) {
             var10000 = this.J ? 0 : var5.top;
          }
 
-         int var6 = ((((var10000) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-         var10000 = this.f;
+         int var6 = var10000;
+         var10000 = (this.f) ? 1 : 0;
          if (var4 == 0) {
             var10000 = this.f ? 0 : var5.left;
          }
 
-         int var7 = ((((var10000) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-         var10000 = this.r;
+         int var7 = var10000;
+         var10000 = (this.r) ? 1 : 0;
          if (var4 == 0) {
             var10000 = this.r ? 0 : var5.bottom;
          }
 
-         int var8 = ((((var10000) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-         var10000 = this.o;
+         int var8 = var10000;
+         var10000 = (this.o) ? 1 : 0;
          if (var4 == 0) {
             var10000 = this.o ? 0 : var5.right;
          }

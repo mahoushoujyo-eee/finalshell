@@ -34,7 +34,7 @@ public class Ft4 implements MouseListener {
       Ref.h2(299368763907830673L, var3);
       Boolean var10002 = (Boolean)(Registry.emptyArgs());
       long var6 = 400084338690857485L;
-      Object[] var5 = var10002;
+      Object var5 = var10002;
       var10002 = Ref.h(400084338690857485L, var5, var6);
 
       try {

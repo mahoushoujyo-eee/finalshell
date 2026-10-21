@@ -3680,6 +3680,7 @@ public class Login extends IM {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[46];
       int var11 = 0;
       String var10 = "OÏ;\u0087Ô\u0086\u009c<ýá°åT\u0092è<^\u008büXædÚF\u000e\u000b\u0087n\u007fY5ò\u001f7Yäß4i\u0010ÀÝ4\u001fIb¨ª`9âËÙ«\u0012`\róÍU?\u008b\u0000ß\u0004*B\u0090¦\u0095\u0017Ø\u00040\u0006''_ô\u0087Å~¹L\u0093v\u0096Ö\u0082éÃ¬®ú\u0006匷涋盫异譟譃\u001a4wªJ\u009aÈÒÿ/\u0086\u001f\u0081ÿ¹9&AÑñeiX,X¹Y\f×¶ÝY\u0017ö&Ü\u000b§c$\t \u0082rX\u009b´ä©L\u0016\u000ekÎâ\\\u009an6\\\\HIH0\u000b® \u001f¥Ø\u0088, \u008e6(\u001a ®\u0085\u0001\u0083wZV\u0095½õ\u0089\u0005\u0092\u0082$\u0097GjJØUßùæ¼1>\u0012A\u0014\u001fG[?\u0004\u008a§\u0095W\u008f\u0092\u008a&Ï-ø\u0018%±æ9\u0005e\u0090Ì·\u00896\u001eàåÁ\u0097LÃâ®¬¬\u00adù\r\u0003sKèHú²O:²ÉWº\u0018?\u00985m\u0015Û¤\u0097ú\u0094PKHGk\u0086.Üò²'9âí\u0007bùC°íÐX\u0016\u0097úýÐ:Ü¢þÅE{l'TÎä\u0098V²ñj\t\u0003\u0081yo\fÂû\u007fðCÃ¬zZtM½\rF\u0007ãf]+\u0010unõC¿ë\rb#\u008c°¯fp._\u0098\u0011B>\u0016ã«súë\u0099\u0098V\u0082P\u0093Ï0\u0001gN\u00ad\u0003\u0014[¾\\\u0007J¶FYMíL\f¦£óûÒ¢\u009eV\u001cö\u0081\u000e\u000e¯\u009aúÜËA \u0091}\u0088\u00adå\u001d.\u0012\u0005£\u0097±Já&Qãîßà\u0083g\u0004riO\u001a ª8ñÈ¿\u0098\u0011f[6:ÚÎ\u009dÈÕ\fcÞ;/f¶ð\u0084\r£:_ÁÊß÷ÿ/=0I\u0081\t#X\u0002\u0003\u0095ß%Ät\f[\u0001L¯%(`\u0007ÃÛ~H\u0017wêÅÛ\u0099\u009c\u0088\u0083}+!d§(\u000báyl\u001c\u001e\u0012\u0015-\u0016ùH0\u0086\u0083\u0016\u0095§#n§\u000fµø´·×<[¼W \u001c\u0080k!\u0005\u0014\u0006h¹slô\u009c\u0082`Ä\f©æ\u0005´Xâ\"\u009b1o&\u008f\u0010(Ö)~êNÜ/î\u00893ÝãiU8\u000fÖÖ\u0089[Î#m5Mô+£\u0013\u0014\u0095\u0016>HÈ\u0086\u009c\u0016v§_n(\b@û\u008eS\u0090 ³/JÒ\u0010s\u008dB\u0015\u0087#q\u0082[)\u0091t.\u0007\u0003ñ\u0003Û~$0\u0092\u007fm1\u001c×ì\rª\u009aä}ö©òs\u00ad\u0086J\u0080 Y\f\u0016¼4Î\u007fó©&×Üô}dK.t\u0002óÙ\u00ad)\u0005\u0014\u000fe\u0016\u001aëLò\f\u0098dv\u001dT`ON\u0011¨LTC+SY]\u0010\u0013GNL\u0006\bAç]\u0085Qá6µ\u0000§\u0016{W`e\u0089jÔ(\u000b\u009f¢7\u001c?©\u0089tû/DÙ¿\u001cxQ>B÷î\u0014¤üÏ\u0005è¼î\u0003ÝQÜ\u001aó»\n^\u0086¾Ì×û0q³\u0011¨\u0093ä\u001dk\u0094V#ä\u000e\u009aí\u0015NJ6\u0019/jýp\u0082ø\tæ\u000b\u009a9±?8\u0001ýÄ\u001d\u0085dÍ\u0015j°ý'\u0010\u0003";
@@ -3695,7 +3696,6 @@ public class Login extends IM {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

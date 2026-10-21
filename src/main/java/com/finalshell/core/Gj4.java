@@ -47,6 +47,7 @@ public abstract class Gj4 extends HN3 {
    }
 
    public int[] f() {
+      int[] var4;
       int[] var2 = new int[a(25968, 6046869089493836850L)];
       String[] var10000 = W5.q();
       int var3 = 0;
@@ -54,7 +55,6 @@ public abstract class Gj4 extends HN3 {
 
       while (true) {
          if (var3 < a(25968, 6046869089493836850L)) {
-      int[] var4;
             var4 = var2;
             if (var1 == null) {
                break;
@@ -63,7 +63,6 @@ public abstract class Gj4 extends HN3 {
             var2[var3] = Iw4.e((int)(255.0F * this.q((float)var3 / 255.0F)));
             var3++;
             if (var1 != null) {
-      int[] var4;
                continue;
             }
          }
@@ -80,8 +79,9 @@ public abstract class Gj4 extends HN3 {
    }
 
    public int[] p() {
+      int[] var4;
       String[] var1 = W5.q();
-      int var10000 = this.N;
+      int var10000 = (this.N) ? 1 : 0;
       if (var1 != null) {
          if (!this.N) {
             this.D();
@@ -194,7 +194,6 @@ public abstract class Gj4 extends HN3 {
       }
    }
 }
-
 
 
 

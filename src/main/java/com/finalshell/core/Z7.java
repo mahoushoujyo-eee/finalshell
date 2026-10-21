@@ -57,6 +57,9 @@ public class Z7 extends Z9 {
    }
 
    public static void s(Kernel var0, int[] var1, int[] var2, int var3, int var4, boolean var5, int var6) {
+      float var15;
+      boolean var28;
+      int var29;
       String[] var10000 = ZH.U();
       float[] var8 = var0.getKernelData(null);
       String[] var7 = var10000;
@@ -75,7 +78,7 @@ public class Z7 extends Z9 {
             int var14 = 0;
 
             while (var14 < var3) {
-               float var15 = 0.0F;
+               var15 = 0.0F;
                float var16 = 0.0F;
                float var17 = 0.0F;
                float var18 = 0.0F;
@@ -91,13 +94,12 @@ public class Z7 extends Z9 {
                      float var20 = var8[var10 + var19];
                      if (var7 == null) {
                         float var31;
-                        var28 = (var31 = var20 - 0.0F) == 0.0F ? 0 : (var31 < 0.0F ? -1 : 1);
+                        var28 = ((var31 = var20 - 0.0F) == 0.0F ? 0 : (var31 < 0.0F ? -1 : 1)) != 0;
                         if (var7 != null) {
                            break;
                         }
 
-                        if (var28 != 0) {
-      int var29;
+                        if (var28) {
                            label95: {
                               int var21;
                               label118: {
@@ -180,7 +182,6 @@ public class Z7 extends Z9 {
                      }
 
                      if (var7 == null) {
-      int var28;
                         continue;
                      }
                   }
@@ -190,10 +191,10 @@ public class Z7 extends Z9 {
                }
 
                if (var7 == null) {
-                  var28 = var28 != 0 ? N6.W((int)((double)var18 + 0.5)) : b(9559, 4802532881827956226L);
+                  var28 = (var28 != 0 ? N6.W((int)((double)var18 + 0.5)) : b(9559, 4802532881827956226L)) != 0;
                }
 
-               var19 = var28;
+               var19 = (var28) ? 1 : 0;
                int var24 = N6.W((int)((double)var15 + 0.5));
                int var25 = N6.W((int)((double)var16 + 0.5));
                int var26 = N6.W((int)((double)var17 + 0.5));
@@ -365,7 +366,6 @@ public class Z7 extends Z9 {
       }
    }
 }
-
 
 
 

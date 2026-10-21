@@ -1,7 +1,7 @@
 package com.finalshell.task;
 
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
@@ -13,10 +13,10 @@ public class Kq2 implements Runnable {
    public final TreePath v;
    public final String E;
    public final boolean y;
-   public final Connection4 r;
+   public final ConnectionInfoPanel r;
    public static long a;
 
-   public Kq2(Connection4 var1, DefaultMutableTreeNode var2, Tf4 var3, DefaultMutableTreeNode var4, boolean var5, TreePath var6, String var7, boolean var8) {
+   public Kq2(ConnectionInfoPanel var1, DefaultMutableTreeNode var2, Tf4 var3, DefaultMutableTreeNode var4, boolean var5, TreePath var6, String var7, boolean var8) {
       this.r = var1;
       this.u = var2;
       this.q = var3;

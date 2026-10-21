@@ -54,6 +54,7 @@ public class QK {
 
    @NotNull
    public static List L(@NotNull String var0) {
+      ArrayList var9;
       String[] var1 = Wq2_2.y();
       boolean var10000 = var0.isEmpty();
       if (var1 == null) {
@@ -77,7 +78,6 @@ public class QK {
          while (true) {
             label32:
             if (var5 < var4) {
-      String var9;
                char var6 = var3[var5];
                QK var7 = E(var6);
                var9 = var2;
@@ -95,7 +95,6 @@ public class QK {
                }
 
                if (var1 == null) {
-      String var9;
                   continue;
                }
             }
@@ -125,7 +124,7 @@ public class QK {
       int var3 = var2;
       if (var1 == null) {
          if (var2 == 0) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var3 = var2;
@@ -134,7 +133,7 @@ public class QK {
       int var10001 = a(11580, 3856075470875138001L);
       if (var1 == null) {
          if (var3 == var10001) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var3 = var2;
@@ -143,7 +142,7 @@ public class QK {
 
       if (var1 == null) {
          if (var3 == var10001) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var3 = var2;
@@ -152,7 +151,7 @@ public class QK {
 
       if (var1 == null) {
          if (var3 == var10001) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var3 = var2;
@@ -161,7 +160,7 @@ public class QK {
 
       if (var1 == null) {
          if (var3 == var10001) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var3 = var2;
@@ -170,18 +169,18 @@ public class QK {
 
       if (var1 == null) {
          if (var3 == var10001) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var3 = var2;
          if (var1 != null) {
-            return (boolean)var2;
+            return var2 != 0;
          }
 
          var10001 = a(31321, 2624397515676205196L);
       }
 
-      return (boolean)(var3 != var10001 ? 1 : 0);
+      return (boolean)((var3 != var10001 ? 1 : 0) != 0);
    }
 
    @NotNull
@@ -203,6 +202,7 @@ public class QK {
    }
 
    public static void __vfClinit__() {
+      Entry[] var9;
       long var0 = 1116613458521949625L;
       long[] var6 = new long[48];
       int var3 = 0;
@@ -236,7 +236,7 @@ public class QK {
                   if (var2 >= var5) {
                      a = var6;
                      b = new Integer[48];
-                     Entry[] var9 = new Entry[a(5741, 9053429790468320427L)];
+                     var9 = new Entry[a(5741, 9053429790468320427L)];
                      var9[0] = Map.entry(
                         new Rp2(
                            new int[]{
@@ -348,7 +348,6 @@ public class QK {
       }
    }
 }
-
 
 
 

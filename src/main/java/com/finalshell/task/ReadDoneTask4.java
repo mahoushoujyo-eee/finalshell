@@ -1,7 +1,7 @@
 package com.finalshell.task;
 
 import com.finalshell.core.Connect;
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -20,7 +20,8 @@ public class ReadDoneTask4 extends Thread {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
    public void run() {
-      String[] var10000 = PingMessageR.N();
+      IOException var8;
+      String[] var10000 = PingMessageReceiver.N();
       byte[] var2 = new byte[(int)d];
       String[] var1 = var10000;
 
@@ -35,7 +36,6 @@ public class ReadDoneTask4 extends Thread {
                      break;
                   }
                } catch (IOException var7) {
-      String[] var8;
                   var8 = var7;
                   boolean var10001 = false;
                   break label34;
@@ -56,7 +56,6 @@ public class ReadDoneTask4 extends Thread {
             try {
                System.out.println(a(-21801, 19619) + var3);
             } catch (IOException var6) {
-      int var8;
                var8 = var6;
                boolean var9 = false;
                break;
@@ -79,6 +78,7 @@ public class ReadDoneTask4 extends Thread {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -21801) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -865,7 +865,7 @@ public class ReadDoneTask4 extends Thread {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);

@@ -1534,7 +1534,7 @@ public class YN3 implements MouseListener {
       Ref.h2(299368763907830673L, var19);
       Boolean var10010 = (Boolean)(Registry.emptyArgs());
       long var22 = 400084338690857485L;
-      Object[] var21 = var10010;
+      Object var21 = var10010;
       var10010 = Ref.h(400084338690857485L, var21, var22);
 
       try {

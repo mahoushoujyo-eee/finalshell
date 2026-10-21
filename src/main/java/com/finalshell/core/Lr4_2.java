@@ -1064,6 +1064,8 @@ public class Lr4_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long[] var19;
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "\u0000\u0090¿F\u0098\u0005µ\u0080\tDN";
@@ -1078,7 +1080,6 @@ public class Lr4_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -1169,7 +1170,7 @@ public class Lr4_2 {
                         byte var26 = var2;
                         var2 += 8;
                         byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
-                        long[] var19 = var6;
+                        var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56
                            | ((long)var7[1] & 255L) << 48

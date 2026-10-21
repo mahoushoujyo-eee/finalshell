@@ -2,15 +2,15 @@ package com.finalshell.core;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.lang.reflect.InvocationTargetException;
 
 public class CR implements Cq2 {
    public final YI C;
    public final String m;
-   public final Address I;
+   public final FileBrowserAddressBar I;
 
-   public CR(Address var1, YI var2, String var3) {
+   public CR(FileBrowserAddressBar var1, YI var2, String var3) {
       this.I = var1;
       this.C = var2;
       this.m = var3;
@@ -18,9 +18,10 @@ public class CR implements Cq2 {
 
    @Override
    public void u(VO var1) {
-      Object[] var10001 = Registry.emptyArgs();
+      Integer var15;
+      Object var10001 = Registry.emptyArgs();
       long var3 = 178857963789314984L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(178857963789314984L, var2, var3);
 
       try {

@@ -15,11 +15,11 @@ public class X extends JPanel {
    public Color o;
    public Color u;
    public final U62 q;
-   public final com.finalshell.ui.frame.U S;
+   public final com.finalshell.ui.frame.MainFrame S;
    public static long[] a;
    public static Integer[] b;
 
-   public X(com.finalshell.ui.frame.U var1, LayoutManager var2, U62 var3) {
+   public X(com.finalshell.ui.frame.MainFrame var1, LayoutManager var2, U62 var3) {
       super(var2);
       this.S = var1;
       this.q = var3;
@@ -55,7 +55,7 @@ public class X extends JPanel {
                Ref.g(493158471773442262L, var14);
                ArrayList var10006 = Registry.emptyArgs();
                long var17 = 230171768324088030L;
-               Object[] var16 = var10006;
+               Object var16 = var10006;
                var10006 = Ref.h(230171768324088030L, var16, var17);
 
                try {
@@ -87,6 +87,7 @@ public class X extends JPanel {
 
    @Override
    public void paint(Graphics var1) {
+      boolean var12;
       String[] var10000 = F8.y();
       super.paint(var1);
       String[] var2 = var10000;
@@ -101,9 +102,9 @@ public class X extends JPanel {
          U62 var10002 = (U62)Ref.g(244518086307245336L, var5);
       }
 
-      Object[] var10 = Registry.emptyArgs();
+      Object var10 = Registry.emptyArgs();
       long var8 = 577875833820570498L;
-      Object[] var7 = var10;
+      Object var7 = var10;
       var10 = Ref.h(577875833820570498L, var7, var8);
 
       try {

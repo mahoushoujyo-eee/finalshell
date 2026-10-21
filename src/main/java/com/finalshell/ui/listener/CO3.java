@@ -2,15 +2,15 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.RouteTracePanel2;
+import com.finalshell.ui.panel.ConnectionContextMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class CO3 implements ActionListener {
-   public final RouteTracePanel2 s;
+   public final ConnectionContextMenu s;
 
-   public CO3(RouteTracePanel2 var1) {
+   public CO3(ConnectionContextMenu var1) {
       this.s = var1;
    }
 

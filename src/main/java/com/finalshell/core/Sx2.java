@@ -1532,6 +1532,7 @@ public class Sx2 implements P8 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[52];
       int var11 = 0;
       V(103);
@@ -1548,7 +1549,6 @@ public class Sx2 implements P8 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

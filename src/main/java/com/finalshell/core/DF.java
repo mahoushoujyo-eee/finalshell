@@ -20,9 +20,10 @@ public class DF {
    }
 
    public static long q(byte[] var0, int var1, Ks2 var2) {
+      long var10;
       int var10000 = (M()) ? 1 : 0;
       long var4 = 0L;
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
       int var6 = 0;
       byte var7 = 1;
       var10000 = FK3.s[var2.ordinal()];
@@ -55,8 +56,6 @@ public class DF {
             var6 += var7;
             var8++;
             if (var3) {
-      long var10;
-      long var10;
                continue;
             }
          }
@@ -81,10 +80,11 @@ public class DF {
    }
 
    public static byte[] O(long var0, int var2, Ks2 var3) {
-      int var10000 = c();
+      byte[] var10;
+      int var10000 = (c()) ? 1 : 0;
       byte[] var5 = new byte[var2];
       int var6 = 0;
-      boolean var4 = (boolean)var10000;
+      boolean var4 = (var10000) != 0;
       byte var7 = 1;
       var10000 = FK3.s[var3.ordinal()];
       if (!var4) {
@@ -202,7 +202,6 @@ public class DF {
       c = var10002;
    }
 }
-
 
 
 

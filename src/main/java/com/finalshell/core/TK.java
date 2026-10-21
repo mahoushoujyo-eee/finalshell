@@ -1118,6 +1118,7 @@ public class TK extends T4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[5];
       int var3 = 0;
       String var2 = "t\u0010`>\u0094-\u0007\t\u0004¯j&µí\u0006mßCÇð\u0012";
@@ -1132,7 +1133,6 @@ public class TK extends T4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

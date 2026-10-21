@@ -46,6 +46,7 @@ public class EffectPreview extends Z7 {
    }
 
    public void V() {
+      JTable var23;
       Registry.emptyArgs();
       long var9 = 270389152141252877L;
       Ref.h2(270389152141252877L, var9);
@@ -90,7 +91,7 @@ public class EffectPreview extends Z7 {
       var2.add(var7);
       JTable var10009 = new JTable();
       long var24 = 581380630510889882L;
-      JTable var23 = var10009;
+      var23 = var10009;
       Ref.s(581380630510889882L, var23, var24);
       Object var25 = 581380630510889882L;
       ((JTable)Ref.g(581380630510889882L, var25)).setGridColor(new Color(a(30299, 6160291761540631845L)));
@@ -102,7 +103,7 @@ public class EffectPreview extends Z7 {
       ((JTable)Ref.g(581380630510889882L, var31)).setSelectionMode(0);
       JScrollPane var10013;
       Object var33 = 581380630510889882L;
-      super((JTable)Ref.g(581380630510889882L, var33));
+      // [VF-super] super((JTable)Ref.g(581380630510889882L, var33));
       JScrollPane var8 = var10013;
       this.add(var8, a(-9477, -1249));
       Object[] var10014 = Registry.emptyArgs();
@@ -159,9 +160,9 @@ public class EffectPreview extends Z7 {
       Object var12 = 636070429409312733L;
       Ref.g(636070429409312733L, var12);
       Object var14 = 203837641958439669L;
-      Object[] var10008 = Registry.packArgs(Ref.g(203837641958439669L, var14));
+      Object var10008 = Registry.packArgs(Ref.g(203837641958439669L, var14));
       long var17 = 435388931657153202L;
-      Object[] var16 = var10008;
+      Object var16 = var10008;
       var10008 = Ref.h(435388931657153202L, var16, var17);
 
       try {
@@ -247,7 +248,7 @@ public class EffectPreview extends Z7 {
       Object var10008 = Ref.g(636070429409312733L, var11);
       ArrayList var10009 = (ArrayList)(Registry.emptyArgs());
       long var14 = 375227574693169611L;
-      Object[] var13 = var10009;
+      Object var13 = var10009;
       var10009 = Ref.h(375227574693169611L, var13, var14);
 
       try {
@@ -1091,6 +1092,7 @@ public class EffectPreview extends Z7 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[17];
       int var11 = 0;
       String var10 = "x丹\u000f\u0001³1\u009dv\u0011\u0004vð×XlÂêÊ\u0006循劆鄸芭$`\u000e@0&+P\u0016\u001a\u0016\\Ýd@AÄ\u0004勵斵剡袓\u0006弧剢醉舱\u0012ó\u0003敒仦夝\u00051¤?Òq\u0002罇迕\u0004醲敬力辽\u0004\u0005¡A\u0093\u0012\u0089=Õ|Ç\u009cmtç\u0082Û¡\u001cÒ\u0085\u0004iu\u0004â恈儐\u009e\u0004µ悕出%\u0002æ中";
@@ -1106,7 +1108,6 @@ public class EffectPreview extends Z7 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

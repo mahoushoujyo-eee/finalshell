@@ -71,6 +71,7 @@ public class Pb2 extends AbstractSingleValueConverter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var2 = new String[14];
       int var6 = 0;
       String var5 = "\u00166x}\"!\u0005\u001b(xp.\u0005\u001e6|v+\u0004\u001b(lv\t\u0015-~{1\u0003w\u0018=\u0006\u0000!u\u007f*3\u0004\t-wx\u0005\u000e,pg \b\u001d%kx\u00026d\u0000\u0004\u00171u\u007f\u0004\u001e6xj\u0004\u001a=x}";
@@ -86,7 +87,6 @@ public class Pb2 extends AbstractSingleValueConverter {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label48: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

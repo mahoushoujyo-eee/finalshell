@@ -7673,6 +7673,7 @@ public class Yn4 implements Closeable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var35;
       String[] var13 = new String[55];
       int var11 = 0;
       String var10 = "ó\u0097´\u008b\u0080\u0083â÷ÙL¬\u0089*\u0014;jqP`\fÄ;j!}\u0011\u0007ù<\u009d}ãÑ;\u0013p'¼ù\u00808Ú\u0085êÙ\u0014¹ZÍè*&\t^\f;\tq¼rC\u0084Sf´ F\u000e\r\u0080\u0013\ru¦dV=£îöK}\u0016ó\u0006ó4¤m\u001c\u0015b¸\u001a³TF\u000f¼m÷7dT\u0004%E¦\u009cG\u009b\u0086KK_föÖÏ\u0093TPRÓA\u0006~n'fÉ\u009eË\u009fÞ~uV\u0011×){\u0011\u0002·4\u0006hM±]¥_\fEV\u00028\u0011y(©,º\u0012)\u000e\u0010À\u0014\u0085Þd\u0011·Ô(vÕ:\u001b\u001f#¾rJ\u0012\u009d\u0088\u0088çÏ\u0010)ú\u009eº/\u008bHòâÖôrÏ9 HÙ»,\u007f\u0015ñA1Ê\u0005'ÝmQÿB\u001d\u008a*¾Ê\u001e°æ\u00135\u0004<å'Y\u0006@¿¢`g\u009b\u0015÷òèÃA¬â®ª\u000b¹±Ï\u008d\u001cM_\u0004hk\u0085\u000eÉº/Ê¹\u008dý\u008aI\u008fÅ!@\u009f\u000e¿ð+³æ\u009dTG4id\u0011\u008aè\u0017ü««æ}²\u0097ÍÄ¶\u008aÊ¬Ñzø«)ÙVÌç\u00ad\u0003Z¨ç\u0012<oZ\u009dµwö¾\u00970\u001aÐf~4t¾t\fXó¡\u008ceï¦{ýà(b\u0018§þøÝ\u001ee\u008d×ZHV\u000b×\u0019?<\rðõ\u0000w»p/\u0004vQnÏ\u000eq.8X[ß¡ÀÂÆ´\bnº\u0011(2_¤0¯\u009b\u009dDzã8õ¤[!¯\u0002¿Å\u0014«`\u009a\u0080\u0093á\u009eÂÑªÀ\u007f`Ú\nûr{\u0083w\u001fò5H;U³`Múw³>\u008e|4sZÃÈ\u0093\u0091Ú\u009a\n$\u0098ëÎÏÎñ\u000e\u000bIw´²B\u009cse°@Æüy\u0016Û~\u0012N\u0085¢°,xY\u0015é\u001dÍËfõ@vå:Û\u001få´ª\u000b\tµë\u008d\u008bo\u009d=K\u001c\u008c\u007fMB*£Íü\u0011êU\u0084ÅM\n¾I>Mâ¿Á«ì¿¦\u0001\nÌ\u0091aÌÔ\u0080í²\u009e/ý\u009cc~êM\u0086C\u0014ä===\u008aVÚ\r6L\u0084\u0085Ì\u0002~\u001c\n\u0086 V¥«ô\u009a|\u008d\u0011\u0084\u000f¸³¥ú\f\\2\u009dÛï¯7Î\u0010\u0007î0\f\u0080\u0005ÅÓWÀô÷h áÔ\u0007\u000fZ\u001e\u001d±i\u0095\u001a!'2y\u001aû\u0089DÇV\u0014\u001azø¿ô\u009fÊ\u0004\"²GTOe\u001a\rKZ$p\u009cðÓZIoÌ\u0096E\u0015øÆ\tE}|e´ZH§Ù\f\u0080dìP0\u0089í¹\u001eÏèÍ\u008e±¿\u000el÷\u0082ãJm\u0000\u0000\"Ø\u009d\u0010ÏTWrBlbÜ\\\u0085¿\u0011\u008eìè\u009b\u00918(\u0001x:TÅ?Ô\u009f`m\u000b ó¸\u0097\u0098èS8w'\u008b\u001d¢'æùÛ!¼\u009fÐ«\u0006¼ÞCP\u001f.ÞæÖ¡.ß1£ÐË$T\tÔG7\u0010A.\u0014[O\u0002\\Y\u0004AÄ\u0082\u0090\t&_i\u0013\u008aNmW`\u0016A5A'ï\u008fý\u0089Ñí \u007f»\u001f\u001f<o\u000b%\u008cPö\u000f´c\u0080ñLêCf\u009e\u0012?\u0092\u0013óO\u0011»\rÅ¼¯\u0090?\u0090V{\u0083í¨G¶{í\u0014#'\u008bh±üÚaYÞÑñB\u000bNÁú<\u0092\u009f\u001aSN|TÓ^°ðàÀðÈæ¢,¿í£J\u000f{âmûB\u008c\u000eÄ\u0094D?\u000b\féu\u0083/\u0092ÙTñ";
@@ -7689,7 +7690,6 @@ public class Yn4 implements Closeable {
          byte var10002 = -1;
 
          while (true) {
-      char[] var35;
             label65: {
                char[] var41 = var10001.toCharArray();
                int var10004 = var41.length;

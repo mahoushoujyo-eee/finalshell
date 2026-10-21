@@ -2,7 +2,7 @@ package com.finalshell.task;
 
 import com.finalshell.core.Qu2;
 import com.finalshell.core.Z1_2;
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.util.HashMap;
 
 public class LW implements Runnable {
@@ -15,7 +15,7 @@ public class LW implements Runnable {
    }
 
    public synchronized void d(Qu2 var1, int var2) {
-      String[] var3 = PingMessageR.N();
+      String[] var3 = PingMessageReceiver.N();
       HashMap var10000 = this.s;
       Integer var10001 = var1.a;
       if (var3 != null) {

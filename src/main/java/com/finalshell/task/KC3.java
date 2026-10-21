@@ -1,19 +1,19 @@
 package com.finalshell.task;
 
-import com.finalshell.core.File8;
+import com.finalshell.core.FileDropTransferHandler;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class KC3 implements Runnable {
-   public final Connection4 o;
+   public final ConnectionInfoPanel o;
    public final Tf4 L;
    public final Tf4 w;
-   public final File8 Y;
+   public final FileDropTransferHandler Y;
 
-   public KC3(File8 var1, Connection4 var2, Tf4 var3, Tf4 var4) {
+   public KC3(FileDropTransferHandler var1, ConnectionInfoPanel var2, Tf4 var3, Tf4 var4) {
       this.Y = var1;
       this.o = var2;
       this.L = var3;
@@ -64,7 +64,7 @@ public class KC3 implements Runnable {
          Object var10011 = Ref.g(632320723363164056L, var18);
          String var10012 = (String)(Registry.emptyArgs());
          long var21 = 498856411508641826L;
-         Object[] var20 = var10012;
+         Object var20 = var10012;
          var10012 = Ref.h(498856411508641826L, var20, var21);
 
          try {
@@ -78,7 +78,7 @@ public class KC3 implements Runnable {
          Object var10013 = Ref.g(128708130735072831L, var22);
          String var10014 = (String)(Registry.emptyArgs());
          long var25 = 179612178163941306L;
-         Object[] var24 = var10014;
+         Object var24 = var10014;
          var10014 = Ref.h(179612178163941306L, var24, var25);
 
          try {
@@ -89,7 +89,7 @@ public class KC3 implements Runnable {
 
          var10012 = Registry.packArgs(this, var10013.append((String)var10014).toString());
          long var27 = 247777483328047393L;
-         Object[] var26 = var10012;
+         Object var26 = var10012;
          Ref.h(247777483328047393L, var26, var27);
 
          try {

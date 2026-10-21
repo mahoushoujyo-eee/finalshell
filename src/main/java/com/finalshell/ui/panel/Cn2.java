@@ -68,10 +68,11 @@ public abstract class Cn2 extends JPanel implements FM, CS3_2 {
    }
 
    public void z(Fv2_2 var1, ConnectionProperty var2) {
+      Cn2 var5;
       String[] var10000 = Q$arrString();
       var2.f(var1);
       String[] var3 = var10000;
-      Cn2 var5 = this;
+      var5 = this;
       if (var3 != null) {
          if (this.Z != null) {
             int var4 = this.Z.S$int(var2);
@@ -194,10 +195,11 @@ public abstract class Cn2 extends JPanel implements FM, CS3_2 {
    }
 
    public String f(String var1, WH3 var2) {
+      int var5;
       String var10000 = Q$arrString();
       HashSet var4 = new HashSet();
       String[] var3 = var10000;
-      int var5 = 0;
+      var5 = 0;
 
       while (var5 < var2.n()) {
          var4.add(var2.r(var5));
@@ -594,7 +596,7 @@ public abstract class Cn2 extends JPanel implements FM, CS3_2 {
 
       int var2 = var10000.z$int();
       if (var1 == null) {
-         return Boolean.valueOf((boolean)var2);
+         return Boolean.valueOf(var2);
       } else {
          return var2 > 0 ? true : false;
       }
@@ -618,7 +620,7 @@ public abstract class Cn2 extends JPanel implements FM, CS3_2 {
 
       int var2 = var10000.z$int();
       if (var1 == null) {
-         return Boolean.valueOf((boolean)var2);
+         return Boolean.valueOf(var2);
       } else {
          return var2 < this.Z.n() - 1 ? true : false;
       }
@@ -1496,6 +1498,7 @@ public abstract class Cn2 extends JPanel implements FM, CS3_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var31;
       String[] var13 = new String[4];
       int var11 = 0;
       String[] var10000 = new String[4];
@@ -1512,7 +1515,6 @@ public abstract class Cn2 extends JPanel implements FM, CS3_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var31;
             label56: {
                char[] var35 = var10001.toCharArray();
                int var10004 = var35.length;

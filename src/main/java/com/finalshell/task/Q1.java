@@ -3,7 +3,7 @@ package com.finalshell.task;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.dialog.Nq2;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
@@ -13,9 +13,9 @@ public class Q1 implements Runnable {
    public final String D;
    public final String d;
    public final String h;
-   public final Address q;
+   public final FileBrowserAddressBar q;
 
-   public Q1(Address var1, Nq2 var2, ArrayList var3, String var4, String var5, String var6) {
+   public Q1(FileBrowserAddressBar var1, Nq2 var2, ArrayList var3, String var4, String var5, String var6) {
       this.q = var1;
       this.S = var2;
       this.f = var3;

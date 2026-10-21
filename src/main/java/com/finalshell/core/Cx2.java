@@ -6,15 +6,15 @@ import java.lang.reflect.InvocationTargetException;
 
 public class Cx2 implements Tk4 {
    public final Lv4_2 z;
-   public final Yf2 s;
+   public final ConnectionConfigStore s;
 
-   public Cx2(Yf2 var1, Lv4_2 var2) {
+   public Cx2(ConnectionConfigStore var1, Lv4_2 var2) {
       this.s = var1;
       this.z = var2;
    }
 
    @Override
-   public void R(com.finalshell.ui.frame.U var1) {
+   public void R(com.finalshell.ui.frame.MainFrame var1) {
       Object var2 = 204675463440528185L;
       Ref.g(204675463440528185L, var2);
       Object[] var10003 = Registry.emptyArgs();

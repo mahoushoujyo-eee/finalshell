@@ -93,6 +93,7 @@ public final class Y1 {
    }
 
    public static int x(int var0, int[] var1) {
+      int var4;
       String var10000 = FV_2.D();
       int var3 = 0;
       String var2 = var10000;
@@ -126,8 +127,9 @@ public final class Y1 {
    }
 
    public static int a(long var0, long[] var2) {
+      int var4;
       String var10000 = FV_2.D();
-      int var4 = 0;
+      var4 = 0;
       String var3 = var10000;
 
       while (true) {
@@ -194,8 +196,9 @@ public final class Y1 {
    }
 
    public static int N(double var0, double[] var2) {
+      int var4;
       String var10000 = FV_2.D();
-      int var4 = 0;
+      var4 = 0;
       String var3 = var10000;
 
       while (true) {
@@ -228,6 +231,7 @@ public final class Y1 {
    }
 
    public static int a(char var0, char[] var1) {
+      int var4;
       String var10000 = FV_2.D();
       int var3 = 0;
       String var2 = var10000;
@@ -261,6 +265,7 @@ public final class Y1 {
    }
 
    public static int l(byte var0, byte[] var1) {
+      int var4;
       String var10000 = FV_2.D();
       int var3 = 0;
       String var2 = var10000;
@@ -298,8 +303,9 @@ public final class Y1 {
    }
 
    public static int w(String var0, String[] var1, boolean var2) {
+      int var4;
       String var10000 = FV_2.D();
-      int var4 = 0;
+      var4 = 0;
 
       for (String var3 = var10000; var4 < var1.length; var4++) {
          String var5;
@@ -330,7 +336,7 @@ public final class Y1 {
          }
 
          if (var10000 != null) {
-            byte var7 = (var2) ? 1 : 0;
+            byte var7 = (byte)((var2) ? 1 : 0);
             if (var3 == null) {
                if (var2 != 0) {
                   if (var5.equalsIgnoreCase(var0)) {
@@ -339,7 +345,7 @@ public final class Y1 {
                   break;
                }
 
-               var7 = (var5.equals(var0)) ? 1 : 0;
+               var7 = (byte)((var5.equals(var0)) ? 1 : 0);
             }
 
             if (var3 != null) {
@@ -396,7 +402,7 @@ public final class Y1 {
             var10000 = (String)var4;
          }
 
-         byte var6 = (var10000.equals(var0)) ? 1 : 0;
+         byte var6 = (byte)((var10000.equals(var0)) ? 1 : 0);
          if (var2 != null) {
             return var6;
          }
@@ -411,11 +417,12 @@ public final class Y1 {
    }
 
    public static Object[] E(Object[] var0, Object var1) {
+      int var5;
       String var10000 = FV_2.D();
       Object[] var3 = R(var0, var0.length - 1);
       byte var4 = 0;
       String var2 = var10000;
-      int var5 = 0;
+      var5 = 0;
 
       while (var5 < var0.length) {
          label25: {
@@ -453,10 +460,12 @@ public final class Y1 {
    }
 
    public static int[] e(int[] var0, int var1) {
+      int var4;
+      int var5;
       int[] var3 = new int[var0.length - 1];
       String var10000 = FV_2.D();
-      int var4 = 0;
-      int var5 = 0;
+      var4 = 0;
+      var5 = 0;
       String var2 = var10000;
 
       while (var5 < var0.length) {
@@ -490,11 +499,13 @@ public final class Y1 {
    }
 
    public static float[] k(float[] var0, float var1) {
+      int var4;
+      int var5;
       float[] var3 = new float[var0.length - 1];
       String var10000 = FV_2.D();
-      int var4 = 0;
+      var4 = 0;
       String var2 = var10000;
-      int var5 = 0;
+      var5 = 0;
 
       while (var5 < var0.length) {
          label23: {
@@ -528,8 +539,10 @@ public final class Y1 {
    }
 
    public static double[] A(double[] var0, double var1) {
-      double[] var4 = new double[var0.length - 1];
-      int var5 = 0;
+      double[] var4;
+      int var5;
+      var4 = new double[var0.length - 1];
+      var5 = 0;
       String var10000 = FV_2.D();
       int var6 = 0;
       String var3 = var10000;
@@ -566,11 +579,13 @@ public final class Y1 {
    }
 
    public static char[] h(char[] var0, char var1) {
+      int var4;
+      int var5;
       String var10000 = FV_2.D();
       char[] var3 = new char[var0.length - 1];
-      int var4 = 0;
+      var4 = 0;
       String var2 = var10000;
-      int var5 = 0;
+      var5 = 0;
 
       while (var5 < var0.length) {
          label23: {
@@ -603,11 +618,13 @@ public final class Y1 {
    }
 
    public static byte[] F(byte[] var0, byte var1) {
+      int var4;
+      int var5;
       byte[] var3 = new byte[var0.length - 1];
       String var10000 = FV_2.D();
-      int var4 = 0;
+      var4 = 0;
       String var2 = var10000;
-      int var5 = 0;
+      var5 = 0;
 
       while (var5 < var0.length) {
          label23: {
@@ -640,10 +657,12 @@ public final class Y1 {
    }
 
    public static boolean[] i(boolean[] var0, int var1) {
+      int var4;
+      int var5;
       String var10000 = FV_2.D();
       boolean[] var3 = new boolean[var0.length - 1];
-      int var4 = 0;
-      int var5 = 0;
+      var4 = 0;
+      var5 = 0;
       String var2 = var10000;
 
       while (var5 < var0.length) {
@@ -677,10 +696,12 @@ public final class Y1 {
    }
 
    public static Object[] X(Object[] var0, int var1) {
+      int var4;
+      int var5;
       String var10000 = FV_2.D();
       Object[] var3 = R(var0, var0.length - 1);
-      int var4 = 0;
-      int var5 = 0;
+      var4 = 0;
+      var5 = 0;
       String var2 = var10000;
 
       while (var5 < var0.length) {
@@ -714,9 +735,11 @@ public final class Y1 {
    }
 
    public static int[] C(int[] var0, int var1, int var2) {
-      int[] var4 = new int[var0.length + 1];
+      int[] var4;
+      int var5;
+      var4 = new int[var0.length + 1];
       String var10000 = FV_2.D();
-      int var5 = 0;
+      var5 = 0;
       int var6 = 0;
       String var3 = var10000;
 
@@ -746,9 +769,11 @@ public final class Y1 {
    }
 
    public static float[] g(float[] var0, int var1, float var2) {
-      float[] var4 = new float[var0.length + 1];
+      float[] var4;
+      int var5;
+      var4 = new float[var0.length + 1];
       String var10000 = FV_2.D();
-      int var5 = 0;
+      var5 = 0;
       int var6 = 0;
       String var3 = var10000;
 
@@ -778,11 +803,13 @@ public final class Y1 {
    }
 
    public static double[] I(double[] var0, int var1, double var2) {
-      double[] var5 = new double[var0.length + 1];
+      String var4;
+      double[] var5;
+      var5 = new double[var0.length + 1];
       int var6 = 0;
       String var10000 = FV_2.D();
       int var7 = 0;
-      String var4 = var10000;
+      var4 = var10000;
 
       while (var7 < var0.length) {
          label19: {
@@ -810,9 +837,11 @@ public final class Y1 {
    }
 
    public static char[] a(char[] var0, int var1, char var2) {
-      char[] var4 = new char[var0.length + 1];
+      char[] var4;
+      int var5;
+      var4 = new char[var0.length + 1];
       String var10000 = FV_2.D();
-      int var5 = 0;
+      var5 = 0;
       int var6 = 0;
       String var3 = var10000;
 
@@ -842,10 +871,12 @@ public final class Y1 {
    }
 
    public static byte[] L(byte[] var0, int var1, byte var2) {
+      byte[] var4;
+      int var5;
       String var10000 = FV_2.D();
-      byte[] var4 = new byte[var0.length + 1];
+      var4 = new byte[var0.length + 1];
       String var3 = var10000;
-      int var5 = 0;
+      var5 = 0;
       int var6 = 0;
 
       while (var6 < var0.length) {
@@ -874,10 +905,12 @@ public final class Y1 {
    }
 
    public static boolean[] W(boolean[] var0, int var1, boolean var2) {
+      boolean[] var4;
+      int var5;
       String var10000 = FV_2.D();
-      boolean[] var4 = new boolean[var0.length + 1];
+      var4 = new boolean[var0.length + 1];
       String var3 = var10000;
-      int var5 = 0;
+      var5 = 0;
       int var6 = 0;
 
       while (var6 < var0.length) {
@@ -906,10 +939,12 @@ public final class Y1 {
    }
 
    public static Object[] a(Object[] var0, int var1, Object var2) {
+      Object[] var4;
+      int var5;
       String var10000 = FV_2.D();
-      Object[] var4 = R(var0, var0.length + 1);
+      var4 = R(var0, var0.length + 1);
       String var3 = var10000;
-      int var5 = 0;
+      var5 = 0;
       int var6 = 0;
 
       while (var6 < var0.length) {

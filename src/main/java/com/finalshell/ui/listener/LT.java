@@ -7,22 +7,23 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class LT implements ActionListener {
-   public final com.finalshell.ui.frame.U a;
+   public final com.finalshell.ui.frame.MainFrame a;
    public static long[] b;
    public static Long[] c;
 
-   public LT(com.finalshell.ui.frame.U var1) {
+   public LT(com.finalshell.ui.frame.MainFrame var1) {
       this.a = var1;
    }
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      Long var41;
       com.finalshell.ui.panel.F8.y();
       long var10001 = System.currentTimeMillis();
       Object var10002 = Registry.lookupField(199832172921665052L).get(null);
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var7 = 311260639782144664L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       var10003 = Ref.h(311260639782144664L, var6, var7);
 
       try {
@@ -60,7 +61,7 @@ public class LT implements ActionListener {
                   var10002 = Registry.lookupField(199832172921665052L).get(null);
                   var10003 = Registry.emptyArgs();
                   long var11 = 249886410317960768L;
-                  Object[] var10 = var10003;
+                  Object var10 = var10003;
                   Ref.h(249886410317960768L, var10, var11);
 
                   try {
@@ -70,7 +71,7 @@ public class LT implements ActionListener {
                   }
 
                   Object var12 = 181600139630751244L;
-                  this.equals((com.finalshell.ui.frame.U)Ref.g(181600139630751244L, var12));
+                  this.equals((com.finalshell.ui.frame.MainFrame)Ref.g(181600139630751244L, var12));
                }
 
                if (var2 == 0) {
@@ -104,7 +105,7 @@ public class LT implements ActionListener {
                   Registry.lookupField(199832172921665052L).get(null);
                   var10003 = Registry.packArgs(false);
                   long var19 = 634601920284847200L;
-                  Object[] var18 = var10003;
+                  Object var18 = var10003;
                   Ref.h(634601920284847200L, var18, var19);
 
                   try {
@@ -128,7 +129,7 @@ public class LT implements ActionListener {
             Ref.g(181600139630751244L, var20);
             var10003 = Registry.emptyArgs();
             long var23 = 385826789103549433L;
-            Object[] var22 = var10003;
+            Object var22 = var10003;
             Ref.h(385826789103549433L, var22, var23);
 
             try {
@@ -143,7 +144,7 @@ public class LT implements ActionListener {
       Object var24 = 181600139630751244L;
       var10003 = Registry.packArgs(Ref.g(181600139630751244L, var24));
       long var27 = 324105784334970743L;
-      Object[] var26 = var10003;
+      Object var26 = var10003;
       Ref.h(324105784334970743L, var26, var27);
 
       try {

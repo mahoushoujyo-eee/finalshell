@@ -1383,6 +1383,7 @@ public class AN_2 implements LayoutManager {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "÷\u0090î0Æ¤ÇÁ\u0088Ó\u009cúJ¼BêU1L\u0015´fÆ\u0006»\u0086¼[±÷";
@@ -1397,7 +1398,6 @@ public class AN_2 implements LayoutManager {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

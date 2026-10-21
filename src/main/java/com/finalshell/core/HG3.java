@@ -207,6 +207,8 @@ public class HG3 extends W5 {
    }
 
    public static void V(Kernel var0, int[] var1, int[] var2, int var3, int var4, boolean var5, int var6) {
+      int var28;
+      int var36;
       int var8 = 0;
       float[] var9 = var0.getKernelData(null);
       String[] var10000 = W5.q();
@@ -340,7 +342,6 @@ public class HG3 extends W5 {
                                        var10001 = var26;
                                        if (var7 != null) {
                                           if (0 <= var26) {
-      int var36;
                                              var36 = var26;
                                              if (var7 == null) {
                                                 break label127;
@@ -410,7 +411,7 @@ public class HG3 extends W5 {
                   var37 = var5 != 0 ? Iw4.e((int)((double)var19 + 0.5)) : a(2220, 3750594293869944452L);
                }
 
-               int var28 = var37;
+               var28 = var37;
                int var29 = Iw4.e((int)((double)var16 + 0.5));
                int var30 = Iw4.e((int)((double)var17 + 0.5));
                int var31 = Iw4.e((int)((double)var18 + 0.5));
@@ -430,6 +431,9 @@ public class HG3 extends W5 {
    }
 
    public static void m(Kernel var0, int[] var1, int[] var2, int var3, int var4, boolean var5, int var6) {
+      int var28;
+      boolean var29;
+      int var30;
       String[] var10000 = W5.q();
       int var8 = 0;
       float[] var9 = var0.getKernelData(null);
@@ -440,7 +444,7 @@ public class HG3 extends W5 {
 
       label111:
       while (true) {
-         int var28 = var12;
+         var28 = var12;
 
          label109:
          while (var28 < var4) {
@@ -465,13 +469,12 @@ public class HG3 extends W5 {
                      float var21 = var9[var19 + var20];
                      if (var7 != null) {
                         float var33;
-                        var29 = (var33 = var21 - 0.0F) == 0.0F ? 0 : (var33 < 0.0F ? -1 : 1);
+                        var29 = ((var33 = var21 - 0.0F) == 0.0F ? 0 : (var33 < 0.0F ? -1 : 1)) != 0;
                         if (var7 == null) {
                            break;
                         }
 
-                        if (var29 != 0) {
-      int var30;
+                        if (var29) {
                            label95: {
                               int var22;
                               label118: {
@@ -554,8 +557,6 @@ public class HG3 extends W5 {
                      }
 
                      if (var7 != null) {
-      int var29;
-      int var29;
                         continue;
                      }
                   }
@@ -565,10 +566,10 @@ public class HG3 extends W5 {
                }
 
                if (var7 != null) {
-                  var29 = var29 != 0 ? Iw4.e((int)((double)var18 + 0.5)) : a(2220, 3750594293869944452L);
+                  var29 = (var29 != 0 ? Iw4.e((int)((double)var18 + 0.5)) : a(2220, 3750594293869944452L)) != 0;
                }
 
-               var20 = var29;
+               var20 = (var29) ? 1 : 0;
                int var25 = Iw4.e((int)((double)var15 + 0.5));
                int var26 = Iw4.e((int)((double)var16 + 0.5));
                int var27 = Iw4.e((int)((double)var17 + 0.5));
@@ -591,6 +592,8 @@ public class HG3 extends W5 {
    }
 
    public static void t(Kernel var0, int[] var1, int[] var2, int var3, int var4, boolean var5, int var6) {
+      int var29;
+      int var30;
       int var8 = 0;
       float[] var9 = var0.getKernelData(null);
       int var10 = var0.getHeight();
@@ -621,6 +624,7 @@ public class HG3 extends W5 {
 
                while (true) {
                   if (var18 <= var11) {
+      float var28;
                      int var19 = var12 + var18;
                      var28 = var19;
                      if (var7 == null) {
@@ -631,7 +635,7 @@ public class HG3 extends W5 {
                      label123: {
                         if (var7 != null) {
                            if (var19 < 0) {
-                              int var29 = var6;
+                              var29 = var6;
                               int var10001 = Y;
                               if (var7 != null) {
                                  if (var6 == Y) {
@@ -669,7 +673,7 @@ public class HG3 extends W5 {
                         int var31 = var4;
                         if (var7 != null) {
                            if (var28 >= var4) {
-                              int var30 = var6;
+                              var30 = var6;
                               var31 = Y;
                               if (var7 != null) {
                                  if (var6 == Y) {
@@ -776,6 +780,9 @@ public class HG3 extends W5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte var28;
+      long var30;
+      String var36;
       char[] var10003 = "C<b\\\\;\u001do&xB\u0005\u001d\\/~".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -872,7 +879,7 @@ public class HG3 extends W5 {
                         var10 = 0;
                   }
 
-                  byte var28 = var10;
+                  var28 = var10;
                   var10 += 8;
                   var16 = var12.substring(var28, var10).getBytes("ISO-8859-1");
                   var18 = var14;
@@ -952,7 +959,7 @@ public class HG3 extends W5 {
             }
          } else {
             if (var19 <= var8) {
-               String var36 = new String(var10002).intern();
+               var36 = new String(var10002).intern();
                int var21 = -1;
                a = var36;
                long var0 = 5850812507718197699L;
@@ -970,7 +977,7 @@ public class HG3 extends W5 {
                   byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
                   long[] var10000 = var6;
                   var21 = var3++;
-                  long var30 = ((long)var7[0] & 255L) << 56
+                  var30 = ((long)var7[0] & 255L) << 56
                      | ((long)var7[1] & 255L) << 48
                      | ((long)var7[2] & 255L) << 40
                      | ((long)var7[3] & 255L) << 32

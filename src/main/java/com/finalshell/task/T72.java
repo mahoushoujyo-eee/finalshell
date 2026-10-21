@@ -23,7 +23,7 @@ public class T72 implements Runnable {
       Ref.g(417188137775278471L, var7);
       HashSet var10003 = (HashSet)(Registry.emptyArgs());
       long var10 = 456782566618177433L;
-      Object[] var9 = var10003;
+      Object var9 = var10003;
       var10003 = Ref.h(456782566618177433L, var9, var10);
 
       try {

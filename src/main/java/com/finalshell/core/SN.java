@@ -67,6 +67,7 @@ public final class SN {
    }
 
    public static Window g(Window var0, boolean var1) {
+      boolean var11;
       String var2 = FV_2.D();
       Window var10000 = var0;
       if (var2 == null) {

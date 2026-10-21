@@ -1,6 +1,6 @@
 package com.finalshell.ui.listener;
 
-import com.finalshell.core.File3;
+import com.finalshell.core.FileChooserFilter;
 import com.finalshell.core.U62;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
@@ -25,6 +25,8 @@ public class Oi2 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var44;
+      boolean var49;
       Ky4[] var2 = EnableBackgroundImage.I();
       Registry.emptyArgs();
       long var7 = 270389152141252877L;
@@ -41,9 +43,9 @@ public class Oi2 implements ActionListener {
          long var10 = 163462326892114024L;
          Object[] var9 = var10002;
          Ref.h(163462326892114024L, var9, var10);
-         Object[] var10003 = Registry.emptyArgs();
+         Object var10003 = Registry.emptyArgs();
          long var12 = 133802226692684648L;
-         Object[] var11 = var10003;
+         Object var11 = var10003;
          var10003 = Ref.h(133802226692684648L, var11, var12);
 
          try {
@@ -57,7 +59,7 @@ public class Oi2 implements ActionListener {
             Ref.g(588461528726846294L, var17);
             String var10005 = (String)(Registry.emptyArgs());
             long var20 = 164139683561291111L;
-            Object[] var19 = var10005;
+            Object var19 = var10005;
             var10005 = Ref.h(164139683561291111L, var19, var20);
 
             try {
@@ -112,7 +114,7 @@ public class Oi2 implements ActionListener {
             var41.setDialogTitle(a);
             var41.setFileSelectionMode(0);
             var41.setMultiSelectionEnabled(false);
-            var41.setFileFilter(new File3(this));
+            var41.setFileFilter(new FileChooserFilter(this));
             Object var23 = 156222592412218828L;
             int var5 = this.showOpenDialog(SwingUtilities.getWindowAncestor((EnableBackgroundImage)Ref.g(156222592412218828L, var23)));
             if (var5 == 0) {

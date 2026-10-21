@@ -73,7 +73,7 @@ public class ExtranetAddressModel extends AbstractTableModel {
                var10001 = var1;
                String var10003 = (String)(Registry.emptyArgs());
                long var10 = 597157388012521283L;
-               Object[] var9 = var10003;
+               Object var9 = var10003;
                var10003 = Ref.h(597157388012521283L, var9, var10);
 
                try {
@@ -1000,6 +1000,7 @@ public class ExtranetAddressModel extends AbstractTableModel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[4];
       int var5 = 0;
       String var4 = "夓羜穣北\u0004凈翘竹原";
@@ -1014,7 +1015,6 @@ public class ExtranetAddressModel extends AbstractTableModel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

@@ -923,6 +923,7 @@ public class XG extends Xv2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[8];
       int var3 = 0;
       String var2 = "Å@\u0095\u0016\u008f¨\u009fQnð\tÑ\u001a\u0017]ßÆ\u009cn&\n6áë\"@.f\u0081Qê\tHd$\u0092¹?PQ¿\u0012â\u0091q,\u0013ñ\u0015¬\t,áèA ôúò\u0003\u0012v\u0010ã\u001cA÷_l@4Èëd@Pöf\u0082";
@@ -938,7 +939,6 @@ public class XG extends Xv2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

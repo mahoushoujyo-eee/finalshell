@@ -192,9 +192,9 @@ var10006 = new int[]{(int)this, ((JPanel)Ref.g(298076432091071542L, var13)).getP
    }
 
    public static int y(Tq4 var0) {
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var2 = 387507981730670112L;
-      Object[] var1 = var10001;
+      Object var1 = var10001;
       var10001 = Ref.h(387507981730670112L, var1, var2);
 
       try {

@@ -1322,9 +1322,9 @@ public class Oo2 extends CharsetDecoder {
 
    @Override
    public CoderResult decodeLoop(ByteBuffer var1, CharBuffer var2) {
-      Object[] var10001 = Registry.packArgs(var1, var2);
+      Object var10001 = Registry.packArgs(var1, var2);
       long var4 = 633854366038463952L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(633854366038463952L, var3, var4);
 
       try {

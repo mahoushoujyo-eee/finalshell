@@ -1204,6 +1204,7 @@ public class Tk2 extends T4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[7];
       int var3 = 0;
       String var2 = "¸M\t&f\u0004\u0084IR7H_\u0001ï¤\u008d\u0088Õ`\fdî¬]\u0089¯\u0082,Õ\u001a\u0087dÀd\u0012J\u000fUHÛª\u0019Â\u001c\u0004\u0014ÙÛGD\u0015M\u008a+!§:á}\u001eÝ¿¥xó¢IZR\u009b\u000b\u0087\u009a)±\u0019O4\u0005\"õük\u0004ëå¿¢\u0005\u0016¢ÜÛÜ";
@@ -1220,7 +1221,6 @@ public class Tk2 extends T4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -6,7 +6,7 @@ import com.finalshell.ui.panel.Ky4;
 import javax.swing.ImageIcon;
 
 public final class KZ3 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -868,6 +868,7 @@ public final class KZ3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[7];
       int var3 = 0;
       String var2 = "\u001cÍÐ½\u0085_\u001bpÑÿIu\u001e¶|±²:Û\u008e\u0095\u000eã÷ÊPq\u0091\nÖ\u009d1³âÝ|\u0012\u009c[öN\u008c%;¢ç\u0007ø\u007f÷Dl B)X°\u0085Dé¾\u0092-rñ:ã ßh\u001fYï½\u0012j_#§ù:\u0001üÂ\u001a~P}\u0006Ê\rò>è¡v_¯®1\u000fmx<¶\\\u0085\u008f/\u0019N±aù\u0001/µkä4ª)¯\u0005¡Ôé}\u009eÓ7.êS²·K\u0098%\u008eiìç\u0016)êe\u001e\u009b1¹Ë^uØM\u008em\u0090*E:f \u0003í!õ\u000f.¾\u00924\u008e\u0007p\u0002\u0098§Ùñ«A\u008d";
@@ -884,7 +885,6 @@ public final class KZ3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

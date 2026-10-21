@@ -203,6 +203,7 @@ public final class PG {
    }
 
    public static String p(List var0) {
+      StringBuilder var5;
       String var10000 = FV_2.D();
       StringBuilder var2 = new StringBuilder();
       String var1 = var10000;
@@ -218,8 +219,6 @@ public final class PG {
             }
 
             if (var1 == null) {
-      StringBuilder var5;
-      StringBuilder var5;
                continue;
             }
          }
@@ -232,6 +231,7 @@ public final class PG {
    }
 
    public static boolean X(DataFlavor[] var0) {
+      boolean var6;
       DataFlavor[] var2 = var0;
       int var3 = var0.length;
       String var10000 = FV_2.D();
@@ -283,10 +283,12 @@ public final class PG {
    }
 
    public static boolean V(Component var0, TransferSupport var1) {
+      Container var5;
+      boolean var6;
       String var10000 = FV_2.D();
       Container var3 = var0.getParent();
       String var2 = var10000;
-      Container var5 = var3;
+      var5 = var3;
       if (var2 == null) {
          if (var3 == null) {
             return false;
@@ -295,7 +297,7 @@ public final class PG {
          var5 = var3;
       }
 
-      boolean var6 = var5 instanceof JComponent;
+      var6 = var5 instanceof JComponent;
       if (var2 != null) {
          return var6;
       } else if (var6) {
@@ -320,10 +322,12 @@ public final class PG {
    }
 
    public static boolean N(Component var0, TransferSupport var1) {
+      Container var5;
+      boolean var6;
       String var10000 = FV_2.D();
       Container var3 = var0.getParent();
       String var2 = var10000;
-      Container var5 = var3;
+      var5 = var3;
       if (var2 == null) {
          if (var3 == null) {
             return false;
@@ -332,7 +336,7 @@ public final class PG {
          var5 = var3;
       }
 
-      boolean var6 = var5 instanceof JComponent;
+      var6 = var5 instanceof JComponent;
       if (var2 != null) {
          return var6;
       } else if (var6) {
@@ -361,6 +365,7 @@ public final class PG {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -30782) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1141,7 +1146,7 @@ public final class PG {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1166,7 +1171,8 @@ public final class PG {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var5 = new String[3];
+      String[] var5;
+      var5 = new String[3];
       int var3 = 0;
       String var2 = "R-$ÚÆ\u000f¢P¹\tá¿ÂÑ#hùð\u0080¦E\u0003ê¬ÂK¢8\u009cï§³öx\u0086\u00ad!\\c\u0002£N";
       int var4 = "R-$ÚÆ\u000f¢P¹\tá¿ÂÑ#hùð\u0080¦E\u0003ê¬ÂK¢8\u009cï§³öx\u0086\u00ad!\\c\u0002£N".length();
@@ -1259,7 +1265,6 @@ public final class PG {
       }
    }
 }
-
 
 
 

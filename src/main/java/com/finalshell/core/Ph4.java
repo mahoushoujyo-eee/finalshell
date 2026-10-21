@@ -3763,6 +3763,7 @@ public class Ph4 implements Xd4 {
    }
 
    public void X(Object var1, List var2) {
+      boolean var18;
       java.lang.Class var4 = var1.getClass();
       String var10000 = Hi2.C();
       Nj4 var5 = this.e(var4);
@@ -7197,9 +7198,11 @@ public class Ph4 implements Xd4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var18;
+      char[] var46;
       String[] var21 = new String[17];
       int var19 = 0;
-      String var18 = "1.\u0006\u00009Ó\u00172z(¼oë\u001a[Ö¡ô~\u0081R\fÇ^!ø\u0011ßB\u009dò\u0098?§ÖÜ8\u0003k2rk\u0095@ò8ÈÐ%K£Ð\u0006S\u0017(ø\u008d\u0013ÍeyÎ\"L%~ÕêåÉû¸A\u001bâÓS\u00111\u008eæ³Éï@±_ò\u000bî#©«q\u0019\u0014õõ)\u0087½\n¥\u0081AÑn\tXàÊ\b\u008aä\u0014!\u0018ùÄ\u0083\u0016ÿ(b#Ù®\u0011\u0095ìdOM\u0000Uoh\u0092j5ÿ\u0015¨¢5\u0091_áÛtãæ\u009clÑùùa\u008eßÐÏú\f0\u0013Þ\u0005\u009cÆ/Wñ9Ûb\"\u007f\u001eÏ\u0006]\u0002x'hV½\u0084ÇÇXñ´*\u0005\u0015\u0094h\u0081ª1\u009f¹\u009føè>\u0012xT!Ã¬¸õq\u0004\u0005á\u0014\rªCÍ\u0004ë\u009fP('EÔ>Mûøx¦}\u009dxñ\u0015¶\u001aPÉÊY?\u0091ÌS-[\u008d\u0089;Jcâ\u0091¾ÞÊI|Orué\u000b5¶\u0014!ó\u0099¢ò¸\u008b\"\u0018\u00adµ\u0095sK½Yÿ³\u0091\u0085XÌü¿\n=oíò b\u0089\u0093\u000bE\u008e\u001a&2y\u009aî¿\bÂ\u001a{î¯½\u0093\rYÀ\u009f)ÛÇñ\u0083:Ûº\u0099».åàÚáÇ\u009b";
+      var18 = "1.\u0006\u00009Ó\u00172z(¼oë\u001a[Ö¡ô~\u0081R\fÇ^!ø\u0011ßB\u009dò\u0098?§ÖÜ8\u0003k2rk\u0095@ò8ÈÐ%K£Ð\u0006S\u0017(ø\u008d\u0013ÍeyÎ\"L%~ÕêåÉû¸A\u001bâÓS\u00111\u008eæ³Éï@±_ò\u000bî#©«q\u0019\u0014õõ)\u0087½\n¥\u0081AÑn\tXàÊ\b\u008aä\u0014!\u0018ùÄ\u0083\u0016ÿ(b#Ù®\u0011\u0095ìdOM\u0000Uoh\u0092j5ÿ\u0015¨¢5\u0091_áÛtãæ\u009clÑùùa\u008eßÐÏú\f0\u0013Þ\u0005\u009cÆ/Wñ9Ûb\"\u007f\u001eÏ\u0006]\u0002x'hV½\u0084ÇÇXñ´*\u0005\u0015\u0094h\u0081ª1\u009f¹\u009føè>\u0012xT!Ã¬¸õq\u0004\u0005á\u0014\rªCÍ\u0004ë\u009fP('EÔ>Mûøx¦}\u009dxñ\u0015¶\u001aPÉÊY?\u0091ÌS-[\u008d\u0089;Jcâ\u0091¾ÞÊI|Orué\u000b5¶\u0014!ó\u0099¢ò¸\u008b\"\u0018\u00adµ\u0095sK½Yÿ³\u0091\u0085XÌü¿\n=oíò b\u0089\u0093\u000bE\u008e\u001a&2y\u009aî¿\bÂ\u001a{î¯½\u0093\rYÀ\u009f)ÛÇñ\u0083:Ûº\u0099».åàÚáÇ\u009b";
       int var20 = "1.\u0006\u00009Ó\u00172z(¼oë\u001a[Ö¡ô~\u0081R\fÇ^!ø\u0011ßB\u009dò\u0098?§ÖÜ8\u0003k2rk\u0095@ò8ÈÐ%K£Ð\u0006S\u0017(ø\u008d\u0013ÍeyÎ\"L%~ÕêåÉû¸A\u001bâÓS\u00111\u008eæ³Éï@±_ò\u000bî#©«q\u0019\u0014õõ)\u0087½\n¥\u0081AÑn\tXàÊ\b\u008aä\u0014!\u0018ùÄ\u0083\u0016ÿ(b#Ù®\u0011\u0095ìdOM\u0000Uoh\u0092j5ÿ\u0015¨¢5\u0091_áÛtãæ\u009clÑùùa\u008eßÐÏú\f0\u0013Þ\u0005\u009cÆ/Wñ9Ûb\"\u007f\u001eÏ\u0006]\u0002x'hV½\u0084ÇÇXñ´*\u0005\u0015\u0094h\u0081ª1\u009f¹\u009føè>\u0012xT!Ã¬¸õq\u0004\u0005á\u0014\rªCÍ\u0004ë\u009fP('EÔ>Mûøx¦}\u009dxñ\u0015¶\u001aPÉÊY?\u0091ÌS-[\u008d\u0089;Jcâ\u0091¾ÞÊI|Orué\u000b5¶\u0014!ó\u0099¢ò¸\u008b\"\u0018\u00adµ\u0095sK½Yÿ³\u0091\u0085XÌü¿\n=oíò b\u0089\u0093\u000bE\u008e\u001a&2y\u009aî¿\bÂ\u001a{î¯½\u0093\rYÀ\u009f)ÛÇñ\u0083:Ûº\u0099».åàÚáÇ\u009b"
          .length();
       char var17 = 24;
@@ -7212,7 +7215,6 @@ public class Ph4 implements Xd4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var46;
             label83: {
                char[] var54 = var10001.toCharArray();
                int var10004 = var54.length;

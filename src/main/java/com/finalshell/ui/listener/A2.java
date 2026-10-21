@@ -38,15 +38,15 @@ public class A2 implements ActionListener {
             Ref.h(634817973682994708L, var11, var12);
             JFrame var10007 = Registry.emptyArgs();
             long var14 = 240567170779145617L;
-            Object[] var13 = var10007;
+            Object var13 = var10007;
             var10007 = (JFrame)Ref.h(240567170779145617L, var13, var14);
-            Object[] var10008 = Registry.emptyArgs();
+            Object var10008 = Registry.emptyArgs();
             long var16 = 226341449505323490L;
-            Object[] var15 = var10008;
+            Object var15 = var10008;
             var10008 = Ref.h(226341449505323490L, var15, var16);
 
             try {
-               var10008 = (com.finalshell.ui.frame.U)var10008;
+               var10008 = (com.finalshell.ui.frame.MainFrame)var10008;
             } catch (InvocationTargetException var21) {
                throw var21.getTargetException();
             }

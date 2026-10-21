@@ -2,13 +2,13 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ka4 implements Runnable {
-   public final U E;
+   public final MainFrame E;
 
-   public Ka4(U var1) {
+   public Ka4(MainFrame var1) {
       this.E = var1;
    }
 

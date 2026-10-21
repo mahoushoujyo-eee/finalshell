@@ -3,14 +3,14 @@ package com.finalshell.task;
 import com.finalshell.crypto.ConnectHost;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.lang.reflect.InvocationTargetException;
 
 public class UN3 implements Runnable {
    public final ConnectHost k;
-   public final Address n;
+   public final FileBrowserAddressBar n;
 
-   public UN3(Address var1, ConnectHost var2) {
+   public UN3(FileBrowserAddressBar var1, ConnectHost var2) {
       this.n = var1;
       this.k = var2;
    }

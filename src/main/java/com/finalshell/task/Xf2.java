@@ -4,9 +4,9 @@ import com.finalshell.reflect.Ref;
 import javax.swing.JScrollPane;
 
 public class Xf2 implements Runnable {
-   public final com.finalshell.ui.listener.FC W;
+   public final com.finalshell.ui.listener.FileTimeSortListener W;
 
-   public Xf2(com.finalshell.ui.listener.FC var1) {
+   public Xf2(com.finalshell.ui.listener.FileTimeSortListener var1) {
       this.W = var1;
    }
 

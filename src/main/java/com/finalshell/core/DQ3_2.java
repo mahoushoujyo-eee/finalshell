@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class DQ3_2 implements PO3 {
-   public final Ty2 r;
+   public final RemoteProcessManager r;
 
-   public DQ3_2(Ty2 var1) {
+   public DQ3_2(RemoteProcessManager var1) {
       this.r = var1;
    }
 

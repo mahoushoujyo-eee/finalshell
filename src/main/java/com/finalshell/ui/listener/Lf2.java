@@ -10,9 +10,9 @@ import javax.swing.JCheckBoxMenuItem;
 public class Lf2 implements ActionListener {
    public final JCheckBoxMenuItem C;
    public final com.finalshell.core.Kj2 L;
-   public final com.finalshell.ui.frame.U J;
+   public final com.finalshell.ui.frame.MainFrame J;
 
-   public Lf2(com.finalshell.ui.frame.U var1, JCheckBoxMenuItem var2, com.finalshell.core.Kj2 var3) {
+   public Lf2(com.finalshell.ui.frame.MainFrame var1, JCheckBoxMenuItem var2, com.finalshell.core.Kj2 var3) {
       this.J = var1;
       this.C = var2;
       this.L = var3;

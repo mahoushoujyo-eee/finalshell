@@ -1082,6 +1082,8 @@ public class Nb2_3 extends Nt2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var11;
+      char[] var22;
       String[] var5 = new String[10];
       int var3 = 0;
       String var2 = "\u0084å\u009d:ø\u007f\tòñ{´Ëe#~\u0000ä¯Ø\u0087ãÑ×æOâÄür\u001f\u0013\u0080MCQª¨ÃÃiî\u0010¾Ü«µ½\u009eQç'\u0003èÂ\u0083¼HÒ\u0002\u0080°ã\u0094À:\u0014\u0095\u009e 8â\u0098\u0018M<?\u0007\u0090\u001b\u008a\u0095\u0015Ô/Y\u009aëïC¼\u0010\u001a ñ)\u0014ö\u0095\u001d*Ò\u0092\u001e\u0095ÉÏ\\\"\u0096¨÷\u009fÝ\u0012¢\u008e/_\u0083¸¯\u0010äò,ë\u0019\u0016*öUï½\u0092\u0013¬Lÿç°X\u0099\u0007¦Q\u0088c!\u0004*\u001e,O\u0088oZÕ]§{Ñå\u009eO\u0089;UL\u0005ÍÒA{\u0083³ÅH\u0095©Xµ\u0003\u008d\u009fá";
@@ -1097,7 +1099,6 @@ public class Nb2_3 extends Nt2_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var22;
             label62: {
                char[] var26 = var10001.toCharArray();
                int var10004 = var26.length;

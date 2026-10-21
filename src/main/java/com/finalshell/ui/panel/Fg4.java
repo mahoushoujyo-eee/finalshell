@@ -67,6 +67,8 @@ public class Fg4 extends JPanel implements TableCellRenderer {
 
    @Override
    public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
+      boolean var108;
+      boolean var99;
       String[] var7;
       L1 var8;
       int var12;
@@ -102,7 +104,7 @@ public class Fg4 extends JPanel implements TableCellRenderer {
                label280: {
                   label279: {
                      label313: {
-                        byte var87 = (var3) ? 1 : 0;
+                        byte var87 = (byte)((var3) ? 1 : 0);
                         if (var7 == null) {
                            if (var3 == 0) {
                               break label279;
@@ -113,13 +115,13 @@ public class Fg4 extends JPanel implements TableCellRenderer {
                               break label313;
                            }
 
-                           var87 = (Registry.lookupField(430960577380421690L).getBoolean(this)) ? 1 : 0;
+                           var87 = (byte)((Registry.lookupField(430960577380421690L).getBoolean(this)) ? 1 : 0);
                         }
 
                         if (var87 != 0 && var3 != 0) {
                            String var10001 = Registry.emptyArgs();
                            long var26 = 542058094445767607L;
-                           Object[] var25 = var10001;
+                           Object var25 = var10001;
                            var10001 = Ref.h(542058094445767607L, var25, var26);
 
                            try {
@@ -275,7 +277,7 @@ public class Fg4 extends JPanel implements TableCellRenderer {
                                  Object var37 = 438759596186612739L;
                                  label212:
                                  if ((ArrayList)Ref.g(438759596186612739L, var37) != null) {
-                                    byte var94 = (var3) ? 1 : 0;
+                                    byte var94 = (byte)((var3) ? 1 : 0);
                                     if (var7 == null) {
                                        if (var3 == 0) {
                                           break label212;
@@ -340,7 +342,7 @@ public class Fg4 extends JPanel implements TableCellRenderer {
                               JLabel var96 = (JLabel)Ref.g(442347690627635916L, var43);
                               String var10005 = (String)(Registry.emptyArgs());
                               long var46 = 542058094445767607L;
-                              Object[] var45 = var10005;
+                              Object var45 = var10005;
                               var10005 = Ref.h(542058094445767607L, var45, var46);
 
                               try {
@@ -382,9 +384,9 @@ public class Fg4 extends JPanel implements TableCellRenderer {
                      long var52 = 163462326892114024L;
                      Object[] var51 = var103;
                      Ref.h(163462326892114024L, var51, var52);
-                     Object[] var10006 = Registry.emptyArgs();
+                     Object var10006 = Registry.emptyArgs();
                      long var54 = 633712494917113170L;
-                     Object[] var53 = var10006;
+                     Object var53 = var10006;
                      var10006 = Ref.h(633712494917113170L, var53, var54);
 
                      try {
@@ -409,7 +411,7 @@ public class Fg4 extends JPanel implements TableCellRenderer {
 
             Icon var104 = (Icon)(Registry.emptyArgs());
             long var60 = 587854171453059645L;
-            Object[] var59 = var104;
+            Object var59 = var104;
             var104 = Ref.h(587854171453059645L, var59, var60);
 
             try {
@@ -434,9 +436,9 @@ var10010 = new Point((int)this, ((JLabel)Ref.g(442347690627635916L, var65)).getP
       }
 
       if (var7 != null || var92 != null) {
-         Object[] var97 = Registry.emptyArgs();
+         Object var97 = Registry.emptyArgs();
          long var68 = 456080764218192918L;
-         Object[] var67 = var97;
+         Object var67 = var97;
          var97 = Ref.h(456080764218192918L, var67, var68);
 
          try {
@@ -1414,6 +1416,7 @@ var10010 = new Point((int)this, ((JLabel)Ref.g(442347690627635916L, var65)).getP
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[9];
       int var11 = 0;
       String var10 = "\u0086ßaþ÷Ñ\u009d\u0096KZ;Ù¤>+«\u0007\u0087ìHùàD{\u0004Í±·÷\f¿\u008a]\u0098\u0010`%pë!Gß\u0006\u00155G·\u009b]\u0019\u0089öp\u0099\t\u0015\u0014\u0004\u009eX\u0094µØ{:\u009d\u0098¨\u0013\u009c\u009epNo\u000e\u000e\u0095\u0083\u000e\u0014¦ôø\u0013RÔ5¿½ó";
@@ -1429,7 +1432,6 @@ var10010 = new Point((int)this, ((JLabel)Ref.g(442347690627635916L, var65)).getP
          byte var10002 = -1;
 
          while (true) {
-      long var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

@@ -138,6 +138,7 @@ public class Qm2 extends Ky4 {
    }
 
    public void V(BufferedImage var1, Point var2, int var3) {
+      Rectangle var7;
       boolean var4;
       Rectangle var5;
       Rectangle var6;
@@ -199,7 +200,7 @@ public class Qm2 extends Ky4 {
          var9 = var9 != null ? var6 : var5;
       }
 
-      Rectangle var7 = var9;
+      var7 = var9;
       SwingUtilities.invokeLater(new Yk4(this, var7));
       if (Ky4.F$arrString() != null) {
          d(!var4);
@@ -245,11 +246,13 @@ public class Qm2 extends Ky4 {
    }
 
    public void M(Component[] var1) {
+      int var5;
+      Qm2 var7;
       Component[] var3 = var1;
       boolean var10000 = Z$boolean();
       int var4 = var1.length;
       boolean var2 = var10000;
-      int var5 = 0;
+      var5 = 0;
 
       while (true) {
          if (var5 < var4) {
@@ -280,6 +283,7 @@ public class Qm2 extends Ky4 {
    }
 
    public void N(List var1) {
+      Qm2 var5;
       boolean var10000 = Z$boolean();
       Iterator var3 = var1.iterator();
       boolean var2 = var10000;
@@ -309,11 +313,12 @@ public class Qm2 extends Ky4 {
    }
 
    public void C(Component[] var1) {
+      int var5;
       boolean var10000 = n();
       Component[] var3 = var1;
       boolean var2 = var10000;
       int var4 = var1.length;
-      int var5 = 0;
+      var5 = 0;
 
       while (true) {
          if (var5 < var4) {
@@ -380,6 +385,7 @@ public class Qm2 extends Ky4 {
 
    @Override
    public void paintComponent(Graphics var1) {
+      long var12;
       Graphics2D var3;
       Object var4;
       label76: {
@@ -402,7 +408,7 @@ public class Qm2 extends Ky4 {
                      label63: {
                         Component var13 = var8;
                         if (var2) {
-                           var12 = var8.isShowing();
+                           var12 = (var8.isShowing()) ? 1 : 0;
                            if (!var2) {
                               break label71;
                            }
@@ -518,6 +524,8 @@ public class Qm2 extends Ky4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var5;
+      byte[] var7;
       if (Z$boolean()) {
          d(true);
       }
@@ -701,14 +709,14 @@ public class Qm2 extends Ky4 {
                long[] var6 = new long[5];
                int var3 = 0;
                String var4 = "D\u009eøæ»}xo\u001a\u0081¦â¸\"\u0085=áh±c1Ä \u0083";
-               int var5 = "D\u009eøæ»}xo\u001a\u0081¦â¸\"\u0085=áh±c1Ä \u0083".length();
+               var5 = ("D\u009eøæ»}xo\u001a\u0081¦â¸\"\u0085=áh±c1Ä \u0083".length()) != 0;
                byte var2 = 0;
 
                label40:
                while (true) {
                   var21 = var2;
                   var2 += 8;
-                  byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
+                  var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
                   long[] var10000 = var6;
                   var21 = var3++;
                   long var30 = ((long)var7[0] & 255L) << 56
@@ -739,7 +747,7 @@ public class Qm2 extends Ky4 {
                            }
 
                            var4 = "b\u0082x!ìõrZ±G@<ßc\u001eÐ";
-                           var5 = "b\u0082x!ìõrZ±G@<ßc\u001eÐ".length();
+                           var5 = ("b\u0082x!ìõrZ±G@<ßc\u001eÐ".length()) != 0;
                            var2 = 0;
                      }
 

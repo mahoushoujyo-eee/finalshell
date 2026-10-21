@@ -17,7 +17,7 @@ public class DE3 {
    public DE3() {
       JTable var10001 = (JTable)(Registry.emptyArgs());
       long var4 = 407457816145264175L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(407457816145264175L, var3, var4);
 
       try {
@@ -857,6 +857,7 @@ public class DE3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "\u009e\u00901Þ\u008c\u0003yú\u0087";
@@ -871,7 +872,6 @@ public class DE3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

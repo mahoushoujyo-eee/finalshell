@@ -5,7 +5,7 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public final class Ci4 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -30,6 +30,8 @@ public final class Ci4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      Ci4 D;
+      Ci4 var15;
       String[] var0 = new String[3];
       int var4 = 0;
       String var3 = "\u0003V\nxT:\u0004\u0006J\u0015`\u0005\u0001O\u0010kU";

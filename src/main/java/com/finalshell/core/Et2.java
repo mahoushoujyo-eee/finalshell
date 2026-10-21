@@ -323,6 +323,7 @@ public class Et2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean h;
       char[] var10003 = "E UPCA:uoPQU\u0004+c+\u0019\\^\r<toJP\u0011\u0000sv.UZE\u00156&&J\u001f_\u00046b*]".toCharArray();
       int var10004 = var10003.length;
       int var4 = 0;
@@ -382,8 +383,6 @@ public class Et2 {
                      break label72;
                   }
                } catch (IllegalArgumentException var6) {
-      boolean h;
-      boolean h;
                   throw a(var6);
                }
 
@@ -517,7 +516,6 @@ public class Et2 {
       }
    }
 }
-
 
 
 

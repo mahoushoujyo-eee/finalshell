@@ -78,6 +78,7 @@ public class Qt2 extends Ky4 {
 
    @Override
    public boolean contains(int var1, int var2) {
+      boolean var10;
       String[] var10000 = QX.Y();
       Component[] var4 = this.getComponents();
       int var5 = var4.length;

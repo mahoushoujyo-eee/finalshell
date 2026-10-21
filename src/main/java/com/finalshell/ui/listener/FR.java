@@ -20,6 +20,7 @@ public class FR implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var41;
       int var10000 = ConnectionProperty.y();
       this.w.kj.requestFocus();
       int var2 = var10000;
@@ -32,10 +33,10 @@ public class FR implements ActionListener {
       Ref.h(410905379772103887L, var8, var9);
       Lv4_2 var10004 = (Lv4_2)(Registry.emptyArgs());
       long var11 = 292557478156152530L;
-      Object[] var10 = var10004;
+      Object var10 = var10004;
       var10004 = Registry.packArgs(Ref.h(292557478156152530L, var10, var11));
       long var13 = 343419559142469673L;
-      Object[] var12 = var10004;
+      Object var12 = var10004;
       var10004 = Ref.h(343419559142469673L, var12, var13);
 
       try {
@@ -47,9 +48,9 @@ public class FR implements ActionListener {
       Lv4_2 var3 = var10004;
       if (var3 != null) {
          if (var2 == 0) {
-            Object[] var10005 = Registry.emptyArgs();
+            Object var10005 = Registry.emptyArgs();
             long var15 = 577438617729885268L;
-            Object[] var14 = var10005;
+            Object var14 = var10005;
             var10005 = Ref.h(577438617729885268L, var14, var15);
 
             try {
@@ -94,8 +95,8 @@ public class FR implements ActionListener {
          }
 
          label95: {
-            com.finalshell.ui.frame.U var4 = this.w.kD;
-            com.finalshell.ui.frame.U var39 = var4;
+            com.finalshell.ui.frame.MainFrame var4 = this.w.kD;
+            com.finalshell.ui.frame.MainFrame var39 = var4;
             if (var2 == 0) {
                if (var4 == null) {
                   break label95;

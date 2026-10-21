@@ -9,11 +9,11 @@ import javax.swing.JLabel;
 
 public class KU_3 extends K2_2 {
    public JLabel y;
-   public final com.finalshell.ui.frame.U a;
+   public final com.finalshell.ui.frame.MainFrame a;
    public static long[] b;
    public static Integer[] c;
 
-   public KU_3(com.finalshell.ui.frame.U var1, String var2) {
+   public KU_3(com.finalshell.ui.frame.MainFrame var1, String var2) {
       super(new FlowLayout());
       this.a = var1;
       this.setMinimumSize(new Dimension(a(23845, 3071535225548551627L), a(21048, 3721634103344216784L)));

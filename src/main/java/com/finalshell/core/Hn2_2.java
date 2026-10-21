@@ -1359,6 +1359,7 @@ public class Hn2_2 extends F2_4 implements D_4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[8];
       int var5 = 0;
       String var4 = "\u008e`\u0006\u00130Bël{\u0006\u0089Â9\u00adHÇ\u0002at=û}ø°ÖÚÏüW\u009eÂæ~òªù³\u0002T\u0083WT\u0088_G¤=Ç&Äp+2ª\\\u0091ÌaL\u0010¢\u0019é\u0011T/\u008d\u0012\u0081 \u0002³];E`'è§oÜp\bßw3³ßy\u0099Ûsg32rè\u0081\u0018Iºefô\u0096è¸¸\u001bÃ\u000b!u]$çµ¤äþùáþ*ß\u009d©{hÚK¦ýÕ³Î£\u008fõL\u000eò:gaS\u008f\u0004B%\u009a},th2\u0011\nj\"\u007f,ðð÷\u0016\u0080ÑÔ!¾\u0006½\u0007ÎÐ¯(YÊ²A\u0083-X@\u0081êÏîü\u0011{Ñ";
@@ -1374,7 +1375,6 @@ public class Hn2_2 extends F2_4 implements D_4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

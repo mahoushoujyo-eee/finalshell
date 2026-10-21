@@ -28,6 +28,7 @@ public class T0_2 extends T4 {
    }
 
    public Dimension W(Container var1, boolean var2) {
+      Dimension var16;
       int var3;
       List var4;
       int var13;
@@ -138,6 +139,8 @@ public class T0_2 extends T4 {
 
    @Override
    public void layoutContainer(Container var1) {
+      ArrayList var16;
+      float var36;
       int var2;
       List var3;
       int var31;
@@ -191,7 +194,7 @@ public class T0_2 extends T4 {
          int var13 = var31 + var4;
          int var14 = 0;
          int var15 = -1;
-         ArrayList var16 = new ArrayList();
+         var16 = new ArrayList();
          Iterator var17 = var3.iterator();
 
          label166: {
@@ -238,8 +241,6 @@ public class T0_2 extends T4 {
                }
 
                if (var14 == 1) {
-      Ks4 var36;
-      Ks4 var36;
                   var36 = 1.0F;
                   break label166;
                }
@@ -356,7 +357,6 @@ public class T0_2 extends T4 {
       }
    }
 }
-
 
 
 

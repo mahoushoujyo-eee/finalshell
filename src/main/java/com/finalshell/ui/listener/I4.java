@@ -30,6 +30,9 @@ public class I4 extends MouseAdapter {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      int var15;
+      boolean var18;
+      boolean var22;
       String var10000 = com.finalshell.ui.panel.S.d();
       this.Q.r = System.currentTimeMillis();
       String var2 = var10000;
@@ -47,13 +50,13 @@ public class I4 extends MouseAdapter {
                            label168: {
                               var3 = this.Q.getClosestPathForLocation(K5_2.r(this.Q), var1.getX(), var1.getY());
                               if (var3 != null) {
-                                 var15 = K5_2.i(this.Q, var3, var1.getX(), var1.getY());
+                                 var15 = (K5_2.i(this.Q, var3, var1.getX(), var1.getY())) ? 1 : 0;
                                  if (var2 != null) {
                                     if (var15 != 0) {
                                        break label193;
                                     }
 
-                                    var15 = this.Q.v(var3, var1.getX(), var1.getY());
+                                    var15 = (this.Q.v(var3, var1.getX(), var1.getY())) ? 1 : 0;
                                  }
 
                                  if (var2 == null) {
@@ -112,7 +115,6 @@ public class I4 extends MouseAdapter {
                            Na2 var17 = K5_2.b(this.Q).getCellRenderer().getClass().equals(Na2.class);
                            if (var2 != null) {
                               if (var17 == null) {
-      Na2 var18;
                                  label135: {
                                     label187: {
                                        Na2 var8 = (Na2)K5_2.w(this.Q).getCellRenderer();
@@ -141,15 +143,15 @@ public class I4 extends MouseAdapter {
                                           }
 
                                           long var24;
-                                          var18 = (var24 = this.Q.R - (long)var4) == 0L ? 0 : (var24 < 0L ? -1 : 1);
+                                          var18 = ((var24 = this.Q.R - (long)var4) == 0L ? 0 : (var24 < 0L ? -1 : 1)) != 0;
                                        }
 
                                        if (var2 == null) {
                                           break label135;
                                        }
 
-                                       if (var18 == null) {
-                                          var18 = K5_2.E(this.Q).getSelectionCount();
+                                       if (var18 != false) {
+                                          var18 = (K5_2.E(this.Q).getSelectionCount()) != 0;
                                           if (var2 == null) {
                                              break label135;
                                           }
@@ -378,8 +380,8 @@ public class I4 extends MouseAdapter {
             String var10000 = com.finalshell.ui.panel.S.d();
             Rectangle var3 = Rv4.t(new Point[]{this.Q.n, this.Q.q});
             var4 = new ArrayList();
-            var2 = (var10000) ? 1 : 0;
-            byte var14 = (FN.y(var1)) ? 1 : 0;
+            var2 = var10000;
+            byte var14 = (byte)((FN.y(var1)) ? 1 : 0);
             if (var2 != null) {
                if (var14 != 0) {
                   int var5 = 0;
@@ -426,7 +428,7 @@ public class I4 extends MouseAdapter {
                   }
                }
 
-               var14 = (FN.m(var1)) ? 1 : 0;
+               var14 = (byte)((FN.m(var1)) ? 1 : 0);
             }
 
             if (var2 != null) {

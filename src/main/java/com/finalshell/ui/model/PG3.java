@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.XP;
 
 public abstract class PG3 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -39,6 +39,7 @@ public abstract class PG3 {
    }
 
    public static PG3 T(char var0) {
+      PG3 var6;
       int[] var10000 = XP.j();
       PG3[] var2 = values();
       int[] var1 = var10000;
@@ -49,7 +50,6 @@ public abstract class PG3 {
          if (var4 < var3) {
             PG3 var5 = var2[var4];
             if (var1 == null) {
-      PG3 var6;
                var6 = var5;
                if (var1 != null) {
                   break;
@@ -77,6 +77,7 @@ public abstract class PG3 {
    public abstract int Q(int var1);
 
    public boolean a(char var1) {
+      int var7;
       int[] var10000 = XP.j();
       int[] var3 = this.B;
       int var4 = var3.length;
@@ -87,7 +88,6 @@ public abstract class PG3 {
          if (var5 < var4) {
             int var6 = var3[var5];
             if (var2 == null) {
-      PG3 var7;
                var7 = var6;
                if (var2 != null) {
                   break;
@@ -109,7 +109,7 @@ public abstract class PG3 {
          break;
       }
 
-      return (boolean)var7;
+      return var7 != 0;
    }
 
    public static PG3[] q() {
@@ -150,6 +150,9 @@ public abstract class PG3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      long[] var6;
+      byte[] var7;
       String[] var8 = new String[14];
       int var12 = 0;
       String var11 = "M4\u0011;}{\u0014N4\u0000)oe\u0010I8\u0002:cr\u0007K!\u000b?\u007ff\u0007Y&\u00062uf\u001d\u0005N$\u00175t\u0007Y!\u00028uf\u001d\u0010N4\u0000)o`\u0005Z=\u0006;y{\u0001K=\u0006N0\r?o}\u0006L#\u00068\u007f}\u0007H#\n\"uf\u001d\u000fL#\u00068\u007f}\nI0\r7x|\u0014D\u0007C%\u0002:ut\u001b\u0005K\"\u0000?u";
@@ -165,7 +168,6 @@ public abstract class PG3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -242,7 +244,7 @@ public abstract class PG3 {
                   var8[var12++] = var44;
                   if ((var17 += var10) >= var13) {
                      long var0 = 2587482213544743571L;
-                     long[] var6 = new long[36];
+                     var6 = new long[36];
                      int var3 = 0;
                      String var4 = "A³\u008bHÍ\u0012¸XÙ?I\u0097)|\u0083\u0004Ó¶\u0002ÙÆ\u0001ÀÆÉXÔ\u0090\u0004£ßÎ\u0082rXqKÈ·54¨¦9ÒK=\tjJº^\u008ev¶Þd\u0080¿\n>\u0096.\u0086\u00806ä\u0004ç\u001eg\u0097&\u0088l\räï\u0099D]ú\u0089Q\u008eMÛ!ý9ÚeI\u000eÄ\u0006w\u00827C\u0087_\u0087¯b\u0097?#¦\u0096\u0088/¹\u00970\u0001\u0088\\×\u00807=Ñ¼\u008d,Ó\u009c\u00969sIÎ\u0089KÉ\u009f\u008c -:ä¸4\n$\u0096½+r\u0017\u009e\r\u000bVM»¤å\u008f#\u0018Eò\u0091þ(ñ`\u009e¦\u009eÑÌ\u0092-ø\u0000«\u007fszí´\rß¿-\"+jË3W\fY~\b\u0080½ò\u009aa\u008e\u009c¦Û\u000fÑ\u0095@þðÀl\u001a$\u008c_£vö\\Þ©^±Ü½è\u0018ëIÌ\b\u008b\u00911´\u000fuB\u0087+©iI\u009eú\u008a{wûJÄ37\u008c¥>òj\u0096F\u0093\u0094×v\u0081S\u008e\u001e";
                      int var5 = "A³\u008bHÍ\u0012¸XÙ?I\u0097)|\u0083\u0004Ó¶\u0002ÙÆ\u0001ÀÆÉXÔ\u0090\u0004£ßÎ\u0082rXqKÈ·54¨¦9ÒK=\tjJº^\u008ev¶Þd\u0080¿\n>\u0096.\u0086\u00806ä\u0004ç\u001eg\u0097&\u0088l\räï\u0099D]ú\u0089Q\u008eMÛ!ý9ÚeI\u000eÄ\u0006w\u00827C\u0087_\u0087¯b\u0097?#¦\u0096\u0088/¹\u00970\u0001\u0088\\×\u00807=Ñ¼\u008d,Ó\u009c\u00969sIÎ\u0089KÉ\u009f\u008c -:ä¸4\n$\u0096½+r\u0017\u009e\r\u000bVM»¤å\u008f#\u0018Eò\u0091þ(ñ`\u009e¦\u009eÑÌ\u0092-ø\u0000«\u007fszí´\rß¿-\"+jË3W\fY~\b\u0080½ò\u009aa\u008e\u009c¦Û\u000fÑ\u0095@þðÀl\u001a$\u008c_£vö\\Þ©^±Ü½è\u0018ëIÌ\b\u008b\u00911´\u000fuB\u0087+©iI\u009eú\u008a{wûJÄ37\u008c¥>òj\u0096F\u0093\u0094×v\u0081S\u008e\u001e"
@@ -253,7 +255,7 @@ public abstract class PG3 {
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56

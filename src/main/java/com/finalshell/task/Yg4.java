@@ -63,7 +63,7 @@ public class Yg4 implements Runnable {
 
          ConnectionProperty var10007 = (ConnectionProperty)(Registry.emptyArgs());
          long var28 = 179934491990092343L;
-         Object[] var27 = var10007;
+         Object var27 = var10007;
          var10007 = Ref.h(179934491990092343L, var27, var28);
 
          try {
@@ -79,7 +79,7 @@ public class Yg4 implements Runnable {
             if (var4 == null) {
                F8 var10008 = (F8)(Registry.emptyArgs());
                long var30 = 345201862285199517L;
-               Object[] var29 = var10008;
+               Object var29 = var10008;
                var10008 = Ref.h(345201862285199517L, var29, var30);
 
                try {
@@ -109,7 +109,7 @@ public class Yg4 implements Runnable {
                CT var5 = (CT)var86;
                ConnectionProperty var10009 = (ConnectionProperty)(Registry.emptyArgs());
                long var32 = 398891882190620836L;
-               Object[] var31 = var10009;
+               Object var31 = var10009;
                var10009 = Ref.h(398891882190620836L, var31, var32);
 
                try {
@@ -228,10 +228,10 @@ public class Yg4 implements Runnable {
                         var4.a();
                         T32 var10015 = (T32)(Registry.emptyArgs());
                         long var46 = 380415140795833934L;
-                        Object[] var45 = var10015;
+                        Object var45 = var10015;
                         var10015 = Registry.packArgs(Ref.h(380415140795833934L, var45, var46));
                         long var48 = 259592583851616584L;
-                        Object[] var47 = var10015;
+                        Object var47 = var10015;
                         var10015 = Ref.h(259592583851616584L, var47, var48);
 
                         try {
@@ -257,7 +257,7 @@ public class Yg4 implements Runnable {
                            Ref.h(171915047529395938L, var51, var52);
                            Uo2 var10018 = (Uo2)(Registry.emptyArgs());
                            long var54 = 256841659642290844L;
-                           Object[] var53 = var10018;
+                           Object var53 = var10018;
                            var10018 = Ref.h(256841659642290844L, var53, var54);
 
                            try {
@@ -268,9 +268,9 @@ public class Yg4 implements Runnable {
 
                            Uo2 var12 = var10018;
                            var12.getRowSorter().getSortKeys();
-                           Object[] var10019 = Registry.emptyArgs();
+                           Object var10019 = Registry.emptyArgs();
                            long var56 = 364691625525807755L;
-                           Object[] var55 = var10019;
+                           Object var55 = var10019;
                            var10019 = Ref.h(364691625525807755L, var55, var56);
 
                            try {

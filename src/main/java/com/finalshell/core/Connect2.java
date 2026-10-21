@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 public class Connect2 {
    public UR r;
-   public Rdp g;
+   public RdpConnection g;
    public InetAddress O;
    public int U;
    public HashMap x = new HashMap();
@@ -212,7 +212,8 @@ public class Connect2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void s(DatagramPacket var1) {
-      String[] var2 = PingMessageR.N();
+      int var4;
+      String[] var2 = PingMessageReceiver.N();
       if (var1 != null) {
          int var10000 = (this.r.V()) ? 1 : 0;
          if (var2 != null) {
@@ -223,7 +224,7 @@ public class Connect2 {
             var10000 = CA3.I(var1);
          }
 
-         int var4 = var10000;
+         var4 = var10000;
          int var5 = CA3.m(var1);
          var10000 = var4;
          short var10001 = Yh2.i;
@@ -350,7 +351,7 @@ public class Connect2 {
    }
 
    public boolean E() {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       this.T = this.r.z.K - this.A;
       String[] var1 = var10000;
       byte var2 = 0;
@@ -368,7 +369,7 @@ public class Connect2 {
    }
 
    public void V(int var1) {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       this.J = var1;
       String[] var2 = var10000;
       Connect2 var3 = this;
@@ -384,7 +385,8 @@ public class Connect2 {
    }
 
    public void Z() {
-      String[] var1 = PingMessageR.N();
+      Connect2 var4;
+      String[] var1 = PingMessageReceiver.N();
       int var10000 = (this.d) ? 1 : 0;
       if (var1 != null) {
          if (this.d) {
@@ -424,7 +426,7 @@ public class Connect2 {
    }
 
    public void F() {
-      String[] var1 = PingMessageR.N();
+      String[] var1 = PingMessageReceiver.N();
       int var10000 = (this.d) ? 1 : 0;
       if (var1 != null) {
          if (this.d) {
@@ -464,6 +466,7 @@ public class Connect2 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 26692) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1238,7 +1241,7 @@ public class Connect2 {
                var10000 = 161;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;

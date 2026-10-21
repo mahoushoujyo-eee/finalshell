@@ -5,7 +5,7 @@ import com.finalshell.core.Uc2_2;
 import javax.swing.ImageIcon;
 
 public final class We4 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -859,6 +859,7 @@ public final class We4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[8];
       int var3 = 0;
       String var2 = "[t|\u0005Ì6«\b\u0093w\bó\u0083Q±Ô\u009bá®\u0012&wÓe50^ÞÙ\u0016îÏ±G\u001dm§X\u0006»t\u0007Â¦Í\u0006\f\u0003²ë\u0019á\r?\u0099\u007f?y{P\u00925oó\u0003\u009a";
@@ -874,7 +875,6 @@ public final class We4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

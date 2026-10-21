@@ -50,11 +50,12 @@ public class TJ extends T4 {
 
    @Override
    public void layoutContainer(Container var1) {
+      int var10;
       int var10000 = T4.b();
       Dimension var3 = this.preferredLayoutSize(var1);
       int var2 = var10000;
       Dimension var4 = new Dimension(var3.width, var1.getSize().height);
-      byte var5 = (var1.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      byte var5 = (byte)((var1.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       Insets var6 = var1.getInsets();
       var10000 = var5;
       if (var2 != 0) {
@@ -74,7 +75,7 @@ public class TJ extends T4 {
       }
 
       int var9 = var10000;
-      int var10 = var7;
+      var10 = var7;
       int var11 = var6.top;
       int var12 = Math.max(var4.height, var3.height) - var6.top - var6.bottom;
       int var13 = var4.width - var3.width;
@@ -167,6 +168,7 @@ public class TJ extends T4 {
    }
 
    public Dimension Q(Container var1, boolean var2) {
+      Container var10;
       int var10000 = T4.O();
       int var4 = var1.getComponentCount();
       int var3 = var10000;
@@ -175,7 +177,6 @@ public class TJ extends T4 {
 
       while (true) {
          if (var6 < var4) {
-      Dimension var10;
             var10 = var1;
             if (var3 != 0) {
                break;
@@ -194,7 +195,6 @@ public class TJ extends T4 {
             }
 
             if (var3 == 0) {
-      Dimension var10;
                continue;
             }
          }
@@ -209,7 +209,6 @@ public class TJ extends T4 {
       return var5;
    }
 }
-
 
 
 

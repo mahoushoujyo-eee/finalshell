@@ -45,6 +45,8 @@ public class Gn4 extends GT3 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int var37;
+      int var38;
       String[] var10000 = W5.q();
       int var6 = 0;
       int[] var7 = new int[var1 * var2];
@@ -79,7 +81,6 @@ public class Gn4 extends GT3 {
 
          while (true) {
             if (var27 < var1) {
-      int var37;
                var37 = var23;
                if (var5 == null) {
                   break;
@@ -108,7 +109,6 @@ public class Gn4 extends GT3 {
                               }
 
                               if (var27 < var1 - 2) {
-      int var38;
                                  int var12;
                                  var11 = var8[var24 - 1] + var8[var25 - 1] + var8[var26 - 1] - var8[var24 + 1] - var8[var25 + 1] - var8[var26 + 1];
                                  var12 = var8[var26 - 1] + var8[var26] + var8[var26 + 1] - var8[var24 - 1] - var8[var24] - var8[var24 + 1];

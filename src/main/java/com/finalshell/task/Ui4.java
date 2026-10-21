@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ui4 implements Runnable {
-   public final Connection12 q;
+   public final FileTransferConnection q;
 
-   public Ui4(Connection12 var1) {
+   public Ui4(FileTransferConnection var1) {
       this.q = var1;
    }
 

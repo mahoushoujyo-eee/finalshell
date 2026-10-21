@@ -3,17 +3,17 @@ package com.finalshell.task;
 import com.finalshell.core.Ne4;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import com.finalshell.ui.panel.F8;
 import com.finalshell.ui.panel.ShowDeletedPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class YE3 implements Runnable {
    public final String t;
-   public final Connection5 I;
+   public final ImportExportPanel I;
    public final ShowDeletedPanel R;
 
-   public YE3(ShowDeletedPanel var1, String var2, Connection5 var3) {
+   public YE3(ShowDeletedPanel var1, String var2, ImportExportPanel var3) {
       this.R = var1;
       this.t = var2;
       this.I = var3;

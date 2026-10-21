@@ -77,15 +77,17 @@ public class Kl4 extends Pl2 {
    }
 
    public void O(Tf4 var1) {
+      Object[] var23;
+      Boolean var55;
       Km2.U$String();
       long var8 = 447286965202672841L;
       Ref.s(447286965202672841L, var1, var8);
       Kl4 var2 = this;
       Object var9 = 322872004937477371L;
       ((ArrayList)Ref.g(322872004937477371L, var9)).clear();
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var12 = 490764181082108623L;
-      Object[] var11 = var10003;
+      Object var11 = var10003;
       var10003 = Ref.h(490764181082108623L, var11, var12);
 
       try {
@@ -101,7 +103,7 @@ public class Kl4 extends Pl2 {
                ArrayList var10004 = (ArrayList)Ref.g(322872004937477371L, var13);
                List var10006 = (List)(Registry.emptyArgs());
                long var16 = 369380169373911815L;
-               Object[] var15 = var10006;
+               Object var15 = var10006;
                var10006 = Ref.h(369380169373911815L, var15, var16);
 
                try {
@@ -115,7 +117,7 @@ public class Kl4 extends Pl2 {
                ArrayList var62 = (ArrayList)Ref.g(322872004937477371L, var17);
                List var10008 = (List)(Registry.emptyArgs());
                long var20 = 248698316749304686L;
-               Object[] var19 = var10008;
+               Object var19 = var10008;
                var10008 = Ref.h(248698316749304686L, var19, var20);
 
                try {
@@ -143,7 +145,7 @@ public class Kl4 extends Pl2 {
                ArrayList var56 = (ArrayList)Ref.g(322872004937477371L, var21);
                List var63 = (List)(Registry.emptyArgs());
                long var24 = 369380169373911815L;
-               Object[] var23 = var63;
+               var23 = var63;
                var63 = Ref.h(369380169373911815L, var23, var24);
 
                try {
@@ -157,7 +159,7 @@ public class Kl4 extends Pl2 {
 
             List var57 = (List)(Registry.emptyArgs());
             long var26 = 248698316749304686L;
-            Object[] var25 = var57;
+            Object var25 = var57;
             var57 = Ref.h(248698316749304686L, var25, var26);
 
             try {
@@ -174,9 +176,9 @@ public class Kl4 extends Pl2 {
                      for (Ck4 var5 : var3) {
                         Object var29 = 357165895689944471L;
                         Ref.g(357165895689944471L, var29);
-                        Object[] var10007 = Registry.packArgs(var5);
+                        Object var10007 = Registry.packArgs(var5);
                         long var32 = 446207516786344140L;
-                        Object[] var31 = var10007;
+                        Object var31 = var10007;
                         var10007 = Ref.h(446207516786344140L, var31, var32);
 
                         try {
@@ -217,7 +219,7 @@ public class Kl4 extends Pl2 {
 
          List var66 = (List)(Registry.emptyArgs());
          long var38 = 369380169373911815L;
-         Object[] var37 = var66;
+         Object var37 = var66;
          var66 = Ref.h(369380169373911815L, var37, var38);
 
          try {
@@ -229,7 +231,7 @@ public class Kl4 extends Pl2 {
          for (Tf4 var52 : var66) {
             File var71 = (File)(Registry.emptyArgs());
             long var40 = 543633160597441792L;
-            Object[] var39 = var71;
+            Object var39 = var71;
             var71 = Ref.h(543633160597441792L, var39, var40);
 
             try {
@@ -302,7 +304,7 @@ public class Kl4 extends Pl2 {
                         Tf4 var17 = (Tf4)var6;
                         String var22 = (String)(Registry.emptyArgs());
                         long var12 = 498856411508641826L;
-                        Object[] var11 = var22;
+                        Object var11 = var22;
                         var22 = Ref.h(498856411508641826L, var11, var12);
 
                         try {
@@ -325,7 +327,6 @@ public class Kl4 extends Pl2 {
 
                   if (var10001 == 0) {
       long var18;
-      long var18;
                      break label70;
                   }
 
@@ -333,9 +334,9 @@ public class Kl4 extends Pl2 {
                }
 
                Ck4 var8 = (Ck4)var18;
-               Object[] var10002 = Registry.emptyArgs();
+               Object var10002 = Registry.emptyArgs();
                long var14 = 605430732347023634L;
-               Object[] var13 = var10002;
+               Object var13 = var10002;
                var10002 = Ref.h(605430732347023634L, var13, var14);
 
                try {
@@ -417,7 +418,7 @@ public class Kl4 extends Pl2 {
          var10000 = 0;
       }
 
-      return (boolean)var10000;
+      return (var10000 != 0);
    }
 
    @Override
@@ -521,6 +522,7 @@ public class Kl4 extends Pl2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var2 = new String[6];
       int var6 = 0;
       String var5 = "奇尖\u0004侎攠斣閬\u0006畈戮z異戰绗\u0002簛垒";
@@ -645,7 +647,6 @@ public class Kl4 extends Pl2 {
       }
    }
 }
-
 
 
 

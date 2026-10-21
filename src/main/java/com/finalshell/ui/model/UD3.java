@@ -5,7 +5,7 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public final class UD3 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -80,6 +80,8 @@ public final class UD3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      UD3 I;
+      char[] var38;
       String[] var8 = new String[10];
       int var12 = 0;
       q(0);
@@ -96,7 +98,6 @@ public final class UD3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var38;
             label75: {
                char[] var44 = var10001.toCharArray();
                int var10004 = var44.length;

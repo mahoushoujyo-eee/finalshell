@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Z0 implements ActionListener {
-   public final com.finalshell.ui.frame.U Z;
+   public final com.finalshell.ui.frame.MainFrame Z;
 
-   public Z0(com.finalshell.ui.frame.U var1) {
+   public Z0(com.finalshell.ui.frame.MainFrame var1) {
       this.Z = var1;
    }
 

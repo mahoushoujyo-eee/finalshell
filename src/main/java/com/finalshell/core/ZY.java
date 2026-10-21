@@ -2196,6 +2196,7 @@ public class ZY extends Zq2 implements Ak2, X4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var46;
       String[] var21 = new String[21];
       int var19 = 0;
       String var18 = ".RÀ\u000bÞ \u0006$\r,Pýa=l\u0012R¯´Ô\u0019\u0014þ,¯ô×&Ü*ûÛÄ\u0016\u0006\u0011\u001c_¥÷³\u00137\u00911:©ÔÐ¯Ì\u009cõ\u0001Åq\u0090³Ï~ \u0004öß¼§\nòé\u00895¾52\u0093\u0090\u001b\u0006w\u009d\u0094\u0005.ç\u0017+¹²?ÙtÞ»\r\u001eÍQÂ{pòÓV£G/\u001d3\u0002\u008d\u0092\bQDI]\u008d {\u000b\n\u0085«g}c<\u0089²ç?\u0019yVøÃ\u0090Êöl)åI\u000fR°b\u008b\u0091yë§&¬\u0018K@\u00137È1\u0011©±Ð\u0003Ì\tõ³Å'\u0090yÏ' \u0006ÝËÆ_Äì\u0004=+bm\u0003|\rº\th\u00ad\bRH\u009aìU\u009f\b\u001fa\u0080ù´´\\\u0099";
@@ -2211,7 +2212,6 @@ public class ZY extends Zq2 implements Ak2, X4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var46;
             label83: {
                char[] var54 = var10001.toCharArray();
                int var10004 = var54.length;

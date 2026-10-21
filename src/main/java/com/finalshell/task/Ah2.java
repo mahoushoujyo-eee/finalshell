@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.core.IcpmPing;
+import com.finalshell.core.IcmpPingService;
 import com.finalshell.core.WW3;
 import com.finalshell.core.Xq2;
 import java.net.InetAddress;
@@ -11,9 +11,9 @@ import org.pcap4j.core.PcapNativeException;
 public class Ah2 implements Runnable {
    public final InetAddress k;
    public final int Y;
-   public final IcpmPing c;
+   public final IcmpPingService c;
 
-   public Ah2(IcpmPing var1, InetAddress var2, int var3) {
+   public Ah2(IcmpPingService var1, InetAddress var2, int var3) {
       this.c = var1;
       this.k = var2;
       this.Y = var3;

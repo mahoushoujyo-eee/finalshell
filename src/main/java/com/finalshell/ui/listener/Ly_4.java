@@ -3,7 +3,7 @@ package com.finalshell.ui.listener;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.KP3;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import com.finalshell.ui.panel.FilePermissionPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,11 +20,11 @@ public class Ly_4 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
-      Connection4.I();
+      ConnectionInfoPanel.I();
       Object var4 = 357358512404315725L;
       Object var10002 = Ref.g(357358512404315725L, var4);
       Object var6 = 305402254993059552L;
-      String var3 = JOptionPane.showInputDialog(((Connection4)Ref.g(305402254993059552L, var6)).getParent(), a);
+      String var3 = JOptionPane.showInputDialog(((ConnectionInfoPanel)Ref.g(305402254993059552L, var6)).getParent(), a);
       Object var2 = var10002;
       var10002 = var3;
       if (var2 != null) {

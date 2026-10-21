@@ -2,7 +2,7 @@ package com.finalshell.ui.panel;
 
 import com.finalshell.core.JR;
 import com.finalshell.core.KV;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.Yg4;
@@ -113,17 +113,18 @@ public class N22 extends JPanel {
    }
 
    public void Y(KV var1, String var2) {
+      Integer var24;
       KA_3.y$arrky_4();
       long var5 = 274634583691152408L;
       Ref.s(274634583691152408L, var1, var5);
       if (this == null) {
-         Ty2 var10002 = (Ty2)(Registry.emptyArgs());
+         RemoteProcessManager var10002 = (RemoteProcessManager)(Registry.emptyArgs());
          long var7 = 559196035657690421L;
-         Object[] var6 = var10002;
+         Object var6 = var10002;
          var10002 = Ref.h(559196035657690421L, var6, var7);
 
          try {
-            var10002 = (Ty2)var10002;
+            var10002 = (RemoteProcessManager)var10002;
          } catch (InvocationTargetException var18) {
             throw var18.getTargetException();
          }
@@ -133,9 +134,9 @@ public class N22 extends JPanel {
             long var9 = 559196035657690421L;
             Object[] var8 = var10004;
             var10004 = Ref.h(559196035657690421L, var8, var9);
-            Object[] var10005 = Registry.emptyArgs();
+            Object var10005 = Registry.emptyArgs();
             long var11 = 589495788544429046L;
-            Object[] var10 = var10005;
+            Object var10 = var10005;
             var10005 = Ref.h(589495788544429046L, var10, var11);
 
             try {
@@ -1027,6 +1028,8 @@ public class N22 extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var24;
+      char[] var33;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "轎童\u000eÉ\u000f#ïó5d w?\"\u001f2%\u0011þ\u0094ò÷Ë\u008c\u0014Ñ}º\f©^\u009eà\u0081Z";
@@ -1041,14 +1044,13 @@ public class N22 extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
                int var14 = 0;
                byte var42 = var10000;
                var33 = var39;
-               int var24 = var10004;
+               var24 = var10004;
                byte var49;
                char[] var55;
                int var10006;

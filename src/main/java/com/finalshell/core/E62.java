@@ -1571,6 +1571,7 @@ public class E62 extends Ep4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[8];
       int var11 = 0;
       String var10 = "\u0098Ä¹>p²5²3á¶\u0091*ÐUhMÓg\n2>ÝíeG\u0085¹ÈÏÐ\u0007¡«§Z\u0091ãj\f×\u009f©DîØÀ:yÜéÌ\fIJzþ\u0094\u008f\u008fÐ\u0090\u0081Ôg\u0005efögy\n\u0093\u0007.ìú\u0014[\u000e\u0003É";
@@ -1586,7 +1587,6 @@ public class E62 extends Ep4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

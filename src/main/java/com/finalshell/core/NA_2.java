@@ -3,18 +3,18 @@ package com.finalshell.core;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.VX;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import java.awt.Color;
 import javax.swing.JTable;
 import javax.swing.table.TableColumnModel;
 
 public class NA_2 extends JTable {
-   public ImportPanel Z;
+   public ImportMenuPanel Z;
    public VX g;
    public static long[] a;
    public static Integer[] b;
 
-   public NA_2(ImportPanel var1, VX var2) {
+   public NA_2(ImportMenuPanel var1, VX var2) {
    super();
       short var10000 = 4474;
       long var10001 = 7314591075151813528L;
@@ -23,7 +23,7 @@ public class NA_2 extends JTable {
       long var10 = 535440215674240412L;
       Ref.s(535440215674240412L, var2, var10);
       this.setModel(var2);
-      String[] var10004 = ImportPanel.j();
+      String[] var10004 = ImportMenuPanel.j();
       this.setSelectionBackground((Color)Registry.lookupField(623875439513009390L).get(null));
       this.setSelectionMode(0);
       com.finalshell.ui.adapter.C6 var4 = new com.finalshell.ui.adapter.C6();

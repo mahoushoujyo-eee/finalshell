@@ -115,6 +115,7 @@ public class C_4 extends BasicComboPopup {
    }
 
    public Point z() {
+      Dimension var7;
       Ky4[] var10000 = M3.X();
       Dimension var2 = this.comboBox.getSize();
       Ky4[] var1 = var10000;
@@ -122,7 +123,6 @@ public class C_4 extends BasicComboPopup {
       if (var1 == null) {
          label17: {
             if (this.Z.f) {
-      ScrollPaneUI var7;
                Dimension var3 = this.comboBox.getPreferredSize();
                var7 = var3;
                if (var1 != null) {
@@ -130,7 +130,6 @@ public class C_4 extends BasicComboPopup {
                }
 
                if (var3.width > var2.width) {
-      JScrollPane var7;
                   var2.width = var3.width;
                }
             }
@@ -244,7 +243,6 @@ public class C_4 extends BasicComboPopup {
       }
    }
 }
-
 
 
 

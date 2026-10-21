@@ -1397,6 +1397,7 @@ public final class PM {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[14];
       int var3 = 0;
       String var2 = "ið\u0092\u0011A&i\u0085ÃKF\u001aÚnÊØ\u0011ÊÔµW\u008cnqè\u0005o \u008b7Ð\u000e4\u0015¯-\u0005QM\u0089D~ÔÃèÇ\tæ*\\ª\u0017 ¨\u009a\u009a\u0005À×\u0080Ç\u0094\u0005¡3è\u0098¯\u0005\u0080\u0011ÌÜ+\u0004#1¥\u001e\u0006{§]üðj\u0005_\u0000ù\"=\u0006þVòª@å\u000ecU\\.RVë\u009f}Òá_[\u0005";
@@ -1412,7 +1413,6 @@ public final class PM {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

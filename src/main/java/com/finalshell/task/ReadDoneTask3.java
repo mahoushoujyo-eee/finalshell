@@ -20,6 +20,7 @@ public class ReadDoneTask3 extends Thread {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
    public void run() {
+      IOException var8;
       String[] var10000 = DnsResolveFailedSetting.I$arrString();
       byte[] var2 = new byte[(int)c];
       String[] var1 = var10000;
@@ -34,7 +35,6 @@ public class ReadDoneTask3 extends Thread {
                      break label25;
                   }
                } catch (IOException var6) {
-      int var8;
                   var8 = var6;
                   boolean var10001 = false;
                   break label26;
@@ -50,7 +50,6 @@ public class ReadDoneTask3 extends Thread {
                System.out.println(a(9339, 5299) + var3 + a(9336, -12320) + var7);
                continue;
             } catch (IOException var5) {
-      int var8;
                var8 = var5;
                boolean var9 = false;
             }
@@ -69,6 +68,7 @@ public class ReadDoneTask3 extends Thread {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 9338) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -855,7 +855,7 @@ public class ReadDoneTask3 extends Thread {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);

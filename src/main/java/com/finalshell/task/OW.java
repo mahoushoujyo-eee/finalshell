@@ -17,14 +17,16 @@ public class OW implements Runnable {
 
    @Override
    public void run() {
+      boolean var37;
+      Long var41;
       boolean var1 = Ln4_2.i();
 
       try {
          Object var5 = 444888628147674524L;
          Ref.g(444888628147674524L, var5);
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var8 = 349012733953542138L;
-         Object[] var7 = var10002;
+         Object var7 = var10002;
          var10002 = Ref.h(349012733953542138L, var7, var8);
 
          try {
@@ -45,7 +47,7 @@ public class OW implements Runnable {
       Ref.h2(270389152141252877L, var9);
       U5 var10004 = (U5)(Registry.emptyArgs());
       long var12 = 375944019649708240L;
-      Object[] var11 = var10004;
+      Object var11 = var10004;
       var10004 = Ref.h(375944019649708240L, var11, var12);
 
       try {
@@ -64,9 +66,9 @@ public class OW implements Runnable {
             }
 
             System.currentTimeMillis();
-            Object[] var10006 = Registry.emptyArgs();
+            Object var10006 = Registry.emptyArgs();
             long var14 = 186487761808053297L;
-            Object[] var13 = var10006;
+            Object var13 = var10006;
             var10006 = Ref.h(186487761808053297L, var13, var14);
 
             try {

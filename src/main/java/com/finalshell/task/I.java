@@ -3,7 +3,7 @@ package com.finalshell.task;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.AA;
-import com.finalshell.ui.panel.RouteTracePanel2;
+import com.finalshell.ui.panel.ConnectionContextMenu;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import javax.swing.JMenuItem;
@@ -12,9 +12,9 @@ public class I implements Runnable {
    public final JMenuItem J;
    public final JMenuItem H;
    public final JMenuItem w;
-   public final RouteTracePanel2 t;
+   public final ConnectionContextMenu t;
 
-   public I(RouteTracePanel2 var1, JMenuItem var2, JMenuItem var3, JMenuItem var4) {
+   public I(ConnectionContextMenu var1, JMenuItem var2, JMenuItem var3, JMenuItem var4) {
       this.t = var1;
       this.J = var2;
       this.H = var3;
@@ -27,9 +27,9 @@ public class I implements Runnable {
       Ref.g(504202582560507006L, var3);
       Object var5 = 131037384951395357L;
       Ref.g(131037384951395357L, var5);
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var8 = 545305462032614375L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(545305462032614375L, var7, var8);
 
       try {
@@ -54,7 +54,7 @@ public class I implements Runnable {
       Object var10010 = Ref.g(359637467035547923L, var19);
       ArrayList var10011 = Registry.emptyArgs();
       long var22 = 442657485924266205L;
-      Object[] var21 = var10011;
+      Object var21 = var10011;
       var10011 = Ref.h(442657485924266205L, var21, var22);
 
       try {
@@ -68,7 +68,7 @@ public class I implements Runnable {
          var29 = var29 > 0 ? 1 : 0;
       }
 
-      var10010.setEnabled((boolean)var29);
+      var10010.setEnabled(var29);
    }
 }
 

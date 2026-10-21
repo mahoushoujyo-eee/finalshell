@@ -99,6 +99,7 @@ public class Z1 extends ZH {
    }
 
    public static void f(int[] var0, int[] var1, int var2, int var3, int var4) {
+      int var22;
       int var6 = var2 - 1;
       int var7 = 2 * var4 + 1;
       String[] var10000 = ZH.U();
@@ -157,7 +158,6 @@ public class Z1 extends ZH {
          int var10001;
          while (true) {
             if (var16 < var2) {
-      int var22;
                var1[var11] = var8[var12] << a(1822, 6355398124496719203L)
                   | var8[var13] << a(12667, 2395567619170220812L)
                   | var8[var14] << a(23584, 208357688667330136L)
@@ -198,7 +198,6 @@ public class Z1 extends ZH {
                var11 += var3;
                var16++;
                if (var5 == null) {
-      BufferedImage var22;
                   continue;
                }
             }
@@ -295,7 +294,6 @@ public class Z1 extends ZH {
       }
    }
 }
-
 
 
 

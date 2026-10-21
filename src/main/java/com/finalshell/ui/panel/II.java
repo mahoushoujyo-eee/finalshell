@@ -270,6 +270,7 @@ public class II extends JComponent {
    }
 
    public void G(int var1) {
+      II var5;
       String var2 = Wb2.m$String();
       int var10000 = var1;
       if (var2 != null) {
@@ -377,11 +378,17 @@ public class II extends JComponent {
 
    @Override
    public void paintComponent(Graphics var1) {
+      int var28;
+      int var32;
+      II var33;
+      float var34;
+      int var36;
+      Graphics2D var5;
       super.paintComponent(var1);
       int var3 = this.getHeight();
       int var4 = this.getWidth();
       String var10000 = Wb2.m$String();
-      Graphics2D var5 = (Graphics2D)var1;
+      var5 = (Graphics2D)var1;
       Object var6 = RV.X(var5);
       var5.setPaint(new GradientPaint(0.0F, 0.0F, Color.black, 0.0F, (float)var3, Color.darkGray));
       var5.fillRect(0, 0, var4, var3);
@@ -500,8 +507,6 @@ public class II extends JComponent {
                            }
 
                            if (var31 != var39) {
-      int var32;
-      int var32;
                               var34 = 1.0F - this.f;
                               break label105;
                            }
@@ -1447,6 +1452,9 @@ public class II extends JComponent {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte var28;
+      char[] var33;
+      boolean var5;
       String[] var13 = new String[9];
       int var11 = 0;
       String var10 = "´}\u0003\u00956#\u0004\u008ctÉ\u009f\u0003!5í\u0004·6®×\u0004\u001e\u0013Í|#\u0094ÎØ¯\u000e\u001dÜ7\u0018Û6\f«¨yH\u009eqßb\u008er#½\u0007ËÆ\u000föI§\u007f\u0011'*";
@@ -1543,8 +1551,8 @@ public class II extends JComponent {
                      long[] var6 = new long[18];
                      int var3 = 0;
                      String var4 = "\u0012\u009b*\u0002\u001aØä}Rw@\u000f\u0000OÏù<¼[\u001f(öÀ¶¨¥\u0084Û\u0010U\u0099Íät\\µ©\u00872jJ¥\u0090]#´WBª\u008c\u0011\u009a >¿\u007f\u0088äC´pçéðÝé\u0095t\fº\u00adÎeþJ\u0094\u0082äÊü+äÍ·sÒ&\u0006\u008d´_\u008eD0©'ÏÈ\u0085å·¬æ¿¦BÊRe´)\u008a(Ù=$p¤ûñiCM\u009ft\u008b\u0093V";
-                     int var5 = "\u0012\u009b*\u0002\u001aØä}Rw@\u000f\u0000OÏù<¼[\u001f(öÀ¶¨¥\u0084Û\u0010U\u0099Íät\\µ©\u00872jJ¥\u0090]#´WBª\u008c\u0011\u009a >¿\u007f\u0088äC´pçéðÝé\u0095t\fº\u00adÎeþJ\u0094\u0082äÊü+äÍ·sÒ&\u0006\u008d´_\u008eD0©'ÏÈ\u0085å·¬æ¿¦BÊRe´)\u008a(Ù=$p¤ûñiCM\u009ft\u008b\u0093V"
-                        .length();
+                     var5 = "\u0012\u009b*\u0002\u001aØä}Rw@\u000f\u0000OÏù<¼[\u001f(öÀ¶¨¥\u0084Û\u0010U\u0099Íät\\µ©\u00872jJ¥\u0090]#´WBª\u008c\u0011\u009a >¿\u007f\u0088äC´pçéðÝé\u0095t\fº\u00adÎeþJ\u0094\u0082äÊü+äÍ·sÒ&\u0006\u008d´_\u008eD0©'ÏÈ\u0085å·¬æ¿¦BÊRe´)\u008a(Ù=$p¤ûñiCM\u009ft\u008b\u0093V";
+                        // [VF] .length();
                      byte var2 = 0;
 
                      label44:
@@ -1582,11 +1590,11 @@ public class II extends JComponent {
                                  }
 
                                  var4 = "ÞwRZ\u0084\u00ad1Àò\u0093¡K5\u008f\u000eï";
-                                 var5 = "ÞwRZ\u0084\u00ad1Àò\u0093¡K5\u008f\u000eï".length();
+                                 var5 = ("ÞwRZ\u0084\u00ad1Àò\u0093¡K5\u008f\u000eï".length()) != 0;
                                  var2 = 0;
                            }
 
-                           byte var28 = var2;
+                           var28 = var2;
                            var2 += 8;
                            var7 = var4.substring(var28, var2).getBytes("ISO-8859-1");
                            var19 = var6;
@@ -1626,7 +1634,6 @@ public class II extends JComponent {
       }
    }
 }
-
 
 
 

@@ -10,6 +10,7 @@ public final class Nc4 {
    public static String a;
 
    public static List Q(Xq4 var0) {
+      ArrayList var11;
       String var10000 = FV_2.D();
       ArrayList var2 = new ArrayList();
       String var1 = var10000;
@@ -28,7 +29,6 @@ public final class Nc4 {
 
       while (true) {
          if (var6.hasNext()) {
-      ArrayList var11;
             Iz2 var7 = (Iz2)var6.next();
 
             try {
@@ -42,7 +42,6 @@ public final class Nc4 {
                   continue;
                }
             } catch (RuntimeException var8) {
-      ArrayList var11;
                throw a(var8);
             }
          }
@@ -374,7 +373,6 @@ public final class Nc4 {
       }
    }
 }
-
 
 
 

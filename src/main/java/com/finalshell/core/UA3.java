@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.adapter.Address2;
+import com.finalshell.ui.adapter.ReservedAddressCellRenderer;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JTable;
@@ -53,7 +53,7 @@ public class UA3 extends JTable {
       }
 
       var6.getColumn(4).setMinWidth(a(6868, 1688547314968227142L));
-      Address2 var4 = new Address2();
+      ReservedAddressCellRenderer var4 = new ReservedAddressCellRenderer();
       int var5 = 0;
 
       while (var5 < var3.getColumnCount()) {

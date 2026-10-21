@@ -862,6 +862,7 @@ public class I implements Serializable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "Ú»}8§ý7\u001fèù©·w1j<>Çç½\u0082ÕòªîE\u0011Ï\u009fWËÀC\u007f\\èY\u008bö\u0003æ\u009b^\u0002$>";
@@ -876,7 +877,6 @@ public class I implements Serializable {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

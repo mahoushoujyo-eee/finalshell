@@ -1921,6 +1921,7 @@ public class DI3 extends ReflectionConverter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[23];
       int var3 = 0;
       String var2 = "_\u000e\u000f\u0014ð\u0014\u0092\rÛ).öò\u0019\u000e2É\u001d\u0007Nn=\u0081ÁÞ\u0085\u00070¥\u009bÐl\u008a\u008c\u0007`#¡ìaN\u001b1\u0096\u009fMàþWöÈJ\\.M\u0019q2lE\u0085ó\u008e\u0093\u001b\u008cã¸Á\u007f\u008e\u0099~ï\u0099\u009e\u0082V¦6\u0084¾èåç¼\u0092¿\u009c\u0099¬R\u0006ÊOê\u001dçâ\u0002\u0085,\u0011ö\u0018W\u0018xG\u0012\u000e+\u0083V\u000f«÷Oè£\u00042¥\u0002Û\u0011ùÿ°ýXÊNÅÒª\\tfFÚÜ½\u0011\u0015õn\u000bM'ÇbüEQ×\u0018å{Ä\u000e\u0005ã\u008e\u0092\u0000N\u0011ïg1Y¦mº+Sl¤ò¦A¬Pô\u000b\u0090£\u0003\u0099 \u0003Á\u001b\u0096|¿\u0014W\u000bcé9î\u0010\u001aRRB\u0011vÏ@\rDÇfE\u0019,ò\fE\u0013ì\u007f{\u0086-çÇ\u0019F\u001c\u0002*\u0084\u0092\u0096¿\u000f}ª\u0003\u0002p2\u00051DÂ]I$Ö{FcðÖ§A\u0097Ëþ\u008cfU4$x°\u0003Ã\u0012vìgê\u0005\u0083Àdéhè\u001cl7\u0099\u0002Ï=!ê¦ÙÖ\u0002á°&7ù¶\u0092¥ ×wÉì\u0001è\u0099\u0090\u0002\"\u001b\u0010~S&\u0086\u000eó$";
@@ -1936,7 +1937,6 @@ public class DI3 extends ReflectionConverter {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

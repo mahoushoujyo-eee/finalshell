@@ -4,23 +4,23 @@ import com.finalshell.core.Td4;
 import com.finalshell.core.Uf4;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class KI implements Runnable {
    public final Uf4 z;
-   public final Connection4 D;
+   public final ConnectionInfoPanel D;
 
-   public KI(Connection4 var1, Uf4 var2) {
+   public KI(ConnectionInfoPanel var1, Uf4 var2) {
       this.D = var1;
       this.z = var2;
    }
 
    @Override
    public void run() {
-      Connection4.I();
+      ConnectionInfoPanel.I();
       Object var4 = 180038062700866876L;
       Object var10002 = Ref.g(180038062700866876L, var4);
       Object var6 = 499316983962981071L;

@@ -30,6 +30,8 @@ public class AccelerateRdpHelpPanel extends JPanel {
    public static Integer[] d;
 
    public AccelerateRdpHelpPanel() {
+      super();
+      KD var11;
       this.setBackground(new Color(a(11191, 7073189994920074798L), a(8568, 2651538284175545568L), a(8568, 2651538284175545568L)));
       this.setLayout(new MigLayout(a(28051, 5224), a(28063, 15105), a(28050, -31945)));
       ExtranetAddressModel var10001 = new ExtranetAddressModel();
@@ -38,7 +40,7 @@ public class AccelerateRdpHelpPanel extends JPanel {
       Ref.s(365946612787058696L, var12, var13);
       Nd2_2 var10003;
       Object var14 = 365946612787058696L;
-      super(this, (ExtranetAddressModel)Ref.g(365946612787058696L, var14));
+      // [VF-super] super(this, (ExtranetAddressModel)Ref.g(365946612787058696L, var14));
       long var17 = 201212363654675019L;
       Nd2_2 var16 = var10003;
       Ref.s(201212363654675019L, var16, var17);
@@ -55,7 +57,7 @@ public class AccelerateRdpHelpPanel extends JPanel {
       this.add(var4, a(28058, -18475));
       JButton var10006 = (JButton)(Registry.packArgs(a(28049, -28972)));
       long var21 = 235133701535653953L;
-      Object[] var20 = var10006;
+      Object var20 = var10006;
       var10006 = Ref.h(235133701535653953L, var20, var21);
 
       try {
@@ -69,7 +71,7 @@ public class AccelerateRdpHelpPanel extends JPanel {
       var5.addActionListener(new Fa4(this));
       JButton var10007 = (JButton)(Registry.packArgs(a(28053, -8695)));
       long var23 = 235133701535653953L;
-      Object[] var22 = var10007;
+      Object var22 = var10007;
       var10007 = Ref.h(235133701535653953L, var22, var23);
 
       try {
@@ -83,7 +85,7 @@ public class AccelerateRdpHelpPanel extends JPanel {
       var6.addActionListener(new Oe2(this));
       var10007 = Registry.packArgs(a(28060, 29307));
       long var25 = 235133701535653953L;
-      Object[] var24 = var10007;
+      Object var24 = var10007;
       var10007 = Ref.h(235133701535653953L, var24, var25);
 
       try {
@@ -105,7 +107,7 @@ public class AccelerateRdpHelpPanel extends JPanel {
       var10.G(true);
       var8.add(var10);
       var10.addActionListener(new YD_3(this));
-      KD var11 = new KD(a(28056, 28507));
+      var11 = new KD(a(28056, 28507));
       var11.G(true);
       var11.setForeground(var9);
       var8.add(var11);
@@ -154,9 +156,9 @@ public class AccelerateRdpHelpPanel extends JPanel {
    public void C(String var1) {
       Object var3 = 365946612787058696L;
       Ref.g(365946612787058696L, var3);
-      Object[] var10002 = Registry.packArgs(var1);
+      Object var10002 = Registry.packArgs(var1);
       long var6 = 467719454448268238L;
-      Object[] var5 = var10002;
+      Object var5 = var10002;
       var10002 = Ref.h(467719454448268238L, var5, var6);
 
       try {
@@ -1007,8 +1009,10 @@ public class AccelerateRdpHelpPanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var11;
+      char[] var33;
       String[] var13 = new String[13];
-      int var11 = 0;
+      var11 = 0;
       String var10 = "g³_lh~x\u0080\u0017\u0006Q*\u0001p¶S*\u0005\u000eç\u000bÉ}]ÿO\bl AV¬åCÓÿ;%ß\u0011ýÉÇy\b剝都轼竼栫鞛旉竖\u000f0a\u008e^\u0017}\b\u0002\tù\u0091\u0096:äÃ\u0011ß\u009f`Á\u0089\u009fÁ2UDØ¯ò\u008e\u0005%S\u0011}G4Ú\u0003ü\u0090^\u007fÉ\u009d\u001eZ¸\u0010ãñ\u0002勮雊\u0005Ü\u008f$è@\u000fÒ3Ò\u0014\u009c4y+'ÜT2\u0082pÔ\u0002洛勑\u0007刡邋\\JQ攁穴\u000eHP\u0081xö¹4\u009f\u008eêaT$\u001c";
       int var12 = "g³_lh~x\u0080\u0017\u0006Q*\u0001p¶S*\u0005\u000eç\u000bÉ}]ÿO\bl AV¬åCÓÿ;%ß\u0011ýÉÇy\b剝都轼竼栫鞛旉竖\u000f0a\u008e^\u0017}\b\u0002\tù\u0091\u0096:äÃ\u0011ß\u009f`Á\u0089\u009fÁ2UDØ¯ò\u008e\u0005%S\u0011}G4Ú\u0003ü\u0090^\u007fÉ\u009d\u001eZ¸\u0010ãñ\u0002勮雊\u0005Ü\u008f$è@\u000fÒ3Ò\u0014\u009c4y+'ÜT2\u0082pÔ\u0002洛勑\u0007刡邋\\JQ攁穴\u000eHP\u0081xö¹4\u009f\u008eêaT$\u001c"
          .length();
@@ -1023,7 +1027,6 @@ public class AccelerateRdpHelpPanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

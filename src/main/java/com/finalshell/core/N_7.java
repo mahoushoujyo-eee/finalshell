@@ -1205,6 +1205,7 @@ public class N_7 implements T_6 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[10];
       int var3 = 0;
       String var2 = "\u0090÷U\u0088õBár=Î\u001có¥\u0096_Ó\u0088Á\u0097\u0013\u0016%Z\u009f}\u0017Îø®ø\u0004\u0089º-\u0091Öç?2mi\u0086.Cn\nÞ6}\nL\u00adù\u009bJJ\u0004vÅì\u0017\u0082Î\u001b¹²¡l(Kv¼'Yô]JÝØ¾\u0018²\u0000w\u0011\u0088\u009da\u009dY\u008afn\u0089§G{ïî\u001eÓ£ \u000f\u0015\u0096E\u0003>ZÛ\u008d\bdõ^\u0002?Í'\n¯F:%\u0085^ ü©Ò\u001cLr\u008f\u0017ç\u001a·#'òÞB\u001d;v\u008e\u0000Ávì¸\f\u0012\u0082'SÅ\f\u0091\u0095}ÞªÊ0\u001cs¡;µ";
@@ -1220,7 +1221,6 @@ public class N_7 implements T_6 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

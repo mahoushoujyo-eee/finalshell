@@ -46,6 +46,8 @@ public class EU3 extends MouseAdapter implements SwingConstants {
 
    @Override
    public void mouseDragged(MouseEvent var1) {
+      Window var10;
+      EU3 var12;
       int[] var2;
       int var10000;
       label279: {
@@ -84,7 +86,7 @@ public class EU3 extends MouseAdapter implements SwingConstants {
             if (var2 == null) {
                if (var9) {
                   var5 = ((JDialog)var3).getRootPane().getMinimumSize();
-                  var6 = (((JDialog)var3).isUndecorated()) ? 1 : 0;
+                  var6 = (byte)((((JDialog)var3).isUndecorated()) ? 1 : 0);
                   if (var2 == null) {
                      break label282;
                   }
@@ -97,10 +99,8 @@ public class EU3 extends MouseAdapter implements SwingConstants {
                if (var2 == null) {
                   if (var9) {
                      var5 = ((JFrame)var3).getRootPane().getMinimumSize();
-                     var6 = (((JFrame)var3).isUndecorated()) ? 1 : 0;
+                     var6 = (byte)((((JFrame)var3).isUndecorated()) ? 1 : 0);
                      if (var2 == null) {
-      Window var10;
-      Window var10;
                         break label282;
                      }
                   }
@@ -114,8 +114,8 @@ public class EU3 extends MouseAdapter implements SwingConstants {
                }
 
                if (var9) {
-                  var5 = ((((JWindow)var3).getRootPane().getMinimumSize()) ? 1 : 0) ? 1 : 0;
-                  var6 = (((JFrame)var3).isUndecorated()) != 0;
+                  var5 = ((JWindow)var3).getRootPane().getMinimumSize();
+                  var6 = (byte)((((JFrame)var3).isUndecorated()) ? 1 : 0);
                   if (var2 == null) {
                      break label282;
                   }
@@ -450,6 +450,7 @@ public class EU3 extends MouseAdapter implements SwingConstants {
    }
 
    public static void __vfClinit__() {
+      byte var10;
       long var0 = 4628800196339751999L;
       long[] var6 = new long[6];
       int var3 = 0;
@@ -496,7 +497,7 @@ public class EU3 extends MouseAdapter implements SwingConstants {
                   var2 = 0;
             }
 
-            byte var10 = var2;
+            var10 = var2;
             var2 += 8;
             var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
             var10000 = var6;
@@ -514,7 +515,6 @@ public class EU3 extends MouseAdapter implements SwingConstants {
       }
    }
 }
-
 
 
 

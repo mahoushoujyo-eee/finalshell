@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-public class C6 extends CL {
+public class C6 extends SshEcdhKeyExchange {
    public static String j;
    public static long p;
 

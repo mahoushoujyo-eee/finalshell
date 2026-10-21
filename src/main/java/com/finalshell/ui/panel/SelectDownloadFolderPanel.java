@@ -15,7 +15,7 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.task.J8;
 import com.finalshell.task.OT;
 import com.finalshell.ui.dialog.C5;
-import com.finalshell.ui.dialog.EditDialog2;
+import com.finalshell.ui.dialog.EditorSelectionDialog;
 import com.finalshell.ui.listener.De2;
 import com.finalshell.ui.listener.FM3;
 import com.finalshell.ui.listener.KQ3;
@@ -55,6 +55,8 @@ public class SelectDownloadFolderPanel extends JPanel implements Cq2 {
    public static Integer[] e;
 
    public SelectDownloadFolderPanel(C5 var1) {
+      super();
+      StringBuilder var29;
       Registry.lookupField(297239574302510705L).setBoolean(this, true);
       ArrayList var10001 = new ArrayList();
       long var16 = 585743319788652558L;
@@ -65,9 +67,9 @@ public class SelectDownloadFolderPanel extends JPanel implements Cq2 {
       Registry.emptyArgs();
       long var19 = 270389152141252877L;
       Ref.h2(270389152141252877L, var19);
-      Object[] var10005 = Registry.emptyArgs();
+      Object var10005 = Registry.emptyArgs();
       long var22 = 306266403902896148L;
-      Object[] var21 = var10005;
+      Object var21 = var10005;
       var10005 = Ref.h(306266403902896148L, var21, var22);
       long var24 = 269586463206323716L;
       Object var23 = var10005;
@@ -84,7 +86,7 @@ public class SelectDownloadFolderPanel extends JPanel implements Cq2 {
       Object var10012 = Ref.g(269586463206323716L, var25);
       String var10013 = (String)(Registry.emptyArgs());
       long var28 = 248904686894997647L;
-      Object[] var27 = var10013;
+      Object var27 = var10013;
       var10013 = Ref.h(248904686894997647L, var27, var28);
 
       try {
@@ -96,7 +98,7 @@ public class SelectDownloadFolderPanel extends JPanel implements Cq2 {
 var10012 = new ArrayList(var10013);
       var10009 = new java.io.File(var10009.append(this.getAbsolutePath()).toString());
       long var30 = 435031631667149019L;
-      StringBuilder var29 = var10008;
+      var29 = var10008;
       Ref.s(435031631667149019L, var29, var30);
       Object var31 = 435031631667149019L;
       C_C var100 = (C_C)Ref.g(435031631667149019L, var31);
@@ -104,7 +106,7 @@ var10012 = new ArrayList(var10013);
       Object var10011 = Ref.g(269586463206323716L, var33);
       String var101 = (String)(Registry.emptyArgs());
       long var36 = 248904686894997647L;
-      Object[] var35 = var101;
+      Object var35 = var101;
       var101 = Ref.h(248904686894997647L, var35, var36);
 
       try {
@@ -222,7 +224,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       Ref.s(344912960350819457L, var75, var76);
       DT var10034;
       Object var77 = 344912960350819457L;
-      super(this, (Fr4)Ref.g(344912960350819457L, var77));
+      // [VF-super] super(this, (Fr4)Ref.g(344912960350819457L, var77));
       long var80 = 622126560416402693L;
       DT var79 = var10034;
       Ref.s(622126560416402693L, var79, var80);
@@ -263,6 +265,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
    }
 
    public void F() {
+      Integer var26;
       O$arrint();
       Object var5 = 622126560416402693L;
       int var2 = ((DT)Ref.g(622126560416402693L, var5)).getSelectedRow();
@@ -272,7 +275,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          Object var9 = 622126560416402693L;
          YI var10004 = (YI)(Registry.packArgs(((DT)Ref.g(622126560416402693L, var9)).convertRowIndexToModel(var2)));
          long var12 = 314520454321390476L;
-         Object[] var11 = var10004;
+         Object var11 = var10004;
          var10004 = Ref.h(314520454321390476L, var11, var12);
 
          try {
@@ -282,9 +285,9 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          }
 
          YI var3 = var10004;
-         Object[] var10005 = Registry.emptyArgs();
+         Object var10005 = Registry.emptyArgs();
          long var14 = 532275517761561192L;
-         Object[] var13 = var10005;
+         Object var13 = var10005;
          var10005 = Ref.h(532275517761561192L, var13, var14);
 
          try {
@@ -297,7 +300,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
             java.io.File var10006;
             String var10008 = (String)(Registry.emptyArgs());
             long var16 = 191716730601734423L;
-            Object[] var15 = var10008;
+            Object var15 = var10008;
             var10008 = Ref.h(191716730601734423L, var15, var16);
 
             try {
@@ -323,6 +326,9 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
    }
 
    public void m() {
+      long var26;
+      Integer var37;
+      boolean var42;
       O$arrint();
       Object var6 = 622126560416402693L;
       int var2 = ((DT)Ref.g(622126560416402693L, var6)).getSelectedRow();
@@ -342,9 +348,9 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          }
 
          if (this == null) {
-            Object[] var10005 = Registry.emptyArgs();
+            Object var10005 = Registry.emptyArgs();
             long var15 = 532275517761561192L;
-            Object[] var14 = var10005;
+            Object var14 = var10005;
             var10005 = Ref.h(532275517761561192L, var14, var15);
 
             try {
@@ -360,7 +366,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
 
          String var38 = (String)(Registry.emptyArgs());
          long var17 = 191716730601734423L;
-         Object[] var16 = var38;
+         Object var16 = var38;
          var38 = Ref.h(191716730601734423L, var16, var17);
 
          try {
@@ -373,9 +379,9 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          label104: {
             var4 = var38;
             if (this == null) {
-               Object[] var10006 = Registry.emptyArgs();
+               Object var10006 = Registry.emptyArgs();
                long var19 = 161763971655686270L;
-               Object[] var18 = var10006;
+               Object var18 = var10006;
                var10006 = Ref.h(161763971655686270L, var18, var19);
 
                try {
@@ -391,7 +397,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
 
             String var43 = (String)(Registry.emptyArgs());
             long var21 = 483977999197402540L;
-            Object[] var20 = var43;
+            Object var20 = var43;
             var43 = Ref.h(483977999197402540L, var20, var21);
 
             try {
@@ -404,7 +410,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          }
 
          java.io.File var5 = new java.io.File(var4);
-         Object[] var46 = var5.exists();
+         Object var46 = var5.exists();
          if (this == null) {
             if (var46 == null) {
                return;
@@ -437,7 +443,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          }
 
          Registry.packArgs(var5.getPath());
-         long var26 = 555473894912140963L;
+         var26 = 555473894912140963L;
          Ref.h2(555473894912140963L, var26);
 
          try {
@@ -467,7 +473,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
             Object var13 = 622126560416402693L;
             YI var10004 = (YI)(Registry.packArgs(((DT)Ref.g(622126560416402693L, var13)).convertRowIndexToModel(var7)));
             long var16 = 314520454321390476L;
-            Object[] var15 = var10004;
+            Object var15 = var10004;
             var10004 = Ref.h(314520454321390476L, var15, var16);
 
             try {
@@ -541,7 +547,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          Object var11 = 622126560416402693L;
          YI var10004 = (YI)(Registry.packArgs(((DT)Ref.g(622126560416402693L, var11)).convertRowIndexToModel(var4)));
          long var14 = 314520454321390476L;
-         Object[] var13 = var10004;
+         Object var13 = var10004;
          var10004 = Ref.h(314520454321390476L, var13, var14);
 
          try {
@@ -551,9 +557,9 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          }
 
          YI var5 = var10004;
-         Object[] var10005 = Registry.emptyArgs();
+         Object var10005 = Registry.emptyArgs();
          long var16 = 532275517761561192L;
-         Object[] var15 = var10005;
+         Object var15 = var10005;
          var10005 = Ref.h(532275517761561192L, var15, var16);
 
          try {
@@ -602,9 +608,10 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
    }
 
    public void w() {
+      Integer var33;
       new ArrayList();
       Object var9 = 622126560416402693L;
-      int[] var3 = ((DT)Ref.g(622126560416402693L, var9)).getSelectedRows();
+      int var3 = ((DT)Ref.g(622126560416402693L, var9)).getSelectedRows();
       int[] var4 = var3;
       int[] var10001 = O$arrint();
       int var5 = var3.length;
@@ -617,7 +624,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          Ref.g(622126560416402693L, var11);
          YI var10003 = (YI)(Registry.packArgs(var7));
          long var14 = 314520454321390476L;
-         Object[] var13 = var10003;
+         Object var13 = var10003;
          var10003 = Ref.h(314520454321390476L, var13, var14);
 
          try {
@@ -628,9 +635,9 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
 
          YI var8 = var10003;
          if (var1 == null) {
-            Object[] var10004 = Registry.emptyArgs();
+            Object var10004 = Registry.emptyArgs();
             long var16 = 532275517761561192L;
-            Object[] var15 = var10004;
+            Object var15 = var10004;
             var10004 = Ref.h(532275517761561192L, var15, var16);
 
             try {
@@ -691,7 +698,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       Ref.g(269586463206323716L, var7);
       FX3 var10003 = (FX3)(Registry.emptyArgs());
       long var10 = 380488306238748207L;
-      Object[] var9 = var10003;
+      Object var9 = var10003;
       var10003 = Ref.h(380488306238748207L, var9, var10);
 
       try {
@@ -709,7 +716,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       do {
          ArrayList var10005 = (ArrayList)(Registry.emptyArgs());
          long var14 = 250284129792311327L;
-         Object[] var13 = var10005;
+         Object var13 = var10005;
          var10005 = Ref.h(250284129792311327L, var13, var14);
 
          try {
@@ -724,7 +731,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
 
          var10005 = Registry.emptyArgs();
          long var16 = 250284129792311327L;
-         Object[] var15 = var10005;
+         Object var15 = var10005;
          Ref.h(250284129792311327L, var15, var16);
 
          try {
@@ -735,7 +742,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
 
          ArrayList var10007 = (ArrayList)(Registry.emptyArgs());
          long var18 = 250284129792311327L;
-         Object[] var17 = var10007;
+         Object var17 = var10007;
          var10007 = Ref.h(250284129792311327L, var17, var18);
 
          try {
@@ -748,7 +755,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          Object var19 = 468326905894456044L;
          W8 var10008 = (W8)(Registry.packArgs(this, Ref.g(468326905894456044L, var19), var1, var5));
          long var22 = 551513000150344715L;
-         Object[] var21 = var10008;
+         Object var21 = var10008;
          var10008 = Ref.h(551513000150344715L, var21, var22);
 
          try {
@@ -774,7 +781,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          if (var2 == null) {
             String var10002 = (String)(Registry.emptyArgs());
             long var9 = 325466260686391537L;
-            Object[] var8 = var10002;
+            Object var8 = var10002;
             var10002 = Ref.h(325466260686391537L, var8, var9);
 
             try {
@@ -811,9 +818,9 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       }
    }
 
-   public EditDialog2 l(String var1, com.finalshell.ui.frame.U var2) {
+   public EditorSelectionDialog l(String var1, com.finalshell.ui.frame.MainFrame var2) {
       int[] var10000 = O$arrint();
-      EditDialog2 var4 = new EditDialog2(Registry.lookupField(243490669497898236L).getInt(null), var2, a(-21396, -2576), false);
+      EditorSelectionDialog var4 = new EditorSelectionDialog(Registry.lookupField(243490669497898236L).getInt(null), var2, a(-21396, -2576), false);
       int[] var3 = var10000;
       if (var3 == null) {
          if (!var1.equals((String)Registry.lookupField(149082991182987426L).get(null))) {
@@ -922,7 +929,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       Object var10002 = Ref.g(344912960350819457L, var7);
       Integer var10003 = (Integer)(Registry.emptyArgs());
       long var10 = 455614021419137275L;
-      Object[] var9 = var10003;
+      Object var9 = var10003;
       ArrayList var3 = (ArrayList)Ref.h(455614021419137275L, var9, var10);
       Iterator var4 = var3.iterator();
       Object var1 = var10002;
@@ -934,7 +941,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
             var10002 = var5;
             var10003 = Registry.emptyArgs();
             long var12 = 532275517761561192L;
-            Object[] var11 = var10003;
+            Object var11 = var10003;
             var10003 = Ref.h(532275517761561192L, var11, var12);
 
             try {
@@ -1007,10 +1014,14 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
 
    @Override
    public synchronized void u(VO var1) {
+      long var26;
+      Object[] var33;
+      Object[] var37;
+      boolean var81;
       O$arrint();
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var8 = 178857963789314984L;
-      Object[] var7 = var10002;
+      Object var7 = var10002;
       var10002 = Ref.h(178857963789314984L, var7, var8);
 
       try {
@@ -1022,7 +1033,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       int var3 = var74;
       var10002 = Registry.emptyArgs();
       long var10 = 184120697106130251L;
-      Object[] var9 = var10002;
+      Object var9 = var10002;
       var10002 = Ref.h(184120697106130251L, var9, var10);
 
       try {
@@ -1081,7 +1092,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
                   Object[] var23 = var10009;
                   Ref.h(240567170779145617L, var23, var24);
                   Object[] var10010 = Registry.emptyArgs();
-                  long var26 = 226341449505323490L;
+                  var26 = 226341449505323490L;
                   Object[] var25 = var10010;
                   Ref.h(226341449505323490L, var25, var26);
                   Object[] var10011 = Registry.emptyArgs();
@@ -1150,7 +1161,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
                var5 = true;
                Object[] var79 = Registry.emptyArgs();
                long var34 = 435200798393730562L;
-               Object[] var33 = var79;
+               var33 = var79;
                Object var80 = Ref.h(435200798393730562L, var33, var34);
 
                try {
@@ -1169,7 +1180,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
                   Ref.g(344912960350819457L, var35);
                   Object[] var10005 = Registry.packArgs(var4);
                   long var38 = 248427345189412900L;
-                  Object[] var37 = var10005;
+                  var37 = var10005;
                   Ref.h(248427345189412900L, var37, var38);
 
                   try {
@@ -1243,7 +1254,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
 
       YI var90 = (YI)(Registry.emptyArgs());
       long var52 = 195315429550440605L;
-      Object[] var51 = var90;
+      Object var51 = var90;
       var90 = Ref.h(195315429550440605L, var51, var52);
 
       try {
@@ -1256,7 +1267,7 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       if (var1 != null || var6 != null) {
          Integer var10007 = (Integer)(Registry.emptyArgs());
          long var54 = 616518435013173083L;
-         Object[] var53 = var10007;
+         Object var53 = var10007;
          var10007 = Ref.h(616518435013173083L, var53, var54);
 
          try {
@@ -2146,6 +2157,10 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte var26;
+      char[] var33;
+      long var37;
+      byte var42;
       String[] var13 = new String[19];
       int var11 = 0;
       String var10 = "\u0013Nn^êÈ\u000bçÎI×\u008ak\u001c\u0005\u0087#\u0001nì\u001bh\u0003\u0001÷\u0007ý¶B|\u009e.x\nWåÁA1£\u00008(õ¹>\u0096\u0012\u0004\u0013lkf\ro\u0091+S«Z¶§4\u0001D\u0083T\u0002戼忶(<\u001bA\u0002æp\u001fâ\u0002©á\u0096ãÓÃX\u00ad*8o\u008d\u0000\u001bªè\r\u008d3\u009c¥ä9É}\u0005\u0006&\u008c¥¾\u0005÷\u0098ëÿ!\r gÒ\u008d\u0094\u0081QÜÎnÝna\u0005\u001c\u009erÙ\u0082\u0002譂罭\u0007郯戢丯轊斯亴妲\r×Ä<ùI\u000fè\r¾Tv)\u0011\u0007Z\"~Á)c\u0091\bàÏíóq§\u008aw\u0013\u0095\u0083¾çðÿB\t¨\u009d\u0095\u0012gQ\u001e\u0016Ö.\u0087\u0004两迳%+";
@@ -2162,12 +2177,11 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          byte var10002 = -1;
 
          while (true) {
-      Object var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
                int var14 = 0;
-               byte var42 = var10000;
+               var42 = var10000;
                var33 = var39;
                int var24 = var10004;
                byte var49;
@@ -2250,12 +2264,12 @@ var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
 
                      label44:
                      while (true) {
-                        byte var26 = var2;
+                        var26 = var2;
                         var2 += 8;
                         byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
-                        long var37 = ((long)var7[0] & 255L) << 56
+                        var37 = ((long)var7[0] & 255L) << 56
                            | ((long)var7[1] & 255L) << 48
                            | ((long)var7[2] & 255L) << 40
                            | ((long)var7[3] & 255L) << 32

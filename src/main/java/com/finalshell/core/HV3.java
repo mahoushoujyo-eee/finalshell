@@ -56,6 +56,9 @@ public class HV3 extends Hh4 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      int var30;
+      HV3 var31;
+      BufferedImage var32;
       int var4 = var1.getWidth();
       int var5 = var1.getHeight();
       String[] var10000 = W5.q();
@@ -187,10 +190,6 @@ public class HV3 extends Hh4 {
                var31.E(var8, 0, var10, var4, 1, var6);
                var10++;
                if (var3 != null) {
-      return var32;
-      return var32;
-      return var32;
-      return var32;
                   continue;
                }
             }
@@ -244,6 +243,8 @@ public class HV3 extends Hh4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long var30;
+      long var32;
       char[] var10003 = "\u00044\t?erkx\u0012\u0011*\u007f& y".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -304,7 +305,7 @@ public class HV3 extends Hh4 {
                byte[] var16 = var12.substring(var25, var10).getBytes("ISO-8859-1");
                long[] var18 = var14;
                var25 = var11++;
-               long var32 = ((long)var16[0] & 255L) << 56
+               var32 = ((long)var16[0] & 255L) << 56
                   | ((long)var16[1] & 255L) << 48
                   | ((long)var16[2] & 255L) << 40
                   | ((long)var16[3] & 255L) << 32
@@ -433,7 +434,7 @@ public class HV3 extends Hh4 {
                   byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
                   long[] var10000 = var6;
                   var21 = var3++;
-                  long var30 = ((long)var7[0] & 255L) << 56
+                  var30 = ((long)var7[0] & 255L) << 56
                      | ((long)var7[1] & 255L) << 48
                      | ((long)var7[2] & 255L) << 40
                      | ((long)var7[3] & 255L) << 32

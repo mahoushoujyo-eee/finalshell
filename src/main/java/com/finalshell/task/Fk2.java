@@ -47,7 +47,7 @@ public class Fk2 implements Runnable {
             Ref.g(508038361377045891L, var5);
             String var10002 = (String)(Registry.emptyArgs());
             long var8 = 564648154927582737L;
-            Object[] var7 = var10002;
+            Object var7 = var10002;
             var10002 = Ref.h(564648154927582737L, var7, var8);
 
             try {

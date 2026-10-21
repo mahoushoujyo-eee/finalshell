@@ -596,7 +596,6 @@ public class M_8 {
                }
             } catch (EOFException var4) {
       P2_5 var6;
-      P2_5 var6;
                throw a(var4);
             }
          }
@@ -819,6 +818,7 @@ public class M_8 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -11882) & 65535;
       if (c[var2] == null) {
          char[] var3 = b[var2].toCharArray();
@@ -1599,7 +1599,7 @@ public class M_8 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1633,6 +1633,9 @@ public class M_8 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
+      long[] var6;
+      byte[] var7;
       String[] var13 = new String[34];
       int var11 = 0;
       String var10 = "°\u0084^VÄ\u0012Ãî\u0002ÔÁ^m,Qì+hQ\u00022¥\u0096^\u0081\u008eã\r¶\u0012þhVZf\u0092\b\u001aÏ¬\u009cÊ ^n\u0084% \u0000ÊÌ¦\n0ò]°?\u009e\u0014ÓW\u0013÷\u0090ú]*\u000eùèâáú®x\u0010ñÊ½\u000b¡6\u0098\u001f×«4\u009aã\fÃÃ\u0086Ø\u0015ëþ´¯\u0004ô\u0092g\u008f%¹H\u0091a-ÿî?óry¢wÌ¾Eë\u001afH\u0006YK\u0016ná\u009eÜé\u0002\u0005\u0003oþx\u0090c\u0012ÐïR;E¿ó[\u0004b\u0001\u0088uöR·K\u0003\u0004\u0000C7V\u0017\u0004þ³\u0090A\n]0\u0017/?\u0019D¹\u001füª¦ÏE\u0090Y\u001d\rÊ-\u0096÷øRÔp&'\u0019\u0018Ô\u0011$\tm]1\u008f\u009fQh£\t\u0001\u0000\u007fS\u0012'\nà\u0002î\u0082èhaoçÂ\u0006¥M\u008a§D¦ ~Îi±2å\r|\u008f\u001aö¸\u009by\u008cÓ\u008fþÍ/ïB+<ó¾Êm3\u000eg¢\b¹:ÚÄ|Ek\u001c\n\u0004är^{ó\u0013\u001c©¬\u0013Äè«RBR=+\u0007]¤fëW \u001a?\u000f^\u0003\u0091\u009e\u0000\u0004mi`Ô\u0007iôÏ\u009e¼Jç\u0005´»G\u008e¼\u001e+\"î\u0094*ø±q:Àf\u0092xD~4æ[ È\u009e\u008e\u0018\u0098:\u0089ÖX+\u0001\r\u0093É½k\u009dÁx\u0002³i«Ñ\u0082\u0003\u0088.Q\u0003\u0014÷Â\u0013>Fô\u0087©è@|¨·Q;UüwoÅ¡\u0001\u0006§Ï\u009b\\\u0095/\u0004VÙæ0\u0016Gw (\u001bÝ(\u000bnñ}&ûi¸&c\u0012Få\u0003¿\u0006ÉuV\u000b,Å\u0005QALFÝ\u0016ñbv\u008aÁ\u0089s\u0081\u0005 \u0010\fV,\r\u008eÕ\u0007\u0090GÙë\u0004{¬X«\u0011ó\u009d\u0097ÏnÝt\u001b\u0015ê¦(õZí¶ð";
@@ -1727,7 +1730,7 @@ public class M_8 {
                      b = var13;
                      c = new String[34];
                      long var0 = 8014305773439951674L;
-                     long[] var6 = new long[26];
+                     var6 = new long[26];
                      int var3 = 0;
                      String var4 = "ûÂ\u0087\u0013\u000bãMbÖ\u001fï ùï t4Wï(ð{sc\u001eôà\u0005d²\u0084m\u0087M³¯¨\u000fê\b\u008a\u009a«ðé¿w£\u0089\u000bVÜ\u008frEÅÆj\u0004 oÞ¸ùº7ÜD\u008eæÔg\u0093ÿ]-Ìa¡Õ`ÖF\u0081>Õ\u0001]-ç`Á»nDfülÖ\u0013ÒÓ\u0007ðñ4DfÞAÌ´Õ\u0088\u008f©¢]1ßQÍX\nëûDSÒÇÁ£r\u0088\u001axvæü°(ë*yÆ\u001eû¡²P¾\u009d\u0012R®\u0097¬\u0015K÷aÚÅió\bÓt\u009fÇ\frÕ\u0004Ü\u0088)'ó}¨öL\" +D9\u008f\u0091\u0091(";
                      int var5 = "ûÂ\u0087\u0013\u000bãMbÖ\u001fï ùï t4Wï(ð{sc\u001eôà\u0005d²\u0084m\u0087M³¯¨\u000fê\b\u008a\u009a«ðé¿w£\u0089\u000bVÜ\u008frEÅÆj\u0004 oÞ¸ùº7ÜD\u008eæÔg\u0093ÿ]-Ìa¡Õ`ÖF\u0081>Õ\u0001]-ç`Á»nDfülÖ\u0013ÒÓ\u0007ðñ4DfÞAÌ´Õ\u0088\u008f©¢]1ßQÍX\nëûDSÒÇÁ£r\u0088\u001axvæü°(ë*yÆ\u001eû¡²P¾\u009d\u0012R®\u0097¬\u0015K÷aÚÅió\bÓt\u009fÇ\frÕ\u0004Ü\u0088)'ó}¨öL\" +D9\u008f\u0091\u0091("
@@ -1738,7 +1741,7 @@ public class M_8 {
                      while (true) {
                         byte var27 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var27, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var27, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var28 = var3++;
                         long var38 = ((long)var7[0] & 255L) << 56
@@ -1833,7 +1836,6 @@ public class M_8 {
       }
    }
 }
-
 
 
 

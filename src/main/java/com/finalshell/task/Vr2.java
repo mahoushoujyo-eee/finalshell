@@ -1,13 +1,13 @@
 package com.finalshell.task;
 
 import com.finalshell.core.UD;
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 
 public class Vr2 implements Runnable {
-   public final PingMessageR t;
+   public final PingMessageReceiver t;
    public final UD o;
 
-   public Vr2(PingMessageR var1, UD var2) {
+   public Vr2(PingMessageReceiver var1, UD var2) {
       this.t = var1;
       this.o = var2;
    }

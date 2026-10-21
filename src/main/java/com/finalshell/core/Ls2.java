@@ -206,6 +206,10 @@ public class Ls2 extends LA implements SwingConstants {
 
    @Override
    public void u(Graphics2D var1, Rectangle var2, JComponent var3) {
+      boolean var12;
+      Shape var13;
+      int var17;
+      boolean var18;
       int[] var4;
       Ls2 var10;
       FontMetrics var15;
@@ -381,7 +385,7 @@ public class Ls2 extends LA implements SwingConstants {
       int var10;
       label117: {
          int[] var10000 = Lz2_2.M();
-         var3 = (var1.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+         var3 = (byte)((var1.getComponentOrientation().isLeftToRight()) ? 1 : 0);
          var2 = var10000;
          var5 = this.C;
          var10 = 2;
@@ -653,6 +657,7 @@ public class Ls2 extends LA implements SwingConstants {
    }
 
    public static void __vfClinit__() {
+      long var13;
       long var0 = 2740504910442671185L;
       long[] var6 = new long[6];
       int var3 = 0;
@@ -678,7 +683,7 @@ public class Ls2 extends LA implements SwingConstants {
          byte var10003 = -1;
 
          while (true) {
-            long var13 = var10002 ^ var0;
+            var13 = var10002 ^ var0;
             switch (var10003) {
                case 0:
                   var10000[var10001] = var13;

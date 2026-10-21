@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.F_2_2;
 
 public final class M2 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 

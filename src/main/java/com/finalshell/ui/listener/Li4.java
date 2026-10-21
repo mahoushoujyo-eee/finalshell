@@ -31,6 +31,7 @@ public class Li4 extends MouseAdapter {
 
    @Override
    public void mouseEntered(MouseEvent var1) {
+      Li4 var4;
       int var10000 = com.finalshell.core.N2.G$int();
       this.T.y = true;
       int var2 = var10000;
@@ -63,6 +64,7 @@ public class Li4 extends MouseAdapter {
 
    @Override
    public void mouseExited(MouseEvent var1) {
+      Li4 var4;
       int var10000 = com.finalshell.core.N2.W();
       this.T.y = false;
       int var2 = var10000;

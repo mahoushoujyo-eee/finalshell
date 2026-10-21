@@ -827,6 +827,7 @@ public class ZW extends HashMap {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[8];
       int var3 = 0;
       String var2 = "¼\u0084RO\u0005è´ÄI\u0017\u0004óR\u008f±\u0003\u0094ñ\t\u0004\u0098©7\u0018\u0007\u0083\u001e\u009aåÍë\u008f";
@@ -841,7 +842,6 @@ public class ZW extends HashMap {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -3,23 +3,24 @@ package com.finalshell.task;
 import com.finalshell.core.M6;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.panel.F8;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 
 public class B72 implements Runnable {
-   public final U T;
+   public final MainFrame T;
    public final M6 F;
    public static long a;
 
-   public B72(M6 var1, U var2) {
+   public B72(M6 var1, MainFrame var2) {
       this.F = var1;
       this.T = var2;
    }
 
    @Override
    public void run() {
+      boolean var12;
       String[] var10000 = F8.y();
       long var2 = System.currentTimeMillis();
       String[] var1 = var10000;
@@ -27,9 +28,9 @@ public class B72 implements Runnable {
       while (true) {
          Object var5 = 440529940248018366L;
          Ref.g(440529940248018366L, var5);
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var8 = 404378438847958764L;
-         Object[] var7 = var10002;
+         Object var7 = var10002;
          var10002 = Ref.h(404378438847958764L, var7, var8);
 
          try {

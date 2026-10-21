@@ -32,7 +32,7 @@ public class ON3_2 {
       if (var1 == null) {
          return false;
       } else {
-         byte var4 = (this.l.equals(var3.l)) ? 1 : 0;
+         byte var4 = (byte)((this.l.equals(var3.l)) ? 1 : 0);
          int var10001 = this.W;
          if (var2 != null) {
             var10001 = this.W == var3.W ? 1 : 0;

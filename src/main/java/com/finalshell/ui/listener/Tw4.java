@@ -9,9 +9,9 @@ import javax.swing.JCheckBoxMenuItem;
 
 public class Tw4 implements ActionListener {
    public final JCheckBoxMenuItem u;
-   public final com.finalshell.ui.frame.U d;
+   public final com.finalshell.ui.frame.MainFrame d;
 
-   public Tw4(com.finalshell.ui.frame.U var1, JCheckBoxMenuItem var2) {
+   public Tw4(com.finalshell.ui.frame.MainFrame var1, JCheckBoxMenuItem var2) {
       this.d = var1;
       this.u = var2;
    }

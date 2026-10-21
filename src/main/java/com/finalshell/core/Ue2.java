@@ -48,6 +48,7 @@ public final class Ue2 implements Aj2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static long j(long var0, long var2, long var4) {
+      long var7;
       int[] var10000 = Nm4.g();
       long[] var9 = new long[a(10829, 7117853909133175431L)];
       int[] var6 = var10000;
@@ -62,7 +63,7 @@ public final class Ue2 implements Aj2 {
          var13 = 1L;
       }
 
-      long var7 = var13;
+      var7 = var13;
       int var11 = 1;
 
       while (true) {
@@ -107,7 +108,7 @@ public final class Ue2 implements Aj2 {
                }
 
                if (var6 == null) {
-                  if (var14) {
+                  if (var14 != 0) {
                      var0 = X(var10, var0);
                   }
 
@@ -116,7 +117,7 @@ public final class Ue2 implements Aj2 {
                   var14 = (var17 = var4 - 0L) == 0L ? 0 : (var17 < 0L ? -1 : 1);
                }
 
-               if (var14) {
+               if (var14 != 0) {
                   break;
                }
             }
@@ -155,7 +156,6 @@ public final class Ue2 implements Aj2 {
             var1 = var7;
             var6++;
             if (var3 == null) {
-      int[] var7;
       int[] var7;
                continue;
             }
@@ -222,6 +222,7 @@ public final class Ue2 implements Aj2 {
    }
 
    public static void __vfClinit__() {
+      byte[] var7;
       long var8 = 7341830455983048418L;
       long[] var14 = new long[8];
       int var11 = 0;
@@ -264,7 +265,7 @@ public final class Ue2 implements Aj2 {
                      do {
                         int var22 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var22, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var22, var2).getBytes("ISO-8859-1");
                         var22 = var3++;
                         var27 = (
                               ((long)var7[0] & 255L) << 56
@@ -333,7 +334,6 @@ public final class Ue2 implements Aj2 {
       }
    }
 }
-
 
 
 

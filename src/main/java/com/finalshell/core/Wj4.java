@@ -21,7 +21,7 @@ public class Wj4 {
          var10001 = var2 == 0 ? 1 : 0;
       }
 
-      this.o = (boolean)var10001;
+      this.o = var10001;
    }
 
    public void p(String var1, int var2) {

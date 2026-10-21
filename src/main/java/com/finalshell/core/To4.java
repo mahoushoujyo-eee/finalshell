@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.IOException;
 import java.security.SecureRandom;
 import java.util.Base64;
@@ -50,7 +50,7 @@ public class To4 {
    }
 
    public static synchronized Cipher t(byte[] var0) throws Exception {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       Cipher var2 = (Cipher)K.get(var0);
       String[] var1 = var10000;
 
@@ -77,7 +77,7 @@ public class To4 {
    }
 
    public static synchronized Cipher x(byte[] var0) throws Exception {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       Cipher var2 = (Cipher)H.get(var0);
       String[] var1 = var10000;
 
@@ -918,6 +918,7 @@ public class To4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[5];
       int var3 = 0;
       String var2 = "33|ý\u0090P:Ý\u0096\u009bå\u0099vRõÚ\u0081\u000ej,\u0087)Ô7\u001aêIYt77ùÎUÿm\u00ad\u0092\u0004\u000eú+õ=4Rï×ï+1\u0018Dq\u0092µMY\u0081üá¿\u000b\u001d«ÂNÈöL\u0084dZ o\u0016";
@@ -933,7 +934,6 @@ public class To4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

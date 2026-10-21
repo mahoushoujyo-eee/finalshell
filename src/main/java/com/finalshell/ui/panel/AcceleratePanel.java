@@ -65,18 +65,18 @@ public class AcceleratePanel extends JPanel {
       long var17 = 240567170779145617L;
       Object[] var16 = var10004;
       Ref.h(240567170779145617L, var16, var17);
-      Object[] var10005 = Registry.emptyArgs();
+      Object var10005 = Registry.emptyArgs();
       long var19 = 226341449505323490L;
-      Object[] var18 = var10005;
+      Object var18 = var10005;
       var10005 = Ref.h(226341449505323490L, var18, var19);
 
       try {
-         var10005 = (com.finalshell.ui.frame.U)var10005;
+         var10005 = (com.finalshell.ui.frame.MainFrame)var10005;
       } catch (InvocationTargetException var103) {
          throw var103.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var2 = var10005;
+      com.finalshell.ui.frame.MainFrame var2 = var10005;
       AccelerateRdpHelpPanel var10006 = new AccelerateRdpHelpPanel();
       long var21 = 222226325555356894L;
       AccelerateRdpHelpPanel var20 = var10006;
@@ -253,7 +253,7 @@ public class AcceleratePanel extends JPanel {
       var2.setForeground(new Color(a(2659, 8300784763847177921L), a(17644, 3366682729625696330L), a(17644, 3366682729625696330L)));
       var2.t(new Color(a(27672, 4960157896286834879L), a(23390, 6909002466986338291L), a(23390, 6909002466986338291L)));
       var2.s(2);
-      Object[] var10001 = Registry.packArgs(3, 5);
+      Object var10001 = Registry.packArgs(3, 5);
       long var3 = 188631797336214587L;
       Object var10002 = Ref.h2(188631797336214587L, var3);
 
@@ -1118,6 +1118,7 @@ public class AcceleratePanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[20];
       int var11 = 0;
       String var10 = "I\u0083\u001bÈ\u008f\u0011@\u0014Æ§þB\u0001zÃ[kÁ\u001b³\u009f \u008c\u0002侃轻\r[®o\u0006\"E\f\u008bIFZjA\u000f\u009b\u0093@ÊÅ5\u0094ê<ÃùÞþ1ø\bºÄd Ah\u0004A\u0005腰孀仃剴邡\r\u0098«\u0017¦-Qî\tw\u0016¿`\u009d\r²\u0010RÑ\u0085¿ûÔ×\u00adé\u0017W\rZ\u0089Oâ&Ù\u008f\u0018Y48$m\fæÃ\u0012]d\u001dR\u0091©&&n\rz¶K\u0005¦%\u009c\u0087XÇ\u0018Zi\b$ß·C;\u0004KÌ\u0004ÜöP\u0087\u000fB5{\u001e¢¯x¹¡©J\u0093\u0088\u00986\u0003崙冚篸\u0004Þ6\u0010\u009f\u0005脵害乫刊邴";
@@ -1133,7 +1134,6 @@ public class AcceleratePanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

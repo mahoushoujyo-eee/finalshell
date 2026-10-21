@@ -56,7 +56,7 @@ public class Fc2 {
    public void C() {
    }
 
-   public synchronized void h(Lp2 param1, Kb4 param2) throws Exception {
+   public synchronized void h(SyncTaskManifest param1, Kb4 param2) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1142,7 +1142,7 @@ public class Fc2 {
       }
    }
 
-   public ArrayList k(Lp2 param1, boolean param2) throws Exception {
+   public ArrayList k(SyncTaskManifest param1, boolean param2) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2629,6 +2629,7 @@ public class Fc2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[44];
       int var11 = 0;
       String var10 = "í\u001c\u00852ß\u00076´Zé\u0017ÔN\t尓柉譻羨哷殔嬰碌\"\u0007访轝入哖毽寖磲\fË\u009eôv\u009fãº\u0013R\u0090û·\b\u000bÕ!E~²\u0084¨\u0012吣歲単讹爘朧輀俕\b謴曌旂进亍吡酏诀,\u0006攁们旙釪\u0098\f\u0004û\u001cêô\u0007亃農醩罺戼刴0\bÿºô©®\u0001e\n\u0012ä\u000eý½·<ó·w\u0093³ü\u0004æ?\u001aßò\b茾卉鄵翛妎趺c\n\u000b;×òõ#$÷b\u0097:\u0099\t\u0089©\t\u0084bp\u001c\u0016°\u0004襶匭閶謠\b.ó\u0085\u0081ê*\u0016»\u0007\u0091zÝ\u009b\u00ad&\u0007\t栅枊攁乮劽裊姶跏ò\t¾ùï\u008e¾;\u0087-Ç\tÍpÎ¸f \u0098\u0018²\u0007Üq¯(Z\u0083\u0000\tT¥ý\u0002\u0000wTò+\t\u0007c\u009aP;íwA\u0004\t梟杫敒乒勗衍¤4J\u0003wÏ·\u0007卸獶斪敿仸ÿ\u0092\u0004¤`\u0001{\u000e\u0099\u0080û8\u00ad\u0010U\u000fÓðKM\u0007ü\u0007_l¦§UÉ\u0007\u000b\u009dÍ,Å¾?ïWs>\u000f\b85ô\b\t4O¶\u0015\"\u0092É÷8ÆD\u001fÛðr\u0000j\u0097\f8µ-\u001e\u0090l\b亚輎醊翭fw\u008có\u0007g\u0019p\\Rbæ\u0007ü\u0086p\u0004\u0018Õ±\u000f?\u0082g{{`|KEè®ÚOL\u000f\bs\u009e\u009d}$\u009aêc\fL&±uuHöÉõµ¦°\u0011`û\u0081Ú1vo¡èÆ¬}D¶\u0083Z¯\u0007z\u0081{6À@S\u000fÞ¼[¼ü\u0098\u008cT[\u000bm¦7Ã\u0000";
@@ -2644,7 +2645,6 @@ public class Fc2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label58: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

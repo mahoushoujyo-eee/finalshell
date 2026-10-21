@@ -961,6 +961,7 @@ public final class XF3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "\u0085\u0004\u008c\u0003Ø\u0090¾\bb ,\u0092\u0018\u0003\u009en";
@@ -977,7 +978,6 @@ public final class XF3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

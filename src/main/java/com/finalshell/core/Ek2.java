@@ -43,6 +43,7 @@ public class Ek2 implements SC {
 
    @Override
    public float h(float var1, float var2) {
+      float var9;
       String var10000 = UZ.h();
       float var4 = 0.0F;
       var1 += 371.0F;

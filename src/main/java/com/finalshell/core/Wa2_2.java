@@ -181,17 +181,17 @@ public final class Wa2_2 implements Cloneable {
    }
 
    public void O(short[] var1, int var2) {
+      int[] var3;
+      int var6;
       int[] var10000 = Nm4.g();
       int var4 = this.X[var2];
-      int[] var3 = var10000;
+      var3 = var10000;
       int var5 = var2 << 1;
 
       while (true) {
          label39:
          if (var5 <= this.h) {
             if (var3 != null) {
-      int var6;
-      int var6;
                break;
             }
 
@@ -199,7 +199,7 @@ public final class Wa2_2 implements Cloneable {
             label35:
             if (var3 == null) {
                if (var5 < this.h) {
-                  var6 = m(var1, this.X[var5 + 1], this.X[var5], this.z);
+                  var6 = (m(var1, this.X[var5 + 1], this.X[var5], this.z)) ? 1 : 0;
                   if (var3 != null) {
                      break label35;
                   }
@@ -209,7 +209,7 @@ public final class Wa2_2 implements Cloneable {
                   }
                }
 
-               var6 = m(var1, var4, this.X[var5], this.z);
+               var6 = (m(var1, var4, this.X[var5], this.z)) ? 1 : 0;
             }
 
             if (var3 == null) {
@@ -245,33 +245,35 @@ public final class Wa2_2 implements Cloneable {
             short var10001 = var6;
             if (var4 == null) {
                if (var5 != var6) {
-                  return (boolean)0;
+                  return 0 != 0;
                }
 
                var8 = var3[var1];
                if (var4 != null) {
-                  return (boolean)var8;
+                  return var8 != 0;
                }
 
                var10001 = var3[var2];
             }
 
             if (var8 > var10001) {
-               return (boolean)0;
+               return 0 != 0;
             }
          }
 
          var7 = 1;
       }
 
-      return (boolean)var7;
+      return var7 != 0;
    }
 
    public void B(short[] var1, int var2) {
+      int[] var3;
+      short var6;
       short var5 = -1;
       int[] var10002 = Nm4.g();
       short var7 = var1[1];
-      int[] var3 = var10002;
+      var3 = var10002;
       int var8 = 0;
       int var9 = a(29657, 4152544568793720388L);
       short var10 = 4;
@@ -290,7 +292,6 @@ public final class Wa2_2 implements Cloneable {
 
       while (var4 <= var2) {
          label97: {
-            short var6;
             label98: {
                label99: {
                   int var10001;
@@ -394,6 +395,7 @@ public final class Wa2_2 implements Cloneable {
    }
 
    public int D() {
+      int var3;
       this.B(this.L, this.UJ.J);
       this.B(this.Ue, this.s.J);
       this.m.t(this);
@@ -452,14 +454,18 @@ public final class Wa2_2 implements Cloneable {
    }
 
    public void w(short[] var1, int var2) {
+      int var11;
+      int var12;
+      int[] var3;
+      short var6;
       short var5 = -1;
       int[] var10000 = Nm4.g();
       short var7 = var1[1];
       int var8 = 0;
       int var9 = a(29657, 4152544568793720388L);
-      int[] var3 = var10000;
+      var3 = var10000;
       short var10 = 4;
-      short var11 = var7;
+      var11 = var7;
       if (var3 == null) {
          if (var7 == 0) {
             var9 = a(19309, 2657578515937255103L);
@@ -473,7 +479,6 @@ public final class Wa2_2 implements Cloneable {
 
       while (var4 <= var2) {
          label100: {
-            short var6;
             label101: {
                label102: {
                   int var10001;
@@ -602,7 +607,8 @@ public final class Wa2_2 implements Cloneable {
    }
 
    public final void i(int var1, short[] var2) {
-      int var3 = var1 * 2;
+      int var3;
+      var3 = var1 * 2;
       this.W(var2[var3] & a(10923, 7527050280887795560L), var2[var3 + 1] & a(14491, 9174950205415632236L));
    }
 
@@ -646,6 +652,7 @@ public final class Wa2_2 implements Cloneable {
 
    public boolean Y(int var1, int var2) {
       int[] var3;
+      int var6;
       label68: {
          this.F[this.y + this.n * 2] = (byte)(var1 >>> a(674, 4619306808194668361L));
          int[] var10000 = Nm4.g();
@@ -673,13 +680,13 @@ public final class Wa2_2 implements Cloneable {
       if (var3 == null) {
          if (var9 == 0) {
             if (var3 != null) {
-               return (boolean)(this.N == 2 ? 1 : 0);
+               return (boolean)((this.N == 2 ? 1 : 0) != 0);
             }
 
             if (this.N > 2) {
                int var4 = this.n * a(674, 4619306808194668361L);
                int var5 = this.f - this.q;
-               int var6 = 0;
+               var6 = 0;
 
                while (true) {
                   if (var6 < a(2004, 6993718967149859372L)) {
@@ -700,13 +707,13 @@ public final class Wa2_2 implements Cloneable {
 
                int var11 = this.n / 2;
                if (var3 != null) {
-                  return (boolean)(this.A == var11 ? 1 : 0);
+                  return (boolean)((this.A == var11 ? 1 : 0) != 0);
                }
 
                if (this.A < var11) {
                   var11 = var5 / 2;
                   if (var3 != null) {
-                     return (boolean)(var4 == var11 ? 1 : 0);
+                     return (boolean)((var4 == var11 ? 1 : 0) != 0);
                   }
 
                   if (var4 < var11) {
@@ -720,19 +727,22 @@ public final class Wa2_2 implements Cloneable {
       }
 
       if (var3 != null) {
-         return (boolean)var9;
+         return var9 != 0;
       } else {
-         return (boolean)(var9 == this.K - 1 ? 1 : 0);
+         return (boolean)((var9 == this.K - 1 ? 1 : 0) != 0);
       }
    }
 
    public void H(short[] var1, short[] var2) {
+      Wa2_2 var11;
+      int var12;
+      int[] var3;
+      int var6;
       int[] var10000 = Nm4.g();
-      int var6 = 0;
-      int[] var3 = var10000;
-      Wa2_2 var11 = this;
+      var6 = 0;
+      var3 = var10000;
+      var11 = this;
       if (var3 == null) {
-         int var12;
          if (this.n != 0) {
             do {
                label41: {
@@ -945,8 +955,10 @@ public final class Wa2_2 implements Cloneable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public int P(int var1) {
+      int var3;
+      int var6;
       int[] var10000 = Nm4.g();
-      int var3 = a(14491, 9174950205415632236L);
+      var3 = a(14491, 9174950205415632236L);
       int[] var2 = var10000;
       int var5 = var3;
       int var10001 = this.a - 5;
@@ -961,7 +973,6 @@ public final class Wa2_2 implements Cloneable {
 
       label225:
       while (true) {
-         int var6;
          if (var5 <= var10001) {
             this.M();
             var6 = this.U;
@@ -987,7 +998,7 @@ public final class Wa2_2 implements Cloneable {
                      var10001 = var1 == 4 ? 1 : 0;
                   }
 
-                  this.b((boolean)var10001);
+                  this.b(var10001);
                   int var7 = this.Q.g;
                   if (var2 == null) {
                      if (this.Q.g == 0) {
@@ -1163,7 +1174,7 @@ public final class Wa2_2 implements Cloneable {
                      var10001 = var1 == 4 ? 1 : 0;
                   }
 
-                  this.b((boolean)var10001);
+                  this.b(var10001);
                   int var12 = this.Q.g;
                   if (var2 == null) {
                      if (this.Q.g == 0) {
@@ -1198,7 +1209,7 @@ public final class Wa2_2 implements Cloneable {
 
    public void l(int var1, int var2, boolean var3) {
       int[] var4 = Nm4.g();
-      int var10002 = var3;
+      int var10002 = (var3) ? 1 : 0;
       if (var4 == null) {
          var10002 = var3 != 0 ? 1 : 0;
       }
@@ -1208,9 +1219,11 @@ public final class Wa2_2 implements Cloneable {
    }
 
    public void t(int var1, int var2, boolean var3) {
+      Wa2_2 var11;
+      boolean var13;
+      int var6;
       int[] var4;
       int var5;
-      int var6;
       int var7;
       int var10;
       int var12;
@@ -1288,7 +1301,7 @@ public final class Wa2_2 implements Cloneable {
          }
 
          if (var10 == var12) {
-            int var10002 = var3;
+            int var10002 = (var3) ? 1 : 0;
             if (var4 == null) {
                var10002 = var3 != 0 ? 1 : 0;
             }
@@ -1300,9 +1313,9 @@ public final class Wa2_2 implements Cloneable {
             }
          }
 
-         int var13 = var3;
+         var13 = var3;
          if (var4 == null) {
-            var13 = var3 != 0 ? 1 : 0;
+            var13 = (var3 != 0 ? 1 : 0) != 0;
          }
 
          this.W(4 + var13, 3);
@@ -1310,7 +1323,7 @@ public final class Wa2_2 implements Cloneable {
          this.H(this.L, this.Ue);
       }
 
-      Wa2_2 var11 = this;
+      var11 = this;
       if (var4 == null) {
          this.X();
          if (var3 == 0) {
@@ -1573,8 +1586,11 @@ public final class Wa2_2 implements Cloneable {
    // $VF: Irreducible bytecode has more than 5 nodes in sequence and was not entirely decomposed
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public int k(int var1) {
+      int var3;
+      int var6;
+      int var9;
       int[] var10000 = Nm4.g();
-      int var3 = 0;
+      var3 = 0;
       int[] var2 = var10000;
 
       while (true) {
@@ -1604,11 +1620,11 @@ public final class Wa2_2 implements Cloneable {
                      var10001 = var1 == 4 ? 1 : 0;
                   }
 
-                  this.b((boolean)var10001);
+                  this.b(var10001);
                   int var8 = this.Q.g;
                   if (var2 == null) {
                      if (this.Q.g == 0) {
-                        int var9 = var1;
+                        var9 = var1;
                         if (var2 == null) {
                            if (var1 == 4) {
                               return 2;
@@ -1692,7 +1708,7 @@ public final class Wa2_2 implements Cloneable {
                   }
 
                   if (var2 != null) {
-                     int var6 = var7;
+                     var6 = var7;
                      this.U--;
                      this.f++;
                      int var17 = var6;
@@ -1720,7 +1736,7 @@ public final class Wa2_2 implements Cloneable {
                }
 
                if (var7 < var20) {
-                  byte var5 = this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L));
+                  byte var5 = (byte)((this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L))) ? 1 : 0);
                   this.U--;
                   this.f++;
                   int var16 = var5;
@@ -1742,12 +1758,12 @@ public final class Wa2_2 implements Cloneable {
                      return 0;
                   }
                } else {
-                  byte var4 = this.Y(this.f - this.j, this.E - 3);
+                  byte var4 = (byte)((this.Y(this.f - this.j, this.E - 3)) ? 1 : 0);
                   this.U = this.U - this.E;
                   if (var2 != null) {
                      this.U4 = (this.U4 << this.C ^ this.D[this.f + 1] & a(28102, 2568201338079377498L)) & this.w;
                      if (var2 != null) {
-                        var4 = this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L));
+                        var4 = (byte)((this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L))) ? 1 : 0);
                         this.U--;
                         this.f++;
                      }
@@ -1776,7 +1792,7 @@ public final class Wa2_2 implements Cloneable {
                      this.U4 = this.D[this.f] & a(28102, 2568201338079377498L);
                      this.U4 = (this.U4 << this.C ^ this.D[this.f + 1] & a(28102, 2568201338079377498L)) & this.w;
                      if (var2 != null) {
-                        var4 = this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L));
+                        var4 = (byte)((this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L))) ? 1 : 0);
                         this.U--;
                         this.f++;
                      }
@@ -1802,7 +1818,7 @@ public final class Wa2_2 implements Cloneable {
                   } else if (var2 != null) {
                      this.U4 = (this.U4 << this.C ^ this.D[this.f + 1] & a(28102, 2568201338079377498L)) & this.w;
                      if (var2 != null) {
-                        var4 = this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L));
+                        var4 = (byte)((this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L))) ? 1 : 0);
                         this.U--;
                         this.f++;
                      }
@@ -1831,7 +1847,7 @@ public final class Wa2_2 implements Cloneable {
                      this.U4 = this.D[this.f] & a(28102, 2568201338079377498L);
                      this.U4 = (this.U4 << this.C ^ this.D[this.f + 1] & a(28102, 2568201338079377498L)) & this.w;
                      if (var2 != null) {
-                        var4 = this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L));
+                        var4 = (byte)((this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L))) ? 1 : 0);
                         this.U--;
                         this.f++;
                      }
@@ -1880,7 +1896,7 @@ public final class Wa2_2 implements Cloneable {
                         this.U4 = this.D[this.f] & a(28102, 2568201338079377498L);
                         this.U4 = (this.U4 << this.C ^ this.D[this.f + 1] & a(28102, 2568201338079377498L)) & this.w;
                         if (var2 != null) {
-                           var4 = this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L));
+                           var4 = (byte)((this.Y(0, this.D[this.f] & a(28102, 2568201338079377498L))) ? 1 : 0);
                            this.U--;
                            this.f++;
                         }
@@ -1949,7 +1965,7 @@ public final class Wa2_2 implements Cloneable {
                      var21 = var1 == 4 ? 1 : 0;
                   }
 
-                  this.b((boolean)var21);
+                  this.b(var21);
                   int var18 = this.Q.g;
                   if (var2 == null) {
                      if (this.Q.g == 0) {
@@ -1995,8 +2011,12 @@ public final class Wa2_2 implements Cloneable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public int f(int var1) {
+      Wa2_2 var11;
+      int var12;
+      int var3;
+      int var9;
       int[] var10000 = Nm4.g();
-      int var3 = 0;
+      var3 = 0;
       int[] var2 = var10000;
 
       label250:
@@ -2016,7 +2036,6 @@ public final class Wa2_2 implements Cloneable {
                         }
 
                         if (var9 < var10001) {
-      int[] var9;
                            var9 = var1;
                            if (var2 != null) {
                               break label242;
@@ -2050,7 +2069,6 @@ public final class Wa2_2 implements Cloneable {
             }
 
             if (var9 >= var10001) {
-      int[] var9;
                this.U4 = (this.U4 << this.C ^ this.D[this.f + 2] & a(28102, 2568201338079377498L)) & this.w;
                var3 = this.k[this.U4] & a(14491, 9174950205415632236L);
                this.i[this.f & this.p] = this.k[this.U4];
@@ -2137,8 +2155,8 @@ public final class Wa2_2 implements Cloneable {
 
                if (var2 != null) {
                   if (var9 != 0) {
-                     byte var4 = this.Y(0, this.D[this.f - 1] & a(28102, 2568201338079377498L));
-                     int var12 = var4;
+                     byte var4 = (byte)((this.Y(0, this.D[this.f - 1] & a(28102, 2568201338079377498L))) ? 1 : 0);
+                     var12 = var4;
                      if (var2 == null) {
                         if (var4 != 0) {
                            this.b(false);
@@ -2178,7 +2196,7 @@ public final class Wa2_2 implements Cloneable {
 
                   if (this.E <= this.Uj) {
                      int var5 = this.f + this.U - 3;
-                     byte var6 = this.Y(this.f - 1 - this.e, this.Uj - 3);
+                     byte var6 = (byte)((this.Y(this.f - 1 - this.e, this.Uj - 3)) ? 1 : 0);
                      this.U = this.U - (this.Uj - 1);
                      this.Uj -= 2;
 
@@ -2239,7 +2257,7 @@ public final class Wa2_2 implements Cloneable {
             }
 
             if (var13 != 0) {
-               byte var8 = this.Y(0, this.D[this.f - 1] & a(28102, 2568201338079377498L));
+               byte var8 = (byte)((this.Y(0, this.D[this.f - 1] & a(28102, 2568201338079377498L))) ? 1 : 0);
                int var18 = var8;
                if (var2 == null) {
                   if (var8 != 0) {
@@ -2288,7 +2306,7 @@ public final class Wa2_2 implements Cloneable {
          var20 = var1 == 4 ? 1 : 0;
       }
 
-      var15.b((boolean)var20);
+      var15.b(var20);
       int var16 = this.Q.g;
       if (var2 == null) {
          if (this.Q.g == 0) {
@@ -2656,10 +2674,12 @@ public final class Wa2_2 implements Cloneable {
    }
 
    public int C(int var1, int var2, int var3, int var4, int var5) {
+      int[] var6;
+      int var9;
       int[] var10000 = Nm4.g();
       byte var7 = 1;
       this.Q.t = null;
-      int[] var6 = var10000;
+      var6 = var10000;
       int var8 = var1;
       if (var6 == null) {
          if (var1 == -1) {
@@ -2740,7 +2760,7 @@ public final class Wa2_2 implements Cloneable {
                            }
 
                            if (var5 >= 0) {
-                              int var9 = var5;
+                              var9 = var5;
                               if (var6 == null) {
                                  if (var5 > 2) {
                                     return a(11787, 3843511092555955169L);
@@ -2854,9 +2874,10 @@ public final class Wa2_2 implements Cloneable {
    }
 
    public int K(int var1, int var2) {
+      int[] var3;
       int[] var10000 = Nm4.g();
       int var4 = 0;
-      int[] var3 = var10000;
+      var3 = var10000;
       int var5 = var1;
       if (var3 == null) {
          if (var1 == -1) {
@@ -2935,10 +2956,12 @@ public final class Wa2_2 implements Cloneable {
    }
 
    public int x(byte[] var1, int var2) {
+      int[] var3;
+      int var6;
       int[] var10000 = Nm4.g();
       int var4 = var2;
       int var5 = 0;
-      int[] var3 = var10000;
+      var3 = var10000;
       if (var1 != null) {
          int var7 = this.R;
          int var10001 = a(21036, 7447472602658785273L);
@@ -2979,7 +3002,7 @@ public final class Wa2_2 implements Cloneable {
             var7 = 0;
          }
 
-         int var6 = var7;
+         var6 = var7;
 
          while (var6 <= var4 - 3) {
             this.U4 = (this.U4 << this.C ^ this.D[var6 + 2] & a(28102, 2568201338079377498L)) & this.w;
@@ -2998,6 +3021,9 @@ public final class Wa2_2 implements Cloneable {
    }
 
    public int a(int var1) {
+      int var13;
+      Wa2_2 var22;
+      Wa2_2 var25;
       int[] var2 = Nm4.g();
       int var10000 = var1;
       if (var2 == null) {
@@ -3342,7 +3368,7 @@ public final class Wa2_2 implements Cloneable {
                                              }
 
                                              if (var10000 == var31) {
-                                                int var13 = 0;
+                                                var13 = 0;
 
                                                 while (var13 < this.UK) {
                                                    this.k[var13] = 0;
@@ -3768,7 +3794,8 @@ public final class Wa2_2 implements Cloneable {
    }
 
    public static int a(int var0, long var1) {
-      int var3 = var0 ^ (int)(var1 & 32767L) ^ 5597;
+      int var3;
+      var3 = var0 ^ (int)(var1 & 32767L) ^ 5597;
       if (bb[var3] == null) {
          bb[var3] = (int)(ab[var3] ^ var1);
       }
@@ -3777,7 +3804,8 @@ public final class Wa2_2 implements Cloneable {
    }
 
    public static long b(int var0, long var1) {
-      int var3 = (var0 ^ (int)var1 ^ 29847) & 32767;
+      int var3;
+      var3 = (var0 ^ (int)var1 ^ 29847) & 32767;
       if (db[var3] == null) {
          db[var3] = cb[var3] ^ var1;
       }
@@ -3787,6 +3815,11 @@ public final class Wa2_2 implements Cloneable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var11;
+      boolean var13;
+      int var3;
+      char[] var47;
+      long[] var6;
       String[] var16 = new String[8];
       int var20 = 0;
       String var19 = "G=oi\"sIQ3i\u000fM9~l\"rR@(rglwIZ\fA)}ngd\u001bF.igp\fP(imc{\u001bF.igp\u0013J2h}dpR@5~fv6VF1tz{\nE5wm\"sIQ3i";
@@ -3878,10 +3911,10 @@ public final class Wa2_2 implements Cloneable {
                   if ((var26 += var18) >= var21) {
                      long var8 = 3991030405232282345L;
                      long[] var14 = new long[70];
-                     int var11 = 0;
+                     var11 = 0;
                      String var12 = "\u0082«¿i\u001cr\fl\u0099\u0094OHò¨Ht°R#÷GL×3v©'>æñ]$4m9#©àÿ/n\tÄ\u0097\u0011¾´\u0015Çâ,§@°xÄ<\u0002o&\u0081\u0091\u0010 Ö§v¡¼I\r:õ\u0082-É=ûüvÉ!À¬+w4tÇ&\u00adB\u001d\u0017\u001f¯\u008b\f±\u00014\u001d©\u0081BÃwª\u0011º3Rú¿\u008f\u009a\u0093\r\u00ad\u0005¸k/Pz\u0081\u0014Ü²Ê9\u0097û\u0085ïkª\u0013\u0085\u007fN\rg\u0002©ô\u008d\u0099uÎsOUÐ\u00ad¢\u0006U\u007fÏñ\u0013T\u008c¶;\u0095\u0014x68ô,Æ:\u0083ÈBÄ¸\u0012\u0003ÑÚ\u0015¬ól\u0098*è¼Îìþ\u001bB\u008a\u0004#ÊëýT²ù¸Ò3>U\u001dî\u0014ó¿\u0090;\u008eµcX!Ù{,ZßBe:¼/!W\u001bî\u000f0\u001eI.va¡u\u008a~²iò\u001c³\r°\u0094YiHüFm\u009cd¬²uûXAß\u0014îÁt»\\(Ì-ùÑ\u0098>\u009bspk²aËøüôÞpàQ1Ã°FXÛ]\u000b:dË\u0018ý{A\u008bÉ`rå \bé,¸ôªÁ;¼¿xqÝ^\u0018¼\u0095C/ú6Æ\u0015\u0098zQ\u00ad\u0097ö\u00895®\u00041Ëñ(\u0089Y:Àú\u001dk\u001fu6ì±ï\u0016\u0010×\u0005\u0006\u0095\u001d,í\u000f\u0090°¿\u001f\u0018\u008aüÝÉ0\u0093\u0010\n\u001eqÖ\u008a¢b7¦\u0081g\u0098®Ë\u0006òn;5þHôÓ\u0087\u0018nÃêKÇX\u0092¥\u008b\u0085RwöÚJ¸°ÿonu[Ý¨\u008cð\u009c½zJ\u008eö&\u0004\u008c\u0098Ç\"R¾\\\u0094\u0081\u0098ÚEs\u0019\"\u0083\u0098¥\u008a\u001f\u008bî\u0005ú\u0005Ì¬µúTG(\u001e\u00132|\u0097\u0005\u009d\u0095\u007fù¢ç,â\u0010§b\u0001{n\u008bbè!l\u0088¤vÌàþâ)o×J,ªd=y°\u0084@2L7\u009cQ\u00adà\u0001Ý¡EéÝ½í}¬ÿ";
-                     int var13 = "\u0082«¿i\u001cr\fl\u0099\u0094OHò¨Ht°R#÷GL×3v©'>æñ]$4m9#©àÿ/n\tÄ\u0097\u0011¾´\u0015Çâ,§@°xÄ<\u0002o&\u0081\u0091\u0010 Ö§v¡¼I\r:õ\u0082-É=ûüvÉ!À¬+w4tÇ&\u00adB\u001d\u0017\u001f¯\u008b\f±\u00014\u001d©\u0081BÃwª\u0011º3Rú¿\u008f\u009a\u0093\r\u00ad\u0005¸k/Pz\u0081\u0014Ü²Ê9\u0097û\u0085ïkª\u0013\u0085\u007fN\rg\u0002©ô\u008d\u0099uÎsOUÐ\u00ad¢\u0006U\u007fÏñ\u0013T\u008c¶;\u0095\u0014x68ô,Æ:\u0083ÈBÄ¸\u0012\u0003ÑÚ\u0015¬ól\u0098*è¼Îìþ\u001bB\u008a\u0004#ÊëýT²ù¸Ò3>U\u001dî\u0014ó¿\u0090;\u008eµcX!Ù{,ZßBe:¼/!W\u001bî\u000f0\u001eI.va¡u\u008a~²iò\u001c³\r°\u0094YiHüFm\u009cd¬²uûXAß\u0014îÁt»\\(Ì-ùÑ\u0098>\u009bspk²aËøüôÞpàQ1Ã°FXÛ]\u000b:dË\u0018ý{A\u008bÉ`rå \bé,¸ôªÁ;¼¿xqÝ^\u0018¼\u0095C/ú6Æ\u0015\u0098zQ\u00ad\u0097ö\u00895®\u00041Ëñ(\u0089Y:Àú\u001dk\u001fu6ì±ï\u0016\u0010×\u0005\u0006\u0095\u001d,í\u000f\u0090°¿\u001f\u0018\u008aüÝÉ0\u0093\u0010\n\u001eqÖ\u008a¢b7¦\u0081g\u0098®Ë\u0006òn;5þHôÓ\u0087\u0018nÃêKÇX\u0092¥\u008b\u0085RwöÚJ¸°ÿonu[Ý¨\u008cð\u009c½zJ\u008eö&\u0004\u008c\u0098Ç\"R¾\\\u0094\u0081\u0098ÚEs\u0019\"\u0083\u0098¥\u008a\u001f\u008bî\u0005ú\u0005Ì¬µúTG(\u001e\u00132|\u0097\u0005\u009d\u0095\u007fù¢ç,â\u0010§b\u0001{n\u008bbè!l\u0088¤vÌàþâ)o×J,ªd=y°\u0084@2L7\u009cQ\u00adà\u0001Ý¡EéÝ½í}¬ÿ"
-                        .length();
+                     var13 = "\u0082«¿i\u001cr\fl\u0099\u0094OHò¨Ht°R#÷GL×3v©'>æñ]$4m9#©àÿ/n\tÄ\u0097\u0011¾´\u0015Çâ,§@°xÄ<\u0002o&\u0081\u0091\u0010 Ö§v¡¼I\r:õ\u0082-É=ûüvÉ!À¬+w4tÇ&\u00adB\u001d\u0017\u001f¯\u008b\f±\u00014\u001d©\u0081BÃwª\u0011º3Rú¿\u008f\u009a\u0093\r\u00ad\u0005¸k/Pz\u0081\u0014Ü²Ê9\u0097û\u0085ïkª\u0013\u0085\u007fN\rg\u0002©ô\u008d\u0099uÎsOUÐ\u00ad¢\u0006U\u007fÏñ\u0013T\u008c¶;\u0095\u0014x68ô,Æ:\u0083ÈBÄ¸\u0012\u0003ÑÚ\u0015¬ól\u0098*è¼Îìþ\u001bB\u008a\u0004#ÊëýT²ù¸Ò3>U\u001dî\u0014ó¿\u0090;\u008eµcX!Ù{,ZßBe:¼/!W\u001bî\u000f0\u001eI.va¡u\u008a~²iò\u001c³\r°\u0094YiHüFm\u009cd¬²uûXAß\u0014îÁt»\\(Ì-ùÑ\u0098>\u009bspk²aËøüôÞpàQ1Ã°FXÛ]\u000b:dË\u0018ý{A\u008bÉ`rå \bé,¸ôªÁ;¼¿xqÝ^\u0018¼\u0095C/ú6Æ\u0015\u0098zQ\u00ad\u0097ö\u00895®\u00041Ëñ(\u0089Y:Àú\u001dk\u001fu6ì±ï\u0016\u0010×\u0005\u0006\u0095\u001d,í\u000f\u0090°¿\u001f\u0018\u008aüÝÉ0\u0093\u0010\n\u001eqÖ\u008a¢b7¦\u0081g\u0098®Ë\u0006òn;5þHôÓ\u0087\u0018nÃêKÇX\u0092¥\u008b\u0085RwöÚJ¸°ÿonu[Ý¨\u008cð\u009c½zJ\u008eö&\u0004\u008c\u0098Ç\"R¾\\\u0094\u0081\u0098ÚEs\u0019\"\u0083\u0098¥\u008a\u001f\u008bî\u0005ú\u0005Ì¬µúTG(\u001e\u00132|\u0097\u0005\u009d\u0095\u007fù¢ç,â\u0010§b\u0001{n\u008bbè!l\u0088¤vÌàþâ)o×J,ªd=y°\u0084@2L7\u009cQ\u00adà\u0001Ý¡EéÝ½í}¬ÿ";
+                        // [VF] .length();
                      byte var10 = 0;
 
                      label62:
@@ -3910,8 +3943,8 @@ public final class Wa2_2 implements Cloneable {
                                     ab = var14;
                                     bb = new Integer[70];
                                     long var0 = 1120406189603652126L;
-                                    long[] var6 = new long[4];
-                                    int var3 = 0;
+                                    var6 = new long[4];
+                                    var3 = 0;
                                     String var4 = "b´¦ç\u0095\n\u0016\u0083Er¢`Ó_uÆ";
                                     int var5 = "b´¦ç\u0095\n\u0016\u0083Er¢`Ó_uÆ".length();
                                     byte var2 = 0;
@@ -4035,7 +4068,7 @@ public final class Wa2_2 implements Cloneable {
                                  }
 
                                  var12 = "*ÃRÂ°]Ú÷o\u0006\u00840k\u0010l×";
-                                 var13 = "*ÃRÂ°]Ú÷o\u0006\u00840k\u0010l×".length();
+                                 var13 = ("*ÃRÂ°]Ú÷o\u0006\u00840k\u0010l×".length()) != 0;
                                  var10 = 0;
                            }
 
@@ -4079,8 +4112,6 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 }
-
-
 
 
 

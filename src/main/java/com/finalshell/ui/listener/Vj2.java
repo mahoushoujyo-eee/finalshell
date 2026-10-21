@@ -24,6 +24,7 @@ public class Vj2 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var90;
       String[] var2 = KV.b$arrString();
       Registry.emptyArgs();
       long var11 = 270389152141252877L;
@@ -40,9 +41,9 @@ public class Vj2 implements ActionListener {
          long var14 = 163462326892114024L;
          Object[] var13 = var10002;
          Ref.h(163462326892114024L, var13, var14);
-         Object[] var10003 = Registry.emptyArgs();
+         Object var10003 = Registry.emptyArgs();
          long var16 = 633712494917113170L;
-         Object[] var15 = var10003;
+         Object var15 = var10003;
          var10003 = Ref.h(633712494917113170L, var15, var16);
 
          try {
@@ -67,21 +68,21 @@ public class Vj2 implements ActionListener {
                long var30 = 240567170779145617L;
                Object[] var29 = var10008;
                Ref.h(240567170779145617L, var29, var30);
-               Object[] var10009 = Registry.emptyArgs();
+               Object var10009 = Registry.emptyArgs();
                long var32 = 226341449505323490L;
-               Object[] var31 = var10009;
+               Object var31 = var10009;
                var10009 = Ref.h(226341449505323490L, var31, var32);
 
                try {
-                  var10009 = (com.finalshell.ui.frame.U)var10009;
+                  var10009 = (com.finalshell.ui.frame.MainFrame)var10009;
                } catch (InvocationTargetException var82) {
                   throw var82.getTargetException();
                }
 
-               com.finalshell.ui.frame.U var3 = var10009;
+               com.finalshell.ui.frame.MainFrame var3 = var10009;
                ConnectionProperty var10010 = (ConnectionProperty)(Registry.emptyArgs());
                long var34 = 179934491990092343L;
-               Object[] var33 = var10010;
+               Object var33 = var10010;
                var10010 = Ref.h(179934491990092343L, var33, var34);
 
                try {
@@ -106,7 +107,7 @@ public class Vj2 implements ActionListener {
                      Ref.h(410905379772103887L, var41, var42);
                      Lv4_2 var10015 = (Lv4_2)(Registry.packArgs(var5));
                      long var44 = 343419559142469673L;
-                     Object[] var43 = var10015;
+                     Object var43 = var10015;
                      var10015 = Ref.h(343419559142469673L, var43, var44);
 
                      try {
@@ -119,7 +120,7 @@ public class Vj2 implements ActionListener {
                      if (var6 != null) {
                         AM var10016 = (AM)(Registry.emptyArgs());
                         long var46 = 303756590022481369L;
-                        Object[] var45 = var10016;
+                        Object var45 = var10016;
                         var10016 = Ref.h(303756590022481369L, var45, var46);
 
                         try {
@@ -131,7 +132,7 @@ public class Vj2 implements ActionListener {
                         AM var7 = var10016;
                         T32 var10017 = (T32)(Registry.packArgs(var5));
                         long var48 = 259592583851616584L;
-                        Object[] var47 = var10017;
+                        Object var47 = var10017;
                         var10017 = Ref.h(259592583851616584L, var47, var48);
 
                         try {
@@ -205,7 +206,7 @@ public class Vj2 implements ActionListener {
                                     CT var10 = (CT)var9;
                                     ConnectionProperty var106 = (ConnectionProperty)(Registry.emptyArgs());
                                     long var56 = 398891882190620836L;
-                                    Object[] var55 = var106;
+                                    Object var55 = var106;
                                     var106 = Ref.h(398891882190620836L, var55, var56);
 
                                     try {
@@ -238,7 +239,7 @@ public class Vj2 implements ActionListener {
                            CE var87 = (CE)var10017;
                            ConnectionProperty var109 = (ConnectionProperty)(Registry.emptyArgs());
                            long var58 = 595556246051364370L;
-                           Object[] var57 = var109;
+                           Object var57 = var109;
                            var109 = Ref.h(595556246051364370L, var57, var58);
 
                            try {
@@ -275,7 +276,7 @@ public class Vj2 implements ActionListener {
                         new StringBuilder().append(a);
                         String var10022 = (String)(Registry.emptyArgs());
                         long var64 = 286931176286176762L;
-                        Object[] var63 = var10022;
+                        Object var63 = var10022;
                         var10022 = Ref.h(286931176286176762L, var63, var64);
 
                         try {
@@ -297,7 +298,7 @@ public class Vj2 implements ActionListener {
 
                         var10022 = Registry.emptyArgs();
                         long var68 = 176235325809488947L;
-                        Object[] var67 = var10022;
+                        Object var67 = var10022;
                         Ref.h(176235325809488947L, var67, var68);
 
                         try {

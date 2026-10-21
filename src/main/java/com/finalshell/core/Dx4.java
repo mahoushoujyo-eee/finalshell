@@ -110,7 +110,7 @@ public class Dx4 {
       if (var13 == var10001) {
          PE3 var6 = new PE3(this.U, this.n, var4, -1, null);
          String var7 = var6.O();
-         byte var8 = (this.R.equals(this.z ? var7.toLowerCase() : var7)) ? 1 : 0;
+         byte var8 = (byte)((this.R.equals(this.z ? var7.toLowerCase() : var7)) ? 1 : 0);
          int var14 = var8;
          if (var5 == null) {
             if (var8 == 0) {

@@ -1,12 +1,12 @@
 package com.finalshell.task;
 
 import com.finalshell.core.Yd2;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.util.ArrayList;
 
 public class CreateFolder2 implements Runnable {
    public final ArrayList H;
-   public final Address I;
+   public final FileBrowserAddressBar I;
    public final String J;
    public final String R;
    public final ArrayList n;
@@ -14,7 +14,7 @@ public class CreateFolder2 implements Runnable {
    public static String[] a;
    public static String[] b;
 
-   public CreateFolder2(Yd2 var1, ArrayList var2, Address var3, String var4, String var5, ArrayList var6) {
+   public CreateFolder2(Yd2 var1, ArrayList var2, FileBrowserAddressBar var3, String var4, String var5, ArrayList var6) {
       this.A = var1;
       this.H = var2;
       this.I = var3;

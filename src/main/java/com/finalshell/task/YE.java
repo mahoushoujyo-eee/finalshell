@@ -1,17 +1,17 @@
 package com.finalshell.task;
 
-import com.finalshell.core.IcpmPing;
+import com.finalshell.core.IcmpPingService;
 import java.io.IOException;
 import java.net.InetAddress;
 
 public class YE implements Runnable {
    public final InetAddress O;
-   public final IcpmPing N;
+   public final IcmpPingService N;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   public YE(IcpmPing var1, InetAddress var2) {
+   public YE(IcmpPingService var1, InetAddress var2) {
       this.N = var1;
       this.O = var2;
    }

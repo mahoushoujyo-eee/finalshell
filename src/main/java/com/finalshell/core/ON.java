@@ -42,6 +42,7 @@ public class ON {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static Map d() {
+      HashMap var12;
       int[] var10000 = C42.g();
       Object var1 = A;
       synchronized (A){} // $VF: monitorenter 
@@ -78,8 +79,6 @@ public class ON {
                }
 
                if (var0 == null) {
-      HashMap var12;
-      HashMap var12;
                   continue;
                }
             }
@@ -282,7 +281,6 @@ public class ON {
       I = false;
    }
 }
-
 
 
 

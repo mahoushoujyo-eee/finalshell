@@ -12,7 +12,7 @@ public class VR implements Tk4 {
    }
 
    @Override
-   public void R(com.finalshell.ui.frame.U var1) {
+   public void R(com.finalshell.ui.frame.MainFrame var1) {
       Object[] var10001 = Registry.emptyArgs();
       long var3 = 176356587927714575L;
       Object[] var2 = var10001;

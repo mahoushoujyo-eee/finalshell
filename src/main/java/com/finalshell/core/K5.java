@@ -23,16 +23,17 @@ public class K5 {
    }
 
    public void x() {
+      byte var7;
       String[] var10000 = Ub2.A();
       byte var2 = 0;
       String[] var1 = var10000;
 
       for (byte var6 : this.q) {
-         var7 = this.J.d();
+         var7 = (byte)((this.J.d()) ? 1 : 0);
          label23:
          if (var1 == null) {
             if (var7 == 0) {
-               var7 = XP_2.W(var6, var2, false);
+               var7 = (byte)((XP_2.W(var6, var2, false)) ? 1 : 0);
                if (var1 != null) {
                   break label23;
                }

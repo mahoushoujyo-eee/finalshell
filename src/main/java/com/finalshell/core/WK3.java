@@ -25,7 +25,7 @@ public class WK3 implements EU {
    public void z(int var1, byte[] var2, byte[] var3) throws Exception {
       int var10000 = (Y12.D()) ? 1 : 0;
       String var5 = a(3489, 19979);
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
 
       label61: {
          label65: {

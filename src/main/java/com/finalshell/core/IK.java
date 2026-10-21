@@ -20,7 +20,7 @@ public abstract class IK implements Wr4 {
       NL3 var4 = (NL3)r.get();
       char var5 = (Character)W.get();
       String var10000 = Nv4.o();
-      byte var6 = (var4.Y.containsKey(var2)) ? 1 : 0;
+      byte var6 = (byte)((var4.Y.containsKey(var2)) ? 1 : 0);
       String var3 = var10000;
       var4.A(var5, var1, var2);
       char var7 = (char)var6;

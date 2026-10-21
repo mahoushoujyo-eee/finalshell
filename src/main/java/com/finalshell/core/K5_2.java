@@ -3,7 +3,7 @@ package com.finalshell.core;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.listener.T22;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import com.finalshell.ui.panel.Ky4;
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -161,6 +161,7 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public boolean V() {
+      int var5;
       String var1 = com.finalshell.ui.panel.S.d();
       JTree var10000 = this.tree;
       if (var1 != null) {
@@ -202,7 +203,7 @@ public class K5_2 extends BasicTreeUI {
          var4 = this.tree.getTransferHandler();
       }
 
-      int var5 = var4.getSourceActions(this.tree);
+      var5 = var4.getSourceActions(this.tree);
       if (var1 == null) {
          return var5 != 0;
       } else {
@@ -359,14 +360,15 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public int v(Point var1, boolean var2) {
+      int var4;
       String var3 = com.finalshell.ui.panel.S.d();
       if (this.tree != null) {
-         int var4 = 0;
+         var4 = 0;
 
          while (var4 < this.tree.getRowCount()) {
             Rectangle var5 = this.C(var4, var2);
             if (var3 != null) {
-               byte var10000 = (var5.contains(var1)) ? 1 : 0;
+               byte var10000 = (byte)((var5.contains(var1)) ? 1 : 0);
                if (var3 == null) {
                   return var10000;
                }
@@ -396,10 +398,11 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public Rectangle A(int var1) {
+      Rectangle var5;
       String var10000 = com.finalshell.ui.panel.S.d();
       Rectangle var3 = this.tree.getRowBounds(var1);
       String var2 = var10000;
-      Rectangle var5 = var3;
+      var5 = var3;
       if (var2 != null) {
          if (var3 != null) {
             Insets var4 = this.tree.getInsets();
@@ -438,11 +441,12 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public boolean v(TreePath var1, int var2, int var3) {
+      com.finalshell.ui.panel.U3 var5;
       String var4 = com.finalshell.ui.panel.S.d();
       boolean var10000 = this.tree instanceof com.finalshell.ui.panel.U3;
       if (var4 != null) {
          if (var10000) {
-            com.finalshell.ui.panel.U3 var5 = (com.finalshell.ui.panel.U3)this.tree;
+            var5 = (com.finalshell.ui.panel.U3)this.tree;
             var10000 = var5.b();
             if (var4 != null) {
                if (var10000) {
@@ -666,6 +670,7 @@ public class K5_2 extends BasicTreeUI {
 
    @Override
    public void paint(Graphics var1, JComponent var2) {
+      Graphics2D var4;
       String var3 = com.finalshell.ui.panel.S.d();
       K5_2 var10000 = this;
       if (var3 != null) {
@@ -677,7 +682,7 @@ public class K5_2 extends BasicTreeUI {
       }
 
       if (var10000.treeState != null) {
-         Graphics2D var4 = (Graphics2D)var1;
+         var4 = (Graphics2D)var1;
          this.i(var4);
          this.N(var4);
          this.c(var4);
@@ -727,6 +732,8 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public void N(Graphics2D var1) {
+      K5_2 var4;
+      Rectangle var5;
       String var2 = com.finalshell.ui.panel.S.d();
       int var10000 = (this.tree.isEnabled()) ? 1 : 0;
       if (var2 != null) {
@@ -798,9 +805,12 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public void c(Graphics2D var1) {
+      K5_2 var21;
+      int var22;
+      TreePath var5;
       Rectangle var3 = var1.getClipBounds();
       Insets var4 = this.tree.getInsets();
-      TreePath var5 = this.getClosestPathForLocation(this.tree, 0, var3.y);
+      var5 = this.getClosestPathForLocation(this.tree, 0, var3.y);
       String var10000 = com.finalshell.ui.panel.S.d();
       Enumeration var6 = this.treeState.getVisiblePathsFrom(var5);
       int var7 = var3.y + var3.height;
@@ -825,7 +835,7 @@ public class K5_2 extends BasicTreeUI {
             }
 
             Rectangle var10 = new Rectangle();
-            byte var11 = (this.isRootVisible()) ? 1 : 0;
+            byte var11 = (byte)((this.isRootVisible()) ? 1 : 0);
             boolean var17 = false;
 
             while (!var17) {
@@ -901,8 +911,6 @@ public class K5_2 extends BasicTreeUI {
 
                                  var21.paintHorizontalPartOfLeg(var1, var3, var4, var15, var16, var8, var12, var13, var14);
                                  if (var2 != null) {
-      Rectangle var22;
-      Rectangle var22;
                                     break label131;
                                  }
                               }
@@ -924,7 +932,7 @@ public class K5_2 extends BasicTreeUI {
                               }
                            }
 
-                           var22 = this.shouldPaintExpandControl(var16, var8, var12, var13, var14);
+                           var22 = (this.shouldPaintExpandControl(var16, var8, var12, var13, var14)) ? 1 : 0;
                         }
 
                         if (var2 != null) {
@@ -967,6 +975,7 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public void o(Graphics2D var1) {
+      Color var5;
       String var10000 = com.finalshell.ui.panel.S.d();
       DropLocation var3 = this.tree.getDropLocation();
       String var2 = var10000;
@@ -983,7 +992,7 @@ public class K5_2 extends BasicTreeUI {
       K5_2 var11 = this;
       if (var2 != null) {
          if (this.isDropLine(var3)) {
-            Color var5 = (Color)Registry.lookupField(478965671994811590L).get(null);
+            var5 = (Color)Registry.lookupField(478965671994811590L).get(null);
             Color[] var6 = new Color[]{var5, var5, var5, var5};
             Rectangle var7 = this.getDropLineRect(var3);
             var1.setPaint(new LinearGradientPaint((float)var7.x, (float)var7.y, (float)(var7.x + var7.width), (float)var7.y, V, var6));
@@ -1011,6 +1020,7 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public void D(Graphics2D var1) {
+      Rectangle var5;
       String var2 = com.finalshell.ui.panel.S.d();
       K5_2 var10000 = this;
       if (var2 != null) {
@@ -1040,7 +1050,7 @@ public class K5_2 extends BasicTreeUI {
 
       Object var3 = var7;
       Stroke var4 = RV.M(var1, this.z);
-      Rectangle var5 = Rv4.t(new Point[]{this.n, this.q});
+      var5 = Rv4.t(new Point[]{this.n, this.q});
       Rectangle var6 = var5.intersection(FN.N(this.tree));
       var6.width--;
       var6.height--;
@@ -1058,7 +1068,7 @@ public class K5_2 extends BasicTreeUI {
       DropLocation var10000 = var1;
       if (var2 != null) {
          if (var1 == null) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var10000 = var1;
@@ -1066,7 +1076,7 @@ public class K5_2 extends BasicTreeUI {
 
       if (var2 != null) {
          if (var10000.getPath() == null) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var10000 = var1;
@@ -1074,21 +1084,23 @@ public class K5_2 extends BasicTreeUI {
 
       int var3 = var10000.getChildIndex();
       if (var2 == null) {
-         return (boolean)var3;
+         return var3 != 0;
       } else {
-         return (boolean)(var3 != -1 ? 1 : 0);
+         return (boolean)((var3 != -1 ? 1 : 0) != 0);
       }
    }
 
    @Override
    public Rectangle getDropLineRect(DropLocation var1) {
-      String var2;
+      long var21;
       Rectangle var4;
+      TreePath var5;
+      String var2;
       K5_2 var29;
       label102: {
          label105: {
             boolean var3 = false;
-            TreePath var5 = var1.getPath();
+            var5 = var1.getPath();
             int var6 = var1.getChildIndex();
             Point var7 = var1.getDropPoint();
             String var10000 = com.finalshell.ui.panel.S.d();
@@ -1116,7 +1128,7 @@ public class K5_2 extends BasicTreeUI {
                   label106: {
                      var4 = this.tree.getRowBounds(this.tree.getRowCount() - 1);
                      var4.y = var4.y + var4.height;
-                     int var28 = this.tree.isRootVisible();
+                     int var28 = (this.tree.isRootVisible()) ? 1 : 0;
                      if (var2 != null) {
                         if (var28 == 0) {
                            var13 = this.tree.getRowBounds(0);
@@ -1151,18 +1163,18 @@ public class K5_2 extends BasicTreeUI {
                var4 = this.tree.getPathBounds(var5.pathByAddingChild(var11.getChild(var5.getLastPathComponent(), var6)));
             }
 
-            var29 = this.tree.getClass().equals(Connection5.class);
+            var29 = this.tree.getClass().equals(ImportExportPanel.class);
             if (var2 == null) {
                break label102;
             }
 
             label78:
             if (var29 != null) {
-               Connection5 var25 = (Connection5)this.tree;
+               ImportExportPanel var25 = (ImportExportPanel)this.tree;
                var29 = this;
-               Object[] var10002 = Registry.packArgs(var7);
+               DefaultMutableTreeNode var10002 = (DefaultMutableTreeNode)(Registry.packArgs(var7));
                long var19 = 249787479061393778L;
-               Object[] var18 = var10002;
+               Object var18 = var10002;
                var10002 = Ref.h(249787479061393778L, var18, var19);
 
                try {
@@ -1184,8 +1196,8 @@ public class K5_2 extends BasicTreeUI {
                DefaultMutableTreeNode var26 = var10001;
                Object var15 = this.F.getUserObject();
                var10002 = Registry.packArgs(this.F);
-               long var21 = 137915523920596499L;
-               Object[] var20 = var10002;
+               var21 = 137915523920596499L;
+               Object var20 = var10002;
                var10002 = Ref.h(137915523920596499L, var20, var21);
 
                try {
@@ -1242,9 +1254,10 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public Rectangle A(TreePath var1, Insets var2, Rectangle var3) {
+      String var4;
       String var10000 = com.finalshell.ui.panel.S.d();
       var3 = this.treeState.getBounds(var1, var3);
-      String var4 = var10000;
+      var4 = var10000;
       Rectangle var6 = var3;
       if (var4 != null) {
          if (var3 != null) {
@@ -1269,13 +1282,14 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public Shape B(Rectangle var1, boolean var2) {
+      int var4;
       String var3 = com.finalshell.ui.panel.S.d();
-      int var10000 = var2;
+      int var10000 = (var2) ? 1 : 0;
       if (var3 != null) {
-         var10000 = var2 != 0 ? 1 : 0;
+         var10000 = var2 ? 1 : 0;
       }
 
-      int var4 = var10000;
+      var4 = var10000;
       return (Shape)(this.I > 0
          ? new Double(
             (double)(var1.x + var4),
@@ -1441,6 +1455,7 @@ public class K5_2 extends BasicTreeUI {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ -5998) & 65535;
       if (e[var2] == null) {
          char[] var3 = c[var2].toCharArray();
@@ -2215,7 +2230,7 @@ public class K5_2 extends BasicTreeUI {
                var10000 = 158;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -2255,6 +2270,8 @@ public class K5_2 extends BasicTreeUI {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      boolean var5;
       String[] var13 = new String[10];
       int var11 = 0;
       String var10 = "\"è\u008eH\u008b¤\u000fô¦\u0091`\b\u0013\u001a\u0094Þöö\fá¯Z\u008d.\u0081c\u00163\u0007Ça\u0013±-ð]Èz@Õ\u0091t\u009fn°?|Ó\u0089\u0083'\f\tßG\u0083\u008d@\u0017.½\u0000\u0016\u0081\u0012^à\u0001Iz\u00841ða\u0011\u0098\u0018\f\u0018w\u009e\u008aþ\u0010yÒå\u000fæL¤þ\t(\u0005\u0087\fhÁ0\u0010~Ä\u0005Íú\u0014'õyI\u000b«Ííù\u0080\u0014\u001c¬\u0000S\u0004[gcua\u0012H:#?\u0082\u0088@/\u0003";
@@ -2351,7 +2368,7 @@ public class K5_2 extends BasicTreeUI {
                      long[] var6 = new long[7];
                      int var3 = 0;
                      String var4 = "&Õ\u0087Öîio\u0099®K\u000eÊ\u001f\u0086\u0001:6\u009dáeÛ¤/Å\u009c\u0015ÈÓGi\u0013LíóÌ\u0094><T#";
-                     int var5 = "&Õ\u0087Öîio\u0099®K\u000eÊ\u001f\u0086\u0001:6\u009dáeÛ¤/Å\u009c\u0015ÈÓGi\u0013LíóÌ\u0094><T#".length();
+                     var5 = ("&Õ\u0087Öîio\u0099®K\u000eÊ\u001f\u0086\u0001:6\u009dáeÛ¤/Å\u009c\u0015ÈÓGi\u0013LíóÌ\u0094><T#".length()) != 0;
                      byte var2 = 0;
 
                      label44:
@@ -2398,7 +2415,7 @@ public class K5_2 extends BasicTreeUI {
                                  }
 
                                  var4 = "[\u009b\u0082W>Û²0.óÆ\u000bõ\u00ad\"{";
-                                 var5 = "[\u009b\u0082W>Û²0.óÆ\u000bõ\u00ad\"{".length();
+                                 var5 = ("[\u009b\u0082W>Û²0.óÆ\u000bõ\u00ad\"{".length()) != 0;
                                  var2 = 0;
                            }
 
@@ -2442,7 +2459,6 @@ public class K5_2 extends BasicTreeUI {
       }
    }
 }
-
 
 
 

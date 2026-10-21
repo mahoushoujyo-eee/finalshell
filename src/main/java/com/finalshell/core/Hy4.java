@@ -14,6 +14,7 @@ public class Hy4 extends W5 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      BufferedImage var6;
       String[] var10000 = W5.q();
       BufferedImage var4 = var1;
       String[] var3 = var10000;
@@ -29,8 +30,6 @@ public class Hy4 extends W5 {
             var4 = var6;
             var5++;
             if (var3 != null) {
-      BufferedImage var6;
-      BufferedImage var6;
                continue;
             }
          }
@@ -42,7 +41,6 @@ public class Hy4 extends W5 {
       return var6;
    }
 }
-
 
 
 

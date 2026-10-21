@@ -34,7 +34,8 @@ public final class DC {
    public static Integer[] f;
 
    public DC(Df2 var1, int var2) {
-      int[] var10000 = Nm4.g();
+      int[] var10000;
+      var10000 = Nm4.g();
       this.Q = new int[1];
       this.G = new int[1];
       this.H = new int[1];
@@ -54,7 +55,7 @@ public final class DC {
          var10001 = var1.T.y == 0 ? 0 : 1;
       }
 
-      this.z = (boolean)var10001;
+      this.z = var10001;
       this.N = 0;
       this.z();
    }
@@ -106,6 +107,7 @@ public final class DC {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public int S(int var1) {
+      int var9;
       int[] var2;
       int var4;
       int var5;
@@ -136,7 +138,7 @@ public final class DC {
          var39 -= var10001;
       }
 
-      int var9 = var39;
+      var9 = var39;
 
       label759: {
          label794: {
@@ -1258,8 +1260,10 @@ public final class DC {
    }
 
    public int C(int var1) {
+      int[] var10000;
+      int var6;
       int var4 = this.h.V;
-      int[] var10000 = Nm4.g();
+      var10000 = Nm4.g();
       int var5 = this.a;
       int[] var2 = var10000;
       int var7 = var5;
@@ -1323,7 +1327,6 @@ public final class DC {
                if (var2 == null) {
                   if (this.O == this.Z) {
       int[] var9;
-      int[] var9;
                      this.O = 0;
                   }
 
@@ -1346,7 +1349,6 @@ public final class DC {
             label75:
             if (var2 == null) {
                if (var9 != 0) {
-      int[] var9;
                   var9 = var1;
                   if (var2 != null) {
                      break label75;
@@ -1365,7 +1367,6 @@ public final class DC {
             label68:
             if (var2 == null) {
                if (var9 != 0) {
-      int[] var9;
                   var9 = var3;
                   if (var2 != null) {
                      break label68;
@@ -1397,6 +1398,7 @@ public final class DC {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ 25413) & 65535;
       if (d[var2] == null) {
          char[] var3 = c[var2].toCharArray();
@@ -2177,7 +2179,7 @@ public final class DC {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -2211,6 +2213,8 @@ public final class DC {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var35;
+      long[] var6;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "\u0013\n«\u008a?-s\u0084ºö\u007fôxsùãiC*\t2¯!ÕÙ1Ä37lÊÐSa¡\u0012\u008d'ßO\u008aôîï\u0000é(\u001aÕVÝÀmB";
@@ -2303,7 +2307,7 @@ public final class DC {
                      c = var13;
                      d = new String[4];
                      long var0 = 8615879035741064270L;
-                     long[] var6 = new long[59];
+                     var6 = new long[59];
                      int var3 = 0;
                      String var4 = "¦\u009bÔîÈ\u0016na¶8ÛP\u0011bèlï.ó\u00158\u0010\u0014òÖ\u0080·# \nY<~Ê\u0089¼\u009a\u008a¯/\u0084\\/y®ËQ\u0087\u0014Ìþ\u0092$ºµú/Aú«>).\u0010,«\u0002Ï\u0004\u009cÁÍP]s}ì\u0085\u0099Ä-~d\u0088Ééh9z\u0081\u0080òºkPÁÐÁ\u0013réï¿Çé\u0006²Dä_i(w\fÐQ¶#N\u0083\u009c´}¤\u0016 Äº\u009a\u001cwA\u008d\u0080Ê\u009fÇ«]S¾/$S\u000fù\u0087AÁ©·ÇK\u001fûe\u0011ñ[Æ\u008e£Ðåû½EÏ½\u008c¶$gÜ¸Bc\u0002\u009c\u0017Ì\u0007\u000fõ\u0096\u008cZ\u0084Ö<Ãv\u00ad´TÝÚ\u0015\u0005O¥Iê¨üKýZ15Äaö\u0088\u0095\u0080Hn\u0094Ý\u001fïô\u001bÖ\u0091LmrkÖ\u0014Y<»\u0017\u0091\nà5\tþ\u00adÛ\\H\u0014h\u000e(\u009fóß\u0006½ºbiòi®éÂ%\u00162dØ©ô\u009c\u0000\u008a¦¢³\u00036\"¼\u0080N³;Ð\u0094L\"\u001a\"Q\u0017\u009fÓó\u0015ã\u0082ò'\u001cý\u00031RV\u009bç0 ¯^= c÷ö\u001d¿\u009dn\u0091Ó\u007fF\u0089Ý\u001dà\u009f2²îëþ\u000eÞ\u0002±P[w\u0086Ëj=ë÷¦\u0006NlMSÈ(âk\u009dÔ}Ä\u0011Kgñ\u009f\u0087àªó\u0095\u001c¹aþØ¦FêWp\u0019(d³JSQ¬u\u0000\u009e\u0003Vl°çE\u0080\u0005Ø¾£ìy;ÎÏ¶Õ\u001fêÃ¸fÝeoÕ\r°^·\u0087ÿ|\u00adÂ£Ò\u0097rÝr]Oí\u009aÌH\u0091\u0094\u001cùà§¶ÀÔ§\\Ë¼û¸";
                      int var5 = "¦\u009bÔîÈ\u0016na¶8ÛP\u0011bèlï.ó\u00158\u0010\u0014òÖ\u0080·# \nY<~Ê\u0089¼\u009a\u008a¯/\u0084\\/y®ËQ\u0087\u0014Ìþ\u0092$ºµú/Aú«>).\u0010,«\u0002Ï\u0004\u009cÁÍP]s}ì\u0085\u0099Ä-~d\u0088Ééh9z\u0081\u0080òºkPÁÐÁ\u0013réï¿Çé\u0006²Dä_i(w\fÐQ¶#N\u0083\u009c´}¤\u0016 Äº\u009a\u001cwA\u008d\u0080Ê\u009fÇ«]S¾/$S\u000fù\u0087AÁ©·ÇK\u001fûe\u0011ñ[Æ\u008e£Ðåû½EÏ½\u008c¶$gÜ¸Bc\u0002\u009c\u0017Ì\u0007\u000fõ\u0096\u008cZ\u0084Ö<Ãv\u00ad´TÝÚ\u0015\u0005O¥Iê¨üKýZ15Äaö\u0088\u0095\u0080Hn\u0094Ý\u001fïô\u001bÖ\u0091LmrkÖ\u0014Y<»\u0017\u0091\nà5\tþ\u00adÛ\\H\u0014h\u000e(\u009fóß\u0006½ºbiòi®éÂ%\u00162dØ©ô\u009c\u0000\u008a¦¢³\u00036\"¼\u0080N³;Ð\u0094L\"\u001a\"Q\u0017\u009fÓó\u0015ã\u0082ò'\u001cý\u00031RV\u009bç0 ¯^= c÷ö\u001d¿\u009dn\u0091Ó\u007fF\u0089Ý\u001dà\u009f2²îëþ\u000eÞ\u0002±P[w\u0086Ëj=ë÷¦\u0006NlMSÈ(âk\u009dÔ}Ä\u0011Kgñ\u009f\u0087àªó\u0095\u001c¹aþØ¦FêWp\u0019(d³JSQ¬u\u0000\u009e\u0003Vl°çE\u0080\u0005Ø¾£ìy;ÎÏ¶Õ\u001fêÃ¸fÝeoÕ\r°^·\u0087ÿ|\u00adÂ£Ò\u0097rÝr]Oí\u009aÌH\u0091\u0094\u001cùà§¶ÀÔ§\\Ë¼û¸"
@@ -2430,8 +2434,6 @@ public final class DC {
       }
    }
 }
-
-
 
 
 

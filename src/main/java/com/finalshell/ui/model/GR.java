@@ -74,6 +74,7 @@ public class GR extends AbstractTableModel {
    }
 
    public int W(int var1) {
+      Integer var12;
       String[] var10000 = Y62_2.Z();
       Object var3 = -1;
       String[] var2 = var10000;
@@ -86,9 +87,9 @@ public class GR extends AbstractTableModel {
             YA3_2 var5 = (YA3_2)var4.next();
             var3++;
             var10001 = var5;
-            Object[] var10002 = Registry.emptyArgs();
+            Object var10002 = Registry.emptyArgs();
             long var9 = 579395555078289712L;
-            Object[] var8 = var10002;
+            Object var8 = var10002;
             var10002 = Ref.h(579395555078289712L, var8, var9);
 
             try {
@@ -128,7 +129,7 @@ public class GR extends AbstractTableModel {
             var10001 = var5;
             String var10002 = Registry.emptyArgs();
             long var9 = 271743078317072247L;
-            Object[] var8 = var10002;
+            Object var8 = var10002;
             var10002 = Ref.h(271743078317072247L, var8, var9);
 
             try {
@@ -170,6 +171,7 @@ public class GR extends AbstractTableModel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var0 = new String[5];
       int var4 = 0;
       String var3 = "佮罟\u0002竌叒\u0002丩休";
@@ -184,7 +186,6 @@ public class GR extends AbstractTableModel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label48: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

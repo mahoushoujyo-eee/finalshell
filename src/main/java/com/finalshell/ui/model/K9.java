@@ -1,16 +1,16 @@
 package com.finalshell.ui.model;
 
 import com.finalshell.core.Lv4_2;
-import com.finalshell.core.Yf2;
+import com.finalshell.core.ConnectionConfigStore;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class K9 implements Comparator {
-   public final Yf2 Y;
+   public final ConnectionConfigStore Y;
 
-   public K9(Yf2 var1) {
+   public K9(ConnectionConfigStore var1) {
       this.Y = var1;
    }
 
@@ -164,9 +164,9 @@ public class K9 implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((Lv4_2)var1, (Lv4_2)var2);
+      Object var10001 = Registry.packArgs((Lv4_2)var1, (Lv4_2)var2);
       long var4 = 369838979687248377L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(369838979687248377L, var3, var4);
 
       try {

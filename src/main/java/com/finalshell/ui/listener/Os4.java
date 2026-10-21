@@ -1,15 +1,15 @@
 package com.finalshell.ui.listener;
 
-import com.finalshell.connection.Copy;
+import com.finalshell.connection.CopyConnectionInfoAction;
 import com.finalshell.core.Y62_2;
 import com.finalshell.reflect.Ref;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Os4 implements MouseListener {
-   public final Copy T;
+   public final CopyConnectionInfoAction T;
 
-   public Os4(Copy var1) {
+   public Os4(CopyConnectionInfoAction var1) {
       this.T = var1;
    }
 

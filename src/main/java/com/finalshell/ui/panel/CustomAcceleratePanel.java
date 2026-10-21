@@ -4,7 +4,7 @@ import com.finalshell.core.F52;
 import com.finalshell.core.KV;
 import com.finalshell.core.Lv4_2;
 import com.finalshell.core.T32;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.dialog.C5;
@@ -27,7 +27,7 @@ import javax.swing.border.CompoundBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class CustomAcceleratePanel extends JPanel {
-   public static RouteTracePanel3 n;
+   public static RouteTraceAddressPanel n;
    public SystemInfoPanel z;
    public KV G;
    public String i;
@@ -48,6 +48,9 @@ public class CustomAcceleratePanel extends JPanel {
    public static Integer[] e;
 
    public CustomAcceleratePanel(C5 var1) {
+      long var34;
+      Object var45;
+      long var77;
       Registry.lookupField(299249922317273977L).set(null, var1);
       Registry.emptyArgs();
       long var13 = 270389152141252877L;
@@ -106,7 +109,7 @@ public class CustomAcceleratePanel extends JPanel {
       Registry.packArgs(a(-30332, 23726));
       long var31 = 309317109240719579L;
       Object var10011 = Ref.h2(309317109240719579L, var31);
-      long var34 = 595726637974712292L;
+      var34 = 595726637974712292L;
       Object var33 = var10011;
       Ref.s(595726637974712292L, var33, var34);
       Object var35 = 595726637974712292L;
@@ -122,7 +125,7 @@ public class CustomAcceleratePanel extends JPanel {
       long var43 = 309317109240719579L;
       Object var10017 = Ref.h2(309317109240719579L, var43);
       long var46 = 323808653284443090L;
-      Object var45 = var10017;
+      var45 = var10017;
       Ref.s(323808653284443090L, var45, var46);
       Object var47 = 323808653284443090L;
       ((JButton)Ref.g(323808653284443090L, var47)).setFont((Font)Registry.lookupField(593752358540399204L).get(null));
@@ -164,7 +167,7 @@ public class CustomAcceleratePanel extends JPanel {
       ((JPanel)Ref.g(280328572906019845L, var75)).setBorder(null);
       Image var11 = (Image)Registry.lookupField(582605604039442414L).get(null);
       Registry.packArgs(a(-30315, -3696));
-      long var77 = 309317109240719579L;
+      var77 = 309317109240719579L;
       Object var10035 = Ref.h2(309317109240719579L, var77);
       long var80 = 466614086835737479L;
       Object var79 = var10035;
@@ -241,14 +244,15 @@ public class CustomAcceleratePanel extends JPanel {
          throw var123.getTargetException();
       }
 
-      Registry.lookupField(466136119654778712L).set(null, new RouteTracePanel3());
-      this.add((RouteTracePanel3)Registry.lookupField(466136119654778712L).get(null), a(-30335, 32312), 0);
+      Registry.lookupField(466136119654778712L).set(null, new RouteTraceAddressPanel());
+      this.add((RouteTraceAddressPanel)Registry.lookupField(466136119654778712L).get(null), a(-30335, 32312), 0);
       if (this == null) {
          Ky4.K(new String[2]);
       }
    }
 
    public void j(boolean var1) {
+      boolean var27;
       label34: {
          Ky4[] var2 = N();
          if (var2 != null) {
@@ -286,9 +290,9 @@ public class CustomAcceleratePanel extends JPanel {
       long var20 = 163462326892114024L;
       Object[] var19 = var10003;
       Ref.h(163462326892114024L, var19, var20);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var22 = 133802226692684648L;
-      Object[] var21 = var10004;
+      Object var21 = var10004;
       var10004 = Ref.h(133802226692684648L, var21, var22);
 
       try {
@@ -304,6 +308,7 @@ public class CustomAcceleratePanel extends JPanel {
    }
 
    public static void i(KV var0, String var1) {
+      long var27;
       Registry.emptyArgs();
       long var6 = 270389152141252877L;
       Ref.h2(270389152141252877L, var6);
@@ -315,22 +320,22 @@ public class CustomAcceleratePanel extends JPanel {
       long var11 = 240567170779145617L;
       Object[] var10 = var10003;
       Ref.h(240567170779145617L, var10, var11);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var13 = 226341449505323490L;
-      Object[] var12 = var10004;
+      Object var12 = var10004;
       var10004 = Ref.h(226341449505323490L, var12, var13);
 
       try {
-         var10004 = (com.finalshell.ui.frame.U)var10004;
+         var10004 = (com.finalshell.ui.frame.MainFrame)var10004;
       } catch (InvocationTargetException var33) {
          throw var33.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var3 = var10004;
+      com.finalshell.ui.frame.MainFrame var3 = var10004;
       N();
       ConnectionProperty var10006 = (ConnectionProperty)(Registry.emptyArgs());
       long var15 = 179934491990092343L;
-      Object[] var14 = var10006;
+      Object var14 = var10006;
       var10006 = Ref.h(179934491990092343L, var14, var15);
 
       try {
@@ -345,11 +350,11 @@ public class CustomAcceleratePanel extends JPanel {
       if (var4 == null) {
          var10006 = Registry.emptyArgs();
          long var17 = 559196035657690421L;
-         Object[] var16 = var10006;
+         Object var16 = var10006;
          var10006 = Ref.h(559196035657690421L, var16, var17);
 
          try {
-            var10006 = (Ty2)var10006;
+            var10006 = (RemoteProcessManager)var10006;
          } catch (InvocationTargetException var31) {
             throw var31.getTargetException();
          }
@@ -373,7 +378,7 @@ public class CustomAcceleratePanel extends JPanel {
 
          ConnectionProperty var41 = (ConnectionProperty)(Registry.emptyArgs());
          long var21 = 301663738912746359L;
-         Object[] var20 = var41;
+         Object var20 = var41;
          var41 = Ref.h(301663738912746359L, var20, var21);
 
          try {
@@ -410,7 +415,7 @@ public class CustomAcceleratePanel extends JPanel {
             long var25 = 286931176286176762L;
             Object[] var24 = var10009;
             Object[] var10008 = Registry.packArgs(var5, Ref.h(286931176286176762L, var24, var25));
-            long var27 = 407547220859876749L;
+            var27 = 407547220859876749L;
             Object[] var26 = var10008;
             Ref.h(407547220859876749L, var26, var27);
 
@@ -426,6 +431,10 @@ public class CustomAcceleratePanel extends JPanel {
    }
 
    public static void i(String var0) {
+      long var27;
+      Object[] var34;
+      long var45;
+      boolean var77;
       Ky4[] var1 = N();
       Registry.emptyArgs();
       long var10 = 270389152141252877L;
@@ -442,9 +451,9 @@ public class CustomAcceleratePanel extends JPanel {
          long var13 = 163462326892114024L;
          Object[] var12 = var10002;
          Ref.h(163462326892114024L, var12, var13);
-         Object[] var10003 = Registry.emptyArgs();
+         Object var10003 = Registry.emptyArgs();
          long var15 = 633712494917113170L;
-         Object[] var14 = var10003;
+         Object var14 = var10003;
          var10003 = Ref.h(633712494917113170L, var14, var15);
 
          try {
@@ -488,21 +497,21 @@ public class CustomAcceleratePanel extends JPanel {
       long var25 = 240567170779145617L;
       Object[] var24 = var78;
       Ref.h(240567170779145617L, var24, var25);
-      Object[] var10004 = Registry.emptyArgs();
-      long var27 = 226341449505323490L;
-      Object[] var26 = var10004;
+      Object var10004 = Registry.emptyArgs();
+      var27 = 226341449505323490L;
+      Object var26 = var10004;
       var10004 = Ref.h(226341449505323490L, var26, var27);
 
       try {
-         var10004 = (com.finalshell.ui.frame.U)var10004;
+         var10004 = (com.finalshell.ui.frame.MainFrame)var10004;
       } catch (InvocationTargetException var71) {
          throw var71.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var2 = var10004;
+      com.finalshell.ui.frame.MainFrame var2 = var10004;
       ConnectionProperty var10005 = (ConnectionProperty)(Registry.emptyArgs());
       long var29 = 179934491990092343L;
-      Object[] var28 = var10005;
+      Object var28 = var10005;
       var10005 = Ref.h(179934491990092343L, var28, var29);
 
       try {
@@ -522,7 +531,7 @@ public class CustomAcceleratePanel extends JPanel {
          Ref.h(410905379772103887L, var32, var33);
          Lv4_2 var10008 = (Lv4_2)(Registry.packArgs(var0));
          long var35 = 343419559142469673L;
-         Object[] var34 = var10008;
+         var34 = var10008;
          var10008 = Ref.h(343419559142469673L, var34, var35);
 
          try {
@@ -535,7 +544,7 @@ public class CustomAcceleratePanel extends JPanel {
          if (var5 != null) {
             AM var10009 = (AM)(Registry.emptyArgs());
             long var37 = 303756590022481369L;
-            Object[] var36 = var10009;
+            Object var36 = var10009;
             var10009 = Ref.h(303756590022481369L, var36, var37);
 
             try {
@@ -547,7 +556,7 @@ public class CustomAcceleratePanel extends JPanel {
             AM var6 = var10009;
             T32 var10010 = (T32)(Registry.packArgs(var0));
             long var39 = 259592583851616584L;
-            Object[] var38 = var10010;
+            Object var38 = var10010;
             var10010 = Ref.h(259592583851616584L, var38, var39);
 
             try {
@@ -594,7 +603,7 @@ public class CustomAcceleratePanel extends JPanel {
                      Object[] var42 = var91;
                      Ref.h(194560825135347400L, var42, var43);
                      Object[] var10012 = Registry.emptyArgs();
-                     long var45 = 424156930953488367L;
+                     var45 = 424156930953488367L;
                      Object[] var44 = var10012;
                      Ref.h(424156930953488367L, var44, var45);
 
@@ -609,7 +618,7 @@ public class CustomAcceleratePanel extends JPanel {
                   if (var1 == null || var8 != null) {
                      ConnectionProperty var92 = (ConnectionProperty)(Registry.emptyArgs());
                      long var47 = 595556246051364370L;
-                     Object[] var46 = var92;
+                     Object var46 = var92;
                      var92 = Ref.h(595556246051364370L, var46, var47);
 
                      try {
@@ -647,7 +656,7 @@ public class CustomAcceleratePanel extends JPanel {
                new StringBuilder().append(a(-30308, -10364));
                String var10016 = (String)(Registry.emptyArgs());
                long var53 = 286931176286176762L;
-               Object[] var52 = var10016;
+               Object var52 = var10016;
                var10016 = Ref.h(286931176286176762L, var52, var53);
 
                try {
@@ -669,7 +678,7 @@ public class CustomAcceleratePanel extends JPanel {
 
                var10016 = Registry.emptyArgs();
                long var57 = 176235325809488947L;
-               Object[] var56 = var10016;
+               Object var56 = var10016;
                Ref.h(176235325809488947L, var56, var57);
 
                try {
@@ -685,6 +694,8 @@ public class CustomAcceleratePanel extends JPanel {
    }
 
    public static void c() {
+      Object[] var27;
+      boolean var45;
       Ky4[] var0 = N();
       Registry.emptyArgs();
       long var5 = 270389152141252877L;
@@ -701,9 +712,9 @@ public class CustomAcceleratePanel extends JPanel {
          long var8 = 163462326892114024L;
          Object[] var7 = var10002;
          Ref.h(163462326892114024L, var7, var8);
-         Object[] var10003 = Registry.emptyArgs();
+         Object var10003 = Registry.emptyArgs();
          long var10 = 133802226692684648L;
-         Object[] var9 = var10003;
+         Object var9 = var10003;
          var10003 = Ref.h(133802226692684648L, var9, var10);
 
          try {
@@ -747,21 +758,21 @@ public class CustomAcceleratePanel extends JPanel {
       long var20 = 240567170779145617L;
       Object[] var19 = var46;
       Ref.h(240567170779145617L, var19, var20);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var22 = 226341449505323490L;
-      Object[] var21 = var10004;
+      Object var21 = var10004;
       var10004 = Ref.h(226341449505323490L, var21, var22);
 
       try {
-         var10004 = (com.finalshell.ui.frame.U)var10004;
+         var10004 = (com.finalshell.ui.frame.MainFrame)var10004;
       } catch (InvocationTargetException var39) {
          throw var39.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var1 = var10004;
+      com.finalshell.ui.frame.MainFrame var1 = var10004;
       ConnectionProperty var10005 = (ConnectionProperty)(Registry.emptyArgs());
       long var24 = 179934491990092343L;
-      Object[] var23 = var10005;
+      Object var23 = var10005;
       var10005 = Ref.h(179934491990092343L, var23, var24);
 
       try {
@@ -785,7 +796,7 @@ public class CustomAcceleratePanel extends JPanel {
 
          Object[] var10007 = Registry.emptyArgs();
          long var28 = 517277241396583737L;
-         Object[] var27 = var10007;
+         var27 = var10007;
          Ref.h(517277241396583737L, var27, var28);
 
          try {
@@ -821,6 +832,10 @@ public class CustomAcceleratePanel extends JPanel {
    }
 
    public static void O(String var0) {
+      long var27;
+      Object[] var34;
+      long var45;
+      boolean var77;
       Ky4[] var1 = N();
       Registry.emptyArgs();
       long var10 = 270389152141252877L;
@@ -837,9 +852,9 @@ public class CustomAcceleratePanel extends JPanel {
          long var13 = 163462326892114024L;
          Object[] var12 = var10002;
          Ref.h(163462326892114024L, var12, var13);
-         Object[] var10003 = Registry.emptyArgs();
+         Object var10003 = Registry.emptyArgs();
          long var15 = 133802226692684648L;
-         Object[] var14 = var10003;
+         Object var14 = var10003;
          var10003 = Ref.h(133802226692684648L, var14, var15);
 
          try {
@@ -883,21 +898,21 @@ public class CustomAcceleratePanel extends JPanel {
       long var25 = 240567170779145617L;
       Object[] var24 = var78;
       Ref.h(240567170779145617L, var24, var25);
-      Object[] var10004 = Registry.emptyArgs();
-      long var27 = 226341449505323490L;
-      Object[] var26 = var10004;
+      Object var10004 = Registry.emptyArgs();
+      var27 = 226341449505323490L;
+      Object var26 = var10004;
       var10004 = Ref.h(226341449505323490L, var26, var27);
 
       try {
-         var10004 = (com.finalshell.ui.frame.U)var10004;
+         var10004 = (com.finalshell.ui.frame.MainFrame)var10004;
       } catch (InvocationTargetException var71) {
          throw var71.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var2 = var10004;
+      com.finalshell.ui.frame.MainFrame var2 = var10004;
       ConnectionProperty var10005 = (ConnectionProperty)(Registry.emptyArgs());
       long var29 = 179934491990092343L;
-      Object[] var28 = var10005;
+      Object var28 = var10005;
       var10005 = Ref.h(179934491990092343L, var28, var29);
 
       try {
@@ -917,7 +932,7 @@ public class CustomAcceleratePanel extends JPanel {
          Ref.h(410905379772103887L, var32, var33);
          Lv4_2 var10008 = (Lv4_2)(Registry.packArgs(var0));
          long var35 = 343419559142469673L;
-         Object[] var34 = var10008;
+         var34 = var10008;
          var10008 = Ref.h(343419559142469673L, var34, var35);
 
          try {
@@ -930,7 +945,7 @@ public class CustomAcceleratePanel extends JPanel {
          if (var5 != null) {
             AM var10009 = (AM)(Registry.emptyArgs());
             long var37 = 303756590022481369L;
-            Object[] var36 = var10009;
+            Object var36 = var10009;
             var10009 = Ref.h(303756590022481369L, var36, var37);
 
             try {
@@ -942,7 +957,7 @@ public class CustomAcceleratePanel extends JPanel {
             AM var6 = var10009;
             T32 var10010 = (T32)(Registry.packArgs(var0));
             long var39 = 616305670692343673L;
-            Object[] var38 = var10010;
+            Object var38 = var10010;
             var10010 = Ref.h(616305670692343673L, var38, var39);
 
             try {
@@ -989,7 +1004,7 @@ public class CustomAcceleratePanel extends JPanel {
                      Object[] var42 = var91;
                      Ref.h(194560825135347400L, var42, var43);
                      Object[] var10012 = Registry.emptyArgs();
-                     long var45 = 424156930953488367L;
+                     var45 = 424156930953488367L;
                      Object[] var44 = var10012;
                      Ref.h(424156930953488367L, var44, var45);
 
@@ -1004,7 +1019,7 @@ public class CustomAcceleratePanel extends JPanel {
                   if (var1 == null || var8 != null) {
                      ConnectionProperty var92 = (ConnectionProperty)(Registry.emptyArgs());
                      long var47 = 595556246051364370L;
-                     Object[] var46 = var92;
+                     Object var46 = var92;
                      var92 = Ref.h(595556246051364370L, var46, var47);
 
                      try {
@@ -1042,7 +1057,7 @@ public class CustomAcceleratePanel extends JPanel {
                new StringBuilder().append(a(-30319, 8343));
                String var10016 = (String)(Registry.emptyArgs());
                long var53 = 286931176286176762L;
-               Object[] var52 = var10016;
+               Object var52 = var10016;
                var10016 = Ref.h(286931176286176762L, var52, var53);
 
                try {
@@ -1064,7 +1079,7 @@ public class CustomAcceleratePanel extends JPanel {
 
                var10016 = Registry.emptyArgs();
                long var57 = 176235325809488947L;
-               Object[] var56 = var10016;
+               Object var56 = var10016;
                Ref.h(176235325809488947L, var56, var57);
 
                try {
@@ -1080,6 +1095,10 @@ public class CustomAcceleratePanel extends JPanel {
    }
 
    public static void l(KV var0, String var1) {
+      Object[] var27;
+      long var34;
+      Object[] var45;
+      boolean var81;
       Ky4[] var2 = N();
       Registry.emptyArgs();
       long var11 = 270389152141252877L;
@@ -1096,9 +1115,9 @@ public class CustomAcceleratePanel extends JPanel {
          long var14 = 163462326892114024L;
          Object[] var13 = var10002;
          Ref.h(163462326892114024L, var13, var14);
-         Object[] var10003 = Registry.emptyArgs();
+         Object var10003 = Registry.emptyArgs();
          long var16 = 633712494917113170L;
-         Object[] var15 = var10003;
+         Object var15 = var10003;
          var10003 = Ref.h(633712494917113170L, var15, var16);
 
          try {
@@ -1120,21 +1139,21 @@ public class CustomAcceleratePanel extends JPanel {
                long var26 = 240567170779145617L;
                Object[] var25 = var10006;
                Ref.h(240567170779145617L, var25, var26);
-               Object[] var10007 = Registry.emptyArgs();
+               Object var10007 = Registry.emptyArgs();
                long var28 = 226341449505323490L;
-               Object[] var27 = var10007;
+               var27 = var10007;
                var10007 = Ref.h(226341449505323490L, var27, var28);
 
                try {
-                  var10007 = (com.finalshell.ui.frame.U)var10007;
+                  var10007 = (com.finalshell.ui.frame.MainFrame)var10007;
                } catch (InvocationTargetException var74) {
                   throw var74.getTargetException();
                }
 
-               com.finalshell.ui.frame.U var3 = var10007;
+               com.finalshell.ui.frame.MainFrame var3 = var10007;
                ConnectionProperty var10008 = (ConnectionProperty)(Registry.emptyArgs());
                long var30 = 179934491990092343L;
-               Object[] var29 = var10008;
+               Object var29 = var10008;
                var10008 = Ref.h(179934491990092343L, var29, var30);
 
                try {
@@ -1149,12 +1168,12 @@ public class CustomAcceleratePanel extends JPanel {
                   long var31 = 270389152141252877L;
                   Ref.h2(270389152141252877L, var31);
                   Object[] var10010 = Registry.emptyArgs();
-                  long var34 = 410905379772103887L;
+                  var34 = 410905379772103887L;
                   Object[] var33 = var10010;
                   Ref.h(410905379772103887L, var33, var34);
                   Lv4_2 var10011 = (Lv4_2)(Registry.packArgs(var1));
                   long var36 = 343419559142469673L;
-                  Object[] var35 = var10011;
+                  Object var35 = var10011;
                   var10011 = Ref.h(343419559142469673L, var35, var36);
 
                   try {
@@ -1178,7 +1197,7 @@ public class CustomAcceleratePanel extends JPanel {
 
                      T32 var10013 = (T32)(Registry.packArgs(var1));
                      long var40 = 536963842591527722L;
-                     Object[] var39 = var10013;
+                     Object var39 = var10013;
                      var10013 = Ref.h(536963842591527722L, var39, var40);
 
                      try {
@@ -1221,7 +1240,7 @@ public class CustomAcceleratePanel extends JPanel {
                               Ref.h(194560825135347400L, var43, var44);
                               F8 var10015 = (F8)(Registry.emptyArgs());
                               long var46 = 424156930953488367L;
-                              Object[] var45 = var10015;
+                              var45 = var10015;
                               var10015 = Ref.h(424156930953488367L, var45, var46);
 
                               try {
@@ -1234,7 +1253,7 @@ public class CustomAcceleratePanel extends JPanel {
                               if (var2 == null || var9 != null) {
                                  ConnectionProperty var10016 = (ConnectionProperty)(Registry.emptyArgs());
                                  long var48 = 595556246051364370L;
-                                 Object[] var47 = var10016;
+                                 Object var47 = var10016;
                                  var10016 = Ref.h(595556246051364370L, var47, var48);
 
                                  try {
@@ -1276,7 +1295,7 @@ public class CustomAcceleratePanel extends JPanel {
                            new StringBuilder().append(a(-30329, 31290));
                            String var10018 = (String)(Registry.emptyArgs());
                            long var54 = 286931176286176762L;
-                           Object[] var53 = var10018;
+                           Object var53 = var10018;
                            var10018 = Ref.h(286931176286176762L, var53, var54);
 
                            try {
@@ -1298,7 +1317,7 @@ public class CustomAcceleratePanel extends JPanel {
 
                            var10018 = Registry.emptyArgs();
                            long var58 = 176235325809488947L;
-                           Object[] var57 = var10018;
+                           Object var57 = var10018;
                            Ref.h(176235325809488947L, var57, var58);
 
                            try {
@@ -1369,22 +1388,22 @@ public class CustomAcceleratePanel extends JPanel {
       long var15 = 240567170779145617L;
       Object[] var14 = var10005;
       Ref.h(240567170779145617L, var14, var15);
-      Object[] var10006 = Registry.emptyArgs();
+      Object var10006 = Registry.emptyArgs();
       long var17 = 402818413346430437L;
-      Object[] var16 = var10006;
+      Object var16 = var10006;
       var10006 = Ref.h(402818413346430437L, var16, var17);
 
       try {
-         var10006 = (com.finalshell.ui.frame.U)var10006;
+         var10006 = (com.finalshell.ui.frame.MainFrame)var10006;
       } catch (InvocationTargetException var53) {
          throw var53.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var4 = var10006;
+      com.finalshell.ui.frame.MainFrame var4 = var10006;
       if (this == null || var4 != null) {
          F8 var10007 = (F8)(Registry.emptyArgs());
          long var19 = 345201862285199517L;
-         Object[] var18 = var10007;
+         Object var18 = var10007;
          var10007 = Ref.h(345201862285199517L, var18, var19);
 
          try {
@@ -2326,6 +2345,9 @@ public class CustomAcceleratePanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte var27;
+      char[] var34;
+      String var45;
       String[] var13 = new String[28];
       Ky4[] var10000 = new Ky4[4];
       int var11 = 0;
@@ -2343,7 +2365,6 @@ public class CustomAcceleratePanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      Object[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;
@@ -2414,7 +2435,7 @@ public class CustomAcceleratePanel extends JPanel {
                }
             }
 
-            String var45 = new String(var34).intern();
+            var45 = new String(var34).intern();
             switch (var10002) {
                case 0:
                   var13[var11++] = var45;
@@ -2431,7 +2452,7 @@ public class CustomAcceleratePanel extends JPanel {
 
                      label44:
                      while (true) {
-                        byte var27 = var2;
+                        var27 = var2;
                         var2 += 8;
                         byte[] var7 = var4.substring(var27, var2).getBytes("ISO-8859-1");
                         long[] var20 = var6;

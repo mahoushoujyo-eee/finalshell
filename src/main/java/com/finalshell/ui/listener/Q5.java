@@ -20,6 +20,7 @@ public class Q5 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      Integer var35;
       Object var6 = 158542760097367785L;
       Ref.g(158542760097367785L, var6);
       Object var8 = 342129762932297171L;
@@ -34,7 +35,7 @@ public class Q5 implements ActionListener {
       Ref.g(435109479173232140L, var16);
       ArrayList var10007 = Registry.emptyArgs();
       long var19 = 245965692335108743L;
-      Object[] var18 = var10007;
+      Object var18 = var10007;
       var10007 = Ref.h(245965692335108743L, var18, var19);
 
       try {
@@ -46,7 +47,7 @@ public class Q5 implements ActionListener {
       LI3_2 var4 = (LI3_2)var10007.get(var3);
       U82 var10008 = (U82)(Registry.emptyArgs());
       long var21 = 382054480216091309L;
-      Object[] var20 = var10008;
+      Object var20 = var10008;
       var10008 = Ref.h(382054480216091309L, var20, var21);
 
       try {
@@ -57,9 +58,9 @@ public class Q5 implements ActionListener {
 
       U82 var5 = var10008;
       new StringBuilder();
-      Object[] var10010 = Registry.emptyArgs();
+      Object var10010 = Registry.emptyArgs();
       long var23 = 340521912883652737L;
-      Object[] var22 = var10010;
+      Object var22 = var10010;
       var10010 = Ref.h(340521912883652737L, var22, var23);
 
       try {

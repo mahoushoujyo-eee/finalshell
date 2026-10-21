@@ -12,10 +12,10 @@ import com.finalshell.ui.listener.LW3;
 import com.finalshell.ui.listener.X82;
 import com.finalshell.ui.listener.YW3;
 import com.finalshell.ui.panel.AA;
-import com.finalshell.ui.panel.Edit;
+import com.finalshell.ui.panel.ProxySelectionPanel;
 import com.finalshell.ui.panel.Ky4;
-import com.finalshell.ui.panel.PublicKey;
-import com.finalshell.ui.panel.Reconnect;
+import com.finalshell.ui.panel.ConnectionEditorPanel;
+import com.finalshell.ui.panel.ReconnectSettingsPanel;
 import com.finalshell.ui.panel.TerminalHint;
 import com.finalshell.ui.panel.TunnelList;
 import com.finalshell.ui.panel.Z7;
@@ -52,7 +52,7 @@ public class Km4 extends JFrame {
    public boolean g;
    public DefaultMutableTreeNode V;
    public DefaultMutableTreeNode C;
-   public Edit t;
+   public ProxySelectionPanel t;
    public DefaultMutableTreeNode c;
    public TunnelList F;
    public TerminalHint h;
@@ -63,6 +63,9 @@ public class Km4 extends JFrame {
    public static Integer[] e;
 
    public Km4(String var1, KQ var2, Window var3, Lv4_2 var4, DefaultMutableTreeNode var5) {
+      super();
+      Object[] var30;
+      long var41;
       ArrayList var10001 = new ArrayList();
       long var21 = 282174882298955991L;
       ArrayList var20 = var10001;
@@ -84,7 +87,7 @@ public class Km4 extends JFrame {
          if (var2 != null) {
             Object[] var10006 = Registry.packArgs(true);
             long var31 = 480031414946709658L;
-            Object[] var30 = var10006;
+            var30 = var10006;
             Ref.h(480031414946709658L, var30, var31);
 
             try {
@@ -118,8 +121,8 @@ public class Km4 extends JFrame {
                Object var38 = 193644890840143673L;
                Object var10009 = Ref.g(193644890840143673L, var38);
                String var10010 = (String)(Registry.emptyArgs());
-               long var41 = 286931176286176762L;
-               Object[] var40 = var10010;
+               var41 = 286931176286176762L;
+               Object var40 = var10010;
                var10010 = Ref.h(286931176286176762L, var40, var41);
 
                try {
@@ -134,7 +137,7 @@ public class Km4 extends JFrame {
                Ref.h2(270389152141252877L, var42);
                var10010 = Registry.emptyArgs();
                long var45 = 271043866899908885L;
-               Object[] var44 = var10010;
+               Object var44 = var10010;
                Ref.h(271043866899908885L, var44, var45);
                Object var46 = 193644890840143673L;
                Ref.g(193644890840143673L, var46);
@@ -186,10 +189,10 @@ public class Km4 extends JFrame {
       long var67 = 631372995965003737L;
       Z8 var66 = var247;
       Ref.s(631372995965003737L, var66, var67);
-      PublicKey var10014;
+      ConnectionEditorPanel var10014;
       Object var68 = 439712263545556590L;
-      super((String)Ref.g(439712263545556590L, var68), Registry.lookupField(423197961904551339L).getBoolean(this));
-      PublicKey var8 = var10014;
+      // [VF-super] super((String)Ref.g(439712263545556590L, var68), Registry.lookupField(423197961904551339L).getBoolean(this));
+      ConnectionEditorPanel var8 = var10014;
       Object var70 = 282174882298955991L;
       ((ArrayList)Ref.g(282174882298955991L, var70)).add(var8);
       Object var72 = 631372995965003737L;
@@ -205,7 +208,7 @@ public class Km4 extends JFrame {
          throw var236.getTargetException();
       }
 
-      Reconnect var9 = new Reconnect();
+      ReconnectSettingsPanel var9 = new ReconnectSettingsPanel();
       Object var76 = 282174882298955991L;
       ((ArrayList)Ref.g(282174882298955991L, var76)).add(var9);
       Object var78 = 631372995965003737L;
@@ -319,14 +322,14 @@ public class Km4 extends JFrame {
       Ref.s(140172852301764786L, var114, var115);
       Object var116 = 140172852301764786L;
       this.add((DefaultMutableTreeNode)Ref.g(140172852301764786L, var116));
-      Edit var10039 = new Edit();
+      ProxySelectionPanel var10039 = new ProxySelectionPanel();
       long var119 = 535177121277639390L;
-      Edit var118 = var10039;
+      ProxySelectionPanel var118 = var10039;
       Ref.s(535177121277639390L, var118, var119);
       Object var120 = 282174882298955991L;
       ArrayList var10040 = (ArrayList)Ref.g(282174882298955991L, var120);
       Object var122 = 535177121277639390L;
-      this.add((Edit)Ref.g(535177121277639390L, var122));
+      this.add((ProxySelectionPanel)Ref.g(535177121277639390L, var122));
       Object var124 = 631372995965003737L;
       Ref.g(631372995965003737L, var124);
       Object var126 = 535177121277639390L;
@@ -531,7 +534,7 @@ public class Km4 extends JFrame {
          throw var221.getTargetException();
       }
 
-      Object[] var251;
+      Object var251;
       label276: {
          if (this == null) {
             if (var249 == null) {
@@ -548,15 +551,15 @@ public class Km4 extends JFrame {
             Ref.h(634817973682994708L, var208, var209);
             Km4 var10074 = Registry.emptyArgs();
             long var211 = 240567170779145617L;
-            Object[] var210 = var10074;
+            Object var210 = var10074;
             var10074 = (Km4)Ref.h(240567170779145617L, var210, var211);
-            U var254 = (U)(Registry.emptyArgs());
+            MainFrame var254 = (MainFrame)(Registry.emptyArgs());
             long var213 = 402818413346430437L;
-            Object[] var212 = var254;
+            Object var212 = var254;
             var254 = Ref.h(402818413346430437L, var212, var213);
 
             try {
-               var254 = (U)var254;
+               var254 = (MainFrame)var254;
             } catch (InvocationTargetException var220) {
                throw var220.getTargetException();
             }
@@ -568,7 +571,7 @@ public class Km4 extends JFrame {
 
             var254 = Registry.packArgs(true);
             long var215 = 433716955203722428L;
-            Object[] var214 = var254;
+            Object var214 = var254;
             Ref.h(433716955203722428L, var214, var215);
 
             try {
@@ -626,6 +629,7 @@ public class Km4 extends JFrame {
 
    @Override
    public void setVisible(boolean var1) {
+      long var30;
       int var2 = Z7.M();
       if (var2 == 0) {
          super.setVisible(var1);
@@ -698,7 +702,7 @@ public class Km4 extends JFrame {
       Object var27 = 535177121277639390L;
       Ref.g(535177121277639390L, var27);
       Object[] var10002 = Registry.emptyArgs();
-      long var30 = 598662538376324278L;
+      var30 = 598662538376324278L;
       Object[] var29 = var10002;
       Ref.h(598662538376324278L, var29, var30);
 
@@ -710,6 +714,7 @@ public class Km4 extends JFrame {
    }
 
    public boolean w() {
+      boolean var41;
       long var10 = 192015943206609872L;
       Object var9 = null;
       Ref.s(192015943206609872L, var9, var10);
@@ -727,7 +732,7 @@ public class Km4 extends JFrame {
             var10002 = var5;
             Vg2 var10003 = (Vg2)(Registry.emptyArgs());
             long var14 = 276413420287290174L;
-            Object[] var13 = var10003;
+            Object var13 = var10003;
             var10003 = Ref.h(276413420287290174L, var13, var14);
 
             try {
@@ -737,9 +742,9 @@ public class Km4 extends JFrame {
             }
 
             Vg2 var6 = var10003;
-            Object[] var10004 = Registry.emptyArgs();
+            Object var10004 = Registry.emptyArgs();
             long var16 = 192561546377353250L;
-            Object[] var15 = var10004;
+            Object var15 = var10004;
             var10004 = Ref.h(192561546377353250L, var15, var16);
 
             try {
@@ -778,7 +783,7 @@ public class Km4 extends JFrame {
                   while (true) {
                      ArrayList var37 = (ArrayList)(Registry.emptyArgs());
                      long var18 = 387830385623632083L;
-                     Object[] var17 = var37;
+                     Object var17 = var37;
                      var37 = Ref.h(387830385623632083L, var17, var18);
 
                      try {
@@ -840,7 +845,7 @@ public class Km4 extends JFrame {
             Object var43 = Ref.g(192015943206609872L, var23);
             ArrayList var10005 = (ArrayList)(Registry.emptyArgs());
             long var26 = 387830385623632083L;
-            Object[] var25 = var10005;
+            Object var25 = var10005;
             var10005 = Ref.h(387830385623632083L, var25, var26);
 
             try {
@@ -1203,7 +1208,7 @@ public class Km4 extends JFrame {
       Object var10010 = Ref.g(192015943206609872L, var17);
       ArrayList var10011 = (ArrayList)(Registry.emptyArgs());
       long var20 = 387830385623632083L;
-      Object[] var19 = var10011;
+      Object var19 = var10011;
       var10011 = Ref.h(387830385623632083L, var19, var20);
 
       try {
@@ -2038,6 +2043,7 @@ public class Km4 extends JFrame {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[29];
       int var11 = 0;
       String var10 = "éK\u008d¯ð#N\u000eX\u000eü·\u0018[zE!¡n\"¢÷ÄL\u0004*¥\u0098\u0001\u0004穷匂輠卥\u0003d«M\u0002硕嬠\u0004闦讓l+\u0004盗弾腄板\u0002骓縡\tR\u001e¸LLÂ\u0094Ô·\u000eÄ/\u001fH\u009a'=èí«ÒcÊÞ\u0006\u000fT\u0013\u00059ë\u0004^Ë(ä\u0005P\tË辭掍\u0003\u0002罿迩\u0010µ¿â×·Ûs\u0081ÄË\tÜµôo\u009c\u0002浡惼\u0002雠郼\u0005仱瓌朜劕噗\u0011]7ÿÆ\u0015õMÜ<Ï§\u0012Õ×@Lô\u0002绲穄\n@X\\+aD\u0098r¥²\u001bCùï\u0092\u0084|þ\u0084\u0095ÄÝ,+ÑUOèG)ú»ÕèG-ÔÎ\u0019\u0017\u0091¯iecL^à\u0090{_ª\u001c¯)\u000e´hYúÑõÁ.\u0004旀幂运挣\u0002碱嬴\u0002庭畅";
@@ -2053,7 +2059,6 @@ public class Km4 extends JFrame {
          byte var10002 = -1;
 
          while (true) {
-      ArrayList var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

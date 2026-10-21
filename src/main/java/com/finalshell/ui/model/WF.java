@@ -4,7 +4,7 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 @XStreamAlias("TooltipWay")
 public final class WF {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -33,6 +33,7 @@ public final class WF {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var2 = new String[6];
       int var6 = 0;
       String var5 = ">X\b?ZN\u000bQ(\u0000,\u0007'MN\u0006T/\t\u0004'MI\u0016";
@@ -47,7 +48,6 @@ public final class WF {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label48: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

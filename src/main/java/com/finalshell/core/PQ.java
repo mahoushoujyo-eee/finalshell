@@ -63,7 +63,7 @@ public class PQ extends JTable implements Yb4 {
       int var10000 = (G()) ? 1 : 0;
       this.clearSelection();
       this.L(var1);
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
       var10000 = var1;
       if (var3) {
          if (var1 == -1) {
@@ -1527,6 +1527,7 @@ public class PQ extends JTable implements Yb4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "Ó\u009ebU\u008bµ\u0086óV\u0098võè\"f±\u0080Ö7*\u0088\u001f\u0096\u0090Ùª¿7öÍ¨nÜì\u0087¦gå»\u0083á1ÞTHnÖðØµ_bá";
@@ -1542,7 +1543,6 @@ public class PQ extends JTable implements Yb4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

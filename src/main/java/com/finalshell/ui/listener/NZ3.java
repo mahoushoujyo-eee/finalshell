@@ -15,8 +15,9 @@ public class NZ3 extends KeyAdapter {
 
    @Override
    public void keyPressed(KeyEvent var1) {
+      boolean var10000;
       Ky4[] var2 = OG.P();
-      boolean var10000 = this.t.isEnabled();
+      var10000 = this.t.isEnabled();
       if (var2 != null) {
          if (!var10000) {
             return;
@@ -46,6 +47,7 @@ public class NZ3 extends KeyAdapter {
 
    @Override
    public void keyReleased(KeyEvent var1) {
+      boolean var10000;
       OG var3;
       label32: {
          Ky4[] var2;

@@ -109,6 +109,7 @@ public class TP extends T4 {
 
    @Override
    public void A(Component var1, Object var2) {
+      boolean var11;
       Container var4 = var1.getParent();
       int var5 = var4.getComponentCount();
       boolean var6 = false;
@@ -120,7 +121,6 @@ public class TP extends T4 {
          Component var8 = var4.getComponent(var7);
          String var9 = (String)this.s.get(var8);
          if (var9 != null) {
-      boolean var11;
             label49: {
                label59: {
                   var11 = var6;
@@ -179,6 +179,8 @@ public class TP extends T4 {
 
    @Override
    public void layoutContainer(Container var1) {
+      int var20;
+      int var24;
       int var10000 = T4.O();
       int var3 = var1.getComponentCount();
       int var2 = var10000;
@@ -197,7 +199,7 @@ public class TP extends T4 {
             }
 
             label248: {
-               boolean var33 = ((((boolean)var7) != 0) != 0) != 0;
+               boolean var33 = ((boolean)var7) != 0;
                if (var2 == 0) {
                   if (!var7) {
                      var33 = ((String)this.s.get(var9)).equals(a(842, 19320));
@@ -213,7 +215,7 @@ public class TP extends T4 {
                         var33 = true;
                      }
 
-                     var7 = (var33) ? 1 : 0;
+                     var7 = (byte)((var33) ? 1 : 0);
                      if (var2 == 0) {
                         break label248;
                      }
@@ -223,7 +225,7 @@ public class TP extends T4 {
                   var33 = false;
                }
 
-               var7 = (var33) ? 1 : 0;
+               var7 = (byte)((var33) ? 1 : 0);
             }
 
             var8++;
@@ -236,7 +238,7 @@ public class TP extends T4 {
          label230: {
             label258: {
                var24 = var1.getSize();
-               var25 = (var1.getInsets()) ? 1 : 0;
+               var25 = var1.getInsets();
                var10000 = (this.v) ? 1 : 0;
                label228:
                if (var2 == 0) {
@@ -360,7 +362,7 @@ public class TP extends T4 {
                         var10000 = var40.m(true, var13, var19, var16.height);
                      }
 
-                     int var20 = (var10000) ? 1 : 0;
+                     var20 = var10000;
                      var10000 = (this.u) ? 1 : 0;
                      if (var2 == 0) {
                         var10000 = this.u ? var19 : var16.height;
@@ -442,7 +444,7 @@ public class TP extends T4 {
                   var10000 = var44.m(false, var13, var29, var16.height);
                }
 
-               int var30 = (var10000) ? 1 : 0;
+               int var30 = var10000;
                var10000 = (this.z) ? 1 : 0;
                if (var2 == 0) {
                   var10000 = this.z ? var29 : var16.height;
@@ -515,7 +517,7 @@ public class TP extends T4 {
       int var10000;
       label82: {
          label86: {
-            var5 = (((((T4.O()) ? 1 : 0) != 0) != 0) ? 1 : 0) != 0;
+            var5 = T4.O();
             var10000 = (var1) ? 1 : 0;
             if (var5 == 0) {
                if (var1 != 0) {
@@ -600,6 +602,7 @@ public class TP extends T4 {
 
    @Override
    public Dimension preferredLayoutSize(Container var1) {
+      int var11;
       int var10000 = T4.O();
       int var3 = var1.getComponentCount();
       int var2 = var10000;
@@ -613,7 +616,7 @@ public class TP extends T4 {
          int var8 = 0;
          int var9 = 0;
          int var10 = 0;
-         int var11 = 0;
+         var11 = 0;
 
          while (true) {
             if (var11 < var3) {
@@ -1504,6 +1507,7 @@ public class TP extends T4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[10];
       int var3 = 0;
       String var2 = "§ó\u000eÄ\u0004\u0000KòO\u0004\u0089\u009f\u008aÜ\u0004WÇ\u0010B\u0006\u008c}\u008d\u0015æ7\u0005hj+f\u000b\u0004ù¯\u0084Ú\u0004\u0007³\u0012P";
@@ -1519,7 +1523,6 @@ public class TP extends T4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

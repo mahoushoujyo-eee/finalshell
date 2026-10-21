@@ -11,9 +11,9 @@ public class JT {
    public static Map U;
 
    public ImageIcon P(String var1) {
-      Object[] var10001 = Registry.packArgs(this.getClass(), var1);
+      Object var10001 = Registry.packArgs(this.getClass(), var1);
       long var3 = 250722249728895787L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(250722249728895787L, var2, var3);
 
       try {

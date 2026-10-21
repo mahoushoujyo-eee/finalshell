@@ -322,6 +322,8 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
 
    @Override
    public void paintIndeterminate(Graphics var1, JComponent var2) {
+      JComponent var16;
+      Graphics2D var17;
       Graphics2D var4 = (Graphics2D)var1;
       this.b(var2, var4);
       Shape var5 = this.c(var2);
@@ -384,8 +386,6 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
                      }
 
                      if (var10000 > 0) {
-      Graphics2D var17;
-      Graphics2D var17;
                         int var11 = var4.getFontMetrics().stringWidth(this.progressBar.getString());
                         float var12 = (float)var11 / (float)(this.progressBar.getWidth() * 2);
                         float var13 = 0.5F - var12;
@@ -414,7 +414,7 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
                var16 = var2;
             }
 
-            var10000 = var16.isEnabled();
+            var10000 = (var16.isEnabled()) ? 1 : 0;
          }
 
          if (var10000 != 0) {
@@ -439,7 +439,7 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
       if (var3 != 0) {
          if (this.progressBar.getValue() > this.progressBar.getMinimum()) {
             Shape var5 = this.U(var2);
-            var10000 = var2.isEnabled();
+            var10000 = (var2.isEnabled()) ? 1 : 0;
             if (var3 != 0) {
                if (var10000 != 0) {
                   RV.Y(var4, var5, GO.r, this.Z);
@@ -457,7 +457,7 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
                      }
                   }
 
-                  var10000 = this.progressBar.getComponentOrientation().isLeftToRight();
+                  var10000 = (this.progressBar.getComponentOrientation().isLeftToRight()) ? 1 : 0;
                }
 
                if (var10000 != 0) {
@@ -497,7 +497,7 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
                            }
                         }
 
-                        var10000 = this.progressBar.getComponentOrientation().isLeftToRight();
+                        var10000 = (this.progressBar.getComponentOrientation().isLeftToRight()) ? 1 : 0;
                      }
 
                      if (var10000 != 0) {
@@ -547,8 +547,8 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
       int var2;
       JProgressBar var5;
       label71: {
-         var2 = (((By_2.J()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-         int var10000 = this.progressBar.isStringPainted();
+         var2 = By_2.J();
+         int var10000 = (this.progressBar.isStringPainted()) ? 1 : 0;
          if (var2 == 0) {
             if (var10000 == 0) {
                return;
@@ -564,7 +564,7 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
 
          if (var10000 == 1) {
             var1.translate(this.progressBar.getWidth() / 2, this.progressBar.getHeight() / 2);
-            int var10001 = this.progressBar.getComponentOrientation().isLeftToRight();
+            int var10001 = (this.progressBar.getComponentOrientation().isLeftToRight()) ? 1 : 0;
             if (var2 == 0) {
                var10001 = var10001 != 0 ? -1 : 1;
             }
@@ -618,7 +618,7 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
          var6 = var1;
       }
 
-      int var9 = this.progressBar.getComponentOrientation().isLeftToRight();
+      int var9 = (this.progressBar.getComponentOrientation().isLeftToRight()) ? 1 : 0;
       if (var2 == 0) {
          var9 = var9 != 0 ? 1 : -1;
       }
@@ -629,8 +629,8 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
    public void b(JComponent var1, Graphics2D var2) {
       int var10000 = By_2.J();
       Shape var4 = this.c(var1);
-      int var3 = ((var10000) ? 1 : 0) ? 1 : 0;
-      var10000 = ((var1.isEnabled()) != 0) != 0;
+      int var3 = var10000;
+      var10000 = (var1.isEnabled()) ? 1 : 0;
       if (var3 == 0) {
          if (var10000 != 0) {
             RV.Y(var2, var4, GO.r, this.Z);
@@ -693,7 +693,7 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
             );
          }
 
-         var10000 = this.progressBar.getComponentOrientation().isLeftToRight();
+         var10000 = (this.progressBar.getComponentOrientation().isLeftToRight()) ? 1 : 0;
       }
 
       if (var2 == 0) {
@@ -730,8 +730,8 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
    }
 
    public int w() {
-      int var1 = (((By_2.y()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-      int var10000 = this.progressBar.isIndeterminate();
+      int var1 = By_2.y();
+      int var10000 = (this.progressBar.isIndeterminate()) ? 1 : 0;
       if (var1 != 0) {
          if (var10000 != 0) {
             var10000 = this.progressBar.getOrientation();
@@ -1643,6 +1643,7 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "Â .ÁÂ-\u0086\r¾E)z\u009f½ 1¦Vå;Ê\u0006ýÂ\u0082CN\f";
@@ -1822,7 +1823,6 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
       }
    }
 }
-
 
 
 

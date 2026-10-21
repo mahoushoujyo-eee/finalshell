@@ -84,6 +84,7 @@ public class Hh4 extends W5 {
    }
 
    public int K(int var1) {
+      int var5;
       String[] var10000 = W5.q();
       int var3 = 1;
       String[] var2 = var10000;
@@ -99,8 +100,6 @@ public class Hh4 extends W5 {
             var3 = var5;
             var4++;
             if (var2 != null) {
-      int var5;
-      int var5;
                continue;
             }
          }
@@ -164,7 +163,7 @@ public class Hh4 extends W5 {
                float var25;
                int var24 = (var25 = this.n - 0.0F) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
                if (var3 != null) {
-                  if (var24) {
+                  if (var24 != 0) {
                      var16.rotate((double)var11);
                   }
 
@@ -281,7 +280,6 @@ public class Hh4 extends W5 {
       }
    }
 }
-
 
 
 

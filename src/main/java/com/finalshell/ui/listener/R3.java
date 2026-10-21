@@ -16,6 +16,7 @@ public class R3 implements MouseMotionListener {
 
    @Override
    public void mouseMoved(MouseEvent var1) {
+      int var6;
       String var2 = com.finalshell.ui.panel.S.d();
       JTree var10000 = this.a;
       if (var2 != null) {
@@ -28,7 +29,7 @@ public class R3 implements MouseMotionListener {
 
       label54: {
          TreeUI var3 = var10000.getUI();
-         int var6 = (var3 instanceof K5_2) ? 1 : 0;
+         var6 = (var3 instanceof K5_2) ? 1 : 0;
          if (var2 != null) {
             if (var6 == 0) {
                break label54;
@@ -114,6 +115,7 @@ public class R3 implements MouseMotionListener {
    }
 
    public static boolean t(JTree var0) {
+      boolean var6;
       String var10000 = com.finalshell.ui.panel.S.d();
       MouseMotionListener[] var2 = var0.getMouseMotionListeners();
       String var1 = var10000;

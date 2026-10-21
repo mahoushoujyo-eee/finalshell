@@ -4,17 +4,17 @@ import com.finalshell.core.LD3_2;
 import com.finalshell.core.Yy2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Edit;
+import com.finalshell.ui.panel.ProxySelectionPanel;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Jh2 implements MouseListener {
    public final com.finalshell.ui.model.C62 y;
-   public final Edit F;
+   public final ProxySelectionPanel F;
    public final Yy2 J;
 
-   public Jh2(Yy2 var1, com.finalshell.ui.model.C62 var2, Edit var3) {
+   public Jh2(Yy2 var1, com.finalshell.ui.model.C62 var2, ProxySelectionPanel var3) {
       this.J = var1;
       this.y = var2;
       this.F = var3;
@@ -22,7 +22,7 @@ public class Jh2 implements MouseListener {
 
    @Override
    public void mouseReleased(MouseEvent var1) {
-      Edit.t();
+      ProxySelectionPanel.t();
       Object var5 = 452820645423409010L;
       Object var3 = ((Yy2)Ref.g(452820645423409010L, var5)).rowAtPoint(var1.getPoint());
       Jh2 var10001 = var1.getButton();
@@ -75,7 +75,7 @@ public class Jh2 implements MouseListener {
          Ref.g(504554534303582134L, var11);
          LD3_2 var10003 = (LD3_2)(Registry.packArgs((int)var3));
          long var14 = 548405852497465390L;
-         Object[] var13 = var10003;
+         Object var13 = var10003;
          var10003 = Ref.h(548405852497465390L, var13, var14);
 
          try {

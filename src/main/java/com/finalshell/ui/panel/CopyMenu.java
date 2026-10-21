@@ -22,10 +22,14 @@ public class CopyMenu extends JPopupMenu {
    public static String[] b;
 
    public CopyMenu(AM var1, T32 var2, Bq2 var3) {
+      long var20;
+      boolean var42;
+      boolean var45;
+      boolean var47;
       AM.s$arrString();
       F8 var10002 = (F8)(Registry.emptyArgs());
       long var12 = 424156930953488367L;
-      Object[] var11 = var10002;
+      Object var11 = var10002;
       var10002 = Ref.h(424156930953488367L, var11, var12);
 
       try {
@@ -63,12 +67,12 @@ public class CopyMenu extends JPopupMenu {
          var9.addActionListener(new Be2(this, var1));
          if (var2 == null) {
             Object[] var10003 = Registry.emptyArgs();
-            long var20 = 561671179548957929L;
+            var20 = 561671179548957929L;
             Object[] var19 = var10003;
             Ref.h(561671179548957929L, var19, var20);
-            Object[] var10004 = Registry.emptyArgs();
+            Object var10004 = Registry.emptyArgs();
             long var22 = 363937184157484781L;
-            Object[] var21 = var10004;
+            Object var21 = var10004;
             var10004 = Ref.h(363937184157484781L, var21, var22);
 
             try {
@@ -104,9 +108,9 @@ public class CopyMenu extends JPopupMenu {
       if (var2 == null) {
          var33.addActionListener(new ZL(this, var1, var2));
          var10002 = var3;
-         Object[] var40 = Registry.emptyArgs();
+         Object var40 = Registry.emptyArgs();
          long var26 = 589411218730404657L;
-         Object[] var25 = var40;
+         Object var25 = var40;
          var40 = Ref.h(589411218730404657L, var25, var26);
 
          try {
@@ -129,9 +133,9 @@ public class CopyMenu extends JPopupMenu {
       JMenuItem var35 = new JMenuItem(a(-8932, 30911));
       if (var2 == null) {
          var35.addActionListener(new Kc2(this, var1));
-         Object[] var43 = Registry.emptyArgs();
+         Object var43 = Registry.emptyArgs();
          long var28 = 589411218730404657L;
-         Object[] var27 = var43;
+         Object var27 = var43;
          var43 = Ref.h(589411218730404657L, var27, var28);
 
          try {
@@ -956,6 +960,7 @@ public class CopyMenu extends JPopupMenu {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[7];
       int var3 = 0;
       String var2 = "夠刲梖笾\u0002敠弢\u0002轏挅\u0002冻镒\u0004充闙出之";
@@ -970,7 +975,6 @@ public class CopyMenu extends JPopupMenu {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

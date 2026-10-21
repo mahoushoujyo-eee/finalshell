@@ -12,6 +12,7 @@ public class TQ extends XM {
 
    @Override
    public void G(int[] var1, int[] var2, float var3) {
+      int var25;
       String var10000 = RA3.c();
       int var5 = var1.length;
       String var4 = var10000;

@@ -7,9 +7,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bn4 implements MouseListener {
-   public final com.finalshell.ui.frame.U Z;
+   public final com.finalshell.ui.frame.MainFrame Z;
 
-   public Bn4(com.finalshell.ui.frame.U var1) {
+   public Bn4(com.finalshell.ui.frame.MainFrame var1) {
       this.Z = var1;
    }
 
@@ -19,6 +19,7 @@ public class Bn4 implements MouseListener {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      boolean var12;
       String[] var2 = com.finalshell.ui.panel.F8.y();
       int var10000 = var1.getButton();
       byte var10001 = 1;

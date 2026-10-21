@@ -19,6 +19,7 @@ public class Ex2 extends EY {
 
    @Override
    public boolean d(List var1) {
+      File var9;
       V3 var3 = this.K.O$V();
       String var10000 = Kz4.M();
       Iterator var4 = var1.iterator();
@@ -36,7 +37,6 @@ public class Ex2 extends EY {
                   }
 
                   if (var8) {
-      File var9;
                      var9 = var5;
                      break label42;
                   }

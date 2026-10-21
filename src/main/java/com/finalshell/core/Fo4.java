@@ -11,7 +11,7 @@ public class Fo4 implements Tk4 {
    }
 
    @Override
-   public void R(com.finalshell.ui.frame.U var1) {
+   public void R(com.finalshell.ui.frame.MainFrame var1) {
       SwingUtilities.invokeLater(new Bd2(this, var1));
    }
 }

@@ -6388,6 +6388,7 @@ public class S9 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[40];
       int var11 = 0;
       String var10 = "»Ñ}Ê\u0007\u0091\u0017\u00ad\u001b\u0097\u0002>\u0003¦\u001bÆ\u0004¡µz\b\u0003\u008e\u0090î\u0003e©@\t;Ï\u0012CÎÆh*W\bÏi\u0085x\u0010/F7\u00057'v)R\u0003lÖ\u0085\u0002\u0016\u0096\u0002ÒÈ\t)´P,\u0086+a\u0097v\u0005R\u0097J;\u0004\u0002I6\u0007{Ð#\u001c\u0093³\u009a\u001e\u0016\u008f\u007f<»\tM\u009dfK\u0016\u0082±f\u0084\u0084Ý>N\u00169Æ*ÄCbS;Ý\u0003-\u00adóÝº\u0083\u009b¨ÓH\"\u0018\u0017Ã4_nÇÂ\t^A©\u0084¦u0fÑýíD;[ª|ÒÖ\u008dG\u0094%\u0085#é½\u0002?%\u00030\u0080m\u0004v\u0005\u0081Ô\u0007òWÁ\u0013\u001a\u0003\u008f\u0018\u0006»-´\u0098®\u0015Q\u0095§\u0086»\u008f\u0016Ûx¨\u0015Û\u001dÒ.YW\u0017ò\u0011LÇ½4±\"G\u008dY\u0010&>\u0083ÔG\u001f_[Z;/\u00026§\u0004^^i\u00ad\u0005ÔÏ\u0099\u0080\n\u0006A\u008c\u0092LÜY\u0002\u0003Z\u0006D\rÂH2w\u0002Áþ\u0004\tùnY\u0004üýÈÁ\u0003m!Ð\u0017ß/é\u0000\tÌ'=\u0095n\u0003lm±ê%j!ú\u009cîÃ¹\u0004`¶FÈ\u0004\u008aM[Y\u0004\u0010ÕMÜ";
@@ -6403,7 +6404,6 @@ public class S9 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

@@ -304,6 +304,7 @@ public class A2_3 extends As2 {
 
    @Override
    public void O(Component var1, Graphics2D var2, int var3, int var4, int var5, int var6) {
+      ImageIcon var18;
       Ky4[] var10000 = Pt2.b();
       Ud2_2 var8 = (Ud2_2)this.P.get();
       Ky4[] var7 = var10000;

@@ -43,6 +43,15 @@ public class G92 extends W5 {
    }
 
    public void G(Kernel var1, int[] var2, int[] var3, int var4, int var5, boolean var6) {
+      boolean var10001;
+      boolean var48;
+      int var50;
+      int var51;
+      float var52;
+      float var53;
+      float var55;
+      float var57;
+      float var59;
       boolean var8 = false;
       float[] var9 = var1.getKernelData(null);
       int var10 = var1.getWidth();
@@ -92,7 +101,7 @@ public class G92 extends W5 {
                            label124:
                            if (var7 != null) {
                               float var65;
-                              var48 = (var65 = var31 - 0.0F) == 0.0F ? 0 : (var65 < 0.0F ? -1 : 1);
+                              var48 = ((var65 = var31 - 0.0F) == 0.0F ? 0 : (var65 < 0.0F ? -1 : 1)) != 0;
                               if (var7 == null) {
                                  break;
                               }
@@ -105,14 +114,12 @@ public class G92 extends W5 {
                                        int var49 = 0;
                                        if (var7 != null) {
                                           if (0 <= var32) {
-      int var50;
                                              var50 = var32;
                                              if (var7 == null) {
                                                 break label159;
                                              }
 
                                              if (var32 < var4) {
-      int var51;
                                                 break label158;
                                              }
                                           }
@@ -137,12 +144,12 @@ public class G92 extends W5 {
                                  var37 = var33 & a(9097, 1909565566546709844L);
                                  var38 = var22 - var34;
                                  var51 = var38;
-                                 var10001 = -this.M;
+                                 var10001 = (-this.M) != 0;
                                  label147:
                                  if (var7 != null) {
                                     if (var38 >= var10001) {
                                        var51 = var38;
-                                       var10001 = this.M;
+                                       var10001 = (this.M) != 0;
                                        if (var7 == null) {
                                           break label147;
                                        }
@@ -155,16 +162,14 @@ public class G92 extends W5 {
 
                                     var38 = var23 - var35;
                                     var51 = var38;
-                                    var10001 = -this.M;
+                                    var10001 = (-this.M) != 0;
                                  }
 
                                  label139:
                                  if (var7 != null) {
                                     if (var51 >= var10001) {
-      int var51;
-      int var51;
                                        var51 = var38;
-                                       var10001 = this.M;
+                                       var10001 = (this.M) != 0;
                                        if (var7 == null) {
                                           break label139;
                                        }
@@ -177,14 +182,14 @@ public class G92 extends W5 {
 
                                     var38 = var24 - var36;
                                     var51 = var38;
-                                    var10001 = -this.M;
+                                    var10001 = (-this.M) != 0;
                                  }
 
                                  label131:
                                  if (var7 != null) {
                                     if (var51 >= var10001) {
                                        var51 = var38;
-                                       var10001 = this.M;
+                                       var10001 = (this.M) != 0;
                                        if (var7 == null) {
                                           break label131;
                                        }
@@ -201,7 +206,7 @@ public class G92 extends W5 {
                                     }
 
                                     var51 = var38;
-                                    var10001 = -this.M;
+                                    var10001 = (-this.M) != 0;
                                  }
 
                                  if (var51 >= var10001 && var38 <= this.M) {
@@ -225,7 +230,7 @@ public class G92 extends W5 {
                         }
 
                         float var66;
-                        var48 = (var66 = var26 - 0.0F) == 0.0F ? 0 : (var66 < 0.0F ? -1 : 1);
+                        var48 = ((var66 = var26 - 0.0F) == 0.0F ? 0 : (var66 < 0.0F ? -1 : 1)) != 0;
                         break;
                      }
 
@@ -292,8 +297,8 @@ public class G92 extends W5 {
                   var59 = var58 / var64;
                }
 
-               var18 = ((((var59) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-               int var60 = var6;
+               var18 = var59;
+               int var60 = (var6) ? 1 : 0;
                if (var7 != null) {
                   var60 = var6 != 0 ? Iw4.e((int)((double)var19 + 0.5)) : a(9097, 1909565566546709844L);
                }
@@ -373,6 +378,8 @@ public class G92 extends W5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long var48;
+      int var50;
       char[] var10003 = "o3\u0005z2,,L-\u0004(_\u00134_q^&".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -380,7 +387,6 @@ public class G92 extends W5 {
       char[] var10002 = var10003;
       int var19 = var10004;
       char[] var42;
-      byte var50;
       int var10005;
       char var10006;
       byte var10007;
@@ -445,7 +451,7 @@ public class G92 extends W5 {
                byte var40 = -1;
 
                while (true) {
-                  long var48 = var32 ^ var9;
+                  var48 = var32 ^ var9;
                   switch (var40) {
                      case 0:
                         var18[var25] = var48;
@@ -645,7 +651,6 @@ public class G92 extends W5 {
       }
    }
 }
-
 
 
 

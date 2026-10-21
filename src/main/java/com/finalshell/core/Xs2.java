@@ -107,6 +107,7 @@ public class Xs2 extends BasicTableUI {
    }
 
    public void o(JTable var1) {
+      JViewport var7;
       boolean var10000 = PQ.G();
       JScrollPane var3 = FN.a$JScrollPane(var1);
       boolean var2 = var10000;
@@ -124,8 +125,6 @@ public class Xs2 extends BasicTableUI {
          Object var6 = var4;
          if (var2) {
             if (var4 == null) {
-      JViewport var7;
-      JViewport var7;
                return;
             }
 
@@ -1067,7 +1066,6 @@ public class Xs2 extends BasicTableUI {
       }
    }
 }
-
 
 
 

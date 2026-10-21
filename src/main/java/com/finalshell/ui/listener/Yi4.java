@@ -1,15 +1,15 @@
 package com.finalshell.ui.listener;
 
-import com.finalshell.ui.panel.ResetPanel;
+import com.finalshell.ui.panel.SettingsResetPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JRadioButtonMenuItem;
 
 public class Yi4 implements ActionListener {
    public final JRadioButtonMenuItem l;
-   public final ResetPanel u;
+   public final SettingsResetPanel u;
 
-   public Yi4(ResetPanel var1, JRadioButtonMenuItem var2) {
+   public Yi4(SettingsResetPanel var1, JRadioButtonMenuItem var2) {
       this.u = var1;
       this.l = var2;
    }

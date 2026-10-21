@@ -113,6 +113,15 @@ public class Tc2_2 extends T4 implements Pc4 {
 
    @Override
    public void layoutContainer(Container var1) {
+      boolean var55;
+      int var56;
+      int var58;
+      int var59;
+      int var61;
+      int var62;
+      int var64;
+      int var66;
+      int var68;
       int var2;
       Component var69;
       label302: {

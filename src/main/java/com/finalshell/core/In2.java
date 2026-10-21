@@ -1360,6 +1360,7 @@ public class In2 extends IM {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "l\u0081¦\fâm\u001c\u0085ç.M\u00937y\u0014\u0010\u0099¤CÉGK\u001f*Peí¯}\u0092ghyY-\u000f¦IrY\u0013\u0004\u0010wA]\bL\u0002I'";
@@ -1374,7 +1375,6 @@ public class In2 extends IM {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

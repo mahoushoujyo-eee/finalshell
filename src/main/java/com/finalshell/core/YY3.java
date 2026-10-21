@@ -77,6 +77,12 @@ public class YY3 extends GT3 {
    }
 
    public int d(int[] var1, int var2, int var3) {
+      int var11;
+      int var17;
+      int var18;
+      int var19;
+      int var23;
+      int var24;
       int var5 = var2 - 3;
       String[] var10000 = W5.q();
       int var6 = var3 - 3;
@@ -98,7 +104,7 @@ public class YY3 extends GT3 {
             int var10 = 0;
 
             while (var10 < var2) {
-               int var11 = var10 + var9 * var2;
+               var11 = var10 + var9 * var2;
                if (var4 != null) {
                   var16 = var1[var11];
                   if (var4 == null) {
@@ -107,7 +113,6 @@ public class YY3 extends GT3 {
 
                   label132:
                   if (var16 > 0) {
-      int var18;
                      int var8;
                      label152: {
                         label151: {
@@ -128,7 +133,6 @@ public class YY3 extends GT3 {
                                        }
 
                                        if (var9 >= 2) {
-      int var19;
                                           var19 = var9;
                                           if (var4 == null) {
                                              break label151;
@@ -212,7 +216,6 @@ public class YY3 extends GT3 {
 
                   label79:
                   if (var21 > 0) {
-      int var23;
                      int var12;
                      label99: {
                         label98: {
@@ -233,7 +236,6 @@ public class YY3 extends GT3 {
                                        }
 
                                        if (var9 >= 2) {
-      int var24;
                                           var24 = var9;
                                           if (var4 == null) {
                                              break label98;
@@ -306,8 +308,8 @@ public class YY3 extends GT3 {
             int var7 = 0;
 
             while (var7 < var3) {
-               int var8 = ((((var7 + var6 * var3) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-               var10 = this.g;
+               int var8 = var7 + var6 * var3;
+               var10 = (this.g) ? 1 : 0;
                if (var5 == null) {
                   continue label38;
                }
@@ -345,6 +347,9 @@ public class YY3 extends GT3 {
    }
 
    public void u(int[] var1, int[] var2, int var3, int var4, int var5) {
+      float var11;
+      int var17;
+      YY3 var32;
       String[] var6 = W5.q();
       int var10000 = var5;
       if (var6 != null) {
@@ -368,7 +373,7 @@ public class YY3 extends GT3 {
             while (var8 < var3) {
                int var9 = var8 + var7 * var3;
                int var10 = var1[var9];
-               float var11 = 0.0F;
+               var11 = 0.0F;
                int var12 = 0;
                int var13 = 0;
                int var14 = 0;
@@ -440,7 +445,7 @@ public class YY3 extends GT3 {
                      }
 
                      label127: {
-                        var10000 = this.g;
+                        var10000 = (this.g) ? 1 : 0;
                         if (var6 != null) {
                            if (this.g) {
                               var10000 = var2[var9] >> a(10602, 7392962193094856955L) & a(9083, 1618016983242824421L);
@@ -453,8 +458,8 @@ public class YY3 extends GT3 {
                         var10000 = Iw4.g(var10000);
                      }
 
-                     var12 = ((((var10000) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-                     var10000 = this.j;
+                     var12 = var10000;
+                     var10000 = (this.j) ? 1 : 0;
                      if (var6 == null) {
                         break label152;
                      }
@@ -466,7 +471,7 @@ public class YY3 extends GT3 {
                      }
                   }
 
-                  var10000 = this.f;
+                  var10000 = (this.f) ? 1 : 0;
                }
 
                label118: {
@@ -480,7 +485,7 @@ public class YY3 extends GT3 {
                      }
 
                      int var27 = var10000;
-                     int var17 = var2[var9];
+                     var17 = var2[var9];
                      int var18 = (var17 & a(29802, 8218070487563013625L)) >> a(10602, 7392962193094856955L);
                      int var19 = (var17 & a(15482, 6432552748192253414L)) >> a(31268, 5424630235182891966L);
                      int var20 = (var17 & a(22751, 3229919046705258820L)) >> a(27318, 6035896854312162089L);
@@ -574,14 +579,18 @@ public class YY3 extends GT3 {
    }
 
    public int F(int var1, int var2, int[] var3, int var4, int var5, int var6, int var7) {
+      int var11;
+      int var17;
+      int var18;
+      int var19;
       String[] var10000 = W5.q();
-      int var11 = var5 - var4 - var4 - 2;
+      var11 = var5 - var4 - var4 - 2;
       int var12 = var11 + var4;
       String[] var8 = var10000;
       int var13 = var12 + var4;
       int var14 = var13 + var4;
       int var15 = var14 + var4;
-      int var17 = var2;
+      var17 = var2;
       if (var8 != null) {
          if (var2 != 0) {
             if (var8 == null) {
@@ -595,7 +604,7 @@ public class YY3 extends GT3 {
 
                label181:
                if (var2 != var7 + 2) {
-                  int var18 = var1;
+                  var18 = var1;
                   int var10001 = var6 + 2;
                   if (var8 != null) {
                      if (var1 == var10001) {
@@ -609,7 +618,7 @@ public class YY3 extends GT3 {
                   int var10 = var18 + var10001;
                   int var9 = var10;
                   int var16 = var3[var13 + 1] + a(10183, 8928017420293561943L);
-                  int var19 = var16;
+                  var19 = var16;
                   var10001 = var10;
                   if (var8 != null) {
                      if (var16 < var10) {
@@ -802,13 +811,14 @@ public class YY3 extends GT3 {
    }
 
    public int z(int[] var1, int var2, int var3) {
+      int var11;
       int var7 = var3 - var2 - var2 - 2;
       String[] var10000 = W5.q();
       int var8 = var7 + var2;
       String[] var4 = var10000;
       int var9 = var8 + var2;
       int var10 = var9 + var2;
-      int var11 = var10 + var2;
+      var11 = var10 + var2;
       int var6 = var1[var8 + 2] + a(10183, 8928017420293561943L);
       int var5 = var6;
       int var12 = var1[var9 + 1] + a(10183, 8928017420293561943L);
@@ -985,12 +995,17 @@ public class YY3 extends GT3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var11;
+      long[] var18;
+      int var19;
+      byte var24;
+      long var32;
       char[] var10003 = "-z`k2\tqQ]qf+\u0016v\u000b|jsu]:".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
       byte var34 = 56;
       char[] var10002 = var10003;
-      int var19 = var10004;
+      var19 = var10004;
       char[] var42;
       byte var50;
       int var10005;
@@ -1033,7 +1048,7 @@ public class YY3 extends GT3 {
             a = var39;
             long var9 = 8140490673339246654L;
             long[] var14 = new long[14];
-            int var11 = 0;
+            var11 = 0;
             String var12 = "Ä\u0007er\u001c/«\u0090§x\u0086\u008a¹ævza°\u0018p\u0091ÙhûÖï±\u0015Ë\u0097\u0001¨\u008f%Òs\u0087xò$Ø9ú\u008d¿è»\u001f¡[\u001bC\u0093ÍmØÔ\u0013û\u009fDNãü(¥\u001d\u0097ÖiOv\u0098\u001fÿ\u0096è\u0094¥Ç\\+Z¤¤Üö@M\u0007\u001d\u0097Ì\u008bøÝ";
             int var13 = "Ä\u0007er\u001c/«\u0090§x\u0086\u008a¹ævza°\u0018p\u0091ÙhûÖï±\u0015Ë\u0097\u0001¨\u008f%Òs\u0087xò$Ø9ú\u008d¿è»\u001f¡[\u001bC\u0093ÍmØÔ\u0013û\u009fDNãü(¥\u001d\u0097ÖiOv\u0098\u001fÿ\u0096è\u0094¥Ç\\+Z¤¤Üö@M\u0007\u001d\u0097Ì\u008bøÝ"
                .length();
@@ -1044,9 +1059,9 @@ public class YY3 extends GT3 {
                var25 = var10;
                var10 += 8;
                byte[] var16 = var12.substring(var25, var10).getBytes("ISO-8859-1");
-               long[] var18 = var14;
+               var18 = var14;
                var25 = var11++;
-               long var32 = ((long)var16[0] & 255L) << 56
+               var32 = ((long)var16[0] & 255L) << 56
                   | ((long)var16[1] & 255L) << 48
                   | ((long)var16[2] & 255L) << 40
                   | ((long)var16[3] & 255L) << 32
@@ -1212,7 +1227,7 @@ public class YY3 extends GT3 {
                            var2 = 0;
                      }
 
-                     byte var24 = var2;
+                     var24 = var2;
                      var2 += 8;
                      var7 = var4.substring(var24, var2).getBytes("ISO-8859-1");
                      var10000 = var6;

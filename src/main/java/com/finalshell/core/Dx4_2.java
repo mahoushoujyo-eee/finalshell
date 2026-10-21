@@ -52,7 +52,7 @@ public class Dx4_2 {
 
             String var10004 = (String)(Registry.emptyArgs());
             long var11 = 542058094445767607L;
-            Object[] var10 = var10004;
+            Object var10 = var10004;
             var10004 = Ref.h(542058094445767607L, var10, var11);
 
             try {
@@ -85,7 +85,7 @@ public class Dx4_2 {
          if (var2 != null || var1 != null) {
             String var10003 = (String)(Registry.emptyArgs());
             long var9 = 542058094445767607L;
-            Object[] var8 = var10003;
+            Object var8 = var10003;
             var10003 = Ref.h(542058094445767607L, var8, var9);
 
             try {
@@ -205,7 +205,7 @@ public class Dx4_2 {
       ArrayList var10002 = (ArrayList)Ref.g(620874131776678079L, var3);
       L1 var10004 = (L1)(Registry.packArgs(var1));
       long var6 = 152334479981629602L;
-      Object[] var5 = var10004;
+      Object var5 = var10004;
       var10004 = Ref.h(152334479981629602L, var5, var6);
 
       try {

@@ -17,7 +17,7 @@ public class Cb4 extends MouseAdapter {
    @Override
    public void mousePressed(MouseEvent var1) {
       String var2 = Wb2.m$String();
-      byte var10000 = (SwingUtilities.isLeftMouseButton(var1)) ? 1 : 0;
+      byte var10000 = (byte)((SwingUtilities.isLeftMouseButton(var1)) ? 1 : 0);
       if (var2 != null) {
          if (var10000 == 0) {
             return;

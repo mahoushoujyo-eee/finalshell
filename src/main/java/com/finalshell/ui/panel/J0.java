@@ -35,6 +35,8 @@ public class J0 extends JLabel {
 
    @Override
    public void paint(Graphics var1) {
+      Float var42;
+      Float var46;
       J0 var40;
       label106: {
          label108: {
@@ -56,9 +58,9 @@ public class J0 extends JLabel {
                   this.setColor((Color)Ref.g(243729176705171314L, var11));
                   Object var13 = 134558931194879927L;
                   Ref.g(134558931194879927L, var13);
-                  Object[] var10003 = Registry.emptyArgs();
+                  Object var10003 = Registry.emptyArgs();
                   long var16 = 316174812741990735L;
-                  Object[] var15 = var10003;
+                  Object var15 = var10003;
                   var10003 = Ref.h(316174812741990735L, var15, var16);
 
                   try {
@@ -87,7 +89,6 @@ public class J0 extends JLabel {
                         }
 
                         if (var8 == 0) {
-      byte var43;
                            var8 = 1;
                         }
                      }
@@ -131,9 +132,9 @@ public class J0 extends JLabel {
                this.setColor((Color)Ref.g(273368680465522015L, var19));
                Object var21 = 134558931194879927L;
                Ref.g(134558931194879927L, var21);
-               Object[] var44 = Registry.emptyArgs();
+               Object var44 = Registry.emptyArgs();
                long var24 = 491932081530754249L;
-               Object[] var23 = var44;
+               Object var23 = var44;
                var44 = Ref.h(491932081530754249L, var23, var24);
 
                try {
@@ -149,9 +150,9 @@ public class J0 extends JLabel {
                int var38 = (int)((double)((float)this.getWidth() - (float)var37) * var34) + var36;
                Object var25 = 134558931194879927L;
                Ref.g(134558931194879927L, var25);
-               Object[] var10005 = Registry.emptyArgs();
+               Object var10005 = Registry.emptyArgs();
                long var28 = 204432614484767489L;
-               Object[] var27 = var10005;
+               Object var27 = var10005;
                var10005 = Ref.h(204432614484767489L, var27, var28);
 
                try {
@@ -163,7 +164,6 @@ public class J0 extends JLabel {
                label73:
                if (var2 != null) {
                   if (var48 > 0) {
-      int var48;
                      var48 = var38;
                      if (var2 == null) {
                         break label73;
@@ -327,8 +327,6 @@ public class J0 extends JLabel {
       }
    }
 }
-
-
 
 
 

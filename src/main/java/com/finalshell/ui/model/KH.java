@@ -60,7 +60,7 @@ import javax.swing.JPopupMenu.Separator;
 import javax.swing.table.JTableHeader;
 
 public final class KH {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -157,6 +157,7 @@ public final class KH {
 
    public String i(JComponent var1) {
       D7 var7;
+      String var8;
       int var10000 = WG.C();
       D7 var3 = GA.y(var1);
       int var2 = var10000;
@@ -424,6 +425,7 @@ public final class KH {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 32229) & 65535;
       if (c[var2] == null) {
          char[] var3 = b[var2].toCharArray();
@@ -1210,7 +1212,7 @@ public final class KH {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1238,6 +1240,8 @@ public final class KH {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      byte[] var7;
       String[] var13 = new String[101];
       int var11 = 0;
       String var10 = ":\u009bÎ7ÍïLÎW®ç\u0086Ë2ìl8¶\u0004\"0m\t\n«wxáÿ\f\u0014¯|û\n¨bdè\u0003¨\\nÝb\n\f\u009eHf±\u001e±\b\u0083¸\u0007NÜÀ\u0080Ý®ú\u000e\u00951\u008cpl\u007fÀê\u0004u¦ \u009c\u0000\u000bÃí§*iÜ4\\K\u0099N\rC,â\b,ì\u0080Â\b^Yù\u0019\u0004\u00886\t,\nyñîmh^\u000e\u0000t¹\t\u000f>äÉ·5ó7±\u000eEË\u0083eâ\u0085\u009f¢°<\r:\u0016ë\u0012\u0091¶\u0004\u008bZnÝj\u0080\u0083\u000bfÒjÁ§h2\u000bÔ\u0092\u0085Àá.~\\\u0000$)\u001f!+=\u0017\u009c6¼Â¾\u0005\u0080÷K0Sï¦,<µyè\u0080' mÜhC×l\b?O3¬®\u0091\u000f£\b\u008f®\u0014\u00867#å¯\r1\u0082\u001eA°Þr°3¥ýX \f\u0019]ïx·~©öcq)´\u0007_gÂã£Yâ\u0006\u001aÐr\u0099\u001c\u001f\u0007K\u008a{\fµ\u009e \b'cÍcI\\Â¥\tÎÓ3ap\u009f¨hÿ\n5N¹Uf\u007f»ß!T\tAWÿIÏpÆ+Ï\u000b=·ií;\u000eÁZÒ\u001b\u009c\b>\u0094Â\u009ce\u0097vc\r\u0095\tÿ/°ãÝ¦ØÓ\u000fH<\u0006\u0005\u0002}\\ \u0080\u0010\u001b³lj\u001fd \u009eG»óÊÉõ\u001ct\u000bì¡~\u0011æ8·73I\u0097\u0014âØ'G£Ã£^\u0088Ñ/\u0086Ç\u000fÒhõ\u0013\u0010\\\r×C\u009fúKaÃ\u009fë\u0093¡ôÞ\rc9«\u0002\\Zà{ÙÀÊ\u009en\rÒ#¡ó©ç,;Hu.c°\u000bJqäj\u0088Dä»B\u0006i\u0014\u009d@\u001eL×\u0080\u000f#?\u0013ê1jÄØ²¾m\u001aG\u000e[F«\u0096ü\u008c%lÌûÍ\nºÚ\bK£\u0084Á(ê\u0082\u0096\r³5N·º\u00003r\u0019Æñ\u0015K\nÕ`Ä\u008c;ø\u0085P»>\u000bÎ\u001c\u000b'îo¨`_}Ø\t`s\u0085*¤Laºò\n%\u0088\u0083>AÐ\u0014þÔp\u000bÀ\u0080Y\u0082\u0093nØ~\u0088¯Í\t\u009c\u000feE##\u0011éh\rtõ<Vm»\ft¼u\\¬a\u0010@E\u001aõ\u0099¡¥\u0093\u008f¼ê\u0081î\u0096F8\nôèvÎ\u0084¨Ï,¯*\u0012,'Ú¸\u001c<T¡v.ðy<ð\u00ad\u0097\u001aì\u000b4\u0095\u009a£ \u0082`\"sÌ¼\u0005\u008fÓõáæ\tY2\u001d\u001bot\u00ad&à\u00079>\u001cUÒ\u00814\u000bôèh¹\u0082®1\u0012ëPZ\n\n\u0089`?1ãüí\u000bº\u000b\u001f\"/\u0097¯\u0083¸I\r¶g\u0005JzVÝ\u009b\b/\u001825}£Ý¸\u0015¡\u0010Ï\u0095d+\u0095¢\u007fFÈ\u001d@Ç\rp\u0089¸¼\u0014ð\fÆÞ<\u0085\u000eî{ \u0007r´;\u0007Q\u009f8®ËÂ9\u000f]KÂg\u0017ê)\u0087F÷ÜÌFëÙ\u0006\u0013\u0084o\u009f\u0001þ\tÇó\u0010\u00adHÄD¡\u0092\u0006ÿí\f\u008bºt\fS\u008bp'ó\u00953·zÞiU\bVØ3\u0007éë\u0004.\rJ«rç\u001fÊ¡Àû·Vp \u0010WAFú#Lô\u0095\u009eÇÏò\u0081}4A\u0004\u0080\t\u0005¢\u0007ÆÍ+\u001aU\u001a\u0095\u00108§\u0013\bHâiÍö\u009f#ïY^ûÛ\u0004AÀ*²\u0012+ðUâ\u0080¿pfÕêGAÕ\u008bja\u001d¡\bä]\u0099¥\u001f£\u0001\u0090\u000b\"äÒt°ÿ·üËd²\u0005E!?¿2\fÔÕ\u0099\u0095\u0002¥|PÙ¥~.\t{BY\u0015ñ½¨\u0016\u0002\u000bü\u009d\u0083¢\u0003¢\u0004?ýT$\u000f\u009f3`\u0013\u009eZ`=e³ð=©Ü\f\nß£ÚzwX\fï\u007f~\t-W¨åî\u0099K\u0092~\f\u008anjQ\u001cÿôÏÈV\\P\fM\u001füG\u0010]>Ð\u0091µw,\rþ¸\r³.ï¤:YU\fgô\u0012gÌ%,\u001cW\u0004!-±\u009c\u0090æS`\u009f\u0017É\u0010\u0091vß{C½ï|P\u001a3å\u0013ýÞJ\u0006èË!\u0093¢m\u0007d\u0017?y2,\u0000\u0013\u0087\u001b/ôx\u0007\u0016'\u000föÆ\u000b\u0081\u00055(\u008e³\\\u000b\u0017\u0095Ã¼S\u009boâ\"oV\r\u0003Á×Mh\u0091¾D¾\u009c\u008bØÆ\nÈ±ésõjdÜ\u0018\u009c\u0007a=%¼a)m\b\u0005dú\füè}R";
@@ -1253,7 +1257,6 @@ public final class KH {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -1343,7 +1346,7 @@ public final class KH {
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56

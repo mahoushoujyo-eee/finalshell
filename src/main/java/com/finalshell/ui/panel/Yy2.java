@@ -314,7 +314,7 @@ public class Yy2 extends JLabel implements Pp2, RF3, D7, Au2, Yb4 {
    public LS3 N(int var1, int var2) {
       int var10000 = (Oj2.g()) ? 1 : 0;
       Iterator var4 = this.B().iterator();
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
 
       while (var4.hasNext()) {
          label28: {

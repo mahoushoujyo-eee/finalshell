@@ -19,6 +19,7 @@ public class Ey2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var0 = new String[11];
       int var4 = 0;
       String var3 = "<\f%\u001a)\u0005\u0010+;&\u0013&\u001e\u0003*\u001b\u0010<\f%\u001a)\u0005\u0010+- \f+\u0013\u0019*\r\u000f<\f%\u001a)\u0005\u0010+9;\u001a9\u0002\u0010+\b<\f%\u001a)\u0005\u0010+\u0006!\u0006;\u0012+\u001d\b+\u0000:\u001e(\u001d\u0010+\u0010)\u0005&\u001e>\u0018\u001b(- \f+\u0013\u0019*\r\b=\u0006%\u0013%\u0007\u0010=\u0007)\u0006*\n9\u0014\u0011";
@@ -34,7 +35,6 @@ public class Ey2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label48: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

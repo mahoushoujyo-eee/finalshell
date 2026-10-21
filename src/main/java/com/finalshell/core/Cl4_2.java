@@ -2487,6 +2487,7 @@ public class Cl4_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var25;
       String[] var9 = new String[23];
       int var7 = 0;
       A$void(null);
@@ -2503,7 +2504,6 @@ public class Cl4_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var25;
             label47: {
                char[] var30 = var10001.toCharArray();
                int var10004 = var30.length;

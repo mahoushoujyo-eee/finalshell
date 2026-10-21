@@ -2,10 +2,10 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.dialog.EditDialog2;
+import com.finalshell.ui.dialog.EditorSelectionDialog;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -13,16 +13,16 @@ import java.lang.reflect.InvocationTargetException;
 
 public class FU3 implements ActionListener {
    public final int G;
-   public final EditDialog2 r;
+   public final EditorSelectionDialog r;
 
-   public FU3(EditDialog2 var1, int var2) {
+   public FU3(EditorSelectionDialog var1, int var2) {
       this.r = var1;
       this.G = var2;
    }
 
    @Override
    public void actionPerformed(ActionEvent var1) {
-      Object var10000 = Address.i();
+      Object var10000 = FileBrowserAddressBar.i();
       Object var3 = 0;
       Object var2 = var10000;
       Object var12 = 121430004283033522L;
@@ -50,9 +50,9 @@ public class FU3 implements ActionListener {
                   Ref.g(121430004283033522L, var18);
                   Object var20 = 546550992201866353L;
                   Ref.g(546550992201866353L, var20);
-                  Object[] var10006 = Registry.emptyArgs();
+                  Object var10006 = Registry.emptyArgs();
                   long var23 = 126176237984401993L;
-                  Object[] var22 = var10006;
+                  Object var22 = var10006;
                   var10006 = Ref.h(126176237984401993L, var22, var23);
 
                   try {
@@ -71,7 +71,7 @@ public class FU3 implements ActionListener {
                         Tf4 var7 = (Tf4)Ref.h(303488344973038628L, var24, var25);
                         String var10008 = (String)(Registry.emptyArgs());
                         long var27 = 498856411508641826L;
-                        Object[] var26 = var10008;
+                        Object var26 = var10008;
                         var10008 = Ref.h(498856411508641826L, var26, var27);
 
                         try {
@@ -118,7 +118,7 @@ public class FU3 implements ActionListener {
 
                      String var168 = (String)(Registry.emptyArgs());
                      long var35 = 498856411508641826L;
-                     Object[] var34 = var168;
+                     Object var34 = var168;
                      var168 = Ref.h(498856411508641826L, var34, var35);
 
                      try {
@@ -177,9 +177,9 @@ public class FU3 implements ActionListener {
                   Ref.g(121430004283033522L, var40);
                   Object var42 = 546550992201866353L;
                   Ref.g(546550992201866353L, var42);
-                  Object[] var158 = Registry.emptyArgs();
+                  Object var158 = Registry.emptyArgs();
                   long var45 = 126176237984401993L;
-                  Object[] var44 = var158;
+                  Object var44 = var158;
                   var158 = Ref.h(126176237984401993L, var44, var45);
 
                   try {
@@ -230,7 +230,7 @@ public class FU3 implements ActionListener {
                               Tf4 var145 = (Tf4)Ref.h(303488344973038628L, var54, var55);
                               String var10012 = (String)(Registry.emptyArgs());
                               long var57 = 498856411508641826L;
-                              Object[] var56 = var10012;
+                              Object var56 = var10012;
                               var10012 = Ref.h(498856411508641826L, var56, var57);
 
                               try {
@@ -287,7 +287,7 @@ public class FU3 implements ActionListener {
                      Ck4 var146 = (Ck4)var184;
                      String var193 = (String)(Registry.emptyArgs());
                      long var63 = 605430732347023634L;
-                     Object[] var62 = var193;
+                     Object var62 = var193;
                      var193 = Ref.h(605430732347023634L, var62, var63);
 
                      try {
@@ -330,9 +330,9 @@ public class FU3 implements ActionListener {
                   Ref.g(121430004283033522L, var68);
                   Object var70 = 546550992201866353L;
                   Ref.g(546550992201866353L, var70);
-                  Object[] var161 = Registry.emptyArgs();
+                  Object var161 = Registry.emptyArgs();
                   long var73 = 126176237984401993L;
-                  Object[] var72 = var161;
+                  Object var72 = var161;
                   var161 = Ref.h(126176237984401993L, var72, var73);
 
                   try {
@@ -383,7 +383,7 @@ public class FU3 implements ActionListener {
                               Tf4 var147 = (Tf4)Ref.h(303488344973038628L, var82, var83);
                               String var197 = (String)(Registry.emptyArgs());
                               long var85 = 498856411508641826L;
-                              Object[] var84 = var197;
+                              Object var84 = var197;
                               var197 = Ref.h(498856411508641826L, var84, var85);
 
                               try {
@@ -508,7 +508,7 @@ public class FU3 implements ActionListener {
                      Ck4 var148 = (Ck4)var188;
                      String var201 = (String)(Registry.emptyArgs());
                      long var101 = 605430732347023634L;
-                     Object[] var100 = var201;
+                     Object var100 = var201;
                      var201 = Ref.h(605430732347023634L, var100, var101);
 
                      try {
@@ -572,7 +572,7 @@ public class FU3 implements ActionListener {
          Object var110 = 121430004283033522L;
          Registry.lookupField(633665384138343849L).setInt(Ref.g(121430004283033522L, var110), Registry.lookupField(564170828581134815L).getInt(null));
          Object var112 = 121430004283033522L;
-         ((EditDialog2)Ref.g(121430004283033522L, var112)).setVisible(false);
+         ((EditorSelectionDialog)Ref.g(121430004283033522L, var112)).setVisible(false);
       }
    }
 }

@@ -8,7 +8,7 @@ import java.util.EnumMap;
 import java.util.Map;
 
 public final class Nb4 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -857,6 +857,7 @@ public final class Nb4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "F\u0015¥\u0006Î\"Ò\u001e7\u009c";
@@ -871,7 +872,6 @@ public final class Nb4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

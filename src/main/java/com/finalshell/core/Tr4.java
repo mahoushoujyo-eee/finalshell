@@ -85,7 +85,7 @@ public class Tr4 {
    public static int Y(byte[] var0) {
       int var10000 = (DF.c()) ? 1 : 0;
       int var2 = -1;
-      boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var1 = (var10000) != 0;
       byte[] var3 = var0;
       int var4 = var0.length;
       int var5 = 0;

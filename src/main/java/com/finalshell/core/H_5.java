@@ -22,6 +22,7 @@ public class H_5 {
    }
 
    public String t(String var1, String var2) {
+      H_5 var10;
       String var10000 = M_8.w();
       StringBuilder var4 = new StringBuilder();
       String var3 = var10000;
@@ -997,9 +998,11 @@ public class H_5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var33;
       String[] var13 = new String[8];
       int var11 = 0;
-      String var10 = "pß\bãèªX\u0093Ö$,\u0004°»\u0096\u0000\u00024æ\u0002F¡\u00047ûf\b";
+      var10 = "pß\bãèªX\u0093Ö$,\u0004°»\u0096\u0000\u00024æ\u0002F¡\u00047ûf\b";
       int var12 = "pß\bãèªX\u0093Ö$,\u0004°»\u0096\u0000\u00024æ\u0002F¡\u00047ûf\b".length();
       char var9 = 2;
       int var17 = -1;
@@ -1011,7 +1014,6 @@ public class H_5 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

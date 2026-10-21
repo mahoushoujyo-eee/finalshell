@@ -34,9 +34,10 @@ public abstract class Ej4 implements Wt2_2 {
 
    @Override
    public void v(byte[] var1) throws Exception {
+      EdECPublicKeySpec var6;
       int var10000 = (Y12.Q()) ? 1 : 0;
       var1 = this.Q(var1);
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
 
       label22: {
          label21: {
@@ -64,7 +65,7 @@ public abstract class Ej4 implements Wt2_2 {
       var1[0] = (byte)(var1[0] & a(1944, 6895148760205822032L));
       BigInteger var4 = new BigInteger(var1);
       NamedParameterSpec var5 = new NamedParameterSpec(this.I());
-      EdECPublicKeySpec var6 = new EdECPublicKeySpec(var5, new EdECPoint((boolean)var3, var4));
+      var6 = (new EdECPublicKeySpec(var5, new EdECPoint(var3, var4))) != 0;
       PublicKey var7 = this.d.generatePublic(var6);
       this.v.initVerify(var7);
    }
@@ -89,10 +90,11 @@ public abstract class Ej4 implements Wt2_2 {
 
    @Override
    public boolean g(byte[] var1) throws Exception {
+      UJ var6;
       int var3 = 0;
       boolean var10000 = Y12.D();
       int var4 = 0;
-      UJ var6 = new UJ(var1);
+      var6 = new UJ(var1);
       boolean var2 = var10000;
       String var7 = new String(var6.S(), StandardCharsets.UTF_8);
 
@@ -117,6 +119,7 @@ public abstract class Ej4 implements Wt2_2 {
    }
 
    public byte[] Q(byte[] var1) {
+      byte[] var6;
       boolean var10000 = Y12.D();
       int var3 = var1.length;
       byte[] var4 = new byte[var3];
@@ -126,7 +129,6 @@ public abstract class Ej4 implements Wt2_2 {
       int var10001;
       while (true) {
          if (var5 < var3) {
-      BigInteger var6;
             var6 = var4;
             var10001 = var5;
             if (var2) {
@@ -136,7 +138,6 @@ public abstract class Ej4 implements Wt2_2 {
             var4[var5] = var1[var3 - var5 - 1];
             var5++;
             if (!var2) {
-      BigInteger var6;
                continue;
             }
          }
@@ -158,6 +159,7 @@ public abstract class Ej4 implements Wt2_2 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ 29117) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -938,7 +940,7 @@ public abstract class Ej4 implements Wt2_2 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -972,6 +974,7 @@ public abstract class Ej4 implements Wt2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long[] var6;
       String[] var13 = new String[2];
       int var11 = 0;
       String var10 = "P.MÇ2\u0005ä\u008eÛÓà";
@@ -1058,7 +1061,7 @@ public abstract class Ej4 implements Wt2_2 {
             a = var13;
             b = new String[2];
             long var0 = 3277713509188444027L;
-            long[] var6 = new long[2];
+            var6 = new long[2];
             int var3 = 0;
             String var4 = "\u0001\u001bWZ5Fã=\u0015|\u0001\u001eã&\u0017T";
             int var5 = "\u0001\u001bWZ5Fã=\u0015|\u0001\u001eã&\u0017T".length();
@@ -1093,7 +1096,6 @@ public abstract class Ej4 implements Wt2_2 {
       }
    }
 }
-
 
 
 

@@ -4,15 +4,15 @@ import com.finalshell.core.Lv4_2;
 import com.finalshell.core.Yl4;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ye4 implements Runnable {
    public final Lv4_2 H;
    public final Yl4 Y;
-   public final U g;
+   public final MainFrame g;
 
-   public Ye4(U var1, Lv4_2 var2, Yl4 var3) {
+   public Ye4(MainFrame var1, Lv4_2 var2, Yl4 var3) {
       this.g = var1;
       this.H = var2;
       this.Y = var3;

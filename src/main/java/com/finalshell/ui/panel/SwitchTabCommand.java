@@ -28,6 +28,8 @@ public class SwitchTabCommand extends Z7 {
    public static String[] d;
 
    public SwitchTabCommand() {
+      super();
+      long var11;
       this.setLayout(new MigLayout(a(23143, -297), a(23149, 6476), a(23147, 28683)));
       JLabel var2 = new JLabel();
       var2.setText(a(23145, -20433));
@@ -40,8 +42,8 @@ public class SwitchTabCommand extends Z7 {
       Ref.s(356807177375621845L, var6, var7);
       LQ var10004;
       Object var8 = 356807177375621845L;
-      super(this, (Oa4)Ref.g(356807177375621845L, var8));
-      long var11 = 240160579628937511L;
+      // [VF-super] super(this, (Oa4)Ref.g(356807177375621845L, var8));
+      var11 = 240160579628937511L;
       LQ var10 = var10004;
       Ref.s(240160579628937511L, var10, var11);
       Object var12 = 240160579628937511L;
@@ -76,6 +78,7 @@ public class SwitchTabCommand extends Z7 {
    }
 
    public void V(int var1) {
+      long var11;
       Registry.emptyArgs();
       long var3 = 270389152141252877L;
       Ref.h2(270389152141252877L, var3);
@@ -85,7 +88,7 @@ public class SwitchTabCommand extends Z7 {
       Ref.h(306266403902896148L, var5, var6);
       HashMap var10003 = (HashMap)(Registry.emptyArgs());
       long var8 = 225069668264757241L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(225069668264757241L, var7, var8);
 
       try {
@@ -108,7 +111,7 @@ public class SwitchTabCommand extends Z7 {
       }
 
       Registry.emptyArgs();
-      long var11 = 270389152141252877L;
+      var11 = 270389152141252877L;
       Ref.h2(270389152141252877L, var11);
       Object[] var10006 = Registry.emptyArgs();
       long var14 = 578864097947885485L;
@@ -127,6 +130,7 @@ public class SwitchTabCommand extends Z7 {
    }
 
    public void j() {
+      Object[] var11;
       ArrayList var1 = new ArrayList();
       Registry.emptyArgs();
       long var3 = 270389152141252877L;
@@ -137,7 +141,7 @@ public class SwitchTabCommand extends Z7 {
       Ref.h(306266403902896148L, var5, var6);
       HashMap var10003 = (HashMap)(Registry.emptyArgs());
       long var8 = 225069668264757241L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(225069668264757241L, var7, var8);
 
       try {
@@ -160,7 +164,7 @@ public class SwitchTabCommand extends Z7 {
       Ref.g(356807177375621845L, var9);
       Object[] var10005 = Registry.packArgs(var1);
       long var12 = 188313381191463366L;
-      Object[] var11 = var10005;
+      var11 = var10005;
       Ref.h(188313381191463366L, var11, var12);
 
       try {
@@ -173,9 +177,9 @@ public class SwitchTabCommand extends Z7 {
    public void U(int var1) {
       Object var3 = 356807177375621845L;
       Ref.g(356807177375621845L, var3);
-      Object[] var10002 = Registry.packArgs(var1);
+      Object var10002 = Registry.packArgs(var1);
       long var6 = 456566625525064269L;
-      Object[] var5 = var10002;
+      Object var5 = var10002;
       var10002 = Ref.h(456566625525064269L, var5, var6);
 
       try {
@@ -1053,6 +1057,7 @@ public class SwitchTabCommand extends Z7 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var21;
       String[] var5 = new String[9];
       String[] var10000 = new String[4];
       int var3 = 0;
@@ -1070,7 +1075,6 @@ public class SwitchTabCommand extends Z7 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var21;
             label47: {
                char[] var25 = var10001.toCharArray();
                int var10004 = var25.length;

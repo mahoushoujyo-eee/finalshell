@@ -1,8 +1,8 @@
 package com.finalshell.core;
 
 @O4(
-   Z = "MultiPoint",
-   Z = {"type", "bbox", "coordinates"}
+   Z$String = "MultiPoint",
+   Z$arrString = {"type", "bbox", "coordinates"}
 )
 public class Xr4 extends XY3 {
    public double[][] w;

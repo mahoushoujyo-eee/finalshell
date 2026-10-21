@@ -154,6 +154,7 @@ public class Nk4 {
    }
 
    public void d() {
+      int[] var7;
       String var1 = Dx4.g();
       Nk4 var10000 = this;
       if (var1 == null) {
@@ -200,7 +201,7 @@ public class Nk4 {
       }
 
       Px2 var4 = new Px2(a(14692, 7160493112257796759L), a(26450, 4965501857166197944L));
-      int[] var7 = new int[a(14870, 2389074193629600218L)];
+      var7 = new int[a(14870, 2389074193629600218L)];
       var7[0] = a(12992, 4920883211802661155L);
       var7[1] = a(11332, 7047212134895439830L);
       var7[2] = a(17859, 4369722194742552138L);
@@ -598,6 +599,7 @@ public class Nk4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte[] var7;
       char[] var10003 = "|s".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -786,7 +788,7 @@ public class Nk4 {
                while (true) {
                   var21 = var2;
                   var2 += 8;
-                  byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
+                  var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
                   long[] var10000 = var6;
                   var21 = var3++;
                   long var30 = ((long)var7[0] & 255L) << 56

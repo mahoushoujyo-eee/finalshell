@@ -142,13 +142,13 @@ public final class Cz2 {
    }
 
    public static List c(File var0) {
+      ArrayList var3;
       String var10000 = FV_2.D();
       ArrayList var2 = new ArrayList();
       String var1 = var10000;
 
       while (true) {
          if (var0 != null) {
-      ArrayList var3;
             var3 = var2;
             if (var1 != null) {
                break;
@@ -157,7 +157,6 @@ public final class Cz2 {
             var2.add(0, var0);
             var0 = var0.getParentFile();
             if (var1 == null) {
-      ArrayList var3;
                continue;
             }
          }
@@ -510,8 +509,10 @@ public final class Cz2 {
    }
 
    public static String H(InputStream var0, int var1) {
+      BufferedInputStream var3;
+      BigInteger var8;
       String var10000 = FV_2.D();
-      BufferedInputStream var3 = new BufferedInputStream(var0);
+      var3 = new BufferedInputStream(var0);
       String var2 = var10000;
 
       Object var5;
@@ -522,6 +523,7 @@ public final class Cz2 {
          label80: {
             int var6;
             while ((var6 = var3.read(var23, 0, var23.length)) > 0) {
+      MessageDigest var24;
                try {
                   var24 = var4;
                   if (var2 != null) {
@@ -541,7 +543,7 @@ public final class Cz2 {
          }
 
          byte[] var7 = var24.digest();
-         BigInteger var8 = new BigInteger(1, var7);
+         var8 = new BigInteger(1, var7);
          return var8.toString(a(18346, 504352758455812617L));
       } catch (Throwable var21) {
          var5 = null;
@@ -1392,8 +1394,10 @@ public final class Cz2 {
    }
 
    public static String a(File var0, String var1) {
+      File[] var11;
+      ArrayList var3;
       String var10000 = FV_2.D();
-      ArrayList var3 = new ArrayList();
+      var3 = new ArrayList();
       File[] var4 = var0.listFiles();
       String var2 = var10000;
 
@@ -2055,6 +2059,7 @@ public final class Cz2 {
    }
 
    public static Yt2 p(File var0, String var1) {
+      StringBuilder var8;
       String var10000 = FV_2.D();
       String var3 = X(var0);
       String var2 = var10000;
@@ -2287,9 +2292,11 @@ public final class Cz2 {
    }
 
    public static String g(int var0) {
+      int var3;
+      StringBuilder var5;
       StringBuilder var2 = new StringBuilder(var0);
       String var10000 = FV_2.D();
-      int var3 = 0;
+      var3 = 0;
       String var1 = var10000;
 
       while (true) {
@@ -2507,10 +2514,11 @@ public final class Cz2 {
    }
 
    public static boolean p(String var0, String var1) {
+      File var3;
       String var2 = FV_2.D();
 
       try {
-         File var3 = new File(new File(var1).getParent());
+         var3 = new File(new File(var1).getParent());
 
          label34: {
             try {
@@ -4575,6 +4583,7 @@ public final class Cz2 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -7703) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -5361,7 +5370,7 @@ public final class Cz2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -5379,7 +5388,8 @@ public final class Cz2 {
    }
 
    public static int a(int var0, long var1) {
-      int var3 = var0 ^ (int)(var1 & 32767L) ^ 1445;
+      int var3;
+      var3 = var0 ^ (int)(var1 & 32767L) ^ 1445;
       if (d[var3] == null) {
          d[var3] = (int)(c[var3] ^ var1);
       }
@@ -5388,7 +5398,8 @@ public final class Cz2 {
    }
 
    public static long b(int var0, long var1) {
-      int var3 = (var0 ^ (int)var1 ^ 5813) & 32767;
+      int var3;
+      var3 = (var0 ^ (int)var1 ^ 5813) & 32767;
       if (h[var3] == null) {
          h[var3] = g[var3] ^ var1;
       }
@@ -5398,6 +5409,11 @@ public final class Cz2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var11;
+      int var3;
+      char[] var47;
+      boolean var5;
+      long var8;
       String[] var21 = new String[35];
       int var19 = 0;
       String var18 = "Wÿ;\u0012írR7\u001d\"x6î\u0014 Uý\u0090fPÃ}\bÓ&>\u0094\u0019PÑ\u0095\u0006bè\u009e'O=)\u008eÞ\u0099\u001a\u008biä\\ßv©\u009b°êi\u0087r;º\u0014?æí\u0083»\u008fhé·n\u0096\u0085éphû¨\u008dM3\u0002\u0019\u0011bÍ5îb\u0006>!\u0015Ùu×\u0094\u0082ÁÀlç\u0091Úð\u0097x¹\u0010ñ6\u0089Ü\bf\u0015¾|ÑÇ\u0098qÙº\u0085\u0002zÿ\u000fÛ\u0018\u008dþh!ã\u0001@\u0012¾.}l\u0015\u0007LmÆ½i\u001dÐ\u0004\u007f/=\u0018\u0002\u0014Ô\u0011cý°Æg2\u0090e,\u0097v\u009c\u0093G·§ò\u0013Z\u0005¤ÙÃÿ£\u008d\u0095cO»\u0010MÛët\u0003\u001f\u0004Û\u0015êg\u0003ð\u000bÛ\u0004D$æ$\u0005Û³ÖYt\u0002pò\u0002\u008f{\u0004\u0084çþ\\\u0002\fÁ\u000e#\u007f!\u001fª\u0084iD¸\u001aAÿ|Ý\u0005Ì\u00874ß(\u0005ôÉ\u000b¯X\u0013\u008c\u0088~h\u0098ÉÈKø»â ¥.m\u0087¢\u0082Å\b\u0095 \u0018§üï¥Ù\u0012âäc!\u0085ëvfÏ*\u0090WïÚ¤t\u0005K\u0003É\u000b¡\u0006L\u0098Æ\\z\u008d\b}ÆÙö\u0096\u0097ÔÄ\t\u0091¡\u0098\u0087ìç¡J°\u0011´é©\u0080Üß[÷µøþ½V}^=S";
@@ -5490,9 +5506,9 @@ public final class Cz2 {
                   if ((var26 += var17) >= var20) {
                      a = var21;
                      b = new String[35];
-                     long var8 = 6012521551019362092L;
+                     var8 = 6012521551019362092L;
                      long[] var14 = new long[61];
-                     int var11 = 0;
+                     var11 = 0;
                      String var12 = "\u0085<*\u0090È\\\u0080ë\u001a¿jFy\u009b\u001e\u0004ºÑ#\u0098íVýÑWDEÿ j=ïå\u000fK!\u0019]±Ti\u001b\u008c\u0010®cÐ£\u008aÂÜÒÕÜ\u00855î\u007fÍÊRZç\u0017\u0014¥}\u0014\u0001Âôê5ÑÀÕ}\u008eÂ\u0005N\u0000Æ=ï×ØT\u0017dÌè¼Ø£[÷©.G\tÞ£Ê\u0016'Kº;a\u0002\u0092^Ç©Ä\u0085+t\u0080kã©\u0005\u0099+Ë;Á\u008f¿\u0085\u0081Ù\u009aÊ\u001a¡þ\u0019÷£q\u00921£Ñ>oìd/rGêÎt\u008f\r\u008cX£\u0011Ö¢\u009aÇì\u0014g#èj\u009b¶CÌâF\u0001[x#äqF/zê\u0087¦Tí\f\u009ad\u0097Ø¯\u0000M\fìb\u0019\u000føÕö\u009d.\u009fÖoo»®½\u0019Q[`2\u0089Uº0:Ê¦c\u009b\u0080\u0007è9ÆlÉY\nQ3\u008dM\u000ed\u009ce3\u0010\u0017N\u0014±o\u000ee\u0083\u0092.fzK'WÅå¡ÌH\u0084¬0g¦\u009câEw@9\u001eü§i0·yß¯>qÎ\u009d\u008e:\u009bU\u001f¾\u0012È®\u008aE¡è eh\u0083\u001c|8{÷b/µôAÖ`ad¤Z¨â\u0098\u0086A³üfÅç~\u0096\u001fXC\u001d\u0099â\u0014I3ª\u0081\u000bxÇQO²º\u0019\u0013±èÃ\u009c\u0010\u0083]\u008eï¢ wµÍaÉä\u0094@\u0082\u0004e\u00ad?Ë\u0098}Ä\u001avÄNÐ¾z6\u0007\u001a\u0012lkæÚý£âÁtÚ\u0013q\u0088ï!»\u0081\u0000\u0011\u0087Ý\\l\"O\u0085Ò±ä\u0003\u008e\u001a©~}È`\u0097¢¹n¬¤jGË\u0090ÊCSF\u007fïÖ\u008e\u0092Ç¸. \n³\u0094\r4òÎöñößq¯";
                      int var13 = "\u0085<*\u0090È\\\u0080ë\u001a¿jFy\u009b\u001e\u0004ºÑ#\u0098íVýÑWDEÿ j=ïå\u000fK!\u0019]±Ti\u001b\u008c\u0010®cÐ£\u008aÂÜÒÕÜ\u00855î\u007fÍÊRZç\u0017\u0014¥}\u0014\u0001Âôê5ÑÀÕ}\u008eÂ\u0005N\u0000Æ=ï×ØT\u0017dÌè¼Ø£[÷©.G\tÞ£Ê\u0016'Kº;a\u0002\u0092^Ç©Ä\u0085+t\u0080kã©\u0005\u0099+Ë;Á\u008f¿\u0085\u0081Ù\u009aÊ\u001a¡þ\u0019÷£q\u00921£Ñ>oìd/rGêÎt\u008f\r\u008cX£\u0011Ö¢\u009aÇì\u0014g#èj\u009b¶CÌâF\u0001[x#äqF/zê\u0087¦Tí\f\u009ad\u0097Ø¯\u0000M\fìb\u0019\u000føÕö\u009d.\u009fÖoo»®½\u0019Q[`2\u0089Uº0:Ê¦c\u009b\u0080\u0007è9ÆlÉY\nQ3\u008dM\u000ed\u009ce3\u0010\u0017N\u0014±o\u000ee\u0083\u0092.fzK'WÅå¡ÌH\u0084¬0g¦\u009câEw@9\u001eü§i0·yß¯>qÎ\u009d\u008e:\u009bU\u001f¾\u0012È®\u008aE¡è eh\u0083\u001c|8{÷b/µôAÖ`ad¤Z¨â\u0098\u0086A³üfÅç~\u0096\u001fXC\u001d\u0099â\u0014I3ª\u0081\u000bxÇQO²º\u0019\u0013±èÃ\u009c\u0010\u0083]\u008eï¢ wµÍaÉä\u0094@\u0082\u0004e\u00ad?Ë\u0098}Ä\u001avÄNÐ¾z6\u0007\u001a\u0012lkæÚý£âÁtÚ\u0013q\u0088ï!»\u0081\u0000\u0011\u0087Ý\\l\"O\u0085Ò±ä\u0003\u008e\u001a©~}È`\u0097¢¹n¬¤jGË\u0090ÊCSF\u007fïÖ\u008e\u0092Ç¸. \n³\u0094\r4òÎöñößq¯"
                         .length();
@@ -5525,9 +5541,9 @@ public final class Cz2 {
                                     d = new Integer[61];
                                     long var0 = 2828086039467416516L;
                                     long[] var6 = new long[6];
-                                    int var3 = 0;
+                                    var3 = 0;
                                     String var4 = "DÆge¾+N`Dru¦A\u0014S\u00195µ8]áWíî\u001c\u0087°\u009a®nl\u0080";
-                                    int var5 = "DÆge¾+N`Dru¦A\u0014S\u00195µ8]áWíî\u001c\u0087°\u009a®nl\u0080".length();
+                                    var5 = "DÆge¾+N`Dru¦A\u0014S\u00195µ8]áWíî\u001c\u0087°\u009a®nl\u0080".length();
                                     byte var2 = 0;
 
                                     label52:
@@ -5686,7 +5702,6 @@ public final class Cz2 {
       }
    }
 }
-
 
 
 

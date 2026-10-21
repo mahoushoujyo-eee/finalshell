@@ -129,7 +129,8 @@ public class Na4 extends Ne4 {
    }
 
    public com.finalshell.ui.model.Cs2 R() {
-      com.finalshell.ui.model.Cs2 var2 = new com.finalshell.ui.model.Cs2();
+      com.finalshell.ui.model.Cs2 var2;
+      var2 = new com.finalshell.ui.model.Cs2();
       boolean var10000 = e();
       var2.D(this.D());
       boolean var1 = var10000;

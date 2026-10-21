@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.connection.Connection;
+import com.finalshell.connection.ConnectionState;
 import com.finalshell.ui.panel.Ky4;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
@@ -11,7 +11,7 @@ public class Qm2 {
    public InetAddress c;
    public int i;
    public Rdp2 J;
-   public Connection j;
+   public ConnectionState j;
    public CU M;
    public Tz4 e;
    public long n;
@@ -35,6 +35,7 @@ public class Qm2 {
    }
 
    public Qm2(LA3 var1, InetAddress var2, int var3, int var4, int var5, F92 var6) throws Exception {
+      Qm2 var13;
       Ky4[] var10000 = J();
       this.l = true;
       this.N = System.currentTimeMillis();
@@ -58,7 +59,7 @@ public class Qm2 {
       label39: {
          try {
             this.J = new Rdp2(this);
-            this.j = new Connection(this);
+            this.j = new ConnectionState(this);
             this.M = new CU(this);
             var13 = this;
             if (var7 == null) {
@@ -147,6 +148,7 @@ public class Qm2 {
    }
 
    public void u(boolean var1) {
+      Qm2 var3;
       Ky4[] var2 = J();
       boolean var10000 = this.x;
       if (var2 != null) {

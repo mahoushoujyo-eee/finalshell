@@ -25,10 +25,11 @@ public final class No4 {
    }
 
    public static URI L(String var0) {
+      URL var3;
       String var10000 = FV_2.D();
       URL var2 = h(var0);
       String var1 = var10000;
-      URL var3 = var2;
+      var3 = var2;
       if (var1 == null) {
          if (var2 == null) {
             return null;
@@ -63,10 +64,11 @@ public final class No4 {
    }
 
    public static String t(String var0) {
+      URL var3;
       String var10000 = FV_2.D();
       URL var2 = h(var0);
       String var1 = var10000;
-      URL var3 = var2;
+      var3 = var2;
       if (var1 == null) {
          if (var2 == null) {
             return null;
@@ -79,10 +81,11 @@ public final class No4 {
    }
 
    public static int D(String var0) {
+      URL var3;
       String var10000 = FV_2.D();
       URL var2 = h(var0);
       String var1 = var10000;
-      URL var3 = var2;
+      var3 = var2;
       if (var1 == null) {
          if (var2 == null) {
             return -1;
@@ -95,6 +98,7 @@ public final class No4 {
    }
 
    public static String O(String var0) {
+      StringBuilder var3;
       String var10000 = FV_2.D();
       URL var2 = h(var0);
       String var1 = var10000;

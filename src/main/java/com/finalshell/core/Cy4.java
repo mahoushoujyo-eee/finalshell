@@ -247,7 +247,7 @@ public class Cy4 {
       Object var10003 = Ref.g(548276879245903892L, var2);
       O0 var10004 = (O0)(Registry.emptyArgs());
       long var5 = 421216752207984865L;
-      Object[] var4 = var10004;
+      Object var4 = var10004;
       var10004 = Ref.h(421216752207984865L, var4, var5);
 
       try {
@@ -262,7 +262,7 @@ public class Cy4 {
       Object var10005 = Ref.g(268049009246139868L, var6);
       O0 var10006 = (O0)(Registry.emptyArgs());
       long var9 = 421216752207984865L;
-      Object[] var8 = var10006;
+      Object var8 = var10006;
       var10006 = Ref.h(421216752207984865L, var8, var9);
 
       try {
@@ -277,7 +277,7 @@ public class Cy4 {
       Object var10007 = Ref.g(449332831945026542L, var10);
       O0 var10008 = (O0)(Registry.emptyArgs());
       long var13 = 421216752207984865L;
-      Object[] var12 = var10008;
+      Object var12 = var10008;
       var10008 = Ref.h(421216752207984865L, var12, var13);
 
       try {
@@ -292,7 +292,7 @@ public class Cy4 {
       Object var10009 = Ref.g(212296394969558371L, var14);
       O0 var10010 = (O0)(Registry.emptyArgs());
       long var17 = 421216752207984865L;
-      Object[] var16 = var10010;
+      Object var16 = var10010;
       var10010 = Ref.h(421216752207984865L, var16, var17);
 
       try {
@@ -307,7 +307,7 @@ public class Cy4 {
       Object var10011 = Ref.g(151819186404667425L, var18);
       O0 var10012 = (O0)(Registry.emptyArgs());
       long var21 = 421216752207984865L;
-      Object[] var20 = var10012;
+      Object var20 = var10012;
       var10012 = Ref.h(421216752207984865L, var20, var21);
 
       try {
@@ -1174,6 +1174,7 @@ public class Cy4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[10];
       int var11 = 0;
       String var10 = "wæ\u0017¥/\u007fX>Ös\u001fÏ4¿\u0005\u00958d×\u000e\u0013¡UÍÓr»2ÆN'sõØMá³ÓÈo\u0014Àöá§ñ?\u00836\u00adrpïÙ»¸\u0015\u008ft!\f\u0013;?\u009e\u009e\u0018\u0012\u007fóç\u0081F!~×5àI¢<\n\u0002k¹\u0014úIáÓ\u008e\u0083\u000b\u0019%ÚÝ\u008ctrïmû^\fÈÆà¡Ëÿ\u009b\u001clLÃË\nZ\n²8\u009bÌÍc\u000b\u0095";
@@ -1189,7 +1190,6 @@ public class Cy4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

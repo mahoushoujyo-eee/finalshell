@@ -243,10 +243,11 @@ public class Qg2 {
    }
 
    public static String S(byte[] var0, int var1) {
-      StringBuffer var3 = new StringBuffer();
+      StringBuffer var3;
+      var3 = new StringBuffer();
       int var10000 = (Dm4.F$boolean()) ? 1 : 0;
       int var4 = 0;
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
 
       while (var4 < var1) {
          var10000 = var4;
@@ -378,6 +379,7 @@ public class Qg2 {
    }
 
    public static String[] a(ConnectHost var0) {
+      String[] var10;
       boolean var10000 = Dm4.F$boolean();
       Vector var2 = new Vector();
       boolean var1 = var10000;
@@ -408,7 +410,6 @@ public class Qg2 {
 
       while (true) {
          if (var9 < var2.size()) {
-      String[] var10;
             var10 = var8;
             if (!var1) {
                break;
@@ -417,7 +418,6 @@ public class Qg2 {
             var8[var9] = (String)var2.elementAt(var9);
             var9++;
             if (var1) {
-      String[] var10;
                continue;
             }
          }
@@ -553,6 +553,7 @@ public class Qg2 {
    }
 
    public static String t(String var0) {
+      boolean var3;
       boolean var1 = Dm4.F$boolean();
       String var10000 = var0;
       if (var1) {
@@ -874,6 +875,7 @@ public class Qg2 {
    }
 
    public void E() {
+      Object[] var3;
       boolean var10000 = Dm4.F$boolean();
       this.t = this::E;
       boolean var1 = var10000;
@@ -886,7 +888,7 @@ public class Qg2 {
                Registry.lookupField(388376917454860932L).get(null);
                Object[] var10001 = Registry.packArgs(new WD3(this, var2));
                long var4 = 434592463220957006L;
-               Object[] var3 = var10001;
+               var3 = var10001;
                Ref.h(434592463220957006L, var3, var4);
 
                try {
@@ -2206,7 +2208,8 @@ public class Qg2 {
    }
 
    public static int a(int var0, long var1) {
-      int var3 = var0 ^ (int)(var1 & 32767L) ^ 17152;
+      int var3;
+      var3 = var0 ^ (int)(var1 & 32767L) ^ 17152;
       if (e[var3] == null) {
          e[var3] = (int)(d[var3] ^ var1);
       }
@@ -2216,9 +2219,12 @@ public class Qg2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      int var3;
+      char[] var32;
       String[] var13 = new String[19];
       int var11 = 0;
-      String var10 = "\u009aöd{×½E²P\u009bÿ\u009cARòOÆ\u0018\u0087\u0011ÜûÙ\u0017§eÃ\t#óÛ{\u0083¢\u0085»\u000e¶\u001bÓû\u008b c(µG\u001c\u0091kzZ\u0012D>ü?\u0014\u000fðý½Ñ£¿¤\u009b\u008c\u0010sÊ\u009fÓØ\u0016\u0087\u000biú[=Y+\u008cð\"x\u0092\tó¸>\u008c\u0001Î¦\u009dv\u0007R¦,Ð¤E\u0012\tE9J\u0005\r\u001f¯t¦\u000bÃ«\u000e\u0017ñnÛXÈmÍ\u000b£k\u0002\u000frmé8\u008ea\u0005\u001cN\u009f\u0081Äm\u0097Ñ\u0086Â[°\u0019\n\u0080/\u0004`P`\u0012o %å.\u0097©n\u0013e:\u009bâ'\u008d³\u0092[sñé\\\u008dr\u009c\u0082\n\u0090\u0011\u000f\u009eÄs\u009c8Ä$¥¥{8¾Üº\u0081º\u0007:Ó!~\u0005\u0090&\u0005ÌÑïÜÌ\u000bIT_èÙ\u0091\u009c§ \u0092Õ\u000b\u001d6\u0097\u007fÈÕð\u0016t\u0082¨!\u0015äê«\u0000z|;wì\u0006ïÜ^õß;.\nm\u0003øáú\u0099ñé\u0097&Úë g";
+      var10 = "\u009aöd{×½E²P\u009bÿ\u009cARòOÆ\u0018\u0087\u0011ÜûÙ\u0017§eÃ\t#óÛ{\u0083¢\u0085»\u000e¶\u001bÓû\u008b c(µG\u001c\u0091kzZ\u0012D>ü?\u0014\u000fðý½Ñ£¿¤\u009b\u008c\u0010sÊ\u009fÓØ\u0016\u0087\u000biú[=Y+\u008cð\"x\u0092\tó¸>\u008c\u0001Î¦\u009dv\u0007R¦,Ð¤E\u0012\tE9J\u0005\r\u001f¯t¦\u000bÃ«\u000e\u0017ñnÛXÈmÍ\u000b£k\u0002\u000frmé8\u008ea\u0005\u001cN\u009f\u0081Äm\u0097Ñ\u0086Â[°\u0019\n\u0080/\u0004`P`\u0012o %å.\u0097©n\u0013e:\u009bâ'\u008d³\u0092[sñé\\\u008dr\u009c\u0082\n\u0090\u0011\u000f\u009eÄs\u009c8Ä$¥¥{8¾Üº\u0081º\u0007:Ó!~\u0005\u0090&\u0005ÌÑïÜÌ\u000bIT_èÙ\u0091\u009c§ \u0092Õ\u000b\u001d6\u0097\u007fÈÕð\u0016t\u0082¨!\u0015äê«\u0000z|;wì\u0006ïÜ^õß;.\nm\u0003øáú\u0099ñé\u0097&Úë g";
       int var12 = "\u009aöd{×½E²P\u009bÿ\u009cARòOÆ\u0018\u0087\u0011ÜûÙ\u0017§eÃ\t#óÛ{\u0083¢\u0085»\u000e¶\u001bÓû\u008b c(µG\u001c\u0091kzZ\u0012D>ü?\u0014\u000fðý½Ñ£¿¤\u009b\u008c\u0010sÊ\u009fÓØ\u0016\u0087\u000biú[=Y+\u008cð\"x\u0092\tó¸>\u008c\u0001Î¦\u009dv\u0007R¦,Ð¤E\u0012\tE9J\u0005\r\u001f¯t¦\u000bÃ«\u000e\u0017ñnÛXÈmÍ\u000b£k\u0002\u000frmé8\u008ea\u0005\u001cN\u009f\u0081Äm\u0097Ñ\u0086Â[°\u0019\n\u0080/\u0004`P`\u0012o %å.\u0097©n\u0013e:\u009bâ'\u008d³\u0092[sñé\\\u008dr\u009c\u0082\n\u0090\u0011\u000f\u009eÄs\u009c8Ä$¥¥{8¾Üº\u0081º\u0007:Ó!~\u0005\u0090&\u0005ÌÑïÜÌ\u000bIT_èÙ\u0091\u009c§ \u0092Õ\u000b\u001d6\u0097\u007fÈÕð\u0016t\u0082¨!\u0015äê«\u0000z|;wì\u0006ïÜ^õß;.\nm\u0003øáú\u0099ñé\u0097&Úë g"
          .length();
       char var9 = 23;
@@ -2310,7 +2316,7 @@ public class Qg2 {
                      c = new String[19];
                      long var0 = 1159073172608816424L;
                      long[] var6 = new long[3];
-                     int var3 = 0;
+                     var3 = 0;
                      String var4 = "D\u0086½q\u0017\\Û\u0085ñ\n¸|\u001eíqL\u0099;.\u001e? fÚ";
                      int var5 = "D\u0086½q\u0017\\Û\u0085ñ\n¸|\u001eíqL\u0099;.\u001e? fÚ".length();
                      byte var2 = 0;
@@ -2370,7 +2376,6 @@ public class Qg2 {
       }
    }
 }
-
 
 
 

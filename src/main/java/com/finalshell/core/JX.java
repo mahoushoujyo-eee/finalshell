@@ -7,7 +7,7 @@ import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-public class JX extends Jk2 {
+public class JX extends ProxyMessage {
    public int t;
    public byte[] Q;
    public static boolean J;
@@ -33,7 +33,7 @@ public class JX extends Jk2 {
       String[] var4;
       String var7;
       label34: {
-         String[] var10000 = Jk2.Y();
+         String[] var10000 = ProxyMessage.Y();
          var4 = var10000;
          InetAddress var10001 = var2;
          if (var4 != null) {
@@ -1259,6 +1259,7 @@ public class JX extends Jk2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[6];
       int var11 = 0;
       String var10 = "¨ÈPR\u001c\u0007Å\u0007ó\u009cVj*\u000568¦ \u0016\u0005\u009cäî«¡";
@@ -1273,7 +1274,6 @@ public class JX extends Jk2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

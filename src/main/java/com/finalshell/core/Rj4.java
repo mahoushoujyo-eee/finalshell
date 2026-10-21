@@ -25,7 +25,7 @@ public class Rj4 implements EU {
    public void z(int var1, byte[] var2, byte[] var3) throws Exception {
       int var10000 = (Y12.D()) ? 1 : 0;
       String var5 = a(25346, 8129);
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
 
       label61: {
          label65: {

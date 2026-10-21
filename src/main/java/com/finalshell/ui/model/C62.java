@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.LD3_2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Edit;
+import com.finalshell.ui.panel.ProxySelectionPanel;
 import com.finalshell.ui.panel.Ky4;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -44,7 +44,7 @@ public class C62 extends AbstractTableModel {
    }
 
    public int C(String var1) {
-      Edit.t();
+      ProxySelectionPanel.t();
       Object var3 = -1;
       Object var4 = false;
       Object var7 = 484427497215582043L;
@@ -60,7 +60,7 @@ public class C62 extends AbstractTableModel {
                var10001 = var6;
                String var10002 = Registry.emptyArgs();
                long var10 = 194080076253066315L;
-               Object[] var9 = var10002;
+               Object var9 = var10002;
                var10002 = Ref.h(194080076253066315L, var9, var10);
 
                try {
@@ -132,7 +132,7 @@ public class C62 extends AbstractTableModel {
 
    @Override
    public Object getValueAt(int var1, int var2) {
-      Edit.t();
+      ProxySelectionPanel.t();
       Object var5 = 484427497215582043L;
       LD3_2 var4 = (LD3_2)((ArrayList)Ref.g(484427497215582043L, var5)).get(var1);
       LD3_2 var10001 = (LD3_2)var2;
@@ -163,7 +163,8 @@ public class C62 extends AbstractTableModel {
 
    @Override
    public void setValueAt(Object var1, int var2, int var3) {
-      Edit.t();
+      long var20;
+      ProxySelectionPanel.t();
       super.setValueAt(var1, var2, var3);
       Object var9 = 484427497215582043L;
       LD3_2 var5 = (LD3_2)((ArrayList)Ref.g(484427497215582043L, var9)).get(var2);
@@ -207,7 +208,7 @@ public class C62 extends AbstractTableModel {
          for (LD3_2 var8 : (ArrayList)Ref.g(484427497215582043L, var17)) {
             label76: {
                if (var4 == null) {
-                  var10002 = (var8.equals(var5)) ? 1 : 0;
+                  var10002 = (byte)((var8.equals(var5)) ? 1 : 0);
                   if (var4 != null) {
                      break label59;
                   }
@@ -218,7 +219,7 @@ public class C62 extends AbstractTableModel {
                }
 
                Object[] var27 = Registry.packArgs(false);
-               long var20 = 504080307980644796L;
+               var20 = 504080307980644796L;
                Object[] var19 = var27;
                Ref.h(504080307980644796L, var19, var20);
 
@@ -252,7 +253,7 @@ public class C62 extends AbstractTableModel {
 
    @Override
    public boolean isCellEditable(int var1, int var2) {
-      Ky4[] var3 = Edit.t();
+      Ky4[] var3 = ProxySelectionPanel.t();
       int var10000 = var2;
       if (var3 == null) {
          if (var2 == 0) {
@@ -281,6 +282,7 @@ public class C62 extends AbstractTableModel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var0 = new String[6];
       int var4 = 0;
       String var3 = "乯朜\u0002簯垭\u0002弇剫\u0002呙秖";
@@ -295,7 +297,6 @@ public class C62 extends AbstractTableModel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label48: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

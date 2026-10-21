@@ -99,6 +99,10 @@ public class YS3 extends GT3 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      float var35;
+      float var37;
+      float var40;
+      float var42;
       int[] var6 = new int[var1 * var2];
       boolean var7 = false;
       String[] var10000 = W5.q();
@@ -357,6 +361,9 @@ public class YS3 extends GT3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long var35;
+      long var37;
+      long var40;
       char[] var10003 = "1/\u00037sZEJ\t\u0013\"i\\I\u0006j*6oDTKdU".toCharArray();
       int var10004 = var10003.length;
       int var10 = 0;
@@ -436,7 +443,7 @@ public class YS3 extends GT3 {
                            b = var17;
                            d = new Integer[4];
                            long var11 = 6032348651970375071L;
-                           long var40 = 6032348651970375592L ^ var11;
+                           var40 = 6032348651970375592L ^ var11;
                            byte var33 = -1;
                            f = var40;
                            return;
@@ -550,7 +557,7 @@ public class YS3 extends GT3 {
                   byte[] var9 = var6.substring(var24, var4).getBytes("ISO-8859-1");
                   long[] var10000 = var8;
                   var24 = var5++;
-                  long var35 = ((long)var9[0] & 255L) << 56
+                  var35 = ((long)var9[0] & 255L) << 56
                      | ((long)var9[1] & 255L) << 48
                      | ((long)var9[2] & 255L) << 40
                      | ((long)var9[3] & 255L) << 32
@@ -569,7 +576,7 @@ public class YS3 extends GT3 {
                               b = var8;
                               d = new Integer[4];
                               long var0 = 6032348651970375071L;
-                              long var37 = 6032348651970375592L ^ var0;
+                              var37 = 6032348651970375592L ^ var0;
                               byte var28 = -1;
                               f = var37;
                               return;

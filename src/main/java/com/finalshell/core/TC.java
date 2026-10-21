@@ -1246,6 +1246,7 @@ var10001 = new Insets(var10002, var10003 - var10004, var2.bottom - var3.bottom, 
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[5];
       int var3 = 0;
       String var2 = "\u008d\"c\u0088ù7\u0097z\u0007æ\r\u0015\u00952?BGfüÄ!äü\u001d¿¾\u0093\u0082^\u00142×^/tvw\f\u008fÂ÷¤¿L»©\u007f[BXÐy\u0012Ý2¾·Ö;\t¼è£\u008dùµ$deG¾ü\u0084µRªòÌÚ\u009d@aõáa ]\u008c";
@@ -1261,7 +1262,6 @@ var10001 = new Insets(var10002, var10003 - var10004, var2.bottom - var3.bottom, 
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -29,7 +29,7 @@ public class BX3 implements ActionListener {
          Ref.g(384272417246389638L, var10);
          YE var10005 = (YE)(Registry.packArgs(var2));
          long var13 = 619629146278140254L;
-         Object[] var12 = var10005;
+         Object var12 = var10005;
          var10005 = Ref.h(619629146278140254L, var12, var13);
 
          try {

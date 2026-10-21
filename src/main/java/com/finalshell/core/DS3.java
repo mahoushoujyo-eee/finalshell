@@ -416,10 +416,11 @@ public class DS3 extends Dm4 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static AQ y(ConnectHost var0, String var1, int var2) {
+      AQ var10;
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       Vector var4 = G;
       synchronized (G){} // $VF: monitorenter 
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
 
       try {
          int var5 = 0;
@@ -429,7 +430,7 @@ public class DS3 extends Dm4 {
             label122: {
                label133: {
                   var6 = (AQ)G.elementAt(var5);
-                  AQ var10 = var6;
+                  var10 = var6;
                   if (!var3) {
                      if (var6.o != var0 && !var3) {
                         break label133;
@@ -498,6 +499,7 @@ public class DS3 extends Dm4 {
    }
 
    public static String[] R(ConnectHost var0) {
+      String[] var10;
       boolean var10000 = Dm4.F$boolean();
       Vector var2 = new Vector();
       boolean var1 = var10000;
@@ -536,7 +538,6 @@ public class DS3 extends Dm4 {
 
       while (true) {
          if (var9 < var2.size()) {
-      String[] var10;
             var10 = var8;
             if (!var1) {
                break;
@@ -545,7 +546,6 @@ public class DS3 extends Dm4 {
             var8[var9] = (String)var2.elementAt(var9);
             var9++;
             if (var1) {
-      String[] var10;
                continue;
             }
          }
@@ -669,6 +669,8 @@ public class DS3 extends Dm4 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static void c(ConnectHost var0, String var1, int var2) {
+      AQ var22;
+      String var23;
       boolean var10000 = Dm4.J$boolean();
       Vector var4 = G;
       synchronized (G){} // $VF: monitorenter 
@@ -1688,9 +1690,11 @@ public class DS3 extends Dm4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var33;
       String[] var13 = new String[9];
       int var11 = 0;
-      String var10 = "B\fà¤Âè\u008fnÓÓ¡Úej\tm^(¸Ý\u0005\u001dv\u0007.U!AßWå\u00170[³!÷ÖÙ¢Ê\u001bCVö\u0093y~5Ñ#\bÐ¥Q\u001dÿý5g!ÃÀqé':L{²bK\u0096Hnâs\u0014%º3áÐÒú\u0013\"\u0080ñZ°ºÙ\t\u001f\u0082\u0096\r\u0090\u0089\u0096\u0015\u009cÔ\u0089\tæØ¼Ö\tE·B¬\u001d4ÌLA\u000e\u0007%éU4\u00ad.\u0089þ<Â]y\u0017Ä\\ÐÀ\"\u008fòG°\b";
+      var10 = "B\fà¤Âè\u008fnÓÓ¡Úej\tm^(¸Ý\u0005\u001dv\u0007.U!AßWå\u00170[³!÷ÖÙ¢Ê\u001bCVö\u0093y~5Ñ#\bÐ¥Q\u001dÿý5g!ÃÀqé':L{²bK\u0096Hnâs\u0014%º3áÐÒú\u0013\"\u0080ñZ°ºÙ\t\u001f\u0082\u0096\r\u0090\u0089\u0096\u0015\u009cÔ\u0089\tæØ¼Ö\tE·B¬\u001d4ÌLA\u000e\u0007%éU4\u00ad.\u0089þ<Â]y\u0017Ä\\ÐÀ\"\u008fòG°\b";
       int var12 = "B\fà¤Âè\u008fnÓÓ¡Úej\tm^(¸Ý\u0005\u001dv\u0007.U!AßWå\u00170[³!÷ÖÙ¢Ê\u001bCVö\u0093y~5Ñ#\bÐ¥Q\u001dÿý5g!ÃÀqé':L{²bK\u0096Hnâs\u0014%º3áÐÒú\u0013\"\u0080ñZ°ºÙ\t\u001f\u0082\u0096\r\u0090\u0089\u0096\u0015\u009cÔ\u0089\tæØ¼Ö\tE·B¬\u001d4ÌLA\u000e\u0007%éU4\u00ad.\u0089þ<Â]y\u0017Ä\\ÐÀ\"\u008fòG°\b"
          .length();
       char var9 = 23;
@@ -1868,7 +1872,6 @@ public class DS3 extends Dm4 {
       }
    }
 }
-
 
 
 

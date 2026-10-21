@@ -54,6 +54,7 @@ public class Xb4 implements Runnable {
 
    @Override
    public void run() {
+      Xb4 var2;
       String var1 = Co2.U$String();
       boolean var10000 = this.L;
       if (var1 != null) {
@@ -124,6 +125,7 @@ public class Xb4 implements Runnable {
    }
 
    public void v(File var1, boolean var2) {
+      ImageIcon var6;
       label40: {
          String var10000 = Co2.U$String();
          OQ3 var4 = this.W.p();
@@ -146,7 +148,7 @@ public class Xb4 implements Runnable {
 
             label32: {
                label31: {
-                  ImageIcon var6 = var8;
+                  var6 = var8;
                   if (var3 != null) {
                      if (var6 == null) {
                         break label31;
@@ -173,11 +175,12 @@ public class Xb4 implements Runnable {
    }
 
    public void G(File var1, boolean var2) {
+      boolean var6;
       label40: {
          String var10000 = Co2.U$String();
          String var4 = com.finalshell.core.Cz2.G(var1.getName(), false).toLowerCase();
          String var3 = var10000;
-         boolean var6 = var2;
+         var6 = var2;
          if (var3 != null) {
             if (!var2) {
                break label40;
@@ -410,12 +413,14 @@ public class Xb4 implements Runnable {
    }
 
    public static void __vfClinit__() {
+      int var2;
+      long[] var6;
       long var0 = 2092753370335783284L;
-      long[] var6 = new long[2];
+      var6 = new long[2];
       int var3 = 0;
       String var4 = "±B\u007fJ\u0080\u0006úl×\u008f\u0095\u0095é³I\u001e";
       int var5 = "±B\u007fJ\u0080\u0006úl×\u008f\u0095\u0095é³I\u001e".length();
-      byte var2 = 0;
+      var2 = 0;
 
       do {
          int var10001 = var2;

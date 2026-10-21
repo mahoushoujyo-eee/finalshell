@@ -895,6 +895,7 @@ public class X4_2 extends ReflectionConverter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[9];
       int var3 = 0;
       String var2 = "Í\u0005\u0098@\f¯£¯\b6w/´h¥\u0083ü\u0005º<Áõ!\u0002ÓÕ\u0004l·\u001a]\u00027¨\b/ÜÄ{\u0087ÈÒC";
@@ -909,7 +910,6 @@ public class X4_2 extends ReflectionConverter {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

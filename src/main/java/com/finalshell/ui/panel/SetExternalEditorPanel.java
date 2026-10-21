@@ -34,15 +34,16 @@ public class SetExternalEditorPanel extends JPopupMenu {
    public Ck4 U;
    public Tf4 P;
    public com.finalshell.ui.model.Kl4 h;
-   public Connection4 T;
+   public ConnectionInfoPanel T;
    public boolean W;
    public Object X;
    public U62 y;
    public static String[] a;
    public static String[] b;
 
-   public SetExternalEditorPanel(Km2 var1, com.finalshell.ui.model.Kl4 var2, Connection4 var3) {
+   public SetExternalEditorPanel(Km2 var1, com.finalshell.ui.model.Kl4 var2, ConnectionInfoPanel var3) {
    super();
+   Object[] var20;
       String var10000 = Km2.U$String();
       String var4 = var10000;
       Registry.emptyArgs();
@@ -73,7 +74,7 @@ public class SetExternalEditorPanel extends JPopupMenu {
                Ref.g(166731455568463101L, var18);
                Object[] var10009 = Registry.packArgs(var5);
                long var21 = 303488344973038628L;
-               Object[] var20 = var10009;
+               var20 = var10009;
                var10009 = Ref.h(303488344973038628L, var20, var21);
                long var23 = 125534131174805204L;
                Object var22 = var10009;
@@ -133,6 +134,10 @@ public class SetExternalEditorPanel extends JPopupMenu {
    }
 
    public void t() {
+      JMenuItem var20;
+      String var78;
+      boolean var89;
+      boolean var94;
       JMenuItem var2 = new JMenuItem(a(-8384, -17012));
       String var10000 = Km2.U$String();
       var2.setEnabled(true);
@@ -162,7 +167,7 @@ public class SetExternalEditorPanel extends JPopupMenu {
             Object var10003 = Ref.g(450156560726681374L, var25);
             String var10004 = (String)(Registry.emptyArgs());
             long var28 = 605430732347023634L;
-            Object[] var27 = var10004;
+            Object var27 = var10004;
             var10004 = Ref.h(605430732347023634L, var27, var28);
 
             try {
@@ -187,7 +192,7 @@ var10003 = new JMenuItem(var10004);
             Ref.g(571912682165835448L, var31);
             ArrayList var10005 = (ArrayList)(Registry.emptyArgs());
             long var34 = 339037510611298074L;
-            Object[] var33 = var10005;
+            Object var33 = var10005;
             var10005 = Ref.h(339037510611298074L, var33, var34);
 
             try {
@@ -236,7 +241,7 @@ var10003 = new JMenuItem(var10004);
       Ref.g(571912682165835448L, var35);
       Integer var10002 = (Integer)(Registry.emptyArgs());
       long var38 = 407355336116664491L;
-      Object[] var37 = var10002;
+      Object var37 = var10002;
       var10002 = Ref.h(407355336116664491L, var37, var38);
 
       try {
@@ -297,9 +302,9 @@ var10003 = new JMenuItem(var10004);
          long var46 = 163462326892114024L;
          Object[] var45 = var83;
          Ref.h(163462326892114024L, var45, var46);
-         Object[] var87 = Registry.emptyArgs();
+         Object var87 = Registry.emptyArgs();
          long var48 = 633712494917113170L;
-         Object[] var47 = var87;
+         Object var47 = var87;
          var87 = Ref.h(633712494917113170L, var47, var48);
 
          try {
@@ -317,9 +322,9 @@ var10003 = new JMenuItem(var10004);
             long var52 = 306266403902896148L;
             Object[] var51 = var10007;
             Ref.h(306266403902896148L, var51, var52);
-            Object[] var10008 = Registry.emptyArgs();
+            Object var10008 = Registry.emptyArgs();
             long var54 = 518178624564683680L;
-            Object[] var53 = var10008;
+            Object var53 = var10008;
             var10008 = Ref.h(518178624564683680L, var53, var54);
 
             try {
@@ -351,7 +356,7 @@ var10003 = new JMenuItem(var10004);
       var19.setEnabled(true);
       var19.addActionListener(new com.finalshell.ui.listener.U2(this));
       var18.add(var19);
-      JMenuItem var20 = new JMenuItem(a(-8380, 7304));
+      var20 = new JMenuItem(a(-8380, 7304));
       var20.setEnabled(true);
       var20.addActionListener(new FJ3(this));
       var18.add(var20);
@@ -367,7 +372,7 @@ var10003 = new JMenuItem(var10004);
          var84 = var84 > 0 ? 1 : 0;
       }
 
-      this.setEnabled((boolean)var84);
+      this.setEnabled(var84);
       var22.addActionListener(new Lf4(this));
       this.add(var22);
       JMenuItem var23 = new JMenuItem(a(-8361, 27389));
@@ -377,7 +382,7 @@ var10003 = new JMenuItem(var10004);
          var90 = var90 > 0 ? 1 : 0;
       }
 
-      this.setEnabled((boolean)var90);
+      this.setEnabled(var90);
       var23.addActionListener(new K1(this));
       this.add(var23);
       this.addSeparator();
@@ -388,7 +393,7 @@ var10003 = new JMenuItem(var10004);
          var10006 = var10006 > 0 ? 1 : 0;
       }
 
-      this.setEnabled((boolean)var10006);
+      this.setEnabled(var10006);
       var24.addActionListener(new com.finalshell.ui.listener.Kd4(this));
       this.add(var24);
       SetExternalEditorPanel var91 = this;
@@ -1228,6 +1233,7 @@ var10003 = new JMenuItem(var10004);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[20];
       int var3 = 0;
       String var2 = "攉亴\u0007旾与木阆¢\u008c2\u0002剏阏\u0005攏杏罃轮噶\u0002刔旺\u0003敄丶夅\u0004籩纸儙胘\u0005夎郞翀輀嘆\u0003酀咴咲\u0004姲刻跞徬\u0007郜拞旷果缽输嚸\u0002拃弭\u0007譪缷姱递罞輞囔\u0005且侯$@ã\u0002仟辠\u0004拘匨俁辌\u0005函羭罟輸囵\u0002攝庻";
@@ -1243,7 +1249,6 @@ var10003 = new JMenuItem(var10004);
          byte var10002 = -1;
 
          while (true) {
-      Object var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

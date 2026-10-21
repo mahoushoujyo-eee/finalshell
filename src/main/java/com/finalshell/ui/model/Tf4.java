@@ -106,7 +106,7 @@ public class Tf4 implements Serializable {
                var10001 = var6;
                String var10002 = Registry.emptyArgs();
                long var10 = 498856411508641826L;
-               Object[] var9 = var10002;
+               Object var9 = var10002;
                var10002 = Ref.h(498856411508641826L, var9, var10);
 
                try {
@@ -162,7 +162,7 @@ public class Tf4 implements Serializable {
 
                String var10003 = (String)(Registry.emptyArgs());
                long var11 = 605430732347023634L;
-               Object[] var10 = var10003;
+               Object var10 = var10003;
                var10003 = Ref.h(605430732347023634L, var10, var11);
 
                try {
@@ -200,7 +200,7 @@ public class Tf4 implements Serializable {
          Ck4 var4 = (Ck4)var3.next();
          String var10002 = Registry.emptyArgs();
          long var8 = 605430732347023634L;
-         Object[] var7 = var10002;
+         Object var7 = var10002;
          var10002 = Ref.h(605430732347023634L, var7, var8);
 
          try {
@@ -241,7 +241,7 @@ public class Tf4 implements Serializable {
          Tf4 var4 = (Tf4)var3.next();
          String var10002 = Registry.emptyArgs();
          long var8 = 498856411508641826L;
-         Object[] var7 = var10002;
+         Object var7 = var10002;
          var10002 = Ref.h(498856411508641826L, var7, var8);
 
          try {

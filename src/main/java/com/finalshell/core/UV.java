@@ -11,6 +11,7 @@ public abstract class UV {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    static void __vfClinit__() {
+      char[] var20;
       String[] var0 = new String[29];
       int var4 = 0;
       String var3 = "Naj{\bNiyuyBZ@\u0005Ninbn'Z@\u000bbYrd{AXU\u001cu{4jYBSs4W@YBYb`}@E\u0010ndeaJXD\u0005Nlysk\nNlcqpMQZhn\u0006Nni\u007fnU\u0006N}b~uU\u0004Njdv\u0007@ffusT@\u0005Nlys{\u0006Nld}lM\u0005Nkjd}\u0006N|b~uU\u0005Q}y\u007fn\u0007N}zyrH@\u0005Nlysy\u0011Z@\u000bs]sf}JY\u0010xd`qL_\u0004Nnh{\u0004Nib~\u0005Nlysm\u0004Nlys\u0005lWSHD\bNld}q@ZP\u0004Nlj~\u0007N|\u007ftySF\u0005N}{\u007fo";
@@ -26,7 +27,6 @@ public abstract class UV {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label48: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

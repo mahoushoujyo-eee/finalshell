@@ -25,6 +25,7 @@ public class Dq4_2 implements TreeCellRenderer {
 
    public Dq4_2() {
    super();
+   boolean var15;
       short var10000 = -23004;
       String var10001 = com.finalshell.ui.panel.AA.z();
       String var1 = var10001;
@@ -56,10 +57,6 @@ public class Dq4_2 implements TreeCellRenderer {
             Boolean var14 = var3;
             if (var1 == null) {
                if (var3 == null) {
-      Boolean var15;
-      Boolean var15;
-      Boolean var15;
-      Boolean var15;
                   break label33;
                }
 
@@ -85,6 +82,7 @@ public class Dq4_2 implements TreeCellRenderer {
 
    @Override
    public Component getTreeCellRendererComponent(JTree var1, Object var2, boolean var3, boolean var4, boolean var5, int var6, boolean var7) {
+      Boolean var40;
       String var8 = com.finalshell.ui.panel.AA.z();
       if (var5) {
          String var10 = var1.convertValueToText(var2, var3, var4, var5, var6, false);
@@ -120,9 +118,9 @@ public class Dq4_2 implements TreeCellRenderer {
                Fp2 var12 = (Fp2)var10003;
                Object var19 = 193338774593183220L;
                JCheckBox var10004 = (JCheckBox)Ref.g(193338774593183220L, var19);
-               Object[] var10006 = Registry.emptyArgs();
+               String var10006 = (String)(Registry.emptyArgs());
                long var22 = 585060136778417060L;
-               Object[] var21 = var10006;
+               Object var21 = var10006;
                var10006 = Ref.h(585060136778417060L, var21, var22);
 
                try {
@@ -134,9 +132,9 @@ public class Dq4_2 implements TreeCellRenderer {
                var12.setText(var10006);
                Object var23 = 193338774593183220L;
                JCheckBox var38 = (JCheckBox)Ref.g(193338774593183220L, var23);
-               Object[] var10008 = Registry.emptyArgs();
+               Object var10008 = Registry.emptyArgs();
                long var26 = 599826905301270665L;
-               Object[] var25 = var10008;
+               Object var25 = var10008;
                var10008 = Ref.h(599826905301270665L, var25, var26);
 
                try {
@@ -973,6 +971,7 @@ public class Dq4_2 implements TreeCellRenderer {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var15;
       String[] var5 = new String[2];
       int var3 = 0;
       String var2 = "^î\u0081\u0016IvØ¬@ZE§\\k\u001cä\u0000vx\u008eý²á¡çFZJ+Võ\tó+4®ÿc\u0013C\u0084";
@@ -1052,7 +1051,7 @@ public class Dq4_2 implements TreeCellRenderer {
             }
          }
 
-         String var15 = new String(var10002).intern();
+         var15 = new String(var10002).intern();
          byte var10 = -1;
          var5[var3++] = var15;
          if ((var0 += var1) >= var4) {

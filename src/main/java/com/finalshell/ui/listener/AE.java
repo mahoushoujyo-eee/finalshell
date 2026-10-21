@@ -17,6 +17,7 @@ public class AE extends MouseAdapter {
 
    @Override
    public void mouseDragged(MouseEvent var1) {
+      AE var3;
       int var2 = EY.G();
       boolean var10000 = this.l.I();
       if (var2 != 0) {

@@ -66,9 +66,11 @@ public class DR extends AbstractTableModel {
    }
 
    public void o(L9 var1) {
-      Object[] var10002 = Registry.emptyArgs();
+      Integer var11;
+      Integer var9;
+      Object var10002 = Registry.emptyArgs();
       long var3 = 127422501806576014L;
-      Object[] var2 = var10002;
+      Object var2 = var10002;
       var10002 = Ref.h(127422501806576014L, var2, var3);
 
       try {
@@ -77,9 +79,9 @@ public class DR extends AbstractTableModel {
          throw var7.getTargetException();
       }
 
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var5 = 127422501806576014L;
-      Object[] var4 = var10004;
+      Object var4 = var10004;
       var10004 = Ref.h(127422501806576014L, var4, var5);
 
       try {
@@ -107,6 +109,7 @@ public class DR extends AbstractTableModel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var0 = new String[6];
       int var4 = 0;
       String var3 = "你罸\u0004廛迉w4\u0002叼逗\u0002dF";
@@ -121,7 +124,6 @@ public class DR extends AbstractTableModel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label48: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -1656,6 +1656,7 @@ public final class QJ extends FilterInputStream {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var40;
       String[] var21 = new String[8];
       int var19 = 0;
       String var18 = "\u0099ZsW\u009fÔ\u0007+òþ\u008d©°¹J\u0000êW\u0014±Õ>]«\bXºz\u0086ç®q!#åÿÔ\u001eÁ\u009b~0\u001bj°\"\u0016²¿oGuú\u008c\\èu\u008cÞGG¹í\u0000\u001fU\u009e½,\rXË²Üéu\u000bó\u0097ìZ\u0098x\"êãçûÑí\u0088\fâ\u0014Gu\u0006¤\u008d\u0085~\u0012l\u0006xh_¢l\u009eOa_Þ\u0082êß\u0084\u0014q)\u0018·\u001e\u0098\u0014Ì¤Ñá¬\u0000ªìªàÁ)\u0091";
@@ -1671,7 +1672,6 @@ public final class QJ extends FilterInputStream {
          byte var10002 = -1;
 
          while (true) {
-      char[] var40;
             label66: {
                char[] var44 = var10001.toCharArray();
                int var10004 = var44.length;

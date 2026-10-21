@@ -374,6 +374,7 @@ public class HO_2 extends F2_4 implements O2_5 {
    }
 
    public Map O() {
+      HashMap var8;
       HashMap var2 = new HashMap();
       String[] var10000 = RG_2.C();
       Cr2_2[] var3 = this.R();
@@ -383,7 +384,6 @@ public class HO_2 extends F2_4 implements O2_5 {
 
       while (true) {
          if (var5 < var4) {
-      String[] var8;
             Cr2_2 var6 = var3[var5];
 
             try {
@@ -398,7 +398,6 @@ public class HO_2 extends F2_4 implements O2_5 {
                   continue;
                }
             } catch (IllegalStateException var7) {
-      String[] var8;
                throw a(var7);
             }
          }
@@ -662,6 +661,7 @@ public class HO_2 extends F2_4 implements O2_5 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 5231) & 65535;
       if (d[var2] == null) {
          char[] var3 = b[var2].toCharArray();
@@ -1448,7 +1448,7 @@ public class HO_2 extends F2_4 implements O2_5 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1467,6 +1467,7 @@ public class HO_2 extends F2_4 implements O2_5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[15];
       int var3 = 0;
       String var2 = "\u0089Ó\u001f\u0007U\t\u001cÀDhÉå4_ñ\u0012Èã')=ad¦ª=hN\u001e;±\u0015|\u0001\u001d8(_T\u008a\u0019u\u009cêüb2DPÕÛ\"{©ãû.â\u008bÞ#ã¥E3°Ü\u0099\u001f\u0084\u0017ã\u0082ÞU\u008edÔ\u009a|0ËÊÔ«\u008eÔ¬gÜ\u0090s\u0080\u0089\u001fVÚvÁæ\u0084\u0010ËÝ^@\u0014Û\u0019±YÔ\u008f\u007fýP\u0006îd\u0080\u00827L*\u0000ÿ\u0094_õ¶Z@\u0086dEE$+¢OÐJ{v\r1=\f\u001d¦ðaSÇ\u0081Éö¾Ëþ(²ÌÄî@+\u00828va)\u0005\u0012\u0088-zÁ~`äI:Îþýÿ\u0012´Å¥tâs\u00adpÐq'\u009d«\n\u0099#\u001e\u0095dÞñ_#»Ç##V\\Üª®W\u0095¤\u0011b¨À÷ètYX¥¬Ñ9Ò\u0096íZ[èö¸\\D\u0004\u0094LøÞ\"\no\u00156\u0090þ\u0004þµÝöõ}H%\u0085F@BL\u009d\u0004e\u008cPw¹õñ1\u0014ø¢½FÅ¼hÿµ\u0015h\t\u009e²Û×ò?õq6\u008b/¸<\u009dÁS \u0095ð¥B\t¨\u00adÌ\u0001\u0011ÃÄùNù,\rØpå[ô\u0011¬\u007fD\u001c\u008fe\u0092Øc\u0011v\u008f\u0084Qò\u0091ÂÒ¯ª\u0014\u0096\u0004ç\u009e_N";
@@ -1587,7 +1588,6 @@ public class HO_2 extends F2_4 implements O2_5 {
       }
    }
 }
-
 
 
 

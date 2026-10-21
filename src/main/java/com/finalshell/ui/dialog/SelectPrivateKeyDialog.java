@@ -8,7 +8,7 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.ui.listener.B42;
 import com.finalshell.ui.listener.KM3;
 import com.finalshell.ui.listener.LZ;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import com.finalshell.ui.panel.Ky4;
 import java.awt.Window;
 import java.awt.Dialog.ModalityType;
@@ -19,7 +19,7 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class SelectPrivateKeyDialog extends JDialog {
-   public ImportPanel i;
+   public ImportMenuPanel i;
    public JPanel Y;
    public LN3 k;
    public boolean P;
@@ -31,15 +31,15 @@ public class SelectPrivateKeyDialog extends JDialog {
    public SelectPrivateKeyDialog(Window var1) {
       super(var1);
       Registry.lookupField(302973513284937780L).setBoolean(this, false);
-      ImportPanel.j();
+      ImportMenuPanel.j();
       this.setModalityType(ModalityType.DOCUMENT_MODAL);
-      ImportPanel var10002 = new ImportPanel();
+      ImportMenuPanel var10002 = new ImportMenuPanel();
       long var7 = 272928281081136065L;
-      ImportPanel var6 = var10002;
+      ImportMenuPanel var6 = var10002;
       Ref.s(272928281081136065L, var6, var7);
       this.setLayout(new MigLayout(a(22402, -1290)));
       Object var8 = 272928281081136065L;
-      this.add((ImportPanel)Ref.g(272928281081136065L, var8), a(22406, -1248));
+      this.add((ImportMenuPanel)Ref.g(272928281081136065L, var8), a(22406, -1248));
       JPanel var10004 = new JPanel();
       long var11 = 404168295857350239L;
       JPanel var10 = var10004;
@@ -89,7 +89,7 @@ public class SelectPrivateKeyDialog extends JDialog {
       Ref.g(272928281081136065L, var26);
       NA_2 var10012 = (NA_2)(Registry.emptyArgs());
       long var29 = 383544679767146894L;
-      Object[] var28 = var10012;
+      Object var28 = var10012;
       var10012 = Ref.h(383544679767146894L, var28, var29);
 
       try {
@@ -101,18 +101,18 @@ public class SelectPrivateKeyDialog extends JDialog {
       NA_2 var5 = var10012;
       var5.addMouseListener(new LZ(this));
       if (Ky4.F$arrString() != null) {
-         ImportPanel.u(new String[3]);
+         ImportMenuPanel.u(new String[3]);
       }
    }
 
    public void I() {
       Registry.lookupField(302973513284937780L).setBoolean(this, true);
-      ImportPanel.j();
+      ImportMenuPanel.j();
       Object var3 = 272928281081136065L;
       Object var10002 = Ref.g(272928281081136065L, var3);
       LN3 var10003 = (LN3)(Registry.emptyArgs());
       long var6 = 457204009113929650L;
-      Object[] var5 = var10003;
+      Object var5 = var10003;
       var10003 = Ref.h(457204009113929650L, var5, var6);
 
       try {
@@ -150,12 +150,12 @@ public class SelectPrivateKeyDialog extends JDialog {
       }
    }
 
-   public ImportPanel y() {
+   public ImportMenuPanel y() {
       Object var1 = 272928281081136065L;
-      return (ImportPanel)Ref.g(272928281081136065L, var1);
+      return (ImportMenuPanel)Ref.g(272928281081136065L, var1);
    }
 
-   public void u(ImportPanel var1) {
+   public void u(ImportMenuPanel var1) {
       long var3 = 272928281081136065L;
       Ref.s(272928281081136065L, var1, var3);
    }
@@ -997,6 +997,7 @@ public class SelectPrivateKeyDialog extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[9];
       int var11 = 0;
       String var10 = "占淐\u0011ìL\u0081\u007f\rËµ\\£\u000eÂ^2Tù\u0006K\u0016Æ\u0081ìî¦\u00adE\u0019ÍU`ì\u0089\u0089¨u\u00ad\u0004ý\u001c&\f.\f^D\u008b\u001f$hõ4¡ð%\u009djÂõl`¶|G+\u0089\u0010f\u0013EºÖ?'³uÓÑÞ\u000f\u0082,\u0081\u0082\u0001\u007f\u008f/Í\u0016Ö²î\u0088æaM\u0080Ìf@\u008a\u008dE(ì½7ÿzfÀ\u000eþnÐ{dZ\u0082\u0002 ~pÞ\u0085\t\u0004逷拯礷铼";
@@ -1012,7 +1013,6 @@ public class SelectPrivateKeyDialog extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

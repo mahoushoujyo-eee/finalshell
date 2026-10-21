@@ -119,6 +119,7 @@ public class GH3 extends W5 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      int var37;
       String[] var3 = W5.q();
       BufferedImage var10000 = var2;
       if (var3 != null) {

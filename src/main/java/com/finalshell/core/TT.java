@@ -32,6 +32,7 @@ public class TT extends T4 {
 
    @Override
    public void addLayoutComponent(Component var1, Object var2) {
+      LayoutManager var6;
       int var10000 = T4.b();
       Iterator var4 = this.L.iterator();
       int var3 = var10000;
@@ -39,7 +40,7 @@ public class TT extends T4 {
       while (var4.hasNext()) {
          label19: {
             LayoutManager var5 = (LayoutManager)var4.next();
-            LayoutManager var6 = var5;
+            var6 = var5;
             if (var3 != 0) {
                if (!(var5 instanceof LayoutManager2)) {
                   break label19;
@@ -89,6 +90,7 @@ public class TT extends T4 {
 
    @Override
    public void A(Component var1, Object var2) {
+      LayoutManager var6;
       int var10000 = T4.O();
       Iterator var4 = this.L.iterator();
       int var3 = var10000;
@@ -96,7 +98,7 @@ public class TT extends T4 {
       while (var4.hasNext()) {
          label40: {
             LayoutManager var5 = (LayoutManager)var4.next();
-            LayoutManager var6 = var5;
+            var6 = var5;
             if (var3 == 0) {
                if (var5 instanceof LayoutManager2) {
                   ((LayoutManager2)var5).addLayoutComponent(var1, var2);
@@ -149,6 +151,7 @@ public class TT extends T4 {
 
    @Override
    public Dimension preferredLayoutSize(Container var1) {
+      Dimension var6;
       int var10000 = T4.O();
       Dimension var3 = new Dimension(0, 0);
       int var2 = var10000;
@@ -164,8 +167,6 @@ public class TT extends T4 {
 
             var3 = var6;
             if (var2 == 0) {
-      int var6;
-      int var6;
                continue;
             }
          }
@@ -179,6 +180,7 @@ public class TT extends T4 {
 
    @Override
    public Dimension minimumLayoutSize(Container var1) {
+      Dimension var6;
       int var10000 = T4.b();
       Dimension var3 = new Dimension(0, 0);
       Iterator var4 = this.L.iterator();
@@ -280,8 +282,9 @@ public class TT extends T4 {
    }
 
    public static void __vfClinit__() {
+      long[] var6;
       long var0 = 7005113298715388120L;
-      long[] var6 = new long[2];
+      var6 = new long[2];
       int var3 = 0;
       String var4 = "\u009f\f3È7³\u0012!«§i\u0012vr\u00ad\"";
       int var5 = "\u009f\f3È7³\u0012!«§i\u0012vr\u00ad\"".length();
@@ -311,7 +314,6 @@ public class TT extends T4 {
       b = new Integer[2];
    }
 }
-
 
 
 

@@ -1336,6 +1336,7 @@ public class Nj2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[7];
       int var11 = 0;
       String var10 = "jÐ½\u0019n\u001b\u0005Ï¾Ò6=\u0006²¥\"¶Ü¯\u0005Ý\t\u0096²/\u0006\u0086°öW\u0003×\u0006<\u0019¢7\u00936";
@@ -1350,7 +1351,6 @@ public class Nj2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

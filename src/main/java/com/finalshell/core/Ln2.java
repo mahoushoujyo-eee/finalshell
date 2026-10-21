@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Ln2 {
    public static String a;
    public static String P;
-   public Lp2 Y;
+   public SyncTaskManifest Y;
    public boolean l;
    public Fc2 L;
    public long B;
@@ -262,7 +262,7 @@ public class Ln2 {
       var10006 = Ref.h(306266403902896148L, var12, var13);
       String var10007 = (String)(Registry.emptyArgs());
       long var15 = 204000105621842013L;
-      Object[] var14 = var10007;
+      Object var14 = var10007;
       var10007 = Ref.h(204000105621842013L, var14, var15);
 
       try {
@@ -272,7 +272,7 @@ public class Ln2 {
       }
 
       String var3 = var10006.append((String)var10007).append(a(-17573, -32005)).toString();
-      Lp2 var4 = new Lp2();
+      SyncTaskManifest var4 = new SyncTaskManifest();
       Object var1 = var10005;
 
       label71: {
@@ -302,7 +302,7 @@ public class Ln2 {
          try {
             var10007 = Registry.emptyArgs();
             long var19 = 604823751569932499L;
-            Object[] var18 = var10007;
+            Object var18 = var10007;
             Ref.h(604823751569932499L, var18, var19);
 
             try {
@@ -317,7 +317,7 @@ public class Ln2 {
 
       var10007 = Registry.emptyArgs();
       long var21 = 465331157863382722L;
-      Object[] var20 = var10007;
+      Object var20 = var10007;
       Ref.h(465331157863382722L, var20, var21);
 
       try {
@@ -408,7 +408,7 @@ public class Ln2 {
 
    public void F(boolean var1) throws Exception {
       Object var4 = 358782464092968093L;
-      Lp2 var2 = (Lp2)Ref.g(358782464092968093L, var4);
+      SyncTaskManifest var2 = (SyncTaskManifest)Ref.g(358782464092968093L, var4);
       Registry.emptyArgs();
       long var6 = 270389152141252877L;
       Ref.h2(270389152141252877L, var6);
@@ -448,7 +448,7 @@ public class Ln2 {
       Ref.h2(270389152141252877L, var5);
       U5 var10002 = (U5)(Registry.emptyArgs());
       long var8 = 375944019649708240L;
-      Object[] var7 = var10002;
+      Object var7 = var10002;
       var10002 = Ref.h(375944019649708240L, var7, var8);
 
       try {
@@ -464,7 +464,7 @@ public class Ln2 {
       Object var10004 = Ref.h2(270389152141252877L, var9);
       U62 var10005 = (U62)(Registry.emptyArgs());
       long var12 = 306266403902896148L;
-      Object[] var11 = var10005;
+      Object var11 = var10005;
       var10005 = Ref.h(306266403902896148L, var11, var12);
 
       try {
@@ -477,7 +477,7 @@ public class Ln2 {
       Object var1 = var10004;
       var10005 = Registry.emptyArgs();
       long var14 = 204000105621842013L;
-      Object[] var13 = var10005;
+      Object var13 = var10005;
       Registry.packArgs(Ref.h(204000105621842013L, var13, var14));
       long var15 = 330094358428833085L;
       Object var10006 = Ref.h2(330094358428833085L, var15);
@@ -839,7 +839,7 @@ public class Ln2 {
       }
    }
 
-   public void A(Lp2 param1, byte[] param2, boolean param3, boolean param4, boolean param5, boolean param6) throws Exception {
+   public void A(SyncTaskManifest param1, byte[] param2, boolean param3, boolean param4, boolean param5, boolean param6) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1873,10 +1873,10 @@ public class Ln2 {
       // 9c3: return
    }
 
-   public ArrayList s(Lp2 var1) throws Exception {
-      Object[] var10001 = Registry.packArgs(var1, false);
+   public ArrayList s(SyncTaskManifest var1) throws Exception {
+      Object var10001 = Registry.packArgs(var1, false);
       long var3 = 454189016043226603L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(454189016043226603L, var2, var3);
 
       try {
@@ -1886,7 +1886,7 @@ public class Ln2 {
       }
    }
 
-   public ArrayList N(Lp2 param1, boolean param2) throws Exception {
+   public ArrayList N(SyncTaskManifest param1, boolean param2) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2714,6 +2714,7 @@ public class Ln2 {
    }
 
    public static O0 g$O0() {
+      long var36;
       O0 var0 = new O0();
       Registry.emptyArgs();
       long var4 = 270389152141252877L;
@@ -2724,7 +2725,7 @@ public class Ln2 {
       Ref.h(306266403902896148L, var6, var7);
       ArrayList var10003 = (ArrayList)(Registry.emptyArgs());
       long var9 = 518875030097846779L;
-      Object[] var8 = var10003;
+      Object var8 = var10003;
       var10003 = Ref.h(518875030097846779L, var8, var9);
 
       try {
@@ -2756,7 +2757,7 @@ public class Ln2 {
       Ref.h(410905379772103887L, var14, var15);
       O0 var10007 = (O0)(Registry.emptyArgs());
       long var17 = 134991188926814107L;
-      Object[] var16 = var10007;
+      Object var16 = var10007;
       var10007 = Ref.h(134991188926814107L, var16, var17);
 
       try {
@@ -2797,7 +2798,7 @@ public class Ln2 {
       Ref.h2(270389152141252877L, var22);
       O0 var10013 = Registry.emptyArgs();
       long var25 = 306266403902896148L;
-      Object[] var24 = var10013;
+      Object var24 = var10013;
       var10013 = (O0)Ref.h(306266403902896148L, var24, var25);
       Object[] var10014 = Registry.emptyArgs();
       long var27 = 401275417195122293L;
@@ -2819,13 +2820,13 @@ public class Ln2 {
       Ref.h2(270389152141252877L, var30);
       O0 var10017 = Registry.emptyArgs();
       long var33 = 306266403902896148L;
-      Object[] var32 = var10017;
+      Object var32 = var10017;
       var10017 = (O0)Ref.h(306266403902896148L, var32, var33);
       Object[] var10018 = Registry.emptyArgs();
       long var35 = 626356373183057367L;
       Object[] var34 = var10018;
       var10018 = Registry.packArgs(Ref.h(626356373183057367L, var34, var35));
-      long var36 = 341686017445594106L;
+      var36 = 341686017445594106L;
       Object var10019 = Ref.h2(341686017445594106L, var36);
 
       try {
@@ -2845,7 +2846,7 @@ public class Ln2 {
       var10021 = Ref.h(445913128761932285L, var40, var41);
       O0 var10022 = (O0)(Registry.emptyArgs());
       long var43 = 473402910517899072L;
-      Object[] var42 = var10022;
+      Object var42 = var10022;
       var10022 = Ref.h(473402910517899072L, var42, var43);
 
       try {
@@ -2858,12 +2859,12 @@ public class Ln2 {
       return var0;
    }
 
-   public Lp2 g$Lp_2() {
+   public SyncTaskManifest g$Lp_2() {
       Object var1 = 358782464092968093L;
-      return (Lp2)Ref.g(358782464092968093L, var1);
+      return (SyncTaskManifest)Ref.g(358782464092968093L, var1);
    }
 
-   public void W(Lp2 var1) {
+   public void W(SyncTaskManifest var1) {
       long var3 = 358782464092968093L;
       Ref.s(358782464092968093L, var1, var3);
    }
@@ -3717,6 +3718,7 @@ public class Ln2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var36;
       String[] var15 = new String[42];
       int var13 = 0;
       String var12 = "哊毁寠碝閃謗\u0010Õdÿðç\u0092$å¼=ÏÃúoµ9\bÛ\u0088\u0084BbPmÀ\u0004\"\u00924z\u0007\fS\u0011è\u001bÙ\u0080\u000e\u0099ç÷)I\u001f\u0086\u0014G\u009f$ÅÇ¢\b价佃鄊罏\u0013\u000em&\u0006迅凐咧毛嬧磙\u0015\u009dq2v\"ÛHF´×b\u0081Eè\u00139Zð\u0086\u00060\f¸\u0012#\u000eB\n_{.ï \u009e\u0004§7ml\u000b-x¢\f\u0001\u0098ß²{&G\u0006咯欎孌硤锖謨\u0007¾\u009cïh7¦â\u000f¢\u0094ØDéªaè\b\u0090ú°èN\u0001\b\u0096@\u009e\nìv\u0099Ê\bòã\u0012~}ø«\u001b\t>ß¼°M\f²g\u0019\u000eB´ÉÎ]Ø´«OS£jVô\u0007丛佤醗羫妿趙\n\u0004咅殥縜杏\u0004Ðñ\u0083´\u00073é^Æ\u0001s$\u0007弣天咚殟h~\u0002\bä~\u009bÌ&\u0080;À\t²>b\u008bj¼Ru\u0097\u0007乁佇釜翏拷劯\u0006\u000b0q\u0095¯ì_ê¡=ì;\t6\u009e°\u0012\u001b\u0088<\u0017\u0083\u0007gÐ|\u0098¶×5\u0005à2vc%\u0010\u009d\"Å\u0085µvÙX\u0003\u008a85\u0004±jâ\u000bÛ2â´D!T8\r}7\u0006迖儅哅歡孫碎\u0007\u0094¼q¾]¯V\u0004哳歋绒枒\t:¥søHØ\u0016«\u001b\bk\u001e\u0092\u0090 \n5\u008b\u0003ÌÔÜ\t\fÖµ\u0096\u0090\u001f\r\u0001|";
@@ -3732,7 +3734,6 @@ public class Ln2 {
          byte var10002 = -1;
 
          while (true) {
-      long var36;
             label65: {
                char[] var43 = var10001.toCharArray();
                int var10004 = var43.length;

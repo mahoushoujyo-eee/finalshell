@@ -48,6 +48,7 @@ public class T4_2 extends BasicSpinnerUI implements W2_3, L0_2 {
 
    @Override
    public void h() {
+      T4_2 var3;
       int[] var1 = S$arrint();
       JSpinner var10000 = this.spinner;
       if (var1 != null) {
@@ -180,10 +181,11 @@ public class T4_2 extends BasicSpinnerUI implements W2_3, L0_2 {
 
    @Override
    public JComponent createEditor() {
+      JComponent var3;
       int[] var10000 = S$arrint();
       JComponent var2 = super.createEditor();
       int[] var1 = var10000;
-      JComponent var3 = var2;
+      var3 = var2;
       if (var1 != null) {
          if (var2 instanceof JTextComponent) {
             M((JTextComponent)var2, this.spinner);
@@ -200,10 +202,11 @@ public class T4_2 extends BasicSpinnerUI implements W2_3, L0_2 {
    }
 
    public static void M(JTextComponent var0, JSpinner var1) {
+      QH var3;
       var0.setMargin(new Insets(0, 0, 0, 0));
       var0.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
       int[] var10000 = S$arrint();
-      QH var3 = new QH();
+      var3 = new QH();
       var3.R(false);
       int[] var2 = var10000;
       var0.setUI(var3);
@@ -1033,9 +1036,11 @@ public class T4_2 extends BasicSpinnerUI implements W2_3, L0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var21;
+      int var3;
       String[] var5 = new String[5];
       int[] var10000 = new int[5];
-      int var3 = 0;
+      var3 = 0;
       String var2 = ")÷Éx\u008ct~øMÖË\u0087\u0016é~ª8;61í\u001dã_r¼\u001ejE\u0013'X¼\u0019Ï\u0012×ümhÃ<.¬àÜ bÆDjP\u001fy";
       int var4 = ")÷Éx\u008ct~øMÖË\u0087\u0016é~ª8;61í\u001dã_r¼\u001ejE\u0013'X¼\u0019Ï\u0012×ümhÃ<.¬àÜ bÆDjP\u001fy".length();
       M(var10000);
@@ -1049,7 +1054,6 @@ public class T4_2 extends BasicSpinnerUI implements W2_3, L0_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var21;
             label47: {
                char[] var25 = var10001.toCharArray();
                int var10004 = var25.length;

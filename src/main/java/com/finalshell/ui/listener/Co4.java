@@ -4,15 +4,15 @@ import com.finalshell.core.LD3_2;
 import com.finalshell.core.Yy2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Edit;
+import com.finalshell.ui.panel.ProxySelectionPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Co4 implements ActionListener {
-   public final Edit I;
+   public final ProxySelectionPanel I;
 
-   public Co4(Edit var1) {
+   public Co4(ProxySelectionPanel var1) {
       this.I = var1;
    }
 
@@ -29,7 +29,7 @@ public class Co4 implements ActionListener {
          Ref.g(318973214616786715L, var10);
          LD3_2 var10005 = (LD3_2)(Registry.packArgs(var2));
          long var13 = 548405852497465390L;
-         Object[] var12 = var10005;
+         Object var12 = var10005;
          var10005 = Ref.h(548405852497465390L, var12, var13);
 
          try {

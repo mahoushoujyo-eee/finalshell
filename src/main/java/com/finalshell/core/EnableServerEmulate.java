@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import com.finalshell.ui.panel.Ky4;
 import java.net.Inet4Address;
 import java.net.InetAddress;
@@ -413,7 +413,7 @@ public class EnableServerEmulate {
       IpV4Packet.IpV4Header var8 = var7.getHeader$IpV4Packet_IpV4Header();
       TcpPacket var9 = (TcpPacket)var7.getPayload();
       TcpPacket.TcpHeader var10 = var9.getHeader$TcpPacket_TcpHeader();
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       short var11 = var10.getSrcPort().value();
       short var12 = var10.getDstPort().value();
       String[] var3 = var10000;
@@ -485,7 +485,7 @@ public class EnableServerEmulate {
       IpV4Packet.IpV4Header var8 = var7.getHeader$IpV4Packet_IpV4Header();
       TcpPacket var9 = (TcpPacket)var7.getPayload();
       TcpPacket.TcpHeader var10 = var9.getHeader$TcpPacket_TcpHeader();
-      PingMessageR.N();
+      PingMessageReceiver.N();
       TcpPacket.Builder var11 = new TcpPacket.Builder();
       var11.payloadBuilder$TcpPacket_Builder(new UnknownPacket.Builder().rawData(var9.getPayload().getRawData()));
       var11.correctChecksumAtBuild$TcpPacket_Builder(true);
@@ -534,7 +534,7 @@ public class EnableServerEmulate {
       var13.dstAddr(var6.getDstAddr()).srcAddr(var6.getSrcAddr()).type(EtherType.IPV4).payloadBuilder$EthernetPacket_Builder(var12).paddingAtBuild(true);
       var4 = var13.build$EthernetPacket();
       if (Ky4.F$arrString() != null) {
-         PingMessageR.p(new String[1]);
+         PingMessageReceiver.p(new String[1]);
       }
 
       return var4;

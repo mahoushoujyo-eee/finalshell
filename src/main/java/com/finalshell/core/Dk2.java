@@ -15,6 +15,7 @@ public class Dk2 {
    }
 
    public void K(KeyEvent var1) {
+      boolean var76;
       String var2 = Km2.U$String();
       if (var1.getModifiers() <= 0) {
          String var3 = (var1.getKeyChar() + "").toLowerCase();
@@ -78,7 +79,7 @@ public class Dk2 {
                            com.finalshell.ui.model.Ck4 var12 = (com.finalshell.ui.model.Ck4)var10;
                            String var10006 = (String)(Registry.emptyArgs());
                            long var26 = 396085629172753019L;
-                           Object[] var25 = var10006;
+                           Object var25 = var10006;
                            var10006 = Ref.h(396085629172753019L, var25, var26);
 
                            try {
@@ -104,7 +105,7 @@ public class Dk2 {
                         Tf4 var61 = (Tf4)var10;
                         String var70 = (String)(Registry.emptyArgs());
                         long var28 = 179612178163941306L;
-                        Object[] var27 = var70;
+                        Object var27 = var70;
                         var70 = Ref.h(179612178163941306L, var27, var28);
 
                         try {
@@ -191,7 +192,7 @@ public class Dk2 {
                            com.finalshell.ui.model.Ck4 var62 = (com.finalshell.ui.model.Ck4)var57;
                            String var10008 = (String)(Registry.emptyArgs());
                            long var38 = 396085629172753019L;
-                           Object[] var37 = var10008;
+                           Object var37 = var10008;
                            var10008 = Ref.h(396085629172753019L, var37, var38);
 
                            try {
@@ -217,7 +218,7 @@ public class Dk2 {
                         Tf4 var63 = (Tf4)var57;
                         String var79 = (String)(Registry.emptyArgs());
                         long var40 = 179612178163941306L;
-                        Object[] var39 = var79;
+                        Object var39 = var79;
                         var79 = Ref.h(179612178163941306L, var39, var40);
 
                         try {

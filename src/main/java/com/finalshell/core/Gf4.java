@@ -31,6 +31,7 @@ public class Gf4 extends Gy4 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      int var26;
       String[] var10000 = W5.q();
       int var4 = var1.getWidth();
       int var5 = var1.getHeight();

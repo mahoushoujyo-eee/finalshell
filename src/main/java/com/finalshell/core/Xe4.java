@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @O4(
-   Z = "GeometryCollection",
-   Z = {"type", "bbox", "geometries"}
+   Z$String = "GeometryCollection",
+   Z$arrString = {"type", "bbox", "geometries"}
 )
 public class Xe4 extends XY3 {
    public List N = new ArrayList();

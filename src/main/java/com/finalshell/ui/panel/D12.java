@@ -114,7 +114,7 @@ public class D12 extends JComponent implements SwingConstants, ActionListener {
          var10002 = this.h < a(8589, 2510673249178006437L) ? 1 : 0;
       }
 
-      Composite var5 = RV.a(var3, var10001, (boolean)var10002);
+      Composite var5 = RV.a(var3, var10001, var10002);
       super.paint(var1);
       RV.c(var3, var5);
       RV.X(var3, var4);
@@ -1003,6 +1003,7 @@ public class D12 extends JComponent implements SwingConstants, ActionListener {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[7];
       int var11 = 0;
       String var10 = "P\u0094_\u000e¤\u0084ì\u0000\rA¼%¶Öá\u0002t1\u0003/oò\u0014\u009ed_àÍ\u007fÙ^¼°$\u0090Éÿ³\u0011\u0000gC©\u0003©\u0012A";
@@ -1017,7 +1018,6 @@ public class D12 extends JComponent implements SwingConstants, ActionListener {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

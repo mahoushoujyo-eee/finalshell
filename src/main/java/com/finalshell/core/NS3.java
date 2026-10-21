@@ -83,10 +83,11 @@ public class NS3 {
    }
 
    public BufferedImage j(int var1) {
+      int var4;
       Ky4[] var10000 = Kj4.d();
       BufferedImage var3 = null;
       Ky4[] var2 = var10000;
-      int var4 = var1;
+      var4 = var1;
       if (var2 != null) {
          if (var1 < 0) {
             return var3;
@@ -248,6 +249,8 @@ public class NS3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void r() {
+      int var26;
+      int var32;
       Ky4[] var1;
       int var3;
       NS3 var23;
@@ -339,7 +342,6 @@ public class NS3 {
       while (true) {
          label176:
          if (var14 < var3) {
-      int var26;
             var26 = var18;
             if (var1 == null) {
                break;
@@ -494,7 +496,6 @@ public class NS3 {
                label140:
                if (var1 != null) {
                   if (var32 == 0) {
-      int var32;
                      var32 = var4;
                      if (var1 == null) {
                         break label140;
@@ -545,7 +546,7 @@ public class NS3 {
          var10000 = this.A != 0 ? 1 : 0;
       }
 
-      return (boolean)var10000;
+      return var10000 != 0;
    }
 
    public void E() {
@@ -776,12 +777,13 @@ public class NS3 {
    }
 
    public void C() {
+      int var5;
       Ky4[] var10000 = Kj4.d();
       boolean var2 = false;
       Ky4[] var1 = var10000;
 
       while (!var2) {
-         int var7 = this.o();
+         int var7 = (this.o()) ? 1 : 0;
          if (var1 != null) {
             if (var7 != 0) {
                break;
@@ -825,7 +827,7 @@ public class NS3 {
                         case 255:
                            this.L$int();
                            String var4 = "";
-                           int var5 = 0;
+                           var5 = 0;
 
                            label83: {
                               while (var5 < a(22383, 5230609835344031271L)) {
@@ -898,13 +900,15 @@ public class NS3 {
          var10001 = var10001 != 0 ? 1 : 0;
       }
 
-      var3.B = (boolean)var10001;
+      var3.B = var10001;
       this.e = this.v() * a(350, 6868384764813129740L);
       this.V = this.M$int();
       this.M$int();
    }
 
    public void k() {
+      boolean var4;
+      NS3 var5;
       Ky4[] var10000 = Kj4.d();
       String var2 = "";
       int var3 = 0;
@@ -967,6 +971,8 @@ public class NS3 {
    }
 
    public void h() {
+      NS3 var5;
+      NS3 var7;
       Ky4[] var10000 = Kj4.d();
       this.i = this.v();
       Ky4[] var1 = var10000;
@@ -979,15 +985,15 @@ public class NS3 {
          var10001 = var10001 != 0 ? 1 : 0;
       }
 
-      this.f = (boolean)var10001;
-      var10001 = (var2 & a(19308, 8216995625742070335L)) != 0;
+      this.f = var10001;
+      var10001 = var2 & a(19308, 8216995625742070335L);
       if (var1 != null) {
          var10001 = var10001 != 0 ? 1 : 0;
       }
 
       label78: {
          label84: {
-            this.c = (boolean)var10001;
+            this.c = var10001;
             this.H = 2 << (var2 & a(27345, 3301359291208651672L));
             var4 = this.f;
             if (var1 != null) {
@@ -1016,7 +1022,7 @@ public class NS3 {
       }
 
       int var3 = var4;
-      NS3 var5 = this;
+      var5 = this;
       if (var1 != null) {
          if (this.B) {
             var3 = this.K[this.V];
@@ -1084,7 +1090,7 @@ public class NS3 {
          var10001 = var10001 != 0 ? 1 : 0;
       }
 
-      this.b = (boolean)var10001;
+      this.b = var10001;
       this.X = 2 << (var2 & a(22707, 6445485269405196771L));
       this.d = this.M$int();
       this.a = this.M$int();
@@ -1109,7 +1115,7 @@ public class NS3 {
                   continue;
                }
 
-               var10000 = this.o();
+               var10000 = (this.o()) ? 1 : 0;
             }
 
             if (var10000 == 0) {
@@ -1134,6 +1140,10 @@ public class NS3 {
    }
 
    public void L$void() {
+      int var26;
+      Graphics2D var4;
+      Color var5;
+      int var7;
       Ky4[] var1;
       int[] var2;
       int var18;
@@ -1187,8 +1197,6 @@ public class NS3 {
             }
 
             if (this.C == 2) {
-               Graphics2D var4;
-               Color var5;
                label115: {
                   var4 = this.u.createGraphics();
                   if (this.B) {
@@ -1223,8 +1231,8 @@ public class NS3 {
          label105:
          while (var18 < this.h) {
             label158: {
-               int var7 = (((var6) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-               var18 = (((this.c) != 0) != 0) != 0;
+               var7 = var6;
+               var18 = (this.c) ? 1 : 0;
                if (var1 != null) {
                   if (this.c) {
                      label97: {
@@ -1279,7 +1287,7 @@ public class NS3 {
                   int var9 = var8 + this.i;
                   int var10 = var9 + this.q;
                   var18 = var8 + this.n;
-                  int var26 = var10;
+                  var26 = var10;
                   if (var1 != null) {
                      if (var18 < var10) {
                         var10 = var8 + this.n;
@@ -1345,6 +1353,7 @@ public class NS3 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 12420) & 65535;
       if (l[var2] == null) {
          char[] var3 = j[var2].toCharArray();
@@ -2119,7 +2128,7 @@ public class NS3 {
                var10000 = 114;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -2159,6 +2168,9 @@ public class NS3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var32;
+      boolean var5;
+      byte[] var7;
       String[] var13 = new String[3];
       int var11 = 0;
       String var10 = "E\u0086N \u0099ä\u0006\u0016ñ4´\u0003¤yH\u0003?â\u0080";
@@ -2175,7 +2187,6 @@ public class NS3 {
             byte var27 = 87;
             var10002 = var10003;
             int var17 = var10004;
-            byte var32;
             char[] var10005;
             int var10006;
             if (var10004 <= 1) {
@@ -2248,15 +2259,15 @@ public class NS3 {
             long[] var6 = new long[22];
             int var3 = 0;
             String var4 = "\u009235´|df·²sv©Âå\u008a¶\u0019ûÔßwúÖ¬S½2¦¸4dîá÷\u0018¸÷óHÉ¨iG£(¦UÊºÂ÷eP[K\rBN£«&Õ#\u0004êxÓÏX \u0000it@\"½F\u0095=ÚãÄthë¢\u0007%CÑ¨¢Þµ¦§¤\u0084\u0081\u0002 +@\u0093\u0097\u007fî\u001a\u000f£Ãæôø×\u008e\u009càë\u0014\u0081^\u0018¤;\u0091w^\u0000×x`\u001d\u0010\u008f¡wM\u0002ËyÞwy\u0003^\u0085\u0095U\u009cVC\u0081\u0080hI\u0083³\u001c:";
-            int var5 = "\u009235´|df·²sv©Âå\u008a¶\u0019ûÔßwúÖ¬S½2¦¸4dîá÷\u0018¸÷óHÉ¨iG£(¦UÊºÂ÷eP[K\rBN£«&Õ#\u0004êxÓÏX \u0000it@\"½F\u0095=ÚãÄthë¢\u0007%CÑ¨¢Þµ¦§¤\u0084\u0081\u0002 +@\u0093\u0097\u007fî\u001a\u000f£Ãæôø×\u008e\u009càë\u0014\u0081^\u0018¤;\u0091w^\u0000×x`\u001d\u0010\u008f¡wM\u0002ËyÞwy\u0003^\u0085\u0095U\u009cVC\u0081\u0080hI\u0083³\u001c:"
-               .length();
+            var5 = "\u009235´|df·²sv©Âå\u008a¶\u0019ûÔßwúÖ¬S½2¦¸4dîá÷\u0018¸÷óHÉ¨iG£(¦UÊºÂ÷eP[K\rBN£«&Õ#\u0004êxÓÏX \u0000it@\"½F\u0095=ÚãÄthë¢\u0007%CÑ¨¢Þµ¦§¤\u0084\u0081\u0002 +@\u0093\u0097\u007fî\u001a\u000f£Ãæôø×\u008e\u009càë\u0014\u0081^\u0018¤;\u0091w^\u0000×x`\u001d\u0010\u008f¡wM\u0002ËyÞwy\u0003^\u0085\u0095U\u009cVC\u0081\u0080hI\u0083³\u001c:";
+               // [VF] .length();
             byte var2 = 0;
 
             label40:
             while (true) {
                var19 = var2;
                var2 += 8;
-               byte[] var7 = var4.substring(var19, var2).getBytes("ISO-8859-1");
+               var7 = var4.substring(var19, var2).getBytes("ISO-8859-1");
                long[] var10000 = var6;
                var19 = var3++;
                long var25 = ((long)var7[0] & 255L) << 56
@@ -2287,7 +2298,7 @@ public class NS3 {
                         }
 
                         var4 = "Õ®T\u009eRÐ\u0095\u0019BÛ\u000frwÏMG";
-                        var5 = "Õ®T\u009eRÐ\u0095\u0019BÛ\u000frwÏMG".length();
+                        var5 = ("Õ®T\u009eRÐ\u0095\u0019BÛ\u000frwÏMG".length()) != 0;
                         var2 = 0;
                   }
 
@@ -2313,7 +2324,6 @@ public class NS3 {
       }
    }
 }
-
 
 
 

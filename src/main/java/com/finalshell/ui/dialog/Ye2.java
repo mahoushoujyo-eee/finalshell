@@ -1,17 +1,17 @@
 package com.finalshell.ui.dialog;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import java.awt.Frame;
 import javax.swing.JDialog;
 
 public class Ye2 extends JDialog {
-   public U e;
+   public MainFrame e;
    public static String a;
    public static long[] b;
    public static Integer[] c;
 
-   public Ye2(U var1) {
+   public Ye2(MainFrame var1) {
       super((Frame)var1);
       long var3 = 315080028816218491L;
       Ref.s(315080028816218491L, var1, var3);

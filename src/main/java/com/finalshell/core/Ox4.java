@@ -463,7 +463,7 @@ public class Ox4 {
    }
 
    public static void P(JComponent var0) {
-      X62 var4;
+      Map var4;
       int var10000 = WG.C();
       Map var2 = (Map)d.get(var0);
       int var1 = var10000;
@@ -545,7 +545,7 @@ public class Ox4 {
    }
 
    public static Og4 l(JComponent var0, String var1, Og4 var2) {
-      X62 var9;
+      Object var9;
       int var10000 = WG.t();
       P(var0);
       int var3 = var10000;
@@ -596,7 +596,7 @@ public class Ox4 {
    }
 
    public static void F(JComponent var0) {
-      X62 var4;
+      Map var4;
       int var10000 = WG.C();
       Map var2 = (Map)J.get(var0);
       int var1 = var10000;
@@ -688,6 +688,7 @@ public class Ox4 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 16802) & 65535;
       if (c[var2] == null) {
          char[] var3 = b[var2].toCharArray();
@@ -1462,7 +1463,7 @@ public class Ox4 {
                var10000 = 61;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -1493,11 +1494,13 @@ public class Ox4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
+      boolean var4;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "Ç4ë¢\u0000§H©>bÉZ¬\u0015XE®i\u0012´ÞÌè`\u00904oYÈ\u00066\u008cÊ\u001e\n]uHÙk\u0007\u0000h\u009aË?\u0007æ!û¹ý\u0085\u0087{2X\u0098\u000f§Ðç\u0082\u0010ÚÖ o=.#n¥»þ«8È\u0015¶?\u001d\u0013çùìnÆ¯tZ\u0086®QZÄÓ2í\u0017y2";
-      int var4 = "Ç4ë¢\u0000§H©>bÉZ¬\u0015XE®i\u0012´ÞÌè`\u00904oYÈ\u00066\u008cÊ\u001e\n]uHÙk\u0007\u0000h\u009aË?\u0007æ!û¹ý\u0085\u0087{2X\u0098\u000f§Ðç\u0082\u0010ÚÖ o=.#n¥»þ«8È\u0015¶?\u001d\u0013çùìnÆ¯tZ\u0086®QZÄÓ2í\u0017y2"
-         .length();
+      var4 = "Ç4ë¢\u0000§H©>bÉZ¬\u0015XE®i\u0012´ÞÌè`\u00904oYÈ\u00066\u008cÊ\u001e\n]uHÙk\u0007\u0000h\u009aË?\u0007æ!û¹ý\u0085\u0087{2X\u0098\u000f§Ðç\u0082\u0010ÚÖ o=.#n¥»þ«8È\u0015¶?\u001d\u0013çùìnÆ¯tZ\u0086®QZÄÓ2í\u0017y2";
+         // [VF] .length();
       char var1 = '(';
       int var8 = -1;
 
@@ -1508,7 +1511,6 @@ public class Ox4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;
@@ -1609,7 +1611,7 @@ public class Ox4 {
                   }
 
                   var2 = "Àií\u0084¾\u0081¹\u0006\u0096a`Î[\u008f";
-                  var4 = "Àií\u0084¾\u0081¹\u0006\u0096a`Î[\u008f".length();
+                  var4 = ("Àií\u0084¾\u0081¹\u0006\u0096a`Î[\u008f".length()) != 0;
                   var1 = 7;
                   var8 = -1;
             }

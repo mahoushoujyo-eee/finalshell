@@ -17,6 +17,7 @@ public class Fd2 implements ItemListener {
 
    @Override
    public void itemStateChanged(ItemEvent var1) {
+      boolean var36;
       Ky4[] var2 = EnableBackgroundImage.I();
       int var10000 = var1.getStateChange();
       if (var2 != null) {
@@ -36,9 +37,9 @@ public class Fd2 implements ItemListener {
          long var7 = 306266403902896148L;
          Object[] var6 = var10003;
          var10003 = Ref.h(306266403902896148L, var6, var7);
-         Object[] var10004 = Registry.emptyArgs();
+         Object var10004 = Registry.emptyArgs();
          long var9 = 358544030666779924L;
-         Object[] var8 = var10004;
+         Object var8 = var10004;
          var10004 = Ref.h(358544030666779924L, var8, var9);
 
          try {

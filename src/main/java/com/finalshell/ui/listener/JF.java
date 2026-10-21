@@ -64,7 +64,7 @@ public class JF implements MouseListener {
          Ref.g(152770326095145004L, var11);
          ZG_2 var10003 = (ZG_2)(Registry.packArgs(var3));
          long var14 = 274266531369243862L;
-         Object[] var13 = var10003;
+         Object var13 = var10003;
          var10003 = Ref.h(274266531369243862L, var13, var14);
 
          try {

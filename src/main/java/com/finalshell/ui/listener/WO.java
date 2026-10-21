@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JToggleButton;
 
 public class WO implements ActionListener {
-   public final com.finalshell.ui.frame.U H;
+   public final com.finalshell.ui.frame.MainFrame H;
 
-   public WO(com.finalshell.ui.frame.U var1) {
+   public WO(com.finalshell.ui.frame.MainFrame var1) {
       this.H = var1;
    }
 

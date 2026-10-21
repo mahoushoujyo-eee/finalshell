@@ -155,6 +155,7 @@ public class LI extends L3 {
 
    @Override
    public void u(Graphics2D var1, Rectangle var2, JComponent var3) {
+      LI var10000;
       int[] var4;
       PF3 var5;
       label108: {

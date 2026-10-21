@@ -5,7 +5,7 @@ import com.finalshell.core.WC_2;
 import java.awt.event.MouseEvent;
 
 public final class HT {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 

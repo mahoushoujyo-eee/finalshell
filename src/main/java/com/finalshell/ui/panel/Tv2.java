@@ -22,7 +22,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import net.miginfocom.swing.MigLayout;
 
 public class Tv2 extends JComponent {
-   public Connection5 f;
+   public ImportExportPanel f;
    public DefaultMutableTreeNode T;
    public Object E;
    public JButton D;
@@ -40,7 +40,7 @@ public class Tv2 extends JComponent {
    public static long[] c;
    public static Integer[] d;
 
-   public Tv2(ShowDeletedPanel var1, Connection5 var2) {
+   public Tv2(ShowDeletedPanel var1, ImportExportPanel var2) {
       Registry.lookupField(504435072987539564L).setInt(this, 1);
       Registry.lookupField(576113159822762720L).setInt(this, a(31344, 9212724110090153151L));
       Registry.emptyArgs();

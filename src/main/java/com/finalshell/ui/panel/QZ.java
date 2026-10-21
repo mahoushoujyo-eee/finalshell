@@ -83,7 +83,7 @@ public class QZ extends Qt2 {
          var10002 = this.b < a(7456, 6241048988852880182L) ? 1 : 0;
       }
 
-      RV.a(var10000, var10001, (boolean)var10002);
+      RV.a(var10000, var10001, var10002);
       super.paint(var1);
    }
 

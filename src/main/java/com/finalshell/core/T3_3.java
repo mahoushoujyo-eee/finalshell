@@ -89,6 +89,7 @@ public class T3_3 extends T4 {
    }
 
    public void R(QY var1, float var2, QE var3) {
+      int var46;
       int[] var10000 = com.finalshell.ui.panel.E2.P();
       Dimension var5 = FN.P(var1.getComponents());
       Point var6 = new Point(var1.v(), var1.v());
@@ -130,7 +131,6 @@ public class T3_3 extends T4 {
                      int var10001 = var16;
                      if (var4 == null) {
                         if (var20 < var16) {
-      int var46;
                            var46 = var20;
                            break label111;
                         }

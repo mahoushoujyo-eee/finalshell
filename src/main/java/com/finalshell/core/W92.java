@@ -132,6 +132,7 @@ public class W92 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public static IB c(AS var0) {
+      Throwable var9;
       String var10000 = Cl4_2.I();
       java.lang.Class var2 = O(var0.l().getClass());
       String var1 = var10000;
@@ -154,7 +155,6 @@ public class W92 {
             try {
                var10000 = (String)Kp2.f(var2, new Object[]{var0});
             } catch (Throwable var6) {
-      int var9;
                var9 = var6;
                boolean var10001 = false;
                break label41;
@@ -164,7 +164,6 @@ public class W92 {
          try {
             return (IB)var10000;
          } catch (Throwable var5) {
-      int var9;
             var9 = var5;
             boolean var10 = false;
          }
@@ -1278,6 +1277,7 @@ public class W92 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[9];
       int var3 = 0;
       String var2 = "mwsU\u0016$\u001e\u008frê\u0089×%ò<,D×U\u0090±[¯>³hè¦\u0017ÖîMuÈ£\u001d\u000e(p\u000eÓ54F/ñ\"\u0090ï6´o8*\u0006üÌ\u009axb\u00145V{iÕÀÊ\t÷1öªà\u0096ê¦M1&_\u0014pºÓôÀsh\u007f£ÿ|s±\u00adÀÁ\bÝ\u008eÂ\n¬ÁK\u0083\u0011þþÔn\u0081\u0012\u0095\"C°,\u001c\u009d\u0095\u001aG\u0093.³\u0019Ì\u0095s\u0094\u0012\t\u0085î\u009dyfÃ¨ýÜ\u009bçüË¯,ó+";
@@ -1293,7 +1293,6 @@ public class W92 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

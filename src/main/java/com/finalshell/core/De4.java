@@ -22,9 +22,9 @@ public class De4 extends Dm4 {
    public static Integer[] n;
 
    public static int Z(byte var0) {
-      byte var10000 = (Dm4.F$boolean()) ? 1 : 0;
+      byte var10000 = (byte)((Dm4.F$boolean()) ? 1 : 0);
       int var2 = 0;
-      boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var1 = ((boolean)var10000) != 0;
 
       while (true) {
          if (var2 < D.length) {
@@ -331,10 +331,11 @@ public class De4 extends Dm4 {
    }
 
    public byte[] n(byte[] var1, int var2, int var3) {
+      boolean var4;
       byte[] var5 = new byte[this.v.length + var3];
       boolean var10000 = Dm4.F$boolean();
       System.arraycopy(var1, var2, var5, this.v.length, var3);
-      boolean var4 = var10000;
+      var4 = var10000;
       byte[] var6 = this.v;
       if (var4) {
          if (this.v.length > 0) {
@@ -666,6 +667,7 @@ public class De4 extends Dm4 {
    }
 
    public static boolean e(byte[] var0, byte[] var1) {
+      int var4;
       boolean var2 = Dm4.J$boolean();
       int var10000 = var0.length;
       if (!var2) {
@@ -686,7 +688,7 @@ public class De4 extends Dm4 {
             }
 
             if (var2) {
-               return (boolean)var4;
+               return var4 != 0;
             }
 
             if (var4 != var1[var3]) {
@@ -703,7 +705,7 @@ public class De4 extends Dm4 {
          break;
       }
 
-      return (boolean)var4;
+      return var4 != 0;
    }
 
    static {
@@ -715,6 +717,7 @@ public class De4 extends Dm4 {
    }
 
    public static String b(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 22203) & 65535;
       if (h[var2] == null) {
          char[] var3 = f[var2].toCharArray();
@@ -1489,7 +1492,7 @@ public class De4 extends Dm4 {
                var10000 = 130;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;

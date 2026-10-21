@@ -16,14 +16,15 @@ public class SJ implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var28;
       int var2 = ConnectionProperty.M$int();
       Object[] var10001 = Registry.emptyArgs();
       long var5 = 483219322811206313L;
       Object[] var4 = var10001;
       Ref.h(483219322811206313L, var4, var5);
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var7 = 571514335693873067L;
-      Object[] var6 = var10002;
+      Object var6 = var10002;
       var10002 = Ref.h(571514335693873067L, var6, var7);
 
       try {

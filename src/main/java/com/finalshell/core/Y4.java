@@ -42,6 +42,7 @@ public class Y4 {
    }
 
    public void Y(int var1, long var2, int var4) {
+      int var6;
       boolean var5 = Dm4.J$boolean();
       int var10000 = this.R;
       if (!var5) {
@@ -52,7 +53,7 @@ public class Y4 {
          var10000 = this.r + this.R;
       }
 
-      int var6 = var10000;
+      var6 = var10000;
       if (!var5) {
          if (var6 >= this.G.length) {
             var6 -= this.G.length;
@@ -217,7 +218,7 @@ public class Y4 {
    public void W(S_2_2 var1, UJ var2) throws IOException {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var4 = this.R;
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
       int var5 = 0;
 
       label67:
@@ -300,10 +301,11 @@ public class Y4 {
    }
 
    public long M() {
+      long var6;
       long var2 = b;
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var4 = 0;
-      boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var1 = (var10000) != 0;
 
       while (var4 < this.G.length) {
          label30: {
@@ -311,8 +313,6 @@ public class Y4 {
                var10000 = this.G[var4].y;
                if (!var1) {
                   if (this.G[var4].y == 0 && !var1) {
-      long var6;
-      long var6;
                      break label30;
                   }
 
@@ -354,10 +354,11 @@ public class Y4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var13;
       char[] var10003 = "By\"G7J\bAi6G7\u0003\\er8\\=N\u00120n6C'\\\u000fd<:Vr".toCharArray();
       int var10004 = var10003.length;
       int var2 = 0;
-      byte var13 = 76;
+      var13 = 76;
       char[] var10002 = var10003;
       int var4 = var10004;
       char[] var17;
@@ -443,7 +444,7 @@ public class Y4 {
             var17 = var10002;
             var10005 = var13;
             char var24 = var10002[var13];
-            var10007 = var13;
+            var10007 = (byte)(var13);
             var10006 = var24;
             switch (var2 % 7) {
                case 0:
@@ -482,7 +483,7 @@ public class Y4 {
             var17 = var10002;
             var10005 = var2;
             char var23 = var10002[var2];
-            var10007 = var13;
+            var10007 = (byte)(var13);
             var10006 = var23;
             switch (var2 % 7) {
                case 0:
@@ -510,7 +511,6 @@ public class Y4 {
       }
    }
 }
-
 
 
 

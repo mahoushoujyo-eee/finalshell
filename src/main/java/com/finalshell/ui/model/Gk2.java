@@ -32,6 +32,7 @@ public class Gk2 extends AbstractTableModel {
 
    public Gk2(boolean var1) {
    super();
+   String[] var9;
       boolean var10000 = Uo2.i();
       boolean var2 = var10000;
       ArrayList var10001 = new ArrayList();
@@ -43,7 +44,7 @@ public class Gk2 extends AbstractTableModel {
       if (!var2) {
          Registry.lookupField(370248853974917727L).setBoolean(this, (boolean)var1);
          if (var1 == 0) {
-            String[] var9 = new String[a(9105, 778820718585847637L)];
+            var9 = new String[a(9105, 778820718585847637L)];
             var9[0] = (String)Registry.lookupField(261433743018117933L).get(null);
             var9[1] = (String)Registry.lookupField(572421534966713491L).get(null);
             var9[2] = (String)Registry.lookupField(223954321575685381L).get(null);
@@ -122,6 +123,8 @@ public class Gk2 extends AbstractTableModel {
    }
 
    public int y(int var1) {
+      Integer var12;
+      long var9;
       int var3 = -1;
       Uo2.k();
       Object var6 = 495825152703202012L;
@@ -135,9 +138,9 @@ public class Gk2 extends AbstractTableModel {
             return var3;
          }
 
-         Object[] var10002 = Registry.emptyArgs();
-         long var9 = 419335026051024288L;
-         Object[] var8 = var10002;
+         Object var10002 = Registry.emptyArgs();
+         var9 = 419335026051024288L;
+         Object var8 = var10002;
          var10002 = Ref.h(419335026051024288L, var8, var9);
 
          try {
@@ -155,9 +158,11 @@ public class Gk2 extends AbstractTableModel {
    }
 
    public void H(LI3_2 var1) {
-      Object[] var10002 = Registry.emptyArgs();
+      Integer var11;
+      Integer var9;
+      Object var10002 = Registry.emptyArgs();
       long var3 = 220896290980473708L;
-      Object[] var2 = var10002;
+      Object var2 = var10002;
       var10002 = Ref.h(220896290980473708L, var2, var3);
 
       try {
@@ -166,9 +171,9 @@ public class Gk2 extends AbstractTableModel {
          throw var7.getTargetException();
       }
 
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var5 = 220896290980473708L;
-      Object[] var4 = var10004;
+      Object var4 = var10004;
       var10004 = Ref.h(220896290980473708L, var4, var5);
 
       try {
@@ -205,9 +210,12 @@ public class Gk2 extends AbstractTableModel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var11;
+      int var12;
+      char[] var30;
       String[] var8 = new String[13];
-      int var12 = 0;
-      String var11 = "呣禯╙呒云蠋\u0003'\u000f攢\u0003>\u0016\u0016\u0004嶋伃皼彺\u0002呣禯\u0003辰揺攢\u0002乥輢\u0002畆扨\u0002凫嬇\u0003乌博w\u0002乤使";
+      var12 = 0;
+      var11 = "呣禯╙呒云蠋\u0003'\u000f攢\u0003>\u0016\u0016\u0004嶋伃皼彺\u0002呣禯\u0003辰揺攢\u0002乥輢\u0002畆扨\u0002凫嬇\u0003乌博w\u0002乤使";
       int var13 = "呣禯╙呒云蠋\u0003'\u000f攢\u0003>\u0016\u0016\u0004嶋伃皼彺\u0002呣禯\u0003辰揺攢\u0002乥輢\u0002畆扨\u0002凫嬇\u0003乌博w\u0002乤使".length();
       char var10 = 6;
       int var16 = -1;
@@ -219,7 +227,6 @@ public class Gk2 extends AbstractTableModel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

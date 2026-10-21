@@ -1558,6 +1558,7 @@ public class Wp4 implements X4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[14];
       int var11 = 0;
       String var10 = "á\u0005ry²ÙuA\u0085\f%æ÷µþ\u0091í°è\u008d\u0005=\r\u000e6EzîT5¶KLw9a\u001buGß\u008f¯u ±-\u009b6.;\u0003Ñ8nóPó\u001fKhÅêÔE\nS¶þ<\u0088#\u0082}¹§\u000fø\u001aL*\u0089b\u0003Î5B¾ÄÐÁ\u008e\nÜ04l©\u0094\u0080»¶\u000b\u000e\u0013$1í&\u009aöÑ\u008b¡i¸0T\u000fh\u008eC\b\u0094õ¿\u008a\u0012Y\u0093n\u008axé\fú¦\f½\u0081\u0090\u0002\u0090\u0015\u0089º½\bYîÍ·Ôû/Ç\f\u0015÷U\u0091ä¶6êUÜtX";
@@ -1573,7 +1574,6 @@ public class Wp4 implements X4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

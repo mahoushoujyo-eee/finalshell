@@ -34,7 +34,7 @@ public class JB implements ActionListener {
       Object var10007 = Ref.g(435109479173232140L, var18);
       ArrayList var10008 = Registry.emptyArgs();
       long var21 = 245965692335108743L;
-      Object[] var20 = var10008;
+      Object var20 = var10008;
       var10008 = Ref.h(245965692335108743L, var20, var21);
 
       try {
@@ -58,7 +58,7 @@ public class JB implements ActionListener {
 
       String var10009 = (String)(Registry.emptyArgs());
       long var25 = 372900192662778876L;
-      Object[] var24 = var10009;
+      Object var24 = var10009;
       var10009 = Ref.h(372900192662778876L, var24, var25);
 
       try {

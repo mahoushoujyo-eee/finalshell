@@ -2,7 +2,7 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.core.Uo2;
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.Copy2;
+import com.finalshell.ui.panel.EnvironmentVariablePanel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JPopupMenu;
@@ -10,9 +10,9 @@ import javax.swing.JTable;
 
 public class LX_3 extends MouseAdapter {
    public final JPopupMenu e;
-   public final Copy2 A;
+   public final EnvironmentVariablePanel A;
 
-   public LX_3(Copy2 var1, JPopupMenu var2) {
+   public LX_3(EnvironmentVariablePanel var1, JPopupMenu var2) {
       this.A = var1;
       this.e = var2;
    }

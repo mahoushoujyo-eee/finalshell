@@ -76,6 +76,8 @@ public class H82 extends W5 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      boolean var38;
+      H82 var41;
       String[] var3;
       int var4;
       int var5;

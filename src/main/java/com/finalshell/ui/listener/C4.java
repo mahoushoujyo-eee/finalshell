@@ -1319,6 +1319,7 @@ public class C4 extends BasicRadioButtonUI implements PropertyChangeListener, W2
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var41;
       String[] var21 = new String[8];
       int var19 = 0;
       String var18 = "9ô\r 2³\u0003\u001a\u0089æï\u0018ÐT\u0005\u0003P\u0096+\u001fÛL¢\u0095\u0084ï~\u00ad\u000f \b\u0099vÙ\u001d-:{\u0083B'Wm\u001a[b¦ò{ü^\u001c\u000fÄµ\u0082ó#\u0098°òWcF\u0006=\u0016E\u0092òC\u0005\u008bùÔ\u0087|\u001cw`0È+Nz@¿þÖ\u0012díU¡zb¥LîPø\u0090_ìè.";
@@ -1334,7 +1335,6 @@ public class C4 extends BasicRadioButtonUI implements PropertyChangeListener, W2
          byte var10002 = -1;
 
          while (true) {
-      char[] var41;
             label77: {
                char[] var45 = var10001.toCharArray();
                int var10004 = var45.length;

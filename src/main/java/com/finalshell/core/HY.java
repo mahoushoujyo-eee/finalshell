@@ -17,6 +17,7 @@ public class HY {
    }
 
    public int y(float var1, float var2) {
+      float[] var11;
       int var4 = -1;
       int var5 = this.I.length;
       float[] var6 = new float[var5 + 1];
@@ -54,7 +55,6 @@ public class HY {
                   }
 
                   if (var10 > 0) {
-      float[] var11;
                      var4 = var8;
                      var6[var8] = var1;
                      var7[var8] = var2;
@@ -197,6 +197,7 @@ public class HY {
    }
 
    public int[] b() {
+      int[] var12;
       int var2 = this.I.length;
       float[] var3 = new float[var2 + 2];
       float[] var4 = new float[var2 + 2];
@@ -251,6 +252,7 @@ public class HY {
    }
 
    public static void __vfClinit__() {
+      byte var10;
       long var0 = 2823338731377797656L;
       long[] var6 = new long[4];
       int var3 = 0;
@@ -297,7 +299,7 @@ public class HY {
                   var2 = 0;
             }
 
-            byte var10 = var2;
+            var10 = var2;
             var2 += 8;
             var7 = var4.substring(var10, var2).getBytes("ISO-8859-1");
             var10000 = var6;
@@ -315,7 +317,6 @@ public class HY {
       }
    }
 }
-
 
 
 

@@ -4,7 +4,7 @@ import com.finalshell.core.C;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.listener.TA;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
@@ -25,7 +25,7 @@ public class Bp2 implements Runnable {
       Ref.g(136255156672474390L, var3);
       Object var5 = 293785544051389437L;
       ((C)Ref.g(293785544051389437L, var5)).setEnabled(false);
-      Address.i();
+      FileBrowserAddressBar.i();
       Object var7 = 136255156672474390L;
       Ref.g(136255156672474390L, var7);
       Object var9 = 233423413271348758L;

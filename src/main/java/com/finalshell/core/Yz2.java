@@ -851,6 +851,7 @@ public class Yz2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "\\U\u007f\n1\u0005î%)\u0004û";
@@ -865,7 +866,6 @@ public class Yz2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

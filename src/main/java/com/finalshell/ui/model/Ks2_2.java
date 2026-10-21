@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.Yn4;
 
 public final class Ks2_2 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -67,7 +67,7 @@ public final class Ks2_2 {
       boolean var3 = Yn4.o();
       int var10000 = (var2) ? 1 : 0;
       if (!var3) {
-         if (var2 != 0) {
+         if (var2) {
             var0 |= var1.mask;
             if (!var3) {
                return var0;
@@ -129,6 +129,7 @@ public final class Ks2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var8 = new String[27];
       int var12 = 0;
       String var11 = "eY\u0017%a\"ceE\u0010']\u0002ymJ\u0011){\u0014aG\t%d,\u007fBB\u00118r\u001ftcD\b'r\u001e\u000eiL\u000b%a\bLU_\n\u001ej\u001dh\u0012s^\u0015:|\u001fyaY\u0017+j9bbN\u0004$\u0016aG\t%d$^o\u0013Sz\")lTN#%a\u0000lT\ndB\u0016+q\u0001hax(\u0017aG\t%d8cq^\n>v\tKIN\t.]\f`EX\u0011aG\t%d>dNL\t/B\u0018bTN\u0016\foY\u0001/a\bifB\u0000&w\u0016dB\u0016+q\u0001hfB\u0000&w>`AY\u0011\u0007r\u0019nH\u000fa^\u0011%P\u0001bSN6%f\u001fnE\u000fs^\u0015:|\u001fya^\u0011%G\u0014}E\u0010iE\u0011/a\u0003KIN\t.]\f`EX\u000euX\u0000\u0005q\u0007hC_$8a\ft\u0015c^\u0016>|\u0000@A[!/`\b\u007fIJ\t#i\b\u007f\u0016iE\f>@\u0019\u007fIE\u0002\fz\baDj\u0016\u000f~\u001dyY\u000eiL\u000b%a\bCO_(+g\u000ee\u0015s^\u0015:|\u001fynD\u000b\u001af\u000faIH##v\u0001i\u0014tY\f'@\u0019\u007fIE\u0002\fz\baD}\u0004&f\b\faG\t%d.bMF\u0000$g\bsJ\u0003/^\u0002iE\u0014nD\u000b\u0019g\u001fdNL./j,~s_\u0017#}\n\u0017dB\u0016+q\u0001hs[\u0000)z\fakN\u001c\u000ev\u0019hC_\u001edB\u0016+q\u0001hcB\u0017)f\u0001lRy\u0000,v\u001fhNH\u0000\u000ev\u0019hC_\ruX\u0000\bz\nIEH\f'r\u0001";
@@ -144,7 +145,6 @@ public final class Ks2_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

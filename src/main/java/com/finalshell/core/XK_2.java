@@ -41,7 +41,7 @@ public class XK_2 {
       Ref.h(306266403902896148L, var9, var10);
       HashMap var10003 = (HashMap)(Registry.emptyArgs());
       long var12 = 225069668264757241L;
-      Object[] var11 = var10003;
+      Object var11 = var10003;
       var10003 = Ref.h(225069668264757241L, var11, var12);
 
       try {
@@ -62,7 +62,7 @@ public class XK_2 {
          if (var1 == null) {
             KeyStroke var10004 = (KeyStroke)(Registry.emptyArgs());
             long var14 = 546345160214988812L;
-            Object[] var13 = var10004;
+            Object var13 = var10004;
             var10004 = Ref.h(546345160214988812L, var13, var14);
 
             try {
@@ -94,7 +94,7 @@ public class XK_2 {
       Ref.h(306266403902896148L, var7, var8);
       HashMap var10003 = (HashMap)(Registry.emptyArgs());
       long var10 = 225069668264757241L;
-      Object[] var9 = var10003;
+      Object var9 = var10003;
       var10003 = Ref.h(225069668264757241L, var9, var10);
 
       try {
@@ -108,7 +108,7 @@ public class XK_2 {
       if (var4 != null) {
          KeyStroke var10005 = (KeyStroke)(Registry.emptyArgs());
          long var12 = 546345160214988812L;
-         Object[] var11 = var10005;
+         Object var11 = var10005;
          var10005 = Ref.h(546345160214988812L, var11, var12);
 
          try {
@@ -124,6 +124,8 @@ public class XK_2 {
    }
 
    public static String w$String(KeyStroke var0) {
+      Boolean var17;
+      boolean var22;
       int[] var10000 = ZG_2.Z();
       String var2 = KeyEvent.getKeyText(var0.getKeyCode());
       int[] var1 = var10000;
@@ -206,6 +208,8 @@ public class XK_2 {
    }
 
    public static String P(KeyStroke var0) {
+      Boolean var17;
+      boolean var22;
       int[] var10000 = ZG_2.Z();
       String var2 = KeyEvent.getKeyText(var0.getKeyCode());
       int[] var1 = var10000;
@@ -1309,6 +1313,7 @@ public class XK_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[9];
       int var11 = 0;
       String var10 = "«³v\näÎêTÁ\u0082\u0080þ\u0015ù\u0011àBd\u0092ÁÅEZ¨¨R\u009aÙØA\n\u0006\u0003>\u0097Ä\u0014âÇVà¬~ \u00000V\u0088w@\u0012¬\u0085\u0083Þ\u009eG\u0017 \u0013¥þ\u009bù\u0002\"\f\u008c.\u000b¹\f~ò»o¿Rûä\n\u0003â\u000f\u0098";
@@ -1324,7 +1329,6 @@ public class XK_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

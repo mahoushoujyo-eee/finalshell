@@ -29,7 +29,7 @@ public class TU3 implements ActionListener {
       Ref.g(119949875613775635L, var8);
       JLabel var10006 = Registry.emptyArgs();
       long var11 = 454489789944584533L;
-      Object[] var10 = var10006;
+      Object var10 = var10006;
       var10006 = Ref.h(454489789944584533L, var10, var11);
 
       try {

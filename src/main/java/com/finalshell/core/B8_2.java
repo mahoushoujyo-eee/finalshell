@@ -297,7 +297,8 @@ public class B8_2 {
    }
 
    public static boolean h(java.lang.Class var0) {
-      int var10000 = Ph2.w();
+      int var10000;
+      var10000 = Ph2.w();
       Boolean var2 = (Boolean)XJ.w(O, var0);
       int var1 = var10000;
 
@@ -5948,6 +5949,7 @@ public class B8_2 {
    }
 
    public static void w() {
+      java.lang.Class[] var10000;
       F.put(a(-26473, -20828), byte.class);
       F.put(a(-26372, -8818), short.class);
       F.put(a(-26492, -12073), int.class);
@@ -5972,7 +5974,7 @@ public class B8_2 {
       F.put(a(-26400, -20101), double[].class);
       F.put(a(-26451, -11447), char[].class);
       F.put(a(-26396, 19393), boolean[].class);
-      java.lang.Class[] var10000 = new java.lang.Class[a(22904, 636548593017421579L)];
+      var10000 = new java.lang.Class[a(22904, 636548593017421579L)];
       var10000[0] = Object.class;
       var10000[1] = Cloneable.class;
       var10000[2] = L$Class(a(-26475, 32515));
@@ -6601,7 +6603,9 @@ public class B8_2 {
    }
 
    public static List r(java.lang.Class var0, Map var1, boolean var2, com.finalshell.ui.model.D var3) {
-      int var10000 = Ph2.w();
+      int var10000;
+      java.lang.Class var8;
+      var10000 = Ph2.w();
       LinkedHashMap var5 = new LinkedHashMap();
       java.lang.Class var6 = var0;
       int var4 = var10000;
@@ -6617,8 +6621,6 @@ public class B8_2 {
 
             var6 = var8;
             if (var4 != 0) {
-      java.lang.Class[] var8;
-      java.lang.Class[] var8;
                continue;
             }
          }
@@ -9512,10 +9514,12 @@ public class B8_2 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public static void P(AccessibleObject var0) {
+      boolean var10000;
+      AccessibleObject var7;
+      boolean var8;
       int var1 = Ph2.u();
 
       label47: {
-         AccessibleObject var7;
          label53: {
             label45: {
                try {
@@ -9559,7 +9563,7 @@ public class B8_2 {
             var7.setAccessible(true);
             return;
          } catch (AccessControlException var3) {
-            boolean var8 = false;
+            var8 = false;
          }
       }
 
@@ -9804,8 +9808,10 @@ public class B8_2 {
    }
 
    public static Map V(TypeVariable[] var0, Type[] var1) {
+      int var10000;
+      HashMap var7;
       int var3 = var0.length;
-      int var10000 = Ph2.w();
+      var10000 = Ph2.w();
       HashMap var4 = new HashMap(var3);
       int var5 = 0;
       int var2 = var10000;
@@ -9836,7 +9842,8 @@ public class B8_2 {
    }
 
    public static ParameterizedType J(java.lang.Class var0, Type[] var1, Map var2) {
-      int var10000 = Ph2.w();
+      int var10000;
+      var10000 = Ph2.w();
       int var4 = var1.length;
       int var3 = var10000;
       Type[] var5 = new Type[var4];
@@ -10672,6 +10679,7 @@ public class B8_2 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static boolean w(Method var0) {
+      boolean var10000;
       int var1 = Ph2.w();
 
       try {
@@ -10683,7 +10691,6 @@ public class B8_2 {
       }
 
       label96: {
-         boolean var10000;
          label100: {
             try {
                var10000 = q;
@@ -13063,6 +13070,7 @@ public class B8_2 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -26489) & 65535;
       if (J[var2] == null) {
          char[] var3 = o[var2].toCharArray();
@@ -13849,7 +13857,7 @@ public class B8_2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -13886,6 +13894,9 @@ public class B8_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var49;
+      byte[] var7;
+      long var8;
       String[] var21 = new String[132];
       int var19 = 0;
       String var18 = "¦\u0084-\u0084.©\u001eÚ\u0087ÍEí'W\u00167 ¦#\u007f\u0006\u000f\u0088\u0011[(\u008b\u000f;þ0k\u008fòNx)hg\u0082Hn\u0088\u0003HG\u0091\u0004cÞ^\n\n\u007f:\f¨>\u009fÙ\u008c4\u0086\r\u00ad³sÕD¹\u0081À·Ã\u009fªR\u0007ý\tH\u0084ô1\u0080\u00126\u009b?glÂGJ\u009d\u008b%÷`¼9^l<\u001e{\u008d¦ä\u0004Á\u0002::ª\u0003qKõ\u0082\u0087\u0019\u0084P\u0091>\u008eû<\u0093¢àúO¸\u0005\nF,pn\u0002ÌÝ\u0017,þ_\te¸\u0093f\u001b6q\u001dÀ\u0011éE>u+RFÀí\u0002\u0081\u0087\bím\u009a¿\u0098\u000búé\u001d\u009b\u0016±§\u0096Ê]Y\u0002´¯÷w\u0085\u0088|\u0015á\u0004y\u009b!\u008cFá»¸\u001c\u008a\u0004G]\u001a \u0007£D\u009d^I]Û\u0017ZÚ²OÝÞdôE»Zô@\u007f\u0011âÎö#´\u009a\u0017û\u0004\u0087Ú\u0093Ð\u0013·Åq¯Hø\u0099vP\u008aúì%³(\u0085W;ù\u0007lë$5\u0004\u0004Ò\blÇãáÎ\u0082fØ\u0011\u0006K\u0097Üp\"þ\u008a¯Ý\u009f\u0085\u0005\u0002J1ß\u0004¹\u0000\u0010a\u0017û$¥R:Óx\u000bf\u009bÞ¨5§X\u0094é½?üÄ\u0015½\u0004Â\u0098®\u001b\u0006ôH\u009d\u0089\u0086õ)ðSç~!º~q7h]\u0092ý'\u0092\u008e\u007fÊ>\u0098q=é\u009a/â\b\u008f\u009e\u0093ù@Hbæ\u009eP\u00adw\u0006Ë\u001eZ%\u0082ñ\u0080c\u0092n( A \u0003ß\u008bÂ8,t\u0084º,kh\u0081(¢«\u0007\u0092\u0015\u001e%\u008fÏ\u0018\u0014À\u0018q$<\u0014WYÚ`J\u0015\u001e&¨\u001e÷ÿ7ª6\bD\u0003ò\u008d\u001a\u0095hiæ\u0014²ÿóÁýq\u0083Ã\u009c]\u0001\u0005sG\n\u0017,Å\u009cH9¶>\u00903\u0012QíÓ©ñ\u001bôqëìë\u001b¹!\u0002í\u000bJ\tb\u000e\u008akr(gO'\fê~Ü\u001d\u0000¶\u0084\u001c\"\u0087ÒP\u0004I\u0018\u001bÒ\u0002^M\u0002äX\u0012\u0098\u0094ÚÇ\u008b¥ó¶\u0004;ÄC³³\u009dO£Õ\u001c\u0094\u009e\u0015ÄÄ\u0095\bÛb?»F\u0085\u000b\u009bù÷\u0017\u0019Gx{¢\u007f\u0006\u0093·,\"Ý'r±\u009ekQoT\u0004Mt/\u009e\u0014\u001cÐ\u0093lÃÑ\u001efÇ\u009bE8Õ\u0083Âù'Åî\u0002\u0089\u0014\n\u009e\u0099T$ì\u0089\rXÂO\u0004i\u0098J\u009c)\rYh~Ý\u00929P]çïØÖÛ,{rv9\u0017ÈØ\u008bÂüç\u001a\u008cTËZÒo\u0088\u0096úë1\u0000\u0083>\u000fÃ\u0094/&l[2M¦Î\u0096VvôO\u0004¼\u007fð`'»\u0097\u008eæ\f©Û\u0013\u0083$Ë\u001b/\u0016È¨4\u000eW\u0000\\.Lø\u009b®\u009e\u0006L¢£f\u0003¦\u008f=v¡Å\u001f\u00960\u001bS³7ôääqØ\n0\u009aíjñ=æ1\u007fçÖ\u008b§¸ÚÆ\u0000È¬\r\u0002:å\f¨@m3fêoaª\b+\u008e2cÍ0~\u0098\u00165ê|\u008b\u0001è\u001fl\u008awC5\u0086\u0014$ä8U\u0081ÊO?\u0005jÊ½\u000f½\u001f\u0001\u001búµÑ/\u0005\u0094Éh+Ö\u008bh\u008fi\u001d\u0087Y\u009fóÔ$Ò\u000b\fÄ|NF§\u0005\"}8¯\u009e\u0014e\u008fç\u0096À®\u0082Ï) l¬9S¢>E\u0087&ß \u0014ÚK\u000e¹\u009cµ\u0091ÌßÝß\u0090 ù=qÔ®l7fÈ\u008dþé\u001dP\u0087\u0012«~\nÛ\u0002gÙd,\u0015¬«\u0015\u0005ÈZwMw\u0007Õ\u0016h\u0016¿\u0005!\u0005h>ì¥³)a°Õ\u0002g5¶\u0080.V~U\u0099ß\u001e\u0091î)\fä7²!k6Ü+Húku_Ù\u0081Ôâ\u0016\"¿÷Ò\u00052-W)ð\u0010\u0091ä\u0011\u0004]³R»'\u008d;fÞÉ¾L\u001fBª\u0081\u0000à]\u009e©©Øq?\u0005<K¾0£iu\u008e\u001eè´`_\":\u001fWO,õ\u009ed\u0005\u00029\u007fN\u0091+\u009cÑ\u0000_f\u0080ÃuªÛ¥UýªXi²Úcý5PÔ\u0093\u0090}\u0091\u008fÅ±8Eþ?\u0007\u0000l©Åµ\u001aä\u0002\fG\u0006Ï\u001a\r¾<7 =\u007fÖî°B\u000b\u009b.\u001by\u001cËwÓ)J5\u001f\u0006\u0016©\r!\u0095Ò\u008c¢\u009e>\u0091×\u0004möÎU\u000fiL÷_pr1\u0000K8ù\u0084\u0005Y,\u0003¸ @\b¯\u008e\u0002¨³ä£\u009b\u0018/â,\tU|(\u008d\u007fO½©\u001cHùbàPh\u0099p\u00ad´r\u001d#Í¦Üt¥\u0001´\u0089\tÞ@YsM¢\u00ad:\u0013\u0002yNÐ«j\u0006É«¤\u001ff\u001a½BÝ×¦)\u009bMÏÖ\u001d.\t\u0002\u0011Ptª{< \u009f(\u009b?Üo\u0013â\u0003\u007fq¸\u000f©\u0080Ì\u0004\u0012®\u0088Çd:\u0011Ô\u0089s«\u0006ç~ä\u0011à¿\u0019Mzs\u0099àª#$\tv¼\u001c\u0003ká?/\u009cÐ©\u001e½\u0094³\"\u0004[hLl\rÕ\u0088í³/)\u001b\u0089\u009bÖñ¿Q\u0006 e!t\u008eÓ\u000f·/¡W¼¹3@ê/:W17w\u001c¬ül\u008bP\u0004X®äÇñ\u008b\u0018\\7Â\u0088A\u0088´Î\u0002ÍÑ\u0012ÄÞù\u00054kqÚÖ\u0017g1k1\u000b+ñ\f]Å[\u0005\u0011\u008e®\"\u0087ÏãÜg\u0083e\u0010\u0087ÆÓ@\u0005;YªF¯\u0017\"[A\u000e]\u001eÒ:\u0093\u0012¢\u001fÖá ÑP\u001e!\u0018Ï:\u0097:Wyif\u0011!Î\u0001K\u008e:6$¸\u0017Þ·\u000b«ãw\u0006\u0003\u0084D»H\u0081\tÇ8\u008fÞ\u001eáQå·\u000bx\u0018QyÉÍâê±Õ ÀNÑ\u009cêÎßÛ\u0081\u0096tö¥\u0005_\u0099£V3ï\u0092É\u00adGR°\u0088{5wýÒ\fÉ\u0094¸@\u008c\u001d\u0015i\u0010)\u0094\u0085\u0002Ky\u0006éd%RØ×\fÄuÏ\u0012{Ä\u0092\u0081\u0090Ò¸y&±ýìi\u0013´]çÆ\u000eE\u0013<\u008a\u0006\"õ65yv¿ë×âº\u0085aºg±\u009e¹û6¯5ñ\b\u008cµ\u008bU\\¢IÕ\u0002§×\u0007ß\u0005¬\u001f\u0013\u001f\u001f\u001d\u0016+\u000b0±[´iìÀÙ<\u0010\\é²~$â\u001dÓÜÜç\u009be\u009e\nw\u0017L\u0088\u000e\u0006§ÍdÐï^\rvÛà÷ï¬v\u0086éËgð\u0002þ\u0094\u0012L\u0006pÔ\u0085¯g\u0099e\u007f\u00164õ\u001c\u0087êv@\u0014òUÞ\u0016@|ºB6¨\u0090\u009a:U\u009b£ó¬\u0090\u0087\u00125\u009a!D\"\u0085\u0091\u0090q\u001a:râ¨²¸\u0094L\fø\u000b\u009e¾Cn\u0086\u0007bäÚ<\nkî\u0094É\u0019\u0016ôõ\\ø'3í\u009f©.@\u009f.\u000b\u0083Üç\u0011\u0085\fg£ç9{ÔÐÚ\u0005©æ\u0085pû°ý `Uq\u0085`Ú®\u0013\u001ePD\u001dî®M¼ÊÓ©ÇOÖe)þ®Ì\u0018\u0015|xY\u0081²\u000f'\u008c\u0016\f\u0010\u0015ê#\u000fa\u008eÑ\u007f¸)a§\u001eô\u009fD%\u0006=ÿÖ\u0096 ÀßöI Mè\u0003ç\u000f&ÅÆ\u0090\u0016\u0010O!c\u0001\u001b\u0086|)\u009bø\u0006MîFÏ¥\u008a\u0092|fÆ¢ÁÏ«o\"¨\u007fÎxû&\u0016g\u0018:\u008dÞ\u008eª¼§\n&Õ,;öR¬Á*èÕ8\u009a\u0098\u0013ÊTSÁ\u008cJ\u001eaÂü«\u009b\u0012\u009aQ\u009a\u007f\u0083²òT$gÀÈ3Â\u008da¡\u0010\u0005ó£\u0087`{\f\u0015Þ#\u0004ô9pí¼¹\u0001\u0097\u0017\u0015\rï\u008b\u0003å2=ù¨Zßuz\u008f.zÜ\u000e*É2ò\rî¨\u008a´×¨\u0083ä»\u0080ã\u0085Ð,_\u001a!×\u009ff\u007fUt\u008a\u0007\u001dí\u0018\u0096j>S¦\u0015ò®\u007føôÎ_oÅ*\u0085W\u0001\u0015ín-¤LÇÂ\u0010Úi\u0004ì9[\b\u0005\u0014[á\u007f\u0088\u0005¥~nà&\u0002Àò\u0004¥#\u0093¹\u001e¡9ýro\u0013o`\u0097á¶\u0018ýØT\"Ì7\u000b\u0015»©KØ\u0085>\"i\u0017Ê\u0018&\u000b\r4qÛ¬yïÑ¯z^2±-é¹I¤T\n0\u0086\u000f6·\u008d\u0091\u008dN+Ó\u001c£ÊÌåT0\u0005Ì7Ö\u001fÕ";
@@ -13978,7 +13989,7 @@ public class B8_2 {
                   if ((var29 += var17) >= var20) {
                      o = var21;
                      J = new String[132];
-                     long var8 = 8855679842230277199L;
+                     var8 = 8855679842230277199L;
                      long[] var14 = new long[108];
                      int var11 = 0;
                      String var12 = "\u0083\u0010\u0005ë¼¸+!ÉluóÇìì\u0019\u009c\u0018ÀdAC\u0081\u0098ª\u001dWÂæ%\"Ï\u0018'Bu\u001e³þ\u00811U\u0088§\u0088\fW),z#ì,È\u0088W\u001fºÕïK%\u009cÙ¸Tôþ¬Usëþ\u009cZXf\u009d5Z?u\u0015ä\u0090PôlÀv\u008c\u008f\u0010¬ìg&þ«\u0005½î\u007f(þ\u0085\u0098f\b9\u0081~ü'ñûÖâýA=\u0092\u0017!\u0098)\u008e\u009dý<±\u001cö\u00ad\bd(\u0084û@\u0006C!yî|6\u009f¡\u009f/\u0096¡u+\u0087\u001fô¦T\u001d&RªÄ÷-±\u009b\u008d\u0083\u009aÜg1¹\u007f\u009a\u008d*/\u0000+\u00998k{tÿë\u0082= -]Yµ\u0098ý8ÒÊ^µ_]\u008dC\u0088f\u000bà\u009fJ\u0088°åï\u0089éú\u0019öàúÜ\u0015\u0083\r\u0002\"\u0084¢¯¡Éù´Qs¢¥ã#\u0007Ka\u0096\r\u008d(\u000e\u000fð7O\u0007ciî\u000eÄ%\\µ×¾\u0086@\u008dbÀ ó®®6\u0087eç°ÔÓvnho3¥\nÝ\u0012Qm,\u009b\u0000jÎÚY+ä?b¢ã|\u0003?Q¤_z?³b.b\u009cï®óW¹3\u008b¸}ì\u0084Ø8ß=`D\u0015k(þ\u0001\u001d¶ÕÝ£±Æê'å\u001e\u0080\u0089âáÈµCÀ=±\u009a¼Á\t#ãÖZ\u0005õÌ\u0081s9AmAÖg\u00856Ê\u0095\u0013\u00adâmB^¥3ºÒ³ï9\u0006[q#Ð¤,p\u0095=ü·\u0018\u0019\u0019«\u0002ëË\u008f\u0017}d\u001eïü\u0095ÇT\u0091Ë\u00052\u009c#\u0015\u0018hgèêè\"n\u0094¿ST!\u001d\u009f\u0088$£9Ìý\u0086\"V2L,ÿ&ZîÂ@~X\u009a¢d¡ñ\u0087B\u008bOZåâà\u0014¾\u009b\u0012\u008e4i\u0019/\u0097Q_ÈC³\t¹ö\u001bR\u0003\u0083q#ÿÊ5\u008b\"bJ\u008d¾ðÙ@J\u00adtÿ0ÿ\u0015PðZß\u0005\u0016¿$½Ø²\u0005<¹dÝp \u008ení±ê³ñûþ\u0099ð\u008fè§®$¡?\u008d¸ÉôÎù\u0084Ó¹\u008fEU\rÿEàÈS\u0015/\u0083Û\u0013(Çy\u008f·7Ôntx¾XuQH(V@Ç\u0098\u008akî\u0016pX§Á\u001e\u0004EÉ\u008cú¹ê\u0006@\nYä\u008d©\u00105±\u008f´\u0019×\u0091\u0014\u0006\u0098\u009c\u0089RÂffï\u008d\u0081é¹B=\u001e\u0000ÓínDxÇ\n¯Åê$êQëmRÃ%QF£Ð\b\u009a!æ\u001e?Q+\tªë\u0001_Õfçz\u0081\u000fÅ\b1Üãg\u0091%\u0086YàM³©B\u008b@13Õï\u0093\u0090÷{.a\bÌÇõ»A\u00ad³\u0095\u0089\u008aÐô\u0005\u000bHn®Ã¡\u0000\u001e\u0004\u0082,Hcû\bkaÜ'¢Y[\u0005\u0096êù'j\u008f^ZÊ\u0083íÜ\n./<Â\u001a±FZ\u0081ýbá\u00980Xþ\u0012\nV%la_ï×\u001bÚ\u009dÝ7\u001b¯Ý\u0007\u001almB\u0011J\b\u0011B\u000f>ÈÈó¶/ß´M\u0098\u0013# \u000b©EÐFñp\u0017\u0081É¿\u0005¢F}^Ú\u009bÙ";
@@ -14023,7 +14034,7 @@ public class B8_2 {
                                     while (true) {
                                        byte var42 = var2;
                                        var2 += 8;
-                                       byte[] var7 = var4.substring(var42, var2).getBytes("ISO-8859-1");
+                                       var7 = var4.substring(var42, var2).getBytes("ISO-8859-1");
                                        long[] var32 = var6;
                                        int var43 = var3++;
                                        long var55 = ((long)var7[0] & 255L) << 56
@@ -14175,7 +14186,6 @@ public class B8_2 {
       }
    }
 }
-
 
 
 

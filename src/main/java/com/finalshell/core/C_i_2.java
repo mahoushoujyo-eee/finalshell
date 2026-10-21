@@ -1227,6 +1227,7 @@ public abstract class C_i_2 implements K_2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var17;
       String[] var13 = new String[2];
       int[] var10000 = new int[3];
       int var11 = 0;

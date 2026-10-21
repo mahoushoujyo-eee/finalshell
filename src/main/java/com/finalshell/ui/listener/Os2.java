@@ -2,15 +2,15 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Os2 implements ActionListener {
-   public final ImportPanel x;
+   public final ImportMenuPanel x;
 
-   public Os2(ImportPanel var1) {
+   public Os2(ImportMenuPanel var1) {
       this.x = var1;
    }
 
@@ -18,9 +18,9 @@ public class Os2 implements ActionListener {
    public void actionPerformed(ActionEvent var1) {
       Object var3 = 587689868050151523L;
       Ref.g(587689868050151523L, var3);
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var6 = 457204009113929650L;
-      Object[] var5 = var10002;
+      Object var5 = var10002;
       var10002 = Ref.h(457204009113929650L, var5, var6);
 
       try {

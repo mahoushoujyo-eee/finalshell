@@ -1165,6 +1165,7 @@ public final class G9 implements Serializable, Cloneable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var21;
       String[] var5 = new String[5];
       int var3 = 0;
       int[] var10000 = new int[2];
@@ -1181,7 +1182,6 @@ public final class G9 implements Serializable, Cloneable {
          byte var10002 = -1;
 
          while (true) {
-      char[] var21;
             label47: {
                char[] var25 = var10001.toCharArray();
                int var10004 = var25.length;

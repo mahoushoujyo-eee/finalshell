@@ -1001,6 +1001,7 @@ public class C_T implements M2_4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "]\u009f0û2 ) \"w\u0004á\u0097\u0015û#Çf1Ëo6Jº¢ÆÇ»ëº\u0006÷!\u0096DlÁ";
@@ -1015,7 +1016,6 @@ public class C_T implements M2_4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

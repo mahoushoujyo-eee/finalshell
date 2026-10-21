@@ -33,7 +33,7 @@ public class LC3 extends LI3 {
       return c(31871, 21943);
    }
 
-   public static Ls4 p(Xe2 var0, UJ var1) throws Pc2 {
+   public static SshKeyCodec p(Xe2 var0, UJ var1) throws Pc2 {
       byte[][] var2 = var1.U(4, c(31869, -2577));
       byte[] var3 = var2[1];
       byte[] var4 = Arrays.copyOf(var2[2], X);

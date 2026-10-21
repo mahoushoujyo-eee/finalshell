@@ -20,9 +20,9 @@ public class TI_2 extends T4 {
    @Override
    public void layoutContainer(Container var1) {
       int var10000 = (OY3.Z()) ? 1 : 0;
-      byte var3 = (this.r.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      byte var3 = (byte)((this.r.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       int var4 = 0;
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
 
       while (var4 < this.r.y.size()) {
          Component var5 = this.r.J$u_(var4).j();
@@ -163,11 +163,15 @@ public class TI_2 extends T4 {
 
    @Override
    public Dimension preferredLayoutSize(Container var1) {
+      Dimension var23;
+      Dimension var25;
+      Dimension var28;
+      Dimension var30;
       int var10000 = (OY3.Z()) ? 1 : 0;
       Dimension var3 = this.L();
       Dimension var4 = this.K();
       int var5 = this.r.y.size() - 1;
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       var10000 = this.r.v;
       if (!var2) {
          if (this.r.v == 0) {

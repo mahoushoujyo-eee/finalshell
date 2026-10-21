@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Fd4 implements ActionListener {
-   public final com.finalshell.ui.frame.U O;
+   public final com.finalshell.ui.frame.MainFrame O;
 
-   public Fd4(com.finalshell.ui.frame.U var1) {
+   public Fd4(com.finalshell.ui.frame.MainFrame var1) {
       this.O = var1;
    }
 

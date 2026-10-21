@@ -18,10 +18,12 @@ public class Sd2 {
    public static Integer[] d;
 
    public static String E(int var0, char[] var1, int var2, int var3, HV var4) {
+      int var7;
+      int var8;
       Ky4[] var10000 = t();
       int var6 = Math.min(var0, var3);
-      int var7 = var6;
-      int var8 = var6;
+      var7 = var6;
+      var8 = var6;
       boolean var10 = false;
       Ky4[] var5 = var10000;
       int var11 = 0;
@@ -54,7 +56,6 @@ public class Sd2 {
 
                   if (var5 != null) {
       char var17;
-      char var17;
                      continue;
                   }
                }
@@ -76,7 +77,7 @@ public class Sd2 {
       label100: {
          var12 = var17 - var19;
          Object var13 = null;
-         var14 = (((0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
+         var14 = (0) ? 1 : 0;
          int var18 = Registry.lookupField(280429622358205740L).getBoolean(null);
          if (var5 != null) {
             if (var18 == 0) {
@@ -245,10 +246,11 @@ public class Sd2 {
    }
 
    public static void c(StringBuilder var0, char[] var1, int var2, int var3) {
+      int var7;
       Dc2 var5 = Dc2.NONPRINTING;
       Ky4[] var10000 = t();
       int var6 = var2 + var3;
-      int var7 = var2;
+      var7 = var2;
       Ky4[] var4 = var10000;
 
       while (var7 < var6) {
@@ -274,6 +276,7 @@ public class Sd2 {
    }
 
    public static int s(char[] var0, int var1, int var2, boolean var3) {
+      int var7;
       Ky4[] var10000 = t();
       int var5 = 0;
       int var6 = var1;
@@ -297,11 +300,11 @@ public class Sd2 {
                            break label55;
                         }
 
-                        var10001 = ((var0[var6]) ? 1 : 0) ? 1 : 0;
-                        var10002 = ((var3) != 0) != 0;
+                        var10001 = (var0[var6]) ? 1 : 0;
+                        var10002 = var3;
                      }
 
-                     var8 = U(var10001, (boolean)var10002);
+                     var8 = U(var10001, var10002);
                      if (var4 != null) {
                         if (var8 == 0) {
                            break label55;
@@ -355,7 +358,7 @@ public class Sd2 {
       if (var2 != null) {
          if (var0 != a(11948, 422796771842225599L)) {
             if (var2 == null) {
-               return (boolean)var0;
+               return (var0 != 0);
             }
 
             label28:
@@ -366,7 +369,7 @@ public class Sd2 {
                   if (var0 > var10001) {
                      var10001 = a(17408, 612357589762645186L);
                      if (var2 == null) {
-                        return (boolean)(var0 == var10001 ? 1 : 0);
+                        return ((var0 == var10001 ? 1 : 0) != 0);
                      }
 
                      if (var0 < var10001) {
@@ -376,20 +379,20 @@ public class Sd2 {
 
                   var10000 = t(var0, var1);
                   if (var2 == null) {
-                     return (boolean)var10000;
+                     return (var10000 != 0);
                   }
 
                   var10001 = 2;
                }
 
-               return (boolean)(var10000 == var10001 ? 1 : 0);
+               return ((var10000 == var10001 ? 1 : 0) != 0);
             }
          }
 
          var10000 = 0;
       }
 
-      return (boolean)var10000;
+      return (var10000 != 0);
    }
 
    public static com.finalshell.ui.model.J2 G(com.finalshell.ui.model.J2 var0) {
@@ -411,6 +414,8 @@ public class Sd2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static int b(char var0, char[][] var1, int var2) {
+      int var7;
+      int var8;
       Ky4[] var10000 = t();
       int var4 = 0;
       Ky4[] var3 = var10000;
@@ -418,7 +423,7 @@ public class Sd2 {
       if (var3 != null) {
          label29:
          if (var0 >= var1[0][0]) {
-            int var7 = var0;
+            var7 = var0;
             int var10001 = var1[var2][1];
             if (var3 != null) {
                if (var0 > var10001) {
@@ -758,6 +763,7 @@ public class Sd2 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -1631) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1544,7 +1550,7 @@ public class Sd2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1572,6 +1578,8 @@ public class Sd2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var37;
+      byte[] var7;
       String[] var13 = new String[41];
       Ky4[] var10000 = new Ky4[2];
       int var11 = 0;
@@ -1678,7 +1686,7 @@ public class Sd2 {
                      while (true) {
                         byte var30 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var30, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var30, var2).getBytes("ISO-8859-1");
                         long[] var20 = var6;
                         int var31 = var3++;
                         long var41 = ((long)var7[0] & 255L) << 56
@@ -2541,7 +2549,6 @@ public class Sd2 {
       }
    }
 }
-
 
 
 

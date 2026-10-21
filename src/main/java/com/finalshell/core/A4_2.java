@@ -87,6 +87,7 @@ public class A4_2 extends FileChooserUI {
    }
 
    public void Z(PropertyChangeEvent var1) {
+      int var15;
       String var10000 = com.finalshell.ui.panel.T.v$String();
       String var3 = var1.getPropertyName();
       String var2 = var10000;
@@ -1235,6 +1236,7 @@ public class A4_2 extends FileChooserUI {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[15];
       int var3 = 0;
       String var2 = "ßZ\u008b!Ó,\u0007a¹;þA\tdùÏë«\\}\u001a\u009b`õó\u0097\t$ØmÏ\u008e%\u0090ÿ>o¥:~\u0099¾$\u001e¢\u0015?^m®¤Ç\u0080pâ1þ\ng)°Ôji\u001eÒfÌo9\u0018 cg`#ô\u008cï\u008fë©\u0084| W\u000e\u001a=Å©Å'àÈ\u0014Ý3°ò\n\f<RßÏ\u0015\u0085¹\u0000\u0094'u¦\u0088¼\"×Ó×\u0016¸còSð¤ØÅx\u0085±·o\u0014ÖJ\u0014\u001dlà-@~\bä¨\u0012\u007fLè\u0019Ûè¿Sf®\u00809[}0½\u000e&õç8\u0003.\u0017\u0013\u001b\u008b·R\u0018\u0000\u008d\u0092r®\u008b,£âÛ\u001bJ\u0080³\u0004b\u000eE\u0095¢ªÄ\u0098n\u001bFÖô\u0010¯ý\u0005?Ê\u000fÝs[U?D¤(ÈÞ\u0019ð\u008a\u0090;\u001c`\u001eÒ\f\u001d\u008doNHAéæÓ\u008d\u0019\u008c\u009d\u0096ê0fØ\u0019\u009f¿\u0010\u0011ûkÏµó\u0010y#Ü#w\u009b\u0014å\u009cªË¬0%Þ®\u0006~¦ã\u000f\t+\u0011\u0010ì\u00adÚ¡¹L\u0019èÂñ¿6fòïØ\u0011Í 2S\\\u00884\"å\u000e:\u0091O£ÝW=";
@@ -1250,7 +1252,6 @@ public class A4_2 extends FileChooserUI {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

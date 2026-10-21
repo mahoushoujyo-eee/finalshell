@@ -24,6 +24,7 @@ public class Rl2 implements Cd4 {
 
    @Override
    public synchronized Vector e() {
+      Vector var4;
       boolean var10000 = Dm4.F$boolean();
       this.b();
       Vector var2 = new Vector();
@@ -32,7 +33,6 @@ public class Rl2 implements Cd4 {
 
       while (true) {
          if (var3 < this.v.size()) {
-      Vector var4;
             var4 = var2;
             if (!var1) {
                break;
@@ -41,7 +41,6 @@ public class Rl2 implements Cd4 {
             var2.addElement((AB_2)this.v.elementAt(var3));
             var3++;
             if (var1) {
-      Vector var4;
                continue;
             }
          }
@@ -54,6 +53,7 @@ public class Rl2 implements Cd4 {
    }
 
    public synchronized void m(AB_2 var1) {
+      int var4;
       boolean var2 = Dm4.F$boolean();
       if (!this.v.contains(var1)) {
          byte[] var3 = var1.u();
@@ -66,7 +66,7 @@ public class Rl2 implements Cd4 {
             return;
          }
 
-         int var4 = 0;
+         var4 = 0;
 
          while (true) {
             if (var4 < this.v.size()) {
@@ -212,9 +212,10 @@ public class Rl2 implements Cd4 {
    }
 
    public void b() {
-      int var10000 = Dm4.J$boolean();
+      int var4;
+      int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       Vector var2 = new Vector();
-      boolean var1 = (boolean)var10000;
+      boolean var1 = (var10000) != 0;
       int var3 = this.v.size();
       var10000 = var3;
       if (!var1) {
@@ -225,7 +226,7 @@ public class Rl2 implements Cd4 {
          var10000 = 0;
       }
 
-      int var4 = var10000;
+      var4 = var10000;
 
       while (true) {
          if (var4 < var3) {
@@ -307,6 +308,7 @@ public class Rl2 implements Cd4 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 23839) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1081,7 +1083,7 @@ public class Rl2 implements Cd4 {
                var10000 = 21;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -1204,7 +1206,6 @@ public class Rl2 implements Cd4 {
       }
    }
 }
-
 
 
 

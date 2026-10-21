@@ -22,6 +22,7 @@ public class Lv2 {
    }
 
    public void d(String var1) {
+      long var20;
       W2.F();
       Object[] var10001 = Registry.packArgs(var1);
       long var9 = 492930666611970668L;
@@ -45,7 +46,7 @@ public class Lv2 {
          Ref.g(215745072839650963L, var11);
          String var10003 = (String)(Registry.packArgs(var7));
          long var14 = 565741923244854826L;
-         Object[] var13 = var10003;
+         Object var13 = var10003;
          var10003 = Ref.h(565741923244854826L, var13, var14);
 
          try {
@@ -96,7 +97,7 @@ public class Lv2 {
 
                if (var2 != null) {
                   if (var26) {
-                     long var20 = 144280138285601590L;
+                     var20 = 144280138285601590L;
                      Ref.s(144280138285601590L, var8, var20);
                      if (var2 != null) {
                         break label80;
@@ -941,6 +942,7 @@ public class Lv2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "JÌ'ZOÂ¹Kb\u0088Ù\n·R;xw\u0011\u0014\u0017t£\b\u0099Ü\u0013£\u0010hÇJ\tÜ\u0094\u0088\u0019=\u009f¯d\u0082";
@@ -955,7 +957,6 @@ public class Lv2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -24,7 +24,7 @@ public class TE {
       Ref.h(306266403902896148L, var4, var5);
       Dx4_2 var10003 = (Dx4_2)(Registry.emptyArgs());
       long var7 = 568950058787001160L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       var10003 = Ref.h(568950058787001160L, var6, var7);
 
       try {
@@ -61,7 +61,7 @@ public class TE {
       Ref.h(306266403902896148L, var4, var5);
       Dx4_2 var10003 = (Dx4_2)(Registry.emptyArgs());
       long var7 = 278198838305589877L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       var10003 = Ref.h(278198838305589877L, var6, var7);
 
       try {
@@ -89,6 +89,10 @@ public class TE {
    }
 
    public static ArrayList g(ArrayList var0, ArrayList var1) {
+      Object[] var21;
+      Object[] var23;
+      ArrayList var48;
+      boolean var54;
       HashMap var3 = new HashMap();
       boolean var10000 = Ln4_2.i();
       Iterator var4 = var1.iterator();
@@ -98,7 +102,7 @@ public class TE {
          L1 var5 = (L1)var4.next();
          String var10001 = (String)(Registry.emptyArgs());
          long var10 = 542058094445767607L;
-         Object[] var9 = var10001;
+         Object var9 = var10001;
          var10001 = Ref.h(542058094445767607L, var9, var10);
 
          try {
@@ -112,7 +116,7 @@ public class TE {
             if (var10001 == null) {
                String var10002 = (String)(Registry.emptyArgs());
                long var12 = 138168190222789908L;
-               Object[] var11 = var10002;
+               Object var11 = var10002;
                var10002 = Ref.h(138168190222789908L, var11, var12);
 
                try {
@@ -126,9 +130,9 @@ public class TE {
                }
             }
 
-            Object[] var10003 = Registry.emptyArgs();
+            Object var10003 = Registry.emptyArgs();
             long var14 = 542058094445767607L;
-            Object[] var13 = var10003;
+            Object var13 = var10003;
             var10003 = Registry.packArgs(Ref.h(542058094445767607L, var13, var14));
             long var15 = 417955638237048558L;
             Object var10004 = Ref.h2(417955638237048558L, var15);
@@ -152,7 +156,6 @@ public class TE {
 
       while (true) {
          if (var40 < var0.size()) {
-      Object var48;
             var48 = var0;
             if (!var2) {
                break;
@@ -180,7 +183,7 @@ public class TE {
                   if (var2) {
                      Object[] var63 = Registry.emptyArgs();
                      long var22 = 162488024198852693L;
-                     Object[] var21 = var63;
+                     var21 = var63;
                      var63 = Ref.h(162488024198852693L, var21, var22);
 
                      try {
@@ -188,9 +191,9 @@ public class TE {
                         throw var34.getTargetException();
                      }
 
-                     Object[] var10005 = Registry.emptyArgs();
+                     Object var10005 = Registry.emptyArgs();
                      long var24 = 162488024198852693L;
-                     Object[] var23 = var10005;
+                     var23 = var10005;
                      var10005 = Ref.h(162488024198852693L, var23, var24);
 
                      try {
@@ -219,7 +222,6 @@ public class TE {
 
             var40++;
             if (var2) {
-      Dx4_2 var48;
                continue;
             }
          }
@@ -364,7 +366,7 @@ public class TE {
 
       O0 var10003 = Registry.e(var0.I(a(13139, 21478)));
       long var7 = 250873246822364857L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       Ref.h(250873246822364857L, var6, var7);
 
       try {
@@ -434,11 +436,13 @@ public class TE {
    }
 
    public static O0 Z(L1 var0) {
+      Integer var21;
+      Long var23;
       O0 var1 = new O0();
       String var10001 = a(13136, -5317);
-      Object[] var10003 = Registry.emptyArgs();
+      String var10003 = (String)(Registry.emptyArgs());
       long var3 = 374079817658963288L;
-      Object[] var2 = var10003;
+      Object var2 = var10003;
       var10003 = Ref.h(374079817658963288L, var2, var3);
 
       try {
@@ -449,9 +453,9 @@ public class TE {
 
       var10001.C(var0, var10003);
       String var10002 = a(13148, 16551);
-      Object[] var10004 = Registry.emptyArgs();
+      String var10004 = (String)(Registry.emptyArgs());
       long var5 = 542058094445767607L;
-      Object[] var4 = var10004;
+      Object var4 = var10004;
       var10004 = Ref.h(542058094445767607L, var4, var5);
 
       try {
@@ -462,9 +466,9 @@ public class TE {
 
       var10002.C(var0, var10004);
       String var16 = a(13150, -20427);
-      Object[] var10005 = Registry.emptyArgs();
+      Object var10005 = Registry.emptyArgs();
       long var7 = 236277018693765536L;
-      Object[] var6 = var10005;
+      Object var6 = var10005;
       var10005 = Ref.h(236277018693765536L, var6, var7);
 
       try {
@@ -475,9 +479,9 @@ public class TE {
 
       var16.C(var0, var21);
       String var19 = a(13151, 13386);
-      Object[] var10006 = Registry.emptyArgs();
+      Object var10006 = Registry.emptyArgs();
       long var9 = 162488024198852693L;
-      Object[] var8 = var10006;
+      Object var8 = var10006;
       var10006 = Ref.h(162488024198852693L, var8, var9);
 
       try {
@@ -502,11 +506,11 @@ public class TE {
       Ref.h(306266403902896148L, var8, var9);
       Oc2 var10004 = Registry.emptyArgs();
       long var11 = 568950058787001160L;
-      Object[] var10 = var10004;
+      Object var10 = var10004;
       var10004 = Ref.h(568950058787001160L, var10, var11);
-      Object[] var10005 = Registry.emptyArgs();
+      ArrayList var10005 = (ArrayList)(Registry.emptyArgs());
       long var13 = 596400151700218172L;
-      Object[] var12 = var10005;
+      Object var12 = var10005;
       var10005 = Ref.h(596400151700218172L, var12, var13);
 
       try {
@@ -567,7 +571,7 @@ public class TE {
       Ref.h(278198838305589877L, var10, var11);
       Oc2 var10004 = Registry.emptyArgs();
       long var13 = 596400151700218172L;
-      Object[] var12 = var10004;
+      Object var12 = var10004;
       var10004 = Ref.h(596400151700218172L, var12, var13);
 
       try {
@@ -1420,6 +1424,7 @@ public class TE {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[12];
       int var3 = 0;
       String var2 = "\"¶þ\u0005\u009fÅ\u0002¬$\u0004\t§z\u0015\u0004\nÉ\u009aÎ\u000bo\u0015\u0005\u0016Ø#\u0007\u009e\u007f\u0095\u001c\u0005\u0013Ý\u0093¯\u0016\u0004\u0090«A\u001a\u00042ø\u0015p\u000b-ÐM®Ñ4&|[É\u0098\u0004\u0014\u0006Y7";
@@ -1537,7 +1542,6 @@ public class TE {
       }
    }
 }
-
 
 
 

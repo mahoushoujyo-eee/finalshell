@@ -866,6 +866,7 @@ public class Cp4 extends Cj4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[4];
       int var5 = 0;
       String var4 = "_ÜÁ\u0018ü\u0005ÍÛùyú";
@@ -880,7 +881,6 @@ public class Cp4 extends Cj4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

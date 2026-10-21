@@ -1,7 +1,7 @@
 package com.finalshell.task;
 
 import com.finalshell.core.Vn2;
-import com.finalshell.core.Yf2;
+import com.finalshell.core.ConnectionConfigStore;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.QuickConnectPanel;
@@ -17,6 +17,7 @@ public class WE implements Runnable {
 
    @Override
    public void run() {
+      boolean var25;
       String var1 = Vn2.C();
 
       while (true) {
@@ -24,13 +25,13 @@ public class WE implements Runnable {
             Registry.emptyArgs();
             long var3 = 270389152141252877L;
             Ref.h2(270389152141252877L, var3);
-            Yf2 var10002 = (Yf2)(Registry.emptyArgs());
+            ConnectionConfigStore var10002 = (ConnectionConfigStore)(Registry.emptyArgs());
             long var6 = 410905379772103887L;
-            Object[] var5 = var10002;
+            Object var5 = var10002;
             var10002 = Ref.h(410905379772103887L, var5, var6);
 
             try {
-               var10002 = (Yf2)var10002;
+               var10002 = (ConnectionConfigStore)var10002;
             } catch (InvocationTargetException var19) {
                throw var19.getTargetException();
             }
@@ -43,9 +44,9 @@ public class WE implements Runnable {
                long var10 = 410905379772103887L;
                Object[] var9 = var10004;
                Ref.h(410905379772103887L, var9, var10);
-               Object[] var10005 = Registry.emptyArgs();
+               Object var10005 = Registry.emptyArgs();
                long var12 = 582109538642750681L;
-               Object[] var11 = var10005;
+               Object var11 = var10005;
                var10005 = Ref.h(582109538642750681L, var11, var12);
 
                try {

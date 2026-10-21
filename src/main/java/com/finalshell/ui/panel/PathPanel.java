@@ -27,11 +27,11 @@ import net.miginfocom.swing.MigLayout;
 public class PathPanel extends JPanel implements Td4 {
    public JPanel h;
    public JTextField C;
-   public Connection4 w;
+   public ConnectionInfoPanel w;
    public JPanel K;
    public Km2 u;
    public com.finalshell.ui.model.Kl4 o;
-   public Loading Y;
+   public LoadingPanel Y;
    public ArrayList y;
    public String x;
    public String J;
@@ -105,7 +105,7 @@ public class PathPanel extends JPanel implements Td4 {
       JTextField var2;
       String var3;
       label23: {
-         Address.g();
+         FileBrowserAddressBar.g();
          long var5 = 291327501867436911L;
          Ref.s(291327501867436911L, var1, var5);
          Object var6 = 626158744249045388L;
@@ -140,6 +140,7 @@ public class PathPanel extends JPanel implements Td4 {
    }
 
    public void h$void() {
+      long var32;
       JPanel var10001 = new JPanel();
       long var7 = 300027703367967316L;
       JPanel var6 = var10001;
@@ -183,7 +184,7 @@ public class PathPanel extends JPanel implements Td4 {
       Object var30 = 626158744249045388L;
       ((JTextField)Ref.g(626158744249045388L, var30)).addFocusListener(new Oq4(this));
       Registry.packArgs("\uf148");
-      long var32 = 378399160856121064L;
+      var32 = 378399160856121064L;
       Object var10014 = Ref.h2(378399160856121064L, var32);
 
       try {
@@ -244,16 +245,16 @@ public class PathPanel extends JPanel implements Td4 {
          throw var110.getTargetException();
       }
 
-      Connection4 var10026;
+      ConnectionInfoPanel var10026;
       Object var54 = 215197654066137060L;
 true = new TA((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(215197654066137060L, var54));
       long var57 = 294487557435087442L;
-      Connection4 var56 = var10026;
+      ConnectionInfoPanel var56 = var10026;
       Ref.s(294487557435087442L, var56, var57);
       Object var58 = 294487557435087442L;
-      ((Connection4)Ref.g(294487557435087442L, var58)).setDragEnabled(false);
+      ((ConnectionInfoPanel)Ref.g(294487557435087442L, var58)).setDragEnabled(false);
       Object var60 = 294487557435087442L;
-      ((Connection4)Ref.g(294487557435087442L, var60)).setEditable(false);
+      ((ConnectionInfoPanel)Ref.g(294487557435087442L, var60)).setEditable(false);
       Object var62 = 294487557435087442L;
       Ref.g(294487557435087442L, var62);
       Object[] var10030 = Registry.packArgs(false);
@@ -269,7 +270,7 @@ true = new TA((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(2151976540661370
 
       Km2 var10032;
       Object var66 = 294487557435087442L;
-null = new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Registry.lookupField(464038983016865223L).getBoolean(this));
+null = new MigLayout(this, (ConnectionInfoPanel)Ref.g(294487557435087442L, var66), Registry.lookupField(464038983016865223L).getBoolean(this));
 
 
       long var69 = 427789642816905166L;
@@ -322,7 +323,7 @@ null = new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Regis
       JScrollPane var4 = new JScrollPane(null);
       var4.setBorder(BorderFactory.createLineBorder(new Color(a(9928, 8964294156000086783L), a(24779, 1218422891563027709L), a(24779, 1218422891563027709L))));
       Object var88 = 294487557435087442L;
-      this.setViewportView((Connection4)Ref.g(294487557435087442L, var88));
+      this.setViewportView((ConnectionInfoPanel)Ref.g(294487557435087442L, var88));
       var4.setOpaque(false);
       var4.getViewport().setOpaque(false);
       var3.setLeftComponent(var4);
@@ -357,7 +358,7 @@ null = new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Regis
       ((Km2)Ref.g(427789642816905166L, var100)).setAutoResizeMode(0);
       L4 var10049;
       Object var102 = 427789642816905166L;
-      super(this, (Km2)Ref.g(427789642816905166L, var102));
+      // [VF-super] super(this, (Km2)Ref.g(427789642816905166L, var102));
       L4 var5 = var10049;
       var5.setBorder(BorderFactory.createLineBorder(new Color(a(24779, 1218422891563027709L), a(24779, 1218422891563027709L), a(24779, 1218422891563027709L))));
       var5.setOpaque(false);
@@ -370,15 +371,15 @@ null = new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Regis
 
    public void J(boolean var1) {
       Object var2 = 309786152565523780L;
-      ((Loading)Ref.g(309786152565523780L, var2)).setVisible(var1);
+      ((LoadingPanel)Ref.g(309786152565523780L, var2)).setVisible(var1);
    }
 
    @Override
    public void E(Uf4 var1) {
-      Address.g();
-      Object[] var10002 = Registry.emptyArgs();
+      FileBrowserAddressBar.g();
+      Object var10002 = Registry.emptyArgs();
       long var6 = 177073721418864424L;
-      Object[] var5 = var10002;
+      Object var5 = var10002;
       var10002 = Ref.h(177073721418864424L, var5, var6);
 
       try {
@@ -391,7 +392,7 @@ null = new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Regis
       if (var3 == Registry.lookupField(451440066276164151L).getInt(null)) {
          var10002 = Registry.emptyArgs();
          long var8 = 405617140951858885L;
-         Object[] var7 = var10002;
+         Object var7 = var10002;
          var10002 = Ref.h(405617140951858885L, var7, var8);
 
          try {
@@ -405,7 +406,7 @@ null = new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Regis
          Ref.g(215197654066137060L, var9);
          Tf4 var10004 = (Tf4)(Registry.emptyArgs());
          long var12 = 152919711700242153L;
-         Object[] var11 = var10004;
+         Object var11 = var10004;
          var10004 = Ref.h(152919711700242153L, var11, var12);
 
          try {
@@ -434,7 +435,7 @@ null = new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Regis
             var10008 = Ref.h(152919711700242153L, var17, var18);
             String var10009 = (String)(Registry.emptyArgs());
             long var20 = 498856411508641826L;
-            Object[] var19 = var10009;
+            Object var19 = var10009;
             var10009 = Ref.h(498856411508641826L, var19, var20);
 
             try {
@@ -469,9 +470,9 @@ null = new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Regis
       Registry.lookupField(403162208242956478L).setInt(this, var1);
    }
 
-   public Connection4 h$a3() {
+   public ConnectionInfoPanel h$a3() {
       Object var1 = 294487557435087442L;
-      return (Connection4)Ref.g(294487557435087442L, var1);
+      return (ConnectionInfoPanel)Ref.g(294487557435087442L, var1);
    }
 
    public Km2 V() {
@@ -1311,6 +1312,7 @@ null = new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Regis
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[8];
       int var11 = 0;
       String var10 = "\u001dòHBE\u0001ÁÀ\u001dÀß9ý\u0004跇律\f\u009f\u0013Áã\u0019\u0096\u0086¨)äëg¡Å\u0082O÷±Æ§\u0007\u0005XB×?´'û?^\rnÛ4\u008aH¨Ñt\u00122³\t¦UÝõX\u009a\u009dÂL\u007fmÁS¡m\nÃ\u001bk\u00875Ô0\ri\rÆ½\u0094þû?Z?2Æå";
@@ -1326,7 +1328,6 @@ null = new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Regis
          byte var10002 = -1;
 
          while (true) {
-      Object var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

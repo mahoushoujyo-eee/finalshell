@@ -2,13 +2,13 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import java.lang.reflect.InvocationTargetException;
 
 public class No2_2 implements Runnable {
-   public final U i;
+   public final MainFrame i;
 
-   public No2_2(U var1) {
+   public No2_2(MainFrame var1) {
       this.i = var1;
    }
 

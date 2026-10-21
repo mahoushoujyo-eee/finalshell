@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -93,7 +93,8 @@ public class Md2 implements Yx2 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void G(boolean var1) {
-      String[] var2 = PingMessageR.N();
+      Md2 var10000;
+      String[] var2 = PingMessageReceiver.N();
 
       label41: {
          IOException var8;

@@ -52,7 +52,7 @@ public class GQ {
          UnknownPacket.Builder var6 = new UnknownPacket.Builder();
          byte[] var7 = var2.build$IpV4Packet().getRawData();
          byte[] var8 = new byte[2];
-         Object[] var10002 = Registry.packArgs((short)(var7.length + 2), var8, 0);
+         Object var10002 = Registry.packArgs((short)(var7.length + 2), var8, 0);
          long var11 = 196389687671494385L;
          Ref.h2(196389687671494385L, var11);
          byte[] var9 = new byte[a((int)8272875314577680803L, (long)var10002)];

@@ -329,9 +329,9 @@ public class Yd2 extends TransferHandler {
       int var10 = 0;
 
       while (var10 < var6.length) {
-         Object[] var10003 = Registry.packArgs(var3.convertRowIndexToModel(var9[var10]));
+         Object var10003 = Registry.packArgs(var3.convertRowIndexToModel(var9[var10]));
          long var12 = 291710787850444005L;
-         Object[] var11 = var10003;
+         Object var11 = var10003;
          var10003 = Ref.h(291710787850444005L, var11, var12);
 
          try {

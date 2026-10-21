@@ -21,6 +21,7 @@ public class HA extends Hd2 {
 
    @Override
    public C_J[] V$arr_J() {
+      C_J[] var6;
       TypeVariable[] var2 = this.J.getTypeParameters();
       C_J[] var3 = new C_J[var2.length];
       String[] var10000 = RG_2.C();
@@ -29,7 +30,6 @@ public class HA extends Hd2 {
 
       while (true) {
          if (var4 < var3.length) {
-      C_J[] var6;
             try {
                var6 = var3;
                if (var1 == null) {
@@ -42,7 +42,6 @@ public class HA extends Hd2 {
                   continue;
                }
             } catch (P_5 var5) {
-      C_J[] var6;
                throw a(var5);
             }
          }
@@ -59,6 +58,7 @@ public class HA extends Hd2 {
    }
 
    public Q4_3[] R(Type[] var1) throws B2_5 {
+      Q4_3[] var6;
       Q4_3[] var3 = new Q4_3[var1.length];
       String[] var10000 = RG_2.C();
       int var4 = 0;
@@ -237,6 +237,7 @@ public class HA extends Hd2 {
 
    @Override
    public Hv2_2[] C() {
+      Hv2_2[] var6;
       String[] var10000 = RG_2.C();
       Constructor[] var2 = this.J.getDeclaredConstructors();
       Hv2_2[] var3 = new Hv2_2[var2.length];
@@ -676,6 +677,7 @@ public class HA extends Hd2 {
 
             var3 = var5;
             if (var1 != null) {
+      C_J[] var5;
                continue;
             }
          }
@@ -780,6 +782,7 @@ public class HA extends Hd2 {
    }
 
    public Hd2[] h(java.lang.Class[] var1) {
+      Hd2[] var6;
       String[] var10000 = RG_2.C();
       Hd2[] var3 = new Hd2[var1.length];
       String[] var2 = var10000;
@@ -811,6 +814,7 @@ public class HA extends Hd2 {
    }
 
    public HP_2[] V(Method[] var1) {
+      HP_2[] var6;
       String[] var10000 = RG_2.C();
       HP_2[] var3 = new HP_2[var1.length];
       int var4 = 0;
@@ -842,6 +846,7 @@ public class HA extends Hd2 {
    }
 
    public U3_3[] V(Field[] var1) {
+      U3_3[] var6;
       String[] var10000 = RG_2.C();
       U3_3[] var3 = new U3_3[var1.length];
       String[] var2 = var10000;
@@ -947,6 +952,7 @@ public class HA extends Hd2 {
    }
 
    public static String b(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -11958) & 65535;
       if (c[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1727,7 +1733,7 @@ public class HA extends Hd2 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1752,7 +1758,9 @@ public class HA extends Hd2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var5 = new String[11];
+      char[] var20;
+      String[] var5;
+      var5 = new String[11];
       int var3 = 0;
       String var2 = "ÐTm¹b\u0092µu{\u001c\u0099íÊ®\u0086ÁÜ\u0015§\u001fïdÝÐ0b\u0014\u0018·\u009a÷\u001c\u0013\u009d}x`>Ù\\\u0080rÜîµ\u008f¶\u000e\u0081o\u0098\u0010îí±C\u008aÛ\u008c\u0081À \u009e\\!6ø\u008a\u0003I&]\u0003\u008dGM\u0010Q\u0005F^txSõ;.á\u008dÎ\f\u0005Í\u0010wMx_(\u001f}Ñëoa¤Ìñ\u0015\u0087\u0017éf«:R³2D*ðvÑk\u0082Ròíd\u001c)\u0085\u001e\u0005\u0003×/\u0006";
       int var4 = "ÐTm¹b\u0092µu{\u001c\u0099íÊ®\u0086ÁÜ\u0015§\u001fïdÝÐ0b\u0014\u0018·\u009a÷\u001c\u0013\u009d}x`>Ù\\\u0080rÜîµ\u008f¶\u000e\u0081o\u0098\u0010îí±C\u008aÛ\u008c\u0081À \u009e\\!6ø\u008a\u0003I&]\u0003\u008dGM\u0010Q\u0005F^txSõ;.á\u008dÎ\f\u0005Í\u0010wMx_(\u001f}Ñëoa¤Ìñ\u0015\u0087\u0017éf«:R³2D*ðvÑk\u0082Ròíd\u001c)\u0085\u001e\u0005\u0003×/\u0006"
@@ -1869,7 +1877,6 @@ public class HA extends Hd2 {
       }
    }
 }
-
 
 
 

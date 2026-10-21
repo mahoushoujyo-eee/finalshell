@@ -69,7 +69,7 @@ public class Bx2 extends Oe2 {
          JLabel var10006 = (JLabel)Ref.g(264155899074958124L, var20);
          String var10008 = (String)(Registry.packArgs(var8));
          long var23 = 366869564242274233L;
-         Object[] var22 = var10008;
+         Object var22 = var10008;
          var10008 = Ref.h(366869564242274233L, var22, var23);
 
          try {
@@ -83,9 +83,9 @@ public class Bx2 extends Oe2 {
 
       Object var24 = 583289971016546929L;
       Ref.g(583289971016546929L, var24);
-      Object[] var10009 = Registry.emptyArgs();
+      Object var10009 = Registry.emptyArgs();
       long var27 = 589871071857415373L;
-      Object[] var26 = var10009;
+      Object var26 = var10009;
       var10009 = Ref.h(589871071857415373L, var26, var27);
 
       try {

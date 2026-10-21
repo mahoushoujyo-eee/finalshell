@@ -494,7 +494,7 @@ public class CI extends JList implements Pp2, Yb4, Sa2 {
       String[] var10000 = c();
       ListModel var3 = this.getModel();
       String[] var2 = var10000;
-      byte var5 = (var3 instanceof ED3) ? 1 : 0;
+      byte var5 = (byte)((var3 instanceof ED3) ? 1 : 0);
       if (var2 == null) {
          if (var5 != 0) {
             this.T(((ED3)var3).J(var1));

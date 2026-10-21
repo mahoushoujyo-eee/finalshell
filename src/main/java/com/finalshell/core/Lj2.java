@@ -41,9 +41,9 @@ public class Lj2 extends Entry {
       long var4 = 566043907753096060L;
       Object[] var3 = var10002;
       Ref.h(566043907753096060L, var3, var4);
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var6 = 401679078758232861L;
-      Object[] var5 = var10003;
+      Object var5 = var10003;
       var10003 = Ref.h(401679078758232861L, var5, var6);
 
       try {
@@ -81,9 +81,9 @@ public class Lj2 extends Entry {
       long var5 = 566043907753096060L;
       Object[] var4 = var10002;
       Ref.h(566043907753096060L, var4, var5);
-      Object[] var10003 = Registry.packArgs(Registry.lookupField(238213257117654142L).getInt(this), var1);
+      Object var10003 = Registry.packArgs(Registry.lookupField(238213257117654142L).getInt(this), var1);
       long var7 = 607512343893312129L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       var10003 = Ref.h(607512343893312129L, var6, var7);
 
       try {

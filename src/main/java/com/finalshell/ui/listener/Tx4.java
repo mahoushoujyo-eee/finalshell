@@ -2,14 +2,14 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.core.UT;
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.CopyPanel;
+import com.finalshell.ui.panel.ProcessInfoPanel;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Tx4 implements MouseListener {
-   public final CopyPanel p;
+   public final ProcessInfoPanel p;
 
-   public Tx4(CopyPanel var1) {
+   public Tx4(ProcessInfoPanel var1) {
       this.p = var1;
    }
 

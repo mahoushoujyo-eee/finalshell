@@ -124,7 +124,7 @@ public class KY3 implements EU {
       label40: {
          label39: {
             try {
-               var8.init((boolean)var10001, new ParametersWithIV(this.f, var3.array(), 0, var3.array().length));
+               var8.init(var10001, new ParametersWithIV(this.f, var3.array(), 0, var3.array().length));
                var9 = this.u;
                var10001 = this.n;
                if (var2 != null) {
@@ -145,7 +145,7 @@ public class KY3 implements EU {
          var10001 = 1;
       }
 
-      var9.init((boolean)var10001, new ParametersWithIV(this.D, var3.array(), 0, var3.array().length));
+      var9.init(var10001, new ParametersWithIV(this.D, var3.array(), 0, var3.array().length));
       byte[] var4 = new byte[a(5250, 5089786397254503575L)];
 
       try {
@@ -346,6 +346,7 @@ public class KY3 implements EU {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long var9;
       char[] var10003 = "\b\u000b|m\u0007+\u00171\u000bo.\u0002".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -392,7 +393,7 @@ public class KY3 implements EU {
             String var39 = new String(var10003).intern();
             int var25 = -1;
             a = var39;
-            long var9 = 3801446227395116548L;
+            var9 = 3801446227395116548L;
             long[] var14 = new long[8];
             int var11 = 0;
             String var12 = "£\u009dHõ\u000eÖ\u0006Z0$\u0093Ú2!~\u0006\u001aSÀ\u000b\u009e§¿QZ\u0012\u0098¤8AÉÅ\u0082\u009b¹v\u0095\u0011EÞß\u0015áX\u001eZ2Ó";

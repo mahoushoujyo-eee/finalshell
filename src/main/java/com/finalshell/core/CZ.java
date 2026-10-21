@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.lang.reflect.InvocationTargetException;
 
 public class CZ implements Cq2 {
@@ -18,10 +18,11 @@ public class CZ implements Cq2 {
 
    @Override
    public void u(VO var1) {
-      boolean var2 = Address.g();
-      Object[] var10001 = Registry.emptyArgs();
+      Integer var24;
+      boolean var2 = FileBrowserAddressBar.g();
+      Object var10001 = Registry.emptyArgs();
       long var4 = 178857963789314984L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(178857963789314984L, var3, var4);
 
       try {
@@ -33,13 +34,13 @@ public class CZ implements Cq2 {
       if (var24 == Registry.lookupField(242649790291880610L).getInt(null)) {
          Object var5 = 225021371275606830L;
          Ref.g(225021371275606830L, var5);
-         Address var10003 = (Address)(Registry.emptyArgs());
+         FileBrowserAddressBar var10003 = (FileBrowserAddressBar)(Registry.emptyArgs());
          long var8 = 140337426392269953L;
-         Object[] var7 = var10003;
+         Object var7 = var10003;
          var10003 = Ref.h(140337426392269953L, var7, var8);
 
          try {
-            var10003 = (Address)var10003;
+            var10003 = (FileBrowserAddressBar)var10003;
          } catch (InvocationTargetException var21) {
             throw var21.getTargetException();
          }

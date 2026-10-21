@@ -8,6 +8,8 @@ public class YG3 extends GT3 {
    public static Integer[] c;
 
    public int q(int[] var1) {
+      int var10;
+      int var9;
       String[] var10000 = W5.q();
       int var5 = 0;
       String[] var2 = var10000;
@@ -91,8 +93,6 @@ public class YG3 extends GT3 {
 
             var5++;
             if (var2 != null) {
-      int var10;
-      int var10;
                continue;
             }
          }
@@ -105,6 +105,8 @@ public class YG3 extends GT3 {
    }
 
    public int K(int[] var1, int[] var2, int[] var3) {
+      int var12;
+      int var9;
       int var6 = 0;
       int var7 = a(21045, 1336400658486261544L);
       String[] var10000 = W5.q();
@@ -119,7 +121,7 @@ public class YG3 extends GT3 {
                break;
             }
 
-            int var9 = 0;
+            var9 = 0;
 
             label47: {
                while (var9 < a(26692, 4867723795067751768L)) {
@@ -168,15 +170,19 @@ public class YG3 extends GT3 {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int[] var10;
+      int var12;
+      int var23;
+      int[] var9;
       int var6 = 0;
       String[] var10000 = W5.q();
       int[] var7 = new int[a(26692, 4867723795067751768L)];
       int[] var8 = new int[a(26692, 4867723795067751768L)];
-      int[] var9 = new int[a(26692, 4867723795067751768L)];
+      var9 = new int[a(26692, 4867723795067751768L)];
       String[] var5 = var10000;
-      int[] var10 = new int[a(26692, 4867723795067751768L)];
+      var10 = new int[a(26692, 4867723795067751768L)];
       int[] var11 = new int[var1 * var2];
-      int var12 = 0;
+      var12 = 0;
 
       label111:
       while (true) {
@@ -345,6 +351,7 @@ public class YG3 extends GT3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long var9;
       char[] var10003 = "\u00001\b&~L#&4\u001c:".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -391,7 +398,7 @@ public class YG3 extends GT3 {
             String var39 = new String(var10003).intern();
             int var25 = -1;
             a = var39;
-            long var9 = 7449937619813012069L;
+            var9 = 7449937619813012069L;
             long[] var14 = new long[8];
             int var11 = 0;
             String var12 = ";\u0098X\u0012»&\u0004´\u001c'°ã~¤W\u000eÖ×Ê1f|ß4'³\u0003+2\u0092\u001a²ñ\u0087÷\u0010¿\u0099sE7\u0014M~I\u0084»Á";
@@ -615,7 +622,6 @@ public class YG3 extends GT3 {
       }
    }
 }
-
 
 
 

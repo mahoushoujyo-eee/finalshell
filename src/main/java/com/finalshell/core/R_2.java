@@ -49,6 +49,7 @@ public class R_2 {
    }
 
    public void Z(float var1, float var2) {
+      R_2 var4;
       int var3;
       int var10000;
       label84: {
@@ -278,6 +279,7 @@ public class R_2 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ -27795) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1052,7 +1054,7 @@ public class R_2 {
                var10000 = 89;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;

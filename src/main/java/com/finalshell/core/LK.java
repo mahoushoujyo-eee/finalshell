@@ -10,11 +10,11 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class LK implements Bk2 {
-   public final Ty2 j;
+   public final RemoteProcessManager j;
    public static String a;
    public static long b;
 
-   public LK(Ty2 var1) {
+   public LK(RemoteProcessManager var1) {
       this.j = var1;
    }
 

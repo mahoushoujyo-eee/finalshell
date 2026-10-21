@@ -18,6 +18,7 @@ public class SW extends Authenticator {
    }
 
    public PasswordAuthentication D() {
+      SW var6;
       int[] var10000 = P();
       Dn4 var2 = EE.S().C();
       int[] var1 = var10000;

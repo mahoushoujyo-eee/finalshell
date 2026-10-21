@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Od4 implements ActionListener {
-   public final com.finalshell.ui.frame.U h;
+   public final com.finalshell.ui.frame.MainFrame h;
 
-   public Od4(com.finalshell.ui.frame.U var1) {
+   public Od4(com.finalshell.ui.frame.MainFrame var1) {
       this.h = var1;
    }
 
@@ -21,7 +21,7 @@ public class Od4 implements ActionListener {
          if (var10000 == null) {
             TerminalHelpFrame var10001;
             Object var3 = 147680755442349247L;
-            super((com.finalshell.ui.frame.U)Ref.g(147680755442349247L, var3));
+            // [VF-super] super((com.finalshell.ui.frame.U)Ref.g(147680755442349247L, var3));
             Registry.lookupField(194285877583497070L).set(null, var10001);
          }
 

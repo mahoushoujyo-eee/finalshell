@@ -792,6 +792,7 @@ public class Oc2 extends Ok2 implements List, Cloneable, RandomAccess, Serializa
    }
 
    public List E(Class var1) {
+      ArrayList var9;
       String var10000 = Hi2.C();
       ArrayList var3 = new ArrayList(this.size());
       String var2 = var10000;
@@ -800,7 +801,6 @@ public class Oc2 extends Ok2 implements List, Cloneable, RandomAccess, Serializa
 
       while (true) {
          if (var5.hasNext()) {
-      Object var9;
             Object var6 = var5.next();
             Object var7 = B8_2.B(var6, var1, var4);
 
@@ -815,7 +815,6 @@ public class Oc2 extends Ok2 implements List, Cloneable, RandomAccess, Serializa
                   continue;
                }
             } catch (IllegalArgumentException var8) {
-      Object var9;
                throw b(var8);
             }
          }
@@ -977,6 +976,7 @@ public class Oc2 extends Ok2 implements List, Cloneable, RandomAccess, Serializa
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var9;
       char[] var10003 = "o\u0007Gu?>E#\u0000Amsy".toCharArray();
       int var10004 = var10003.length;
       int var0 = 0;
@@ -994,7 +994,7 @@ public class Oc2 extends Ok2 implements List, Cloneable, RandomAccess, Serializa
          var6 = 105;
          var1 = var10004;
          if (var10004 <= var0) {
-            String var9 = new String(var10003).intern();
+            var9 = new String(var10003).intern();
             byte var4 = -1;
             d = var9;
             return;
@@ -1052,7 +1052,6 @@ public class Oc2 extends Ok2 implements List, Cloneable, RandomAccess, Serializa
       }
    }
 }
-
 
 
 

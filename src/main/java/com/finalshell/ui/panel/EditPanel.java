@@ -29,7 +29,7 @@ public class EditPanel extends JPanel {
    public JLabel G;
    public ArrayList j;
    public Lj4_2 J;
-   public Copy3 u;
+   public CommandListPanel u;
    public JPanel P;
    public static String[] b;
    public static String[] c;
@@ -37,6 +37,7 @@ public class EditPanel extends JPanel {
    public static Integer[] e;
 
    public EditPanel(AppendCarriageReturnCRPanel var1) {
+      long var33;
       ArrayList var10001 = new ArrayList();
       long var12 = 584619567951220222L;
       ArrayList var11 = var10001;
@@ -86,7 +87,7 @@ public class EditPanel extends JPanel {
             String var6 = "#" + (var5 + 1);
             JLabel var7 = new JLabel();
             Registry.packArgs("");
-            long var33 = 479240045929603103L;
+            var33 = 479240045929603103L;
             Object var10012 = Ref.h2(479240045929603103L, var33);
 
             try {
@@ -145,7 +146,7 @@ public class EditPanel extends JPanel {
             Ref.h(618768380564905662L, var15, var16);
             Dv2 var10006 = (Dv2)(Registry.emptyArgs());
             long var18 = 444392071806916948L;
-            Object[] var17 = var10006;
+            Object var17 = var10006;
             var10006 = Ref.h(444392071806916948L, var17, var18);
 
             try {
@@ -156,7 +157,7 @@ public class EditPanel extends JPanel {
 
             var10006 = Registry.packArgs(var10006.getText());
             long var20 = 183637464897772936L;
-            Object[] var19 = var10006;
+            Object var19 = var10006;
             Ref.h(183637464897772936L, var19, var20);
 
             try {
@@ -187,6 +188,7 @@ public class EditPanel extends JPanel {
    }
 
    public void T(Lj4_2 var1) {
+      long var33;
       AppendCarriageReturnCRPanel.Y();
       long var11 = 376006859484345408L;
       Ref.s(376006859484345408L, var1, var11);
@@ -194,7 +196,7 @@ public class EditPanel extends JPanel {
       JLabel var10003 = (JLabel)Ref.g(396374395717633047L, var12);
       String var10005 = (String)(Registry.emptyArgs());
       long var15 = 286931176286176762L;
-      Object[] var14 = var10005;
+      Object var14 = var10005;
       var10005 = Ref.h(286931176286176762L, var14, var15);
 
       try {
@@ -209,7 +211,7 @@ public class EditPanel extends JPanel {
       JLabel var10004 = (JLabel)Ref.g(608082533723237713L, var16);
       String var10006 = (String)(Registry.emptyArgs());
       long var19 = 547398689030025911L;
-      Object[] var18 = var10006;
+      Object var18 = var10006;
       var10006 = Ref.h(547398689030025911L, var18, var19);
 
       try {
@@ -221,7 +223,7 @@ public class EditPanel extends JPanel {
       var1.setText(var10006);
       var10006 = Registry.emptyArgs();
       long var21 = 384035338232698498L;
-      Object[] var20 = var10006;
+      Object var20 = var10006;
       var10006 = Ref.h(384035338232698498L, var20, var21);
 
       try {
@@ -238,7 +240,7 @@ public class EditPanel extends JPanel {
          JPanel var10008 = (JPanel)Ref.g(236559307586037520L, var24);
          JLabel var10010 = (JLabel)(Registry.emptyArgs());
          long var27 = 118615872545397619L;
-         Object[] var26 = var10010;
+         Object var26 = var10010;
          var10010 = Ref.h(118615872545397619L, var26, var27);
 
          try {
@@ -252,7 +254,7 @@ public class EditPanel extends JPanel {
          JPanel var112 = (JPanel)Ref.g(236559307586037520L, var28);
          JTextField var10012 = (JTextField)(Registry.emptyArgs());
          long var31 = 221314680238633888L;
-         Object[] var30 = var10012;
+         Object var30 = var10012;
          var10012 = Ref.h(221314680238633888L, var30, var31);
 
          try {
@@ -263,8 +265,8 @@ public class EditPanel extends JPanel {
 
          var5.remove(var10012);
          var10012 = Registry.packArgs("");
-         long var33 = 574096403321140047L;
-         Object[] var32 = var10012;
+         var33 = 574096403321140047L;
+         Object var32 = var10012;
          Ref.h(574096403321140047L, var32, var33);
 
          try {
@@ -286,7 +288,7 @@ public class EditPanel extends JPanel {
          OJ3 var8 = (OJ3)((ArrayList)Ref.g(584619567951220222L, var34)).get(var101);
          String var113 = (String)(Registry.emptyArgs());
          long var37 = 452972440898270588L;
-         Object[] var36 = var113;
+         Object var36 = var113;
          var113 = Ref.h(452972440898270588L, var36, var37);
 
          try {
@@ -303,7 +305,7 @@ public class EditPanel extends JPanel {
 
             String var10011 = (String)(Registry.emptyArgs());
             long var39 = 452972440898270588L;
-            Object[] var38 = var10011;
+            Object var38 = var10011;
             var10011 = Ref.h(452972440898270588L, var38, var39);
 
             try {
@@ -317,7 +319,7 @@ public class EditPanel extends JPanel {
 
          var113 = Registry.emptyArgs();
          long var41 = 118615872545397619L;
-         Object[] var40 = var113;
+         Object var40 = var113;
          Ref.h(118615872545397619L, var40, var41);
 
          try {
@@ -329,7 +331,7 @@ public class EditPanel extends JPanel {
          StringBuilder var119 = new StringBuilder();
          String var10013 = (String)(Registry.emptyArgs());
          long var43 = 154853555769629536L;
-         Object[] var42 = var10013;
+         Object var42 = var10013;
          var10013 = Ref.h(154853555769629536L, var42, var43);
 
          try {
@@ -341,7 +343,7 @@ public class EditPanel extends JPanel {
          var119.setText(var7.append((String)var10013).append(" ").toString());
          JTextField var123 = Registry.emptyArgs();
          long var45 = 221314680238633888L;
-         Object[] var44 = var123;
+         Object var44 = var123;
          var123 = Ref.h(221314680238633888L, var44, var45);
 
          try {
@@ -353,7 +355,7 @@ public class EditPanel extends JPanel {
          var123.setText("");
          var10013 = Registry.emptyArgs();
          long var47 = 618768380564905662L;
-         Object[] var46 = var10013;
+         Object var46 = var10013;
          Ref.h(618768380564905662L, var46, var47);
          Object[] var10014 = Registry.packArgs(var1);
          long var49 = 301014203256957327L;
@@ -402,7 +404,7 @@ public class EditPanel extends JPanel {
          JPanel var10020 = (JPanel)Ref.g(236559307586037520L, var60);
          JLabel var10022 = (JLabel)(Registry.emptyArgs());
          long var63 = 118615872545397619L;
-         Object[] var62 = var10022;
+         Object var62 = var10022;
          var10022 = Ref.h(118615872545397619L, var62, var63);
 
          try {
@@ -416,7 +418,7 @@ public class EditPanel extends JPanel {
          JPanel var133 = (JPanel)Ref.g(236559307586037520L, var64);
          JTextField var10024 = (JTextField)(Registry.emptyArgs());
          long var67 = 221314680238633888L;
-         Object[] var66 = var10024;
+         Object var66 = var10024;
          var10024 = Ref.h(221314680238633888L, var66, var67);
 
          try {
@@ -428,10 +430,10 @@ public class EditPanel extends JPanel {
          var8.add(var10024, a(1273, -16599));
          Dx4_2 var10025 = (Dx4_2)(Registry.emptyArgs());
          long var69 = 257102191814086367L;
-         Object[] var68 = var10025;
+         Object var68 = var10025;
          var10025 = Registry.packArgs(Ref.h(257102191814086367L, var68, var69));
          long var71 = 242040625560871861L;
-         Object[] var70 = var10025;
+         Object var70 = var10025;
          var10025 = Ref.h(242040625560871861L, var70, var71);
 
          try {
@@ -445,7 +447,7 @@ public class EditPanel extends JPanel {
             if (var9 != null) {
                ArrayList var10026 = (ArrayList)(Registry.emptyArgs());
                long var73 = 596400151700218172L;
-               Object[] var72 = var10026;
+               Object var72 = var10026;
                var10026 = Ref.h(596400151700218172L, var72, var73);
 
                try {
@@ -468,7 +470,7 @@ public class EditPanel extends JPanel {
 
                   ArrayList var10029 = Registry.emptyArgs();
                   long var77 = 596400151700218172L;
-                  Object[] var76 = var10029;
+                  Object var76 = var10029;
                   var10029 = Ref.h(596400151700218172L, var76, var77);
 
                   try {
@@ -480,7 +482,7 @@ public class EditPanel extends JPanel {
                   L1 var143 = (L1)var10029.get(0);
                   String var10030 = (String)(Registry.emptyArgs());
                   long var79 = 542058094445767607L;
-                  Object[] var78 = var10030;
+                  Object var78 = var10030;
                   var10030 = Ref.h(542058094445767607L, var78, var79);
 
                   try {
@@ -512,12 +514,12 @@ public class EditPanel extends JPanel {
       Ref.s(584619567951220222L, var1, var3);
    }
 
-   public Copy3 R() {
+   public CommandListPanel R() {
       Object var1 = 329993788740527022L;
-      return (Copy3)Ref.g(329993788740527022L, var1);
+      return (CommandListPanel)Ref.g(329993788740527022L, var1);
    }
 
-   public void z(Copy3 var1) {
+   public void z(CommandListPanel var1) {
       long var3 = 329993788740527022L;
       Ref.s(329993788740527022L, var1, var3);
    }
@@ -1351,6 +1353,7 @@ public class EditPanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[13];
       int var11 = 0;
       String var10 = "Õu\u000e\u008c«D+ë\u0090\u009fòq5Ë\t\u0083\u008fô¸\u0011y`.\u0096\u0002缟轤\bÂ\u0096Û\u009b\u0013\u001cK¥\u000e\u0083BÄjò\u0098\u0000sõë^x \u008d\n5úØ\u008b\u0098ÄÂË¥§\u000e\u000fy\u009fûpÊÕ\n\u0016\u0093uª9\u009d\u000b-\u0099ÛçøIÄz%\u0084g\u000eÁ\u001e\u008cáûé!]Ñ.ÚÀ0\u009a\bpT\u008dÃÙ\u0017\u0012Ä\t\u009aÊ-\u008d&\u0004\u001fÓO";
@@ -1366,7 +1369,6 @@ public class EditPanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      Object var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

@@ -59,6 +59,8 @@ public class LO3 implements Serializable {
    }
 
    public boolean Z(LO3 var1) {
+      LO3 var4;
+      LO3 var5;
       Ky4[] var2 = KZ3.W();
       int var10000 = this.C;
       if (var2 == null) {
@@ -69,7 +71,7 @@ public class LO3 implements Serializable {
             if (var2 == null) {
                if (this.C == var1.C) {
                   if (var2 != null) {
-                     return (boolean)this.q;
+                     return (this.q != 0);
                   }
 
                   if (this.q > var1.q) {
@@ -98,7 +100,6 @@ public class LO3 implements Serializable {
                         }
 
                         if (this.H != null) {
-      Ky4[] var4;
                            var4 = var1;
                            if (var2 != null) {
                               break label84;
@@ -195,6 +196,8 @@ public class LO3 implements Serializable {
    }
 
    public boolean z(LO3 var1) {
+      LO3 var4;
+      LO3 var5;
       Ky4[] var2 = KZ3.W();
       int var10000 = var1.C;
       if (var2 == null) {
@@ -205,7 +208,7 @@ public class LO3 implements Serializable {
             if (var2 == null) {
                if (var1.C == this.C) {
                   if (var2 != null) {
-                     return (boolean)var1.q;
+                     return (var1.q != 0);
                   }
 
                   if (var1.q > this.q) {
@@ -228,7 +231,6 @@ public class LO3 implements Serializable {
                      }
 
                      if (var1.q == this.q) {
-      Ky4[] var4;
                         var4 = var1;
                         if (var2 != null) {
                            break label84;
@@ -257,7 +259,7 @@ public class LO3 implements Serializable {
             label94: {
                if (var2 == null) {
                   if (var10000 != var10001) {
-                     return (boolean)0;
+                     return 0 != 0;
                   }
 
                   var5 = var1;
@@ -270,7 +272,7 @@ public class LO3 implements Serializable {
                }
 
                if (var10000 != var10001) {
-                  return (boolean)0;
+                  return 0 != 0;
                }
 
                var5 = var1;
@@ -279,7 +281,7 @@ public class LO3 implements Serializable {
             Integer var6 = var5.H;
             if (var2 == null) {
                if (var5.H == null) {
-                  return (boolean)0;
+                  return 0 != 0;
                }
 
                var6 = this.H;
@@ -287,7 +289,7 @@ public class LO3 implements Serializable {
 
             if (var2 == null) {
                if (var6 == null) {
-                  return (boolean)0;
+                  return 0 != 0;
                }
 
                var6 = var1.H;
@@ -295,18 +297,18 @@ public class LO3 implements Serializable {
 
             int var7 = var6;
             if (var2 != null) {
-               return (boolean)var7;
+               return var7 != 0;
             }
 
             if (var7 <= this.H) {
-               return (boolean)0;
+               return 0 != 0;
             }
          }
 
          var10000 = 1;
       }
 
-      return (boolean)var10000;
+      return var10000 != 0;
    }
 
    public boolean x(LO3 var1) {
@@ -339,7 +341,7 @@ public class LO3 implements Serializable {
          int var10001 = this.C;
          if (var2 == null) {
             if (var1.C != this.C) {
-               return (boolean)0;
+               return 0 != 0;
             }
 
             var10000 = var1.q;
@@ -351,16 +353,16 @@ public class LO3 implements Serializable {
          }
 
          if (var10000 != var10001) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
-         var10000 = Ax2.Z(var1.H, new Object[]{this.H});
+         var10000 = (Ax2.Z(var1.H, new Object[]{this.H})) ? 1 : 0;
       }
 
       if (var2 != null) {
-         return (boolean)var10000;
+         return var10000 != 0;
       } else {
-         return (boolean)(var10000 != 0 ? 1 : 0);
+         return (boolean)((var10000 != 0 ? 1 : 0) != 0);
       }
    }
 
@@ -385,7 +387,6 @@ public class LO3 implements Serializable {
       L = new LO3(1, 0, 0);
    }
 }
-
 
 
 

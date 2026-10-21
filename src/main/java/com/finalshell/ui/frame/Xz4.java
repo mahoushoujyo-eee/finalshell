@@ -275,10 +275,7 @@ public class Xz4 extends C {
    }
 
    public static String t(Component var0) {
-      return var10001;
-      return var10001;
-      return var10001;
-      return var10001;
+      Component var10001;
       int[] var1 = Ds2.U$arrint();
 
       String var8;
@@ -1138,6 +1135,7 @@ public class Xz4 extends C {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[9];
       int var3 = 0;
       String var2 = "\u009d\u0080>\u0002\u0011³\u0006J\nºa#ø\u0003¼\u009f\u001a\t\u001fCÇ\u0083\u0091\u0014}Eà\u0002b\u0086\u0006¡\u0099øØë\u007f";

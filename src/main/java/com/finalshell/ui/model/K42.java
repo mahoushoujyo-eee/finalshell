@@ -79,6 +79,8 @@ public class K42 extends AbstractTableModel {
    }
 
    public int G(int var1) {
+      Integer var12;
+      long var9;
       Object var3 = -1;
       KA_3.y$arrky_4();
       Object var6 = 229616287374109703L;
@@ -91,9 +93,9 @@ public class K42 extends AbstractTableModel {
             LI3_2 var5 = (LI3_2)var4.next();
             var3++;
             var10001 = var5;
-            Object[] var10002 = Registry.emptyArgs();
-            long var9 = 419335026051024288L;
-            Object[] var8 = var10002;
+            Object var10002 = Registry.emptyArgs();
+            var9 = 419335026051024288L;
+            Object var8 = var10002;
             var10002 = Ref.h(419335026051024288L, var8, var9);
 
             try {
@@ -119,9 +121,11 @@ public class K42 extends AbstractTableModel {
    }
 
    public void E(LI3_2 var1) {
-      Object[] var10002 = Registry.emptyArgs();
+      Integer var11;
+      Integer var9;
+      Object var10002 = Registry.emptyArgs();
       long var3 = 220896290980473708L;
-      Object[] var2 = var10002;
+      Object var2 = var10002;
       var10002 = Ref.h(220896290980473708L, var2, var3);
 
       try {
@@ -130,9 +134,9 @@ public class K42 extends AbstractTableModel {
          throw var7.getTargetException();
       }
 
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var5 = 220896290980473708L;
-      Object[] var4 = var10004;
+      Object var4 = var10004;
       var10004 = Ref.h(220896290980473708L, var4, var5);
 
       try {
@@ -160,6 +164,7 @@ public class K42 extends AbstractTableModel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var0 = new String[13];
       int var4 = 0;
       String var3 = "乔作\u0002凛嬤\u0002呓禌\u0003辀揙攛\u0002伓缒\u0003乼卹N\u0003\u000e5/\u0002當手\u0003\u0017,攛\u0002吣亘\u0004嶻传皅彃";
@@ -174,7 +179,6 @@ public class K42 extends AbstractTableModel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label48: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

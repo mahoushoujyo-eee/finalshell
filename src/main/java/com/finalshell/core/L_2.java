@@ -27,7 +27,7 @@ public class L_2 implements EU {
    public void z(int var1, byte[] var2, byte[] var3) throws Exception {
       int var10000 = (Y12.Q()) ? 1 : 0;
       String var5 = a(18582, -2906);
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
 
       label61: {
          label65: {

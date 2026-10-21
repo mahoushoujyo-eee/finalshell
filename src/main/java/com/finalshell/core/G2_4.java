@@ -1224,6 +1224,7 @@ public final class G2_4 extends K_5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[22];
       int var3 = 0;
       String var2 = "ÞÖ÷-Ý\u000b\u001dÃ§\u0095g\u009dà\u0092LtÆ/FÌY\fí¬å\u007f\u007fñÍã\u0095\u0013llvÑ\u0007ð\u0013\u008cNÈ½y\u001cwo#7\u0086!\u0003]\u0085h\u0016-Ü\u0095\u0005èp\u008c\u001ci\u008eøN\u0090bß\u0090\u0005'ç\r.j\u0011ûý\u008b@\u0086êE\u0007Òó\u0014&õUÌpµ\t\u0097\u0015\u009dÅ°\u0091Åû0\u0003Ø[ã\u0003è\u0006ÿ\u0003¼ÄoB5'\u0019zö\u0098\u0002¤iÌ\u001f¸'§0=\u000ePâ¤ú6[+âR\u0014p?gÞêôQ¿)\u0092]Ãð}\u0092ä\n \u001eÎ¬»ÊHòï´:\u008aé\u009d\u0018îÌ\u0091\u0012\u0019\u00adD8ù¨L\u0089°ÑH\u0004¿\u001b\u008d·×\u001dð\u0007Qð®\u008fRÕz=\u0010Ñj\u007f\u009b\f\u0011\u0016`\u0004Ä\f\u0010\u00ad\u008d\u001d;\u009d8\u0017·\u0095\fÐÙýc\u00833ç\tj7þèÕ\u008f.Éy\u008a Î\u0095\u0082·Ú½Û\u009fñ©\f\u008b\u0007\u0014»\u0012\u007f(R\u0088X^\u0018UÎouöï±¡\"\u0012\u000fæ³\u0084\u0018b\u0018Lb\u0084.!\u0013=æB\u008cu½·â,²n,R=µÄ\u0092\u0090¥(\u001a\u0089©%ØsE¹\u0092\u008dr=q\u0087A,\u000eº2±í´«\u009cý\u0093`\fÊÛÙ_à\u0011Á\u007fðòÙ\u0097\u0007\n\u0006\u009d\u0006)a\u007f\u001b\u000f¼\u0018Õð\u009e\u001bÝ\u0019>)ñ^\u0001\u001a~\u0006¡+|SôU\u001d\u0083Pb\u0013êÀÊr^\u0001r½i\u000b\nnÁ[ÅÌ)1ýÔs}Â\u001f×\u0003+\"\u008c\u0003:[¢=®ò\u0091d\u0088rD\u0094fy¶°né®\u0019ÝÔ\u00814¼l\u0097d§V\u00adù\u0014\u007f\u0015Ñä\u0013\u0082\u009a\u0093\u0093\u0094Ù\u0010-\b-\u0001z^\u0089\u0091±\u0016í8`ZÄV_\u0003×\u0098=Sî8úi\u001fi3éÞn\u001cZF´Î¡B¯\u0017ãèô\u001dAÕª¬_\u001dë|\u000b\rw«fu\u0013Øà\r\u0016)Âú&\u0099\u009e³÷\u00ad\u0004hÝÅ¾\u007f\u0002Ò_=ÔgÎÚq({ß\u0081\u0010J\u009dñL]\u00ad£BNæE6¸\"D<Ey\u0012e¶Ý¶ByQ6\u0004²%!<\u0019\u0006Ð&¹\u0002mÀ\u0089ÃË¥$|\u0099Hú5§";
@@ -1239,7 +1240,6 @@ public final class G2_4 extends K_5 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

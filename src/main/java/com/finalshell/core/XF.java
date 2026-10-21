@@ -882,6 +882,7 @@ public class XF extends Xu2 implements PN3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "x\u001f0J\u001dS_s\rßé\u007f»Dþ«;ç\u001d\u009c\u009d\r";
@@ -896,7 +897,6 @@ public class XF extends Xu2 implements PN3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

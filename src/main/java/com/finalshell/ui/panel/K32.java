@@ -85,10 +85,12 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
 
    public K32(Icon var1, String var2, Component var3) {
    super();
+   int[] var4;
+   K32 var5;
       int[] var10000 = L$arrint();
       this.Q = YA_2.K;
       this.U = YA_2.C;
-      int[] var4 = var10000;
+      var4 = var10000;
       this.v = YA_2.h;
       this.x = YA_2.W;
       this.G = YA_2.o;
@@ -138,7 +140,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       this.Z.setLayout(new BorderLayout(0, 0));
       this.Z.b(this.t);
       this.add(this.Z, b(-74, 11445));
-      K32 var5 = this;
+      var5 = this;
       if (var4 != null) {
          if (this.Y != null) {
             this.Z.add(this.Y, b(-73, -20720));
@@ -154,6 +156,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public void o() {
+      K32 var2;
       int[] var1 = L$arrint();
       boolean var10000 = this.isShowing();
       if (var1 != null) {
@@ -196,7 +199,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public void K(Icon var1, String var2) {
-      Object var4;
+      K32 var4;
       label25: {
          int[] var3 = L$arrint();
          var4 = this;
@@ -225,6 +228,9 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public void J() {
+      Insets var2;
+      Insets var4;
+      K32 var6;
       int[] var1 = L$arrint();
       K32 var10000 = this;
       if (var1 != null) {
@@ -273,7 +279,6 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
          var4 = new Insets(2, 2, 2, 2);
       }
 
-      Insets var2;
       label39: {
          label38: {
             var2 = var4;
@@ -471,11 +476,11 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
          var10004 = 0;
       }
 
-      this.j.I((boolean)var10001, (boolean)((((var10002 != 0) != 0) != 0) != 0), (boolean)(var10003 != 0), (boolean)((var10004 != 0) != 0));
+      this.j.I(var10001, (var10002 != 0), (var10003 != 0), (var10004 != 0));
    }
 
    public void z() {
-      Object var4;
+      K32 var4;
       label69: {
          label68: {
             int[] var1 = L$arrint();
@@ -556,7 +561,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public JComponent C(Icon var1, String var2) {
-      Object var4;
+      O6 var4;
       label23: {
          int[] var3 = L$arrint();
          int var10000 = this.r;
@@ -611,6 +616,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public boolean K$boolean() {
+      boolean var2;
       int[] var1 = L$arrint();
       WC_2 var10000 = this.p;
       if (var1 != null) {
@@ -621,7 +627,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
          var10000 = this.p;
       }
 
-      boolean var2 = var10000.i();
+      var2 = var10000.i();
       return var1 == null ? var2 : var2;
    }
 
@@ -689,6 +695,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public boolean n(boolean var1) {
+      K32 var4;
       int[] var2 = L$arrint();
       boolean var10000 = this.C;
       if (var2 != null) {
@@ -745,10 +752,11 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public void u$void() {
+      K32 var2;
       int[] var10000 = L$arrint();
       this.v();
       int[] var1 = var10000;
-      K32 var2 = this;
+      var2 = this;
       if (var1 != null) {
          if (this.Y != null) {
             this.Y.setVisible(false);
@@ -767,6 +775,8 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public boolean e(boolean var1) {
+      K32 var4;
+      K32 var5;
       int[] var2 = L$arrint();
       boolean var10000 = this.C;
       if (var2 != null) {
@@ -1051,6 +1061,8 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public ImageIcon y$ImageIcon() {
+      K32 var2;
+      K32 var4;
       int[] var1 = L$arrint();
       ImageIcon var10000 = this.s;
       if (var1 != null) {
@@ -1146,6 +1158,9 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public ImageIcon a() {
+      K32 var3;
+      byte var4;
+      K32 var5;
       int[] var1 = L$arrint();
       ImageIcon var10000 = this.X;
       if (var1 != null) {
@@ -1155,7 +1170,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
                byte var2;
                label84: {
                   label83: {
-                     var2 = (this.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+                     var2 = (byte)((this.getComponentOrientation().isLeftToRight()) ? 1 : 0);
                      var3 = this;
                      label82:
                      if (var1 != null) {
@@ -1166,7 +1181,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
                            }
 
                            if (this.r != 1) {
-                              var4 = this.r;
+                              var4 = (byte)(this.r);
                               if (var1 == null) {
                                  break label84;
                               }
@@ -1182,8 +1197,6 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
 
                      var3.X = this.U;
                      if (var1 != null) {
-      Insets var4;
-      Insets var4;
                         break label86;
                      }
                   }
@@ -1196,7 +1209,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
                      label92: {
                         if (var1 != null) {
                            if (var4 != 0) {
-                              var4 = this.r;
+                              var4 = (byte)(this.r);
                               if (var1 == null) {
                                  break label67;
                               }
@@ -1207,7 +1220,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
                               break label92;
                            }
 
-                           var4 = this.r;
+                           var4 = (byte)(this.r);
                         }
 
                         if (var1 == null) {
@@ -1247,7 +1260,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
                         break label87;
                      }
 
-                     var4 = this.r;
+                     var4 = (byte)(this.r);
                   }
 
                   if (var4 != 2) {
@@ -1334,7 +1347,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
          var10001 = var10001 > 0 ? 1 : 0;
       }
 
-      var10000.setVisible((boolean)var10001);
+      var10000.setVisible(var10001);
       this.Z.add(var1, b(-73, -20720));
       this.revalidate();
    }
@@ -1356,12 +1369,13 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public void P() {
+      Pv2 var3;
       int[] var10000 = L$arrint();
       Iterator var2 = AL_2.J((Collection)this.P).iterator();
       int[] var1 = var10000;
 
       while (var2.hasNext()) {
-         Pv2 var3 = (Pv2)var2.next();
+         var3 = (Pv2)var2.next();
          var3.q(this);
          if (var1 == null) {
             break;
@@ -1370,12 +1384,13 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public void Z() {
+      Pv2 var3;
       int[] var10000 = L$arrint();
       Iterator var2 = AL_2.J((Collection)this.P).iterator();
       int[] var1 = var10000;
 
       while (var2.hasNext()) {
-         Pv2 var3 = (Pv2)var2.next();
+         var3 = (Pv2)var2.next();
          var3.E(this);
          if (var1 == null) {
             break;
@@ -1384,12 +1399,13 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public void f() {
+      Pv2 var3;
       int[] var10000 = L$arrint();
       Iterator var2 = AL_2.J((Collection)this.P).iterator();
       int[] var1 = var10000;
 
       while (var2.hasNext()) {
-         Pv2 var3 = (Pv2)var2.next();
+         var3 = (Pv2)var2.next();
          var3.A(this);
          if (var1 == null) {
             break;
@@ -1398,12 +1414,13 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public void G$void() {
+      Pv2 var3;
       int[] var10000 = L$arrint();
       Iterator var2 = AL_2.J((Collection)this.P).iterator();
       int[] var1 = var10000;
 
       while (var2.hasNext()) {
-         Pv2 var3 = (Pv2)var2.next();
+         var3 = (Pv2)var2.next();
          var3.D(this);
          if (var1 == null) {
             break;
@@ -1416,10 +1433,12 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public Dimension u$Dimension() {
+      Dimension var2;
+      K32 var4;
       int[] var10000 = L$arrint();
-      Dimension var2 = this.getPreferredSize();
+      var2 = this.getPreferredSize();
       int[] var1 = var10000;
-      Object var4 = this;
+      var4 = this;
       if (var1 != null) {
          if (this.Y == null) {
             return var2;
@@ -1574,6 +1593,8 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public static String b(int var0, int var1) {
+      short var4;
+      int var6;
       int var2 = (var0 ^ -79) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -2348,13 +2369,13 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
                var10000 = 61;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -2378,7 +2399,8 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public static int a(int var0, long var1) {
-      int var3 = var0 ^ (int)(var1 & 32767L) ^ 13058;
+      int var3;
+      var3 = var0 ^ (int)(var1 & 32767L) ^ 13058;
       if (d[var3] == null) {
          d[var3] = (int)(c[var3] ^ var1);
       }
@@ -2388,6 +2410,9 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var3;
+      char[] var31;
+      long[] var6;
       String[] var13 = new String[15];
       int[] var10000 = new int[1];
       int var11 = 0;
@@ -2483,8 +2508,8 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
                      a = var13;
                      b = new String[15];
                      long var0 = 8995761735352616496L;
-                     long[] var6 = new long[2];
-                     int var3 = 0;
+                     var6 = new long[2];
+                     var3 = 0;
                      String var4 = "J\u009eB\u009aú\u0085)ÓOü¼Â\u0011s\u00ad-";
                      int var5 = "J\u009eB\u009aú\u0085)ÓOü¼Â\u0011s\u00ad-".length();
                      byte var2 = 0;
@@ -2536,7 +2561,6 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       }
    }
 }
-
 
 
 

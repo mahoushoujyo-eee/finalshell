@@ -52,6 +52,7 @@ public class W62 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static Map b() {
+      List var12;
       String[] var10000 = GR.I();
       Object var1 = Y;
       synchronized (Y){} // $VF: monitorenter 
@@ -110,6 +111,7 @@ public class W62 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static Map Q() {
+      List var12;
       String[] var10000 = GR.I();
       Object var1 = Y;
       synchronized (Y){} // $VF: monitorenter 
@@ -167,6 +169,7 @@ public class W62 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static boolean g(KeyEvent var0) {
+      boolean var8;
       int var2 = FN.k(var0).hashCode();
       String[] var10000 = GR.I();
       Iterator var3 = R.iterator();
@@ -175,7 +178,7 @@ public class W62 {
       while (true) {
          if (var3.hasNext()) {
             DN_2 var4 = (DN_2)var3.next();
-            var8 = var4.x().hashCode();
+            var8 = (var4.x().hashCode()) != 0;
             if (var1 == null) {
                break;
             }
@@ -203,7 +206,7 @@ public class W62 {
          Entry var7 = (Entry)var3.next();
 
          for (DN_2 var6 : (List)var7.getValue()) {
-            var8 = var6.x().hashCode();
+            var8 = (var6.x().hashCode()) != 0;
             if (var1 == null) {
                continue label54;
             }
@@ -271,6 +274,9 @@ public class W62 {
    }
 
    public static void a(KeyEvent var0, DN_2 var1) {
+      DN_2 var11;
+      boolean var12;
+      Wc2 var8;
       String[] var10000 = GR.I();
       JComponent var3 = var1.j();
       String[] var2 = var10000;
@@ -286,7 +292,7 @@ public class W62 {
                var7 = var1;
             }
 
-            Wc2 var8 = var7.t();
+            var8 = var7.t();
             if (var2 != null) {
                if (var8 == null) {
                   return;
@@ -315,8 +321,6 @@ public class W62 {
          boolean var10 = FN.l((Component)var4);
          if (var2 != null) {
             if (!var10) {
-      Object var11;
-      Object var11;
                return;
             }
 
@@ -336,7 +340,7 @@ public class W62 {
       }
 
       if (var11.t() != null) {
-         boolean var12 = L(var3);
+         var12 = L(var3);
          if (var2 != null) {
             if (!var12) {
                return;
@@ -354,6 +358,7 @@ public class W62 {
    }
 
    public static boolean L(Component var0) {
+      boolean var8;
       String[] var10000 = GR.I();
       Iterator var2 = Q().entrySet().iterator();
       String[] var1 = var10000;
@@ -611,6 +616,7 @@ public class W62 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static List I(JComponent var0) {
+      List var8;
       String[] var10000 = GR.I();
       Object var2 = Y;
       synchronized (Y){} // $VF: monitorenter 
@@ -681,6 +687,7 @@ public class W62 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static void c(DN_2 var0) {
+      JComponent var8;
       String[] var10000 = GR.I();
       Object var2 = Y;
       synchronized (Y){} // $VF: monitorenter 
@@ -691,7 +698,7 @@ public class W62 {
             label69: {
                label70: {
                   JComponent var3 = var0.j();
-                  JComponent var8 = var3;
+                  var8 = var3;
                   if (var1 != null) {
                      if (var3 == null) {
                         break label70;
@@ -822,6 +829,7 @@ public class W62 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static List O(JComponent var0) {
+      List var8;
       String[] var10000 = GR.I();
       Object var2 = Y;
       synchronized (Y){} // $VF: monitorenter 
@@ -901,6 +909,9 @@ public class W62 {
    }
 
    public static void u(Window var0) {
+      boolean var11;
+      JComponent var12;
+      com.finalshell.ui.panel.O var8;
       String[] var10000 = GR.I();
       LinkedHashSet var2 = new LinkedHashSet();
       String[] var1 = var10000;
@@ -933,7 +944,7 @@ public class W62 {
                   JComponent var7 = var10.j();
                   label54:
                   if (var7 != null) {
-                     boolean var11 = var2.contains(var7);
+                     var11 = var2.contains(var7);
                      if (var1 != null) {
                         if (var11) {
                            break label54;
@@ -964,7 +975,7 @@ public class W62 {
                      }
 
                      if (FN.L(var12) == var0) {
-                        com.finalshell.ui.panel.O var8 = new com.finalshell.ui.panel.O(S(var7));
+                        var8 = new com.finalshell.ui.panel.O(S(var7));
                         var8.S$void(a(-6809, -9940));
                         var8.A$O_();
                         Ac2.e(var7, null, var8, var6.O());
@@ -1032,6 +1043,7 @@ public class W62 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -6814) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1818,7 +1830,7 @@ public class W62 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1837,6 +1849,7 @@ public class W62 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[6];
       int var5 = 0;
       String var4 = "Ñ=,øÜ[\u009b\u001a\u0080Æ4.\u0016:\u000fQ¾s\u00933N`¯\\ù,¨\u0019½Õ\u008c\r(\u0089<\u0016Yt=Ñþ~\u0082óV\u0018\u009a\u000fôv\u0002f¶÷aG\u0004Ñ\u0002Ý\u0013";
@@ -1967,7 +1980,6 @@ public class W62 {
       }
    }
 }
-
 
 
 

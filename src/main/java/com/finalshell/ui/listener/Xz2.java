@@ -174,7 +174,7 @@ public class Xz2 extends MouseAdapter {
       int[] var2 = K32.L$arrint();
       int var10000 = (Kb4.r(this.j)) ? 1 : 0;
       if (var2 != null) {
-         if (var10000) {
+         if (var10000 != 0) {
             var10000 = Kb4.A(this.j);
             if (var2 == null) {
                return;
@@ -325,12 +325,14 @@ public class Xz2 extends MouseAdapter {
    }
 
    public static void __vfClinit__() {
+      boolean var5;
+      long[] var6;
       long var0 = 8842949951879555565L;
-      long[] var6 = new long[11];
+      var6 = new long[11];
       int var3 = 0;
       String var4 = "\u008coE\u008egº\u0092\u0090ë÷èÅ;3\u009d\u009c\u0003£ç\u0007ðæ[o\u0091T\u0084ï®A¹\u0006\u0080D½\u0006`ù{\u009e×\u0019·Û\u0017h\u008fÔ%wg¸·.>Uì\u0019\u0093Ü\u008d?\u009bz\u0086l6°\u009a5²É";
-      int var5 = "\u008coE\u008egº\u0092\u0090ë÷èÅ;3\u009d\u009c\u0003£ç\u0007ðæ[o\u0091T\u0084ï®A¹\u0006\u0080D½\u0006`ù{\u009e×\u0019·Û\u0017h\u008fÔ%wg¸·.>Uì\u0019\u0093Ü\u008d?\u009bz\u0086l6°\u009a5²É"
-         .length();
+      var5 = "\u008coE\u008egº\u0092\u0090ë÷èÅ;3\u009d\u009c\u0003£ç\u0007ðæ[o\u0091T\u0084ï®A¹\u0006\u0080D½\u0006`ù{\u009e×\u0019·Û\u0017h\u008fÔ%wg¸·.>Uì\u0019\u0093Ü\u008d?\u009bz\u0086l6°\u009a5²É";
+         // [VF] .length();
       byte var2 = 0;
 
       label20:
@@ -368,7 +370,7 @@ public class Xz2 extends MouseAdapter {
                   }
 
                   var4 = "ýå^\u008c=ÁdnÌ\u0014ÒØ1\u0019I ";
-                  var5 = "ýå^\u008c=ÁdnÌ\u0014ÒØ1\u0019I ".length();
+                  var5 = ("ýå^\u008c=ÁdnÌ\u0014ÒØ1\u0019I ".length()) != 0;
                   var2 = 0;
             }
 

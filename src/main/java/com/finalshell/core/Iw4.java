@@ -76,7 +76,7 @@ public class Iw4 {
          var10001 = var2;
       }
 
-      return (boolean)(var10 <= var10001 ? 1 : 0);
+      return ((var10 <= var10001 ? 1 : 0) != 0);
    }
 
    public static int P(int var0, int var1, int var2) {

@@ -8,10 +8,10 @@ import java.lang.reflect.InvocationTargetException;
 
 public class A_2 implements Fb4 {
    public final File b;
-   public final CK e;
+   public final ZModemTransfer e;
    public final SelectUploadFile k;
 
-   public A_2(SelectUploadFile var1, File var2, CK var3) {
+   public A_2(SelectUploadFile var1, File var2, ZModemTransfer var3) {
       this.k = var1;
       this.b = var2;
       this.e = var3;

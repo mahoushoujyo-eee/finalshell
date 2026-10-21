@@ -22,7 +22,7 @@ public class FC3 implements ActionListener {
       Object var3 = 425783247361865212L;
       Object var10004 = Ref.g(425783247361865212L, var3);
       Object var5 = 203837641958439669L;
-      super(var10004.append((String)Ref.g(203837641958439669L, var5)).append(a(27753, -15613)).toString());
+      // [VF-super] super(var10004.append((String)Ref.g(203837641958439669L, var5)).append(a(27753, -15613)).toString());
       StringBuilder var2 = var10002;
       Registry.packArgs(var2);
       long var7 = 557190378343810325L;

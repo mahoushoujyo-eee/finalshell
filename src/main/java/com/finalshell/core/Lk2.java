@@ -6,7 +6,7 @@ import com.finalshell.task.GB;
 import com.finalshell.task.JC;
 import com.finalshell.task.Jg2;
 import com.finalshell.task.Kv4;
-import com.finalshell.task.PasswordError;
+import com.finalshell.task.PasswordErrorTask;
 import com.finalshell.task.PasswordError2;
 import com.finalshell.task.VU;
 import com.finalshell.ui.listener.Bp4;
@@ -170,7 +170,7 @@ public class Lk2 {
       JTextArea var0 = new JTextArea();
       var0.setBorder(BorderFactory.createEtchedBorder());
       var0.setEditable(false);
-      Object[] var10001 = Registry.packArgs(b(-17903, 31226));
+      Object var10001 = Registry.packArgs(b(-17903, 31226));
       long var1 = 517287540690064504L;
       Object var10002 = Ref.h2(517287540690064504L, var1);
 
@@ -246,6 +246,7 @@ public class Lk2 {
    }
 
    public static Graphics E(JComponent var0, Graphics var1) {
+      boolean var6;
       Registry.packArgs(var0);
       long var3 = 576735365376020526L;
       Object var10001 = Ref.h2(576735365376020526L, var3);
@@ -302,6 +303,7 @@ public class Lk2 {
    }
 
    public static void C(JComponent var0) {
+      long var7;
       Ky4[] var10000 = YT3_2.c();
       var0.setLayout(null);
       Ky4[] var1 = var10000;
@@ -311,7 +313,7 @@ public class Lk2 {
          label240: {
             try {
                Registry.packArgs(var0);
-               long var7 = 635059626651176862L;
+               var7 = 635059626651176862L;
                Ref.h2(635059626651176862L, var7);
 
                try {
@@ -1400,9 +1402,11 @@ public class Lk2 {
    }
 
    public static byte[] J$arrbyte(String var0) throws IOException {
+      byte[] var6;
+      long var7;
       Object var2 = null;
       Registry.packArgs(var0);
-      long var7 = 158861131972796464L;
+      var7 = 158861131972796464L;
       Object var10001 = Ref.h2(158861131972796464L, var7);
 
       try {
@@ -1415,7 +1419,7 @@ public class Lk2 {
       ByteArrayOutputStream var4 = new ByteArrayOutputStream();
       var10001 = YT3_2.c();
       int var5 = 0;
-      byte[] var6 = new byte[a(11967, 3081740741108720257L)];
+      var6 = new byte[a(11967, 3081740741108720257L)];
       Ky4[] var1 = (Ky4[])var10001;
 
       while (true) {
@@ -1636,6 +1640,11 @@ public class Lk2 {
    }
 
    public static String s$String(String var0) {
+      String var12;
+      boolean var14;
+      boolean var6;
+      Object[] var7;
+      long var8;
       Ky4[] var10000 = YT3_2.c();
       StringBuffer var2 = new StringBuffer();
       Ky4[] var1 = var10000;
@@ -1644,22 +1653,20 @@ public class Lk2 {
 
       while (true) {
          if (var4 < var0.length()) {
-      JTextArea var12;
             var12 = var0;
             if (var1 == null) {
                break;
             }
 
             char var5 = var0.charAt(var4);
-            boolean var6 = true;
+            var6 = true;
 
-            boolean var14;
             label46: {
                label45: {
                   try {
                      Object[] var10001 = Registry.packArgs(var4);
-                     long var8 = 482035299313315641L;
-                     Object[] var7 = var10001;
+                     var8 = 482035299313315641L;
+                     var7 = var10001;
                      Object var13 = Ref.h(482035299313315641L, var7, var8);
 
                      try {
@@ -1707,6 +1714,8 @@ public class Lk2 {
    }
 
    public static void D$void() {
+      long var6;
+      long var7;
       Registry.emptyArgs();
       long var1 = 270389152141252877L;
       Ref.h2(270389152141252877L, var1);
@@ -1714,9 +1723,9 @@ public class Lk2 {
       long var4 = 306266403902896148L;
       Object[] var3 = var10002;
       Ref.h(306266403902896148L, var3, var4);
-      Object[] var10003 = Registry.emptyArgs();
-      long var6 = 629017702607628679L;
-      Object[] var5 = var10003;
+      Object var10003 = Registry.emptyArgs();
+      var6 = 629017702607628679L;
+      Object var5 = var10003;
       var10003 = Ref.h(629017702607628679L, var5, var6);
 
       try {
@@ -1727,7 +1736,7 @@ public class Lk2 {
 
       boolean var0 = var12;
       Registry.packArgs(var0);
-      long var7 = 175448534908616132L;
+      var7 = 175448534908616132L;
       Ref.h2(175448534908616132L, var7);
 
       try {
@@ -1738,16 +1747,20 @@ public class Lk2 {
    }
 
    public static boolean k(String var0, String var1, CH var2) {
+      Thread var10;
+      BufferedReader var6;
+      BufferedReader var7;
+      BufferedWriter var8;
       String[] var3 = new String[]{b(-17825, -29177), b(-17836, 19794), b(-17873, 25755) + var0};
       AtomicBoolean var5 = new AtomicBoolean(true);
 
       try {
          Process var4 = Runtime.getRuntime().exec(var3);
-         BufferedReader var6 = new BufferedReader(new InputStreamReader(var4.getErrorStream()));
-         BufferedReader var7 = new BufferedReader(new InputStreamReader(var4.getInputStream()));
-         BufferedWriter var8 = new BufferedWriter(new OutputStreamWriter(var4.getOutputStream()));
-         Thread var9 = new Thread(new PasswordError(var8, var1, var6, var5, var4, var2));
-         Thread var10 = new Thread(new GB(var7, var2));
+         var6 = new BufferedReader(new InputStreamReader(var4.getErrorStream()));
+         var7 = new BufferedReader(new InputStreamReader(var4.getInputStream()));
+         var8 = new BufferedWriter(new OutputStreamWriter(var4.getOutputStream()));
+         Thread var9 = new Thread(new PasswordErrorTask(var8, var1, var6, var5, var4, var2));
+         var10 = new Thread(new GB(var7, var2));
          var9.start();
          var10.start();
          var9.join(b(406, 5928124308423463538L));
@@ -1761,14 +1774,17 @@ public class Lk2 {
    }
 
    public static void q(String var0, String var1, CH var2) {
+      BufferedReader var6;
+      BufferedWriter var7;
+      Thread var8;
       String[] var3 = new String[]{b(-17899, -11306), b(-17876, 10543), b(-17904, -20834) + var0};
 
       try {
          Process var4 = Runtime.getRuntime().exec(var3);
          BufferedReader var5 = new BufferedReader(new InputStreamReader(var4.getErrorStream()));
-         BufferedReader var6 = new BufferedReader(new InputStreamReader(var4.getInputStream()));
-         BufferedWriter var7 = new BufferedWriter(new OutputStreamWriter(var4.getOutputStream()));
-         Thread var8 = new Thread(new PasswordError2(var7, var1, var5, var4, var2));
+         var6 = new BufferedReader(new InputStreamReader(var4.getInputStream()));
+         var7 = new BufferedWriter(new OutputStreamWriter(var4.getOutputStream()));
+         var8 = new Thread(new PasswordError2(var7, var1, var5, var4, var2));
          Thread var9 = new Thread(new VU(var6, var2));
          var8.start();
          var9.start();
@@ -1916,12 +1932,16 @@ public class Lk2 {
    }
 
    public static void A$void(String var0, String var1) {
+      ZipEntry var10;
+      byte[] var12;
+      long var14;
+      ZipOutputStream var6;
       File var3 = new File(var0);
       Ky4[] var10000 = YT3_2.c();
       ArrayList var4 = new ArrayList();
       Ky4[] var2 = var10000;
       Registry.packArgs(var3, var4);
-      long var14 = 317615245425501752L;
+      var14 = 317615245425501752L;
       Ref.h2(317615245425501752L, var14);
 
       try {
@@ -1932,19 +1952,19 @@ public class Lk2 {
 
       try {
          FileOutputStream var5 = new FileOutputStream(var1);
-         ZipOutputStream var6 = new ZipOutputStream(var5);
+         var6 = new ZipOutputStream(var5);
 
          for (String var8 : var4) {
             System.out.println(b(-17797, 15033) + var8);
             String var9 = var8.substring(var3.getAbsolutePath().length() + 1, var8.length());
-            ZipEntry var10 = new ZipEntry(var9);
+            var10 = new ZipEntry(var9);
             var6.putNextEntry(var10);
             FileInputStream var11 = new FileInputStream(var8);
             if (var2 == null) {
                return;
             }
 
-            byte[] var12 = new byte[a(11967, 3081740741108720257L)];
+            var12 = new byte[a(11967, 3081740741108720257L)];
 
             while (true) {
                int var13;
@@ -2092,6 +2112,12 @@ public class Lk2 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public static Font O(String var0, int var1, int var2, boolean var3) {
+      boolean var26;
+      String var27;
+      int var28;
+      int var29;
+      FontFormatException var30;
+      int var7;
       Ky4[] var10000 = YT3_2.c();
       Font var5 = null;
       Ky4[] var4 = var10000;
@@ -2123,7 +2149,7 @@ public class Lk2 {
 
          if (var10000 == null) {
             File var22 = null;
-            byte var7 = 0;
+            var7 = 0;
 
             label129: {
                label149: {
@@ -2140,7 +2166,6 @@ public class Lk2 {
                                  break label126;
                               }
                            } catch (FontFormatException var20) {
-      JTextArea var27;
                               throw a(var20);
                            }
 
@@ -2173,7 +2198,7 @@ public class Lk2 {
 
                      label108: {
                         try {
-                           var28 = var22.exists();
+                           var28 = (var22.exists()) ? 1 : 0;
                            if (var4 == null) {
                               break label108;
                            }
@@ -2200,7 +2225,7 @@ public class Lk2 {
                   var22 = new File(var23);
 
                   try {
-                     var29 = var22.exists();
+                     var29 = (var22.exists()) ? 1 : 0;
                      if (var4 == null) {
                         break label129;
                      }
@@ -2313,6 +2338,7 @@ public class Lk2 {
    }
 
    public static Dv2 h(String var0, boolean var1) {
+      long var6;
       Dv2 var2 = new Dv2();
       var2.setOpaque(false);
       var2.setBackground(new Color(0, 0, 0, 0));
@@ -2336,7 +2362,7 @@ public class Lk2 {
       var3.setForeground((Color)Registry.lookupField(430697627377283751L).get(null));
       var2.setForeground((Color)Registry.lookupField(430697627377283751L).get(null));
       Registry.packArgs(var2, var1);
-      long var6 = 370149877875067536L;
+      var6 = 370149877875067536L;
       Ref.h2(370149877875067536L, var6);
       return var2;
    }
@@ -2363,6 +2389,9 @@ public class Lk2 {
    }
 
    public static void I(JTree var0, TreePath var1, boolean var2) {
+      boolean var14;
+      TreeNode var6;
+      long var8;
       Ky4[] var10000 = YT3_2.c();
       TreeNode var4 = (TreeNode)var1.getLastPathComponent();
       Ky4[] var3 = var10000;
@@ -2371,7 +2400,7 @@ public class Lk2 {
          label57: {
             label63: {
                try {
-                  var14 = var4.getChildCount();
+                  var14 = (var4.getChildCount()) != 0;
                   if (var3 == null) {
                      break label57;
                   }
@@ -2386,12 +2415,12 @@ public class Lk2 {
                Enumeration var5 = var4.children();
 
                while (var5.hasMoreElements()) {
-                  TreeNode var6 = (TreeNode)var5.nextElement();
+                  var6 = (TreeNode)var5.nextElement();
                   TreePath var7 = var1.pathByAddingChild(var6);
 
                   try {
                      Registry.packArgs(var0, var7, (boolean)var2);
-                     long var8 = 277081561739129478L;
+                     var8 = 277081561739129478L;
                      Ref.h2(277081561739129478L, var8);
 
                      try {
@@ -2417,7 +2446,7 @@ public class Lk2 {
          }
 
          try {
-            if (var14 != 0) {
+            if (var14) {
                var0.expandPath(var1);
                if (var3 != null) {
                   return;
@@ -2577,6 +2606,8 @@ public class Lk2 {
    }
 
    public static String Q(byte[] var0) {
+      int var6;
+      int var7;
       Ky4[] var10000 = YT3_2.c();
       String var2 = null;
       Ky4[] var1 = var10000;
@@ -2586,8 +2617,8 @@ public class Lk2 {
          var3.update(var0);
          byte[] var4 = var3.digest();
          char[] var5 = new char[a(16342, 4108232943243752354L)];
-         int var6 = 0;
-         int var7 = 0;
+         var6 = 0;
+         var7 = 0;
 
          while (var7 < a(4582, 1566704523461713382L)) {
             byte var8 = var4[var7];
@@ -3344,6 +3375,10 @@ public class Lk2 {
    }
 
    public static void P(TarArchiveOutputStream var0, File var1, String var2, CH var3) throws IOException {
+      String var14;
+      TarArchiveEntry var6;
+      BufferedInputStream var7;
+      byte[] var8;
       Ky4[] var10000 = YT3_2.c();
       String var5 = var1.getAbsolutePath().replace(var2, "/");
       Ky4[] var4 = var10000;
@@ -3373,14 +3408,14 @@ public class Lk2 {
       }
 
       var5 = var14.replaceAll(var10001, "/");
-      TarArchiveEntry var6 = new TarArchiveEntry(var5);
+      var6 = new TarArchiveEntry(var5);
       var6.setSize(var1.length());
       var6.setModTime(var1.lastModified());
       var0.setLongFileMode(2);
       var0.putArchiveEntry(var6);
       var3.d(b(-17911, -13800) + var5);
-      BufferedInputStream var7 = new BufferedInputStream(new FileInputStream(var1));
-      byte[] var8 = new byte[a(18270, 8354231394418395967L)];
+      var7 = new BufferedInputStream(new FileInputStream(var1));
+      var8 = new byte[a(18270, 8354231394418395967L)];
       int var9 = -1;
 
       while (true) {
@@ -3602,6 +3637,7 @@ public class Lk2 {
    }
 
    public static String s(File var0) {
+      BigInteger var7;
       Ky4[] var10000 = YT3_2.c();
       String var2 = "";
       Ky4[] var1 = var10000;
@@ -3627,7 +3663,7 @@ public class Lk2 {
             }
          }
 
-         BigInteger var7 = new BigInteger(1, var4.digest());
+         var7 = new BigInteger(1, var4.digest());
          var2 = var7.toString(a(4582, 1566704523461713382L));
       } catch (FileNotFoundException var9) {
          var9.printStackTrace();
@@ -3786,6 +3822,7 @@ public class Lk2 {
    }
 
    public static String i$String() {
+      boolean var10;
       Ky4[] var10000 = YT3_2.c();
       Map var1 = System.getenv();
       Ky4[] var0 = var10000;
@@ -3841,6 +3878,7 @@ public class Lk2 {
    }
 
    public static String R(String var0, String var1) {
+      boolean var8;
       Object var2 = null;
       Registry.emptyArgs();
       long var4 = 454647487873911743L;
@@ -3864,6 +3902,7 @@ public class Lk2 {
    }
 
    public static void u(String var0) {
+      Clipboard var7;
       Ky4[] var10000 = YT3_2.c();
       Toolkit var2 = Toolkit.getDefaultToolkit();
       Clipboard var3 = var2.getSystemClipboard();
@@ -4753,19 +4792,25 @@ public class Lk2 {
    }
 
    public static String S(String var0) {
+      String var15;
+      Matcher var16;
+      int var17;
+      int var6;
+      StringBuffer var7;
+      String var8;
       Charset var2 = Charset.forName(b(-17813, 5668));
       Pattern var3 = Pattern.compile(b(-17920, -27203));
       Matcher var4 = var3.matcher(var0);
       int var5 = 0;
       Ky4[] var10000 = YT3_2.c();
-      int var6 = 0;
-      StringBuffer var7 = new StringBuffer();
+      var6 = 0;
+      var7 = new StringBuffer();
       Ky4[] var1 = var10000;
 
       int var10001;
       while (true) {
          if (var4.find(var5)) {
-            Matcher var16 = var4;
+            var16 = var4;
             if (var1 != null) {
                var6 = var4.start();
 
@@ -4784,7 +4829,7 @@ public class Lk2 {
                      throw a(var12);
                   }
 
-                  String var8 = var0.substring(var5, var6);
+                  var8 = var0.substring(var5, var6);
                   var7.append(var8);
                }
 
@@ -4815,7 +4860,7 @@ public class Lk2 {
       }
 
       if (var17 > var10001) {
-         String var15 = var0.substring(var5, var6);
+         var15 = var0.substring(var5, var6);
          var7.append(var15);
       }
 
@@ -5329,9 +5374,13 @@ public class Lk2 {
    }
 
    public static void Z(boolean var0) {
+      Object[] var10;
+      boolean var15;
+      String var6;
+      long var8;
       try {
          Registry.emptyArgs();
-         long var8 = 253808553645062345L;
+         var8 = 253808553645062345L;
          Object var10001 = Ref.h2(253808553645062345L, var8);
 
          try {
@@ -5353,12 +5402,12 @@ public class Lk2 {
       ArrayList var4 = new ArrayList();
       var4.add(b(-17919, 13862));
       String var5 = "\"" + var3 + b(-17807, -7296);
-      String var6 = b(-17897, 21658);
+      var6 = b(-17897, 21658);
       String var7 = var6 + "\\" + var1;
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10002 = Registry.packArgs(new JC(var6, var1, var0, var5));
       long var11 = 434592463220957006L;
-      Object[] var10 = var10002;
+      var10 = var10002;
       Ref.h(434592463220957006L, var10, var11);
 
       try {
@@ -5426,6 +5475,11 @@ public class Lk2 {
    }
 
    public static File E(Object var0) {
+      com.finalshell.ui.model.Ck4 var12;
+      boolean var13;
+      File var15;
+      Object[] var6;
+      long var7;
       Ky4[] var10000 = YT3_2.c();
       File var2 = null;
       Ky4[] var1 = var10000;
@@ -5468,9 +5522,9 @@ public class Lk2 {
 
          Tf4 var3 = (Tf4)var0;
          File var10001;
-         Object[] var10003 = Registry.emptyArgs();
+         String var10003 = (String)(Registry.emptyArgs());
          long var5 = 498856411508641826L;
-         Object[] var4 = var10003;
+         Object var4 = var10003;
          var10003 = Ref.h(498856411508641826L, var4, var5);
 
          try {
@@ -5484,11 +5538,10 @@ public class Lk2 {
          return var2;
       }
 
-      com.finalshell.ui.model.Ck4 var12 = (com.finalshell.ui.model.Ck4)var10000;
-      File var15;
-      Object[] var18 = Registry.emptyArgs();
-      long var7 = 605430732347023634L;
-      Object[] var6 = var18;
+      var12 = (com.finalshell.ui.model.Ck4)var10000;
+      String var18 = (String)(Registry.emptyArgs());
+      var7 = 605430732347023634L;
+      var6 = var18;
       var18 = Ref.h(605430732347023634L, var6, var7);
 
       try {
@@ -5798,6 +5851,10 @@ public class Lk2 {
    }
 
    public static Color j(Color var0, Color var1, float var2) {
+      Integer var14;
+      Integer var15;
+      long var6;
+      long var8;
       Registry.packArgs(var0.getRed(), var1.getRed(), var2);
       long var4 = 407188222438066909L;
       Object var10003 = Ref.h2(407188222438066909L, var4);
@@ -5809,7 +5866,7 @@ public class Lk2 {
       }
 
       Object[] var10004 = Registry.packArgs(var0.getGreen(), var1.getGreen(), var2);
-      long var6 = 407188222438066909L;
+      var6 = 407188222438066909L;
       Object var10005 = Ref.h2(407188222438066909L, var6);
 
       try {
@@ -5818,8 +5875,8 @@ public class Lk2 {
          throw var11.getTargetException();
       }
 
-      Object[] var10006 = Registry.packArgs(var0.getBlue(), var1.getBlue(), var2);
-      long var8 = 407188222438066909L;
+      Object var10006 = Registry.packArgs(var0.getBlue(), var1.getBlue(), var2);
+      var8 = 407188222438066909L;
       Object var10007 = Ref.h2(407188222438066909L, var8);
 
       try {
@@ -5838,6 +5895,9 @@ var10004 = new Color(var14, (int)var10006, var15);
    }
 
    public static Color j(Color var0) {
+      Integer var12;
+      Integer var13;
+      long var6;
       Registry.packArgs(var0.getRed());
       long var2 = 334413625078969604L;
       Object var10003 = Ref.h2(334413625078969604L, var2);
@@ -5858,8 +5918,8 @@ var10004 = new Color(var14, (int)var10006, var15);
          throw var9.getTargetException();
       }
 
-      Object[] var10006 = Registry.packArgs(var0.getBlue());
-      long var6 = 334413625078969604L;
+      Object var10006 = Registry.packArgs(var0.getBlue());
+      var6 = 334413625078969604L;
       Object var10007 = Ref.h2(334413625078969604L, var6);
 
       try {
@@ -6059,11 +6119,21 @@ var10004 = new Color(var12, (int)var10006, var13);
    }
 
    public static ZB_2 F(String var0, int var1, int var2, String var3) {
+      long var28;
+      long var10;
+      Object[] var12;
+      long var13;
+      Object[] var14;
+      long var15;
+      Object[] var16;
+      long var17;
+      ZB_2 var6;
+      String var7;
       Ky4[] var10000 = YT3_2.c();
       boolean var5 = false;
       Ky4[] var4 = var10000;
-      ZB_2 var6 = null;
-      Object var7 = null;
+      var6 = null;
+      var7 = null;
 
       label60: {
          try {
@@ -6087,7 +6157,7 @@ var10004 = new Color(var12, (int)var10006, var13);
       if (var9 > -1) {
          var7 = var0.substring(var8);
          Registry.packArgs(var7);
-         long var10 = 224692825278678287L;
+         var10 = 224692825278678287L;
          String var10001 = (String)Ref.h2(224692825278678287L, var10);
 
          try {
@@ -6099,8 +6169,8 @@ var10004 = new Color(var12, (int)var10006, var13);
          var7 = var10001.trim();
          var6 = new ZB_2();
          Object[] var10002 = Registry.packArgs(var3.length());
-         long var13 = 333291316458074509L;
-         Object[] var12 = var10002;
+         var13 = 333291316458074509L;
+         var12 = var10002;
          Ref.h(333291316458074509L, var12, var13);
 
          try {
@@ -6110,8 +6180,8 @@ var10004 = new Color(var12, (int)var10006, var13);
          }
 
          Object[] var10003 = Registry.packArgs(var2);
-         long var15 = 510641522467822805L;
-         Object[] var14 = var10003;
+         var15 = 510641522467822805L;
+         var14 = var10003;
          Ref.h(510641522467822805L, var14, var15);
 
          try {
@@ -6121,8 +6191,8 @@ var10004 = new Color(var12, (int)var10006, var13);
          }
 
          Object[] var10004 = Registry.packArgs(var7);
-         long var17 = 172641086950307768L;
-         Object[] var16 = var10004;
+         var17 = 172641086950307768L;
+         var16 = var10004;
          Ref.h(172641086950307768L, var16, var17);
 
          try {
@@ -6314,6 +6384,7 @@ var10004 = new Color(var12, (int)var10006, var13);
    }
 
    public static String P(int var0) {
+      StringBuffer var7;
       Ky4[] var10000 = YT3_2.c();
       Random var2 = new Random();
       Ky4[] var1 = var10000;
@@ -6642,11 +6713,12 @@ var10004 = new Color(var12, (int)var10006, var13);
    }
 
    public static boolean X(File var0) {
+      long var7;
       Ky4[] var1 = YT3_2.c();
 
       try {
          label107: {
-            Object[] var17;
+            Object var17;
             label108: {
                try {
                   Registry.emptyArgs();
@@ -6695,7 +6767,7 @@ var10004 = new Color(var12, (int)var10006, var13);
                   }
 
                   var17 = Registry.emptyArgs();
-                  long var7 = 454647487873911743L;
+                  var7 = 454647487873911743L;
                   Object var18 = Ref.h2(454647487873911743L, var7);
 
                   try {
@@ -6762,6 +6834,7 @@ var10004 = new Color(var12, (int)var10006, var13);
    }
 
    public static ArrayList J(Pattern var0, String var1) {
+      ArrayList var6;
       Matcher var3 = var0.matcher(var1);
       Ky4[] var10000 = YT3_2.c();
       ArrayList var4 = new ArrayList();
@@ -6945,11 +7018,18 @@ var10004 = new Color(var12, (int)var10006, var13);
    }
 
    public static void n(com.finalshell.ui.model.Ck4 var0) {
+      Object[] var10;
+      Object[] var12;
+      long var13;
+      Integer var25;
+      Object[] var6;
+      long var7;
+      Object[] var8;
       Lv4_2 var1 = new Lv4_2();
       int var2 = 0;
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var5 = 272998330038223631L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       var10002 = Ref.h(272998330038223631L, var4, var5);
 
       try {
@@ -6959,8 +7039,8 @@ var10004 = new Color(var12, (int)var10006, var13);
       }
 
       var10002 = Registry.packArgs(var10002.getAbsolutePath());
-      long var7 = 574053907803002361L;
-      Object[] var6 = var10002;
+      var7 = 574053907803002361L;
+      var6 = var10002;
       Ref.h(574053907803002361L, var6, var7);
 
       try {
@@ -6972,7 +7052,7 @@ var10004 = new Color(var12, (int)var10006, var13);
       try {
          Object[] var10003 = Registry.emptyArgs();
          long var9 = 540969864624467425L;
-         Object[] var8 = var10003;
+         var8 = var10003;
          Ref.h(540969864624467425L, var8, var9);
 
          try {
@@ -6981,9 +7061,9 @@ var10004 = new Color(var12, (int)var10006, var13);
             throw var16.getTargetException();
          }
 
-         Object[] var10004 = Registry.emptyArgs();
+         Object var10004 = Registry.emptyArgs();
          long var11 = 402271797068414482L;
-         Object[] var10 = var10004;
+         var10 = var10004;
          var10004 = Ref.h(402271797068414482L, var10, var11);
 
          try {
@@ -6994,8 +7074,8 @@ var10004 = new Color(var12, (int)var10006, var13);
 
          var2 = var25;
          Object[] var10005 = Registry.packArgs(var2);
-         long var13 = 268719418863796583L;
-         Object[] var12 = var10005;
+         var13 = 268719418863796583L;
+         var12 = var10005;
          Ref.h(268719418863796583L, var12, var13);
 
          try {
@@ -8048,6 +8128,8 @@ var10004 = new Color(var12, (int)var10006, var13);
    }
 
    public static String j(String var0) {
+      boolean var16;
+      long var7;
       YT3_2.c();
       Object var2 = null;
       String var10001 = Registry.packArgs(var0);
@@ -8061,7 +8143,7 @@ var10004 = new Color(var12, (int)var10006, var13);
       }
 
       String var3 = (String)var10002;
-      Object[] var1 = var10001;
+      Object var1 = var10001;
       int var4 = var0.lastIndexOf(var3);
       if (var4 > -1) {
          var2 = var0.substring(var4 + 1);
@@ -8071,7 +8153,7 @@ var10004 = new Color(var12, (int)var10006, var13);
          var10001 = var0;
          if (var1 != null) {
             var10001 = Registry.packArgs(var0);
-            long var7 = 330094358428833085L;
+            var7 = 330094358428833085L;
             var10002 = Ref.h2(330094358428833085L, var7);
 
             try {
@@ -8364,6 +8446,7 @@ var10004 = new Color(var12, (int)var10006, var13);
    }
 
    public static String B(String var0, String var1) {
+      long var6;
       Registry.packArgs(var0);
       long var4 = 159824902428932603L;
       Object var10001 = Ref.h2(159824902428932603L, var4);
@@ -8377,7 +8460,7 @@ var10004 = new Color(var12, (int)var10006, var13);
       String var2 = (String)var10001;
       new StringBuilder();
       Object[] var10002 = Registry.packArgs(var0);
-      long var6 = 405430188584561323L;
+      var6 = 405430188584561323L;
       Object var10003 = Ref.h2(405430188584561323L, var6);
 
       try {
@@ -8790,6 +8873,8 @@ var10004 = new Color(var12, (int)var10006, var13);
    }
 
    public static synchronized Icon m$Icon(String var0) {
+      long var6;
+      long var8;
       Ky4[] var10000 = YT3_2.c();
       int var2 = var0.lastIndexOf(".");
       Ky4[] var1 = var10000;
@@ -8799,7 +8884,7 @@ var10004 = new Color(var12, (int)var10006, var13);
       }
 
       Registry.packArgs(var0);
-      long var6 = 136304645930691856L;
+      var6 = 136304645930691856L;
       Object var10001 = Ref.h2(136304645930691856L, var6);
 
       try {
@@ -8824,7 +8909,7 @@ var10004 = new Color(var12, (int)var10006, var13);
       }
 
       Registry.packArgs(var4);
-      long var8 = 608167142299993511L;
+      var8 = 608167142299993511L;
       Object var10002 = Ref.h2(608167142299993511L, var8);
 
       try {
@@ -9089,6 +9174,10 @@ var10004 = new Color(var12, (int)var10006, var13);
    }
 
    public static Icon R(Tf4 var0) {
+      Object[] var10;
+      Object[] var6;
+      long var7;
+      long var8;
       Ky4[] var10000 = YT3_2.c();
       Icon var2 = null;
       Ky4[] var1 = var10000;
@@ -9122,7 +9211,7 @@ var10004 = new Color(var12, (int)var10006, var13);
             var19 = var0;
             Object[] var10002 = Registry.emptyArgs();
             long var11 = 125751153336179464L;
-            Object[] var10 = var10002;
+            var10 = var10002;
             var10002 = Ref.h(125751153336179464L, var10, var11);
 
             try {
@@ -9132,9 +9221,9 @@ var10004 = new Color(var12, (int)var10006, var13);
             }
          }
 
-         Object[] var21 = Registry.emptyArgs();
-         long var7 = 543633160597441792L;
-         Object[] var6 = var21;
+         Object var21 = Registry.emptyArgs();
+         var7 = 543633160597441792L;
+         var6 = var21;
          var21 = Ref.h(543633160597441792L, var6, var7);
 
          try {
@@ -9145,7 +9234,7 @@ var10004 = new Color(var12, (int)var10006, var13);
 
          File var3 = var21;
          Registry.packArgs(var3);
-         long var8 = 479640066053387692L;
+         var8 = 479640066053387692L;
          Icon var10003 = (Icon)Ref.h2(479640066053387692L, var8);
 
          try {
@@ -9167,6 +9256,19 @@ var10004 = new Color(var12, (int)var10006, var13);
    }
 
    public static Icon e(com.finalshell.ui.model.Ck4 var0) {
+      long var10;
+      long var12;
+      long var14;
+      long var16;
+      long var25;
+      Object[] var26;
+      long var27;
+      long var28;
+      Object[] var30;
+      File var54;
+      long var7;
+      long var8;
+      Object[] var6;
       Ky4[] var10000 = YT3_2.c();
       Icon var2 = null;
       Ky4[] var1 = var10000;
@@ -9205,7 +9307,7 @@ var10004 = new Color(var12, (int)var10006, var13);
                   }
 
                   Object[] var10002 = Registry.emptyArgs();
-                  long var25 = 278678177125024050L;
+                  var25 = 278678177125024050L;
                   Object[] var24 = var10002;
                   var10002 = Ref.h(278678177125024050L, var24, var25);
 
@@ -9220,10 +9322,10 @@ var10004 = new Color(var12, (int)var10006, var13);
 
             if (var52 == null) {
                Object[] var58 = Registry.emptyArgs();
-               long var27 = 396085629172753019L;
-               Object[] var26 = var58;
+               var27 = 396085629172753019L;
+               var26 = var58;
                Registry.packArgs(Ref.h(396085629172753019L, var26, var27));
-               long var28 = 136304645930691856L;
+               var28 = 136304645930691856L;
                Object var62 = Ref.h2(136304645930691856L, var28);
 
                try {
@@ -9238,9 +9340,9 @@ var10004 = new Color(var12, (int)var10006, var13);
             break label203;
          }
 
-         Object[] var54 = Registry.emptyArgs();
-         long var7 = 272998330038223631L;
-         Object[] var6 = var54;
+         var54 = Registry.emptyArgs();
+         var7 = 272998330038223631L;
+         var6 = var54;
          var54 = Ref.h(272998330038223631L, var6, var7);
 
          try {
@@ -9252,11 +9354,11 @@ var10004 = new Color(var12, (int)var10006, var13);
          File var3 = var54;
 
          label205: {
-            Object[] var59;
+            Object var59;
             label188: {
                try {
                   Registry.emptyArgs();
-                  long var8 = 253808553645062345L;
+                  var8 = 253808553645062345L;
                   var59 = Ref.h2(253808553645062345L, var8);
 
                   try {
@@ -9277,7 +9379,7 @@ var10004 = new Color(var12, (int)var10006, var13);
                }
 
                var59 = Registry.emptyArgs();
-               long var12 = 454647487873911743L;
+               var12 = 454647487873911743L;
                Object var10004 = Ref.h2(454647487873911743L, var12);
 
                try {
@@ -9301,7 +9403,7 @@ var10004 = new Color(var12, (int)var10006, var13);
                   }
 
                   var59 = Registry.emptyArgs();
-                  long var16 = 561847341732101275L;
+                  var16 = 561847341732101275L;
                   Object var66 = Ref.h2(561847341732101275L, var16);
 
                   try {
@@ -9312,7 +9414,7 @@ var10004 = new Color(var12, (int)var10006, var13);
                }
 
                Registry.packArgs(var3);
-               long var14 = 479640066053387692L;
+               var14 = 479640066053387692L;
                Icon var67 = (Icon)Ref.h2(479640066053387692L, var14);
 
                try {
@@ -9357,7 +9459,7 @@ var10004 = new Color(var12, (int)var10006, var13);
          }
 
          Registry.packArgs(var3);
-         long var10 = 479640066053387692L;
+         var10 = 479640066053387692L;
          Icon var64 = (Icon)Ref.h2(479640066053387692L, var10);
 
          try {
@@ -9371,7 +9473,7 @@ var10004 = new Color(var12, (int)var10006, var13);
 
       Object[] var57 = Registry.emptyArgs();
       long var31 = 396085629172753019L;
-      Object[] var30 = var57;
+      var30 = var57;
       Registry.packArgs(Ref.h(396085629172753019L, var30, var31));
       long var32 = 456706881655309399L;
       Icon var60 = (Icon)Ref.h2(456706881655309399L, var32);
@@ -9873,6 +9975,8 @@ var10004 = new Color(var12, (int)var10006, var13);
    }
 
    public static String b(int var0, int var1) {
+      int var6;
+      int var8;
       int var2 = (var0 ^ -17846) & 65535;
       if (i[var2] == null) {
          char[] var3 = f[var2].toCharArray();
@@ -10653,13 +10757,13 @@ var10004 = new Color(var12, (int)var10006, var13);
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -10696,6 +10800,15 @@ var10004 = new Color(var12, (int)var10006, var13);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var13;
+      long[] var14;
+      byte[] var15;
+      int var17;
+      long var25;
+      char[] var54;
+      long[] var6;
+      byte[] var7;
+      long var8;
       String[] var21 = new String[124];
       String[] var10000 = new String[4];
       int var19 = 0;
@@ -10703,7 +10816,7 @@ var10004 = new Color(var12, (int)var10006, var13);
       String var18 = "4ñ\u0003òlD\u0007邻戏乴輱政与姡\u0002Q½\u0002ÕG\u0002Vm\u0004õmyÄ\u0003BÝ\u008d\u0002s\u0012\u0002\u0011 \u0014YC1Ó\u0006ÿ'\u0016UcÊAI\ttô\u0087f*ã\u0003\u0083Ç×\u0002)Í\u0003R,»\u0011\u0087\u009b&\u0006i¦\u0019´÷uÕßvÙB^¿\b<e\u001d¾\\\u0082\t\u0091\b4i\u0001qÛ\nËJ\u0003PÔî\u001bT¬\u001dþzT\u0083ª<µ\u001cË>\u008a\u001fò.¾t¸\fzEF\u001e\u0019\\\r@½\u008f!è\u009c{ì«¾GSF\u0006[IÁÆWr\tR\u009dÉ\u008a\u000e\u009c\"#\u008a\u0002\u009e\u0000\u0002Cµ\u0007\u0017\u001c¦pÿk¢\tW\u0094·[9\u0094\u0088Å\u0091\u000eãIª\\øí8Ò [=\u0090%\u008d$K\u0080g#Úæ½ó¾Q\u0081=W`¨4Æó¨:5&á$¥ÕÞö2\u0011&;\u001cÏ\u0003ü\u0003卧翆\u0016\bC\bñcsóÁÝ\u0002þ¶\u0005Á\u0097\u0093\u0004²\u0002ðÜ\u0006&:]ÍH\u000b\u0010M°1\u008f\u008c-\u007f\t¾¥\u0017\u009d\u0096ê /\u000fw'I«\u00156\u0007Pý e\r\u009aÁ\u0096\u0003!T¸\u0002\u0081u\u0003b1\u0097\u0003V\u0097\u009d\u0002á¢\t5F¹â ü¥÷F\u0002\u0018î\u0007譚罻夔遝缜迃噷\u0006 ¹×jhß&ë\u0095ò0ä\n1&fÈ×j^I'\u008fmäÑ±\u0097T·&H^áG\u0014çf\u00025ÊC\u0011gÆ\u0002P'\u0003l,Ø\u0002\u009e\u0088\r\u0083%\u0016/,ò\u0082\tÏr£\u008bÓ\u0004ojÁ×\u0010,¿\nÁ»\\ÏÞK\u0087ö×wvõ©\u0004\u0083\u001a·*\u0002\u0002(\u0003D\f \u0003^ù\u0017\u0003\u008eé\u0084\u0002CU\t\u0007B½\u0081xÏ ®\u0094\u0014\u0086!4x\u0015=c2\u008eÃg sðÖ\u001c±³\u008bÔ\f\u009f@öAÏö\u0081\u0018\u0004\u009e~Q\u0005匠羢孒戱+\u0011æ\\D\u0012\"\u009eª\u007f\u0004k@Dc\u008bâ\u0005å\u000e\u0005ÝvÎc¿X\u0083Ä\u0002\u008bÑó¥\u0002q·\u0003G¾3\u0012|¾(\u00989P\u0082\u009cM9s>X§ÎöèÊ\u0003卓羨\u0090\t±y\u0094ë\u0096ã$\u0099ù\u0005ÑÜm\u008b÷\u0003åÐ²\u0003ÃÕP\u0002Ä\u0091\u0015FmÍsÍ\u009a\u0017Åª^\r)\b°cÌ\u0097\u0015©+d\u0013<\u001f\u0005e|½ÚUY¹y¢¤3¬xw\u001f)$k.\u009e\u009cC\u0000ÑT\u009eëÕ\u0081NHKaUF¶@\u0002Î#[wv\f<9\u001e-\u0018o\u0005\u0006\u0096\u0012h\u0011\u0095»\u0018«íÙì¿]Þ\u0093\u0092\u009f%LD\u000b¾\u0082\u0011Ï¤Z\u00ad\nÜÜÁ\u0002\u0005À\b\u0089ÊC\u009fû{åQ\"Ð¿X\"äÖ§ÂÖýà)ÖM²Ùû\u001b¦Ð|\u0085!f\u009b\u0012Â;.aÜ5OQ\u0004d¤7Ð\u0003£Q\u0085\u0004uA\bÛ\r\u0016ë\u0006Ò\u0019æ¦Xë\u009c¨d½\u0010=ûq\n\u0083'I\u0083@s\u0017ò\u0084wóÒ\u0003\u001f\u0094ù\u0005\u000eÁ\\\u0096E\u0005 È\u009d\u0093Y\u0010WI\u009dü\u0096Z¾Ô:ÍÝâæ\\`Ã\u0012Ã¾!\u001a°à)YØMÁµ_?\u00adQ°n̈ÂYp3(\u00135ó\u0090zf¨}½üg\u0093\u001d´Ý\u0013t<V¹±a<Øö\u0097¯\u008cÝ\u001fYÛj,$À¥õ\u0015ÔÖ\u008fÕ5\u0084\u0000³°â\u0092\u0084þCZY\u0084!@¨ÔS÷ñ«Ë\u0083ñæâ\u0082¥O*,âÛÈ\\\u0095\rºpõL\u0007\u0015ÐÞDÍ¢Àýo/ò6þ\u0002kXu{Ä\u0001>\u008a\u0087ÀI\"*ãËV\u001cò\u0012,!í¼}_´Ö\u007f®ÈZ<Ö\u008f4®Ûh×\"Ú\u007fÊ)ÁðÏ<\u0005®;]¦*Ë\n\u0098Cã\u001em¯)\u009e92¨Q¢^\u001bæú\u0081. Ê\u0094ràõ\u0012\u0087úø\u001a\u0002Ù\u0016\r>¶QTÞ\u001e\u0018\u001a\u001eëOQ·2Å\u0001³\u0088á\u0088µHxfc'è\u0081ô·¿ÏíÆü-ðWæ\u008c}q\\vÙtÐ;àPÇCKÞÄêÏüYá¼¦ª%äüË3-¿¿P¾\u001aeK°¤Ñ,÷ªìËß=E]\u009b\u001fþ\u0003¨SüýfûÞ\u001diZI\u001fao`·b\u0087\u00998aàSÆ\u000bv|n\u001f\u008e\u0007Õ\u0087Èç\u0084}èÅd.Îô}³\u00154ø\u0010\u0091Ã&\u0081\u008e\u0093X¦ny\u008b\u0003ª\u001cÃk\b\f~3°ÕÒHMô[Zÿ\"\u0091ÚØ)Z·0¡\u000f¨\u0003ÃÂ\u0093îCßUY¬\u008eã7\u00881N-z\u009eR¡fÏ~\u0095O1òBè-¶m»Ì]Â\u0094\u0095Çúx´ÞzÇ;6\u001a>\u0017ó³ðÄª\u00954\u009f\u0087:1-\u0091\føÜ\u0005P.¬\"õ#ìÞØþùZ\u0000~9Ý\u0088ôóù·«\u0083{j±\u001a\b\r@-\u009e§P´Ö÷c>3\u0019÷ÂVN\u0095|ò6fT¤©ÜÖi¹\u009aou\u0087ÇàL]\u0081U\u0011L¢\u0087é\u0085»¶ÛR\u008c\u0097x\u0097#ÌÈ/a»ÈïsU\u0093!\u008fe8jÿ\u008eü\u009e\u0003:\u0019\u0085\u0091\u0019\fr'´\u000eá·2µ\u0016C£\u008efµjÃíwÿ\u0084-EÓwâ\f\u008eùÃ0E\u0007×X\u000e$à\u0086à7w%¯hÍæ\u0010\u008e$¯ð\tiÁ`\u0004\u001dU[p¬ÐÍ,Z\u001bèÔ\u00880\\\u0015\u0081K\t¬CÔ\u0088\tý\u0012²\u008b\u0012P\u0096Ç¾ñx¤_¡K´\u0001g\u001f\u0010ôÆ\u000b\u0088åï(Þ\u001cüR¯¤ÞQ\u0010S÷Û(I³ò®Õ¨_\u008d+êx!¦vÕ2jñªØ\u0003QuqET\u0018UâÖLw\u0086\u0086á\u009f;\u001d\u0016´ÎìGS\u0019Þü0é³qvjI\u0018z2Í\nõK\u008bo|¢ mx§\u000f7\u0014¥ò»\u00adó[íSÚð:\u0093\u0011\u0010¶ò\u008e)ãû\u0003X³ìl\u0010Åì\u0010u)\u0011\u009f\u000f±ßà\u008e±·\u0002\u0080\u0088'¨Òx\u009c5-{\u00960Y\u0083¸×ÖUZm\u0090\u0097:PAQ§\u0080Uæ\u0094\u0017~\u0004bIZfùE\u001f¦Ri8(\u009d)\u009d\u0003%|íÙ\u0002\u0011\u0085\t{8ì>ª\n¶ñ\u0018\u0007¦\u008a]D×¥V\u0002æ?\u0002Ø\u000b\u0014\u008enËvYKÌ\u0080(±e\u001b¼BÊ\u009dPKÐF\u0007zË\u000b\u008aJ4\u0014\b\u008aÌ\bT\u0095)\u008d`\u0002O\u0004\u000b韼褒襜匁盌救丳亽咭泮ä\u0005ó\u009d<À\u007f\u0002·Ô\n'\u0099\u0000o\u0093ß³n\u0094H\u0004\u008eêt®\r/¬\u007fõ¡¥þ|O\u008b\u0005\u0007]\u0003º·\u0093\u0003g\u0089p\tÍY5X~\u0097\u001fW{\u0002_¢DqjbÒ\u009b\u0017Ãâ\u0005+RiÍ\u009f¿@0ôÐIø\u0091\u0011US\u009bËWr\u008a/ÐT\u0080\u0095v\te¢\u001b\u0000Ìhø÷ºõj\u009aF3©ç\u0084f\u008fªJþÊh\r¢É4Äu\u000b\u0004?`\\H\u001e\u0098\u0089\"ÂØ\u0005\u0001ðiÈX´m¢Ù\u009bI`¸\u008e\u0088ÚrÔx{1´q\u0016\u0002`\u0090\u0004\u00147\u0018ô\u001b\u0001ÔQÏàÖÞù\u0014±Øçú>{\u0015/SBt?æ!+p¢*\rÎG|ø\u0011ÿC\u0088ElHìX\u0017D\u0087\u008d.Å1\u0016°\u008cð\u000eÆW\u0006WöE\u0096/+ª\r§\u0006Î\f\nÜÓ\t";
       int var20 = "4ñ\u0003òlD\u0007邻戏乴輱政与姡\u0002Q½\u0002ÕG\u0002Vm\u0004õmyÄ\u0003BÝ\u008d\u0002s\u0012\u0002\u0011 \u0014YC1Ó\u0006ÿ'\u0016UcÊAI\ttô\u0087f*ã\u0003\u0083Ç×\u0002)Í\u0003R,»\u0011\u0087\u009b&\u0006i¦\u0019´÷uÕßvÙB^¿\b<e\u001d¾\\\u0082\t\u0091\b4i\u0001qÛ\nËJ\u0003PÔî\u001bT¬\u001dþzT\u0083ª<µ\u001cË>\u008a\u001fò.¾t¸\fzEF\u001e\u0019\\\r@½\u008f!è\u009c{ì«¾GSF\u0006[IÁÆWr\tR\u009dÉ\u008a\u000e\u009c\"#\u008a\u0002\u009e\u0000\u0002Cµ\u0007\u0017\u001c¦pÿk¢\tW\u0094·[9\u0094\u0088Å\u0091\u000eãIª\\øí8Ò [=\u0090%\u008d$K\u0080g#Úæ½ó¾Q\u0081=W`¨4Æó¨:5&á$¥ÕÞö2\u0011&;\u001cÏ\u0003ü\u0003卧翆\u0016\bC\bñcsóÁÝ\u0002þ¶\u0005Á\u0097\u0093\u0004²\u0002ðÜ\u0006&:]ÍH\u000b\u0010M°1\u008f\u008c-\u007f\t¾¥\u0017\u009d\u0096ê /\u000fw'I«\u00156\u0007Pý e\r\u009aÁ\u0096\u0003!T¸\u0002\u0081u\u0003b1\u0097\u0003V\u0097\u009d\u0002á¢\t5F¹â ü¥÷F\u0002\u0018î\u0007譚罻夔遝缜迃噷\u0006 ¹×jhß&ë\u0095ò0ä\n1&fÈ×j^I'\u008fmäÑ±\u0097T·&H^áG\u0014çf\u00025ÊC\u0011gÆ\u0002P'\u0003l,Ø\u0002\u009e\u0088\r\u0083%\u0016/,ò\u0082\tÏr£\u008bÓ\u0004ojÁ×\u0010,¿\nÁ»\\ÏÞK\u0087ö×wvõ©\u0004\u0083\u001a·*\u0002\u0002(\u0003D\f \u0003^ù\u0017\u0003\u008eé\u0084\u0002CU\t\u0007B½\u0081xÏ ®\u0094\u0014\u0086!4x\u0015=c2\u008eÃg sðÖ\u001c±³\u008bÔ\f\u009f@öAÏö\u0081\u0018\u0004\u009e~Q\u0005匠羢孒戱+\u0011æ\\D\u0012\"\u009eª\u007f\u0004k@Dc\u008bâ\u0005å\u000e\u0005ÝvÎc¿X\u0083Ä\u0002\u008bÑó¥\u0002q·\u0003G¾3\u0012|¾(\u00989P\u0082\u009cM9s>X§ÎöèÊ\u0003卓羨\u0090\t±y\u0094ë\u0096ã$\u0099ù\u0005ÑÜm\u008b÷\u0003åÐ²\u0003ÃÕP\u0002Ä\u0091\u0015FmÍsÍ\u009a\u0017Åª^\r)\b°cÌ\u0097\u0015©+d\u0013<\u001f\u0005e|½ÚUY¹y¢¤3¬xw\u001f)$k.\u009e\u009cC\u0000ÑT\u009eëÕ\u0081NHKaUF¶@\u0002Î#[wv\f<9\u001e-\u0018o\u0005\u0006\u0096\u0012h\u0011\u0095»\u0018«íÙì¿]Þ\u0093\u0092\u009f%LD\u000b¾\u0082\u0011Ï¤Z\u00ad\nÜÜÁ\u0002\u0005À\b\u0089ÊC\u009fû{åQ\"Ð¿X\"äÖ§ÂÖýà)ÖM²Ùû\u001b¦Ð|\u0085!f\u009b\u0012Â;.aÜ5OQ\u0004d¤7Ð\u0003£Q\u0085\u0004uA\bÛ\r\u0016ë\u0006Ò\u0019æ¦Xë\u009c¨d½\u0010=ûq\n\u0083'I\u0083@s\u0017ò\u0084wóÒ\u0003\u001f\u0094ù\u0005\u000eÁ\\\u0096E\u0005 È\u009d\u0093Y\u0010WI\u009dü\u0096Z¾Ô:ÍÝâæ\\`Ã\u0012Ã¾!\u001a°à)YØMÁµ_?\u00adQ°n̈ÂYp3(\u00135ó\u0090zf¨}½üg\u0093\u001d´Ý\u0013t<V¹±a<Øö\u0097¯\u008cÝ\u001fYÛj,$À¥õ\u0015ÔÖ\u008fÕ5\u0084\u0000³°â\u0092\u0084þCZY\u0084!@¨ÔS÷ñ«Ë\u0083ñæâ\u0082¥O*,âÛÈ\\\u0095\rºpõL\u0007\u0015ÐÞDÍ¢Àýo/ò6þ\u0002kXu{Ä\u0001>\u008a\u0087ÀI\"*ãËV\u001cò\u0012,!í¼}_´Ö\u007f®ÈZ<Ö\u008f4®Ûh×\"Ú\u007fÊ)ÁðÏ<\u0005®;]¦*Ë\n\u0098Cã\u001em¯)\u009e92¨Q¢^\u001bæú\u0081. Ê\u0094ràõ\u0012\u0087úø\u001a\u0002Ù\u0016\r>¶QTÞ\u001e\u0018\u001a\u001eëOQ·2Å\u0001³\u0088á\u0088µHxfc'è\u0081ô·¿ÏíÆü-ðWæ\u008c}q\\vÙtÐ;àPÇCKÞÄêÏüYá¼¦ª%äüË3-¿¿P¾\u001aeK°¤Ñ,÷ªìËß=E]\u009b\u001fþ\u0003¨SüýfûÞ\u001diZI\u001fao`·b\u0087\u00998aàSÆ\u000bv|n\u001f\u008e\u0007Õ\u0087Èç\u0084}èÅd.Îô}³\u00154ø\u0010\u0091Ã&\u0081\u008e\u0093X¦ny\u008b\u0003ª\u001cÃk\b\f~3°ÕÒHMô[Zÿ\"\u0091ÚØ)Z·0¡\u000f¨\u0003ÃÂ\u0093îCßUY¬\u008eã7\u00881N-z\u009eR¡fÏ~\u0095O1òBè-¶m»Ì]Â\u0094\u0095Çúx´ÞzÇ;6\u001a>\u0017ó³ðÄª\u00954\u009f\u0087:1-\u0091\føÜ\u0005P.¬\"õ#ìÞØþùZ\u0000~9Ý\u0088ôóù·«\u0083{j±\u001a\b\r@-\u009e§P´Ö÷c>3\u0019÷ÂVN\u0095|ò6fT¤©ÜÖi¹\u009aou\u0087ÇàL]\u0081U\u0011L¢\u0087é\u0085»¶ÛR\u008c\u0097x\u0097#ÌÈ/a»ÈïsU\u0093!\u008fe8jÿ\u008eü\u009e\u0003:\u0019\u0085\u0091\u0019\fr'´\u000eá·2µ\u0016C£\u008efµjÃíwÿ\u0084-EÓwâ\f\u008eùÃ0E\u0007×X\u000e$à\u0086à7w%¯hÍæ\u0010\u008e$¯ð\tiÁ`\u0004\u001dU[p¬ÐÍ,Z\u001bèÔ\u00880\\\u0015\u0081K\t¬CÔ\u0088\tý\u0012²\u008b\u0012P\u0096Ç¾ñx¤_¡K´\u0001g\u001f\u0010ôÆ\u000b\u0088åï(Þ\u001cüR¯¤ÞQ\u0010S÷Û(I³ò®Õ¨_\u008d+êx!¦vÕ2jñªØ\u0003QuqET\u0018UâÖLw\u0086\u0086á\u009f;\u001d\u0016´ÎìGS\u0019Þü0é³qvjI\u0018z2Í\nõK\u008bo|¢ mx§\u000f7\u0014¥ò»\u00adó[íSÚð:\u0093\u0011\u0010¶ò\u008e)ãû\u0003X³ìl\u0010Åì\u0010u)\u0011\u009f\u000f±ßà\u008e±·\u0002\u0080\u0088'¨Òx\u009c5-{\u00960Y\u0083¸×ÖUZm\u0090\u0097:PAQ§\u0080Uæ\u0094\u0017~\u0004bIZfùE\u001f¦Ri8(\u009d)\u009d\u0003%|íÙ\u0002\u0011\u0085\t{8ì>ª\n¶ñ\u0018\u0007¦\u008a]D×¥V\u0002æ?\u0002Ø\u000b\u0014\u008enËvYKÌ\u0080(±e\u001b¼BÊ\u009dPKÐF\u0007zË\u000b\u008aJ4\u0014\b\u008aÌ\bT\u0095)\u008d`\u0002O\u0004\u000b韼褒襜匁盌救丳亽咭泮ä\u0005ó\u009d<À\u007f\u0002·Ô\n'\u0099\u0000o\u0093ß³n\u0094H\u0004\u008eêt®\r/¬\u007fõ¡¥þ|O\u008b\u0005\u0007]\u0003º·\u0093\u0003g\u0089p\tÍY5X~\u0097\u001fW{\u0002_¢DqjbÒ\u009b\u0017Ãâ\u0005+RiÍ\u009f¿@0ôÐIø\u0091\u0011US\u009bËWr\u008a/ÐT\u0080\u0095v\te¢\u001b\u0000Ìhø÷ºõj\u009aF3©ç\u0084f\u008fªJþÊh\r¢É4Äu\u000b\u0004?`\\H\u001e\u0098\u0089\"ÂØ\u0005\u0001ðiÈX´m¢Ù\u009bI`¸\u008e\u0088ÚrÔx{1´q\u0016\u0002`\u0090\u0004\u00147\u0018ô\u001b\u0001ÔQÏàÖÞù\u0014±Øçú>{\u0015/SBt?æ!+p¢*\rÎG|ø\u0011ÿC\u0088ElHìX\u0017D\u0087\u008d.Å1\u0016°\u008cð\u000eÆW\u0006WöE\u0096/+ª\r§\u0006Î\f\nÜÓ\t"
          .length();
-      char var17 = 2;
+      var17 = 2;
       int var29 = -1;
 
       label90:
@@ -10790,19 +10903,19 @@ var10004 = new Color(var12, (int)var10006, var13);
                   if ((var29 += var17) >= var20) {
                      f = var21;
                      i = new String[124];
-                     long var8 = 5380351022515941389L;
-                     long[] var14 = new long[110];
+                     var8 = 5380351022515941389L;
+                     var14 = new long[110];
                      int var11 = 0;
                      String var12 = "L\u0097;þæ¬È8å\u001e£ç\u008ab\u00829»e\u0089)ý\u0081\n)çQ5Tõ¾åó\u001e$lÿfétSM\u0088(\u0012\u009a²1\u0087¡\u0002uäðøsJ4Z\u0006Û\u0001ÀÃþ\u008d£\u009cmôZ\u0096\u008cÒ\u009fÉ²\u0015@ ´\u0094\u001cª8xûZÐËÁéÀ\u0091\u009fl3¦Ê¿wn)*+\u0004ÃÔ\u0017RH\bÕ\u009eQìÉ[lP¬ÆÒ*\u0010\u0080\u0011ÐÂ\u0099àµn1ÙÑò\u000fË\u000f\u0080jõÐÌ3\u0082\u0080\u0097ìÂÂ\u0014:'³§Qg¼'\u009bÅ\u0083F/\u0010\u00938Ü^\u008ad\u0087ùâ!©~jË±>LRD\"?x\u0002ÿó§\u0084\u0091Mcn\u0096a\u008f\u009e\u009a¯\u00894Ñrò\u0081OÜð¯Ú\n\u0005TL\u0005â7\u0082\u0081\u0006]ão1ÿ (\u000bò&»\u009dÚ\u001a.cP\u000f´Ã/igo\u001bZª\u0097Ê¹øpø\u0095?xßs\u008f\u0006R\u0094\u00adä\u0087#=G®\u0014 Ä\u000fq¤Çu\bÄû¶\"iqÙV\u007fH\u009diÁ8Ù7U\u0087\u0013~Ñ\u001b6'\u0091Ãt\u001bÈ'<\u0017Û ÓåL\u0083?Hp~\u0083Ý®ò\u0085JZ0y´\r\u001eà\u0086\u008a0\u008fY\u008b/dÍFkëô{<øÎ·8Ë\u0006ÔJùÏ£\t\u001d úÞ\u009c<\u0012\u0095L$rÑOÑ+aÔ\u0096y\u0097@\u0081®5+»ÝV²¤¸zÙ.°\u001aúIÆgØ¦\u0092ßÛÒy\u009a¡{\u0083`\u000b\n;YÎ`Aw!6\u0093)\u008d³iÆ?ñOº;\u0016-ûÞþ\u0010\u0001Ï\"Ô\u0090E|«øM\u001e«\u0000Û\u0013)\u009aºË\u008fµ\u009dé`Ê^>³0dISæ»\u007f\noÓB\nÐù×\u0096Eþ¿´ò¨\u0097÷j\r\u0017\u0002\u000bÿá4!¡jð\u0013êSqËTÈç¼\u0014xHz-\u0085yé\u0096Î\u0084\u008c;oè\u0000Óa\u0003\u008f^hÊk8\u0013a  À_NÑÚ\u0017A½mB\u00061!£_Ï³\u0006Û\u0011\u0004¢2\u0002º\u001b.\u000eE-ÉÎ¨}SI]èMÈ\\\u0098oJ×ï\u009d§ºu#í\u000bz<@.\u0019\u0019\u000fÌ¤\u0015©¹ÍÏIÌ\u0013M\u0092|R8\u0016\u007fcÜ\u0015ó\\6\u0013Z\u008a\u0099¢\u008e\u0010û\u000fÖ\u009c\u008dÐ\u0081M\u0011ÿñ\u000eÁPä\u0083Â`q?3ÕÞ\u0089Ì\u00990Ù#áó¿\u0011q²ö\u008bµÍ \u0093á_\u0002\u0014\u001fÏê.&I¸îj±\u0018»\u000eÕ¤NÔ\u0007\u001b®lAS22Hì\u0089\u0092.v\u0007!\u0014\u0001\u0095\u0081.ïcY+Lgï1k)ÁEFÀ°\u0000dFý¶¢6ÿNÖm`\u0084a2\u0004ëÓ¶É*\u0085HðÇÒ ©L%\u008b\u001e\u000b\u0014äbxÄÌi³\u001fi¤\u0017\u0081ßä ,çìÖ>TÞqÿ-±\u0096Ùß\u001fT_\u008dêz\u0017À×\u009bj\u0016ó\u0012)¶!\u000bö]m\u0099£: \u001e\u009a\u001dGq\u0017%ÀM(ÁË:0\tæÓ§ÕDï|Î\trmÄwÙf\u0003\u001aÁò\u0096\u0093ijn¾\u008fq\u0004";
-                     int var13 = "L\u0097;þæ¬È8å\u001e£ç\u008ab\u00829»e\u0089)ý\u0081\n)çQ5Tõ¾åó\u001e$lÿfétSM\u0088(\u0012\u009a²1\u0087¡\u0002uäðøsJ4Z\u0006Û\u0001ÀÃþ\u008d£\u009cmôZ\u0096\u008cÒ\u009fÉ²\u0015@ ´\u0094\u001cª8xûZÐËÁéÀ\u0091\u009fl3¦Ê¿wn)*+\u0004ÃÔ\u0017RH\bÕ\u009eQìÉ[lP¬ÆÒ*\u0010\u0080\u0011ÐÂ\u0099àµn1ÙÑò\u000fË\u000f\u0080jõÐÌ3\u0082\u0080\u0097ìÂÂ\u0014:'³§Qg¼'\u009bÅ\u0083F/\u0010\u00938Ü^\u008ad\u0087ùâ!©~jË±>LRD\"?x\u0002ÿó§\u0084\u0091Mcn\u0096a\u008f\u009e\u009a¯\u00894Ñrò\u0081OÜð¯Ú\n\u0005TL\u0005â7\u0082\u0081\u0006]ão1ÿ (\u000bò&»\u009dÚ\u001a.cP\u000f´Ã/igo\u001bZª\u0097Ê¹øpø\u0095?xßs\u008f\u0006R\u0094\u00adä\u0087#=G®\u0014 Ä\u000fq¤Çu\bÄû¶\"iqÙV\u007fH\u009diÁ8Ù7U\u0087\u0013~Ñ\u001b6'\u0091Ãt\u001bÈ'<\u0017Û ÓåL\u0083?Hp~\u0083Ý®ò\u0085JZ0y´\r\u001eà\u0086\u008a0\u008fY\u008b/dÍFkëô{<øÎ·8Ë\u0006ÔJùÏ£\t\u001d úÞ\u009c<\u0012\u0095L$rÑOÑ+aÔ\u0096y\u0097@\u0081®5+»ÝV²¤¸zÙ.°\u001aúIÆgØ¦\u0092ßÛÒy\u009a¡{\u0083`\u000b\n;YÎ`Aw!6\u0093)\u008d³iÆ?ñOº;\u0016-ûÞþ\u0010\u0001Ï\"Ô\u0090E|«øM\u001e«\u0000Û\u0013)\u009aºË\u008fµ\u009dé`Ê^>³0dISæ»\u007f\noÓB\nÐù×\u0096Eþ¿´ò¨\u0097÷j\r\u0017\u0002\u000bÿá4!¡jð\u0013êSqËTÈç¼\u0014xHz-\u0085yé\u0096Î\u0084\u008c;oè\u0000Óa\u0003\u008f^hÊk8\u0013a  À_NÑÚ\u0017A½mB\u00061!£_Ï³\u0006Û\u0011\u0004¢2\u0002º\u001b.\u000eE-ÉÎ¨}SI]èMÈ\\\u0098oJ×ï\u009d§ºu#í\u000bz<@.\u0019\u0019\u000fÌ¤\u0015©¹ÍÏIÌ\u0013M\u0092|R8\u0016\u007fcÜ\u0015ó\\6\u0013Z\u008a\u0099¢\u008e\u0010û\u000fÖ\u009c\u008dÐ\u0081M\u0011ÿñ\u000eÁPä\u0083Â`q?3ÕÞ\u0089Ì\u00990Ù#áó¿\u0011q²ö\u008bµÍ \u0093á_\u0002\u0014\u001fÏê.&I¸îj±\u0018»\u000eÕ¤NÔ\u0007\u001b®lAS22Hì\u0089\u0092.v\u0007!\u0014\u0001\u0095\u0081.ïcY+Lgï1k)ÁEFÀ°\u0000dFý¶¢6ÿNÖm`\u0084a2\u0004ëÓ¶É*\u0085HðÇÒ ©L%\u008b\u001e\u000b\u0014äbxÄÌi³\u001fi¤\u0017\u0081ßä ,çìÖ>TÞqÿ-±\u0096Ùß\u001fT_\u008dêz\u0017À×\u009bj\u0016ó\u0012)¶!\u000bö]m\u0099£: \u001e\u009a\u001dGq\u0017%ÀM(ÁË:0\tæÓ§ÕDï|Î\trmÄwÙf\u0003\u001aÁò\u0096\u0093ijn¾\u008fq\u0004"
-                        .length();
+                     var13 = "L\u0097;þæ¬È8å\u001e£ç\u008ab\u00829»e\u0089)ý\u0081\n)çQ5Tõ¾åó\u001e$lÿfétSM\u0088(\u0012\u009a²1\u0087¡\u0002uäðøsJ4Z\u0006Û\u0001ÀÃþ\u008d£\u009cmôZ\u0096\u008cÒ\u009fÉ²\u0015@ ´\u0094\u001cª8xûZÐËÁéÀ\u0091\u009fl3¦Ê¿wn)*+\u0004ÃÔ\u0017RH\bÕ\u009eQìÉ[lP¬ÆÒ*\u0010\u0080\u0011ÐÂ\u0099àµn1ÙÑò\u000fË\u000f\u0080jõÐÌ3\u0082\u0080\u0097ìÂÂ\u0014:'³§Qg¼'\u009bÅ\u0083F/\u0010\u00938Ü^\u008ad\u0087ùâ!©~jË±>LRD\"?x\u0002ÿó§\u0084\u0091Mcn\u0096a\u008f\u009e\u009a¯\u00894Ñrò\u0081OÜð¯Ú\n\u0005TL\u0005â7\u0082\u0081\u0006]ão1ÿ (\u000bò&»\u009dÚ\u001a.cP\u000f´Ã/igo\u001bZª\u0097Ê¹øpø\u0095?xßs\u008f\u0006R\u0094\u00adä\u0087#=G®\u0014 Ä\u000fq¤Çu\bÄû¶\"iqÙV\u007fH\u009diÁ8Ù7U\u0087\u0013~Ñ\u001b6'\u0091Ãt\u001bÈ'<\u0017Û ÓåL\u0083?Hp~\u0083Ý®ò\u0085JZ0y´\r\u001eà\u0086\u008a0\u008fY\u008b/dÍFkëô{<øÎ·8Ë\u0006ÔJùÏ£\t\u001d úÞ\u009c<\u0012\u0095L$rÑOÑ+aÔ\u0096y\u0097@\u0081®5+»ÝV²¤¸zÙ.°\u001aúIÆgØ¦\u0092ßÛÒy\u009a¡{\u0083`\u000b\n;YÎ`Aw!6\u0093)\u008d³iÆ?ñOº;\u0016-ûÞþ\u0010\u0001Ï\"Ô\u0090E|«øM\u001e«\u0000Û\u0013)\u009aºË\u008fµ\u009dé`Ê^>³0dISæ»\u007f\noÓB\nÐù×\u0096Eþ¿´ò¨\u0097÷j\r\u0017\u0002\u000bÿá4!¡jð\u0013êSqËTÈç¼\u0014xHz-\u0085yé\u0096Î\u0084\u008c;oè\u0000Óa\u0003\u008f^hÊk8\u0013a  À_NÑÚ\u0017A½mB\u00061!£_Ï³\u0006Û\u0011\u0004¢2\u0002º\u001b.\u000eE-ÉÎ¨}SI]èMÈ\\\u0098oJ×ï\u009d§ºu#í\u000bz<@.\u0019\u0019\u000fÌ¤\u0015©¹ÍÏIÌ\u0013M\u0092|R8\u0016\u007fcÜ\u0015ó\\6\u0013Z\u008a\u0099¢\u008e\u0010û\u000fÖ\u009c\u008dÐ\u0081M\u0011ÿñ\u000eÁPä\u0083Â`q?3ÕÞ\u0089Ì\u00990Ù#áó¿\u0011q²ö\u008bµÍ \u0093á_\u0002\u0014\u001fÏê.&I¸îj±\u0018»\u000eÕ¤NÔ\u0007\u001b®lAS22Hì\u0089\u0092.v\u0007!\u0014\u0001\u0095\u0081.ïcY+Lgï1k)ÁEFÀ°\u0000dFý¶¢6ÿNÖm`\u0084a2\u0004ëÓ¶É*\u0085HðÇÒ ©L%\u008b\u001e\u000b\u0014äbxÄÌi³\u001fi¤\u0017\u0081ßä ,çìÖ>TÞqÿ-±\u0096Ùß\u001fT_\u008dêz\u0017À×\u009bj\u0016ó\u0012)¶!\u000bö]m\u0099£: \u001e\u009a\u001dGq\u0017%ÀM(ÁË:0\tæÓ§ÕDï|Î\trmÄwÙf\u0003\u001aÁò\u0096\u0093ijn¾\u008fq\u0004";
+                        // [VF] .length();
                      byte var10 = 0;
 
                      label64:
                      while (true) {
                         byte var43 = var10;
                         var10 += 8;
-                        byte[] var15 = var12.substring(var43, var10).getBytes("ISO-8859-1");
+                        var15 = var12.substring(var43, var10).getBytes("ISO-8859-1");
                         long[] var32 = var14;
                         int var44 = var11++;
                         long var58 = ((long)var15[0] & 255L) << 56
@@ -10824,7 +10937,7 @@ var10004 = new Color(var12, (int)var10006, var13);
                                     a = var14;
                                     j = new Integer[110];
                                     long var0 = 1931256438717069511L;
-                                    long[] var6 = new long[3];
+                                    var6 = new long[3];
                                     int var3 = 0;
                                     String var4 = "ið\u0090\u000f7,A#\u001c\u0010\u0005@ðÿGBH\u0089ÞÙÌ\u001aíe";
                                     int var5 = "ið\u0090\u000f7,A#\u001c\u0010\u0005@ðÿGBH\u0089ÞÙÌ\u001aíe".length();
@@ -10833,7 +10946,7 @@ var10004 = new Color(var12, (int)var10006, var13);
                                     do {
                                        byte var46 = var2;
                                        var2 += 8;
-                                       byte[] var7 = var4.substring(var46, var2).getBytes("ISO-8859-1");
+                                       var7 = var4.substring(var46, var2).getBytes("ISO-8859-1");
                                        int var47 = var3++;
                                        var77 = (
                                              ((long)var7[0] & 255L) << 56
@@ -10928,8 +11041,8 @@ var10004 = new Color(var12, (int)var10006, var13);
                                     Registry.lookupField(254165158142342477L).set(null, new DecimalFormat(b(-17905, -9769)));
                                     Registry.lookupField(539497916290495263L).set(null, new DecimalFormat(b(-17811, 23072)));
                                     Registry.lookupField(217319576446899637L).set(null, b(-17839, -25379));
-                                    Object[] var69 = Registry.packArgs(1, 1);
-                                    long var25 = 401056956354921780L;
+                                    Object var69 = Registry.packArgs(1, 1);
+                                    var25 = 401056956354921780L;
                                     Registry.lookupField(403549328824014817L).set(null, Ref.h2(401056956354921780L, var25));
                                     Registry.lookupField(230576532026544138L)
                                        .set(null, ((BufferedImage)Registry.lookupField(403549328824014817L).get(null)).createGraphics());
@@ -10969,7 +11082,7 @@ var10004 = new Color(var12, (int)var10006, var13);
                                     continue label64;
                                  }
 
-                                 var12 = "\u0081:,1¡\u001aCÅjMZ`\u0085][\u0084";
+                                 var12 = ("\u0081:,1¡\u001aCÅjMZ`\u0085][\u0084") != 0;
                                  var13 = "\u0081:,1¡\u001aCÅjMZ`\u0085][\u0084".length();
                                  var10 = 0;
                            }
@@ -11014,7 +11127,6 @@ var10004 = new Color(var12, (int)var10006, var13);
       }
    }
 }
-
 
 
 

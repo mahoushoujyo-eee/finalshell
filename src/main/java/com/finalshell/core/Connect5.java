@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 import com.finalshell.task.Fs4;
 import com.finalshell.task.LZ3;
-import com.finalshell.task.ReadDoneTask;
+import com.finalshell.task.ReadCompletedTask;
 import com.finalshell.task.ReadDoneTask3;
 import java.io.IOException;
 import java.io.InputStream;
@@ -71,7 +71,7 @@ public class Connect5 {
       OutputStream var2 = var1.getOutputStream();
       InputStream var3 = var1.getInputStream();
       new com.finalshell.task.J2(this, var2);
-      ReadDoneTask var5 = new ReadDoneTask(this, var3);
+      ReadCompletedTask var5 = new ReadCompletedTask(this, var3);
       var5.start();
    }
 
@@ -1005,6 +1005,7 @@ public class Connect5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[7];
       int var11 = 0;
       String var10 = "\u0097¼Âº>\u001e?\u0010\tTàN3©qï6\u0094\u000b\f\u008e\u0015ôÅÖ\u0083\u0001\u008f-þ\tË=í\u008fÎ\u001ev'#\tÚÑÏ\u0004\u009d·ï\u009fÖ";
@@ -1019,7 +1020,6 @@ public class Connect5 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.connection.Connection;
+import com.finalshell.connection.ConnectionState;
 import com.finalshell.ui.panel.Ky4;
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -14,7 +14,7 @@ public class Rdp2 {
    public int M;
    public int Q;
    public Qm2 p;
-   public Connection K;
+   public ConnectionState K;
    public boolean U;
    public Object x;
    public boolean k;

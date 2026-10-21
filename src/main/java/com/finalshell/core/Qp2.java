@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.adapter.BL;
-import com.finalshell.ui.panel.FilePanel;
+import com.finalshell.ui.panel.FileCommandPanel;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -41,7 +41,7 @@ public class Qp2 extends JTable {
    @Override
    public void setModel(TableModel var1) {
       super.setModel(var1);
-      boolean var10000 = FilePanel.q();
+      boolean var10000 = FileCommandPanel.q();
       TableColumnModel var3 = this.getColumnModel();
       boolean var2 = var10000;
       this.setPreferredScrollableViewportSize(new Dimension(a(27490, 9008288787270549889L), a(28871, 727885258968914469L)));

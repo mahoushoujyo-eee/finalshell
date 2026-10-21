@@ -8,7 +8,7 @@ public class Ay2 {
    public static Integer[] b;
 
    public static String t(byte[] var0) {
-      Ky4[] var10000 = Fi4.P();
+      Ky4[] var10000 = HttpProxySocketFactory.P();
       int var2 = var0.length;
       Ky4[] var1 = var10000;
       char[] var3 = new char[(var2 + 2) / 3 * 4];
@@ -43,7 +43,6 @@ public class Ay2 {
             var3[var4++] = g[(var7 << 2 | (var8 & a(19347, 1157997775080249834L)) >> a(24830, 6974669450115773056L)) & var9];
             var3[var4++] = g[var8 & var9];
             if (var1 != null) {
-      int var14;
                continue;
             }
          }
@@ -63,7 +62,7 @@ public class Ay2 {
          default:
             String var16 = new String(var3);
             if (Ky4.F$arrString() != null) {
-               Fi4.N(new Ky4[1]);
+               HttpProxySocketFactory.N(new Ky4[1]);
             }
 
             return var16;
@@ -85,6 +84,7 @@ public class Ay2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var14;
       char[] var10003 = "\u001be;AD-S\u0012n2NM&Z\u0015w)WR?A\fp \\[\nv9C\u001dcf\u0003}0L\u0014ho\u0004d+U\u000bqt\u001dc\"^\u000250Y'n\u0012N29R?u"
          .toCharArray();
       int var10004 = var10003.length;
@@ -136,7 +136,7 @@ public class Ay2 {
             long[] var15 = new long[6];
             int var12 = 0;
             String var13 = "@×tÂë\u0002\u0081ZÇÄ\u0097\u0091\u0093\u000eês\u0019ÍõS\niÎJN|ú¢ÔR«ë";
-            int var14 = "@×tÂë\u0002\u0081ZÇÄ\u0097\u0091\u0093\u000eês\u0019ÍõS\niÎJN|ú¢ÔR«ë".length();
+            var14 = "@×tÂë\u0002\u0081ZÇÄ\u0097\u0091\u0093\u000eês\u0019ÍõS\niÎJN|ú¢ÔR«ë".length();
             byte var11 = 0;
 
             label71:
@@ -174,7 +174,7 @@ public class Ay2 {
                            continue label71;
                         }
 
-                        var13 = "¦5\u0093C àB83¬\u008aÍ\u000fÛeÙ";
+                        var13 = ("¦5\u0093C àB83¬\u008aÍ\u000fÛeÙ") != 0;
                         var14 = "¦5\u0093C àB83¬\u008aÍ\u000fÛeÙ".length();
                         var11 = 0;
                   }
@@ -358,7 +358,6 @@ public class Ay2 {
       }
    }
 }
-
 
 
 

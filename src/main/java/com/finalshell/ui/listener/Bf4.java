@@ -28,9 +28,9 @@ public class Bf4 extends MouseAdapter {
       String var5 = ((JR)Ref.g(635938733199465863L, var11)).getColumnName(var3);
       Object var13 = 319342635679894398L;
       Ref.g(319342635679894398L, var13);
-      Object[] var10005 = Registry.emptyArgs();
+      Object var10005 = Registry.emptyArgs();
       long var16 = 589871071857415373L;
-      Object[] var15 = var10005;
+      Object var15 = var10005;
       var10005 = Ref.h(589871071857415373L, var15, var16);
 
       try {

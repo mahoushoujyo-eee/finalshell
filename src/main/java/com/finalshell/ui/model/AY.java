@@ -31,10 +31,10 @@ public class AY implements Comparator {
       Ref.h(410905379772103887L, var10, var11);
       Lv4_2 var10004 = (Lv4_2)(Registry.emptyArgs());
       long var13 = 605430732347023634L;
-      Object[] var12 = var10004;
+      Object var12 = var10004;
       var10004 = Registry.packArgs(Ref.h(605430732347023634L, var12, var13));
       long var15 = 489768706953623433L;
-      Object[] var14 = var10004;
+      Object var14 = var10004;
       var10004 = Ref.h(489768706953623433L, var14, var15);
 
       try {
@@ -53,10 +53,10 @@ public class AY implements Comparator {
       Ref.h(410905379772103887L, var18, var19);
       Lv4_2 var10008 = (Lv4_2)(Registry.emptyArgs());
       long var21 = 605430732347023634L;
-      Object[] var20 = var10008;
+      Object var20 = var10008;
       var10008 = Registry.packArgs(Ref.h(605430732347023634L, var20, var21));
       long var23 = 489768706953623433L;
-      Object[] var22 = var10008;
+      Object var22 = var10008;
       var10008 = Ref.h(489768706953623433L, var22, var23);
 
       try {
@@ -78,7 +78,7 @@ public class AY implements Comparator {
       if (var3 == null || var46 != null) {
          String var10009 = (String)(Registry.emptyArgs());
          long var25 = 286931176286176762L;
-         Object[] var24 = var10009;
+         Object var24 = var10009;
          var10009 = Ref.h(286931176286176762L, var24, var25);
 
          try {
@@ -110,7 +110,7 @@ public class AY implements Comparator {
             Collator var49 = (Collator)Ref.g(598941198702022948L, var28);
             String var10012 = (String)(Registry.emptyArgs());
             long var31 = 286931176286176762L;
-            Object[] var30 = var10012;
+            Object var30 = var10012;
             var10012 = Ref.h(286931176286176762L, var30, var31);
 
             try {
@@ -121,7 +121,7 @@ public class AY implements Comparator {
 
             String var10014 = (String)(Registry.emptyArgs());
             long var33 = 286931176286176762L;
-            Object[] var32 = var10014;
+            Object var32 = var10014;
             var10014 = Ref.h(286931176286176762L, var32, var33);
 
             try {
@@ -141,9 +141,9 @@ public class AY implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((DefaultMutableTreeNode)var1, (DefaultMutableTreeNode)var2);
+      Object var10001 = Registry.packArgs((DefaultMutableTreeNode)var1, (DefaultMutableTreeNode)var2);
       long var4 = 498948069816695566L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(498948069816695566L, var3, var4);
 
       try {

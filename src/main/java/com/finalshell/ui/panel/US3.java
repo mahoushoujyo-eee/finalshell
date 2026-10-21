@@ -1,6 +1,6 @@
 package com.finalshell.ui.panel;
 
-import com.finalshell.core.CK;
+import com.finalshell.core.ZModemTransfer;
 import com.finalshell.core.L1;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
@@ -68,6 +68,7 @@ public class US3 extends JPanel implements ListCellRenderer {
    }
 
    public void K(L1 var1, JList var2, int var3) {
+      int var33;
       ClearListDialog.i$arrString();
       long var8 = 549061292458223709L;
       Ref.s(549061292458223709L, var1, var8);
@@ -75,7 +76,7 @@ public class US3 extends JPanel implements ListCellRenderer {
       JLabel var10003 = (JLabel)Ref.g(350626890368158221L, var9);
       String var10005 = (String)(Registry.emptyArgs());
       long var12 = 542058094445767607L;
-      Object[] var11 = var10005;
+      Object var11 = var10005;
       var10005 = Ref.h(542058094445767607L, var11, var12);
 
       try {
@@ -86,10 +87,10 @@ public class US3 extends JPanel implements ListCellRenderer {
 
       var1.setText(var10005);
       JLabel var4 = var10003;
-      if (!CK.X) {
+      if (!ZModemTransfer.X) {
          String var10004 = (String)(Registry.emptyArgs());
          long var14 = 542058094445767607L;
-         Object[] var13 = var10004;
+         Object var13 = var10004;
          var10004 = Ref.h(542058094445767607L, var13, var14);
 
          try {
@@ -102,7 +103,7 @@ public class US3 extends JPanel implements ListCellRenderer {
          label54: {
             String var5 = var10004;
             var6 = 3;
-            int var33 = var6;
+            var33 = var6;
             int var39 = var5.length() - 1;
             if (var4 == null) {
                if (var6 <= var39) {
@@ -121,7 +122,7 @@ public class US3 extends JPanel implements ListCellRenderer {
          new StringBuilder();
          String var10008 = (String)(Registry.emptyArgs());
          long var18 = 542058094445767607L;
-         Object[] var17 = var10008;
+         Object var17 = var10008;
          var10008 = Ref.h(542058094445767607L, var17, var18);
 
          try {
@@ -146,7 +147,7 @@ public class US3 extends JPanel implements ListCellRenderer {
 
       Icon var34 = (Icon)(Registry.emptyArgs());
       long var22 = 587854171453059645L;
-      Object[] var21 = var34;
+      Object var21 = var34;
       var34 = Ref.h(587854171453059645L, var21, var22);
 
       try {
@@ -170,6 +171,7 @@ public class US3 extends JPanel implements ListCellRenderer {
 
    @Override
    public Component getListCellRendererComponent(JList var1, Object var2, int var3, boolean var4, boolean var5) {
+      boolean var36;
       Object var7 = null;
       String[] var10000 = ClearListDialog.i$arrString();
       Object var8 = null;
@@ -224,9 +226,9 @@ public class US3 extends JPanel implements ListCellRenderer {
             if (var10001 != null && var6 == null) {
                Object var20 = 549061292458223709L;
                Ref.g(549061292458223709L, var20);
-               Object[] var10003 = Registry.emptyArgs();
+               Object var10003 = Registry.emptyArgs();
                long var23 = 456080764218192918L;
-               Object[] var22 = var10003;
+               Object var22 = var10003;
                var10003 = Ref.h(456080764218192918L, var22, var23);
 
                try {
@@ -1104,6 +1106,7 @@ var13 = new Point((int)this, ((JLabel)Ref.g(350626890368158221L, var30)).getPref
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "\u0094N´Ü:\u001edSNÕÜ¯r.Yé\u0093tÙ¤ÑAy.º\u0004Dvá]";
@@ -1118,7 +1121,6 @@ var13 = new Point((int)this, ((JLabel)Ref.g(350626890368158221L, var30)).getPref
          byte var10002 = -1;
 
          while (true) {
-      int var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

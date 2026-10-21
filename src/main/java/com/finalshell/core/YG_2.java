@@ -174,6 +174,7 @@ public class YG_2 extends Y2 {
 
    @Override
    public void O(Graphics2D var1, JScrollBar var2, Rectangle var3) {
+      PF3 var6;
       int var4 = Yp2.T();
       YG_2 var10000 = this;
       if (var4 != 0) {
@@ -185,7 +186,7 @@ public class YG_2 extends Y2 {
       }
 
       PF3 var5 = var10000.H(var2);
-      PF3 var6 = var5;
+      var6 = var5;
       if (var4 != 0) {
          if (var5 == null) {
             return;
@@ -242,6 +243,7 @@ public class YG_2 extends Y2 {
 
    @Override
    public void Z(Graphics2D var1, JScrollBar var2, Rectangle var3) {
+      PF3 var6;
       int var4 = Yp2.T();
       YG_2 var10000 = this;
       if (var4 != 0) {
@@ -253,7 +255,7 @@ public class YG_2 extends Y2 {
       }
 
       PF3 var5 = var10000.x(var2);
-      PF3 var6 = var5;
+      var6 = var5;
       if (var4 != 0) {
          if (var5 == null) {
             return;
@@ -318,6 +320,9 @@ public class YG_2 extends Y2 {
    }
 
    public PF3 Q(JScrollBar var1) {
+      YG_2 var3;
+      YG_2 var6;
+      boolean var7;
       int var2;
       int var4;
       label106: {
@@ -417,10 +422,10 @@ public class YG_2 extends Y2 {
             return var3.I;
          }
 
-         var4 = var3.P;
+         var4 = (var3.P) ? 1 : 0;
       }
 
-      if (var4) {
+      if (var4 != 0) {
          if (var2 != 0) {
             return this.I;
          }

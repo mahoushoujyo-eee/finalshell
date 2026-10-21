@@ -69,11 +69,13 @@ public class KL implements Cv4 {
 
    @Override
    public int k(int var1) {
+      int var11;
+      Dl2_2 var6;
       int var3 = var1 >> a(28431, 2962714523201726293L) & a(17218, 8006683838712597275L);
       int var4 = var1 >> a(2622, 1779180797538861675L) & a(11760, 1976203159395706273L);
       int var5 = var1 & a(11760, 1976203159395706273L);
       String[] var10000 = W5.q();
-      Dl2_2 var6 = this.k;
+      var6 = this.k;
       String[] var2 = var10000;
       int var7 = 0;
 
@@ -140,12 +142,14 @@ public class KL implements Cv4 {
    }
 
    public void e(int var1) {
+      int var11;
+      Dl2_2 var6;
       String[] var10000 = W5.q();
       int var3 = var1 >> a(28431, 2962714523201726293L) & a(11760, 1976203159395706273L);
       String[] var2 = var10000;
       int var4 = var1 >> a(2622, 1779180797538861675L) & a(11760, 1976203159395706273L);
       int var5 = var1 & a(11760, 1976203159395706273L);
-      Dl2_2 var6 = this.k;
+      var6 = this.k;
       int var7 = 0;
 
       while (true) {
@@ -156,7 +160,7 @@ public class KL implements Cv4 {
                break;
             }
 
-            int var11 = var3 & var9;
+            var11 = var3 & var9;
             if (var2 != null) {
                if (var11 != 0) {
                   var10 += 4;
@@ -239,6 +243,8 @@ public class KL implements Cv4 {
    }
 
    public void N(int var1) {
+      Dl2_2 var11;
+      Dl2_2 var6;
       String[] var10000 = W5.q();
       int var3 = 4;
       String[] var2 = var10000;
@@ -269,7 +275,7 @@ public class KL implements Cv4 {
                   int var5 = var10;
 
                   while (var5 < var4.size()) {
-                     Dl2_2 var6 = (Dl2_2)var4.elementAt(var5);
+                     var6 = (Dl2_2)var4.elementAt(var5);
                      label66:
                      if (var2 != null) {
                         var9 = var6.r;
@@ -284,7 +290,6 @@ public class KL implements Cv4 {
                               while (var7 < a(2622, 1779180797538861675L)) {
                                  Dl2_2 var8 = var6.e[var7];
                                  if (var2 != null) {
-      Dl2_2 var11;
                                     var11 = var8;
                                     if (var2 == null) {
                                        break label79;
@@ -310,7 +315,6 @@ public class KL implements Cv4 {
                                  }
 
                                  if (var2 == null) {
-      Dl2_2 var11;
                                     break;
                                  }
                               }
@@ -406,6 +410,7 @@ public class KL implements Cv4 {
    }
 
    public int T(Dl2_2 var1, int[] var2, int var3) {
+      int var6;
       String[] var4 = W5.q();
       int var10000 = this.d;
       if (var4 != null) {
@@ -413,7 +418,7 @@ public class KL implements Cv4 {
             this.N(this.Y);
          }
 
-         var10000 = var1.S;
+         var10000 = (var1.S) ? 1 : 0;
       }
 
       if (var4 != null) {
@@ -432,7 +437,7 @@ public class KL implements Cv4 {
          var10000 = 0;
       }
 
-      int var6 = var10000;
+      var6 = var10000;
 
       while (var6 < a(2622, 1779180797538861675L)) {
          label31: {
@@ -463,6 +468,7 @@ public class KL implements Cv4 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -279) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1243,7 +1249,7 @@ public class KL implements Cv4 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1277,8 +1283,11 @@ public class KL implements Cv4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var11;
+      char[] var33;
+      long[] var6;
       String[] var13 = new String[4];
-      int var11 = 0;
+      var11 = 0;
       String var10 = "'\u0019(]»4Üé\u000f\u0089Q\u001c\u0014_\u0007öä\u000e×R¥\u008b\u0098\u0015Ð\u0094¿8Ãf\u0011Èí±îÿZRk\u0099";
       int var12 = "'\u0019(]»4Üé\u000f\u0089Q\u001c\u0014_\u0007öä\u000e×R¥\u008b\u0098\u0015Ð\u0094¿8Ãf\u0011Èí±îÿZRk\u0099".length();
       char var9 = 11;
@@ -1369,7 +1378,7 @@ public class KL implements Cv4 {
                      a = var13;
                      b = new String[4];
                      long var0 = 3331610212621504399L;
-                     long[] var6 = new long[13];
+                     var6 = new long[13];
                      int var3 = 0;
                      String var4 = "Ûõ\u0082|Ï\u0014 ÿÊ¸7~¢\u0097jÑÏ\u001dÔzE8V(Ïöæ7\u001fësãX\t×Ô\u001aëÚYczÙ\u0094qÞMìÂbº÷=ú0s\u008bZUWì2}V\u00876\u0099i\u0090\u0081ßr>ûb¸\u0086\r\u0004kÜµXOS\n(Ê";
                      int var5 = "Ûõ\u0082|Ï\u0014 ÿÊ¸7~¢\u0097jÑÏ\u001dÔzE8V(Ïöæ7\u001fësãX\t×Ô\u001aëÚYczÙ\u0094qÞMìÂbº÷=ú0s\u008bZUWì2}V\u00876\u0099i\u0090\u0081ßr>ûb¸\u0086\r\u0004kÜµXOS\n(Ê"
@@ -1455,7 +1464,6 @@ public class KL implements Cv4 {
       }
    }
 }
-
 
 
 

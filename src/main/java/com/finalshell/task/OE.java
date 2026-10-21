@@ -2,15 +2,15 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class OE implements Runnable {
    public final DefaultMutableTreeNode n;
-   public final Connection5 t;
+   public final ImportExportPanel t;
 
-   public OE(Connection5 var1, DefaultMutableTreeNode var2) {
+   public OE(ImportExportPanel var1, DefaultMutableTreeNode var2) {
       this.t = var1;
       this.n = var2;
    }

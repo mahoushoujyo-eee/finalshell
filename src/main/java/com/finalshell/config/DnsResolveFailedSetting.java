@@ -1,8 +1,8 @@
 package com.finalshell.config;
 
-import com.finalshell.core.ConnectTimeout;
+import com.finalshell.core.HandshakeTimeoutMonitor;
 import com.finalshell.core.Jy2;
-import com.finalshell.network.Tunnel;
+import com.finalshell.network.TunnelConnection;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.Inet4Address;
@@ -24,7 +24,7 @@ public class DnsResolveFailedSetting {
    public MacAddress F;
    public Inet4Address W;
    public PcapHandle h;
-   public Tunnel f;
+   public TunnelConnection f;
    public String l = "";
    public String Y = a(-17268, 13934);
    public String U = null;
@@ -38,7 +38,7 @@ public class DnsResolveFailedSetting {
    public Random y = new Random();
    public boolean j = false;
    public short d;
-   public ConnectTimeout Z = null;
+   public HandshakeTimeoutMonitor Z = null;
    public DnsResolveFailedSetting b;
    public Thread q;
    public boolean I = true;
@@ -57,7 +57,7 @@ public class DnsResolveFailedSetting {
       this.b = this;
       this.j = var1;
       this.s = var2;
-      this.Z = new ConnectTimeout(this);
+      this.Z = new HandshakeTimeoutMonitor(this);
    }
 
    public void I$void() throws Exception {
@@ -2047,6 +2047,7 @@ public class DnsResolveFailedSetting {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var46;
       String[] var21 = new String[21];
       int var19 = 0;
       String var18 = "î5%\u0094/r\u008f\u0014\u009eFþ5à)g\u000bx\u00104ØÄ\u009díoÙ}\u0093ØV\u0082Ì;Ïk\bW\u008dO\u0092J\u008aXf\t\u0090\u0004a\u0090Ä©±<|\u0002#>\b\u008dº¿v\u0089R6¥\u0003\u0015Èè\u0010O)\u0088\u0083èûc|\u0093=½þ<!\u008en/\u0013/gXFµ¢q=ª\u001fóå×\u0093\u0014`9á_\u009e>\u001e\u0014\u0018ÎhÆ¨*æ\fõ\u0014vn\u0010I\u0094ë A`\u009d\u0015\u000fb\u0010坙吂覢松変贜\u0099譸桲枭ÐQñ讐翤r\u0005闾廯丌箫ÿ\u0003¸Q]\r,ïAÐÁ9'\u0097F÷Æû°\u0007\u0091ãX Îä8\u0007\u001aÂ«\u009f B!8Ñ\\!%Um\u0006\u0094©/\u0089\u0083®\u001aD$\u008c\u0092¤®¸\u0005öÆó\u0084OÐE\u0013c\u0085\u0014\f`fóaó\u0088´¯\u0086º\u0010^ÛééøøÈþ\u0089ÇY\u0003ðÔÚ\u0007刬帓阔邖夓趺×\u001e½i¬\u0083ä¹u$ol®\u008d\u001f§\u00855âëå\u001dù¦¸ÇÜ#Ú$\u008bÇ";
@@ -2063,7 +2064,6 @@ public class DnsResolveFailedSetting {
          byte var10002 = -1;
 
          while (true) {
-      char[] var46;
             label83: {
                char[] var54 = var10001.toCharArray();
                int var10004 = var54.length;

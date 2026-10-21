@@ -51,6 +51,7 @@ public class G52 extends GT3 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int var30;
       int var6 = 0;
       String[] var10000 = W5.q();
       short[][] var7 = new short[3][var1];
@@ -86,7 +87,6 @@ public class G52 extends GT3 {
 
          label124:
          while (var29 < var2) {
-      int var30;
             label121: {
                label139: {
                   var30 = var11;
@@ -278,6 +278,7 @@ public class G52 extends GT3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long var30;
       char[] var10003 = "\u007f{\u0012\u001a<}<Ng\u0002\u000bxU<\u00139I".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -467,7 +468,7 @@ public class G52 extends GT3 {
                   byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
                   long[] var10000 = var6;
                   var21 = var3++;
-                  long var30 = ((long)var7[0] & 255L) << 56
+                  var30 = ((long)var7[0] & 255L) << 56
                      | ((long)var7[1] & 255L) << 48
                      | ((long)var7[2] & 255L) << 40
                      | ((long)var7[3] & 255L) << 32

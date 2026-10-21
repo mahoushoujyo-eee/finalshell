@@ -14,15 +14,16 @@ public class Kh4 implements Runnable {
 
    @Override
    public void run() {
+      boolean var11;
       Object var1 = 130967415689204029L;
       Ref.g(130967415689204029L, var1);
       Object var3 = 288736546242913911L;
       Registry.packArgs(Ref.g(288736546242913911L, var3));
       long var5 = 385643251219565463L;
       Ref.h2(385643251219565463L, var5);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var8 = 613805675130464613L;
-      Object[] var7 = var10004;
+      Object var7 = var10004;
       var10004 = Ref.h(613805675130464613L, var7, var8);
 
       try {

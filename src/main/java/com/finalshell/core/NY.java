@@ -19,7 +19,7 @@ public class NY {
    public Color F() {
       Color var10001;
       Object var1 = 294166995888460100L;
-      super(((XF3)Ref.g(294166995888460100L, var1)).p());
+      // [VF-super] super(((XF3)Ref.g(294166995888460100L, var1)).p());
       return var10001;
    }
 
@@ -46,7 +46,7 @@ public class NY {
    public Color L() {
       Color var10001;
       Object var1 = 572052182183869459L;
-      super(((XF3)Ref.g(572052182183869459L, var1)).p());
+      // [VF-super] super(((XF3)Ref.g(572052182183869459L, var1)).p());
       return var10001;
    }
 
@@ -63,7 +63,7 @@ public class NY {
    public Color N$Color() {
       Color var10001;
       Object var1 = 435798884234313026L;
-      super(((XF3)Ref.g(435798884234313026L, var1)).p());
+      // [VF-super] super(((XF3)Ref.g(435798884234313026L, var1)).p());
       return var10001;
    }
 
@@ -90,7 +90,7 @@ public class NY {
    public Color m() {
       Color var10001;
       Object var1 = 502617156715439076L;
-      super(((XF3)Ref.g(502617156715439076L, var1)).p());
+      // [VF-super] super(((XF3)Ref.g(502617156715439076L, var1)).p());
       return var10001;
    }
 

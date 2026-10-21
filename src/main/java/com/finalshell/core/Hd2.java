@@ -620,6 +620,7 @@ public abstract class Hd2 implements C_f_2 {
    }
 
    public Map V$Map() {
+      LinkedHashMap var8;
       String[] var1 = RG_2.C();
       Hd2 var10000 = this;
       if (var1 != null) {
@@ -638,7 +639,6 @@ public abstract class Hd2 implements C_f_2 {
 
       while (true) {
          if (var6 < var5) {
-      Object var8;
             U3_3 var7 = var4[var6];
             var8 = var3;
             if (var1 == null) {
@@ -1769,6 +1769,7 @@ public abstract class Hd2 implements C_f_2 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 24614) & 65535;
       if (w[var2] == null) {
          char[] var3 = i[var2].toCharArray();
@@ -2555,7 +2556,7 @@ public abstract class Hd2 implements C_f_2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -2583,6 +2584,7 @@ public abstract class Hd2 implements C_f_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var39;
       String[] var13 = new String[26];
       int var11 = 0;
       String var10 = "¬Â\u0002ðË\u0002Ù)\u0002¼ \u00023\u001e\u0002Ëq\u0002K¶\u0002\u0081Æ\u0012¾_ci\u001aVÛÿ9Åx&K±¼¿:\u0010\u0002ªÄ\u0002\u009eå\u0002³u Ëd#Í\u0000hÇÞHì\u0093¤$¾>RêC5Å\u0083\u008a$ü=[¢\\\u0081\u009e\u0082\u001e\u0002\u0010Q\u0012î(i\u0087[\u008bóD<²ØÈ_l>\u0004jg\n)þd @É;(\u0080\u0098\u00022L\u0002\u0081*\u0016\r/\u0015gÔ\u0097\u0007ÉFø´\u000eÚ%íM6_Ë&\u008b\u0080$Î\u0080Ý\u0005iãÉ+ÜZâ\\Í\u0015n\fgÁ\u0092\u009cÖ×%«ë\u0083\btõÝGæùè$\u009d\u0002l\u0085\u0015\u008f6EDÞóCK*S\u001aø\tâ0vÔ¶áq_\u0002\u001c6\u0002gÓ";
@@ -2598,7 +2600,6 @@ public abstract class Hd2 implements C_f_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var39;
             label80: {
                char[] var45 = var10001.toCharArray();
                int var10004 = var45.length;

@@ -22,7 +22,7 @@ public class Wj2 implements ActionListener {
       Ref.g(412103333330765630L, var5);
       String var10003 = (String)(Registry.emptyArgs());
       long var8 = 445746235927917450L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(445746235927917450L, var7, var8);
 
       try {

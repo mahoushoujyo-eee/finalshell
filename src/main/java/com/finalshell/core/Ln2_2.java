@@ -24,7 +24,7 @@ public class Ln2_2 extends Lz2_2 {
       byte var5;
       int var12;
       String var10000 = XT3.l();
-      var5 = (var3.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      var5 = (byte)((var3.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       var4 = var10000;
       var12 = var3.w();
       label103:

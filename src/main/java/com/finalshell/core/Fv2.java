@@ -27,6 +27,7 @@ public class Fv2 {
    }
 
    public void g() {
+      String var20;
       W2.F();
       Object var6 = 405866797375435100L;
       Object var2 = ((String)Ref.g(405866797375435100L, var6)).indexOf(a(-5431, -24562)) + 3;
@@ -61,7 +62,7 @@ public class Fv2 {
             Object var18 = 390578034059240075L;
             String var10007 = ((String)Ref.g(390578034059240075L, var18)).replace(a(-5434, -1709), "秒");
             long var21 = 390578034059240075L;
-            String var20 = var10007;
+            var20 = var10007;
             Ref.s(390578034059240075L, var20, var21);
             Object var22 = 390578034059240075L;
             String var10009 = ((String)Ref.g(390578034059240075L, var22)).replace(a(-5428, -19318), "分");
@@ -940,6 +941,7 @@ public class Fv2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[11];
       int var3 = 0;
       String var2 = "Ñ\u0080\u001c¦\u0006cªu+©\u0003\u0005à \u009c'a\u0004yc6Ó\u000eùõ\bÐ |¨\u0084é\u008fî\u0015Ê¿\r\u0086\u0004çî]»\u0017|\u001e\u0090\u0010ö\\\u0002+¬\u0004¡9ý\u0015\u0003\u0001W\u0006";
@@ -955,7 +957,6 @@ public class Fv2 {
          byte var10002 = -1;
 
          while (true) {
-      String var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

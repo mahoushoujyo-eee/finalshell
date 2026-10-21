@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 
 public class YY3 implements Runnable {
    public String I;
-   public final Address L;
+   public final FileBrowserAddressBar L;
    public static String a;
 
-   public YY3(Address var1) {
+   public YY3(FileBrowserAddressBar var1) {
       this.L = var1;
       long var3 = 418566300718631713L;
       Object var2 = null;

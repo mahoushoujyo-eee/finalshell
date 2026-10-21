@@ -2,7 +2,7 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.core.KC;
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -24,7 +24,7 @@ public class Xp2 implements KeyListener {
 
    @Override
    public void keyPressed(KeyEvent var1) {
-      int[] var2 = Connection4.I();
+      int[] var2 = ConnectionInfoPanel.I();
       if (var2 != null && var1.getKeyCode() == (int)a) {
          Object var3 = 180777725202577610L;
          ((KC)Ref.g(180777725202577610L, var3)).stopCellEditing();

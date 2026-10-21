@@ -31,6 +31,7 @@ public class NN3 extends MouseAdapter {
    }
 
    public void F(MouseEvent var1) {
+      NN3 var8;
       String[] var10000 = CI.c();
       int var3 = Yc2_2.q(this.t).locationToIndex(var1.getPoint());
       String[] var2 = var10000;

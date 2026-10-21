@@ -3,14 +3,14 @@ package com.finalshell.task;
 import com.finalshell.core.Fo4;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bd2 implements Runnable {
-   public final U X;
+   public final MainFrame X;
    public final Fo4 F;
 
-   public Bd2(Fo4 var1, U var2) {
+   public Bd2(Fo4 var1, MainFrame var2) {
       this.F = var1;
       this.X = var2;
    }

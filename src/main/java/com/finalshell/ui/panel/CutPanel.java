@@ -178,6 +178,7 @@ public class CutPanel extends JPopupMenu implements MouseListener, ActionListene
 
    @Override
    public void show(Component var1, int var2, int var3) {
+      boolean var12;
       int var4;
       JTextComponent var5;
       int var11;
@@ -213,7 +214,7 @@ public class CutPanel extends JPopupMenu implements MouseListener, ActionListene
       boolean var7;
       label91: {
          label106: {
-            var7 = (((((boolean)var11) != 0) != 0) != 0) != 0;
+            var7 = (var11) != 0;
             var12 = var5.isEnabled();
             if (var4 != 0) {
                if (!var12) {
@@ -1302,6 +1303,7 @@ public class CutPanel extends JPopupMenu implements MouseListener, ActionListene
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var38;
       String[] var17 = new String[6];
       int var15 = 0;
       String var14 = "粠超\u0002剸阈\u0002奌刜\u0010;G\u0017åKÖ4µ¿S(²Ø[OH";
@@ -1316,7 +1318,6 @@ public class CutPanel extends JPopupMenu implements MouseListener, ActionListene
          byte var10002 = -1;
 
          while (true) {
-      char[] var38;
             label65: {
                char[] var45 = var10001.toCharArray();
                int var10004 = var45.length;

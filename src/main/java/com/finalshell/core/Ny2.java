@@ -20,6 +20,12 @@ public final class Ny2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public int k(int[] var1, int var2, int var3, int var4, int[] var5, int[] var6, int[] var7, int[] var8, int[] var9, int[] var10, int[] var11) {
+      int var39;
+      int var40;
+      int var42;
+      int var44;
+      int var46;
+      int var49;
       int var22 = 0;
       int[] var10000 = Nm4.g();
       int var17 = var3;
@@ -28,7 +34,7 @@ public final class Ny2 {
       while (true) {
          this.f[var1[var2 + var22]]++;
          var22++;
-         int var39 = --var17;
+         var39 = --var17;
 
          while (var39 == 0) {
             var39 = this.f[0];
@@ -56,8 +62,6 @@ public final class Ny2 {
                      if (var40 == 0 || var12 != null) {
                         var18++;
                         if (var12 == null) {
-      int var40;
-      int var40;
                            continue;
                         }
                      }
@@ -208,6 +212,7 @@ public final class Ny2 {
                                  while (var13-- != 0) {
                                     while (true) {
                                        if (var19 > var24 + var20) {
+      int var48;
                                           var16++;
                                           var24 += var20;
                                           var27 = var15 - var24;
@@ -1515,6 +1520,8 @@ public final class Ny2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var39;
+      byte var48;
       String[] var13 = new String[7];
       int var11 = 0;
       String var10 = "~\u0014\u001azôªH>b\u0099¢K\u000e\u0088\u0081\u0093VhÙ5ü\u0080þ»\u001ek\u0099¸Ë \u009cÂø3A\u0088XKä8ê]9\u001c½VH\u009a,\u0084\u008a\u0096}=\b#4qSÖÝ?m\u008cÆÏ6\u0081\u008cÌÖ©\f¢0.1ï¼\u0099âiå\u0080/gR±É¾\u001a Æ¶\u0093V \u0007\\Ýîy\u0095n\u008bq.ma\u0006 >Ðú\t\u0081Ïì¯h+$t9'Þ(Îû¶!ÓüÉ\u0002kË[Iò[ñÙÜâÅ\u008f\"n=BÔ¤«å)_\u0013u]·\u0003\u009b\r";
@@ -1534,7 +1541,7 @@ public final class Ny2 {
                char[] var45 = var10001.toCharArray();
                int var10004 = var45.length;
                int var14 = 0;
-               byte var48 = var10000;
+               var48 = var10000;
                var39 = var45;
                int var30 = var10004;
                byte var55;
@@ -3461,7 +3468,6 @@ public final class Ny2 {
       }
    }
 }
-
 
 
 

@@ -5,10 +5,10 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class G implements Fb4 {
-   public final CK e;
+   public final ZModemTransfer e;
    public final SelectUploadFile N;
 
-   public G(SelectUploadFile var1, CK var2) {
+   public G(SelectUploadFile var1, ZModemTransfer var2) {
       this.N = var1;
       this.e = var2;
    }

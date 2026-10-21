@@ -10,29 +10,29 @@ public abstract class Fv2_2 {
    public static String[] a;
    public static String[] b;
 
-   int x(char[] var1, int var2, int var3) throws IOException;
+   int x(char[] var1, int var2, int var3) throws IOException { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void q(byte[] var1) throws IOException;
+   void q(byte[] var1) throws IOException { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void E(String var1) throws IOException;
+   void E(String var1) throws IOException { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   boolean K();
+   boolean K() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
    void O(@NotNull OT var1) {
       this.c(new Dimension(var1.R(), var1.c()));
    }
 
-   int f() throws InterruptedException;
+   int f() throws InterruptedException { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   boolean A() throws IOException;
+   boolean A() throws IOException { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   String b();
+   String b() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void a();
+   void a() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   boolean l();
+   boolean l() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void R(boolean var1);
+   void R(boolean var1) { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
    @Deprecated
    void c(@NotNull Dimension var1) {
@@ -51,19 +51,19 @@ public abstract class Fv2_2 {
       return true;
    }
 
-   void m(ConnectionProperty var1);
+   void m(ConnectionProperty var1) { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   ConnectionProperty n();
+   ConnectionProperty n() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void M(Lv4_2 var1);
+   void M(Lv4_2 var1) { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   public Lv4_2 E();
+   public Lv4_2 E() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   ConnectHost e();
+   ConnectHost e() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void v() throws IOException;
+   void v() throws IOException { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void F(byte[] var1) throws IOException;
+   void F(byte[] var1) throws IOException { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
    static {
       __vfClinit__();

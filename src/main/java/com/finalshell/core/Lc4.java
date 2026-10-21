@@ -16,7 +16,7 @@ public class Lc4 implements Lf2 {
       int var10000 = (com.finalshell.ui.model.J2.P()) ? 1 : 0;
       int var7 = 0;
       int var8 = var4.length();
-      boolean var6 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var6 = (var10000) != 0;
       var10000 = (var4 instanceof com.finalshell.ui.model.Q2) ? 1 : 0;
       if (!var6) {
          if (var10000 != 0) {

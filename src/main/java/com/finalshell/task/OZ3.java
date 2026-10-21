@@ -4,17 +4,17 @@ import com.finalshell.core.Lv4_2;
 import com.finalshell.core.Yl4;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
-import com.finalshell.ui.panel.FilePanel;
+import com.finalshell.ui.frame.MainFrame;
+import com.finalshell.ui.panel.FileCommandPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class OZ3 implements Runnable {
-   public final FilePanel h;
+   public final FileCommandPanel h;
    public final Yl4 M;
-   public final Lv4_2 U;
-   public final U E;
+   public final Lv4_2 MainFrame;
+   public final MainFrame E;
 
-   public OZ3(U var1, FilePanel var2, Yl4 var3, Lv4_2 var4) {
+   public OZ3(MainFrame var1, FileCommandPanel var2, Yl4 var3, Lv4_2 var4) {
       this.E = var1;
       this.h = var2;
       this.M = var3;

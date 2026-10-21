@@ -2,15 +2,15 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.core.Uo2;
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.Copy2;
+import com.finalshell.ui.panel.EnvironmentVariablePanel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JTable;
 
 public class CN extends MouseAdapter {
-   public final Copy2 I;
+   public final EnvironmentVariablePanel I;
 
-   public CN(Copy2 var1) {
+   public CN(EnvironmentVariablePanel var1) {
       this.I = var1;
    }
 

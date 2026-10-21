@@ -19,14 +19,13 @@ public class Ze2 extends ZS implements Ak2, X4, FW {
 
    @Override
    public void q(NL3 var1, Object var2, DL3 var3) throws IOException {
+      SimpleDateFormat var12;
       String var10000 = Nv4.o();
       YM3 var5 = var1.w;
       String var4 = var10000;
       String var6 = var3.Y();
       Calendar var7 = (Calendar)var2;
       if (var6.equals(a(12855, -31174))) {
-      SimpleDateFormat var12;
-      SimpleDateFormat var12;
          long var11 = var7.getTimeInMillis() / e;
          var5.v((int)var11);
       } else {
@@ -1443,9 +1442,11 @@ public class Ze2 extends ZS implements Ak2, X4, FW {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var12;
+      char[] var36;
       String[] var15 = new String[6];
       int var13 = 0;
-      String var12 = "v.ÑRn`4$\u0017\u0010o©§JÆ\u009fÊ,L«ë¯\u001fúwþ¤ö¸¶Å\t\u0004ÊÙG%0/\u0017\u0016@\u0019ýËýw°74$§\u001e\u000e\nOo°IUÇÐÈê\u0003õFÁ'Ön«\u001bP4\u0093@%\u0004bd¬AQ·\f";
+      var12 = "v.ÑRn`4$\u0017\u0010o©§JÆ\u009fÊ,L«ë¯\u001fúwþ¤ö¸¶Å\t\u0004ÊÙG%0/\u0017\u0016@\u0019ýËýw°74$§\u001e\u000e\nOo°IUÇÐÈê\u0003õFÁ'Ön«\u001bP4\u0093@%\u0004bd¬AQ·\f";
       int var14 = "v.ÑRn`4$\u0017\u0010o©§JÆ\u009fÊ,L«ë¯\u001fúwþ¤ö¸¶Å\t\u0004ÊÙG%0/\u0017\u0016@\u0019ýËýw°74$§\u001e\u000e\nOo°IUÇÐÈê\u0003õFÁ'Ön«\u001bP4\u0093@%\u0004bd¬AQ·\f"
          .length();
       char var11 = '\b';
@@ -1627,7 +1628,6 @@ public class Ze2 extends ZS implements Ak2, X4, FW {
       }
    }
 }
-
 
 
 

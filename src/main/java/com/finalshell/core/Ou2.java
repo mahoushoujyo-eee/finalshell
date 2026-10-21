@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Random;
@@ -14,7 +14,7 @@ public class Ou2 {
    public int H;
    public InetAddress K;
    public int V;
-   public PingMessageR B;
+   public PingMessageReceiver B;
    public boolean c = false;
    public boolean F = false;
    public boolean p = false;
@@ -55,7 +55,7 @@ public class Ou2 {
    }
 
    public boolean w() {
-      String[] var1 = PingMessageR.N();
+      String[] var1 = PingMessageReceiver.N();
       int var10000 = (this.y()) ? 1 : 0;
       if (var1 != null) {
          var10000 = var10000 != 0 ? 0 : 1;
@@ -113,7 +113,7 @@ public class Ou2 {
       return this.c;
    }
 
-   public void A(PingMessageR var1) {
+   public void A(PingMessageReceiver var1) {
       this.B = var1;
    }
 

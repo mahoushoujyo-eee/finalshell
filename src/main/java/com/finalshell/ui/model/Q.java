@@ -18,7 +18,7 @@ public class Q implements Comparator {
       Collator var10001 = (Collator)Ref.g(189199077318277082L, var3);
       String var10003 = (String)(Registry.emptyArgs());
       long var6 = 179612178163941306L;
-      Object[] var5 = var10003;
+      Object var5 = var10003;
       var10003 = Ref.h(179612178163941306L, var5, var6);
 
       try {
@@ -29,7 +29,7 @@ public class Q implements Comparator {
 
       String var10005 = (String)(Registry.emptyArgs());
       long var8 = 179612178163941306L;
-      Object[] var7 = var10005;
+      Object var7 = var10005;
       var10005 = Ref.h(179612178163941306L, var7, var8);
 
       try {
@@ -43,9 +43,9 @@ public class Q implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((Tf4)var1, (Tf4)var2);
+      Object var10001 = Registry.packArgs((Tf4)var1, (Tf4)var2);
       long var4 = 356098581812760084L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(356098581812760084L, var3, var4);
 
       try {

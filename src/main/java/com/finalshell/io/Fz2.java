@@ -157,9 +157,9 @@ public class Fz2 extends Reader {
 
    @Override
    public int read() throws IOException {
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var2 = 466395161270742666L;
-      Object[] var1 = var10001;
+      Object var1 = var10001;
       var10001 = Ref.h(466395161270742666L, var1, var2);
 
       try {
@@ -631,6 +631,7 @@ public class Fz2 extends Reader {
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    @Override
    public void close() throws IOException {
+      Fz2 var12;
       Ky4[] var10000 = YT3_2.c();
       Object var2 = this.lock;
       synchronized (this.lock){} // $VF: monitorenter 
@@ -3068,10 +3069,14 @@ public class Fz2 extends Reader {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean F;
+      boolean var12;
+      boolean var21;
+      char[] var35;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "|\u0002\u008b^\b:9\u0006|Î7\u000f\u009c";
-      int var12 = "|\u0002\u008b^\b:9\u0006|Î7\u000f\u009c".length();
+      var12 = ("|\u0002\u008b^\b:9\u0006|Î7\u000f\u009c".length()) != 0;
       char var9 = 4;
       int var18 = -1;
 
@@ -3082,7 +3087,6 @@ public class Fz2 extends Reader {
          byte var10002 = -1;
 
          while (true) {
-      char[] var35;
             label80: {
                char[] var41 = var10001.toCharArray();
                int var10004 = var41.length;
@@ -3251,8 +3255,8 @@ public class Fz2 extends Reader {
                   }
 
                   var10 = "\u0086o\u0016\u007f×\r«k|\u0080\u0010¿=+\u0090H\u0004ÂR»3\u0096\u001f|m%¡¬\u008bÞ\u0007_øÂ¼lrmñ¤0\u0014çv(\u0004¤Té¤Ú\u0005¶µÊ¹¹";
-                  var12 = "\u0086o\u0016\u007f×\r«k|\u0080\u0010¿=+\u0090H\u0004ÂR»3\u0096\u001f|m%¡¬\u008bÞ\u0007_øÂ¼lrmñ¤0\u0014çv(\u0004¤Té¤Ú\u0005¶µÊ¹¹"
-                     .length();
+                  var12 = "\u0086o\u0016\u007f×\r«k|\u0080\u0010¿=+\u0090H\u0004ÂR»3\u0096\u001f|m%¡¬\u008bÞ\u0007_øÂ¼lrmñ¤0\u0014çv(\u0004¤Té¤Ú\u0005¶µÊ¹¹";
+                     // [VF] .length();
                   var9 = '\r';
                   var18 = -1;
             }

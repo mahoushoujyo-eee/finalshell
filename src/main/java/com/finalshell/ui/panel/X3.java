@@ -37,6 +37,7 @@ public class X3 extends Ky4 {
    }
 
    public void K(int var1, boolean var2) {
+      X3 var4;
       int var3 = N_2.W();
       int var10000 = this.K;
       if (var3 != 0) {
@@ -131,13 +132,14 @@ public class X3 extends Ky4 {
    }
 
    public void V() {
+      ChangeListener var4;
       ChangeEvent var2 = new ChangeEvent(this);
       int var10000 = N_2.W();
       Iterator var3 = AL_2.J((Collection)this.P).iterator();
       int var1 = var10000;
 
       while (var3.hasNext()) {
-         ChangeListener var4 = (ChangeListener)var3.next();
+         var4 = (ChangeListener)var3.next();
          var4.stateChanged(var2);
          if (var1 == 0) {
             break;
@@ -162,6 +164,7 @@ public class X3 extends Ky4 {
    }
 
    public static String b(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 10835) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -936,7 +939,7 @@ public class X3 extends Ky4 {
                var10000 = 224;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;

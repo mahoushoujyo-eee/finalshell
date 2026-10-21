@@ -14,6 +14,7 @@ public class XJ3 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var4;
       label53: {
          String var2;
          label49: {

@@ -45,6 +45,8 @@ public class KA_3 extends JPanel {
    public static Integer[] g;
 
    public KA_3(boolean var1, int var2) {
+      Integer var122;
+      long var95;
       Ky4[] var10000 = y$arrky_4();
       Registry.lookupField(123845205254103433L).setBoolean(this, false);
       Ky4[] var3 = var10000;
@@ -110,7 +112,7 @@ public class KA_3 extends JPanel {
 
       JLabel var10014 = (JLabel)(Registry.emptyArgs());
       long var35 = 548378792283868040L;
-      Object[] var34 = var10014;
+      Object var34 = var10014;
       var10014 = Ref.h(548378792283868040L, var34, var35);
 
       try {
@@ -252,7 +254,7 @@ public class KA_3 extends JPanel {
          }
 
          Color var121 = new Color(a(11581, 4175213796520227851L), a(25098, 3653145557729295167L), a(27974, 2471530896047060089L));
-         long var95 = 438252781453477248L;
+         var95 = 438252781453477248L;
          Color var94 = var121;
          Ref.s(438252781453477248L, var94, var95);
       }
@@ -277,7 +279,7 @@ public class KA_3 extends JPanel {
    public void P(int var1) {
       Object[] var10001 = Registry.packArgs(var1, false);
       long var3 = 547792367998174127L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       Ref.h(547792367998174127L, var2, var3);
 
       try {
@@ -350,6 +352,11 @@ public class KA_3 extends JPanel {
    }
 
    public void v(KV var1, LI3_2 var2, String var3) {
+      Float var102;
+      Long var107;
+      Object[] var33;
+      Integer var95;
+      Long var98;
       long var6 = 417818515784195886L;
       Ref.s(417818515784195886L, var2, var6);
       y$arrky_4();
@@ -365,9 +372,9 @@ public class KA_3 extends JPanel {
                   Object var31 = 231298203037056753L;
                   JLabel var91 = (JLabel)Ref.g(231298203037056753L, var31);
                   StringBuilder var10005 = new StringBuilder();
-                  Object[] var10007 = Registry.emptyArgs();
+                  Object var10007 = Registry.emptyArgs();
                   long var34 = 419335026051024288L;
-                  Object[] var33 = var10007;
+                  var33 = var10007;
                   var10007 = Ref.h(419335026051024288L, var33, var34);
 
                   try {
@@ -380,9 +387,9 @@ public class KA_3 extends JPanel {
                   Object var35 = 427885953337956341L;
                   JLabel var93 = (JLabel)Ref.g(427885953337956341L, var35);
                   new StringBuilder();
-                  Object[] var10009 = Registry.emptyArgs();
+                  Object var10009 = Registry.emptyArgs();
                   long var38 = 225195147661966806L;
-                  Object[] var37 = var10009;
+                  Object var37 = var10009;
                   var10009 = Ref.h(225195147661966806L, var37, var38);
 
                   try {
@@ -404,9 +411,9 @@ public class KA_3 extends JPanel {
                   var2.setText(var10009.append((String)var10010).append(" ").toString());
                   Object var41 = 632750596709798569L;
                   Ref.g(632750596709798569L, var41);
-                  Object[] var10011 = Registry.emptyArgs();
+                  Object var10011 = Registry.emptyArgs();
                   long var44 = 218205101142805647L;
-                  Object[] var43 = var10011;
+                  Object var43 = var10011;
                   var10011 = Ref.h(218205101142805647L, var43, var44);
 
                   try {
@@ -417,7 +424,7 @@ public class KA_3 extends JPanel {
 
                   var10011 = Registry.packArgs(var102 / 100.0F);
                   long var46 = 284386263758334398L;
-                  Object[] var45 = var10011;
+                  Object var45 = var10011;
                   Ref.h(284386263758334398L, var45, var46);
 
                   try {
@@ -431,7 +438,7 @@ public class KA_3 extends JPanel {
                   StringBuilder var10013 = new StringBuilder();
                   String var10015 = (String)(Registry.emptyArgs());
                   long var50 = 546705127727737678L;
-                  Object[] var49 = var10015;
+                  Object var49 = var10015;
                   var10015 = Ref.h(546705127727737678L, var49, var50);
 
                   try {
@@ -444,9 +451,9 @@ public class KA_3 extends JPanel {
                   Object var51 = 420823674583324171L;
                   JLabel var10014 = (JLabel)Ref.g(420823674583324171L, var51);
                   new StringBuilder();
-                  Object[] var10017 = Registry.emptyArgs();
+                  Object var10017 = Registry.emptyArgs();
                   long var54 = 225195147661966806L;
-                  Object[] var53 = var10017;
+                  Object var53 = var10017;
                   var10017 = Ref.h(225195147661966806L, var53, var54);
 
                   try {
@@ -470,7 +477,7 @@ public class KA_3 extends JPanel {
                   JLabel var109 = (JLabel)Ref.g(242398463597090504L, var57);
                   String var10019 = (String)(Registry.emptyArgs());
                   long var60 = 505915899939017355L;
-                  Object[] var59 = var10019;
+                  Object var59 = var10019;
                   var10019 = Ref.h(505915899939017355L, var59, var60);
 
                   try {
@@ -1415,6 +1422,7 @@ public class KA_3 extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[17];
       int var11 = 0;
       String var10 = "]×æ\u0003Pu\u0006².\u001b<ï\u0092\u000e\u0012Ôòþ9\u0010:*ìX?\u0007\u0085;\u0005\u008c\u0083&¾º\u0007\u0011,\u0095K¯¡ã\u0002凶嬱\u0002aV\u0003¤ÝZ\u000e\u0086-`Ák÷pÖ¥Ç\u0016ô E\r\u00050íÿ1êÆ\nÚõßö8\u0002吉仞\u0004W\u0089}Ã\u000e\u008c\u0011\u0016-§Ð\u009et|;B\u000e\u0083w\u0003ñÒ\u0090\u0002Ñ\u008b";
@@ -1431,7 +1439,6 @@ public class KA_3 extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      long var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

@@ -3,7 +3,7 @@ package com.finalshell.task;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.listener.ConfirmDeleteFolderListener;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class Kp4 implements Runnable {
@@ -36,7 +36,7 @@ public class Kp4 implements Runnable {
       Object var17 = 270662763281156011L;
       Object var10011 = Ref.g(270662763281156011L, var17);
       Object var19 = 305402254993059552L;
-      var10011 = Registry.packArgs(var10011, ((Connection4)Ref.g(305402254993059552L, var19)).getParent(), true);
+      var10011 = Registry.packArgs(var10011, ((ConnectionInfoPanel)Ref.g(305402254993059552L, var19)).getParent(), true);
       long var22 = 244589320073274134L;
       Object[] var21 = (Object[])var10011;
       Ref.h(244589320073274134L, var21, var22);

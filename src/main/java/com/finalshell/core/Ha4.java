@@ -27,6 +27,8 @@ public class Ha4 extends W5 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      int var20;
+      BufferedImage var34;
       int var4 = var1.getWidth();
       int var5 = var1.getHeight();
       int var6 = var1.getType();
@@ -100,7 +102,7 @@ public class Ha4 extends W5 {
                int var19 = 0;
 
                while (var19 < var11) {
-                  int var20 = var18 * var4 + var19;
+                  var20 = var18 * var4 + var19;
                   int var21 = var18;
                   int var22 = var19;
                   var33 = this.i;
@@ -156,10 +158,6 @@ public class Ha4 extends W5 {
 
                var18++;
                if (var3 != null) {
-      return var34;
-      return var34;
-      return var34;
-      return var34;
                   continue label70;
                }
             }
@@ -1015,6 +1013,7 @@ public class Ha4 extends W5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[7];
       int var3 = 0;
       String var2 = "\u0010Ã×\u0013~Ëÿ\u0089\u0082E\u0081\u0013YÛ~\n®¾\u008bÎ\u001fnBöÂË\u0004l*X.\nD×Öã´Ë7^mA\t¬¨Ë\f\u00176Cõê";

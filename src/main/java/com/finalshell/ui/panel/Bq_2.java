@@ -44,13 +44,15 @@ public class Bq_2 extends JPanel implements D9 {
    public static Integer[] d;
 
    public Bq_2(ConnectionProperty var1, SetBackgroundImagePanel var2) {
+      long var10;
+      long var6;
       this.p = var1;
       this.i = var2;
       this.setLayout(new MigLayout(a(-6775, 16814), a(-6776, -31453), ""));
       this.setOpaque(false);
       this.setBackground(new Color(0, 0, 0, 0));
       Object[] var10001 = Registry.packArgs(a(-6773, 500));
-      long var6 = 479240045929603103L;
+      var6 = 479240045929603103L;
       Object var10002 = Ref.h2(479240045929603103L, var6);
 
       try {
@@ -78,7 +80,7 @@ public class Bq_2 extends JPanel implements D9 {
       this.add(this.T, a(-6774, -21040));
       Color var4 = (Color)Registry.lookupField(430697627377283751L).get(null);
       Object[] var10003 = Registry.packArgs("\uf077");
-      long var10 = 430295779561981133L;
+      var10 = 430295779561981133L;
       Bq_2 var10004 = (Bq_2)Ref.h2(430295779561981133L, var10);
 
       try {
@@ -141,6 +143,8 @@ public class Bq_2 extends JPanel implements D9 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void s() {
+      Object var10;
+      boolean var9;
       int var10000 = ConnectionProperty.y();
       Object var2 = this.w;
       synchronized (this.w){} // $VF: monitorenter 
@@ -159,8 +163,6 @@ public class Bq_2 extends JPanel implements D9 {
                }
 
                if (!var9) {
-      T2 var9;
-      T2 var9;
                   var4 = this.a(var4);
                   this.c(var4);
                   var3 = true;
@@ -201,6 +203,7 @@ public class Bq_2 extends JPanel implements D9 {
    }
 
    public String a(String var1) {
+      String var6;
       int var10000 = ConnectionProperty.y();
       String var3 = "";
       int var4 = 0;
@@ -328,6 +331,7 @@ public class Bq_2 extends JPanel implements D9 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -6774) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1108,7 +1112,7 @@ public class Bq_2 extends JPanel implements D9 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1142,11 +1146,15 @@ public class Bq_2 extends JPanel implements D9 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var33;
+      long[] var6;
+      int var9;
       String[] var13 = new String[5];
       int var11 = 0;
-      String var10 = "\u0003:\u0099\u0017[+\u001e\u0094c}\u0000\t^e\u0002摔絵\u000bÊ¬^X+\u0018é\u008a¼øZ";
+      var10 = "\u0003:\u0099\u0017[+\u001e\u0094c}\u0000\t^e\u0002摔絵\u000bÊ¬^X+\u0018é\u008a¼øZ";
       int var12 = "\u0003:\u0099\u0017[+\u001e\u0094c}\u0000\t^e\u0002摔絵\u000bÊ¬^X+\u0018é\u008a¼øZ".length();
-      char var9 = 14;
+      var9 = 14;
       int var17 = -1;
 
       label70:
@@ -1234,7 +1242,7 @@ public class Bq_2 extends JPanel implements D9 {
                      a = var13;
                      b = new String[5];
                      long var0 = 6190212272957363958L;
-                     long[] var6 = new long[4];
+                     var6 = new long[4];
                      int var3 = 0;
                      String var4 = "rY:.Mµ\u008f:e¥\u0018)\u001dôÉ¸";
                      int var5 = "rY:.Mµ\u008f:e¥\u0018)\u001dôÉ¸".length();
@@ -1319,7 +1327,6 @@ public class Bq_2 extends JPanel implements D9 {
       }
    }
 }
-
 
 
 

@@ -60,7 +60,7 @@ public class A8 implements MouseListener {
       Ref.g(627738372728753803L, var16);
       L1 var10007 = (L1)(Registry.packArgs((int)var4));
       long var19 = 430610060651646114L;
-      Object[] var18 = var10007;
+      Object var18 = var10007;
       var10007 = Ref.h(430610060651646114L, var18, var19);
 
       try {
@@ -79,7 +79,7 @@ public class A8 implements MouseListener {
          var32 = var5;
          String var10008 = Registry.emptyArgs();
          long var21 = 542058094445767607L;
-         Object[] var20 = var10008;
+         Object var20 = var10008;
          var10008 = Ref.h(542058094445767607L, var20, var21);
 
          try {

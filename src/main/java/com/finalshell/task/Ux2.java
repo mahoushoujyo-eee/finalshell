@@ -1,15 +1,15 @@
 package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.listener.WL;
 import com.finalshell.ui.panel.AE;
 
 public class Ux2 implements Runnable {
-   public final U h;
+   public final MainFrame h;
    public static String a;
 
-   public Ux2(U var1) {
+   public Ux2(MainFrame var1) {
       this.h = var1;
    }
 

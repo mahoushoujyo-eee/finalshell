@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-public class L32 extends Ls4 {
+public class L32 extends SshKeyCodec {
    public static byte[][] C;
    public static String[] c;
    public byte[] i;
@@ -1653,7 +1653,7 @@ public class L32 extends Ls4 {
       return this.R();
    }
 
-   public static Ls4 m(Xe2 var0, UJ var1) throws Pc2 {
+   public static SshKeyCodec m(Xe2 var0, UJ var1) throws Pc2 {
       byte[][] var2 = var1.U(5, b(-900, -7610));
       byte[] var3 = var2[1];
       byte[][] var4 = Y(var2[2]);
@@ -2559,6 +2559,7 @@ public class L32 extends Ls4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[18];
       int var11 = 0;
       String var10 = "oAIÞI\r:+ÀØ=\u001fø'P\u0015Ï4Ç\u001eÚÊ\u0099+×üÍÄÑ\u001e\u00ad@\u0081?]]ß2\u009bÝ¥SÞlw\fâÞï²\u001cn\u009cieMzºÅÐ\u0005( ³B±,\u0019z¸¦ ¸ò\u009a^*\u0010\u0001\u0013,\u0094!dDZ\u009bÁô\u0085»´(RJ»\u008cá¯\bgä[{Gó^Ê\bHN¾.û_Ã\u009c\u0011\u0014¦\u009aê-Y;Eáe:\u009bX«\u0006'@\f\u0095B¿\u0099\u0014O\u0018º\f\u0011wæ\u000b\u0087ù:\u0094\u008fñ5È\u0016)u\u0013ì\u001bJya¨:ºKaÃÀrzÿÆV'k\bÖÝm\\\u0081\u0011\u008cU\u0010ëTeäÚØ\u009e.FGøoÄºò\u0012\u001cÕLxûëáA\u0083C\u009eØ_3gcn*Ò(÷Y\u0089\u009c\u0096\u001b6\u0095\u0099\u0019´\u009f2\u0005&v×D}5\u0099±\n\u0091êÖà²\u001cÏÙµÚ\u001eº\u0012Aü}\u008a:&8¶Hð¡¶Wg$Ï¾\u009a\b\u0017\u009fU\u0014\u0086\u001efw";
@@ -2574,7 +2575,6 @@ public class L32 extends Ls4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

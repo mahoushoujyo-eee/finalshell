@@ -40,6 +40,7 @@ public class I4 {
    }
 
    public byte[] p() {
+      byte[] var9;
       Ky4[] var10000 = Kj4.d();
       byte[] var2 = new byte[a(19858, 1660691168488152167L)];
       int[] var3 = new int[a(5321, 3772957331856065837L)];
@@ -66,7 +67,6 @@ public class I4 {
 
       while (true) {
          if (var5 < a(5321, 3772957331856065837L)) {
-      byte[] var9;
             int var6 = var3[var5];
             var2[var4++] = (byte)this.m[var6][0];
             var2[var4++] = (byte)this.m[var6][1];
@@ -78,7 +78,6 @@ public class I4 {
             var2[var4++] = (byte)this.m[var6][2];
             var5++;
             if (var1 != null) {
-      byte[] var9;
                continue;
             }
          }
@@ -91,9 +90,13 @@ public class I4 {
    }
 
    public void m() {
+      int var15;
+      int var16;
+      int var17;
+      int var9;
       Ky4[] var10000 = Kj4.d();
       int var8 = 0;
-      int var9 = 0;
+      var9 = 0;
       Ky4[] var1 = var10000;
       int var2 = 0;
 
@@ -203,7 +206,7 @@ public class I4 {
          break;
       }
 
-      int var15 = var16;
+      var15 = var16;
 
       while (var15 < a(5321, 3772957331856065837L)) {
          this.q[var15] = a(15506, 8562166995979119995L);
@@ -215,6 +218,8 @@ public class I4 {
    }
 
    public void o() {
+      int var17;
+      int var18;
       Ky4[] var1 = Kj4.d();
       I4 var10000 = this;
       if (var1 != null) {
@@ -234,7 +239,7 @@ public class I4 {
       int var9 = a(12674, 6204344715817492597L);
       int var7 = a(24439, 595035805799665296L);
       int var8 = var7 >> a(10340, 4700886911163611535L);
-      int var17 = var8;
+      var17 = var8;
       if (var1 != null) {
          if (var8 <= 1) {
             var8 = 0;
@@ -396,6 +401,8 @@ public class I4 {
    }
 
    public int Q(int var1, int var2, int var3) {
+      int var17;
+      int var18;
       int var9 = a(24059, 8099749641299872775L);
       int var11 = -1;
       Ky4[] var10000 = Kj4.d();
@@ -405,7 +412,7 @@ public class I4 {
 
       label135:
       while (true) {
-         int var17 = var5;
+         var17 = var5;
 
          while (true) {
             label130: {
@@ -433,7 +440,7 @@ public class I4 {
                if (var17 < a(5321, 3772957331856065837L)) {
                   int[] var10 = this.m[var5];
                   int var7 = var10[1] - var2;
-                  int var18 = var7;
+                  var18 = var7;
                   if (var4 != null) {
                      if (var7 >= var9) {
                         var5 = a(5321, 3772957331856065837L);
@@ -602,8 +609,12 @@ public class I4 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void i(int var1, int var2, int var3, int var4, int var5) {
+      int var24;
+      int var25;
+      Exception var27;
+      int var9;
       Ky4[] var10000 = Kj4.d();
-      int var9 = var2 - var1;
+      var9 = var2 - var1;
       Ky4[] var6 = var10000;
 
       int var10001;
@@ -767,6 +778,9 @@ public class I4 {
    }
 
    public int z(int var1, int var2, int var3) {
+      int var15;
+      int var16;
+      int var17;
       int var12 = a(31094, 8481115058235566235L);
       Ky4[] var10000 = Kj4.d();
       int var13 = var12;
@@ -793,7 +807,7 @@ public class I4 {
             }
 
             int var7 = var15;
-            int var16 = var7;
+            var16 = var7;
             if (var4 != null) {
                if (var7 < 0) {
                   var7 = -var7;
@@ -825,7 +839,7 @@ public class I4 {
             }
 
             int var8 = var16 - var10001;
-            int var17 = var8;
+            var17 = var8;
             var10001 = var13;
             if (var4 != null) {
                if (var8 < var13) {
@@ -938,7 +952,6 @@ public class I4 {
       }
    }
 }
-
 
 
 

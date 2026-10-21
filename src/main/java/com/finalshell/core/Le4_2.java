@@ -39,6 +39,11 @@ public class Le4_2 {
    }
 
    public static void S(String var0) throws Exception {
+      long var10;
+      Object[] var12;
+      long var13;
+      Object[] var6;
+      Object[] var8;
       Registry.packArgs(var0);
       long var2 = 466665856241452304L;
       Object var10001 = Ref.h2(466665856241452304L, var2);
@@ -55,11 +60,11 @@ public class Le4_2 {
       Ref.h2(270389152141252877L, var4);
       Object[] var10003 = Registry.emptyArgs();
       long var7 = 375944019649708240L;
-      Object[] var6 = var10003;
+      var6 = var10003;
       Ref.h(375944019649708240L, var6, var7);
       Object[] var10004 = Registry.packArgs(var1);
       long var9 = 433142676825596742L;
-      Object[] var8 = var10004;
+      var8 = var10004;
       Ref.h(433142676825596742L, var8, var9);
 
       try {
@@ -69,11 +74,11 @@ public class Le4_2 {
       }
 
       Registry.emptyArgs();
-      long var10 = 270389152141252877L;
+      var10 = 270389152141252877L;
       Ref.h2(270389152141252877L, var10);
       Object[] var10006 = Registry.emptyArgs();
-      long var13 = 578864097947885485L;
-      Object[] var12 = var10006;
+      var13 = 578864097947885485L;
+      var12 = var10006;
       Ref.h(578864097947885485L, var12, var13);
 
       try {
@@ -146,7 +151,7 @@ public class Le4_2 {
    }
 
    public static byte[] F(String var0, String var1) {
-      long var8;
+      Mac var8;
       boolean var10000 = Ln4_2.R();
       String var3 = var1;
       boolean var2 = var10000;
@@ -182,13 +187,30 @@ public class Le4_2 {
    }
 
    public static void M(Y9 var0, ArrayList var1, Ln4_2 var2) {
+      Ln4_2 var10;
+      long var12;
+      Object var13;
+      Object[] var15;
+      long var26;
+      Object[] var29;
+      Object[] var33;
+      long var42;
+      int var6;
+      Integer var68;
+      Integer var71;
+      Integer var74;
+      Integer var76;
+      Ln4_2 var8;
+      Integer var80;
+      Integer var82;
+      Object var63;
       boolean var3 = Ln4_2.R();
       Y9 var10000 = var1.size();
       if (var3) {
          Y9 var4 = var10000;
-         Object[] var63 = Registry.emptyArgs();
+         var63 = Registry.emptyArgs();
          long var14 = 338529256540953583L;
-         Object[] var13 = var63;
+         var13 = var63;
          var63 = Ref.h(338529256540953583L, var13, var14);
 
          try {
@@ -198,17 +220,17 @@ public class Le4_2 {
          }
 
          int var5 = var65;
-         int var6 = 0;
+         var6 = 0;
          if (var5 != var4) {
             label160: {
                Ln4_2 var7 = (Ln4_2)var1.get(0);
-               Ln4_2 var8 = (Ln4_2)var1.get(1);
+               var8 = (Ln4_2)var1.get(1);
                Y9 var66 = var4;
                if (!var3) {
                   if (var4 == null) {
-                     Object[] var10002 = Registry.emptyArgs();
+                     Object var10002 = Registry.emptyArgs();
                      long var16 = 145535910876897139L;
-                     Object[] var15 = var10002;
+                     var15 = var10002;
                      var10002 = Ref.h(145535910876897139L, var15, var16);
 
                      try {
@@ -249,9 +271,9 @@ public class Le4_2 {
 
                if (var66 == var1.size() - 1) {
                   Ln4_2 var9 = (Ln4_2)var1.get(var1.size() - 2);
-                  Object[] var69 = Registry.emptyArgs();
+                  Object var69 = Registry.emptyArgs();
                   long var22 = 145535910876897139L;
-                  Object[] var21 = var69;
+                  Object var21 = var69;
                   var69 = Ref.h(145535910876897139L, var21, var22);
 
                   try {
@@ -272,7 +294,7 @@ public class Le4_2 {
 
                   var6 = var76;
                   Object[] var77 = Registry.packArgs(var6);
-                  long var26 = 470936572593593753L;
+                  var26 = 470936572593593753L;
                   Object[] var25 = var77;
                   Ref.h(470936572593593753L, var25, var26);
 
@@ -288,7 +310,7 @@ public class Le4_2 {
                }
 
                Ln4_2 var61 = (Ln4_2)var1.get(var4 - 1);
-               Ln4_2 var10 = (Ln4_2)var1.get(var4 + 1);
+               var10 = (Ln4_2)var1.get(var4 + 1);
                Object[] var72 = Registry.emptyArgs();
                long var28 = 145535910876897139L;
                Object[] var27 = var72;
@@ -299,9 +321,9 @@ public class Le4_2 {
                   throw var51.getTargetException();
                }
 
-               Object[] var78 = Registry.emptyArgs();
+               Object var78 = Registry.emptyArgs();
                long var30 = 145535910876897139L;
-               Object[] var29 = var78;
+               var29 = var78;
                var78 = Ref.h(145535910876897139L, var29, var30);
 
                try {
@@ -325,7 +347,7 @@ public class Le4_2 {
 
             Object[] var10005 = Registry.packArgs(var6);
             long var34 = 470936572593593753L;
-            Object[] var33 = var10005;
+            var33 = var10005;
             Ref.h(470936572593593753L, var33, var34);
 
             try {
@@ -359,7 +381,7 @@ public class Le4_2 {
             long var39 = 270389152141252877L;
             Ref.h2(270389152141252877L, var39);
             Object[] var10009 = Registry.emptyArgs();
-            long var42 = 612604310671515822L;
+            var42 = 612604310671515822L;
             Object[] var41 = var10009;
             Ref.h(612604310671515822L, var41, var42);
             Object[] var10010 = Registry.emptyArgs();
@@ -376,7 +398,7 @@ public class Le4_2 {
       } else if (var10000 > 1) {
          var10000 = var0;
          Object[] var10001 = Registry.emptyArgs();
-         long var12 = 345387814509849729L;
+         var12 = 345387814509849729L;
          Object[] var11 = var10001;
          var10001 = Ref.h(345387814509849729L, var11, var12);
 
@@ -390,18 +412,21 @@ public class Le4_2 {
    }
 
    public static long w(String var0) {
+      long var10;
+      String var5;
+      int var8;
       int var10000 = (Ln4_2.i()) ? 1 : 0;
       int var2 = var0.lastIndexOf(".");
-      boolean var1 = ((((boolean)var10000) != 0) != 0) != 0;
+      boolean var1 = (var10000) != 0;
       if (var2 > -1) {
          var0 = var0.substring(0, var2 - 1);
       }
 
       long var3 = 0L;
-      Object var5 = null;
+      var5 = null;
       String var6 = a(-30862, -28824);
       String var7 = var0.substring(var6.length());
-      int var8 = var7.indexOf("_");
+      var8 = var7.indexOf("_");
       var10000 = var8;
       if (var1) {
          if (var8 <= -1) {
@@ -419,7 +444,7 @@ public class Le4_2 {
       }
 
       Registry.packArgs(var5);
-      long var10 = 580562102365722287L;
+      var10 = 580562102365722287L;
       Object var10001 = Ref.h2(580562102365722287L, var10);
 
       try {
@@ -432,6 +457,7 @@ public class Le4_2 {
    }
 
    public static String z(String var0) {
+      int var5;
       int var1 = var0.lastIndexOf(".");
       if (var1 > -1) {
          var0 = var0.substring(0, var1 - 1);
@@ -440,7 +466,7 @@ public class Le4_2 {
       String var2 = null;
       String var3 = a(-30855, -2582);
       String var4 = var0.substring(var3.length());
-      int var5 = var4.indexOf("_");
+      var5 = var4.indexOf("_");
       if (var5 > -1) {
          var2 = var4.substring(0, var5);
       }
@@ -633,13 +659,17 @@ public class Le4_2 {
    }
 
    public static boolean T(L1 var0) {
+      long var10;
+      long var12;
+      long var15;
+      Object[] var8;
       Ln4_2.R();
       int var2 = 0;
       Object[] var10002 = Registry.emptyArgs();
       long var9 = 542058094445767607L;
-      Object[] var8 = var10002;
+      var8 = var10002;
       var10002 = Registry.packArgs(Ref.h(542058094445767607L, var8, var9));
-      long var10 = 417955638237048558L;
+      var10 = 417955638237048558L;
       Object var10003 = Ref.h2(417955638237048558L, var10);
 
       try {
@@ -651,15 +681,15 @@ public class Le4_2 {
       String var3 = (String)var10003;
       Object[] var1 = var10002;
       Registry.emptyArgs();
-      long var12 = 270389152141252877L;
+      var12 = 270389152141252877L;
       Ref.h2(270389152141252877L, var12);
       Object[] var10004 = Registry.emptyArgs();
-      long var15 = 445913128761932285L;
+      var15 = 445913128761932285L;
       Object[] var14 = var10004;
       Ref.h(445913128761932285L, var14, var15);
-      Object[] var10005 = Registry.packArgs(var3);
+      Object var10005 = Registry.packArgs(var3);
       long var17 = 342864006414696382L;
-      Object[] var16 = var10005;
+      Object var16 = var10005;
       var10005 = Ref.h(342864006414696382L, var16, var17);
 
       try {
@@ -673,9 +703,9 @@ public class Le4_2 {
       int var27 = (var31 = var4 - 0L) == 0L ? 0 : (var31 < 0L ? -1 : 1);
       if (var1 == null) {
          if (var27 > 0) {
-            Object[] var10006 = Registry.emptyArgs();
+            Object var10006 = Registry.emptyArgs();
             long var19 = 162488024198852693L;
-            Object[] var18 = var10006;
+            Object var18 = var10006;
             var10006 = Ref.h(162488024198852693L, var18, var19);
 
             try {
@@ -733,20 +763,28 @@ public class Le4_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static ArrayList J(ArrayList var0, ArrayList var1, Ln4_2 var2) {
+      Iterator var10;
+      Object[] var12;
+      long var13;
+      long var15;
+      long var26;
+      boolean var40;
+      HashSet var6;
+      HashMap var8;
       boolean var10000 = Ln4_2.i();
-      HashSet var6 = new HashSet();
+      var6 = new HashSet();
       HashMap var7 = new HashMap();
-      HashMap var8 = new HashMap();
+      var8 = new HashMap();
       boolean var3 = var10000;
       ArrayList var9 = new ArrayList();
-      Iterator var10 = var0.iterator();
+      var10 = var0.iterator();
 
       while (true) {
          if (var10.hasNext()) {
             Ln4_2 var11 = (Ln4_2)var10.next();
             String var10002 = (String)(Registry.emptyArgs());
-            long var13 = 194080076253066315L;
-            Object[] var12 = var10002;
+            var13 = 194080076253066315L;
+            var12 = var10002;
             var10002 = Ref.h(194080076253066315L, var12, var13);
 
             try {
@@ -771,12 +809,11 @@ public class Le4_2 {
 
       while (true) {
          if (var10.hasNext()) {
-      Object[] var40;
             Ln4_2 var37 = (Ln4_2)var10.next();
             var40 = var8;
             String var46 = (String)(Registry.emptyArgs());
-            long var15 = 194080076253066315L;
-            Object[] var14 = var46;
+            var15 = 194080076253066315L;
+            Object var14 = var46;
             var46 = Ref.h(194080076253066315L, var14, var15);
 
             try {
@@ -788,7 +825,7 @@ public class Le4_2 {
             var37.put(var46, var37);
             String var10003 = (String)(Registry.emptyArgs());
             long var17 = 194080076253066315L;
-            Object[] var16 = var10003;
+            Object var16 = var10003;
             var10003 = Ref.h(194080076253066315L, var16, var17);
 
             try {
@@ -806,7 +843,7 @@ public class Le4_2 {
                if (var49) {
                   String var10004 = (String)(Registry.emptyArgs());
                   long var19 = 194080076253066315L;
-                  Object[] var18 = var10004;
+                  Object var18 = var10004;
                   var10004 = Ref.h(194080076253066315L, var18, var19);
 
                   try {
@@ -833,12 +870,11 @@ public class Le4_2 {
       while (true) {
          label156: {
             if (var40 != false) {
-      Object[] var40;
                Ln4_2 var38 = (Ln4_2)var10.next();
                var40 = var6;
                String var50 = (String)(Registry.emptyArgs());
                long var21 = 194080076253066315L;
-               Object[] var20 = var50;
+               Object var20 = var50;
                var50 = Ref.h(194080076253066315L, var20, var21);
 
                try {
@@ -870,15 +906,14 @@ public class Le4_2 {
 
          while (true) {
             if (var40 == false) {
-      Object[] var40;
                break label130;
             }
 
             Ln4_2 var39 = (Ln4_2)var10.next();
             var40 = var6;
-            Object[] var53 = Registry.emptyArgs();
+            String var53 = (String)(Registry.emptyArgs());
             long var23 = 194080076253066315L;
-            Object[] var22 = var53;
+            Object var22 = var53;
             var53 = Ref.h(194080076253066315L, var22, var23);
 
             try {
@@ -914,7 +949,7 @@ public class Le4_2 {
 
       ArrayList var36 = (ArrayList)var42;
       Registry.packArgs(var36);
-      long var26 = 126626936328477255L;
+      var26 = 126626936328477255L;
       Ref.h2(126626936328477255L, var26);
 
       try {
@@ -1047,6 +1082,9 @@ public class Le4_2 {
    }
 
    public static boolean j(Ln4_2 var0, Ln4_2 var1) {
+      boolean var10;
+      boolean var12;
+      long var6;
       boolean var10000 = Ln4_2.R();
       boolean var3 = false;
       boolean var2 = var10000;
@@ -1063,7 +1101,7 @@ public class Le4_2 {
       if (!var2) {
          if (!var10) {
             var10001 = Registry.packArgs(var1, var0);
-            long var6 = 277259145237763747L;
+            var6 = 277259145237763747L;
             Object var10002 = Ref.h2(277259145237763747L, var6);
 
             try {
@@ -1883,10 +1921,25 @@ public class Le4_2 {
    }
 
    public static void b(Ln4_2 var0, O0 var1) {
+      Object[] var10;
+      Object[] var12;
+      long var13;
+      long var15;
+      Integer var42;
+      Long var48;
+      long var5;
+      Long var51;
+      Long var54;
+      Long var57;
+      Object[] var6;
+      Long var60;
+      Long var63;
+      Long var65;
+      Object[] var8;
       String var10001 = a(-30856, 16677);
-      Object[] var10003 = Registry.emptyArgs();
+      String var10003 = (String)(Registry.emptyArgs());
       long var3 = 194080076253066315L;
-      Object[] var2 = var10003;
+      Object var2 = var10003;
       var10003 = Ref.h(194080076253066315L, var2, var3);
 
       try {
@@ -1897,9 +1950,9 @@ public class Le4_2 {
 
       var10001.C(var0, var10003);
       String var10002 = a(-30866, 14376);
-      Object[] var10004 = Registry.emptyArgs();
-      long var5 = 413442976446181537L;
-      Object[] var4 = var10004;
+      String var10004 = (String)(Registry.emptyArgs());
+      var5 = 413442976446181537L;
+      Object var4 = var10004;
       var10004 = Ref.h(413442976446181537L, var4, var5);
 
       try {
@@ -1910,9 +1963,9 @@ public class Le4_2 {
 
       var10002.C(var0, var10004);
       String var37 = a(-30853, 20553);
-      Object[] var10005 = Registry.emptyArgs();
+      Object var10005 = Registry.emptyArgs();
       long var7 = 145535910876897139L;
-      Object[] var6 = var10005;
+      var6 = var10005;
       var10005 = Ref.h(145535910876897139L, var6, var7);
 
       try {
@@ -1923,9 +1976,9 @@ public class Le4_2 {
 
       var37.C(var0, var42);
       String var40 = a(-30863, 7289);
-      Object[] var10006 = Registry.emptyArgs();
+      String var10006 = (String)(Registry.emptyArgs());
       long var9 = 286931176286176762L;
-      Object[] var8 = var10006;
+      var8 = var10006;
       var10006 = Ref.h(286931176286176762L, var8, var9);
 
       try {
@@ -1936,9 +1989,9 @@ public class Le4_2 {
 
       var40.C(var0, var10006);
       String var43 = a(-30871, 20620);
-      Object[] var10007 = Registry.emptyArgs();
+      Object var10007 = Registry.emptyArgs();
       long var11 = 250994717747568331L;
-      Object[] var10 = var10007;
+      var10 = var10007;
       var10007 = Ref.h(250994717747568331L, var10, var11);
 
       try {
@@ -1949,9 +2002,9 @@ public class Le4_2 {
 
       var43.C(var0, var48);
       String var46 = a(-30860, 24382);
-      Object[] var10008 = Registry.emptyArgs();
-      long var13 = 425033738737227335L;
-      Object[] var12 = var10008;
+      Object var10008 = Registry.emptyArgs();
+      var13 = 425033738737227335L;
+      var12 = var10008;
       var10008 = Ref.h(425033738737227335L, var12, var13);
 
       try {
@@ -1962,9 +2015,9 @@ public class Le4_2 {
 
       var46.C(var0, var51);
       String var49 = a(-30854, 19401);
-      Object[] var10009 = Registry.emptyArgs();
-      long var15 = 365199820804367683L;
-      Object[] var14 = var10009;
+      Object var10009 = Registry.emptyArgs();
+      var15 = 365199820804367683L;
+      Object var14 = var10009;
       var10009 = Ref.h(365199820804367683L, var14, var15);
 
       try {
@@ -1975,9 +2028,9 @@ public class Le4_2 {
 
       var49.C(var0, var54);
       String var52 = a(-30852, -24884);
-      Object[] var10010 = Registry.emptyArgs();
+      Object var10010 = Registry.emptyArgs();
       long var17 = 622590009271170486L;
-      Object[] var16 = var10010;
+      Object var16 = var10010;
       var10010 = Ref.h(622590009271170486L, var16, var17);
 
       try {
@@ -1988,9 +2041,9 @@ public class Le4_2 {
 
       var52.C(var0, var57);
       String var55 = a(-30879, 11737);
-      Object[] var10011 = Registry.emptyArgs();
+      Object var10011 = Registry.emptyArgs();
       long var19 = 293679099616976536L;
-      Object[] var18 = var10011;
+      Object var18 = var10011;
       var10011 = Ref.h(293679099616976536L, var18, var19);
 
       try {
@@ -2001,9 +2054,9 @@ public class Le4_2 {
 
       var55.C(var0, var60);
       String var58 = a(-30864, 30164);
-      Object[] var10012 = Registry.emptyArgs();
+      Object var10012 = Registry.emptyArgs();
       long var21 = 486394744877445362L;
-      Object[] var20 = var10012;
+      Object var20 = var10012;
       var10012 = Ref.h(486394744877445362L, var20, var21);
 
       try {
@@ -2014,9 +2067,9 @@ public class Le4_2 {
 
       var58.C(var0, var63);
       String var61 = a(-30849, -23602);
-      Object[] var10013 = Registry.emptyArgs();
+      Object var10013 = Registry.emptyArgs();
       long var23 = 129455468056315956L;
-      Object[] var22 = var10013;
+      Object var22 = var10013;
       var10013 = Ref.h(129455468056315956L, var22, var23);
 
       try {
@@ -2029,9 +2082,16 @@ public class Le4_2 {
    }
 
    public static void B(Ln4_2 var0, O0 var1) {
+      Object[] var10;
+      Object[] var12;
+      long var13;
+      long var15;
+      long var5;
+      Object[] var6;
+      Object[] var8;
       Ln4_2.i();
       Object[] var10002 = Registry.packArgs(var1.C$String(a(-30867, 1361)));
-      long var5 = 416906230259364838L;
+      var5 = 416906230259364838L;
       Object[] var4 = var10002;
       Ref.h(416906230259364838L, var4, var5);
 
@@ -2058,7 +2118,7 @@ public class Le4_2 {
 
             var10002 = Registry.packArgs(var3);
             long var7 = 579965879482954180L;
-            Object[] var6 = var10002;
+            var6 = var10002;
             Ref.h(579965879482954180L, var6, var7);
 
             try {
@@ -2075,7 +2135,7 @@ public class Le4_2 {
          if (var10001 == null) {
             var10002 = Registry.packArgs(var1.b(a(-30907, -14136)));
             long var9 = 470936572593593753L;
-            Object[] var8 = var10002;
+            var8 = var10002;
             Ref.h(470936572593593753L, var8, var9);
 
             try {
@@ -2096,7 +2156,7 @@ public class Le4_2 {
          var10001 = var0;
          var10002 = Registry.packArgs(var1.C$String(a(-30859, -11238)));
          long var11 = 193904661956891993L;
-         Object[] var10 = var10002;
+         var10 = var10002;
          Ref.h(193904661956891993L, var10, var11);
 
          try {
@@ -2106,8 +2166,8 @@ public class Le4_2 {
          }
 
          Object[] var10003 = Registry.e(var1.I(a(-30851, -7230)));
-         long var13 = 632174181210947576L;
-         Object[] var12 = var10003;
+         var13 = 632174181210947576L;
+         var12 = var10003;
          Ref.h(632174181210947576L, var12, var13);
 
          try {
@@ -2117,7 +2177,7 @@ public class Le4_2 {
          }
 
          Object[] var10004 = Registry.e(var1.I(a(-30870, -27534)));
-         long var15 = 379623615202365815L;
+         var15 = 379623615202365815L;
          Object[] var14 = var10004;
          Ref.h(379623615202365815L, var14, var15);
 
@@ -2228,9 +2288,12 @@ public class Le4_2 {
    }
 
    public static int[] l(int var0) {
-      int var10000 = Ln4_2.R();
+      Integer var13;
+      Integer var15;
+      long var6;
+      int var10000 = (Ln4_2.R()) ? 1 : 0;
       int[] var2 = new int[var0];
-      boolean var1 = (boolean)var10000;
+      boolean var1 = (var10000) != 0;
       var10000 = var0;
       if (!var1) {
          if (var0 > 0) {
@@ -2266,7 +2329,7 @@ public class Le4_2 {
          }
 
          Object[] var12 = Registry.packArgs(var2[var3 - 1]);
-         long var6 = 153746706510242688L;
+         var6 = 153746706510242688L;
          Object var14 = Ref.h2(153746706510242688L, var6);
 
          try {
@@ -2294,6 +2357,8 @@ public class Le4_2 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
+      int var8;
       int var2 = (var0 ^ -30875) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -3074,13 +3139,13 @@ public class Le4_2 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -3108,11 +3173,21 @@ public class Le4_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var13 = new String[33];
+      String var10;
+      boolean var12;
+      String[] var13;
+      byte var26;
+      char[] var33;
+      byte var42;
+      boolean var5;
+      long var54;
+      long[] var6;
+      int var65;
+      var13 = new String[33];
       int var11 = 0;
-      String var10 = "\"¾\u0010BÝ\u0007â\u001b½U\t5à½Ü\u0015\u001d^¼W\n¶\u001f\u0082v\u008f\u0081¨ËôO\t^Ì³\u0087åEa³A\u000bÌ`i\u0096yv«û\u0015\u009cµ\u0012\u000e.¹Û¤ÎIÞP\u0010#_Do½\u008dT¦\rìwM3æC2ÀmðFHá\u000bñØÎ\u0081\u008d\u00945§Æ\u0017Ï\u0002ç/\u0005µñ{û\u0018\u0012\u0094|h\u009e\u0012Íái\u009cêíÁdgD\u000b\u008f\u008c\t\u009fç\u008bââé\u0081&]\u000bÑý$Ôøº\u009bb\u0013¯u\u000b&\u0002\u009e\u001cn1®Çµ\u001b¡\u00043²A\u0096\u000bi!\u000bºnwsÛ\u000e\u0098Ö\u0004p@´\u0016\u000b=r\u0081Ð?:YrK\u00ad~\u0004M\u008b¼«\u0005jZ\u0084ªÃ\u0004+þßÁ\tì(\u0086År>²ØÊ\u0003éÛõ\b\u008b\u0088ðI\u0012RV>\u000b¬å\u008b×\rÚ%nÄ.\u008f\u000bÔ\u009dÀï¥O×\b\u009aâD\u0012YdS\u0092ùçâû%´\u008dË\u0091ý\u0007ß\u0003ì\u0011d\u0099×* V¥Â©\u008c/|^\u001d\rP¿\b»ÜöÃÒ\u0003N\u0014\u0002\u001a\u0002\u0005\u0086åBÓ\u0013";
-      int var12 = "\"¾\u0010BÝ\u0007â\u001b½U\t5à½Ü\u0015\u001d^¼W\n¶\u001f\u0082v\u008f\u0081¨ËôO\t^Ì³\u0087åEa³A\u000bÌ`i\u0096yv«û\u0015\u009cµ\u0012\u000e.¹Û¤ÎIÞP\u0010#_Do½\u008dT¦\rìwM3æC2ÀmðFHá\u000bñØÎ\u0081\u008d\u00945§Æ\u0017Ï\u0002ç/\u0005µñ{û\u0018\u0012\u0094|h\u009e\u0012Íái\u009cêíÁdgD\u000b\u008f\u008c\t\u009fç\u008bââé\u0081&]\u000bÑý$Ôøº\u009bb\u0013¯u\u000b&\u0002\u009e\u001cn1®Çµ\u001b¡\u00043²A\u0096\u000bi!\u000bºnwsÛ\u000e\u0098Ö\u0004p@´\u0016\u000b=r\u0081Ð?:YrK\u00ad~\u0004M\u008b¼«\u0005jZ\u0084ªÃ\u0004+þßÁ\tì(\u0086År>²ØÊ\u0003éÛõ\b\u008b\u0088ðI\u0012RV>\u000b¬å\u008b×\rÚ%nÄ.\u008f\u000bÔ\u009dÀï¥O×\b\u009aâD\u0012YdS\u0092ùçâû%´\u008dË\u0091ý\u0007ß\u0003ì\u0011d\u0099×* V¥Â©\u008c/|^\u001d\rP¿\b»ÜöÃÒ\u0003N\u0014\u0002\u001a\u0002\u0005\u0086åBÓ\u0013"
-         .length();
+      var10 = "\"¾\u0010BÝ\u0007â\u001b½U\t5à½Ü\u0015\u001d^¼W\n¶\u001f\u0082v\u008f\u0081¨ËôO\t^Ì³\u0087åEa³A\u000bÌ`i\u0096yv«û\u0015\u009cµ\u0012\u000e.¹Û¤ÎIÞP\u0010#_Do½\u008dT¦\rìwM3æC2ÀmðFHá\u000bñØÎ\u0081\u008d\u00945§Æ\u0017Ï\u0002ç/\u0005µñ{û\u0018\u0012\u0094|h\u009e\u0012Íái\u009cêíÁdgD\u000b\u008f\u008c\t\u009fç\u008bââé\u0081&]\u000bÑý$Ôøº\u009bb\u0013¯u\u000b&\u0002\u009e\u001cn1®Çµ\u001b¡\u00043²A\u0096\u000bi!\u000bºnwsÛ\u000e\u0098Ö\u0004p@´\u0016\u000b=r\u0081Ð?:YrK\u00ad~\u0004M\u008b¼«\u0005jZ\u0084ªÃ\u0004+þßÁ\tì(\u0086År>²ØÊ\u0003éÛõ\b\u008b\u0088ðI\u0012RV>\u000b¬å\u008b×\rÚ%nÄ.\u008f\u000bÔ\u009dÀï¥O×\b\u009aâD\u0012YdS\u0092ùçâû%´\u008dË\u0091ý\u0007ß\u0003ì\u0011d\u0099×* V¥Â©\u008c/|^\u001d\rP¿\b»ÜöÃÒ\u0003N\u0014\u0002\u001a\u0002\u0005\u0086åBÓ\u0013";
+      var12 = "\"¾\u0010BÝ\u0007â\u001b½U\t5à½Ü\u0015\u001d^¼W\n¶\u001f\u0082v\u008f\u0081¨ËôO\t^Ì³\u0087åEa³A\u000bÌ`i\u0096yv«û\u0015\u009cµ\u0012\u000e.¹Û¤ÎIÞP\u0010#_Do½\u008dT¦\rìwM3æC2ÀmðFHá\u000bñØÎ\u0081\u008d\u00945§Æ\u0017Ï\u0002ç/\u0005µñ{û\u0018\u0012\u0094|h\u009e\u0012Íái\u009cêíÁdgD\u000b\u008f\u008c\t\u009fç\u008bââé\u0081&]\u000bÑý$Ôøº\u009bb\u0013¯u\u000b&\u0002\u009e\u001cn1®Çµ\u001b¡\u00043²A\u0096\u000bi!\u000bºnwsÛ\u000e\u0098Ö\u0004p@´\u0016\u000b=r\u0081Ð?:YrK\u00ad~\u0004M\u008b¼«\u0005jZ\u0084ªÃ\u0004+þßÁ\tì(\u0086År>²ØÊ\u0003éÛõ\b\u008b\u0088ðI\u0012RV>\u000b¬å\u008b×\rÚ%nÄ.\u008f\u000bÔ\u009dÀï¥O×\b\u009aâD\u0012YdS\u0092ùçâû%´\u008dË\u0091ý\u0007ß\u0003ì\u0011d\u0099×* V¥Â©\u008c/|^\u001d\rP¿\b»ÜöÃÒ\u0003N\u0014\u0002\u001a\u0002\u0005\u0086åBÓ\u0013";
+         // [VF] .length();
       char var9 = '\n';
       int var17 = -1;
 
@@ -3127,7 +3202,7 @@ public class Le4_2 {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
                int var14 = 0;
-               byte var42 = var10000;
+               var42 = var10000;
                var33 = var39;
                int var24 = var10004;
                byte var49;
@@ -3151,7 +3226,6 @@ public class Le4_2 {
 
                while (true) {
                   char var64 = var55[var10006];
-                  byte var65;
                   switch (var14 % 7) {
                      case 0:
                         var65 = 123;
@@ -3201,15 +3275,15 @@ public class Le4_2 {
                      a = var13;
                      b = new String[33];
                      long var0 = 5849965110289064889L;
-                     long[] var6 = new long[4];
+                     var6 = new long[4];
                      int var3 = 0;
                      String var4 = "þÎ¨}Ô\u0098GÐÂr ®UÏÕB";
-                     int var5 = "þÎ¨}Ô\u0098GÐÂr ®UÏÕB".length();
+                     var5 = ("þÎ¨}Ô\u0098GÐÂr ®UÏÕB".length()) != 0;
                      byte var2 = 0;
 
                      label44:
                      while (true) {
-                        byte var26 = var2;
+                        var26 = var2;
                         var2 += 8;
                         byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
@@ -3225,7 +3299,7 @@ public class Le4_2 {
                         byte var45 = -1;
 
                         while (true) {
-                           long var54 = var37 ^ var0;
+                           var54 = var37 ^ var0;
                            switch (var45) {
                               case 0:
                                  var19[var27] = var54;
@@ -3243,7 +3317,7 @@ public class Le4_2 {
                                  }
 
                                  var4 = "\u0004Ó\u0091e²È\u0090\u0087aºç+\u008b>oP";
-                                 var5 = "\u0004Ó\u0091e²È\u0090\u0087aºç+\u008b>oP".length();
+                                 var5 = ("\u0004Ó\u0091e²È\u0090\u0087aºç+\u008b>oP".length()) != 0;
                                  var2 = 0;
                            }
 
@@ -3275,7 +3349,7 @@ public class Le4_2 {
                   }
 
                   var10 = "C\u0086ÏzÁ\u001d¡|h\u0010\u0091#l\u0005\u000fk\u0004u¬";
-                  var12 = "C\u0086ÏzÁ\u001d¡|h\u0010\u0091#l\u0005\u000fk\u0004u¬".length();
+                  var12 = ("C\u0086ÏzÁ\u001d¡|h\u0010\u0091#l\u0005\u000fk\u0004u¬".length()) != 0;
                   var9 = '\r';
                   var17 = -1;
             }

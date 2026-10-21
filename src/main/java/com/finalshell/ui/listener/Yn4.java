@@ -2,16 +2,16 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Copy2;
+import com.finalshell.ui.panel.EnvironmentVariablePanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTable;
 
 public class Yn4 implements ActionListener {
-   public final Copy2 e;
+   public final EnvironmentVariablePanel e;
 
-   public Yn4(Copy2 var1) {
+   public Yn4(EnvironmentVariablePanel var1) {
       this.e = var1;
    }
 

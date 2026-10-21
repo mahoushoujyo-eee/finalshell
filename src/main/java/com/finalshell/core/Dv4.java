@@ -15,7 +15,7 @@ public class Dv4 implements Zv2_2 {
       File var10001;
       String var10003 = (String)(Registry.emptyArgs());
       long var8 = 605430732347023634L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(605430732347023634L, var7, var8);
 
       try {

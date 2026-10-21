@@ -4,7 +4,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.listener.TC3;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import com.finalshell.ui.panel.ShowDeletedPanel;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
@@ -22,13 +22,13 @@ public class TM extends DefaultCellEditor {
    public Ne4 v;
    public com.finalshell.ui.panel.Wb2 L;
    public final ShowDeletedPanel J;
-   public final Connection5 T;
+   public final ImportExportPanel T;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   public TM(Connection5 var1, JTextField var2, ShowDeletedPanel var3) {
+   public TM(ImportExportPanel var1, JTextField var2, ShowDeletedPanel var3) {
       super(var2);
       this.T = var1;
       this.J = var3;
@@ -548,10 +548,10 @@ public class TM extends DefaultCellEditor {
                   Ref.h(410905379772103887L, var24, var25);
                   Lv4_2 var10008 = (Lv4_2)(Registry.emptyArgs());
                   long var27 = 605430732347023634L;
-                  Object[] var26 = var10008;
+                  Object var26 = var10008;
                   var10008 = Registry.packArgs(Ref.h(605430732347023634L, var26, var27));
                   long var29 = 489768706953623433L;
-                  Object[] var28 = var10008;
+                  Object var28 = var10008;
                   var10008 = Ref.h(489768706953623433L, var28, var29);
 
                   try {
@@ -565,7 +565,7 @@ public class TM extends DefaultCellEditor {
                      if (var12 != null) {
                         String var10009 = (String)(Registry.emptyArgs());
                         long var31 = 286931176286176762L;
-                        Object[] var30 = var10009;
+                        Object var30 = var10009;
                         var10009 = Ref.h(286931176286176762L, var30, var31);
 
                         try {
@@ -608,7 +608,7 @@ public class TM extends DefaultCellEditor {
                Tf4 var68 = (Tf4)var9;
                File var10005 = Registry.emptyArgs();
                long var37 = 543633160597441792L;
-               Object[] var36 = var10005;
+               Object var36 = var10005;
                var10005 = Ref.h(543633160597441792L, var36, var37);
 
                try {
@@ -656,7 +656,7 @@ public class TM extends DefaultCellEditor {
 
                   String var90 = (String)(Registry.emptyArgs());
                   long var45 = 286931176286176762L;
-                  Object[] var44 = var90;
+                  Object var44 = var90;
                   var90 = Ref.h(286931176286176762L, var44, var45);
 
                   try {
@@ -740,7 +740,7 @@ public class TM extends DefaultCellEditor {
             Ref.g(593306439561595691L, var9);
             Integer var10003 = (Integer)(Registry.packArgs(var4.getPoint()));
             long var12 = 379754982100791858L;
-            Object[] var11 = var10003;
+            Object var11 = var10003;
             var10003 = Ref.h(379754982100791858L, var11, var12);
 
             try {

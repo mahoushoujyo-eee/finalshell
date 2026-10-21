@@ -414,7 +414,7 @@ public final class C92 {
    }
 
    public static Element e(Element var0, String var1, String var2) {
-      Element var7;
+      String var7;
       int var10000 = D5.e();
       Element var4 = U(var0, var1);
       int var3 = var10000;
@@ -675,6 +675,7 @@ public final class C92 {
    }
 
    public static String o(String var0, File var1) throws GG_2 {
+      StreamSource var7;
       int var10000 = D5.e();
       String var3 = null;
       int var2 = var10000;
@@ -685,7 +686,7 @@ public final class C92 {
          Properties var6 = var5.getOutputProperties();
          var6.setProperty(a(8338, -8996), a(8331, 11872));
          var5.setOutputProperties(var6);
-         StreamSource var7 = new StreamSource(new StringReader(var0));
+         var7 = new StreamSource(new StringReader(var0));
          StreamResult var8 = new StreamResult(new StringWriter());
          var5.transform(var7, var8);
          var3 = var8.getWriter().toString();
@@ -1550,6 +1551,7 @@ public final class C92 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[32];
       int var3 = 0;
       String var2 = "ô\u0002@z\u0018h\u009f~ú\u0087\u0012È¸\u0096\u0003S_\u008a h:Ù\u0019xÛ\u009c\u0018D(ëh\f{e\u009c\u008cT«ÙðâmÖþFÁ¯·õ;Â)ô\nJ\u001f\n\u001bÒ\u0000\u008d+Ò\b+w\u0081\u001d\u0010d8ß\u0082\"#Î7EøÏ\u0090ùßC\u0095å\u0095U\u000f\u0013¡Ï[\u0014åa\u0092L¸¢3\u0091ár\u0005F¬gØª\u0096¥Ä7\u0006~É¾LÁ!\u0012\u009b¸\u00ad-±\u008e1.\u0083§  \u0001Iz\u009cfø\u0003¸\u0086÷\u0011½\u001eiù?\u001c!|wÊÜ¹¿p\u0090ÐÐ\u0005°Mj\u008ex\u0006÷\u008d\u001b£f`\u0014\u0010\u0016Üø\u009c3øt\u001e \u0091´\u0016µ\u0099î4Ý!\u0097\u0005=tÛ©N\u0013p\tÐ\u001b\fSÛæ/ÜCÀ.Ë¾\u008a©Öø\bÇ\u0088\u0097\t\u001ac\u0004\u0091\u001djÓ\u0099$p|\u009dìd¶ï»\u008c\u0001uÓ\u008e½ëäøDl\u0003þøØLI\u0006»\n\f¶þ¬\u0006\u009a?(\u0010zx\u001dÛ\u0095¯ì¶eEÏ\u007fÒ\u008c7à\u0090øá?ûÝ,>]´ å\u009c»À%\u0006Öw?üâ\u008b\u000e\u0000~ÞõË\u0099å@µ@û0\u0085\u0089\t`UÒÐK*Í\u0095Í)Î\u0001\r~â7Ï\u0085.\u009b¦\u001e¥µPE*o\u007f¾j\u000e>K\u0094õ\u008cÙ\u001e;\u000e\u001b¯îÒ4ç?¼Jø\u000f;î¹ç%ßi\u001b\u001e\u0095»¨e\u0087<\u0005|ÑQ@;\u0003¿Ô)\u0012ò~\u0080õ\u0014\u0095\u0085M\u0015Ëò-[ø1ª\u000f>\u0003\u009aÆ\u008d\u0013èmÃ\u0097nÂ\u0097Ô¦\u009ar\b\bÒz©1²ë\u0012«6«üa¼9mÈMQ\u0002W-\u00adt#\u0014";
@@ -1565,7 +1567,6 @@ public final class C92 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

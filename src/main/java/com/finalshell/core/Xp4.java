@@ -15,6 +15,7 @@ public class Xp4 implements Ka2 {
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    @Override
    public void N(Component var1, Component var2) {
+      String var22;
       int[] var10000 = C42.g();
       ON.y = new WeakReference<>(var1);
       int[] var3 = var10000;

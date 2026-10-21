@@ -10,6 +10,7 @@ public class UH_2 implements AWTEventListener {
 
    @Override
    public void eventDispatched(AWTEvent var1) {
+      FocusEvent var5;
       int[] var2 = C42.g();
       int var10000 = (var1 instanceof FocusEvent) ? 1 : 0;
       if (var2 == null) {
@@ -29,7 +30,6 @@ public class UH_2 implements AWTEventListener {
             if (var2 == null) {
                label32: {
                   if (var10000 == var10001) {
-      FocusEvent var5;
                      var5 = var3;
                      if (var2 != null) {
                         break label32;
@@ -38,7 +38,6 @@ public class UH_2 implements AWTEventListener {
                      if (var3.getOppositeComponent() == null) {
                         ON.u(var3.getComponent(), null);
                         if (var2 == null) {
-      FocusEvent var5;
                            return;
                         }
                      }
@@ -111,7 +110,6 @@ public class UH_2 implements AWTEventListener {
       b = new Integer[2];
    }
 }
-
 
 
 

@@ -20,6 +20,7 @@ public class QD implements Runnable {
 
    @Override
    public void run() {
+      int var6;
       String var10000 = FV_2.D();
       FN.M(Thread.currentThread());
       String var1 = var10000;
@@ -59,7 +60,6 @@ public class QD implements Runnable {
             label41:
             if (var1 == null) {
                if (this.C < 0) {
-      int var6;
                   var6 = var3;
                   if (var1 != null) {
                      break label41;
@@ -75,7 +75,6 @@ public class QD implements Runnable {
 
             if (var1 == null) {
                if (var6 <= 0) {
-      int var6;
                   break label65;
                }
 
@@ -105,7 +104,6 @@ public class QD implements Runnable {
       a = var10002;
    }
 }
-
 
 
 

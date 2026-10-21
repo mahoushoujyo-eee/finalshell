@@ -28,6 +28,7 @@ public class A1_2 {
    }
 
    public void L(int var1, float[] var2, float[] var3) {
+      int var11;
       String var10000 = UZ.h();
       int var5 = 0;
       int var6 = 0;
@@ -54,7 +55,6 @@ public class A1_2 {
 
          while (true) {
             if (var5 >= var9) {
-      int var11;
                var11 = var9;
                var10001 = 2;
                if (var4 != null || var4 != null) {
@@ -65,7 +65,6 @@ public class A1_2 {
                   var5 -= var9;
                   var9 >>= 1;
                   if (var4 == null) {
-      double var11;
                      continue;
                   }
                }
@@ -85,6 +84,7 @@ public class A1_2 {
    }
 
    public void L(int var1, int var2, int var3, float[] var4, float[] var5) {
+      int var26;
       byte var7 = 1;
       String var10000 = UZ.h();
       int var8 = 0;
@@ -181,7 +181,7 @@ public class A1_2 {
       String var10000 = UZ.h();
       this.L(var4, var1, var2);
       String var6 = var10000;
-      int var10003 = var5;
+      int var10003 = (var5) ? 1 : 0;
       if (var6 == null) {
          var10003 = var5 != 0 ? 1 : -1;
       }
@@ -190,13 +190,14 @@ public class A1_2 {
    }
 
    public void f(float[] var1, float[] var2, int var3, int var4, boolean var5) {
+      float[] var11;
       String var10000 = UZ.h();
       int var7 = this.r(var3);
       int var8 = this.r(var4);
       int var9 = Math.max(var4, var3);
       String var6 = var10000;
       float[] var10 = new float[var9];
-      float[] var11 = new float[var9];
+      var11 = new float[var9];
       int var12 = 0;
 
       while (true) {
@@ -304,7 +305,6 @@ public class A1_2 {
       return -1;
    }
 }
-
 
 
 

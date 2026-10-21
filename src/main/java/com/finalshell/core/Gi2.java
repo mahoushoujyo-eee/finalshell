@@ -296,14 +296,14 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
    }
 
    public Insets g() {
+      Insets var10;
       int[] var10000 = KD.s$arrint();
-      byte var2 = (this.b.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      byte var2 = (byte)((this.b.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       int[] var1 = var10000;
       Insets var3 = new Insets(this.J.top, (var2 != 0 ? this.J.left : this.J.right) + this.a, this.J.bottom, (var2 != 0 ? this.J.right : this.J.left) + this.a);
       Gi2 var9 = this;
       if (var1 == null) {
          if (this.L != null) {
-      Insets var10;
             Insets var4;
             int var15;
             int var10001;
@@ -343,7 +343,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
          var9 = this;
       }
 
-      byte var11 = (var9.k) ? 1 : 0;
+      byte var11 = (byte)((var9.k) ? 1 : 0);
       if (var1 == null) {
          if (var9.k != 0) {
             return var3;
@@ -353,31 +353,31 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       }
 
       if (var1 == null) {
-         var11 = (var11 != 0 ? this.I : this.G) ? 1 : 0;
+         var11 = (byte)((var11 != 0 ? this.I : this.G) ? 1 : 0);
       }
 
       byte var8 = var11;
       byte var12 = var2;
       if (var1 == null) {
-         var12 = (var2 != 0 ? this.g : this.D) ? 1 : 0;
+         var12 = (byte)((var2 != 0 ? this.g : this.D) ? 1 : 0);
       }
 
       byte var5 = var12;
       byte var13 = var2;
       if (var1 == null) {
-         var13 = (var2 != 0 ? this.G : this.I) ? 1 : 0;
+         var13 = (byte)((var2 != 0 ? this.G : this.I) ? 1 : 0);
       }
 
       byte var6 = var13;
       byte var14 = var2;
       if (var1 == null) {
-         var14 = (var2 != 0 ? this.D : this.g) ? 1 : 0;
+         var14 = (byte)((var2 != 0 ? this.D : this.g) ? 1 : 0);
       }
 
       byte var7;
       int var17;
       label126: {
-         var7 = (((((var14) ? 1 : 0) != 0) != 0) ? 1 : 0) != 0;
+         var7 = var14;
          var17 = (this.w) ? 1 : 0;
          if (var1 == null) {
             if (this.w) {
@@ -702,6 +702,11 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
 
    @Override
    public void paint(Graphics var1, JComponent var2) {
+      byte var17;
+      int var20;
+      int var22;
+      boolean var39;
+      boolean var52;
       int[] var3;
       Graphics2D var6;
       Object var7;
@@ -764,12 +769,12 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                      }
 
                      if (!var38) {
-                        var38 = ((((boolean)0) != 0) != 0) != 0;
+                        var38 = (0) != 0;
                         break label549;
                      }
                   }
 
-                  var38 = ((((boolean)1) != 0) != 0) != 0;
+                  var38 = (1) != 0;
                }
 
                boolean var8 = (var38) != 0;
@@ -779,7 +784,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                   break label568;
                }
 
-               if (var38) {
+               if (var38 != 0) {
                   label539: {
                      label577: {
                         var38 = (this.o) ? 1 : 0;
@@ -804,19 +809,19 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                         }
 
                         if (!var38) {
-                           var38 = ((((boolean)1) != 0) != 0) != 0;
+                           var38 = (1) != 0;
                            break label539;
                         }
                      }
 
-                     var38 = ((((boolean)0) != 0) != 0) != 0;
+                     var38 = (0) != 0;
                   }
 
                   boolean var10;
                   Composite var11;
                   label578: {
                      var10 = (var38) != 0;
-                     var11 = (RV.a(var6, this.u, var10)) ? 1 : 0;
+                     var11 = RV.a(var6, this.u, var10);
                      var38 = (this.f) ? 1 : 0;
                      if (var3 == null) {
                         if (!this.f) {
@@ -851,7 +856,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
 
                      label511:
                      if (var3 == null) {
-                        if (var38) {
+                        if (var38 != 0) {
                            var38 = (this.W) ? 1 : 0;
                            if (var3 != null) {
                               break label511;
@@ -868,7 +873,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                      label504: {
                         label579: {
                            if (var3 == null) {
-                              if (var38) {
+                              if (var38 != 0) {
                                  break label579;
                               }
 
@@ -879,13 +884,13 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                               break label504;
                            }
 
-                           if (var38) {
-                              var38 = ((((boolean)1) != 0) != 0) != 0;
+                           if (var38 != 0) {
+                              var38 = (1) != 0;
                               break label504;
                            }
                         }
 
-                        var38 = ((((boolean)0) != 0) != 0) != 0;
+                        var38 = (0) != 0;
                      }
 
                      boolean var12;
@@ -907,13 +912,13 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
 
                         int var14 = var38;
                         int var15 = var4.getHeight();
-                        byte var16 = (var4.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+                        byte var16 = (byte)((var4.getComponentOrientation().isLeftToRight()) ? 1 : 0);
                         int var44 = var16;
                         if (var3 == null) {
                            var44 = (var16 != 0 ? this.I : this.G) ? 1 : 0;
                         }
 
-                        byte var17 = (byte)var44;
+                        var17 = (byte)var44;
                         var44 = var16;
                         if (var3 == null) {
                            var44 = (var16 != 0 ? this.G : this.I) ? 1 : 0;
@@ -922,7 +927,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                         byte var18;
                         PF3 var19;
                         label483: {
-                           var18 = var44;
+                           var18 = (byte)(var44);
                            var19 = Fk2.I(this.C, this.i * 2, this.u);
                            var44 = var17;
                            if (var3 == null) {
@@ -937,7 +942,6 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                            var44 *= 2;
                         }
 
-                        int var20;
                         int var61;
                         label477: {
                            var20 = var44;
@@ -971,7 +975,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
 
                         int var21;
                         label465: {
-                           var21 = (((((var44 + var61) ? 1 : 0) != 0) != 0) ? 1 : 0) != 0;
+                           var21 = var44 + var61;
                            var44 = (this.w) ? 1 : 0;
                            if (var3 == null) {
                               if (this.w) {
@@ -985,9 +989,8 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                            var44 *= 2;
                         }
 
-                        int var22;
                         label459: {
-                           var22 = (((((var44) ? 1 : 0) != 0) != 0) ? 1 : 0) != 0;
+                           var22 = var44;
                            var61 = (this.w) ? 1 : 0;
                            if (var3 == null) {
                               if (this.w) {
@@ -1002,7 +1005,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                         }
 
                         label453: {
-                           var44 = (((((var15 + var61) ? 1 : 0) != 0) != 0) ? 1 : 0) != 0;
+                           var44 = var15 + var61;
                            var61 = (this.N) ? 1 : 0;
                            if (var3 == null) {
                               if (this.N) {
@@ -1037,7 +1040,6 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                         }
 
                         if (var52) {
-      byte var52;
                            Shape var25 = RV.n(var6, var9);
                            var6.setPaint(
                               new RadialGradientPaint(
@@ -1103,37 +1105,37 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
 
                   var6.setPaint(var69);
                   var6.draw(var9);
-                  byte var27 = var4.getComponentOrientation().isLeftToRight();
+                  byte var27 = (byte)((var4.getComponentOrientation().isLeftToRight()) ? 1 : 0);
                   int var53 = var27;
                   if (var3 == null) {
-                     var53 = var27 != 0 ? this.I : this.G;
+                     var53 = (var27 != 0 ? this.I : this.G) ? 1 : 0;
                   }
 
                   byte var29 = (byte)var53;
                   var53 = var27;
                   if (var3 == null) {
-                     var53 = var27 != 0 ? this.g : this.D;
+                     var53 = (var27 != 0 ? this.g : this.D) ? 1 : 0;
                   }
 
-                  byte var30 = var53;
+                  byte var30 = (byte)(var53);
                   var53 = var27;
                   if (var3 == null) {
-                     var53 = var27 != 0 ? this.G : this.I;
+                     var53 = (var27 != 0 ? this.G : this.I) ? 1 : 0;
                   }
 
-                  byte var31 = var53;
+                  byte var31 = (byte)(var53);
                   var53 = var27;
                   if (var3 == null) {
-                     var53 = var27 != 0 ? this.D : this.g;
+                     var53 = (var27 != 0 ? this.D : this.g) ? 1 : 0;
                   }
 
                   byte var32;
-                  var32 = (((var53) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-                  var53 = (((this.w) != 0) != 0) != 0;
+                  var32 = (byte)(var53);
+                  var53 = (this.w) ? 1 : 0;
                   label393:
                   if (var3 == null) {
                      if (!this.w) {
-                        var53 = this.m;
+                        var53 = (this.m) ? 1 : 0;
                         if (var3 != null) {
                            break label393;
                         }
@@ -1195,7 +1197,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                         }
 
                         if (var30 != 0) {
-                           var53 = this.w;
+                           var53 = (this.w) ? 1 : 0;
                            if (var3 == null) {
                               var53 = this.w ? this.C : 0;
                            }
@@ -1223,14 +1225,14 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                            }
 
                            var6.setPaint(var69);
-                           int var84 = (((var34 + var2.getHeight()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-                           int var10005 = this.w;
+                           int var84 = var34 + var2.getHeight();
+                           int var10005 = (this.w) ? 1 : 0;
                            if (var3 == null) {
                               var10005 = this.w ? this.C : 0;
                            }
 
                            var84 -= var10005;
-                           var10005 = this.N;
+                           var10005 = (this.N) ? 1 : 0;
                            if (var3 == null) {
                               var10005 = this.N ? this.C + 1 : 0;
                            }
@@ -1239,13 +1241,13 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                         }
                      }
 
-                     var53 = this.N;
+                     var53 = (this.N) ? 1 : 0;
                   }
 
                   label355:
                   if (var3 == null) {
                      if (var53 == 0) {
-                        var53 = this.z;
+                        var53 = (this.z) ? 1 : 0;
                         if (var3 != null) {
                            break label355;
                         }
@@ -1313,7 +1315,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                            break label589;
                         }
 
-                        var53 = this.w;
+                        var53 = (this.w) ? 1 : 0;
                      }
 
                      if (var3 == null) {
@@ -1345,14 +1347,14 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                      var6.setPaint(var69);
                      int var78 = var2.getWidth() - 1;
                      int var82 = var2.getWidth() - 1;
-                     int var88 = (((var36 + var2.getHeight()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-                     int var91 = this.w;
+                     int var88 = var36 + var2.getHeight();
+                     int var91 = (this.w) ? 1 : 0;
                      if (var3 == null) {
                         var91 = this.w ? this.C : 0;
                      }
 
                      var88 -= var91;
-                     var91 = this.N;
+                     var91 = (this.N) ? 1 : 0;
                      if (var3 == null) {
                         var91 = this.N ? this.C + 1 : 0;
                      }
@@ -1365,7 +1367,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
             }
          }
 
-         var38 = var5.isPressed();
+         var38 = (var5.isPressed()) ? 1 : 0;
       }
 
       label327: {
@@ -1374,10 +1376,10 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
                break label327;
             }
 
-            var38 = this.X;
+            var38 = (this.X) ? 1 : 0;
          }
 
-         if (var38) {
+         if (var38 != 0) {
             var6.translate(1, 1);
          }
       }
@@ -1389,6 +1391,8 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
    }
 
    public void B(Graphics var1, JComponent var2) {
+      boolean var17;
+      View var18;
       Registry.packArgs(var2, var1);
       long var9 = 135169693674870498L;
       String var10001 = (String)Ref.h2(135169693674870498L, var9);
@@ -1449,7 +1453,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
             if (!var17) {
                label53: {
                   View var8 = (View)var2.getClientProperty(a(19602, 21899));
-                  View var18 = var8;
+                  var18 = var8;
                   if (var3 == null) {
                      if (var8 == null) {
                         break label53;
@@ -1544,7 +1548,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       Container var7 = var3;
       if (var2 == null) {
          if (var3 == null) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var7 = var3;
@@ -1557,7 +1561,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
          if (var8) {
             int var4 = var3.getComponentZOrder(var1);
             if (var2 != null) {
-               return (boolean)var4;
+               return var4 != 0;
             }
 
             if (var4 > 0) {
@@ -1574,7 +1578,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
             }
          }
 
-         return (boolean)0;
+         return 0 != 0;
       }
    }
 
@@ -1585,7 +1589,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       Container var7 = var3;
       if (var2 == null) {
          if (var3 == null) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var7 = var3;
@@ -1598,7 +1602,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
          if (var8) {
             int var4 = var3.getComponentZOrder(var1);
             if (var2 != null) {
-               return (boolean)var4;
+               return var4 != 0;
             }
 
             if (var4 < var3.getComponentCount() - 1) {
@@ -1615,7 +1619,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
             }
          }
 
-         return (boolean)0;
+         return 0 != 0;
       }
    }
 
@@ -1674,29 +1678,29 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
    public boolean m(JComponent var1, ButtonModel var2) {
       int[] var3;
       int var10000;
-      var3 = (((KD.s$arrint()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-      var10000 = ((this.K) != 0) != 0;
+      var3 = KD.s$arrint();
+      var10000 = (this.K) ? 1 : 0;
       label60:
       if (var3 == null) {
          if (this.K) {
-            var10000 = this.W;
+            var10000 = (this.W) ? 1 : 0;
             if (var3 != null) {
                break label60;
             }
 
             if (this.W) {
-               byte var5 = var1.isEnabled();
+               byte var5 = (byte)((var1.isEnabled()) ? 1 : 0);
                if (var3 != null) {
-                  return (boolean)var5;
+                  return var5 != 0;
                }
 
                if (var5 != 0) {
-                  return (boolean)1;
+                  return 1 != 0;
                }
             }
          }
 
-         var10000 = this.o;
+         var10000 = (this.o) ? 1 : 0;
       }
 
       label49:
@@ -1709,42 +1713,42 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
             }
 
             if (var10000 > 0) {
-               byte var6 = var1.isEnabled();
+               byte var6 = (byte)((var1.isEnabled()) ? 1 : 0);
                if (var3 != null) {
-                  return (boolean)var6;
+                  return var6 != 0;
                }
 
                if (var6 != 0) {
-                  return (boolean)1;
+                  return 1 != 0;
                }
             }
          }
 
-         var10000 = this.K;
+         var10000 = (this.K) ? 1 : 0;
       }
 
       if (var3 != null) {
-         return (boolean)var10000;
+         return var10000 != 0;
       } else {
          if (var10000 != 0) {
-            byte var7 = var2.isSelected();
+            byte var7 = (byte)((var2.isSelected()) ? 1 : 0);
             if (var3 != null) {
-               return (boolean)var7;
+               return var7 != 0;
             }
 
             if (!var7) {
-               var7 = var2.isPressed();
+               var7 = (byte)((var2.isPressed()) ? 1 : 0);
                if (var3 != null) {
-                  return (boolean)var7;
+                  return var7 != 0;
                }
 
                if (var7 == 0) {
-                  return (boolean)0;
+                  return 0 != 0;
                }
             }
          }
 
-         return (boolean)1;
+         return 1 != 0;
       }
    }
 
@@ -1800,8 +1804,8 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
 
    @Override
    public void paintIcon(Graphics var1, JComponent var2, Rectangle var3) {
-      Graphics2D var7;
       boolean var10;
+      Graphics2D var7;
       label30: {
          label32: {
             int[] var10000 = KD.s$arrint();
@@ -1846,18 +1850,22 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
    }
 
    public Shape u(AbstractButton var1, boolean var2) {
+      int var10;
+      int var16;
+      int var18;
+      int var22;
       int[] var10000 = KD.s$arrint();
-      byte var4 = var1.getComponentOrientation().isLeftToRight();
+      byte var4 = (byte)((var1.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       int[] var3 = var10000;
       byte var13 = var4;
       if (var3 == null) {
-         var13 = var4 != 0 ? this.I : this.G;
+         var13 = (byte)((var4 != 0 ? this.I : this.G) ? 1 : 0);
       }
 
       byte var5 = var13;
       byte var14 = var4;
       if (var3 == null) {
-         var14 = var4 != 0 ? this.G : this.I;
+         var14 = (byte)((var4 != 0 ? this.G : this.I) ? 1 : 0);
       }
 
       byte var6;
@@ -1878,8 +1886,8 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
 
       int var7;
       label68: {
-         var7 = (((var16) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-         int var17 = this.w;
+         var7 = var16;
+         int var17 = (this.w) ? 1 : 0;
          if (var3 == null) {
             if (this.w) {
                var18 = this.C;
@@ -1910,8 +1918,8 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
 
       int var9;
       label56: {
-         var9 = (((var20) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-         int var21 = this.N;
+         var9 = var20;
+         int var21 = (this.N) ? 1 : 0;
          if (var3 == null) {
             if (this.N) {
                var22 = var1.getHeight() - this.C - 1;
@@ -1924,7 +1932,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
          var22 = var21 + this.i;
       }
 
-      int var10 = var22;
+      var10 = var22;
       int var11 = var9 - var7;
       int var12 = var10 - var8;
       return (Shape)(this.i > 0
@@ -2756,6 +2764,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "f\f®\u001bçq¯{½\u0083W\"±Ú\u0013lìÁ\u0095\u0010\u0014\u0093Y\u0010±0$UÑâÖ¼\u0088Ì\u008f¼Æ\u0019\u0094+º";
@@ -2876,7 +2885,6 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       }
    }
 }
-
 
 
 

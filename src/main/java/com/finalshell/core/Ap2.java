@@ -27,7 +27,7 @@ public class Ap2 {
       l();
       JComponent var10003 = (JComponent)(Registry.emptyArgs());
       long var4 = 298874906529360085L;
-      Object[] var3 = var10003;
+      Object var3 = var10003;
       var10003 = Ref.h(298874906529360085L, var3, var4);
 
       try {

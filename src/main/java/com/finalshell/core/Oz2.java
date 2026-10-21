@@ -48,7 +48,7 @@ public class Oz2 implements KeyEventDispatcher {
                if (var2 == null) {
                   Window var10005 = (Window)(Registry.emptyArgs());
                   long var15 = 466015795722654385L;
-                  Object[] var14 = var10005;
+                  Object var14 = var10005;
                   var10005 = Ref.h(466015795722654385L, var14, var15);
 
                   try {

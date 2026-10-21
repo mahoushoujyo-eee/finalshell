@@ -483,7 +483,7 @@ public class TR implements Cloneable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public synchronized boolean R(String var1) {
-      String[] var10000 = Jk2.Y();
+      String[] var10000 = ProxyMessage.Y();
       Enumeration var3 = this.l.elements();
       String[] var2 = var10000;
       boolean var6;

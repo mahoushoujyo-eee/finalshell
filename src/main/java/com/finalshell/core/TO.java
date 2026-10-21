@@ -82,6 +82,7 @@ public class TO extends T4 {
 
    @Override
    public Dimension preferredLayoutSize(Container var1) {
+      Container var8;
       int var10000 = T4.b();
       Dimension var3 = new Dimension(0, 0);
       int var2 = var10000;
@@ -133,6 +134,7 @@ public class TO extends T4 {
 
    @Override
    public Dimension minimumLayoutSize(Container var1) {
+      Container var8;
       int var10000 = T4.O();
       Dimension var3 = new Dimension(0, 0);
       int var4 = 0;
@@ -184,6 +186,7 @@ public class TO extends T4 {
 
    @Override
    public void layoutContainer(Container var1) {
+      int var8;
       int var2;
       Insets var3;
       Dimension var4;
@@ -222,7 +225,7 @@ public class TO extends T4 {
          var15 = 0;
       }
 
-      int var8 = var15;
+      var8 = var15;
       int var9 = 0;
       int var10 = 0;
 

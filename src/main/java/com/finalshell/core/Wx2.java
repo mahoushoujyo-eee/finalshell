@@ -46,7 +46,7 @@ public final class Wx2 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public static String a() {
-      Clipboard var9;
+      boolean var9;
       String var10000 = FV_2.D();
       Transferable var1 = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null);
       String var0 = var10000;
@@ -1286,12 +1286,14 @@ public final class Wx2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
+      int var9;
       String[] var13 = new String[27];
       int var11 = 0;
       String var10 = "nÉÄ=m\u000b£f\u0095.©Ñ÷S\u0010B\u000f\u0016Ú\u00190\u0019ãµ\u0090niY*ø\u001bBY¯;\u008aè\u0012Á\u008a\u0004í\rB\b\u0003;Ñê\u0002\u001e9\u0004\b\u008fÉ\u009a\u0006\u009d_Sa\u001a\u001c\u0015þ\u0095´\u0088s\u0087\u0082(+\u0091bï\u0010~u\u0012\u001bXÂ®K\u0004f\u0080\u0004{\u0002b@\u0014½\u0087ÜÊ~Ï#!\u001f°äßÞ÷eRÎc\u0019¸\u0007+ÔnÉ{Ú\u009e\fr\u0093eî\u001f!Ó\u008b\u0006^\u0002Ä\bq\u0094\u008fA9|~²\u0003Ç3u\u0003²Í\u008f\u0002S\u000b\u0003cÑÍ\t\u000f\u0005°qÂe\u0094pù\f3AM´\u001aj{¾\u0007'\u009eé\u0013þ¢Ö\u0011=|7¾\u0001¬\u001a,¨ïP¿Ô ;\u0007\u001e#È7¯\u0005\u0004\u000eÜ\u0083°ì¥a\u008cßá\u000fZi@\t\u0003Õ\u009e\u001b";
       int var12 = "nÉÄ=m\u000b£f\u0095.©Ñ÷S\u0010B\u000f\u0016Ú\u00190\u0019ãµ\u0090niY*ø\u001bBY¯;\u008aè\u0012Á\u008a\u0004í\rB\b\u0003;Ñê\u0002\u001e9\u0004\b\u008fÉ\u009a\u0006\u009d_Sa\u001a\u001c\u0015þ\u0095´\u0088s\u0087\u0082(+\u0091bï\u0010~u\u0012\u001bXÂ®K\u0004f\u0080\u0004{\u0002b@\u0014½\u0087ÜÊ~Ï#!\u001f°äßÞ÷eRÎc\u0019¸\u0007+ÔnÉ{Ú\u009e\fr\u0093eî\u001f!Ó\u008b\u0006^\u0002Ä\bq\u0094\u008fA9|~²\u0003Ç3u\u0003²Í\u008f\u0002S\u000b\u0003cÑÍ\t\u000f\u0005°qÂe\u0094pù\f3AM´\u001aj{¾\u0007'\u009eé\u0013þ¢Ö\u0011=|7¾\u0001¬\u001a,¨ïP¿Ô ;\u0007\u001e#È7¯\u0005\u0004\u000eÜ\u0083°ì¥a\u008cßá\u000fZi@\t\u0003Õ\u009e\u001b"
          .length();
-      char var9 = 5;
+      var9 = 5;
       int var18 = -1;
 
       label93:
@@ -1301,7 +1303,6 @@ public final class Wx2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label88: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

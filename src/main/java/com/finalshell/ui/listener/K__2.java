@@ -30,7 +30,7 @@ public class K__2 implements ActionListener {
          Ref.g(434008521855552520L, var11);
          ArrayList var10005 = Registry.emptyArgs();
          long var14 = 508702504224153155L;
-         Object[] var13 = var10005;
+         Object var13 = var10005;
          var10005 = Ref.h(508702504224153155L, var13, var14);
 
          try {
@@ -42,7 +42,7 @@ public class K__2 implements ActionListener {
          L9 var3 = (L9)var10005.get(var2);
          String var10006 = (String)(Registry.emptyArgs());
          long var16 = 564648154927582737L;
-         Object[] var15 = var10006;
+         Object var15 = var10006;
          var10006 = Ref.h(564648154927582737L, var15, var16);
 
          try {

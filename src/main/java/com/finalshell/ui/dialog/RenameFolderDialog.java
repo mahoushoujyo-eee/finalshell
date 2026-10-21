@@ -49,7 +49,7 @@ public class RenameFolderDialog extends JDialog {
                Object var10007 = Ref.g(147921783444629588L, var19);
                String var10008 = (String)(Registry.emptyArgs());
                long var22 = 286931176286176762L;
-               Object[] var21 = var10008;
+               Object var21 = var10008;
                var10008 = Ref.h(286931176286176762L, var21, var22);
 
                try {
@@ -89,7 +89,7 @@ public class RenameFolderDialog extends JDialog {
             Object var10005 = Ref.g(147921783444629588L, var25);
             String var10006 = (String)(Registry.emptyArgs());
             long var28 = 286931176286176762L;
-            Object[] var27 = var10006;
+            Object var27 = var10006;
             var10006 = Ref.h(286931176286176762L, var27, var28);
 
             try {
@@ -930,6 +930,7 @@ public class RenameFolderDialog extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[12];
       int var3 = 0;
       String var2 = "吹禶\u0092u\u0011ú¼K<7é\n\u0012\u0016V¨éö\rÙå\f\u0004Gí3\u009c\u0002厷洷\u000b\u009e\u000e\r\u009c\u0016\u009d£¤s»\u000f\nÕá}\u001ab\"z\u009côü\u0002硿嬵\u0005敿幢旭乲姄\u001b^)ß\u008e¥¿XÜL\u001eàRÌÚ\u0092ê´\u0014'|yL-Ëu\u0088ò\u001c\u0085\u000b¤ÊÊ7µÏñ>WT:\\Uó{Ö|\u0088\u0093¹ñU2 Tº";
@@ -945,7 +946,6 @@ public class RenameFolderDialog extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

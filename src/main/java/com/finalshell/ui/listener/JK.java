@@ -2,15 +2,15 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Copy3;
+import com.finalshell.ui.panel.CommandListPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class JK implements ActionListener {
-   public final Copy3 p;
+   public final CommandListPanel p;
 
-   public JK(Copy3 var1) {
+   public JK(CommandListPanel var1) {
       this.p = var1;
    }
 

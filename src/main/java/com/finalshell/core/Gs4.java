@@ -14,6 +14,8 @@ public class Gs4 extends Gl4 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int var19;
+      int var21;
       int[] var6 = new int[var1 * var2];
       int var7 = 0;
       String[] var10000 = W5.q();
@@ -237,8 +239,6 @@ public class Gs4 extends Gl4 {
 
                         var12++;
                         if (var5 == null) {
-      int var21;
-      int var21;
                            break label198;
                         }
                         break;
@@ -304,12 +304,14 @@ public class Gs4 extends Gl4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long[] var19;
+      int var21;
       char[] var10003 = "#E\"\u000e\u0011p42G)\u0003\u0006}t\u000fE6\nM'5".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
       byte var36 = 49;
       char[] var10002 = var10003;
-      int var21 = var10004;
+      var21 = var10004;
       char[] var44;
       byte var52;
       int var10005;
@@ -363,7 +365,7 @@ public class Gs4 extends Gl4 {
                var27 = var10;
                var10 += 8;
                byte[] var16 = var12.substring(var27, var10).getBytes("ISO-8859-1");
-               long[] var19 = var14;
+               var19 = var14;
                var27 = var11++;
                long var34 = ((long)var16[0] & 255L) << 56
                   | ((long)var16[1] & 255L) << 48
@@ -1092,7 +1094,6 @@ public class Gs4 extends Gl4 {
       }
    }
 }
-
 
 
 

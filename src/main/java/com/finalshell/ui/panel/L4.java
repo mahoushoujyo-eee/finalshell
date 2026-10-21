@@ -16,7 +16,7 @@ public class L4 extends JScrollPane {
    @Override
    public void paint(Graphics var1) {
       Component[] var3 = this.getComponents();
-      boolean var10000 = Address.i();
+      boolean var10000 = FileBrowserAddressBar.i();
       Component[] var4 = var3;
       boolean var2 = var10000;
       int var5 = var3.length;

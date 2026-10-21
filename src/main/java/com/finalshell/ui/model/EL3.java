@@ -4,7 +4,7 @@ import com.finalshell.core.Sf2;
 import com.finalshell.ui.panel.Pb4;
 
 public final class EL3 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -65,6 +65,7 @@ public final class EL3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var2 = new String[6];
       int var6 = 0;
       String var5 = "J\t'n\u001d\u0019\u0003J\u0019<\bI\u000e$w\u000f\u000f\u0019O\u000bI\u000e$w\u000f\u0007\u001eO\u000f$}\u000bJ\t'n\u001d\u0007\u001eO\u000f$}";
@@ -80,7 +81,6 @@ public final class EL3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label48: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

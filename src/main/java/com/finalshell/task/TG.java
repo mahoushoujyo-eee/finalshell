@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.core.File8;
+import com.finalshell.core.FileDropTransferHandler;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.dialog.Nq2;
@@ -12,9 +12,9 @@ public class TG implements Runnable {
    public final Nq2 Y;
    public final List r;
    public final String I;
-   public final File8 J;
+   public final FileDropTransferHandler J;
 
-   public TG(File8 var1, String var2, Nq2 var3, List var4, String var5) {
+   public TG(FileDropTransferHandler var1, String var2, Nq2 var3, List var4, String var5) {
       this.J = var1;
       this.W = var2;
       this.Y = var3;

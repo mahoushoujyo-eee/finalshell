@@ -35,9 +35,10 @@ public class AW extends JDialog {
 
    public AW(DU var1) {
    super((Dialog)var1);
+   String var20;
       short var10000 = -28412;
       short var10001 = 31671;
-      Object[] var10002 = Registry.packArgs(this.getRootPane());
+      Object var10002 = Registry.packArgs(this.getRootPane());
       long var30 = 560784054776466487L;
       Ref.h2(560784054776466487L, var30);
 
@@ -67,7 +68,7 @@ public class AW extends JDialog {
       Ref.h2(270389152141252877L, var36);
       U62 var10005 = (U62)(Registry.emptyArgs());
       long var39 = 306266403902896148L;
-      Object[] var38 = var10005;
+      Object var38 = var10005;
       var10005 = Ref.h(306266403902896148L, var38, var39);
 
       try {
@@ -111,7 +112,7 @@ public class AW extends JDialog {
       JTextField var10009;
       String var10011 = (String)(Registry.emptyArgs());
       long var45 = 204000105621842013L;
-      Object[] var44 = var10011;
+      Object var44 = var10011;
       var10011 = Ref.h(204000105621842013L, var44, var45);
 
       try {
@@ -140,7 +141,7 @@ var3 = new JPanel(var10011);
       JTextField var10017 = (JTextField)Ref.g(614660311662874560L, var58);
       String var10019 = (String)(Registry.emptyArgs());
       long var61 = 204000105621842013L;
-      Object[] var60 = var10019;
+      Object var60 = var10019;
       var10019 = Ref.h(204000105621842013L, var60, var61);
 
       try {
@@ -176,7 +177,7 @@ var3 = new JPanel(var10011);
       JPasswordField var10020;
       String var10022 = (String)(Registry.emptyArgs());
       long var67 = 191807067392725406L;
-      Object[] var66 = var10022;
+      Object var66 = var10022;
       var10022 = Ref.h(191807067392725406L, var66, var67);
 
       try {
@@ -201,7 +202,7 @@ var3 = new JPanel(var10022);
       JPasswordField var10025 = (JPasswordField)Ref.g(195109804691767143L, var78);
       String var10027 = (String)(Registry.emptyArgs());
       long var81 = 191807067392725406L;
-      Object[] var80 = var10027;
+      Object var80 = var10027;
       var10027 = Ref.h(191807067392725406L, var80, var81);
 
       try {
@@ -286,7 +287,7 @@ var10032 = new JPanel((String)var10033);
       String var15 = (String)var10038;
       JButton var10039 = (JButton)(Registry.packArgs(var15));
       long var107 = 390088110481030006L;
-      Object[] var106 = var10039;
+      Object var106 = var10039;
       var10039 = Ref.h(390088110481030006L, var106, var107);
 
       try {
@@ -357,11 +358,11 @@ var10032 = new JPanel((String)var10033);
          throw var169.getTargetException();
       }
 
-      String var20 = (String)var10049;
+      var20 = (String)var10049;
       short var212 = -28402;
       JButton var10051 = (JButton)(Registry.packArgs(var20));
       long var129 = 390088110481030006L;
-      Object[] var128 = var10051;
+      Object var128 = var10051;
       var10051 = Ref.h(390088110481030006L, var128, var129);
 
       try {
@@ -386,7 +387,7 @@ var10032 = new JPanel((String)var10033);
       String var22 = var10051;
       JButton var10052 = (JButton)(Registry.packArgs(var22));
       long var133 = 390088110481030006L;
-      Object[] var132 = var10052;
+      Object var132 = var10052;
       var10052 = Ref.h(390088110481030006L, var132, var133);
 
       try {
@@ -445,7 +446,7 @@ var10032 = new JPanel((String)var10033);
       String var26 = (String)var10059;
       JButton var10060 = (JButton)(Registry.packArgs(var26));
       long var147 = 390088110481030006L;
-      Object[] var146 = var10060;
+      Object var146 = var10060;
       var10060 = Ref.h(390088110481030006L, var146, var147);
 
       try {
@@ -484,7 +485,7 @@ var10032 = new JPanel((String)var10033);
       String var28 = (String)var10063;
       JButton var10064 = (JButton)(Registry.packArgs(var28));
       long var155 = 390088110481030006L;
-      Object[] var154 = var10064;
+      Object var154 = var10064;
       var10064 = Ref.h(390088110481030006L, var154, var155);
 
       try {
@@ -498,7 +499,7 @@ var10032 = new JPanel((String)var10033);
       var29.addActionListener(new Ua2(this));
       var10064 = Registry.emptyArgs();
       long var157 = 409729356224766465L;
-      Object[] var156 = var10064;
+      Object var156 = var10064;
       Ref.h(409729356224766465L, var156, var157);
 
       try {
@@ -538,11 +539,12 @@ var10032 = new JPanel((String)var10033);
    }
 
    public void X() {
+      long var20;
       Object var1 = 184823010927613107L;
       JTextField var10001 = (JTextField)Ref.g(184823010927613107L, var1);
       Registry.packArgs(ConnectionProperty.l$String());
       long var3 = 517287540690064504L;
-      Object[] var10003 = Registry.packArgs(Ref.h2(517287540690064504L, var3));
+      Object var10003 = Registry.packArgs(Ref.h2(517287540690064504L, var3));
       long var5 = 492016222988846142L;
       Object var10004 = Ref.h2(492016222988846142L, var5);
 
@@ -560,11 +562,11 @@ var10032 = new JPanel((String)var10033);
       Ref.h2(270389152141252877L, var9);
       JTextField var10007 = Registry.emptyArgs();
       long var12 = 306266403902896148L;
-      Object[] var11 = var10007;
+      Object var11 = var10007;
       var10007 = (JTextField)Ref.h(306266403902896148L, var11, var12);
       String var10008 = (String)(Registry.emptyArgs());
       long var14 = 204000105621842013L;
-      Object[] var13 = var10008;
+      Object var13 = var10008;
       var10008 = Ref.h(204000105621842013L, var13, var14);
 
       try {
@@ -580,12 +582,12 @@ var10032 = new JPanel((String)var10033);
       long var17 = 270389152141252877L;
       Ref.h2(270389152141252877L, var17);
       JPasswordField var10011 = Registry.emptyArgs();
-      long var20 = 306266403902896148L;
-      Object[] var19 = var10011;
+      var20 = 306266403902896148L;
+      Object var19 = var10011;
       var10011 = (JPasswordField)Ref.h(306266403902896148L, var19, var20);
       String var10012 = (String)(Registry.emptyArgs());
       long var22 = 191807067392725406L;
-      Object[] var21 = var10012;
+      Object var21 = var10012;
       var10012 = Ref.h(191807067392725406L, var21, var22);
 
       try {
@@ -609,7 +611,7 @@ var10032 = new JPanel((String)var10033);
       Object[] var29 = var10016;
       Registry.packArgs(Ref.h(256291570319778198L, var29, var30));
       long var31 = 517287540690064504L;
-      Object[] var10017 = Registry.packArgs(Ref.h2(517287540690064504L, var31));
+      Object var10017 = Registry.packArgs(Ref.h2(517287540690064504L, var31));
       long var33 = 492016222988846142L;
       Object var10018 = Ref.h2(492016222988846142L, var33);
 
@@ -1448,6 +1450,7 @@ var10032 = new JPanel((String)var10033);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[27];
       int var3 = 0;
       String var2 = "õ½RÂR\u0006²\u0097ô·r«\u008d1KJ\u0087\b\u0006NT=\u0011º\u0095\u0005CQù\u009f\u001b\u0094i\u009a\u0010ä51ow\u0080ä©Z\u001f¿\u0013e\bÊd|²1 \u00037\n¹#ö¼ñÑ¶\fóè0}d(¤\u00111< %¬\u0019J\u0015\u008f\u000b\u0001\u0099:\u009f\u001e[Ã\t\u001bä\u001aÞÃ\u008fPäÿagÍ.î\u008fø\u0007elU{\u001bÌpÑ.\u008b\u0016p×ñú5¦:\u0090i\u0001VMz±N#6eÍt%Ê\u008aJ*$ý\u009e\u00ad\u0086\t\u0099sò§L`HÈ\u0086à:>À\u001c½\u0085¶¥)´.oY©\u0005&Û©Ã/j°ñ_l+TF\u001d\u001bTí\u000eÑÔâ9\t\u000eý8E.?XP*\nØ\\ÚSt,\u0006³å\u001f0QPÒ\"®fw\u001az),·\u0089%·\u0097}ÿÌèJõ2a\u0013¤\u009a}Ü\u0014(D\u008d-ç{\u0087PÔñT±3\u009fLÀ\u0086ó\u001d\u0085t±\u009bÉs2\u0097Ú¶uÅÕÙG«\nÑR x#ÿEjy¸£ü\u000egÍ4\u001aÓj¦´.¿Rjýl\u0011Q\u0000ò£\u000b]½RMc=ôs\u001a\u0084Ó\u0092\u001cúµ^£4t\u008dw-ª\u008bF\n¥ù®-\u0080\u0019Yqë÷^i\u0018Ú\u008d(M\u001f¢r&$sõ7\u008dù\tn^î4Þ¬\u001cts%[\u0091¼«\u00814\u0083\u0004z¼\u008eYð\u001aº\u008a(Â\u0011\u008c§IW|ÃS\u0081\u0090\u0019\u0086»\u0004ójîO(×\u0001\u008c¯r\rrxµm\u0007G2\u0004ß:wY¨ýeûeg\u001e´{SõuÓo»¨Â\u0011¸-ê6\u0011\rA =ëÿ5S\u001aò\u0016\u0003Ô£¬Qü0ñZãÔ\u0018¯\u0095¡ÀÙ9W\u0003Ø\u0010÷:ÔLG£\u007f\u0092øðýq2\u0081ë!\be¼ïv\u0093Ø\u0093¦k\u009dÜ_\u0097¼³³(©{d¯\u0018®\u009cvË/þ\u0019\u0007ß\u0017#÷|\u009d#\u0012\u0095Ïþ\u000eÉZ\u0090¼Èiq\u00997Q-ËÆUK\b©\u001c\u0010½¼D²\u000e(Vù(eö\u0013\tyN,*xïÓ¢\u0005³[\u0081s\u0093\u000bè\u0019[# 4.\u0012b\u009båF\u0080\u00ad÷í\u0011<\u001aDÀ\u0089\rÎ¡ÒÂÆúö\f¾Î\rÂíq²ðÚõ\u0082\u009dÇ`0tÐ\u0086Ùò\u008bFã;\u009aîð\u0000)\u0086\u000eôùDs_\u0096\u00ad\u009d\u0098/-èR\u0093Uz¨âmØ¼õ¢o\u0085ýO-ÛI\u0019ó\u001a;!f13&m21ä\bÏa¶öÍ\u0092\u0090]Ì'r=m0~0Ä\u009c\u008b3i}!ª¹\u0097¯)\u001aO÷\u009e\u0003\u0080¿¡:QÏT¼h4\u0099#Whz\u0016_½\u0012\u009dô,N\u009f`\u0011ã\u0001\u0097Ó¥";
@@ -1463,7 +1466,6 @@ var10032 = new JPanel((String)var10033);
          byte var10002 = -1;
 
          while (true) {
-      JTextArea var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

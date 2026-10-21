@@ -27,6 +27,7 @@ public class Yt4 extends GT3 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int var38;
       int var6 = 0;
       String[] var10000 = W5.q();
       int[] var7 = new int[this.Z];
@@ -216,8 +217,6 @@ public class Yt4 extends GT3 {
                            }
 
                            if (var38 <= var10001) {
-      int var38;
-      int var38;
                               break label86;
                            }
 
@@ -552,7 +551,6 @@ public class Yt4 extends GT3 {
       }
    }
 }
-
 
 
 

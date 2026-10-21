@@ -169,6 +169,13 @@ public class Yj4 extends GT3 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      Bh2 var20;
+      boolean var49;
+      int var51;
+      Yj4 var52;
+      Od4 var62;
+      Yj4 var63;
+      Yj4 var64;
       String[] var10000 = W5.q();
       int var6 = 0;
       int[] var7 = new int[var1 * var2];
@@ -198,17 +205,17 @@ public class Yj4 extends GT3 {
             var14 = new O_3(new Color(this.e.M));
             var15 = new O_3(new Color(this.e.R));
             var16 = this.t;
-            var49 = this.T;
+            var49 = (this.T) != 0;
             label346:
             if (var5 != null) {
                if (this.T != 0) {
-                  var49 = this.T;
+                  var49 = (this.T) != 0;
                   if (var5 == null) {
                      break label346;
                   }
 
                   if (this.T != 1) {
-                     var49 = this.T;
+                     var49 = (this.T) != 0;
                      if (var5 == null) {
                         break label346;
                      }
@@ -220,11 +227,11 @@ public class Yj4 extends GT3 {
                }
 
                float var68;
-               var49 = (var68 = this.m - 0.0F) == 0.0F ? 0 : (var68 < 0.0F ? -1 : 1);
+               var49 = ((var68 = this.m - 0.0F) == 0.0F ? 0 : (var68 < 0.0F ? -1 : 1)) != 0;
             }
 
             if (var5 != null) {
-               if (var49 != 0) {
+               if (var49) {
                   int var17;
                   int var18;
                   int[] var19;
@@ -236,13 +243,13 @@ public class Yj4 extends GT3 {
                      int var10001 = 2;
                      if (var5 != null) {
                         if (this.T == 2) {
-                           var51 = this.t instanceof Bh2;
+                           var51 = (this.t instanceof Bh2) ? 1 : 0;
                            if (var5 == null) {
                               break label329;
                            }
 
                            if (var51 != 0) {
-                              Bh2 var20 = (Bh2)this.t;
+                              var20 = (Bh2)this.t;
                               var17 = var20.H();
                               var18 = var20.n();
                               var19 = var20.d();
@@ -276,7 +283,7 @@ public class Yj4 extends GT3 {
                   break label348;
                }
 
-               var49 = this.T;
+               var49 = (this.T) != 0;
             }
 
             if (var49 != 2) {
@@ -510,7 +517,6 @@ public class Yj4 extends GT3 {
                         label359: {
                            if (var5 != null) {
                               if (var58 == 0) {
-      Od4 var62;
                                  break label358;
                               }
 
@@ -653,6 +659,7 @@ public class Yj4 extends GT3 {
    }
 
    public O_3 U(Od4 var1, Od4 var2, Od4 var3, O_3 var4, O_3 var5, Gy2 var6, Go2[] var7) {
+      float var20;
       this.b.t(var4);
       this.b.K(var6.e);
       String[] var10000 = W5.q();
@@ -774,6 +781,7 @@ public class Yj4 extends GT3 {
    }
 
    public int r(Od4 var1, int[] var2, int var3, int var4) {
+      boolean var20;
       String[] var5 = W5.q();
       if (this.n == null) {
          return 0;
@@ -820,7 +828,7 @@ public class Yj4 extends GT3 {
                label49: {
                   var9 = var19 / var10001;
                   float var25;
-                  int var20 = (var25 = var9 - 1.0F) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
+                  var20 = (var25 = var9 - 1.0F) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
                   if (var5 != null) {
                      if (var20 > 0) {
                         var9 = 1.0F;
@@ -1168,7 +1176,6 @@ public class Yj4 extends GT3 {
       }
    }
 }
-
 
 
 

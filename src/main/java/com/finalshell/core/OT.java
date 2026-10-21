@@ -1041,6 +1041,7 @@ public final class OT {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "Mé¯C\u0085Ç\u0014ún&P\u0000#Ò\fT¯óã/\bÈ\u0007¸Á\u0014\u0006\u0019}";
@@ -1056,7 +1057,6 @@ public final class OT {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

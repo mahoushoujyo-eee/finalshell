@@ -6,19 +6,19 @@ import com.finalshell.core.L1;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.G1;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.event.KeyEvent;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 
 public class Fm2 extends ClearListDialog {
-   public Address YA;
+   public FileBrowserAddressBar YA;
    public static String[] cb;
    public static String[] db;
    public static long[] gb;
    public static Integer[] hb;
 
-   public Fm2(Address var1, Dv2 var2) {
+   public Fm2(FileBrowserAddressBar var1, Dv2 var2) {
       super(var2, true);
       Object[] var10001 = Registry.packArgs(b(31578, 3999676212341873058L), b(6194, 6454351133435886283L));
       long var4 = 620992058944098515L;
@@ -61,7 +61,7 @@ public class Fm2 extends ClearListDialog {
       Ref.h(306266403902896148L, var4, var5);
       Dx4_2 var10003 = Registry.emptyArgs();
       long var7 = 278198838305589877L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       var10003 = Ref.h(278198838305589877L, var6, var7);
 
       try {
@@ -111,16 +111,16 @@ public class Fm2 extends ClearListDialog {
 
    @Override
    public void k(L1 var1) {
-      boolean var2 = Address.i();
+      boolean var2 = FileBrowserAddressBar.i();
       Object var4 = 252529215946785084L;
-      Address var10001 = (Address)Ref.g(252529215946785084L, var4);
+      FileBrowserAddressBar var10001 = (FileBrowserAddressBar)Ref.g(252529215946785084L, var4);
       if (var2) {
          if (var10001 == null) {
             return;
          }
 
          Object var6 = 252529215946785084L;
-         Address var10002 = (Address)Ref.g(252529215946785084L, var6);
+         FileBrowserAddressBar var10002 = (FileBrowserAddressBar)Ref.g(252529215946785084L, var6);
       }
 
       Object[] var10003 = Registry.emptyArgs();
@@ -129,7 +129,7 @@ public class Fm2 extends ClearListDialog {
       Ref.h(542058094445767607L, var8, var9);
       String var10005 = (String)(Registry.emptyArgs());
       long var11 = 374079817658963288L;
-      Object[] var10 = var10005;
+      Object var10 = var10005;
       var10005 = Ref.h(374079817658963288L, var10, var11);
 
       try {
@@ -152,7 +152,7 @@ public class Fm2 extends ClearListDialog {
       SwingUtilities.invokeLater(new G1(this));
       var10005 = Registry.emptyArgs();
       long var15 = 374079817658963288L;
-      Object[] var14 = var10005;
+      Object var14 = var10005;
       var10005 = Ref.h(374079817658963288L, var14, var15);
 
       try {

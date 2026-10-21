@@ -6,6 +6,7 @@ import javax.swing.JComponent;
 
 public class E92 extends E12 {
    public void G(AbstractButton var1, String var2, com.finalshell.ui.model.G9 var3, Object[] var4) {
+      int var8;
       String[] var10000 = E12.A();
       String var6 = this.q(var3, var4);
       String[] var5 = var10000;

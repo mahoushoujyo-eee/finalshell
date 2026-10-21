@@ -106,10 +106,11 @@ public class Q2_3 extends D2_5 {
    @C_9
    @Override
    public Iterable E(String var1, boolean var2) {
+      boolean Z;
       int[] var3;
       int var10000;
       var3 = F_6.h();
-      var10000 = Z;
+      var10000 = (Z) ? 1 : 0;
       label48:
       if (var3 == null) {
          if (!Z) {
@@ -969,6 +970,7 @@ public class Q2_3 extends D2_5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean Z;
       String[] var13 = new String[2];
       int var11 = 0;
       String var10 = "VY2ÐAß©.¦ä\u0088\u008f-\u0094Ü\u009brõ©trÈ^vASk.þ©éV°`V?\"\t}wQ;À£\u0002àg¼p\u009eª\u000eÐÖ\u00882,~ oµùE\u0010¿w« ^\u001d";

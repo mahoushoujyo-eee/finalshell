@@ -80,12 +80,13 @@ public class JR extends JTable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void K(KV var1, String var2) {
+      long var21;
       long var9 = 355468840123996031L;
       Ref.s(355468840123996031L, var2, var9);
       KA_3.y$arrky_4();
       ArrayList var10003 = (ArrayList)(Registry.emptyArgs());
       long var11 = 604361570872278918L;
-      Object[] var10 = var10003;
+      Object var10 = var10003;
       var10003 = Ref.h(604361570872278918L, var10, var11);
 
       try {
@@ -99,11 +100,11 @@ public class JR extends JTable {
       int var5 = Registry.lookupField(149407827136588388L).getInt(null);
       var10003 = Registry.emptyArgs();
       long var13 = 559196035657690421L;
-      Object[] var12 = var10003;
+      Object var12 = var10003;
       var10003 = Ref.h(559196035657690421L, var12, var13);
 
       try {
-         var10003 = (Ty2)var10003;
+         var10003 = (RemoteProcessManager)var10003;
       } catch (InvocationTargetException var25) {
          throw var25.getTargetException();
       }
@@ -186,7 +187,7 @@ public class JR extends JTable {
       Object var18 = 278039161395767975L;
       Ref.g(278039161395767975L, var18);
       Object[] var10006 = Registry.packArgs(var6);
-      long var21 = 552647206567648104L;
+      var21 = 552647206567648104L;
       Object[] var20 = var10006;
       Ref.h(552647206567648104L, var20, var21);
 
@@ -210,6 +211,8 @@ public class JR extends JTable {
    }
 
    public void n(K42 var1) {
+      Integer var21;
+      boolean var23;
       KA_3.y$arrky_4();
       long var10 = 278039161395767975L;
       Ref.s(278039161395767975L, var1, var10);

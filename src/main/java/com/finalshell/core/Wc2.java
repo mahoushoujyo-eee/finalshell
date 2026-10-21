@@ -2,9 +2,10 @@ package com.finalshell.core;
 
 import java.awt.event.KeyEvent;
 
-public abstract class Wc2 extends Sr2 {
+public abstract class Wc2 implements Sr2 {
    public static Wc2 g;
 
+   @Override
    void j(KeyEvent var1);
 
    static {
@@ -15,7 +16,6 @@ public abstract class Wc2 extends Sr2 {
       g = new DN3();
    }
 }
-
 
 
 

@@ -1022,6 +1022,8 @@ public abstract class Ii2 implements Wt2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var14;
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "¹:?Ss\u0091\u0019\u001f\t\u0088\u008aü×õ\u0005âA¿\"=";
@@ -1036,14 +1038,13 @@ public abstract class Ii2 implements Wt2_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;
                int var6 = 0;
                byte var27 = var10000;
                var20 = var24;
-               int var14 = var10004;
+               var14 = var10004;
                byte var32;
                char[] var36;
                int var10006;

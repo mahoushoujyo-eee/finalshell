@@ -3,8 +3,8 @@ package com.finalshell.ui.listener;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.AA;
-import com.finalshell.ui.panel.Connection5;
-import com.finalshell.ui.panel.RouteTracePanel2;
+import com.finalshell.ui.panel.ImportExportPanel;
+import com.finalshell.ui.panel.ConnectionContextMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
@@ -12,11 +12,11 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 public class ConfirmDeleteSelectedListener implements ActionListener {
-   public final RouteTracePanel2 D;
+   public final ConnectionContextMenu D;
    public static String[] a;
    public static String[] b;
 
-   public ConfirmDeleteSelectedListener(RouteTracePanel2 var1) {
+   public ConfirmDeleteSelectedListener(ConnectionContextMenu var1) {
       this.D = var1;
    }
 
@@ -58,7 +58,7 @@ public class ConfirmDeleteSelectedListener implements ActionListener {
       Ref.g(406026890430241330L, var17);
       Object var19 = 131037384951395357L;
       int var4 = JOptionPane.showConfirmDialog(
-         SwingUtilities.getWindowAncestor((Connection5)Ref.g(131037384951395357L, var19)), a(-25072, 12057), a(-25071, 1227), 0
+         SwingUtilities.getWindowAncestor((ImportExportPanel)Ref.g(131037384951395357L, var19)), a(-25072, 12057), a(-25071, 1227), 0
       );
       if (var2 == null) {
          if (var4 == 0) {

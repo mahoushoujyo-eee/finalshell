@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class NS implements Runnable {
-   public final Ty2 m;
+   public final RemoteProcessManager m;
 
-   public NS(Ty2 var1) {
+   public NS(RemoteProcessManager var1) {
       this.m = var1;
    }
 

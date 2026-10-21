@@ -4,7 +4,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.panel.AA;
-import com.finalshell.ui.panel.RouteTracePanel2;
+import com.finalshell.ui.panel.ConnectionContextMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -12,9 +12,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Ua4 implements ActionListener {
-   public final RouteTracePanel2 E;
+   public final ConnectionContextMenu E;
 
-   public Ua4(RouteTracePanel2 var1) {
+   public Ua4(ConnectionContextMenu var1) {
       this.E = var1;
    }
 
@@ -65,7 +65,7 @@ public class Ua4 implements ActionListener {
       Ref.g(131037384951395357L, var22);
       DefaultMutableTreeNode var10009 = (DefaultMutableTreeNode)(Registry.emptyArgs());
       long var25 = 148691699844242618L;
-      Object[] var24 = var10009;
+      Object var24 = var10009;
       var10009 = Ref.h(148691699844242618L, var24, var25);
 
       try {
@@ -94,7 +94,7 @@ public class Ua4 implements ActionListener {
       Ref.h(410905379772103887L, var28, var29);
       File var10013 = (File)(Registry.emptyArgs());
       long var31 = 272998330038223631L;
-      Object[] var30 = var10013;
+      Object var30 = var10013;
       var10013 = Ref.h(272998330038223631L, var30, var31);
 
       try {
@@ -105,7 +105,7 @@ public class Ua4 implements ActionListener {
 
       var10013 = Registry.packArgs(var10013.getAbsolutePath());
       long var33 = 489768706953623433L;
-      Object[] var32 = var10013;
+      Object var32 = var10013;
       Ref.h(489768706953623433L, var32, var33);
 
       try {

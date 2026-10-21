@@ -4,24 +4,24 @@ import com.finalshell.core.LD3_2;
 import com.finalshell.core.Yy2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Edit;
+import com.finalshell.ui.panel.ProxySelectionPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class ConfirmDeleteListener implements ActionListener {
-   public final Edit A;
+   public final ProxySelectionPanel A;
    public static String[] a;
    public static String[] b;
 
-   public ConfirmDeleteListener(Edit var1) {
+   public ConfirmDeleteListener(ProxySelectionPanel var1) {
       this.A = var1;
    }
 
    @Override
    public void actionPerformed(ActionEvent var1) {
-      Edit.t();
+      ProxySelectionPanel.t();
       Object var6 = 397164745316218807L;
       Object var10002 = Ref.g(397164745316218807L, var6);
       Object var8 = 155517873227409293L;
@@ -34,7 +34,7 @@ public class ConfirmDeleteListener implements ActionListener {
          Ref.g(318973214616786715L, var12);
          LD3_2 var10005 = (LD3_2)(Registry.packArgs(var3));
          long var15 = 548405852497465390L;
-         Object[] var14 = var10005;
+         Object var14 = var10005;
          var10005 = Ref.h(548405852497465390L, var14, var15);
 
          try {
@@ -45,7 +45,7 @@ public class ConfirmDeleteListener implements ActionListener {
 
          LD3_2 var4 = var10005;
          Object var16 = 397164745316218807L;
-         Object var5 = JOptionPane.showConfirmDialog((Edit)Ref.g(397164745316218807L, var16), a(-32002, -12706), a(-32001, 17574), 0);
+         Object var5 = JOptionPane.showConfirmDialog((ProxySelectionPanel)Ref.g(397164745316218807L, var16), a(-32002, -12706), a(-32001, 17574), 0);
          LD3_2 var10006 = (LD3_2)var5;
          if (var2 == null) {
             if (var5 != null) {
@@ -70,7 +70,7 @@ public class ConfirmDeleteListener implements ActionListener {
             Object var10010 = Ref.g(318973214616786715L, var22);
             String var10011 = (String)(Registry.emptyArgs());
             long var25 = 254699288696797633L;
-            Object[] var24 = var10011;
+            Object var24 = var10011;
             var10011 = Ref.h(254699288696797633L, var24, var25);
 
             try {

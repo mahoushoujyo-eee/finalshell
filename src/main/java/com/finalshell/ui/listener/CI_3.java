@@ -62,6 +62,7 @@ public class CI_3 extends MouseMotionAdapter {
    }
 
    public static boolean V(JList var0) {
+      boolean var6;
       MouseMotionListener[] var2 = var0.getMouseMotionListeners();
       String[] var10000 = CI.c();
       int var3 = var2.length;

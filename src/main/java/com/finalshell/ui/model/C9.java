@@ -96,6 +96,7 @@ public class C9 implements Serializable {
    }
 
    public boolean Y(com.finalshell.core.K9 var1) {
+      LO3 var5;
       Ky4[] var2 = KZ3.W();
       com.finalshell.core.K9 var10000 = var1;
       if (var2 == null) {
@@ -116,7 +117,6 @@ public class C9 implements Serializable {
          label41:
          if (var2 == null) {
             if (this.p != null) {
-      LO3 var5;
                var5 = var3;
                if (var2 != null) {
                   break label41;
@@ -132,7 +132,6 @@ public class C9 implements Serializable {
 
          if (var2 == null) {
             if (var5 == null) {
-      LO3 var5;
                return true;
             }
 
@@ -985,7 +984,9 @@ public class C9 implements Serializable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var5 = new String[5];
+      char[] var20;
+      String[] var5;
+      var5 = new String[5];
       int var3 = 0;
       String var2 = "\u001cÍ\u0003_ 5\u0002vì";
       int var4 = "\u001cÍ\u0003_ 5\u0002vì".length();
@@ -1101,7 +1102,6 @@ public class C9 implements Serializable {
       }
    }
 }
-
 
 
 

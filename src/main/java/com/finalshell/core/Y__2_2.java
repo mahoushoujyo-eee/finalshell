@@ -319,6 +319,9 @@ public class Y__2_2 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public static void j(ArrayList var0, ConnectHost var1) {
+      Integer var43;
+      Integer var46;
+      Integer var49;
       int[] var10000 = YE.n();
       Iterator var3 = var0.iterator();
       int[] var2 = var10000;
@@ -356,9 +359,9 @@ public class Y__2_2 {
                   }
 
                   try {
-                     Object[] var10003 = Registry.emptyArgs();
+                     Object var10003 = Registry.emptyArgs();
                      long var9 = 437259655987883724L;
-                     Object[] var8 = var10003;
+                     Object var8 = var10003;
                      var10003 = Ref.h(437259655987883724L, var8, var9);
 
                      try {
@@ -416,9 +419,9 @@ public class Y__2_2 {
 
                   Pc2 var32;
                   try {
-                     Object[] var44 = Registry.emptyArgs();
+                     Object var44 = Registry.emptyArgs();
                      long var13 = 437259655987883724L;
-                     Object[] var12 = var44;
+                     Object var12 = var44;
                      var44 = Ref.h(437259655987883724L, var12, var13);
 
                      try {
@@ -466,9 +469,9 @@ public class Y__2_2 {
 
             if (var35 == var10002) {
                try {
-                  Object[] var47 = Registry.emptyArgs();
+                  Object var47 = Registry.emptyArgs();
                   long var17 = 437259655987883724L;
-                  Object[] var16 = var47;
+                  Object var16 = var47;
                   var47 = Ref.h(437259655987883724L, var16, var17);
 
                   try {

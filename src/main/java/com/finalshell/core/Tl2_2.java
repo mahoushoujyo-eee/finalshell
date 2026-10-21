@@ -1578,6 +1578,7 @@ public class Tl2_2 extends T4 implements SwingConstants {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "H\u0095\u001aV]#\u0090\t\u001dþ5\u0003²Ä\u0012\u0013ì\tâ\u0099ÊïMYí \u0013";
@@ -1592,7 +1593,6 @@ public class Tl2_2 extends T4 implements SwingConstants {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

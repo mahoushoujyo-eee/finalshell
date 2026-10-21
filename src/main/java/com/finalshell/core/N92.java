@@ -57,10 +57,11 @@ public class N92 {
    }
 
    public int x(String var1) {
+      Integer var5;
       Ky4[] var10000 = ZS.p();
       Integer var3 = (Integer)this.c.get(var1);
       Ky4[] var2 = var10000;
-      Integer var5 = var3;
+      var5 = var3;
       if (var2 == null) {
          if (var3 == null) {
             this.c.put(var1, this.r++);
@@ -90,13 +91,13 @@ public class N92 {
    }
 
    public boolean S(String var1) {
+      int var5;
       Ky4[] var10000 = ZS.p();
       int var3 = 0;
       Ky4[] var2 = var10000;
 
       while (true) {
          if (var3 < var1.length()) {
-      Integer var5;
             char var4 = var1.charAt(var3);
             var5 = var4;
             if (var2 != null) {
@@ -117,11 +118,11 @@ public class N92 {
                      break label49;
                   }
 
-                  var5 = S7.h(var4);
+                  var5 = (S7.h(var4)) ? 1 : 0;
                }
 
                if (var2 != null) {
-                  return (boolean)var5;
+                  return var5 != 0;
                }
 
                if (var5 == 0) {
@@ -139,7 +140,7 @@ public class N92 {
          break;
       }
 
-      return (boolean)var5;
+      return var5 != 0;
    }
 
    public static ZzzzF6BeanInfo m(N92 var0) {
@@ -976,7 +977,9 @@ public class N92 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var5 = new String[6];
+      char[] var20;
+      String[] var5;
+      var5 = new String[6];
       int var3 = 0;
       String var2 = "E\u008e ^\u0004¢\u0092ÜÝ\f\u000f\bi\u008eVS\u0000\u0087CÐQ@\r\u008e)YªPÃ×\u0015OM\u0094\u008b\u009c";
       int var4 = "E\u008e ^\u0004¢\u0092ÜÝ\f\u000f\bi\u008eVS\u0000\u0087CÐQ@\r\u008e)YªPÃ×\u0015OM\u0094\u008b\u009c".length();
@@ -990,7 +993,6 @@ public class N92 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

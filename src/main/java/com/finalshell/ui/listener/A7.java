@@ -1,14 +1,14 @@
 package com.finalshell.ui.listener;
 
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import javax.swing.event.TreeExpansionEvent;
 import javax.swing.event.TreeWillExpandListener;
 import javax.swing.tree.ExpandVetoException;
 
 public class A7 implements TreeWillExpandListener {
-   public final Connection5 R;
+   public final ImportExportPanel R;
 
-   public A7(Connection5 var1) {
+   public A7(ImportExportPanel var1) {
       this.R = var1;
    }
 

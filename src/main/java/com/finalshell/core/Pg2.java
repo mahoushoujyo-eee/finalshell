@@ -140,6 +140,7 @@ public class Pg2 extends PQ{
    }
 
    public void k(File var1) {
+      Pg2 var8;
       String var2;
       List var3;
       File[] var7;
@@ -164,7 +165,7 @@ public class Pg2 extends PQ{
       File[] var4 = var7;
       File[] var5 = var1 != null ? Cz2.C(var4) : Cz2.z();
       this.G().L(Arrays.asList(var5));
-      Pg2 var8 = this;
+      var8 = this;
       if (var2 != null) {
          if (Cz2.n(this.K, var1)) {
             this.B(var3);
@@ -200,6 +201,7 @@ public class Pg2 extends PQ{
    }
 
    public List P() {
+      ArrayList var8;
       String var10000 = Kz4.M();
       int[] var2 = this.getSelectedRows();
       ArrayList var3 = new ArrayList(var2.length);
@@ -210,7 +212,6 @@ public class Pg2 extends PQ{
 
       while (true) {
          if (var6 < var5) {
-      Pl2 var8;
             int var7 = var4[var6];
             var8 = var3;
             if (var1 == null) {
@@ -220,7 +221,6 @@ public class Pg2 extends PQ{
             var3.add(this.J(this.convertRowIndexToModel(var7)));
             var6++;
             if (var1 != null) {
-      Pl2 var8;
                continue;
             }
          }
@@ -307,16 +307,16 @@ public class Pg2 extends PQ{
       int var3 = var2;
       if (var1 != null) {
          if (var2 == -1) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
-         var3 = this.E(this.convertRowIndexToModel(var2));
+         var3 = (this.E(this.convertRowIndexToModel(var2))) ? 1 : 0;
       }
 
       if (var1 == null) {
-         return (boolean)var3;
+         return var3 != 0;
       } else {
-         return (boolean)(var3 != 0 ? 1 : 0);
+         return (boolean)((var3 != 0 ? 1 : 0) != 0);
       }
    }
 
@@ -329,24 +329,24 @@ public class Pg2 extends PQ{
       int var10000 = var1;
       if (var2 != null) {
          if (var1 == 1) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
-         var10000 = this.r(b(-7367, -16650));
+         var10000 = (this.r(b(-7367, -16650))) ? 1 : 0;
       }
 
       if (var2 != null) {
          if (var10000 == 0) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
-         var10000 = this.editCellAt(this.convertRowIndexToView(var1), this.getColumnModel().getColumnIndex(b(-7363, -31053)));
+         var10000 = (this.editCellAt(this.convertRowIndexToView(var1), this.getColumnModel().getColumnIndex(b(-7363, -31053)))) ? 1 : 0;
       }
 
       if (var2 == null) {
-         return (boolean)var10000;
+         return var10000 != 0;
       } else {
-         return (boolean)(var10000 != 0 ? 1 : 0);
+         return (boolean)((var10000 != 0 ? 1 : 0) != 0);
       }
    }
 
@@ -355,6 +355,7 @@ public class Pg2 extends PQ{
    }
 
    public static String b(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -7365) & 65535;
       if (d[var2] == null) {
          char[] var3 = c[var2].toCharArray();
@@ -1141,7 +1142,7 @@ public class Pg2 extends PQ{
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1169,6 +1170,7 @@ public class Pg2 extends PQ{
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[7];
       int var11 = 0;
       String var10 = "º¥Ö\u0002ºPRc\u0007ÐÒ·lð\" ÙxóÐ\u0092'¼ÕK?zâ\u001d\u001fl\u001ebÍ@AzvÉË\u0002ØoH¿1\u0014\u00ad\u0003\u0003\u0000p\u0005gíP\u008f§ÇòW`wp&Ñ(\u0007ëÑ¡¿'ò¶\u001d\u0019^ÂØ\u009aU\u0012ý\u0098µÿôÏ{/»@|F$ì\u001e\u001cuã¾y¾bk~Àù\u001e\u0090ý\u008fÃ9§ËÉ\u0097\b.\u0084Ö\u0095\u0088ñÞÃ9e\u008f!$\u0099\u009f²E6¸Ã~5s\u0094Ã¤~;ñúB\u0097\u0097\u001eÏ-Èy\u009c<\u0096Õ\u0091uÏQì+\u0019&éx¼¹÷'û\u008d2\rt\f¸\u0087¸Î\u008a¥\u0099kßP\u0015;~âÜYÉhöð<\u0017/þ\u008fù";
@@ -1348,7 +1350,6 @@ public class Pg2 extends PQ{
       }
    }
 }
-
 
 
 

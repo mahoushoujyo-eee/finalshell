@@ -36,7 +36,7 @@ public class KA implements ComponentListener {
       Object var10004 = Ref.g(581273268055337842L, var6);
       Dimension var10005 = (Dimension)(Registry.emptyArgs());
       long var9 = 560618790206606193L;
-      Object[] var8 = var10005;
+      Object var8 = var10005;
       var10005 = Ref.h(560618790206606193L, var8, var9);
 
       try {

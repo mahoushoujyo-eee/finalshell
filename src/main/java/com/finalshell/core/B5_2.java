@@ -24,12 +24,13 @@ public class B5_2 implements Icon {
 
    @Override
    public void paintIcon(Component var1, Graphics var2, int var3, int var4) {
+      ImageIcon var16;
       com.finalshell.ui.listener.C4.f(this.t, new Rectangle(var3, var4, com.finalshell.ui.listener.C4.L$int(this.t), com.finalshell.ui.listener.C4.c(this.t)));
       int var10000 = (K4_2.Z$boolean()) ? 1 : 0;
       Graphics2D var6 = (Graphics2D)var2;
       Object var7 = RV.X(var6);
       int var8 = com.finalshell.ui.listener.C4.L$int(this.t) - com.finalshell.ui.listener.C4.e(this.t) * 2 - 2;
-      boolean var5 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var5 = (var10000) != 0;
       Rectangle var9 = new Rectangle(
          var3 + com.finalshell.ui.listener.C4.e(this.t),
          var4 + com.finalshell.ui.listener.C4.e(this.t),

@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.core.CK;
+import com.finalshell.core.ZModemTransfer;
 
 public class Jw2 implements Runnable {
    public final UX W;
@@ -12,7 +12,7 @@ public class Jw2 implements Runnable {
    @Override
    public void run() {
       try {
-         CK.s();
+         ZModemTransfer.s();
       } catch (Exception var2) {
          var2.printStackTrace();
       }

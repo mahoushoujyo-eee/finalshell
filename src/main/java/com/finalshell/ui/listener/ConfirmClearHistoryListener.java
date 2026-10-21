@@ -22,6 +22,7 @@ public class ConfirmClearHistoryListener implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      Integer var37;
       ClearListDialog.i$arrString();
       Object var6 = 626812388099431104L;
       Object var10002 = Ref.g(626812388099431104L, var6);
@@ -46,9 +47,9 @@ public class ConfirmClearHistoryListener implements ActionListener {
          Ref.g(626812388099431104L, var10);
          Object var12 = 598800499692003827L;
          Object var10005 = Ref.g(598800499692003827L, var12);
-         Object[] var10006 = Registry.emptyArgs();
+         Object var10006 = Registry.emptyArgs();
          long var15 = 212159027199041724L;
-         Object[] var14 = var10006;
+         Object var14 = var10006;
          var10006 = Ref.h(212159027199041724L, var14, var15);
 
          try {

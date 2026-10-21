@@ -35,9 +35,9 @@ public class T52 implements Callable {
 
    @Override
    public Object call() throws Exception {
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var2 = 580399604591341686L;
-      Object[] var1 = var10001;
+      Object var1 = var10001;
       var10001 = Ref.h(580399604591341686L, var1, var2);
 
       try {

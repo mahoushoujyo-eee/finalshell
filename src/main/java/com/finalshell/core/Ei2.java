@@ -1377,6 +1377,7 @@ public class Ei2 implements Ic4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[8];
       int var11 = 0;
       String var10 = "i£\u0090ÕcØs)]\u000e#\u0002Y<\bÉÑ\u0091f\u000f\u009b,®\u001b\u0095\u0098JãMµÊ\u009dPÍ+Q\u001d\u0018PVãë©VÂ#\tÐ±\u009bÁ\u0002 t\u000bãÏ\u0084\t\u0094\u008där\u0006g\u000e";
@@ -1392,7 +1393,6 @@ public class Ei2 implements Ic4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

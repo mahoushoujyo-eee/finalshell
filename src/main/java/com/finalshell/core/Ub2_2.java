@@ -13,7 +13,9 @@ public class Ub2_2 extends UT_2 {
 
    public Ub2_2(IG var1, java.lang.Class var2, Ph2 var3) {
    super(var2, var3);
-      E6 var10;
+   E6 var10;
+   java.lang.Class var10001;
+   Ub2_2 var11;
       Ky4[] var10000 = ZS.p();
       Ky4[] var4 = var10000;
       this.z = false;
@@ -30,9 +32,6 @@ public class Ub2_2 extends UT_2 {
                return;
             }
          } catch (Hi2 var9) {
-      java.lang.Class var10001;
-      java.lang.Class var10001;
-      java.lang.Class var10001;
             throw a(var9);
          }
 
@@ -1351,6 +1350,7 @@ public class Ub2_2 extends UT_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[5];
       int var5 = 0;
       String var4 = "6\u001f\u001a\r\u009b\u0081\u0083þÄÊÎ0³¹\"ÁI,Ë»¤Ò\u0093\u0085îÕf\u0002iÊýß\u0011\u001b\u009dÞÜ-kÖºû\"KKù>\f\u0006\u0097OÙôDäMô¹}E\u0004s\u0013²\u008c";

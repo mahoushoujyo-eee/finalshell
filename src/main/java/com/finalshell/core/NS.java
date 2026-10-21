@@ -186,7 +186,7 @@ public final class NS extends N6_2 {
                var10002 = 0;
             }
 
-            var2.append(var10001.H((boolean)var10002));
+            var2.append(var10001.H(var10002));
             var4++;
             if (var1 != null) {
                continue;
@@ -1049,6 +1049,7 @@ public final class NS extends N6_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[7];
       int var11 = 0;
       String var10 = "\u0006wÈlò¸\u0002Ñ}\u0006ú\u001eüëÜð\u0007ezýA\u0007\u001d6\u0005áË'úL";
@@ -1063,7 +1064,6 @@ public final class NS extends N6_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

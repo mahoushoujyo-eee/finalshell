@@ -27,7 +27,7 @@ public class Fl4 implements C22 {
    public boolean J;
    public boolean d;
    public static String l;
-   public Y7 N;
+   public UpdateManifestLegacy N;
    public Pz4 E;
    public long S;
    public long c;
@@ -663,6 +663,7 @@ public class Fl4 implements C22 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void L(CH var1, Component var2) {
+      Integer var36;
       Registry.lookupField(230901963858610268L).setBoolean(this, true);
       String[] var10000 = UpdateDialog.y();
       String var4 = "";
@@ -679,9 +680,9 @@ public class Fl4 implements C22 {
                   Registry.lookupField(154178284205051149L).getInt(null);
                   Object var13 = 264767333402389216L;
                   Object var10002 = Ref.g(264767333402389216L, var13);
-                  Object[] var10003 = Registry.emptyArgs();
+                  Object var10003 = Registry.emptyArgs();
                   long var16 = 372364150653756350L;
-                  Object[] var15 = var10003;
+                  Object var15 = var10003;
                   var10003 = Ref.h(372364150653756350L, var15, var16);
 
                   try {
@@ -783,6 +784,13 @@ public class Fl4 implements C22 {
    }
 
    public void t(CH var1, Component var2) {
+      boolean var118;
+      boolean var122;
+      Boolean var125;
+      Boolean var128;
+      long var36;
+      long var61;
+      long var78;
       long var18 = 564217424946084486L;
       Ref.s(564217424946084486L, var2, var18);
       Registry.lookupField(230901963858610268L).setBoolean(this, true);
@@ -814,9 +822,9 @@ public class Fl4 implements C22 {
                if (var3 == null) {
                   Object var25 = 264767333402389216L;
                   Object var10007 = Ref.g(264767333402389216L, var25);
-                  Object[] var10008 = Registry.emptyArgs();
+                  Object var10008 = Registry.emptyArgs();
                   long var28 = 281745090680724750L;
-                  Object[] var27 = var10008;
+                  Object var27 = var10008;
                   var10008 = Ref.h(281745090680724750L, var27, var28);
 
                   try {
@@ -835,7 +843,7 @@ public class Fl4 implements C22 {
                boolean var4;
                File var6;
                label359: {
-                  Registry.lookupField(627804769415997620L).setBoolean(this, (boolean)var10005);
+                  Registry.lookupField(627804769415997620L).setBoolean(this, var10005 != 0);
                   var4 = false;
                   boolean var5 = true;
                   var6 = null;
@@ -852,9 +860,9 @@ public class Fl4 implements C22 {
 
                   Object var29 = 264767333402389216L;
                   Object var10006 = Ref.g(264767333402389216L, var29);
-                  Object[] var116 = Registry.emptyArgs();
+                  Object var116 = Registry.emptyArgs();
                   long var32 = 372364150653756350L;
-                  Object[] var31 = var116;
+                  Object var31 = var116;
                   var116 = Ref.h(372364150653756350L, var31, var32);
 
                   try {
@@ -869,9 +877,9 @@ public class Fl4 implements C22 {
                            + File.separator
                            + (String)Registry.lookupField(488797196485545516L).get(null)
                      );
-                     Object[] var123 = Registry.packArgs(a(11114, -6847), var6);
+                     Object var123 = Registry.packArgs(a(11114, -6847), var6);
                      long var34 = 286276370098049965L;
-                     Object[] var33 = var123;
+                     Object var33 = var123;
                      var123 = Ref.h(286276370098049965L, var33, var34);
 
                      try {
@@ -888,9 +896,9 @@ public class Fl4 implements C22 {
                            + File.separator
                            + (String)Registry.lookupField(636503015406168114L).get(null)
                      );
-                     Object[] var126 = Registry.packArgs(a(11123, -22940), var6);
-                     long var36 = 286276370098049965L;
-                     Object[] var35 = var126;
+                     Object var126 = Registry.packArgs(a(11123, -22940), var6);
+                     var36 = 286276370098049965L;
+                     Object var35 = var126;
                      var126 = Ref.h(286276370098049965L, var35, var36);
 
                      try {
@@ -932,7 +940,7 @@ public class Fl4 implements C22 {
 
                            label333:
                            if (var7 == 0) {
-                              Object[] var129 = Registry.lookupField(602001947594778012L).getBoolean(this);
+                              Object var129 = Registry.lookupField(602001947594778012L).getBoolean(this);
                               if (var3 == null) {
                                  if (var129 == null) {
                                     Registry.emptyArgs();
@@ -1053,7 +1061,7 @@ public class Fl4 implements C22 {
                                     long var59 = 515744380023053865L;
                                     Ref.h2(515744380023053865L, var59);
                                     Registry.emptyArgs();
-                                    long var61 = 248287587210411357L;
+                                    var61 = 248287587210411357L;
                                     Ref.h2(248287587210411357L, var61);
 
                                     try {
@@ -1095,7 +1103,7 @@ public class Fl4 implements C22 {
 
                                     String var139 = (String)(Registry.emptyArgs());
                                     long var70 = 237955022755953409L;
-                                    Object[] var69 = var139;
+                                    Object var69 = var139;
                                     var139 = Ref.h(237955022755953409L, var69, var70);
 
                                     try {
@@ -1170,7 +1178,7 @@ public class Fl4 implements C22 {
                                  long var75 = 270389152141252877L;
                                  Ref.h2(270389152141252877L, var75);
                                  Object[] var138 = Registry.emptyArgs();
-                                 long var78 = 578864097947885485L;
+                                 var78 = 578864097947885485L;
                                  Object[] var77 = var138;
                                  Ref.h(578864097947885485L, var77, var78);
 
@@ -1182,7 +1190,7 @@ public class Fl4 implements C22 {
 
                                  String var143 = (String)(Registry.emptyArgs());
                                  long var80 = 237955022755953409L;
-                                 Object[] var79 = var143;
+                                 Object var79 = var143;
                                  var143 = Ref.h(237955022755953409L, var79, var80);
 
                                  try {
@@ -1207,7 +1215,7 @@ public class Fl4 implements C22 {
                                     File var110 = new File(var106);
                                     int var147 = (var110.exists()) ? 1 : 0;
                                     if (var3 == null) {
-                                       if (var147) {
+                                       if (var147 != 0) {
                                           var109 = var110.length();
                                        }
 
@@ -1224,7 +1232,7 @@ public class Fl4 implements C22 {
                                        break label342;
                                     }
 
-                                    if (var111) {
+                                    if (var111 != 0) {
                                        System.exit(0);
                                     }
                                  }
@@ -1677,12 +1685,12 @@ public class Fl4 implements C22 {
       Registry.lookupField(354569316750752448L).setBoolean(this, var1);
    }
 
-   public Y7 B() {
+   public UpdateManifestLegacy B() {
       Object var1 = 264767333402389216L;
-      return (Y7)Ref.g(264767333402389216L, var1);
+      return (UpdateManifestLegacy)Ref.g(264767333402389216L, var1);
    }
 
-   public void A(Y7 var1) {
+   public void A(UpdateManifestLegacy var1) {
       long var3 = 264767333402389216L;
       Ref.s(264767333402389216L, var1, var3);
    }
@@ -2644,6 +2652,14 @@ public class Fl4 implements C22 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long var36;
+      char[] var61;
+      boolean var66;
+      boolean var76;
+      boolean var78;
+      boolean var88;
+      boolean var90;
+      boolean var96;
       String[] var21 = new String[55];
       int var19 = 0;
       String var18 = ">{\u001f\u00078w«\t<ÿp\u0006輷兔籧纬宛磸\u0002单洙*Î\u000bûøx\u0007z©\u001dæ0-k¼\u0099'ÐÝ\u008a=\nÎû)\u0000ªuÒ|ÀÐ\rà×CHX7ôX\\\u0088\u0003\u0019\u0016]\u0016Ñae9VQ\u0095\u0098\u0082-Þ\u0018Iâ4\u0019\u008b2\u008b\u008a47\u0003@\u001ev\u000bhã)S\u008c\nâ/¾Ú\u0000\u0007ßçÇã\u009ev\u00ad\u0015\u0000f!C\u000e¼?øt_ß:y\\þU\u0099\u001571´\u0016\u0017=½²M ö¶îèS øõ\u0002ûMnS\u00002@\u0006仺辤嬧袳腳杯\u000eªÃ\nm»Û(É5\u0007Y^éH\u0012乻辇晪斢实抪4穆卥冒镬穱帚轉袻晄料í\u000e\u008aÀSî×|@\u0000\u0018¥Yó\u0088N\u000eZu\u0014»x\u0001P\u0092:l¸<Ìý\u0006辗冕米纔嬙磿\u0015¤ºµØ\u009cÏm\u0096>\u0092\u0096\u0083PkÛ²5Å±\u008c=\brã¢¦x\u0097¹Ï\u0003姐趕\u009c\u0006Ù8U闆诣\u008a\u0005²\u0018U{ì\u0002浦悰\u0006Ã\u0090\\=\"Ç\u0004砾宐ÎÚ\u0002硟嬩\u0006桙査暜斦姽负Pc\u0091©7Ä\u0086®À+ïc7ï(»a\u009eÖGC=·zå¯yTZýMa\\)fËjó¸\u001e\u0011$ó\u0007D.ü®ÀÚ%\r\u0086aðW:ÿ_Üþ\nB'JU\u009bíYÓÓ»\u000b'\u0094Ý\u0090\u001e¾¥H\b\u0016+ç:.W\u0091º\u0016D\u0086×Å\u0000Î_kÛSõ×,\u001b\u0098&\u001eÕ9cq¿\u0015ÌH5îï\u0003\n.ëÈ\u0004èwÔ¸\u008b\u0004¦ì\u000fç\u0002&S\u0016N\reFå\u0016K\u0085î¾<krù\u0013ÓKlN·\u008c²\u0003g\u008b\u001c\u0007\u0017\u009c÷O.4¬\u0005俠孝姐跭\u0018\u001a\u0013\u0012=W]\u009cô!®\u001a[þù>\"\u0082IA¢àFë¡ý\u0097&\u0014\u0091Åm\u00adWÃµÊ\u0086g^T^Ó0\u0098h.ºÈ\u0002匱涹8W\u0082Ëy^p\u009fá±\u0083\u0093oË·èlf\u00986E\u0099>\u0003ù\u009f\u008a º\u009fSÍ\u001fzm\rÚH\u0015E-Ý\"iÞrÎ´¯ÉG\tÖÞd\u0019\u000f\u001fFÁ\u0097-\bÓ^Èû'ñY¬Ê\u0088\u001c\u001c\u0092\b\u0097\n·I¶\u009dõ?U}\u009e·\u0002曁斠\u0017\u009c¼²\u0018|×q\u0095½òæ\u008f^ê\u001a\u0098\u0005Ôµ\u001eÿø\u0000\"gÈf£pxê\u0097ÙÔå\u0018\u0005Q|åk\u0003\u0010Ý\u001dõø\u0088\u008b\u0081¦\në´f@Ç\u0087\u0007ß°Ç\t\u009e+\u00ad\u0002°÷\u00058¸¼-V\u0005乲輜妎资Ó\u000e\u00115}³U\u0000õ²\u008eh.³\u0007õ\u001b\u0092_\rþ[©4\u0087¶ÎXd\u0099m.èÈ\f\u0092DYÍ#ù¡\u000eÿ\u0007梡月暃旘夞跐\"\u0003 Lä";
@@ -2659,7 +2675,6 @@ public class Fl4 implements C22 {
          byte var10002 = -1;
 
          while (true) {
-      Object[] var61;
             label140: {
                char[] var67 = var10001.toCharArray();
                int var10004 = var67.length;
@@ -2879,7 +2894,7 @@ public class Fl4 implements C22 {
                            Registry.lookupField(636503015406168114L).set(null, a(11110, -21314));
                         } else {
                            Registry.emptyArgs();
-                           long var36 = 561847341732101275L;
+                           var36 = 561847341732101275L;
                            Object var95 = Ref.h2(561847341732101275L, var36);
 
                            try {

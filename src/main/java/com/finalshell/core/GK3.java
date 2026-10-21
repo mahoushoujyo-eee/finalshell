@@ -22,6 +22,7 @@ public class GK3 extends Gl4 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int var24;
       String[] var10000 = W5.q();
       int[] var6 = new int[var1 * var2];
       String[] var5 = var10000;
@@ -177,8 +178,6 @@ public class GK3 extends Gl4 {
                                  }
 
                                  if (var5 != null) {
-      int var24;
-      int var24;
                                     continue label146;
                                  }
                                  break;
@@ -402,7 +401,6 @@ public class GK3 extends Gl4 {
       }
    }
 }
-
 
 
 

@@ -35,6 +35,7 @@ public class Oa4 extends AbstractTableModel {
    }
 
    public int g(int var1) {
+      Integer var13;
       SwitchTabCommand.B();
       Object var3 = -1;
       Object var4 = false;
@@ -49,9 +50,9 @@ public class Oa4 extends AbstractTableModel {
             ZG_2 var6 = (ZG_2)var5.next();
             if (var2 != null) {
                var10001 = var6;
-               Object[] var10002 = Registry.emptyArgs();
+               Object var10002 = Registry.emptyArgs();
                long var10 = 468069908955066583L;
-               Object[] var9 = var10002;
+               Object var9 = var10002;
                var10002 = Ref.h(468069908955066583L, var9, var10);
 
                try {
@@ -145,6 +146,7 @@ public class Oa4 extends AbstractTableModel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var13;
       String[] var0 = new String[2];
       int var4 = 0;
       String var3 = "挑锡\u0002擕体";
@@ -158,7 +160,7 @@ public class Oa4 extends AbstractTableModel {
             char[] var10003 = var3.substring(++var1, var1 + var2).toCharArray();
             int var10004 = var10003.length;
             int var6 = 0;
-            byte var13 = 118;
+            var13 = 118;
             var10002 = var10003;
             int var8 = var10004;
             byte var16;
@@ -211,14 +213,14 @@ public class Oa4 extends AbstractTableModel {
                if (var13 == 0) {
                   var10006 = var13;
                   var10005 = var10002;
-                  var16 = var13;
+                  var16 = (byte)(var13);
                } else {
                   if (var8 <= var6) {
                      break;
                   }
 
                   var10005 = var10002;
-                  var16 = var13;
+                  var16 = (byte)(var13);
                   var10006 = var6;
                }
             }

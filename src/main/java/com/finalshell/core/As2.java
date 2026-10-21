@@ -51,7 +51,7 @@ public class As2 extends AO_2 {
          if (var1) {
             if (this.A == Pt2.unchecked) {
                if (!var1) {
-                  return (boolean)this.t;
+                  return (this.t != 0);
                }
 
                if (this.t == -1) {
@@ -76,7 +76,7 @@ public class As2 extends AO_2 {
       }
 
       if (!var1) {
-         return (boolean)var3.t;
+         return (var3.t != 0);
       } else {
          return (boolean)((var3.t == 3 ? 1 : 0) != 0);
       }
@@ -100,6 +100,7 @@ public class As2 extends AO_2 {
 
    @Override
    public void O(Component var1, Graphics2D var2, int var3, int var4, int var5, int var6) {
+      int var14;
       boolean var7;
       ImageIcon var12;
       label57: {

@@ -73,7 +73,7 @@ public class L7 implements MouseListener {
          Ref.g(320906538225821202L, var11);
          YE var10003 = (YE)(Registry.packArgs((int)var3));
          long var14 = 619629146278140254L;
-         Object[] var13 = var10003;
+         Object var13 = var10003;
          var10003 = Ref.h(619629146278140254L, var13, var14);
 
          try {

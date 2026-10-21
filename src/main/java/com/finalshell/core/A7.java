@@ -64,6 +64,7 @@ public class A7 {
 
    @NotNull
    public static String v(@NotNull XE var0, @NotNull XE var1, @NotNull Im4 var2) {
+      String var12;
       KB var4 = q(var0, var1);
       ((XE)var4.X).r = Math.max(((XE)var4.X).r, -var2.H());
       int var10000 = (com.finalshell.ui.model.J2.g()) ? 1 : 0;
@@ -72,7 +73,7 @@ public class A7 {
       XE var6 = (XE)var4.S;
       StringBuilder var7 = new StringBuilder();
       int var8 = var5.r;
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
 
       while (true) {
          if (var8 <= var6.r) {
@@ -204,7 +205,7 @@ public class A7 {
       int var10000 = (com.finalshell.ui.model.J2.P()) ? 1 : 0;
       int var5 = var0.r;
       int var6 = var1.B$int();
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
       if (var2.contains(var1.g(var4, var5))) {
          return new XE(var4, var5);
       } else {
@@ -272,7 +273,7 @@ public class A7 {
       int var10000 = (com.finalshell.ui.model.J2.g()) ? 1 : 0;
       int var4 = var0.q;
       int var5 = var0.r;
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
       int var6 = var1.B$int();
       int var7 = var1.O();
       if (var2.contains(var1.g(var4, var5))) {

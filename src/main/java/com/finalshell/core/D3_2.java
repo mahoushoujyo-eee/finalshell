@@ -42,7 +42,7 @@ public class D3_2 extends Q3 {
          var10001 = var3 == this.k.f.e ? 1 : 0;
       }
 
-      var7.B((boolean)var10001);
+      var7.B(var10001);
       return var7;
    }
 

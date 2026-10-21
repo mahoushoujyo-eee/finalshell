@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 import java.math.BigInteger;
 
-public class L22 extends Ls4 {
+public class L22 extends SshKeyCodec {
    public byte[] p;
    public byte[] q;
    public byte[] I;
@@ -1119,7 +1119,7 @@ public class L22 extends Ls4 {
       return this.R();
    }
 
-   public static Ls4 c(Xe2 var0, UJ var1) throws Pc2 {
+   public static SshKeyCodec c(Xe2 var0, UJ var1) throws Pc2 {
       byte[][] var2 = var1.U(b(17385, 731405911132184242L), b(24235, 32113));
       byte[] var3 = var2[1];
       byte[] var4 = var2[2];
@@ -1984,6 +1984,7 @@ public class L22 extends Ls4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[13];
       int var11 = 0;
       String var10 = "c>\"\u0018Ð¬ü$0\u0081þ\u0083\u001c\u0082Û·\u0083áuSÆM&\u0095³×\\ßO\u0097\u0018\u001e9\b©GûæqÔ\u0016\u0007×+«\u008cBêU\u0013ß0\u001cþ\u0094Úý3\u0098\u00988`\u008b´ÜÇ\u001d`ê\u0019ûò\u0098¦\u0004ÑïRÚ´cö\u0086\u0005\u0099äÍúÎ\u0015ÿ\f¾j8\u000eÅäãü}\b\u0016Ö÷\u001bÀ\u0092\u0000]\u001f\u0080\u001e\u0091¿¡½\u007f\u000e'\u0004}uX¥æá\u008eö©\u007f{7ýd\u0007Á áEõ)\rn0\u0093õ®ékA¿\u001e\u0083mk\u0012äÃ\u008ac³Èu\u0089AT\u008eUag\u0000oy\u0080\u00131ØÁã/y\u008aGv\u0016å±0\u008e«\u0080ó\u00887\rD Ö÷\u0006©~I\u001d\u001f×Má";
@@ -1999,7 +2000,6 @@ public class L22 extends Ls4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

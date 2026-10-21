@@ -14,6 +14,7 @@ public final class WT implements SwingConstants {
    public static long a;
 
    public static int r(JMenuItem var0, boolean var1) {
+      int var10;
       int[] var2;
       JMenuItem var9;
       label80: {
@@ -42,7 +43,7 @@ public final class WT implements SwingConstants {
                   if (var5 < var4.getComponentCount()) {
                      Component var6 = var4.getComponent(var5);
                      if (var2 != null) {
-                        var10 = var6 instanceof JMenuItem;
+                        var10 = (var6 instanceof JMenuItem) ? 1 : 0;
                         if (var2 == null) {
                            break;
                         }
@@ -86,8 +87,6 @@ public final class WT implements SwingConstants {
                      }
 
                      if (var2 != null) {
-      int var10;
-      int var10;
                         continue;
                      }
                   }
@@ -143,7 +142,6 @@ public final class WT implements SwingConstants {
       a = var10002;
    }
 }
-
 
 
 

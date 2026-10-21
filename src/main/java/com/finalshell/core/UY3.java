@@ -15,7 +15,7 @@ public class UY3 implements Tk4 {
    }
 
    @Override
-   public void R(com.finalshell.ui.frame.U var1) {
+   public void R(com.finalshell.ui.frame.MainFrame var1) {
       Object[] var10001 = Registry.packArgs(Registry.lookupField(296414114989994442L).getBoolean(this));
       long var3 = 636304631404470975L;
       Object[] var2 = var10001;

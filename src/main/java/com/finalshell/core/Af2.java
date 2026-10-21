@@ -35,6 +35,7 @@ public class Af2 {
 
    @NotNull
    public static String s(@NotNull List var0) {
+      StringBuilder var6;
       int var10000 = i();
       StringBuilder var2 = new StringBuilder();
       int var1 = var10000;
@@ -54,8 +55,6 @@ public class Af2 {
                   continue;
                }
             } catch (IllegalStateException var5) {
-      StringBuilder var6;
-      StringBuilder var6;
                throw a(var5);
             }
          }
@@ -246,6 +245,7 @@ public class Af2 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -4583) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1026,7 +1026,7 @@ public class Af2 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1051,6 +1051,7 @@ public class Af2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[5];
       int var3 = 0;
       String var2 = "Va³\u0000·\u0003)Tµ÷\u0000R¬p©Ê&<\u0099Ú\u008d±\u0004.Áôéøã\\ÉýEÀ\u0011ÙDt\u0019I\u00175>\u0093,Ô\u0003-k¶\u0088\bs?¤\u0081£bY\u001cûD¢£ë¦\u0010:\u001169p\u00821SH@äü}ÞTe\u0016\u0087oE\u009bÔ\u0003@r.\u0082½©w\u00ad*\u0087³¾EÂÏ\u0082\u0095{D 'áú\u0084\u007f6¨=îf¡ç\u0099\u0004UZsä\u0004¦ì{É";
@@ -1169,7 +1170,6 @@ public class Af2 {
       }
    }
 }
-
 
 
 

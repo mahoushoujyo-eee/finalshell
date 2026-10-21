@@ -2,10 +2,10 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.dialog.EditDialog2;
+import com.finalshell.ui.dialog.EditorSelectionDialog;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
@@ -13,16 +13,16 @@ import java.lang.reflect.InvocationTargetException;
 
 public class Jt2 implements MouseListener {
    public final int Q;
-   public final EditDialog2 s;
+   public final EditorSelectionDialog s;
 
-   public Jt2(EditDialog2 var1, int var2) {
+   public Jt2(EditorSelectionDialog var1, int var2) {
       this.s = var1;
       this.Q = var2;
    }
 
    @Override
    public void mouseReleased(MouseEvent var1) {
-      boolean var2 = Address.i();
+      boolean var2 = FileBrowserAddressBar.i();
       int var10000 = var1.getClickCount();
       int var10001 = 2;
       if (var2) {
@@ -87,7 +87,7 @@ public class Jt2 implements MouseListener {
                         var72 = var5;
                         String var10009 = (String)(Registry.emptyArgs());
                         long var25 = 605430732347023634L;
-                        Object[] var24 = var10009;
+                        Object var24 = var10009;
                         var10009 = Ref.h(605430732347023634L, var24, var25);
 
                         try {
@@ -114,7 +114,7 @@ public class Jt2 implements MouseListener {
                            }
 
                            Object var32 = 377989578805733666L;
-                           ((EditDialog2)Ref.g(377989578805733666L, var32)).setVisible(false);
+                           ((EditorSelectionDialog)Ref.g(377989578805733666L, var32)).setVisible(false);
                         }
 
                         if (var2) {
@@ -153,7 +153,7 @@ public class Jt2 implements MouseListener {
                Tf4 var65 = (Tf4)var72;
                String var77 = (String)(Registry.emptyArgs());
                long var41 = 498856411508641826L;
-               Object[] var40 = var77;
+               Object var40 = var77;
                var77 = Ref.h(498856411508641826L, var40, var41);
 
                try {
@@ -197,7 +197,7 @@ public class Jt2 implements MouseListener {
                   Object var50 = 377989578805733666L;
                   Registry.lookupField(633665384138343849L).setInt(Ref.g(377989578805733666L, var50), Registry.lookupField(564170828581134815L).getInt(null));
                   Object var52 = 377989578805733666L;
-                  ((EditDialog2)Ref.g(377989578805733666L, var52)).setVisible(false);
+                  ((EditorSelectionDialog)Ref.g(377989578805733666L, var52)).setVisible(false);
                }
             }
 

@@ -112,7 +112,7 @@ public abstract class Ln4_2 {
       new StringBuilder();
       String var10002 = (String)(Registry.emptyArgs());
       long var2 = 286931176286176762L;
-      Object[] var1 = var10002;
+      Object var1 = var10002;
       var10002 = Ref.h(286931176286176762L, var1, var2);
 
       try {
@@ -124,7 +124,7 @@ public abstract class Ln4_2 {
       this.append((String)var10002).append(" ");
       String var10003 = (String)(Registry.emptyArgs());
       long var4 = 194080076253066315L;
-      Object[] var3 = var10003;
+      Object var3 = var10003;
       var10003 = Ref.h(194080076253066315L, var3, var4);
 
       try {

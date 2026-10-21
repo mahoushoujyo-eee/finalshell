@@ -2,15 +2,15 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class L22 implements ActionListener {
-   public final Address j;
+   public final FileBrowserAddressBar j;
 
-   public L22(Address var1) {
+   public L22(FileBrowserAddressBar var1) {
       this.j = var1;
    }
 

@@ -194,6 +194,7 @@ public class D4_2 {
    }
 
    public static void __vfClinit__() {
+      boolean C;
       long var0 = 2925141180149538470L;
       long[] var6 = new long[7];
       int var3 = 0;

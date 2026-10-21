@@ -37,6 +37,7 @@ public class Rt4 extends AbstractCellEditor implements TableCellEditor, TreeCell
    }
 
    public void i(JComponent var1) {
+      JComponent var8;
       int[] var10000 = WC_2.V();
       this.G = var1;
       int[] var2 = var10000;
@@ -62,8 +63,6 @@ public class Rt4 extends AbstractCellEditor implements TableCellEditor, TreeCell
                var5.addActionListener(this.m);
                var5.setRequestFocusEnabled(false);
                if (var2 == null) {
-      int var8;
-      int var8;
                   return;
                }
             }
@@ -162,6 +161,7 @@ public class Rt4 extends AbstractCellEditor implements TableCellEditor, TreeCell
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var8;
       char[] var10003 = "b4\u001ds\u001bK,G\u000f\\w\np\u000fJ\u001b\u0017]\u001cH\u0002m\u0013\u001bj\u0016V".toCharArray();
       int var10004 = var10003.length;
       int var0 = 0;
@@ -224,7 +224,7 @@ public class Rt4 extends AbstractCellEditor implements TableCellEditor, TreeCell
             var10 = var6;
          } else {
             if (var1 <= var0) {
-               String var8 = new String(var10002).intern();
+               var8 = new String(var10002).intern();
                byte var3 = -1;
                a = var8;
                return;
@@ -237,7 +237,6 @@ public class Rt4 extends AbstractCellEditor implements TableCellEditor, TreeCell
       }
    }
 }
-
 
 
 

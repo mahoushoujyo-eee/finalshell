@@ -25,6 +25,7 @@ public class W9 extends W2 {
 
    @Override
    public void O() {
+      long var20;
       ArrayList var2;
       label144: {
          String var1;
@@ -76,7 +77,7 @@ public class W9 extends W2 {
                         if (!var7.equals("")) {
                            String var10005 = (String)(Registry.packArgs(var7));
                            long var18 = 565741923244854826L;
-                           Object[] var17 = var10005;
+                           Object var17 = var10005;
                            var10005 = Ref.h(565741923244854826L, var17, var18);
 
                            try {
@@ -100,7 +101,7 @@ public class W9 extends W2 {
 
                            if (var1 != null) {
                               if (var63) {
-                                 long var20 = 301806998218139465L;
+                                 var20 = 301806998218139465L;
                                  Ref.s(301806998218139465L, var8, var20);
                                  if (var1 != null) {
                                     break label127;
@@ -1053,6 +1054,7 @@ public class W9 extends W2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[9];
       int var3 = 0;
       String var2 = "\u001f\u0005TÒ:®/_I\tì\f*óõ\u008aÖÛv\t$`\u0017~R;\"íè\bÛb°\u008c\u0087Ò\u0096\u0091\u000eö\u0011\u0002.¡\u0096BÍ\u000f\u0089C³.\u008c\u0002v\u00ad\bæ\u001e\u0017\u0003s#\b¯";
@@ -1068,7 +1070,6 @@ public class W9 extends W2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

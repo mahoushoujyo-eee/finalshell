@@ -983,6 +983,7 @@ public class SyncPasswordDialog extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[16];
       int var3 = 0;
       String var2 = "£\u008bEüè\u0080\t\u009ar Ä9r¶ñ¤\u0083mC\\q`\u000eÖ\nÐ¤\u001fÎh¶KíN×-\u00ad\u0002P\u009b\n\u009ceS¿\u0086ÍÜïÜÌ\u0016Ê·h{Mp½\u0084äã\u0016A(¹ºEêQnÛÔ\u0090\u0006迗冥吪欻孢硏\u0011f8Õ¢ü\u001f\u000eàâ\u009c¹w2ôß$\u008a\u0004寏磲殹砲\u0004哿毲安碵\u001f\u0084F\u009a-VÿA\u0093~:è?©²c@U?\u009ePGl,\u009a\rÿ\u0000Ïÿ}J\u000b\u0003m ¾øí\u001aí&Jë\u0006\u0005Å\u009f]° \u000eä\f\u0096d×Öqµh\u008d*Û¡,\u0002匯洮";
@@ -998,7 +999,6 @@ public class SyncPasswordDialog extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

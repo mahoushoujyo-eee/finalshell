@@ -72,6 +72,7 @@ public class Za2 implements On2 {
    }
 
    public boolean r(CB3 var1) {
+      boolean var5;
       String[] var2;
       String var4;
       label29: {
@@ -90,7 +91,7 @@ public class Za2 implements On2 {
       }
 
       String var3 = var4;
-      boolean var5 = var3.equals("");
+      var5 = var3.equals("");
       if (var2 != null) {
          if (!var5) {
             boolean var6 = this.H(var1, var3);
@@ -110,8 +111,9 @@ public class Za2 implements On2 {
    }
 
    public boolean H(CB3 var1, String var2) {
+      boolean var5;
       String[] var3 = CB3.C$arrString();
-      byte var10000 = (this.s(var1, var2)) ? 1 : 0;
+      byte var10000 = (byte)((this.s(var1, var2)) ? 1 : 0);
       if (var3 != null) {
          if (var10000 != 0) {
             return true;
@@ -151,10 +153,11 @@ public class Za2 implements On2 {
    }
 
    public boolean s(CB3 var1, String var2) {
+      Boolean var5;
       String[] var10000 = CB3.C$arrString();
       Boolean var4 = (Boolean)this.R.get(var1.H());
       String[] var3 = var10000;
-      Boolean var5 = var4;
+      var5 = var4;
       if (var3 != null) {
          if (var4 == null) {
             var4 = this.X(var1, var2);
@@ -168,6 +171,7 @@ public class Za2 implements On2 {
    }
 
    public boolean X(CB3 var1, String var2) {
+      StringTokenizer var5;
       String[] var3;
       String var6;
       label38: {
@@ -189,7 +193,7 @@ public class Za2 implements On2 {
       boolean var7 = this.z;
       if (var3 != null) {
          if (this.z) {
-            StringTokenizer var5 = new StringTokenizer(var2, " ", false);
+            var5 = new StringTokenizer(var2, " ", false);
 
             while (var5.hasMoreTokens()) {
                boolean var8 = this.D(var4, var5.nextToken(), this.k);

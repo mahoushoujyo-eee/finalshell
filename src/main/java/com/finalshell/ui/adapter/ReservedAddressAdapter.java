@@ -42,6 +42,12 @@ public class ReservedAddressAdapter extends DefaultTableCellRenderer {
 
    @Override
    public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
+      Object[] var33;
+      String var57;
+      Long var60;
+      Long var63;
+      boolean var66;
+      Integer var69;
       JLabel var9;
       label203: {
          Y62_2 var8 = (Y62_2)var1;
@@ -74,7 +80,7 @@ public class ReservedAddressAdapter extends DefaultTableCellRenderer {
                if (var14 == 0) {
                   String var10002 = (String)(Registry.emptyArgs());
                   long var22 = 593117720967762508L;
-                  Object[] var21 = var10002;
+                  Object var21 = var10002;
                   var10002 = Ref.h(593117720967762508L, var21, var22);
 
                   try {
@@ -194,9 +200,9 @@ public class ReservedAddressAdapter extends DefaultTableCellRenderer {
             if (this != null) {
                if (var51 == var54) {
                   new StringBuilder();
-                  Object[] var67 = Registry.emptyArgs();
+                  Object var67 = Registry.emptyArgs();
                   long var28 = 567652193651101967L;
-                  Object[] var27 = var67;
+                  Object var27 = var67;
                   var67 = Ref.h(567652193651101967L, var27, var28);
 
                   try {
@@ -253,7 +259,7 @@ public class ReservedAddressAdapter extends DefaultTableCellRenderer {
             if (var51 == var54) {
                Object[] var61 = Registry.emptyArgs();
                long var34 = 620345507679359767L;
-               Object[] var33 = var61;
+               var33 = var61;
                Object var62 = Ref.h(620345507679359767L, var33, var34);
 
                try {
@@ -1141,6 +1147,7 @@ public class ReservedAddressAdapter extends DefaultTableCellRenderer {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[7];
       int var11 = 0;
       String var10 = "\u0085oa\u0088÷½Ëc\u0007G\u00059\nüí¼\u0004\u0000ÉÓt\u0003峁均翕\u0010&\u0080\u001fj\u0004'\u001d%ÞþFáÕ]\u009cF";
@@ -1155,7 +1162,6 @@ public class ReservedAddressAdapter extends DefaultTableCellRenderer {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

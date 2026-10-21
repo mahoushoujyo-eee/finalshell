@@ -14,6 +14,7 @@ public class Cb2 extends Y_3 {
    }
 
    public G_3[] m(Cr2_2 var1) {
+      G_3[] var5;
       Ky4[] var10000 = Cr2_2.q$arrky_4();
       G_3[] var3 = new G_3[this.F.length];
       Ky4[] var2 = var10000;
@@ -21,7 +22,6 @@ public class Cb2 extends Y_3 {
 
       while (true) {
          if (var4 < var3.length) {
-      G_3[] var5;
             var5 = var3;
             if (var2 != null) {
                break;
@@ -30,7 +30,6 @@ public class Cb2 extends Y_3 {
             var3[var4] = var1.X(this.F[var4]);
             var4++;
             if (var2 == null) {
-      G_3[] var5;
                continue;
             }
          }
@@ -55,7 +54,6 @@ public class Cb2 extends Y_3 {
       return A(var0, var1);
    }
 }
-
 
 
 

@@ -1393,6 +1393,7 @@ public class MustChangePassword extends IM {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[7];
       int var11 = 0;
       String var10 = "¤íÚ\u008bå%\u0089\u0081\u0006靼襸伢斏孥磈\u000e3TP²Ø\u0097¤ÝÃ8Íµ\nB\u0007彤额作斖宪磫»\bdóÂHæ]é\u008e";
@@ -1407,7 +1408,6 @@ public class MustChangePassword extends IM {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

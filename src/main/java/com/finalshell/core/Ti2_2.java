@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 @O4(
-   Z = {"op", "from", "path", "value"}
+   Z$arrString = {"op", "from", "path", "value"}
 )
 public class Ti2_2 {
    @E6(
-      W = "op"
+      W$String = "op"
    )
    public com.finalshell.ui.model.D6 g;
    public String S;

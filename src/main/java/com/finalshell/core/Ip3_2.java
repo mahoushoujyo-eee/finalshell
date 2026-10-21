@@ -40,12 +40,17 @@ public class Ip3_2 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void c() throws Exception {
+      boolean var17;
+      ByteArrayOutputStream var33;
+      FileInputStream var34;
+      FileInputStream var35;
+      IOException var36;
       ByteArrayOutputStream var2 = null;
       String var10000 = Co4.n();
       FileInputStream var3 = null;
       m.lock();
       String var1 = var10000;
-      boolean var17 = false /* VF: Semaphore variable */;
+      var17 = false /* VF: Semaphore variable */;
 
       label177: {
          label176: {
@@ -69,8 +74,6 @@ public class Ip3_2 {
                               continue;
                            }
                         } catch (IOException var26) {
-      FileInputStream var35;
-      FileInputStream var35;
                            throw a(var26);
                         }
                      }
@@ -427,6 +430,7 @@ public class Ip3_2 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public Co4 U(int var1) {
+      byte var17;
       String var10000 = Co4.n();
       Co4 var3 = new Co4();
       String var2 = var10000;
@@ -710,6 +714,11 @@ public class Ip3_2 {
    }
 
    public void O() throws Exception {
+      HashMap var35;
+      int var36;
+      boolean var47;
+      int var48;
+      int var49;
       String var10000 = Co4.n();
       long var2 = this.P;
       String var1 = var10000;
@@ -742,14 +751,14 @@ public class Ip3_2 {
             }
          }
 
-         var47 = a(8090, 3771442565228231592L);
+         var47 = (a(8090, 3771442565228231592L)) != 0;
          break;
       }
 
       byte[] var25 = new byte[var47];
       int var26 = a(27539, 6323103256328048544L);
       HashMap var11 = new HashMap();
-      HashMap var35 = new HashMap();
+      var35 = new HashMap();
       Iterator var13 = var7.iterator();
 
       while (true) {
@@ -812,7 +821,7 @@ public class Ip3_2 {
          break;
       }
 
-      int var36 = var48;
+      var36 = var48;
       Iterator var40 = var6.iterator();
 
       while (true) {
@@ -1732,11 +1741,15 @@ public class Ip3_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var17;
+      int var34;
+      byte var36;
+      char[] var46;
       String[] var21 = new String[9];
       int var19 = 0;
       String var18 = "\u008cA亪耚丐竩\u0007½óJaM]z\b\u0088Yù!\u009d\u008d*\u0000\nãUµ3H\u0014\b\u009d\b]\u0003g\u001cz\u00077¦´£Õ|ä\u0003é\u008f«";
       int var20 = "\u008cA亪耚丐竩\u0007½óJaM]z\b\u0088Yù!\u009d\u008d*\u0000\nãUµ3H\u0014\b\u009d\b]\u0003g\u001cz\u00077¦´£Õ|ä\u0003é\u008f«".length();
-      char var17 = 6;
+      var17 = 6;
       int var26 = -1;
 
       label88:
@@ -1752,7 +1765,7 @@ public class Ip3_2 {
                int var22 = 0;
                byte var57 = var10000;
                var46 = var54;
-               int var34 = var10004;
+               var34 = var10004;
                byte var66;
                char[] var74;
                int var10006;
@@ -1833,7 +1846,7 @@ public class Ip3_2 {
 
                      label62:
                      while (true) {
-                        byte var36 = var10;
+                        var36 = var10;
                         var10 += 8;
                         byte[] var15 = var12.substring(var36, var10).getBytes("ISO-8859-1");
                         long[] var28 = var14;
@@ -1974,7 +1987,6 @@ public class Ip3_2 {
       }
    }
 }
-
 
 
 

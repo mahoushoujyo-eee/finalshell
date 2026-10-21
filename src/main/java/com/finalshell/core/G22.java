@@ -85,6 +85,7 @@ public class G22 extends GT3 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int var47;
       Random var6 = new Random(0L);
       String[] var10000 = W5.q();
       this.A = (float)Math.sin(0.1);
@@ -124,8 +125,6 @@ public class G22 extends GT3 {
             }
 
             if (var5 != null) {
-      int var47;
-      int var47;
                continue;
             }
          }
@@ -581,6 +580,7 @@ public class G22 extends GT3 {
    }
 
    public static float L(float var0, float var1, float var2, float var3) {
+      float var12;
       String[] var10000 = W5.q();
       float var5 = 0.0F;
       float var7 = 2.0F;
@@ -933,7 +933,6 @@ public class G22 extends GT3 {
       }
    }
 }
-
 
 
 

@@ -266,6 +266,7 @@ public class BV {
    }
 
    public void f(int var1, int var2) {
+      BV var4;
       Ky4[] var3;
       int var10000;
       var3 = Kj4.d();
@@ -350,12 +351,13 @@ public class BV {
    }
 
    public void F() {
+      I4 var4;
       int var2 = this.P.length;
       int var3 = var2 / 3;
       Ky4[] var10000 = Kj4.d();
       this.X = new byte[var3];
       Ky4[] var1 = var10000;
-      I4 var4 = new I4(this.P, var2, this.w);
+      var4 = new I4(this.P, var2, this.w);
       this.U = var4.Q();
       int var5 = 0;
 
@@ -419,12 +421,13 @@ public class BV {
    }
 
    public int N(Color var1) {
+      int var4;
       Ky4[] var2 = Kj4.d();
       if (this.U == null) {
          return -1;
       } else {
          int var3 = var1.getRed();
-         int var4 = var1.getGreen();
+         var4 = var1.getGreen();
          int var5 = var1.getBlue();
          int var6 = 0;
          int var7 = a(25812, 4606499669004231355L);
@@ -701,6 +704,7 @@ public class BV {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ -24477) & 65535;
       if (c[var2] == null) {
          char[] var3 = b[var2].toCharArray();
@@ -1475,7 +1479,7 @@ public class BV {
                var10000 = 16;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;

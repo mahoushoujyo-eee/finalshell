@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 
 public class W_2_2 {
    public int B;
@@ -16,7 +16,7 @@ public class W_2_2 {
       String[] var1;
       int var2;
       label23: {
-         String[] var10000 = PingMessageR.N();
+         String[] var10000 = PingMessageReceiver.N();
          var2 = this.h() - this.C();
          var1 = var10000;
          int var4 = var2;
@@ -45,7 +45,7 @@ public class W_2_2 {
    }
 
    public float m() {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       float var2 = 0.0F;
       String[] var1 = var10000;
       int var3 = this.f();

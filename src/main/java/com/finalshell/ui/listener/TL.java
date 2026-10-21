@@ -4,22 +4,22 @@ import com.finalshell.core.Dv2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.Yq2;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class TL implements ActionListener {
-   public final Address W;
+   public final FileBrowserAddressBar W;
 
-   public TL(Address var1) {
+   public TL(FileBrowserAddressBar var1) {
       this.W = var1;
    }
 
    @Override
    public void actionPerformed(ActionEvent var1) {
-      boolean var2 = Address.g();
+      boolean var2 = FileBrowserAddressBar.g();
       Object var4 = 285052103515156702L;
       Ref.g(285052103515156702L, var4);
       Object var6 = 625337668494616580L;

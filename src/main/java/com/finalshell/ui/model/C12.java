@@ -42,6 +42,7 @@ public class C12 extends AbstractTableModel {
    }
 
    public int c(int var1) {
+      Integer var13;
       Object var3 = -1;
       String var10000 = TunnelList.V();
       Object var4 = false;
@@ -56,9 +57,9 @@ public class C12 extends AbstractTableModel {
             YE var6 = (YE)var5.next();
             if (var2 != null) {
                var10001 = var6;
-               Object[] var10002 = Registry.emptyArgs();
+               Object var10002 = Registry.emptyArgs();
                long var10 = 347860782649835626L;
-               Object[] var9 = var10002;
+               Object var9 = var10002;
                var10002 = Ref.h(347860782649835626L, var9, var10);
 
                try {
@@ -147,6 +148,7 @@ public class C12 extends AbstractTableModel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var0 = new String[5];
       int var4 = 0;
       String var3 = "的栂窹厣\u0002簑垎\u0004皻吩窹厣";
@@ -161,7 +163,6 @@ public class C12 extends AbstractTableModel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label48: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

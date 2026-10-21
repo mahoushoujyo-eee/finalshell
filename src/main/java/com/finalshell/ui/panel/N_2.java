@@ -267,7 +267,7 @@ public class N_2 extends Ky4 implements OM {
       KD var6 = new KD();
       var6.u(b(-24167, 22183), new Object[0]);
       var6.Y(this, GR.lD);
-      byte var7 = (GO.A) ? 1 : 0;
+      byte var7 = (byte)((GO.A) ? 1 : 0);
       if (var1 != 0) {
          if (GO.A) {
             var6.u(GO.FN);
@@ -1414,6 +1414,7 @@ public class N_2 extends Ky4 implements OM {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[39];
       int var11 = 0;
       String var10 = "áì&Ä¸3\u009a\u0007\u001c\u0088\u0099HI¢`\u0003>@Ø\u0007B®R\u008c6:K\u0002yù\u0003ò\u0081Á\u00035ó÷\u0007\u0090*\u000e\u001c}(â\u0002\u0017\u0098\u0004õôæÚ\u0004±\u0001ng\u0002q\u0005\u001aY²Í/©LXõZÀzÔ\u0080ÀÅÇTÃº±\u0006\u0000u\u0017\u0083Z\u0003F'S\u0003ð\b\u0005\u0003ñÆ¡\u0007þwÍ·Ê]\u001a\u0002}\u0086\u0003U.ñ\u0003yö<\u0003\u008c\u007fÈ\u0004\u0097°ªS\u0003ò<ê\u0003\u009c\u000f\u0088\u0003ºvã\u0003;\">\u001b¯}\u0013Örs#\u00125<\u0097K=3r¹¢\fdHÉ2\u0017ý~\u000e;\u0003À®E\u001a\u0013\u001d\u0084Ú\u0080ò}\"þ:î\u008b\u0012+\u0097º\u001elóD/·QÅ0\u0084\u0007\u0097Gï±f\u009dF\u0003\u0007·ù\u0004À\u0091\u0002w\u0004sÚt\u001f\u0019ø\"ù=/\u000e\u0088½@É9õèäÈCõS\u008e£\u0091O¨X \u0003\u0091é¯\u00024¶\u0004ÞóÁ9";
@@ -1430,7 +1431,6 @@ public class N_2 extends Ky4 implements OM {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

@@ -3,7 +3,7 @@ package com.finalshell.ui.listener;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.BT;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import com.finalshell.ui.panel.PathPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,7 +19,7 @@ public class Lw2 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
-      boolean var2 = Address.g();
+      boolean var2 = FileBrowserAddressBar.g();
       Object var4 = 257342744894307012L;
       Ref.g(257342744894307012L, var4);
       Object var6 = 291327501867436911L;

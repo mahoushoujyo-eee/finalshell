@@ -7,9 +7,9 @@ import java.awt.event.WindowEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class F62 extends WindowAdapter {
-   public final com.finalshell.ui.frame.U a;
+   public final com.finalshell.ui.frame.MainFrame a;
 
-   public F62(com.finalshell.ui.frame.U var1) {
+   public F62(com.finalshell.ui.frame.MainFrame var1) {
       this.a = var1;
    }
 

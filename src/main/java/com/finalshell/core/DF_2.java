@@ -465,6 +465,7 @@ public final class DF_2 implements Cloneable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long var9;
       char[] var10003 = "\u0003g?(".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -511,7 +512,7 @@ public final class DF_2 implements Cloneable {
             String var39 = new String(var10003).intern();
             int var25 = -1;
             a = var39;
-            long var9 = 5123355951318460852L;
+            var9 = 5123355951318460852L;
             long[] var14 = new long[10];
             int var11 = 0;
             String var12 = "((æ\u001aäýiÿ\u0004\u001bêj)u\u001b\t\\és¡´jaJ¯\u0085Wïv\u009aÚ\u0084Ð\u0091³ñ?e³B\u0081?#\u0085Ãi\u001d6FÝ5P¨Ï38ú\u00186Òa\u009bµi";

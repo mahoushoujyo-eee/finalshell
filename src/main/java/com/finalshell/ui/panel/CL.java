@@ -60,7 +60,7 @@ public class CL extends F8 {
       }
    }
 
-   public void v(java.io.File var1, com.finalshell.ui.frame.U var2) {
+   public void v(java.io.File var1, com.finalshell.ui.frame.MainFrame var2) {
       Object var3 = 309874166404506028L;
       Ref.g(309874166404506028L, var3);
       Object[] var10002 = Registry.packArgs(var1, var2);
@@ -970,6 +970,7 @@ public class CL extends F8 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       T(0);
@@ -985,7 +986,6 @@ public class CL extends F8 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

@@ -36,7 +36,7 @@ public class L2_3 extends Lz2_2 {
 
       int var3 = var10000.getAlpha();
       if (var2 != null) {
-         return Boolean.valueOf((boolean)var3);
+         return Boolean.valueOf(var3);
       } else {
          return var3 == (int)a ? true : false;
       }

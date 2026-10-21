@@ -12,7 +12,7 @@ public class AO extends ChannelInitializer {
       var1.pipeline().addLast(a, new ReadTimeoutHandler(5));
       var1.pipeline().addLast(new ZF_2());
       var1.pipeline().addLast(new Lz2());
-      var1.pipeline().addLast(new BA());
+      var1.pipeline().addLast(new PingClientHandler());
    }
 
    @Override

@@ -1082,6 +1082,7 @@ public abstract class Dj4 implements EU {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "Hçg/Pù\u0090Ö\u0016\u001a\u0099õ)ÑÂ\u0002^§s\u000b\u00135\u0090\n°®F^ç\rh";
@@ -1096,7 +1097,6 @@ public abstract class Dj4 implements EU {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

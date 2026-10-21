@@ -29,7 +29,7 @@ public class PrivateKeyPanel extends JPanel {
    public static Integer[] d;
 
    public PrivateKeyPanel() {
-      ImportPanel.j();
+      ImportMenuPanel.j();
       Registry.lookupField(635749397800415838L).setBoolean(this, false);
       long var8 = 228598477229309627L;
       String var7 = "";
@@ -93,14 +93,14 @@ public class PrivateKeyPanel extends JPanel {
    }
 
    public void Y(LN3 var1) {
-      ImportPanel.j();
+      ImportMenuPanel.j();
       long var4 = 596356982670249921L;
       Ref.s(596356982670249921L, var1, var4);
       Object var5 = 220534440162131791L;
       JTextField var10002 = (JTextField)Ref.g(220534440162131791L, var5);
       String var10004 = (String)(Registry.emptyArgs());
       long var8 = 286931176286176762L;
-      Object[] var7 = var10004;
+      Object var7 = var10004;
       var10004 = Ref.h(286931176286176762L, var7, var8);
 
       try {
@@ -114,7 +114,7 @@ public class PrivateKeyPanel extends JPanel {
       JPasswordField var24 = (JPasswordField)Ref.g(570818555012436718L, var9);
       String var10006 = (String)(Registry.emptyArgs());
       long var12 = 557543992546278139L;
-      Object[] var11 = var10006;
+      Object var11 = var10006;
       var10006 = Ref.h(557543992546278139L, var11, var12);
 
       try {
@@ -140,7 +140,7 @@ public class PrivateKeyPanel extends JPanel {
 
       var10006 = Registry.packArgs(true);
       long var18 = 379642641301702996L;
-      Object[] var17 = var10006;
+      Object var17 = var10006;
       Ref.h(379642641301702996L, var17, var18);
 
       try {
@@ -152,7 +152,7 @@ public class PrivateKeyPanel extends JPanel {
 
    public void N(boolean var1) {
       label16: {
-         String[] var2 = ImportPanel.j();
+         String[] var2 = ImportMenuPanel.j();
          if (var2 != null) {
             if (!var1) {
                break label16;
@@ -174,10 +174,10 @@ public class PrivateKeyPanel extends JPanel {
    }
 
    public void v() {
-      ImportPanel.j();
+      ImportMenuPanel.j();
       String var10001;
       Object var5 = 570818555012436718L;
-      super(((JPasswordField)Ref.g(570818555012436718L, var5)).getPassword());
+      // [VF-super] super(((JPasswordField)Ref.g(570818555012436718L, var5)).getPassword());
       String var2 = var10001;
       String var1 = var10001;
 
@@ -1105,6 +1105,7 @@ public class PrivateKeyPanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[15];
       int var11 = 0;
       String var10 = "呩礐ú\u0003崉謜羢\u0004%\u0084\u001d´\u0005秜钠寥硬d\u001f\b7wH{d\u008bNZ¿$\u001fdÛfC\u0099;\u0098u\tÆ4km¤;Ë4\u0080O\u000e\u0082ß&UQÇÎ;â 0þÕç\u0003禱鑋´\u000e\"þø\u0087cý\u0006@Øà\u007f¬p\u008c\u000e½Ð\u000bB\u001dEÊR\"\u0007 S\u009e\u0010\n\u00adk\t5]«Æ\u008f-¼\u001b±\u009e{\u0015¿\u008a\u008cw¿á6\u0091\u001bÌp\u0096Ï`WÏ?\u001b\u0089(\u0082\u0001Ë\u0004SoÓÉ\u000eaØZµÞÛ?¸ÜP÷ð-&";
@@ -1120,7 +1121,6 @@ public class PrivateKeyPanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      long var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

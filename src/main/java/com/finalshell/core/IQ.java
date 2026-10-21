@@ -39,6 +39,7 @@ public class IQ extends IB {
    }
 
    public void L(JComboBox var1) {
+      JComboBox var6;
       String[] var10000 = IH.M();
       Integer var3 = (Integer)this.o();
       String[] var2 = var10000;
@@ -64,8 +65,6 @@ public class IQ extends IB {
          int var10001 = var3;
          if (var2 != null) {
             if (var5 <= var10001) {
-      String[] var6;
-      String[] var6;
                return;
             }
 
@@ -117,7 +116,6 @@ public class IQ extends IB {
       return this.H();
    }
 }
-
 
 
 

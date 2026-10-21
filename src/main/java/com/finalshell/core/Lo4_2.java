@@ -40,7 +40,7 @@ public class Lo4_2 implements Q0 {
       if (this == null) {
          String var10009 = (String)(Registry.emptyArgs());
          long var22 = 564648154927582737L;
-         Object[] var21 = var10009;
+         Object var21 = var10009;
          var10009 = Ref.h(564648154927582737L, var21, var22);
 
          try {

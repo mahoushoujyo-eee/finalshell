@@ -52,7 +52,7 @@ public class RU3 {
    public KB x(int var1, int var2, int var3) {
       int var10000 = (com.finalshell.ui.model.J2.P()) ? 1 : 0;
       int var5 = var1;
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
       KB var7 = A7.q(new XE(this.c), new XE(this.Z));
       var10000 = ((XE)var7.X).r;
       int var10001 = var2;
@@ -923,6 +923,7 @@ public class RU3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "2\u0085\u009f\bÒÊÌ¢ò|ý^";
@@ -937,7 +938,6 @@ public class RU3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

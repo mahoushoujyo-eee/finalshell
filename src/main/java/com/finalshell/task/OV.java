@@ -3,17 +3,17 @@ package com.finalshell.task;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Ck4;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 public class OV implements Runnable {
    public final Ck4 W;
-   public final Address J;
+   public final FileBrowserAddressBar J;
    public static String a;
 
-   public OV(Address var1, Ck4 var2) {
+   public OV(FileBrowserAddressBar var1, Ck4 var2) {
       this.J = var1;
       this.W = var2;
    }
@@ -81,7 +81,7 @@ public class OV implements Runnable {
       try {
          if (var2 != null) {
             Object var26 = 514714590539131673L;
-            JOptionPane.showMessageDialog(SwingUtilities.getWindowAncestor((Address)Ref.g(514714590539131673L, var26)), var2);
+            JOptionPane.showMessageDialog(SwingUtilities.getWindowAncestor((FileBrowserAddressBar)Ref.g(514714590539131673L, var26)), var2);
          }
       } catch (Exception var28) {
          throw a(var28);

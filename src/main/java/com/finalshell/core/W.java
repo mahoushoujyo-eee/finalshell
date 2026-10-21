@@ -33,6 +33,7 @@ public class W extends W2 {
    }
 
    public void O$void() {
+      int var58;
       W2.F();
       Object var24 = 372236004790213499L;
       Object[] var10002 = Registry.packArgs(Ref.g(372236004790213499L, var24));
@@ -81,7 +82,7 @@ public class W extends W2 {
                Ref.g(254384586786323749L, var28);
                U82 var10004 = (U82)(Registry.packArgs(var9));
                long var31 = 397583903343830359L;
-               Object[] var30 = var10004;
+               Object var30 = var10004;
                var10004 = Ref.h(397583903343830359L, var30, var31);
 
                try {
@@ -94,9 +95,9 @@ public class W extends W2 {
                String var11 = var6.substring(var4).trim();
                String[] var12 = var11.split(a(-4581, -3455));
                short var56 = -4583;
-               Object[] var10006 = Registry.packArgs(var9);
+               Object var10006 = Registry.packArgs(var9);
                long var33 = 216694399931710134L;
-               Object[] var32 = var10006;
+               Object var32 = var10006;
                Ref.h(216694399931710134L, var32, var33);
 
                try {
@@ -109,7 +110,7 @@ public class W extends W2 {
                HashMap var14 = new HashMap();
                HashMap var10008 = Registry.packArgs(var14);
                long var35 = 187269746522646781L;
-               Object[] var34 = var10008;
+               Object var34 = var10008;
                Ref.h(187269746522646781L, var34, var35);
 
                try {
@@ -151,8 +152,6 @@ public class W extends W2 {
                                     }
 
                                     if (var1 != null) {
-      byte var58;
-      byte var58;
                                        continue;
                                     }
                                  }
@@ -199,7 +198,7 @@ public class W extends W2 {
                }
 
                label119: {
-                  int var59 = var11.startsWith(a(-4579, 10142));
+                  int var59 = (var11.startsWith(a(-4579, 10142))) ? 1 : 0;
                   if (var1 != null) {
                      if (var59 == 0) {
                         break label119;
@@ -240,7 +239,7 @@ public class W extends W2 {
                Ref.g(254384586786323749L, var36);
                var10008 = Registry.emptyArgs();
                long var39 = 262176401034774370L;
-               Object[] var38 = var10008;
+               Object var38 = var10008;
                var10008 = Ref.h(262176401034774370L, var38, var39);
 
                try {
@@ -1097,6 +1096,7 @@ public class W extends W2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[7];
       int var3 = 0;
       String var2 = "\u001aFY\u0083èÆR\u0002ó\u0082\u0005`\u009b\u0005ª\u0099\u0002¸\u0099\u0002W×";
@@ -1213,7 +1213,6 @@ public class W extends W2 {
       }
    }
 }
-
 
 
 

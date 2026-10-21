@@ -10,12 +10,12 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class ExitFullScreenPanel extends JPanel {
-   public com.finalshell.ui.frame.U d;
+   public com.finalshell.ui.frame.MainFrame d;
    public U1 w;
    public static String[] a;
    public static String[] b;
 
-   public ExitFullScreenPanel(U1 var1, com.finalshell.ui.frame.U var2) {
+   public ExitFullScreenPanel(U1 var1, com.finalshell.ui.frame.MainFrame var2) {
       long var4 = 425174961713446459L;
       Ref.s(425174961713446459L, var2, var4);
       long var6 = 258633902461436294L;
@@ -44,7 +44,7 @@ public class ExitFullScreenPanel extends JPanel {
 
       Color var10004 = (Color)(Registry.emptyArgs());
       long var10 = 345089686683358688L;
-      Object[] var9 = var10004;
+      Object var9 = var10004;
       var10004 = Ref.h(345089686683358688L, var9, var10);
 
       try {
@@ -911,6 +911,7 @@ public class ExitFullScreenPanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "w\u0011\t÷¨\u000e\u0010\u0094Ò,ÑÉ\f\rñ@Bìºw\u001c*¼_ß\u0089×\u0082öi\u001cW%\u0094R\u009eò8\u0088É\u0018\u0090Úsñ3ÞÔ¿\u000eE\u0094x,\u0084É¦\r¤@èìïw";
@@ -926,7 +927,6 @@ public class ExitFullScreenPanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

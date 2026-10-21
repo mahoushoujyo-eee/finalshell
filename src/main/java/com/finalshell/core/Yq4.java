@@ -29,7 +29,6 @@ public class Yq4 extends GT3 {
                if (var2 != null) {
                   if (var7 == 4) {
       int var8;
-      int var8;
                      break label66;
                   }
 
@@ -92,10 +91,11 @@ public class Yq4 extends GT3 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int[] var8;
       int var6 = 0;
       String[] var10000 = W5.q();
       int[] var7 = new int[a(6894, 6803633326055861185L)];
-      int[] var8 = new int[a(6894, 6803633326055861185L)];
+      var8 = new int[a(6894, 6803633326055861185L)];
       int[] var9 = new int[a(6894, 6803633326055861185L)];
       int[] var10 = new int[var1 * var2];
       String[] var5 = var10000;
@@ -561,7 +561,6 @@ public class Yq4 extends GT3 {
       }
    }
 }
-
 
 
 

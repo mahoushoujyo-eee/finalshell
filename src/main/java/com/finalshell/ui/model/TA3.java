@@ -26,9 +26,9 @@ public class TA3 implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((Thread)var1, (Thread)var2);
+      Object var10001 = Registry.packArgs((Thread)var1, (Thread)var2);
       long var4 = 537215676255985544L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(537215676255985544L, var3, var4);
 
       try {

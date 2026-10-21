@@ -1,6 +1,6 @@
 package com.finalshell.ui.dialog;
 
-import com.finalshell.ui.panel.TerminalPanel;
+import com.finalshell.ui.panel.TerminalBackgroundPanel;
 import java.awt.Toolkit;
 import javax.swing.JDialog;
 
@@ -11,7 +11,7 @@ public class U72 extends JDialog {
 
    public U72() {
       this.setModal(true);
-      TerminalPanel var1 = new TerminalPanel();
+      TerminalBackgroundPanel var1 = new TerminalBackgroundPanel();
       this.setContentPane(var1);
       this.setIconImage(Toolkit.getDefaultToolkit().getImage(a));
    }

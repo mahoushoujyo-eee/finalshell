@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.LN3;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -40,7 +40,7 @@ public class VX extends AbstractTableModel {
    public int N(String var1) {
       Object var3 = -1;
       Object var4 = false;
-      ImportPanel.j();
+      ImportMenuPanel.j();
       Object var7 = 563076254564406524L;
       Iterator var5 = ((ArrayList)Ref.g(563076254564406524L, var7)).iterator();
       VX var2 = this;
@@ -54,7 +54,7 @@ public class VX extends AbstractTableModel {
                var10001 = var6;
                String var10002 = Registry.emptyArgs();
                long var10 = 194080076253066315L;
-               Object[] var9 = var10002;
+               Object var9 = var10002;
                var10002 = Ref.h(194080076253066315L, var9, var10);
 
                try {
@@ -135,7 +135,7 @@ public class VX extends AbstractTableModel {
    @Override
    public void setValueAt(Object var1, int var2, int var3) {
       super.setValueAt(var1, var2, var3);
-      ImportPanel.j();
+      ImportMenuPanel.j();
       Object var9 = 563076254564406524L;
       LN3 var5 = (LN3)((ArrayList)Ref.g(563076254564406524L, var9)).get(var2);
       VX var4 = this;
@@ -178,7 +178,7 @@ public class VX extends AbstractTableModel {
          for (LN3 var8 : (ArrayList)Ref.g(563076254564406524L, var17)) {
             label76: {
                if (var4 != null) {
-                  var10002 = (var8.equals(var5)) ? 1 : 0;
+                  var10002 = (byte)((var8.equals(var5)) ? 1 : 0);
                   if (var4 == null) {
                      break label59;
                   }
@@ -223,7 +223,7 @@ public class VX extends AbstractTableModel {
 
    @Override
    public boolean isCellEditable(int var1, int var2) {
-      String[] var3 = ImportPanel.j();
+      String[] var3 = ImportMenuPanel.j();
       int var10000 = var2;
       if (var3 != null) {
          if (var2 == 0) {

@@ -45,6 +45,13 @@ public class Ug4 extends DefaultTableCellRenderer {
 
    @Override
    public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
+      String var103;
+      Long var106;
+      Long var109;
+      Integer var111;
+      Integer var126;
+      String var91;
+      String var97;
       CE.S$arrint();
       Object var19 = 559149080364531079L;
       J0 var8 = (J0)Ref.g(559149080364531079L, var19);
@@ -90,9 +97,9 @@ public class Ug4 extends DefaultTableCellRenderer {
          throw var83.getTargetException();
       }
 
-      Object[] var10005 = Registry.packArgs(var15);
+      Object var10005 = Registry.packArgs(var15);
       long var28 = 299433684775647404L;
-      Object[] var27 = var10005;
+      Object var27 = var10005;
       Ref.h(299433684775647404L, var27, var28);
 
       try {
@@ -130,9 +137,9 @@ public class Ug4 extends DefaultTableCellRenderer {
             if (this != null) {
                if (var14 == 0) {
                   new StringBuilder();
-                  Object[] var10008 = Registry.emptyArgs();
+                  Object var10008 = Registry.emptyArgs();
                   long var32 = 134324574424375296L;
-                  Object[] var31 = var10008;
+                  Object var31 = var10008;
                   var10008 = Ref.h(134324574424375296L, var31, var32);
 
                   try {
@@ -260,9 +267,9 @@ public class Ug4 extends DefaultTableCellRenderer {
 
                         String var86 = var103.replaceAll(a(31370, 312), "");
                         new StringBuilder();
-                        Object[] var10009 = Registry.emptyArgs();
+                        Object var10009 = Registry.emptyArgs();
                         long var44 = 528143184018704864L;
-                        Object[] var43 = var10009;
+                        Object var43 = var10009;
                         var10009 = Ref.h(528143184018704864L, var43, var44);
 
                         try {
@@ -295,7 +302,7 @@ public class Ug4 extends DefaultTableCellRenderer {
                   new StringBuilder();
                   HashSet var112 = (HashSet)(Registry.emptyArgs());
                   long var46 = 398648618049357234L;
-                  Object[] var45 = var112;
+                  Object var45 = var112;
                   var112 = Ref.h(398648618049357234L, var45, var46);
 
                   try {
@@ -320,7 +327,7 @@ public class Ug4 extends DefaultTableCellRenderer {
                   new StringBuilder();
                   ArrayList var115 = (ArrayList)(Registry.emptyArgs());
                   long var48 = 279562214327125641L;
-                  Object[] var47 = var115;
+                  Object var47 = var115;
                   var115 = Ref.h(279562214327125641L, var47, var48);
 
                   try {

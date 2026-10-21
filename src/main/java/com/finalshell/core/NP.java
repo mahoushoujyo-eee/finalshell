@@ -1719,6 +1719,8 @@ public class NP extends LayoutStyle {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var21;
+      char[] var35;
       String[] var13 = new String[6];
       int var11 = 0;
       String var10 = "\nã~á\u008aÄÎÒ\u008c\u008c¼ÿ£\u001fkx\n\u007fÈâ¦<g\u0086ªý(\r\tK\u001eô\u0086fO\u0086¼\u0006ºÕC\n¥Y¹\u0094W!ëbP1";
@@ -1733,7 +1735,6 @@ public class NP extends LayoutStyle {
          byte var10002 = -1;
 
          while (true) {
-      char[] var35;
             label80: {
                char[] var41 = var10001.toCharArray();
                int var10004 = var41.length;

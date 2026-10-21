@@ -240,6 +240,9 @@ public class Kz4 extends Ky4 {
    // $VF: Irreducible bytecode has more than 5 nodes in sequence and was not entirely decomposed
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public synchronized void N(java.io.File var1) {
+      QW var20;
+      byte var23;
+      boolean var24;
       this.b = var1;
       this.Z.removeFocusListener(this.s);
       String var10000 = M();
@@ -352,7 +355,7 @@ public class Kz4 extends Ky4 {
                      while (var15 < var14) {
                         java.io.File var16 = var13[var15];
                         if (var2 != null) {
-                           var23 = var16.isDirectory();
+                           var23 = (byte)((var16.isDirectory()) ? 1 : 0);
                            if (var2 == null) {
                               break label157;
                            }
@@ -374,14 +377,12 @@ public class Kz4 extends Ky4 {
                      }
                   }
 
-                  var23 = Wx2.t();
+                  var23 = (byte)((Wx2.t()) ? 1 : 0);
                }
 
                label164: {
                   if (var2 != null) {
                      if (var23 != 0) {
-      byte var23;
-      byte var23;
                         break label164;
                      }
 
@@ -410,7 +411,7 @@ public class Kz4 extends Ky4 {
                   var10001 = var10 > 0 ? 1 : 0;
                }
 
-               var21.setEnabled((boolean)var10001);
+               var21.setEnabled(var10001);
                var21.addActionListener(new RJ3(this, var11, var21));
                this.k.add(var21);
                var11.addPopupMenuListener(new Cr4(this, var21));
@@ -460,7 +461,7 @@ public class Kz4 extends Ky4 {
 
       while (var24) {
          KD var19 = (KD)this.k.getComponent(2);
-         QW var20 = new QW();
+         var20 = new QW();
          var20.setIcon((Icon)var19.getClientProperty(b(11995, 25946)));
          var20.setText(var19.getText());
          var20.addActionListener(var19.getActionListeners()[0]);
@@ -539,18 +540,18 @@ public class Kz4 extends Ky4 {
       int var10001 = this.k.getWidth();
       if (var1 != null) {
          if (var10000 <= var10001) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var10000 = this.k.getComponentCount();
          if (var1 == null) {
-            return (boolean)var10000;
+            return var10000 != 0;
          }
 
          var10001 = 5;
       }
 
-      return (boolean)(var10000 > var10001 ? 1 : 0);
+      return (boolean)((var10000 > var10001 ? 1 : 0) != 0);
    }
 
    public KD l() {
@@ -1522,6 +1523,7 @@ public class Kz4 extends Ky4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       r("exYf7b");
@@ -1643,7 +1645,6 @@ public class Kz4 extends Ky4 {
       }
    }
 }
-
 
 
 

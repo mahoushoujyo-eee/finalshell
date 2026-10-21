@@ -974,8 +974,9 @@ public class W0 extends MouseAdapter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var3;
       String[] var5 = new String[2];
-      int var3 = 0;
+      var3 = 0;
       String var2 = "×9ø\u0085+\u0000»çq¸\u001f\tÖÐ4\u008a\u0081\u0019\u0005\u007fMuô\u0015\u009d\u000fØ´krE/¯ö\u0092f\u0097rÐ0\"\bà°o";
       int var4 = "×9ø\u0085+\u0000»çq¸\u001f\tÖÐ4\u008a\u0081\u0019\u0005\u007fMuô\u0015\u009d\u000fØ´krE/¯ö\u0092f\u0097rÐ0\"\bà°o".length();
       char var1 = 23;

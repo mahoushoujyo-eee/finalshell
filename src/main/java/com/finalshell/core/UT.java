@@ -38,6 +38,7 @@ public class UT extends JTable {
    }
 
    public void I(com.finalshell.ui.model.Cd4 var1) {
+      boolean var29;
       com.finalshell.ui.panel.CE.S$arrint();
       long var10 = 319541183701528273L;
       Ref.s(319541183701528273L, var1, var10);
@@ -97,7 +98,7 @@ public class UT extends JTable {
 
          TableRowSorter var10003 = (TableRowSorter)(Registry.emptyArgs());
          long var12 = 467126060497402896L;
-         Object[] var11 = var10003;
+         Object var11 = var10003;
          var10003 = Ref.h(467126060497402896L, var11, var12);
 
          try {
@@ -127,6 +128,7 @@ public class UT extends JTable {
    }
 
    public TableRowSorter s() {
+      Integer var14;
       int[] var10000 = com.finalshell.ui.panel.CE.S$arrint();
       com.finalshell.ui.model.Cd4 var2 = (com.finalshell.ui.model.Cd4)this.getModel();
       int[] var1 = var10000;
@@ -134,9 +136,9 @@ public class UT extends JTable {
       int var4 = 0;
 
       do {
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var8 = 450493786643383164L;
-         Object[] var7 = var10002;
+         Object var7 = var10002;
          var10002 = Ref.h(450493786643383164L, var7, var8);
 
          try {
@@ -151,7 +153,7 @@ public class UT extends JTable {
 
          var10002 = Registry.packArgs(var4);
          long var10 = 604487827219043539L;
-         Object[] var9 = var10002;
+         Object var9 = var10002;
          var10002 = Ref.h(604487827219043539L, var9, var10);
 
          try {

@@ -4,7 +4,7 @@ import com.finalshell.core.KV;
 import com.finalshell.core.Y12_2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.ResetPanel;
+import com.finalshell.ui.panel.SettingsResetPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
@@ -13,9 +13,9 @@ import javax.swing.JPopupMenu;
 public class Qi2 implements ActionListener {
    public final Y12_2 Y;
    public final com.finalshell.core.C Z;
-   public final ResetPanel R;
+   public final SettingsResetPanel R;
 
-   public Qi2(ResetPanel var1, Y12_2 var2, com.finalshell.core.C var3) {
+   public Qi2(SettingsResetPanel var1, Y12_2 var2, com.finalshell.core.C var3) {
       this.R = var1;
       this.Y = var2;
       this.Z = var3;
@@ -23,13 +23,14 @@ public class Qi2 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var25;
       String[] var2 = KV.b$arrString();
       if (var2 == null) {
          Object var3 = 237790637254787750L;
          Ref.g(237790637254787750L, var3);
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var6 = 410760064034581011L;
-         Object[] var5 = var10002;
+         Object var5 = var10002;
          var10002 = Ref.h(410760064034581011L, var5, var6);
 
          try {

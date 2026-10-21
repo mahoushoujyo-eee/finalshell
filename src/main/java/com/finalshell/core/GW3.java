@@ -64,6 +64,9 @@ public class GW3 extends GT3 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int var41;
+      int var44;
+      int var48;
       String[] var10000 = W5.q();
       int[] var6 = new int[var1 * var2];
       int var7 = 0;
@@ -118,7 +121,7 @@ public class GW3 extends GT3 {
          while (var40 < var2) {
             label167: {
                label194: {
-                  var41 = this.Q;
+                  var41 = (this.Q) ? 1 : 0;
                   if (var5 != null) {
                      if (!this.Q) {
                         break label194;
@@ -305,8 +308,6 @@ public class GW3 extends GT3 {
                         }
 
                         if (var5 != null) {
-      int var44;
-      int var44;
                            continue label146;
                         }
                      }
@@ -356,13 +357,15 @@ public class GW3 extends GT3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var41;
+      char[] var44;
+      long var48;
       char[] var10003 = "G\u0018{\u007f\u001aeo@\u001eqv\u001de)k\u00197T\u0001b(a\u00059>F".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
       byte var36 = 90;
       char[] var10002 = var10003;
       int var21 = var10004;
-      char[] var44;
       byte var52;
       int var10005;
       char var10006;
@@ -399,7 +402,7 @@ public class GW3 extends GT3 {
          var36 = 90;
          var21 = var10004;
          if (var10004 <= var8) {
-            String var41 = new String(var10003).intern();
+            var41 = new String(var10003).intern();
             int var27 = -1;
             a = var41;
             long var9 = 2480984682911172291L;
@@ -569,7 +572,7 @@ public class GW3 extends GT3 {
                   byte var39 = -1;
 
                   while (true) {
-                     long var48 = var32 ^ var0;
+                     var48 = var32 ^ var0;
                      switch (var39) {
                         case 0:
                            var10000[var23] = var48;
@@ -650,7 +653,6 @@ public class GW3 extends GT3 {
       }
    }
 }
-
 
 
 

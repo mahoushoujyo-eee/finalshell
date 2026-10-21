@@ -9,6 +9,7 @@ import javax.swing.plaf.RootPaneUI;
 
 public class Ec4 extends E12 {
    public void m(JRootPane var1, String var2, com.finalshell.ui.model.G9 var3, Object[] var4) {
+      boolean var8;
       String[] var5;
       RootPaneUI var9;
       label46: {

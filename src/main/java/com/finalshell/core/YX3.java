@@ -37,6 +37,8 @@ public class YX3 extends GT3 {
    }
 
    public void Q(int[] var1, int[] var2, int var3, int var4, int var5, boolean var6, boolean var7) {
+      int var47;
+      int var51;
       int var9 = var3 * var4;
       String[] var10000 = W5.q();
       KL var10 = new KL();
@@ -44,7 +46,7 @@ public class YX3 extends GT3 {
       String[] var8 = var10000;
       var10.p(var1, 0, var9);
       int[] var11 = var10.D();
-      byte var42 = (var6) ? 1 : 0;
+      byte var42 = (byte)((var6) ? 1 : 0);
       if (var8 != null) {
          if (var6 == 0) {
             int var12 = 0;
@@ -78,7 +80,6 @@ public class YX3 extends GT3 {
          label160:
          while (true) {
             if (var43 >= var4) {
-      byte[] var44;
       byte[] var44;
                return;
             }
@@ -321,13 +322,13 @@ public class YX3 extends GT3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var44;
       char[] var10003 = "\u0018\u0019\u0006:\u0007\u0007\u001b\n\u0003\u000b;\u0001\u001dN>XD{".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
       byte var36 = 25;
       char[] var10002 = var10003;
       int var21 = var10004;
-      char[] var44;
       byte var52;
       int var10005;
       char var10006;
@@ -615,7 +616,6 @@ public class YX3 extends GT3 {
       }
    }
 }
-
 
 
 

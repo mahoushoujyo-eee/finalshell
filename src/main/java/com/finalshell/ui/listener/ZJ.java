@@ -4,7 +4,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Kl4;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
@@ -13,22 +13,23 @@ import javax.swing.tree.TreePath;
 
 public class ZJ implements TreeSelectionListener {
    public final Kl4 H;
-   public final Connection4 b;
+   public final ConnectionInfoPanel b;
 
-   public ZJ(Connection4 var1, Kl4 var2) {
+   public ZJ(ConnectionInfoPanel var1, Kl4 var2) {
       this.b = var1;
       this.H = var2;
    }
 
    @Override
    public void valueChanged(TreeSelectionEvent var1) {
+      boolean var52;
       TreePath var3;
       label76: {
-         Connection4.I();
+         ConnectionInfoPanel.I();
          Object var6 = 392656021909457851L;
          Registry.lookupField(415368146415028056L).setLong(Ref.g(392656021909457851L, var6), System.currentTimeMillis());
          Object var8 = 392656021909457851L;
-         var3 = ((Connection4)Ref.g(392656021909457851L, var8)).getSelectionPath();
+         var3 = ((ConnectionInfoPanel)Ref.g(392656021909457851L, var8)).getSelectionPath();
          Object var10 = 392656021909457851L;
          Ref.g(392656021909457851L, var10);
          Object var12 = 285663222664681848L;
@@ -97,7 +98,7 @@ public class ZJ implements TreeSelectionListener {
       }
 
       Object var28 = 392656021909457851L;
-      Connection4 var10010 = (Connection4)Ref.g(392656021909457851L, var28);
+      ConnectionInfoPanel var10010 = (ConnectionInfoPanel)Ref.g(392656021909457851L, var28);
       if (this != null) {
          Object[] var10012 = Registry.emptyArgs();
          long var31 = 498856411508641826L;
@@ -106,9 +107,9 @@ public class ZJ implements TreeSelectionListener {
          long var33 = 343160910034620817L;
          Object var32 = var10012;
          Ref.s(343160910034620817L, var32, var33);
-         Object[] var10013 = Registry.emptyArgs();
+         Object var10013 = Registry.emptyArgs();
          long var35 = 490764181082108623L;
-         Object[] var34 = var10013;
+         Object var34 = var10013;
          var10013 = Ref.h(490764181082108623L, var34, var35);
 
          try {
@@ -122,7 +123,7 @@ public class ZJ implements TreeSelectionListener {
          }
 
          Object var36 = 392656021909457851L;
-         Connection4 var10014 = (Connection4)Ref.g(392656021909457851L, var36);
+         ConnectionInfoPanel var10014 = (ConnectionInfoPanel)Ref.g(392656021909457851L, var36);
       }
 
       Object var38 = 592764144014982287L;

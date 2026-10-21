@@ -1,11 +1,11 @@
 package com.finalshell.ui.adapter;
 
 import com.finalshell.core.LN3;
-import com.finalshell.core.Ls4;
+import com.finalshell.core.SshKeyCodec;
 import com.finalshell.core.PW3;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import java.awt.Color;
 import java.awt.Component;
 import java.lang.reflect.InvocationTargetException;
@@ -36,7 +36,9 @@ public class C6 extends DefaultTableCellRenderer {
 
    @Override
    public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
-      String[] var10000 = ImportPanel.j();
+      String var39;
+      Integer var41;
+      String[] var10000 = ImportMenuPanel.j();
       Component var8 = super.getTableCellRendererComponent(var1, var2, var3, var4, var5, var6);
       JLabel var9 = (JLabel)var8;
       String[] var7 = var10000;
@@ -49,7 +51,7 @@ public class C6 extends DefaultTableCellRenderer {
             String var13 = "";
             PW3 var10001 = (PW3)(Registry.emptyArgs());
             long var17 = 589598944901412818L;
-            Object[] var16 = var10001;
+            Object var16 = var10001;
             var10001 = Ref.h(589598944901412818L, var16, var17);
 
             try {
@@ -66,7 +68,7 @@ public class C6 extends DefaultTableCellRenderer {
                   if (var11 == 0) {
                      String var10002 = (String)(Registry.emptyArgs());
                      long var19 = 286931176286176762L;
-                     Object[] var18 = var10002;
+                     Object var18 = var10002;
                      var10002 = Ref.h(286931176286176762L, var18, var19);
 
                      try {
@@ -109,7 +111,7 @@ public class C6 extends DefaultTableCellRenderer {
 
                if (var34 == var37) {
                   new StringBuilder();
-                  Object[] var40 = Registry.packArgs(var14.J());
+                  Object var40 = Registry.packArgs(var14.J());
                   long var22 = 170223443202070248L;
                   Object var10003 = Ref.h2(170223443202070248L, var22);
 
@@ -163,7 +165,7 @@ public class C6 extends DefaultTableCellRenderer {
       return var8;
    }
 
-   public static int i(Ls4 var0) {
+   public static int i(SshKeyCodec var0) {
       return var0.r$int();
    }
 
@@ -182,6 +184,7 @@ public class C6 extends DefaultTableCellRenderer {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var39;
       char[] var10003 = "\u0012;\u0018;Jx1D&\u0005b-}F\u0006/".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -225,7 +228,7 @@ public class C6 extends DefaultTableCellRenderer {
          var34 = 68;
          var19 = var10004;
          if (var10004 <= var8) {
-            String var39 = new String(var10003).intern();
+            var39 = new String(var10003).intern();
             int var25 = -1;
             a = var39;
             long var9 = 389958950445792470L;

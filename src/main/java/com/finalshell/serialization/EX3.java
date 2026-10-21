@@ -1089,6 +1089,7 @@ public class EX3 extends ObjectInputStream {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = ">\u0087*ò\u007f/\\ä6ñ\u0007\u00050K\u0013Éâ7";
@@ -1103,7 +1104,6 @@ public class EX3 extends ObjectInputStream {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

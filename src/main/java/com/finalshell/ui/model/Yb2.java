@@ -6,17 +6,17 @@ import java.util.Comparator;
 
 public class Yb2 implements Comparator {
    public int R(Ld4 var1, Ld4 var2) {
-      byte var10000 = (I22.K$boolean()) ? 1 : 0;
+      byte var10000 = (byte)((I22.K$boolean()) ? 1 : 0);
       Class var4 = var1.D();
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = ((boolean)var10000) != 0;
       Class var5 = var2.D();
-      var10000 = (var4.equals(var5)) ? 1 : 0;
+      var10000 = (byte)((var4.equals(var5)) ? 1 : 0);
       if (var3) {
          if (var10000 != 0) {
             return 0;
          }
 
-         var10000 = (var4.isAssignableFrom(var5)) ? 1 : 0;
+         var10000 = (byte)((var4.isAssignableFrom(var5)) ? 1 : 0);
       }
 
       if (var3) {

@@ -2,14 +2,14 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 
 public class Ve2 implements TreeSelectionListener {
-   public final Connection4 S;
+   public final ConnectionInfoPanel S;
 
-   public Ve2(Connection4 var1) {
+   public Ve2(ConnectionInfoPanel var1) {
       this.S = var1;
    }
 

@@ -49,7 +49,7 @@ var10010 = new T9(((JPasswordField)Ref.g(228183978052282907L, var20)).getPasswor
          Object var10013 = Ref.g(181350030129350521L, var26);
          String var10014 = (String)(Registry.emptyArgs());
          long var29 = 191807067392725406L;
-         Object[] var28 = var10014;
+         Object var28 = var10014;
          var10014 = Ref.h(191807067392725406L, var28, var29);
 
          try {

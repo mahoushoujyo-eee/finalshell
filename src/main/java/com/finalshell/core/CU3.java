@@ -21,7 +21,7 @@ public class CU3 implements Stroke {
    public Shape createStrokedShape(Shape var1) {
       GeneralPath var3 = new GeneralPath();
       var1 = new BasicStroke(10.0F).createStrokedShape(var1);
-      int var10000 = Lp2_2.N();
+      int var10000 = ScaledStroke.N();
       FlatteningPathIterator var4 = new FlatteningPathIterator(var1.getPathIterator(null), 1.0);
       int var2 = var10000;
       float[] var5 = new float[(int)a];
@@ -103,7 +103,7 @@ public class CU3 implements Stroke {
       }
 
       if (Ky4.F$arrString() != null) {
-         Lp2_2.O(++var2);
+         ScaledStroke.O(++var2);
       }
 
       return var3;

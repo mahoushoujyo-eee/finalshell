@@ -2,14 +2,14 @@ package com.finalshell.core;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 
 public class UC3 implements UG {
-   public final Connection5 Z;
+   public final ImportExportPanel Z;
 
-   public UC3(Connection5 var1) {
+   public UC3(ImportExportPanel var1) {
       this.Z = var1;
    }
 

@@ -22,6 +22,7 @@ public class Y62_2 extends JTable {
    public static Integer[] b;
 
    public Y62_2() {
+      boolean var7;
       Registry.lookupField(200363817758425901L).setInt(this, -1);
       Registry.lookupField(236308356153440319L).setInt(this, -1);
       HashMap var10001 = new HashMap();
@@ -64,6 +65,7 @@ public class Y62_2 extends JTable {
    }
 
    public void s(com.finalshell.ui.model.GR var1) {
+      int var7;
       long var9 = 256673248699809908L;
       Ref.s(256673248699809908L, var1, var9);
       super.setModel(var1);
@@ -97,7 +99,7 @@ public class Y62_2 extends JTable {
             var3.getColumn(var4).setMinWidth(var5);
             var3.getColumn(var4).setMaxWidth(var5);
             ReservedAddressAdapter var6 = new ReservedAddressAdapter();
-            int var7 = 0;
+            var7 = 0;
 
             while (var7 < var3.getColumnCount()) {
                var3.getColumn(var7).setCellRenderer(var6);
@@ -114,7 +116,7 @@ public class Y62_2 extends JTable {
 
          TableRowSorter var10003 = (TableRowSorter)(Registry.emptyArgs());
          long var11 = 230834458731374925L;
-         Object[] var10 = var10003;
+         Object var10 = var10003;
          var10003 = Ref.h(230834458731374925L, var10, var11);
 
          try {
@@ -129,6 +131,8 @@ public class Y62_2 extends JTable {
    }
 
    public TableRowSorter g() {
+      Integer var14;
+      Object[] var7;
       com.finalshell.ui.model.GR var2 = (com.finalshell.ui.model.GR)this.getModel();
       String[] var10000 = Z();
       D72 var3 = new D72(this, var2);
@@ -136,9 +140,9 @@ public class Y62_2 extends JTable {
       int var4 = 0;
 
       do {
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var8 = 551196522578718340L;
-         Object[] var7 = var10002;
+         var7 = var10002;
          var10002 = Ref.h(551196522578718340L, var7, var8);
 
          try {
@@ -153,7 +157,7 @@ public class Y62_2 extends JTable {
 
          var10002 = Registry.packArgs(var4);
          long var10 = 553983040773288467L;
-         Object[] var9 = var10002;
+         Object var9 = var10002;
          var10002 = Ref.h(553983040773288467L, var9, var10);
 
          try {
@@ -219,6 +223,8 @@ public class Y62_2 extends JTable {
    }
 
    public static void __vfClinit__() {
+      long var14;
+      byte[] var7;
       long var0 = 8161029370958280936L;
       long[] var6 = new long[10];
       String[] var10000 = new String[1];
@@ -233,7 +239,7 @@ public class Y62_2 extends JTable {
       while (true) {
          int var10001 = var2;
          var2 += 8;
-         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
          long[] var9 = var6;
          var10001 = var3++;
          long var10002 = ((long)var7[0] & 255L) << 56
@@ -247,7 +253,7 @@ public class Y62_2 extends JTable {
          byte var10003 = -1;
 
          while (true) {
-            long var14 = var10002 ^ var0;
+            var14 = var10002 ^ var0;
             switch (var10003) {
                case 0:
                   var9[var10001] = var14;

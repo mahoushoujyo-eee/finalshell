@@ -853,6 +853,7 @@ public abstract class R_5 implements U_2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "~_í\u0091¿k'|KUp0$\u0096¹\u001d£Ò0¾\u007fÁÈï\n±zajåî¹Z\u009fÇqS\u0085±\u001aÅ\u0013\u009a\u0018QZúZð\u0091\u0007¨Ê\u0085d\u007f\u0018\u009eG7\u0091ð\u0015É±u\u0014¯\u0003×\u001aø\u0003ÍO\\\u0094\u0080\u007fFKxÒ¾Î#\u008b\u0017CuJÔKÊ´w\u0087á\u0094\u0098&À\r»\u001c\u0098mI*oN";
@@ -868,7 +869,6 @@ public abstract class R_5 implements U_2_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

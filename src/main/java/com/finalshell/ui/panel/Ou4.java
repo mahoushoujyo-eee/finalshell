@@ -128,6 +128,7 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      Ou4 var8;
       int var2 = Nx4.c$int();
       int var10000 = (this.isEnabled()) ? 1 : 0;
       if (var2 != 0) {
@@ -264,6 +265,7 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
 
    @Override
    public void mouseDragged(MouseEvent var1) {
+      int var5;
       int var2 = Nx4.R();
       Ou4 var10000 = this;
       if (var2 == 0) {
@@ -316,7 +318,7 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
                   break label59;
                }
 
-               var5 = this.g;
+               var5 = (this.g) ? 1 : 0;
             }
 
             if (var5 != 0) {
@@ -376,6 +378,7 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public float i(float var1) {
+      float var5;
       int var2 = Nx4.c$int();
       int var10000 = (this.a.Z$boolean(var1)) ? 1 : 0;
       if (var2 != 0) {
@@ -406,8 +409,8 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
          var10000 = (this.a.Z$boolean(var1)) ? 1 : 0;
       }
 
-      while (var10000) {
-         float var5 = var1 + 0.001F;
+      while (var10000 != 0) {
+         var5 = var1 + 0.001F;
          if (var2 == 0) {
             return var5;
          }
@@ -537,11 +540,12 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
    }
 
    public void P(Graphics2D var1, Rectangle var2) {
+      FontMetrics var8;
       int var4 = var2.x + 2;
       int var5 = var2.width - 4;
       int var6 = var2.y + var2.height - this.q.height / 2;
       int var7 = var6 + this.q.height;
-      FontMetrics var8 = var1.getFontMetrics();
+      var8 = var1.getFontMetrics();
       int var9 = var7 - GA.d(var8) - 1;
       int var10000 = Nx4.R();
       int var10 = 0;
@@ -827,6 +831,7 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
 
    @Override
    public Dimension getPreferredSize() {
+      Dimension var5;
       int var10000 = Nx4.R();
       Insets var2 = this.getInsets();
       int var1 = var10000;
@@ -838,7 +843,7 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
       }
 
       int var4 = var10000 + var10001 + var2.bottom;
-      Dimension var5 = new Dimension(var3, var4);
+      var5 = new Dimension(var3, var4);
       return PY.W(this, var5);
    }
 
@@ -894,12 +899,13 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
    }
 
    public static void __vfClinit__() {
+      boolean var5;
       long var0 = 2638340195432351686L;
       long[] var6 = new long[13];
       int var3 = 0;
       String var4 = "\u0098\u0097»x;.\u0085Ê/ìÇ6~óãþ4dDx\u0015\u0080Êyµ\u0092\u0015Yª\u0017v\në\u0003Õc}ÈÁ*X\r_âÿ\n\u001bØ³ø±ã)\u001dÚíØWf õíù\u0096{\b\u0010\u0082\\ã\u001d\u0000b´'b\u009d<ÐÇÃØP42ó\u0092a";
-      int var5 = "\u0098\u0097»x;.\u0085Ê/ìÇ6~óãþ4dDx\u0015\u0080Êyµ\u0092\u0015Yª\u0017v\në\u0003Õc}ÈÁ*X\r_âÿ\n\u001bØ³ø±ã)\u001dÚíØWf õíù\u0096{\b\u0010\u0082\\ã\u001d\u0000b´'b\u009d<ÐÇÃØP42ó\u0092a"
-         .length();
+      var5 = "\u0098\u0097»x;.\u0085Ê/ìÇ6~óãþ4dDx\u0015\u0080Êyµ\u0092\u0015Yª\u0017v\në\u0003Õc}ÈÁ*X\r_âÿ\n\u001bØ³ø±ã)\u001dÚíØWf õíù\u0096{\b\u0010\u0082\\ã\u001d\u0000b´'b\u009d<ÐÇÃØP42ó\u0092a";
+         // [VF] .length();
       byte var2 = 0;
 
       label20:

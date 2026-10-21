@@ -152,7 +152,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
          var10001 = false;
       }
 
-      Object[] var7 = (Object[])var10001;
+      Object var7 = (Object[])var10001;
       MouseListener[] var8 = var0.getMouseListeners();
       if (null != var8) {
          int var9 = 0;
@@ -187,7 +187,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
       if (var2 != null) {
          return (boolean)var7;
       } else if (var7 == null) {
-         Object[] var29 = Registry.emptyArgs();
+         Object var29 = Registry.emptyArgs();
          long var18 = 129058574427582046L;
          Object var31 = Ref.h2(129058574427582046L, var18);
 
@@ -205,7 +205,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
    }
 
    public static void I(JTextComponent var0) {
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var1 = 129058574427582046L;
       Object var10002 = Ref.h2(129058574427582046L, var1);
 
@@ -424,6 +424,8 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
 
    @Override
    public void show(Component var1, int var2, int var3) {
+      JMenuItem var20;
+      JMenuItem var21;
       String[] var4;
       JTextComponent var5;
       boolean var19;
@@ -1448,6 +1450,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[8];
       int var11 = 0;
       String var10 = "姅勫SEN\u0005兡适\u000e¢å\bÒö\u0093èdZ\u0084\u009b\u0005簊趰\u008dy\u0095\u0005努刖5ö\u0082\u0005\u000f*Â8Ë";
@@ -1462,7 +1465,6 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

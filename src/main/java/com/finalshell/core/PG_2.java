@@ -55,11 +55,11 @@ public class PG_2 {
 
       KeyStroke var10004 = Registry.packArgs(Registry.lookupField(324822989783513741L).getInt(null));
       long var12 = 487190762664997585L;
-      Object[] var11 = var10004;
+      Object var11 = var10004;
       var10004 = (KeyStroke)Ref.h(487190762664997585L, var11, var12);
       KeyStroke var10005 = (KeyStroke)(Registry.emptyArgs());
       long var14 = 546345160214988812L;
-      Object[] var13 = var10005;
+      Object var13 = var10005;
       var10005 = Ref.h(546345160214988812L, var13, var14);
 
       try {
@@ -103,7 +103,7 @@ public class PG_2 {
          if (var2 == null) {
             KQ var10009 = (KQ)(Registry.emptyArgs());
             long var24 = 337722834808748729L;
-            Object[] var23 = var10009;
+            Object var23 = var10009;
             var10009 = Ref.h(337722834808748729L, var23, var24);
 
             try {

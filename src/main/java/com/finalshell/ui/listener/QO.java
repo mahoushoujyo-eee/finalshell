@@ -2,16 +2,16 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.dialog.EditDialog2;
+import com.finalshell.ui.dialog.EditorSelectionDialog;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class QO implements ActionListener {
-   public final EditDialog2 C;
+   public final EditorSelectionDialog C;
    public static String a;
 
-   public QO(EditDialog2 var1) {
+   public QO(EditorSelectionDialog var1) {
       this.C = var1;
    }
 

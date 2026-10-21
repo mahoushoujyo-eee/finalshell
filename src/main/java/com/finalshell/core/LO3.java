@@ -63,7 +63,7 @@ public class LO3 extends Ln4_2 {
    public void s(boolean var1) throws Exception {
       O0 var10001 = (O0)(Registry.emptyArgs());
       long var4 = 185793966100702169L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(185793966100702169L, var3, var4);
 
       try {

@@ -3,7 +3,7 @@ package com.finalshell.core;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.Color;
 import java.awt.Component;
 import java.io.File;
@@ -69,13 +69,15 @@ public class LE extends DefaultTreeCellRenderer {
 
    @Override
    public Component getTreeCellRendererComponent(JTree var1, Object var2, boolean var3, boolean var4, boolean var5, int var6, boolean var7) {
+      Boolean var86;
+      Boolean var89;
       JLabel var10;
       File var11;
       Object var12;
       boolean var13;
       Object var16;
       label204: {
-         int[] var10000 = Connection4.I();
+         int[] var10000 = ConnectionInfoPanel.I();
          boolean var9 = false;
          int[] var8 = var10000;
          var10 = (JLabel)super.getTreeCellRendererComponent(var1, var2, var9, var4, var5, var6, var7);
@@ -131,9 +133,9 @@ public class LE extends DefaultTreeCellRenderer {
                      throw var69.getTargetException();
                   }
 
-                  Object[] var87 = Registry.emptyArgs();
+                  Object var87 = Registry.emptyArgs();
                   long var22 = 490764181082108623L;
-                  Object[] var21 = var87;
+                  Object var21 = var87;
                   var87 = Ref.h(490764181082108623L, var21, var22);
 
                   try {
@@ -145,7 +147,7 @@ public class LE extends DefaultTreeCellRenderer {
                   var13 = var89;
                   File var92 = (File)(Registry.emptyArgs());
                   long var24 = 543633160597441792L;
-                  Object[] var23 = var92;
+                  Object var23 = var92;
                   var92 = Ref.h(543633160597441792L, var23, var24);
 
                   try {
@@ -157,7 +159,7 @@ public class LE extends DefaultTreeCellRenderer {
                   var11 = var92;
                   String var97 = (String)(Registry.emptyArgs());
                   long var26 = 242892459251541809L;
-                  Object[] var25 = var97;
+                  Object var25 = var97;
                   var97 = Ref.h(242892459251541809L, var25, var26);
 
                   try {
@@ -171,7 +173,7 @@ public class LE extends DefaultTreeCellRenderer {
                         if (var97 != null) {
                            String var103 = (String)(Registry.emptyArgs());
                            long var28 = 242892459251541809L;
-                           Object[] var27 = var103;
+                           Object var27 = var103;
                            var103 = Ref.h(242892459251541809L, var27, var28);
 
                            try {
@@ -253,9 +255,9 @@ public class LE extends DefaultTreeCellRenderer {
             throw var62.getTargetException();
          }
 
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var40 = 376601465768231673L;
-         Object[] var39 = var10002;
+         Object var39 = var10002;
          var10002 = Ref.h(376601465768231673L, var39, var40);
 
          try {
@@ -267,7 +269,7 @@ public class LE extends DefaultTreeCellRenderer {
          var13 = var86;
          File var10003 = (File)(Registry.emptyArgs());
          long var42 = 272998330038223631L;
-         Object[] var41 = var10003;
+         Object var41 = var10003;
          var10003 = Ref.h(272998330038223631L, var41, var42);
 
          try {
@@ -279,7 +281,7 @@ public class LE extends DefaultTreeCellRenderer {
          var11 = var10003;
          String var10004 = (String)(Registry.emptyArgs());
          long var44 = 580695022383982904L;
-         Object[] var43 = var10004;
+         Object var43 = var10004;
          var10004 = Ref.h(580695022383982904L, var43, var44);
 
          try {
@@ -293,7 +295,7 @@ public class LE extends DefaultTreeCellRenderer {
                if (var10004 != null) {
                   String var10005 = (String)(Registry.emptyArgs());
                   long var46 = 580695022383982904L;
-                  Object[] var45 = var10005;
+                  Object var45 = var10005;
                   var10005 = Ref.h(580695022383982904L, var45, var46);
 
                   try {

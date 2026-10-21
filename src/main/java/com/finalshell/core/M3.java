@@ -717,6 +717,8 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
 
    @Override
    public Dimension getDisplaySize() {
+      int var16;
+      Dimension var18;
       Ky4[] var10000 = X();
       Dimension var2 = new Dimension();
       Ky4[] var1 = var10000;
@@ -744,8 +746,6 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
                   }
 
                   if (var1 == null) {
-      boolean var16;
-      boolean var16;
                      break label84;
                   }
                }
@@ -755,7 +755,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
                var16 = var6;
                if (var1 == null) {
                   if (var6 > 0) {
-                     byte var17 = this.m;
+                     byte var17 = (byte)((this.m) ? 1 : 0);
                      if (var1 == null) {
                         if (this.m) {
                            Object var8 = var5.getElementAt(0);
@@ -795,7 +795,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
                   }
 
                   var2 = this.getDefaultSize();
-                  var16 = this.comboBox.isEditable();
+                  var16 = (this.comboBox.isEditable()) ? 1 : 0;
                }
 
                if (var1 != null) {
@@ -812,7 +812,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
                break label82;
             }
 
-            var16 = this.comboBox.isEditable();
+            var16 = (this.comboBox.isEditable()) ? 1 : 0;
          }
 
          if (var16 == 0) {
@@ -1776,6 +1776,8 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var16;
+      char[] var23;
       String[] var7 = new String[12];
       int var5 = 0;
       Q(null);
@@ -1798,7 +1800,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
                int var8 = 0;
                byte var31 = var10000;
                var23 = var28;
-               int var16 = var10004;
+               var16 = var10004;
                byte var36;
                char[] var40;
                int var10006;
@@ -1898,7 +1900,6 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
       }
    }
 }
-
 
 
 

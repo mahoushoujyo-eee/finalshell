@@ -25,7 +25,7 @@ public class Wp2 implements ActionListener {
          Ref.g(239736049163801477L, var5);
          Object var7 = 220378371334645424L;
          JTextField var10003 = (JTextField)Ref.g(220378371334645424L, var7);
-         Object[] var10004 = Registry.packArgs(var2);
+         Object var10004 = Registry.packArgs(var2);
          long var9 = 492016222988846142L;
          Object var10005 = Ref.h2(492016222988846142L, var9);
 

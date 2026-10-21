@@ -2,20 +2,20 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.core.NA_2;
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class NG extends MouseAdapter {
-   public final ImportPanel I;
+   public final ImportMenuPanel I;
 
-   public NG(ImportPanel var1) {
+   public NG(ImportMenuPanel var1) {
       this.I = var1;
    }
 
    @Override
    public void mouseReleased(MouseEvent var1) {
-      String[] var2 = ImportPanel.j();
+      String[] var2 = ImportMenuPanel.j();
       if (var2 != null) {
          super.mouseReleased(var1);
          if (var1.getButton() != 1) {

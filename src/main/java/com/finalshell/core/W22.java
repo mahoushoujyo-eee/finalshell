@@ -71,7 +71,7 @@ public class W22 extends WO3 {
       if (var4 != null) {
          Cz2.D(var5, var3.T());
          if (var1 instanceof com.finalshell.ui.panel.Co2) {
-            byte var6 = (((com.finalshell.ui.panel.Co2)var1).Q().equals(G6.tiles)) ? 1 : 0;
+            byte var6 = (byte)((((com.finalshell.ui.panel.Co2)var1).Q().equals(G6.tiles)) ? 1 : 0);
             int var10001 = var6;
             if (var4 != null) {
                var10001 = var6 != 0 ? 2 : 0;

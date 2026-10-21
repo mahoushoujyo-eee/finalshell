@@ -6,11 +6,11 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowStateListener;
 
 public class TV implements WindowStateListener {
-   public final com.finalshell.ui.frame.U l;
+   public final com.finalshell.ui.frame.MainFrame l;
    public static long[] a;
    public static Integer[] b;
 
-   public TV(com.finalshell.ui.frame.U var1) {
+   public TV(com.finalshell.ui.frame.MainFrame var1) {
       this.l = var1;
    }
 
@@ -19,7 +19,7 @@ public class TV implements WindowStateListener {
       label18: {
          com.finalshell.ui.panel.F8.y();
          Object var4 = 495029120157815251L;
-         int var3 = ((com.finalshell.ui.frame.U)Ref.g(495029120157815251L, var4)).getExtendedState();
+         int var3 = ((com.finalshell.ui.frame.MainFrame)Ref.g(495029120157815251L, var4)).getExtendedState();
          if (this == null) {
             if (var3 != a(12628, 6223775070963769478L) && var3 != a(30406, 2574914611774318357L)) {
                break label18;

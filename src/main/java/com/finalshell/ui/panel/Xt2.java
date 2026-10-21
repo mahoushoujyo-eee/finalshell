@@ -135,7 +135,7 @@ public class Xt2 extends JComponent {
    public void paintComponent(Graphics var1) {
       int var10000 = (OY3.y$boolean()) ? 1 : 0;
       super.paintComponent(var1);
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       var10000 = this.H;
       if (var2) {
          if (this.H <= 0) {

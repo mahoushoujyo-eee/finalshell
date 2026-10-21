@@ -1,6 +1,6 @@
 package com.finalshell.ui.panel;
 
-import com.finalshell.connection.Copy;
+import com.finalshell.connection.CopyConnectionInfoAction;
 import com.finalshell.core.AL;
 import com.finalshell.core.KV;
 import com.finalshell.core.T32;
@@ -92,7 +92,7 @@ public class YX3 extends JPanel implements AL {
       Object var10002 = Ref.g(610322028439849548L, var8);
       ArrayList var10003 = (ArrayList)(Registry.emptyArgs());
       long var11 = 230171768324088030L;
-      Object[] var10 = var10003;
+      Object var10 = var10003;
       var10003 = Ref.h(230171768324088030L, var10, var11);
 
       try {
@@ -110,12 +110,12 @@ public class YX3 extends JPanel implements AL {
          T32 var6 = (T32)var3.get(var5);
          var10003 = Registry.emptyArgs();
          long var13 = 424156930953488367L;
-         Object[] var12 = var10003;
-         Copy var7 = (Copy)Ref.h(424156930953488367L, var12, var13);
+         Object var12 = var10003;
+         CopyConnectionInfoAction var7 = (CopyConnectionInfoAction)Ref.h(424156930953488367L, var12, var13);
          if (var2 != null) {
             String var10004 = (String)(Registry.emptyArgs());
             long var15 = 120656485356935042L;
-            Object[] var14 = var10004;
+            Object var14 = var10004;
             var10004 = Ref.h(120656485356935042L, var14, var15);
 
             try {
@@ -136,14 +136,17 @@ public class YX3 extends JPanel implements AL {
       return var4;
    }
 
-   public Copy K(com.finalshell.core.Kw4 var1) {
+   public CopyConnectionInfoAction K(com.finalshell.core.Kw4 var1) {
+      Object[] var20;
+      Integer var42;
+      Integer var47;
       int[] var10000 = CE.S$arrint();
-      Copy var3 = new Copy(var1);
+      CopyConnectionInfoAction var3 = new CopyConnectionInfoAction(var1);
       String var4 = "";
       int[] var2 = var10000;
       Integer var10001 = (Integer)(Registry.emptyArgs());
       long var7 = 613318919495852812L;
-      Object[] var6 = var10001;
+      Object var6 = var10001;
       var10001 = Ref.h(613318919495852812L, var6, var7);
 
       try {
@@ -159,7 +162,7 @@ public class YX3 extends JPanel implements AL {
                new StringBuilder();
                String var10003 = (String)(Registry.emptyArgs());
                long var9 = 516374718951189974L;
-               Object[] var8 = var10003;
+               Object var8 = var10003;
                var10003 = Ref.h(516374718951189974L, var8, var9);
 
                try {
@@ -169,9 +172,9 @@ public class YX3 extends JPanel implements AL {
                }
 
                var1.append((String)var10003).append(":");
-               Object[] var10004 = Registry.emptyArgs();
+               Object var10004 = Registry.emptyArgs();
                long var11 = 528143184018704864L;
-               Object[] var10 = var10004;
+               Object var10 = var10004;
                var10004 = Ref.h(528143184018704864L, var10, var11);
 
                try {
@@ -203,9 +206,9 @@ public class YX3 extends JPanel implements AL {
 
          if (var10001 == var10002) {
             new StringBuilder();
-            Object[] var40 = Registry.emptyArgs();
+            Object var40 = Registry.emptyArgs();
             long var15 = 134324574424375296L;
-            Object[] var14 = var40;
+            Object var14 = var40;
             var40 = Ref.h(134324574424375296L, var14, var15);
 
             try {
@@ -217,7 +220,7 @@ public class YX3 extends JPanel implements AL {
             var1.append(var42).append("-");
             String var48 = (String)(Registry.emptyArgs());
             long var17 = 582473494023502780L;
-            Object[] var16 = var48;
+            Object var16 = var48;
             var48 = Ref.h(582473494023502780L, var16, var17);
 
             try {
@@ -234,7 +237,7 @@ public class YX3 extends JPanel implements AL {
       Ref.g(610322028439849548L, var18);
       T32 var43 = (T32)(Registry.packArgs(var3, var4));
       long var21 = 407014907239672455L;
-      Object[] var20 = var43;
+      var20 = var43;
       var43 = Ref.h(407014907239672455L, var20, var21);
 
       try {
@@ -1098,6 +1101,7 @@ public class YX3 extends JPanel implements AL {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[5];
       int var3 = 0;
       String var2 = "(´C½\u0091T«2mÚ°$#E\u0084Ú-FÆ¯ÒT¡\u001dÐ\u009fã \u009cv.Ó°D\u009d\u0002àý\u001d\u0097AÐÎµ×½Xj\u0086\u001b0ùÆ¾\u00ad\u0005¤\u0089/\u0087÷\u000f8×\u008b'ag0lW0õy\u0083ïÙ";
@@ -1113,7 +1117,6 @@ public class YX3 extends JPanel implements AL {
          byte var10002 = -1;
 
          while (true) {
-      Object var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

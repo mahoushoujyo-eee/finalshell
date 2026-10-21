@@ -117,7 +117,7 @@ public final class XE3 implements Composite {
                case 7:
                   return new R32(var1);
                case 8:
-                  return new Zm2(var1);
+                  return new ImageCompositeContext(var1);
                case 9:
                   return new Zv2(var1);
                case 10:
@@ -1060,6 +1060,7 @@ public final class XE3 implements Composite {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[27];
       int var11 = 0;
       String var10 = "·\u009d-'\nÃr\u0003¤ãà\u0007îÏ¨\u008bí\r2\nöMàüß\u001a\"0ÉÊ\u0003\r\fü\u000b\u0013\u0089\\dH\tÖH\u0087\u0095Å\b\u0090Jã^¤f\u001bé\u0007ù\u0094\u0085àEf\u0097\u0006_*,Û\u008c4\bp?,ð\u0089¢ÉO\u0018\u008e-\u0095\u0094ýð#yEn\u0094f\u0013:¶I:Óµ\u0085TÀU§\n]v\u0087Z.|\u0085\u0002ø¦\n¿rÃÎ Dû\u008e\u001f\u0082\u0016Ä«Q\u0000\u0013ó)å\u0010\u008eØs\u0093Ä»\u0004/â\u000e*6Ù\u0006¦nX\u009a\u0006Ø\n\bã\u001b\u009f\u001f+OØÌØ\u0005|¬±Àõ\t8µJjö'Ûêq\n\u0092û\u0081å¯Cþ\u0018\u0080¼\u0007\u0007ûÅSB\u0087\u008c\n_q¡¿xtå\u000eeG\u0006mR\u009f\u0098ú\u0093\t-yR\u008c`$\u0019Ôü\u0005¸hÆP\u0005\u0004\u008f\u0018ð\u000e";
@@ -1075,7 +1076,6 @@ public final class XE3 implements Composite {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

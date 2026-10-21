@@ -932,6 +932,7 @@ public class Fn2_2 implements A0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "¡\f\u0086\u001d4\u0007Ø±×\u0019¼\u00920\u0006cï\u008e¯\"ç\u0004ù\u0018}u";
@@ -946,7 +947,6 @@ public class Fn2_2 implements A0_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

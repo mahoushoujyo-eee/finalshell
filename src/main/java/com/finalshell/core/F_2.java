@@ -552,6 +552,7 @@ public class F_2 implements WS {
    }
 
    public final int A() {
+      int var5;
       int[] var10000 = XB.X();
       int var2 = a(31672, 4241364992867011551L);
       int[] var1 = var10000;
@@ -1586,6 +1587,8 @@ public class F_2 implements WS {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      boolean var5;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "{âÿy\n\u0017À³È\f\u0006\u0093iè\u0003";
@@ -1600,7 +1603,6 @@ public class F_2 implements WS {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -1682,8 +1684,8 @@ public class F_2 implements WS {
                      long[] var6 = new long[24];
                      int var3 = 0;
                      String var4 = "\u0083\nò.ÙFeË\u0089÷ôK\u0010+j\u0017\u009cìØ\twx?\u0000wx`µ¡4\u007fw]ï|S£Û9)w\u0080Ì| Û\\é±/b&°!úÆ<\\ÔV\u0098]}×w\u0015!ý\u009cB\nL\u0095¢åa\u0095Ç@â&\u0017\u0099^\u0095ËèäÏ9PBC\u0018\u0006£@\u0019{Ó¿\u001c]$\u0086\u0083<\u0094\u008e[²\u0090{÷m\u000f~7\u0082ÚÇå ¥ÝHV\u001fÝ\u008b\u0004·\u0094ë'ÉßtË\u0014¿\u0006·ÖÆ?\u009eÄ¯zî¹<ò\u001føÄ¬\u0015gêÄpü*@÷\u008f*w»oò9x8";
-                     int var5 = "\u0083\nò.ÙFeË\u0089÷ôK\u0010+j\u0017\u009cìØ\twx?\u0000wx`µ¡4\u007fw]ï|S£Û9)w\u0080Ì| Û\\é±/b&°!úÆ<\\ÔV\u0098]}×w\u0015!ý\u009cB\nL\u0095¢åa\u0095Ç@â&\u0017\u0099^\u0095ËèäÏ9PBC\u0018\u0006£@\u0019{Ó¿\u001c]$\u0086\u0083<\u0094\u008e[²\u0090{÷m\u000f~7\u0082ÚÇå ¥ÝHV\u001fÝ\u008b\u0004·\u0094ë'ÉßtË\u0014¿\u0006·ÖÆ?\u009eÄ¯zî¹<ò\u001føÄ¬\u0015gêÄpü*@÷\u008f*w»oò9x8"
-                        .length();
+                     var5 = "\u0083\nò.ÙFeË\u0089÷ôK\u0010+j\u0017\u009cìØ\twx?\u0000wx`µ¡4\u007fw]ï|S£Û9)w\u0080Ì| Û\\é±/b&°!úÆ<\\ÔV\u0098]}×w\u0015!ý\u009cB\nL\u0095¢åa\u0095Ç@â&\u0017\u0099^\u0095ËèäÏ9PBC\u0018\u0006£@\u0019{Ó¿\u001c]$\u0086\u0083<\u0094\u008e[²\u0090{÷m\u000f~7\u0082ÚÇå ¥ÝHV\u001fÝ\u008b\u0004·\u0094ë'ÉßtË\u0014¿\u0006·ÖÆ?\u009eÄ¯zî¹<ò\u001føÄ¬\u0015gêÄpü*@÷\u008f*w»oò9x8";
+                        // [VF] .length();
                      byte var2 = 0;
 
                      label44:
@@ -1721,7 +1723,7 @@ public class F_2 implements WS {
                                  }
 
                                  var4 = "\u009dAÌwGº\u000f¤^ªOí3`A+";
-                                 var5 = "\u009dAÌwGº\u000f¤^ªOí3`A+".length();
+                                 var5 = ("\u009dAÌwGº\u000f¤^ªOí3`A+".length()) != 0;
                                  var2 = 0;
                            }
 

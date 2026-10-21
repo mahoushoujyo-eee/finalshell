@@ -1,6 +1,6 @@
 package com.finalshell.network;
 
-import com.finalshell.core.Jk2;
+import com.finalshell.core.ProxyMessage;
 import com.finalshell.core.Y2_5;
 import com.finalshell.io.B52;
 import java.io.IOException;
@@ -320,7 +320,7 @@ public class B2 extends ServerSocket {
 
    @Override
    public InetAddress getInetAddress() {
-      String[] var1 = Jk2.Y();
+      String[] var1 = ProxyMessage.Y();
 
       try {
          if (var1 == null) {
@@ -382,7 +382,7 @@ public class B2 extends ServerSocket {
       // 2d: return
    }
 
-   public void y(Jk2 param1) throws B52 {
+   public void y(ProxyMessage param1) throws B52 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

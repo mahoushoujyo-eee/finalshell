@@ -47,10 +47,11 @@ public class R3 {
 
    @NotNull
    public PX V() {
+      PX var3;
       int[] var10000 = XP.j();
       PX var2 = this.H;
       int[] var1 = var10000;
-      PX var3 = this.u;
+      var3 = this.u;
       if (var1 == null) {
          if (this.u != null) {
             var2 = this.u;
@@ -82,6 +83,7 @@ public class R3 {
    }
 
    public void o() {
+      R3 var3;
       int[] var10000 = XP.j();
       int var2 = 0;
       int[] var1 = var10000;
@@ -144,7 +146,8 @@ public class R3 {
    }
 
    public static int a(int var0, long var1) {
-      int var3 = var0 ^ (int)(var1 & 32767L) ^ 28683;
+      int var3;
+      var3 = var0 ^ (int)(var1 & 32767L) ^ 28683;
       if (b[var3] == null) {
          b[var3] = (int)(a[var3] ^ var1);
       }
@@ -153,9 +156,10 @@ public class R3 {
    }
 
    public static void __vfClinit__() {
+      int var3;
       long var0 = 1346149451910295822L;
       long[] var6 = new long[2];
-      int var3 = 0;
+      var3 = 0;
       String var4 = "+\u001f\u0080=\u0097\u0095d,<-æXZr\n3";
       int var5 = "+\u001f\u0080=\u0097\u0095d,<-æXZr\n3".length();
       byte var2 = 0;

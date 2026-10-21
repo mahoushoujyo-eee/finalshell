@@ -6,7 +6,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.AM;
 import com.finalshell.ui.panel.Bq2;
-import com.finalshell.ui.panel.Copy3;
+import com.finalshell.ui.panel.CommandListPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
@@ -27,13 +27,13 @@ public class Kp2 implements ActionListener {
       String[] var2 = AM.s$arrString();
       Object var5 = 302403976541003261L;
       Ref.g(302403976541003261L, var5);
-      Copy3 var10002 = (Copy3)(Registry.emptyArgs());
+      CommandListPanel var10002 = (CommandListPanel)(Registry.emptyArgs());
       long var8 = 226533083820217405L;
-      Object[] var7 = var10002;
+      Object var7 = var10002;
       var10002 = Ref.h(226533083820217405L, var7, var8);
 
       try {
-         var10002 = (Copy3)var10002;
+         var10002 = (CommandListPanel)var10002;
       } catch (InvocationTargetException var24) {
          throw var24.getTargetException();
       }

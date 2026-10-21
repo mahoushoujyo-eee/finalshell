@@ -32,6 +32,7 @@ public class XB {
    }
 
    public static int V(String var0) {
+      int var5;
       int[] var10000 = X();
       int var2 = 1;
       int var3 = 1;
@@ -67,8 +68,6 @@ public class XB {
                      }
 
                      if (var4 != a(3328, 7654443794262065562L)) {
-      char var5;
-      char var5;
                         return var5 | 1;
                      }
                   }
@@ -235,6 +234,8 @@ public class XB {
    }
 
    public static XB[] l(String var0) {
+      XB[] var10;
+      char var9;
       int[] var10000 = X();
       char[] var2 = var0.toCharArray();
       int[] var1 = var10000;
@@ -1191,12 +1192,16 @@ public class XB {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var33;
+      boolean var5;
+      int var9;
       String[] var13 = new String[10];
       int var11 = 0;
-      String var10 = "\u0082Üà©?\u0006ùº`\u0092nÕ\u0004\u0099|~O\u0005JÈN¼ê\u0002å\u001d\u0004\u000b\u0088rÒ\u0004:2ßP\u0004TQ&\u0018";
+      var10 = "\u0082Üà©?\u0006ùº`\u0092nÕ\u0004\u0099|~O\u0005JÈN¼ê\u0002å\u001d\u0004\u000b\u0088rÒ\u0004:2ßP\u0004TQ&\u0018";
       int var12 = "\u0082Üà©?\u0006ùº`\u0092nÕ\u0004\u0099|~O\u0005JÈN¼ê\u0002å\u001d\u0004\u000b\u0088rÒ\u0004:2ßP\u0004TQ&\u0018".length();
       N(null);
-      char var9 = 5;
+      var9 = 5;
       int var17 = -1;
 
       label70:
@@ -1287,8 +1292,8 @@ public class XB {
                      long[] var6 = new long[30];
                      int var3 = 0;
                      String var4 = "Sä¯äáf¨IÆWt{)\u000f\u0005Ô3\u0000uúVôÏÈÌ\u0097f¦\u0014ÀÇ\u00003°Q\u008eÝH+Æ;ò \u008dÂ¦¼\u0094EÄõ\t\u0095[\u000e\u0083Õ¸Ä\u0018P\u0011W\u0091\u0090\fËxêáÉÝà%?ø)_Ø:aÏpû`\u001bF \u007f\rû\u009a\u0014&n\u0088{A'\u0099mãx\u008d(Ã\u0092òü 0Zà¥Ä¥#kYh¸7º;Àøz7<ãÎ\u0093O{ö\u0084,\u0083i\u009cæ\u008f\u0094½»û¯\u0086\f²Ña\u008c\u0083O¬Æ²µ\fãR#\u0084zNE(¡À©9TøîÂ5¬Õ¦\u0019-új\u0012#ó\u008eåÁ\u0018\u0088íTl¹\u0001\u0012ë\u0001d4Êªª\u009f\u008eòàÂE\u0082\u0099e\u0011[üjÂ\u0086\u0088G\u001cM";
-                     int var5 = "Sä¯äáf¨IÆWt{)\u000f\u0005Ô3\u0000uúVôÏÈÌ\u0097f¦\u0014ÀÇ\u00003°Q\u008eÝH+Æ;ò \u008dÂ¦¼\u0094EÄõ\t\u0095[\u000e\u0083Õ¸Ä\u0018P\u0011W\u0091\u0090\fËxêáÉÝà%?ø)_Ø:aÏpû`\u001bF \u007f\rû\u009a\u0014&n\u0088{A'\u0099mãx\u008d(Ã\u0092òü 0Zà¥Ä¥#kYh¸7º;Àøz7<ãÎ\u0093O{ö\u0084,\u0083i\u009cæ\u008f\u0094½»û¯\u0086\f²Ña\u008c\u0083O¬Æ²µ\fãR#\u0084zNE(¡À©9TøîÂ5¬Õ¦\u0019-új\u0012#ó\u008eåÁ\u0018\u0088íTl¹\u0001\u0012ë\u0001d4Êªª\u009f\u008eòàÂE\u0082\u0099e\u0011[üjÂ\u0086\u0088G\u001cM"
-                        .length();
+                     var5 = "Sä¯äáf¨IÆWt{)\u000f\u0005Ô3\u0000uúVôÏÈÌ\u0097f¦\u0014ÀÇ\u00003°Q\u008eÝH+Æ;ò \u008dÂ¦¼\u0094EÄõ\t\u0095[\u000e\u0083Õ¸Ä\u0018P\u0011W\u0091\u0090\fËxêáÉÝà%?ø)_Ø:aÏpû`\u001bF \u007f\rû\u009a\u0014&n\u0088{A'\u0099mãx\u008d(Ã\u0092òü 0Zà¥Ä¥#kYh¸7º;Àøz7<ãÎ\u0093O{ö\u0084,\u0083i\u009cæ\u008f\u0094½»û¯\u0086\f²Ña\u008c\u0083O¬Æ²µ\fãR#\u0084zNE(¡À©9TøîÂ5¬Õ¦\u0019-új\u0012#ó\u008eåÁ\u0018\u0088íTl¹\u0001\u0012ë\u0001d4Êªª\u009f\u008eòàÂE\u0082\u0099e\u0011[üjÂ\u0086\u0088G\u001cM";
+                        // [VF] .length();
                      byte var2 = 0;
 
                      label44:
@@ -1335,7 +1340,7 @@ public class XB {
                                  }
 
                                  var4 = "Þ0oÝÄ\u0000}3©\u0007Ë$ÿ\u007fþ\u0096";
-                                 var5 = "Þ0oÝÄ\u0000}3©\u0007Ë$ÿ\u007fþ\u0096".length();
+                                 var5 = ("Þ0oÝÄ\u0000}3©\u0007Ë$ÿ\u007fþ\u0096".length()) != 0;
                                  var2 = 0;
                            }
 
@@ -1379,7 +1384,6 @@ public class XB {
       }
    }
 }
-
 
 
 

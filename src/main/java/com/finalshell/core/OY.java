@@ -31,9 +31,9 @@ public class OY implements Comparable {
 
    @Override
    public int compareTo(Object var1) {
-      Object[] var10001 = Registry.packArgs((OY)var1);
+      Object var10001 = Registry.packArgs((OY)var1);
       long var3 = 462876887609621738L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(462876887609621738L, var2, var3);
 
       try {

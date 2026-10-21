@@ -1,8 +1,8 @@
 package com.finalshell.core;
 
 @O4(
-   Z = "MultiLineString",
-   Z = {"type", "bbox", "coordinates"}
+   Z$String = "MultiLineString",
+   Z$arrString = {"type", "bbox", "coordinates"}
 )
 public class Xa4 extends XY3 {
    public double[][][] K;

@@ -9,7 +9,7 @@ import com.finalshell.task.OK3;
 import com.finalshell.task.U02;
 import com.finalshell.task.WE;
 import com.finalshell.ui.listener.AF;
-import com.finalshell.ui.listener.FC;
+import com.finalshell.ui.listener.FileTimeSortListener;
 import com.finalshell.ui.listener.YV;
 import java.awt.Color;
 import java.awt.Font;
@@ -39,6 +39,7 @@ public class QuickConnectPanel extends JPanel implements Fb2 {
 
    public QuickConnectPanel(CL var1) {
    super();
+   long var33;
       String var10000 = Vn2.C();
       String var2 = var10000;
       Registry.lookupField(592149699134044003L).setBoolean(this, false);
@@ -51,7 +52,7 @@ public class QuickConnectPanel extends JPanel implements Fb2 {
       this.setOpaque(false);
       this.setLayout(new MigLayout(a(-17620, -20618), a(-17632, 20966), a(-17624, 24073)));
       JPanel var3 = new JPanel();
-      Object[] var4 = 3;
+      Object var4 = 3;
       Registry.emptyArgs();
       long var14 = 454647487873911743L;
       Object var10003 = Ref.h2(454647487873911743L, var14);
@@ -113,14 +114,14 @@ public class QuickConnectPanel extends JPanel implements Fb2 {
       JComboBox var8 = new JComboBox();
       var8.addItem(a(-17630, -16387));
       var8.addItem(a(-17627, -9666));
-      var8.addItemListener(new FC(this));
+      var8.addItemListener(new FileTimeSortListener(this));
       Vn2 var10005 = new Vn2(var1);
       long var21 = 368966479006037777L;
       Vn2 var20 = var10005;
       Ref.s(368966479006037777L, var20, var21);
       JScrollPane var10007;
       Object var22 = 368966479006037777L;
-      super((Vn2)Ref.g(368966479006037777L, var22));
+      // [VF-super] super((Vn2)Ref.g(368966479006037777L, var22));
       long var25 = 380806102838069194L;
       JScrollPane var24 = var10007;
       Ref.s(380806102838069194L, var24, var25);
@@ -141,7 +142,7 @@ public class QuickConnectPanel extends JPanel implements Fb2 {
       JViewport var9 = ((JScrollPane)Ref.g(380806102838069194L, var30)).getViewport();
       var9.addChangeListener(new AF(this));
       com.finalshell.ui.model.Q6 var10011 = new com.finalshell.ui.model.Q6();
-      long var33 = 179456532871273698L;
+      var33 = 179456532871273698L;
       com.finalshell.ui.model.Q6 var32 = var10011;
       Ref.s(179456532871273698L, var32, var33);
       Object var34 = 368966479006037777L;
@@ -179,7 +180,7 @@ public class QuickConnectPanel extends JPanel implements Fb2 {
       }
    }
 
-   public void M(java.io.File var1, com.finalshell.ui.frame.U var2) {
+   public void M(java.io.File var1, com.finalshell.ui.frame.MainFrame var2) {
       Object var3 = 368966479006037777L;
       Ref.g(368966479006037777L, var3);
       Object[] var10002 = Registry.packArgs(var1, var2);
@@ -251,7 +252,7 @@ public class QuickConnectPanel extends JPanel implements Fb2 {
       Object var2 = null;
       ArrayList var10003 = (ArrayList)(Registry.emptyArgs());
       long var8 = 414769076222012220L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(414769076222012220L, var7, var8);
 
       try {
@@ -1111,6 +1112,7 @@ public class QuickConnectPanel extends JPanel implements Fb2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[16];
       int var11 = 0;
       String var10 = "w\u0083÷à?\u0092 gq!uÅÊêáâÇ\u008bÙ_°\u0012 \u0093 \fÿÓGÅ\u0013o\u0005ñzÃ9(\r\u0095ê²¶í7¥\u0006a\u001añt\u0013\u0006«×¿ç¥.\u0002捁帻(oÑ''¶6[7õ\u001fcÜQÔ\u0088ÇÈ¥\b}ÅoaqJÓúØ÷F'\u0095õ\"9ðÞ^Æx\u0002\u0005¹\u0003Ù\u008fÒ\u0006ì;\"X4ï\u0005\u009eU.Ü\u0095\nM)°µ×8½)×\u0094\u0004謬镝旆閷\u0004佭於斕閦\u0002湏稓";
@@ -1126,7 +1128,6 @@ public class QuickConnectPanel extends JPanel implements Fb2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

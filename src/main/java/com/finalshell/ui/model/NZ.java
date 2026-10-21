@@ -5,7 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class NZ {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -907,6 +907,7 @@ public class NZ {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[26];
       int var11 = 0;
       String var10 = "\u0093Pµ\u000eÝw\u0003Ó\u008c£ÅÀ^ûø®2sÀv¿\u008bÉ\u0088ä\u009aõ\u001f¢c\u008fÖ\u0005\u0004\u007f\u0090hÂ\t=\r#\u0007ô¸¬\nÂ\nöÎ\u0097\u0098AH\u0000aó\t\t\u0015Ùkó&ìb[h\f\u0091àÌÐK]_\u007f4\u0087Ço\f}·i9Ã0¾\u009fã\u0003L\u0096\rßm2e\r>\u001a\rÓ\u001ce³\u001a\u000e¸\"Ü\u008fºCÈÞ\u001bÀ\u001ef«\u0089\bî{P»¿zD\u009c\u000eÛ¨öÁn\"Êw9ÃAÿ\u008e*\u000e?XjÙÊ\u0091\u009b}¡QÚNÙ\u008e\u000bµ püñ\u001díejoB\u000b\u008e©\u0016ø+oqÞ7ô§\n*\u0018Æ¥¯ôë\u0094\u0082å\u0011,×{6½\u0081\u0081åôð²\n§(\"\u0096k\u0012ÙMÀ\u0096&EÙ\u009bÚz²~\u0092ØzÂ_ß\u0004À6c\u0011\u000fÞ±VÒZ\u0000yHx!ÓP:ª\u0000\u000e\u008aù\u0098÷Xl¤B\u0088W^8^K\rüö\u0085\u0092W\u0088\u0016ð°\u001af\u008d;\u000bÁ2µ\u0092\u001aHÜ\u0013\u0014YÃ\n.2\u009a}f·ª¥ªÃ\u0004Åf\u0012b";
@@ -922,7 +923,6 @@ public class NZ {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

@@ -69,6 +69,7 @@ public final class BN implements Serializable {
    }
 
    public XS T() {
+      XS var4;
       Ky4[] var1 = A();
       List var10000 = this.p;
       if (var1 != null) {
@@ -83,7 +84,6 @@ public final class BN implements Serializable {
 
       while (true) {
          if (var2.hasNext()) {
-      XS var4;
             XS var3 = (XS)var2.next();
             var4 = var3;
             if (var1 == null) {

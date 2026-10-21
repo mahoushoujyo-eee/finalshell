@@ -3885,6 +3885,7 @@ public class X3_3 extends XJ_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var43;
       String[] var21 = new String[34];
       int var19 = 0;
       String var18 = "Ðº»á\u0004ÚxiÅ\u0085¸¡îÅ\u000e\u0017Ún¯EAf\u0016næ¼¨ \tÓ¥\u0013]\u0096¢4Då,U\u001bq\u00934\u0004\u0018ve\u001bÇâf7Óø^JÌfú\u001fC®;\u008c\u009bq_÷³ÝË?ã¡±\u001bÌ\bÕ¦lô\"¹ú2\u0000\u001d\t\"\u0016«§ó¡ö_\u0004ðµ¾\u0093« \u009c]Ë^\u0092^\u001fý\u000bû**\u0094\u0017À\u009cy\u0095\u0082ÇßyÖ.Æ<§Ödü´ÿGN\u009f\u0016s,\u0080²üA3ÊPªã{.\u008eU\u008er1Ky2&Çó\u0017\u001bd6@°\u001e\u009bÍ\u009bÛÉU=pÕV,\\?§\u000b$(EG\u00937\u0094V\u009b+æ\n\u008c\u0088Àû\\ñ*#\u008a\u0099Ô\u0090\u0084v÷Ý4£2Ðº¿Ù|U\u0015ô»÷\u0004\u0014\u001cïÔAÝ\u0087è*\u0094¦Kó\u001d\u0019\u0085ñ\u0019\u000b`\b\u007fës\u00109¾`x_ÕbY\u0095=ÃÜð*\u009e\u0082¸¼\u0018Æ2±5Ü:ö\u0010bEãû¦ñ%\u0012þs>÷Û\u0002¸Â\u0003Ö\u00174$Ì Û/¤\u0003$ie¸ÃG±¹Üs\u0015Ï¿6\nCâv8©\u0014ÿ\u009aK÷\u0095[<àé\u0015\u0019¶J¥£(\u0019R\u009f\r\\òQÏÓ0-\u001cÈ \u0004-\u0015$H\u0088g\u008e_ \u0004ÿ\u0006Ü©\u0003-¤G9ÆôÙX\u0010æÏ+$¡µ>9a¾Æe±´îLô\u0097\u0000\u000f0\u000f\u0013t\n\u007fA:È\u0097ÛwJ:çdBÒT\u001bÒõ\u001fQ{)\u000e= 4XC\u0010àÝ\tFÉî\u0014¬¶\u0014³>øo\u0092ðïrëöO\u000bÒ®M\u0092Õqøb¢\t\u009d\u00131w¡\u0002IÙTÛGqCÞlö~\u001bÿù'\u000b\u0096Þ+:aWn¦p\u0091Ç&\u008bß3À¹þ¾À!^\u0002\u001bÕ¤\u0005\r»-\u0083-Äk¦Ïð\u0088j\u0080þ»ì\u0001sGÑ4\u001dh\t\u0019òÎ\u0093*ç\u000b\u008eà$\u0097s°UÉL\u0089\u0080Ð\u0085uàgM\u0006íN\bÔXg\u008eOÏ\u008d\u009e¢\u0019L\u0097-\u000e\u0000O\u008b\u0087\u0005\u0016D£ÎÌ%¦\u0016×£â\u0015Ïî2Æ\f\u0004'[¢·ps\u000eÒHx©\u00835\u008c?eP\u009dÔ,u25}J%Ø'\u0018\u0085\u001bÑðvÕÕðf¸\u0017Q>\u000eBÁô±¼\u0096\u001bÒ\u009fÃ\u0007ÏÑ'¥\u000b\u0003ú[³\u001crz\u0087TñQ\u0091çeáõ,[PO(íëÍ\u009e'0Âm2@½\u0083\u0014uEÇÛ\u0012ç/«Y2\u0084\u0015J+ª¼]ü\u0005E.\u00123# Ð&âú\u0082\u0015®\u0010Kvr;ÌÓÌÄøí^\u008e\u001d'7\u000f¬w\u000b[\u008bä\u001e©\u0006\u000fF<\u001aq¤ddk)õ\u0012\u0084#JïT\u001eBðNóÙìcyì©ö£k^g\u00050\u0010Äg}mKÇá`\u001bû¨´eì\u0006\t,\u008eä×1\u008f¹)F\tl\u0007`-ÿ0±t·\u0003þÌ1";
@@ -3900,7 +3901,6 @@ public class X3_3 extends XJ_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var43;
             label74: {
                char[] var49 = var10001.toCharArray();
                int var10004 = var49.length;

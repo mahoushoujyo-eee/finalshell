@@ -192,7 +192,7 @@ public class D__2 {
             byte var14 = 2;
             Color var10001 = (Color)(Registry.emptyArgs());
             long var19 = 331166851261172891L;
-            Object[] var18 = var10001;
+            Object var18 = var10001;
             var10001 = Ref.h(331166851261172891L, var18, var19);
 
             try {
@@ -210,7 +210,7 @@ public class D__2 {
                      Color var17 = SetBackgroundImagePanel.t(this.i, SetBackgroundImagePanel.Z(this.i).R(var16.Z()));
                      Color var10002 = (Color)(Registry.emptyArgs());
                      long var21 = 331166851261172891L;
-                     Object[] var20 = var10002;
+                     Object var20 = var10002;
                      var10002 = Ref.h(331166851261172891L, var20, var21);
 
                      try {

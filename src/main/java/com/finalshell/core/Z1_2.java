@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.util.ArrayList;
 import java.util.HashSet;
 
@@ -17,7 +17,7 @@ public class Z1_2 {
    }
 
    public synchronized void k(int var1) {
-      String[] var2 = PingMessageR.N();
+      String[] var2 = PingMessageReceiver.N();
       if (var2 != null && !this.n.contains(var1)) {
          this.k.add(var1);
          this.n.add(var1);
@@ -28,7 +28,7 @@ public class Z1_2 {
    public synchronized void h() {
       int var2 = 0;
       int var3 = Yh2.a;
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       int var4 = this.k.size();
       String[] var1 = var10000;
       int var5 = var4 / var3;
@@ -89,7 +89,7 @@ public class Z1_2 {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public ArrayList m(int var1, int var2, ArrayList var3) {
       ArrayList var5 = new ArrayList();
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       int var6 = 0;
       String[] var4 = var10000;
       ArrayList var7;

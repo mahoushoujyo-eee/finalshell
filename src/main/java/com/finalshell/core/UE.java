@@ -225,6 +225,7 @@ public class UE extends JCheckBox implements W2_3, Pp2, RF3, Au2, Eh2, Yb4, Sa2 
    }
 
    public void M(boolean var1, boolean var2) {
+      boolean var5;
       UE var6;
       boolean var10001;
       label31: {
@@ -236,7 +237,6 @@ public class UE extends JCheckBox implements W2_3, Pp2, RF3, Au2, Eh2, Yb4, Sa2 
          label27:
          if (var3) {
             if (!var2) {
-      boolean var5;
                var5 = var4;
                if (!var3) {
                   break label27;

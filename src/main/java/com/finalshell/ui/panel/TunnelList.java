@@ -34,6 +34,7 @@ public class TunnelList extends Z7 {
    public static String[] d;
 
    public TunnelList() {
+      super();
       ArrayList var10001 = new ArrayList();
       long var8 = 432008228546876612L;
       ArrayList var7 = var10001;
@@ -46,7 +47,7 @@ public class TunnelList extends Z7 {
       Ref.s(384272417246389638L, var9, var10);
       NH var10004;
       Object var11 = 384272417246389638L;
-      super(this, (C12)Ref.g(384272417246389638L, var11));
+      // [VF-super] super(this, (C12)Ref.g(384272417246389638L, var11));
       long var14 = 548989663897657123L;
       NH var13 = var10004;
       Ref.s(548989663897657123L, var13, var14);
@@ -78,6 +79,8 @@ public class TunnelList extends Z7 {
    }
 
    public void l(int var1) {
+      Object[] var11;
+      Integer var21;
       V();
       Object var5 = 432008228546876612L;
       Iterator var3 = ((ArrayList)Ref.g(432008228546876612L, var5)).iterator();
@@ -91,9 +94,9 @@ public class TunnelList extends Z7 {
                break;
             }
 
-            Object[] var10002 = Registry.emptyArgs();
+            Object var10002 = Registry.emptyArgs();
             long var8 = 347860782649835626L;
-            Object[] var7 = var10002;
+            Object var7 = var10002;
             var10002 = Ref.h(347860782649835626L, var7, var8);
 
             try {
@@ -124,7 +127,7 @@ public class TunnelList extends Z7 {
 
          Object[] var22 = Registry.emptyArgs();
          long var12 = 430403702259957300L;
-         Object[] var11 = var22;
+         var11 = var22;
          Ref.h(430403702259957300L, var11, var12);
 
          try {
@@ -151,7 +154,7 @@ public class TunnelList extends Z7 {
 
    public void o(YE var1) {
       Object var3 = 432008228546876612L;
-      super(var1, this, (ArrayList)Ref.g(432008228546876612L, var3), true);
+      // [VF-super] super(var1, this, (ArrayList)Ref.g(432008228546876612L, var3), true);
    }
 
    public void i() {
@@ -176,9 +179,9 @@ public class TunnelList extends Z7 {
    public void e(int var1) {
       Object var3 = 384272417246389638L;
       Ref.g(384272417246389638L, var3);
-      Object[] var10002 = Registry.packArgs(var1);
+      Object var10002 = Registry.packArgs(var1);
       long var6 = 339810517366060301L;
-      Object[] var5 = var10002;
+      Object var5 = var10002;
       var10002 = Ref.h(339810517366060301L, var5, var6);
 
       try {
@@ -196,6 +199,7 @@ public class TunnelList extends Z7 {
 
    @Override
    public void A(Lv4_2 var1) {
+      long var11;
       long var3 = 297492185179397164L;
       Ref.s(297492185179397164L, var1, var3);
       ArrayList var10002 = new ArrayList();
@@ -206,7 +210,7 @@ public class TunnelList extends Z7 {
       ArrayList var10003 = (ArrayList)Ref.g(432008228546876612L, var6);
       ArrayList var10005 = (ArrayList)(Registry.emptyArgs());
       long var9 = 203984722032151557L;
-      Object[] var8 = var10005;
+      Object var8 = var10005;
       var10005 = Ref.h(203984722032151557L, var8, var9);
 
       try {
@@ -217,8 +221,8 @@ public class TunnelList extends Z7 {
 
       var1.addAll(var10005);
       var10005 = Registry.emptyArgs();
-      long var11 = 430403702259957300L;
-      Object[] var10 = var10005;
+      var11 = 430403702259957300L;
+      Object var10 = var10005;
       Ref.h(430403702259957300L, var10, var11);
 
       try {
@@ -256,11 +260,14 @@ public class TunnelList extends Z7 {
 
    @Override
    public void F(Lv4_2 var1) {
+      Object[] var11;
+      long var20;
+      Object[] var21;
       ArrayList var3 = new ArrayList();
       V();
       ArrayList var10003 = (ArrayList)(Registry.emptyArgs());
       long var8 = 203984722032151557L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(203984722032151557L, var7, var8);
 
       try {
@@ -273,7 +280,7 @@ public class TunnelList extends Z7 {
       Object var9 = 432008228546876612L;
       var10003 = Registry.packArgs(Ref.g(432008228546876612L, var9));
       long var12 = 246062808156242757L;
-      Object[] var11 = var10003;
+      var11 = var10003;
       Ref.h(246062808156242757L, var11, var12);
 
       try {
@@ -294,12 +301,12 @@ public class TunnelList extends Z7 {
       Object[] var17 = var10006;
       Ref.h(240567170779145617L, var17, var18);
       Object[] var10007 = Registry.emptyArgs();
-      long var20 = 226341449505323490L;
+      var20 = 226341449505323490L;
       Object[] var19 = var10007;
       Ref.h(226341449505323490L, var19, var20);
       ConnectionProperty var10008 = (ConnectionProperty)(Registry.emptyArgs());
       long var22 = 179934491990092343L;
-      Object[] var21 = var10008;
+      var21 = var10008;
       var10008 = Ref.h(179934491990092343L, var21, var22);
 
       try {
@@ -1168,6 +1175,7 @@ public class TunnelList extends Z7 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[9];
       int var3 = 0;
       String var2 = "uÆ¤týü\u001d9¤\u001cú\u0085\u0093Î\u0002劫隝\u0004Jæ\u008cú\u0002翤輩\u001eü²_\fk\u0093Jç\u0003\u008c\u0088\u008b\u0087Åw\u0015ÿ7ºî9\u001b`Rp\u001b\u0095ÀÁW\u0010`{=«\u008bBL\u0003\u009f\u0010´\u0018T ù[\u0002浗刁";
@@ -1184,7 +1192,6 @@ public class TunnelList extends Z7 {
          byte var10002 = -1;
 
          while (true) {
-      long var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

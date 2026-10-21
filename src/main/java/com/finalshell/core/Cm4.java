@@ -120,6 +120,7 @@ public class Cm4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void M(String var1) {
+      O0 var17;
       Ky4[] var10000 = A6.P();
       O0 var3 = Ok2.y$O0(var1);
       Ky4[] var2 = var10000;
@@ -148,8 +149,6 @@ public class Cm4 {
             label102: {
                if (var2 != null) {
                   if (var16) {
-      A6 var17;
-      A6 var17;
                      var5++;
                      continue;
                   }
@@ -982,6 +981,7 @@ public class Cm4 {
    }
 
    public static byte[] P(String var0) throws Exception {
+      int var9;
       Ky4[] var10000 = A6.P();
       byte[] var2 = null;
       URL var3 = new URL(var0);
@@ -1851,12 +1851,15 @@ public class Cm4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte[] var15;
+      int var17;
+      char[] var46;
       String[] var21 = new String[20];
       int var19 = 0;
       String var18 = "(£\b½\u0007mx)VÂ\u0092\u0006\u0098X\u008boâØ\u0004q\u0099 \u0080\búe\u008544ßa£\u0006Ûª\"°l´\u0007:QlõÌyM\u0002¹¤\u0004´\u0011\u0098\u0091\u0002\u008cÌ\fýb¬M¢\t\u001f\u0015ô\u001f\u0082å\u0004e\u0087`\u009d\u0006ºöÏºjb\u0007ÄMÁL\u0010+\u009d\u0002R\u0089\u0002E¡\u0002\u0014è\u0005K¯Ög\u0084";
       int var20 = "(£\b½\u0007mx)VÂ\u0092\u0006\u0098X\u008boâØ\u0004q\u0099 \u0080\búe\u008544ßa£\u0006Ûª\"°l´\u0007:QlõÌyM\u0002¹¤\u0004´\u0011\u0098\u0091\u0002\u008cÌ\fýb¬M¢\t\u001f\u0015ô\u001f\u0082å\u0004e\u0087`\u009d\u0006ºöÏºjb\u0007ÄMÁL\u0010+\u009d\u0002R\u0089\u0002E¡\u0002\u0014è\u0005K¯Ög\u0084"
          .length();
-      char var17 = 2;
+      var17 = 2;
       int var26 = -1;
 
       label88:
@@ -1954,7 +1957,7 @@ public class Cm4 {
                      while (true) {
                         byte var36 = var10;
                         var10 += 8;
-                        byte[] var15 = var12.substring(var36, var10).getBytes("ISO-8859-1");
+                        var15 = var12.substring(var36, var10).getBytes("ISO-8859-1");
                         long[] var28 = var14;
                         int var37 = var11++;
                         long var50 = ((long)var15[0] & 255L) << 56
@@ -2090,7 +2093,6 @@ public class Cm4 {
       }
    }
 }
-
 
 
 

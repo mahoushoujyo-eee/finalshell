@@ -15,7 +15,7 @@ import com.finalshell.ui.panel.Ky4;
 import com.finalshell.ui.panel.SwitchTabCommand;
 import com.finalshell.ui.panel.TerminalHint;
 import com.finalshell.ui.panel.Z8;
-import com.finalshell.ui.panel.Zm2;
+import com.finalshell.ui.panel.MouseSettingsPanel;
 import com.finalshell.ui.panel.Zn2;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -38,7 +38,7 @@ public class Ox4 extends JFrame {
    public static boolean C;
    public DefaultMutableTreeNode M;
    public DefaultMutableTreeNode J;
-   public Zm2 Q;
+   public MouseSettingsPanel Q;
    public AutoSelectTab D;
    public TerminalHint X;
    public EnableBackgroundImage z;
@@ -153,14 +153,14 @@ public class Ox4 extends JFrame {
       var4.add(var6);
       DefaultMutableTreeNode var7 = new DefaultMutableTreeNode(a(-1725, -768));
       var4.add(var7);
-      Zm2 var10029 = new Zm2();
+      MouseSettingsPanel var10029 = new MouseSettingsPanel();
       long var71 = 219413512886902160L;
-      Zm2 var70 = var10029;
+      MouseSettingsPanel var70 = var10029;
       Ref.s(219413512886902160L, var70, var71);
       Object var72 = 600217306549421865L;
       ArrayList var10030 = (ArrayList)Ref.g(600217306549421865L, var72);
       Object var74 = 219413512886902160L;
-      this.add((Zm2)Ref.g(219413512886902160L, var74));
+      this.add((MouseSettingsPanel)Ref.g(219413512886902160L, var74));
       Object var76 = 271121671883085064L;
       Ref.g(271121671883085064L, var76);
       Object var78 = 219413512886902160L;
@@ -1216,6 +1216,7 @@ public class Ox4 extends JFrame {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[21];
       int var11 = 0;
       M(null);
@@ -1232,7 +1233,6 @@ public class Ox4 extends JFrame {
          byte var10002 = -1;
 
          while (true) {
-      AutoSelectTab var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

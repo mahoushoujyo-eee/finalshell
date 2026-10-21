@@ -2,7 +2,7 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.listener.OQ3;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.panel.AA;
@@ -13,10 +13,10 @@ import java.lang.reflect.InvocationTargetException;
 public class GO implements Runnable {
    public final F8 b;
    public final Ck4 v;
-   public final U g;
+   public final MainFrame g;
    public final OQ3 p;
 
-   public GO(OQ3 var1, F8 var2, Ck4 var3, U var4) {
+   public GO(OQ3 var1, F8 var2, Ck4 var3, MainFrame var4) {
       this.p = var1;
       this.b = var2;
       this.v = var3;

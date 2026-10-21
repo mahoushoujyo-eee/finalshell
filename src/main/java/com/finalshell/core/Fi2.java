@@ -1471,6 +1471,7 @@ public final class Fi2 implements TcpPacket.TcpOption {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var38;
       String[] var17 = new String[18];
       int var15 = 0;
       String var14 = "\u008a\u0004}¼AzôÖ¼\brx<¹2g\u007fBY:´âúd\u001bA\u008a±\u0001¢\u0005ÊéLææ\b&ê\u009bÂ}é;£æ\u0099Xd\u0092\nÅ;é\\\u008cúÉÂ\u0015\u0015\tå\u001clMø\u0085\u0012·\u0081\n\b¸S/°ãVkÕ¿$\u007f]3ÛËkÂC£¨i)Î'\u008fÊ*R\u0007\u0014e¬ôCh\u0093r\u0006`\u001cÖ5§£¸H\u0010²×\u0090Äð\u0010\rl\u0099UÀ\u0081\u0096Û\u001a\u0099\nqdü¾Ã\u0087W(õÿ\u0012õ±\u0092\n¥¤K@5\u001a\u008e¥Ö\u001e¶]U;\u0007iåç\u009f\u009aÒP\n½?æÜmêõÀ\u0092U\nÀ?Jß\u0093ý2¨YÇ\u000bz_uú®\\ì¨¡B\b4¡\u008a\u0018mé@~Ä\u0094ôM\u0089£`Á\\\u0001%\u0096ÖFcØÓÏîÔ\u001bÝ\u0013\u0011\u00836Ö¸g\u0083ÉîpÈÕvn4&×\u0019<\u008d¹üL=ã\u008b@\u009bå0p]bt[\u0084:%\u0017\u009dL\u0005û4Æ\u0096g\u0006xíÉúIõÈª¿jIÿtÌë÷w¦Èª1Q\"\u00128\u0017¸\u0080\u0083\u001e¥\u0095ù!\u00166\u009c;é\u0002pH\u0010.p²8\u0090$¦ö\u0005\u0081\u0091Æi@\u0007{\u008b¡DA¹w";
@@ -1486,7 +1487,6 @@ public final class Fi2 implements TcpPacket.TcpOption {
          byte var10002 = -1;
 
          while (true) {
-      char[] var38;
             label65: {
                char[] var45 = var10001.toCharArray();
                int var10004 = var45.length;

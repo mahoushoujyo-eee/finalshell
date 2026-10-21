@@ -7,7 +7,7 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.task.ZS;
 import com.finalshell.ui.frame.Kb2;
 import com.finalshell.ui.frame.Km4;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.listener.YM3;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.panel.F8;
@@ -28,7 +28,7 @@ public class KQ extends JDialog {
    public long R;
    public boolean B;
    public boolean A;
-   public U r;
+   public MainFrame r;
    public Window m;
    public long g;
    public ShowDeletedPanel a;
@@ -44,7 +44,7 @@ public class KQ extends JDialog {
       Registry.lookupField(154418486518278678L).setBoolean(this, false);
       this.setFocusableWindowState(false);
       this.setIconImage((Image)Registry.lookupField(582605604039442414L).get(null));
-      Object[] var10001 = Registry.packArgs(b);
+      Object var10001 = Registry.packArgs(b);
       long var2 = 517287540690064504L;
       Object var10002 = Ref.h2(517287540690064504L, var2);
 
@@ -94,7 +94,7 @@ public class KQ extends JDialog {
       Ref.h(410905379772103887L, var9, var10);
       File var10005 = (File)(Registry.emptyArgs());
       long var12 = 272998330038223631L;
-      Object[] var11 = var10005;
+      Object var11 = var10005;
       var10005 = Ref.h(272998330038223631L, var11, var12);
 
       try {
@@ -105,7 +105,7 @@ public class KQ extends JDialog {
 
       var10005 = Registry.packArgs(var10005.getAbsolutePath());
       long var14 = 489768706953623433L;
-      Object[] var13 = var10005;
+      Object var13 = var10005;
       var10005 = Ref.h(489768706953623433L, var13, var14);
 
       try {
@@ -124,10 +124,10 @@ public class KQ extends JDialog {
       Ref.h(271043866899908885L, var17, var18);
       JFrame var10008 = (JFrame)(Registry.emptyArgs());
       long var20 = 292557478156152530L;
-      Object[] var19 = var10008;
+      Object var19 = var10008;
       var10008 = Registry.packArgs(Ref.h(292557478156152530L, var19, var20));
       long var22 = 285199883764466291L;
-      Object[] var21 = var10008;
+      Object var21 = var10008;
       var10008 = Ref.h(285199883764466291L, var21, var22);
 
       try {
@@ -139,7 +139,7 @@ public class KQ extends JDialog {
       JFrame var5 = var10008;
       Integer var10009 = (Integer)(Registry.emptyArgs());
       long var24 = 528672956857361353L;
-      Object[] var23 = var10009;
+      Object var23 = var10009;
       var10009 = Ref.h(528672956857361353L, var23, var24);
 
       try {
@@ -180,7 +180,7 @@ public class KQ extends JDialog {
 
             File var10013 = Registry.emptyArgs();
             long var28 = 272998330038223631L;
-            Object[] var27 = var10013;
+            Object var27 = var10013;
             var10013 = Ref.h(272998330038223631L, var27, var28);
 
             try {
@@ -204,7 +204,7 @@ public class KQ extends JDialog {
                throw var47.getTargetException();
             }
 
-            super(this, var10016, (Window)var10017, var4, var2);
+            // [VF-super] super(this, var10016, (Window)var10017, var4, var2);
             if (var1 == null) {
                return;
             }
@@ -255,7 +255,7 @@ public class KQ extends JDialog {
 
          File var73 = Registry.emptyArgs();
          long var38 = 272998330038223631L;
-         Object[] var37 = var73;
+         Object var37 = var73;
          var73 = Ref.h(272998330038223631L, var37, var38);
 
          try {
@@ -279,11 +279,11 @@ public class KQ extends JDialog {
             throw var43.getTargetException();
          }
 
-         super(this, var77, (Window)var80, var4, var2);
+         // [VF-super] super(this, var77, (Window)var80, var4, var2);
       }
    }
 
-   public boolean U(JComponent var1) {
+   public boolean MainFrame(JComponent var1) {
       Point var2 = var1.getLocationOnScreen();
       Point var3 = new Point(var2);
       var3.x = var2.x - a(3636, 792709501032229249L);
@@ -451,12 +451,12 @@ public class KQ extends JDialog {
       Registry.lookupField(154418486518278678L).setBoolean(this, var1);
    }
 
-   public U S() {
+   public MainFrame S() {
       Object var1 = 333623818237666798L;
-      return (U)Ref.g(333623818237666798L, var1);
+      return (MainFrame)Ref.g(333623818237666798L, var1);
    }
 
-   public void Y(U var1) {
+   public void Y(MainFrame var1) {
       long var3 = 333623818237666798L;
       Ref.s(333623818237666798L, var1, var3);
       long var5 = 144451340501842917L;

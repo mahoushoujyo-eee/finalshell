@@ -25,6 +25,8 @@ public class SA extends ST {
    }
 
    public void U(com.finalshell.ui.model.CY3 var1, List var2) {
+      SA var10;
+      SA var8;
       String[] var3 = CB3.C$arrString();
       if (var1 == this.p) {
          byte var4 = 0;

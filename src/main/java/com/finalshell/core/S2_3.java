@@ -19,13 +19,13 @@ public class S2_3 extends U2_3 {
    @C_9
    @Override
    public final N_6 J(String var1) {
+      N_6 var6;
       int[] var10000 = F_6.h();
       Iterator var3 = this.D.iterator();
       int[] var2 = var10000;
 
       while (true) {
          if (var3.hasNext()) {
-      N_6 var6;
             J_5 var4 = (J_5)var3.next();
             N_6 var5 = var4.J(var1);
             var6 = var5;
@@ -52,6 +52,8 @@ public class S2_3 extends U2_3 {
    @C_9
    @Override
    public Iterable E(String var1, boolean var2) throws IOException {
+      Iterable var11;
+      J_5 var6;
       int[] var10000 = F_6.h();
       ArrayList var4 = new ArrayList();
       Iterator var5 = this.D.iterator();
@@ -59,8 +61,7 @@ public class S2_3 extends U2_3 {
 
       label42:
       while (var5.hasNext()) {
-      Iterable var11;
-         J_5 var6 = (J_5)var5.next();
+         var6 = (J_5)var5.next();
          Iterable var7 = ((U2_3)var6).E(var1, var2);
 
          label47: {

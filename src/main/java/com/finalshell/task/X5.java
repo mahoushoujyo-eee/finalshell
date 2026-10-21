@@ -2,13 +2,13 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import java.lang.reflect.InvocationTargetException;
 
 public class X5 implements Runnable {
-   public final U n;
+   public final MainFrame n;
 
-   public X5(U var1) {
+   public X5(MainFrame var1) {
       this.n = var1;
    }
 

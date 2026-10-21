@@ -24,7 +24,7 @@ public class Pn4 implements Stroke {
    }
 
    public Pn4(Shape[] var1, float var2) {
-      int var10000 = Lp2_2.N();
+      int var10000 = ScaledStroke.N();
       this.G = var2;
       this.W = new Shape[var1.length];
       int var3 = var10000;
@@ -43,6 +43,7 @@ public class Pn4 implements Stroke {
 
    @Override
    public Shape createStrokedShape(Shape var1) {
+      float var25;
       GeneralPath var3 = new GeneralPath();
       FlatteningPathIterator var4 = new FlatteningPathIterator(var1.getPathIterator(null), 1.0);
       float[] var5 = new float[(int)a];
@@ -50,7 +51,7 @@ public class Pn4 implements Stroke {
       float var7 = 0.0F;
       float var8 = 0.0F;
       float var9 = 0.0F;
-      int var10000 = Lp2_2.N();
+      int var10000 = ScaledStroke.N();
       float var13 = 0.0F;
       int var14 = 0;
       int var2 = var10000;
@@ -81,8 +82,6 @@ public class Pn4 implements Stroke {
                         var3.moveTo(var6, var7);
                         var13 = 0.0F;
                         if (var2 == 0) {
-      float var25;
-      float var25;
                            break label80;
                         }
                      case 4:
@@ -137,7 +136,7 @@ public class Pn4 implements Stroke {
                               var3.append(this.k.createTransformedShape(this.W[var14]), false);
                               var13 += this.G;
                               var14++;
-                              var10000 = this.x;
+                              var10000 = (this.x) ? 1 : 0;
                               if (var2 == 0) {
                                  if (!this.x) {
                                     break label59;
@@ -188,7 +187,6 @@ public class Pn4 implements Stroke {
       a = var10002;
    }
 }
-
 
 
 

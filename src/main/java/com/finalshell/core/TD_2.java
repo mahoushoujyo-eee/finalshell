@@ -26,6 +26,7 @@ public class TD_2 extends T4 {
 
    @Override
    public Dimension preferredLayoutSize(Container var1) {
+      Dimension var7;
       Insets var3 = var1.getInsets();
       int var10000 = T4.O();
       Dimension var4 = new Dimension(var3.left + var3.right, var3.top + var3.bottom);
@@ -34,7 +35,6 @@ public class TD_2 extends T4 {
 
       while (true) {
          if (var5 < var1.getComponentCount()) {
-      Dimension var7;
             Dimension var6 = var1.getComponent(var5).getPreferredSize();
             var7 = var4;
             if (var2 != 0) {
@@ -50,7 +50,6 @@ public class TD_2 extends T4 {
             var4.height = Math.max(var4.height, var3.top + var6.height + var3.bottom);
             var5++;
             if (var2 == 0) {
-      Dimension var7;
                continue;
             }
          }
@@ -64,16 +63,17 @@ public class TD_2 extends T4 {
 
    @Override
    public void layoutContainer(Container var1) {
+      int var7;
       int var10000 = T4.b();
       Insets var3 = var1.getInsets();
-      int var2 = ((var10000) ? 1 : 0) ? 1 : 0;
-      var10000 = ((var1.getComponentOrientation().isLeftToRight()) != 0) != 0;
+      int var2 = var10000;
+      var10000 = (var1.getComponentOrientation().isLeftToRight()) ? 1 : 0;
       if (var2 != 0) {
          if (var10000 != 0) {
             int var4 = var3.left;
             Component[] var5 = var1.getComponents();
             int var6 = var5.length;
-            int var7 = 0;
+            var7 = 0;
 
             while (var7 < var6) {
                Component var8 = var5[var7];
@@ -110,7 +110,6 @@ public class TD_2 extends T4 {
       }
    }
 }
-
 
 
 

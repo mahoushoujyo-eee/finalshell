@@ -45,6 +45,7 @@ public class Gd4 extends Gy4 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      int var37;
       String[] var10000 = W5.q();
       int var4 = var1.getWidth();
       String[] var3 = var10000;
@@ -157,7 +158,6 @@ public class Gd4 extends Gy4 {
                }
 
                label62: {
-                  int var37;
                   label61: {
                      var37 = NM.O(var24, var25, var26, var27, var28, var29);
                      int var31 = var37 >> b(11332, 3529673341508132254L) & b(3608, 1158789635315351491L);
@@ -254,6 +254,10 @@ public class Gd4 extends Gy4 {
 
    @Override
    public void h(int var1, int var2, float[] var3) {
+      int var32;
+      float var34;
+      int var36;
+      float var37;
       String[] var10000 = W5.q();
       float var5 = this.p;
       String[] var4 = var10000;
@@ -289,8 +293,6 @@ public class Gd4 extends Gy4 {
       float var40;
       int var31 = (var40 = var13 - var10 * 2.0F) == 0.0F ? 0 : (var40 < 0.0F ? -1 : 1);
       if (var4 != null) {
-      int var32;
-      int var32;
          var31 = var31 > 0 ? 1 : 0;
       }
 
@@ -478,10 +480,13 @@ public class Gd4 extends Gy4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long var32;
+      int var34;
+      String var36;
       char[] var10003 = "4 \u00183\u0012\u0007-_\n\u001e5\u0011[w^".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
-      byte var34 = 120;
+      var34 = 120;
       char[] var10002 = var10003;
       int var19 = var10004;
       char[] var42;
@@ -538,7 +543,7 @@ public class Gd4 extends Gy4 {
                byte[] var16 = var12.substring(var25, var10).getBytes("ISO-8859-1");
                long[] var18 = var14;
                var25 = var11++;
-               long var32 = ((long)var16[0] & 255L) << 56
+               var32 = ((long)var16[0] & 255L) << 56
                   | ((long)var16[1] & 255L) << 48
                   | ((long)var16[2] & 255L) << 40
                   | ((long)var16[3] & 255L) << 32
@@ -624,7 +629,7 @@ public class Gd4 extends Gy4 {
             var42 = var10002;
             var10005 = var34;
             char var53 = var10002[var34];
-            var10007 = var34;
+            var10007 = (byte)(var34);
             var10006 = var53;
             switch (var8 % 7) {
                case 0:
@@ -650,7 +655,7 @@ public class Gd4 extends Gy4 {
             }
          } else {
             if (var19 <= var8) {
-               String var36 = new String(var10002).intern();
+               var36 = new String(var10002).intern();
                int var21 = -1;
                a = var36;
                long var0 = 1260000207302933890L;
@@ -720,7 +725,7 @@ public class Gd4 extends Gy4 {
             var42 = var10002;
             var10005 = var8;
             char var52 = var10002[var8];
-            var10007 = var34;
+            var10007 = (byte)(var34);
             var10006 = var52;
             switch (var8 % 7) {
                case 0:
@@ -748,7 +753,6 @@ public class Gd4 extends Gy4 {
       }
    }
 }
-
 
 
 

@@ -9,6 +9,7 @@ public class Xf4 implements GenericArrayType {
 
    public Xf4(Type var1) {
    super();
+   boolean k;
       int var10000 = Ph2.w();
       int var2 = var10000;
       if (var2 != 0) {
@@ -82,6 +83,7 @@ public class Xf4 implements GenericArrayType {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean k;
       char[] var10003 = "J%".toCharArray();
       int var10004 = var10003.length;
       int var0 = 0;

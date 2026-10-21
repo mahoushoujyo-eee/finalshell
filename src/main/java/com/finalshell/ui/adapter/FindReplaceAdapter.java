@@ -3,7 +3,7 @@ package com.finalshell.ui.adapter;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.frame.TextEditorFrame;
-import com.finalshell.ui.panel.File;
+import com.finalshell.ui.panel.TextFileEditorPanel;
 import java.awt.event.ActionEvent;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.AbstractAction;
@@ -30,7 +30,7 @@ public class FindReplaceAdapter extends AbstractAction {
       TextEditorFrame var10001 = (TextEditorFrame)Ref.g(456976076749489775L, var3);
       if (var2 == null) {
          Object var5 = 247518897504885985L;
-         if ((File)Ref.g(247518897504885985L, var5) == null) {
+         if ((TextFileEditorPanel)Ref.g(247518897504885985L, var5) == null) {
             return;
          }
 

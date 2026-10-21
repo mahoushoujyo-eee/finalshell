@@ -1,12 +1,12 @@
 package com.finalshell.ui.panel;
 
-import com.finalshell.core.CK;
+import com.finalshell.core.ZModemTransfer;
 import com.finalshell.core.GH_2;
 import com.finalshell.core.KD;
 import com.finalshell.core.KV;
 import com.finalshell.core.NY;
 import com.finalshell.core.T32;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.Vd2;
@@ -26,7 +26,7 @@ public class Refresh extends F8 {
    public KV Z;
    public boolean S;
    public ConnectionProperty Q;
-   public Ty2 n;
+   public RemoteProcessManager n;
    public String a;
    public NetworkInterfacePanel b;
    public GH_2 k;
@@ -36,7 +36,8 @@ public class Refresh extends F8 {
    public static long[] g;
    public static Integer[] h;
 
-   public Refresh(Ty2 var1, String var2) {
+   public Refresh(RemoteProcessManager var1, String var2) {
+      super();
       KV var10001 = new KV();
       long var9 = 323602357927532056L;
       KV var8 = var10001;
@@ -98,7 +99,7 @@ public class Refresh extends F8 {
 
       FlowLayout var10010 = Registry.emptyArgs();
       long var27 = 507960568746859746L;
-      Object[] var26 = var10010;
+      Object var26 = var10010;
       var10010 = Ref.h(507960568746859746L, var26, var27);
 
       try {
@@ -133,7 +134,7 @@ public class Refresh extends F8 {
       Ref.s(424420598427453385L, var30, var31);
       JScrollPane var10013;
       Object var32 = 424420598427453385L;
-      super((NetworkInterfacePanel)Ref.g(424420598427453385L, var32));
+      // [VF-super] super((NetworkInterfacePanel)Ref.g(424420598427453385L, var32));
       JScrollPane var7 = var10013;
       this.add(var7, a(-22662, -26623));
       var7.getViewport().setOpaque(false);
@@ -207,7 +208,7 @@ public class Refresh extends F8 {
    public void C(KV var1) {
       int[] var2 = K();
       if (var2 != null) {
-         if (CK.X) {
+         if (ZModemTransfer.X) {
             Object var3 = 424420598427453385L;
             Ref.g(424420598427453385L, var3);
             Object[] var10002 = Registry.packArgs(var1);
@@ -264,7 +265,7 @@ public class Refresh extends F8 {
       Ref.h(399585344452154517L, var5, var6);
       NY var10003 = (NY)(Registry.emptyArgs());
       long var8 = 149968465491171480L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(149968465491171480L, var7, var8);
 
       try {
@@ -277,7 +278,7 @@ public class Refresh extends F8 {
       byte var15 = 2;
       Color var10008 = (Color)(Registry.emptyArgs());
       long var10 = 345089686683358688L;
-      Object[] var9 = var10008;
+      Object var9 = var10008;
       var10008 = Ref.h(345089686683358688L, var9, var10);
 
       try {
@@ -317,12 +318,12 @@ public class Refresh extends F8 {
       Ref.s(323602357927532056L, var1, var3);
    }
 
-   public Ty2 X$Ty_2() {
+   public RemoteProcessManager X$Ty_2() {
       Object var1 = 635993614489710917L;
-      return (Ty2)Ref.g(635993614489710917L, var1);
+      return (RemoteProcessManager)Ref.g(635993614489710917L, var1);
    }
 
-   public void i(Ty2 var1) {
+   public void i(RemoteProcessManager var1) {
       long var3 = 635993614489710917L;
       Ref.s(635993614489710917L, var1, var3);
    }
@@ -1178,6 +1179,7 @@ public class Refresh extends F8 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[7];
       int var11 = 0;
       int[] var10000 = new int[3];
@@ -1195,7 +1197,6 @@ public class Refresh extends F8 {
          byte var10002 = -1;
 
          while (true) {
-      Object[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

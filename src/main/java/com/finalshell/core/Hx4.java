@@ -153,7 +153,7 @@ public class Hx4 extends W5 {
                float var15;
                int var14 = (var15 = this.l - 0.0F) == 0.0F ? 0 : (var15 < 0.0F ? -1 : 1);
                if (var3 != null) {
-                  if (var14) {
+                  if (var14 != 0) {
                      var11.rotate((double)var10);
                   }
 

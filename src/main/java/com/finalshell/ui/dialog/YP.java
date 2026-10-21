@@ -1,17 +1,17 @@
 package com.finalshell.ui.dialog;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.panel.SwitchTabCommand;
 import java.awt.Frame;
 import javax.swing.JDialog;
 
 public class YP extends JDialog {
-   public U l;
+   public MainFrame l;
    public SwitchTabCommand j;
    public static String a;
 
-   public YP(U var1) {
+   public YP(MainFrame var1) {
       super((Frame)var1);
       long var3 = 529054879371079324L;
       Ref.s(529054879371079324L, var1, var3);

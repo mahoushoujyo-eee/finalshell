@@ -3,8 +3,8 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.Ky4;
 
 @O4(
-   Z = "Point",
-   Z = {"type", "bbox", "coordinates"}
+   Z$String = "Point",
+   Z$arrString = {"type", "bbox", "coordinates"}
 )
 public class X12 extends XY3 {
    public double i;
@@ -59,14 +59,14 @@ public class X12 extends XY3 {
    }
 
    @E6(
-      W = false
+      W$boolean = false
    )
    public double c() {
       return this.i;
    }
 
    @E6(
-      W = false
+      W$boolean = false
    )
    public double G() {
       return this.e;

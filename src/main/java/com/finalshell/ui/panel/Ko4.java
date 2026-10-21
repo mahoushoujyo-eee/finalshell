@@ -37,7 +37,7 @@ public class Ko4 extends Ky4 {
          int[] var10000 = K32.L$arrint();
          var2 = this.L();
          var1 = var10000;
-         var3 = (this.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+         var3 = (byte)((this.getComponentOrientation().isLeftToRight()) ? 1 : 0);
          var9 = var2;
          if (var1 != null) {
             if (var2 == 0) {

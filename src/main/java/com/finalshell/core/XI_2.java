@@ -34,6 +34,8 @@ public class XI_2 {
    public static long f;
 
    public XI_2() {
+      Gt2_2 var5;
+      long var8;
       Registry.lookupField(318642663468302761L).setBoolean(this, false);
       long var2 = 624390254942000691L;
       String var1 = "n";
@@ -46,9 +48,9 @@ public class XI_2 {
       Registry.lookupField(487668349011926705L).setLong(this, 0L);
       Gt2_2 var10003 = new Gt2_2();
       long var6 = 481825716116789638L;
-      Gt2_2 var5 = var10003;
+      var5 = var10003;
       Ref.s(481825716116789638L, var5, var6);
-      long var8 = 423755784183676232L;
+      var8 = 423755784183676232L;
       Object var7 = null;
       Ref.s(423755784183676232L, var7, var8);
       long var10 = 350567557010530924L;
@@ -114,6 +116,7 @@ public class XI_2 {
    }
 
    public static String C(byte[] var0) {
+      String var8;
       Ky4[] var10000 = YT3_2.c();
       StringBuilder var2 = new StringBuilder("");
       Ky4[] var1 = var10000;
@@ -142,7 +145,6 @@ public class XI_2 {
             int var4 = var0[var3] & a(20361, 5892623593343310655L);
             String var5 = Integer.toHexString(var4);
             if (var1 != null) {
-      Gt2_2 var8;
                var8 = var5;
                if (var1 == null) {
                   break;
@@ -169,6 +171,7 @@ public class XI_2 {
    }
 
    public static byte[] r(int var0) {
+      byte[] var5;
       int var2 = a(4624, 7771378535212254882L) + new Random().nextInt(var0 - a(31910, 2002742202344564758L));
       byte[] var3 = new byte[var2];
       Ky4[] var10000 = YT3_2.c();
@@ -177,7 +180,6 @@ public class XI_2 {
 
       while (true) {
          if (var4 < var2) {
-      Object var5;
             var5 = var3;
             if (var1 == null) {
                break;
@@ -436,6 +438,7 @@ public class XI_2 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -4661) & 65535;
       if (c[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1222,7 +1225,7 @@ public class XI_2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1250,6 +1253,8 @@ public class XI_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var5;
+      long[] var8;
       String[] var15 = new String[3];
       int var13 = 0;
       String var12 = "0\u008fkN°\u0005¼;úØ\u0082 Õ\u0000#¥~TÖ>Ús\u009ab|1ÅèÑBÑÙ\u008dÆD\u0017\u0005\u008a ñ\u0004\u001b\u00006";
@@ -1336,8 +1341,8 @@ public class XI_2 {
             a = var15;
             c = new String[3];
             long var2 = 3310962280269704858L;
-            long[] var8 = new long[8];
-            int var5 = 0;
+            var8 = new long[8];
+            var5 = 0;
             String var6 = "xæ¥\u0084$Ì~o\u0090¯z3º]h2æ·Ë\t¦û^¨ÁÀ\u0010Nß_\u0006\u0086\u0006Ô\u0000}2\u0084\u0003D¨Ðß\u0019Øa5Z";
             int var7 = "xæ¥\u0084$Ì~o\u0090¯z3º]h2æ·Ë\t¦û^¨ÁÀ\u0010Nß_\u0006\u0086\u0006Ô\u0000}2\u0084\u0003D¨Ðß\u0019Øa5Z".length();
             byte var4 = 0;
@@ -1408,7 +1413,6 @@ public class XI_2 {
       }
    }
 }
-
 
 
 

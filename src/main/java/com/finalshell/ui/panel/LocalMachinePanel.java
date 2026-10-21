@@ -145,6 +145,7 @@ var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32)
    }
 
    public void s(KV var1, String var2, ArrayList var3, int var4) {
+      long var33;
       i();
       long var9 = 177705260303572150L;
       Ref.s(177705260303572150L, var2, var9);
@@ -175,7 +176,7 @@ var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32)
          if (this == null && Registry.lookupField(527414514539504903L).getBoolean(this)) {
             String var10008 = (String)(Registry.emptyArgs());
             long var23 = 609170221187935837L;
-            Object[] var22 = var10008;
+            Object var22 = var10008;
             var10008 = Ref.h(609170221187935837L, var22, var23);
 
             try {
@@ -189,7 +190,7 @@ var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32)
                JO var10009 = (JO)Ref.g(385286581456393831L, var24);
                String var10011 = (String)(Registry.emptyArgs());
                long var27 = 609170221187935837L;
-               Object[] var26 = var10011;
+               Object var26 = var10011;
                var10011 = Ref.h(609170221187935837L, var26, var27);
 
                try {
@@ -217,9 +218,9 @@ var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32)
 
       boolean var6 = false;
       if (this == null && Registry.lookupField(527414514539504903L).getBoolean(this)) {
-         Object[] var45 = Registry.emptyArgs();
-         long var33 = 600849645967396341L;
-         Object[] var32 = var45;
+         Object var45 = Registry.emptyArgs();
+         var33 = 600849645967396341L;
+         Object var32 = var45;
          var45 = Ref.h(600849645967396341L, var32, var33);
 
          try {
@@ -236,7 +237,7 @@ var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32)
          if (var7 == Registry.lookupField(446362246660561336L).getInt(null)) {
             String var10010 = (String)(Registry.emptyArgs());
             long var35 = 445746235927917450L;
-            Object[] var34 = var10010;
+            Object var34 = var10010;
             var10010 = Ref.h(445746235927917450L, var34, var35);
 
             try {
@@ -267,7 +268,7 @@ var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32)
             Ref.g(412103333330765630L, var10);
             List var10004 = (List)(Registry.emptyArgs());
             long var13 = 408690525415437170L;
-            Object[] var12 = var10004;
+            Object var12 = var10004;
             var10004 = Ref.h(408690525415437170L, var12, var13);
 
             try {
@@ -288,7 +289,7 @@ var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32)
                   Ref.g(412103333330765630L, var14);
                   String var10006 = (String)(Registry.emptyArgs());
                   long var17 = 609170221187935837L;
-                  Object[] var16 = var10006;
+                  Object var16 = var10006;
                   var10006 = Ref.h(609170221187935837L, var16, var17);
 
                   try {
@@ -306,7 +307,7 @@ var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32)
                      Ref.g(412103333330765630L, var18);
                      String var10008 = (String)(Registry.emptyArgs());
                      long var21 = 445746235927917450L;
-                     Object[] var20 = var10008;
+                     Object var20 = var10008;
                      var10008 = Ref.h(445746235927917450L, var20, var21);
 
                      try {
@@ -1168,6 +1169,7 @@ var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32)
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[13];
       int var11 = 0;
       String var10 = "\"ï¢\u0019\u0015þ!\u0098óX\\!ûaSVç\rÛÑ\u009eÞñm»\u0081\r½è0«\u000eÊÚ\u0088ÔRý¾¾\u00047ÍÊ`q\u000eEzyÀl\u007fyîü8Ò\u008e\u0083ù\u0007姓圬灼\u008aB\u009cE\fÏpâwöé¯\u0004oC¦\f&(\u0089\u000730\u000e(-/s,\u009e\u0007è\u0081íÐø*×§Ú\u008d\u0091\u0007]ò\u0094ÛãÕ\u009c#\u001f\u0019\u0014\f(\u0002枏某\u0011GØ\u000fÿ\u0081\"³\u0003 +\u0017O\u0092¬~ïB\u0004\u0081..À\b#\u0090\u007fkEjÙ\u007f";
@@ -1184,7 +1186,6 @@ var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32)
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

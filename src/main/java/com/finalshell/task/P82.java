@@ -1,16 +1,16 @@
 package com.finalshell.task;
 
-import com.finalshell.core.CK;
+import com.finalshell.core.ZModemTransfer;
 import com.finalshell.core.SelectUploadFile;
 import java.io.File;
 import java.io.IOException;
 
 public class P82 implements Runnable {
-   public final CK J;
+   public final ZModemTransfer J;
    public final File p;
    public final SelectUploadFile l;
 
-   public P82(SelectUploadFile var1, CK var2, File var3) {
+   public P82(SelectUploadFile var1, ZModemTransfer var2, File var3) {
       this.l = var1;
       this.J = var2;
       this.p = var3;

@@ -32,6 +32,12 @@ public class JS implements Comparator {
    }
 
    public int d(LI3_2 var1, LI3_2 var2) {
+      Float var107;
+      Long var110;
+      Integer var113;
+      Float var130;
+      Long var133;
+      Integer var136;
       boolean var3 = Uo2.k();
       Object var8 = 320721692123201197L;
       JS var10001 = ((String)Ref.g(320721692123201197L, var8)).equals((String)Registry.lookupField(226109021265139345L).get(null));
@@ -56,7 +62,7 @@ public class JS implements Comparator {
                   Comparator var94 = (Comparator)Ref.g(396791488371189674L, var20);
                   String var114 = (String)(Registry.emptyArgs());
                   long var23 = 287512880066147760L;
-                  Object[] var22 = var114;
+                  Object var22 = var114;
                   var114 = Ref.h(287512880066147760L, var22, var23);
 
                   try {
@@ -67,7 +73,7 @@ public class JS implements Comparator {
 
                   String var137 = (String)(Registry.emptyArgs());
                   long var25 = 287512880066147760L;
-                  Object[] var24 = var137;
+                  Object var24 = var137;
                   var137 = Ref.h(287512880066147760L, var24, var25);
 
                   try {
@@ -88,9 +94,9 @@ public class JS implements Comparator {
                if (var10002 == null) {
                   Object var28 = 576337950600267201L;
                   Ref.g(576337950600267201L, var28);
-                  Object[] var111 = Registry.emptyArgs();
+                  Object var111 = Registry.emptyArgs();
                   long var31 = 419335026051024288L;
-                  Object[] var30 = var111;
+                  Object var30 = var111;
                   var111 = Ref.h(419335026051024288L, var30, var31);
 
                   try {
@@ -100,9 +106,9 @@ public class JS implements Comparator {
                   }
 
                   Integer.valueOf(var113);
-                  Object[] var134 = Registry.emptyArgs();
+                  Object var134 = Registry.emptyArgs();
                   long var33 = 419335026051024288L;
-                  Object[] var32 = var134;
+                  Object var32 = var134;
                   var134 = Ref.h(419335026051024288L, var32, var33);
 
                   try {
@@ -111,9 +117,9 @@ public class JS implements Comparator {
                      throw var75.getTargetException();
                   }
 
-                  Object[] var123 = Registry.packArgs(var2, Integer.valueOf(var136));
+                  Object var123 = Registry.packArgs(var2, Integer.valueOf(var136));
                   long var35 = 227703286706087580L;
-                  Object[] var34 = var123;
+                  Object var34 = var123;
                   var123 = Ref.h(227703286706087580L, var34, var35);
 
                   try {
@@ -132,9 +138,9 @@ public class JS implements Comparator {
                if (var10002 == null) {
                   Object var38 = 148056146191951030L;
                   Ref.g(148056146191951030L, var38);
-                  Object[] var108 = Registry.emptyArgs();
+                  Object var108 = Registry.emptyArgs();
                   long var41 = 225195147661966806L;
-                  Object[] var40 = var108;
+                  Object var40 = var108;
                   var108 = Ref.h(225195147661966806L, var40, var41);
 
                   try {
@@ -144,9 +150,9 @@ public class JS implements Comparator {
                   }
 
                   Long.valueOf(var110);
-                  Object[] var131 = Registry.emptyArgs();
+                  Object var131 = Registry.emptyArgs();
                   long var43 = 225195147661966806L;
-                  Object[] var42 = var131;
+                  Object var42 = var131;
                   var131 = Ref.h(225195147661966806L, var42, var43);
 
                   try {
@@ -155,9 +161,9 @@ public class JS implements Comparator {
                      throw var78.getTargetException();
                   }
 
-                  Object[] var121 = Registry.packArgs(var2, Long.valueOf(var133));
+                  Object var121 = Registry.packArgs(var2, Long.valueOf(var133));
                   long var45 = 262915954633911742L;
-                  Object[] var44 = var121;
+                  Object var44 = var121;
                   var121 = Ref.h(262915954633911742L, var44, var45);
 
                   try {
@@ -176,9 +182,9 @@ public class JS implements Comparator {
                if (var10002 == null) {
                   Object var48 = 576337950600267201L;
                   Ref.g(576337950600267201L, var48);
-                  Object[] var105 = Registry.emptyArgs();
+                  Object var105 = Registry.emptyArgs();
                   long var51 = 218205101142805647L;
-                  Object[] var50 = var105;
+                  Object var50 = var105;
                   var105 = Ref.h(218205101142805647L, var50, var51);
 
                   try {
@@ -188,9 +194,9 @@ public class JS implements Comparator {
                   }
 
                   Float.valueOf(var107);
-                  Object[] var128 = Registry.emptyArgs();
+                  Object var128 = Registry.emptyArgs();
                   long var53 = 218205101142805647L;
-                  Object[] var52 = var128;
+                  Object var52 = var128;
                   var128 = Ref.h(218205101142805647L, var52, var53);
 
                   try {
@@ -199,9 +205,9 @@ public class JS implements Comparator {
                      throw var81.getTargetException();
                   }
 
-                  Object[] var119 = Registry.packArgs(var2, Float.valueOf(var130));
+                  Object var119 = Registry.packArgs(var2, Float.valueOf(var130));
                   long var55 = 449672458813842211L;
-                  Object[] var54 = var119;
+                  Object var54 = var119;
                   var119 = Ref.h(449672458813842211L, var54, var55);
 
                   try {
@@ -221,7 +227,7 @@ public class JS implements Comparator {
                   String var4 = "";
                   U82 var10003 = (U82)(Registry.emptyArgs());
                   long var59 = 382054480216091309L;
-                  Object[] var58 = var10003;
+                  Object var58 = var10003;
                   var10003 = Ref.h(382054480216091309L, var58, var59);
 
                   try {
@@ -252,7 +258,7 @@ public class JS implements Comparator {
                         if (var96 != null) {
                            String var10005 = (String)(Registry.emptyArgs());
                            long var63 = 577747074549625554L;
-                           Object[] var62 = var10005;
+                           Object var62 = var10005;
                            var10005 = Ref.h(577747074549625554L, var62, var63);
 
                            try {
@@ -271,7 +277,7 @@ public class JS implements Comparator {
                   Object var6 = var96;
                   U82 var102 = (U82)(Registry.emptyArgs());
                   long var65 = 382054480216091309L;
-                  Object[] var64 = var102;
+                  Object var64 = var102;
                   var102 = Ref.h(382054480216091309L, var64, var65);
 
                   try {
@@ -285,7 +291,7 @@ public class JS implements Comparator {
                   if (!var3 || var7 != null) {
                      String var10006 = (String)(Registry.emptyArgs());
                      long var67 = 577747074549625554L;
-                     Object[] var66 = var10006;
+                     Object var66 = var10006;
                      var10006 = Ref.h(577747074549625554L, var66, var67);
 
                      try {
@@ -330,7 +336,7 @@ public class JS implements Comparator {
          Comparator var91 = (Comparator)Ref.g(396791488371189674L, var12);
          Comparator var97 = Registry.emptyArgs();
          long var15 = 505915899939017355L;
-         Object[] var14 = var97;
+         Object var14 = var97;
          var97 = Ref.h(505915899939017355L, var14, var15);
 
          try {
@@ -341,7 +347,7 @@ public class JS implements Comparator {
 
          String var125 = (String)(Registry.emptyArgs());
          long var17 = 505915899939017355L;
-         Object[] var16 = var125;
+         Object var16 = var125;
          var125 = Ref.h(505915899939017355L, var16, var17);
 
          try {
@@ -358,9 +364,9 @@ public class JS implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((LI3_2)var1, (LI3_2)var2);
+      Object var10001 = Registry.packArgs((LI3_2)var1, (LI3_2)var2);
       long var4 = 621138583241391558L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(621138583241391558L, var3, var4);
 
       try {

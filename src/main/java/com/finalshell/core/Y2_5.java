@@ -422,16 +422,16 @@ public abstract class Y2_5 {
 
    public abstract Y2_5 B();
 
-   public abstract Jk2 k(int var1, InetAddress var2, int var3);
+   public abstract ProxyMessage k(int var1, InetAddress var2, int var3);
 
-   public abstract Jk2 Q(int var1, String var2, int var3) throws UnknownHostException;
+   public abstract ProxyMessage Q(int var1, String var2, int var3) throws UnknownHostException;
 
-   public abstract Jk2 o(InputStream var1) throws B52, IOException;
+   public abstract ProxyMessage o(InputStream var1) throws B52, IOException;
 
-   public Jk2 r(InetAddress var1, int var2) throws B52 {
+   public ProxyMessage r(InetAddress var1, int var2) throws B52 {
       try {
          this.m$void();
-         Jk2 var3 = this.k(1, var1, var2);
+         ProxyMessage var3 = this.k(1, var1, var2);
          return this.p(var3);
       } catch (B52 var4) {
          this.F();
@@ -439,10 +439,10 @@ public abstract class Y2_5 {
       }
    }
 
-   public Jk2 V(String var1, int var2) throws UnknownHostException, B52 {
+   public ProxyMessage V(String var1, int var2) throws UnknownHostException, B52 {
       try {
          this.m$void();
-         Jk2 var3 = this.Q(1, var1, var2);
+         ProxyMessage var3 = this.Q(1, var1, var2);
          return this.p(var3);
       } catch (B52 var4) {
          this.F();
@@ -450,10 +450,10 @@ public abstract class Y2_5 {
       }
    }
 
-   public Jk2 J(InetAddress var1, int var2) throws B52 {
+   public ProxyMessage J(InetAddress var1, int var2) throws B52 {
       try {
          this.m$void();
-         Jk2 var3 = this.k(2, var1, var2);
+         ProxyMessage var3 = this.k(2, var1, var2);
          return this.p(var3);
       } catch (B52 var4) {
          this.F();
@@ -461,10 +461,10 @@ public abstract class Y2_5 {
       }
    }
 
-   public Jk2 e(String var1, int var2) throws UnknownHostException, B52 {
+   public ProxyMessage e(String var1, int var2) throws UnknownHostException, B52 {
       try {
          this.m$void();
-         Jk2 var3 = this.Q(2, var1, var2);
+         ProxyMessage var3 = this.Q(2, var1, var2);
          return this.p(var3);
       } catch (B52 var4) {
          this.F();
@@ -472,7 +472,7 @@ public abstract class Y2_5 {
       }
    }
 
-   public Jk2 s() throws IOException, B52 {
+   public ProxyMessage s() throws IOException, B52 {
       try {
          return this.o(this.L);
       } catch (InterruptedIOException var3) {
@@ -483,13 +483,13 @@ public abstract class Y2_5 {
       }
    }
 
-   public Jk2 F(InetAddress var1, int var2) throws B52 {
-      String[] var3 = Jk2.Y();
+   public ProxyMessage F(InetAddress var1, int var2) throws B52 {
+      String[] var3 = ProxyMessage.Y();
 
       try {
          label32: {
             this.m$void();
-            Jk2 var4 = this.k(3, var1, var2);
+            ProxyMessage var4 = this.k(3, var1, var2);
 
             try {
                if (var3 == null) {
@@ -514,13 +514,13 @@ public abstract class Y2_5 {
       throw new B52(a(30760, 1218424183128375748L), a(-31698, -10867));
    }
 
-   public Jk2 Y(String var1, int var2) throws UnknownHostException, B52 {
-      String[] var3 = Jk2.Y();
+   public ProxyMessage Y(String var1, int var2) throws UnknownHostException, B52 {
+      String[] var3 = ProxyMessage.Y();
 
       try {
          label32: {
             this.m$void();
-            Jk2 var4 = this.Q(3, var1, var2);
+            ProxyMessage var4 = this.Q(3, var1, var2);
 
             try {
                if (var3 == null) {
@@ -578,15 +578,15 @@ public abstract class Y2_5 {
       // 2d: return
    }
 
-   public void N(Jk2 var1) throws B52, IOException {
+   public void N(ProxyMessage var1) throws B52, IOException {
       var1.l(this.I);
    }
 
-   public Jk2 g() throws B52, IOException {
+   public ProxyMessage g() throws B52, IOException {
       return this.o(this.L);
    }
 
-   public Jk2 p(Jk2 var1) throws B52 {
+   public ProxyMessage p(ProxyMessage var1) throws B52 {
       try {
          var1.l(this.I);
          return this.o(this.L);
@@ -1416,6 +1416,7 @@ public abstract class Y2_5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "\u0000\u008e=;üiàZâ\u0094Ò\u0087\u009d\u0002L¦Ù~\u0015îg7\u009a'\"*È\bï\u0092Õ'Ôì\u000f1©ZÕÛ¿ê¦\"\t\u0086lËXª\u007f÷Å(\u0001l#ôQ#ß»\u0090¸|?åCî0àìG\u0093\u0097\u0005\f\u007f\u000fú&\u00ad;S7ÀÈ9ÜÍíxÌÁ\u0015uT=¢Ò:RÒæ\u0012 ¢\u0084Q\u0001{_²)\u001b>¶\u0014¢ ~Òv3Í\u001f\u008c^d\u0014çM\u0092\u00818";
@@ -1431,7 +1432,6 @@ public abstract class Y2_5 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

@@ -73,6 +73,7 @@ public class KV3 extends Ky4 {
 
    public KV3(Date var1) {
       super(true);
+      Ky4 var5;
       String[] var10000 = Lk4.N();
       this.Y = new ArrayList(1);
       String[] var2 = var10000;
@@ -111,7 +112,7 @@ public class KV3 extends Ky4 {
       this.I = KD.K(V, GO.Fx, true);
       this.I.r(false);
       this.I.addActionListener(new Yl2(this));
-      Ky4 var5 = new Ky4(new BorderLayout());
+      var5 = new Ky4(new BorderLayout());
       var5.setOpaque(false);
       var5.add(this.i, b(-6371, -30694));
       var5.add(this.I, b(-6375, 7461));
@@ -350,6 +351,8 @@ public class KV3 extends Ky4 {
    }
 
    public void o() {
+      KV3 var5;
+      int var7;
       String[] var10000 = Lk4.N();
       this.C.removeAll();
       String[] var1 = var10000;
@@ -366,7 +369,6 @@ public class KV3 extends Ky4 {
                int var6 = (this.B) ? 1 : 0;
                if (var1 == null) {
                   if (!this.B) {
-      String[] var7;
                      var7 = var2;
                      break label48;
                   }
@@ -417,10 +419,12 @@ public class KV3 extends Ky4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void o(JPanel var1) {
+      JPanel var33;
+      int var5;
+      int var7;
       String[] var2;
       ButtonGroup var3;
       Calendar var4;
-      int var5;
       int var6;
       int var8;
       label240: {
@@ -439,7 +443,7 @@ public class KV3 extends Ky4 {
          var4.set(5, 1);
          var5 = 0;
          var6 = 0;
-         int var7 = var4.get(a(578, 1244756124417691666L));
+         var7 = var4.get(a(578, 1244756124417691666L));
          var2 = var10000;
          int var19 = var7;
          if (var2 == null) {
@@ -603,7 +607,7 @@ public class KV3 extends Ky4 {
             Qe2_2 var12 = new Qe2_2();
             var12.setForeground(var13 != 0 ? this.S : this.o);
             var12.setText("" + var4.get(5));
-            var12.setSelected((boolean)var15);
+            var12.setSelected(var15);
             var12.G(true);
             var12.setHorizontalAlignment(4);
             var12.k(GO.Fx);
@@ -676,7 +680,6 @@ public class KV3 extends Ky4 {
 
                         if (var2 == null) {
                            if (this.u != null) {
-      Ky4 var33;
                               this.u.g(var12, var11);
                            }
 
@@ -1715,6 +1718,9 @@ public class KV3 extends Ky4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      boolean var5;
+      byte[] var7;
       String[] var13 = new String[23];
       int var11 = 0;
       String var10 = "8Ù¨\u007f\u0002D\u0007\u0017åéÀí¾»\u0007/¹!KúÏ\u0096\t5\u000fw?ºÃ-6«\u0013¹xö\u0097þ]Nq>y\u0016w>xÄI|UG\u0002ÛÐ\u0007éJ²5\u0082\u0000Ò\u001d ©\u0015i<\u0089\u0006\u008b\u007f|\u0002Ô\u0000Pú\u008bw\u0012\\9ãÃR¢BJ³\tä\u0004ºç#<\u0014Vî/\tÿ\u008b\u008b¶!ÆqÌ(4ê\u0014W\u0003±o\u000eÅ¢yÌ\u000f6p\u001cùÔ\u009fÁUÃ\u0005Õ\u0000¥\u000f1\u0004=ì\u0083Ù\u0004-/Ñ%\u0007Ê1\u0010ZÐí^\u0004p\u000f*¥\u0002\u0089A\u0006qq\u0081j'æ\u0005M\u0001¶/S\u0017Ô²[ÎKvæ\u0003ëÀ$\u001e\u0096Ð#XQ\u0086\u008d\u0099]Ã\u009e\u0007(»È\u000bÏÇ9";
@@ -1811,15 +1817,15 @@ public class KV3 extends Ky4 {
                      long[] var6 = new long[21];
                      int var3 = 0;
                      String var4 = "LTKÞýZDû!è\u0085D½K\u0019Ù´úV1·\u0016\r\u0000×\u0081ñ°\u0095V´\u0095r\u008b\nÛs\u0092\u0091¹=D\u00adÒçX\u008cÀ$ób4¡\u0014\u000fÌÙu\u000b\b_%ô]'y\u008f S1\u0016ìÆ\nQ\u001c,Áíó\u0093ÖÁ%K2ßOº;\u0092_\u00935®\u0013læ\u001bÔ\u008dð\u0092\u0080\u00960\u0004ép·AôÜã3C\u001eÝÐïZÉ\u0001\u0006?\u0007Y@JNÏ\u0019\u0018b×\u0012\u001a%ï<H\u0095Ê\u001eÈfwÎÈ¦\t\u008d";
-                     int var5 = "LTKÞýZDû!è\u0085D½K\u0019Ù´úV1·\u0016\r\u0000×\u0081ñ°\u0095V´\u0095r\u008b\nÛs\u0092\u0091¹=D\u00adÒçX\u008cÀ$ób4¡\u0014\u000fÌÙu\u000b\b_%ô]'y\u008f S1\u0016ìÆ\nQ\u001c,Áíó\u0093ÖÁ%K2ßOº;\u0092_\u00935®\u0013læ\u001bÔ\u008dð\u0092\u0080\u00960\u0004ép·AôÜã3C\u001eÝÐïZÉ\u0001\u0006?\u0007Y@JNÏ\u0019\u0018b×\u0012\u001a%ï<H\u0095Ê\u001eÈfwÎÈ¦\t\u008d"
-                        .length();
+                     var5 = "LTKÞýZDû!è\u0085D½K\u0019Ù´úV1·\u0016\r\u0000×\u0081ñ°\u0095V´\u0095r\u008b\nÛs\u0092\u0091¹=D\u00adÒçX\u008cÀ$ób4¡\u0014\u000fÌÙu\u000b\b_%ô]'y\u008f S1\u0016ìÆ\nQ\u001c,Áíó\u0093ÖÁ%K2ßOº;\u0092_\u00935®\u0013læ\u001bÔ\u008dð\u0092\u0080\u00960\u0004ép·AôÜã3C\u001eÝÐïZÉ\u0001\u0006?\u0007Y@JNÏ\u0019\u0018b×\u0012\u001a%ï<H\u0095Ê\u001eÈfwÎÈ¦\t\u008d";
+                        // [VF] .length();
                      byte var2 = 0;
 
                      label44:
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56
@@ -1854,7 +1860,7 @@ public class KV3 extends Ky4 {
                                  }
 
                                  var4 = "Éö·ü `{\u0004L\u0089Lªñ]±\u0091";
-                                 var5 = "Éö·ü `{\u0004L\u0089Lªñ]±\u0091".length();
+                                 var5 = ("Éö·ü `{\u0004L\u0089Lªñ]±\u0091".length()) != 0;
                                  var2 = 0;
                            }
 
@@ -1898,7 +1904,6 @@ public class KV3 extends Ky4 {
       }
    }
 }
-
 
 
 

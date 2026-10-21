@@ -14,9 +14,9 @@ public class U32 implements Fb2 {
 
    @Override
    public void O(Ty4 var1) {
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var4 = 542590257020999358L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(542590257020999358L, var3, var4);
 
       try {
@@ -33,7 +33,7 @@ public class U32 implements Fb2 {
          JLabel var10003 = (JLabel)Ref.g(281854482764394826L, var7);
          String var10005 = (String)(Registry.emptyArgs());
          long var10 = 167932056536173107L;
-         Object[] var9 = var10005;
+         Object var9 = var10005;
          var10005 = Ref.h(167932056536173107L, var9, var10);
 
          try {

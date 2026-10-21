@@ -172,6 +172,9 @@ public abstract class DM3 extends RowSorter {
    }
 
    public void K(int var1, boolean var2) {
+      Object[] var11;
+      long var14;
+      Integer var27;
       Uo2.i();
       Object[] var10002 = Registry.packArgs(var1);
       long var6 = 311908307058196049L;
@@ -206,9 +209,9 @@ public abstract class DM3 extends RowSorter {
             long var10 = 566043907753096060L;
             Object[] var9 = var10004;
             Ref.h(566043907753096060L, var9, var10);
-            Object[] var10005 = Registry.emptyArgs();
+            Object var10005 = Registry.emptyArgs();
             long var12 = 401679078758232861L;
-            Object[] var11 = var10005;
+            var11 = var10005;
             var10005 = Ref.h(401679078758232861L, var11, var12);
 
             try {
@@ -218,7 +221,7 @@ public abstract class DM3 extends RowSorter {
             }
 
             boolean[] var28 = new boolean[var27];
-            long var14 = 129299070682169446L;
+            var14 = 129299070682169446L;
             boolean[] var13 = var28;
             Ref.s(129299070682169446L, var13, var14);
             Object var15 = 129299070682169446L;
@@ -2005,6 +2008,7 @@ public abstract class DM3 extends RowSorter {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void L(int var1) {
+      long var14;
       boolean var10000 = Uo2.i();
       int var3 = 0;
       boolean var2 = var10000;
@@ -2049,7 +2053,7 @@ public abstract class DM3 extends RowSorter {
 
                   try {
                      OY[] var10005 = new OY[var1];
-                     long var14 = 278246634133162629L;
+                     var14 = 278246634133162629L;
                      OY[] var13 = var10005;
                      Ref.s(278246634133162629L, var13, var14);
                      Object var15 = 278246634133162629L;
@@ -2119,6 +2123,7 @@ public abstract class DM3 extends RowSorter {
    }
 
    public void r(List var1) {
+      SortKey[] var11;
       int var3 = var1.size();
       Comparator[] var10001 = new Comparator[var3];
       long var6 = 487108138525437099L;
@@ -2135,7 +2140,7 @@ public abstract class DM3 extends RowSorter {
                Comparator[] var10002 = (Comparator[])Ref.g(487108138525437099L, var7);
                Comparator var10005 = (Comparator)(Registry.packArgs(((SortKey)var1.get(var4)).getColumn()));
                long var10 = 201792723603717432L;
-               Object[] var9 = var10005;
+               Object var9 = var10005;
                var10005 = Ref.h(201792723603717432L, var9, var10);
 
                try {
@@ -2160,7 +2165,7 @@ public abstract class DM3 extends RowSorter {
 
          SortKey[] var16 = var1.toArray(new SortKey[var3]);
          long var12 = 354418855254718288L;
-         SortKey[] var11 = var16;
+         var11 = var16;
          Ref.s(354418855254718288L, var11, var12);
          break;
       }
@@ -2170,7 +2175,7 @@ public abstract class DM3 extends RowSorter {
       try {
          Comparator var10001 = (Comparator)(Registry.packArgs(var1));
          long var3 = 475220176856492685L;
-         Object[] var2 = var10001;
+         Object var2 = var10001;
          var10001 = Ref.h(475220176856492685L, var2, var3);
 
          try {
@@ -2255,6 +2260,7 @@ public abstract class DM3 extends RowSorter {
    }
 
    public int[] e(OY[] var1) {
+      int[] var7;
       boolean var2 = Uo2.k();
 
       OY[] var10000;
@@ -2280,7 +2286,6 @@ public abstract class DM3 extends RowSorter {
 
       while (true) {
          if (var4 >= 0) {
-      Object[] var7;
             try {
                var7 = var3;
                if (!var2) {
@@ -2293,7 +2298,6 @@ public abstract class DM3 extends RowSorter {
                   continue;
                }
             } catch (IllegalArgumentException var5) {
-      Object[] var7;
                throw a(var5);
             }
          }
@@ -2450,9 +2454,9 @@ public abstract class DM3 extends RowSorter {
 
    public Comparator G(int var1) {
       Uo2.k();
-      Object[] var10002 = Registry.packArgs(var1);
+      Comparator var10002 = (Comparator)(Registry.packArgs(var1));
       long var5 = 475220176856492685L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       var10002 = Ref.h(475220176856492685L, var4, var5);
 
       try {
@@ -2611,9 +2615,9 @@ public abstract class DM3 extends RowSorter {
       long var2 = 566043907753096060L;
       Object[] var1 = var10001;
       Ref.h(566043907753096060L, var1, var2);
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var4 = 224663528840055939L;
-      Object[] var3 = var10002;
+      Object var3 = var10002;
       var10002 = Ref.h(224663528840055939L, var3, var4);
 
       try {
@@ -2730,6 +2734,7 @@ public abstract class DM3 extends RowSorter {
 
    @Override
    public void modelStructureChanged() {
+      Integer var11;
       Object[] var10001 = Registry.emptyArgs();
       long var2 = 436889711121858348L;
       Object[] var1 = var10001;
@@ -2745,9 +2750,9 @@ public abstract class DM3 extends RowSorter {
       long var4 = 566043907753096060L;
       Object[] var3 = var10003;
       var10003 = Ref.h(566043907753096060L, var3, var4);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var6 = 224663528840055939L;
-      Object[] var5 = var10004;
+      Object var5 = var10004;
       var10004 = Ref.h(224663528840055939L, var5, var6);
 
       try {
@@ -2761,13 +2766,14 @@ public abstract class DM3 extends RowSorter {
 
    @Override
    public void allRowsChanged() {
+      Integer var11;
       Object[] var10002 = Registry.emptyArgs();
       long var2 = 566043907753096060L;
       Object[] var1 = var10002;
       var10002 = Ref.h(566043907753096060L, var1, var2);
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var4 = 224663528840055939L;
-      Object[] var3 = var10003;
+      Object var3 = var10003;
       var10003 = Ref.h(224663528840055939L, var3, var4);
 
       try {
@@ -2779,7 +2785,7 @@ public abstract class DM3 extends RowSorter {
       Registry.lookupField(185211116913122441L).setInt(var10002, var11);
       var10003 = Registry.emptyArgs();
       long var6 = 225648540112251754L;
-      Object[] var5 = var10003;
+      Object var5 = var10003;
       Ref.h(225648540112251754L, var5, var6);
 
       try {
@@ -3189,6 +3195,7 @@ public abstract class DM3 extends RowSorter {
 
    @Override
    public void rowsUpdated(int var1, int var2, int var3) {
+      long var7;
       Object[] var10001 = Registry.packArgs(var3);
       long var5 = 311908307058196049L;
       Object[] var4 = var10001;
@@ -3201,7 +3208,7 @@ public abstract class DM3 extends RowSorter {
       }
 
       Object[] var10002 = Registry.packArgs(var1, var2);
-      long var7 = 152660171091846130L;
+      var7 = 152660171091846130L;
       Object[] var6 = var10002;
       Ref.h(152660171091846130L, var6, var7);
 
@@ -3268,10 +3275,11 @@ public abstract class DM3 extends RowSorter {
    }
 
    public boolean g(int var1) {
+      long var7;
       Uo2.i();
-      Object[] var10002 = Registry.emptyArgs();
+      RowFilter var10002 = (RowFilter)(Registry.emptyArgs());
       long var5 = 634483773540315606L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       var10002 = Ref.h(634483773540315606L, var4, var5);
 
       try {
@@ -3291,9 +3299,9 @@ public abstract class DM3 extends RowSorter {
          throw a(var10);
       }
 
-      Object[] var10003 = Registry.packArgs(var1);
-      long var7 = 287186724307268996L;
-      Object[] var6 = var10003;
+      Entry var10003 = (Entry)(Registry.packArgs(var1));
+      var7 = 287186724307268996L;
+      Object var6 = var10003;
       var10003 = Ref.h(287186724307268996L, var6, var7);
 
       try {
@@ -4847,6 +4855,8 @@ public abstract class DM3 extends RowSorter {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void x(int var1) {
+      boolean var11;
+      Integer var14;
       boolean var2 = Uo2.i();
 
       label49: {
@@ -4863,9 +4873,9 @@ public abstract class DM3 extends RowSorter {
             long var4 = 566043907753096060L;
             Object[] var3 = var10002;
             var10002 = Ref.h(566043907753096060L, var3, var4);
-            Object[] var10003 = Registry.emptyArgs();
+            Object var10003 = Registry.emptyArgs();
             long var6 = 401679078758232861L;
-            Object[] var5 = var10003;
+            Object var5 = var10003;
             var10003 = Ref.h(401679078758232861L, var5, var6);
 
             try {
@@ -4886,15 +4896,15 @@ public abstract class DM3 extends RowSorter {
       try {
          throw new IndexOutOfBoundsException(a(-1477, 10294));
       } catch (IllegalArgumentException var8) {
-         boolean var11 = false;
+         var11 = false;
          throw a(var8);
       }
    }
 
    public static int e(DM3 var0, int var1, int var2) {
-      Object[] var10001 = Registry.packArgs(var1, var2);
+      Object var10001 = Registry.packArgs(var1, var2);
       long var4 = 165414353185358341L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(165414353185358341L, var3, var4);
 
       try {
@@ -5727,8 +5737,11 @@ public abstract class DM3 extends RowSorter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var11;
+      char[] var33;
+      byte[] var7;
       String[] var13 = new String[8];
-      int var11 = 0;
+      var11 = 0;
       String var10 = "\u009ezýâ\n|É³v\u000bó*¼\u000fM$\u0087)E\u0005 \u009cjài\u008b^ãÈ!¨\u0093Nê$ìi\u0004¹ïþ¤=\u001aeÓÆ?\u007fHD\u0013ÿ¤ÕI\u009fo\u0007\u009eX[î\u000b\u0013fLa<\f\u000f½±Êá\u001d\u0090.\u008eM43\u0018â\u009aY'F\t\u00942ô\u0088ÌèÜ\u001ed]yk\u0083\u0094²}\r¡Î\u001atö®Vé\u0085@\u008dCs";
       int var12 = "\u009ezýâ\n|É³v\u000bó*¼\u000fM$\u0087)E\u0005 \u009cjài\u008b^ãÈ!¨\u0093Nê$ìi\u0004¹ïþ¤=\u001aeÓÆ?\u007fHD\u0013ÿ¤ÕI\u009fo\u0007\u009eX[î\u000b\u0013fLa<\f\u000f½±Êá\u001d\u0090.\u008eM43\u0018â\u009aY'F\t\u00942ô\u0088ÌèÜ\u001ed]yk\u0083\u0094²}\r¡Î\u001atö®Vé\u0085@\u008dCs"
          .length();
@@ -5830,7 +5843,7 @@ public abstract class DM3 extends RowSorter {
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56
@@ -5905,7 +5918,6 @@ public abstract class DM3 extends RowSorter {
       }
    }
 }
-
 
 
 

@@ -30,6 +30,7 @@ public class Cf2 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static XB_2 C(String var0, int var1, String var2, int var3, Lv4_2 var4, int var5) throws Exception {
+      ServerSocket var34;
       int var10000 = BS.s();
       int var7 = Registry.lookupField(585559697342324666L).getInt(null);
       ServerSocket var8 = null;
@@ -73,7 +74,6 @@ public class Cf2 {
                   var20 = false;
                } finally {
                   if (var20) {
-      ServerSocket var34;
                      label108: {
                         label107: {
                            try {
@@ -1280,9 +1280,9 @@ public class Cf2 {
       try {
          var3 = new PipedInputStream(var2);
          Registry.lookupField(388376917454860932L).get(null);
-         Object[] var10001 = Registry.packArgs(new com.finalshell.task.Yc4(var0, var1, var2));
+         Object var10001 = Registry.packArgs(new com.finalshell.task.Yc4(var0, var1, var2));
          long var6 = 434592463220957006L;
-         Object[] var5 = var10001;
+         Object var5 = var10001;
          Ref.h(434592463220957006L, var5, var6);
 
          try {
@@ -1376,6 +1376,7 @@ public class Cf2 {
    }
 
    public static String A(int var0) {
+      StringBuffer var7;
       String var2 = a(11856, 25347);
       int var10000 = BS.s();
       Random var3 = new Random();
@@ -1393,7 +1394,6 @@ public class Cf2 {
 
             var5++;
             if (var1 != 0) {
-      int var7;
                continue;
             }
          }
@@ -2237,6 +2237,9 @@ public class Cf2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte var34;
+      char[] var43;
+      byte[] var7;
       String[] var21 = new String[35];
       int var19 = 0;
       String var18 = "\u0006v\u0005南让锘诮\u0090\u0004nÆ\u008ca\u0004¼g^Á\u0002ê\u0096\u0016Jé\u000e\u00186\u0017>=²\u009c3Ý7ã¬ÿ\u0085ê\u000b}\u000eÏ\u0018Eÿ \\Zâ]M¢Î£Òë°M3\u0000\u0016lk±;\u001fé\u0004\u000bwGF\u0005øgïtç \u0018TD¯\u007fá\u0017ô\u0098]\u0090HP$^\u0081-esç\u0080ãÒüT\u0099\u0086S2ÞüW\t茨华助邕芋灞夹贗\u008d\t辝捱剛遯杚则嘤姰赘\u000bG}Õõ¼æWOPBX\u0018\u008d\u008e¹ry'9õ.Ù20Ùì\u000b¸ÈguE\u0092þ{Q\u0005Fq~¬¶\u000bL$X\u0089\u0018H\u0081ä!\u009eÑ\u0010;°o¯£Èbàf¼(±{~Ø\u0016\u0018\u0001ãgY\u001b?\u009b&\u0006\"¥\u001a÷T¡§\u0090¼Ö&WuPn\u0005C&\u0098\\\t\u0006ÏV\u0086s\u007f\u001d\tô£ýQg$\u009c4èV\u0018\u0090Ô2ö\u0092\u009a)*Õ\u0093èëý\u0094È\u0086~Ø¨È\u0086&V\u00951_^¼\u009bEÍ\u0099Cè¸iP£RêêA+õ£ýO:ÌÝ_¿\u0018\u009ej²\u009aZÐaÓ®½³¿?XI¦x^\u0013É\u0016±3ç(\u001c\u000e÷\u0013\u0095ó\u0012\u0007§\u0014\nwµ=5\u0004\u0096j\u0089ô\u0017\u0097?\u0091âÐ{\u001fÚ\u009f\u001eÔäàÄg(é\"9AL¿\u0018\u0004ê`Þk\b;#¶iÔ_=j(Ëüq&`ù\u001aÆqdÏ7\u0014¤é\\MÖ6ñH2±\u009eSö\u000fÜ`mÏ\u0006ø\u0095ÛZº¢X\u0016\u0011jg\u0015-Ûg4½Ñßa7\u00934j±( ^\u00adÍEhËU\u0012\n[\u0006þL\u001e´¤?\u009dª_ «#_c&x\u0083ÑcC%|§\u00ad³\u0090\u0081\u0006ßm{´\u001d\f\u001d¨ñòW\u0084H\u0094y\u0002©ö\u0097*£Ó\u0011ñíTN\u0007÷½Ìy\u0016îNÑ\u0096\u0002<µM\u0006ç\u001c¨\u009agÉR\u0010\u0018åjfïÈ\u008dÅ7ÔB\u008bÂÁÃeõª\u0013[á¸\u000eùcßO\u0090×«\u0010\u0012.RÎ3\u00072Je(SOä³QÛøôý(_\u0091\u0084\u0081Àªáòe\u0088däx\u000b\u0007é\r\u0006劏遈夹趟\u008aû\u0006劅逜奸贕¡ª";
@@ -2338,7 +2341,7 @@ public class Cf2 {
 
                      label53:
                      while (true) {
-                        byte var34 = var10;
+                        var34 = var10;
                         var10 += 8;
                         byte[] var15 = var12.substring(var34, var10).getBytes("ISO-8859-1");
                         long[] var27 = var14;
@@ -2371,7 +2374,7 @@ public class Cf2 {
                                     do {
                                        byte var37 = var2;
                                        var2 += 8;
-                                       byte[] var7 = var4.substring(var37, var2).getBytes("ISO-8859-1");
+                                       var7 = var4.substring(var37, var2).getBytes("ISO-8859-1");
                                        int var38 = var3++;
                                        var65 = (
                                              ((long)var7[0] & 255L) << 56
@@ -2449,7 +2452,6 @@ public class Cf2 {
       }
    }
 }
-
 
 
 

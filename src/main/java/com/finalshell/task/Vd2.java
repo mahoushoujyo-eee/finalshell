@@ -1,22 +1,23 @@
 package com.finalshell.task;
 
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.Refresh;
 import java.lang.reflect.InvocationTargetException;
 
 public class Vd2 implements Runnable {
-   public final Ty2 S;
+   public final RemoteProcessManager S;
    public final Refresh d;
 
-   public Vd2(Refresh var1, Ty2 var2) {
+   public Vd2(Refresh var1, RemoteProcessManager var2) {
       this.d = var1;
       this.S = var2;
    }
 
    @Override
    public void run() {
+      Long var19;
       int[] var1 = Refresh.K();
       if (var1 != null) {
          Object var2 = 202071010499428846L;
@@ -25,9 +26,9 @@ public class Vd2 implements Runnable {
          long var5 = 121632250293569146L;
          Object[] var4 = var10002;
          Ref.h(121632250293569146L, var4, var5);
-         Object[] var10003 = Registry.emptyArgs();
+         Object var10003 = Registry.emptyArgs();
          long var7 = 209547680018014679L;
-         Object[] var6 = var10003;
+         Object var6 = var10003;
          var10003 = Ref.h(209547680018014679L, var6, var7);
 
          try {

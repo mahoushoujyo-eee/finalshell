@@ -24,6 +24,7 @@ public class PO implements EU {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
    public void z(int var1, byte[] var2, byte[] var3) throws Exception {
+      Exception var13;
       boolean var10000 = Y12.Q();
       String var5 = a(23885, 17876);
       boolean var4 = var10000;
@@ -51,7 +52,6 @@ public class PO implements EU {
             try {
                this.F = Cipher.getInstance(a(23887, -21547));
             } catch (Exception var10) {
-      String var13;
                var13 = var10;
                boolean var10001 = false;
                break label52;
@@ -88,7 +88,6 @@ public class PO implements EU {
             var14.init(var16, var12);
             return;
          } catch (Exception var9) {
-      char var13;
             var13 = var9;
             boolean var15 = false;
          }
@@ -932,7 +931,8 @@ public class PO implements EU {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var13 = new String[3];
+      String[] var13;
+      var13 = new String[3];
       int var11 = 0;
       String var10 = "$v\u0003\u0003Ãùÿ\t2ñ:æx$\u0086æ©";
       int var12 = "$v\u0003\u0003Ãùÿ\t2ñ:æx$\u0086æ©".length();

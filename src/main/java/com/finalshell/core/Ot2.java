@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 
 public class Ot2 {
    public static String[] a;
@@ -12,7 +12,7 @@ public class Ot2 {
 
    public static boolean q(String var0, String var1) {
       var1 = var1.trim();
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       var0 = var0.trim();
       int var3 = var1.indexOf(a(29369, 5790876427589325845L));
       String var4 = var1.substring(0, var3);
@@ -42,7 +42,7 @@ public class Ot2 {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static long E(String var0) {
       var0 = var0.trim();
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       String[] var2 = var0.split(a(27225, -9385));
       long var3 = 0L;
       String[] var1 = var10000;
@@ -914,6 +914,7 @@ public class Ot2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var40;
       String[] var21 = new String[4];
       int var19 = 0;
       String var18 = "\u0010\u000e\u0002uÌ";
@@ -928,7 +929,6 @@ public class Ot2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var40;
             label66: {
                char[] var44 = var10001.toCharArray();
                int var10004 = var44.length;

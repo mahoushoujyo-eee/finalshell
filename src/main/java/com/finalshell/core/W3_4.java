@@ -511,6 +511,7 @@ public abstract class W3_4 extends ClassLoader {
    }
 
    public static File[] F(String var0) {
+      ArrayList var4;
       ArrayList var2 = new ArrayList();
       Ky4[] var10000 = D22_2.b();
       StringTokenizer var3 = new StringTokenizer(var0, File.pathSeparator);
@@ -518,7 +519,6 @@ public abstract class W3_4 extends ClassLoader {
 
       while (true) {
          if (var3.hasMoreTokens()) {
-      Ky4[] var4;
             var4 = var2;
             if (var1 == null) {
                break;
@@ -526,7 +526,6 @@ public abstract class W3_4 extends ClassLoader {
 
             var2.add(new File(var3.nextToken()));
             if (var1 != null) {
-      Ky4[] var4;
                continue;
             }
          }
@@ -547,6 +546,7 @@ public abstract class W3_4 extends ClassLoader {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 16058) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1321,7 +1321,7 @@ public abstract class W3_4 extends ClassLoader {
                var10000 = 0;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -1352,11 +1352,13 @@ public abstract class W3_4 extends ClassLoader {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
+      boolean var4;
       String[] var5 = new String[27];
       int var3 = 0;
       String var2 = "%Sá\u008fé¶Å£\u0000^\n\u0091d¯äÆ\u000eW\nÀ\u0000þ\u001e\u0016ÆG8\\\u0014\u0094(õú%\u000b´%0-*\u001b\u0002Ã\u009c3W\u000eÝ\u001c¼J\u001dÌ¡2I\t%ô\u001bC\u0007\u0098ÏàýÒt£\u000b\u0082ç\tV6:Ï\r§\\\u008c\u0006³*_T\u008fÕ\u0007\u008a\u0014Zñ©\u0005\u0014\u0005«4Ùn^6\u00124\u0007c5)\u0010Qro«5w¼5çã\u0019¤!\u008eÿ¡ºÑ\u008f8\u008c\u0099$Þ´¯ØÃ\u001e¤ÊTD\t×t2\u0086\u001bî\u0080àL\u008a\u0082\u0092@\u0004\u0090$úFM\u009cFvÏ,7òuµªðÌÖ¯¡hþ¤m\u0000\u008dâº@¸ìTM}=F\f=\u00048\u0015A/\u001aÞceãïç#ie\u009aPK»Ñà¯P\t\u0086¶(Þ/Î{\u0019\u008fW,BSN[\u0085´\u0018ã>&\u0004d,\u0000ñ\n\fÖÝ\u0005¾ø0\u0093é6éÉNæ0k\u0082\u0094èl¶r\u0093\u001bl?1iÓ«9Ã\u0005è\u0080ÓÐv\u0016(wÛJ\t\u0002Â¾ú\u007f!vëúëÍ\u0082ö1E± \u0002b·<w>«\" \u0001¸\u000fmÛ$W:\u00ad»döâ#\u008a\u009fåO76{ýä!)É\u0015Mì\u009f\u0098!\u0018+\u0005¢\u009bÀw¾ï¦º@45{¥V\u0091W\u000fÔ\u0082·\u0003YäØ\u0006\u0013\u001a½ØC¬\u001d\b7VÅÂ\u009aÃè\u0087\u0017sÑÉ\u008aÏ¦<xÔ(\u0007|À8îNñu` \u008a;·gb\u0084ÀqQ\u001c\u008e\u0091ÿÌ\u008e mÔ§yi-\u000fg\u001cD\u008c\u0098£n\u008cï\u0011½\u0088òô\u008bÏ\u0088N\u00950\n¥ï \u0007ºø5÷à»ù¢zøuy\")\u001bÊy\u0082_\u0015\u000ezÃU£Ú1¾þÕ¢$ái\fYÏ\u001düp\u0095l\u0088Ê\u0085:\u008dº²nsPS4\t«\u0004²lÝR\u0007\u0001\n/åh\u0096\u008b)°ßS2ý\u008bW¹\u000b\\<Ô\u0005\u0080\u0091#¤ëÚEu\u00043\u000f¯Ã\u001aä\u0098À\u00170\u0014IzH\u0095õÎ¸[";
-      int var4 = "%Sá\u008fé¶Å£\u0000^\n\u0091d¯äÆ\u000eW\nÀ\u0000þ\u001e\u0016ÆG8\\\u0014\u0094(õú%\u000b´%0-*\u001b\u0002Ã\u009c3W\u000eÝ\u001c¼J\u001dÌ¡2I\t%ô\u001bC\u0007\u0098ÏàýÒt£\u000b\u0082ç\tV6:Ï\r§\\\u008c\u0006³*_T\u008fÕ\u0007\u008a\u0014Zñ©\u0005\u0014\u0005«4Ùn^6\u00124\u0007c5)\u0010Qro«5w¼5çã\u0019¤!\u008eÿ¡ºÑ\u008f8\u008c\u0099$Þ´¯ØÃ\u001e¤ÊTD\t×t2\u0086\u001bî\u0080àL\u008a\u0082\u0092@\u0004\u0090$úFM\u009cFvÏ,7òuµªðÌÖ¯¡hþ¤m\u0000\u008dâº@¸ìTM}=F\f=\u00048\u0015A/\u001aÞceãïç#ie\u009aPK»Ñà¯P\t\u0086¶(Þ/Î{\u0019\u008fW,BSN[\u0085´\u0018ã>&\u0004d,\u0000ñ\n\fÖÝ\u0005¾ø0\u0093é6éÉNæ0k\u0082\u0094èl¶r\u0093\u001bl?1iÓ«9Ã\u0005è\u0080ÓÐv\u0016(wÛJ\t\u0002Â¾ú\u007f!vëúëÍ\u0082ö1E± \u0002b·<w>«\" \u0001¸\u000fmÛ$W:\u00ad»döâ#\u008a\u009fåO76{ýä!)É\u0015Mì\u009f\u0098!\u0018+\u0005¢\u009bÀw¾ï¦º@45{¥V\u0091W\u000fÔ\u0082·\u0003YäØ\u0006\u0013\u001a½ØC¬\u001d\b7VÅÂ\u009aÃè\u0087\u0017sÑÉ\u008aÏ¦<xÔ(\u0007|À8îNñu` \u008a;·gb\u0084ÀqQ\u001c\u008e\u0091ÿÌ\u008e mÔ§yi-\u000fg\u001cD\u008c\u0098£n\u008cï\u0011½\u0088òô\u008bÏ\u0088N\u00950\n¥ï \u0007ºø5÷à»ù¢zøuy\")\u001bÊy\u0082_\u0015\u000ezÃU£Ú1¾þÕ¢$ái\fYÏ\u001düp\u0095l\u0088Ê\u0085:\u008dº²nsPS4\t«\u0004²lÝR\u0007\u0001\n/åh\u0096\u008b)°ßS2ý\u008bW¹\u000b\\<Ô\u0005\u0080\u0091#¤ëÚEu\u00043\u000f¯Ã\u001aä\u0098À\u00170\u0014IzH\u0095õÎ¸["
-         .length();
+      var4 = "%Sá\u008fé¶Å£\u0000^\n\u0091d¯äÆ\u000eW\nÀ\u0000þ\u001e\u0016ÆG8\\\u0014\u0094(õú%\u000b´%0-*\u001b\u0002Ã\u009c3W\u000eÝ\u001c¼J\u001dÌ¡2I\t%ô\u001bC\u0007\u0098ÏàýÒt£\u000b\u0082ç\tV6:Ï\r§\\\u008c\u0006³*_T\u008fÕ\u0007\u008a\u0014Zñ©\u0005\u0014\u0005«4Ùn^6\u00124\u0007c5)\u0010Qro«5w¼5çã\u0019¤!\u008eÿ¡ºÑ\u008f8\u008c\u0099$Þ´¯ØÃ\u001e¤ÊTD\t×t2\u0086\u001bî\u0080àL\u008a\u0082\u0092@\u0004\u0090$úFM\u009cFvÏ,7òuµªðÌÖ¯¡hþ¤m\u0000\u008dâº@¸ìTM}=F\f=\u00048\u0015A/\u001aÞceãïç#ie\u009aPK»Ñà¯P\t\u0086¶(Þ/Î{\u0019\u008fW,BSN[\u0085´\u0018ã>&\u0004d,\u0000ñ\n\fÖÝ\u0005¾ø0\u0093é6éÉNæ0k\u0082\u0094èl¶r\u0093\u001bl?1iÓ«9Ã\u0005è\u0080ÓÐv\u0016(wÛJ\t\u0002Â¾ú\u007f!vëúëÍ\u0082ö1E± \u0002b·<w>«\" \u0001¸\u000fmÛ$W:\u00ad»döâ#\u008a\u009fåO76{ýä!)É\u0015Mì\u009f\u0098!\u0018+\u0005¢\u009bÀw¾ï¦º@45{¥V\u0091W\u000fÔ\u0082·\u0003YäØ\u0006\u0013\u001a½ØC¬\u001d\b7VÅÂ\u009aÃè\u0087\u0017sÑÉ\u008aÏ¦<xÔ(\u0007|À8îNñu` \u008a;·gb\u0084ÀqQ\u001c\u008e\u0091ÿÌ\u008e mÔ§yi-\u000fg\u001cD\u008c\u0098£n\u008cï\u0011½\u0088òô\u008bÏ\u0088N\u00950\n¥ï \u0007ºø5÷à»ù¢zøuy\")\u001bÊy\u0082_\u0015\u000ezÃU£Ú1¾þÕ¢$ái\fYÏ\u001düp\u0095l\u0088Ê\u0085:\u008dº²nsPS4\t«\u0004²lÝR\u0007\u0001\n/åh\u0096\u008b)°ßS2ý\u008bW¹\u000b\\<Ô\u0005\u0080\u0091#¤ëÚEu\u00043\u000f¯Ã\u001aä\u0098À\u00170\u0014IzH\u0095õÎ¸[";
+         // [VF] .length();
       char var1 = '"';
       int var8 = -1;
 
@@ -1469,7 +1471,6 @@ public abstract class W3_4 extends ClassLoader {
       }
    }
 }
-
 
 
 

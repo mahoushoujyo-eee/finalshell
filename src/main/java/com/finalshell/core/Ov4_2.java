@@ -57,6 +57,7 @@ public class Ov4_2 {
    }
 
    public static boolean m(Collection[] var0) {
+      boolean var6;
       int var10000 = D5.e();
       Collection[] var2 = var0;
       int var1 = var10000;
@@ -92,6 +93,7 @@ public class Ov4_2 {
    }
 
    public static boolean j(String[] var0) {
+      boolean var6;
       String[] var2 = var0;
       int var3 = var0.length;
       int var10000 = D5.e();
@@ -127,6 +129,7 @@ public class Ov4_2 {
    }
 
    public static boolean y(Collection[] var0) {
+      boolean var6;
       int var10000 = D5.K();
       Collection[] var2 = var0;
       int var1 = var10000;
@@ -162,6 +165,7 @@ public class Ov4_2 {
    }
 
    public static boolean l(String[] var0) {
+      boolean var6;
       int var10000 = D5.e();
       String[] var2 = var0;
       int var3 = var0.length;

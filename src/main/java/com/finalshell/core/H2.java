@@ -21,7 +21,7 @@ public abstract class H2 implements Wr4 {
       NL3 var4 = (NL3)d.get();
       String var3 = var10000;
       char var5 = (Character)H.get();
-      byte var6 = (var4.S(var2)) ? 1 : 0;
+      byte var6 = (byte)((var4.S(var2)) ? 1 : 0);
       var4.A(var5, var1, var2);
       char var7 = (char)var6;
       if (var3 != null) {

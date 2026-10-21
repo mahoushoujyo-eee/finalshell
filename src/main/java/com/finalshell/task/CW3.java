@@ -3,14 +3,14 @@ package com.finalshell.task;
 import com.finalshell.core.Yo4;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class CW3 implements Runnable {
-   public final Connection5 Y;
+   public final ImportExportPanel Y;
 
-   public CW3(Connection5 var1) {
+   public CW3(ImportExportPanel var1) {
       this.Y = var1;
    }
 

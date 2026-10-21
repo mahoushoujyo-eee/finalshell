@@ -57,6 +57,7 @@ public class Um4 {
    }
 
    public void P() {
+      Integer var30;
       Object var4 = 403408974200984766L;
       Registry.packArgs(
          Ref.g(403408974200984766L, var4),
@@ -1132,6 +1133,7 @@ public class Um4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var32;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "ö÷¡M¤>¾·8\u0084\u0001Î\u0087Åj¦© \u0003T~¸\u0005\u0001\u0096³dþýÝ\u0085:Uåu%\u0015ÒÎ©n{\u0096m\u00827»\u000b|\"\u0007ãd+^Ç&à";
@@ -1146,7 +1148,6 @@ public class Um4 {
          int var10002 = -1;
 
          while (true) {
-      char[] var32;
             label73: {
                char[] var38 = var10001.toCharArray();
                int var10004 = var38.length;

@@ -929,6 +929,7 @@ public class Is2 {
    }
 
    public void e(byte[] var1, byte[] var2, byte[] var3) {
+      int var14;
       String[] var10000 = v();
       this.S();
       this.F(var2, var1);
@@ -1002,6 +1003,8 @@ public class Is2 {
    }
 
    public void p(byte[] var1, byte[] var2, int var3, byte[] var4) {
+      int var14;
+      int var23;
       String[] var5 = v();
 
       try {
@@ -1035,7 +1038,7 @@ public class Is2 {
                   return;
                }
 
-               int var14 = 1;
+               var14 = 1;
 
                while (true) {
                   if (var14 < var3) {
@@ -2644,6 +2647,8 @@ public class Is2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int[] var23;
+      char[] var39;
       String[] var13 = new String[12];
       int var11 = 0;
       String var10 = "&W?¿c,\u000f\b\u0091ÈãH´\u0006z^\u0093\u001fÏ¹\u0004Wè¾u\u0002¢ý\u0014Ú\u001cØyÍ\u0081\u0091`|ÜÆ \u00935\u0007¹ÏZ\u0089ë\u000bÑv¹4á(\u0014UÓ~Í\u000fQ1©Üã5TöÚ\u000eÛáêvæ\u001bÅWd>1\u009dCÿáÀ\u0016på\u0019@\u0086ØP=\u009a;ÊI$\u0006\u009b6\u0015¢Ç×\u0002,î\u00ad\u008dûa6\u0017\u008dÇÄg\u00ad\u001f\u009a\u001bÔ\u0013\u0086²ÒY,Ò\u000bíLmÀ\u0096S÷\u0015bÛË©\u000f\u001d¨X@\u0092Ç\u008eõÅ½Á:\u001c=T";
@@ -2660,7 +2665,6 @@ public class Is2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var39;
             label65: {
                char[] var45 = var10001.toCharArray();
                int var10004 = var45.length;
@@ -3827,7 +3831,7 @@ public class Is2 {
                                     var22[a(7762, 8093914750412259218L)] = a(17755, 1291936409410347914L);
                                     var22[a(3776, 7167941811917318226L)] = a(5707, 543716479989183741L);
                                     b = var22;
-                                    int[] var23 = new int[a(7762, 8093914750412259218L)];
+                                    var23 = new int[a(7762, 8093914750412259218L)];
                                     var23[0] = a(29603, 2953260519865390232L);
                                     var23[1] = a(22388, 1966536229166691638L);
                                     var23[2] = a(25084, 1852411917198885380L);

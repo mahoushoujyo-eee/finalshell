@@ -18,9 +18,11 @@ public class Cy4 extends JComponent {
 
    @Override
    public void paintComponent(Graphics var1) {
+      int var10;
+      int var11;
       super.paintComponent(var1);
       String var10000 = SZ.L();
-      byte var3 = (this.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      byte var3 = (byte)((this.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       String var2 = var10000;
       int var7 = (this.W.equals(a(-5446, -8351))) ? 1 : 0;
       if (var2 == null) {

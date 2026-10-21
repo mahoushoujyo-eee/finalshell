@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.connection.Mapping;
+import com.finalshell.connection.PortMapping;
 import com.finalshell.core.Ty4;
 import com.finalshell.core.YT3_2;
 import com.finalshell.reflect.Ref;
@@ -19,9 +19,9 @@ public class BT3 implements Runnable {
    public void run() {
       Object var1 = 500337766327596840L;
       Ref.g(500337766327596840L, var1);
-      Mapping var10002 = new Mapping();
+      PortMapping var10002 = new PortMapping();
       long var4 = 271302278039639994L;
-      Mapping var3 = var10002;
+      PortMapping var3 = var10002;
       Ref.s(271302278039639994L, var3, var4);
       Object var5 = 500337766327596840L;
       Ref.g(500337766327596840L, var5);

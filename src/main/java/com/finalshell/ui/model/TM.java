@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public final class TM {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -881,6 +881,7 @@ public final class TM {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[13];
       int var11 = 0;
       String var10 = "o\u008fG'\u0081Ð¤\u0094<Ó\bGÆô\u00ad¦9bc\n®O{#©÷íUU³\u0004\u0091O\u0098?\u0005v\u008a\bî\u009f\u0004ÌåC\t\n\u0004²FéV\u001dGç\u0086\u009d\u000b5ï\f+éJ\u009c¹\u009c½®\u0004\u001d}.Û\u0005ÏÛáD\u0089\u0006æÄYeÏ£";
@@ -896,7 +897,6 @@ public final class TM {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

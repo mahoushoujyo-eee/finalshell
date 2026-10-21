@@ -26,7 +26,7 @@ public class XE_2 implements Bk2 {
    public Bk2 U;
    public Channel D;
    public Yu2 w = new Yu2();
-   public BA Q;
+   public PingClientHandler Q;
    public ArrayList h;
    public HashMap u;
    public VD q;
@@ -68,7 +68,7 @@ public class XE_2 implements Bk2 {
 
    public void c() {
       ChannelFuture var1 = c.connect(this.d, this.P);
-      var1.addListener(new CI(this)).channel().<XE_2>attr(BA.i).set(this);
+      var1.addListener(new CI(this)).channel().<XE_2>attr(PingClientHandler.i).set(this);
       this.D = var1.channel();
    }
 
@@ -791,6 +791,7 @@ public class XE_2 implements Bk2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[12];
       int var5 = 0;
       String var4 = "\u009e\u0016Ö1\u0011b¦\u0013f\f\u0089w¤Vâàæ\u0018¯ÞSÙ¶å°üÐ\u000e\u008aoË\u0015\u0087Ü\u008c¶\u007f\u0013Ðü\u001c\u0086\tµ°ÍùÁª}\u0093\u0018\u0003\n\u0007\u001d\u000etÉ¹Y\u0095ª@{®¢£/\u000bë\tk+\u0016\u008aºÄ\u0012^õ\u000emö\u009a¾ñVÌä?Q\u0091QM$\u000b\u0002c;\u0083\u001få¦\u007fni\u00ad\u000b1n]\"ÓÑ?üZ©×";
@@ -807,7 +808,6 @@ public class XE_2 implements Bk2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

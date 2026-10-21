@@ -3,25 +3,25 @@ package com.finalshell.ui.listener;
 import com.finalshell.core.T32;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Copy3;
+import com.finalshell.ui.panel.CommandListPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class ConfirmDeleteCommandListener implements ActionListener {
-   public final Copy3 v;
+   public final CommandListPanel v;
    public static String[] a;
    public static String[] b;
 
-   public ConfirmDeleteCommandListener(Copy3 var1) {
+   public ConfirmDeleteCommandListener(CommandListPanel var1) {
       this.v = var1;
    }
 
    @Override
    public void actionPerformed(ActionEvent var1) {
       Object var4 = 551263298820768816L;
-      int var2 = JOptionPane.showConfirmDialog((Copy3)Ref.g(551263298820768816L, var4), a(-7052, -12883), a(-7051, -5260), 2);
+      int var2 = JOptionPane.showConfirmDialog((CommandListPanel)Ref.g(551263298820768816L, var4), a(-7052, -12883), a(-7051, -5260), 2);
       if (var2 == 0) {
          Object var6 = 551263298820768816L;
          Ref.g(551263298820768816L, var6);
@@ -29,7 +29,7 @@ public class ConfirmDeleteCommandListener implements ActionListener {
          Ref.g(601657008259262484L, var8);
          T32 var10004 = (T32)(Registry.emptyArgs());
          long var11 = 194560825135347400L;
-         Object[] var10 = var10004;
+         Object var10 = var10004;
          var10004 = Ref.h(194560825135347400L, var10, var11);
 
          try {

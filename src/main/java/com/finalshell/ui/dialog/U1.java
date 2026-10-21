@@ -2,7 +2,7 @@ package com.finalshell.ui.dialog;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.panel.ConnectionProperty;
 import com.finalshell.ui.panel.ExitFullScreenPanel;
 import com.finalshell.ui.panel.Ky4;
@@ -21,8 +21,9 @@ public class U1 extends JDialog {
    public static String[] b;
    public static String[] c;
 
-   public U1(U var1) {
+   public U1(MainFrame var1) {
       super((Frame)var1);
+      boolean var13;
       String[] var10000 = g();
       Registry.lookupField(457774730589572044L).setBoolean(this, false);
       String[] var2 = var10000;
@@ -85,6 +86,7 @@ public class U1 extends JDialog {
    }
 
    public void r(ConnectionProperty var1) {
+      boolean var16;
       String[] var10000 = g();
       this.setVisible(true);
       String[] var2 = var10000;
@@ -965,6 +967,7 @@ public class U1 extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var21;
       String[] var5 = new String[5];
       int var3 = 0;
       String[] var10000 = new String[3];
@@ -982,7 +985,6 @@ public class U1 extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      char[] var21;
             label47: {
                char[] var25 = var10001.toCharArray();
                int var10004 = var25.length;

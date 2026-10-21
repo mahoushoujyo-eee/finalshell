@@ -1,7 +1,7 @@
 package com.finalshell.task;
 
 import com.finalshell.connection.Connection7;
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -20,7 +20,8 @@ public class ReadDoneTask2 extends Thread {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
    public void run() {
-      String[] var10000 = PingMessageR.N();
+      IOException var9;
+      String[] var10000 = PingMessageReceiver.N();
       byte[] var2 = new byte[(int)c];
       int var3 = 0;
       String[] var1 = var10000;
@@ -37,7 +38,6 @@ public class ReadDoneTask2 extends Thread {
                      break label33;
                   }
                } catch (IOException var8) {
-      int var9;
                   var9 = var8;
                   boolean var10001 = false;
                   break label34;
@@ -60,7 +60,6 @@ public class ReadDoneTask2 extends Thread {
                System.out.println(a(-24767, 31530) + var3 + a(-24766, 29032) + var4);
                continue;
             } catch (IOException var7) {
-      String[] var9;
                var9 = var7;
                boolean var10 = false;
             }

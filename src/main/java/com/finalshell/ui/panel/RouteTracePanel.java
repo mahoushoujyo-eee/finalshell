@@ -40,6 +40,7 @@ public class RouteTracePanel extends JPanel {
 
    public RouteTracePanel(String var1, F5 var2) {
    super(this, (String)Ref.g(515268954690772930L, var1));
+   DR var33;
       long var12 = 515268954690772930L;
       Ref.s(515268954690772930L, var1, var12);
       long var14 = 185868897793230818L;
@@ -55,11 +56,11 @@ public class RouteTracePanel extends JPanel {
       var10006 = Ref.h(399585344452154517L, var17, var18);
       RouteTracePanel var10007 = Registry.emptyArgs();
       long var20 = 149968465491171480L;
-      Object[] var19 = var10007;
+      Object var19 = var10007;
       var10007 = (RouteTracePanel)Ref.h(149968465491171480L, var19, var20);
       Color var10008 = (Color)(Registry.emptyArgs());
       long var22 = 345089686683358688L;
-      Object[] var21 = var10008;
+      Object var21 = var10008;
       var10008 = Ref.h(345089686683358688L, var21, var22);
 
       try {
@@ -94,7 +95,7 @@ public class RouteTracePanel extends JPanel {
       ((UA3)Ref.g(266946451169580014L, var29)).addMouseListener(new O52(this, var2, var6, var5, var4));
       JScrollPane var10011;
       Object var31 = 266946451169580014L;
-      super((UA3)Ref.g(266946451169580014L, var31));
+      // [VF-super] super((UA3)Ref.g(266946451169580014L, var31));
       JScrollPane var8 = var10011;
       this.add(var8, a(-8018, -26478));
       var8.setBackground(Color.blue);
@@ -104,7 +105,7 @@ public class RouteTracePanel extends JPanel {
       var8.addMouseListener(new CI3(this));
       DR var10012 = new DR();
       long var34 = 434008521855552520L;
-      DR var33 = var10012;
+      var33 = var10012;
       Ref.s(434008521855552520L, var33, var34);
       L9 var9 = new L9();
       ArrayList var10 = new ArrayList();
@@ -263,7 +264,7 @@ public class RouteTracePanel extends JPanel {
       Ref.g(498715864659540734L, var2);
       ArrayList var10002 = (ArrayList)(Registry.emptyArgs());
       long var5 = 287584207520852054L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       var10002 = Ref.h(287584207520852054L, var4, var5);
 
       try {
@@ -1116,6 +1117,7 @@ public class RouteTracePanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var15 = new String[8];
       int var13 = 0;
       String var12 = "Hð\u008b\u001bx\u0004跟痢辖軉\u001dÔfåT^I\u0085åþ\u0019qG;ïï²³òºk¹ñô©{pp\u0019Û\u0004夼勶àÖ\u000fr\"û*tæE(¯\u0081YT6\u009d\u001b\u0005姺勞乊枹呺";
@@ -1131,7 +1133,6 @@ public class RouteTracePanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      long var33;
             label56: {
                char[] var38 = var10001.toCharArray();
                int var10004 = var38.length;

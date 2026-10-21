@@ -1024,6 +1024,8 @@ public abstract class Nk2_3 extends Fr2_2 implements FW_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var11;
+      char[] var22;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "è\u009f[)Kéúj\u0018ñ\u0089ª\u0090¸¨\u0004·bõ\u009f";
@@ -1038,7 +1040,6 @@ public abstract class Nk2_3 extends Fr2_2 implements FW_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var22;
             label62: {
                char[] var26 = var10001.toCharArray();
                int var10004 = var26.length;

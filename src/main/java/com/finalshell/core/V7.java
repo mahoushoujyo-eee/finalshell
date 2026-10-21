@@ -16,6 +16,10 @@ public class V7 {
    public static String[] b;
 
    public static void d(Oc2 var0) {
+      long var20;
+      Object[] var24;
+      Object[] var26;
+      boolean var40;
       Registry.packArgs(var0);
       long var8 = 309393706086347748L;
       Object var10001 = Ref.h2(309393706086347748L, var8);
@@ -37,7 +41,7 @@ public class V7 {
       var10004 = Ref.h(306266403902896148L, var12, var13);
       ArrayList var10005 = (ArrayList)(Registry.emptyArgs());
       long var15 = 401275417195122293L;
-      Object[] var14 = var10005;
+      Object var14 = var10005;
       var10005 = Ref.h(401275417195122293L, var14, var15);
 
       try {
@@ -91,7 +95,7 @@ public class V7 {
          }
 
          Registry.packArgs(var5);
-         long var20 = 281009066630120083L;
+         var20 = 281009066630120083L;
          Ref.h2(281009066630120083L, var20);
 
          try {
@@ -105,11 +109,11 @@ public class V7 {
          Ref.h2(270389152141252877L, var22);
          Object[] var10008 = Registry.emptyArgs();
          long var25 = 306266403902896148L;
-         Object[] var24 = var10008;
+         var24 = var10008;
          Ref.h(306266403902896148L, var24, var25);
          Object[] var10009 = Registry.packArgs(var5);
          long var27 = 475770670235303350L;
-         Object[] var26 = var10009;
+         var26 = var10009;
          Ref.h(475770670235303350L, var26, var27);
 
          try {
@@ -208,7 +212,6 @@ public class V7 {
             var2.add(var5);
             var3++;
             if (var1 != 0) {
-      ArrayList var24;
                continue;
             }
          }
@@ -221,6 +224,8 @@ public class V7 {
    }
 
    public static Oc2 F(ArrayList var0) {
+      Integer var26;
+      Integer var32;
       int var10000 = LD3_2.v();
       Oc2 var2 = new Oc2();
       int var1 = var10000;
@@ -232,9 +237,9 @@ public class V7 {
             O0 var5 = new O0();
             var24 = var5;
             String var10001 = a(18528, -18756);
-            Object[] var10003 = Registry.emptyArgs();
+            Object var10003 = Registry.emptyArgs();
             long var7 = 562951426394330328L;
-            Object[] var6 = var10003;
+            Object var6 = var10003;
             var10003 = Ref.h(562951426394330328L, var6, var7);
 
             try {
@@ -245,9 +250,9 @@ public class V7 {
 
             var10001.C(var4, var26);
             String var10002 = a(18537, 30177);
-            Object[] var10004 = Registry.emptyArgs();
+            Object var10004 = Registry.emptyArgs();
             long var9 = 531355023953548464L;
-            Object[] var8 = var10004;
+            Object var8 = var10004;
             var10004 = Ref.h(531355023953548464L, var8, var9);
 
             try {
@@ -258,9 +263,9 @@ public class V7 {
 
             var10002.C(var4, var10004);
             String var27 = a(18530, 23914);
-            Object[] var10005 = Registry.emptyArgs();
+            Object var10005 = Registry.emptyArgs();
             long var11 = 511476850441845458L;
-            Object[] var10 = var10005;
+            Object var10 = var10005;
             var10005 = Ref.h(511476850441845458L, var10, var11);
 
             try {
@@ -271,9 +276,9 @@ public class V7 {
 
             var27.C(var4, var32);
             String var30 = a(18531, -12359);
-            Object[] var10006 = Registry.emptyArgs();
+            Object var10006 = Registry.emptyArgs();
             long var13 = 562777604625200665L;
-            Object[] var12 = var10006;
+            Object var12 = var10006;
             var10006 = Ref.h(562777604625200665L, var12, var13);
 
             try {
@@ -284,9 +289,9 @@ public class V7 {
 
             var30.C(var4, var10006);
             String var33 = a(18533, -25501);
-            Object[] var10007 = Registry.emptyArgs();
+            Object var10007 = Registry.emptyArgs();
             long var15 = 465224899237569377L;
-            Object[] var14 = var10007;
+            Object var14 = var10007;
             var10007 = Ref.h(465224899237569377L, var14, var15);
 
             try {
@@ -1133,6 +1138,8 @@ public class V7 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
+      byte var32;
       String[] var5 = new String[10];
       int var3 = 0;
       String var2 = "î\u008bÆ»\u0004]\u008a6^\u0004F8U\b\t\u0001\u001f\u000fu$9Læ_\u0004k\u008dv{\b6\u001cZDr?¸\u000e\t&«ëã¸ëß¼-\u00042EÁ§";
@@ -1154,7 +1161,6 @@ public class V7 {
                byte var27 = var10000;
                var20 = var24;
                int var14 = var10004;
-               byte var32;
                char[] var36;
                int var10006;
                if (var10004 <= 1) {
@@ -1249,7 +1255,6 @@ public class V7 {
       }
    }
 }
-
 
 
 

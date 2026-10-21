@@ -33,6 +33,7 @@ public class C_4_2 implements Transferable {
 
    @Override
    public boolean isDataFlavorSupported(DataFlavor var1) {
+      boolean var7;
       DataFlavor[] var3 = U;
       int var4 = var3.length;
       int var10000 = NV_2.b();

@@ -25,7 +25,7 @@ public class Ma2 extends JTree implements Autoscroll {
    public void autoscroll(Point var1) {
       int var7;
       label34: {
-         int[] var10000 = Connection4.I();
+         int[] var10000 = ConnectionInfoPanel.I();
          int var3 = this.getRowForLocation(var1.x, var1.y);
          int[] var2 = var10000;
          Rectangle var4 = this.getBounds();

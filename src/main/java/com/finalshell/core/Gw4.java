@@ -94,7 +94,7 @@ public class Gw4 extends Gy4 {
          var10001 = var3;
       }
 
-      return (boolean)(var10000 <= var10001 ? 1 : 0);
+      return ((var10000 <= var10001 ? 1 : 0) != 0);
    }
 
    @Override

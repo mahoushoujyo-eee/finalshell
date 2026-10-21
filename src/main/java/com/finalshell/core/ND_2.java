@@ -15,6 +15,7 @@ public class ND_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void X(Bc2 var1) {
+      A6 var12;
       B22 var3 = new B22();
       Ky4[] var10000 = A6.P();
       var3.t = 0;

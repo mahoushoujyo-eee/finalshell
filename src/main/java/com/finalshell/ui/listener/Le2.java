@@ -33,6 +33,8 @@ public class Le2 implements MouseListener {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      Integer var95;
+      Integer var98;
       boolean var2;
       boolean var4;
       Le2 var10004;
@@ -43,7 +45,7 @@ public class Le2 implements MouseListener {
             label197: {
                int var10000 = (Uo2.k()) ? 1 : 0;
                var3 = true;
-               var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+               var2 = (var10000) != 0;
                var4 = true;
                Le2 var83 = var1.getButton();
                if (var2) {
@@ -90,7 +92,7 @@ public class Le2 implements MouseListener {
                   Ref.g(435109479173232140L, var25);
                   ArrayList var10007 = Registry.emptyArgs();
                   long var28 = 245965692335108743L;
-                  Object[] var27 = var10007;
+                  Object var27 = var10007;
                   var10007 = Ref.h(245965692335108743L, var27, var28);
 
                   try {
@@ -109,9 +111,9 @@ public class Le2 implements MouseListener {
                      Registry.lookupField(356967793820925117L).setInt(Ref.g(165909131428208332L, var29), var6);
                      Object var31 = 165909131428208332L;
                      Ref.g(165909131428208332L, var31);
-                     Object[] var10011 = Registry.emptyArgs();
+                     Object var10011 = Registry.emptyArgs();
                      long var34 = 419335026051024288L;
-                     Object[] var33 = var10011;
+                     Object var33 = var10011;
                      var10011 = Ref.h(419335026051024288L, var33, var34);
 
                      try {
@@ -125,7 +127,7 @@ public class Le2 implements MouseListener {
 
                   U82 var10008 = (U82)(Registry.emptyArgs());
                   long var36 = 382054480216091309L;
-                  Object[] var35 = var10008;
+                  Object var35 = var10008;
                   var10008 = Ref.h(382054480216091309L, var35, var36);
 
                   try {
@@ -153,9 +155,9 @@ public class Le2 implements MouseListener {
                         throw var79.getTargetException();
                      }
 
-                     Object[] var10013 = Registry.emptyArgs();
+                     Object var10013 = Registry.emptyArgs();
                      long var44 = 419335026051024288L;
-                     Object[] var43 = var10013;
+                     Object var43 = var10013;
                      var10013 = Ref.h(419335026051024288L, var43, var44);
 
                      try {
@@ -166,7 +168,7 @@ public class Le2 implements MouseListener {
 
                      var10013 = Registry.packArgs(var98);
                      long var46 = 296800993237687739L;
-                     Object[] var45 = var10013;
+                     Object var45 = var10013;
                      var10013 = Ref.h(296800993237687739L, var45, var46);
 
                      try {
@@ -213,7 +215,7 @@ public class Le2 implements MouseListener {
 
                   String var10009 = (String)(Registry.emptyArgs());
                   long var54 = 577747074549625554L;
-                  Object[] var53 = var10009;
+                  Object var53 = var10009;
                   var10009 = Ref.h(577747074549625554L, var53, var54);
 
                   try {

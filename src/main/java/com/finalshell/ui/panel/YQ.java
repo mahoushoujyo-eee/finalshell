@@ -31,6 +31,8 @@ public class YQ extends JPanel {
    public static Integer[] e;
 
    public YQ(String var1, String var2, int var3) {
+      super();
+      Object[] var34;
       long var7 = 430112502366759747L;
       String var6 = "";
       Ref.s(430112502366759747L, var6, var7);
@@ -73,7 +75,7 @@ public class YQ extends JPanel {
       ((JTextArea)Ref.g(193453305949284809L, var26)).setEditable(false);
       JScrollPane var10012;
       Object var28 = 193453305949284809L;
-      super((JTextArea)Ref.g(193453305949284809L, var28));
+      // [VF-super] super((JTextArea)Ref.g(193453305949284809L, var28));
       JScrollPane var5 = var10012;
       var5.setOpaque(false);
       var5.getViewport().setOpaque(false);
@@ -106,7 +108,7 @@ public class YQ extends JPanel {
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10015 = Registry.packArgs(new com.finalshell.task.Oq2(this));
       long var35 = 434592463220957006L;
-      Object[] var34 = var10015;
+      var34 = var10015;
       Ref.h(434592463220957006L, var34, var35);
 
       try {
@@ -254,7 +256,7 @@ public class YQ extends JPanel {
       Ref.h(399585344452154517L, var5, var6);
       NY var10003 = (NY)(Registry.emptyArgs());
       long var8 = 149968465491171480L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(149968465491171480L, var7, var8);
 
       try {
@@ -267,7 +269,7 @@ public class YQ extends JPanel {
       byte var15 = 2;
       Color var10008 = (Color)(Registry.emptyArgs());
       long var10 = 345089686683358688L;
-      Object[] var9 = var10008;
+      Object var9 = var10008;
       var10008 = Ref.h(345089686683358688L, var9, var10);
 
       try {
@@ -1137,6 +1139,7 @@ public class YQ extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[10];
       int[] var10000 = new int[5];
       int var11 = 0;
@@ -1154,7 +1157,6 @@ public class YQ extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

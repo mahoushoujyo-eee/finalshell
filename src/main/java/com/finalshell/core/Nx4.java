@@ -186,7 +186,7 @@ public class Nx4 extends Ne4 {
          var10000 = this.K;
       }
 
-      byte var2 = (var10000.equals(K72.hex)) ? 1 : 0;
+      byte var2 = (byte)((var10000.equals(K72.hex)) ? 1 : 0);
       int var10001 = var2;
       if (var1 == 0) {
          var10001 = var2 != 0 ? a(1062, 1987554735933547579L) : a(11413, 8299474732993105034L);
@@ -368,6 +368,7 @@ public class Nx4 extends Ne4 {
    }
 
    public void y() {
+      int var4;
       int var10000 = c$int();
       Point var2 = this.getLocationOnScreen();
       int var1 = var10000;
@@ -380,8 +381,8 @@ public class Nx4 extends Ne4 {
       int var7;
       int var8;
       label73: {
-         int var4 = var10000;
-         byte var5 = (this.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+         var4 = var10000;
+         byte var5 = (byte)((this.getComponentOrientation().isLeftToRight()) ? 1 : 0);
          int var6 = this.getWidth();
          var7 = this.getHeight();
          var10000 = var5;
@@ -505,6 +506,7 @@ public class Nx4 extends Ne4 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ -16104) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1279,7 +1281,7 @@ public class Nx4 extends Ne4 {
                var10000 = 180;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;

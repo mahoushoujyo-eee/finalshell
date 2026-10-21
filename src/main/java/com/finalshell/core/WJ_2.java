@@ -1165,6 +1165,7 @@ public class WJ_2 implements Hx2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "¬¦\u0011¼g%\u0015äë\t\u0003 älß5Á\u00adÔ\u0002Æ\u008b";
@@ -1179,7 +1180,6 @@ public class WJ_2 implements Hx2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

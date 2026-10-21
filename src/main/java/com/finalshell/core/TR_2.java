@@ -50,6 +50,7 @@ public class TR_2 extends T4 {
 
    @Override
    public Dimension preferredLayoutSize(Container var1) {
+      Dimension var9;
       Insets var3 = var1.getInsets();
       int var4 = var3.left + var3.right;
       int var10000 = T4.O();

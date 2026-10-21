@@ -55,6 +55,7 @@ public class S_2 extends BasicOptionPaneUI {
 
    @Override
    public void addButtonComponents(Container var1, Object[] var2, int var3) {
+      int var22;
       int var4;
       label149: {
          var4 = E2_2.D();
@@ -174,8 +175,6 @@ public class S_2 extends BasicOptionPaneUI {
 
             ActionListener var16 = this.createButtonActionListener(var10);
             if (var16 != null) {
-      int var22;
-      int var22;
                var13.addActionListener(var16);
             }
 
@@ -192,7 +191,7 @@ public class S_2 extends BasicOptionPaneUI {
                }
 
                if (var6 != 0) {
-                  var22 = var12 instanceof JButton;
+                  var22 = (var12 instanceof JButton) ? 1 : 0;
                   if (var4 == 0) {
                      break label102;
                   }
@@ -219,7 +218,7 @@ public class S_2 extends BasicOptionPaneUI {
                      break label92;
                   }
 
-                  var22 = this.initialFocusComponent instanceof JButton;
+                  var22 = (this.initialFocusComponent instanceof JButton) ? 1 : 0;
                }
 
                if (var22 != 0) {
@@ -262,11 +261,12 @@ public class S_2 extends BasicOptionPaneUI {
          var10001 = 0;
       }
 
-      var17.setSyncAllWidths((boolean)var10001);
+      var17.setSyncAllWidths(var10001);
    }
 
    @Override
    public Object[] getButtons() {
+      KD[] var12;
       int var1 = E2_2.D();
       JOptionPane var10000 = this.optionPane;
       if (var1 != 0) {
@@ -1250,11 +1250,13 @@ public class S_2 extends BasicOptionPaneUI {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var12;
+      char[] var33;
       String[] var13 = new String[16];
       int var11 = 0;
       String var10 = "¥×ÑÞD/)^\fT?Ê§p\"\u0086g\"ÈØèM[pôå\u000fníÚ\u0003\u008e\u0014\u0093S>ücÆ|d\tÍ\u0005ÇTy1\"¹úz\u0001\u0012v\u008cRÃP*\u0015\u0083\u0085o>r\u008c\u0017D,º¯\u0015\rJ=\u001b½1°û)\u0004Î\u0084ZW\u0016b_ÓÓ!\u0010\u0011£\u0089\u0011\u0015\\V*ql±3v&ç\u0012ta\u0015\u0090á^ªo\fý=9æ\u0003¢\u0094Õ)·ºH\fY×\u0011¨k\u0089?+µ|dy\u0018I%ÔZ\u0018Ó\u00ad\u0015\u0001Ùl\u00ad)ì5! e ÒðÛ¥v+p>^\u0091\u0018íéñ«\u009a,C9îfù²Ë×Â÷Ç@¹\\%Ü\u007fO\u0014L\u009bÅå\u001cå\u0093\u0000ôAºV£KÏdf2\u0080\u001c\u0014-\"éÒ\u0099\u0003#ÜâÚx%û%Ä©\u0007\u008b¬+\u0014\u0092©\u001e£g-ü\u0019\u0019b\u00072\u0014Ç9õ¸\u0000Z^\u000fl°\u0011D8Ú\f\u009a'·\u0099±¡ÀT\u0006\u0081àd _à";
-      int var12 = "¥×ÑÞD/)^\fT?Ê§p\"\u0086g\"ÈØèM[pôå\u000fníÚ\u0003\u008e\u0014\u0093S>ücÆ|d\tÍ\u0005ÇTy1\"¹úz\u0001\u0012v\u008cRÃP*\u0015\u0083\u0085o>r\u008c\u0017D,º¯\u0015\rJ=\u001b½1°û)\u0004Î\u0084ZW\u0016b_ÓÓ!\u0010\u0011£\u0089\u0011\u0015\\V*ql±3v&ç\u0012ta\u0015\u0090á^ªo\fý=9æ\u0003¢\u0094Õ)·ºH\fY×\u0011¨k\u0089?+µ|dy\u0018I%ÔZ\u0018Ó\u00ad\u0015\u0001Ùl\u00ad)ì5! e ÒðÛ¥v+p>^\u0091\u0018íéñ«\u009a,C9îfù²Ë×Â÷Ç@¹\\%Ü\u007fO\u0014L\u009bÅå\u001cå\u0093\u0000ôAºV£KÏdf2\u0080\u001c\u0014-\"éÒ\u0099\u0003#ÜâÚx%û%Ä©\u0007\u008b¬+\u0014\u0092©\u001e£g-ü\u0019\u0019b\u00072\u0014Ç9õ¸\u0000Z^\u000fl°\u0011D8Ú\f\u009a'·\u0099±¡ÀT\u0006\u0081àd _à"
-         .length();
+      var12 = "¥×ÑÞD/)^\fT?Ê§p\"\u0086g\"ÈØèM[pôå\u000fníÚ\u0003\u008e\u0014\u0093S>ücÆ|d\tÍ\u0005ÇTy1\"¹úz\u0001\u0012v\u008cRÃP*\u0015\u0083\u0085o>r\u008c\u0017D,º¯\u0015\rJ=\u001b½1°û)\u0004Î\u0084ZW\u0016b_ÓÓ!\u0010\u0011£\u0089\u0011\u0015\\V*ql±3v&ç\u0012ta\u0015\u0090á^ªo\fý=9æ\u0003¢\u0094Õ)·ºH\fY×\u0011¨k\u0089?+µ|dy\u0018I%ÔZ\u0018Ó\u00ad\u0015\u0001Ùl\u00ad)ì5! e ÒðÛ¥v+p>^\u0091\u0018íéñ«\u009a,C9îfù²Ë×Â÷Ç@¹\\%Ü\u007fO\u0014L\u009bÅå\u001cå\u0093\u0000ôAºV£KÏdf2\u0080\u001c\u0014-\"éÒ\u0099\u0003#ÜâÚx%û%Ä©\u0007\u008b¬+\u0014\u0092©\u001e£g-ü\u0019\u0019b\u00072\u0014Ç9õ¸\u0000Z^\u000fl°\u0011D8Ú\f\u009a'·\u0099±¡ÀT\u0006\u0081àd _à";
+         // [VF] .length();
       char var9 = ' ';
       int var17 = -1;
 
@@ -1420,7 +1422,7 @@ public class S_2 extends BasicOptionPaneUI {
                   }
 
                   var10 = "w{Þ\u001eðbê¢!\u009eÏÆì¤\u001eIµ\u008bÄ\u001aH\u0018»%ng<àÂõ\u008bª\u0000~¡\u001bÚ;\u0091\u008c&\u0090\u0083\u0010þ\u0083";
-                  var12 = "w{Þ\u001eðbê¢!\u009eÏÆì¤\u001eIµ\u008bÄ\u001aH\u0018»%ng<àÂõ\u008bª\u0000~¡\u001bÚ;\u0091\u008c&\u0090\u0083\u0010þ\u0083".length();
+                  var12 = ("w{Þ\u001eðbê¢!\u009eÏÆì¤\u001eIµ\u008bÄ\u001aH\u0018»%ng<àÂõ\u008bª\u0000~¡\u001bÚ;\u0091\u008c&\u0090\u0083\u0010þ\u0083".length()) != 0;
                   var9 = 21;
                   var17 = -1;
             }
@@ -1432,7 +1434,6 @@ public class S_2 extends BasicOptionPaneUI {
       }
    }
 }
-
 
 
 

@@ -152,6 +152,7 @@ public class X implements Iterator {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean L;
       char[] var10003 = " mBsk}".toCharArray();
       int var10004 = var10003.length;
       int var0 = 0;
@@ -207,8 +208,6 @@ public class X implements Iterator {
                      break label69;
                   }
                } catch (NoSuchElementException var2) {
-      boolean L;
-      boolean L;
                   throw a(var2);
                }
 
@@ -338,7 +337,6 @@ public class X implements Iterator {
       }
    }
 }
-
 
 
 

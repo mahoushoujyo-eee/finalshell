@@ -55,9 +55,9 @@ public class Kj2 {
 
    @Override
    public Object clone() throws CloneNotSupportedException {
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var2 = 328920636414804414L;
-      Object[] var1 = var10001;
+      Object var1 = var10001;
       var10001 = Ref.h(328920636414804414L, var1, var2);
 
       try {
@@ -877,6 +877,7 @@ public class Kj2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[4];
       int var5 = 0;
       String var4 = "íïîÄ\n¨M/~à®r\u008d\u000e*Ä\u0016¡\u0015\u0004®¤\u000eV#÷ëd";
@@ -891,7 +892,6 @@ public class Kj2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

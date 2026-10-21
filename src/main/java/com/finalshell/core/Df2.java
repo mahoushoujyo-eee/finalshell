@@ -44,8 +44,10 @@ public class Df2 {
    }
 
    public int X(int var1, D92 var2) {
-      int[] var10000 = Nm4.g();
-      boolean var4 = false;
+      int[] var10000;
+      boolean var4;
+      var10000 = Nm4.g();
+      var4 = false;
       int[] var3 = var10000;
       D92 var5 = var2;
       D92 var10001 = Ro2.W;
@@ -92,7 +94,8 @@ public class Df2 {
    }
 
    public int A(int var1, boolean var2) {
-      int[] var10000 = Nm4.g();
+      int[] var10000;
+      var10000 = Nm4.g();
       this.T = new A4_3(this);
       int[] var3 = var10000;
       int var10001 = (var2) ? 1 : 0;
@@ -196,8 +199,9 @@ public class Df2 {
    }
 
    public int w(int var1, int var2, int var3, D92 var4) {
+      int var10000;
       int[] var5 = Nm4.g();
-      int var10000 = var2;
+      var10000 = var2;
       if (var5 == null) {
          if (var2 >= a(9064, 5331821358581249055L)) {
             if (var5 != null) {
@@ -259,9 +263,11 @@ public class Df2 {
    }
 
    public int Y(int var1, int var2, boolean var3) {
-      int[] var10000 = Nm4.g();
+      int[] var4;
+      int[] var10000;
+      var10000 = Nm4.g();
       this.d = new Wa2_2(this);
-      int[] var4 = var10000;
+      var4 = var10000;
       int var10002 = (var3) ? 1 : 0;
       if (var4 == null) {
          var10002 = var3 != 0 ? -var2 : var2;
@@ -329,7 +335,8 @@ public class Df2 {
    }
 
    public void O() {
-      int[] var10000 = Nm4.g();
+      int[] var10000;
+      var10000 = Nm4.g();
       int var2 = this.d.I;
       int[] var1 = var10000;
       int var3 = var2;
@@ -394,9 +401,11 @@ public class Df2 {
    }
 
    public int H(byte[] var1, int var2, int var3) {
-      int[] var10000 = Nm4.g();
+      int[] var4;
+      int[] var10000;
+      var10000 = Nm4.g();
       int var5 = this.L;
-      int[] var4 = var10000;
+      var4 = var10000;
       int var6 = var5;
       if (var4 == null) {
          if (var5 > var3) {
@@ -473,7 +482,7 @@ public class Df2 {
                      break label46;
                   }
 
-                  if (var4 != 0) {
+                  if (var4) {
                      var7 = this;
                      if (var5 != null) {
                         break label44;
@@ -497,9 +506,9 @@ public class Df2 {
 
          label30:
          if (var10000 > 0) {
-            int var8 = (var4) ? 1 : 0;
+            int var8 = var4;
             if (var5 == null) {
-               if (var4 == 0) {
+               if (!var4) {
                   break label30;
                }
 
@@ -607,6 +616,7 @@ public class Df2 {
    }
 
    public static void __vfClinit__() {
+      long[] var10000;
       long var0 = 6900814795839161487L;
       long[] var6 = new long[7];
       int var3 = 0;
@@ -619,7 +629,7 @@ public class Df2 {
          int var10001 = var2;
          var2 += 8;
          byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
-         long[] var10000 = var6;
+         var10000 = var6;
          var10001 = var3++;
          long var10002 = ((long)var7[0] & 255L) << 56
             | ((long)var7[1] & 255L) << 48

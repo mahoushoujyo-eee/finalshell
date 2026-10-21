@@ -248,6 +248,8 @@ public class Pk4 extends BasicToolBarUI implements W2_3, L0_2 {
 
    @Override
    public void h() {
+      int var27;
+      int var30;
       String var1;
       Pk4 var6;
       label332: {
@@ -303,7 +305,7 @@ public class Pk4 extends BasicToolBarUI implements W2_3, L0_2 {
                byte var4;
                label363: {
                   var3 = var8;
-                  var4 = (this.toolBar.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+                  var4 = (byte)((this.toolBar.getComponentOrientation().isLeftToRight()) ? 1 : 0);
                   boolean var9 = this.q.equals(LS.standalone);
                   if (var1 != null) {
                      if (var9) {
@@ -383,7 +385,6 @@ public class Pk4 extends BasicToolBarUI implements W2_3, L0_2 {
                            var19 = var3 == 0 ? var5 : 0;
                         }
 
-                        int var27;
                         label270: {
                            label342: {
                               var14 += var19;
@@ -527,7 +528,6 @@ public class Pk4 extends BasicToolBarUI implements W2_3, L0_2 {
                }
 
                int var17;
-               int var30;
                label211: {
                   label347: {
                      var17 = this.k.top + var24;
@@ -683,6 +683,8 @@ public class Pk4 extends BasicToolBarUI implements W2_3, L0_2 {
 
    @Override
    public void paint(Graphics var1, JComponent var2) {
+      int var23;
+      int var27;
       String var3 = XT3.l();
       Pk4 var10000 = this;
       if (var3 != null) {
@@ -707,7 +709,7 @@ public class Pk4 extends BasicToolBarUI implements W2_3, L0_2 {
          byte var7;
          label246: {
             int var6 = var17;
-            var7 = (var2.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+            var7 = (byte)((var2.getComponentOrientation().isLeftToRight()) ? 1 : 0);
             int var18 = (this.isFloating()) ? 1 : 0;
             if (var3 != null) {
                if (var18 != 0) {
@@ -1892,6 +1894,7 @@ public class Pk4 extends BasicToolBarUI implements W2_3, L0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[8];
       int var11 = 0;
       String var10 = "ßÜx¹Å\u0082KEãU-\u0014\u0080O\u001a`\f\u0014WÔù\u001eÌìÈ\u0086?¼\u0001ÈU;\u0014+ o\u008d¢©\u0082cCè\u009b2\"]bÇª§ Ö\t\u0091¹\u009fÌå½\u0015\rG\u0016õ¤g\u0001Ì¨ÐíÎRC*\u0096PÝ\u0087'i×\u0005\u0007¤\u000bÛ\u009dø\u0091Õ\u0087Iå£A%";
@@ -1907,7 +1910,6 @@ public class Pk4 extends BasicToolBarUI implements W2_3, L0_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

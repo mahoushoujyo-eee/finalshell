@@ -2460,6 +2460,7 @@ public class Wq2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var25;
       String[] var9 = new String[6];
       int var7 = 0;
       String var6 = "}\u001d\u008fÉ\u001e\u008eÍäh\u007fV\b\u0093²JzCpsâ;íR\u0090·\u0085iã\u0095HJ%t\u0080UµJ¤fo\u0091\u007f\u001b\u0007,ûº\u0081\u008cd|\u0001oÖ\u0085Ó\u0095E\u0012dx\f\u0018\u0007\u008aÜ7\u0000®¼º¨Èe·\u0001\u0087t\u0088O'\u00133\u009bÆÕ\u0090Øk\u0016cÊ2ò\u009eõW÷:ET\u0080\u0089*\u001c\u009f\r«ÔYTÃs\u0019Ä%\u0013N\u009e\u008b";
@@ -2476,7 +2477,6 @@ public class Wq2_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var25;
             label47: {
                char[] var30 = var10001.toCharArray();
                int var10004 = var30.length;

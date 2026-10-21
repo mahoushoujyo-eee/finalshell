@@ -36,6 +36,9 @@ public class O52 implements MouseListener {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      Integer var102;
+      Integer var86;
+      Integer var95;
       int[] var10000 = L9.X();
       L9 var3 = null;
       int[] var2 = var10000;
@@ -57,7 +60,7 @@ public class O52 implements MouseListener {
          Ref.g(434008521855552520L, var21);
          ArrayList var10007 = Registry.emptyArgs();
          long var24 = 508702504224153155L;
-         Object[] var23 = var10007;
+         Object var23 = var10007;
          var10007 = Ref.h(508702504224153155L, var23, var24);
 
          try {
@@ -69,7 +72,7 @@ public class O52 implements MouseListener {
          var3 = (L9)var10007.get(var7);
          String var10008 = (String)(Registry.emptyArgs());
          long var26 = 564648154927582737L;
-         Object[] var25 = var10008;
+         Object var25 = var10008;
          var10008 = Ref.h(564648154927582737L, var25, var26);
 
          try {
@@ -81,7 +84,7 @@ public class O52 implements MouseListener {
          var4 = var10008;
          String var10009 = (String)(Registry.emptyArgs());
          long var28 = 129926512000439480L;
-         Object[] var27 = var10009;
+         Object var27 = var10009;
          var10009 = Ref.h(129926512000439480L, var27, var28);
 
          try {
@@ -114,9 +117,9 @@ public class O52 implements MouseListener {
                throw var75.getTargetException();
             }
 
-            Object[] var84 = Registry.emptyArgs();
+            Object var84 = Registry.emptyArgs();
             long var34 = 127422501806576014L;
-            Object[] var33 = var84;
+            Object var33 = var84;
             var84 = Ref.h(127422501806576014L, var33, var34);
 
             try {
@@ -127,7 +130,7 @@ public class O52 implements MouseListener {
 
             var84 = Registry.packArgs(var86);
             long var36 = 578241708662169341L;
-            Object[] var35 = var84;
+            Object var35 = var84;
             var84 = Ref.h(578241708662169341L, var35, var36);
 
             try {
@@ -166,9 +169,9 @@ public class O52 implements MouseListener {
                }
 
                new StringBuilder();
-               Object[] var10012 = Registry.emptyArgs();
+               Object var10012 = Registry.emptyArgs();
                long var42 = 127422501806576014L;
-               Object[] var41 = var10012;
+               Object var41 = var10012;
                var10012 = Ref.h(127422501806576014L, var41, var42);
 
                try {
@@ -180,7 +183,7 @@ public class O52 implements MouseListener {
                true.append(var3 + var95).append(a);
                var10012 = Registry.emptyArgs();
                long var44 = 564648154927582737L;
-               Object[] var43 = var10012;
+               Object var43 = var10012;
                var10012 = Ref.h(564648154927582737L, var43, var44);
 
                try {
@@ -194,9 +197,9 @@ public class O52 implements MouseListener {
                long var46 = 564648154927582737L;
                Object[] var45 = var10013;
                var10013 = Ref.h(564648154927582737L, var45, var46);
-               Object[] var10015 = Registry.emptyArgs();
+               Object var10015 = Registry.emptyArgs();
                long var48 = 127422501806576014L;
-               Object[] var47 = var10015;
+               Object var47 = var10015;
                var10015 = Ref.h(127422501806576014L, var47, var48);
 
                try {

@@ -35,8 +35,8 @@ public class Qk2 extends Qi2 {
                var4.V((byte)a(25067, 2589648042755886473L));
                var4.u(var2.J$int());
                var4.q(E8.J(a));
-               var7 = (var4) ? 1 : 0;
-               var10001 = (this.K()) ? 1 : 0;
+               var7 = var4;
+               var10001 = (byte)((this.K()) ? 1 : 0);
                if (!var3) {
                   break label22;
                }
@@ -82,6 +82,7 @@ public class Qk2 extends Qi2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte[] var7;
       char[] var10003 = "MN J\u001a]}YO/@\u0012O".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -268,7 +269,7 @@ public class Qk2 extends Qi2 {
                while (true) {
                   var21 = var2;
                   var2 += 8;
-                  byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
+                  var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
                   long[] var10000 = var6;
                   var21 = var3++;
                   long var30 = ((long)var7[0] & 255L) << 56

@@ -26,6 +26,7 @@ public class BQ extends O {
 
    @Override
    public void paint(Graphics var1) {
+      Integer var70;
       int[] var10000 = YQ.m();
       Graphics2D var3 = (Graphics2D)var1;
       int[] var2 = var10000;
@@ -36,7 +37,7 @@ public class BQ extends O {
             Ref.g(359767349189760149L, var18);
             KV var10003 = (KV)(Registry.emptyArgs());
             long var21 = 249636090880581982L;
-            Object[] var20 = var10003;
+            Object var20 = var10003;
             var10003 = Ref.h(249636090880581982L, var20, var21);
 
             try {
@@ -55,7 +56,7 @@ public class BQ extends O {
                Ref.g(359767349189760149L, var22);
                String var10005 = (String)(Registry.emptyArgs());
                long var25 = 278346905124376511L;
-               Object[] var24 = var10005;
+               Object var24 = var10005;
                var10005 = Ref.h(278346905124376511L, var24, var25);
 
                try {
@@ -71,7 +72,7 @@ public class BQ extends O {
                      if (var59) {
                         ArrayList var10006 = (ArrayList)(Registry.emptyArgs());
                         long var27 = 332825939301957587L;
-                        Object[] var26 = var10006;
+                        Object var26 = var10006;
                         var10006 = Ref.h(332825939301957587L, var26, var27);
 
                         try {
@@ -146,7 +147,7 @@ public class BQ extends O {
                         var3.setColor(var40);
                         ArrayList var63 = Registry.emptyArgs();
                         long var29 = 332825939301957587L;
-                        Object[] var28 = var63;
+                        Object var28 = var63;
                         var63 = Ref.h(332825939301957587L, var28, var29);
 
                         try {
@@ -156,9 +157,9 @@ public class BQ extends O {
                         }
 
                         int var43 = var63.size();
-                        Object[] var10007 = Registry.emptyArgs();
+                        Object var10007 = Registry.emptyArgs();
                         long var31 = 183746953072628965L;
-                        Object[] var30 = var10007;
+                        Object var30 = var10007;
                         var10007 = Ref.h(183746953072628965L, var30, var31);
 
                         try {
@@ -211,9 +212,9 @@ public class BQ extends O {
                      byte var44 = 3;
                      byte var46 = 2;
                      float var48 = (float)this.getWidth() / 500.0F;
-                     Object[] var68 = Registry.emptyArgs();
+                     Object var68 = Registry.emptyArgs();
                      long var33 = 520926529036853194L;
-                     Object[] var32 = var68;
+                     Object var32 = var68;
                      var68 = Ref.h(520926529036853194L, var32, var33);
 
                      try {

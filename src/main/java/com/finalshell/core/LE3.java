@@ -1104,6 +1104,7 @@ public class LE3 extends ReflectionConverter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[15];
       int var3 = 0;
       String var2 = "ö\u0003«\u0011\u0093\u0004â/\u001ev\u0004Õ\u0089ø¢\u0004\u0094\u008a\u0095F\u0004Kûo÷\u0002·<\u0004\u0004L\u0086\u0001\u00022\u0092)\u0082d\u0006í\u0084wù°Ú\u0004\u0015®£\u009búFÖ\u0001\u00022|\u0086ñ³æYàR|øwôS½\u0099\u0002yÁ}¦r\u0004\u0005\u008f§æ\u001e¸+Ý\u0094Sè\u007fµ\u009b\u0089\u0099êiLÜ:î\u008d&Ùá\u00848JØ\u0091\u008d\u000fx÷\u0005î1¨Wó\u0003\u0096\"e";
@@ -1119,7 +1120,6 @@ public class LE3 extends ReflectionConverter {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -15,7 +15,7 @@ public class YO3_2 implements J1 {
       int var3 = 0;
       int var10000 = (DF.M()) ? 1 : 0;
       byte[] var4 = var1;
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       int var5 = var1.length;
       int var6 = 0;
 

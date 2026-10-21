@@ -1054,6 +1054,7 @@ public final class XP {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var37;
       String[] var13 = new String[87];
       int var11 = 0;
       String var10 = "à5\u0084\u0002Yù\u0003MÌW\u0003n\u001e:\u0002\u009fU\u0003\u0013=/\u0005OÎ¼,\u0080\u0005½díÒD\u00028\u009f\u0003*=\u001d\u0003Î¤\u0082\u0002\u0098\u0090\u0005nk\u009a\u00ad\u0006\u0004*6\u001a*\u0005\u0010¨X·ò\u0002Ð\n\u00066ç\u009aÆ>\u0017\u0002\u0019O\u0003\u0006\u0091#\u0005{\u0087#GI\u0003Û\u0017×\u0002êg\u0003b®\u008c\u0002\u0093b\u0003è\u0004T\u0004`\u0091FH\u0003<÷\u00ad\u0003\u0098°\u009a\u0002Ç*\u0002÷\u001c\u0002îa\u0003\u00051-\u0005\u0007\u0010¸\u001b¬\u00038\u008eù\u0005Í\u000eô\b\u0092\u0004\u0096ø\u0082D\u00038\u0007^\u0005f\u001a\u0096â+\u0003â\u001f°\u0003b¯©\u0003N\u0013e\u0005}\u008eõuG\u0003P\u0003í\u0004Jk\u0014ª\u0003ÀäF\u0003Ó 7\u0005g^º\u000e#\u0003\u001føw\u0004¦}\u0099Q\u0003Þ_v\u00026z\u0003B\u001eì\u0002ç¢\u0003b?C\u0003\u0004_}\u00037ä¬\u0002¸ç\u0003\u0090Ì8\u0004fö\u009a\u0085\u0003q\u0081\u001d\u0005hNUy\u0011\u0003$Í¾\u0002/Í\u0005]Ê÷¥Á\u0005:%\nwM\u0005ä\u0018Ê\u000e-\u0003Ë[P\u0005ä|Ð\u00887\u0003\u000eJþ\u0002¸y\u0003\u0011?Æ\u0005\u0001´jD¦\u0003©rø\u0003X¥h\u0004·É¼¤\u0004Eêâ\u0090\u0002\"A\u0003üe\u0086\u0005ÜáÖ!Ö\u0004\u0007(ªé\u0005\u0092ß\bXø\u0004 ÌP\u0016\u0003\u0099Ë\t\u0005A\u009dh¸\u00ad\u0003uï_";
@@ -1070,7 +1071,6 @@ public final class XP {
          byte var10002 = -1;
 
          while (true) {
-      char[] var37;
             label65: {
                char[] var43 = var10001.toCharArray();
                int var10004 = var43.length;

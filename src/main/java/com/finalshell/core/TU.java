@@ -83,6 +83,7 @@ public class TU extends T4 {
    }
 
    public Dimension r(Container var1, boolean var2) {
+      Container var10;
       int var10000 = T4.b();
       int var4 = var1.getComponentCount();
       Dimension var5 = new Dimension(0, 0);
@@ -91,7 +92,6 @@ public class TU extends T4 {
 
       while (true) {
          if (var6 < var4) {
-      Dimension var10;
             var10 = var1;
             if (var3 == 0) {
                break;
@@ -110,7 +110,6 @@ public class TU extends T4 {
             }
 
             if (var3 != 0) {
-      Dimension var10;
                continue;
             }
          }
@@ -125,7 +124,6 @@ public class TU extends T4 {
       return var5;
    }
 }
-
 
 
 

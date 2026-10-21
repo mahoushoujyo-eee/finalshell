@@ -332,6 +332,7 @@ public class Ht2_2 extends Hd2 {
 
    @Override
    public U3_3[] A$arru_3() {
+      U3_3[] var7;
       String[] var10000 = RG_2.C();
       U3_3[] var2 = new U3_3[this.P.r.size()];
       String[] var1 = var10000;
@@ -339,7 +340,6 @@ public class Ht2_2 extends Hd2 {
 
       while (true) {
          if (var3 < this.P.r.size()) {
-      ArrayList var7;
             try {
                var7 = var2;
                if (var1 == null) {
@@ -355,7 +355,6 @@ public class Ht2_2 extends Hd2 {
 
             var3++;
             if (var1 != null) {
-      ArrayList var7;
                continue;
             }
          }
@@ -371,6 +370,7 @@ public class Ht2_2 extends Hd2 {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
    public Hd2[] j$arrhd_2() throws B2_5 {
+      ClassNotFoundException var11;
       String[] var10000 = RG_2.C();
       Cq2_3 var2 = this.P.F();
       String[] var1 = var10000;
@@ -775,14 +775,16 @@ public class Ht2_2 extends Hd2 {
    }
 
    public H4_2 Q(V2_3 var1) throws B2_5 {
+      R2_3 var7;
+      Object var8;
       String[] var10000 = RG_2.C();
       HashMap var3 = new HashMap();
       String[] var2 = var10000;
 
       for (Entry var5 : var1.P.entrySet()) {
          Short var6 = (Short)var5.getKey();
-         R2_3 var7 = (R2_3)var5.getValue();
-         Object var8 = var7.d(new C_T(this));
+         var7 = (R2_3)var5.getValue();
+         var8 = var7.d(new C_T(this));
          var3.put(this.P.S$String(var6), var8);
          if (var2 == null) {
             break;
@@ -1001,6 +1003,7 @@ public class Ht2_2 extends Hd2 {
    }
 
    public Hd2[] x(short[] var1) throws B2_5 {
+      Hd2[] var8;
       String[] var10000 = RG_2.C();
       Hd2[] var3 = new Hd2[var1.length];
       String[] var2 = var10000;
@@ -1436,6 +1439,7 @@ public class Ht2_2 extends Hd2 {
    }
 
    public static String b(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 13588) & 65535;
       if (B[var2] == null) {
          char[] var3 = q[var2].toCharArray();
@@ -2222,7 +2226,7 @@ public class Ht2_2 extends Hd2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -2250,8 +2254,11 @@ public class Ht2_2 extends Hd2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var11;
+      char[] var30;
+      byte[] var7;
       String[] var13 = new String[6];
-      int var11 = 0;
+      var11 = 0;
       String var10 = "«£m\u0006zÞÄ\u0090GL\r\rG°(oÕ#±4dª\u0016O\f@\u001c\u0019CZ¸\u0085\u0016ÏÖ\rì";
       int var12 = "«£m\u0006zÞÄ\u0090GL\r\rG°(oÕ#±4dª\u0016O\f@\u001c\u0019CZ¸\u0085\u0016ÏÖ\rì".length();
       char var9 = 3;
@@ -2351,7 +2358,7 @@ public class Ht2_2 extends Hd2 {
                      do {
                         byte var24 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var24, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var24, var2).getBytes("ISO-8859-1");
                         int var25 = var3++;
                         long var47 = (
                               ((long)var7[0] & 255L) << 56
@@ -2396,7 +2403,6 @@ public class Ht2_2 extends Hd2 {
       }
    }
 }
-
 
 
 

@@ -19,6 +19,8 @@ public class O_6 {
 
    @Override
    public String toString() {
+      StringBuilder var8;
+      StringBuilder var9;
       String var10000 = M_8.w();
       Z2_4 var2 = this.j;
       String var1 = var10000;
@@ -37,8 +39,6 @@ public class O_6 {
                   }
 
                   if (var1 != null) {
-      StringBuilder var9;
-      StringBuilder var9;
                      continue;
                   }
                }
@@ -79,6 +79,7 @@ public class O_6 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -18962) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -865,7 +866,7 @@ public class O_6 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -884,6 +885,7 @@ public class O_6 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "0\u0091\u001b\u0003\u0095\u0083¯";
@@ -1000,7 +1002,6 @@ public class O_6 {
       }
    }
 }
-
 
 
 

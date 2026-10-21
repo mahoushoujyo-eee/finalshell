@@ -59,6 +59,7 @@ public class G82 extends Gy4 {
 
    @Override
    public void h(int var1, int var2, float[] var3) {
+      float var28;
       float var5 = 0.0F;
       float var6 = 0.0F;
       String[] var10000 = W5.q();
@@ -107,8 +108,6 @@ public class G82 extends Gy4 {
                         var21 = (float)(var2 - var19.W);
                         var8 = (float)Math.sqrt((double)(var20 * var20 + var21 * var21));
                         if (var4 != null) {
-      float var28;
-      float var28;
                            break label53;
                         }
                      }
@@ -300,7 +299,6 @@ public class G82 extends Gy4 {
       }
    }
 }
-
 
 
 

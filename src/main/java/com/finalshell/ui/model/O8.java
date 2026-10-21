@@ -33,9 +33,9 @@ public class O8 implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((Long)var1, (Long)var2);
+      Object var10001 = Registry.packArgs((Long)var1, (Long)var2);
       long var4 = 262915954633911742L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(262915954633911742L, var3, var4);
 
       try {

@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.dnd.DragGestureEvent;
 import java.awt.dnd.DragGestureListener;
 import java.awt.dnd.DragGestureRecognizer;
@@ -42,7 +42,7 @@ public class Ts2 implements DragSourceListener, DragGestureListener {
 
    @Override
    public void dragGestureRecognized(DragGestureEvent var1) {
-      Connection4.I();
+      ConnectionInfoPanel.I();
       Object var4 = 343288010603359031L;
       TreePath var3 = ((JTree)Ref.g(343288010603359031L, var4)).getSelectionPath();
       TreePath var10001 = var3;
@@ -91,7 +91,7 @@ public class Ts2 implements DragSourceListener, DragGestureListener {
 
    @Override
    public void dragDropEnd(DragSourceDropEvent var1) {
-      int[] var10000 = Connection4.I();
+      int[] var10000 = ConnectionInfoPanel.I();
       System.out.println(a(-706, -19767) + var1.getDropAction());
       int[] var2 = var10000;
       int var7 = (var1.getDropSuccess()) ? 1 : 0;
@@ -921,6 +921,7 @@ public class Ts2 implements DragSourceListener, DragGestureListener {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "½ò\u0095Æ©¤¤\u0001á4Â\u0087\u0098\bäò\u0000ì,ôë\u0095";
@@ -935,7 +936,6 @@ public class Ts2 implements DragSourceListener, DragGestureListener {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

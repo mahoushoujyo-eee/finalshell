@@ -1002,6 +1002,7 @@ public class Kl4 extends Ky4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[5];
       int var3 = 0;
       String var2 = "\"*\u0094²Å}\u008b[¦Ò\u001b%\u0007®ûiç\u0091Á\u0004Ï\u000e-2\t¦ÕÝ;\u008b\u0012y\u0089V";
@@ -1016,7 +1017,6 @@ public class Kl4 extends Ky4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -450,6 +450,7 @@ public class ED extends OutputStream {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 28915) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1236,7 +1237,7 @@ public class ED extends OutputStream {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1264,6 +1265,7 @@ public class ED extends OutputStream {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "L§$8ça²\u0081oÎÅu\u0094\u00ad!\u0096\u0080§yëaîÕ\u009aÖð®øxW\u0098t\u007f+\u0005\nx\u0001&-P\"\u001e*ì5\u001a\u007f";
@@ -1278,7 +1280,6 @@ public class ED extends OutputStream {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

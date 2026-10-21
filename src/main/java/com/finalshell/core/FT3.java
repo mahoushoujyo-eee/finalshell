@@ -3,7 +3,7 @@ package com.finalshell.core;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.frame.TextEditorFrame;
-import com.finalshell.ui.panel.File;
+import com.finalshell.ui.panel.TextFileEditorPanel;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.lang.reflect.InvocationTargetException;
@@ -25,7 +25,7 @@ public class FT3 implements WindowFocusListener {
       Object var3 = 382511049032296034L;
       Ref.g(382511049032296034L, var3);
       Object var5 = 247518897504885985L;
-      File var10002 = (File)Ref.g(247518897504885985L, var5);
+      TextFileEditorPanel var10002 = (TextFileEditorPanel)Ref.g(247518897504885985L, var5);
       if (var2 == null) {
          if (var10002 == null) {
             return;
@@ -34,7 +34,7 @@ public class FT3 implements WindowFocusListener {
          Object var7 = 382511049032296034L;
          Ref.g(382511049032296034L, var7);
          Object var9 = 247518897504885985L;
-         File var10004 = (File)Ref.g(247518897504885985L, var9);
+         TextFileEditorPanel var10004 = (TextFileEditorPanel)Ref.g(247518897504885985L, var9);
       }
 
       Object[] var10003 = Registry.emptyArgs();

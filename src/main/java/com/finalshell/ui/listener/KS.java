@@ -2,7 +2,7 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.dialog.EditDialog3;
+import com.finalshell.ui.dialog.CommandEditDialog;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
@@ -10,12 +10,12 @@ import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 public class KS implements ActionListener {
    public final int d;
    public final RSyntaxTextArea C;
-   public final EditDialog3 A;
+   public final CommandEditDialog A;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   public KS(EditDialog3 var1, int var2, RSyntaxTextArea var3) {
+   public KS(CommandEditDialog var1, int var2, RSyntaxTextArea var3) {
       this.A = var1;
       this.d = var2;
       this.C = var3;

@@ -3,8 +3,8 @@ package com.finalshell.ui.listener;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.frame.Km4;
-import com.finalshell.ui.panel.PublicKey;
-import com.finalshell.ui.panel.Reconnect;
+import com.finalshell.ui.panel.ConnectionEditorPanel;
+import com.finalshell.ui.panel.ReconnectSettingsPanel;
 import com.finalshell.ui.panel.Z7;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.event.TreeSelectionEvent;
@@ -13,13 +13,13 @@ import javax.swing.tree.DefaultMutableTreeNode;
 
 public class X82 implements TreeSelectionListener {
    public final DefaultMutableTreeNode p;
-   public final PublicKey l;
+   public final ConnectionEditorPanel l;
    public final DefaultMutableTreeNode q;
-   public final Reconnect U;
+   public final ReconnectSettingsPanel U;
    public final DefaultMutableTreeNode f;
    public final Km4 O;
 
-   public X82(Km4 var1, DefaultMutableTreeNode var2, PublicKey var3, DefaultMutableTreeNode var4, Reconnect var5, DefaultMutableTreeNode var6) {
+   public X82(Km4 var1, DefaultMutableTreeNode var2, ConnectionEditorPanel var3, DefaultMutableTreeNode var4, ReconnectSettingsPanel var5, DefaultMutableTreeNode var6) {
       this.O = var1;
       this.p = var2;
       this.l = var3;
@@ -39,7 +39,7 @@ public class X82 implements TreeSelectionListener {
       Object var10004 = Ref.g(595819195510091629L, var9);
       DefaultMutableTreeNode var10005 = (DefaultMutableTreeNode)(Registry.emptyArgs());
       long var12 = 148691699844242618L;
-      Object[] var11 = var10005;
+      Object var11 = var10005;
       var10005 = Ref.h(148691699844242618L, var11, var12);
 
       try {

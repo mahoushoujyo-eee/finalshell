@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
-import com.finalshell.core.CB;
+import com.finalshell.core.ProcessMonitorService;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Oi4 implements Runnable {
-   public final CB X;
+   public final ProcessMonitorService X;
 
-   public Oi4(CB var1) {
+   public Oi4(ProcessMonitorService var1) {
       this.X = var1;
    }
 

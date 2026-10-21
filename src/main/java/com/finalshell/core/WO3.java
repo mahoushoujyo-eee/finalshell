@@ -114,10 +114,11 @@ public abstract class WO3 implements K3_2 {
    public abstract Component j(JList var1, int var2, Object var3);
 
    public void b(JList var1, int var2, Object var3) {
+      int var4;
       El4 var5 = new El4(this, var1);
       int var10000 = f();
       this.d.addFocusListener(var5);
-      int var4 = var10000;
+      var4 = var10000;
       this.d.addKeyListener(new X5(this, var5, var1));
       if (Ky4.F$arrString() != null) {
          S(++var4);
@@ -126,6 +127,7 @@ public abstract class WO3 implements K3_2 {
 
    @Override
    public void N(JList var1, int var2) {
+      WO3 var4;
       int var3 = f();
       int var10000 = var2;
       if (var3 == 0) {
@@ -223,9 +225,10 @@ public abstract class WO3 implements K3_2 {
    }
 
    public Rectangle n(JList var1, int var2, Object var3) {
+      int var4;
       int var10000 = f();
       Rectangle var5 = var1.getCellBounds(var2, var2);
-      int var4 = var10000;
+      var4 = var10000;
       Rectangle var7 = var5;
       if (var4 == 0) {
          if (var5 == null) {
@@ -248,7 +251,7 @@ public abstract class WO3 implements K3_2 {
             ListModel var7 = var1.getModel();
             var10000 = (var7 instanceof DefaultListModel) ? 1 : 0;
             if (var6 == 0) {
-               if (var10000) {
+               if (var10000 != 0) {
                   DefaultListModel var10 = (DefaultListModel)var7;
                   var10.setElementAt(var4, var2);
                   return true;
@@ -258,7 +261,7 @@ public abstract class WO3 implements K3_2 {
             }
 
             if (var6 == 0) {
-               if (var10000) {
+               if (var10000 != 0) {
                   Object[] var8 = new Object[var7.getSize()];
                   int var9 = 0;
 
@@ -294,7 +297,7 @@ public abstract class WO3 implements K3_2 {
                   return var10000 != 0;
                }
 
-               var10000 = (((((boolean)0) != 0) != 0) != 0) != 0;
+               var10000 = (0) != 0;
             }
 
             return var10000;
@@ -308,10 +311,11 @@ public abstract class WO3 implements K3_2 {
 
    @Override
    public void n(JList var1, int var2) {
+      JList var4;
       int var10000 = f();
       this.f = var2;
       int var3 = var10000;
-      JList var4 = var1;
+      var4 = var1;
       if (var3 == 0) {
          if (!(var1 instanceof com.finalshell.ui.panel.CI)) {
             return;
@@ -342,10 +346,11 @@ public abstract class WO3 implements K3_2 {
 
    @Override
    public void X(JList var1, int var2) {
+      JList var4;
       int var10000 = H();
       this.f = -1;
       int var3 = var10000;
-      JList var4 = var1;
+      var4 = var1;
       if (var3 != 0) {
          if (!(var1 instanceof com.finalshell.ui.panel.CI)) {
             return;

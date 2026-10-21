@@ -1,13 +1,13 @@
 package com.finalshell.task;
 
-import com.finalshell.core.CK;
+import com.finalshell.core.ZModemTransfer;
 import com.finalshell.core.SelectUploadFile;
 
 public class XU3 implements Runnable {
-   public final CK q;
+   public final ZModemTransfer q;
    public final SelectUploadFile i;
 
-   public XU3(SelectUploadFile var1, CK var2) {
+   public XU3(SelectUploadFile var1, ZModemTransfer var2) {
       this.i = var1;
       this.q = var2;
    }

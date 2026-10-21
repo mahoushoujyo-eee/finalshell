@@ -23,7 +23,7 @@ public class VG implements ActionListener {
       Ref.g(220282364724549275L, var5);
       T32 var10003 = (T32)(Registry.emptyArgs());
       long var8 = 194560825135347400L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(194560825135347400L, var7, var8);
 
       try {

@@ -2,14 +2,14 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.RouteTracePanel2;
+import com.finalshell.ui.panel.ConnectionContextMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class YT implements ActionListener {
-   public final RouteTracePanel2 J;
+   public final ConnectionContextMenu J;
 
-   public YT(RouteTracePanel2 var1) {
+   public YT(ConnectionContextMenu var1) {
       this.J = var1;
    }
 

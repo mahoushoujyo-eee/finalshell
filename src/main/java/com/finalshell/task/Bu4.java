@@ -2,28 +2,28 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.Rectangle;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bu4 implements Runnable {
    public final boolean i;
-   public final Connection4 r;
+   public final ConnectionInfoPanel r;
    public static long a;
 
-   public Bu4(Connection4 var1, boolean var2) {
+   public Bu4(ConnectionInfoPanel var1, boolean var2) {
       this.r = var1;
       this.i = var2;
    }
 
    @Override
    public void run() {
-      Connection4.I();
+      ConnectionInfoPanel.I();
       Object var6 = 481550355343873241L;
       Object var10002 = Ref.g(481550355343873241L, var6);
       Rectangle var10003 = (Rectangle)(Registry.emptyArgs());
       long var9 = 519181782535843793L;
-      Object[] var8 = var10003;
+      Object var8 = var10003;
       var10003 = Ref.h(519181782535843793L, var8, var9);
 
       try {
@@ -35,9 +35,9 @@ public class Bu4 implements Runnable {
       Rectangle var2 = var10003;
       Object var1 = var10002;
       Object var10 = 481550355343873241L;
-      Rectangle var3 = ((Connection4)Ref.g(481550355343873241L, var10)).getBounds();
+      Rectangle var3 = ((ConnectionInfoPanel)Ref.g(481550355343873241L, var10)).getBounds();
       Object var12 = 481550355343873241L;
-      Object var10004 = ((Connection4)Ref.g(481550355343873241L, var12)).getParent();
+      Object var10004 = ((ConnectionInfoPanel)Ref.g(481550355343873241L, var12)).getParent();
       if (var1 != null) {
          if (var10004 == null) {
             return;
@@ -45,7 +45,7 @@ public class Bu4 implements Runnable {
 
          var10004 = this;
          Object var14 = 481550355343873241L;
-         ((Connection4)Ref.g(481550355343873241L, var14)).getParent();
+         ((ConnectionInfoPanel)Ref.g(481550355343873241L, var14)).getParent();
       }
 
       label48: {
@@ -74,7 +74,7 @@ public class Bu4 implements Runnable {
 
       if (Registry.lookupField(234151530419687938L).getBoolean(this) && var2 != null) {
          Object var16 = 481550355343873241L;
-         ((Connection4)Ref.g(481550355343873241L, var16)).scrollRectToVisible(var2);
+         ((ConnectionInfoPanel)Ref.g(481550355343873241L, var16)).scrollRectToVisible(var2);
       }
    }
 

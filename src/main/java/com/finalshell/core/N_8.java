@@ -9,17 +9,19 @@ public final class N_8 {
    public static boolean y;
 
    public static Object A(Object var0, Method[] var1) {
+      boolean var10;
+      Object var9;
       int[] var2;
       java.lang.Class var3;
       byte var8;
       int[] var10000 = D_8.q();
       var3 = var1[0].getDeclaringClass();
       var2 = var10000;
-      var8 = (y) ? 1 : 0;
+      var8 = (byte)((y) ? 1 : 0);
       label77:
       if (var2 == null) {
          if (!y) {
-            var8 = (var3.isInterface()) ? 1 : 0;
+            var8 = (byte)((var3.isInterface()) ? 1 : 0);
             if (var2 != null) {
                break label77;
             }

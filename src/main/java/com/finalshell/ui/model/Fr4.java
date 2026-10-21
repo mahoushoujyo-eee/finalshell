@@ -31,6 +31,7 @@ public class Fr4 extends AbstractTableModel {
    }
 
    public synchronized int C() {
+      YI var16;
       int[] var10000 = SelectDownloadFolderPanel.O$arrint();
       Object var2 = false;
       int[] var1 = var10000;
@@ -44,7 +45,7 @@ public class Fr4 extends AbstractTableModel {
             var10001 = var4;
             Integer var10002 = (Integer)(Registry.emptyArgs());
             long var9 = 532275517761561192L;
-            Object[] var8 = var10002;
+            Object var8 = var10002;
             var10002 = Ref.h(532275517761561192L, var8, var9);
 
             try {
@@ -54,7 +55,7 @@ public class Fr4 extends AbstractTableModel {
             }
 
             Object var5 = var10002;
-            YI var16 = (YI)var5;
+            var16 = (YI)var5;
             if (var1 != null) {
                break;
             }
@@ -99,6 +100,7 @@ public class Fr4 extends AbstractTableModel {
    }
 
    public synchronized YI O() {
+      long var13;
       int[] var10000 = SelectDownloadFolderPanel.O$arrint();
       YI var2 = null;
       int[] var1 = var10000;
@@ -114,9 +116,9 @@ public class Fr4 extends AbstractTableModel {
          ArrayList var10002 = (ArrayList)Ref.g(400544122862714728L, var8);
          Object var10 = 400544122862714728L;
          YI var4 = (YI)this.get(((ArrayList)Ref.g(400544122862714728L, var10)).size() - 1 - var3);
-         Object[] var10004 = Registry.emptyArgs();
-         long var13 = 532275517761561192L;
-         Object[] var12 = var10004;
+         Object var10004 = Registry.emptyArgs();
+         var13 = 532275517761561192L;
+         Object var12 = var10004;
          var10004 = Ref.h(532275517761561192L, var12, var13);
 
          try {
@@ -258,6 +260,7 @@ public class Fr4 extends AbstractTableModel {
    }
 
    public int V(int var1) {
+      boolean var13;
       int var3 = -1;
       int[] var10000 = SelectDownloadFolderPanel.O$arrint();
       int var4 = 0;
@@ -276,9 +279,9 @@ public class Fr4 extends AbstractTableModel {
                   break;
                }
 
-               Object[] var10003 = Registry.emptyArgs();
+               Object var10003 = Registry.emptyArgs();
                long var10 = 305126359001981386L;
-               Object[] var9 = var10003;
+               Object var9 = var10003;
                var10003 = Ref.h(305126359001981386L, var9, var10);
 
                try {

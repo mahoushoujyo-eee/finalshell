@@ -156,7 +156,7 @@ public class Yc2_2 extends BasicListUI {
       String[] var10000 = com.finalshell.ui.panel.CI.c();
       var9 = var5.getElementAt(var2);
       var8 = var10000;
-      var10 = (var6.isSelectedIndex(var2)) ? 1 : 0;
+      var10 = (byte)((var6.isSelectedIndex(var2)) ? 1 : 0);
       var16 = (this.O) ? 1 : 0;
       label78:
       if (var8 == null) {
@@ -188,7 +188,7 @@ public class Yc2_2 extends BasicListUI {
                var10002 = var10 == 0 ? 1 : 0;
             }
 
-            Composite var12 = RV.a(var11, var10001, (boolean)var10002);
+            Composite var12 = RV.a(var11, var10001, var10002);
             Rectangle var13 = new Rectangle(var3);
             var13.x = var13.x + this.g;
             var13.y = var13.y + this.g;
@@ -225,7 +225,7 @@ public class Yc2_2 extends BasicListUI {
                var10002 = var10 == 0 ? 1 : 0;
             }
 
-            RV.E(var11, var12, (boolean)var10002);
+            RV.E(var11, var12, var10002);
          }
 
          var16 = (this.list.hasFocus()) ? 1 : 0;
@@ -255,7 +255,7 @@ public class Yc2_2 extends BasicListUI {
       }
 
       int var14 = var16;
-      Component var15 = var4.getListCellRendererComponent(this.list, var9, var2, (boolean)var10, (boolean)((((var14 != 0) != 0) != 0) != 0));
+      Component var15 = var4.getListCellRendererComponent(this.list, var9, var2, (boolean)var10, (boolean)(var14 != 0));
       this.rendererPane.paintComponent(var1, var15, this.list, var3.x, var3.y, var3.width, var3.height, true);
    }
 

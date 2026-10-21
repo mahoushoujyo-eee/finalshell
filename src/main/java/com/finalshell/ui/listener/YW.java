@@ -124,6 +124,18 @@ public class YW extends MouseAdapter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public boolean n(MouseEvent var1, CN3 var2) {
+      boolean var100;
+      int var129;
+      MouseEvent var68;
+      YW var70;
+      Rectangle var72;
+      Rectangle var75;
+      int var78;
+      int var80;
+      int var82;
+      int var89;
+      int var93;
+      int var96;
       int[] var10000 = KD3.u();
       BufferedImage var4 = this.o.O();
       int[] var3 = var10000;
@@ -154,13 +166,13 @@ public class YW extends MouseAdapter {
          int var16 = BM.Y(this.o, var12, var9, var11);
          int var17 = BM.P(this.o, var13, var11);
          int var18 = BM.w(this.o, var13, var10, var11);
-         byte var66 = (var2.equals(CN3.mousePressed)) ? 1 : 0;
+         byte var66 = (byte)((var2.equals(CN3.mousePressed)) ? 1 : 0);
          if (var3 == null) {
             if (var66 != 0) {
                this.o.requestFocusInWindow();
             }
 
-            var66 = (BM.D(this.o)) ? 1 : 0;
+            var66 = (byte)((BM.D(this.o)) ? 1 : 0);
          }
 
          label1877: {
@@ -171,7 +183,7 @@ public class YW extends MouseAdapter {
                         label1887: {
                            if (var3 == null) {
                               if (var66 == 0) {
-                                 var66 = (BM.x(this.o)) ? 1 : 0;
+                                 var66 = (byte)((BM.x(this.o)) ? 1 : 0);
                                  if (var3 != null) {
                                     break label1873;
                                  }
@@ -181,7 +193,7 @@ public class YW extends MouseAdapter {
                                  }
                               }
 
-                              var66 = (var2.equals(CN3.mouseMoved)) ? 1 : 0;
+                              var66 = (byte)((var2.equals(CN3.mouseMoved)) ? 1 : 0);
                            }
 
                            if (var3 != null) {
@@ -193,7 +205,7 @@ public class YW extends MouseAdapter {
                            }
                         }
 
-                        var66 = (var2.equals(CN3.mouseDragged)) ? 1 : 0;
+                        var66 = (byte)((var2.equals(CN3.mouseDragged)) ? 1 : 0);
                      }
 
                      if (var3 != null) {
@@ -201,7 +213,7 @@ public class YW extends MouseAdapter {
                      }
 
                      if (var66 == 0) {
-                        var66 = (var2.equals(CN3.mouseEntered)) ? 1 : 0;
+                        var66 = (byte)((var2.equals(CN3.mouseEntered)) ? 1 : 0);
                         if (var3 != null) {
                            break label1875;
                         }
@@ -239,7 +251,6 @@ public class YW extends MouseAdapter {
                      }
 
                      if (var67 != 0) {
-      int[] var68;
                         var68 = var1;
                         if (var3 != null) {
                            break label2046;
@@ -255,7 +266,6 @@ public class YW extends MouseAdapter {
                         }
 
                         if (var67 != 0) {
-      int[] var68;
                            break label1843;
                         }
                      }
@@ -316,7 +326,7 @@ public class YW extends MouseAdapter {
                      this.O = var1.getY();
                      this.o.setCursor(Cursor.getPredefinedCursor(a(19354, 1458221832100988988L)));
                      if (var3 == null) {
-                        return (boolean)var14;
+                        return var14 != 0;
                      }
                   }
 
@@ -337,7 +347,7 @@ public class YW extends MouseAdapter {
                         BM.t(this.o).i$R8().setValue(this.h.y - (var1.getY() - this.O));
                         this.o.setCursor(Cursor.getPredefinedCursor(a(3469, 3902783817702149672L)));
                         if (var3 == null) {
-                           return (boolean)var14;
+                           return var14 != 0;
                         }
                      }
                   }
@@ -362,13 +372,13 @@ public class YW extends MouseAdapter {
                   }
                }
 
-               return (boolean)var14;
+               return var14 != 0;
             }
 
             label1895: {
                if (var3 == null) {
                   if (BM.v(var69) == null) {
-                     return (boolean)var14;
+                     return var14 != 0;
                   }
 
                   var70 = this;
@@ -380,7 +390,7 @@ public class YW extends MouseAdapter {
                }
 
                if (BM.E(var69) == null) {
-                  return (boolean)var14;
+                  return var14 != 0;
                }
 
                var70 = this;
@@ -509,7 +519,7 @@ public class YW extends MouseAdapter {
                }
 
                this.o.setCursor(Cursor.getPredefinedCursor(a(28457, 3903936605368315021L)));
-               return (boolean)var14;
+               return var14 != 0;
             }
 
             label2049: {
@@ -634,20 +644,19 @@ public class YW extends MouseAdapter {
                }
 
                this.o.setCursor(Cursor.getPredefinedCursor(a(25620, 4591689828834764723L)));
-               return (boolean)var14;
+               return var14 != 0;
             }
 
             label2050: {
                if (var3 == null) {
                   label1665:
                   if (var75 == 0) {
-                     var78 = BM.w(this.o);
+                     var78 = (BM.w(this.o)) ? 1 : 0;
                      if (var3 != null) {
                         break label2050;
                      }
 
                      if (var78 == 0) {
-      int var78;
                         var78 = var6;
                         if (var3 != null) {
                            break label2050;
@@ -672,7 +681,7 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var78 = this.z;
+                     var78 = (this.z) ? 1 : 0;
                      break label2050;
                   }
 
@@ -761,13 +770,12 @@ public class YW extends MouseAdapter {
                if (var3 == null) {
                   label1613:
                   if (var78 == 0) {
-                     var80 = BM.w(this.o);
+                     var80 = (BM.w(this.o)) ? 1 : 0;
                      if (var3 != null) {
                         break label2051;
                      }
 
                      if (var80 == 0) {
-      int var80;
                         var80 = var6;
                         if (var3 != null) {
                            break label2051;
@@ -792,11 +800,11 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var80 = this.T;
+                     var80 = (this.T) ? 1 : 0;
                      break label2051;
                   }
 
-                  var78 = var2.equals(CN3.mousePressed);
+                  var78 = (var2.equals(CN3.mousePressed)) ? 1 : 0;
                }
 
                label1915: {
@@ -811,13 +819,13 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var78 = this.z;
+                     var78 = (this.z) ? 1 : 0;
                   }
 
                   label1584:
                   if (var3 == null) {
                      if (var78 != 0) {
-                        var78 = var2.equals(CN3.mouseDragged);
+                        var78 = (var2.equals(CN3.mouseDragged)) ? 1 : 0;
                         if (var3 != null) {
                            break label1584;
                         }
@@ -851,11 +859,11 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var78 = this.z;
+                     var78 = (this.z) ? 1 : 0;
                   }
 
                   if (var3 != null) {
-                     return (boolean)var78;
+                     return var78 != 0;
                   }
 
                   if (var78 != 0) {
@@ -874,14 +882,14 @@ public class YW extends MouseAdapter {
                }
 
                this.o.setCursor(Cursor.getPredefinedCursor(a(9245, 4824231993813116861L)));
-               return (boolean)var14;
+               return var14 != 0;
             }
 
             label2052: {
                if (var3 == null) {
                   label1561:
                   if (var80 == 0) {
-                     var82 = BM.w(this.o);
+                     var82 = (BM.w(this.o)) ? 1 : 0;
                      if (var3 != null) {
                         break label2052;
                      }
@@ -911,11 +919,11 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var82 = this.i;
+                     var82 = (this.i) ? 1 : 0;
                      break label2052;
                   }
 
-                  var80 = var2.equals(CN3.mousePressed);
+                  var80 = (var2.equals(CN3.mousePressed)) ? 1 : 0;
                }
 
                label1920: {
@@ -930,13 +938,13 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var80 = this.T;
+                     var80 = (this.T) ? 1 : 0;
                   }
 
                   label1532:
                   if (var3 == null) {
                      if (var80 != 0) {
-                        var80 = var2.equals(CN3.mouseDragged);
+                        var80 = (var2.equals(CN3.mouseDragged)) ? 1 : 0;
                         if (var3 != null) {
                            break label1532;
                         }
@@ -970,11 +978,11 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var80 = this.T;
+                     var80 = (this.T) ? 1 : 0;
                   }
 
                   if (var3 != null) {
-                     return (boolean)var80;
+                     return var80 != 0;
                   }
 
                   if (var80 != 0) {
@@ -993,7 +1001,7 @@ public class YW extends MouseAdapter {
                }
 
                this.o.setCursor(Cursor.getPredefinedCursor(a(1392, 5711206895726462674L)));
-               return (boolean)var14;
+               return var14 != 0;
             }
 
             label2053: {
@@ -1041,7 +1049,7 @@ public class YW extends MouseAdapter {
                      break label2053;
                   }
 
-                  var82 = var2.equals(CN3.mousePressed);
+                  var82 = (var2.equals(CN3.mousePressed)) ? 1 : 0;
                }
 
                label1927: {
@@ -1056,13 +1064,13 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var82 = this.i;
+                     var82 = (this.i) ? 1 : 0;
                   }
 
                   label1476:
                   if (var3 == null) {
                      if (var82 != 0) {
-                        var82 = var2.equals(CN3.mouseDragged);
+                        var82 = (var2.equals(CN3.mouseDragged)) ? 1 : 0;
                         if (var3 != null) {
                            break label1476;
                         }
@@ -1096,11 +1104,11 @@ public class YW extends MouseAdapter {
                         }
                      }
 
-                     var82 = this.i;
+                     var82 = (this.i) ? 1 : 0;
                   }
 
                   if (var3 != null) {
-                     return (boolean)var82;
+                     return var82 != 0;
                   }
 
                   if (var82 != 0) {
@@ -1119,7 +1127,7 @@ public class YW extends MouseAdapter {
                }
 
                this.o.setCursor(Cursor.getPredefinedCursor(a(5450, 4092936664386377443L)));
-               return (boolean)var14;
+               return var14 != 0;
             }
 
             Iterator var32 = BM.v(var84).U$List().iterator();
@@ -1185,6 +1193,7 @@ public class YW extends MouseAdapter {
                                                                   }
 
                                                                   if (var86 != 0) {
+      int var86;
                                                                      break label1449;
                                                                   }
                                                                }
@@ -1291,7 +1300,7 @@ public class YW extends MouseAdapter {
                                                    }
 
                                                    while (var86 != 0) {
-                                                      var43 = (EZ)var32.next();
+                                                      var43 = ((EZ)var32.next()) ? 1 : 0;
                                                       var93 = var43.C();
                                                       if (var3 != null) {
                                                          break label1450;
@@ -1895,7 +1904,7 @@ public class YW extends MouseAdapter {
                                        }
 
                                        if (var3 != null) {
-                                          return (boolean)var129;
+                                          return (var129 != 0);
                                        }
 
                                        if (var129 != 0) {
@@ -1918,7 +1927,7 @@ public class YW extends MouseAdapter {
                                     var93 = var14;
                                  }
 
-                                 return (boolean)var93;
+                                 return (var93 != 0);
                               }
 
                               label1956: {
@@ -2056,7 +2065,7 @@ public class YW extends MouseAdapter {
                               }
 
                               this.o.setCursor(Cursor.getPredefinedCursor(a(25620, 4591689828834764723L)));
-                              return (boolean)var14;
+                              return (var14 != 0);
                            }
 
                            label1958: {
@@ -2120,7 +2129,7 @@ public class YW extends MouseAdapter {
                               }
 
                               if (var3 != null) {
-                                 return (boolean)var93;
+                                 return (var93 != 0);
                               }
 
                               if (var93 != 0) {
@@ -2141,7 +2150,7 @@ public class YW extends MouseAdapter {
                            }
 
                            this.o.setCursor(Cursor.getPredefinedCursor(a(5450, 4092936664386377443L)));
-                           return (boolean)var14;
+                           return (var14 != 0);
                         }
 
                         label1961: {
@@ -2220,7 +2229,7 @@ public class YW extends MouseAdapter {
                         }
 
                         this.o.setCursor(Cursor.getPredefinedCursor(a(5450, 4092936664386377443L)));
-                        return (boolean)var14;
+                        return (var14 != 0);
                      }
 
                      label1963: {
@@ -2320,7 +2329,7 @@ public class YW extends MouseAdapter {
                      }
 
                      this.o.setCursor(Cursor.getPredefinedCursor(a(25620, 4591689828834764723L)));
-                     return (boolean)var14;
+                     return (var14 != 0);
                   }
 
                   label1965: {
@@ -2405,7 +2414,7 @@ public class YW extends MouseAdapter {
                   }
 
                   this.o.setCursor(Cursor.getPredefinedCursor(a(9245, 4824231993813116861L)));
-                  return (boolean)var14;
+                  return (var14 != 0);
                }
 
                label1968: {
@@ -2484,7 +2493,7 @@ public class YW extends MouseAdapter {
                }
 
                this.o.setCursor(Cursor.getPredefinedCursor(a(9245, 4824231993813116861L)));
-               return (boolean)var14;
+               return (var14 != 0);
             }
 
             label1970: {
@@ -2584,13 +2593,13 @@ public class YW extends MouseAdapter {
             }
 
             this.o.setCursor(Cursor.getPredefinedCursor(a(25620, 4591689828834764723L)));
-            return (boolean)var14;
+            return (var14 != 0);
          }
 
          MouseWheelEvent var19 = (MouseWheelEvent)var68;
          this.o.b(this.o.F() - var19.getWheelRotation());
          this.o.setCursor(Cursor.getDefaultCursor());
-         return (boolean)var14;
+         return (var14 != 0);
       }
    }
 
@@ -2727,8 +2736,6 @@ public class YW extends MouseAdapter {
       }
    }
 }
-
-
 
 
 

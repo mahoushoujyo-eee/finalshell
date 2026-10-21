@@ -2,15 +2,15 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class YY implements ActionListener {
-   public final ImportPanel R;
+   public final ImportMenuPanel R;
 
-   public YY(ImportPanel var1) {
+   public YY(ImportMenuPanel var1) {
       this.R = var1;
    }
 

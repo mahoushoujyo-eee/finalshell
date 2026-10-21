@@ -88,6 +88,7 @@ public class H22 extends HN3 {
 
    @Override
    public int C(int var1, int var2, int var3) {
+      double var12;
       String[] var4 = W5.q();
       float var13;
       int var10000 = (var13 = this.w.nextFloat() - this.v) == 0.0F ? 0 : (var13 < 0.0F ? -1 : 1);

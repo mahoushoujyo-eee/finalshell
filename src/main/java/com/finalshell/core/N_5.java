@@ -9,7 +9,7 @@ public final class N_5 {
    public static File[] H(String var0) {
       int var10000 = (m()) ? 1 : 0;
       int var2 = 0;
-      boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var1 = (var10000) != 0;
       ArrayList var3 = new ArrayList();
 
       do {

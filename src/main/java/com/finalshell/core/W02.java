@@ -125,7 +125,10 @@ public class W02 {
    }
 
    public byte[] B() {
-      int[] var10000 = XB.X();
+      int[] var10000;
+      int var17;
+      int var18;
+      var10000 = XB.X();
       int var2 = a(28346, 4599225218052421985L) + 2 * this.J;
       int[] var1 = var10000;
       int var3 = 0;
@@ -382,7 +385,8 @@ public class W02 {
    }
 
    public int O(String var1) {
-      int[] var10000 = XB.X();
+      int[] var10000;
+      var10000 = XB.X();
       this.g.y(1, var1, null, null);
       Nl4 var3 = this.D(this.g);
       int[] var2 = var10000;
@@ -406,8 +410,9 @@ public class W02 {
    }
 
    public Nl4 H(String var1) {
+      int[] var10000;
       this.D.y(a(30099, 5219950882138939981L), var1, null, null);
-      int[] var10000 = XB.X();
+      var10000 = XB.X();
       Nl4 var3 = this.D(this.D);
       int[] var2 = var10000;
 
@@ -430,7 +435,8 @@ public class W02 {
    }
 
    public Nl4 h(String var1, String var2, String var3) {
-      int[] var10000 = XB.X();
+      int[] var10000;
+      var10000 = XB.X();
       this.r.y(a(11772, 5883405572420221487L), var1, var2, var3);
       int[] var4 = var10000;
       Nl4 var5 = this.D(this.r);
@@ -506,7 +512,8 @@ public class W02 {
    }
 
    public Nl4 X(String var1) {
-      int[] var10000 = XB.X();
+      int[] var10000;
+      var10000 = XB.X();
       this.D.y(a(7104, 5962825564416216085L), var1, null, null);
       int[] var2 = var10000;
       Nl4 var3 = this.D(this.D);
@@ -530,7 +537,8 @@ public class W02 {
    }
 
    public Nl4 Q(String var1, String var2) {
-      int[] var10000 = XB.X();
+      int[] var10000;
+      var10000 = XB.X();
       this.D.y(a(17861, 4962858029073060381L), var1, var2, null);
       Nl4 var4 = this.D(this.D);
       int[] var3 = var10000;
@@ -618,6 +626,7 @@ public class W02 {
    }
 
    public void X(Nl4 var1) {
+      int var10000;
       int[] var2 = XB.X();
 
       int var3;
@@ -717,6 +726,8 @@ public class W02 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long[] var10000;
+      long[] var18;
       char[] var10003 = "i|C]#8".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -776,7 +787,7 @@ public class W02 {
                var25 = var10;
                var10 += 8;
                byte[] var16 = var12.substring(var25, var10).getBytes("ISO-8859-1");
-               long[] var18 = var14;
+               var18 = var14;
                var25 = var11++;
                long var32 = ((long)var16[0] & 255L) << 56
                   | ((long)var16[1] & 255L) << 48
@@ -906,7 +917,7 @@ public class W02 {
                   var21 = var2;
                   var2 += 8;
                   byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
-                  long[] var10000 = var6;
+                  var10000 = var6;
                   var21 = var3++;
                   long var30 = ((long)var7[0] & 255L) << 56
                      | ((long)var7[1] & 255L) << 48

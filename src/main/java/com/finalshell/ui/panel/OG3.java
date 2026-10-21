@@ -110,7 +110,7 @@ public class OG3 extends JComponent {
       Ref.g(146654817128359149L, var6);
       Rectangle var10003 = (Rectangle)(Registry.packArgs(var2));
       long var9 = 615346511791845692L;
-      Object[] var8 = var10003;
+      Object var8 = var10003;
       var10003 = Ref.h(615346511791845692L, var8, var9);
 
       try {
@@ -139,7 +139,7 @@ public class OG3 extends JComponent {
       Ref.g(146654817128359149L, var14);
       JComponent var10007 = Registry.emptyArgs();
       long var17 = 628582821169604628L;
-      Object[] var16 = var10007;
+      Object var16 = var10007;
       var10007 = Ref.h(628582821169604628L, var16, var17);
 
       try {

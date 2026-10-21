@@ -989,6 +989,7 @@ public class DK extends Y2 implements OM {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[12];
       int var11 = 0;
       String var10 = "ü{Ü&Xá\u0013Oy¶ÐØ\"G¬\u0000'\u001d\u008fnm.¦\u001d2Þ\u0003\u0005\u0098Õ¶\u0099Ò\fwÂ}ÕÒ\u0094S\u008fN? r\u0004cÚV\n\u0010\u0019V°GkÆhÏäo¶\u0002\u0093ªKÄ\u0005ò:ª]j\u001a \u0002G\t+\u0004}ó´!i*\u0015\u0019JËûd\u0014A\u001eÜÉ\u00adý¦\u0012ØÞ\u0088Vlä\u0098\u008fòô!\u0086¥{\u00ad\u008a\u0088¤\u0006\u008a\u0018¬Rß`\u001bxÔLÓJ_Q\u00981LÙ\u0087\u0003¬\u0088}£²\u001f\u009b\u007f\u0090íË\u007f3.";
@@ -1004,7 +1005,6 @@ public class DK extends Y2 implements OM {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

@@ -81,9 +81,9 @@ public class L implements ActionListener {
       Object var34 = 242072299205494154L;
       Ref.g(242072299205494154L, var34);
       Object var36 = 215009972678572825L;
-      Object[] var10018 = Registry.packArgs(Ref.g(215009972678572825L, var36));
+      Object var10018 = Registry.packArgs(Ref.g(215009972678572825L, var36));
       long var39 = 491105122976850438L;
-      Object[] var38 = var10018;
+      Object var38 = var10018;
       var10018 = Ref.h(491105122976850438L, var38, var39);
 
       try {

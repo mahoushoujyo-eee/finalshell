@@ -106,6 +106,7 @@ public class TL3 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public byte[] Q(HttpClient var1, String var2) {
+      ByteArrayOutputStream var26;
       String[] var10000 = UpdateFrame.q();
       byte[] var4 = null;
       String[] var3 = var10000;
@@ -124,7 +125,6 @@ public class TL3 {
 
          label55: {
             while ((var15 = var12.read(var14)) > 0) {
-      ByteArrayOutputStream var26;
                try {
                   var26 = var13;
                   if (var3 != null) {
@@ -136,7 +136,6 @@ public class TL3 {
                      break;
                   }
                } catch (Exception var21) {
-      ByteArrayOutputStream var26;
                   throw a(var21);
                }
             }
@@ -187,9 +186,9 @@ public class TL3 {
 
    public O0 K(O0 var1, String var2, HttpClient var3) throws IOException {
       byte[] var4 = var1.toString().getBytes(a(-7479, -2859));
-      Object[] var10001 = Registry.packArgs(var4, var2, var3, 3);
+      byte[] var10001 = (byte[])(Registry.packArgs(var4, var2, var3, 3));
       long var9 = 444236696396461940L;
-      Object[] var8 = var10001;
+      Object var8 = var10001;
       var10001 = Ref.h(444236696396461940L, var8, var9);
 
       try {
@@ -1301,6 +1300,7 @@ public class TL3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var46;
       String[] var21 = new String[6];
       int var19 = 0;
       String var18 = "<úþØÆü\u0083^\"º¼UùÉ+\u0004SéO\u008c\u0005Ãó]Ï\u00010\u0004\u009a×5þ»Í\u0019-\u0087A\u001aV\u0014¡|B\u0090÷°TÒ\u0007\u008fô\u009b\u0080`³)ÚñÆ\u0086ìès\u007f1÷P\u008c\u008c}\u008b\u0093m\u0093";
@@ -1540,7 +1540,6 @@ public class TL3 {
       }
    }
 }
-
 
 
 

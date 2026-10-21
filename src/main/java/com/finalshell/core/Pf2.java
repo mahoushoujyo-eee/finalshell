@@ -63,7 +63,7 @@ public class Pf2 implements Wy4 {
       if (var2 == null) {
          return var3 != 0;
       } else {
-         return (boolean)(var3 >= 0 ? 1 : 0);
+         return ((var3 >= 0 ? 1 : 0) != 0);
       }
    }
 }

@@ -1,16 +1,16 @@
 package com.finalshell.task;
 
 import com.finalshell.core.DQ3;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.reflect.Ref;
 import java.io.IOException;
 
 public class MJ implements Runnable {
    public final DQ3 C;
    public final String J;
-   public final Ty2 d;
+   public final RemoteProcessManager d;
 
-   public MJ(Ty2 var1, DQ3 var2, String var3) {
+   public MJ(RemoteProcessManager var1, DQ3 var2, String var3) {
       this.d = var1;
       this.C = var2;
       this.J = var3;

@@ -3,7 +3,7 @@ package com.finalshell.ui.adapter;
 import com.finalshell.core.Kl2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.FilePanel;
+import com.finalshell.ui.panel.FileCommandPanel;
 import com.finalshell.ui.panel.LI;
 import java.awt.Color;
 import java.awt.Component;
@@ -41,9 +41,15 @@ public class BL extends DefaultTableCellRenderer {
 
    @Override
    public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
+      String var61;
+      Long var64;
+      Long var66;
+      Long var77;
+      Long var83;
+      Long var85;
       Object var13 = 595445583775762992L;
       LI var8 = (LI)Ref.g(595445583775762992L, var13);
-      boolean var10001 = FilePanel.q();
+      boolean var10001 = FileCommandPanel.q();
       int var9 = var1.convertColumnIndexToModel(var6);
       boolean var7 = var10001;
       if (var9 == 1) {
@@ -52,9 +58,9 @@ public class BL extends DefaultTableCellRenderer {
       var8.setHorizontalAlignment(2);
       Kl2 var10 = null;
       var8.setFont((Font)Registry.lookupField(593752358540399204L).get(null));
-      Object[] var10002 = Registry.packArgs(false);
+      Object var10002 = Registry.packArgs(false);
       long var16 = 630219014051795833L;
-      Object[] var15 = var10002;
+      Object var15 = var10002;
       Ref.h(630219014051795833L, var15, var16);
 
       try {
@@ -106,9 +112,9 @@ public class BL extends DefaultTableCellRenderer {
                if (var7) {
                   if (var58 == var10003) {
                      new StringBuilder();
-                     Object[] var10004 = Registry.emptyArgs();
+                     Object var10004 = Registry.emptyArgs();
                      long var20 = 405237998940608713L;
-                     Object[] var19 = var10004;
+                     Object var19 = var10004;
                      var10004 = Ref.h(405237998940608713L, var19, var20);
 
                      try {
@@ -128,9 +134,9 @@ public class BL extends DefaultTableCellRenderer {
                      }
 
                      var10004.append((String)var10005).append("/");
-                     Object[] var10006 = Registry.emptyArgs();
+                     Object var10006 = Registry.emptyArgs();
                      long var24 = 399113218510016089L;
-                     Object[] var23 = var10006;
+                     Object var23 = var10006;
                      var10006 = Ref.h(399113218510016089L, var23, var24);
 
                      try {
@@ -163,9 +169,9 @@ public class BL extends DefaultTableCellRenderer {
                      }
 
                      float var81 = 100.0F;
-                     Object[] var10009 = Registry.emptyArgs();
+                     Object var10009 = Registry.emptyArgs();
                      long var30 = 431375544983974376L;
-                     Object[] var29 = var10009;
+                     Object var29 = var10009;
                      var10009 = Ref.h(431375544983974376L, var29, var30);
 
                      try {
@@ -175,9 +181,9 @@ public class BL extends DefaultTableCellRenderer {
                      }
 
                      float var10008 = var10 * (float)var83;
-                     Object[] var10010 = Registry.emptyArgs();
+                     Object var10010 = Registry.emptyArgs();
                      long var32 = 399113218510016089L;
-                     Object[] var31 = var10010;
+                     Object var31 = var10010;
                      var10010 = Ref.h(399113218510016089L, var31, var32);
 
                      try {
@@ -237,7 +243,7 @@ public class BL extends DefaultTableCellRenderer {
                new StringBuilder();
                String var70 = (String)(Registry.emptyArgs());
                long var38 = 607781649910455471L;
-               Object[] var37 = var70;
+               Object var37 = var70;
                var70 = Ref.h(607781649910455471L, var37, var38);
 
                try {

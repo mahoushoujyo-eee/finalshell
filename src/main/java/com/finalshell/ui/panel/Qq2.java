@@ -61,6 +61,7 @@ public class Qq2 extends QX {
    }
 
    public void b() {
+      Qq2 var5;
       String[] var1;
       int var3;
       label163: {
@@ -333,6 +334,8 @@ public class Qq2 extends QX {
 
    @Override
    public void R() {
+      boolean var5;
+      Qq2 var6;
       String[] var1;
       KD var4;
       label145: {
@@ -362,7 +365,7 @@ public class Qq2 extends QX {
          label147: {
             Point var2 = FN.n(var4, this.getParent());
             Dimension var3 = this.getPreferredSize();
-            boolean var5 = this.e.equals(YH.downLeft);
+            var5 = this.e.equals(YH.downLeft);
             if (var1 == null) {
                if (var5) {
                   this.setBounds(new Rectangle(new Point(var2.x + this.l.getWidth() - var3.width, var2.y), var3));
@@ -1028,6 +1031,7 @@ public class Qq2 extends QX {
    }
 
    public static String b(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -26121) & 65535;
       if (d[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1808,7 +1812,7 @@ public class Qq2 extends QX {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1842,6 +1846,9 @@ public class Qq2 extends QX {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
+      boolean var5;
+      long[] var6;
       String[] var13 = new String[28];
       int var11 = 0;
       String var10 = "cÍ^\u0096P%\u0090\u0083´ò\u0007\u00078=9lm9´\u0003g\tÒ\u0007¶_É r°u\u0004ø \u0084÷\u0003r\u0013Q\u0007qÌ\u0010RHþ\u0013\u0004dÝ¾\u0094\u0007?,ùNT}\u0090\u0007\u0003(\u007fÎ¦m¬\u0003çáã\u0003\u001cU¼\u0003rjP\u0007ÛuEeâ\u0018F\u0003ß\u0096Å\u0007éó\"µ\u000f\u0002Ù\u0007@Â\u0017\u0093¨Æ\u000e\u0011\u0084PCùp\u0097\u0017\u000bxõAu3t:¶ã\u0016¥fºi\\7ì\u008aÉÞn\u0012ZÃö{îÊùE\u0096\u0018\u0007uc±§}@\u0094\u0007l8\u0093Ì\u0019-9\u0007¡F+\u0003/Ôþ\u0013\u008d[¿ÎüÃø\u0014K\r+aT\u0096:¢\u0098´ã\u0003f%Ò\u0006Ùv~fÛg\u0014#\u0019·Ðî²Ä¯\u0017h\nýW\u0016Y¿[\u0094³\u0089";
@@ -1857,7 +1864,6 @@ public class Qq2 extends QX {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;
@@ -1936,10 +1942,10 @@ public class Qq2 extends QX {
                      a = var13;
                      d = new String[28];
                      long var0 = 3613628633451842062L;
-                     long[] var6 = new long[6];
+                     var6 = new long[6];
                      int var3 = 0;
                      String var4 = "igVîü©2->\u001eñ\u0010\u001bHÀÞÀ\u0018\u0084\u0019Jl\u008c%\u0007Ü\u008aÂlwb\u0001";
-                     int var5 = "igVîü©2->\u001eñ\u0010\u001bHÀÞÀ\u0018\u0084\u0019Jl\u008c%\u0007Ü\u008aÂlwb\u0001".length();
+                     var5 = "igVîü©2->\u001eñ\u0010\u001bHÀÞÀ\u0018\u0084\u0019Jl\u008c%\u0007Ü\u008aÂlwb\u0001".length();
                      byte var2 = 0;
 
                      label44:
@@ -1987,7 +1993,7 @@ public class Qq2 extends QX {
                                  }
 
                                  var4 = "$#Ù\u0018õüj8\t\u0001©x\u0093J½÷";
-                                 var5 = "$#Ù\u0018õüj8\t\u0001©x\u0093J½÷".length();
+                                 var5 = ("$#Ù\u0018õüj8\t\u0001©x\u0093J½÷".length()) != 0;
                                  var2 = 0;
                            }
 

@@ -62,7 +62,7 @@ public class LocalDrive extends Z7 {
       Registry.lookupField(197355681785271272L).setBoolean(this, var2);
       JPanel var10005 = (JPanel)(Registry.emptyArgs());
       long var11 = 608704978143961012L;
-      Object[] var10 = var10005;
+      Object var10 = var10005;
       var10005 = Ref.h(608704978143961012L, var10, var11);
 
       try {
@@ -74,7 +74,7 @@ public class LocalDrive extends Z7 {
       this.add(var10005, a(-3042, 6912));
       JPanel var10006 = (JPanel)(Registry.emptyArgs());
       long var13 = 365709943079984455L;
-      Object[] var12 = var10006;
+      Object var12 = var10006;
       var10006 = Ref.h(365709943079984455L, var12, var13);
 
       try {
@@ -86,7 +86,7 @@ public class LocalDrive extends Z7 {
       this.add(var10006, a(-3049, 4970));
       JPanel var10007 = (JPanel)(Registry.emptyArgs());
       long var15 = 394619730622092443L;
-      Object[] var14 = var10007;
+      Object var14 = var10007;
       var10007 = Ref.h(394619730622092443L, var14, var15);
 
       try {
@@ -98,7 +98,7 @@ public class LocalDrive extends Z7 {
       this.add(var10007, a(-3049, 4970));
       JPanel var10008 = (JPanel)(Registry.emptyArgs());
       long var17 = 576588122403023061L;
-      Object[] var16 = var10008;
+      Object var16 = var10008;
       var10008 = Ref.h(576588122403023061L, var16, var17);
 
       try {
@@ -273,6 +273,8 @@ public class LocalDrive extends Z7 {
    }
 
    public void I() {
+      Integer var45;
+      Integer var47;
       label45: {
          Object var7 = 368767177165012471L;
          int var2 = ((JComboBox)Ref.g(368767177165012471L, var7)).getSelectedIndex();
@@ -313,9 +315,9 @@ public class LocalDrive extends Z7 {
                new StringBuilder().append("");
                Object var23 = 151389623773796165L;
                Object var10011 = Ref.g(151389623773796165L, var23);
-               Object[] var10012 = Registry.emptyArgs();
+               Object var10012 = Registry.emptyArgs();
                long var26 = 412792667242934937L;
-               Object[] var25 = var10012;
+               Object var25 = var10012;
                var10012 = Ref.h(412792667242934937L, var25, var26);
 
                try {
@@ -330,9 +332,9 @@ public class LocalDrive extends Z7 {
                new StringBuilder().append("");
                Object var29 = 151389623773796165L;
                Object var10014 = Ref.g(151389623773796165L, var29);
-               Object[] var10015 = Registry.emptyArgs();
+               Object var10015 = Registry.emptyArgs();
                long var32 = 435664632647390684L;
-               Object[] var31 = var10015;
+               Object var31 = var10015;
                var10015 = Ref.h(435664632647390684L, var31, var32);
 
                try {
@@ -362,6 +364,8 @@ public class LocalDrive extends Z7 {
    }
 
    public JPanel U() {
+      long var23;
+      Object var45;
       JPanel var1 = new JPanel();
       var1.setLayout(new MigLayout(a(-3055, -10212)));
       var1.setBorder(BorderFactory.createTitledBorder(a(-3043, -8432)));
@@ -394,7 +398,7 @@ public class LocalDrive extends Z7 {
       Object var21 = 390304842584141116L;
       this.add((JPanel)Ref.g(390304842584141116L, var21), a(-3063, -11470));
       Registry.emptyArgs();
-      long var23 = 373611601539122883L;
+      var23 = 373611601539122883L;
       Object var10012 = Ref.h2(373611601539122883L, var23);
       long var26 = 403035936589301088L;
       Object var25 = var10012;
@@ -422,7 +426,7 @@ public class LocalDrive extends Z7 {
       long var43 = 305013025773761213L;
       Object var10022 = Ref.h2(305013025773761213L, var43);
       long var46 = 391788251218956875L;
-      Object var45 = var10022;
+      var45 = var10022;
       Ref.s(391788251218956875L, var45, var46);
       Object var47 = 369234700566588947L;
       JPanel var10023 = (JPanel)Ref.g(369234700566588947L, var47);
@@ -442,13 +446,21 @@ public class LocalDrive extends Z7 {
 
    @Override
    public void A(Lv4_2 var1) {
+      Integer var104;
+      Integer var107;
+      Boolean var109;
+      Object[] var23;
+      Object[] var45;
+      Integer var82;
+      Boolean var93;
+      Boolean var95;
       long var4 = 151389623773796165L;
       Ref.s(151389623773796165L, var1, var4);
       Object var5 = 197610545248073809L;
       JTextField var10002 = (JTextField)Ref.g(197610545248073809L, var5);
       String var10004 = (String)(Registry.emptyArgs());
       long var8 = 286931176286176762L;
-      Object[] var7 = var10004;
+      Object var7 = var10004;
       var10004 = Ref.h(286931176286176762L, var7, var8);
 
       try {
@@ -463,7 +475,7 @@ public class LocalDrive extends Z7 {
       JTextField var10005 = (JTextField)Ref.g(263407884175474521L, var9);
       String var10007 = (String)(Registry.emptyArgs());
       long var12 = 380415140795833934L;
-      Object[] var11 = var10007;
+      Object var11 = var10007;
       var10007 = Ref.h(380415140795833934L, var11, var12);
 
       try {
@@ -476,9 +488,9 @@ public class LocalDrive extends Z7 {
       Object var13 = 296269333086093142L;
       JTextField var80 = (JTextField)Ref.g(296269333086093142L, var13);
       StringBuilder var10008 = new StringBuilder();
-      Object[] var10010 = Registry.emptyArgs();
+      Object var10010 = Registry.emptyArgs();
       long var16 = 255354522009994316L;
-      Object[] var15 = var10010;
+      Object var15 = var10010;
       var10010 = Ref.h(255354522009994316L, var15, var16);
 
       try {
@@ -492,7 +504,7 @@ public class LocalDrive extends Z7 {
       JTextArea var10009 = (JTextArea)Ref.g(249088734500529849L, var17);
       String var10011 = (String)(Registry.emptyArgs());
       long var20 = 218711337515318169L;
-      Object[] var19 = var10011;
+      Object var19 = var10011;
       var10011 = Ref.h(218711337515318169L, var19, var20);
 
       try {
@@ -506,7 +518,7 @@ public class LocalDrive extends Z7 {
       JTextField var85 = (JTextField)Ref.g(403035936589301088L, var21);
       String var10013 = (String)(Registry.emptyArgs());
       long var24 = 255973732097233937L;
-      Object[] var23 = var10013;
+      var23 = var10013;
       var10013 = Ref.h(255973732097233937L, var23, var24);
 
       try {
@@ -520,7 +532,7 @@ public class LocalDrive extends Z7 {
       JPasswordField var88 = (JPasswordField)Ref.g(391788251218956875L, var25);
       String var10015 = (String)(Registry.emptyArgs());
       long var28 = 328657051879287558L;
-      Object[] var27 = var10015;
+      Object var27 = var10015;
       var10015 = Ref.h(328657051879287558L, var27, var28);
 
       try {
@@ -532,9 +544,9 @@ public class LocalDrive extends Z7 {
       var1.setText(var10015);
       Object var29 = 404502531953452066L;
       JCheckBox var91 = (JCheckBox)Ref.g(404502531953452066L, var29);
-      Object[] var10017 = Registry.emptyArgs();
+      Object var10017 = Registry.emptyArgs();
       long var32 = 581008912184751225L;
-      Object[] var31 = var10017;
+      Object var31 = var10017;
       var10017 = Ref.h(581008912184751225L, var31, var32);
 
       try {
@@ -547,9 +559,9 @@ public class LocalDrive extends Z7 {
       JCheckBox var2 = var91;
       Object var33 = 235374670800404729L;
       JCheckBox var10016 = (JCheckBox)Ref.g(235374670800404729L, var33);
-      Object[] var10018 = Registry.emptyArgs();
+      Object var10018 = Registry.emptyArgs();
       long var36 = 210756892633166167L;
-      Object[] var35 = var10018;
+      Object var35 = var10018;
       var10018 = Ref.h(210756892633166167L, var35, var36);
 
       try {
@@ -561,7 +573,7 @@ public class LocalDrive extends Z7 {
       var1.setSelected(var95);
       var10018 = Registry.emptyArgs();
       long var38 = 142726811055146914L;
-      Object[] var37 = var10018;
+      Object var37 = var10018;
       var10018 = Ref.h(142726811055146914L, var37, var38);
 
       try {
@@ -610,7 +622,7 @@ public class LocalDrive extends Z7 {
 
          Object[] var101 = Registry.emptyArgs();
          long var46 = 460154043505201015L;
-         Object[] var45 = var101;
+         var45 = var101;
          Object var102 = Ref.h(460154043505201015L, var45, var46);
 
          try {
@@ -632,9 +644,9 @@ public class LocalDrive extends Z7 {
          Object var49 = 368767177165012471L;
          JComboBox var10020 = (JComboBox)Ref.g(368767177165012471L, var49);
          new StringBuilder();
-         Object[] var10023 = Registry.emptyArgs();
+         Object var10023 = Registry.emptyArgs();
          long var52 = 412792667242934937L;
-         Object[] var51 = var10023;
+         Object var51 = var10023;
          var10023 = Ref.h(412792667242934937L, var51, var52);
 
          try {
@@ -644,9 +656,9 @@ public class LocalDrive extends Z7 {
          }
 
          StringBuilder var10022 = var1.append(var104).append("x");
-         Object[] var10024 = Registry.emptyArgs();
+         Object var10024 = Registry.emptyArgs();
          long var54 = 435664632647390684L;
-         Object[] var53 = var10024;
+         Object var53 = var10024;
          var10024 = Ref.h(435664632647390684L, var53, var54);
 
          try {
@@ -660,9 +672,9 @@ public class LocalDrive extends Z7 {
 
       Object var55 = 453640689889277073L;
       JCheckBox var105 = (JCheckBox)Ref.g(453640689889277073L, var55);
-      Object[] var10025 = Registry.emptyArgs();
+      Object var10025 = Registry.emptyArgs();
       long var58 = 527408693245614383L;
-      Object[] var57 = var10025;
+      Object var57 = var10025;
       var10025 = Ref.h(527408693245614383L, var57, var58);
 
       try {
@@ -674,7 +686,7 @@ public class LocalDrive extends Z7 {
       var1.setSelected(var109);
       var10025 = Registry.emptyArgs();
       long var60 = 568446940499935634L;
-      Object[] var59 = var10025;
+      Object var59 = var10025;
       Ref.h(568446940499935634L, var59, var60);
 
       try {
@@ -1406,6 +1418,8 @@ public class LocalDrive extends Z7 {
 
    @Override
    public void F(Lv4_2 var1) {
+      long var23;
+      long var45;
       Z7.m();
       Object var12 = 197610545248073809L;
       String var3 = ((JTextField)Ref.g(197610545248073809L, var12)).getText().trim();
@@ -1436,7 +1450,7 @@ public class LocalDrive extends Z7 {
       Object var20 = 296269333086093142L;
       String var5 = ((JTextField)Ref.g(296269333086093142L, var20)).getText().trim();
       Object[] var10006 = Registry.packArgs(Integer.parseInt(var5));
-      long var23 = 386290519648630578L;
+      var23 = 386290519648630578L;
       Object[] var22 = var10006;
       Ref.h(386290519648630578L, var22, var23);
 
@@ -1461,7 +1475,7 @@ public class LocalDrive extends Z7 {
 
       String var10009;
       Object var28 = 391788251218956875L;
-      super(((JPasswordField)Ref.g(391788251218956875L, var28)).getPassword());
+      // [VF-super] super(((JPasswordField)Ref.g(391788251218956875L, var28)).getPassword());
       String var7 = var10009;
       Object[] var10010 = Registry.packArgs(var7);
       long var31 = 313165978053394358L;
@@ -1525,7 +1539,7 @@ public class LocalDrive extends Z7 {
 
          if (var10015 == 1) {
             Object[] var80 = Registry.packArgs(Registry.lookupField(187047088046998003L).getInt(null));
-            long var45 = 465782969021020321L;
+            var45 = 465782969021020321L;
             Object[] var44 = var80;
             Ref.h(465782969021020321L, var44, var45);
 
@@ -2415,6 +2429,7 @@ public class LocalDrive extends Z7 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[55];
       int var5 = 0;
       String var4 = "暱胞刁遗7á则逮淕妍柿則囤还捼\u0002\u0003姥池Ã\u0003呶秇ú\u0002嬗碟\t h\u0081\u001cý[\u0081lA\u0005杸坪驵刂嘚\u0007#\u0014É\u001dº;ì\u001aþ\u000f\u0080\u0000\u0013\u0005F\u0095¸7Ãbâ\u0010oi\u0083ð]í/Ø\u0010¨\u009e?\u000eòýË¨\u0093pÓ\u0003KÄ¼\u001dLÞ\u0002廨覿\n`æS=i¢\u0006`\\¢\u0004劲農玵\u0000\u0002暉屿\tþ\u0019?Qìò¥]\u0003\u0003臩宖乡\u000e\u0081Å¥¯^\u0090j\u001f|GZm\u0090Ð\u0007讧輡儺丯朷坖垠\b嶠嬷圲周哥鄒缅§\tÖ2WÓ.¢ùQ\b\u000b\u0093³\u0015\u0083§\u0085}\u0013¸\u008bL\u0002写峗\u0003孛磒í\n²¥\tU\"¯oÁq\u0096\u00050å<%w\u0004Å,â\u0018\u0003亖柏\u0016\u0003攉沝7\tF\u0000Oÿf'òã/\u0002驔纓\u0007ã>\u001eÜB\u000b±\b嶙寯圕味吁酱羙Ë\u0006謱辭凨劃迿珮\u0002昪禎\u0002设论\u000f'\u0097¾o5-\u0018¡°¼lÛ\u0013\u0087ÿ\u0003稷叱l\u0004\u001b\u0000¬½\t\\\u0097\u0006g\u00044¼\u0083 \b譩辵凣毥硘窃匰厵\nìFÂ)[ M0\u0099¨\nµ40Ñ¯NA¨\u009a\n\u000e\u0012f\u001d-  ;%u¯s:ù\u001b\u0004疹戬咵¿\u000fæZ\u0086Ö2\u001aøG¬`ï@côñ\u0005;©]¬[\u000eTÏ\u001fî\t¸\u0080\u001f!çñÙåæ\u0003腰嬗乒\n×´¥w·ëÞI$\u0087\u000e¨ô\u0080\u0089úTþ\u0082îT\b¯Ú(\tï\u001dz\\ÀS$e·\u0005讱輔凸咿禥\u0002凤鑦\bÐº\u009d\u0084<Ê½\u0090";
@@ -2430,7 +2445,6 @@ public class LocalDrive extends Z7 {
          byte var10002 = -1;
 
          while (true) {
-      long var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

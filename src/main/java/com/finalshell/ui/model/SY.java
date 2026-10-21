@@ -5,7 +5,7 @@ import java.util.EnumSet;
 import org.jetbrains.annotations.NotNull;
 
 public final class SY {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -76,6 +76,7 @@ public final class SY {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var8 = new String[7];
       int var12 = 0;
       String var11 = "FT\u000b\u001a\u0005FW\u000e\u0010/\u0007MU\u0011\u001b6QE\u0006MO\u0006\u0012-A\nQU\u0003\u001b6NIJ^\u0003";
@@ -90,7 +91,6 @@ public final class SY {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

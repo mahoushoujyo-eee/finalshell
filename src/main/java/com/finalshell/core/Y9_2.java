@@ -40,6 +40,7 @@ public class Y9_2 extends BasicScrollPaneUI implements W2_3 {
 
    @Override
    public void installUI(JComponent var1) {
+      Xm2 var4;
       String var10000 = SZ.L();
       super.installUI(var1);
       String var2 = var10000;
@@ -50,7 +51,7 @@ public class Y9_2 extends BasicScrollPaneUI implements W2_3 {
       ScrollBarUI var7 = var3;
       if (var2 == null) {
          if (var3 instanceof Xm2) {
-            Xm2 var4 = (Xm2)var3;
+            var4 = (Xm2)var3;
             var4.Y(this.m);
          }
 
@@ -243,6 +244,7 @@ public class Y9_2 extends BasicScrollPaneUI implements W2_3 {
 
    @Override
    public void paint(Graphics var1, JComponent var2) {
+      Graphics2D var4;
       Y9_2 var10000;
       String var3 = SZ.L();
       var10000 = this;
@@ -332,6 +334,7 @@ public class Y9_2 extends BasicScrollPaneUI implements W2_3 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 29085) & 65535;
       if (c[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1106,7 +1109,7 @@ public class Y9_2 extends BasicScrollPaneUI implements W2_3 {
                var10000 = 90;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -1137,11 +1140,13 @@ public class Y9_2 extends BasicScrollPaneUI implements W2_3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
+      boolean var4;
       String[] var5 = new String[12];
       int var3 = 0;
       String var2 = "àk\u00160\u001d}\u0086ùåö'Ç¦¶¼\u0090ôÕF.t\u0015°ï\u001c \\o®»à¾\u0087Î²\u0097>´¤QL¾5\u0014LÂs\u0014ñ[°\u0016\u0001¶\u0016)RfG¤þ\u000ez\"\u0014O¡ãi£VI\u008b\u0007@~º!æx\u008dîç°à\u000b\u0098Ïä'üÃ:Y\u0004£\u0016\u0014\u0000Æ\n\u0085\u009eËî8ó6àtò?\u0002¶¡\u0080Y\f\u0015\u000b5V\u0007ò\u009b{%ZmÐ´XØc]\u000fl9\u0019\u009b\u0015·\u008eÁp\u0000u%ø\u0091Ö©Ãw6\u0086\u0080³×®ni\u001dEÃP\u008dZ(Ì\u0016³\"«.6uONã¯L\u0099z\u0001®Ø;Å&^W\u0014ÎV#\u0086û\tñ\\)ÿ\u0013\u0000òCS\u0000|\u009a*°";
-      int var4 = "àk\u00160\u001d}\u0086ùåö'Ç¦¶¼\u0090ôÕF.t\u0015°ï\u001c \\o®»à¾\u0087Î²\u0097>´¤QL¾5\u0014LÂs\u0014ñ[°\u0016\u0001¶\u0016)RfG¤þ\u000ez\"\u0014O¡ãi£VI\u008b\u0007@~º!æx\u008dîç°à\u000b\u0098Ïä'üÃ:Y\u0004£\u0016\u0014\u0000Æ\n\u0085\u009eËî8ó6àtò?\u0002¶¡\u0080Y\f\u0015\u000b5V\u0007ò\u009b{%ZmÐ´XØc]\u000fl9\u0019\u009b\u0015·\u008eÁp\u0000u%ø\u0091Ö©Ãw6\u0086\u0080³×®ni\u001dEÃP\u008dZ(Ì\u0016³\"«.6uONã¯L\u0099z\u0001®Ø;Å&^W\u0014ÎV#\u0086û\tñ\\)ÿ\u0013\u0000òCS\u0000|\u009a*°"
-         .length();
+      var4 = "àk\u00160\u001d}\u0086ùåö'Ç¦¶¼\u0090ôÕF.t\u0015°ï\u001c \\o®»à¾\u0087Î²\u0097>´¤QL¾5\u0014LÂs\u0014ñ[°\u0016\u0001¶\u0016)RfG¤þ\u000ez\"\u0014O¡ãi£VI\u008b\u0007@~º!æx\u008dîç°à\u000b\u0098Ïä'üÃ:Y\u0004£\u0016\u0014\u0000Æ\n\u0085\u009eËî8ó6àtò?\u0002¶¡\u0080Y\f\u0015\u000b5V\u0007ò\u009b{%ZmÐ´XØc]\u000fl9\u0019\u009b\u0015·\u008eÁp\u0000u%ø\u0091Ö©Ãw6\u0086\u0080³×®ni\u001dEÃP\u008dZ(Ì\u0016³\"«.6uONã¯L\u0099z\u0001®Ø;Å&^W\u0014ÎV#\u0086û\tñ\\)ÿ\u0013\u0000òCS\u0000|\u009a*°";
+         // [VF] .length();
       char var1 = 21;
       int var8 = -1;
 
@@ -1152,7 +1157,6 @@ public class Y9_2 extends BasicScrollPaneUI implements W2_3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

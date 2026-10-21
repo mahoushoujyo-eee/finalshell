@@ -35,9 +35,9 @@ public class ZZ implements Callable {
 
    @Override
    public Object call() throws Exception {
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var2 = 358091690752758155L;
-      Object[] var1 = var10001;
+      Object var1 = var10001;
       var10001 = Ref.h(358091690752758155L, var1, var2);
 
       try {

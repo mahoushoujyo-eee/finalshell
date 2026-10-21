@@ -1007,6 +1007,7 @@ public class DD3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[27];
       int var11 = 0;
       String var10 = "¾µ_±o?yF÷zý©2¦\u00ad\u0004i\"¥C\t±À¾\u001fSüêæ\u0002\u0018²cXXéK!âZþ\u001b\u0003\u0096Ê\u001dlÃ¼[f\u008c\u00910\u0080\nR\u0090µ\u0089\u0012+åàv¦\b ` ÿY\u0081s\u001d\u0011\u0085gôÁqiÙÑ_\r\u0081`áNÀ`M\u000fp@xb\u0088¹óøKn\u0003Ñü\\5\nÌ\u0002\u0002\u0090¥y%£¼J\u001cT\u009f,äÜÈ\u0016Cj?PH+è\u0082W7](a¦V\u0094¾c\u0006U¿\u0007Ýà\u0003\u0094DØ\u0092\nó\f\\\u001eý\u001cð¾\u0017\u0005\u001a]1+tûFÑ÷Ç&:\u0006m\u0084$ù@à\u0087Ò\u0013é@ºþO\u0004ÊF'\u009a\u000bä\u0094\u0001ènÖÝ\u008a\u0000G\u001b\u000eSÔñ\u0088Àµ£EF:\u0001´lË\u0012¨ÕÌ%r\u001dYò{\u001fàÒ¦ ®O\u0082$\u0011ì\u009cº\u0095ú\u0097Ð¯Ï\u001c8gK7y¡R\t°õ·oz½åf\u0098\u0007\u009c73G\u0091ÄÉ\u000bé\u0096¦\u0091e\u00adø_rz'\bÃóÙ¯·©Zv\u0004¥\u0086Ø[\nùD¤Xq`¿\u0080ï.\u000bØ\u0093e(\rÌå¡çc1";
@@ -1022,7 +1023,6 @@ public class DD3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label66: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

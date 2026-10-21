@@ -17,12 +17,13 @@ public class D5 {
    public static String[] b;
 
    public D5() throws IOException {
+      Yc2 var6;
       String var2 = this.getClass().getPackage().getName().replaceAll(a(21149, 16569), "/") + a(21148, 29914);
       int var10000 = e();
       InputStream var3 = this.getClass().getClassLoader().getResourceAsStream(var2);
       BufferedReader var4 = new BufferedReader(new InputStreamReader(var3, a(21151, 9186)));
       Object var5 = null;
-      Yc2 var6 = new Yc2();
+      var6 = new Yc2();
       int var1 = var10000;
 
       while (true) {
@@ -73,6 +74,7 @@ public class D5 {
    }
 
    public Set K(Character var1) {
+      HashSet var5;
       label25: {
          int var10000 = e();
          Set var3 = (Set)this.R.get(var1);
@@ -95,12 +97,16 @@ public class D5 {
          }
       }
 
-      HashSet var5 = new HashSet();
+      var5 = new HashSet();
       var5.add(var1.toString());
       return var5;
    }
 
    public Set H(String var1) {
+      HashSet var11;
+      HashSet var12;
+      Set var5;
+      HashSet var6;
       int var10000 = K();
       HashSet var3 = new HashSet();
       int var2 = var10000;
@@ -108,8 +114,7 @@ public class D5 {
 
       while (true) {
          if (var4 < var1.length()) {
-      InputStream var11;
-            Set var5 = this.K(var1.charAt(var4));
+            var5 = this.K(var1.charAt(var4));
             var11 = var3;
             if (var2 == 0) {
                break;
@@ -120,7 +125,6 @@ public class D5 {
                   label61: {
                      if (var2 != 0) {
                         if (var3 != null) {
-      InputStream var12;
                            var12 = var3;
                            if (var2 == 0) {
                               break label62;
@@ -143,7 +147,7 @@ public class D5 {
                   var12 = new HashSet();
                }
 
-               HashSet var6 = var12;
+               var6 = var12;
                Iterator var13 = var3.iterator();
 
                label50:
@@ -199,6 +203,7 @@ public class D5 {
    }
 
    public String f(String var1) {
+      StringBuffer var5;
       int var10000 = K();
       StringBuffer var3 = new StringBuffer();
       int var2 = var10000;
@@ -225,6 +230,8 @@ public class D5 {
    }
 
    public String A(String var1) {
+      Set var5;
+      StringBuffer var6;
       StringBuffer var3 = new StringBuffer();
       int var10000 = K();
       int var4 = 0;
@@ -232,7 +239,7 @@ public class D5 {
 
       while (true) {
          if (var4 < var1.length()) {
-            Set var5 = this.K(var1.charAt(var4));
+            var5 = this.K(var1.charAt(var4));
             var6 = var3.append(var5.toString());
             if (var2 == 0) {
                break;
@@ -252,6 +259,7 @@ public class D5 {
    }
 
    public String N(String var1) {
+      StringBuffer var5;
       StringBuffer var3 = new StringBuffer();
       int var10000 = K();
       int var4 = 0;
@@ -299,6 +307,7 @@ public class D5 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ 21149) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1079,7 +1088,7 @@ public class D5 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1104,7 +1113,8 @@ public class D5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var5 = new String[3];
+      String[] var5;
+      var5 = new String[3];
       int var3 = 0;
       i(115);
       String var2 = "Él#\u009dr`g\u008b'J\u0098\u001d\u007fQIÒ?lXY\u0090\u0003ZtA\u001d!À¥\u0001qÜ\u0089®Î\u009e²¬\u0005ñ\u0083®\u0016ÿ";
@@ -1198,7 +1208,6 @@ public class D5 {
       }
    }
 }
-
 
 
 

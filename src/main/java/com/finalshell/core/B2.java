@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import com.finalshell.task.Mo2;
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -29,7 +29,7 @@ public class B2 {
    public long d;
    public long M;
    public int X = 0;
-   public PingMessageR V;
+   public PingMessageReceiver V;
    public InetAddress U;
    public int y;
    public HashMap k = new HashMap();
@@ -48,7 +48,7 @@ public class B2 {
    public static long[] g;
    public static Long[] i;
 
-   public B2(PingMessageR var1, int var2, InetAddress var3, int var4) {
+   public B2(PingMessageReceiver var1, int var2, InetAddress var3, int var4) {
       this.x = new Mo2();
       this.O = var2;
       this.V = var1;
@@ -57,7 +57,7 @@ public class B2 {
    }
 
    public void f(DatagramPacket var1) {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       byte[] var3 = var1.getData();
       String[] var2 = var10000;
       int var4 = 0;
@@ -119,7 +119,7 @@ public class B2 {
 
    public boolean y() {
       this.K();
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       byte var2 = 0;
       String[] var1 = var10000;
       int var3 = this.C;
@@ -245,7 +245,7 @@ public class B2 {
       long var2 = System.currentTimeMillis();
       this.F.put(var1, var2);
       this.A = System.currentTimeMillis();
-      Wk2 var4 = new Wk2(0, this.V.q, var1, PingMessageR.A, PingMessageR.l);
+      Wk2 var4 = new Wk2(0, this.V.q, var1, PingMessageReceiver.A, PingMessageReceiver.l);
       var4.K(this.U);
       var4.S(this.y);
 
@@ -268,7 +268,7 @@ public class B2 {
    }
 
    public void b(Wk2 var1) {
-      String[] var2 = PingMessageR.N();
+      String[] var2 = PingMessageReceiver.N();
       B2 var10000 = this;
       if (var2 != null) {
          if (this.V.g != 2) {
@@ -282,7 +282,7 @@ public class B2 {
    }
 
    public int v() {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       long var2 = System.currentTimeMillis();
       String[] var1 = var10000;
       long var6;
@@ -1362,6 +1362,7 @@ public class B2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var46;
       String[] var21 = new String[5];
       int var19 = 0;
       String var18 = "sLK\u0005×\u0099ö\u008e!\u0003\u0081\u001cõ\u0003ü¸{";
@@ -1376,7 +1377,6 @@ public class B2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var46;
             label83: {
                char[] var54 = var10001.toCharArray();
                int var10004 = var54.length;

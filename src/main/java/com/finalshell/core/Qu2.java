@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -21,7 +21,7 @@ public class Qu2 {
    public int a;
    public B2 P;
    public static Random U;
-   public PingMessageR m;
+   public PingMessageReceiver m;
    public DatagramSocket T;
    public boolean n = true;
    public int y;
@@ -44,7 +44,7 @@ public class Qu2 {
       __vfClinit__();
    }
 
-   public Qu2(PingMessageR var1, FO var2, InetAddress var3, int var4, int var5, B2 var6) {
+   public Qu2(PingMessageReceiver var1, FO var2, InetAddress var3, int var4, int var5, B2 var6) {
       this.y = (int)d;
       this.B = -1;
       this.b = new HashMap();
@@ -70,11 +70,11 @@ public class Qu2 {
          var8.printStackTrace();
       }
 
-      PingMessageR.U.execute(new com.finalshell.task.Z6(this));
+      PingMessageReceiver.U.execute(new com.finalshell.task.Z6(this));
    }
 
    public void T() {
-      String[] var1 = PingMessageR.N();
+      String[] var1 = PingMessageReceiver.N();
       Qu2 var10000 = this;
       if (var1 != null) {
          if (this.V) {
@@ -104,7 +104,7 @@ public class Qu2 {
 
    public void W(byte[] var1, int var2) {
       label13: {
-         String[] var10000 = PingMessageR.N();
+         String[] var10000 = PingMessageReceiver.N();
          long var4 = System.nanoTime();
          String[] var3 = var10000;
          Wr2 var6 = new Wr2(this.a, this.m.q, var2, var1);
@@ -125,7 +125,7 @@ public class Qu2 {
       }
 
       Uy2 var7 = new Uy2("", U.nextLong(), var1.length, Uy2.T);
-      PingMessageR.V(var7);
+      PingMessageReceiver.V(var7);
    }
 
    public void k(int var1) {
@@ -169,7 +169,8 @@ public class Qu2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void D(DatagramPacket var1) {
-      String[] var10000 = PingMessageR.N();
+      Qu2 var21;
+      String[] var10000 = PingMessageReceiver.N();
       Object var3 = this.t;
       synchronized (this.t){} // $VF: monitorenter 
       String[] var2 = var10000;
@@ -185,7 +186,7 @@ public class Qu2 {
                if (var2 != null) {
                   if (var5 == D6.nw) {
                      We2 var6 = new We2(var1);
-                     PingMessageR.U.execute(new com.finalshell.task.BC(this, var6));
+                     PingMessageReceiver.U.execute(new com.finalshell.task.BC(this, var6));
                      if (var2 != null) {
                         break label148;
                      }
@@ -307,7 +308,7 @@ public class Qu2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void b() {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       Object var2 = this.t;
       synchronized (this.t){} // $VF: monitorenter 
       String[] var1 = var10000;
@@ -385,7 +386,7 @@ public class Qu2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void X() {
-      String[] var1 = PingMessageR.N();
+      String[] var1 = PingMessageReceiver.N();
       Object var10000 = this.p;
       if (var1 != null) {
          if (this.p.size() <= 0) {

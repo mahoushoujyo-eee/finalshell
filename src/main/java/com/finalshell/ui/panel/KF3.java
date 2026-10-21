@@ -118,7 +118,7 @@ public class KF3 extends Ky4 {
          this.a.q(this.D, true);
          this.a.T(1);
          this.a.setEditable(true);
-         this.u = new com.finalshell.ui.listener.Lh2(this);
+         this.u = new com.finalshell.ui.listener.TreeSelectionHandler(this);
          this.a.addTreeSelectionListener(this.u);
          this.a.addTreeSelectionListener(new Dd4(this));
          break;
@@ -1128,6 +1128,7 @@ public class KF3 extends Ky4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[16];
       int var11 = 0;
       String var10 = "ÇÂÑ\u001b\n;:}Õ\u0015àÓí\u001d\u0011ü\u0085\u0081Z2Á\b\u0002S\u009e\u008c?\u0095ôú\u000f\u001c|côv\ftÛÿ\u008a\u0098ýL\u0018\u0097éð·PÌXGû\u0004¥\u0084¦âL\u0019ô¶åÌ.#\u009f\u0015\u0002Åìç:â\u00ad^?\u0085Ýâe¶J^\u0011\u0006Ð]ß©à\u0080\u001d\u0015iÙ7©\\oú\u001c8/XB\u0015¢ ÞZá\u0019âÇº¾\u000e\u008efT>\u0013ñ{\u0095±\u009e\u0087\u0091ë\u0096\u001bé$\u0096ô¨\t\u009b\u001b·\u001eÍ6ÂÜÊ!\u0003U\u0091Í\u009eætÂdZ\u0006\u0005úò\u0081²Ü\u0002\u008bk\u008a²k®\u00068oÂïCH\u0005ù\"J\rÀ\u0011\u008cù:ák\u008d; _/\u009bwïäV{S\u0015#×Ï$Õ5ø½»ÑL}\"Â!2C\u0017\fZ¡\u0010÷áUâ\u0086í\u0086¬ã³uL\u0005\t\u009bZ\u0014ìh6ÓêË\u001fbG*Ó\u0002Ñ+UÓÍ,á¡";
@@ -1143,7 +1144,6 @@ public class KF3 extends Ky4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

@@ -92,6 +92,7 @@ public class Fx4 {
    }
 
    public void J() {
+      boolean var28;
       label68: {
          String[] var1 = com.finalshell.ui.panel.F8.y();
          if (var1 == null) {
@@ -1578,6 +1579,8 @@ public class Fx4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte var28;
+      char[] var36;
       String[] var15 = new String[15];
       int var13 = 0;
       String var12 = "\u0093tÖ\u008c´åN\u000e¼þ\bsq@\u0004lr\u0014Ô-LeÌ-\t:pÍX'¹½Ã\u0005²\u0016\u009b½\u0006Ã\u0090÷üv\u009e\u0012àÆ@\u0017Uûxam}÷×\u0092í\u001fÀ)\u008c\u0007®\u0083àÝ6X®\u0006Ëêö³Vw\u000fQAvç\u0093å ¢v\u0005\u0094Øþ\f\u0092\u001bÑ°ÈÑN\u001e\u001d@MR»_\u008c\u001bzs]`êÈ\u0011l`\\c-®\u0017>bº\b[Ä¿ÕÎ®®lJEP®¢<¿Û^\u0085Ë\u0016É3D\"\u0083\u009aCk\u001b\u009d\u001eGb«»\u0092¼} o°\u001c\u0018ë®\u0003è«\u0089Ç|\u0086òY\u0084\u0090\u0011\u009aM'\u0011\u001d\u0082\u0011»)0 ù\u0094\u0018\u0084crj´GÐ\u009c\u0081x>ù¸ÌCk°Öº¹ð\\PÍãÖ~\u009a¢\u0010w\u001eNÌz(§\u0081\u0084\u008døªX%\u009e\u0019";
@@ -1593,7 +1596,6 @@ public class Fx4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var36;
             label65: {
                char[] var43 = var10001.toCharArray();
                int var10004 = var43.length;
@@ -1681,7 +1683,7 @@ public class Fx4 {
 
                      label44:
                      while (true) {
-                        byte var28 = var4;
+                        var28 = var4;
                         var4 += 8;
                         byte[] var9 = var6.substring(var28, var4).getBytes("ISO-8859-1");
                         long[] var21 = var8;

@@ -8,32 +8,32 @@ public abstract class Ug2 {
    public static String[] a;
    public static String[] c;
 
-   void N(char var1, int var2);
+   void N(char var1, int var2) { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void O(int var1, int var2);
+   void O(int var1, int var2) { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void e(int var1);
+   void e(int var1) { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void B();
+   void B() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void N();
+   void N() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void U();
+   void U() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   void D();
+   void D() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   boolean x();
+   boolean x() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
    @NotNull
-   Xo2 S();
+   Xo2 S() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   int f();
+   int f() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   boolean E();
+   boolean E() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   long j();
+   long j() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
-   US e();
+   US e() { throw new UnsupportedOperationException("decompilation failed (Vineflower)"); }
 
    static US s(List var0) {
       String[] var1 = Wq2_2.y();

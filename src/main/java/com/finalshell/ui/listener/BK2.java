@@ -152,6 +152,7 @@ public class BK2 extends MouseAdapter {
 
    @Override
    public void mouseReleased(MouseEvent var1) {
+      BK2 var3;
       int[] var2 = KD.s$arrint();
       JComponent var10000 = this.w;
       if (var2 == null) {
@@ -178,10 +179,11 @@ public class BK2 extends MouseAdapter {
    }
 
    public boolean V() {
+      Window var3;
       int[] var10000 = KD.s$arrint();
       Window var2 = FN.L(this.w);
       int[] var1 = var10000;
-      Window var3 = var2;
+      var3 = var2;
       if (var1 == null) {
          if (var2 == null) {
             return true;
@@ -1110,8 +1112,9 @@ public class BK2 extends MouseAdapter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var3;
       String[] var5 = new String[2];
-      int var3 = 0;
+      var3 = 0;
       String var2 = "\u0013Ó=Óð\u0012Û¡Ñcò±NÖqÌ\u000f\u001cÙ_â¼Ð\u0018À±G\u009f¿\u009b2\u0090ìEUuºNïßÚe\u00855Ic6^";
       int var4 = "\u0013Ó=Óð\u0012Û¡Ñcò±NÖqÌ\u000f\u001cÙ_â¼Ð\u0018À±G\u009f¿\u009b2\u0090ìEUuºNïßÚe\u00855Ic6^".length();
       char var1 = 23;

@@ -237,6 +237,7 @@ public class Co2 extends CI {
    }
 
    public List U$List() {
+      ArrayList var9;
       String var10000 = U$String();
       Object[] var2 = this.getSelectedValues();
       ArrayList var3 = new ArrayList(var2.length);
@@ -247,7 +248,6 @@ public class Co2 extends CI {
 
       while (true) {
          if (var6 < var5) {
-      ArrayList var9;
             Object var7 = var4[var6];
 
             try {
@@ -262,7 +262,6 @@ public class Co2 extends CI {
                   continue;
                }
             } catch (ClassCastException var8) {
-      ArrayList var9;
                throw a(var8);
             }
          }
@@ -493,7 +492,6 @@ public class Co2 extends CI {
       }
    }
 }
-
 
 
 

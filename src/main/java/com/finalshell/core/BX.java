@@ -39,7 +39,8 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void Z() {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       com.finalshell.ui.panel.QL var2 = this.z$QL();
       String[] var1 = var10000;
       com.finalshell.ui.panel.QL var3 = var2;
@@ -55,7 +56,8 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void v(com.finalshell.ui.panel.QL var1) {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       OR var3 = var1.G$OR();
       String[] var2 = var10000;
       OR var4 = var3;
@@ -99,14 +101,15 @@ public final class BX implements El2, SwingConstants {
    }
 
    public List N() {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      ArrayList var5;
+      var10000 = B$arrString();
       ArrayList var2 = new ArrayList(this.Z.size());
       Iterator var3 = this.Z.iterator();
       String[] var1 = var10000;
 
       while (true) {
          if (var3.hasNext()) {
-      com.finalshell.ui.panel.QL var5;
             At2 var4 = (At2)var3.next();
             var5 = var2;
             if (var1 != null) {
@@ -115,7 +118,6 @@ public final class BX implements El2, SwingConstants {
 
             var2.add(var4.B());
             if (var1 == null) {
-      com.finalshell.ui.panel.QL var5;
                continue;
             }
          }
@@ -136,7 +138,9 @@ public final class BX implements El2, SwingConstants {
    }
 
    public boolean p(String var1) {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      boolean var5;
+      var10000 = B$arrString();
       Iterator var3 = this.Z.iterator();
       String[] var2 = var10000;
 
@@ -192,7 +196,8 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void p() {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       Iterator var2 = this.a().iterator();
       String[] var1 = var10000;
 
@@ -227,7 +232,9 @@ public final class BX implements El2, SwingConstants {
    }
 
    public At2 H(String var1) {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      At2 var5;
+      var10000 = B$arrString();
       Iterator var3 = this.Z.iterator();
       String[] var2 = var10000;
 
@@ -273,6 +280,7 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void V(int var1) {
+      int var10000;
       com.finalshell.ui.panel.Hd2 var3;
       label32: {
          String[] var2 = B$arrString();
@@ -312,7 +320,8 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void B$void() {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       int var2 = this.o();
       String[] var1 = var10000;
       int var4 = var2;
@@ -347,7 +356,8 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void U() {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       int var2 = this.o();
       String[] var1 = var10000;
       int var4 = var2;
@@ -391,7 +401,7 @@ public final class BX implements El2, SwingConstants {
       if (var1 != null) {
          int var3 = this.K(var1);
          if (var2 != null) {
-            return (boolean)var3;
+            return var3 != 0;
          }
 
          if (var3 != -1) {
@@ -402,11 +412,12 @@ public final class BX implements El2, SwingConstants {
          }
       }
 
-      return (boolean)0;
+      return 0 != 0;
    }
 
    public K__2 d(At2 var1) {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       List var3 = var1.U();
       String[] var2 = var10000;
 
@@ -436,7 +447,8 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void J() {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       Iterator var2 = AL_2.J((Collection)this.Z).iterator();
       String[] var1 = var10000;
 
@@ -458,14 +470,16 @@ public final class BX implements El2, SwingConstants {
    }
 
    public boolean u$boolean(At2 var1) {
+      boolean var10000;
+      boolean var5;
       String[] var2 = B$arrString();
       if (var1 != null) {
          com.finalshell.ui.panel.QL var3 = this.z$QL();
          int var4 = this.K(var1);
-         boolean var10000 = var3.l(var1, this, var4);
+         var10000 = var3.l(var1, this, var4);
          if (var2 == null) {
             if (var10000) {
-               boolean var5 = this.x(var1);
+               var5 = this.x(var1);
                this.e();
                var3.p(var1, this, var4);
                return var5;
@@ -481,14 +495,16 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void R(At2 var1) {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      At2 var5;
+      var10000 = B$arrString();
       Iterator var3 = AL_2.J((Collection)this.Z).iterator();
       String[] var2 = var10000;
 
       while (var3.hasNext()) {
          label35: {
             At2 var4 = (At2)var3.next();
-            At2 var5 = var4;
+            var5 = var4;
             if (var2 == null) {
                if (var4 == var1) {
                   break label35;
@@ -516,7 +532,8 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void O() {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       com.finalshell.ui.panel.QL var2 = this.z$QL();
       String[] var1 = var10000;
       com.finalshell.ui.panel.QL var3 = var2;
@@ -536,10 +553,12 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void f(At2 var1, int var2) {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      com.finalshell.ui.panel.QL var5;
+      var10000 = B$arrString();
       com.finalshell.ui.panel.QL var4 = this.z$QL();
       String[] var3 = var10000;
-      com.finalshell.ui.panel.QL var5 = var4;
+      var5 = var4;
       if (var3 == null) {
          if (var4 == null) {
             return;
@@ -552,8 +571,9 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void e() {
+      BX var10000;
       String[] var1 = B$arrString();
-      BX var10000 = this;
+      var10000 = this;
       if (var1 == null) {
          if (this.o() != 0) {
             return;
@@ -566,7 +586,8 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void d() {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       Container var2 = this.B.getParent();
       String[] var1 = var10000;
       Container var4 = var2;
@@ -583,7 +604,8 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void Y() {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       Container var2 = this.B.getParent();
       String[] var1 = var10000;
       Container var4 = var2;
@@ -600,7 +622,8 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void w() {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       com.finalshell.ui.panel.QL var2 = this.z$QL();
       String[] var1 = var10000;
       com.finalshell.ui.panel.QL var3 = var2;
@@ -616,7 +639,8 @@ public final class BX implements El2, SwingConstants {
    }
 
    public void z$void() {
-      String[] var10000 = B$arrString();
+      String[] var10000;
+      var10000 = B$arrString();
       com.finalshell.ui.panel.QL var2 = this.z$QL();
       String[] var1 = var10000;
       com.finalshell.ui.panel.QL var3 = var2;
@@ -724,7 +748,6 @@ public final class BX implements El2, SwingConstants {
       }
    }
 }
-
 
 
 

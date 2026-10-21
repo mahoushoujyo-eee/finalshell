@@ -4,21 +4,22 @@ import com.finalshell.core.Kw4;
 import com.finalshell.core.UT;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.CopyPanel;
+import com.finalshell.ui.panel.ProcessInfoPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class LR3 implements ActionListener {
-   public final CopyPanel Y;
+   public final ProcessInfoPanel Y;
 
-   public LR3(CopyPanel var1) {
+   public LR3(ProcessInfoPanel var1) {
       this.Y = var1;
    }
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      Integer var29;
       Object var5 = 168139779687005458L;
       Ref.g(168139779687005458L, var5);
       Object var7 = 483411846868584119L;
@@ -33,7 +34,7 @@ public class LR3 implements ActionListener {
       Ref.g(541329565900929595L, var15);
       ArrayList var10007 = Registry.emptyArgs();
       long var18 = 312359756468558646L;
-      Object[] var17 = var10007;
+      Object var17 = var10007;
       var10007 = Ref.h(312359756468558646L, var17, var18);
 
       try {
@@ -44,9 +45,9 @@ public class LR3 implements ActionListener {
 
       Kw4 var4 = (Kw4)var10007.get(var3);
       new StringBuilder();
-      Object[] var10009 = Registry.emptyArgs();
+      Object var10009 = Registry.emptyArgs();
       long var20 = 134324574424375296L;
-      Object[] var19 = var10009;
+      Object var19 = var10009;
       var10009 = Ref.h(134324574424375296L, var19, var20);
 
       try {

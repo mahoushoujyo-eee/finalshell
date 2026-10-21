@@ -676,6 +676,7 @@ public class Connect_2 implements QT, IY3, Ab2 {
    }
 
    public char[] l$arrchar(String var1) {
+      StringBuilder var9;
       StringBuilder var3 = new StringBuilder();
       char[] var4 = var1.toCharArray();
       boolean var10000 = com.finalshell.ui.model.J2.P();
@@ -698,8 +699,6 @@ public class Connect_2 implements QT, IY3, Ab2 {
                   continue;
                }
             } catch (IllegalArgumentException var8) {
-      String var9;
-      String var9;
                throw a(var8);
             }
          }
@@ -733,10 +732,12 @@ public class Connect_2 implements QT, IY3, Ab2 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void d() {
-      int var10000 = com.finalshell.ui.model.J2.P();
+      Connect_2 var18;
+      boolean var8;
+      int var10000 = (com.finalshell.ui.model.J2.P()) ? 1 : 0;
       this.O.w();
-      boolean var1 = (boolean)var10000;
-      boolean var8 = (false /* VF: Semaphore variable */) != 0;
+      boolean var1 = (var10000) != 0;
+      var8 = false /* VF: Semaphore variable */;
 
       label68: {
          try {
@@ -3987,6 +3988,7 @@ public class Connect_2 implements QT, IY3, Ab2 {
 
    @Override
    public void T(@NotNull String var1) {
+      In4 var7;
       boolean var10000 = com.finalshell.ui.model.J2.P();
       YP var3 = this.j.U();
       In4 var4 = this.O.p();
@@ -4287,10 +4289,11 @@ public class Connect_2 implements QT, IY3, Ab2 {
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    @Override
    public void w(char var1) {
+      boolean var8;
       boolean var10000 = com.finalshell.ui.model.J2.P();
       this.O.w();
       boolean var2 = var10000;
-      boolean var8 = false /* VF: Semaphore variable */;
+      var8 = false /* VF: Semaphore variable */;
 
       try {
          var8 = true;
@@ -4583,6 +4586,7 @@ public class Connect_2 implements QT, IY3, Ab2 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -2812) & 65535;
       if (bb[var2] == null) {
          char[] var3 = ab[var2].toCharArray();
@@ -5369,7 +5373,7 @@ public class Connect_2 implements QT, IY3, Ab2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -5397,6 +5401,10 @@ public class Connect_2 implements QT, IY3, Ab2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var36;
+      boolean var7;
+      long[] var8;
+      byte[] var9;
       String[] var15 = new String[19];
       int var13 = 0;
       String var12 = "Aj\u0000\\\u0095Å®\u0093¥äà\u0002\u001d¬\u000bÎQÒ.9à\u000f{@\u0001\u0094\nU\tÓe=ô½EeÑ\u0004輤挠敺彅\u001f\u008bQ«¬ÁÖ9\u000b½nyýJù<\u001cùîF\u007f¼ý¶f§\u0096¸\u0089nºI\f\u0003¼rÒH\bÔäL\u0007áõ:\u008a<©uÿ\u0003]\u0097\u0092Af=f\u0015È\u0089 \u0001\u008d&`\u008a!\\Ô¶Xd\u0016¥õ\u008e°Ú\u009eÇ±\u000007³K\u0083\u008dÏ©lB\u0096|\u007f\u0092å}Á(]\u0089\u0003\u0001\u001br\u0002ÉÔ\t¸÷t»Ð;f\u001eÌ\t¹ÙT~Ô\u0083æ\tÜ\u0013+\u0083\u008d|Íz-\u001anHJø\u0019³\u0092§Ë|I\u0002\u0007¯\u0005/$\n'.\"N\u0092\u0013ÔÖÙÛêáRòz;\t\u0012\u0002<-þ\u0007«úT\u0092îú*×õ\u00ad£AJ\u0012\f]É¹|1Ýû^©P]?";
@@ -5490,18 +5498,18 @@ public class Connect_2 implements QT, IY3, Ab2 {
                      ab = var15;
                      bb = new String[19];
                      long var2 = 4198127134739778865L;
-                     long[] var8 = new long[13];
+                     var8 = new long[13];
                      int var5 = 0;
                      String var6 = "}\u0018íÐ4\u008dÓª\u0094»á¡Ú¡\n\u0082OT~ØÔ\u0015o:\u0010\u0087\u0088P£¹a[Áþ·\u0019\rÇª\u00923¢M\u0006\u0093+¾\u0003Q\u0018É\u0013\u0000\u0094\u0080=hµz\u000b¡w[çH<N\u0082\u008c÷Ä\u007ff\u0083\u009a\u0084üÍ\u008a¨\u000e\u0014ñ@/eGÑ";
-                     int var7 = "}\u0018íÐ4\u008dÓª\u0094»á¡Ú¡\n\u0082OT~ØÔ\u0015o:\u0010\u0087\u0088P£¹a[Áþ·\u0019\rÇª\u00923¢M\u0006\u0093+¾\u0003Q\u0018É\u0013\u0000\u0094\u0080=hµz\u000b¡w[çH<N\u0082\u008c÷Ä\u007ff\u0083\u009a\u0084üÍ\u008a¨\u000e\u0014ñ@/eGÑ"
-                        .length();
+                     var7 = "}\u0018íÐ4\u008dÓª\u0094»á¡Ú¡\n\u0082OT~ØÔ\u0015o:\u0010\u0087\u0088P£¹a[Áþ·\u0019\rÇª\u00923¢M\u0006\u0093+¾\u0003Q\u0018É\u0013\u0000\u0094\u0080=hµz\u000b¡w[çH<N\u0082\u008c÷Ä\u007ff\u0083\u009a\u0084üÍ\u008a¨\u000e\u0014ñ@/eGÑ";
+                        // [VF] .length();
                      byte var4 = 0;
 
                      label44:
                      while (true) {
                         byte var28 = var4;
                         var4 += 8;
-                        byte[] var9 = var6.substring(var28, var4).getBytes("ISO-8859-1");
+                        var9 = var6.substring(var28, var4).getBytes("ISO-8859-1");
                         long[] var21 = var8;
                         int var29 = var5++;
                         long var40 = ((long)var9[0] & 255L) << 56
@@ -5539,7 +5547,7 @@ public class Connect_2 implements QT, IY3, Ab2 {
                                  }
 
                                  var6 = "Ú\u0089\b?Ù\u0089©'^ûÂ¤\u009dßx¦";
-                                 var7 = "Ú\u0089\b?Ù\u0089©'^ûÂ¤\u009dßx¦".length();
+                                 var7 = ("Ú\u0089\b?Ù\u0089©'^ûÂ¤\u009dßx¦".length()) != 0;
                                  var4 = 0;
                            }
 
@@ -5583,7 +5591,6 @@ public class Connect_2 implements QT, IY3, Ab2 {
       }
    }
 }
-
 
 
 

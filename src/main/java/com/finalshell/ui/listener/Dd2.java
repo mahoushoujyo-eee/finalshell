@@ -35,7 +35,7 @@ public class Dd2 implements ActionListener {
       Ref.g(435109479173232140L, var18);
       ArrayList var10007 = Registry.emptyArgs();
       long var21 = 245965692335108743L;
-      Object[] var20 = var10007;
+      Object var20 = var10007;
       var10007 = Ref.h(245965692335108743L, var20, var21);
 
       try {
@@ -62,7 +62,7 @@ public class Dd2 implements ActionListener {
       Ref.h(412318774197756267L, var24, var25);
       String var10010 = (String)(Registry.emptyArgs());
       long var27 = 505915899939017355L;
-      Object[] var26 = var10010;
+      Object var26 = var10010;
       var10010 = Ref.h(505915899939017355L, var26, var27);
 
       try {

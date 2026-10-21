@@ -4,7 +4,7 @@ import com.finalshell.core.Xg2;
 import java.awt.image.BufferedImage;
 
 public final class Lt4 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -858,6 +858,7 @@ public final class Lt4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[13];
       int var11 = 0;
       String var10 = "\u008eU³^¬\u009còo_MP\u0006Xâ)\u0091°u\t\u0018\\>*Ù\u0081?\u0014{\u0005õ´K\u009eÆ\u0004w\u0017ë\u0084\u0004_\t¦¹\nñû\u001cÛK:<}ïF\u000fL©jÕ\fv#Ò_/hÝó?+\b\\êkHOûPæ\b\u00196qaï\u000b¨ú\t?C©ÅzÐ\u001f7r";
@@ -873,7 +874,6 @@ public final class Lt4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

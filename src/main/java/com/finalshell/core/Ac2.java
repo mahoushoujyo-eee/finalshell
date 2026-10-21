@@ -241,7 +241,7 @@ public class Ac2 {
       }
 
       int var6 = var8;
-      return W(var0, var1, var2, var3, (boolean)var6);
+      return W(var0, var1, var2, var3, var6);
    }
 
    public static com.finalshell.ui.panel.Wd2 W(Component var0, JComponent var1, WF var2, int var3, boolean var4) {

@@ -81,7 +81,7 @@ public final class NU_3 extends N6_2 {
                var10002 = 0;
             }
 
-            var2.append(var10001.H((boolean)var10002));
+            var2.append(var10001.H(var10002));
             var4++;
             if (var1 != null) {
                continue;

@@ -2,25 +2,25 @@ package com.finalshell.ui.model;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class MZ implements Comparator {
-   public final Connection4 c;
+   public final ConnectionInfoPanel c;
 
-   public MZ(Connection4 var1) {
+   public MZ(ConnectionInfoPanel var1) {
       this.c = var1;
    }
 
    @Override
    public int compare(Object var1, Object var2) {
-      Connection4.I();
+      ConnectionInfoPanel.I();
       Object var6 = 316017134182938101L;
       Object var10002 = Ref.g(316017134182938101L, var6);
-      Object[] var10003 = Registry.packArgs(var1);
+      Object var10003 = Registry.packArgs(var1);
       long var9 = 539671799132134878L;
-      Object[] var8 = var10003;
+      Object var8 = var10003;
       var10003 = Ref.h(539671799132134878L, var8, var9);
 
       try {
@@ -33,9 +33,9 @@ public class MZ implements Comparator {
       Object var3 = var10002;
       Object var10 = 316017134182938101L;
       Ref.g(316017134182938101L, var10);
-      Object[] var10004 = Registry.packArgs(var2);
+      Object var10004 = Registry.packArgs(var2);
       long var13 = 539671799132134878L;
-      Object[] var12 = var10004;
+      Object var12 = var10004;
       var10004 = Ref.h(539671799132134878L, var12, var13);
 
       try {

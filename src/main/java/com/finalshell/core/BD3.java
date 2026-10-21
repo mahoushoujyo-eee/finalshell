@@ -1078,6 +1078,7 @@ public class BD3 extends BN3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "[)ß\u0001QµAµßwõ ÅØ\u0098Ò¾÷Ó-/\u001a´Ý£ç\u0005ûªZ\u0099ÂN\bÍ\u0007¶\u0082lT«ÝÝ¬\u0095b\u00130·\u000eäð\tN6ØÎ\u0088¼Ö£#ÒO÷à\u009aâ\u0002sô[¤\u00972\u0001;!&L\u0084\u000eB¿E\u009cnà3¸K´\u001a\u001c}Ø0ÜCo¾Y\u0087<á\u008f¯\u00942¦¿rÜã\u0092\u0018¬Rºþbå°\u001aå>½\u0086ß\u0090|Àñ\u0015UdÙr\u009fcP\u001f\u0080ÝK";
@@ -1093,7 +1094,6 @@ public class BD3 extends BN3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

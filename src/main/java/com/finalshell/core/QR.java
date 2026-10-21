@@ -77,9 +77,10 @@ public abstract class QR {
    }
 
    public void f(QR var1) {
+      boolean var10000;
       label16: {
          Ky4[] var2 = M2_2.b();
-         boolean var10000 = this.z.contains(var1);
+         var10000 = this.z.contains(var1);
          if (var2 == null) {
             if (var10000) {
                break label16;
@@ -105,6 +106,7 @@ public abstract class QR {
    }
 
    public void s(K9 var1, com.finalshell.ui.model.C0 var2, ImageIcon var3) {
+      Ky4[] var10000;
       String var5 = "[" + var2 + a(11245, 23661);
       NE3.n(this, var5 + a(11210, -23726), new Object[0]);
       Sg2 var6 = new Sg2(null, null, var2, var3);
@@ -112,7 +114,7 @@ public abstract class QR {
       var6.i(var1);
       var1.e(this);
       var1.O(var6);
-      Ky4[] var10000 = M2_2.b();
+      var10000 = M2_2.b();
       this.Q.add(var6);
       this.J.add(var1);
       this.w.put(var1.F(), var1);
@@ -183,7 +185,8 @@ public abstract class QR {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void k(String var1, boolean var2) {
-      Ky4[] var10000 = M2_2.b();
+      Ky4[] var10000;
+      var10000 = M2_2.b();
       Object var4 = this.Z;
       synchronized (this.Z){} // $VF: monitorenter 
       Ky4[] var3 = var10000;
@@ -235,6 +238,8 @@ public abstract class QR {
    }
 
    public void V(File var1, boolean var2) {
+      File[] var10;
+      File[] var10000;
       Ky4[] var3 = M2_2.b();
       StringBuilder var10001 = new StringBuilder();
       String var10002 = a(11247, 32149);
@@ -246,7 +251,7 @@ public abstract class QR {
       label56: {
          NE3.n(this, var10001.append(var10002).append(a(11227, -10525)).append(this.M).toString(), new Object[0]);
          File[] var4 = var1.listFiles(this.x());
-         File[] var10000 = var4;
+         var10000 = var4;
          if (var3 == null) {
             if (var4 == null) {
                break label56;
@@ -274,7 +279,7 @@ public abstract class QR {
       }
 
       if (var2) {
-         File[] var10 = var1.listFiles(DE.Y);
+         var10 = var1.listFiles(DE.Y);
          File[] var14 = var10;
          if (var3 == null) {
             if (var10 == null) {
@@ -300,7 +305,8 @@ public abstract class QR {
    }
 
    public boolean z(File var1) {
-      Ky4[] var10000 = M2_2.b();
+      Ky4[] var10000;
+      var10000 = M2_2.b();
       Sg2 var3 = this.H(var1);
       Ky4[] var2 = var10000;
       if (var2 == null) {
@@ -558,6 +564,7 @@ public abstract class QR {
    }
 
    public Sg2 H(File var1) {
+      ZipEntry var10;
       Ky4[] var2 = M2_2.b();
 
       try {
@@ -594,7 +601,7 @@ public abstract class QR {
                InputStream var8 = var5.getInputStream(var7);
                var9 = (com.finalshell.ui.model.C0)PM.j(var8);
                var8.close();
-               ZipEntry var10 = new ZipEntry(Lz4.E(var7) + var4);
+               var10 = new ZipEntry(Lz4.E(var7) + var4);
                InputStream var11 = var5.getInputStream(var10);
                if (var11 != null) {
                   var12 = new ImageIcon(ImageIO.read(var11));
@@ -624,8 +631,9 @@ public abstract class QR {
    }
 
    public Sg2 x(File var1) {
+      File var10000;
       Ky4[] var2 = M2_2.b();
-      File var10000 = var1;
+      var10000 = var1;
       if (var2 == null) {
          if (var1 == null) {
             return null;
@@ -648,7 +656,8 @@ public abstract class QR {
    }
 
    public boolean a(String var1, String var2) {
-      Ky4[] var10000 = M2_2.b();
+      Ky4[] var10000;
+      var10000 = M2_2.b();
       Iterator var4 = this.Q.iterator();
       Ky4[] var3 = var10000;
 
@@ -691,8 +700,9 @@ public abstract class QR {
    }
 
    public void r() {
+      QR var10000;
       Ky4[] var1 = M2_2.b();
-      QR var10000 = this;
+      var10000 = this;
       if (var1 == null) {
          if (!this.r.isEmpty()) {
             this.Y(this.r);
@@ -1611,7 +1621,8 @@ public abstract class QR {
    }
 
    public boolean z(Sg2 var1, List var2) {
-      Ky4[] var10000 = M2_2.b();
+      Ky4[] var10000;
+      var10000 = M2_2.b();
       com.finalshell.ui.model.C0 var4 = var1.h();
       Ky4[] var3 = var10000;
 
@@ -1672,7 +1683,9 @@ public abstract class QR {
    }
 
    public boolean f(Sg2 var1, List var2) {
-      Ky4[] var10000 = M2_2.b();
+      boolean var10;
+      Ky4[] var10000;
+      var10000 = M2_2.b();
       com.finalshell.ui.model.C0 var4 = var1.h();
       Iterator var5 = var2.iterator();
       Ky4[] var3 = var10000;
@@ -1736,6 +1749,7 @@ public abstract class QR {
    }
 
    public void j() {
+      int var10;
       Ky4[] var1 = M2_2.b();
       if (this.J.size() != 0) {
          ArrayList var2 = new ArrayList(this.J.size());
@@ -1853,7 +1867,7 @@ public abstract class QR {
                      var18 = var12.indexOf(var14);
                   }
 
-                  int var10 = var18;
+                  var10 = var18;
                   int var11 = 0;
 
                   while (var11 < var12.size()) {
@@ -2072,7 +2086,8 @@ public abstract class QR {
    }
 
    public void Z(String var1, boolean var2) {
-      Ky4[] var10000 = M2_2.b();
+      Ky4[] var10000;
+      var10000 = M2_2.b();
       Iterator var4 = AL_2.J((Collection)this.c).iterator();
       Ky4[] var3 = var10000;
 
@@ -2086,7 +2101,8 @@ public abstract class QR {
    }
 
    public void R(String var1, boolean var2) {
-      Ky4[] var10000 = M2_2.b();
+      Ky4[] var10000;
+      var10000 = M2_2.b();
       Iterator var4 = AL_2.J((Collection)this.c).iterator();
       Ky4[] var3 = var10000;
 
@@ -2100,7 +2116,8 @@ public abstract class QR {
    }
 
    public void Y(List var1) {
-      Ky4[] var10000 = M2_2.b();
+      Ky4[] var10000;
+      var10000 = M2_2.b();
       Iterator var3 = AL_2.J((Collection)this.c).iterator();
       Ky4[] var2 = var10000;
 
@@ -2114,7 +2131,8 @@ public abstract class QR {
    }
 
    public void y(List var1) {
-      Ky4[] var10000 = M2_2.b();
+      Ky4[] var10000;
+      var10000 = M2_2.b();
       Iterator var3 = AL_2.J((Collection)this.c).iterator();
       Ky4[] var2 = var10000;
 
@@ -2941,6 +2959,7 @@ public abstract class QR {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[57];
       int var3 = 0;
       String var2 = "<\u0013M:\u009eÆ¸Ä.¨Í\u0096GÆY1:ó\u008dýÕë\u0004\u0010ý\u0019Þâk¦\u0019m-ÊÝ\u0005÷ÄxÏ·àüH\u001e\u0000B²ò¯rÅ\u0019\u0091=8£\u0080\u0014\u0094ÇJ.o\u007fò \u0098\u0015d6©-4\t!¼ö\u00035\u0006ô¼\"hôjö\u0007q.QI³\u0085?\u0002W¨\u009e±ÐôÈ´\u0098a¢¢\u0002-I\u001eºñå\u0084E¼\u0098À:\u0006MÄ.øAZð\u009d8\t\u0018nÅÌÏ\rÜJ\u009aå\u000e\u0016aç<mf¥þÂ=Ùûg\u0001\u0006õ\u0007\na°V& Â¶â/p\u0086\u0015Ír\u001f$umVA¬\bá\u009f\f\u0018®IKááJM¤`ÐZsvÛeÆ\u0012U®#/§\u008bý&¶Ý¶Z\r`\u0084\u007f\u0098ù\u0016\nyÕÄÜÊçå\u0003\f\u0007éª\u0092\u0085=«)Û\u0086¢\u008d=yã\u0005V\u008fní^_ä2³EuT³FÒ4\u0084P-\u0015\u0010H \u0000\u0010üëO´\u008a\u009e\u0086\nºy ä+àq\u0091=X)\u0093ÓKTÖa{z,>»\u0017\u008d\u0088\u0003\b@1\n>FY8\u0002<¸\u0004æ±\nÁ4\u0002\u008cD\u0016èFtQ-«Êí \u0097îj\u0092\u008bW\f¯íê¥ß\u0001K\u008eh^Ôâ»V\u0095\"¾5+sR£1ÅÚ\u000b\u009b×\u000bm\u0095b²î8%\u009d\u0016\t;\rWóÙ\u0087~ê\u009e¾\\13a\u00053\u001d>\u0097>CÁTDÓo¦ß:y\u0093Q>;\u0012¢ÝÅr~r¹')Z\"80a\u0000#u \u00920Qû@ý\u009d\u009a\u009c\u0014D\u0083ló8\u0081²(\u0086í\u0091\u009c\u001e\u0005yY\u0003\u001b?BæX\nÚ:Å·\u0091ÍÊ:¨v\u0017¦¾@<nÕ±\u0006Ép^f\u0081cà\u0003\u0007îN#\u0010Ï£\u0002(3\u001d\u00813\u0092K¼GC\u0096$ÃQ««*k\u0093\u0015*#Æ\u001d\u0097êôIñ{K¦\bôj\u0085\u009c^¨\u001a\u0094\u0002\u0002§\n¾\u0096\u0095¯3\u0086g:¢x\f;¹»T\u0080>ì\n\u0092ýºDW\u000eËÓm\u0017Þç,&\u0004E\u0087úµª\\\u0084(\u009evÂ&\u0014¹\u001b1)Dò¢÷t\u0096\u0010<àË*ûC[\u0010`mõV¸\u008daæ\u0090í|KÅ·h\u0099\u0016½lIZÛj\f\u001c¶\r»C\u0088B\f\u009b\u0089\bâF1\u000f8bc\u0012\u009cb7\"øn5â\u0002@ÓêU\u0084\u0085\u0093³\u008ek\rÉQë!M;\u001cÅ-¹6îvì\u0019? òF\u0080\u0000^a ·Ç\u0012\u0083V·ê#\u008f7»¢§0\u0016ßcÞü\të\u001f{nj¹\rxGrè\u0004|Au8ß\u0010òµì\fd\u00ad¼á±\u0003ÔvÙ©ýº\u0016\u00838µZÞHB²¯0\u0081F\u007f.\u0092Å\nÉÌÑ\u0016K+\u000eÙÖ.S\u0090\u001c\u0002\u001cÁ\u0099;ñµ\u00147{\u001deòTÖC\u0081ÒÑIA\u0090\tep\u0094\u008c\u0011«Ú£¸Óa·|7@z\"ek\bq\u0092Ì}@\u0080\u000b\u0013\u009d\u007foK\u001d»¨G\n]ã\u0005}3vÖÿ\r]\"¾\u0016\t\no \u0086\u009f\u0003\u0017\u001bö¤þA\r{ë+\u00ad\u0001\u001a¸9ÌÀ\u0093\u009c\u009a=\u009e\u001b·Á§$gfÃ\u0015W¼ã\u0085+i°9.R:IºCÕý\u009f\u0090´Ï\u008bZxnC\u008añQu\u009dUº°&\u009b,æ óS¤jÂõ5\u0016»\u0018QR6Ù$\u0014]\n,\u001d¤$Ä\u0012d¡À7+\u009ejÄX\u0011^TÛ\u0015ú¸\\ÕY\u0090ªë®w\u0084\u0016\u0018\u000bXÛêh&´åáí\u0004?\u0003Ý\u0098mð\nh\u008c]8\u001f\u00065\n¸\u001c`\u0098\u0087ÏP\u001eZ*¹¿CSk¨¿?vMq\u009e ©ì,æì\u0011wõ\u0089\u0091vçÏ\\yÿò¥#g\u0001¨\u0015·¹`¶¯µ\u0002äÖ\b\u009cÔì\u0096R\u0093²²\u001aYOî´µ\u0095/\t\u0002G4¨ÉóD-\u0096àÔOï.$80·\u0003ËçÅ\t$ä¥\u0017è©lÖÁ(Ã\u0018Ê¹ \u001b$/¥\u0092åj>Îý&eÖ\u008dlX\u000eñµ\u0088 Öf\n£Zúåò-\u008b\u0007ÜXX\u001bÒôYcAî½ø\u0098XÄ\n|Â:§òì\u008eu\u0090\u008f>g}\u0015\u0083\u0014X\u00861\u0000,\u001d8Ò+Ìß`×oáòê½úÁ\n\u0093¯=\u009b\t9\u008aâ¿ò\u0003\u0095µ+- à\u0007á\u008a¾Äò·\u00198)ÂÞ\u0093g\u0000Ìû\u0006:\u0014Ä\u0013Mq!â\u0010(2ÿ\u008b\u009cïa®X\u0087\u000bVÃ\u0007\u0088^\u0019¼2\u000eûÏ\\Àh7O6\u001d\u008cvCÎ&\u00ad\u0084úv\"\u009d@²\u001f¦èf§5ØÅ\u0000¨×\u0004fd\u0003< \u0081\u001d:N\u0086{\u00167³i\u0092©æ)@\n»âáæÅð\u0086]2-\u001aáè?à\u008d\u009e$ö«\u0099»=²Í\u0097àÖh\u009aBµ5¶Í\u009cA(\u0006Zrñ·\u0012Æ\u000eù¶nîO^Ó4 \u00945$O\u0007\u0013\u0094Ô\u0084]â{3tè °\u0095Ã\u0010Õºy\u0011r¤ü.féübºMÇ{\u008cQ\u0097½§\u0006_ç}FVä";
@@ -2956,7 +2975,6 @@ public abstract class QR {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

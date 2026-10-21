@@ -22,6 +22,7 @@ public class TerminalHelpFrame extends JFrame {
    }
 
    public TerminalHelpFrame(JFrame var1) {
+      boolean var20;
       this.setTitle(a(-30872, 23592));
       JPanel var2 = (JPanel)this.getContentPane();
       var2.setLayout(new MigLayout());
@@ -59,9 +60,9 @@ public class TerminalHelpFrame extends JFrame {
       long var14 = 306266403902896148L;
       Object[] var13 = var10008;
       var10008 = Ref.h(306266403902896148L, var13, var14);
-      Object[] var10009 = Registry.emptyArgs();
+      Object var10009 = Registry.emptyArgs();
       long var16 = 613805675130464613L;
-      Object[] var15 = var10009;
+      Object var15 = var10009;
       var10009 = Ref.h(613805675130464613L, var15, var16);
 
       try {
@@ -899,6 +900,7 @@ var10007 = new Q7(var10008, !var20);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[18];
       int var11 = 0;
       String var10 = "\u000b#ÜÒd剘揦加咊丆輰儾桅(\u000b\u008cT,<z劅挥创繇空\u0013\t¥%ME响二叁卧a\u0004¾·ï\u009a!Y~\u0016ß¡ÅGÑ Ý2T¸ûª;\u0099éü&öxÎ\u0082Þµ3\u008cKÇr á\u0006繇竨來甇庍劀\u0007启任轤兂棈_±\u0006刨袷窧卐H{\t亥仙箒奅\u0089郷拐裦Á\u0004Dú°3\b\u0017\u001dºî裿兵:½\u0006瘓凡微捶閎¹\u000f坣为稖变厷乪覅莦卨厼抬剖謥廾刨\u0004亻冇春秖\u0007繈稏佧痻庱刟û\tÕ\u0092C³同乒叹厼f";
@@ -914,7 +916,6 @@ var10007 = new Q7(var10008, !var20);
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

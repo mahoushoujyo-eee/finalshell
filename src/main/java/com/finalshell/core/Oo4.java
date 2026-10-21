@@ -14,9 +14,9 @@ public class Oo4 implements Fb2 {
 
    @Override
    public void O(Ty4 var1) {
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var5 = 542590257020999358L;
-      Object[] var4 = var10001;
+      Object var4 = var10001;
       var10001 = Ref.h(542590257020999358L, var4, var5);
 
       try {
@@ -44,7 +44,7 @@ public class Oo4 implements Fb2 {
          JLabel var10004 = (JLabel)Ref.g(550961635451839925L, var10);
          String var10006 = (String)(Registry.emptyArgs());
          long var13 = 167932056536173107L;
-         Object[] var12 = var10006;
+         Object var12 = var10006;
          var10006 = Ref.h(167932056536173107L, var12, var13);
 
          try {

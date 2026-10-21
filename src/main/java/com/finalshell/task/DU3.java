@@ -4,7 +4,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.listener.YJ3;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import com.finalshell.ui.panel.FilePermissionPanel;
 import java.lang.reflect.InvocationTargetException;
 
@@ -17,7 +17,7 @@ public class DU3 implements Runnable {
 
    @Override
    public void run() {
-      int[] var1 = Connection4.I();
+      int[] var1 = ConnectionInfoPanel.I();
       Object var2 = 605613512724604290L;
       Ref.g(605613512724604290L, var2);
       Object var4 = 239395089633094126L;

@@ -65,7 +65,7 @@ public final class QC {
                   label54: {
                      var5 = (com.finalshell.ui.panel.KE3)var4;
                      var6 = BU.I(var0, var5);
-                     var7 = (var6.equals(BU.none)) ? 1 : 0;
+                     var7 = (byte)((var6.equals(BU.none)) ? 1 : 0);
                      var9 = var7;
                      if (var1 == null) {
                         if (var7 != 0) {
@@ -123,6 +123,7 @@ public final class QC {
    }
 
    public static void q(Graphics2D var0, JComponent var1) {
+      boolean var33;
       String var10000 = com.finalshell.ui.panel.KE3.v();
       Container var3 = var1.getParent();
       String var2 = var10000;
@@ -180,9 +181,9 @@ public final class QC {
          var11 = var1.getWidth();
          var12 = var1.getHeight();
          var13 = BU.I(var1, var5);
-         var14 = (var10.D$boolean()) ? 1 : 0;
+         var14 = (byte)((var10.D$boolean()) ? 1 : 0);
          var15 = var10.D$float();
-         var16 = (var1.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+         var16 = (byte)((var1.getComponentOrientation().isLeftToRight()) ? 1 : 0);
          boolean var32 = var1 instanceof AbstractButton;
          if (var2 == null) {
             if (var32) {
@@ -221,7 +222,7 @@ public final class QC {
       Shape var24;
       label151: {
          label113: {
-            var24 = ((((E(var1, var13, var11, var12, var6, var7, var8, var9, (boolean)var16)) != 0) != 0) != 0) != 0;
+            var24 = (E(var1, var13, var11, var12, var6, var7, var8, var9, (boolean)var16)) != 0;
             boolean var34 = var13.equals(BU.end);
             if (var2 == null) {
                if (var34) {
@@ -235,7 +236,7 @@ public final class QC {
                Rectangle var20;
                Shape var25;
                label106: {
-                  var25 = ((((d(var1, var11, var12, var6, var7, (boolean)var16)) != 0) != 0) != 0) != 0;
+                  var25 = (d(var1, var11, var12, var6, var7, (boolean)var16)) != 0;
                   var20 = var25.getBounds();
                   boolean var35 = var1.isEnabled();
                   if (var2 == null) {
@@ -329,8 +330,9 @@ public final class QC {
    }
 
    public static GeneralPath Z(int var0, int var1, int var2, int var3, boolean var4) {
+      GeneralPath var6;
       String var10000 = com.finalshell.ui.panel.KE3.v();
-      GeneralPath var6 = new GeneralPath(0);
+      var6 = new GeneralPath(0);
       String var5 = var10000;
       if (var5 == null) {
          if (var4) {
@@ -392,7 +394,7 @@ public final class QC {
             }
 
             if (var12 == 1) {
-               var12 = (var7) ? 1 : 0;
+               var12 = var7;
                if (var9 != null) {
                   break label98;
                }
@@ -407,7 +409,7 @@ public final class QC {
             }
          }
 
-         var12 = (var1.equals(BU.end)) ? 1 : 0;
+         var12 = var1.equals(BU.end);
       }
 
       if (var9 == null) {
@@ -416,7 +418,7 @@ public final class QC {
             label72: {
                label102: {
                   var11 = (new GeneralPath(0)) ? 1 : 0;
-                  var12 = (var8) ? 1 : 0;
+                  var12 = var8;
                   if (var9 == null) {
                      if (var8 != 0) {
                         label66: {
@@ -524,7 +526,7 @@ public final class QC {
          var5 = var4.getBounds();
          int var6 = var5.width;
          var5.width = Math.round((float)var6 * var1);
-         var7 = (var2) ? 1 : 0;
+         var7 = var2;
          if (var3 == null) {
             if (var2 != 0) {
                var7 = var5.x;
@@ -543,6 +545,7 @@ public final class QC {
    }
 
    public static LinearGradientPaint w(JComponent var0, int var1) {
+      boolean var6;
       String var10000 = com.finalshell.ui.panel.KE3.v();
       boolean var3 = false;
       String var2 = var10000;
@@ -583,6 +586,7 @@ public final class QC {
    }
 
    public static boolean q(JComponent var0, int var1, int var2) {
+      Container var6;
       String var3;
       int var4;
       int var5;
@@ -592,7 +596,7 @@ public final class QC {
             var4 = var0.getWidth();
             var5 = var0.getHeight();
             String var10000 = com.finalshell.ui.panel.KE3.v();
-            Container var6 = var0.getParent();
+            var6 = var0.getParent();
             var3 = var10000;
             Container var14 = var6;
             if (var3 == null) {
@@ -603,13 +607,13 @@ public final class QC {
                var14 = var6;
             }
 
-            var15 = (var14 instanceof com.finalshell.ui.panel.KE3) ? 1 : 0;
+            var15 = var14 instanceof com.finalshell.ui.panel.KE3;
             if (var3 != null) {
                break label61;
             }
 
             if (var15 != 0) {
-               var15 = (var0 instanceof ND) ? 1 : 0;
+               var15 = var0 instanceof ND;
                if (var3 != null) {
                   break label61;
                }
@@ -633,7 +637,7 @@ public final class QC {
       int var10001 = var1;
       if (var3 == null) {
          if (var15 >= var1) {
-            return 0 != 0;
+            return (0 != 0);
          }
 
          var15 = var1;
@@ -642,7 +646,7 @@ public final class QC {
 
       if (var3 == null) {
          if (var15 >= var10001) {
-            return 0 != 0;
+            return (0 != 0);
          }
 
          var15 = 0;
@@ -651,18 +655,18 @@ public final class QC {
 
       if (var3 == null) {
          if (var15 >= var10001) {
-            return 0 != 0;
+            return (0 != 0);
          }
 
          var15 = var2;
          if (var3 != null) {
-            return var2 != 0;
+            return (var2 != 0);
          }
 
          var10001 = var5;
       }
 
-      return (boolean)((var15 < var10001 ? 1 : 0) != 0);
+      return ((var15 < var10001 ? 1 : 0) != 0);
    }
 
    static {
@@ -670,6 +674,7 @@ public final class QC {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -27281) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1450,7 +1455,7 @@ public final class QC {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1484,6 +1489,7 @@ public final class QC {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long[] var6;
       String[] var13 = new String[2];
       int var11 = 0;
       String var10 = "\u00ad»ø®=¹\u0004\u0082y\u00878";
@@ -1570,7 +1576,7 @@ public final class QC {
             a = var13;
             b = new String[2];
             long var0 = 245770128563638496L;
-            long[] var6 = new long[8];
+            var6 = new long[8];
             int var3 = 0;
             String var4 = "Y%TKVê6\u009a\u008a1\u008e¹\u0090ØKx`\u008fØ1\u008e.\u001d[\u0007\u0013ù¬}u=\u0097¾dh\u0004Æ \\r8\u0084\u0094Ò\u000fXNÞ";
             int var5 = "Y%TKVê6\u009a\u008a1\u008e¹\u0090ØKx`\u008fØ1\u008e.\u001d[\u0007\u0013ù¬}u=\u0097¾dh\u0004Æ \\r8\u0084\u0094Ò\u000fXNÞ".length();

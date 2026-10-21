@@ -38,6 +38,14 @@ public class Dn4_2 implements Comparator {
    }
 
    public int U(Kw4 var1, Kw4 var2) {
+      Integer var108;
+      Integer var114;
+      Long var122;
+      Long var125;
+      Integer var134;
+      Long var150;
+      Long var153;
+      Integer var162;
       int[] var3 = CE.S$arrint();
       Object var8 = 594107705074217083L;
       Dn4_2 var10001 = ((String)Ref.g(594107705074217083L, var8)).equals((String)Registry.lookupField(389386238796712282L).get(null));
@@ -47,7 +55,7 @@ public class Dn4_2 implements Comparator {
             Comparator var112 = (Comparator)Ref.g(395182373245310285L, var10);
             String var135 = (String)(Registry.emptyArgs());
             long var13 = 582473494023502780L;
-            Object[] var12 = var135;
+            Object var12 = var135;
             var135 = Ref.h(582473494023502780L, var12, var13);
 
             try {
@@ -58,7 +66,7 @@ public class Dn4_2 implements Comparator {
 
             String var163 = (String)(Registry.emptyArgs());
             long var15 = 582473494023502780L;
-            Object[] var14 = var163;
+            Object var14 = var163;
             var163 = Ref.h(582473494023502780L, var14, var15);
 
             try {
@@ -79,9 +87,9 @@ public class Dn4_2 implements Comparator {
          if (var10001 == null) {
             Object var18 = 344173546614258802L;
             Ref.g(344173546614258802L, var18);
-            Object[] var132 = Registry.emptyArgs();
+            Object var132 = Registry.emptyArgs();
             long var21 = 134324574424375296L;
-            Object[] var20 = var132;
+            Object var20 = var132;
             var132 = Ref.h(134324574424375296L, var20, var21);
 
             try {
@@ -91,9 +99,9 @@ public class Dn4_2 implements Comparator {
             }
 
             Integer.valueOf(var134);
-            Object[] var160 = Registry.emptyArgs();
+            Object var160 = Registry.emptyArgs();
             long var23 = 134324574424375296L;
-            Object[] var22 = var160;
+            Object var22 = var160;
             var160 = Ref.h(134324574424375296L, var22, var23);
 
             try {
@@ -102,9 +110,9 @@ public class Dn4_2 implements Comparator {
                throw var87.getTargetException();
             }
 
-            Object[] var147 = Registry.packArgs(var2, Integer.valueOf(var162));
+            Object var147 = Registry.packArgs(var2, Integer.valueOf(var162));
             long var25 = 227703286706087580L;
-            Object[] var24 = var147;
+            Object var24 = var147;
             var147 = Ref.h(227703286706087580L, var24, var25);
 
             try {
@@ -123,7 +131,7 @@ public class Dn4_2 implements Comparator {
          if (var10001 == null) {
             String var109 = (String)(Registry.emptyArgs());
             long var29 = 516374718951189974L;
-            Object[] var28 = var109;
+            Object var28 = var109;
             var109 = Ref.h(516374718951189974L, var28, var29);
 
             try {
@@ -135,7 +143,7 @@ public class Dn4_2 implements Comparator {
             String var106 = var109;
             String var116 = Registry.emptyArgs();
             long var31 = 516374718951189974L;
-            Object[] var30 = var116;
+            Object var30 = var116;
             var116 = Ref.h(516374718951189974L, var30, var31);
 
             try {
@@ -184,7 +192,7 @@ public class Dn4_2 implements Comparator {
                   var116 = var5;
                }
 
-               byte var120 = (var116.startsWith(a(-9714, -29583))) ? 1 : 0;
+               byte var120 = (byte)((var116.startsWith(a(-9714, -29583))) ? 1 : 0);
                if (var3 == null) {
                   return var120;
                }
@@ -206,9 +214,9 @@ public class Dn4_2 implements Comparator {
 
       if (var3 != null) {
          if (var10001 == null) {
-            Object[] var10002 = Registry.emptyArgs();
+            Object var10002 = Registry.emptyArgs();
             long var37 = 528143184018704864L;
-            Object[] var36 = var10002;
+            Object var36 = var10002;
             var10002 = Ref.h(528143184018704864L, var36, var37);
 
             try {
@@ -218,9 +226,9 @@ public class Dn4_2 implements Comparator {
             }
 
             long var4 = (long)var108;
-            Object[] var10003 = Registry.emptyArgs();
+            Object var10003 = Registry.emptyArgs();
             long var39 = 528143184018704864L;
-            Object[] var38 = var10003;
+            Object var38 = var10003;
             var10003 = Ref.h(528143184018704864L, var38, var39);
 
             try {
@@ -274,7 +282,7 @@ public class Dn4_2 implements Comparator {
             Ref.g(344173546614258802L, var46);
             HashSet var129 = (HashSet)(Registry.emptyArgs());
             long var49 = 398648618049357234L;
-            Object[] var48 = var129;
+            Object var48 = var129;
             var129 = Ref.h(398648618049357234L, var48, var49);
 
             try {
@@ -286,7 +294,7 @@ public class Dn4_2 implements Comparator {
             Integer.valueOf(var129.size());
             HashSet var157 = (HashSet)(Registry.emptyArgs());
             long var51 = 398648618049357234L;
-            Object[] var50 = var157;
+            Object var50 = var157;
             var157 = Ref.h(398648618049357234L, var50, var51);
 
             try {
@@ -295,9 +303,9 @@ public class Dn4_2 implements Comparator {
                throw var95.getTargetException();
             }
 
-            Object[] var143 = Registry.packArgs(var2, Integer.valueOf(var157.size()));
+            Object var143 = Registry.packArgs(var2, Integer.valueOf(var157.size()));
             long var53 = 227703286706087580L;
-            Object[] var52 = var143;
+            Object var52 = var143;
             var143 = Ref.h(227703286706087580L, var52, var53);
 
             try {
@@ -318,7 +326,7 @@ public class Dn4_2 implements Comparator {
             Ref.g(344173546614258802L, var56);
             ArrayList var126 = (ArrayList)(Registry.emptyArgs());
             long var59 = 279562214327125641L;
-            Object[] var58 = var126;
+            Object var58 = var126;
             var126 = Ref.h(279562214327125641L, var58, var59);
 
             try {
@@ -330,7 +338,7 @@ public class Dn4_2 implements Comparator {
             Integer.valueOf(var126.size());
             ArrayList var154 = (ArrayList)(Registry.emptyArgs());
             long var61 = 279562214327125641L;
-            Object[] var60 = var154;
+            Object var60 = var154;
             var154 = Ref.h(279562214327125641L, var60, var61);
 
             try {
@@ -339,9 +347,9 @@ public class Dn4_2 implements Comparator {
                throw var98.getTargetException();
             }
 
-            Object[] var141 = Registry.packArgs(var2, Integer.valueOf(var154.size()));
+            Object var141 = Registry.packArgs(var2, Integer.valueOf(var154.size()));
             long var63 = 227703286706087580L;
-            Object[] var62 = var141;
+            Object var62 = var141;
             var141 = Ref.h(227703286706087580L, var62, var63);
 
             try {
@@ -360,9 +368,9 @@ public class Dn4_2 implements Comparator {
          if (var10001 == null) {
             Object var66 = 196722139846004877L;
             Ref.g(196722139846004877L, var66);
-            Object[] var123 = Registry.emptyArgs();
+            Object var123 = Registry.emptyArgs();
             long var69 = 165254620646467988L;
-            Object[] var68 = var123;
+            Object var68 = var123;
             var123 = Ref.h(165254620646467988L, var68, var69);
 
             try {
@@ -372,9 +380,9 @@ public class Dn4_2 implements Comparator {
             }
 
             Long.valueOf(var125);
-            Object[] var151 = Registry.emptyArgs();
+            Object var151 = Registry.emptyArgs();
             long var71 = 165254620646467988L;
-            Object[] var70 = var151;
+            Object var70 = var151;
             var151 = Ref.h(165254620646467988L, var70, var71);
 
             try {
@@ -383,9 +391,9 @@ public class Dn4_2 implements Comparator {
                throw var101.getTargetException();
             }
 
-            Object[] var139 = Registry.packArgs(var2, Long.valueOf(var153));
+            Object var139 = Registry.packArgs(var2, Long.valueOf(var153));
             long var73 = 262915954633911742L;
-            Object[] var72 = var139;
+            Object var72 = var139;
             var139 = Ref.h(262915954633911742L, var72, var73);
 
             try {
@@ -404,9 +412,9 @@ public class Dn4_2 implements Comparator {
          if (var10001 == null) {
             Object var76 = 196722139846004877L;
             Ref.g(196722139846004877L, var76);
-            Object[] var10004 = Registry.emptyArgs();
+            Object var10004 = Registry.emptyArgs();
             long var79 = 361501567714445109L;
-            Object[] var78 = var10004;
+            Object var78 = var10004;
             var10004 = Ref.h(361501567714445109L, var78, var79);
 
             try {
@@ -416,9 +424,9 @@ public class Dn4_2 implements Comparator {
             }
 
             Long.valueOf(var122);
-            Object[] var10006 = Registry.emptyArgs();
+            Object var10006 = Registry.emptyArgs();
             long var81 = 361501567714445109L;
-            Object[] var80 = var10006;
+            Object var80 = var10006;
             var10006 = Ref.h(361501567714445109L, var80, var81);
 
             try {
@@ -427,9 +435,9 @@ public class Dn4_2 implements Comparator {
                throw var104.getTargetException();
             }
 
-            Object[] var10005 = Registry.packArgs(var2, Long.valueOf(var150));
+            Object var10005 = Registry.packArgs(var2, Long.valueOf(var150));
             long var83 = 262915954633911742L;
-            Object[] var82 = var10005;
+            Object var82 = var10005;
             var10005 = Ref.h(262915954633911742L, var82, var83);
 
             try {
@@ -447,9 +455,9 @@ public class Dn4_2 implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((Kw4)var1, (Kw4)var2);
+      Object var10001 = Registry.packArgs((Kw4)var1, (Kw4)var2);
       long var4 = 484966342505463394L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(484966342505463394L, var3, var4);
 
       try {

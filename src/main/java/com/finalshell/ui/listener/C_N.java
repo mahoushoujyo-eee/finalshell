@@ -14,6 +14,7 @@ public class C_N implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      Tk2 var5;
       Kf4 var6;
       label49: {
          label54: {
@@ -28,7 +29,6 @@ public class C_N implements ActionListener {
                   boolean var4 = Kf4.I(this.G);
                   if (!var2) {
                      if (var4) {
-      Tk2 var5;
                         var5 = var3;
                         if (var2) {
                            break label47;
@@ -48,7 +48,6 @@ public class C_N implements ActionListener {
                   }
 
                   if (var4) {
-      Tk2 var5;
                      break label54;
                   }
 
@@ -80,7 +79,6 @@ public class C_N implements ActionListener {
       var6.revalidate();
    }
 }
-
 
 
 

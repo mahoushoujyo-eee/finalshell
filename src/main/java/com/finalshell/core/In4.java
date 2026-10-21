@@ -52,9 +52,10 @@ public class In4 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void P(@NotNull Ua2 var1, @NotNull DC3 var2) {
+      Bc2_2 var8;
       int var10000 = (YA3.w()) ? 1 : 0;
       this.K.w();
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
       boolean var19 = false /* VF: Semaphore variable */;
 
       label250: {
@@ -101,7 +102,7 @@ public class In4 {
                label227:
                while (true) {
                   if (var10000 != 0) {
-                     Bc2_2 var8 = (Bc2_2)var7.next();
+                     var8 = (Bc2_2)var7.next();
                      Ez2 var9 = var8.g(var6);
                      if (!var3) {
                         var19 = false;
@@ -270,6 +271,7 @@ public class In4 {
 
    @NotNull
    public String Z(@NotNull Ua2 var1, int var2, int var3) {
+      String var8;
       boolean var10000 = YA3.H();
       StringBuilder var5 = new StringBuilder();
       boolean var4 = var10000;

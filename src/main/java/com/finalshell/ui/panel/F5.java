@@ -197,7 +197,7 @@ public class F5 extends F8 {
       Ref.h(399585344452154517L, var5, var6);
       NY var10003 = (NY)(Registry.emptyArgs());
       long var8 = 149968465491171480L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(149968465491171480L, var7, var8);
 
       try {
@@ -210,7 +210,7 @@ public class F5 extends F8 {
       byte var22 = 2;
       Color var10008 = (Color)(Registry.emptyArgs());
       long var10 = 345089686683358688L;
-      Object[] var9 = var10008;
+      Object var9 = var10008;
       var10008 = Ref.h(345089686683358688L, var9, var10);
 
       try {

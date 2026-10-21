@@ -16,7 +16,7 @@ public class Y22 implements Comparator {
       Comparator var10001 = (Comparator)Ref.g(371381669271200112L, var3);
       String var10003 = (String)(Registry.emptyArgs());
       long var6 = 474678417197598864L;
-      Object[] var5 = var10003;
+      Object var5 = var10003;
       var10003 = Ref.h(474678417197598864L, var5, var6);
 
       try {
@@ -27,7 +27,7 @@ public class Y22 implements Comparator {
 
       String var10005 = (String)(Registry.emptyArgs());
       long var8 = 474678417197598864L;
-      Object[] var7 = var10005;
+      Object var7 = var10005;
       var10005 = Ref.h(474678417197598864L, var7, var8);
 
       try {
@@ -41,9 +41,9 @@ public class Y22 implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((YE)var1, (YE)var2);
+      Object var10001 = Registry.packArgs((YE)var1, (YE)var2);
       long var4 = 126340200911172184L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(126340200911172184L, var3, var4);
 
       try {

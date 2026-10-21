@@ -318,7 +318,6 @@ public class Xm2 extends BasicScrollBarUI implements D7, L0_2 {
 
                      if (var2 == null) {
       Kw2_2 var9;
-      Kw2_2 var9;
                         break label50;
                      }
                   }
@@ -1322,7 +1321,6 @@ public class Xm2 extends BasicScrollBarUI implements D7, L0_2 {
       }
    }
 }
-
 
 
 

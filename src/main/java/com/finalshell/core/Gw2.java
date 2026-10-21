@@ -39,6 +39,7 @@ public final class Gw2 {
    }
 
    public static int E(int[] var0) {
+      int var4;
       String var10000 = FV_2.D();
       int var2 = var0[0];
       String var1 = var10000;
@@ -54,8 +55,6 @@ public final class Gw2 {
             var2 = var4;
             var3++;
             if (var1 == null) {
-      int var4;
-      int var4;
                continue;
             }
          }
@@ -68,6 +67,7 @@ public final class Gw2 {
    }
 
    public static int G(int[] var0) {
+      int var4;
       int var2 = var0[0];
       String var10000 = FV_2.D();
       int var3 = 1;
@@ -106,7 +106,6 @@ public final class Gw2 {
       g = new Random();
    }
 }
-
 
 
 

@@ -15,10 +15,12 @@ public class W7 implements AWTEventListener {
 
    @Override
    public void eventDispatched(AWTEvent var1) {
+      AWTEvent var11;
+      String var13;
       int var10000 = (Dm4.F$boolean()) ? 1 : 0;
       var1.getSource();
       MouseEvent var3 = (MouseEvent)var1;
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       var10000 = (var1.getSource() instanceof JButton) ? 1 : 0;
       if (var2) {
          if (var10000 == 0) {

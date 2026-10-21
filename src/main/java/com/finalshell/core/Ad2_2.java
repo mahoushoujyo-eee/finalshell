@@ -11,6 +11,7 @@ public class Ad2_2 implements A0_2 {
 
    @Override
    public Object Y(Ph4 var1, Object var2, Object var3) {
+      Oc2 var9;
       Oc2 var5 = new Oc2(this.B.length);
       String var10000 = Hi2.C();
       int var6 = 0;
@@ -18,7 +19,6 @@ public class Ad2_2 implements A0_2 {
 
       while (true) {
          if (var6 < this.B.length) {
-      Oc2 var9;
             Object var7 = var1.n(var3, this.B[var6]);
 
             try {
@@ -33,7 +33,6 @@ public class Ad2_2 implements A0_2 {
                   continue;
                }
             } catch (UnsupportedOperationException var8) {
-      Oc2 var9;
                throw a(var8);
             }
          }
@@ -166,7 +165,6 @@ public class Ad2_2 implements A0_2 {
       return var0;
    }
 }
-
 
 
 

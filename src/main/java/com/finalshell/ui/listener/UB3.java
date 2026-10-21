@@ -30,12 +30,13 @@ public class UB3 implements KeyListener {
 
    @Override
    public void keyReleased(KeyEvent var1) {
+      boolean var48;
       String[] var2 = Backspace.F();
       Object var7 = 614438461152141123L;
       Ref.g(614438461152141123L, var7);
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var10 = 634403491225282499L;
-      Object[] var9 = var10002;
+      Object var9 = var10002;
       var10002 = Ref.h(634403491225282499L, var9, var10);
 
       try {

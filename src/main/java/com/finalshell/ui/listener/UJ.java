@@ -9,10 +9,10 @@ import javax.swing.JFrame;
 
 public class UJ implements ActionListener {
    public final JFrame E;
-   public final com.finalshell.ui.frame.U f;
+   public final com.finalshell.ui.frame.MainFrame f;
    public final AcceleratePanel S;
 
-   public UJ(AcceleratePanel var1, JFrame var2, com.finalshell.ui.frame.U var3) {
+   public UJ(AcceleratePanel var1, JFrame var2, com.finalshell.ui.frame.MainFrame var3) {
       this.S = var1;
       this.E = var2;
       this.f = var3;
@@ -30,7 +30,7 @@ public class UJ implements ActionListener {
             Object var7 = 483503609442551270L;
             JFrame var10003 = (JFrame)Ref.g(483503609442551270L, var7);
             Object var9 = 337283081855578108L;
-            this.setLocationRelativeTo((com.finalshell.ui.frame.U)Ref.g(337283081855578108L, var9));
+            this.setLocationRelativeTo((com.finalshell.ui.frame.MainFrame)Ref.g(337283081855578108L, var9));
          }
 
          var10001 = this;

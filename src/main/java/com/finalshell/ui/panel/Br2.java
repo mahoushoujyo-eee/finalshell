@@ -168,7 +168,7 @@ public class Br2 extends JComponent {
          var10001 = this.getHeight() - 5;
       }
 
-      return (boolean)(var10000 <= var10001 ? 1 : 0);
+      return ((var10000 <= var10001 ? 1 : 0) != 0);
    }
 
    public boolean r(MouseEvent var1) {
@@ -206,7 +206,7 @@ public class Br2 extends JComponent {
          var10001 = a(695, 8457130778011823148L);
       }
 
-      return (boolean)(var10000 <= var10001 ? 1 : 0);
+      return ((var10000 <= var10001 ? 1 : 0) != 0);
    }
 
    public boolean v(MouseEvent var1) {
@@ -244,7 +244,7 @@ public class Br2 extends JComponent {
          var10001 = this.getHeight() - 1;
       }
 
-      return (boolean)(var10000 <= var10001 ? 1 : 0);
+      return ((var10000 <= var10001 ? 1 : 0) != 0);
    }
 
    public boolean C(MouseEvent var1) {
@@ -282,7 +282,7 @@ public class Br2 extends JComponent {
          var10001 = 1 + o.getIconHeight();
       }
 
-      return (boolean)(var10000 <= var10001 ? 1 : 0);
+      return ((var10000 <= var10001 ? 1 : 0) != 0);
    }
 
    @Override
@@ -1226,6 +1226,7 @@ public class Br2 extends JComponent {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "\u008drGÄåé\u001eÆ\u00adbø\u0014#\u0010Ð*\u0080C\u007f7|ìûÁ?4\u0015n\u0090Ô";
@@ -1240,7 +1241,6 @@ public class Br2 extends JComponent {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

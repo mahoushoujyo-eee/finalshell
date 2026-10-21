@@ -852,6 +852,7 @@ public class MQ {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[10];
       int var11 = 0;
       String var10 = "ÎÛCs\u001aÆFì±76¸#»ðêRvæ\f\u008bØÕ_¡\u0012\u008fûkw\u001fFæî¼)þ\u0092\u001d\u0005ú\u0004\u001b\u009b\u0012ÛRáBNàÌ5ð¨\u000bWQ±Ãé\u0005 \u0005ÁÛ{4\u0091\u000e\b\u008a\u009bY\u0001\u008fk|Æ¡5\u009d\u000eè\u0005ÖåÞâ\u009a\u0006èV©ßæú\u00053q\u0018\u009d\u001a";
@@ -867,7 +868,6 @@ public class MQ {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

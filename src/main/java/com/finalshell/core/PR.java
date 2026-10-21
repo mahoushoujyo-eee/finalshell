@@ -21,6 +21,7 @@ public class PR implements CompositeContext {
 
    @Override
    public void compose(Raster var1, Raster var2, WritableRaster var3) {
+      int var21;
       String var10000 = RA3.c();
       int var5 = var1.getMinX();
       String var4 = var10000;
@@ -57,8 +58,6 @@ public class PR implements CompositeContext {
                }
 
                if (var4 == null) {
-      int var21;
-      int var21;
                   var20 = var13 != 0 ? var10[var15 + 3] : var17;
                }
 
@@ -237,7 +236,6 @@ public class PR implements CompositeContext {
       }
    }
 }
-
 
 
 

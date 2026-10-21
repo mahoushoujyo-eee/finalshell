@@ -41,6 +41,7 @@ public class EI3 implements SC {
    }
 
    public float f(float var1, float var2, int var3, int var4, LV[] var5) {
+      float var22;
       String var10000 = UZ.h();
       this.M.setSeed((long)(a(12881, 8123721411019069730L) * var3 + a(28541, 1920118299313570831L) * var4));
       int var7 = 3 + this.M.nextInt() % 4;
@@ -169,6 +170,7 @@ public class EI3 implements SC {
 
    @Override
    public float h(float var1, float var2) {
+      float var14;
       String var10000 = UZ.h();
       int var4 = 0;
       String var3 = var10000;
@@ -235,8 +237,6 @@ public class EI3 implements SC {
                }
 
                if (var13 > 0) {
-      int var14;
-      int var14;
                   var8 = this.f(var6 + 1.0F, var7 - 1.0F, var4 - 1, var5 + 1, this.w);
                }
             }
@@ -346,7 +346,6 @@ public class EI3 implements SC {
       b = new Integer[2];
    }
 }
-
 
 
 

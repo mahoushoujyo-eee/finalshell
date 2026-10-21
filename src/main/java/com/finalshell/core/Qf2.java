@@ -24,8 +24,8 @@ public class Qf2 extends Qi2 {
             try {
                var4.u(var2.J$int());
                var4.q(E8.J(a));
-               var7 = (var4) ? 1 : 0;
-               var10001 = (this.K()) ? 1 : 0;
+               var7 = var4;
+               var10001 = (byte)((this.K()) ? 1 : 0);
                if (var3) {
                   break label22;
                }

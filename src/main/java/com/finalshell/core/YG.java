@@ -12,6 +12,7 @@ public class YG implements Enumeration {
    public Iterator b;
 
    public YG() {
+      List var7;
       Ky4[] var10000 = XA.P();
       Iterator var2 = L2.X().values().iterator();
       Ky4[] var1 = var10000;

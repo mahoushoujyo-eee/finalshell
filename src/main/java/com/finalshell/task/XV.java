@@ -1,13 +1,13 @@
 package com.finalshell.task;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.reflect.Ref;
 
 public class XV implements Runnable {
    public final com.finalshell.core.DY3 j;
-   public final Connection12 C;
+   public final FileTransferConnection C;
 
-   public XV(Connection12 var1, com.finalshell.core.DY3 var2) {
+   public XV(FileTransferConnection var1, com.finalshell.core.DY3 var2) {
       this.C = var1;
       this.j = var2;
    }

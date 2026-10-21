@@ -29,6 +29,8 @@ public final class Xd2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void W(Wa2_2 var1) {
+      int var13;
+      short[] var23;
       short[] var3 = this.V;
       int[] var10000 = Nm4.g();
       short[] var4 = this.n.q;
@@ -105,7 +107,7 @@ public final class Xd2 {
                      var20 = var3[var9 * 2];
                   }
 
-                  int var13 = var20;
+                  var13 = var20;
                   var1.V += var13 * (var11 + var12);
                   if (var2 != null) {
                      break label115;
@@ -190,8 +192,6 @@ public final class Xd2 {
                         var25 = this.J;
                         if (var2 == null) {
                            if (var10 > this.J && var2 == null) {
-      short[] var23;
-      short[] var23;
                               continue;
                            }
 
@@ -237,6 +237,7 @@ public final class Xd2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void t(Wa2_2 var1) {
+      Wa2_2 var15;
       int[] var10000 = Nm4.g();
       short[] var3 = this.V;
       int[] var2 = var10000;
@@ -430,6 +431,8 @@ public final class Xd2 {
    }
 
    public static void __vfClinit__() {
+      byte[] var13;
+      int[] var15;
       long var0 = 6936913681260085718L;
       long[] var6 = new long[773];
       int var3 = 0;
@@ -568,7 +571,7 @@ public final class Xd2 {
                      var12[a(16817, 6086412893030234623L)] = 1;
                      var12[a(24050, 6988447066775266820L)] = (byte)a(23229, 4415176928458417123L);
                      M = var12;
-                     byte[] var13 = new byte[a(6054, 2229382107615653775L)];
+                     var13 = new byte[a(6054, 2229382107615653775L)];
                      var13[0] = 0;
                      var13[1] = 1;
                      var13[2] = 2;
@@ -1340,7 +1343,7 @@ public final class Xd2 {
                      var14[a(21675, 102369987442421187L)] = (byte)a(15474, 2507616777597338742L);
                      var14[a(18042, 4467278415884337030L)] = (byte)a(4837, 6014722955429832801L);
                      v = var14;
-                     int[] var15 = new int[a(9099, 921443284486707551L)];
+                     var15 = new int[a(9099, 921443284486707551L)];
                      var15[0] = 0;
                      var15[1] = 1;
                      var15[2] = 2;
@@ -1435,7 +1438,6 @@ public final class Xd2 {
       }
    }
 }
-
 
 
 

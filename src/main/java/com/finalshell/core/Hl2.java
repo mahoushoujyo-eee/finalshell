@@ -513,6 +513,10 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
 
    @Override
    public void h() {
+      Insets var10;
+      Insets var11;
+      Insets var17;
+      Insets var9;
       boolean var1;
       Hl2 var7;
       label131: {
@@ -566,7 +570,6 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
       Insets var8 = var4;
       if (var1) {
          if (var4 != null) {
-      boolean var9;
             int var16;
             int var10001;
             label104: {
@@ -578,7 +581,6 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
                   var9 = var2;
                   var10001 = var2.left;
                   if (var3) {
-      boolean var10;
                      var16 = var4.left;
                      break label104;
                   }
@@ -593,7 +595,7 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
                var9.left = var10001 + var16;
                var10 = var2;
                var10001 = var2.bottom;
-               Insets var17 = var4;
+               var17 = var4;
                if (var1) {
                   var2.bottom = var2.bottom + var4.bottom;
                   var10 = var2;
@@ -691,6 +693,9 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
 
    @Override
    public void paintSafely(Graphics var1) {
+      FontMetrics var10;
+      int var11;
+      int var21;
       boolean var2;
       JTextComponent var3;
       Graphics2D var4;
@@ -818,7 +823,7 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
       super.paintSafely(var1);
       if (var2) {
          if (this.Q(var3)) {
-            byte var13 = var3.getComponentOrientation().isLeftToRight();
+            byte var13 = (byte)((var3.getComponentOrientation().isLeftToRight()) ? 1 : 0);
             Rectangle var7 = this.getVisibleEditorRect();
             Shape var8 = RV.n(var4, var7);
             Font var10001 = this.o;
@@ -833,11 +838,10 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
             }
 
             String var9;
-            int var11;
             label178: {
                var4.setPaint(var20);
                var9 = Cf4_2.X(this.a);
-               FontMetrics var10 = var4.getFontMetrics();
+               var10 = var4.getFontMetrics();
                int var18 = this.L;
                if (var2) {
                   if (this.L == 0) {
@@ -1789,9 +1793,12 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      int var11;
+      char[] var30;
       String[] var13 = new String[11];
-      int var11 = 0;
-      String var10 = "IcdÇ\u0084Àªû\u0006»E\u0017x\u009aû\u0014(\u009dØdý\u0014\u0098ôb¶\u001a>w9°\u0094$\u0010#?\u0007ÖO Ò\u0018\u00007\u00140ô¶\u0096TÓÜs+P\u0017èª\u0086,\u001fÙ=\u0083\u009c\u00075rÜu\u0097ôÆ\u0006z\u0093/¢\u009d \u0007Ï9¯tø\u001d\u0089\u0014\u0017]?|\u0001\u0017\u0007\u0094\u0091ºd¿¸\tI\u0092\u001bÐÄ'";
+      var11 = 0;
+      var10 = "IcdÇ\u0084Àªû\u0006»E\u0017x\u009aû\u0014(\u009dØdý\u0014\u0098ôb¶\u001a>w9°\u0094$\u0010#?\u0007ÖO Ò\u0018\u00007\u00140ô¶\u0096TÓÜs+P\u0017èª\u0086,\u001fÙ=\u0083\u009c\u00075rÜu\u0097ôÆ\u0006z\u0093/¢\u009d \u0007Ï9¯tø\u001d\u0089\u0014\u0017]?|\u0001\u0017\u0007\u0094\u0091ºd¿¸\tI\u0092\u001bÐÄ'";
       int var12 = "IcdÇ\u0084Àªû\u0006»E\u0017x\u009aû\u0014(\u009dØdý\u0014\u0098ôb¶\u001a>w9°\u0094$\u0010#?\u0007ÖO Ò\u0018\u00007\u00140ô¶\u0096TÓÜs+P\u0017èª\u0086,\u001fÙ=\u0083\u009c\u00075rÜu\u0097ôÆ\u0006z\u0093/¢\u009d \u0007Ï9¯tø\u001d\u0089\u0014\u0017]?|\u0001\u0017\u0007\u0094\u0091ºd¿¸\tI\u0092\u001bÐÄ'"
          .length();
       char var9 = '\b';
@@ -1935,7 +1942,6 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
       }
    }
 }
-
 
 
 

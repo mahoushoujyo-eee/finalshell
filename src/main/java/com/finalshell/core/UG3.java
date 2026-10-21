@@ -1712,6 +1712,7 @@ var10002 = new UG3((byte[])var10003, var1);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[8];
       int var11 = 0;
       String var10 = "?ÊÉ\u008eÿ\u0091¢aÉv\u0098×ØÓ³\u009f\u009aV%\u0085\u0010\u0000ò\u00053)«2»\u00161\u0000ø(\f\nè×ÑË¿\"Óv§\u0011ÁÈç ÖÜ\u0017\n\u0007o7+¦8\u0087\u009aªòL\u0095 \u001añ¯\u009b\u0083<Ä7h\u0016\u008c4O®úÚ6Í\n\u0088ÄJ¼{J°|üP& \f\u0005À\u000eÕÖt";
@@ -1727,7 +1728,6 @@ var10002 = new UG3((byte[])var10003, var1);
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

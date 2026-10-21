@@ -1,7 +1,7 @@
 package com.finalshell.task;
 
 import com.finalshell.connection.Connection7;
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.IOException;
 import java.io.OutputStream;
 
@@ -17,7 +17,7 @@ public class BX extends Thread {
 
    @Override
    public void run() {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       int var2 = 0;
       String[] var1 = var10000;
 

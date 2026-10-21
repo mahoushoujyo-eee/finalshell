@@ -2211,6 +2211,7 @@ public class NL3 extends Nv4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var36;
       String[] var15 = new String[12];
       int var13 = 0;
       String var12 = "Ê5\u008dÞ\u0010É`A\u0003Ö\rX\u000bÖ\u0093^\u00942\u0082{T\u0085Çî\u0015+àó÷Î(\u0082\u0002pc«ú\u0007\u00990\u0018\u0018ö)\u0081\u009e\u0002 \u0081\u0003¨ºn\fJH\u001f¾·\u0081èù\u009bd\u0094(\t\u009e\"\u0085óä(\u0082ÌÖ\fï§«C!>:\u000eÁþß\u0093\r^Ç\u009dOç¿â>Úò°\u0006\u008c";
@@ -2226,7 +2227,6 @@ public class NL3 extends Nv4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var36;
             label65: {
                char[] var43 = var10001.toCharArray();
                int var10004 = var43.length;

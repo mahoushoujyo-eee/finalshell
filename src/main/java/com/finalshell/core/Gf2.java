@@ -75,8 +75,8 @@ public class Gf2 extends Gi2 {
       label28: {
          int var10000 = (Tk2.B()) ? 1 : 0;
          super.paint(var1, var2);
-         var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
-         byte var4 = (var2.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+         var3 = (var10000) != 0;
+         byte var4 = (byte)((var2.getComponentOrientation().isLeftToRight()) ? 1 : 0);
          var5 = this.D(var2);
          int var6 = var5.x + var5.width / 2 - this.rZ.getIconWidth() / 2;
          int var7 = var5.y + var5.height / 2 - this.rZ.getIconHeight() / 2;
@@ -109,7 +109,7 @@ public class Gf2 extends Gi2 {
       int var9;
       label28: {
          boolean var10000 = Tk2.B();
-         var3 = (var1.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+         var3 = (byte)((var1.getComponentOrientation().isLeftToRight()) ? 1 : 0);
          var2 = var10000;
          var4 = var1.getInsets();
          var9 = (this.G) ? 1 : 0;

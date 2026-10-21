@@ -30,6 +30,7 @@ public final class E_2_4 {
    }
 
    public static String T(Iterable var0) {
+      StringBuilder var4;
       int[] var10000 = F_6.h();
       Iterator var2 = var0.iterator();
       int[] var1 = var10000;
@@ -75,6 +76,7 @@ public final class E_2_4 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ -1907) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -849,7 +851,7 @@ public final class E_2_4 {
                var10000 = 217;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -880,10 +882,12 @@ public final class E_2_4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
+      boolean var4;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "ù'\u0002M¦";
-      int var4 = "ù'\u0002M¦".length();
+      var4 = ("ù'\u0002M¦".length()) != 0;
       char var1 = 2;
       int var8 = -1;
 
@@ -894,7 +898,6 @@ public final class E_2_4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;
@@ -985,7 +988,7 @@ public final class E_2_4 {
                   }
 
                   var2 = "\u0016Ø\u0002x5";
-                  var4 = "\u0016Ø\u0002x5".length();
+                  var4 = ("\u0016Ø\u0002x5".length()) != 0;
                   var1 = 2;
                   var8 = -1;
             }

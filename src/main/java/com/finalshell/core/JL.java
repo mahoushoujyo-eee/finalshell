@@ -1186,6 +1186,9 @@ public class JL extends ActionMapUIResource {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean q;
+      boolean var11;
+      char[] var22;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = ";<¦Çé®k\féêT®Ã%v´0\u0004Ch>ÔCñ\u0001Íi\u009f\u0099¨Èr\tØ«\u0019/¸\u00admè\u0000Ï\u0098ÿ\u008c¨Ùtu\u001c";
@@ -1200,7 +1203,6 @@ public class JL extends ActionMapUIResource {
          byte var10002 = -1;
 
          while (true) {
-      char[] var22;
             label62: {
                char[] var26 = var10001.toCharArray();
                int var10004 = var26.length;

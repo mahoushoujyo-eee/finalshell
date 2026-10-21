@@ -55,6 +55,7 @@ public class Lv4_2 extends Ln4_2 {
    public static Integer[] I;
 
    public Lv4_2() {
+      long var6;
       Registry.lookupField(247451900503244996L).setInt(this, Registry.lookupField(590765520000496083L).getInt(null));
       Object var10001 = Registry.lookupField(478301022169899080L).get(null);
       long var2 = 207874173867736112L;
@@ -66,7 +67,7 @@ public class Lv4_2 extends Ln4_2 {
       Ref.s(154052875261920619L, var3, var4);
       Registry.lookupField(531480989154892349L).setBoolean(this, false);
       Registry.lookupField(205554092669544631L).setBoolean(this, true);
-      long var6 = 627907196991541283L;
+      var6 = 627907196991541283L;
       String var5 = "0";
       Ref.s(627907196991541283L, var5, var6);
       ArrayList var10004 = new ArrayList();
@@ -84,6 +85,13 @@ public class Lv4_2 extends Ln4_2 {
    }
 
    public O0 N() {
+      Integer var103;
+      Integer var108;
+      Integer var113;
+      Integer var120;
+      YE var6;
+      Integer var91;
+      Integer var97;
       int[] var1;
       label168: {
          var1 = H$arrint();
@@ -177,12 +185,12 @@ public class Lv4_2 extends Ln4_2 {
          O0 var87;
          while (true) {
             if (var5.hasNext()) {
-               YE var6 = (YE)var5.next();
+               var6 = (YE)var5.next();
                O0 var7 = new O0();
                String var10016 = a(480, -3019);
-               Object[] var10018 = Registry.emptyArgs();
+               Object var10018 = Registry.emptyArgs();
                long var44 = 347860782649835626L;
-               Object[] var43 = var10018;
+               Object var43 = var10018;
                var10018 = Ref.h(347860782649835626L, var43, var44);
 
                try {
@@ -196,7 +204,7 @@ public class Lv4_2 extends Ln4_2 {
                String var10017 = a(464, -32217);
                String var10019 = (String)(Registry.emptyArgs());
                long var46 = 474678417197598864L;
-               Object[] var45 = var10019;
+               Object var45 = var10019;
                var10019 = Ref.h(474678417197598864L, var45, var46);
 
                try {
@@ -207,9 +215,9 @@ public class Lv4_2 extends Ln4_2 {
 
                var10017.C(var6, var10019);
                String var92 = a(494, -9055);
-               Object[] var10020 = Registry.emptyArgs();
+               Object var10020 = Registry.emptyArgs();
                long var48 = 471582560640574154L;
-               Object[] var47 = var10020;
+               Object var47 = var10020;
                var10020 = Ref.h(471582560640574154L, var47, var48);
 
                try {
@@ -222,7 +230,7 @@ public class Lv4_2 extends Ln4_2 {
                String var95 = a(479, 12076);
                String var10021 = (String)(Registry.emptyArgs());
                long var50 = 406140209836756951L;
-               Object[] var49 = var10021;
+               Object var49 = var10021;
                var10021 = Ref.h(406140209836756951L, var49, var50);
 
                try {
@@ -233,9 +241,9 @@ public class Lv4_2 extends Ln4_2 {
 
                var95.C(var6, var10021);
                String var98 = a(501, 19824);
-               Object[] var10022 = Registry.emptyArgs();
+               Object var10022 = Registry.emptyArgs();
                long var52 = 437259655987883724L;
-               Object[] var51 = var10022;
+               Object var51 = var10022;
                var10022 = Ref.h(437259655987883724L, var51, var52);
 
                try {
@@ -248,7 +256,7 @@ public class Lv4_2 extends Ln4_2 {
                String var101 = a(487, -27499);
                String var10023 = (String)(Registry.emptyArgs());
                long var54 = 531077488409752038L;
-               Object[] var53 = var10023;
+               Object var53 = var10023;
                var10023 = Ref.h(531077488409752038L, var53, var54);
 
                try {
@@ -259,9 +267,9 @@ public class Lv4_2 extends Ln4_2 {
 
                var101.C(var6, var10023);
                String var104 = a(483, -24743);
-               Object[] var10024 = Registry.emptyArgs();
+               Object var10024 = Registry.emptyArgs();
                long var56 = 595134275840130239L;
-               Object[] var55 = var10024;
+               Object var55 = var10024;
                var10024 = Ref.h(595134275840130239L, var55, var56);
 
                try {
@@ -274,7 +282,7 @@ public class Lv4_2 extends Ln4_2 {
                new StringBuilder();
                var10024 = Registry.emptyArgs();
                long var58 = 474678417197598864L;
-               Object[] var57 = var10024;
+               Object var57 = var10024;
                var10024 = Ref.h(474678417197598864L, var57, var58);
 
                try {
@@ -284,9 +292,9 @@ public class Lv4_2 extends Ln4_2 {
                }
 
                var6.append((String)var10024).append("_");
-               Object[] var10025 = Registry.emptyArgs();
+               Object var10025 = Registry.emptyArgs();
                long var60 = 471582560640574154L;
-               Object[] var59 = var10025;
+               Object var59 = var10025;
                var10025 = Ref.h(471582560640574154L, var59, var60);
 
                try {
@@ -298,7 +306,7 @@ public class Lv4_2 extends Ln4_2 {
                var6.append(var113).append("_");
                String var10026 = (String)(Registry.emptyArgs());
                long var62 = 406140209836756951L;
-               Object[] var61 = var10026;
+               Object var61 = var10026;
                var10026 = Ref.h(406140209836756951L, var61, var62);
 
                try {
@@ -310,7 +318,7 @@ public class Lv4_2 extends Ln4_2 {
                var6.append((String)var10026).append(a(414, 3673));
                String var10027 = (String)(Registry.emptyArgs());
                long var64 = 531077488409752038L;
-               Object[] var63 = var10027;
+               Object var63 = var10027;
                var10027 = Ref.h(531077488409752038L, var63, var64);
 
                try {
@@ -320,9 +328,9 @@ public class Lv4_2 extends Ln4_2 {
                }
 
                var6.append((String)var10027).append("_");
-               Object[] var10028 = Registry.emptyArgs();
+               Object var10028 = Registry.emptyArgs();
                long var66 = 595134275840130239L;
-               Object[] var65 = var10028;
+               Object var65 = var10028;
                var10028 = Ref.h(595134275840130239L, var65, var66);
 
                try {
@@ -383,21 +391,23 @@ public class Lv4_2 extends Ln4_2 {
    }
 
    public void L() throws Exception {
+      long var12;
+      String var6;
       File var10002;
       Object var4 = 493308551732203184L;
-      super((String)Ref.g(493308551732203184L, var4));
+      // [VF-super] super((String)Ref.g(493308551732203184L, var4));
       String var18 = var10002.getParent();
       long var7 = 207874173867736112L;
-      String var6 = var18;
+      var6 = var18;
       Ref.s(207874173867736112L, var6, var7);
       File var10003;
       Object var8 = 493308551732203184L;
-      super((String)Ref.g(493308551732203184L, var8));
+      // [VF-super] super((String)Ref.g(493308551732203184L, var8));
       File var1 = var10003;
       Registry.lookupField(543882973467336216L).setLong(this, var1.lastModified());
       Object var10 = 493308551732203184L;
       Registry.packArgs(Ref.g(493308551732203184L, var10));
-      long var12 = 569283938005263735L;
+      var12 = 569283938005263735L;
       Object var10005 = Ref.h2(569283938005263735L, var12);
 
       try {
@@ -559,6 +569,8 @@ public class Lv4_2 extends Ln4_2 {
    }
 
    public void q(O0 var1) {
+      String var12;
+      Lv4_2 var68;
       String var10001 = var1.C$String(a(510, 14602));
       long var9 = 129726357555017302L;
       String var8 = var10001;
@@ -572,7 +584,7 @@ public class Lv4_2 extends Ln4_2 {
       Registry.lookupField(491259817703302175L).setInt(this, var1.b(a(457, 30297)));
       var10003 = var1.C$String(a(472, 10912));
       long var13 = 370110739649267258L;
-      String var12 = var10003;
+      var12 = var10003;
       Ref.s(370110739649267258L, var12, var13);
       String var10004 = var1.C$String(a(458, 663));
       long var15 = 345785679296929412L;
@@ -909,6 +921,7 @@ public class Lv4_2 extends Ln4_2 {
    }
 
    public static String j(int var0) {
+      StringBuffer var6;
       Random var2 = new Random();
       int[] var10000 = H$arrint();
       StringBuffer var3 = new StringBuffer();
@@ -925,8 +938,6 @@ public class Lv4_2 extends Ln4_2 {
 
             var4++;
             if (var1 != null) {
-      String var6;
-      String var6;
                continue;
             }
          }
@@ -1368,6 +1379,7 @@ public class Lv4_2 extends Ln4_2 {
    }
 
    public YE V(int var1) {
+      Integer var12;
       H$arrint();
       YE var3 = null;
       Object var6 = 167072449191903623L;
@@ -1377,9 +1389,9 @@ public class Lv4_2 extends Ln4_2 {
       while (var4.hasNext()) {
          YE var5 = (YE)var4.next();
          if (var2 != null) {
-            Object[] var10002 = Registry.emptyArgs();
+            Object var10002 = Registry.emptyArgs();
             long var9 = 347860782649835626L;
-            Object[] var8 = var10002;
+            Object var8 = var10002;
             var10002 = Ref.h(347860782649835626L, var8, var9);
 
             try {
@@ -1457,6 +1469,7 @@ public class Lv4_2 extends Ln4_2 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ 477) & 65535;
       if (u[var2] == null) {
          char[] var3 = j[var2].toCharArray();
@@ -2237,7 +2250,7 @@ public class Lv4_2 extends Ln4_2 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -2271,11 +2284,14 @@ public class Lv4_2 extends Ln4_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var12;
+      char[] var34;
+      long[] var6;
       String[] var13 = new String[71];
       int var11 = 0;
       String var10 = "\u0084¼as×\u0087ÓÐ\u0085ç*øÎxÝdá$¾`ªh»*ÿ\u000eÚPEØÁ]½È`\u009b@;+Ãã\u008e\u0093¬Æ\u0095\u001b\u0017r.LBeª\u0002¥É\u0014]¬Þ#\u0016¿\u0015Àº<ü\u0000\u008d\u008a}@1\u0095\u001aÅ\u000b¼\u000fu\u000bo@\u00ad×O\u0016\u0083\tì~Zàs\t·\u00003\u0002\u008b<\u000bÜ\u009f\u009e\u001c\u000fS066Ø§\u0015\u0081Ö\u0018<\u0019'\u008a²a?OµVkJ?im\u0015¿~\u0013\u009bè¦Iì\u0002MÁObo-<-²àî}8\b\u0092O=_K=´7\u0011´Ìg}\u0017FËè\u0086àJ\u0018Âd\\çÑ\u000bxÇêúhÈ(le»V\u0004a¡\u009b\\\u0006\u001b3\u0016\u0088@©\u000e\bèo\u0017fiègRDu°ÖÊ\u000eÕó¢Ù:Á-BbìÛþ¶à\u0013%\u008bä\u0082\u00ad\u001c\u0004¦ô\u0088¥\u009bfUþ\u0090kØð\u0013\u0083ï\u008d\u0011\u008aÉøt#\u0088²\u009aÀ3K±¥ÜÜ\u00046\u0093©Ä\u0004\u0087Õ\u0085\f\u0016< ¯òïþT\u0089¼D!Eÿ\u007fÈ÷=U ¸\u008eÛ\n\u0018^TáG×w½Kæ\b3å\u0012Â\u0086m7¤\u0010z\u008b·{yã\u009eá¶¢ÎZ\u0004f0\u009c\u0016+ÊQ?øÖo((,çúÄÅR\u0084_l\u007f\u007fIÆ\u0002Ð\u001d\u0005Ùí¿ÍÙ\u0007\u00adîb@$\u008f)\u0006P\u0098üxö¯\u0015r\u008cfwÖNs\u009f^\u009a¨\u0001ªýÕí\u009a7kô±\u0010\u0012\u0083ºzØÃªå0\"\u001eJ\u001edsÜ\b@\u0087|\u008eKä\u008e\u0095\u0013·\u0080¶ãç0M#Ý8\u0080\u008dÂ\u0097jÈùÓ¢\u0006\u0095ÌDòáþ\u000b:\u0086¥:ufî\u0013'\u008e\u008e\u0004½ô\u0000ö\u0013\u000e\u000e<-¼N>\u0084û\u0096©Y£K'¾(=m\u0006\u00860¥è6¥\b\u008d\u0080Ù\u0014níþ\u0082\u0004\u0096\u0086§f\u000eI9G-c.H\u008fFY÷\u0013\u0086¾\u0013ù\u0084êÄe³|÷i¤«õ¤6¡\u0083\u008c\u0011t\u0004\u001aÕ°É\u000eâ¦Dsæ\u0094¶è\u0011¹µT{µ\bü\u0014÷\u0086«¿FÈ\t@lÏ¢ÁAá\tù\u0005kS\u00adÙ\u00ad\b\u009d¬Ü#w²3Æ\u0019³\u0081×\u0085\t\u001c\u00049ë}Áë¾H\u008cA\u0018¹òÖ3ÙM\u0082T\niÇzÒ\u0082±Ïq\\\u007f\u0004e__\u0098\u0015\u001e>8dÊÙÄ\u000fyn\fÿ\u001d+¹Õ¥ÓO»Æ\u0004¤ËûÏ\ry\u0093(\u0089Á>¢¹h1Û·ì\r\u0001@'ó q\u009ePï\f+\u0010ò\u000bóB{§³$§ØÄ\u0005ù\u0007\u000bT¶\u0017¾ez\u000bp\u000eëÃHï,\u0088å'F\u0005\u0018·ÇaÄ\u0016W\u0082Þ6\t÷Q\fï¨\u001fjÛ×±Æ#$ðv¸ç\u0002«³\bª\t°#2øF\u0006\nÙ&\u00843¬£öñjà\u0019|á.\u00896\u009dã\t\u0017{^+MPòB×Ù\u000bÚ\fXª²¨\u0005ð}\u009aß}\u0014\u008c\fä7Q=ý\u0090§6_Aù¢óEà5 Ñ\u00027\u0097\u000f<\u001f\u009fO\u009bnÂr,ì¤×\u0019;×";
-      int var12 = "\u0084¼as×\u0087ÓÐ\u0085ç*øÎxÝdá$¾`ªh»*ÿ\u000eÚPEØÁ]½È`\u009b@;+Ãã\u008e\u0093¬Æ\u0095\u001b\u0017r.LBeª\u0002¥É\u0014]¬Þ#\u0016¿\u0015Àº<ü\u0000\u008d\u008a}@1\u0095\u001aÅ\u000b¼\u000fu\u000bo@\u00ad×O\u0016\u0083\tì~Zàs\t·\u00003\u0002\u008b<\u000bÜ\u009f\u009e\u001c\u000fS066Ø§\u0015\u0081Ö\u0018<\u0019'\u008a²a?OµVkJ?im\u0015¿~\u0013\u009bè¦Iì\u0002MÁObo-<-²àî}8\b\u0092O=_K=´7\u0011´Ìg}\u0017FËè\u0086àJ\u0018Âd\\çÑ\u000bxÇêúhÈ(le»V\u0004a¡\u009b\\\u0006\u001b3\u0016\u0088@©\u000e\bèo\u0017fiègRDu°ÖÊ\u000eÕó¢Ù:Á-BbìÛþ¶à\u0013%\u008bä\u0082\u00ad\u001c\u0004¦ô\u0088¥\u009bfUþ\u0090kØð\u0013\u0083ï\u008d\u0011\u008aÉøt#\u0088²\u009aÀ3K±¥ÜÜ\u00046\u0093©Ä\u0004\u0087Õ\u0085\f\u0016< ¯òïþT\u0089¼D!Eÿ\u007fÈ÷=U ¸\u008eÛ\n\u0018^TáG×w½Kæ\b3å\u0012Â\u0086m7¤\u0010z\u008b·{yã\u009eá¶¢ÎZ\u0004f0\u009c\u0016+ÊQ?øÖo((,çúÄÅR\u0084_l\u007f\u007fIÆ\u0002Ð\u001d\u0005Ùí¿ÍÙ\u0007\u00adîb@$\u008f)\u0006P\u0098üxö¯\u0015r\u008cfwÖNs\u009f^\u009a¨\u0001ªýÕí\u009a7kô±\u0010\u0012\u0083ºzØÃªå0\"\u001eJ\u001edsÜ\b@\u0087|\u008eKä\u008e\u0095\u0013·\u0080¶ãç0M#Ý8\u0080\u008dÂ\u0097jÈùÓ¢\u0006\u0095ÌDòáþ\u000b:\u0086¥:ufî\u0013'\u008e\u008e\u0004½ô\u0000ö\u0013\u000e\u000e<-¼N>\u0084û\u0096©Y£K'¾(=m\u0006\u00860¥è6¥\b\u008d\u0080Ù\u0014níþ\u0082\u0004\u0096\u0086§f\u000eI9G-c.H\u008fFY÷\u0013\u0086¾\u0013ù\u0084êÄe³|÷i¤«õ¤6¡\u0083\u008c\u0011t\u0004\u001aÕ°É\u000eâ¦Dsæ\u0094¶è\u0011¹µT{µ\bü\u0014÷\u0086«¿FÈ\t@lÏ¢ÁAá\tù\u0005kS\u00adÙ\u00ad\b\u009d¬Ü#w²3Æ\u0019³\u0081×\u0085\t\u001c\u00049ë}Áë¾H\u008cA\u0018¹òÖ3ÙM\u0082T\niÇzÒ\u0082±Ïq\\\u007f\u0004e__\u0098\u0015\u001e>8dÊÙÄ\u000fyn\fÿ\u001d+¹Õ¥ÓO»Æ\u0004¤ËûÏ\ry\u0093(\u0089Á>¢¹h1Û·ì\r\u0001@'ó q\u009ePï\f+\u0010ò\u000bóB{§³$§ØÄ\u0005ù\u0007\u000bT¶\u0017¾ez\u000bp\u000eëÃHï,\u0088å'F\u0005\u0018·ÇaÄ\u0016W\u0082Þ6\t÷Q\fï¨\u001fjÛ×±Æ#$ðv¸ç\u0002«³\bª\t°#2øF\u0006\nÙ&\u00843¬£öñjà\u0019|á.\u00896\u009dã\t\u0017{^+MPòB×Ù\u000bÚ\fXª²¨\u0005ð}\u009aß}\u0014\u008c\fä7Q=ý\u0090§6_Aù¢óEà5 Ñ\u00027\u0097\u000f<\u001f\u009fO\u009bnÂr,ì¤×\u0019;×"
-         .length();
+      var12 = "\u0084¼as×\u0087ÓÐ\u0085ç*øÎxÝdá$¾`ªh»*ÿ\u000eÚPEØÁ]½È`\u009b@;+Ãã\u008e\u0093¬Æ\u0095\u001b\u0017r.LBeª\u0002¥É\u0014]¬Þ#\u0016¿\u0015Àº<ü\u0000\u008d\u008a}@1\u0095\u001aÅ\u000b¼\u000fu\u000bo@\u00ad×O\u0016\u0083\tì~Zàs\t·\u00003\u0002\u008b<\u000bÜ\u009f\u009e\u001c\u000fS066Ø§\u0015\u0081Ö\u0018<\u0019'\u008a²a?OµVkJ?im\u0015¿~\u0013\u009bè¦Iì\u0002MÁObo-<-²àî}8\b\u0092O=_K=´7\u0011´Ìg}\u0017FËè\u0086àJ\u0018Âd\\çÑ\u000bxÇêúhÈ(le»V\u0004a¡\u009b\\\u0006\u001b3\u0016\u0088@©\u000e\bèo\u0017fiègRDu°ÖÊ\u000eÕó¢Ù:Á-BbìÛþ¶à\u0013%\u008bä\u0082\u00ad\u001c\u0004¦ô\u0088¥\u009bfUþ\u0090kØð\u0013\u0083ï\u008d\u0011\u008aÉøt#\u0088²\u009aÀ3K±¥ÜÜ\u00046\u0093©Ä\u0004\u0087Õ\u0085\f\u0016< ¯òïþT\u0089¼D!Eÿ\u007fÈ÷=U ¸\u008eÛ\n\u0018^TáG×w½Kæ\b3å\u0012Â\u0086m7¤\u0010z\u008b·{yã\u009eá¶¢ÎZ\u0004f0\u009c\u0016+ÊQ?øÖo((,çúÄÅR\u0084_l\u007f\u007fIÆ\u0002Ð\u001d\u0005Ùí¿ÍÙ\u0007\u00adîb@$\u008f)\u0006P\u0098üxö¯\u0015r\u008cfwÖNs\u009f^\u009a¨\u0001ªýÕí\u009a7kô±\u0010\u0012\u0083ºzØÃªå0\"\u001eJ\u001edsÜ\b@\u0087|\u008eKä\u008e\u0095\u0013·\u0080¶ãç0M#Ý8\u0080\u008dÂ\u0097jÈùÓ¢\u0006\u0095ÌDòáþ\u000b:\u0086¥:ufî\u0013'\u008e\u008e\u0004½ô\u0000ö\u0013\u000e\u000e<-¼N>\u0084û\u0096©Y£K'¾(=m\u0006\u00860¥è6¥\b\u008d\u0080Ù\u0014níþ\u0082\u0004\u0096\u0086§f\u000eI9G-c.H\u008fFY÷\u0013\u0086¾\u0013ù\u0084êÄe³|÷i¤«õ¤6¡\u0083\u008c\u0011t\u0004\u001aÕ°É\u000eâ¦Dsæ\u0094¶è\u0011¹µT{µ\bü\u0014÷\u0086«¿FÈ\t@lÏ¢ÁAá\tù\u0005kS\u00adÙ\u00ad\b\u009d¬Ü#w²3Æ\u0019³\u0081×\u0085\t\u001c\u00049ë}Áë¾H\u008cA\u0018¹òÖ3ÙM\u0082T\niÇzÒ\u0082±Ïq\\\u007f\u0004e__\u0098\u0015\u001e>8dÊÙÄ\u000fyn\fÿ\u001d+¹Õ¥ÓO»Æ\u0004¤ËûÏ\ry\u0093(\u0089Á>¢¹h1Û·ì\r\u0001@'ó q\u009ePï\f+\u0010ò\u000bóB{§³$§ØÄ\u0005ù\u0007\u000bT¶\u0017¾ez\u000bp\u000eëÃHï,\u0088å'F\u0005\u0018·ÇaÄ\u0016W\u0082Þ6\t÷Q\fï¨\u001fjÛ×±Æ#$ðv¸ç\u0002«³\bª\t°#2øF\u0006\nÙ&\u00843¬£öñjà\u0019|á.\u00896\u009dã\t\u0017{^+MPòB×Ù\u000bÚ\fXª²¨\u0005ð}\u009aß}\u0014\u008c\fä7Q=ý\u0090§6_Aù¢óEà5 Ñ\u00027\u0097\u000f<\u001f\u009fO\u009bnÂr,ì¤×\u0019;×";
+         // [VF] .length();
       int[] var10000 = new int[5];
       char var9 = 17;
       R(var10000);
@@ -2366,7 +2382,7 @@ public class Lv4_2 extends Ln4_2 {
                      j = var13;
                      u = new String[71];
                      long var0 = 4846120806807460616L;
-                     long[] var6 = new long[5];
+                     var6 = new long[5];
                      int var3 = 0;
                      String var4 = "\u009aÊ\u0015ñ>\u0005°W\u001b«ËM(ã\u0012\u007f\u009a\r\u0080\u0091Õ\thå";
                      int var5 = "\u009aÊ\u0015ñ>\u0005°W\u001b«ËM(ã\u0012\u007f\u009a\r\u0080\u0091Õ\thå".length();
@@ -2457,7 +2473,6 @@ public class Lv4_2 extends Ln4_2 {
       }
    }
 }
-
 
 
 

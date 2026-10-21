@@ -89,7 +89,7 @@ public class N22 {
          var15 = var15 == 0 ? 1 : 0;
       }
 
-      M = (((((boolean)var15) != 0) != 0) != 0) != 0;
+      M = (var15) != 0;
       int var16 = (M) ? 1 : 0;
       if (var6 == null) {
          if (!M) {

@@ -29,6 +29,10 @@ public class Wu2 extends MouseAdapter {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      Yw2 var30;
+      boolean var36;
+      Integer var43;
+      Integer var46;
       int var2;
       int var28;
       label253: {
@@ -270,9 +274,9 @@ public class Wu2 extends MouseAdapter {
                            long var12 = 306266403902896148L;
                            Object[] var11 = var10002;
                            Ref.h(306266403902896148L, var11, var12);
-                           Object[] var10003 = Registry.emptyArgs();
+                           Object var10003 = Registry.emptyArgs();
                            long var14 = 221275956571705390L;
-                           Object[] var13 = var10003;
+                           Object var13 = var10003;
                            var10003 = Ref.h(221275956571705390L, var13, var14);
 
                            try {
@@ -308,9 +312,9 @@ public class Wu2 extends MouseAdapter {
                long var18 = 306266403902896148L;
                Object[] var17 = var41;
                Ref.h(306266403902896148L, var17, var18);
-               Object[] var44 = Registry.emptyArgs();
+               Object var44 = Registry.emptyArgs();
                long var20 = 617094797338525076L;
-               Object[] var19 = var44;
+               Object var19 = var44;
                var44 = Ref.h(617094797338525076L, var19, var20);
 
                try {

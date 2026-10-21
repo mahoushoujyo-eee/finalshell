@@ -250,6 +250,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void Y() {
+      int var22;
       int[] var10000 = K32.L$arrint();
       Component[] var2 = this.getComponents();
       int[] var1 = var10000;
@@ -264,7 +265,7 @@ public class K22 extends Ky4 implements SwingConstants {
 
       while (var5 < var2.length) {
          label187: {
-            byte var19 = (this.O(var2[var5])) ? 1 : 0;
+            byte var19 = (byte)((this.O(var2[var5])) ? 1 : 0);
             if (var1 != null) {
                if (var19 != 0) {
                   Gi2 var6 = (Gi2)((AbstractButton)var2[var5]).getUI();
@@ -328,12 +329,11 @@ public class K22 extends Ky4 implements SwingConstants {
                   }
                }
 
-               var19 = (this.m(var2[var5])) ? 1 : 0;
+               var19 = (byte)((this.m(var2[var5])) ? 1 : 0);
             }
 
             if (var1 != null) {
                if (var19 != 0) {
-      int var22;
                   K22 var12;
                   var12 = (K22)var2[var5];
                   var22 = var4;
@@ -574,6 +574,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void c(K22 var1, Color var2) {
+      K22 var10;
       Component[] var4 = var1.getComponents();
       int[] var10000 = K32.L$arrint();
       int var5 = var4.length;
@@ -922,6 +923,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void z(K22 var1, boolean var2) {
+      K22 var10;
       Component[] var4 = var1.getComponents();
       int[] var10000 = K32.L$arrint();
       int var5 = var4.length;
@@ -975,6 +977,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void C(K22 var1, boolean var2) {
+      K22 var10;
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;
@@ -1024,6 +1027,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void M(K22 var1, Color var2) {
+      K22 var10;
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;
@@ -1073,6 +1077,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void m(K22 var1, int var2) {
+      K22 var10;
       Component[] var4 = var1.getComponents();
       int[] var10000 = K32.L$arrint();
       int var5 = var4.length;
@@ -1126,6 +1131,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void o(K22 var1, boolean var2) {
+      K22 var10;
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
       int[] var10000 = K32.L$arrint();
@@ -1179,6 +1185,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void M(K22 var1, int var2) {
+      K22 var10;
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;
@@ -1228,6 +1235,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void k(K22 var1, Color var2) {
+      K22 var10;
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;
@@ -1277,6 +1285,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void H(K22 var1, int var2) {
+      K22 var10;
       Component[] var4 = var1.getComponents();
       int[] var10000 = K32.L$arrint();
       int var5 = var4.length;
@@ -1330,6 +1339,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void Q(K22 var1, Color var2) {
+      K22 var10;
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
       int[] var10000 = K32.L$arrint();
@@ -1383,6 +1393,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void F(K22 var1, int var2) {
+      K22 var10;
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;
@@ -1432,6 +1443,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void x(K22 var1, boolean var2) {
+      K22 var10;
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
@@ -1485,6 +1497,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void W(K22 var1, boolean var2) {
+      K22 var10;
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
@@ -1538,6 +1551,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void I(K22 var1, Og4 var2) {
+      K22 var10;
       Component[] var4 = var1.getComponents();
       int[] var10000 = K32.L$arrint();
       int var5 = var4.length;
@@ -1591,6 +1605,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void D(K22 var1, boolean var2) {
+      K22 var10;
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
@@ -1644,6 +1659,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void N(K22 var1, boolean var2) {
+      K22 var10;
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
@@ -1705,6 +1721,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    public void i(K22 var1, Insets var2) {
+      K22 var10;
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;

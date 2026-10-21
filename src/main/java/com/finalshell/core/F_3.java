@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ public class F_3 {
    public static synchronized void I(String var0) throws Exception {
       T.add(a(11439, 17154));
       T.add(a(11438, -29732));
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       BufferedReader var2 = new BufferedReader(new FileReader(var0));
       String[] var1 = var10000;
       String var3 = "";
@@ -61,7 +61,7 @@ public class F_3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static synchronized boolean H(String var0) {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       boolean var2 = false;
       String[] var1 = var10000;
       Iterator var4 = T.iterator();
@@ -900,6 +900,7 @@ public class F_3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "«RW|\u0015Zc}\r\u009b>\u0006\u0018\"dæÛ\b\u0088ØÜi\u0003ÖA\f¸ $\u0093\u001dãRGüo5";
@@ -914,7 +915,6 @@ public class F_3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -29,6 +29,7 @@ public class Uh2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void g(StringBuilder var1) {
+      int var8;
       String var2 = Nv4.o();
       Object var10000 = this.M;
       if (var2 != null) {
@@ -77,7 +78,6 @@ public class Uh2_2 {
          while (true) {
             label186:
             if (var5 < var3.length()) {
-      char var8;
                char var6 = var3.charAt(var5);
                var8 = var6;
                var10001 = a(7831, 3172635347048803459L);
@@ -171,7 +171,6 @@ public class Uh2_2 {
             int var9 = var4;
             if (var2 != null) {
                if (var4 == 0) {
-      int var8;
                   break label213;
                }
 
@@ -624,7 +623,6 @@ public class Uh2_2 {
       }
    }
 }
-
 
 
 

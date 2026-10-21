@@ -325,6 +325,10 @@ public class Wl4 implements Ak2, X4 {
 
    @Override
    public Object z(Yn4 var1, Type var2, Object var3) {
+      int var16;
+      java.lang.Class var18;
+      Type var21;
+      boolean var26;
       P7 var5 = var1.N;
       String var10000 = Nv4.o();
       int var6 = var5.P();
@@ -361,8 +365,6 @@ public class Wl4 implements Ak2, X4 {
                   }
 
                   if (var20 == var10001) {
-      int var21;
-      int var21;
                      break label134;
                   }
 
@@ -371,7 +373,7 @@ public class Wl4 implements Ak2, X4 {
                      break label154;
                   }
 
-                  var20 = var2 instanceof GenericArrayType;
+                  var20 = (var2 instanceof GenericArrayType) ? 1 : 0;
                }
 
                if (var20 != 0) {
@@ -406,7 +408,7 @@ public class Wl4 implements Ak2, X4 {
                                                    }
 
                                                    TypeVariable[] var15 = ((java.lang.Class)var24).getTypeParameters();
-                                                   int var16 = 0;
+                                                   var16 = 0;
 
                                                    while (var16 < var15.length) {
                                                       label96: {
@@ -488,7 +490,7 @@ public class Wl4 implements Ak2, X4 {
                var21 = var2;
             }
 
-            java.lang.Class var18 = (java.lang.Class)var21;
+            var18 = (java.lang.Class)var21;
             var8 = var7 = var18.getComponentType();
             break label139;
          }
@@ -514,6 +516,8 @@ public class Wl4 implements Ak2, X4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public Object x(Yn4 var1, java.lang.Class var2, Oc2 var3) {
+      Object var16;
+      java.lang.Class var18;
       String var4 = Nv4.o();
       Oc2 var10000 = var3;
       if (var4 != null) {
@@ -1653,7 +1657,6 @@ public class Wl4 implements Ak2, X4 {
       }
    }
 }
-
 
 
 

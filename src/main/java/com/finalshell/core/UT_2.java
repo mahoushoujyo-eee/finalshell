@@ -1834,6 +1834,7 @@ public abstract class UT_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[13];
       int var3 = 0;
       String var2 = "1\u0019\u000eÃ\u001bVW»gN\f\u0004¢c\u0083ð\u0000áÄÅ@\u0094µÏ\u0011\u0083Î\"tb\u0085noT,\u0089\u001a\u0001ïí\u001b\rV*--y.\u0080óQê¶ØÓ®Eñ9\u0016O(\u0003bþ\u007f\u00049¸çð\"CscL³\u0010·\u0001i\u0010\u0081ÏÖIï¢\u001a<\u009f\f\\·ÊbÅÉ½\u008c\u0088µ\u0080\u009ex9$¨M\u001e\u008b\u001cèB\u001e×ó\\±'Ýá\bþ.ÝÆC.\u008f\u001b}\u0097h9\u0096ß\u000f¤a\u0083B\u0092\u0004\u0000rÉ\u0011#wÙå\u0019cº\u00adT*ºã\u0098Ðø\u001f¬!º&T<|`Q\u0080Þ×\u0010aúñ\u0001¶\u0015ô#Z3@D×\u0011;!ø\u0014¹M\u009bBvû\fP\u0083\t\u0088×ö$Rp\u008dÅ*@\u0098V\u009bÿ.%µñ½\u001ch\u001aÌ@\u00068fÈ`ò\tíã\u0092~Q7Ü\u0001E¬\\R@ÑðçA|?ázý\u001cÜ\u0016³\"¬j¡<¹¾×\u001aÙ ì\u0088íîy$÷¨CHÐ\u007f\r\u0081";
@@ -1849,7 +1850,6 @@ public abstract class UT_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

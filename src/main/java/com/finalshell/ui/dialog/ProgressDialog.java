@@ -41,9 +41,9 @@ public class ProgressDialog extends JDialog {
       Registry.emptyArgs();
       long var16 = 270389152141252877L;
       Ref.h2(270389152141252877L, var16);
-      Object[] var10009 = Registry.emptyArgs();
+      Object var10009 = Registry.emptyArgs();
       long var19 = 634817973682994708L;
-      Object[] var18 = var10009;
+      Object var18 = var10009;
       Ref.h(634817973682994708L, var18, var19);
       var10009 = Registry.emptyArgs();
       long var20 = 499537131214815290L;
@@ -890,6 +890,7 @@ public class ProgressDialog extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "匝洼$q\u000f\u000by\u0013ôWcÒÐ\u0082ÊÅçÄX©\u0095·\u0095\u0017J·D¹Å\u008bAc]\u0092ðÆzçÿ";
@@ -904,7 +905,6 @@ public class ProgressDialog extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

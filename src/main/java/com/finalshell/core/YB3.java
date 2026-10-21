@@ -107,6 +107,9 @@ public class YB3 extends GT3 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      YB3 var39;
+      boolean var41;
+      Od4 var45;
       String[] var10000 = W5.q();
       int var6 = 0;
       int[] var7 = new int[var1 * var2];
@@ -159,7 +162,6 @@ public class YB3 extends GT3 {
          label267: {
             if (var5 != null) {
                if (var38 == 0) {
-      Od4 var38;
       Od4 var38;
                   break label267;
                }
@@ -249,14 +251,14 @@ public class YB3 extends GT3 {
                      var41 = (var52 = var24 - -2.0F) == 0.0F ? 0 : (var52 < 0.0F ? -1 : 1);
                      label203:
                      if (var5 != null) {
-                        if (var41 != 0) {
+                        if (var41) {
                            float var53;
                            var41 = (var53 = var27 - -2.0F) == 0.0F ? 0 : (var53 < 0.0F ? -1 : 1);
                            if (var5 == null) {
                               break label203;
                            }
 
-                           if (var41 != 0) {
+                           if (var41) {
                               var28.e = -1.0F;
                               var28.I = 0.0F;
                               var28.k = var24;
@@ -285,14 +287,14 @@ public class YB3 extends GT3 {
 
                      label196:
                      if (var5 != null) {
-                        if (var41 != 0) {
+                        if (var41) {
                            float var55;
                            var41 = (var55 = var25 - -2.0F) == 0.0F ? 0 : (var55 < 0.0F ? -1 : 1);
                            if (var5 == null) {
                               break label196;
                            }
 
-                           if (var41 != 0) {
+                           if (var41) {
                               var28.e = -1.0F;
                               var28.I = 0.0F;
                               var28.k = var24;
@@ -321,14 +323,14 @@ public class YB3 extends GT3 {
 
                      label189:
                      if (var5 != null) {
-                        if (var41 != 0) {
+                        if (var41) {
                            float var57;
                            var41 = (var57 = var26 - -2.0F) == 0.0F ? 0 : (var57 < 0.0F ? -1 : 1);
                            if (var5 == null) {
                               break label189;
                            }
 
-                           if (var41 != 0) {
+                           if (var41) {
                               var28.e = 0.0F;
                               var28.I = -1.0F;
                               var28.k = var25;
@@ -357,7 +359,7 @@ public class YB3 extends GT3 {
 
                      label259: {
                         if (var5 != null) {
-                           if (var41 == 0) {
+                           if (!var41) {
                               break label259;
                            }
 
@@ -367,7 +369,7 @@ public class YB3 extends GT3 {
 
                         label260: {
                            if (var5 != null) {
-                              if (var41 == 0) {
+                              if (!var41) {
                                  break label259;
                               }
 
@@ -525,6 +527,7 @@ public class YB3 extends GT3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var39;
       char[] var10003 = "7i7_n\r_KN&Rc\u0012\u0014J3".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -568,7 +571,7 @@ public class YB3 extends GT3 {
          var34 = 26;
          var19 = var10004;
          if (var10004 <= var8) {
-            String var39 = new String(var10003).intern();
+            var39 = new String(var10003).intern();
             int var25 = -1;
             c = var39;
             long var9 = 7225103857345815336L;
@@ -795,7 +798,6 @@ public class YB3 extends GT3 {
       }
    }
 }
-
 
 
 

@@ -570,7 +570,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       int[] var4 = B$arrint();
       int var10000 = (var3) ? 1 : 0;
       if (var4 == null) {
-         var10000 = var3 != 0 ? 1 : 0;
+         var10000 = var3 ? 1 : 0;
       }
 
       int var5 = var10000;
@@ -651,7 +651,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       int var8 = var10000;
       var10000 = (var3) ? 1 : 0;
       if (var4 == null) {
-         var10000 = var3 != 0 ? 1 : 0;
+         var10000 = var3 ? 1 : 0;
       }
 
       int var9;
@@ -660,7 +660,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       int var12;
       var9 = var10000;
       var10 = this.c();
-      var11 = (var1.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      var11 = (byte)((var1.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       var12 = var10 + var9 + this.J + this.q * 2;
       var10000 = var5;
       label189:
@@ -935,7 +935,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       int var8 = var10000;
       var10000 = (var3) ? 1 : 0;
       if (var4 == null) {
-         var10000 = var3 != 0 ? 1 : 0;
+         var10000 = var3 ? 1 : 0;
       }
 
       int var9;
@@ -944,7 +944,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       int var12;
       var9 = var10000;
       var10 = this.c();
-      var11 = (var1.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      var11 = (byte)((var1.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       var12 = var10 + var9 + this.J + this.q * 2;
       var10000 = var5;
       label203:
@@ -2035,6 +2035,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[6];
       int var11 = 0;
       String var10 = "Ð/«~{ñ\u009b»³\u0084@¾\u000f\u000b+ù#Ü ¯£3á\u0096Ã\u0014yu\u009e5Ý\u0098O\u0096)$\u0015\u0011a\u0010\u0094\u0092þdñ\u008b\u000f\u008e:`Ü\u0002¥´1VÑú\u008e\u0096ã!";
@@ -2051,7 +2052,6 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

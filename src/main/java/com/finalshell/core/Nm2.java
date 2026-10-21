@@ -23,6 +23,7 @@ public class Nm2 implements Np2 {
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    @Override
    public void S(List var1) {
+      Throwable var28;
       String[] var10000 = CB3.C$arrString();
       Object var3 = this.y.f;
       synchronized (this.y.f){} // $VF: monitorenter 

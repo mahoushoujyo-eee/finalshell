@@ -2966,6 +2966,7 @@ public class Bb2 implements RW {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[22];
       int var11 = 0;
       String var10 = "Ú£áÁøÌ¸\u00026c\u001a^\u000e^OFb\u001eFæ~F\u0093\u0086\"ÚUWÔ\u000e¤Uç¡Ë3¬\t[j¥á\u0097ð5´E\u0004©;ûË\u0003íK\u001a\u0011V\u0012S\u0098¦$R÷CÅx´\u0093ÚñÛ¨!!mF6\u0088×Ê\u007fÁí\u0089\u0096\\\u001fÏ¤\u0018\u0004ùê\r¿óF$\u000e\u009a\u0093\u008fÏ»\u009d+8´+ä-\u0082B]åRÆÄõ2\u00ad_§\u008eø3\u0010D\u0019Ø\u0004\n;ë<\u0018ù¶æöù-&:ì\u0014Ý\u0019\u000bWØ4ã\u0081N\tr\u0011Ýn,ªB\t\u0090ÞÎ\"Øbá\b»\u0004\u0080ÁBQ\u0011;5\u0088+\f«¢\u0087\u001c\u0018ý÷ÏF\rYÛ\u0004üiQ\u0081\u0007×p\u0096\u009dÞ9)\u0004\u001c¾Ñ¾\u0002It\u0006\r°ËjAc\u0005X\u0019n®>\t\u0007\u008d.\u001dæo\u001bG\u0080\u0007\u001fØY®ï!Z";
@@ -2981,7 +2982,6 @@ public class Bb2 implements RW {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

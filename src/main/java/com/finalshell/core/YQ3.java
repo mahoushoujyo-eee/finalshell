@@ -104,6 +104,8 @@ public class YQ3 extends GT3 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int var62;
+      int var69;
       String[] var10000 = W5.q();
       int[] var6 = new int[var1 * var2];
       this.J.setSeed(this.W);
@@ -211,7 +213,7 @@ public class YQ3 extends GT3 {
                                  break label486;
                               }
 
-                              var65 = (this.r) ? 1 : 0;
+                              var65 = this.r;
                            }
 
                            if (var5 != null) {
@@ -257,7 +259,7 @@ public class YQ3 extends GT3 {
                               break label488;
                            }
 
-                           var64 = (this.r) ? 1 : 0;
+                           var64 = this.r;
                         }
 
                         if (var5 != null) {
@@ -341,7 +343,6 @@ public class YQ3 extends GT3 {
                         if (var20 < var18) {
                            var27 = -1;
                            if (var5 != null) {
-      int var69;
                               break label301;
                            }
                         }
@@ -944,7 +945,6 @@ public class YQ3 extends GT3 {
       }
    }
 }
-
 
 
 

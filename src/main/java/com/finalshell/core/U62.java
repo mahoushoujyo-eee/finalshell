@@ -101,6 +101,9 @@ public class U62 {
    public static Integer[] db;
 
    public U62() {
+      long var11;
+      String var34;
+      long var9;
       FX3 var10001 = new FX3();
       long var3 = 163098401357094602L;
       FX3 var2 = var10001;
@@ -114,11 +117,11 @@ public class U62 {
       FX3 var6 = var10003;
       Ref.s(469743897541078657L, var6, var7);
       Dx4_2 var10004 = new Dx4_2();
-      long var9 = 588103265407915545L;
+      var9 = 588103265407915545L;
       Dx4_2 var8 = var10004;
       Ref.s(588103265407915545L, var8, var9);
       Dx4_2 var10005 = new Dx4_2();
-      long var11 = 460748262011660753L;
+      var11 = 460748262011660753L;
       Dx4_2 var10 = var10005;
       Ref.s(460748262011660753L, var10, var11);
       Dx4_2 var10006 = new Dx4_2();
@@ -196,7 +199,7 @@ public class U62 {
       Registry.lookupField(594868529938983057L).setBoolean(this, true);
       String var43 = a(19653, 30638);
       long var35 = 596906907590635492L;
-      String var34 = var43;
+      var34 = var43;
       Ref.s(596906907590635492L, var34, var35);
       Registry.lookupField(389193944203807488L).setInt(this, a(7504, 6749522200896463069L));
       FX3 var10018 = new FX3();
@@ -223,6 +226,9 @@ public class U62 {
    }
 
    public void L$void() {
+      long var11;
+      Object[] var34;
+      long var9;
       Ky4[] var10000 = YT3_2.c();
       int var2 = a(27525, 676531558851024391L);
       Ky4[] var1 = var10000;
@@ -256,7 +262,7 @@ public class U62 {
       label155: {
          if (var10001 == null) {
             Object[] var57 = Registry.packArgs(Registry.lookupField(518223218338208363L).getInt(null), a(19657, -13506), var2, a(31603, 8151178144623298283L));
-            long var9 = 457295964159493440L;
+            var9 = 457295964159493440L;
             Object[] var8 = var57;
             Ref.h(457295964159493440L, var8, var9);
 
@@ -267,7 +273,7 @@ public class U62 {
             }
 
             Object[] var10003 = Registry.packArgs(Registry.lookupField(263914437926532128L).getInt(null), a(19663, 32312), var2, a(31360, 8043228233967175438L));
-            long var11 = 457295964159493440L;
+            var11 = 457295964159493440L;
             Object[] var10 = var10003;
             Ref.h(457295964159493440L, var10, var11);
 
@@ -414,7 +420,7 @@ public class U62 {
 
       Object[] var10012 = Registry.packArgs(Registry.lookupField(391819096557420250L).getInt(null), a(19649, -16687), var2, a(10174, 9203254923461941814L));
       long var35 = 457295964159493440L;
-      Object[] var34 = var10012;
+      var34 = var10012;
       Ref.h(457295964159493440L, var34, var35);
 
       try {
@@ -447,6 +453,8 @@ public class U62 {
    }
 
    public void X(int var1, KeyStroke var2) {
+      long var11;
+      long var9;
       Object var4 = 635463503273357254L;
       ZG_2 var3 = (ZG_2)((HashMap)Ref.g(635463503273357254L, var4)).get(var1);
       Object[] var10002 = Registry.packArgs(var2.getKeyCode());
@@ -461,7 +469,7 @@ public class U62 {
       }
 
       Object[] var10003 = Registry.packArgs(var2.getModifiers());
-      long var9 = 595090556469796523L;
+      var9 = 595090556469796523L;
       Object[] var8 = var10003;
       Ref.h(595090556469796523L, var8, var9);
 
@@ -472,7 +480,7 @@ public class U62 {
       }
 
       Object[] var10004 = Registry.packArgs(var2);
-      long var11 = 604795404126713720L;
+      var11 = 604795404126713720L;
       Object[] var10 = var10004;
       Ref.h(604795404126713720L, var10, var11);
 
@@ -652,6 +660,8 @@ public class U62 {
    }
 
    public boolean Z$boolean() {
+      boolean var11;
+      boolean var9;
       Ky4[] var10000 = YT3_2.c();
       boolean var2 = false;
       Ky4[] var1 = var10000;
@@ -763,6 +773,7 @@ public class U62 {
    }
 
    public Li4 u$li_4(String var1) {
+      long var9;
       Ky4[] var10000 = YT3_2.c();
       Li4 var3 = null;
       Ky4[] var2 = var10000;
@@ -771,8 +782,8 @@ public class U62 {
       for (Li4 var5 : (ArrayList)Ref.g(307483559017152106L, var6)) {
          if (var2 != null) {
             String var10002 = (String)(Registry.emptyArgs());
-            long var9 = 286931176286176762L;
-            Object[] var8 = var10002;
+            var9 = 286931176286176762L;
+            Object var8 = var10002;
             var10002 = Ref.h(286931176286176762L, var8, var9);
 
             try {
@@ -794,6 +805,7 @@ public class U62 {
    }
 
    public Li4 K(String var1) {
+      long var9;
       Li4 var3 = null;
       YT3_2.c();
       Object var6 = 307483559017152106L;
@@ -804,8 +816,8 @@ public class U62 {
          Li4 var5 = (Li4)var4.next();
          if (var2 != null) {
             String var10002 = (String)(Registry.emptyArgs());
-            long var9 = 194080076253066315L;
-            Object[] var8 = var10002;
+            var9 = 194080076253066315L;
+            Object var8 = var10002;
             var10002 = Ref.h(194080076253066315L, var8, var9);
 
             try {
@@ -827,6 +839,7 @@ public class U62 {
    }
 
    public Lj4_2 u$lj_4(String var1) {
+      long var11;
       Ky4[] var10000 = YT3_2.c();
       Lj4_2 var3 = null;
       Ky4[] var2 = var10000;
@@ -842,8 +855,8 @@ public class U62 {
             Li4 var5 = (Li4)var4.next();
             var10001 = var5;
             ArrayList var10002 = (ArrayList)(Registry.emptyArgs());
-            long var11 = 408177353860141270L;
-            Object[] var10 = var10002;
+            var11 = 408177353860141270L;
+            Object var10 = var10002;
             var10002 = Ref.h(408177353860141270L, var10, var11);
 
             try {
@@ -857,7 +870,7 @@ public class U62 {
                   if (var2 != null) {
                      String var10003 = Registry.emptyArgs();
                      long var13 = 194080076253066315L;
-                     Object[] var12 = var10003;
+                     Object var12 = var10003;
                      var10003 = Ref.h(194080076253066315L, var12, var13);
 
                      try {
@@ -907,7 +920,7 @@ public class U62 {
          Li4 var4 = (Li4)var3.next();
          String var10002 = Registry.emptyArgs();
          long var8 = 194080076253066315L;
-         Object[] var7 = var10002;
+         Object var7 = var10002;
          var10002 = Ref.h(194080076253066315L, var7, var8);
 
          try {
@@ -939,6 +952,7 @@ public class U62 {
    }
 
    public void u$void(String var1) {
+      Object[] var9;
       YT3_2.c();
       Object var7 = 307483559017152106L;
       Iterator var3 = ((ArrayList)Ref.g(307483559017152106L, var7)).iterator();
@@ -954,7 +968,7 @@ public class U62 {
             var10001 = var4;
             ArrayList var10002 = (ArrayList)(Registry.emptyArgs());
             long var10 = 408177353860141270L;
-            Object[] var9 = var10002;
+            var9 = var10002;
             var10002 = Ref.h(408177353860141270L, var9, var10);
 
             try {
@@ -966,7 +980,7 @@ public class U62 {
             for (Lj4_2 var6 : var10002) {
                String var10003 = Registry.emptyArgs();
                long var12 = 194080076253066315L;
-               Object[] var11 = var10003;
+               Object var11 = var10003;
                var10003 = Ref.h(194080076253066315L, var11, var12);
 
                try {
@@ -988,7 +1002,7 @@ public class U62 {
 
                      ArrayList var10004 = Registry.emptyArgs();
                      long var14 = 408177353860141270L;
-                     Object[] var13 = var10004;
+                     Object var13 = var10004;
                      var10004 = Ref.h(408177353860141270L, var13, var14);
 
                      try {
@@ -1064,6 +1078,7 @@ public class U62 {
    }
 
    public LD3_2 D(String var1) {
+      long var9;
       Ky4[] var10000 = YT3_2.c();
       LD3_2 var3 = null;
       Ky4[] var2 = var10000;
@@ -1072,8 +1087,8 @@ public class U62 {
       for (LD3_2 var5 : (ArrayList)Ref.g(481059417272317740L, var6)) {
          if (var2 != null) {
             String var10002 = (String)(Registry.emptyArgs());
-            long var9 = 194080076253066315L;
-            Object[] var8 = var10002;
+            var9 = 194080076253066315L;
+            Object var8 = var10002;
             var10002 = Ref.h(194080076253066315L, var8, var9);
 
             try {
@@ -2221,9 +2236,11 @@ public class U62 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var11;
+      char[] var34;
       String[] var13 = new String[17];
       String[] var10000 = new String[2];
-      int var11 = 0;
+      var11 = 0;
       w(var10000);
       String var10 = "繑竜\u001bÿ\u0003署敎醡罞\u0007繈穟8\u008fg枰抂\u0007縈竸0{f姆勪\u0007绡稗\r\u0086Á醹迶\u0007绁穸\tkA籑贌\u0007縮稡ô@þ杉抱\u0005辈揄筵瓔嘷\u0007繡稡\u001d@Ã羅屧\u0004临临栊箣\u0007纊稏`\u0085l夙劫\u0004冐长棈箚\u0007绯童ÌØù凗屠\u0007绊稶h¢m旎妚\u0007\u000bC\u000b\u009bÚ~À\u0007ÊÜ\u0086eÉ\u001bM";
       int var12 = "繑竜\u001bÿ\u0003署敎醡罞\u0007繈穟8\u008fg枰抂\u0007縈竸0{f姆勪\u0007绡稗\r\u0086Á醹迶\u0007绁穸\tkA籑贌\u0007縮稡ô@þ杉抱\u0005辈揄筵瓔嘷\u0007繡稡\u001d@Ã羅屧\u0004临临栊箣\u0007纊稏`\u0085l夙劫\u0004冐长棈箚\u0007绯童ÌØù凗屠\u0007绊稶h¢m旎妚\u0007\u000bC\u000b\u009bÚ~À\u0007ÊÜ\u0086eÉ\u001bM"
@@ -2238,7 +2255,6 @@ public class U62 {
          byte var10002 = -1;
 
          while (true) {
-      Object[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

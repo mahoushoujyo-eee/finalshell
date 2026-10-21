@@ -32,6 +32,7 @@ public class Gi4 extends Gy4 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      Gi4 var6;
       String[] var10000 = W5.q();
       this.X = new float[b(17454, 4357647261016193132L)];
       String[] var3 = var10000;
@@ -81,6 +82,7 @@ public class Gi4 extends Gy4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long[] var6;
       char[] var10003 = "a#F-!J\u0012\n\u000e\\?(M\u0015@d\u001bw".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -225,7 +227,7 @@ public class Gi4 extends Gy4 {
                int var18 = -1;
                a = var27;
                long var0 = 4566877758410028636L;
-               long[] var6 = new long[2];
+               var6 = new long[2];
                int var3 = 0;
                String var4 = "-v[scû\u008f0°'CÞ\u001cÐ.O";
                int var5 = "-v[scû\u008f0°'CÞ\u001cÐ.O".length();

@@ -19,6 +19,7 @@ public class Zj2_2 {
    public static Integer[] d;
 
    public static void K(Oc2 var0) {
+      long var19;
       Registry.packArgs(var0);
       long var4 = 555841273766489448L;
       Object var10001 = Ref.h2(555841273766489448L, var4);
@@ -39,7 +40,7 @@ public class Zj2_2 {
       Ref.h(306266403902896148L, var8, var9);
       ArrayList var10004 = (ArrayList)(Registry.emptyArgs());
       long var11 = 518875030097846779L;
-      Object[] var10 = var10004;
+      Object var10 = var10004;
       var10004 = Ref.h(518875030097846779L, var10, var11);
 
       try {
@@ -68,7 +69,7 @@ public class Zj2_2 {
       Object[] var16 = var10007;
       Ref.h(306266403902896148L, var16, var17);
       Object[] var10008 = Registry.packArgs(var3);
-      long var19 = 482439858102463037L;
+      var19 = 482439858102463037L;
       Object[] var18 = var10008;
       Ref.h(482439858102463037L, var18, var19);
 
@@ -140,6 +141,9 @@ public class Zj2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void i(ArrayList var0, ArrayList var1, ArrayList var2) {
+      String var105;
+      Object var115;
+      Object[] var30;
       HashSet var4 = new HashSet();
       HashMap var5 = new HashMap();
       HashMap var6 = new HashMap();
@@ -180,7 +184,7 @@ public class Zj2_2 {
                var10001 = var5;
                String var10003 = (String)(Registry.emptyArgs());
                long var23 = 194080076253066315L;
-               Object[] var22 = var10003;
+               Object var22 = var10003;
                var10003 = Ref.h(194080076253066315L, var22, var23);
 
                try {
@@ -239,14 +243,14 @@ public class Zj2_2 {
                break label668;
             }
 
-            Object var115 = var10001;
+            var115 = var10001;
 
             while (var115.hasNext()) {
                Lj4_2 var126 = (Lj4_2)var115.next();
                var10001 = var6;
                String var169 = (String)(Registry.emptyArgs());
                long var27 = 194080076253066315L;
-               Object[] var26 = var169;
+               Object var26 = var169;
                var169 = Ref.h(194080076253066315L, var26, var27);
 
                try {
@@ -259,7 +263,7 @@ public class Zj2_2 {
                var10002 = var5;
                String var10004 = (String)(Registry.emptyArgs());
                long var29 = 194080076253066315L;
-               Object[] var28 = var10004;
+               Object var28 = var10004;
                var10004 = Ref.h(194080076253066315L, var28, var29);
 
                try {
@@ -278,7 +282,7 @@ public class Zj2_2 {
                   if (var172) {
                      String var10005 = (String)(Registry.emptyArgs());
                      long var31 = 194080076253066315L;
-                     Object[] var30 = var10005;
+                     var30 = var10005;
                      var10005 = Ref.h(194080076253066315L, var30, var31);
 
                      try {
@@ -346,7 +350,7 @@ public class Zj2_2 {
                var10002 = var6;
                String var178 = (String)(Registry.emptyArgs());
                long var35 = 194080076253066315L;
-               Object[] var34 = var178;
+               Object var34 = var178;
                var178 = Ref.h(194080076253066315L, var34, var35);
 
                try {
@@ -383,7 +387,7 @@ public class Zj2_2 {
       var8 = (Iterator)var10002;
 
       while (var8.hasNext()) {
-         String var105 = (String)var8.next();
+         var105 = (String)var8.next();
          Lj4_2 var111 = (Lj4_2)var5.get(var105);
          if (var3 != null || var3 != null) {
             break;
@@ -426,7 +430,7 @@ public class Zj2_2 {
             Li4 var117 = (Li4)var114.next();
             String var189 = (String)(Registry.emptyArgs());
             long var39 = 194080076253066315L;
-            Object[] var38 = var189;
+            Object var38 = var189;
             var189 = Ref.h(194080076253066315L, var38, var39);
 
             try {
@@ -454,7 +458,7 @@ public class Zj2_2 {
             Li4 var118 = (Li4)var114.next();
             ArrayList var181 = Registry.emptyArgs();
             long var41 = 408177353860141270L;
-            Object[] var40 = var181;
+            Object var40 = var181;
             var181 = Ref.h(408177353860141270L, var40, var41);
 
             try {
@@ -486,7 +490,7 @@ public class Zj2_2 {
             Lj4_2 var119 = (Lj4_2)var114.next();
             String var192 = (String)(Registry.emptyArgs());
             long var43 = 413442976446181537L;
-            Object[] var42 = var192;
+            Object var42 = var192;
             var192 = Ref.h(413442976446181537L, var42, var43);
 
             try {
@@ -500,7 +504,7 @@ public class Zj2_2 {
                var130 = (Lj4_2)var128;
                String var204 = (String)(Registry.emptyArgs());
                Object var55 = 194080076253066315L;
-               Object[] var54 = var204;
+               Object var54 = var204;
                var10008 = var55;
                var204 = Ref.h(194080076253066315L, var54, (long)var55);
 
@@ -541,7 +545,7 @@ public class Zj2_2 {
                   if (!var13) {
                      ArrayList var10006 = Registry.emptyArgs();
                      long var47 = 408177353860141270L;
-                     Object[] var46 = var10006;
+                     Object var46 = var10006;
                      var10006 = Ref.h(408177353860141270L, var46, var47);
 
                      try {
@@ -562,7 +566,7 @@ public class Zj2_2 {
             for (Li4 var120 : var0) {
                var192 = Registry.emptyArgs();
                long var49 = 408177353860141270L;
-               Object[] var48 = var192;
+               Object var48 = var192;
                var192 = Ref.h(408177353860141270L, var48, var49);
 
                try {
@@ -597,7 +601,7 @@ public class Zj2_2 {
                for (Li4 var121 : var0) {
                   ArrayList var184 = (ArrayList)(Registry.emptyArgs());
                   long var139 = 408177353860141270L;
-                  Object[] var138 = var184;
+                  Object var138 = var184;
                   var184 = Ref.h(408177353860141270L, var138, var139);
 
                   try {
@@ -678,7 +682,7 @@ public class Zj2_2 {
                var10008 = var5;
                String var10010 = (String)(Registry.emptyArgs());
                long var144 = 194080076253066315L;
-               Object[] var141 = var10010;
+               Object var141 = var10010;
                var10010 = Ref.h(194080076253066315L, var141, var144);
 
                try {
@@ -691,7 +695,7 @@ public class Zj2_2 {
                var215 = var6;
                String var10011 = (String)(Registry.emptyArgs());
                long var152 = 194080076253066315L;
-               Object[] var148 = var10011;
+               Object var148 = var10011;
                var10011 = Ref.h(194080076253066315L, var148, var152);
 
                try {
@@ -715,7 +719,7 @@ public class Zj2_2 {
                continue;
             }
 
-            var14 = (((((((((long)false) ? 1 : 0) ? 1 : 0) ? 1 : 0) != 0) ? 1 : 0) != 0) != 0) ? 1 : 0;
+            var14 = ((long)false) ? 1 : 0;
          } else {
             var14 = var212;
          }
@@ -738,7 +742,7 @@ public class Zj2_2 {
             var215 = var130;
             Dx4_2 var223 = (Dx4_2)(Registry.packArgs(var15));
             long var59 = 242040625560871861L;
-            Object[] var58 = var223;
+            Object var58 = var223;
             var223 = Ref.h(242040625560871861L, var58, var59);
 
             try {
@@ -775,7 +779,7 @@ public class Zj2_2 {
                         Ref.h(596400151700218172L, var60, var61);
                         ArrayList var10013 = (ArrayList)(Registry.emptyArgs());
                         long var63 = 596400151700218172L;
-                        Object[] var62 = var10013;
+                        Object var62 = var10013;
                         Registry.packArgs(var17, Ref.h(596400151700218172L, var62, var63));
                         long var64 = 357523341468946780L;
                         var10013 = Ref.h2(357523341468946780L, var64);
@@ -859,7 +863,7 @@ public class Zj2_2 {
                Lj4_2 var124 = (Lj4_2)var114.next();
                String var10016 = (String)(Registry.emptyArgs());
                long var145 = 194080076253066315L;
-               Object[] var142 = var10016;
+               Object var142 = var10016;
                var10016 = Ref.h(194080076253066315L, var142, var145);
 
                try {
@@ -871,7 +875,7 @@ public class Zj2_2 {
                var130 = (Lj4_2)var124.get(var10016);
                String var10017 = (String)(Registry.emptyArgs());
                long var153 = 194080076253066315L;
-               Object[] var149 = var10017;
+               Object var149 = var10017;
                var10017 = Ref.h(194080076253066315L, var149, var153);
 
                try {
@@ -904,7 +908,7 @@ public class Zj2_2 {
          var10008 = var5;
          String var228 = (String)(Registry.emptyArgs());
          long var146 = 194080076253066315L;
-         Object[] var143 = var228;
+         Object var143 = var228;
          var228 = Ref.h(194080076253066315L, var143, var146);
 
          try {
@@ -917,7 +921,7 @@ public class Zj2_2 {
          var215 = var6;
          String var240 = (String)(Registry.emptyArgs());
          long var154 = 194080076253066315L;
-         Object[] var150 = var240;
+         Object var150 = var240;
          var240 = Ref.h(194080076253066315L, var150, var154);
 
          try {
@@ -942,6 +946,11 @@ public class Zj2_2 {
    }
 
    public static ArrayList N(Oc2 var0) {
+      byte var105;
+      boolean var115;
+      boolean var19;
+      L1 var30;
+      long var68;
       int[] var1;
       ArrayList var2;
       int[] var3;
@@ -1081,7 +1090,7 @@ public class Zj2_2 {
                label306: {
                   label345: {
                      O0 var14 = var104.V(0);
-                     var105 = var14.containsKey(a(-8585, 16722));
+                     var105 = (byte)((var14.containsKey(a(-8585, 16722))) ? 1 : 0);
                      if (var1 == null) {
                         if (var105 == 0) {
                            var13 = 1;
@@ -1090,7 +1099,7 @@ public class Zj2_2 {
                            }
                         }
 
-                        var105 = var14.b(a(-8585, 16722));
+                        var105 = (byte)(var14.b(a(-8585, 16722)));
                      }
 
                      if (var1 != null) {
@@ -1098,8 +1107,6 @@ public class Zj2_2 {
                      }
 
                      if (var105 == 0) {
-      boolean var105;
-      boolean var105;
                         var13 = 1;
                      }
                   }
@@ -1112,7 +1119,7 @@ public class Zj2_2 {
                      break label344;
                   }
 
-                  var105 = var11.size();
+                  var105 = (byte)(var11.size());
                }
 
                Registry.packArgs(var105);
@@ -1135,7 +1142,7 @@ public class Zj2_2 {
                String var16 = var15.C$String(a(-8584, -2347));
                String var17 = var15.C$String(a(-8592, 24204));
                String var18 = var15.C$String(a(-8586, -1718));
-               boolean var19 = true;
+               var19 = true;
                boolean var107 = var15.containsKey(a(-8587, 26368));
                if (var1 != null) {
                   continue label323;
@@ -1297,7 +1304,7 @@ public class Zj2_2 {
                                  throw var84.getTargetException();
                               }
 
-                              L1 var30 = (L1)var10015;
+                              var30 = (L1)var10015;
                               if (var1 == null) {
                                  Object[] var10016 = Registry.emptyArgs();
                                  long var64 = 542058094445767607L;
@@ -1323,7 +1330,7 @@ public class Zj2_2 {
                                           long var31 = Registry.lookupField(250137832701362425L).getLong(null)
                                              - (long)(var95 * a(17116, 653507205623955746L) * a(17322, 2548841518271610965L));
                                           Object[] var10018 = Registry.e(var31);
-                                          long var68 = 250873246822364857L;
+                                          var68 = 250873246822364857L;
                                           Object[] var67 = var10018;
                                           Ref.h(250873246822364857L, var67, var68);
 
@@ -1336,7 +1343,7 @@ public class Zj2_2 {
 
                                        ArrayList var117 = Registry.emptyArgs();
                                        long var70 = 596400151700218172L;
-                                       Object[] var69 = var117;
+                                       Object var69 = var117;
                                        var117 = Ref.h(596400151700218172L, var69, var70);
 
                                        try {
@@ -1363,7 +1370,7 @@ public class Zj2_2 {
 
                   ArrayList var111 = Registry.emptyArgs();
                   long var72 = 408177353860141270L;
-                  Object[] var71 = var111;
+                  Object var71 = var111;
                   var111 = Ref.h(408177353860141270L, var71, var72);
 
                   try {
@@ -1401,6 +1408,10 @@ public class Zj2_2 {
    }
 
    public static Oc2 y(ArrayList var0) {
+      Object[] var19;
+      long var30;
+      Integer var68;
+      Boolean var79;
       int[] var10000 = AppendCarriageReturnCRPanel.Y();
       Oc2 var2 = new Oc2();
       int[] var1 = var10000;
@@ -1415,9 +1426,9 @@ public class Zj2_2 {
          while (var10000 < var0.size()) {
             Li4 var4 = (Li4)var0.get((int)var3);
             var10000 = (int[])var4;
-            Object[] var10001 = Registry.emptyArgs();
+            ArrayList var10001 = (ArrayList)(Registry.emptyArgs());
             long var20 = 408177353860141270L;
-            Object[] var19 = var10001;
+            var19 = var10001;
             var10001 = Ref.h(408177353860141270L, var19, var20);
 
             try {
@@ -1429,9 +1440,9 @@ public class Zj2_2 {
             ArrayList var5 = var10001;
             O0 var6 = new O0();
             String var10002 = a(-8579, 23635);
-            Object[] var10004 = Registry.emptyArgs();
+            String var10004 = (String)(Registry.emptyArgs());
             long var22 = 286931176286176762L;
-            Object[] var21 = var10004;
+            Object var21 = var10004;
             var10004 = Ref.h(286931176286176762L, var21, var22);
 
             try {
@@ -1442,9 +1453,9 @@ public class Zj2_2 {
 
             var10002.C(var4, var10004);
             String var10003 = a(-8589, -23222);
-            Object[] var10005 = Registry.emptyArgs();
+            String var10005 = (String)(Registry.emptyArgs());
             long var24 = 194080076253066315L;
-            Object[] var23 = var10005;
+            Object var23 = var10005;
             var10005 = Ref.h(194080076253066315L, var23, var24);
 
             try {
@@ -1455,9 +1466,9 @@ public class Zj2_2 {
 
             var10003.C(var4, var10005);
             String var63 = a(-8582, -14659);
-            Object[] var10006 = Registry.emptyArgs();
+            Object var10006 = Registry.emptyArgs();
             long var26 = 145535910876897139L;
-            Object[] var25 = var10006;
+            Object var25 = var10006;
             var10006 = Ref.h(145535910876897139L, var25, var26);
 
             try {
@@ -1499,9 +1510,9 @@ public class Zj2_2 {
                   var7.add(var10);
                   var87 = var10;
                   String var69 = a(-8592, 24204);
-                  Object[] var10008 = Registry.emptyArgs();
-                  long var30 = 286931176286176762L;
-                  Object[] var29 = var10008;
+                  String var10008 = (String)(Registry.emptyArgs());
+                  var30 = 286931176286176762L;
+                  Object var29 = var10008;
                   var10008 = Ref.h(286931176286176762L, var29, var30);
 
                   try {
@@ -1512,9 +1523,9 @@ public class Zj2_2 {
 
                   var69.C(var9, var10008);
                   String var10007 = a(-8591, -25303);
-                  Object[] var10009 = Registry.emptyArgs();
+                  String var10009 = (String)(Registry.emptyArgs());
                   long var32 = 547398689030025911L;
-                  Object[] var31 = var10009;
+                  Object var31 = var10009;
                   var10009 = Ref.h(547398689030025911L, var31, var32);
 
                   try {
@@ -1525,9 +1536,9 @@ public class Zj2_2 {
 
                   var10007.C(var9, var10009);
                   String var72 = a(-8586, -1718);
-                  Object[] var10010 = Registry.emptyArgs();
+                  String var10010 = (String)(Registry.emptyArgs());
                   long var34 = 194080076253066315L;
-                  Object[] var33 = var10010;
+                  Object var33 = var10010;
                   var10010 = Ref.h(194080076253066315L, var33, var34);
 
                   try {
@@ -1538,9 +1549,9 @@ public class Zj2_2 {
 
                   var72.C(var9, var10010);
                   String var75 = a(-8580, -28301);
-                  Object[] var10011 = Registry.emptyArgs();
+                  Object var10011 = Registry.emptyArgs();
                   long var36 = 135618565837694791L;
-                  Object[] var35 = var10011;
+                  Object var35 = var10011;
                   var10011 = Ref.h(135618565837694791L, var35, var36);
 
                   try {
@@ -1572,7 +1583,7 @@ public class Zj2_2 {
                      String var13 = "#" + (var12 + 1);
                      var10011 = Registry.packArgs(var13);
                      long var40 = 242040625560871861L;
-                     Object[] var39 = var10011;
+                     Object var39 = var10011;
                      var10011 = Ref.h(242040625560871861L, var39, var40);
 
                      try {
@@ -1590,9 +1601,9 @@ public class Zj2_2 {
 
                         if (var14 != null) {
                            Oc2 var15 = new Oc2();
-                           Object[] var10012 = Registry.emptyArgs();
+                           ArrayList var10012 = (ArrayList)(Registry.emptyArgs());
                            long var42 = 596400151700218172L;
-                           Object[] var41 = var10012;
+                           Object var41 = var10012;
                            var10012 = Ref.h(596400151700218172L, var41, var42);
 
                            try {
@@ -2473,6 +2484,7 @@ public class Zj2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[15];
       int var11 = 0;
       String var10 = "=\u0085;\u008c\u0007\\½»L¬\u0003\u0096\u000bJ\u0089\"C²m\u009b\f\u001fDÖ\u0002B\u0083\b@¶8-Ü/\u0098)\tõjÑBPÁÜ¯ì\u0002Kt\u0005\u000ecu!N\u0007\u0014\u0016²9\u008d\u00ad²\b\u0017@Òó\u0081ô3R\u0005g\"X\të\r\u008c&ÏüÒ©Øô¼üñmá\tf4£\u0089\u001e¸\u0015\u0080Õ";
@@ -2619,7 +2631,6 @@ public class Zj2_2 {
       }
    }
 }
-
 
 
 

@@ -50,7 +50,7 @@ public class Yk4 implements TreeSelectionListener {
       Object var10003 = Ref.g(577313982458780365L, var6);
       DefaultMutableTreeNode var10004 = (DefaultMutableTreeNode)(Registry.emptyArgs());
       long var9 = 148691699844242618L;
-      Object[] var8 = var10004;
+      Object var8 = var10004;
       var10004 = Ref.h(148691699844242618L, var8, var9);
 
       try {

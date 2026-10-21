@@ -1140,6 +1140,7 @@ public class X6 extends Xv2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[8];
       int var5 = 0;
       String var4 = "¿«~:\u0093\u001eyuÆ{\u0013\tT¨ÅIá)\u0082¬\u0080\u0091\\Q\u008bÞ¶^\u0007\u001b\u0013¼´\u001eÙ\u009fbóò÷\u008eú\u009d<³s±ëç\u00ad\nÔÜ\u0013Ô>ÃÞÖv\u0014\u000b#;í(á\\\",\u001bc\u0004\nVÅC÷4§\u008dBX\u009d";
@@ -1155,7 +1156,6 @@ public class X6 extends Xv2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

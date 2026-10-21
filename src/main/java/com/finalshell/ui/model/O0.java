@@ -2422,6 +2422,7 @@ public class O0 extends Ok2 implements Map, Cloneable, Serializable, InvocationH
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[11];
       int var11 = 0;
       String var10 = "»\u001fÅË\u001fM\u0003\u0092F5\fZèõf¹\u0091¥éßüZ@\b±5.\u0095\u008b²È\u0019\u000edñª¬Ã7i#\u0091+ÛÈîg\u000eí¼\u009b\u0005å\u0002\u00ad\u0085\u001dÿÜR\u000e4\u0002b»\u0003ì\u0001l\u000eoìË\u000fïCì\u00ad!úÍò, ";
@@ -2437,7 +2438,6 @@ public class O0 extends Ok2 implements Map, Cloneable, Serializable, InvocationH
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

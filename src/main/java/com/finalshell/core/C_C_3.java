@@ -878,6 +878,7 @@ public class C_C_3 implements H22_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[6];
       int var11 = 0;
       String var10 = "\u00193\\\u0096Û\u0005/\u0007ò\u0005!PtÝÚ\u0003AX³\u0003z£Ô";
@@ -892,7 +893,6 @@ public class C_C_3 implements H22_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

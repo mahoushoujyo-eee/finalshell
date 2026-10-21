@@ -337,6 +337,7 @@ public class T extends Ky4 {
    }
 
    public TableRowSorter Q() {
+      boolean var7;
       Pl2 var2 = this.hD.G();
       TableRowSorter var3 = new TableRowSorter<>(var2);
       String var10000 = v$String();
@@ -347,7 +348,7 @@ public class T extends Ky4 {
          Object var6;
          label63: {
             String var5 = var2.z(var4);
-            boolean var7 = var5.equals(b(-20701, -25904));
+            var7 = var5.equals(b(-20701, -25904));
             if (var1 == null) {
                if (var7) {
                   var6 = DE.n;
@@ -585,6 +586,7 @@ public class T extends Ky4 {
    }
 
    public void M(java.io.File var1, D2 var2) {
+      boolean var7;
       String var3;
       java.io.File var4;
       label105: {
@@ -713,13 +715,13 @@ public class T extends Ky4 {
          var10001 = this.e > 0 ? 1 : 0;
       }
 
-      this.hf.setEnabled((boolean)var10001);
+      this.hf.setEnabled(var10001);
       var10001 = this.e + 1;
       if (var1 == null) {
          var10001 = var10001 < this.d.size() ? 1 : 0;
       }
 
-      this.A.setEnabled((boolean)var10001);
+      this.A.setEnabled(var10001);
       this.h.setEnabled(this.S != null);
       KD var10000 = this.s;
       boolean var3;
@@ -915,7 +917,7 @@ public class T extends Ky4 {
       }
 
       label46: {
-         this.M.setEnabled((boolean)var10001);
+         this.M.setEnabled(var10001);
          T var5 = this;
          if (var2 == null) {
             if (this.B == com.finalshell.ui.model.P.save) {
@@ -1025,7 +1027,7 @@ public class T extends Ky4 {
          var6 = var6 > 0 ? 1 : 0;
       }
 
-      var5.setEnabled((boolean)var6);
+      var5.setEnabled(var6);
    }
 
    public void o$void() {
@@ -1521,7 +1523,7 @@ public class T extends Ky4 {
       byte var2 = (byte)var4;
       var4 = var2;
       if (var1 == null) {
-         var4 = var2 != 0 ? 2 : 0;
+         var4 = (byte)(var2 != 0 ? 2 : 0);
       }
 
       int var3 = var4;
@@ -2365,6 +2367,8 @@ public class T extends Ky4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      byte[] var7;
       String[] var13 = new String[48];
       int var11 = 0;
       O(null);
@@ -2381,7 +2385,6 @@ public class T extends Ky4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -2471,7 +2474,7 @@ public class T extends Ky4 {
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56

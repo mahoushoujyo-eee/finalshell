@@ -272,6 +272,7 @@ public class Cm2_3 extends Y_3 {
    }
 
    public static Y2_3[] J(DataInputStream var0, int var1, Cr2_2 var2) throws IOException {
+      Y2_3[] var7;
       Y2_3[] var4 = new Y2_3[var1];
       Ky4[] var10000 = Cr2_2.q$arrky_4();
       int var5 = 0;
@@ -279,7 +280,6 @@ public class Cm2_3 extends Y_3 {
 
       while (true) {
          if (var5 < var1) {
-      int var7;
             try {
                var7 = var4;
                if (var3 != null) {
@@ -292,7 +292,6 @@ public class Cm2_3 extends Y_3 {
                   continue;
                }
             } catch (IOException var6) {
-      int var7;
                throw a(var6);
             }
          }
@@ -1190,6 +1189,7 @@ public class Cm2_3 extends Y_3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte[] var7;
       String[] var13 = new String[2];
       int var11 = 0;
       String var10 = "ÈØGEûëÀ]\u000e³!(eo\u0083µ\u00888Î¦(Á \u0090'\u0083H\u001beqY\u007ff»¨#pÿP¡\u0019w\u009cÎ\u0080ÐF}õ¸3¿UOø¤ø\u0007_\"D¢O´\u008f×3\u0090äèË";
@@ -1288,7 +1288,7 @@ public class Cm2_3 extends Y_3 {
             while (true) {
                var19 = var2;
                var2 += 8;
-               byte[] var7 = var4.substring(var19, var2).getBytes("ISO-8859-1");
+               var7 = var4.substring(var19, var2).getBytes("ISO-8859-1");
                long[] var10000 = var6;
                var19 = var3++;
                long var25 = ((long)var7[0] & 255L) << 56
@@ -1352,7 +1352,6 @@ public class Cm2_3 extends Y_3 {
       }
    }
 }
-
 
 
 

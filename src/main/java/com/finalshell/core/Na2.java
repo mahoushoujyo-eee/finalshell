@@ -131,7 +131,7 @@ public class Na2 extends DefaultTreeCellRenderer {
       String var1 = com.finalshell.ui.panel.AA.z();
       Integer var10001 = (Integer)(Registry.emptyArgs());
       long var3 = 528672956857361353L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(528672956857361353L, var2, var3);
 
       try {
@@ -167,6 +167,9 @@ public class Na2 extends DefaultTreeCellRenderer {
    }
 
    public JPanel t(JTree var1, Object var2, boolean var3, boolean var4, boolean var5, int var6, boolean var7) {
+      boolean var166;
+      boolean var174;
+      Integer var179;
       String var8;
       Object var11;
       String var10000 = com.finalshell.ui.panel.AA.z();
@@ -200,7 +203,7 @@ public class Na2 extends DefaultTreeCellRenderer {
                         Tf4 var16 = (Tf4)var14;
                         var145 = Registry.emptyArgs();
                         long var26 = 543633160597441792L;
-                        Object[] var25 = (Object[])var145;
+                        Object var25 = (Object[])var145;
                         var145 = Ref.h(543633160597441792L, var25, var26);
 
                         try {
@@ -238,7 +241,7 @@ public class Na2 extends DefaultTreeCellRenderer {
                               Ref.h(410905379772103887L, var29, var30);
                               LO3 var10004 = (LO3)(Registry.packArgs(var17));
                               long var32 = 133273064107181210L;
-                              Object[] var31 = var10004;
+                              Object var31 = var10004;
                               var10004 = Ref.h(133273064107181210L, var31, var32);
 
                               try {
@@ -250,7 +253,7 @@ public class Na2 extends DefaultTreeCellRenderer {
                               LO3 var18 = var10004;
                               String var10005 = (String)(Registry.emptyArgs());
                               long var34 = 286931176286176762L;
-                              Object[] var33 = var10005;
+                              Object var33 = var10005;
                               var10005 = Ref.h(286931176286176762L, var33, var34);
 
                               try {
@@ -281,7 +284,7 @@ public class Na2 extends DefaultTreeCellRenderer {
 
                            Object var37 = 381547437801812312L;
                            JLabel var10002 = (JLabel)Ref.g(381547437801812312L, var37);
-                           Object[] var151 = Registry.packArgs(var16, var4);
+                           Object var151 = Registry.packArgs(var16, var4);
                            long var39 = 237585746261529104L;
                            Object var159 = Ref.h2(237585746261529104L, var39);
 
@@ -332,7 +335,7 @@ public class Na2 extends DefaultTreeCellRenderer {
                      var146.setIcon((Icon)var152);
                      var152 = Registry.emptyArgs();
                      long var54 = 396085629172753019L;
-                     Object[] var53 = (Object[])var152;
+                     Object var53 = (Object[])var152;
                      var152 = Ref.h(396085629172753019L, var53, var54);
 
                      try {
@@ -351,10 +354,10 @@ public class Na2 extends DefaultTreeCellRenderer {
                      Ref.h(410905379772103887L, var57, var58);
                      Lv4_2 var10007 = (Lv4_2)(Registry.emptyArgs());
                      long var60 = 605430732347023634L;
-                     Object[] var59 = var10007;
+                     Object var59 = var10007;
                      var10007 = Registry.packArgs(Ref.h(605430732347023634L, var59, var60));
                      long var62 = 489768706953623433L;
-                     Object[] var61 = var10007;
+                     Object var61 = var10007;
                      var10007 = Ref.h(489768706953623433L, var61, var62);
 
                      try {
@@ -369,7 +372,7 @@ public class Na2 extends DefaultTreeCellRenderer {
                         if (var137 != null) {
                            String var10008 = (String)(Registry.emptyArgs());
                            long var64 = 286931176286176762L;
-                           Object[] var63 = var10008;
+                           Object var63 = var10008;
                            var10008 = Ref.h(286931176286176762L, var63, var64);
 
                            try {
@@ -383,7 +386,7 @@ public class Na2 extends DefaultTreeCellRenderer {
                            JLabel var10009 = (JLabel)Ref.g(157407781884746303L, var65);
                            String var10011 = (String)(Registry.emptyArgs());
                            long var68 = 380415140795833934L;
-                           Object[] var67 = var10011;
+                           Object var67 = var10011;
                            var10011 = Ref.h(380415140795833934L, var67, var68);
 
                            try {
@@ -396,9 +399,9 @@ public class Na2 extends DefaultTreeCellRenderer {
                            Object var69 = 166835330888289814L;
                            JLabel var177 = (JLabel)Ref.g(166835330888289814L, var69);
                            StringBuilder var10012 = new StringBuilder();
-                           Object[] var10014 = Registry.emptyArgs();
+                           Object var10014 = Registry.emptyArgs();
                            long var72 = 255354522009994316L;
-                           Object[] var71 = var10014;
+                           Object var71 = var10014;
                            var10014 = Ref.h(255354522009994316L, var71, var72);
 
                            try {
@@ -412,7 +415,7 @@ public class Na2 extends DefaultTreeCellRenderer {
                            JLabel var10013 = (JLabel)Ref.g(307638245160019981L, var73);
                            String var10015 = (String)(Registry.emptyArgs());
                            long var76 = 255973732097233937L;
-                           Object[] var75 = var10015;
+                           Object var75 = var10015;
                            var10015 = Ref.h(255973732097233937L, var75, var76);
 
                            try {
@@ -426,7 +429,7 @@ public class Na2 extends DefaultTreeCellRenderer {
                            JLabel var182 = (JLabel)Ref.g(474258259865824289L, var77);
                            String var10017 = (String)(Registry.emptyArgs());
                            long var80 = 218711337515318169L;
-                           Object[] var79 = var10017;
+                           Object var79 = var10017;
                            var10017 = Ref.h(218711337515318169L, var79, var80);
 
                            try {
@@ -646,9 +649,9 @@ var133 = new Na2((int)this, ((JPanel)Ref.g(518604784742329380L, var111)).getPref
 
    @Override
    public Component getTreeCellRendererComponent(JTree var1, Object var2, boolean var3, boolean var4, boolean var5, int var6, boolean var7) {
-      Object[] var10001 = Registry.packArgs(var1, var2, var3, var4, var5, var6, var7);
+      Object var10001 = Registry.packArgs(var1, var2, var3, var4, var5, var6, var7);
       long var9 = 509376097621868884L;
-      Object[] var8 = var10001;
+      Object var8 = var10001;
       var10001 = Ref.h(509376097621868884L, var8, var9);
 
       try {
@@ -1477,6 +1480,7 @@ var133 = new Na2((int)this, ((JPanel)Ref.g(518604784742329380L, var111)).getPref
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var42;
       String[] var13 = new String[14];
       int var11 = 0;
       String var10 = "ÆsÓ3\r\nñWë\u0002a\u009b\"!z¬\u0086\u007fh¨>a\u0004\u001f\u0012¬T\u0005ê\u0016ëpQ\u0012;¹\"fpóÓ¸a\u0092½¦HÉ\u000fâ¤\r\u0011ö§Õ©ÍYé=èO\u00012.\u0017ä\u0017«\u000e»}¤eKâ\u0088 %\u0083Zg\u009bó\fYôøTÀÄóá\u000b\u001cÖÙ\u0013ÏÝòæ)°u\u0012qäp\u00964A$;;\u0018!\f*<\u0096M\rçD\u00852\u009eñF\u0002轑揸\u000e÷1ç\u001aÊm5íÒ\u0095¤ë\u0004Í\u000bÖ#\t®þ\u009b>\nóc\u0088";
@@ -1492,7 +1496,6 @@ var133 = new Na2((int)this, ((JPanel)Ref.g(518604784742329380L, var111)).getPref
          byte var10002 = -1;
 
          while (true) {
-      Object var42;
             label56: {
                char[] var47 = var10001.toCharArray();
                int var10004 = var47.length;

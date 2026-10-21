@@ -5,8 +5,8 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.task.GO;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.panel.AA;
-import com.finalshell.ui.panel.Connection5;
-import com.finalshell.ui.panel.RouteTracePanel2;
+import com.finalshell.ui.panel.ImportExportPanel;
+import com.finalshell.ui.panel.ConnectionContextMenu;
 import com.finalshell.ui.panel.ShowDeletedPanel;
 import com.finalshell.ui.panel.Tv2;
 import java.awt.Component;
@@ -22,11 +22,11 @@ public class OQ3 implements MouseListener {
    public long B;
    public final ShowDeletedPanel r;
    public final boolean F;
-   public final Connection5 L;
+   public final ImportExportPanel L;
    public static long[] a;
    public static Long[] b;
 
-   public OQ3(Connection5 var1, ShowDeletedPanel var2, boolean var3) {
+   public OQ3(ImportExportPanel var1, ShowDeletedPanel var2, boolean var3) {
       this.L = var1;
       this.r = var2;
       this.F = var3;
@@ -35,6 +35,7 @@ public class OQ3 implements MouseListener {
 
    @Override
    public void mouseClicked(MouseEvent var1) {
+      boolean var8;
       String var2 = AA.z();
       int var10000 = var1.getClickCount();
       if (var2 == null) {
@@ -52,7 +53,7 @@ public class OQ3 implements MouseListener {
       }
 
       if (var2 == null) {
-         if (var8 == 0) {
+         if (!var8) {
             return;
          }
 
@@ -75,13 +76,13 @@ public class OQ3 implements MouseListener {
       Object var7 = 414214645141473905L;
       Ref.g(414214645141473905L, var7);
       Object var9 = 593306439561595691L;
-      int var3 = ((Connection5)Ref.g(593306439561595691L, var9)).getRowForLocation(var1.getX(), var1.getY());
+      int var3 = ((ImportExportPanel)Ref.g(593306439561595691L, var9)).getRowForLocation(var1.getX(), var1.getY());
       Object var11 = 414214645141473905L;
       Ref.g(414214645141473905L, var11);
       Object var13 = 414214645141473905L;
       Object var10006 = Ref.g(414214645141473905L, var13);
       Object var15 = 593306439561595691L;
-      TreePath var10007 = ((Connection5)Ref.g(593306439561595691L, var15)).getPathForLocation(var1.getX(), var1.getY());
+      TreePath var10007 = ((ImportExportPanel)Ref.g(593306439561595691L, var15)).getPathForLocation(var1.getX(), var1.getY());
       long var18 = 231686721816212635L;
       TreePath var17 = var10007;
       Ref.s(231686721816212635L, var17, var18);
@@ -109,7 +110,7 @@ public class OQ3 implements MouseListener {
                   Object var21 = 414214645141473905L;
                   Ref.g(414214645141473905L, var21);
                   Object var23 = 593306439561595691L;
-                  ((Connection5)Ref.g(593306439561595691L, var23)).getSelectionCount();
+                  ((ImportExportPanel)Ref.g(593306439561595691L, var23)).getSelectionCount();
                }
 
                OQ3 var6 = var31;
@@ -131,7 +132,7 @@ public class OQ3 implements MouseListener {
       if (var2 == null) {
          if (var29 == var30) {
             Object var27 = 414214645141473905L;
-            ((Connection5)Ref.g(414214645141473905L, var27)).getSelectionModel().clearSelection();
+            ((ImportExportPanel)Ref.g(414214645141473905L, var27)).getSelectionModel().clearSelection();
          }
 
          var29 = var1.getButton();
@@ -144,12 +145,15 @@ public class OQ3 implements MouseListener {
 
    @Override
    public void mouseReleased(MouseEvent var1) {
+      boolean var104;
+      Integer var83;
+      TreePath var89;
       AA.z();
       Object var16 = 259251831013725374L;
       Ref.g(259251831013725374L, var16);
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var19 = 149160680229662748L;
-      Object[] var18 = var10003;
+      Object var18 = var10003;
       var10003 = Ref.h(149160680229662748L, var18, var19);
 
       try {
@@ -159,24 +163,24 @@ public class OQ3 implements MouseListener {
       }
 
       com.finalshell.ui.dialog.KQ var3 = var10003;
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var21 = 249886410317960768L;
-      Object[] var20 = var10004;
+      Object var20 = var10004;
       var10004 = Ref.h(249886410317960768L, var20, var21);
 
       try {
-         var10004 = (com.finalshell.ui.frame.U)var10004;
+         var10004 = (com.finalshell.ui.frame.MainFrame)var10004;
       } catch (InvocationTargetException var73) {
          throw var73.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var4 = var10004;
-      Connection5 var5 = (Connection5)var1.getSource();
+      com.finalshell.ui.frame.MainFrame var4 = var10004;
+      ImportExportPanel var5 = (ImportExportPanel)var1.getSource();
       Object var22 = 414214645141473905L;
       Object var10005 = Ref.g(414214645141473905L, var22);
-      Object[] var10006 = Registry.packArgs(var1.getPoint());
+      Object var10006 = Registry.packArgs(var1.getPoint());
       long var25 = 379754982100791858L;
-      Object[] var24 = var10006;
+      Object var24 = var10006;
       var10006 = Ref.h(379754982100791858L, var24, var25);
 
       try {
@@ -206,7 +210,7 @@ public class OQ3 implements MouseListener {
 
       var10006 = Registry.packArgs(var6);
       long var27 = 313360281912871059L;
-      Object[] var26 = var10006;
+      Object var26 = var10006;
       var10006 = Ref.h(313360281912871059L, var26, var27);
 
       try {
@@ -215,7 +219,7 @@ public class OQ3 implements MouseListener {
          throw var71.getTargetException();
       }
 
-      Connection5 var93;
+      ImportExportPanel var93;
       label198: {
          label199: {
             DefaultMutableTreeNode var8;
@@ -228,7 +232,7 @@ public class OQ3 implements MouseListener {
                   Object[] var10007 = Registry.packArgs(var8);
                   long var29 = 263865946362642439L;
                   Object[] var28 = var10007;
-                  var93 = (Connection5)Ref.h(263865946362642439L, var28, var29);
+                  var93 = (ImportExportPanel)Ref.h(263865946362642439L, var28, var29);
 
                   try {
                      var89 = (TreePath)var93;
@@ -250,7 +254,7 @@ public class OQ3 implements MouseListener {
                            break label181;
                         }
 
-                        var93 = (Connection5)var8.getUserObject();
+                        var93 = (ImportExportPanel)var8.getUserObject();
                      }
 
                      byte var10008;
@@ -274,9 +278,9 @@ public class OQ3 implements MouseListener {
                                  long var33 = 194560825135347400L;
                                  Object[] var32 = var10009;
                                  Ref.h(194560825135347400L, var32, var33);
-                                 Object[] var10010 = Registry.emptyArgs();
+                                 Object var10010 = Registry.emptyArgs();
                                  long var35 = 424156930953488367L;
-                                 Object[] var34 = var10010;
+                                 Object var34 = var10010;
                                  var10010 = Ref.h(424156930953488367L, var34, var35);
 
                                  try {
@@ -319,7 +323,7 @@ public class OQ3 implements MouseListener {
                Ref.h(213918959370705943L, var38, var39);
                Tv2 var96 = Registry.emptyArgs();
                long var41 = 196767746087547704L;
-               Object[] var40 = var96;
+               Object var40 = var96;
                var96 = Ref.h(196767746087547704L, var40, var41);
 
                try {
@@ -341,14 +345,14 @@ public class OQ3 implements MouseListener {
 
                   Object var46 = 414214645141473905L;
                   Ref.g(414214645141473905L, var46);
-                  RouteTracePanel2 var10011 = new RouteTracePanel2(var5, var75, var3, (boolean)var7, Registry.lookupField(451929456137016711L).getBoolean(this));
+                  ConnectionContextMenu var10011 = new ConnectionContextMenu(var5, var75, var3, var7, Registry.lookupField(451929456137016711L).getBoolean(this));
                   long var49 = 486701759580007258L;
-                  RouteTracePanel2 var48 = var10011;
+                  ConnectionContextMenu var48 = var10011;
                   Ref.s(486701759580007258L, var48, var49);
                   Object var50 = 414214645141473905L;
                   Ref.g(414214645141473905L, var50);
                   Object var52 = 486701759580007258L;
-                  ((RouteTracePanel2)Ref.g(486701759580007258L, var52)).show((Component)var1.getSource(), var1.getX() + 1, var1.getY() + 1);
+                  ((ConnectionContextMenu)Ref.g(486701759580007258L, var52)).show((Component)var1.getSource(), var1.getX() + 1, var1.getY() + 1);
                   Object[] var10014 = Registry.packArgs(true);
                   long var55 = 438941361784812150L;
                   Object[] var54 = var10014;
@@ -363,12 +367,12 @@ public class OQ3 implements MouseListener {
                   Object var56 = 414214645141473905L;
                   Ref.g(414214645141473905L, var56);
                   Object var58 = 486701759580007258L;
-                  ((RouteTracePanel2)Ref.g(486701759580007258L, var58)).addPopupMenuListener(new TK3(this, var3));
+                  ((ConnectionContextMenu)Ref.g(486701759580007258L, var58)).addPopupMenuListener(new TK3(this, var3));
                }
 
                List var101 = (List)(Registry.emptyArgs());
                long var61 = 447854232501987193L;
-               Object[] var60 = var101;
+               Object var60 = var101;
                var101 = Ref.h(447854232501987193L, var60, var61);
 
                try {
@@ -404,8 +408,6 @@ public class OQ3 implements MouseListener {
                      }
 
                      if (var2 != null) {
-      Object var104;
-      Object var104;
                         break;
                      }
                   }
@@ -424,7 +426,7 @@ public class OQ3 implements MouseListener {
 
             var10006 = this;
             Object var62 = 414214645141473905L;
-            var93 = (Connection5)Ref.g(414214645141473905L, var62);
+            var93 = (ImportExportPanel)Ref.g(414214645141473905L, var62);
             if (var2 != null) {
                break label198;
             }
@@ -437,7 +439,7 @@ public class OQ3 implements MouseListener {
          }
 
          Object var64 = 414214645141473905L;
-         var93 = (Connection5)Ref.g(414214645141473905L, var64);
+         var93 = (ImportExportPanel)Ref.g(414214645141473905L, var64);
       }
 
       Registry.lookupField(137395258222385003L).setBoolean(var93, false);
@@ -500,7 +502,6 @@ public class OQ3 implements MouseListener {
       b = new Long[2];
    }
 }
-
 
 
 

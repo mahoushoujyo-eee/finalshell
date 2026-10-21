@@ -1,26 +1,26 @@
 package com.finalshell.task;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.reflect.Ref;
 import com.finalshell.ui.dialog.ProgressDialog;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.Component;
 import java.util.ArrayList;
 
 public class ZH implements Runnable {
    public String u;
-   public final Connection12 R;
+   public final FileTransferConnection R;
    public final String l;
    public final ArrayList D;
    public final ProgressDialog w;
    public final Tf4 s;
    public final boolean E;
    public final Component n;
-   public final Address g;
+   public final FileBrowserAddressBar g;
    public static String a;
 
-   public ZH(Address var1, Connection12 var2, String var3, ArrayList var4, ProgressDialog var5, Tf4 var6, boolean var7, Component var8) {
+   public ZH(FileBrowserAddressBar var1, FileTransferConnection var2, String var3, ArrayList var4, ProgressDialog var5, Tf4 var6, boolean var7, Component var8) {
       this.g = var1;
       this.R = var2;
       this.l = var3;

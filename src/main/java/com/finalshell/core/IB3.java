@@ -1207,6 +1207,7 @@ public class IB3 implements Db2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var43;
       String[] var21 = new String[14];
       int var19 = 0;
       String var18 = "yå¬1iÔÙ+ÝM8$ûv\u008b.\u008e>\u0098\u0017\u0086\u0092°°\nà\u001d§´5ËJð\u008ej9Îl,é5\"É°\u001e{Fµ\u0002\u008a÷%\u000f\u001dÁÇ\u000fæía\u009cH×IÅ¹\u0005uÄ±Â\u001f\u0082Ëb.g\u009e\u007f?.)>0ìD@«ï\u0010d\u000e,Í#ð\u008bU\u008e¶\u009a\u0085\u0095Wë%1L\u009b\u00ad¹Yl\u009dªW¼âo\u0084·*à\u0081\u0091\u0085\u0087p\u008e%'½zWÛ-øÃ¾/ÏÅÕ\b\u0002ä*\u000fñ}øé\u0002\u0007Õ@\u0018\u0018»\u0080úì\u00adi6Ô/[\u0080u\n\f£n\u0083nèÊÐ\u0010)\u0007y&=\u0012;Ù\u0082\bî}±rû1ÂD\u0010\u001c\u009812¶»ü\u001ax¼%/&Ë\u0004V\u0007\"^ãF\u0080:ä%W*Ê!n:Áú\u0019;g'ÓtÇÌ\u009c\u0086Éùã\u0017NµâíÏQ8äü\u0089´sKM\u008e\u0007Àk\u009bà\u008fî\u0005";
@@ -1222,7 +1223,6 @@ public class IB3 implements Db2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var43;
             label74: {
                char[] var49 = var10001.toCharArray();
                int var10004 = var49.length;

@@ -993,6 +993,7 @@ public class I12 extends BasicLabelUI implements D7, L0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "GgÚ\u0094OR\u009e©Yè\u0014òÉr²Ý-\u008dÌk;\u009c\u0094¡i-\u0088eL\u0005È\u0014!Â\bÓ\u0092\u0001dIV\u008b;\u0082U«³Ð¶G\u007f©\fh®Øþ\u0019g\u008eD\u009e\u0094\u0000t";
@@ -1008,7 +1009,6 @@ public class I12 extends BasicLabelUI implements D7, L0_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

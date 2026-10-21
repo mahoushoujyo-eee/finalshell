@@ -1376,6 +1376,7 @@ public class Ok4 implements X4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var43;
       String[] var21 = new String[6];
       int var19 = 0;
       String var18 = "\u008d¬V.ûK¥dûÓ|íØdæ\u0087M\u001a\u0086ßIi·ñ\u00187¼\u0085'è é\bÛ:ËO¦i£( {Ç\u0011³Î\u0091b\u0003ÂºU\u0018õ\u0000)Wü\u0017\u0094s\u0003\b¸]";
@@ -1391,7 +1392,6 @@ public class Ok4 implements X4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var43;
             label75: {
                char[] var49 = var10001.toCharArray();
                int var10004 = var49.length;

@@ -266,6 +266,8 @@ public final class Oj4 implements Serializable {
    }
 
    public R9 v(R9 var1) {
+      R9 var10;
+      R9 var9;
       this.S();
       int[] var10000 = G9.J();
       Iterator var3 = this.E.iterator();
@@ -284,8 +286,6 @@ public final class Oj4 implements Serializable {
 
                if (!var8) {
                   if (var2 != null) {
-      int[] var9;
-      int[] var9;
                      continue;
                   }
                   break;
@@ -1479,7 +1479,6 @@ public final class Oj4 implements Serializable {
       }
    }
 }
-
 
 
 

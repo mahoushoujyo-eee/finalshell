@@ -109,7 +109,7 @@ public class Bb2 extends JLabel {
    public void F(float var1) {
       Registry.lookupField(224347986923037516L).setFloat(this, var1);
       new StringBuilder();
-      Object[] var10001 = Registry.packArgs(100.0F * var1);
+      Object var10001 = Registry.packArgs(100.0F * var1);
       long var3 = 443004786775321843L;
       Object var10002 = Ref.h2(443004786775321843L, var3);
 

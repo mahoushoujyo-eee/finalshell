@@ -110,6 +110,8 @@ public class Kc4 extends Ky4 implements Au2 {
    }
 
    public void g(List var1) {
+      java.io.File var5;
+      boolean var6;
       String var10000 = Kz4.M();
       boolean var3 = false;
       String var2 = var10000;
@@ -117,7 +119,7 @@ public class Kc4 extends Ky4 implements Au2 {
 
       while (true) {
          if (var4.hasNext()) {
-            java.io.File var5 = (java.io.File)var4.next();
+            var5 = (java.io.File)var4.next();
             var6 = this.F(var5);
             if (var2 == null) {
                break;
@@ -126,7 +128,6 @@ public class Kc4 extends Ky4 implements Au2 {
             label30:
             if (var2 != null) {
                if (!var6) {
-      boolean var6;
                   var6 = var3;
                   if (var2 == null) {
                      break label30;
@@ -143,7 +144,6 @@ public class Kc4 extends Ky4 implements Au2 {
 
             var3 = var6;
             if (var2 != null) {
-      boolean var6;
                continue;
             }
          }
@@ -159,11 +159,13 @@ public class Kc4 extends Ky4 implements Au2 {
    }
 
    public void c(java.io.File[] var1) {
+      int var6;
+      boolean var8;
       boolean var3 = false;
       java.io.File[] var4 = var1;
       String var10000 = Kz4.M();
       int var5 = var1.length;
-      int var6 = 0;
+      var6 = 0;
       String var2 = var10000;
 
       while (true) {
@@ -177,8 +179,6 @@ public class Kc4 extends Ky4 implements Au2 {
             label30:
             if (var2 != null) {
                if (!var8) {
-      boolean var8;
-      boolean var8;
                   var8 = var3;
                   if (var2 == null) {
                      break label30;
@@ -226,6 +226,7 @@ public class Kc4 extends Ky4 implements Au2 {
    }
 
    public boolean F(java.io.File var1) {
+      boolean var5;
       String var2 = Kz4.M();
       Kc4 var10000 = this;
       if (var2 != null) {
@@ -247,7 +248,7 @@ public class Kc4 extends Ky4 implements Au2 {
          return var10000.Y;
       } else {
          if (!var10000.Y) {
-            boolean var5 = Cz2.y(this.m, var1);
+            var5 = Cz2.y(this.m, var1);
             if (var2 == null) {
                return var5;
             }
@@ -264,6 +265,7 @@ public class Kc4 extends Ky4 implements Au2 {
    }
 
    public void z() {
+      boolean var5;
       String var10000 = Kz4.M();
       boolean var2 = false;
       String var1 = var10000;
@@ -311,6 +313,8 @@ public class Kc4 extends Ky4 implements Au2 {
    }
 
    public void H(List var1) {
+      java.io.File var5;
+      boolean var6;
       String var10000 = Kz4.M();
       boolean var3 = false;
       String var2 = var10000;
@@ -318,7 +322,7 @@ public class Kc4 extends Ky4 implements Au2 {
 
       while (true) {
          if (var4.hasNext()) {
-            java.io.File var5 = (java.io.File)var4.next();
+            var5 = (java.io.File)var4.next();
             var6 = this.R(var5, true);
             if (var2 == null) {
                break;
@@ -358,12 +362,14 @@ public class Kc4 extends Ky4 implements Au2 {
    }
 
    public void C(java.io.File[] var1) {
+      int var6;
+      boolean var8;
       boolean var3 = false;
       String var10000 = Kz4.M();
       java.io.File[] var4 = var1;
       int var5 = var1.length;
       String var2 = var10000;
-      int var6 = 0;
+      var6 = 0;
 
       while (true) {
          if (var6 < var5) {
@@ -423,6 +429,7 @@ public class Kc4 extends Ky4 implements Au2 {
    }
 
    public boolean R(java.io.File var1, boolean var2) {
+      K02 var5;
       String var3 = Kz4.M();
       boolean var10000 = Cz2.y(this.m, var1);
       if (var3 != null) {
@@ -431,7 +438,7 @@ public class Kc4 extends Ky4 implements Au2 {
 
             while (true) {
                if (var4.hasNext()) {
-                  K02 var5 = (K02)var4.next();
+                  var5 = (K02)var4.next();
                   var10000 = var2;
                   if (var3 == null) {
                      break;
@@ -473,6 +480,7 @@ public class Kc4 extends Ky4 implements Au2 {
    }
 
    public List K(java.io.File var1) {
+      K02 var6;
       String var10000 = Kz4.M();
       ArrayList var3 = new ArrayList(1);
       int var4 = 0;
@@ -483,7 +491,7 @@ public class Kc4 extends Ky4 implements Au2 {
          label23:
          if (var2 != null) {
             if (var5 instanceof K02) {
-               K02 var6 = (K02)var5;
+               var6 = (K02)var5;
                if (var2 == null) {
                   break label23;
                }
@@ -633,16 +641,16 @@ public class Kc4 extends Ky4 implements Au2 {
       Kc4 var10000 = this;
       if (var1 != null) {
          if (this.W == null) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var10000 = this;
       }
 
-      int var2 = var10000.N;
+      int var2 = (var10000.N) ? 1 : 0;
       if (var1 != null) {
          if (var10000.N == 0) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          float var3;
@@ -650,9 +658,9 @@ public class Kc4 extends Ky4 implements Au2 {
       }
 
       if (var1 == null) {
-         return (boolean)var2;
+         return var2 != 0;
       } else {
-         return (boolean)(var2 > 0 ? 1 : 0);
+         return (boolean)((var2 > 0 ? 1 : 0) != 0);
       }
    }
 
@@ -775,6 +783,8 @@ public class Kc4 extends Ky4 implements Au2 {
    }
 
    public static String b(int var0, int var1) {
+      int var6;
+      int var8;
       int var2 = (var0 ^ 8701) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1555,13 +1565,13 @@ public class Kc4 extends Ky4 implements Au2 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1589,6 +1599,8 @@ public class Kc4 extends Ky4 implements Au2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var5;
+      long[] var6;
       String[] var13 = new String[3];
       int var11 = 0;
       String var10 = "Qyô»Ìå\u0010Þ\u0098a\u0017¼\u0091åñ\u0017:ÅIèÅ\u0084,\u0085ì¢yu÷x¡NFpÇ\n\u0096\u001cd\tÆÒë\u008e\u0012bO\u0011_";
@@ -1675,10 +1687,10 @@ public class Kc4 extends Ky4 implements Au2 {
             a = var13;
             b = new String[3];
             long var0 = 1333366873389657049L;
-            long[] var6 = new long[6];
+            var6 = new long[6];
             int var3 = 0;
             String var4 = "÷Û5B\u0005\u0085\u0005ã\u0093ÇùÒS³OÖi§7\u0091\u0006è\u0090\u009fÎ\u0086\u0088Æ1óK\u001b";
-            int var5 = "÷Û5B\u0005\u0085\u0005ã\u0093ÇùÒS³OÖi§7\u0091\u0006è\u0090\u009fÎ\u0086\u0088Æ1óK\u001b".length();
+            var5 = ("÷Û5B\u0005\u0085\u0005ã\u0093ÇùÒS³OÖi§7\u0091\u0006è\u0090\u009fÎ\u0086\u0088Æ1óK\u001b".length()) != 0;
             byte var2 = 0;
 
             label40:
@@ -1718,7 +1730,7 @@ public class Kc4 extends Ky4 implements Au2 {
                         }
 
                         var4 = "\u0019\u001b\u000bR+»\u001d\u001d½oÍd6\u000e«+";
-                        var5 = "\u0019\u001b\u000bR+»\u001d\u001d½oÍd6\u000e«+".length();
+                        var5 = ("\u0019\u001b\u000bR+»\u001d\u001d½oÍd6\u000e«+".length()) != 0;
                         var2 = 0;
                   }
 
@@ -1744,7 +1756,6 @@ public class Kc4 extends Ky4 implements Au2 {
       }
    }
 }
-
 
 
 

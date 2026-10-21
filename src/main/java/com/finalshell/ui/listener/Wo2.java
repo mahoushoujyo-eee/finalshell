@@ -153,6 +153,7 @@ public class Wo2 extends WC_2 implements AncestorListener {
    }
 
    public static boolean D(JComponent var0) {
+      boolean var6;
       AncestorListener[] var2 = var0.getAncestorListeners();
       int[] var10000 = WC_2.V();
       int var3 = var2.length;

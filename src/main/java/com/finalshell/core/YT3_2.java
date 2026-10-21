@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
-import com.finalshell.config.File;
-import com.finalshell.connection.Mapping;
+import com.finalshell.config.ConfigFileStore;
+import com.finalshell.connection.PortMapping;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.OF3_2;
 import com.finalshell.ui.dialog.KQ;
 import com.finalshell.ui.dialog.SyncPasswordDialog;
-import com.finalshell.ui.dialog.SyncPasswordDialog2;
+import com.finalshell.ui.dialog.SyncPasswordResetDialog;
 import com.finalshell.ui.frame.KeyManagerFrame;
 import com.finalshell.ui.frame.TerminalHelpFrame;
 import com.finalshell.ui.frame.TextEditorFrame;
@@ -33,10 +33,10 @@ public class YT3_2 implements CS3 {
    public DD3 h;
    public static YT3_2 yZ;
    public ArrayList R;
-   public Yf2 V;
+   public ConnectionConfigStore V;
    public Tc2 s;
    public U62 C;
-   public File Q;
+   public ConfigFileStore Q;
    public static long x;
    public JT r;
    public static D82_2 F;
@@ -44,7 +44,7 @@ public class YT3_2 implements CS3 {
    public Ca4 yN;
    public Kx4_2 w;
    public Nl2_2 o;
-   public Mapping E;
+   public PortMapping E;
    public static int I;
    public static boolean yi;
    public CS3 m;
@@ -69,7 +69,7 @@ public class YT3_2 implements CS3 {
    public static TerminalHelpFrame u;
    public com.finalshell.ui.dialog.DU U;
    public com.finalshell.ui.dialog.AW y2;
-   public SyncPasswordDialog2 i;
+   public SyncPasswordResetDialog i;
    public SyncPasswordDialog W;
    public V7 L;
    public Om4 G;
@@ -190,20 +190,20 @@ public class YT3_2 implements CS3 {
       return (YT3_2)Registry.lookupField(518382686143725680L).get(null);
    }
 
-   public com.finalshell.ui.frame.U J$U() {
+   public com.finalshell.ui.frame.MainFrame J$U() {
       Object var1 = 498028056500556957L;
       Ref.g(498028056500556957L, var1);
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var4 = 240567170779145617L;
-      Object[] var3 = var10002;
+      Object var3 = var10002;
       Ref.h(240567170779145617L, var3, var4);
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var6 = 402818413346430437L;
-      Object[] var5 = var10003;
+      Object var5 = var10003;
       var10003 = Ref.h(402818413346430437L, var5, var6);
 
       try {
-         return (com.finalshell.ui.frame.U)var10003;
+         return (com.finalshell.ui.frame.MainFrame)var10003;
       } catch (InvocationTargetException var7) {
          throw var7.getTargetException();
       }
@@ -1476,11 +1476,11 @@ public class YT3_2 implements CS3 {
    public void V() {
       Ky4[] var1 = c();
       Object var2 = 583702008139450328L;
-      Object var10001 = (SyncPasswordDialog2)Ref.g(583702008139450328L, var2);
+      Object var10001 = (SyncPasswordResetDialog)Ref.g(583702008139450328L, var2);
       if (var1 != null) {
-         if (!((SyncPasswordDialog2)var10001).isVisible()) {
+         if (!((SyncPasswordResetDialog)var10001).isVisible()) {
             Object var4 = 583702008139450328L;
-            ((SyncPasswordDialog2)Ref.g(583702008139450328L, var4)).setLocationRelativeTo(null);
+            ((SyncPasswordResetDialog)Ref.g(583702008139450328L, var4)).setLocationRelativeTo(null);
          }
 
          var10001 = this;
@@ -1509,7 +1509,7 @@ public class YT3_2 implements CS3 {
          }
 
          Object var12 = 583702008139450328L;
-         SyncPasswordDialog2 var10005 = (SyncPasswordDialog2)Ref.g(583702008139450328L, var12);
+         SyncPasswordResetDialog var10005 = (SyncPasswordResetDialog)Ref.g(583702008139450328L, var12);
       }
 
       Registry.packArgs(var10001);
@@ -6119,6 +6119,49 @@ public class YT3_2 implements CS3 {
    }
 
    public synchronized void O$void() {
+      Integer var530;
+      Boolean var536;
+      Integer var546;
+      Integer var548;
+      Integer var550;
+      Integer var552;
+      Integer var559;
+      Boolean var561;
+      Boolean var563;
+      Boolean var565;
+      Boolean var571;
+      Boolean var573;
+      Integer var582;
+      Integer var613;
+      Integer var616;
+      Boolean var621;
+      Integer var623;
+      Integer var625;
+      Integer var627;
+      Boolean var629;
+      Boolean var631;
+      Boolean var633;
+      Integer var635;
+      Integer var637;
+      Integer var639;
+      Integer var641;
+      Boolean var647;
+      Boolean var649;
+      Integer var651;
+      Boolean var653;
+      Boolean var655;
+      Boolean var657;
+      Boolean var659;
+      Boolean var661;
+      Integer var665;
+      Long var672;
+      Integer var682;
+      Integer var686;
+      Boolean var688;
+      Boolean var690;
+      Long var692;
+      Long var694;
+      Long var696;
       Ky4[] var10000 = c();
       Registry.lookupField(327947279079143338L).setLong(this, System.currentTimeMillis());
       O0 var2 = new O0();
@@ -6128,7 +6171,7 @@ public class YT3_2 implements CS3 {
       Object var10003 = Ref.g(325429126481578482L, var30);
       String var10004 = (String)(Registry.emptyArgs());
       long var33 = 499444795808443762L;
-      Object[] var32 = var10004;
+      Object var32 = var10004;
       var10004 = Ref.h(499444795808443762L, var32, var33);
 
       try {
@@ -6142,7 +6185,7 @@ public class YT3_2 implements CS3 {
       Ref.g(325429126481578482L, var34);
       var10004 = Registry.emptyArgs();
       long var37 = 380488306238748207L;
-      Object[] var36 = var10004;
+      Object var36 = var10004;
       Ref.h(380488306238748207L, var36, var37);
 
       try {
@@ -6154,7 +6197,7 @@ public class YT3_2 implements CS3 {
       Oc2 var4 = new Oc2();
       ArrayList var10005 = (ArrayList)(Registry.emptyArgs());
       long var39 = 250284129792311327L;
-      Object[] var38 = var10005;
+      Object var38 = var10005;
       var10005 = Ref.h(250284129792311327L, var38, var39);
 
       try {
@@ -6190,7 +6233,7 @@ public class YT3_2 implements CS3 {
          Object var10008 = Ref.g(325429126481578482L, var40);
          String var10009 = (String)(Registry.emptyArgs());
          long var43 = 248904686894997647L;
-         Object[] var42 = var10009;
+         Object var42 = var10009;
          var10009 = Ref.h(248904686894997647L, var42, var43);
 
          try {
@@ -6219,7 +6262,7 @@ public class YT3_2 implements CS3 {
       Oc2 var494 = new Oc2();
       ArrayList var10010 = (ArrayList)(Registry.emptyArgs());
       long var49 = 250284129792311327L;
-      Object[] var48 = var10010;
+      Object var48 = var10010;
       var10010 = Ref.h(250284129792311327L, var48, var49);
 
       try {
@@ -6267,7 +6310,7 @@ public class YT3_2 implements CS3 {
       Oc2 var495 = new Oc2();
       ArrayList var10013 = (ArrayList)(Registry.emptyArgs());
       long var55 = 250284129792311327L;
-      Object[] var54 = var10013;
+      Object var54 = var10013;
       var10013 = Ref.h(250284129792311327L, var54, var55);
 
       try {
@@ -6301,7 +6344,7 @@ public class YT3_2 implements CS3 {
          Object var10016 = Ref.g(325429126481578482L, var56);
          String var10017 = (String)(Registry.emptyArgs());
          long var59 = 351281291503408509L;
-         Object[] var58 = var10017;
+         Object var58 = var10017;
          var10017 = Ref.h(351281291503408509L, var58, var59);
 
          try {
@@ -6343,7 +6386,7 @@ public class YT3_2 implements CS3 {
       Object var10020 = Ref.g(325429126481578482L, var64);
       String var10021 = (String)(Registry.emptyArgs());
       long var67 = 227837117761533093L;
-      Object[] var66 = var10021;
+      Object var66 = var10021;
       var10021 = Ref.h(227837117761533093L, var66, var67);
 
       try {
@@ -6358,7 +6401,7 @@ public class YT3_2 implements CS3 {
       Object var10022 = Ref.g(325429126481578482L, var68);
       String var10023 = (String)(Registry.emptyArgs());
       long var71 = 310093382131976988L;
-      Object[] var70 = var10023;
+      Object var70 = var10023;
       var10023 = Ref.h(310093382131976988L, var70, var71);
 
       try {
@@ -6373,7 +6416,7 @@ public class YT3_2 implements CS3 {
       Object var10024 = Ref.g(325429126481578482L, var72);
       String var10025 = (String)(Registry.emptyArgs());
       long var75 = 348594565543441736L;
-      Object[] var74 = var10025;
+      Object var74 = var10025;
       var10025 = Ref.h(348594565543441736L, var74, var75);
 
       try {
@@ -6386,9 +6429,9 @@ public class YT3_2 implements CS3 {
       a(20754, -23207);
       Object var76 = 325429126481578482L;
       Object var10026 = Ref.g(325429126481578482L, var76);
-      Object[] var10027 = Registry.emptyArgs();
+      Object var10027 = Registry.emptyArgs();
       long var79 = 289260173423359764L;
-      Object[] var78 = var10027;
+      Object var78 = var10027;
       var10027 = Ref.h(289260173423359764L, var78, var79);
 
       try {
@@ -6405,7 +6448,7 @@ public class YT3_2 implements CS3 {
          if (var1 != null) {
             var10027 = Registry.emptyArgs();
             long var83 = 625743137504778004L;
-            Object[] var82 = var10027;
+            Object var82 = var10027;
             var10027 = Ref.h(625743137504778004L, var82, var83);
 
             try {
@@ -6424,7 +6467,7 @@ public class YT3_2 implements CS3 {
 
          var10027 = Registry.packArgs(var14);
          long var87 = 196018286726292473L;
-         Object[] var86 = var10027;
+         Object var86 = var10027;
          Ref.h(196018286726292473L, var86, var87);
 
          try {
@@ -6438,9 +6481,9 @@ public class YT3_2 implements CS3 {
       a(20849, 4841);
       Object var88 = 325429126481578482L;
       Object var10030 = Ref.g(325429126481578482L, var88);
-      Object[] var10031 = Registry.emptyArgs();
+      Object var10031 = Registry.emptyArgs();
       long var91 = 415812574498702866L;
-      Object[] var90 = var10031;
+      Object var90 = var10031;
       var10031 = Ref.h(415812574498702866L, var90, var91);
 
       try {
@@ -6455,7 +6498,7 @@ public class YT3_2 implements CS3 {
       Object var10032 = Ref.g(325429126481578482L, var92);
       Rectangle var10033 = (Rectangle)(Registry.emptyArgs());
       long var95 = 625743137504778004L;
-      Object[] var94 = var10033;
+      Object var94 = var10033;
       var10033 = Ref.h(625743137504778004L, var94, var95);
 
       try {
@@ -6470,7 +6513,7 @@ public class YT3_2 implements CS3 {
       Object var10034 = Ref.g(325429126481578482L, var96);
       Rectangle var10035 = (Rectangle)(Registry.emptyArgs());
       long var99 = 625743137504778004L;
-      Object[] var98 = var10035;
+      Object var98 = var10035;
       var10035 = Ref.h(625743137504778004L, var98, var99);
 
       try {
@@ -6485,7 +6528,7 @@ public class YT3_2 implements CS3 {
       Object var10036 = Ref.g(325429126481578482L, var100);
       Rectangle var10037 = (Rectangle)(Registry.emptyArgs());
       long var103 = 625743137504778004L;
-      Object[] var102 = var10037;
+      Object var102 = var10037;
       var10037 = Ref.h(625743137504778004L, var102, var103);
 
       try {
@@ -6500,7 +6543,7 @@ public class YT3_2 implements CS3 {
       Object var10038 = Ref.g(325429126481578482L, var104);
       Rectangle var10039 = (Rectangle)(Registry.emptyArgs());
       long var107 = 625743137504778004L;
-      Object[] var106 = var10039;
+      Object var106 = var10039;
       var10039 = Ref.h(625743137504778004L, var106, var107);
 
       try {
@@ -6513,9 +6556,9 @@ public class YT3_2 implements CS3 {
       a(20814, 9299);
       Object var108 = 325429126481578482L;
       Object var10040 = Ref.g(325429126481578482L, var108);
-      Object[] var10041 = Registry.emptyArgs();
+      Object var10041 = Registry.emptyArgs();
       long var111 = 494397881178401642L;
-      Object[] var110 = var10041;
+      Object var110 = var10041;
       var10041 = Ref.h(494397881178401642L, var110, var111);
 
       try {
@@ -6528,9 +6571,9 @@ public class YT3_2 implements CS3 {
       a(20956, -23311);
       Object var112 = 325429126481578482L;
       Object var10042 = Ref.g(325429126481578482L, var112);
-      Object[] var10043 = Registry.emptyArgs();
+      Object var10043 = Registry.emptyArgs();
       long var115 = 464484439037630890L;
-      Object[] var114 = var10043;
+      Object var114 = var10043;
       var10043 = Ref.h(464484439037630890L, var114, var115);
 
       try {
@@ -6543,9 +6586,9 @@ public class YT3_2 implements CS3 {
       a(20752, 10025);
       Object var116 = 325429126481578482L;
       Object var10044 = Ref.g(325429126481578482L, var116);
-      Object[] var10045 = Registry.emptyArgs();
+      Object var10045 = Registry.emptyArgs();
       long var119 = 312073908361798008L;
-      Object[] var118 = var10045;
+      Object var118 = var10045;
       var10045 = Ref.h(312073908361798008L, var118, var119);
 
       try {
@@ -6558,9 +6601,9 @@ public class YT3_2 implements CS3 {
       a(20761, 493);
       Object var120 = 325429126481578482L;
       Object var10046 = Ref.g(325429126481578482L, var120);
-      Object[] var10047 = Registry.emptyArgs();
+      Object var10047 = Registry.emptyArgs();
       long var123 = 552368665913993587L;
-      Object[] var122 = var10047;
+      Object var122 = var10047;
       var10047 = Ref.h(552368665913993587L, var122, var123);
 
       try {
@@ -6576,7 +6619,7 @@ public class YT3_2 implements CS3 {
       Object var10048 = Ref.g(325429126481578482L, var124);
       String var10049 = (String)(Registry.emptyArgs());
       long var127 = 620011176897972573L;
-      Object[] var126 = var10049;
+      Object var126 = var10049;
       var10049 = Ref.h(620011176897972573L, var126, var127);
 
       try {
@@ -6591,7 +6634,7 @@ public class YT3_2 implements CS3 {
       Ref.g(325429126481578482L, var128);
       var10049 = Registry.emptyArgs();
       long var131 = 339037510611298074L;
-      Object[] var130 = var10049;
+      Object var130 = var10049;
       var10049 = Ref.h(339037510611298074L, var130, var131);
 
       try {
@@ -6620,9 +6663,9 @@ public class YT3_2 implements CS3 {
          a(20884, -24767);
          Object var132 = 325429126481578482L;
          Object var10052 = Ref.g(325429126481578482L, var132);
-         Object[] var10053 = Registry.emptyArgs();
+         Object var10053 = Registry.emptyArgs();
          long var135 = 493698235385738310L;
-         Object[] var134 = var10053;
+         Object var134 = var10053;
          var10053 = Ref.h(493698235385738310L, var134, var135);
 
          try {
@@ -6635,9 +6678,9 @@ public class YT3_2 implements CS3 {
          a(20764, 31360);
          Object var136 = 325429126481578482L;
          Object var10054 = Ref.g(325429126481578482L, var136);
-         Object[] var10055 = Registry.emptyArgs();
+         Object var10055 = Registry.emptyArgs();
          long var139 = 629017702607628679L;
-         Object[] var138 = var10055;
+         Object var138 = var10055;
          var10055 = Ref.h(629017702607628679L, var138, var139);
 
          try {
@@ -6650,9 +6693,9 @@ public class YT3_2 implements CS3 {
          a(20846, 20387);
          Object var140 = 325429126481578482L;
          Object var10056 = Ref.g(325429126481578482L, var140);
-         Object[] var10057 = Registry.emptyArgs();
+         Object var10057 = Registry.emptyArgs();
          long var143 = 593871185714058018L;
-         Object[] var142 = var10057;
+         Object var142 = var10057;
          var10057 = Ref.h(593871185714058018L, var142, var143);
 
          try {
@@ -6665,9 +6708,9 @@ public class YT3_2 implements CS3 {
          a(20860, 15729);
          Object var144 = 325429126481578482L;
          Object var10058 = Ref.g(325429126481578482L, var144);
-         Object[] var10059 = Registry.emptyArgs();
+         Object var10059 = Registry.emptyArgs();
          long var147 = 623727123785142657L;
-         Object[] var146 = var10059;
+         Object var146 = var10059;
          var10059 = Ref.h(623727123785142657L, var146, var147);
 
          try {
@@ -6682,7 +6725,7 @@ public class YT3_2 implements CS3 {
          Object var10060 = Ref.g(325429126481578482L, var148);
          String var10061 = (String)(Registry.emptyArgs());
          long var151 = 204000105621842013L;
-         Object[] var150 = var10061;
+         Object var150 = var10061;
          var10061 = Ref.h(204000105621842013L, var150, var151);
 
          try {
@@ -6697,7 +6740,7 @@ public class YT3_2 implements CS3 {
          Object var10062 = Ref.g(325429126481578482L, var152);
          String var10063 = (String)(Registry.emptyArgs());
          long var155 = 191807067392725406L;
-         Object[] var154 = var10063;
+         Object var154 = var10063;
          var10063 = Ref.h(191807067392725406L, var154, var155);
 
          try {
@@ -6710,9 +6753,9 @@ public class YT3_2 implements CS3 {
          a(20759, 17790);
          Object var156 = 325429126481578482L;
          Object var10064 = Ref.g(325429126481578482L, var156);
-         Object[] var10065 = Registry.emptyArgs();
+         Object var10065 = Registry.emptyArgs();
          long var159 = 592279461807905961L;
-         Object[] var158 = var10065;
+         Object var158 = var10065;
          var10065 = Ref.h(592279461807905961L, var158, var159);
 
          try {
@@ -6725,9 +6768,9 @@ public class YT3_2 implements CS3 {
          a(20909, -26937);
          Object var160 = 325429126481578482L;
          Object var10066 = Ref.g(325429126481578482L, var160);
-         Object[] var10067 = Registry.emptyArgs();
+         Object var10067 = Registry.emptyArgs();
          long var163 = 577875833820570498L;
-         Object[] var162 = var10067;
+         Object var162 = var10067;
          var10067 = Ref.h(577875833820570498L, var162, var163);
 
          try {
@@ -6744,7 +6787,7 @@ public class YT3_2 implements CS3 {
       Ref.g(325429126481578482L, var164);
       ArrayList var574 = (ArrayList)(Registry.emptyArgs());
       long var167 = 518875030097846779L;
-      Object[] var166 = var574;
+      Object var166 = var574;
       var574 = Ref.h(518875030097846779L, var166, var167);
 
       try {
@@ -6771,7 +6814,7 @@ public class YT3_2 implements CS3 {
       Object var10071 = Ref.g(325429126481578482L, var170);
       String var10072 = (String)(Registry.emptyArgs());
       long var173 = 392686248093970107L;
-      Object[] var172 = var10072;
+      Object var172 = var10072;
       var10072 = Ref.h(392686248093970107L, var172, var173);
 
       try {
@@ -6784,9 +6827,9 @@ public class YT3_2 implements CS3 {
       a(20781, 8181);
       Object var174 = 325429126481578482L;
       Object var10073 = Ref.g(325429126481578482L, var174);
-      Object[] var10074 = Registry.emptyArgs();
+      Object var10074 = Registry.emptyArgs();
       long var177 = 407355336116664491L;
-      Object[] var176 = var10074;
+      Object var176 = var10074;
       var10074 = Ref.h(407355336116664491L, var176, var177);
 
       try {
@@ -6801,7 +6844,7 @@ public class YT3_2 implements CS3 {
       if (var1 != null) {
          var10074 = Registry.emptyArgs();
          long var181 = 579757891192141370L;
-         Object[] var180 = var10074;
+         Object var180 = var10074;
          var10074 = Ref.h(579757891192141370L, var180, var181);
 
          try {
@@ -6816,7 +6859,7 @@ public class YT3_2 implements CS3 {
             Object var10077 = Ref.g(325429126481578482L, var182);
             Rectangle var10078 = (Rectangle)(Registry.emptyArgs());
             long var185 = 579757891192141370L;
-            Object[] var184 = var10078;
+            Object var184 = var10078;
             var10078 = Ref.h(579757891192141370L, var184, var185);
 
             try {
@@ -6831,7 +6874,7 @@ public class YT3_2 implements CS3 {
             Object var10079 = Ref.g(325429126481578482L, var186);
             Rectangle var10080 = (Rectangle)(Registry.emptyArgs());
             long var189 = 579757891192141370L;
-            Object[] var188 = var10080;
+            Object var188 = var10080;
             var10080 = Ref.h(579757891192141370L, var188, var189);
 
             try {
@@ -6846,7 +6889,7 @@ public class YT3_2 implements CS3 {
             Object var10081 = Ref.g(325429126481578482L, var190);
             Rectangle var10082 = (Rectangle)(Registry.emptyArgs());
             long var193 = 579757891192141370L;
-            Object[] var192 = var10082;
+            Object var192 = var10082;
             var10082 = Ref.h(579757891192141370L, var192, var193);
 
             try {
@@ -6861,7 +6904,7 @@ public class YT3_2 implements CS3 {
             Object var10083 = Ref.g(325429126481578482L, var194);
             Rectangle var10084 = (Rectangle)(Registry.emptyArgs());
             long var197 = 579757891192141370L;
-            Object[] var196 = var10084;
+            Object var196 = var10084;
             var10084 = Ref.h(579757891192141370L, var196, var197);
 
             try {
@@ -6879,7 +6922,7 @@ public class YT3_2 implements CS3 {
 
       var10074 = Registry.emptyArgs();
       long var201 = 401275417195122293L;
-      Object[] var200 = var10074;
+      Object var200 = var10074;
       var10074 = Ref.h(401275417195122293L, var200, var201);
 
       try {
@@ -6972,9 +7015,9 @@ public class YT3_2 implements CS3 {
             O0 var27 = new O0();
             var22.C(var25 + "", var27);
             String var608 = a(20936, -10096);
-            Object[] var10085 = Registry.emptyArgs();
+            Object var10085 = Registry.emptyArgs();
             long var219 = 245135984165503970L;
-            Object[] var218 = var10085;
+            Object var218 = var10085;
             var10085 = Ref.h(245135984165503970L, var218, var219);
 
             try {
@@ -6985,9 +7028,9 @@ public class YT3_2 implements CS3 {
 
             var608.C(var26, var613);
             String var611 = a(20871, 12017);
-            Object[] var10086 = Registry.emptyArgs();
+            Object var10086 = Registry.emptyArgs();
             long var221 = 560204822945700356L;
-            Object[] var220 = var10086;
+            Object var220 = var10086;
             var10086 = Ref.h(560204822945700356L, var220, var221);
 
             try {
@@ -7011,7 +7054,7 @@ public class YT3_2 implements CS3 {
          Object var614 = Ref.g(325429126481578482L, var222);
          String var617 = (String)(Registry.emptyArgs());
          long var225 = 226464901787572175L;
-         Object[] var224 = var617;
+         Object var224 = var617;
          var617 = Ref.h(226464901787572175L, var224, var225);
 
          try {
@@ -7024,9 +7067,9 @@ public class YT3_2 implements CS3 {
          a(20953, -17107);
          Object var226 = 325429126481578482L;
          Object var10087 = Ref.g(325429126481578482L, var226);
-         Object[] var10088 = Registry.emptyArgs();
+         Object var10088 = Registry.emptyArgs();
          long var229 = 518178624564683680L;
-         Object[] var228 = var10088;
+         Object var228 = var10088;
          var10088 = Ref.h(518178624564683680L, var228, var229);
 
          try {
@@ -7039,9 +7082,9 @@ public class YT3_2 implements CS3 {
          a(20774, -21624);
          Object var230 = 325429126481578482L;
          Object var10089 = Ref.g(325429126481578482L, var230);
-         Object[] var10090 = Registry.emptyArgs();
+         Object var10090 = Registry.emptyArgs();
          long var233 = 579797607180676881L;
-         Object[] var232 = var10090;
+         Object var232 = var10090;
          var10090 = Ref.h(579797607180676881L, var232, var233);
 
          try {
@@ -7054,9 +7097,9 @@ public class YT3_2 implements CS3 {
          a(20947, 9646);
          Object var234 = 325429126481578482L;
          Object var10091 = Ref.g(325429126481578482L, var234);
-         Object[] var10092 = Registry.emptyArgs();
+         Object var10092 = Registry.emptyArgs();
          long var237 = 165950045643857861L;
-         Object[] var236 = var10092;
+         Object var236 = var10092;
          var10092 = Ref.h(165950045643857861L, var236, var237);
 
          try {
@@ -7074,9 +7117,9 @@ public class YT3_2 implements CS3 {
       a(20870, -25955);
       Object var238 = 325429126481578482L;
       Object var10093 = Ref.g(325429126481578482L, var238);
-      Object[] var10094 = Registry.emptyArgs();
+      Object var10094 = Registry.emptyArgs();
       long var241 = 257025344649675398L;
-      Object[] var240 = var10094;
+      Object var240 = var10094;
       var10094 = Ref.h(257025344649675398L, var240, var241);
 
       try {
@@ -7089,9 +7132,9 @@ public class YT3_2 implements CS3 {
       a(20776, -19138);
       Object var242 = 325429126481578482L;
       Object var10095 = Ref.g(325429126481578482L, var242);
-      Object[] var10096 = Registry.emptyArgs();
+      Object var10096 = Registry.emptyArgs();
       long var245 = 575356025127634892L;
-      Object[] var244 = var10096;
+      Object var244 = var10096;
       var10096 = Ref.h(575356025127634892L, var244, var245);
 
       try {
@@ -7104,9 +7147,9 @@ public class YT3_2 implements CS3 {
       a(20780, 6330);
       Object var246 = 325429126481578482L;
       Object var10097 = Ref.g(325429126481578482L, var246);
-      Object[] var10098 = Registry.emptyArgs();
+      Object var10098 = Registry.emptyArgs();
       long var249 = 338108372597229383L;
-      Object[] var248 = var10098;
+      Object var248 = var10098;
       var10098 = Ref.h(338108372597229383L, var248, var249);
 
       try {
@@ -7119,9 +7162,9 @@ public class YT3_2 implements CS3 {
       a(20903, 10078);
       Object var250 = 325429126481578482L;
       Object var10099 = Ref.g(325429126481578482L, var250);
-      Object[] var10100 = Registry.emptyArgs();
+      Object var10100 = Registry.emptyArgs();
       long var253 = 404018409349740430L;
-      Object[] var252 = var10100;
+      Object var252 = var10100;
       var10100 = Ref.h(404018409349740430L, var252, var253);
 
       try {
@@ -7134,9 +7177,9 @@ public class YT3_2 implements CS3 {
       a(20749, -16322);
       Object var254 = 325429126481578482L;
       Object var10101 = Ref.g(325429126481578482L, var254);
-      Object[] var10102 = Registry.emptyArgs();
+      Object var10102 = Registry.emptyArgs();
       long var257 = 221275956571705390L;
-      Object[] var256 = var10102;
+      Object var256 = var10102;
       var10102 = Ref.h(221275956571705390L, var256, var257);
 
       try {
@@ -7149,9 +7192,9 @@ public class YT3_2 implements CS3 {
       a(20964, -30350);
       Object var258 = 325429126481578482L;
       Object var10103 = Ref.g(325429126481578482L, var258);
-      Object[] var10104 = Registry.emptyArgs();
+      Object var10104 = Registry.emptyArgs();
       long var261 = 617094797338525076L;
-      Object[] var260 = var10104;
+      Object var260 = var10104;
       var10104 = Ref.h(617094797338525076L, var260, var261);
 
       try {
@@ -7164,9 +7207,9 @@ public class YT3_2 implements CS3 {
       a(20845, -23108);
       Object var262 = 325429126481578482L;
       Object var10105 = Ref.g(325429126481578482L, var262);
-      Object[] var10106 = Registry.emptyArgs();
+      Object var10106 = Registry.emptyArgs();
       long var265 = 192524377405831538L;
-      Object[] var264 = var10106;
+      Object var264 = var10106;
       var10106 = Ref.h(192524377405831538L, var264, var265);
 
       try {
@@ -7179,9 +7222,9 @@ public class YT3_2 implements CS3 {
       a(20875, -11861);
       Object var266 = 325429126481578482L;
       Object var10107 = Ref.g(325429126481578482L, var266);
-      Object[] var10108 = Registry.emptyArgs();
+      Object var10108 = Registry.emptyArgs();
       long var269 = 512419353738146707L;
-      Object[] var268 = var10108;
+      Object var268 = var10108;
       var10108 = Ref.h(512419353738146707L, var268, var269);
 
       try {
@@ -7196,7 +7239,7 @@ public class YT3_2 implements CS3 {
       Object var10109 = Ref.g(325429126481578482L, var270);
       String var10110 = (String)(Registry.emptyArgs());
       long var273 = 441706210979477420L;
-      Object[] var272 = var10110;
+      Object var272 = var10110;
       var10110 = Ref.h(441706210979477420L, var272, var273);
 
       try {
@@ -7211,7 +7254,7 @@ public class YT3_2 implements CS3 {
       Object var10111 = Ref.g(325429126481578482L, var274);
       String var10112 = (String)(Registry.emptyArgs());
       long var277 = 568345952398155457L;
-      Object[] var276 = var10112;
+      Object var276 = var10112;
       var10112 = Ref.h(568345952398155457L, var276, var277);
 
       try {
@@ -7224,9 +7267,9 @@ public class YT3_2 implements CS3 {
       a(20982, -12541);
       Object var278 = 325429126481578482L;
       Object var10113 = Ref.g(325429126481578482L, var278);
-      Object[] var10114 = Registry.emptyArgs();
+      Object var10114 = Registry.emptyArgs();
       long var281 = 169497746995301372L;
-      Object[] var280 = var10114;
+      Object var280 = var10114;
       var10114 = Ref.h(169497746995301372L, var280, var281);
 
       try {
@@ -7239,9 +7282,9 @@ public class YT3_2 implements CS3 {
       a(20874, -24473);
       Object var282 = 325429126481578482L;
       Object var10115 = Ref.g(325429126481578482L, var282);
-      Object[] var10116 = Registry.emptyArgs();
+      Object var10116 = Registry.emptyArgs();
       long var285 = 629517738120639335L;
-      Object[] var284 = var10116;
+      Object var284 = var10116;
       var10116 = Ref.h(629517738120639335L, var284, var285);
 
       try {
@@ -7254,9 +7297,9 @@ public class YT3_2 implements CS3 {
       a(20812, -26655);
       Object var286 = 325429126481578482L;
       Object var10117 = Ref.g(325429126481578482L, var286);
-      Object[] var10118 = Registry.emptyArgs();
+      Object var10118 = Registry.emptyArgs();
       long var289 = 480629603857374647L;
-      Object[] var288 = var10118;
+      Object var288 = var10118;
       var10118 = Ref.h(480629603857374647L, var288, var289);
 
       try {
@@ -7269,9 +7312,9 @@ public class YT3_2 implements CS3 {
       a(20981, 20219);
       Object var290 = 325429126481578482L;
       Object var10119 = Ref.g(325429126481578482L, var290);
-      Object[] var10120 = Registry.emptyArgs();
+      Object var10120 = Registry.emptyArgs();
       long var293 = 406341430347663460L;
-      Object[] var292 = var10120;
+      Object var292 = var10120;
       var10120 = Ref.h(406341430347663460L, var292, var293);
 
       try {
@@ -7284,9 +7327,9 @@ public class YT3_2 implements CS3 {
       a(20773, -13049);
       Object var294 = 325429126481578482L;
       Object var10121 = Ref.g(325429126481578482L, var294);
-      Object[] var10122 = Registry.emptyArgs();
+      Object var10122 = Registry.emptyArgs();
       long var297 = 613805675130464613L;
-      Object[] var296 = var10122;
+      Object var296 = var10122;
       var10122 = Ref.h(613805675130464613L, var296, var297);
 
       try {
@@ -7299,9 +7342,9 @@ public class YT3_2 implements CS3 {
       a(20745, 30397);
       Object var298 = 325429126481578482L;
       Object var10123 = Ref.g(325429126481578482L, var298);
-      Object[] var10124 = Registry.emptyArgs();
+      Object var10124 = Registry.emptyArgs();
       long var301 = 236705034508525556L;
-      Object[] var300 = var10124;
+      Object var300 = var10124;
       var10124 = Ref.h(236705034508525556L, var300, var301);
 
       try {
@@ -7314,9 +7357,9 @@ public class YT3_2 implements CS3 {
       a(20966, 20687);
       Object var302 = 325429126481578482L;
       Object var10125 = Ref.g(325429126481578482L, var302);
-      Object[] var10126 = Registry.emptyArgs();
+      Object var10126 = Registry.emptyArgs();
       long var305 = 249847093911123285L;
-      Object[] var304 = var10126;
+      Object var304 = var10126;
       var10126 = Ref.h(249847093911123285L, var304, var305);
 
       try {
@@ -7329,9 +7372,9 @@ public class YT3_2 implements CS3 {
       a(20924, -1320);
       Object var306 = 325429126481578482L;
       Object var10127 = Ref.g(325429126481578482L, var306);
-      Object[] var10128 = Registry.emptyArgs();
+      Object var10128 = Registry.emptyArgs();
       long var309 = 224406316798891066L;
-      Object[] var308 = var10128;
+      Object var308 = var10128;
       var10128 = Ref.h(224406316798891066L, var308, var309);
 
       try {
@@ -7346,7 +7389,7 @@ public class YT3_2 implements CS3 {
       Object var10129 = Ref.g(325429126481578482L, var310);
       String var10130 = (String)(Registry.emptyArgs());
       long var313 = 338793095438116620L;
-      Object[] var312 = var10130;
+      Object var312 = var10130;
       var10130 = Ref.h(338793095438116620L, var312, var313);
 
       try {
@@ -7359,9 +7402,9 @@ public class YT3_2 implements CS3 {
       a(20973, -11324);
       Object var314 = 325429126481578482L;
       Object var10131 = Ref.g(325429126481578482L, var314);
-      Object[] var10132 = Registry.emptyArgs();
+      Object var10132 = Registry.emptyArgs();
       long var317 = 358544030666779924L;
-      Object[] var316 = var10132;
+      Object var316 = var10132;
       var10132 = Ref.h(358544030666779924L, var316, var317);
 
       try {
@@ -7376,7 +7419,7 @@ public class YT3_2 implements CS3 {
       Object var10133 = Ref.g(325429126481578482L, var318);
       String var10134 = (String)(Registry.emptyArgs());
       long var321 = 164139683561291111L;
-      Object[] var320 = var10134;
+      Object var320 = var10134;
       var10134 = Ref.h(164139683561291111L, var320, var321);
 
       try {
@@ -7391,11 +7434,11 @@ public class YT3_2 implements CS3 {
       Ref.g(325429126481578482L, var322);
       var10134 = Registry.emptyArgs();
       long var325 = 313091340064438462L;
-      Object[] var324 = var10134;
+      Object var324 = var10134;
       Ref.h(313091340064438462L, var324, var325);
       ArrayList var10135 = (ArrayList)(Registry.emptyArgs());
       long var327 = 250284129792311327L;
-      Object[] var326 = var10135;
+      Object var326 = var10135;
       var10135 = Ref.h(250284129792311327L, var326, var327);
 
       try {
@@ -7427,9 +7470,9 @@ public class YT3_2 implements CS3 {
          a(20899, -2970);
          Object var328 = 325429126481578482L;
          Object var10138 = Ref.g(325429126481578482L, var328);
-         Object[] var10139 = Registry.emptyArgs();
+         Object var10139 = Registry.emptyArgs();
          long var331 = 476632081533033558L;
-         Object[] var330 = var10139;
+         Object var330 = var10139;
          var10139 = Ref.h(476632081533033558L, var330, var331);
 
          try {
@@ -7452,9 +7495,9 @@ public class YT3_2 implements CS3 {
 
       Object var334 = 325429126481578482L;
       Ref.g(325429126481578482L, var334);
-      Object[] var10142 = Registry.emptyArgs();
+      Object var10142 = Registry.emptyArgs();
       long var337 = 256291570319778198L;
-      Object[] var336 = var10142;
+      Object var336 = var10142;
       var10142 = Registry.packArgs(Ref.h(256291570319778198L, var336, var337));
       long var338 = 517287540690064504L;
       Object[] var10143 = Registry.packArgs(Ref.h2(517287540690064504L, var338));
@@ -7475,7 +7518,7 @@ public class YT3_2 implements CS3 {
       Object var10145 = Ref.g(418211680325229161L, var342);
       String var10146 = (String)(Registry.emptyArgs());
       long var345 = 615760303415847009L;
-      Object[] var344 = var10146;
+      Object var344 = var10146;
       var10146 = Ref.h(615760303415847009L, var344, var345);
 
       try {
@@ -7490,7 +7533,7 @@ public class YT3_2 implements CS3 {
       Object var10147 = Ref.g(418211680325229161L, var346);
       String var10148 = (String)(Registry.emptyArgs());
       long var349 = 568690108981290565L;
-      Object[] var348 = var10148;
+      Object var348 = var10148;
       var10148 = Ref.h(568690108981290565L, var348, var349);
 
       try {
@@ -7505,7 +7548,7 @@ public class YT3_2 implements CS3 {
       Object var10149 = Ref.g(418211680325229161L, var350);
       String var10150 = (String)(Registry.emptyArgs());
       long var353 = 460921051521643755L;
-      Object[] var352 = var10150;
+      Object var352 = var10150;
       var10150 = Ref.h(460921051521643755L, var352, var353);
 
       try {
@@ -7518,9 +7561,9 @@ public class YT3_2 implements CS3 {
       a(20944, 29659);
       Object var354 = 418211680325229161L;
       Object var10151 = Ref.g(418211680325229161L, var354);
-      Object[] var10152 = Registry.emptyArgs();
+      Object var10152 = Registry.emptyArgs();
       long var357 = 198931520846084681L;
-      Object[] var356 = var10152;
+      Object var356 = var10152;
       var10152 = Ref.h(198931520846084681L, var356, var357);
 
       try {
@@ -7535,7 +7578,7 @@ public class YT3_2 implements CS3 {
       Object var10153 = Ref.g(418211680325229161L, var358);
       String var10154 = (String)(Registry.emptyArgs());
       long var361 = 198736531137401844L;
-      Object[] var360 = var10154;
+      Object var360 = var10154;
       var10154 = Ref.h(198736531137401844L, var360, var361);
 
       try {
@@ -7548,9 +7591,9 @@ public class YT3_2 implements CS3 {
       a(20918, -5814);
       Object var362 = 418211680325229161L;
       Object var10155 = Ref.g(418211680325229161L, var362);
-      Object[] var10156 = Registry.emptyArgs();
+      Object var10156 = Registry.emptyArgs();
       long var365 = 389342996213299644L;
-      Object[] var364 = var10156;
+      Object var364 = var10156;
       var10156 = Ref.h(389342996213299644L, var364, var365);
 
       try {
@@ -7563,9 +7606,9 @@ public class YT3_2 implements CS3 {
       a(20750, 366);
       Object var366 = 418211680325229161L;
       Object var10157 = Ref.g(418211680325229161L, var366);
-      Object[] var10158 = Registry.emptyArgs();
+      Object var10158 = Registry.emptyArgs();
       long var369 = 153619711151080809L;
-      Object[] var368 = var10158;
+      Object var368 = var10158;
       var10158 = Ref.h(153619711151080809L, var368, var369);
 
       try {
@@ -7578,9 +7621,9 @@ public class YT3_2 implements CS3 {
       a(20912, -16046);
       Object var370 = 418211680325229161L;
       Object var10159 = Ref.g(418211680325229161L, var370);
-      Object[] var10160 = Registry.emptyArgs();
+      Object var10160 = Registry.emptyArgs();
       long var373 = 605218686263352748L;
-      Object[] var372 = var10160;
+      Object var372 = var10160;
       var10160 = Ref.h(605218686263352748L, var372, var373);
 
       try {
@@ -7593,9 +7636,9 @@ public class YT3_2 implements CS3 {
       a(20791, 2646);
       Object var374 = 418211680325229161L;
       Object var10161 = Ref.g(418211680325229161L, var374);
-      Object[] var10162 = Registry.emptyArgs();
+      Object var10162 = Registry.emptyArgs();
       long var377 = 473505208758842074L;
-      Object[] var376 = var10162;
+      Object var376 = var10162;
       var10162 = Ref.h(473505208758842074L, var376, var377);
 
       try {
@@ -7608,9 +7651,9 @@ public class YT3_2 implements CS3 {
       a(20797, 24047);
       Object var378 = 418211680325229161L;
       Object var10163 = Ref.g(418211680325229161L, var378);
-      Object[] var10164 = Registry.emptyArgs();
+      Object var10164 = Registry.emptyArgs();
       long var381 = 186487761808053297L;
-      Object[] var380 = var10164;
+      Object var380 = var10164;
       var10164 = Ref.h(186487761808053297L, var380, var381);
 
       try {
@@ -7623,9 +7666,9 @@ public class YT3_2 implements CS3 {
       a(20928, 31251);
       Object var382 = 418211680325229161L;
       Object var10165 = Ref.g(418211680325229161L, var382);
-      Object[] var10166 = Registry.emptyArgs();
+      Object var10166 = Registry.emptyArgs();
       long var385 = 583445113644364036L;
-      Object[] var384 = var10166;
+      Object var384 = var10166;
       var10166 = Ref.h(583445113644364036L, var384, var385);
 
       try {
@@ -7640,7 +7683,7 @@ public class YT3_2 implements CS3 {
       Object var10167 = Ref.g(418211680325229161L, var386);
       String var10168 = (String)(Registry.emptyArgs());
       long var389 = 318293696412897294L;
-      Object[] var388 = var10168;
+      Object var388 = var10168;
       var10168 = Ref.h(318293696412897294L, var388, var389);
 
       try {
@@ -7655,7 +7698,7 @@ public class YT3_2 implements CS3 {
       Object var10169 = Ref.g(302639675732150888L, var390);
       O0 var10170 = (O0)(Registry.emptyArgs());
       long var393 = 570275813399702204L;
-      Object[] var392 = var10170;
+      Object var392 = var10170;
       var10170 = Ref.h(570275813399702204L, var392, var393);
 
       try {
@@ -7721,12 +7764,12 @@ public class YT3_2 implements CS3 {
       }
    }
 
-   public Yf2 g$Yf_2() {
+   public ConnectionConfigStore g$Yf_2() {
       Object var1 = 417188137775278471L;
-      return (Yf2)Ref.g(417188137775278471L, var1);
+      return (ConnectionConfigStore)Ref.g(417188137775278471L, var1);
    }
 
-   public void s(Yf2 var1) {
+   public void s(ConnectionConfigStore var1) {
       long var3 = 417188137775278471L;
       Ref.s(417188137775278471L, var1, var3);
    }
@@ -7741,12 +7784,12 @@ public class YT3_2 implements CS3 {
       Ref.s(325429126481578482L, var1, var3);
    }
 
-   public File d$lu_4() {
+   public ConfigFileStore d$lu_4() {
       Object var1 = 582516445304770542L;
-      return (File)Ref.g(582516445304770542L, var1);
+      return (ConfigFileStore)Ref.g(582516445304770542L, var1);
    }
 
-   public void i(File var1) {
+   public void i(ConfigFileStore var1) {
       long var3 = 582516445304770542L;
       Ref.s(582516445304770542L, var1, var3);
    }
@@ -7796,9 +7839,9 @@ public class YT3_2 implements CS3 {
       Ref.s(123250409222478551L, var1, var3);
    }
 
-   public Mapping b() {
+   public PortMapping b() {
       Object var1 = 271302278039639994L;
-      return (Mapping)Ref.g(271302278039639994L, var1);
+      return (PortMapping)Ref.g(271302278039639994L, var1);
    }
 
    public XI_2 v$xI() {
@@ -7968,12 +8011,12 @@ public class YT3_2 implements CS3 {
       Ref.s(281492525313091355L, var1, var3);
    }
 
-   public SyncPasswordDialog2 Y$av_2() {
+   public SyncPasswordResetDialog Y$av_2() {
       Object var1 = 583702008139450328L;
-      return (SyncPasswordDialog2)Ref.g(583702008139450328L, var1);
+      return (SyncPasswordResetDialog)Ref.g(583702008139450328L, var1);
    }
 
-   public void l(SyncPasswordDialog2 var1) {
+   public void l(SyncPasswordResetDialog var1) {
       long var3 = 583702008139450328L;
       Ref.s(583702008139450328L, var1, var3);
    }
@@ -8018,9 +8061,9 @@ public class YT3_2 implements CS3 {
    }
 
    public static long w(YT3_2 var0, String var1) {
-      Object[] var10001 = Registry.packArgs(var1);
+      Object var10001 = Registry.packArgs(var1);
       long var3 = 353166247152693925L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(353166247152693925L, var2, var3);
 
       try {
@@ -8870,6 +8913,7 @@ public class YT3_2 implements CS3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var44;
       String[] var21 = new String[239];
       Ky4[] var10000 = new Ky4[2];
       int var19 = 0;
@@ -8887,7 +8931,6 @@ public class YT3_2 implements CS3 {
          byte var10002 = -1;
 
          while (true) {
-      Object var44;
             label74: {
                char[] var50 = var10001.toCharArray();
                int var10004 = var50.length;

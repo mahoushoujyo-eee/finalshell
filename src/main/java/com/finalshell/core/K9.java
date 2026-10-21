@@ -1013,6 +1013,7 @@ public abstract class K9 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "fÅ\u009d\u0082´ÈjÍ4N±ÊÁ=a\u0018ÕJPqô}µ\u0015[A:\u0018R\u009eé\u0083¬¡gÛ!l\u000fi\u001cCàÚF\tÃµ\u0002\u009f°ï\u00ad\u001d\u001f\tß\u0010\u0081+Ày£ÏÞ";
@@ -1028,7 +1029,6 @@ public abstract class K9 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

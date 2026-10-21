@@ -31,13 +31,14 @@ public class Ed2 implements Serializable, Cloneable, Km4 {
    }
 
    public boolean Z$boolean(float var1) {
+      PV var4;
       int var10000 = Nx4.c$int();
       Iterator var3 = this.a.iterator();
       int var2 = var10000;
 
       while (true) {
          if (var3.hasNext()) {
-            PV var4 = (PV)var3.next();
+            var4 = (PV)var3.next();
             float var6;
             var10000 = (var6 = var4.I() - var1) == 0.0F ? 0 : (var6 < 0.0F ? -1 : 1);
             if (var2 == 0) {
@@ -90,6 +91,7 @@ public class Ed2 implements Serializable, Cloneable, Km4 {
    }
 
    public float[] l() {
+      float[] var4;
       int var10000 = Nx4.c$int();
       this.u();
       float[] var2 = new float[this.a.size()];
@@ -98,7 +100,6 @@ public class Ed2 implements Serializable, Cloneable, Km4 {
 
       while (true) {
          if (var3 < this.a.size()) {
-      int var4;
             var4 = var2;
             if (var1 == 0) {
                break;
@@ -107,7 +108,6 @@ public class Ed2 implements Serializable, Cloneable, Km4 {
             var2[var3] = ((PV)this.a.get(var3)).I();
             var3++;
             if (var1 != 0) {
-      int var4;
                continue;
             }
          }
@@ -120,6 +120,7 @@ public class Ed2 implements Serializable, Cloneable, Km4 {
    }
 
    public Color[] H() {
+      Color[] var4;
       int var10000 = Nx4.R();
       this.u();
       Color[] var2 = new Color[this.a.size()];
@@ -192,6 +193,8 @@ public class Ed2 implements Serializable, Cloneable, Km4 {
    }
 
    public Color Z$Color(float var1) {
+      float var11;
+      int var4;
       int var2 = Nx4.R();
       int var10000 = this.C$int();
       if (var2 == 0) {
@@ -221,7 +224,7 @@ public class Ed2 implements Serializable, Cloneable, Km4 {
       }
 
       int var3 = var10000;
-      int var4 = 0;
+      var4 = 0;
 
       while (true) {
          label50:
@@ -273,6 +276,8 @@ public class Ed2 implements Serializable, Cloneable, Km4 {
 
    @Override
    public boolean equals(Object var1) {
+      int var4;
+      boolean var6;
       int var2 = Nx4.R();
       Object var10000 = var1;
       if (var2 == 0) {
@@ -301,7 +306,7 @@ public class Ed2 implements Serializable, Cloneable, Km4 {
          var5 = 0;
       }
 
-      int var4 = var5;
+      var4 = var5;
 
       while (true) {
          if (var4 < this.C$int()) {
@@ -358,7 +363,6 @@ public class Ed2 implements Serializable, Cloneable, Km4 {
       u = new Ho2();
    }
 }
-
 
 
 

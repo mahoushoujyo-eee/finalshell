@@ -89,7 +89,7 @@ public final class DC3 {
    public char N(int var1) {
       int var10000 = (com.finalshell.ui.model.J2.g()) ? 1 : 0;
       DC3 var3 = this.N;
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       DC3 var5 = var3;
       if (var2) {
          if (var3 != null) {
@@ -133,7 +133,7 @@ public final class DC3 {
    public synchronized void j(int var1, @NotNull YP var2, @NotNull com.finalshell.ui.model.J2 var3) {
       int var10000 = (com.finalshell.ui.model.J2.P()) ? 1 : 0;
       int var5 = this.Q.o();
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
       var10000 = var1;
       int var10001 = var5;
       if (!var4) {
@@ -328,7 +328,7 @@ public final class DC3 {
       int var5 = 0;
       int var10000 = (com.finalshell.ui.model.J2.g()) ? 1 : 0;
       com.finalshell.ui.model.Bf2 var6 = new com.finalshell.ui.model.Bf2(null);
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
       int var7 = var2;
       Iterator var8 = this.Q.iterator();
 
@@ -415,12 +415,13 @@ public final class DC3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public synchronized void j(int var1, int var2, int var3, @NotNull YP var4) {
+      YP[] var8;
       int var6 = this.Q.o();
       int var10000 = (com.finalshell.ui.model.J2.g()) ? 1 : 0;
       var6 = Math.min(var6 + var2, var3);
       char[] var7 = new char[var6];
-      YP[] var8 = new YP[var6];
-      boolean var5 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      var8 = new YP[var6];
+      boolean var5 = (var10000) != 0;
       int var9 = 0;
       Iterator var10 = this.Q.iterator();
 
@@ -574,7 +575,7 @@ public final class DC3 {
    public synchronized YP x(int var1) {
       int var10000 = (com.finalshell.ui.model.J2.g()) ? 1 : 0;
       int var3 = 0;
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
 
       for (Lu4 var5 : this.Q) {
          int var10001;
@@ -608,6 +609,7 @@ public final class DC3 {
    }
 
    public synchronized void l(int var1, Lf2 var2, int var3) {
+      DC3 var8;
       boolean var4;
       int var5;
       int var6;
@@ -619,7 +621,7 @@ public final class DC3 {
          var4 = var10000;
          var6 = -1;
          var7 = (Bs2_2)this.R.stream().findFirst().orElse(null);
-         DC3 var8 = this.N;
+         var8 = this.N;
          DC3 var12 = var8;
          if (!var4) {
             if (var8 != null) {
@@ -711,12 +713,13 @@ public final class DC3 {
    }
 
    public void G(int var1, int var2, @NotNull Lu4 var3, @NotNull Lf2 var4, int var5, @NotNull Bs2_2 var6) {
-      com.finalshell.ui.model.J2 var8 = var3.v();
+      com.finalshell.ui.model.J2 var8;
+      var8 = var3.v();
       int var9 = var1 + var8.length();
       int[] var10 = new int[]{var1, var9, var6.m(), var6.r()};
       int var10000 = (com.finalshell.ui.model.J2.P()) ? 1 : 0;
       Arrays.sort(var10);
-      boolean var7 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var7 = (var10000) != 0;
       int var11 = Arrays.binarySearch(var10, var1);
       int var12 = Arrays.binarySearch(var10, var9);
       if (!var7) {
@@ -859,6 +862,7 @@ public final class DC3 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 21878) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1645,7 +1649,7 @@ public final class DC3 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1673,6 +1677,7 @@ public final class DC3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[6];
       int var11 = 0;
       String var10 = "\u0014A\u0016\u0012Î.ï!tÇ\b\n\rÓH°Èi÷\f\n\u0084Ú4J®\u0084\u009a§ISw\tÌ\u009f¿8\u0017ã\u0097J@";
@@ -1687,7 +1692,6 @@ public final class DC3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

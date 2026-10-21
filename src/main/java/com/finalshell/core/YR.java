@@ -27,6 +27,7 @@ public class YR implements KeyEventPostProcessor {
 
    @Override
    public boolean postProcessKeyEvent(KeyEvent var1) {
+      boolean var9;
       String[] var2 = XD3.U();
       int var10000 = (var1.isConsumed()) ? 1 : 0;
       if (var2 == null) {
@@ -61,7 +62,7 @@ public class YR implements KeyEventPostProcessor {
                   int var10001 = a(31642, 9012265058378480391L);
                   if (var2 == null) {
                      if (var10000 == var10001) {
-                        boolean var9 = r;
+                        var9 = r;
                         if (var2 == null) {
                            if (!r) {
                               this.t(var1);
@@ -114,7 +115,7 @@ public class YR implements KeyEventPostProcessor {
                   var10000 = 0;
                }
 
-               r = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+               r = (var10000) != 0;
             }
 
             f = null;
@@ -127,11 +128,14 @@ public class YR implements KeyEventPostProcessor {
          var10000 = 0;
       }
 
-      r = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      r = (var10000) != 0;
       return false;
    }
 
    public void t(KeyEvent var1) {
+      JMenu var6;
+      JMenuBar var9;
+      JMenu var12;
       String[] var2;
       int var7;
       String[] var10000 = XD3.U();
@@ -176,7 +180,7 @@ public class YR implements KeyEventPostProcessor {
       }
 
       label56: {
-         A9.I((boolean)var7);
+         A9.I(var7);
          this.L(e);
          JRootPane var8 = f;
          if (var2 == null) {
@@ -224,13 +228,17 @@ public class YR implements KeyEventPostProcessor {
          var12 = var10.getMenu(0);
       }
 
-      JMenu var6 = var12;
+      var6 = var12;
       if (var6 != null) {
          var1.consume();
       }
    }
 
    public void M() {
+      JMenu var11;
+      boolean var12;
+      JMenuBar var8;
+      JMenuBar var9;
       String[] var1 = XD3.U();
       int var10000 = (q) ? 1 : 0;
       if (var1 == null) {
@@ -254,7 +262,7 @@ public class YR implements KeyEventPostProcessor {
                   }
 
                   JMenuBar var3 = var8;
-                  JMenuBar var9 = var3;
+                  var9 = var3;
                   if (var1 == null) {
                      label70:
                      if (var3 == null) {
@@ -296,7 +304,7 @@ public class YR implements KeyEventPostProcessor {
                         }
                      }
 
-                     boolean var12 = A9.R$boolean();
+                     var12 = A9.R$boolean();
                      if (var1 == null) {
                         if (var12) {
                            break label93;
@@ -325,7 +333,7 @@ public class YR implements KeyEventPostProcessor {
                var10000 = 1;
             }
 
-            A9.I((boolean)var10000);
+            A9.I(var10000);
             this.L(e);
             return;
          }
@@ -333,11 +341,12 @@ public class YR implements KeyEventPostProcessor {
          var10000 = 1;
       }
 
-      A9.I((boolean)var10000);
+      A9.I(var10000);
       this.L(e);
    }
 
    public void L(Window var1) {
+      int var6;
       String[] var2 = XD3.U();
       Window var10000 = var1;
       if (var2 == null) {
@@ -359,7 +368,7 @@ public class YR implements KeyEventPostProcessor {
       Window[] var3 = var10000.getOwnedWindows();
       Window[] var4 = var3;
       int var5 = var3.length;
-      int var6 = 0;
+      var6 = 0;
 
       while (true) {
          if (var6 < var5) {
@@ -465,8 +474,9 @@ public class YR implements KeyEventPostProcessor {
    }
 
    public static void __vfClinit__() {
+      long[] var6;
       long var0 = 3026366423101576160L;
-      long[] var6 = new long[3];
+      var6 = new long[3];
       int var3 = 0;
       String var4 = "¡SéRksévh¾§K1j$!\\ä\f2(,n\u0093";
       int var5 = "¡SéRksévh¾§K1j$!\\ä\f2(,n\u0093".length();

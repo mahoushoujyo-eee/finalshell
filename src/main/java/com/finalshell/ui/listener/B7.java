@@ -31,12 +31,13 @@ public class B7 implements KeyListener {
 
    @Override
    public void keyReleased(KeyEvent var1) {
+      boolean var44;
       String[] var2 = ClearListDialog.i$arrString();
       Object var6 = 484003208200249497L;
       Ref.g(484003208200249497L, var6);
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var9 = 634403491225282499L;
-      Object[] var8 = var10002;
+      Object var8 = var10002;
       var10002 = Ref.h(634403491225282499L, var8, var9);
 
       try {

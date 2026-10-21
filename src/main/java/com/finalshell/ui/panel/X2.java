@@ -84,6 +84,7 @@ public class X2 extends JComboBox implements W2_3, Pp2, RF3, Eh2, Yb4, Sa2 {
 
    @Override
    public int getSelectedIndex() {
+      int var5;
       Object var2 = this.dataModel.getSelectedItem();
       Ky4[] var10000 = M3.X();
       int var3 = 0;
@@ -93,7 +94,7 @@ public class X2 extends JComboBox implements W2_3, Pp2, RF3, Eh2, Yb4, Sa2 {
          if (var3 < this.dataModel.getSize()) {
             Object var4 = this.dataModel.getElementAt(var3);
             if (var1 == null) {
-               var5 = Ax2.Z(var4, new Object[]{var2});
+               var5 = (Ax2.Z(var4, new Object[]{var2})) ? 1 : 0;
                if (var1 != null) {
                   break;
                }

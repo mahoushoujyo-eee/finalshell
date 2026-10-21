@@ -6,13 +6,13 @@ import com.finalshell.core.T32;
 import com.finalshell.core.Y9;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.adapter.Co2;
+import com.finalshell.ui.adapter.SaveActionAdapter;
 import com.finalshell.ui.adapter.FindReplaceAdapter;
 import com.finalshell.ui.adapter.LocateLineAdapter;
 import com.finalshell.ui.listener.Ar2;
 import com.finalshell.ui.panel.AM;
 import com.finalshell.ui.panel.F8;
-import com.finalshell.ui.panel.File;
+import com.finalshell.ui.panel.TextFileEditorPanel;
 import com.finalshell.ui.panel.Ge2;
 import com.finalshell.ui.panel.Ky4;
 import java.awt.Rectangle;
@@ -46,7 +46,7 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
    public ReplaceDialog D;
    public RSyntaxTextArea n;
    public StatusBar z;
-   public File K;
+   public TextFileEditorPanel K;
    public static int[] x;
    public static String[] a;
    public static String[] b;
@@ -61,7 +61,7 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
       m();
       JMenuBar var10003 = (JMenuBar)(Registry.emptyArgs());
       long var5 = 330644631369405137L;
-      Object[] var4 = var10003;
+      Object var4 = var10003;
       var10003 = Ref.h(330644631369405137L, var4, var5);
 
       try {
@@ -133,7 +133,7 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
       Ref.h(306266403902896148L, var40, var41);
       Rectangle var10020 = (Rectangle)(Registry.emptyArgs());
       long var43 = 579757891192141370L;
-      Object[] var42 = var10020;
+      Object var42 = var10020;
       var10020 = Ref.h(579757891192141370L, var42, var43);
 
       try {
@@ -225,7 +225,7 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
       Ref.g(327693251494669760L, var7);
       ArrayList var10002 = (ArrayList)(Registry.emptyArgs());
       long var10 = 230171768324088030L;
-      Object[] var9 = var10002;
+      Object var9 = var10002;
       var10002 = Ref.h(230171768324088030L, var9, var10);
 
       try {
@@ -244,7 +244,7 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
             T32 var4 = (T32)var3.next();
             F8 var10003 = (F8)(Registry.emptyArgs());
             long var12 = 424156930953488367L;
-            Object[] var11 = var10003;
+            Object var11 = var10003;
             var10003 = Ref.h(424156930953488367L, var11, var12);
 
             try {
@@ -261,14 +261,14 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
             label61: {
                F8 var28 = var5;
                if (var1 == null) {
-                  if (!var5.getClass().equals(File.class)) {
+                  if (!var5.getClass().equals(TextFileEditorPanel.class)) {
                      break label61;
                   }
 
                   var28 = var5;
                }
 
-               File var6 = (File)var28;
+               TextFileEditorPanel var6 = (TextFileEditorPanel)var28;
                Object[] var10004 = Registry.emptyArgs();
                long var14 = 244719647487910118L;
                Object[] var13 = var10004;
@@ -302,13 +302,14 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
    }
 
    public void c(String var1) {
+      long var30;
       Object var3 = null;
       m();
       Object var9 = 327693251494669760L;
       Object var10002 = Ref.g(327693251494669760L, var9);
       ArrayList var10003 = (ArrayList)(Registry.emptyArgs());
       long var12 = 230171768324088030L;
-      Object[] var11 = var10003;
+      Object var11 = var10003;
       var10003 = Ref.h(230171768324088030L, var11, var12);
 
       try {
@@ -326,7 +327,7 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
             T32 var6 = (T32)var5.next();
             var10003 = Registry.emptyArgs();
             long var14 = 424156930953488367L;
-            Object[] var13 = var10003;
+            Object var13 = var10003;
             var10003 = Ref.h(424156930953488367L, var13, var14);
 
             try {
@@ -343,17 +344,17 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
             label119: {
                F8 var46 = var7;
                if (var2 == null) {
-                  if (!var7.getClass().equals(File.class)) {
+                  if (!var7.getClass().equals(TextFileEditorPanel.class)) {
                      break label119;
                   }
 
                   var46 = var7;
                }
 
-               File var8 = (File)var46;
+               TextFileEditorPanel var8 = (TextFileEditorPanel)var46;
                String var10004 = (String)(Registry.emptyArgs());
                long var16 = 448969912548627778L;
-               Object[] var15 = var10004;
+               Object var15 = var10004;
                var10004 = Ref.h(448969912548627778L, var15, var16);
 
                try {
@@ -413,11 +414,11 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
          }
 
          if (var2 == null && var3 == null) {
-            var3 = new File();
+            var3 = new TextFileEditorPanel();
             java.io.File var40 = new java.io.File(var1);
             var10003 = Registry.packArgs(var1);
             long var24 = 172971994260078935L;
-            Object[] var23 = var10003;
+            Object var23 = var10003;
             Ref.h(172971994260078935L, var23, var24);
 
             try {
@@ -443,8 +444,8 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
       }
 
       var10003 = Registry.packArgs(var1);
-      long var30 = 172971994260078935L;
-      Object[] var29 = var10003;
+      var30 = 172971994260078935L;
+      Object var29 = var10003;
       Ref.h(172971994260078935L, var29, var30);
 
       try {
@@ -490,9 +491,9 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
       Object[] var10005 = Registry.emptyArgs();
       long var10 = 424156930953488367L;
       Object[] var9 = var10005;
-      File var43 = (File)Ref.h(424156930953488367L, var9, var10);
+      TextFileEditorPanel var43 = (TextFileEditorPanel)Ref.h(424156930953488367L, var9, var10);
       long var12 = 247518897504885985L;
-      File var11 = var43;
+      TextFileEditorPanel var11 = var43;
       Ref.s(247518897504885985L, var11, var12);
       Object var13 = 247518897504885985L;
       Object var10007 = Ref.g(247518897504885985L, var13);
@@ -514,11 +515,11 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
       Object var23 = var10010;
       Ref.s(247581788569489208L, var23, var24);
       Object var25 = 247518897504885985L;
-      File var10011 = (File)Ref.g(247518897504885985L, var25);
+      TextFileEditorPanel var10011 = (TextFileEditorPanel)Ref.g(247518897504885985L, var25);
       if (var2 == null) {
          String var10012 = (String)(Registry.emptyArgs());
          long var28 = 448969912548627778L;
-         Object[] var27 = var10012;
+         Object var27 = var10012;
          var10012 = Ref.h(448969912548627778L, var27, var28);
 
          try {
@@ -532,7 +533,7 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
             Object var10015 = Ref.g(247518897504885985L, var29);
             String var10016 = (String)(Registry.emptyArgs());
             long var32 = 448969912548627778L;
-            Object[] var31 = var10016;
+            Object var31 = var10016;
             var10016 = Ref.h(448969912548627778L, var31, var32);
 
             try {
@@ -546,7 +547,7 @@ var10015 = new AM(var10016);
          }
 
          Object var33 = 247518897504885985L;
-         File var10013 = (File)Ref.g(247518897504885985L, var33);
+         TextFileEditorPanel var10013 = (TextFileEditorPanel)Ref.g(247518897504885985L, var33);
       }
 
       if (var2 == null) {
@@ -555,7 +556,7 @@ var10015 = new AM(var10016);
          }
 
          Object var35 = 247518897504885985L;
-         File var48 = (File)Ref.g(247518897504885985L, var35);
+         TextFileEditorPanel var48 = (TextFileEditorPanel)Ref.g(247518897504885985L, var35);
       }
 
       Object[] var49 = Registry.emptyArgs();
@@ -571,7 +572,7 @@ var10015 = new AM(var10016);
    }
 
    @Override
-   public void U(Y9 var1) {
+   public void MainFrame(Y9 var1) {
    }
 
    @Override
@@ -585,7 +586,7 @@ var10015 = new AM(var10016);
    public JMenuBar O$JMenuBar() {
       JMenuBar var1 = new JMenuBar();
       JMenu var2 = new JMenu(a(30095, -12441));
-      var2.add(new JMenuItem(new Co2(this)));
+      var2.add(new JMenuItem(new SaveActionAdapter(this)));
       var1.add(var2);
       JMenu var3 = new JMenu(a(30082, 5213));
       var3.add(new JMenuItem(new FindReplaceAdapter(this)));
@@ -1494,6 +1495,7 @@ var10015 = new AM(var10016);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[12];
       int var11 = 0;
       String var10 = "\u00002;JmxöýÄ(±CÑÈúðÜâ\u000fÿ¢°X\u0081ì^=?þáÂä\u0099\u008c\u0088\\Üµë\u0005ÕÎ|Hn\u000e^\u0003«á¨CPS¾0 S\u0013Û\u0005á-ú4¾ 2-&$\u0019ófM6ÐbX\u0094B\u009f$H\u0011Ú\u009bÿY\u0095\u0004þO\u0086ÁeL\u0099}\u000fóz\u008fµ\u0012ç\u0096=Àg `ë\u0004\u0095\u0002摍綬7)j\u001eAÉ\u0019hÚVºðÛùr\u009e\u007f\u0013Õò\u000f\u009c\u0001+Ê¦\u0096ÿÉ^\b\u000b;ç\u008b¿ºç\u0097Ú)kÏÊ\u0015*\u008e\u0014ÞÇÌ[~\u008c½6\u0016\u008a9ÐúêÉú\u008c\u001bý\u0099I1H\u008bS\u0012IJê,V\u0014û\u0089|wx¬X+·e¶ÏM²÷fa\u0092Uq";
@@ -1510,7 +1512,6 @@ var10015 = new AM(var10016);
          byte var10002 = -1;
 
          while (true) {
-      Object var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

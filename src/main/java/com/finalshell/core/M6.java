@@ -10,11 +10,11 @@ import java.util.Iterator;
 
 public class M6 {
    public HashMap M;
-   public com.finalshell.ui.frame.U s;
+   public com.finalshell.ui.frame.MainFrame s;
    public ArrayList I;
    public boolean O;
-   public static com.finalshell.ui.frame.U d;
-   public com.finalshell.ui.frame.U K;
+   public static com.finalshell.ui.frame.MainFrame d;
+   public com.finalshell.ui.frame.MainFrame K;
    public static long a;
 
    public M6() {
@@ -34,18 +34,18 @@ public class M6 {
 
    public void H() {
       long var1 = System.currentTimeMillis();
-      Object[] var10001 = Registry.packArgs(true);
+      Object var10001 = Registry.packArgs(true);
       long var5 = 561698688134982306L;
-      Object[] var4 = var10001;
+      Object var4 = var10001;
       var10001 = Ref.h(561698688134982306L, var4, var5);
 
       try {
-         var10001 = (com.finalshell.ui.frame.U)var10001;
+         var10001 = (com.finalshell.ui.frame.MainFrame)var10001;
       } catch (InvocationTargetException var9) {
          throw var9.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var3 = var10001;
+      com.finalshell.ui.frame.MainFrame var3 = var10001;
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10002 = Registry.packArgs(new B72(this, var3));
       long var7 = 434592463220957006L;
@@ -66,14 +66,15 @@ public class M6 {
       return ((HashMap)Ref.g(439877715338463110L, var1)).size();
    }
 
-   public void o(com.finalshell.ui.frame.U var1) {
+   public void o(com.finalshell.ui.frame.MainFrame var1) {
+      Integer var15;
       Object var4 = 439877715338463110L;
       synchronized ((HashMap)Ref.g(439877715338463110L, var4)) {
          Object var6 = 439877715338463110L;
          HashMap var10002 = (HashMap)Ref.g(439877715338463110L, var6);
-         Object[] var10004 = Registry.emptyArgs();
+         Object var10004 = Registry.emptyArgs();
          long var9 = 546839558529065481L;
-         Object[] var8 = var10004;
+         Object var8 = var10004;
          var10004 = Ref.h(546839558529065481L, var8, var9);
 
          try {
@@ -89,10 +90,10 @@ public class M6 {
    }
 
    public static void M() {
-      Registry.lookupField(476072002709934783L).set(null, new com.finalshell.ui.frame.U());
+      Registry.lookupField(476072002709934783L).set(null, new com.finalshell.ui.frame.MainFrame());
    }
 
-   public com.finalshell.ui.frame.U A(boolean param1) {
+   public com.finalshell.ui.frame.MainFrame A(boolean param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -308,7 +309,7 @@ public class M6 {
    public void e(Tk4 var1) {
       HashMap var10001 = (HashMap)(Registry.emptyArgs());
       long var7 = 263176406875877964L;
-      Object[] var6 = var10001;
+      Object var6 = var10001;
       var10001 = Ref.h(263176406875877964L, var6, var7);
 
       try {
@@ -323,7 +324,7 @@ public class M6 {
       String[] var2 = var14;
 
       while (var4.hasNext()) {
-         com.finalshell.ui.frame.U var5 = (com.finalshell.ui.frame.U)var3.get(var4.next());
+         com.finalshell.ui.frame.MainFrame var5 = (com.finalshell.ui.frame.MainFrame)var3.get(var4.next());
          Object[] var10002 = Registry.packArgs(var5);
          long var9 = 234066957994220700L;
          Object[] var8 = var10002;
@@ -367,12 +368,12 @@ public class M6 {
       }
    }
 
-   public com.finalshell.ui.frame.U D() {
+   public com.finalshell.ui.frame.MainFrame D() {
       Object var1 = 169739906864728121L;
-      return (com.finalshell.ui.frame.U)Ref.g(169739906864728121L, var1);
+      return (com.finalshell.ui.frame.MainFrame)Ref.g(169739906864728121L, var1);
    }
 
-   public com.finalshell.ui.frame.U W() {
+   public com.finalshell.ui.frame.MainFrame W() {
       String[] var1 = com.finalshell.ui.panel.F8.y();
       if (var1 == null) {
          Object var2 = 523021799336508930L;
@@ -380,18 +381,18 @@ public class M6 {
             Object var4 = 523021799336508930L;
             ArrayList var10003 = (ArrayList)Ref.g(523021799336508930L, var4);
             Object var6 = 523021799336508930L;
-            com.finalshell.ui.frame.U var10004 = (com.finalshell.ui.frame.U)this.get(((ArrayList)Ref.g(523021799336508930L, var6)).size() - 1);
+            com.finalshell.ui.frame.MainFrame var10004 = (com.finalshell.ui.frame.MainFrame)this.get(((ArrayList)Ref.g(523021799336508930L, var6)).size() - 1);
             long var9 = 169739906864728121L;
-            com.finalshell.ui.frame.U var8 = var10004;
+            com.finalshell.ui.frame.MainFrame var8 = var10004;
             Ref.s(169739906864728121L, var8, var9);
          }
       }
 
       Object var10 = 169739906864728121L;
-      return (com.finalshell.ui.frame.U)Ref.g(169739906864728121L, var10);
+      return (com.finalshell.ui.frame.MainFrame)Ref.g(169739906864728121L, var10);
    }
 
-   public void l(com.finalshell.ui.frame.U var1) {
+   public void l(com.finalshell.ui.frame.MainFrame var1) {
       Object var2 = 523021799336508930L;
       ((ArrayList)Ref.g(523021799336508930L, var2)).remove(var1);
       Object var4 = 523021799336508930L;

@@ -3,7 +3,7 @@ package com.finalshell.task;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.dialog.SyncPasswordDialog;
-import com.finalshell.ui.dialog.SyncPasswordDialog2;
+import com.finalshell.ui.dialog.SyncPasswordResetDialog;
 import com.finalshell.ui.frame.FP;
 import java.lang.reflect.InvocationTargetException;
 

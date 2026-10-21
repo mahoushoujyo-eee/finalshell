@@ -13,13 +13,13 @@ import com.finalshell.crypto.ConnectHost;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.Xk2;
-import com.finalshell.ui.dialog.EditDialog3;
+import com.finalshell.ui.dialog.CommandEditDialog;
 import com.finalshell.ui.dialog.RenameFolderDialog;
 import com.finalshell.ui.listener.Bm4;
-import com.finalshell.ui.listener.File7;
+import com.finalshell.ui.listener.FileContextMenuListener;
 import com.finalshell.ui.listener.L23;
 import com.finalshell.ui.listener.LX;
-import com.finalshell.ui.listener.Listener;
+import com.finalshell.ui.listener.CommandCategoryDeleteListener;
 import com.finalshell.ui.listener.NC;
 import com.finalshell.ui.listener.Nw2;
 import com.finalshell.ui.listener.Oc2;
@@ -70,7 +70,7 @@ public class AppendCarriageReturnCRPanel extends JPanel implements AL, Fb2 {
    public EditPanel d;
    public JPanel T;
    public Lj4_2 k;
-   public Copy3 j;
+   public CommandListPanel j;
    public JCheckBoxMenuItem E;
    public boolean b;
    public String M;
@@ -81,6 +81,16 @@ public class AppendCarriageReturnCRPanel extends JPanel implements AL, Fb2 {
    public static Integer[] h;
 
    public AppendCarriageReturnCRPanel(Cp2 var1) {
+      super();
+      JMenuItem var16;
+      JComboBox var20;
+      boolean var230;
+      Boolean var238;
+      Boolean var241;
+      Boolean var244;
+      Integer var269;
+      Object[] var33;
+      long var50;
       Registry.lookupField(490286977843074498L).setBoolean(this, false);
       String var10001 = a(-20355, -12157);
       long var30 = 127006560398762220L;
@@ -91,7 +101,7 @@ public class AppendCarriageReturnCRPanel extends JPanel implements AL, Fb2 {
       Ref.h2(270389152141252877L, var31);
       U62 var10003 = (U62)(Registry.emptyArgs());
       long var34 = 306266403902896148L;
-      Object[] var33 = var10003;
+      var33 = var10003;
       var10003 = Ref.h(306266403902896148L, var33, var34);
 
       try {
@@ -131,7 +141,7 @@ public class AppendCarriageReturnCRPanel extends JPanel implements AL, Fb2 {
       Object var47 = 256433469970092898L;
       ((JSplitPane)Ref.g(256433469970092898L, var47)).addPropertyChangeListener(a(-20396, -16222), new TR3(this));
       JPanel var10012 = new JPanel(new MigLayout(a(-20411, 19710), a(-20409, 8174), a(-20409, 8174)));
-      long var50 = 390502927378779445L;
+      var50 = 390502927378779445L;
       JPanel var49 = var10012;
       Ref.s(390502927378779445L, var49, var50);
       AppendCarriageReturnCRPanel var2 = this;
@@ -186,7 +196,7 @@ public class AppendCarriageReturnCRPanel extends JPanel implements AL, Fb2 {
       ((JTextArea)Ref.g(165605583887724001L, var81)).addKeyListener(new Ym2(this));
       JScrollPane var10028;
       Object var83 = 165605583887724001L;
-      super((JTextArea)Ref.g(165605583887724001L, var83));
+      // [VF-super] super((JTextArea)Ref.g(165605583887724001L, var83));
       JScrollPane var8 = var10028;
       var8.setOpaque(false);
       var8.getViewport().setOpaque(false);
@@ -223,13 +233,13 @@ public class AppendCarriageReturnCRPanel extends JPanel implements AL, Fb2 {
          var15 = a(-20360, -20196);
       }
 
-      JMenuItem var16 = new JMenuItem(var15);
+      var16 = new JMenuItem(var15);
       var16.addActionListener(new NC(this));
       var13.add(var16);
       var12.add(var16);
       Integer var10030 = (Integer)(Registry.emptyArgs());
       long var88 = 257025344649675398L;
-      Object[] var87 = var10030;
+      Object var87 = var10030;
       var10030 = Ref.h(257025344649675398L, var87, var88);
 
       try {
@@ -273,9 +283,9 @@ public class AppendCarriageReturnCRPanel extends JPanel implements AL, Fb2 {
       var12.addSeparator();
       JCheckBoxMenuItem var235;
       String var10032 = a(-20387, 3570);
-      Object[] var10034 = Registry.emptyArgs();
+      Object var10034 = Registry.emptyArgs();
       long var92 = 575356025127634892L;
-      Object[] var91 = var10034;
+      Object var91 = var10034;
       var10034 = Ref.h(575356025127634892L, var91, var92);
 
       try {
@@ -290,9 +300,9 @@ var10032 = new Dimension(var3, var238);
       var12.add((JMenuItem)var17);
       JCheckBoxMenuItem var236;
       String var10033 = a(-20395, -20692);
-      Object[] var10035 = Registry.emptyArgs();
+      Object var10035 = Registry.emptyArgs();
       long var94 = 338108372597229383L;
-      Object[] var93 = var10035;
+      Object var93 = var10035;
       var10035 = Ref.h(338108372597229383L, var93, var94);
 
       try {
@@ -306,9 +316,9 @@ var10033 = new Dimension(var3, var241);
       var18.addActionListener(new Nw2(this, var18));
       JCheckBoxMenuItem var239;
       String var242 = a(-20367, 23556);
-      Object[] var10037 = Registry.emptyArgs();
+      Object var10037 = Registry.emptyArgs();
       long var96 = 404018409349740430L;
-      Object[] var95 = var10037;
+      Object var95 = var10037;
       var10037 = Ref.h(404018409349740430L, var95, var96);
 
       try {
@@ -328,7 +338,7 @@ var242 = new Dimension(var3, var244);
       JPanel var19 = new JPanel(new MigLayout(a(-20411, 19710), "", ""));
       var19.setOpaque(false);
       var19.add(new JLabel(a(-20410, 15092)));
-      JComboBox var20 = new JComboBox();
+      var20 = new JComboBox();
       var19.setOpaque(false);
       var20.addItem(a(-20406, 5643));
       var20.addItem(a(-20386, -5308));
@@ -336,7 +346,7 @@ var242 = new Dimension(var3, var244);
       var9.add(var19);
       var10037 = Registry.emptyArgs();
       long var104 = 165950045643857861L;
-      Object[] var103 = var10037;
+      Object var103 = var10037;
       var10037 = Ref.h(165950045643857861L, var103, var104);
 
       try {
@@ -417,7 +427,7 @@ var242 = new Dimension(var3, var244);
       Object var121 = 220282364724549275L;
       this.add((AM)Ref.g(220282364724549275L, var121), a(-20358, 4493));
       Object var123 = 220282364724549275L;
-      ((AM)Ref.g(220282364724549275L, var123)).addMouseListener(new File7(this));
+      ((AM)Ref.g(220282364724549275L, var123)).addMouseListener(new FileContextMenuListener(this));
       Registry.emptyArgs();
       long var125 = 270389152141252877L;
       Ref.h2(270389152141252877L, var125);
@@ -427,7 +437,7 @@ var242 = new Dimension(var3, var244);
       Ref.h(306266403902896148L, var127, var128);
       String var10049 = (String)(Registry.emptyArgs());
       long var130 = 392686248093970107L;
-      Object[] var129 = var10049;
+      Object var129 = var10049;
       var10049 = Ref.h(392686248093970107L, var129, var130);
 
       try {
@@ -440,7 +450,7 @@ var242 = new Dimension(var3, var244);
       T32 var23 = null;
       ArrayList var10050 = (ArrayList)(Registry.emptyArgs());
       long var132 = 518875030097846779L;
-      Object[] var131 = var10050;
+      Object var131 = var10050;
       var10050 = Ref.h(518875030097846779L, var131, var132);
 
       try {
@@ -456,7 +466,7 @@ var242 = new Dimension(var3, var244);
 
             while (var25 < var24.size()) {
                Li4 var26 = (Li4)var24.get(var25);
-               Copy3 var27 = new Copy3(this, var26);
+               CommandListPanel var27 = new CommandListPanel(this, var26);
                Object var133 = 220282364724549275L;
                Ref.g(220282364724549275L, var133);
                Object[] var10054 = Registry.emptyArgs();
@@ -464,7 +474,7 @@ var242 = new Dimension(var3, var244);
                Object[] var135 = var10054;
                T32 var10053 = (T32)(Registry.packArgs(var26, Ref.h(286931176286176762L, var135, var136)));
                long var138 = 407014907239672455L;
-               Object[] var137 = var10053;
+               Object var137 = var10053;
                var10053 = Ref.h(407014907239672455L, var137, var138);
 
                try {
@@ -492,7 +502,7 @@ var242 = new Dimension(var3, var244);
                if (var2 == null) {
                   String var10055 = (String)(Registry.emptyArgs());
                   long var142 = 194080076253066315L;
-                  Object[] var141 = var10055;
+                  Object var141 = var10055;
                   var10055 = Ref.h(194080076253066315L, var141, var142);
 
                   try {
@@ -555,7 +565,7 @@ var242 = new Dimension(var3, var244);
          ((Ge2)Ref.g(132722259088033339L, var157)).setOpaque(false);
          JScrollPane var10056;
          Object var159 = 132722259088033339L;
-         super((Ge2)Ref.g(132722259088033339L, var159));
+      // [VF] super((Ge2)Ref.g(132722259088033339L, var159));   // 非法：super(...) 出现在非构造器方法里（反编译器把父类构造器调用复制错了位置），Java 无法表达
          long var162 = 544586534803602568L;
          JScrollPane var161 = var10056;
          Ref.s(544586534803602568L, var161, var162);
@@ -602,7 +612,7 @@ var242 = new Dimension(var3, var244);
       var226.addItem(a(-20416, -26628));
       Integer var10068 = (Integer)(Registry.emptyArgs());
       long var186 = 579797607180676881L;
-      Object[] var185 = var10068;
+      Object var185 = var10068;
       var10068 = Ref.h(579797607180676881L, var185, var186);
 
       try {
@@ -662,9 +672,9 @@ var242 = new Dimension(var3, var244);
 
       Object var193 = 256433469970092898L;
       JSplitPane var10071 = (JSplitPane)Ref.g(256433469970092898L, var193);
-      Object[] var10073 = Registry.emptyArgs();
+      Object var10073 = Registry.emptyArgs();
       long var196 = 552368665913993587L;
-      Object[] var195 = var10073;
+      Object var195 = var10073;
       var10073 = Ref.h(552368665913993587L, var195, var196);
 
       try {
@@ -741,6 +751,13 @@ var242 = new Dimension(var3, var244);
    }
 
    public void u(Lj4_2 var1) {
+      Object[] var16;
+      long var20;
+      long var33;
+      ConnectionProperty var70;
+      ArrayList var76;
+      Boolean var79;
+      Boolean var82;
       Y();
       Registry.emptyArgs();
       long var12 = 270389152141252877L;
@@ -751,7 +768,7 @@ var242 = new Dimension(var3, var244);
       Ref.h(634817973682994708L, var14, var15);
       Object[] var10004 = Registry.emptyArgs();
       long var17 = 240567170779145617L;
-      Object[] var16 = var10004;
+      var16 = var10004;
       Ref.h(240567170779145617L, var16, var17);
       Object[] var10005 = Registry.emptyArgs();
       long var19 = 226341449505323490L;
@@ -765,11 +782,11 @@ var242 = new Dimension(var3, var244);
       }
 
       Registry.emptyArgs();
-      long var20 = 270389152141252877L;
+      var20 = 270389152141252877L;
       Ref.h2(270389152141252877L, var20);
       U62 var10007 = (U62)(Registry.emptyArgs());
       long var23 = 306266403902896148L;
-      Object[] var22 = var10007;
+      Object var22 = var10007;
       var10007 = Ref.h(306266403902896148L, var22, var23);
 
       try {
@@ -781,7 +798,7 @@ var242 = new Dimension(var3, var244);
       U62 var4 = var10007;
       ConnectionProperty var10008 = (ConnectionProperty)(Registry.emptyArgs());
       long var25 = 179934491990092343L;
-      Object[] var24 = var10008;
+      Object var24 = var10008;
       var10008 = Ref.h(179934491990092343L, var24, var25);
 
       try {
@@ -797,10 +814,10 @@ var242 = new Dimension(var3, var244);
       var10010 = Ref.h(299075327592978837L, var26, var27);
       String var10011 = (String)(Registry.emptyArgs());
       long var29 = 311960122574804250L;
-      Object[] var28 = var10011;
+      Object var28 = var10011;
       var10011 = Registry.packArgs(Ref.h(311960122574804250L, var28, var29));
       long var31 = 241545340359946271L;
-      Object[] var30 = var10011;
+      Object var30 = var10011;
       var10011 = Ref.h(241545340359946271L, var30, var31);
 
       try {
@@ -812,8 +829,8 @@ var242 = new Dimension(var3, var244);
       String var6 = var10011;
       Object var2 = var10010;
       var10011 = Registry.emptyArgs();
-      long var33 = 579797607180676881L;
-      Object[] var32 = var10011;
+      var33 = 579797607180676881L;
+      Object var32 = var10011;
       var10011 = Ref.h(579797607180676881L, var32, var33);
 
       try {
@@ -852,9 +869,9 @@ var242 = new Dimension(var3, var244);
                if (var9.t$boolean()) {
                   var7.O$pA_3();
                   String var10013 = var6.toString();
-                  Object[] var10016 = Registry.emptyArgs();
+                  Object var10016 = Registry.emptyArgs();
                   long var37 = 135618565837694791L;
-                  Object[] var36 = var10016;
+                  Object var36 = var10016;
                   var10016 = Ref.h(135618565837694791L, var36, var37);
 
                   try {
@@ -914,9 +931,9 @@ var242 = new Dimension(var3, var244);
                ConnectHost var11 = var56.s$Fv_2().e();
                if (var11.t$boolean()) {
                   var56.O$pA_3();
-                  Object[] var80 = Registry.emptyArgs();
+                  Object var80 = Registry.emptyArgs();
                   long var43 = 135618565837694791L;
-                  Object[] var42 = var80;
+                  Object var42 = var80;
                   var80 = Ref.h(135618565837694791L, var42, var43);
 
                   try {
@@ -984,6 +1001,8 @@ var242 = new Dimension(var3, var244);
    }
 
    public void f(Lj4_2 var1) {
+      long var16;
+      Object[] var20;
       label43: {
          int[] var2 = Y();
          if (var2 == null) {
@@ -1018,7 +1037,7 @@ var242 = new Dimension(var3, var244);
          }
       }
 
-      Object[] var20 = Registry.emptyArgs();
+      var20 = Registry.emptyArgs();
       long var12 = 150455284980691365L;
       Object[] var11 = var20;
       Ref.h(150455284980691365L, var11, var12);
@@ -1033,18 +1052,24 @@ var242 = new Dimension(var3, var244);
       long var14 = 194080076253066315L;
       Object[] var13 = var10004;
       var10004 = Ref.h(194080076253066315L, var13, var14);
-      long var16 = 127006560398762220L;
+      var16 = 127006560398762220L;
       Object var15 = var10004;
       Ref.s(127006560398762220L, var15, var16);
    }
 
    public void o() {
+      long var20;
+      Object[] var33;
+      long var50;
+      Object[] var51;
+      long var70;
+      Object[] var79;
       Y();
       Registry.emptyArgs();
       long var17 = 270389152141252877L;
       Ref.h2(270389152141252877L, var17);
       Object[] var10003 = Registry.emptyArgs();
-      long var20 = 306266403902896148L;
+      var20 = 306266403902896148L;
       Object[] var19 = var10003;
       Ref.h(306266403902896148L, var19, var20);
 
@@ -1058,7 +1083,7 @@ var242 = new Dimension(var3, var244);
       Object var10004 = Ref.g(220282364724549275L, var21);
       ArrayList var10005 = (ArrayList)(Registry.emptyArgs());
       long var24 = 230171768324088030L;
-      Object[] var23 = var10005;
+      Object var23 = var10005;
       var10005 = Ref.h(230171768324088030L, var23, var24);
 
       try {
@@ -1076,8 +1101,8 @@ var242 = new Dimension(var3, var244);
             T32 var5 = (T32)var4.next();
             var10005 = Registry.emptyArgs();
             long var26 = 424156930953488367L;
-            Object[] var25 = var10005;
-            Copy3 var6 = (Copy3)Ref.h(424156930953488367L, var25, var26);
+            Object var25 = var10005;
+            CommandListPanel var6 = (CommandListPanel)Ref.h(424156930953488367L, var25, var26);
             Object[] var10006 = Registry.emptyArgs();
             long var28 = 358371840708368096L;
             Object[] var27 = var10006;
@@ -1116,12 +1141,12 @@ var242 = new Dimension(var3, var244);
 
       Object[] var103 = Registry.emptyArgs();
       long var34 = 194560825135347400L;
-      Object[] var33 = var103;
+      var33 = var103;
       Ref.h(194560825135347400L, var33, var34);
       Object[] var104 = Registry.emptyArgs();
       long var36 = 424156930953488367L;
       Object[] var35 = var104;
-      Copy3 var97 = (Copy3)Ref.h(424156930953488367L, var35, var36);
+      CommandListPanel var97 = (CommandListPanel)Ref.h(424156930953488367L, var35, var36);
       Object[] var10008 = Registry.emptyArgs();
       long var38 = 183035319181805634L;
       Object[] var37 = var10008;
@@ -1153,7 +1178,7 @@ var242 = new Dimension(var3, var244);
       Object var98 = null;
       ArrayList var10012 = (ArrayList)(Registry.emptyArgs());
       long var46 = 518875030097846779L;
-      Object[] var45 = var10012;
+      Object var45 = var10012;
       var10012 = Ref.h(518875030097846779L, var45, var46);
 
       try {
@@ -1176,16 +1201,16 @@ var242 = new Dimension(var3, var244);
                   label216:
                   while (true) {
                      Li4 var11 = (Li4)var10012;
-                     Copy3 var12 = new Copy3(this, var11);
+                     CommandListPanel var12 = new CommandListPanel(this, var11);
                      var10012 = this;
                      Object var47 = 220282364724549275L;
                      Ref.g(220282364724549275L, var47);
-                     Object[] var10016 = Registry.emptyArgs();
-                     long var50 = 286931176286176762L;
-                     Object[] var49 = var10016;
+                     Object var10016 = Registry.emptyArgs();
+                     var50 = 286931176286176762L;
+                     Object var49 = var10016;
                      T32 var10015 = (T32)(Registry.packArgs(var11, Ref.h(286931176286176762L, var49, var50)));
                      long var52 = 407014907239672455L;
-                     Object[] var51 = var10015;
+                     var51 = var10015;
                      var10015 = Ref.h(407014907239672455L, var51, var52);
 
                      try {
@@ -1199,7 +1224,7 @@ var242 = new Dimension(var3, var244);
                         if (var1 == null) {
                            var10016 = Registry.packArgs(var11);
                            long var54 = 276170834929945961L;
-                           Object[] var53 = var10016;
+                           Object var53 = var10016;
                            Ref.h(276170834929945961L, var53, var54);
 
                            try {
@@ -1218,7 +1243,7 @@ var242 = new Dimension(var3, var244);
                            var10018 = Ref.h(183035319181805634L, var55, var56);
                            String var10019 = (String)(Registry.emptyArgs());
                            long var58 = 194080076253066315L;
-                           Object[] var57 = var10019;
+                           Object var57 = var10019;
                            var10019 = Ref.h(194080076253066315L, var57, var58);
 
                            try {
@@ -1237,7 +1262,7 @@ var242 = new Dimension(var3, var244);
 
                      var10016 = Registry.emptyArgs();
                      long var60 = 408177353860141270L;
-                     Object[] var59 = var10016;
+                     Object var59 = var10016;
                      var10016 = Ref.h(408177353860141270L, var59, var60);
 
                      try {
@@ -1289,7 +1314,7 @@ var242 = new Dimension(var3, var244);
 
                               String var10020 = (String)(Registry.emptyArgs());
                               long var68 = 194080076253066315L;
-                              Object[] var67 = var10020;
+                              Object var67 = var10020;
                               var10020 = Ref.h(194080076253066315L, var67, var68);
 
                               try {
@@ -1303,7 +1328,7 @@ var242 = new Dimension(var3, var244);
                               }
                            }
 
-                           long var70 = 152428484444415463L;
+                           var70 = 152428484444415463L;
                            Ref.s(152428484444415463L, var16, var70);
                         }
 
@@ -1356,7 +1381,7 @@ var242 = new Dimension(var3, var244);
 
       Object[] var111 = Registry.emptyArgs();
       long var80 = 212885583671664730L;
-      Object[] var79 = var111;
+      var79 = var111;
       Ref.h(212885583671664730L, var79, var80);
 
       try {
@@ -1367,37 +1392,44 @@ var242 = new Dimension(var3, var244);
    }
 
    public void x() {
+      long var16;
+      long var20;
+      Object[] var33;
+      ConnectionProperty var69;
+      ConnectionProperty var70;
+      ArrayList var75;
+      ConnectionProperty var76;
       Object var11 = 165605583887724001L;
       String var2 = ((JTextArea)Ref.g(165605583887724001L, var11)).getText();
       Registry.emptyArgs();
       long var13 = 270389152141252877L;
       Ref.h2(270389152141252877L, var13);
       Object[] var10003 = Registry.emptyArgs();
-      long var16 = 634817973682994708L;
+      var16 = 634817973682994708L;
       Object[] var15 = var10003;
       Ref.h(634817973682994708L, var15, var16);
       Object[] var10004 = Registry.emptyArgs();
       long var18 = 240567170779145617L;
       Object[] var17 = var10004;
       Ref.h(240567170779145617L, var17, var18);
-      Object[] var10005 = Registry.emptyArgs();
-      long var20 = 226341449505323490L;
-      Object[] var19 = var10005;
+      Object var10005 = Registry.emptyArgs();
+      var20 = 226341449505323490L;
+      Object var19 = var10005;
       var10005 = Ref.h(226341449505323490L, var19, var20);
 
       try {
-         var10005 = (com.finalshell.ui.frame.U)var10005;
+         var10005 = (com.finalshell.ui.frame.MainFrame)var10005;
       } catch (InvocationTargetException var54) {
          throw var54.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var3 = var10005;
+      com.finalshell.ui.frame.MainFrame var3 = var10005;
       Registry.emptyArgs();
       long var21 = 270389152141252877L;
       Ref.h2(270389152141252877L, var21);
       U62 var10007 = (U62)(Registry.emptyArgs());
       long var24 = 306266403902896148L;
-      Object[] var23 = var10007;
+      Object var23 = var10007;
       var10007 = Ref.h(306266403902896148L, var23, var24);
 
       try {
@@ -1410,7 +1442,7 @@ var242 = new Dimension(var3, var244);
       Y();
       ConnectionProperty var10009 = (ConnectionProperty)(Registry.emptyArgs());
       long var26 = 179934491990092343L;
-      Object[] var25 = var10009;
+      Object var25 = var10009;
       var10009 = Ref.h(179934491990092343L, var25, var26);
 
       try {
@@ -1420,10 +1452,10 @@ var242 = new Dimension(var3, var244);
       }
 
       ConnectionProperty var5 = var10009;
-      com.finalshell.ui.frame.U var1 = var3;
+      com.finalshell.ui.frame.MainFrame var1 = var3;
       var10009 = Registry.emptyArgs();
       long var28 = 165950045643857861L;
-      Object[] var27 = var10009;
+      Object var27 = var10009;
       var10009 = Ref.h(165950045643857861L, var27, var28);
 
       try {
@@ -1451,7 +1483,7 @@ var242 = new Dimension(var3, var244);
 
                   label139: {
                      ConnectionProperty var6 = var69;
-                     ConnectionProperty var70 = var6;
+                     var70 = var6;
                      if (var3 == null) {
                         if (var6 == null) {
                            break label139;
@@ -1477,7 +1509,7 @@ var242 = new Dimension(var3, var244);
                var10009 = var4;
                Object[] var71 = Registry.emptyArgs();
                long var34 = 165950045643857861L;
-               Object[] var33 = var71;
+               var33 = var71;
                var10012 = var34;
                Object var72 = Ref.h(165950045643857861L, var33, var34);
 
@@ -1512,7 +1544,7 @@ var242 = new Dimension(var3, var244);
                   }
 
                   label124: {
-                     ConnectionProperty var76 = var57;
+                     var76 = var57;
                      if (var1 == null) {
                         if (var57 == null) {
                            break label124;
@@ -1563,6 +1595,7 @@ var242 = new Dimension(var3, var244);
    }
 
    public void d() {
+      Object[] var16;
       int[] var1 = Y();
       Object var4 = 544586534803602568L;
       Object var10001 = (JScrollPane)Ref.g(544586534803602568L, var4);
@@ -1587,12 +1620,12 @@ var242 = new Dimension(var3, var244);
       Ref.g(220282364724549275L, var14);
       Object[] var10006 = Registry.emptyArgs();
       long var17 = 194560825135347400L;
-      Object[] var16 = var10006;
+      var16 = var10006;
       Ref.h(194560825135347400L, var16, var17);
       Object[] var10007 = Registry.emptyArgs();
       long var19 = 424156930953488367L;
       Object[] var18 = var10007;
-      Copy3 var3 = (Copy3)Ref.h(424156930953488367L, var18, var19);
+      CommandListPanel var3 = (CommandListPanel)Ref.h(424156930953488367L, var18, var19);
       var2.height = a(4391, 7430188607703190936L);
    }
 
@@ -1640,13 +1673,14 @@ var242 = new Dimension(var3, var244);
       Ref.s(220282364724549275L, var1, var3);
    }
 
-   public Copy3 g(String var1) {
-      Copy3 var3 = null;
+   public CommandListPanel g(String var1) {
+      Object[] var16;
+      CommandListPanel var3 = null;
       Object var8 = 220282364724549275L;
       Ref.g(220282364724549275L, var8);
       ArrayList var10002 = (ArrayList)(Registry.emptyArgs());
       long var11 = 230171768324088030L;
-      Object[] var10 = var10002;
+      Object var10 = var10002;
       var10002 = Ref.h(230171768324088030L, var10, var11);
 
       try {
@@ -1665,7 +1699,7 @@ var242 = new Dimension(var3, var244);
          Object[] var10003 = Registry.emptyArgs();
          long var13 = 424156930953488367L;
          Object[] var12 = var10003;
-         Copy3 var7 = (Copy3)Ref.h(424156930953488367L, var12, var13);
+         CommandListPanel var7 = (CommandListPanel)Ref.h(424156930953488367L, var12, var13);
          if (var2 == null) {
             Object[] var10004 = Registry.emptyArgs();
             long var15 = 183035319181805634L;
@@ -1673,7 +1707,7 @@ var242 = new Dimension(var3, var244);
             Ref.h(183035319181805634L, var14, var15);
             String var10005 = (String)(Registry.emptyArgs());
             long var17 = 194080076253066315L;
-            Object[] var16 = var10005;
+            var16 = var10005;
             var10005 = Ref.h(194080076253066315L, var16, var17);
 
             try {
@@ -1695,6 +1729,11 @@ var242 = new Dimension(var3, var244);
    }
 
    public void e(String var1) {
+      long var16;
+      long var20;
+      Object[] var33;
+      Integer var50;
+      Integer var51;
       Li4 var2 = new Li4();
       Object[] var10001 = Registry.packArgs(var1);
       long var8 = 193904661956891993L;
@@ -1709,7 +1748,7 @@ var242 = new Dimension(var3, var244);
 
       ArrayList var10002 = (ArrayList)(Registry.emptyArgs());
       long var10 = 418850269901941975L;
-      Object[] var9 = var10002;
+      Object var9 = var10002;
       var10002 = Ref.h(418850269901941975L, var9, var10);
 
       try {
@@ -1720,9 +1759,9 @@ var242 = new Dimension(var3, var244);
 
       ArrayList var3 = var10002;
       Li4 var4 = (Li4)var3.get(var3.size() - 1);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var12 = 145535910876897139L;
-      Object[] var11 = var10004;
+      Object var11 = var10004;
       var10004 = Ref.h(145535910876897139L, var11, var12);
 
       try {
@@ -1742,7 +1781,7 @@ var242 = new Dimension(var3, var244);
       }
 
       var10005 = Registry.packArgs(var51);
-      long var16 = 470936572593593753L;
+      var16 = 470936572593593753L;
       Object[] var15 = (Object[])var10005;
       Ref.h(470936572593593753L, var15, var16);
 
@@ -1756,12 +1795,12 @@ var242 = new Dimension(var3, var244);
       long var17 = 270389152141252877L;
       Ref.h2(270389152141252877L, var17);
       Object[] var10007 = Registry.emptyArgs();
-      long var20 = 306266403902896148L;
+      var20 = 306266403902896148L;
       Object[] var19 = var10007;
       Ref.h(306266403902896148L, var19, var20);
       ArrayList var10008 = Registry.emptyArgs();
       long var22 = 518875030097846779L;
-      Object[] var21 = var10008;
+      Object var21 = var10008;
       var10008 = Ref.h(518875030097846779L, var21, var22);
 
       try {
@@ -1785,7 +1824,7 @@ var242 = new Dimension(var3, var244);
          throw var40.getTargetException();
       }
 
-      Copy3 var5 = new Copy3(this, var2);
+      CommandListPanel var5 = new CommandListPanel(this, var2);
       Object var27 = 220282364724549275L;
       Ref.g(220282364724549275L, var27);
       Object[] var10014 = Registry.emptyArgs();
@@ -1804,7 +1843,7 @@ var242 = new Dimension(var3, var244);
 
       var10014 = Registry.packArgs(var2);
       long var34 = 276170834929945961L;
-      Object[] var33 = var10014;
+      var33 = var10014;
       Ref.h(276170834929945961L, var33, var34);
 
       try {
@@ -1826,6 +1865,8 @@ var242 = new Dimension(var3, var244);
    }
 
    public void F(T32 var1, Li4 var2, String var3) {
+      long var16;
+      long var20;
       Object[] var10001 = Registry.packArgs(var3);
       long var6 = 193904661956891993L;
       Object[] var5 = var10001;
@@ -1846,10 +1887,10 @@ var242 = new Dimension(var3, var244);
       Ref.h(306266403902896148L, var9, var10);
       Li4 var10005 = (Li4)(Registry.emptyArgs());
       long var12 = 194080076253066315L;
-      Object[] var11 = var10005;
+      Object var11 = var10005;
       var10005 = Registry.packArgs(Ref.h(194080076253066315L, var11, var12));
       long var14 = 233092091994680304L;
-      Object[] var13 = var10005;
+      Object var13 = var10005;
       var10005 = Ref.h(233092091994680304L, var13, var14);
 
       try {
@@ -1860,7 +1901,7 @@ var242 = new Dimension(var3, var244);
 
       Li4 var4 = var10005;
       Object[] var10006 = Registry.e(System.currentTimeMillis());
-      long var16 = 379623615202365815L;
+      var16 = 379623615202365815L;
       Object[] var15 = var10006;
       Ref.h(379623615202365815L, var15, var16);
 
@@ -1882,7 +1923,7 @@ var242 = new Dimension(var3, var244);
       }
 
       Object[] var10008 = Registry.packArgs(var3);
-      long var20 = 519460332647460288L;
+      var20 = 519460332647460288L;
       Object[] var19 = var10008;
       Ref.h(519460332647460288L, var19, var20);
 
@@ -1953,6 +1994,9 @@ var242 = new Dimension(var3, var244);
    }
 
    public void C(T32 var1) {
+      long var16;
+      long var20;
+      Object[] var33;
       Object[] var10001 = Registry.emptyArgs();
       long var4 = 348047003824927685L;
       Object[] var3 = var10001;
@@ -1982,7 +2026,7 @@ var242 = new Dimension(var3, var244);
       long var13 = 270389152141252877L;
       Ref.h2(270389152141252877L, var13);
       Object[] var10007 = Registry.emptyArgs();
-      long var16 = 578864097947885485L;
+      var16 = 578864097947885485L;
       Object[] var15 = var10007;
       Ref.h(578864097947885485L, var15, var16);
 
@@ -1995,7 +2039,7 @@ var242 = new Dimension(var3, var244);
       Object var17 = 220282364724549275L;
       Ref.g(220282364724549275L, var17);
       Object[] var10009 = Registry.packArgs(var1);
-      long var20 = 267026473738179692L;
+      var20 = 267026473738179692L;
       Object[] var19 = var10009;
       Ref.h(267026473738179692L, var19, var20);
 
@@ -2035,7 +2079,7 @@ var242 = new Dimension(var3, var244);
       Ref.h2(270389152141252877L, var31);
       Object[] var10016 = Registry.emptyArgs();
       long var34 = 612604310671515822L;
-      Object[] var33 = var10016;
+      var33 = var10016;
       Ref.h(612604310671515822L, var33, var34);
       Object[] var10017 = Registry.emptyArgs();
       long var36 = 200561288808923907L;
@@ -2063,27 +2107,27 @@ var242 = new Dimension(var3, var244);
    public void S() {
       Object var2 = 220282364724549275L;
       Ref.g(220282364724549275L, var2);
-      EditDialog3 var10004 = Registry.emptyArgs();
+      CommandEditDialog var10004 = Registry.emptyArgs();
       long var5 = 194560825135347400L;
-      Object[] var4 = var10004;
-      var10004 = (EditDialog3)Ref.h(194560825135347400L, var4, var5);
+      Object var4 = var10004;
+      var10004 = (CommandEditDialog)Ref.h(194560825135347400L, var4, var5);
       Object[] var10005 = Registry.emptyArgs();
       long var7 = 424156930953488367L;
       Object[] var6 = var10005;
-var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var6, var7), false, this, null);
+var10004 = new Insets((CommandListPanel)Ref.h(424156930953488367L, var6, var7), false, this, null);
    }
 
    public void j(T32 var1) {
       Object var3 = 220282364724549275L;
       Ref.g(220282364724549275L, var3);
-      EditDialog3 var10004 = Registry.emptyArgs();
+      CommandEditDialog var10004 = Registry.emptyArgs();
       long var6 = 194560825135347400L;
-      Object[] var5 = var10004;
-      var10004 = (EditDialog3)Ref.h(194560825135347400L, var5, var6);
+      Object var5 = var10004;
+      var10004 = (CommandEditDialog)Ref.h(194560825135347400L, var5, var6);
       Object[] var10005 = Registry.emptyArgs();
       long var8 = 424156930953488367L;
       Object[] var7 = var10005;
-var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this, var1);
+var10004 = new Insets((CommandListPanel)Ref.h(424156930953488367L, var7, var8), true, this, var1);
    }
 
    public void J() {
@@ -2096,7 +2140,7 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
       Ref.h(399585344452154517L, var5, var6);
       NY var10003 = (NY)(Registry.emptyArgs());
       long var8 = 149968465491171480L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(149968465491171480L, var7, var8);
 
       try {
@@ -2109,7 +2153,7 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
       boolean var15 = false;
       Color var10008 = (Color)(Registry.emptyArgs());
       long var10 = 345089686683358688L;
-      Object[] var9 = var10008;
+      Object var9 = var10008;
       var10008 = Ref.h(345089686683358688L, var9, var10);
 
       try {
@@ -2123,6 +2167,7 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
    }
 
    public ArrayList g$ArrayList() {
+      long var16;
       Object var11 = 220282364724549275L;
       Component[] var2 = ((AM)Ref.g(220282364724549275L, var11)).getComponents();
       ArrayList var3 = new ArrayList();
@@ -2143,12 +2188,12 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
             Object[] var13 = var10002;
             Ref.h(227343441450903310L, var13, var14);
             Object[] var10003 = Registry.emptyArgs();
-            long var16 = 424156930953488367L;
+            var16 = 424156930953488367L;
             Object[] var15 = var10003;
-            Copy3 var9 = (Copy3)Ref.h(424156930953488367L, var15, var16);
-            Li4 var10004 = (Li4)(Registry.emptyArgs());
+            CommandListPanel var9 = (CommandListPanel)Ref.h(424156930953488367L, var15, var16);
+            Object var10004 = Registry.emptyArgs();
             long var18 = 537700506963524298L;
-            Object[] var17 = var10004;
+            Object var17 = var10004;
             var10004 = Ref.h(537700506963524298L, var17, var18);
 
             try {
@@ -2165,7 +2210,6 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
             var3.add(var10);
             var6++;
             if (var1 == null) {
-      U62 var20;
                continue;
             }
          }
@@ -2178,6 +2222,7 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
    }
 
    public void R(Y9 var1) {
+      long var16;
       Object[] var10001 = Registry.emptyArgs();
       long var6 = 625676037677438329L;
       Object[] var5 = var10001;
@@ -2188,9 +2233,9 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
       Li4 var2 = (Li4)Ref.h(348047003824927685L, var7, var8);
       Object var9 = 220282364724549275L;
       Component[] var3 = ((AM)Ref.g(220282364724549275L, var9)).getComponents();
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var12 = 418850269901941975L;
-      Object[] var11 = var10004;
+      Object var11 = var10004;
       var10004 = Ref.h(418850269901941975L, var11, var12);
 
       try {
@@ -2204,7 +2249,7 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
       long var13 = 270389152141252877L;
       Ref.h2(270389152141252877L, var13);
       Object[] var10006 = Registry.emptyArgs();
-      long var16 = 306266403902896148L;
+      var16 = 306266403902896148L;
       Object[] var15 = var10006;
       Ref.h(306266403902896148L, var15, var16);
       Object[] var10007 = Registry.packArgs(var4);
@@ -2260,6 +2305,8 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
 
    @Override
    public void v(Y9 var1) {
+      Object[] var16;
+      Object[] var20;
       Y();
       Object var4 = 220282364724549275L;
       Ref.g(220282364724549275L, var4);
@@ -2270,9 +2317,9 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
       Object[] var10005 = Registry.emptyArgs();
       long var9 = 424156930953488367L;
       Object[] var8 = var10005;
-      Copy3 var46 = (Copy3)Ref.h(424156930953488367L, var8, var9);
+      CommandListPanel var46 = (CommandListPanel)Ref.h(424156930953488367L, var8, var9);
       long var11 = 448526077136728943L;
-      Copy3 var10 = var46;
+      CommandListPanel var10 = var46;
       Ref.s(448526077136728943L, var10, var11);
       Object var2 = var10004;
       Object var12 = 448526077136728943L;
@@ -2281,9 +2328,9 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
       long var15 = 537700506963524298L;
       Object[] var14 = var10006;
       Ref.h(537700506963524298L, var14, var15);
-      Object[] var10007 = Registry.emptyArgs();
+      Object var10007 = Registry.emptyArgs();
       long var17 = 194080076253066315L;
-      Object[] var16 = var10007;
+      var16 = var10007;
       var10007 = Ref.h(194080076253066315L, var16, var17);
 
       try {
@@ -2298,7 +2345,7 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
       Ref.h2(270389152141252877L, var18);
       Object[] var10009 = Registry.emptyArgs();
       long var21 = 306266403902896148L;
-      Object[] var20 = var10009;
+      var20 = var10009;
       Ref.h(306266403902896148L, var20, var21);
       Object[] var10010 = Registry.packArgs(var3);
       long var23 = 585163400043361868L;
@@ -2380,10 +2427,11 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
 
    @Override
    public void K(Y9 var1) {
+      long var16;
       Y();
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var10 = 446119396850912594L;
-      Object[] var9 = var10002;
+      Object var9 = var10002;
       var10002 = Ref.h(446119396850912594L, var9, var10);
 
       try {
@@ -2402,7 +2450,7 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
          var6.addActionListener(new VG(this));
          var4.add(var6);
          JMenuItem var7 = new JMenuItem(a(-20357, 31401));
-         var7.addActionListener(new Listener(this));
+         var7.addActionListener(new CommandCategoryDeleteListener(this));
          var4.add(var7);
          var4.addSeparator();
          JMenuItem var8 = new JMenuItem(a(-20397, 6215));
@@ -2416,7 +2464,7 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
          long var14 = 625676037677438329L;
          Object[] var13 = var10004;
          var10004 = Registry.packArgs(Ref.h(625676037677438329L, var13, var14));
-         long var16 = 176011466134249595L;
+         var16 = 176011466134249595L;
          Object[] var15 = var10004;
          Ref.h(176011466134249595L, var15, var16);
 
@@ -2451,6 +2499,7 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
 
    @Override
    public void O(Ty4 var1) {
+      Integer var16;
       Ty4 var17;
       int var21;
       label59: {
@@ -2547,6 +2596,8 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
    }
 
    public void y() {
+      long var16;
+      long var20;
       long var2 = 220282364724549275L;
       Object var1 = null;
       Ref.s(220282364724549275L, var1, var2);
@@ -2568,13 +2619,13 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
       long var14 = 544586534803602568L;
       Object var13 = null;
       Ref.s(544586534803602568L, var13, var14);
-      long var16 = 165605583887724001L;
+      var16 = 165605583887724001L;
       Object var15 = null;
       Ref.s(165605583887724001L, var15, var16);
       long var18 = 499934073596807594L;
       Object var17 = null;
       Ref.s(499934073596807594L, var17, var18);
-      long var20 = 265429771357654528L;
+      var20 = 265429771357654528L;
       Object var19 = null;
       Ref.s(265429771357654528L, var19, var20);
       long var22 = 152428484444415463L;
@@ -3426,6 +3477,7 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[43];
       int var11 = 0;
       String var10 = "厞郁務\u000f-^C\u0090TùQ°\u0000Á\u0099kfjj\u0005¨\u009fÇÃ¥\u000e\u001bí\u0085æ\u008c7Jicúõ\fë\u0086\u001d\u0003?LJ\\ÂÕïÙ\t¤0M\u001dVLZ\u0018°~è(óÁ®H\u0086Lú\u0004凴郷估譋\u0005厨逩吡溜竄\u000e^³--\u0099NèF7\u001f\u007f°º\u0013\u0007淳勑呖价cù¨\u0004\u0011°\u000bÇ\u0004徫到侇订\u0012ò\u0010r¯\u009b~-xÆùCl5\u0096\u000e'è5\u0012Ó|§¼\u008d9õE\u008e(F\u0090d#®\u0090[\u0091\u0005吹仅缲迌嚯\u0004快痜窔袃\u000fcf#|íÿ&Ø¹lI£\\à\u0003\f}àZ\u00074\u001aG §x¯Ò\u0004忖勹伨讛\u0005¦Ï\u0007É\u009c\u0011I\u0015Ü¹äÍ]Zä'Ç9Lmð{\u0083\u0002邂颓\u0003醧呓呜\u000e Ââ\u0003`\u008b×þÐ\b\u0083R%O\b攕庚敒亝契ä\u001bû\u000fêz»\u0014Ki²¢|\u0083\u0016!\u0097aT\u0005\u001ec\u0012\\|\r揚ZÖ\u008f\u0019·\u0086tg\u0099ù卾道\u0004凛逖俕護\u0005\u0095\u008ecáR\u0003厼退劝\u000f\u0099\u0002Õ\u001b\u0086\u0088\u000b\u009eK\u0004ðÓK}Ï\u000e\u000b\u0099\u0087hÌæBSb½Õäï\u009b\u0002剼雡)\t¹\r\u009atØÚ§rhöZËÂÁc%ý_Â\u0015¿L8EH\"ì\u00adIÑ¤´!Ü}\u0000_FFÕ$Â¬t8[\u008c?-Î9ap9\u0087\u009fËîè&`:ë©¹åGï\u00ad×\u0081z(Ä\u008fa\u001f\u0011挞ËU¢\u0010¤\u00ad\u001f\u0013\u0088Ô(w\u008cù卒遌\u0012\u0083\u007f\\B^Ã\u0095ÏÑ\u000f¡²iM\u0085\\\u0099Z\u0002卩造\u0002\u0013\u0096\b揸á\u00888\u0082Þ卉遄\u0002厩連";
@@ -3606,7 +3658,6 @@ var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this,
       }
    }
 }
-
 
 
 

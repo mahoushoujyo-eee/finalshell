@@ -30,7 +30,7 @@ public class WK extends W2 {
       Object var10002 = Ref.g(254384586786323749L, var11);
       ArrayList var10003 = Registry.emptyArgs();
       long var14 = 463836399714355767L;
-      Object[] var13 = var10003;
+      Object var13 = var10003;
       var10003 = Ref.h(463836399714355767L, var13, var14);
 
       try {
@@ -78,7 +78,7 @@ public class WK extends W2 {
                Ref.g(254384586786323749L, var21);
                ArrayList var10006 = Registry.emptyArgs();
                long var24 = 463836399714355767L;
-               Object[] var23 = var10006;
+               Object var23 = var10006;
                var10006 = Ref.h(463836399714355767L, var23, var24);
 
                try {

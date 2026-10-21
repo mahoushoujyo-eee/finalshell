@@ -126,6 +126,8 @@ public class Ts2_2 extends T4 implements SwingConstants {
 
    @Override
    public void layoutContainer(Container var1) {
+      int var24;
+      int var26;
       int var2 = T4.O();
       Container var10000 = var1;
       if (var2 == 0) {
@@ -195,7 +197,7 @@ public class Ts2_2 extends T4 implements SwingConstants {
                   var5++;
                }
 
-               var22 = (this.F) ? 1 : 0;
+               var22 = this.F;
             }
 
             if (var2 == 0) {
@@ -259,7 +261,7 @@ public class Ts2_2 extends T4 implements SwingConstants {
                }
 
                int var17 = (var24) ? 1 : 0;
-               int var25 = (this.a) ? 1 : 0;
+               int var25 = this.a;
                if (var2 == 0) {
                   int var27;
                   label106: {
@@ -278,7 +280,6 @@ public class Ts2_2 extends T4 implements SwingConstants {
                            }
 
                            if (this.J == 2) {
-      int var26;
                               var17 = var3.left + var4 - var9;
                            }
                         }
@@ -316,8 +317,8 @@ public class Ts2_2 extends T4 implements SwingConstants {
       int var10001;
       label34: {
          label33: {
-            var4 = (((T4.b()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-            var6 = (((this.a) != 0) != 0) != 0;
+            var4 = (T4.b()) ? 1 : 0;
+            var6 = this.a;
             if (var4 != 0) {
                if (!this.a) {
                   var6 = this.J;
@@ -401,7 +402,6 @@ public class Ts2_2 extends T4 implements SwingConstants {
       b = var10002;
    }
 }
-
 
 
 

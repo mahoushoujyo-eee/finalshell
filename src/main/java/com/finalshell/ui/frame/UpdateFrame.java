@@ -1,7 +1,7 @@
 package com.finalshell.ui.frame;
 
 import com.finalshell.core.CH;
-import com.finalshell.core.Kz2;
+import com.finalshell.core.UpdateManifest;
 import com.finalshell.core.Yy4_2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
@@ -47,6 +47,9 @@ public class UpdateFrame extends JFrame implements CH {
 
    public UpdateFrame(JFrame var1) {
    super();
+   boolean var73;
+   boolean var74;
+   long var9;
       JPanel var5;
       label80: {
          Registry.lookupField(618853683069368772L).setBoolean(this, false);
@@ -60,7 +63,7 @@ public class UpdateFrame extends JFrame implements CH {
          long var6 = 270389152141252877L;
          Ref.h2(270389152141252877L, var6);
          Object[] var10004 = Registry.emptyArgs();
-         long var9 = 479882039388176646L;
+         var9 = 479882039388176646L;
          Object[] var8 = var10004;
          var10004 = Ref.h(479882039388176646L, var8, var9);
          long var11 = 215526989813745242L;
@@ -142,7 +145,7 @@ public class UpdateFrame extends JFrame implements CH {
             Ref.s(406171939123952740L, var44, var45);
             JScrollPane var10021;
             Object var46 = 406171939123952740L;
-            super((JTextArea)Ref.g(406171939123952740L, var46));
+            // [VF-super] super((JTextArea)Ref.g(406171939123952740L, var46));
             long var49 = 286993704937759947L;
             JScrollPane var48 = var10021;
             Ref.s(286993704937759947L, var48, var49);
@@ -221,7 +224,8 @@ public class UpdateFrame extends JFrame implements CH {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void s(JTextArea var1) {
-      JPanel var9;
+      BadLocationException var10;
+      int var9;
       String[] var10000 = q();
       int var3 = var1.getLineCount() - a(30243, 5602459892254731872L);
       String[] var2 = var10000;
@@ -244,7 +248,6 @@ public class UpdateFrame extends JFrame implements CH {
             try {
                var9 = var1.getLineEndOffset(var3 - 1);
             } catch (BadLocationException var6) {
-      long var10;
                var10 = var6;
                boolean var10001 = false;
                break label30;
@@ -256,7 +259,6 @@ public class UpdateFrame extends JFrame implements CH {
             var1.replaceRange("", 0, var8);
             return;
          } catch (BadLocationException var5) {
-      JPanel var10;
             var10 = var5;
             boolean var11 = false;
          }
@@ -267,12 +269,13 @@ public class UpdateFrame extends JFrame implements CH {
    }
 
    public void g(String var1) {
+      long var9;
       q();
       Object var4 = 406171939123952740L;
       ((JTextArea)Ref.g(406171939123952740L, var4)).append(var1);
       Object var6 = 406171939123952740L;
       Object[] var10003 = Registry.packArgs(Ref.g(406171939123952740L, var6));
-      long var9 = 545163393621250611L;
+      var9 = 545163393621250611L;
       Object[] var8 = var10003;
       Ref.h(545163393621250611L, var8, var9);
 
@@ -290,6 +293,8 @@ public class UpdateFrame extends JFrame implements CH {
    }
 
    public void j() {
+      Object[] var10;
+      boolean var15;
       label37: {
          String[] var1 = q();
          if (var1 == null) {
@@ -330,7 +335,7 @@ public class UpdateFrame extends JFrame implements CH {
       Ref.g(215526989813745242L, var8);
       Object[] var10002 = Registry.emptyArgs();
       long var11 = 373868045552747003L;
-      Object[] var10 = var10002;
+      var10 = var10002;
       Ref.h(373868045552747003L, var10, var11);
 
       try {
@@ -342,11 +347,12 @@ public class UpdateFrame extends JFrame implements CH {
 
    @Override
    public void setVisible(boolean var1) {
+      UpdateFrame var9;
       String[] var10000 = q();
       Object var3 = this.isVisible();
       String[] var2 = var10000;
       super.setVisible((boolean)var1);
-      UpdateFrame var9 = (UpdateFrame)var1;
+      var9 = (UpdateFrame)var1;
       if (var2 == null) {
          if (var1 != false) {
             Registry.lookupField(618853683069368772L).setBoolean(this, true);
@@ -391,27 +397,38 @@ public class UpdateFrame extends JFrame implements CH {
    }
 
    public void t() {
+      Object[] var15;
+      boolean var175;
+      boolean var191;
+      boolean var195;
+      boolean var199;
+      Long var202;
+      boolean var213;
+      boolean var216;
+      boolean var219;
+      Long var221;
+      long var30;
       String var2 = a(-11805, -12181);
       Object var5 = 215526989813745242L;
       Ref.g(215526989813745242L, var5);
-      Kz2 var10002 = (Kz2)(Registry.emptyArgs());
+      UpdateManifest var10002 = (UpdateManifest)(Registry.emptyArgs());
       long var8 = 158188277888657185L;
-      Object[] var7 = var10002;
+      Object var7 = var10002;
       var10002 = Ref.h(158188277888657185L, var7, var8);
 
       try {
-         var10002 = (Kz2)var10002;
+         var10002 = (UpdateManifest)var10002;
       } catch (InvocationTargetException var159) {
          throw var159.getTargetException();
       }
 
-      Kz2 var3 = var10002;
+      UpdateManifest var3 = var10002;
       q();
       Object var9 = 215526989813745242L;
       Object var10004 = Ref.g(215526989813745242L, var9);
       String var10005 = (String)(Registry.emptyArgs());
       long var12 = 443433712666304670L;
-      Object[] var11 = var10005;
+      Object var11 = var10005;
       var10005 = Ref.h(443433712666304670L, var11, var12);
 
       try {
@@ -427,7 +444,7 @@ public class UpdateFrame extends JFrame implements CH {
          Ref.g(215526989813745242L, var13);
          Boolean var10006 = (Boolean)(Registry.emptyArgs());
          long var16 = 187198425743999659L;
-         Object[] var15 = var10006;
+         var15 = var10006;
          var10006 = Ref.h(187198425743999659L, var15, var16);
 
          try {
@@ -484,7 +501,7 @@ public class UpdateFrame extends JFrame implements CH {
                      new StringBuilder().append(a(-11795, -11989));
                      String var170 = (String)(Registry.emptyArgs());
                      long var26 = 542847412748824793L;
-                     Object[] var25 = var170;
+                     Object var25 = var170;
                      var170 = Ref.h(542847412748824793L, var25, var26);
 
                      try {
@@ -498,9 +515,9 @@ public class UpdateFrame extends JFrame implements CH {
 
                   Object var27 = 215526989813745242L;
                   Ref.g(215526989813745242L, var27);
-                  Object[] var173 = Registry.emptyArgs();
-                  long var30 = 547240307566989756L;
-                  Object[] var29 = var173;
+                  Object var173 = Registry.emptyArgs();
+                  var30 = 547240307566989756L;
+                  Object var29 = var173;
                   var173 = Ref.h(547240307566989756L, var29, var30);
 
                   try {
@@ -517,7 +534,7 @@ public class UpdateFrame extends JFrame implements CH {
                            Object var10010 = Ref.g(215526989813745242L, var31);
                            String var10011 = (String)(Registry.emptyArgs());
                            long var34 = 423681337208045927L;
-                           Object[] var33 = var10011;
+                           Object var33 = var10011;
                            var10011 = Ref.h(423681337208045927L, var33, var34);
 
                            try {
@@ -529,9 +546,9 @@ public class UpdateFrame extends JFrame implements CH {
                            var10010.append((String)var10011).append(" ");
                            Object var35 = 215526989813745242L;
                            Ref.g(215526989813745242L, var35);
-                           Object[] var10013 = Registry.emptyArgs();
+                           Object var10013 = Registry.emptyArgs();
                            long var38 = 365646851315276411L;
-                           Object[] var37 = var10013;
+                           Object var37 = var10013;
                            var10013 = Ref.h(365646851315276411L, var37, var38);
 
                            try {
@@ -553,9 +570,9 @@ public class UpdateFrame extends JFrame implements CH {
                            var10013.append((String)var10014).append("/");
                            Object var41 = 215526989813745242L;
                            Ref.g(215526989813745242L, var41);
-                           Object[] var10016 = Registry.emptyArgs();
+                           Object var10016 = Registry.emptyArgs();
                            long var44 = 369915737473924171L;
-                           Object[] var43 = var10016;
+                           Object var43 = var10016;
                            var10016 = Ref.h(369915737473924171L, var43, var44);
 
                            try {
@@ -664,7 +681,7 @@ public class UpdateFrame extends JFrame implements CH {
                Object var187 = Ref.g(215526989813745242L, var59);
                boolean var10012 = (boolean)Registry.emptyArgs();
                long var62 = 349881537638593262L;
-               Object[] var61 = var10012;
+               Object var61 = var10012;
                var10012 = Ref.h(349881537638593262L, var61, var62);
 
                try {
@@ -714,7 +731,7 @@ public class UpdateFrame extends JFrame implements CH {
                Object var207 = Ref.g(215526989813745242L, var69);
                boolean var10015 = (boolean)Registry.emptyArgs();
                long var72 = 349881537638593262L;
-               Object[] var71 = var10015;
+               Object var71 = var10015;
                var10015 = Ref.h(349881537638593262L, var71, var72);
 
                try {
@@ -800,7 +817,7 @@ public class UpdateFrame extends JFrame implements CH {
                Object var188 = Ref.g(215526989813745242L, var85);
                boolean var193 = (boolean)Registry.emptyArgs();
                long var88 = 349881537638593262L;
-               Object[] var87 = var193;
+               Object var87 = var193;
                var193 = Ref.h(349881537638593262L, var87, var88);
 
                try {
@@ -850,7 +867,7 @@ public class UpdateFrame extends JFrame implements CH {
                Object var210 = Ref.g(215526989813745242L, var95);
                boolean var214 = (boolean)Registry.emptyArgs();
                long var98 = 349881537638593262L;
-               Object[] var97 = var214;
+               Object var97 = var214;
                var214 = Ref.h(349881537638593262L, var97, var98);
 
                try {
@@ -933,9 +950,9 @@ public class UpdateFrame extends JFrame implements CH {
             JButton var184 = (JButton)Ref.g(141748913226340279L, var109);
             Object var111 = 215526989813745242L;
             Object var189 = Ref.g(215526989813745242L, var111);
-            Object[] var197 = Registry.emptyArgs();
+            Object var197 = Registry.emptyArgs();
             long var114 = 187198425743999659L;
-            Object[] var113 = var197;
+            Object var113 = var197;
             var197 = Ref.h(187198425743999659L, var113, var114);
 
             try {
@@ -955,7 +972,7 @@ public class UpdateFrame extends JFrame implements CH {
             Object var211 = Ref.g(215526989813745242L, var117);
             boolean var217 = (boolean)Registry.emptyArgs();
             long var120 = 349881537638593262L;
-            Object[] var119 = var217;
+            Object var119 = var217;
             var217 = Ref.h(349881537638593262L, var119, var120);
 
             try {
@@ -1853,9 +1870,11 @@ public class UpdateFrame extends JFrame implements CH {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var30;
       String[] var13 = new String[21];
       int var11 = 0;
-      String var10 = "彍勀狠板3\u0004\u0006厒猡攱牥柸¯\u0004梼枫暃攳\u0010+¨ \u008aÀé\u0011\u008e|å,¹í´â\u0006\fWVöã µ\u008cP,\u008fì-\u000e¼\u00ad\u0098Ü.CGâ0b\u00ad\u001eÓ\u009d\u001e\r<d\u0018X»\u0002Ä\u001e¬`\u0090{\u0086Ä¢\u008c\u0004\u0080*\\¦[à\u0099\u0019\u0002 \u001f\u0084\t很姛宠袣庎儘關迖仡\u0006巤總昧朾旊狭\t晲敐斛仵嶢仿违宾报\u0004>\u0005\u0007C\u0004宻衻攒彪\u0004暢敐旣忔\u0012æyÓFG\u0010j\u008a\u0085=\u001bçU \u0019\u009c\u001f(\u0002Ú~\u0006工縳昇柿旎狕\fÞo\u0003gû\u0090®é\u0000 暺攑\t歭圭桚柂昳旓zUV\u0011G\bô(àÌ\u0084\u007f-jÌ\u0091\u001e!¿\u0000\u0083";
+      var10 = "彍勀狠板3\u0004\u0006厒猡攱牥柸¯\u0004梼枫暃攳\u0010+¨ \u008aÀé\u0011\u008e|å,¹í´â\u0006\fWVöã µ\u008cP,\u008fì-\u000e¼\u00ad\u0098Ü.CGâ0b\u00ad\u001eÓ\u009d\u001e\r<d\u0018X»\u0002Ä\u001e¬`\u0090{\u0086Ä¢\u008c\u0004\u0080*\\¦[à\u0099\u0019\u0002 \u001f\u0084\t很姛宠袣庎儘關迖仡\u0006巤總昧朾旊狭\t晲敐斛仵嶢仿违宾报\u0004>\u0005\u0007C\u0004宻衻攒彪\u0004暢敐旣忔\u0012æyÓFG\u0010j\u008a\u0085=\u001bçU \u0019\u009c\u001f(\u0002Ú~\u0006工縳昇柿旎狕\fÞo\u0003gû\u0090®é\u0000 暺攑\t歭圭桚柂昳旓zUV\u0011G\bô(àÌ\u0084\u007f-jÌ\u0091\u001e!¿\u0000\u0083";
       int var12 = "彍勀狠板3\u0004\u0006厒猡攱牥柸¯\u0004梼枫暃攳\u0010+¨ \u008aÀé\u0011\u008e|å,¹í´â\u0006\fWVöã µ\u008cP,\u008fì-\u000e¼\u00ad\u0098Ü.CGâ0b\u00ad\u001eÓ\u009d\u001e\r<d\u0018X»\u0002Ä\u001e¬`\u0090{\u0086Ä¢\u008c\u0004\u0080*\\¦[à\u0099\u0019\u0002 \u001f\u0084\t很姛宠袣庎儘關迖仡\u0006巤總昧朾旊狭\t晲敐斛仵嶢仿违宾报\u0004>\u0005\u0007C\u0004宻衻攒彪\u0004暢敐旣忔\u0012æyÓFG\u0010j\u008a\u0085=\u001bçU \u0019\u009c\u001f(\u0002Ú~\u0006工縳昇柿旎狕\fÞo\u0003gû\u0090®é\u0000 暺攑\t歭圭桚柂昳旓zUV\u0011G\bô(àÌ\u0084\u007f-jÌ\u0091\u001e!¿\u0000\u0083"
          .length();
       r(null);
@@ -1869,7 +1888,6 @@ public class UpdateFrame extends JFrame implements CH {
          byte var10002 = -1;
 
          while (true) {
-      JButton var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

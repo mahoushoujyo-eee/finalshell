@@ -27,6 +27,7 @@ public class BA3 extends JLabel {
 
    @Override
    public void paint(Graphics var1) {
+      Integer var70;
       int[] var10000 = L9.X();
       Graphics2D var3 = (Graphics2D)var1;
       int[] var2 = var10000;
@@ -37,7 +38,7 @@ public class BA3 extends JLabel {
             Ref.g(453257004386534821L, var18);
             KV var10003 = (KV)(Registry.emptyArgs());
             long var21 = 219753915081057422L;
-            Object[] var20 = var10003;
+            Object var20 = var10003;
             var10003 = Ref.h(219753915081057422L, var20, var21);
 
             try {
@@ -56,7 +57,7 @@ public class BA3 extends JLabel {
                Ref.g(453257004386534821L, var22);
                String var10005 = (String)(Registry.emptyArgs());
                long var25 = 564648154927582737L;
-               Object[] var24 = var10005;
+               Object var24 = var10005;
                var10005 = Ref.h(564648154927582737L, var24, var25);
 
                try {
@@ -72,7 +73,7 @@ public class BA3 extends JLabel {
                      if (var59) {
                         ArrayList var10006 = (ArrayList)(Registry.emptyArgs());
                         long var27 = 332825939301957587L;
-                        Object[] var26 = var10006;
+                        Object var26 = var10006;
                         var10006 = Ref.h(332825939301957587L, var26, var27);
 
                         try {
@@ -147,7 +148,7 @@ public class BA3 extends JLabel {
                         var3.setColor(var40);
                         ArrayList var63 = Registry.emptyArgs();
                         long var29 = 332825939301957587L;
-                        Object[] var28 = var63;
+                        Object var28 = var63;
                         var63 = Ref.h(332825939301957587L, var28, var29);
 
                         try {
@@ -157,9 +158,9 @@ public class BA3 extends JLabel {
                         }
 
                         int var43 = var63.size();
-                        Object[] var10007 = Registry.emptyArgs();
+                        Object var10007 = Registry.emptyArgs();
                         long var31 = 183746953072628965L;
-                        Object[] var30 = var10007;
+                        Object var30 = var10007;
                         var10007 = Ref.h(183746953072628965L, var30, var31);
 
                         try {
@@ -212,9 +213,9 @@ public class BA3 extends JLabel {
                      byte var44 = 3;
                      byte var46 = 2;
                      float var48 = (float)this.getWidth() / 500.0F;
-                     Object[] var68 = Registry.emptyArgs();
+                     Object var68 = Registry.emptyArgs();
                      long var33 = 520926529036853194L;
-                     Object[] var32 = var68;
+                     Object var32 = var68;
                      var68 = Ref.h(520926529036853194L, var32, var33);
 
                      try {

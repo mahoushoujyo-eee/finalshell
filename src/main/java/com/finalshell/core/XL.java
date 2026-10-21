@@ -71,6 +71,9 @@ public class XL extends Xv2 {
 
    @Override
    public void X(XW var1) {
+      boolean var17;
+      XL var18;
+      XL var19;
       boolean var2;
       int var14;
       label139: {
@@ -79,7 +82,7 @@ public class XL extends Xv2 {
          this.Z = this.i();
          this.u = this.g();
          this.q = this.S();
-         var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+         var2 = (var10000) != 0;
          this.y = NG.q(this.A());
          this.W = NG.R(this.J());
          int var3 = var1.getHeight();
@@ -189,13 +192,13 @@ public class XL extends Xv2 {
          var19.o[var5 - 1][var6 - 1] = this.Z;
       }
 
-      byte var20 = (this.q) ? 1 : 0;
+      byte var20 = (byte)((this.q) ? 1 : 0);
       if (!var2) {
          if (!this.q) {
             this.s = this.c(this.o);
          }
 
-         var20 = (this.W.equals(com.finalshell.ui.model.Du2.randomize)) ? 1 : 0;
+         var20 = (byte)((this.W.equals(com.finalshell.ui.model.Du2.randomize)) ? 1 : 0);
       }
 
       label150: {
@@ -263,7 +266,7 @@ public class XL extends Xv2 {
       int var3 = 1;
       int var10000 = (com.finalshell.ui.model.Du2.W()) ? 1 : 0;
       int var4 = this.o.length;
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       int var5 = this.o[0].length;
       int var6 = 0;
 
@@ -798,13 +801,14 @@ public class XL extends Xv2 {
 
    @Override
    public void D(Graphics2D var1, XW var2) {
+      Graphics2D var19;
       boolean var3;
       label80: {
          int var10000 = (com.finalshell.ui.model.Du2.R()) ? 1 : 0;
          int var4 = var2.getWidth();
-         var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+         var3 = (var10000) != 0;
          int var5 = var2.getHeight();
-         Graphics2D var19 = var1;
+         var19 = var1;
          if (var3) {
             var1.drawImage(var2.R$BufferedImage(), 0, 0, var4, var5, null);
             if (this.q) {
@@ -849,14 +853,14 @@ public class XL extends Xv2 {
                                  var10002 = var10 < this.j ? 1 : 0;
                               }
 
-                              Composite var17 = RV.a(var1, var10001, (boolean)var10002);
+                              Composite var17 = RV.a(var1, var10001, var10002);
                               var1.drawImage(var2.y(), var11, var12, var15, var16, var11, var12, var15, var16, null);
                               var10002 = var10;
                               if (var3) {
                                  var10002 = var10 < this.j ? 1 : 0;
                               }
 
-                              RV.E(var1, var17, (boolean)var10002);
+                              RV.E(var1, var17, var10002);
                            }
 
                            var9++;
@@ -1723,6 +1727,8 @@ public class XL extends Xv2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var18;
+      char[] var26;
       String[] var9 = new String[11];
       int var7 = 0;
       String var6 = "ÇíÁ\u0004Ãä\u008b6\n\u008d\f¥¹\u008d\u008eJµ¯\b&Ì\u0013$!.oÜPdf[ä!²%\u008aÝùià\u0096æO\u0003¥\u009a`§¹°\u000e_\u0003õ¦ \u0085\u000bà\u0013%Û_\u001f\u001f@jkÛ\fæ\u008aåèGy\u000e\u0091\u0012ÿ\u0095B\n\u0019\u0098\u001aª¸1ö\u0094áÂ\n\u0018\u008f:H¼mv\u001fñ³\u000b\u009c\u0092ªë®\u0019!\u0080\u00ads#\nª\u000elxvk:×Ñ£";
@@ -1738,14 +1744,13 @@ public class XL extends Xv2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var26;
             label47: {
                char[] var32 = var10001.toCharArray();
                int var10004 = var32.length;
                int var10 = 0;
                byte var35 = var10000;
                var26 = var32;
-               int var18 = var10004;
+               var18 = var10004;
                byte var40;
                char[] var44;
                int var10006;

@@ -70,9 +70,9 @@ public class AM extends JPanel {
    public HashMap A;
    public static Jc2 T;
    public int y;
-   public com.finalshell.ui.frame.U j;
+   public com.finalshell.ui.frame.MainFrame j;
    public boolean s;
-   public Copy3 B;
+   public CommandListPanel B;
    public boolean U;
    public boolean C;
    public boolean O;
@@ -89,6 +89,13 @@ public class AM extends JPanel {
 
    public AM(boolean var1) {
    super();
+   HashMap var11;
+   long var20;
+   Ge2 var27;
+   Color var36;
+   DP var37;
+   ArrayList var7;
+   ArrayList var9;
       JFrame var3;
       label48: {
          long var6 = 199288150985905138L;
@@ -96,11 +103,11 @@ public class AM extends JPanel {
          Ref.s(199288150985905138L, var5, var6);
          ArrayList var10002 = new ArrayList();
          long var8 = 417119238929760524L;
-         ArrayList var7 = var10002;
+         var7 = var10002;
          Ref.s(417119238929760524L, var7, var8);
          ArrayList var10003 = new ArrayList();
          long var10 = 502036721265141438L;
-         ArrayList var9 = var10003;
+         var9 = var10003;
          Ref.s(502036721265141438L, var9, var10);
          Registry.lookupField(374786476283896993L).setInt(this, a(4109, 216013914738614013L));
          s$arrString();
@@ -116,7 +123,7 @@ public class AM extends JPanel {
          Registry.lookupField(185183789069073378L).setBoolean(this, true);
          HashMap var10005 = new HashMap();
          long var12 = 533669572411198848L;
-         HashMap var11 = var10005;
+         var11 = var10005;
          Ref.s(533669572411198848L, var11, var12);
          Registry.lookupField(421709291189789904L).setInt(this, -1);
          Registry.lookupField(210447995261764859L).setBoolean(this, false);
@@ -124,7 +131,7 @@ public class AM extends JPanel {
          Registry.lookupField(291528700222910706L).setBoolean(this, false);
          Registry.lookupField(196077290577414286L).setBoolean(this, true);
          Registry.lookupField(342832808241187441L).setBoolean(this, false);
-         Color var36 = new Color(a(25872, 7805825191738321899L), a(440, 2468831384235626309L), a(440, 2468831384235626309L));
+         var36 = new Color(a(25872, 7805825191738321899L), a(440, 2468831384235626309L), a(440, 2468831384235626309L));
          long var14 = 586874291471114490L;
          Color var13 = var36;
          Ref.s(586874291471114490L, var13, var14);
@@ -149,7 +156,7 @@ public class AM extends JPanel {
       }
 
       label42: {
-         DP var37 = (DP)Registry.lookupField(349091698802351406L).get(null);
+         var37 = (DP)Registry.lookupField(349091698802351406L).get(null);
          if (this == null) {
             if (var37 != null) {
                break label42;
@@ -163,7 +170,7 @@ public class AM extends JPanel {
 
       this.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
       FlowLayout var10008 = new FlowLayout(0);
-      long var20 = 158219876422589484L;
+      var20 = 158219876422589484L;
       FlowLayout var19 = var10008;
       Ref.s(158219876422589484L, var19, var20);
       Object var21 = 158219876422589484L;
@@ -174,7 +181,7 @@ public class AM extends JPanel {
       this.setLayout((FlowLayout)Ref.g(158219876422589484L, var25));
       Ge2 var10012 = new Ge2();
       long var28 = 426406158494779427L;
-      Ge2 var27 = var10012;
+      var27 = var10012;
       Ref.s(426406158494779427L, var27, var28);
       this.addComponentListener(new Vv2(this));
       if (this == null) {
@@ -213,6 +220,7 @@ public class AM extends JPanel {
    }
 
    public void y() {
+      long var9;
       s$arrString();
       Object var4 = 533669572411198848L;
       Iterator var2 = ((HashMap)Ref.g(533669572411198848L, var4)).keySet().iterator();
@@ -223,7 +231,7 @@ public class AM extends JPanel {
             Object var6 = 533669572411198848L;
             T32 var3 = (T32)((HashMap)Ref.g(533669572411198848L, var6)).get(var2.next());
             Object[] var10003 = Registry.emptyArgs();
-            long var9 = 414457989140731651L;
+            var9 = 414457989140731651L;
             Object[] var8 = var10003;
             Ref.h(414457989140731651L, var8, var9);
 
@@ -279,6 +287,7 @@ public class AM extends JPanel {
 
    @Override
    public void paintComponent(Graphics var1) {
+      int var20;
       String[] var2;
       AM var10001;
       label40: {
@@ -296,7 +305,7 @@ public class AM extends JPanel {
                Ref.g(142536030060271800L, var10);
                ArrayList var10004 = Registry.emptyArgs();
                long var13 = 230171768324088030L;
-               Object[] var12 = var10004;
+               Object var12 = var10004;
                var10004 = Ref.h(230171768324088030L, var12, var13);
 
                try {
@@ -305,7 +314,7 @@ public class AM extends JPanel {
                   throw var16.getTargetException();
                }
 
-               int var20 = var10004.size();
+               var20 = var10004.size();
                if (var2 != null) {
                   break label40;
                }
@@ -349,6 +358,8 @@ public class AM extends JPanel {
    }
 
    public void i() {
+      long var11;
+      long var7;
       s$arrString();
       Object var10001 = Registry.lookupField(277670051994433027L).get(null);
       Object[] var10002 = Registry.emptyArgs();
@@ -365,7 +376,7 @@ public class AM extends JPanel {
       Object var1 = var10001;
       Registry.lookupField(349091698802351406L).get(null);
       var10002 = Registry.emptyArgs();
-      long var7 = 259007488175563915L;
+      var7 = 259007488175563915L;
       Object[] var6 = var10002;
       Ref.h(259007488175563915L, var6, var7);
 
@@ -382,7 +393,7 @@ public class AM extends JPanel {
          if (var2.hasNext()) {
             T32 var3 = (T32)var2.next();
             Object[] var10004 = Registry.emptyArgs();
-            long var11 = 139482980886447442L;
+            var11 = 139482980886447442L;
             Object[] var10 = var10004;
             Ref.h(139482980886447442L, var10, var11);
 
@@ -421,6 +432,8 @@ public class AM extends JPanel {
    }
 
    public void P(Graphics var1) {
+      long var11;
+      Object[] var9;
       Object var5 = 497629741148939873L;
       if ((NY)Ref.g(497629741148939873L, var5) != null) {
          Graphics2D var2 = (Graphics2D)var1;
@@ -428,7 +441,7 @@ public class AM extends JPanel {
          Ref.g(497629741148939873L, var7);
          Color var10003 = (Color)(Registry.emptyArgs());
          long var10 = 345089686683358688L;
-         Object[] var9 = var10003;
+         var9 = var10003;
          var10003 = Ref.h(345089686683358688L, var9, var10);
 
          try {
@@ -439,7 +452,7 @@ public class AM extends JPanel {
 
          Color var4 = var10003;
          Registry.packArgs(var4);
-         long var11 = 430829682188014939L;
+         var11 = 430829682188014939L;
          Ref.h2(430829682188014939L, var11);
 
          try {
@@ -454,7 +467,7 @@ public class AM extends JPanel {
          Object var10012 = Ref.g(497629741148939873L, var13);
          Color var10013 = (Color)(Registry.emptyArgs());
          long var16 = 345089686683358688L;
-         Object[] var15 = var10013;
+         Object var15 = var10013;
          var10013 = Ref.h(345089686683358688L, var15, var16);
 
          try {
@@ -471,6 +484,8 @@ public class AM extends JPanel {
    }
 
    public void h(Y9 var1) {
+      long var11;
+      long var9;
       s$arrString();
       Object var6 = 502036721265141438L;
       Iterator var3 = ((ArrayList)Ref.g(502036721265141438L, var6)).iterator();
@@ -478,9 +493,9 @@ public class AM extends JPanel {
 
       while (var3.hasNext()) {
          AL var4 = (AL)var3.next();
-         Object[] var10002 = Registry.emptyArgs();
-         long var9 = 147296966455368819L;
-         Object[] var8 = var10002;
+         Object var10002 = Registry.emptyArgs();
+         var9 = 147296966455368819L;
+         Object var8 = var10002;
          var10002 = Ref.h(147296966455368819L, var8, var9);
 
          try {
@@ -496,7 +511,7 @@ public class AM extends JPanel {
             if (var2 == null) {
                if (var5 == var10003) {
                   Object[] var29 = Registry.packArgs(var1);
-                  long var11 = 212968630715837381L;
+                  var11 = 212968630715837381L;
                   Object[] var10 = var29;
                   Ref.h(212968630715837381L, var10, var11);
 
@@ -607,6 +622,8 @@ public class AM extends JPanel {
    }
 
    public void n(T32 var1) {
+      long var11;
+      long var9;
       Object var6 = 417119238929760524L;
       ArrayList var3 = (ArrayList)((ArrayList)Ref.g(417119238929760524L, var6)).clone();
       String[] var10001 = s$arrString();
@@ -624,11 +641,11 @@ public class AM extends JPanel {
 
                var16 = var5;
                Object[] var10002 = Registry.emptyArgs();
-               long var9 = 584096728105558414L;
+               var9 = 584096728105558414L;
                Object[] var8 = var10002;
                Ref.h(584096728105558414L, var8, var9);
                Object[] var10003 = Registry.emptyArgs();
-               long var11 = 589411218730404657L;
+               var11 = 589411218730404657L;
                Object[] var10 = var10003;
                var10003 = Ref.h(589411218730404657L, var10, var11);
 
@@ -659,6 +676,8 @@ public class AM extends JPanel {
    }
 
    public void n(boolean var1) {
+      Object[] var11;
+      boolean var20;
       String[] var10000 = s$arrString();
       byte var3 = 0;
       String[] var2 = var10000;
@@ -677,11 +696,11 @@ public class AM extends JPanel {
          T32 var4 = (T32)this.get(((ArrayList)Ref.g(417119238929760524L, var9)).size() - 1 - var3);
          Object[] var10004 = Registry.emptyArgs();
          long var12 = 584096728105558414L;
-         Object[] var11 = var10004;
+         var11 = var10004;
          Ref.h(584096728105558414L, var11, var12);
-         Object[] var10005 = Registry.emptyArgs();
+         Object var10005 = Registry.emptyArgs();
          long var14 = 589411218730404657L;
-         Object[] var13 = var10005;
+         Object var13 = var10005;
          var10005 = Ref.h(589411218730404657L, var13, var14);
 
          try {
@@ -777,10 +796,12 @@ public class AM extends JPanel {
    }
 
    public void N(T32 var1) {
+      long var7;
+      long var9;
       s$arrString();
-      Object[] var10002 = Registry.packArgs(var1);
+      Object var10002 = Registry.packArgs(var1);
       long var5 = 267026473738179692L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       Ref.h(267026473738179692L, var4, var5);
 
       try {
@@ -790,8 +811,8 @@ public class AM extends JPanel {
       }
 
       var10002 = Registry.emptyArgs();
-      long var7 = 559745286191336380L;
-      Object[] var6 = var10002;
+      var7 = 559745286191336380L;
+      Object var6 = var10002;
       var10002 = Ref.h(559745286191336380L, var6, var7);
 
       try {
@@ -806,7 +827,7 @@ public class AM extends JPanel {
       } else if (var10002 != null) {
          var10002 = var1;
          Object[] var10003 = Registry.emptyArgs();
-         long var9 = 328118709254946779L;
+         var9 = 328118709254946779L;
          Object[] var8 = var10003;
          var10003 = Ref.h(328118709254946779L, var8, var9);
 
@@ -833,14 +854,23 @@ public class AM extends JPanel {
    }
 
    public void n(T32 var1, boolean var2, boolean var3, boolean var4) {
+      Y9 var11;
+      long var37;
+      Object[] var42;
+      long var43;
+      Object[] var48;
+      Object[] var64;
+      Object var7;
+      Y9 var9;
+      Integer var96;
       String[] var10000 = s$arrString();
       T32 var6 = null;
-      Object var7 = -1;
+      var7 = -1;
       String[] var5 = var10000;
       if (var5 != null || var1 != null) {
          Integer var10001 = (Integer)(Registry.emptyArgs());
          long var13 = 328118709254946779L;
-         Object[] var12 = var10001;
+         Object var12 = var10001;
          var10001 = Ref.h(328118709254946779L, var12, var13);
 
          try {
@@ -852,7 +882,7 @@ public class AM extends JPanel {
          Object var8 = var10001;
          Boolean var10002 = (Boolean)(Registry.emptyArgs());
          long var15 = 258040024224799506L;
-         Object[] var14 = var10002;
+         Object var14 = var10002;
          var10002 = Ref.h(258040024224799506L, var14, var15);
 
          try {
@@ -892,7 +922,7 @@ public class AM extends JPanel {
             ((ArrayList)Ref.g(417119238929760524L, var20)).remove(var1);
             Bq2 var10005 = (Bq2)(Registry.emptyArgs());
             long var23 = 584096728105558414L;
-            Object[] var22 = var10005;
+            Object var22 = var10005;
             var10005 = Ref.h(584096728105558414L, var22, var23);
 
             try {
@@ -904,7 +934,7 @@ public class AM extends JPanel {
             var1.remove(var10005);
             var10005 = Registry.emptyArgs();
             long var25 = 258040024224799506L;
-            Object[] var24 = var10005;
+            Object var24 = var10005;
             var10005 = Ref.h(258040024224799506L, var24, var25);
 
             try {
@@ -957,7 +987,7 @@ public class AM extends JPanel {
                throw var76.getTargetException();
             }
 
-            long var37 = 425434110105144335L;
+            var37 = 425434110105144335L;
             Ref.s(425434110105144335L, var6, var37);
             Object var38 = 426406158494779427L;
             Ref.g(426406158494779427L, var38);
@@ -965,8 +995,8 @@ public class AM extends JPanel {
             long var41 = 424156930953488367L;
             Object[] var40 = var10009;
             var10009 = Registry.packArgs(Ref.h(424156930953488367L, var40, var41));
-            long var43 = 597359146714455209L;
-            Object[] var42 = var10009;
+            var43 = 597359146714455209L;
+            var42 = var10009;
             Ref.h(597359146714455209L, var42, var43);
 
             try {
@@ -978,9 +1008,9 @@ public class AM extends JPanel {
 
          Object var44 = 533669572411198848L;
          HashMap var87 = (HashMap)Ref.g(533669572411198848L, var44);
-         Object[] var94 = Registry.emptyArgs();
+         Object var94 = Registry.emptyArgs();
          long var47 = 229192454276026216L;
-         Object[] var46 = var94;
+         Object var46 = var94;
          var94 = Ref.h(229192454276026216L, var46, var47);
 
          try {
@@ -992,7 +1022,7 @@ public class AM extends JPanel {
          var1.remove(var96);
          var94 = Registry.emptyArgs();
          long var49 = 246765627653456113L;
-         Object[] var48 = var94;
+         var48 = var94;
          Ref.h(246765627653456113L, var48, var49);
 
          try {
@@ -1012,7 +1042,7 @@ public class AM extends JPanel {
             throw var72.getTargetException();
          }
 
-         Y9 var9 = new Y9(var1, Registry.lookupField(534616084670407665L).getInt(null));
+         var9 = new Y9(var1, Registry.lookupField(534616084670407665L).getInt(null));
          Object[] var10007 = Registry.packArgs(var2);
          long var53 = 152866268449868611L;
          Object[] var52 = var10007;
@@ -1054,7 +1084,7 @@ public class AM extends JPanel {
                throw var69.getTargetException();
             }
 
-            Y9 var11 = new Y9(var6, Registry.lookupField(141500763651848578L).getInt(null));
+            var11 = new Y9(var6, Registry.lookupField(141500763651848578L).getInt(null));
             Object[] var100 = Registry.packArgs(true);
             long var61 = 582387900151160398L;
             Object[] var60 = var100;
@@ -1079,7 +1109,7 @@ public class AM extends JPanel {
 
             Object[] var10011 = Registry.packArgs(var11);
             long var65 = 484591085759846041L;
-            Object[] var64 = var10011;
+            var64 = var10011;
             Ref.h(484591085759846041L, var64, var65);
 
             try {
@@ -1092,9 +1122,9 @@ public class AM extends JPanel {
    }
 
    public T32 U(T32 var1, int var2) {
-      Object[] var10001 = Registry.packArgs(var1, var2, true);
+      Object var10001 = Registry.packArgs(var1, var2, true);
       long var4 = 302051953273770611L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(302051953273770611L, var3, var4);
 
       try {
@@ -1105,9 +1135,9 @@ public class AM extends JPanel {
    }
 
    public T32 L(T32 var1, int var2, boolean var3) {
-      Object[] var10001 = Registry.packArgs(var1, null, null, var2, false, var3);
+      Object var10001 = Registry.packArgs(var1, null, null, var2, false, var3);
       long var5 = 574784922018541486L;
-      Object[] var4 = var10001;
+      Object var4 = var10001;
       var10001 = Ref.h(574784922018541486L, var4, var5);
 
       try {
@@ -1118,9 +1148,10 @@ public class AM extends JPanel {
    }
 
    public T32 l(F8 var1, String var2, int var3, boolean var4, boolean var5) {
-      Object[] var10001 = Registry.packArgs(null, var1, var2, var3, var4, var5);
-      long var7 = 574784922018541486L;
-      Object[] var6 = var10001;
+      long var7;
+      Object var10001 = Registry.packArgs(null, var1, var2, var3, var4, var5);
+      var7 = 574784922018541486L;
+      Object var6 = var10001;
       var10001 = Ref.h(574784922018541486L, var6, var7);
 
       try {
@@ -1131,6 +1162,14 @@ public class AM extends JPanel {
    }
 
    public T32 P(T32 var1, F8 var2, String var3, int var4, boolean var5, boolean var6) {
+      Y9 var11;
+      Boolean var110;
+      Object[] var20;
+      long var27;
+      Object[] var36;
+      long var37;
+      long var45;
+      Object[] var48;
       String[] var7;
       T32 var8;
       label223: {
@@ -1169,7 +1208,7 @@ public class AM extends JPanel {
 
             Object[] var10006 = Registry.emptyArgs();
             long var21 = 424156930953488367L;
-            Object[] var20 = var10006;
+            var20 = var10006;
             var10006 = Registry.packArgs(Ref.h(424156930953488367L, var20, var21));
             long var23 = 394686213359187078L;
             Object[] var22 = var10006;
@@ -1185,9 +1224,9 @@ public class AM extends JPanel {
             long var25 = 584096728105558414L;
             Object[] var24 = var10007;
             Ref.h(584096728105558414L, var24, var25);
-            Object[] var10008 = Registry.emptyArgs();
-            long var27 = 247202017205943608L;
-            Object[] var26 = var10008;
+            Object var10008 = Registry.emptyArgs();
+            var27 = 247202017205943608L;
+            Object var26 = var10008;
             var10008 = Ref.h(247202017205943608L, var26, var27);
 
             try {
@@ -1248,8 +1287,8 @@ public class AM extends JPanel {
       }
 
       Object[] var10005 = Registry.packArgs(this);
-      long var37 = 416612758253976707L;
-      Object[] var36 = var10005;
+      var37 = 416612758253976707L;
+      var36 = var10005;
       Ref.h(416612758253976707L, var36, var37);
 
       try {
@@ -1260,7 +1299,7 @@ public class AM extends JPanel {
 
       Bq2 var106 = (Bq2)(Registry.packArgs(var8, this, var5, var6));
       long var39 = 566591783561533654L;
-      Object[] var38 = var106;
+      Object var38 = var106;
       var106 = Ref.h(566591783561533654L, var38, var39);
 
       try {
@@ -1279,9 +1318,9 @@ public class AM extends JPanel {
          }
       }
 
-      Object[] var111 = Registry.emptyArgs();
-      long var45 = 496057640532296914L;
-      Object[] var44 = var111;
+      Object var111 = Registry.emptyArgs();
+      var45 = 496057640532296914L;
+      Object var44 = var111;
       var111 = Ref.h(496057640532296914L, var44, var45);
 
       try {
@@ -1304,7 +1343,7 @@ public class AM extends JPanel {
 
       Object[] var10010 = Registry.packArgs(var4);
       long var49 = 599989240986758347L;
-      Object[] var48 = var10010;
+      var48 = var10010;
       Ref.h(599989240986758347L, var48, var49);
 
       try {
@@ -1413,7 +1452,7 @@ public class AM extends JPanel {
          throw var80.getTargetException();
       }
 
-      Y9 var11 = new Y9(var8, Registry.lookupField(141500763651848578L).getInt(null));
+      var11 = new Y9(var8, Registry.lookupField(141500763651848578L).getInt(null));
       Object[] var10023 = Registry.packArgs(true);
       long var75 = 439556559655959651L;
       Object[] var74 = var10023;
@@ -1472,7 +1511,6 @@ public class AM extends JPanel {
             var4++;
             if (var1 == null) {
       Iterator var7;
-      Iterator var7;
                continue;
             }
          }
@@ -1503,11 +1541,12 @@ public class AM extends JPanel {
    }
 
    public T32 T(F8 var1, String var2, boolean var3, boolean var4) {
+      long var9;
       Object var6 = 417119238929760524L;
       int var5 = ((ArrayList)Ref.g(417119238929760524L, var6)).size();
-      Object[] var10002 = Registry.packArgs(var1, var2, var5, var3, var4);
-      long var9 = 451133235546109527L;
-      Object[] var8 = var10002;
+      Object var10002 = Registry.packArgs(var1, var2, var5, var3, var4);
+      var9 = 451133235546109527L;
+      Object var8 = var10002;
       var10002 = Ref.h(451133235546109527L, var8, var9);
 
       try {
@@ -1518,11 +1557,12 @@ public class AM extends JPanel {
    }
 
    public T32 m(F8 var1, String var2) {
+      long var7;
       Object var4 = 417119238929760524L;
       int var3 = ((ArrayList)Ref.g(417119238929760524L, var4)).size();
-      Object[] var10002 = Registry.packArgs(var1, var2, var3, false, Registry.lookupField(394476637101936438L).getBoolean(this));
-      long var7 = 451133235546109527L;
-      Object[] var6 = var10002;
+      Object var10002 = Registry.packArgs(var1, var2, var3, false, Registry.lookupField(394476637101936438L).getBoolean(this));
+      var7 = 451133235546109527L;
+      Object var6 = var10002;
       var10002 = Ref.h(451133235546109527L, var6, var7);
 
       try {
@@ -1533,9 +1573,9 @@ public class AM extends JPanel {
    }
 
    public T32 N(F8 var1, String var2) {
-      Object[] var10001 = Registry.packArgs(var1, var2, false, true);
+      Object var10001 = Registry.packArgs(var1, var2, false, true);
       long var4 = 200546729325125412L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(200546729325125412L, var3, var4);
 
       try {
@@ -1546,6 +1586,8 @@ public class AM extends JPanel {
    }
 
    public T32 w(String var1) {
+      long var11;
+      CT var7;
       s$arrString();
       T32 var3 = null;
       Object var8 = 417119238929760524L;
@@ -1554,9 +1596,9 @@ public class AM extends JPanel {
 
       while (var4.hasNext()) {
          T32 var5 = (T32)var4.next();
-         Object[] var10002 = Registry.emptyArgs();
-         long var11 = 424156930953488367L;
-         Object[] var10 = var10002;
+         Object var10002 = Registry.emptyArgs();
+         var11 = 424156930953488367L;
+         Object var10 = var10002;
          var10002 = Ref.h(424156930953488367L, var10, var11);
 
          try {
@@ -1575,10 +1617,10 @@ public class AM extends JPanel {
             var21 = var6;
          }
 
-         CT var7 = (CT)var21;
-         Object[] var10003 = Registry.emptyArgs();
+         var7 = (CT)var21;
+         Object var10003 = Registry.emptyArgs();
          long var13 = 119416120528652269L;
-         Object[] var12 = var10003;
+         Object var12 = var10003;
          var10003 = Ref.h(119416120528652269L, var12, var13);
 
          try {
@@ -1595,7 +1637,7 @@ public class AM extends JPanel {
             var10003 = var7;
             String var10004 = Registry.emptyArgs();
             long var15 = 134780214066966408L;
-            Object[] var14 = var10004;
+            Object var14 = var10004;
             var10004 = Ref.h(134780214066966408L, var14, var15);
 
             try {
@@ -1617,15 +1659,17 @@ public class AM extends JPanel {
    }
 
    public T32 B(String var1) {
+      long var11;
+      Refresh var7;
       String[] var10000 = s$arrString();
       T32 var3 = null;
       String[] var2 = var10000;
       Object var8 = 417119238929760524L;
 
       for (T32 var5 : (ArrayList)Ref.g(417119238929760524L, var8)) {
-         Object[] var10002 = Registry.emptyArgs();
-         long var11 = 424156930953488367L;
-         Object[] var10 = var10002;
+         Object var10002 = Registry.emptyArgs();
+         var11 = 424156930953488367L;
+         Object var10 = var10002;
          var10002 = Ref.h(424156930953488367L, var10, var11);
 
          try {
@@ -1644,10 +1688,10 @@ public class AM extends JPanel {
             var18 = var6;
          }
 
-         Refresh var7 = (Refresh)var18;
-         Object[] var10003 = Registry.emptyArgs();
+         var7 = (Refresh)var18;
+         Object var10003 = Registry.emptyArgs();
          long var13 = 493034572907583781L;
-         Object[] var12 = var10003;
+         Object var12 = var10003;
          var10003 = Ref.h(493034572907583781L, var12, var13);
 
          try {
@@ -1666,6 +1710,8 @@ public class AM extends JPanel {
    }
 
    public T32 q(String var1) {
+      long var11;
+      CE var7;
       T32 var3 = null;
       s$arrString();
       Object var8 = 417119238929760524L;
@@ -1674,9 +1720,9 @@ public class AM extends JPanel {
 
       while (var4.hasNext()) {
          T32 var5 = (T32)var4.next();
-         Object[] var10002 = Registry.emptyArgs();
-         long var11 = 424156930953488367L;
-         Object[] var10 = var10002;
+         Object var10002 = Registry.emptyArgs();
+         var11 = 424156930953488367L;
+         Object var10 = var10002;
          var10002 = Ref.h(424156930953488367L, var10, var11);
 
          try {
@@ -1695,10 +1741,10 @@ public class AM extends JPanel {
             var21 = var6;
          }
 
-         CE var7 = (CE)var21;
-         Object[] var10003 = Registry.emptyArgs();
+         var7 = (CE)var21;
+         Object var10003 = Registry.emptyArgs();
          long var13 = 243557514454506006L;
-         Object[] var12 = var10003;
+         Object var12 = var10003;
          var10003 = Ref.h(243557514454506006L, var12, var13);
 
          try {
@@ -1715,7 +1761,7 @@ public class AM extends JPanel {
             var10003 = var7;
             String var10004 = Registry.emptyArgs();
             long var15 = 504379882782984288L;
-            Object[] var14 = var10004;
+            Object var14 = var10004;
             var10004 = Ref.h(504379882782984288L, var14, var15);
 
             try {
@@ -1737,6 +1783,8 @@ public class AM extends JPanel {
    }
 
    public T32 l(String var1) {
+      long var11;
+      F5 var7;
       T32 var3 = null;
       s$arrString();
       Object var8 = 417119238929760524L;
@@ -1745,9 +1793,9 @@ public class AM extends JPanel {
 
       while (var4.hasNext()) {
          T32 var5 = (T32)var4.next();
-         Object[] var10002 = Registry.emptyArgs();
-         long var11 = 424156930953488367L;
-         Object[] var10 = var10002;
+         Object var10002 = Registry.emptyArgs();
+         var11 = 424156930953488367L;
+         Object var10 = var10002;
          var10002 = Ref.h(424156930953488367L, var10, var11);
 
          try {
@@ -1766,10 +1814,10 @@ public class AM extends JPanel {
             var18 = var6;
          }
 
-         F5 var7 = (F5)var18;
-         Object[] var10003 = Registry.emptyArgs();
+         var7 = (F5)var18;
+         Object var10003 = Registry.emptyArgs();
          long var13 = 394153669787250679L;
-         Object[] var12 = var10003;
+         Object var12 = var10003;
          var10003 = Ref.h(394153669787250679L, var12, var13);
 
          try {
@@ -1788,13 +1836,14 @@ public class AM extends JPanel {
    }
 
    public T32 Y(JComponent var1) {
+      long var9;
       T32 var2 = null;
       Object var6 = 417119238929760524L;
 
       for (T32 var4 : (ArrayList)Ref.g(417119238929760524L, var6)) {
-         Object[] var10002 = Registry.emptyArgs();
-         long var9 = 424156930953488367L;
-         Object[] var8 = var10002;
+         Object var10002 = Registry.emptyArgs();
+         var9 = 424156930953488367L;
+         Object var8 = var10002;
          var10002 = Ref.h(424156930953488367L, var8, var9);
 
          try {
@@ -1814,6 +1863,7 @@ public class AM extends JPanel {
    }
 
    public void m$void() {
+      Object[] var9;
       String[] var1 = s$arrString();
       Object var3 = 417119238929760524L;
       int var10001 = ((ArrayList)Ref.g(417119238929760524L, var3)).size();
@@ -1837,7 +1887,7 @@ public class AM extends JPanel {
          Object var7 = 417119238929760524L;
          Object[] var10003 = Registry.packArgs((T32)((ArrayList)Ref.g(417119238929760524L, var7)).get(var2));
          long var10 = 176011466134249595L;
-         Object[] var9 = var10003;
+         var9 = var10003;
          Ref.h(176011466134249595L, var9, var10);
 
          try {
@@ -1849,6 +1899,7 @@ public class AM extends JPanel {
    }
 
    public void s$void() {
+      Object[] var9;
       String[] var1 = s$arrString();
       Object var3 = 417119238929760524L;
       int var10001 = ((ArrayList)Ref.g(417119238929760524L, var3)).size();
@@ -1872,7 +1923,7 @@ public class AM extends JPanel {
          Object var7 = 417119238929760524L;
          Object[] var10004 = Registry.packArgs((T32)((ArrayList)Ref.g(417119238929760524L, var7)).get(var2));
          long var10 = 176011466134249595L;
-         Object[] var9 = var10004;
+         var9 = var10004;
          Ref.h(176011466134249595L, var9, var10);
 
          try {
@@ -1884,6 +1935,7 @@ public class AM extends JPanel {
    }
 
    public void l(int var1) {
+      Object[] var9;
       label31: {
          int var10001;
          label34: {
@@ -1919,7 +1971,7 @@ public class AM extends JPanel {
       Object var7 = 417119238929760524L;
       Object[] var12 = Registry.packArgs((T32)((ArrayList)Ref.g(417119238929760524L, var7)).get(var1));
       long var10 = 176011466134249595L;
-      Object[] var9 = var12;
+      var9 = var12;
       Ref.h(176011466134249595L, var9, var10);
 
       try {
@@ -1930,6 +1982,9 @@ public class AM extends JPanel {
    }
 
    public void X(T32 var1) {
+      long var11;
+      Object[] var27;
+      long var9;
       String[] var2 = s$arrString();
       Object var10000 = var1;
       if (var2 == null) {
@@ -1960,7 +2015,7 @@ public class AM extends JPanel {
 
          Registry.lookupField(133320001629591502L).setInt(this, (int)var3);
          Object[] var29 = Registry.packArgs(true);
-         long var11 = 330506269608966297L;
+         var11 = 330506269608966297L;
          Object[] var10 = var29;
          Ref.h(330506269608966297L, var10, var11);
 
@@ -2009,8 +2064,8 @@ public class AM extends JPanel {
       } else if (var10000 == null) {
          Registry.lookupField(501692309218203508L).setBoolean(this, true);
          var10000 = var1;
-         Object[] var27 = Registry.emptyArgs();
-         long var9 = 328118709254946779L;
+         var27 = Registry.emptyArgs();
+         var9 = 328118709254946779L;
          Object[] var8 = var27;
          var27 = Ref.h(328118709254946779L, var8, var9);
 
@@ -2038,6 +2093,9 @@ public class AM extends JPanel {
    }
 
    public void h(T32 var1) {
+      Object[] var11;
+      Object[] var7;
+      Object[] var9;
       s$arrString();
       Object var5 = 417119238929760524L;
       Iterator var3 = ((ArrayList)Ref.g(417119238929760524L, var5)).iterator();
@@ -2050,7 +2108,7 @@ public class AM extends JPanel {
                if (!var4.equals(var1)) {
                   Object[] var10002 = Registry.packArgs(false);
                   long var8 = 330506269608966297L;
-                  Object[] var7 = var10002;
+                  var7 = var10002;
                   Ref.h(330506269608966297L, var7, var8);
 
                   try {
@@ -2061,11 +2119,11 @@ public class AM extends JPanel {
 
                   Object[] var10003 = Registry.emptyArgs();
                   long var10 = 584096728105558414L;
-                  Object[] var9 = var10003;
+                  var9 = var10003;
                   Ref.h(584096728105558414L, var9, var10);
                   Object[] var10004 = Registry.emptyArgs();
                   long var12 = 467250021884313480L;
-                  Object[] var11 = var10004;
+                  var11 = var10004;
                   Ref.h(467250021884313480L, var11, var12);
 
                   try {
@@ -2130,6 +2188,9 @@ public class AM extends JPanel {
    }
 
    public void u$void() {
+      long var11;
+      long var7;
+      long var9;
       s$arrString();
       Object var4 = 417119238929760524L;
       Iterator var2 = ((ArrayList)Ref.g(417119238929760524L, var4)).iterator();
@@ -2138,7 +2199,7 @@ public class AM extends JPanel {
       while (var2.hasNext()) {
          T32 var3 = (T32)var2.next();
          Object[] var10002 = Registry.packArgs(false);
-         long var7 = 330506269608966297L;
+         var7 = 330506269608966297L;
          Object[] var6 = var10002;
          Ref.h(330506269608966297L, var6, var7);
 
@@ -2149,11 +2210,11 @@ public class AM extends JPanel {
          }
 
          Object[] var10003 = Registry.emptyArgs();
-         long var9 = 584096728105558414L;
+         var9 = 584096728105558414L;
          Object[] var8 = var10003;
          Ref.h(584096728105558414L, var8, var9);
          Object[] var10004 = Registry.emptyArgs();
-         long var11 = 467250021884313480L;
+         var11 = 467250021884313480L;
          Object[] var10 = var10004;
          Ref.h(467250021884313480L, var10, var11);
 
@@ -2181,10 +2242,18 @@ public class AM extends JPanel {
    }
 
    public void e(T32 var1, int var2, int var3) {
+      Object[] var11;
+      long var20;
+      long var36;
+      Object[] var37;
+      long var42;
+      Object[] var43;
+      Object[] var45;
+      Integer var64;
       s$arrString();
       Object[] var10003 = Registry.emptyArgs();
       long var12 = 584096728105558414L;
-      Object[] var11 = var10003;
+      var11 = var10003;
       var10003 = Ref.h(584096728105558414L, var11, var12);
       long var14 = 199288150985905138L;
       Object var13 = var10003;
@@ -2195,7 +2264,7 @@ public class AM extends JPanel {
       Object var17 = 199288150985905138L;
       Ref.g(199288150985905138L, var17);
       Object[] var10005 = Registry.emptyArgs();
-      long var20 = 168016210297284127L;
+      var20 = 168016210297284127L;
       Object[] var19 = var10005;
       Ref.h(168016210297284127L, var19, var20);
 
@@ -2267,9 +2336,9 @@ public class AM extends JPanel {
 
          Object var27 = 417119238929760524L;
          ArrayList var62 = (ArrayList)Ref.g(417119238929760524L, var27);
-         Object[] var10009 = Registry.emptyArgs();
+         Object var10009 = Registry.emptyArgs();
          long var30 = 328118709254946779L;
-         Object[] var29 = var10009;
+         Object var29 = var10009;
          var10009 = Ref.h(328118709254946779L, var29, var30);
 
          try {
@@ -2287,7 +2356,7 @@ public class AM extends JPanel {
       long var34 = 425434110105144335L;
       Ref.s(425434110105144335L, var1, var34);
       Object[] var65 = Registry.emptyArgs();
-      long var36 = 246765627653456113L;
+      var36 = 246765627653456113L;
       Object[] var35 = var65;
       Ref.h(246765627653456113L, var35, var36);
 
@@ -2299,7 +2368,7 @@ public class AM extends JPanel {
 
       Object[] var10010 = Registry.emptyArgs();
       long var38 = 487819805049017899L;
-      Object[] var37 = var10010;
+      var37 = var10010;
       Ref.h(487819805049017899L, var37, var38);
 
       try {
@@ -2321,7 +2390,7 @@ public class AM extends JPanel {
       }
 
       Object[] var10012 = Registry.packArgs((int)var3);
-      long var42 = 400022735440161010L;
+      var42 = 400022735440161010L;
       Object[] var41 = var10012;
       Ref.h(400022735440161010L, var41, var42);
 
@@ -2333,7 +2402,7 @@ public class AM extends JPanel {
 
       Object[] var10013 = Registry.packArgs((int)var56);
       long var44 = 456834232298630458L;
-      Object[] var43 = var10013;
+      var43 = var10013;
       Ref.h(456834232298630458L, var43, var44);
 
       try {
@@ -2344,7 +2413,7 @@ public class AM extends JPanel {
 
       Object[] var10014 = Registry.packArgs(var57);
       long var46 = 484591085759846041L;
-      Object[] var45 = var10014;
+      var45 = var10014;
       Ref.h(484591085759846041L, var45, var46);
 
       try {
@@ -2370,6 +2439,8 @@ public class AM extends JPanel {
    }
 
    public void U() {
+      Object[] var7;
+      Object[] var9;
       String[] var10000 = s$arrString();
       int var2 = 0;
       String[] var1 = var10000;
@@ -2384,11 +2455,11 @@ public class AM extends JPanel {
          T32 var10002 = (T32)((ArrayList)Ref.g(417119238929760524L, var5)).get(var2);
          Object[] var10003 = Registry.emptyArgs();
          long var8 = 584096728105558414L;
-         Object[] var7 = var10003;
+         var7 = var10003;
          Ref.h(584096728105558414L, var7, var8);
          Object[] var10004 = Registry.emptyArgs();
          long var10 = 467250021884313480L;
-         Object[] var9 = var10004;
+         var9 = var10004;
          Ref.h(467250021884313480L, var9, var10);
 
          try {
@@ -2402,6 +2473,8 @@ public class AM extends JPanel {
    }
 
    public void R() {
+      long var11;
+      long var9;
       String[] var10000 = s$arrString();
       int var2 = 0;
       String[] var1 = var10000;
@@ -2415,7 +2488,7 @@ public class AM extends JPanel {
          Object var6 = 417119238929760524L;
          T32 var3 = (T32)((ArrayList)Ref.g(417119238929760524L, var6)).get(var2);
          Object[] var10003 = Registry.packArgs(var2);
-         long var9 = 599989240986758347L;
+         var9 = 599989240986758347L;
          Object[] var8 = var10003;
          Ref.h(599989240986758347L, var8, var9);
 
@@ -2426,7 +2499,7 @@ public class AM extends JPanel {
          }
 
          Object[] var10004 = Registry.packArgs(var2 + 1);
-         long var11 = 243679155515376706L;
+         var11 = 243679155515376706L;
          Object[] var10 = var10004;
          Ref.h(243679155515376706L, var10, var11);
 
@@ -2456,13 +2529,15 @@ public class AM extends JPanel {
    }
 
    public int X(Component var1) {
+      int var7;
+      int var9;
       int var3 = 0;
       Component[] var4 = this.getComponents();
       String[] var10000 = s$arrString();
       Component[] var5 = var4;
       String[] var2 = var10000;
       int var6 = var4.length;
-      int var7 = 0;
+      var7 = 0;
 
       while (true) {
          label24:
@@ -2495,9 +2570,9 @@ public class AM extends JPanel {
    }
 
    public void K(T32 var1) {
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var3 = 584096728105558414L;
-      Object[] var2 = var10002;
+      Object var2 = var10002;
       var10002 = Ref.h(584096728105558414L, var2, var3);
 
       try {
@@ -2532,15 +2607,17 @@ public class AM extends JPanel {
    }
 
    public static void P(Bq2 var0, Point var1, AM var2) {
+      boolean var11;
+      Object[] var7;
       String[] var10000 = s$arrString();
       new Point();
       SwingUtilities.convertPointFromScreen(var1, var2);
       String[] var3 = var10000;
       boolean var5 = true;
       Registry.lookupField(609684993151237253L).get(null);
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var8 = 400084338690857485L;
-      Object[] var7 = var10001;
+      var7 = var10001;
       var10001 = Ref.h(400084338690857485L, var7, var8);
 
       try {
@@ -2570,13 +2647,21 @@ public class AM extends JPanel {
    }
 
    public static int X(Bq2 var0, Point var1, AM var2, boolean var3) {
+      Object[] var20;
+      boolean var36;
+      boolean var37;
+      int var42;
+      Integer var45;
+      Integer var48;
+      int var7;
+      int var9;
       s$arrString();
       Point var5 = new Point();
       SwingUtilities.convertPointFromScreen(var1, var2);
       Component var6 = var2.getComponentAt(var1);
-      Object[] var10002 = Registry.packArgs(var0);
+      Object var10002 = Registry.packArgs(var0);
       long var17 = 339397787032745950L;
-      Object[] var16 = var10002;
+      Object var16 = var10002;
       var10002 = Ref.h(339397787032745950L, var16, var17);
 
       try {
@@ -2586,9 +2671,7 @@ public class AM extends JPanel {
       }
 
       AM var4;
-      int var7;
       byte var8;
-      int var9;
       int var10;
       boolean var12;
       Component var10001;
@@ -2745,7 +2828,7 @@ public class AM extends JPanel {
                      var5.x = var31.getLocationOnScreen().x;
                      var10002 = Registry.packArgs(var31);
                      long var19 = 339397787032745950L;
-                     Object[] var18 = var10002;
+                     Object var18 = var10002;
                      var10002 = Ref.h(339397787032745950L, var18, var19);
 
                      try {
@@ -2819,7 +2902,7 @@ public class AM extends JPanel {
             if (var4 == null) {
                var10002 = Registry.emptyArgs();
                long var21 = 493414787501530871L;
-               Object[] var20 = var10002;
+               var20 = var10002;
                var10002 = Ref.h(493414787501530871L, var20, var21);
 
                try {
@@ -2836,9 +2919,9 @@ public class AM extends JPanel {
             Rectangle var32 = var2.getBounds();
             var42 = var1.y;
             if (var4 == null) {
-               Object[] var10003 = Registry.emptyArgs();
+               Object var10003 = Registry.emptyArgs();
                long var23 = 493414787501530871L;
-               Object[] var22 = var10003;
+               Object var22 = var10003;
                var10003 = Ref.h(493414787501530871L, var22, var23);
 
                try {
@@ -3196,12 +3279,12 @@ public class AM extends JPanel {
       Registry.lookupField(349091698802351406L).set(null, var0);
    }
 
-   public com.finalshell.ui.frame.U G() {
+   public com.finalshell.ui.frame.MainFrame G() {
       Object var1 = 393196773307370817L;
-      return (com.finalshell.ui.frame.U)Ref.g(393196773307370817L, var1);
+      return (com.finalshell.ui.frame.MainFrame)Ref.g(393196773307370817L, var1);
    }
 
-   public void G(com.finalshell.ui.frame.U var1) {
+   public void G(com.finalshell.ui.frame.MainFrame var1) {
       long var3 = 393196773307370817L;
       Ref.s(393196773307370817L, var1, var3);
    }
@@ -3214,12 +3297,12 @@ public class AM extends JPanel {
       Registry.lookupField(210447995261764859L).setBoolean(this, var1);
    }
 
-   public Copy3 u$CW() {
+   public CommandListPanel u$CW() {
       Object var1 = 273587631854201597L;
-      return (Copy3)Ref.g(273587631854201597L, var1);
+      return (CommandListPanel)Ref.g(273587631854201597L, var1);
    }
 
-   public void y(Copy3 var1) {
+   public void y(CommandListPanel var1) {
       long var3 = 273587631854201597L;
       Ref.s(273587631854201597L, var1, var3);
    }
@@ -3259,6 +3342,8 @@ public class AM extends JPanel {
    }
 
    public void O$void() {
+      long var20;
+      long var36;
       long var2 = 142536030060271800L;
       Object var1 = null;
       Ref.s(142536030060271800L, var1, var2);
@@ -3286,7 +3371,7 @@ public class AM extends JPanel {
       long var18 = 158219876422589484L;
       Object var17 = null;
       Ref.s(158219876422589484L, var17, var18);
-      long var20 = 497629741148939873L;
+      var20 = 497629741148939873L;
       Object var19 = null;
       Ref.s(497629741148939873L, var19, var20);
       long var22 = 354167307306446936L;
@@ -3310,7 +3395,7 @@ public class AM extends JPanel {
       long var34 = 586874291471114490L;
       Object var33 = null;
       Ref.s(586874291471114490L, var33, var34);
-      long var36 = 576105615503981375L;
+      var36 = 576105615503981375L;
       Object var35 = null;
       Ref.s(576105615503981375L, var35, var36);
    }
@@ -3353,6 +3438,7 @@ public class AM extends JPanel {
    }
 
    public static void __vfClinit__() {
+      byte[] var7;
       long var0 = 4657551212789948911L;
       long[] var6 = new long[19];
       F(null);
@@ -3366,7 +3452,7 @@ public class AM extends JPanel {
       while (true) {
          int var10001 = var2;
          var2 += 8;
-         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
          long[] var10000 = var6;
          var10001 = var3++;
          long var10002 = ((long)var7[0] & 255L) << 56
@@ -3419,7 +3505,6 @@ public class AM extends JPanel {
       }
    }
 }
-
 
 
 

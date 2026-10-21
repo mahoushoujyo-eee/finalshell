@@ -15,6 +15,7 @@ public class C_x_2 extends Polygon {
    }
 
    public static int[] T(int var0, int var1, int var2, int var3, int var4, double var5) {
+      int[] var17;
       int[] var8 = new int[var4 * 2];
       double var9 = (Math.PI * 2) / (double)var4;
       int var10000 = w();
@@ -25,7 +26,6 @@ public class C_x_2 extends Polygon {
 
       while (true) {
          if (var15 < var4) {
-      int[] var17;
             var8[var15 * 2] = (int)Math.round((double)var2 * Math.cos(var11)) + var0;
             var11 += var9;
             var17 = var8;
@@ -37,7 +37,6 @@ public class C_x_2 extends Polygon {
             var13 += var9;
             var15++;
             if (var7 == 0) {
-      int[] var17;
                continue;
             }
          }
@@ -54,6 +53,7 @@ public class C_x_2 extends Polygon {
    }
 
    public static int[] u(int var0, int var1, int var2, int var3, int var4, double var5) {
+      int[] var16;
       int[] var8 = new int[var4 * 2];
       double var9 = (Math.PI * 2) / (double)var4;
       int var10000 = a();
@@ -111,7 +111,6 @@ public class C_x_2 extends Polygon {
       }
    }
 }
-
 
 
 

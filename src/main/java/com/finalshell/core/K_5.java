@@ -166,6 +166,7 @@ public class K_5 {
    }
 
    public static String[] Q(String var0) {
+      ArrayList var5;
       StringTokenizer var2 = new StringTokenizer(var0, ",");
       String[] var10000 = y();
       ArrayList var3 = new ArrayList();
@@ -173,7 +174,6 @@ public class K_5 {
 
       while (true) {
          if (var2.hasMoreTokens()) {
-      ArrayList var5;
             try {
                var5 = var3;
                if (var1 == null) {
@@ -185,7 +185,6 @@ public class K_5 {
                   continue;
                }
             } catch (RuntimeException var4) {
-      ArrayList var5;
                throw a(var4);
             }
          }
@@ -616,6 +615,7 @@ public class K_5 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -2063) & 65535;
       if (c[var2] == null) {
          char[] var3 = b[var2].toCharArray();
@@ -1396,7 +1396,7 @@ public class K_5 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1421,12 +1421,15 @@ public class K_5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var24;
+      int var5;
+      boolean var6;
       String[] var7 = new String[19];
-      int var5 = 0;
+      var5 = 0;
       String[] var10000 = new String[3];
       String var4 = "\u0095èÜ\u0006\u00990ðÔ\u0093©\u0003ùáQ\u0004O\u0018í\u0002\u0005h8\u0096µ\u001e\u0004\u009f~÷Î\u0005\u000b¥ú\u0006\u0093\u0002¯e\u0006\u001fÃ ª\u0089f\u0004\u008e\u0093áW\u0004*ó\u0094©\u0004\u00ad8:Ó\u0007 \u001f\u001b?¾\u001f\b\u0005Æ\\ô®R\u0007ØÝ\u0004g]\u0014t\u0004\u0096Ñ\u0003í\u0005ñt\u0012«\u008e";
-      int var6 = "\u0095èÜ\u0006\u00990ðÔ\u0093©\u0003ùáQ\u0004O\u0018í\u0002\u0005h8\u0096µ\u001e\u0004\u009f~÷Î\u0005\u000b¥ú\u0006\u0093\u0002¯e\u0006\u001fÃ ª\u0089f\u0004\u008e\u0093áW\u0004*ó\u0094©\u0004\u00ad8:Ó\u0007 \u001f\u001b?¾\u001f\b\u0005Æ\\ô®R\u0007ØÝ\u0004g]\u0014t\u0004\u0096Ñ\u0003í\u0005ñt\u0012«\u008e"
-         .length();
+      var6 = "\u0095èÜ\u0006\u00990ðÔ\u0093©\u0003ùáQ\u0004O\u0018í\u0002\u0005h8\u0096µ\u001e\u0004\u009f~÷Î\u0005\u000b¥ú\u0006\u0093\u0002¯e\u0006\u001fÃ ª\u0089f\u0004\u008e\u0093áW\u0004*ó\u0094©\u0004\u00ad8:Ó\u0007 \u001f\u001b?¾\u001f\b\u0005Æ\\ô®R\u0007ØÝ\u0004g]\u0014t\u0004\u0096Ñ\u0003í\u0005ñt\u0012«\u008e";
+         // [VF] .length();
       char var3 = 3;
       c(var10000);
       int var10 = -1;
@@ -1532,7 +1535,7 @@ public class K_5 {
                   }
 
                   var4 = "^¬ê¡\u0004¯\tkä";
-                  var6 = "^¬ê¡\u0004¯\tkä".length();
+                  var6 = ("^¬ê¡\u0004¯\tkä".length()) != 0;
                   var3 = 4;
                   var10 = -1;
             }
@@ -1544,7 +1547,6 @@ public class K_5 {
       }
    }
 }
-
 
 
 

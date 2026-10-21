@@ -1,12 +1,12 @@
 package com.finalshell.task;
 
-import com.finalshell.core.LF3_2;
+import com.finalshell.core.SpeedTestService;
 
 public class Ur4 implements Runnable {
-   public final LF3_2 m;
+   public final SpeedTestService m;
    public static long a;
 
-   public Ur4(LF3_2 var1) {
+   public Ur4(SpeedTestService var1) {
       this.m = var1;
    }
 

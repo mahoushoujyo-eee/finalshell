@@ -153,6 +153,7 @@ public class Y3 extends BasicSplitPaneUI implements L0_2 {
 
    @Override
    public void finishedPaintingChildren(JSplitPane var1, Graphics var2) {
+      Y3 var5;
       boolean var3 = com.finalshell.ui.panel.O2.r$boolean();
       if (var1 == this.splitPane) {
          int var10000 = this.getLastDragLocation();
@@ -1034,6 +1035,8 @@ public class Y3 extends BasicSplitPaneUI implements L0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      boolean var5;
       String[] var13 = new String[9];
       int var11 = 0;
       String var10 = "Â#úS¤\u008b8Ô\u009a¶\u001eMkÈ¸ûY\u009eê\b\u0005¨Ä\u008eqz\u0002}Ï\u0006@Mã\rÙÜ\u0014ZKé^Æ*tà\u00130/\u009dMÒ|¸Áöù\u0005\u0004y\u0091jî\u0006@\u001f+)\tî";
@@ -1049,7 +1052,6 @@ public class Y3 extends BasicSplitPaneUI implements L0_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -1131,7 +1133,7 @@ public class Y3 extends BasicSplitPaneUI implements L0_2 {
                      long[] var6 = new long[4];
                      int var3 = 0;
                      String var4 = "Å\u0011ã¯\u0093\u0018D\u0011î§Âi\u0096½\u0016\u0088";
-                     int var5 = "Å\u0011ã¯\u0093\u0018D\u0011î§Âi\u0096½\u0016\u0088".length();
+                     var5 = ("Å\u0011ã¯\u0093\u0018D\u0011î§Âi\u0096½\u0016\u0088".length()) != 0;
                      byte var2 = 0;
 
                      label44:
@@ -1169,7 +1171,7 @@ public class Y3 extends BasicSplitPaneUI implements L0_2 {
                                  }
 
                                  var4 = "©nÒ`É9Na\u008d\u0087¨\u0018Ñ+*º";
-                                 var5 = "©nÒ`É9Na\u008d\u0087¨\u0018Ñ+*º".length();
+                                 var5 = ("©nÒ`É9Na\u008d\u0087¨\u0018Ñ+*º".length()) != 0;
                                  var2 = 0;
                            }
 

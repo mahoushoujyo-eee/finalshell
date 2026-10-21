@@ -44,14 +44,16 @@ public final class AL_2 {
    }
 
    public static ArrayList q(List var0, int var1, int var2) {
+      String var3;
+      int var5;
+      ArrayList var6;
       String var10000 = FV_2.D();
       ArrayList var4 = new ArrayList(var2 - var1);
-      String var3 = var10000;
-      int var5 = var1;
+      var3 = var10000;
+      var5 = var1;
 
       while (true) {
          if (var5 < var2) {
-      ArrayList var6;
             var6 = var4;
             if (var3 != null) {
                break;
@@ -60,7 +62,6 @@ public final class AL_2 {
             var4.add(Kp2.E((Cloneable)var0.get(var5)));
             var5++;
             if (var3 == null) {
-      ArrayList var6;
                continue;
             }
          }
@@ -79,6 +80,7 @@ public final class AL_2 {
    }
 
    public static ArrayList r(Iterator var0) {
+      ArrayList var3;
       String var10000 = FV_2.D();
       ArrayList var2 = new ArrayList();
       String var1 = var10000;
@@ -104,11 +106,14 @@ public final class AL_2 {
    }
 
    public static boolean Y(Collection var0, Object[] var1) {
+      boolean var3;
+      int var6;
+      boolean var8;
       String var10000 = FV_2.D();
-      boolean var3 = false;
+      var3 = false;
       Object[] var4 = var1;
       int var5 = var1.length;
-      int var6 = 0;
+      var6 = 0;
       String var2 = var10000;
 
       while (true) {
@@ -140,11 +145,14 @@ public final class AL_2 {
    }
 
    public static boolean l(Collection var0, Object[] var1) {
-      boolean var3 = false;
+      boolean var3;
+      int var6;
+      boolean var8;
+      var3 = false;
       String var10000 = FV_2.D();
       Object[] var4 = var1;
       int var5 = var1.length;
-      int var6 = 0;
+      var6 = 0;
       String var2 = var10000;
 
       while (true) {
@@ -176,14 +184,17 @@ public final class AL_2 {
    }
 
    public static boolean D(Collection var0, Collection var1) {
+      boolean var3;
+      Object var5;
+      boolean var6;
       String var10000 = FV_2.D();
-      boolean var3 = false;
+      var3 = false;
       String var2 = var10000;
       Iterator var4 = var1.iterator();
 
       while (true) {
          if (var4.hasNext()) {
-            Object var5 = var4.next();
+            var5 = var4.next();
             var6 = var0.contains(var5);
             if (var2 != null) {
                break;
@@ -214,15 +225,18 @@ public final class AL_2 {
    }
 
    public static boolean W(Collection var0, Collection var1) {
+      boolean var3;
+      Object var5;
+      boolean var7;
       String var10000 = FV_2.D();
-      boolean var3 = false;
+      var3 = false;
       Iterator var4 = var1.iterator();
       String var2 = var10000;
 
       while (true) {
          if (var4.hasNext()) {
             label24: {
-               Object var5 = var4.next();
+               var5 = var4.next();
                var10000 = var0;
                if (var2 == null) {
                   var7 = var0.contains(var5);
@@ -255,12 +269,15 @@ public final class AL_2 {
    }
 
    public static boolean T(Collection var0, Object[] var1) {
+      boolean var3;
+      int var6;
+      boolean var8;
       String var10000 = FV_2.D();
-      boolean var3 = false;
+      var3 = false;
       Object[] var4 = var1;
       String var2 = var10000;
       int var5 = var1.length;
-      int var6 = 0;
+      var6 = 0;
 
       while (true) {
          if (var6 < var5) {
@@ -289,12 +306,13 @@ public final class AL_2 {
    }
 
    public static ArrayList y(Collection var0) {
+      Iterator var3;
       String var1 = FV_2.D();
       if (var0 == null) {
          return null;
       } else {
          ArrayList var2 = new ArrayList(var0.size());
-         Iterator var3 = var0.iterator();
+         var3 = var0.iterator();
 
          ArrayList var10000;
          while (true) {
@@ -406,6 +424,8 @@ public final class AL_2 {
    }
 
    public static boolean n(List var0, List var1) {
+      Iterator var3;
+      boolean var5;
       String var2;
       List var10000;
       var2 = FV_2.D();
@@ -463,7 +483,7 @@ public final class AL_2 {
          var10000 = var0;
       }
 
-      Iterator var3 = var10000.iterator();
+      var3 = var10000.iterator();
 
       while (true) {
          if (var3.hasNext()) {
@@ -494,14 +514,17 @@ public final class AL_2 {
    }
 
    public static ArrayList t(List var0, C82 var1) {
+      ArrayList var3;
+      Object var5;
+      ArrayList var6;
       String var10000 = FV_2.D();
-      ArrayList var3 = new ArrayList(var0.size());
+      var3 = new ArrayList(var0.size());
       String var2 = var10000;
       Iterator var4 = var0.iterator();
 
       while (true) {
          if (var4.hasNext()) {
-            Object var5 = var4.next();
+            var5 = var4.next();
             var6 = var3;
             if (var2 != null) {
                break;
@@ -521,9 +544,12 @@ public final class AL_2 {
    }
 
    public static int[] J(List var0) {
+      int var3;
+      int[] var5;
+      int var6;
       String var10000 = FV_2.D();
       int[] var2 = new int[var0.size()];
-      int var3 = 0;
+      var3 = 0;
       String var1 = var10000;
 
       while (true) {
@@ -534,7 +560,6 @@ public final class AL_2 {
                break;
             }
 
-            int var6;
             label22: {
                Integer var10002 = var4;
                if (var1 == null) {
@@ -574,13 +599,15 @@ public final class AL_2 {
    }
 
    public static ArrayList E(Collection var0, On2 var1) {
-      ArrayList var3 = new ArrayList(var0.size());
+      ArrayList var3;
+      Object var5;
+      var3 = new ArrayList(var0.size());
       String var10000 = FV_2.D();
       Iterator var4 = var0.iterator();
       String var2 = var10000;
 
       while (var4.hasNext()) {
-         Object var5 = var4.next();
+         var5 = var4.next();
          if (var2 == null && var1.n(var5)) {
             var3.add(var5);
          }
@@ -602,19 +629,22 @@ public final class AL_2 {
    }
 
    public static ArrayList n(Map var0) {
+      Iterator var3;
+      List var5;
+      boolean var8;
       String var10000 = FV_2.D();
       ArrayList var2 = new ArrayList(0);
       String var1 = var10000;
-      Iterator var3 = var0.entrySet().iterator();
+      var3 = var0.entrySet().iterator();
 
       label44:
       while (true) {
-         boolean var8 = var3.hasNext();
+         var8 = var3.hasNext();
 
          label41:
          while (var8) {
             Entry var4 = (Entry)var3.next();
-            List var5 = (List)var4.getValue();
+            var5 = (List)var4.getValue();
             if (var1 != null) {
                return var2;
             }
@@ -647,8 +677,10 @@ public final class AL_2 {
    }
 
    public static List p(int var0, Kp4 var1) {
+      ArrayList var3;
+      ArrayList var5;
       String var10000 = FV_2.D();
-      ArrayList var3 = new ArrayList(var0);
+      var3 = new ArrayList(var0);
       String var2 = var10000;
       int var4 = 0;
 
@@ -673,7 +705,6 @@ public final class AL_2 {
       return var5;
    }
 }
-
 
 
 

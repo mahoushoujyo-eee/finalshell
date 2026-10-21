@@ -225,7 +225,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
    public void b(Graphics var1, JLabel var2, FontMetrics var3) {
       int var10000 = (Oj2.g()) ? 1 : 0;
       List var5 = this.a(var2);
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
       int var6 = this.D(var2);
       int var7 = var5.size() * var3.getHeight();
 
@@ -377,7 +377,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
       int var10000 = (Oj2.g()) ? 1 : 0;
       int var5 = this.D(var1);
       int var6 = var3.height;
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
       int var7 = var1.getVerticalAlignment();
       var10000 = var7;
       if (var4) {
@@ -404,8 +404,8 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
       int var8;
       label67: {
          int var10000 = (Oj2.V()) ? 1 : 0;
-         byte var5 = (var1.getComponentOrientation().isLeftToRight()) ? 1 : 0;
-         var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+         byte var5 = (byte)((var1.getComponentOrientation().isLeftToRight()) ? 1 : 0);
+         var4 = (var10000) != 0;
          int var6 = var1.getHorizontalAlignment();
          var10000 = var6;
          int var10001 = 4;
@@ -1539,6 +1539,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[11];
       int var11 = 0;
       String var10 = "m.B[\u0003p2,\u0004\u009fì\u0096(\u0004\u0013ÄAf\u0003\u0097q\f\u0013ÃùÚ]Þ\u008bñTo\u0084s\u008f\"g£ÿÒuµ\u000b\u0081\u000b\u000b%\u000e|lv®\u008f`\u0003^@é\u0018\u0092êð?\u009bÇYÝzµÑ©v£)g\u0083f\u009fV\u009e5i\u0002";
@@ -1554,7 +1555,6 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

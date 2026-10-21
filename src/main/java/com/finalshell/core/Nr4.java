@@ -1032,6 +1032,7 @@ public class Nr4 extends Ne4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[10];
       int var3 = 0;
       String var2 = "ÞhG9s\u0099ä\u001a/Ä4zR÷y5ÖJèfÄ\bW\u008cÇ²b«êHÈÔßä\u008f\u000f\u0019Hc\u0095X)µ¯\u009fFt\u0019l÷3Ûzq\u0089Ð ;+\u007fW£\u001a®{I[²ÕÜ\u0093(õÔ\\N+è¤\u0084S¶\\\u007f)©+å\u0016\b\u0002¨|·\u0087z¯x\u001bd\u0013À\u0092=ç5ºQ&O*SSº\u0086%Ô.\r}\u008b?ìx:\u001e\u00176[\u008a\u009btÆ\u001c\u009et¢ëºÇA#×g\u0081\u0014nw;³%Å ôä»)å`Z\\\by\u0007\u00ad_\u0017!(\u0017\u0098³_3Ø»\u0096\u0010¦¼w*\u0010§!T\\K 5;:SÜÔ\u0011³\u0091ñãÜ¨%0\u00ad\nÎ\u007f¢\t?\u0005\u0081A\u0002\u0092\u0088Êîk\u0091";
@@ -1047,7 +1048,6 @@ public class Nr4 extends Ne4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

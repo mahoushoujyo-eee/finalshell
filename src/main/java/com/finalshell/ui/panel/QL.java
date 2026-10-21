@@ -77,6 +77,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
 
    public QL(OR var1, OR var2, Ln4 var3) {
       super(b(24390, 3737));
+      com.finalshell.core.ZU var5;
       String[] var10000 = BX.B$arrString();
       this.Q = true;
       this.f = new WeakReference(null);
@@ -92,7 +93,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       this.x = var10001;
       this.Z = NE.E(b(24384, -2559));
       this.U();
-      com.finalshell.core.ZU var5 = new com.finalshell.core.ZU(this);
+      var5 = new com.finalshell.core.ZU(this);
       this.addAncestorListener(new Fx_2(this, var5));
       if (var4 != null) {
          Ky4.K(new String[3]);
@@ -250,6 +251,10 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public BX e(BX var1, At2 var2, int var3) {
+      DP_2 var22;
+      DP_2 var24;
+      BX var5;
+      DP_2 var8;
       String[] var4 = BX.B$arrString();
       if (var1 != null) {
          int var10000;
@@ -291,8 +296,6 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
             var10000 = 1;
          }
 
-         BX var5;
-         DP_2 var8;
          label171: {
             int var7 = var10000;
             Container var19 = var1.D().getParent();
@@ -350,7 +353,6 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
                               }
 
                               if (var6 != 0) {
-      DP_2 var22;
                                  var22 = var16;
                                  if (var4 != null) {
                                     break label126;
@@ -366,7 +368,6 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
                                        var8 = var16;
                                        var5 = (BX)var16.d();
                                        if (var4 == null) {
-      DP_2 var22;
                                           break label171;
                                        }
                                     }
@@ -475,6 +476,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public void Z(El2 var1) {
+      O2 var5;
       label27: {
          String[] var2 = BX.B$arrString();
          if (var2 == null) {
@@ -491,7 +493,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
                      var10000 = var4;
                   }
 
-                  O2 var5 = (O2)var10000;
+                  var5 = (O2)var10000;
                   this.S(D(var5));
                   this.revalidate();
                   this.repaint();
@@ -513,6 +515,11 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public void S(DP_2 var1) {
+      El2 var18;
+      El2 var19;
+      BX var22;
+      BX var6;
+      BX var8;
       String[] var2;
       El2 var3;
       El2 var4;
@@ -582,14 +589,14 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
             var19 = var3;
          }
 
-         BX var6 = (BX)var19;
+         var6 = (BX)var19;
          BX var7 = (BX)var4;
          BX var20 = var6;
          if (var2 == null) {
             var20 = var6.o() > var7.o() ? var6 : var7;
          }
 
-         BX var8 = var20;
+         var8 = var20;
          BX var21 = var6;
          if (var2 == null) {
             var21 = var6.o() > var7.o() ? var7 : var6;
@@ -740,6 +747,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public At2 c(String var1) {
+      At2 var6;
       String[] var10000 = BX.B$arrString();
       Iterator var3 = this.K().iterator();
       String[] var2 = var10000;
@@ -770,6 +778,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public List o() {
+      ArrayList var5;
       String[] var10000 = BX.B$arrString();
       ArrayList var2 = new ArrayList();
       String[] var1 = var10000;
@@ -797,6 +806,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public int Z() {
+      int var5;
       String[] var10000 = BX.B$arrString();
       int var2 = 0;
       String[] var1 = var10000;
@@ -876,6 +886,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public BX i(String var1) {
+      BX var5;
       String[] var10000 = BX.B$arrString();
       Iterator var3 = this.K().iterator();
       String[] var2 = var10000;
@@ -981,6 +992,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public boolean m(String var1) {
+      boolean var5;
       String[] var10000 = BX.B$arrString();
       Iterator var3 = this.K().iterator();
       String[] var2 = var10000;
@@ -1112,8 +1124,8 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public void u() {
-      At2 var2;
       QL var5;
+      At2 var2;
       label24: {
          String[] var10000 = BX.B$arrString();
          var2 = this.G$at_2();
@@ -1157,6 +1169,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public Sj2 H(El2 var1) {
+      com.finalshell.ui.model.F5 var6;
       String[] var2 = BX.B$arrString();
       El2 var10000 = var1;
       if (var2 == null) {
@@ -1180,20 +1193,22 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       DP_2 var3 = (DP_2)var10000;
       Sj2 var4 = this.H(var3.D());
       Sj2 var5 = this.H(var3.d());
-      com.finalshell.ui.model.F5 var6 = new com.finalshell.ui.model.F5(var4, var5);
+      var6 = new com.finalshell.ui.model.F5(var4, var5);
       return new Sj2(var3.i$int(), var3.v(), var6);
    }
 
    public void N(Sj2 var1) {
+      Iterator var5;
+      At2 var6;
       List var3 = this.o();
       String[] var10000 = BX.B$arrString();
       HashMap var4 = new HashMap(var3.size());
       String[] var2 = var10000;
-      Iterator var5 = var3.iterator();
+      var5 = var3.iterator();
 
       while (true) {
          if (var5.hasNext()) {
-            At2 var6 = (At2)var5.next();
+            var6 = (At2)var5.next();
             var4.put(var6.B(), var6);
             if (var2 != null) {
                break;
@@ -1211,6 +1226,9 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public El2 f(Sj2 var1, Map var2) {
+      boolean var16;
+      Map var17;
+      DP_2 var8;
       String[] var3;
       label72: {
          var3 = BX.B$arrString();
@@ -1226,7 +1244,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
          com.finalshell.ui.model.F5 var5 = var10000.d();
          El2 var6 = this.f((Sj2)var5.H(), var2);
          El2 var7 = this.f((Sj2)var5.L(), var2);
-         DP_2 var8 = new DP_2(this, var1.Z(), var6, var7);
+         var8 = new DP_2(this, var1.Z(), var6, var7);
          var8.g().addComponentListener(new Ry4(this, var8, var1));
          if (var3 == null) {
             return var8;
@@ -1314,12 +1332,13 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public void o(BX var1, DP_2 var2) {
+      DJ3 var5;
       String[] var10000 = BX.B$arrString();
       Iterator var4 = AL_2.J((Collection)this.V).iterator();
       String[] var3 = var10000;
 
       while (var4.hasNext()) {
-         DJ3 var5 = (DJ3)var4.next();
+         var5 = (DJ3)var4.next();
          var5.a(this, var1, var2);
          if (var3 != null) {
             break;
@@ -1328,12 +1347,13 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public void A(DP_2 var1, El2 var2) {
+      DJ3 var5;
       String[] var10000 = BX.B$arrString();
       Iterator var4 = AL_2.J((Collection)this.V).iterator();
       String[] var3 = var10000;
 
       while (var4.hasNext()) {
-         DJ3 var5 = (DJ3)var4.next();
+         var5 = (DJ3)var4.next();
          var5.v(this, var1, var2);
          if (var3 != null) {
             break;
@@ -1392,12 +1412,13 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public void w(At2 var1, BX var2, int var3) {
+      H_2 var6;
       String[] var10000 = BX.B$arrString();
       Iterator var5 = AL_2.J((Collection)this.P).iterator();
       String[] var4 = var10000;
 
       while (var5.hasNext()) {
-         H_2 var6 = (H_2)var5.next();
+         var6 = (H_2)var5.next();
          var6.U(var1, var2, var3);
          if (var4 != null) {
             break;
@@ -1406,12 +1427,13 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public void h(At2 var1, BX var2, int var3) {
+      H_2 var6;
       String[] var10000 = BX.B$arrString();
       Iterator var5 = AL_2.J((Collection)this.P).iterator();
       String[] var4 = var10000;
 
       while (var5.hasNext()) {
-         H_2 var6 = (H_2)var5.next();
+         var6 = (H_2)var5.next();
          var6.N(var1, var2, var3);
          if (var4 != null) {
             break;
@@ -1420,8 +1442,10 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public boolean l(At2 var1, BX var2, int var3) {
+      boolean var5;
+      boolean var8;
       String[] var10000 = BX.B$arrString();
-      boolean var5 = true;
+      var5 = true;
       String[] var4 = var10000;
       Iterator var6 = AL_2.J((Collection)this.P).iterator();
 
@@ -1470,12 +1494,13 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public void p(At2 var1, BX var2, int var3) {
+      H_2 var6;
       String[] var10000 = BX.B$arrString();
       Iterator var5 = AL_2.J((Collection)this.P).iterator();
       String[] var4 = var10000;
 
       while (var5.hasNext()) {
-         H_2 var6 = (H_2)var5.next();
+         var6 = (H_2)var5.next();
          var6.u(var1, var2, var3);
          if (var4 != null) {
             break;
@@ -1587,19 +1612,19 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
 
    public static boolean M(El2 var0) {
       String[] var1 = BX.B$arrString();
-      int var10000 = var0 instanceof BX;
+      int var10000 = (var0 instanceof BX) ? 1 : 0;
       if (var1 == null) {
          if (var10000 == 0) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var10000 = ((BX)var0).o();
       }
 
       if (var1 != null) {
-         return (boolean)var10000;
+         return var10000 != 0;
       } else {
-         return (boolean)(var10000 == 0 ? 1 : 0);
+         return (boolean)((var10000 == 0 ? 1 : 0) != 0);
       }
    }
 
@@ -1608,6 +1633,8 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    }
 
    public static String b(int var0, int var1) {
+      int var6;
+      int var8;
       int var2 = (var0 ^ 24385) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -2388,13 +2415,13 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -2413,7 +2440,9 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var5 = new String[8];
+      char[] var20;
+      String[] var5;
+      var5 = new String[8];
       int var3 = 0;
       String var2 = "²7§öq\u0006Ð(PõgI¢ô¬Ós±\u00033añ\u0006ãWC°Iø\u0006ÃIGsÉ\u0080\u0018½%æ\"Ê®w&I,)Røý\u001a\u0096·¢öøi\u0006o£\u000f´ÓÇüîuó]ÙC;¼¸B[";
       int var4 = "²7§öq\u0006Ð(PõgI¢ô¬Ós±\u00033añ\u0006ãWC°Iø\u0006ÃIGsÉ\u0080\u0018½%æ\"Ê®w&I,)Røý\u001a\u0096·¢öøi\u0006o£\u000f´ÓÇüîuó]ÙC;¼¸B[".length();
@@ -2531,7 +2560,6 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       }
    }
 }
-
 
 
 

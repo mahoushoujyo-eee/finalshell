@@ -1211,6 +1211,7 @@ public class O2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[13];
       int var5 = 0;
       String var4 = "Ev\u0004íî\u009aP\u0007®kãëW\u009d2\u0002\u0001¨\u0004&\u000bó6\u00034°þ\u0002,æ\b\u0016Sq  \rNæ\b\u001eÃ\u009eX¼ìë\u009e\u0007`ê:Ûl\u009bU\rÚmªí\t\u0010\u001e\u0014\nßË§g";
@@ -1226,7 +1227,6 @@ public class O2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

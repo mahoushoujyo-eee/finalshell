@@ -1058,6 +1058,7 @@ public class KI implements A6_2, ClipboardOwner {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "Iáh&\fLT\u0082\u0010«Ò1X?¿DdXò\u0015X\u0098Rª\u0015\r×t¬\u001d÷\u000b\u0015/\u009a\u0083¡\u001d%äå\u0086½Xb\u0000Öû\n+VtÍs¬\u0018¨u~³_\u0013$iOç¯";
@@ -1073,7 +1074,6 @@ public class KI implements A6_2, ClipboardOwner {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

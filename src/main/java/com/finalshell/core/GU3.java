@@ -51,7 +51,7 @@ public class GU3 extends W5 {
       int[] var6 = new int[var4 * var5];
       int[] var7 = new int[var4 * var5];
       this.l(var1, 0, 0, var4, var5, var6);
-      byte var10 = (this.U) ? 1 : 0;
+      byte var10 = (byte)((this.U) ? 1 : 0);
       if (var3 != null) {
          if (this.U) {
             NM.g(var6, 0, var6.length);
@@ -135,6 +135,7 @@ public class GU3 extends W5 {
    }
 
    public void R(int[] var1, int[] var2, int var3, int var4, int var5, int var6) {
+      int var35;
       int var8 = var3 - 1;
       int[] var9 = new int[var3];
       int[] var10 = new int[var3];
@@ -174,7 +175,6 @@ public class GU3 extends W5 {
                   var10[var17] = var18 >> a(9470, 4241176921147254019L) & a(1226, 8354698696482981172L);
                   var11[var17] = var18 & a(1226, 8354698696482981172L);
                   if (var7 != null) {
-      int var35;
                      var35 = var17;
                      if (var7 == null) {
                         break;

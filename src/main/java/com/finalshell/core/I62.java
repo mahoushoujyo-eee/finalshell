@@ -156,11 +156,11 @@ public class I62 extends BasicSeparatorUI {
       var10 = var2.getWidth() - var7.left - var7.right;
       var11 = var2.getHeight() - var7.top - var7.bottom;
       var3 = var10000;
-      var13 = (this.B) ? 1 : 0;
+      var13 = (byte)((this.B) ? 1 : 0);
       label153:
       if (var3 != null) {
          if (!this.B) {
-            var13 = (this.W) ? 1 : 0;
+            var13 = (byte)((this.W) ? 1 : 0);
             if (var3 == null) {
                break label153;
             }
@@ -176,10 +176,10 @@ public class I62 extends BasicSeparatorUI {
 
       label156: {
          byte var12 = (byte)var13;
-         var13 = var6.getOrientation();
+         var13 = (byte)(var6.getOrientation());
          if (var3 != null) {
             if (var13 == 1) {
-               var13 = var11;
+               var13 = (byte)(var11);
                if (var3 != null) {
                   if (var11 <= 0) {
                      break label156;
@@ -195,7 +195,7 @@ public class I62 extends BasicSeparatorUI {
                      }
 
                      var4.setPaint(new LinearGradientPaint((float)var8, (float)var9, (float)var8, (float)(var9 + var11), o, this.h()));
-                     var13 = (this.B) ? 1 : 0;
+                     var13 = (byte)((this.B) ? 1 : 0);
                   }
 
                   if (var3 != null) {
@@ -203,7 +203,7 @@ public class I62 extends BasicSeparatorUI {
                         var4.drawLine(var8, var9, var8, var9 + var11);
                      }
 
-                     var13 = (this.W) ? 1 : 0;
+                     var13 = (byte)((this.W) ? 1 : 0);
                   }
 
                   if (var13 != 0) {
@@ -242,7 +242,7 @@ public class I62 extends BasicSeparatorUI {
                Ky4.K(new String[5]);
             }
 
-            var13 = var10;
+            var13 = (byte)(var10);
          }
 
          if (var3 != null) {
@@ -260,7 +260,7 @@ public class I62 extends BasicSeparatorUI {
                }
 
                var4.setPaint(new LinearGradientPaint((float)var8, (float)var9, (float)(var8 + var10), (float)var9, o, this.h()));
-               var13 = (this.B) ? 1 : 0;
+               var13 = (byte)((this.B) ? 1 : 0);
             }
 
             if (var3 != null) {
@@ -268,7 +268,7 @@ public class I62 extends BasicSeparatorUI {
                   var4.drawLine(var8, var9, var8 + var10, var9);
                }
 
-               var13 = (this.W) ? 1 : 0;
+               var13 = (byte)((this.W) ? 1 : 0);
             }
 
             if (var13 != 0) {
@@ -309,7 +309,7 @@ public class I62 extends BasicSeparatorUI {
 
    public Color[] h() {
       String var1 = CH3_2.B();
-      byte var10000 = (this.A) ? 1 : 0;
+      byte var10000 = (byte)((this.A) ? 1 : 0);
       if (var1 != null) {
          if (this.A) {
             return new Color[]{this.P, this.g, this.P};
@@ -327,7 +327,7 @@ public class I62 extends BasicSeparatorUI {
 
    public Color[] O() {
       String var1 = CH3_2.B();
-      byte var10000 = (this.A) ? 1 : 0;
+      byte var10000 = (byte)((this.A) ? 1 : 0);
       if (var1 != null) {
          if (this.A) {
             return new Color[]{this.R, Color.WHITE, this.R};

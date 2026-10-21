@@ -71,7 +71,7 @@ public class Dw4 {
          L9 var6 = (L9)this.get(((ArrayList)Ref.g(145412445008776377L, var17)).size() - 1);
          String var10004 = (String)(Registry.emptyArgs());
          long var20 = 564648154927582737L;
-         Object[] var19 = var10004;
+         Object var19 = var10004;
          var10004 = Ref.h(564648154927582737L, var19, var20);
 
          try {
@@ -81,9 +81,9 @@ public class Dw4 {
          }
 
          String var7 = var10004;
-         Object[] var10005 = Registry.emptyArgs();
+         Object var10005 = Registry.emptyArgs();
          long var22 = 127422501806576014L;
-         Object[] var21 = var10005;
+         Object var21 = var10005;
          var10005 = Ref.h(127422501806576014L, var21, var22);
 
          try {
@@ -109,7 +109,7 @@ public class Dw4 {
                if (var3 == null) {
                   String var10010 = (String)(Registry.emptyArgs());
                   long var30 = 564648154927582737L;
-                  Object[] var29 = var10010;
+                  Object var29 = var10010;
                   var10010 = Ref.h(564648154927582737L, var29, var30);
 
                   try {
@@ -149,7 +149,7 @@ public class Dw4 {
       L9 var3 = (L9)this.get(((ArrayList)Ref.g(145412445008776377L, var13)).size() - 1);
       String var10004 = (String)(Registry.emptyArgs());
       long var16 = 564648154927582737L;
-      Object[] var15 = var10004;
+      Object var15 = var10004;
       var10004 = Ref.h(564648154927582737L, var15, var16);
 
       try {
@@ -160,9 +160,9 @@ public class Dw4 {
 
       String var4 = var10004;
       if (var4 != null) {
-         Object[] var10005 = Registry.emptyArgs();
+         Object var10005 = Registry.emptyArgs();
          long var18 = 127422501806576014L;
-         Object[] var17 = var10005;
+         Object var17 = var10005;
          var10005 = Ref.h(127422501806576014L, var17, var18);
 
          try {
@@ -193,7 +193,7 @@ public class Dw4 {
                if (var1 == null) {
                   String var10010 = (String)(Registry.emptyArgs());
                   long var26 = 564648154927582737L;
-                  Object[] var25 = var10010;
+                  Object var25 = var10010;
                   var10010 = Ref.h(564648154927582737L, var25, var26);
 
                   try {
@@ -265,9 +265,9 @@ public class Dw4 {
       }
 
       int var3 = Math.abs(new Random().nextInt(a(14120, 6740195840310472513L)));
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var10 = 127422501806576014L;
-      Object[] var9 = var10002;
+      Object var9 = var10002;
       var10002 = Ref.h(127422501806576014L, var9, var10);
 
       try {
@@ -294,7 +294,7 @@ public class Dw4 {
       Ref.h(266288712085965362L, var13, var14);
       var10002 = Registry.emptyArgs();
       long var16 = 564648154927582737L;
-      Object[] var15 = var10002;
+      Object var15 = var10002;
       var10002 = Ref.h(564648154927582737L, var15, var16);
 
       try {

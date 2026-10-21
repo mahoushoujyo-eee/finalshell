@@ -1091,6 +1091,7 @@ public class CW implements Ak2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[5];
       int var3 = 0;
       String var2 = "á>Y\u0099\tÿeÿ$A\u008e\u009fâ\u0087YZÇ?\u0019}ÆÓ¢F\u008cö&[\u000bÁ\u009cuï\u0091sÌ¹\u0094«¨\u0007r\u0092Q\u0005$a\u0017";
@@ -1105,7 +1106,6 @@ public class CW implements Ak2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

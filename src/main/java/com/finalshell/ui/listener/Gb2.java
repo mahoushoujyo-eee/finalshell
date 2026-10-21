@@ -35,7 +35,7 @@ public class Gb2 implements ActionListener {
          Ref.g(434008521855552520L, var12);
          ArrayList var10005 = Registry.emptyArgs();
          long var15 = 508702504224153155L;
-         Object[] var14 = var10005;
+         Object var14 = var10005;
          var10005 = Ref.h(508702504224153155L, var14, var15);
 
          try {
@@ -47,7 +47,7 @@ public class Gb2 implements ActionListener {
          L9 var5 = (L9)var10005.get(var4);
          String var10006 = (String)(Registry.emptyArgs());
          long var17 = 564648154927582737L;
-         Object[] var16 = var10006;
+         Object var16 = var10006;
          var10006 = Ref.h(564648154927582737L, var16, var17);
 
          try {

@@ -2,17 +2,17 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.ui.model.Kl4;
-import com.finalshell.ui.panel.Address;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import com.finalshell.ui.panel.SetExternalEditorPanel;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class JW implements MouseListener {
-   public final Address O;
+   public final FileBrowserAddressBar O;
 
-   public JW(Address var1) {
+   public JW(FileBrowserAddressBar var1) {
       this.O = var1;
    }
 
@@ -30,7 +30,7 @@ public class JW implements MouseListener {
          Object var11 = 389694495067679276L;
          Object var10009 = Ref.g(389694495067679276L, var11);
          Object var13 = 627973027287447539L;
-var10007 = new JW(this, (Kl4)var10009, (Connection4)Ref.g(627973027287447539L, var13));
+var10007 = new JW(this, (Kl4)var10009, (ConnectionInfoPanel)Ref.g(627973027287447539L, var13));
          Object var2 = var10006;
          ((SetExternalEditorPanel)var2).show((Component)var1.getSource(), var1.getX(), var1.getY());
       }
@@ -38,7 +38,7 @@ var10007 = new JW(this, (Kl4)var10009, (Connection4)Ref.g(627973027287447539L, v
 
    @Override
    public void mousePressed(MouseEvent var1) {
-      Address.g();
+      FileBrowserAddressBar.g();
       Object var3 = 389694495067679276L;
       Ref.g(389694495067679276L, var3);
       Object var5 = 150762093507542450L;

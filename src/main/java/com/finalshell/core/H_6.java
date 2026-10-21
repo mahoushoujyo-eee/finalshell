@@ -186,6 +186,7 @@ public class H_6 extends ClassLoader {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean W;
       char[] var10003 = "EKoou\u0003".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -270,8 +271,6 @@ public class H_6 extends ClassLoader {
                      break label85;
                   }
                } catch (AccessControlException var10) {
-      boolean W;
-      boolean W;
                   throw a(var10);
                }
 
@@ -426,7 +425,6 @@ public class H_6 extends ClassLoader {
       }
    }
 }
-
 
 
 

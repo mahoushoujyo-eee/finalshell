@@ -28,6 +28,7 @@ public final class DE {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var31;
       String[] var8 = new String[8];
       int var12 = 0;
       String var11 = "Y\u0019\u0000\u000f\u0004R\u0019\u000b\u000f\u0003Y\u0019\u0002\bY\u0019\u0000\u000fY\u000fV\u0003\u0003C\u0007\u0002\u0003T\u0000\u0003";
@@ -43,7 +44,6 @@ public final class DE {
          byte var10002 = -1;
 
          while (true) {
-      char[] var31;
             label58: {
                char[] var35 = var10001.toCharArray();
                int var10004 = var35.length;

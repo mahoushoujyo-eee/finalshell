@@ -39,7 +39,7 @@ public class OK implements KeyListener {
       Object var10 = 606863927096470668L;
       Ref.g(606863927096470668L, var10);
       Object var12 = 225851015118401415L;
-      Object[] var10007 = Registry.packArgs(Ref.g(225851015118401415L, var12));
+      Object var10007 = Registry.packArgs(Ref.g(225851015118401415L, var12));
       long var14 = 214304962730069281L;
       Object var10008 = Ref.h2(214304962730069281L, var14);
 

@@ -3,7 +3,7 @@ package com.finalshell.task;
 import com.finalshell.core.LJ;
 import com.finalshell.core.UR;
 import com.finalshell.core.Yh2;
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Mo2 implements Runnable {
@@ -15,8 +15,8 @@ public class Mo2 implements Runnable {
    public static long a;
 
    public Mo2() {
-      PingMessageR.U.execute(this);
-      PingMessageR.U.execute(new UE(this));
+      PingMessageReceiver.U.execute(this);
+      PingMessageReceiver.U.execute(new UE(this));
    }
 
    public void T(UR var1, int var2) {
@@ -26,7 +26,7 @@ public class Mo2 implements Runnable {
    }
 
    public long t(UR var1) {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       int var3 = var1.B.E + (int)((float)var1.B.E * Yh2.o);
       String[] var2 = var10000;
       int var6 = var3;

@@ -123,7 +123,7 @@ public class Om4 {
    public static PW3 r(LN3 var0, Xe2 var1) throws Pc2 {
       byte[] var10002 = (byte[])(Registry.emptyArgs());
       long var5 = 587292884221902213L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       var10002 = Ref.h(587292884221902213L, var4, var5);
 
       try {
@@ -132,7 +132,7 @@ public class Om4 {
          throw var6.getTargetException();
       }
 
-      Ls4 var2 = Ls4.h(var0, (byte[])var10002, null);
+      SshKeyCodec var2 = SshKeyCodec.h(var0, (byte[])var10002, null);
       return new PW3(var1, "", var2);
    }
 
@@ -187,11 +187,11 @@ public class Om4 {
       Ref.h2(270389152141252877L, var5);
       LN3 var10003 = Registry.emptyArgs();
       long var8 = 306266403902896148L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(306266403902896148L, var7, var8);
       ArrayList var10004 = Registry.emptyArgs();
       long var10 = 626356373183057367L;
-      Object[] var9 = var10004;
+      Object var9 = var10004;
       var10004 = Ref.h(626356373183057367L, var9, var10);
 
       try {
@@ -245,6 +245,9 @@ public class Om4 {
    }
 
    public static void K(String var0) {
+      Object[] var15;
+      Object[] var21;
+      long var23;
       LN3.A();
       Registry.emptyArgs();
       long var5 = 270389152141252877L;
@@ -255,7 +258,7 @@ public class Om4 {
       var10003 = Ref.h(306266403902896148L, var7, var8);
       String var10004 = Registry.emptyArgs();
       long var10 = 626356373183057367L;
-      Object[] var9 = var10004;
+      Object var9 = var10004;
       var10004 = Ref.h(626356373183057367L, var9, var10);
 
       try {
@@ -278,7 +281,7 @@ public class Om4 {
 
             var10004 = Registry.emptyArgs();
             long var12 = 194080076253066315L;
-            Object[] var11 = var10004;
+            Object var11 = var10004;
             var10004 = Ref.h(194080076253066315L, var11, var12);
 
             try {
@@ -302,7 +305,7 @@ public class Om4 {
                Ref.h2(270389152141252877L, var13);
                Object[] var10006 = Registry.emptyArgs();
                long var16 = 445913128761932285L;
-               Object[] var15 = var10006;
+               var15 = var10006;
                Ref.h(445913128761932285L, var15, var16);
                Object[] var10008 = Registry.emptyArgs();
                long var18 = 194080076253066315L;
@@ -313,7 +316,7 @@ public class Om4 {
                Object[] var19 = var10010;
                Object[] var10009 = Registry.packArgs(var4, Ref.h(286931176286176762L, var19, var20), Registry.lookupField(163332929561227942L).getInt(null));
                long var22 = 200839191777796316L;
-               Object[] var21 = var10009;
+               var21 = var10009;
                Ref.h(200839191777796316L, var21, var22);
 
                try {
@@ -333,7 +336,7 @@ public class Om4 {
          }
 
          Registry.emptyArgs();
-         long var23 = 270389152141252877L;
+         var23 = 270389152141252877L;
          Ref.h2(270389152141252877L, var23);
          Object[] var10005 = Registry.emptyArgs();
          long var26 = 578864097947885485L;
@@ -368,6 +371,8 @@ public class Om4 {
    }
 
    public static void F(Oc2 var0) {
+      long var15;
+      boolean var40;
       LN3.v();
       Registry.packArgs(var0);
       long var8 = 421592305985005457L;
@@ -388,8 +393,8 @@ public class Om4 {
       Object[] var12 = var10004;
       var10004 = Ref.h(306266403902896148L, var12, var13);
       ArrayList var10005 = (ArrayList)(Registry.emptyArgs());
-      long var15 = 626356373183057367L;
-      Object[] var14 = var10005;
+      var15 = 626356373183057367L;
+      Object var14 = var10005;
       var10005 = Ref.h(626356373183057367L, var14, var15);
 
       try {
@@ -527,7 +532,6 @@ public class Om4 {
             var2.add(var5);
             var3++;
             if (var1 == 0) {
-      String var15;
                continue;
             }
          }
@@ -551,9 +555,9 @@ public class Om4 {
             O0 var5 = new O0();
             var15 = var5;
             String var10001 = a(-11034, 15068);
-            Object[] var10003 = Registry.emptyArgs();
+            Object var10003 = Registry.emptyArgs();
             long var7 = 557543992546278139L;
-            Object[] var6 = var10003;
+            Object var6 = var10003;
             var10003 = Ref.h(557543992546278139L, var6, var7);
 
             try {
@@ -1417,6 +1421,7 @@ public class Om4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[11];
       int var5 = 0;
       String var4 = "ªÇ>Æ\u0004Å9\b\u0001B\u0080)\u008c=\\U\u0005Ì\u00adù\u0015Û\bÕ6h\u000fÉ^\u0083ó\b¬Ì5ø:\u0007\u008a\u0012\u0005\u0013Wdå¨\u0005ø9i¨\u000e\u0007¢\fT\u008fe\u009eW\b~Y\u001dâgãVD";
@@ -1539,7 +1544,6 @@ public class Om4 {
       }
    }
 }
-
 
 
 

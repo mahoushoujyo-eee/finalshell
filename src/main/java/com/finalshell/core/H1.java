@@ -57,6 +57,9 @@ public class H1 extends Fq2{
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public static H1 q(String var0) throws IOException {
+      BufferedReader var10;
+      Throwable var11;
+      BufferedReader var12;
       boolean var10000 = Dm4.F$boolean();
       BufferedReader var2 = Files.newBufferedReader(Paths.get(E8.V(var0)), StandardCharsets.UTF_8);
       boolean var1 = var10000;
@@ -65,7 +68,6 @@ public class H1 extends Fq2{
       try {
          var3 = new H1(var2);
       } catch (Throwable var8) {
-      BufferedReader var10;
          label41: {
             label40: {
                try {
@@ -84,7 +86,6 @@ public class H1 extends Fq2{
                try {
                   var10 = var2;
                } catch (Throwable var6) {
-      int var11;
                   var11 = var6;
                   boolean var10001 = false;
                   break label41;
@@ -95,8 +96,6 @@ public class H1 extends Fq2{
                var10.close();
                throw var8;
             } catch (Throwable var5) {
-      BufferedReader var12;
-      int var11;
                var11 = var5;
                boolean var13 = false;
             }
@@ -1124,6 +1123,7 @@ public class H1 extends Fq2{
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var26;
       String[] var9 = new String[27];
       int var7 = 0;
       String var6 = "2iv=\nÆ§¥>»X\u0019\u008e»¯\u0005\u0091. °i\u000b=>ãÓÚé\u009d]\u0086Û\u001c\n^;¶\u00adÙ*UÐ2f\u0007éá\u009c¹ûf\u0088\u0011Lçéè\u009b\u008eµ±\u0083F¼\u0001ÐxWâ<\u0007Q<sMa6\u001f\u0007»Ñ.ðÊ\u0081j\u0010zq\u000b:ÇÔ>úò/\u0092?\u001cÝõ.\u000f\u009c\u001aóWØyÝO\u008e\u0099\u001d\u008bû!Û\u000fgi\u008c97´ ö1®êm\u0015ý\u0004\u00181ª\u001c\u0003Ü\u0097\u009a\u001d\u0018Ë\u009aÐÀ\rJdEäEÿi\tû5\u0007j~ìJå\u0018I\u0004/\u009a@¯\u000b\u00146ÆÒ~É\tY\u0014[N\u0011\u0014w²þ\u0014ÈPKqeFA«é\u0083ëd\r\u008eå\u0089Ò>ÜÀ¸²]\u009c(\r\u0016ó\u009fD¥×Cû\u00874\u0098\u001fºp@VÄ\u0093ãIZ\u0093\u009c\u000fò®3\u008c+ÓzôÕ\u008aª\u0007L¸,\u0003\u0017x\u009e\f©o«\u0007cuVÚ\u009cî,þ\u0004~*J\u009d\u0004h\u009b\u0088«\rmZõ%±\"1g\u008c¦[Wõ";

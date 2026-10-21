@@ -81,6 +81,7 @@ public class WQ {
    }
 
    public static long[] A(byte[] var0, int var1) {
+      long var52;
       long var3 = b(30204, 778639446394293286L);
       long var5 = b(27462, 1365980114020455071L);
       int var7 = a(23231, 1253327073870223294L);

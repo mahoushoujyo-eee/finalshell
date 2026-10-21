@@ -24,7 +24,7 @@ import com.finalshell.ui.listener.FD3;
 import com.finalshell.ui.listener.L3;
 import com.finalshell.ui.listener.MA;
 import com.finalshell.ui.listener.Oz4;
-import com.finalshell.ui.listener.Port;
+import com.finalshell.ui.listener.PortForwardActionListener;
 import com.finalshell.ui.listener.Qs2;
 import com.finalshell.ui.listener.Tq2;
 import com.finalshell.ui.listener.Uq2;
@@ -82,6 +82,7 @@ public class ShowDeletedPanel extends JPanel implements Fb2 {
    public static Integer[] e;
 
    public ShowDeletedPanel() {
+      Boolean var177;
       Registry.lookupField(455118846627771080L).setInt(this, -1);
       Registry.lookupField(181494556387054133L).setInt(this, 1);
       Registry.lookupField(532186872455451527L).setInt(this, a(25241, 4112275145674261376L));
@@ -116,7 +117,7 @@ public class ShowDeletedPanel extends JPanel implements Fb2 {
       Ref.s(585473904632414414L, var22, var23);
       Qe2_2 var10010 = (Qe2_2)(Registry.packArgs(a(23328, 8913)));
       long var25 = 634198882764672414L;
-      Object[] var24 = var10010;
+      Object var24 = var10010;
       var10010 = Ref.h(634198882764672414L, var24, var25);
 
       try {
@@ -220,9 +221,9 @@ public class ShowDeletedPanel extends JPanel implements Fb2 {
       long var89 = 306266403902896148L;
       Object[] var88 = var10041;
       Ref.h(306266403902896148L, var88, var89);
-      Object[] var10042 = Registry.emptyArgs();
+      Object var10042 = Registry.emptyArgs();
       long var91 = 512419353738146707L;
-      Object[] var90 = var10042;
+      Object var90 = var10042;
       var10042 = Ref.h(512419353738146707L, var90, var91);
 
       try {
@@ -309,7 +310,7 @@ public class ShowDeletedPanel extends JPanel implements Fb2 {
       }
 
       Object var104 = 290275742837119451L;
-      ((JComboBox)Ref.g(290275742837119451L, var104)).addActionListener(new Port(this));
+      ((JComboBox)Ref.g(290275742837119451L, var104)).addActionListener(new PortForwardActionListener(this));
       this.setBackground(new Color(a(26685, 7931182217900984608L), a(26685, 7931182217900984608L), a(26685, 7931182217900984608L)));
       this.setBorder(BorderFactory.createLineBorder(new Color(a(32023, 718345535109504017L), a(6334, 8443103957753297327L), a(6334, 8443103957753297327L)), 1));
       Registry.emptyArgs();
@@ -382,9 +383,9 @@ public class ShowDeletedPanel extends JPanel implements Fb2 {
       long var137 = 306266403902896148L;
       Object[] var136 = var10062;
       var10062 = Ref.h(306266403902896148L, var136, var137);
-      Object[] var10063 = Registry.emptyArgs();
+      Object var10063 = Registry.emptyArgs();
       long var139 = 236705034508525556L;
-      Object[] var138 = var10063;
+      Object var138 = var10063;
       var10063 = Ref.h(236705034508525556L, var138, var139);
 
       try {
@@ -394,7 +395,7 @@ public class ShowDeletedPanel extends JPanel implements Fb2 {
       }
 
 var10061 = new UV3(var10062, var177);
-      Object[] var7 = var10060;
+      Object var7 = var10060;
       var7.setOpaque(false);
       var7.setBackground(Color.white);
       var6.add(var7, "");
@@ -431,6 +432,7 @@ var10061 = new UV3(var10062, var177);
    }
 
    public void g(boolean var1) {
+      boolean var37;
       label34: {
          F8.y();
          Object var3 = 154919748794789787L;
@@ -480,9 +482,9 @@ var10061 = new UV3(var10062, var177);
       long var30 = 163462326892114024L;
       Object[] var29 = var10004;
       Ref.h(163462326892114024L, var29, var30);
-      Object[] var10005 = Registry.emptyArgs();
+      Object var10005 = Registry.emptyArgs();
       long var32 = 133802226692684648L;
-      Object[] var31 = var10005;
+      Object var31 = var10005;
       var10005 = Ref.h(133802226692684648L, var31, var32);
 
       try {
@@ -513,7 +515,7 @@ var10061 = new UV3(var10062, var177);
       var1.setForeground(new Color(a(4341, 1367282710368154105L), a(13239, 4211477629955560127L), a(13239, 4211477629955560127L)));
       var1.t(new Color(a(6458, 3047591403612633137L), a(24139, 2617293032765865811L), a(24139, 2617293032765865811L)));
       var1.s(2);
-      Object[] var10002 = Registry.packArgs(3, 5);
+      Object var10002 = Registry.packArgs(3, 5);
       long var4 = 188631797336214587L;
       Object var10003 = Ref.h2(188631797336214587L, var4);
 
@@ -544,6 +546,7 @@ var10061 = new UV3(var10062, var177);
    }
 
    public synchronized void O$void() {
+      Object[] var14;
       String[] var1 = F8.y();
       if (var1 == null) {
          if (Registry.lookupField(576761866492028513L).getBoolean(this)) {
@@ -593,7 +596,7 @@ var10061 = new UV3(var10062, var177);
          if (var10001 == null) {
             Object[] var26 = Registry.emptyArgs();
             long var15 = 344765142696056302L;
-            Object[] var14 = var26;
+            var14 = var26;
             Ref.h(344765142696056302L, var14, var15);
 
             try {
@@ -606,18 +609,18 @@ var10061 = new UV3(var10062, var177);
 
       Object var16 = 585473904632414414L;
       Ref.g(585473904632414414L, var16);
-      Connection5 var27 = (Connection5)(Registry.emptyArgs());
+      ImportExportPanel var27 = (ImportExportPanel)(Registry.emptyArgs());
       long var19 = 258495433430833129L;
-      Object[] var18 = var27;
+      Object var18 = var27;
       var27 = Ref.h(258495433430833129L, var18, var19);
 
       try {
-         var27 = (Connection5)var27;
+         var27 = (ImportExportPanel)var27;
       } catch (InvocationTargetException var23) {
          throw var23.getTargetException();
       }
 
-      Connection5 var3 = var27;
+      ImportExportPanel var3 = var27;
       Object[] var10004 = Registry.packArgs(var2);
       long var21 = 546067833853166045L;
       Object[] var20 = var10004;
@@ -692,6 +695,8 @@ var10061 = new UV3(var10062, var177);
 
    @Override
    public void O(Ty4 var1) {
+      Object[] var14;
+      Object[] var33;
       String[] var2 = F8.y();
       Ty4 var10000 = var1;
       if (var2 == null) {
@@ -733,7 +738,7 @@ var10061 = new UV3(var10062, var177);
       ((UV3)Ref.g(354859781990372885L, var12)).repaint();
       Integer var10006 = (Integer)(Registry.emptyArgs());
       long var15 = 486203322657356972L;
-      Object[] var14 = var10006;
+      var14 = var10006;
       var10006 = Ref.h(486203322657356972L, var14, var15);
 
       try {
@@ -749,7 +754,7 @@ var10061 = new UV3(var10062, var177);
          }
 
          var10006 = var3;
-         Object[] var33 = Registry.emptyArgs();
+         var33 = Registry.emptyArgs();
          long var17 = 486203322657356972L;
          Object[] var16 = var33;
          Object var34 = Ref.h(486203322657356972L, var16, var17);
@@ -794,6 +799,8 @@ var10061 = new UV3(var10062, var177);
    }
 
    public XT3 g() {
+      Object[] var33;
+      boolean var42;
       XT3 var2 = new XT3(0);
       var2.O(true);
       var2.setBorder(null);
@@ -892,7 +899,7 @@ var10061 = new UV3(var10062, var177);
       Ref.g(166410067581525611L, var31);
       Object[] var10011 = Registry.packArgs(a(23343, 23838));
       long var34 = 563115472405786955L;
-      Object[] var33 = var10011;
+      var33 = var10011;
       Registry.packArgs(Ref.h(563115472405786955L, var33, var34));
       long var35 = 400943764010088455L;
       Object var10012 = Ref.h2(400943764010088455L, var35);
@@ -915,15 +922,17 @@ var10061 = new UV3(var10062, var177);
    }
 
    public void L() {
+      Object[] var33;
+      Object[] var37;
       String[] var10000 = F8.y();
       String var2 = (String)Registry.lookupField(478301022169899080L).get(null);
       String[] var1 = var10000;
       Object var11 = 354859781990372885L;
       Ref.g(354859781990372885L, var11);
       Object var13 = 601581016628183308L;
-      Object var10002 = (Connection5)Ref.g(601581016628183308L, var13);
+      Object var10002 = (ImportExportPanel)Ref.g(601581016628183308L, var13);
       if (var1 == null) {
-         if (((Connection5)var10002).getSelectionCount() == 0) {
+         if (((ImportExportPanel)var10002).getSelectionCount() == 0) {
             Object var15 = 354859781990372885L;
             Ref.g(354859781990372885L, var15);
             Object var17 = 601581016628183308L;
@@ -944,7 +953,7 @@ var10061 = new UV3(var10062, var177);
          Object var21 = 354859781990372885L;
          Ref.g(354859781990372885L, var21);
          Object var23 = 601581016628183308L;
-         ((Connection5)Ref.g(601581016628183308L, var23)).getSelectionPath().getLastPathComponent();
+         ((ImportExportPanel)Ref.g(601581016628183308L, var23)).getSelectionPath().getLastPathComponent();
       }
 
       DefaultMutableTreeNode var3;
@@ -959,7 +968,7 @@ var10061 = new UV3(var10062, var177);
                      Tf4 var5 = (Tf4)var4;
                      java.io.File var10003 = Registry.emptyArgs();
                      long var26 = 543633160597441792L;
-                     Object[] var25 = var10003;
+                     Object var25 = var10003;
                      var10003 = Ref.h(543633160597441792L, var25, var26);
 
                      try {
@@ -990,9 +999,9 @@ var10061 = new UV3(var10062, var177);
             }
 
             Ck4 var58 = (Ck4)var10002;
-            Object[] var64 = Registry.emptyArgs();
+            Object var64 = Registry.emptyArgs();
             long var28 = 272998330038223631L;
-            Object[] var27 = var64;
+            Object var27 = var64;
             var64 = Ref.h(272998330038223631L, var27, var28);
 
             try {
@@ -1012,7 +1021,7 @@ var10061 = new UV3(var10062, var177);
 
       String var10004 = (String)(Registry.packArgs(var2));
       long var30 = 444106268310274996L;
-      Object[] var29 = var10004;
+      Object var29 = var10004;
       var10004 = Ref.h(444106268310274996L, var29, var30);
 
       try {
@@ -1027,11 +1036,11 @@ var10061 = new UV3(var10062, var177);
       Ref.h2(270389152141252877L, var31);
       Object[] var10006 = Registry.emptyArgs();
       long var34 = 410905379772103887L;
-      Object[] var33 = var10006;
+      var33 = var10006;
       Ref.h(410905379772103887L, var33, var34);
       LO3 var10007 = (LO3)(Registry.packArgs(var2, var59));
       long var36 = 416293356817081351L;
-      Object[] var35 = var10007;
+      Object var35 = var10007;
       var10007 = Ref.h(416293356817081351L, var35, var36);
 
       try {
@@ -1044,7 +1053,7 @@ var10061 = new UV3(var10062, var177);
       new StringBuilder().append(var2).append(java.io.File.separator);
       String var10009 = (String)(Registry.emptyArgs());
       long var38 = 194080076253066315L;
-      Object[] var37 = var10009;
+      var37 = var10009;
       var10009 = Ref.h(194080076253066315L, var37, var38);
 
       try {
@@ -1106,22 +1115,24 @@ var10061 = new UV3(var10062, var177);
    }
 
    public void S() {
+      Object[] var14;
+      long var33;
       String[] var10000 = F8.y();
       String var2 = (String)Registry.lookupField(478301022169899080L).get(null);
       String[] var1 = var10000;
       Object var6 = 354859781990372885L;
       Ref.g(354859781990372885L, var6);
       Object var8 = 601581016628183308L;
-      Object var10002 = (Connection5)Ref.g(601581016628183308L, var8);
+      Object var10002 = (ImportExportPanel)Ref.g(601581016628183308L, var8);
       if (var1 == null) {
-         if (((Connection5)var10002).getSelectionCount() == 0) {
+         if (((ImportExportPanel)var10002).getSelectionCount() == 0) {
             Object var10 = 354859781990372885L;
             Ref.g(354859781990372885L, var10);
             Object var12 = 601581016628183308L;
             Ref.g(601581016628183308L, var12);
             Object[] var10005 = Registry.emptyArgs();
             long var15 = 205680329605647971L;
-            Object[] var14 = var10005;
+            var14 = var10005;
             Ref.h(205680329605647971L, var14, var15);
 
             try {
@@ -1135,7 +1146,7 @@ var10061 = new UV3(var10062, var177);
          Object var16 = 354859781990372885L;
          Ref.g(354859781990372885L, var16);
          Object var18 = 601581016628183308L;
-         ((Connection5)Ref.g(601581016628183308L, var18)).getSelectionPath().getLastPathComponent();
+         ((ImportExportPanel)Ref.g(601581016628183308L, var18)).getSelectionPath().getLastPathComponent();
       }
 
       DefaultMutableTreeNode var3;
@@ -1149,7 +1160,7 @@ var10061 = new UV3(var10062, var177);
                   Tf4 var5 = (Tf4)var4;
                   java.io.File var10003 = Registry.emptyArgs();
                   long var21 = 543633160597441792L;
-                  Object[] var20 = var10003;
+                  Object var20 = var10003;
                   var10003 = Ref.h(543633160597441792L, var20, var21);
 
                   try {
@@ -1180,9 +1191,9 @@ var10061 = new UV3(var10062, var177);
          }
 
          Ck4 var43 = (Ck4)var10002;
-         Object[] var48 = Registry.emptyArgs();
+         Object var48 = Registry.emptyArgs();
          long var23 = 272998330038223631L;
-         Object[] var22 = var48;
+         Object var22 = var48;
          var48 = Ref.h(272998330038223631L, var22, var23);
 
          try {
@@ -1212,7 +1223,7 @@ var10061 = new UV3(var10062, var177);
       Object var30 = 313728980571712684L;
       Object var10010 = Ref.g(313728980571712684L, var30);
       Object[] var10011 = Registry.emptyArgs();
-      long var33 = 249886410317960768L;
+      var33 = 249886410317960768L;
       Object[] var32 = var10011;
       Ref.h(249886410317960768L, var32, var33);
       var10011 = Registry.emptyArgs();
@@ -1225,26 +1236,28 @@ var10061 = new UV3(var10062, var177);
          throw var36.getTargetException();
       }
 
-      super((String)var10010, var10011, (Window)var10012, null, var3);
+      // [VF-super] super((String)var10010, var10011, (Window)var10012, null, var3);
    }
 
    public void h() {
+      Object[] var14;
+      long var33;
       String[] var10000 = F8.y();
       String var2 = (String)Registry.lookupField(478301022169899080L).get(null);
       String[] var1 = var10000;
       Object var6 = 354859781990372885L;
       Ref.g(354859781990372885L, var6);
       Object var8 = 601581016628183308L;
-      Object var10002 = (Connection5)Ref.g(601581016628183308L, var8);
+      Object var10002 = (ImportExportPanel)Ref.g(601581016628183308L, var8);
       if (var1 == null) {
-         if (((Connection5)var10002).getSelectionCount() == 0) {
+         if (((ImportExportPanel)var10002).getSelectionCount() == 0) {
             Object var10 = 354859781990372885L;
             Ref.g(354859781990372885L, var10);
             Object var12 = 601581016628183308L;
             Ref.g(601581016628183308L, var12);
             Object[] var10005 = Registry.emptyArgs();
             long var15 = 205680329605647971L;
-            Object[] var14 = var10005;
+            var14 = var10005;
             Ref.h(205680329605647971L, var14, var15);
 
             try {
@@ -1258,7 +1271,7 @@ var10061 = new UV3(var10062, var177);
          Object var16 = 354859781990372885L;
          Ref.g(354859781990372885L, var16);
          Object var18 = 601581016628183308L;
-         ((Connection5)Ref.g(601581016628183308L, var18)).getSelectionPath().getLastPathComponent();
+         ((ImportExportPanel)Ref.g(601581016628183308L, var18)).getSelectionPath().getLastPathComponent();
       }
 
       DefaultMutableTreeNode var3;
@@ -1272,7 +1285,7 @@ var10061 = new UV3(var10062, var177);
                   Tf4 var5 = (Tf4)var4;
                   java.io.File var10003 = Registry.emptyArgs();
                   long var21 = 543633160597441792L;
-                  Object[] var20 = var10003;
+                  Object var20 = var10003;
                   var10003 = Ref.h(543633160597441792L, var20, var21);
 
                   try {
@@ -1303,9 +1316,9 @@ var10061 = new UV3(var10062, var177);
          }
 
          Ck4 var43 = (Ck4)var10002;
-         Object[] var48 = Registry.emptyArgs();
+         Object var48 = Registry.emptyArgs();
          long var23 = 272998330038223631L;
-         Object[] var22 = var48;
+         Object var22 = var48;
          var48 = Ref.h(272998330038223631L, var22, var23);
 
          try {
@@ -1335,7 +1348,7 @@ var10061 = new UV3(var10062, var177);
       Object var30 = 313728980571712684L;
       Object var10010 = Ref.g(313728980571712684L, var30);
       Object[] var10011 = Registry.emptyArgs();
-      long var33 = 249886410317960768L;
+      var33 = 249886410317960768L;
       Object[] var32 = var10011;
       Ref.h(249886410317960768L, var32, var33);
       var10011 = Registry.emptyArgs();
@@ -1348,7 +1361,7 @@ var10061 = new UV3(var10062, var177);
          throw var36.getTargetException();
       }
 
-      super((String)var10010, var10011, (Window)var10012, null, var3);
+      // [VF-super] super((String)var10010, var10011, (Window)var10012, null, var3);
    }
 
    public String t(String var1) {
@@ -1358,7 +1371,7 @@ var10061 = new UV3(var10062, var177);
       String[] var2 = var10000;
       HashSet var5 = new HashSet();
       java.io.File var6 = new java.io.File(var1);
-      java.io.File[] var7 = var6.listFiles();
+      java.io.File var7 = var6.listFiles();
       java.io.File[] var13 = var7;
       if (var2 == null) {
          if (var7 == null) {
@@ -2294,6 +2307,9 @@ var10061 = new UV3(var10062, var177);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      long var37;
+      byte var42;
       String[] var13 = new String[33];
       int var11 = 0;
       String var10 = "冤郖\u000eb\u009a¾:m\u000f\u0091f\r\u000f\n4·f\u0005旃幃斜五夎'Ç÷ÀaK\u0004Ð4|\u0012l]sãè¸\u009dpt¸d±æé¨\n¬\\\u008a\u0081O{qg}FOõ\n\u0002凶郚\n杳弒瘯厷辛\u0005X\u0084劻逐\u000e\u0096\\ â¾\u0014ë\u0005Bcã¹\u008a×\u0006\u009f\u008e7¸y\u008e<F\u0005Âz´í\u008b\u0097\u008b¿º@K\u0019y¨µ~\bä#\u001f¯c\u0080Ê\u000bJk×Ñÿ}-\u008baÆ\u008e Có^1B5\fÀ\b\u000er\u0086Eã\u0097¿\u0092\u008fX\u0004·\u0002窊厼\u0006\n\u0080Æ[@F\u0014èpý\u0006DÊ\u0088\u008b\u0098\rªb\u008ehÿ\u0017õÜèp\u0002捈轩\u0013åé TÿÄÈ\u009fro'\u0016ª\u009eo±î±²'¿9Ï¸ª?ìSûþ\u009cÀmP+Îå¾{a\u0085\u008aÚ\u008e/æ\\Á\u00942\u008c\r\t©r\u009f®Î6\u000b´\u0088®\u008e\u0086ùb\u0082Pú©\u0002亘未\u0002亻朓\u0003疔戾呷\u0002窗厡\u000f輙童棭霛轵挚e¯ÓãõcÓ{`\u0003疭截呐\u0002掚輙\n\u0001F\u0001,\tÂÇ);¬\u00158\u0018ç\u000b\u0007kà\u00ad\u0084\u0087\u001fï\u008eÆ\u008c2\u0080\u000e*¶º\u0015 JôAe\"¬\u0095\u000b±(am\\Ua»dMûV\u0002哶祻\u0010+\u009dDW¡\u00adÄÚ\u0087\u0018u{\u0093È_\u009f\b8\b\u0080J\u0088d5\u008d\u0016\u0012ì¢\u0095¯¸õÃ ÞE\u0088ËÉÈ~yA3K\u0005Ú\u0002咹禅";
@@ -2309,12 +2325,11 @@ var10061 = new UV3(var10062, var177);
          byte var10002 = -1;
 
          while (true) {
-      long var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
                int var14 = 0;
-               byte var42 = var10000;
+               var42 = var10000;
                var33 = var39;
                int var24 = var10004;
                byte var49;
@@ -2402,7 +2417,7 @@ var10061 = new UV3(var10062, var177);
                         byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
-                        long var37 = ((long)var7[0] & 255L) << 56
+                        var37 = ((long)var7[0] & 255L) << 56
                            | ((long)var7[1] & 255L) << 48
                            | ((long)var7[2] & 255L) << 40
                            | ((long)var7[3] & 255L) << 32

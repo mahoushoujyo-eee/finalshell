@@ -17,7 +17,7 @@ public class FP extends JFrame {
    public static Integer[] d;
 
    public FP() {
-      Object[] var10001 = Registry.packArgs(a(17834, -5693));
+      Object var10001 = Registry.packArgs(a(17834, -5693));
       long var1 = 517287540690064504L;
       Object var10002 = Ref.h2(517287540690064504L, var1);
 
@@ -885,6 +885,7 @@ public class FP extends JFrame {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "´woèÜÇAðÜ£³¬'3ÕQÄbâ¢¦véÊðô\u0084c\u0098»äs\u0015Ò\bÃ`Æ\b\u0094qg\u0094èú@Mp\u000e\u0099\u0089\u0005½\u0017h®Å7ÚY!\u008d3\u000f\u008c\u000f§mCr'\u0083e·\u0017\u008cÀ\u008cÍ";
@@ -900,7 +901,6 @@ public class FP extends JFrame {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

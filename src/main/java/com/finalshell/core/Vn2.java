@@ -47,7 +47,8 @@ public class Vn2 extends JTable {
       }
    }
 
-   public void e(File var1, com.finalshell.ui.frame.U var2) {
+   public void e(File var1, com.finalshell.ui.frame.MainFrame var2) {
+      Integer var40;
       C();
       Object[] var10002 = Registry.emptyArgs();
       long var8 = 303756590022481369L;
@@ -66,9 +67,9 @@ public class Vn2 extends JTable {
       long var12 = 494133230614533268L;
       Object[] var11 = var10003;
       Ref.h(494133230614533268L, var11, var12);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var14 = 328118709254946779L;
-      Object[] var13 = var10004;
+      Object var13 = var10004;
       var10004 = Ref.h(328118709254946779L, var13, var14);
 
       try {
@@ -97,9 +98,9 @@ public class Vn2 extends JTable {
       }
 
       if (var2 == null) {
-         Object[] var10008 = Registry.emptyArgs();
+         Object var10008 = Registry.emptyArgs();
          long var22 = 402271797068414482L;
-         Object[] var21 = var10008;
+         Object var21 = var10008;
          var10008 = Ref.h(402271797068414482L, var21, var22);
 
          try {

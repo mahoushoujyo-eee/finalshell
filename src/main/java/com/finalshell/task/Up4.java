@@ -2,15 +2,15 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.dialog.DownloadDialog;
+import com.finalshell.ui.dialog.DownloadProgressDialog;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTextArea;
 
 public class Up4 implements Runnable {
    public final String t;
-   public final DownloadDialog j;
+   public final DownloadProgressDialog j;
 
-   public Up4(DownloadDialog var1, String var2) {
+   public Up4(DownloadProgressDialog var1, String var2) {
       this.j = var1;
       this.t = var2;
    }

@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-public abstract class LI3 extends Ls4 {
+public abstract class LI3 extends SshKeyCodec {
    public byte[] c;
    public byte[] K;
    public static String[] a;
@@ -1383,6 +1383,7 @@ public abstract class LI3 extends Ls4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[8];
       int var3 = 0;
       String var2 = "/qè²\f\u0088ê\u0080ü\u0004ÐõM\u0002ý\u0097Ó\u000e5\u0011Ã4ÉÒ6V ¿¤\u0093ø4\b&\u0017°Ë\u001c©\u0092\u0084V\u0097\u0086OþZô`k\u0091*n]±\u0001L^ÇîÆ¿êj\u009dF\u0013cZa×=$Ì\u00158¶H£^È\u009fÎ\u009f%¼\f\u000fqE\u0095:Æ¥\u0090\u009dý/\n\u0010úZîOÚ¥æ\u009aox·ù\"\u0010Òa";
@@ -1398,7 +1399,6 @@ public abstract class LI3 extends Ls4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

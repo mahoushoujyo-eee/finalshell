@@ -1452,6 +1452,7 @@ public class RI implements IF {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[9];
       int var3 = 0;
       String var2 = "þ´\u009a¸Q¿|\f#Ô\u0092\u00861\u0010\u0019\u0004Ù\u0083\u0086Ã\u001aYÙPd¾~öi\u0016°ÎÓYeî\u0016T¤ÿ{eF4)\u0097r\u0002\u001b±\u0004Äæ\u0086y\u0004¶\u000eÙë\b\u0016ð×49®ð¼";
@@ -1467,7 +1468,6 @@ public class RI implements IF {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

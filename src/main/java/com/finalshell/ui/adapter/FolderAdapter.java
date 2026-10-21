@@ -1,13 +1,13 @@
 package com.finalshell.ui.adapter;
 
 import com.finalshell.core.Km2;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.Mg2;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import com.finalshell.ui.panel.ConnectionProperty;
 import java.awt.Color;
 import java.awt.Component;
@@ -25,7 +25,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 public class FolderAdapter extends DefaultTableCellRenderer {
    public Border X;
    public SimpleDateFormat p;
-   public Address e;
+   public FileBrowserAddressBar e;
    public HashMap Q;
    public static String[] a;
    public static String[] b;
@@ -49,6 +49,22 @@ public class FolderAdapter extends DefaultTableCellRenderer {
 
    @Override
    public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
+      Long var189;
+      Long var204;
+      Long var207;
+      String var211;
+      Integer var216;
+      String var229;
+      Long var232;
+      Integer var236;
+      Integer var244;
+      Integer var247;
+      Integer var250;
+      Integer var259;
+      Integer var262;
+      Integer var265;
+      Long var277;
+      Long var280;
       String var7;
       Component var8;
       JLabel var9;
@@ -70,19 +86,19 @@ public class FolderAdapter extends DefaultTableCellRenderer {
          var17 = null;
          var7 = var10000;
          Object var22 = 545626806393068332L;
-         Address var10001 = (Address)Ref.g(545626806393068332L, var22);
+         FileBrowserAddressBar var10001 = (FileBrowserAddressBar)Ref.g(545626806393068332L, var22);
          if (var7 == null) {
             if (var10001 == null) {
                break label598;
             }
 
             Object var24 = 545626806393068332L;
-            Address var10002 = (Address)Ref.g(545626806393068332L, var24);
+            FileBrowserAddressBar var10002 = (FileBrowserAddressBar)Ref.g(545626806393068332L, var24);
          }
 
          ConnectionProperty var168 = Registry.emptyArgs();
          long var27 = 205360729747621821L;
-         Object[] var26 = var168;
+         Object var26 = var168;
          var168 = Ref.h(205360729747621821L, var26, var27);
 
          try {
@@ -91,7 +107,7 @@ public class FolderAdapter extends DefaultTableCellRenderer {
             throw var161.getTargetException();
          }
 
-         Ty2 var171 = var168.M$Ty_2();
+         RemoteProcessManager var171 = var168.M$Ty_2();
          if (var7 == null) {
             if (var171 == null) {
                break label598;
@@ -101,7 +117,7 @@ public class FolderAdapter extends DefaultTableCellRenderer {
             Ref.g(545626806393068332L, var28);
             ConnectionProperty var10004 = Registry.emptyArgs();
             long var31 = 205360729747621821L;
-            Object[] var30 = var10004;
+            Object var30 = var10004;
             var10004 = Ref.h(205360729747621821L, var30, var31);
 
             try {
@@ -132,7 +148,7 @@ public class FolderAdapter extends DefaultTableCellRenderer {
          Ref.g(545626806393068332L, var36);
          ConnectionProperty var10006 = Registry.emptyArgs();
          long var39 = 205360729747621821L;
-         Object[] var38 = var10006;
+         Object var38 = var10006;
          var10006 = Ref.h(205360729747621821L, var38, var39);
 
          try {
@@ -148,7 +164,7 @@ public class FolderAdapter extends DefaultTableCellRenderer {
          Ref.h(121632250293569146L, var40, var41);
          HashMap var10008 = (HashMap)(Registry.emptyArgs());
          long var43 = 573616341324590279L;
-         Object[] var42 = var10008;
+         Object var42 = var10008;
          var10008 = Ref.h(573616341324590279L, var42, var43);
 
          try {
@@ -199,7 +215,7 @@ public class FolderAdapter extends DefaultTableCellRenderer {
                                  if (var15 == 0) {
                                     String var198 = (String)(Registry.emptyArgs());
                                     long var47 = 580695022383982904L;
-                                    Object[] var46 = var198;
+                                    Object var46 = var198;
                                     var198 = Ref.h(580695022383982904L, var46, var47);
 
                                     try {
@@ -212,7 +228,7 @@ public class FolderAdapter extends DefaultTableCellRenderer {
                                        if (var198 != null) {
                                           String var224 = (String)(Registry.emptyArgs());
                                           long var49 = 580695022383982904L;
-                                          Object[] var48 = var224;
+                                          Object var48 = var224;
                                           var224 = Ref.h(580695022383982904L, var48, var49);
 
                                           try {
@@ -287,9 +303,9 @@ public class FolderAdapter extends DefaultTableCellRenderer {
                               if (var7 == null) {
                                  if (var185 == var201) {
                                     new StringBuilder();
-                                    Object[] var230 = Registry.emptyArgs();
+                                    Object var230 = Registry.emptyArgs();
                                     long var57 = 556117124296734693L;
-                                    Object[] var56 = var230;
+                                    Object var56 = var230;
                                     var230 = Ref.h(556117124296734693L, var56, var57);
 
                                     try {
@@ -334,7 +350,6 @@ public class FolderAdapter extends DefaultTableCellRenderer {
                                        var207 = (Long)var206;
                                     } catch (InvocationTargetException var148) {
       String var233;
-      String var233;
                                        throw var148.getTargetException();
                                     }
 
@@ -353,9 +368,9 @@ public class FolderAdapter extends DefaultTableCellRenderer {
                                     Object var64 = 294038036363208614L;
                                     var268 = (SimpleDateFormat)Ref.g(294038036363208614L, var64);
                                     Date var272;
-                                    Object[] var278 = Registry.emptyArgs();
+                                    Object var278 = Registry.emptyArgs();
                                     long var67 = 309552269024527186L;
-                                    Object[] var66 = var278;
+                                    Object var66 = var278;
                                     var278 = Ref.h(309552269024527186L, var66, var67);
 
                                     try {
@@ -427,9 +442,9 @@ var162 = new SimpleDateFormat(var280);
 
                               if (var185 == var201) {
                                  var12 = 2;
-                                 Object[] var234 = Registry.emptyArgs();
+                                 Object var234 = Registry.emptyArgs();
                                  long var73 = 403273169707556690L;
-                                 Object[] var72 = var234;
+                                 Object var72 = var234;
                                  var234 = Ref.h(403273169707556690L, var72, var73);
 
                                  try {
@@ -527,7 +542,7 @@ var162 = new SimpleDateFormat(var280);
                         var268 = (HashMap)Ref.g(465884130222660170L, var84);
                         HashMap var10014 = Registry.emptyArgs();
                         long var87 = 605430732347023634L;
-                        Object[] var86 = var10014;
+                        Object var86 = var10014;
                         var10014 = Ref.h(605430732347023634L, var86, var87);
 
                         try {
@@ -601,9 +616,9 @@ var162 = new SimpleDateFormat(var280);
             int var183 = var15;
             if (var7 == null) {
                if (var15 == 0) {
-                  Object[] var195 = Registry.emptyArgs();
+                  Object var195 = Registry.emptyArgs();
                   long var97 = 242892459251541809L;
-                  Object[] var96 = var195;
+                  Object var96 = var195;
                   var195 = Ref.h(242892459251541809L, var96, var97);
 
                   try {
@@ -615,9 +630,9 @@ var162 = new SimpleDateFormat(var280);
                   label484: {
                      if (var7 == null) {
                         if (var195 != null) {
-                           Object[] var218 = Registry.emptyArgs();
+                           Object var218 = Registry.emptyArgs();
                            long var99 = 242892459251541809L;
-                           Object[] var98 = var218;
+                           Object var98 = var218;
                            var218 = Ref.h(242892459251541809L, var98, var99);
 
                            try {
@@ -712,9 +727,9 @@ var162 = new SimpleDateFormat(var280);
                   Object var106 = 294038036363208614L;
                   SimpleDateFormat var10012 = (SimpleDateFormat)Ref.g(294038036363208614L, var106);
                   Date var10013;
-                  Object[] var10016 = Registry.emptyArgs();
+                  Object var10016 = Registry.emptyArgs();
                   long var109 = 548714014728507656L;
-                  Object[] var108 = var10016;
+                  Object var108 = var10016;
                   var10016 = Ref.h(548714014728507656L, var108, var109);
 
                   try {
@@ -755,9 +770,9 @@ var18 = new SimpleDateFormat(var277);
                         }
 
                         var192 = new StringBuilder().append(" ");
-                        Object[] var239 = Registry.emptyArgs();
+                        Object var239 = Registry.emptyArgs();
                         long var113 = 375336992326046344L;
-                        Object[] var112 = var239;
+                        Object var112 = var239;
                         var239 = Ref.h(375336992326046344L, var112, var113);
 
                         try {
@@ -791,9 +806,9 @@ var18 = new SimpleDateFormat(var277);
             }
 
             var12 = var183;
-            Object[] var10011 = Registry.emptyArgs();
+            Object var10011 = Registry.emptyArgs();
             long var115 = 428016133386020772L;
-            Object[] var114 = var10011;
+            Object var114 = var10011;
             var10011 = Ref.h(428016133386020772L, var114, var115);
 
             try {
@@ -807,9 +822,9 @@ var18 = new SimpleDateFormat(var277);
             if (var7 == null) {
                if (var20 == null) {
                   new StringBuilder().append("");
-                  Object[] var242 = Registry.emptyArgs();
+                  Object var242 = Registry.emptyArgs();
                   long var117 = 428016133386020772L;
-                  Object[] var116 = var242;
+                  Object var116 = var242;
                   var242 = Ref.h(428016133386020772L, var116, var117);
 
                   try {
@@ -822,9 +837,9 @@ var18 = new SimpleDateFormat(var277);
                }
 
                var193 = var17;
-               Object[] var245 = Registry.emptyArgs();
+               Object var245 = Registry.emptyArgs();
                long var119 = 599763612119130140L;
-               Object[] var118 = var245;
+               Object var118 = var245;
                var245 = Ref.h(599763612119130140L, var118, var119);
 
                try {
@@ -841,9 +856,9 @@ var18 = new SimpleDateFormat(var277);
             if (var7 == null) {
                if (var21 == null) {
                   new StringBuilder().append("");
-                  Object[] var248 = Registry.emptyArgs();
+                  Object var248 = Registry.emptyArgs();
                   long var121 = 599763612119130140L;
-                  Object[] var120 = var248;
+                  Object var120 = var248;
                   var248 = Ref.h(599763612119130140L, var120, var121);
 
                   try {
@@ -926,12 +941,12 @@ var18 = new SimpleDateFormat(var277);
       }
    }
 
-   public Address Q$F6() {
+   public FileBrowserAddressBar Q$F6() {
       Object var1 = 545626806393068332L;
-      return (Address)Ref.g(545626806393068332L, var1);
+      return (FileBrowserAddressBar)Ref.g(545626806393068332L, var1);
    }
 
-   public void K(Address var1) {
+   public void K(FileBrowserAddressBar var1) {
       long var3 = 545626806393068332L;
       Ref.s(545626806393068332L, var1, var3);
    }
@@ -1899,7 +1914,6 @@ var18 = new SimpleDateFormat(var277);
       }
    }
 }
-
 
 
 

@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.config.File;
+import com.finalshell.config.ConfigFileStore;
 import com.finalshell.core.JT;
 import com.finalshell.core.LL3_2;
 import com.finalshell.core.Nl2_2;
@@ -11,7 +11,7 @@ import com.finalshell.core.Tc2;
 import com.finalshell.core.Ty4;
 import com.finalshell.core.V7;
 import com.finalshell.core.YT3_2;
-import com.finalshell.core.Yf2;
+import com.finalshell.core.ConnectionConfigStore;
 import com.finalshell.core.Yy4_2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
@@ -26,6 +26,7 @@ public class Vo2 implements Runnable {
 
    @Override
    public void run() {
+      Integer var90;
       Object var2 = 288736546242913911L;
       Ref.g(288736546242913911L, var2);
       Object[] var10002 = Registry.emptyArgs();
@@ -82,9 +83,9 @@ public class Vo2 implements Runnable {
       Object[] var10017 = Registry.packArgs(Ref.g(288736546242913911L, var28));
       long var30 = 385643251219565463L;
       Object var10018 = Ref.h2(385643251219565463L, var30);
-      Object[] var10019 = Registry.emptyArgs();
+      Object var10019 = Registry.emptyArgs();
       long var33 = 289260173423359764L;
-      Object[] var32 = var10019;
+      Object var32 = var10019;
       var10019 = Ref.h(289260173423359764L, var32, var33);
 
       try {
@@ -130,9 +131,9 @@ public class Vo2 implements Runnable {
       Ref.s(600554996554830375L, var50, var51);
       Object var52 = 288736546242913911L;
       Ref.g(288736546242913911L, var52);
-      Yf2 var10027 = new Yf2();
+      ConnectionConfigStore var10027 = new ConnectionConfigStore();
       long var55 = 417188137775278471L;
-      Yf2 var54 = var10027;
+      ConnectionConfigStore var54 = var10027;
       Ref.s(417188137775278471L, var54, var55);
       Object var56 = 288736546242913911L;
       Ref.g(288736546242913911L, var56);
@@ -142,9 +143,9 @@ public class Vo2 implements Runnable {
       Ref.s(229771799014212961L, var58, var59);
       Object var60 = 288736546242913911L;
       Ref.g(288736546242913911L, var60);
-      File var10031 = new File((String)Registry.lookupField(454976841716774960L).get(null));
+      ConfigFileStore var10031 = new ConfigFileStore((String)Registry.lookupField(454976841716774960L).get(null));
       long var63 = 582516445304770542L;
-      File var62 = var10031;
+      ConfigFileStore var62 = var10031;
       Ref.s(582516445304770542L, var62, var63);
       Object var64 = 288736546242913911L;
       Ref.g(288736546242913911L, var64);

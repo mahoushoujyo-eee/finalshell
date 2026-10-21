@@ -976,6 +976,7 @@ public class QP_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[14];
       int var3 = 0;
       String var2 = "PÅ×fó\t\u008e\u0001¿{\u0003\u009e#\u0012\u000e\u0003\u008d@(\u00191ïÅWG\u0089Âò\u0088\büàÎl¿6¿7\u0015¦g\u009cî\u0088V\u009fIbÆwÄC»tá\u0015\u009e.ì_\u0014(Ê%Àµ(b\"ÿÿÝYZÞ°\rÝAN\r\u0007T\u0082\fÅÊ(â\u0003é ï\u0005\n\u008c¿\u0015«\u001cÖ,\u0096\"N\u0084+y@é$>ê{îç\u0011¹<`®Qnó\u0095ÀÝÚ\u0007Â[\u0085\u00ad½tÕ\u0006\u0085}\u0006EfÍ";
@@ -991,7 +992,6 @@ public class QP_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label66: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -2,7 +2,7 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.core.KC;
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
@@ -22,7 +22,7 @@ public class Yt4 implements FocusListener {
       Object var2 = 169243950586061429L;
       Ref.g(169243950586061429L, var2);
       Object var4 = 489572751534480599L;
-      ((Connection4)Ref.g(489572751534480599L, var4)).stopEditing();
+      ((ConnectionInfoPanel)Ref.g(489572751534480599L, var4)).stopEditing();
    }
 }
 

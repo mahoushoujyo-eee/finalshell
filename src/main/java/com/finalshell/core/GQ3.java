@@ -83,6 +83,7 @@ public class GQ3 extends HN3 {
 
    @Override
    public int C(int var1, int var2, int var3) {
+      int var35;
       var1 = (int)((float)var1 + this.u + this.V / 2.0F);
       var2 = (int)((float)var2 + this.F + this.R / 2.0F);
       float var5 = NM.i((float)var1, this.u + this.V);
@@ -247,12 +248,11 @@ public class GQ3 extends HN3 {
 
       if (var4 != null) {
          if (var31 != 0) {
-            var35 = this.b;
+            var35 = (this.b) ? 1 : 0;
             label108:
             if (var4 != null) {
                label106:
                if (this.b) {
-      int var35;
                   var35 = var20;
                   int var10001 = this.S[var19][(var7 + 1) % this.X];
                   if (var4 != null) {

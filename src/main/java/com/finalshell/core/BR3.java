@@ -6,7 +6,7 @@ public class BR3 {
    public UR u;
    public InetAddress a;
    public int y;
-   public Rdp p;
+   public RdpConnection p;
    public boolean j = false;
 
    public BR3(UR var1) {

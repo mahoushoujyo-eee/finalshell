@@ -80,6 +80,11 @@ public class Zn2 extends Z7 {
    }
 
    public void B() {
+      Integer var172;
+      Object[] var33;
+      long var38;
+      Object[] var79;
+      long var80;
       short var10000 = 567;
       g();
       Registry.emptyArgs();
@@ -91,7 +96,7 @@ public class Zn2 extends Z7 {
       var10004 = Ref.h(399585344452154517L, var15, var16);
       NY var10005 = (NY)(Registry.emptyArgs());
       long var18 = 149968465491171480L;
-      Object[] var17 = var10005;
+      Object var17 = var10005;
       var10005 = Ref.h(149968465491171480L, var17, var18);
 
       try {
@@ -108,7 +113,7 @@ public class Zn2 extends Z7 {
       Ref.h2(270389152141252877L, var19);
       int var10007 = (int)Registry.emptyArgs();
       long var22 = 121346227073341697L;
-      Object[] var21 = var10007;
+      Object var21 = var10007;
       var10007 = (int)Ref.h(121346227073341697L, var21, var22);
       Object[] var10008 = Registry.emptyArgs();
       long var24 = 446211275215857466L;
@@ -159,13 +164,13 @@ public class Zn2 extends Z7 {
          Ref.s(315260666111066947L, var31, var32);
          Object[] var10011 = Registry.emptyArgs();
          long var34 = 570146297653439641L;
-         Object[] var33 = var10011;
+         var33 = var10011;
          Ref.h(570146297653439641L, var33, var34);
          Object[] var10012 = Registry.emptyArgs();
          long var36 = 368089303768325505L;
          Object[] var35 = var10012;
          var10012 = Ref.h(368089303768325505L, var35, var36);
-         long var38 = 162058560421645924L;
+         var38 = 162058560421645924L;
          Object var37 = var10012;
          Ref.s(162058560421645924L, var37, var38);
          Object[] var10014 = Registry.emptyArgs();
@@ -194,7 +199,7 @@ public class Zn2 extends Z7 {
          Color var10021;
          XF3 var10024 = (XF3)(Registry.emptyArgs());
          long var56 = 605008073331144146L;
-         Object[] var55 = var10024;
+         Object var55 = var10024;
          var10024 = Ref.h(605008073331144146L, var55, var56);
 
          try {
@@ -210,7 +215,7 @@ public class Zn2 extends Z7 {
          Color var10023;
          DC var10026 = Registry.emptyArgs();
          long var60 = 307147474512918572L;
-         Object[] var59 = var10026;
+         Object var59 = var10026;
          var10026 = Ref.h(307147474512918572L, var59, var60);
 
          try {
@@ -225,11 +230,11 @@ public class Zn2 extends Z7 {
          DC var154 = (DC)Ref.g(539382548805975630L, var61);
          var10026 = Registry.emptyArgs();
          long var64 = 570146297653439641L;
-         Object[] var63 = var10026;
+         Object var63 = var10026;
          var10026 = (DC)Ref.h(570146297653439641L, var63, var64);
          Font var10027 = (Font)(Registry.emptyArgs());
          long var66 = 439979510325483015L;
-         Object[] var65 = var10027;
+         Object var65 = var10027;
          var10027 = Ref.h(439979510325483015L, var65, var66);
 
          try {
@@ -255,8 +260,8 @@ public class Zn2 extends Z7 {
          DC var10032 = (DC)Ref.g(358208192808330593L, var77);
          Color var10033;
          XF3 var10036 = (XF3)(Registry.emptyArgs());
-         long var80 = 605008073331144146L;
-         Object[] var79 = var10036;
+         var80 = 605008073331144146L;
+         var79 = var10036;
          var10036 = Ref.h(605008073331144146L, var79, var80);
 
          try {
@@ -272,7 +277,7 @@ public class Zn2 extends Z7 {
          Color var10035;
          DC var10038 = Registry.emptyArgs();
          long var84 = 307147474512918572L;
-         Object[] var83 = var10038;
+         Object var83 = var10038;
          var10038 = Ref.h(307147474512918572L, var83, var84);
 
          try {
@@ -287,11 +292,11 @@ public class Zn2 extends Z7 {
          DC var163 = (DC)Ref.g(358208192808330593L, var85);
          var10038 = Registry.emptyArgs();
          long var88 = 381284008132314530L;
-         Object[] var87 = var10038;
+         Object var87 = var10038;
          var10038 = (DC)Ref.h(381284008132314530L, var87, var88);
          Font var10039 = (Font)(Registry.emptyArgs());
          long var90 = 439979510325483015L;
-         Object[] var89 = var10039;
+         Object var89 = var10039;
          var10039 = Ref.h(439979510325483015L, var89, var90);
 
          try {
@@ -329,7 +334,7 @@ public class Zn2 extends Z7 {
       ((JTable)Ref.g(610095513804326521L, var101)).setSelectionMode(0);
       JScrollPane var10045;
       Object var103 = 610095513804326521L;
-      super((JTable)Ref.g(610095513804326521L, var103));
+      // [VF-super] super((JTable)Ref.g(610095513804326521L, var103));
       JScrollPane var9 = var10045;
       var7.add(var9, a(-25407, 27574));
       JTable var10046 = new JTable();
@@ -352,7 +357,7 @@ public class Zn2 extends Z7 {
       var143.add(var10);
       JScrollPane var10051;
       Object var115 = 589348336963751296L;
-      super((JTable)Ref.g(589348336963751296L, var115));
+      // [VF-super] super((JTable)Ref.g(589348336963751296L, var115));
       JScrollPane var12 = var10051;
       var10.add(var12, a(-25401, 21454));
       Object[] var10052 = Registry.emptyArgs();
@@ -373,9 +378,9 @@ public class Zn2 extends Z7 {
       long var122 = 306266403902896148L;
       Object[] var121 = var10055;
       var10055 = Ref.h(306266403902896148L, var121, var122);
-      Object[] var10056 = Registry.emptyArgs();
+      Object var10056 = Registry.emptyArgs();
       long var124 = 289260173423359764L;
-      Object[] var123 = var10056;
+      Object var123 = var10056;
       var10056 = Ref.h(289260173423359764L, var123, var124);
 
       try {
@@ -396,6 +401,7 @@ public class Zn2 extends Z7 {
    }
 
    public void n() {
+      Font var38;
       Object var3 = 162058560421645924L;
       Ref.g(162058560421645924L, var3);
       int var10003 = Registry.lookupField(362807796445170916L).getInt(this);
@@ -463,6 +469,9 @@ public class Zn2 extends Z7 {
    }
 
    public void L() {
+      long var33;
+      ArrayList var79;
+      boolean var80;
       g();
       XG var10002 = new XG();
       long var11 = 237503863821638476L;
@@ -598,7 +607,7 @@ public class Zn2 extends Z7 {
          Object var30 = 437330699076589954L;
          Ref.g(437330699076589954L, var30);
          Object[] var10009 = Registry.packArgs(var73);
-         long var33 = 613199875165811855L;
+         var33 = 613199875165811855L;
          Object[] var32 = var10009;
          Ref.h(613199875165811855L, var32, var33);
 
@@ -613,14 +622,14 @@ public class Zn2 extends Z7 {
          Object var36 = 437330699076589954L;
          this.setModel((XG)Ref.g(437330699076589954L, var36));
          Object var38 = 162058560421645924L;
-         super((String)Ref.g(162058560421645924L, var38), 0, a(12367, 8264949169788185662L));
+         // [VF-super] super((String)Ref.g(162058560421645924L, var38), 0, a(12367, 8264949169788185662L));
          break;
       }
 
       Zn2 var76;
       label101: {
          Object var40 = 155460610212598962L;
-         super((String)Ref.g(155460610212598962L, var40), 0, a(515, 1306706182100311670L));
+         // [VF-super] super((String)Ref.g(155460610212598962L, var40), 0, a(515, 1306706182100311670L));
          boolean var8 = false;
          Object var42 = 162058560421645924L;
          Zn2 var10014 = ((String)Ref.g(162058560421645924L, var42)).toLowerCase().endsWith(a(-25377, 2752));
@@ -631,7 +640,7 @@ public class Zn2 extends Z7 {
                Object var46 = 162058560421645924L;
                Integer var10017 = (Integer)(Registry.packArgs(Ref.g(162058560421645924L, var46)));
                long var49 = 315859001575672678L;
-               Object[] var48 = var10017;
+               Object var48 = var10017;
                var10017 = Ref.h(315859001575672678L, var48, var49);
 
                try {
@@ -669,9 +678,9 @@ public class Zn2 extends Z7 {
       Object var58 = 437330699076589954L;
       Ref.g(437330699076589954L, var58);
       Object var60 = 629652347688477083L;
-      Object[] var10018 = Registry.packArgs(this.getFontName((Locale)Ref.g(629652347688477083L, var60)));
+      Object var10018 = Registry.packArgs(this.getFontName((Locale)Ref.g(629652347688477083L, var60)));
       long var63 = 315859001575672678L;
-      Object[] var62 = var10018;
+      Object var62 = var10018;
       var10018 = Ref.h(315859001575672678L, var62, var63);
 
       try {
@@ -1598,6 +1607,7 @@ public class Zn2 extends Z7 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[28];
       int var11 = 0;
       String var10 = "Åx\u0016¾\u0005*\u0085q0Ã\u0004ÇS1\u000b\u0004\u001d\"j%\u0012\u001f,ånöVc\u0091Ü4±± VgYÚ\u0012\u000e\u00040\u0086í\u009a&î\u009e}ä\u0086¹õV\u0004嬚俛姨屠\u001b\\uG³K\u008d]ÒÅgÄÚu0w\u008e ¹î\u0002Õ;O\\\u001fP\u008e\u0002 f\u0004\u008e \u007fµ\u0018\u009b\u0092¿OT\u0012²#¿\u0011Ü\r Ó¯Òj[\u0091\u000f\u009d\u0087Yh\u0004艷攣孇佭\u0005?ÎÖY\u0092\u000eÕ¦¼?Ý|\u0006Õ`\u008d%\u0094\u0081ó\u0004争敳察佧\u0005Æ\u001dì#p\u0005q¾\u001fW«\u0019Ú\u0083\u0097mQV\u0012£·P\u0017%mï%\u001c]ºÌzùu¼\u0099¶\u001dÙ³÷k]\u0096\u0093³\u009b\u0003XO0\u009b½Û(zÙ+\u0094\u0003xøs6\u0094Y©\u0002顧褌\u00027\u001c\u0006x\u0081U\u0018$ì\u001cj\"im*ÌBjH´ÌªÇt¡`o¯`\u0016¡\u0092º-\u0014\f\t \u0019÷\u00882\fåz\u0084&eàM3&-LDp±i\u001bMY*\u001cd\tÇ绹稂仮时嬣依頪触\u0006?\u009f×\u0018\u0095I";
@@ -1614,7 +1624,6 @@ public class Zn2 extends Z7 {
          byte var10002 = -1;
 
          while (true) {
-      Object[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

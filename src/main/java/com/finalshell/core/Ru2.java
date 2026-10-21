@@ -1642,6 +1642,7 @@ public class Ru2 extends ReflectionConverter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[20];
       int var3 = 0;
       String var2 = "î$\u008bk\u0086Ö\u0004\u0005Çt}áò\u0007\u001eQ?ô´N\u001a\u0002½\u0091\u0002\u0088\u008f\u0004)¤DZ\tXÞ\u0082Ô\u009c\u009cpÙt\u0007]ÔWD¹X»\u0014Íl\u0014\u0082NV*\u0080?x\u0090:\u0015\u000fÂ*\u000eýxÝ\t\u0095Ö;Õ«¼\u0096Ý¨\u0002·3\u0004Ú\u0010:Ì\u0013ePUªCp2&×êV\u009coÇ\u000e©\u0019\t«\u0007¸çA\u0013ßÙ/\u0005}1*I\u0018\u0007\u0097\u008c3\u0088ÔàÆOk\u0097\u0083Jr|\u0086ßµ\u0088\n|úÊD2ë\u001fK[L+¦Faîµñ\u0017CXúÖU~}lÎ;\u00ad\u009d\u0081ä-\u001e\u0013z\u0093\u0017U!q\u00adÙ\u0080¼z\u001dkv£\u0019÷ò\u009bîÏAR³EX\u0012·\u0095A#®\u000f\u0007þEºýë\u0088Ö";
@@ -1657,7 +1658,6 @@ public class Ru2 extends ReflectionConverter {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

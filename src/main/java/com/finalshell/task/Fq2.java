@@ -1,12 +1,12 @@
 package com.finalshell.task;
 
-import com.finalshell.core.Timeout;
+import com.finalshell.core.ClientTimeoutTask;
 
 public class Fq2 extends Thread {
-   public final Timeout e;
+   public final ClientTimeoutTask e;
    public static long a;
 
-   public Fq2(Timeout var1) {
+   public Fq2(ClientTimeoutTask var1) {
       this.e = var1;
    }
 

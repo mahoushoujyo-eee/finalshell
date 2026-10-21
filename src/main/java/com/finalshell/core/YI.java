@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.Zr2;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import com.finalshell.ui.panel.Ky4;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
@@ -28,7 +28,7 @@ public class YI implements PO3 {
    public static int g;
    public int u;
    public ArrayList R;
-   public Connection12 o;
+   public FileTransferConnection o;
    public long J;
    public long W;
    public float r;
@@ -40,16 +40,16 @@ public class YI implements PO3 {
    public long F;
    public DY3 B;
    public com.finalshell.ui.model.Ck4 L;
-   public Address q;
+   public FileBrowserAddressBar q;
    public int y;
    public static int N;
    public static int l;
    public int m;
-   public CK k;
+   public ZModemTransfer k;
    public static String[] a;
    public static String[] b;
 
-   public YI(Connection12 var1, Lv4_2 var2, String var3, String var4, String var5, String var6, boolean var7) {
+   public YI(FileTransferConnection var1, Lv4_2 var2, String var3, String var4, String var5, String var6, boolean var7) {
       Registry.lookupField(599949014459759654L).setBoolean(this, true);
       Registry.lookupField(235419407516667394L).setInt(this, ((Random)Registry.lookupField(287416731440393970L).get(null)).nextInt());
       Registry.lookupField(156944160001485315L).setInt(this, Registry.lookupField(476761782289979268L).getInt(null));
@@ -82,8 +82,8 @@ public class YI implements PO3 {
 
    public YI(int var1, int var2, String var3, String var4, long var5, boolean var7) {
    super((String)Ref.g(309006563994833262L, var2));
-   super();
-      Connection12.X();
+   // [VF-super] super();
+      FileTransferConnection.X();
       Registry.lookupField(599949014459759654L).setBoolean(this, true);
       Registry.lookupField(235419407516667394L).setInt(this, ((Random)Registry.lookupField(287416731440393970L).get(null)).nextInt());
       Registry.lookupField(156944160001485315L).setInt(this, Registry.lookupField(476761782289979268L).getInt(null));
@@ -110,12 +110,12 @@ public class YI implements PO3 {
       Registry.lookupField(421926817811915901L).setLong(this, var5);
       Registry.lookupField(599949014459759654L).setBoolean(this, var7);
       if (Ky4.F$arrString() != null) {
-         Connection12.c(this == null);
+         FileTransferConnection.c(this == null);
       }
    }
 
    public void B$void() {
-      boolean var1 = Connection12.d$boolean();
+      boolean var1 = FileTransferConnection.d$boolean();
       YI var10000 = this;
       if (!var1) {
          if (!Registry.lookupField(599949014459759654L).getBoolean(this)) {
@@ -1061,7 +1061,7 @@ public class YI implements PO3 {
    }
 
    public boolean o$boolean(long var1) {
-      Connection12.d$boolean();
+      FileTransferConnection.d$boolean();
       Registry.lookupField(462963046837501077L).setLong(this, Registry.lookupField(462963046837501077L).getLong(this) + var1);
       Registry.lookupField(453239467128715174L)
          .setFloat(
@@ -1110,7 +1110,7 @@ public class YI implements PO3 {
 
    public boolean G(long var1) {
       Registry.lookupField(462963046837501077L).setLong(this, Registry.lookupField(462963046837501077L).getLong(this) + var1);
-      boolean var10000 = Connection12.d$boolean();
+      boolean var10000 = FileTransferConnection.d$boolean();
       Registry.lookupField(453239467128715174L)
          .setFloat(
             this, (float)Registry.lookupField(462963046837501077L).getLong(this) * 100.0F / (float)Registry.lookupField(421926817811915901L).getLong(this)
@@ -1197,7 +1197,7 @@ public class YI implements PO3 {
    }
 
    public synchronized void V(VO var1) {
-      Connection12.d$boolean();
+      FileTransferConnection.d$boolean();
       Object var5 = 596061703104958760L;
       Iterator var3 = ((ArrayList)Ref.g(596061703104958760L, var5)).iterator();
       YI var2 = this;
@@ -1343,12 +1343,12 @@ public class YI implements PO3 {
       Ref.s(538199581301250038L, var1, var3);
    }
 
-   public Address F$F6() {
+   public FileBrowserAddressBar F$F6() {
       Object var1 = 523895448130328514L;
-      return (Address)Ref.g(523895448130328514L, var1);
+      return (FileBrowserAddressBar)Ref.g(523895448130328514L, var1);
    }
 
-   public void v(Address var1) {
+   public void v(FileBrowserAddressBar var1) {
       long var3 = 523895448130328514L;
       Ref.s(523895448130328514L, var1, var3);
    }
@@ -1361,12 +1361,12 @@ public class YI implements PO3 {
       Registry.lookupField(235243263568626732L).setInt(this, var1);
    }
 
-   public CK G() {
+   public ZModemTransfer G() {
       Object var1 = 632636190150119565L;
-      return (CK)Ref.g(632636190150119565L, var1);
+      return (ZModemTransfer)Ref.g(632636190150119565L, var1);
    }
 
-   public void J(CK var1) {
+   public void J(ZModemTransfer var1) {
       long var3 = 632636190150119565L;
       Ref.s(632636190150119565L, var1, var3);
    }
@@ -2185,6 +2185,7 @@ public class YI implements PO3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "-\u0014B8Ý\u0005}\u0019H\u0099\u009c";
@@ -2199,7 +2200,6 @@ public class YI implements PO3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label66: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

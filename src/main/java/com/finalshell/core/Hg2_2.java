@@ -393,7 +393,7 @@ public class Hg2_2 extends Hd2 {
 
       label49: {
          try {
-            byte var10000 = (this.J instanceof C_q_2_2) ? 1 : 0;
+            byte var10000 = (byte)((this.J instanceof C_q_2_2) ? 1 : 0);
             if (var1 == null) {
                return new Hv2_2[var10000];
             }
@@ -635,7 +635,7 @@ public class Hg2_2 extends Hd2 {
 
       label27: {
          try {
-            byte var10000 = (this.J instanceof C_q_2_2) ? 1 : 0;
+            byte var10000 = (byte)((this.J instanceof C_q_2_2) ? 1 : 0);
             if (var1 == null) {
                return new U3_3[var10000];
             }
@@ -2038,6 +2038,8 @@ public class Hg2_2 extends Hd2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var11;
+      char[] var22;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "\u0007ðÁco©«^HóRð\u008aE£a\u0010Ö\u007f\u008cJ\u008e½ª? \u008b>¢jTé(\u0085Ï|²G\u0081Ð¶Rí¿Ôn3\u009bÃl\u008cö\u0019+OO:C[y\u0018£I\u0011\u0088ý~3ÿNÅ\u0002@%·ÎÚà\u0018Þé)»ÑVG\u009d\"øÜ×\u000eÀ/¼ \u008bQ{`\u008d«\u0010As\u0012ÝØÁú\u0002Zå$}\u009ab\u009f¨*\u0088\u001eÛ2YïsjÛÈ1\u0005\u008b½\u0081 A»\u0004ÙÿÏÇ?°øãvÄq\u0088P%\f\u009e\u008dH¦Ód.\u0087¸3zË½\u0097ä\u001c\u0005\u00142Í<ÝWã}É%r\u0002\u008b\u008cû-LïÈ\\ÆäT¬¢ÐÚrÓñ\u0011\u0000+\tÛ\u009fïk\u0090Ð?£ýdyÅjs\u0001\"]\u0013\u0016\u00906\u000f6ö·qÚ\u0080$¬";
@@ -2053,7 +2055,6 @@ public class Hg2_2 extends Hd2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var22;
             label62: {
                char[] var26 = var10001.toCharArray();
                int var10004 = var26.length;

@@ -8,9 +8,9 @@ public class FL3 implements J1 {
 
    @Override
    public long C(byte[] var1) {
-      byte var10000 = (DF.M()) ? 1 : 0;
+      byte var10000 = (byte)((DF.M()) ? 1 : 0);
       byte var3 = 0;
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = ((boolean)var10000) != 0;
       int var4 = 0;
 
       while (true) {

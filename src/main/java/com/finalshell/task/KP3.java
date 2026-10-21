@@ -3,7 +3,7 @@ package com.finalshell.task;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.listener.Ly_4;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
@@ -66,7 +66,7 @@ public class KP3 implements Runnable {
       Object var10013 = Ref.g(515525013030853953L, var28);
       String var10014 = (String)(Registry.emptyArgs());
       long var31 = 498856411508641826L;
-      Object[] var30 = var10014;
+      Object var30 = var10014;
       var10014 = Ref.h(498856411508641826L, var30, var31);
 
       try {
@@ -95,7 +95,7 @@ public class KP3 implements Runnable {
          Object var44 = 357358512404315725L;
          Ref.g(357358512404315725L, var44);
          Object var46 = 305402254993059552L;
-         ((Connection4)Ref.g(305402254993059552L, var46)).getParent();
+         ((ConnectionInfoPanel)Ref.g(305402254993059552L, var46)).getParent();
          Object var48 = 124351971510883468L;
          Ref.g(124351971510883468L, var48);
          Object var50 = 357358512404315725L;
@@ -129,7 +129,7 @@ public class KP3 implements Runnable {
             Object var62 = 357358512404315725L;
             Ref.g(357358512404315725L, var62);
             Object var64 = 305402254993059552L;
-            JOptionPane.showMessageDialog((Connection4)Ref.g(305402254993059552L, var64), var2);
+            JOptionPane.showMessageDialog((ConnectionInfoPanel)Ref.g(305402254993059552L, var64), var2);
          }
       } catch (Exception var66) {
          throw a(var66);

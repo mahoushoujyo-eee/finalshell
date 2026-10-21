@@ -5,7 +5,7 @@ import com.finalshell.core.KV;
 import com.finalshell.core.Lh4_2;
 import com.finalshell.core.NY;
 import com.finalshell.core.T32;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.E;
@@ -23,7 +23,7 @@ public class Ch2 extends F8 {
    public KV F;
    public boolean W;
    public ConnectionProperty g;
-   public Ty2 d;
+   public RemoteProcessManager d;
    public String r;
    public Lh4_2 E;
    public GH_2 S;
@@ -34,6 +34,7 @@ public class Ch2 extends F8 {
    public static Integer[] h;
 
    public Ch2() {
+      super();
       KV var10001 = new KV();
       long var7 = 254198425345626269L;
       KV var6 = var10001;
@@ -79,7 +80,7 @@ public class Ch2 extends F8 {
       Ref.s(133676062160727913L, var24, var25);
       JScrollPane var53;
       Object var26 = 133676062160727913L;
-      super((Lh4_2)Ref.g(133676062160727913L, var26));
+      // [VF-super] super((Lh4_2)Ref.g(133676062160727913L, var26));
       JScrollPane var2 = var53;
       this.add(var2, a(11346, -17116));
       var2.getViewport().setOpaque(false);
@@ -224,7 +225,7 @@ public class Ch2 extends F8 {
       Ref.h(399585344452154517L, var5, var6);
       NY var10003 = (NY)(Registry.emptyArgs());
       long var8 = 149968465491171480L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(149968465491171480L, var7, var8);
 
       try {
@@ -237,7 +238,7 @@ public class Ch2 extends F8 {
       byte var15 = 2;
       Color var10008 = (Color)(Registry.emptyArgs());
       long var10 = 345089686683358688L;
-      Object[] var9 = var10008;
+      Object var9 = var10008;
       var10008 = Ref.h(345089686683358688L, var9, var10);
 
       try {
@@ -278,12 +279,12 @@ public class Ch2 extends F8 {
       Ref.s(254198425345626269L, var1, var3);
    }
 
-   public Ty2 B() {
+   public RemoteProcessManager B() {
       Object var1 = 227050443794463629L;
-      return (Ty2)Ref.g(227050443794463629L, var1);
+      return (RemoteProcessManager)Ref.g(227050443794463629L, var1);
    }
 
-   public void H(Ty2 var1) {
+   public void H(RemoteProcessManager var1) {
       long var3 = 227050443794463629L;
       Ref.s(227050443794463629L, var1, var3);
    }
@@ -1138,6 +1139,7 @@ public class Ch2 extends F8 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[8];
       int var11 = 0;
       String var10 = "Ùã\u0006\u008aón\u001166Êò\u0005ß\u0013%%k°±¹(!TO\u0007uí\u0004进揲戴杶\u0011\u0082½§·.©/ö¸ó4(®ºØ¿]\u0004攉徳扳杏\u0014\u0092Ò\u0004N\\f\u0095Úã0ñ\u009a3r¼óöN)'\b\u009d\u008e¹L\u0006\fØ<";
@@ -1154,7 +1156,6 @@ public class Ch2 extends F8 {
          byte var10002 = -1;
 
          while (true) {
-      long var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

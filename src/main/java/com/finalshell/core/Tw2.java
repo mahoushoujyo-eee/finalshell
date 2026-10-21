@@ -65,6 +65,8 @@ public class Tw2 extends T4 implements SwingConstants {
 
    @Override
    public void layoutContainer(Container var1) {
+      int var20;
+      int var21;
       int var3 = 0;
       int var10000 = T4.O();
       int var4 = 0;
@@ -76,7 +78,7 @@ public class Tw2 extends T4 implements SwingConstants {
       while (true) {
          if (var7 < var6) {
             Component var8 = var5[var7];
-            byte var9 = (this.U(var8)) ? 1 : 0;
+            byte var9 = (byte)((this.U(var8)) ? 1 : 0);
             var10000 = var9;
             if (var2 != 0) {
                break;
@@ -127,8 +129,6 @@ public class Tw2 extends T4 implements SwingConstants {
 
       if (var2 == 0) {
          if (var10000 > 0) {
-      int var20;
-      int var20;
             var4 += this.X * (var1.getComponentCount() - 1);
          }
 
@@ -229,8 +229,8 @@ public class Tw2 extends T4 implements SwingConstants {
       for (Component var16 : var1.getComponents()) {
          label186: {
             Dimension var17 = var16.getPreferredSize();
-            byte var18 = this.U(var16);
-            var10000 = (this.x) ? 1 : 0;
+            byte var18 = (byte)((this.U(var16)) ? 1 : 0);
+            var10000 = this.x;
             if (var2 == 0) {
                if (this.x == 0) {
                   var10000 = var18;
@@ -275,6 +275,8 @@ public class Tw2 extends T4 implements SwingConstants {
    }
 
    public Dimension r(Container var1, boolean var2) {
+      Dimension var14;
+      Dimension var15;
       Insets var4 = var1.getInsets();
       Dimension var5 = new Dimension();
       Component[] var6 = var1.getComponents();
@@ -286,8 +288,9 @@ public class Tw2 extends T4 implements SwingConstants {
       while (true) {
          if (var8 < var7) {
             Component var9 = var6[var8];
-            var10000 = var2;
+            var10000 = (var2) ? 1 : 0;
             if (var3 != 0) {
+      int var13;
                break;
             }
 
@@ -511,7 +514,6 @@ public class Tw2 extends T4 implements SwingConstants {
       }
    }
 }
-
 
 
 

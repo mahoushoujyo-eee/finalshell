@@ -31,7 +31,7 @@ public class WA implements MouseListener, KeyListener {
          var10000 = (GR.rN.J(var1)) ? 1 : 0;
       }
 
-      if (var10000) {
+      if (var10000 != 0) {
          List var3 = this.n.V();
          Iterator var4 = var3.iterator();
 
@@ -77,6 +77,7 @@ public class WA implements MouseListener, KeyListener {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      Rectangle var6;
       String[] var2 = CB3.C$arrString();
       boolean var10000 = this.n.b();
       if (var2 != null) {

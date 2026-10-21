@@ -500,7 +500,7 @@ public class Y2 extends Lz2_2 implements Wt4 {
 
          if (var10000 == 1) {
             label27: {
-               byte var5 = (var2.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+               byte var5 = (byte)((var2.getComponentOrientation().isLeftToRight()) ? 1 : 0);
                var10000 = var5;
                if (var4 == null) {
                   if (var5 != 0) {

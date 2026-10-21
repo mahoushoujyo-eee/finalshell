@@ -16,6 +16,7 @@ public class Fg2 extends FY {
 
    @Override
    public void ancestorAdded(AncestorEvent var1) {
+      boolean var3;
       K02 var10000;
       label35: {
          String var2;

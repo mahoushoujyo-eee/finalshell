@@ -1,7 +1,7 @@
 package com.finalshell.task;
 
 import com.finalshell.core.La2;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.Font;
 import java.awt.FontFormatException;
 import java.awt.GridBagLayout;
@@ -25,7 +25,8 @@ public class AX implements Runnable {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
    public void run() {
-      boolean var1 = Address.i();
+      InputStream var10000;
+      boolean var1 = FileBrowserAddressBar.i();
 
       try {
          UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -48,7 +49,6 @@ public class AX implements Runnable {
             var5.setLocationRelativeTo(null);
             var5.setVisible(true);
          } catch (Throwable var10) {
-      InputStream var10000;
             Throwable var14;
             label48: {
                label47: {

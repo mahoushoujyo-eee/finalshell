@@ -34,19 +34,19 @@ public class Gr_2 implements ActionListener {
       Ref.h(240567170779145617L, var12, var13);
       ConnectionProperty var10005 = Registry.emptyArgs();
       long var15 = 226341449505323490L;
-      Object[] var14 = var10005;
+      Object var14 = var10005;
       var10005 = Ref.h(226341449505323490L, var14, var15);
 
       try {
-         var10005 = (com.finalshell.ui.frame.U)var10005;
+         var10005 = (com.finalshell.ui.frame.MainFrame)var10005;
       } catch (InvocationTargetException var25) {
          throw var25.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var3 = var10005;
+      com.finalshell.ui.frame.MainFrame var3 = var10005;
       ConnectionProperty var10006 = (ConnectionProperty)(Registry.emptyArgs());
       long var17 = 179934491990092343L;
-      Object[] var16 = var10006;
+      Object var16 = var10006;
       var10006 = Ref.h(179934491990092343L, var16, var17);
 
       try {
@@ -66,7 +66,7 @@ public class Gr_2 implements ActionListener {
             var10005 = var3;
             var10006 = Registry.emptyArgs();
             long var19 = 179934491990092343L;
-            Object[] var18 = var10006;
+            Object var18 = var10006;
             Ref.h(179934491990092343L, var18, var19);
 
             try {
@@ -80,7 +80,7 @@ public class Gr_2 implements ActionListener {
          if (var3 != null || var5 != null) {
             var10006 = Registry.emptyArgs();
             long var21 = 380415140795833934L;
-            Object[] var20 = var10006;
+            Object var20 = var10006;
             Ref.h(380415140795833934L, var20, var21);
 
             try {

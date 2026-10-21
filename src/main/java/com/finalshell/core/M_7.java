@@ -1308,6 +1308,7 @@ public final class M_7 extends K_5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[29];
       int var3 = 0;
       String var2 = "/Ùï\u0093\u0088ß#OIÙ9Î\u001bG\u0017\u0084zò\u0013NYf\u0006éÖ~ row\u0080b%5ë9¼p\u0082h\u009bl\u007fëamÙ\u0091°BÅVÒÆ?¿\u0091\u0004¤±\r]\u008a\t`\u0005ø\u0097¾¡²\u0017P$nò@É¯³¹Ó'ã\u008fWSÕ\u008c«7&Za]B\u0095^EÔÓt§\u0011\u00952\u0001ÉÝ\u0088G\u0090¨d\u0098\u001b´éÚ\u0098S\u008a\u001bjöl¯\ntt®¥ø\u0084\u000feÝ!Ø4oX\u0099]PÜ}xÈKçtz\n\"\u009d%Æ.ÛbT\u001cèT<\u009aroÅ\u008ep±\u0005Â«çÛÑe%¾3$ê\u000bk×\u001eÆ\u0002@h\u0096\u0007e|¹Ws*\u00909Ò¾Mõiös\u0006Õ×\u0098:[\u0019³\u0098a1ìnÃ\u0015ÃµZv\u0003\u0090¸©\u0000\u0017ÀªFÿ6\u0084FXrM\u001c[\u0007lÄ}\u0095Éw\u00020=7Ôþ&]äÿnYnÐü\u009ba8@G~|X\u0002É\u001c\u009cÕcTW\u0018\u0082Çîv\u008b\u0013\u007f\u0015TÅ\u008f\u0003æB\u001c\u0000ÝÐDA D\u0097ó\u0081\u001aùv°O«¿@c=A¡i\u008e%¸Ú/s\u0013\u0017·e\u0094\u00001Ø±CÛZ \u0084ò\u0093ÎÐ\u0019¸8\b\u0001\u0017\u001diU\u0003\u0004õ/\u001b£+\u0006í¥¢¾Á³Ö\u0006í7ÑË¢\u001b\f9{\u0085\u0006\u0001\u0085ò\u0090ª\u001c\u001cf\u001aíSHV\u0082©\u0098U\u0018^\bt¯£ëkoú\u001eÓLL?úÛ\u009e\u0003AÎ\u0085\u001d1)|½\u0087,fÇ\u0083ÿHÌ\u0017$íÃuoýs/îugã¥é\u0005\u009a\u0016æÍ¸Ï\u009anôGÒMH(<%ÿÊøy/?u\u0013\u0011|\u00933\f?Zs9\\|DyÆ¿\u0082e4=ß}÷\u0014êE\tZ\u0087è\u000b,à{W\u0003ª\u0016ÁUµhþ¬\u000bá\u0001\u000e©Éê\u0086µÀ©È¾\u0091°7\u00adñ\u0097þº\u0081\u0087Ï«Q\u0019¹XDoAØ§\u009aI\u0005\tØ×<\u001c*\u0093\u0097\u00932=ç\u0098à¤\u001aÞ\u0017)D\u0086sáïÂ¶4\u0096ðF\u0089EóðÒÌ\u008cmn?Ï[\t¥á\u001a\r\u0012Ç·ó¸ç\u00025ûÁrÇ\u0015PÎ\u0099¢@0Á3·çKª\u000fñå4Î\få\u008eî\u001c\u009f4&\u0080\u0014f\u001cÎ\u0085ý¡«g-\u001dÃxgg}m½,Ó\u0089%\u0092Ã}²\u000e\u0005¤Ü×\u0003Ç\u0081Y\u0003\u008d¤\u0001<ê'PB?1µÃË18µ\u0002Ñ\u0014Ôa\u0017\u0001×\u0000\u009c-\u0006û\u0018Ä\u0014ºB\u001f\u0016;yp\rÎé\u0087åK«Kµ!èôâÅôÔ\ráÒX\u00931ü^O\nïs\\týúÎ}¯Å\u0003\u009d+\u0019\u0006×SúÝ\u008a½ T\u0082[\u000f¬\u0011<p1hÞ\u001f)C4Ø¹bsXU{í?\u00932Ã¸WjeG\u001cXu/¿ñ¤feªwJ\u0086ØQ\t«Ey÷\u008c\u0099¾ùvl«ñ6";
@@ -1323,7 +1324,6 @@ public final class M_7 extends K_5 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

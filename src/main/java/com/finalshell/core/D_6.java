@@ -144,7 +144,7 @@ public class D_6 {
             }
 
             label154: {
-               Object[] var5 = (Object[])var10000;
+               Object var5 = (Object[])var10000;
                int var21 = var5.length;
                if (!var3) {
                   if (var21 == 0) {
@@ -175,7 +175,7 @@ public class D_6 {
 
                try {
                   var12 = true;
-                  Object[] var6 = var5;
+                  Object var6 = var5;
                   int var7 = var5.length;
                   int var8 = 0;
 
@@ -1053,6 +1053,7 @@ public class D_6 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[13];
       int var5 = 0;
       String var4 = "]w\u0002º\u0015\u0017\u0015+}\u0088\u00ad¤\u0097<ÃX\u0095\t\u0007\u0003HQÖÇØM9\u0001\u0016\t\u0004\u009b\u009eQJÐú_È\u0007¿2l\u0016?t\u0012\tF&ÖæC&Û\u0081ì\f¾ga¥Ï/\u0015\u0084´ÆÚ\u001b\u0003¤ì\u0018\u0003^=Õ\u0006;¼§#·¢\u000bòLÆß\u0018Ä\u0085ð¤\u0002\u009d";
@@ -1068,7 +1069,6 @@ public class D_6 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

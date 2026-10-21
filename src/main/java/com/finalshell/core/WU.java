@@ -6,10 +6,10 @@ import com.finalshell.ui.panel.ConnectionProperty;
 import java.lang.reflect.InvocationTargetException;
 
 public class WU extends W2 {
-   public final Ty2 D;
+   public final RemoteProcessManager D;
    public static String a;
 
-   public WU(Ty2 var1) {
+   public WU(RemoteProcessManager var1) {
       this.D = var1;
       Object[] var10001 = Registry.packArgs(a);
       long var3 = 241374024532053562L;

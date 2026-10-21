@@ -16,9 +16,9 @@ public class Om2 implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((Integer)var1, (Integer)var2);
+      Object var10001 = Registry.packArgs((Integer)var1, (Integer)var2);
       long var4 = 227703286706087580L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(227703286706087580L, var3, var4);
 
       try {

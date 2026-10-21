@@ -60,6 +60,7 @@ public final class RF extends R8_2 implements B_2_3, RO, C_8_2 {
 
    @Override
    public String toString() {
+      StringBuilder var4;
       String[] var10000 = RG_2.C();
       StringBuilder var2 = new StringBuilder().append(RG_2.o(this.D())).append(this.Q).append((char)((int)g)).append(this.w[0]);
       String[] var1 = var10000;
@@ -74,8 +75,6 @@ public final class RF extends R8_2 implements B_2_3, RO, C_8_2 {
 
             var3++;
             if (var1 != null) {
-      String[] var4;
-      String[] var4;
                continue;
             }
          }
@@ -117,7 +116,7 @@ public final class RF extends R8_2 implements B_2_3, RO, C_8_2 {
       String var10000 = this.d;
       if (var1 != null) {
          if (this.d == null) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var10000 = this.d;
@@ -125,9 +124,9 @@ public final class RF extends R8_2 implements B_2_3, RO, C_8_2 {
 
       int var2 = var10000.indexOf(b(-1758, 4556));
       if (var1 == null) {
-         return (boolean)var2;
+         return var2 != 0;
       } else {
-         return (boolean)(var2 != -1 ? 1 : 0);
+         return (boolean)((var2 != -1 ? 1 : 0) != 0);
       }
    }
 
@@ -165,6 +164,7 @@ public final class RF extends R8_2 implements B_2_3, RO, C_8_2 {
    }
 
    public static String b(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ -1759) & 65535;
       if (f[var2] == null) {
          char[] var3 = e[var2].toCharArray();
@@ -939,7 +939,7 @@ public final class RF extends R8_2 implements B_2_3, RO, C_8_2 {
                var10000 = 231;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -970,9 +970,11 @@ public final class RF extends R8_2 implements B_2_3, RO, C_8_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
+      String var4;
       String[] var7 = new String[7];
       int var5 = 0;
-      String var4 = "ëõÏ>\u0011\f\b\u001fa\u0005[\u009c\u0086dÉ\u0002Â>\u000bò<ZÍ&£Éh\u009f\f¿\u0006_i¾q%¶";
+      var4 = "ëõÏ>\u0011\f\b\u001fa\u0005[\u009c\u0086dÉ\u0002Â>\u000bò<ZÍ&£Éh\u009f\f¿\u0006_i¾q%¶";
       int var6 = "ëõÏ>\u0011\f\b\u001fa\u0005[\u009c\u0086dÉ\u0002Â>\u000bò<ZÍ&£Éh\u009f\f¿\u0006_i¾q%¶".length();
       char var3 = '\t';
       int var10 = -1;
@@ -1090,7 +1092,6 @@ public final class RF extends R8_2 implements B_2_3, RO, C_8_2 {
       }
    }
 }
-
 
 
 

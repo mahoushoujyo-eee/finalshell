@@ -40,7 +40,7 @@ public class KM {
    public static void e(String var0, int var1) {
       BufferedImage var3 = null;
       EnableBackgroundImage.I();
-      Object[] var10001 = Registry.packArgs(var0);
+      Object var10001 = Registry.packArgs(var0);
       long var11 = 315131988228859701L;
       Object var10002 = Ref.h2(315131988228859701L, var11);
 
@@ -51,7 +51,7 @@ public class KM {
       }
 
       int var4 = var37;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
 
       label96: {
          IOException var10000;
@@ -185,8 +185,9 @@ public class KM {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public static int O(String var0) {
+      IOException var12;
       Ky4[] var10000 = EnableBackgroundImage.I();
-      Object[] var2 = 0;
+      Object var2 = 0;
       Ky4[] var1 = var10000;
 
       label42: {
@@ -218,7 +219,6 @@ public class KM {
 
                   int var15 = ((Object[])var13).length;
                } catch (IOException var8) {
-      File var12;
                   var12 = var8;
                   boolean var10001 = false;
                   break label41;
@@ -229,7 +229,6 @@ public class KM {
                var2 = var10000;
                return (int)var2;
             } catch (IOException var7) {
-      String var12;
                var12 = var7;
                boolean var16 = false;
             }
@@ -247,6 +246,7 @@ public class KM {
    }
 
    public static String U() {
+      long var12;
       Registry.emptyArgs();
       long var6 = 270389152141252877L;
       Ref.h2(270389152141252877L, var6);
@@ -268,7 +268,7 @@ public class KM {
       Object var1 = null;
       Object var2 = null;
       Registry.emptyArgs();
-      long var12 = 270389152141252877L;
+      var12 = 270389152141252877L;
       Ref.h2(270389152141252877L, var12);
       Object[] var10005 = Registry.emptyArgs();
       long var15 = 306266403902896148L;
@@ -276,7 +276,7 @@ public class KM {
       Ref.h(306266403902896148L, var14, var15);
       String var10006 = (String)(Registry.emptyArgs());
       long var17 = 338793095438116620L;
-      Object[] var16 = var10006;
+      Object var16 = var10006;
       var10006 = Ref.h(338793095438116620L, var16, var17);
 
       try {
@@ -313,6 +313,9 @@ public class KM {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public static void N() {
+      long var12;
+      long var23;
+      long var28;
       EnableBackgroundImage.I();
       Registry.emptyArgs();
       long var7 = 270389152141252877L;
@@ -322,8 +325,8 @@ public class KM {
       Object[] var9 = var10003;
       var10003 = Ref.h(306266403902896148L, var9, var10);
       String var10004 = (String)(Registry.emptyArgs());
-      long var12 = 338793095438116620L;
-      Object[] var11 = var10004;
+      var12 = 338793095438116620L;
+      Object var11 = var10004;
       var10004 = Ref.h(338793095438116620L, var11, var12);
 
       try {
@@ -432,14 +435,14 @@ public class KM {
 
       ConnectionProperty.c(var2, var3);
       Registry.emptyArgs();
-      long var23 = 270389152141252877L;
+      var23 = 270389152141252877L;
       Ref.h2(270389152141252877L, var23);
       Object[] var10002 = Registry.emptyArgs();
       long var26 = 634817973682994708L;
       Object[] var25 = var10002;
       Ref.h(634817973682994708L, var25, var26);
       var10003 = Registry.emptyArgs();
-      long var28 = 150340994538293048L;
+      var28 = 150340994538293048L;
       Object[] var27 = var10003;
       Ref.h(150340994538293048L, var27, var28);
 
@@ -1264,6 +1267,7 @@ public class KM {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[6];
       int var5 = 0;
       String var4 = "üñ\u0002h5\u0012½CBÐ\u0080g\u0019[!M5³\u0014ª*&çÕ\u0004ÍáeA";
@@ -1278,7 +1282,6 @@ public class KM {
          byte var10002 = -1;
 
          while (true) {
-      long var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

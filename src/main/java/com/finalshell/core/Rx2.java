@@ -181,10 +181,11 @@ public class Rx2 {
    }
 
    public void C(Lx2 var1) {
+      int var7;
+      int var8;
       int[] var2;
       char[] var3;
       int var6;
-      int var8;
       int var23;
       label184: {
          var3 = new char[this.I];
@@ -243,7 +244,7 @@ public class Rx2 {
       }
 
       var11 = this.m(var6);
-      int var7 = var6 + 2;
+      var7 = var6 + 2;
 
       while (true) {
          if (var11 > 0) {
@@ -410,6 +411,8 @@ public class Rx2 {
    }
 
    public int f() {
+      int var7;
+      int var8;
       int[] var10000 = XB.X();
       int var2 = this.b + a(12531, 4742160517747470033L) + this.m(this.b + a(13409, 3323115123623782981L)) * 2;
       int[] var1 = var10000;
@@ -492,6 +495,9 @@ public class Rx2 {
    }
 
    public int A(Lx2 var1, char[] var2, int var3) {
+      int var33;
+      int var7;
+      String var8;
       int var10 = this.m(var3);
       int[] var10000 = XB.X();
       String var11 = this.l(var3 + 2, var2);
@@ -499,12 +505,12 @@ public class Rx2 {
       int var5 = 0;
       int[] var4 = var10000;
       int var6 = 0;
-      int var7 = this.m(var3 + a(16835, 7344570157291872228L));
+      var7 = this.m(var3 + a(16835, 7344570157291872228L));
       var3 += 8;
 
       while (true) {
          if (var7 > 0) {
-            String var8 = this.l(var3, var2);
+            var8 = this.l(var3, var2);
             int var13 = this.X(var3 + 2);
             var3 += 6;
             var34 = var8.equals(a(28799, -22709));
@@ -523,7 +529,6 @@ public class Rx2 {
             var3 = var34;
             var7--;
             if (var4 == null) {
-      int var34;
       int var34;
                continue;
             }
@@ -673,7 +678,7 @@ public class Rx2 {
                      return var37;
                   }
 
-                  int var33 = var37;
+                  var33 = var37;
                   var32.p(this.l(var6 + 4, var2), var33);
                   var6 += 10;
                   var9--;
@@ -702,11 +707,12 @@ public class Rx2 {
    }
 
    public String l(int var1, char[] var2) {
+      String var7;
       int[] var10000 = XB.X();
       int var4 = this.m(var1);
       String var5 = this.q[var4];
       int[] var3 = var10000;
-      String var7 = var5;
+      var7 = var5;
       if (var3 == null) {
          if (var5 != null) {
             return var5;
@@ -720,11 +726,12 @@ public class Rx2 {
    }
 
    public String C(int var1, int var2, char[] var3) {
+      int var7;
       int[] var10000 = XB.X();
       int var5 = var1 + var2;
       byte[] var6 = this.l;
       int[] var4 = var10000;
-      int var7 = 0;
+      var7 = 0;
       byte var9 = 0;
       char var10 = 0;
 
@@ -820,6 +827,7 @@ public class Rx2 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 28797) & 65535;
       if (d[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1606,7 +1614,7 @@ public class Rx2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1634,6 +1642,8 @@ public class Rx2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      byte[] var7;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "s\u001a¹@}¤.ó\u0096R\u0014B~üöF\u009c\u0002\u0012Kb«\u0019êÛZ4¨¦5Ëqçãªã\u001fU3ÜJe\u001d#\u000e\u0086\u009aÁ";
@@ -1737,7 +1747,7 @@ public class Rx2 {
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56
@@ -1812,7 +1822,6 @@ public class Rx2 {
       }
    }
 }
-
 
 
 

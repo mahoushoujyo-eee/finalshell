@@ -911,6 +911,7 @@ public class Q6 extends Ky4 implements P6 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var13;
       String[] var5 = new String[2];
       int var3 = 0;
       String var2 = "²^Ê\fz\u0015\u0006w4[ZV°";
@@ -924,7 +925,7 @@ public class Q6 extends Ky4 implements P6 {
             char[] var10003 = var2.substring(++var0, var0 + var1).toCharArray();
             int var10004 = var10003.length;
             int var6 = 0;
-            byte var13 = 29;
+            var13 = 29;
             var10002 = var10003;
             int var8 = var10004;
             byte var16;
@@ -977,14 +978,14 @@ public class Q6 extends Ky4 implements P6 {
                if (var13 == 0) {
                   var10006 = var13;
                   var10005 = var10002;
-                  var16 = var13;
+                  var16 = (byte)(var13);
                } else {
                   if (var8 <= var6) {
                      break;
                   }
 
                   var10005 = var10002;
-                  var16 = var13;
+                  var16 = (byte)(var13);
                   var10006 = var6;
                }
             }

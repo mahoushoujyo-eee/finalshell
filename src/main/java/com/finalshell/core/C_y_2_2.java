@@ -1236,6 +1236,7 @@ public class C_y_2_2 extends C_L {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[8];
       int var5 = 0;
       String var4 = "Jl\u0090ôPû¾S\u0018`¢EõsµRM\u001c-B\"p\u0084h\u0016u\b\u000eIè\\+\u0091y·#U\u0093uç9_Öò\u000f\u0014\u001avE}ùU\u0004¤|ÅUCiÿ\u001b\u0003F×\u0005\u0097\u0010<¥ú\u0012Õ\u008aM*úk\u0093xò6½Ýxs\u00847¥\u0004\u001aL\b>´y\u0092\u009dh°Ùÿ\"!Ç¸\u0086¬ÎT\fÍrà\u0006óö\r~W>ó\u0012Z¯\u00186aÿmá";
@@ -1251,7 +1252,6 @@ public class C_y_2_2 extends C_L {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

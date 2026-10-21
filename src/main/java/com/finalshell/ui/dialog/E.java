@@ -44,12 +44,14 @@ public class E extends Y2 {
 
    public E(Component var1, Object var2, Object var3, String var4, int var5, int var6) {
    super(com.finalshell.core.FN.L(var1), var4);
+   int var10;
+   String var7;
       String var10000 = U();
       this.N = null;
       this.setIconImages(this.T(var6));
       this.setLayout(new BorderLayout());
       this.p = var1;
-      String var7 = var10000;
+      var7 = var10000;
       this.I = new Ky4(new BorderLayout(a(11876, 3885919514960857263L), a(9989, 6278664978929484234L)));
       this.I.N(a(9989, 6278664978929484234L), a(9989, 6278664978929484234L), a(20191, 7284458150206728213L), a(9989, 6278664978929484234L));
       this.add(this.I, a(-362, -12224));
@@ -74,16 +76,12 @@ public class E extends Y2 {
          label73: {
             if (var7 == null) {
                if (var5 != 0) {
-      Image var10;
                   var10 = var5;
                   if (var7 != null) {
                      break label74;
                   }
 
                   if (var5 != 1) {
-      Image var10;
-      Image var10;
-      Image var10;
                      break label73;
                   }
                }
@@ -286,6 +284,7 @@ public class E extends Y2 {
    }
 
    public List T(int var1) {
+      Image var7;
       String var10000 = U();
       Image var3 = null;
       String var2 = var10000;
@@ -369,8 +368,9 @@ public class E extends Y2 {
    }
 
    public static E W(Component var0, Object var1, Object var2, String var3, int var4, int var5) {
+      E var7;
       U();
-      E var7 = new E(var0, var1, var2, var3, var4, var5);
+      var7 = new E(var0, var1, var2, var3, var4, var5);
       var7.setVisible(true);
       if (Ky4.F$arrString() != null) {
          N("UxiCpb");
@@ -1210,9 +1210,12 @@ public class E extends Y2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var33;
+      byte[] var7;
       String[] var13 = new String[15];
       int var11 = 0;
-      String var10 = "@\u001eT\u0096T\u0017\u0006®D\u0089Ýï~\u0004sû¹*\u0015Y\u009f\u0019zÊ\u008eÒÜ®Nå>¬\u008c\u0018Ò0\u001eÍ\u000b_\u0015\n%£é#÷ø\u0092R½µ:ÑJQ\u008f\u001b\u0094ËQ£\u0003\u0019Ñ\u001d\u0014\u0086\u009c2Þ\u0011\u0011¾N\u009a&¬Iò$5B\u0097-Ml\u0017\u008eÖ3\u009718ºk\u001a\u0082¼Ýð¶u\u0010\u009fgV#»å>\u0011í\u0001\u008f©\u0018ô\u0096\u009cï©@àfn\u009e\u009eÓ\u000f\u009ewágÕ-=´ÊÜÿ/þ\u009fo\u0005:ä\u0012\u0082é\u00122ÒtÓg»\u007fa\u0003\u009d5ß~.ÊÀÅé\u0018\u009b`\u0091Aeâ00Ké\u0096°µ\u001bÝ¥\u008aÑãýâ8L}";
+      var10 = "@\u001eT\u0096T\u0017\u0006®D\u0089Ýï~\u0004sû¹*\u0015Y\u009f\u0019zÊ\u008eÒÜ®Nå>¬\u008c\u0018Ò0\u001eÍ\u000b_\u0015\n%£é#÷ø\u0092R½µ:ÑJQ\u008f\u001b\u0094ËQ£\u0003\u0019Ñ\u001d\u0014\u0086\u009c2Þ\u0011\u0011¾N\u009a&¬Iò$5B\u0097-Ml\u0017\u008eÖ3\u009718ºk\u001a\u0082¼Ýð¶u\u0010\u009fgV#»å>\u0011í\u0001\u008f©\u0018ô\u0096\u009cï©@àfn\u009e\u009eÓ\u000f\u009ewágÕ-=´ÊÜÿ/þ\u009fo\u0005:ä\u0012\u0082é\u00122ÒtÓg»\u007fa\u0003\u009d5ß~.ÊÀÅé\u0018\u009b`\u0091Aeâ00Ké\u0096°µ\u001bÝ¥\u008aÑãýâ8L}";
       int var12 = "@\u001eT\u0096T\u0017\u0006®D\u0089Ýï~\u0004sû¹*\u0015Y\u009f\u0019zÊ\u008eÒÜ®Nå>¬\u008c\u0018Ò0\u001eÍ\u000b_\u0015\n%£é#÷ø\u0092R½µ:ÑJQ\u008f\u001b\u0094ËQ£\u0003\u0019Ñ\u001d\u0014\u0086\u009c2Þ\u0011\u0011¾N\u009a&¬Iò$5B\u0097-Ml\u0017\u008eÖ3\u009718ºk\u001a\u0082¼Ýð¶u\u0010\u009fgV#»å>\u0011í\u0001\u008f©\u0018ô\u0096\u009cï©@àfn\u009e\u009eÓ\u000f\u009ewágÕ-=´ÊÜÿ/þ\u009fo\u0005:ä\u0012\u0082é\u00122ÒtÓg»\u007fa\u0003\u009d5ß~.ÊÀÅé\u0018\u009b`\u0091Aeâ00Ké\u0096°µ\u001bÝ¥\u008aÑãýâ8L}"
          .length();
       char var9 = 6;
@@ -1314,7 +1317,7 @@ public class E extends Y2 {
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56

@@ -62,9 +62,9 @@ public class Zg2_2 {
 
    public static synchronized void G(Uc2 var0, int var1) {
       com.finalshell.ui.panel.F8.y();
-      Object[] var10002 = Registry.packArgs(var1);
+      Object var10002 = Registry.packArgs(var1);
       long var5 = 228632970311438472L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       Ref.h(228632970311438472L, var4, var5);
 
       try {
@@ -75,7 +75,7 @@ public class Zg2_2 {
 
       var10002 = Registry.emptyArgs();
       long var7 = 502552909089695756L;
-      Object[] var6 = var10002;
+      Object var6 = var10002;
       var10002 = Ref.h(502552909089695756L, var6, var7);
 
       try {

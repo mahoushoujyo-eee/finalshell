@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
-import com.finalshell.core.Yf2;
+import com.finalshell.core.ConnectionConfigStore;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Y82 implements Runnable {
-   public final Yf2 R;
+   public final ConnectionConfigStore R;
 
-   public Y82(Yf2 var1) {
+   public Y82(ConnectionConfigStore var1) {
       this.R = var1;
    }
 

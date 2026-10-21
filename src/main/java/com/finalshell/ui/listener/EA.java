@@ -18,7 +18,7 @@ public class EA extends WindowAdapter {
    @Override
    public void windowClosing(WindowEvent var1) {
       int[] var2 = KD3.u();
-      byte var10000 = (Xc4.x(this.v).v()) ? 1 : 0;
+      byte var10000 = (byte)((Xc4.x(this.v).v()) ? 1 : 0);
       if (var2 == null) {
          if (var10000 == 0) {
             return;
@@ -842,6 +842,7 @@ public class EA extends WindowAdapter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "X5änÔ+\u0015ÞÛ\u0086~ÔQÙ648£tÞÈaBÍÁf,'";
@@ -856,7 +857,6 @@ public class EA extends WindowAdapter {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

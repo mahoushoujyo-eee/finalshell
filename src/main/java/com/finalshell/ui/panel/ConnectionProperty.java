@@ -5,7 +5,7 @@ import com.finalshell.core.AN_2;
 import com.finalshell.core.AZ;
 import com.finalshell.core.Ap2_2;
 import com.finalshell.core.Bc2_2;
-import com.finalshell.core.CB;
+import com.finalshell.core.ProcessMonitorService;
 import com.finalshell.core.CS3_2;
 import com.finalshell.core.Cj4;
 import com.finalshell.core.Connect_2;
@@ -31,7 +31,7 @@ import com.finalshell.core.QT;
 import com.finalshell.core.Rx4;
 import com.finalshell.core.Sd2;
 import com.finalshell.core.T32;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.core.UO;
 import com.finalshell.core.UR_2;
 import com.finalshell.core.Uc2;
@@ -114,10 +114,10 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    public JLayeredPane b;
    public In4 Q;
    public List kq;
-   public com.finalshell.ui.frame.U kD;
+   public com.finalshell.ui.frame.MainFrame kD;
    public ConnectionProperty U;
    public ConnectionProperty kk;
-   public FilePanel ks;
+   public FileCommandPanel ks;
    public boolean s;
    public float k;
    public int kP;
@@ -125,8 +125,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    public Lv4_2 C;
    public String X;
    public boolean kS;
-   public CB kL;
-   public Ty2 N;
+   public ProcessMonitorService kL;
+   public RemoteProcessManager N;
    public Ov4 kl;
    public KM3 kY;
    public T32 kM;
@@ -556,6 +556,15 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
    public ConnectionProperty(int var1, int var2, Rx4 var3) {
    super();
+   RenderingHints var11;
+   Object[] var23;
+   long var24;
+   Object[] var31;
+   Object[] var33;
+   long var34;
+   Object[] var37;
+   boolean var59;
+   Im4 var6;
       int var10000 = M$int();
       this.kJ = new AtomicBoolean();
       this.kq = new CopyOnWriteArrayList();
@@ -594,8 +603,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       long var22 = 143530106198249902L;
       Object[] var21 = var10004;
       var10004 = Registry.packArgs(Ref.h(143530106198249902L, var21, var22));
-      long var24 = 348300936400245960L;
-      Object[] var23 = var10004;
+      var24 = 348300936400245960L;
+      var23 = var10004;
       Ref.h(348300936400245960L, var23, var24);
 
       try {
@@ -607,7 +616,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       this.kC = var3;
       Ov4 var5 = this.d$ov_4();
       this.Q = new In4(var3.F(), var3.u());
-      Im4 var6 = new Im4(var1, var2, var5, var3.X(), this.Q);
+      var6 = new Im4(var1, var2, var5, var3.X(), this.Q);
       this.Q.G(var6);
       this.kj = this.F(this.kC, var5, var6);
       this.O = new Connect_2(this.kj, var6, var5);
@@ -685,7 +694,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       var10.setFocusable(false);
       this.kW.add(var10);
       var10.addActionListener(new C22(this));
-      RenderingHints var11 = new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+      var11 = new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
       GP var12 = g("\uf002", true);
       var12.setToolTipText(a(-24875, 22595));
       var12.setFocusable(false);
@@ -709,7 +718,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       var13.setFocusable(false);
       Object[] var10008 = Registry.packArgs(var11);
       long var32 = 170479436712564229L;
-      Object[] var31 = var10008;
+      var31 = var10008;
       Ref.h(170479436712564229L, var31, var32);
 
       try {
@@ -723,9 +732,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       GP var14 = g("\uf07c", true);
       var14.setFocusable(false);
       var14.setToolTipText(a(-24893, -20984));
-      Object[] var10009 = Registry.packArgs(var11);
-      long var34 = 170479436712564229L;
-      Object[] var33 = var10009;
+      Object var10009 = Registry.packArgs(var11);
+      var34 = 170479436712564229L;
+      var33 = var10009;
       Ref.h(170479436712564229L, var33, var34);
 
       try {
@@ -738,9 +747,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       GP var15 = g("\uf04b", true);
       var15.setToolTipText(a(-24878, 24767));
       var15.setFocusable(false);
-      Object[] var10010 = Registry.packArgs(var11);
+      Object var10010 = Registry.packArgs(var11);
       long var36 = 170479436712564229L;
-      Object[] var35 = var10010;
+      Object var35 = var10010;
       Ref.h(170479436712564229L, var35, var36);
 
       try {
@@ -753,9 +762,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       this.kb = g("\uf062", true);
       this.kb.setToolTipText(a(-24891, 102));
       this.kb.setFocusable(false);
-      Object[] var10011 = Registry.packArgs(var11);
+      Object var10011 = Registry.packArgs(var11);
       long var38 = 170479436712564229L;
-      Object[] var37 = var10011;
+      var37 = var10011;
       Ref.h(170479436712564229L, var37, var38);
 
       try {
@@ -770,9 +779,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          long var40 = 483219322811206313L;
          Object[] var39 = var10012;
          Ref.h(483219322811206313L, var39, var40);
-         Object[] var10013 = Registry.emptyArgs();
+         Object var10013 = Registry.emptyArgs();
          long var42 = 571514335693873067L;
-         Object[] var41 = var10013;
+         Object var41 = var10013;
          var10013 = Ref.h(571514335693873067L, var41, var42);
 
          try {
@@ -834,12 +843,19 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public BufferedImage B(Ap2_2 var1, int var2, int var3) {
+      double var10;
+      long var23;
+      Object[] var24;
+      BufferedImage var33;
+      HashMap var37;
+      BufferedImage var6;
+      Graphics2D var9;
       int var10000 = M$int();
       String var5 = var2 + "-" + var3;
       int var4 = var10000;
       HashMap var10001 = Registry.emptyArgs();
       long var19 = 154023799716952351L;
-      Object[] var18 = var10001;
+      Object var18 = var10001;
       var10001 = Ref.h(154023799716952351L, var18, var19);
 
       try {
@@ -848,8 +864,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          throw var29.getTargetException();
       }
 
-      BufferedImage var6 = (BufferedImage)var10001.get(var5);
-      BufferedImage var33 = var6;
+      var6 = (BufferedImage)var10001.get(var5);
+      var33 = var6;
       if (var4 != 0) {
          if (var6 == null) {
             int var7 = this.a + this.k0 / 2;
@@ -864,15 +880,15 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
             }
 
             BufferedImage var8 = (BufferedImage)var10002;
-            Graphics2D var9 = (Graphics2D)var8.getGraphics();
-            double var10 = (double)(var1.n + var1.t);
+            var9 = (Graphics2D)var8.getGraphics();
+            var10 = (double)(var1.n + var1.t);
             double var12 = (double)(var1.Q - this.a);
             double var14 = (double)var7;
             double var16 = (double)(2 * var7);
             Uc2 var10004 = this.I;
             BufferedImage var10005 = (BufferedImage)(Registry.emptyArgs());
-            long var23 = 168242036098089983L;
-            Object[] var22 = var10005;
+            var23 = 168242036098089983L;
+            Object var22 = var10005;
             var10005 = Ref.h(168242036098089983L, var22, var23);
 
             try {
@@ -899,7 +915,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
             var9.dispose();
             Object[] var35 = Registry.emptyArgs();
             long var25 = 154023799716952351L;
-            Object[] var24 = var35;
+            var24 = var35;
             var10004 = (Uc2)Ref.h(154023799716952351L, var24, var25);
 
             try {
@@ -918,12 +934,18 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public BufferedImage W(Ap2_2 var1, int var2, int var3) {
+      int var10;
+      BufferedImage var27;
+      BufferedImage var31;
+      HashMap var34;
+      BufferedImage var6;
+      Graphics2D var9;
       M$int();
       String var5 = var2 + "-" + var3;
       Uc2 var10001 = this.I;
       HashMap var10002 = Registry.emptyArgs();
       long var15 = 488609953321778838L;
-      Object[] var14 = var10002;
+      Object var14 = var10002;
       var10002 = Ref.h(488609953321778838L, var14, var15);
 
       try {
@@ -932,9 +954,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          throw var25.getTargetException();
       }
 
-      BufferedImage var6 = (BufferedImage)var10002.get(var5);
+      var6 = (BufferedImage)var10002.get(var5);
       Uc2 var4 = var10001;
-      BufferedImage var27 = var6;
+      var27 = var6;
       if (var4 == null) {
          if (var6 == null) {
             int var7 = this.a + this.k0 / 2;
@@ -949,14 +971,14 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
             }
 
             BufferedImage var8 = var31;
-            Graphics2D var9 = (Graphics2D)var8.getGraphics();
-            int var10 = var1.n - var7;
+            var9 = (Graphics2D)var8.getGraphics();
+            var10 = var1.n - var7;
             int var11 = var1.Q - this.a;
             int var13 = 2 * var7;
             Uc2 var10004 = this.I;
             BufferedImage var10005 = (BufferedImage)(Registry.emptyArgs());
             long var19 = 168242036098089983L;
-            Object[] var18 = var10005;
+            Object var18 = var10005;
             var10005 = Ref.h(168242036098089983L, var18, var19);
 
             try {
@@ -993,11 +1015,16 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public BufferedImage S(int var1) {
+      Object[] var11;
+      BufferedImage var24;
+      HashMap var27;
+      Graphics2D var6;
+      long var9;
       y();
       Uc2 var10001 = this.I;
       HashMap var10002 = Registry.emptyArgs();
       long var8 = 620288665172364692L;
-      Object[] var7 = var10002;
+      Object var7 = var10002;
       var10002 = Ref.h(620288665172364692L, var7, var8);
 
       try {
@@ -1014,7 +1041,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
             Pr2 var4 = this.kj.N$Pr_2();
             int var5 = var1 * this.k0 + Hj2.f.top;
             Registry.packArgs(this.y, this.getWidth(), this.k0 + this.a);
-            long var9 = 363377265675420359L;
+            var9 = 363377265675420359L;
             var10002 = (HashMap)Ref.h2(363377265675420359L, var9);
 
             try {
@@ -1024,11 +1051,11 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
             }
 
             var3 = var24;
-            Graphics2D var6 = (Graphics2D)var3.getGraphics();
+            var6 = (Graphics2D)var3.getGraphics();
             Uc2 var10004 = this.I;
             BufferedImage var10005 = (BufferedImage)(Registry.emptyArgs());
             long var12 = 168242036098089983L;
-            Object[] var11 = var10005;
+            var11 = var10005;
             var10005 = Ref.h(168242036098089983L, var11, var12);
 
             try {
@@ -1061,11 +1088,16 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public BufferedImage q(int var1) {
+      Object[] var10;
+      long var11;
+      BufferedImage var23;
+      Object[] var24;
+      HashMap var26;
       M$int();
       Uc2 var10001 = this.I;
       HashMap var10002 = Registry.emptyArgs();
       long var7 = 176879981672674185L;
-      Object[] var6 = var10002;
+      Object var6 = var10002;
       var10002 = Ref.h(176879981672674185L, var6, var7);
 
       try {
@@ -1094,8 +1126,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
             Graphics2D var5 = (Graphics2D)var3.getGraphics();
             Uc2 var10004 = this.I;
             BufferedImage var10005 = (BufferedImage)(Registry.emptyArgs());
-            long var11 = 168242036098089983L;
-            Object[] var10 = var10005;
+            var11 = 168242036098089983L;
+            var10 = var10005;
             var10005 = Ref.h(168242036098089983L, var10, var11);
 
             try {
@@ -1106,7 +1138,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
             var5.Y(var10004, var10005, 0, 0, var3.getWidth(), var3.getHeight(), 0, var4 + this.k0 - this.a, var3.getWidth(), var4 + this.k0, null);
             var3 = XX3.G(var3, false);
-            Object[] var24 = Registry.emptyArgs();
+            var24 = Registry.emptyArgs();
             long var13 = 176879981672674185L;
             Object[] var12 = var24;
             var10004 = (Uc2)Ref.h(176879981672674185L, var12, var13);
@@ -1144,9 +1176,15 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    @Override
    public void paintComponent(Graphics var1) {
+      int var23;
+      int var24;
+      long var27;
+      Object[] var31;
+      long var33;
+      Object[] var37;
+      int var6;
       Object var2;
       Graphics2D var3;
-      int var6;
       boolean var99;
       label335: {
          label331: {
@@ -1192,7 +1230,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          }
 
          Registry.emptyArgs();
-         long var27 = 270389152141252877L;
+         var27 = 270389152141252877L;
          Ref.h2(270389152141252877L, var27);
          Object[] var10002 = Registry.emptyArgs();
          long var30 = 306266403902896148L;
@@ -1200,7 +1238,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          Ref.h(306266403902896148L, var29, var30);
          Object[] var10003 = Registry.emptyArgs();
          long var32 = 224406316798891066L;
-         Object[] var31 = var10003;
+         var31 = var10003;
          Object var98 = Ref.h(224406316798891066L, var31, var32);
 
          try {
@@ -1221,7 +1259,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          Ref.h(399585344452154517L, var90, var91);
          NY var109 = (NY)(Registry.emptyArgs());
          long var93 = 149968465491171480L;
-         Object[] var92 = var109;
+         Object var92 = var109;
          var109 = Ref.h(149968465491171480L, var92, var93);
 
          try {
@@ -1233,7 +1271,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          NY var67 = var109;
          Color var121 = (Color)(Registry.emptyArgs());
          long var95 = 345089686683358688L;
-         Object[] var94 = var121;
+         Object var94 = var121;
          var121 = Ref.h(345089686683358688L, var94, var95);
 
          try {
@@ -1270,7 +1308,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                   }
 
                   Registry.packArgs(var99, this.t);
-                  long var33 = 393044433502132546L;
+                  var33 = 393044433502132546L;
                   Object var10004 = Ref.h2(393044433502132546L, var33);
 
                   try {
@@ -1304,7 +1342,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
                      Object[] var102 = Registry.emptyArgs();
                      long var38 = 190504784764553274L;
-                     Object[] var37 = var102;
+                     var37 = var102;
                      Ref.h(190504784764553274L, var37, var38);
 
                      try {
@@ -1334,7 +1372,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                Uc2 var10007 = this.I;
                BufferedImage var10008 = (BufferedImage)(Registry.emptyArgs());
                long var42 = 246564164248981875L;
-               Object[] var41 = var10008;
+               Object var41 = var10008;
                var10008 = Ref.h(246564164248981875L, var41, var42);
 
                try {
@@ -1394,7 +1432,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                               Uc2 var10009 = this.I;
                               BufferedImage var10010 = (BufferedImage)(Registry.emptyArgs());
                               long var44 = 168242036098089983L;
-                              Object[] var43 = var10010;
+                              Object var43 = var10010;
                               var10010 = Ref.h(168242036098089983L, var43, var44);
 
                               try {
@@ -1480,8 +1518,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                            Ap2_2 var20 = (Ap2_2)var12.get(var13 - 1);
                            Ap2_2 var21 = (Ap2_2)var12.get(var13 + 1);
                            int var22 = 0;
-                           int var23 = 0;
-                           int var24 = 0;
+                           var23 = 0;
+                           var24 = 0;
                            var113 = var21;
                            if (var2 == null) {
                               label281:
@@ -1625,7 +1663,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
             Ref.h(399585344452154517L, var47, var48);
             NY var106 = (NY)(Registry.emptyArgs());
             long var50 = 149968465491171480L;
-            Object[] var49 = var106;
+            Object var49 = var106;
             var106 = Ref.h(149968465491171480L, var49, var50);
 
             try {
@@ -1637,7 +1675,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
             NY var66 = var106;
             Color var118 = (Color)(Registry.emptyArgs());
             long var52 = 345089686683358688L;
-            Object[] var51 = var118;
+            Object var51 = var118;
             var118 = Ref.h(345089686683358688L, var51, var52);
 
             try {
@@ -1669,6 +1707,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void i$void() {
+      boolean var10;
+      Object var11;
       int var10000 = M$int();
       Object var2 = this.A;
       synchronized (this.A){} // $VF: monitorenter 
@@ -1701,8 +1741,6 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                   }
 
                   if (!var10) {
-      BufferedImage var10;
-      BufferedImage var10;
                      var4 = this.O(var4);
                      this.s(var4);
                      var3 = true;
@@ -1745,6 +1783,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public String O(String var1) {
+      String var6;
       int var10000 = y();
       String var3 = "";
       int var4 = 0;
@@ -1859,6 +1898,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public void T$void() {
+      long var6;
+      boolean var9;
       int var10000 = y();
       String var2 = "\uf062";
       int var1 = var10000;
@@ -1867,9 +1908,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          long var4 = 483219322811206313L;
          Object[] var3 = var10001;
          Ref.h(483219322811206313L, var3, var4);
-         Object[] var10002 = Registry.emptyArgs();
-         long var6 = 571514335693873067L;
-         Object[] var5 = var10002;
+         Object var10002 = Registry.emptyArgs();
+         var6 = 571514335693873067L;
+         Object var5 = var10002;
          var10002 = Ref.h(571514335693873067L, var5, var6);
 
          try {
@@ -1924,6 +1965,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public boolean O$boolean() {
+      boolean var9;
       int var1;
       int var8;
       label45: {
@@ -1940,13 +1982,13 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                var7 = var2;
             }
 
-            var8 = var7.t$boolean();
+            var8 = (var7.t$boolean()) ? 1 : 0;
             if (var1 != 0) {
-               if (var8) {
+               if (var8 != 0) {
                   break label48;
                }
 
-               var8 = var2.i$boolean();
+               var8 = (var2.i$boolean()) ? 1 : 0;
             }
 
             if (var1 == 0) {
@@ -1962,8 +2004,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          var8 = 0;
       }
 
-      boolean var3 = (boolean)var8;
-      boolean var9 = (var3) != 0;
+      boolean var3 = (var8) != 0;
+      var9 = var3;
       if (var1 != 0) {
          if (var3) {
             Object[] var10001 = Registry.packArgs(this.U);
@@ -1985,6 +2027,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public boolean V$boolean() {
+      boolean var9;
       int var1;
       int var8;
       label45: {
@@ -2001,13 +2044,13 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                var7 = var2;
             }
 
-            var8 = var7.t$boolean();
+            var8 = (var7.t$boolean()) ? 1 : 0;
             if (var1 == 0) {
-               if (var8) {
+               if (var8 != 0) {
                   break label48;
                }
 
-               var8 = var2.i$boolean();
+               var8 = (var2.i$boolean()) ? 1 : 0;
             }
 
             if (var1 != 0) {
@@ -2023,8 +2066,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          var8 = 0;
       }
 
-      boolean var3 = (boolean)var8;
-      boolean var9 = (var3) != 0;
+      boolean var3 = (var8) != 0;
+      var9 = var3;
       if (var1 == 0) {
          if (var3) {
             Registry.lookupField(388376917454860932L).get(null);
@@ -2047,13 +2090,14 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public void U() {
+      boolean var6;
       int var1 = y();
       Object var10000 = this;
       if (var1 == 0) {
          var10000 = this.kD;
-         Object[] var10001 = Registry.emptyArgs();
+         Object var10001 = Registry.emptyArgs();
          long var3 = 577438617729885268L;
-         Object[] var2 = var10001;
+         Object var2 = var10001;
          var10001 = Ref.h(577438617729885268L, var2, var3);
 
          try {
@@ -2179,6 +2223,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public void M$void() {
+      ConnectHost var10;
+      boolean var11;
+      ConnectionProperty var9;
       int var1;
       ConnectHost var2;
       label70: {
@@ -2201,7 +2248,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
       label73: {
          label63: {
-            ConnectionProperty var9 = this;
+            var9 = this;
             if (var1 != 0) {
                if (this.L != null) {
                   break label63;
@@ -2217,7 +2264,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          }
 
          label74: {
-            ConnectHost var10 = var2;
+            var10 = var2;
             if (var1 != 0) {
                if (var2 == null) {
                   break label74;
@@ -2226,7 +2273,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                var10 = var2;
             }
 
-            boolean var11 = var10.t$boolean();
+            var11 = var10.t$boolean();
             if (var1 != 0) {
                if (var11) {
                   this.kp.setEnabled(true);
@@ -2281,6 +2328,18 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public void n$void() {
+      long var11;
+      long var23;
+      Object[] var24;
+      Object[] var26;
+      long var27;
+      long var33;
+      Object[] var34;
+      boolean var54;
+      Object[] var6;
+      boolean var62;
+      boolean var73;
+      long var9;
       this.k5 = true;
       y();
       Registry.emptyArgs();
@@ -2288,11 +2347,11 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       Ref.h2(270389152141252877L, var4);
       Object[] var10003 = Registry.emptyArgs();
       long var7 = 399585344452154517L;
-      Object[] var6 = var10003;
+      var6 = var10003;
       var10003 = Ref.h(399585344452154517L, var6, var7);
-      Object[] var10004 = Registry.emptyArgs();
-      long var9 = 149968465491171480L;
-      Object[] var8 = var10004;
+      NY var10004 = (NY)(Registry.emptyArgs());
+      var9 = 149968465491171480L;
+      Object var8 = var10004;
       var10004 = Ref.h(149968465491171480L, var8, var9);
 
       try {
@@ -2307,8 +2366,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       this.O$pA_3().repaint();
       Color var48;
       ConnectionProperty var10007 = Registry.emptyArgs();
-      long var11 = 605008073331144146L;
-      Object[] var10 = var10007;
+      var11 = 605008073331144146L;
+      Object var10 = var10007;
       var10007 = Ref.h(605008073331144146L, var10, var11);
 
       try {
@@ -2357,9 +2416,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                   }
                }
 
-               Object[] var52 = Registry.emptyArgs();
+               Object var52 = Registry.emptyArgs();
                long var17 = 577438617729885268L;
-               Object[] var16 = var52;
+               Object var16 = var52;
                var52 = Ref.h(577438617729885268L, var16, var17);
 
                try {
@@ -2390,11 +2449,11 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                Ref.h2(270389152141252877L, var18);
                var10007 = Registry.emptyArgs();
                long var21 = 306266403902896148L;
-               Object[] var20 = var10007;
+               Object var20 = var10007;
                Ref.h(306266403902896148L, var20, var21);
-               Object[] var10008 = Registry.emptyArgs();
-               long var23 = 577875833820570498L;
-               Object[] var22 = var10008;
+               Object var10008 = Registry.emptyArgs();
+               var23 = 577875833820570498L;
+               Object var22 = var10008;
                var10008 = Ref.h(577875833820570498L, var22, var23);
 
                try {
@@ -2419,9 +2478,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       }
 
       Color var55;
-      Object[] var10009 = Registry.emptyArgs();
+      XF3 var10009 = (XF3)(Registry.emptyArgs());
       long var25 = 307147474512918572L;
-      Object[] var24 = var10009;
+      var24 = var10009;
       var10009 = Ref.h(307147474512918572L, var24, var25);
 
       try {
@@ -2433,9 +2492,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       var2 = new Object(var10009.p());
       var55.setForeground(var55);
       Color var59;
-      Object[] var10010 = Registry.emptyArgs();
-      long var27 = 605008073331144146L;
-      Object[] var26 = var10010;
+      XF3 var10010 = (XF3)(Registry.emptyArgs());
+      var27 = 605008073331144146L;
+      var26 = var10010;
       var10010 = Ref.h(605008073331144146L, var26, var27);
 
       try {
@@ -2450,9 +2509,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       if (var1 == null) {
          var10007 = this.k7;
          Color var63;
-         Object[] var10011 = Registry.emptyArgs();
+         XF3 var10011 = (XF3)(Registry.emptyArgs());
          long var29 = 307147474512918572L;
-         Object[] var28 = var10011;
+         Object var28 = var10011;
          var10011 = Ref.h(307147474512918572L, var28, var29);
 
          try {
@@ -2467,12 +2526,12 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          long var30 = 270389152141252877L;
          Ref.h2(270389152141252877L, var30);
          var10010 = Registry.emptyArgs();
-         long var33 = 306266403902896148L;
-         Object[] var32 = var10010;
+         var33 = 306266403902896148L;
+         Object var32 = var10010;
          Ref.h(306266403902896148L, var32, var33);
          var10011 = Registry.emptyArgs();
          long var35 = 224406316798891066L;
-         Object[] var34 = var10011;
+         var34 = var10011;
          var10011 = Ref.h(224406316798891066L, var34, var35);
 
          try {
@@ -2490,6 +2549,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public static GP g(String var0, boolean var1) {
+      int var9;
       Registry.packArgs(var0);
       long var5 = 430295779561981133L;
       Object var10001 = Ref.h2(430295779561981133L, var5);
@@ -2501,7 +2561,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       }
 
       GP var3 = (GP)var10001;
-      int var9 = y();
+      var9 = y();
       Color var4 = (Color)Registry.lookupField(430697627377283751L).get(null);
       int var2 = var9;
       if (var2 == 0) {
@@ -2720,6 +2780,11 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public void q$void() {
+      long var10;
+      Object[] var11;
+      long var23;
+      long var6;
+      Object[] var9;
       int var1 = y();
       Object var10000 = this;
       if (var1 == 0) {
@@ -2740,7 +2805,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          this.W();
          var10000 = this.x;
          Object[] var39 = Registry.emptyArgs();
-         long var6 = 558740654349097084L;
+         var6 = 558740654349097084L;
          Object[] var5 = var39;
          Ref.h(558740654349097084L, var5, var6);
 
@@ -2793,8 +2858,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          }
 
          Object[] var10002 = Registry.emptyArgs();
-         long var10 = 251467691578193043L;
-         Object[] var9 = var10002;
+         var10 = 251467691578193043L;
+         var9 = var10002;
          Ref.h(251467691578193043L, var9, var10);
 
          try {
@@ -2816,7 +2881,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          if (((ConnectionProperty)var10000).N != null) {
             Object[] var41 = Registry.emptyArgs();
             long var12 = 543828975723397941L;
-            Object[] var11 = var41;
+            var11 = var41;
             Ref.h(543828975723397941L, var11, var12);
 
             try {
@@ -2863,7 +2928,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          var10000 = this;
       }
 
-      FilePanel var2 = ((ConnectionProperty)var10000).q$s();
+      FileCommandPanel var2 = ((ConnectionProperty)var10000).q$s();
       if (var1 == 0) {
          if (var2 != null) {
             Object[] var44 = Registry.emptyArgs();
@@ -2901,7 +2966,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
          this.J.C(this.e);
          Registry.packArgs(this.e);
-         long var23 = 242617331513341262L;
+         var23 = 242617331513341262L;
          Ref.h2(242617331513341262L, var23);
 
          try {
@@ -3051,11 +3116,11 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       this.kN.s();
    }
 
-   public com.finalshell.ui.frame.U x$U() {
+   public com.finalshell.ui.frame.MainFrame x$U() {
       return this.kD;
    }
 
-   public void W(com.finalshell.ui.frame.U var1) {
+   public void W(com.finalshell.ui.frame.MainFrame var1) {
       this.kD = var1;
    }
 
@@ -3076,11 +3141,11 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       }
    }
 
-   public FilePanel q$s() {
+   public FileCommandPanel q$s() {
       return this.ks;
    }
 
-   public void K(FilePanel var1) {
+   public void K(FileCommandPanel var1) {
       this.ks = var1;
    }
 
@@ -3148,7 +3213,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          var10000 = this;
       }
 
-      var10000.kL = new CB(this.U);
+      var10000.kL = new ProcessMonitorService(this.U);
    }
 
    public ConnectionProperty N$_y_2() {
@@ -3159,19 +3224,19 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       this.kk = var1;
    }
 
-   public CB t$CB() {
+   public ProcessMonitorService t$CB() {
       return this.kL;
    }
 
-   public void p(CB var1) {
+   public void p(ProcessMonitorService var1) {
       this.kL = var1;
    }
 
-   public void V(Ty2 var1) {
+   public void V(RemoteProcessManager var1) {
       this.N = var1;
    }
 
-   public Ty2 M$Ty_2() {
+   public RemoteProcessManager M$Ty_2() {
       return this.N;
    }
 
@@ -3358,6 +3423,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -24892) & 65535;
       if (bb[var2] == null) {
          char[] var3 = ab[var2].toCharArray();
@@ -4138,7 +4204,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -4172,9 +4238,17 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      int var11;
+      int var24;
+      byte var26;
+      char[] var33;
+      long var37;
+      long var54;
+      long[] var6;
       String[] var13 = new String[30];
-      int var11 = 0;
-      String var10 = "bCÁë3\u0002庺梒\u0010\"õâ.a\u009dñ/Ã[*0£\u0006Ð\u000e\u0007\u0005«\u009d_~'\u009c\tü\u0018óeª\u0094\u0004<\u0016\u000f thèÙ%c\tÝ\u008bD\u0095%\u0092P\u000f»þ\u001b¹·\u000f¢Eg=÷·\u001a÷ÿ\u0004攋亐符瑪\u0002辱描\u0003\u009e\n\u008c\"!êH;Ý_ãNÈ\u007fI½Ç¦\u0019a~v5\u0000^õò:E4L\u00875\u0013=ï\u000bS\u0002再岾\u0003*vË\u0005Þ+óÀ\u009c\u0005ÂCÉ\u0093\u0006\r¥ÝNí0\nT\u0090ÎE\u0007h\u000e\u0007:ßzÞ\u0091÷\u001d\u0002柘戚\u0010\u007fä+\u009fP¬Ë\u00ad\u0014(y:ÍíbD\u0004迁捛峲怋\u0005P¾:´Q\u000eÜ\"=Ô\u009aÂ\u008eÅ,/×·\u001c÷\u0002君亩\u0002妿勰 \u001a}ÒTeh\u0006Ö9æ\u001a\u0088\f}1ûÜ)b¬K\u0088û\u0080\u0084/rO\u0095\u0010\u008e?\u0002籒赈\u0006òð|&\u008a\u0006\u0004Ø¹ÇF";
+      var11 = 0;
+      var10 = "bCÁë3\u0002庺梒\u0010\"õâ.a\u009dñ/Ã[*0£\u0006Ð\u000e\u0007\u0005«\u009d_~'\u009c\tü\u0018óeª\u0094\u0004<\u0016\u000f thèÙ%c\tÝ\u008bD\u0095%\u0092P\u000f»þ\u001b¹·\u000f¢Eg=÷·\u001a÷ÿ\u0004攋亐符瑪\u0002辱描\u0003\u009e\n\u008c\"!êH;Ý_ãNÈ\u007fI½Ç¦\u0019a~v5\u0000^õò:E4L\u00875\u0013=ï\u000bS\u0002再岾\u0003*vË\u0005Þ+óÀ\u009c\u0005ÂCÉ\u0093\u0006\r¥ÝNí0\nT\u0090ÎE\u0007h\u000e\u0007:ßzÞ\u0091÷\u001d\u0002柘戚\u0010\u007fä+\u009fP¬Ë\u00ad\u0014(y:ÍíbD\u0004迁捛峲怋\u0005P¾:´Q\u000eÜ\"=Ô\u009aÂ\u008eÅ,/×·\u001c÷\u0002君亩\u0002妿勰 \u001a}ÒTeh\u0006Ö9æ\u001a\u0088\f}1ûÜ)b¬K\u0088û\u0080\u0084/rO\u0095\u0010\u008e?\u0002籒赈\u0006òð|&\u008a\u0006\u0004Ø¹ÇF";
       int var12 = "bCÁë3\u0002庺梒\u0010\"õâ.a\u009dñ/Ã[*0£\u0006Ð\u000e\u0007\u0005«\u009d_~'\u009c\tü\u0018óeª\u0094\u0004<\u0016\u000f thèÙ%c\tÝ\u008bD\u0095%\u0092P\u000f»þ\u001b¹·\u000f¢Eg=÷·\u001a÷ÿ\u0004攋亐符瑪\u0002辱描\u0003\u009e\n\u008c\"!êH;Ý_ãNÈ\u007fI½Ç¦\u0019a~v5\u0000^õò:E4L\u00875\u0013=ï\u000bS\u0002再岾\u0003*vË\u0005Þ+óÀ\u009c\u0005ÂCÉ\u0093\u0006\r¥ÝNí0\nT\u0090ÎE\u0007h\u000e\u0007:ßzÞ\u0091÷\u001d\u0002柘戚\u0010\u007fä+\u009fP¬Ë\u00ad\u0014(y:ÍíbD\u0004迁捛峲怋\u0005P¾:´Q\u000eÜ\"=Ô\u009aÂ\u008eÅ,/×·\u001c÷\u0002君亩\u0002妿勰 \u001a}ÒTeh\u0006Ö9æ\u001a\u0088\f}1ûÜ)b¬K\u0088û\u0080\u0084/rO\u0095\u0010\u008e?\u0002籒赈\u0006òð|&\u008a\u0006\u0004Ø¹ÇF"
          .length();
       char var9 = 5;
@@ -4194,7 +4268,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                int var14 = 0;
                byte var42 = var10000;
                var33 = var39;
-               int var24 = var10004;
+               var24 = var10004;
                byte var49;
                char[] var55;
                int var10006;
@@ -4266,7 +4340,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                      ab = var13;
                      bb = new String[30];
                      long var0 = 8281488511029061715L;
-                     long[] var6 = new long[28];
+                     var6 = new long[28];
                      int var3 = 0;
                      String var4 = "\u0011Ãj\u00801Ð\u0098\u0010¯-\u0017gAËÔ¼9ëôÊZúÊ³ºrOFþ(q\u0099 =\u0095\u0089(DÆ\u0004TÔ©¨\u008fUU\u0019)¤O»|\u0018B\u007f¤cN\"êä\u0083Þáú^\u0091¡*Ãtû\u0092F¦\u009e\u0006\u0015»`¤\u0003$\u0097á\u0010\u0081\u0086(\"]Í³ÐåÔa\u0086\u009bÞ\u0002'ôÅj\u0084¥ÖAåTæ\u001b\f-é¨µÓk\"\u009d2ìZ&\u0006ÿS`\u0093{ã¤F3¼{4D\u0015O\u0013O Élc[\u000bçNe¶0ce=Lä\u0093ìtÿðY\u009e\u0004\"\u0017åáu\u001bd \u001e¢¾ÜÔ±hÒÌM¸YI*Ý§lÂ@g!Ûñ:ºÚ{\u000e\u0084âö";
                      int var5 = "\u0011Ãj\u00801Ð\u0098\u0010¯-\u0017gAËÔ¼9ëôÊZúÊ³ºrOFþ(q\u0099 =\u0095\u0089(DÆ\u0004TÔ©¨\u008fUU\u0019)¤O»|\u0018B\u007f¤cN\"êä\u0083Þáú^\u0091¡*Ãtû\u0092F¦\u009e\u0006\u0015»`¤\u0003$\u0097á\u0010\u0081\u0086(\"]Í³ÐåÔa\u0086\u009bÞ\u0002'ôÅj\u0084¥ÖAåTæ\u001b\f-é¨µÓk\"\u009d2ìZ&\u0006ÿS`\u0093{ã¤F3¼{4D\u0015O\u0013O Élc[\u000bçNe¶0ce=Lä\u0093ìtÿðY\u009e\u0004\"\u0017åáu\u001bd \u001e¢¾ÜÔ±hÒÌM¸YI*Ý§lÂ@g!Ûñ:ºÚ{\u000e\u0084âö"
@@ -4275,12 +4349,12 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
                      label44:
                      while (true) {
-                        byte var26 = var2;
+                        var26 = var2;
                         var2 += 8;
                         byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
-                        long var37 = ((long)var7[0] & 255L) << 56
+                        var37 = ((long)var7[0] & 255L) << 56
                            | ((long)var7[1] & 255L) << 48
                            | ((long)var7[2] & 255L) << 40
                            | ((long)var7[3] & 255L) << 32
@@ -4291,7 +4365,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                         byte var45 = -1;
 
                         while (true) {
-                           long var54 = var37 ^ var0;
+                           var54 = var37 ^ var0;
                            switch (var45) {
                               case 0:
                                  var19[var27] = var54;
@@ -4355,7 +4429,6 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       }
    }
 }
-
 
 
 

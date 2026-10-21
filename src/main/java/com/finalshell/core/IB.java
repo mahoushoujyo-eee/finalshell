@@ -197,6 +197,7 @@ public abstract class IB {
    }
 
    public final void r(boolean var1) {
+      IB var3;
       String var2;
       boolean var10000;
       var2 = Cl4_2.I();
@@ -1078,8 +1079,10 @@ public abstract class IB {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
+      int var3;
       String[] var5 = new String[6];
-      int var3 = 0;
+      var3 = 0;
       String var2 = "D\u0086!=-û¼`1KõKu{\u009e\tÒµ\u0001U²Þ\u001a±±{E-.&~:@£\u0085¢\nÔ÷-i\u0018üò®Þ¨ùvã\u0006þP\u0004=ä\u009a¯Pú;zõ9»XãóÐ\b¤AyJ6\u009aR\u0010ÁøåÓ\u0006ê\u009c\u0001ï\u001e\u009aÊÿ¯RÑm/®¼8\t\u0003\u0002,\u0084\u0096]l\u009d\u009a± \u008aÜÌS\u0096\u001e³\u000b%J\r¤¨È\f\u0006'\u00877";
       int var4 = "D\u0086!=-û¼`1KõKu{\u009e\tÒµ\u0001U²Þ\u001a±±{E-.&~:@£\u0085¢\nÔ÷-i\u0018üò®Þ¨ùvã\u0006þP\u0004=ä\u009a¯Pú;zõ9»XãóÐ\b¤AyJ6\u009aR\u0010ÁøåÓ\u0006ê\u009c\u0001ï\u001e\u009aÊÿ¯RÑm/®¼8\t\u0003\u0002,\u0084\u0096]l\u009d\u009a± \u008aÜÌS\u0096\u001e³\u000b%J\r¤¨È\f\u0006'\u00877"
          .length();
@@ -1093,7 +1096,6 @@ public abstract class IB {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

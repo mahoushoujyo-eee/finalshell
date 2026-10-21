@@ -27,15 +27,16 @@ public class Vp2 {
          var10001 = a(25388, 3795853034977049881L);
       }
 
-      return (boolean)(var10000 <= var10001 ? 1 : 0);
+      return ((var10000 <= var10001 ? 1 : 0) != 0);
    }
 
    public static char B(int var0) {
+      boolean var5;
       Ky4[] var1 = YT3_2.c();
       char var10000 = (Registry.lookupField(522380536751185200L).getBoolean(null)) ? 1 : 0;
       if (var1 != null) {
          if (var10000 == 0) {
-            Object[] var6 = Registry.packArgs(var0);
+            Object var6 = Registry.packArgs(var0);
             long var2 = 536530111645880732L;
             Object var10001 = Ref.h2(536530111645880732L, var2);
 
@@ -63,11 +64,12 @@ public class Vp2 {
    }
 
    public static char Q(int var0) {
+      boolean var5;
       Ky4[] var1 = YT3_2.c();
       char var10000 = (Registry.lookupField(522380536751185200L).getBoolean(null)) ? 1 : 0;
       if (var1 != null) {
          if (var10000 == 0) {
-            Object[] var6 = Registry.packArgs(var0);
+            Object var6 = Registry.packArgs(var0);
             long var2 = 536530111645880732L;
             Object var10001 = Ref.h2(536530111645880732L, var2);
 
@@ -106,11 +108,12 @@ public class Vp2 {
    }
 
    public static void __vfClinit__() {
+      boolean var5;
       long var0 = 2501025936524877641L;
       long[] var6 = new long[8];
       int var3 = 0;
       String var4 = "]\u0081õzrr\u009d\u0018¤`BÍbàH\u0086äØ\rH\u0012\u0081\u008fÐ\\Âo\u0098] Ë\\·\u009eh0\u001d»-<cüÈüÁï]¯";
-      int var5 = "]\u0081õzrr\u009d\u0018¤`BÍbàH\u0086äØ\rH\u0012\u0081\u008fÐ\\Âo\u0098] Ë\\·\u009eh0\u001d»-<cüÈüÁï]¯".length();
+      var5 = ("]\u0081õzrr\u009d\u0018¤`BÍbàH\u0086äØ\rH\u0012\u0081\u008fÐ\\Âo\u0098] Ë\\·\u009eh0\u001d»-<cüÈüÁï]¯".length()) != 0;
       byte var2 = 0;
 
       label26:
@@ -149,7 +152,7 @@ public class Vp2 {
                   }
 
                   var4 = "V\u0010\u0015n\u009cn\u0012\u0013/l_uN;ÞT";
-                  var5 = "V\u0010\u0015n\u009cn\u0012\u0013/l_uN;ÞT".length();
+                  var5 = ("V\u0010\u0015n\u009cn\u0012\u0013/l_uN;ÞT".length()) != 0;
                   var2 = 0;
             }
 

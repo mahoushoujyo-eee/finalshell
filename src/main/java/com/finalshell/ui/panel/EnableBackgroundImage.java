@@ -42,6 +42,10 @@ public class EnableBackgroundImage extends Z7 {
    public static Integer[] i;
 
    public EnableBackgroundImage() {
+      super();
+      long var34;
+      Boolean var66;
+      Integer var69;
       Registry.lookupField(339248888387146093L).setInt(this, a(11345, 9071719247284532724L));
       Registry.lookupField(158353115971356460L).setInt(this, a(23114, 8646614288436495340L));
       I();
@@ -51,7 +55,7 @@ public class EnableBackgroundImage extends Z7 {
       Ref.h2(270389152141252877L, var9);
       U62 var10003 = (U62)(Registry.emptyArgs());
       long var12 = 306266403902896148L;
-      Object[] var11 = var10003;
+      Object var11 = var10003;
       var10003 = Ref.h(306266403902896148L, var11, var12);
 
       try {
@@ -65,9 +69,9 @@ public class EnableBackgroundImage extends Z7 {
       this.add(var3, a(9153, 3075));
       JCheckBox var64;
       String var10005 = a(9161, 13496);
-      Object[] var10007 = Registry.emptyArgs();
+      Object var10007 = Registry.emptyArgs();
       long var14 = 224406316798891066L;
-      Object[] var13 = var10007;
+      Object var13 = var10007;
       var10007 = Ref.h(224406316798891066L, var13, var14);
 
       try {
@@ -120,11 +124,11 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
          Ref.h2(270389152141252877L, var27);
          JComboBox var10011 = Registry.emptyArgs();
          long var30 = 306266403902896148L;
-         Object[] var29 = var10011;
+         Object var29 = var10011;
          var10011 = (JComboBox)Ref.h(306266403902896148L, var29, var30);
-         Object[] var10012 = Registry.emptyArgs();
+         Object var10012 = Registry.emptyArgs();
          long var32 = 358544030666779924L;
-         Object[] var31 = var10012;
+         Object var31 = var10012;
          var10012 = Ref.h(358544030666779924L, var31, var32);
 
          try {
@@ -141,7 +145,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
       this.add(var61, a(9157, 9607));
       var61.add(new JLabel(a(9163, 9453)));
       JTextField var70 = new JTextField();
-      long var34 = 411696319453013122L;
+      var34 = 411696319453013122L;
       JTextField var33 = var70;
       Ref.s(411696319453013122L, var33, var34);
       Object var35 = 411696319453013122L;
@@ -173,7 +177,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
       ((JList)Ref.g(563971228817595380L, var51)).addListSelectionListener(new ML(this, var4));
       JScrollPane var10022;
       Object var53 = 563971228817595380L;
-      super((JList)Ref.g(563971228817595380L, var53));
+      // [VF-super] super((JList)Ref.g(563971228817595380L, var53));
       JScrollPane var8 = var10022;
       this.add(var8, a(9155, 21190));
       Object[] var10023 = Registry.emptyArgs();
@@ -190,6 +194,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void g(String var1) {
+      Object[] var34;
       I();
       Registry.emptyArgs();
       long var4 = 270389152141252877L;
@@ -200,7 +205,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
       var10003 = Ref.h(306266403902896148L, var6, var7);
       ArrayList var10004 = Registry.emptyArgs();
       long var9 = 313091340064438462L;
-      Object[] var8 = var10004;
+      Object var8 = var10004;
       var10004 = Ref.h(313091340064438462L, var8, var9);
 
       try {
@@ -238,7 +243,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
                if (var2 != null) {
                   ArrayList var10007 = Registry.emptyArgs();
                   long var25 = 250284129792311327L;
-                  Object[] var24 = var10007;
+                  Object var24 = var10007;
                   var10007 = Ref.h(250284129792311327L, var24, var25);
 
                   try {
@@ -261,7 +266,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
             if (var10003 == null) {
                var10004 = Registry.packArgs(var1);
                long var17 = 586754005152705687L;
-               Object[] var16 = var10004;
+               Object var16 = var10004;
                Ref.h(586754005152705687L, var16, var17);
 
                try {
@@ -292,7 +297,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
             var10003 = var3;
             var10004 = Registry.emptyArgs();
             long var52 = 250284129792311327L;
-            Object[] var50 = var10004;
+            Object var50 = var10004;
             var10004 = Ref.h(250284129792311327L, var50, var52);
 
             try {
@@ -320,7 +325,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
 
          ArrayList var65 = Registry.emptyArgs();
          long var29 = 250284129792311327L;
-         Object[] var28 = var65;
+         Object var28 = var65;
          var65 = Ref.h(250284129792311327L, var28, var29);
 
          try {
@@ -340,7 +345,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
 
          var65 = Registry.emptyArgs();
          long var53 = 250284129792311327L;
-         Object[] var51 = var65;
+         Object var51 = var65;
          var65 = Ref.h(250284129792311327L, var51, var53);
 
          try {
@@ -368,7 +373,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
       Ref.h2(270389152141252877L, var32);
       Object[] var71 = Registry.emptyArgs();
       long var35 = 578864097947885485L;
-      Object[] var34 = var71;
+      var34 = var71;
       Ref.h(578864097947885485L, var34, var35);
 
       try {
@@ -402,7 +407,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
       var10003 = Ref.h(306266403902896148L, var8, var9);
       FX3 var10004 = (FX3)(Registry.emptyArgs());
       long var11 = 313091340064438462L;
-      Object[] var10 = var10004;
+      Object var10 = var10004;
       var10004 = Ref.h(313091340064438462L, var10, var11);
 
       try {
@@ -431,7 +436,7 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
 
          ArrayList var10005 = (ArrayList)(Registry.emptyArgs());
          long var13 = 250284129792311327L;
-         Object[] var12 = var10005;
+         Object var12 = var10005;
          var10005 = Ref.h(250284129792311327L, var12, var13);
 
          try {
@@ -469,11 +474,11 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
          Ref.h2(270389152141252877L, var18);
          JTextField var10009 = Registry.emptyArgs();
          long var21 = 306266403902896148L;
-         Object[] var20 = var10009;
+         Object var20 = var10009;
          var10009 = (JTextField)Ref.h(306266403902896148L, var20, var21);
          String var10010 = (String)(Registry.emptyArgs());
          long var23 = 338793095438116620L;
-         Object[] var22 = var10010;
+         Object var22 = var10010;
          var10010 = Ref.h(338793095438116620L, var22, var23);
 
          try {
@@ -1350,6 +1355,8 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
+      int var66;
       String[] var13 = new String[14];
       int var11 = 0;
       Ky4[] var10000 = new Ky4[3];
@@ -1367,7 +1374,6 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;
@@ -1396,7 +1402,6 @@ var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
 
                while (true) {
                   char var65 = var56[var10006];
-                  byte var66;
                   switch (var14 % 7) {
                      case 0:
                         var66 = 101;

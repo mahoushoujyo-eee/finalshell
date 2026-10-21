@@ -2,13 +2,13 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.FilePanel;
+import com.finalshell.ui.panel.FileCommandPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class Tt2 implements Runnable {
-   public final FilePanel F;
+   public final FileCommandPanel F;
 
-   public Tt2(FilePanel var1) {
+   public Tt2(FileCommandPanel var1) {
       this.F = var1;
    }
 

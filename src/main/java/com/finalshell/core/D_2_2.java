@@ -62,6 +62,7 @@ public class D_2_2 extends BasicInternalFrameTitlePane {
 
    @Override
    public void addSubComponents() {
+      D_2_2 var6;
       int[] var1 = W();
       this.add(
          new KP3(new com.finalshell.ui.panel.G3(this, this.frame.getTitle(), new M_3(this), 2, new Object[0]), this.j() ? 3 : 1, 3, 0, 3), a(-26308, 13673)
@@ -206,6 +207,7 @@ public class D_2_2 extends BasicInternalFrameTitlePane {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -26305) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -986,7 +988,7 @@ public class D_2_2 extends BasicInternalFrameTitlePane {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1020,6 +1022,8 @@ public class D_2_2 extends BasicInternalFrameTitlePane {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
+      long[] var6;
       String[] var13 = new String[6];
       int var11 = 0;
       String var10 = "\u0096\bAÂ8\"É\u008fÈÛ\\©Ä\u0000ì\u0004\u00856\u0096]\u0011½T$I\u0094SM¨w\u0010>kÖÏ\u000eí`\u0006^\\6\u0094áì";
@@ -1035,7 +1039,6 @@ public class D_2_2 extends BasicInternalFrameTitlePane {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;
@@ -1114,7 +1117,7 @@ public class D_2_2 extends BasicInternalFrameTitlePane {
                      a = var13;
                      b = new String[6];
                      long var0 = 7132716601490118645L;
-                     long[] var6 = new long[3];
+                     var6 = new long[3];
                      int var3 = 0;
                      String var4 = "àe\u0089÷æ\u0094\u0085.3ÑN\u0083oê?s Í\u009aýä|\t¦";
                      int var5 = "àe\u0089÷æ\u0094\u0085.3ÑN\u0083oê?s Í\u009aýä|\t¦".length();

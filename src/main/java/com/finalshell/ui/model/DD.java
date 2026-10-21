@@ -3,14 +3,14 @@ package com.finalshell.ui.model;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.AA;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class DD implements Comparator {
-   public final Connection5 R;
+   public final ImportExportPanel R;
 
-   public DD(Connection5 var1) {
+   public DD(ImportExportPanel var1) {
       this.R = var1;
    }
 
@@ -19,9 +19,9 @@ public class DD implements Comparator {
       AA.z();
       Object var6 = 168418258401192889L;
       Object var10002 = Ref.g(168418258401192889L, var6);
-      Object[] var10003 = Registry.packArgs(var1);
+      Object var10003 = Registry.packArgs(var1);
       long var9 = 396550792733905567L;
-      Object[] var8 = var10003;
+      Object var8 = var10003;
       var10003 = Ref.h(396550792733905567L, var8, var9);
 
       try {
@@ -34,9 +34,9 @@ public class DD implements Comparator {
       Object var3 = var10002;
       Object var10 = 168418258401192889L;
       Ref.g(168418258401192889L, var10);
-      Object[] var10004 = Registry.packArgs(var2);
+      Object var10004 = Registry.packArgs(var2);
       long var13 = 396550792733905567L;
-      Object[] var12 = var10004;
+      Object var12 = var10004;
       var10004 = Ref.h(396550792733905567L, var12, var13);
 
       try {

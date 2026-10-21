@@ -86,10 +86,10 @@ public class Nw2 extends NP {
                            if (var12 != 0) {
                               ButtonModel var8 = ((JToggleButton)var1).getModel();
                               ButtonModel var9 = ((JToggleButton)var2).getModel();
-                              byte var14 = (var8 instanceof DefaultButtonModel) ? 1 : 0;
+                              byte var14 = (byte)((var8 instanceof DefaultButtonModel) ? 1 : 0);
                               if (var6 == null) {
                                  if (var14 != 0) {
-                                    var14 = (var9 instanceof DefaultButtonModel) ? 1 : 0;
+                                    var14 = (byte)((var9 instanceof DefaultButtonModel) ? 1 : 0);
                                     if (var6 != null) {
                                        return var14;
                                     }
@@ -225,7 +225,7 @@ public class Nw2 extends NP {
             }
 
             if (var7 == 5) {
-               byte var6 = (var4.equals(b(5022, -2476))) ? 1 : 0;
+               byte var6 = (byte)((var4.equals(b(5022, -2476))) ? 1 : 0);
                if (var3 != null) {
                   return var6;
                }
@@ -234,7 +234,7 @@ public class Nw2 extends NP {
                   return 1;
                }
 
-               byte var8 = (var4.equals(b(5019, 1712))) ? 1 : 0;
+               byte var8 = (byte)((var4.equals(b(5019, 1712))) ? 1 : 0);
                if (var3 != null) {
                   return var8;
                }
@@ -1090,6 +1090,7 @@ public class Nw2 extends NP {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "]\u0097|y\u0018èbÆ\u0089\u0019ÊÇ§Ð\n.>å¯n\u0091f' ´\bJ»Y¶ÎkÌà";
@@ -1104,7 +1105,6 @@ public class Nw2 extends NP {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

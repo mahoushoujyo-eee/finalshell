@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.io.File;
@@ -55,11 +55,11 @@ public class LL3_2 implements Cq2 {
 
    public void g(String var1, String var2, Lv4_2 var3, int var4) {
       String var6 = var1.toLowerCase();
-      Connection12.X();
+      FileTransferConnection.X();
       StringBuilder var10001 = new StringBuilder();
       String var10003 = (String)(Registry.emptyArgs());
       long var10 = 292557478156152530L;
-      Object[] var9 = var10003;
+      Object var9 = var10003;
       var10003 = Ref.h(292557478156152530L, var9, var10);
 
       try {
@@ -85,7 +85,7 @@ public class LL3_2 implements Cq2 {
 
    public int u(String var1, String var2, Lv4_2 var3) {
       String var5 = var1.toLowerCase();
-      Connection12.X();
+      FileTransferConnection.X();
       Object var9 = 614370709562827652L;
       HashMap var6 = (HashMap)((HashMap)Ref.g(614370709562827652L, var9)).get(var5);
       if (this == null && var6 == null) {
@@ -98,7 +98,7 @@ public class LL3_2 implements Cq2 {
       new StringBuilder();
       String var10003 = (String)(Registry.emptyArgs());
       long var14 = 292557478156152530L;
-      Object[] var13 = var10003;
+      Object var13 = var10003;
       var10003 = Ref.h(292557478156152530L, var13, var14);
 
       try {
@@ -146,7 +146,7 @@ public class LL3_2 implements Cq2 {
    }
 
    public long B$long(String var1) {
-      boolean var10000 = Connection12.d$boolean();
+      boolean var10000 = FileTransferConnection.d$boolean();
       long var3 = 0L;
       boolean var2 = var10000;
       Object var5 = 495522543738164163L;
@@ -172,11 +172,12 @@ public class LL3_2 implements Cq2 {
    }
 
    public synchronized void z(YI var1) {
+      Integer var15;
       Object var3 = 386849566821741858L;
       HashMap var10001 = (HashMap)Ref.g(386849566821741858L, var3);
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var6 = 305126359001981386L;
-      Object[] var5 = var10003;
+      Object var5 = var10003;
       var10003 = Ref.h(305126359001981386L, var5, var6);
 
       try {
@@ -189,7 +190,7 @@ public class LL3_2 implements Cq2 {
       Registry.lookupField(256164222342390016L).setInt(this, Registry.lookupField(256164222342390016L).getInt(this) + 1);
       var10003 = Registry.packArgs(this);
       long var8 = 541437196102236947L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       Ref.h(541437196102236947L, var7, var8);
 
       try {
@@ -231,7 +232,7 @@ public class LL3_2 implements Cq2 {
    }
 
    public void w(VO var1) {
-      Connection12.d$boolean();
+      FileTransferConnection.d$boolean();
       Object var5 = 550567548032100594L;
       Iterator var3 = ((ArrayList)Ref.g(550567548032100594L, var5)).iterator();
       LL3_2 var2 = this;

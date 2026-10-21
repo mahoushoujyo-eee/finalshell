@@ -1,6 +1,6 @@
 package com.finalshell.ui.listener;
 
-import com.finalshell.ui.dialog.EditDialog;
+import com.finalshell.ui.dialog.PortForwardEditDialog;
 import com.finalshell.ui.model.BS;
 import com.finalshell.ui.panel.AccelerateRdpHelpPanel;
 import java.awt.event.ActionEvent;
@@ -10,10 +10,10 @@ public class Y0_2 implements ActionListener {
    public final boolean z;
    public final BS v;
    public final AccelerateRdpHelpPanel J;
-   public final EditDialog r;
+   public final PortForwardEditDialog r;
    public static String a;
 
-   public Y0_2(EditDialog var1, boolean var2, BS var3, AccelerateRdpHelpPanel var4) {
+   public Y0_2(PortForwardEditDialog var1, boolean var2, BS var3, AccelerateRdpHelpPanel var4) {
       this.r = var1;
       this.z = var2;
       this.v = var3;

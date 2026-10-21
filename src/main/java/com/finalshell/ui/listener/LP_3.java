@@ -32,18 +32,18 @@ public class LP_3 implements ActionListener {
       long var14 = 240567170779145617L;
       Object[] var13 = var10003;
       Ref.h(240567170779145617L, var13, var14);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var16 = 226341449505323490L;
-      Object[] var15 = var10004;
+      Object var15 = var10004;
       var10004 = Ref.h(226341449505323490L, var15, var16);
 
       try {
-         var10004 = (com.finalshell.ui.frame.U)var10004;
+         var10004 = (com.finalshell.ui.frame.MainFrame)var10004;
       } catch (InvocationTargetException var76) {
          throw var76.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var3 = var10004;
+      com.finalshell.ui.frame.MainFrame var3 = var10004;
       SelectDownloadFolderPanel.O$arrint();
       Object var17 = 248768231919336173L;
       Ref.g(248768231919336173L, var17);
@@ -51,7 +51,7 @@ public class LP_3 implements ActionListener {
       Object var10007 = Ref.g(269586463206323716L, var19);
       String var10008 = (String)(Registry.emptyArgs());
       long var22 = 248904686894997647L;
-      Object[] var21 = var10008;
+      Object var21 = var10008;
       var10008 = Ref.h(248904686894997647L, var21, var22);
 
       try {
@@ -75,9 +75,9 @@ public class LP_3 implements ActionListener {
          throw var74.getTargetException();
       }
 
-      Object[] var10010 = Registry.emptyArgs();
+      Object var10010 = Registry.emptyArgs();
       long var28 = 418327897845479655L;
-      Object[] var27 = var10010;
+      Object var27 = var10010;
       var10010 = Ref.h(418327897845479655L, var27, var28);
 
       try {
@@ -91,7 +91,7 @@ public class LP_3 implements ActionListener {
          if (var6 == Registry.lookupField(564170828581134815L).getInt(null)) {
             String var10011 = (String)(Registry.emptyArgs());
             long var30 = 191095475795927576L;
-            Object[] var29 = var10011;
+            Object var29 = var10011;
             var10011 = Ref.h(191095475795927576L, var29, var30);
 
             try {

@@ -2127,6 +2127,7 @@ public class DM implements Ak2, X4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[28];
       int var11 = 0;
       String var10 = "(\u0099\u008b\u0085)+ÿÛ\u0013\u008b\u0092<~°\u001f \u0097>å0ßC\u000f.\u0090Ðu\u0000ÆÂåLîÏy\u0091ð[\u001f\u009aL\u008c9Vg\u001eå\f04\u008c\\\u009ck±~\u0082\u0013 ¼\u009aRÃ\u008a\u0013\u0001æuM¥\u0004¦\u0006B\b\u0003\u0002\"\u008d\u0016½µ\u0080\u0002ÌºM\u0095bÄ}Ã|ÉM\u007f¥Òä\u0007GI\u0013\u0003\u0015(\u001f\u0095;¥ò¹£$´^Ì\u000btV:E-ô\u008f^YºY\u008a\u0001\u009aþLBÞ²\"lu83Ý´\u0005«;\"@\f1¬é\u0019\u0088©ËH\u0088@-0³´HÞb4\u0016:1É\u0090a\u0089ö\u008f2\u0001¶mú\u009a\u008fe\u0085\u0096§%\u0097á\u001drÀÌ%ðÿÖ\u008e\u0099S\u0083y+ð\u001d®Sß,?\u009dñn\u001a$\u0013Ä¤\u008f\u0004\u001c8\u0096`\u0003\u0091µÔ\u0007J°y\u001d¤\u0017»\u0014J_\u0087\u009d\u007fÅI!Öu8\u0004\u0015\u00ad·¥\u0007×\r¶\fÂ÷2M\u0082Ð¨Q$\u0088FY\u0003\nG\u008c\r2þæ\\ÇÍBi\u007f[í?e\u0018æYÞZRû\u0018Á¬\u009cOOã,Jq\u0002\u009cÅ\u0086{2[\u0011\u0014ôÚPh\u0085§H\u0006\u007fÕ\u0088 sÉYÌ\f5 Y\f&z wKGVkáMâH\u0004&\u0099ÑT\u0010£C\u0007¤[G$\rµ\u000f;cÊBSa\b\u0096\u000f¶Ù\u0089\u0092\u000eÑ\u0002\u008cÔ\u0016Ù\u0083\fÄ]b\u007f\u008e$§µ¯eDnÎÁähÁÖ\u0091\fH\\c8¨~í\u0084\u008c2S\u000e";
@@ -2142,7 +2143,6 @@ public class DM implements Ak2, X4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

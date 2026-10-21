@@ -4,8 +4,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 @O4(
-   Z = "Feature",
-   Z = {"type", "id", "bbox", "coordinates", "properties"}
+   Z$String = "Feature",
+   Z$arrString = {"type", "id", "bbox", "coordinates", "properties"}
 )
 public class XQ3 extends XY3 {
    public String L;

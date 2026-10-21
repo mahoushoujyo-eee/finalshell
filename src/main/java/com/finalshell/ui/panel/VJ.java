@@ -6,16 +6,16 @@ import javax.swing.JScrollPane;
 import javax.swing.JViewport;
 
 public class VJ extends JScrollPane {
-   public final Address G;
+   public final FileBrowserAddressBar G;
 
-   public VJ(Address var1, Component var2) {
+   public VJ(FileBrowserAddressBar var1, Component var2) {
       super(var2);
       this.G = var1;
    }
 
    @Override
    public void paint(Graphics var1) {
-      boolean var10000 = Address.i();
+      boolean var10000 = FileBrowserAddressBar.i();
       Component[] var3 = this.getComponents();
       boolean var2 = var10000;
       Component[] var4 = var3;

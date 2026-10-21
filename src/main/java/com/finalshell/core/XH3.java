@@ -1,8 +1,8 @@
 package com.finalshell.core;
 
 @O4(
-   Z = "MultiPolygon",
-   Z = {"type", "bbox", "coordinates"}
+   Z$String = "MultiPolygon",
+   Z$arrString = {"type", "bbox", "coordinates"}
 )
 public class XH3 extends XY3 {
    public double[][][][] t;

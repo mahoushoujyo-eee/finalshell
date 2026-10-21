@@ -1,8 +1,8 @@
 package com.finalshell.core;
 
 @O4(
-   Z = "LineString",
-   Z = {"type", "bbox", "coordinates"}
+   Z$String = "LineString",
+   Z$arrString = {"type", "bbox", "coordinates"}
 )
 public class Xx4 extends XY3 {
    public double[][] n;

@@ -1153,6 +1153,7 @@ public abstract class YZ implements Ip4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[19];
       int var3 = 0;
       String var2 = "Ê\u0094Ágqõ\u0012x;\u0002ÞNE\t\ta÷\u009c\u0093w\u0097z\rQÙ¿\u008dõ\u0011;MÍhÔe!\u000b¹\u0001¢\u0095\u0014.\u000e\u001f.8Y\r(ð\u0090¯\u0014¶\u0083=Úf6¤}\f4\u008b6\u0084¦\u0092Éó\u001eÒ¿¥\u0003Ùq\u008f\u0016Eï0\bO\u0018ÕÅÃµÁ¿¢Ôq^ø{r\u008b«å\rª\u001fÀU\u001d\bÁ,\u0092D?à\\\u0016¶5NS\u0080s,¨ü\u0018&\u000bSaãªªå8Xâ\u009f\u0016¿ëo\u0088¤\b¨Çlõ4°\u0018Ö¢\u009a\u0082ã=\u0098B\u0087\r\u000fætk\u0081î\u0019ð\u0089ß\\\u00930\f×=JR)H8¨ ¾|Ë\u0016¹º¯¢¼M«o\fà8\u0015\u009a\u0083\u0091öänñ)Û±\u0016\u0001Ç¸\r^¸÷Ñ\u00877Iï³ÞS\u001f¼Sú\u008eºE\fìí-HÅ\u000b¥À\u0093´\u000ei\u0007CµðCWqÖ\u0016\u0095õ*K\fp½ÈÎ\u0014`\u008a\u009bQú¬\u0089%\\@n\u009c";
@@ -1168,7 +1169,6 @@ public abstract class YZ implements Ip4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -38,7 +38,7 @@ public class NB extends T4 {
 
                Rectangle var10001 = (Rectangle)(Registry.emptyArgs());
                long var9 = 346087293806109292L;
-               Object[] var8 = var10001;
+               Object var8 = var10001;
                var10001 = Ref.h(346087293806109292L, var8, var9);
 
                try {
@@ -50,7 +50,7 @@ public class NB extends T4 {
                if (var10001 != null) {
                   Rectangle var10003 = (Rectangle)(Registry.emptyArgs());
                   long var11 = 346087293806109292L;
-                  Object[] var10 = var10003;
+                  Object var10 = var10003;
                   var10003 = Ref.h(346087293806109292L, var10, var11);
 
                   try {

@@ -439,6 +439,8 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
 
    @Override
    public void paintTabBackground(Graphics var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8) {
+      Color var18;
+      KV_2 var28;
       Color var10 = (Color)Registry.lookupField(381952515264332318L).get(null);
       String var10000 = com.finalshell.ui.panel.Hd2.X();
       Graphics2D var11 = (Graphics2D)var1;
@@ -501,7 +503,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
                   this.tabPane.getBackground();
                }
 
-               Color var18 = (Color)Registry.lookupField(584289422366901854L).get(null);
+               var18 = (Color)Registry.lookupField(584289422366901854L).get(null);
                Color var19 = (Color)Registry.lookupField(430348892393272046L).get(null);
                var11.setPaint(new GradientPaint((float)var20.x, (float)var20.y, var18, (float)var22.x, (float)var22.y, var19));
                if (var9 != null) {
@@ -564,6 +566,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
 
    @Override
    public void paintText(Graphics var1, int var2, Font var3, FontMetrics var4, int var5, String var6, Rectangle var7, boolean var8) {
+      int var18;
       String var9;
       label70: {
          String var10000 = com.finalshell.ui.panel.Hd2.X();
@@ -610,8 +613,6 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
                         boolean var16 = var12 instanceof UIResource;
                         if (var9 != null) {
                            if (!var16) {
-      Graphics2D var18;
-      Graphics2D var18;
                               break label56;
                            }
 
@@ -670,14 +671,14 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
       int var12;
       String var10000 = com.finalshell.ui.panel.Hd2.X();
       Insets var9 = this.tabPane.getInsets();
-      var8 = ((var10000) ? 1 : 0) ? 1 : 0;
-      var12 = (this.R.equals(Ij4.attached)) != 0;
+      var8 = var10000;
+      var12 = (this.R.equals(Ij4.attached)) ? 1 : 0;
       label80:
       if (var8 != null) {
          int var10001;
          label78: {
             if (var12 != 0) {
-               var12 = var7;
+               var12 = (var7) ? 1 : 0;
                if (var8 == null) {
                   break label80;
                }
@@ -710,8 +711,8 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
             var10001 = Registry.lookupField(262617833768908696L).getInt(null);
          }
 
-         var5 = ((var12 - var10001) ? 1 : 0) ? 1 : 0;
-         var12 = ((this.R.equals(Ij4.standalone)) != 0) != 0;
+         var5 = var12 - var10001;
+         var12 = (this.R.equals(Ij4.standalone)) ? 1 : 0;
       }
 
       if (var8 != null && var12 == 0) {
@@ -720,13 +721,13 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
 
       int var10;
       GeneralPath var11;
-      var10 = (Registry.lookupField(626885163274229183L).getInt(null)) != 0;
-      var11 = ((new GeneralPath(0)) ? 1 : 0) ? 1 : 0;
-      var12 = (var7) != 0;
+      var10 = Registry.lookupField(626885163274229183L).getInt(null);
+      var11 = new GeneralPath(0);
+      var12 = (var7) ? 1 : 0;
       label64:
       if (var8 != null) {
          if (var7 == 0) {
-            var12 = this.e;
+            var12 = (this.e) ? 1 : 0;
             if (var8 == null) {
                break label64;
             }
@@ -797,7 +798,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
 
    public int K(Kq2 var1) {
       String var2 = com.finalshell.ui.panel.Hd2.X();
-      int var10000 = var1.equals(Kq2.shade);
+      int var10000 = (var1.equals(Kq2.shade)) ? 1 : 0;
       if (var2 != null) {
          if (var10000 != 0) {
             var10000 = this.r;
@@ -808,7 +809,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
             return -var10000;
          }
 
-         var10000 = var1.equals(Kq2.border);
+         var10000 = (var1.equals(Kq2.border)) ? 1 : 0;
       }
 
       if (var2 != null) {
@@ -816,7 +817,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
             return -1;
          }
 
-         var10000 = var1.equals(Kq2.backgroundPainter);
+         var10000 = (var1.equals(Kq2.backgroundPainter)) ? 1 : 0;
       }
 
       if (var2 != null) {
@@ -914,14 +915,14 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
       label116: {
          Rectangle var9 = var3 != -1 ? this.getTabBounds(this.tabPane, var3) : null;
          Shape var10 = this.j(var2, var7, var8, var9);
-         int var15 = this.R.equals(Ij4.standalone);
+         int var15 = (this.R.equals(Ij4.standalone)) ? 1 : 0;
          if (var4 != null) {
             if (var15 != 0) {
                label118: {
                   GeneralPath var11 = new GeneralPath(0);
                   var11.append(new Double(0.0, 0.0, (double)this.tabPane.getWidth(), (double)this.tabPane.getHeight()), false);
                   var11.append(var10, false);
-                  var15 = this.w.containsKey(var3);
+                  var15 = (this.w.containsKey(var3)) ? 1 : 0;
                   if (var4 != null) {
                      if (var15 != 0) {
                         Shape var12 = RV.n(var5, var10);
@@ -952,7 +953,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
                }
             }
 
-            var15 = this.w.containsKey(var3);
+            var15 = (this.w.containsKey(var3)) ? 1 : 0;
          }
 
          label119: {
@@ -1042,8 +1043,10 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
    }
 
    public Shape j(int var1, int var2, Insets var3, Rectangle var4) {
+      int var17;
+      int var18;
       String var5 = com.finalshell.ui.panel.Hd2.X();
-      int var10000 = this.R.equals(Ij4.standalone);
+      int var10000 = (this.R.equals(Ij4.standalone)) ? 1 : 0;
       if (var5 != null) {
          if (var10000 != 0) {
             if (var4 != null) {
@@ -1099,7 +1102,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
                               }
                            }
 
-                           var10000 = this.f;
+                           var10000 = (this.f) ? 1 : 0;
                         }
 
                         if (var10000 != 0) {
@@ -1137,7 +1140,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
                               }
                            }
 
-                           var10000 = this.f;
+                           var10000 = (this.f) ? 1 : 0;
                         }
 
                         if (var10000 != 0) {
@@ -1426,13 +1429,13 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
                var10000 = var1 == 2 ? 1 : 0;
             }
 
-            int var17 = var10000;
+            var17 = var10000;
             var10000 = var1;
             if (var5 != null) {
                var10000 = var1 == 4 ? 1 : 0;
             }
 
-            int var18 = var10000;
+            var18 = var10000;
             return new java.awt.geom.RoundRectangle2D.Double(
                (double)(var3.left + (var17 != 0 ? var2 : 0)),
                (double)(var3.top + (var10 != 0 ? var2 : 0)),
@@ -1691,7 +1694,6 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
       }
    }
 }
-
 
 
 

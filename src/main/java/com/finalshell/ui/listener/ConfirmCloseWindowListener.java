@@ -8,16 +8,17 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class ConfirmCloseWindowListener implements ActionListener {
-   public final com.finalshell.ui.frame.U T;
+   public final com.finalshell.ui.frame.MainFrame T;
    public static String[] a;
    public static String[] b;
 
-   public ConfirmCloseWindowListener(com.finalshell.ui.frame.U var1) {
+   public ConfirmCloseWindowListener(com.finalshell.ui.frame.MainFrame var1) {
       this.T = var1;
    }
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var19;
       String[] var2 = com.finalshell.ui.panel.F8.y();
       if (var2 == null) {
          Registry.emptyArgs();
@@ -27,9 +28,9 @@ public class ConfirmCloseWindowListener implements ActionListener {
          long var7 = 306266403902896148L;
          Object[] var6 = var10002;
          Ref.h(306266403902896148L, var6, var7);
-         Object[] var10003 = Registry.emptyArgs();
+         Object var10003 = Registry.emptyArgs();
          long var9 = 249847093911123285L;
-         Object[] var8 = var10003;
+         Object var8 = var10003;
          var10003 = Ref.h(249847093911123285L, var8, var9);
 
          try {
@@ -40,7 +41,7 @@ public class ConfirmCloseWindowListener implements ActionListener {
 
          if (var19) {
             Object var10 = 256618353589909842L;
-            int var3 = JOptionPane.showConfirmDialog((com.finalshell.ui.frame.U)Ref.g(256618353589909842L, var10), a(6940, -23448), a(6941, 29049), 0);
+            int var3 = JOptionPane.showConfirmDialog((com.finalshell.ui.frame.MainFrame)Ref.g(256618353589909842L, var10), a(6940, -23448), a(6941, 29049), 0);
             if (var3 != 0) {
                return;
             }

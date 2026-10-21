@@ -3,7 +3,7 @@ package com.finalshell.task;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.listener.FJ3;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
@@ -67,7 +67,7 @@ public class Y8 implements Runnable {
          Object var28 = 427341422247993135L;
          Ref.g(427341422247993135L, var28);
          Object var30 = 476201740043670453L;
-         JOptionPane.showMessageDialog(SwingUtilities.getWindowAncestor((Connection4)Ref.g(476201740043670453L, var30)), a);
+         JOptionPane.showMessageDialog(SwingUtilities.getWindowAncestor((ConnectionInfoPanel)Ref.g(476201740043670453L, var30)), a);
       }
    }
 

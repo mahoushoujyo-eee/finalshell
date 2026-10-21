@@ -7,7 +7,7 @@ import com.finalshell.core.Dx4_2;
 import com.finalshell.core.KV;
 import com.finalshell.core.L1;
 import com.finalshell.core.Tq4;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.core.Y12_2;
 import com.finalshell.core.ZX_2;
 import com.finalshell.reflect.Ref;
@@ -72,6 +72,8 @@ public class Backspace extends ClearListDialog {
 
    public Backspace(SetBackgroundImagePanel var1, Ff2 var2, Dv2 var3) {
       super(var3, true, true, false, false, true, false);
+      Object[] var10004;
+      Object[] var15;
       Registry.lookupField(255113142618897746L).setBoolean(this, false);
       long var8 = 449876613200166173L;
       String var7 = "";
@@ -104,7 +106,7 @@ public class Backspace extends ClearListDialog {
          throw var72.getTargetException();
       }
 
-      Object[] var10004 = Registry.packArgs(b(13222, 6051884349919138237L), b(26895, 6542378377919449875L));
+      var10004 = Registry.packArgs(b(13222, 6051884349919138237L), b(26895, 6542378377919449875L));
       long var14 = 620992058944098515L;
       Object[] var13 = var10004;
       Ref.h(620992058944098515L, var13, var14);
@@ -117,7 +119,7 @@ public class Backspace extends ClearListDialog {
 
       Object[] var10005 = Registry.packArgs(true);
       long var16 = 135780246329389131L;
-      Object[] var15 = var10005;
+      var15 = var10005;
       Ref.h(135780246329389131L, var15, var16);
 
       try {
@@ -150,7 +152,7 @@ public class Backspace extends ClearListDialog {
       F();
       Y12_2 var10011;
       Object var25 = 316737507384357237L;
-      super((JButton)Ref.g(316737507384357237L, var25), var5);
+      // [VF-super] super((JButton)Ref.g(316737507384357237L, var25), var5);
       Y12_2 var6 = var10011;
       Object var27 = 316737507384357237L;
       ((JButton)Ref.g(316737507384357237L, var27)).addMouseListener(new G(this, var6, var5));
@@ -277,7 +279,7 @@ public class Backspace extends ClearListDialog {
          ((SetBackgroundImagePanel)Ref.g(529421273455029847L, var8)).X$_y_2();
       }
 
-      Ty2 var2 = ((ConnectionProperty)var10001).M$Ty_2();
+      RemoteProcessManager var2 = ((ConnectionProperty)var10001).M$Ty_2();
       Object[] var17 = Registry.emptyArgs();
       long var11 = 121632250293569146L;
       Object[] var10 = var17;
@@ -303,6 +305,15 @@ public class Backspace extends ClearListDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void R() {
+      String var15;
+      long var173;
+      ZX_2 var177;
+      Backspace var178;
+      boolean var180;
+      boolean var200;
+      String var210;
+      boolean var211;
+      long var34;
       Registry.lookupField(532893860934733004L).setBoolean(this, false);
       Object var19 = 334241381080505095L;
       String var2 = ((Dv2)Ref.g(334241381080505095L, var19)).getText();
@@ -341,8 +352,6 @@ public class Backspace extends ClearListDialog {
                                  }
 
                                  if (var6 != b(27338, 2857848636304214231L)) {
-      CompleteFullPathPanel var177;
-      CompleteFullPathPanel var177;
                                     break label695;
                                  }
                               }
@@ -464,7 +473,7 @@ public class Backspace extends ClearListDialog {
                               String var167 = var189;
                               Ref.s(629060125004828245L, var167, var168);
                               if (var1 == null) {
-                                 long var173 = 449876613200166173L;
+                                 var173 = 449876613200166173L;
                                  String var171 = "";
                                  Ref.s(449876613200166173L, var171, var173);
                                  if (var1 != null) {
@@ -481,6 +490,7 @@ public class Backspace extends ClearListDialog {
                            Object var149 = var2.charAt((int)var4);
                            var180 = (Backspace)var149;
                            if (var1 == null) {
+      Object[] var10004;
                               break label700;
                            }
 
@@ -566,7 +576,7 @@ public class Backspace extends ClearListDialog {
                         String var25 = var185;
                         Ref.s(629060125004828245L, var25, var26);
                         if (var1 == null) {
-                           long var34 = 449876613200166173L;
+                           var34 = 449876613200166173L;
                            String var33 = "";
                            Ref.s(449876613200166173L, var33, var34);
                            if (var1 != null) {
@@ -735,7 +745,7 @@ public class Backspace extends ClearListDialog {
                   while (var154 < var2.length()) {
                      Object var156 = var2.charAt((int)var154);
                      if (var1 != null) {
-                        var193 = (Backspace)var156;
+                        var193 = ((Backspace)var156) != 0;
                         var200 = b(29829, 1906305513456424599L);
                         if (var1 == null) {
                            break label710;
@@ -1036,7 +1046,7 @@ public class Backspace extends ClearListDialog {
          label724: {
             if (var13 != null) {
                String var14 = "";
-               String var15 = "";
+               var15 = "";
                if (var1 == null) {
                   break label724;
                }
@@ -1050,7 +1060,7 @@ public class Backspace extends ClearListDialog {
                   Object var69 = 529421273455029847L;
                   if (((SetBackgroundImagePanel)Ref.g(529421273455029847L, var69)).X$_y_2() != null) {
                      Object var71 = 529421273455029847L;
-                     Ty2 var16 = ((SetBackgroundImagePanel)Ref.g(529421273455029847L, var71)).X$_y_2().M$Ty_2();
+                     RemoteProcessManager var16 = ((SetBackgroundImagePanel)Ref.g(529421273455029847L, var71)).X$_y_2().M$Ty_2();
                      Object[] var10012 = Registry.emptyArgs();
                      long var74 = 121632250293569146L;
                      Object[] var73 = var10012;
@@ -1227,9 +1237,9 @@ public class Backspace extends ClearListDialog {
                            throw var129.getTargetException();
                         }
 
-                        Object[] var222 = Registry.emptyArgs();
+                        Object var222 = Registry.emptyArgs();
                         long var114 = 162215999904233420L;
-                        Object[] var113 = var222;
+                        Object var113 = var222;
                         var222 = Ref.h(162215999904233420L, var113, var114);
 
                         try {
@@ -1378,6 +1388,7 @@ public class Backspace extends ClearListDialog {
 
    @Override
    public void u$void() {
+      long var15;
       F();
       Object var3 = 633015754028760179L;
       Object[] var10002 = Registry.packArgs(Ref.g(633015754028760179L, var3));
@@ -1445,7 +1456,7 @@ public class Backspace extends ClearListDialog {
             }
 
             Registry.packArgs(var2);
-            long var15 = 405430188584561323L;
+            var15 = 405430188584561323L;
             Object var10005 = Ref.h2(405430188584561323L, var15);
 
             try {
@@ -1536,6 +1547,7 @@ public class Backspace extends ClearListDialog {
 
    @Override
    public void i(L1 var1, int var2) {
+      Object[] var10004;
       Object[] var10001 = Registry.emptyArgs();
       long var4 = 424004678767184744L;
       Object[] var3 = var10001;
@@ -1554,7 +1566,7 @@ public class Backspace extends ClearListDialog {
       Registry.emptyArgs();
       long var7 = 270389152141252877L;
       Ref.h2(270389152141252877L, var7);
-      Object[] var10004 = Registry.emptyArgs();
+      var10004 = Registry.emptyArgs();
       long var10 = 578864097947885485L;
       Object[] var9 = var10004;
       Ref.h(578864097947885485L, var9, var10);
@@ -1568,6 +1580,8 @@ public class Backspace extends ClearListDialog {
 
    @Override
    public void L(String var1) {
+      Object var10004;
+      boolean var15;
       String[] var2 = F();
       if (var2 != null) {
          Object var3 = 529421273455029847L;
@@ -1579,9 +1593,9 @@ public class Backspace extends ClearListDialog {
          long var8 = 306266403902896148L;
          Object[] var7 = var10003;
          Ref.h(306266403902896148L, var7, var8);
-         Object[] var10004 = Registry.emptyArgs();
+         var10004 = Registry.emptyArgs();
          long var10 = 629517738120639335L;
-         Object[] var9 = var10004;
+         Object var9 = var10004;
          var10004 = Ref.h(629517738120639335L, var9, var10);
 
          try {
@@ -1601,9 +1615,13 @@ public class Backspace extends ClearListDialog {
 
    @Override
    public void k(L1 var1) {
-      Object[] var10001 = Registry.emptyArgs();
+      Object[] var10004;
+      boolean var201;
+      Object[] var204;
+      Object[] var211;
+      Object var10001 = Registry.emptyArgs();
       long var23 = 542058094445767607L;
-      Object[] var22 = var10001;
+      Object var22 = var10001;
       var10001 = Ref.h(542058094445767607L, var22, var23);
 
       try {
@@ -1618,9 +1636,9 @@ public class Backspace extends ClearListDialog {
       String[] var167 = F();
       L1 var6 = var1;
       String[] var2 = var167;
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var25 = 499802980066530981L;
-      Object[] var24 = var10002;
+      Object var24 = var10002;
       var10002 = Ref.h(499802980066530981L, var24, var25);
 
       try {
@@ -1670,7 +1688,7 @@ public class Backspace extends ClearListDialog {
             var10002 = this;
             Object var36 = 627738372728753803L;
             Ref.g(627738372728753803L, var36);
-            Object[] var10004 = Registry.emptyArgs();
+            var10004 = Registry.emptyArgs();
             long var39 = 253718301466496149L;
             Object[] var38 = var10004;
             var10004 = Ref.h(253718301466496149L, var38, var39);
@@ -1694,9 +1712,9 @@ public class Backspace extends ClearListDialog {
          Backspace var156 = var10002;
          Object var42 = 627738372728753803L;
          Ref.g(627738372728753803L, var42);
-         Object[] var171 = Registry.packArgs((int)var156);
+         Object var171 = Registry.packArgs((int)var156);
          long var45 = 430610060651646114L;
-         Object[] var44 = var171;
+         Object var44 = var171;
          var171 = Ref.h(430610060651646114L, var44, var45);
 
          try {
@@ -1738,9 +1756,9 @@ public class Backspace extends ClearListDialog {
                   long var51 = 306266403902896148L;
                   Object[] var50 = var10007;
                   Ref.h(306266403902896148L, var50, var51);
-                  Object[] var10008 = Registry.emptyArgs();
+                  Object var10008 = Registry.emptyArgs();
                   long var53 = 169497746995301372L;
-                  Object[] var52 = var10008;
+                  Object var52 = var10008;
                   var10008 = Ref.h(169497746995301372L, var52, var53);
 
                   try {
@@ -1764,9 +1782,9 @@ public class Backspace extends ClearListDialog {
                      throw var150.getTargetException();
                   }
 
-                  Object[] var10010 = Registry.emptyArgs();
+                  Object var10010 = Registry.emptyArgs();
                   long var57 = 542058094445767607L;
-                  Object[] var56 = var10010;
+                  Object var56 = var10010;
                   var10010 = Ref.h(542058094445767607L, var56, var57);
 
                   try {
@@ -1776,9 +1794,9 @@ public class Backspace extends ClearListDialog {
                   }
 
                   String var16 = var10010;
-                  Object[] var10011 = Registry.emptyArgs();
+                  Object var10011 = Registry.emptyArgs();
                   long var59 = 443113534220408058L;
-                  Object[] var58 = var10011;
+                  Object var58 = var10011;
                   var10011 = Ref.h(443113534220408058L, var58, var59);
 
                   try {
@@ -1790,9 +1808,9 @@ public class Backspace extends ClearListDialog {
                   label389: {
                      String var17 = var10011;
                      if (var11) {
-                        Object[] var10012 = Registry.emptyArgs();
+                        Object var10012 = Registry.emptyArgs();
                         long var61 = 443113534220408058L;
-                        Object[] var60 = var10012;
+                        Object var60 = var10012;
                         var10012 = Ref.h(443113534220408058L, var60, var61);
 
                         try {
@@ -1919,9 +1937,9 @@ public class Backspace extends ClearListDialog {
 
                   var14 = var12 + var13;
                   String var163 = var8.toString();
-                  Object[] var197 = Registry.emptyArgs();
+                  Object var197 = Registry.emptyArgs();
                   long var77 = 613149096811612676L;
-                  Object[] var76 = var197;
+                  Object var76 = var197;
                   var197 = Ref.h(613149096811612676L, var76, var77);
 
                   try {
@@ -1936,9 +1954,9 @@ public class Backspace extends ClearListDialog {
                         label396: {
                            if (var2 != null) {
                               if (var197 == null) {
-                                 Object[] var10017 = Registry.emptyArgs();
+                                 Object var10017 = Registry.emptyArgs();
                                  Object var79 = 463286156757271879L;
-                                 Object[] var78 = var10017;
+                                 Object var78 = var10017;
                                  var10019 = (Backspace)var79;
                                  var10017 = Ref.h(463286156757271879L, var78, (long)var79);
 
@@ -1996,7 +2014,7 @@ public class Backspace extends ClearListDialog {
                               var197 = Registry.emptyArgs();
                               long var94 = 270389152141252877L;
                               Ref.h2(270389152141252877L, var94);
-                              Object[] var204 = Registry.emptyArgs();
+                              var204 = Registry.emptyArgs();
                               long var97 = 163462326892114024L;
                               Object[] var96 = var204;
                               Ref.h(163462326892114024L, var96, var97);
@@ -2070,7 +2088,7 @@ public class Backspace extends ClearListDialog {
 
                      if (var2 != null) {
                         if (var10019 == null) {
-                           Object[] var211 = Registry.emptyArgs();
+                           var211 = Registry.emptyArgs();
                            long var115 = 496821856781947383L;
                            Object[] var114 = var211;
                            Ref.h(496821856781947383L, var114, var115);
@@ -2128,9 +2146,9 @@ public class Backspace extends ClearListDialog {
             }
 
             if (var175 == var10006) {
-               Object[] var176 = Registry.emptyArgs();
+               Object var176 = Registry.emptyArgs();
                long var123 = 542058094445767607L;
-               Object[] var122 = var176;
+               Object var122 = var176;
                var176 = Ref.h(542058094445767607L, var122, var123);
 
                try {
@@ -2149,9 +2167,9 @@ public class Backspace extends ClearListDialog {
                Object var128 = 334241381080505095L;
                Dv2 var181 = (Dv2)Ref.g(334241381080505095L, var128);
                int var184 = var9.length();
-               Object[] var190 = Registry.emptyArgs();
+               Object var190 = Registry.emptyArgs();
                long var131 = 542058094445767607L;
-               Object[] var130 = var190;
+               Object var130 = var190;
                var190 = Ref.h(542058094445767607L, var130, var131);
 
                try {
@@ -2179,6 +2197,7 @@ public class Backspace extends ClearListDialog {
 
    @Override
    public void M() {
+      Object[] var10004;
       Object var7 = 334241381080505095L;
       String var2 = ((Dv2)Ref.g(334241381080505095L, var7)).getText().trim();
       F();
@@ -2187,14 +2206,14 @@ public class Backspace extends ClearListDialog {
       L1 var4 = new L1();
       File var10003;
       Object var11 = 633015754028760179L;
-      super((String)Ref.g(633015754028760179L, var11));
+      // [VF-super] super((String)Ref.g(633015754028760179L, var11));
       String var5 = var10003.getName();
       if (this != null) {
          if (var5.equals("")) {
             var5 = "/";
          }
 
-         Object[] var10004 = Registry.packArgs(var5);
+         var10004 = Registry.packArgs(var5);
          long var14 = 210061141210088637L;
          Object[] var13 = var10004;
          Ref.h(210061141210088637L, var13, var14);
@@ -2208,7 +2227,7 @@ public class Backspace extends ClearListDialog {
 
       Bo4 var29;
       Object var15 = 633015754028760179L;
-      super((String)Ref.g(633015754028760179L, var15), "", "", "");
+      // [VF-super] super((String)Ref.g(633015754028760179L, var15), "", "", "");
       Bo4 var6 = var29;
       Object[] var10005 = Registry.packArgs(true);
       long var18 = 630093295799717061L;
@@ -2250,6 +2269,14 @@ public class Backspace extends ClearListDialog {
 
    @Override
    public Dx4_2 k$dx_4() {
+      int var10004;
+      Object[] var177;
+      boolean var201;
+      boolean var210;
+      Integer var222;
+      Integer var227;
+      boolean var232;
+      long var34;
       String[] var10000 = F();
       Dx4_2 var2 = new Dx4_2();
       String[] var1 = var10000;
@@ -2277,10 +2304,10 @@ public class Backspace extends ClearListDialog {
          ((SetBackgroundImagePanel)Ref.g(529421273455029847L, var23)).X$_y_2();
       }
 
-      Ty2 var4 = ((ConnectionProperty)var10001).M$Ty_2();
-      Object[] var167 = Registry.emptyArgs();
+      RemoteProcessManager var4 = ((ConnectionProperty)var10001).M$Ty_2();
+      Object var167 = Registry.emptyArgs();
       long var26 = 121632250293569146L;
-      Object[] var25 = var167;
+      Object var25 = var167;
       var167 = Ref.h(121632250293569146L, var25, var26);
 
       try {
@@ -2294,15 +2321,15 @@ public class Backspace extends ClearListDialog {
       Connect_2 var6 = (Connect_2)((SetBackgroundImagePanel)Ref.g(529421273455029847L, var27)).X$_y_2().O$QT();
       Object var29 = 629060125004828245L;
       var3 = (String)Ref.g(629060125004828245L, var29);
-      int var10004 = Registry.lookupField(274525916063193125L).getInt(this);
-      Object[] var10005 = Registry.lookupField(523789155715726667L).getInt(null);
+      var10004 = Registry.lookupField(274525916063193125L).getInt(this);
+      Object var10005 = Registry.lookupField(523789155715726667L).getInt(null);
       if (var1 != null) {
          if (var10004 == var10005) {
             Registry.emptyArgs();
             long var31 = 270389152141252877L;
             Ref.h2(270389152141252877L, var31);
             Object[] var10006 = Registry.emptyArgs();
-            long var34 = 306266403902896148L;
+            var34 = 306266403902896148L;
             Object[] var33 = var10006;
             Ref.h(306266403902896148L, var33, var34);
             Object[] var10007 = Registry.emptyArgs();
@@ -2329,9 +2356,9 @@ public class Backspace extends ClearListDialog {
             }
 
             HashSet var9 = new HashSet();
-            Object[] var10009 = Registry.emptyArgs();
+            Object var10009 = Registry.emptyArgs();
             long var40 = 596400151700218172L;
-            Object[] var39 = var10009;
+            Object var39 = var10009;
             var10009 = Ref.h(596400151700218172L, var39, var40);
 
             try {
@@ -2343,7 +2370,7 @@ public class Backspace extends ClearListDialog {
             for (L1 var11 : var10009) {
                String var10010 = Registry.emptyArgs();
                long var42 = 542058094445767607L;
-               Object[] var41 = var10010;
+               Object var41 = var10010;
                var10010 = Ref.h(542058094445767607L, var41, var42);
 
                try {
@@ -2401,9 +2428,9 @@ public class Backspace extends ClearListDialog {
       if (var1 == null) {
          int var7 = var10004 * var10005;
          Object var51 = 633015754028760179L;
-         Object[] var170 = Registry.packArgs(Ref.g(633015754028760179L, var51));
+         Object var170 = Registry.packArgs(Ref.g(633015754028760179L, var51));
          long var54 = 350092885739477578L;
-         Object[] var53 = var170;
+         Object var53 = var170;
          var170 = Ref.h(350092885739477578L, var53, var54);
 
          try {
@@ -2432,7 +2459,7 @@ public class Backspace extends ClearListDialog {
 
          if (var173 != 0) {
             Object var55 = 633015754028760179L;
-            Object[] var177 = Registry.packArgs(Ref.g(633015754028760179L, var55));
+            var177 = Registry.packArgs(Ref.g(633015754028760179L, var55));
             long var58 = 626289249627883158L;
             Object[] var57 = var177;
             Ref.h(626289249627883158L, var57, var58);
@@ -2445,9 +2472,9 @@ public class Backspace extends ClearListDialog {
          }
 
          Object var59 = 633015754028760179L;
-         Object[] var178 = Registry.packArgs(Ref.g(633015754028760179L, var59));
+         Object var178 = Registry.packArgs(Ref.g(633015754028760179L, var59));
          long var62 = 138598731550299272L;
-         Object[] var61 = var178;
+         Object var61 = var178;
          var178 = Ref.h(138598731550299272L, var61, var62);
 
          try {
@@ -2477,9 +2504,9 @@ public class Backspace extends ClearListDialog {
                   }
 
                   Object var67 = 633015754028760179L;
-                  Object[] var10012 = Registry.packArgs(Ref.g(633015754028760179L, var67));
+                  Object var10012 = Registry.packArgs(Ref.g(633015754028760179L, var67));
                   long var70 = 138598731550299272L;
-                  Object[] var69 = var10012;
+                  Object var69 = var10012;
                   var10012 = Ref.h(138598731550299272L, var69, var70);
 
                   try {
@@ -2496,9 +2523,9 @@ public class Backspace extends ClearListDialog {
                         if (var157.hasNext()) {
                            L1 var160 = (L1)var157.next();
                            var10012 = var160;
-                           Object[] var10013 = Registry.emptyArgs();
+                           Object var10013 = Registry.emptyArgs();
                            long var72 = 601832064246010504L;
-                           Object[] var71 = var10013;
+                           Object var71 = var10013;
                            var10013 = Ref.h(601832064246010504L, var71, var72);
 
                            try {
@@ -2508,9 +2535,9 @@ public class Backspace extends ClearListDialog {
                            }
 
                            Bo4 var15 = var10013;
-                           Object[] var10014 = Registry.emptyArgs();
+                           Object var10014 = Registry.emptyArgs();
                            long var74 = 501218482801209672L;
-                           Object[] var73 = var10014;
+                           Object var73 = var10014;
                            var10014 = Ref.h(501218482801209672L, var73, var74);
 
                            try {
@@ -2524,9 +2551,9 @@ public class Backspace extends ClearListDialog {
                            }
 
                            if (var1 != null && var222 == Registry.lookupField(542137494819116319L).getInt(null)) {
-                              Object[] var10016 = Registry.emptyArgs();
+                              Object var10016 = Registry.emptyArgs();
                               long var76 = 443113534220408058L;
-                              Object[] var75 = var10016;
+                              Object var75 = var10016;
                               var10016 = Ref.h(443113534220408058L, var75, var76);
 
                               try {
@@ -2536,9 +2563,9 @@ public class Backspace extends ClearListDialog {
                               }
 
                               var15.add(var10016);
-                              Object[] var10017 = Registry.emptyArgs();
+                              Object var10017 = Registry.emptyArgs();
                               long var78 = 496289037481593401L;
-                              Object[] var77 = var10017;
+                              Object var77 = var10017;
                               var10017 = Ref.h(496289037481593401L, var77, var78);
 
                               try {
@@ -2581,9 +2608,9 @@ public class Backspace extends ClearListDialog {
                   }
 
                   for (L1 var161 : var10012) {
-                     Object[] var214 = Registry.emptyArgs();
+                     Object var214 = Registry.emptyArgs();
                      long var82 = 601832064246010504L;
-                     Object[] var81 = var214;
+                     Object var81 = var214;
                      var214 = Ref.h(601832064246010504L, var81, var82);
 
                      try {
@@ -2609,9 +2636,9 @@ public class Backspace extends ClearListDialog {
                      }
 
                      if (var1 != null) {
-                        Object[] var10015 = Registry.emptyArgs();
+                        Object var10015 = Registry.emptyArgs();
                         long var86 = 501218482801209672L;
-                        Object[] var85 = var10015;
+                        Object var85 = var10015;
                         var10015 = Ref.h(501218482801209672L, var85, var86);
 
                         try {
@@ -2621,9 +2648,9 @@ public class Backspace extends ClearListDialog {
                         }
 
                         if (var227 == Registry.lookupField(542137494819116319L).getInt(null)) {
-                           Object[] var230 = Registry.emptyArgs();
+                           Object var230 = Registry.emptyArgs();
                            long var88 = 463286156757271879L;
-                           Object[] var87 = var230;
+                           Object var87 = var230;
                            var230 = Ref.h(463286156757271879L, var87, var88);
 
                            try {
@@ -2634,9 +2661,9 @@ public class Backspace extends ClearListDialog {
 
                            if (var232) {
                               new StringBuilder();
-                              Object[] var10019 = Registry.emptyArgs();
+                              Object var10019 = Registry.emptyArgs();
                               long var90 = 542058094445767607L;
-                              Object[] var89 = var10019;
+                              Object var89 = var10019;
                               var10019 = Ref.h(542058094445767607L, var89, var90);
 
                               try {
@@ -2692,9 +2719,9 @@ public class Backspace extends ClearListDialog {
 
                var178 = var5;
                Object var99 = 633015754028760179L;
-               Object[] var191 = Registry.packArgs(Ref.g(633015754028760179L, var99));
+               Object var191 = Registry.packArgs(Ref.g(633015754028760179L, var99));
                long var102 = 138598731550299272L;
-               Object[] var101 = var191;
+               Object var101 = var191;
                var191 = Ref.h(138598731550299272L, var101, var102);
 
                try {
@@ -2713,9 +2740,9 @@ public class Backspace extends ClearListDialog {
 
          label412: {
             for (L1 var164 : var154) {
-               Object[] var184 = Registry.emptyArgs();
+               Object var184 = Registry.emptyArgs();
                long var104 = 601832064246010504L;
-               Object[] var103 = var184;
+               Object var103 = var184;
                var184 = Ref.h(601832064246010504L, var103, var104);
 
                try {
@@ -2725,9 +2752,9 @@ public class Backspace extends ClearListDialog {
                }
 
                Bo4 var165 = var184;
-               Object[] var194 = Registry.emptyArgs();
+               Object var194 = Registry.emptyArgs();
                long var106 = 223441152106059427L;
-               Object[] var105 = var194;
+               Object var105 = var194;
                var194 = Ref.h(223441152106059427L, var105, var106);
 
                try {
@@ -2760,9 +2787,9 @@ public class Backspace extends ClearListDialog {
                         long var110 = 306266403902896148L;
                         Object[] var109 = var207;
                         Ref.h(306266403902896148L, var109, var110);
-                        Object[] var217 = Registry.emptyArgs();
+                        Object var217 = Registry.emptyArgs();
                         long var112 = 406341430347663460L;
-                        Object[] var111 = var217;
+                        Object var111 = var217;
                         var217 = Ref.h(406341430347663460L, var111, var112);
 
                         try {
@@ -2802,9 +2829,9 @@ public class Backspace extends ClearListDialog {
                if (var1 != null) {
                   if (var194 == null) {
                      var194 = var165;
-                     Object[] var199 = Registry.emptyArgs();
+                     Object var199 = Registry.emptyArgs();
                      long var114 = 613149096811612676L;
-                     Object[] var113 = var199;
+                     Object var113 = var199;
                      var199 = Ref.h(613149096811612676L, var113, var114);
 
                      try {
@@ -2818,9 +2845,9 @@ public class Backspace extends ClearListDialog {
                      }
 
                      if (!var201) {
-                        Object[] var208 = Registry.emptyArgs();
+                        Object var208 = Registry.emptyArgs();
                         long var116 = 463286156757271879L;
-                        Object[] var115 = var208;
+                        Object var115 = var208;
                         var208 = Ref.h(463286156757271879L, var115, var116);
 
                         try {
@@ -3812,6 +3839,8 @@ public class Backspace extends ClearListDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var10004;
+      char[] var34;
       String[] var13 = new String[9];
       String[] var10000 = new String[3];
       int var11 = 0;
@@ -3830,7 +3859,7 @@ public class Backspace extends ClearListDialog {
          while (true) {
             label65: {
                char[] var40 = var10001.toCharArray();
-               int var10004 = var40.length;
+               var10004 = var40.length;
                int var14 = 0;
                byte var43 = var18;
                var34 = var40;
@@ -3995,7 +4024,6 @@ public class Backspace extends ClearListDialog {
       }
    }
 }
-
 
 
 

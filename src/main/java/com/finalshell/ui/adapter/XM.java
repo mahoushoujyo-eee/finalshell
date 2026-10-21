@@ -47,7 +47,7 @@ public class XM extends DefaultTableCellRenderer {
             ZG_2 var12 = (ZG_2)var2;
             KeyStroke var10001 = (KeyStroke)(Registry.emptyArgs());
             long var17 = 546345160214988812L;
-            Object[] var16 = var10001;
+            Object var16 = var10001;
             var10001 = Ref.h(546345160214988812L, var16, var17);
 
             try {
@@ -74,7 +74,7 @@ public class XM extends DefaultTableCellRenderer {
                   if (var11 == 0) {
                      String var10003 = (String)(Registry.emptyArgs());
                      long var21 = 540131728661869699L;
-                     Object[] var20 = var10003;
+                     Object var20 = var10003;
                      var10003 = Ref.h(540131728661869699L, var20, var21);
 
                      try {

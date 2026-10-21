@@ -414,7 +414,7 @@ public class L2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static void B(XA var0) {
-      Ky4[] var10000 = XA.P();
+      Ky4 var10000 = XA.P();
       Object var2 = V;
       synchronized (V){} // $VF: monitorenter 
       Ky4[] var1 = var10000;

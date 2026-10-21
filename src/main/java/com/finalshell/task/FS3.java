@@ -2,7 +2,7 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.panel.F8;
 import java.lang.reflect.InvocationTargetException;
 
@@ -25,7 +25,7 @@ public class FS3 implements Runnable {
       Ref.h(306266403902896148L, var4, var5);
       Boolean var10003 = (Boolean)(Registry.emptyArgs());
       long var7 = 577875833820570498L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       var10003 = Ref.h(577875833820570498L, var6, var7);
 
       try {
@@ -44,7 +44,7 @@ public class FS3 implements Runnable {
             Object var8 = 516278995074848564L;
             Ref.g(516278995074848564L, var8);
             Object var10 = 389567756310007794L;
-            U var10005 = (U)Ref.g(389567756310007794L, var10);
+            MainFrame var10005 = (MainFrame)Ref.g(389567756310007794L, var10);
             if (var1 != null) {
                break label47;
             }
@@ -59,7 +59,7 @@ public class FS3 implements Runnable {
          Object var12 = 516278995074848564L;
          Ref.g(516278995074848564L, var12);
          Object var14 = 389567756310007794L;
-         U var22 = (U)Ref.g(389567756310007794L, var14);
+         MainFrame var22 = (MainFrame)Ref.g(389567756310007794L, var14);
       }
 
       Object[] var10006 = Registry.emptyArgs();

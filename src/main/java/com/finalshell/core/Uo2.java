@@ -40,11 +40,12 @@ public class Uo2 extends JTable {
    }
 
    public void a(com.finalshell.ui.model.Gk2 var1) {
+      boolean var18;
       long var8 = 485553230015249294L;
       Ref.s(485553230015249294L, var1, var8);
       int var10001 = (k()) ? 1 : 0;
       super.setModel(var1);
-      boolean var2 = (((((boolean)var10001) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10001) != 0;
       TableColumnModel var3 = this.getColumnModel();
       this.setPreferredScrollableViewportSize(new Dimension(a(25595, 7063817420701316977L), a(9419, 229963766743134278L)));
       label56:
@@ -115,7 +116,7 @@ public class Uo2 extends JTable {
 
          TableRowSorter var10003 = (TableRowSorter)(Registry.emptyArgs());
          long var10 = 405121016473488372L;
-         Object[] var9 = var10003;
+         Object var9 = var10003;
          var10003 = Ref.h(405121016473488372L, var9, var10);
 
          try {
@@ -146,6 +147,7 @@ public class Uo2 extends JTable {
    }
 
    public TableRowSorter f() {
+      Integer var14;
       boolean var10000 = i();
       com.finalshell.ui.model.Gk2 var2 = (com.finalshell.ui.model.Gk2)this.getModel();
       boolean var1 = var10000;
@@ -153,9 +155,9 @@ public class Uo2 extends JTable {
       int var4 = 0;
 
       do {
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var8 = 518333674101172738L;
-         Object[] var7 = var10002;
+         Object var7 = var10002;
          var10002 = Ref.h(518333674101172738L, var7, var8);
 
          try {
@@ -170,7 +172,7 @@ public class Uo2 extends JTable {
 
          var10002 = Registry.packArgs(var4);
          long var10 = 612946935588895964L;
-         Object[] var9 = var10002;
+         Object var9 = var10002;
          var10002 = Ref.h(612946935588895964L, var9, var10);
 
          try {

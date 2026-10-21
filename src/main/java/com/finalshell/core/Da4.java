@@ -66,7 +66,7 @@ public class Da4 {
       Da4 var10001 = new Da4();
       JScrollPane var10002 = (JScrollPane)(Registry.emptyArgs());
       long var3 = 437711895013604562L;
-      Object[] var2 = var10002;
+      Object var2 = var10002;
       var10002 = Ref.h(437711895013604562L, var2, var3);
 
       try {

@@ -1,23 +1,23 @@
 package com.finalshell.task;
 
-import com.finalshell.connection.Connection12;
-import com.finalshell.core.File8;
+import com.finalshell.connection.FileTransferConnection;
+import com.finalshell.core.FileDropTransferHandler;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class UU3 implements Runnable {
-   public final Connection12 l;
+   public final FileTransferConnection l;
    public final Ck4 i;
    public final Tf4 m;
    public final String Y;
-   public final Connection4 B;
-   public final File8 n;
+   public final ConnectionInfoPanel B;
+   public final FileDropTransferHandler n;
 
-   public UU3(File8 var1, Connection12 var2, Ck4 var3, Tf4 var4, String var5, Connection4 var6) {
+   public UU3(FileDropTransferHandler var1, FileTransferConnection var2, Ck4 var3, Tf4 var4, String var5, ConnectionInfoPanel var6) {
       this.n = var1;
       this.l = var2;
       this.i = var3;
@@ -42,7 +42,7 @@ public class UU3 implements Runnable {
          Object var10007 = Ref.g(156041858654433892L, var8);
          String var10008 = (String)(Registry.emptyArgs());
          long var11 = 498856411508641826L;
-         Object[] var10 = var10008;
+         Object var10 = var10008;
          var10008 = Ref.h(498856411508641826L, var10, var11);
 
          try {
@@ -58,7 +58,7 @@ public class UU3 implements Runnable {
          Object var10010 = Ref.g(245403701154742402L, var14);
          String var10011 = (String)(Registry.emptyArgs());
          long var17 = 396085629172753019L;
-         Object[] var16 = var10011;
+         Object var16 = var10011;
          var10011 = Ref.h(396085629172753019L, var16, var17);
 
          try {

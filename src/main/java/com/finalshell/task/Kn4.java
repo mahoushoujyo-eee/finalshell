@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.core.Jk2;
+import com.finalshell.core.ProxyMessage;
 import com.finalshell.core.TR;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -26,7 +26,7 @@ public class Kn4 implements Runnable {
    }
 
    public final void Q(boolean var1) {
-      String[] var2 = Jk2.Y();
+      String[] var2 = ProxyMessage.Y();
       if (var1) {
          Thread var3 = new Thread(this);
          var3.start();
@@ -42,7 +42,7 @@ public class Kn4 implements Runnable {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
    public void run() {
-      String[] var1 = Jk2.Y();
+      String[] var1 = ProxyMessage.Y();
 
       try {
          String var10000;

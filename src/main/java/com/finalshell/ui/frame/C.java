@@ -397,7 +397,7 @@ public class C extends JFrame implements Pj2, Au2, CX3_2, Eh2, W_3 {
       return SN.A(this);
    }
 
-   public C U() {
+   public C MainFrame() {
       return (C)SN.v(this);
    }
 
@@ -445,7 +445,7 @@ public class C extends JFrame implements Pj2, Au2, CX3_2, Eh2, W_3 {
    }
 
    @Override
-   public Window U(int var1) {
+   public Window MainFrame(int var1) {
       return this.Y(var1);
    }
 

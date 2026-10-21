@@ -5,7 +5,7 @@ import java.util.Locale;
 import org.jetbrains.annotations.NotNull;
 
 public final class GS {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -884,6 +884,7 @@ public final class GS {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[11];
       int var3 = 0;
       String var2 = "®\u008dì\u0003§\u0084Þ\u0003\u008di¿\u0005ÏÃ\u0089¢¬\u0005Pp\u001fz²\u0007)®7ãæÛi\u0004yt<ä\u0007\u0087ö\u009d»õ\u0081Ò\u0003Û\u0018f";
@@ -899,7 +900,6 @@ public final class GS {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

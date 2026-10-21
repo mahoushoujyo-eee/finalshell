@@ -19,6 +19,7 @@ public class Ur2 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      Integer var43;
       Object var7 = 140021443025792352L;
       Ref.g(140021443025792352L, var7);
       Object var9 = 342129762932297171L;
@@ -52,7 +53,7 @@ public class Ur2 implements ActionListener {
       Ref.g(435109479173232140L, var25);
       ArrayList var10011 = Registry.emptyArgs();
       long var28 = 245965692335108743L;
-      Object[] var27 = var10011;
+      Object var27 = var10011;
       var10011 = Ref.h(245965692335108743L, var27, var28);
 
       try {
@@ -73,9 +74,9 @@ public class Ur2 implements ActionListener {
          throw var37.getTargetException();
       }
 
-      Object[] var10014 = Registry.emptyArgs();
+      Object var10014 = Registry.emptyArgs();
       long var32 = 340521912883652737L;
-      Object[] var31 = var10014;
+      Object var31 = var10014;
       var10014 = Ref.h(340521912883652737L, var31, var32);
 
       try {
@@ -86,7 +87,7 @@ public class Ur2 implements ActionListener {
 
       var10014 = Registry.packArgs(var43);
       long var34 = 196856092777064026L;
-      Object[] var33 = var10014;
+      Object var33 = var10014;
       Ref.h(196856092777064026L, var33, var34);
 
       try {

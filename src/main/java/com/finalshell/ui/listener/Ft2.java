@@ -32,6 +32,7 @@ public class Ft2 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var36;
       AppendCarriageReturnCRPanel.Y();
       Object var4 = 346664127253186856L;
       String var3 = ((JTextField)Ref.g(346664127253186856L, var4)).getText().trim();

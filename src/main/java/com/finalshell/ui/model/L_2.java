@@ -11,6 +11,7 @@ public class L_2 implements Comparator {
 
    @Override
    public int compare(@C_9 Object var1, @C_9 Object var2) {
+      Object var4;
       String var3 = O2_6.f();
       int var10000 = (d) ? 1 : 0;
       if (var3 != null) {

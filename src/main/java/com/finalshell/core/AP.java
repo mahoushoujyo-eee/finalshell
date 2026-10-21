@@ -44,6 +44,7 @@ public class AP {
    }
 
    public static String L(String var0) {
+      String var3;
       Ky4[] var10000 = Sd2.t();
       int var2 = var0.length() - 1;
       Ky4[] var1 = var10000;
@@ -51,10 +52,6 @@ public class AP {
       int var10001;
       while (true) {
          if (var2 >= 0) {
-      return var3;
-      return var3;
-      return var3;
-      return var3;
             var3 = var0;
             var10001 = var2;
             if (var1 == null || var1 == null) {
@@ -82,7 +79,8 @@ public class AP {
    }
 
    public static int A(@NotNull String var0, @NotNull String var1, int var2) {
-      int var3 = var1.length();
+      int var3;
+      var3 = var1.length();
       int var4 = var0.length();
       if (var2 >= var4) {
          return var3 == 0 ? var4 : -1;
@@ -136,6 +134,8 @@ public class AP {
    }
 
    public static int b(@Nullable String var0, @Nullable String var1) {
+      boolean var10;
+      int var9;
       Ky4[] var2;
       String var10000;
       var2 = Sd2.t();
@@ -193,13 +193,13 @@ public class AP {
                   var10 = var6.matches(a(22607, 9144));
                   label83:
                   if (var2 != null) {
-                     if (var10 != 0) {
+                     if (var10) {
                         var10 = var7.matches(a(22605, -21908));
                         if (var2 == null) {
                            break label83;
                         }
 
-                        if (var10 != 0) {
+                        if (var10) {
                            var8 = new Integer(var6).compareTo(new Integer(var7));
                            if (var2 != null) {
                               break label84;
@@ -207,10 +207,10 @@ public class AP {
                         }
                      }
 
-                     var10 = var3[var5].compareTo(var4[var5]);
+                     var10 = (var3[var5].compareTo(var4[var5])) != 0;
                   }
 
-                  var8 = var10;
+                  var8 = (var10) ? 1 : 0;
                }
 
                if (var2 == null) {
@@ -1059,8 +1059,10 @@ public class AP {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
+      int var3;
       String[] var5 = new String[4];
-      int var3 = 0;
+      var3 = 0;
       String var2 = "¢=%±\u0014\u0013$\n\u0003\u0017¾q";
       int var4 = "¢=%±\u0014\u0013$\n\u0003\u0017¾q".length();
       char var1 = '\b';

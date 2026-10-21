@@ -12,6 +12,7 @@ public class Fu4 implements Ky2 {
    public static Integer[] b;
 
    public static byte[] J(byte[] var0) {
+      byte[] var4;
       boolean var10000 = DF.c();
       byte[] var2 = new byte[var0.length * 2];
       boolean var1 = var10000;
@@ -27,8 +28,6 @@ public class Fu4 implements Ky2 {
             System.arraycopy(var4, 0, var2, var3 * 2, 2);
             var3++;
             if (!var1) {
-      byte[] var4;
-      byte[] var4;
                continue;
             }
          }
@@ -41,6 +40,8 @@ public class Fu4 implements Ky2 {
    }
 
    public static byte[] i(byte[] var0) {
+      byte[] var4;
+      byte[] var5;
       boolean var10000 = DF.M();
       byte[] var2 = new byte[var0.length / 2];
       boolean var1 = var10000;
@@ -48,7 +49,7 @@ public class Fu4 implements Ky2 {
 
       while (true) {
          if (var3 < var2.length) {
-            byte[] var4 = new byte[2];
+            var4 = new byte[2];
             System.arraycopy(var0, var3 * 2, var4, 0, 2);
             var5 = var2;
             if (!var1) {
@@ -110,7 +111,8 @@ public class Fu4 implements Ky2 {
 
    @Override
    public Ky2 X(byte[] var1, int var2, int var3) {
-      boolean var4 = DF.M();
+      boolean var4;
+      var4 = DF.M();
 
       while (var2 < var3) {
          var1[var2] = this.c();
@@ -136,7 +138,8 @@ public class Fu4 implements Ky2 {
 
    @Override
    public Ky2 A(byte[] var1, int var2, int var3) {
-      boolean var4 = DF.M();
+      boolean var4;
+      var4 = DF.M();
 
       Fu4 var10000;
       while (true) {
@@ -172,7 +175,8 @@ public class Fu4 implements Ky2 {
 
    @Override
    public Ky2 I(int var1, byte[] var2, int var3, int var4) {
-      boolean var5 = DF.c();
+      boolean var5;
+      var5 = DF.c();
 
       while (var3 < var4) {
          var2[var3] = this.z(var1++);
@@ -200,7 +204,8 @@ public class Fu4 implements Ky2 {
 
    @Override
    public Ky2 T(int var1, byte[] var2, int var3, int var4) {
-      boolean var5 = DF.M();
+      boolean var5;
+      var5 = DF.M();
 
       Fu4 var10000;
       while (true) {
@@ -352,7 +357,7 @@ public class Fu4 implements Ky2 {
          var10000 = var10000 > 1 ? 1 : 0;
       }
 
-      return (boolean)var10000;
+      return var10000 != 0;
    }
 
    @Override
@@ -374,12 +379,13 @@ public class Fu4 implements Ky2 {
    }
 
    public static void __vfClinit__() {
+      boolean var5;
       long var0 = 369021262838467090L;
       long[] var6 = new long[32];
       int var3 = 0;
       String var4 = "\u00ad \u0098ì´\"\u0088f]q)\u0083_#¸`ºK\u0094½\u0093Õ\u009eÙ\u0088Q\u0011\u009d\u000f¶Ðçm½,\u008eéf\u0019Î)DÝÔØ°FöVÅ^7Ö\nem\u0005Ó¡n\u0093ô\u008ab\u0004ý\u00138\fht\u0083\r¡\u001dDôs\u0087þ\u000f\u0092\u008b¾ú¤\u0090ò$º{®î7\u009aëþÄÔ\u0019\u0088\u001bñÉ\u0010Ëd\u001d.öA\u008cÀ\u0080àµK-¤~Ñå)\u0001 v\u0092þSÜ_F\u0095þjaÂÿ0\u0004ùøìá©ÍG~´G2Ù0æçþ_\u0099*\u0005×?\n¡¯r\u009a\f\u0098¡´4\u0087ü!¤aÜ\u0089{\u00ad\"ÿÅm8¬¸\u0004Åa\u0092}\u000eH\u008aê$p\bX2\u001c\u0083[ÛÙõ\u0002\u0098ëØaÞ\u008f\u0019TI%ê$¢o%:O\u0016ÿl½ªÔ\u001c` àÏ\u0002¥È";
-      int var5 = "\u00ad \u0098ì´\"\u0088f]q)\u0083_#¸`ºK\u0094½\u0093Õ\u009eÙ\u0088Q\u0011\u009d\u000f¶Ðçm½,\u008eéf\u0019Î)DÝÔØ°FöVÅ^7Ö\nem\u0005Ó¡n\u0093ô\u008ab\u0004ý\u00138\fht\u0083\r¡\u001dDôs\u0087þ\u000f\u0092\u008b¾ú¤\u0090ò$º{®î7\u009aëþÄÔ\u0019\u0088\u001bñÉ\u0010Ëd\u001d.öA\u008cÀ\u0080àµK-¤~Ñå)\u0001 v\u0092þSÜ_F\u0095þjaÂÿ0\u0004ùøìá©ÍG~´G2Ù0æçþ_\u0099*\u0005×?\n¡¯r\u009a\f\u0098¡´4\u0087ü!¤aÜ\u0089{\u00ad\"ÿÅm8¬¸\u0004Åa\u0092}\u000eH\u008aê$p\bX2\u001c\u0083[ÛÙõ\u0002\u0098ëØaÞ\u008f\u0019TI%ê$¢o%:O\u0016ÿl½ªÔ\u001c` àÏ\u0002¥È"
-         .length();
+      var5 = "\u00ad \u0098ì´\"\u0088f]q)\u0083_#¸`ºK\u0094½\u0093Õ\u009eÙ\u0088Q\u0011\u009d\u000f¶Ðçm½,\u008eéf\u0019Î)DÝÔØ°FöVÅ^7Ö\nem\u0005Ó¡n\u0093ô\u008ab\u0004ý\u00138\fht\u0083\r¡\u001dDôs\u0087þ\u000f\u0092\u008b¾ú¤\u0090ò$º{®î7\u009aëþÄÔ\u0019\u0088\u001bñÉ\u0010Ëd\u001d.öA\u008cÀ\u0080àµK-¤~Ñå)\u0001 v\u0092þSÜ_F\u0095þjaÂÿ0\u0004ùøìá©ÍG~´G2Ù0æçþ_\u0099*\u0005×?\n¡¯r\u009a\f\u0098¡´4\u0087ü!¤aÜ\u0089{\u00ad\"ÿÅm8¬¸\u0004Åa\u0092}\u000eH\u008aê$p\bX2\u001c\u0083[ÛÙõ\u0002\u0098ëØaÞ\u008f\u0019TI%ê$¢o%:O\u0016ÿl½ªÔ\u001c` àÏ\u0002¥È";
+         // [VF] .length();
       byte var2 = 0;
 
       label20:
@@ -435,7 +441,7 @@ public class Fu4 implements Ky2 {
                   }
 
                   var4 = "\u0003|yx\u0089\u0003Ùt\u0018¿<^i\u000eØ\u0092";
-                  var5 = "\u0003|yx\u0089\u0003Ùt\u0018¿<^i\u000eØ\u0092".length();
+                  var5 = ("\u0003|yx\u0089\u0003Ùt\u0018¿<^i\u000eØ\u0092".length()) != 0;
                   var2 = 0;
             }
 
@@ -457,7 +463,6 @@ public class Fu4 implements Ky2 {
       }
    }
 }
-
 
 
 

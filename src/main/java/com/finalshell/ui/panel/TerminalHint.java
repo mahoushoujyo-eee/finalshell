@@ -30,6 +30,9 @@ public class TerminalHint extends Z7 {
 
    public TerminalHint() {
    super();
+   Object[] var24;
+   Object[] var26;
+   Boolean var69;
       L();
       String var10002 = a(13493, -7935);
       long var9 = 162797623991007040L;
@@ -84,11 +87,11 @@ public class TerminalHint extends Z7 {
       Object var10010 = Ref.h2(270389152141252877L, var22);
       Object[] var10011 = Registry.emptyArgs();
       long var25 = 306266403902896148L;
-      Object[] var24 = var10011;
+      var24 = var10011;
       var10011 = Ref.h(306266403902896148L, var24, var25);
-      Object[] var10012 = Registry.emptyArgs();
+      Object var10012 = Registry.emptyArgs();
       long var27 = 592279461807905961L;
-      Object[] var26 = var10012;
+      var26 = var10012;
       var10012 = Ref.h(592279461807905961L, var26, var27);
 
       try {
@@ -149,6 +152,8 @@ var10010 = new UW(var10011, var69);
 
    @Override
    public void A(Lv4_2 var1) {
+      Integer var24;
+      Integer var26;
       int[] var2 = L();
       if (var2 == null) {
          if (var1 == null) {
@@ -159,7 +164,7 @@ var10010 = new UW(var10011, var69);
          JComboBox var10001 = (JComboBox)Ref.g(431705008959541491L, var3);
          String var10003 = (String)(Registry.emptyArgs());
          long var6 = 424907351961233197L;
-         Object[] var5 = var10003;
+         Object var5 = var10003;
          var10003 = Ref.h(424907351961233197L, var5, var6);
 
          try {
@@ -171,9 +176,9 @@ var10010 = new UW(var10011, var69);
          var1.setSelectedItem(var10003);
          Object var7 = 153900279591117281L;
          JComboBox var21 = (JComboBox)Ref.g(153900279591117281L, var7);
-         Object[] var10005 = Registry.emptyArgs();
+         Object var10005 = Registry.emptyArgs();
          long var10 = 204862003733180970L;
-         Object[] var9 = var10005;
+         Object var9 = var10005;
          var10005 = Ref.h(204862003733180970L, var9, var10);
 
          try {
@@ -187,9 +192,9 @@ var10010 = new UW(var10011, var69);
 
       Object var11 = 517423455536003674L;
       JComboBox var18 = (JComboBox)Ref.g(517423455536003674L, var11);
-      Object[] var22 = Registry.emptyArgs();
+      Object var22 = Registry.emptyArgs();
       long var14 = 380273998966419876L;
-      Object[] var13 = var22;
+      Object var13 = var22;
       var22 = Ref.h(380273998966419876L, var13, var14);
 
       try {
@@ -1089,6 +1094,7 @@ var10010 = new UW(var10011, var69);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[15];
       int var3 = 0;
       String var2 = "捜镍帕勀Æ褏凴郺栄I劎隵闚姝敼ã了硁镓颐Â'\u0005¤ñ\u0014X\u0006\u0011+nv(\u009eD,\b,}y»R³²\bG\u000b绠穋咉上持礂p嬧髌悷8\u0004\u009f±2ï\u000eqE û_Ä\u00831\u0017\u0019s\u0017kV\u0004ã\t½ø\u000e\u0006\u0088Óô*ßº{ø\u0017*|Ñ\u0091\tfCUQ\r\u0087勉雙镐\u0010,5A\u0003\u009a»µçòÉÇZó\"\u0002k\u000e?×é©f\u008e¤xó0ï2øò\u0005富筙缋硝½\fÏ\u001b©Ð{m¡4\u007f邰梏锊";
@@ -1105,7 +1111,6 @@ var10010 = new UW(var10011, var69);
          byte var10002 = -1;
 
          while (true) {
-      Object[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

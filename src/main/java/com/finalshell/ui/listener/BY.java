@@ -6,7 +6,7 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.ui.frame.Kb2;
 import com.finalshell.ui.frame.Km4;
 import com.finalshell.ui.panel.AA;
-import com.finalshell.ui.panel.RouteTracePanel2;
+import com.finalshell.ui.panel.ConnectionContextMenu;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,9 +17,9 @@ import javax.swing.JFrame;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class BY implements ActionListener {
-   public final RouteTracePanel2 y;
+   public final ConnectionContextMenu y;
 
-   public BY(RouteTracePanel2 var1) {
+   public BY(ConnectionContextMenu var1) {
       this.y = var1;
    }
 
@@ -53,7 +53,7 @@ public class BY implements ActionListener {
       Ref.g(160092931880009273L, var18);
       File var10009 = (File)(Registry.emptyArgs());
       long var21 = 272998330038223631L;
-      Object[] var20 = var10009;
+      Object var20 = var10009;
       var10009 = Ref.h(272998330038223631L, var20, var21);
 
       try {
@@ -64,7 +64,7 @@ public class BY implements ActionListener {
 
       var10009 = Registry.packArgs(var10009.getAbsolutePath());
       long var23 = 489768706953623433L;
-      Object[] var22 = var10009;
+      Object var22 = var10009;
       var10009 = Ref.h(489768706953623433L, var22, var23);
 
       try {
@@ -84,10 +84,10 @@ public class BY implements ActionListener {
       Ref.h(271043866899908885L, var26, var27);
       JFrame var10014 = (JFrame)(Registry.emptyArgs());
       long var29 = 292557478156152530L;
-      Object[] var28 = var10014;
+      Object var28 = var10014;
       var10014 = Registry.packArgs(Ref.h(292557478156152530L, var28, var29));
       long var31 = 285199883764466291L;
-      Object[] var30 = var10014;
+      Object var30 = var10014;
       var10014 = Ref.h(285199883764466291L, var30, var31);
 
       try {
@@ -103,7 +103,7 @@ public class BY implements ActionListener {
       Ref.g(160092931880009273L, var34);
       Integer var10016 = (Integer)(Registry.emptyArgs());
       long var37 = 528672956857361353L;
-      Object[] var36 = var10016;
+      Object var36 = var10016;
       var10016 = Ref.h(528672956857361353L, var36, var37);
 
       try {
@@ -220,7 +220,7 @@ var10022 = new BY((String)var10023, var10024, (Window)var10025, var3, null);
          Ref.g(160092931880009273L, var58);
          File var106 = Registry.emptyArgs();
          long var61 = 272998330038223631L;
-         Object[] var60 = var106;
+         Object var60 = var106;
          var106 = Ref.h(272998330038223631L, var60, var61);
 
          try {

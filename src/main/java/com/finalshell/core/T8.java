@@ -47,6 +47,8 @@ public class T8 extends TransferHandler {
 
    @Override
    public boolean canImport(TransferSupport var1) {
+      DefaultMutableTreeNode var11;
+      int var18;
       String[] var2;
       TransferSupport var10000;
       label80: {
@@ -85,7 +87,7 @@ public class T8 extends TransferHandler {
          if (var7 < var6.length) {
             var18 = var6[var7];
             if (var2 != null) {
-               return (boolean)var18;
+               return var18 != 0;
             }
 
             var10001 = var5;
@@ -99,8 +101,6 @@ public class T8 extends TransferHandler {
 
             var7++;
             if (var2 == null) {
-      int var18;
-      int var18;
                continue;
             }
          }
@@ -108,7 +108,7 @@ public class T8 extends TransferHandler {
          var7 = var1.getDropAction();
          var18 = var7;
          if (var2 != null) {
-            return (boolean)var7;
+            return var7 != 0;
          }
 
          var10001 = 2;
@@ -119,13 +119,13 @@ public class T8 extends TransferHandler {
          TreePath var8 = var3.getPath();
          DefaultMutableTreeNode var9 = (DefaultMutableTreeNode)var8.getLastPathComponent();
          TreePath var10 = var4.getPathForRow(var6[0]);
-         DefaultMutableTreeNode var11 = (DefaultMutableTreeNode)var10.getLastPathComponent();
+         var11 = (DefaultMutableTreeNode)var10.getLastPathComponent();
          int var19 = var11.getChildCount();
          if (var2 == null) {
             if (var19 > 0) {
                int var22 = var9.getLevel();
                if (var2 != null) {
-                  return (boolean)var22;
+                  return var22 != 0;
                }
 
                if (var22 < var11.getLevel()) {
@@ -136,7 +136,7 @@ public class T8 extends TransferHandler {
             var19 = 1;
          }
 
-         return (boolean)var19;
+         return var19 != 0;
       } else {
          Object[] var20 = Registry.packArgs(var4);
          long var15 = 325550601129973935L;
@@ -153,6 +153,7 @@ public class T8 extends TransferHandler {
    }
 
    public boolean d(JTree var1) {
+      boolean var11;
       String[] var2;
       int[] var3;
       DefaultMutableTreeNode var5;
@@ -195,11 +196,11 @@ public class T8 extends TransferHandler {
 
                if (var11) {
                   if (var2 != null) {
-                     return (boolean)var6;
+                     return var6 != 0;
                   }
 
                   if (var6 > var3.length - 1) {
-                     return (boolean)0;
+                     return 0 != 0;
                   }
                }
 
@@ -220,6 +221,8 @@ public class T8 extends TransferHandler {
 
    @Override
    public Transferable createTransferable(JComponent var1) {
+      Object[] var11;
+      long var18;
       String[] var10000 = com.finalshell.ui.panel.F8.y();
       JTree var3 = (JTree)var1;
       TreePath[] var4 = var3.getSelectionPaths();
@@ -230,9 +233,9 @@ public class T8 extends TransferHandler {
          ArrayList var5 = new ArrayList();
          ArrayList var6 = new ArrayList();
          DefaultMutableTreeNode var7 = (DefaultMutableTreeNode)var4[0].getLastPathComponent();
-         Object[] var10001 = Registry.packArgs(var7);
+         DefaultMutableTreeNode var10001 = (DefaultMutableTreeNode)(Registry.packArgs(var7));
          long var12 = 251041591539874709L;
-         Object[] var11 = var10001;
+         var11 = var10001;
          var10001 = Ref.h(251041591539874709L, var11, var12);
 
          try {
@@ -272,9 +275,9 @@ public class T8 extends TransferHandler {
                   }
 
                   if (var26 > var10002) {
-                     Object[] var10003 = Registry.packArgs(var10);
+                     DefaultMutableTreeNode var10003 = (DefaultMutableTreeNode)(Registry.packArgs(var10));
                      long var14 = 251041591539874709L;
-                     Object[] var13 = var10003;
+                     Object var13 = var10003;
                      var10003 = Ref.h(251041591539874709L, var13, var14);
 
                      try {
@@ -289,9 +292,9 @@ public class T8 extends TransferHandler {
                      }
                   }
 
-                  Object[] var30 = Registry.packArgs(var10);
+                  DefaultMutableTreeNode var30 = (DefaultMutableTreeNode)(Registry.packArgs(var10));
                   long var16 = 251041591539874709L;
-                  Object[] var15 = var30;
+                  Object var15 = var30;
                   var30 = Ref.h(251041591539874709L, var15, var16);
 
                   try {
@@ -316,7 +319,7 @@ public class T8 extends TransferHandler {
 
          DefaultMutableTreeNode[] var22 = (DefaultMutableTreeNode[])var10001;
          DefaultMutableTreeNode[] var27 = var6.toArray(new DefaultMutableTreeNode[var6.size()]);
-         long var18 = 366662457817467315L;
+         var18 = 366662457817467315L;
          DefaultMutableTreeNode[] var17 = var27;
          Ref.s(366662457817467315L, var17, var18);
          return new Xs2_2(this, var22);
@@ -355,13 +358,15 @@ public class T8 extends TransferHandler {
 
    @Override
    public boolean importData(TransferSupport var1) {
+      int var11;
+      boolean var23;
       String[] var2 = com.finalshell.ui.panel.F8.y();
 
       label78: {
          try {
-            Object[] var10001 = Registry.packArgs(var1);
+            Object var10001 = Registry.packArgs(var1);
             long var13 = 458431271423514237L;
-            Object[] var12 = var10001;
+            Object var12 = var10001;
             var10001 = Ref.h(458431271423514237L, var12, var13);
 
             try {
@@ -424,7 +429,7 @@ public class T8 extends TransferHandler {
          var10000 = 0;
       }
 
-      int var11 = var10000;
+      var11 = var10000;
 
       while (var11 < var3.length) {
          var9.insertNodeInto(var3[var11], var7, var10++);
@@ -1349,7 +1354,6 @@ public class T8 extends TransferHandler {
       }
    }
 }
-
 
 
 

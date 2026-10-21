@@ -7,9 +7,9 @@ import java.awt.event.ComponentEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class Dc2 extends ComponentAdapter {
-   public final com.finalshell.ui.frame.U A;
+   public final com.finalshell.ui.frame.MainFrame A;
 
-   public Dc2(com.finalshell.ui.frame.U var1) {
+   public Dc2(com.finalshell.ui.frame.MainFrame var1) {
       this.A = var1;
    }
 

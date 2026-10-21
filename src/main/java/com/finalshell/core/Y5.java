@@ -55,6 +55,7 @@ public class Y5 implements TreeExpansionListener {
    }
 
    public static boolean A(JTree var0) {
+      boolean var6;
       TreeExpansionListener[] var2 = var0.getTreeExpansionListeners();
       int[] var10000 = WC_2.V();
       int var3 = var2.length;

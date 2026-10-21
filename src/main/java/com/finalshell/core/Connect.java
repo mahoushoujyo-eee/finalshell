@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import com.finalshell.task.Jm2;
 import com.finalshell.task.ReadDoneTask4;
 import java.io.IOException;
@@ -65,7 +65,7 @@ public class Connect {
    }
 
    public void b(String var1, int var2) {
-      PingMessageR.U.execute(new com.finalshell.task.TJ(this, var1, var2));
+      PingMessageReceiver.U.execute(new com.finalshell.task.TJ(this, var1, var2));
    }
 
    public void B() throws Exception {
@@ -94,7 +94,7 @@ public class Connect {
       }
 
       Qd2 var2 = new Qd2(this);
-      PingMessageR.U.execute(new com.finalshell.task.K0(this, var1, var2));
+      PingMessageReceiver.U.execute(new com.finalshell.task.K0(this, var1, var2));
    }
 
    public void c(String var1, int var2) {

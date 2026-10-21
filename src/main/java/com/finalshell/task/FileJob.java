@@ -1,20 +1,20 @@
 package com.finalshell.task;
 
-import com.finalshell.core.File8;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.core.FileDropTransferHandler;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.util.ArrayList;
 
 public class FileJob implements Runnable {
    public final ArrayList e;
-   public final Address Z;
+   public final FileBrowserAddressBar Z;
    public final String f;
    public final String l;
    public final ArrayList i;
-   public final File8 y;
+   public final FileDropTransferHandler y;
    public static String[] a;
    public static String[] b;
 
-   public FileJob(File8 var1, ArrayList var2, Address var3, String var4, String var5, ArrayList var6) {
+   public FileJob(FileDropTransferHandler var1, ArrayList var2, FileBrowserAddressBar var3, String var4, String var5, ArrayList var6) {
       this.y = var1;
       this.e = var2;
       this.Z = var3;

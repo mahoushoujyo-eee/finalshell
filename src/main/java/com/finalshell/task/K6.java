@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.core.CK;
+import com.finalshell.core.ZModemTransfer;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -141,7 +141,7 @@ public class K6 implements Runnable {
    }
 
    public boolean A() {
-      boolean var1 = CK.r$boolean();
+      boolean var1 = ZModemTransfer.r$boolean();
       int var10000 = this.i;
       if (var1) {
          var10000 = this.i != this.b ? 1 : 0;
@@ -279,7 +279,7 @@ public class K6 implements Runnable {
    }
 
    public void P() {
-      boolean var10000 = CK.r$boolean();
+      boolean var10000 = ZModemTransfer.r$boolean();
       this.J = true;
       boolean var1 = var10000;
       Thread var2 = this.T;

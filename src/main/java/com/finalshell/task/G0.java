@@ -2,16 +2,16 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class G0 implements Runnable {
    public final String u;
-   public final Connection5 n;
+   public final ImportExportPanel n;
 
-   public G0(Connection5 var1, String var2) {
+   public G0(ImportExportPanel var1, String var2) {
       this.n = var1;
       this.u = var2;
    }

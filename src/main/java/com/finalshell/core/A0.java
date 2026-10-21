@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.Socket;
@@ -51,7 +51,7 @@ public class A0 {
       this.m = var6;
       this.q = var4;
       com.finalshell.task.YS3 var8 = new com.finalshell.task.YS3(this, var6, var3, var7, var2, var5);
-      PingMessageR.U.execute(var8);
+      PingMessageReceiver.U.execute(var8);
    }
 
    public void W() {
@@ -125,7 +125,7 @@ public class A0 {
    public DW f(String var1) {
       DW var3 = new DW(this);
       String var4 = null;
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       var1 = var1.replaceAll("\r", "");
       var1 = var1.replaceAll(" ", "");
       String[] var5 = var1.split("\n");
@@ -165,7 +165,7 @@ public class A0 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void Y() {
-      String[] var1 = PingMessageR.N();
+      String[] var1 = PingMessageReceiver.N();
       Iterator var3 = this.p.iterator();
       if (var1 == null || var3.hasNext()) {
          do {

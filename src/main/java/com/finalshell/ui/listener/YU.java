@@ -3,7 +3,7 @@ package com.finalshell.ui.listener;
 import com.finalshell.core.Terminal;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Zm2;
+import com.finalshell.ui.panel.MouseSettingsPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
@@ -11,15 +11,16 @@ import javax.swing.JComboBox;
 
 public class YU implements ActionListener {
    public final JComboBox T;
-   public final Zm2 h;
+   public final MouseSettingsPanel h;
 
-   public YU(Zm2 var1, JComboBox var2) {
+   public YU(MouseSettingsPanel var1, JComboBox var2) {
       this.h = var1;
       this.T = var2;
    }
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      Integer var21;
       Object var3 = 335793713994429660L;
       Terminal var2 = (Terminal)((JComboBox)Ref.g(335793713994429660L, var3)).getSelectedItem();
       Registry.emptyArgs();
@@ -29,9 +30,9 @@ public class YU implements ActionListener {
       long var8 = 306266403902896148L;
       Object[] var7 = var10003;
       Ref.h(306266403902896148L, var7, var8);
-      Object[] var10005 = Registry.emptyArgs();
+      Object var10005 = Registry.emptyArgs();
       long var10 = 179372822256513033L;
-      Object[] var9 = var10005;
+      Object var9 = var10005;
       var10005 = Ref.h(179372822256513033L, var9, var10);
 
       try {
@@ -42,7 +43,7 @@ public class YU implements ActionListener {
 
       var10005 = Registry.packArgs(var21);
       long var12 = 548630980311760371L;
-      Object[] var11 = var10005;
+      Object var11 = var10005;
       Ref.h(548630980311760371L, var11, var12);
 
       try {

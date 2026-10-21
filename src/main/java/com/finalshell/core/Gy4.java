@@ -36,6 +36,7 @@ public abstract class Gy4 extends W5 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      int var23;
       int var4 = var1.getWidth();
       String[] var10000 = W5.q();
       int var5 = var1.getHeight();
@@ -89,7 +90,7 @@ public abstract class Gy4 extends W5 {
 
             while (var22 < var14) {
                this.h(var16 + var22, var17 + var21, var20);
-               int var23 = (int)Math.floor((double)var20[0]);
+               var23 = (int)Math.floor((double)var20[0]);
                int var24 = (int)Math.floor((double)var20[1]);
                float var25 = var20[0] - (float)var23;
                float var26 = var20[1] - (float)var24;
@@ -217,6 +218,7 @@ public abstract class Gy4 extends W5 {
    }
 
    public BufferedImage l(BufferedImage var1, int var2, int var3, int[] var4, Rectangle var5) {
+      int var23;
       int var7 = var2;
       int var8 = var3;
       int var9 = var5.width;
@@ -268,7 +270,6 @@ public abstract class Gy4 extends W5 {
                                  }
 
                                  if (var22 >= 0) {
-      int var23;
                                     var23 = var14;
                                     var10001 = var8;
                                     if (var6 == null) {

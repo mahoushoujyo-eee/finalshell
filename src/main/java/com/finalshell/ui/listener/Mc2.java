@@ -1,7 +1,7 @@
 package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.RouteTracePanel3;
+import com.finalshell.ui.panel.RouteTraceAddressPanel;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -12,9 +12,9 @@ public class Mc2 implements MouseListener {
    public final Color x;
    public final com.finalshell.ui.panel.W8 t;
    public final Color e;
-   public final RouteTracePanel3 Z;
+   public final RouteTraceAddressPanel Z;
 
-   public Mc2(RouteTracePanel3 var1, JLabel var2, Color var3, com.finalshell.ui.panel.W8 var4, Color var5) {
+   public Mc2(RouteTraceAddressPanel var1, JLabel var2, Color var3, com.finalshell.ui.panel.W8 var4, Color var5) {
       this.Z = var1;
       this.m = var2;
       this.x = var3;

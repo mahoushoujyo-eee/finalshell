@@ -1925,6 +1925,7 @@ public class SecondHandshake {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var43;
       String[] var21 = new String[34];
       int var19 = 0;
       String var18 = "7@â\u0010¨¨\u0001\u000f匴遐笅丛歚掽抒¸U\u001eÓ\u0090ë8\f\b匚道節仾毢挴抅\u0089\f捤攌吔廜¤ªNçí>96\r\u0099ö8K\u001c\u0097\u009eEËÊ*Y»\u0018´{\u0097ºF\u0080â\u0084Ìþ\u0018.\"\u0013ñÞ\u009eÝE¬¨F¥O Á±veÃ\u0006¼\u008dt{{v\u0093ß£g\u009bÏ_\f9\u001b|ê÷¡Lhî nþ\u000f厉邏箲仩殬揋扌v\u008eÇ¨«\u0084_á\u0018Lb\u0088\u0099¥ä\u009e\bCoé\u001c\u001cU6\u0016fÄZ\u008fK\"ÙÃ\b挵斤篟九欁捝拹¤\u00028Q\u0002ø\u008d\u0002}¨\u000f揅旷篁亻毂掜抁\u009c7\u009a\u009f\u0000b*=\u0005uÕ\u0011N¡\f卓郗謲沠\u001d)y\u0097\u000b0å÷\t&Äð´âp \u00187\u0002Á\u008a\u0004lØM@\f掷救譔没Ñ\tà\u00938°\u0083ç\r&zÏÚâ¥A\u00030\u0002U@T\u000f挪攺笼亇歽挮扶ÊÉP@Y\u0099\u0001B Äþ\u0097YÙö_0Ò\u0016k\u00ad_HS÷Ê\u0081îb\u0094\u0089,\u0012ôu4ÕÝ0Ë9\f厷郾咔幓´[LÙ\u00adù1Î\u0017Øªq&6]ÿ\u009b\u001a?\u0012:\u0086#.MÉøÇ¤¯\u0086ý\u0011ì\u0093ÌÅ\u001aÄ0LÈè4+\u0087\u008bmßÁ\u0018oõ£íy\u0017ë¦\u0091;!ÃÙSáÞ\u0091å\f³0B%\u0081|ÚO\u0015º¯ý&\u0097Ýâ¿<÷\u0092),E)ð\u009fRæUc~b æäÎZÅB\u008bJ©âò¥e\u0086\u009c\n2¦Åä¶î\u008f\u0010á\u0006\\À\u009eÏ\u00ad\u0099\u0019k\u0099!j;(µî\u0082QNîM\u00adþ\u0005`ö§9 =\u0099ð\u0088>òÖ\u0088t&r\u0083\u0013¬»J´\u0086\u0081\u0083\u008b'\u001dWÄÅqZ»F\u001b×\u0003TO¦\u009f\u001d\u0082\u00adQK=(Á29\u0089\u0093²X* ð\u0083_#\u0095\u008aã(W`\u007f¾fö\u001dÍ|b±HYÃö\u00835\u0088ËI\u0099P\u008b\u0016\u009e=\u009dô¾4\u0013Ü\u008e©Â\u0081·T9\u0090>q\u0086°\u0083óV{h±[ \u0001lÞm\"\rì\u0086A¼Æ\u008aÉ£à\u009b\nÕÎ\u009dØà_Î\"\u0002\u008c\u008bÕ\u0096ï?³\u001fÔÃ\u0006á/èU¤/-E¦g¦å\u0003é\u0084s\u0095\u009bb\u0004òÂ¡Y\u000b~q^úØJoÇÛ5/q\fS\u000f\u0006¶Ôï\u0007©¢1LÒ#N";
@@ -1940,7 +1941,6 @@ public class SecondHandshake {
          byte var10002 = -1;
 
          while (true) {
-      char[] var43;
             label74: {
                char[] var49 = var10001.toCharArray();
                int var10004 = var49.length;

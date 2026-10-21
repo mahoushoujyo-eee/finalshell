@@ -1,19 +1,19 @@
 package com.finalshell.core;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.dialog.DownloadDialog;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.dialog.DownloadProgressDialog;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.lang.reflect.InvocationTargetException;
 
 public class Mn2 implements Cq2 {
-   public final Connection12 S;
+   public final FileTransferConnection S;
    public final String C;
    public final String w;
-   public final DownloadDialog P;
+   public final DownloadProgressDialog P;
 
-   public Mn2(DownloadDialog var1, Connection12 var2, String var3, String var4) {
+   public Mn2(DownloadProgressDialog var1, FileTransferConnection var2, String var3, String var4) {
       this.P = var1;
       this.S = var2;
       this.C = var3;
@@ -22,7 +22,8 @@ public class Mn2 implements Cq2 {
 
    @Override
    public void u(VO var1) {
-      boolean var2 = Address.i();
+      Integer var29;
+      boolean var2 = FileBrowserAddressBar.i();
 
       label50: {
          try {
@@ -30,9 +31,9 @@ public class Mn2 implements Cq2 {
                break label50;
             }
 
-            Object[] var10001 = Registry.emptyArgs();
+            Object var10001 = Registry.emptyArgs();
             long var5 = 178857963789314984L;
-            Object[] var4 = var10001;
+            Object var4 = var10001;
             var10001 = Ref.h(178857963789314984L, var4, var5);
 
             try {

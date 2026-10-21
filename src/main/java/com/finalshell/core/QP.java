@@ -6,10 +6,10 @@ import java.awt.event.KeyEvent;
 public class QP extends Qh2 {
    public final ZG_2 n;
    public final ZG_2 T;
-   public final com.finalshell.ui.frame.U w;
+   public final com.finalshell.ui.frame.MainFrame w;
    public static long a;
 
-   public QP(com.finalshell.ui.frame.U var1, Window var2, ZG_2 var3, ZG_2 var4) {
+   public QP(com.finalshell.ui.frame.MainFrame var1, Window var2, ZG_2 var3, ZG_2 var4) {
       super(var2);
       this.w = var1;
       this.n = var3;

@@ -40,6 +40,7 @@ public class YM extends MouseAdapter {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      YM var3;
       int var2 = Nx4.R();
       boolean var10000 = this.O.X;
       if (var2 == 0) {
@@ -82,6 +83,7 @@ public class YM extends MouseAdapter {
 
    @Override
    public void mouseDragged(MouseEvent var1) {
+      YM var3;
       int var2 = Nx4.c$int();
       boolean var10000 = this.O.X;
       if (var2 != 0) {
@@ -93,7 +95,7 @@ public class YM extends MouseAdapter {
       }
 
       if (var10000) {
-         YM var3 = this;
+         var3 = this;
          if (var2 != 0) {
             if (this.C == null) {
                return;
@@ -170,9 +172,9 @@ public class YM extends MouseAdapter {
    }
 
    public void I() {
+      int var3;
       int var1;
       Point var2;
-      Rectangle var3;
       int var5;
       int var9;
       label25: {
@@ -1076,7 +1078,8 @@ public class YM extends MouseAdapter {
    }
 
    public static int a(int var0, long var1) {
-      int var3 = var0 ^ (int)(var1 & 32767L) ^ 26766;
+      int var3;
+      var3 = var0 ^ (int)(var1 & 32767L) ^ 26766;
       if (d[var3] == null) {
          d[var3] = (int)(c[var3] ^ var1);
       }
@@ -1086,6 +1089,7 @@ public class YM extends MouseAdapter {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var3;
       String[] var13 = new String[2];
       int var11 = 0;
       String var10 = "¾\u0094/ál\\\u0005H~ø÷ã";
@@ -1173,7 +1177,7 @@ public class YM extends MouseAdapter {
             b = new String[2];
             long var0 = 9143791895416655663L;
             long[] var6 = new long[5];
-            int var3 = 0;
+            var3 = 0;
             String var4 = "ÝyßÍ|¶â¦À\"VÉ\u0016Ô]©J(ý@\u0098k\u008b?";
             int var5 = "ÝyßÍ|¶â¦À\"VÉ\u0016Ô]©J(ý@\u0098k\u008b?".length();
             byte var2 = 0;

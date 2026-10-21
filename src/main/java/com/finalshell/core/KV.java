@@ -44,7 +44,7 @@ public class KV {
    public float Kn;
    public float v;
    public ArrayList Ke;
-   public Ty2 KU;
+   public RemoteProcessManager KU;
    public Zh2_2 O;
    public String X;
    public String x;
@@ -71,7 +71,7 @@ public class KV {
    public static int A;
    public static int R;
    public int K3;
-   public com.finalshell.ui.frame.U E;
+   public com.finalshell.ui.frame.MainFrame E;
    public ConnectionProperty Ky;
    public ArrayList J;
    public HashMap Kt;
@@ -260,7 +260,7 @@ public class KV {
                if (var2 == null) {
                   String var10002 = (String)(Registry.emptyArgs());
                   long var9 = 326911699754169518L;
-                  Object[] var8 = var10002;
+                  Object var8 = var10002;
                   var10002 = Ref.h(326911699754169518L, var8, var9);
 
                   try {
@@ -728,12 +728,12 @@ public class KV {
       Ref.s(170871081927228831L, var1, var3);
    }
 
-   public Ty2 O$Ty_2() {
+   public RemoteProcessManager O$Ty_2() {
       Object var1 = 495313673457085157L;
-      return (Ty2)Ref.g(495313673457085157L, var1);
+      return (RemoteProcessManager)Ref.g(495313673457085157L, var1);
    }
 
-   public void U(Ty2 var1) {
+   public void U(RemoteProcessManager var1) {
       long var3 = 495313673457085157L;
       Ref.s(495313673457085157L, var1, var3);
    }
@@ -1046,12 +1046,12 @@ public class KV {
       Ref.s(585210851817000159L, var1, var3);
    }
 
-   public com.finalshell.ui.frame.U h$U() {
+   public com.finalshell.ui.frame.MainFrame h$U() {
       Object var1 = 634919959519274946L;
-      return (com.finalshell.ui.frame.U)Ref.g(634919959519274946L, var1);
+      return (com.finalshell.ui.frame.MainFrame)Ref.g(634919959519274946L, var1);
    }
 
-   public void E(com.finalshell.ui.frame.U var1) {
+   public void E(com.finalshell.ui.frame.MainFrame var1) {
       long var3 = 634919959519274946L;
       Ref.s(634919959519274946L, var1, var3);
    }

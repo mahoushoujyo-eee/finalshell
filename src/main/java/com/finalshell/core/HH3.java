@@ -111,6 +111,8 @@ public class HH3 extends W5 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      float var12;
+      int var16;
       String[] var3;
       int var4;
       int var5;
@@ -173,7 +175,7 @@ public class HH3 extends W5 {
       }
 
       int var22;
-      float var12 = var10 - var8;
+      var12 = var10 - var8;
       float var13 = var11 - var19;
       float var14 = var12 * var12 + var13 * var13;
       this.X = var8;
@@ -202,7 +204,7 @@ public class HH3 extends W5 {
       }
 
       int[] var15 = new int[var22];
-      int var16 = 0;
+      var16 = 0;
 
       while (var16 < var5) {
          this.l(var1, 0, var16, var4, 1, var15);
@@ -244,6 +246,7 @@ public class HH3 extends W5 {
    }
 
    public void x(int[] var1, int var2, int var3, float var4, float var5, float var6) {
+      int var12;
       String[] var10000 = W5.q();
       int var8 = 0;
       String[] var7 = var10000;
@@ -260,7 +263,6 @@ public class HH3 extends W5 {
             int var11 = var2;
 
             while (--var11 >= 0) {
-               int var12;
                label33: {
                   var13 = this.w;
                   if (var7 != null) {
@@ -304,6 +306,7 @@ public class HH3 extends W5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void I(int[] var1, int var2, int var3, float var4, float var5, float var6) {
+      int var16;
       String[] var10000 = W5.q();
       int var8 = 0;
       String[] var7 = var10000;
@@ -360,8 +363,6 @@ public class HH3 extends W5 {
                var8++;
                var10 += var5;
                if (var7 == null) {
-      float var16;
-      float var16;
                   break;
                }
 
@@ -558,7 +559,7 @@ public class HH3 extends W5 {
 
    public float V(float var1) {
       String[] var2 = W5.q();
-      int var10000 = this.V;
+      int var10000 = (this.V) ? 1 : 0;
       if (var2 != null) {
          if (this.V) {
             float var3 = var1;
@@ -614,6 +615,7 @@ public class HH3 extends W5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte[] var16;
       char[] var10003 = "_iX(\\PXb|T$K\u0011k0[Y!BQ1>".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
@@ -671,7 +673,7 @@ public class HH3 extends W5 {
             while (true) {
                var25 = var10;
                var10 += 8;
-               byte[] var16 = var12.substring(var25, var10).getBytes("ISO-8859-1");
+               var16 = var12.substring(var25, var10).getBytes("ISO-8859-1");
                long[] var18 = var14;
                var25 = var11++;
                long var32 = ((long)var16[0] & 255L) << 56
@@ -884,7 +886,6 @@ public class HH3 extends W5 {
       }
    }
 }
-
 
 
 

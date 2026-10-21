@@ -511,6 +511,8 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
 
    @Override
    public Insets B(JComponent var1) {
+      int var10;
+      int var12;
       int[] var2 = W_2.B$arrint();
       int var10000 = (this.F) ? 1 : 0;
       if (var2 == null) {
@@ -522,7 +524,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       }
 
       int var3 = var10000;
-      byte var4 = (var1.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      byte var4 = (byte)((var1.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       int var13 = var4;
       if (var2 == null) {
          var13 = (var4 != 0 ? this.C : this.P) ? 1 : 0;
@@ -534,13 +536,13 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
          var13 = (var4 != 0 ? this.W : this.J) ? 1 : 0;
       }
 
-      byte var6 = var13;
+      byte var6 = (byte)(var13);
       var13 = var4;
       if (var2 == null) {
          var13 = (var4 != 0 ? this.P : this.C) ? 1 : 0;
       }
 
-      byte var7 = var13;
+      byte var7 = (byte)(var13);
       var13 = var4;
       if (var2 == null) {
          var13 = (var4 != 0 ? this.J : this.W) ? 1 : 0;
@@ -548,7 +550,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
 
       byte var8;
       label104: {
-         var8 = var13;
+         var8 = (byte)(var13);
          var13 = (this.o) ? 1 : 0;
          if (var2 == null) {
             if (this.o) {
@@ -582,7 +584,6 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
          }
       }
 
-      int var10;
       label92: {
          var10 = var13;
          var13 = (this.y) ? 1 : 0;
@@ -618,12 +619,15 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
          }
       }
 
-      int var12 = var13;
+      var12 = var13;
       return new Insets(var9, var10, var11, var12);
    }
 
    @Override
    public void u(Graphics2D var1, Rectangle var2, JComponent var3) {
+      int var10;
+      O_2 var12;
+      byte var13;
       int[] var4 = W_2.B$arrint();
       O_2 var10000 = this;
       if (var4 == null) {
@@ -668,23 +672,23 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       this.l = var15;
       this.b = var3.getWidth();
       this.j = var3.getHeight();
-      var10 = this.o;
+      var10 = (this.o) ? 1 : 0;
       label107:
       if (var4 == null) {
          if (!this.o) {
-            var10 = this.P;
+            var10 = (this.P) ? 1 : 0;
             if (var4 != null) {
                break label107;
             }
 
             if (!this.P) {
-               var10 = this.y;
+               var10 = (this.y) ? 1 : 0;
                if (var4 != null) {
                   break label107;
                }
 
                if (!this.y) {
-                  var10 = this.C;
+                  var10 = (this.C) ? 1 : 0;
                   if (var4 != null) {
                      break label107;
                   }
@@ -703,7 +707,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       byte var5;
       label93: {
          label92: {
-            var5 = var10;
+            var5 = (byte)(var10);
             byte var11 = var5;
             if (var4 == null) {
                if (var5 != 0) {
@@ -715,12 +719,10 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
                   break label93;
                }
 
-               var11 = (this.N) ? 1 : 0;
+               var11 = (byte)((this.N) ? 1 : 0);
             }
 
             if (var11 == 0) {
-      int[] var13;
-      int[] var13;
                return;
             }
          }
@@ -733,14 +735,14 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       Shape var8;
       Shape var9;
       var6 = var12;
-      var7 = (var3.isEnabled()) ? 1 : 0;
+      var7 = (byte)((var3.isEnabled()) ? 1 : 0);
       var8 = this.g(var3, false);
       var9 = this.g(var3, true);
       var13 = var5;
       label80:
       if (var4 == null) {
          if (var5 != 0) {
-            var13 = this.q;
+            var13 = (byte)(this.q);
             if (var4 != null) {
                break label80;
             }
@@ -750,7 +752,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
             }
          }
 
-         var13 = this.N;
+         var13 = (byte)((this.N) ? 1 : 0);
       }
 
       if (var4 == null) {
@@ -796,6 +798,10 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
    }
 
    public void A(Graphics2D var1, Rectangle var2, JComponent var3, Shape var4) {
+      int var10;
+      int var12;
+      boolean var13;
+      Color var14;
       int[] var5 = W_2.B$arrint();
       int var10000 = this.q;
       int var10001 = 4;
@@ -811,8 +817,8 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
             Composite var6;
             label109: {
                label108: {
-                  var6 = RV.a(var1, var21, (boolean)var10002);
-                  boolean var13 = (this.K) != 0;
+                  var6 = (RV.a(var1, var21, var10002)) != 0;
+                  var13 = this.K;
                   if (var5 == null) {
                      if (!this.K) {
                         break label108;
@@ -838,7 +844,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
                var10002 = var10002 < 0 ? 1 : 0;
             }
 
-            RV.E(var1, var6, (boolean)var10002);
+            RV.E(var1, var6, var10002);
             if (var5 == null) {
                return;
             }
@@ -850,8 +856,8 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
 
       PF3 var11;
       label94: {
-         var11 = ((Fk2.I(var10000, var10001, this.M)) ? 1 : 0) ? 1 : 0;
-         var10000 = (this.x) != 0;
+         var11 = Fk2.I(var10000, var10001, this.M);
+         var10000 = (this.x) ? 1 : 0;
          if (var5 == null) {
             if (this.x) {
                var10000 = 0;
@@ -864,10 +870,9 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
          var10000 *= 2;
       }
 
-      int var12;
       label88: {
-         var12 = ((var10000) ? 1 : 0) ? 1 : 0;
-         var10001 = ((this.x) != 0) != 0;
+         var12 = var10000;
+         var10001 = (this.x) ? 1 : 0;
          if (var5 == null) {
             if (this.x) {
                var10001 = 0;
@@ -881,8 +886,8 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       }
 
       label82: {
-         var10000 = ((this.b + var10001) ? 1 : 0) ? 1 : 0;
-         var10001 = ((this.l) != 0) != 0;
+         var10000 = this.b + var10001;
+         var10001 = (this.l) ? 1 : 0;
          if (var5 == null) {
             if (this.l) {
                var10001 = 0;
@@ -897,8 +902,8 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
 
       int var8;
       label76: {
-         var8 = ((var10000 + var10001) ? 1 : 0) ? 1 : 0;
-         var10000 = ((this.o) != 0) != 0;
+         var8 = var10000 + var10001;
+         var10000 = (this.o) ? 1 : 0;
          if (var5 == null) {
             if (this.o) {
                var10000 = 0;
@@ -913,8 +918,8 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
 
       int var9;
       label70: {
-         var9 = ((var10000) ? 1 : 0) ? 1 : 0;
-         var10001 = ((this.o) != 0) != 0;
+         var9 = var10000;
+         var10001 = (this.o) ? 1 : 0;
          if (var5 == null) {
             if (this.o) {
                var10001 = 0;
@@ -928,8 +933,8 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       }
 
       label64: {
-         var10000 = ((this.j + var10001) ? 1 : 0) ? 1 : 0;
-         var10001 = ((this.y) != 0) != 0;
+         var10000 = this.j + var10001;
+         var10001 = (this.y) ? 1 : 0;
          if (var5 == null) {
             if (this.y) {
                var10001 = 0;
@@ -942,7 +947,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
          var10001 *= 2;
       }
 
-      int var10 = var10000 + var10001;
+      var10 = var10000 + var10001;
       var11.l(var1, var12, var9, var8, var10);
    }
 
@@ -964,6 +969,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
    }
 
    public void f(Graphics2D var1, Rectangle var2, JComponent var3, Shape var4) {
+      int var10;
       int[] var5;
       Stroke var6;
       int var10000;
@@ -971,30 +977,30 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       var6 = RV.d(var1, this.X, this.X != null);
       var1.setPaint(var3.isEnabled() ? this.f : this.Q);
       var1.draw(var4);
-      var10000 = this.o;
+      var10000 = (this.o) ? 1 : 0;
       label173:
       if (var5 == null) {
          if (!this.o) {
-            var10000 = this.O;
+            var10000 = (this.O) ? 1 : 0;
             if (var5 != null) {
                break label173;
             }
 
             if (this.O) {
-               var10000 = this.x;
+               var10000 = (this.x) ? 1 : 0;
                if (var5 == null) {
                   var10000 = this.x ? this.q : 0;
                }
 
                int var7 = var10000;
-               int var10003 = (((var7 + var3.getWidth()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-               int var10004 = this.x;
+               int var10003 = var7 + var3.getWidth();
+               int var10004 = (this.x) ? 1 : 0;
                if (var5 == null) {
                   var10004 = this.x ? this.q : 0;
                }
 
                var10003 -= var10004;
-               var10004 = this.l;
+               var10004 = (this.l) ? 1 : 0;
                if (var5 == null) {
                   var10004 = this.l ? this.q + 1 : 0;
                }
@@ -1003,33 +1009,33 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
             }
          }
 
-         var10000 = this.y;
+         var10000 = (this.y) ? 1 : 0;
       }
 
       label166:
       if (var5 == null) {
          if (var10000 == 0) {
-            var10000 = this.m;
+            var10000 = (this.m) ? 1 : 0;
             if (var5 != null) {
                break label166;
             }
 
             if (this.m) {
-               var10000 = this.x;
+               var10000 = (this.x) ? 1 : 0;
                if (var5 == null) {
                   var10000 = this.x ? this.q : 0;
                }
 
                int var8 = var10000;
                int var10002 = var3.getHeight() - 1;
-               int var15 = (((var8 + var3.getWidth()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-               int var19 = this.x;
+               int var15 = var8 + var3.getWidth();
+               int var19 = (this.x) ? 1 : 0;
                if (var5 == null) {
                   var19 = this.x ? this.q : 0;
                }
 
                var15 -= var19;
-               var19 = this.l;
+               var19 = (this.l) ? 1 : 0;
                if (var5 == null) {
                   var19 = this.l ? this.q + 1 : 0;
                }
@@ -1038,32 +1044,32 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
             }
          }
 
-         var10000 = this.C;
+         var10000 = (this.C) ? 1 : 0;
       }
 
       label159:
       if (var5 == null) {
          if (var10000 == 0) {
-            var10000 = this.W;
+            var10000 = (this.W) ? 1 : 0;
             if (var5 != null) {
                break label159;
             }
 
             if (this.W) {
-               var10000 = this.o;
+               var10000 = (this.o) ? 1 : 0;
                if (var5 == null) {
                   var10000 = this.o ? this.q : 0;
                }
 
                int var9 = var10000;
-               int var21 = (((var9 + var3.getHeight()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-               int var10005 = this.o;
+               int var21 = var9 + var3.getHeight();
+               int var10005 = (this.o) ? 1 : 0;
                if (var5 == null) {
                   var10005 = this.o ? this.q : 0;
                }
 
                var21 -= var10005;
-               var10005 = this.y;
+               var10005 = (this.y) ? 1 : 0;
                if (var5 == null) {
                   var10005 = this.y ? this.q + 1 : 0;
                }
@@ -1072,7 +1078,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
             }
          }
 
-         var10000 = this.P;
+         var10000 = (this.P) ? 1 : 0;
       }
 
       label180: {
@@ -1081,7 +1087,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
                break label180;
             }
 
-            var10000 = this.J;
+            var10000 = (this.J) ? 1 : 0;
          }
 
          if (var5 == null) {
@@ -1089,24 +1095,24 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
                break label180;
             }
 
-            var10000 = this.o;
+            var10000 = (this.o) ? 1 : 0;
          }
 
          if (var5 == null) {
             var10000 = var10000 != 0 ? this.q : 0;
          }
 
-         int var10 = var10000;
+         var10 = var10000;
          int var10001 = var3.getWidth() - 1;
          int var17 = var3.getWidth() - 1;
-         int var23 = (((var10 + var3.getHeight()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-         int var26 = this.o;
+         int var23 = var10 + var3.getHeight();
+         int var26 = (this.o) ? 1 : 0;
          if (var5 == null) {
             var26 = this.o ? this.q : 0;
          }
 
          var23 -= var26;
-         var26 = this.y;
+         var26 = (this.y) ? 1 : 0;
          if (var5 == null) {
             var26 = this.y ? this.q + 1 : 0;
          }
@@ -1140,20 +1146,22 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
    }
 
    public Shape o(JComponent var1, boolean var2) {
+      boolean var12;
+      GeneralPath var13;
       int[] var3 = W_2.B$arrint();
-      int var10000 = var2;
+      int var10000 = (var2) ? 1 : 0;
       if (var3 == null) {
          if (var2 == 0) {
             GeneralPath var7 = new GeneralPath(0);
             boolean var8 = false;
             boolean var6 = false;
-            boolean var12 = this.o;
+            var12 = this.o;
             if (var3 == null) {
                if (this.o) {
                   float var19;
                   label261: {
-                     var13 = (((var7) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-                     int var10001 = this.x;
+                     var13 = var7;
+                     int var10001 = (this.x) ? 1 : 0;
                      if (var3 == null) {
                         if (!this.x) {
                            var19 = 0.0F;
@@ -1201,8 +1209,8 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
                            float var20;
                            float var29;
                            label237: {
-                              var20 = ((((float)(this.b - this.q - 1)) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-                              int var28 = this.o;
+                              var20 = (float)(this.b - this.q - 1);
+                              int var28 = (this.o) ? 1 : 0;
                               if (var3 == null) {
                                  if (!this.o) {
                                     var29 = 0.0F;
@@ -1257,7 +1265,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
                         if (!var8) {
                            float var22;
                            label211: {
-                              int var21 = this.l;
+                              int var21 = (this.l) ? 1 : 0;
                               if (var3 == null) {
                                  if (this.l) {
                                     var22 = (float)(this.b - this.q - this.v - 1);
@@ -1315,8 +1323,8 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
                   float var23;
                   float var31;
                   label183: {
-                     var23 = ((((float)this.q) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-                     int var30 = this.y;
+                     var23 = (float)this.q;
+                     int var30 = (this.y) ? 1 : 0;
                      if (var3 == null) {
                         if (this.y) {
                            var31 = (float)(this.j - this.q - this.v - 1);
@@ -1370,12 +1378,12 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
 
       Point[] var4 = new Point[var10000];
       boolean[] var5 = new boolean[4];
-      int var10003 = this.x;
+      int var10003 = (this.x) ? 1 : 0;
       if (var3 == null) {
          var10003 = this.x ? this.q : 0;
       }
 
-      int var10004 = this.o;
+      int var10004 = (this.o) ? 1 : 0;
       if (var3 == null) {
          var10004 = this.o ? this.q : 0;
       }
@@ -1421,7 +1429,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
          var10003 = var32.b;
       }
 
-      var10004 = this.o;
+      var10004 = (this.o) ? 1 : 0;
       if (var3 == null) {
          var10004 = this.o ? this.q : 0;
       }
@@ -1506,7 +1514,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       }
 
       var5[2] = var10002;
-      var10003 = this.x;
+      var10003 = (this.x) ? 1 : 0;
       if (var3 == null) {
          var10003 = this.x ? this.q : 0;
       }
@@ -2383,7 +2391,8 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var13 = new String[2];
+      String[] var13;
+      var13 = new String[2];
       int var11 = 0;
       String var10 = "ÿD\u0085\u0083\bYc¢\u0007Ü\u0006\u000f\u0004\u008aKØ®";
       int var12 = "ÿD\u0085\u0083\bYc¢\u0007Ü\u0006\u000f\u0004\u008aKØ®".length();
@@ -2536,7 +2545,6 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       }
    }
 }
-
 
 
 

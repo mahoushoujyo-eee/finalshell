@@ -32,6 +32,8 @@ public class Cc2 extends F8 {
    public static Integer[] g;
 
    public Cc2(String var1, String var2, int var3) {
+      super();
+      Object[] var33;
       long var6 = 210912483329447649L;
       String var5 = "";
       Ref.s(210912483329447649L, var5, var6);
@@ -73,7 +75,7 @@ public class Cc2 extends F8 {
       ((JTextArea)Ref.g(421079234105022764L, var25)).setEditable(false);
       JScrollPane var10012;
       Object var27 = 421079234105022764L;
-      super((JTextArea)Ref.g(421079234105022764L, var27));
+      // [VF-super] super((JTextArea)Ref.g(421079234105022764L, var27));
       JScrollPane var4 = var10012;
       var4.setOpaque(false);
       var4.getViewport().setOpaque(false);
@@ -105,7 +107,7 @@ public class Cc2 extends F8 {
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10015 = Registry.packArgs(new F9(this));
       long var34 = 434592463220957006L;
-      Object[] var33 = var10015;
+      var33 = var10015;
       Ref.h(434592463220957006L, var33, var34);
 
       try {
@@ -249,7 +251,7 @@ public class Cc2 extends F8 {
       Ref.h(399585344452154517L, var5, var6);
       NY var10003 = (NY)(Registry.emptyArgs());
       long var8 = 149968465491171480L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(149968465491171480L, var7, var8);
 
       try {
@@ -262,7 +264,7 @@ public class Cc2 extends F8 {
       byte var15 = 2;
       Color var10008 = (Color)(Registry.emptyArgs());
       long var10 = 345089686683358688L;
-      Object[] var9 = var10008;
+      Object var9 = var10008;
       var10008 = Ref.h(345089686683358688L, var9, var10);
 
       try {
@@ -1124,6 +1126,7 @@ public class Cc2 extends F8 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[10];
       int var11 = 0;
       String var10 = "aæêÂ ÿT\u0007\u0019ü\u000bä\u0010\u0099ú!h¤\\\u0016Ñïñ\u008b7\n\u009dR\u000b¢á¸°ý.\u000e\u0004Û\u0093º\râ\u009e°_ã×8·!ýrJ\u009f\u0005\b!:§Q\u000fr\u0086B8\\ÀNØ\u0013&H¿pîç\u0003\u008a¥*\u0005\u001dð\u0098\u009d\u0005\rb¯ yò\u001a` PÜ_Î\b";
@@ -1139,7 +1142,6 @@ public class Cc2 extends F8 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

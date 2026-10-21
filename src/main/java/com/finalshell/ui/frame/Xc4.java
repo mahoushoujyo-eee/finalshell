@@ -967,6 +967,7 @@ public class Xc4 extends C {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[8];
       int var3 = 0;
       String var2 = "\bè´Ð\u0017WúÕ\f\u0013ð7\u0012\u0087\u0012¬'u\u0086,)ûÍ®\u0015éM\u009aàn~\u0098\u0011A&A\u008e~\u0081·6í\u0003[\u0088\u0096\bq²ò\u0007Ë¹àæ\u0015\u0096:u\u000e\u0093£'ª¶Q¿`¡\\L\u008d\u0092t´fk\u0011(!`-3ãe>Ä\u0093Í\u0010h¶D\u0093ß\u00065«³ñ\u0007$";
@@ -982,7 +983,6 @@ public class Xc4 extends C {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

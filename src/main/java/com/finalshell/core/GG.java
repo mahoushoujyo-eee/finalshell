@@ -940,6 +940,7 @@ public class GG implements Ak2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[9];
       int var3 = 0;
       String var2 = "\u0089·ÑU\u0003%`â\u0005zú\u0088·Æ\u0007\u0093Ø\u000b2É\u0015©\u0004¼IÜ\u0019\u000e\u0012 \u0002-\u0085îò-\u001bÝ»\u001dUÓ\u0004*ì\u0005¤";
@@ -955,7 +956,6 @@ public class GG implements Ak2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

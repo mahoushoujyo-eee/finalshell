@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
-import com.finalshell.core.CB;
+import com.finalshell.core.ProcessMonitorService;
 
 public class XW implements Runnable {
-   public final CB H;
+   public final ProcessMonitorService H;
    public static String a;
    public static long[] b;
    public static Long[] c;
 
-   public XW(CB var1) {
+   public XW(ProcessMonitorService var1) {
       this.H = var1;
    }
 

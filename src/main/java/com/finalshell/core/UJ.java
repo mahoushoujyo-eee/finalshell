@@ -177,7 +177,7 @@ public class UJ {
          label20: {
             int var10000 = (Dm4.F$boolean()) ? 1 : 0;
             var2 = this.d();
-            boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+            boolean var1 = (var10000) != 0;
             var10000 = var2;
             if (var1) {
                if (var2 >= 0) {
@@ -206,13 +206,14 @@ public class UJ {
    }
 
    public byte[] c$arrbyte() {
+      byte[] var6;
       boolean var10000 = Dm4.J$boolean();
       int var2 = this.d();
       boolean var1 = var10000;
       int var3 = (var2 + a(9907, 620760934282485612L)) / a(14872, 799791411457606617L);
       byte[] var4 = new byte[var3];
       this.G(var4, 0, var3);
-      byte[] var6 = var4;
+      var6 = var4;
       if (!var1) {
          if ((var4[0] & a(10814, 2579964628172493817L)) != 0) {
             byte[] var5 = new byte[var4.length + 1];
@@ -234,7 +235,7 @@ public class UJ {
          label20: {
             int var10000 = (Dm4.J$boolean()) ? 1 : 0;
             var2 = this.d();
-            boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+            boolean var1 = (var10000) != 0;
             var10000 = var2;
             if (!var1) {
                if (var2 >= 0) {
@@ -301,7 +302,7 @@ public class UJ {
    public void X(int var1) {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var3 = this.X + var1 + a(16078, 7651718402987869959L);
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       var10000 = this.g.length;
       int var10001 = var3;
       if (!var2) {
@@ -384,6 +385,7 @@ public class UJ {
    }
 
    public static UJ h(byte[][] var0) {
+      UJ var6;
       int var2 = var0.length * 4;
       boolean var10000 = Dm4.J$boolean();
       int var3 = 0;
@@ -402,7 +404,6 @@ public class UJ {
 
       while (true) {
          if (var4 < var0.length) {
-      int var6;
             var6 = var5;
             if (var1) {
                break;
@@ -411,7 +412,6 @@ public class UJ {
             var5.q(var0[var4]);
             var4++;
             if (!var1) {
-      int var6;
                continue;
             }
          }
@@ -450,6 +450,7 @@ public class UJ {
    }
 
    public static void __vfClinit__() {
+      long[] var6;
       long var8 = 7413961304399841567L;
       long[] var14 = new long[24];
       int var11 = 0;
@@ -484,7 +485,7 @@ public class UJ {
                      a = var14;
                      b = new Integer[24];
                      long var0 = 2356218982051855414L;
-                     long[] var6 = new long[6];
+                     var6 = new long[6];
                      int var3 = 0;
                      String var4 = "\"k\u0002ªâr¥\u0000r\u0019f¹ØÇ¡ÓT\u0096 úìcºyg:\\àÒ\n]Ü";
                      int var5 = "\"k\u0002ªâr¥\u0000r\u0019f¹ØÇ¡ÓT\u0096 úìcºyg:\\àÒ\n]Ü".length();
@@ -576,7 +577,6 @@ public class UJ {
       }
    }
 }
-
 
 
 

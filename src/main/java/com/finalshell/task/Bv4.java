@@ -1,7 +1,7 @@
 package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 
 public class Bv4 implements Runnable {
    public final Xh2_2 W;
@@ -19,7 +19,7 @@ public class Bv4 implements Runnable {
       Object var5 = 489572751534480599L;
       Ref.g(489572751534480599L, var5);
       Object var7 = 230619793659643674L;
-      Connection4 var10004 = (Connection4)Ref.g(230619793659643674L, var7);
+      ConnectionInfoPanel var10004 = (ConnectionInfoPanel)Ref.g(230619793659643674L, var7);
       Object var9 = 456436722054627714L;
       Ref.g(456436722054627714L, var9);
       Object var11 = 634156811479991088L;
@@ -27,7 +27,7 @@ public class Bv4 implements Runnable {
       Object var13 = 489572751534480599L;
       Object var10008 = Ref.g(489572751534480599L, var13);
       Object var15 = 230619793659643674L;
-      ((Connection4)var10008).startEditingAtPath(((Connection4)Ref.g(230619793659643674L, var15)).getSelectionPath());
+      ((ConnectionInfoPanel)var10008).startEditingAtPath(((ConnectionInfoPanel)Ref.g(230619793659643674L, var15)).getSelectionPath());
    }
 }
 

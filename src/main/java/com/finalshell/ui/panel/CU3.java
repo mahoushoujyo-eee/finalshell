@@ -24,6 +24,9 @@ public class CU3 extends JLabel {
 
    @Override
    public void paint(Graphics var1) {
+      Float var33;
+      Float var36;
+      Long var39;
       String[] var10000 = F8.y();
       super.paint(var1);
       Graphics2D var3 = (Graphics2D)var1;
@@ -43,9 +46,9 @@ public class CU3 extends JLabel {
                var3.setColor((Color)Registry.lookupField(591222373387230919L).get(null));
                Object var11 = 148570893766943457L;
                Ref.g(148570893766943457L, var11);
-               Object[] var10002 = Registry.emptyArgs();
+               Object var10002 = Registry.emptyArgs();
                long var14 = 331249694259892086L;
-               Object[] var13 = var10002;
+               Object var13 = var10002;
                var10002 = Ref.h(331249694259892086L, var13, var14);
 
                try {
@@ -61,9 +64,9 @@ public class CU3 extends JLabel {
                int var9 = (int)((double)((float)this.getWidth() - (float)var8) * var4) + var7;
                Object var15 = 148570893766943457L;
                Ref.g(148570893766943457L, var15);
-               Object[] var10004 = Registry.emptyArgs();
+               Object var10004 = Registry.emptyArgs();
                long var18 = 225195147661966806L;
-               Object[] var17 = var10004;
+               Object var17 = var10004;
                var10004 = Ref.h(225195147661966806L, var17, var18);
 
                try {
@@ -125,9 +128,9 @@ public class CU3 extends JLabel {
 
       Object var19 = 148570893766943457L;
       Ref.g(148570893766943457L, var19);
-      Object[] var34 = Registry.emptyArgs();
+      Object var34 = Registry.emptyArgs();
       long var22 = 218205101142805647L;
-      Object[] var21 = var34;
+      Object var21 = var34;
       var34 = Ref.h(218205101142805647L, var21, var22);
 
       try {
@@ -149,7 +152,6 @@ public class CU3 extends JLabel {
       label72:
       if (var2 == null) {
          if (var37 > 0) {
-      int var37;
             var37 = var29;
             if (var2 != null) {
                break label72;
@@ -230,7 +232,6 @@ public class CU3 extends JLabel {
       Ref.s(148570893766943457L, var1, var3);
    }
 }
-
 
 
 

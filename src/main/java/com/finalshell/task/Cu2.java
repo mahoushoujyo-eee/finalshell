@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
 import com.finalshell.core.AU;
-import com.finalshell.core.DH;
+import com.finalshell.core.ZModemFileStream;
 import java.io.IOException;
 
 public class Cu2 implements Runnable {
    public final AU Y;
-   public final DH q;
+   public final ZModemFileStream q;
 
-   public Cu2(DH var1, AU var2) {
+   public Cu2(ZModemFileStream var1, AU var2) {
       this.q = var1;
       this.Y = var2;
    }

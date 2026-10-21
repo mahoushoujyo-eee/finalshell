@@ -57,7 +57,7 @@ public class NetworkInterfacePanel extends JPanel {
       String var2 = a(13038, -17431);
       JPanel var10003 = (JPanel)(Registry.emptyArgs());
       long var12 = 147815881914901321L;
-      Object[] var11 = var10003;
+      Object var11 = var10003;
       var10003 = Ref.h(147815881914901321L, var11, var12);
 
       try {
@@ -105,7 +105,7 @@ public class NetworkInterfacePanel extends JPanel {
       Ref.s(432930009133897766L, var31, var32);
       JSeparator var10015 = (JSeparator)(Registry.emptyArgs());
       long var34 = 317936218089548851L;
-      Object[] var33 = var10015;
+      Object var33 = var10015;
       var10015 = Ref.h(317936218089548851L, var33, var34);
 
       try {
@@ -125,7 +125,7 @@ public class NetworkInterfacePanel extends JPanel {
       Refresh.K();
       JPanel var10018 = (JPanel)(Registry.emptyArgs());
       long var40 = 147815881914901321L;
-      Object[] var39 = var10018;
+      Object var39 = var10018;
       var10018 = Ref.h(147815881914901321L, var39, var40);
 
       try {
@@ -159,7 +159,7 @@ public class NetworkInterfacePanel extends JPanel {
       Ref.s(293311136137210660L, var51, var52);
       JSeparator var10025 = (JSeparator)(Registry.emptyArgs());
       long var54 = 317936218089548851L;
-      Object[] var53 = var10025;
+      Object var53 = var10025;
       var10025 = Ref.h(317936218089548851L, var53, var54);
 
       try {
@@ -171,7 +171,7 @@ public class NetworkInterfacePanel extends JPanel {
       this.add(var10025, var2);
       var10025 = Registry.emptyArgs();
       long var56 = 147815881914901321L;
-      Object[] var55 = var10025;
+      Object var55 = var10025;
       var10025 = Ref.h(147815881914901321L, var55, var56);
 
       try {
@@ -191,7 +191,7 @@ public class NetworkInterfacePanel extends JPanel {
       Ref.s(437577365451753391L, var59, var60);
       JSeparator var10029 = (JSeparator)(Registry.emptyArgs());
       long var62 = 317936218089548851L;
-      Object[] var61 = var10029;
+      Object var61 = var10029;
       var10029 = Ref.h(317936218089548851L, var61, var62);
 
       try {
@@ -203,7 +203,7 @@ public class NetworkInterfacePanel extends JPanel {
       this.add(var10029, var2);
       var10029 = Registry.emptyArgs();
       long var64 = 147815881914901321L;
-      Object[] var63 = var10029;
+      Object var63 = var10029;
       var10029 = Ref.h(147815881914901321L, var63, var64);
 
       try {
@@ -223,7 +223,7 @@ public class NetworkInterfacePanel extends JPanel {
       Ref.s(443340494709813478L, var67, var68);
       JSeparator var10033 = (JSeparator)(Registry.emptyArgs());
       long var70 = 317936218089548851L;
-      Object[] var69 = var10033;
+      Object var69 = var10033;
       var10033 = Ref.h(317936218089548851L, var69, var70);
 
       try {
@@ -259,9 +259,9 @@ public class NetworkInterfacePanel extends JPanel {
    }
 
    public JTextField w(String var1) {
-      Object[] var10001 = Registry.packArgs(this, var1);
+      Object var10001 = Registry.packArgs(this, var1);
       long var3 = 381975169159785855L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(381975169159785855L, var2, var3);
 
       try {
@@ -274,7 +274,7 @@ public class NetworkInterfacePanel extends JPanel {
    public C_C O(JPanel var1, String var2) {
       JPanel var10001 = (JPanel)(Registry.emptyArgs());
       long var6 = 411885133871692904L;
-      Object[] var5 = var10001;
+      Object var5 = var10001;
       var10001 = Ref.h(411885133871692904L, var5, var6);
 
       try {
@@ -287,7 +287,7 @@ public class NetworkInterfacePanel extends JPanel {
       var1.add(var3, a(12998, -430));
       JPanel var10003 = Registry.packArgs(var2);
       long var8 = 350453410762106234L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(350453410762106234L, var7, var8);
 
       try {
@@ -300,7 +300,7 @@ public class NetworkInterfacePanel extends JPanel {
       var10003.add(this, (String)Ref.g(556219558628308046L, var9));
       C_C var10004 = (C_C)(Registry.emptyArgs());
       long var12 = 187656282522316428L;
-      Object[] var11 = var10004;
+      Object var11 = var10004;
       var10004 = Ref.h(187656282522316428L, var11, var12);
 
       try {
@@ -319,7 +319,7 @@ public class NetworkInterfacePanel extends JPanel {
    public JTextField p(JPanel var1, String var2) {
       JPanel var10001 = (JPanel)(Registry.emptyArgs());
       long var6 = 411885133871692904L;
-      Object[] var5 = var10001;
+      Object var5 = var10001;
       var10001 = Ref.h(411885133871692904L, var5, var6);
 
       try {
@@ -332,7 +332,7 @@ public class NetworkInterfacePanel extends JPanel {
       var1.add(var3, a(13006, 21717));
       JPanel var10003 = Registry.packArgs(var2);
       long var8 = 350453410762106234L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(350453410762106234L, var7, var8);
 
       try {
@@ -345,7 +345,7 @@ public class NetworkInterfacePanel extends JPanel {
       var10003.add(this, (String)Ref.g(556219558628308046L, var9));
       Ne4 var10004 = (Ne4)(Registry.emptyArgs());
       long var12 = 277710122879981522L;
-      Object[] var11 = var10004;
+      Object var11 = var10004;
       var10004 = Ref.h(277710122879981522L, var11, var12);
 
       try {
@@ -361,6 +361,31 @@ public class NetworkInterfacePanel extends JPanel {
    }
 
    public void p(KV var1) {
+      boolean var227;
+      String var238;
+      Long var241;
+      String var242;
+      Long var248;
+      Long var270;
+      Long var274;
+      Long var278;
+      Long var282;
+      Long var288;
+      Long var291;
+      Long var293;
+      Long var300;
+      Long var309;
+      Long var312;
+      Long var319;
+      Long var322;
+      Long var329;
+      Long var332;
+      Long var336;
+      Long var347;
+      Long var351;
+      Float var356;
+      Long var360;
+      long var43;
       Refresh.K();
       Object[] var10003 = Registry.emptyArgs();
       long var16 = 147203951713786110L;
@@ -421,7 +446,7 @@ public class NetworkInterfacePanel extends JPanel {
                var10014 = var3;
                StringBuilder var10015 = new StringBuilder().append("");
                Object[] var10016 = Registry.packArgs(Registry.lookupField(233921421001411278L).getFloat(var1));
-               long var43 = 122164552401629502L;
+               var43 = 122164552401629502L;
                var236 = Ref.h2(122164552401629502L, var43);
 
                try {
@@ -561,7 +586,7 @@ public class NetworkInterfacePanel extends JPanel {
 
          float var4 = (float)(var236 / var245);
          new StringBuilder();
-         Object[] var249 = Registry.packArgs(100.0F * var4);
+         Object var249 = Registry.packArgs(100.0F * var4);
          long var65 = 443004786775321843L;
          Object var253 = Ref.h2(443004786775321843L, var65);
 
@@ -576,9 +601,9 @@ public class NetworkInterfacePanel extends JPanel {
          var253 = (JTextField)Ref.g(409059425482691929L, var67);
          new StringBuilder().append("");
          b(961, 3880615434308026414L);
-         Object[] var268 = Registry.emptyArgs();
+         Object var268 = Registry.emptyArgs();
          long var70 = 209547680018014679L;
-         Object[] var69 = var268;
+         Object var69 = var268;
          var268 = Ref.h(209547680018014679L, var69, var70);
 
          try {
@@ -587,7 +612,7 @@ public class NetworkInterfacePanel extends JPanel {
             throw var206.getTargetException();
          }
 
-         Object[] var266 = Registry.e(var1 * var270);
+         Object var266 = Registry.e(var1 * var270);
          long var71 = 148259110884974759L;
          var268 = Ref.h2(148259110884974759L, var71);
 
@@ -599,9 +624,9 @@ public class NetworkInterfacePanel extends JPanel {
 
          var266.append(var268.replaceAll(a(13000, 24148), "M")).append(a(13017, -31426));
          b(22466, 5467834802285499436L);
-         Object[] var10025 = Registry.emptyArgs();
+         Object var10025 = Registry.emptyArgs();
          long var74 = 168084160108370846L;
-         Object[] var73 = var10025;
+         Object var73 = var10025;
          var10025 = Ref.h(168084160108370846L, var73, var74);
 
          try {
@@ -610,7 +635,7 @@ public class NetworkInterfacePanel extends JPanel {
             throw var204.getTargetException();
          }
 
-         Object[] var10024 = Registry.e(var1 * var274);
+         Object var10024 = Registry.e(var1 * var274);
          long var75 = 148259110884974759L;
          var10025 = Ref.h2(148259110884974759L, var75);
 
@@ -622,9 +647,9 @@ public class NetworkInterfacePanel extends JPanel {
 
          var10024.append(var10025.replaceAll(a(13023, 24438), "M")).append(a(13021, -25050)).append(var5).append(a(13014, -15174));
          b(22466, 5467834802285499436L);
-         Object[] var10027 = Registry.emptyArgs();
+         Object var10027 = Registry.emptyArgs();
          long var78 = 209547680018014679L;
-         Object[] var77 = var10027;
+         Object var77 = var10027;
          var10027 = Ref.h(209547680018014679L, var77, var78);
 
          try {
@@ -633,9 +658,9 @@ public class NetworkInterfacePanel extends JPanel {
             throw var202.getTargetException();
          }
 
-         Object[] var10029 = Registry.emptyArgs();
+         Object var10029 = Registry.emptyArgs();
          long var80 = 168084160108370846L;
-         Object[] var79 = var10029;
+         Object var79 = var10029;
          var10029 = Ref.h(168084160108370846L, var79, var80);
 
          try {
@@ -659,7 +684,7 @@ public class NetworkInterfacePanel extends JPanel {
          if (var1 != null) {
             var10027 = Registry.emptyArgs();
             long var84 = 414941625058048834L;
-            Object[] var83 = var10027;
+            Object var83 = var10027;
             var10027 = Ref.h(414941625058048834L, var83, var84);
 
             try {
@@ -672,7 +697,7 @@ public class NetworkInterfacePanel extends JPanel {
                float var283 = 1.0F;
                var10029 = Registry.emptyArgs();
                long var86 = 348947692501054575L;
-               Object[] var85 = var10029;
+               Object var85 = var10029;
                var10029 = Ref.h(348947692501054575L, var85, var86);
 
                try {
@@ -682,9 +707,9 @@ public class NetworkInterfacePanel extends JPanel {
                }
 
                float var285 = var1 * (float)var291;
-               Object[] var10030 = Registry.emptyArgs();
+               Object var10030 = Registry.emptyArgs();
                long var88 = 414941625058048834L;
-               Object[] var87 = var10030;
+               Object var87 = var10030;
                var10030 = Ref.h(414941625058048834L, var87, var88);
 
                try {
@@ -712,9 +737,9 @@ public class NetworkInterfacePanel extends JPanel {
             var10028 = (JTextField)Ref.g(293311136137210660L, var91);
             new StringBuilder().append("");
             b(22466, 5467834802285499436L);
-            Object[] var10032 = Registry.emptyArgs();
+            Object var10032 = Registry.emptyArgs();
             long var94 = 414941625058048834L;
-            Object[] var93 = var10032;
+            Object var93 = var10032;
             var10032 = Ref.h(414941625058048834L, var93, var94);
 
             try {
@@ -723,7 +748,7 @@ public class NetworkInterfacePanel extends JPanel {
                throw var195.getTargetException();
             }
 
-            Object[] var297 = Registry.e(var1 * var300);
+            Object var297 = Registry.e(var1 * var300);
             long var95 = 148259110884974759L;
             var10032 = Ref.h2(148259110884974759L, var95);
 
@@ -735,9 +760,9 @@ public class NetworkInterfacePanel extends JPanel {
 
             var297.append(var10032.replaceAll(a(13023, 24438), "M")).append(a(13004, -24223));
             b(22466, 5467834802285499436L);
-            Object[] var10034 = Registry.emptyArgs();
+            Object var10034 = Registry.emptyArgs();
             long var98 = 348947692501054575L;
-            Object[] var97 = var10034;
+            Object var97 = var10034;
             var10034 = Ref.h(348947692501054575L, var97, var98);
 
             try {
@@ -746,7 +771,7 @@ public class NetworkInterfacePanel extends JPanel {
                throw var193.getTargetException();
             }
 
-            Object[] var10033 = Registry.e(var1 * var312);
+            Object var10033 = Registry.e(var1 * var312);
             long var99 = 148259110884974759L;
             var10034 = Ref.h2(148259110884974759L, var99);
 
@@ -758,9 +783,9 @@ public class NetworkInterfacePanel extends JPanel {
 
             var10033.append(var10034.replaceAll(a(13023, 24438), "M")).append(a(13020, 15201)).append(var6).append(a(13035, 27442));
             b(22466, 5467834802285499436L);
-            Object[] var10036 = Registry.emptyArgs();
+            Object var10036 = Registry.emptyArgs();
             long var102 = 414941625058048834L;
-            Object[] var101 = var10036;
+            Object var101 = var10036;
             var10036 = Ref.h(414941625058048834L, var101, var102);
 
             try {
@@ -769,9 +794,9 @@ public class NetworkInterfacePanel extends JPanel {
                throw var191.getTargetException();
             }
 
-            Object[] var10038 = Registry.emptyArgs();
+            Object var10038 = Registry.emptyArgs();
             long var104 = 348947692501054575L;
-            Object[] var103 = var10038;
+            Object var103 = var10038;
             var10038 = Ref.h(348947692501054575L, var103, var104);
 
             try {
@@ -866,7 +891,7 @@ public class NetworkInterfacePanel extends JPanel {
                new StringBuilder();
                String var304 = (String)(Registry.emptyArgs());
                long var126 = 326911699754169518L;
-               Object[] var125 = var304;
+               Object var125 = var304;
                var304 = Ref.h(326911699754169518L, var125, var126);
 
                try {
@@ -876,9 +901,9 @@ public class NetworkInterfacePanel extends JPanel {
                }
 
                var224.append((String)var304).append("\t");
-               Object[] var307 = Registry.emptyArgs();
+               Object var307 = Registry.emptyArgs();
                long var128 = 174539511860798304L;
-               Object[] var127 = var307;
+               Object var127 = var307;
                var307 = Ref.h(174539511860798304L, var127, var128);
 
                try {
@@ -898,9 +923,9 @@ public class NetworkInterfacePanel extends JPanel {
                }
 
                var307.append((String)var316).append("\t");
-               Object[] var10035 = Registry.emptyArgs();
+               Object var10035 = Registry.emptyArgs();
                long var132 = 267640906957606528L;
-               Object[] var131 = var10035;
+               Object var131 = var10035;
                var10035 = Ref.h(267640906957606528L, var131, var132);
 
                try {
@@ -920,9 +945,9 @@ public class NetworkInterfacePanel extends JPanel {
                }
 
                var10035.append((String)var324).append("\t");
-               Object[] var327 = Registry.emptyArgs();
+               Object var327 = Registry.emptyArgs();
                long var136 = 513993714383704813L;
-               Object[] var135 = var327;
+               Object var135 = var327;
                var327 = Ref.h(513993714383704813L, var135, var136);
 
                try {
@@ -942,9 +967,9 @@ public class NetworkInterfacePanel extends JPanel {
                }
 
                var327.append((String)var333).append(a(13033, 15821));
-               Object[] var10039 = Registry.emptyArgs();
+               Object var10039 = Registry.emptyArgs();
                long var140 = 308027402773800118L;
-               Object[] var139 = var10039;
+               Object var139 = var10039;
                var10039 = Ref.h(308027402773800118L, var139, var140);
 
                try {
@@ -988,7 +1013,7 @@ public class NetworkInterfacePanel extends JPanel {
          StringBuffer var223 = new StringBuffer();
          ArrayList var338 = (ArrayList)(Registry.emptyArgs());
          long var146 = 568173678114107647L;
-         Object[] var145 = var338;
+         Object var145 = var338;
          var338 = Ref.h(568173678114107647L, var145, var146);
 
          try {
@@ -1006,7 +1031,7 @@ public class NetworkInterfacePanel extends JPanel {
                Kl2 var13 = (Kl2)var225.get(var12);
                String var342 = (String)(Registry.emptyArgs());
                long var148 = 472130306342185677L;
-               Object[] var147 = var342;
+               Object var147 = var342;
                var342 = Ref.h(472130306342185677L, var147, var148);
 
                try {
@@ -1030,9 +1055,9 @@ public class NetworkInterfacePanel extends JPanel {
 
                      var345 = var223;
                      var10041 = new StringBuilder().append(var14).append("\t");
-                     Object[] var10043 = Registry.emptyArgs();
+                     Object var10043 = Registry.emptyArgs();
                      long var150 = 399113218510016089L;
-                     Object[] var149 = var10043;
+                     Object var149 = var10043;
                      var10043 = Ref.h(399113218510016089L, var149, var150);
 
                      try {
@@ -1052,9 +1077,9 @@ public class NetworkInterfacePanel extends JPanel {
                      }
 
                      var10043.append((String)var10044).append("\t");
-                     Object[] var10045 = Registry.emptyArgs();
+                     Object var10045 = Registry.emptyArgs();
                      long var154 = 431375544983974376L;
-                     Object[] var153 = var10045;
+                     Object var153 = var10045;
                      var10045 = Ref.h(431375544983974376L, var153, var154);
 
                      try {
@@ -1075,9 +1100,9 @@ public class NetworkInterfacePanel extends JPanel {
 
                      var10045.append((String)var10046).append("\t");
                      float var354 = 100.0F;
-                     Object[] var10048 = Registry.emptyArgs();
+                     Object var10048 = Registry.emptyArgs();
                      long var158 = 274681686783551551L;
-                     Object[] var157 = var10048;
+                     Object var157 = var10048;
                      var10048 = Ref.h(274681686783551551L, var157, var158);
 
                      try {
@@ -1097,9 +1122,9 @@ public class NetworkInterfacePanel extends JPanel {
                      }
 
                      var10047.append((String)var10048).append(a(13007, -27709));
-                     Object[] var10049 = Registry.emptyArgs();
+                     Object var10049 = Registry.emptyArgs();
                      long var162 = 405237998940608713L;
-                     Object[] var161 = var10049;
+                     Object var161 = var10049;
                      var10049 = Ref.h(405237998940608713L, var161, var162);
 
                      try {
@@ -1121,7 +1146,7 @@ public class NetworkInterfacePanel extends JPanel {
                      StringBuilder var362 = var10049.append((String)var10050).append("\t");
                      String var10051 = (String)(Registry.emptyArgs());
                      long var166 = 607781649910455471L;
-                     Object[] var165 = var10051;
+                     Object var165 = var10051;
                      var10051 = Ref.h(607781649910455471L, var165, var166);
 
                      try {
@@ -2020,6 +2045,7 @@ public class NetworkInterfacePanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var43;
       String[] var21 = new String[41];
       int var19 = 0;
       String var18 = "儷宦\u0004儮桧狥杹\u001d¥ÉÞy\u0082{%>¿\u00adv\u0091\u0017\u009b\u009b{:Ò q\u008fÕÔ\u0014\u009f©\\\u001dK\u0005Ê\u0090\u008f\u001b[\u0002s1\u0004á[\u0099¡\u0004罧縷捯叄\br\u008c\u0017\u0013崄俗疫7\u000brä\u0013·9\u0018%\u0015«R\u0098\u0003?\u001eÄ\u0019呇秲\u0010?\u0013栙弦攑y颐猆\u0088罊寎LÇ\u0093\u0013¯J± \u000e>P\u0004摷伃簼绮\u0014哹禝Ç匊郡M挗旊õ匥逑遠幋V揃旛逫庫 ã\u0004c¬É_\u001a\u0093&\u0018\u0084ZÄ>ÈÌG\u001b{\u0089ÃD\u0085\u0010\u0012´\u0086Ê.MÙ¨¶\f\u0086\u0019p\u0095¾\u0086*¹¡kÿ¶\u00030\"\u0098\u0005¾\bô厽畹\b×2£Ä嶒伭畹h\u000ej°'V½\u009eÂ\u0081S)è\u0011÷É\u0005\u0004cVe`\r\u0080¡°\u0082¦d$ïÚª\u0006\u009db\u0003eÓõ\u0003É\u008d`\u0004亸柉君礲\u0004砪亮杏柿\u0002QÈ\u0013吨礁ýA妀峡u嵝疡S\u0096厝甼\u0007揕辺瀜\n7\u0002克框\u0007ÀÄA\u001a剕俐a\bã\u0094Ü$+°\u0095u\u0003季敃u\u0007?x¾\u008d努伢\u009e\u000e<õÚ\u0095\u0000\\\u0002\u009dOC\u0004XÃÏ\u0003\u008e|O\u0002丢掗\u001aDöâ\u009e\u0005\u0087Õ ±O´ß|Rú\u0012ÇàNØ\u0095å¦ Õ\u0099\u0010¤Ò4ì6©6U\u0084Ì\u001a\u0004§ôqÝ\u000eæ>\u0081ìksoxâÿ±Ïu=";
@@ -2035,7 +2061,6 @@ public class NetworkInterfacePanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      Object[] var43;
             label74: {
                char[] var49 = var10001.toCharArray();
                int var10004 = var49.length;

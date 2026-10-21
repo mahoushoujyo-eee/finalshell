@@ -188,6 +188,7 @@ public class E2 extends JComponent {
 
    @Override
    public void paintComponent(Graphics var1) {
+      Double var8;
       int[] var10000 = P();
       super.paintComponent(var1);
       int[] var2 = var10000;
@@ -202,7 +203,6 @@ public class E2 extends JComponent {
             if (var2 == null) {
                if (var18) {
                   Area var7;
-                  Double var8;
                   Color var19;
                   label52: {
                      var7 = new Area(new Double(0.0, 0.0, (double)var5, (double)var5));

@@ -11,8 +11,8 @@ import com.finalshell.ui.listener.TY;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.model.Kl4;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Address;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import com.finalshell.ui.panel.PathPanel;
 import java.awt.Color;
 import java.awt.Cursor;
@@ -42,7 +42,7 @@ public class Xw2 extends JDialog {
    public ArrayList Z;
    public String V;
    public Km2 p;
-   public Connection4 d;
+   public ConnectionInfoPanel d;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -69,13 +69,14 @@ public class Xw2 extends JDialog {
 
    public Xw2(Window var1, String var2) {
       super(var1, var2);
+      long var33;
       Registry.lookupField(619905985051257260L).setInt(this, Registry.lookupField(265275935393846693L).getInt(null));
       Registry.lookupField(527873833330177408L).setInt(this, Registry.lookupField(311183796363677834L).getInt(null));
       ArrayList var10001 = new ArrayList();
       long var19 = 599144936174029496L;
       ArrayList var18 = var10001;
       Ref.s(599144936174029496L, var18, var19);
-      Address.i();
+      FileBrowserAddressBar.i();
       Registry.emptyArgs();
       long var20 = 270389152141252877L;
       Ref.h2(270389152141252877L, var20);
@@ -117,7 +118,7 @@ public class Xw2 extends JDialog {
       ((JPanel)Ref.g(246429828742070477L, var28)).setLayout(var9);
       JScrollPane var10007;
       Object var30 = 246429828742070477L;
-      super((JPanel)Ref.g(246429828742070477L, var30));
+      // [VF-super] super((JPanel)Ref.g(246429828742070477L, var30));
       JScrollPane var10 = var10007;
       var10.setAutoscrolls(false);
       var10.setOpaque(false);
@@ -125,7 +126,7 @@ public class Xw2 extends JDialog {
       var10.getViewport().setOpaque(false);
       var7.add(var10, a(2106, 8217));
       Object[] var10008 = Registry.emptyArgs();
-      long var33 = 623400893456259775L;
+      var33 = 623400893456259775L;
       Object[] var32 = var10008;
       Ref.h(623400893456259775L, var32, var33);
 
@@ -137,7 +138,7 @@ public class Xw2 extends JDialog {
 
       ArrayList var10009 = Registry.emptyArgs();
       long var35 = 250284129792311327L;
-      Object[] var34 = var10009;
+      Object var34 = var10009;
       var10009 = Ref.h(250284129792311327L, var34, var35);
 
       try {
@@ -267,7 +268,7 @@ public class Xw2 extends JDialog {
       Ref.g(540498928662567395L, var70);
       Km2 var10023 = (Km2)(Registry.emptyArgs());
       long var73 = 126176237984401993L;
-      Object[] var72 = var10023;
+      Object var72 = var10023;
       var10023 = Ref.h(126176237984401993L, var72, var73);
 
       try {
@@ -280,7 +281,7 @@ public class Xw2 extends JDialog {
       var102.addMouseListener(new OB(this));
       String var110 = (String)(Registry.emptyArgs());
       long var75 = 351281291503408509L;
-      Object[] var74 = var110;
+      Object var74 = var110;
       var110 = Ref.h(351281291503408509L, var74, var75);
 
       try {
@@ -358,22 +359,22 @@ public class Xw2 extends JDialog {
    }
 
    public void F() {
-      Address.g();
+      FileBrowserAddressBar.g();
       boolean var2 = false;
       Object var14 = 540498928662567395L;
       Ref.g(540498928662567395L, var14);
-      Connection4 var10003 = (Connection4)(Registry.emptyArgs());
+      ConnectionInfoPanel var10003 = (ConnectionInfoPanel)(Registry.emptyArgs());
       long var17 = 479006944855319308L;
-      Object[] var16 = var10003;
+      Object var16 = var10003;
       var10003 = Ref.h(479006944855319308L, var16, var17);
 
       try {
-         var10003 = (Connection4)var10003;
+         var10003 = (ConnectionInfoPanel)var10003;
       } catch (InvocationTargetException var60) {
          throw var60.getTargetException();
       }
 
-      Connection4 var3 = var10003;
+      ConnectionInfoPanel var3 = var10003;
       var3.setDragEnabled(false);
       Object[] var10004 = Registry.emptyArgs();
       long var19 = 208260183617353218L;
@@ -447,7 +448,6 @@ public class Xw2 extends JDialog {
                   }
 
                   if (!var10010) {
-      Iterator var68;
       Iterator var68;
                      break label109;
                   }
@@ -1384,6 +1384,7 @@ public class Xw2 extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[20];
       int var11 = 0;
       String var10 = "¨©z\u0002\u009a\u000e\u008a3íÜû\ntÞÈSaæ\u0003\u000b\u0004遭抳丄俾EWqaÿhÔqClN\u009aæÕf\b#á\u0018¾C\u0006wéeìè¶a\u000fnÇÚ×Ý@\tçÁ\u0080ºP\u0086\u0015ù)îaöP\u0007HÆ\u001e÷ED\u001ag£\u0090öR\u000fUÈ!È`2\u001cj\u0004âzY\u0097yE xTßè¹hB@]\u009dZJý¨0j-Ç`\u0002磮孜\u00068\u0012\u008døÒ_\u001b'\u001dKYl«\u009c\u0086°æ¬{[ë\u001e\b\u008e\u0014DstØÊ\u0094#¹I\u0004Ò´)¦!n ¢#\u0081úñ6\u0098\u0006\u0094Z\u0098Z\\9\u0080\u0081h\u000f\u0098_]1ÂÅ\u007fÇqEà\u0014-\u0002及淟\u0005R½Áf|\u0005\u009f xÅK\u0007柄迯所彪料亐妬\u000eqp\u0092´\u0014\u0007\u0089\u007fwg\u0096`ýÛ\f\u0080+\u000b\u0000ö´ãÑò1Ä7\u000e/ÞYam½¦(\u0092\u0088*8jÐ\u00167g\u0089ÛäåMÎ\u0016b>¹¸õ\u0087\u0017ÒÏ\u007f\tÆß";
@@ -1567,7 +1568,6 @@ public class Xw2 extends JDialog {
       }
    }
 }
-
 
 
 

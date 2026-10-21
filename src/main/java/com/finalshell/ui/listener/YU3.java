@@ -19,6 +19,9 @@ public class YU3 extends MouseAdapter {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      boolean var30;
+      Integer var35;
+      Integer var38;
       int var2;
       int var26;
       label219: {
@@ -205,9 +208,9 @@ public class YU3 extends MouseAdapter {
                            long var11 = 306266403902896148L;
                            Object[] var10 = var10002;
                            Ref.h(306266403902896148L, var10, var11);
-                           Object[] var10003 = Registry.emptyArgs();
+                           Object var10003 = Registry.emptyArgs();
                            long var13 = 221275956571705390L;
-                           Object[] var12 = var10003;
+                           Object var12 = var10003;
                            var10003 = Ref.h(221275956571705390L, var12, var13);
 
                            try {
@@ -242,9 +245,9 @@ public class YU3 extends MouseAdapter {
                long var17 = 306266403902896148L;
                Object[] var16 = var33;
                Ref.h(306266403902896148L, var16, var17);
-               Object[] var36 = Registry.emptyArgs();
+               Object var36 = Registry.emptyArgs();
                long var19 = 617094797338525076L;
-               Object[] var18 = var36;
+               Object var18 = var36;
                var36 = Ref.h(617094797338525076L, var18, var19);
 
                try {

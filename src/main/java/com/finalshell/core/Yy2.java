@@ -2,26 +2,26 @@ package com.finalshell.core;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.adapter.Proxy;
+import com.finalshell.ui.adapter.ProxySelectionAdapter;
 import com.finalshell.ui.listener.Jh2;
 import com.finalshell.ui.model.C62;
-import com.finalshell.ui.panel.Edit;
+import com.finalshell.ui.panel.ProxySelectionPanel;
 import com.finalshell.ui.panel.Ky4;
 import java.awt.Color;
 import javax.swing.JTable;
 import javax.swing.table.TableColumnModel;
 
 public class Yy2 extends JTable {
-   public Edit n;
+   public ProxySelectionPanel n;
    public C62 f;
    public static long[] a;
    public static Integer[] b;
 
-   public Yy2(Edit var1, C62 var2) {
+   public Yy2(ProxySelectionPanel var1, C62 var2) {
    super();
       short var10000 = 24765;
       long var10001 = 747603782168300477L;
-      Ky4[] var10002 = Edit.t();
+      Ky4[] var10002 = ProxySelectionPanel.t();
       long var8 = 567473403098937361L;
       Ref.s(567473403098937361L, var1, var8);
       long var10 = 578695750651372926L;
@@ -29,7 +29,7 @@ public class Yy2 extends JTable {
       this.setModel(var2);
       this.setSelectionBackground((Color)Registry.lookupField(623875439513009390L).get(null));
       this.setSelectionMode(0);
-      Proxy var4 = new Proxy();
+      ProxySelectionAdapter var4 = new ProxySelectionAdapter();
       this.setDefaultRenderer(LD3_2.class, var4);
       this.setShowGrid(false);
       int var5 = a((int)var10002, (long)this);

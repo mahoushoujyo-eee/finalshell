@@ -39,6 +39,7 @@ public final class RX_2 extends R8_2 {
 
    @Override
    public String toString() {
+      StringBuilder var4;
       StringBuilder var2 = new StringBuilder().append(RG_2.o(this.D)).append(this.C).append((char)a(29871, 1150991243162284415L)).append(this.p[0]);
       String[] var10000 = RG_2.C();
       int var3 = 1;
@@ -73,6 +74,7 @@ public final class RX_2 extends R8_2 {
    }
 
    public static String b(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 31480) & 65535;
       if (e[var2] == null) {
          char[] var3 = d[var2].toCharArray();
@@ -847,7 +849,7 @@ public final class RX_2 extends R8_2 {
                var10000 = 24;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;

@@ -288,6 +288,7 @@ public class N implements Iterator {
    }
 
    public static void __vfClinit__() {
+      boolean Y;
       boolean var10000;
       label16: {
          try {
@@ -296,8 +297,6 @@ public class N implements Iterator {
                break label16;
             }
          } catch (NoSuchElementException var0) {
-      boolean Y;
-      boolean Y;
             throw a(var0);
          }
 
@@ -307,7 +306,6 @@ public class N implements Iterator {
       Y = var10000;
    }
 }
-
 
 
 

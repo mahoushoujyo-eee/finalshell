@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import com.finalshell.io.B52;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -24,7 +24,7 @@ public class F0 {
    public F0 L;
    public InputStream q;
    public static Random x;
-   public PingMessageR N;
+   public PingMessageReceiver N;
    public String U;
    public int C;
    public Dm4_2 l;
@@ -35,7 +35,7 @@ public class F0 {
       __vfClinit__();
    }
 
-   public F0(Dm4_2 var1, PingMessageR var2, String var3, int var4, Socket var5, InputStream var6, DatagramSocket var7) {
+   public F0(Dm4_2 var1, PingMessageReceiver var2, String var3, int var4, Socket var5, InputStream var6, DatagramSocket var7) {
       this.l = var1;
       this.N = var2;
       this.U = var3;
@@ -47,16 +47,16 @@ public class F0 {
       this.S = var5;
       this.X = var7;
       this.N();
-      PingMessageR.U.execute(new com.finalshell.task.Lb4(this, var6));
+      PingMessageReceiver.U.execute(new com.finalshell.task.Lb4(this, var6));
    }
 
-   public F0(Dm4_2 var1, PingMessageR var2, String var3, int var4) {
+   public F0(Dm4_2 var1, PingMessageReceiver var2, String var3, int var4) {
       this.E = true;
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void d() {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       this.X.close();
       String[] var1 = var10000;
       Object var2 = this.y;
@@ -97,8 +97,8 @@ public class F0 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void e(DatagramPacket var1) {
-      FO var17;
-      String[] var10000 = PingMessageR.N();
+      JX var17;
+      String[] var10000 = PingMessageReceiver.N();
       ByteArrayInputStream var3 = new ByteArrayInputStream(var1.getData(), 0, var1.getLength());
       String[] var2 = var10000;
 
@@ -177,9 +177,11 @@ public class F0 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void A(byte[] var1) {
+      DatagramSocket var8;
+      IOException var9;
       DatagramPacket var3 = new DatagramPacket(var1, var1.length);
       var3.setAddress(this.w);
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       var3.setPort(this.r);
       String[] var2 = var10000;
 
@@ -201,7 +203,6 @@ public class F0 {
             try {
                var8 = this.X;
             } catch (IOException var6) {
-      FO var9;
                var9 = var6;
                boolean var10001 = false;
                break label30;
@@ -212,7 +213,6 @@ public class F0 {
             var8.send(var3);
             return;
          } catch (IOException var5) {
-      String var9;
             var9 = var5;
             boolean var10 = false;
          }
@@ -223,7 +223,7 @@ public class F0 {
    }
 
    public void N() {
-      PingMessageR.U.execute(new com.finalshell.task.XF(this));
+      PingMessageReceiver.U.execute(new com.finalshell.task.XF(this));
    }
 
    public void B(FO var1) {
@@ -238,6 +238,8 @@ public class F0 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var8;
+      String var9;
       char[] var10003 = "於遝遂k".toCharArray();
       int var10004 = var10003.length;
       int var0 = 0;
@@ -255,7 +257,7 @@ public class F0 {
          var6 = 72;
          var1 = var10004;
          if (var10004 <= var0) {
-            String var9 = new String(var10003).intern();
+            var9 = new String(var10003).intern();
             byte var4 = -1;
             a = var9;
             x = new Random();
@@ -301,7 +303,7 @@ public class F0 {
             var10 = var6;
          } else {
             if (var1 <= var0) {
-               String var8 = new String(var10002).intern();
+               var8 = new String(var10002).intern();
                byte var3 = -1;
                a = var8;
                x = new Random();

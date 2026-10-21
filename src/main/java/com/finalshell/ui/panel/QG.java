@@ -25,7 +25,7 @@ public class QG extends JComponent implements ItemListener {
          var10001 = var10001 == 1 ? 1 : 0;
       }
 
-      this.setVisible((boolean)var10001);
+      this.setVisible(var10001);
    }
 
    @Override

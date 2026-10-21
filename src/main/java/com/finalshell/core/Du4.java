@@ -93,6 +93,7 @@ public class Du4 implements Fs2 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void v(boolean var1) {
+      Du4 var10000;
       Ky4[] var2 = Qm2.J();
 
       label41: {

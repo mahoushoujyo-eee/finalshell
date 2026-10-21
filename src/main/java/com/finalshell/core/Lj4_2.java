@@ -131,9 +131,11 @@ public class Lj4_2 extends Ln4_2 {
    }
 
    public String u(ArrayList var1) {
+      Integer var61;
+      Integer var63;
       String var10001 = (String)(Registry.emptyArgs());
       long var13 = 547398689030025911L;
-      Object[] var12 = var10001;
+      Object var12 = var10001;
       var10001 = Ref.h(547398689030025911L, var12, var13);
 
       try {
@@ -146,7 +148,7 @@ public class Lj4_2 extends Ln4_2 {
       AppendCarriageReturnCRPanel.Y();
       ArrayList var10003 = (ArrayList)(Registry.emptyArgs());
       long var15 = 384035338232698498L;
-      Object[] var14 = var10003;
+      Object var14 = var10003;
       var10003 = Ref.h(384035338232698498L, var14, var15);
 
       try {
@@ -176,7 +178,7 @@ public class Lj4_2 extends Ln4_2 {
                var10002 = var9;
                var10003 = Registry.emptyArgs();
                long var17 = 257102191814086367L;
-               Object[] var16 = var10003;
+               Object var16 = var10003;
                var10003 = Ref.h(257102191814086367L, var16, var17);
 
                try {
@@ -188,7 +190,7 @@ public class Lj4_2 extends Ln4_2 {
                String var10 = var10003;
                JTextField var10004 = Registry.emptyArgs();
                long var19 = 221314680238633888L;
-               Object[] var18 = var10004;
+               Object var18 = var10004;
                var10004 = Ref.h(221314680238633888L, var18, var19);
 
                try {
@@ -202,7 +204,7 @@ public class Lj4_2 extends Ln4_2 {
                   if (var2 == null) {
                      String var10005 = Registry.emptyArgs();
                      long var21 = 452972440898270588L;
-                     Object[] var20 = var10005;
+                     Object var20 = var10005;
                      var10005 = Ref.h(452972440898270588L, var20, var21);
 
                      try {
@@ -253,9 +255,9 @@ public class Lj4_2 extends Ln4_2 {
          if (var41.hasNext()) {
             CS var42 = (CS)var41.next();
             var40 = true;
-            Object[] var10006 = Registry.emptyArgs();
+            Object var10006 = Registry.emptyArgs();
             long var25 = 522169852020904082L;
-            Object[] var24 = var10006;
+            Object var24 = var10006;
             var10006 = Ref.h(522169852020904082L, var24, var25);
 
             try {
@@ -267,7 +269,7 @@ public class Lj4_2 extends Ln4_2 {
             var3.append(var39.substring((int)var42, var63));
             String var56 = (String)(Registry.emptyArgs());
             long var27 = 197983092181873471L;
-            Object[] var26 = var56;
+            Object var26 = var56;
             var56 = Ref.h(197983092181873471L, var26, var27);
 
             try {
@@ -279,7 +281,7 @@ public class Lj4_2 extends Ln4_2 {
             var42.append((String)var56);
             var56 = Registry.emptyArgs();
             long var29 = 537962425760684299L;
-            Object[] var28 = var56;
+            Object var28 = var56;
             var56 = Ref.h(537962425760684299L, var28, var29);
 
             try {

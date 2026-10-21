@@ -106,6 +106,7 @@ public class U52 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public byte[] r(HttpClient var1, String var2) {
+      ByteArrayOutputStream var26;
       String[] var10000 = UpdateDialog.y();
       byte[] var4 = null;
       HttpGet var5 = new HttpGet(var2);
@@ -124,7 +125,6 @@ public class U52 {
 
          label55: {
             while ((var15 = var12.read(var14)) > 0) {
-      ByteArrayOutputStream var26;
                try {
                   var26 = var13;
                   if (var3 != null) {
@@ -136,7 +136,6 @@ public class U52 {
                      break;
                   }
                } catch (Exception var21) {
-      ByteArrayOutputStream var26;
                   throw a(var21);
                }
             }
@@ -187,9 +186,9 @@ public class U52 {
 
    public O0 D(O0 var1, String var2, HttpClient var3) throws IOException {
       byte[] var4 = var1.toString().getBytes(a(5705, -15876));
-      Object[] var10001 = Registry.packArgs(var4, var2, var3, 3);
+      byte[] var10001 = (byte[])(Registry.packArgs(var4, var2, var3, 3));
       long var9 = 235936031637499665L;
-      Object[] var8 = var10001;
+      Object var8 = var10001;
       var10001 = Ref.h(235936031637499665L, var8, var9);
 
       try {
@@ -1301,6 +1300,7 @@ public class U52 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var46;
       String[] var21 = new String[6];
       int var19 = 0;
       String var18 = "¨\u009c=×\u0014\u000f\u009bO«ÆnsOrÈ\u009eIÓ\u000bÀ¨\u0005¹0\u001fBP\u0005\u0001¨¤\f<";
@@ -1539,7 +1539,6 @@ public class U52 {
       }
    }
 }
-
 
 
 

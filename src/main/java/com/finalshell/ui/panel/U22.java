@@ -78,7 +78,7 @@ public class U22 extends Us2 {
          var3 = 0;
       }
 
-      this.setRootVisible((boolean)var3);
+      this.setRootVisible(var3);
       this.setCellRenderer(new Oi2());
       this.setCellEditor(new RY3());
       this.Z(Nk2.m);
@@ -230,7 +230,7 @@ public class U22 extends Us2 {
                      var14 = var2;
                      label78:
                      if (var5 != null) {
-                        if (var2 != 0) {
+                        if (var2) {
                            var14 = var6;
                            if (var5 == null) {
                               break label78;
@@ -247,7 +247,7 @@ public class U22 extends Us2 {
                         var14 = var3;
                      }
 
-                     if (var14 != null) {
+                     if (var14 != 0) {
                         this.P(var7);
                      }
 
@@ -301,7 +301,7 @@ public class U22 extends Us2 {
          }
       }
 
-      if (var2 != 0) {
+      if (var2) {
          this.clearSelection();
       }
    }
@@ -411,6 +411,7 @@ public class U22 extends Us2 {
    }
 
    public List p() {
+      int var5;
       String[] var10000 = CB3.C$arrString();
       ArrayList var2 = new ArrayList();
       String[] var1 = var10000;
@@ -425,7 +426,7 @@ public class U22 extends Us2 {
 
       TreePath[] var3 = var7;
       int var4 = var3.length;
-      int var5 = 0;
+      var5 = 0;
 
       while (var5 < var4) {
          TreePath var6 = var3[var5];
@@ -444,6 +445,7 @@ public class U22 extends Us2 {
    }
 
    public List V$List() {
+      int var5;
       String[] var10000 = CB3.C$arrString();
       ArrayList var2 = new ArrayList();
       String[] var1 = var10000;
@@ -458,7 +460,7 @@ public class U22 extends Us2 {
 
       TreePath[] var3 = var7;
       int var4 = var3.length;
-      int var5 = 0;
+      var5 = 0;
 
       while (var5 < var4) {
          TreePath var6 = var3[var5];
@@ -493,11 +495,12 @@ public class U22 extends Us2 {
    }
 
    public boolean H(java.io.File var1, List var2) {
+      boolean var5;
       String[] var10000 = CB3.C$arrString();
       CY3 var4 = this.d(var1);
       String[] var3 = var10000;
       if (var4 != null) {
-         boolean var5 = this.O(var4, var2);
+         var5 = this.O(var4, var2);
          if (var3 == null) {
             return var5;
          }
@@ -511,16 +514,18 @@ public class U22 extends Us2 {
    }
 
    public boolean O(CY3 var1, List var2) {
+      Iterator var5;
+      java.io.File var6;
       String[] var3 = CB3.C$arrString();
       boolean var10000 = this.hasBeenExpanded(this.N(var1));
       if (var3 != null) {
          if (var10000) {
             ArrayList var4 = new ArrayList(var2.size());
-            Iterator var5 = var2.iterator();
+            var5 = var2.iterator();
 
             while (true) {
                if (var5.hasNext()) {
-                  java.io.File var6 = (java.io.File)var5.next();
+                  var6 = (java.io.File)var5.next();
                   var4.add(new CY3(var6));
                   if (var3 == null) {
                      break;
@@ -549,12 +554,14 @@ public class U22 extends Us2 {
    }
 
    public boolean U(java.io.File[] var1) {
+      int var6;
+      boolean var8;
       String[] var10000 = CB3.C$arrString();
       boolean var3 = false;
       String[] var2 = var10000;
       java.io.File[] var4 = var1;
       int var5 = var1.length;
-      int var6 = 0;
+      var6 = 0;
 
       while (true) {
          if (var6 < var5) {
@@ -567,7 +574,6 @@ public class U22 extends Us2 {
             var3 = var8;
             var6++;
             if (var2 != null) {
-      int var8;
                continue;
             }
          }
@@ -580,6 +586,8 @@ public class U22 extends Us2 {
    }
 
    public boolean r(List var1) {
+      java.io.File var5;
+      boolean var6;
       String[] var10000 = CB3.C$arrString();
       boolean var3 = false;
       Iterator var4 = var1.iterator();
@@ -587,7 +595,7 @@ public class U22 extends Us2 {
 
       while (true) {
          if (var4.hasNext()) {
-            java.io.File var5 = (java.io.File)var4.next();
+            var5 = (java.io.File)var4.next();
             var6 = var3 | this.Y(var5);
             if (var2 == null) {
                break;
@@ -628,6 +636,7 @@ public class U22 extends Us2 {
    }
 
    public List d(CY3 var1) {
+      ArrayList var5;
       String[] var10000 = CB3.C$arrString();
       ArrayList var3 = new ArrayList();
       String[] var2 = var10000;
@@ -664,6 +673,9 @@ public class U22 extends Us2 {
    }
 
    public CY3 m(CY3 var1, List var2) {
+      int var5;
+      int var6;
+      CY3 var8;
       String[] var3;
       byte var9;
       label43: {
@@ -677,8 +689,8 @@ public class U22 extends Us2 {
             }
 
             if (var9 != 0) {
-               int var5 = var2.indexOf(var4);
-               int var6 = var5;
+               var5 = var2.indexOf(var4);
+               var6 = var5;
 
                while (var6 >= 0) {
                   var2.remove(var6);
@@ -698,7 +710,7 @@ public class U22 extends Us2 {
       int var7 = var9;
 
       while (var7 < var1.getChildCount()) {
-         CY3 var8 = this.m(var1.V(var7), var2);
+         var8 = this.m(var1.V(var7), var2);
          if (var3 != null) {
             if (var8 != null) {
                return var8;
@@ -716,6 +728,7 @@ public class U22 extends Us2 {
    }
 
    public CY3 U(CY3 var1, List var2) {
+      CY3 var5;
       String[] var3 = CB3.C$arrString();
       int var10000 = var2.size();
       if (var3 != null) {
@@ -729,7 +742,7 @@ public class U22 extends Us2 {
       int var4 = var10000;
 
       while (var4 < var1.getChildCount()) {
-         CY3 var5 = var1.V(var4);
+         var5 = var1.V(var4);
          if (var3 != null) {
             if (var3 == null) {
                return var5;
@@ -786,7 +799,6 @@ public class U22 extends Us2 {
       return var0;
    }
 }
-
 
 
 

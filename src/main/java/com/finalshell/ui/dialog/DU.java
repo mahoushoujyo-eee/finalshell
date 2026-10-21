@@ -42,6 +42,9 @@ public class DU extends JDialog {
    public static Integer[] f;
 
    public DU(Window var1) {
+      String var157;
+      String var165;
+      long var34;
       Registry.packArgs(a(23470, -15869));
       long var25 = 517287540690064504L;
       Object var10001 = Ref.h2(517287540690064504L, var25);
@@ -71,7 +74,7 @@ public class DU extends JDialog {
       long var32 = 306266403902896148L;
       Object[] var31 = var10005;
       var10005 = Ref.h(306266403902896148L, var31, var32);
-      long var34 = 181350030129350521L;
+      var34 = 181350030129350521L;
       Object var33 = var10005;
       Ref.s(181350030129350521L, var33, var34);
       JPanel var4 = (JPanel)this.getContentPane();
@@ -109,7 +112,7 @@ public class DU extends JDialog {
       Object var10011 = Ref.g(181350030129350521L, var39);
       String var10012 = (String)(Registry.emptyArgs());
       long var42 = 204000105621842013L;
-      Object[] var41 = var10012;
+      Object var41 = var10012;
       var10012 = Ref.h(204000105621842013L, var41, var42);
 
       try {
@@ -137,7 +140,7 @@ var10011 = new JPanel(var10012);
       Object var10019 = Ref.g(181350030129350521L, var55);
       String var10020 = (String)(Registry.emptyArgs());
       long var58 = 204000105621842013L;
-      Object[] var57 = var10020;
+      Object var57 = var10020;
       var10020 = Ref.h(204000105621842013L, var57, var58);
 
       try {
@@ -174,7 +177,7 @@ var10011 = new JPanel(var10012);
       Object var10023 = Ref.g(181350030129350521L, var63);
       String var10024 = (String)(Registry.emptyArgs());
       long var66 = 191807067392725406L;
-      Object[] var65 = var10024;
+      Object var65 = var10024;
       var10024 = Ref.h(191807067392725406L, var65, var66);
 
       try {
@@ -228,7 +231,7 @@ var10023 = new JPanel(var10024);
       String var12 = (String)var10032;
       JButton var10033 = (JButton)(Registry.packArgs(var12));
       long var88 = 533245190623110246L;
-      Object[] var87 = var10033;
+      Object var87 = var10033;
       var10033 = Ref.h(533245190623110246L, var87, var88);
 
       try {
@@ -257,7 +260,7 @@ var10023 = new JPanel(var10024);
       String var15 = (String)var10034;
       JButton var10035 = (JButton)(Registry.packArgs(var15));
       long var92 = 533245190623110246L;
-      Object[] var91 = var10035;
+      Object var91 = var10035;
       var10035 = Ref.h(533245190623110246L, var91, var92);
 
       try {
@@ -275,7 +278,7 @@ var10023 = new JPanel(var10024);
       Object var10038 = Ref.g(181350030129350521L, var95);
       String var10039 = (String)(Registry.emptyArgs());
       long var98 = 191807067392725406L;
-      Object[] var97 = var10039;
+      Object var97 = var10039;
       var10039 = Ref.h(191807067392725406L, var97, var98);
 
       try {
@@ -302,7 +305,7 @@ var10023 = new JPanel(var10024);
       short var158 = 23485;
       JButton var10040 = (JButton)(Registry.packArgs(var18));
       long var102 = 533245190623110246L;
-      Object[] var101 = var10040;
+      Object var101 = var10040;
       var10040 = Ref.h(533245190623110246L, var101, var102);
 
       try {
@@ -315,7 +318,7 @@ var10023 = new JPanel(var10024);
       short var163 = 23596;
       var17.add(var19);
       var19.addActionListener(new KR(this));
-      Object[] var10041 = Registry.emptyArgs();
+      Object var10041 = Registry.emptyArgs();
       long var103 = 270389152141252877L;
       Object var10042 = Ref.h2(270389152141252877L, var103);
       Object[] var10043 = Registry.packArgs(new Oo4(this));
@@ -343,7 +346,7 @@ var10023 = new JPanel(var10024);
       short var166 = 23461;
       JButton var10044 = (JButton)(Registry.packArgs(var20));
       long var110 = 533245190623110246L;
-      Object[] var109 = var10044;
+      Object var109 = var10044;
       var10044 = Ref.h(533245190623110246L, var109, var110);
 
       try {
@@ -368,7 +371,7 @@ var10023 = new JPanel(var10024);
       String var22 = var10044;
       JButton var10045 = (JButton)(Registry.packArgs(var22));
       long var114 = 533245190623110246L;
-      Object[] var113 = var10045;
+      Object var113 = var10045;
       var10045 = Ref.h(533245190623110246L, var113, var114);
 
       try {
@@ -408,7 +411,7 @@ var10023 = new JPanel(var10024);
       Object var10003 = Ref.g(181350030129350521L, var3);
       String var10004 = (String)(Registry.emptyArgs());
       long var6 = 204000105621842013L;
-      Object[] var5 = var10004;
+      Object var5 = var10004;
       var10004 = Ref.h(204000105621842013L, var5, var6);
 
       try {
@@ -424,7 +427,7 @@ var10023 = new JPanel(var10024);
       Object var10006 = Ref.g(181350030129350521L, var9);
       String var10007 = (String)(Registry.emptyArgs());
       long var12 = 191807067392725406L;
-      Object[] var11 = var10007;
+      Object var11 = var10007;
       var10007 = Ref.h(191807067392725406L, var11, var12);
 
       try {
@@ -1320,6 +1323,7 @@ var10023 = new JPanel(var10024);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[22];
       int[] var10000 = new int[1];
       int var11 = 0;
@@ -1337,7 +1341,6 @@ var10023 = new JPanel(var10024);
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

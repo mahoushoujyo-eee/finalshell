@@ -392,6 +392,7 @@ public final class FN extends FV_2 {
 
    public static void q(JTable var0, int var1, int var2) {
       TableCellRenderer var15;
+      Component var8;
       String var10000 = FV_2.D();
       DefaultTableColumnModel var4 = (DefaultTableColumnModel)var0.getColumnModel();
       TableColumn var5 = var4.getColumn(var1);
@@ -419,7 +420,7 @@ public final class FN extends FV_2 {
          var15 = var7;
       }
 
-      Component var8 = var15.getTableCellRendererComponent(var0, var5.getHeaderValue(), false, false, 0, 0);
+      var8 = var15.getTableCellRendererComponent(var0, var5.getHeaderValue(), false, false, 0, 0);
       int var6 = var8.getPreferredSize().width;
       int var9 = 0;
 
@@ -920,10 +921,11 @@ public final class FN extends FV_2 {
    }
 
    public static void O(ButtonGroup var0, AbstractButton[] var1) {
+      int var5;
       AbstractButton[] var3 = var1;
       int var4 = var1.length;
       String var10000 = FV_2.D();
-      int var5 = 0;
+      var5 = 0;
       String var2 = var10000;
 
       while (var5 < var4) {
@@ -1097,12 +1099,14 @@ public final class FN extends FV_2 {
    }
 
    public static int f(Component[] var0) {
+      int var5;
+      int var7;
       int var2 = 0;
       String var10000 = FV_2.D();
       Component[] var3 = var0;
       String var1 = var10000;
       int var4 = var0.length;
-      int var5 = 0;
+      var5 = 0;
 
       while (true) {
          if (var5 < var4) {
@@ -1115,7 +1119,6 @@ public final class FN extends FV_2 {
             var2 = var7;
             var5++;
             if (var1 == null) {
-      String var7;
                continue;
             }
          }
@@ -1128,12 +1131,14 @@ public final class FN extends FV_2 {
    }
 
    public static int T(Component[] var0) {
+      int var5;
+      int var7;
       String var10000 = FV_2.D();
       int var2 = 0;
       String var1 = var10000;
       Component[] var3 = var0;
       int var4 = var0.length;
-      int var5 = 0;
+      var5 = 0;
 
       while (true) {
          if (var5 < var4) {
@@ -3508,8 +3513,10 @@ public final class FN extends FV_2 {
    }
 
    public static BufferedImage s(Component var0, int var1, int var2, float var3) {
+      BufferedImage var5;
+      Graphics2D var7;
       String var10000 = FV_2.D();
-      BufferedImage var5 = Xg2.g(var1, var2, 3);
+      var5 = Xg2.g(var1, var2, 3);
       String var4 = var10000;
       if (var0 != null) {
          Graphics2D var6 = var5.createGraphics();
@@ -3530,6 +3537,7 @@ public final class FN extends FV_2 {
                return var5;
             }
          } catch (RuntimeException var8) {
+      String var10;
             throw a(var8);
          }
 
@@ -3537,7 +3545,7 @@ public final class FN extends FV_2 {
       }
 
       BufferedImage var9 = Xg2.g(var10, var2, 3);
-      Graphics2D var7 = var9.createGraphics();
+      var7 = var9.createGraphics();
       RV.p(var7, var3);
       var7.drawImage(var5, 0, 0, null);
       var7.dispose();
@@ -3699,17 +3707,17 @@ public final class FN extends FV_2 {
       try {
          int var10000 = var0.getModifiers() & I();
          if (var1 != null) {
-            return (boolean)var10000;
+            return (var10000 != 0);
          }
 
          if (var10000 != 0) {
-            return (boolean)1;
+            return (1 != 0);
          }
       } catch (RuntimeException var2) {
          throw a(var2);
       }
 
-      return (boolean)0;
+      return (0 != 0);
    }
 
    public static int I() {
@@ -3900,17 +3908,17 @@ public final class FN extends FV_2 {
       try {
          int var10000 = var0 & 2;
          if (var1 != null) {
-            return (boolean)var10000;
+            return (var10000 != 0);
          }
 
          if (var10000 != 0) {
-            return (boolean)1;
+            return (1 != 0);
          }
       } catch (RuntimeException var2) {
          throw a(var2);
       }
 
-      return (boolean)0;
+      return (0 != 0);
    }
 
    public static boolean O(InputEvent var0) {
@@ -3923,17 +3931,17 @@ public final class FN extends FV_2 {
       try {
          int var10000 = var0 & a(10014, 8454854018315867132L);
          if (var1 != null) {
-            return (boolean)var10000;
+            return (var10000 != 0);
          }
 
          if (var10000 != 0) {
-            return (boolean)1;
+            return (1 != 0);
          }
       } catch (RuntimeException var2) {
          throw a(var2);
       }
 
-      return (boolean)0;
+      return (0 != 0);
    }
 
    public static boolean y(InputEvent var0) {
@@ -3946,17 +3954,17 @@ public final class FN extends FV_2 {
       try {
          int var10000 = var0 & 1;
          if (var1 != null) {
-            return (boolean)var10000;
+            return (var10000 != 0);
          }
 
          if (var10000 != 0) {
-            return (boolean)1;
+            return (1 != 0);
          }
       } catch (RuntimeException var2) {
          throw a(var2);
       }
 
-      return (boolean)0;
+      return (0 != 0);
    }
 
    public static com.finalshell.ui.model.Cs2 h(KeyStroke var0) {
@@ -4789,6 +4797,7 @@ public final class FN extends FV_2 {
    }
 
    public static Map B(Container var0) {
+      HashMap var7;
       int var2 = var0.getComponentCount();
       String var10000 = FV_2.D();
       HashMap var3 = new HashMap(var2);
@@ -5427,6 +5436,7 @@ public final class FN extends FV_2 {
    }
 
    public static Font[] P(String[] var0) {
+      Font[] var5;
       Font[] var2 = new Font[var0.length];
       String var10000 = FV_2.D();
       int var3 = 0;
@@ -5664,9 +5674,11 @@ public final class FN extends FV_2 {
    }
 
    public static void W(Graphics var0, String var1, int var2, int var3, int var4) {
+      String var5;
+      int var8;
       String var10000 = FV_2.D();
       Q(var0, var1, var3, var4);
-      String var5 = var10000;
+      var5 = var10000;
 
       label22: {
          try {
@@ -6251,6 +6263,7 @@ public final class FN extends FV_2 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 11279) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -7037,7 +7050,7 @@ public final class FN extends FV_2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -7065,9 +7078,13 @@ public final class FN extends FV_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var33;
+      boolean var5;
+      byte[] var7;
       String[] var13 = new String[6];
       int var11 = 0;
-      String var10 = "\b\u0016djyÐ\u0085\u0096\u008f»\u0019\u0084ÂÚ \u0006Þ\u001f1J¼Û\u0017£\u0092ï«µ\u0087úic\u0092t\u0093\u0092^ñ\u0085)»\u000fësw\u0011ï)\u0002\u0014@\u0097BÈBâG¶\u0005i\u001b)4óDQ-Eîö\u0010\u0080\u0099Ñ\u008ccçÍ²äÀl\u0093WZ\u009aR";
+      var10 = "\b\u0016djyÐ\u0085\u0096\u008f»\u0019\u0084ÂÚ \u0006Þ\u001f1J¼Û\u0017£\u0092ï«µ\u0087úic\u0092t\u0093\u0092^ñ\u0085)»\u000fësw\u0011ï)\u0002\u0014@\u0097BÈBâG¶\u0005i\u001b)4óDQ-Eîö\u0010\u0080\u0099Ñ\u008ccçÍ²äÀl\u0093WZ\u009aR";
       int var12 = "\b\u0016djyÐ\u0085\u0096\u008f»\u0019\u0084ÂÚ \u0006Þ\u001f1J¼Û\u0017£\u0092ï«µ\u0087úic\u0092t\u0093\u0092^ñ\u0085)»\u000fësw\u0011ï)\u0002\u0014@\u0097BÈBâG¶\u0005i\u001b)4óDQ-Eîö\u0010\u0080\u0099Ñ\u008ccçÍ²äÀl\u0093WZ\u009aR"
          .length();
       g(false);
@@ -7162,14 +7179,14 @@ public final class FN extends FV_2 {
                      long[] var6 = new long[6];
                      int var3 = 0;
                      String var4 = "ÈtsHÿÐ\u009b\u008bê`y¹\u0081ÍR¶E\u0083/»¹ñw`\u0083ô¢\nd]ÓÞ";
-                     int var5 = "ÈtsHÿÐ\u009b\u008bê`y¹\u0081ÍR¶E\u0083/»¹ñw`\u0083ô¢\nd]ÓÞ".length();
+                     var5 = "ÈtsHÿÐ\u009b\u008bê`y¹\u0081ÍR¶E\u0083/»¹ñw`\u0083ô¢\nd]ÓÞ".length();
                      byte var2 = 0;
 
                      label44:
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56
@@ -7204,7 +7221,7 @@ public final class FN extends FV_2 {
                                     continue label44;
                                  }
 
-                                 var4 = "´Eã\u001b\"÷¥hYG\u0099°`Ñê°";
+                                 var4 = ("´Eã\u001b\"÷¥hYG\u0099°`Ñê°") != 0;
                                  var5 = "´Eã\u001b\"÷¥hYG\u0099°`Ñê°".length();
                                  var2 = 0;
                            }
@@ -7249,7 +7266,6 @@ public final class FN extends FV_2 {
       }
    }
 }
-
 
 
 

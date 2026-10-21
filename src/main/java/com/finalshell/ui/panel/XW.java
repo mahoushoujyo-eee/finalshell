@@ -60,6 +60,7 @@ public class XW extends JComponent implements ActionListener {
    }
 
    public boolean C() {
+      boolean var2;
       String[] var1 = w();
       WC_2 var10000 = this.R;
       if (var1 == null) {
@@ -70,7 +71,7 @@ public class XW extends JComponent implements ActionListener {
          var10000 = this.R;
       }
 
-      boolean var2 = var10000.i();
+      var2 = var10000.i();
       if (var1 == null) {
          if (!var2) {
             return false;
@@ -274,8 +275,10 @@ public class XW extends JComponent implements ActionListener {
    }
 
    public void x() {
-      String[] var1;
+      long var2;
       XW var4;
+      long var8;
+      String[] var1;
       label76: {
          var1 = w();
          boolean var10000 = this.C();
@@ -367,7 +370,7 @@ public class XW extends JComponent implements ActionListener {
          var8 = var7.y();
       }
 
-      long var2 = var8;
+      var2 = var8;
       this.R = new WC_2(a, var2, this);
       this.S();
       this.R.u$WC();
@@ -416,12 +419,14 @@ public class XW extends JComponent implements ActionListener {
 
    @Override
    public void paintComponent(Graphics var1) {
+      String[] var2;
+      XW var4;
       Graphics2D var3;
       BufferedImage var5;
       label35: {
          String[] var10000 = w();
          super.paintComponent(var1);
-         String[] var2 = var10000;
+         var2 = var10000;
          var3 = (Graphics2D)var1;
          var4 = this;
          label34:
@@ -530,6 +535,7 @@ public class XW extends JComponent implements ActionListener {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var8;
       if (w() != null) {
          N(new String[4]);
       }
@@ -596,7 +602,7 @@ public class XW extends JComponent implements ActionListener {
             var10 = var6;
          } else {
             if (var1 <= var0) {
-               String var8 = new String(var10002).intern();
+               var8 = new String(var10002).intern();
                byte var3 = -1;
                a = var8;
                return;

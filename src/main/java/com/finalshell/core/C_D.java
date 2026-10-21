@@ -891,6 +891,7 @@ public abstract class C_D extends C_q_2_2 implements C_Y_2, RO {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "\u0087ÃÛµj\bNú\u0018í²\u0004o\u008e";
@@ -905,7 +906,6 @@ public abstract class C_D extends C_q_2_2 implements C_Y_2, RO {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

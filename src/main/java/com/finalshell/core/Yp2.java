@@ -44,8 +44,9 @@ public class Yp2 extends V2 {
    }
 
    public void s(boolean var1) {
+      Yp2 var10000;
       int var2 = T();
-      Yp2 var10000 = this;
+      var10000 = this;
       if (var2 != 0) {
          if (this.J == var1) {
             return;
@@ -63,8 +64,9 @@ public class Yp2 extends V2 {
    }
 
    public void S(boolean var1) {
+      Yp2 var10000;
       int var2 = T();
-      Yp2 var10000 = this;
+      var10000 = this;
       if (var2 != 0) {
          if (this.s == var1) {
             return;
@@ -82,9 +84,10 @@ public class Yp2 extends V2 {
    }
 
    public void s(PF3 var1) {
+      int var10000;
       Yp2 var4;
       label30: {
-         int var10000 = T();
+         var10000 = T();
          this.b = var1;
          int var2 = var10000;
          boolean var3 = this.J;
@@ -123,7 +126,9 @@ public class Yp2 extends V2 {
    }
 
    public void x(PF3 var1) {
-      int var10000 = f();
+      int var10000;
+      Yp2 var4;
+      var10000 = f();
       this.R = var1;
       int var2 = var10000;
       boolean var3 = this.J;
@@ -161,10 +166,12 @@ public class Yp2 extends V2 {
 
    @Override
    public Insets Q(JLabel var1) {
-      int var10000 = T();
+      int var10000;
+      Yp2 var4;
+      var10000 = T();
       PF3 var3 = this.Q();
       int var2 = var10000;
-      Yp2 var4 = this;
+      var4 = this;
       if (var2 != 0) {
          if (!this.J) {
             if (var2 == 0) {
@@ -184,6 +191,7 @@ public class Yp2 extends V2 {
 
    @Override
    public void u(Graphics2D var1, Rectangle var2, JLabel var3) {
+      boolean var10000;
       Yp2 var6;
       label37: {
          int var4;
@@ -229,8 +237,9 @@ public class Yp2 extends V2 {
    }
 
    public PF3 Q() {
+      Yp2 var10000;
       int var1 = f();
-      Yp2 var10000 = this;
+      var10000 = this;
       if (var1 == 0) {
          if (this.G) {
             if (var1 != 0) {

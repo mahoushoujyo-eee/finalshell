@@ -870,6 +870,7 @@ public class AboutFrame extends JFrame {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "¬Ä75©\u009c\u000b\u0090\"]vy\u008a·è¡ò²\r冧亦VÈyÿox\u0000{4®\t";
@@ -884,7 +885,6 @@ public class AboutFrame extends JFrame {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

@@ -44,6 +44,9 @@ public class EditTunnelDialog extends JDialog {
 
    public EditTunnelDialog(TunnelList var1, YE var2, ArrayList var3, boolean var4) {
    super(SwingUtilities.getWindowAncestor(var1));
+   Integer var154;
+   Integer var159;
+   Object[] var30;
       label127: {
          TunnelList.V();
          Random var10002 = new Random();
@@ -83,7 +86,7 @@ public class EditTunnelDialog extends JDialog {
          StringBuilder var10008 = new StringBuilder().append(a(-4347, 14476));
          String var10010 = (String)(Registry.emptyArgs());
          long var31 = 474678417197598864L;
-         Object[] var30 = var10010;
+         var30 = var10010;
          var10010 = Ref.h(474678417197598864L, var30, var31);
 
          try {
@@ -199,7 +202,7 @@ public class EditTunnelDialog extends JDialog {
             JTextField var10041 = (JTextField)Ref.g(414608544041084281L, var96);
             String var10043 = (String)(Registry.emptyArgs());
             long var99 = 474678417197598864L;
-            Object[] var98 = var10043;
+            Object var98 = var10043;
             var10043 = Ref.h(474678417197598864L, var98, var99);
 
             try {
@@ -211,7 +214,7 @@ public class EditTunnelDialog extends JDialog {
             var2.setText(var10043);
             var10043 = Registry.emptyArgs();
             long var101 = 471582560640574154L;
-            Object[] var100 = var10043;
+            Object var100 = var10043;
             var10043 = Ref.h(471582560640574154L, var100, var101);
 
             try {
@@ -280,7 +283,7 @@ public class EditTunnelDialog extends JDialog {
             JTextField var149 = (JTextField)Ref.g(557254593771208646L, var112);
             String var10046 = (String)(Registry.emptyArgs());
             long var115 = 406140209836756951L;
-            Object[] var114 = var10046;
+            Object var114 = var10046;
             var10046 = Ref.h(406140209836756951L, var114, var115);
 
             try {
@@ -293,9 +296,9 @@ public class EditTunnelDialog extends JDialog {
             Object var116 = 310253859679637216L;
             JTextField var152 = (JTextField)Ref.g(310253859679637216L, var116);
             StringBuilder var10047 = new StringBuilder();
-            Object[] var10049 = Registry.emptyArgs();
+            Object var10049 = Registry.emptyArgs();
             long var119 = 437259655987883724L;
-            Object[] var118 = var10049;
+            Object var118 = var10049;
             var10049 = Ref.h(437259655987883724L, var118, var119);
 
             try {
@@ -309,7 +312,7 @@ public class EditTunnelDialog extends JDialog {
             JTextField var10048 = (JTextField)Ref.g(252123593957137435L, var120);
             String var10050 = (String)(Registry.emptyArgs());
             long var123 = 531077488409752038L;
-            Object[] var122 = var10050;
+            Object var122 = var10050;
             var10050 = Ref.h(531077488409752038L, var122, var123);
 
             try {
@@ -322,9 +325,9 @@ public class EditTunnelDialog extends JDialog {
             Object var124 = 332149350821937177L;
             JTextField var157 = (JTextField)Ref.g(332149350821937177L, var124);
             StringBuilder var10051 = new StringBuilder();
-            Object[] var10053 = Registry.emptyArgs();
+            Object var10053 = Registry.emptyArgs();
             long var127 = 595134275840130239L;
-            Object[] var126 = var10053;
+            Object var126 = var10053;
             var10053 = Ref.h(595134275840130239L, var126, var127);
 
             try {
@@ -1978,6 +1981,7 @@ public class EditTunnelDialog extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[41];
       int var11 = 0;
       String var10 = "'\u001c3Õë\u009d\u0006äLKßäÜ\u0005+÷Èè\u0087\u0005瘔森圬埁|\u0002輤竦\u000b×µª= MÝ\u0006Î)n\u0002辟穏\t»íú\\K~é³\u0002\u0011¯\tX7\u0095Ö\u0099\b\u000b\u0001±Õ«WÌ\u007f_\u0004^µ\u009eA\u001d\u0095¦(©\u0099¿ocÑÇ\u0085\n\u0094ð,7\u001fâS©È\n\u000bG\u000bP\n \u0007\t\u0090Ñ\u009fÛç\u008e|\u00ad°\u0002叙涘\u0011\u001bºÌAE\u001a\u0083ÓJzÛ¸æ¸g\u0082h\b謄轜允瘿栓程叠ë\u0005皯呙穜叚V\u000b5\u0016öI«Ã¬×à\u0013«\nË-0U\t/§\u00874\u0011\u0005縧察Ëùò\u0004âY\tÜ\u0006譍轸全员私¶\u0011¸\u001c^sÄçE\u0006K\u0089\u0099?¶@´Èw\t诬辟兜旙寠窚叄匏\u001e\no%½/Â\u000f\u0081KE/\u0006Ñyé}´¬\u000e\u007f\u001fu\u009e2Y\u001a¿\u007f\\Px>\u008f\u0002杂坽\u000e\u0084]\nÖÝPç\u009eÀx§üÀ\u001f\u0007罖轆阔邃\u0004T\u0002\u0004攏庽降郺\u0003簜埃\u0000\b譎迷儈癊栺坺坦á\u0003咝禮\u0088\b讲輖冗癉哢稝厐)\t譯迈儬攳寮竇包厤&\n\u000eh\u0091\u0086G:1íSû\u0006=6t\u0094\u0007\u0091\u0002硯孡\u0011Þ\u0003A\u001d´)Ê°w\u008c\u0010p\u0005\u0089\u001dé\u001a";
@@ -1993,7 +1997,6 @@ public class EditTunnelDialog extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      Object var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

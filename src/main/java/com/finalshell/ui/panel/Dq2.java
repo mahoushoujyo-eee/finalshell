@@ -457,6 +457,8 @@ public class Dq2 extends JComponent implements SwingConstants, W2_3 {
    }
 
    public void A$void() {
+      Dq2 var8;
+      Dq2 var9;
       String var1 = Wb2.m$String();
       ImageIcon var10000 = this.A;
       if (var1 != null) {

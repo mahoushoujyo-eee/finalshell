@@ -1107,6 +1107,8 @@ public class H9 extends FilterReader {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean h;
+      boolean var18;
       String[] var13 = new String[3];
       int var11 = 0;
       String var10 = "eó$Î-\u001bN\u0082owK\u0089\u000eÜG×KØ\u0018j(\u000b\f_Wæ\u001a¬\u0010\u001d²\n\u0094ªsóIØN|$\tÈ\u0082;!\u0016\u000f\u0084è®ËØ\u001bó\u000eã\u007fcû®ákà»«8\u001a£Ê¾I #æ4)\"²÷u";

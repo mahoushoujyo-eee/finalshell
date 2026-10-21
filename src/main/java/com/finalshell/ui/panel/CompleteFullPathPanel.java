@@ -38,13 +38,17 @@ public class CompleteFullPathPanel extends JPopupMenu {
    }
 
    public void A() {
+      long var20;
+      Boolean var39;
+      Boolean var45;
+      Boolean var50;
       this.removeAll();
       Registry.emptyArgs();
       long var11 = 270389152141252877L;
       Ref.h2(270389152141252877L, var11);
       U62 var10002 = (U62)(Registry.emptyArgs());
       long var14 = 306266403902896148L;
-      Object[] var13 = var10002;
+      Object var13 = var10002;
       var10002 = Ref.h(306266403902896148L, var13, var14);
 
       try {
@@ -56,9 +60,9 @@ public class CompleteFullPathPanel extends JPopupMenu {
       U62 var1 = var10002;
       JCheckBoxMenuItem var10003;
       String var10004 = a(17065, 29559);
-      Object[] var10006 = Registry.emptyArgs();
+      Object var10006 = Registry.emptyArgs();
       long var16 = 169497746995301372L;
-      Object[] var15 = var10006;
+      Object var15 = var10006;
       var10006 = Ref.h(169497746995301372L, var15, var16);
 
       try {
@@ -72,9 +76,9 @@ var10004 = new CompleteFullPathPanel(var1, var39);
       var2.addActionListener(new DI(this, var1, var2));
       JCheckBoxMenuItem var36;
       String var10005 = a(17069, 18125);
-      Object[] var10007 = Registry.emptyArgs();
+      Object var10007 = Registry.emptyArgs();
       long var18 = 629517738120639335L;
-      Object[] var17 = var10007;
+      Object var17 = var10007;
       var10007 = Ref.h(629517738120639335L, var17, var18);
 
       try {
@@ -90,9 +94,9 @@ var10005 = new CompleteFullPathPanel(var1, var45);
       this.addSeparator();
       JCheckBoxMenuItem var37;
       String var40 = a(17068, 23169);
-      Object[] var10008 = Registry.emptyArgs();
-      long var20 = 406341430347663460L;
-      Object[] var19 = var10008;
+      Object var10008 = Registry.emptyArgs();
+      var20 = 406341430347663460L;
+      Object var19 = var10008;
       var10008 = Ref.h(406341430347663460L, var19, var20);
 
       try {
@@ -114,7 +118,7 @@ var40 = new CompleteFullPathPanel(var1, var50);
       ButtonGroup var7 = new ButtonGroup();
       var10006 = Registry.packArgs(var1, Registry.lookupField(267074078372813106L).getInt(null));
       long var22 = 490412630548567285L;
-      Object[] var21 = var10006;
+      Object var21 = var10006;
       var10006 = Ref.h(490412630548567285L, var21, var22);
 
       try {
@@ -128,7 +132,7 @@ var40 = new CompleteFullPathPanel(var1, var50);
       var6.add(var8);
       var10007 = Registry.packArgs(var1, Registry.lookupField(123496025243680858L).getInt(null));
       long var24 = 490412630548567285L;
-      Object[] var23 = var10007;
+      Object var23 = var10007;
       var10007 = Ref.h(490412630548567285L, var23, var24);
 
       try {
@@ -142,7 +146,7 @@ var40 = new CompleteFullPathPanel(var1, var50);
       var6.add(var9);
       var10008 = Registry.packArgs(var1, Registry.lookupField(292242995095903943L).getInt(null));
       long var26 = 490412630548567285L;
-      Object[] var25 = var10008;
+      Object var25 = var10008;
       var10008 = Ref.h(490412630548567285L, var25, var26);
 
       try {
@@ -157,11 +161,12 @@ var40 = new CompleteFullPathPanel(var1, var50);
    }
 
    public JMenuItem K(U62 var1, int var2) {
+      Integer var8;
       JRadioButtonMenuItem var10001;
       String var10002 = var2 + a(17064, 433);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var5 = 480629603857374647L;
-      Object[] var4 = var10004;
+      Object var4 = var10004;
       var10004 = Ref.h(480629603857374647L, var4, var5);
 
       try {
@@ -181,6 +186,7 @@ var10002 = new CompleteFullPathPanel(var1, var8 == var2);
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 17069) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -967,7 +973,7 @@ var10002 = new CompleteFullPathPanel(var1, var8 == var2);
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -986,6 +992,7 @@ var10002 = new CompleteFullPathPanel(var1, var8 == var2);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[7];
       int var3 = 0;
       String var2 = "匃遌周滎稪\n暦秭限蕬皞攧亜(盱彷\t渵窃贁徢羳嬃乏劐斤\u0006溰稴趱彔羥寝\u0007蠌儓亟寨敨跴忞";
@@ -1000,7 +1007,6 @@ var10002 = new CompleteFullPathPanel(var1, var8 == var2);
          byte var10002 = -1;
 
          while (true) {
-      long var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -81,6 +81,7 @@ public class CV3 implements Gq2, Hs2 {
    }
 
    public String[] y(String var1, String var2, String var3, String[] var4, boolean[] var5) {
+      int var12;
       String[] var6;
       int var7;
       String[] var8;

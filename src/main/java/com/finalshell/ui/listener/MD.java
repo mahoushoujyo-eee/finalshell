@@ -2,15 +2,15 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.RouteTracePanel2;
+import com.finalshell.ui.panel.ConnectionContextMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class MD implements ActionListener {
-   public final RouteTracePanel2 W;
+   public final ConnectionContextMenu W;
 
-   public MD(RouteTracePanel2 var1) {
+   public MD(ConnectionContextMenu var1) {
       this.W = var1;
    }
 

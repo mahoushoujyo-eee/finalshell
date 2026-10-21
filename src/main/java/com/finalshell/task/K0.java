@@ -930,6 +930,7 @@ public class K0 implements Runnable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "¦NB\u0088ÛÉ;c²\tRå\u008cì\u0006e\u0006\u0087W";
@@ -944,7 +945,6 @@ public class K0 implements Runnable {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

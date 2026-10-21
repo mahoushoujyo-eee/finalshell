@@ -37,7 +37,7 @@ public class Ol4 extends AbstractCellEditor implements TreeCellEditor {
       Ref.g(477893946481762014L, var3);
       JCheckBox var10002 = (JCheckBox)(Registry.emptyArgs());
       long var6 = 281437538717702050L;
-      Object[] var5 = var10002;
+      Object var5 = var10002;
       var10002 = Ref.h(281437538717702050L, var5, var6);
 
       try {
@@ -52,6 +52,7 @@ public class Ol4 extends AbstractCellEditor implements TreeCellEditor {
 
    @Override
    public boolean isCellEditable(EventObject var1) {
+      boolean var14;
       String var10000 = com.finalshell.ui.panel.AA.z();
       boolean var3 = false;
       String var2 = var10000;
@@ -129,7 +130,7 @@ public class Ol4 extends AbstractCellEditor implements TreeCellEditor {
       Ref.g(477893946481762014L, var10);
       Component var10002 = (Component)(Registry.packArgs(var1, var2, true, var4, var5, var6, true));
       long var13 = 193657442809841628L;
-      Object[] var12 = var10002;
+      Object var12 = var10002;
       var10002 = Ref.h(193657442809841628L, var12, var13);
 
       try {

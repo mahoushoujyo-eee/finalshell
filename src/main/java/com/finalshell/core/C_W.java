@@ -831,6 +831,7 @@ public final class C_W extends C_G implements C_c_2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "q\u0017)2\u0004ªë\u008c«";
@@ -845,7 +846,6 @@ public final class C_W extends C_G implements C_c_2_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

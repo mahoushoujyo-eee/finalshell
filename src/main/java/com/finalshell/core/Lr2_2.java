@@ -96,7 +96,7 @@ public abstract class Lr2_2 implements Q0_2 {
       int var10001 = (Y12.D()) ? 1 : 0;
       var1 = F(var1);
       var2 = F(var2);
-      boolean var3 = (((((boolean)var10001) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10001) != 0;
       String var4 = a(5916, 28127);
 
       label39: {
@@ -158,7 +158,7 @@ public abstract class Lr2_2 implements Q0_2 {
       var1 = F(var1);
       int var10000 = (Y12.D()) ? 1 : 0;
       String var3 = a(5908, -11942);
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
 
       label39: {
          int var10001;
@@ -1595,6 +1595,7 @@ public abstract class Lr2_2 implements Q0_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[13];
       int var11 = 0;
       String var10 = "` \u000f-~¦\u0090·\u0087Eÿb¨ß\f\u0085®«\t&¶ÁC=óRîK\tï\u008eøD\u001a\u0013¶ò×\tß\u0007þuÝ2®13\u000f'-çý\u009bÉD²B\u0001Û9\u0005\b»\u000f$ü\u0087Á\u009e\u008eÌ\u009cSÄù\u0081A\u001f3\t<ü\u0082\nSÐ\\Á/\u0013\u0099<å×\n\u001d(Õ^\u0096\u0087÷Æy~e{Ìò\u0002yU\t\u0096Ö×Oùx\tÔ\u0085";
@@ -1610,7 +1611,6 @@ public abstract class Lr2_2 implements Q0_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

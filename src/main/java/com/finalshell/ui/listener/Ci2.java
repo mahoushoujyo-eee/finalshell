@@ -19,6 +19,7 @@ public class Ci2 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var33;
       String var2 = com.finalshell.core.Km2.U$String();
       Registry.emptyArgs();
       long var3 = 270389152141252877L;
@@ -35,9 +36,9 @@ public class Ci2 implements ActionListener {
          long var6 = 163462326892114024L;
          Object[] var5 = var10002;
          Ref.h(163462326892114024L, var5, var6);
-         Object[] var10003 = Registry.emptyArgs();
+         Object var10003 = Registry.emptyArgs();
          long var8 = 633712494917113170L;
-         Object[] var7 = var10003;
+         Object var7 = var10003;
          var10003 = Ref.h(633712494917113170L, var7, var8);
 
          try {

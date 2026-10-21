@@ -2249,6 +2249,7 @@ public class Hg2 implements Ak2, X4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[21];
       int var11 = 0;
       String var10 = "\u007f\u0010W^ºÑ\u0004\u000eã°Ô\u000eqHéÙ\u0083\\ÏûØpº<\u001cI\u0018\u0095ÐÑJÏýFv®vÑ®DTÓDW2ø1óy.\u009f\u0004ë\u008f®\"\u0006«ìÍÁé\"\u0005\u0095Nû\u000b\u0083\u0005; îo¾\fS\u00ad\u00ade\u000bËÞ\tú.þ÷\u0005Í\u0083ð²â\fÄ\u0005_pUi\u0015]\u0083¤Ñ¦\u0018\u0002\u000e#\u0091\u0091\u0086\u008d\u0019×\u009bþ\u0013¡ão²Àì\nê\u00ad\u0002åð\u0004\u008dÝËa\u000eJ\t\u008eñoYR[kdÌ¾Ò\u0019\u0004ÍõÃd\u0005yqÿJ°\u000e\u0092?·9\u001cîÍ\u0086yÎY\u0096\"0\u0004\u0006\u0086\u0013\u0003\u000f\u0001|ç_B\u008c÷áß3ZT\f^ç";
@@ -2264,7 +2265,6 @@ public class Hg2 implements Ak2, X4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

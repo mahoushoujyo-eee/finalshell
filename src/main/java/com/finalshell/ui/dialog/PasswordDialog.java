@@ -4,7 +4,7 @@ import com.finalshell.core.Lv4_2;
 import com.finalshell.crypto.ConnectHost;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.listener.Fq4;
 import com.finalshell.ui.listener.VA;
 import com.finalshell.ui.listener.Y;
@@ -32,7 +32,7 @@ public class PasswordDialog extends JDialog {
    public static long[] c;
    public static Integer[] f;
 
-   public PasswordDialog(U var1, Lv4_2 var2, ConnectHost var3, int var4) {
+   public PasswordDialog(MainFrame var1, Lv4_2 var2, ConnectHost var3, int var4) {
       super((Frame)var1);
       long var11 = 512091547013986622L;
       Ref.s(512091547013986622L, var2, var11);
@@ -142,6 +142,7 @@ public class PasswordDialog extends JDialog {
    }
 
    public void h() {
+      long var30;
       Object var3 = 492448585304602870L;
       Ref.g(492448585304602870L, var3);
       Object var5 = 512091547013986622L;
@@ -157,7 +158,7 @@ public class PasswordDialog extends JDialog {
 
       String var10005;
       Object var9 = 492448585304602870L;
-      super(((JPasswordField)Ref.g(492448585304602870L, var9)).getPassword());
+      // [VF-super] super(((JPasswordField)Ref.g(492448585304602870L, var9)).getPassword());
       var10005 = var10005.trim();
       long var12 = 245698082929102812L;
       String var11 = var10005;
@@ -201,7 +202,7 @@ public class PasswordDialog extends JDialog {
                long var27 = 270389152141252877L;
                Ref.h2(270389152141252877L, var27);
                Object[] var10014 = Registry.emptyArgs();
-               long var30 = 410905379772103887L;
+               var30 = 410905379772103887L;
                Object[] var29 = var10014;
                Ref.h(410905379772103887L, var29, var30);
                Object var31 = 512091547013986622L;
@@ -1065,6 +1066,7 @@ public class PasswordDialog extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[15];
       int var11 = 0;
       String var10 = "讌伒寚碔\u0004V\u000f\u0019Ü\r\u008f¬í\"\u009co¯¢\u0094{å#x\u0005祛殅皊徺,\u0004¾I\u0004\u0014\u0002厌淋\u0010¡\u001a;´\u0005ÿ\u0087ùÌ8\u0017\u0006\u00adí\u0006\u0096\u0011VfÖ{ûDBÒ\u0018Ðf\u0006\t\"]'\u0094\u0006韤褐余旻宖碢\u0004迤儃宐磙\u0005辍冎宽硨Û\u0011Æ2\u000e\u0007\tø\u0080E3*\u001bPð¯\u008ej¶\u0002磳嬐";
@@ -1080,7 +1082,6 @@ public class PasswordDialog extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      JPanel var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

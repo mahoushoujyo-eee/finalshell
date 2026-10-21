@@ -1120,6 +1120,7 @@ public class Xu2 implements Rx4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[13];
       String[] var10000 = new String[4];
       int var11 = 0;
@@ -1137,7 +1138,6 @@ public class Xu2 implements Rx4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

@@ -22,7 +22,7 @@ public class YU {
    public void d(int var1, boolean var2) {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var4 = this.P.X;
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
       var10000 = (var2) ? 1 : 0;
       if (!var3) {
          if (var2 == 0) {
@@ -68,7 +68,7 @@ public class YU {
    public int h(int var1, int var2, int var3) {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var5 = var1 + 5 + a(28033, 1716368427774639606L);
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
       int var6 = -var5 & var2 - 1;
       var10000 = var6;
       int var10001 = var2;

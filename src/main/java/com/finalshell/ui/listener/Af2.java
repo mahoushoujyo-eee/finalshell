@@ -5,7 +5,7 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.model.Tf4;
 import com.finalshell.ui.panel.AA;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.event.TreeSelectionEvent;
@@ -14,9 +14,9 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class Af2 implements TreeSelectionListener {
-   public final Connection5 x;
+   public final ImportExportPanel x;
 
-   public Af2(Connection5 var1) {
+   public Af2(ImportExportPanel var1) {
       this.x = var1;
    }
 
@@ -28,7 +28,7 @@ public class Af2 implements TreeSelectionListener {
          Object var6 = 317048384022246679L;
          Registry.lookupField(159470416555914823L).setLong(Ref.g(317048384022246679L, var6), System.currentTimeMillis());
          Object var8 = 317048384022246679L;
-         TreePath var3 = ((Connection5)Ref.g(317048384022246679L, var8)).getSelectionPath();
+         TreePath var3 = ((ImportExportPanel)Ref.g(317048384022246679L, var8)).getSelectionPath();
          Object var4 = null;
          Object var10002 = var3;
          if (this == null) {
@@ -87,7 +87,7 @@ public class Af2 implements TreeSelectionListener {
       File var32;
       String var10007 = (String)(Registry.emptyArgs());
       long var23 = 605430732347023634L;
-      Object[] var22 = var10007;
+      Object var22 = var10007;
       var10007 = Ref.h(605430732347023634L, var22, var23);
 
       try {

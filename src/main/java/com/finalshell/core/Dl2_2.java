@@ -900,6 +900,7 @@ public class Dl2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "Öl\u0007P\b\u0011¡\u0006ç\u0097?\u009aÒ\t\b»\u0016âº\u0097\u0007\tÅ";
@@ -914,7 +915,6 @@ public class Dl2_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

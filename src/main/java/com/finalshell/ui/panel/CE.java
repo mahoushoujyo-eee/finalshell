@@ -1,11 +1,11 @@
 package com.finalshell.ui.panel;
 
-import com.finalshell.core.CK;
+import com.finalshell.core.ZModemTransfer;
 import com.finalshell.core.CZ3;
 import com.finalshell.core.KV;
 import com.finalshell.core.NY;
 import com.finalshell.core.T32;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.DJ3;
@@ -17,13 +17,13 @@ import javax.swing.border.MatteBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class CE extends F8 {
-   public CopyPanel P;
+   public ProcessInfoPanel P;
    public T32 n;
    public KV Z;
    public String x;
    public boolean g;
    public YX3 A;
-   public Ty2 U;
+   public RemoteProcessManager U;
    public boolean r;
    public static int[] T;
    public static String[] a;
@@ -31,7 +31,7 @@ public class CE extends F8 {
    public static long[] d;
    public static Integer[] e;
 
-   public CE(String var1, Ty2 var2, boolean var3, String var4) {
+   public CE(String var1, RemoteProcessManager var2, boolean var3, String var4) {
       KV var10001 = new KV();
       long var8 = 441490372026516146L;
       KV var7 = var10001;
@@ -74,9 +74,9 @@ public class CE extends F8 {
       long var24 = 514385705905485579L;
       YX3 var23 = var10010;
       Ref.s(514385705905485579L, var23, var24);
-      CopyPanel var10011 = new CopyPanel(var1, var3, var2);
+      ProcessInfoPanel var10011 = new ProcessInfoPanel(var1, var3, var2);
       long var26 = 382869105486063459L;
-      CopyPanel var25 = var10011;
+      ProcessInfoPanel var25 = var10011;
       Ref.s(382869105486063459L, var25, var26);
       Object var27 = 382869105486063459L;
       Ref.g(382869105486063459L, var27);
@@ -92,7 +92,7 @@ public class CE extends F8 {
       }
 
       Object var31 = 382869105486063459L;
-      this.add((CopyPanel)Ref.g(382869105486063459L, var31));
+      this.add((ProcessInfoPanel)Ref.g(382869105486063459L, var31));
       Object var33 = 441490372026516146L;
       Ref.g(441490372026516146L, var33);
       Object[] var10016 = Registry.packArgs(var1);
@@ -176,7 +176,7 @@ public class CE extends F8 {
    public void J() {
       ConnectionProperty var10001 = (ConnectionProperty)(Registry.emptyArgs());
       long var7 = 595556246051364370L;
-      Object[] var6 = var10001;
+      Object var6 = var10001;
       var10001 = Ref.h(595556246051364370L, var6, var7);
 
       try {
@@ -187,7 +187,7 @@ public class CE extends F8 {
 
       ConnectionProperty var2 = var10001;
       int[] var29 = S$arrint();
-      Ty2 var3 = var2.M$Ty_2();
+      RemoteProcessManager var3 = var2.M$Ty_2();
       int[] var1 = var29;
       if (var3 != null) {
          var2.a();
@@ -209,7 +209,7 @@ public class CE extends F8 {
                return;
             }
 
-            var10003 = CK.Ur;
+            var10003 = ZModemTransfer.Ur;
          }
 
          if (var10003) {
@@ -306,7 +306,7 @@ public class CE extends F8 {
       Ref.h(399585344452154517L, var5, var6);
       NY var10003 = (NY)(Registry.emptyArgs());
       long var8 = 149968465491171480L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(149968465491171480L, var7, var8);
 
       try {
@@ -319,7 +319,7 @@ public class CE extends F8 {
       byte var22 = 2;
       Color var10008 = (Color)(Registry.emptyArgs());
       long var10 = 345089686683358688L;
-      Object[] var9 = var10008;
+      Object var9 = var10008;
       var10008 = Ref.h(345089686683358688L, var9, var10);
 
       try {
@@ -397,22 +397,22 @@ public class CE extends F8 {
       Ref.s(514385705905485579L, var1, var3);
    }
 
-   public Ty2 S$Ty_2() {
+   public RemoteProcessManager S$Ty_2() {
       Object var1 = 528295235509144512L;
-      return (Ty2)Ref.g(528295235509144512L, var1);
+      return (RemoteProcessManager)Ref.g(528295235509144512L, var1);
    }
 
-   public void W(Ty2 var1) {
+   public void W(RemoteProcessManager var1) {
       long var3 = 528295235509144512L;
       Ref.s(528295235509144512L, var1, var3);
    }
 
-   public CopyPanel O$O3() {
+   public ProcessInfoPanel O$O3() {
       Object var1 = 382869105486063459L;
-      return (CopyPanel)Ref.g(382869105486063459L, var1);
+      return (ProcessInfoPanel)Ref.g(382869105486063459L, var1);
    }
 
-   public void t(CopyPanel var1) {
+   public void t(ProcessInfoPanel var1) {
       long var3 = 382869105486063459L;
       Ref.s(382869105486063459L, var1, var3);
    }

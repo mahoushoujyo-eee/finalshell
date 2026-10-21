@@ -438,6 +438,7 @@ public class I22 implements Ss2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static void L(JComponent var0) {
+      Object var9;
       boolean var10000 = K$boolean();
       Object var2 = S;
       synchronized (S){} // $VF: monitorenter 
@@ -456,8 +457,6 @@ public class I22 implements Ss2 {
                      break label39;
                   }
                } catch (RuntimeException var7) {
-      Object var9;
-      Object var9;
                   throw a(var7);
                }
 
@@ -518,6 +517,7 @@ public class I22 implements Ss2 {
 
                var3.remove();
                if (!var1) {
+      Object var9;
                   continue;
                }
             }
@@ -2847,6 +2847,7 @@ public class I22 implements Ss2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static void i(String var0, Dm2 var1) {
+      Object var10;
       boolean var10000 = K$boolean();
       Object var3 = H;
       synchronized (H){} // $VF: monitorenter 
@@ -2983,6 +2984,7 @@ public class I22 implements Ss2 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static void R$void() {
+      Object var10;
       boolean var10000 = X$boolean();
       Object var1 = H;
       synchronized (H){} // $VF: monitorenter 
@@ -3862,12 +3864,15 @@ public class I22 implements Ss2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var34;
+      int var9;
       String[] var13 = new String[21];
       int var11 = 0;
-      String var10 = "\u0001\u0082\u0002j \u0002=\u009e\u0002B\u0092\u0011\u0088\u008f\u0092\t£ßØ3\u0000ÏPL.á±.ë\u0014&àã¯ªm4æ·ú¨\u009c¿i\u0088\u0084ú\u000eýÌ\u0002\u0007±\u0004èó\u0094µ.í!/7ã¹\u00adj@\u009b>\u0019\u0017\u0013\u0081xyv\"\f¾ÝAiC\u0091c¾¤áq´BZúôªðu\u0096ª%x§\u009aü\u000bdQ«\u0099£«\u0015>\u0093á,\u0002w9\u0002|X\r¸:¥út\u001b\u0014\f\u0016[úðc\u0016ù\u0016|¶À2°ÿÔ\u00159.¼ÿ¡«\u0084\u008f\u0012TÔq\u0010¿õtF\u007f6C\u000esq'¶ïZ5}\u0002÷å\u0010uE-PTô&Vßz²×]vcø\u00118ó\u0084\u0086a.\u0080\r\u000b\b1´\u0002þ4Í[\u0002\u0015ª";
+      var10 = "\u0001\u0082\u0002j \u0002=\u009e\u0002B\u0092\u0011\u0088\u008f\u0092\t£ßØ3\u0000ÏPL.á±.ë\u0014&àã¯ªm4æ·ú¨\u009c¿i\u0088\u0084ú\u000eýÌ\u0002\u0007±\u0004èó\u0094µ.í!/7ã¹\u00adj@\u009b>\u0019\u0017\u0013\u0081xyv\"\f¾ÝAiC\u0091c¾¤áq´BZúôªðu\u0096ª%x§\u009aü\u000bdQ«\u0099£«\u0015>\u0093á,\u0002w9\u0002|X\r¸:¥út\u001b\u0014\f\u0016[úðc\u0016ù\u0016|¶À2°ÿÔ\u00159.¼ÿ¡«\u0084\u008f\u0012TÔq\u0010¿õtF\u007f6C\u000esq'¶ïZ5}\u0002÷å\u0010uE-PTô&Vßz²×]vcø\u00118ó\u0084\u0086a.\u0080\r\u000b\b1´\u0002þ4Í[\u0002\u0015ª";
       int var12 = "\u0001\u0082\u0002j \u0002=\u009e\u0002B\u0092\u0011\u0088\u008f\u0092\t£ßØ3\u0000ÏPL.á±.ë\u0014&àã¯ªm4æ·ú¨\u009c¿i\u0088\u0084ú\u000eýÌ\u0002\u0007±\u0004èó\u0094µ.í!/7ã¹\u00adj@\u009b>\u0019\u0017\u0013\u0081xyv\"\f¾ÝAiC\u0091c¾¤áq´BZúôªðu\u0096ª%x§\u009aü\u000bdQ«\u0099£«\u0015>\u0093á,\u0002w9\u0002|X\r¸:¥út\u001b\u0014\f\u0016[úðc\u0016ù\u0016|¶À2°ÿÔ\u00159.¼ÿ¡«\u0084\u008f\u0012TÔq\u0010¿õtF\u007f6C\u000esq'¶ïZ5}\u0002÷å\u0010uE-PTô&Vßz²×]vcø\u00118ó\u0084\u0086a.\u0080\r\u000b\b1´\u0002þ4Í[\u0002\u0015ª"
          .length();
-      char var9 = 2;
+      var9 = 2;
       int var17 = -1;
       z(true);
 
@@ -4079,7 +4084,6 @@ public class I22 implements Ss2 {
       }
    }
 }
-
 
 
 

@@ -32,7 +32,7 @@ public class J6 implements LayoutManager {
       Object var10004 = Ref.g(403443201352784895L, var3);
       JComponent var10005 = (JComponent)(Registry.emptyArgs());
       long var6 = 471986896906843084L;
-      Object[] var5 = var10005;
+      Object var5 = var10005;
       var10005 = Ref.h(471986896906843084L, var5, var6);
 
       try {
@@ -41,7 +41,7 @@ public class J6 implements LayoutManager {
          throw var7.getTargetException();
       }
 
-      super((int)var10004, var10005.getPreferredSize().height);
+      // [VF-super] super((int)var10004, var10005.getPreferredSize().height);
       return (Dimension)var10002;
    }
 
@@ -57,7 +57,7 @@ public class J6 implements LayoutManager {
       Ref.g(403443201352784895L, var4);
       JComponent var10002 = (JComponent)(Registry.emptyArgs());
       long var7 = 471986896906843084L;
-      Object[] var6 = var10002;
+      Object var6 = var10002;
       var10002 = Ref.h(471986896906843084L, var6, var7);
 
       try {
@@ -75,7 +75,7 @@ public class J6 implements LayoutManager {
       Ref.g(403443201352784895L, var2);
       JComponent var10002 = Registry.emptyArgs();
       long var5 = 132133208927421439L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       var10002 = Ref.h(132133208927421439L, var4, var5);
 
       try {

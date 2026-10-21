@@ -232,6 +232,7 @@ public class F3_4 {
 
    @Override
    public String toString() {
+      StringBuilder var8;
       String[] var10000 = RG_2.C();
       StringBuilder var2 = new StringBuilder("(");
       String[] var1 = var10000;

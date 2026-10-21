@@ -42,9 +42,10 @@ public class X2 {
 
    public X2(com.finalshell.ui.model.L var1, String var2, X2 var3, List var4) {
    super();
+   int[] var5;
       int[] var10000 = w();
       this.A = new ArrayList();
-      int[] var5 = var10000;
+      var5 = var10000;
       this.y(var1);
       this.N(var2);
       this.v(var3);
@@ -117,14 +118,15 @@ public class X2 {
    }
 
    public X2 q(String var1) {
+      X2 var4;
+      X2 var5;
       int[] var10000 = w();
       Iterator var3 = this.A.iterator();
       int[] var2 = var10000;
 
       while (true) {
          if (var3.hasNext()) {
-      X2 var5;
-            X2 var4 = (X2)var3.next();
+            var4 = (X2)var3.next();
             var5 = var4;
             if (var2 == null) {
                break;
@@ -163,6 +165,7 @@ public class X2 {
    }
 
    public ImageIcon u() {
+      ImageIcon var4;
       int[] var1 = w();
       X2 var10000 = this;
       if (var1 != null) {
@@ -207,7 +210,7 @@ public class X2 {
       }
 
       ImageIcon var2 = Cz2.a(var3, this.i(), 1.0F);
-      ImageIcon var4 = var2;
+      var4 = var2;
       if (var1 != null) {
          if (var2 != null) {
             return var2;
@@ -243,6 +246,7 @@ public class X2 {
    }
 
    public String F() {
+      boolean var4;
       int[] var10000 = w();
       String var2 = this.v();
       int[] var1 = var10000;
@@ -280,6 +284,8 @@ public class X2 {
    }
 
    public String r() {
+      boolean var4;
+      X2 var5;
       int[] var10000 = w();
       String var2 = this.v();
       X2 var3 = this.x();
@@ -287,7 +293,7 @@ public class X2 {
 
       while (var3 != null) {
          label33: {
-            boolean var4 = var3.B$L().equals(com.finalshell.ui.model.L.jarEntry);
+            var4 = var3.B$L().equals(com.finalshell.ui.model.L.jarEntry);
             if (var1 != null) {
                if (var4) {
                   break;
@@ -319,13 +325,14 @@ public class X2 {
    }
 
    public List X() {
+      X2 var4;
       ArrayList var2 = new ArrayList();
       int[] var10000 = w();
       X2 var3 = this;
       int[] var1 = var10000;
 
       while (var3 != null) {
-         X2 var4 = var3;
+         var4 = var3;
          if (var1 != null) {
             if (var3.B$L().equals(com.finalshell.ui.model.L.jarEntry)) {
                break;
@@ -386,6 +393,7 @@ public class X2 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ -812) & 65535;
       if (c[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1160,7 +1168,7 @@ public class X2 {
                var10000 = 90;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -1191,10 +1199,13 @@ public class X2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var5 = new String[7];
+      char[] var21;
+      boolean var4;
+      String[] var5;
+      var5 = new String[7];
       int var3 = 0;
       String var2 = "ëVIÈb³\u0017´\u0087êßbÄ\u0002zI\u0011}G\u009bê8÷F<å¾±\f8\b×´ü\u0002.ó\u000eÃzLMÂ\u0003\u000fª\u0017kNnjø";
-      int var4 = "ëVIÈb³\u0017´\u0087êßbÄ\u0002zI\u0011}G\u009bê8÷F<å¾±\f8\b×´ü\u0002.ó\u000eÃzLMÂ\u0003\u000fª\u0017kNnjø".length();
+      var4 = ("ëVIÈb³\u0017´\u0087êßbÄ\u0002zI\u0011}G\u009bê8÷F<å¾±\f8\b×´ü\u0002.ó\u000eÃzLMÂ\u0003\u000fª\u0017kNnjø".length()) != 0;
       char var1 = '\r';
       int[] var10000 = new int[4];
       int var8 = -1;
@@ -1207,7 +1218,6 @@ public class X2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var21;
             label47: {
                char[] var25 = var10001.toCharArray();
                int var10004 = var25.length;

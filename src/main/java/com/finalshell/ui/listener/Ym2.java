@@ -25,6 +25,7 @@ public class Ym2 implements KeyListener {
 
    @Override
    public void keyPressed(KeyEvent var1) {
+      int var19;
       int[] var2 = AppendCarriageReturnCRPanel.Y();
       Registry.emptyArgs();
       long var5 = 270389152141252877L;
@@ -33,9 +34,9 @@ public class Ym2 implements KeyListener {
       long var8 = 306266403902896148L;
       Object[] var7 = var10002;
       Ref.h(306266403902896148L, var7, var8);
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var10 = 257025344649675398L;
-      Object[] var9 = var10003;
+      Object var9 = var10003;
       var10003 = Ref.h(257025344649675398L, var9, var10);
 
       try {
@@ -58,10 +59,10 @@ public class Ym2 implements KeyListener {
             int var20 = var3;
             if (var2 == null) {
                if (var3 != 0) {
-                  byte var21 = (var1.isControlDown()) ? 1 : 0;
+                  byte var21 = (byte)((var1.isControlDown()) ? 1 : 0);
                   if (var2 == null) {
                      if (var21 == 0) {
-                        var19 = var1.isMetaDown();
+                        var19 = (var1.isMetaDown()) ? 1 : 0;
                         if (var2 != null) {
                            break label66;
                         }
@@ -76,8 +77,6 @@ public class Ym2 implements KeyListener {
 
                   var4 = var21;
                   if (var2 == null) {
-      int var19;
-      int var19;
                      break label64;
                   }
                }
@@ -119,7 +118,6 @@ public class Ym2 implements KeyListener {
       a = var10002;
    }
 }
-
 
 
 

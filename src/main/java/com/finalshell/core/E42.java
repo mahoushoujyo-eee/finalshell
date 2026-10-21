@@ -7,6 +7,7 @@ import javax.swing.KeyStroke;
 
 public class E42 extends EF3 {
    public void J(AbstractButton var1, String var2, com.finalshell.ui.model.G9 var3, Object[] var4) {
+      int var14;
       String[] var10000 = E12.A();
       String var6 = this.q(var3, var4);
       String[] var5 = var10000;

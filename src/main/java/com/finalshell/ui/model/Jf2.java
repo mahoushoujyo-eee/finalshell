@@ -53,7 +53,7 @@ public final class Jf2 implements Serializable {
          if (var2 == null) {
             if (this.N == var3.N) {
                if (var2 != null) {
-                  return (boolean)this.B;
+                  return (this.B != 0);
                }
 
                if (this.B == var3.B) {

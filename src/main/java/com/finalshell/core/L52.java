@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 import java.math.BigInteger;
 
-public class L52 extends Ls4 {
+public class L52 extends SshKeyCodec {
    public static byte[] e;
    public static byte[] I;
    public static byte[] V;
@@ -34,7 +34,7 @@ public class L52 extends Ls4 {
    public static byte[] q;
    public static byte[] N;
    public static byte[] d;
-   public Ls4 L = null;
+   public SshKeyCodec L = null;
    public static byte[] s;
    public static byte[] k;
    public static String[] bb;
@@ -1482,7 +1482,7 @@ public class L52 extends Ls4 {
    @Override
    public byte[] A() {
       boolean var1 = Dm4.J$boolean();
-      Ls4 var10000 = this.L;
+      SshKeyCodec var10000 = this.L;
       if (!var1) {
          if (this.L == null) {
             return new byte[0];
@@ -1497,7 +1497,7 @@ public class L52 extends Ls4 {
    @Override
    public int y() {
       boolean var1 = Dm4.J$boolean();
-      Ls4 var10000 = this.L;
+      SshKeyCodec var10000 = this.L;
       if (!var1) {
          if (this.L == null) {
             return 4;
@@ -3812,6 +3812,7 @@ public class L52 extends Ls4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[46];
       int var11 = 0;
       String var10 = "\u009dèÞèÆÃ\u001d\u0011Yã\u0089\fHëji\u0095\\¦{iÉO\u0096+\b\"ô÷ãçaDSJê.ö\u001aÅ±úÉÃÝbzî?¤\u008d÷¥&ÅÐH§¯\u0096U\u0010\u0084\reb\u0084i\u001bÛø½ìÖÊ*+:\bîå\u008cq3Ðt°Û*,×vS\u0095w\n\u008a\u0084»\u0085\u0015éyÓýAXýî{\u000bT\u001dØç\u008dç-¥Ý÷\\yy³Ði9\u007fØ\u001fÝ&þÛ%ì}7úÚ\bÉò\u0090\u0005\u000f\u0018\u0085ÖXÏ,¶ü\u009b°×ÁÂµ\u0087³\u0098Á`\u00adÊKè\f\u009c\u0016\u0012\u0007Ï÷0Ï ýç\u0005ú\u0080n\u0090®\u0091ÝOx\u0015m\u0003\u00075Üñ\tÍ\u0088â\fäþ_@|ÏANª\u0082 ¼p\u008eô ««=\u000bso%\u001cÀÑØøâ\u0084È9¸2½\u0013\u008b5ãUÕñ§ \u001d\u001fº\u0019¦\u0016{\u008a\u0011\u0082,ütûÜ¿Y\u000e°U¿\u000bâË\tEv:=îüÀ\n\u008c>\u00ad¿ÌI¤E!Æ\u001d\u0092¼õ±J\u0007\f¶y\\ÛW\u009ePZF\u0007jy\u009dRêt$Í\u008aàwF\u0015«Ä´:æ>¶¤ÂL)\u009dÕ\u000e\u001c£\r·Y±% \u0096ÏË\u0003\u0088U¾â©\u0088;Z\u00969\u0086RÔþ\u0001K\u0089È$³ÑJmÛ^Ò\u0090G rLWs\u001b[Ì#ç·òZ¯9¡R0þ\u009dK\u001aÈV³\u009fJ¤ÛgÒ·G!\u001eËi,\u0011Ò°©¿nêu9kÍxÛV $Æ¿?\"\u0002\u0080\u00961á4Ø{\u0082\u0013\\hJ¯9\u008cMò½\u0086ÆÄ(%£Æí,µ\b[å¹\u000f\u000bÒ®\u0007\u001ezÓT\u0088Èî\u00859ªæ÷¬\u0087ÿ\u0093ëª\u0018Et\u0090\u0007\u0001ÀýØ\u0002çLÕ\u0012\u0018L\u0014@³.r&ôÂ¾iWNiÀZú!Ó=c]\u009d\u009e\u001c\u0085ñÊÍ <\u008a\u009f£n7æÐ7Ïç±×±k\u001e\u0083\u0090\u0084È_\u0012¨8\u0002Îqÿ*\u001cÿ\u0085ß\u0081{Sìbç\u008d%Ú!ñq\u0002yÒÜóÀc \u001bÚã(e\u0091\u0014\u0094P©íàXØÝ Ç\u0015º\u0011\u009d:NRú\u0012\u000167\u000f×Çþ\u001bee\u008c\u009d\u0011Ð¡\u0015J\u008031É\u008cl\u00adÚ'¨MN´qòë´hôTEdz·¨#ð È/e·è`\u0006\u0090\u0099jpª\u0089§\u00ad\u000bªB\u0007·\u00100ÇDå!>>Þ=*\u0092ê\u0004/ú\u0016&GJæ½ô2øpôÛ\u009f3Øá\u008a\u0014¿Ñ\u0003à¯!cïÆ¨äB\u000e»h,\u0010=ui.^Ü_#M¶\u00921\u0087Ã4®§ææ8!\u009e0n$Öv\u00981\u008fÂë\u0099ßC\u0082\u00023T¾ïÇ\u008aÀØ\u000b;¼§*\bI(\u0017ñ\u0094Ê¶ÁÌ6$Â\u000bø\u001d®÷íü\u000f\nðó\"\u00051y\u0096Çg\u0096\u0006ØQvßÓ%$¹í\u009dè\u008fJcºÅ\f¥9ÃéøN\u0006]x\rÝ\u009a\\\u0086n\u0014\u001b¹\u001fq 6¡D]\u001b\bR~\u0098|/º É \u0084EQ\nZ8!d0T`\u009a\u0015|\u008cxÛ¤ðÊÜÙ-\tpµ£\u0097\u0000ÍfÖ$0\u000f¬´©Á§Ë]\"¶ü¡Q´Y\u008f¿IQû\u0011\u0098÷ö:\b|}ßêq.\"¬×\u0017'Ä\u0089m,sX\u0002\u0003&\u0090Þ9úQQE\u0002è°h°Ì\u001c\u001bÉxËM\u008654¼G5\u0098ßy\u0098;Ë\u0016m2\u0010à`¼Î¹ÖÂ\u0011\n¡\u0014Ó Í@äÞÏ5\u0003Kï`û\u0090\nS^V°´ÅL\u001b<\r\u001cÜI1|\u001aØÑè\u0093Fop\u009cÇÆv¬\u0001æËÊ¬¤[ZÜÉÐ\u0010ú\u000fH(8#\u0003\u0087Úö{ïï\u009e~Ø\bÃ\u0082ªãiHå´\u001d&ônËñ.¬6<\u009d\u009a\u000b)§\u0014\u0083$\u001a^î5\u008f k1q<Ó°\u0015üC^Ê» \u001dg·4\u0087\u0092\u0000ï¦\u009fZ\u0017³fx\u001fgpK(\u009d3ýÔDyK½â¹ºQ#º{\u008a$\u0082%ôF´ôJÄ³?$ûÒÕ\u000f\u0086¶B%áÿ!GS&ê·Db0êÔf}\u0019Jç\u009fÇ\u008f¨´\u0098åøÕ\u008c";
@@ -3827,7 +3828,6 @@ public class L52 extends Ls4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label66: {
                char[] var65 = var10001.toCharArray();
                int var10004 = var65.length;

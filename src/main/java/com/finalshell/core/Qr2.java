@@ -68,6 +68,7 @@ public class Qr2 {
    }
 
    public static byte[] u(byte[] var0) {
+      long var26;
       Ky4[] var10000 = YT3_2.c();
       Random var2 = new Random((long)var0[5]);
       long var3 = (long)(5 + var2.nextInt(a(757, 2493245420898990152L)));
@@ -284,6 +285,7 @@ public class Qr2 {
    }
 
    public static String C(String var0) throws Exception {
+      byte[] var4;
       Registry.packArgs(Registry.lookupField(501813363038012860L).getInt(null));
       long var6 = 553032560684353898L;
       Object var10001 = Ref.h2(553032560684353898L, var6);
@@ -317,7 +319,7 @@ public class Qr2 {
       }
 
       byte[] var3 = (byte[])var10003;
-      byte[] var4 = new byte[var2.length + var3.length + Registry.lookupField(501813363038012860L).getInt(null)];
+      var4 = new byte[var2.length + var3.length + Registry.lookupField(501813363038012860L).getInt(null)];
       System.arraycopy(var1, 0, var4, 0, Registry.lookupField(501813363038012860L).getInt(null));
       System.arraycopy(var2, 0, var4, 0 + Registry.lookupField(501813363038012860L).getInt(null), var2.length);
       System.arraycopy(var3, 0, var4, var2.length + Registry.lookupField(501813363038012860L).getInt(null), var3.length);
@@ -335,6 +337,7 @@ public class Qr2 {
    }
 
    public static byte[] O(int var0) {
+      byte[] var4;
       byte[] var2 = new byte[var0];
       Ky4[] var10000 = YT3_2.c();
       int var3 = 0;
@@ -342,7 +345,6 @@ public class Qr2 {
 
       while (true) {
          if (var3 < var0) {
-      Random var4;
             var4 = var2;
             if (var1 == null) {
                break;
@@ -351,7 +353,6 @@ public class Qr2 {
             var2[var3] = (byte)(5 + (byte)new Random().nextInt(a(16209, 5406361780650968557L)));
             var3++;
             if (var1 != null) {
-      Random var4;
                continue;
             }
          }
@@ -364,7 +365,8 @@ public class Qr2 {
    }
 
    public void p(byte[] var1, long var2) {
-      Random var4 = new Random();
+      Random var4;
+      var4 = new Random();
       var4.nextLong();
    }
 
@@ -413,6 +415,7 @@ public class Qr2 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 1965) & 65535;
       if (c[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1187,7 +1190,7 @@ public class Qr2 {
                var10000 = 240;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -1227,6 +1230,8 @@ public class Qr2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      byte var26;
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "\u0012¼\u0018\u0003\u0013Ö8";
@@ -1328,7 +1333,7 @@ public class Qr2 {
 
                      label44:
                      while (true) {
-                        byte var26 = var2;
+                        var26 = var2;
                         var2 += 8;
                         byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
@@ -1407,7 +1412,6 @@ public class Qr2 {
       }
    }
 }
-
 
 
 

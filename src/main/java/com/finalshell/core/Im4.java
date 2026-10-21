@@ -75,17 +75,17 @@ public class Im4 {
    }
 
    public void Q(@NotNull OT var1, int var2, int var3, @NotNull NO3 var4, @Nullable RU3 var5) {
+      int var10;
+      int var8;
       boolean var6;
       int var7;
-      int var8;
       int var9;
-      int var10;
       int var18;
       var7 = var1.R();
       var8 = var1.c();
       int var10000 = (com.finalshell.ui.model.J2.P()) ? 1 : 0;
       var9 = var2;
-      var6 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      var6 = (var10000) != 0;
       var10 = var3;
       var18 = this.D;
       label90:
@@ -452,6 +452,7 @@ public class Im4 {
    }
 
    public String c$String() {
+      StringBuilder var10;
       boolean var10000 = com.finalshell.ui.model.J2.g();
       this.v.lock();
       boolean var1 = var10000;
@@ -463,7 +464,6 @@ public class Im4 {
 
          while (true) {
             if (var3 < this.R) {
-      boolean var10;
                StringBuilder var4 = new StringBuilder(this.F.t(var3).V$String());
                var10 = var4;
                if (!var1) {
@@ -498,7 +498,6 @@ public class Im4 {
                }
 
                if (var1) {
-      Iterator var10;
                   continue;
                }
             }
@@ -683,6 +682,7 @@ public class Im4 {
    }
 
    public void q(int var1, int var2, Lf2 var3) {
+      Ua2 var8;
       boolean var4 = com.finalshell.ui.model.J2.P();
       int var10000 = var2;
       if (!var4) {
@@ -741,6 +741,7 @@ public class Im4 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void B$void() {
+      Im4 var10;
       boolean var10000 = com.finalshell.ui.model.J2.g();
       this.v.lock();
       boolean var1 = var10000;
@@ -825,6 +826,7 @@ public class Im4 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -24942) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1611,7 +1613,7 @@ public class Im4 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1639,9 +1641,11 @@ public class Im4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var30;
       String[] var13 = new String[13];
       int var11 = 0;
-      String var10 = "\u0011ÏÁ\u001dä«Â\u0086ö¦\fö<5\u009bë´,\u0092\u009fÒ\u001f\u0091r&6-ÅÑ\u0092]\u0080¬òeD\u0016v\u0080|+\u0010\u009f\b¦éÄûà£N\u0090\u001bò\u0091¤9t¡³»Ë\b±¨CB\u00039\u008fù#1\u0081áa86\u0087*;Ôsì\u008cVÊ\u0019ÎbklÿnLìÒL[u\u0092°dgÏ\u009dð\u0007\u008e¿@CwdC\u0007õW/^\u009aÇþ%T\u0019Mr\u00adT5fm]¹ßÂg¥\u0081STµG\u0095v¨-±¾/ÿ#ðÚ\u001f\u0085Ï¥Ò\u0018/ÖD\u001dÙ§!tÈE\u0088¼du<°W`þ8=÷½DIÊ\u009bbí²\u0096\u009b\"ü\u0094úî£¢æ4c¬\u0095ª\u00844\u009a\rßY\u0018Ïßñ¥Í\u001aÏ\u0091Û\u008f\u0004¬\u008aVF#·¹1f\"ÖÄ6SW~\u009c-XþØHZ»kå\u008e\u000fðºÏV\u00053¾P¦I¥ ";
+      var10 = "\u0011ÏÁ\u001dä«Â\u0086ö¦\fö<5\u009bë´,\u0092\u009fÒ\u001f\u0091r&6-ÅÑ\u0092]\u0080¬òeD\u0016v\u0080|+\u0010\u009f\b¦éÄûà£N\u0090\u001bò\u0091¤9t¡³»Ë\b±¨CB\u00039\u008fù#1\u0081áa86\u0087*;Ôsì\u008cVÊ\u0019ÎbklÿnLìÒL[u\u0092°dgÏ\u009dð\u0007\u008e¿@CwdC\u0007õW/^\u009aÇþ%T\u0019Mr\u00adT5fm]¹ßÂg¥\u0081STµG\u0095v¨-±¾/ÿ#ðÚ\u001f\u0085Ï¥Ò\u0018/ÖD\u001dÙ§!tÈE\u0088¼du<°W`þ8=÷½DIÊ\u009bbí²\u0096\u009b\"ü\u0094úî£¢æ4c¬\u0095ª\u00844\u009a\rßY\u0018Ïßñ¥Í\u001aÏ\u0091Û\u008f\u0004¬\u008aVF#·¹1f\"ÖÄ6SW~\u009c-XþØHZ»kå\u008e\u000fðºÏV\u00053¾P¦I¥ ";
       int var12 = "\u0011ÏÁ\u001dä«Â\u0086ö¦\fö<5\u009bë´,\u0092\u009fÒ\u001f\u0091r&6-ÅÑ\u0092]\u0080¬òeD\u0016v\u0080|+\u0010\u009f\b¦éÄûà£N\u0090\u001bò\u0091¤9t¡³»Ë\b±¨CB\u00039\u008fù#1\u0081áa86\u0087*;Ôsì\u008cVÊ\u0019ÎbklÿnLìÒL[u\u0092°dgÏ\u009dð\u0007\u008e¿@CwdC\u0007õW/^\u009aÇþ%T\u0019Mr\u00adT5fm]¹ßÂg¥\u0081STµG\u0095v¨-±¾/ÿ#ðÚ\u001f\u0085Ï¥Ò\u0018/ÖD\u001dÙ§!tÈE\u0088¼du<°W`þ8=÷½DIÊ\u009bbí²\u0096\u009b\"ü\u0094úî£¢æ4c¬\u0095ª\u00844\u009a\rßY\u0018Ïßñ¥Í\u001aÏ\u0091Û\u008f\u0004¬\u008aVF#·¹1f\"ÖÄ6SW~\u009c-XþØHZ»kå\u008e\u000fðºÏV\u00053¾P¦I¥ "
          .length();
       char var9 = '\r';
@@ -1787,7 +1791,6 @@ public class Im4 {
       }
    }
 }
-
 
 
 

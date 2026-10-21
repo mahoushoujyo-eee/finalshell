@@ -1034,6 +1034,7 @@ public class Ct4 implements PA {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "Ä\u0090©ßy\u0005§½Åzô\u000e\u008fõ+mw¸\n;óÞ\u0012°*ï\u0007~sø¢\u0098ÇØ";
@@ -1048,7 +1049,6 @@ public class Ct4 implements PA {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -28,7 +28,7 @@ public class AB {
             N var5 = var10001;
             String var10003 = (String)(Registry.emptyArgs());
             long var9 = 325825537657373656L;
-            Object[] var8 = var10003;
+            Object var8 = var10003;
             var10003 = Ref.h(325825537657373656L, var8, var9);
 
             try {

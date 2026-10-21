@@ -27,6 +27,7 @@ public class F82 implements Runnable {
 
    @Override
    public void run() {
+      HashMap var26;
       com.finalshell.ui.panel.Ky4[] var10000 = YT3_2.c();
       Set var2 = Thread.getAllStackTraces().keySet();
       com.finalshell.ui.panel.Ky4[] var1 = var10000;
@@ -37,7 +38,6 @@ public class F82 implements Runnable {
 
       while (true) {
          if (var3.hasNext()) {
-      HashMap var26;
             Thread var7 = (Thread)var3.next();
             var5.add(var7);
             var26 = var6;

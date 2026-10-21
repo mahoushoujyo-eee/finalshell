@@ -26,6 +26,7 @@ public final class Lz4 {
    }
 
    public static boolean c(File var0, File var1, FF var2) {
+      FF var14;
       String var3 = FV_2.D();
 
       try {
@@ -80,8 +81,6 @@ public final class Lz4 {
                      var8 = new File(var1, var7.getName());
                      var8.mkdirs();
                      if (var3 == null) {
-      String var14;
-      String var14;
                         break label55;
                      }
                   }
@@ -184,7 +183,6 @@ public final class Lz4 {
       a = var10002;
    }
 }
-
 
 
 

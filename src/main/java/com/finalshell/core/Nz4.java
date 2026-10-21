@@ -27,6 +27,7 @@ public class Nz4 implements A0_2 {
 
    @Override
    public Object Y(Ph4 var1, Object var2, Object var3) {
+      ArrayList var9;
       ArrayList var5 = new ArrayList(this.Y.length);
       String var10000 = Hi2.C();
       int var6 = 0;
@@ -34,7 +35,6 @@ public class Nz4 implements A0_2 {
 
       while (true) {
          if (var6 < this.Y.length) {
-      ArrayList var9;
             Object var7 = var1.S(var3, this.Y[var6], this.u[var6]);
 
             try {
@@ -49,7 +49,6 @@ public class Nz4 implements A0_2 {
                   continue;
                }
             } catch (Hi2 var8) {
-      ArrayList var9;
                throw a(var8);
             }
          }
@@ -247,7 +246,6 @@ public class Nz4 implements A0_2 {
       b = new Integer[2];
    }
 }
-
 
 
 

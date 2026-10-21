@@ -45,12 +45,12 @@ public class Cp4 implements Comparator {
       long var18 = 410905379772103887L;
       Object[] var17 = var10006;
       Ref.h(410905379772103887L, var17, var18);
-      Object[] var10008 = Registry.emptyArgs();
+      Object var10008 = Registry.emptyArgs();
       long var20 = 179612178163941306L;
-      Object[] var19 = var10008;
+      Object var19 = var10008;
       var10008 = Registry.packArgs(Ref.h(179612178163941306L, var19, var20));
       long var22 = 133273064107181210L;
-      Object[] var21 = var10008;
+      Object var21 = var10008;
       var10008 = Ref.h(133273064107181210L, var21, var22);
 
       try {
@@ -64,7 +64,7 @@ public class Cp4 implements Comparator {
       Collator var10009 = (Collator)Ref.g(188947662693861377L, var23);
       String var10011 = (String)(Registry.emptyArgs());
       long var26 = 286931176286176762L;
-      Object[] var25 = var10011;
+      Object var25 = var10011;
       var10011 = Ref.h(286931176286176762L, var25, var26);
 
       try {
@@ -75,7 +75,7 @@ public class Cp4 implements Comparator {
 
       String var10013 = (String)(Registry.emptyArgs());
       long var28 = 286931176286176762L;
-      Object[] var27 = var10013;
+      Object var27 = var10013;
       var10013 = Ref.h(286931176286176762L, var27, var28);
 
       try {
@@ -89,9 +89,9 @@ public class Cp4 implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((DefaultMutableTreeNode)var1, (DefaultMutableTreeNode)var2);
+      Object var10001 = Registry.packArgs((DefaultMutableTreeNode)var1, (DefaultMutableTreeNode)var2);
       long var4 = 503973597807962376L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(503973597807962376L, var3, var4);
 
       try {

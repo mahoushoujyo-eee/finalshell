@@ -127,7 +127,7 @@ public class Xc2 implements XV3 {
    public int U(int var1) {
       int var10000 = (com.finalshell.ui.model.J2.P()) ? 1 : 0;
       int var3 = a(18622, 6774740100010319664L);
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       SortedSet var4 = this.a.tailSet(var1 + 1);
       var10000 = (var4.isEmpty()) ? 1 : 0;
       if (!var2) {
@@ -145,7 +145,7 @@ public class Xc2 implements XV3 {
    public int G(int var1) {
       int var10000 = (com.finalshell.ui.model.J2.g()) ? 1 : 0;
       int var3 = 0;
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       SortedSet var4 = this.a.headSet(var1);
       var10000 = (var4.isEmpty()) ? 1 : 0;
       if (var2) {

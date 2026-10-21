@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
 import com.finalshell.core.DB3;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.io.IOException;
 
 public class TX3 implements Runnable {
    public final DB3 B;
-   public final Address Q;
+   public final FileBrowserAddressBar Q;
 
-   public TX3(Address var1, DB3 var2) {
+   public TX3(FileBrowserAddressBar var1, DB3 var2) {
       this.Q = var1;
       this.B = var2;
    }

@@ -30,10 +30,12 @@ public class X_5 {
    }
 
    public static X_5[] k(String var0) {
+      int var4;
+      int var9;
       ArrayList var2 = new ArrayList();
       int var10000 = (N_5.R()) ? 1 : 0;
       int var3 = 0;
-      boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var1 = (var10000) != 0;
 
       label61:
       while (true) {
@@ -42,7 +44,6 @@ public class X_5 {
 
          label59:
          while (var10000 < var10001) {
-      char var9;
             char var5;
             label56: {
                label66: {
@@ -80,7 +81,7 @@ public class X_5 {
                var5 = var9;
             }
 
-            int var4 = var3;
+            var4 = var3;
 
             while (true) {
                if (var4 < var0.length()) {
@@ -120,6 +121,7 @@ public class X_5 {
    }
 
    public static boolean h(X_5[] var0, String var1) {
+      boolean var4;
       boolean var2 = N_5.m();
       X_5[] var10000 = var0;
       if (!var2) {
@@ -143,8 +145,8 @@ public class X_5 {
                break;
             }
 
-            if (var4 != 0) {
-               var4 = var0[var3].b();
+            if (var4) {
+               var4 = (var0[var3].b()) != 0;
                break;
             }
 
@@ -158,7 +160,7 @@ public class X_5 {
       }
 
       if (!var2) {
-         var4 = var4 == 0 ? 1 : 0;
+         var4 = (var4 == 0 ? 1 : 0) != 0;
       }
 
       return (boolean)var4;
@@ -185,6 +187,8 @@ public class X_5 {
    }
 
    public static boolean M(@C_9 String var0, String var1) {
+      char var4;
+      boolean var8;
       boolean var2 = N_5.m();
       if (var0 == null) {
          return true;
@@ -194,7 +198,7 @@ public class X_5 {
          int var10000;
          while (true) {
             if (var3 < var0.length()) {
-               char var4 = var0.charAt(var3);
+               var4 = var0.charAt(var3);
                var10000 = var4;
                if (var2) {
                   break;

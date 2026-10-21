@@ -4,16 +4,16 @@ import com.finalshell.core.Dv2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.Dr2;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class BV implements KeyListener {
-   public final Address n;
+   public final FileBrowserAddressBar n;
    public static long a;
 
-   public BV(Address var1) {
+   public BV(FileBrowserAddressBar var1) {
       this.n = var1;
    }
 
@@ -27,7 +27,7 @@ public class BV implements KeyListener {
 
    @Override
    public void keyPressed(KeyEvent var1) {
-      boolean var2 = Address.i();
+      boolean var2 = FileBrowserAddressBar.i();
       if (var1.getKeyCode() == (int)a) {
          Object var6 = 300671885637670350L;
          Ref.g(300671885637670350L, var6);

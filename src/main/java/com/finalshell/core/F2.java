@@ -45,11 +45,11 @@ public class F2 extends BasicSplitPaneDivider {
       }
 
       int var2 = var10000;
-      ImageIcon var3 = this.K.N(true, (boolean)var2);
+      ImageIcon var3 = this.K.N(true, var2);
       KD var4 = KD.F(var3, 0, 0, 0, false, true, false);
       var4.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
       var4.setCursor(Cursor.getDefaultCursor());
-      var4.setPreferredSize(this.K.E((boolean)var2));
+      var4.setPreferredSize(this.K.E(var2));
       var4.setFocusable(false);
       return var4;
    }
@@ -63,11 +63,11 @@ public class F2 extends BasicSplitPaneDivider {
       }
 
       int var2 = var10000;
-      ImageIcon var3 = this.K.N(false, (boolean)var2);
+      ImageIcon var3 = this.K.N(false, var2);
       KD var4 = KD.F(var3, 0, 0, 0, false, true, false);
       var4.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
       var4.setCursor(Cursor.getDefaultCursor());
-      var4.setPreferredSize(this.K.E((boolean)var2));
+      var4.setPreferredSize(this.K.E(var2));
       var4.setFocusable(false);
       if (Ky4.F$arrString() != null) {
          com.finalshell.ui.panel.O2.o(!var1);
@@ -169,7 +169,7 @@ public class F2 extends BasicSplitPaneDivider {
    public void propertyChange(PropertyChangeEvent var1) {
       int var10000 = (com.finalshell.ui.panel.O2.r$boolean()) ? 1 : 0;
       super.propertyChange(var1);
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       PropertyChangeEvent var4 = var1;
       if (var2) {
          if (var1.getSource() != this.splitPane) {
@@ -196,8 +196,8 @@ public class F2 extends BasicSplitPaneDivider {
       JButton var6 = this.leftButton;
       if (var2) {
          if (this.leftButton != null) {
-            this.leftButton.setIcon(this.K.N(true, (boolean)var3));
-            this.leftButton.setPreferredSize(this.K.E((boolean)var3));
+            this.leftButton.setIcon(this.K.N(true, var3));
+            this.leftButton.setPreferredSize(this.K.E(var3));
          }
 
          var6 = this.rightButton;
@@ -208,11 +208,11 @@ public class F2 extends BasicSplitPaneDivider {
             return;
          }
 
-         this.rightButton.setIcon(this.K.N(false, (boolean)var3));
+         this.rightButton.setIcon(this.K.N(false, var3));
          var6 = this.rightButton;
       }
 
-      var6.setPreferredSize(this.K.E((boolean)var3));
+      var6.setPreferredSize(this.K.E(var3));
    }
 
    static {

@@ -255,7 +255,7 @@ public class Le4 implements C_H {
    public boolean g(byte[] var1) throws Exception {
       int var10000 = (Y12.Q()) ? 1 : 0;
       int var3 = 0;
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       int var4 = 0;
       UJ var6 = new UJ(var1);
 

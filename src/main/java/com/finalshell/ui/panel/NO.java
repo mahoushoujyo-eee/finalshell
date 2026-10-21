@@ -118,7 +118,7 @@ public class NO extends JPanel {
          var10007 = var10007 == 2 ? 1 : 0;
       }
 
-      Object[] var18 = Registry.packArgs((boolean)var10007);
+      Object[] var18 = Registry.packArgs(var10007);
       long var16 = 543398350886648870L;
       Object[] var15 = var18;
       Ref.h(543398350886648870L, var15, var16);
@@ -970,6 +970,7 @@ var10005 = new NO((int)this, (int)var10007, this, ((JTextField)Ref.g(44535655474
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[9];
       int var5 = 0;
       String var4 = "\u0014ï2\u008d\u001d\u0005«\u0003.d£\u0006 O×gð¸\u0006ü\u0092\u0082Ô;Ê\u0005\u009dÃcöF\u0006áÖ¢\\ÄÇ\u0007->mQ\u008ee2";
@@ -984,7 +985,6 @@ var10005 = new NO((int)this, (int)var10007, this, ((JTextField)Ref.g(44535655474
          byte var10002 = -1;
 
          while (true) {
-      Object var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

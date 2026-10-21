@@ -69,9 +69,9 @@ public class Ud4 extends AbstractCellEditor implements TableCellRenderer, TableC
    public Object getCellEditorValue() {
       Object var1 = 453775776041703446L;
       Ref.g(453775776041703446L, var1);
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var4 = 290079908037379882L;
-      Object[] var3 = var10002;
+      Object var3 = var10002;
       var10002 = Ref.h(290079908037379882L, var3, var4);
 
       try {

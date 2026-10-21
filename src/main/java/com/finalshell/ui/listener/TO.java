@@ -6,8 +6,8 @@ import com.finalshell.task.O32;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.model.Kl4;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Address;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import com.finalshell.ui.panel.SetExternalEditorPanel;
 import java.awt.Component;
 import java.awt.Point;
@@ -18,12 +18,12 @@ import java.lang.reflect.InvocationTargetException;
 
 public class TO implements MouseListener {
    public final boolean D;
-   public final Connection4 U;
-   public final Address O;
+   public final ConnectionInfoPanel U;
+   public final FileBrowserAddressBar O;
    public final com.finalshell.core.Km2 b;
    public static long a;
 
-   public TO(com.finalshell.core.Km2 var1, boolean var2, Connection4 var3, Address var4) {
+   public TO(com.finalshell.core.Km2 var1, boolean var2, ConnectionInfoPanel var3, FileBrowserAddressBar var4) {
       this.b = var1;
       this.D = var2;
       this.U = var3;
@@ -48,6 +48,8 @@ public class TO implements MouseListener {
 
    @Override
    public void mouseReleased(MouseEvent var1) {
+      boolean var115;
+      boolean var120;
       String var2;
       String var3;
       TO var107;
@@ -176,7 +178,7 @@ public class TO implements MouseListener {
 
                               String var10006 = (String)(Registry.emptyArgs());
                               long var35 = 498856411508641826L;
-                              Object[] var34 = var10006;
+                              Object var34 = var10006;
                               var10006 = Ref.h(498856411508641826L, var34, var35);
 
                               try {
@@ -239,14 +241,14 @@ public class TO implements MouseListener {
 
                         label241: {
                            Object var50 = 446500590941177335L;
-                           Address var10009 = (Address)Ref.g(446500590941177335L, var50);
+                           FileBrowserAddressBar var10009 = (FileBrowserAddressBar)Ref.g(446500590941177335L, var50);
                            if (var2 == null) {
                               if (var10009 == null) {
                                  break label241;
                               }
 
                               Object var52 = 446500590941177335L;
-                              Address var129 = (Address)Ref.g(446500590941177335L, var52);
+                              FileBrowserAddressBar var129 = (FileBrowserAddressBar)Ref.g(446500590941177335L, var52);
                            }
 
                            Object[] var10011 = Registry.emptyArgs();
@@ -317,7 +319,7 @@ public class TO implements MouseListener {
                   Object var72 = 612091313834066062L;
                   Kl4 var130 = (Kl4)Ref.g(612091313834066062L, var72);
                   Object var74 = 487924346083543578L;
-var125 = new O32(var130, this, (Connection4)Ref.g(487924346083543578L, var74));
+var125 = new O32(var130, this, (ConnectionInfoPanel)Ref.g(487924346083543578L, var74));
                   this.show((Component)var1.getSource(), var1.getX(), var1.getY());
                }
             }

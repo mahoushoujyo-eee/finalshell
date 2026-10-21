@@ -848,6 +848,7 @@ public class Al2 implements Runnable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "¯\u0087BôJ\u0011\u0012\u009dû;\u0005»×NØW\u0086_³¢W¾r\u0094\u0012\u0092\u0095s{\u0088C\u0083ü\u0097'{©\n{\u0093\u0015í@\u0007o¼í@\u009cÁ98¾°Ó\u0014õÙ\u0001\u0082¨*É2\u0000d\u009e\u0011oP\u0090FcØêÿ<ø«\u001dJ\u001f\u001aÑ.{4Ä\u0093âª\u001dp<'d^<Y°P;\tY~\u008cGx";
@@ -863,7 +864,6 @@ public class Al2 implements Runnable {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -1,11 +1,11 @@
 package com.finalshell.task;
 
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 
 public class DF3 implements Runnable {
-   public final Address h;
+   public final FileBrowserAddressBar h;
 
-   public DF3(Address var1) {
+   public DF3(FileBrowserAddressBar var1) {
       this.h = var1;
    }
 

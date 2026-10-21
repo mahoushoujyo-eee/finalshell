@@ -28,7 +28,7 @@ public class TW implements ActionListener {
       Object var8 = 417119238929760524L;
       T32 var10004 = (T32)(Registry.packArgs(this, var10005, ((ArrayList)Ref.g(417119238929760524L, var8)).size(), false, true));
       long var11 = 451133235546109527L;
-      Object[] var10 = var10004;
+      Object var10 = var10004;
       var10004 = Ref.h(451133235546109527L, var10, var11);
 
       try {

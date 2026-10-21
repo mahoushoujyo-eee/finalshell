@@ -3,7 +3,7 @@ package com.finalshell.ui.listener;
 import com.finalshell.core.L9;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.RouteTracePanel3;
+import com.finalshell.ui.panel.RouteTraceAddressPanel;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -18,9 +18,9 @@ public class ZO implements MouseListener {
    public final Color P;
    public final com.finalshell.ui.panel.W8 p;
    public final JPopupMenu w;
-   public final RouteTracePanel3 u;
+   public final RouteTraceAddressPanel u;
 
-   public ZO(RouteTracePanel3 var1, String var2, JLabel var3, Color var4, com.finalshell.ui.panel.W8 var5, JPopupMenu var6) {
+   public ZO(RouteTraceAddressPanel var1, String var2, JLabel var3, Color var4, com.finalshell.ui.panel.W8 var5, JPopupMenu var6) {
       this.u = var1;
       this.U = var2;
       this.g = var3;

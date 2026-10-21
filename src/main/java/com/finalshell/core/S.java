@@ -71,6 +71,7 @@ public class S extends ToggleButtonModel {
 
    @Override
    public void setPressed(boolean var1) {
+      S var7;
       Ky4[] var2 = Pt2.b();
       int var10000 = (this.isEnabled()) ? 1 : 0;
       if (var2 == null) {
@@ -286,6 +287,7 @@ public class S extends ToggleButtonModel {
    }
 
    public static void __vfClinit__() {
+      byte[] var7;
       long var0 = 5499702052714726613L;
       long[] var6 = new long[8];
       int var3 = 0;
@@ -297,7 +299,7 @@ public class S extends ToggleButtonModel {
       while (true) {
          int var10001 = var2;
          var2 += 8;
-         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
          long[] var10000 = var6;
          var10001 = var3++;
          long var10002 = ((long)var7[0] & 255L) << 56

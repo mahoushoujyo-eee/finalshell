@@ -1615,6 +1615,7 @@ public abstract class X62 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[10];
       int var3 = 0;
       String var2 = "3H$£ì\nÀF\u009bô\u0017ê\u0080¤\u009e\u001cL&Î\u008368¿ôãÍÿ\u0012\u0086[ \u0005y1l\u0003MD\u0011¹ì\u0010Ñ\u000b \u0017¡H·/¾ºÏ\u0004¨+\u0011V\u000e»\u0003÷ztê$Þ¢\u0093\u000bj2\u001cí\u0003\u0095òâ\u0011Ç\u0015º\b?\u007fºèÔ!þP½ó9ö¸\u001fÝ\u0000^DúäfËÄCsÂy\u009d&¶\bÜöNÔ$\u001a\u009bX\u0015\u008e#_öv,²\u0095wSÒ\u0015ÄÁ¡î\u0087R«\u0006Ði\u009dfxW¾ÔO\u008fö\u009a§)Q5ùF\n¯\u0097ST\u0089=TK?ÝÃ\u001f±\u0013V®x\u0000©¥*gPÿmÆü\u0093`°\u008c\f\u001b$É\u0007\u001f¨¼\rÄð3";
@@ -1631,7 +1632,6 @@ public abstract class X62 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

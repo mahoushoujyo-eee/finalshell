@@ -1244,6 +1244,7 @@ public class Dg2 extends DQ {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "R&A>ý¦V\u00836\u008c§Rf\u009d\u001aø~Pëc¡\u0014\u0001\u0089âµMó\u0085\u0082t7;õ`Ðí\u0087n8\u009e\u00adÖ|'(Aï\u0011 \u0017\u0006q\b\b \u00ad½¹]\u0018ÏÌ~Åµ";
@@ -1259,7 +1260,6 @@ public class Dg2 extends DQ {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

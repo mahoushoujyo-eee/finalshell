@@ -25,7 +25,7 @@ public class FH3 implements Runnable {
          D82_2 var10001 = XQ_2.x;
          GH_2 var10002 = (GH_2)(Registry.packArgs(new Qt2(this, var1), (int)a));
          long var4 = 201859364639460244L;
-         Object[] var3 = var10002;
+         Object var3 = var10002;
          var10002 = Ref.h(201859364639460244L, var3, var4);
 
          try {

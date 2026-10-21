@@ -18,6 +18,8 @@ public class WL implements PropertyChangeListener {
 
    @Override
    public void propertyChange(PropertyChangeEvent var1) {
+      boolean var74;
+      Integer var79;
       com.finalshell.ui.panel.F8.y();
       System.currentTimeMillis();
       Object var6 = 495603700922808760L;
@@ -59,9 +61,9 @@ public class WL implements PropertyChangeListener {
          Ref.g(338897995870391143L, var22);
          Object var24 = 132798821314429637L;
          Object var10009 = Ref.g(132798821314429637L, var24);
-         Object[] var10010 = Registry.emptyArgs();
+         Object var10010 = Registry.emptyArgs();
          long var27 = 608818074819783119L;
-         Object[] var26 = var10010;
+         Object var26 = var10010;
          var10010 = Ref.h(608818074819783119L, var26, var27);
 
          try {
@@ -96,9 +98,9 @@ public class WL implements PropertyChangeListener {
       }
 
       if (this == null) {
-         Object[] var10007 = Registry.emptyArgs();
+         Object var10007 = Registry.emptyArgs();
          long var41 = 571514335693873067L;
-         Object[] var40 = var10007;
+         Object var40 = var10007;
          var10007 = Ref.h(571514335693873067L, var40, var41);
 
          try {

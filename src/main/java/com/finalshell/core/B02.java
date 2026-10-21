@@ -20,6 +20,7 @@ public class B02 implements WindowFocusListener {
 
    @Override
    public void windowLostFocus(WindowEvent var1) {
+      boolean var15;
       com.finalshell.ui.panel.F8.y();
       Object var3 = 502105892341583135L;
       Registry.lookupField(174659894326967944L).setLong(Ref.g(502105892341583135L, var3), System.currentTimeMillis());

@@ -1,6 +1,6 @@
 package com.finalshell.ui.dialog;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.core.CH;
 import com.finalshell.core.DB3;
 import com.finalshell.core.KX3_2;
@@ -8,7 +8,7 @@ import com.finalshell.core.YI;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.task.OE3;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.Window;
 import java.io.File;
 import java.io.IOException;
@@ -24,7 +24,7 @@ import net.miginfocom.swing.MigLayout;
 
 public class Nq2 extends JDialog implements CH {
    public Window m;
-   public Address R;
+   public FileBrowserAddressBar R;
    public String Y;
    public JTextArea f;
    public JScrollPane u;
@@ -36,8 +36,9 @@ public class Nq2 extends JDialog implements CH {
    public static long[] c;
    public static Integer[] d;
 
-   public Nq2(Window var1, Address var2) {
+   public Nq2(Window var1, FileBrowserAddressBar var2) {
    super(var1);
+   long var10;
       short var10000 = -12209;
       short var10001 = 16856;
       this.N = a(61, 3555413649256224722L);
@@ -46,7 +47,7 @@ public class Nq2 extends JDialog implements CH {
       Ref.s(539025379907701382L, var5, var6);
       long var8 = 186134877379781476L;
       Ref.s(186134877379781476L, var1, var8);
-      long var10 = 617203282718759544L;
+      var10 = 617203282718759544L;
       Ref.s(617203282718759544L, var2, var10);
       Object var11 = 312184481709008499L;
       Object var10007 = Ref.g(312184481709008499L, var11);
@@ -77,7 +78,7 @@ public class Nq2 extends JDialog implements CH {
       Ref.h2(322267315291882359L, var27);
       JScrollPane var10014;
       Object var29 = 407397985905936675L;
-      super((JTextArea)Ref.g(407397985905936675L, var29));
+      // [VF-super] super((JTextArea)Ref.g(407397985905936675L, var29));
       long var32 = 570059983514724094L;
       JScrollPane var31 = var10014;
       Ref.s(570059983514724094L, var31, var32);
@@ -107,7 +108,7 @@ public class Nq2 extends JDialog implements CH {
          Ref.g(617203282718759544L, var10);
          YI var10003 = (YI)(Registry.packArgs(var5, var5.getParent(), var3, false));
          long var13 = 137343102481786733L;
-         Object[] var12 = var10003;
+         Object var12 = var10003;
          var10003 = Ref.h(137343102481786733L, var12, var13);
 
          try {
@@ -119,18 +120,18 @@ public class Nq2 extends JDialog implements CH {
          YI var6 = var10003;
          Object var14 = 617203282718759544L;
          Ref.g(617203282718759544L, var14);
-         Connection12 var10005 = (Connection12)(Registry.emptyArgs());
+         FileTransferConnection var10005 = (FileTransferConnection)(Registry.emptyArgs());
          long var17 = 584980468782481561L;
-         Object[] var16 = var10005;
+         Object var16 = var10005;
          var10005 = Ref.h(584980468782481561L, var16, var17);
 
          try {
-            var10005 = (Connection12)var10005;
+            var10005 = (FileTransferConnection)var10005;
          } catch (InvocationTargetException var21) {
             throw var21.getTargetException();
          }
 
-         Connection12 var7 = var10005;
+         FileTransferConnection var7 = var10005;
          Object[] var10006 = Registry.packArgs(new KX3_2(this, var4, var3, var5, var7, var6));
          long var19 = 541437196102236947L;
          Object[] var18 = var10006;
@@ -167,9 +168,10 @@ public class Nq2 extends JDialog implements CH {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void p(JTextArea var1) {
-      int var10000 = (Address.i()) ? 1 : 0;
+      BadLocationException var10;
+      int var10000 = (FileBrowserAddressBar.i()) ? 1 : 0;
       int var3 = var1.getLineCount() - a(6565, 8758848675606957643L);
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
 
       label30: {
          label29: {
@@ -189,7 +191,6 @@ public class Nq2 extends JDialog implements CH {
             try {
                var10000 = var1.getLineEndOffset(var3 - 1);
             } catch (BadLocationException var6) {
-      long var10;
                var10 = var6;
                boolean var10001 = false;
                break label30;
@@ -201,7 +202,6 @@ public class Nq2 extends JDialog implements CH {
             var1.replaceRange("", 0, var8);
             return;
          } catch (BadLocationException var5) {
-      Object var10;
             var10 = var5;
             boolean var11 = false;
          }
@@ -1034,9 +1034,11 @@ public class Nq2 extends JDialog implements CH {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var33;
       String[] var13 = new String[5];
       int var11 = 0;
-      String var10 = ">zå+.\u0016F\u0088\u001aÝöd'õMÏ\u009d7´-!H\u001fäl\u0010h\u0004;nS\u0003m«\u001a\u000e¹|\"\u0080ÔÙn7JÂ\u0084§çÜ";
+      var10 = ">zå+.\u0016F\u0088\u001aÝöd'õMÏ\u009d7´-!H\u001fäl\u0010h\u0004;nS\u0003m«\u001a\u000e¹|\"\u0080ÔÙn7JÂ\u0084§çÜ";
       int var12 = ">zå+.\u0016F\u0088\u001aÝöd'õMÏ\u009d7´-!H\u001fäl\u0010h\u0004;nS\u0003m«\u001a\u000e¹|\"\u0080ÔÙn7JÂ\u0084§çÜ".length();
       char var9 = '\b';
       int var17 = -1;
@@ -1048,7 +1050,6 @@ public class Nq2 extends JDialog implements CH {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

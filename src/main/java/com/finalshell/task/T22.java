@@ -22,6 +22,7 @@ public class T22 extends Thread {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
    public void run() {
+      Exception var33;
       com.finalshell.ui.panel.Ky4[] var10000 = YT3_2.c();
       byte[] var2 = new byte[(int)c];
       com.finalshell.ui.panel.Ky4[] var1 = var10000;
@@ -36,7 +37,6 @@ public class T22 extends Thread {
          } catch (IOException var27) {
             var27.printStackTrace();
             if (var1 != null) {
-      String var32;
       String var32;
                return;
             }
@@ -931,6 +931,7 @@ public class T22 extends Thread {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var33;
       String[] var7 = new String[3];
       int var5 = 0;
       String var4 = "ð¨\u007f,\u00903Ó\u0007ê\u008c<·ù¥Í\u0005\u0086\u009cù\u0013\u000e";
@@ -968,7 +969,6 @@ public class T22 extends Thread {
 
             while (true) {
                char var32 = var10005[var10006];
-               byte var33;
                switch (var8 % 7) {
                   case 0:
                      var33 = 89;
@@ -1027,7 +1027,6 @@ public class T22 extends Thread {
       }
    }
 }
-
 
 
 

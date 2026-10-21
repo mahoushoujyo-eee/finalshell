@@ -91,7 +91,7 @@ public class C7 {
                            }
                         }
 
-                        var40 = (var6.startsWith("d")) ? 1 : 0;
+                        var40 = var6.startsWith("d");
                      }
 
                      if (var1 != null && var40 != 0) {
@@ -127,9 +127,9 @@ public class C7 {
          String var34 = (String)((ArrayList)Ref.g(148785933728707196L, var20)).get(var5);
          Object var22 = 125623294561868069L;
          Ref.g(125623294561868069L, var22);
-         Bo4 var10007 = (Bo4)(Registry.packArgs(var32));
+         Object var10007 = Registry.packArgs(var32);
          long var25 = 525097543578151494L;
-         Object[] var24 = var10007;
+         Object var24 = var10007;
          var10007 = Ref.h(525097543578151494L, var24, var25);
 
          try {

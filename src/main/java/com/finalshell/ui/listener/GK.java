@@ -53,6 +53,8 @@ public class GK implements MouseMotionListener {
 
    @Override
    public void mouseDragged(MouseEvent var1) {
+      AM var107;
+      Integer var117;
       AM.s$arrString();
       Object var8 = 523286601714712427L;
       Object var10002 = Ref.g(523286601714712427L, var8);
@@ -72,7 +74,7 @@ public class GK implements MouseMotionListener {
       Ref.g(519266586727171533L, var12);
       Boolean var10004 = (Boolean)(Registry.emptyArgs());
       long var15 = 318524088468974674L;
-      Object[] var14 = var10004;
+      Object var14 = var10004;
       var10004 = Ref.h(318524088468974674L, var14, var15);
 
       try {
@@ -147,7 +149,7 @@ public class GK implements MouseMotionListener {
 
       Integer var10009 = (Integer)(Registry.emptyArgs());
       long var29 = 386124335143120314L;
-      Object[] var28 = var10009;
+      Object var28 = var10009;
       var10009 = Ref.h(386124335143120314L, var28, var29);
 
       try {
@@ -241,7 +243,7 @@ public class GK implements MouseMotionListener {
                Ref.g(519266586727171533L, var50);
                TH3 var10018 = Registry.emptyArgs();
                long var53 = 311724385945399618L;
-               Object[] var52 = var10018;
+               Object var52 = var10018;
                var10018 = Ref.h(311724385945399618L, var52, var53);
 
                try {
@@ -278,7 +280,7 @@ public class GK implements MouseMotionListener {
             AM var94 = var107;
             Boolean var110 = (Boolean)(Registry.emptyArgs());
             long var57 = 308510891685223410L;
-            Object[] var56 = var110;
+            Object var56 = var110;
             var110 = Ref.h(308510891685223410L, var56, var57);
 
             try {
@@ -322,7 +324,7 @@ public class GK implements MouseMotionListener {
             Ref.g(519266586727171533L, var66);
             TH3 var114 = Registry.emptyArgs();
             long var69 = 311724385945399618L;
-            Object[] var68 = var114;
+            Object var68 = var114;
             var114 = Ref.h(311724385945399618L, var68, var69);
 
             try {

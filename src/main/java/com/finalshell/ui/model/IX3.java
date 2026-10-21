@@ -5069,6 +5069,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[26];
       int var11 = 0;
       String var10 = "î@vóÚµ;Á\u0099R®lï\u0086Kµ»Ò\u009d\u0084ÿ\n\u0087el$Á\u009d\u000e\u0001ê\b<nr\u0080\u0016È/Q@*\u001bµ=¤¾\u0006À\t\nQ\u0097þAÜßS6\u0016ô\u0091Ö\u0097Úá«bgU~½\u0006¥°bÂÿ[\b£Ì\u001dà¿·\fâJ<>y\u00ad\u00adô{\u001dÐ¡ÓÑý\rOÿõ´¢\u009e³~©\u0002æ/\u00125ït\u0006]\u000fã\u0003½ZäK\u0089\u007fyº\u008dQ\u0002Ä\u0092$n4\u000brèzk\u000f\\L6³\u0098üSíÇ!Ü6\u0098rþ\u0098+f\u0005\u008d9em3\u0086\u0017:\u0004\u000eQ%\u0015R¬\u0004éçi\\\f5ã-#ð\u0097µ\t¢ê4*x/\u0087ëq[Z\r/»\u001d\u0017î|Ê/Bw\t¢»,S\u0003à4\u0007$ Þ¯ áÏ\\\u008eu»&yF\nÄX\u0080\u0089vâ\u0099\u001e\u0000!ô\u00adªÃ\u0016OO\u0099ý\u001fÜ÷|÷ÄUc¾§·\u0083\b\u001a\u0099K·\u009c8_ÈNLÄâ\u0082 \u0092Í¿\u0010N\u001béß·ûtÝ\u009d²Oìô¨\u0094\u0082\u0018ÄxÁD\u0093.iPe\u0018+¾ò>\u0098°\u0001\u0091\u0088£\n5ÀÜ¦\nb\u000e\u008d´=>\u0010ëøK(ø«6\u009e0Ù\u0094\u0002;½?H\u001b¢K\u0080\"\u009cVlW¥Ë6\u009díu\u0007ÒU,?¸/bQîò¨\u0004iA¼\u0017\u008aÇ-¥u\u0011\u0088Vw®ô-\u0091ù&\u0010mh*`µBê\u001d\t\u0007\u008a\u001bE¨Èbç&~\u0085\u00013\u009fd:iÀ\u001aè\u001d\u0001è<\u0015`\u000fÓ\u0002I\u0002\u0004¬pä\u000b\u001f\u0097lÖ»Ôõ¿²îN_¯8¢@iSXg¤§\n(\u0089°\u0086Z\u0014w9Ð%Ç\náMÀXÑm&°úøô\u008fÊ`7}P\u009dQ!÷¶%e\u001eæ\u0094:\u009f\u0082É\u000eú\u008f\u0003\u0004\u0016\t³$\u0002\u0017Î\u001c*íîFÉ\u0003Y\u0017Õ\u00882\u001fÆ\u0095\u0081\u0081ÒÄÓ¬\fÖ¶W¦þø¼\u001ciL\u0086rÄ\u0085øÇá\u0092¥\\\u001cý¢\u008c¶e_\u0098\u009dP\u0084\u0087àä0ÿ$}Ø\u0004à\u0094×ò\u008d Û\u0097]\u0015 \u0014qPJà\u0097Phr)Ò\u00ad\u0016¬ô'µÌ×ö\u000f\u0093%²(O\t\u0015Ðk|q\u0092\u0010¼©\u0007aqB_þÙ\u0084©M§rGô¢É²4\u0093¼,TËÖ";
@@ -5084,7 +5085,6 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

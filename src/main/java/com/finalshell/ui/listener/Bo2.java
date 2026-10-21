@@ -7,10 +7,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bo2 implements ActionListener {
-   public final com.finalshell.ui.frame.U u;
+   public final com.finalshell.ui.frame.MainFrame u;
    public static String a;
 
-   public Bo2(com.finalshell.ui.frame.U var1) {
+   public Bo2(com.finalshell.ui.frame.MainFrame var1) {
       this.u = var1;
    }
 

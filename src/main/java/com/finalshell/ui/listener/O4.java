@@ -1,6 +1,6 @@
 package com.finalshell.ui.listener;
 
-import com.finalshell.connection.Copy;
+import com.finalshell.connection.CopyConnectionInfoAction;
 import com.finalshell.core.Y62_2;
 import com.finalshell.core.YA3_2;
 import com.finalshell.reflect.Ref;
@@ -13,9 +13,9 @@ import javax.swing.JPopupMenu;
 
 public class O4 implements MouseListener {
    public final JPopupMenu k;
-   public final Copy I;
+   public final CopyConnectionInfoAction I;
 
-   public O4(Copy var1, JPopupMenu var2) {
+   public O4(CopyConnectionInfoAction var1, JPopupMenu var2) {
       this.I = var1;
       this.k = var2;
    }
@@ -26,6 +26,7 @@ public class O4 implements MouseListener {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      Integer var47;
       O4 var10004;
       byte var10005;
       label47: {
@@ -76,7 +77,7 @@ public class O4 implements MouseListener {
                Ref.g(347284645451059683L, var22);
                ArrayList var10007 = Registry.emptyArgs();
                long var25 = 530247999995353660L;
-               Object[] var24 = var10007;
+               Object var24 = var10007;
                var10007 = Ref.h(530247999995353660L, var24, var25);
 
                try {
@@ -90,9 +91,9 @@ public class O4 implements MouseListener {
                Registry.lookupField(225800492388928374L).setInt(Ref.g(578361061207357044L, var26), var6);
                Object var28 = 578361061207357044L;
                Ref.g(578361061207357044L, var28);
-               Object[] var10011 = Registry.emptyArgs();
+               Object var10011 = Registry.emptyArgs();
                long var31 = 579395555078289712L;
-               Object[] var30 = var10011;
+               Object var30 = var10011;
                var10011 = Ref.h(579395555078289712L, var30, var31);
 
                try {

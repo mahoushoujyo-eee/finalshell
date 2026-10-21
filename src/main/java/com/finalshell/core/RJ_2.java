@@ -58,7 +58,7 @@ public final class RJ_2 extends Fr2_2 {
                var10002 = 0;
             }
 
-            var2.append(var10001.H((boolean)var10002));
+            var2.append(var10001.H(var10002));
             var3++;
             if (var1 == null) {
                break;

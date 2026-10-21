@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.util.Random;
@@ -9,12 +9,12 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class UR {
    public InetAddress s;
    public int f;
-   public Rdp z;
+   public RdpConnection z;
    public Connect2 e;
    public BR3 l;
    public Br4 J;
    public long C;
-   public PingMessageR Y;
+   public PingMessageReceiver Y;
    public int P;
    public boolean F = true;
    public long w = System.currentTimeMillis();
@@ -32,8 +32,9 @@ public class UR {
       __vfClinit__();
    }
 
-   public UR(PingMessageR var1, InetAddress var2, int var3, int var4, int var5, B2 var6) throws Exception {
-      String[] var10000 = PingMessageR.N();
+   public UR(PingMessageReceiver var1, InetAddress var2, int var3, int var4, int var5, B2 var6) throws Exception {
+      UR var13;
+      String[] var10000 = PingMessageReceiver.N();
       this.B = var6;
       this.Y = var1;
       this.s = var2;
@@ -47,7 +48,7 @@ public class UR {
 
       label39: {
          try {
-            this.z = new Rdp(this);
+            this.z = new RdpConnection(this);
             this.e = new Connect2(this);
             this.l = new BR3(this);
             var13 = this;
@@ -95,7 +96,7 @@ public class UR {
    public void Z() {
       UR var2;
       label25: {
-         String[] var1 = PingMessageR.N();
+         String[] var1 = PingMessageReceiver.N();
          boolean var10000 = this.T;
          if (var1 != null) {
             if (this.T) {
@@ -122,7 +123,7 @@ public class UR {
    }
 
    public void d() {
-      String[] var1 = PingMessageR.N();
+      String[] var1 = PingMessageReceiver.N();
       UR var10000 = this;
       if (var1 != null) {
          if (this.a) {
@@ -137,7 +138,8 @@ public class UR {
    }
 
    public void R(boolean var1) {
-      String[] var2 = PingMessageR.N();
+      UR var3;
+      String[] var2 = PingMessageReceiver.N();
       boolean var10000 = this.K;
       if (var2 != null) {
          if (this.K) {

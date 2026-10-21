@@ -113,6 +113,7 @@ public class FC {
    }
 
    public static Y2_3[] O(Y2_3[] var0) {
+      Y2_3[] var6;
       int var2 = var0.length - 1;
       String[] var10000 = RG_2.C();
       Y2_3[] var3 = new Y2_3[var2];
@@ -121,7 +122,6 @@ public class FC {
 
       while (true) {
          if (var4 < var2) {
-      int var6;
             try {
                var6 = var3;
                if (var1 == null) {
@@ -134,7 +134,6 @@ public class FC {
                   continue;
                }
             } catch (P_5 var5) {
-      int var6;
                throw a(var5);
             }
          }
@@ -235,6 +234,7 @@ public class FC {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -20763) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1015,7 +1015,7 @@ public class FC {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1132,7 +1132,6 @@ public class FC {
       }
    }
 }
-
 
 
 

@@ -107,6 +107,7 @@ public final class PN implements AW, KeyListener {
 
    @Override
    public void keyPressed(KeyEvent var1) {
+      byte var7;
       int var2 = ConnectionProperty.M$int();
       Object var10000 = this.L;
       if (var2 != 0) {
@@ -119,12 +120,12 @@ public final class PN implements AW, KeyListener {
 
       synchronized (var10000) {
          byte var4 = 0;
-         var7 = var1.getKeyCode();
+         var7 = (byte)(var1.getKeyCode());
          label39:
          if (var2 != 0) {
             switch (var7) {
                case 8:
-                  var7 = this.L.length();
+                  var7 = (byte)(this.L.length());
                   if (var2 == 0) {
                      break label39;
                   }
@@ -137,8 +138,6 @@ public final class PN implements AW, KeyListener {
                   this.b.b(0);
                   this.L.deleteCharAt(this.L.length() - 1);
                   if (var2 != 0) {
-      byte var7;
-      byte var7;
                      break;
                   }
                case 10:
@@ -178,7 +177,7 @@ public final class PN implements AW, KeyListener {
                   break label30;
                }
 
-               var10000 = this.A;
+               var10000 = (this.A) ? 1 : 0;
             }
 
             if (var10000 != 0) {
@@ -207,7 +206,6 @@ public final class PN implements AW, KeyListener {
       a = var10002;
    }
 }
-
 
 
 

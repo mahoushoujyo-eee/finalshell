@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class N0 implements Q0 {
-   public final Ty2 N;
+   public final RemoteProcessManager N;
 
-   public N0(Ty2 var1) {
+   public N0(RemoteProcessManager var1) {
       this.N = var1;
    }
 

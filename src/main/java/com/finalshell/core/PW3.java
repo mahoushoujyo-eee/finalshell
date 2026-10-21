@@ -2,21 +2,21 @@ package com.finalshell.core;
 
 public class PW3 implements AB_2 {
    public Xe2 J;
-   public Ls4 k;
+   public SshKeyCodec k;
    public String M;
    public static String a;
 
    public static PW3 e(String var0, String var1, Xe2 var2) throws Pc2 {
-      Ls4 var3 = Ls4.X(var2, var0, var1);
+      SshKeyCodec var3 = SshKeyCodec.X(var2, var0, var1);
       return new PW3(var2, var0, var3);
    }
 
    public static PW3 Z(String var0, byte[] var1, byte[] var2, Xe2 var3) throws Pc2 {
-      Ls4 var4 = Ls4.h(var3, var1, var2);
+      SshKeyCodec var4 = SshKeyCodec.h(var3, var1, var2);
       return new PW3(var3, var0, var4);
    }
 
-   public PW3(Xe2 var1, String var2, Ls4 var3) throws Pc2 {
+   public PW3(Xe2 var1, String var2, SshKeyCodec var3) throws Pc2 {
       this.J = var1;
       this.M = var2;
       this.k = var3;
@@ -70,7 +70,7 @@ public class PW3 implements AB_2 {
       this.k = null;
    }
 
-   public Ls4 J() {
+   public SshKeyCodec J() {
       return this.k;
    }
 

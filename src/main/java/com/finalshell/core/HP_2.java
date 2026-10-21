@@ -1056,6 +1056,7 @@ public abstract class HP_2 extends Hu2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[8];
       int var11 = 0;
       String var10 = ".|\t\u0013\u001b'Ã\bðúâÅH/<ÿ\u000eSº\u000fw=æGú\u009as\u001cúlÛ\ty\u009f¡»E03\u009c_\u001fÅrÝngÅ\f\u009eóÿ iÒ¢\u0015ûÔ1.è~\u0003ÎEá\u00147\u001bÏF\t\u000e5\u008eÃñ¤6tàü0Ð\u0092õÖ";
@@ -1071,7 +1072,6 @@ public abstract class HP_2 extends Hu2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

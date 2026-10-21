@@ -6,7 +6,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.model.Pt2;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.awt.Window;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
    public Ud2_2 f;
    public Ud2_2 A;
    public Ud2_2 R;
-   public Address U;
+   public FileBrowserAddressBar U;
    public JCheckBox p;
    public boolean n;
    public static String[] a;
@@ -55,7 +55,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
       new ApplyToFileAndDirDialog(null, var1, null);
    }
 
-   public ApplyToFileAndDirDialog(Address param1, ArrayList param2, Window param3) {
+   public ApplyToFileAndDirDialog(FileBrowserAddressBar param1, ArrayList param2, Window param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2882,16 +2882,37 @@ public class ApplyToFileAndDirDialog extends JDialog {
    }
 
    public CH3 T(CH3 var1, CH3 var2) {
+      Boolean var117;
+      Boolean var121;
+      Boolean var124;
+      Boolean var128;
+      Boolean var131;
+      Boolean var135;
+      Boolean var138;
+      Boolean var142;
+      Boolean var145;
+      Boolean var149;
+      Boolean var152;
+      Object var154;
+      Boolean var156;
+      Boolean var159;
+      Object var161;
+      Boolean var163;
+      Boolean var166;
+      Boolean var170;
+      Boolean var173;
+      Boolean var177;
+      long var30;
       boolean var3;
       CH3 var4;
       label392: {
-         boolean var10000 = Address.i();
+         boolean var10000 = FileBrowserAddressBar.i();
          var4 = new CH3();
          var3 = var10000;
          if (var3 && !Registry.lookupField(135675306259301826L).getBoolean(var2)) {
-            Object[] var10002 = Registry.emptyArgs();
+            Object var10002 = Registry.emptyArgs();
             long var6 = 222104419787205717L;
-            Object[] var5 = var10002;
+            Object var5 = var10002;
             var10002 = Ref.h(222104419787205717L, var5, var6);
 
             try {
@@ -2902,7 +2923,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
             var10002 = Registry.packArgs(var117);
             long var8 = 176793472219243193L;
-            Object[] var7 = var10002;
+            Object var7 = var10002;
             Ref.h(176793472219243193L, var7, var8);
 
             try {
@@ -2916,9 +2937,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
             }
          }
 
-         Object[] var119 = Registry.emptyArgs();
+         Object var119 = Registry.emptyArgs();
          long var10 = 222104419787205717L;
-         Object[] var9 = var119;
+         Object var9 = var119;
          var119 = Ref.h(222104419787205717L, var9, var10);
 
          try {
@@ -2929,7 +2950,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
          var119 = Registry.packArgs(var121);
          long var12 = 176793472219243193L;
-         Object[] var11 = var119;
+         Object var11 = var119;
          Ref.h(176793472219243193L, var11, var12);
 
          try {
@@ -2941,9 +2962,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
       label394: {
          if (var3 && !Registry.lookupField(496696850720188296L).getBoolean(var2)) {
-            Object[] var10004 = Registry.emptyArgs();
+            Object var10004 = Registry.emptyArgs();
             long var14 = 151703521374523010L;
-            Object[] var13 = var10004;
+            Object var13 = var10004;
             var10004 = Ref.h(151703521374523010L, var13, var14);
 
             try {
@@ -2954,7 +2975,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
             var10004 = Registry.packArgs(var124);
             long var16 = 213329561193723553L;
-            Object[] var15 = var10004;
+            Object var15 = var10004;
             Ref.h(213329561193723553L, var15, var16);
 
             try {
@@ -2968,9 +2989,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
             }
          }
 
-         Object[] var126 = Registry.emptyArgs();
+         Object var126 = Registry.emptyArgs();
          long var18 = 151703521374523010L;
-         Object[] var17 = var126;
+         Object var17 = var126;
          var126 = Ref.h(151703521374523010L, var17, var18);
 
          try {
@@ -2981,7 +3002,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
          var126 = Registry.packArgs(var128);
          long var20 = 213329561193723553L;
-         Object[] var19 = var126;
+         Object var19 = var126;
          Ref.h(213329561193723553L, var19, var20);
 
          try {
@@ -2993,9 +3014,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
       label396: {
          if (var3 && !Registry.lookupField(166894470603572211L).getBoolean(var2)) {
-            Object[] var10006 = Registry.emptyArgs();
+            Object var10006 = Registry.emptyArgs();
             long var22 = 553240027343227646L;
-            Object[] var21 = var10006;
+            Object var21 = var10006;
             var10006 = Ref.h(553240027343227646L, var21, var22);
 
             try {
@@ -3006,7 +3027,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
             var10006 = Registry.packArgs(var131);
             long var24 = 365141742439887079L;
-            Object[] var23 = var10006;
+            Object var23 = var10006;
             Ref.h(365141742439887079L, var23, var24);
 
             try {
@@ -3020,9 +3041,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
             }
          }
 
-         Object[] var133 = Registry.emptyArgs();
+         Object var133 = Registry.emptyArgs();
          long var26 = 553240027343227646L;
-         Object[] var25 = var133;
+         Object var25 = var133;
          var133 = Ref.h(553240027343227646L, var25, var26);
 
          try {
@@ -3033,7 +3054,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
          var133 = Registry.packArgs(var135);
          long var28 = 365141742439887079L;
-         Object[] var27 = var133;
+         Object var27 = var133;
          Ref.h(365141742439887079L, var27, var28);
 
          try {
@@ -3045,9 +3066,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
       label398: {
          if (var3 && !Registry.lookupField(135367755104959231L).getBoolean(var2)) {
-            Object[] var10008 = Registry.emptyArgs();
-            long var30 = 478495353062292307L;
-            Object[] var29 = var10008;
+            Object var10008 = Registry.emptyArgs();
+            var30 = 478495353062292307L;
+            Object var29 = var10008;
             var10008 = Ref.h(478495353062292307L, var29, var30);
 
             try {
@@ -3058,7 +3079,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
             var10008 = Registry.packArgs(var138);
             long var32 = 260128928137645271L;
-            Object[] var31 = var10008;
+            Object var31 = var10008;
             Ref.h(260128928137645271L, var31, var32);
 
             try {
@@ -3072,9 +3093,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
             }
          }
 
-         Object[] var140 = Registry.emptyArgs();
+         Object var140 = Registry.emptyArgs();
          long var34 = 478495353062292307L;
-         Object[] var33 = var140;
+         Object var33 = var140;
          var140 = Ref.h(478495353062292307L, var33, var34);
 
          try {
@@ -3085,7 +3106,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
          var140 = Registry.packArgs(var142);
          long var36 = 260128928137645271L;
-         Object[] var35 = var140;
+         Object var35 = var140;
          Ref.h(260128928137645271L, var35, var36);
 
          try {
@@ -3097,9 +3118,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
       label400: {
          if (var3 && !Registry.lookupField(600336899131817808L).getBoolean(var2)) {
-            Object[] var10010 = Registry.emptyArgs();
+            Object var10010 = Registry.emptyArgs();
             long var38 = 602871526512576299L;
-            Object[] var37 = var10010;
+            Object var37 = var10010;
             var10010 = Ref.h(602871526512576299L, var37, var38);
 
             try {
@@ -3110,7 +3131,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
             var10010 = Registry.packArgs(var145);
             long var40 = 133593502820992167L;
-            Object[] var39 = var10010;
+            Object var39 = var10010;
             Ref.h(133593502820992167L, var39, var40);
 
             try {
@@ -3124,9 +3145,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
             }
          }
 
-         Object[] var147 = Registry.emptyArgs();
+         Object var147 = Registry.emptyArgs();
          long var42 = 602871526512576299L;
-         Object[] var41 = var147;
+         Object var41 = var147;
          var147 = Ref.h(602871526512576299L, var41, var42);
 
          try {
@@ -3137,7 +3158,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
          var147 = Registry.packArgs(var149);
          long var44 = 133593502820992167L;
-         Object[] var43 = var147;
+         Object var43 = var147;
          Ref.h(133593502820992167L, var43, var44);
 
          try {
@@ -3149,9 +3170,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
       label402: {
          if (var3 && !Registry.lookupField(120839537463655741L).getBoolean(var2)) {
-            Object[] var10012 = Registry.emptyArgs();
+            Object var10012 = Registry.emptyArgs();
             long var46 = 573220489640044246L;
-            Object[] var45 = var10012;
+            Object var45 = var10012;
             var10012 = Ref.h(573220489640044246L, var45, var46);
 
             try {
@@ -3162,7 +3183,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
             var10012 = Registry.packArgs(var152);
             long var48 = 514552260056769581L;
-            Object[] var47 = var10012;
+            Object var47 = var10012;
             Ref.h(514552260056769581L, var47, var48);
 
             try {
@@ -3176,9 +3197,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
             }
          }
 
-         Object[] var154 = Registry.emptyArgs();
+         var154 = Registry.emptyArgs();
          long var50 = 573220489640044246L;
-         Object[] var49 = var154;
+         Object var49 = var154;
          var154 = Ref.h(573220489640044246L, var49, var50);
 
          try {
@@ -3189,7 +3210,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
          var154 = Registry.packArgs(var156);
          long var52 = 514552260056769581L;
-         Object[] var51 = var154;
+         Object var51 = var154;
          Ref.h(514552260056769581L, var51, var52);
 
          try {
@@ -3201,9 +3222,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
       label404: {
          if (var3 && !Registry.lookupField(431763385835130331L).getBoolean(var2)) {
-            Object[] var10014 = Registry.emptyArgs();
+            Object var10014 = Registry.emptyArgs();
             long var54 = 172398918030773532L;
-            Object[] var53 = var10014;
+            Object var53 = var10014;
             var10014 = Ref.h(172398918030773532L, var53, var54);
 
             try {
@@ -3214,7 +3235,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
             var10014 = Registry.packArgs(var159);
             long var56 = 355183223593251548L;
-            Object[] var55 = var10014;
+            Object var55 = var10014;
             Ref.h(355183223593251548L, var55, var56);
 
             try {
@@ -3228,9 +3249,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
             }
          }
 
-         Object[] var161 = Registry.emptyArgs();
+         var161 = Registry.emptyArgs();
          long var58 = 172398918030773532L;
-         Object[] var57 = var161;
+         Object var57 = var161;
          var161 = Ref.h(172398918030773532L, var57, var58);
 
          try {
@@ -3241,7 +3262,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
          var161 = Registry.packArgs(var163);
          long var60 = 355183223593251548L;
-         Object[] var59 = var161;
+         Object var59 = var161;
          Ref.h(355183223593251548L, var59, var60);
 
          try {
@@ -3253,9 +3274,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
       label406: {
          if (var3 && !Registry.lookupField(525262672543457793L).getBoolean(var2)) {
-            Object[] var10016 = Registry.emptyArgs();
+            Object var10016 = Registry.emptyArgs();
             long var62 = 408063576801388858L;
-            Object[] var61 = var10016;
+            Object var61 = var10016;
             var10016 = Ref.h(408063576801388858L, var61, var62);
 
             try {
@@ -3266,7 +3287,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
             var10016 = Registry.packArgs(var166);
             long var64 = 429127336507826559L;
-            Object[] var63 = var10016;
+            Object var63 = var10016;
             Ref.h(429127336507826559L, var63, var64);
 
             try {
@@ -3280,9 +3301,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
             }
          }
 
-         Object[] var168 = Registry.emptyArgs();
+         Object var168 = Registry.emptyArgs();
          long var66 = 408063576801388858L;
-         Object[] var65 = var168;
+         Object var65 = var168;
          var168 = Ref.h(408063576801388858L, var65, var66);
 
          try {
@@ -3293,7 +3314,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
          var168 = Registry.packArgs(var170);
          long var68 = 429127336507826559L;
-         Object[] var67 = var168;
+         Object var67 = var168;
          Ref.h(429127336507826559L, var67, var68);
 
          try {
@@ -3305,9 +3326,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
       label408: {
          if (var3 && !Registry.lookupField(222301949956140513L).getBoolean(var2)) {
-            Object[] var10018 = Registry.emptyArgs();
+            Object var10018 = Registry.emptyArgs();
             long var70 = 173251605037134799L;
-            Object[] var69 = var10018;
+            Object var69 = var10018;
             var10018 = Ref.h(173251605037134799L, var69, var70);
 
             try {
@@ -3318,7 +3339,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
             var10018 = Registry.packArgs(var173);
             long var72 = 284267168157957197L;
-            Object[] var71 = var10018;
+            Object var71 = var10018;
             Ref.h(284267168157957197L, var71, var72);
 
             try {
@@ -3332,9 +3353,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
             }
          }
 
-         Object[] var175 = Registry.emptyArgs();
+         Object var175 = Registry.emptyArgs();
          long var74 = 173251605037134799L;
-         Object[] var73 = var175;
+         Object var73 = var175;
          var175 = Ref.h(173251605037134799L, var73, var74);
 
          try {
@@ -3345,7 +3366,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
          var175 = Registry.packArgs(var177);
          long var76 = 284267168157957197L;
-         Object[] var75 = var175;
+         Object var75 = var175;
          Ref.h(284267168157957197L, var75, var76);
 
          try {
@@ -3368,11 +3389,12 @@ public class ApplyToFileAndDirDialog extends JDialog {
    }
 
    public CH3 H() {
+      long var30;
       boolean var1;
       CH3 var2;
       label209: {
          label205: {
-            boolean var10000 = Address.g();
+            boolean var10000 = FileBrowserAddressBar.g();
             var2 = new CH3();
             var1 = var10000;
             if (!var1) {
@@ -3479,7 +3501,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
          Object var27 = 318464940548783291L;
          if (((Ud2_2)Ref.g(318464940548783291L, var27)).g$Pt_2() == Pt2.mixed) {
             Object[] var10008 = Registry.packArgs(true);
-            long var30 = 459066974758209809L;
+            var30 = 459066974758209809L;
             Object[] var29 = var10008;
             Ref.h(459066974758209809L, var29, var30);
 
@@ -3669,15 +3691,35 @@ public class ApplyToFileAndDirDialog extends JDialog {
    }
 
    public void s() {
+      boolean var129;
+      Boolean var131;
+      boolean var134;
+      Boolean var136;
+      boolean var139;
+      Boolean var141;
+      Ud2_2 var142;
+      boolean var144;
+      Boolean var146;
+      boolean var149;
+      Boolean var151;
+      Ud2_2 var152;
+      boolean var154;
+      Boolean var156;
+      boolean var159;
+      Boolean var161;
+      boolean var164;
+      Boolean var166;
+      boolean var169;
+      Boolean var171;
       boolean var1;
       label259: {
-         var1 = Address.g();
+         var1 = FileBrowserAddressBar.g();
          if (!var1) {
             Object var2 = 476468811070265040L;
             Ref.g(476468811070265040L, var2);
-            Object[] var10002 = Registry.emptyArgs();
+            Object var10002 = Registry.emptyArgs();
             long var5 = 400625946768531378L;
-            Object[] var4 = var10002;
+            Object var4 = var10002;
             var10002 = Ref.h(400625946768531378L, var4, var5);
 
             try {
@@ -3699,9 +3741,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          Ud2_2 var10001 = (Ud2_2)Ref.g(457947084859654284L, var8);
          Object var10 = 476468811070265040L;
          Object var10003 = Ref.g(476468811070265040L, var10);
-         Object[] var10004 = Registry.emptyArgs();
+         Object var10004 = Registry.emptyArgs();
          long var13 = 222104419787205717L;
-         Object[] var12 = var10004;
+         Object var12 = var10004;
          var10004 = Ref.h(222104419787205717L, var12, var13);
 
          try {
@@ -3717,9 +3759,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          if (!var1) {
             Object var14 = 476468811070265040L;
             Ref.g(476468811070265040L, var14);
-            Object[] var10005 = Registry.emptyArgs();
+            Object var10005 = Registry.emptyArgs();
             long var17 = 480253256074891102L;
-            Object[] var16 = var10005;
+            Object var16 = var10005;
             var10005 = Ref.h(480253256074891102L, var16, var17);
 
             try {
@@ -3741,9 +3783,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          Ud2_2 var132 = (Ud2_2)Ref.g(523871247978046775L, var20);
          Object var22 = 476468811070265040L;
          Object var10006 = Ref.g(476468811070265040L, var22);
-         Object[] var10007 = Registry.emptyArgs();
+         Object var10007 = Registry.emptyArgs();
          long var25 = 151703521374523010L;
-         Object[] var24 = var10007;
+         Object var24 = var10007;
          var10007 = Ref.h(151703521374523010L, var24, var25);
 
          try {
@@ -3759,9 +3801,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          if (!var1) {
             Object var26 = 476468811070265040L;
             Ref.g(476468811070265040L, var26);
-            Object[] var10008 = Registry.emptyArgs();
+            Object var10008 = Registry.emptyArgs();
             long var29 = 199518147617190011L;
-            Object[] var28 = var10008;
+            Object var28 = var10008;
             var10008 = Ref.h(199518147617190011L, var28, var29);
 
             try {
@@ -3783,9 +3825,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          Ud2_2 var137 = (Ud2_2)Ref.g(569451499065139968L, var32);
          Object var34 = 476468811070265040L;
          Object var10009 = Ref.g(476468811070265040L, var34);
-         Object[] var10010 = Registry.emptyArgs();
+         Object var10010 = Registry.emptyArgs();
          long var37 = 553240027343227646L;
-         Object[] var36 = var10010;
+         Object var36 = var10010;
          var10010 = Ref.h(553240027343227646L, var36, var37);
 
          try {
@@ -3801,9 +3843,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          if (!var1) {
             Object var38 = 476468811070265040L;
             Ref.g(476468811070265040L, var38);
-            Object[] var10011 = Registry.emptyArgs();
+            Object var10011 = Registry.emptyArgs();
             long var41 = 153061648722906139L;
-            Object[] var40 = var10011;
+            Object var40 = var10011;
             var10011 = Ref.h(153061648722906139L, var40, var41);
 
             try {
@@ -3822,12 +3864,12 @@ public class ApplyToFileAndDirDialog extends JDialog {
          }
 
          Object var44 = 318464940548783291L;
-         Ud2_2 var142 = (Ud2_2)Ref.g(318464940548783291L, var44);
+         var142 = (Ud2_2)Ref.g(318464940548783291L, var44);
          Object var46 = 476468811070265040L;
          Object var10012 = Ref.g(476468811070265040L, var46);
-         Object[] var10013 = Registry.emptyArgs();
+         Object var10013 = Registry.emptyArgs();
          long var49 = 478495353062292307L;
-         Object[] var48 = var10013;
+         Object var48 = var10013;
          var10013 = Ref.h(478495353062292307L, var48, var49);
 
          try {
@@ -3843,9 +3885,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          if (!var1) {
             Object var50 = 476468811070265040L;
             Ref.g(476468811070265040L, var50);
-            Object[] var10014 = Registry.emptyArgs();
+            Object var10014 = Registry.emptyArgs();
             long var53 = 351760284832019771L;
-            Object[] var52 = var10014;
+            Object var52 = var10014;
             var10014 = Ref.h(351760284832019771L, var52, var53);
 
             try {
@@ -3867,9 +3909,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          Ud2_2 var147 = (Ud2_2)Ref.g(597557982173392493L, var56);
          Object var58 = 476468811070265040L;
          Object var10015 = Ref.g(476468811070265040L, var58);
-         Object[] var10016 = Registry.emptyArgs();
+         Object var10016 = Registry.emptyArgs();
          long var61 = 602871526512576299L;
-         Object[] var60 = var10016;
+         Object var60 = var10016;
          var10016 = Ref.h(602871526512576299L, var60, var61);
 
          try {
@@ -3885,9 +3927,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          if (!var1) {
             Object var62 = 476468811070265040L;
             Ref.g(476468811070265040L, var62);
-            Object[] var10017 = Registry.emptyArgs();
+            Object var10017 = Registry.emptyArgs();
             long var65 = 500000619486614302L;
-            Object[] var64 = var10017;
+            Object var64 = var10017;
             var10017 = Ref.h(500000619486614302L, var64, var65);
 
             try {
@@ -3906,12 +3948,12 @@ public class ApplyToFileAndDirDialog extends JDialog {
          }
 
          Object var68 = 143355655849149136L;
-         Ud2_2 var152 = (Ud2_2)Ref.g(143355655849149136L, var68);
+         var152 = (Ud2_2)Ref.g(143355655849149136L, var68);
          Object var70 = 476468811070265040L;
          Object var10018 = Ref.g(476468811070265040L, var70);
-         Object[] var10019 = Registry.emptyArgs();
+         Object var10019 = Registry.emptyArgs();
          long var73 = 573220489640044246L;
-         Object[] var72 = var10019;
+         Object var72 = var10019;
          var10019 = Ref.h(573220489640044246L, var72, var73);
 
          try {
@@ -3927,9 +3969,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          if (!var1) {
             Object var74 = 476468811070265040L;
             Ref.g(476468811070265040L, var74);
-            Object[] var10020 = Registry.emptyArgs();
+            Object var10020 = Registry.emptyArgs();
             long var77 = 290346416688297750L;
-            Object[] var76 = var10020;
+            Object var76 = var10020;
             var10020 = Ref.h(290346416688297750L, var76, var77);
 
             try {
@@ -3951,9 +3993,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          Ud2_2 var157 = (Ud2_2)Ref.g(348771235428691169L, var80);
          Object var82 = 476468811070265040L;
          Object var10021 = Ref.g(476468811070265040L, var82);
-         Object[] var10022 = Registry.emptyArgs();
+         Object var10022 = Registry.emptyArgs();
          long var85 = 172398918030773532L;
-         Object[] var84 = var10022;
+         Object var84 = var10022;
          var10022 = Ref.h(172398918030773532L, var84, var85);
 
          try {
@@ -3969,9 +4011,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          if (!var1) {
             Object var86 = 476468811070265040L;
             Ref.g(476468811070265040L, var86);
-            Object[] var10023 = Registry.emptyArgs();
+            Object var10023 = Registry.emptyArgs();
             long var89 = 142936433350119057L;
-            Object[] var88 = var10023;
+            Object var88 = var10023;
             var10023 = Ref.h(142936433350119057L, var88, var89);
 
             try {
@@ -3993,9 +4035,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
          Ud2_2 var162 = (Ud2_2)Ref.g(166179534613546634L, var92);
          Object var94 = 476468811070265040L;
          Object var10024 = Ref.g(476468811070265040L, var94);
-         Object[] var10025 = Registry.emptyArgs();
+         Object var10025 = Registry.emptyArgs();
          long var97 = 408063576801388858L;
-         Object[] var96 = var10025;
+         Object var96 = var10025;
          var10025 = Ref.h(408063576801388858L, var96, var97);
 
          try {
@@ -4010,9 +4052,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
       if (!var1) {
          Object var98 = 476468811070265040L;
          Ref.g(476468811070265040L, var98);
-         Object[] var10026 = Registry.emptyArgs();
+         Object var10026 = Registry.emptyArgs();
          long var101 = 376192789505597293L;
-         Object[] var100 = var10026;
+         Object var100 = var10026;
          var10026 = Ref.h(376192789505597293L, var100, var101);
 
          try {
@@ -4034,9 +4076,9 @@ public class ApplyToFileAndDirDialog extends JDialog {
       Ud2_2 var167 = (Ud2_2)Ref.g(600985825617038458L, var104);
       Object var106 = 476468811070265040L;
       Object var10027 = Ref.g(476468811070265040L, var106);
-      Object[] var10028 = Registry.emptyArgs();
+      Object var10028 = Registry.emptyArgs();
       long var109 = 173251605037134799L;
-      Object[] var108 = var10028;
+      Object var108 = var10028;
       var10028 = Ref.h(173251605037134799L, var108, var109);
 
       try {
@@ -4054,12 +4096,12 @@ public class ApplyToFileAndDirDialog extends JDialog {
       return var2;
    }
 
-   public Address n() {
+   public FileBrowserAddressBar n() {
       Object var1 = 284106982926462996L;
-      return (Address)Ref.g(284106982926462996L, var1);
+      return (FileBrowserAddressBar)Ref.g(284106982926462996L, var1);
    }
 
-   public void x(Address var1) {
+   public void x(FileBrowserAddressBar var1) {
       long var3 = 284106982926462996L;
       Ref.s(284106982926462996L, var1, var3);
    }
@@ -4887,6 +4929,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[28];
       int var11 = 0;
       String var10 = "\u0015\u0003J`\u0002兮冭\u0002拏袏\u0012\u001b\rD+tËIø\u00888Y\u0086kÊÔÛ\u008e#\u0011^Vÿ\u0000@¿Õ\u001bnÎGÄ\u0019ÎU\u0094ö\u0004ÕsRn\u0007遮弼謳羽寊目彋\u0002儸其\u0004數倚[\u0094\u0002披行\u000e\u009884\u008dz\u001f\u0088c z\\Ü\u009b\u0080\u0002兄丩\u0002謟匹\u000f\u0097?ÕmF\u0003\u000fàP\bRÀX\u0001 \u0014}Þ¾Q\u000eUÜªEEIVV|g\u0097\u0097¾Ê¨\u000eÛñkß\u0093ïÂ;íÚ\u009aÎê¯\u0005譣羱杖隉T\u0006厨庬疚勯瘅徊\u0002謟厔\u000eüU¸ ëªºÕæ®\u0094\u0004\u0082\u0099\b帀痼刦敹云哀盩忽\u000eßÌÜ\u0013gÌ+\u0019Ô7Ò7Jÿ\u0002十洘\u0006叩席疲募敩丯\u000e´@±\u0082Êþ\u009eXbÿ\u0004Ë\u0090%\u0006传敵斠上枵阭";
@@ -4902,7 +4945,6 @@ public class ApplyToFileAndDirDialog extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      long var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

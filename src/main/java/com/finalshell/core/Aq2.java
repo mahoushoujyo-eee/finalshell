@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.Point;
 import java.awt.dnd.DropTarget;
 import java.awt.dnd.DropTargetContext;
@@ -20,11 +20,12 @@ public class Aq2 implements DropTargetListener {
    public JTree Z;
 
    public Aq2(JTree var1) {
+      super();
       long var3 = 595964023562665259L;
       Ref.s(595964023562665259L, var1, var3);
       DropTarget var10003;
       Object var4 = 595964023562665259L;
-      super((JTree)Ref.g(595964023562665259L, var4), this);
+      // [VF-super] super((JTree)Ref.g(595964023562665259L, var4), this);
       long var7 = 345692346018177470L;
       DropTarget var6 = var10003;
       Ref.s(345692346018177470L, var6, var7);
@@ -40,10 +41,10 @@ public class Aq2 implements DropTargetListener {
 
    @Override
    public void dragEnter(DropTargetDragEvent var1) {
-      Connection4.I();
+      ConnectionInfoPanel.I();
       TreeNode var10002 = (TreeNode)(Registry.packArgs(var1));
       long var5 = 214395011641258320L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       var10002 = Ref.h(214395011641258320L, var4, var5);
 
       try {
@@ -72,10 +73,10 @@ public class Aq2 implements DropTargetListener {
 
    @Override
    public void dragOver(DropTargetDragEvent var1) {
-      Connection4.I();
+      ConnectionInfoPanel.I();
       TreeNode var10002 = (TreeNode)(Registry.packArgs(var1));
       long var5 = 214395011641258320L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       var10002 = Ref.h(214395011641258320L, var4, var5);
 
       try {

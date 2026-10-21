@@ -42,13 +42,15 @@ public class AD_2 {
    }
 
    public boolean v(KeyEvent var1) {
+      KeyStroke var4;
+      boolean var5;
       int var10000 = ConnectionProperty.M$int();
       Iterator var3 = this.f.j().iterator();
       int var2 = var10000;
 
       while (true) {
          if (var3.hasNext()) {
-            KeyStroke var4 = (KeyStroke)var3.next();
+            var4 = (KeyStroke)var3.next();
             var5 = var4.equals(KeyStroke.getKeyStrokeForEvent(var1));
             if (var2 == 0) {
                break;
@@ -83,6 +85,8 @@ public class AD_2 {
    }
 
    public static boolean G(@NotNull CS3_2 var0, @NotNull KeyEvent var1) {
+      AD_2 var4;
+      boolean var5;
       int var10000 = ConnectionProperty.M$int();
       Iterator var3 = var0.n().iterator();
       int var2 = var10000;
@@ -90,7 +94,7 @@ public class AD_2 {
       while (true) {
          label52:
          if (var3.hasNext()) {
-            AD_2 var4 = (AD_2)var3.next();
+            var4 = (AD_2)var3.next();
             var5 = var4.v(var1);
             if (var2 == 0) {
                break;
@@ -208,11 +212,13 @@ public class AD_2 {
    }
 
    public static void r(@NotNull CS3_2 var0, @NotNull Ob2_2 var1) {
+      boolean var4;
+      Iterator var5;
       int var10000 = ConnectionProperty.y();
       List var3 = k(var0);
-      boolean var4 = true;
+      var4 = true;
       int var2 = var10000;
-      Iterator var5 = var3.iterator();
+      var5 = var3.iterator();
 
       label63:
       while (true) {
@@ -286,6 +292,7 @@ public class AD_2 {
 
    @NotNull
    public static List k(@NotNull CS3_2 var0) {
+      ArrayList var4;
       int var10000 = ConnectionProperty.y();
       ArrayList var2 = new ArrayList();
       CS3_2 var3 = var0;
@@ -293,7 +300,6 @@ public class AD_2 {
 
       while (true) {
          if (var3 != null) {
-      int var4;
             var4 = var2;
             if (var1 != 0) {
                break;
@@ -302,7 +308,6 @@ public class AD_2 {
             var2.add(0, var3);
             var3 = var3.c();
             if (var1 == 0) {
-      int var4;
                continue;
             }
          }
@@ -330,7 +335,6 @@ public class AD_2 {
       return var0.N();
    }
 }
-
 
 
 

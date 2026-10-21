@@ -75,6 +75,8 @@ public class Xj2 extends Xv2 {
 
    @Override
    public void X(XW var1) {
+      Xj2 var10;
+      int var8;
       String[] var10000 = O62.S();
       this.J = this.S();
       this.i = this.M();
@@ -94,7 +96,6 @@ public class Xj2 extends Xv2 {
          int var7 = var3 % this.J;
          if (var2 == null) {
             if (var7 == 0) {
-      int var8;
                var8 = var3;
                break label69;
             }
@@ -176,6 +177,7 @@ public class Xj2 extends Xv2 {
 
    @Override
    public boolean d(XW var1) {
+      int var7;
       int var3 = this.Y(var1);
       String[] var10000 = O62.S();
       int var4 = 1;
@@ -209,7 +211,7 @@ public class Xj2 extends Xv2 {
                            }
                         }
 
-                        var7 = this.E(var6, this.b, var3);
+                        var7 = (this.E(var6, this.b, var3)) ? 1 : 0;
                      }
 
                      if (var2 != null) {
@@ -217,7 +219,6 @@ public class Xj2 extends Xv2 {
                      }
 
                      if (var7 != 0) {
-      int var7;
                         this.b[var6] = this.m(var1, this.b[var6]);
                      }
                   }
@@ -250,7 +251,7 @@ public class Xj2 extends Xv2 {
             }
          }
 
-         var7 = this.G.equals(O62.fill);
+         var7 = (this.G.equals(O62.fill)) ? 1 : 0;
          break;
       }
 
@@ -273,7 +274,7 @@ public class Xj2 extends Xv2 {
          var7 = 1;
       }
 
-      return (boolean)var7;
+      return var7 != 0;
    }
 
    public int m(XW var1, int var2) {
@@ -283,10 +284,10 @@ public class Xj2 extends Xv2 {
 
    public int Y(XW var1) {
       String[] var2 = O62.S();
-      int var10000 = this.G.equals(O62.slide);
+      int var10000 = (this.G.equals(O62.slide)) ? 1 : 0;
       if (var2 == null) {
          if (var10000 != 0) {
-            var10000 = this.n.V();
+            var10000 = (this.n.V()) ? 1 : 0;
             if (var2 == null) {
                var10000 = var10000 != 0 ? var1.getHeight() : var1.getWidth();
             }
@@ -302,7 +303,7 @@ public class Xj2 extends Xv2 {
 
    public int c(int var1, int var2) {
       String[] var3 = O62.S();
-      int var10000 = this.G.equals(O62.slide);
+      int var10000 = (this.G.equals(O62.slide)) ? 1 : 0;
       if (var3 == null) {
          if (var10000 != 0) {
             return Math.max(this.i, Math.round((float)this.m * (float)Math.sqrt((double)((float)(var2 - var1) / (float)var2))));
@@ -318,11 +319,11 @@ public class Xj2 extends Xv2 {
       String[] var4;
       int var5;
       label140: {
-         var4 = (((O62.S()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-         var5 = ((this.n.equals(DR3.right)) != 0) != 0;
+         var4 = O62.S();
+         var5 = (this.n.equals(DR3.right)) ? 1 : 0;
          if (var4 == null) {
             if (var5 == 0) {
-               var5 = this.n.equals(DR3.down);
+               var5 = (this.n.equals(DR3.down)) ? 1 : 0;
                if (var4 != null) {
                   break label140;
                }
@@ -340,11 +341,11 @@ public class Xj2 extends Xv2 {
             if (var5 > 0) {
                var5 = var2[var1 - 1];
                if (var4 != null) {
-                  return (boolean)var5;
+                  return var5 != 0;
                }
 
                if (var5 > var3 / 4) {
-                  return (boolean)1;
+                  return 1 != 0;
                }
             }
 
@@ -356,11 +357,11 @@ public class Xj2 extends Xv2 {
             if (var5 > 1) {
                var5 = var2[var1 - 2];
                if (var4 != null) {
-                  return (boolean)var5;
+                  return var5 != 0;
                }
 
                if (var5 > var3 * 2 / 4) {
-                  return (boolean)1;
+                  return 1 != 0;
                }
             }
 
@@ -370,22 +371,22 @@ public class Xj2 extends Xv2 {
 
          if (var4 == null) {
             if (var5 <= var10001) {
-               return (boolean)0;
+               return 0 != 0;
             }
 
             var5 = var2[var1 - 3];
             if (var4 != null) {
-               return (boolean)var5;
+               return var5 != 0;
             }
 
             var10001 = var3 * 3 / 4;
          }
 
          if (var5 > var10001) {
-            return (boolean)1;
+            return 1 != 0;
          }
 
-         return (boolean)0;
+         return 0 != 0;
       }
 
       int var6 = var2.length - 1;
@@ -393,11 +394,11 @@ public class Xj2 extends Xv2 {
          if (var5 < var6) {
             var5 = var2[var1 + 1];
             if (var4 != null) {
-               return (boolean)var5;
+               return var5 != 0;
             }
 
             if (var5 > var3 / 4) {
-               return (boolean)1;
+               return 1 != 0;
             }
          }
 
@@ -409,11 +410,11 @@ public class Xj2 extends Xv2 {
          if (var5 < var6) {
             var5 = var2[var1 + 2];
             if (var4 != null) {
-               return (boolean)var5;
+               return var5 != 0;
             }
 
             if (var5 > var3 * 2 / 4) {
-               return (boolean)1;
+               return 1 != 0;
             }
          }
 
@@ -423,18 +424,18 @@ public class Xj2 extends Xv2 {
 
       if (var4 == null) {
          if (var5 >= var6) {
-            return (boolean)0;
+            return 0 != 0;
          }
 
          var5 = var2[var1 + 3];
          if (var4 != null) {
-            return (boolean)var5;
+            return var5 != 0;
          }
 
          var6 = var3 * 3 / 4;
       }
 
-      return (boolean)(var5 > var6 ? 1 : 0);
+      return (boolean)((var5 > var6 ? 1 : 0) != 0);
    }
 
    public Shape P(int[] var1, XW var2) {
@@ -466,6 +467,10 @@ public class Xj2 extends Xv2 {
 
    @Override
    public void D(Graphics2D var1, XW var2) {
+      int var10;
+      Xj2 var10001;
+      int var23;
+      Xj2 var52;
       label355: {
          String[] var3;
          int var4;
@@ -481,11 +486,11 @@ public class Xj2 extends Xv2 {
                var6 = this.Y(var2);
                var3 = var10000;
                var1.drawImage(var2.R$BufferedImage(), 0, 0, var4, var5, null);
-               var7 = (((var2.y()) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-               var40 = ((this.G.equals(O62.fade)) != 0) != 0;
+               var7 = var2.y();
+               var40 = (this.G.equals(O62.fade)) ? 1 : 0;
                if (var3 == null) {
                   if (var40 == 0) {
-                     var40 = this.G.equals(O62.fill);
+                     var40 = (this.G.equals(O62.fill)) ? 1 : 0;
                      if (var3 != null) {
                         break label351;
                      }
@@ -494,7 +499,7 @@ public class Xj2 extends Xv2 {
                         break label356;
                      }
 
-                     var40 = this.N;
+                     var40 = (this.N) ? 1 : 0;
                      if (var3 != null) {
                         break label351;
                      }
@@ -511,7 +516,7 @@ public class Xj2 extends Xv2 {
                int var9 = 0;
 
                while (var9 < var8) {
-                  int var10 = this.b[var9];
+                  var10 = this.b[var9];
                   if (var3 != null) {
                      break label355;
                   }
@@ -519,7 +524,7 @@ public class Xj2 extends Xv2 {
                   if (var3 == null) {
                      label306:
                      if (var10 > 0) {
-                        var40 = this.n.Z();
+                        var40 = (this.n.Z()) ? 1 : 0;
                         if (var3 == null) {
                            if (var40 != 0) {
                               int var12;
@@ -558,14 +563,14 @@ public class Xj2 extends Xv2 {
                                  var10002 = var10 < this.J ? 1 : 0;
                               }
 
-                              Composite var16 = RV.a(var1, var51, (boolean)var10002);
+                              Composite var16 = RV.a(var1, var51, var10002);
                               var1.drawImage(var7, 0, var12, var14, var15, 0, var12, var14, var15, null);
                               var10002 = var10;
                               if (var3 == null) {
                                  var10002 = var10 < this.J ? 1 : 0;
                               }
 
-                              RV.E(var1, var16, (boolean)var10002);
+                              RV.E(var1, var16, var10002);
                               if (var3 == null) {
                                  break label306;
                               }
@@ -610,14 +615,14 @@ public class Xj2 extends Xv2 {
                            var58 = var10 < this.J ? 1 : 0;
                         }
 
-                        Composite var36 = RV.a(var1, var54, (boolean)var58);
+                        Composite var36 = RV.a(var1, var54, var58);
                         var1.drawImage(var7, var21, 0, var30, var33, var21, 0, var30, var33, null);
                         var58 = var10;
                         if (var3 == null) {
                            var58 = var10 < this.J ? 1 : 0;
                         }
 
-                        RV.E(var1, var36, (boolean)var58);
+                        RV.E(var1, var36, var58);
                      }
 
                      var9++;
@@ -633,7 +638,7 @@ public class Xj2 extends Xv2 {
                }
             }
 
-            var40 = this.G.equals(O62.fill);
+            var40 = (this.G.equals(O62.fill)) ? 1 : 0;
          }
 
          if (var3 == null) {
@@ -646,7 +651,7 @@ public class Xj2 extends Xv2 {
                }
             }
 
-            var40 = this.G.equals(O62.slide);
+            var40 = (this.G.equals(O62.slide)) ? 1 : 0;
          }
 
          if (var3 == null) {
@@ -665,15 +670,15 @@ public class Xj2 extends Xv2 {
             if (var3 == null) {
                label191:
                if (var20 > 0) {
-                  var40 = this.n.Z();
+                  var40 = (this.n.Z()) ? 1 : 0;
                   if (var3 == null) {
                      if (var40 != 0) {
                         int var22;
                         label364: {
-                           var40 = this.y.equals(com.finalshell.ui.model.I3.left);
+                           var40 = (this.y.equals(com.finalshell.ui.model.I3.left)) ? 1 : 0;
                            if (var3 == null) {
                               if (var40 != 0) {
-                                 var40 = this.n.equals(DR3.up);
+                                 var40 = (this.n.equals(DR3.up)) ? 1 : 0;
                                  if (var3 == null) {
                                     var40 = var40 != 0 ? -1 : 1;
                                  }
@@ -684,12 +689,12 @@ public class Xj2 extends Xv2 {
                                  }
                               }
 
-                              var40 = this.y.equals(com.finalshell.ui.model.I3.right);
+                              var40 = (this.y.equals(com.finalshell.ui.model.I3.right)) ? 1 : 0;
                            }
 
                            if (var3 == null) {
                               if (var40 != 0) {
-                                 var40 = this.n.equals(DR3.up);
+                                 var40 = (this.n.equals(DR3.up)) ? 1 : 0;
                                  if (var3 == null) {
                                     var40 = var40 != 0 ? 1 : -1;
                                  }
@@ -721,9 +726,9 @@ public class Xj2 extends Xv2 {
                               var25 = var22 * Math.round((float)var4 * ((float)var20 / (float)var6)) - var22 * var4;
                               var28 = var25 + var4;
                               var31 = var19 * this.J;
-                              var34 = (var31 + Math.min(var5 - var19 * this.J, this.J)) != 0;
-                              var55 = (((((float)var20 / (float)var6) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-                              var60 = ((this.N) != 0) != 0;
+                              var34 = var31 + Math.min(var5 - var19 * this.J, this.J);
+                              var55 = (float)var20 / (float)var6;
+                              var60 = (this.N) ? 1 : 0;
                               if (var3 == null) {
                                  if (!this.N) {
                                     break label365;
@@ -748,9 +753,9 @@ public class Xj2 extends Xv2 {
                         Composite var37;
                         label240: {
                            label366: {
-                              var37 = RV.a(var1, var55, (boolean)var60);
+                              var37 = (RV.a(var1, var55, var60)) != 0;
                               var1.drawImage(var7, var25, var31, var28, var34, 0, var31, var4, var34, null);
-                              var60 = this.N;
+                              var60 = (this.N) ? 1 : 0;
                               if (var3 == null) {
                                  if (!this.N) {
                                     break label366;
@@ -772,20 +777,19 @@ public class Xj2 extends Xv2 {
                            var60 = 0;
                         }
 
-                        RV.E(var1, var37, (boolean)var60);
+                        RV.E(var1, var37, var60);
                         if (var3 == null) {
                            break label191;
                         }
                      }
 
-                     var40 = this.y.equals(com.finalshell.ui.model.I3.left);
+                     var40 = (this.y.equals(com.finalshell.ui.model.I3.left)) ? 1 : 0;
                   }
 
-                  int var23;
                   label367: {
                      if (var3 == null) {
                         if (var40 != 0) {
-                           var40 = this.n.equals(DR3.left);
+                           var40 = (this.n.equals(DR3.left)) ? 1 : 0;
                            if (var3 == null) {
                               var40 = var40 != 0 ? -1 : 1;
                            }
@@ -796,12 +800,12 @@ public class Xj2 extends Xv2 {
                            }
                         }
 
-                        var40 = this.y.equals(com.finalshell.ui.model.I3.right);
+                        var40 = (this.y.equals(com.finalshell.ui.model.I3.right)) ? 1 : 0;
                      }
 
                      if (var3 == null) {
                         if (var40 != 0) {
-                           var40 = this.n.equals(DR3.left);
+                           var40 = (this.n.equals(DR3.left)) ? 1 : 0;
                            if (var3 == null) {
                               var40 = var40 != 0 ? 1 : -1;
                            }
@@ -833,9 +837,9 @@ public class Xj2 extends Xv2 {
                         var26 = var19 * this.J;
                         var29 = var26 + Math.min(var4 - var19 * this.J, this.J);
                         var32 = var23 * Math.round((float)var5 * ((float)var20 / (float)var6)) - var23 * var5;
-                        var35 = (var32 + var5) != 0;
-                        var56 = (((((float)var20 / (float)var6) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-                        var62 = ((this.N) != 0) != 0;
+                        var35 = var32 + var5;
+                        var56 = (float)var20 / (float)var6;
+                        var62 = (this.N) ? 1 : 0;
                         if (var3 == null) {
                            if (!this.N) {
                               break label368;
@@ -860,9 +864,9 @@ public class Xj2 extends Xv2 {
                   Composite var38;
                   label201: {
                      label369: {
-                        var38 = RV.a(var1, var56, (boolean)var62);
+                        var38 = (RV.a(var1, var56, var62)) != 0;
                         var1.drawImage(var7, var26, var32, var29, var35, var26, 0, var29, var5, null);
-                        var62 = this.N;
+                        var62 = (this.N) ? 1 : 0;
                         if (var3 == null) {
                            if (!this.N) {
                               break label369;
@@ -884,7 +888,7 @@ public class Xj2 extends Xv2 {
                      var62 = 0;
                   }
 
-                  RV.E(var1, var38, (boolean)var62);
+                  RV.E(var1, var38, var62);
                }
 
                var19++;
@@ -906,6 +910,7 @@ public class Xj2 extends Xv2 {
    }
 
    public static String b(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -25479) & 65535;
       if (d[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1692,7 +1697,7 @@ public class Xj2 extends Xv2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1711,7 +1716,9 @@ public class Xj2 extends Xv2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var7 = new String[12];
+      char[] var23;
+      String[] var7;
+      var7 = new String[12];
       int var5 = 0;
       String var4 = "%;\u0084¯«y'ÜK?i \u0015Ñ\u0010\u001aÊxÕ]I\u001a\u008d\u008aú\u0080\u001fu8@\u0080\u0016\u0014\u001e\u0017àÄ<P¼\u0086Å#\u0017Åñ[\u0000\u008de7k T¶\u009d\u008bæ\f;\u008eG\u0019Ó¯(\u0006¿l^Ã\f\u0088}1g\u001d`ñÿ\u0084S9$\f>\u008dçyÇ£ª\u0087ýDRÝ\r\u0007ÞÀ\u0013#î6.ix2rô\u0015\u0003É@ñ3²4¥7\u0010/I4iãö\u0092YL/U\fF\nè\u0089&½\u0096Dz<¢Ò\fã®\\\u001d°/D\u0016'fä\u008b";
       int var6 = "%;\u0084¯«y'ÜK?i \u0015Ñ\u0010\u001aÊxÕ]I\u001a\u008d\u008aú\u0080\u001fu8@\u0080\u0016\u0014\u001e\u0017àÄ<P¼\u0086Å#\u0017Åñ[\u0000\u008de7k T¶\u009d\u008bæ\f;\u008eG\u0019Ó¯(\u0006¿l^Ã\f\u0088}1g\u001d`ñÿ\u0084S9$\f>\u008dçyÇ£ª\u0087ýDRÝ\r\u0007ÞÀ\u0013#î6.ix2rô\u0015\u0003É@ñ3²4¥7\u0010/I4iãö\u0092YL/U\fF\nè\u0089&½\u0096Dz<¢Ò\fã®\\\u001d°/D\u0016'fä\u008b"
@@ -1832,7 +1839,6 @@ public class Xj2 extends Xv2 {
       }
    }
 }
-
 
 
 

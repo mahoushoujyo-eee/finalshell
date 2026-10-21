@@ -125,6 +125,7 @@ public class Lg4 {
    }
 
    public static String P(String var0) throws Exception {
+      byte[] var4;
       Registry.packArgs(Registry.lookupField(584756107589340083L).getInt(null));
       long var6 = 266074901868418492L;
       Object var10001 = Ref.h2(266074901868418492L, var6);
@@ -148,7 +149,7 @@ public class Lg4 {
 
       byte[] var3 = (byte[])var10002;
       int var19 = h();
-      byte[] var4 = new byte[var2.length + var3.length];
+      var4 = new byte[var2.length + var3.length];
       System.arraycopy(var2, 0, var4, 0, var2.length);
       System.arraycopy(var3, 0, var4, var2.length, var3.length);
       int var1 = var19;
@@ -176,6 +177,7 @@ public class Lg4 {
    }
 
    public static byte[] K(int var0) {
+      byte[] var4;
       byte[] var2 = new byte[var0];
       int var10000 = h();
       int var3 = 0;
@@ -183,7 +185,6 @@ public class Lg4 {
 
       while (true) {
          if (var3 < var0) {
-      byte[] var4;
             var4 = var2;
             if (var1 != 0) {
                break;
@@ -192,7 +193,6 @@ public class Lg4 {
             var2[var3] = (byte)(5 + (byte)new Random().nextInt(a(28739, 968860276617166397L)));
             var3++;
             if (var1 == 0) {
-      byte[] var4;
                continue;
             }
          }
@@ -205,7 +205,8 @@ public class Lg4 {
    }
 
    public void Z(byte[] var1, long var2) {
-      Random var4 = new Random();
+      Random var4;
+      var4 = new Random();
       var4.nextLong();
    }
 
@@ -213,8 +214,9 @@ public class Lg4 {
    }
 
    public static byte[] e(byte[] var0) throws Exception {
+      long var4;
       Registry.packArgs(Registry.lookupField(584756107589340083L).getInt(null));
-      long var4 = 266074901868418492L;
+      var4 = 266074901868418492L;
       Object var10001 = Ref.h2(266074901868418492L, var4);
 
       try {
@@ -301,6 +303,7 @@ public class Lg4 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ -19077) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1075,7 +1078,7 @@ public class Lg4 {
                var10000 = 99;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -1238,7 +1241,6 @@ public class Lg4 {
       }
    }
 }
-
 
 
 

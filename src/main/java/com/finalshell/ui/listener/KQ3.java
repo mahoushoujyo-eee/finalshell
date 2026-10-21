@@ -23,13 +23,14 @@ public class KQ3 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var30;
       int[] var2 = SelectDownloadFolderPanel.O$arrint();
       if (var2 == null) {
          Object var4 = 468253182890378749L;
          Ref.g(468253182890378749L, var4);
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var7 = 410760064034581011L;
-         Object[] var6 = var10002;
+         Object var6 = var10002;
          var10002 = Ref.h(410760064034581011L, var6, var7);
 
          try {

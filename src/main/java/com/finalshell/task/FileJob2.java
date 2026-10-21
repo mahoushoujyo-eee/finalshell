@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.util.ArrayList;
 
 public class FileJob2 implements Runnable {
@@ -8,11 +8,11 @@ public class FileJob2 implements Runnable {
    public final String K;
    public final String f;
    public final ArrayList e;
-   public final Address b;
+   public final FileBrowserAddressBar b;
    public static String[] c;
    public static String[] d;
 
-   public FileJob2(Address var1, ArrayList var2, String var3, String var4, ArrayList var5) {
+   public FileJob2(FileBrowserAddressBar var1, ArrayList var2, String var3, String var4, ArrayList var5) {
       this.b = var1;
       this.a = var2;
       this.K = var3;

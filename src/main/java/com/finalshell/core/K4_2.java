@@ -217,6 +217,7 @@ public class K4_2 extends JRadioButton implements W2_3, Pp2, RF3, Au2, Eh2, Yb4,
    }
 
    public void y(boolean var1, boolean var2) {
+      boolean var5;
       K4_2 var6;
       boolean var10001;
       label31: {
@@ -228,7 +229,6 @@ public class K4_2 extends JRadioButton implements W2_3, Pp2, RF3, Au2, Eh2, Yb4,
          label27:
          if (!var3) {
             if (!var2) {
-      boolean var5;
                var5 = var4;
                if (var3) {
                   break label27;

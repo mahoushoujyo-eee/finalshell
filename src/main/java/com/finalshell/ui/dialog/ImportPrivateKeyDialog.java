@@ -4,8 +4,8 @@ import com.finalshell.core.LN3;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.listener.Ov2;
-import com.finalshell.ui.listener.PrivateKey;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.listener.PrivateKeyImportListener;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import com.finalshell.ui.panel.PrivateKeyPanel;
 import java.awt.Window;
 import java.lang.reflect.InvocationTargetException;
@@ -46,12 +46,12 @@ public class ImportPrivateKeyDialog extends JDialog {
       var4.setFocusable(false);
       Object var16 = 366292063443850443L;
       ((JPanel)Ref.g(366292063443850443L, var16)).add(var4, a(-14477, 1876));
-      var4.addActionListener(new PrivateKey(this, var2));
+      var4.addActionListener(new PrivateKeyImportListener(this, var2));
       JButton var5 = new JButton(a(-14478, 27406));
       var5.setFocusable(false);
       Object var18 = 366292063443850443L;
       ((JPanel)Ref.g(366292063443850443L, var18)).add(var5, a(-14479, -25072));
-      String[] var10007 = ImportPanel.j();
+      String[] var10007 = ImportMenuPanel.j();
       var5.addActionListener(new Ov2(this));
       String[] var3 = var10007;
       ImportPrivateKeyDialog var20 = this;
@@ -906,6 +906,7 @@ public class ImportPrivateKeyDialog extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[11];
       int var11 = 0;
       String var10 = "ÜÉ\u0005½*ÂÂ\u009b\u008d¯2\u0002ÆB.¼×g\u0003wêL\u0002印涼\u0016²\u0006ÈD\u0093ýõ|kSî\u009d]±]Â¹¨Î\u008eSs\u0002確嬙\u0004寠儀礬鑆.ü\u0095ð¨8E\u009a¶ÚcwÌhA\u0013 ü\u0080\u0015e%gu3£Æø\u0016\u000e\u001a\u0096Mò\t7êc®ûµ}\u0091ï-\u0097Ã\u000e\u0082\u0005õLq¹6\u0011\u0006¶îvS\n\u0004翗迍祽钕\u0012V7o\n\"q\\\t[\u0084F\"u\u0081±Ã£F";
@@ -921,7 +922,6 @@ public class ImportPrivateKeyDialog extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

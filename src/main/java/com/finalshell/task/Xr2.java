@@ -1,11 +1,11 @@
 package com.finalshell.task;
 
-import com.finalshell.ui.panel.CopyPanel;
+import com.finalshell.ui.panel.ProcessInfoPanel;
 
 public class Xr2 implements Runnable {
-   public final CopyPanel F;
+   public final ProcessInfoPanel F;
 
-   public Xr2(CopyPanel var1) {
+   public Xr2(ProcessInfoPanel var1) {
       this.F = var1;
    }
 

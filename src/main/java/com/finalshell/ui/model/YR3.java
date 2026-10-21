@@ -1,7 +1,7 @@
 package com.finalshell.ui.model;
 
 public final class YR3 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -43,6 +43,7 @@ public final class YR3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var8 = new String[9];
       int var12 = 0;
       String var11 = "?\u000f\u0011\u0017aDm.\u0012\n)\u000f\u0015 kGU.\u0006\u0015\u0007?\u000f\u0011\u0018aLm\u0006(\u0005\u000f aX\f)\u000f\u0015 kGZ.\u000e\u00151v\n'\u0005\u0007 GOw?\u0005\u0013\u000b9\t\u0006<pi|%\u0014\u0004&";
@@ -58,7 +59,6 @@ public final class YR3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

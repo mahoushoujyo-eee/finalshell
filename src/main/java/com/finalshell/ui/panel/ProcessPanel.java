@@ -2,7 +2,7 @@ package com.finalshell.ui.panel;
 
 import com.finalshell.core.KV;
 import com.finalshell.core.LI3_2;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.awt.Color;
@@ -89,12 +89,14 @@ public class ProcessPanel extends JPanel {
    }
 
    public void N(KV var1, String var2) {
+      long var33;
+      Integer var50;
       long var9 = 245622000259489295L;
       Ref.s(245622000259489295L, var1, var9);
       KA_3.y$arrky_4();
       ArrayList var10003 = (ArrayList)(Registry.emptyArgs());
       long var11 = 604361570872278918L;
-      Object[] var10 = var10003;
+      Object var10 = var10003;
       var10003 = Ref.h(604361570872278918L, var10, var11);
 
       try {
@@ -108,11 +110,11 @@ public class ProcessPanel extends JPanel {
       int var5 = Registry.lookupField(149407827136588388L).getInt(null);
       var10003 = Registry.emptyArgs();
       long var13 = 559196035657690421L;
-      Object[] var12 = var10003;
+      Object var12 = var10003;
       var10003 = Ref.h(559196035657690421L, var12, var13);
 
       try {
-         var10003 = (Ty2)var10003;
+         var10003 = (RemoteProcessManager)var10003;
       } catch (InvocationTargetException var41) {
          throw var41.getTargetException();
       }
@@ -135,9 +137,9 @@ public class ProcessPanel extends JPanel {
             }
          }
 
-         Object[] var48 = Registry.emptyArgs();
+         Object var48 = Registry.emptyArgs();
          long var17 = 589495788544429046L;
-         Object[] var16 = var48;
+         Object var16 = var48;
          var48 = Ref.h(589495788544429046L, var16, var17);
 
          try {
@@ -229,7 +231,7 @@ public class ProcessPanel extends JPanel {
       Object var30 = 284515098676649781L;
       Ref.g(284515098676649781L, var30);
       Object[] var10008 = Registry.packArgs(null, null, null);
-      long var33 = 428957641862057739L;
+      var33 = 428957641862057739L;
       Object[] var32 = var10008;
       Ref.h(428957641862057739L, var32, var33);
 
@@ -1077,6 +1079,7 @@ public class ProcessPanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[8];
       int var11 = 0;
       String var10 = "\u008b\u0014·É\u000eºÑ^û\u001b6ï]Ô\u0093\u0099ÍÄé\"lYWg©ªc#¼j\u0010.®\u0086.ÚýP\u001cì\u0019' öì\"®\f>ýªc\u0014Ó\u0002轷窍\u001eþ\u0097\u0005¾ã\u0091*D\u0095\u00865³\n>¦ÿ&ôÓAÓÛ\u0097[¨\u0083µýøÞ\u0011Âüf5\u001eU8w*})\u0016{ÿÙ\u007fn";
@@ -1092,7 +1095,6 @@ public class ProcessPanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

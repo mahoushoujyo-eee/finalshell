@@ -33,6 +33,8 @@ public class OH3 extends BasicTabbedPaneUI {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    @Override
    public void paintTabArea(Graphics var1, int var2, int var3) {
+      boolean var20;
+      int var22;
       Graphics2D var5 = (Graphics2D)var1;
       int var6 = this.tabPane.getTabCount();
       String var10000 = com.finalshell.ui.panel.Hd2.X();
@@ -211,22 +213,22 @@ public class OH3 extends BasicTabbedPaneUI {
       }
 
       int var13 = var19;
-      this.S(var1, var2, var4, var5, var6, var7, var11.x, var11.y, var11.width, var11.height, (boolean)var13);
+      this.S(var1, var2, var4, var5, var6, var7, var11.x, var11.y, var11.width, var11.height, var13);
       String var14 = this.tabPane.getTitleAt(var7);
       Font var15 = this.tabPane.getFont();
       FontMetrics var16 = FN.P(this.tabPane, var1, var15);
       Icon var17 = this.getIconForTab(var7);
-      this.layoutLabel(var2, var16, var7, var14, var17, var11, var8, var9, (boolean)var13);
+      this.layoutLabel(var2, var16, var7, var14, var17, var11, var8, var9, var13);
       boolean var18 = this.tabPane.getTabComponentAt(var7) == null;
       if (var10 != null) {
          if (!var18) {
             return;
          }
 
-         this.paintIcon(var1, var2, var7, var17, var8, (boolean)var13);
+         this.paintIcon(var1, var2, var7, var17, var8, var13);
       }
 
-      this.paintText(var1, var2, var15, var16, var7, var14, var9, (boolean)var13);
+      this.paintText(var1, var2, var15, var16, var7, var14, var9, var13);
    }
 
    @Override

@@ -73,6 +73,8 @@ public class UY2 extends MouseAdapter {
 
    @Override
    public void mouseReleased(MouseEvent var1) {
+      int var11;
+      int var13;
       int[] var10000 = K32.L$arrint();
       Ko4 var3 = this.G;
       TR_2 var4 = this.G.V.v();
@@ -157,8 +159,6 @@ public class UY2 extends MouseAdapter {
                      }
 
                      if (var2 != null) {
-      int var13;
-      int var13;
                         continue;
                      }
                   }
@@ -209,7 +209,6 @@ public class UY2 extends MouseAdapter {
       return MouseInfo.getPointerInfo().getLocation().y;
    }
 }
-
 
 
 

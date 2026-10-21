@@ -48,7 +48,7 @@ public class Lr2 {
       KV3 var3 = new KV3(this);
       Q.info(a(10788, 29279));
       long var4 = System.currentTimeMillis();
-      ZN_2.x(var2, a(10789, 26924), var3);
+      TextFileUtil.x(var2, a(10789, 26924), var3);
       var4 = System.currentTimeMillis() - var4;
       Q.info(a(10791, 12702) + var4);
    }
@@ -902,6 +902,7 @@ public class Lr2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "§\u001dú÷\u001b\u0010\u009e5\u0087\u000fèD0øüÎ?È\u0005pu2,\u00ad\u008e\u0019\u009cj\u0010í÷æ3®xâ[õs\u001bC\u0013\u0092³òg¼\u0085B\u008cÊzRã\u00075c\bÔÔ~ÆûtX¯\u0003Ã\u0001\u0096\b-\u001b\u001a\u0005Ap7-U UYú\fR\u009b^¢kE\u0081Á!Iß5";
@@ -918,7 +919,6 @@ public class Lr2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

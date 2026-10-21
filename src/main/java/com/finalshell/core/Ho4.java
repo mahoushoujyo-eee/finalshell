@@ -44,6 +44,7 @@ public class Ho4 extends HN3 {
    }
 
    public int[] C() {
+      int[] var4;
       int[] var2 = new int[a(5668, 5731298942485127510L)];
       String[] var10000 = W5.q();
       int var3 = 0;
@@ -51,7 +52,6 @@ public class Ho4 extends HN3 {
 
       while (true) {
          if (var3 < a(29567, 2327869025642120201L)) {
-      int[] var4;
             var4 = var2;
             if (var1 == null) {
                break;
@@ -62,7 +62,6 @@ public class Ho4 extends HN3 {
             );
             var3++;
             if (var1 != null) {
-      int[] var4;
                continue;
             }
          }
@@ -76,7 +75,8 @@ public class Ho4 extends HN3 {
 
    @Override
    public int C(int var1, int var2, int var3) {
-      int var4 = var3 & a(16401, 4271840137529636717L);
+      int var4;
+      var4 = var3 & a(16401, 4271840137529636717L);
       int var5 = var3 >> a(14744, 6443840690622123757L) & a(10413, 5730306050359975888L);
       int var6 = var3 >> a(14520, 4371025885991587784L) & a(5630, 7357301957522612879L);
       int var7 = var3 & a(5630, 7357301957522612879L);
@@ -378,7 +378,6 @@ public class Ho4 extends HN3 {
       }
    }
 }
-
 
 
 

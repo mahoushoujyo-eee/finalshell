@@ -339,7 +339,7 @@ public class NC {
    }
 
    public static void k(Qt2 var0, JRootPane var1, JLayeredPane var2) {
-      JRootPane var6;
+      Window var6;
       var0.setBounds(0, 0, var2.getWidth(), var2.getHeight());
       var0.setVisible(true);
       String[] var10000 = QX.Y();
@@ -378,6 +378,8 @@ public class NC {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
+      int var8;
       int var2 = (var0 ^ -23069) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1158,13 +1160,13 @@ public class NC {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -1183,6 +1185,7 @@ public class NC {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "®\"\u001b\u0090\u0091ÿ«È\u008eÕÖ¯\u0093;ai\tOÓ_»®ÃMÍt+\u0080þôqS\b½µ\u008fåÙE2ó:,èþ\u009cÕÓ\u0093UEs\u0099\u0089°SéD4\u0087 É÷)!é#m*¿¾ \u001bI[\u0089¥åFQQ\u001dÑo=øîÑÎ4üäm*l\u00009\u0098\u0092ÎÀ×\u0083\u001eÞ\u000eý\u0016\u000bú2w¿ç¬\u0080Ç¿\u0083vz\u008efþû\u0006N'J\u0086¶þßÐÝ#XtÔB\u009d\u0018ý\u0011DuD";
@@ -1198,7 +1201,6 @@ public class NC {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -8462,6 +8462,7 @@ public class Ep4 implements X4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var36;
       String[] var15 = new String[40];
       int var13 = 0;
       String var12 = "ã³kÝóÅÔ+\u0010I,«ñeO´;\u001câ\r\u0016\u0018\u0093xûdÏ\u001b\u0086'«ÊN¬\u0001_ç\u0085dP\u001d\u001a\u009f\u0018û\u009a\u0013b\u0013[ÉõG\u0014{\bC&ù\u0099WW÷\u0093ÏJ-\u008a`vá\u0011\u0099\u008eD§\u0093ÎREØÂÊ±\u000eÂûãzùmÞï·\u000e\u00064ÙI]ý £|x?ÐÝ»´\u00adñ\u000bàË\u0083¨i\u001fÿÎ^Ú\u0096\u0004º³Ô«\u0006\u0019Ë@;Cü\u001dªî`xÆË\u0080JZ´\u009fÐ\u001b3\u009e0+ZÔ\u001f²\u007fe'`}\u00adò}\u0005âÿ¡+r\fu-'o#\u0083üþ\nsî\u0086\u0002¬ó\u0018ÚËtC\u0019¦ÿ§¨e08\u000bí¬\u001e\\\u008cI\u009fr@ls\f<\u0093²×\u009c>Ëô3c²*\u000e\u001bet\u0007\u0010\u009e¨@\u009f$Ù\u000eËÄ\u0017\rÅ¶\u0013H\u001d¾\u0015ê\n_Í\u000bo#ø¢ tì\u001b\u000f^\u000e$Qê)ÓË¨5\u008dª\u008a\u0093â§\r\u001b\u008e\rÒ/´7Úi\\ðfÒ\u001dð\u00ad2oó\u0083\u0091þkPÓb´\u0082«wrÝçhÈ\u008e\u0088Á-c\u00ad÷\u0088\u0006ÚmÄa\u009dÈ\f£ëAØâß\u0004ÈÊä\u008dÚ\u0012ø|\u001e¿ëpÏi\r b±%\u009cÓ4oO\u001fÑ&\u000fa+è=.í8iAÅ\u0001U`U\u0099¿Èí¹©Ezç0³¼Ý¼\u001dO\u009eÅ\t\rONg\u0090c¬\u0004[NVîÍî\u0010\u000e6BWXÖPÒ\u0091g\u0017ûÐh±\u0093HØ\u009a\u0091\u007f\u0018eî¶:¨\u0080\u001b*\u0000 %\u008c\u0016\u0096 C!÷'\u007fëa\u0014«À\u008fã+Öf\u0089üó]¶\u0014Ò[MÀ7fL_\u0003ÇEt©U\u00904ég \u0080\u0011\u0098\u0004\u0004+\u001e\u001bið§2ÚÄ/\u0088\u0094\t@\u001d¯4Ù\\\u008eå>=\u0091Öb®\u009eÎ4êl\u008c>\u0084¼\u001f\u0097o=\u008bszr-\u009a\u008bt\u009cQ6\u0086±¦-î\u0085A\"B\u0095¡åÀ\u0086£Õñ\u0098ßQ\u0097Ù\u0002ÎY\u0016M\u0016¢Þ<×7%Ü\u0005\u0094zõ\u0002¹\u000b\u0017Þ3÷¼Kù\u0086¾\u0086¦\u0080 Â\u000f¿Ò\u001d\u008b\u0010dy\u0003/\u0012á\u009d=\u0083\u008f÷C\u0099\u009c>Prcä\u001b;v®\u001d>Óë ÈzöÎ\u0088¨Aaú7¸Õýk\fxú\u0080_\u009c$õPµ\u0016\r\u000f\u0084ö;@\u0019¢°Þ:ðÅÌ\u000bXNeÊ\"·\u0096º]Pv\u0013\u000fHhËÜ\u0006Ùho8ÅÚ\u0013¤ùÝ\u000b\u0016Ë\u001c\\\u008bÁÈib¤'$sû*\u0004k»\u0098¿Ù0U\u009eJBYtp\u0086\u0097 C\u0083]Õa~tüÄbL\nahÑ[Â7é²\u0015Ê\u0091\u0091þ«~(\u0007\u009d¸Ð";
@@ -8477,7 +8478,6 @@ public class Ep4 implements X4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var36;
             label65: {
                char[] var43 = var10001.toCharArray();
                int var10004 = var43.length;

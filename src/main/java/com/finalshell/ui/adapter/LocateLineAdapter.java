@@ -30,11 +30,11 @@ public class LocateLineAdapter extends AbstractAction {
    public void actionPerformed(ActionEvent var1) {
       GoToDialog var10001;
       Object var6 = 228823559657039892L;
-      super((TextEditorFrame)Ref.g(228823559657039892L, var6));
+      // [VF-super] super((TextEditorFrame)Ref.g(228823559657039892L, var6));
       GoToDialog var3 = var10001;
       TextEditorFrame.m();
       Object var8 = 228823559657039892L;
-      Object[] var10004 = Registry.packArgs(Ref.g(228823559657039892L, var8));
+      Object var10004 = Registry.packArgs(Ref.g(228823559657039892L, var8));
       long var10 = 189765966368858060L;
       Object var10005 = Ref.h2(189765966368858060L, var10);
 
@@ -70,7 +70,7 @@ public class LocateLineAdapter extends AbstractAction {
          }
 
          Object var16 = 228823559657039892L;
-         Object[] var10007 = Registry.packArgs(Ref.g(228823559657039892L, var16));
+         Object var10007 = Registry.packArgs(Ref.g(228823559657039892L, var16));
          long var18 = 189765966368858060L;
          Object var10008 = Ref.h2(189765966368858060L, var18);
 
@@ -84,7 +84,7 @@ public class LocateLineAdapter extends AbstractAction {
       } catch (BadLocationException var27) {
          UIManager.getLookAndFeel();
          Object var20 = 228823559657039892L;
-         Object[] var10002 = Registry.packArgs(Ref.g(228823559657039892L, var20));
+         Object var10002 = Registry.packArgs(Ref.g(228823559657039892L, var20));
          long var22 = 189765966368858060L;
          Object var10003 = Ref.h2(189765966368858060L, var22);
 

@@ -18,6 +18,7 @@ public class Kv2 extends HM {
 
    @Override
    public float h(float var1, float var2) {
+      float var6;
       String var10000 = UZ.h();
       float var4 = 0.0F;
       String var3 = var10000;
@@ -33,8 +34,6 @@ public class Kv2 extends HM {
 
             var5 = var6;
             if (var3 == null) {
-      float var6;
-      float var6;
                continue;
             }
          }
@@ -46,7 +45,6 @@ public class Kv2 extends HM {
       return var6;
    }
 }
-
 
 
 

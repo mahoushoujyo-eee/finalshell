@@ -14,11 +14,12 @@ public class TN3 implements BG3 {
    }
 
    public List N(String var1, String var2, int var3) {
+      int var7;
       ArrayList var5 = new ArrayList();
       boolean var10000 = z();
       char var6 = var1.charAt(var3);
       boolean var4 = var10000;
-      int var7 = 0;
+      var7 = 0;
 
       while (var7 < var2.length()) {
          if (var4 && var6 == var2.charAt(var7)) {
@@ -39,7 +40,7 @@ public class TN3 implements BG3 {
       int var10000 = (Q()) ? 1 : 0;
       int var5 = var2.length();
       Iterator var6 = this.N(var1, var2, var3).iterator();
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
 
       while (true) {
          if (var6.hasNext()) {
@@ -83,6 +84,7 @@ public class TN3 implements BG3 {
    }
 
    public double Q(String var1, String var2) {
+      double var7;
       boolean var10000 = z();
       double var4 = 0.0;
       boolean var3 = var10000;

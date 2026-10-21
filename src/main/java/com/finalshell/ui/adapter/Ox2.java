@@ -914,6 +914,7 @@ public class Ox2 extends Oe2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[6];
       int var11 = 0;
       String var10 = ",_\u009cë`hâOtÍ\n\u0087r\u001dÊø\\ÕÐ`\u001d\u001a(êoKû\u0087\u0006Ö\u0097\u0091\u0083*3ã-u¥·´\u0005\u0083N2áb¸r$£\u0000/\u0005/û?xñ\u0084\u0097úäIrPh]F×Ã\u001d«´³¦àêVYüá)µJ¯I\u0006<.Åí\u009c9\u00ad\u0014X\u0006PÅÀãÂ{Nä`ö\u001aÈ\u00ad`\u0093[9\u0011&\u0012X|Sà¤¤&Çaá,Ï\u0090\u0017PÊ.Ýû\u0088\u0092\u0095\t·ë\u00ad§²âÝõÑ¨,ûüYÈ`h\u0000N7ÆX";
@@ -929,7 +930,6 @@ public class Ox2 extends Oe2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

@@ -2167,6 +2167,7 @@ public final class A4_3 {
    }
 
    public int I(byte[] var1, int var2) {
+      int var8;
       int[] var3 = Nm4.g();
       A4_3 var10000 = this;
       if (var3 == null) {
@@ -2237,6 +2238,7 @@ public final class A4_3 {
    }
 
    public int D() {
+      int var10;
       int[] var1 = Nm4.g();
       A4_3 var10000 = this;
       if (var1 == null) {
@@ -2274,7 +2276,6 @@ public final class A4_3 {
       label80: {
          while (true) {
             if (var2 != 0) {
-      A4_3 var10;
                var10 = var4;
                var13 = 4;
                if (var1 != null || var1 != null) {
@@ -2322,7 +2323,6 @@ public final class A4_3 {
             this.s.L = var2;
             var10000 = this;
             if (var1 != null) {
-      A4_3 var10;
                break label80;
             }
 
@@ -2818,7 +2818,7 @@ public final class A4_3 {
          }
       }
 
-      return (boolean)var10000;
+      return var10000 != 0;
    }
 
    static {
@@ -2830,6 +2830,7 @@ public final class A4_3 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ -19418) & 65535;
       if (c[var2] == null) {
          char[] var3 = b[var2].toCharArray();
@@ -3616,7 +3617,7 @@ public final class A4_3 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -3653,6 +3654,9 @@ public final class A4_3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var13;
+      char[] var46;
+      long var8;
       String[] var21 = new String[12];
       int var19 = 0;
       String var18 = "ÔÍ0\u0017ß¯\u001a\u008a}óS\u009fKg\u0093A³ Ô\u001b\u0014Õ\u001c\u0010-Ûè\u009abmîQ<\u000b\u0013\u009bÏ²ñô!\u0018\u0093ûOÐ$sÐ÷R2,O\u0010ËË ¼½µ4¥Èvý\u0013¿è~ÒC}9Ðòû ¹ô<\u0097xËCO\u0016\u001c®){ü\"~;ñÅÊ]k½\u009a×\u0004\u009eh\u0004³\u0002\u0016åa{#F\u0085Í\u0095¡#}\u008dÝ!6fÏïÒî5\u001e\u000f\u007f\b¤ÎÙèÎ¶j=º)\tL5\u0013¥¯\u000bU\u00113\u001f\"ÿ\u0084j\u0014<¥\u0005Ý`¾\u0089\u0016z\u0017åLeÄMç\u0097^\u0002.ùÐ7\u0003\u0082]¸|©\r\u001aäÄ¡7ù\u008fkh.ËÅ/·F\u0099ñÊ.×Ú\u008c:¦k#È";
@@ -3745,12 +3749,12 @@ public final class A4_3 {
                   if ((var26 += var17) >= var20) {
                      b = var21;
                      c = new String[12];
-                     long var8 = 2241097446209005461L;
+                     var8 = 2241097446209005461L;
                      long[] var14 = new long[59];
                      int var11 = 0;
                      String var12 = "F9\u0010ÂG=\u0098\u0002Ë\u009d<\u00827èÐlB}\u008f\u0085®¿+mÎ)¨c%|\u008e*¹uz}¡#kë\u0090%\rNzk¯rJ\u0003ÿ_\u0011td×yõ\u009c\u0091$ì\u0010\u0093eÕ¯\u0003\u0092òMO×¤Gfo\u009cÉY³C¬TÇ\u000fÁbpÒÈ\u0000\u0089\u008aÞ^\u0081Õ\u0013¥\u0080(S&Çk~\u0010Po4³Y\rå\u000e*\u0084X\u0087è©n®ÇH©ûfWª\nµlN\u008c\u00812Ü¤\u0013³Ð\u0086\u0091\u0007´]Ð\u000bè\u001e¯2?&\u0006ÿÄ\fê7Ê;Ë÷Xô^.²©½=Ù\\I¸ùÒ¤©ÿçÙ÷×jÉëhåKaÓèXH\u009c\u001b\u0018ëþáæù&i/\u0015\u009f\u0003 \u001e±qÖ\bdô\u0015h\u009behèá\u009d\u0088´\u009cÂÏ¸\u0080Xvm\u0011}ì\u0012é\u008b{no\u0013\u0017r/Óã\u000f\u0080MçA\u0089Ä={X\b=\u00178Ìî\u0000\u001b±\u000b¡4Ï¼v;\u0099L\u009b\u0096ß<g\r8\u0098\u0005~\u00142\ns.ÿPµÓÈ\u001eê]ò`¹Õ=\u0092\u001aà±\u0017ÏÖÅ\"K\u00adP\u0019w¶\u0081h|WM¨éfOÙ\u0088G\u0011îç*\u0086\u0006é\u0001þþ\u0085Ô\u0011 \u0082zcH£â¿|(\u0014P\u000b¤\u000eôç®ú\u0083\u0019\u0098\u0019ÍOó¨ X\u008aFvÈ\u0014\u009eò´i1\u0086\u008e'W²i\u001c_°C¨á)\u009adh\u0011õ|÷\u001fÍå\u008b\u009cÁ\f\u0081\u0092\r±øëó)Ú \u0011à¸\"ß\u009fYÃ\nÒ\u00136\u0085I8Ê\u001aÕxÂþ+V\u008e\u008e±\u0086Á\r°\u008d";
-                     int var13 = "F9\u0010ÂG=\u0098\u0002Ë\u009d<\u00827èÐlB}\u008f\u0085®¿+mÎ)¨c%|\u008e*¹uz}¡#kë\u0090%\rNzk¯rJ\u0003ÿ_\u0011td×yõ\u009c\u0091$ì\u0010\u0093eÕ¯\u0003\u0092òMO×¤Gfo\u009cÉY³C¬TÇ\u000fÁbpÒÈ\u0000\u0089\u008aÞ^\u0081Õ\u0013¥\u0080(S&Çk~\u0010Po4³Y\rå\u000e*\u0084X\u0087è©n®ÇH©ûfWª\nµlN\u008c\u00812Ü¤\u0013³Ð\u0086\u0091\u0007´]Ð\u000bè\u001e¯2?&\u0006ÿÄ\fê7Ê;Ë÷Xô^.²©½=Ù\\I¸ùÒ¤©ÿçÙ÷×jÉëhåKaÓèXH\u009c\u001b\u0018ëþáæù&i/\u0015\u009f\u0003 \u001e±qÖ\bdô\u0015h\u009behèá\u009d\u0088´\u009cÂÏ¸\u0080Xvm\u0011}ì\u0012é\u008b{no\u0013\u0017r/Óã\u000f\u0080MçA\u0089Ä={X\b=\u00178Ìî\u0000\u001b±\u000b¡4Ï¼v;\u0099L\u009b\u0096ß<g\r8\u0098\u0005~\u00142\ns.ÿPµÓÈ\u001eê]ò`¹Õ=\u0092\u001aà±\u0017ÏÖÅ\"K\u00adP\u0019w¶\u0081h|WM¨éfOÙ\u0088G\u0011îç*\u0086\u0006é\u0001þþ\u0085Ô\u0011 \u0082zcH£â¿|(\u0014P\u000b¤\u000eôç®ú\u0083\u0019\u0098\u0019ÍOó¨ X\u008aFvÈ\u0014\u009eò´i1\u0086\u008e'W²i\u001c_°C¨á)\u009adh\u0011õ|÷\u001fÍå\u008b\u009cÁ\f\u0081\u0092\r±øëó)Ú \u0011à¸\"ß\u009fYÃ\nÒ\u00136\u0085I8Ê\u001aÕxÂþ+V\u008e\u008e±\u0086Á\r°\u008d"
-                        .length();
+                     var13 = "F9\u0010ÂG=\u0098\u0002Ë\u009d<\u00827èÐlB}\u008f\u0085®¿+mÎ)¨c%|\u008e*¹uz}¡#kë\u0090%\rNzk¯rJ\u0003ÿ_\u0011td×yõ\u009c\u0091$ì\u0010\u0093eÕ¯\u0003\u0092òMO×¤Gfo\u009cÉY³C¬TÇ\u000fÁbpÒÈ\u0000\u0089\u008aÞ^\u0081Õ\u0013¥\u0080(S&Çk~\u0010Po4³Y\rå\u000e*\u0084X\u0087è©n®ÇH©ûfWª\nµlN\u008c\u00812Ü¤\u0013³Ð\u0086\u0091\u0007´]Ð\u000bè\u001e¯2?&\u0006ÿÄ\fê7Ê;Ë÷Xô^.²©½=Ù\\I¸ùÒ¤©ÿçÙ÷×jÉëhåKaÓèXH\u009c\u001b\u0018ëþáæù&i/\u0015\u009f\u0003 \u001e±qÖ\bdô\u0015h\u009behèá\u009d\u0088´\u009cÂÏ¸\u0080Xvm\u0011}ì\u0012é\u008b{no\u0013\u0017r/Óã\u000f\u0080MçA\u0089Ä={X\b=\u00178Ìî\u0000\u001b±\u000b¡4Ï¼v;\u0099L\u009b\u0096ß<g\r8\u0098\u0005~\u00142\ns.ÿPµÓÈ\u001eê]ò`¹Õ=\u0092\u001aà±\u0017ÏÖÅ\"K\u00adP\u0019w¶\u0081h|WM¨éfOÙ\u0088G\u0011îç*\u0086\u0006é\u0001þþ\u0085Ô\u0011 \u0082zcH£â¿|(\u0014P\u000b¤\u000eôç®ú\u0083\u0019\u0098\u0019ÍOó¨ X\u008aFvÈ\u0014\u009eò´i1\u0086\u008e'W²i\u001c_°C¨á)\u009adh\u0011õ|÷\u001fÍå\u008b\u009cÁ\f\u0081\u0092\r±øëó)Ú \u0011à¸\"ß\u009fYÃ\nÒ\u00136\u0085I8Ê\u001aÕxÂþ+V\u008e\u008e±\u0086Á\r°\u008d";
+                        // [VF] .length();
                      byte var10 = 0;
 
                      label62:
@@ -3851,7 +3855,7 @@ public final class A4_3 {
                                  }
 
                                  var12 = "\u0007b¥\u0096 ºãm^½Ë\u0099&S\\\u0081";
-                                 var13 = "\u0007b¥\u0096 ºãm^½Ë\u0099&S\\\u0081".length();
+                                 var13 = ("\u0007b¥\u0096 ºãm^½Ë\u0099&S\\\u0081".length()) != 0;
                                  var10 = 0;
                            }
 
@@ -3895,7 +3899,6 @@ public final class A4_3 {
       }
    }
 }
-
 
 
 

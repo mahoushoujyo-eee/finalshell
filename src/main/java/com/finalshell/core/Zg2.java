@@ -2518,6 +2518,7 @@ public class Zg2 extends ZS implements X4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[21];
       int var11 = 0;
       String var10 = "}£6IÚÏÈ\u0090\u0004CÌø\u001fÿcfQÐÌ\u0089ð,OÉyóÍÉ®jØ\u008eÂ\u0000¢C\u008a¿Èª\u009dµO1\u000eÌ\tÊ,\u009a\\\u0082-\u0005«â\th²\f¯ýÐí\u000bñ2ê\u0084]§\u0095\r.W\u0007q¸â\u000eJ\u0019âfg\"\u0004}C\u008aÀ\u001f\u0000\u0000\u0099=/AvAÓy6¿\f\u00156µ\u0095»q®ÿ/¼;@þU[J\u0097Î\fÓDãµ`P\u009fcî=\u00917\u000fÂm\u001adðCñ\u001f\u0083\u0015á!Òé\u007f\tr0l^jÕ(v#%A\u0016\u0093ñ:b&\u0085\u00190\u009e\\ð\u009báºk.&\u008bË\u008dz\u0095Â \u0098\u0001æFýñ@\u0011Zñ\u0094%K\u001fÒÐ\u0012F#\u0001¹ \u008aNrÙ±òa'gªã©\u007f\u0011b0\u008c\u0013d\u0004\u00ad¹J\u0018\u001bÐ¼\u0017OFRû\u0002#!\u00adù5\u008dú~\u008erø%\u0089Hp§q+\u000bõ£|ï×1ã0¤\u00adÑ\u0002@\u001b\u0002ôQ\u0011Q÷\u0091Ízå.u\u0018.µ\u0091àé7r\u0098\u001f\u009a\u000eÊüEy;Fz\u0099\u0003£ª\u0096âÅ\u000fµ\"o\u0095Vñ}é6`Bì´\u001a\u000eòt\r\u0083b©\u009d\u0093æ|\u009eóçí";
@@ -2533,7 +2534,6 @@ public class Zg2 extends ZS implements X4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

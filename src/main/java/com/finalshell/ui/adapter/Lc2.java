@@ -59,6 +59,9 @@ public class Lc2 extends DefaultTableCellRenderer {
 
    @Override
    public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
+      Float var100;
+      String var91;
+      Long var96;
       Object var18 = 373423938147119446L;
       CU3 var8 = (CU3)Ref.g(373423938147119446L, var18);
       Object var9 = null;
@@ -93,9 +96,9 @@ public class Lc2 extends DefaultTableCellRenderer {
          throw var80.getTargetException();
       }
 
-      Object[] var10005 = Registry.packArgs(false);
+      Object var10005 = Registry.packArgs(false);
       long var25 = 300077136152019384L;
-      Object[] var24 = var10005;
+      Object var24 = var10005;
       Ref.h(300077136152019384L, var24, var25);
 
       try {
@@ -104,9 +107,9 @@ public class Lc2 extends DefaultTableCellRenderer {
          throw var79.getTargetException();
       }
 
-      Object[] var10006 = Registry.packArgs(var15);
+      Object var10006 = Registry.packArgs(var15);
       long var27 = 246302729129552507L;
-      Object[] var26 = var10006;
+      Object var26 = var10006;
       Ref.h(246302729129552507L, var26, var27);
 
       try {
@@ -138,7 +141,7 @@ public class Lc2 extends DefaultTableCellRenderer {
          var15 = (LI3_2)var10005;
          var10006 = Registry.emptyArgs();
          long var29 = 382054480216091309L;
-         Object[] var28 = var10006;
+         Object var28 = var10006;
          var10006 = Ref.h(382054480216091309L, var28, var29);
 
          try {
@@ -155,9 +158,9 @@ public class Lc2 extends DefaultTableCellRenderer {
             if (var8 == null) {
                if (var14 == 0) {
                   new StringBuilder();
-                  Object[] var10008 = Registry.emptyArgs();
+                  Object var10008 = Registry.emptyArgs();
                   long var31 = 225195147661966806L;
-                  Object[] var30 = var10008;
+                  Object var30 = var10008;
                   var10008 = Ref.h(225195147661966806L, var30, var31);
 
                   try {
@@ -201,9 +204,9 @@ public class Lc2 extends DefaultTableCellRenderer {
             if (var8 == null) {
                if (var88 == 1) {
                   new StringBuilder();
-                  Object[] var98 = Registry.emptyArgs();
+                  Object var98 = Registry.emptyArgs();
                   long var37 = 218205101142805647L;
-                  Object[] var36 = var98;
+                  Object var36 = var98;
                   var98 = Ref.h(218205101142805647L, var36, var37);
 
                   try {
@@ -262,7 +265,7 @@ public class Lc2 extends DefaultTableCellRenderer {
                      if (var16 != null) {
                         String var102 = (String)(Registry.emptyArgs());
                         long var45 = 505915899939017355L;
-                        Object[] var44 = var102;
+                        Object var44 = var102;
                         var102 = Ref.h(505915899939017355L, var44, var45);
 
                         try {
@@ -280,7 +283,7 @@ public class Lc2 extends DefaultTableCellRenderer {
                   if (var8 == null) {
                      String var112 = (String)(Registry.emptyArgs());
                      long var47 = 505915899939017355L;
-                     Object[] var46 = var112;
+                     Object var46 = var112;
                      var112 = Ref.h(505915899939017355L, var46, var47);
 
                      try {
@@ -296,7 +299,7 @@ public class Lc2 extends DefaultTableCellRenderer {
                      new StringBuilder();
                      String var10010 = (String)(Registry.emptyArgs());
                      long var49 = 505915899939017355L;
-                     Object[] var48 = var10010;
+                     Object var48 = var10010;
                      var10010 = Ref.h(505915899939017355L, var48, var49);
 
                      try {
@@ -333,7 +336,6 @@ public class Lc2 extends DefaultTableCellRenderer {
 
                if (var8 == null) {
                   if (var94 == null) {
-      U82 var94;
       U82 var94;
                      break label211;
                   }
@@ -689,7 +691,6 @@ public class Lc2 extends DefaultTableCellRenderer {
       }
    }
 }
-
 
 
 

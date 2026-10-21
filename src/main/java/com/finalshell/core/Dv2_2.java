@@ -1007,6 +1007,7 @@ public class Dv2_2 implements HU {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[8];
       int var3 = 0;
       String var2 = "B\u001f\u0086J5$ãÜþ¸'\u0080¢lVFËtïT¬Ä×IÃWÇàj]\u009e¦¸\u0082ì!\u0012q\u001d\u0005\u0096K\u008bÒÐ\u0014\u0086Âj\u0018$ÒÊ\u0010¢GõïÐ\u001bq\u001ct#n,'\u009b`½¥RÙ\u000fccO\u0094~Ô³\u0098½\u0012\u000bÔ»Ë9;ö^ t\u001e\u001c\u0082P]aý×Îu\u008cñ\u0016r\u0003ô ÷Õ°ðí[\u001clíkÖ\u0012\u0080âð\u0014\u009a\u0011\u0004G\nø\u009d";
@@ -1023,7 +1024,6 @@ public class Dv2_2 implements HU {
          byte var10002 = -1;
 
          while (true) {
-      String var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

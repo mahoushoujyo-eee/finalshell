@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.io.IOException;
@@ -23,11 +23,11 @@ public class Wa2 extends TransferHandler {
    public DataFlavor[] k;
    public DefaultMutableTreeNode[] y;
    public DefaultMutableTreeNode P;
-   public Connection5 v;
+   public ImportExportPanel v;
    public static String[] a;
    public static String[] b;
 
-   public Wa2(Connection5 var1) {
+   public Wa2(ImportExportPanel var1) {
       DataFlavor[] var10001 = new DataFlavor[1];
       long var5 = 151856102573410630L;
       DataFlavor[] var4 = var10001;
@@ -78,7 +78,7 @@ public class Wa2 extends TransferHandler {
          Object var12 = 529627744240700508L;
          DefaultMutableTreeNode var10003 = (DefaultMutableTreeNode)(Registry.packArgs(Ref.g(529627744240700508L, var12)));
          long var15 = 372481440858701339L;
-         Object[] var14 = var10003;
+         Object var14 = var10003;
          var10003 = Ref.h(372481440858701339L, var14, var15);
 
          try {
@@ -126,7 +126,7 @@ public class Wa2 extends TransferHandler {
                   if (var10005 > var10006) {
                      DefaultMutableTreeNode var10007 = (DefaultMutableTreeNode)(Registry.packArgs(var9));
                      long var23 = 372481440858701339L;
-                     Object[] var22 = var10007;
+                     Object var22 = var10007;
                      var10007 = Ref.h(372481440858701339L, var22, var23);
 
                      try {
@@ -143,7 +143,7 @@ public class Wa2 extends TransferHandler {
 
                   DefaultMutableTreeNode var37 = (DefaultMutableTreeNode)(Registry.packArgs(var9));
                   long var25 = 372481440858701339L;
-                  Object[] var24 = var37;
+                  Object var24 = var37;
                   var37 = Ref.h(372481440858701339L, var24, var25);
 
                   try {

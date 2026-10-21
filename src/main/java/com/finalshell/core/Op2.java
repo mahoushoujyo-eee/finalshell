@@ -696,9 +696,9 @@ public class Op2 implements DS3_2 {
       Registry.emptyArgs();
       long var6 = 270389152141252877L;
       Object var10002 = Ref.h2(270389152141252877L, var6);
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var9 = 306266403902896148L;
-      Object[] var8 = var10003;
+      Object var8 = var10003;
       Ref.h(306266403902896148L, var8, var9);
 
       try {
@@ -710,7 +710,7 @@ public class Op2 implements DS3_2 {
       Object var2 = var10002;
       var10003 = Registry.emptyArgs();
       long var11 = 256291570319778198L;
-      Object[] var10 = var10003;
+      Object var10 = var10003;
       var10003 = Ref.h(256291570319778198L, var10, var11);
 
       try {
@@ -1705,6 +1705,7 @@ public class Op2 implements DS3_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[15];
       int var5 = 0;
       String var4 = "\u0098t\u0016Ì\u0005êY\u009f/_\u0082\u008e\u0018\u001d®Ff\u008c¥5qz|D3\b\u0011\u0002¤u\u0004\u0016*\u009e}PYT¼ô\u0093R³\\÷PXë\u0099nHy\"jZ\u0099\u0000iE$\u0018\u009b8þZ\u0017\u0093\u008bpï¼Ïøx\u0085ý\u0095\u009fL\u0080gþ'\u008bÿ\u0018¸ê\u0015\u0007\t5ÆX\u0014\u0007Ñ\u0001»ÅàRµSµ\n/a¥7\u0005\u001d¡\u009a\u0082& 2WÐ\u001b/ªì\\~\u0003¦\u00ad\u0012¬ùm\u000e\u0096ª¡\tä¦¾øyl¬W|4¹0;\u0098wa3!\u0019\u0011W\u001e\u00066\fÊã¨¦[\u000eÝ5\u0082Øëd\u008dÃ\u0016£¡¬\u000f'=\u0088\u0000ý\u0015 Á\u00017\u0014\u0013 ùXh\u0018ô§ws½Ö\u0095ð0\u001f\u001foeÅ¡³µ\u009ao[áÁ\u008c1\u0018\u0010þ\u0086-\u0001\u00197ü§Dª@C\u009a\u0096\u0097ô\u0086b¢\u0087RI³ Êé=\u009a\u0089ä\u0003\"ðò\u0002vsù\u0003ÕþZ\u0012»m'7\u0001q7ê![Tô\u0093 \f|HøH\u001dí:TúÖ©Ñ\u008a\u008d5-Rn}fÁ\u0005Lq\u009d-s\nöUH\u0018ÊÜ£¾\u0083õj8S\u001d\f#\u008cøp3¥¼Ä£EÛó\u0082\u0018\u009e3DrEµDc\u0011\u008dØÈ\u0010Â/\u00adJN-\u0084[i\u000fÔ\u0018ôóÜ\u0094`«\u0015ñ%8\u008c\u0099(\u009c²H\u000f\u0005è\u009dW÷e÷";
@@ -1720,7 +1721,6 @@ public class Op2 implements DS3_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

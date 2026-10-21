@@ -990,6 +990,7 @@ public class RG3 extends Rp4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[10];
       int var3 = 0;
       String var2 = "\u0018sÚ\u0087TÞ\u000eÌ\u0004#Ò\u0006\f\u001d\u001bÄe©\u0016¶#¼\u0091P\u0080\u0004mÿ9%3°¾RÞÖÓô©oZ\u0006ÆçB\u009bNC\bÊH\u0085'_×Í&\u0004=¥î\u008a\u0004À±åß\bw\u00152\u008c©¢\u0013\u008a";
@@ -1005,7 +1006,6 @@ public class RG3 extends Rp4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

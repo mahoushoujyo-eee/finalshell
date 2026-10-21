@@ -5,16 +5,16 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.model.Tf4;
 import com.finalshell.ui.panel.AA;
-import com.finalshell.ui.panel.RouteTracePanel2;
+import com.finalshell.ui.panel.ConnectionContextMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class UY implements ActionListener {
-   public final RouteTracePanel2 b;
+   public final ConnectionContextMenu b;
 
-   public UY(RouteTracePanel2 var1) {
+   public UY(ConnectionContextMenu var1) {
       this.b = var1;
    }
 

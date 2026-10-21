@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.DataInputStream;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -23,7 +23,7 @@ public class D4 {
    }
 
    public String N(String var1) {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       String var3 = var1;
       String[] var2 = var10000;
 
@@ -60,7 +60,7 @@ public class D4 {
    }
 
    public static Key B() throws Exception {
-      String[] var0 = PingMessageR.N();
+      String[] var0 = PingMessageReceiver.N();
 
       try {
          if (var0 == null) {
@@ -174,7 +174,7 @@ public class D4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static String t(byte[] var0) {
-      String[] var1 = PingMessageR.N();
+      String[] var1 = PingMessageReceiver.N();
       if (var1 != null) {
          if (var0.length == a(29179, 946986895819624378L)) {
             StringBuffer var2 = new StringBuffer();
@@ -210,7 +210,7 @@ public class D4 {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static String X(byte[] var0) {
       String var2 = null;
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       char[] var10001 = new char[a(1206, 1997038258308496115L)];
       var10001[0] = (char)a(22294, 6492404357910849860L);
       var10001[1] = (char)a(16451, 8090282190596636179L);
@@ -1073,6 +1073,7 @@ public class D4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[9];
       int var11 = 0;
       String var10 = "\u007f%g\u0016\u009a\u0003\u0018¾ç\u0007Ý\u009e\u009f<×õÈ\u0003\u0080\u0014ô\b[ÚO´\u0084ñÂ(\u0004~Ìó\u000e\u0003§{`";
@@ -1087,7 +1088,6 @@ public class D4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

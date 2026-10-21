@@ -62,6 +62,7 @@ public class P2 {
    }
 
    public X2 D(String var1, X2 var2) {
+      X2 var8;
       int[] var10000 = X2.w();
       Iterator var4 = var2.G().iterator();
       int[] var3 = var10000;
@@ -72,8 +73,6 @@ public class P2 {
             X2 var7 = var5;
             if (var3 != null) {
                if (Cz2.Z(var5.v()).equals(var1)) {
-      X2 var8;
-      X2 var8;
                   return var5;
                }
 
@@ -111,6 +110,7 @@ public class P2 {
    }
 
    public List W(String var1, X2 var2, On2 var3, List var4) {
+      List var9;
       int[] var5 = X2.w();
       X2 var10000 = var2;
       if (var5 != null) {
@@ -196,13 +196,15 @@ public class P2 {
    }
 
    public void I(String var1, ImageIcon var2) {
+      X2 var10;
+      int var8;
       String[] var4 = Kp2.K(var1);
       int[] var10000 = X2.w();
       X2 var5 = this.u();
       String[] var6 = var4;
       int var7 = var4.length;
       int[] var3 = var10000;
-      int var8 = 0;
+      var8 = 0;
 
       while (true) {
          if (var8 < var7) {
@@ -269,7 +271,6 @@ public class P2 {
       N = new com.finalshell.ui.model.W();
    }
 }
-
 
 
 

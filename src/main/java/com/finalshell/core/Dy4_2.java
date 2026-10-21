@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import com.finalshell.ui.panel.OG3;
 import java.awt.Component;
 import java.awt.Container;
@@ -13,7 +13,7 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Dy4_2 implements LayoutManager {
-   public Connection5 P;
+   public ImportExportPanel P;
    public com.finalshell.ui.panel.Tv2 n;
    public static long[] a;
    public static Integer[] b;
@@ -33,9 +33,9 @@ public class Dy4_2 implements LayoutManager {
       int[] var2 = var10000;
       if (var2 != null) {
          Object var4 = 628501091079280263L;
-         if ((Connection5)Ref.g(628501091079280263L, var4) != null) {
+         if ((ImportExportPanel)Ref.g(628501091079280263L, var4) != null) {
             Object var6 = 628501091079280263L;
-            var3 = ((Connection5)Ref.g(628501091079280263L, var6)).getPreferredSize();
+            var3 = ((ImportExportPanel)Ref.g(628501091079280263L, var6)).getPreferredSize();
          }
 
          var3 = new Dimension(a(27817, 2722024917501821351L), a(25644, 2484060400015690017L));
@@ -56,12 +56,12 @@ public class Dy4_2 implements LayoutManager {
 
       for (Component var7 : var3) {
          label33: {
-            boolean var16 = var7.getClass().equals(Connection5.class);
+            boolean var16 = var7.getClass().equals(ImportExportPanel.class);
             if (var2 != null) {
                if (var16) {
-                  Connection5 var10001 = (Connection5)var7;
+                  ImportExportPanel var10001 = (ImportExportPanel)var7;
                   long var9 = 628501091079280263L;
-                  Connection5 var8 = var10001;
+                  ImportExportPanel var8 = var10001;
                   Ref.s(628501091079280263L, var8, var9);
                   if (var2 != null) {
                      break label33;
@@ -81,7 +81,7 @@ public class Dy4_2 implements LayoutManager {
 
          label26: {
             Object var12 = 628501091079280263L;
-            Object var18 = (Connection5)Ref.g(628501091079280263L, var12);
+            Object var18 = (ImportExportPanel)Ref.g(628501091079280263L, var12);
             if (var2 != null) {
                if (var18 == null) {
                   break label26;
@@ -89,10 +89,10 @@ public class Dy4_2 implements LayoutManager {
 
                var18 = this;
                Object var14 = 628501091079280263L;
-               Connection5 var10002 = (Connection5)Ref.g(628501091079280263L, var14);
+               ImportExportPanel var10002 = (ImportExportPanel)Ref.g(628501091079280263L, var14);
             }
 
-            ((Connection5)var18).setBounds(0, 0, var1.getWidth(), var1.getHeight());
+            ((ImportExportPanel)var18).setBounds(0, 0, var1.getWidth(), var1.getHeight());
          }
 
          if (var2 == null) {

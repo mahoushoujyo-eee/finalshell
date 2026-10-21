@@ -63,8 +63,9 @@ public class Us2 extends S implements Ig4 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void q(boolean var1) {
+      Object var10000;
       String[] var2 = CB3.C$arrString();
-      Object var10000 = this.x;
+      var10000 = this.x;
       if (var2 != null) {
          var10000 = this.x != null ? this.x : F;
       }
@@ -100,7 +101,8 @@ public class Us2 extends S implements Ig4 {
    }
 
    public void T(Comparator var1) {
-      String[] var10000 = CB3.C$arrString();
+      String[] var10000;
+      var10000 = CB3.C$arrString();
       this.M = var1;
       R72 var3 = this.W();
       String[] var2 = var10000;
@@ -126,8 +128,9 @@ public class Us2 extends S implements Ig4 {
    }
 
    public void S(On2 var1) {
+      String[] var10000;
       this.u = var1;
-      String[] var10000 = CB3.C$arrString();
+      var10000 = CB3.C$arrString();
       R72 var3 = this.W();
       String[] var2 = var10000;
       R72 var4 = var3;
@@ -157,12 +160,13 @@ public class Us2 extends S implements Ig4 {
 
    @Override
    public void setModel(TreeModel var1) {
+      boolean var10000;
       label41: {
          String[] var2;
          Object var7;
          label42: {
             var2 = CB3.C$arrString();
-            boolean var10000 = this.getModel() instanceof com.finalshell.core.Zn2;
+            var10000 = this.getModel() instanceof com.finalshell.core.Zn2;
             if (var2 != null) {
                if (var10000) {
                   this.D$zn_2().B(this);
@@ -199,8 +203,9 @@ public class Us2 extends S implements Ig4 {
 
    @Override
    public void setCellEditor(TreeCellEditor var1) {
+      TreeCellEditor var10000;
       String[] var2 = CB3.C$arrString();
-      TreeCellEditor var10000 = this.cellEditor;
+      var10000 = this.cellEditor;
       if (var2 != null) {
          if (this.cellEditor != null) {
             this.cellEditor.removeCellEditorListener(this.Q);
@@ -227,7 +232,8 @@ public class Us2 extends S implements Ig4 {
    }
 
    public boolean H$boolean() {
-      String[] var10000 = CB3.C$arrString();
+      String[] var10000;
+      var10000 = CB3.C$arrString();
       TreeModel var2 = this.getModel();
       String[] var1 = var10000;
       TreeModel var3 = var2;
@@ -271,12 +277,13 @@ public class Us2 extends S implements Ig4 {
    }
 
    public boolean c(CB3 var1) {
+      CB3 var10000;
       String[] var2;
       boolean var4;
       label26: {
          label25: {
             var2 = CB3.C$arrString();
-            CB3 var10000 = var1;
+            var10000 = var1;
             if (var2 != null) {
                if (var1 == null) {
                   break label25;
@@ -355,7 +362,8 @@ public class Us2 extends S implements Ig4 {
    }
 
    public void u() {
-      String[] var10000 = CB3.C$arrString();
+      String[] var10000;
+      var10000 = CB3.C$arrString();
       TreePath[] var2 = this.getSelectionPaths();
       String[] var1 = var10000;
       TreePath[] var8 = var2;
@@ -504,7 +512,7 @@ public class Us2 extends S implements Ig4 {
    }
 
    public void r(CB3 var1, TreePath var2, boolean var3) {
-      Object var10000;
+      boolean var10000;
       String[] var4;
       label41: {
          Us2 var5;
@@ -586,7 +594,8 @@ public class Us2 extends S implements Ig4 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void P(CB3 var1) {
-      String[] var10000 = CB3.C$arrString();
+      String[] var10000;
+      var10000 = CB3.C$arrString();
       Object var4 = this.c;
       synchronized (this.c){} // $VF: monitorenter 
       String[] var2 = var10000;
@@ -621,7 +630,8 @@ public class Us2 extends S implements Ig4 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void b(CB3 var1, List var2) {
-      String[] var10000 = CB3.C$arrString();
+      String[] var10000;
+      var10000 = CB3.C$arrString();
       Object var5 = this.c;
       synchronized (this.c){} // $VF: monitorenter 
       String[] var3 = var10000;
@@ -656,7 +666,8 @@ public class Us2 extends S implements Ig4 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void V(CB3 var1, Throwable var2) {
-      String[] var10000 = CB3.C$arrString();
+      String[] var10000;
+      var10000 = CB3.C$arrString();
       Object var5 = this.c;
       synchronized (this.c){} // $VF: monitorenter 
       String[] var3 = var10000;
@@ -707,8 +718,9 @@ public class Us2 extends S implements Ig4 {
    }
 
    public void L(List var1, boolean var2, boolean var3, S5 var4) {
+      String[] var10000;
       ArrayList var6 = AL_2.J((Collection)var1);
-      String[] var10000 = CB3.C$arrString();
+      var10000 = CB3.C$arrString();
       int var7 = 0;
       String[] var5 = var10000;
 
@@ -768,11 +780,12 @@ public class Us2 extends S implements Ig4 {
    }
 
    public void k(CB3 var1, List var2, boolean var3, boolean var4, S5 var5) {
+      Us2 var10000;
       String[] var6 = CB3.C$arrString();
       if (var6 != null) {
          if (var2.size() > 0) {
             if (var1.g$boolean()) {
-               Us2 var10000 = this;
+               var10000 = this;
                Object var10001 = var1;
                if (var6 != null) {
                   this.P(var1);
@@ -838,8 +851,9 @@ public class Us2 extends S implements Ig4 {
    }
 
    public void r(CB3 var1, boolean var2, boolean var3) {
+      boolean var10000;
       String[] var4 = CB3.C$arrString();
-      boolean var10000 = var3;
+      var10000 = var3;
       if (var4 != null) {
          if (var3) {
             this.s(var1);
@@ -855,8 +869,9 @@ public class Us2 extends S implements Ig4 {
 
    @Override
    public final void H$void() {
+      Us2 var10000;
       String[] var1 = CB3.C$arrString();
-      Us2 var10000 = this;
+      var10000 = this;
       if (var1 != null) {
          if (this.w$boolean()) {
             int var2 = this.getRowCount() - 1;
@@ -892,8 +907,9 @@ public class Us2 extends S implements Ig4 {
    }
 
    public void z(TreePath var1) {
+      Us2 var10000;
       String[] var2 = CB3.C$arrString();
-      Us2 var10000 = this;
+      var10000 = this;
       TreePath var10001 = var1;
       if (var2 != null) {
          if (this.hasBeenExpanded(var1)) {
@@ -911,7 +927,8 @@ public class Us2 extends S implements Ig4 {
    }
 
    public void t(TreePath var1) {
-      String[] var10000 = CB3.C$arrString();
+      String[] var10000;
+      var10000 = CB3.C$arrString();
       this.expandPath(var1);
       String[] var2 = var10000;
       CB3 var3 = (CB3)this.b(var1);

@@ -1313,6 +1313,7 @@ public class Bj4 extends BN3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var46;
       String[] var21 = new String[15];
       int var19 = 0;
       String var18 = "®\u0096\u001a:¶>_K\tñÂ'^W¬Tí¢]íÐù\u0015[oZ@Î\u008a´b<\u0095ÿÓ;~ß\u0001\u0089§\r·t\u0082Q&\u009c¤iåC¬\f\u0012\u00065\u0084ÞOeE\rVq¾ñ¡\u0088Tëû\u0013o\u0006j%\f\u008fùÙß\u0092\u0086@K«§/sM¸\u0017°\u008e´\u0090÷Öúw\u009b+êÝv\u001d,Ï\u0097\u0091/\u0080À\u0005¨,g¥\u001f(&%L\u009c(|\u0002\n»\u0098¤\u0001þ±3À¥\\àº\u000bÓ\u0088\u0082ÙJ?ÖÅÓfa\f\u0092\u0094³L\u0018\u0089g%õ\u008bÆY8\u0082zBÔëT'\rLw7I\u008a\u008b\u0010\u0010Æ\u0006u\u0004k\u0019Õ\b\u001cãïn\u0095\u0010\u0000')<bH¤üí\u00161 ¾çÎúj8ó\u007fV\u000fs\u009a*\\!F\u0015e'.\u0089ö\u009b\u0007\u000b\u0081¥4\fHó\u008e îÑ\u0012Ò·#\u007fè\r\u0085B©N\u0086®n\u00adåU\u0005Ñä/üu/\u0090Åe\u008dÃP\u001bkh\u0015%B\r5³=Õiàª¤\u008a#Èi!\u0014ÞV@8À\u001d\u001c\u001b»è\u000f5\u0001\u000f]ó0ÝÈá\u009e\u0084\f'\u0018é;\u0004\u009dT(xÍ\u0015½\u0006MyÑð\u0084²";
@@ -1328,7 +1329,6 @@ public class Bj4 extends BN3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var46;
             label83: {
                char[] var54 = var10001.toCharArray();
                int var10004 = var54.length;

@@ -1601,6 +1601,7 @@ public final class Xk2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[28];
       int var5 = 0;
       String var4 = "5ÈÊ\u0014{QZÚ¬Í+G®+\u0017f\u008c£\u0087:Q\u0080\u008aR¬\u008d\u0005è\u0083.yóý\u009e@Ü>/\nË\u0092o\u00ad\u0096\u00816{\u0097-\u0014\u009d¼ÄS8\u009bÛ\u0003ã\u008eã¿Ù4\u0083Ô\u0007ÏG³\f~3\u000fM.\u0095T_\u001eõ\u0010\u0095\b¸\u00ad\u0001VCa\u0084k\u00109¼1pD.Qf\u009f~cù\u0082âDK\fÍñy\u0015à\u009e\u008d>%Ùw\u0010\nÇ¯x\ntujå\u001cþ\u0015#n\u000bÛ/Ú\"û\u0006\u0082\u0007À¹;\u0014z¦\u001a9\u0091\u0095\u0014\u0011Êk\u001dmÖí¹\u0019®Olù|éäÃÜx\u0013\u000eæ\u009eÊ4;¦¾wb@Ä¡~å\nZ\u007f\t\u009av\u001d\tX\r¸\u0017MËÆo\u0096L\u0015)àØÛ\u008b\"RwCØºû¨p#º\b\n¢Á´\\O\u0085\u0088\u0018\nn-À\u0087ËÅ\u0089C¿I\u0013þ\u008b\u0093«óE$JqÐ]û\u001dö\u0012²Ot:»·\u008bb·ï;Ë`ÑÍ\"âmùá\\èãày¼Þ\b\u0087\u0015pAm\u0083A7\r ¼\u0012e(6ÚÁ\u0005£\u0090i^\u0019\u0086\u008cÜ\u001dºÌÚ\u0001RÒë7Þè\u0097Ár×)$IÆ\u009c\u0090\u0011\r&KD\u0098ÂÝ\u00adr\"\u000f©\u0016\n\u0014mÉÚýûN£¹ìÙ\u0002Uåi\u0004\u007f÷ºY\u001d\r\u0090=\u0092U80Ø\u0001E»\u0098j_\u0018¤¸\u0089Âs5ä<tdÎÊ\u0091\u001c`AÙÇ\\&ç\u0086I\u0098\u0010 l\u0084jòm\u0087\u000eEs8XéÖ)Í\u000e_Ákß\u000fÛ8Ø²µÞ\u001f=2";
@@ -1616,7 +1617,6 @@ public final class Xk2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

@@ -162,6 +162,7 @@ public class Xj2 extends JLabel implements D2 {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    @Override
    public void h(Graphics var1) {
+      int var72;
       Object var3 = (int)((float)this.getHeight() / 3.0F);
       String[] var10000 = KV.b$arrString();
       int var4 = a(25240, 2436569347552998993L);
@@ -188,7 +189,7 @@ public class Xj2 extends JLabel implements D2 {
       int var9 = 0;
       ArrayList var69 = (ArrayList)(Registry.emptyArgs());
       long var32 = 612241643327702351L;
-      Object[] var31 = var69;
+      Object var31 = var69;
       var69 = Ref.h(612241643327702351L, var31, var32);
 
       try {
@@ -202,7 +203,6 @@ public class Xj2 extends JLabel implements D2 {
 
       while (true) {
          if (var11 < var10.size()) {
-      long var72;
             var72 = var11;
             if (var2 != null) {
                break;
@@ -247,7 +247,7 @@ public class Xj2 extends JLabel implements D2 {
       var9 = var72;
       ArrayList var10004 = (ArrayList)(Registry.emptyArgs());
       long var34 = 413348846341046535L;
-      Object[] var33 = var10004;
+      Object var33 = var10004;
       var10004 = Ref.h(413348846341046535L, var33, var34);
 
       try {

@@ -3,15 +3,15 @@ package com.finalshell.ui.listener;
 import com.finalshell.core.KV;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.ResetPanel;
+import com.finalshell.ui.panel.SettingsResetPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class LU_3 implements ActionListener {
-   public final ResetPanel t;
+   public final SettingsResetPanel t;
 
-   public LU_3(ResetPanel var1) {
+   public LU_3(SettingsResetPanel var1) {
       this.t = var1;
    }
 

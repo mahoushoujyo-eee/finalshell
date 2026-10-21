@@ -1025,6 +1025,7 @@ public class Bi4 extends BN3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "\u0093¼!\u009c øÏ4Wpk\u008a¡\u008a}ÿBw\u0087\u0003W\u0001Àß\u009e-îsK'.\u001dM öóaÛKUO¤Äy\u009b\",l\u0092jÔû¸4Ï\u0002¹#ï\u001b:/Â¨\u0016z@äHÒùÀI´Ë'T";
@@ -1040,7 +1041,6 @@ public class Bi4 extends BN3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

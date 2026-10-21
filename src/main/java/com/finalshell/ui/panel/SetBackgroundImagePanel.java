@@ -237,6 +237,9 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    public static Long[] gb;
 
    public SetBackgroundImagePanel(@NotNull Rx4 var1, @NotNull Im4 var2, @NotNull Ov4 var3) {
+      long var10;
+      Object[] var7;
+      Object[] var9;
       int var10000 = ConnectionProperty.M$int();
       this.D = new AtomicInteger(0);
       this.Q = new AtomicBoolean(true);
@@ -269,7 +272,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
          Object var10002 = Ref.h2(270389152141252877L, var5);
          Kx4_2 var10003 = (Kx4_2)(Registry.emptyArgs());
          long var8 = 399585344452154517L;
-         Object[] var7 = var10003;
+         var7 = var10003;
          var10003 = Ref.h(399585344452154517L, var7, var8);
 
          try {
@@ -297,8 +300,8 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
          var2.Y(this::repaint);
          this.m = new Lt4(this, this);
          var10003 = Registry.packArgs(true);
-         long var10 = 117930650841340028L;
-         Object[] var9 = var10003;
+         var10 = 117930650841340028L;
+         var9 = var10003;
          Ref.h(117930650841340028L, var9, var10);
 
          try {
@@ -490,6 +493,8 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    }
 
    public JPopupMenu C$JPopupMenu() {
+      long var7;
+      long var9;
       JPopupMenu var1 = new JPopupMenu();
       Object[] var10001 = Registry.packArgs(Registry.lookupField(518223218338208363L).getInt(null), new Oo2(this, a(8954, -25906)));
       long var3 = 458639668206483981L;
@@ -514,7 +519,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
 
       var10002.add((JMenuItem)var10003);
       var10003 = Registry.packArgs(0, new Oq4(this, a(8958, 28867)));
-      long var7 = 458639668206483981L;
+      var7 = 458639668206483981L;
       JPopupMenu var10004 = (JPopupMenu)Ref.h2(458639668206483981L, var7);
 
       try {
@@ -526,7 +531,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       var10003.add((JMenuItem)var10004);
       var1.addSeparator();
       var10004 = Registry.packArgs(Registry.lookupField(460316126853161418L).getInt(null), new Q9(this, a(8944, -26558)));
-      long var9 = 458639668206483981L;
+      var9 = 458639668206483981L;
       JPopupMenu var10005 = (JPopupMenu)Ref.h2(458639668206483981L, var9);
 
       try {
@@ -1196,8 +1201,9 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    }
 
    public void m$void() {
+      long var10;
       Registry.packArgs(1, 1);
-      long var10 = 225394079158613941L;
+      var10 = 225394079158613941L;
       Object var10001 = Ref.h2(225394079158613941L, var10);
 
       try {
@@ -1213,7 +1219,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       Ref.h2(270389152141252877L, var12);
       Nl2_2 var10003 = (Nl2_2)(Registry.emptyArgs());
       long var15 = 121346227073341697L;
-      Object[] var14 = var10003;
+      Object var14 = var10003;
       var10003 = Ref.h(121346227073341697L, var14, var15);
 
       try {
@@ -1225,7 +1231,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       Nl2_2 var3 = var10003;
       K3 var10005 = (K3)(Registry.emptyArgs());
       long var17 = 446211275215857466L;
-      Object[] var16 = var10005;
+      Object var16 = var10005;
       var10005 = Ref.h(446211275215857466L, var16, var17);
 
       try {
@@ -1237,11 +1243,11 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       var3.d = var10005;
       var10005 = Registry.emptyArgs();
       long var19 = 570146297653439641L;
-      Object[] var18 = var10005;
+      Object var18 = var10005;
       Ref.h(570146297653439641L, var18, var19);
       Font var10006 = (Font)(Registry.emptyArgs());
       long var21 = 419129657143452339L;
-      Object[] var20 = var10006;
+      Object var20 = var10006;
       var10006 = Ref.h(419129657143452339L, var20, var21);
 
       try {
@@ -1267,7 +1273,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       Ref.h(381284008132314530L, var22, var23);
       Font var10008 = (Font)(Registry.emptyArgs());
       long var25 = 419129657143452339L;
-      Object[] var24 = var10008;
+      Object var24 = var10008;
       var10008 = Ref.h(419129657143452339L, var24, var25);
 
       try {
@@ -1627,7 +1633,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    }
 
    public void J(Component var1, boolean var2) {
-      int var7;
+      PointerInfo var7;
       int var10000 = ConnectionProperty.M$int();
       PointerInfo var4 = MouseInfo.getPointerInfo();
       int var3 = var10000;
@@ -1790,7 +1796,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       Object var10001 = Registry.lookupField(388376917454860932L).get(null);
       GH_2 var10002 = (GH_2)(Registry.packArgs(new Bl2(this), a(10759, 3200006095109402836L) / this.cK));
       long var2 = 201859364639460244L;
-      Object[] var1 = var10002;
+      Object var1 = var10002;
       var10002 = Ref.h(201859364639460244L, var1, var2);
 
       try {
@@ -2153,6 +2159,8 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    }
 
    public void w(boolean var1) {
+      SetBackgroundImagePanel var10;
+      boolean var9;
       int var10000 = ConnectionProperty.y();
       String var3 = this.v.y(var1);
       int var2 = var10000;
@@ -5563,6 +5571,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    }
 
    public S3 R$S3() {
+      Object[] var7;
       Registry.emptyArgs();
       long var1 = 270389152141252877L;
       Ref.h2(270389152141252877L, var1);
@@ -5574,9 +5583,9 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       long var6 = 149968465491171480L;
       Object[] var5 = var10003;
       Ref.h(149968465491171480L, var5, var6);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var8 = 371660004622157698L;
-      Object[] var7 = var10004;
+      var7 = var10004;
       var10004 = Ref.h(371660004622157698L, var7, var8);
 
       try {
@@ -9759,6 +9768,8 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var43;
+      byte[] var7;
       String[] var21 = new String[15];
       int var19 = 0;
       String var18 = "\u0098¾\u0081#\u0018Q@¬'\t_¸äf\u0083+m\u0012\u008ac\u0007\u008a\u009b\u0086\u0004I\u0083\u001c\u0087©\u0014&\u0013\u0004\u0012ï¶áª\u0005àdî-Ú\u0006讉缴聈暟囃爈\u0018\u009aNÑòä¡î§v\u008a\u0092q\u00053áR\u0086\u000e\u0097îIõ|d\u0002粏跟\u0002柞抢%AókøB\u0083óéqL1n;ºD}O52àË-\u00868z\u008fSNhR\u0098#Þàºæ£\u0004籨赾道亅\u00029\u000f\bÏ\u009f\u0089\u0082\u0005Àq\u000f\u0004溺窤缽嬬\u0002奡劯";
@@ -9774,7 +9785,6 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
          byte var10002 = -1;
 
          while (true) {
-      char[] var43;
             label74: {
                char[] var49 = var10001.toCharArray();
                int var10004 = var49.length;
@@ -9895,7 +9905,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
                                     do {
                                        byte var37 = var2;
                                        var2 += 8;
-                                       byte[] var7 = var4.substring(var37, var2).getBytes("ISO-8859-1");
+                                       var7 = var4.substring(var37, var2).getBytes("ISO-8859-1");
                                        int var38 = var3++;
                                        var65 = (
                                              ((long)var7[0] & 255L) << 56

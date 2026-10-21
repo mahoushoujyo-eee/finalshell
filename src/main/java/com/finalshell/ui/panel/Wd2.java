@@ -145,7 +145,7 @@ public class Wd2 extends JComponent implements W2_3 {
          this.E = B7.E;
          this.I = B7.I;
          this.J = B7.d;
-         Ky4[] var10000 = Ac2.n();
+         Ky4 var10000 = Ac2.n();
          this.r = B7.Z;
          this.k = new ArrayList(2);
          this.P = 0;
@@ -276,6 +276,7 @@ public class Wd2 extends JComponent implements W2_3 {
    }
 
    public WF p() {
+      boolean var13;
       Ky4[] var10000 = Ac2.n();
       Component var2 = this.N$Component();
       Ky4[] var1 = var10000;
@@ -303,7 +304,6 @@ public class Wd2 extends JComponent implements W2_3 {
             label84:
             if (var1 == null) {
                if (var13) {
-      boolean var13;
                   var13 = var7;
                   if (var1 != null) {
                      break label84;
@@ -423,28 +423,28 @@ public class Wd2 extends JComponent implements W2_3 {
       Ky4[] var10000 = Ac2.n();
       WF var2 = this.p();
       Ky4[] var1 = var10000;
-      int var8 = (this.H + this.d + this.K) ? 1 : 0;
+      int var8 = this.H + this.d + this.K;
       int var10001 = (var2.equals(WF.right)) ? 1 : 0;
       if (var1 == null) {
          var10001 = var10001 != 0 ? L : 0;
       }
 
       int var3 = var8 + var10001;
-      int var9 = (this.H + this.d + this.K) ? 1 : 0;
+      int var9 = this.H + this.d + this.K;
       var10001 = (var2.equals(WF.left)) ? 1 : 0;
       if (var1 == null) {
          var10001 = var10001 != 0 ? L : 0;
       }
 
       int var4 = var9 + var10001;
-      int var10 = (this.H + this.d) ? 1 : 0;
+      int var10 = this.H + this.d;
       var10001 = (var2.equals(WF.down)) ? 1 : 0;
       if (var1 == null) {
          var10001 = var10001 != 0 ? L : 0;
       }
 
       int var5 = var10 + var10001;
-      int var11 = (this.H + this.d) ? 1 : 0;
+      int var11 = this.H + this.d;
       var10001 = (var2.equals(WF.up)) ? 1 : 0;
       if (var1 == null) {
          var10001 = var10001 != 0 ? L : 0;
@@ -463,7 +463,7 @@ public class Wd2 extends JComponent implements W2_3 {
       Ky4[] var1;
       int var6;
       Ky4[] var10000 = Ac2.n();
-      byte var2 = (this.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+      byte var2 = (byte)((this.getComponentOrientation().isLeftToRight()) ? 1 : 0);
       var1 = var10000;
       var6 = this.f;
       label81:
@@ -520,7 +520,7 @@ public class Wd2 extends JComponent implements W2_3 {
       int var3;
       label56: {
          label88: {
-            var3 = (((((var6) ? 1 : 0) != 0) != 0) ? 1 : 0) != 0;
+            var3 = var6;
             var6 = (this.c) ? 1 : 0;
             if (var1 == null) {
                if (!this.c) {
@@ -546,7 +546,7 @@ public class Wd2 extends JComponent implements W2_3 {
       int var4;
       label45: {
          label89: {
-            var4 = (((((var6) ? 1 : 0) != 0) != 0) ? 1 : 0) != 0;
+            var4 = var6;
             var6 = (this.c) ? 1 : 0;
             if (var1 == null) {
                if (!this.c) {
@@ -599,6 +599,9 @@ public class Wd2 extends JComponent implements W2_3 {
    }
 
    public void t$void() {
+      int var13;
+      boolean var25;
+      Wd2 var33;
       Ky4[] var10000 = Ac2.n();
       Component var2 = this.N$Component();
       Ky4[] var1 = var10000;
@@ -676,7 +679,7 @@ public class Wd2 extends JComponent implements W2_3 {
                                     if (var11 == null) {
                                        int var40;
                                        label221: {
-                                          var9 = (((((var7 + var2.getWidth() / 2) ? 1 : 0) != 0) != 0) ? 1 : 0) != 0;
+                                          var9 = var7 + var2.getWidth() / 2;
                                           var40 = (var3.equals(WF.up)) ? 1 : 0;
                                           if (var1 == null) {
                                              if (var40 != 0) {
@@ -703,7 +706,7 @@ public class Wd2 extends JComponent implements W2_3 {
                                  label213: {
                                     Rectangle var12 = FN.J(var28, var2);
                                     var9 = var7 + var12.x + var12.width / 2;
-                                    var29 = ((((var8 + var12.y) ? 1 : 0) != 0) != 0) != 0;
+                                    var29 = var8 + var12.y;
                                     var42 = (var3.equals(WF.up)) ? 1 : 0;
                                     if (var1 == null) {
                                        if (var42 != 0) {
@@ -732,7 +735,7 @@ public class Wd2 extends JComponent implements W2_3 {
                         label203: {
                            Rectangle var15 = var27;
                            var9 = var7 + var15.x + var15.width / 2;
-                           var30 = ((((var8 + var15.y) ? 1 : 0) != 0) != 0) != 0;
+                           var30 = var8 + var15.y;
                            var44 = (var3.equals(WF.up)) ? 1 : 0;
                            if (var1 == null) {
                               if (var44 != 0) {
@@ -753,7 +756,7 @@ public class Wd2 extends JComponent implements W2_3 {
                      }
 
                      var9 = var7 + this.T.x;
-                     int var31 = (var8 + this.T.y) ? 1 : 0;
+                     int var31 = var8 + this.T.y;
                      int var45 = (var3.equals(WF.up)) ? 1 : 0;
                      if (var1 == null) {
                         var45 = var45 != 0 ? var6.height : 0;
@@ -823,11 +826,10 @@ public class Wd2 extends JComponent implements W2_3 {
                }
             }
 
-            int var13;
             int var14;
             label273: {
                label284: {
-                  Wd2 var33 = this;
+                  var33 = this;
                   if (var1 == null) {
                      if (this.T != null) {
                         break label284;
@@ -846,7 +848,7 @@ public class Wd2 extends JComponent implements W2_3 {
                               if (var18 == null) {
                                  int var48;
                                  label156: {
-                                    var13 = (((((var8 + var2.getHeight() / 2) ? 1 : 0) != 0) != 0) ? 1 : 0) != 0;
+                                    var13 = var8 + var2.getHeight() / 2;
                                     var48 = (var3.equals(WF.left)) ? 1 : 0;
                                     if (var1 == null) {
                                        if (var48 != 0) {
@@ -873,7 +875,7 @@ public class Wd2 extends JComponent implements W2_3 {
                            label148: {
                               Rectangle var22 = FN.J(var35, var2);
                               var13 = var8 + var22.y + var22.height / 2;
-                              var36 = ((((var7 + var22.x) ? 1 : 0) != 0) != 0) != 0;
+                              var36 = var7 + var22.x;
                               var50 = (var3.equals(WF.left)) ? 1 : 0;
                               if (var1 == null) {
                                  if (var50 != 0) {
@@ -902,7 +904,7 @@ public class Wd2 extends JComponent implements W2_3 {
                   label138: {
                      Rectangle var19 = var34;
                      var13 = var8 + var19.y + var19.height / 2;
-                     var37 = ((((var7 + var19.x) ? 1 : 0) != 0) != 0) != 0;
+                     var37 = var7 + var19.x;
                      var52 = (var3.equals(WF.left)) ? 1 : 0;
                      if (var1 == null) {
                         if (var52 != 0) {
@@ -923,7 +925,7 @@ public class Wd2 extends JComponent implements W2_3 {
                }
 
                var13 = var8 + this.T.y;
-               int var38 = (var7 + this.T.x) ? 1 : 0;
+               int var38 = var7 + this.T.x;
                int var53 = (var3.equals(WF.left)) ? 1 : 0;
                if (var1 == null) {
                   var53 = var53 != 0 ? var6.width : 0;
@@ -1284,7 +1286,7 @@ public class Wd2 extends JComponent implements W2_3 {
       float var5;
       int var10000;
       var3 = Ac2.n();
-      var5 = (var2 ? 1.0F : 0.0F) ? 1 : 0;
+      var5 = var2 ? 1.0F : 0.0F;
       var10000 = (var1.equals(WF.left)) ? 1 : 0;
       label86:
       if (var3 == null) {
@@ -1304,7 +1306,7 @@ public class Wd2 extends JComponent implements W2_3 {
       }
 
       float var6;
-      var6 = ((float)var10000 - var5 + (float)(this.H * 2)) ? 1 : 0;
+      var6 = (float)var10000 - var5 + (float)(this.H * 2);
       var10000 = (var1.equals(WF.up)) ? 1 : 0;
       label78:
       if (var3 == null) {
@@ -2329,7 +2331,10 @@ public class Wd2 extends JComponent implements W2_3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var13 = new String[10];
+      String[] var13;
+      char[] var33;
+      long var37;
+      var13 = new String[10];
       int var11 = 0;
       String var10 = "!*\u0087\u0098µ\u0014=GeU\u0013e0\\F 4/V\u0092çç«m\u0090·\u0006üKdÆ\u0087\b\u0005r\u0095íoø\u0004ì\u009bíÜ\u0006BK³Æ}\b\u0015dÁí +\u00147´Öþg£Z\u007f\u0087Â$RÃÜ\u00ad\u0006\u0080\u0012ÂöMa";
       int var12 = "!*\u0087\u0098µ\u0014=GeU\u0013e0\\F 4/V\u0092çç«m\u0090·\u0006üKdÆ\u0087\b\u0005r\u0095íoø\u0004ì\u009bíÜ\u0006BK³Æ}\b\u0015dÁí +\u00147´Öþg£Z\u007f\u0087Â$RÃÜ\u00ad\u0006\u0080\u0012ÂöMa"
@@ -2344,7 +2349,6 @@ public class Wd2 extends JComponent implements W2_3 {
          byte var10002 = -1;
 
          while (true) {
-      int var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -2436,7 +2440,7 @@ public class Wd2 extends JComponent implements W2_3 {
                         byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
-                        long var37 = ((long)var7[0] & 255L) << 56
+                        var37 = ((long)var7[0] & 255L) << 56
                            | ((long)var7[1] & 255L) << 48
                            | ((long)var7[2] & 255L) << 40
                            | ((long)var7[3] & 255L) << 32

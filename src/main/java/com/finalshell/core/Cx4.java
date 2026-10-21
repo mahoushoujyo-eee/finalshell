@@ -1013,6 +1013,7 @@ public final class Cx4 implements Composite {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[27];
       int var11 = 0;
       String var10 = "1\"\u0089ã¸íþ\u008b\u0004þ\u0012èø\n×ÎøîáÒ\bb\u001d)\u0003È\u0091r\nBJd\u001dÖé\u00ad¾ì\"\b\u009ec\u0014Ì|¦ÛÏ\u0018\t}S)\u0003Õ'ã¹\u000b¼ì\u0084°zd\u0095ÁfUõä\u001d\u0015\u0007¾\n:bÎù1\n5Ç¶\u0001*#tÚ+ë\u0006\u008d\u0081\u000bÐJ\u0003\u0007°\u0011Uçt\u0012Ú\u0003Û\u00059\n_\u0085\u0097\u0096\u0098Ã\"Æáh\u0007\u0099Q¿ï$\u0015`\n\u009bÝ\u0096\u0096k¿½¹\u0094¾\u0007£´g\r0Þ\u0019\tÀ}Ù»7P(d¦\u0005¥`Sæ\u0091\b§&àd6¢åq\u000bÍå±^ÓÜ~Ìî3_\u0016mARêU<:\"\u000e@¬\u008c\u008fà\u0006ü®J\u0018\u00ad/\u0017\t!\u009b_\u0018rû\u0090Od\n,¾\u009fô\u000b;úÔkJ\nX\u001e\u0003!\u00853²+§\u009f\u0006è\u008e\u0019´\f\u0084";
@@ -1028,7 +1029,6 @@ public final class Cx4 implements Composite {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

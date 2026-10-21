@@ -615,6 +615,7 @@ public class DY3 extends Dq4 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void m$void(String var1) throws Dn2_2 {
+      boolean var8;
       boolean var10000 = Dm4.J$boolean();
       var1 = this.U(var1);
       boolean var2 = var10000;
@@ -7837,20 +7838,20 @@ public class DY3 extends Dq4 {
    }
 
    public boolean F(byte[] var1) {
-      int var10000 = (Dm4.F$boolean()) ? 1 : 0;
+      int var10000 = Dm4.F$boolean();
       int var3 = var1.length;
       int var4 = 0;
-      boolean var2 = ((((boolean)var10000) != 0) != 0) != 0;
+      boolean var2 = var10000;
 
       while (true) {
          if (var4 < var3) {
             var10000 = var1[var4];
             if (!var2) {
-               return var10000 != 0;
+               return (var10000 != 0);
             }
 
             if (!var2) {
-               return var10000 != 0;
+               return (var10000 != 0);
             }
 
             if (var10000 == c(15072, 4602353752174090332L)) {
@@ -7889,10 +7890,10 @@ public class DY3 extends Dq4 {
             }
          }
 
-         return 0 != 0;
+         return (0 != 0);
       }
 
-      return 1 != 0;
+      return (1 != 0);
    }
 
    public Vector V$Vector(String param1) throws Exception {
@@ -8821,6 +8822,7 @@ public class DY3 extends Dq4 {
    }
 
    public static String c(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 10320) & 65535;
       if (gb[var2] == null) {
          char[] var3 = eb[var2].toCharArray();
@@ -9607,7 +9609,7 @@ public class DY3 extends Dq4 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -9644,6 +9646,8 @@ public class DY3 extends Dq4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var43;
+      long var8;
       String[] var21 = new String[41];
       int var19 = 0;
       String var18 = "Òî\u0005úÔ_\u008aT\u0015Ìf\u001b\u0091\tÜ»²<Í\u000b³E¹m\u0089\fâ\u0081ïáAà\u0090\u0006\u0095\u009cáÃ\n\u009eQ\u0003Î\u0083 í\u001f=0¡«fR)6\u0092Üc\u0013W.4ü`µä¾è\u0002DÜÇ}g\rg\u008aÃJFOÿÜðóöé=\u009f»\u008b\u0017WW~%\u001e¥\u0013\u008e²ü\u0082Í9Pã7\u00847\u009f)ÛÏ§åû¦\u0081AÓºz³ÙZ\u0090\u00100W\u0010ò:~ãØó\u0010°\u009bL:Ý®\u0018ý\\ó\u001cP\u0081|hÝä\tÿÊ*Ô¢Ë\u0092âL\u001c:\u0007d\u0013\fÈæJôtVh\u0084ôðÛ%t\u0099·'\u0014Ö\u001e(ë´IðÖNì6\u0097`Z-UÆà'»\u0016\u000e¬Éÿæj\u0019k\u0096ù\u0013\u0018á/,*a\u0013Ç\u0096ö=ô\u0002¨\u008e\u0088Y¹\u001f0\u0013~º\\\u001c\u0007¨@³U\fRL\u0015ñr¼\u0013ý\u008c%¸ï\u008cq\u009b\n¼\u0084)1ö&m\u0015%JS\u001f?ø\rã;\u009fO·E\u008daÔYèQÒ#\u008bx&*ËEÅy\u0084~¼\u0018Íd<`\u00197Ù2Á\u007fÈÅ;«ÓÓÜ\u008b§w8«Ç^×ÉÂ\u0019ú\u008fk\\Çd\u0006Vpç(<g>\u001a\u009a·YÏð\u00826ñ\u001c!\u000f[ü#ú\u008d>v\u0002ã£\u0015\u0010®w\u007f¯,\b_\u009e÷\u000bØ£?¥\u0099½/niÇ\u000f\u001bCup\u0099aiÔ·úÕ©±Îx\u0013SÊ\r\n\u0089|ùiqÔNßòôc§x\u0016=\u0013Vr÷¼\u008e`iS_\u0013p9ß\u0084;£ \u008c-\u000f6ÍÐ¡-[ÿ\u0093e\u0012\u008f´úm\u0011\u000fâXs|\u0006\"|\u0018\u0007\u0015ø\u0090?þ¾\b0¢\u0002ÿ-ò´\u0092\u0011l\u001c¥tp\u0083ÍvÚæ\u009b\u00ad°{Í¯Å$ÿ\u0017Â\u0010(õ½áÅE#óµÝv\u0088\u0089é\u0018ôÙ|_½Ü+R\u009f®\u009e?¾ J>b8Â\u000e¢ø¤5¶µb\u0010êóaxàJÜb´N®éw\u0091Ú\u009fñ\u001cÀY¨\u00063\u0000\u0004¹vj;[|\"\u0093Ë\u001c\u0086¡ï D¼\u0081Ïî¸\u0002\u0014\u0092Z\u0004\u001e\u009b)\u008f¿\u0012ß\u0006W»#\u0012\u00110XÉ\u00028\u009e+)\\Õ¡\u0098'§BR¹v1\u0002c\u0080G?êß}Y\u0003\u001fÍIV×\u0010J/o%\u008f\u001d\u0007þ\u0015É¹p+\u0081\u000bÏCÆüa7%¾z\u0096\u0090\u001dÀåâ\u0085½\u0097ªLv\u000e}cLHXz\u0001äÉn\u0001\u0019Ì¤%b¥¡æ\f\u0087\u0005\u0016-Ø°Û\u008cx\u009dµÙ\u0013úZb¹<À?G\u0095\u0091)iô\u008e^â\u008c¤¸\u0018\u0094UÞ=õ¥ÈìKtÛí\u0090h\u009fê¢\u009bÏm¹\u001e³à\u0018\u008b2uP2\u0082¬©û\u007f)bå\u0092DÈè:ëL\u0086ÇÖÏ\b'Xà q\u0019?ï\u0002\u009cE\rõiÍ\u0093&=2vÚÒ\u00ad\"\u009d\u0011Ìõ\u007f3õs~ôÎ\u0092?8ÓÉ¯±O=§sîé\u0081n`ûêo\u008d\tRØ×\u0000zÓI×{Ý\u008aÇæâíÔ\u0096Û\bº>¨\u0091w\u0016:\u0094®3ñ·Nú\u0006#ßdm\u000f\bËèOjw\u0000i]©\u0005´Ê\u0096Im\u0018\u0089x5\u0019:«\u00ad\u008cÛÛ-öe\u0000T\u009aêp«\u0005\u008eî×ê";
@@ -9659,7 +9663,6 @@ public class DY3 extends Dq4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var43;
             label81: {
                char[] var49 = var10001.toCharArray();
                int var10004 = var49.length;
@@ -9737,7 +9740,7 @@ public class DY3 extends Dq4 {
                   if ((var25 += var17) >= var20) {
                      eb = var21;
                      gb = new String[41];
-                     long var8 = 4288877866547856724L;
+                     var8 = 4288877866547856724L;
                      long[] var14 = new long[55];
                      int var11 = 0;
                      String var12 = "7gòi\u0088\u008a*G6\u0096\u008eLlä\u00109èKÃB\u0084ß\"q¡I$\u0083þ¿\b\u001dÑþßÉ\u0014\b§\u0092Ë9p/®Û\u009fçó\u0006í\u0007ê~\f¬»d\u0007$\u0081o\u0006´\u0010\u008aGï\u0092\u0097=rÝÎg\u009fÊb\t}\nëÏK\u009b6(æ\u0089\u000e\u0014\u008d{\f_z#\fÂ\u0007å©½ê0Þ\u0007'Ö\r\u000bJ\u0001\u0005\u008b\u0088í´ù¸\u00116\u0095ã@&\nPSù§=_Ö|ÏÁ`¨ó~QÂv3$w~Oy¡`?nîÇ³XÈ>\u001cÊî[@S³RÞa¿¸\u0005ã¯ '\u009a(ð\f\u0001é\u009b\u009f*\u008eòàd\u0081ü#\u0085\u0004ÓI\u009b\u001d\"¶Ólû\u00159\u0005ÏÈ\u00019Ð\u000fq\u001e\u0014Ò¶q¸\u0091Ì*(õ~×\u009b\u009fYÏY>Z\u0014SJ\u008b\u008b\u0087cheK\u001d\u008a\u008dÐdÐ|róìÖ\u0095|}xª\u001a\u0016øT\u009e\u0015Hö~aè`j\u0087¿¶äÞ\u001d\u0088¶\u0084Ç*\u001c7[D2Kù\u0082§þ\u001cD\u000e\u0018\u0014\u0094S`w\u0005²?Åæ\u008fW\u0019ãÚìÙÙ\f\u001aeïöñü:?\u0000L5z;\u0081ùýå#ñL\u0019¤·v¯ÝT ã\u0081ó\u0017\u008c^\u001e¯\u001a oÙ¬gàâ¸ÛF\u009f}Øûàgõ-Qªê\u0099ðÅ\u0082ì¤féo\u0003w\u0094!\u0003ö\u009aý\u009b\u008fÐØ\"fJ>.\u0091\u0018cL\u0012Gb\u008c\u009aýgÇ\u0018/ùÕs\u0089í2\u0012\u0015È";

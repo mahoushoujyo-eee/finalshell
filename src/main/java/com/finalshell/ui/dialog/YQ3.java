@@ -1,6 +1,6 @@
 package com.finalshell.ui.dialog;
 
-import com.finalshell.ui.panel.Dp2;
+import com.finalshell.ui.panel.SplashPanel;
 import com.finalshell.ui.panel.Ky4;
 import java.awt.Toolkit;
 import javax.swing.JDialog;
@@ -12,13 +12,13 @@ public class YQ3 extends JDialog {
 
    public YQ3() {
    super();
-      int var10000 = Dp2.n();
+      int var10000 = SplashPanel.n();
       int var1 = var10000;
-      Dp2 var2 = new Dp2();
+      SplashPanel var2 = new SplashPanel();
       this.setContentPane(var2);
       this.setIconImage(Toolkit.getDefaultToolkit().getImage(a));
       if (Ky4.F$arrString() != null) {
-         Dp2.j(++var1);
+         SplashPanel.j(++var1);
       }
    }
 

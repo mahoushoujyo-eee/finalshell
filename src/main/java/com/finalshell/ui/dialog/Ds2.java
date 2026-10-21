@@ -554,6 +554,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
    }
 
    public Point D(Rectangle var1, boolean var2, int var3, int var4, Dimension var5, Rectangle var6, B1 var7) {
+      Point var12;
       int[] var8;
       Point var9;
       B1 var14;
@@ -653,7 +654,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
          Nq4 var22 = Nq4.centered;
          if (var8 == null) {
             if (this.n == Nq4.centered) {
-               Point var12 = new Point(var9.x + var4, var9.y - var5.height / 2);
+               var12 = new Point(var9.x + var4, var9.y - var5.height / 2);
                return this.B(this.k(var12, var6), var5, var6);
             }
 
@@ -739,6 +740,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
    }
 
    public B1 Z(Rectangle var1, boolean var2, int var3, Dimension var4, Rectangle var5) {
+      B1 var12;
       int[] var10000 = U$arrint();
       B1[] var7 = this.G.r();
       int var8 = var7.length;
@@ -747,7 +749,6 @@ public class Ds2 extends Y2 implements D7, LT3 {
 
       while (true) {
          if (var9 < var8) {
-      B1 var12;
             B1 var10 = var7[var9];
             Point var11 = this.p(var1, var2, var10);
             var12 = var10;
@@ -1761,6 +1762,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[13];
       int var3 = 0;
       String var2 = "Jéú\u007fý\bwá\u001a=O7w\u008c\u000e\u0087êZ[Ã!\u008d¥\u009fè\u0004ì·5\nª¬Ò×\u001eE ]\u008cp\n©^Á\u0092+´\u0016v\u0081\u0007\u000fùä¸ÞSd\u009b|¦óP\u0085¢gI\ní5;\tRð\u0093g\u0097\u0096\fÖã»\u0080T\u00ad\u008f\u0019\f\u008b\u0085¶\u000bÀ\u0081\u009fr·ñ\u0011Ë.³ë\u000b\u0082\u0001öh\u009aù Ì\u0086\u008eí\u0011ÅÇ>Wò8\u009c\u0018\u0014Çÿ\u0099\u009dbA3\b";
@@ -1777,7 +1779,6 @@ public class Ds2 extends Y2 implements D7, LT3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

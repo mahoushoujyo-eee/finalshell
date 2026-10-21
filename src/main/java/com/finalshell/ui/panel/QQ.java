@@ -1251,8 +1251,9 @@ public class QQ extends QB {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var5;
       String[] var7 = new String[3];
-      int var5 = 0;
+      var5 = 0;
       T(null);
       String var4 = "\u0002ç¸b\u0006z\u0003<þ¶(\u0005'\u00ad\u009e`\u0097";
       int var6 = "\u0002ç¸b\u0006z\u0003<þ¶(\u0005'\u00ad\u009e`\u0097".length();

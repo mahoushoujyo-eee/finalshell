@@ -2,15 +2,15 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.panel.ConnectionProperty;
 import java.lang.reflect.InvocationTargetException;
 
 public class Dh4 implements Runnable {
    public final ConnectionProperty W;
-   public final U c;
+   public final MainFrame c;
 
-   public Dh4(U var1, ConnectionProperty var2) {
+   public Dh4(MainFrame var1, ConnectionProperty var2) {
       this.c = var1;
       this.W = var2;
    }

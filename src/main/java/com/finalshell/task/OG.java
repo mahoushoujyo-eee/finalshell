@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.core.CB;
+import com.finalshell.core.ProcessMonitorService;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 public class OG implements Runnable {
    public final ArrayList R;
-   public final CB V;
+   public final ProcessMonitorService V;
 
-   public OG(CB var1, ArrayList var2) {
+   public OG(ProcessMonitorService var1, ArrayList var2) {
       this.V = var1;
       this.R = var2;
    }

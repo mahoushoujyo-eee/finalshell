@@ -2,15 +2,15 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.dialog.SyncPasswordDialog2;
+import com.finalshell.ui.dialog.SyncPasswordResetDialog;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bm2 implements ActionListener {
-   public final SyncPasswordDialog2 g;
+   public final SyncPasswordResetDialog g;
 
-   public Bm2(SyncPasswordDialog2 var1) {
+   public Bm2(SyncPasswordResetDialog var1) {
       this.g = var1;
    }
 

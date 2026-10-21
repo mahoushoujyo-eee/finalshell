@@ -30,7 +30,7 @@ public class O62 extends MouseAdapter {
          if (SwingUtilities.isRightMouseButton(var1)) {
             com.finalshell.core.Y9 var10001;
             Object var4 = 387610970704879223L;
-            super((T32)Ref.g(387610970704879223L, var4), Registry.lookupField(454291477903395804L).getInt(null));
+            // [VF-super] super((T32)Ref.g(387610970704879223L, var4), Registry.lookupField(454291477903395804L).getInt(null));
             com.finalshell.core.Y9 var3 = var10001;
             Object[] var10002 = Registry.packArgs(var1);
             long var7 = 236847225442494468L;

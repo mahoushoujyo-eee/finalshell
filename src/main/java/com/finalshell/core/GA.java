@@ -423,10 +423,10 @@ public final class GA {
    }
 
    public static Dimension a(JComponent var0, Og4 var1) {
-      String var10000;
+      Og4 var10000;
+      Dimension var6;
       String var2 = FV_2.D();
 
-      Dimension var6;
       label28: {
          label27: {
             label26: {
@@ -496,8 +496,11 @@ public final class GA {
    }
 
    public static void L(Graphics var0, JComponent var1) {
-      Dimension var6;
-      String var10000 = FV_2.D();
+      String var10000;
+      Rectangle var4;
+      Shape var6;
+      Rectangle var7;
+      var10000 = FV_2.D();
       Shape var3 = var0.getClip();
       String var2 = var10000;
 
@@ -528,7 +531,7 @@ public final class GA {
          var7 = var6.getBounds();
       }
 
-      Rectangle var4 = var7;
+      var4 = var7;
       var0.fillRect(var4.x, var4.y, var4.width, var4.height);
    }
 
@@ -2687,13 +2690,15 @@ public final class GA {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public static void S(Graphics2D var0, Color var1, Rectangle var2, int var3) {
-      Dimension var29;
-      String var10000 = FV_2.D();
+      int var29;
+      String var4;
+      java.awt.geom.Ellipse2D.Double var6;
+      String var10000;
+      var10000 = FV_2.D();
       var2 = Rv4.q(var2);
       Object var5 = RV.X(var0);
-      String var4 = var10000;
+      var4 = var10000;
 
-      java.awt.geom.Ellipse2D.Double var6;
       label221: {
          int var10001;
          label243: {
@@ -3329,11 +3334,12 @@ public final class GA {
    }
 
    public static void h(Graphics2D var0, BufferedImage var1, BufferedImage var2, Shape var3, Shape var4) {
+      Shape var7;
       Object var5 = RV.X(var0);
       Rectangle var6 = var3.getBounds();
       var0.setPaint(new TexturePaint(var1, new Rectangle(var6.getLocation(), new Dimension(var1.getWidth(), var1.getHeight()))));
       var0.fill(var3);
-      Shape var7 = var0.getClip();
+      var7 = var0.getClip();
       Area var8 = new Area(var7);
       var8.intersect(new Area(var4));
       var0.setClip(var8);
@@ -3609,7 +3615,8 @@ public final class GA {
    }
 
    public static GeneralPath f(int var0, int var1, int var2, int var3, int var4, int var5) {
-      GeneralPath var6 = new GeneralPath(0);
+      GeneralPath var6;
+      var6 = new GeneralPath(0);
       var6.moveTo((float)var0, (float)(var1 + var5));
       var6.quadTo((float)var0, (float)var1, (float)(var0 + var4), (float)var1);
       var6.lineTo((float)(var0 + var2 - var4), (float)var1);
@@ -3635,8 +3642,9 @@ public final class GA {
    }
 
    public static boolean i(Component var0) {
-      String var4;
-      String var10000 = FV_2.D();
+      String var10000;
+      L0_2 var4;
+      var10000 = FV_2.D();
       L0_2 var2 = J(var0);
       String var1 = var10000;
 
@@ -4007,10 +4015,12 @@ public final class GA {
    }
 
    public static String a(int var0, int var1) {
+      int var10000;
+      int var6;
+      short var4;
       int var2 = (var0 ^ -31920) & 65535;
       if (c[var2] == null) {
          char[] var3 = b[var2].toCharArray();
-         short var10000;
          switch (var3[0] & 0xFF) {
             case 0:
                var10000 = 59;
@@ -4781,13 +4791,13 @@ public final class GA {
                var10000 = 8;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -4821,6 +4831,9 @@ public final class GA {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      long[] var6;
+      byte[] var7;
       String[] var13 = new String[19];
       int var11 = 0;
       String var10 = "xUo\u0091Ü0ÚI\u008fÎ)¤Í.sÍõL\u000f«L(LÆ\u001aY\u001bKXX\tJn\u009d*k8\u0085½z¿Ä\b9c\u0085\u0016ÐçÅ%4à\u008a:ç9µáÓÜ\u0083çÿT¬<\u000f\u0091þ\u009ft\u0091\t¶\u007f6c:SIp£Úù\u000bt\u000b`=ºW\t\u001f½\u0010Ã\u0005ýCµÅtÒ\u0006\u0088Ó\u009fN¶^\u001d§\u0010\u00949£%5ër\u009a\u0096.:\u007f\u008dç,\bÁ\u0004Ì\u0001ÐæÚÙ»\u0091\u008e\u001f\u0015¨Â.iÇl·Y\u0011ó_\u0096Q\u0018\"\u008d¡·\rgÃ\u0092Rä\u0007\u0088\n\u009fa¡\u0018!9D\u001c¹\u0081v\u007f\u001a\b\u009b|\u009b5¹®³7ymÅ#\u00986\u0007Ãù$Ft\u0080)\"ðs~Uþ¨\u009eZ\u0007¬8èï§7üm`\u0010ntü\u0091·\u0016í-~Èð\u0097*·Ò\u001dµsÖUë¨<ZS¬²è¾§\u001dü'}\u009a~§N½\u000fwä\u000e68\u0018K~\tô\u0010\u009cCÜ¼|Oò\u0001äê\u0094Àf-\u0093OüÉÍ\u0005\u0097^F\r»)¦¢\u0001ÏÁ<ÖÚ4Ê7ÓE\u0082enÏ³¢Ùn^j\u0003ÕH\u007fþ\u00ad%¶\u0090\u0084¢\u0082Ç°}d\u0095ë!UvâXáuJ\u0011QFò\u0000Þ¦\u000e:èýtq\u0084\u0019\u0011ýR\u008eG\u0082A×ÖLµ\u001b\u0011EB\u0093ypnA\u0019Ïû\u0084\u0097*8M\u0088K3«}\u008e\u0006}ÖêM\u001aXûkD\\\u008aÊ\u001e\u008d$iùÅ\u0085r¸Àò\u001eg#Ô\u0004¿_.\u0012Ø@\u0088s½[\u00adÇ÷¿\u0019r\u0014_(Ed4";
@@ -4914,7 +4927,7 @@ public final class GA {
                      b = var13;
                      c = new String[19];
                      long var0 = 5972639322288249823L;
-                     long[] var6 = new long[6];
+                     var6 = new long[6];
                      int var3 = 0;
                      String var4 = "\u000e04áP-Ü\u008c\u0082\u008c¶\u009bØBß¹OwVÛp\u000f\u0095\u0080\u0088\u0093|\u0080)N6¢";
                      int var5 = "\u000e04áP-Ü\u008c\u0082\u008c¶\u009bØBß¹OwVÛp\u000f\u0095\u0080\u0088\u0093|\u0080)N6¢".length();
@@ -4924,7 +4937,7 @@ public final class GA {
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56

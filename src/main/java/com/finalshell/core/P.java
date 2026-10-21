@@ -47,7 +47,7 @@ public class P extends T4 {
             int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
             var8 = var7.width - var5.right - var5.left;
             var9 = var7.height - var5.top - var5.bottom;
-            var10 = (var3.getComponentOrientation().isLeftToRight()) ? 1 : 0;
+            var10 = (byte)((var3.getComponentOrientation().isLeftToRight()) ? 1 : 0);
             var11 = var4.M$k2_2();
             var2 = var10000;
             var12 = var4.R$JComponent();
@@ -108,12 +108,12 @@ public class P extends T4 {
             }
 
             if (var30) {
-               var30 = (((((boolean)1) != 0) != 0) != 0) != 0;
+               var30 = (1) != 0;
                break label206;
             }
          }
 
-         var30 = (((((boolean)0) != 0) != 0) != 0) != 0;
+         var30 = (0) != 0;
       }
 
       boolean var16;
@@ -126,12 +126,12 @@ public class P extends T4 {
             }
 
             if (var30) {
-               var30 = (((((boolean)1) != 0) != 0) != 0) != 0;
+               var30 = (1) != 0;
                break label199;
             }
          }
 
-         var30 = (((((boolean)0) != 0) != 0) != 0) != 0;
+         var30 = (0) != 0;
       }
 
       boolean var17;
@@ -161,12 +161,12 @@ public class P extends T4 {
             }
 
             if (!var30) {
-               var30 = (((((boolean)1) != 0) != 0) != 0) != 0;
+               var30 = (1) != 0;
                break label192;
             }
          }
 
-         var30 = (((((boolean)0) != 0) != 0) != 0) != 0;
+         var30 = (0) != 0;
       }
 
       boolean var18;
@@ -286,7 +286,6 @@ public class P extends T4 {
                var13.setBounds(0, var19, var8 - var6.left - var6.right, var27.height);
                var19 += var27.height;
                if (var2 != null) {
-      JMenuBar var39;
       JMenuBar var39;
                   break label237;
                }
@@ -566,7 +565,7 @@ public class P extends T4 {
                                     }
                                  }
 
-                                 var31 = var16.width + var17.width + var21;
+                                 var31 = (byte)(var16.width + var17.width + var21);
                               }
 
                               var19 = var31;
@@ -588,7 +587,7 @@ public class P extends T4 {
                               }
                            }
 
-                           var31 = var21 + var17.width + var21;
+                           var31 = (byte)(var21 + var17.width + var21);
                         }
 
                         var19 = var31;
@@ -671,7 +670,7 @@ public class P extends T4 {
                         }
                      }
 
-                     var31 = var28 + var17.width + var28;
+                     var31 = (byte)(var28 + var17.width + var28);
                   }
 
                   var19 = var31;
@@ -764,7 +763,7 @@ public class P extends T4 {
             var23 += var5.top + var5.bottom;
          }
 
-         var31 = var4.left + Gw2.E(new int[]{var19, var22}) + var4.right;
+         var31 = (byte)(var4.left + Gw2.E(new int[]{var19, var22}) + var4.right);
       }
 
       int var30 = var31;
@@ -794,7 +793,6 @@ public class P extends T4 {
       }
    }
 }
-
 
 
 

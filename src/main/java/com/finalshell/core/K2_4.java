@@ -14,6 +14,7 @@ public class K2_4 implements FilenameFilter {
 
    @Override
    public boolean accept(@C_9 File var1, @C_9 String var2) {
+      String var4;
       int[] var3 = F_6.h();
       boolean var10000 = n;
       if (var3 == null) {

@@ -25427,6 +25427,7 @@ public abstract class U9 implements P7, Closeable {
    }
 
    public final void x(char var1) {
+      int var7;
       boolean var2 = Yn4.o();
 
       U9 var10000;
@@ -25442,8 +25443,6 @@ public abstract class U9 implements P7, Closeable {
                   break label43;
                }
             } catch (Hi2 var6) {
-      int var7;
-      int var7;
                throw a(var6);
             }
 
@@ -26404,9 +26403,9 @@ public abstract class U9 implements P7, Closeable {
 
    @Override
    public final Number E(boolean var1) {
-      char var10000 = Yn4.Y();
-      char var3 = (this.C(this.S + this.e - 1)) ? 1 : 0;
-      boolean var2 = (boolean)var10000;
+      char var10000 = (Yn4.Y()) ? 1 : 0;
+      char var3 = this.C(this.S + this.e - 1);
+      boolean var2 = ((boolean)var10000) != 0;
 
       try {
          int var10001;
@@ -27408,6 +27407,8 @@ public abstract class U9 implements P7, Closeable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var52;
+      byte[] var7;
       String[] var21 = new String[52];
       int var19 = 0;
       String var18 = "\u0014FA\u008b\u0014ÞÚw\u007f\u0086F}\u0010Ùohå×)¢\u0093\u0015\u0002ú\u0095\u008c]Ü\u0098\u0004Ç\u0092\u009cÌ\u0013}¶8p¾ß\u0082\u008dS\u0006D)Ý}¾¦lÖ¡\u0010\u0012\\\"ì\u009c¿\u0080U8\u0013'\u0012L\u00ad\u0083\u0085\u0012æ½\u008f¿+b=úè/\u008a0ÅëTXÐÈ\nÏnÅ¨\u0095W¹\u000b\u0003¥\u0010\u0085ªàÁè\u009dî9wòpÙ´ÒÖ¥\u00106Á\u0096¬&07\u008cLD\u0017\u000fB\u000fHð\tB\t\u001c ·£\u008d\u009aÐ\u0014\u0099©¤\u0093*¸î\u001eæ\u0084âÃ\b\u0095)ÞaLS\u0018\f³\u0002%H~\u009c\u0097%³Ô.O\fÅîëÕ§/¬SÚ\u001aÌ\u0096\u0011û#/ð\u0011»Ñý\u0090j\u008cÊ9£.ìª\u0003ÕE\u0085\t¬ù¾²O\u009dÜÄ9\u0003-\u009f\n\u0005ê,p|0\u0007\u0089³aè\f¶s\u000eåC+Î²\u0013¨yZ8Ú\u0006\u000f1\u0011\n|\u0011\u001bÖÆ)R\u008f\u009fotEt¡\u0016[\u0010Û\u009c+\u0007\u0091EÁ\"\u0092\u0091Ìµ#_$\u0014\u0018ðpÝM\u0087\u0006¨b<ö\u008eÝsXH÷©á`f\u0007n\u0086\"\u000fI\u008aê\u0012aít\u001fºXì?²\u008cp\u00127Aµ l\u0091Õ\u0084õà)É±ÔÚ¿\u00014\u001csæ=Ô}\u000f÷W±\u009a¼\u009a³#W\u000e¹û½×ïïáF\u0094áÇ \t-\u0007å¡íe¹0ß\u0010\u0099\u0096¤tCL\u0092\u0080Ê\u007f£ù%;8\u008f\f]®30\u001e\u0083\u0011\u00adÒåÎH\u000f¶²\u000fS\u008fIË\u0082Tð/KGx\u009a\u0017ä~Ì[mÎ^Sa¿²pöàÞ\rñèÒ¸·\u0099\u0084\u000f®\u001dB\u0005\u009fj\u001dM²\u0083\u0015\u009c\u001e\u007fB\u0004©Q\u0011Z\u001b[¼²\u00928q=\u0085\u008c\füGç\u007fmã\nÕì\u0091}ÄcûB¥\u0013\u000f\u0092Í\u0091ú\u000eð\u0099¼\u0007,[±D]®\u0002z(\u000fv²YðüÎv\u00991#M\u0088\u0015ý#\u00106U\u0095¢hÁU\u008eë¡%áwÓ£I\u0015\u0093ªåók¾\u0093\u0093tûliç\u001caÂ\r0KÄ@\u0003â\u0082³\u001c`w_æ1I~\u009f\u0080\u0083\u009a¹wGÏ\u0082ªjßå£©h\u008e¥øá\u0083\u001bç\u0096%×ÊÙc\u0090G®\u0085\u0013Èõ\u0088²¶ÿ{Ô\u008fl=î\u0089\u0007j\u0015\u008bÃ²;jÈ\u0015»\u008cÜw§T\u0081Ù»\u001f\u0086°Ñ\u00ad\u0011W\u0010ÄEÔÂ°ÅW\u0099\u0082Ù\u0092\u0012?G\b\u0003¬$3\f!zwG4}Þ\u0019\u0094S\u0005¿\u0010\u0093\u0088\"\u0085°\u0015å(\u0016Ð\\\u009d+]eº\fÉ\u008c¡tL\u000b[¼\u009bÇç\f\"@Ò\f \u0003\u008ba¬\u0002ù\u0082\u000bÁ\u000f\u0007\u0010(\nQö)\u0005,¬ËÆ\n0êÛózúÌ\u000f+.5QR\u008f¹{\u009dº-Ð\u0005ä»";
@@ -27545,7 +27546,7 @@ public abstract class U9 implements P7, Closeable {
                                     while (true) {
                                        byte var45 = var2;
                                        var2 += 8;
-                                       byte[] var7 = var4.substring(var45, var2).getBytes("ISO-8859-1");
+                                       var7 = var4.substring(var45, var2).getBytes("ISO-8859-1");
                                        long[] var35 = var6;
                                        int var46 = var3++;
                                        long var58 = ((long)var7[0] & 255L) << 56
@@ -27685,7 +27686,6 @@ public abstract class U9 implements P7, Closeable {
       }
    }
 }
-
 
 
 

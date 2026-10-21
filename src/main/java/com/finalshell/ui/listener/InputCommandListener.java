@@ -3,9 +3,9 @@ package com.finalshell.ui.listener;
 import com.finalshell.core.T32;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.dialog.EditDialog3;
+import com.finalshell.ui.dialog.CommandEditDialog;
 import com.finalshell.ui.panel.AppendCarriageReturnCRPanel;
-import com.finalshell.ui.panel.Copy3;
+import com.finalshell.ui.panel.CommandListPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
@@ -17,14 +17,14 @@ import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 public class InputCommandListener implements ActionListener {
    public final JTextField P;
    public final RSyntaxTextArea q;
-   public final Copy3 e;
+   public final CommandListPanel e;
    public final JCheckBox Y;
    public final T32 J;
-   public final EditDialog3 n;
+   public final CommandEditDialog n;
    public static String[] a;
    public static String[] b;
 
-   public InputCommandListener(EditDialog3 var1, JTextField var2, RSyntaxTextArea var3, Copy3 var4, JCheckBox var5, T32 var6) {
+   public InputCommandListener(CommandEditDialog var1, JTextField var2, RSyntaxTextArea var3, CommandListPanel var4, JCheckBox var5, T32 var6) {
       this.n = var1;
       this.P = var2;
       this.q = var3;
@@ -45,7 +45,7 @@ public class InputCommandListener implements ActionListener {
       if (this == null) {
          if (var10002 == null) {
             Object var11 = 365487823234570811L;
-            JOptionPane.showMessageDialog((EditDialog3)Ref.g(365487823234570811L, var11), a(24947, 24935));
+            JOptionPane.showMessageDialog((CommandEditDialog)Ref.g(365487823234570811L, var11), a(24947, 24935));
             return;
          }
 
@@ -57,13 +57,13 @@ public class InputCommandListener implements ActionListener {
             if (this == null) {
                if (var10002 == null) {
                   Object var13 = 365487823234570811L;
-                  JOptionPane.showMessageDialog((EditDialog3)Ref.g(365487823234570811L, var13), a(24946, -23651));
+                  JOptionPane.showMessageDialog((CommandEditDialog)Ref.g(365487823234570811L, var13), a(24946, -23651));
                   return;
                }
 
                var10002 = this;
                Object var15 = 365487823234570811L;
-               EditDialog3 var10003 = (EditDialog3)Ref.g(365487823234570811L, var15);
+               CommandEditDialog var10003 = (CommandEditDialog)Ref.g(365487823234570811L, var15);
                if (this != null) {
                   break label92;
                }
@@ -100,14 +100,14 @@ public class InputCommandListener implements ActionListener {
             }
 
             Object var25 = 365487823234570811L;
-            EditDialog3 var58 = (EditDialog3)Ref.g(365487823234570811L, var25);
+            CommandEditDialog var58 = (CommandEditDialog)Ref.g(365487823234570811L, var25);
          }
 
          Object var27 = 302503956502467966L;
          Ref.g(302503956502467966L, var27);
          String var60 = (String)(Registry.emptyArgs());
          long var30 = 286931176286176762L;
-         Object[] var29 = var60;
+         Object var29 = var60;
          var60 = Ref.h(286931176286176762L, var29, var30);
 
          try {
@@ -156,7 +156,7 @@ public class InputCommandListener implements ActionListener {
       }
 
       Object var45 = 365487823234570811L;
-      ((EditDialog3)Ref.g(365487823234570811L, var45)).setVisible(false);
+      ((CommandEditDialog)Ref.g(365487823234570811L, var45)).setVisible(false);
       Registry.emptyArgs();
       long var47 = 270389152141252877L;
       Ref.h2(270389152141252877L, var47);

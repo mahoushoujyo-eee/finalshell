@@ -39,7 +39,7 @@ public class SelectUploadFile extends P__2 {
    public boolean N = true;
    public long D;
    public long u;
-   public CK I;
+   public ZModemTransfer I;
    public Cj4 K;
    public YI c;
    public GH_2 g;
@@ -72,7 +72,7 @@ public class SelectUploadFile extends P__2 {
       Object var10001 = Registry.lookupField(388376917454860932L).get(null);
       SelectUploadFile var10002 = Registry.packArgs(new St2(this, var5));
       long var8 = 434592463220957006L;
-      Object[] var7 = var10002;
+      Object var7 = var10002;
       Ref.h(434592463220957006L, var7, var8);
 
       try {
@@ -85,7 +85,7 @@ public class SelectUploadFile extends P__2 {
       var10002 = (SelectUploadFile)Registry.lookupField(388376917454860932L).get(null);
       GH_2 var10003 = (GH_2)(Registry.packArgs(new Xh2(this, var5), b(9751, 5158089169205765890L)));
       long var10 = 201859364639460244L;
-      Object[] var9 = var10003;
+      Object var9 = var10003;
       var10003 = Ref.h(201859364639460244L, var9, var10);
 
       try {
@@ -1271,10 +1271,11 @@ public class SelectUploadFile extends P__2 {
    }
 
    public boolean W(Dc4 var1) {
+      int var7;
       String var10000 = r$String();
       int var3 = var1.N(0, -1);
       String var2 = var10000;
-      int var7 = var3;
+      var7 = var3;
       if (var2 == null) {
          switch (var3) {
             case 0:
@@ -1676,6 +1677,7 @@ public class SelectUploadFile extends P__2 {
    }
 
    public static String T(char[] var0) {
+      StringBuilder var7;
       StringBuilder var2 = new StringBuilder(a(-18922, -18811));
       char[] var3 = var0;
       int var4 = var0.length;
@@ -1694,8 +1696,6 @@ public class SelectUploadFile extends P__2 {
 
             var5++;
             if (var1 == null) {
-      Connect_2 var7;
-      Connect_2 var7;
                continue;
             }
          }
@@ -1776,10 +1776,10 @@ public class SelectUploadFile extends P__2 {
             case 'X':
                return this.C(var1);
             case 'c':
-               int var5 = var1.c();
+               int var5 = (var1.c()) ? 1 : 0;
                if (var2 == null) {
-                  if (var5) {
-                     var5 = (var1.Q(0, 0)) != 0;
+                  if (var5 != 0) {
+                     var5 = var1.Q(0, 0);
                      if (var2 == null) {
                         if (var5 == 0) {
                            this.j();
@@ -1789,13 +1789,13 @@ public class SelectUploadFile extends P__2 {
                         var5 = 0;
                      }
 
-                     return (boolean)var5;
+                     return var5 != 0;
                   }
 
-                  var5 = this.j();
+                  var5 = (this.j()) ? 1 : 0;
                }
 
-               return (boolean)var5;
+               return var5 != 0;
             case 'd':
                return this.P(var1);
             case 'g':
@@ -1835,7 +1835,7 @@ public class SelectUploadFile extends P__2 {
          }
       }
 
-      return (boolean)var10000;
+      return var10000 != 0;
    }
 
    public boolean T(LY var1) {
@@ -1864,7 +1864,7 @@ public class SelectUploadFile extends P__2 {
                   var10000 = 1;
                }
 
-               return (boolean)var10000;
+               return var10000 != 0;
             case 22:
                return this.u(var1);
             case 23:
@@ -1874,7 +1874,7 @@ public class SelectUploadFile extends P__2 {
          }
       }
 
-      return (boolean)var10000;
+      return var10000 != 0;
    }
 
    public boolean u(LY var1) {
@@ -1893,7 +1893,7 @@ public class SelectUploadFile extends P__2 {
          }
       }
 
-      return (boolean)var10000;
+      return var10000 != 0;
    }
 
    public boolean q(LY var1) {
@@ -1912,7 +1912,7 @@ public class SelectUploadFile extends P__2 {
          }
       }
 
-      return (boolean)var10000;
+      return var10000 != 0;
    }
 
    public boolean l(int var1) {
@@ -1936,7 +1936,7 @@ public class SelectUploadFile extends P__2 {
          var10000 = 0;
       }
 
-      return (boolean)var10000;
+      return var10000 != 0;
    }
 
    public boolean C(LY var1) {
@@ -1946,7 +1946,7 @@ public class SelectUploadFile extends P__2 {
 
    public boolean X(LY var1, boolean var2) {
       String var3 = r$String();
-      int var10000 = var1.u();
+      int var10000 = (var1.u()) ? 1 : 0;
       if (var3 == null) {
          if (var10000 != 0) {
             var10000 = var1.Q(0, -1);
@@ -2079,7 +2079,7 @@ public class SelectUploadFile extends P__2 {
                }
             }
 
-            return (boolean)var10000;
+            return var10000 != 0;
          }
 
          var10000 = var1.Q(0, -1);
@@ -2106,7 +2106,7 @@ public class SelectUploadFile extends P__2 {
          }
       }
 
-      return (boolean)var10000;
+      return var10000 != 0;
    }
 
    public boolean P(LY var1) {
@@ -2122,7 +2122,7 @@ public class SelectUploadFile extends P__2 {
 
    public boolean v(LY var1) {
       String var2 = r$String();
-      int var10000 = var1.u();
+      int var10000 = (var1.u()) ? 1 : 0;
       if (var2 == null) {
          if (var10000 != 0) {
             J.warn(a(-18916, 23759));
@@ -2145,7 +2145,7 @@ public class SelectUploadFile extends P__2 {
 
          var10000 = var3;
          if (var2 != null) {
-            return (boolean)var3;
+            return var3 != 0;
          }
 
          var10001 = b(16191, 8883633026203434552L);
@@ -2160,7 +2160,7 @@ public class SelectUploadFile extends P__2 {
          return true;
       } else {
          J.warn(a(-18927, 11500) + var1.toString());
-         return (boolean)0;
+         return 0 != 0;
       }
    }
 
@@ -2196,7 +2196,7 @@ public class SelectUploadFile extends P__2 {
          }
       }
 
-      return (boolean)var3;
+      return var3 != 0;
    }
 
    public boolean x(LY var1) {
@@ -2393,6 +2393,7 @@ public class SelectUploadFile extends P__2 {
 
    @NotNull
    public static YP l(@NotNull YP var0, LY var1) {
+      int var7;
       AG var3 = var0.n();
       String var10000 = r$String();
       int var4 = var1.a$int();
@@ -2410,7 +2411,7 @@ public class SelectUploadFile extends P__2 {
 
       while (var5 < var4) {
          int var6 = 1;
-         int var7 = var1.Q(var5, -1);
+         var7 = var1.Q(var5, -1);
          int var11 = var7;
          if (var2 == null) {
             if (var7 == -1) {
@@ -2664,10 +2665,11 @@ public class SelectUploadFile extends P__2 {
    }
 
    public static Et2 v(LY var0, int var1) {
+      int var7;
       String var10000 = r$String();
       int var3 = var0.Q(var1 + 1, 0);
       String var2 = var10000;
-      int var7 = var3;
+      var7 = var3;
       byte var10001 = 2;
       if (var2 == null) {
          if (var3 == 2) {
@@ -3689,6 +3691,8 @@ public class SelectUploadFile extends P__2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var43;
+      byte[] var7;
       String[] var21 = new String[37];
       int var19 = 0;
       String var18 = "\u0001\u0081Ðp¬®w\u009b8ÏB\u0010\u0015RÚB@(Ó\u0084%ØxcqÉ|·\u0003×QØ\u0088§/\u0015j\u0005\br\u001f\bØÃ?Ùø+O¤\u001cæC'¶u\u0000õ½Ì\u0094ä}²Gk0\u008aüôÍ\u00105#\u0097FPt}\rtÄm]8\u0002¡Hp?\u0083ìº\u0003|\u0012Ç/gÏ!O\u000b\b_T4N\u0084=d\f6R&\u0099dÉC z\u0002qqHÒLRF\u0082\u0011}\u000eê\u001b\u0094|\u009c\u0091\u008df[-@Ô\u0006ÇÌ9èÅB\u000b/\u001eÀx!,Ø\u0004@:\u001f6÷\u0091Æ\u008cê\u0015É%D\u008a!\tý·\u0094ß¼\u0080É\u001exÛ\u0014DÉþ\u0003á\u009f©\u0098.¡oU\u0084³îiÓvS#@N\u0017\u001d±<\u0086\u00997Ó\u0002-.²çø\u0097\u0089f¶\u0096è¼MÆq~Óì\u0015p\u0088çæJ»\u0010'Ö>udÍi\u0018±]ª\\6´o¼î?ça\u0012o±ÒÈ\u0085\u0089a>½+[Ö³×{\u0015áë\"»\u001dM\u001cÓ<«\u0017ä\u000egu\u0080\u000e**C¿\u0003¢³8\u008eÀ\u0014\u008d+\u0017m¦\u009bYxá\u0012\u0090%\u0016\u000eHÓX´?Úw\\§æ=\u0019-)\u0014Ý\u0018¹ç7\u0005/ï4\u007f\u0006µ\u008d@Ü\u0007gg7m \u0098XðÎ\u008bp×\u0006¾öZÏÂ\u0005=ä\u0019\u001a\u008bãD4Tþµx\u008dÒ=RÎd\u0004©^ôÁ%\u0004\u009dê&\u0018\f(¸t@¾s*\u0092\u009b\u0010]@õ¾î\tÕ\u0013Ç¸\u00827½õ\u008fÀBjR§Ý\u001awõ\u001eþu\u007fU½\t\u0087Õt\u0002M78\nÛÞæ}Á% \u0019\u0095\u001a§\u000f\u0004¡6\u0094=À\u0004(t\u00816ó±ïÚ*Ô¢.[OsTò\u0013ºnCröóD¬\u0019yÝ\u009a\u007fÅyã)$\u0007\u0004Õz\u009d\u0002\røá=\u0092ÌÄ\r\u001fõÇ\tçë\u001f.Þýe\u008d(%\u0082Ù~\u0092\u0097\u008bdZ¥eÏò÷\u001fæøãT\n°\u007fézV%ªÓ¶¿C^ÎÃ\u009dN>ØNç¦©s\u0089Ýë®&,È{rÏ¤\u00ad\u001fRcì_pQf+ZÏgJ\u0088j.íew:¾\u0084AßU.:IF®9ò\u0089»<ì³÷Ó½6v®ñ6Ã7\u0006µÓ\r\u0088\b\u0019J\u001d`ò¾ï¥\u0010«\u0085¶\u0007{LýB`µO2eÉ!j\u0005\u008d:\u0094}é\u0006避戗亢伅敠买\u001c\u0011pÚß¨Ðm\u0093\u009aôë-:ä\u0092»mÆç\u009b\u0003Ëè£¤J¹\u001f\u001fmX\u0095µ\u00802\u0084Áí\u0016\u0014\u009a[Å@\u0091&I\u009a'\u0012üY `b6r9ÛL JßOÎ>\u0094:\u00923\u00ad\u009c\u0012ñ\u009dµ®»åÃ\u00920&\u001cG\u0012D\u0017uÏ\u009f\u000b´\u001c\u0084ùhîþö§WÃlà>\u007f\u0086:÷xOu§wçpÌ$\u000b\u000e%\u0012©\u0083\u001f\u0095Ê%¾\u0002×n¡\u0089\f3/\u0012¥°\u00126YùÕà*ÍJ(¥é\u0007åâ±]¸â";
@@ -3825,7 +3829,7 @@ public class SelectUploadFile extends P__2 {
                                     do {
                                        byte var37 = var2;
                                        var2 += 8;
-                                       byte[] var7 = var4.substring(var37, var2).getBytes("ISO-8859-1");
+                                       var7 = var4.substring(var37, var2).getBytes("ISO-8859-1");
                                        int var38 = var3++;
                                        var65 = (
                                              ((long)var7[0] & 255L) << 56
@@ -3902,7 +3906,6 @@ public class SelectUploadFile extends P__2 {
       }
    }
 }
-
 
 
 

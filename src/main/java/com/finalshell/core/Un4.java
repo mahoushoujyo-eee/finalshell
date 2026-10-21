@@ -1295,6 +1295,7 @@ public class Un4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[96];
       int var3 = 0;
       String var2 = "éâó\u0000\u001f\rb¶\u008a\u00adQÕ\u009a:)-\u0089\u0081y\bQÔåµ\u008d+yÀ\b«Ú³ vtg\u0011\u0005\u0088öÛ\u008a\u0099\u0005¨èß×\u0006\nÆi\u001eVÃªÓÇoÒ\tf@\nsA\n\u0085Wg\u0006Ãò¾%×È\t\u001cºE,¨ã¢2Ù\b÷o8\u0096\u0007©Eß\u0004\u0096&D\u0098\b\fKG\u0012è9¨Ò\u0003Ïv%\b¹Dñó>\u0014b\\\u000bPaÌW\u0099\u0092\u008eÜ\fJL\t\u0087<6üÆârjv\u0007É¶ÿ\u00adÿËY\u0006\u001e\u0096\u0000zÊ\u0083\u000f%\u0016b¹L[\"dN¢{£È¼¼\u0004Q\u008aæ\u0001\u00053F4ø°\u0004gG2_\t\u0014ÀDc\u0088\u0014°\nP\tý\u008eyª/1D0Ñ\u0007ù@â*WC\u001f\u0005m7v(\u0000\t>Ü\u0001à fµ\u0016÷\u0004_u%2\u00041`ú[\u0003Ñ\u001bý\b¬\u0089SJj\"ù¿\u0002[\u0013\rÚ\u009b\u009d\b³cÁ§¯»\u0003þ\u000b\u00042B\u0088\u0083\u0004Icã(\u0003\u000e\u0004\u0017\u0007S\u0089¬J\u0095\"\u0005\t~×\t\u0081!U\u0098\u0083ë\bF3\u000e\u001dÁÊ\u008fý\u0005\u001d8\u007f\u0089Ä\u000fÅú~$ÏøD\u0011XkgZx\t»\u0005¸\u000fÀ\u008a[\u0004\u0007¦.|\u000b\u0089=÷Üþôiþ\u009do\u008e\u0006Õ\u0011v\u0098õÍ\u0002ü \u000325\u0085\nBÓ\u008e\u0001Ñ[\u009d\u00933\u001a\tnà\u000bga\u0080\u0089\u000eë\u0004\u0088¥É,\b\u000e\u009d\u0007Èàr«¶\u00047::ý\u0003¹)ú\u000bAÝîÀÝt\u001a\u008e\u0019\u001cò\u0004)ðì]\u0004\u0016ï\u0018»\u000bÑëçªè@\u001f1Uý[\bÖe\u001c×\u0083\u0096ÀÚ\u0004üéIæ\fÉqÿUÿÁWÜ\u0082(Ãã\tÕ\u001b|\u0018\u008faFàX\b\na®Âí\nuä\u0004cU¯\t\tAÉóû¿£\u0093\u008c+\u0004ÑÄæ\t\tHpÏuùÓ\u0095L\u008a\u000f?*!>$¥!aë£\u0095C&*p\u0003©\u0017ø\u0011T\u007fL\u0094\u0089û\u0096ÂW\u0089\u0006\u0098òr¼áã\u0004T+M\u00ad\fÖz\u001c4\u0083èÛAn\"\u0090N\u0004¿\u000f(½\bi\u008bë\n}9\u0003\u00ad\tý±yM/Ë@¬Ç\u0004ÓÂ¦T\u0004üTDD\u000f\nå\u0087Çð\u0080¨\u0085º\u0013\u009d\u0087\u0014a1\u0002WP\u0004±³ê2\bu\u0094hé\r_\u00168\u0003\u001f\u001d?\u0004º\u00ad\u008bS\u0004r\u0093\u008c¯\u0003\u009f\u0019/\t\u0086ö\fW\u00ad\u0013\u008b7\u000b\u0004E\u0092wë\u0005\u001f\u0007-wÑ\u0003ñ\u009aâ\n»ä±ç6\u0098c\u0002§\u0086\tMöo¥íÔ\r\u0016Ô\u0006Ñûü\u0004\u009fë\b\u008bY·PönoÉ\r\u0015ìdæ\u008c¹4\u0018M'Ïz*";
@@ -1310,7 +1311,6 @@ public class Un4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

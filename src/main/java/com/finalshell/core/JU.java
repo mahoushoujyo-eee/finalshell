@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -31,7 +31,7 @@ public class JU {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public long K(byte[] var1) {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       long var3 = 0L;
       String[] var2 = var10000;
       int var5 = 0;
@@ -1570,6 +1570,7 @@ public class JU {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var43;
       String[] var21 = new String[6];
       int var19 = 0;
       String var18 = "ì4)¨\u0018ÀßA0\u000e\u007f\u0083V)R8§í\u0000ü¾\u0083Í\u0091\u0002øV\rÞÞ\u0006e¼µ\u0018ØÑYxKk";
@@ -1584,7 +1585,6 @@ public class JU {
          byte var10002 = -1;
 
          while (true) {
-      char[] var43;
             label75: {
                char[] var49 = var10001.toCharArray();
                int var10004 = var49.length;

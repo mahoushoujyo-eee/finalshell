@@ -4,7 +4,7 @@ import com.finalshell.core.L9;
 import com.finalshell.core.Y12_2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.RouteTracePanel3;
+import com.finalshell.ui.panel.RouteTraceAddressPanel;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,22 +14,23 @@ import javax.swing.JTextField;
 
 public class Qq2 implements ActionListener {
    public final Y12_2 A;
-   public final RouteTracePanel3 O;
+   public final RouteTraceAddressPanel O;
 
-   public Qq2(RouteTracePanel3 var1, Y12_2 var2) {
+   public Qq2(RouteTraceAddressPanel var1, Y12_2 var2) {
       this.O = var1;
       this.A = var2;
    }
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var30;
       int[] var2 = L9.X();
       if (var2 == null) {
          Object var4 = 527490353373132568L;
          Ref.g(527490353373132568L, var4);
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var7 = 410760064034581011L;
-         Object[] var6 = var10002;
+         Object var6 = var10002;
          var10002 = Ref.h(410760064034581011L, var6, var7);
 
          try {

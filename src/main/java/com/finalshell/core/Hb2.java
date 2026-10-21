@@ -879,13 +879,14 @@ public class Hb2 implements C7_3 {
    }
 
    public static int u(String[] var0, String var1) {
+      int var4;
       String[] var10000 = RG_2.C();
       int var3 = 0;
       String[] var2 = var10000;
 
       while (true) {
          if (var3 < var0.length) {
-            var4 = var0[var3].equals(var1);
+            var4 = (var0[var3].equals(var1)) ? 1 : 0;
             if (var2 == null) {
                break;
             }
@@ -912,13 +913,14 @@ public class Hb2 implements C7_3 {
    }
 
    public static int f(com.finalshell.ui.model.F2_2[] var0, com.finalshell.ui.model.F2_2 var1) {
+      int var4;
       String[] var10000 = RG_2.C();
       int var3 = 0;
       String[] var2 = var10000;
 
       while (true) {
          if (var3 < var0.length) {
-            var4 = var0[var3].equals(var1);
+            var4 = (var0[var3].equals(var1)) ? 1 : 0;
             if (var2 == null) {
                break;
             }
@@ -990,6 +992,7 @@ public class Hb2 implements C7_3 {
    }
 
    public static String w(@C_9 Object[] var0, String var1) {
+      int var4;
       String[] var2 = RG_2.C();
       Object[] var10000 = var0;
       if (var2 != null) {
@@ -1004,7 +1007,7 @@ public class Hb2 implements C7_3 {
          return a(24568, -4694);
       } else {
          StringBuilder var3 = new StringBuilder().append(var0[0]);
-         int var4 = 1;
+         var4 = 1;
 
          while (true) {
             if (var4 < var0.length) {
@@ -1036,6 +1039,7 @@ public class Hb2 implements C7_3 {
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 24574) & 65535;
       if (c[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1810,7 +1814,7 @@ public class Hb2 implements C7_3 {
                var10000 = 97;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -1841,11 +1845,13 @@ public class Hb2 implements C7_3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
+      boolean var4;
       String[] var5 = new String[10];
       int var3 = 0;
       String var2 = "'y\u0004\u0017\u0084+q\f\u000f1\u008aT\nS\u009ds[/s¬²\r£\u0084@ý´\b\u0095U6\u001cøcË.\u0003\u001bÜÄ\u0016\u0012ÊYÕ¡\u0005ÿ\u0005P\u000e¾\u0013BÃÿÒ\u0015\u0002½ cV\u0006M\u0007¶\u001aù)\u0013f/Ã\u0097FLP\u0007´\ttZö9G)òU¢\b\\\u008b\u000fÇß\u0018/A";
-      int var4 = "'y\u0004\u0017\u0084+q\f\u000f1\u008aT\nS\u009ds[/s¬²\r£\u0084@ý´\b\u0095U6\u001cøcË.\u0003\u001bÜÄ\u0016\u0012ÊYÕ¡\u0005ÿ\u0005P\u000e¾\u0013BÃÿÒ\u0015\u0002½ cV\u0006M\u0007¶\u001aù)\u0013f/Ã\u0097FLP\u0007´\ttZö9G)òU¢\b\\\u008b\u000fÇß\u0018/A"
-         .length();
+      var4 = "'y\u0004\u0017\u0084+q\f\u000f1\u008aT\nS\u009ds[/s¬²\r£\u0084@ý´\b\u0095U6\u001cøcË.\u0003\u001bÜÄ\u0016\u0012ÊYÕ¡\u0005ÿ\u0005P\u000e¾\u0013BÃÿÒ\u0015\u0002½ cV\u0006M\u0007¶\u001aù)\u0013f/Ã\u0097FLP\u0007´\ttZö9G)òU¢\b\\\u008b\u000fÇß\u0018/A";
+         // [VF] .length();
       char var1 = 3;
       int var8 = -1;
 
@@ -1856,7 +1862,6 @@ public class Hb2 implements C7_3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label53: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

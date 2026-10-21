@@ -85,6 +85,7 @@ public class IT3 {
    }
 
    public int H(String var1) {
+      int var7;
       int var3 = -1;
       String var10000 = Nv4.o();
       int var4 = 0;
@@ -96,7 +97,7 @@ public class IT3 {
          if (var4 < var5) {
             Ph2 var6 = this.c[var4];
             if (var2 != null) {
-               var7 = var6.I.equals(var1);
+               var7 = (var6.I.equals(var1)) ? 1 : 0;
                if (var2 == null) {
                   break;
                }
@@ -112,8 +113,6 @@ public class IT3 {
             }
 
             if (var2 != null) {
-      Integer var7;
-      Integer var7;
                continue;
             }
          }
@@ -159,6 +158,7 @@ public class IT3 {
    }
 
    public static void __vfClinit__() {
+      byte[] var7;
       long var0 = 2921285818936924334L;
       long[] var6 = new long[4];
       int var3 = 0;
@@ -170,7 +170,7 @@ public class IT3 {
       while (true) {
          int var10001 = var2;
          var2 += 8;
-         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
          long[] var10000 = var6;
          var10001 = var3++;
          long var10002 = ((long)var7[0] & 255L) << 56
@@ -226,7 +226,6 @@ public class IT3 {
       }
    }
 }
-
 
 
 

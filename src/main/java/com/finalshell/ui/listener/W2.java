@@ -16,6 +16,7 @@ public class W2 extends MouseAdapter {
 
    @Override
    public void mouseClicked(MouseEvent var1) {
+      File var4;
       String var2 = com.finalshell.ui.panel.T.v$String();
       int var10000 = (SwingUtilities.isLeftMouseButton(var1)) ? 1 : 0;
       if (var2 == null) {

@@ -59,13 +59,14 @@ public class CY3 extends CB3 {
    }
 
    public int w(File var1) {
+      int var4;
       String[] var10000 = CB3.C$arrString();
       int var3 = 0;
       String[] var2 = var10000;
 
       while (true) {
          if (var3 < this.getChildCount()) {
-            var4 = Cz2.n(this.V(var3).D(), var1);
+            var4 = (Cz2.n(this.V(var3).D(), var1)) ? 1 : 0;
             if (var2 == null) {
                break;
             }
@@ -145,6 +146,7 @@ public class CY3 extends CB3 {
    }
 
    public static String b(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ 30304) & 65535;
       if (f[var2] == null) {
          char[] var3 = d[var2].toCharArray();
@@ -919,7 +921,7 @@ public class CY3 extends CB3 {
                var10000 = 66;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;

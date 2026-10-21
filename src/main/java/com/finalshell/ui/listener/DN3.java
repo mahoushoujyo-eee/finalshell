@@ -3,7 +3,7 @@ package com.finalshell.ui.listener;
 import com.finalshell.core.Ne4;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import com.finalshell.ui.panel.PrivateKeyPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,13 +21,14 @@ public class DN3 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
-      ImportPanel.j();
+      boolean var44;
+      ImportMenuPanel.j();
       Registry.emptyArgs();
       long var8 = 270389152141252877L;
       Object var10002 = Ref.h2(270389152141252877L, var8);
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var11 = 306266403902896148L;
-      Object[] var10 = var10003;
+      Object var10 = var10003;
       Ref.h(306266403902896148L, var10, var11);
 
       try {
@@ -39,7 +40,7 @@ public class DN3 implements ActionListener {
       Object var2 = var10002;
       var10003 = Registry.emptyArgs();
       long var13 = 499444795808443762L;
-      Object[] var12 = var10003;
+      Object var12 = var10003;
       var10003 = Ref.h(499444795808443762L, var12, var13);
 
       try {

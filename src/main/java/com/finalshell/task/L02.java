@@ -2,7 +2,7 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.panel.Yp4;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -11,27 +11,27 @@ import javax.swing.JSplitPane;
 import net.miginfocom.swing.MigLayout;
 
 public class L02 implements Runnable {
-   public final U O;
+   public final MainFrame O;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   public L02(U var1) {
+   public L02(MainFrame var1) {
       this.O = var1;
    }
 
    @Override
    public void run() {
       Object var1 = 451257242703136292L;
-      ((U)Ref.g(451257242703136292L, var1)).setIconImage((Image)Registry.lookupField(582605604039442414L).get(null));
+      ((MainFrame)Ref.g(451257242703136292L, var1)).setIconImage((Image)Registry.lookupField(582605604039442414L).get(null));
       Object var3 = 451257242703136292L;
-      ((U)Ref.g(451257242703136292L, var3)).setMinimumSize(new Dimension(a(21910, 7787761067352798638L), a(629, 2106739438565417548L)));
+      ((MainFrame)Ref.g(451257242703136292L, var3)).setMinimumSize(new Dimension(a(21910, 7787761067352798638L), a(629, 2106739438565417548L)));
       Object var5 = 451257242703136292L;
       Ref.g(451257242703136292L, var5);
       Yp4 var10005;
       Object var7 = 451257242703136292L;
-      super((U)Ref.g(451257242703136292L, var7));
+      // [VF-super] super((U)Ref.g(451257242703136292L, var7));
       long var10 = 575209039576190599L;
       Yp4 var9 = var10005;
       Ref.s(575209039576190599L, var9, var10);
@@ -62,11 +62,11 @@ public class L02 implements Runnable {
       Object var33 = 467883177032167383L;
       ((Yp4)var10017).add((JSplitPane)Ref.g(467883177032167383L, var33), a(-10985, 27209));
       Object var35 = 451257242703136292L;
-      U var10018 = (U)Ref.g(451257242703136292L, var35);
+      MainFrame var10018 = (MainFrame)Ref.g(451257242703136292L, var35);
       Object var37 = 451257242703136292L;
       Object var10020 = Ref.g(451257242703136292L, var37);
       Object var39 = 575209039576190599L;
-      ((U)var10020).setContentPane((Yp4)Ref.g(575209039576190599L, var39));
+      ((MainFrame)var10020).setContentPane((Yp4)Ref.g(575209039576190599L, var39));
    }
 
    static {

@@ -36,9 +36,9 @@ public class DN extends Ne4 {
       Registry.emptyArgs();
       long var5 = 270389152141252877L;
       Ref.h2(270389152141252877L, var5);
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var8 = 634817973682994708L;
-      Object[] var7 = var10004;
+      Object var7 = var10004;
       Ref.h(634817973682994708L, var7, var8);
       var10004 = Registry.emptyArgs();
       long var9 = 499537131214815290L;
@@ -138,9 +138,9 @@ public class DN extends Ne4 {
    }
 
    public ImageIcon U(String var1) {
-      Object[] var10001 = Registry.packArgs(this.getClass(), var1);
+      Object var10001 = Registry.packArgs(this.getClass(), var1);
       long var3 = 224017843723037148L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(224017843723037148L, var2, var3);
 
       try {

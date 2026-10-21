@@ -1188,6 +1188,7 @@ public class DZ3 extends Dm4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "Â¼dá_¦úS\u0093oÚ3øÂÖ\t?\u001c\u0095\u0015ô\u008f£\u0011u";
@@ -1202,7 +1203,6 @@ public class DZ3 extends Dm4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

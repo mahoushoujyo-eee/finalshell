@@ -87,11 +87,13 @@ public class FY3 extends JPanel implements AL {
    }
 
    public T32 v(int var1) {
+      int[] var20;
+      Integer var22;
       Object var8 = 517694404810938447L;
       Ref.g(517694404810938447L, var8);
       ArrayList var10002 = (ArrayList)(Registry.emptyArgs());
       long var11 = 230171768324088030L;
-      Object[] var10 = var10002;
+      Object var10 = var10002;
       var10002 = Ref.h(230171768324088030L, var10, var11);
 
       try {
@@ -101,7 +103,7 @@ public class FY3 extends JPanel implements AL {
       }
 
       ArrayList var3 = var10002;
-      int[] var20 = L9.X();
+      var20 = L9.X();
       T32 var4 = null;
       int[] var2 = var20;
       int var5 = 0;
@@ -113,9 +115,9 @@ public class FY3 extends JPanel implements AL {
          Object[] var12 = var10003;
          Cc2 var7 = (Cc2)Ref.h(424156930953488367L, var12, var13);
          if (var2 == null) {
-            Object[] var10004 = Registry.emptyArgs();
+            Object var10004 = Registry.emptyArgs();
             long var15 = 618350555838951836L;
-            Object[] var14 = var10004;
+            Object var14 = var10004;
             var10004 = Ref.h(618350555838951836L, var14, var15);
 
             try {
@@ -137,13 +139,14 @@ public class FY3 extends JPanel implements AL {
    }
 
    public Cc2 c(String var1, String var2, int var3) {
+      long var22;
       Cc2 var5 = new Cc2(var1, var2, var3);
       L9.X();
       Object var11 = 517694404810938447L;
       Object var10002 = Ref.g(517694404810938447L, var11);
       ArrayList var10003 = (ArrayList)(Registry.emptyArgs());
       long var14 = 230171768324088030L;
-      Object[] var13 = var10003;
+      Object var13 = var10003;
       Object var10004 = var13;
       var10003 = Ref.h(230171768324088030L, var13, var14);
 
@@ -168,7 +171,7 @@ public class FY3 extends JPanel implements AL {
 
             var10003 = Registry.emptyArgs();
             long var16 = 424156930953488367L;
-            Object[] var15 = var10003;
+            Object var15 = var10003;
             var10004 = var15;
             Cc2 var10 = (Cc2)Ref.h(424156930953488367L, var15, var16);
             if (var4 == null) {
@@ -202,7 +205,7 @@ public class FY3 extends JPanel implements AL {
          Object var19 = 517694404810938447L;
          Ref.g(517694404810938447L, var19);
          var10004 = Registry.packArgs(var5, var1);
-         long var22 = 407014907239672455L;
+         var22 = 407014907239672455L;
          Object[] var21 = (Object[])var10004;
          var10004 = Ref.h(407014907239672455L, var21, var22);
 
@@ -1069,6 +1072,7 @@ public class FY3 extends JPanel implements AL {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[5];
       int var3 = 0;
       String var2 = "©rLiÿµÛ>ñ\u008fÛè]å\n'¦òg\u008fs\tÅ\u009a:L³ZX\u001b\u0082\u0012[cj\u0006þÆKÇS\u0003\u0003dp\u0012\u009bG'1¯¢ â¹\u0005\u0000\u009cNß½";
@@ -1084,7 +1088,6 @@ public class FY3 extends JPanel implements AL {
          byte var10002 = -1;
 
          while (true) {
-      Object var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

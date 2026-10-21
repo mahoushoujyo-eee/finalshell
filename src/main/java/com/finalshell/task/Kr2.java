@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
-import com.finalshell.connection.Connection12;
+import com.finalshell.connection.FileTransferConnection;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Kr2 implements Runnable {
-   public final Connection12 s;
+   public final FileTransferConnection s;
 
-   public Kr2(Connection12 var1) {
+   public Kr2(FileTransferConnection var1) {
       this.s = var1;
    }
 
@@ -16,7 +16,7 @@ public class Kr2 implements Runnable {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
    public void run() {
-      boolean var10000 = Connection12.d$boolean();
+      boolean var10000 = FileTransferConnection.d$boolean();
       int var2 = 0;
       boolean var1 = var10000;
 
@@ -26,7 +26,7 @@ public class Kr2 implements Runnable {
                label53: {
                   try {
                      Object var4 = 615872267704886591L;
-                     Connection12 var10001 = (Connection12)Ref.g(615872267704886591L, var4);
+                     FileTransferConnection var10001 = (FileTransferConnection)Ref.g(615872267704886591L, var4);
                      if (var1) {
                         break label53;
                      }
@@ -40,7 +40,7 @@ public class Kr2 implements Runnable {
 
                   try {
                      Object var6 = 615872267704886591L;
-                     Connection12 var10002 = (Connection12)Ref.g(615872267704886591L, var6);
+                     FileTransferConnection var10002 = (FileTransferConnection)Ref.g(615872267704886591L, var6);
                   } catch (Exception var14) {
                      boolean var17 = false;
                      break label54;

@@ -28,6 +28,8 @@ public class Am2 extends AG {
 
    @NotNull
    public Yw2 I(boolean var1) {
+      Et2 var7;
+      Et2 var9;
       String var10000 = Dx4.g();
       Et2 var3 = this.q.K();
       Et2 var4 = this.q.s();

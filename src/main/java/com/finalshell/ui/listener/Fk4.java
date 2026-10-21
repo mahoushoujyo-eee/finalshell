@@ -3,7 +3,7 @@ package com.finalshell.ui.listener;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.lang.reflect.InvocationTargetException;
@@ -12,10 +12,10 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class Fk4 implements KeyListener {
-   public final Connection4 G;
+   public final ConnectionInfoPanel G;
    public static long a;
 
-   public Fk4(Connection4 var1) {
+   public Fk4(ConnectionInfoPanel var1) {
       this.G = var1;
    }
 
@@ -29,7 +29,7 @@ public class Fk4 implements KeyListener {
 
    @Override
    public void keyPressed(KeyEvent var1) {
-      int[] var2 = Connection4.I();
+      int[] var2 = ConnectionInfoPanel.I();
       Fk4 var10000 = var1.getKeyCode();
       if (var2 != null) {
          if (var10000 != (int)a) {
@@ -38,7 +38,7 @@ public class Fk4 implements KeyListener {
 
          var10000 = this;
          Object var9 = 173244602779313450L;
-         ((Connection4)Ref.g(173244602779313450L, var9)).getMinSelectionRow();
+         ((ConnectionInfoPanel)Ref.g(173244602779313450L, var9)).getMinSelectionRow();
       }
 
       Fk4 var3 = var10000;
@@ -46,7 +46,7 @@ public class Fk4 implements KeyListener {
       Ref.g(173244602779313450L, var11);
       DefaultMutableTreeNode var10002 = (DefaultMutableTreeNode)(Registry.packArgs((int)var3));
       long var14 = 290714206414786866L;
-      Object[] var13 = var10002;
+      Object var13 = var10002;
       var10002 = Ref.h(290714206414786866L, var13, var14);
 
       try {
@@ -61,14 +61,14 @@ public class Fk4 implements KeyListener {
       Object var15 = 173244602779313450L;
       Ref.g(173244602779313450L, var15);
       Object var17 = 230619793659643674L;
-      TreePath var7 = ((Connection4)Ref.g(230619793659643674L, var17)).getPathForRow((int)var3);
+      TreePath var7 = ((ConnectionInfoPanel)Ref.g(230619793659643674L, var17)).getPathForRow((int)var3);
       Object var19 = 173244602779313450L;
       Ref.g(173244602779313450L, var19);
       Object var21 = 428509894309855334L;
       HashSet var10006 = (HashSet)Ref.g(428509894309855334L, var21);
       String var10008 = (String)(Registry.emptyArgs());
       long var24 = 498856411508641826L;
-      Object[] var23 = var10008;
+      Object var23 = var10008;
       var10008 = Ref.h(498856411508641826L, var23, var24);
 
       try {
@@ -96,9 +96,9 @@ public class Fk4 implements KeyListener {
       Ref.g(173244602779313450L, var29);
       Object var31 = 490343386624486773L;
       HashSet var10011 = (HashSet)Ref.g(490343386624486773L, var31);
-      Connection4 var10013 = Registry.emptyArgs();
+      ConnectionInfoPanel var10013 = Registry.emptyArgs();
       long var34 = 498856411508641826L;
-      Object[] var33 = var10013;
+      Object var33 = var10013;
       var10013 = Ref.h(498856411508641826L, var33, var34);
 
       try {
@@ -116,7 +116,7 @@ public class Fk4 implements KeyListener {
 
             var10012 = this;
             Object var35 = 173244602779313450L;
-            var10013 = (Connection4)Ref.g(173244602779313450L, var35);
+            var10013 = (ConnectionInfoPanel)Ref.g(173244602779313450L, var35);
             if (var2 == null) {
                break label74;
             }
@@ -134,14 +134,14 @@ public class Fk4 implements KeyListener {
 
          if (var10012 == null) {
             Object var39 = 173244602779313450L;
-            ((Connection4)Ref.g(173244602779313450L, var39)).collapsePath(new TreePath(var4.getPath()));
+            ((ConnectionInfoPanel)Ref.g(173244602779313450L, var39)).collapsePath(new TreePath(var4.getPath()));
             if (var2 != null) {
                return;
             }
          }
 
          Object var41 = 173244602779313450L;
-         var10013 = (Connection4)Ref.g(173244602779313450L, var41);
+         var10013 = (ConnectionInfoPanel)Ref.g(173244602779313450L, var41);
       }
 
       var10013.expandPath(new TreePath(var4.getPath()));

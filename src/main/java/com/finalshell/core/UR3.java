@@ -41,7 +41,7 @@ public class UR3 {
       Ref.g(426183702342174078L, var7);
       HttpClient var10002 = (HttpClient)(Registry.emptyArgs());
       long var10 = 288542378533398431L;
-      Object[] var9 = var10002;
+      Object var9 = var10002;
       var10002 = Ref.h(288542378533398431L, var9, var10);
 
       try {

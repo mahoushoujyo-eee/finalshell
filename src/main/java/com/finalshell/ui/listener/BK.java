@@ -7,9 +7,9 @@ import java.awt.event.WindowEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class BK extends WindowAdapter {
-   public final com.finalshell.ui.frame.U h;
+   public final com.finalshell.ui.frame.MainFrame h;
 
-   public BK(com.finalshell.ui.frame.U var1) {
+   public BK(com.finalshell.ui.frame.MainFrame var1) {
       this.h = var1;
    }
 

@@ -15,7 +15,7 @@ import javax.swing.JScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 public class UV3 extends JComponent {
-   public Connection5 W;
+   public ImportExportPanel W;
    public ShowDeletedPanel I;
    public boolean t;
    public JScrollPane F;
@@ -25,14 +25,15 @@ public class UV3 extends JComponent {
    public static Integer[] d;
 
    public UV3(ShowDeletedPanel var1, boolean var2) {
+      super();
       long var6 = 257294914128163735L;
       Ref.s(257294914128163735L, var1, var6);
       Registry.lookupField(330217478217250371L).setBoolean(this, var2);
       this.setOpaque(false);
       this.setLayout(new MigLayout(a(-9810, 24047), a(-9811, -4411), a(-9812, 15942)));
-      Connection5 var10002 = new Connection5(var1, var2);
+      ImportExportPanel var10002 = new ImportExportPanel(var1, var2);
       long var8 = 601581016628183308L;
-      Connection5 var7 = var10002;
+      ImportExportPanel var7 = var10002;
       Ref.s(601581016628183308L, var7, var8);
       GradientPaint var3 = new GradientPaint(
          -100.0F,
@@ -44,7 +45,7 @@ public class UV3 extends JComponent {
       );
       An2 var10003;
       Object var9 = 601581016628183308L;
-      super(var1, this, (Connection5)Ref.g(601581016628183308L, var9), var3);
+      // [VF-super] super(var1, this, (Connection5)Ref.g(601581016628183308L, var9), var3);
       An2 var4 = var10003;
       var4.addComponentListener(new KA(this, var4, var1));
       JScrollPane var10004 = new JScrollPane(var4);
@@ -66,10 +67,11 @@ public class UV3 extends JComponent {
    }
 
    public void s(TQ3 var1) {
+      Integer var62;
       String[] var2 = F8.y();
       Integer var10001 = (Integer)(Registry.emptyArgs());
       long var4 = 486203322657356972L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(486203322657356972L, var3, var4);
 
       try {
@@ -87,9 +89,9 @@ public class UV3 extends JComponent {
             long var8 = 328789796189272699L;
             Object[] var7 = var10004;
             Ref.h(328789796189272699L, var7, var8);
-            Object[] var10006 = Registry.emptyArgs();
+            Object var10006 = Registry.emptyArgs();
             long var10 = 423843973564553523L;
-            Object[] var9 = var10006;
+            Object var9 = var10006;
             var10006 = Ref.h(423843973564553523L, var9, var10);
 
             try {
@@ -226,12 +228,12 @@ public class UV3 extends JComponent {
       super.paintComponent(var1);
    }
 
-   public Connection5 b() {
+   public ImportExportPanel b() {
       Object var1 = 601581016628183308L;
-      return (Connection5)Ref.g(601581016628183308L, var1);
+      return (ImportExportPanel)Ref.g(601581016628183308L, var1);
    }
 
-   public void B(Connection5 var1) {
+   public void B(ImportExportPanel var1) {
       long var3 = 601581016628183308L;
       Ref.s(601581016628183308L, var1, var3);
    }
@@ -1055,6 +1057,7 @@ public class UV3 extends JComponent {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "\u0019¸\u0002\u00006\u0011\u0006¹\u008f\u0016æ´Í";
@@ -1069,7 +1072,6 @@ public class UV3 extends JComponent {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

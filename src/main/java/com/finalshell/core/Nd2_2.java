@@ -2,11 +2,11 @@ package com.finalshell.core;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.dialog.EditDialog;
+import com.finalshell.ui.dialog.PortForwardEditDialog;
 import com.finalshell.ui.listener.UB;
 import com.finalshell.ui.model.BS;
 import com.finalshell.ui.model.ExtranetAddressModel;
-import com.finalshell.ui.panel.AcceleratePanel3;
+import com.finalshell.ui.panel.PortForwardCellRenderer;
 import com.finalshell.ui.panel.AccelerateRdpHelpPanel;
 import java.awt.Color;
 import java.lang.reflect.InvocationTargetException;
@@ -50,7 +50,7 @@ public class Nd2_2 extends JTable {
       this.setRowSorter(null);
       this.getColumnModel().getColumn(0).setMinWidth(a(15844, 5870797141390252950L));
       new com.finalshell.ui.adapter.N3(0);
-      AcceleratePanel3 var5 = new AcceleratePanel3();
+      PortForwardCellRenderer var5 = new PortForwardCellRenderer();
       this.getColumnModel().getColumn(0).setCellRenderer(var5);
       this.setRowHeight(a(27449, 5285897594889932106L));
       Object var14 = 327847991708180521L;
@@ -69,7 +69,7 @@ public class Nd2_2 extends JTable {
       Ref.h(542425596934223077L, var5, var6);
       BS var10002 = (BS)(Registry.packArgs(var2));
       long var8 = 397133340990525366L;
-      Object[] var7 = var10002;
+      Object var7 = var10002;
       var10002 = Ref.h(397133340990525366L, var7, var8);
 
       try {
@@ -80,7 +80,7 @@ public class Nd2_2 extends JTable {
 
       BS var3 = var10002;
       Object var9 = 318095264546736274L;
-      super((AccelerateRdpHelpPanel)Ref.g(318095264546736274L, var9), var3, true);
+      // [VF-super] super((AccelerateRdpHelpPanel)Ref.g(318095264546736274L, var9), var3, true);
    }
 
    public void y(List var1) {
@@ -111,9 +111,9 @@ public class Nd2_2 extends JTable {
 
    @Override
    public TableModel getModel() {
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var2 = 542425596934223077L;
-      Object[] var1 = var10001;
+      Object var1 = var10001;
       var10001 = Ref.h(542425596934223077L, var1, var2);
 
       try {

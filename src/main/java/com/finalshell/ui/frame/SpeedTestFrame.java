@@ -2,7 +2,7 @@ package com.finalshell.ui.frame;
 
 import com.finalshell.core.Cq2;
 import com.finalshell.core.KV;
-import com.finalshell.core.LF3_2;
+import com.finalshell.core.SpeedTestService;
 import com.finalshell.core.Lv4_2;
 import com.finalshell.core.VO;
 import com.finalshell.reflect.Ref;
@@ -10,7 +10,7 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.task.QC;
 import com.finalshell.ui.listener.JD;
 import com.finalshell.ui.panel.Ky4;
-import com.finalshell.ui.panel.SPanel;
+import com.finalshell.ui.panel.TransferSpeedPanel;
 import java.awt.Image;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JFrame;
@@ -19,17 +19,17 @@ import net.miginfocom.swing.MigLayout;
 
 public class SpeedTestFrame extends JFrame implements Cq2 {
    public Lv4_2 o;
-   public U K;
-   public SPanel g;
-   public SPanel E;
-   public LF3_2 n;
-   public LF3_2 u;
+   public MainFrame K;
+   public TransferSpeedPanel g;
+   public TransferSpeedPanel E;
+   public SpeedTestService n;
+   public SpeedTestService u;
    public boolean Q;
    public static Ky4[] H;
    public static String[] a;
    public static String[] b;
 
-   public SpeedTestFrame(Lv4_2 var1, U var2) {
+   public SpeedTestFrame(Lv4_2 var1, MainFrame var2) {
    super((Lv4_2)Ref.g(229405627664598133L, var2), true);
       Registry.lookupField(410260607189217057L).setBoolean(this, true);
       this.setIconImage((Image)Registry.lookupField(582605604039442414L).get(null));
@@ -40,7 +40,7 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
       StringBuilder var10003 = new StringBuilder().append(a(-26263, 18661));
       String var10005 = (String)(Registry.emptyArgs());
       long var9 = 286931176286176762L;
-      Object[] var8 = var10005;
+      Object var8 = var10005;
       var10005 = Ref.h(286931176286176762L, var8, var9);
 
       try {
@@ -52,18 +52,18 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
       var10003.setTitle(var1.append((String)var10005).toString());
       JPanel var3 = (JPanel)this.getContentPane();
       var3.setLayout(new MigLayout(a(-26264, -8129)));
-      SPanel var10004 = new SPanel(var1, true);
+      TransferSpeedPanel var10004 = new TransferSpeedPanel(var1, true);
       long var11 = 621282705578779922L;
-      SPanel var10 = var10004;
+      TransferSpeedPanel var10 = var10004;
       Ref.s(621282705578779922L, var10, var11);
       Object var12 = 621282705578779922L;
-      this.add((SPanel)Ref.g(621282705578779922L, var12), a(-26261, -13169));
-      SPanel var10006 = new SPanel(var1, false);
+      this.add((TransferSpeedPanel)Ref.g(621282705578779922L, var12), a(-26261, -13169));
+      TransferSpeedPanel var10006 = new TransferSpeedPanel(var1, false);
       long var15 = 243807904563579330L;
-      SPanel var14 = var10006;
+      TransferSpeedPanel var14 = var10006;
       Ref.s(243807904563579330L, var14, var15);
       Object var16 = 243807904563579330L;
-      this.add((SPanel)Ref.g(243807904563579330L, var16), a(-26262, 27868));
+      this.add((TransferSpeedPanel)Ref.g(243807904563579330L, var16), a(-26262, 27868));
       this.pack();
       this.setLocationRelativeTo(var2);
       this.setVisible(true);
@@ -83,10 +83,11 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
    }
 
    public void a() {
-      LF3_2 var10002;
+      long var21;
+      SpeedTestService var10002;
       Object var2 = 229405627664598133L;
       long var5 = 414968019500081253L;
-      LF3_2 var4 = var10002;
+      SpeedTestService var4 = var10002;
       Ref.s(414968019500081253L, var4, var5);
       Object var6 = 414968019500081253L;
       Ref.g(414968019500081253L, var6);
@@ -116,16 +117,16 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
       }
 
       Object var1 = var10006;
-      LF3_2 var10008;
+      SpeedTestService var10008;
       Object var14 = 229405627664598133L;
-      super((Lv4_2)Ref.g(229405627664598133L, var14), false);
+      // [VF-super] super((Lv4_2)Ref.g(229405627664598133L, var14), false);
       long var17 = 381221284030551019L;
-      LF3_2 var16 = var10008;
+      SpeedTestService var16 = var10008;
       Ref.s(381221284030551019L, var16, var17);
       Object var18 = 381221284030551019L;
       Ref.g(381221284030551019L, var18);
       Object[] var10010 = Registry.packArgs(this);
-      long var21 = 315891858175199008L;
+      var21 = 315891858175199008L;
       Object[] var20 = var10010;
       Ref.h(315891858175199008L, var20, var21);
 
@@ -156,7 +157,7 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
       label36: {
          Ky4[] var1 = K();
          Object var2 = 414968019500081253L;
-         var10001 = (LF3_2)Ref.g(414968019500081253L, var2);
+         var10001 = (SpeedTestService)Ref.g(414968019500081253L, var2);
          if (var1 != null) {
             if (var10001 != null) {
                Object var4 = 414968019500081253L;
@@ -179,7 +180,7 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
             }
 
             Object var8 = 381221284030551019L;
-            LF3_2 var10002 = (LF3_2)Ref.g(381221284030551019L, var8);
+            SpeedTestService var10002 = (SpeedTestService)Ref.g(381221284030551019L, var8);
          }
 
          if (var10001 != null) {
@@ -208,10 +209,12 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
 
    @Override
    public void u(VO var1) {
+      long var21;
+      boolean var29;
       Ky4[] var2 = K();
-      Object[] var10001 = Registry.emptyArgs();
+      Object var10001 = Registry.emptyArgs();
       long var5 = 286534625936175400L;
-      Object[] var4 = var10001;
+      Object var4 = var10001;
       var10001 = Ref.h(286534625936175400L, var4, var5);
 
       try {
@@ -225,7 +228,7 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
          Ref.g(414968019500081253L, var6);
          KV var10003 = (KV)(Registry.emptyArgs());
          long var9 = 574532470419654490L;
-         Object[] var8 = var10003;
+         Object var8 = var10003;
          var10003 = Ref.h(574532470419654490L, var8, var9);
 
          try {
@@ -257,7 +260,7 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
       Ref.g(381221284030551019L, var14);
       KV var32 = (KV)(Registry.emptyArgs());
       long var17 = 574532470419654490L;
-      Object[] var16 = var32;
+      Object var16 = var32;
       var32 = Ref.h(574532470419654490L, var16, var17);
 
       try {
@@ -270,7 +273,7 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
       Object var18 = 243807904563579330L;
       Ref.g(243807904563579330L, var18);
       Object[] var35 = Registry.packArgs(var27);
-      long var21 = 339009991731150961L;
+      var21 = 339009991731150961L;
       Object[] var20 = var35;
       Ref.h(339009991731150961L, var20, var21);
 
@@ -1099,6 +1102,7 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var21;
       String[] var5 = new String[4];
       Ky4[] var10000 = new Ky4[5];
       int var3 = 0;
@@ -1115,7 +1119,6 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
          byte var10002 = -1;
 
          while (true) {
-      long var21;
             label47: {
                char[] var25 = var10001.toCharArray();
                int var10004 = var25.length;

@@ -2,16 +2,16 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 
 public class Ok4 implements PopupMenuListener {
    public final com.finalshell.ui.dialog.KQ L;
-   public final Connection5 v;
+   public final ImportExportPanel v;
 
-   public Ok4(Connection5 var1, com.finalshell.ui.dialog.KQ var2) {
+   public Ok4(ImportExportPanel var1, com.finalshell.ui.dialog.KQ var2) {
       this.v = var1;
       this.L = var2;
    }

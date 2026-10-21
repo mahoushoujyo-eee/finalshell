@@ -1,6 +1,6 @@
 package com.finalshell.task;
 
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
@@ -9,10 +9,10 @@ import java.util.concurrent.Callable;
 public class Yv2 implements Callable {
    public final String F;
    public final String L;
-   public final Ty2 M;
+   public final RemoteProcessManager M;
    public static String a;
 
-   public Yv2(Ty2 var1, String var2, String var3) {
+   public Yv2(RemoteProcessManager var1, String var2, String var3) {
       this.M = var1;
       this.F = var2;
       this.L = var3;

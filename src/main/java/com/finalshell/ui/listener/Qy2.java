@@ -2,17 +2,17 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Qy2 implements MouseListener {
-   public final Connection4 n;
+   public final ConnectionInfoPanel n;
    public static long a;
 
-   public Qy2(Connection4 var1) {
+   public Qy2(ConnectionInfoPanel var1) {
       this.n = var1;
    }
 
@@ -22,13 +22,13 @@ public class Qy2 implements MouseListener {
 
    @Override
    public void mousePressed(MouseEvent var1) {
-      int[] var2 = Connection4.I();
+      int[] var2 = ConnectionInfoPanel.I();
       if (var1.getButton() == 1) {
          Object var6 = 170719139226265942L;
          Ref.g(170719139226265942L, var6);
          DefaultMutableTreeNode var10002 = (DefaultMutableTreeNode)(Registry.packArgs(var1.getPoint()));
          long var9 = 229190360333115919L;
-         Object[] var8 = var10002;
+         Object var8 = var10002;
          var10002 = Ref.h(229190360333115919L, var8, var9);
 
          try {
@@ -52,7 +52,7 @@ public class Qy2 implements MouseListener {
 
                   var10003 = this;
                   Object var12 = 170719139226265942L;
-                  Connection4 var10004 = (Connection4)Ref.g(170719139226265942L, var12);
+                  ConnectionInfoPanel var10004 = (ConnectionInfoPanel)Ref.g(170719139226265942L, var12);
                   if (var2 == null) {
                      break label44;
                   }
@@ -73,7 +73,7 @@ public class Qy2 implements MouseListener {
                }
 
                Object var16 = 170719139226265942L;
-               Connection4 var24 = (Connection4)Ref.g(170719139226265942L, var16);
+               ConnectionInfoPanel var24 = (ConnectionInfoPanel)Ref.g(170719139226265942L, var16);
             }
 
             Object var18 = 285663222664681848L;

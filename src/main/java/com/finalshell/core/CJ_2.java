@@ -70,7 +70,7 @@ public final class CJ_2 implements SwingConstants {
          var6 = Lq4.E$cG_3() == CG3.flow ? 1 : 0;
          var7 = Lq4.L();
          var8 = Lq4.J();
-         var9 = (Lq4.d()) ? 1 : 0;
+         var9 = (byte)((Lq4.d()) ? 1 : 0);
          var10 = Lq4.S();
          var11 = 0;
          var12 = 0;

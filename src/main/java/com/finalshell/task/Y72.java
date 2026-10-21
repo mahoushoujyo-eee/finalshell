@@ -1600,6 +1600,7 @@ public class Y72 implements Runnable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var15 = new String[4];
       int var13 = 0;
       String var12 = "}e\u001a\u0007>\u0004ÂS»\u0085\u008e\u008cHÀcSsDÌN\u001a÷'\u0089ä`|R\u0099ºÇ\u0091ë^þ)¯þ#6RWe\u0094\u0003VsÜ\u000eØ~W¡g\u008d¾ø2\u0001iÐÀñù^ÝÁ6@¼»h\u0086)2Ñá";
@@ -1615,7 +1616,6 @@ public class Y72 implements Runnable {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label56: {
                char[] var38 = var10001.toCharArray();
                int var10004 = var38.length;

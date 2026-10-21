@@ -35,20 +35,20 @@ public class Kg4 implements ActionListener {
       var10004 = Ref.h(240567170779145617L, var12, var13);
       ConnectionProperty var10005 = Registry.emptyArgs();
       long var15 = 226341449505323490L;
-      Object[] var14 = var10005;
+      Object var14 = var10005;
       var10005 = Ref.h(226341449505323490L, var14, var15);
 
       try {
-         var10005 = (com.finalshell.ui.frame.U)var10005;
+         var10005 = (com.finalshell.ui.frame.MainFrame)var10005;
       } catch (InvocationTargetException var27) {
          throw var27.getTargetException();
       }
 
-      com.finalshell.ui.frame.U var3 = var10005;
+      com.finalshell.ui.frame.MainFrame var3 = var10005;
       Object var2 = var10004;
       var10005 = Registry.emptyArgs();
       long var17 = 179934491990092343L;
-      Object[] var16 = var10005;
+      Object var16 = var10005;
       var10005 = Ref.h(179934491990092343L, var16, var17);
 
       try {

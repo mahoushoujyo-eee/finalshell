@@ -1004,6 +1004,7 @@ public class J3 extends G implements TreeCellRenderer {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[12];
       int var3 = 0;
       String var2 = "\u0016ÍÃÌ\u0014t§·\fÀ\u009bn_üJ_\u0090ÎKÒ2&\u008fà·\u0004+7\u0003,\u0004lrë\u0084\u0011ÀíE\u0081%;\u0005¢\u0098\u0001ò<Rnvüf\u0004A~0&\u0004%ï\u0011n\u0013S\u00947®kÉÌ\u001d¹tÇ\u0018¾wÊ\u0097ö{\u000b\u0004çNý¼\u0006\u0007\u0090fåAd";
@@ -1019,7 +1020,6 @@ public class J3 extends G implements TreeCellRenderer {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

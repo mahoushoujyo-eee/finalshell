@@ -82,6 +82,11 @@ public class L extends W_2 implements HQ {
    }
 
    public void B(Graphics2D var1, JPopupMenu var2, Dimension var3) {
+      int var19;
+      int var20;
+      boolean var21;
+      int var23;
+      Component var24;
       int[] var4 = W_2.B$arrint();
       L var10000 = this;
       if (var4 == null) {
@@ -102,7 +107,6 @@ public class L extends W_2 implements HQ {
       }
 
       if (var4 == null) {
-      int var18;
       int var18;
          var17 = var17 == 1 ? 1 : 0;
       }
@@ -130,7 +134,7 @@ public class L extends W_2 implements HQ {
       }
 
       int var7 = var18;
-      int var19 = var7;
+      var19 = var7;
       if (var4 == null) {
          if (var7 == 0) {
             return;
@@ -155,7 +159,7 @@ public class L extends W_2 implements HQ {
       label199: {
          int var8 = var20;
          Component var9 = var2.getComponent(var8);
-         boolean var21 = var2 instanceof BasicComboPopup;
+         var21 = var2 instanceof BasicComboPopup;
          if (var4 == null) {
             if (var21) {
                Component var22 = var9;
@@ -326,6 +330,10 @@ public class L extends W_2 implements HQ {
 
    @Override
    public Point F(JPopupMenu var1, Component var2, int var3, int var4) {
+      boolean var17;
+      boolean var18;
+      boolean var19;
+      L var21;
       int[] var10000 = W_2.B$arrint();
       byte var6 = var2.getComponentOrientation().isLeftToRight();
       int[] var5 = var10000;
@@ -384,7 +392,7 @@ public class L extends W_2 implements HQ {
                label534: {
                   var8 = var17;
                   var9 = this.c();
-                  boolean var18 = var2 instanceof JMenu;
+                  var18 = var2 instanceof JMenu;
                   if (var5 == null) {
                      if (!var18) {
                         break label534;
@@ -614,8 +622,8 @@ public class L extends W_2 implements HQ {
                               int var11;
                               int var58;
                               label516: {
-                                 var11 = ((var20) ? 1 : 0) ? 1 : 0;
-                                 var58 = ((this.Y) != 0) != 0;
+                                 var11 = (var20) ? 1 : 0;
+                                 var58 = this.Y;
                                  if (var5 == null) {
                                     if (!this.Y) {
                                        var58 = 0;
@@ -1700,6 +1708,9 @@ public class L extends W_2 implements HQ {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var16;
+      int var23;
+      int var27;
       String[] var13 = new String[2];
       int var11 = 0;
       String var10 = "nêêÄéåí1CIä<\u001b´3\u0091\bWãéå\u0089Óá¯";
@@ -1713,10 +1724,9 @@ public class L extends W_2 implements HQ {
             char[] var10003 = var10.substring(++var8, var8 + var9).toCharArray();
             int var10004 = var10003.length;
             int var14 = 0;
-            byte var23 = 16;
+            var23 = 16;
             var10002 = var10003;
-            int var16 = var10004;
-            byte var27;
+            var16 = var10004;
             char[] var10005;
             int var10006;
             if (var10004 <= 1) {
@@ -1821,7 +1831,6 @@ public class L extends W_2 implements HQ {
       }
    }
 }
-
 
 
 

@@ -1082,7 +1082,9 @@ public class Cr2_2 implements W2_4 {
    }
 
    public C_2_2 Q(short var1, String var2, String var3, @C_9 Object var4) {
-      ArrayList var5 = new ArrayList();
+      ArrayList var5;
+      C_2_2 var6;
+      var5 = new ArrayList();
 
       try {
          if (var4 != null) {
@@ -1092,7 +1094,7 @@ public class Cr2_2 implements W2_4 {
          throw a(var7);
       }
 
-      C_2_2 var6 = new C_2_2(this, var1, this.H(var2), this.H(var3), var5);
+      var6 = new C_2_2(this, var1, this.H(var2), this.H(var3), var5);
       this.r.add(var6);
       return var6;
    }
@@ -1104,7 +1106,7 @@ public class Cr2_2 implements W2_4 {
       label47: {
          label46: {
             try {
-               var10000 = (F7.G(var1)) ? 1 : 0;
+               var10000 = (byte)((F7.G(var1)) ? 1 : 0);
                if (var4 != null) {
                   break label47;
                }
@@ -1265,6 +1267,7 @@ public class Cr2_2 implements W2_4 {
    }
 
    public static short[] i(DataInputStream var0) throws IOException {
+      short[] var5;
       Ky4[] var10000 = q$arrky_4();
       short[] var2 = new short[var0.readUnsignedShort()];
       int var3 = 0;
@@ -1272,7 +1275,6 @@ public class Cr2_2 implements W2_4 {
 
       while (true) {
          if (var3 < var2.length) {
-      Ky4[] var5;
             try {
                var5 = var2;
                if (var1 != null) {
@@ -1366,6 +1368,7 @@ public class Cr2_2 implements W2_4 {
    }
 
    public List x(DataInputStream var1) throws IOException {
+      ArrayList var6;
       Ky4[] var10000 = q$arrky_4();
       ArrayList var3 = new ArrayList();
       Ky4[] var2 = var10000;
@@ -1397,11 +1400,13 @@ public class Cr2_2 implements W2_4 {
    }
 
    public List v$List(DataInputStream var1) throws IOException {
+      int var5;
+      ArrayList var7;
       Ky4[] var10000 = q$arrky_4();
       int var3 = var1.readUnsignedShort();
       Ky4[] var2 = var10000;
       ArrayList var4 = new ArrayList(var3);
-      int var5 = 0;
+      var5 = 0;
 
       while (true) {
          if (var5 < var3) {
@@ -1429,11 +1434,13 @@ public class Cr2_2 implements W2_4 {
    }
 
    public List u$List(DataInputStream var1) throws IOException {
+      int var5;
+      ArrayList var7;
       int var3 = var1.readUnsignedShort();
       Ky4[] var10000 = q$arrky_4();
       ArrayList var4 = new ArrayList(var3);
       Ky4[] var2 = var10000;
-      int var5 = 0;
+      var5 = 0;
 
       while (true) {
          if (var5 < var3) {
@@ -1539,6 +1546,7 @@ public class Cr2_2 implements W2_4 {
    }
 
    public static void Q(DataOutputStream var0, List var1) throws IOException {
+      X2_3 var6;
       Ky4[] var10000 = q$arrky_4();
       var0.writeShort(var1.size());
       Ky4[] var2 = var10000;
@@ -1576,12 +1584,13 @@ public class Cr2_2 implements W2_4 {
    }
 
    public static void q(DataOutputStream var0, short[] var1) throws IOException {
+      int var5;
       var0.writeShort(var1.length);
       short[] var3 = var1;
       Ky4[] var10000 = q$arrky_4();
       int var4 = var1.length;
       Ky4[] var2 = var10000;
-      int var5 = 0;
+      var5 = 0;
 
       while (var5 < var4) {
          short var6 = var3[var5];
@@ -1674,14 +1683,18 @@ public class Cr2_2 implements W2_4 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public Y_3 g$Y(DataInputStream var1) throws IOException {
+      byte[] var5;
+      short var53;
+      ByteArrayInputStream var6;
+      DataInputStream var7;
       Ky4[] var10000 = q$arrky_4();
       short var3 = var1.readShort();
       Ky4[] var2 = var10000;
       int var4 = var1.readInt();
-      byte[] var5 = new byte[var4];
+      var5 = new byte[var4];
       var1.readFully(var5);
-      ByteArrayInputStream var6 = new ByteArrayInputStream(var5);
-      DataInputStream var7 = new DataInputStream(var6);
+      var6 = new ByteArrayInputStream(var5);
+      var7 = new DataInputStream(var6);
       String var8 = this.S$String(var3);
 
       Y_3 var9;
@@ -1689,7 +1702,7 @@ public class Cr2_2 implements W2_4 {
          label393: {
             label413: {
                try {
-                  var53 = a(-3944, -18546).equals(var8);
+                  var53 = (a(-3944, -18546).equals(var8)) ? 1 : 0;
                   if (var2 != null) {
                      break label393;
                   }
@@ -1714,7 +1727,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3953, 32510).equals(var8);
+               var53 = (a(-3953, 32510).equals(var8)) ? 1 : 0;
             } catch (IOException var12) {
                boolean var68 = false;
                throw a(var12);
@@ -1748,7 +1761,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3956, -19411).equals(var8);
+               var53 = (a(-3956, -19411).equals(var8)) ? 1 : 0;
             } catch (IOException var13) {
                boolean var70 = false;
                throw a(var13);
@@ -1782,7 +1795,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3966, 8071).equals(var8);
+               var53 = (a(-3966, 8071).equals(var8)) ? 1 : 0;
             } catch (IOException var14) {
                boolean var72 = false;
                throw a(var14);
@@ -1816,7 +1829,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3963, -28650).equals(var8);
+               var53 = (a(-3963, -28650).equals(var8)) ? 1 : 0;
             } catch (IOException var15) {
                boolean var74 = false;
                throw a(var15);
@@ -1850,7 +1863,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3968, -17269).equals(var8);
+               var53 = (a(-3968, -17269).equals(var8)) ? 1 : 0;
             } catch (IOException var16) {
                boolean var76 = false;
                throw a(var16);
@@ -1884,7 +1897,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3948, -22978).equals(var8);
+               var53 = (a(-3948, -22978).equals(var8)) ? 1 : 0;
             } catch (IOException var17) {
                boolean var78 = false;
                throw a(var17);
@@ -1918,7 +1931,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3911, -29298).equals(var8);
+               var53 = (a(-3911, -29298).equals(var8)) ? 1 : 0;
             } catch (IOException var18) {
                boolean var80 = false;
                throw a(var18);
@@ -1952,7 +1965,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3952, 1820).equals(var8);
+               var53 = (a(-3952, 1820).equals(var8)) ? 1 : 0;
             } catch (IOException var19) {
                boolean var82 = false;
                throw a(var19);
@@ -1986,7 +1999,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3939, 4339).equals(var8);
+               var53 = (a(-3939, 4339).equals(var8)) ? 1 : 0;
             } catch (IOException var20) {
                boolean var84 = false;
                throw a(var20);
@@ -2020,7 +2033,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3957, -28995).equals(var8);
+               var53 = (a(-3957, -28995).equals(var8)) ? 1 : 0;
             } catch (IOException var21) {
                boolean var86 = false;
                throw a(var21);
@@ -2054,7 +2067,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3938, 12798).equals(var8);
+               var53 = (a(-3938, 12798).equals(var8)) ? 1 : 0;
             } catch (IOException var22) {
                boolean var88 = false;
                throw a(var22);
@@ -2088,7 +2101,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3951, -23139).equals(var8);
+               var53 = (a(-3951, -23139).equals(var8)) ? 1 : 0;
             } catch (IOException var23) {
                boolean var90 = false;
                throw a(var23);
@@ -2122,7 +2135,7 @@ public class Cr2_2 implements W2_4 {
             }
 
             try {
-               var53 = a(-3905, -16539).equals(var8);
+               var53 = (a(-3905, -16539).equals(var8)) ? 1 : 0;
             } catch (IOException var24) {
                boolean var92 = false;
                throw a(var24);
@@ -2336,6 +2349,7 @@ public class Cr2_2 implements W2_4 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -3940) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -3116,7 +3130,7 @@ public class Cr2_2 implements W2_4 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -3150,6 +3164,11 @@ public class Cr2_2 implements W2_4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var21;
+      char[] var35;
+      boolean var5;
+      long[] var6;
+      byte[] var7;
       String[] var13 = new String[38];
       int var11 = 0;
       String var10 = "0û\tVLl\u001d\u0091`\u001f\u0012ª¼@æ\u001d>\u001fN,'1³\u0094ÿ]¨9Ì\u0011ú°ëHÜ\u0013)![½?\u0007´t.DÙ\f·§K ÎgµÁÏµ\u0013®\r½`Ao\u0089h\u0099S-BÇ\u0006\u0085%K5WòÃ\u0001,«\u008c\u001f\"ÄT\u0006\u009feü¹¡ \u009aM\u0085ao\u009c5n~g¶Äõ\u0013¨§\u007f\u0005ÛHBÊ\u0012\u001c½\u008c\u0012Áàå¥¿Ô\u000fif\u0003\u008c\u0093CBpuæ|\u0019ìÚ/ë\u008c¨\n\r\u0081^R\u0005êÕ\u009a³Á\u0019¹Ùò\u0006â®A$cØÓ\u0012«5²êâ\u0003ýz\r\fß\u0018\u0098 ÑÊ\u0013\u0010\u00adé\u0094ç\u0013Ñ\u0019Ç\u0091¥¤\u0088[\u0017$\u009841¹\u00ad!8`fá\u0014Ñû\bc7OÕ\nBßå\u000f\u0018~\u001b|øÊÉ\u0087w\u001fáÈy\u0004\u0003\u0019\u0097\u00907/Z\u008bV\u0080\u0081L\u008f\u0080 gÃ ÌJ8Sµ)È¼z \fÂ$\b&Ü}\u0098Éè\u0007çµnl¨²nô\f&\u0010\u0096XWBw<ÌñG\u0000\u001b\u008fø4\":*Z«\u0007Ð¸§Ã·7VõÿÏÊ\u0012Ý',ãÙt\nðl#\rmå\u0086N\u0011\u008b\nòà¡~úo**L×!\u0089º\u008d\u0092£Ø\t¶wIãHlhîÈ&å {\u0005{\u0000\r0\u008aµ\u0000\u0013½îxî\u0004ª.©°\u001b3éÛê\u001bÉ6\u0015¸³jE\u001a §Ù\u0002¥\u001a\u001cWP\u00ad1\u009dL\u007f\u000bêEéjr<á¾æ>ð\u0018°ãà\u001f½f\u001f\u0092\u008bk¨\n\u0002ß [\u007f[ÆÚ\u008a®\u0084[\nè0\u0012//Cqtí£\tÐ¤÷,b«H\u009a\\\t\u008c\u0000u°\u0013pOÉ\u009b\rJç¿\u009fVvb\u0090R:(\tx\f}ÔUô\u001du½6ë<\u00130\tx%â\u001cÀ\u00ad\u001cZÖ\u0014\rD\u0004Ø\"ÆýÛÑ\u008d\u000fãð$\u0018>~ì\u001c8\f\u0019®\u009e\u0081tCâE%%N¼\u000b\u008aÁ^\u001dªØL\u0007J\u00890\u0012Ãµ\u009a\b³ÖÍÓÀ÷¹ã@\u008aÕï{E1=æI\u0014lòXK¢x\u0018/a\u008cjWq[Û~\u0002Q\u0084ÄKÆ;DJ\u0007;9[%\u009fúZN\u0012ï\u0082I¤\u009c\u0016[\nH\u0096#\u007fÖ\u0019^8Hm\u008a\r\u000e\u008adí½ãa\u007fÌ×ÜN±®¨ó\u0007\u0012\u009e\u0087¢\u001f¶¤ç`\u001b\u007fÚ*fù¢\"º\bòYãÿ?°G\u0005ÝÑ\u008eÑU_=ìû\u0095";
@@ -3244,18 +3263,18 @@ public class Cr2_2 implements W2_4 {
                      a = var13;
                      b = new String[38];
                      long var0 = 4939948446599757188L;
-                     long[] var6 = new long[19];
+                     var6 = new long[19];
                      int var3 = 0;
                      String var4 = "íXÏÃ'5ó2õº;êÃ\u0082²d4¹Ì\"zâ!E0À}ÁkZB\u0010C>.ÿçÐ\u0015\u008b\u0093;\u001eÁ22\u001f2G\u001c\u001a{ó\r kæR5î.þOÿô\u0005[1ÁË^\u001aâø}pHú\u009e0\u0015ZM^A\tîyÔ1½$VlH¼\u0094×b®\u000eØ¤ý\u0089j\u009aþzYòÿY\u001c\u0089Ä\u0005\u0013xt\u0093\u0090´I\u0085À_þ\u0095øËÙ¤\"dZ";
-                     int var5 = "íXÏÃ'5ó2õº;êÃ\u0082²d4¹Ì\"zâ!E0À}ÁkZB\u0010C>.ÿçÐ\u0015\u008b\u0093;\u001eÁ22\u001f2G\u001c\u001a{ó\r kæR5î.þOÿô\u0005[1ÁË^\u001aâø}pHú\u009e0\u0015ZM^A\tîyÔ1½$VlH¼\u0094×b®\u000eØ¤ý\u0089j\u009aþzYòÿY\u001c\u0089Ä\u0005\u0013xt\u0093\u0090´I\u0085À_þ\u0095øËÙ¤\"dZ"
-                        .length();
+                     var5 = "íXÏÃ'5ó2õº;êÃ\u0082²d4¹Ì\"zâ!E0À}ÁkZB\u0010C>.ÿçÐ\u0015\u008b\u0093;\u001eÁ22\u001f2G\u001c\u001a{ó\r kæR5î.þOÿô\u0005[1ÁË^\u001aâø}pHú\u009e0\u0015ZM^A\tîyÔ1½$VlH¼\u0094×b®\u000eØ¤ý\u0089j\u009aþzYòÿY\u001c\u0089Ä\u0005\u0013xt\u0093\u0090´I\u0085À_þ\u0095øËÙ¤\"dZ";
+                        // [VF] .length();
                      byte var2 = 0;
 
                      label59:
                      while (true) {
                         byte var28 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var28, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var28, var2).getBytes("ISO-8859-1");
                         long[] var20 = var6;
                         int var29 = var3++;
                         long var39 = ((long)var7[0] & 255L) << 56
@@ -3301,7 +3320,7 @@ public class Cr2_2 implements W2_4 {
                                  }
 
                                  var4 = "4¡ß\u0091Õ\u008f\u0086dJÈÿcºìT\u0014";
-                                 var5 = "4¡ß\u0091Õ\u008f\u0086dJÈÿcºìT\u0014".length();
+                                 var5 = ("4¡ß\u0091Õ\u008f\u0086dJÈÿcºìT\u0014".length()) != 0;
                                  var2 = 0;
                            }
 
@@ -3345,7 +3364,6 @@ public class Cr2_2 implements W2_4 {
       }
    }
 }
-
 
 
 

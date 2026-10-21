@@ -1524,6 +1524,7 @@ public class U2_4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var35;
       String[] var13 = new String[25];
       int var11 = 0;
       String var10 = "c#ZS;;ØÎñ\u008aàwäý¾\u0019\u000b#\u000fþí\u0094Ø9äÝn±³\u0095JUÓ$·ÛÀLhØ²²¼\u0005I\u0082ÞÐRZy?\u0012Ø.EÖ Ìk\u0089\u001e\u009eoCÓ¢@#\u0095\u0011\r\u0086l1&Ú«ø\nW¢óê[ôCë\u000f8fy\u000b\u0005\u009c9J}m\u0096y1Ãu\u0018\u0017\u0081\u0012Y¨\u0086IY\u001f\u0015x$|\u0000 ùÕýA\u00ad\u000fa¡\u00856Õ\u0001J\u0093£CcÁ]4\u009b/\u0097×Z34\u0086d¸\u008a²\u0016ÀEbLìq\u0092\u0010â\u00894Z\u0002È\u008cørXj\u001fôÅd\u000bsyõ\nÚþÝ\u001d\u0082;Æ(\u0084?¬|Âè\u0099þ\u0005\u0081£\f¾Vm^ä]7K\u001cÄ~Q\u0003>ú\u0003\u008bÍ\u0097Zw\u001b'Ê\u0014¿®tê\u0081\u0001ÍÓ<\u0007\u000e\u0098£\u00048î\u0005µi\rïPÌ5\\Å\u0015Éß\u008f\u008e?¶r5G©\u001b\u000b\u0019f/\u001d\ty\u0097{Û8\u0019p}ï}\t\u009fÈ\u00017^E÷Od.î(Jò\u0018\u0010äkU\u0094½Q[\u001e¯¤~¬\u0010ÑÓ=\u000f¾Ñ²cI\u0087\u0010\u0092ù\u000fÅþ\u0086¼Ë\n\u009b\"?ÊË¬K\u0095c\u0019ÎtÖR;\u001b&×~=\u009cÓÊe²\u0096=QÃ\u009bU;÷;\u009dËÒþÝe|ÿû¦`?6\u008cEõ\u0019\u0093{:'\u008b\u0098:\tÉãY}.\u0080N'º\u0094Íï7±\u000f%Sî\u0011\u0010âÈ0v*?\u0084ê\u0092e4\u001aö\r\u009f\u0019\u000b)\u0006\u0090å1\u0007ó\u0088\u008cÉß»\u000bd>\"À´Éf\u0017Ò\u0094?÷LdäøÙM\u0002Ýd\u0084ÿÕNÞ}$J;\u0090\u00966\n\u0012\u0099ßÔ\tZ(\r¥Ö6»\u0010- ôè,³\u0082\u0086\u0096!\u001e\u001b@\u0006mk7\u0000\u0092E\u0000\u0091t\u0016°¶nÅ,®4\u0091\u0098\tjól\u0093\u0016Ò«$§FD\u0093óÁÌv\u001b>\r\u0098\fô\u0011PDÅÕ]\u0082à\u0001\u0093\u0011\u0011À>#.¹ÕÈ\u0004ð\u0090µ¦Ø<3¹\u0016B#Ü\u0018X$cº©nE½~\r`í\u008dO\u0006¼.Î\u001bËgï£¡N\bRV-\u000bFW\u0096éî÷\bFÌêjÔ4\u0088Ë\u008b&b\u001eÄr\u0080\u007f²AJ\u0099À°/Q\u0084A@\u0018Áñ2@å4[\u001c\u00adô(ë\u009f\u008d$Ë\u0004í\u0084'\u0018y\r\u0004t\u001e |\u00adeærþ¹_¾¬ï\u0010øåh<pð\u0013\u0089\u0092Ø2\u0019¹\u0083ç\u0013\u0090@Ø¢uv¡|\u008d,\u00153o£\u0080î4µà{\f_®\u0013Æ@~ÔÏôcÁ\u001aÞ?÷\u0016?Ïå\u0085=\u008e<F±c;\rU\u0095ä\u009cò±@ÁÝk\u001boQ{e3\u0096ZI\u001cNB*~\u001bÌ_S>Ò\nx²\u0086/Â¨Â";
@@ -1539,7 +1540,6 @@ public class U2_4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var35;
             label65: {
                char[] var41 = var10001.toCharArray();
                int var10004 = var41.length;

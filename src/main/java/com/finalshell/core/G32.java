@@ -31,6 +31,7 @@ public class G32 extends GT3 implements SC, Cloneable {
    public static Integer[] g;
 
    public G32() {
+      int var7;
       String[] var10000 = W5.q();
       this.i = 1.0F;
       this.x = 0.0F;
@@ -77,7 +78,7 @@ public class G32 extends GT3 implements SC, Cloneable {
             }
 
             float var6 = (float)Math.pow((double)var4, (double)var5) * (float)Math.exp((double)(-var4)) / var10;
-            int var7 = (int)(var3 * 8192.0F);
+            var7 = (int)(var3 * 8192.0F);
             var3 += var6;
             int var8 = (int)(var3 * 8192.0F);
             int var9 = var7;
@@ -572,6 +573,9 @@ public class G32 extends GT3 implements SC, Cloneable {
 
    @Override
    public float h(float var1, float var2) {
+      float var17;
+      boolean var19;
+      float var7;
       String[] var10000 = W5.q();
       int var4 = 0;
       String[] var3 = var10000;
@@ -595,7 +599,7 @@ public class G32 extends GT3 implements SC, Cloneable {
 
       int var5 = (int)var2;
       float var6 = var1 - (float)var4;
-      float var7 = var2 - (float)var5;
+      var7 = var2 - (float)var5;
       float var8 = this.G(var6, var7, var4, var5, this.n);
       float var22;
       int var16 = (var22 = var8 - var7) == 0.0F ? 0 : (var22 < 0.0F ? -1 : 1);
@@ -638,8 +642,6 @@ public class G32 extends GT3 implements SC, Cloneable {
                }
 
                if (var16 > 0) {
-      int var17;
-      int var17;
                   var8 = this.G(var6 + 1.0F, var7 - 1.0F, var4 - 1, var5 + 1, this.n);
                }
             }
@@ -697,7 +699,7 @@ public class G32 extends GT3 implements SC, Cloneable {
             }
 
             float var30;
-            var19 = (var30 = this.P - 0.0F) == 0.0F ? 0 : (var30 < 0.0F ? -1 : 1);
+            var19 = ((var30 = this.P - 0.0F) == 0.0F ? 0 : (var30 < 0.0F ? -1 : 1)) != 0;
             if (var3 == null) {
                break label127;
             }
@@ -726,7 +728,7 @@ public class G32 extends GT3 implements SC, Cloneable {
          }
 
          float var31;
-         var19 = (var31 = this.b - 0.0F) == 0.0F ? 0 : (var31 < 0.0F ? -1 : 1);
+         var19 = ((var31 = this.b - 0.0F) == 0.0F ? 0 : (var31 < 0.0F ? -1 : 1)) != 0;
       }
 
       if (var19) {
@@ -738,6 +740,7 @@ public class G32 extends GT3 implements SC, Cloneable {
    }
 
    public float m(float var1, float var2, float var3) {
+      float var7;
       String[] var10000 = W5.q();
       float var5 = 0.0F;
       String[] var4 = var10000;
@@ -805,8 +808,8 @@ public class G32 extends GT3 implements SC, Cloneable {
          var29 = this.I;
       }
 
-      int var11 = (((var29.D(var9)) ? 1 : 0) ? 1 : 0) ? 1 : 0;
-      int var30 = this.W;
+      int var11 = var29.D(var9);
+      int var30 = (this.W) ? 1 : 0;
       if (var6 != null) {
          if (this.W) {
             int var12 = NM.L((int)((this.n[0].E - 1000.0F) * this.E), 0, var4 - 1);
@@ -825,9 +828,10 @@ public class G32 extends GT3 implements SC, Cloneable {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int[] var7;
       int var6 = 0;
       String[] var10000 = W5.q();
-      int[] var7 = new int[var1 * var2];
+      var7 = new int[var1 * var2];
       int var8 = 0;
       String[] var5 = var10000;
 
@@ -888,12 +892,14 @@ public class G32 extends GT3 implements SC, Cloneable {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var19;
+      byte[] var7;
       char[] var10003 = "2gd*RR>IAy2KU7\u0007p2p\t".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
       byte var34 = 34;
       char[] var10002 = var10003;
-      int var19 = var10004;
+      var19 = var10004;
       char[] var42;
       byte var50;
       int var10005;
@@ -1076,7 +1082,7 @@ public class G32 extends GT3 implements SC, Cloneable {
                while (true) {
                   var21 = var2;
                   var2 += 8;
-                  byte[] var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
+                  var7 = var4.substring(var21, var2).getBytes("ISO-8859-1");
                   long[] var10000 = var6;
                   var21 = var3++;
                   long var30 = ((long)var7[0] & 255L) << 56
@@ -1160,7 +1166,6 @@ public class G32 extends GT3 implements SC, Cloneable {
       }
    }
 }
-
 
 
 

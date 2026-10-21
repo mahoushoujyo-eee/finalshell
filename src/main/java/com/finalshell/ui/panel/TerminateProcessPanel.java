@@ -1,7 +1,7 @@
 package com.finalshell.ui.panel;
 
 import com.finalshell.core.KV;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.core.Uo2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
@@ -10,7 +10,7 @@ import com.finalshell.ui.listener.DQ;
 import com.finalshell.ui.listener.Dd2;
 import com.finalshell.ui.listener.JB;
 import com.finalshell.ui.listener.Le2;
-import com.finalshell.ui.listener.Listener2;
+import com.finalshell.ui.listener.TerminateProcessConfirmListener;
 import com.finalshell.ui.listener.Pp;
 import com.finalshell.ui.listener.Q5;
 import com.finalshell.ui.listener.Ur2;
@@ -32,13 +32,14 @@ public class TerminateProcessPanel extends JPanel {
    public int u;
    public int S;
    public boolean A;
-   public Ty2 d;
+   public RemoteProcessManager d;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] e;
 
-   public TerminateProcessPanel(boolean var1, Ty2 var2) {
+   public TerminateProcessPanel(boolean var1, RemoteProcessManager var2) {
+      super();
       Registry.lookupField(356967793820925117L).setInt(this, -1);
       Registry.lookupField(480311688723572747L).setInt(this, -1);
       Registry.lookupField(261689646727117349L).setBoolean(this, false);
@@ -55,11 +56,11 @@ public class TerminateProcessPanel extends JPanel {
       Ref.h(399585344452154517L, var17, var18);
       TerminateProcessPanel var10005 = Registry.emptyArgs();
       long var20 = 149968465491171480L;
-      Object[] var19 = var10005;
+      Object var19 = var10005;
       var10005 = (TerminateProcessPanel)Ref.h(149968465491171480L, var19, var20);
       Color var10006 = (Color)(Registry.emptyArgs());
       long var22 = 345089686683358688L;
-      Object[] var21 = var10006;
+      Object var21 = var10006;
       var10006 = Ref.h(345089686683358688L, var21, var22);
 
       try {
@@ -73,7 +74,7 @@ public class TerminateProcessPanel extends JPanel {
       this.setLayout(new MigLayout(a(-19428, 22810), a(-19429, 8418), a(-19432, -30388)));
       JPopupMenu var4 = new JPopupMenu();
       JMenuItem var5 = new JMenuItem(a(-19427, 6525));
-      var5.addActionListener(new Listener2(this, var2));
+      var5.addActionListener(new TerminateProcessConfirmListener(this, var2));
       var4.add(var5);
       var4.addSeparator();
       JMenuItem var6 = new JMenuItem(a(-19436, -12156));
@@ -103,7 +104,7 @@ public class TerminateProcessPanel extends JPanel {
       ((Uo2)Ref.g(342129762932297171L, var29)).addMouseListener(new Le2(this, var8, var9, var4));
       JScrollPane var10010;
       Object var31 = 342129762932297171L;
-      super((Uo2)Ref.g(342129762932297171L, var31));
+      // [VF-super] super((Uo2)Ref.g(342129762932297171L, var31));
       JScrollPane var11 = var10010;
       this.add(var11, a(-19426, 26607));
       var11.setBackground(Color.blue);
@@ -1069,6 +1070,7 @@ public class TerminateProcessPanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[10];
       int var11 = 0;
       String var10 = "ßè\u008e\u001aoõá\u0091cv©\u001f=3¡\u0004纟欦辻稠\u001df\u0087s\u00019ö®ÉÃ\\¿Z÷\u008b\u00adf;\u0001\u001e\u0000êGÆ¿T\u0007\u00800\u001e\u0004妲功俵羬\u00058\u0086E¼\u0014\u0004奦助启秴\u0004縗杴迒竰\u0005Ve\u0088À\u00ad";
@@ -1084,7 +1086,6 @@ public class TerminateProcessPanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      long var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

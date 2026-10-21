@@ -33,7 +33,7 @@ public class O7 extends O implements TableCellRenderer, UIResource {
          boolean var8 = false;
          int var10000 = (Oe2.a()) ? 1 : 0;
          var9 = null;
-         var7 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+         var7 = (var10000) != 0;
          JTable var14 = var1;
          if (var7) {
             if (var1 == null) {
@@ -955,6 +955,7 @@ public class O7 extends O implements TableCellRenderer, UIResource {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var23;
       String[] var7 = new String[5];
       int var5 = 0;
       String var4 = "bWpµ$ô1ºj¯R9\r¼>\u0005£\u0095ãJøú\u001c\u0015qÎ\u0012\u0086h\u0092·dC4\u009e]\u000e¨ó<\b\u008cù\u0013C\u001fân`\u0092&vuRaâÈÚÎÂ¬Íi_4!>?+\u009büI©ÐÀ\u0094'";
@@ -970,7 +971,6 @@ public class O7 extends O implements TableCellRenderer, UIResource {
          byte var10002 = -1;
 
          while (true) {
-      char[] var23;
             label47: {
                char[] var28 = var10001.toCharArray();
                int var10004 = var28.length;

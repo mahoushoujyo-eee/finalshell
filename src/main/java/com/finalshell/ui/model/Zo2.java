@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 @XStreamAlias("ResourceLocation")
 public final class Zo2 implements Serializable {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 

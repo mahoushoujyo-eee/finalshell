@@ -49,6 +49,11 @@ public class ZU extends Z7 {
 
    public ZU(CloudSyncFrame var1) {
    super();
+   Boolean var101;
+   boolean var103;
+   Boolean var108;
+   Object[] var71;
+   JCheckBox var73;
       SendSyncMailPanel.u();
       long var18 = 597607974748112108L;
       Ref.s(597607974748112108L, var1, var18);
@@ -59,7 +64,7 @@ public class ZU extends Z7 {
       Ref.h2(270389152141252877L, var19);
       U5 var10003 = (U5)(Registry.emptyArgs());
       long var22 = 375944019649708240L;
-      Object[] var21 = var10003;
+      Object var21 = var10003;
       var10003 = Ref.h(375944019649708240L, var21, var22);
 
       try {
@@ -153,9 +158,9 @@ public class ZU extends Z7 {
       var12.add(new JLabel(""), var4);
       JCheckBox var10029;
       String var10030 = a(17847, -13090);
-      Object[] var10032 = Registry.emptyArgs();
+      Object var10032 = Registry.emptyArgs();
       long var72 = 153619711151080809L;
-      Object[] var71 = var10032;
+      var71 = var10032;
       var10032 = Ref.h(153619711151080809L, var71, var72);
 
       try {
@@ -166,7 +171,7 @@ public class ZU extends Z7 {
 
 var10030 = new Oc4(var3, var101);
       long var74 = 389807861524576519L;
-      JCheckBox var73 = var10029;
+      var73 = var10029;
       Ref.s(389807861524576519L, var73, var74);
       Object var75 = 389807861524576519L;
       ((JCheckBox)Ref.g(389807861524576519L, var75)).setEnabled(false);
@@ -180,9 +185,9 @@ var10030 = new Oc4(var3, var101);
       long var80 = 375944019649708240L;
       Object[] var79 = var10035;
       var10035 = Ref.h(375944019649708240L, var79, var80);
-      Object[] var10036 = Registry.emptyArgs();
+      Object var10036 = Registry.emptyArgs();
       long var82 = 605218686263352748L;
-      Object[] var81 = var10036;
+      Object var81 = var10036;
       var10036 = Ref.h(605218686263352748L, var81, var82);
 
       try {
@@ -251,6 +256,9 @@ var10034 = new Oc4(var10035, var108);
    }
 
    public void u() {
+      Integer var110;
+      Integer var118;
+      Object[] var33;
       Object var11 = 245244424489255511L;
       ((JButton)Ref.g(245244424489255511L, var11)).setEnabled(false);
 
@@ -284,7 +292,7 @@ var10034 = new Oc4(var10035, var108);
          Ref.h2(270389152141252877L, var19);
          U5 var10006 = (U5)(Registry.emptyArgs());
          long var22 = 375944019649708240L;
-         Object[] var21 = var10006;
+         Object var21 = var10006;
          var10006 = Ref.h(375944019649708240L, var21, var22);
 
          try {
@@ -298,7 +306,7 @@ var10034 = new Oc4(var10035, var108);
          String var10007 = a(17838, -18338);
          String var10009 = (String)(Registry.emptyArgs());
          long var24 = 460921051521643755L;
-         Object[] var23 = var10009;
+         Object var23 = var10009;
          var10009 = Ref.h(460921051521643755L, var23, var24);
 
          try {
@@ -310,9 +318,9 @@ var10034 = new Oc4(var10035, var108);
          var10007.setProperty(var2, var10009);
          String var10008 = a(17833, -11859);
          StringBuilder var107 = new StringBuilder();
-         Object[] var10011 = Registry.emptyArgs();
+         Object var10011 = Registry.emptyArgs();
          long var26 = 198931520846084681L;
-         Object[] var25 = var10011;
+         Object var25 = var10011;
          var10011 = Ref.h(198931520846084681L, var25, var26);
 
          try {
@@ -330,7 +338,7 @@ var10034 = new Oc4(var10035, var108);
          String var108 = a(17854, 16951);
          var10011 = Registry.emptyArgs();
          long var28 = 198736531137401844L;
-         Object[] var27 = var10011;
+         Object var27 = var10011;
          var10011 = Ref.h(198736531137401844L, var27, var28);
 
          try {
@@ -341,9 +349,9 @@ var10034 = new Oc4(var10035, var108);
 
          var108.setProperty(var2, var10011);
          String var10010 = a(17844, 16796);
-         Object[] var10012 = Registry.emptyArgs();
+         Object var10012 = Registry.emptyArgs();
          long var30 = 389342996213299644L;
-         Object[] var29 = var10012;
+         Object var29 = var10012;
          var10012 = Ref.h(389342996213299644L, var29, var30);
 
          try {
@@ -359,7 +367,7 @@ var10034 = new Oc4(var10035, var108);
          var3.setProperty(a(17808, -9488), a(17814, 6088));
          var10011 = Registry.emptyArgs();
          long var32 = 615760303415847009L;
-         Object[] var31 = var10011;
+         Object var31 = var10011;
          var10011 = Ref.h(615760303415847009L, var31, var32);
 
          try {
@@ -371,7 +379,7 @@ var10034 = new Oc4(var10035, var108);
          String var4 = var10011;
          var10012 = Registry.emptyArgs();
          long var34 = 157042914527242033L;
-         Object[] var33 = var10012;
+         var33 = var10012;
          var10012 = Ref.h(157042914527242033L, var33, var34);
 
          try {
@@ -439,7 +447,7 @@ var10034 = new Oc4(var10035, var108);
             InternetAddress var10016;
             String var10019 = (String)(Registry.emptyArgs());
             long var46 = 615760303415847009L;
-            Object[] var45 = var10019;
+            Object var45 = var10019;
             var10019 = Ref.h(615760303415847009L, var45, var46);
 
             try {
@@ -466,7 +474,7 @@ var2 = new String(var10019);
             InternetAddress var127;
             String var10022 = (String)(Registry.emptyArgs());
             long var50 = 615760303415847009L;
-            Object[] var49 = var10022;
+            Object var49 = var10022;
             var10022 = Ref.h(615760303415847009L, var49, var50);
 
             try {
@@ -482,7 +490,7 @@ var2 = new String(var10022);
             Transport.send(var8);
             var10019 = Registry.packArgs(a(17855, 27837));
             long var52 = 153490889733670752L;
-            Object[] var51 = var10019;
+            Object var51 = var10019;
             Ref.h(153490889733670752L, var51, var52);
 
             try {
@@ -510,13 +518,17 @@ var2 = new String(var10022);
    }
 
    public void z() {
+      Object[] var33;
+      Boolean var71;
+      Integer var73;
+      Integer var76;
       SendSyncMailPanel.u();
       Registry.emptyArgs();
       long var3 = 270389152141252877L;
       Ref.h2(270389152141252877L, var3);
       U5 var10003 = (U5)(Registry.emptyArgs());
       long var6 = 375944019649708240L;
-      Object[] var5 = var10003;
+      Object var5 = var10003;
       var10003 = Ref.h(375944019649708240L, var5, var6);
 
       try {
@@ -530,7 +542,7 @@ var2 = new String(var10022);
       JTextField var10004 = (JTextField)Ref.g(512844755244380047L, var7);
       String var10006 = (String)(Registry.emptyArgs());
       long var10 = 615760303415847009L;
-      Object[] var9 = var10006;
+      Object var9 = var10006;
       var10006 = Ref.h(615760303415847009L, var9, var10);
 
       try {
@@ -544,7 +556,7 @@ var2 = new String(var10022);
       JPasswordField var53 = (JPasswordField)Ref.g(482706109834085201L, var11);
       String var10008 = (String)(Registry.emptyArgs());
       long var14 = 568690108981290565L;
-      Object[] var13 = var10008;
+      Object var13 = var10008;
       var10008 = Ref.h(568690108981290565L, var13, var14);
 
       try {
@@ -559,7 +571,7 @@ var2 = new String(var10022);
       JTextField var10007 = (JTextField)Ref.g(346931141745486375L, var15);
       String var10009 = (String)(Registry.emptyArgs());
       long var18 = 460921051521643755L;
-      Object[] var17 = var10009;
+      Object var17 = var10009;
       var10009 = Ref.h(460921051521643755L, var17, var18);
 
       try {
@@ -571,7 +583,7 @@ var2 = new String(var10022);
       var2.setText(var10009);
       var10009 = Registry.emptyArgs();
       long var20 = 198931520846084681L;
-      Object[] var19 = var10009;
+      Object var19 = var10009;
       var10009 = Ref.h(198931520846084681L, var19, var20);
 
       try {
@@ -585,9 +597,9 @@ var2 = new String(var10022);
             Object var21 = 377895764203979649L;
             JTextField var10010 = (JTextField)Ref.g(377895764203979649L, var21);
             StringBuilder var10011 = new StringBuilder().append("");
-            Object[] var10013 = Registry.emptyArgs();
+            Object var10013 = Registry.emptyArgs();
             long var24 = 198931520846084681L;
-            Object[] var23 = var10013;
+            Object var23 = var10013;
             var10013 = Ref.h(198931520846084681L, var23, var24);
 
             try {
@@ -604,7 +616,7 @@ var2 = new String(var10022);
          JTextField var61 = (JTextField)Ref.g(479298920582418590L, var25);
          String var10012 = (String)(Registry.emptyArgs());
          long var28 = 198736531137401844L;
-         Object[] var27 = var10012;
+         Object var27 = var10012;
          var10012 = Ref.h(198736531137401844L, var27, var28);
 
          try {
@@ -620,7 +632,7 @@ var2 = new String(var10022);
 
          var10012 = Registry.emptyArgs();
          long var30 = 389342996213299644L;
-         Object[] var29 = var10012;
+         Object var29 = var10012;
          var10012 = Ref.h(389342996213299644L, var29, var30);
 
          try {
@@ -633,9 +645,9 @@ var2 = new String(var10022);
          Object var31 = 603222147959347607L;
          JTextField var62 = (JTextField)Ref.g(603222147959347607L, var31);
          StringBuilder var64 = new StringBuilder();
-         Object[] var74 = Registry.emptyArgs();
+         Object var74 = Registry.emptyArgs();
          long var34 = 389342996213299644L;
-         Object[] var33 = var74;
+         var33 = var74;
          var74 = Ref.h(389342996213299644L, var33, var34);
 
          try {
@@ -649,9 +661,9 @@ var2 = new String(var10022);
 
       Object var35 = 389807861524576519L;
       JCheckBox var63 = (JCheckBox)Ref.g(389807861524576519L, var35);
-      Object[] var69 = Registry.emptyArgs();
+      Object var69 = Registry.emptyArgs();
       long var38 = 153619711151080809L;
-      Object[] var37 = var69;
+      Object var37 = var69;
       var69 = Ref.h(153619711151080809L, var37, var38);
 
       try {
@@ -664,6 +676,7 @@ var2 = new String(var10022);
    }
 
    public void e() {
+      Object[] var33;
       Object var3 = 482706109834085201L;
       Ref.g(482706109834085201L, var3);
       Registry.emptyArgs();
@@ -738,7 +751,7 @@ var2 = new String(var10022);
 
       String var65;
       Object var27 = 482706109834085201L;
-      super(((JPasswordField)Ref.g(482706109834085201L, var27)).getPassword());
+      // [VF-super] super(((JPasswordField)Ref.g(482706109834085201L, var27)).getPassword());
       var10004 = Registry.packArgs(var65);
       long var30 = 331026108346621807L;
       Object[] var29 = var10004;
@@ -753,7 +766,7 @@ var2 = new String(var10022);
       Object var31 = 346931141745486375L;
       var10006 = Registry.packArgs(((JTextField)Ref.g(346931141745486375L, var31)).getText().trim());
       long var34 = 489732992790463320L;
-      Object[] var33 = var10006;
+      var33 = var10006;
       Ref.h(489732992790463320L, var33, var34);
 
       try {
@@ -1743,6 +1756,7 @@ var2 = new String(var10022);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[53];
       int var11 = 0;
       String var10 = "§Ü¶B杨到嚡\n\u009c\u001aY\u000f\u009bç\u0095$£®\b厇遜洳謒逰乘戅勮\u000e¦+\u001e)s4\u0080½\r\u0000Ú^ÎU\u000b歵坥匓郭洘诊郧互\u00047(\u0004邂篰坸垴\u0005!óG¾Y\u0011卋遹涪讶逃仌奂跆Ú棺柾郳箴鄠缭do\u0004\u0080Åü\u008c\u001c\u008bR»\u0006ÇÑ\u0016\u0001ß\u0097\u009b¬\u008e\u0014é]Ñ]\r\u0011©øcn'\u0093kì\u0005呓畜\u0090\u0098½\u001em\u0095\u009fóé\u009eL\u000fóe\u009aî¡\u0086ÔÅ\u008c¿á.½ýhSû]Å£b\"\u0016ÝÖÔ\u0019l_ q¨\u0003Ñë³ÕÙ'ØS\u009eøóä\u0002碰嬺\u0011p\\ÄÇ(éë\u0006`wk¶y\u009fÒâÏ\u0014(ÿÏ³IgÇ×åMÜëi&ûì´1mî\u000b\u001c¿\u001dªù\f\u0003Áê\u0091<$(y\u009br)\u0017\u0012®¾£v¢ã\u0010Ñê\u0099.¸Zº=|îIÇëñ\u0092U¹\"¦\u001cD\u009d!ëÍ·õF¯&ÎÙn[\u008f\u0099ªó|c\u000bÜ\u0090|ÛÏ!ôvæ´»¼zh«\u000eG[\"'ôïp\u008a\u0013Q\u0019t¶\u0010\u000eúà\u0095P\u0002\u0001®WÈêz\u0003Àþ\u0004\u008bØê:\u0007ym!t札勶嘉\u0004ª\n¿\u0091\u001eS\u0082X\u0011\u0011ÂS\u0084\u0010\u0014æÀ.C%}²¨&ÌE¡wØ\u0018,¹\u008díç\u0012RÀ%ÛR\u0007gx_oË\u0094öà\u0086jKl\u0004\u0010\bDÜ\u000b癳忤PCñ_朲剂嘯抮割\u0006üÙÝâ竧卦\u0004\u009d\u001bõ¾\b稔占匄棂彜镹询f\u0006膃剹嬾攉哘毯\u0002涁诬\u0014皠徧*+¾R柛勣嘒妻赯\u0092栯柲郁笛酭翧ºÖ\u0004釹缦庖劣\u0016)\\JH¿uÚ4ç«8þ\u008ew~s,Ù\u0000© Î\u0011Ã[²'æï2\u008a[Q\fr\u0095\u0007Oñ|\u0011 rC¥\u0098\u009c»\u0080»ÎÜ\u008býR6\u001fé\u000eêk\tÆ\u0092áàCµ\rß}|Á\u0006哻毸逿笊诸缫\u000e60\u0092\u00adá\u008c\u008eîx¸fËK\u0017\f枫劊囒穆匆徜題斓挱\u00889¾\u001d¹§ý¸\u000f\u001c\u000fôü\u009eÿ\u008d\u00020xÙãÍK\u0003aºz&\u0017\u0099\u000fÉ\u008d\u0004XUç\u009e\u0006_>å\u001e穗叹\u000e;g\u00ad \u0005\u0005N\u009bÔÄèÜ§@\u0006骋讍砎\n导砉\n\u0096ÌLÄÓÁO~A \u0013¤Ü^×{ë\u0098]6/¹\u0086-©¿u\r.\u0018\u000eÅ,.\u0090Æ9\u0019T\u0095|\u000eÜÿ±\u0004É¹¢\u0016";
@@ -1758,7 +1772,6 @@ var2 = new String(var10022);
          byte var10002 = -1;
 
          while (true) {
-      JTextField var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

@@ -867,6 +867,7 @@ public class P0 extends Pc2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[11];
       int var3 = 0;
       String var2 = "v¸C¬¼Ú\u0012\bÁ[\u0099\u0099\u0006MàÇ\u0003è¦M\nc}=[\u0004ê\u009e\u00006P\u0007\u009f\u0089~\u008a\u000b\u001eæ\b\u009fôRl\u007fãÏ\u0010Tåû\u009c)ÒXë5ÖÍ¬@ÇW\u0015=\u0017O~ê\u001cízÖTCbPB~L\u0099ÈN¨÷¾û®-k¡\u0094·©\u008d°+¸3^\u0017\u0004oZùTàÕ´Á¿ÔF\u009bóê©t\u0095V\u0017ª\u000f¡\u009aÀ¢U\n±Fµ\u0092\u000f\u009f\u007f¿Åý5\t\u000ei\u009dß§½ÔÛ\u000f\u008bÝ=\u0091\u00ad¿\u0003_(·÷â¨|{";
@@ -882,7 +883,6 @@ public class P0 extends Pc2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

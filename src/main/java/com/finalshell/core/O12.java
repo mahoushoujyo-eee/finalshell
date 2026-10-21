@@ -23,7 +23,7 @@ public class O12 {
       int var10000 = (Yn4.Y()) ? 1 : 0;
       int var6 = var4 & this.r;
       String var7 = this.R[var6];
-      boolean var5 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var5 = (var10000) != 0;
       String var11 = var7;
       if (var5) {
          if (var7 != null) {
@@ -136,7 +136,7 @@ public class O12 {
       int var10000 = (Yn4.o()) ? 1 : 0;
       int var4 = 0;
       int var5 = var1;
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
       int var6 = 0;
 
       while (true) {

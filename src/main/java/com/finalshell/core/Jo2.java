@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-public class Jo2 extends Jk2 {
+public class Jo2 extends ProxyMessage {
    public byte[] Z;
    public int N;
    public static String[] D;
@@ -42,7 +42,7 @@ public class Jo2 extends Jk2 {
       Jo2 var9;
       int var12;
       label36: {
-         String[] var10000 = Jk2.Y();
+         String[] var10000 = ProxyMessage.Y();
          var6 = var10000;
          this.O = var5;
          var9 = this;
@@ -281,7 +281,7 @@ public class Jo2 extends Jk2 {
 
    @Override
    public void l(OutputStream var1) throws IOException {
-      String[] var2 = Jk2.Y();
+      String[] var2 = ProxyMessage.Y();
 
       label20: {
          try {
@@ -1133,6 +1133,7 @@ public class Jo2 extends Jk2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "\u0091Â)@Éi\u0094ê¡ì±jz´#>R»æùO\u0081\u0002\u0087\u0018Ñ!¾Ä\u008aê#JKM1]gU\u001dc\u008fwé\u0002\\íL\u008e8TðÆç´T¡ö³W¯à9\u008f÷n_G\u009e\u001a\u0094\"\u0007Á\u0017t\u001bî¹`|m/TÒfOrr\bp\u0019\u009bþk\u0097";
@@ -1148,7 +1149,6 @@ public class Jo2 extends Jk2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

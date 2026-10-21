@@ -2,7 +2,7 @@ package com.finalshell.network;
 
 import com.finalshell.core.C3;
 import com.finalshell.core.JX;
-import com.finalshell.core.Jk2;
+import com.finalshell.core.ProxyMessage;
 import com.finalshell.core.Uu4;
 import com.finalshell.core.Y2_5;
 import com.finalshell.io.B52;
@@ -555,7 +555,7 @@ public class Zc2 extends DatagramSocket {
 
    @Override
    public int getLocalPort() {
-      String[] var1 = Jk2.Y();
+      String[] var1 = ProxyMessage.Y();
       int var10000 = (this.x) ? 1 : 0;
       if (var1 != null) {
          if (this.x) {
@@ -570,7 +570,7 @@ public class Zc2 extends DatagramSocket {
 
    @Override
    public InetAddress getLocalAddress() {
-      String[] var1 = Jk2.Y();
+      String[] var1 = ProxyMessage.Y();
       Zc2 var10000 = this;
       if (var1 != null) {
          if (this.x) {
@@ -585,7 +585,7 @@ public class Zc2 extends DatagramSocket {
 
    @Override
    public void close() {
-      String[] var1 = Jk2.Y();
+      String[] var1 = ProxyMessage.Y();
       Zc2 var10000 = this;
       if (var1 != null) {
          if (!this.x) {
@@ -1495,6 +1495,7 @@ public class Zc2 extends DatagramSocket {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "ªËRºÂB\u008e\"ï\u009a¼¥R>sÀè@é>Á\u008a|\u000eßÙÚ±b'\u008b\u0001³T:\u0005\u0090s¬I\u008b\u0019";
@@ -1509,7 +1510,6 @@ public class Zc2 extends DatagramSocket {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

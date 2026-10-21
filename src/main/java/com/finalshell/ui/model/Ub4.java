@@ -15,9 +15,11 @@ public class Ub4 implements Comparator {
    }
 
    public int c(L1 var1, L1 var2) {
-      Object[] var10001 = Registry.emptyArgs();
+      Integer var16;
+      Integer var18;
+      Object var10001 = Registry.emptyArgs();
       long var10 = 236277018693765536L;
-      Object[] var9 = var10001;
+      Object var9 = var10001;
       var10001 = Ref.h(236277018693765536L, var9, var10);
 
       try {
@@ -28,9 +30,9 @@ public class Ub4 implements Comparator {
 
       double var4 = (double)var16;
       ClearListDialog.i$arrString();
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var12 = 236277018693765536L;
-      Object[] var11 = var10003;
+      Object var11 = var10003;
       var10003 = Ref.h(236277018693765536L, var11, var12);
 
       try {
@@ -68,9 +70,9 @@ public class Ub4 implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((L1)var1, (L1)var2);
+      Object var10001 = Registry.packArgs((L1)var1, (L1)var2);
       long var4 = 574993626918362268L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(574993626918362268L, var3, var4);
 
       try {

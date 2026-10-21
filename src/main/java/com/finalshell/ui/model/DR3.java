@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.Xv2;
 
 public final class DR3 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -99,6 +99,7 @@ public final class DR3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var8 = new String[7];
       int var12 = 0;
       String var11 = "~YH\u0004\u0006hWQ\u000e\nX\u0002oF\blSM\u001e\fVfv\nrYM\u0003\u001fZinWS";
@@ -113,7 +114,6 @@ public final class DR3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

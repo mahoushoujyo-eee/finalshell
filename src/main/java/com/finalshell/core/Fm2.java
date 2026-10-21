@@ -465,11 +465,12 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
    }
 
    public void T(Graphics2D var1, int var2, int var3) {
-      byte var5 = (this.U.isEnabled()) ? 1 : 0;
+      Fm2 var14;
+      byte var5 = (byte)((this.U.isEnabled()) ? 1 : 0);
       int var10000 = (UE.Z()) ? 1 : 0;
       Rectangle var6 = new Rectangle(var2 + this.Z, var3 + this.Z, this.r - this.Z * 2 - 1, this.v - this.Z * 2 - 1);
       Double var7 = new Double((double)var6.x, (double)var6.y, (double)var6.width, (double)var6.height, (double)(this.W * 2), (double)(this.W * 2));
-      boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var4 = (var10000) != 0;
       var10000 = var5;
       if (!var4) {
          if (var5 != 0) {
@@ -502,7 +503,7 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
                   break label44;
                }
 
-               var10001 = (this.b) ? 1 : 0;
+               var10001 = (byte)((this.b) ? 1 : 0);
             }
 
             if (var10001 != 0) {
@@ -1371,6 +1372,7 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[9];
       int var11 = 0;
       String var10 = "Xðf\u0091Dtú\u0006¬p³OçÞ\u0017\u0096\u0019Èçö¿/þ\ns}\u0010\u009c$:ªùà\r\u000eÊBs#î'z\u0006LO=c\u009e\u000fæ¾U©\u009dã\u0081\u0011\u0014ðì\u0002pµ<\u0091¢|^c\b\u0080åt9\u0007\u009c°þ\u0099Wu\u0098\u0019Í\u001c£G\u009b«\u0082|¿#Ë\u001aJeë\u0086\u0093ÿ\f!í\u0090\u0083ÿ¶\u001f¾Fp*\rÊ\u0015Ó\u009b\u0019F|Añ\u001fèÑp\u001eË·\u009cRôI^Vò\u007fJ\u001a";
@@ -1386,7 +1388,6 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

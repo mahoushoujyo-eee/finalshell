@@ -24,7 +24,7 @@ public class Th4 implements ActionListener {
       Object var10002 = Ref.h2(270389152141252877L, var6);
       U62 var10003 = (U62)(Registry.emptyArgs());
       long var9 = 306266403902896148L;
-      Object[] var8 = var10003;
+      Object var8 = var10003;
       var10003 = Ref.h(306266403902896148L, var8, var9);
 
       try {
@@ -37,7 +37,7 @@ public class Th4 implements ActionListener {
       Object var2 = var10002;
       var10003 = Registry.packArgs(1);
       long var11 = 355959850244158035L;
-      Object[] var10 = var10003;
+      Object var10 = var10003;
       Ref.h(355959850244158035L, var10, var11);
 
       try {
@@ -52,7 +52,7 @@ public class Th4 implements ActionListener {
       Object[] var10005 = Registry.emptyArgs();
       long var15 = 578864097947885485L;
       Object[] var14 = var10005;
-      Object[] var10006 = var14;
+      Object var10006 = var14;
       Ref.h(578864097947885485L, var14, var15);
 
       try {
@@ -67,7 +67,7 @@ public class Th4 implements ActionListener {
             if (var2 == null) {
                var10006 = Registry.emptyArgs();
                long var17 = 620011176897972573L;
-               Object[] var16 = var10006;
+               Object var16 = var10006;
                var10006 = Ref.h(620011176897972573L, var16, var17);
 
                try {
@@ -91,7 +91,7 @@ public class Th4 implements ActionListener {
          File var40;
          String var10008 = (String)(Registry.emptyArgs());
          long var19 = 620011176897972573L;
-         Object[] var18 = var10008;
+         Object var18 = var10008;
          var10008 = Ref.h(620011176897972573L, var18, var19);
 
          try {

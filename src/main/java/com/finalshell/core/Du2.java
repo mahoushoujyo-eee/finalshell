@@ -75,9 +75,9 @@ public class Du2 extends AbstractListModel {
 
    @Override
    public Object getElementAt(int var1) {
-      Object[] var10001 = Registry.packArgs(var1);
+      Object var10001 = Registry.packArgs(var1);
       long var3 = 430610060651646114L;
-      Object[] var2 = var10001;
+      Object var2 = var10001;
       var10001 = Ref.h(430610060651646114L, var2, var3);
 
       try {

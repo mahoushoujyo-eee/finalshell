@@ -889,6 +889,7 @@ public class FF_2 {
    }
 
    public void V(NV_2 var1, String var2) {
+      FF_2 var6;
       String[] var10000 = RG_2.C();
       int var4 = h(var2, var1);
       String[] var3 = var10000;
@@ -919,7 +920,7 @@ public class FF_2 {
          var10002 = 1;
       }
 
-      var6.j(var10001, (boolean)var10002);
+      var6.j(var10001, var10002);
    }
 
    public void t(N_ param1, String param2) {
@@ -2476,6 +2477,7 @@ public class FF_2 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ 740) & 65535;
       if (f[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -3256,7 +3258,7 @@ public class FF_2 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -3290,6 +3292,8 @@ public class FF_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var43;
+      long[] var6;
       String[] var13 = new String[69];
       int var11 = 0;
       String var10 = "DªþL\niJ\u0010¾W°\n\u0001\u0080\u0085\u0002\u009f\u0013\u00031\u0091ø\u0003Ò¨\u0094\u0003`\u0090Ã\u0002\u0088T\u0002k½\u0002R\t\u0002\u000b~\u0002$\u0096\u0003\t\u007fF\n6ïü\u001b>?Tÿ\u0003Ú\u0006\u0097d\u0096>Å\t\u0004¯%8@\u0002U\b\u0002L\u009f\u0002ë\u0084\u0002\u008b\u0016\nW\u0085×G¯\u008f\u0015æcy\u0002Ò·\u0003$Ø\u008a\u000b\u00173Îv6µ§:\u009ce\u009c\u0002\u009cæ\u0003\u0091£b\f\u001eP\u0080\u001e\u0095+ð\u0018\u0011´Òe\u0002ｆ¼\u0006þB\u0011MÄ7\u0002W'\u0002\u0017¥\u0002Rx\u0002Õà\u0002Ú\u0000\fO1ª2Ð®X¨\u0004¢p§\u0002£\u009a\u0004Eò§s\u0003Àý\u0094\u0002ZÌ\u0007\u0085\u0013\u000b\u0084\u0082O>\u0002·\u009a\u0002i\u009f\u0003\u0013-4\u0003 è8\u0005Ôi,ÃW\u0002\u0003ﾀ\b÷\u0085¸\u00184»¹\u001f\u0002ã\u0098\u0002pþ\tÙ\u0001m½\u0096Ð±\u001b_\u0002j/\u0003Jâ\u0097\u00037\u001a\u001c\u0002\u0099Ñ\u0003ÏÈ÷\u0002ｭô\u0002ËÚ\u0003a[Æ\u0002\u0015å\u0002ö\u0081\u0002Aj\u0004CXo\u000e\u0002_Ä\u0002\u0012Ç\u0002\u0001Ｇ\u0003\u0010àÏ\u0004n\u0087»é\tcS:÷|\u0099ì2ô";
@@ -3305,7 +3309,6 @@ public class FF_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var43;
             label90: {
                char[] var49 = var10001.toCharArray();
                int var10004 = var49.length;
@@ -3384,7 +3387,7 @@ public class FF_2 {
                      a = var13;
                      f = new String[69];
                      long var0 = 8270740394452712798L;
-                     long[] var6 = new long[72];
+                     var6 = new long[72];
                      int var3 = 0;
                      String var4 = "Öa\"ð~\u009ab\u008cbþ\u001b \u000146ü\u008aå\u0019}\u0002\u0006w5Qñ»Æt\"\u0097=£ÚS¶Dd°ÌO\u000f\u0081¼\u000e\u0005\u0088\u0014³÷å§£ÔÇT S\tþGò\u0096Å>Ì\u009bfB'ÌË:AÍØÝà\u001d\u0005x\u008fk\u0087-\u001a\u0014aîÂmq<Ó ®ç%LXÊ±%´£v\u0083Þu{VfÔús=4ªÞ\u0017ô\u0088½ÁÕú\u0003¶<\u0002hs%Ö\u0014ââ\u0093-?vÔ\u00840\u0096ÿÆ\u009cÔZN`\b)Ç:\u007f\u009cD3Èéï¬¨\u0094ëi\u0019<\u0015\u0099Q.Ó4\u0092\u0002\u009eá'\u0099ê(gÇ\u009e\u0090\u000f¨÷à¼\u001c\u0083¦ÀJSÑK1(âÅ¿Ù!V\u001cÓ\u009e\u00ad\u009f_#³ö«¡7G\u000fÜ\u009b-\u0086ÆFªá\u0080AríÌ\u0004ÕÅò\u009c¯á\u0084Ðeå\u0014VW\u000f»-gö·*6\u0002®ÀzÓ©R¨\u0090Aò9a¾Ü}ë\u0015ýýv0_1Àç:\u0098xÎx¦_¢\u000b@ü½i\u001fw\u0016\u0001\u0084\u0096\u0089.múû\u001bF)Ùà¨Ëµ2í=Xq*\u0018É~\u0000®ÿ\u0099ªúÕçiC\u0089éS¤[Ù\u001c×áÛ©X ¨\u009d\u0084b[\u009eß\u00880\u001f\u0012XÃ\u009d©ÉÓjýÆ\u0000\u008f´áÜ\u0006\t;JèÉoõ\r\u0093µå\u008f\u000fu\t|Õü´\u007f<(\u0093¯Ys,Ý\u0013\u0003óvÚ\u0083@÷g?æÑ\u0004ñ}*ß\u0084¾\u0094o]\u001c9¸\u008f0ö\u0095\u008eI\u0086h9ik\u009aBõ\u001f%ã=²¾ùÉ³ÎM:\u0086¾\t\u001bËñ\u00198¬\u009dBI\u000e\u00adßp\r{ã+ÎJÊ@B#T\u0001÷@Àq\u0084ÚÔÛÅ\u000eÆï¥_\"ª\u0001UÀ7¹\"4\u0003sx7\u009a2í\u0004\u0011\u0001lHAòuÚ\u008a\u0006T9ëUý}gI\u0088Ì¿\u0098æ»Ð\u0092CÏ·\u001ea\u000f\u009dA¶Ö62\u0097)7\u0017X\u000bÍl¨9";
                      int var5 = "Öa\"ð~\u009ab\u008cbþ\u001b \u000146ü\u008aå\u0019}\u0002\u0006w5Qñ»Æt\"\u0097=£ÚS¶Dd°ÌO\u000f\u0081¼\u000e\u0005\u0088\u0014³÷å§£ÔÇT S\tþGò\u0096Å>Ì\u009bfB'ÌË:AÍØÝà\u001d\u0005x\u008fk\u0087-\u001a\u0014aîÂmq<Ó ®ç%LXÊ±%´£v\u0083Þu{VfÔús=4ªÞ\u0017ô\u0088½ÁÕú\u0003¶<\u0002hs%Ö\u0014ââ\u0093-?vÔ\u00840\u0096ÿÆ\u009cÔZN`\b)Ç:\u007f\u009cD3Èéï¬¨\u0094ëi\u0019<\u0015\u0099Q.Ó4\u0092\u0002\u009eá'\u0099ê(gÇ\u009e\u0090\u000f¨÷à¼\u001c\u0083¦ÀJSÑK1(âÅ¿Ù!V\u001cÓ\u009e\u00ad\u009f_#³ö«¡7G\u000fÜ\u009b-\u0086ÆFªá\u0080AríÌ\u0004ÕÅò\u009c¯á\u0084Ðeå\u0014VW\u000f»-gö·*6\u0002®ÀzÓ©R¨\u0090Aò9a¾Ü}ë\u0015ýýv0_1Àç:\u0098xÎx¦_¢\u000b@ü½i\u001fw\u0016\u0001\u0084\u0096\u0089.múû\u001bF)Ùà¨Ëµ2í=Xq*\u0018É~\u0000®ÿ\u0099ªúÕçiC\u0089éS¤[Ù\u001c×áÛ©X ¨\u009d\u0084b[\u009eß\u00880\u001f\u0012XÃ\u009d©ÉÓjýÆ\u0000\u008f´áÜ\u0006\t;JèÉoõ\r\u0093µå\u008f\u000fu\t|Õü´\u007f<(\u0093¯Ys,Ý\u0013\u0003óvÚ\u0083@÷g?æÑ\u0004ñ}*ß\u0084¾\u0094o]\u001c9¸\u008f0ö\u0095\u008eI\u0086h9ik\u009aBõ\u001f%ã=²¾ùÉ³ÎM:\u0086¾\t\u001bËñ\u00198¬\u009dBI\u000e\u00adßp\r{ã+ÎJÊ@B#T\u0001÷@Àq\u0084ÚÔÛÅ\u000eÆï¥_\"ª\u0001UÀ7¹\"4\u0003sx7\u009a2í\u0004\u0011\u0001lHAòuÚ\u008a\u0006T9ëUý}gI\u0088Ì¿\u0098æ»Ð\u0092CÏ·\u001ea\u000f\u009dA¶Ö62\u0097)7\u0017X\u000bÍl¨9"

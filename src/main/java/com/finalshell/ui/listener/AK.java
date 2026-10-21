@@ -1,6 +1,6 @@
 package com.finalshell.ui.listener;
 
-import com.finalshell.connection.Copy;
+import com.finalshell.connection.CopyConnectionInfoAction;
 import com.finalshell.core.Y62_2;
 import com.finalshell.core.YA3_2;
 import com.finalshell.reflect.Ref;
@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class AK implements ActionListener {
-   public final Copy d;
+   public final CopyConnectionInfoAction d;
 
-   public AK(Copy var1) {
+   public AK(CopyConnectionInfoAction var1) {
       this.d = var1;
    }
 
@@ -33,7 +33,7 @@ public class AK implements ActionListener {
       Ref.g(347284645451059683L, var15);
       ArrayList var10007 = Registry.emptyArgs();
       long var18 = 530247999995353660L;
-      Object[] var17 = var10007;
+      Object var17 = var10007;
       var10007 = Ref.h(530247999995353660L, var17, var18);
 
       try {

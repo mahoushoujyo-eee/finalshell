@@ -1,7 +1,7 @@
 package com.finalshell.ui.model;
 
 public final class N0 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 

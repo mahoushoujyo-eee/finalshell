@@ -31,6 +31,12 @@ public class Ct2 implements Comparator {
    }
 
    public int H(YA3_2 var1, YA3_2 var2) {
+      Long var54;
+      Long var57;
+      Integer var60;
+      Long var70;
+      Long var73;
+      Integer var76;
       String[] var3 = Y62_2.Z();
       Object var4 = 322807311559053454L;
       Ct2 var10001 = ((String)Ref.g(322807311559053454L, var4)).equals((String)Registry.lookupField(537427811193673915L).get(null));
@@ -40,7 +46,7 @@ public class Ct2 implements Comparator {
             Comparator var10002 = (Comparator)Ref.g(322467945652486988L, var6);
             String var61 = (String)(Registry.emptyArgs());
             long var9 = 593117720967762508L;
-            Object[] var8 = var61;
+            Object var8 = var61;
             var61 = Ref.h(593117720967762508L, var8, var9);
 
             try {
@@ -51,7 +57,7 @@ public class Ct2 implements Comparator {
 
             String var77 = (String)(Registry.emptyArgs());
             long var11 = 593117720967762508L;
-            Object[] var10 = var77;
+            Object var10 = var77;
             var77 = Ref.h(593117720967762508L, var10, var11);
 
             try {
@@ -72,9 +78,9 @@ public class Ct2 implements Comparator {
          if (var10001 == null) {
             Object var14 = 576645009835838970L;
             Ref.g(576645009835838970L, var14);
-            Object[] var58 = Registry.emptyArgs();
+            Object var58 = Registry.emptyArgs();
             long var17 = 567652193651101967L;
-            Object[] var16 = var58;
+            Object var16 = var58;
             var58 = Ref.h(567652193651101967L, var16, var17);
 
             try {
@@ -84,9 +90,9 @@ public class Ct2 implements Comparator {
             }
 
             Integer.valueOf(var60);
-            Object[] var74 = Registry.emptyArgs();
+            Object var74 = Registry.emptyArgs();
             long var19 = 567652193651101967L;
-            Object[] var18 = var74;
+            Object var18 = var74;
             var74 = Ref.h(567652193651101967L, var18, var19);
 
             try {
@@ -95,9 +101,9 @@ public class Ct2 implements Comparator {
                throw var45.getTargetException();
             }
 
-            Object[] var67 = Registry.packArgs(var2, Integer.valueOf(var76));
+            Object var67 = Registry.packArgs(var2, Integer.valueOf(var76));
             long var21 = 227703286706087580L;
-            Object[] var20 = var67;
+            Object var20 = var67;
             var67 = Ref.h(227703286706087580L, var20, var21);
 
             try {
@@ -116,9 +122,9 @@ public class Ct2 implements Comparator {
          if (var10001 == null) {
             Object var24 = 595339177194496352L;
             Ref.g(595339177194496352L, var24);
-            Object[] var55 = Registry.emptyArgs();
+            Object var55 = Registry.emptyArgs();
             long var27 = 622646466192314176L;
-            Object[] var26 = var55;
+            Object var26 = var55;
             var55 = Ref.h(622646466192314176L, var26, var27);
 
             try {
@@ -128,9 +134,9 @@ public class Ct2 implements Comparator {
             }
 
             Long.valueOf(var57);
-            Object[] var71 = Registry.emptyArgs();
+            Object var71 = Registry.emptyArgs();
             long var29 = 622646466192314176L;
-            Object[] var28 = var71;
+            Object var28 = var71;
             var71 = Ref.h(622646466192314176L, var28, var29);
 
             try {
@@ -139,9 +145,9 @@ public class Ct2 implements Comparator {
                throw var48.getTargetException();
             }
 
-            Object[] var65 = Registry.packArgs(var2, Long.valueOf(var73));
+            Object var65 = Registry.packArgs(var2, Long.valueOf(var73));
             long var31 = 262915954633911742L;
-            Object[] var30 = var65;
+            Object var30 = var65;
             var65 = Ref.h(262915954633911742L, var30, var31);
 
             try {
@@ -160,9 +166,9 @@ public class Ct2 implements Comparator {
          if (var10001 == null) {
             Object var34 = 595339177194496352L;
             Ref.g(595339177194496352L, var34);
-            Object[] var10004 = Registry.emptyArgs();
+            Object var10004 = Registry.emptyArgs();
             long var37 = 620345507679359767L;
-            Object[] var36 = var10004;
+            Object var36 = var10004;
             var10004 = Ref.h(620345507679359767L, var36, var37);
 
             try {
@@ -172,9 +178,9 @@ public class Ct2 implements Comparator {
             }
 
             Long.valueOf(var54);
-            Object[] var10006 = Registry.emptyArgs();
+            Object var10006 = Registry.emptyArgs();
             long var39 = 620345507679359767L;
-            Object[] var38 = var10006;
+            Object var38 = var10006;
             var10006 = Ref.h(620345507679359767L, var38, var39);
 
             try {
@@ -183,9 +189,9 @@ public class Ct2 implements Comparator {
                throw var51.getTargetException();
             }
 
-            Object[] var10005 = Registry.packArgs(var2, Long.valueOf(var70));
+            Object var10005 = Registry.packArgs(var2, Long.valueOf(var70));
             long var41 = 262915954633911742L;
-            Object[] var40 = var10005;
+            Object var40 = var10005;
             var10005 = Ref.h(262915954633911742L, var40, var41);
 
             try {
@@ -203,9 +209,9 @@ public class Ct2 implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((YA3_2)var1, (YA3_2)var2);
+      Object var10001 = Registry.packArgs((YA3_2)var1, (YA3_2)var2);
       long var4 = 147012843948399118L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(147012843948399118L, var3, var4);
 
       try {

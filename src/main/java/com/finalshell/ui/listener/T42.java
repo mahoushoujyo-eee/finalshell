@@ -29,7 +29,7 @@ public class T42 implements ActionListener {
          Ref.g(356807177375621845L, var10);
          ZG_2 var10005 = (ZG_2)(Registry.packArgs(var2));
          long var13 = 274266531369243862L;
-         Object[] var12 = var10005;
+         Object var12 = var10005;
          var10005 = Ref.h(274266531369243862L, var12, var13);
 
          try {

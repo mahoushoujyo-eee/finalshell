@@ -30,6 +30,7 @@ public class UZ implements E32, SC, R__2 {
    }
 
    public static float q(float var0, float var1, float var2) {
+      float var6;
       String var10000 = h();
       float var4 = 0.0F;
       float var5 = 1.0F;
@@ -45,8 +46,6 @@ public class UZ implements E32, SC, R__2 {
 
             var5 = var6;
             if (var3 == null) {
-      float var6;
-      float var6;
                continue;
             }
          }
@@ -59,9 +58,11 @@ public class UZ implements E32, SC, R__2 {
    }
 
    public static float b(float var0, float var1, float var2, float var3) {
+      float var6;
+      float var7;
       float var5 = 0.0F;
       String var10000 = h();
-      float var6 = 1.0F;
+      var6 = 1.0F;
       String var4 = var10000;
 
       while (true) {
@@ -90,6 +91,7 @@ public class UZ implements E32, SC, R__2 {
    }
 
    public static float x(float var0) {
+      float var7;
       label13: {
          String var1 = h();
          boolean var10000 = D;
@@ -105,7 +107,7 @@ public class UZ implements E32, SC, R__2 {
          c();
       }
 
-      float var7 = var0 + 4096.0F;
+      var7 = var0 + 4096.0F;
       int var2 = (int)var7 & a(11238, 5150438208742926474L);
       int var3 = var2 + 1 & a(11238, 5150438208742926474L);
       float var4 = var7 - (float)((int)var7);
@@ -164,6 +166,8 @@ public class UZ implements E32, SC, R__2 {
    }
 
    public static float G(float var0, float var1, float var2) {
+      int var6;
+      int var8;
       label17: {
          String var3 = h();
          boolean var10000 = D;
@@ -185,12 +189,12 @@ public class UZ implements E32, SC, R__2 {
       float var14 = var27 - (float)((int)var27);
       float var15 = var14 - 1.0F;
       var27 = var1 + 4096.0F;
-      int var6 = (int)var27 & a(11238, 5150438208742926474L);
+      var6 = (int)var27 & a(11238, 5150438208742926474L);
       int var7 = var6 + 1 & a(11238, 5150438208742926474L);
       float var16 = var27 - (float)((int)var27);
       float var17 = var16 - 1.0F;
       var27 = var2 + 4096.0F;
-      int var8 = (int)var27 & a(11238, 5150438208742926474L);
+      var8 = (int)var27 & a(11238, 5150438208742926474L);
       int var9 = var8 + 1 & a(11238, 5150438208742926474L);
       float var18 = var27 - (float)((int)var27);
       float var19 = var18 - 1.0F;
@@ -255,6 +259,8 @@ public class UZ implements E32, SC, R__2 {
    }
 
    public static void c() {
+      int var7;
+      int var8;
       String var10000 = h();
       int var1 = 0;
       String var0 = var10000;
@@ -339,7 +345,7 @@ public class UZ implements E32, SC, R__2 {
       while (var1 < a(4394, 5000535023714767433L)) {
          U[a(22414, 1863777980156761316L) + var1] = U[var1];
          u[a(22414, 1863777980156761316L) + var1] = u[var1];
-         int var7 = 0;
+         var7 = 0;
 
          while (true) {
             if (var7 < 2) {
@@ -382,6 +388,7 @@ public class UZ implements E32, SC, R__2 {
    }
 
    public static float[] I(E32 var0, float[] var1) {
+      float var6;
       String var2;
       label27: {
          var2 = h();
@@ -403,7 +410,7 @@ public class UZ implements E32, SC, R__2 {
 
       while (true) {
          if (var5 < 100.0F) {
-            float var6 = var0.H(var5);
+            var6 = var0.H(var5);
             var3 = Math.min(var3, var6);
             var4 = Math.max(var4, var6);
             var5 = (float)((double)var5 + 1.27139);
@@ -425,6 +432,8 @@ public class UZ implements E32, SC, R__2 {
    }
 
    public static float[] B(SC var0, float[] var1) {
+      float var6;
+      float var7;
       String var2;
       label43: {
          var2 = h();
@@ -450,11 +459,11 @@ public class UZ implements E32, SC, R__2 {
                break;
             }
 
-            float var6 = -100.0F;
+            var6 = -100.0F;
 
             label31: {
                while (var6 < 100.0F) {
-                  float var7 = var0.h(var6, var5);
+                  var7 = var0.h(var6, var5);
                   var3 = Math.min(var3, var7);
                   var4 = Math.max(var4, var7);
                   var6 = (float)((double)var6 + 10.77139);
@@ -505,8 +514,10 @@ public class UZ implements E32, SC, R__2 {
    }
 
    public static void __vfClinit__() {
+      long[] var6;
+      byte[] var7;
       long var0 = 3648071574311890996L;
-      long[] var6 = new long[10];
+      var6 = new long[10];
       int var3 = 0;
       C(null);
       String var4 = "öËñr\u0001\u007f%Ð8\u0080,\u001a¶^±»xËj²áé\u008d\u00919/ñ\tFÂõ]\u000f[¸À#|^á\u0099DÍ{I»\u0086\u0087þü<D\u0083·ØA«Ñ\u009e@Þ\r)ñ";
@@ -517,7 +528,7 @@ public class UZ implements E32, SC, R__2 {
       while (true) {
          int var10001 = var2;
          var2 += 8;
-         byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
+         var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
          long[] var10000 = var6;
          var10001 = var3++;
          long var10002 = ((long)var7[0] & 255L) << 56
@@ -576,7 +587,6 @@ public class UZ implements E32, SC, R__2 {
       }
    }
 }
-
 
 
 

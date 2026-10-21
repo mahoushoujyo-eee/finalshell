@@ -23,10 +23,12 @@ public class DS {
    public static Integer[] d;
 
    public static byte[] S(byte[] var0) {
+      long var23;
+      Random var4;
       Ky4[] var10000 = YT3_2.c();
       long var2 = Registry.lookupField(567239955528735437L).getLong(null) / (long)new Random((long)var0[5]).nextInt(a(22500, 9214245546184578384L));
       Ky4[] var1 = var10000;
-      Random var4 = new Random(var2);
+      var4 = new Random(var2);
       byte var5 = var0[0];
       int var6 = 0;
 
@@ -261,6 +263,7 @@ public class DS {
    }
 
    public static byte[] M(int var0) {
+      byte[] var4;
       byte[] var2 = new byte[var0];
       Ky4[] var10000 = YT3_2.c();
       int var3 = 0;
@@ -268,7 +271,6 @@ public class DS {
 
       while (true) {
          if (var3 < var0) {
-      long var4;
             var4 = var2;
             if (var1 == null) {
                break;
@@ -277,7 +279,6 @@ public class DS {
             var2[var3] = (byte)(5 + (byte)new Random().nextInt(a(23351, 8389118236749732228L)));
             var3++;
             if (var1 != null) {
-      long var4;
                continue;
             }
          }
@@ -290,7 +291,8 @@ public class DS {
    }
 
    public void M(byte[] var1, long var2) {
-      Random var4 = new Random();
+      Random var4;
+      var4 = new Random();
       var4.nextLong();
    }
 
@@ -339,6 +341,7 @@ var10004 = new Random((byte[])var10005);
    }
 
    public static String a(int var0, int var1) {
+      short var4;
       int var2 = (var0 ^ -18835) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1113,7 +1116,7 @@ var10004 = new Random((byte[])var10005);
                var10000 = 190;
          }
 
-         short var4 = var10000;
+         var4 = var10000;
          int var5 = (var1 & 0xFF) - var4;
          if (var5 < 0) {
             var5 += 256;
@@ -1153,6 +1156,7 @@ var10004 = new Random((byte[])var10005);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "¸Ûv\u0005\u0004ÂÃ'\u0015";
@@ -1331,7 +1335,6 @@ var10004 = new Random((byte[])var10005);
       }
    }
 }
-
 
 
 

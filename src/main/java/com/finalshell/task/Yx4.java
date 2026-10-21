@@ -59,7 +59,7 @@ public class Yx4 implements Runnable {
          var10004 = (Bq2)Ref.g(128810952447237716L, var15);
       }
 
-      Object[] var44 = Registry.lookupField(515313227049281099L).getBoolean(var10004);
+      Object var44 = Registry.lookupField(515313227049281099L).getBoolean(var10004);
       if (var1 == null) {
          if (var44 == null) {
             return;

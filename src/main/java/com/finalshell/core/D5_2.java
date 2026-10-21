@@ -181,6 +181,7 @@ public class D5_2 implements SV {
    }
 
    public void f(DefaultMutableTreeNode var1, List var2, List var3) {
+      Pt2 var12;
       String[] var10000 = CB3.C$arrString();
       DefaultMutableTreeNode var5 = (DefaultMutableTreeNode)var1.getParent();
       String[] var4 = var10000;
@@ -194,7 +195,6 @@ public class D5_2 implements SV {
          while (true) {
             label86:
             if (var9 < var5.getChildCount()) {
-      Pt2 var12;
                Pt2 var10 = this.P((DefaultMutableTreeNode)var5.getChildAt(var9));
                var12 = var10;
                if (var4 == null) {
@@ -359,6 +359,7 @@ public class D5_2 implements SV {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    @Override
    public void I(Collection var1) {
+      Object var10;
       String[] var2 = CB3.C$arrString();
       int var10000 = this.d.size();
       if (var2 != null) {
@@ -555,6 +556,8 @@ public class D5_2 implements SV {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    @Override
    public void y(boolean var1) {
+      Entry var12;
+      Object var16;
       String[] var2 = CB3.C$arrString();
       int var10000 = this.d.size();
       if (var2 != null) {
@@ -572,7 +575,7 @@ public class D5_2 implements SV {
          Iterator var10 = this.D.entrySet().iterator();
 
          while (var10.hasNext()) {
-            Entry var12 = (Entry)var10.next();
+            var12 = (Entry)var10.next();
             if (var2 == null) {
                return;
             }

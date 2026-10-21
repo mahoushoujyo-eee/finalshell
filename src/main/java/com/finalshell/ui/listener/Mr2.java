@@ -2,15 +2,15 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.RouteTracePanel3;
+import com.finalshell.ui.panel.RouteTraceAddressPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Mr2 implements ActionListener {
-   public final RouteTracePanel3 H;
+   public final RouteTraceAddressPanel H;
 
-   public Mr2(RouteTracePanel3 var1) {
+   public Mr2(RouteTraceAddressPanel var1) {
       this.H = var1;
    }
 

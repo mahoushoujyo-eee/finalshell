@@ -1,6 +1,6 @@
 package com.finalshell.io;
 
-import com.finalshell.core.CK;
+import com.finalshell.core.ZModemTransfer;
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,12 +17,12 @@ public class V6 extends FilterInputStream {
    }
 
    public int L(long var1) throws IOException {
-      boolean var3 = CK.r$boolean();
+      boolean var3 = ZModemTransfer.r$boolean();
 
       label34: {
          try {
             if (!var3) {
-               return this.E;
+               return (this.E) ? 1 : 0;
             }
 
             if (!this.E) {

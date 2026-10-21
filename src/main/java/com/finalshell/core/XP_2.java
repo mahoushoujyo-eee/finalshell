@@ -31,6 +31,7 @@ public class XP_2 {
    }
 
    public static XP_2 g(byte var0, boolean var1) {
+      XP_2 var5;
       String var10000 = com.finalshell.ui.model.GV.b();
       XP_2 var3 = (XP_2)a.get(var0);
       String var2 = var10000;
@@ -40,14 +41,12 @@ public class XP_2 {
          if (var3 != null) {
             label27: {
                if (!var1) {
-      XP_2 var5;
                   var5 = var3;
                   if (var2 != null) {
                      break label27;
                   }
 
                   if (var3.V() == com.finalshell.ui.model.GV.HEADER) {
-      XP_2 var5;
                      break label22;
                   }
                }
@@ -81,7 +80,7 @@ public class XP_2 {
 
                if (var2 != 0) {
                   if (var3 != null) {
-                     return (boolean)var1;
+                     return var1 != 0;
                   }
 
                   if (var1 == a(19567, 7414467613260000340L)) {
@@ -89,7 +88,7 @@ public class XP_2 {
                   }
                }
 
-               return (boolean)0;
+               return 0 != 0;
             case -112:
             case -111:
             case -109:
@@ -101,17 +100,17 @@ public class XP_2 {
             case 127:
                return true;
             default:
-               var10000 = var2;
+               var10000 = (var2) ? 1 : 0;
          }
       }
 
       if (var3 != null) {
-         return (boolean)var10000;
+         return var10000 != 0;
       } else {
          if (var10000 != 0) {
             var10000 = var0 & a(29213, 532365471510172196L);
             if (var3 != null) {
-               return (boolean)var10000;
+               return var10000 != 0;
             }
 
             if (var10000 == 0) {
@@ -119,7 +118,7 @@ public class XP_2 {
             }
          }
 
-         return (boolean)0;
+         return 0 != 0;
       }
    }
 
@@ -996,6 +995,7 @@ public class XP_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var5;
       String[] var13 = new String[2];
       int var11 = 0;
       String var10 = "\"àÂ¤µÈ½\u0006}Yñ´É\u0014";
@@ -1085,7 +1085,7 @@ public class XP_2 {
             long[] var6 = new long[8];
             int var3 = 0;
             String var4 = "G\u0092WÞ\u0003[\u0005\u009e\u0012ï\twæû<\u0013Ü<!ö\u000el\\\u0088ñF)d,\u001d[Éß9í\ruØLp¬Ö±âp8ÉS";
-            int var5 = "G\u0092WÞ\u0003[\u0005\u009e\u0012ï\twæû<\u0013Ü<!ö\u000el\\\u0088ñF)d,\u001d[Éß9í\ruØLp¬Ö±âp8ÉS".length();
+            var5 = "G\u0092WÞ\u0003[\u0005\u009e\u0012ï\twæû<\u0013Ü<!ö\u000el\\\u0088ñF)d,\u001d[Éß9í\ruØLp¬Ö±âp8ÉS".length();
             byte var2 = 0;
 
             label40:
@@ -1131,7 +1131,7 @@ public class XP_2 {
                         }
 
                         var4 = "c\u008fMd®Ôr \\0\u0013È7n[\u009a";
-                        var5 = "c\u008fMd®Ôr \\0\u0013È7n[\u009a".length();
+                        var5 = ("c\u008fMd®Ôr \\0\u0013È7n[\u009a".length()) != 0;
                         var2 = 0;
                   }
 
@@ -1157,7 +1157,6 @@ public class XP_2 {
       }
    }
 }
-
 
 
 

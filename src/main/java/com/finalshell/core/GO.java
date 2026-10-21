@@ -132,6 +132,7 @@ public class GO {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var47;
       String[] var16 = new String[7];
       int var20 = 0;
       String var19 = "gnQS^\\\u0019r7A\u0018KX\u0003iiM\u0014VG\u0004\u000fozJ\u0013K\u001c\u0012kiQ\u0004\u0016C\u0019a\u0005%)\u000bM\b\u001bozJ\u0013K\u001c\u001frtIRHV\u0019bpK\u001aq^\u0016a|\u000b\rVT\u001bozJ\u0013K\u001c\u001frtIRUZ\u0004upK\u001aq^\u0016a|\u000b\rVT";
@@ -148,7 +149,6 @@ public class GO {
          byte var10002 = -1;
 
          while (true) {
-      char[] var47;
             label84: {
                char[] var55 = var10001.toCharArray();
                int var10004 = var55.length;

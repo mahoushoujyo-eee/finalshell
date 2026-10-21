@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 
 public class CH3 {
    public int T;
@@ -29,7 +29,7 @@ public class CH3 {
    public static Integer[] d;
 
    public CH3(int var1) {
-      boolean var10000 = Address.i();
+      boolean var10000 = FileBrowserAddressBar.i();
       Registry.lookupField(531881374778269800L).setBoolean(this, false);
       Registry.lookupField(447186546454061076L).setBoolean(this, false);
       Registry.lookupField(162124568763483784L).setBoolean(this, false);
@@ -57,19 +57,19 @@ public class CH3 {
          var10001 = var10001 != 0 ? 1 : 0;
       }
 
-      Registry.lookupField(531881374778269800L).setBoolean(this, (boolean)var10001);
+      Registry.lookupField(531881374778269800L).setBoolean(this, var10001 != 0);
       var10001 = var1 & a(9258, 101478397430862227L);
       if (var2) {
          var10001 = var10001 != 0 ? 1 : 0;
       }
 
-      Registry.lookupField(447186546454061076L).setBoolean(this, (boolean)var10001);
+      Registry.lookupField(447186546454061076L).setBoolean(this, var10001 != 0);
       var10001 = var1 & a(6063, 2228060882883781140L);
       if (var2) {
          var10001 = var10001 != 0 ? 1 : 0;
       }
 
-      Registry.lookupField(162124568763483784L).setBoolean(this, (boolean)var10001);
+      Registry.lookupField(162124568763483784L).setBoolean(this, var10001 != 0);
       var10001 = var1 & a(25308, 8336928977250244450L);
       if (var2) {
          var10001 = var10001 != 0 ? 1 : 0;
@@ -77,7 +77,7 @@ public class CH3 {
 
       label107: {
          label116: {
-            Registry.lookupField(421537750765065358L).setBoolean(this, (boolean)var10001);
+            Registry.lookupField(421537750765065358L).setBoolean(this, var10001 != 0);
             var10001 = (Registry.lookupField(531881374778269800L).getBoolean(this)) ? 1 : 0;
             if (var2) {
                if (var10001 != 0) {
@@ -100,13 +100,13 @@ public class CH3 {
          var10001 = 0;
       }
 
-      Registry.lookupField(400190908514222960L).setBoolean(this, (boolean)var10001);
+      Registry.lookupField(400190908514222960L).setBoolean(this, var10001 != 0);
       var10001 = var1 & a(16855, 4975010784143930474L);
       if (var2) {
          var10001 = var10001 != 0 ? 1 : 0;
       }
 
-      Registry.lookupField(143952068372306828L).setBoolean(this, (boolean)var10001);
+      Registry.lookupField(143952068372306828L).setBoolean(this, var10001 != 0);
       var10001 = var1 & a(27994, 3814893128545786082L);
       if (var2) {
          var10001 = var10001 != 0 ? 1 : 0;
@@ -114,7 +114,7 @@ public class CH3 {
 
       label93: {
          label117: {
-            Registry.lookupField(564497212847460453L).setBoolean(this, (boolean)var10001);
+            Registry.lookupField(564497212847460453L).setBoolean(this, var10001 != 0);
             var10001 = (Registry.lookupField(447186546454061076L).getBoolean(this)) ? 1 : 0;
             if (var2) {
                if (var10001 != 0) {
@@ -137,25 +137,25 @@ public class CH3 {
          var10001 = 0;
       }
 
-      Registry.lookupField(130314259210761225L).setBoolean(this, (boolean)var10001);
+      Registry.lookupField(130314259210761225L).setBoolean(this, var10001 != 0);
       var10001 = var1 & 4;
       if (var2) {
          var10001 = var10001 != 0 ? 1 : 0;
       }
 
-      Registry.lookupField(489928307508925559L).setBoolean(this, (boolean)var10001);
+      Registry.lookupField(489928307508925559L).setBoolean(this, var10001 != 0);
       var10001 = var1 & 2;
       if (var2) {
          var10001 = var10001 != 0 ? 1 : 0;
       }
 
-      Registry.lookupField(359809484391520260L).setBoolean(this, (boolean)var10001);
+      Registry.lookupField(359809484391520260L).setBoolean(this, var10001 != 0);
       var10001 = var1 & 1;
       if (var2) {
          var10001 = var10001 != 0 ? 1 : 0;
       }
 
-      Registry.lookupField(477704961823115672L).setBoolean(this, (boolean)var10001);
+      Registry.lookupField(477704961823115672L).setBoolean(this, var10001 != 0);
    }
 
    public CH3() {
@@ -182,7 +182,8 @@ public class CH3 {
    }
 
    public void A() {
-      boolean var10000 = Address.g();
+      CH3 var4;
+      boolean var10000 = FileBrowserAddressBar.g();
       int var2 = 0;
       boolean var1 = var10000;
       var10000 = Registry.lookupField(531881374778269800L).getBoolean(this);

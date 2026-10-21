@@ -162,6 +162,8 @@ public class RG implements OD {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
    public byte[] d(byte[] var1, int var2, int[] var3) {
+      DataFormatException var14;
+      byte[] var15;
       this.N.setInput(var1, var2, var3[0]);
       Ky4[] var10000 = I();
       int var5 = 0;
@@ -181,7 +183,6 @@ public class RG implements OD {
                System.arraycopy(this.z, 0, this.t, var5, var6);
                var5 += var6;
             } catch (DataFormatException var11) {
-      int var14;
                var14 = var11;
                boolean var10001 = false;
                break;
@@ -193,15 +194,12 @@ public class RG implements OD {
                      break;
                   }
                } catch (DataFormatException var10) {
-      String var14;
                   var14 = var10;
                   boolean var16 = false;
                   break label53;
                }
 
                if (var4 == null) {
-      Ky4[] var15;
-      Ky4[] var15;
                   break label54;
                }
             }

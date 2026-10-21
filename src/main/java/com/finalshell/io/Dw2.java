@@ -1279,6 +1279,7 @@ public final class Dw2 extends FilterOutputStream {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "+å¢\u0002:l\u0012\u009cMðÝ\"6\u00ad\u001b\u009a\u0013\u0086Å\u0000;òÔô3\u0081JQá Â\u0007¸)7íÉ*¼â@Þ\u0006B\u0012Ö";
@@ -1293,7 +1294,6 @@ public final class Dw2 extends FilterOutputStream {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

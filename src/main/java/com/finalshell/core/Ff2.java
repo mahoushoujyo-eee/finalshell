@@ -898,6 +898,7 @@ public class Ff2 implements C_e_2_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "ú\b\u0003àÕ\u0015";
@@ -912,7 +913,6 @@ public class Ff2 implements C_e_2_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

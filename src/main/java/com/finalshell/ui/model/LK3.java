@@ -16,7 +16,7 @@ public class LK3 implements Comparator {
       Comparator var10001 = (Comparator)Ref.g(244830222573439052L, var3);
       String var10003 = (String)(Registry.emptyArgs());
       long var6 = 286931176286176762L;
-      Object[] var5 = var10003;
+      Object var5 = var10003;
       var10003 = Ref.h(286931176286176762L, var5, var6);
 
       try {
@@ -27,7 +27,7 @@ public class LK3 implements Comparator {
 
       String var10005 = (String)(Registry.emptyArgs());
       long var8 = 286931176286176762L;
-      Object[] var7 = var10005;
+      Object var7 = var10005;
       var10005 = Ref.h(286931176286176762L, var7, var8);
 
       try {
@@ -41,9 +41,9 @@ public class LK3 implements Comparator {
 
    @Override
    public int compare(Object var1, Object var2) {
-      Object[] var10001 = Registry.packArgs((LD3_2)var1, (LD3_2)var2);
+      Object var10001 = Registry.packArgs((LD3_2)var1, (LD3_2)var2);
       long var4 = 175580520082473153L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(175580520082473153L, var3, var4);
 
       try {

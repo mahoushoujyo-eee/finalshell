@@ -1,12 +1,12 @@
 package com.finalshell.task;
 
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import javax.swing.SwingUtilities;
 
 public class Qn2 implements Runnable {
-   public final U Z;
+   public final MainFrame Z;
 
-   public Qn2(U var1) {
+   public Qn2(MainFrame var1) {
       this.Z = var1;
    }
 

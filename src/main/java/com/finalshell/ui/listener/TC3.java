@@ -3,7 +3,7 @@ package com.finalshell.ui.listener;
 import com.finalshell.core.TM;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Connection5;
+import com.finalshell.ui.panel.ImportExportPanel;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.lang.reflect.InvocationTargetException;
@@ -42,7 +42,7 @@ public class TC3 implements FocusListener {
       Object var2 = 152236502500346171L;
       Ref.g(152236502500346171L, var2);
       Object var4 = 123645524365861271L;
-      ((Connection5)Ref.g(123645524365861271L, var4)).stopEditing();
+      ((ImportExportPanel)Ref.g(123645524365861271L, var4)).stopEditing();
    }
 }
 

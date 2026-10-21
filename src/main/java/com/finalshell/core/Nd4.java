@@ -12,6 +12,7 @@ public abstract class Nd4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    static void __vfClinit__() {
+      char[] var20;
       String[] var0 = new String[4];
       int var4 = 0;
       String var3 = "\"'\u0010;t\t\u001c3+\u001e2v\u0007]:1\u0017%;\u001bS7.\u0017yv\u0000^ /\u001cyx\u0000V<$\u001b4t\u001b[:,\\3t\u001bW)\"'\u0010;t\t\u001c3+\u001e2v\u0007]:1\u0017%;\u001bS7.\u0017yv\u0000^ /\u001cyp\u0017F0,\u0001>z\u0001";
@@ -27,7 +28,6 @@ public abstract class Nd4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label48: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

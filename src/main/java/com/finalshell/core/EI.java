@@ -26,7 +26,7 @@ public final class EI implements SwingConstants {
       var1.clear();
       int var10000 = (Oj2.V()) ? 1 : 0;
       List var3 = var0.J();
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       Collections.sort(var3, J);
       String var4 = var0.getText();
       String var14 = var4;
@@ -120,11 +120,12 @@ public final class EI implements SwingConstants {
    }
 
    public static void G(String var0, LS3 var1, List var2) {
+      int var6;
       int var10000 = (Oj2.V()) ? 1 : 0;
       var1 = new LS3(var1);
       int var4 = var0.indexOf(a(9869, 408594966773347042L));
       int var5 = var0.indexOf(a(15537, 1662597904632588508L));
-      boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var3 = (var10000) != 0;
 
       label87: {
          do {
@@ -151,7 +152,6 @@ public final class EI implements SwingConstants {
                var10000 = var10000 >= 0 ? var4 : -1;
             }
 
-            int var6;
             label93: {
                var6 = var10000;
                var10000 = var5;
@@ -320,10 +320,11 @@ public final class EI implements SwingConstants {
    }
 
    public static int h(String var0) {
+      int var6;
       char var2 = 0;
       int var10000 = (Oj2.V()) ? 1 : 0;
       int var3 = var0.length() - 1;
-      boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var1 = (var10000) != 0;
 
       while (true) {
          if (var3 >= 0) {
@@ -336,7 +337,6 @@ public final class EI implements SwingConstants {
             label88: {
                if (!var1) {
                   if (var2 == 0) {
-      String var6;
                      var6 = var4;
                      label72:
                      if (!var1) {
@@ -545,6 +545,7 @@ public final class EI implements SwingConstants {
       Rectangle var9,
       int var10
    ) {
+      View var32;
       boolean var11;
       label244: {
          label243: {
@@ -578,7 +579,7 @@ public final class EI implements SwingConstants {
                var10000 = var1;
             }
 
-            var28 = (var10000.equals("")) ? 1 : 0;
+            var28 = (byte)((var10000.equals("")) ? 1 : 0);
             if (!var11) {
                break label235;
             }
@@ -617,7 +618,7 @@ public final class EI implements SwingConstants {
          int var16;
          label214: {
             var14 = var2 == null ? 0 : var10;
-            var28 = var6;
+            var28 = (byte)(var6);
             if (var11) {
                if (var6 == 0) {
                   var16 = var7.width;
@@ -626,7 +627,7 @@ public final class EI implements SwingConstants {
                   }
                }
 
-               var28 = var7.width - (var8.width + var14);
+               var28 = (byte)(var7.width - (var8.width + var14));
             }
 
             var16 = var28;
@@ -659,7 +660,7 @@ public final class EI implements SwingConstants {
       }
 
       label249: {
-         var28 = var5;
+         var28 = (byte)(var5);
          if (var11) {
             if (var5 == 1) {
                if (var6 != 0) {
@@ -675,7 +676,7 @@ public final class EI implements SwingConstants {
                }
             }
 
-            var28 = var5;
+            var28 = (byte)(var5);
          }
 
          if (var11) {
@@ -686,7 +687,7 @@ public final class EI implements SwingConstants {
                }
             }
 
-            var28 = var6;
+            var28 = (byte)(var6);
          }
 
          if (var28 != 0) {
@@ -700,7 +701,7 @@ public final class EI implements SwingConstants {
       }
 
       label250: {
-         var28 = var6;
+         var28 = (byte)(var6);
          if (var11) {
             if (var6 == 2) {
                var9.x = -(var9.width + var14);
@@ -709,7 +710,7 @@ public final class EI implements SwingConstants {
                }
             }
 
-            var28 = var6;
+            var28 = (byte)(var6);
          }
 
          if (var28 == 0) {
@@ -730,7 +731,7 @@ public final class EI implements SwingConstants {
          var17 = Math.max(var8.x + var8.width, var9.x + var9.width) - var26;
          int var18 = Math.min(var8.y, var9.y);
          int var19 = Math.max(var8.y + var8.height, var9.y + var9.height) - var18;
-         var28 = var3;
+         var28 = (byte)(var3);
          if (var11) {
             if (var3 == 1) {
                var21 = var7.y - var18;
@@ -739,7 +740,7 @@ public final class EI implements SwingConstants {
                }
             }
 
-            var28 = var3;
+            var28 = (byte)(var3);
          }
 
          if (var11) {
@@ -750,7 +751,7 @@ public final class EI implements SwingConstants {
                }
             }
 
-            var28 = var7.y + var7.height - (var18 + var19);
+            var28 = (byte)(var7.y + var7.height - (var18 + var19));
          }
 
          var21 = var28;
@@ -758,7 +759,7 @@ public final class EI implements SwingConstants {
 
       int var20;
       label252: {
-         var28 = var4;
+         var28 = (byte)(var4);
          int var10001 = 2;
          if (var11) {
             if (var4 == 2) {
@@ -768,7 +769,7 @@ public final class EI implements SwingConstants {
                }
             }
 
-            var28 = var4;
+            var28 = (byte)(var4);
             var10001 = 4;
          }
 
@@ -780,7 +781,7 @@ public final class EI implements SwingConstants {
                }
             }
 
-            var28 = var7.x + var7.width / 2;
+            var28 = (byte)(var7.x + var7.width / 2);
             var10001 = var26 + var17 / 2;
          }
 
@@ -799,7 +800,7 @@ public final class EI implements SwingConstants {
          int var24 = var7.x;
          int var25 = var7.width;
          var25 -= var8.width;
-         var28 = var6;
+         var28 = (byte)(var6);
          if (var11) {
             if (var6 == 0) {
                Rectangle var38 = var7;
@@ -820,7 +821,7 @@ public final class EI implements SwingConstants {
                }
             }
 
-            var28 = var8.x;
+            var28 = (byte)(var8.x);
          }
 
          int var40 = var24;
@@ -833,7 +834,7 @@ public final class EI implements SwingConstants {
                }
             }
 
-            var28 = var8.x;
+            var28 = (byte)(var8.x);
             var40 = var25;
          }
 
@@ -842,7 +843,7 @@ public final class EI implements SwingConstants {
                break label253;
             }
 
-            var28 = var4;
+            var28 = (byte)(var4);
             var40 = 2;
          }
 
@@ -860,7 +861,7 @@ public final class EI implements SwingConstants {
          var22 -= var2.getIconHeight() / 2;
       }
 
-      var28 = var3;
+      var28 = (byte)(var3);
       byte var41 = 1;
       if (var11) {
          if (var3 == 1) {
@@ -870,7 +871,7 @@ public final class EI implements SwingConstants {
             }
          }
 
-         var28 = var3;
+         var28 = (byte)(var3);
          var41 = 3;
       }
 
@@ -887,8 +888,8 @@ public final class EI implements SwingConstants {
       String var3;
       label60: {
          int var10000 = (Oj2.g()) ? 1 : 0;
-         var3 = ("") != null;
-         var2 = ((((boolean)var10000) != 0) != 0) != 0;
+         var3 = "";
+         var2 = (var10000) != 0;
          String var4 = var0;
          int var5 = V(var0, "{", 0);
          var10000 = var5;
@@ -1575,6 +1576,7 @@ public final class EI implements SwingConstants {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ 14553) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -2355,7 +2357,7 @@ public final class EI implements SwingConstants {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -2389,6 +2391,8 @@ public final class EI implements SwingConstants {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      long[] var6;
       String[] var13 = new String[18];
       int var11 = 0;
       String var10 = "/\u009b\u008bHÔõL`\u009a\u001a\nI§µ/áÈ[\u0001µN\u0006:µ³Ým`\u0003\u009aÙý\u0002²D\u0004î¥\u0004ß\u0003!Ò\u0098\n@\u0089\u0001+D\u0087ïè#s\u000b\u001e¿\u007f´ÜuG\u0090¼\u008fZ\u0004¦eG·\tÚ\u008eõ\u0084Ì¦|É\u008d\nLýÿj\u0082óT«|R\u0005é\u0005óÕb\u0002Z^\u0005â\u0094î\u0082q\u0002§ö";
@@ -2404,7 +2408,6 @@ public final class EI implements SwingConstants {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -2483,7 +2486,7 @@ public final class EI implements SwingConstants {
                      a = var13;
                      b = new String[18];
                      long var0 = 6529028561496559547L;
-                     long[] var6 = new long[8];
+                     var6 = new long[8];
                      int var3 = 0;
                      String var4 = "òû¨æ\u009a\u008f séòò\u007fbDõÁ AoøÛ*½$u½OO \u009dÁ\u0091bF$ùsè}TÆ\b\u0092«dËÐV";
                      int var5 = "òû¨æ\u009a\u008f séòò\u007fbDõÁ AoøÛ*½$u½OO \u009dÁ\u0091bF$ùsè}TÆ\b\u0092«dËÐV".length();

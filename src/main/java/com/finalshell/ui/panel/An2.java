@@ -9,7 +9,7 @@ public class An2 extends As2 {
    public final GradientPaint m;
    public final UV3 s;
 
-   public An2(UV3 var1, ShowDeletedPanel var2, Connection5 var3, GradientPaint var4) {
+   public An2(UV3 var1, ShowDeletedPanel var2, ImportExportPanel var3, GradientPaint var4) {
       super(var2, var3);
       this.s = var1;
       this.m = var4;

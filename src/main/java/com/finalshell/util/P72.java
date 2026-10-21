@@ -826,6 +826,7 @@ public class P72 extends HashSet {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "up\u008bÒÝïÊ}\u0004È\u0013\u0081}\u0092·Ê'ÓP\u0014b¡nÕ_R\u0081ë¹ÖL!\u0082èWm\u0004\u0088\\¦'ÍRê©V\u00836WO\\\u008f®Wðù;_QãçöÓäþ\u007fÝwo\u0016hVç¨S¦Y\u0091à?ãQñ\u0014»\u0016\u009dÍ3Ä\u0082\u0007\tSjçq¤Iè\u0004ª\u0001ç\u0094V½Ì\u0012\\ò¸\u001bÜnd{\u0001Q¥¾^ ´ô\u0007|d\u0086\u008e\u001fà\u0010]Ò.º\u000eÇ\u0098'\u0018(,¢\u001d¡)\u0080*R(\u0000\u0081s'\u0091&\u0017\u0018U¯³C%\u008b¯Ç\tß¨Ms\u008cÈ´\n»#U)\u008fL\u001e9\u0086\u001cGÜU\u00002a\u000e\u0019";
@@ -841,7 +842,6 @@ public class P72 extends HashSet {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

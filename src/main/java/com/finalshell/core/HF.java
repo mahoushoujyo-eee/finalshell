@@ -293,6 +293,7 @@ public class HF extends Hv2_2 {
 
    @Override
    public Hd2[] S() throws B2_5 {
+      Hd2[] var5;
       Hd2[] var2 = new Hd2[this.K.g.length];
       String[] var10000 = RG_2.C();
       int var3 = 0;
@@ -300,7 +301,6 @@ public class HF extends Hv2_2 {
 
       while (true) {
          if (var3 < var2.length) {
-      Hd2[] var5;
             try {
                var5 = var2;
                if (var1 == null) {
@@ -313,7 +313,6 @@ public class HF extends Hv2_2 {
                   continue;
                }
             } catch (B2_5 var4) {
-      Hd2[] var5;
                throw a(var4);
             }
          }
@@ -1362,7 +1361,6 @@ public class HF extends Hv2_2 {
       }
    }
 }
-
 
 
 

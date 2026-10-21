@@ -1243,8 +1243,9 @@ public class QS extends QX {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var5;
       String[] var7 = new String[3];
-      int var5 = 0;
+      var5 = 0;
       String var4 = "úý\u0085\u0000\u0006j\u009d\u001c\fØº\u0005(¸]ã\u0085";
       int var6 = "úý\u0085\u0000\u0006j\u009d\u001c\fØº\u0005(¸]ã\u0085".length();
       char var3 = 4;

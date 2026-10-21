@@ -33,6 +33,7 @@ public class Ps4 implements Stroke {
 
    @Override
    public Shape createStrokedShape(Shape var1) {
+      Ps4 var33;
       int var2;
       GlyphVector var4;
       GeneralPath var5;
@@ -51,7 +52,7 @@ public class Ps4 implements Stroke {
             FontRenderContext var3 = new FontRenderContext(null, true, true);
             var4 = this.l.createGlyphVector(var3, this.W);
             var5 = new GeneralPath();
-            int var10000 = Lp2_2.z();
+            int var10000 = ScaledStroke.z();
             var6 = new FlatteningPathIterator(var1.getPathIterator(null), 1.0);
             var7 = new float[a(26202, 3798645033542414022L)];
             var8 = 0.0F;
@@ -223,7 +224,7 @@ public class Ps4 implements Stroke {
       FlatteningPathIterator var3 = new FlatteningPathIterator(var1.getPathIterator(null), 1.0);
       float[] var4 = new float[a(5603, 1565897720011529598L)];
       float var5 = 0.0F;
-      int var10000 = Lp2_2.z();
+      int var10000 = ScaledStroke.z();
       float var6 = 0.0F;
       float var7 = 0.0F;
       int var2 = var10000;

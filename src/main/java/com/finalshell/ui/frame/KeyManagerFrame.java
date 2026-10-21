@@ -7,7 +7,7 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.ui.listener.B4;
 import com.finalshell.ui.listener.KB;
 import com.finalshell.ui.listener.LY3;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class KeyManagerFrame extends JFrame {
-   public ImportPanel e;
+   public ImportMenuPanel e;
    public JPanel Z;
    public static String[] a;
    public static String[] b;
@@ -23,9 +23,9 @@ public class KeyManagerFrame extends JFrame {
    public static Integer[] d;
 
    public KeyManagerFrame() {
-      ImportPanel var10001 = new ImportPanel();
+      ImportMenuPanel var10001 = new ImportMenuPanel();
       long var5 = 512348400607580044L;
-      ImportPanel var4 = var10001;
+      ImportMenuPanel var4 = var10001;
       Ref.s(512348400607580044L, var4, var5);
       Object var6 = 512348400607580044L;
       Ref.g(512348400607580044L, var6);
@@ -42,12 +42,12 @@ public class KeyManagerFrame extends JFrame {
 
       this.setLayout(new MigLayout(a(18966, 173)));
       Object var10 = 512348400607580044L;
-      this.add((ImportPanel)Ref.g(512348400607580044L, var10), a(18960, -23053));
+      this.add((ImportMenuPanel)Ref.g(512348400607580044L, var10), a(18960, -23053));
       Object var12 = 512348400607580044L;
       Ref.g(512348400607580044L, var12);
       NA_2 var10006 = (NA_2)(Registry.emptyArgs());
       long var15 = 383544679767146894L;
-      Object[] var14 = var10006;
+      Object var14 = var10006;
       var10006 = Ref.h(383544679767146894L, var14, var15);
 
       try {
@@ -115,12 +115,12 @@ public class KeyManagerFrame extends JFrame {
       }
    }
 
-   public ImportPanel L() {
+   public ImportMenuPanel L() {
       Object var1 = 512348400607580044L;
-      return (ImportPanel)Ref.g(512348400607580044L, var1);
+      return (ImportMenuPanel)Ref.g(512348400607580044L, var1);
    }
 
-   public void T(ImportPanel var1) {
+   public void T(ImportMenuPanel var1) {
       long var3 = 512348400607580044L;
       Ref.s(512348400607580044L, var1, var3);
    }
@@ -944,6 +944,7 @@ public class KeyManagerFrame extends JFrame {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[7];
       int var11 = 0;
       String var10 = "~ÞK¶®á£Ý-\u000e\niÈ\u0087\u0002砖宇\u000e\"uÀÃßO\u008d\bè´²>ßm\u0005子鐾笆瑻嚓\u0002冠锘";
@@ -958,7 +959,6 @@ public class KeyManagerFrame extends JFrame {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

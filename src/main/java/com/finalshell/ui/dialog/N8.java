@@ -1,35 +1,35 @@
 package com.finalshell.ui.dialog;
 
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.panel.Ky4;
-import com.finalshell.ui.panel.Zm2;
+import com.finalshell.ui.panel.MouseSettingsPanel;
 import java.awt.Frame;
 import javax.swing.JDialog;
 
 public class N8 extends JDialog {
-   public U D;
-   public Zm2 k;
+   public MainFrame D;
+   public MouseSettingsPanel k;
    public static String a;
 
-   public N8(U var1) {
+   public N8(MainFrame var1) {
       super((Frame)var1);
       long var4 = 459555214947597132L;
       Ref.s(459555214947597132L, var1, var4);
-      boolean var10001 = Zm2.e();
+      boolean var10001 = MouseSettingsPanel.e();
       this.setTitle(a);
       boolean var2 = var10001;
-      Zm2 var10002 = new Zm2();
+      MouseSettingsPanel var10002 = new MouseSettingsPanel();
       long var6 = 307693539894818069L;
-      Zm2 var5 = var10002;
+      MouseSettingsPanel var5 = var10002;
       Ref.s(307693539894818069L, var5, var6);
       Object var7 = 307693539894818069L;
-      this.setContentPane((Zm2)Ref.g(307693539894818069L, var7));
+      this.setContentPane((MouseSettingsPanel)Ref.g(307693539894818069L, var7));
       this.pack();
       this.setLocationRelativeTo(var1);
       this.setVisible(true);
       if (Ky4.F$arrString() != null) {
-         Zm2.D(!var2);
+         MouseSettingsPanel.D(!var2);
       }
    }
 

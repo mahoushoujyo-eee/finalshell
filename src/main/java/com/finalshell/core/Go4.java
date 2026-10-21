@@ -307,10 +307,11 @@ public class Go4 extends GT3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var34;
       char[] var10003 = "|L:+:/O\u0000{,)':_]\u0016mi".toCharArray();
       int var10004 = var10003.length;
       int var8 = 0;
-      byte var34 = 6;
+      var34 = 6;
       char[] var10002 = var10003;
       int var19 = var10004;
       char[] var42;
@@ -453,7 +454,7 @@ public class Go4 extends GT3 {
             var42 = var10002;
             var10005 = var34;
             char var53 = var10002[var34];
-            var10007 = var34;
+            var10007 = (byte)(var34);
             var10006 = var53;
             switch (var8 % 7) {
                case 0:
@@ -549,7 +550,7 @@ public class Go4 extends GT3 {
             var42 = var10002;
             var10005 = var8;
             char var52 = var10002[var8];
-            var10007 = var34;
+            var10007 = (byte)(var34);
             var10006 = var52;
             switch (var8 % 7) {
                case 0:

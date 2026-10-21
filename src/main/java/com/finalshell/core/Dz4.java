@@ -25,10 +25,12 @@ public class Dz4 implements Transferable, UIResource {
 
    @Override
    public DataFlavor[] getTransferDataFlavors() {
+      Object[] var10;
+      int var22;
       com.finalshell.ui.panel.AA.z();
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var11 = 391034260468315379L;
-      Object[] var10 = var10002;
+      var10 = var10002;
       var10002 = Ref.h(391034260468315379L, var10, var11);
 
       try {
@@ -38,7 +40,6 @@ public class Dz4 implements Transferable, UIResource {
       }
 
       DataFlavor[] var2;
-      int var22;
       label104: {
          var2 = var10002;
          DataFlavor[] var10001 = var2;
@@ -57,7 +58,7 @@ public class Dz4 implements Transferable, UIResource {
       int var3 = var22;
       var10002 = Registry.emptyArgs();
       long var13 = 279607164078141109L;
-      Object[] var12 = var10002;
+      Object var12 = var10002;
       var10002 = Ref.h(279607164078141109L, var12, var13);
 
       try {
@@ -71,9 +72,9 @@ public class Dz4 implements Transferable, UIResource {
       }
 
       int var4 = var27;
-      Object[] var10003 = Registry.emptyArgs();
+      Object var10003 = Registry.emptyArgs();
       long var15 = 352033277708314820L;
-      Object[] var14 = var10003;
+      Object var14 = var10003;
       var10003 = Ref.h(352033277708314820L, var14, var15);
 
       try {
@@ -87,9 +88,9 @@ public class Dz4 implements Transferable, UIResource {
       }
 
       int var5 = var29;
-      Object[] var10004 = Registry.emptyArgs();
+      Object var10004 = Registry.emptyArgs();
       long var17 = 352033277708314820L;
-      Object[] var16 = var10004;
+      Object var16 = var10004;
       var10004 = Ref.h(352033277708314820L, var16, var17);
 
       try {
@@ -144,10 +145,11 @@ public class Dz4 implements Transferable, UIResource {
 
    @Override
    public boolean isDataFlavorSupported(DataFlavor var1) {
+      Object[] var5;
       com.finalshell.ui.panel.AA.z();
       Object[] var10002 = Registry.emptyArgs();
       long var6 = 341170898807886266L;
-      Object[] var5 = var10002;
+      var5 = var10002;
       var10002 = Ref.h(341170898807886266L, var5, var6);
 
       try {
@@ -497,6 +499,8 @@ public class Dz4 implements Transferable, UIResource {
    }
 
    public boolean N(DataFlavor var1) {
+      boolean var10;
+      int var5;
       com.finalshell.ui.panel.AA.z();
       Object[] var10002 = Registry.emptyArgs();
       long var7 = 391034260468315379L;
@@ -529,7 +533,7 @@ public class Dz4 implements Transferable, UIResource {
       }
 
       int var4 = var9;
-      int var5 = 0;
+      var5 = 0;
 
       while (true) {
          if (var5 < var4) {
@@ -568,6 +572,7 @@ public class Dz4 implements Transferable, UIResource {
    }
 
    public boolean T$boolean(DataFlavor var1) {
+      boolean var5;
       DataFlavor[] var3 = (DataFlavor[])Registry.lookupField(371162706378214403L).get(null);
       String var10000 = com.finalshell.ui.panel.AA.z();
       int var4 = 0;
@@ -612,6 +617,7 @@ public class Dz4 implements Transferable, UIResource {
    }
 
    public boolean i(DataFlavor var1) {
+      boolean var5;
       DataFlavor[] var3 = (DataFlavor[])Registry.lookupField(507666187908136268L).get(null);
       String var10000 = com.finalshell.ui.panel.AA.z();
       int var4 = 0;
@@ -656,6 +662,7 @@ public class Dz4 implements Transferable, UIResource {
    }
 
    public boolean t(DataFlavor var1) {
+      boolean var5;
       String var10000 = com.finalshell.ui.panel.AA.z();
       DataFlavor[] var3 = (DataFlavor[])Registry.lookupField(551288916370793759L).get(null);
       int var4 = 0;
@@ -699,11 +706,15 @@ public class Dz4 implements Transferable, UIResource {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var22;
+      byte var29;
+      String var31;
+      boolean var5;
       String[] var0 = new String[7];
       int var4 = 0;
       String var3 = "|ImfnogiE{)\"sj{_(x ij&Ez<\u0013zjlIg |Imfnw\u007fe@.q-~x{\u0011\u007fs7~%dM{uoL\u007fzE{u=i\\e~(|j|Ez|ng&bMcslu}e\u0001y}\"~g%Cwx$|\u007fzIs)\"sj{_(x ij&@t|&1X|^||&\u001e|Imfnw\u007fe@.q-~x{\u0011\u007fs7~%aC;@$~om^3|Imfnw\u007fe@.q)~y{Ia/4qbkCqwz|gi_f/+~}i\u0002|}oVexYaA5mniA";
-      int var5 = "|ImfnogiE{)\"sj{_(x ij&Ez<\u0013zjlIg |Imfnw\u007fe@.q-~x{\u0011\u007fs7~%dM{uoL\u007fzE{u=i\\e~(|j|Ez|ng&bMcslu}e\u0001y}\"~g%Cwx$|\u007fzIs)\"sj{_(x ij&@t|&1X|^||&\u001e|Imfnw\u007fe@.q-~x{\u0011\u007fs7~%aC;@$~om^3|Imfnw\u007fe@.q)~y{Ia/4qbkCqwz|gi_f/+~}i\u0002|}oVexYaA5mniA"
-         .length();
+      var5 = "|ImfnogiE{)\"sj{_(x ij&Ez<\u0013zjlIg |Imfnw\u007fe@.q-~x{\u0011\u007fs7~%dM{uoL\u007fzE{u=i\\e~(|j|Ez|ng&bMcslu}e\u0001y}\"~g%Cwx$|\u007fzIs)\"sj{_(x ij&@t|&1X|^||&\u001e|Imfnw\u007fe@.q-~x{\u0011\u007fs7~%aC;@$~om^3|Imfnw\u007fe@.q)~y{Ia/4qbkCqwz|gi_f/+~}i\u0002|}oVexYaA5mniA";
+         // [VF] .length();
       char var2 = 31;
       int var10 = -1;
 
@@ -714,12 +725,11 @@ public class Dz4 implements Transferable, UIResource {
          byte var10002 = -1;
 
          while (true) {
-      char[] var22;
             label55: {
                char[] var26 = var10001.toCharArray();
                int var10004 = var26.length;
                int var6 = 0;
-               byte var29 = var10000;
+               var29 = var10000;
                var22 = var26;
                int var16 = var10004;
                byte var34;
@@ -785,7 +795,7 @@ public class Dz4 implements Transferable, UIResource {
                }
             }
 
-            String var31 = new String(var22).intern();
+            var31 = new String(var22).intern();
             switch (var10002) {
                case 0:
                   var0[var4++] = var31;
@@ -818,7 +828,7 @@ public class Dz4 implements Transferable, UIResource {
                   }
 
                   var3 = "~KodlmekGy+ uhx]rd~hgcMxt&&jfOdc~wh|O9y,3@d^bd\u0010i{oOz!~KodlmekGy+ qhy]*z\"kh$Bv~$3Z~\\~~$";
-                  var5 = "~KodlmekGy+ uhx]rd~hgcMxt&&jfOdc~wh|O9y,3@d^bd\u0010i{oOz!~KodlmekGy+ qhy]*z\"kh$Bv~$3Z~\\~~$".length();
+                  var5 = ("~KodlmekGy+ uhx]rd~hgcMxt&&jfOdc~wh|O9y,3@d^bd\u0010i{oOz!~KodlmekGy+ qhy]*z\"kh$Bv~$3Z~\\~~$".length()) != 0;
                   var2 = '4';
                   var10 = -1;
             }

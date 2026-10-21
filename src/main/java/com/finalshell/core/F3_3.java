@@ -37,13 +37,13 @@ public final class F3_3 {
    }
 
    public static Object[] p(Iterator var0, java.lang.Class var1) {
+      ArrayList var5;
       boolean var10000 = G();
       ArrayList var3 = new ArrayList();
       boolean var2 = var10000;
 
       while (true) {
          if (var0.hasNext()) {
-      ArrayList var5;
             var5 = var3;
             if (var2) {
                break;
@@ -59,7 +59,7 @@ public final class F3_3 {
          break;
       }
 
-      Object[] var4 = (Object[])var5;
+      Object var4 = (Object[])var5;
       return var3.toArray(var4);
    }
 

@@ -46,6 +46,8 @@ public class Hi4 extends W5 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      float var101;
+      int var92;
       String[] var3;
       int var4;
       int var5;
@@ -455,8 +457,6 @@ public class Hi4 extends W5 {
                               label444: {
                                  if (var3 != null) {
                                     if (var86 > 0) {
-      float var101;
-      float var101;
                                        var47 *= this.l;
                                     }
 
@@ -975,7 +975,6 @@ public class Hi4 extends W5 {
       }
    }
 }
-
 
 
 

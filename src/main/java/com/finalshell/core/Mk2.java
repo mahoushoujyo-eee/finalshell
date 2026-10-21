@@ -17,9 +17,9 @@ public class Mk2 implements Fb2 {
    @Override
    public void O(Ty4 var1) {
       User.w();
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var5 = 542590257020999358L;
-      Object[] var4 = var10002;
+      Object var4 = var10002;
       var10002 = Ref.h(542590257020999358L, var4, var5);
 
       try {

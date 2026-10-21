@@ -41,6 +41,8 @@ public class GM3 extends GT3 {
 
    @Override
    public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+      int var36;
+      int var37;
       int var6 = 0;
       String[] var10000 = W5.q();
       int[] var7 = new int[var1 * var2];
@@ -94,7 +96,6 @@ public class GM3 extends GT3 {
                            label81:
                            if (var5 != null) {
                               if (0 <= var21) {
-      int var36;
                                  var36 = var21;
                                  var10001 = var2;
                                  if (var5 == null) {
@@ -104,7 +105,6 @@ public class GM3 extends GT3 {
                                  if (var21 < var2) {
                                     var22 = var21 * var1;
                                     if (var5 != null) {
-      int var36;
                                        break label82;
                                     }
                                  }
@@ -677,7 +677,6 @@ public class GM3 extends GT3 {
       }
    }
 }
-
 
 
 

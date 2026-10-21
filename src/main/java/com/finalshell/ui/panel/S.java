@@ -185,6 +185,7 @@ public class S extends JTree implements Yb4 {
    }
 
    public Rectangle O(List var1) {
+      Rectangle var6;
       String var2 = d();
       List var10000 = var1;
       if (var2 != null) {
@@ -209,8 +210,6 @@ public class S extends JTree implements Yb4 {
 
                var3 = var6;
                if (var2 != null) {
-      Iterator var6;
-      Iterator var6;
                   continue;
                }
             }
@@ -280,6 +279,7 @@ public class S extends JTree implements Yb4 {
    }
 
    public List V() {
+      int var6;
       ArrayList var2 = new ArrayList();
       String var10000 = d();
       TreePath[] var3 = this.getSelectionPaths();
@@ -295,7 +295,7 @@ public class S extends JTree implements Yb4 {
 
       TreePath[] var4 = var8;
       int var5 = var4.length;
-      int var6 = 0;
+      var6 = 0;
 
       while (var6 < var5) {
          TreePath var7 = var4[var6];
@@ -440,7 +440,7 @@ public class S extends JTree implements Yb4 {
                }
             }
 
-            var4 = var1;
+            var4 = (var1) ? 1 : 0;
          }
 
          if (var4 == 0) {
@@ -482,7 +482,7 @@ public class S extends JTree implements Yb4 {
                }
             }
 
-            var4 = var1;
+            var4 = (var1) ? 1 : 0;
          }
 
          if (var4 == 0) {
@@ -529,7 +529,7 @@ public class S extends JTree implements Yb4 {
 
    public void d(boolean var1) {
       String var2 = d();
-      int var10001 = var1;
+      int var10001 = (var1) ? 1 : 0;
       if (var2 != null) {
          var10001 = var1 != 0 ? 4 : 1;
       }
@@ -1123,6 +1123,7 @@ public class S extends JTree implements Yb4 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ 11355) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1903,7 +1904,7 @@ public class S extends JTree implements Yb4 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1928,6 +1929,7 @@ public class S extends JTree implements Yb4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[18];
       int var3 = 0;
       String var2 = "Â§½!\u0005\u00899\u008bHþ\u0006Nó \u0007(\u0098\u0003\u0017¿\u0004\u0004QÆQo\u0006ªæíd\f\u001e\u0006L0TºÂK\u0007è\u0016é·13,\u0005\u000bÞ®1W\u0006\u0018\u0089ÏlÔ/\b\u0010©y\u0092\u0014$!¼\u0006\t\u0001¥Ôáá\brJáºyñAÖ\u0004`!á\u0083\u0007\u0092n¬°\u0083×A\n\u0005AC_Ët3\f\u0096\u001e";
@@ -2046,7 +2048,6 @@ public class S extends JTree implements Yb4 {
       }
    }
 }
-
 
 
 

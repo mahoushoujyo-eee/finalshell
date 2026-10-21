@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import com.finalshell.ui.panel.Bq2;
 import com.finalshell.ui.panel.ConnectionProperty;
 import java.lang.reflect.InvocationTargetException;
@@ -13,7 +13,7 @@ public class T32 {
    public String U;
    public int C;
    public boolean g;
-   public Address w;
+   public FileBrowserAddressBar w;
    public Object O;
    public ConnectionProperty Z;
    public int q;

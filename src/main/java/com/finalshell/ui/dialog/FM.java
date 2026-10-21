@@ -146,7 +146,7 @@ public class FM extends ClearListDialog {
       Dv2 var10001 = (Dv2)Ref.g(334241381080505095L, var2);
       String var10003 = (String)(Registry.emptyArgs());
       long var5 = 542058094445767607L;
-      Object[] var4 = var10003;
+      Object var4 = var10003;
       var10003 = Ref.h(542058094445767607L, var4, var5);
 
       try {
@@ -176,7 +176,7 @@ public class FM extends ClearListDialog {
       Ref.h(306266403902896148L, var4, var5);
       Dx4_2 var10003 = Registry.emptyArgs();
       long var7 = 568950058787001160L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       var10003 = Ref.h(568950058787001160L, var6, var7);
 
       try {
@@ -229,7 +229,7 @@ public class FM extends ClearListDialog {
       SetBackgroundImagePanel var10005 = (SetBackgroundImagePanel)Ref.g(282940094729004615L, var11);
       String var10007 = (String)(Registry.emptyArgs());
       long var14 = 542058094445767607L;
-      Object[] var13 = var10007;
+      Object var13 = var10007;
       var10007 = Ref.h(542058094445767607L, var13, var14);
 
       try {

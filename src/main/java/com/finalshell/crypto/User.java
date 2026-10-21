@@ -2,7 +2,7 @@ package com.finalshell.crypto;
 
 import com.finalshell.core.Fc2;
 import com.finalshell.core.KD;
-import com.finalshell.core.Lp2;
+import com.finalshell.core.SyncTaskManifest;
 import com.finalshell.core.Lv4_2;
 import com.finalshell.core.Qc2;
 import com.finalshell.core.U62;
@@ -57,6 +57,7 @@ public class User extends Z7 {
    public static Integer[] g;
 
    public User(FP var1) {
+      Boolean var88;
       Registry.lookupField(390210343425911914L).setInt(this, 1);
       Registry.lookupField(122080408670342351L).setInt(this, a(28958, 7538368611283997663L));
       Registry.lookupField(488912842222213458L).setInt(this, a(5614, 4591630841062389536L));
@@ -164,9 +165,9 @@ public class User extends Z7 {
       long var61 = 375944019649708240L;
       Object[] var60 = var10023;
       var10023 = Ref.h(375944019649708240L, var60, var61);
-      Object[] var10024 = Registry.emptyArgs();
+      Object var10024 = Registry.emptyArgs();
       long var63 = 605218686263352748L;
-      Object[] var62 = var10024;
+      Object var62 = var10024;
       var10024 = Ref.h(605218686263352748L, var62, var63);
 
       try {
@@ -216,7 +217,7 @@ var10022 = new Un2(var10023, var88);
       Registry.lookupField(388376917454860932L).get(null);
       var10024 = Registry.packArgs(new Cr2(this), a(30037, 7037365432763258770L));
       long var69 = 201859364639460244L;
-      Object[] var68 = var10024;
+      Object var68 = var10024;
       Ref.h(201859364639460244L, var68, var69);
       Registry.emptyArgs();
       long var70 = 270389152141252877L;
@@ -225,23 +226,23 @@ var10022 = new Un2(var10023, var88);
       long var73 = 612604310671515822L;
       Object[] var72 = var10026;
       Ref.h(612604310671515822L, var72, var73);
-      Lp2 var10027 = (Lp2)(Registry.emptyArgs());
+      SyncTaskManifest var10027 = (SyncTaskManifest)(Registry.emptyArgs());
       long var75 = 475326244946424763L;
-      Object[] var74 = var10027;
+      Object var74 = var10027;
       var10027 = Ref.h(475326244946424763L, var74, var75);
 
       try {
-         var10027 = (Lp2)var10027;
+         var10027 = (SyncTaskManifest)var10027;
       } catch (InvocationTargetException var81) {
          throw var81.getTargetException();
       }
 
-      Lp2 var21 = var10027;
+      SyncTaskManifest var21 = var10027;
       Object var76 = 424757448950891498L;
       JPasswordField var10028 = (JPasswordField)Ref.g(424757448950891498L, var76);
       String var10030 = (String)(Registry.emptyArgs());
       long var79 = 317409027815843261L;
-      Object[] var78 = var10030;
+      Object var78 = var10030;
       var10030 = Ref.h(317409027815843261L, var78, var79);
 
       try {
@@ -434,13 +435,20 @@ var10022 = new Un2(var10023, var88);
    }
 
    public void b() {
+      Long var102;
+      Object[] var33;
+      boolean var77;
+      boolean var83;
+      Integer var91;
+      boolean var95;
+      boolean var98;
       w();
       Registry.emptyArgs();
       long var9 = 270389152141252877L;
       Object var10002 = Ref.h2(270389152141252877L, var9);
       U62 var10003 = (U62)(Registry.emptyArgs());
       long var12 = 306266403902896148L;
-      Object[] var11 = var10003;
+      Object var11 = var10003;
       var10003 = Ref.h(306266403902896148L, var11, var12);
 
       try {
@@ -456,7 +464,7 @@ var10022 = new Un2(var10023, var88);
       String var5 = "";
       var10003 = Registry.emptyArgs();
       long var14 = 204000105621842013L;
-      Object[] var13 = var10003;
+      Object var13 = var10003;
       var10003 = Ref.h(204000105621842013L, var13, var14);
 
       try {
@@ -483,7 +491,7 @@ var10022 = new Un2(var10023, var88);
                   if (!var77) {
                      String var10005 = (String)(Registry.emptyArgs());
                      long var18 = 191807067392725406L;
-                     Object[] var17 = var10005;
+                     Object var17 = var10005;
                      var10005 = Ref.h(191807067392725406L, var17, var18);
 
                      try {
@@ -551,7 +559,7 @@ var10022 = new Un2(var10023, var88);
          Ref.h(612604310671515822L, var29, var30);
          Fc2 var10009 = (Fc2)(Registry.emptyArgs());
          long var32 = 208590088574407579L;
-         Object[] var31 = var10009;
+         Object var31 = var10009;
          var10009 = Ref.h(208590088574407579L, var31, var32);
 
          try {
@@ -567,9 +575,9 @@ var10022 = new Un2(var10023, var88);
 
          label225:
          if (var7 != null) {
-            Object[] var10010 = Registry.emptyArgs();
+            Object var10010 = Registry.emptyArgs();
             long var34 = 271380908604154518L;
-            Object[] var33 = var10010;
+            var33 = var10010;
             var10010 = Ref.h(271380908604154518L, var33, var34);
 
             try {
@@ -677,9 +685,9 @@ var10022 = new Un2(var10023, var88);
                            var8 = new SimpleDateFormat((String)Registry.lookupField(231329429374491840L).get(null));
                            if (var1 == null) {
                               if (var7 != null) {
-                                 Object[] var96 = Registry.emptyArgs();
+                                 Object var96 = Registry.emptyArgs();
                                  long var46 = 412439471829603520L;
-                                 Object[] var45 = var96;
+                                 Object var45 = var96;
                                  var96 = Ref.h(412439471829603520L, var45, var46);
 
                                  try {
@@ -702,9 +710,9 @@ var10022 = new Un2(var10023, var88);
                         }
 
                         new StringBuilder().append(a(-8102, -27473));
-                        Object[] var100 = Registry.emptyArgs();
+                        Object var100 = Registry.emptyArgs();
                         long var48 = 156489935889319530L;
-                        Object[] var47 = var100;
+                        Object var47 = var100;
                         var100 = Ref.h(156489935889319530L, var47, var48);
 
                         try {
@@ -760,7 +768,7 @@ var10022 = new Un2(var10023, var88);
       JLabel var81 = (JLabel)Ref.g(631555842482185462L, var51);
       String var10007 = (String)(Registry.emptyArgs());
       long var54 = 204000105621842013L;
-      Object[] var53 = var10007;
+      Object var53 = var10007;
       var10007 = Ref.h(204000105621842013L, var53, var54);
 
       try {
@@ -808,18 +816,18 @@ var10022 = new Un2(var10023, var88);
       long var6 = 612604310671515822L;
       Object[] var5 = var10002;
       Ref.h(612604310671515822L, var5, var6);
-      Lp2 var10003 = (Lp2)(Registry.emptyArgs());
+      SyncTaskManifest var10003 = (SyncTaskManifest)(Registry.emptyArgs());
       long var8 = 475326244946424763L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(475326244946424763L, var7, var8);
 
       try {
-         var10003 = (Lp2)var10003;
+         var10003 = (SyncTaskManifest)var10003;
       } catch (InvocationTargetException var29) {
          throw var29.getTargetException();
       }
 
-      Lp2 var1 = var10003;
+      SyncTaskManifest var1 = var10003;
       Object var9 = 424757448950891498L;
       Registry.packArgs(Ref.g(424757448950891498L, var9), var1);
       long var11 = 595769263487460645L;
@@ -833,7 +841,7 @@ var10022 = new Un2(var10023, var88);
 
       String var10006;
       Object var13 = 424757448950891498L;
-      super(((JPasswordField)Ref.g(424757448950891498L, var13)).getPassword());
+      // [VF-super] super(((JPasswordField)Ref.g(424757448950891498L, var13)).getPassword());
       String var2 = var10006;
       Object[] var10007 = Registry.packArgs(var2);
       long var16 = 593547042552774431L;
@@ -876,7 +884,7 @@ var10022 = new Un2(var10023, var88);
       }
    }
 
-   public static void C(JPasswordField param0, Lp2 param1) {
+   public static void C(JPasswordField param0, SyncTaskManifest param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1820,6 +1828,7 @@ var10022 = new Un2(var10023, var88);
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[42];
       int var11 = 0;
       String var10 = "咲毴宑硛$äCíU\u0098&uÎ\u0006@\u0001¡Ø!ð\u0098R\u0000¾J+y\u001a\u0089åT«ÒÜe\u009fD\u001d\u0005bø\b岗枩讙缹哳殷嬌砪\u0006盔忻后毨簒繝\u000bÚi*\u0010`\u008ea×ò¼_\u0004忊郑柘勏\u0003疯戮呙\u0002朆睸\u0017\u0007Þ`x\u0085¦Ì\bqÃ\u008a\u008c\rhHÄ\u0005OZª?f\u0012\u0004计汊妀赫\u0006譝翋呂殲宦磈\u0007譀轶凨吮欔寘硳\u0002毝廈\u000e讃譽姽赾!癣忡赊反戱孻硖锾謽\u0004癵彌贐厌\u0004劍救牚悀\u0005识皷弈跉厬\u00051\u0095ª\u0012\u009b\u0014ÊîÙ~²f*\u0012¢É\u0014»ÒHBêÎ\u008b\u0084k\u0004膮劭哢歠\u001ci¾\u00adt<'û8\u0097ÅVL\u0096p;Çk/\u0097¦\u0086â%o£\u0093Ú\u0007\nÈ¼hª(Ùo;Þç\u0002殎幬\u0004呷殫講暿\f\u0018/«nú0¦SL[BF\u0002謎晧\n[\u0081\u001a\rf-¨¥é4\b吁次本剁枅斣枾\u0001\nb¤=©\u0082¹?7qf\u0006周歲寊碋闻诩\u0004彘勳爈悖\teC\u000fJ幦\u0004朇\u0014旵\u0017\u0095Á2\u009bÏÚ\u0085\u0087X2¯²©¯Ü<\u0097P\bIu\u001a[\u0004m\u0006Ù\u0081\u0007咩欳朹刃朄徣郌\u001f\u009ekSÎãp\u0000×í\u009d±[\u008bHo0\u009c;¶ë°|¢$_-§\u0096;Ó§\u000e3\u0092Ý\u0099wß\rÂ\\Ò\u0082ù\u0002\u0000\u001cMÊ)ú¬öé\u0002Õ\u0082\u001e¤\u009fm\u001adO[\u0013(\u001667Pát\u0092û\u0002硷孎\u0004YÔ_Û";
@@ -1836,7 +1845,6 @@ var10022 = new Un2(var10023, var88);
          byte var10002 = -1;
 
          while (true) {
-      long var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

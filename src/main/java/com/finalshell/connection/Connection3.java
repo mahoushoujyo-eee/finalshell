@@ -3,7 +3,7 @@ package com.finalshell.connection;
 import com.finalshell.config.DnsResolveFailedSetting;
 import com.finalshell.task.ReadDoneTask5;
 import com.finalshell.task.WM;
-import com.finalshell.task.WriteDoneTask;
+import com.finalshell.task.WriteCompletedTask;
 import java.io.DataInputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -33,7 +33,7 @@ public class Connection3 {
       OutputStream var1 = var0.getOutputStream();
       InputStream var2 = var0.getInputStream();
       System.out.println(a(-12174, -19851));
-      WriteDoneTask var3 = new WriteDoneTask(var1);
+      WriteCompletedTask var3 = new WriteCompletedTask(var1);
       ReadDoneTask5 var4 = new ReadDoneTask5(var2);
       var4.start();
       WM var5 = new WM();

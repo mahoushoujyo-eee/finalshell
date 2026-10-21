@@ -103,6 +103,7 @@ public class KC3 extends Ky4 {
    }
 
    public void i(Ko4 var1) {
+      KC3 var5;
       int[] var10000 = K32.L$arrint();
       Iterator var3 = this.R.keySet().iterator();
       int[] var2 = var10000;
@@ -110,7 +111,7 @@ public class KC3 extends Ky4 {
       while (var3.hasNext()) {
          label20: {
             Component var4 = (Component)var3.next();
-            KC3 var5 = this;
+            var5 = this;
             if (var2 != null) {
                if (this.R.get(var4) != var1) {
                   break label20;
@@ -147,13 +148,13 @@ public class KC3 extends Ky4 {
    }
 
    public Ko4 S() {
+      Ko4 var5;
       int[] var10000 = K32.L$arrint();
       Iterator var2 = this.v().b().iterator();
       int[] var1 = var10000;
 
       while (true) {
          if (var2.hasNext()) {
-      Component var5;
             Component var3 = (Component)var2.next();
             Ko4 var4 = (Ko4)var3;
             var5 = var4;
@@ -1102,7 +1103,8 @@ public class KC3 extends Ky4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var5 = new String[2];
+      String[] var5;
+      var5 = new String[2];
       int var3 = 0;
       String var2 = "®ár\u0010)\u0099\u0006%ä\u0003°\u0007\u008d";
       int var4 = "®ár\u0010)\u0099\u0006%ä\u0003°\u0007\u008d".length();

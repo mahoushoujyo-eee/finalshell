@@ -2,15 +2,15 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.panel.CL;
 import com.finalshell.ui.panel.F8;
 import java.lang.reflect.InvocationTargetException;
 
 public class Mz2 implements Runnable {
-   public final U N;
+   public final MainFrame N;
 
-   public Mz2(U var1) {
+   public Mz2(MainFrame var1) {
       this.N = var1;
    }
 
@@ -26,7 +26,7 @@ public class Mz2 implements Runnable {
       Ref.h(194560825135347400L, var6, var7);
       F8 var10004 = (F8)(Registry.emptyArgs());
       long var9 = 424156930953488367L;
-      Object[] var8 = var10004;
+      Object var8 = var10004;
       var10004 = Ref.h(424156930953488367L, var8, var9);
 
       try {

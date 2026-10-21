@@ -81,7 +81,7 @@ public class Q8 {
       String[] var10000 = Ub2.A();
       FY var2 = this.Q();
       String[] var1 = var10000;
-      byte var3 = (var2.B()) ? 1 : 0;
+      byte var3 = (byte)((var2.B()) ? 1 : 0);
       if (var1 == null) {
          if (var3 != 0) {
             return (int)var2.F();

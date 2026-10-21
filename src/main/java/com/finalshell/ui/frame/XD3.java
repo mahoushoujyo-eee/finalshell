@@ -52,7 +52,7 @@ public class XD3 extends C {
    public static Integer[] d;
 
    public static XD3 u$xD_3() {
-      String[] var0 = U();
+      String[] var0 = MainFrame();
       XD3 var10000 = v;
       if (var0 == null) {
          if (v == null) {
@@ -380,15 +380,15 @@ public class XD3 extends C {
       // 1e8: areturn
    }
 
-   public Map U(String var1) {
-      String[] var10000 = U();
+   public Map MainFrame(String var1) {
+      HashMap var7;
+      String[] var10000 = MainFrame();
       HashMap var3 = new HashMap();
       String[] var2 = var10000;
       StringTokenizer var4 = new StringTokenizer(var1, "\n", false);
 
       while (true) {
          if (var4.hasMoreTokens()) {
-      Oj2 var7;
             String var5 = var4.nextToken();
             int var6 = var5.indexOf(a(-28433, 1751));
             var7 = var3;
@@ -398,7 +398,6 @@ public class XD3 extends C {
 
             var3.put(var5.substring(0, var6), var5.substring(var6 + a(-28440, 23051).length()));
             if (var2 == null) {
-      Oj2 var7;
                continue;
             }
          }
@@ -431,7 +430,7 @@ public class XD3 extends C {
    }
 
    public Object[][] u$arrarrObject() {
-      String[] var10000 = U();
+      String[] var10000 = MainFrame();
       Properties var2 = System.getProperties();
       String[] var1 = var10000;
       Object[][] var3 = new Object[var2.size()][2];
@@ -475,7 +474,7 @@ public class XD3 extends C {
       f = var0;
    }
 
-   public static String[] U() {
+   public static String[] MainFrame() {
       return f;
    }
 
@@ -1302,6 +1301,8 @@ public class XD3 extends C {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      byte[] var7;
       String[] var13 = new String[23];
       int var11 = 0;
       String var10 = "\t\u0011ÃÙ»å1\\C\u0083¼2\u0096»lÕW\u000ed\u0081=\u008aï&î\u00195[®¿\u0099ÿDaÇýE8Â\u009dàÕ>c\u0094\u0080\u0013Ï&\"*\u000e/`=\u001cU\u0080Éæ¢\u0003³^|Æ\u000eF¬¸Ò[\u009b[w\u0096úÚÖHâ\u0006>6q\nëF\u001aó»v£\u0082|'\u0011«óÈùd²ÀÐ\fg?6l¬ \u0010ë~\u001bÔú\u0092\u008b\u001ey´±Ùç\u0086{±ùèÃ¡G\u0013>A}\u009aÅ\u0099èò\u001cÀ6\u0010\u0012NJ¾×\u0098+®â¨ÑY¼?êY\u0087 \u009a9ÉÔ´=\u001d\u001a§9üóÓv\rPîÛ`üm\tsÝÒ\u0084}F\u008cr5?¾Å\u001bÙR3\u009e*Û2å\tm\u009c*ùß\u0087\u009dÒj\t¡»ñ\u0011±Ê\u001b\u0082\u001b/\u008aí\u0085ñ¸I\u0089fàq\u009bOå7@Z7l0®¼væ1÷6\u001d\u008b\u0016y\u0016cÊ\u001bÇ,)8¢fÂ\u0012¤þ«ø£<Î<¨t7`H\u00977ä¤~o\f3Ç\u0086\u008fÍ7Lð~\u001c$\u001a:êL+y\u001bs\u008bÌ\u009f\u008dyÅI\"ÃØ\u0000í\u009bb\u0095h\u0096H£\b¯BP{ùøJ¹å\u0007Õ\u0011n\u001cÅWôâéÂr\u0089ó¶\u0007@3ê\n\u001c\u009aÒ[\u008e'Ù\u0093¥=e\u001a+>è\u008b\u009be\u000e\u0012\u001bÉ\t\u0014¹yà\u0098\u008c\u0004éZ]´\bTøûO\u001dÜq¨\u0003j\u0003º\u0005ýÌ¹\u001e` zôGJ¤Aã¶3\u0007Ûg\u0011v\u009a¨qÌ}u0y\u009dðT&\u008b\u001a\u0096ÜSÀ\u000b/àÞÈ±?æ'K87";
@@ -1407,7 +1408,7 @@ public class XD3 extends C {
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56
@@ -1482,7 +1483,6 @@ public class XD3 extends C {
       }
    }
 }
-
 
 
 

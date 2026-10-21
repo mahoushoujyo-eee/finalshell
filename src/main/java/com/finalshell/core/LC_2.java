@@ -64,6 +64,8 @@ public class LC_2 extends Lz2_2 {
 
    @Override
    public void u(Graphics2D var1, Rectangle var2, JComponent var3) {
+      PF3 var6;
+      boolean var7;
       int[] var4 = Lz2_2.M();
       if (this.Q()) {
          JComponent var10000 = var3;
@@ -77,7 +79,7 @@ public class LC_2 extends Lz2_2 {
 
          PF3 var5;
          label61: {
-            boolean var7 = var10000 instanceof AbstractButton;
+            var7 = var10000 instanceof AbstractButton;
             if (var4 == null) {
                if (var7) {
                   var5 = this.P((AbstractButton)var3);
@@ -122,7 +124,7 @@ public class LC_2 extends Lz2_2 {
             var9 = this;
          }
 
-         PF3 var6 = var9.r(Ey2.F);
+         var6 = var9.r(Ey2.F);
          PF3 var10 = var6;
          if (var4 == null) {
             if (var6 == null) {
@@ -385,6 +387,7 @@ public class LC_2 extends Lz2_2 {
 
    @Override
    public Dimension d$Dimension(JComponent var1) {
+      Dimension var6;
       int[] var2 = Lz2_2.M();
       LC_2 var10000 = this;
       if (var2 == null) {
@@ -403,8 +406,6 @@ public class LC_2 extends Lz2_2 {
 
                   var3 = var6;
                   if (var2 == null) {
-      ButtonModel var6;
-      ButtonModel var6;
                      continue;
                   }
                }
@@ -424,6 +425,8 @@ public class LC_2 extends Lz2_2 {
 
    @Override
    public Insets B(JComponent var1) {
+      PF3 var6;
+      Insets var7;
       int[] var10000 = Lz2_2.M();
       Insets var3 = super.B(var1);
       int[] var2 = var10000;
@@ -435,7 +438,7 @@ public class LC_2 extends Lz2_2 {
 
          while (true) {
             if (var5.hasNext()) {
-               PF3 var6 = (PF3)var5.next();
+               var6 = (PF3)var5.next();
                var6.k(var1);
                var7 = FN.Z(var4, var6.U$Insets());
                if (var2 != null) {
@@ -456,7 +459,6 @@ public class LC_2 extends Lz2_2 {
       }
    }
 }
-
 
 
 

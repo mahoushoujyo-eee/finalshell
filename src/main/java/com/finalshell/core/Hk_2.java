@@ -975,6 +975,7 @@ public class Hk_2 implements H4_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[5];
       int var3 = 0;
       String var2 = "©®æ-\f\tc;p¹\u001ad¹«\u0000\u0007\u0088\u0006·Ps\u0014\u009c\u0097";
@@ -989,7 +990,6 @@ public class Hk_2 implements H4_2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

@@ -1,12 +1,12 @@
 package com.finalshell.task;
 
-import com.finalshell.core.ConnectTimeout;
+import com.finalshell.core.HandshakeTimeoutMonitor;
 
 public class Oe4 extends Thread {
-   public final ConnectTimeout X;
+   public final HandshakeTimeoutMonitor X;
    public static long a;
 
-   public Oe4(ConnectTimeout var1) {
+   public Oe4(HandshakeTimeoutMonitor var1) {
       this.X = var1;
    }
 

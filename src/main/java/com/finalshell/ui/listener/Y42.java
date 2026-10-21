@@ -2,7 +2,7 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.core.NA_2;
 import com.finalshell.reflect.Ref;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -15,7 +15,7 @@ public class Y42 implements MouseListener {
 
    @Override
    public void mouseReleased(MouseEvent var1) {
-      ImportPanel.j();
+      ImportMenuPanel.j();
       Object var4 = 151107122339903167L;
       int var3 = ((NA_2)Ref.g(151107122339903167L, var4)).rowAtPoint(var1.getPoint());
       Y42 var10001 = var1.getButton();

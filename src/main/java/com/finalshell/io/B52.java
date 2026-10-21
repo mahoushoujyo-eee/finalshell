@@ -1,6 +1,6 @@
 package com.finalshell.io;
 
-import com.finalshell.core.Jk2;
+import com.finalshell.core.ProxyMessage;
 import java.io.IOException;
 
 public class B52 extends IOException {
@@ -19,7 +19,7 @@ public class B52 extends IOException {
 
    public B52(int var1) {
    super();
-      String[] var10000 = Jk2.Y();
+      String[] var10000 = ProxyMessage.Y();
       this.c = var1;
       String[] var2 = var10000;
       int var4 = var1 >> a(21712, 33302789667053597L);
@@ -867,6 +867,7 @@ public class B52 extends IOException {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var35;
       String[] var13 = new String[17];
       int var11 = 0;
       String var10 = "ÍÄ¸Â±Ë\bu\u0007mÌ1\u0090VöKøD¬µo\u0015aßÿ\u0083\u0091\u0099É\u0005\u007f~¯¢;×¿\u0091s©W+¦\u0010\u0085é\u0017\\\u0010C\u009atUF\u0097\"Û\u0091ï¹\u001a©K\u00add÷\u0084\u0096\u0018{Ër\u0085WÅ\u0014¯µë(W|NCª¦\u0004\u0015å\u00924vÖ\u0082µ/ïU\u0011AðÐ\t\u001fñ·Ð\u0090M\u0013\u0019ßwÀð÷\u009c&á:Ñe\u0005|J\n\u0003÷\u0000\t(ÈÊ6üëàdP,:\u008a;!+Åõ¯\u009518Zß\u0092óXr¹úT\u0018\u0015aùúD¹Ï\u0083È-ò<1I)¸Ý+e.\u0088)O\u001e5í\u00adë[qx&\u0084\u008bæõú\u009a(\n©ùS\u0013Â:àÐÁ\u0094\u0010ÿîõ\b\"\u007f\u0091»«\u008bô\u008a\u001aÏË\u0016\u0003u%6Pi ã\u0001Ò ¤\u0003£~ïð2\u000bïÙ¥Ô\u001cu«úNA&ª\u001c'}\t\u008d\u001ea<\u00ad}\u009d9>\u001c(\u0006Sv\u0094\u001aþ\u0015h\u0098\fI'ºÚ[]¨\u0087\u0089ùAÛ©]\u0018\u0018>ù\u0013FY®\u0002\u008fìÊ4êYc\"v<^)Y\u0093¯!ûw¯\u0095ü5ðuK\u0011\\ \u0087\u0001ç{!Ùeê\u0099\u0015\u001a½\u0089vRM¯×òÁø";
@@ -882,7 +883,6 @@ public class B52 extends IOException {
          byte var10002 = -1;
 
          while (true) {
-      char[] var35;
             label65: {
                char[] var41 = var10001.toCharArray();
                int var10004 = var41.length;

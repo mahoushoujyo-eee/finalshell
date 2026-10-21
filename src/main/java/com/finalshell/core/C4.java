@@ -58,7 +58,8 @@ public class C4 extends CF_2 implements Cloneable {
 
    @Override
    public void l(int var1, int var2) {
-      String[] var10000 = W5.q();
+      String[] var10000;
+      var10000 = W5.q();
       int var4 = this.B[0];
       int var5 = this.B[b(26186, 5441813644046790771L)];
       String[] var3 = var10000;
@@ -134,7 +135,8 @@ public class C4 extends CF_2 implements Cloneable {
    }
 
    public void f(int var1, int var2, int var3) {
-      int[] var4 = new int[this.H + 1];
+      int[] var4;
+      var4 = new int[this.H + 1];
       int[] var5 = new int[this.H + 1];
       byte[] var6 = new byte[this.H + 1];
       System.arraycopy(this.Y, 0, var4, 0, this.H);
@@ -155,6 +157,7 @@ public class C4 extends CF_2 implements Cloneable {
    }
 
    public void k(int var1) {
+      int var10000;
       C4 var3;
       label33: {
          label34: {
@@ -163,8 +166,6 @@ public class C4 extends CF_2 implements Cloneable {
             int var10001 = 4;
             if (var2 != null) {
                if (this.H <= 4) {
-      C4 var10000;
-      C4 var10000;
                   return;
                }
 
@@ -310,7 +311,9 @@ public class C4 extends CF_2 implements Cloneable {
    }
 
    public int O(int var1) {
-      String[] var10000 = W5.q();
+      String[] var10000;
+      int var4;
+      var10000 = W5.q();
       int var3 = 1;
       String[] var2 = var10000;
 
@@ -343,7 +346,10 @@ public class C4 extends CF_2 implements Cloneable {
    }
 
    public void E() {
-      String[] var10000 = W5.q();
+      String[] var10000;
+      float var22;
+      float var4;
+      var10000 = W5.q();
       this.Y[0] = -1;
       String[] var1 = var10000;
       this.Y[this.H - 1] = b(16335, 1526711618533632500L);
@@ -358,7 +364,7 @@ public class C4 extends CF_2 implements Cloneable {
 
          label103:
          while (var18 < this.H - 1) {
-            float var4 = (float)(this.Y[var3 + 1] - this.Y[var3]);
+            var4 = (float)(this.Y[var3 + 1] - this.Y[var3]);
             int var5 = this.Y[var3 + 1];
             int var19 = var3;
             if (var1 != null) {
@@ -515,7 +521,9 @@ public class C4 extends CF_2 implements Cloneable {
    }
 
    public void u() {
-      String[] var10000 = W5.q();
+      String[] var10000;
+      int var4;
+      var10000 = W5.q();
       int var2 = 1;
       String[] var1 = var10000;
 
@@ -544,7 +552,7 @@ public class C4 extends CF_2 implements Cloneable {
                      var7 = this.Y[var2];
                   }
 
-                  int var4 = var7;
+                  var4 = var7;
                   this.Y[var2] = this.Y[var3];
                   this.Y[var3] = var4;
                   var4 = this.J[var2];
@@ -578,7 +586,8 @@ public class C4 extends CF_2 implements Cloneable {
    }
 
    public void V() {
-      String[] var10000 = W5.q();
+      String[] var10000;
+      var10000 = W5.q();
       this.H = 4 + (int)(6.0 * Math.random());
       String[] var1 = var10000;
       this.Y = new int[this.H];
@@ -615,13 +624,15 @@ public class C4 extends CF_2 implements Cloneable {
    }
 
    public void s(float var1) {
-      String[] var10000 = W5.q();
+      String[] var10000;
+      int var4;
+      var10000 = W5.q();
       int var3 = 0;
       String[] var2 = var10000;
 
       while (true) {
          if (var3 < this.H) {
-            int var4 = this.J[var3];
+            var4 = this.J[var3];
             int var5 = var4 >> b(10692, 976770218173579258L) & b(26186, 5441813644046790771L);
             int var6 = var4 >> b(9108, 8653444720448222628L) & b(26186, 5441813644046790771L);
             int var7 = var4 & b(26186, 5441813644046790771L);
@@ -666,6 +677,7 @@ public class C4 extends CF_2 implements Cloneable {
    }
 
    public static void __vfClinit__() {
+      long[] var10000;
       long var0 = 7296981975822963827L;
       long[] var6 = new long[17];
       int var3 = 0;
@@ -679,7 +691,7 @@ public class C4 extends CF_2 implements Cloneable {
          int var10001 = var2;
          var2 += 8;
          byte[] var7 = var4.substring(var10001, var2).getBytes("ISO-8859-1");
-         long[] var10000 = var6;
+         var10000 = var6;
          var10001 = var3++;
          long var10002 = ((long)var7[0] & 255L) << 56
             | ((long)var7[1] & 255L) << 48
@@ -731,7 +743,6 @@ public class C4 extends CF_2 implements Cloneable {
       }
    }
 }
-
 
 
 

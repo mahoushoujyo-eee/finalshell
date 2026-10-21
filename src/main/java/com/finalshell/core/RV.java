@@ -380,6 +380,7 @@ public final class RV {
    }
 
    public static void n(Graphics2D var0, Shape var1, PI3 var2, Color var3, int var4, Shape var5, boolean var6) {
+      Graphics2D var16;
       String var7 = FV_2.D();
       if (var4 > 1) {
          Shape var10000 = var5;
@@ -440,7 +441,6 @@ public final class RV {
                int var12 = var15;
 
                while (var12 >= 2) {
-      String var16;
                   float var13 = (float)(var4 - var12) / (float)(var4 - 1);
                   var0.setComposite(AlphaComposite.getInstance(3, var13 * var10));
                   var16 = var0;
@@ -457,7 +457,6 @@ public final class RV {
                   var0.draw(var1);
                   var12 -= 2;
                   if (var7 != null) {
-      String var16;
                      break;
                   }
                }
@@ -632,7 +631,6 @@ public final class RV {
       }
    }
 }
-
 
 
 

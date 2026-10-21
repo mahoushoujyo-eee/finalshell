@@ -40,6 +40,7 @@ public class C_Q_2 extends K2_3 {
 
    @Override
    public void w(NQ var1) {
+      boolean var4;
       String[] var10000 = RG_2.C();
       int var3 = 0;
       String[] var2 = var10000;

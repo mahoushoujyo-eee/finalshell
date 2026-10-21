@@ -65,11 +65,11 @@ public class Kr4 {
       Ref.s(585643817413899882L, var5, var6);
       JScrollPane var10003;
       Object var7 = 585643817413899882L;
-      super((JTable)Ref.g(585643817413899882L, var7), a(32166, 1200496871586659144L), a(29526, 1043875368958752191L));
+      // [VF-super] super((JTable)Ref.g(585643817413899882L, var7), a(32166, 1200496871586659144L), a(29526, 1043875368958752191L));
       JScrollPane var1 = var10003;
       JPanel var10004 = (JPanel)(Registry.emptyArgs());
       long var10 = 471908644716504243L;
-      Object[] var9 = var10004;
+      Object var9 = var10004;
       var10004 = Ref.h(471908644716504243L, var9, var10);
 
       try {
@@ -119,7 +119,7 @@ public class Kr4 {
 
       JTable var10004;
       Object var9 = 255566354579761910L;
-      super((Ll4)Ref.g(255566354579761910L, var9));
+      // [VF-super] super((Ll4)Ref.g(255566354579761910L, var9));
       JTable var1 = var10004;
       var1.setRowHeight(new com.finalshell.ui.panel.NO().getPreferredSize().height);
       var1.setTableHeader(null);
@@ -971,6 +971,7 @@ public class Kr4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "4Ûvõ\u0019\by\u0007\u009eP\u001c\tK \u0006Úý¢zö\u008f";
@@ -985,7 +986,6 @@ public class Kr4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

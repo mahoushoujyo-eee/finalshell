@@ -102,7 +102,7 @@ public class Gd2 implements EU {
             var13 = 1;
          }
 
-         var12.init((boolean)var13, var6);
+         var12.init(var13, var6);
       } catch (Exception var8) {
          this.E = null;
          throw var8;

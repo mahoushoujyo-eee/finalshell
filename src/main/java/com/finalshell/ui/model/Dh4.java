@@ -1,7 +1,7 @@
 package com.finalshell.ui.model;
 
 public final class Dh4 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -28,6 +28,7 @@ public final class Dh4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var0 = new String[5];
       int var4 = 0;
       String var3 = ".k|\u0003\u0005z\u0004 an\u0003\b*hg\u0016\u001e~ +";
@@ -42,7 +43,6 @@ public final class Dh4 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label48: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

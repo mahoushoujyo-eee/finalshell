@@ -5,7 +5,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.listener.FP3;
 import com.finalshell.ui.listener.Us4;
-import com.finalshell.ui.panel.Edit;
+import com.finalshell.ui.panel.ProxySelectionPanel;
 import com.finalshell.ui.panel.Ky4;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
@@ -20,7 +20,7 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class EditProxyServerDialog extends JDialog {
-   public Edit b;
+   public ProxySelectionPanel b;
    public LD3_2 g;
    public boolean r;
    public JPanel W;
@@ -37,14 +37,15 @@ public class EditProxyServerDialog extends JDialog {
    public static long[] e;
    public static Integer[] f;
 
-   public EditProxyServerDialog(Edit var1, LD3_2 var2, boolean var3) {
+   public EditProxyServerDialog(ProxySelectionPanel var1, LD3_2 var2, boolean var3) {
    super(SwingUtilities.getWindowAncestor(var1));
+   Integer var131;
       label112: {
          Random var10001 = new Random();
          long var16 = 174948735561805446L;
          Random var15 = var10001;
          Ref.s(174948735561805446L, var15, var16);
-         Edit.t();
+         ProxySelectionPanel.t();
          long var18 = 415794868331118026L;
          Ref.s(415794868331118026L, var1, var18);
          long var20 = 461038843446045898L;
@@ -64,7 +65,7 @@ public class EditProxyServerDialog extends JDialog {
          StringBuilder var10004 = new StringBuilder().append(a(5676, -976));
          String var10006 = (String)(Registry.emptyArgs());
          long var22 = 286931176286176762L;
-         Object[] var21 = var10006;
+         Object var21 = var10006;
          var10006 = Ref.h(286931176286176762L, var21, var22);
 
          try {
@@ -176,7 +177,7 @@ public class EditProxyServerDialog extends JDialog {
             JTextField var10034 = (JTextField)Ref.g(390158584844885747L, var81);
             String var10036 = (String)(Registry.emptyArgs());
             long var84 = 286931176286176762L;
-            Object[] var83 = var10036;
+            Object var83 = var10036;
             var10036 = Ref.h(286931176286176762L, var83, var84);
 
             try {
@@ -188,7 +189,7 @@ public class EditProxyServerDialog extends JDialog {
             var2.setText(var10036);
             var10036 = Registry.emptyArgs();
             long var86 = 562951426394330328L;
-            Object[] var85 = var10036;
+            Object var85 = var10036;
             var10036 = Ref.h(562951426394330328L, var85, var86);
 
             try {
@@ -233,7 +234,7 @@ public class EditProxyServerDialog extends JDialog {
             JTextField var126 = (JTextField)Ref.g(279457316740415055L, var93);
             String var10039 = (String)(Registry.emptyArgs());
             long var96 = 531355023953548464L;
-            Object[] var95 = var10039;
+            Object var95 = var10039;
             var10039 = Ref.h(531355023953548464L, var95, var96);
 
             try {
@@ -246,9 +247,9 @@ public class EditProxyServerDialog extends JDialog {
             Object var97 = 592995861040925927L;
             JTextField var129 = (JTextField)Ref.g(592995861040925927L, var97);
             StringBuilder var10040 = new StringBuilder();
-            Object[] var10042 = Registry.emptyArgs();
+            Object var10042 = Registry.emptyArgs();
             long var100 = 511476850441845458L;
-            Object[] var99 = var10042;
+            Object var99 = var10042;
             var10042 = Ref.h(511476850441845458L, var99, var100);
 
             try {
@@ -262,7 +263,7 @@ public class EditProxyServerDialog extends JDialog {
             JTextField var10041 = (JTextField)Ref.g(321981137791138635L, var101);
             String var10043 = (String)(Registry.emptyArgs());
             long var104 = 562777604625200665L;
-            Object[] var103 = var10043;
+            Object var103 = var10043;
             var10043 = Ref.h(562777604625200665L, var103, var104);
 
             try {
@@ -276,7 +277,7 @@ public class EditProxyServerDialog extends JDialog {
             JPasswordField var134 = (JPasswordField)Ref.g(326791501671553256L, var105);
             String var10045 = (String)(Registry.emptyArgs());
             long var108 = 465224899237569377L;
-            Object[] var107 = var10045;
+            Object var107 = var10045;
             var10045 = Ref.h(465224899237569377L, var107, var108);
 
             try {
@@ -1735,6 +1736,7 @@ public class EditProxyServerDialog extends JDialog {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[35];
       int var11 = 0;
       String var10 = "\u008cE\t\u001cPÙ\u0089/¶Ä^\u0003亍枊²\u0004痪找吘 \u001dÈ\u0085Kòñd8£É\u0017¹\u0014£iqö|å;ù\u009f»\u0013¹7\u008b=\u0081Z\u0006课輁凖呈礒\u0004\u0003籤埥Ç\u0007斅希亐璦東刳嘶\u0005\u001dåÆ\u0095B\nÿ!g\u0090\u009dH0\u001a\u0081\u008f\u0004åKÌc\nÔp\u0002º1\r¥²3\u009a\b讀輱儙乸朡埣埅i\u0003寈碑X\u0006试连决穑厭\u0099\u000eyb}\u000e7ûàPÒiÚÚß\u0081\u0004Ô,î\u008b\u0004Ìàé\u0016\u000e\u0015lðÏ\u0086ÃÖW\u0014\u0089\u0002ÆÄ\u0002\u0011ÅU9e,\u0095\u0002óQÿåõ\u0089CèZ4\u0004¼ï\n5\u0011-¢Â}\u0080-a\u008eä\u00191Ð\u000bïa\u009a`\u0006\u008f\u0001êMÐ\u001a\n!\u001d¥l¿¸+ÎWð\u0003吾秮4\u000b\u001dI;\u009d\u0016éA)¯\u0004}\u0003稱厑k\u0006¿Cè\u0001\u0094·\u0011\u0011¯GÜr\u001b?\n-\u0089JÀd¯\u008e\u0092ß\u0004ÎED`\t讹轱儾攻宨究厗匩\u0086\n缃轶串瓯朥刚嚼ô\u0015ÿ\u0006\u001d\u0095¼Û\u001eì\u0011U×ø¸\u0087-ö\u008b\u0002#\u0081\u0081\u0087íö\u0097¯";
@@ -1750,7 +1752,6 @@ public class EditProxyServerDialog extends JDialog {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

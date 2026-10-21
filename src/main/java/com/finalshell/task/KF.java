@@ -2,16 +2,16 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import com.finalshell.ui.panel.AE;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 
 public class KF implements Runnable {
-   public final U I;
+   public final MainFrame I;
    public static String a;
 
-   public KF(U var1) {
+   public KF(MainFrame var1) {
       this.I = var1;
    }
 

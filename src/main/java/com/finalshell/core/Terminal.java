@@ -921,6 +921,7 @@ public class Terminal {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = "繵竦s如劭\u0007绎穃\u0004异冏菓匳";
@@ -935,7 +936,6 @@ public class Terminal {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label66: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

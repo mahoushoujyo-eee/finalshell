@@ -25,13 +25,14 @@ public class XW3 extends JPanel implements FocusListener {
 
    public XW3(@NotNull Cn2 var1, WH3 var2, ConnectionProperty var3) {
       super(new FlowLayout(0, 0, 0));
+      Wv2 var4;
       this.u = var1;
       this.G = new L62(this, null);
       this.i = var3;
       this.setOpaque(false);
       this.setFocusable(false);
       this.addFocusListener(this);
-      Wv2 var4 = new Wv2(this);
+      var4 = new Wv2(this);
       var4.addFocusListener(this);
       var4.addMouseListener(new C62(this, var1, var2, var3));
       this.G.o(var4);
@@ -39,6 +40,7 @@ public class XW3 extends JPanel implements FocusListener {
    }
 
    public void M(MouseEvent var1) {
+      MouseEvent var4;
       String[] var2 = Cn2.Q$arrString();
       int var10000 = (var1.isPopupTrigger()) ? 1 : 0;
       if (var2 != null) {
@@ -56,8 +58,6 @@ public class XW3 extends JPanel implements FocusListener {
       label35: {
          if (var2 != null) {
             if (var10000 != 2) {
-      JPopupMenu var4;
-      JPopupMenu var4;
                return;
             }
 
@@ -66,7 +66,7 @@ public class XW3 extends JPanel implements FocusListener {
                break label35;
             }
 
-            var10000 = var1.isConsumed();
+            var10000 = (var1.isConsumed()) ? 1 : 0;
          }
 
          if (var10000 != 0) {
@@ -197,7 +197,6 @@ public class XW3 extends JPanel implements FocusListener {
       }
    }
 }
-
 
 
 

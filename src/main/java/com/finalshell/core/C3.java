@@ -48,7 +48,7 @@ public class C3 extends Y2_5 implements Cloneable {
    }
 
    public boolean d(int var1, Xz2 var2) {
-      String[] var3 = Jk2.Y();
+      String[] var3 = ProxyMessage.Y();
       int var10000 = var1;
       if (var3 != null) {
          if (var1 >= 0) {
@@ -80,7 +80,7 @@ public class C3 extends Y2_5 implements Cloneable {
    }
 
    public Xz2 M(int var1) {
-      String[] var10000 = Jk2.Y();
+      String[] var10000 = ProxyMessage.Y();
       Object var3 = this.H.get(new Integer(var1));
       String[] var2 = var10000;
       var10000 = (String[])var3;
@@ -368,12 +368,12 @@ public class C3 extends Y2_5 implements Cloneable {
    }
 
    @Override
-   public Jk2 k(int var1, InetAddress var2, int var3) {
+   public ProxyMessage k(int var1, InetAddress var2, int var3) {
       return new JX(var1, var2, var3);
    }
 
    @Override
-   public Jk2 Q(int param1, String param2, int param3) throws UnknownHostException {
+   public ProxyMessage Q(int param1, String param2, int param3) throws UnknownHostException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -412,7 +412,7 @@ public class C3 extends Y2_5 implements Cloneable {
    }
 
    @Override
-   public Jk2 o(InputStream var1) throws B52, IOException {
+   public ProxyMessage o(InputStream var1) throws B52, IOException {
       return new JX(var1);
    }
 

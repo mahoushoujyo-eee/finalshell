@@ -27,6 +27,7 @@ public class Ft2 extends Fm2 {
 
    @Override
    public void A() {
+      Ft2 var3;
       Ud2_2 var4;
       label30: {
          Ud2_2 var2;

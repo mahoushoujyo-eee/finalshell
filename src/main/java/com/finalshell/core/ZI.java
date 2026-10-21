@@ -23,6 +23,8 @@ public class ZI {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public ZI(int[] var1, int var2, int var3, int var4, int var5) {
    super();
+   int var19;
+   int var21;
       String[] var10000 = W5.q();
       String[] var6 = var10000;
       this.d = new int[3][a(28816, 629281330306058382L)];
@@ -114,10 +116,6 @@ public class ZI {
 
             var8++;
             if (var6 != null) {
-      int var21;
-      int var21;
-      int var21;
-      int var21;
                continue;
             }
          }
@@ -252,7 +250,7 @@ public class ZI {
       if (var2 != null) {
          if (this.A > 0) {
             if (var2 == null) {
-               return this.p;
+               return (this.p) ? 1 : 0;
             }
 
             if (this.p) {
@@ -326,7 +324,7 @@ public class ZI {
       if (var1 != null) {
          if (this.A > 0) {
             if (var1 == null) {
-               return this.p;
+               return (this.p) ? 1 : 0;
             }
 
             if (this.p) {
@@ -376,7 +374,7 @@ public class ZI {
       if (var1 != null) {
          if (this.A > 0) {
             if (var1 == null) {
-               return this.p;
+               return (this.p) ? 1 : 0;
             }
 
             if (this.p) {
@@ -426,7 +424,7 @@ public class ZI {
       if (var1 != null) {
          if (this.A > 0) {
             if (var1 == null) {
-               return this.p;
+               return (this.p) ? 1 : 0;
             }
 
             if (this.p) {
@@ -450,7 +448,7 @@ public class ZI {
       if (var1 != null) {
          if (this.A > 0) {
             if (var1 == null) {
-               return this.p;
+               return (this.p) ? 1 : 0;
             }
 
             if (this.p) {
@@ -480,7 +478,7 @@ public class ZI {
             return this.H[0];
          }
 
-         var10000 = this.p;
+         var10000 = (this.p) ? 1 : 0;
       }
 
       return var10000 != 0 ? this.H[0] : -1.0F;

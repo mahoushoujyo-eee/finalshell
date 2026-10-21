@@ -19,6 +19,7 @@ public class No2 implements Runnable {
 
    @Override
    public void run() {
+      Fb2 var4;
       Ic2.g(this.h).setModel(new Ld2(this));
       String var10000 = Kz4.M();
       Ic2.g(this.h).setVisibleRowCount(Math.min(this.M.size(), (int)a));

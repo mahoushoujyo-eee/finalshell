@@ -404,13 +404,13 @@ public class DQ {
    }
 
    public static int v(String var0) {
-      byte var10000 = (Dm4.F$boolean()) ? 1 : 0;
+      byte var10000 = (byte)((Dm4.F$boolean()) ? 1 : 0);
       int var2 = 0;
-      boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var1 = ((boolean)var10000) != 0;
 
       while (true) {
          if (var2 < g.length) {
-            var10000 = (E8.B(g[var2]).equals(var0)) ? 1 : 0;
+            var10000 = (byte)((E8.B(g[var2]).equals(var0)) ? 1 : 0);
             if (!var1) {
                break;
             }
@@ -532,7 +532,7 @@ public class DQ {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var5 = var4.length();
       int var6 = var1.length();
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
 
       while (true) {
          if (var3 < var5) {
@@ -1417,6 +1417,7 @@ public class DQ {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var34;
       String[] var13 = new String[11];
       int var11 = 0;
       String var10 = "û\u0005\u009cÐb\u0080\u0098Ö\u0082Ã<\u001aÌy\u008f¯w²Ô\t3n]ñÓxmõÊ\u0007\rf\u009að<O0\u0007¤7n#Ø\u001e\u0019\u0007\u0003U[\u0096\u0012\u00833\u000f®Z{dÑßi\u0093×nÆ^é\u0013>\u0010×T\u0086D|\u0006à\u0082r_=z/øIÁ\u0010«ÜÄ\u0018sI§Éàî^\u00963\bÙ6\u000bT\u0005±\u009cNÕØA·ÄP";
@@ -1432,7 +1433,6 @@ public class DQ {
          byte var10002 = -1;
 
          while (true) {
-      char[] var34;
             label65: {
                char[] var40 = var10001.toCharArray();
                int var10004 = var40.length;

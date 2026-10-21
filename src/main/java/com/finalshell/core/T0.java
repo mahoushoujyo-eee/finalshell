@@ -1,6 +1,6 @@
 package com.finalshell.core;
 
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.util.HashMap;
 
 public class T0 {
@@ -14,7 +14,7 @@ public class T0 {
 
    @Override
    public boolean equals(Object var1) {
-      String[] var10000 = PingMessageR.N();
+      String[] var10000 = PingMessageReceiver.N();
       T0 var3 = (T0)var1;
       String[] var2 = var10000;
       long var5;

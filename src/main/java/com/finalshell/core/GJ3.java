@@ -151,6 +151,8 @@ public class GJ3 extends W5 {
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
+      boolean var13;
+      float var14;
       String[] var3 = W5.q();
 
       BufferedImage var10000;
@@ -201,7 +203,7 @@ public class GJ3 extends W5 {
                label53: {
                   try {
                      float var15;
-                     var13 = (var15 = this.X - 1.0F) == 0.0F ? 0 : (var15 < 0.0F ? -1 : 1);
+                     var13 = ((var15 = this.X - 1.0F) == 0.0F ? 0 : (var15 < 0.0F ? -1 : 1)) != 0;
                      if (var3 == null) {
                         break label54;
                      }
@@ -226,7 +228,7 @@ public class GJ3 extends W5 {
                   }
 
                   float var16;
-                  var13 = (var16 = this.X - 0.0F) == 0.0F ? 0 : (var16 < 0.0F ? -1 : 1);
+                  var13 = ((var16 = this.X - 0.0F) == 0.0F ? 0 : (var16 < 0.0F ? -1 : 1)) != 0;
                } catch (IllegalArgumentException var8) {
                   throw a(var8);
                }
@@ -1073,6 +1075,7 @@ public class GJ3 extends W5 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var13;
       String[] var5 = new String[3];
       int var3 = 0;
       String var2 = "\u009blÖþ¬¥²êõÚ\r÷Z\u0015©-Û½Ç\u0094?Æõ@Òf\u0093è\u008aÛÖ\u001e\"m\u001c\u0084S\r»ÈÑÂ\n\u0087-ÁÑ\u0007^BD¨\u0097gNH\u0090+c\u0001éÍ\u008f\u0019]\u008d.ÃÃjy\u007fpÿßKj¹í¯¹\u001ff\u00161÷@Ií";
@@ -1087,7 +1090,7 @@ public class GJ3 extends W5 {
             char[] var10003 = var2.substring(++var0, var0 + var1).toCharArray();
             int var10004 = var10003.length;
             int var6 = 0;
-            byte var13 = 81;
+            var13 = 81;
             var10002 = var10003;
             int var8 = var10004;
             byte var16;
@@ -1140,14 +1143,14 @@ public class GJ3 extends W5 {
                if (var13 == 0) {
                   var10006 = var13;
                   var10005 = var10002;
-                  var16 = var13;
+                  var16 = (byte)(var13);
                } else {
                   if (var8 <= var6) {
                      break;
                   }
 
                   var10005 = var10002;
-                  var16 = var13;
+                  var16 = (byte)(var13);
                   var10006 = var6;
                }
             }

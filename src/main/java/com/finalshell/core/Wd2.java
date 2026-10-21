@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Wd2 extends W2 {
-   public final Ty2 a;
+   public final RemoteProcessManager a;
 
-   public Wd2(Ty2 var1) {
+   public Wd2(RemoteProcessManager var1) {
       this.a = var1;
       Object[] var10001 = Registry.packArgs(Registry.lookupField(353811571070434348L).get(null));
       long var3 = 241374024532053562L;

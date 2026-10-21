@@ -18,13 +18,15 @@ public class FixTree {
     static class Err {
         String file; int line; int col; String msg;
         String symbol; String symKind; String srcLine;
+        /** location 行的附加信息：变量/字段的声明类型，如 "Ky4[]" */
+        String locationType;
     }
 
     static final Map<String, List<Err>> byFile = new LinkedHashMap<>();
     static int statReturn = 0, statBool = 0, statOverride = 0, statIface = 0,
                statVar = 0, statEnum = 0, statOther = 0, statSneaky = 0, statDeadCatch = 0,
                statResugar = 0, statDupDecl = 0, statIncompat = 0, statNewNoParens = 0, statNewArray = 0, statForEach = 0, statUnknown = 0, statNewReturn = 0,
-               statPrimType = 0, statPromote = 0, statUnsafe = 0, statSuperOutside = 0;
+               statPrimType = 0, statPromote = 0, statUnsafe = 0, statSuperOutside = 0, statArrayElem = 0;
     static final Set<String> touched = new TreeSet<>();
     static final List<String> unresolved = new ArrayList<>();
     /** 需要降级的假枚举：被 new 出来的枚举 */
@@ -74,6 +76,7 @@ public class FixTree {
         System.out.println("  var type promoted          = " + statPromote);
         System.out.println("  UNSAFE changes rejected    = " + statUnsafe);
         System.out.println("  super outside ctor fixed  = " + statSuperOutside);
+        System.out.println("  array elem type fixed     = " + statArrayElem);
         System.out.println("  new T; fixed             = " + statNewNoParens);
         System.out.println("  new prim(...) fixed       = " + statNewArray);
         System.out.println("  for-each renamed          = " + statForEach);
@@ -151,7 +154,13 @@ public class FixTree {
             for (int k = i + 1; k < Math.min(i + 6, lines.size()); k++) {
                 Matcher sm = Pattern.compile("^\\s*symbol:\\s+(class|variable|method)\\s+(\\S+)\\s*$")
                         .matcher(lines.get(k));
-                if (sm.matches()) { er.symKind = sm.group(1); er.symbol = sm.group(2); break; }
+                if (sm.matches()) { er.symKind = sm.group(1); er.symbol = sm.group(2); }
+                // location 行会带出变量的声明类型：
+                //   location: variable var10000 of type Ky4[]
+                // 这个信息用来判断"变量被误声明成数组"这类类型推断错误。
+                Matcher lm = Pattern.compile("^\\s*location:\\s+variable\\s+\\S+\\s+of type\\s+(\\S+)\\s*$")
+                        .matcher(lines.get(k));
+                if (lm.matches()) er.locationType = lm.group(1);
             }
             byFile.computeIfAbsent(er.file, x -> new ArrayList<>()).add(er);
         }
@@ -194,7 +203,8 @@ public class FixTree {
             if (er.msg.contains("not a statement") || er.msg.contains("';' expected")
                 || er.msg.contains("'(' or '[' expected") || er.msg.contains("'[' expected")
                 || er.msg.contains("']' expected") || er.msg.contains("')' expected")
-                || er.msg.contains("<identifier> expected")) {
+                || er.msg.contains("<identifier> expected")
+                || er.msg.contains("call to super must be first statement")) {
                 // super(...) 出现在**非构造器**方法里 —— Vineflower 处理不可约控制流时
                 // 把父类构造器调用复制到了错误的位置，Java 根本无法表达。
                 // 只在 javac 明确报语法错的那一行上动，并且校验所属方法名 != 类名，
@@ -229,8 +239,13 @@ public class FixTree {
             if (er.msg.contains("is never thrown in body of corresponding try statement")) {
                 String r = fixDeadCatch(er, src); if (r != null) return r;
             }
+            if (er.msg.startsWith("cannot find symbol") && "method".equals(er.symKind)) {
+                String ae = fixArrayElemType(er, src);
+                if (ae != null) return ae;
+            }
             if (er.msg.startsWith("cannot find symbol") && "variable".equals(er.symKind)) {
-                String r = fixUndeclaredVar(er, src); if (r != null) return r;
+                String r = fixUndeclaredVar(er, src);
+                if (r != null) return r;
             }
         } catch (Exception ex) {
             unresolved.add(er.file + ":" + er.line + "  " + er.msg + "  (" + ex + ")");
@@ -808,6 +823,13 @@ public class FixTree {
         // 错误只消一处，不会波及后续使用。
         //   boolean -> int :  (expr) ? 1 : 0
         //   int -> boolean:  (expr) != 0
+        //
+        // 【重要】必须是**单行完整语句**。正则 `(.+?);?\s*$` 只吃到第一个 ";"，
+        // 遇到跨行的调用（"Registry.packArgs(" 换行）会把语句截成
+        //   "Object v = Registry.packArgs(;"   -> 语法错误。
+        // 行级括号平衡能挡掉这种跨行语句（整个文件的括号是平衡的，
+        // 所以只靠文件级自检发现不了 —— 实测就被它骗过一次）。
+        if (!balancedParen(line)) return null;
         Matcher dm = Pattern.compile(
                 "^(\\s*)([A-Za-z_$][\\w$.<>\\[\\]]*)\\s+(\\w+)\\s*=\\s*(.+?);?\\s*$").matcher(line);
         if (dm.matches() && dm.group(2).equals(to)) {
@@ -822,6 +844,7 @@ public class FixTree {
         }
         // 情况 2b：varN = <expr>;   —— 纯赋值（变量已在别处声明）。
         // javac 报的 to 就是这个变量的声明类型，所以只转右边表达式即可。
+        if (!balancedParen(line)) return null;      // 跨行语句，正则会截断
         Matcher am = Pattern.compile("^(\\s*)(\\w+)\\s*=\\s*(.+?);?\\s*$").matcher(line);
         if (am.matches()) {
             String expr = am.group(3).trim();
@@ -928,6 +951,13 @@ public class FixTree {
                 "^(\\s*)([A-Za-z_$][\\w$.<>\\[\\]]*)\\s+" + Pattern.quote(var) + "\\s*=\\s*(.+?);?\\s*$");
         int found = -1;
         for (int i = lowerBound; i < idx; i++) {
+            // 注意：**不能**在这里跳过括号不平衡的行 —— 跨行声明
+            //   Object[] v = Registry.packArgs(
+            //      a + b
+            //   );
+            // 正好是括号不平衡的，而它恰恰是最需要修的那一类。
+            // 跳过了它，下面的"合并多行"逻辑就永远走不到，
+            // 单行正则又会把初值截断成 "Registry.packArgs(;"。
             Matcher dm = decl.matcher(lines[i]);
             if (dm.matches() && !dm.group(2).equals(target)) {
                 if (found >= 0) return null;          // 同名声明多处，不敢改
@@ -935,6 +965,43 @@ public class FixTree {
             }
         }
         if (found < 0) return null;
+        // 声明可能横跨多行：
+        //   Object[] v = Registry.packArgs(
+        //      a + b
+        //   );
+        // 这种行按单行正则处理会把初值截断成 "Registry.packArgs("，
+        // 拼出 "Object v = (Object)(Registry.packArgs(;" 这种语法错误。
+        // 这里先把它**合并成一行**（跨行调用合并成单行不影响语义），
+        // 之后再做类型提升 —— 从根上消除"截断"这个失败模式。
+        int declEnd = found;
+        if (!balancedParen(lines[found])) {
+            int d = 0;
+            for (int k = found; k < lines.length && k < found + 12; k++) {
+                d += parenDelta(lines[k]);
+                if (d == 0) { declEnd = k; break; }
+            }
+            if (declEnd == found) return null;
+            StringBuilder merged = new StringBuilder(lines[found].trim());
+            for (int k = found + 1; k <= declEnd; k++) {
+                merged.append(' ').append(lines[k].trim());
+            }
+            // 合并后必须是一个完整的赋值语句
+            Matcher mm2 = Pattern.compile(
+                    "^([A-Za-z_$][\\w$.<>\\[\\]]*)\\s+" + Pattern.quote(var) + "\\s*=\\s*(.+?);?\\s*$")
+                    .matcher(merged.toString());
+            if (!mm2.matches()) return null;
+            String mInit = mm2.group(2).trim();
+            if (mInit.isEmpty() || mInit.endsWith("(") || mInit.endsWith(",")) return null;
+            if (mInit.startsWith("(" + target + ")")) return null;
+            String newLine = "      " + target + " " + var + " = (" + target + ")(" + mInit + ");";
+            // 用合并行替换整段
+            String[] nl = new String[lines.length - (declEnd - found)];
+            System.arraycopy(lines, 0, nl, 0, found);
+            nl[found] = newLine;
+            System.arraycopy(lines, declEnd + 1, nl, found + 1, lines.length - declEnd - 1);
+            statPromote++;
+            return String.join("\n", nl);
+        }
         Matcher dm = decl.matcher(lines[found]);
         if (!dm.matches()) return null;
         String init = dm.group(3).trim();
@@ -944,6 +1011,17 @@ public class FixTree {
         lines[found] = dm.group(1) + target + " " + var + " = (" + target + ")(" + init + ");";
         statPromote++;
         return String.join("\n", lines);
+    }
+
+    /** 一行里 ( 与 ) 的数量差 */
+    static int parenDelta(String s) {
+        int d = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '(') d++;
+            else if (c == ')') d--;
+        }
+        return d;
     }
 
     // ---------- 11. incompatible types：按 javac 给的列号做显式转换 ----------
@@ -1005,6 +1083,48 @@ public class FixTree {
         lines[idx] = line.substring(0, start) + repl + line.substring(end);
         statIncompat++;
         return String.join("\n", lines);
+    }
+
+    /**
+     * 变量被误声明成数组 —— javac 会把声明类型带在错误里：
+     *   symbol:   method isShowing()
+     *   location: variable var10000 of type Ky4[]
+     * 变量实际是单个对象（否则在数组上调实例方法根本不会这么写），
+     * 所以把声明里的 "[]" 去掉。
+     *
+     * <p>只改声明类型、**不动初值**：如果初值本来就是数组类型，
+     * javac 会报一个"新的"类型错误（数量相当），但不会把整个文件改坏；
+     * 加了强转反而可能造出编译不过的代码。
+     */
+    static String fixArrayElemType(Err er, String src) {
+        if (!er.msg.startsWith("cannot find symbol")) return null;
+        if (!"method".equals(er.symKind)) return null;
+        if (er.locationType == null || !er.locationType.endsWith("[]")) return null;
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        // 行级括号平衡：跨行声明不能按单行正则改写（会截断成 "foo(;"）
+        if (!balancedParen(lines[idx])) return null;
+        // 从错误行反推变量名：xxx.someMethod(...)
+        Matcher vm = Pattern.compile("\\b(var\\d+)\\s*\\.").matcher(lines[idx]);
+        if (!vm.find()) return null;
+        String var = vm.group(1);
+        // 找声明行：<Type>[] var = ...;
+        Pattern decl = Pattern.compile(
+                "^(\\s*)([\\w.$]+)\\[\\]\\s+(" + Pattern.quote(var) + ")\\s*=\\s*(.+?);?\\s*$");
+        for (int i = 0; i < lines.length; i++) {
+            Matcher dm = decl.matcher(lines[i]);
+            if (!dm.matches()) continue;
+            // 声明行本身也必须括号平衡，否则是跨行声明 —— 改它会截断
+            if (!balancedParen(lines[i])) return null;
+            String init = dm.group(4).trim();
+            // 初值明显就是数组构造/数组变量 -> 不动
+            if (init.matches("new\\s+[\\w.$]+\\s*[\\[{].*") || init.matches(".*\\[\\].*")) return null;
+            lines[i] = dm.group(1) + dm.group(2) + " " + dm.group(3) + " = " + init + ";";
+            statArrayElem++;
+            return String.join("\n", lines);
+        }
+        return null;
     }
 
     // ---------- 6. 未声明的局部变量 -> 在方法开头补声明 ----------

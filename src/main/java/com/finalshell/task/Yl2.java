@@ -1,14 +1,14 @@
 package com.finalshell.task;
 
-import com.finalshell.core.CB;
+import com.finalshell.core.ProcessMonitorService;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Yl2 implements Runnable {
-   public final CB y;
+   public final ProcessMonitorService y;
 
-   public Yl2(CB var1) {
+   public Yl2(ProcessMonitorService var1) {
       this.y = var1;
    }
 

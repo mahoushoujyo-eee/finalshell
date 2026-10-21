@@ -1032,6 +1032,7 @@ public abstract class M_5 extends K_4{
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "¸·»å5B£a\u009b·\u000ex¤8_}\u0087í>\\(O3S¦\u001b\u0081\u0083\u009f\u0015\u0092±þ%\u009dZ¶b9×Zt.¹\u000eM¥ãr\u0094\u0080\u0013DJÌ\u008at\u0015²\r¾\u000ff£\u009e7¹Ï\u008aÅX\u000f)þCÅÒV ýÂ¶]\u0097á\u0085@";
@@ -1047,7 +1048,6 @@ public abstract class M_5 extends K_4{
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label53: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

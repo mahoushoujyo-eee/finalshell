@@ -175,6 +175,7 @@ public class Oj2 extends O {
    }
 
    public void H$void() {
+      Oj2 var10001;
       Color var2;
       label20: {
          boolean var1 = g();

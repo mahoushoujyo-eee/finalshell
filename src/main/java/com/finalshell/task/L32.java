@@ -1,7 +1,7 @@
 package com.finalshell.task;
 
 import com.finalshell.core.FO;
-import com.finalshell.crypto.PingMessageR;
+import com.finalshell.crypto.PingMessageReceiver;
 import java.io.IOException;
 import java.net.DatagramPacket;
 
@@ -19,7 +19,7 @@ public class L32 implements Runnable {
    @Override
    public void run() {
       label38: {
-         String[] var1 = PingMessageR.N();
+         String[] var1 = PingMessageReceiver.N();
          if (var1 != null) {
             try {
                if (!this.F.H) {

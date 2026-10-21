@@ -21,7 +21,9 @@ public class LI extends JLabel {
 
    @Override
    public void paint(Graphics var1) {
-      boolean var10000 = FilePanel.p$boolean();
+      Long var25;
+      Long var28;
+      boolean var10000 = FileCommandPanel.p$boolean();
       Graphics2D var3 = (Graphics2D)var1;
       boolean var2 = var10000;
       if (!var2) {
@@ -34,9 +36,9 @@ public class LI extends JLabel {
             var3.setColor(var4);
             Object var14 = 227134258213482384L;
             Ref.g(227134258213482384L, var14);
-            Object[] var10003 = Registry.emptyArgs();
+            Object var10003 = Registry.emptyArgs();
             long var17 = 431375544983974376L;
-            Object[] var16 = var10003;
+            Object var16 = var10003;
             var10003 = Ref.h(431375544983974376L, var16, var17);
 
             try {
@@ -48,9 +50,9 @@ public class LI extends JLabel {
             float var26 = (float)var25;
             Object var18 = 227134258213482384L;
             Object var10005 = Ref.g(227134258213482384L, var18);
-            Object[] var10006 = Registry.emptyArgs();
+            Object var10006 = Registry.emptyArgs();
             long var21 = 399113218510016089L;
-            Object[] var20 = var10006;
+            Object var20 = var10006;
             var10006 = Ref.h(399113218510016089L, var20, var21);
 
             try {

@@ -1,10 +1,10 @@
 package com.finalshell.ui.panel;
 
-import com.finalshell.core.CK;
+import com.finalshell.core.ZModemTransfer;
 import com.finalshell.core.KV;
 import com.finalshell.core.NY;
 import com.finalshell.core.T32;
-import com.finalshell.core.Ty2;
+import com.finalshell.core.RemoteProcessManager;
 import com.finalshell.core.Uo2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
@@ -23,14 +23,14 @@ public class CT extends F8 {
    public boolean V;
    public DG3 w;
    public ConnectionProperty h;
-   public Ty2 r;
+   public RemoteProcessManager r;
    public boolean z;
    public static String[] a;
    public static String[] b;
    public static long[] d;
    public static Integer[] e;
 
-   public CT(Ty2 var1, boolean var2, String var3) {
+   public CT(RemoteProcessManager var1, boolean var2, String var3) {
       KV var10001 = new KV();
       long var5 = 562268837063478851L;
       KV var4 = var10001;
@@ -130,7 +130,7 @@ public class CT extends F8 {
       Uo2.i();
       ConnectionProperty var10002 = (ConnectionProperty)(Registry.emptyArgs());
       long var7 = 398891882190620836L;
-      Object[] var6 = var10002;
+      Object var6 = var10002;
       var10002 = Ref.h(398891882190620836L, var6, var7);
 
       try {
@@ -140,12 +140,12 @@ public class CT extends F8 {
       }
 
       ConnectionProperty var2 = var10002;
-      Ty2 var3 = var2.M$Ty_2();
+      RemoteProcessManager var3 = var2.M$Ty_2();
       if (var3 != null) {
          var2.a();
          var10002 = Registry.emptyArgs();
          long var9 = 292557478156152530L;
-         Object[] var8 = var10002;
+         Object var8 = var10002;
          Ref.h(292557478156152530L, var8, var9);
 
          try {
@@ -161,7 +161,7 @@ public class CT extends F8 {
                return;
             }
 
-            var10003 = CK.Ur;
+            var10003 = ZModemTransfer.Ur;
          }
 
          if (var10003) {
@@ -259,7 +259,7 @@ public class CT extends F8 {
       Ref.h(399585344452154517L, var5, var6);
       NY var10003 = (NY)(Registry.emptyArgs());
       long var8 = 149968465491171480L;
-      Object[] var7 = var10003;
+      Object var7 = var10003;
       var10003 = Ref.h(149968465491171480L, var7, var8);
 
       try {
@@ -272,7 +272,7 @@ public class CT extends F8 {
       byte var22 = 2;
       Color var10008 = (Color)(Registry.emptyArgs());
       long var10 = 345089686683358688L;
-      Object[] var9 = var10008;
+      Object var9 = var10008;
       var10008 = Ref.h(345089686683358688L, var9, var10);
 
       try {
@@ -340,12 +340,12 @@ public class CT extends F8 {
       Ref.s(236760040741055517L, var1, var3);
    }
 
-   public Ty2 e() {
+   public RemoteProcessManager e() {
       Object var1 = 279056448890201755L;
-      return (Ty2)Ref.g(279056448890201755L, var1);
+      return (RemoteProcessManager)Ref.g(279056448890201755L, var1);
    }
 
-   public void Y(Ty2 var1) {
+   public void Y(RemoteProcessManager var1) {
       long var3 = 279056448890201755L;
       Ref.s(279056448890201755L, var1, var3);
    }

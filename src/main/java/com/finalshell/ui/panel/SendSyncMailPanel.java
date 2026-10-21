@@ -34,6 +34,7 @@ public class SendSyncMailPanel extends JPanel {
    public static Integer[] e;
 
    public SendSyncMailPanel() {
+      super();
       Registry.lookupField(370516434131129032L).setBoolean(this, true);
       this.I = a(25968, 1678239938281242033L);
       this.setLayout(new MigLayout(a(6372, 27545), a(6368, -13838), a(6370, 20580)));
@@ -63,7 +64,7 @@ public class SendSyncMailPanel extends JPanel {
       Ref.h2(322267315291882359L, var19);
       JScrollPane var10009;
       Object var21 = 279671605990384354L;
-      super((JTextArea)Ref.g(279671605990384354L, var21));
+      // [VF-super] super((JTextArea)Ref.g(279671605990384354L, var21));
       long var24 = 535617497140980511L;
       JScrollPane var23 = var10009;
       Ref.s(535617497140980511L, var23, var24);
@@ -77,7 +78,7 @@ public class SendSyncMailPanel extends JPanel {
       u();
       JButton var10012 = (JButton)(Registry.packArgs(a(6379, 17474)));
       long var28 = 524301913727361349L;
-      Object[] var27 = var10012;
+      Object var27 = var10012;
       var10012 = Ref.h(524301913727361349L, var27, var28);
 
       try {
@@ -139,7 +140,8 @@ public class SendSyncMailPanel extends JPanel {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void Z(JTextArea var1) {
-      JLabel var9;
+      BadLocationException var10;
+      int var9;
       String var10000 = u();
       int var3 = var1.getLineCount() - a(2640, 3761958135901819536L);
       String var2 = var10000;
@@ -162,7 +164,6 @@ public class SendSyncMailPanel extends JPanel {
             try {
                var9 = var1.getLineEndOffset(var3 - 1);
             } catch (BadLocationException var6) {
-      JButton var10;
                var10 = var6;
                boolean var10001 = false;
                break label30;
@@ -174,7 +175,6 @@ public class SendSyncMailPanel extends JPanel {
             var1.replaceRange("", 0, var8);
             return;
          } catch (BadLocationException var5) {
-      JCheckBox var10;
             var10 = var5;
             boolean var11 = false;
          }
@@ -1015,10 +1015,12 @@ public class SendSyncMailPanel extends JPanel {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String var10;
+      char[] var30;
       String[] var13 = new String[15];
       int var11 = 0;
       O("TU7xlc");
-      String var10 = "î¢;\u0012\f¥i\u008e¡u\u008c\u0085Ç\u0016[\u000em\u0004膌劶滢勉\u0006厮邜听毝逨亗 qWÍÐ·ÓBxÂ6TD\u0083v«\u0005Å\u0086É\u0086\u0018ÙÃhU\u0085µA«4\u0093À\u0002溏窤\u0016^DÙ,\u0099i\u009dòe\u000e\u000f\u001eøèõê \u008dÕ³\u0019È\f\u0092Eh$©<\u001eÑe\u0099`5(¡¢×nô\u0004*\u0085Ïdé\u0017â\u0005åK]&ìÃ\u0019cµnygº-ë¢\"?w2\u008d´=SU¨\u0004窭卓吕欘\u0011ìË´µq\u001f\u001fÚ00\n\u008cT~\u009b\fk\u0002敚弁\tÞ\u009eÄ\u001aZ\u009e£i»";
+      var10 = "î¢;\u0012\f¥i\u008e¡u\u008c\u0085Ç\u0016[\u000em\u0004膌劶滢勉\u0006厮邜听毝逨亗 qWÍÐ·ÓBxÂ6TD\u0083v«\u0005Å\u0086É\u0086\u0018ÙÃhU\u0085µA«4\u0093À\u0002溏窤\u0016^DÙ,\u0099i\u009dòe\u000e\u000f\u001eøèõê \u008dÕ³\u0019È\f\u0092Eh$©<\u001eÑe\u0099`5(¡¢×nô\u0004*\u0085Ïdé\u0017â\u0005åK]&ìÃ\u0019cµnygº-ë¢\"?w2\u008d´=SU¨\u0004窭卓吕欘\u0011ìË´µq\u001f\u001fÚ00\n\u008cT~\u009b\fk\u0002敚弁\tÞ\u009eÄ\u001aZ\u009e£i»";
       int var12 = "î¢;\u0012\f¥i\u008e¡u\u008c\u0085Ç\u0016[\u000em\u0004膌劶滢勉\u0006厮邜听毝逨亗 qWÍÐ·ÓBxÂ6TD\u0083v«\u0005Å\u0086É\u0086\u0018ÙÃhU\u0085µA«4\u0093À\u0002溏窤\u0016^DÙ,\u0099i\u009dòe\u000e\u000f\u001eøèõê \u008dÕ³\u0019È\f\u0092Eh$©<\u001eÑe\u0099`5(¡¢×nô\u0004*\u0085Ïdé\u0017â\u0005åK]&ìÃ\u0019cµnygº-ë¢\"?w2\u008d´=SU¨\u0004窭卓吕欘\u0011ìË´µq\u001f\u001fÚ00\n\u008cT~\u009b\fk\u0002敚弁\tÞ\u009eÄ\u001aZ\u009e£i»"
          .length();
       char var9 = 4;
@@ -1031,7 +1033,6 @@ public class SendSyncMailPanel extends JPanel {
          byte var10002 = -1;
 
          while (true) {
-      char[] var30;
             label56: {
                char[] var34 = var10001.toCharArray();
                int var10004 = var34.length;

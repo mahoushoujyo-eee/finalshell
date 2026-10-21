@@ -13,13 +13,13 @@ import javax.swing.JPanel;
 
 public class Yp4 extends JPanel {
    public BufferedImage a;
-   public com.finalshell.ui.frame.U t;
+   public com.finalshell.ui.frame.MainFrame t;
    public BufferedImage I;
    public Dimension Z;
    public static long[] b;
    public static Integer[] c;
 
-   public Yp4(com.finalshell.ui.frame.U var1) {
+   public Yp4(com.finalshell.ui.frame.MainFrame var1) {
       Dimension var10001 = new Dimension();
       long var3 = 144144297701832345L;
       Dimension var2 = var10001;

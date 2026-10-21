@@ -4,8 +4,8 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.model.Ck4;
 import com.finalshell.ui.model.Tf4;
-import com.finalshell.ui.panel.Address;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import com.finalshell.ui.panel.FilePermissionPanel;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
@@ -16,10 +16,10 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class VY implements MouseListener {
-   public final Connection4 y;
+   public final ConnectionInfoPanel y;
    public static long a;
 
-   public VY(Connection4 var1) {
+   public VY(ConnectionInfoPanel var1) {
       this.y = var1;
    }
 
@@ -29,12 +29,12 @@ public class VY implements MouseListener {
 
    @Override
    public void mousePressed(MouseEvent var1) {
-      Connection4.I();
+      ConnectionInfoPanel.I();
       Object var7 = 402958598703799057L;
       Object var10002 = Ref.g(402958598703799057L, var7);
-      Object[] var10003 = Registry.packArgs(var1.getPoint());
+      Object var10003 = Registry.packArgs(var1.getPoint());
       long var10 = 282975181547362546L;
-      Object[] var9 = var10003;
+      Object var9 = var10003;
       var10003 = Ref.h(282975181547362546L, var9, var10);
 
       try {
@@ -50,7 +50,7 @@ public class VY implements MouseListener {
       Object var13 = 402958598703799057L;
       Ref.g(402958598703799057L, var13);
       Object var15 = 230619793659643674L;
-      TreePath var10006 = ((Connection4)Ref.g(230619793659643674L, var15)).getPathForRow(var3);
+      TreePath var10006 = ((ConnectionInfoPanel)Ref.g(230619793659643674L, var15)).getPathForRow(var3);
       long var18 = 294225525164644505L;
       TreePath var17 = var10006;
       Ref.s(294225525164644505L, var17, var18);
@@ -80,7 +80,7 @@ public class VY implements MouseListener {
             Object var21 = 402958598703799057L;
             Ref.g(402958598703799057L, var21);
             Object var23 = 230619793659643674L;
-            ((Connection4)Ref.g(230619793659643674L, var23)).getSelectionCount();
+            ((ConnectionInfoPanel)Ref.g(230619793659643674L, var23)).getSelectionCount();
          }
 
          VY var6 = var31;
@@ -93,24 +93,26 @@ public class VY implements MouseListener {
 
    @Override
    public void mouseReleased(MouseEvent var1) {
-      int[] var2 = Connection4.I();
+      long var29;
+      TreePath var73;
+      int[] var2 = ConnectionInfoPanel.I();
       Object var10 = 402958598703799057L;
-      Connection4 var10001 = (Connection4)Ref.g(402958598703799057L, var10);
+      ConnectionInfoPanel var10001 = (ConnectionInfoPanel)Ref.g(402958598703799057L, var10);
       if (var2 != null) {
          if (Registry.lookupField(191167021799414579L).getBoolean(var10001)) {
             Object var12 = 402958598703799057L;
             Registry.lookupField(191167021799414579L).setBoolean(Ref.g(402958598703799057L, var12), false);
          }
 
-         var10001 = (Connection4)var1.getSource();
+         var10001 = (ConnectionInfoPanel)var1.getSource();
       }
 
-      Connection4 var3 = var10001;
+      ConnectionInfoPanel var3 = var10001;
       Object var14 = 402958598703799057L;
       Ref.g(402958598703799057L, var14);
-      Object[] var10003 = Registry.packArgs(var1.getPoint());
+      Object var10003 = Registry.packArgs(var1.getPoint());
       long var17 = 282975181547362546L;
-      Object[] var16 = var10003;
+      Object var16 = var10003;
       var10003 = Ref.h(282975181547362546L, var16, var17);
 
       try {
@@ -196,7 +198,7 @@ public class VY implements MouseListener {
                            HashSet var10005 = (HashSet)Ref.g(428509894309855334L, var20);
                            String var10007 = (String)(Registry.emptyArgs());
                            long var23 = 498856411508641826L;
-                           Object[] var22 = var10007;
+                           Object var22 = var10007;
                            var10007 = Ref.h(498856411508641826L, var22, var23);
 
                            try {
@@ -226,7 +228,7 @@ public class VY implements MouseListener {
                            Object var26 = 402958598703799057L;
                            Ref.g(402958598703799057L, var26);
                            Object[] var75 = Registry.packArgs(var7, var56, var5, null, true, true);
-                           long var29 = 523405946948830526L;
+                           var29 = 523405946948830526L;
                            Object[] var28 = var75;
                            Ref.h(523405946948830526L, var28, var29);
 
@@ -238,13 +240,13 @@ public class VY implements MouseListener {
 
                            Object var30 = 402958598703799057L;
                            Ref.g(402958598703799057L, var30);
-                           Address var78 = (Address)(Registry.emptyArgs());
+                           FileBrowserAddressBar var78 = (FileBrowserAddressBar)(Registry.emptyArgs());
                            long var33 = 346382751221538814L;
-                           Object[] var32 = var78;
+                           Object var32 = var78;
                            var78 = Ref.h(346382751221538814L, var32, var33);
 
                            try {
-                              var78 = (Address)var78;
+                              var78 = (FileBrowserAddressBar)var78;
                            } catch (InvocationTargetException var51) {
                               throw var51.getTargetException();
                            }
@@ -293,7 +295,7 @@ public class VY implements MouseListener {
 
                      label144:
                      if (var10003 == null) {
-                        Connection4 var66 = var3;
+                        ConnectionInfoPanel var66 = var3;
                         if (var2 != null) {
                            Object[] var71 = Registry.packArgs(var1.getPoint());
                            long var43 = 291447725830674516L;
@@ -349,7 +351,7 @@ public class VY implements MouseListener {
 
       Tf4 var57 = (Tf4)var10003;
       Object var44 = 402958598703799057L;
-      ((Connection4)Ref.g(402958598703799057L, var44)).stopEditing();
+      ((ConnectionInfoPanel)Ref.g(402958598703799057L, var44)).stopEditing();
       Object var46 = 402958598703799057L;
       if (Registry.lookupField(218493194116849754L).getBoolean(Ref.g(402958598703799057L, var46))) {
          FilePermissionPanel var59 = new FilePermissionPanel(var3, var5, var57, var6);

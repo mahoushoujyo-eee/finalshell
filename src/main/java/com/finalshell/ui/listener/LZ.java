@@ -3,7 +3,7 @@ package com.finalshell.ui.listener;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import com.finalshell.ui.dialog.SelectPrivateKeyDialog;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
@@ -17,7 +17,7 @@ public class LZ implements MouseListener {
 
    @Override
    public void mouseReleased(MouseEvent var1) {
-      String[] var2 = ImportPanel.j();
+      String[] var2 = ImportMenuPanel.j();
       int var10000 = var1.getButton();
       byte var10001 = 1;
       if (var2 != null) {

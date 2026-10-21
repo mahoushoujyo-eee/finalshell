@@ -185,6 +185,10 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
    }
 
    public ClearListDialog(Dv2 var1, boolean var2, boolean var3, boolean var4, boolean var5, boolean var6, boolean var7) {
+      long var26;
+      Object[] var65;
+      long var66;
+      Dv2 var73;
       String var10001 = a(16020, -21725);
       long var10 = 621802534541065536L;
       String var9 = var10001;
@@ -252,7 +256,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       if (this == null) {
          if (var5) {
             KD var10009 = new KD(a(16018, -2541));
-            long var26 = 376708942717725433L;
+            var26 = 376708942717725433L;
             KD var25 = var10009;
             Ref.s(376708942717725433L, var25, var26);
             Object var27 = 201109810837008677L;
@@ -295,7 +299,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             ((KD)Ref.g(282658375549611139L, var45)).addActionListener(new com.finalshell.ui.listener.Y2(this));
          }
 
-         Dv2 var73 = new Dv2();
+         var73 = new Dv2();
          long var48 = 265132846717086219L;
          Dv2 var47 = var73;
          Ref.s(265132846717086219L, var47, var48);
@@ -328,8 +332,8 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       ((Dv2)Ref.g(334241381080505095L, var63)).addKeyListener(new B7(this, var3));
       this.setSize(new Dimension(Registry.lookupField(173564240323200101L).getInt(this), Registry.lookupField(121864494913095536L).getInt(this)));
       Object[] var10012 = Registry.emptyArgs();
-      long var66 = 254575819775712923L;
-      Object[] var65 = var10012;
+      var66 = 254575819775712923L;
+      var65 = var10012;
       Ref.h(254575819775712923L, var65, var66);
 
       try {
@@ -410,6 +414,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
    public abstract String c();
 
    public void v$void() {
+      Integer var26;
       String[] var10000 = i$arrString();
       Registry.lookupField(594717380361478836L).setInt(this, 0);
       String[] var1 = var10000;
@@ -421,9 +426,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          do {
             Object var8 = 627738372728753803L;
             Object var10003 = Ref.g(627738372728753803L, var8);
-            Object[] var10004 = Registry.emptyArgs();
+            Object var10004 = Registry.emptyArgs();
             long var11 = 253718301466496149L;
-            Object[] var10 = var10004;
+            Object var10 = var10004;
             var10004 = Ref.h(253718301466496149L, var10, var11);
 
             try {
@@ -440,7 +445,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             Ref.g(627738372728753803L, var12);
             L1 var10005 = (L1)(Registry.packArgs(var2));
             long var15 = 430610060651646114L;
-            Object[] var14 = var10005;
+            Object var14 = var10005;
             var10005 = Ref.h(430610060651646114L, var14, var15);
 
             try {
@@ -455,7 +460,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             Object var18 = 369475678680292668L;
             Component var10008 = (Component)(Registry.packArgs(Ref.g(369475678680292668L, var18), var3, var2, false, false));
             long var21 = 579113908691306655L;
-            Object[] var20 = var10008;
+            Object var20 = var10008;
             var10008 = Ref.h(579113908691306655L, var20, var21);
 
             try {
@@ -500,6 +505,12 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
    }
 
    public Rectangle S() {
+      Object[] var43;
+      Object var52;
+      Integer var63;
+      int var64;
+      Object var66;
+      boolean var73;
       i$arrString();
       Object[] var10002 = Registry.emptyArgs();
       long var16 = 477819205317189433L;
@@ -514,12 +525,11 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
       ClearListDialog var1;
       Object var3;
-      Object var52;
       label175: {
          boolean var2 = false;
          var1 = this;
          var3 = 0;
-         byte var10001 = (Registry.lookupField(546619646805113494L).getBoolean(this)) ? 1 : 0;
+         byte var10001 = (byte)((Registry.lookupField(546619646805113494L).getBoolean(this)) ? 1 : 0);
          if (this == null) {
             if (var10001 == 0) {
                Object var10006;
@@ -577,9 +587,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          int var56 = 1;
          Object var27 = 627738372728753803L;
          Ref.g(627738372728753803L, var27);
-         Object[] var61 = Registry.emptyArgs();
+         Object var61 = Registry.emptyArgs();
          long var30 = 253718301466496149L;
-         Object[] var29 = var61;
+         Object var29 = var61;
          var61 = Ref.h(253718301466496149L, var29, var30);
 
          try {
@@ -593,7 +603,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             label178: {
                var59 = var63;
                Registry.lookupField(467422017983063981L).setInt(this, 1);
-               int var64 = var59;
+               var64 = var59;
                if (this == null) {
                   if (var59 < Registry.lookupField(132462760774120245L).getInt(this)) {
                      Registry.lookupField(607893582657885022L).setInt(this, var59);
@@ -661,7 +671,6 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             while (var12 < Registry.lookupField(467422017983063981L).getInt(this)) {
                Object var13 = (var12 + 1) * Registry.lookupField(594717380361478836L).getInt(this);
                if (var1 == null) {
-      Object var66;
                   var66 = var13;
                   var10005 = Registry.lookupField(568433753069106815L).getInt(this);
                   if (var1 != null) {
@@ -676,7 +685,6 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                }
 
                if (var1 != null) {
-      L1 var66;
                   break;
                }
             }
@@ -736,7 +744,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             var68 = this;
             Object[] var71 = Registry.emptyArgs();
             long var44 = 257476172962055898L;
-            Object[] var43 = var71;
+            var43 = var71;
             var70 = (Rectangle)Ref.h(257476172962055898L, var43, var44);
 
             try {
@@ -776,10 +784,14 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
    }
 
    public void l() {
+      long var27;
+      JXList var64;
+      Integer var66;
+      Object[] var73;
       String[] var1 = i$arrString();
-      Object[] var10001 = Registry.emptyArgs();
+      Boolean var10001 = (Boolean)(Registry.emptyArgs());
       long var5 = 257476172962055898L;
-      Object[] var4 = var10001;
+      Object var4 = var10001;
       var10001 = Ref.h(257476172962055898L, var4, var5);
 
       try {
@@ -805,9 +817,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
                   Object var8 = 618427502576624312L;
                   int var2 = ((Tq4)Ref.g(618427502576624312L, var8)).getRowCount() - 1;
-                  Object[] var10004 = Registry.emptyArgs();
+                  Dx4_2 var10004 = (Dx4_2)(Registry.emptyArgs());
                   long var11 = 424827586848941194L;
-                  Object[] var10 = var10004;
+                  Object var10 = var10004;
                   var10004 = Ref.h(424827586848941194L, var10, var11);
 
                   try {
@@ -821,7 +833,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                      if (var3 != null) {
                         ArrayList var10006 = Registry.emptyArgs();
                         long var13 = 596400151700218172L;
-                        Object[] var12 = var10006;
+                        Object var12 = var10006;
                         var10006 = Ref.h(596400151700218172L, var12, var13);
 
                         try {
@@ -839,7 +851,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                      Ref.g(618427502576624312L, var16);
                      Rectangle var10008;
                      Object var18 = 618427502576624312L;
-                     super(((Tq4)Ref.g(618427502576624312L, var18)).getCellRect(var2, 0, true));
+                     // [VF-super] super(((Tq4)Ref.g(618427502576624312L, var18)).getCellRect(var2, 0, true));
                      Object[] var76 = Registry.packArgs(var10008);
                      long var21 = 393507447655466815L;
                      Object[] var20 = var76;
@@ -868,9 +880,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
             if (var10001 > 0) {
                int var56 = 0;
-               Object[] var61 = Registry.emptyArgs();
+               Dx4_2 var61 = (Dx4_2)(Registry.emptyArgs());
                long var25 = 424827586848941194L;
-               Object[] var24 = var61;
+               Object var24 = var61;
                var61 = Ref.h(424827586848941194L, var24, var25);
 
                try {
@@ -883,8 +895,8 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                if (var1 == null) {
                   if (var58 != null) {
                      ArrayList var70 = Registry.emptyArgs();
-                     long var27 = 596400151700218172L;
-                     Object[] var26 = var70;
+                     var27 = 596400151700218172L;
+                     Object var26 = var70;
                      var70 = Ref.h(596400151700218172L, var26, var27);
 
                      try {
@@ -904,8 +916,8 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                Ref.g(618427502576624312L, var30);
                Rectangle var10005;
                Object var32 = 618427502576624312L;
-               super(((Tq4)Ref.g(618427502576624312L, var32)).getCellRect(var56, 0, true));
-               Object[] var73 = Registry.packArgs(var10005);
+               // [VF-super] super(((Tq4)Ref.g(618427502576624312L, var32)).getCellRect(var56, 0, true));
+               var73 = Registry.packArgs(var10005);
                long var35 = 393507447655466815L;
                Object[] var34 = var73;
                Ref.h(393507447655466815L, var34, var35);
@@ -925,9 +937,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       if (var1 == null) {
          Object var36 = 627738372728753803L;
          Ref.g(627738372728753803L, var36);
-         Object[] var10003 = Registry.emptyArgs();
+         Object var10003 = Registry.emptyArgs();
          long var39 = 253718301466496149L;
-         Object[] var38 = var10003;
+         Object var38 = var10003;
          var10003 = Ref.h(253718301466496149L, var38, var39);
 
          try {
@@ -943,7 +955,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       }
 
       Object var42 = 369475678680292668L;
-      JXList var64 = (JXList)Ref.g(369475678680292668L, var42);
+      var64 = (JXList)Ref.g(369475678680292668L, var42);
       if (var1 == null) {
          if (var64.getCellBounds((int)var57, (int)var57) == null) {
             return;
@@ -958,13 +970,17 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
    }
 
    public void f$void() {
+      long var43;
+      Integer var64;
+      Object[] var65;
+      Object var66;
       String[] var1 = i$arrString();
       Object var10000 = Registry.lookupField(546619646805113494L).getBoolean(this);
       if (var1 == null) {
          if (var10000 == null) {
-            Object[] var10001 = Registry.emptyArgs();
+            Boolean var10001 = (Boolean)(Registry.emptyArgs());
             long var5 = 257476172962055898L;
-            Object[] var4 = var10001;
+            Object var4 = var10001;
             var10001 = Ref.h(257476172962055898L, var4, var5);
 
             try {
@@ -990,7 +1006,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                      Ref.g(618427502576624312L, var12);
                      Rectangle var10006;
                      Object var14 = 618427502576624312L;
-                     super(((Tq4)Ref.g(618427502576624312L, var14)).getCellRect(var2, 0, true));
+                     // [VF-super] super(((Tq4)Ref.g(618427502576624312L, var14)).getCellRect(var2, 0, true));
                      Object[] var70 = Registry.packArgs(var10006);
                      long var17 = 393507447655466815L;
                      Object[] var16 = var70;
@@ -1017,7 +1033,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             ClearListDialog var62 = --var57;
             if (var1 == null) {
                if (var57 < 0) {
-                  Object[] var65 = Registry.emptyArgs();
+                  var65 = Registry.emptyArgs();
                   long var21 = 496821856781947383L;
                   Object[] var20 = var65;
                   Ref.h(496821856781947383L, var20, var21);
@@ -1071,9 +1087,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       if (var1 == null) {
          Object var34 = 627738372728753803L;
          Ref.g(627738372728753803L, var34);
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var37 = 253718301466496149L;
-         Object[] var36 = var10002;
+         Object var36 = var10002;
          var10002 = Ref.h(253718301466496149L, var36, var37);
 
          try {
@@ -1106,9 +1122,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                   var10003 = this;
                   Object var40 = 627738372728753803L;
                   Ref.g(627738372728753803L, var40);
-                  Object[] var66 = Registry.emptyArgs();
-                  long var43 = 253718301466496149L;
-                  Object[] var42 = var66;
+                  var66 = Registry.emptyArgs();
+                  var43 = 253718301466496149L;
+                  Object var42 = var66;
                   var66 = Ref.h(253718301466496149L, var42, var43);
 
                   try {
@@ -1137,13 +1153,14 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
    }
 
    public void Y() {
+      long var26;
       String[] var1 = i$arrString();
       ClearListDialog var10000 = Registry.lookupField(546619646805113494L).getBoolean(this);
       if (var1 == null) {
          if (var10000 == null) {
-            Object[] var10001 = Registry.emptyArgs();
+            Boolean var10001 = (Boolean)(Registry.emptyArgs());
             long var4 = 257476172962055898L;
-            Object[] var3 = var10001;
+            Object var3 = var10001;
             var10001 = Ref.h(257476172962055898L, var3, var4);
 
             try {
@@ -1167,7 +1184,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                   Ref.g(618427502576624312L, var11);
                   Rectangle var10006;
                   Object var13 = 618427502576624312L;
-                  super(((Tq4)Ref.g(618427502576624312L, var13)).getCellRect(var2, 0, true));
+                  // [VF-super] super(((Tq4)Ref.g(618427502576624312L, var13)).getCellRect(var2, 0, true));
                   Object[] var55 = Registry.packArgs(var10006);
                   long var16 = 393507447655466815L;
                   Object[] var15 = var55;
@@ -1197,9 +1214,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             Ref.g(618427502576624312L, var21);
             Rectangle var10005;
             Object var23 = 618427502576624312L;
-            super(((Tq4)Ref.g(618427502576624312L, var23)).getCellRect((int)var44, 0, true));
+            // [VF-super] super(((Tq4)Ref.g(618427502576624312L, var23)).getCellRect((int)var44, 0, true));
             Object[] var54 = Registry.packArgs(var10005);
-            long var26 = 393507447655466815L;
+            var26 = 393507447655466815L;
             Object[] var25 = var54;
             Ref.h(393507447655466815L, var25, var26);
 
@@ -1242,9 +1259,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                var50 = this;
                Object var29 = 627738372728753803L;
                Ref.g(627738372728753803L, var29);
-               Object[] var10003 = Registry.emptyArgs();
+               Object var10003 = Registry.emptyArgs();
                long var32 = 253718301466496149L;
-               Object[] var31 = var10003;
+               Object var31 = var10003;
                var10003 = Ref.h(253718301466496149L, var31, var32);
 
                try {
@@ -1277,9 +1294,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       String[] var1 = var10000;
       Object var3 = 334241381080505095L;
       Ref.g(334241381080505095L, var3);
-      Object[] var10002 = Registry.emptyArgs();
+      ClearListDialog var10002 = (ClearListDialog)(Registry.emptyArgs());
       long var6 = 518766954559532879L;
-      Object[] var5 = var10002;
+      Object var5 = var10002;
       var10002 = Ref.h(518766954559532879L, var5, var6);
 
       try {
@@ -1324,6 +1341,8 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
    }
 
    public void z() {
+      Object[] var73;
+      boolean var79;
       i$arrString();
       Object var4 = 334241381080505095L;
       Registry.lookupField(151984047746765220L).setInt(this, ((Dv2)Ref.g(334241381080505095L, var4)).getCaretPosition());
@@ -1346,9 +1365,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          }
       }
 
-      Object[] var66 = Registry.emptyArgs();
+      Rectangle var66 = (Rectangle)(Registry.emptyArgs());
       long var9 = 590715370702654304L;
-      Object[] var8 = var66;
+      Object var8 = var66;
       var66 = Ref.h(590715370702654304L, var8, var9);
 
       try {
@@ -1407,7 +1426,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          var69 = this;
          Object var18 = 334241381080505095L;
          Ref.g(334241381080505095L, var18);
-         Object[] var73 = Registry.packArgs(this);
+         var73 = Registry.packArgs(this);
          long var21 = 364865744023011111L;
          Object[] var20 = var73;
          Ref.h(364865744023011111L, var20, var21);
@@ -1541,12 +1560,13 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
    }
 
    public void t$void() {
+      int var27;
       i$arrString();
       Object var4 = 618427502576624312L;
       int var2 = ((Tq4)Ref.g(618427502576624312L, var4)).getRowCount() - 1;
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var7 = 257476172962055898L;
-      Object[] var6 = var10002;
+      Object var6 = var10002;
       var10002 = Ref.h(257476172962055898L, var6, var7);
 
       try {
@@ -1562,7 +1582,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                Ref.g(618427502576624312L, var8);
                Rectangle var10005;
                Object var10 = 618427502576624312L;
-               super(((Tq4)Ref.g(618427502576624312L, var10)).getCellRect(var2, 0, true));
+               // [VF-super] super(((Tq4)Ref.g(618427502576624312L, var10)).getCellRect(var2, 0, true));
                Object[] var28 = Registry.packArgs(var10005);
                long var13 = 393507447655466815L;
                Object[] var12 = var28;
@@ -1643,6 +1663,12 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
    }
 
    public void N() {
+      boolean var138;
+      Object[] var26;
+      long var27;
+      Object var52;
+      US3 var68;
+      long var79;
       String[] var1 = i$arrString();
       Registry.emptyArgs();
       long var6 = 454647487873911743L;
@@ -1674,7 +1700,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       Ref.s(598800499692003827L, var16, var17);
       Tq4 var10008;
       Object var18 = 598800499692003827L;
-      super((FT)Ref.g(598800499692003827L, var18), Registry.lookupField(261823546936210785L).getBoolean(this));
+      // [VF-super] super((FT)Ref.g(598800499692003827L, var18), Registry.lookupField(261823546936210785L).getBoolean(this));
       long var21 = 618427502576624312L;
       Tq4 var20 = var10008;
       Ref.s(618427502576624312L, var20, var21);
@@ -1683,8 +1709,8 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       Object var24 = 618427502576624312L;
       Ref.g(618427502576624312L, var24);
       Object[] var10011 = Registry.packArgs(this);
-      long var27 = 338047925324190448L;
-      Object[] var26 = var10011;
+      var27 = 338047925324190448L;
+      var26 = var10011;
       Ref.h(338047925324190448L, var26, var27);
 
       try {
@@ -1741,7 +1767,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       long var50 = 232192692863267216L;
       Object var10024 = Ref.h2(232192692863267216L, var50);
       long var53 = 600294071160604016L;
-      Object var52 = var10024;
+      var52 = var10024;
       Ref.s(600294071160604016L, var52, var53);
       Object var54 = 600294071160604016L;
       ((JScrollPane)Ref.g(600294071160604016L, var54)).setOpaque(false);
@@ -1761,7 +1787,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       ((JXList)Ref.g(369475678680292668L, var66)).addComponentListener(new UF(this));
       US3 var10032 = new US3();
       long var69 = 390003399451338430L;
-      US3 var68 = var10032;
+      var68 = var10032;
       Ref.s(390003399451338430L, var68, var69);
       Object var70 = 369475678680292668L;
       JXList var10033 = (JXList)Ref.g(369475678680292668L, var70);
@@ -1772,7 +1798,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       Object var76 = 369475678680292668L;
       ((JXList)Ref.g(369475678680292668L, var76)).setLayoutOrientation(1);
       Du2 var10037 = new Du2();
-      long var79 = 627738372728753803L;
+      var79 = 627738372728753803L;
       Du2 var78 = var10037;
       Ref.s(627738372728753803L, var78, var79);
       Object var80 = 369475678680292668L;
@@ -1981,7 +2007,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       while (true) {
          if (var6.find()) {
             String var7 = var6.group();
-            var10001 = var4.add(var7);
+            var10001 = (byte)((var4.add(var7)) ? 1 : 0);
             if (var3 != null) {
                break;
             }
@@ -2004,7 +2030,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          if (var10.hasNext()) {
             String var11 = (String)var10.next();
             boolean var12 = false;
-            var10001 = var8.contains(var11);
+            var10001 = (byte)((var8.contains(var11)) ? 1 : 0);
             if (var3 != null) {
                break;
             }
@@ -2060,7 +2086,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             }
          }
 
-         var10001 = var17;
+         var10001 = (byte)(var17);
          break;
       }
 
@@ -2072,6 +2098,18 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public synchronized void Z() {
+      boolean var143;
+      Integer var153;
+      Integer var161;
+      Object[] var27;
+      Object[] var43;
+      long var52;
+      Object[] var63;
+      long var64;
+      Object[] var65;
+      long var66;
+      long var68;
+      Object[] var73;
       Object var15 = 598800499692003827L;
       Ref.g(598800499692003827L, var15);
       Object[] var10002 = Registry.emptyArgs();
@@ -2085,9 +2123,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          throw var106.getTargetException();
       }
 
-      Object[] var10003 = Registry.emptyArgs();
+      Dx4_2 var10003 = (Dx4_2)(Registry.emptyArgs());
       long var20 = 169866344859432552L;
-      Object[] var19 = var10003;
+      Object var19 = var10003;
       var10003 = Ref.h(169866344859432552L, var19, var20);
 
       try {
@@ -2100,7 +2138,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       i$arrString();
       String var10005 = Registry.emptyArgs();
       long var22 = 596400151700218172L;
-      Object[] var21 = var10005;
+      Object var21 = var10005;
       var10005 = Ref.h(596400151700218172L, var21, var22);
 
       try {
@@ -2113,7 +2151,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       Dx4_2 var1 = var2;
       var10005 = Registry.emptyArgs();
       long var24 = 190716474264794564L;
-      Object[] var23 = var10005;
+      Object var23 = var10005;
       var10005 = Ref.h(190716474264794564L, var23, var24);
 
       try {
@@ -2163,9 +2201,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          if (var11.hasNext()) {
             L1 var12 = (L1)var11.next();
             var10006 = this;
-            Object[] var10008 = Registry.emptyArgs();
+            String var10008 = (String)(Registry.emptyArgs());
             long var28 = 542058094445767607L;
-            Object[] var27 = var10008;
+            var27 = var10008;
             var10008 = Ref.h(542058094445767607L, var27, var28);
 
             try {
@@ -2176,7 +2214,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
             var10008 = Registry.packArgs(var10008.toLowerCase(), var5);
             long var30 = 550295940758831919L;
-            Object[] var29 = var10008;
+            Object var29 = var10008;
             var10008 = Ref.h(550295940758831919L, var29, var30);
 
             try {
@@ -2230,9 +2268,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             if (var115.hasNext()) {
                L1 var14 = (L1)var115.next();
                var10007 = var14;
-               Object[] var137 = Registry.emptyArgs();
+               String var137 = (String)(Registry.emptyArgs());
                long var36 = 542058094445767607L;
-               Object[] var35 = var137;
+               Object var35 = var137;
                var137 = Ref.h(542058094445767607L, var35, var36);
 
                try {
@@ -2285,9 +2323,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
       Object var10 = var10007;
       if (var1 == null) {
-         Object[] var141 = Registry.emptyArgs();
+         Object var141 = Registry.emptyArgs();
          long var38 = 257476172962055898L;
-         Object[] var37 = var141;
+         Object var37 = var141;
          var141 = Ref.h(257476172962055898L, var37, var38);
 
          try {
@@ -2317,9 +2355,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
          }
       }
 
-      Object[] var144 = Registry.emptyArgs();
+      Dx4_2 var144 = (Dx4_2)(Registry.emptyArgs());
       long var40 = 424827586848941194L;
-      Object[] var39 = var144;
+      Object var39 = var144;
       var144 = Ref.h(424827586848941194L, var39, var40);
 
       try {
@@ -2330,9 +2368,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
       Dx4_2 var109 = var144;
       if (var1 != null || var109 != null) {
-         Object[] var147 = Registry.emptyArgs();
+         ArrayList var147 = (ArrayList)(Registry.emptyArgs());
          long var42 = 596400151700218172L;
-         Object[] var41 = var147;
+         Object var41 = var147;
          var147 = Ref.h(596400151700218172L, var41, var42);
 
          try {
@@ -2371,9 +2409,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
                   if (var150 == null) {
                      var150 = var117;
-                     Object[] var10010 = Registry.emptyArgs();
+                     Object var10010 = Registry.emptyArgs();
                      long var44 = 608348398594129275L;
-                     Object[] var43 = var10010;
+                     var43 = var10010;
                      var10010 = Ref.h(608348398594129275L, var43, var44);
 
                      try {
@@ -2457,7 +2495,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
                   var158 = this;
                   Object[] var10011 = Registry.packArgs(var117);
-                  long var52 = 118404628279258671L;
+                  var52 = 118404628279258671L;
                   Object[] var51 = var10011;
                   var10011 = Ref.h(118404628279258671L, var51, var52);
 
@@ -2552,9 +2590,9 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
                   if (var150 == null) {
                      var150 = var118;
-                     Object[] var159 = Registry.emptyArgs();
+                     Object var159 = Registry.emptyArgs();
                      long var62 = 608348398594129275L;
-                     Object[] var61 = var159;
+                     Object var61 = var159;
                      var159 = Ref.h(608348398594129275L, var61, var62);
 
                      try {
@@ -2589,8 +2627,8 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                      }
 
                      Object[] var162 = Registry.emptyArgs();
-                     long var64 = 608348398594129275L;
-                     Object[] var63 = var162;
+                     var64 = 608348398594129275L;
+                     var63 = var162;
                      var162 = Ref.h(608348398594129275L, var63, var64);
 
                      try {
@@ -2601,8 +2639,8 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
                   if (var150 > 0) {
                      Object[] var164 = Registry.packArgs(true);
-                     long var66 = 399154179604294703L;
-                     Object[] var65 = var164;
+                     var66 = 399154179604294703L;
+                     var65 = var164;
                      Ref.h(399154179604294703L, var65, var66);
 
                      try {
@@ -2618,7 +2656,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                }
 
                Object[] var165 = Registry.packArgs(false);
-               long var68 = 399154179604294703L;
+               var68 = 399154179604294703L;
                Object[] var67 = var165;
                Ref.h(399154179604294703L, var67, var68);
 
@@ -2662,7 +2700,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                Ref.g(627738372728753803L, var71);
                Object[] var173 = Registry.packArgs(var118);
                long var74 = 515455312059915564L;
-               Object[] var73 = var173;
+               var73 = var173;
                Ref.h(515455312059915564L, var73, var74);
 
                try {
@@ -2913,6 +2951,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
    }
 
    public void h() {
+      long var26;
       long var2 = 598800499692003827L;
       Object var1 = null;
       Ref.s(598800499692003827L, var1, var2);
@@ -2949,7 +2988,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       long var24 = 282658375549611139L;
       Object var23 = null;
       Ref.s(282658375549611139L, var23, var24);
-      long var26 = 290899220595287832L;
+      var26 = 290899220595287832L;
       Object var25 = null;
       Ref.s(290899220595287832L, var25, var26);
       long var28 = 201109810837008677L;
@@ -3828,6 +3867,10 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      long[] var27;
+      char[] var43;
+      byte var52;
+      long var65;
       String[] var21 = new String[23];
       int var19 = 0;
       String var18 = "[Ü\u0013¾Ü\u0092\u0006i\u00121`£´!\tKo\u0007\u0080¤É\u007f%@Þ°M\u0002邗飽\u0016³Çó@+\u0097\n·3©èìB¸Ô$L £\u0004\u0084Î+çTy2zÙ }v\u0093@«WPv9\u0018\u0083)pÕKÈ6\u0097\u001f\u00adÉ>âô.þ\u00904¦òWc\u001eò\u000bB\u000ekÝ\u0015\u009e\u001c\u0096\u001eéüè|ÈgB\bÞÅ£\u009dÊöÄå\u001d%\u008b!Éq¦A\u009aF>\u008c\u001ezßà\u0081¤¦\u0010\u008béÅI:\u0014\u0092\u001c\u009a\u009f\u000bs\u009f\u0016Ö|\u009f\u0012È}ÌL\u000e]Ûä5 YîVæ´PEK\u009e\u0002厠卭\u0004溘窕務衧\u000eôQæ\u000fb¤Ñ¯\u0005 CÑ\u0080a\t\u0093`\u0095K\u0098\u0082ìù\f\u0004\u0093QÄ\u008a\u0010T(µv×\u000el\u0014\u0005yÓëºÑó¦\u001b\fX\u0004³ÕéÕ{ÈS\u009d¥ãH \u0098Pd\u009a\t} \u008a§=j\u0018\n捀巩厫收吼锣邍戶寱毟\u0017r¿ËO,vê\u00803}\"v¯ÒZ ó\u0092ú\u001d´\u000bå\u000e8äHÒµ¥\\É°G\u009a;\u0012Q\u0002撄緑";
@@ -3848,7 +3891,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                char[] var49 = var10001.toCharArray();
                int var10004 = var49.length;
                int var22 = 0;
-               byte var52 = var10000;
+               var52 = var10000;
                var43 = var49;
                int var32 = var10004;
                byte var60;
@@ -3934,7 +3977,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                         byte var34 = var10;
                         var10 += 8;
                         byte[] var15 = var12.substring(var34, var10).getBytes("ISO-8859-1");
-                        long[] var27 = var14;
+                        var27 = var14;
                         int var35 = var11++;
                         long var47 = ((long)var15[0] & 255L) << 56
                            | ((long)var15[1] & 255L) << 48
@@ -3947,7 +3990,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                         byte var55 = -1;
 
                         while (true) {
-                           long var65 = var47 ^ var8;
+                           var65 = var47 ^ var8;
                            switch (var55) {
                               case 0:
                                  var27[var35] = var65;
@@ -4047,7 +4090,6 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       }
    }
 }
-
 
 
 

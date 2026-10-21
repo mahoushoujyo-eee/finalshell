@@ -182,7 +182,7 @@ public class C_p_2 {
       C_p_2 var2 = new C_p_2();
       int var10000 = (Dm4.F$boolean()) ? 1 : 0;
       var2.g = var0.d();
-      boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var1 = (var10000) != 0;
       var10000 = var2.g & 1;
       if (var1) {
          if (var10000 != 0) {
@@ -263,7 +263,7 @@ public class C_p_2 {
    public int u$int() {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var2 = 4;
-      boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var1 = (var10000) != 0;
       var10000 = this.g & 1;
       if (!var1) {
          if (var10000 != 0) {
@@ -335,7 +335,7 @@ public class C_p_2 {
    public void c(UJ var1) {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       var1.u(this.g);
-      boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
+      boolean var2 = (var10000) != 0;
       var10000 = this.g & 1;
       if (!var2) {
          if (var10000 != 0) {

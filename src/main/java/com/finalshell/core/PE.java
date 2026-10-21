@@ -17,6 +17,7 @@ public class PE {
    public static Integer[] e;
 
    public static Object[] S(String var0, Ch4 var1) {
+      U9 var33;
       int[] var10000 = C_i_2.q();
       Yn4 var3 = new Yn4(var0);
       int[] var2 = var10000;
@@ -102,8 +103,6 @@ public class PE {
                         char var32 = var4.w$char();
                         if (var2 != null) {
                            if (var32 == a(28361, 5315176120260664859L)) {
-      U9 var33;
-      U9 var33;
                               var4.C$char();
                            }
 
@@ -112,7 +111,7 @@ public class PE {
                               break label152;
                            }
 
-                           var32 = var4.t(C);
+                           var32 = (var4.t(C)) ? 1 : 0;
                         }
 
                         if (var32 == 0) {
@@ -1055,6 +1054,7 @@ public class PE {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[7];
       int var11 = 0;
       String var10 = "\u0015â\u0091\u008e#¤\u000b\u008e\u001a\u0094\u0017C\u0093Ì\u001f]¿>\nÉ\u009d|ç^\u0096tÝ$ï\bÆ|£¾.\u0006É^\t\u0094{é^|\u0001áÐÆ";
@@ -1237,7 +1237,6 @@ public class PE {
       }
    }
 }
-
 
 
 

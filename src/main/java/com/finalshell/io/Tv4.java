@@ -2022,6 +2022,7 @@ public class Tv4 extends InputStream {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[7];
       int var11 = 0;
       String var10 = "KõNÉÄØé¶\bÇèÜ\u0001áÙÇ¥\u000b\u0011R\f\u000fí\u000fÆÄg1£\u0017\u0096Pé_û\u001càÄöu\"\u0017v¼ïÂÉó\u0011ã \"\u0004\r{ìBú¶Í)M\u0083\u008b\u001a5\f";
@@ -2037,7 +2038,6 @@ public class Tv4 extends InputStream {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

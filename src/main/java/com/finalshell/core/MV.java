@@ -19,6 +19,7 @@ public class MV {
    public static long e;
 
    public MV() {
+      Object[] var12;
       HashMap var10001 = new HashMap();
       long var3 = 398995918008114658L;
       HashMap var2 = var10001;
@@ -45,13 +46,14 @@ public class MV {
       }
 
       Registry.lookupField(388376917454860932L).get(null);
-      Object[] var12 = Registry.packArgs(new com.finalshell.task.D7(this), (int)d);
+      var12 = Registry.packArgs(new com.finalshell.task.D7(this), (int)d);
       long var9 = 201859364639460244L;
       Object[] var8 = var12;
       Ref.h(201859364639460244L, var8, var9);
    }
 
    public void v(String var1, String var2, int var3) {
+      long var12;
       CT3 var4 = new CT3(var1, var2, System.currentTimeMillis(), var3);
       Object var5 = 398995918008114658L;
       ((HashMap)Ref.g(398995918008114658L, var5)).put(var1, var4);
@@ -70,7 +72,7 @@ public class MV {
       long var9 = 270389152141252877L;
       Ref.h2(270389152141252877L, var9);
       Object[] var10004 = Registry.emptyArgs();
-      long var12 = 612604310671515822L;
+      var12 = 612604310671515822L;
       Object[] var11 = var10004;
       Ref.h(612604310671515822L, var11, var12);
       Object[] var10005 = Registry.emptyArgs();
@@ -86,6 +88,7 @@ public class MV {
    }
 
    public void h(String var1, String var2, int var3) {
+      Object[] var12;
       Object var4 = 398995918008114658L;
       ((HashMap)Ref.g(398995918008114658L, var4)).remove(var1);
       Object[] var10002 = Registry.emptyArgs();
@@ -108,7 +111,7 @@ public class MV {
       Ref.h(612604310671515822L, var10, var11);
       Object[] var10005 = Registry.emptyArgs();
       long var13 = 200561288808923907L;
-      Object[] var12 = var10005;
+      var12 = var10005;
       Ref.h(200561288808923907L, var12, var13);
 
       try {
@@ -132,15 +135,16 @@ public class MV {
    }
 
    public long Y(String var1) {
+      Long var12;
       boolean var10000 = Ln4_2.i();
       long var3 = e;
       boolean var2 = var10000;
       Object var6 = 398995918008114658L;
       CT3 var5 = (CT3)((HashMap)Ref.g(398995918008114658L, var6)).get(var1);
       if (!var2 || var5 != null) {
-         Object[] var10002 = Registry.emptyArgs();
+         Object var10002 = Registry.emptyArgs();
          long var9 = 336340164074561368L;
-         Object[] var8 = var10002;
+         Object var8 = var10002;
          var10002 = Ref.h(336340164074561368L, var8, var9);
 
          try {
@@ -223,6 +227,8 @@ public class MV {
    }
 
    public void E(O0 var1, String var2, HashMap var3) {
+      Object[] var12;
+      boolean var24;
       boolean var10000 = Ln4_2.i();
       O0 var5 = var1.D(var2);
       Iterator var6 = var5.keySet().iterator();
@@ -250,7 +256,7 @@ public class MV {
             if (var4) {
                Object[] var10001 = Registry.emptyArgs();
                long var13 = 336340164074561368L;
-               Object[] var12 = var10001;
+               var12 = var10001;
                var10001 = Ref.h(336340164074561368L, var12, var13);
 
                try {
@@ -258,9 +264,9 @@ public class MV {
                   throw var19.getTargetException();
                }
 
-               Object[] var10003 = Registry.emptyArgs();
+               Object var10003 = Registry.emptyArgs();
                long var15 = 336340164074561368L;
-               Object[] var14 = var10003;
+               Object var14 = var10003;
                var10003 = Ref.h(336340164074561368L, var14, var15);
 
                try {
@@ -292,6 +298,8 @@ public class MV {
    }
 
    public void l(O0 var1, String var2, HashMap var3) {
+      Long var25;
+      Integer var27;
       boolean var10000 = Ln4_2.R();
       O0 var5 = new O0();
       var1.C(var2, var5);
@@ -305,7 +313,7 @@ public class MV {
          String var10001 = a(7017, 10498);
          String var10003 = (String)(Registry.emptyArgs());
          long var11 = 269977014460000786L;
-         Object[] var10 = var10003;
+         Object var10 = var10003;
          var10003 = Ref.h(269977014460000786L, var10, var11);
 
          try {
@@ -319,9 +327,9 @@ public class MV {
          Object var12 = 322141930679153907L;
          var10002.C(var8, (String)Ref.g(322141930679153907L, var12));
          String var23 = a(7019, 12746);
-         Object[] var10005 = Registry.emptyArgs();
+         Object var10005 = Registry.emptyArgs();
          long var15 = 336340164074561368L;
-         Object[] var14 = var10005;
+         Object var14 = var10005;
          var10005 = Ref.h(336340164074561368L, var14, var15);
 
          try {
@@ -332,9 +340,9 @@ public class MV {
 
          var23.C(var8, var25);
          String var10004 = a(7021, -28158);
-         Object[] var10006 = Registry.emptyArgs();
+         Object var10006 = Registry.emptyArgs();
          long var17 = 402484330416858586L;
-         Object[] var16 = var10006;
+         Object var16 = var10006;
          var10006 = Ref.h(402484330416858586L, var16, var17);
 
          try {
@@ -354,7 +362,7 @@ public class MV {
    public synchronized void I() {
       O0 var10001 = (O0)(Registry.emptyArgs());
       long var4 = 473402910517899072L;
-      Object[] var3 = var10001;
+      Object var3 = var10001;
       var10001 = Ref.h(473402910517899072L, var3, var4);
 
       try {
@@ -1190,6 +1198,7 @@ public class MV {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var26;
       String[] var9 = new String[11];
       int var7 = 0;
       String var6 = "Â~1Y8\u0007¼'\u009b\u009eh\u000b\"K-ÿ»ÓÌ½\u0095Í©\u00028*\u0004n¦îÆ\u0004\u0010\neH\u0002Z¸\u0004µ,Ñ\u008c\u0004\u0007¿\u0091á\u0004ñÎ\u001dË";
@@ -1205,7 +1214,6 @@ public class MV {
          byte var10002 = -1;
 
          while (true) {
-      char[] var26;
             label47: {
                char[] var32 = var10001.toCharArray();
                int var10004 = var32.length;

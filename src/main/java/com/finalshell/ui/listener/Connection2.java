@@ -11,11 +11,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JButton;
 
 public class Connection2 implements ActionListener {
-   public final com.finalshell.ui.frame.U v;
+   public final com.finalshell.ui.frame.MainFrame v;
    public static String[] a;
    public static String[] b;
 
-   public Connection2(com.finalshell.ui.frame.U var1) {
+   public Connection2(com.finalshell.ui.frame.MainFrame var1) {
       this.v = var1;
    }
 
@@ -918,6 +918,7 @@ public class Connection2 implements ActionListener {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "敪弜\u0002轶掻";
@@ -932,7 +933,6 @@ public class Connection2 implements ActionListener {
          byte var10002 = -1;
 
          while (true) {
-      Object var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

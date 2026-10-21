@@ -36,6 +36,8 @@ public class Vc2 extends JFrame {
    public static Integer[] d;
 
    public Vc2() {
+      super();
+      long var19;
       Registry.lookupField(551927859663233540L).setBoolean(this, true);
       String var10001 = a(27547, 25492);
       long var3 = 122851861963895150L;
@@ -71,18 +73,18 @@ public class Vc2 extends JFrame {
       Object var16 = 630523330860819866L;
       ((JTextField)Ref.g(630523330860819866L, var16)).getDocument().addDocumentListener(new Gv_2(this));
       FT var10009 = new FT();
-      long var19 = 533021200004208971L;
+      var19 = 533021200004208971L;
       FT var18 = var10009;
       Ref.s(533021200004208971L, var18, var19);
       Tq4 var10011;
       Object var20 = 533021200004208971L;
-      super((FT)Ref.g(533021200004208971L, var20));
+      // [VF-super] super((FT)Ref.g(533021200004208971L, var20));
       long var23 = 509555507897691401L;
       Tq4 var22 = var10011;
       Ref.s(509555507897691401L, var22, var23);
       JScrollPane var10013;
       Object var24 = 509555507897691401L;
-      super((Tq4)Ref.g(509555507897691401L, var24));
+      // [VF] super((Tq4)Ref.g(509555507897691401L, var24));   // 非法：super(...) 出现在非构造器方法里（反编译器把父类构造器调用复制错了位置），Java 无法表达
       long var27 = 286579467808392218L;
       JScrollPane var26 = var10013;
       Ref.s(286579467808392218L, var26, var27);
@@ -225,6 +227,9 @@ public class Vc2 extends JFrame {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void j() {
+      long var30;
+      Integer var83;
+      Integer var86;
       AppendCarriageReturnCRPanel.Y();
       Object var15 = 533021200004208971L;
       Ref.g(533021200004208971L, var15);
@@ -243,7 +248,7 @@ public class Vc2 extends JFrame {
       Ref.g(345343603487298676L, var19);
       ArrayList var10005 = (ArrayList)(Registry.emptyArgs());
       long var22 = 596400151700218172L;
-      Object[] var21 = var10005;
+      Object var21 = var10005;
       var10005 = Ref.h(596400151700218172L, var21, var22);
 
       try {
@@ -296,12 +301,12 @@ public class Vc2 extends JFrame {
                break;
             }
 
-            Object[] var10009 = Registry.emptyArgs();
+            Object var10009 = Registry.emptyArgs();
             long var28 = 542058094445767607L;
-            Object[] var27 = var10009;
+            Object var27 = var10009;
             var10009 = Registry.packArgs(Ref.h(542058094445767607L, var27, var28), var4);
-            long var30 = 252701697396259824L;
-            Object[] var29 = var10009;
+            var30 = 252701697396259824L;
+            Object var29 = var10009;
             var10009 = Ref.h(252701697396259824L, var29, var30);
 
             try {
@@ -312,7 +317,7 @@ public class Vc2 extends JFrame {
 
             var10009 = Registry.packArgs(var86);
             long var32 = 610207701387135922L;
-            Object[] var31 = var10009;
+            Object var31 = var10009;
             Ref.h(610207701387135922L, var31, var32);
 
             try {
@@ -347,7 +352,7 @@ public class Vc2 extends JFrame {
       for (L1 var13 : var2) {
          String var10008 = (String)(Registry.emptyArgs());
          long var36 = 542058094445767607L;
-         Object[] var35 = var10008;
+         Object var35 = var10008;
          var10008 = Ref.h(542058094445767607L, var35, var36);
 
          try {
@@ -388,7 +393,7 @@ public class Vc2 extends JFrame {
                var10007 = var66;
                String var77 = Registry.emptyArgs();
                long var38 = 542058094445767607L;
-               Object[] var37 = var77;
+               Object var37 = var77;
                var77 = Ref.h(542058094445767607L, var37, var38);
 
                try {
@@ -440,7 +445,7 @@ public class Vc2 extends JFrame {
       }
 
       Object var56 = var10007;
-      byte var72 = (Registry.lookupField(551927859663233540L).getBoolean(this)) ? 1 : 0;
+      byte var72 = (byte)((Registry.lookupField(551927859663233540L).getBoolean(this)) ? 1 : 0);
       if (var1 == null) {
          label163:
          if (var72 != 0) {
@@ -480,9 +485,9 @@ public class Vc2 extends JFrame {
             if (var1 == null) {
                if (var56 == null) {
                   var10007 = var62;
-                  Object[] var81 = Registry.emptyArgs();
+                  Object var81 = Registry.emptyArgs();
                   long var40 = 608348398594129275L;
-                  Object[] var39 = var81;
+                  Object var39 = var81;
                   var81 = Ref.h(608348398594129275L, var39, var40);
 
                   try {
@@ -616,7 +621,6 @@ public class Vc2 extends JFrame {
             }
 
             if (var3 == null) {
-      Object[] var20;
       Object[] var20;
                continue;
             }
@@ -1456,6 +1460,7 @@ public class Vc2 extends JFrame {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var30;
       String[] var13 = new String[5];
       int var11 = 0;
       String var10 = "º\u0019*\u0080®ëxåÂxÍh\u0082ê\u0012Ñl\u0085\u0019Ô\u001e\u0000ê\u008c\u009fà\t\nä;©ô\u0085G\u000e,9ÈZº ¬¹\rúeÊËb\u009e\u000e_ïTiî\u001fF.oP\u0080'øpDjPÜ\u009ey\u0086K\u001b\u0001½ \u009er\u001f\u0004攻重£<";
@@ -1602,7 +1607,6 @@ public class Vc2 extends JFrame {
       }
    }
 }
-
 
 
 

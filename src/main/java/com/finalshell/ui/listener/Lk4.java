@@ -18,6 +18,7 @@ public class Lk4 implements MouseListener {
 
    @Override
    public void mouseReleased(MouseEvent var1) {
+      boolean var57;
       ClearListDialog.i$arrString();
       Object var6 = 489298198098055579L;
       Ref.g(489298198098055579L, var6);
@@ -68,7 +69,7 @@ public class Lk4 implements MouseListener {
       }
 
       label70: {
-         Registry.lookupField(461146548297071424L).setBoolean(var10009, (boolean)var10010);
+         Registry.lookupField(461146548297071424L).setBoolean(var10009, var10010 != 0);
          if (this == null) {
             Registry.emptyArgs();
             long var30 = 270389152141252877L;
@@ -77,9 +78,9 @@ public class Lk4 implements MouseListener {
             long var33 = 163462326892114024L;
             Object[] var32 = var10011;
             Ref.h(163462326892114024L, var32, var33);
-            Object[] var10012 = Registry.emptyArgs();
+            Object var10012 = Registry.emptyArgs();
             long var35 = 633712494917113170L;
-            Object[] var34 = var10012;
+            Object var34 = var10012;
             var10012 = Ref.h(633712494917113170L, var34, var35);
 
             try {

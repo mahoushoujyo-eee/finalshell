@@ -20,6 +20,8 @@ public class ConfirmDeleteListener4 implements ActionListener {
 
    @Override
    public void actionPerformed(ActionEvent var1) {
+      boolean var46;
+      Integer var49;
       TunnelList.V();
       Object var6 = 267929432478445248L;
       Object var10002 = Ref.g(267929432478445248L, var6);
@@ -64,9 +66,9 @@ public class ConfirmDeleteListener4 implements ActionListener {
          Ref.g(267929432478445248L, var20);
          Object var22 = 384272417246389638L;
          Object var10009 = Ref.g(384272417246389638L, var22);
-         Object[] var10010 = Registry.emptyArgs();
+         Object var10010 = Registry.emptyArgs();
          long var25 = 165121676688475085L;
-         Object[] var24 = var10010;
+         Object var24 = var10010;
          var10010 = Ref.h(165121676688475085L, var24, var25);
 
          try {
@@ -94,9 +96,9 @@ public class ConfirmDeleteListener4 implements ActionListener {
 
          Object var32 = 267929432478445248L;
          Ref.g(267929432478445248L, var32);
-         Object[] var47 = Registry.emptyArgs();
+         Object var47 = Registry.emptyArgs();
          long var35 = 347860782649835626L;
-         Object[] var34 = var47;
+         Object var34 = var47;
          var47 = Ref.h(347860782649835626L, var34, var35);
 
          try {
@@ -107,7 +109,7 @@ public class ConfirmDeleteListener4 implements ActionListener {
 
          var47 = Registry.packArgs(var49);
          long var37 = 617699143254210357L;
-         Object[] var36 = var47;
+         Object var36 = var47;
          Ref.h(617699143254210357L, var36, var37);
 
          try {

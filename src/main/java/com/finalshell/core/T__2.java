@@ -10,12 +10,13 @@ public class T__2 implements Zv2_2 {
 
    @Override
    public boolean l(Object var1) {
+      boolean var18;
       Km2.U$String();
       com.finalshell.ui.model.Ck4 var3 = (com.finalshell.ui.model.Ck4)var1;
       File var10001;
       String var10004 = (String)(Registry.emptyArgs());
       long var8 = 605430732347023634L;
-      Object[] var7 = var10004;
+      Object var7 = var10004;
       var10004 = Ref.h(605430732347023634L, var7, var8);
 
       try {
@@ -31,7 +32,7 @@ var3 = new String(var10004);
       boolean var16 = var4.exists();
       if (var2 == null) {
          if (var16) {
-            Object[] var22 = Registry.packArgs(var4.getName());
+            Object var22 = Registry.packArgs(var4.getName());
             long var9 = 353935338506646766L;
             Object var10002 = Ref.h2(353935338506646766L, var9);
 

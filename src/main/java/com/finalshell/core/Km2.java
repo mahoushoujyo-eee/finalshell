@@ -7,8 +7,8 @@ import com.finalshell.ui.listener.CF3;
 import com.finalshell.ui.listener.Dw2;
 import com.finalshell.ui.listener.VQ;
 import com.finalshell.ui.model.Kl4;
-import com.finalshell.ui.panel.Address;
-import com.finalshell.ui.panel.Connection4;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
+import com.finalshell.ui.panel.ConnectionInfoPanel;
 import com.finalshell.ui.panel.Ky4;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -24,14 +24,14 @@ public class Km2 extends KK {
    public Yd2 t;
    public Km2 q;
    public Kl4 v;
-   public Connection4 K;
+   public ConnectionInfoPanel K;
    public Point G;
    public Point n;
    public int m;
    public boolean b;
    public int N;
    public long S;
-   public Address V;
+   public FileBrowserAddressBar V;
    public boolean E;
    public boolean p;
    public Dk2 U;
@@ -43,8 +43,9 @@ public class Km2 extends KK {
    public static long[] d;
    public static Integer[] e;
 
-   public Km2(Address var1, Connection4 var2, boolean var3) {
+   public Km2(FileBrowserAddressBar var1, ConnectionInfoPanel var2, boolean var3) {
    super();
+   long var12;
       String var10000 = U$String();
       String var4 = var10000;
       Registry.lookupField(304927446900442607L).setInt(this, a(11400, 3823113420712635353L));
@@ -67,7 +68,7 @@ public class Km2 extends KK {
       this.setDragEnabled(true);
       this.setDropMode(DropMode.ON);
       Yd2 var10004 = new Yd2();
-      long var12 = 283836772880554241L;
+      var12 = 283836772880554241L;
       Yd2 var11 = var10004;
       Ref.s(283836772880554241L, var11, var12);
       Object var13 = 283836772880554241L;
@@ -130,6 +131,7 @@ public class Km2 extends KK {
    }
 
    public void v() {
+      long var12;
       Object var1 = 296466958961424512L;
       Ref.g(296466958961424512L, var1);
       Object[] var10002 = Registry.emptyArgs();
@@ -167,7 +169,7 @@ public class Km2 extends KK {
       }
 
       Object[] var10006 = Registry.emptyArgs();
-      long var12 = 161246994049355152L;
+      var12 = 161246994049355152L;
       Object[] var11 = var10006;
       Ref.h(161246994049355152L, var11, var12);
 
@@ -179,6 +181,7 @@ public class Km2 extends KK {
    }
 
    public void W() {
+      boolean var5;
       this.setAutoCreateRowSorter(true);
       JTableHeader var1 = this.getTableHeader();
       Registry.emptyArgs();
@@ -197,10 +200,11 @@ public class Km2 extends KK {
    }
 
    public Object L(int var1) {
+      long var5;
       Object var2 = 612091313834066062L;
       Ref.g(612091313834066062L, var2);
       Object[] var10002 = Registry.packArgs(this.convertRowIndexToModel(var1));
-      long var5 = 291710787850444005L;
+      var5 = 291710787850444005L;
       Object[] var4 = var10002;
       var10002 = Ref.h(291710787850444005L, var4, var5);
 
@@ -212,12 +216,13 @@ public class Km2 extends KK {
    }
 
    public void Z(String var1) {
+      Integer var12;
       U$String();
       Object var4 = 612091313834066062L;
       Object var10002 = Ref.g(612091313834066062L, var4);
-      Object[] var10003 = Registry.packArgs(var1);
+      Object var10003 = Registry.packArgs(var1);
       long var7 = 444720235200412258L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       var10003 = Ref.h(444720235200412258L, var6, var7);
 
       try {
@@ -259,9 +264,9 @@ public class Km2 extends KK {
       U$String();
       Object var4 = 612091313834066062L;
       Object var10002 = Ref.g(612091313834066062L, var4);
-      Object[] var10003 = Registry.packArgs(var1);
+      Object var10003 = Registry.packArgs(var1);
       long var7 = 444720235200412258L;
-      Object[] var6 = var10003;
+      Object var6 = var10003;
       var10003 = Ref.h(444720235200412258L, var6, var7);
 
       try {
@@ -288,8 +293,9 @@ public class Km2 extends KK {
    }
 
    public void L() {
+      long var5;
       U$String();
-      long var5 = 493953348619799745L;
+      var5 = 493953348619799745L;
       Object var7 = 140993979563084749L;
       int var2 = this - ((Point)Ref.g(140993979563084749L, var7)).y;
       Object var9 = 493953348619799745L;
@@ -421,7 +427,7 @@ public class Km2 extends KK {
 
          TableRowSorter var10007 = (TableRowSorter)(Registry.emptyArgs());
          long var18 = 594256069457305342L;
-         Object[] var17 = var10007;
+         Object var17 = var10007;
          var10007 = Ref.h(594256069457305342L, var17, var18);
 
          try {
@@ -475,22 +481,22 @@ public class Km2 extends KK {
       return var3;
    }
 
-   public Address b() {
+   public FileBrowserAddressBar b() {
       Object var1 = 341385810642373253L;
-      return (Address)Ref.g(341385810642373253L, var1);
+      return (FileBrowserAddressBar)Ref.g(341385810642373253L, var1);
    }
 
-   public void z(Address var1) {
+   public void z(FileBrowserAddressBar var1) {
       long var3 = 341385810642373253L;
       Ref.s(341385810642373253L, var1, var3);
    }
 
-   public Connection4 t() {
+   public ConnectionInfoPanel t() {
       Object var1 = 452258994450109180L;
-      return (Connection4)Ref.g(452258994450109180L, var1);
+      return (ConnectionInfoPanel)Ref.g(452258994450109180L, var1);
    }
 
-   public void S(Connection4 var1) {
+   public void S(ConnectionInfoPanel var1) {
       long var3 = 452258994450109180L;
       Ref.s(452258994450109180L, var1, var3);
    }
@@ -537,6 +543,7 @@ public class Km2 extends KK {
    }
 
    public void R() {
+      long var12;
       long var2 = 283836772880554241L;
       Object var1 = null;
       Ref.s(283836772880554241L, var1, var2);
@@ -552,7 +559,7 @@ public class Km2 extends KK {
       long var10 = 140993979563084749L;
       Object var9 = null;
       Ref.s(140993979563084749L, var9, var10);
-      long var12 = 493953348619799745L;
+      var12 = 493953348619799745L;
       Object var11 = null;
       Ref.s(493953348619799745L, var11, var12);
       long var14 = 341385810642373253L;
@@ -1404,6 +1411,7 @@ public class Km2 extends KK {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var5;
       String[] var13 = new String[3];
       int var11 = 0;
       G(null);
@@ -1494,8 +1502,8 @@ public class Km2 extends KK {
             long[] var6 = new long[12];
             int var3 = 0;
             String var4 = "\u0011\u001cÝó\n>Ëà\u0003Tø\u0099ý·³\u0088Æù\u0010yJ\u0085j2(BÒú\u0010}\u009d\u0088À\u0012C\u009eàâð<K)m¥\u0091ø¯·±Fåçùþ¥h[\u0089epñ\u007fRAÞê)\u0001ö)±\u008a <\u0084g\u0001«c'";
-            int var5 = "\u0011\u001cÝó\n>Ëà\u0003Tø\u0099ý·³\u0088Æù\u0010yJ\u0085j2(BÒú\u0010}\u009d\u0088À\u0012C\u009eàâð<K)m¥\u0091ø¯·±Fåçùþ¥h[\u0089epñ\u007fRAÞê)\u0001ö)±\u008a <\u0084g\u0001«c'"
-               .length();
+            var5 = "\u0011\u001cÝó\n>Ëà\u0003Tø\u0099ý·³\u0088Æù\u0010yJ\u0085j2(BÒú\u0010}\u009d\u0088À\u0012C\u009eàâð<K)m¥\u0091ø¯·±Fåçùþ¥h[\u0089epñ\u007fRAÞê)\u0001ö)±\u008a <\u0084g\u0001«c'";
+               // [VF] .length();
             byte var2 = 0;
 
             label40:
@@ -1533,7 +1541,7 @@ public class Km2 extends KK {
                         }
 
                         var4 = "\u0091\u00194Ãy½®£dÜm¸\f'*\u0093";
-                        var5 = "\u0091\u00194Ãy½®£dÜm¸\f'*\u0093".length();
+                        var5 = ("\u0091\u00194Ãy½®£dÜm¸\f'*\u0093".length()) != 0;
                         var2 = 0;
                   }
 

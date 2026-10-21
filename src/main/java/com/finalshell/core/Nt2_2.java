@@ -976,6 +976,8 @@ public abstract class Nt2_2 extends N_ {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var11;
+      char[] var22;
       String[] var5 = new String[4];
       int var3 = 0;
       String var2 = "ÌÃ0Ón¦í\u000bëÅá÷\u0000JKbæ`ëÆëÙ<ÔÆÓÿXÏ5\u0006`\u0080\u001fQ|\u0001C\bvæ>Þ@¸\u0014Á";
@@ -991,7 +993,6 @@ public abstract class Nt2_2 extends N_ {
          byte var10002 = -1;
 
          while (true) {
-      char[] var22;
             label62: {
                char[] var26 = var10001.toCharArray();
                int var10004 = var26.length;

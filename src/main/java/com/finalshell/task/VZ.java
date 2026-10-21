@@ -2,16 +2,16 @@ package com.finalshell.task;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.Address;
+import com.finalshell.ui.panel.FileBrowserAddressBar;
 import java.lang.reflect.InvocationTargetException;
 
 public class VZ implements Runnable {
    public final String Q;
    public final boolean H;
    public final boolean n;
-   public final Address u;
+   public final FileBrowserAddressBar u;
 
-   public VZ(Address var1, String var2, boolean var3, boolean var4) {
+   public VZ(FileBrowserAddressBar var1, String var2, boolean var3, boolean var4) {
       this.u = var1;
       this.Q = var2;
       this.H = var3;

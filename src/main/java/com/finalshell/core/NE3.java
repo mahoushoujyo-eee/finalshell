@@ -60,6 +60,7 @@ public class NE3 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static void n(Object var0, String var1, Object[] var2) {
+      String var11;
       Ky4[] var10000 = x();
       Object var4 = c;
       synchronized (c){} // $VF: monitorenter 
@@ -81,8 +82,6 @@ public class NE3 {
                      }
 
                      if (var10.length != 0) {
-      char var11;
-      char var11;
                         var11 = String.format(var1, var2);
                         break label52;
                      }
@@ -111,6 +110,7 @@ public class NE3 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static void O(Object var0, String var1, Object[] var2) {
+      String var11;
       Ky4[] var10000 = x();
       Object var4 = c;
       synchronized (c){} // $VF: monitorenter 
@@ -341,6 +341,7 @@ public class NE3 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public static void h(Object var0, boolean var1) {
+      java.lang.Class var9;
       Ky4[] var10000 = x();
       Object var3 = c;
       synchronized (c){} // $VF: monitorenter 
@@ -1219,6 +1220,7 @@ public class NE3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[4];
       int var3 = 0;
       b(null);
@@ -1342,7 +1344,6 @@ public class NE3 {
       }
    }
 }
-
 
 
 

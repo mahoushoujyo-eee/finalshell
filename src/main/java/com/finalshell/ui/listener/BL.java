@@ -18,6 +18,7 @@ public class BL extends MouseAdapter {
 
    @Override
    public void mousePressed(MouseEvent var1) {
+      BL var3;
       int var2 = EY.G();
       boolean var10000 = this.l.l$boolean();
       if (var2 != 0) {

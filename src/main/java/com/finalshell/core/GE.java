@@ -74,6 +74,8 @@ public class GE {
    }
 
    public short k(char var1) {
+      int var13;
+      int var14;
       H[0] = var1;
       GlyphVector var3 = this.g.createGlyphVector(this.l, H);
       String var10000 = FV_2.D();
@@ -144,7 +146,6 @@ public class GE {
                   label53: {
                      if (var2 == null) {
                         if (var10 >= a(21427, 2140305497940499472L)) {
-      int var13;
                            var13 = var5;
                            var17 = a(16803, 4006517586498784777L);
                            if (var2 != null) {
@@ -152,7 +153,6 @@ public class GE {
                            }
 
                            if (var5 <= var17) {
-      int var13;
                               break label53;
                            }
                         }
@@ -265,6 +265,7 @@ public class GE {
    }
 
    public static void __vfClinit__() {
+      long var13;
       long var0 = 1713784925716413036L;
       long[] var6 = new long[11];
       int var3 = 0;
@@ -291,7 +292,7 @@ public class GE {
          byte var10003 = -1;
 
          while (true) {
-            long var13 = var10002 ^ var0;
+            var13 = var10002 ^ var0;
             switch (var10003) {
                case 0:
                   var10000[var10001] = var13;
@@ -332,7 +333,6 @@ public class GE {
       }
    }
 }
-
 
 
 

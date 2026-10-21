@@ -37,6 +37,7 @@ public class XM3 {
 
    @Override
    public String toString() {
+      XM3 var3;
       boolean var1 = Yn4.o();
       String var10000 = this.H;
       if (!var1) {

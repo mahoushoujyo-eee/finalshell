@@ -2,15 +2,15 @@ package com.finalshell.ui.adapter;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.frame.U;
+import com.finalshell.ui.frame.MainFrame;
 import java.awt.event.ActionEvent;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.AbstractAction;
 
 public class Od2 extends AbstractAction {
-   public final U W;
+   public final MainFrame W;
 
-   public Od2(U var1, String var2) {
+   public Od2(MainFrame var1, String var2) {
       super(var2);
       this.W = var1;
    }

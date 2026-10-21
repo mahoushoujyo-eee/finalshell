@@ -193,6 +193,7 @@ public class QY extends QB {
    }
 
    public static boolean P() {
+      boolean var5;
       int[] var10000 = E2.P();
       Window[] var1 = Window.getWindows();
       int var2 = var1.length;
@@ -244,6 +245,7 @@ public class QY extends QB {
    }
 
    public static void F() {
+      QY var5;
       Window[] var1 = Window.getWindows();
       int[] var10000 = E2.P();
       int var2 = var1.length;
@@ -277,7 +279,7 @@ public class QY extends QB {
                   var7 = ((E)var4).getContentPane();
                }
 
-               QY var5 = (QY)var7;
+               var5 = (QY)var7;
                var5.w();
             }
 

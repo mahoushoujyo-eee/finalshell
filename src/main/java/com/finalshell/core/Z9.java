@@ -164,6 +164,8 @@ public class Z9 extends ZH {
    }
 
    public static void h(Kernel var0, int[] var1, int[] var2, int var3, int var4, boolean var5, int var6) {
+      int var28;
+      int var36;
       int var8 = 0;
       String[] var10000 = ZH.U();
       float[] var9 = var0.getKernelData(null);
@@ -297,7 +299,6 @@ public class Z9 extends ZH {
                                        var10001 = var26;
                                        if (var7 == null) {
                                           if (0 <= var26) {
-      int var36;
                                              var36 = var26;
                                              if (var7 != null) {
                                                 break label127;
@@ -367,7 +368,7 @@ public class Z9 extends ZH {
                   var37 = var5 != 0 ? N6.W((int)((double)var19 + 0.5)) : a(19522, 7411467199444334181L);
                }
 
-               int var28 = var37;
+               var28 = var37;
                int var29 = N6.W((int)((double)var16 + 0.5));
                int var30 = N6.W((int)((double)var17 + 0.5));
                int var31 = N6.W((int)((double)var18 + 0.5));
@@ -390,6 +391,8 @@ public class Z9 extends ZH {
    }
 
    public static void X(Kernel var0, int[] var1, int[] var2, int var3, int var4, boolean var5, int var6) {
+      boolean var28;
+      int var29;
       int var8 = 0;
       String[] var10000 = ZH.U();
       float[] var9 = var0.getKernelData(null);
@@ -424,13 +427,12 @@ public class Z9 extends ZH {
                      float var20 = var9[var11 + var19];
                      if (var7 == null) {
                         float var32;
-                        var28 = (var32 = var20 - 0.0F) == 0.0F ? 0 : (var32 < 0.0F ? -1 : 1);
+                        var28 = ((var32 = var20 - 0.0F) == 0.0F ? 0 : (var32 < 0.0F ? -1 : 1)) != 0;
                         if (var7 != null) {
                            break;
                         }
 
-                        if (var28 != 0) {
-      int var29;
+                        if (var28) {
                            label95: {
                               int var21;
                               label118: {
@@ -513,8 +515,6 @@ public class Z9 extends ZH {
                      }
 
                      if (var7 == null) {
-      int var28;
-      int var28;
                         continue;
                      }
                   }
@@ -524,10 +524,10 @@ public class Z9 extends ZH {
                }
 
                if (var7 == null) {
-                  var28 = var28 != 0 ? N6.W((int)((double)var18 + 0.5)) : a(19522, 7411467199444334181L);
+                  var28 = (var28 != 0 ? N6.W((int)((double)var18 + 0.5)) : a(19522, 7411467199444334181L)) != 0;
                }
 
-               var19 = var28;
+               var19 = (var28) ? 1 : 0;
                int var24 = N6.W((int)((double)var15 + 0.5));
                int var25 = N6.W((int)((double)var16 + 0.5));
                int var26 = N6.W((int)((double)var17 + 0.5));
@@ -553,6 +553,7 @@ public class Z9 extends ZH {
    }
 
    public static void N(Kernel var0, int[] var1, int[] var2, int var3, int var4, boolean var5, int var6) {
+      int var29;
       String[] var10000 = ZH.U();
       int var8 = 0;
       String[] var7 = var10000;
@@ -583,6 +584,7 @@ public class Z9 extends ZH {
 
                while (true) {
                   if (var18 <= var11) {
+      float var28;
                      int var19 = var12 + var18;
                      var28 = var19;
                      if (var7 != null) {
@@ -593,7 +595,7 @@ public class Z9 extends ZH {
                      label123: {
                         if (var7 == null) {
                            if (var19 < 0) {
-                              int var29 = var6;
+                              var29 = var6;
                               int var10001 = i;
                               if (var7 == null) {
                                  if (var6 == i) {

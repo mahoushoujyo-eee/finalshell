@@ -10,6 +10,8 @@ import javax.swing.JTree;
 public class Oi2 extends Od2 {
    @Override
    public G x(JTree var1, Object var2, boolean var3, boolean var4, boolean var5, int var6, boolean var7) {
+      ImageIcon var15;
+      boolean var18;
       super.x(var1, var2, var3, var4, var5, var6, var7);
       String[] var10000 = CB3.C$arrString();
       CY3 var9 = (CY3)var2;

@@ -73,7 +73,8 @@ public class XQ_2 {
    }
 
    public XQ_2(boolean var1, boolean var2) {
-      String[] var10000 = B();
+      String[] var10000;
+      var10000 = B();
       this.A = a(7881, 20547);
       String[] var3 = var10000;
       this.k = a(28505, 1083944260511327002L);
@@ -463,6 +464,7 @@ public class XQ_2 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public void i(Packet var1) {
+      boolean var10000;
       String[] var2 = B();
 
       try {
@@ -576,7 +578,9 @@ public class XQ_2 {
    }
 
    public void C(IcmpV4CommonPacket var1, IpV4Packet.IpV4Header var2) {
-      String[] var10000 = B();
+      String[] var10000;
+      B0 var12;
+      var10000 = B();
       IcmpV4CommonPacket.IcmpV4CommonHeader var4 = var1.getHeader$IcmpV4CommonPacket_IcmpV4CommonHeader();
       String[] var3 = var10000;
       IcmpV4Type var30 = var4.getType();
@@ -605,7 +609,7 @@ public class XQ_2 {
             Q0 var11 = var8.E();
             if (var3 != null) {
                if (var11 != null) {
-                  B0 var12 = new B0(B0.t);
+                  var12 = new B0(B0.t);
                   var12.q(var8);
                   var11.a(var12);
                }
@@ -865,7 +869,8 @@ public class XQ_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static String F(byte[] var0) {
-      String[] var10000 = B();
+      String[] var10000;
+      var10000 = B();
       StringBuffer var2 = new StringBuffer();
       int var3 = 0;
       String[] var1 = var10000;
@@ -905,15 +910,15 @@ public class XQ_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public void d() {
-      String[] var10000 = B();
+      String[] var10000;
+      InetAddress var12;
+      var10000 = B();
       InetAddress var2 = null;
       String[] var1 = var10000;
 
       try {
          var2 = InetAddress.getByName(this.A);
       } catch (UnknownHostException var9) {
-      long var12;
-      long var12;
       }
 
       label53: {
@@ -1294,8 +1299,10 @@ public class XQ_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      String[] var10000;
+      char[] var47;
       String[] var21 = new String[7];
-      String[] var10000 = new String[1];
+      var10000 = new String[1];
       int var19 = 0;
       String var18 = "WBÕ/Ed²R\u0083\u0087Æ\u0098¤J(\u0018\u000b¤õoÂo\u0098Dq1òúf\u0001Ø\u001c\u008f\u0084¥Oiô\u00ad\u001e\u000f,4ºá¨½\u000fi4à0tz×ó\u000fí0× õÞ\u001c|î¾õå\u0090ì\u0087\u0007¤\u0093\u008f3Ë0I";
       int var20 = "WBÕ/Ed²R\u0083\u0087Æ\u0098¤J(\u0018\u000b¤õoÂo\u0098Dq1òúf\u0001Ø\u001c\u008f\u0084¥Oiô\u00ad\u001e\u000f,4ºá¨½\u000fi4à0tz×ó\u000fí0× õÞ\u001c|î¾õå\u0090ì\u0087\u0007¤\u0093\u008f3Ë0I"
@@ -1521,7 +1528,6 @@ public class XQ_2 {
       }
    }
 }
-
 
 
 

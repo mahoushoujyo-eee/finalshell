@@ -1034,6 +1034,8 @@ public class J2 implements Iterable, CharSequence {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var13;
+      char[] var25;
       String[] var7 = new String[4];
       int var5 = 0;
       String var4 = "z\u0007ø\u008a®¬6ÒÂq£sD\u0081í¢\u008bºêÞµw\u0082\b\u0091\f;d\u0018Zp5\n¼¿®S\\y\u007fð\u001a\u008e}Ù\u00adÕ\u0014Þ\u0017÷ 8ê¦{\u0006\bÄìewíYX©%å";
@@ -1050,7 +1052,6 @@ public class J2 implements Iterable, CharSequence {
          byte var10002 = -1;
 
          while (true) {
-      char[] var25;
             label65: {
                char[] var30 = var10001.toCharArray();
                int var10004 = var30.length;

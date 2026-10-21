@@ -1118,6 +1118,7 @@ public class NW implements FW3 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var13 = new String[4];
       int var11 = 0;
       String var10 = " É\u00863X\u0004#hÿ\u001e";
@@ -1132,7 +1133,6 @@ public class NW implements FW3 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

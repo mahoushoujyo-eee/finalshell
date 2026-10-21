@@ -71,6 +71,10 @@ public class Ip6 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void F() throws Exception {
+      ByteArrayOutputStream var33;
+      FileInputStream var34;
+      FileInputStream var35;
+      IOException var36;
       String var10000 = Co4.n();
       d = this.V.lastModified();
       String var1 = var10000;
@@ -101,8 +105,6 @@ public class Ip6 {
                               continue;
                            }
                         } catch (IOException var26) {
-      FileInputStream var35;
-      FileInputStream var35;
                            throw a(var26);
                         }
                      }
@@ -1406,6 +1408,9 @@ public class Ip6 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var34;
+      byte var36;
+      char[] var46;
       String[] var21 = new String[5];
       int var19 = 0;
       String var18 = "\u009b\u009f\u0006Íç丗胍仮穽\r\u0098[Òàæ2wþ\"ëÆêø";
@@ -1426,7 +1431,7 @@ public class Ip6 {
                int var22 = 0;
                byte var57 = var10000;
                var46 = var54;
-               int var34 = var10004;
+               var34 = var10004;
                byte var66;
                char[] var74;
                int var10006;
@@ -1507,7 +1512,7 @@ public class Ip6 {
 
                      label62:
                      while (true) {
-                        byte var36 = var10;
+                        var36 = var10;
                         var10 += 8;
                         byte[] var15 = var12.substring(var36, var10).getBytes("ISO-8859-1");
                         long[] var28 = var14;
@@ -1649,7 +1654,6 @@ public class Ip6 {
       }
    }
 }
-
 
 
 

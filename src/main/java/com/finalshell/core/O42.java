@@ -13,6 +13,7 @@ public final class O42 {
    public static Map C;
 
    public static Shape k(Component var0, String var1, E_2 var2, Object[] var3) {
+      IO3 var7;
       String var5 = z(var3);
       String var10000 = FV_2.D();
       Map var6 = (Map)C.get(var0);
@@ -30,7 +31,7 @@ public final class O42 {
          var10000 = (String)var6.get(var1);
       }
 
-      IO3 var7 = (IO3)var10000;
+      var7 = (IO3)var10000;
       var10000 = var7;
       if (var4 == null) {
          label28:
@@ -56,6 +57,7 @@ public final class O42 {
    }
 
    public static String z(Object[] var0) {
+      StringBuilder var7;
       String var10000 = FV_2.D();
       StringBuilder var2 = new StringBuilder();
       Object[] var3 = var0;
@@ -65,7 +67,6 @@ public final class O42 {
 
       while (true) {
          if (var5 < var4) {
-      StringBuilder var7;
             Object var6 = var3[var5];
             var7 = var2;
             if (var1 != null) {
@@ -82,7 +83,6 @@ public final class O42 {
 
             var5++;
             if (var1 == null) {
-      StringBuilder var7;
                continue;
             }
          }
@@ -135,7 +135,6 @@ public final class O42 {
       C = new WeakHashMap();
    }
 }
-
 
 
 

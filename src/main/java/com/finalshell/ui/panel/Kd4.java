@@ -236,7 +236,7 @@ public class Kd4 extends KE3 {
 
    public void Y(java.io.File var1) {
       String var2 = KE3.v();
-      byte var10000 = (var1.isDirectory()) ? 1 : 0;
+      byte var10000 = (byte)((var1.isDirectory()) ? 1 : 0);
       if (var2 == null) {
          if (var10000 != 0) {
             int var3 = (this.x) ? 1 : 0;
@@ -252,7 +252,7 @@ public class Kd4 extends KE3 {
 
             label115: {
                if (var2 == null) {
-                  if (var11) {
+                  if (var11 != 0) {
                      String var6;
                      label101: {
                         label118: {
@@ -291,8 +291,8 @@ public class Kd4 extends KE3 {
                   var11 = (this.g) ? 1 : 0;
                }
 
-               if (var11) {
-                  this.T(var1, var4, (boolean)var3);
+               if (var11 != 0) {
+                  this.T(var1, var4, var3);
                }
 
                var4.addActionListener(new com.finalshell.ui.listener.W(this, var1, var4));
@@ -304,7 +304,7 @@ public class Kd4 extends KE3 {
             }
          }
 
-         var10000 = (this.x) ? 1 : 0;
+         var10000 = (byte)((this.x) ? 1 : 0);
       }
 
       int var7 = var10000;
@@ -319,7 +319,7 @@ public class Kd4 extends KE3 {
       }
 
       if (var2 == null) {
-         if (var13) {
+         if (var13 != 0) {
             String var10;
             label74: {
                label122: {
@@ -358,8 +358,8 @@ public class Kd4 extends KE3 {
          var13 = (this.g) ? 1 : 0;
       }
 
-      if (var13) {
-         this.T(var1, var8, (boolean)var7);
+      if (var13 != 0) {
+         this.T(var1, var8, var7);
       }
 
       this.add(var8, 0);

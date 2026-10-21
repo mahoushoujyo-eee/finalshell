@@ -11,10 +11,11 @@ public final class RG_2 {
    }
 
    public static String X(Object[][] var0, String var1, String var2) {
+      int var5;
       String[] var10000 = C();
       String[] var4 = new String[var0.length];
       String[] var3 = var10000;
-      int var5 = 0;
+      var5 = 0;
 
       while (true) {
          if (var5 < var0.length) {
@@ -38,11 +39,12 @@ public final class RG_2 {
    }
 
    public static String b(Object[] var0, String var1, int var2, int var3) {
+      StringBuilder var5;
       String[] var4 = C();
       if (var2 >= var3) {
          return "";
       } else {
-         StringBuilder var5 = new StringBuilder(var0[var2].toString());
+         var5 = new StringBuilder(var0[var2].toString());
          var2++;
 
          StringBuilder var10000;
@@ -69,6 +71,7 @@ public final class RG_2 {
    }
 
    public static N9_2[] J(com.finalshell.ui.model.I var0, String[] var1) {
+      N9_2[] var5;
       String[] var10000 = C();
       N9_2[] var3 = new N9_2[var1.length];
       String[] var2 = var10000;
@@ -76,7 +79,6 @@ public final class RG_2 {
 
       while (true) {
          if (var4 < var1.length) {
-      String[] var5;
             var5 = var3;
             if (var2 == null) {
                break;
@@ -85,7 +87,6 @@ public final class RG_2 {
             var3[var4] = new N9_2(var1[var4], var0);
             var4++;
             if (var2 != null) {
-      String[] var5;
                continue;
             }
          }
@@ -98,11 +99,14 @@ public final class RG_2 {
    }
 
    public static boolean q(Fu2_2[] var0, String[] var1) {
+      boolean var12;
+      boolean var13;
+      int var5;
       String[] var10000 = C();
       String[] var3 = var1;
       int var4 = var1.length;
       String[] var2 = var10000;
-      int var5 = 0;
+      var5 = 0;
 
       label51:
       while (true) {
@@ -124,13 +128,13 @@ public final class RG_2 {
                while (var9 < var8) {
                   Fu2_2 var10 = var7[var9];
                   if (var2 != null) {
-                     var11 = var10 instanceof N9_2;
+                     var11 = (var10 instanceof N9_2) ? 1 : 0;
                      if (var2 == null) {
                         continue label47;
                      }
 
                      if (var11 != 0) {
-                        boolean var13 = var6.equals(((N9_2)var10).P);
+                        var13 = var6.equals(((N9_2)var10).P);
                         if (var2 == null) {
                            return var13;
                         }
@@ -163,6 +167,8 @@ public final class RG_2 {
    }
 
    public static HV_2[] E(Fu2_2[] var0) {
+      int var12;
+      int var13;
       int var2 = 0;
       Fu2_2[] var3 = var0;
       int var4 = var0.length;
@@ -174,7 +180,7 @@ public final class RG_2 {
          if (var5 < var4) {
             Fu2_2 var6 = var3[var5];
             if (var1 != null) {
-               var13 = var6 instanceof HV_2;
+               var13 = (var6 instanceof HV_2) ? 1 : 0;
                if (var1 == null) {
                   break;
                }
@@ -199,7 +205,7 @@ public final class RG_2 {
       var2 = 0;
       Fu2_2[] var10 = var0;
       var5 = var0.length;
-      int var12 = 0;
+      var12 = 0;
 
       while (var12 < var5) {
          Fu2_2 var7 = var10[var12];
@@ -242,11 +248,13 @@ public final class RG_2 {
    }
 
    public static String N$String(Fu2_2[] var0) {
+      int var5;
+      StringBuilder var7;
       String[] var10000 = C();
       StringBuilder var2 = new StringBuilder();
       Fu2_2[] var3 = var0;
       int var4 = var0.length;
-      int var5 = 0;
+      var5 = 0;
       String[] var1 = var10000;
 
       while (true) {
@@ -1104,8 +1112,10 @@ public final class RG_2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var7 = new String[3];
-      int var5 = 0;
+      int var5;
+      String[] var7;
+      var7 = new String[3];
+      var5 = 0;
       String[] var10000 = new String[1];
       String var4 = "6o]\u001a\u008ag\tcÞúÓÞE\u0013¯ñ\u0007\u009a-Ã¯;\u009f:";
       int var6 = "6o]\u001a\u008ag\tcÞúÓÞE\u0013¯ñ\u0007\u009a-Ã¯;\u009f:".length();
@@ -1202,7 +1212,6 @@ public final class RG_2 {
       }
    }
 }
-
 
 
 

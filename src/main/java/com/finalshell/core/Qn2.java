@@ -37,7 +37,7 @@ public class Qn2 implements Cd4 {
    @Override
    public int p() {
       boolean var1 = Dm4.F$boolean();
-      byte var10000 = (this.i.p().x()) ? 1 : 0;
+      byte var10000 = (byte)((this.i.p().x()) ? 1 : 0);
       if (var1) {
          if (var10000 != 0) {
             return 2;

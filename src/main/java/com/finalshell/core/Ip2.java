@@ -118,6 +118,8 @@ public class Ip2 {
    }
 
    public void w(List var1) throws Exception {
+      Ip2 var24;
+      Ip2 var25;
       var1.sort(Ip2::lambda$handleIpData$0);
       boolean var10000 = Ip.v();
       HashMap var3 = new HashMap();
@@ -1251,6 +1253,7 @@ public class Ip2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var46;
       String[] var21 = new String[6];
       int var19 = 0;
       String var18 = "D'Ê\u0003Ù\\y\b~¾àNºøq?\u0006I\u0094仆耵仛稱";
@@ -1265,7 +1268,6 @@ public class Ip2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var46;
             label83: {
                char[] var54 = var10001.toCharArray();
                int var10004 = var54.length;

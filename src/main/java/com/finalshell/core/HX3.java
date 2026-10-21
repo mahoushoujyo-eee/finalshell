@@ -115,6 +115,9 @@ public class HX3 extends HG3 {
    }
 
    public static void V(Kernel var0, int[] var1, int[] var2, int var3, int var4, boolean var5, boolean var6, boolean var7, int var8) {
+      int var15;
+      boolean var37;
+      int var38;
       float[] var10 = var0.getKernelData(null);
       String[] var10000 = W5.q();
       int var11 = var0.getWidth();
@@ -129,7 +132,7 @@ public class HX3 extends HG3 {
          label136:
          while (var36 < var4) {
             int var14 = var13;
-            int var15 = var13 * var3;
+            var15 = var13 * var3;
             int var16 = 0;
 
             while (var16 < var3) {
@@ -150,13 +153,12 @@ public class HX3 extends HG3 {
                      float var23 = var10[var21 + var22];
                      if (var9 != null) {
                         float var40;
-                        var37 = (var40 = var23 - 0.0F) == 0.0F ? 0 : (var40 < 0.0F ? -1 : 1);
+                        var37 = ((var40 = var23 - 0.0F) == 0.0F ? 0 : (var40 < 0.0F ? -1 : 1)) != 0;
                         if (var9 == null) {
                            break;
                         }
 
-                        if (var37 != 0) {
-      int var38;
+                        if (var37) {
                            label122: {
                               int var24;
                               label146: {
@@ -253,7 +255,6 @@ public class HX3 extends HG3 {
                      }
 
                      if (var9 != null) {
-      int[] var37;
                         continue;
                      }
                   }
@@ -264,21 +265,21 @@ public class HX3 extends HG3 {
 
                label87:
                if (var9 != null) {
-                  if (var37 != 0) {
+                  if (var37) {
                      float var41;
-                     var37 = (var41 = var20 - 0.0F) == 0.0F ? 0 : (var41 < 0.0F ? -1 : 1);
+                     var37 = ((var41 = var20 - 0.0F) == 0.0F ? 0 : (var41 < 0.0F ? -1 : 1)) != 0;
                      if (var9 == null) {
                         break label87;
                      }
 
-                     if (var37 != 0) {
+                     if (var37) {
                         float var42;
-                        var37 = (var42 = var20 - 255.0F) == 0.0F ? 0 : (var42 < 0.0F ? -1 : 1);
+                        var37 = ((var42 = var20 - 255.0F) == 0.0F ? 0 : (var42 < 0.0F ? -1 : 1)) != 0;
                         if (var9 == null) {
                            break label87;
                         }
 
-                        if (var37 != 0) {
+                        if (var37) {
                            float var31 = 255.0F / var20;
                            var17 *= var31;
                            var18 *= var31;
@@ -291,10 +292,10 @@ public class HX3 extends HG3 {
                }
 
                if (var9 != null) {
-                  var37 = var37 != 0 ? Iw4.e((int)((double)var20 + 0.5)) : b(29701, 417891550093791380L);
+                  var37 = (var37 != 0 ? Iw4.e((int)((double)var20 + 0.5)) : b(29701, 417891550093791380L)) != 0;
                }
 
-               var22 = var37;
+               var22 = (var37) ? 1 : 0;
                int var33 = Iw4.e((int)((double)var17 + 0.5));
                int var34 = Iw4.e((int)((double)var18 + 0.5));
                int var35 = Iw4.e((int)((double)var19 + 0.5));
@@ -678,7 +679,6 @@ public class HX3 extends HG3 {
       }
    }
 }
-
 
 
 

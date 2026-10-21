@@ -19,6 +19,7 @@ public class G7_2 {
    public static Integer[] d;
 
    public G7_2() {
+      super();
       Registry.lookupField(305354736637250366L).setBoolean(this, true);
       Object var3 = 590981618871124311L;
       Ref.g(590981618871124311L, var3);
@@ -35,7 +36,7 @@ public class G7_2 {
       ((JFrame)Ref.g(590981618871124311L, var11)).setBackground(new Color(0, 0, 0, 0));
       JWindow var10006;
       Object var13 = 590981618871124311L;
-      super((Frame)((JFrame)Ref.g(590981618871124311L, var13)));
+      // [VF-super] super((Frame)((JFrame)Ref.g(590981618871124311L, var13)));
       JWindow var1 = var10006;
       var1.setLayout(new GridLayout(0, 1));
       JTextField var2 = new JTextField(a(23852, -28781));

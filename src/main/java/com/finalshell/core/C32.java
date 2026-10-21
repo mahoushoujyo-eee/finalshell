@@ -65,7 +65,6 @@ public class C32 {
                var6 = new YO3_2();
                if (var3 == null) {
       byte var13;
-      byte var13;
                   break label39;
                }
             }
@@ -141,6 +140,7 @@ public class C32 {
    }
 
    public void V() throws IOException {
+      byte var6;
       String[] var10000 = Ub2.A();
       int var2 = 0;
       String[] var1 = var10000;
@@ -609,6 +609,7 @@ public class C32 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public int g(boolean var1) throws IOException {
+      byte var6;
       String[] var10000 = Ub2.A();
       boolean var4 = false;
       String[] var2 = var10000;
@@ -616,7 +617,6 @@ public class C32 {
       label29:
       while (true) {
          byte var3 = this.f();
-         byte var6;
          if (var3 != 1) {
             var6 = var3;
          } else {
@@ -801,6 +801,7 @@ public class C32 {
    }
 
    public long S(J1 var1) throws IOException {
+      long var6;
       String[] var10000 = Ub2.A();
       long var3 = 0L;
       String[] var2 = var10000;
@@ -856,6 +857,7 @@ public class C32 {
    }
 
    public static String a(int var0, int var1) {
+      int var6;
       int var2 = (var0 ^ -20653) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -1636,7 +1638,7 @@ public class C32 {
             var5 += 256;
          }
 
-         int var6 = ((var1 & 65535) >>> 8) - var4;
+         var6 = ((var1 & 65535) >>> 8) - var4;
          if (var6 < 0) {
             var6 += 256;
          }
@@ -1679,6 +1681,9 @@ public class C32 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      boolean var13;
+      char[] var43;
+      long[] var6;
       String[] var21 = new String[6];
       int var19 = 0;
       String var18 = "Ë\u009cä¾\u0092Á7+\u008c3\u009c|éIÜü\u001dµ=Kaáï\u001cÜz\u0006bÎZ¼Xý]²±,ó`ÉC2\u0012®\u0095ýTÔ¹\u0005ô/\u0017G8u* SqyDy\u00855Ê`¸Ù\u0091\u0011¬ßSs©+l>\u001e\u001a\u001cÞ<OYø\u0002\u0094ËÍ(øY%aV\u008e\u0095ÅJ\u000f?\u0015¶+GÁ|Åt*ÑN\u0083ä~\u0081¦H";
@@ -1775,8 +1780,8 @@ public class C32 {
                      long[] var14 = new long[17];
                      int var11 = 0;
                      String var12 = "\u0019N&jDëãEÉOéª^ÿ\u0016\u0001çÎ\u0088HÃ\u0013N*îè\u0000ìÏéÃ\u0019´<\u0004ÆÐG\u0010Ø¢a¥o&Ú\u0082?Õ¼Ýª8\u001aïÌ\u008eOZº²\\\u0091âã|=0`¦\u0083#&?D%>Ðªüñó³\u0099Ä\u008b¨\u0080;\u009ekr\u000f&Æ¿ ì§Ô/ë³ÐïìÄdRß\u0081\u0085Wµ öpÞôj";
-                     int var13 = "\u0019N&jDëãEÉOéª^ÿ\u0016\u0001çÎ\u0088HÃ\u0013N*îè\u0000ìÏéÃ\u0019´<\u0004ÆÐG\u0010Ø¢a¥o&Ú\u0082?Õ¼Ýª8\u001aïÌ\u008eOZº²\\\u0091âã|=0`¦\u0083#&?D%>Ðªüñó³\u0099Ä\u008b¨\u0080;\u009ekr\u000f&Æ¿ ì§Ô/ë³ÐïìÄdRß\u0081\u0085Wµ öpÞôj"
-                        .length();
+                     var13 = ("\u0019N&jDëãEÉOéª^ÿ\u0016\u0001çÎ\u0088HÃ\u0013N*îè\u0000ìÏéÃ\u0019´<\u0004ÆÐG\u0010Ø¢a¥o&Ú\u0082?Õ¼Ýª8\u001aïÌ\u008eOZº²\\\u0091âã|=0`¦\u0083#&?D%>Ðªüñó³\u0099Ä\u008b¨\u0080;\u009ekr\u000f&Æ¿ ì§Ô/ë³ÐïìÄdRß\u0081\u0085Wµ öpÞôj") != 0;
+                        // [VF] .length();   // 上一行已完成赋值，残留链式调用
                      byte var10 = 0;
 
                      label53:
@@ -1805,7 +1810,7 @@ public class C32 {
                                     c = var14;
                                     d = new Integer[17];
                                     long var0 = 5616652540208833790L;
-                                    long[] var6 = new long[2];
+                                    var6 = new long[2];
                                     int var3 = 0;
                                     String var4 = "1Í¿\u0004£ÙEWW¼`Ôy\u001c2`";
                                     int var5 = "1Í¿\u0004£ÙEWW¼`Ôy\u001c2`".length();
@@ -1842,7 +1847,7 @@ public class C32 {
                                     continue label53;
                                  }
 
-                                 var12 = "¬Y'ÏÖ¡j\u000390¯\u0012\r¯\u0087\f";
+                                 var12 = ("¬Y'ÏÖ¡j\u000390¯\u0012\r¯\u0087\f") != 0;
                                  var13 = "¬Y'ÏÖ¡j\u000390¯\u0012\r¯\u0087\f".length();
                                  var10 = 0;
                            }
@@ -1888,7 +1893,6 @@ public class C32 {
       }
    }
 }
-
 
 
 

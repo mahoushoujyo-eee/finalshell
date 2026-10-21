@@ -414,6 +414,8 @@ public class QB extends Ky4 implements W_3 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void T(Component var1, int var2, int var3) {
+      QB var12;
+      QB var16;
       int[] var10000 = WC_2.V();
       Object var5 = this.c;
       synchronized (this.c){} // $VF: monitorenter 
@@ -567,6 +569,8 @@ public class QB extends Ky4 implements W_3 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void W$void() {
+      QB var7;
+      boolean var8;
       int[] var10000 = WC_2.V();
       Object var2 = this.c;
       synchronized (this.c){} // $VF: monitorenter 
@@ -701,6 +705,8 @@ public class QB extends Ky4 implements W_3 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void p(Runnable var1) {
+      boolean var7;
+      boolean var8;
       int[] var10000 = WC_2.V();
       Object var3 = this.i;
       synchronized (this.i){} // $VF: monitorenter 
@@ -711,7 +717,7 @@ public class QB extends Ky4 implements W_3 {
             label72: {
                label77: {
                   label70: {
-                     boolean var7 = this.isShowing();
+                     var7 = this.isShowing();
                      if (var2 == null) {
                         if (var7) {
                            var8 = this.q$boolean();
@@ -797,6 +803,7 @@ public class QB extends Ky4 implements W_3 {
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    public void b(Runnable var1) {
+      boolean var7;
       int[] var10000 = WC_2.V();
       Object var3 = this.i;
       synchronized (this.i){} // $VF: monitorenter 
@@ -805,7 +812,7 @@ public class QB extends Ky4 implements W_3 {
       try {
          label38: {
             label37: {
-               boolean var7 = this.isShowing();
+               var7 = this.isShowing();
                if (var2 == null) {
                   if (!var7) {
                      break label37;

@@ -216,6 +216,8 @@ public class KY_2 implements Ak2, X4 {
 
    @Override
    public Object z(Yn4 var1, Type var2, Object var3) {
+      AtomicLongArray var10;
+      AtomicIntegerArray var11;
       String var4 = Nv4.o();
       P7 var10000 = var1.N;
       if (var4 != null) {
@@ -228,7 +230,6 @@ public class KY_2 implements Ak2, X4 {
 
                while (true) {
                   if (var9 < var5.size()) {
-      AtomicIntegerArray var11;
                      var11 = var8;
                      if (var4 == null) {
                         break;
@@ -237,7 +238,6 @@ public class KY_2 implements Ak2, X4 {
                      var8.set(var9, var5.p(var9));
                      var9++;
                      if (var4 != null) {
-      AtomicIntegerArray var11;
                         continue;
                      }
                   }
@@ -1108,8 +1108,9 @@ public class KY_2 implements Ak2, X4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var11;
       String[] var13 = new String[2];
-      int var11 = 0;
+      var11 = 0;
       String var10 = "\u0084\\.\u0086n\u0004\u0013Ù\u0095Q";
       int var12 = "\u0084\\.\u0086n\u0004\u0013Ù\u0095Q".length();
       char var9 = 5;
@@ -1262,7 +1263,6 @@ public class KY_2 implements Ak2, X4 {
       }
    }
 }
-
 
 
 

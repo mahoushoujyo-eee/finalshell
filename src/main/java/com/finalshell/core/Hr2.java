@@ -331,6 +331,7 @@ public class Hr2 {
    }
 
    public void r(int var1) {
+      int var14;
       int var3 = (this.d - 1) * this.F;
       float[] var4 = new float[var3];
       String[] var10000 = W5.q();
@@ -366,8 +367,6 @@ public class Hr2 {
                         break;
                      }
                   } catch (IllegalArgumentException var13) {
-      int var14;
-      int var14;
                      throw a(var13);
                   }
                }
@@ -1233,6 +1232,7 @@ public class Hr2 {
    }
 
    public void G(float[] var1, float[] var2, int var3, float[] var4, int var5, int var6) {
+      float var14;
       int var8 = var3;
       String[] var10000 = W5.q();
       float var9 = var1[var3];
@@ -1256,6 +1256,7 @@ public class Hr2 {
                      break label25;
                   }
                } catch (IllegalArgumentException var15) {
+      int var16;
                   throw a(var15);
                }
 
@@ -1268,7 +1269,7 @@ public class Hr2 {
             var16 = var13;
          }
 
-         float var14 = ((float)var16 - var9) / (var10 - var9);
+         var14 = ((float)var16 - var9) / (var10 - var9);
          var4[var5 + var13] = var11 + var14 * (var12 - var11);
          var13++;
          if (var7 == null) {
@@ -2091,6 +2092,7 @@ public class Hr2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      int var16;
       String[] var5 = new String[3];
       int var3 = 0;
       String var2 = "\u0002'\u0094kn^\u009f\u009dÞ&'\fÏgºÿ\u007f¥|úg\u008b)\u000f\f\u008d÷aMÅ7\bzÇ`»èB/k®V+\"å\u00903îU\u008füÜ\ng\u0084ÌÝ¡T,¬e_X%DÂ_J©(f/þ¸T¥[\u0018±<À\u008e\u0015\u008d\u001a0\u009b\u0000§\u008f\bÂS\u000eGT\u0014B©®vÆæ\u0082O\u001e\u0001\u0017å\u009a\u0095õ\u0080ô&\u0085.ç\u009d;\u0083\u00175\u0091\u0001Ú\u0018\u009b~\u009d>«¢Y";
@@ -2108,7 +2110,6 @@ public class Hr2 {
             byte var13 = 76;
             var10002 = var10003;
             int var8 = var10004;
-            byte var16;
             char[] var10005;
             int var10006;
             if (var10004 <= 1) {
@@ -2184,7 +2185,6 @@ public class Hr2 {
       }
    }
 }
-
 
 
 

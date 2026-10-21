@@ -3,7 +3,7 @@ package com.finalshell.task;
 import com.finalshell.core.Fc2;
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.dialog.SyncPasswordDialog2;
+import com.finalshell.ui.dialog.SyncPasswordResetDialog;
 import com.finalshell.ui.frame.FP;
 import java.lang.reflect.InvocationTargetException;
 
@@ -49,7 +49,7 @@ public class K8 implements Runnable {
       Object var10006 = Ref.h2(270389152141252877L, var9);
       FP var10007 = (FP)(Registry.emptyArgs());
       long var12 = 606040881383812332L;
-      Object[] var11 = var10007;
+      Object var11 = var10007;
       var10007 = Ref.h(606040881383812332L, var11, var12);
 
       try {
@@ -58,7 +58,7 @@ public class K8 implements Runnable {
          throw var18.getTargetException();
       }
 
-      ((SyncPasswordDialog2)var10006).setLocationRelativeTo(var10007);
+      ((SyncPasswordResetDialog)var10006).setLocationRelativeTo(var10007);
       Registry.emptyArgs();
       long var13 = 270389152141252877L;
       Ref.h2(270389152141252877L, var13);

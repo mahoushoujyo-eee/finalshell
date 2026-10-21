@@ -22,6 +22,7 @@ public class DG3 extends JPanel implements AL {
    public static String[] b;
 
    public DG3(CT var1) {
+      long var23;
       long var3 = 532438584493887068L;
       Ref.s(532438584493887068L, var1, var3);
       this.setOpaque(false);
@@ -53,7 +54,7 @@ public class DG3 extends JPanel implements AL {
       Object var20 = 353701430440253013L;
       Ref.g(353701430440253013L, var20);
       Object[] var10011 = Registry.packArgs(this);
-      long var23 = 253827983161591241L;
+      var23 = 253827983161591241L;
       Object[] var22 = var10011;
       Ref.h(253827983161591241L, var22, var23);
 
@@ -80,12 +81,13 @@ public class DG3 extends JPanel implements AL {
    }
 
    public T32 z(int var1) {
+      Integer var24;
       Uo2.k();
       Object var8 = 353701430440253013L;
       Object var10002 = Ref.g(353701430440253013L, var8);
       ArrayList var10003 = (ArrayList)(Registry.emptyArgs());
       long var11 = 230171768324088030L;
-      Object[] var10 = var10003;
+      Object var10 = var10003;
       var10003 = Ref.h(230171768324088030L, var10, var11);
 
       try {
@@ -103,16 +105,16 @@ public class DG3 extends JPanel implements AL {
          T32 var6 = (T32)var3.get(var5);
          var10003 = Registry.emptyArgs();
          long var13 = 424156930953488367L;
-         Object[] var12 = var10003;
-         Copy2 var7 = (Copy2)Ref.h(424156930953488367L, var12, var13);
+         Object var12 = var10003;
+         EnvironmentVariablePanel var7 = (EnvironmentVariablePanel)Ref.h(424156930953488367L, var12, var13);
          if (var2 == null) {
             Object[] var10004 = Registry.emptyArgs();
             long var15 = 591392751032912941L;
             Object[] var14 = var10004;
             Ref.h(591392751032912941L, var14, var15);
-            Object[] var10005 = Registry.emptyArgs();
+            Object var10005 = Registry.emptyArgs();
             long var17 = 340521912883652737L;
-            Object[] var16 = var10005;
+            Object var16 = var10005;
             var10005 = Ref.h(340521912883652737L, var16, var17);
 
             try {
@@ -133,14 +135,15 @@ public class DG3 extends JPanel implements AL {
       return var4;
    }
 
-   public Copy2 N(U82 var1) {
-      Copy2 var2 = new Copy2(var1);
+   public EnvironmentVariablePanel N(U82 var1) {
+      Integer var23;
+      EnvironmentVariablePanel var2 = new EnvironmentVariablePanel(var1);
       Object var4 = 353701430440253013L;
       Ref.g(353701430440253013L, var4);
       new StringBuilder();
-      Object[] var10005 = Registry.emptyArgs();
+      Object var10005 = Registry.emptyArgs();
       long var7 = 340521912883652737L;
-      Object[] var6 = var10005;
+      Object var6 = var10005;
       var10005 = Ref.h(340521912883652737L, var6, var7);
 
       try {
@@ -156,7 +159,7 @@ public class DG3 extends JPanel implements AL {
       var10006 = Ref.h(412318774197756267L, var8, var9);
       String var10007 = (String)(Registry.emptyArgs());
       long var11 = 505915899939017355L;
-      Object[] var10 = var10007;
+      Object var10 = var10007;
       var10007 = Ref.h(505915899939017355L, var10, var11);
 
       try {
@@ -167,7 +170,7 @@ public class DG3 extends JPanel implements AL {
 
       var10005 = Registry.packArgs(var1, var10006.append((String)var10007).toString());
       long var13 = 407014907239672455L;
-      Object[] var12 = var10005;
+      Object var12 = var10005;
       var10005 = Ref.h(407014907239672455L, var12, var13);
 
       try {
@@ -181,7 +184,7 @@ public class DG3 extends JPanel implements AL {
       Ref.g(532438584493887068L, var14);
       var10007 = Registry.packArgs(var3);
       long var17 = 550700107560986297L;
-      Object[] var16 = var10007;
+      Object var16 = var10007;
       Ref.h(550700107560986297L, var16, var17);
 
       try {
@@ -1031,6 +1034,7 @@ public class DG3 extends JPanel implements AL {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[5];
       int var3 = 0;
       String var2 = "30Ì\u0094¤\u0088ì\u0082EV\u001f»/ôDµ\u009aÔð\u0012~l\u0001\u008bY( Ò,\u009e\t\u0095×\u0089b\u009dC\u001c\u0086\u0005ã\u0080+\u001f³\u0005®\u009b\u0082|\u0086";
@@ -1046,7 +1050,6 @@ public class DG3 extends JPanel implements AL {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

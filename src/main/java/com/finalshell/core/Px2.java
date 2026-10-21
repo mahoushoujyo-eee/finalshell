@@ -43,7 +43,7 @@ public class Px2 {
 
             var5 = this.E;
             if (var2 != null) {
-               return (boolean)this.E;
+               return (this.E != 0);
             }
 
             var10001 = var3.E;

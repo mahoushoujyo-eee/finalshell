@@ -2,18 +2,18 @@ package com.finalshell.ui.listener;
 
 import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
-import com.finalshell.ui.panel.ImportPanel;
+import com.finalshell.ui.panel.ImportMenuPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class ConfirmDeleteListener2 implements ActionListener {
-   public final ImportPanel A;
+   public final ImportMenuPanel A;
    public static String[] a;
    public static String[] b;
 
-   public ConfirmDeleteListener2(ImportPanel var1) {
+   public ConfirmDeleteListener2(ImportMenuPanel var1) {
       this.A = var1;
    }
 
@@ -21,9 +21,9 @@ public class ConfirmDeleteListener2 implements ActionListener {
    public void actionPerformed(ActionEvent var1) {
       Object var4 = 210308784575132234L;
       Ref.g(210308784575132234L, var4);
-      Object[] var10002 = Registry.emptyArgs();
+      Object var10002 = Registry.emptyArgs();
       long var7 = 457204009113929650L;
-      Object[] var6 = var10002;
+      Object var6 = var10002;
       var10002 = Ref.h(457204009113929650L, var6, var7);
 
       try {
@@ -35,7 +35,7 @@ public class ConfirmDeleteListener2 implements ActionListener {
       com.finalshell.core.LN3 var2 = var10002;
       if (var2 != null) {
          Object var8 = 210308784575132234L;
-         int var3 = JOptionPane.showConfirmDialog((ImportPanel)Ref.g(210308784575132234L, var8), a(-8710, -28016), a(-8709, -26707), 0);
+         int var3 = JOptionPane.showConfirmDialog((ImportMenuPanel)Ref.g(210308784575132234L, var8), a(-8710, -28016), a(-8709, -26707), 0);
          if (var3 == 0) {
             Object[] var10004 = Registry.emptyArgs();
             long var11 = 194080076253066315L;

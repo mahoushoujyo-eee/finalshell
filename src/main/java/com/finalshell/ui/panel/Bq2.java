@@ -83,6 +83,11 @@ public class Bq2 extends O {
 
    public Bq2(T32 var1, AM var2, boolean var3, boolean var4, boolean var5, int var6, boolean var7) {
    super();
+   boolean var217;
+   long var33;
+   long var37;
+   long var39;
+   long var57;
       label216: {
          Color var10001 = new Color(b(14744, 2579293605355848411L), b(16177, 5399903379597100135L), b(16177, 5399903379597100135L));
          long var17 = 300793705977237886L;
@@ -125,16 +130,16 @@ public class Bq2 extends O {
          Registry.lookupField(120501553429581714L).setBoolean(this, false);
          Registry.lookupField(451154194190924563L).setBoolean(this, var7);
          Registry.lookupField(466539178470875130L).setBoolean(this, var5);
-         long var33 = 293938313616336078L;
+         var33 = 293938313616336078L;
          Ref.s(293938313616336078L, var2, var33);
          Registry.lookupField(515313227049281099L).setBoolean(this, (boolean)var3);
          Registry.lookupField(292988288778102177L).setBoolean(this, (boolean)var4);
          long var35 = 626705182228648464L;
          Ref.s(626705182228648464L, var2, var35);
-         long var37 = 162955545315895464L;
+         var37 = 162955545315895464L;
          Ref.s(162955545315895464L, var1, var37);
          Object[] var10015 = Registry.emptyArgs();
-         long var39 = 311724385945399618L;
+         var39 = 311724385945399618L;
          Object[] var38 = var10015;
          var10015 = Ref.h(311724385945399618L, var38, var39);
          long var41 = 461249878665463746L;
@@ -178,7 +183,7 @@ public class Bq2 extends O {
                CompoundBorder var54 = var10020;
                Ref.s(307353262184556454L, var54, var55);
                CompoundBorder var10021 = BorderFactory.createCompoundBorder(BorderFactory.createMatteBorder(0, 1, 0, 1, var10), var12);
-               long var57 = 443819559899318671L;
+               var57 = 443819559899318671L;
                CompoundBorder var56 = var10021;
                Ref.s(443819559899318671L, var56, var57);
                Object var58 = 377102286771712366L;
@@ -349,9 +354,9 @@ public class Bq2 extends O {
                      break label217;
                   }
 
-                  Object[] var10030 = Registry.emptyArgs();
+                  Object var10030 = Registry.emptyArgs();
                   long var129 = 504747349565446806L;
-                  Object[] var128 = var10030;
+                  Object var128 = var10030;
                   var10030 = Ref.h(504747349565446806L, var128, var129);
 
                   try {
@@ -513,7 +518,7 @@ public class Bq2 extends O {
          if (var206 == null) {
             Boolean var211 = (Boolean)(Registry.emptyArgs());
             long var167 = 120571880662107930L;
-            Object[] var166 = var211;
+            Object var166 = var211;
             var211 = Ref.h(120571880662107930L, var166, var167);
 
             try {
@@ -697,6 +702,11 @@ public class Bq2 extends O {
    }
 
    public void G() {
+      Object[] var36;
+      long var37;
+      long var39;
+      Object[] var40;
+      long var57;
       String[] var1;
       byte var2;
       label181: {
@@ -774,13 +784,13 @@ public class Bq2 extends O {
       Registry.emptyArgs();
       long var20 = 270389152141252877L;
       Ref.h2(270389152141252877L, var20);
-      Object[] var10007 = Registry.emptyArgs();
+      Object var10007 = Registry.emptyArgs();
       long var23 = 634817973682994708L;
-      Object[] var22 = var10007;
+      Object var22 = var10007;
       Ref.h(634817973682994708L, var22, var23);
       Window var10008 = Registry.emptyArgs();
       long var25 = 150426696032422115L;
-      Object[] var24 = var10008;
+      Object var24 = var10008;
       var10008 = Ref.h(150426696032422115L, var24, var25);
 
       try {
@@ -810,15 +820,15 @@ public class Bq2 extends O {
                      long var34 = 270389152141252877L;
                      Ref.h2(270389152141252877L, var34);
                      Object[] var10015 = Registry.emptyArgs();
-                     long var37 = 634817973682994708L;
-                     Object[] var36 = var10015;
+                     var37 = 634817973682994708L;
+                     var36 = var10015;
                      Ref.h(634817973682994708L, var36, var37);
                      Object[] var10016 = Registry.emptyArgs();
-                     long var39 = 150426696032422115L;
+                     var39 = 150426696032422115L;
                      Object[] var38 = var10016;
                      var10016 = Registry.packArgs(Ref.h(150426696032422115L, var38, var39));
                      long var41 = 502455063883555969L;
-                     Object[] var40 = var10016;
+                     var40 = var10016;
                      Ref.h(502455063883555969L, var40, var41);
 
                      try {
@@ -882,7 +892,7 @@ public class Bq2 extends O {
             Object[] var54 = var10013;
             Ref.h(634817973682994708L, var54, var55);
             Object[] var10014 = Registry.emptyArgs();
-            long var57 = 150426696032422115L;
+            var57 = 150426696032422115L;
             Object[] var56 = var10014;
             var10014 = Registry.packArgs(Ref.h(150426696032422115L, var56, var57));
             long var59 = 502455063883555969L;
@@ -950,12 +960,16 @@ public class Bq2 extends O {
    }
 
    public void y() {
+      boolean var36;
+      Object[] var37;
+      boolean var39;
+      Object[] var40;
       AM.s$arrString();
       Object var3 = 293938313616336078L;
       Object var10002 = Ref.g(293938313616336078L, var3);
       Bq2 var10003 = (Bq2)(Registry.emptyArgs());
       long var6 = 480814573823095012L;
-      Object[] var5 = var10003;
+      Object var5 = var10003;
       var10003 = Ref.h(480814573823095012L, var5, var6);
 
       try {
@@ -1009,7 +1023,7 @@ public class Bq2 extends O {
                var10002 = this;
                Object var15 = 293938313616336078L;
                Ref.g(293938313616336078L, var15);
-               Object[] var37 = Registry.packArgs(null);
+               var37 = Registry.packArgs(null);
                long var18 = 172435224701198715L;
                Object[] var17 = var37;
                Ref.h(172435224701198715L, var17, var18);
@@ -1032,9 +1046,9 @@ public class Bq2 extends O {
          if (!var36 && var1 == null) {
             Object var21 = 293938313616336078L;
             Ref.g(293938313616336078L, var21);
-            Object[] var10005 = Registry.emptyArgs();
+            Object var10005 = Registry.emptyArgs();
             long var24 = 193033702979442502L;
-            Object[] var23 = var10005;
+            Object var23 = var10005;
             var10005 = Ref.h(193033702979442502L, var23, var24);
 
             try {
@@ -1045,7 +1059,7 @@ public class Bq2 extends O {
 
             if (!var39) {
                Registry.lookupField(388376917454860932L).get(null);
-               Object[] var40 = Registry.packArgs(new Di2(this));
+               var40 = Registry.packArgs(new Di2(this));
                long var26 = 434592463220957006L;
                Object[] var25 = var40;
                Ref.h(434592463220957006L, var25, var26);
@@ -1077,11 +1091,11 @@ public class Bq2 extends O {
          var10005 = Ref.h(399585344452154517L, var4, var5);
          Color var10006 = Registry.emptyArgs();
          long var7 = 149968465491171480L;
-         Object[] var6 = var10006;
+         Object var6 = var10006;
          var10006 = (Color)Ref.h(149968465491171480L, var6, var7);
          XF3 var10007 = (XF3)(Registry.emptyArgs());
          long var9 = 605008073331144146L;
-         Object[] var8 = var10007;
+         Object var8 = var10007;
          var10007 = Ref.h(605008073331144146L, var8, var9);
 
          try {
@@ -1113,6 +1127,8 @@ public class Bq2 extends O {
    }
 
    public void h() {
+      Color var36;
+      Boolean var40;
       String[] var10000 = AM.s$arrString();
       byte var2 = 0;
       String[] var1 = var10000;
@@ -1159,12 +1175,12 @@ public class Bq2 extends O {
       Object var10 = 300793705977237886L;
       Color var35 = (Color)Ref.g(300793705977237886L, var10);
       Object var12 = 624766743350519726L;
-      Color var36 = (Color)Ref.g(624766743350519726L, var12);
+      var36 = (Color)Ref.g(624766743350519726L, var12);
       Object var14 = 162955545315895464L;
       Ref.g(162955545315895464L, var14);
-      Object[] var10005 = Registry.emptyArgs();
+      Object var10005 = Registry.emptyArgs();
       long var17 = 258040024224799506L;
-      Object[] var16 = var10005;
+      Object var16 = var10005;
       var10005 = Ref.h(258040024224799506L, var16, var17);
 
       try {
@@ -1236,6 +1252,8 @@ public class Bq2 extends O {
    }
 
    public void c() {
+      Color var33;
+      boolean var37;
       byte var2 = 0;
       AM.s$arrString();
       Object var6 = 307353262184556454L;
@@ -1279,7 +1297,6 @@ public class Bq2 extends O {
          Registry.lookupField(327725816926172471L).setBoolean(this, true);
       }
 
-      Color var33;
       Color var34;
       label48: {
          Object var10 = 372692518757921471L;
@@ -1289,9 +1306,9 @@ public class Bq2 extends O {
          if (this == null) {
             Object var14 = 162955545315895464L;
             Ref.g(162955545315895464L, var14);
-            Object[] var10005 = Registry.emptyArgs();
+            Object var10005 = Registry.emptyArgs();
             long var17 = 258040024224799506L;
-            Object[] var16 = var10005;
+            Object var16 = var10005;
             var10005 = Ref.h(258040024224799506L, var16, var17);
 
             try {
@@ -1336,6 +1353,9 @@ public class Bq2 extends O {
    }
 
    public void Q(T32 var1) {
+      Object[] var39;
+      long var40;
+      Integer var57;
       long var10 = 162955545315895464L;
       Ref.s(162955545315895464L, var1, var10);
       AM.s$arrString();
@@ -1355,7 +1375,7 @@ public class Bq2 extends O {
       JLabel var10004 = (JLabel)Ref.g(184969517688200929L, var13);
       String var10006 = (String)(Registry.emptyArgs());
       long var16 = 532019896893594989L;
-      Object[] var15 = var10006;
+      Object var15 = var10006;
       var10006 = Ref.h(532019896893594989L, var15, var16);
 
       try {
@@ -1369,7 +1389,7 @@ public class Bq2 extends O {
       this.validate();
       var10006 = Registry.emptyArgs();
       long var18 = 160719341149611325L;
-      Object[] var17 = var10006;
+      Object var17 = var10006;
       var10006 = Ref.h(160719341149611325L, var17, var18);
 
       try {
@@ -1481,9 +1501,9 @@ public class Bq2 extends O {
          }
 
          StringBuilder var10007 = new StringBuilder();
-         Object[] var10009 = Registry.emptyArgs();
-         long var40 = 229192454276026216L;
-         Object[] var39 = var10009;
+         Object var10009 = Registry.emptyArgs();
+         var40 = 229192454276026216L;
+         var39 = var10009;
          var10009 = Ref.h(229192454276026216L, var39, var40);
 
          try {
@@ -2370,6 +2390,8 @@ public class Bq2 extends O {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      long var37;
       String[] var13 = new String[16];
       int var11 = 0;
       String var10 = "ù Ì\u0099µ\nHdÔÒ|Î\u009fÃ0\u0011\nB!C40'H\u009e&)(\u0099¯áSÎâ@)KTôÔ~E\u0085,lWÖ¤\u0081\u009b\u008fCYU\u0005wù* ß\u0016¯ÜÚ\u009d\u000e\u0097\u001a\u0005:S±ç\u0085\u0005¤z`Âý\u0005\u000b=\u0092*D(x\u000bÝÇIp°{U\u001e7\u009d\u0006l\u008a\t\u008dóê0\u0006\t\u007f\u0011G\u001fÆ>\u0081\u0003¯ú÷\tàJ\u001aÚg\u0086\u0005;j\u0093À\u0083\u0012±×=êÿüºï\u0019F$\u0016å\u0089\t×\u009c ({>½aE¤1áeM1÷Æ!\u0092 \u008eÆ\u008a\u0096\nÝþ\u008bwLÀTAN·Sô>\u0080ê\u0016Jæ\u0092\nøn\u0014ÝÚ\u001a\u0015<\u008dØ\u000e}Ún½|vO\u008dïAÙöDÂ\u001cQuëHÌÈYZ-»\u0081©O)\u008fpÂ\n\u0006\u0010(ï2J\u0007,]\u0017\u0005Ue\\!8";
@@ -2385,7 +2407,6 @@ public class Bq2 extends O {
          byte var10002 = -1;
 
          while (true) {
-      long var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;
@@ -2478,7 +2499,7 @@ public class Bq2 extends O {
                         byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
-                        long var37 = ((long)var7[0] & 255L) << 56
+                        var37 = ((long)var7[0] & 255L) << 56
                            | ((long)var7[1] & 255L) << 48
                            | ((long)var7[2] & 255L) << 40
                            | ((long)var7[3] & 255L) << 32

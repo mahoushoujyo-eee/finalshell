@@ -156,16 +156,19 @@ public final class Kp2 {
    }
 
    public static List Z(Object var0, List var1) {
+      Object var10000;
+      ArrayList var5;
+      int var8;
       String var2 = FV_2.D();
-      Object var10000 = var0;
+      var10000 = var0;
       if (var2 == null) {
          if (var0 instanceof java.lang.Class) {
             java.lang.Class var3 = (java.lang.Class)var0;
             Field[] var4 = var3.getDeclaredFields();
-            ArrayList var5 = new ArrayList(var4.length);
+            var5 = new ArrayList(var4.length);
             Field[] var6 = var4;
             int var7 = var4.length;
-            int var8 = 0;
+            var8 = 0;
 
             while (var8 < var7) {
                Field var9 = var6[var8];
@@ -239,7 +242,8 @@ public final class Kp2 {
    }
 
    public static Field k(java.lang.Class var0, String var1) throws NoSuchFieldException {
-      String var10000 = FV_2.D();
+      String var10000;
+      var10000 = FV_2.D();
       Field var3 = X(var0, var1);
       String var2 = var10000;
 
@@ -259,16 +263,16 @@ public final class Kp2 {
    }
 
    public static Field X(java.lang.Class var0, String var1) throws NoSuchFieldException {
+      java.lang.Class var10000;
+      Field var8;
       String var2 = FV_2.D();
 
       Field var3;
       try {
          var3 = var0.getDeclaredField(var1);
       } catch (NoSuchFieldException var7) {
-      ArrayList var10000;
          java.lang.Class var5 = var0.getSuperclass();
 
-         Field var8;
          label29: {
             label28: {
                label27: {
@@ -585,7 +589,8 @@ public final class Kp2 {
    }
 
    public static URL Z(java.lang.Class var0) {
-      String var10000 = FV_2.D();
+      String var10000;
+      var10000 = FV_2.D();
       CodeSource var2 = var0.getProtectionDomain().getCodeSource();
       String var1 = var10000;
       CodeSource var3 = var2;
@@ -601,12 +606,13 @@ public final class Kp2 {
    }
 
    public static File j(java.lang.Class var0) {
+      CodeSource var10000;
+      String var9;
       String var1 = FV_2.D();
 
       try {
          CodeSource var2 = var0.getProtectionDomain().getCodeSource();
 
-         CodeSource var10000;
          label43: {
             try {
                var10000 = var2;
@@ -618,7 +624,6 @@ public final class Kp2 {
                   return null;
                }
             } catch (URISyntaxException var7) {
-      ArrayList var9;
                throw a(var7);
             }
 
@@ -657,11 +662,12 @@ public final class Kp2 {
    }
 
    public static boolean a(String var0, List var1) {
+      List var10000;
       String var2 = FV_2.D();
-      List var10000 = var1;
+      var10000 = var1;
       if (var2 == null) {
          if (var1 == null) {
-            return (boolean)1;
+            return 1 != 0;
          }
 
          var10000 = var1;
@@ -669,18 +675,20 @@ public final class Kp2 {
 
       int var4 = var10000.size();
       if (var2 != null) {
-         return (boolean)var4;
+         return var4 != 0;
       } else if (var4 != 0) {
          String var3 = Cz2.G(var0, true).toLowerCase();
          return var1.contains(var3);
       } else {
-         return (boolean)1;
+         return 1 != 0;
       }
    }
 
    public static boolean n(String var0, List var1) {
+      List var10000;
+      boolean var5;
       String var2 = FV_2.D();
-      List var10000 = var1;
+      var10000 = var1;
       if (var2 == null) {
          if (var1 == null) {
             return true;
@@ -728,9 +736,13 @@ public final class Kp2 {
    }
 
    public static void Z(X2 var0, String var1, ZipEntry var2) {
-      String var10000 = FV_2.D();
+      String var10000;
+      X2 var5;
+      X2 var8;
+      X2 var9;
+      var10000 = FV_2.D();
       String[] var4 = var1.split("/");
-      X2 var5 = var0;
+      var5 = var0;
       String var3 = var10000;
       int var6 = 0;
 
@@ -738,7 +750,7 @@ public final class Kp2 {
          label25: {
             if (var6 < var4.length - 1) {
                X2 var7 = var5.q(var4[var6]);
-               X2 var9 = var7;
+               var9 = var7;
                if (var3 == null) {
                   if (var7 == null) {
                      var7 = new X2(com.finalshell.ui.model.L.packageEntry, var4[var6], var5);
@@ -755,7 +767,7 @@ public final class Kp2 {
                }
             }
 
-            X2 var8 = new X2(G(var4[var6]), var4[var6], var5);
+            var8 = new X2(G(var4[var6]), var4[var6], var5);
             var8.x(var2);
             var5.C(var8);
          }
@@ -768,7 +780,8 @@ public final class Kp2 {
    }
 
    public static com.finalshell.ui.model.L G(String var0) {
-      String var10000 = FV_2.D();
+      String var10000;
+      var10000 = FV_2.D();
       String var2 = Cz2.G(var0, false);
       String var1 = var10000;
       boolean var3 = var2.equals(a(17762, -2695));
@@ -1119,6 +1132,7 @@ public final class Kp2 {
 
       while (true) {
          if (var5.hasNext()) {
+      Field[] var8;
             Object var6 = var5.next();
 
             try {
@@ -1220,10 +1234,12 @@ public final class Kp2 {
    }
 
    public static Method P$Method(java.lang.Class var0, String var1) {
-      String var10000 = FV_2.D();
+      String var10000;
+      Method var5;
+      var10000 = FV_2.D();
       Method var3 = H(var0, N(var1), new Object[0]);
       String var2 = var10000;
-      Method var5 = var3;
+      var5 = var3;
       if (var2 == null) {
          if (var3 != null) {
             return var3;
@@ -1408,8 +1424,9 @@ public final class Kp2 {
    }
 
    public static Cloneable E(Cloneable var0) {
+      Cloneable var10000;
       String var1 = FV_2.D();
-      Cloneable var10000 = var0;
+      var10000 = var0;
       if (var1 == null) {
          if (var0 == null) {
             return null;
@@ -1454,8 +1471,9 @@ public final class Kp2 {
    }
 
    public static Object S(Object var0) {
+      Object var10000;
       String var1 = FV_2.D();
-      Object var10000 = var0;
+      var10000 = var0;
       if (var1 == null) {
          if (var0 == null) {
             return null;
@@ -1539,8 +1557,10 @@ public final class Kp2 {
    }
 
    public static boolean S(java.lang.Class var0, String var1) {
+      java.lang.Class var10000;
+      boolean var5;
       String var2 = FV_2.D();
-      java.lang.Class var10000 = var0;
+      var10000 = var0;
       if (var2 == null) {
          if (var0 == null) {
             return false;
@@ -1559,7 +1579,7 @@ public final class Kp2 {
          var4 = var3;
       }
 
-      boolean var5 = var4.contains(var1);
+      var5 = var4.contains(var1);
       if (var2 == null) {
          if (!var5) {
             boolean var6 = S(var0.getSuperclass(), var1);
@@ -1587,6 +1607,7 @@ public final class Kp2 {
    }
 
    public static String a(int var0, int var1) {
+      int var8;
       int var2 = (var0 ^ 17772) & 65535;
       if (b[var2] == null) {
          char[] var3 = a[var2].toCharArray();
@@ -2373,7 +2394,7 @@ public final class Kp2 {
          }
 
          for (int var7 = 0; var7 < var3.length; var7++) {
-            int var8 = var7 % 2;
+            var8 = var7 % 2;
             char var10002 = var3[var7];
             if (var8 == 0) {
                var3[var7] = (char)(var10002 ^ var5);
@@ -2392,7 +2413,9 @@ public final class Kp2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
-      String[] var5 = new String[35];
+      char[] var20;
+      String[] var5;
+      var5 = new String[35];
       int var3 = 0;
       String var2 = "\u0099üÏ·Y\\=¥\u0081\u001cj;óZ\u00019Òë\u0081ô\u000e×ÐöÒrSÄ§Ø¾\u008cùF\u001b\u0013;ÈGÁIcY[!N\u0014ÉïÁ\u0005ë\u000f\u009fã{\u000e©\u0089H6ý©5ù\u00867\rÃ\u001bí\b\búÖÀïí\u0090Ô3®¡)\u001c\u0085)¦\u000bòÉ\u0004\u0081>\r¸Óå¶g_Ò¢KX¡§=~j\u008f\u0007bÙ\u000eÍ4\"·n\u008a2\u0086\u009aM\u0017x%x'\u0081ç/\u0014Í~\u0091o\u0098û=Y\u000fqY\u0090\u0016m°_Ú0Ò8\u0013\u0016n\naH¦Ä\u0094Ò\u0001pk\u0084\u0089§#Ø\u009e2©\u0087ÙZp\u0094\u0003õ[U\u0003¶ÿ«\u0016)0Ô~$iuÀÒ\u0018jMÍ\u008c\u008f\u0087¼ÿE±\u0096T\u00068Z\u0002¨½\u0003\u0002F\u0096-¦Ã(P¥ ¢:rï\u0014E<\u0095øÀíÔf\u0013ò+Oi!\u0081-ºh\u0017GuÆyùñÆ.kä9hGxÚ2\u009c\ro\u0089M\u009b¿]Ñ\u0003`Ø²&)¶×\u001a!Ê\u001a\u0010R\u000e\u0082mY'æ¤\u0096\u0007õ¨\u009aº\u0001eáüÿ\u001c\u001a¢z¥\u007f´\u0082n\u0007û\u009d\u0016\u0016\u0000+a\u0004\u008f\u0002\"á\u0004ß\\¶±\u0005Ñ\u00adÖª\u008b5\u0099äÏ´Y<=©\u0081\u009dj\u000bó\\\u0001ùÒó\u0081÷\u000e·ÐúÒóSô§Þ¾HýB5²\u0080\u008c\u0013ÚÓùX\u001c(\u009bk\u008aOFr\u008cs\u0016\u0098ï\u0099;\u008bíF¾¤¹¦Û}\u009a\u0083 ºçªêÙ(\u0004zûKx0\u0004;|O/CóFX`Q´\u0094«í\u0007O,2\fxÈ\u001e\u0015\u000b\u000ehKÀ)R¶`\u009d\u0086WçøÐå3æ\u0095\u0013oÇD`0\u0013\u008a\u009eys\u0085x\u009e){\u007f×QÇU\u008aX\u009dÐ:$\u000e\u0095Íz\u0015F(\u0005Eê;w,da»>[=Bý»pª«üí5\u0097À\u000e0a¬:»aßvCpUqØÜ×@s6'×è2±O¼$×Îiófô6¸\u001c\u0014È3»DT«\u0092\u001b«Ab³\bK\u0004öÛ\u009a×-\t\u0002Ýh\u001b§uÚ\u0088óKÆ×å\u0085ÎB\u0015\u0093+L,\u0098\u0089Û\u009dr9\u0083g:{i¸\tÌy3\u000f»@\u0083h\u0005?.ÁHÄ!8\u008e\u0011ÿ\u0004WÚRåwÃ\u009c\u008a_\u008abo\u0005ü¬W9ã\u00ad±õ|)¡ò\u001b\u0089@\u0012\u0010,û§hoIÐ8Ä-d\u008d,\u001b\u0093MT\u0001Ð\u0098¤.ë·\u008f:*Î{\u0090~\u001e\u0007oégð¬T\u0002¤\u0097¥4_\u008aB§b9ï¼Ò\u00ad¼m\u0004a»\u0006¥\u0087Zë\u0005C¤`HO\u0004ú¿\u001b[3Î1%\u000e\u0004k\u0096CôÀÄ &)»W\u0085&kMSà{\u0010§®ý_r«\u0004æ¹\u009eÁ&£õ^Â4\u008fZl\u000f\\&üG\u0011ë\u0002\u0092<2\u0002\u008b¼Y7\u0081ð\u001e8k]Õ\u0015\u0087Ý\u0082I\u009cò\u001a`\n\u001dMk\u0005d*A\u0005b#b%h\u007fUE\u008apðUn\u009dÇ\u0096ÈÒt¢\u0002 $";
       int var4 = "\u0099üÏ·Y\\=¥\u0081\u001cj;óZ\u00019Òë\u0081ô\u000e×ÐöÒrSÄ§Ø¾\u008cùF\u001b\u0013;ÈGÁIcY[!N\u0014ÉïÁ\u0005ë\u000f\u009fã{\u000e©\u0089H6ý©5ù\u00867\rÃ\u001bí\b\búÖÀïí\u0090Ô3®¡)\u001c\u0085)¦\u000bòÉ\u0004\u0081>\r¸Óå¶g_Ò¢KX¡§=~j\u008f\u0007bÙ\u000eÍ4\"·n\u008a2\u0086\u009aM\u0017x%x'\u0081ç/\u0014Í~\u0091o\u0098û=Y\u000fqY\u0090\u0016m°_Ú0Ò8\u0013\u0016n\naH¦Ä\u0094Ò\u0001pk\u0084\u0089§#Ø\u009e2©\u0087ÙZp\u0094\u0003õ[U\u0003¶ÿ«\u0016)0Ô~$iuÀÒ\u0018jMÍ\u008c\u008f\u0087¼ÿE±\u0096T\u00068Z\u0002¨½\u0003\u0002F\u0096-¦Ã(P¥ ¢:rï\u0014E<\u0095øÀíÔf\u0013ò+Oi!\u0081-ºh\u0017GuÆyùñÆ.kä9hGxÚ2\u009c\ro\u0089M\u009b¿]Ñ\u0003`Ø²&)¶×\u001a!Ê\u001a\u0010R\u000e\u0082mY'æ¤\u0096\u0007õ¨\u009aº\u0001eáüÿ\u001c\u001a¢z¥\u007f´\u0082n\u0007û\u009d\u0016\u0016\u0000+a\u0004\u008f\u0002\"á\u0004ß\\¶±\u0005Ñ\u00adÖª\u008b5\u0099äÏ´Y<=©\u0081\u009dj\u000bó\\\u0001ùÒó\u0081÷\u000e·ÐúÒóSô§Þ¾HýB5²\u0080\u008c\u0013ÚÓùX\u001c(\u009bk\u008aOFr\u008cs\u0016\u0098ï\u0099;\u008bíF¾¤¹¦Û}\u009a\u0083 ºçªêÙ(\u0004zûKx0\u0004;|O/CóFX`Q´\u0094«í\u0007O,2\fxÈ\u001e\u0015\u000b\u000ehKÀ)R¶`\u009d\u0086WçøÐå3æ\u0095\u0013oÇD`0\u0013\u008a\u009eys\u0085x\u009e){\u007f×QÇU\u008aX\u009dÐ:$\u000e\u0095Íz\u0015F(\u0005Eê;w,da»>[=Bý»pª«üí5\u0097À\u000e0a¬:»aßvCpUqØÜ×@s6'×è2±O¼$×Îiófô6¸\u001c\u0014È3»DT«\u0092\u001b«Ab³\bK\u0004öÛ\u009a×-\t\u0002Ýh\u001b§uÚ\u0088óKÆ×å\u0085ÎB\u0015\u0093+L,\u0098\u0089Û\u009dr9\u0083g:{i¸\tÌy3\u000f»@\u0083h\u0005?.ÁHÄ!8\u008e\u0011ÿ\u0004WÚRåwÃ\u009c\u008a_\u008abo\u0005ü¬W9ã\u00ad±õ|)¡ò\u001b\u0089@\u0012\u0010,û§hoIÐ8Ä-d\u008d,\u001b\u0093MT\u0001Ð\u0098¤.ë·\u008f:*Î{\u0090~\u001e\u0007oégð¬T\u0002¤\u0097¥4_\u008aB§b9ï¼Ò\u00ad¼m\u0004a»\u0006¥\u0087Zë\u0005C¤`HO\u0004ú¿\u001b[3Î1%\u000e\u0004k\u0096CôÀÄ &)»W\u0085&kMSà{\u0010§®ý_r«\u0004æ¹\u009eÁ&£õ^Â4\u008fZl\u000f\\&üG\u0011ë\u0002\u0092<2\u0002\u008b¼Y7\u0081ð\u001e8k]Õ\u0015\u0087Ý\u0082I\u009cò\u001a`\n\u001dMk\u0005d*A\u0005b#b%h\u007fUE\u008apðUn\u009dÇ\u0096ÈÒt¢\u0002 $"
@@ -2511,7 +2534,6 @@ public final class Kp2 {
       }
    }
 }
-
 
 
 

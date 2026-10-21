@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.Ub2;
 
 public final class Dg4 {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -45,6 +45,7 @@ public final class Dg4 {
    }
 
    public static byte f(Dg4[] var0) {
+      byte var7;
       String[] var10000 = Ub2.A();
       byte var2 = 0;
       String[] var1 = var10000;
@@ -63,8 +64,6 @@ public final class Dg4 {
             var2 = var7;
             var5++;
             if (var1 == null) {
-      byte var7;
-      byte var7;
                continue;
             }
          }
@@ -116,6 +115,8 @@ public final class Dg4 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
+      byte[] var7;
       String[] var8 = new String[9];
       int var12 = 0;
       String var11 = "UMWhq_\u0006S_ZiwX\u0006S_ZhwJ\u0006S_Zg\u007fD\u0004UMW\u0013\u0007S_ZdsZU\u0006S_ZmaK";
@@ -217,7 +218,7 @@ public final class Dg4 {
                      while (true) {
                         byte var26 = var2;
                         var2 += 8;
-                        byte[] var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
+                        var7 = var4.substring(var26, var2).getBytes("ISO-8859-1");
                         long[] var19 = var6;
                         int var27 = var3++;
                         long var37 = ((long)var7[0] & 255L) << 56
@@ -302,7 +303,6 @@ public final class Dg4 {
       }
    }
 }
-
 
 
 

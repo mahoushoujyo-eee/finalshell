@@ -867,6 +867,7 @@ public class Vh2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[6];
       int var3 = 0;
       String var2 = "\u0018\u0002-ût\u001b°eÑ«¿;x\b+Äû\u001e\u0005~@l\u0004íÔ×\u000f\nÈ\u0092\u0015\u0097\u0006\fh éÇ";
@@ -881,7 +882,6 @@ public class Vh2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

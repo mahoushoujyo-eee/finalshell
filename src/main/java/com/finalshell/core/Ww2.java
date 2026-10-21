@@ -1039,6 +1039,7 @@ public class Ww2 extends W2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var20;
       String[] var5 = new String[8];
       int var3 = 0;
       String var2 = "\u009c2'y\u001fÕj¾í§\t\u0005\u0084ØÆ4ó&½®èù\u009c\u000ed\u0019\u001e\u000e\u0017\u000e6»5»\u0081\u001e\u0006T\u0017÷cØ\u009e\u0004\u00ad?zý\u0006^\u0005o\u0013Xê\u0003G\u0090»";
@@ -1054,7 +1055,6 @@ public class Ww2 extends W2 {
          byte var10002 = -1;
 
          while (true) {
-      char[] var20;
             label47: {
                char[] var24 = var10001.toCharArray();
                int var10004 = var24.length;

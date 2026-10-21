@@ -28,7 +28,7 @@ public class Wm2 extends W2 {
       Ref.g(254384586786323749L, var8);
       ArrayList var10002 = Registry.emptyArgs();
       long var11 = 422469711202687666L;
-      Object[] var10 = var10002;
+      Object var10 = var10002;
       var10002 = Ref.h(422469711202687666L, var10, var11);
 
       try {
@@ -43,7 +43,7 @@ public class Wm2 extends W2 {
       Object var10004 = Ref.g(254384586786323749L, var12);
       ArrayList var10005 = Registry.emptyArgs();
       long var15 = 564970639717807891L;
-      Object[] var14 = var10005;
+      Object var14 = var10005;
       var10005 = Ref.h(564970639717807891L, var14, var15);
 
       try {
@@ -83,7 +83,7 @@ public class Wm2 extends W2 {
          Ref.g(254384586786323749L, var24);
          ArrayList var10010 = Registry.emptyArgs();
          long var27 = 422469711202687666L;
-         Object[] var26 = var10010;
+         Object var26 = var10010;
          var10010 = Ref.h(422469711202687666L, var26, var27);
 
          try {
@@ -97,7 +97,7 @@ public class Wm2 extends W2 {
          Ref.g(254384586786323749L, var28);
          ArrayList var10012 = Registry.emptyArgs();
          long var31 = 564970639717807891L;
-         Object[] var30 = var10012;
+         Object var30 = var10012;
          var10012 = Ref.h(564970639717807891L, var30, var31);
 
          try {

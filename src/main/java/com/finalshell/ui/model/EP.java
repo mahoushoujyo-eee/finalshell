@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.Nv4;
 
 public final class EP {
-   @Override public int compareTo(Enum o) {
+public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
 
@@ -139,6 +139,7 @@ public final class EP {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static void __vfClinit__() {
+      char[] var33;
       String[] var8 = new String[30];
       int var12 = 0;
       String var11 = "2F|3N\u0007U\u0011Q@4N\u0007U\u0011QS(Y.U\u0011\u000e2F|3N\u0000X\u0004Gf\tJ.Q\u00140Gp\u000ex\f\fS\u0004$\u0003J7Q#[g*J7\f5Fp3_:r\nFx&_\u000f0Gp\u0014B-S\tQD2D7Q\u0016\u00172F|3N\rA\tXW(D/Q\u0004ZT4m\"X\u0016Q\u00126_|7\u007f1U\u000bG|\"E7r\fQy#\u0011'Fz0X&F&[x7J7]\u0007Xp\u00162F|3N\u0006Z\u0010Y@4B-S1[F3Y*Z\u0002\u0014+[a\u0010Y*@\u0000pp!J6X\u0011bt+^&\u001b2F|3N\r[\u000bga5B-S3Uy2N\u0002G6@g.E$\u000b'Qt)\u007f,u\u0017Ft>\u0014,S{(Y&z\nZS.N/P\"Qa3N1\f(Ue\u0014D1@#]p+O\u00162F|3N\rA\tXF3Y*Z\u0002uf\u0002F3@\u001c\u00132F|3N\u0010X\u0004G}\u0006X\u0010D\u0000W|&G\u00162F|3N\u0001]\u0002pp$B.U\tuf\u0017G\"]\u000b\u000f4Az3N\u0005]\u0000Xq\tJ.Q\u0016\u00122F|3N\u0006Z\u0010Y@4B-S+Ux\"\u0011,S{(Y&q\u0017Fz5l&@\u0011Qg\t6[g3m*Q\tP\r'Fz0X&F6Qv2Y&\u0017!]f&I/Q&\\p$@\u0010D\u0000W|&G\u0000\\\u0004F\u00112F|3N\u0017U\u0007uf\u0014[&W\fUy\u00152F|3N\rA\tX[2F!Q\u0017uf\u001dN1[\u00142F|3N\rA\tXY.X7u\u0016qx7_:\u00192F|3N\r[\u000bga5B-S.Ql\u0006X\u0010@\u0017]{ \u001e!]f&I/Q&]g$^/U\u0017fp!N1Q\u000bWp\u0003N7Q\u0006@";
@@ -154,7 +155,6 @@ public final class EP {
          byte var10002 = -1;
 
          while (true) {
-      char[] var33;
             label65: {
                char[] var39 = var10001.toCharArray();
                int var10004 = var39.length;

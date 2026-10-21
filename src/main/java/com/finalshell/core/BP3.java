@@ -20,7 +20,7 @@ public class BP3 extends SystemDefaultDnsResolver {
 
       try {
          new StringBuilder();
-         Object[] var10001 = Registry.packArgs(5);
+         Object var10001 = Registry.packArgs(5);
          long var4 = 502006739469260406L;
          Object var10002 = Ref.h2(502006739469260406L, var4);
 
