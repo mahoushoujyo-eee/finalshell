@@ -44,6 +44,12 @@ echo "javac exit=$LASTEXITCODE"   # 0
    签名不匹配；补兼容重载后，又在 `Ref.s` 的 `Field.set(null, …)` 上抛 `NullPointerException`。
 4. 作为对照，**原始 `finalshell.jar` 可以启动**（会进入事件循环；缺 `lib-run/bcprov.jar` 时仅打印
    `ClassNotFoundException: BouncyCastleProvider`）。
+5. 运行期修复进展：用 ASM 重写 `St_2.main`（去掉错误的 `ldc2_w + astore_1` 序列、重算栈帧）后，
+   VerifyError 已越过；下一层阻塞是 `com.finalshell.core.YT3_2` 的
+   `ClassFormatError: Illegal exception table range`。ASM 重算帧在 YT3_2 上直接抛
+   `ArrayIndexOutOfBoundsException`（异常表之外还有非法帧）；其反编译源码单独编译又有大量类型错误
+   （Object[] 参数袋、方法签名不匹配等），不能直接替换。
+   因此继续做运行期修复需要逐类修复字节码或完整恢复该类的源码。
 
 结论：兜底字节码本身带原程序缺陷，且与当前源码的 `Ref`/`Registry` 签名约定不一致。
 要得到真正可运行的 jar，需要逐类修复兜底字节码（或完成全源码恢复），这不是打包问题。
