@@ -50,13 +50,12 @@
       <version>1.2.0</version>
     </dependency>
 
-    <!-- Lombok：仅编译期使用（源码已由原构建 delombok 处理过，留作后续改写用） -->
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.18.30</version>
-      <scope>provided</scope>
-    </dependency>
+    <!--
+      Lombok 不再作为依赖声明：
+        · 重建后的源码里 0 处 import lombok、0 处 lombok 注解、0 个 .SCL.lombok 标记文件
+        · lombok 的 818 个类已经随原 jar 一起切进 lib/bundled-libs.jar，编译期可用
+        · 保留这条远程坐标会让"离线构建"失效（需要联网从仓库拉 lombok）
+    -->
   </dependencies>
 
   <build>
