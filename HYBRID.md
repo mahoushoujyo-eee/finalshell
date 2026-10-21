@@ -33,6 +33,21 @@ echo "javac exit=$LASTEXITCODE"   # 0
 
 `pom.xml` 已加入 `fallback-classes` 的 `system` 依赖与 `maven-install-plugin` 安装项；本机没有 `mvn`，因此以 `javac` 验证为准。
 
+## 运行状态（重要）
+
+**当前只能保证编译，不能保证可运行。** 实测（2026-10-21）：
+
+1. `javac`：exit 0，可打出约 72 MB 的 fat jar（源码类 + 兜底类 + bundled-libs + 资源）。
+2. `java -jar finalshell-hybrid.jar`：启动 `com.finalshell.core.St_2.main` 时抛
+   `java.lang.VerifyError: Bad type on operand stack`（原字节码的 long/double 局部变量槽缺陷，见 HANDOFF §7）。
+3. 加 `-Xverify:none` 绕过校验后，继续暴露 `Registry.packArgs(Object[])` / `Ref.h2(Object[],long)` 等
+   签名不匹配；补兼容重载后，又在 `Ref.s` 的 `Field.set(null, …)` 上抛 `NullPointerException`。
+4. 作为对照，**原始 `finalshell.jar` 可以启动**（会进入事件循环；缺 `lib-run/bcprov.jar` 时仅打印
+   `ClassNotFoundException: BouncyCastleProvider`）。
+
+结论：兜底字节码本身带原程序缺陷，且与当前源码的 `Ref`/`Registry` 签名约定不一致。
+要得到真正可运行的 jar，需要逐类修复兜底字节码（或完成全源码恢复），这不是打包问题。
+
 ## 重要说明
 
 - 字节码兜底类**不是源码恢复**：它们来自原始（已改名）jar，保留原行为，但无法阅读/修改。
