@@ -13,6 +13,22 @@
 
 ---
 
+## 1.5 本轮增量（2026-10-21 12:25，尚未验证）
+
+文本层的"错误驱动修补"（`tools/FixTree.java`，4 轮）在新反编译树上不收敛（32,377 → 34,391 条错误 / 3,135 个文件），因此改为在**字节码层**解决 Java 源码无法表达的约束：
+
+| 工具 | 作用 |
+|---|---|
+| `tools/FixBytecode.java` | pass0 包名大小写冲突改名；pass1 同名不同返回类型（按类判定冲突 + 沿继承链传播，避免断覆写）；pass2 清伪造 ACC_ENUM；`com/c` → `com/Registry` 并给关键方法起语义名 |
+| `tools/ReflectHelper.java` | 把"查表 + `Method.invoke`"折叠成辅助类 `com.finalshell.reflect.Ref` 的 `h/h2/s/g`，消除 `Method` 与 `Object[]` 共槽导致的编译错误（旧错误中占近八成）；运行时行为不变，仍走反射。`Ref.java` 依赖 v3 里的 `com.Registry`，随新源码树一并提交 |
+| `tools/ReflectProbe.java` | 实测两类调用模式的规模（8,523 + 2,168 处） |
+
+产物：`finalshell-v2.jar`（改名 + dup + 枚举）、`finalshell-v3.jar`（18,150 类，已注入手写 `Ref.class`）。正在对 v3 做全量 Vineflower 反编译，之后接 `FixVineflower` + 编译验证；**新树的编译错误数尚未测得**，§5 的 49 个文件仍是已提交源码树的基线。
+
+未纳入本提交：`ProbeReflect2.java`（重复类名的实验稿）、`ApplyRename.java`（未完成，缺 `Remapper` 导入）。
+
+---
+
 ## 2. 关键逆向结论（这部分最有价值，别再重复踩）
 
 ### 2.1 报告里的旧结论是错的
